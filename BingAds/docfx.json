@@ -1,0 +1,74 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "defaultDevLang": "csharp",
+      "uhfHeaderId": "MSDocsHeader-BingAds",
+      "searchScope": ["Bing Ads"],
+      "breadcrumb_path": "/BingAds/breadcrumb/TOC.json",
+      "extendBreadcrumb": "true"
+    },
+    "fileMetadata": {
+      "dev_langs": 
+      {
+        "ad-insight/**.md": ["csharp", "java", "php", "python"],
+        "bulk/**.md": ["csharp", "java", "php", "python"],
+        "campaign-management/**.md": ["csharp", "java", "php", "python"],
+        "customer-management/**.md": ["csharp", "java", "php", "python"],
+        "customer-billing/**.md": ["csharp", "java", "php", "python"],
+        "reporting/**.md": ["csharp", "java", "php", "python"]
+      },
+      "ms.prod": 
+      { 
+         "guides/**.yml": "bing-ads",
+         "shopping-content/**.yml": "bing-ads-shopping-content",
+         "hotel-ads/**.yml": "bing-ads-hotel-ads"
+      }, 
+      "ms.service": 
+      { 
+        "ad-insight/**.yml": "bing-ads-ad-insight",
+        "customer-billing/**.yml": "bing-ads-customer-billing",
+        "bulk/**.yml": "bing-ads-bulk",
+        "campaign-management/**.yml": "bing-ads-campaign-management",
+        "customer-management/**.yml": "bing-ads-customer-management",
+        "reporting/**.yml": "bing-ads-reporting",
+        "hotel-api/**.yml": "hotel-ads"
+      }, 
+      "ms.technology": 
+      { 
+        "pos-feed/**.yml": "intune" 
+      }
+    },
+    "template": [],
+    "dest": "BingAds"
+  }
+}

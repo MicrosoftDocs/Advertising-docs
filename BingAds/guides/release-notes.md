@@ -1,0 +1,226 @@
+---
+title: "Release Notes"
+ms.service: "bing-ads"
+ms.topic: "article"
+author: "eric-urban"
+ms.author: "eur"
+---
+# Release Notes
+For information about the changes to the Bing Ads services for each month, see the following sections.
+
+## <a name="september2017"></a>September 2017
+For information about this month's changes to Bing Ads services, see the following sections.
+
+-   [Bing Ads Software Development Kit (SDK) Updates](#sdk-september2017)  
+
+### <a name="sdk-september2017"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, PHP, and Python SDKs are updated with support for the following features. Unless otherwise noted the changes only apply to Bing Ads API version 11. Some objects are reserved for future use, so please refer to the service reference documentation for availability details.
+
+* The [Reporting]( ~/guides/release-notes.md#reporting-locations-august2017) service proxies are updated to support new columns for location targeting.  
+* For the Bing Ads .NET SDK - Fixed the Bulk download DateTime parser for compatibility with localized time zone settings.  
+* For the Bing Ads Java SDK - Added an option to automatically delete the temporary bulk file used by BulkServiceManager for upload and download per the Github community [pull request](https://github.com/BingAds/BingAds-Java-SDK/issues/41). 
+* For the Bing Ads Java SDK - Implemented internal retry logic for creating a new service with the wsdl. 
+
+## <a name="august2017"></a>August 2017
+For information about this month's changes to Bing Ads services, see the following sections.
+
+-   [Bing Ads Software Development Kit (SDK) Updates](#sdk-august2017)  
+-   [Increase in subdomain limit for website exclusions](#negativesites-august2017)  
+-   [Geographical Locations File Version 2.0](#geo-locations-august2017)  
+-   [New Reporting Columns for Location Targeting](#reporting-locations-august2017)  
+
+### <a name="sdk-august2017"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, and Python SDKs are updated with support for the following features. Unless otherwise noted the changes only apply to Bing Ads API version 11. Some objects are reserved for future use, so please refer to the service reference documentation for availability details.
+
+* The [Campaign Management]( ~/guides/release-notes.md#inheritedbidstrategytype-july2017) service proxies are updated to support inherited bid strategy type.  
+* The [Reporting]( ~/guides/release-notes.md#reporting-bsc-july2017) service proxies are updated to support new columns for Bing Shopping campaigns.
+* New version 11 bulk labels objects are added i.e., *BulkLabel*, *BulkCampaignLabel*, *BulkAdGroupLabel*, *BulkKeywordLabel*, *BulkAppInstallAdLabel*, *BulkDynamicSearchAdLabel*, *BulkExpandedTextAdLabel*, *BulkProductAdLabel*, and *BulkTextAdLabel* objects are added to the SDK for reading and writing the corresponding [Bulk file records]( ~/guides/release-notes.md#bulk-v11-labels-july2017).
+* A new version 11 bulk offline conversion object is added i.e., the *BulkOfflineConversion* object is added to the SDK for writing and uploading the corresponding [Bulk file record]( ~/guides/release-notes.md#bulk-v11-offline-conversions-july2017).  
+* For the Bing Ads .NET SDK - Fixed the mapping for expired ad groups in the *BulkAdGroup* object. Previously if the ad group status in the bulk file was *Expired*, the SDK mapped and returned the value as *Deleted*. Prior to Bing Ads API version 10, expired ad groups were returned with a deleted status by design for backwards compatibility. 
+
+
+### <a name="negativesites-august2017"></a>Increase in subdomain limit for website exclusions
+The limit of subdomains allowed in a website exclusion increased from two to three, based on customer requests. This will enable you to exclude URLs based on two-part top-level domains (TLDs) such as *.co.uk*. The number of allowed subdirectories remains unchanged at two. 
+
+For example, the following are valid URLs,
+*  one.two.three.contoso.com/1/2  
+*  www.two.three.contoso.com/1/2  
+*  one.two.contoso.co.uk/1/2
+
+The following are invalid URLs:
+*  one.two.three.contoso.co.uk/1/2 (too many subdomains)  
+*  one.two.three.contoso.com/1/2/3 (too many subdirectories)  
+
+For reference documentation, please see [CampaignNegativeSites](~/campaign-management/campaignnegativesites.md) and [AdGroupNegativeSites](~/campaign-management/adgroupnegativesites.md).
+
+### <a name="geo-locations-august2017"></a>Geographical Locations File Version 2.0 
+The [GetGeoLocationsFileUrl](~/campaign-management/getgeolocationsfileurl.md) operation now supports version 2.0. County location IDs are only available in version 2.0.
+
+For more details about the contents of each file version, see [Geographical Location Codes](~/guides/geographical-location-codes.md).
+
+> [!IMPORTANT]
+> The locations file Version 1.0 is deprecated in favor of version 2.0. After October 31, 2017 version 1.0 will be sunset and only 2.0 will be supported. 
+
+### <a name="reporting-locations-august2017"></a>New Reporting Columns for Location Targeting
+The *County*, *LocationId*, and *PostalCode* columns have been added to the [GeographicPerformanceReportColumn](~/reporting/geographicperformancereportcolumn.md) value set.
+
+The *County*, *LocationId*, *PostalCode*, *QueryIntentCounty*, *QueryIntentPostalCode*, and *QueryIntentLocationId* columns have been added to the [UserLocationPerformanceReportColumn](~/reporting/userlocationperformancereportcolumn.md) value set.
+
+## <a name="july2017"></a>July 2017
+For information about this month's changes to Bing Ads services, see the following sections.
+
+-   [Keyword Planner](#keyword-planner-july2017)  
+-   [Labels](#labels-july2017)  
+-   [Offline Conversion Import](#offline-conversions-july2017)  
+-   [New Reporting Columns for Bing Shopping Campaigns](#reporting-bsc-july2017)  
+-   [Inherited Bid Strategy Type](#inheritedbidstrategytype-july2017)
+-   [Bing Ads Software Development Kit (SDK) Updates](#sdk-july2017)  
+
+### <a name="keyword-planner-july2017"></a>Keyword Planner
+Support for keyword planner operations is added. The Keyword Planner was already available in the Bing Ads web application, and now support is added for Bing Ads API version 11.
+
+> [!NOTE]
+> Keyword Planner features are currently available to customers in the United States, United Kingdom, Canada, Australia, France, and Germany.
+
+Given a list of existing keywords, the [GetKeywordIdeas](~/ad-insight/getkeywordideas.md) operation suggests new ad groups and keywords based on your existing keywords, website, and product category. You can also request historical statistics for keywords e.g., monthly searches, competition, average CPC, and ad impression share. You can use the returned suggested keyword bids as input to the [GetKeywordTrafficEstimates](~/ad-insight/getkeywordtrafficestimates.md) operation.
+
+The result is a [KeywordIdea](~/ad-insight/keywordidea.md) list. Each keyword idea includes historical statistics for keywords e.g., monthly searches, competition, average CPC, and ad impression share. Whereas the Bing Ads web application returns a 12 month average of the historical monthly search counts, each [KeywordIdea](~/ad-insight/keywordidea.md) includes a list of monthly search counts. You can use each count individually or average them for parity with the Bing Ads web application's calculation.
+
+Once you have already settled on an initial set of keywords, the [GetKeywordTrafficEstimates](~/ad-insight/getkeywordtrafficestimates.md) operation provides traffic estimates for keywords e.g., average CPC, average position, clicks, CTR, impressions, and total cost. As input you provide the keyword, bid, language, location, and network, with optional campaign budget and negative keyword filters.
+
+The result is a [KeywordEstimate](~/ad-insight/keywordestimate.md) list for each [AdGroupEstimate](~/ad-insight/adgroupestimate.md), which are all nested within one [CampaignEstimate](~/ad-insight/campaignestimate.md). Each keyword estimate includes a minimum and maximum [TrafficEstimate](~/ad-insight/trafficestimate.md). As previously mentioned, the traffic estimates for keywords include average CPC, average position, clicks, CTR, impressions, and total cost.
+
+For more details see the [Keyword Ideas and Traffic Estimates](~/guides/keyword-ideas-traffic-estimates.md) technical guide.
+
+### <a name="labels-july2017"></a>Labels
+Support for labels is added. Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.
+
+#### <a name="bulk-v11-labels-july2017"></a>Bulk API Version 11 for Labels  
+You can use the following Bulk record types to manage labels with the Bulk API.
+-   [Label](~/bulk/label.md)
+-   [Campaign Label](~/bulk/campaign-label.md)
+-   [Ad Group Label](~/bulk/ad-group-label.md)
+-   [Keyword Label](~/bulk/keyword-label.md)
+-   [App Install Ad Label](~/bulk/app-install-ad-label.md)
+-   [Dynamic Search Ad Label](~/bulk/dynamic-search-ad-label.md)
+-   [Expanded Text Ad Label](~/bulk/expanded-text-ad-label.md)
+-   [Product Ad Label](~/bulk/product-ad-label.md)
+-   [Text Ad Label](~/bulk/text-ad-label.md)
+
+#### <a name="campaign-v11-labels-july2017"></a>Campaign Management API Version 11 for Labels  
+You can add, delete, get, and update labels ([Label](~/campaign-management/label.md) objects) with the corresponding operations.
+-  [AddLabels](~/campaign-management/addlabels.md)  
+-  [DeleteLabels](~/campaign-management/deletelabels.md)  
+-  [GetLabelsByIds](~/campaign-management/getlabelsbyids.md)  
+-  [UpdateLabels](~/campaign-management/updatelabels.md)  
+
+You can set, get, and delete label associations ([LabelAssociation](~/campaign-management/labelassociation.md) objects) with the corresponding operations.
+-  [DeleteLabelAssociations](~/campaign-management/deletelabelassociations.md)  
+-  [GetLabelAssociationsByEntityIds](~/campaign-management/getlabelassociationsbyentityids.md)  
+-  [GetLabelAssociationsByLabelIds](~/campaign-management/getlabelassociationsbylabelids.md)  
+-  [SetLabelAssociations](~/campaign-management/setlabelassociations.md)  
+
+### <a name="offline-conversions-july2017"></a>Offline Conversion Import
+Support for Offline Conversion Import is added. Use offline conversions to track the full impact and benefit of your search ads. It allows you to import offline conversions derived from a search click back into Bing Ads. 
+
+To set up offine conversion tracking, create an offline conversion goal with the [Campaign Management](#campaign-v11-offline-conversions-july2017) service or via the Bing Ads web application, wait two hours, and then send Bing Ads the offline conversion data with either the [Campaign Management](#campaign-v11-offline-conversions-july2017) service or [Bulk](#bulk-v11-offline-conversions-july2017) service.
+
+You must also enable MSCLKID Auto Tagging. Every time you create a new [OfflineConversionGoal](~/campaign-management/offlineconversiongoal.md) via either the Bing Ads web application or Campaign Management API, the MSCLKID Auto Tagging is enabled automatically. You can enable or disable auto tagging using either the [Campaign Management](#campaign-v11-offline-conversions-july2017) service or [Bulk](#bulk-v11-offline-conversions-july2017) service. 
+
+For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking-Load).
+
+#### <a name="bulk-v11-offline-conversions-july2017"></a>Bulk API Version 11 for Offline Conversions  
+You can send Bing Ads the offline conversion data by uploading one or more [Offline Conversion](~/bulk/offline-conversion.md) Bulk records.
+
+To manage the MSCLKID Auto Tagging, use the *MSCLKID Auto Tagging Enabled* field of the [Account](~/bulk/account.md) Bulk record.
+
+#### <a name="campaign-v11-offline-conversions-july2017"></a>Campaign Management API Version 11 for Offline Conversions  
+
+You can manage [OfflineConversionGoal](~/campaign-management/offlineconversiongoal.md) objects with the previously shipped conversion goal service operations e.g. [AddConversionGoals](~/campaign-management/addconversiongoals.md).
+
+You can send Bing Ads the offline conversion data by submitting [OfflineConversion](~/campaign-management/offlineconversion.md) data via the [ApplyOfflineConversions](~/campaign-management/applyofflineconversions.md) operation.
+
+To manage the MSCLKID Auto Tagging, use the corresponding [AccountProperty](~/campaign-management/accountproperty.md) (*MSCLKIDAutoTaggingEnabled*) via the [GetAccountProperties](~/campaign-management/getaccountproperties.md) and [SetAccountProperties](~/campaign-management/setaccountproperties.md) operations. 
+
+### <a name="reporting-bsc-july2017"></a>New Reporting Columns for Bing Shopping Campaigns
+The *ReturnOnAdSpend*, *BidStrategyType*, *LocalStoreCode*, and *StoreId* columns have been added to the [ProductDimensionPerformanceReportColumn](~/reporting/productdimensionperformancereportcolumn.md) value set.
+
+The *ReturnOnAdSpend*, *BidStrategyType*, and *LocalStoreCode* columns have been added to the [ProductPartitionPerformanceReportColumn](~/reporting/productpartitionperformancereportcolumn.md) value set.
+
+The *ReturnOnAdSpend*, *BidStrategyType*, and *LocalStoreCode* columns have been added to the [ProductPartitionUnitPerformanceReportColumn](~/reporting/productpartitionunitperformancereportcolumn.md) value set.
+
+### <a name="inheritedbidstrategytype-july2017"></a>Inherited Bid Strategy Type
+You can get the bid strategy type that is inherited from each ad group or keyword's parent campaign or ad group. This value is equal to the parent campaign or ad group's *Bid Strategy Type* field. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, and *TargetCpa*.
+
+#### <a name="bulk-v11-inheritedbidstrategytype-july2017"></a>Bulk API Version 11 for Inherited Bid Strategy Type  
+The *Inherited Bid Strategy Type* field is added to the [Ad Group](~/bulk/ad-group.md) and [Keyword](~/bulk/keyword.md) records. 
+
+#### <a name="campaign-v11-inheritedbidstrategytype-july2017"></a>Campaign Management API Version 11 for Inherited Bid Strategy Type  
+The *InheritedBidStrategyType* element is added to the  [InheritFromParentBiddingScheme](~/campaign-management/inheritfromparentbiddingscheme.md) object. This element is not returned by default. You must include *InheritedBidStrategyType* in the *ReturnAdditionalFields* optional request element when calling [GetAdGroupsByCampaignId](~/campaign-management/getadgroupsbycampaignid.md), [GetAdGroupsByIds](~/campaign-management/getadgroupsbyids.md), [GetKeywordsByAdGroupId](~/campaign-management/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](~/campaign-management/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](~/campaign-management/getkeywordsbyids.md).
+
+
+### <a name="sdk-july2017"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, and Python SDKs are updated with support for the following features. Unless otherwise noted the changes only apply to Bing Ads API version 11. Some objects are reserved for future use, so please refer to the service reference documentation for availability details.
+
+#### <a name="sdk-breaking-changes-july2017"></a>Breaking Changes
+> [!IMPORTANT]
+> Before you upgrade to the latest SDK please note the following breaking changes.
+* The *Status* property of the *BulkCampaignProductScope* object is removed. The Bulk file *Status* field is now mapped to the *Status* element of the *BiddableCampaignCriterion* of the *BulkCampaignProductScope*. 
+* All BulkEntity derived SDK objects (except *BulkAdGroupProductPartition*) which previously contained the *AdGroupCriterion* or *CampaignCriterion* property are updated as either Biddable or Negative. Both the type and the name are updated e.g. *BulkAdGroupAgeCriterion* has property name *BiddableAdGroupCriterion* and data type *BiddableAdGroupCriterion*. The purpose is to be clear about the supported data type per bulk entity up front, rather than causing friction later i.e., runtime errors due to mismatch of BulkEntity to concrete criterion type. Several bulk entities were updated during the May 2017 release; and the remaining mappings are fixed with this release.
+
+#### <a name="sdk-non-breaking-changes-july2017"></a>Non Breaking Changes
+* The [Ad Insight]( ~/guides/release-notes.md#keyword-planner-july2017) service proxies are updated to support the keyword planner. 
+* The [Bulk]( ~/guides/release-notes.md#bulk-v11-labels-july2017) service proxies are updated to support labels.
+* The [Campaign Management]( ~/guides/release-notes.md#campaign-v11-labels-july2017) service proxies are updated to support labels.  
+* The [Bulk]( ~/guides/release-notes.md#bulk-v11-offline-conversions-july2017) service proxies are updated to support offline conversions.
+* The [Campaign Management]( ~/guides/release-notes.md#campaign-v11-offline-conversions-july2017) service proxies are updated to support offline conversions.  
+* Support is added for Bulk entity mapping of multiple campaign languages i.e., updated mapping of the *Language* field in the Bulk file to the *BulkCampaign* and *BulkAdGroup*. 
+* Support is added for Bulk entity mapping of MaxConversions, MaxCpc, and TargetCpa bid strategy types i.e., mapping of the *Bid Strategy Type*, *Bid Strategy MaxCpc*, and *Bid Strategy TargetCpa* fields in the Bulk file to the *BulkCampaign*. 
+* Support is added for Bulk entity mapping of LocalInventoryAdsEnabled for Bing Shopping campaigns i.e., mapping of the *LocalInventoryAdsEnabled* field in the Bulk file to the *BulkCampaign*.
+* Performance data mapping is added to the *BulkAdGroupRemarketingListAssociation* object.
+* New version 11 bulk audience objects are added i.e., *BulkAdGroupNegativeRemarketingListAssociation*, *BulkCustomAudience*, *BulkAdGroupCustomAudience*, *BulkAdGroupNegativeCustomAudience*, *BulkInMarketAudience*, *BulkAdGroupInMarketAudience*, and *BulkAdGroupNegativeInMarketAudience* objects are added to the SDK for reading and writing the corresponding Bulk file records.
+* New version 11 bulk price ad extension objects are added i.e., *BulkPriceAdExtension*, *BulkCampaignPriceAdExtension*, and *BulkAdGroupPriceAdExtension* objects are added to the SDK for reading and writing the corresponding Bulk file records.
+* New version 11 bulk account level ad extension objects are added i.e., *BulkAccountAppAdExtension*, *BulkAccountCalloutAdExtension*, *BulkAccountImageAdExtension*, *BulkAccountLocationAdExtension*, *BulkAccountPriceAdExtension*, *BulkAccountReviewAdExtension*, and *BulkAccountSitelink2AdExtension* objects are added to the SDK for reading and writing the corresponding Bulk file records.
+
+## <a name="may2017"></a>May 2017
+For information about this month's changes to Bing Ads services, see the following sections.
+
+-   [Bing Ads API Version 11 General Availability](#v11-ga-may2017)  
+-   [Bing Ads Software Development Kit (SDK) Updates](#sdk-may2017)  
+-   [Dynamic Search Ads Reports](#reporting-v11-dsa-may2017)  
+
+### <a name="v11-ga-may2017"></a>Bing Ads API Version 11 General Availability
+Bing Ads API Version 11 is released to production. For more details, see [Migrating to Bing Ads API Version 11](migrate-bing-ads-api-version-11.md) and [Bing Ads API Reference](~/guides/reference.md).
+
+### <a name="sdk-may2017"></a>Bing Ads PHP Software Development Kit (SDK)
+The Bing Ads .NET, Java, and PHP SDKs are updated with support for Bing Ads API Version 11 [web service addresses](~/guides/web-service-addresses.md). This release enables you to [upgrade](migrate-bing-ads-api-version-11.md) existing features from version 9 and 10 to version 11. 
+
+Bulk entity support for new version 11 features e.g. *BulkPriceAdExtension* will be added to the .NET, Java, and Python SDKs in a future release.
+
+### <a name="reporting-v11-dsa-may2017"></a>Dynamic Search Ads Reports
+The the following reports are added for Dynamic Search Ads.
+
+|Report Request|Report Filter|Report Column|
+|-------------|-----------------|-----------------|
+|[DSAAutoTargetPerformanceReportRequest](~/reporting/dsaautotargetperformancereportrequest.md)|[DSAAutoTargetPerformanceReportFilter](~/reporting/dsaautotargetperformancereportfilter.md)|[DSAAutoTargetPerformanceReportColumn](~/reporting/dsaautotargetperformancereportcolumn.md)|
+|[DSACategoryPerformanceReportRequest](~/reporting/dsacategoryperformancereportrequest.md)|[DSACategoryPerformanceReportFilter](~/reporting/dsacategoryperformancereportfilter.md)|[DSACategoryPerformanceReportColumn](~/reporting/dsacategoryperformancereportcolumn.md)|
+|[DSASearchQueryPerformanceReportRequest](~/reporting/dsasearchqueryperformancereportrequest.md)|[DSASearchQueryPerformanceReportFilter](~/reporting/dsasearchqueryperformancereportfilter.md)|[DSASearchQueryPerformanceReportColumn](~/reporting/dsasearchqueryperformancereportcolumn.md)|
+
+
+## <a name="april2017"></a>April 2017
+For information about this month's changes to Bing Ads services, see the following sections.
+
+-   [Bing Ads API Version 11 Preview](#v11-preview-april2017)  
+-   [Bing Ads PHP Software Development Kit (SDK)](#php-sdk-april2017)  
+-   [Bing Shopping Product Search Query Performance Report](#productsearchqueryperformancereport-april2017)  
+
+### <a name="v11-preview-april2017"></a>Bing Ads API Version 11 Preview
+A preview of the Bing Ads API Version 11 is released to sandbox. For more details, see [Migrating to Bing Ads API Version 11](migrate-bing-ads-api-version-11.md).
+
+### <a name="php-sdk-april2017"></a>Bing Ads PHP Software Development Kit (SDK)
+The Bing Ads PHP SDK is now available. 
+
+For details please see the [blog post](https://blogs.msdn.microsoft.com/bing-ads-api/2017/04/05/announcing-bing-ads-php-sdk/) and [Get Started Using PHP with Bing Ads Services](get-started-php.md).
+
+### <a name="productsearchqueryperformancereport-april2017"></a>Bing Shopping Product Search Query Performance Report
+The Product Search Query performance report is now available for Bing Shopping Campaigns. Submit the [ProductPartitionPerformanceReportRequest](~/reporting/productpartitionperformancereportrequest.md) to see what your audience is searching for when your product ads are shown.

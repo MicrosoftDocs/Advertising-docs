@@ -1,0 +1,177 @@
+---
+title: GetNegativeKeywordsByEntityIds Service Operation
+ms.service: bing-ads-campaign-management
+ms.topic: article
+author: eric-urban
+ms.author: eur
+---
+# GetNegativeKeywordsByEntityIds Service Operation
+Gets the negative keywords that are only associated with the specified campaigns or ad groups.
+
+> [!NOTE]
+> The operation does not return negative keywords of a shared list.
+
+## <a name="request"></a>Request Elements
+The *GetNegativeKeywordsByEntityIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
+
+### <a name="request-body"></a>Request Body Elements
+
+|Element|Description|Data Type|
+|-----------|---------------|-------------|
+|<a name="entityids"></a>EntityIds|An array of entity identifiers to return the associated negative keywords.<br /><br />**Note:** The specified entities must all exist within the same parent entity, for example the ad group identifiers must all exist within the same campaign.<br /><br />This array can contain a maximum of 1 element.|**long**|
+|<a name="entitytype"></a>EntityType|The type of entity corresponding to the specified *EntityIds* element.<br /><br />Possible values include *AdGroup* and *Campaign*.|**string**|
+|<a name="parententityid"></a>ParentEntityId|The identifier of the parent entity corresponding to the specified *EntityIds* element.<br /><br />If the entity type is AdGroup, this element should be set to the campaign identifier that contains all of the specified ad groups.<br /><br />If the entity type is Campaign, the service uses the *CustomerAccountId* header element and this element is ignored.|**long**|
+
+### <a name="request-header"></a>Request Header Elements
+[!INCLUDE[request-header](./includes/request-header.md)]
+
+## <a name="response"></a>Response Elements
+The *GetNegativeKeywordsByEntityIdsResponse* object defines the [body](#response-body) and [header](#response-header) elements of the service operation response. The elements are returned in the same order as shown in the [Response SOAP](#response-soap).
+
+### <a name="response-body"></a>Response Body Elements
+
+|Element|Description|Data Type|
+|-----------|---------------|-------------|
+|<a name="entitynegativekeywords"></a>EntityNegativeKeywords|An array of [EntityNegativeKeyword](../campaign-management/entitynegativekeyword.md) objects that corresponds directly to the entity identifiers that you specified in the request. Items of the list may be returned as null. For each list index where negative keywords for an entity were not retrieved, the corresponding element will be null.|[EntityNegativeKeyword](entitynegativekeyword.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+
+### <a name="response-header"></a>Response Header Elements
+[!INCLUDE[response-header](./includes/response-header.md)]
+
+## <a name="request-soap"></a>Request SOAP
+The following template shows the order of the [body](#request-body) and [header](#request-header) elements for the SOAP request.
+
+```xml
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <Action mustUnderstand="1">GetNegativeKeywordsByEntityIds</Action>
+    <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
+    <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
+    <CustomerAccountId i:nil="false">ValueHere</CustomerAccountId>
+    <CustomerId i:nil="false">ValueHere</CustomerId>
+    <DeveloperToken i:nil="false">ValueHere</DeveloperToken>
+    <Password i:nil="false">ValueHere</Password>
+    <UserName i:nil="false">ValueHere</UserName>
+  </s:Header>
+  <s:Body>
+    <GetNegativeKeywordsByEntityIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+      <EntityIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:long>ValueHere</a1:long>
+      </EntityIds>
+      <EntityType i:nil="false">ValueHere</EntityType>
+      <ParentEntityId i:nil="false">ValueHere</ParentEntityId>
+    </GetNegativeKeywordsByEntityIdsRequest>
+  </s:Body>
+</s:Envelope>
+```
+
+## <a name="response-soap"></a>Response SOAP
+The following template shows the order of the [body](#response-body) and [header](#response-header) elements for the SOAP response.
+
+```xml
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
+  </s:Header>
+  <s:Body>
+    <GetNegativeKeywordsByEntityIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+      <EntityNegativeKeywords d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <EntityNegativeKeyword>
+          <EntityId>ValueHere</EntityId>
+          <EntityType d4p1:nil="false">ValueHere</EntityType>
+          <NegativeKeywords d4p1:nil="false">
+            <NegativeKeyword>
+              <Id d4p1:nil="false">ValueHere</Id>
+              <MatchType>ValueHere</MatchType>
+              <Text d4p1:nil="false">ValueHere</Text>
+            </NegativeKeyword>
+          </NegativeKeywords>
+        </EntityNegativeKeyword>
+      </EntityNegativeKeywords>
+      <PartialErrors d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <BatchError d4p1:type="-- derived type specified here with the appropriate prefix --">
+          <Code>ValueHere</Code>
+          <Details d4p1:nil="false">ValueHere</Details>
+          <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
+          <FieldPath d4p1:nil="false">ValueHere</FieldPath>
+          <ForwardCompatibilityMap xmlns:e657="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e657:KeyValuePairOfstringstring>
+              <e657:key d4p1:nil="false">ValueHere</e657:key>
+              <e657:value d4p1:nil="false">ValueHere</e657:value>
+            </e657:KeyValuePairOfstringstring>
+          </ForwardCompatibilityMap>
+          <Index>ValueHere</Index>
+          <Message d4p1:nil="false">ValueHere</Message>
+          <Type d4p1:nil="false">ValueHere</Type>
+          <!--These fields are applicable if the derived type attribute is set to EditorialError-->
+          <Appealable d4p1:nil="false">ValueHere</Appealable>
+          <DisapprovedText d4p1:nil="false">ValueHere</DisapprovedText>
+          <Location d4p1:nil="false">ValueHere</Location>
+          <PublisherCountry d4p1:nil="false">ValueHere</PublisherCountry>
+          <ReasonCode>ValueHere</ReasonCode>
+        </BatchError>
+      </PartialErrors>
+    </GetNegativeKeywordsByEntityIdsResponse>
+  </s:Body>
+</s:Envelope>
+```
+
+## <a name="example"></a>Code Syntax
+```csharp
+protected async Task<GetNegativeKeywordsByEntityIdsResponse> GetNegativeKeywordsByEntityIdsAsync(
+	IList<long> entityIds,
+	string entityType,
+	long parentEntityId)
+{
+	var request = new GetNegativeKeywordsByEntityIdsRequest
+	{
+		EntityIds = entityIds,
+		EntityType = entityType,
+		ParentEntityId = parentEntityId
+	};
+
+	return (await CampaignManagement.CallAsync((s, r) => s.GetNegativeKeywordsByEntityIdsAsync(r), request));
+}
+```
+```java
+static GetNegativeKeywordsByEntityIdsResponse getNegativeKeywordsByEntityIds(
+	ArrayOflong entityIds,
+	string entityType,
+	long parentEntityId)
+{
+	GetNegativeKeywordsByEntityIdsRequest request = new GetNegativeKeywordsByEntityIdsRequest();
+
+	request.setEntityIds(entityIds);
+	request.setEntityType(entityType);
+	request.setParentEntityId(parentEntityId);
+
+	return CampaignManagement.getService().getNegativeKeywordsByEntityIds(request);
+}
+```
+```php
+static function GetNegativeKeywordsByEntityIds(
+	$entityIds,
+	$entityType,
+	$parentEntityId)
+
+	$getNegativeKeywordsByEntityIdsRequest = new GetNegativeKeywordsByEntityIdsRequest();
+
+	$request->EntityIds = $entityIds;
+	$request->EntityType = $entityType;
+	$request->ParentEntityId = $parentEntityId;
+
+	return $CampaignManagementProxy->GetService()->GetNegativeKeywordsByEntityIds($request);
+}
+```
+```python
+response=campaignmanagement.GetNegativeKeywordsByEntityIds(
+	EntityIds=EntityIdsHere,
+	EntityType=EntityTypeHere,
+	ParentEntityId=ParentEntityIdHere
+)
+```
+
+## Requirements
+Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+

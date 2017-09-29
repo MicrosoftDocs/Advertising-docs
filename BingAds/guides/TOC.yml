@@ -1,0 +1,1723 @@
+- name: Overview
+  href: ./index.md
+  displayName: faq
+- name: Entity Hierarchy and Limits
+  href: ./entity-hierarchy-limits.md
+- name: FAQ
+  href: ./faq.md
+- name: Get Started With the Bing Ads API
+  href: ./get-started.md
+  displayName: dev token developer token
+  expanded: true
+  items:
+  - name: Get Started Using C# with Bing Ads Services
+    href: ./get-started-csharp.md
+    items:
+    - name: Walkthrough - Bing Ads Desktop Application in C#
+      href: ./walkthrough-desktop-application-csharp.md
+    - name: Walkthrough - Bing Ads Web Application in C#
+      href: ./walkthrough-web-application-csharp.md
+  - name: Get Started Using Java with Bing Ads Services
+    href: ./get-started-java.md
+    items:
+    - name: Walkthrough - Bing Ads Desktop Application in Java
+      href: ./walkthrough-desktop-application-java.md
+    - name: Walkthrough - Bing Ads Web Application in Java
+      href: ./walkthrough-web-application-java.md
+  - name: Get Started Using PHP with Bing Ads Services
+    href: ./get-started-php.md
+    items:
+    - name: Walkthrough - Bing Ads Desktop Application in PHP
+      href: ./walkthrough-desktop-application-php.md
+    - name: Walkthrough - Bing Ads Web Application in PHP
+      href: ./walkthrough-web-application-java.md
+  - name: Get Started Using Python with Bing Ads Services
+    href: ./get-started-python.md
+    items:
+    - name: Walkthrough - Bing Ads Desktop Application in Python
+      href: ./walkthrough-desktop-application-python.md
+    - name: Walkthrough - Bing Ads Web Application in Python
+      href: ./walkthrough-web-application-java.md
+- name: Sandbox
+  href: ./sandbox.md
+- name: Bing Ads Code Examples
+  href: ./code-examples.md
+  items:
+  - name: Ad Extensions
+    href: ./code-example-ad-extensions.md
+  - name: Bulk Ad Extensions
+    href: ./code-example-bulk-ad-extensions.md
+  - name: Bulk Shopping Campaigns
+    href: ./code-example-bulk-shopping-campaigns.md
+  - name: Budget Opportunities
+    href: ./code-example-budget-opportunities.md
+  - name: Conversion Goals
+    href: ./code-example-conversion-goals.md
+  - name: Customer Signup
+    href: ./code-example-customer-signup.md
+  - name: Dynamic Search Campaigns
+    href: ./code-example-dynamic-search-campaigns.md
+  - name: Geographical Locations
+    href: ./code-example-geographical-locations.md
+  - name: Invite User
+    href: ./code-example-invite-user.md
+  - name: Keyword Planner
+    href: ./code-example-keyword-planner.md
+  - name: Keywords and Ads
+    href: ./code-example-keywords-ads.md
+  - name: Labels
+    href: ./code-example-labels.md
+  - name: Manage Client
+    href: ./code-example-manage-client.md
+  - name: Negative Keywords
+    href: ./code-example-negative-keywords.md
+  - name: Offline Conversions
+    href: ./code-example-offline-conversions.md
+  - name: Remarketing Lists
+    href: ./code-example-remarketing-lists.md
+  - name: Report Requests
+    href: ./code-example-report-requests.md
+  - name: Search User Accounts
+    href: ./code-example-search-user-accounts.md
+  - name: Shopping Campaigns
+    href: ./code-example-shopping-campaigns.md
+  - name: Target Criterions
+    href: ./code-example-target-criterions.md
+- name: Bing Ads Client Libraries
+  href: ./client-libraries.md
+  displayName: SDK
+- name: Bing Ads Technical Guides
+  href: ./technical-guides.md
+  items:
+  - name: Authentication with OAuth
+    href: ./authentication-oauth.md
+    displayName: access refresh token scope
+  - name: Bing Ads Services Protocol
+    href: ./services-protocol.md
+    displayName: wsdl
+  - name: Handling Service Errors and Exceptions
+    href: ./handle-service-errors-exceptions.md
+    displayName: support help debug
+  - name: Customer Accounts
+    href: ./customer-accounts.md
+    items:
+    - name: Management Model for Direct Advertisers
+      href: ./management-model-direct-advertisers.md
+    - name: Management Model for Agencies
+      href: ./management-model-agencies.md
+    - name: Management Model for Resellers
+      href: ./management-model-resellers.md
+    - name: Management Model for Tool Providers
+      href: ./management-model-tool-providers.md
+  - name: Campaigns
+    href: ./campaigns.md
+    items:
+    - name: Budget and Bid Opportunities
+      href: ./budget-bid-opportunities.md
+    - name: Budget and Bid Strategies
+      href: ./budget-bid-strategies.md
+    - name: Bulk Download and Upload
+      href: ./bulk-download-upload.md
+    - name: Labels
+      href: ./labels.md
+    - name: Keyword Ideas and Traffic Estimates
+      href: ./keyword-ideas-traffic-estimates.md
+    - name: Negative Keywords
+      href: ./negative-keywords.md
+    - name: Show Ads to Your Target Audience
+      href: ./show-ads-target-audience.md
+    - name: Universal Event Tracking
+      href: ./universal-event-tracking.md
+    - name: URL Tracking with Upgraded URLs
+      href: ./url-tracking-upgraded-urls.md
+  - name: Ads
+    href: ./ads.md
+    items:
+    - name: Ad Extensions
+      href: ./ad-extensions.md
+      displayName: upgrade migrate
+    - name: App Install Ads
+      href: ./app-install-ads.md
+    - name: Dynamic Search Ads
+      href: ./dynamic-search-ads.md
+    - name: Editorial Review and Appeals
+      href: ./editorial-review-appeals.md
+    - name: Expanded Text Ads
+      href: ./expanded-text-ads.md
+    - name: Intent Ads
+      href: ./intent-ads.md
+    - name: Product Ads
+      href: ./product-ads.md
+  - name: Reports
+    href: ./reports.md
+    items:
+    - name: Report Attributes and Performance Statistics
+      href: ./report-attributes-performance-statistics.md
+    - name: Report Types
+      href: ./report-types.md
+    - name: Request and Download a Report
+      href: ./request-download-report.md
+    - name: Report Data Retention Time Periods
+      href: ./report-data-retention-time-periods.md
+- name: Bing Ads API Reference
+  href: ./reference.md
+  items:
+  - name: Bing Ads Web Service Addresses
+    href: ./web-service-addresses.md
+    displayName: wsdl
+  - name: Version 11 Services
+    href: ./services.md
+    items:
+    - name: Ad Insight Service
+      href: ../ad-insight/ad-insight-service-reference.md
+      items: 
+      - name: Ad Insight Service Operations
+        href: ../ad-insight/ad-insight-service-operations.md
+        items: 
+        - name: GetBidLandscapeByAdGroupIds
+          href: ../ad-insight/getbidlandscapebyadgroupids.md
+        - name: GetBidLandscapeByKeywordIds
+          href: ../ad-insight/getbidlandscapebykeywordids.md
+        - name: GetBidOpportunities
+          href: ../ad-insight/getbidopportunities.md
+        - name: GetBudgetOpportunities
+          href: ../ad-insight/getbudgetopportunities.md
+        - name: GetDomainCategories
+          href: ../ad-insight/getdomaincategories.md
+        - name: GetEstimatedBidByKeywordIds
+          href: ../ad-insight/getestimatedbidbykeywordids.md
+        - name: GetEstimatedBidByKeywords
+          href: ../ad-insight/getestimatedbidbykeywords.md
+        - name: GetEstimatedPositionByKeywordIds
+          href: ../ad-insight/getestimatedpositionbykeywordids.md
+        - name: GetEstimatedPositionByKeywords
+          href: ../ad-insight/getestimatedpositionbykeywords.md
+        - name: GetHistoricalKeywordPerformance
+          href: ../ad-insight/gethistoricalkeywordperformance.md
+        - name: GetHistoricalSearchCount
+          href: ../ad-insight/gethistoricalsearchcount.md
+        - name: GetKeywordCategories
+          href: ../ad-insight/getkeywordcategories.md
+        - name: GetKeywordDemographics
+          href: ../ad-insight/getkeyworddemographics.md
+        - name: GetKeywordIdeaCategories
+          href: ../ad-insight/getkeywordideacategories.md
+        - name: GetKeywordIdeas
+          href: ../ad-insight/getkeywordideas.md
+        - name: GetKeywordLocations
+          href: ../ad-insight/getkeywordlocations.md
+        - name: GetKeywordOpportunities
+          href: ../ad-insight/getkeywordopportunities.md
+        - name: GetKeywordTrafficEstimates
+          href: ../ad-insight/getkeywordtrafficestimates.md
+        - name: SuggestKeywordsForUrl
+          href: ../ad-insight/suggestkeywordsforurl.md
+        - name: SuggestKeywordsFromExistingKeywords
+          href: ../ad-insight/suggestkeywordsfromexistingkeywords.md
+      - name: Ad Insight Data Objects
+        href: ../ad-insight/ad-insight-data-objects.md
+        items: 
+        - name: AdApiError
+          href: ../ad-insight/adapierror.md
+        - name: AdApiFaultDetail
+          href: ../ad-insight/adapifaultdetail.md
+        - name: AdGroupBidLandscape
+          href: ../ad-insight/adgroupbidlandscape.md
+        - name: AdGroupBidLandscapeInput
+          href: ../ad-insight/adgroupbidlandscapeinput.md
+        - name: AdGroupEstimate
+          href: ../ad-insight/adgroupestimate.md
+        - name: AdGroupEstimator
+          href: ../ad-insight/adgroupestimator.md
+        - name: ApiFaultDetail
+          href: ../ad-insight/apifaultdetail.md
+        - name: ApplicationFault
+          href: ../ad-insight/applicationfault.md
+        - name: BatchError
+          href: ../ad-insight/batcherror.md
+        - name: BidLandscapePoint
+          href: ../ad-insight/bidlandscapepoint.md
+        - name: BidOpportunity
+          href: ../ad-insight/bidopportunity.md
+        - name: BroadMatchKeywordOpportunity
+          href: ../ad-insight/broadmatchkeywordopportunity.md
+        - name: BroadMatchSearchQueryKPI
+          href: ../ad-insight/broadmatchsearchquerykpi.md
+        - name: BudgetOpportunity
+          href: ../ad-insight/budgetopportunity.md
+        - name: BudgetPoint
+          href: ../ad-insight/budgetpoint.md
+        - name: CampaignEstimate
+          href: ../ad-insight/campaignestimate.md
+        - name: CampaignEstimator
+          href: ../ad-insight/campaignestimator.md
+        - name: CategorySearchParameter
+          href: ../ad-insight/categorysearchparameter.md
+        - name: CompetitionSearchParameter
+          href: ../ad-insight/competitionsearchparameter.md
+        - name: Criterion
+          href: ../ad-insight/criterion.md
+        - name: DateRangeSearchParameter
+          href: ../ad-insight/daterangesearchparameter.md
+        - name: DayMonthAndYear
+          href: ../ad-insight/daymonthandyear.md
+        - name: DeviceCriterion
+          href: ../ad-insight/devicecriterion.md
+        - name: DeviceSearchParameter
+          href: ../ad-insight/devicesearchparameter.md
+        - name: DomainCategory
+          href: ../ad-insight/domaincategory.md
+        - name: EstimatedBidAndTraffic
+          href: ../ad-insight/estimatedbidandtraffic.md
+        - name: EstimatedPositionAndTraffic
+          href: ../ad-insight/estimatedpositionandtraffic.md
+        - name: ExcludeAccountKeywordsSearchParameter
+          href: ../ad-insight/excludeaccountkeywordssearchparameter.md
+        - name: HistoricalSearchCountPeriodic
+          href: ../ad-insight/historicalsearchcountperiodic.md
+        - name: IdeaTextSearchParameter
+          href: ../ad-insight/ideatextsearchparameter.md
+        - name: ImpressionShareSearchParameter
+          href: ../ad-insight/impressionsharesearchparameter.md
+        - name: Keyword
+          href: ../ad-insight/keyword.md
+        - name: KeywordAndConfidence
+          href: ../ad-insight/keywordandconfidence.md
+        - name: KeywordAndMatchType
+          href: ../ad-insight/keywordandmatchtype.md
+        - name: KeywordBidLandscape
+          href: ../ad-insight/keywordbidlandscape.md
+        - name: KeywordCategory
+          href: ../ad-insight/keywordcategory.md
+        - name: KeywordCategoryResult
+          href: ../ad-insight/keywordcategoryresult.md
+        - name: KeywordDemographic
+          href: ../ad-insight/keyworddemographic.md
+        - name: KeywordDemographicResult
+          href: ../ad-insight/keyworddemographicresult.md
+        - name: KeywordEstimate
+          href: ../ad-insight/keywordestimate.md
+        - name: KeywordEstimatedBid
+          href: ../ad-insight/keywordestimatedbid.md
+        - name: KeywordEstimatedPosition
+          href: ../ad-insight/keywordestimatedposition.md
+        - name: KeywordEstimator
+          href: ../ad-insight/keywordestimator.md
+        - name: KeywordHistoricalPerformance
+          href: ../ad-insight/keywordhistoricalperformance.md
+        - name: KeywordIdea
+          href: ../ad-insight/keywordidea.md
+        - name: KeywordIdeaCategory
+          href: ../ad-insight/keywordideacategory.md
+        - name: KeywordIdEstimatedBid
+          href: ../ad-insight/keywordidestimatedbid.md
+        - name: KeywordIdEstimatedPosition
+          href: ../ad-insight/keywordidestimatedposition.md
+        - name: KeywordKPI
+          href: ../ad-insight/keywordkpi.md
+        - name: KeywordLocation
+          href: ../ad-insight/keywordlocation.md
+        - name: KeywordLocationResult
+          href: ../ad-insight/keywordlocationresult.md
+        - name: KeywordOpportunity
+          href: ../ad-insight/keywordopportunity.md
+        - name: KeywordSearchCount
+          href: ../ad-insight/keywordsearchcount.md
+        - name: KeywordSuggestion
+          href: ../ad-insight/keywordsuggestion.md
+        - name: LanguageCriterion
+          href: ../ad-insight/languagecriterion.md
+        - name: LanguageSearchParameter
+          href: ../ad-insight/languagesearchparameter.md
+        - name: LocationCriterion
+          href: ../ad-insight/locationcriterion.md
+        - name: LocationSearchParameter
+          href: ../ad-insight/locationsearchparameter.md
+        - name: NegativeKeyword
+          href: ../ad-insight/negativekeyword.md
+        - name: NetworkCriterion
+          href: ../ad-insight/networkcriterion.md
+        - name: NetworkSearchParameter
+          href: ../ad-insight/networksearchparameter.md
+        - name: OperationError
+          href: ../ad-insight/operationerror.md
+        - name: Opportunity
+          href: ../ad-insight/opportunity.md
+        - name: QuerySearchParameter
+          href: ../ad-insight/querysearchparameter.md
+        - name: SearchCountsByAttributes
+          href: ../ad-insight/searchcountsbyattributes.md
+        - name: SearchParameter
+          href: ../ad-insight/searchparameter.md
+        - name: SearchVolumeSearchParameter
+          href: ../ad-insight/searchvolumesearchparameter.md
+        - name: SuggestedBidSearchParameter
+          href: ../ad-insight/suggestedbidsearchparameter.md
+        - name: TrafficEstimate
+          href: ../ad-insight/trafficestimate.md
+        - name: UrlSearchParameter
+          href: ../ad-insight/urlsearchparameter.md
+      - name: Ad Insight Value Sets
+        href: ../ad-insight/ad-insight-value-sets.md
+        items: 
+        - name: AdGroupBidLandscapeType
+          href: ../ad-insight/adgroupbidlandscapetype.md
+        - name: AdPosition
+          href: ../ad-insight/adposition.md
+        - name: BidOpportunityType
+          href: ../ad-insight/bidopportunitytype.md
+        - name: BudgetLimitType
+          href: ../ad-insight/budgetlimittype.md
+        - name: BudgetPointType
+          href: ../ad-insight/budgetpointtype.md
+        - name: CompetitionLevel
+          href: ../ad-insight/competitionlevel.md
+        - name: Currency
+          href: ../ad-insight/currency.md
+        - name: KeywordIdeaAttribute
+          href: ../ad-insight/keywordideaattribute.md
+        - name: KeywordOpportunityType
+          href: ../ad-insight/keywordopportunitytype.md
+        - name: MatchType
+          href: ../ad-insight/matchtype.md
+        - name: NetworkType
+          href: ../ad-insight/networktype.md
+        - name: SourceType
+          href: ../ad-insight/sourcetype.md
+        - name: TargetAdPosition
+          href: ../ad-insight/targetadposition.md
+        - name: TimeInterval
+          href: ../ad-insight/timeinterval.md
+    - name: Bulk Service Reference
+      href: ../bulk/bulk-service-reference.md
+      items: 
+      - name: Bulk Service Operations
+        href: ../bulk/bulk-service-operations.md
+        items: 
+        - name: DownloadCampaignsByAccountIds
+          href: ../bulk/downloadcampaignsbyaccountids.md
+        - name: DownloadCampaignsByCampaignIds
+          href: ../bulk/downloadcampaignsbycampaignids.md
+        - name: GetBulkDownloadStatus
+          href: ../bulk/getbulkdownloadstatus.md
+        - name: GetBulkUploadStatus
+          href: ../bulk/getbulkuploadstatus.md
+        - name: GetBulkUploadUrl
+          href: ../bulk/getbulkuploadurl.md
+      - name: Bulk Data Objects
+        href: ../bulk/bulk-data-objects.md
+        items: 
+        - name: AdApiError
+          href: ../bulk/adapierror.md
+        - name: AdApiFaultDetail
+          href: ../bulk/adapifaultdetail.md
+        - name: ApiFaultDetail
+          href: ../bulk/apifaultdetail.md
+        - name: ApplicationFault
+          href: ../bulk/applicationfault.md
+        - name: BatchError
+          href: ../bulk/batcherror.md
+        - name: CampaignScope
+          href: ../bulk/campaignscope.md
+        - name: Date
+          href: ../bulk/date.md
+        - name: EditorialError
+          href: ../bulk/editorialerror.md
+        - name: OperationError
+          href: ../bulk/operationerror.md
+        - name: PerformanceStatsDateRange
+          href: ../bulk/performancestatsdaterange.md
+      - name: Bulk Value Sets
+        href: ../bulk/bulk-value-sets.md
+        items: 
+        - name: CompressionType
+          href: ../bulk/compressiontype.md
+        - name: DataScope
+          href: ../bulk/datascope.md
+        - name: DownloadEntity
+          href: ../bulk/downloadentity.md
+        - name: DownloadFileType
+          href: ../bulk/downloadfiletype.md
+        - name: ReportTimePeriod
+          href: ../bulk/reporttimeperiod.md
+        - name: ResponseMode
+          href: ../bulk/responsemode.md
+      - name: Bulk File Schema
+        href: ../bulk/bulk-file-schema.md
+        items: 
+        - name: Account
+          href: ../bulk/account.md
+        - name: Account App Ad Extension
+          href: ../bulk/account-app-ad-extension.md
+        - name: Account Callout Ad Extension
+          href: ../bulk/account-callout-ad-extension.md
+        - name: Account Image Ad Extension
+          href: ../bulk/account-image-ad-extension.md
+        - name: Account Location Ad Extension
+          href: ../bulk/account-location-ad-extension.md
+        - name: Account Price Ad Extension
+          href: ../bulk/account-price-ad-extension.md
+        - name: Account Review Ad Extension
+          href: ../bulk/account-review-ad-extension.md
+        - name: Account Sitelink2 Ad Extension
+          href: ../bulk/account-sitelink2-ad-extension.md
+        - name: Account Structured Snippet Ad Extension
+          href: ../bulk/account-structured-snippet-ad-extension.md
+        - name: Ad Group
+          href: ../bulk/ad-group.md
+        - name: Ad Group Age Criterion
+          href: ../bulk/ad-group-age-criterion.md
+        - name: Ad Group App Ad Extension
+          href: ../bulk/ad-group-app-ad-extension.md
+        - name: Ad Group Callout Ad Extension
+          href: ../bulk/ad-group-callout-ad-extension.md
+        - name: Ad Group Custom Audience Association
+          href: ../bulk/ad-group-custom-audience-association.md
+        - name: Ad Group DayTime Criterion
+          href: ../bulk/ad-group-daytime-criterion.md
+        - name: Ad Group DeviceOS Criterion
+          href: ../bulk/ad-group-deviceos-criterion.md
+        - name: Ad Group Dynamic Search Ad Target
+          href: ../bulk/ad-group-dynamic-search-ad-target.md
+        - name: Ad Group Gender Criterion
+          href: ../bulk/ad-group-gender-criterion.md
+        - name: Ad Group Image Ad Extension
+          href: ../bulk/ad-group-image-ad-extension.md
+        - name: Ad Group In Market Audience Association
+          href: ../bulk/ad-group-in-market-audience-association.md
+        - name: Ad Group Label
+          href: ../bulk/ad-group-label.md
+        - name: Ad Group Location Criterion
+          href: ../bulk/ad-group-location-criterion.md
+        - name: Ad Group Location Intent Criterion
+          href: ../bulk/ad-group-location-intent-criterion.md
+        - name: Ad Group Negative Custom Audience Association
+          href: ../bulk/ad-group-negative-custom-audience-association.md
+        - name: Ad Group Negative Dynamic Search Ad Target
+          href: ../bulk/ad-group-negative-dynamic-search-ad-target.md
+        - name: Ad Group Negative In Market Audience Association
+          href: ../bulk/ad-group-negative-in-market-audience-association.md
+        - name: Ad Group Negative Location Criterion
+          href: ../bulk/ad-group-negative-location-criterion.md
+        - name: Ad Group Negative Keyword
+          href: ../bulk/ad-group-negative-keyword.md
+        - name: Ad Group Negative Site
+          href: ../bulk/ad-group-negative-site.md
+        - name: Ad Group Negative Remarketing List Association
+          href: ../bulk/ad-group-negative-remarketing-list-association.md
+        - name: Ad Group Price Ad Extension
+          href: ../bulk/ad-group-price-ad-extension.md
+        - name: Ad Group Product Partition
+          href: ../bulk/ad-group-product-partition.md
+        - name: Ad Group Radius Criterion
+          href: ../bulk/ad-group-radius-criterion.md
+        - name: Ad Group Remarketing List Association
+          href: ../bulk/ad-group-remarketing-list-association.md
+        - name: Ad Group Review Ad Extension
+          href: ../bulk/ad-group-review-ad-extension.md
+        - name: AdGroup Sitelink Ad Extension
+          href: ../bulk/adgroup-sitelink-ad-extension.md
+        - name: Ad Group Sitelink2 Ad Extension
+          href: ../bulk/ad-group-sitelink2-ad-extension.md
+        - name: Ad Group Structured Snippet Ad Extension
+          href: ../bulk/ad-group-structured-snippet-ad-extension.md
+        - name: App Ad Extension
+          href: ../bulk/app-ad-extension.md
+        - name: App Install Ad
+          href: ../bulk/app-install-ad.md
+        - name: App Install Ad Label
+          href: ../bulk/app-install-ad-label.md
+        - name: Budget
+          href: ../bulk/budget.md
+        - name: Call Ad Extension
+          href: ../bulk/call-ad-extension.md
+        - name: Callout Ad Extension
+          href: ../bulk/callout-ad-extension.md
+        - name: Campaign
+          href: ../bulk/campaign.md
+        - name: Campaign Age Criterion
+          href: ../bulk/campaign-age-criterion.md
+        - name: Campaign App Ad Extension
+          href: ../bulk/campaign-app-ad-extension.md
+        - name: Campaign Call Ad Extension
+          href: ../bulk/campaign-call-ad-extension.md
+        - name: Campaign Callout Ad Extension
+          href: ../bulk/campaign-callout-ad-extension.md
+        - name: Campaign DayTime Criterion
+          href: ../bulk/campaign-daytime-criterion.md
+        - name: Campaign DeviceOS Criterion
+          href: ../bulk/campaign-deviceos-criterion.md
+        - name: Campaign Image Ad Extension
+          href: ../bulk/campaign-image-ad-extension.md
+        - name: Campaign Gender Criterion
+          href: ../bulk/campaign-gender-criterion.md
+        - name: Campaign Label
+          href: ../bulk/campaign-label.md
+        - name: Campaign Location Ad Extension
+          href: ../bulk/campaign-location-ad-extension.md
+        - name: Campaign Location Criterion
+          href: ../bulk/campaign-location-criterion.md
+        - name: Campaign Location Intent Criterion
+          href: ../bulk/campaign-location-intent-criterion.md
+        - name: Campaign Negative Dynamic Search Ad Target
+          href: ../bulk/campaign-negative-dynamic-search-ad-target.md
+        - name: Campaign Negative Keyword
+          href: ../bulk/campaign-negative-keyword.md
+        - name: Campaign Negative Keyword List Association
+          href: ../bulk/campaign-negative-keyword-list-association.md
+        - name: Campaign Negative Location Criterion
+          href: ../bulk/campaign-negative-location-criterion.md
+        - name: Campaign Negative Site
+          href: ../bulk/campaign-negative-site.md
+        - name: Campaign Price Ad Extension
+          href: ../bulk/campaign-price-ad-extension.md
+        - name: Campaign Product Scope
+          href: ../bulk/campaign-product-scope.md
+        - name: Campaign Radius Criterion
+          href: ../bulk/campaign-radius-criterion.md
+        - name: Campaign Review Ad Extension
+          href: ../bulk/campaign-review-ad-extension.md
+        - name: Campaign Sitelink Ad Extension
+          href: ../bulk/campaign-sitelink-ad-extension.md
+        - name: Campaign Sitelink2 Ad Extension
+          href: ../bulk/campaign-sitelink2-ad-extension.md
+        - name: Campaign Structured Snippet Ad Extension
+          href: ../bulk/campaign-structured-snippet-ad-extension.md
+        - name: Custom Audience
+          href: ../bulk/custom-audience.md
+        - name: Dynamic Search Ad
+          href: ../bulk/dynamic-search-ad.md
+        - name: Dynamic Search Ad Label
+          href: ../bulk/dynamic-search-ad-label.md
+        - name: Expanded Text Ad
+          href: ../bulk/expanded-text-ad.md
+        - name: Expanded Text Ad Label
+          href: ../bulk/expanded-text-ad-label.md
+        - name: Format Version
+          href: ../bulk/format-version.md
+        - name: Image Ad Extension
+          href: ../bulk/image-ad-extension.md
+        - name: In Market Audience
+          href: ../bulk/in-market-audience.md
+        - name: Keyword
+          href: ../bulk/keyword.md
+        - name: Keyword Best Position Bid
+          href: ../bulk/keyword-best-position-bid.md
+        - name: Keyword First Page Bid
+          href: ../bulk/keyword-first-page-bid.md
+        - name: Keyword Label
+          href: ../bulk/keyword-label.md
+        - name: Keyword Main Line Bid
+          href: ../bulk/keyword-main-line-bid.md
+        - name: Label
+          href: ../bulk/label.md
+        - name: Location Ad Extension
+          href: ../bulk/location-ad-extension.md
+        - name: Negative Keyword List
+          href: ../bulk/negative-keyword-list.md
+        - name: Offline Conversion
+          href: ../bulk/offline-conversion.md
+        - name: Price Ad Extension
+          href: ../bulk/price-ad-extension.md
+        - name: Product Ad
+          href: ../bulk/product-ad.md
+        - name: Product Ad Label
+          href: ../bulk/product-ad-label.md
+        - name: Remarketing List
+          href: ../bulk/remarketing-list.md
+        - name: Review Ad Extension
+          href: ../bulk/review-ad-extension.md
+        - name: Sitelink Ad Extension
+          href: ../bulk/sitelink-ad-extension.md
+        - name: Sitelink2 Ad Extension
+          href: ../bulk/sitelink2-ad-extension.md
+        - name: Shared Negative Keyword
+          href: ../bulk/shared-negative-keyword.md
+        - name: Structured Snippet Ad Extension
+          href: ../bulk/structured-snippet-ad-extension.md
+        - name: Text Ad
+          href: ../bulk/text-ad.md
+        - name: Text Ad Label
+          href: ../bulk/text-ad-label.md
+    - name: Campaign Management Service Reference
+      href: ../campaign-management/campaign-management-service-reference.md
+      items: 
+      - name: Campaign Management Service Operations
+        href: ../campaign-management/campaign-management-service-operations.md
+        items: 
+        - name: AddAdExtensions
+          href: ../campaign-management/addadextensions.md
+        - name: AddAdGroupCriterions
+          href: ../campaign-management/addadgroupcriterions.md
+        - name: AddAdGroups
+          href: ../campaign-management/addadgroups.md
+        - name: AddAds
+          href: ../campaign-management/addads.md
+        - name: AddAudiences
+          href: ../campaign-management/addaudiences.md
+        - name: AddBudgets
+          href: ../campaign-management/addbudgets.md
+        - name: AddCampaignCriterions
+          href: ../campaign-management/addcampaigncriterions.md
+        - name: AddCampaigns
+          href: ../campaign-management/addcampaigns.md
+        - name: AddConversionGoals
+          href: ../campaign-management/addconversiongoals.md
+        - name: AddKeywords
+          href: ../campaign-management/addkeywords.md
+        - name: AddLabels
+          href: ../campaign-management/addlabels.md
+        - name: AddListItemsToSharedList
+          href: ../campaign-management/addlistitemstosharedlist.md
+        - name: AddMedia
+          href: ../campaign-management/addmedia.md
+        - name: AddNegativeKeywordsToEntities
+          href: ../campaign-management/addnegativekeywordstoentities.md
+        - name: AddSharedEntity
+          href: ../campaign-management/addsharedentity.md
+        - name: AddUetTags
+          href: ../campaign-management/adduettags.md
+        - name: AppealEditorialRejections
+          href: ../campaign-management/appealeditorialrejections.md
+        - name: ApplyOfflineConversions
+          href: ../campaign-management/applyofflineconversions.md
+        - name: ApplyProductPartitionActions
+          href: ../campaign-management/applyproductpartitionactions.md
+        - name: DeleteAdExtensions
+          href: ../campaign-management/deleteadextensions.md
+        - name: DeleteAdExtensionsAssociations
+          href: ../campaign-management/deleteadextensionsassociations.md
+        - name: DeleteAdGroupCriterions
+          href: ../campaign-management/deleteadgroupcriterions.md
+        - name: DeleteAdGroups
+          href: ../campaign-management/deleteadgroups.md
+        - name: DeleteAds
+          href: ../campaign-management/deleteads.md
+        - name: DeleteAudiences
+          href: ../campaign-management/deleteaudiences.md
+        - name: DeleteBudgets
+          href: ../campaign-management/deletebudgets.md
+        - name: DeleteCampaignCriterions
+          href: ../campaign-management/deletecampaigncriterions.md
+        - name: DeleteCampaigns
+          href: ../campaign-management/deletecampaigns.md
+        - name: DeleteKeywords
+          href: ../campaign-management/deletekeywords.md
+        - name: DeleteLabelAssociations
+          href: ../campaign-management/deletelabelassociations.md
+        - name: DeleteLabels
+          href: ../campaign-management/deletelabels.md
+        - name: DeleteListItemsFromSharedList
+          href: ../campaign-management/deletelistitemsfromsharedlist.md
+        - name: DeleteMedia
+          href: ../campaign-management/deletemedia.md
+        - name: DeleteNegativeKeywordsFromEntities
+          href: ../campaign-management/deletenegativekeywordsfromentities.md
+        - name: DeleteSharedEntities
+          href: ../campaign-management/deletesharedentities.md
+        - name: DeleteSharedEntityAssociations
+          href: ../campaign-management/deletesharedentityassociations.md
+        - name: GetAccountMigrationStatuses
+          href: ../campaign-management/getaccountmigrationstatuses.md
+        - name: GetAccountProperties
+          href: ../campaign-management/getaccountproperties.md
+        - name: GetAdExtensionIdsByAccountId
+          href: ../campaign-management/getadextensionidsbyaccountid.md
+        - name: GetAdExtensionsAssociations
+          href: ../campaign-management/getadextensionsassociations.md
+        - name: GetAdExtensionsByIds
+          href: ../campaign-management/getadextensionsbyids.md
+        - name: GetAdExtensionsEditorialReasons
+          href: ../campaign-management/getadextensionseditorialreasons.md
+        - name: GetAdGroupCriterionsByIds
+          href: ../campaign-management/getadgroupcriterionsbyids.md
+        - name: GetAdGroupsByCampaignId
+          href: ../campaign-management/getadgroupsbycampaignid.md
+        - name: GetAdGroupsByIds
+          href: ../campaign-management/getadgroupsbyids.md
+        - name: GetAdsByAdGroupId
+          href: ../campaign-management/getadsbyadgroupid.md
+        - name: GetAdsByEditorialStatus
+          href: ../campaign-management/getadsbyeditorialstatus.md
+        - name: GetAdsByIds
+          href: ../campaign-management/getadsbyids.md
+        - name: GetAudiencesByIds
+          href: ../campaign-management/getaudiencesbyids.md
+        - name: GetBMCStoresByCustomerId
+          href: ../campaign-management/getbmcstoresbycustomerid.md
+        - name: GetBSCCountries
+          href: ../campaign-management/getbsccountries.md
+        - name: GetBudgetsByIds
+          href: ../campaign-management/getbudgetsbyids.md
+        - name: GetCampaignCriterionsByIds
+          href: ../campaign-management/getcampaigncriterionsbyids.md
+        - name: GetCampaignIdsByBudgetIds
+          href: ../campaign-management/getcampaignidsbybudgetids.md
+        - name: GetCampaignsByAccountId
+          href: ../campaign-management/getcampaignsbyaccountid.md
+        - name: GetCampaignsByIds
+          href: ../campaign-management/getcampaignsbyids.md
+        - name: GetConversionGoalsByIds
+          href: ../campaign-management/getconversiongoalsbyids.md
+        - name: GetConversionGoalsByTagIds
+          href: ../campaign-management/getconversiongoalsbytagids.md
+        - name: GetEditorialReasonsByIds
+          href: ../campaign-management/geteditorialreasonsbyids.md
+        - name: GetGeoLocationsFileUrl
+          href: ../campaign-management/getgeolocationsfileurl.md
+        - name: GetKeywordsByAdGroupId
+          href: ../campaign-management/getkeywordsbyadgroupid.md
+        - name: GetKeywordsByEditorialStatus
+          href: ../campaign-management/getkeywordsbyeditorialstatus.md
+        - name: GetKeywordsByIds
+          href: ../campaign-management/getkeywordsbyids.md
+        - name: GetLabelAssociationsByEntityIds
+          href: ../campaign-management/getlabelassociationsbyentityids.md
+        - name: GetLabelAssociationsByLabelIds
+          href: ../campaign-management/getlabelassociationsbylabelids.md
+        - name: GetLabelsByIds
+          href: ../campaign-management/getlabelsbyids.md
+        - name: GetListItemsBySharedList
+          href: ../campaign-management/getlistitemsbysharedlist.md
+        - name: GetMediaAssociations
+          href: ../campaign-management/getmediaassociations.md
+        - name: GetMediaByIds
+          href: ../campaign-management/getmediabyids.md
+        - name: GetMediaMetaDataByAccountId
+          href: ../campaign-management/getmediametadatabyaccountid.md
+        - name: GetMediaMetaDataByIds
+          href: ../campaign-management/getmediametadatabyids.md
+        - name: GetNegativeKeywordsByEntityIds
+          href: ../campaign-management/getnegativekeywordsbyentityids.md
+        - name: GetNegativeSitesByAdGroupIds
+          href: ../campaign-management/getnegativesitesbyadgroupids.md
+        - name: GetNegativeSitesByCampaignIds
+          href: ../campaign-management/getnegativesitesbycampaignids.md
+        - name: GetSharedEntitiesByAccountId
+          href: ../campaign-management/getsharedentitiesbyaccountid.md
+        - name: GetSharedEntityAssociationsByEntityIds
+          href: ../campaign-management/getsharedentityassociationsbyentityids.md
+        - name: GetSharedEntityAssociationsBySharedEntityIds
+          href: ../campaign-management/getsharedentityassociationsbysharedentityids.md
+        - name: GetUetTagsByIds
+          href: ../campaign-management/getuettagsbyids.md
+        - name: SetAccountProperties
+          href: ../campaign-management/setaccountproperties.md
+        - name: SetAdExtensionsAssociations
+          href: ../campaign-management/setadextensionsassociations.md
+        - name: SetLabelAssociations
+          href: ../campaign-management/setlabelassociations.md
+        - name: SetNegativeSitesToAdGroups
+          href: ../campaign-management/setnegativesitestoadgroups.md
+        - name: SetNegativeSitesToCampaigns
+          href: ../campaign-management/setnegativesitestocampaigns.md
+        - name: SetSharedEntityAssociations
+          href: ../campaign-management/setsharedentityassociations.md
+        - name: UpdateAdExtensions
+          href: ../campaign-management/updateadextensions.md
+        - name: UpdateAdGroupCriterions
+          href: ../campaign-management/updateadgroupcriterions.md
+        - name: UpdateAdGroups
+          href: ../campaign-management/updateadgroups.md
+        - name: UpdateAds
+          href: ../campaign-management/updateads.md
+        - name: UpdateAudiences
+          href: ../campaign-management/updateaudiences.md
+        - name: UpdateBudgets
+          href: ../campaign-management/updatebudgets.md
+        - name: UpdateCampaignCriterions
+          href: ../campaign-management/updatecampaigncriterions.md
+        - name: UpdateCampaigns
+          href: ../campaign-management/updatecampaigns.md
+        - name: UpdateConversionGoals
+          href: ../campaign-management/updateconversiongoals.md
+        - name: UpdateKeywords
+          href: ../campaign-management/updatekeywords.md
+        - name: UpdateLabels
+          href: ../campaign-management/updatelabels.md
+        - name: UpdateSharedEntities
+          href: ../campaign-management/updatesharedentities.md
+        - name: UpdateUetTags
+          href: ../campaign-management/updateuettags.md
+      - name: Campaign Management Data Objects
+        href: ../campaign-management/campaign-management-data-objects.md
+        items: 
+        - name: AccountMigrationStatusesInfo
+          href: ../campaign-management/accountmigrationstatusesinfo.md
+        - name: AccountProperty
+          href: ../campaign-management/accountproperty.md
+        - name: Ad
+          href: ../campaign-management/ad.md
+        - name: AdApiError
+          href: ../campaign-management/adapierror.md
+        - name: AdApiFaultDetail
+          href: ../campaign-management/adapifaultdetail.md
+        - name: Address
+          href: ../campaign-management/address.md
+        - name: AdExtension
+          href: ../campaign-management/adextension.md
+        - name: AdExtensionAssociation
+          href: ../campaign-management/adextensionassociation.md
+        - name: AdExtensionAssociationCollection
+          href: ../campaign-management/adextensionassociationcollection.md
+        - name: AdExtensionEditorialReason
+          href: ../campaign-management/adextensioneditorialreason.md
+        - name: AdExtensionEditorialReasonCollection
+          href: ../campaign-management/adextensioneditorialreasoncollection.md
+        - name: AdExtensionIdentity
+          href: ../campaign-management/adextensionidentity.md
+        - name: AdExtensionIdToEntityIdAssociation
+          href: ../campaign-management/adextensionidtoentityidassociation.md
+        - name: AdGroup
+          href: ../campaign-management/adgroup.md
+        - name: AdGroupCriterion
+          href: ../campaign-management/adgroupcriterion.md
+        - name: AdGroupCriterionAction
+          href: ../campaign-management/adgroupcriterionaction.md
+        - name: AdGroupNegativeSites
+          href: ../campaign-management/adgroupnegativesites.md
+        - name: AdRotation
+          href: ../campaign-management/adrotation.md
+        - name: AgeCriterion
+          href: ../campaign-management/agecriterion.md
+        - name: ApiFaultDetail
+          href: ../campaign-management/apifaultdetail.md
+        - name: AppAdExtension
+          href: ../campaign-management/appadextension.md
+        - name: AppInstallAd
+          href: ../campaign-management/appinstallad.md
+        - name: AppInstallGoal
+          href: ../campaign-management/appinstallgoal.md
+        - name: ApplicationFault
+          href: ../campaign-management/applicationfault.md
+        - name: AppUrl
+          href: ../campaign-management/appurl.md
+        - name: Audience
+          href: ../campaign-management/audience.md
+        - name: AudienceCriterion
+          href: ../campaign-management/audiencecriterion.md
+        - name: BatchError
+          href: ../campaign-management/batcherror.md
+        - name: BatchErrorCollection
+          href: ../campaign-management/batcherrorcollection.md
+        - name: Bid
+          href: ../campaign-management/bid.md
+        - name: BiddableAdGroupCriterion
+          href: ../campaign-management/biddableadgroupcriterion.md
+        - name: BiddableCampaignCriterion
+          href: ../campaign-management/biddablecampaigncriterion.md
+        - name: BiddingScheme
+          href: ../campaign-management/biddingscheme.md
+        - name: BidMultiplier
+          href: ../campaign-management/bidmultiplier.md
+        - name: BMCStore
+          href: ../campaign-management/bmcstore.md
+        - name: Budget
+          href: ../campaign-management/budget.md
+        - name: CallAdExtension
+          href: ../campaign-management/calladextension.md
+        - name: CalloutAdExtension
+          href: ../campaign-management/calloutadextension.md
+        - name: Campaign
+          href: ../campaign-management/campaign.md
+        - name: CampaignCriterion
+          href: ../campaign-management/campaigncriterion.md
+        - name: CampaignNegativeSites
+          href: ../campaign-management/campaignnegativesites.md
+        - name: ConversionGoal
+          href: ../campaign-management/conversiongoal.md
+        - name: ConversionGoalRevenue
+          href: ../campaign-management/conversiongoalrevenue.md
+        - name: Criterion
+          href: ../campaign-management/criterion.md
+        - name: CriterionBid
+          href: ../campaign-management/criterionbid.md
+        - name: CustomAudience
+          href: ../campaign-management/customaudience.md
+        - name: CustomEventsRule
+          href: ../campaign-management/customeventsrule.md
+        - name: CustomParameter
+          href: ../campaign-management/customparameter.md
+        - name: CustomParameters
+          href: ../campaign-management/customparameters.md
+        - name: Date
+          href: ../campaign-management/date.md
+        - name: DayTime
+          href: ../campaign-management/daytime.md
+        - name: DayTimeCriterion
+          href: ../campaign-management/daytimecriterion.md
+        - name: DeviceCriterion
+          href: ../campaign-management/devicecriterion.md
+        - name: DurationGoal
+          href: ../campaign-management/durationgoal.md
+        - name: DynamicSearchAd
+          href: ../campaign-management/dynamicsearchad.md
+        - name: DynamicSearchAdsSetting
+          href: ../campaign-management/dynamicsearchadssetting.md
+        - name: EditorialApiFaultDetail
+          href: ../campaign-management/editorialapifaultdetail.md
+        - name: EditorialError
+          href: ../campaign-management/editorialerror.md
+        - name: EditorialReason
+          href: ../campaign-management/editorialreason.md
+        - name: EditorialReasonCollection
+          href: ../campaign-management/editorialreasoncollection.md
+        - name: EnhancedCpcBiddingScheme
+          href: ../campaign-management/enhancedcpcbiddingscheme.md
+        - name: EntityIdToParentIdAssociation
+          href: ../campaign-management/entityidtoparentidassociation.md
+        - name: EntityNegativeKeyword
+          href: ../campaign-management/entitynegativekeyword.md
+        - name: EventGoal
+          href: ../campaign-management/eventgoal.md
+        - name: ExpandedTextAd
+          href: ../campaign-management/expandedtextad.md
+        - name: FixedBid
+          href: ../campaign-management/fixedbid.md
+        - name: GenderCriterion
+          href: ../campaign-management/gendercriterion.md
+        - name: GeoPoint
+          href: ../campaign-management/geopoint.md
+        - name: IdCollection
+          href: ../campaign-management/idcollection.md
+        - name: Image
+          href: ../campaign-management/image.md
+        - name: ImageAdExtension
+          href: ../campaign-management/imageadextension.md
+        - name: ImageMediaRepresentation
+          href: ../campaign-management/imagemediarepresentation.md
+        - name: InheritFromParentBiddingScheme
+          href: ../campaign-management/inheritfromparentbiddingscheme.md
+        - name: InMarketAudience
+          href: ../campaign-management/inmarketaudience.md
+        - name: InStoreTransactionGoal
+          href: ../campaign-management/instoretransactiongoal.md
+        - name: Keyword
+          href: ../campaign-management/keyword.md
+        - name: Label
+          href: ../campaign-management/label.md
+        - name: LabelAssociation
+          href: ../campaign-management/labelassociation.md
+        - name: LocationAdExtension
+          href: ../campaign-management/locationadextension.md
+        - name: LocationCriterion
+          href: ../campaign-management/locationcriterion.md
+        - name: LocationIntentCriterion
+          href: ../campaign-management/locationintentcriterion.md
+        - name: ManualCpcBiddingScheme
+          href: ../campaign-management/manualcpcbiddingscheme.md
+        - name: MaxClicksBiddingScheme
+          href: ../campaign-management/maxclicksbiddingscheme.md
+        - name: MaxConversionsBiddingScheme
+          href: ../campaign-management/maxconversionsbiddingscheme.md
+        - name: Media
+          href: ../campaign-management/media.md
+        - name: MediaAssociation
+          href: ../campaign-management/mediaassociation.md
+        - name: MediaMetaData
+          href: ../campaign-management/mediametadata.md
+        - name: MediaRepresentation
+          href: ../campaign-management/mediarepresentation.md
+        - name: MigrationStatusInfo
+          href: ../campaign-management/migrationstatusinfo.md
+        - name: NegativeAdGroupCriterion
+          href: ../campaign-management/negativeadgroupcriterion.md
+        - name: NegativeCampaignCriterion
+          href: ../campaign-management/negativecampaigncriterion.md
+        - name: NegativeKeyword
+          href: ../campaign-management/negativekeyword.md
+        - name: NegativeKeywordList
+          href: ../campaign-management/negativekeywordlist.md
+        - name: OfflineConversion
+          href: ../campaign-management/offlineconversion.md
+        - name: OfflineConversionGoal
+          href: ../campaign-management/offlineconversiongoal.md
+        - name: OperationError
+          href: ../campaign-management/operationerror.md
+        - name: PagesViewedPerVisitGoal
+          href: ../campaign-management/pagesviewedpervisitgoal.md
+        - name: PageVisitorsRule
+          href: ../campaign-management/pagevisitorsrule.md
+        - name: PageVisitorsWhoDidNotVisitAnotherPageRule
+          href: ../campaign-management/pagevisitorswhodidnotvisitanotherpagerule.md
+        - name: PageVisitorsWhoVisitedAnotherPageRule
+          href: ../campaign-management/pagevisitorswhovisitedanotherpagerule.md
+        - name: Paging
+          href: ../campaign-management/paging.md
+        - name: PriceAdExtension
+          href: ../campaign-management/priceadextension.md
+        - name: PriceTableRow
+          href: ../campaign-management/pricetablerow.md
+        - name: ProductAd
+          href: ../campaign-management/productad.md
+        - name: ProductCondition
+          href: ../campaign-management/productcondition.md
+        - name: ProductPartition
+          href: ../campaign-management/productpartition.md
+        - name: ProductScope
+          href: ../campaign-management/productscope.md
+        - name: RadiusCriterion
+          href: ../campaign-management/radiuscriterion.md
+        - name: RemarketingList
+          href: ../campaign-management/remarketinglist.md
+        - name: RemarketingRule
+          href: ../campaign-management/remarketingrule.md
+        - name: ReviewAdExtension
+          href: ../campaign-management/reviewadextension.md
+        - name: RuleItem
+          href: ../campaign-management/ruleitem.md
+        - name: RuleItemGroup
+          href: ../campaign-management/ruleitemgroup.md
+        - name: Schedule
+          href: ../campaign-management/schedule.md
+        - name: Setting
+          href: ../campaign-management/setting.md
+        - name: SharedEntity
+          href: ../campaign-management/sharedentity.md
+        - name: SharedEntityAssociation
+          href: ../campaign-management/sharedentityassociation.md
+        - name: SharedList
+          href: ../campaign-management/sharedlist.md
+        - name: SharedListItem
+          href: ../campaign-management/sharedlistitem.md
+        - name: ShoppingSetting
+          href: ../campaign-management/shoppingsetting.md
+        - name: SiteLink
+          href: ../campaign-management/sitelink.md
+        - name: Sitelink2AdExtension
+          href: ../campaign-management/sitelink2adextension.md
+        - name: SiteLinksAdExtension
+          href: ../campaign-management/sitelinksadextension.md
+        - name: StringRuleItem
+          href: ../campaign-management/stringruleitem.md
+        - name: StructuredSnippetAdExtension
+          href: ../campaign-management/structuredsnippetadextension.md
+        - name: TargetCpaBiddingScheme
+          href: ../campaign-management/targetcpabiddingscheme.md
+        - name: TextAd
+          href: ../campaign-management/textad.md
+        - name: UetTag
+          href: ../campaign-management/uettag.md
+        - name: UrlGoal
+          href: ../campaign-management/urlgoal.md
+        - name: Webpage
+          href: ../campaign-management/webpage.md
+        - name: WebpageCondition
+          href: ../campaign-management/webpagecondition.md
+        - name: WebpageParameter
+          href: ../campaign-management/webpageparameter.md
+      - name: Campaign Management Value Sets
+        href: ../campaign-management/campaign-management-value-sets.md
+        items: 
+        - name: AccountPropertyName
+          href: ../campaign-management/accountpropertyname.md
+        - name: AdDistribution
+          href: ../campaign-management/addistribution.md
+        - name: AdEditorialStatus
+          href: ../campaign-management/adeditorialstatus.md
+        - name: AdExtensionEditorialStatus
+          href: ../campaign-management/adextensioneditorialstatus.md
+        - name: AdExtensionStatus
+          href: ../campaign-management/adextensionstatus.md
+        - name: AdExtensionsTypeFilter
+          href: ../campaign-management/adextensionstypefilter.md
+        - name: AdGroupAdditionalField
+          href: ../campaign-management/adgroupadditionalfield.md
+        - name: AdGroupCriterionEditorialStatus
+          href: ../campaign-management/adgroupcriterioneditorialstatus.md
+        - name: AdGroupCriterionStatus
+          href: ../campaign-management/adgroupcriterionstatus.md
+        - name: AdGroupCriterionType
+          href: ../campaign-management/adgroupcriteriontype.md
+        - name: AdGroupStatus
+          href: ../campaign-management/adgroupstatus.md
+        - name: AdRotationType
+          href: ../campaign-management/adrotationtype.md
+        - name: AdStatus
+          href: ../campaign-management/adstatus.md
+        - name: AdType
+          href: ../campaign-management/adtype.md
+        - name: AgeRange
+          href: ../campaign-management/agerange.md
+        - name: AppealStatus
+          href: ../campaign-management/appealstatus.md
+        - name: AssociationType
+          href: ../campaign-management/associationtype.md
+        - name: AudienceType
+          href: ../campaign-management/audiencetype.md
+        - name: BudgetLimitType
+          href: ../campaign-management/budgetlimittype.md
+        - name: BusinessGeoCodeStatus
+          href: ../campaign-management/businessgeocodestatus.md
+        - name: CampaignCriterionStatus
+          href: ../campaign-management/campaigncriterionstatus.md
+        - name: CampaignCriterionType
+          href: ../campaign-management/campaigncriteriontype.md
+        - name: CampaignStatus
+          href: ../campaign-management/campaignstatus.md
+        - name: CampaignType
+          href: ../campaign-management/campaigntype.md
+        - name: ConversionGoalCountType
+          href: ../campaign-management/conversiongoalcounttype.md
+        - name: ConversionGoalRevenueType
+          href: ../campaign-management/conversiongoalrevenuetype.md
+        - name: ConversionGoalStatus
+          href: ../campaign-management/conversiongoalstatus.md
+        - name: ConversionGoalTrackingStatus
+          href: ../campaign-management/conversiongoaltrackingstatus.md
+        - name: ConversionGoalType
+          href: ../campaign-management/conversiongoaltype.md
+        - name: Day
+          href: ../campaign-management/day.md
+        - name: DistanceUnit
+          href: ../campaign-management/distanceunit.md
+        - name: EntityScope
+          href: ../campaign-management/entityscope.md
+        - name: EntityType
+          href: ../campaign-management/entitytype.md
+        - name: ExpressionOperator
+          href: ../campaign-management/expressionoperator.md
+        - name: GenderType
+          href: ../campaign-management/gendertype.md
+        - name: IntentOption
+          href: ../campaign-management/intentoption.md
+        - name: ItemAction
+          href: ../campaign-management/itemaction.md
+        - name: KeywordAdditionalField
+          href: ../campaign-management/keywordadditionalfield.md
+        - name: KeywordEditorialStatus
+          href: ../campaign-management/keywordeditorialstatus.md
+        - name: KeywordStatus
+          href: ../campaign-management/keywordstatus.md
+        - name: MatchType
+          href: ../campaign-management/matchtype.md
+        - name: MediaEnabledEntityFilter
+          href: ../campaign-management/mediaenabledentityfilter.md
+        - name: MigrationStatus
+          href: ../campaign-management/migrationstatus.md
+        - name: Minute
+          href: ../campaign-management/minute.md
+        - name: Network
+          href: ../campaign-management/network.md
+        - name: NumberOperator
+          href: ../campaign-management/numberoperator.md
+        - name: PriceExtensionType
+          href: ../campaign-management/priceextensiontype.md
+        - name: PriceQualifier
+          href: ../campaign-management/pricequalifier.md
+        - name: PriceUnit
+          href: ../campaign-management/priceunit.md
+        - name: PricingModel
+          href: ../campaign-management/pricingmodel.md
+        - name: ProductPartitionType
+          href: ../campaign-management/productpartitiontype.md
+        - name: RemarketingTargetingSetting
+          href: ../campaign-management/remarketingtargetingsetting.md
+        - name: StringOperator
+          href: ../campaign-management/stringoperator.md
+        - name: UetTagTrackingStatus
+          href: ../campaign-management/uettagtrackingstatus.md
+        - name: ValueOperator
+          href: ../campaign-management/valueoperator.md
+        - name: WebpageConditionOperand
+          href: ../campaign-management/webpageconditionoperand.md
+    - name: Customer Billing Service Reference
+      href: ../customer-billing/customer-billing-service-reference.md
+      items: 
+      - name: Customer Billing Service Operations
+        href: ../customer-billing/customer-billing-service-operations.md
+        items: 
+        - name: AddInsertionOrder
+          href: ../customer-billing/addinsertionorder.md
+        - name: GetAccountMonthlySpend
+          href: ../customer-billing/getaccountmonthlyspend.md
+        - name: GetBillingDocuments
+          href: ../customer-billing/getbillingdocuments.md
+        - name: GetBillingDocumentsInfo
+          href: ../customer-billing/getbillingdocumentsinfo.md
+        - name: GetInsertionOrdersByAccount
+          href: ../customer-billing/getinsertionordersbyaccount.md
+        - name: SearchInsertionOrders
+          href: ../customer-billing/searchinsertionorders.md
+        - name: UpdateInsertionOrder
+          href: ../customer-billing/updateinsertionorder.md
+      - name: Customer Billing Data Objects
+        href: ../customer-billing/customer-billing-data-objects.md
+        items: 
+        - name: AdApiError
+          href: ../customer-billing/adapierror.md
+        - name: AdApiFaultDetail
+          href: ../customer-billing/adapifaultdetail.md
+        - name: ApiBatchFault
+          href: ../customer-billing/apibatchfault.md
+        - name: ApiFault
+          href: ../customer-billing/apifault.md
+        - name: ApplicationFault
+          href: ../customer-billing/applicationfault.md
+        - name: BatchError
+          href: ../customer-billing/batcherror.md
+        - name: BillingDocument
+          href: ../customer-billing/billingdocument.md
+        - name: BillingDocumentInfo
+          href: ../customer-billing/billingdocumentinfo.md
+        - name: InsertionOrder
+          href: ../customer-billing/insertionorder.md
+        - name: OperationError
+          href: ../customer-billing/operationerror.md
+        - name: OrderBy
+          href: ../customer-billing/orderby.md
+        - name: Paging
+          href: ../customer-billing/paging.md
+        - name: Predicate
+          href: ../customer-billing/predicate.md
+      - name: Customer Billing Value Sets
+        href: ../customer-billing/customer-billing-value-sets.md
+        items: 
+        - name: DataType
+          href: ../customer-billing/datatype.md
+        - name: InsertionOrderStatus
+          href: ../customer-billing/insertionorderstatus.md
+        - name: OrderByField
+          href: ../customer-billing/orderbyfield.md
+        - name: PredicateOperator
+          href: ../customer-billing/predicateoperator.md
+        - name: SortOrder
+          href: ../customer-billing/sortorder.md
+    - name: Customer Management Service Reference
+      href: ../customer-management/customer-management-service-reference.md
+      items: 
+      - name: Customer Management Service Operations
+        href: ../customer-management/customer-management-service-operations.md
+        items: 
+        - name: AddClientLinks
+          href: ../customer-management/addclientlinks.md
+        - name: DeleteAccount
+          href: ../customer-management/deleteaccount.md
+        - name: DeleteCustomer
+          href: ../customer-management/deletecustomer.md
+        - name: DeleteUser
+          href: ../customer-management/deleteuser.md
+        - name: FindAccounts
+          href: ../customer-management/findaccounts.md
+        - name: FindAccountsOrCustomersInfo
+          href: ../customer-management/findaccountsorcustomersinfo.md
+        - name: GetAccount
+          href: ../customer-management/getaccount.md
+        - name: GetAccountsInfo
+          href: ../customer-management/getaccountsinfo.md
+        - name: GetCustomer
+          href: ../customer-management/getcustomer.md
+        - name: GetCustomerPilotFeatures
+          href: ../customer-management/getcustomerpilotfeatures.md
+        - name: GetCustomersInfo
+          href: ../customer-management/getcustomersinfo.md
+        - name: GetUser
+          href: ../customer-management/getuser.md
+        - name: GetUsersInfo
+          href: ../customer-management/getusersinfo.md
+        - name: SearchAccounts
+          href: ../customer-management/searchaccounts.md
+        - name: SearchClientLinks
+          href: ../customer-management/searchclientlinks.md
+        - name: SearchCustomers
+          href: ../customer-management/searchcustomers.md
+        - name: SearchUserInvitations
+          href: ../customer-management/searchuserinvitations.md
+        - name: SendUserInvitation
+          href: ../customer-management/senduserinvitation.md
+        - name: SignupCustomer
+          href: ../customer-management/signupcustomer.md
+        - name: UpdateAccount
+          href: ../customer-management/updateaccount.md
+        - name: UpdateClientLinks
+          href: ../customer-management/updateclientlinks.md
+        - name: UpdateCustomer
+          href: ../customer-management/updatecustomer.md
+        - name: UpdateUser
+          href: ../customer-management/updateuser.md
+        - name: UpdateUserRoles
+          href: ../customer-management/updateuserroles.md
+      - name: Customer Management Data Objects
+        href: ../customer-management/customer-management-data-objects.md
+        items: 
+        - name: Account
+          href: ../customer-management/account.md
+        - name: AccountInfo
+          href: ../customer-management/accountinfo.md
+        - name: AccountInfoWithCustomerData
+          href: ../customer-management/accountinfowithcustomerdata.md
+        - name: AdApiError
+          href: ../customer-management/adapierror.md
+        - name: AdApiFaultDetail
+          href: ../customer-management/adapifaultdetail.md
+        - name: Address
+          href: ../customer-management/address.md
+        - name: AdvertiserAccount
+          href: ../customer-management/advertiseraccount.md
+        - name: ApiFault
+          href: ../customer-management/apifault.md
+        - name: ApplicationFault
+          href: ../customer-management/applicationfault.md
+        - name: ClientLink
+          href: ../customer-management/clientlink.md
+        - name: ContactInfo
+          href: ../customer-management/contactinfo.md
+        - name: Customer
+          href: ../customer-management/customer.md
+        - name: CustomerInfo
+          href: ../customer-management/customerinfo.md
+        - name: DateRange
+          href: ../customer-management/daterange.md
+        - name: OperationError
+          href: ../customer-management/operationerror.md
+        - name: OrderBy
+          href: ../customer-management/orderby.md
+        - name: Paging
+          href: ../customer-management/paging.md
+        - name: PersonName
+          href: ../customer-management/personname.md
+        - name: Predicate
+          href: ../customer-management/predicate.md
+        - name: User
+          href: ../customer-management/user.md
+        - name: UserInfo
+          href: ../customer-management/userinfo.md
+        - name: UserInvitation
+          href: ../customer-management/userinvitation.md
+      - name: Customer Management Value Sets
+        href: ../customer-management/customer-management-value-sets.md
+        items: 
+        - name: AccountFinancialStatus
+          href: ../customer-management/accountfinancialstatus.md
+        - name: AccountLifeCycleStatus
+          href: ../customer-management/accountlifecyclestatus.md
+        - name: AccountType
+          href: ../customer-management/accounttype.md
+        - name: ApplicationType
+          href: ../customer-management/applicationtype.md
+        - name: ClientLinkStatus
+          href: ../customer-management/clientlinkstatus.md
+        - name: CurrencyType
+          href: ../customer-management/currencytype.md
+        - name: CustomerFinancialStatus
+          href: ../customer-management/customerfinancialstatus.md
+        - name: CustomerLifeCycleStatus
+          href: ../customer-management/customerlifecyclestatus.md
+        - name: EmailFormat
+          href: ../customer-management/emailformat.md
+        - name: Industry
+          href: ../customer-management/industry.md
+        - name: LanguageType
+          href: ../customer-management/languagetype.md
+        - name: LCID
+          href: ../customer-management/lcid.md
+        - name: OrderByField
+          href: ../customer-management/orderbyfield.md
+        - name: PaymentMethodType
+          href: ../customer-management/paymentmethodtype.md
+        - name: PredicateOperator
+          href: ../customer-management/predicateoperator.md
+        - name: SecretQuestion
+          href: ../customer-management/secretquestion.md
+        - name: ServiceLevel
+          href: ../customer-management/servicelevel.md
+        - name: SortOrder
+          href: ../customer-management/sortorder.md
+        - name: TimeZoneType
+          href: ../customer-management/timezonetype.md
+        - name: UserLifeCycleStatus
+          href: ../customer-management/userlifecyclestatus.md
+        - name: UserRole
+          href: ../customer-management/userrole.md
+    - name: Reporting Service Reference
+      href: ../reporting/reporting-service-reference.md
+      items: 
+      - name: Reporting Service Operations
+        href: ../reporting/reporting-service-operations.md
+        items: 
+        - name: PollGenerateReport
+          href: ../reporting/pollgeneratereport.md
+        - name: SubmitGenerateReport
+          href: ../reporting/submitgeneratereport.md
+      - name: Reporting Data Objects
+        href: ../reporting/reporting-data-objects.md
+        items: 
+        - name: AccountPerformanceReportFilter
+          href: ../reporting/accountperformancereportfilter.md
+        - name: AccountPerformanceReportRequest
+          href: ../reporting/accountperformancereportrequest.md
+        - name: AccountReportScope
+          href: ../reporting/accountreportscope.md
+        - name: AccountThroughAdGroupReportScope
+          href: ../reporting/accountthroughadgroupreportscope.md
+        - name: AccountThroughCampaignReportScope
+          href: ../reporting/accountthroughcampaignreportscope.md
+        - name: AdApiError
+          href: ../reporting/adapierror.md
+        - name: AdApiFaultDetail
+          href: ../reporting/adapifaultdetail.md
+        - name: AdDynamicTextPerformanceReportFilter
+          href: ../reporting/addynamictextperformancereportfilter.md
+        - name: AdDynamicTextPerformanceReportRequest
+          href: ../reporting/addynamictextperformancereportrequest.md
+        - name: AdExtensionByAdReportFilter
+          href: ../reporting/adextensionbyadreportfilter.md
+        - name: AdExtensionByAdReportRequest
+          href: ../reporting/adextensionbyadreportrequest.md
+        - name: AdExtensionByKeywordReportFilter
+          href: ../reporting/adextensionbykeywordreportfilter.md
+        - name: AdExtensionByKeywordReportRequest
+          href: ../reporting/adextensionbykeywordreportrequest.md
+        - name: AdExtensionDetailReportFilter
+          href: ../reporting/adextensiondetailreportfilter.md
+        - name: AdExtensionDetailReportRequest
+          href: ../reporting/adextensiondetailreportrequest.md
+        - name: AdGroupPerformanceReportFilter
+          href: ../reporting/adgroupperformancereportfilter.md
+        - name: AdGroupPerformanceReportRequest
+          href: ../reporting/adgroupperformancereportrequest.md
+        - name: AdGroupReportScope
+          href: ../reporting/adgroupreportscope.md
+        - name: AdPerformanceReportFilter
+          href: ../reporting/adperformancereportfilter.md
+        - name: AdPerformanceReportRequest
+          href: ../reporting/adperformancereportrequest.md
+        - name: AgeGenderDemographicReportFilter
+          href: ../reporting/agegenderdemographicreportfilter.md
+        - name: AgeGenderDemographicReportRequest
+          href: ../reporting/agegenderdemographicreportrequest.md
+        - name: ApiFaultDetail
+          href: ../reporting/apifaultdetail.md
+        - name: ApplicationFault
+          href: ../reporting/applicationfault.md
+        - name: AudiencePerformanceReportFilter
+          href: ../reporting/audienceperformancereportfilter.md
+        - name: AudiencePerformanceReportRequest
+          href: ../reporting/audienceperformancereportrequest.md
+        - name: BatchError
+          href: ../reporting/batcherror.md
+        - name: BudgetSummaryReportRequest
+          href: ../reporting/budgetsummaryreportrequest.md
+        - name: BudgetSummaryReportTime
+          href: ../reporting/budgetsummaryreporttime.md
+        - name: CallDetailReportFilter
+          href: ../reporting/calldetailreportfilter.md
+        - name: CallDetailReportRequest
+          href: ../reporting/calldetailreportrequest.md
+        - name: CampaignPerformanceReportFilter
+          href: ../reporting/campaignperformancereportfilter.md
+        - name: CampaignPerformanceReportRequest
+          href: ../reporting/campaignperformancereportrequest.md
+        - name: CampaignReportScope
+          href: ../reporting/campaignreportscope.md
+        - name: ConversionPerformanceReportFilter
+          href: ../reporting/conversionperformancereportfilter.md
+        - name: ConversionPerformanceReportRequest
+          href: ../reporting/conversionperformancereportrequest.md
+        - name: Date
+          href: ../reporting/date.md
+        - name: DestinationUrlPerformanceReportFilter
+          href: ../reporting/destinationurlperformancereportfilter.md
+        - name: DestinationUrlPerformanceReportRequest
+          href: ../reporting/destinationurlperformancereportrequest.md
+        - name: DSAAutoTargetPerformanceReportFilter
+          href: ../reporting/dsaautotargetperformancereportfilter.md
+        - name: DSAAutoTargetPerformanceReportRequest
+          href: ../reporting/dsaautotargetperformancereportrequest.md
+        - name: DSACategoryPerformanceReportFilter
+          href: ../reporting/dsacategoryperformancereportfilter.md
+        - name: DSACategoryPerformanceReportRequest
+          href: ../reporting/dsacategoryperformancereportrequest.md
+        - name: DSASearchQueryPerformanceReportFilter
+          href: ../reporting/dsasearchqueryperformancereportfilter.md
+        - name: DSASearchQueryPerformanceReportRequest
+          href: ../reporting/dsasearchqueryperformancereportrequest.md
+        - name: GeographicPerformanceReportFilter
+          href: ../reporting/geographicperformancereportfilter.md
+        - name: GeographicPerformanceReportRequest
+          href: ../reporting/geographicperformancereportrequest.md
+        - name: GoalsAndFunnelsReportFilter
+          href: ../reporting/goalsandfunnelsreportfilter.md
+        - name: GoalsAndFunnelsReportRequest
+          href: ../reporting/goalsandfunnelsreportrequest.md
+        - name: KeywordPerformanceReportFilter
+          href: ../reporting/keywordperformancereportfilter.md
+        - name: KeywordPerformanceReportRequest
+          href: ../reporting/keywordperformancereportrequest.md
+        - name: KeywordPerformanceReportSort
+          href: ../reporting/keywordperformancereportsort.md
+        - name: NegativeKeywordConflictReportFilter
+          href: ../reporting/negativekeywordconflictreportfilter.md
+        - name: NegativeKeywordConflictReportRequest
+          href: ../reporting/negativekeywordconflictreportrequest.md
+        - name: OperationError
+          href: ../reporting/operationerror.md
+        - name: ProductDimensionPerformanceReportFilter
+          href: ../reporting/productdimensionperformancereportfilter.md
+        - name: ProductDimensionPerformanceReportRequest
+          href: ../reporting/productdimensionperformancereportrequest.md
+        - name: ProductPartitionPerformanceReportFilter
+          href: ../reporting/productpartitionperformancereportfilter.md
+        - name: ProductPartitionPerformanceReportRequest
+          href: ../reporting/productpartitionperformancereportrequest.md
+        - name: ProductPartitionUnitPerformanceReportFilter
+          href: ../reporting/productpartitionunitperformancereportfilter.md
+        - name: ProductPartitionUnitPerformanceReportRequest
+          href: ../reporting/productpartitionunitperformancereportrequest.md
+        - name: ProductSearchQueryPerformanceReportFilter
+          href: ../reporting/productsearchqueryperformancereportfilter.md
+        - name: ProductSearchQueryPerformanceReportRequest
+          href: ../reporting/productsearchqueryperformancereportrequest.md
+        - name: PublisherUsagePerformanceReportFilter
+          href: ../reporting/publisherusageperformancereportfilter.md
+        - name: PublisherUsagePerformanceReportRequest
+          href: ../reporting/publisherusageperformancereportrequest.md
+        - name: ReportRequest
+          href: ../reporting/reportrequest.md
+        - name: ReportRequestStatus
+          href: ../reporting/reportrequeststatus.md
+        - name: ReportTime
+          href: ../reporting/reporttime.md
+        - name: SearchCampaignChangeHistoryReportFilter
+          href: ../reporting/searchcampaignchangehistoryreportfilter.md
+        - name: SearchCampaignChangeHistoryReportRequest
+          href: ../reporting/searchcampaignchangehistoryreportrequest.md
+        - name: SearchQueryPerformanceReportFilter
+          href: ../reporting/searchqueryperformancereportfilter.md
+        - name: SearchQueryPerformanceReportRequest
+          href: ../reporting/searchqueryperformancereportrequest.md
+        - name: ShareOfVoiceReportFilter
+          href: ../reporting/shareofvoicereportfilter.md
+        - name: ShareOfVoiceReportRequest
+          href: ../reporting/shareofvoicereportrequest.md
+        - name: UserLocationPerformanceReportFilter
+          href: ../reporting/userlocationperformancereportfilter.md
+        - name: UserLocationPerformanceReportRequest
+          href: ../reporting/userlocationperformancereportrequest.md
+      - name: Reporting Value Sets
+        href: ../reporting/reporting-value-sets.md
+        items: 
+        - name: AccountPerformanceReportColumn
+          href: ../reporting/accountperformancereportcolumn.md
+        - name: AccountStatusReportFilter
+          href: ../reporting/accountstatusreportfilter.md
+        - name: AdDistributionReportFilter
+          href: ../reporting/addistributionreportfilter.md
+        - name: AdDynamicTextPerformanceReportColumn
+          href: ../reporting/addynamictextperformancereportcolumn.md
+        - name: AdExtensionByAdReportColumn
+          href: ../reporting/adextensionbyadreportcolumn.md
+        - name: AdExtensionByKeywordReportColumn
+          href: ../reporting/adextensionbykeywordreportcolumn.md
+        - name: AdExtensionDetailReportColumn
+          href: ../reporting/adextensiondetailreportcolumn.md
+        - name: AdGroupPerformanceReportColumn
+          href: ../reporting/adgroupperformancereportcolumn.md
+        - name: AdGroupStatusReportFilter
+          href: ../reporting/adgroupstatusreportfilter.md
+        - name: AdPerformanceReportColumn
+          href: ../reporting/adperformancereportcolumn.md
+        - name: AdStatusReportFilter
+          href: ../reporting/adstatusreportfilter.md
+        - name: AdTypeReportFilter
+          href: ../reporting/adtypereportfilter.md
+        - name: AgeGenderDemographicReportColumn
+          href: ../reporting/agegenderdemographicreportcolumn.md
+        - name: AudiencePerformanceReportColumn
+          href: ../reporting/audienceperformancereportcolumn.md
+        - name: BidMatchTypeReportFilter
+          href: ../reporting/bidmatchtypereportfilter.md
+        - name: BidStrategyTypeReportFilter
+          href: ../reporting/bidstrategytypereportfilter.md
+        - name: BudgetSummaryReportColumn
+          href: ../reporting/budgetsummaryreportcolumn.md
+        - name: BudgetSummaryReportTimePeriod
+          href: ../reporting/budgetsummaryreporttimeperiod.md
+        - name: CallDetailReportColumn
+          href: ../reporting/calldetailreportcolumn.md
+        - name: CampaignPerformanceReportColumn
+          href: ../reporting/campaignperformancereportcolumn.md
+        - name: CampaignStatusReportFilter
+          href: ../reporting/campaignstatusreportfilter.md
+        - name: ChangeEntityReportFilter
+          href: ../reporting/changeentityreportfilter.md
+        - name: ChangeTypeReportFilter
+          href: ../reporting/changetypereportfilter.md
+        - name: ConversionPerformanceReportColumn
+          href: ../reporting/conversionperformancereportcolumn.md
+        - name: DeliveredMatchTypeReportFilter
+          href: ../reporting/deliveredmatchtypereportfilter.md
+        - name: DestinationUrlPerformanceReportColumn
+          href: ../reporting/destinationurlperformancereportcolumn.md
+        - name: DeviceOSReportFilter
+          href: ../reporting/deviceosreportfilter.md
+        - name: DeviceTypeReportFilter
+          href: ../reporting/devicetypereportfilter.md
+        - name: DSAAutoTargetPerformanceReportColumn
+          href: ../reporting/dsaautotargetperformancereportcolumn.md
+        - name: DSACategoryPerformanceReportColumn
+          href: ../reporting/dsacategoryperformancereportcolumn.md
+        - name: DSASearchQueryPerformanceReportColumn
+          href: ../reporting/dsasearchqueryperformancereportcolumn.md
+        - name: DynamicAdTargetStatusReportFilter
+          href: ../reporting/dynamicadtargetstatusreportfilter.md
+        - name: GeographicPerformanceReportColumn
+          href: ../reporting/geographicperformancereportcolumn.md
+        - name: GoalsAndFunnelsReportColumn
+          href: ../reporting/goalsandfunnelsreportcolumn.md
+        - name: KeywordPerformanceReportColumn
+          href: ../reporting/keywordperformancereportcolumn.md
+        - name: KeywordStatusReportFilter
+          href: ../reporting/keywordstatusreportfilter.md
+        - name: NegativeKeywordConflictReportColumn
+          href: ../reporting/negativekeywordconflictreportcolumn.md
+        - name: NonHourlyReportAggregation
+          href: ../reporting/nonhourlyreportaggregation.md
+        - name: ProductDimensionPerformanceReportColumn
+          href: ../reporting/productdimensionperformancereportcolumn.md
+        - name: ProductPartitionPerformanceReportColumn
+          href: ../reporting/productpartitionperformancereportcolumn.md
+        - name: ProductPartitionUnitPerformanceReportColumn
+          href: ../reporting/productpartitionunitperformancereportcolumn.md
+        - name: ProductSearchQueryPerformanceReportColumn
+          href: ../reporting/productsearchqueryperformancereportcolumn.md
+        - name: PublisherUsagePerformanceReportColumn
+          href: ../reporting/publisherusageperformancereportcolumn.md
+        - name: ReportAggregation
+          href: ../reporting/reportaggregation.md
+        - name: ReportFormat
+          href: ../reporting/reportformat.md
+        - name: ReportLanguage
+          href: ../reporting/reportlanguage.md
+        - name: ReportRequestStatusType
+          href: ../reporting/reportrequeststatustype.md
+        - name: ReportTimePeriod
+          href: ../reporting/reporttimeperiod.md
+        - name: SearchCampaignChangeHistoryReportColumn
+          href: ../reporting/searchcampaignchangehistoryreportcolumn.md
+        - name: SearchQueryPerformanceReportColumn
+          href: ../reporting/searchqueryperformancereportcolumn.md
+        - name: SearchQueryReportAggregation
+          href: ../reporting/searchqueryreportaggregation.md
+        - name: ShareOfVoiceReportColumn
+          href: ../reporting/shareofvoicereportcolumn.md
+        - name: SortOrder
+          href: ../reporting/sortorder.md
+        - name: UserLocationPerformanceReportColumn
+          href: ../reporting/userlocationperformancereportcolumn.md
+  - name: Bing Ads Operation Error Codes
+    href: ./operation-error-codes.md
+  - name: Bing Ads Editorial Failure Reason Codes
+    href: ./editorial-failure-reason-codes.md
+  - name: Ad Languages
+    href: ./ad-languages.md
+  - name: Currencies
+    href: ./currencies.md
+  - name: Geographical Location Codes
+    href: ./geographical-location-codes.md
+  - name: Time Zones
+    href: ./time-zones.md
+- name: Release Notes
+  href: ./release-notes.md
+- name: Migrating to Bing Ads API Version 11
+  href: ./migrate-bing-ads-api-version-11.md
