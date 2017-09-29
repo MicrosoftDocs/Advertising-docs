@@ -1,0 +1,71 @@
+- name: Overview
+  href: ../shopping-content/index.md
+- name: Release Notes
+  href: ../shopping-content/release-notes.md
+- name: Get Started
+  href: ../shopping-content/get-started.md
+- name: Testing your Code in Sandbox
+  href: ../shopping-content/test-code-sandbox.md
+- name: API Best Practices
+  href: ../shopping-content/api-best-practices.md
+- name: Can I Use the API and FTP?
+  href: ../shopping-content/can-use-api-ftp.md
+- name: Managing your Products
+  href: ../shopping-content/manage-products.md
+- name: How Do I Get the Status of Product Offers?
+  href: ../shopping-content/how-get-status-product-offers.md
+- name: Managing your Catalogs
+  href: ../shopping-content/manage-catalogs.md
+- name: Code Examples
+  href: ../shopping-content/code-examples.md
+  items:
+  - name: C# Examples
+    href: ../shopping-content/csharp-examples.md
+    items:
+    - name: Authenticating Microsoft Account Credentials in C#
+      href: ../shopping-content/authentication-oauth-csharp.md
+    - name: Creating a Batch Request in C#
+      href: ../shopping-content/create-batch-request-csharp.md
+    - name: Getting a List of Product Offers in C#
+      href: ../shopping-content/get-list-product-offers-csharp.md
+    - name: Inserting a Product Offer in C#
+      href: ../shopping-content/insert-product-offer-csharp.md
+    - name: Getting a Product Offer in C#
+      href: ../shopping-content/get-product-offer-csharp.md
+    - name: Deleting a Product Offer in C#
+      href: ../shopping-content/delete-product-offer-csharp.md
+    - name: Managing Catalogs in C#
+      href: ../shopping-content/manage-catalogs-csharp.md
+    - name: Downloading a Catalog Status Report in C#
+      href: ../shopping-content/download-catalog-status-report-csharp.md
+  - name: Java Examples
+    href: ../shopping-content/java-examples.md
+    items:
+    - name: Getting a List of Product Offers in Java
+      href: ../shopping-content/get-list-product-offers-java.md
+    - name: Getting a Product Offer in Java
+      href: ../shopping-content/get-product-offer-java.md
+    - name: Deleting a Product Offer in Java
+      href: ../shopping-content/delete-product-offer-java.md
+    - name: Creating a Batch Request in Java
+      href: ../shopping-content/create-batch-request-java.md
+    - name: Inserting a Product Offer in Java
+      href: ../shopping-content/insert-product-offer-java.md
+    - name: Managing Catalogs in Java
+      href: ../shopping-content/manage-catalogs-java.md
+    - name: Downloading a Catalog Status Report in Java
+      href: ../shopping-content/download-catalog-status-report-java.md
+  - name: Example JSON Product Offer
+    href: ../shopping-content/example-json-product-offer.md
+  - name: Example XML Product Offer
+    href: ../shopping-content/example-xml-product-offer.md
+  - name: Error Response Example
+    href: ../shopping-content/error-response-example.md
+  - name: Content API Reference
+    href: ../shopping-content/reference.md
+  - name: Catalogs Resource
+    href: ../shopping-content/catalogs-resource.md
+  - name: Products Resource
+    href: ../shopping-content/products-resource.md
+  - name: Status Resource
+    href: ../shopping-content/status-resource.md

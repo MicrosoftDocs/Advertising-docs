@@ -1,0 +1,42 @@
+---
+title: "Dynamic Search Ads"
+ms.service: "bing-ads"
+ms.topic: "article"
+---
+# Dynamic Search Ads
+Dynamic Search Ads are coming to Bing Ads. You will be able to create a new type of campaign where the ad copy is automatically generated from the content on your website. 
+
+> [!NOTE]
+> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> 
+> Before you can use dynamic search ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](~/guides/url-tracking-upgraded-urls.md).
+
+## <a name="bulk"></a>Bulk API for Dynamic Search Ads  
+The following Bulk records are added for managing dynamic search ads campaigns.
+* [Ad Group Dynamic Search Ad Target](~/bulk/ad-group-dynamic-search-ad-target.md)
+* [Ad Group Negative Dynamic Search Ad Target](~/bulk/ad-group-negative-dynamic-search-ad-target.md)
+* [Campaign Negative Dynamic Search Ad Target](~/bulk/campaign-negative-dynamic-search-ad-target.md)
+* [Dynamic Search Ad](~/bulk/dynamic-search-ad.md)
+ 
+To get started with dynamic search ads, first you'll need to define a [Campaign](~/bulk/campaign.md) record with the *Campaign Type* field set to *DynamicSearchAds*. When you create the campaign, you'll also need to specify the *Domain Language* and *Website* fields.  
+
+Next, define an [Ad Group](~/bulk/ad-group.md) within the dynamic search ads campaign. You can add one or more [Ad Group Dynamic Search Ad Target](~/bulk/ad-group-dynamic-search-ad-target.md) records for the parent ad group that helps determine whether or not to serve dynamic search ads. 
+
+If you want to exclude certain portions of your website, you can add negative targets at the campaign and/or ad group level using the respective [Campaign Negative Dynamic Search Ad Target](~/bulk/campaign-negative-dynamic-search-ad-target.md) and [Ad Group Negative Dynamic Search Ad Target](~/bulk/ad-group-negative-dynamic-search-ad-target.md) records. The [Campaign Negative Dynamic Search Ad Target](~/bulk/campaign-negative-dynamic-search-ad-target.md) at the campaign level applies to all ad groups within the campaign; however, if you define ad group level [Ad Group Negative Dynamic Search Ad Target](~/bulk/ad-group-negative-dynamic-search-ad-target.md), the campaign target is ignored for that ad group. 
+
+For any of the [Ad Group Dynamic Search Ad Target](~/bulk/ad-group-dynamic-search-ad-target.md), [Ad Group Negative Dynamic Search Ad Target](~/bulk/ad-group-negative-dynamic-search-ad-target.md), and [Campaign Negative Dynamic Search Ad Target](~/bulk/campaign-negative-dynamic-search-ad-target.md) records, you can choose whether you want the target argument to match partial URLs, page content, page title, or categories that Bing thinks applies to your website. To discover the categories that you can use for targets (positive or negative), call the [GetDomainCategories](~/ad-insight/getdomaincategories.md) operation with the Ad Insight service.
+
+Finally you can define a [Dynamic Search Ad](~/bulk/dynamic-search-ad.md) record assigned to the ad group. The ad title and display URL are generated automatically based on the website domain and language that you want to target.
+
+
+## <a name="campaign"></a>Campaign Management API for Dynamic Search Ads  
+
+To get started with dynamic search ads, first you'll need to [add](~/campaign-management/addcampaigns.md) a new [Campaign](~/campaign-management/campaign.md) with its type set to *DynamicSearchAds*. When you create the campaign, you'll need to include a [DynamicSearchAdsSetting](~/campaign-management/dynamicsearchadssetting.md) that specifies the target website domain and language. The new *DynamicSearchAds* value is added to the [CampaignType](~/campaign-management/campaigntype.md) value set. 
+
+Next, [create](~/campaign-management/addadgroups.md) a new [AdGroup](~/campaign-management/adgroup.md) within the dynamic search ads campaign. You can add one or more [Webpage](~/campaign-management/webpage.md) criterion to each ad group that helps determine whether or not to serve dynamic search ads, by calling the [AddAdGroupCriterions](~/campaign-management/addadgroupcriterions.md) operation. 
+
+If you want to exclude certain portions of your website, you can add negative [Webpage](~/campaign-management/webpage.md) criterion at the campaign and/or ad group level using the respective [AddCampaignCriterions](~/campaign-management/addcampaigncriterions.md) and [AddAdGroupCriterions](~/campaign-management/addadgroupcriterions.md) service operations. The negative [Webpage](~/campaign-management/webpage.md) criterion at the campaign level applies to all ad groups within the campaign; however, if you define ad group level negative [Webpage](~/campaign-management/webpage.md) criterion, the campaign criterion is ignored for that ad group. 
+
+Whether the criterion is positive or negative, you can choose whether you want the criterion argument to match partial URLs, page content, page title, or categories that Bing thinks applies to your website. To discover the categories that you can use for [Webpage](~/campaign-management/webpage.md) criterion (positive or negative), use the [GetDomainCategories](~/ad-insight/getdomaincategories.md) operation with the Ad Insight service.
+
+Finally you can [add](~/campaign-management/addads.md) a [DynamicSearchAd](~/campaign-management/dynamicsearchad.md) into the ad group. The ad title and display URL are generated automatically based on the website domain and language that you want to target.
