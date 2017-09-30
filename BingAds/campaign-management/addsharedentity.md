@@ -1,0 +1,182 @@
+---
+title: AddSharedEntity Service Operation
+ms.service: bing-ads-campaign-management
+ms.topic: article
+author: eric-urban
+ms.author: eur
+---
+# AddSharedEntity Service Operation
+Adds a negative keyword list to the account's library. Items in the account's library can be associated with any campaign within the account.
+
+## <a name="request"></a>Request Elements
+The *AddSharedEntityRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
+
+### <a name="request-body"></a>Request Body Elements
+
+|Element|Description|Data Type|
+|-----------|---------------|-------------|
+|<a name="sharedentity"></a>SharedEntity|The negative keyword list to add to the account's shared library.|[SharedEntity](sharedentity.md)|
+|<a name="listitems"></a>ListItems|The negative keywords to add to the negative keyword list.<br /><br />The list can contain a maximum of 5,000 items.<br /><br />**Note:** You cannot add existing negative keywords with assigned identifiers. You can add the same negative keyword and match type to a negative keyword list, and it will be assigned a new identifier.|[SharedListItem](sharedlistitem.md) array|
+
+### <a name="request-header"></a>Request Header Elements
+[!INCLUDE[request-header](./includes/request-header.md)]
+
+## <a name="response"></a>Response Elements
+The *AddSharedEntityResponse* object defines the [body](#response-body) and [header](#response-header) elements of the service operation response. The elements are returned in the same order as shown in the [Response SOAP](#response-soap).
+
+### <a name="response-body"></a>Response Body Elements
+
+|Element|Description|Data Type|
+|-----------|---------------|-------------|
+|<a name="listitemids"></a>ListItemIds|A list of *long* values that represents the identifiers for the list items that were added.<br /><br />Items of the list may be returned as null. For each list index where a list item was not added, the corresponding element will be null.|**long**|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="sharedentityid"></a>SharedEntityId|The identifier for the shared entity that was added.|**long**|
+
+### <a name="response-header"></a>Response Header Elements
+[!INCLUDE[response-header](./includes/response-header.md)]
+
+## <a name="request-soap"></a>Request SOAP
+The following template shows the order of the [body](#request-body) and [header](#request-header) elements for the SOAP request.
+
+```xml
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <Action mustUnderstand="1">AddSharedEntity</Action>
+    <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
+    <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
+    <CustomerAccountId i:nil="false">ValueHere</CustomerAccountId>
+    <CustomerId i:nil="false">ValueHere</CustomerId>
+    <DeveloperToken i:nil="false">ValueHere</DeveloperToken>
+    <Password i:nil="false">ValueHere</Password>
+    <UserName i:nil="false">ValueHere</UserName>
+  </s:Header>
+  <s:Body>
+    <AddSharedEntityRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+      <SharedEntity i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
+        <AssociationCount i:nil="false">ValueHere</AssociationCount>
+        <ForwardCompatibilityMap xmlns:e552="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e552:KeyValuePairOfstringstring>
+            <e552:key i:nil="false">ValueHere</e552:key>
+            <e552:value i:nil="false">ValueHere</e552:value>
+          </e552:KeyValuePairOfstringstring>
+        </ForwardCompatibilityMap>
+        <Id i:nil="false">ValueHere</Id>
+        <Name i:nil="false">ValueHere</Name>
+        <Type i:nil="false">ValueHere</Type>
+        <!--This field is applicable if the derived type attribute is set to SharedList-->
+        <ItemCount i:nil="false">ValueHere</ItemCount>
+      </SharedEntity>
+      <ListItems i:nil="false">
+        <SharedListItem i:type="-- derived type specified here with the appropriate prefix --">
+          <ForwardCompatibilityMap xmlns:e553="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e553:KeyValuePairOfstringstring>
+              <e553:key i:nil="false">ValueHere</e553:key>
+              <e553:value i:nil="false">ValueHere</e553:value>
+            </e553:KeyValuePairOfstringstring>
+          </ForwardCompatibilityMap>
+          <Type i:nil="false">ValueHere</Type>
+          <!--These fields are applicable if the derived type attribute is set to NegativeKeyword-->
+          <Id i:nil="false">ValueHere</Id>
+          <MatchType>ValueHere</MatchType>
+          <Text i:nil="false">ValueHere</Text>
+        </SharedListItem>
+      </ListItems>
+    </AddSharedEntityRequest>
+  </s:Body>
+</s:Envelope>
+```
+
+## <a name="response-soap"></a>Response SOAP
+The following template shows the order of the [body](#response-body) and [header](#response-header) elements for the SOAP response.
+
+```xml
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
+  </s:Header>
+  <s:Body>
+    <AddSharedEntityResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+      <ListItemIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <a1:long>ValueHere</a1:long>
+      </ListItemIds>
+      <PartialErrors d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <BatchError d4p1:type="-- derived type specified here with the appropriate prefix --">
+          <Code>ValueHere</Code>
+          <Details d4p1:nil="false">ValueHere</Details>
+          <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
+          <FieldPath d4p1:nil="false">ValueHere</FieldPath>
+          <ForwardCompatibilityMap xmlns:e554="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e554:KeyValuePairOfstringstring>
+              <e554:key d4p1:nil="false">ValueHere</e554:key>
+              <e554:value d4p1:nil="false">ValueHere</e554:value>
+            </e554:KeyValuePairOfstringstring>
+          </ForwardCompatibilityMap>
+          <Index>ValueHere</Index>
+          <Message d4p1:nil="false">ValueHere</Message>
+          <Type d4p1:nil="false">ValueHere</Type>
+          <!--These fields are applicable if the derived type attribute is set to EditorialError-->
+          <Appealable d4p1:nil="false">ValueHere</Appealable>
+          <DisapprovedText d4p1:nil="false">ValueHere</DisapprovedText>
+          <Location d4p1:nil="false">ValueHere</Location>
+          <PublisherCountry d4p1:nil="false">ValueHere</PublisherCountry>
+          <ReasonCode>ValueHere</ReasonCode>
+        </BatchError>
+      </PartialErrors>
+      <SharedEntityId>ValueHere</SharedEntityId>
+    </AddSharedEntityResponse>
+  </s:Body>
+</s:Envelope>
+```
+
+## <a name="example"></a>Code Syntax
+```csharp
+protected async Task<AddSharedEntityResponse> AddSharedEntityAsync(
+	SharedEntity sharedEntity,
+	IList<SharedListItem> listItems)
+{
+	var request = new AddSharedEntityRequest
+	{
+		SharedEntity = sharedEntity,
+		ListItems = listItems
+	};
+
+	return (await CampaignManagement.CallAsync((s, r) => s.AddSharedEntityAsync(r), request));
+}
+```
+```java
+static AddSharedEntityResponse addSharedEntity(
+	SharedEntity sharedEntity,
+	ArrayOfSharedListItem listItems)
+{
+	AddSharedEntityRequest request = new AddSharedEntityRequest();
+
+	request.setSharedEntity(sharedEntity);
+	request.setListItems(listItems);
+
+	return CampaignManagement.getService().addSharedEntity(request);
+}
+```
+```php
+static function AddSharedEntity(
+	$sharedEntity,
+	$listItems)
+
+	$addSharedEntityRequest = new AddSharedEntityRequest();
+
+	$request->SharedEntity = $sharedEntity;
+	$request->ListItems = $listItems;
+
+	return $CampaignManagementProxy->GetService()->AddSharedEntity($request);
+}
+```
+```python
+response=campaignmanagement.AddSharedEntity(
+	SharedEntity=SharedEntityHere,
+	ListItems=ListItemsHere
+)
+```
+
+## Requirements
+Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+

@@ -1,0 +1,66 @@
+- name: Overview
+  href: index.md
+- name: Hotel API
+  href: ../hotel-api/hotel-api.md
+  items:
+  - name: Get Started with the Hotel API
+    href: ../hotel-api/get-started.md
+  - name: Manage Hotel Ad Campaigns
+    href: ../hotel-api/manage-hotel-campaigns.md
+  - name: Hotel API Reference
+    href: ../hotel-api/reference.md
+  - name: Throttling Requests
+    href: ../hotel-api/throttling-requests.md
+  - name: Code Examples
+    href: ../hotel-api/code-examples.md
+    items:
+    - name: Subaccount C# Example
+      href: ../hotel-api/subaccount-csharp-example.md
+    - name: Hotel Group C# Example
+      href: ../hotel-api/hotel-group-csharp-example.md
+    - name: Hotel C# Example
+      href: ../hotel-api/hotel-csharp-example.md
+    - name: OAuth C# Example
+      href: ../hotel-api/oauth-csharp-example.md
+      items:
+      - name: CodeGrantFlow C# Example
+        href: ../hotel-api/codegrantflow-csharp-example.md
+      - name: Call CodeGrantFlow in C# Example
+        href: ../hotel-api/call-codegrantflow-csharp-example.md
+- name: Transaction Message
+  href: ../transaction-message/transaction-message.md
+  items:
+  - name: Get Started
+    href: ../transaction-message/get-started.md
+  - name: Creating a Transaction Message
+    href: ../transaction-message/create-transaction-message.md
+  - name: Sending Bing Transaction Messages
+    href: ../transaction-message/send-bing-transaction-messages.md
+  - name: Validating your Transaction Message
+    href: ../transaction-message/validate-transaction-message.md
+  - name: Error Codes and Messages
+    href: ../transaction-message/error-codes-messages.md
+  - name: Differences Between Google's and Bing's Transaction Message Usage
+    href: ../transaction-message/differences-google-bing-transaction-message-usage.md
+  - name: Transaction Message Reference
+    href: ../transaction-message/reference.md
+  - name: Transaction Message Schemas
+    href: ../transaction-message/transaction-message-schemas.md
+- name: Hotel Feed
+  href: ../hotel-feed/hotel-feed.md
+  items:
+  - name: Creating a Hotel Feed
+    href: ../hotel-feed/create-hotel-feed.md
+  - name: Validating your Hotel Feed
+    href: ../hotel-feed/validate-hotel-feed.md
+  - name: Hotel Feed Reference
+    href: ../hotel-feed/reference.md
+- name: Points of Sale Feed
+  href: ../pos-feed/pos-feed.md
+  items:
+  - name: Creating a Points of Sale Feed
+    href: ../pos-feed/create-pos-feed.md
+  - name: Validating your Points of Sale Feed
+    href: ../pos-feed/validate-pos-feed.md
+  - name: Points of Sale Reference
+    href: ../pos-feed/reference.md

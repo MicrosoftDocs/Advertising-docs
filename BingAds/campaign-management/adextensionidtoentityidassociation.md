@@ -1,0 +1,35 @@
+---
+title: AdExtensionIdToEntityIdAssociation Data Object
+ms.service: bing-ads-campaign-management
+ms.topic: article
+author: eric-urban
+ms.author: eur
+---
+# AdExtensionIdToEntityIdAssociation Data Object
+Defines an object that associates an ad extension to a supported entity, for example ad group or campaign.
+
+## Syntax
+```xml
+<xs:complexType name="AdExtensionIdToEntityIdAssociation" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:sequence>
+    <xs:element name="AdExtensionId" type="xs:long" />
+    <xs:element name="EntityId" type="xs:long" />
+  </xs:sequence>
+</xs:complexType>
+```
+
+## <a name="elements"></a>Elements
+
+|Element|Description|Data Type|
+|-----------|---------------|-------------|
+|<a name="adextensionid"></a>AdExtensionId|The system-generated identifier of the ad extension.|**long**|
+|<a name="entityid"></a>EntityId|The identifier of an entity associated with the ad extension.|**long**|
+
+## Requirements
+Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+
+## Used By
+[DeleteAdExtensionsAssociations](deleteadextensionsassociations.md)  
+[GetAdExtensionsEditorialReasons](getadextensionseditorialreasons.md)  
+[SetAdExtensionsAssociations](setadextensionsassociations.md)  
