@@ -15,6 +15,6 @@ To provide Bing your points of sale, create an XML document that contains the li
 
 |Topic|Description
 |-|-
-|[Creating a Points of Sale Feed](../pos-feed/create-points-sale-feed.md)|Provides information about building a points of sale feed file.
-|[Validating your Points of Sale Feed](../pos-feed/validate-points-sale-feed.md)|Provides information about using the PointsOfSale XSD to validate your feed file.
+|[Creating a Points of Sale Feed](../pos-feed/create-pos-feed.md)|Provides information about building a points of sale feed file.
+|[Validating your Points of Sale Feed](../pos-feed/validate-pos-feed.md)|Provides information about using the PointsOfSale XSD to validate your feed file.
 |[Points of Sale Reference](../pos-feed/reference.md)|Provides descriptions of the elements and attributes in the PointsOfSale XSD.

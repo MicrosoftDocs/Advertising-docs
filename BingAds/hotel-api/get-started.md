@@ -53,7 +53,7 @@ For information about the Authorization header and other headers that the reques
 Before using the Hotel API, you should have your hotel feeds set up. For details, see:
 
 - [Hotel Feed](../hotel-feed/hotel-feed.md)
-- [Points of Sale Feed](../pos-feed/points-sale-feed.md) 
+- [Points of Sale Feed](../pos-feed/pos-feed.md) 
 - [Transaction Message](../transaction-message/transaction-message.md) 
 
 

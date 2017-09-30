@@ -5,8 +5,8 @@
   items:
   - name: Get Started with the Hotel API
     href: ../hotel-api/get-started.md
-  - name: Overview
-    href: ../hotel-api/overview.md
+  - name: Manage Hotel Ad Campaigns
+    href: ../hotel-api/manage-hotel-campaigns.md
   - name: Hotel API Reference
     href: ../hotel-api/reference.md
   - name: Throttling Requests
@@ -56,11 +56,11 @@
   - name: Hotel Feed Reference
     href: ../hotel-feed/reference.md
 - name: Points of Sale Feed
-  href: ../pos-feed/points-sale-feed.md
+  href: ../pos-feed/pos-feed.md
   items:
   - name: Creating a Points of Sale Feed
-    href: ../pos-feed/create-points-sale-feed.md
+    href: ../pos-feed/create-pos-feed.md
   - name: Validating your Points of Sale Feed
-    href: ../pos-feed/validate-points-sale-feed.md
+    href: ../pos-feed/validate-pos-feed.md
   - name: Points of Sale Reference
     href: ../pos-feed/reference.md

@@ -133,7 +133,7 @@ The following shows a `Result` element that includes the optional child elements
 
 Use the `ChargeCurrency` element to specify when the user is charged for the booking. By default, the user pays when they book (this is the Web option). This example uses Deposit, which asks the user to pay a portion at booking and the remainder later (for example, when they check out).
 
-Use one or more of the five `Custom` elements to provide substitution values for dynamic parameters in a point of sale (POS) URL. For example, if the POS URL is https://www.partnerdomain.com?promo=(CUSTOM1) and `Custom1` is set to summer2017, the POS URL that Bing uses is https://www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../pos-feed/create-points-sale-feed.md#using-dynamic-query-parameters).
+Use one or more of the five `Custom` elements to provide substitution values for dynamic parameters in a point of sale (POS) URL. For example, if the POS URL is https://www.partnerdomain.com?promo=(CUSTOM1) and `Custom1` is set to summer2017, the POS URL that Bing uses is https://www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../pos-feed/create-pos-feed.md#using-dynamic-query-parameters).
 
 Use the `AllowablePointsOfSale` element to specify specific POS URLs that user's can use for booking. By default, the user may use any POS in the partner's points of sale feed file. The `id` attribute must match a POS in the feed file.
 

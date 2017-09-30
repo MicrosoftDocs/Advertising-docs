@@ -28,7 +28,7 @@ After you have your subaccount and hotel group set up, you can begin importing y
 
 Hotels belong to a single hotel group. Hotels specify the bid and bid multipliers to use for the hotel ad. If you don't specify bids and multipliers, the hotel inherits them from the hotel group or subaccount, in that order.
 
-For information about moving the hotel to a different hotel group, see [Associating hotels with hotel groups](../hotel-api/overview.md#associatinghotels).
+For information about moving the hotel to a different hotel group, see [Associating hotels with hotel groups](../hotel-api/manage-hotel-campaigns.md#associatinghotels).
 
 
 ## What needs in place before I start?
@@ -42,10 +42,10 @@ The following sections show how to manage your subaccounts, hotel groups, and ho
 
 |Topic|Description
 |-|-
-|[Working with subaccounts](../hotel-api/overview.md#workingwithsubaccounts)|Provides information about listing your subaccounts, getting a single subaccount, and updating a subaccount.
-|[Working with hotel groups](../hotel-api/overview.md#workingwithhotelgroups)|Provides information about listing a subaccount's hotel groups, getting a single hotel group, adding a hotel group, and updating a hotel group.
-|[Working with hotels](../hotel-api/overview.md#workingwithhotels)|Provides information about listing all hotels in the subaccount, listing hotels in a hotel group, getting a single hotel from a hotel group, and updating a hotel.
-|[Associating a hotel with a hotel group](../hotel-api/overview.md#associatinghotels)|Provides information about how to associate a hotel with a hotel group.
+|[Working with subaccounts](../hotel-api/manage-hotel-campaigns.md#workingwithsubaccounts)|Provides information about listing your subaccounts, getting a single subaccount, and updating a subaccount.
+|[Working with hotel groups](../hotel-api/manage-hotel-campaigns.md#workingwithhotelgroups)|Provides information about listing a subaccount's hotel groups, getting a single hotel group, adding a hotel group, and updating a hotel group.
+|[Working with hotels](../hotel-api/manage-hotel-campaigns.md#workingwithhotels)|Provides information about listing all hotels in the subaccount, listing hotels in a hotel group, getting a single hotel from a hotel group, and updating a hotel.
+|[Associating a hotel with a hotel group](../hotel-api/manage-hotel-campaigns.md#associatinghotels)|Provides information about how to associate a hotel with a hotel group.
 
 For code examples, see [Examples](../hotel-api/examples.md).
 

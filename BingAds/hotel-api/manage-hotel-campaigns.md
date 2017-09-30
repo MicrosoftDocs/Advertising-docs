@@ -1,11 +1,11 @@
 ---
-title: "Overview"
+title: "Manage Hotel Ad Campaigns"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "scottwhi"
 ---
-# Overview
+# Manage Hotel Ad Campaigns
 > [!NOTE]
 > Hotel Ads is under pilot and available to pilot participants only.  Please contact your account manager for details.
 >

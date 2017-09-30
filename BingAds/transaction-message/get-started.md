@@ -73,7 +73,7 @@ xmllint.exe --schema transaction.xsd SampleTransaction.xml
 
 ## Before sending your message...
 
-Before sending transaction messages, provide your [hotel feed file](../hotel-feed/hotel-feed.md) and [points of sale file](../pos-feed/points-sale-feed.md) to your account manager. After they import the data into Bing, you may begin sending transaction messages. Transaction messages sent before the data is imported will fail.
+Before sending transaction messages, provide your [hotel feed file](../hotel-feed/hotel-feed.md) and [points of sale file](../pos-feed/pos-feed.md) to your account manager. After they import the data into Bing, you may begin sending transaction messages. Transaction messages sent before the data is imported will fail.
 
 ## Where to send the message?
 

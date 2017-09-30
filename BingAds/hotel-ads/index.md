@@ -6,7 +6,7 @@
 
 Hotel Ads enables advertisers to showcase their hotels on Bing.com across devices. Travelers can see hotel ads when they are actively looking to book a hotel.
 
-To use Hotel Ads, you need to work with your account manager to import your hotel and points of sale data. For details about creating your hotel and points of sale feed files, see [Hotel Feed](../hotel-feed/hotel-feed.md) and [Points of Sale Feed](../pos-feed/points-sale-feed.md). 
+To use Hotel Ads, you need to work with your account manager to import your hotel and points of sale data. For details about creating your hotel and points of sale feed files, see [Hotel Feed](../hotel-feed/hotel-feed.md) and [Points of Sale Feed](../pos-feed/pos-feed.md). 
 
 The hotel feed is an XML document that describes the hotels that you want to advertise. The feed provides the hotel's name, address, telephone number, and geographical coordinates. The points of sale feed is an XML document that describes the sites that users use to book rooms. The feed provides a point of sale (POS) for each booking site you support. A POS describes the POS's display name, URL, and criteria for matching the user to a POS. 
 

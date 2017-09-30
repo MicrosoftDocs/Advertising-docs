@@ -10,7 +10,7 @@ The following example shows the requests you use to list, get, and update hotels
 
 For details about the elements used in this example, see the [reference](../hotel-api/reference.md) section. 
 
-For additional information, see [Working with hotels](../hotel-api/overview.md#workingwithhotels). 
+For additional information, see [Working with hotels](../hotel-api/manage-hotel-campaigns.md#workingwithhotels). 
 
 The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Get Started](../transaction-message/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-api/oauth-csharp-example.md).
 

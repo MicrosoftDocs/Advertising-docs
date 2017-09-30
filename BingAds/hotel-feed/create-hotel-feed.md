@@ -121,6 +121,6 @@ After creating your feed file, use the [Hotel XSD](https://bhacstatic.blob.core.
 
 Ask your account manager to import the feed file.
 
-Be sure to also import your points of sale data. For information about creating your points of sale feed file, see [Points of Sale Feed](../pos-feed/points-sale-feed.md).
+Be sure to also import your points of sale data. For information about creating your points of sale feed file, see [Points of Sale Feed](../pos-feed/pos-feed.md).
 
 After Bing successfully imports your data and is able to match your hotels with properties in Bing Maps, you may begin sending your hotel pricing and availability data. For information, see [Transaction Messages](../transaction-message/transaction-message.md). 
