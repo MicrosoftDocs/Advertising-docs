@@ -11,8 +11,8 @@
     href: ../hotel-api/reference.md
   - name: Throttling Requests
     href: ../hotel-api/throttling-requests.md
-  - name: Examples
-    href: ../hotel-api/examples.md
+  - name: Code Examples
+    href: ../hotel-api/code-examples.md
     items:
     - name: Subaccount C# Example
       href: ../hotel-api/subaccount-csharp-example.md

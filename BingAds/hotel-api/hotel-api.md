@@ -47,6 +47,6 @@ The following sections show how to manage your subaccounts, hotel groups, and ho
 |[Working with hotels](../hotel-api/manage-hotel-campaigns.md#workingwithhotels)|Provides information about listing all hotels in the subaccount, listing hotels in a hotel group, getting a single hotel from a hotel group, and updating a hotel.
 |[Associating a hotel with a hotel group](../hotel-api/manage-hotel-campaigns.md#associatinghotels)|Provides information about how to associate a hotel with a hotel group.
 
-For code examples, see [Examples](../hotel-api/examples.md).
+For code examples, see [Examples](../hotel-api/code-examples.md).
 
 

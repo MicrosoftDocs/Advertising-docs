@@ -1,11 +1,11 @@
 ---
-title: "Examples"
+title: "Code Examples"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "scottwhi"
 ---
-# Examples
+# Code Examples
 This section provides code examples that show how to use the resources available in the Hotel API.
 
 
