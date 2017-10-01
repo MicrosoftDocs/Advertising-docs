@@ -1,12 +1,12 @@
 ---
-title: "Call CodeGrantFlow in C# Example"
+title: "Call CodeGrantFlow in Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "scottwhi"
 ---
-# Call CodeGrantFlow in C# Example
-The following shows how to call the [CodeGrantFlow](../hotel-api/codegrantflow-csharp-example.md) DLL to get your access and refresh token. You can use the code found here to enable OAuth in the other examples found in this documention.
+# Call CodeGrantFlow in Code Example
+The following shows how to call the [CodeGrantFlow](../hotel-api/code-example-codegrantflow.md) DLL to get your access and refresh token. You can use the code found here to enable OAuth in the other examples found in this documention.
 
 ```csharp
 using System;

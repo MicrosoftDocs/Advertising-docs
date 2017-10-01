@@ -10,23 +10,23 @@
   - name: Hotel API Reference
     href: ../hotel-api/reference.md
   - name: Throttling Requests
-    href: ../hotel-api/throttling-requests.md
+    href: ../hotel-api/throttle-requests.md
   - name: Code Examples
     href: ../hotel-api/code-examples.md
     items:
-    - name: Subaccount C# Example
-      href: ../hotel-api/subaccount-csharp-example.md
-    - name: Hotel Group C# Example
-      href: ../hotel-api/hotel-group-csharp-example.md
-    - name: Hotel C# Example
-      href: ../hotel-api/hotel-csharp-example.md
-    - name: OAuth C# Example
-      href: ../hotel-api/oauth-csharp-example.md
+    - name: Subaccount
+      href: ../hotel-api/code-example-subaccount.md
+    - name: Hotel Group
+      href: ../hotel-api/code-example-hotel-group.md
+    - name: Hotel
+      href: ../hotel-api/code-example-hotel.md
+    - name: OAuth
+      href: ../hotel-api/code-example-oauth.md
       items:
-      - name: CodeGrantFlow C# Example
-        href: ../hotel-api/codegrantflow-csharp-example.md
-      - name: Call CodeGrantFlow in C# Example
-        href: ../hotel-api/call-codegrantflow-csharp-example.md
+      - name: CodeGrantFlow
+        href: ../hotel-api/code-example-codegrantflow.md
+      - name: Call CodeGrantFlow in
+        href: ../hotel-api/code-example-call-codegrantflow.md
 - name: Transaction Message
   href: ../transaction-message/transaction-message.md
   items:

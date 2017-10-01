@@ -1,18 +1,19 @@
 ---
-title: "Subaccount C# Example"
+title: "Hotel Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "scottwhi"
 ---
-# Subaccount C# Example
-The following example shows the requests you use to list, get, and update subaccounts. 
+# Hotel Code Example
+The following example shows the requests you use to list, get, and update hotels. The example also shows how to associate a hotel with a hotel group. 
 
 For details about the elements used in this example, see the [reference](../hotel-api/reference.md) section. 
 
-For additional information, see [Working with subaccounts](../hotel-api/manage-hotel-campaigns.md#workingwithsubaccounts). 
+For additional information, see [Working with hotels](../hotel-api/manage-hotel-campaigns.md#workingwithhotels). 
 
-The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Get Started](../transaction-message/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-api/oauth-csharp-example.md).
+The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Get Started](../transaction-message/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [OAuth Code Example](../hotel-api/code-example-oauth.md).
+
 
 ```csharp
 using System;
@@ -27,7 +28,7 @@ using System.Web;
 using Newtonsoft.Json;       // NuGet Json.NET
 using Newtonsoft.Json.Linq;
 
-namespace ListSubAccounts
+namespace ListHotels
 {
     class Program
     {
@@ -35,20 +36,26 @@ namespace ListSubAccounts
         // registered your application.
 
         private static string clientId = "<clientidgoeshere>";
-        private static string clientSecret = null;  // Desktop app, so there's no secret
-        private static string storedRefreshToken = "<refreshtokengoeshere>"; 
+        private static string clientSecret = null;  // Desktop app, so no secret
+        private static string storedRefreshToken = "<refreshtokengoeshere";
+
 
         private static string customerId = "<customeridgoeshere>";
         private static string accountId = "<accountidgoeshere>";
+        private static string subaccountId = "<subaccountidgoeshere>";
+        private static string hotelGroupId = "<hotelgroupidgoeshere>";
+        private static string hotelId = "<hotelidgoeshere>";
+        private static string ungroupedHotelGroupId = "<hotelgroupidgoeshere>";
 
 
         private static string BaseUri = "https://partner.api.sandbox.bingads.microsoft.com/Travel/V1";
-        private static string SubaccountsTemplate = "/Customers({0})/Accounts({1})/SubAccounts";
-        private static string SubaccountTemplate = "/Customers({0})/Accounts({1})/SubAccounts('{2}')";
+        private static string HotelsTemplate = "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups('{3}')/Hotels";
+        private static string HotelTemplate = "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups('{3}')/Hotels('{4}')";
+        private static string AssociateTemplate = "/Customers({0})/Accounts({1})/SubAccounts('{2}')/Associate";
 
 
         static void Main(string[] args)
-        {
+        { 
             try
             {
                 // TODO: Add the calls to the OAuth code that you use to get the access and 
@@ -61,124 +68,90 @@ namespace ListSubAccounts
                     var headers = new WebHeaderCollection();
                     headers.Add(HttpRequestHeader.Authorization, "Bearer " + tokens.AccessToken);
 
-                    Console.WriteLine("**** Getting the list of subaccounts ****\n");
+                    Console.WriteLine("**** Listing hotels for hotel group {0} ****\n", hotelGroupId);
 
-                    var uri = string.Format(BaseUri + SubaccountsTemplate, customerId, accountId);
+                    var uri = string.Format(BaseUri + HotelsTemplate, customerId, accountId, subaccountId, hotelGroupId);
                     var collection = GetResource(uri, headers, typeof(CollectionResponse)) as CollectionResponse;
-                    PrintSubAccounts(collection.value);
-
-                    // Creates a list of bid multipliers.
-
-                    //var multipliers = new List<object>();
-                    //multipliers.Add(new UserCountryMultiplier() {
-                    //    Factor = 1.1,
-                    //    Countries = new[] { "US" }.ToList<string>(),
-                    //    type = "#Model.UserCountryMultiplier"
-                    //});
-                    //multipliers.Add(new SiteMultiplier() {
-                    //    Factor = .85,
-                    //    Sites = new[] { "LocalUniversal", "MapResults" }.ToList<string>(),
-                    //    type = "#Model.SiteMultiplier"
-                    //});
-                    //multipliers.Add(new DeviceTypeMultiplier() {
-                    //    Factor = .65,
-                    //    DeviceTypes = new[] { "Desktop" }.ToList<string>(),
-                    //    type = "#Model.DeviceMultiplier"
-                    //});
-                    //multipliers.Add(new LengthOfStayMultiplier() {
-                    //    Factor = 1.3,
-                    //    MinimumNumberOfNights = 5,
-                    //    type = "#Model.LengthOfStayMultiplier"
-                    //});
-                    ////multipliers.Add(new DateTypeMultiplier() {
-                    ////    Factor = .35,
-                    ////    DateType = "Selected",
-                    ////    type = "#Model.DateTypeMultiplier"
-                    ////});
-                    //multipliers.Add(new CheckinDayOfWeekMultiplier() {
-                    //    Factor = 1.2,
-                    //    DaysOfWeek = new[] { "Thursday", "Friday", "Saturday" }.ToList<string>(),
-                    //    type = "#Model.CheckinDayOfWeekMultiplier"
-                    //});
-                    //multipliers.Add(new CheckinDayOfWeekMultiplier()
-                    //{
-                    //    Factor = .9,
-                    //    DaysOfWeek = new[] { "Sunday", "Monday" }.ToList<string>(),
-                    //    type = "#Model.CheckinDayOfWeekMultiplier"
-                    //});
-                    //multipliers.Add(new AdvanceWindowBookingMultiplier() {
-                    //    Factor = 1.3,
-                    //    MinimumNumberOfDays = 3,
-                    //    type = "#Model.AdvanceBookingWindowMultiplier"
-                    //});
-
-                    //SubAccount subaccount = new SubAccount()
-                    //{
-                    //    Name = "scottwhi-test",
-                    //    DailyBudget = new Budget()
-                    //    {
-                    //        Amount = 125.25
-                    //    },
-                    //    MaximumBid = new FixedBid()
-                    //    {
-                    //        Amount = 5.0,
-                    //        type = "#Model.FixedBid"
-                    //    },
-                    //    Bid = new FixedBid()
-                    //    {
-                    //        Amount = 2.75,
-                    //        type = "#Model.FixedBid"
-                    //    },
-                    //    BidMultipliers = multipliers
-                    //};
-
-                    //// NOTE: Adding the subaccount will fail because Bing currently allows only one subaccount.
-
-                    //Console.WriteLine("**** Adding a subaccounts ****\n");
-
-                    //var subaccountId = AddUpdateResource(uri, headers, subaccount, typeof(SubAccount)) as string;
-                    //Console.WriteLine("Added subaccount {0}.\n", subaccountId); // ID of new subaccount
-
-                    //Console.WriteLine("**** Getting the list of subaccounts after adding a subaccount ****\n");
-
-                    //collection = GetResource(uri, headers, typeof(CollectionResponse)) as CollectionResponse;
-                    //PrintSubAccounts(collection.value);
+                    PrintHotels(collection.value);
 
 
-                    var subaccountId = ((JObject)collection.value[0]).ToObject<SubAccount>().Id;
-
-
-                    // Specify only the fields of the subaccount that you want to update.
-
-                    SubAccount subaccountToUpdate = new SubAccount()
+                    var multipliers = new List<object>();
+                    multipliers.Add(new CheckInDayOfWeekMultiplier()
                     {
-                        Id = subaccountId,
-                        //DailyBudget = new Budget()
-                        //{
-                        //    Amount = 125.25
-                        //},
-                        //MaximumBid = new FixedBid()
-                        //{
-                        //    Amount = 10.0,
-                        //    type = "#Model.FixedBid"
-                        //},
-                        Bid = new FixedBid()
-                        {
-                            Amount = 3.48,
-                            type = "#Model.FixedBid"
-                        },
-                        //BidMultipliers = multipliers
+                        Factor = 1.2,
+                        DaysOfWeek = new[] { "Thursday", "Friday", "Saturday" }.ToList<string>(),
+                        type = "#Model.CheckinDayOfWeekMultiplier"
+                    });
+                    multipliers.Add(new CheckInDayOfWeekMultiplier()
+                    {
+                        Factor = .9,
+                        DaysOfWeek = new[] { "Sunday", "Monday" }.ToList<string>(),
+                        type = "#Model.CheckinDayOfWeekMultiplier"
+                    });
+                    multipliers.Add(new AdvanceWindowBookingMultiplier()
+                    {
+                        Factor = 1.3,
+                        MinimumNumberOfDays = 3,
+                        type = "#Model.AdvanceBookingWindowMultiplier"
+                    });
+
+
+                    Console.WriteLine("**** Getting hotel {0} from Ungrouped before update ****\n", hotelId);
+
+                    uri = string.Format(BaseUri + HotelTemplate, customerId, accountId, subaccountId, ungroupedHotelGroupId, hotelId);
+                    var hotel = GetResource(uri, headers, typeof(Hotel)) as Hotel;
+                    PrintHotel(hotel);
+
+
+                    hotel = new Hotel()
+                    {
+                        BidMultipliers = multipliers
                     };
 
-                    Console.WriteLine("**** Updating subaccount {0} ****\n", subaccountId);
+                    Console.WriteLine("**** Updating multipliers for hotel {0} ****\n", hotelId);
 
-                    uri = string.Format(BaseUri + SubaccountTemplate, customerId, accountId, subaccountId);
-                    AddUpdateResource(uri, headers, subaccountToUpdate, typeof(SubAccount), "PATCH");
+                    AddUpdateResource(uri, headers, hotel, typeof(Hotel), typeof(AddResponse), "PATCH");
 
-                    Console.WriteLine("**** Getting subaccount {0} after update ****\n", subaccountId);
+                    Console.WriteLine("**** Getting hotel {0} after update ****\n", hotelId);
+                    hotel = GetResource(uri, headers, typeof(Hotel)) as Hotel;
+                    PrintHotel(hotel);
 
-                    var updatedSubaccount = GetResource(uri, headers, typeof(SubAccount)) as SubAccount;
-                    PrintSubAccount(updatedSubaccount);
+
+                    Console.WriteLine("**** Associating hotel {0} with hotel group {1} ****\n", hotelId, hotelGroupId);
+
+                    var associations = new List<HotelAssociation>();
+                    associations.Add(new HotelAssociation()
+                    {
+
+                        HotelGroupId = hotelGroupId,
+                        HotelId = hotelId
+                    });
+
+                    AssociationCollection associationCollection = new AssociationCollection()
+                    {
+                        HotelAssociations = associations
+                    };
+
+                    Console.WriteLine("**** Adding hotel association****\n");
+
+                    uri = string.Format(BaseUri + AssociateTemplate, customerId, accountId, subaccountId);
+                    collection = AddUpdateResource(uri, headers, associationCollection, typeof(AssociationCollection), typeof(CollectionResponse)) as CollectionResponse;
+
+                    // The /Associate method will try to apply all associations in the
+                    // request. It returns any associations that failed and the reason
+                    // for the failure.
+
+                    if (collection.value != null && collection.value.Count > 0)
+                    {
+                        PrintAssociationErrors(collection.value);
+                    }
+
+                    Console.WriteLine("**** Listing hotels for hotel group {0} ****\n", hotelGroupId);
+
+                    uri = string.Format(BaseUri + HotelsTemplate, customerId, accountId, subaccountId, hotelGroupId);
+                    collection = GetResource(uri, headers, typeof(CollectionResponse)) as CollectionResponse;
+                    PrintHotels(collection.value);
+
                 }
 
             }
@@ -207,6 +180,11 @@ namespace ListSubAccounts
                     }
                 }
             }
+            catch (OAuthTokenRequestException e)
+            {
+                Console.WriteLine("\n" + e.Message);
+                Console.WriteLine("\n" + e.Details);
+            }
             catch (Exception e)
             {
                 Console.WriteLine("\n" + e.Message);
@@ -215,7 +193,6 @@ namespace ListSubAccounts
 
 
         // Gets the requested resource.
-
         private static object GetResource(string uri, WebHeaderCollection headers, Type resourceType)
         {
             object resource = null;
@@ -236,10 +213,9 @@ namespace ListSubAccounts
             return resource;
         }
 
-
         // Adds or updates the resource.
 
-        private static string AddUpdateResource(string uri, WebHeaderCollection headers, object resource, Type type, string verb = "POST")
+        private static object AddUpdateResource(string uri, WebHeaderCollection headers, object resource, Type requestType, Type responseType, string verb = "POST")
         {
             var request = (HttpWebRequest)WebRequest.Create(uri);
             request.Method = verb;
@@ -249,7 +225,7 @@ namespace ListSubAccounts
             var serializerSettings = new JsonSerializerSettings();
             serializerSettings.NullValueHandling = NullValueHandling.Ignore;
 
-            var json = JsonConvert.SerializeObject(resource, type, serializerSettings);
+            var json = JsonConvert.SerializeObject(resource, requestType, serializerSettings);
             request.ContentLength = json.Length;
             using (Stream requestStream = request.GetRequestStream())
             {
@@ -260,53 +236,60 @@ namespace ListSubAccounts
 
             var response = (HttpWebResponse)request.GetResponse();
 
-            AddResponse addResponse = null;
+            object responseObject = null;
 
             using (Stream responseStream = response.GetResponseStream())
             {
                 var reader = new StreamReader(responseStream);
                 var jsonOut = reader.ReadToEnd();
                 reader.Close();
-                addResponse = JsonConvert.DeserializeObject<AddResponse>(jsonOut);
+                responseObject = JsonConvert.DeserializeObject(jsonOut, responseType);
             }
 
-            return addResponse.value;
+            return responseObject;
         }
 
 
-
-        private static void PrintSubAccounts(List<object> subaccounts)
+        private static void PrintHotels(List<object> hotels)
         {
-            foreach (var subaccount in subaccounts)
+            foreach (var hotel in hotels)
             {
-                var s = ((JObject)subaccount).ToObject<SubAccount>();
+                var h = ((JObject)hotel).ToObject<Hotel>();
 
-                PrintSubAccount(s);
+                PrintHotel(h);
             }
+
         }
 
 
-        private static void PrintSubAccount(SubAccount subaccount)
+        private static void PrintHotel(Hotel hotel)
         {
-            Console.WriteLine("Campaign name: " + subaccount.Name);
-            Console.WriteLine("Campaign ID: " + subaccount.Id);
-            Console.WriteLine("Campaign status: " + subaccount.Status);
-            Console.WriteLine("Daily budget: " + subaccount.DailyBudget.Amount);
-            Console.WriteLine("Maximum bid: " + subaccount.MaximumBid.Amount);
+            Console.WriteLine("Hotel name: " + hotel.Name);
+            Console.WriteLine("Hotel ID: " + hotel.Id);
+            Console.WriteLine("Partner hotel ID: " + hotel.PartnerHotelId);
+            Console.WriteLine("Hotel status: " + hotel.Status);
+            Console.WriteLine("Country code: " + hotel.CountryCode);
+            Console.WriteLine("Bid source: " + ((hotel.BidSource != null) ? hotel.BidSource : string.Empty));
 
-            var b = ((JObject)subaccount.Bid).ToObject<Bid>();
-            Console.WriteLine("{0}: {1}", (b.GetBidType() == "FixedBid") ? "Fixed bid" : "Percentage bid", b.Amount);
-
-            if (subaccount.BidMultipliers != null && subaccount.BidMultipliers.Count > 0)
+            if (hotel.Bid != null)
             {
-                foreach (var multiplier in subaccount.BidMultipliers)
+                var b = ((JObject)hotel.Bid).ToObject<Bid>();
+                Console.WriteLine("{0}: {1}", (b.GetBidType() == "FixedBid") ? "Fixed bid" : "Percentage bid", b.Amount);
+            }
+            else
+            {
+                Console.WriteLine("Bid:");
+            }
+
+            if (hotel.BidMultipliers != null && hotel.BidMultipliers.Count > 0)
+            {
+                foreach (var multiplier in hotel.BidMultipliers)
                 {
                     var m = ((JObject)multiplier).ToObject<Multiplier>();
                     Console.WriteLine("{0}: {1}", m.GetMultiplierType(), m.Factor);
 
-                    switch (m.GetMultiplierType())
-                    {
-                        case "UserCountryMultiplier":
+                    switch (m.GetMultiplierType()) { 
+                        case "UserCountryMultiplier" :
                             {
                                 var userCountryMultiplier = ((JObject)multiplier).ToObject<UserCountryMultiplier>();
 
@@ -338,7 +321,7 @@ namespace ListSubAccounts
                             }
                         case "CheckinDayOfWeekMultiplier":
                             {
-                                var dayOfWeekMultiplier = ((JObject)multiplier).ToObject<CheckinDayOfWeekMultiplier>();
+                                var dayOfWeekMultiplier = ((JObject)multiplier).ToObject<CheckInDayOfWeekMultiplier>();
 
                                 foreach (var device in dayOfWeekMultiplier.DaysOfWeek)
                                 {
@@ -369,11 +352,43 @@ namespace ListSubAccounts
                             }
                         default: break;
                     }
-
-                    Console.WriteLine();
                 }
-
             }
+            else
+            {
+                Console.WriteLine("Multipliers:");
+            }
+
+            Console.WriteLine();
+        }
+
+
+
+        private static void PrintAssociationErrors(List<object> associations)
+        {
+            foreach (var association in associations)
+            {
+                var a = ((JObject)association).ToObject<HotelAssociation>();
+
+                PrintAssociationError(a);
+            }
+        }
+
+        private static void PrintAssociationError(HotelAssociation association)
+        {
+            Console.WriteLine("Hotel group ID: " + association.HotelGroupId);
+            Console.WriteLine("Hotel group name: " + association.HotelGroupName);
+            Console.WriteLine("Hotel ID: " + association.HotelId);
+            Console.WriteLine("Hotel group name: " + association.HotelName);
+
+            foreach (var error in association.Errors)
+            {
+                Console.WriteLine("Error code: " + error.Code);
+                Console.WriteLine("Error message: " + error.Message);
+                Console.WriteLine("Error parameter: " + error.Property);
+            }
+
+            Console.WriteLine();
         }
 
 
@@ -383,26 +398,38 @@ namespace ListSubAccounts
             {
                 var e = ((JObject)error).ToObject<AdsApiError>();
 
-                Console.WriteLine("\nError code: " + e.Code);
-                Console.WriteLine("Error message: " + e.Message);
-                Console.WriteLine("Error parameter: " + e.Property);
+                PrintError(e);
             }
+        }
+        private static void PrintError(AdsApiError error)
+        {
+                Console.WriteLine("\nError code: " + error.Code);
+                Console.WriteLine("Error message: " + error.Message);
+                Console.WriteLine("Error parameter: " + error.Property);
         }
     }
 }
 
 
-// Defines a subaccount (or hotel campaign).
+// Defines a hotel.
 
-class SubAccount
+class Hotel
 {
     public string Id { get; set; }
+
     public string Name { get; set; }
+
     public string Status { get; set; }
-    public Budget DailyBudget { get; set; }
-    public FixedBid MaximumBid { get; set; }
+
     public object Bid { get; set; }
+
     public List<object> BidMultipliers { get; set; }
+
+    public string BidSource { get; set; }
+
+    public string CountryCode { get; set; }
+
+    public string PartnerHotelId { get; set; }
 }
 
 // Defines a daily budget that spread throughout the day.
@@ -497,7 +524,7 @@ class AdvanceWindowBookingMultiplier : Multiplier
 // Defines the multiplier to use if the user is checking in on
 // the specified week day.
 
-class CheckinDayOfWeekMultiplier : Multiplier
+class CheckInDayOfWeekMultiplier : Multiplier
 {
     public List<string> DaysOfWeek { get; set; }
 }
@@ -507,6 +534,7 @@ class CheckinDayOfWeekMultiplier : Multiplier
 
 class DateTypeMultiplier : Multiplier
 {
+    //public List<string> DateType { get; set; }
     public string DateType { get; set; }
 }
 
@@ -527,7 +555,7 @@ class AddResponse
 
 
 // Defines the response object for GETs that return
-// lists of resources (i.e., /Subaccounts).
+// lists of resources (i.e., /SubAccounts('12345')/HotelGroups('45678')/Hotels).
 
 class CollectionResponse
 {
@@ -552,6 +580,36 @@ class CollectionResponse
     {
         return context.Substring(context.LastIndexOf('#') + 1);
     }
+}
+
+
+
+// Defines a hotel association, which defines the relationship
+// between a hotel and a hotel group. A hotel may belong
+// to only one group.
+
+class HotelAssociation
+{
+    public string HotelGroupId { get; set; }
+
+    public string HotelGroupName { get; set; }
+
+    public string HotelId { get; set; }
+
+    public string HotelName { get; set; }
+
+    public string PartnerHotelId { get; set; }
+
+    public List<AdsApiError> Errors { get; set; }
+}
+
+
+// Defines a collection of hotel associations.
+
+class AssociationCollection
+{
+    // Contains the list of requested resources.
+    public List<HotelAssociation> HotelAssociations { get; set; }
 }
 
 
