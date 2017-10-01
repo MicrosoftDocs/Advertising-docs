@@ -1,57 +1,56 @@
 - name: Overview
   href: ../shopping-content/index.md
+- name: Release Notes
+  href: ../shopping-content/release-notes.md
+- name: Get Started
+  href: ../shopping-content/get-started.md
+- name: Testing your Code in Sandbox
+  href: ../shopping-content/test-code-sandbox.md
+- name: API Best Practices
+  href: ../shopping-content/api-best-practices.md
+- name: Can I Use the API and FTP?
+  href: ../shopping-content/can-use-api-ftp.md
+- name: Managing your Products
+  href: ../shopping-content/manage-products.md
+- name: How Do I Get the Status of Product Offers?
+  href: ../shopping-content/how-get-status-product-offers.md
+- name: Managing your Catalogs
+  href: ../shopping-content/manage-catalogs.md
+- name: Code Examples
+  href: ../shopping-content/code-examples.md
   items:
-  - name: Release Notes
-    href: ../shopping-content/release-notes.md
-  - name: Get Started
-    href: ../shopping-content/get-started.md
-  - name: Testing your Code in Sandbox
-    href: ../shopping-content/test-code-sandbox.md
-  - name: API Best Practices
-    href: ../shopping-content/api-best-practices.md
-  - name: Can I Use the API and FTP?
-    href: ../shopping-content/can-use-api-ftp.md
-  - name: Managing your Products
-    href: ../shopping-content/manage-products.md
-  - name: How Do I Get the Status of Product Offers?
-    href: ../shopping-content/how-get-status-product-offers.md
-  - name: Managing your Catalogs
-    href: ../shopping-content/manage-catalogs.md
-  - name: Code Examples
-    href: ../shopping-content/code-examples.md
-    items:
-    - name: Authenticating Microsoft Account Credentials
-      href: ../shopping-content/code-example-authentication-oauth.md
-    - name: Creating a Batch Request
-      href: ../shopping-content/code-example-create-batch-request.md
-    - name: Getting a List of Product Offers
-      href: ../shopping-content/code-example-get-list-product-offers.md
-    - name: Inserting a Product Offer
-      href: ../shopping-content/code-example-insert-product-offer.md
-    - name: Getting a Product Offer
-      href: ../shopping-content/code-example-get-product-offer.md
-    - name: Deleting a Product Offer
-      href: ../shopping-content/code-example-delete-product-offer.md
-    - name: Managing Catalogs
-      href: ../shopping-content/code-example-manage-catalogs.md
-    - name: Downloading a Catalog Status Report
-      href: ../shopping-content/code-example-download-catalog-status-report.md
-  - name: JSON and XML Examples
-    href: ../shopping-content/json-xml-examples.md
-    items:
-    - name: Example JSON Product Offer
-      href: ../shopping-content/example-json-product-offer.md
-    - name: Example XML Product Offer
-      href: ../shopping-content/example-xml-product-offer.md
-    - name: Error Response Example
-      href: ../shopping-content/error-response-example.md
-  - name: API Reference
-    href: ../shopping-content/reference.md
-    items:
-    - name: Catalogs Resource
-      href: ../shopping-content/catalogs-resource.md
-    - name: Products Resource
-      href: ../shopping-content/products-resource.md
-    - name: Status Resource
-      href: ../shopping-content/status-resource.md
+  - name: Authenticating Microsoft Account Credentials
+    href: ../shopping-content/code-example-authentication-oauth.md
+  - name: Creating a Batch Request
+    href: ../shopping-content/code-example-create-batch-request.md
+  - name: Getting a List of Product Offers
+    href: ../shopping-content/code-example-get-list-product-offers.md
+  - name: Inserting a Product Offer
+    href: ../shopping-content/code-example-insert-product-offer.md
+  - name: Getting a Product Offer
+    href: ../shopping-content/code-example-get-product-offer.md
+  - name: Deleting a Product Offer
+    href: ../shopping-content/code-example-delete-product-offer.md
+  - name: Managing Catalogs
+    href: ../shopping-content/code-example-manage-catalogs.md
+  - name: Downloading a Catalog Status Report
+    href: ../shopping-content/code-example-download-catalog-status-report.md
+- name: JSON and XML Examples
+  href: ../shopping-content/json-xml-examples.md
+  items:
+  - name: Example JSON Product Offer
+    href: ../shopping-content/example-json-product-offer.md
+  - name: Example XML Product Offer
+    href: ../shopping-content/example-xml-product-offer.md
+  - name: Error Response Example
+    href: ../shopping-content/error-response-example.md
+- name: API Reference
+  href: ../shopping-content/reference.md
+  items:
+  - name: Catalogs Resource
+    href: ../shopping-content/catalogs-resource.md
+  - name: Products Resource
+    href: ../shopping-content/products-resource.md
+  - name: Status Resource
+    href: ../shopping-content/status-resource.md
 
