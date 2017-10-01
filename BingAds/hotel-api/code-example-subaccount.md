@@ -12,7 +12,7 @@ For details about the elements used in this example, see the [reference](../hote
 
 For additional information, see [Working with subaccounts](../hotel-api/manage-hotel-campaigns.md#workingwithsubaccounts). 
 
-The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Get Started](../transaction-message/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-api/code-example-oauth.md).
+The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Get Started](../transaction-message/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [OAuth Code Example](../hotel-api/code-example-oauth.md).
 
 ```csharp
 using System;
