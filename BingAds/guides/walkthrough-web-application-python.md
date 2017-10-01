@@ -22,19 +22,13 @@ To follow this tutorial path, you will develop your application on Windows using
 
 You will need to install either Python 2.7 or 3.4 in your development environment. Unless you have scaled up your Azure website to 64-bit, the default platform is 32-bit, so you should use a 32-bit Python installation.
 
-You will need the Bing Ads Python SDK, and this tutorial will walk you through the installation.
+You will need to [install](~/guides/get-started-python.md#installation) the [Bing Ads Python SDK](~/guides/client-libraries.md), and this tutorial will walk you through the installation.
 
 You will need the [Django web framework](https://www.djangoproject.com/) installed to deploy the application locally, and this tutorial will walk you through the installation.
 
-You will need at least one user with Bing Ads credentials including either a Microsoft account (recommended) or the Bing Ads legacy *UserName* and *Password* set, and a developer token. For more information see [Get Started With the Bing Ads API](../guides/get-started.md).
+You will need at least one user with Bing Ads credentials including either a Microsoft account (recommended) or the Bing Ads legacy *UserName* and *Password* set, and a [developer token](~/guides/get-started.md#get-developer-token). 
 
-To use the OAuth 2.0 features of this web application, you will need to register an application at the [Microsoft account Developer Center](https://account.live.com/developers/applications). The Microsoft account user who registers your application is not required to have Bing Ads access. Please consider the following during app registration:
-
--   Since this is a web application, choose **No** when asked if you are registering a mobile or desktop client app.
-
--   You will be asked to register one or more redirect URLs. To deploy your application on Azure, choose a website name and corresponding URL that includes *azurewebsites.net*. This tutorial uses the */callback* URL relative to the website root, so to follow along you will want to register a redirect URL as follows: *http://YourAzureSiteNameGoesHere.azurewebsites.net/callback*.
-
--   Take note of the Client ID and Client Secret, as you will use them later in this tutorial.
+To use the OAuth 2.0 features of this web application, you will need to [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID and client secret. You'll need to register a web app (not native) for this example. You will be asked to register one or more redirect URLs. To deploy your application on Azure, choose a website name and corresponding URL that includes *azurewebsites.net*. This tutorial uses the */callback* URL relative to the website root, so to follow along you will want to register a redirect URL as follows: *http://YourAzureSiteNameGoesHere.azurewebsites.net/callback*.
 
 ## Website Creation on Azure Portal
 Create a Django website from the Azure Websites gallery. Login to the [Microsoft Azure Portal](https://manage.windowsazure.com/) and click the **NEW** button in the bottom left corner. A window will appear. Click **COMPUTE**, **WEB SITE**, then **FROM GALLERY**.
@@ -71,7 +65,7 @@ Here is an abridged overview of the files used by this web application. If you h
 
 -   */requirements.txt* - Lists the packages required by the example web application. Django and the Bing Ads Python SDK packages are included in the example requirements.txt file, and will be installed when you create a virtual environment.
 
--   */DjangoWebProject/settings.py* - The project settings are defined here. You must edit *settings.py* with your own *DEVELOPER_TOKEN*, *CLIENT_ID*, *CLIENT_SECRET*, and *REDIRECTION_URI*.
+-   */DjangoWebProject/settings.py* - The project settings are defined here. You must edit *settings.py* with your own *CLIENT_ID*, *CLIENT_SECRET*, and *REDIRECTION_URI* that were provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the *DEVELOPER_TOKEN* with your own production [developer token](~/guides/get-started.md#get-developer-token).
 
 -   */DjangoWebProject/urls.py* - Defines which view and template context to invoke per URL.
 

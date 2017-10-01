@@ -6,13 +6,12 @@ author: "eric-urban"
 ms.author: "eur"
 ---
 # Walkthrough: Bing Ads Web Application in C# #
-The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. For more information, please see [Setting Up the Development Environment](../guides/get-started-csharp.md#requirements). 
+The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](~/guides/get-started.md#get-developer-token). 
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
 
-## <a name="webapp"></a>Web Application Authentication Example Walk-Through
-
+## <a name="code"></a>Code Walkthrough
 1.  Open the [Visual Studio Community](https://www.visualstudio.com/vs/community/) development environment.
 
 2.  Create a new project through **File** -&gt; **New** -&gt; **Project** -&gt; **Templates** -&gt; **Visual C#** -&gt; **Web** -&gt; **ASP.NET Web Application**. Name the project *BingAdsWebApp* and click **OK**.
@@ -45,7 +44,7 @@ The example web application sends authentication requests to the Microsoft accou
     <p><b style="color: red">@ViewBag.CampaignErrors</b></p>
     ```
 
-6. Within the **Controllers** folder of the BingAdsWebApp project, open the HomeController.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above.
+6. Within the **Controllers** folder of the BingAdsWebApp project, open the HomeController.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](~/guides/get-started.md#get-developer-token). 
 
     ```csharp
     using System;
@@ -69,7 +68,7 @@ The example web application sends authentication requests to the Microsoft accou
             private const string ClientSecret = "<ClientSecretGoesHere>";
             private const string RedirectionUri = "<RedirectionUriGoesHere>";
             private const string DeveloperToken = "<DeveloperTokenGoesHere>";
-            private static string ClientState = "ClientStateGoesHere";
+            private static string ClientState = "OptionalClientStateGoesHere";
 
             private static AuthorizationData _authorizationData;
             private readonly string _refreshTokenFilePath = Path.Combine(Path.GetTempPath(), "refreshToken.txt");
@@ -384,27 +383,27 @@ The example web application sends authentication requests to the Microsoft accou
 ## <a name="sandbox"></a>Configuring Sandbox
 To use sandbox, follow these additional steps.
 
--   Replace the try block within HomeController.cs with the following snippet. Authentication with Microsoft account credentials is not supported in sandbox.
+Replace the try block within HomeController.cs with the following snippet. Authentication with Microsoft account credentials is not supported in sandbox.
 
-    ```csharp
-    try
-    {
-        // Prepare legacy Bing Ads UserName and Password authentication object
-        var authorization = new PasswordAuthentication("<UserNameGoesHere>", "<PasswordGoesHere>");
+```csharp
+try
+{
+    // Prepare legacy Bing Ads UserName and Password authentication object
+    var authorization = new PasswordAuthentication("<UserNameGoesHere>", "<PasswordGoesHere>");
 
-        var userData = await GetUserData(authorization);
+    var userData = await GetUserData(authorization);
 
-        return await AddCampaignInBulk(userData);
-    }
-    ```
+    return await AddCampaignInBulk(userData);
+}
+```
 
--   Set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *Web.config* file.
+Set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *Web.config* file.
 
-    ```xml
-    <add key="BingAdsEnvironment" value ="Sandbox"/>
-    ```
+```xml
+<add key="BingAdsEnvironment" value ="Sandbox"/>
+```
 
--   Optionally you should remove any unused local variables that had been used for OAuth in production.
+Optionally you should remove any unused local variables that had been used for OAuth in production.
 
 ## See Also
 [Sandbox](../guides/sandbox.md)  

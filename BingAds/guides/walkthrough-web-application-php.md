@@ -4,9 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 ---
 # Walkthrough: Bing Ads Web Application in PHP
-This example web application demonstrates OAuth authentication in production. The application will prompt a Microsoft account user for permission to manage their Bing Ads accounts. 
-
-For more information about getting started with PHP, please see [Setting Up the Development Environment](../guides/get-started-php.md#requirements). You can create the example step by step as described below, or start with the [provided examples](~/guides/code-examples.md).
+This example web application demonstrates OAuth authentication in production. The application will prompt a Microsoft account user for permission to manage their Bing Ads accounts. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](~/guides/get-started.md#get-developer-token). You can create the example step by step as described below, or start with the [provided examples](~/guides/code-examples.md).
 
 ## <a name="webapp"></a>Web Application Authentication Example Walk-Through
 
@@ -43,7 +41,7 @@ For more information about getting started with PHP, please see [Setting Up the 
     <input type="button" onClick="return window.location='<?php echo WebAuthHelper::RedirectUri;?>';" value="OK" />
     ```
 
-2.  Create a new file named *OAuth2Callback.php*, and add the code as shown in the following example.
+2.  Create a new file named *OAuth2Callback.php*, and add the code as shown in the following example.  
 
     ```php
     <?php
@@ -170,7 +168,7 @@ For more information about getting started with PHP, please see [Setting Up the 
     ?>
     ```
 
-4.  Create a new file named *WebAuthHelper.php*, and add the code as shown in the following example. Edit the *ClientId*, *ClientSecret*, *RedirectUri*, and *DeveloperToken* values with your own credentials. 
+4.  Create a new file named *WebAuthHelper.php*, and add the code as shown in the following example. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](~/guides/get-started.md#get-developer-token). 
 
     ```php
     <?php
@@ -190,10 +188,8 @@ For more information about getting started with PHP, please see [Setting Up the 
     
     ?>
     ```
-    
-5. Edit the *ClientId*, *ClientSecret*, *RedirectUri*, and *DeveloperToken* values to your own credentials. 
 
-6. The application is ready to be deployed to a server. For example you can publish a [Web App](http://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](http://azure.microsoft.com/services/app-service/). 
+5. The application is ready to be deployed to a server. For example you can publish a [Web App](http://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](http://azure.microsoft.com/services/app-service/). 
 
 ## See Also
 [Bing Ads Code Examples](../guides/code-examples.md)  

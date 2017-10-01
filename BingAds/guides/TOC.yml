@@ -5,42 +5,41 @@
   href: ./entity-hierarchy-limits.md
 - name: FAQ
   href: ./faq.md
-- name: Get Started With the Bing Ads API
+- name: Get Started
   href: ./get-started.md
   displayName: dev token developer token
-  expanded: true
   items:
-  - name: Get Started Using C# with Bing Ads Services
+  - name: Get Started Using C#
     href: ./get-started-csharp.md
     items:
     - name: Walkthrough - Bing Ads Desktop Application in C#
       href: ./walkthrough-desktop-application-csharp.md
     - name: Walkthrough - Bing Ads Web Application in C#
       href: ./walkthrough-web-application-csharp.md
-  - name: Get Started Using Java with Bing Ads Services
+  - name: Get Started Using Java
     href: ./get-started-java.md
     items:
     - name: Walkthrough - Bing Ads Desktop Application in Java
       href: ./walkthrough-desktop-application-java.md
     - name: Walkthrough - Bing Ads Web Application in Java
       href: ./walkthrough-web-application-java.md
-  - name: Get Started Using PHP with Bing Ads Services
+  - name: Get Started Using PHP
     href: ./get-started-php.md
     items:
     - name: Walkthrough - Bing Ads Desktop Application in PHP
       href: ./walkthrough-desktop-application-php.md
     - name: Walkthrough - Bing Ads Web Application in PHP
-      href: ./walkthrough-web-application-java.md
-  - name: Get Started Using Python with Bing Ads Services
+      href: ./walkthrough-web-application-php.md
+  - name: Get Started Using Python
     href: ./get-started-python.md
     items:
     - name: Walkthrough - Bing Ads Desktop Application in Python
       href: ./walkthrough-desktop-application-python.md
     - name: Walkthrough - Bing Ads Web Application in Python
-      href: ./walkthrough-web-application-java.md
+      href: ./walkthrough-web-application-python.md
 - name: Sandbox
   href: ./sandbox.md
-- name: Bing Ads Code Examples
+- name: Code Examples
   href: ./code-examples.md
   items:
   - name: Ad Extensions
@@ -83,16 +82,24 @@
     href: ./code-example-shopping-campaigns.md
   - name: Target Criterions
     href: ./code-example-target-criterions.md
-- name: Bing Ads Client Libraries
+- name: Client Libraries
   href: ./client-libraries.md
   displayName: SDK
-- name: Bing Ads Technical Guides
+  expanded: true
+  items:
+  - name: Authentication
+    href: ./sdk-authentication.md
+  - name: Bulk Service Manager
+    href: ./sdk-bulk-service-manager.md
+  - name: Reporting Service Manager
+    href: ./sdk-reporting-service-manager.md
+- name: Technical Guides
   href: ./technical-guides.md
   items:
   - name: Authentication with OAuth
     href: ./authentication-oauth.md
     displayName: access refresh token scope
-  - name: Bing Ads Services Protocol
+  - name: Services Protocol
     href: ./services-protocol.md
     displayName: wsdl
   - name: Handling Service Errors and Exceptions
@@ -159,10 +166,10 @@
       href: ./request-download-report.md
     - name: Report Data Retention Time Periods
       href: ./report-data-retention-time-periods.md
-- name: Bing Ads API Reference
+- name: API Reference
   href: ./reference.md
   items:
-  - name: Bing Ads Web Service Addresses
+  - name: Web Service Addresses
     href: ./web-service-addresses.md
     displayName: wsdl
   - name: Version 11 Services
@@ -1705,9 +1712,9 @@
           href: ../reporting/sortorder.md
         - name: UserLocationPerformanceReportColumn
           href: ../reporting/userlocationperformancereportcolumn.md
-  - name: Bing Ads Operation Error Codes
+  - name: Operation Error Codes
     href: ./operation-error-codes.md
-  - name: Bing Ads Editorial Failure Reason Codes
+  - name: Editorial Failure Reason Codes
     href: ./editorial-failure-reason-codes.md
   - name: Ad Languages
     href: ./ad-languages.md

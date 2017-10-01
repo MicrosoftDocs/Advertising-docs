@@ -8,12 +8,12 @@ dev_langs:
   - csharp
 ---
 # Walkthrough: Bing Ads Desktop Application in C# #
-The example desktop application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. For more information, please see [Setting Up the Development Environment](../guides/get-started-csharp.md#requirements). You can create the example project step by step as described below, or download examples within a Visual Studio solution [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples).
+The example desktop application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID. You'll also need your production [developer token](~/guides/get-started.md#get-developer-token). You can create the example project step by step as described below, or download examples within a Visual Studio solution [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples).
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
 
-## <a name="desktopapp"></a>Desktop Application Authentication Example Walk-Through
+## <a name="code"></a>Code Walkthrough
 
 1.  Open the [Visual Studio Community](https://www.visualstudio.com/vs/community/) development environment.
 
@@ -37,7 +37,7 @@ The example desktop application sends authentication requests to the Microsoft a
     </Window>
     ```
 
-5.  Open the MainWindow.xaml.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above.
+5.  Open the MainWindow.xaml.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above. You must edit the sample below with the ClientId that was provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](~/guides/get-started.md#get-developer-token). 
 
     ```csharp
     using System;
@@ -367,27 +367,27 @@ The example desktop application sends authentication requests to the Microsoft a
 ## <a name="sandbox"></a>Configuring Sandbox
 To use sandbox, follow these additional steps.
 
--   Replace the try block within MainWindow.xaml.cs with the following snippet. Authentication with Microsoft account credentials is not supported in sandbox.
+Replace the try block within MainWindow.xaml.cs with the following snippet. Authentication with Microsoft account credentials is not supported in sandbox.
 
-    ```csharp
-    try
-    {
-        // Prepare legacy Bing Ads UserName and Password authentication object
-        var authorization = new PasswordAuthentication("<UserNameGoesHere>", "<PasswordGoesHere>");
+```csharp
+try
+{
+    // Prepare legacy Bing Ads UserName and Password authentication object
+    var authorization = new PasswordAuthentication("<UserNameGoesHere>", "<PasswordGoesHere>");
 
-        var userData = await GetUserData(authorization);
+    var userData = await GetUserData(authorization);
 
-        return await AddCampaignInBulk(userData);
-    }
-    ```
+    return await AddCampaignInBulk(userData);
+}
+```
 
--   Set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *App.config* file.
+Set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *App.config* file.
 
-    ```xml
-    <add key="BingAdsEnvironment" value ="Sandbox"/>
-    ```
+```xml
+<add key="BingAdsEnvironment" value ="Sandbox"/>
+```
 
--   Optionally you should remove any unused local variables that had been used for OAuth in production.
+Optionally you should remove any unused local variables that had been used for OAuth in production.
 
 ## See Also
 [Sandbox](../guides/sandbox.md)  

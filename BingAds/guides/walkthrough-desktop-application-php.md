@@ -9,10 +9,9 @@ This guide describes how you can download samples from the [GitHub source](https
 > [!IMPORTANT] 
 > Be sure to test in sandbox before running samples in production. Also note that some samples might require additional information e.g. within *ManageClient.php* you'll need to supply a valid $ClientAccountId.
 
-For more information about getting started with PHP, please see [Setting Up the Development Environment](../guides/get-started-php.md#requirements). 
+You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID. You'll also need your production [developer token](~/guides/get-started.md#get-developer-token).
 
-
-## <a name="desktopapp"></a>Desktop Application Example Walk-Through
+## <a name="code"></a>Code Walkthrough
 
 1.  Download the Bing Ads examples or copy snippets as needed from the [GitHub source](https://github.com/BingAds/BingAds-PHP-SDK). For example open a command prompt and type `git clone https://github.com/BingAds/BingAds-PHP-SDK.git`. 
 2.  Navigate to your local project directory e.g. *c:\dev\BingAdsPHP* and [install](~/guides/get-started-php.md#installation) the Bing Ads PHP SDK. You should now see the vendor directory which contains both the SDK source and samples. 
@@ -41,7 +40,7 @@ For more information about getting started with PHP, please see [Setting Up the 
    
 ## <a name="oauth"></a>OAuth Refresh Token
 To authenticate with OAuth you'll need a refresh token to get started.
-1. Within *AuthHelper.php*, edit the *ClientId* and *DeveloperToken* values to your own credentials. The *RedirectUri* should be set to *https://login.live.com/oauth20_desktop.srf*.
+1. Within *AuthHelper.php*, edit the *ClientId* with the ClientId that was provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the *DeveloperToken* value with your production [developer token](~/guides/get-started.md#get-developer-token). The *RedirectUri* should be set to *https://login.live.com/oauth20_desktop.srf*.  
 2. Edit one of the samples e.g. *\V11\SearchUserAccounts.php*. Choose the *AuthenticateWithOAuth* helper function that you will use, and comment out *AuthenticateWithUserName*. 
    ```php
    AuthHelper::AuthenticateWithOAuth();

@@ -126,3 +126,4 @@ To determine whether Bing successfully processed the message, see Hotel Ads Feed
 ## How often do I need to send messages
 
 Send transaction messages whenever pricing and availability changes.
+
