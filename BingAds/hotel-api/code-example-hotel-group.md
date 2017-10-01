@@ -1,18 +1,18 @@
 ---
-title: "Hotel Group C# Example"
+title: "Hotel Group Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "scottwhi"
 ---
-# Hotel Group C# Example
+# Hotel Group Code Example
 The following example shows the requests you use to list, get, add, and update hotel groups. 
 
 For details about the elements used in this example, see the [reference](../hotel-api/reference.md) section. 
 
 For additional information, see [Working with hotel groups](../hotel-api/manage-hotel-campaigns.md#workingwithhotelgroups). 
 
-The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Get Started](../transaction-message/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-api/oauth-csharp-example.md).
+The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Get Started](../transaction-message/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-api/code-example-oauth.md).
 
 
 ```csharp

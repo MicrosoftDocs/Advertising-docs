@@ -19,7 +19,7 @@ Content API uses the same authentication schemes as Bing Ads API. If you use leg
 
 For details about authenticating Microsoft account credentials with OAuth, see [Managing User Authentication with OAuth](~/guides/authentication-oauth.md). You *can* use the [Bing Ads SDK](~/guides/client-libraries.md) for .NET, Java, or Python to authenticate both legacy and Microsoft account credentials (but only for authentication; the Bing Ads SDK does not provide interfaces for the Content API).
 
-For an example that shows how to use OAuth to authenticate Microsoft account credentials, see [Authenticating Microsoft Account Credentials in C#](../shopping-content/authentication-oauth-csharp.md).
+For an example that shows how to use OAuth to authenticate Microsoft account credentials, see [Authenticating Microsoft Account Credentials in C#](../shopping-content/code-example-authentication-oauth.md).
 
 ## Where to use your credentials and developer tokens?
 

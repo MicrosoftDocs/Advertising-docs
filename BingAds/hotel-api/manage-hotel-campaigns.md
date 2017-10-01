@@ -32,7 +32,7 @@ The following are the REST templates that you use to manage subaccounts.
 - `/SubAccounts` &mdash; [GET](../hotel-api/reference.md#listsubaccounts) | [POST](../hotel-api/reference.md#addsubaccounts)
 - `/SubAccounts('{subAccountId}')` &mdash; [GET](../hotel-api/reference.md#getsubaccount) | [PATCH](../hotel-api/reference.md#updatesubaccount)
 
-For an example that gets and updates subaccounts, see [C# example](../hotel-api/subaccount-csharp-example.md).
+For an example that gets and updates subaccounts, see [C# example](../hotel-api/code-example-subaccount.md).
 
 <a name="listingsubaccounts" />
 ### Listing subaccounts
@@ -221,7 +221,7 @@ The following are the REST templates that you use to manage hotel groups.
 - `/SubAccounts('{subAccountId}')/HotelGroups` &mdash; [GET](../hotel-api/reference.md#listhotelgroups) | [POST](../hotel-api/reference.md#addhotelgroup)
 - `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')` &mdash; [GET](../hotel-api/reference.md#gethotelgroup) | [PATCH](../hotel-api/reference.md#updatehotelgroup)
 
-For an example that gets, adds, and updates hotel groups, see [C# example](../hotel-api/hotel-group-csharp-example.md).
+For an example that gets, adds, and updates hotel groups, see [C# example](../hotel-api/code-example-hotel-group.md).
 
 <a name="listinghotelgroups" />
 ### Listing hotel groups
@@ -426,7 +426,7 @@ The following are the REST templates that you use to manage hotels.
 - `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')/Hotels` &mdash; [GET](../hotel-api/reference.md#listhotels)
 - `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')/Hotels('{hotelGroupId}')` &mdash; [GET](../hotel-api/reference.md#gethotel) | [PATCH](../hotel-api/reference.md#updatehotel)
 
-For an example that gets and updates hotels, see [C# example](../hotel-api/hotel-csharp-example.md).
+For an example that gets and updates hotels, see [C# example](../hotel-api/code-example-hotel.md).
 
 
 <a name="listinghotels" />
