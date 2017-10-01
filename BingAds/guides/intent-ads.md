@@ -56,7 +56,7 @@ For example you can follow these steps to set up an image ad extension for nativ
 Bing Intent ads can be accessed using the [Campaign Management Service](~/campaign-management/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
 
 > [!NOTE]
-> Partial success is supported for a subset of these operations. For example if you submit 10 ad groups and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](handle-service-errors-exceptions.md#partialsuccess).
+> Partial success is supported for a subset of these operations. For example if you submit 10 ad groups and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](handle-service-errors-exceptions.md#partial-success).
 
 1.  Add one to six [Image](~/campaign-management/image.md) items to your account's media library with the [AddMedia](~/campaign-management/addmedia.md) operation. The images must be one of the supported [Media](~/campaign-management/media.md) types (aspect ratios) for an [ImageAdExtension](~/campaign-management/imageadextension.md).
 

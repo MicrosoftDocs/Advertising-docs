@@ -177,7 +177,7 @@ These are the [Campaign Management Service](~/campaign-management/campaign-manag
 > 
 > Partial success is not supported when adding, updating, and deleting ad extensions. For example if you submit 10 ad extensions and 2 fail, the entire batch will fail.
 > 
-> Partial success is supported for [GetAdExtensionsAssociations](~/campaign-management/getadextensionsassociations.md) and [SetAdExtensionsAssociations](~/campaign-management/setadextensionsassociations.md). For example if you submit 10 ad extension associations and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](handle-service-errors-exceptions.md#partialsuccess).
+> Partial success is supported for [GetAdExtensionsAssociations](~/campaign-management/getadextensionsassociations.md) and [SetAdExtensionsAssociations](~/campaign-management/setadextensionsassociations.md). For example if you submit 10 ad extension associations and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](handle-service-errors-exceptions.md#partial-success).
 
 ## <a name="editorial"></a>Editorial Review
 When you associate an ad extension with a campaign or ad group, the extension goes through an initial editorial review. For more information, see [Ad Extension Editorial Review](editorial-review-appeals.md#adextensioneditorialreview).

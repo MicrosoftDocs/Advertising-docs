@@ -50,7 +50,7 @@ The [blog](https://blogs.msdn.microsoft.com/bing_ads_api/) contains technical in
 
 The [forum](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) provides a way for the developer community to ask and answer questions about developing solutions with Bing Ads APIs, to showcase innovations, and to generate and maintain content through community participation. Microsoft monitors the forums and replies to questions that the community has not yet answered.
 
-If you are not finding the information you need to solve your problem in the developer forum, please contact [Bing Ads Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support). To resolve the issue efficiently, please provide support with the details requested in [Engaging Support](../guides/handle-service-errors-exceptions.md#engagesupport).
+If you are not finding the information you need to solve your problem in the developer forum, please contact [Bing Ads Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support). To resolve the issue efficiently, please provide support with the details requested in [Engaging Support](../guides/handle-service-errors-exceptions.md#contact-support).
 
 ## <a name="navigatecontent"></a>Next steps and navigating the content
 

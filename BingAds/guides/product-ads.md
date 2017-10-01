@@ -116,7 +116,7 @@ After you complete these steps, the delivery engine can begin serving product ad
 These are the Bing Shopping entities that can be accessed using the [Campaign Management Service](~/campaign-management/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
 
 > [!NOTE]
-> Partial success is supported for a subset of these operations. For example if you submit 10 ad groups and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](../guides/handle-service-errors-exceptions.md#partialsuccess).
+> Partial success is supported for a subset of these operations. For example if you submit 10 ad groups and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](../guides/handle-service-errors-exceptions.md#partial-success).
 
 |Entities|Service Operations|
 |------------|----------------------|
