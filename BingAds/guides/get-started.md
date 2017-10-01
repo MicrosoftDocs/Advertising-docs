@@ -135,7 +135,7 @@ Then call [SearchAccounts](~/customer-management/getuser.md) with the UserId ret
 ```
 
 > [!TIP]
-> See [Search User Accounts Code Example](~/guides/code-example-search-user-accounts for a code example that returns accounts for the current authenticated user.
+> See [Search User Accounts Code Example](~/guides/code-example-search-user-accounts.md) for a code example that returns accounts for the current authenticated user.
 
 ## <a name="request-headers"></a>Request Header Elements
 Bing Ads services use Simple Object Access Protocol (SOAP) to exchange the request and response messages with the service operation. For more information, see [Bing Ads Services Protocol](../guides/services-protocol.md).
