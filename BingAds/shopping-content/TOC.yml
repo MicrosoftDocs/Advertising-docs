@@ -35,7 +35,7 @@
     href: ../shopping-content/code-example-manage-catalogs.md
   - name: Downloading a Catalog Status Report
     href: ../shopping-content/code-example-download-catalog-status-report.md
-- name: Content API Reference
+- name: API Reference
   href: ../shopping-content/reference.md
   items:
   - name: Catalogs Resource
