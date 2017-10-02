@@ -122,14 +122,14 @@ The following template shows the order of the [body](#response-body) and [header
             <AudienceId d4p1:nil="false">ValueHere</AudienceId>
             <AudienceType d4p1:nil="false">ValueHere</AudienceType>
             <!--This field is applicable if the derived type attribute is set to Webpage-->
-            <Parameter xmlns:e606="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-              <e606:Conditions d4p1:nil="false">
-                <e606:WebpageCondition>
-                  <e606:Argument d4p1:nil="false">ValueHere</e606:Argument>
-                  <e606:Operand>ValueHere</e606:Operand>
-                </e606:WebpageCondition>
-              </e606:Conditions>
-              <e606:CriterionName d4p1:nil="false">ValueHere</e606:CriterionName>
+            <Parameter xmlns:e200="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+              <e200:Conditions d4p1:nil="false">
+                <e200:WebpageCondition>
+                  <e200:Argument d4p1:nil="false">ValueHere</e200:Argument>
+                  <e200:Operand>ValueHere</e200:Operand>
+                </e200:WebpageCondition>
+              </e200:Conditions>
+              <e200:CriterionName d4p1:nil="false">ValueHere</e200:CriterionName>
             </Parameter>
           </Criterion>
           <Id d4p1:nil="false">ValueHere</Id>
@@ -145,11 +145,11 @@ The following template shows the order of the [body](#response-body) and [header
           </CriterionBid>
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e607="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e607:AppUrl>
-              <e607:OsType d4p1:nil="false">ValueHere</e607:OsType>
-              <e607:Url d4p1:nil="false">ValueHere</e607:Url>
-            </e607:AppUrl>
+          <FinalAppUrls xmlns:e201="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e201:AppUrl>
+              <e201:OsType d4p1:nil="false">ValueHere</e201:OsType>
+              <e201:Url d4p1:nil="false">ValueHere</e201:Url>
+            </e201:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -158,13 +158,13 @@ The following template shows the order of the [body](#response-body) and [header
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e608="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e608:Parameters d4p1:nil="false">
-              <e608:CustomParameter>
-                <e608:Key d4p1:nil="false">ValueHere</e608:Key>
-                <e608:Value d4p1:nil="false">ValueHere</e608:Value>
-              </e608:CustomParameter>
-            </e608:Parameters>
+          <UrlCustomParameters xmlns:e202="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e202:Parameters d4p1:nil="false">
+              <e202:CustomParameter>
+                <e202:Key d4p1:nil="false">ValueHere</e202:Key>
+                <e202:Value d4p1:nil="false">ValueHere</e202:Value>
+              </e202:CustomParameter>
+            </e202:Parameters>
           </UrlCustomParameters>
           <!--No additional fields are applicable if the derived type attribute is set to NegativeAdGroupCriterion-->
         </AdGroupCriterion>
@@ -175,6 +175,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetAdGroupCriterionsByIdsResponse> GetAdGroupCriterionsByIdsAsync(
 	IList<long> adGroupCriterionIds,

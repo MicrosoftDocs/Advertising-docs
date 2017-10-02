@@ -31,7 +31,7 @@ The *GetBulkDownloadStatusResponse* object defines the [body](#response-body) an
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="errors"></a>Errors|An array of *OperationError* objects corresponding to errors encountered during the system processing of the bulk file after your download request was submitted.|[OperationError](operationerror.md) array|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility. This element can be used to avoid otherwise breaking changes when new elements are added in future releases.<br /><br />**Note:** Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *GetBulkDownloadStatusResponse* message object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />**Note:** Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *GetBulkDownloadStatusResponse* message object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="percentcomplete"></a>PercentComplete|The progress completion percentage for system processing of the bulk download file.|**int**|
 |<a name="requeststatus"></a>RequestStatus|The status of the download. The possible values are as follows.<br /><br />Completed - The download completed successfully.<br /><br />InProgress - The download is in progress.<br /><br />Failed - The download failed. You may submit a new download with fewer entities, without performance data, or try again to submit the same download later.<br /><br />FailedFullSyncRequired - The request's *LastSyncTimeInUTC* element must be set to null, for example if the specified account was included in a data migration. After requesting a full download, you may begin requesting delta downloads again.|**string**|
 |<a name="resultfileurl"></a>ResultFileUrl|The URL that contains the download data. This element contains the URL when the *Status* element is *Success*.<br /><br />**Note:** You have five minutes from the time that *GetBulkDownloadStatus* returns success to start downloading the file. If you do not start the download within this time period, you will need to call *GetBulkDownloadStatus* again to get a new URL.<br /><br />The download file is compressed (in zip format), so you must unzip the file to access the data.<br /><br />For information about the bulk file format, see [Bulk File Schema](../bulk/bulk-file-schema.md).|**string**|
@@ -80,11 +80,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Message d4p1:nil="false">ValueHere</Message>
         </OperationError>
       </Errors>
-      <ForwardCompatibilityMap xmlns:e505="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e505:KeyValuePairOfstringstring>
-          <e505:key d4p1:nil="false">ValueHere</e505:key>
-          <e505:value d4p1:nil="false">ValueHere</e505:value>
-        </e505:KeyValuePairOfstringstring>
+      <ForwardCompatibilityMap xmlns:e99="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e99:KeyValuePairOfstringstring>
+          <e99:key d4p1:nil="false">ValueHere</e99:key>
+          <e99:value d4p1:nil="false">ValueHere</e99:value>
+        </e99:KeyValuePairOfstringstring>
       </ForwardCompatibilityMap>
       <PercentComplete>ValueHere</PercentComplete>
       <RequestStatus d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</RequestStatus>
@@ -95,6 +95,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetBulkDownloadStatusResponse> GetBulkDownloadStatusAsync(
 	string requestId)

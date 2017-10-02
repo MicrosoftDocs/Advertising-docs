@@ -49,12 +49,12 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SearchUserInvitationsRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Predicates xmlns:e439="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e439:Predicate>
-          <e439:Field i:nil="false">ValueHere</e439:Field>
-          <e439:Operator>ValueHere</e439:Operator>
-          <e439:Value i:nil="false">ValueHere</e439:Value>
-        </e439:Predicate>
+      <Predicates xmlns:e33="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e33:Predicate>
+          <e33:Field i:nil="false">ValueHere</e33:Field>
+          <e33:Operator>ValueHere</e33:Operator>
+          <e33:Value i:nil="false">ValueHere</e33:Value>
+        </e33:Predicate>
       </Predicates>
     </SearchUserInvitationsRequest>
   </s:Body>
@@ -71,20 +71,20 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SearchUserInvitationsResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <UserInvitations xmlns:e440="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e440:UserInvitation>
-          <e440:Id>ValueHere</e440:Id>
-          <e440:FirstName d4p1:nil="false">ValueHere</e440:FirstName>
-          <e440:LastName d4p1:nil="false">ValueHere</e440:LastName>
-          <e440:Email d4p1:nil="false">ValueHere</e440:Email>
-          <e440:CustomerId>ValueHere</e440:CustomerId>
-          <e440:Role>ValueHere</e440:Role>
-          <e440:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <UserInvitations xmlns:e34="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e34:UserInvitation>
+          <e34:Id>ValueHere</e34:Id>
+          <e34:FirstName d4p1:nil="false">ValueHere</e34:FirstName>
+          <e34:LastName d4p1:nil="false">ValueHere</e34:LastName>
+          <e34:Email d4p1:nil="false">ValueHere</e34:Email>
+          <e34:CustomerId>ValueHere</e34:CustomerId>
+          <e34:Role>ValueHere</e34:Role>
+          <e34:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:long>ValueHere</a1:long>
-          </e440:AccountIds>
-          <e440:ExpirationDate>ValueHere</e440:ExpirationDate>
-          <e440:Lcid>ValueHere</e440:Lcid>
-        </e440:UserInvitation>
+          </e34:AccountIds>
+          <e34:ExpirationDate>ValueHere</e34:ExpirationDate>
+          <e34:Lcid>ValueHere</e34:Lcid>
+        </e34:UserInvitation>
       </UserInvitations>
     </SearchUserInvitationsResponse>
   </s:Body>
@@ -92,6 +92,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<SearchUserInvitationsResponse> SearchUserInvitationsAsync(
 	IList<Predicate> predicates)

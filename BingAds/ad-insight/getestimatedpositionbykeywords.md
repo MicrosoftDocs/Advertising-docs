@@ -88,25 +88,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedPositionByKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedPositions xmlns:e477="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e477:KeywordEstimatedPosition>
-          <e477:Keyword d4p1:nil="false">ValueHere</e477:Keyword>
-          <e477:EstimatedPositions d4p1:nil="false">
-            <e477:EstimatedPositionAndTraffic>
-              <e477:MatchType>ValueHere</e477:MatchType>
-              <e477:MinClicksPerWeek>ValueHere</e477:MinClicksPerWeek>
-              <e477:MaxClicksPerWeek>ValueHere</e477:MaxClicksPerWeek>
-              <e477:AverageCPC>ValueHere</e477:AverageCPC>
-              <e477:MinImpressionsPerWeek>ValueHere</e477:MinImpressionsPerWeek>
-              <e477:MaxImpressionsPerWeek>ValueHere</e477:MaxImpressionsPerWeek>
-              <e477:CTR>ValueHere</e477:CTR>
-              <e477:MinTotalCostPerWeek>ValueHere</e477:MinTotalCostPerWeek>
-              <e477:MaxTotalCostPerWeek>ValueHere</e477:MaxTotalCostPerWeek>
-              <e477:Currency>ValueHere</e477:Currency>
-              <e477:EstimatedAdPosition>ValueHere</e477:EstimatedAdPosition>
-            </e477:EstimatedPositionAndTraffic>
-          </e477:EstimatedPositions>
-        </e477:KeywordEstimatedPosition>
+      <KeywordEstimatedPositions xmlns:e71="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e71:KeywordEstimatedPosition>
+          <e71:Keyword d4p1:nil="false">ValueHere</e71:Keyword>
+          <e71:EstimatedPositions d4p1:nil="false">
+            <e71:EstimatedPositionAndTraffic>
+              <e71:MatchType>ValueHere</e71:MatchType>
+              <e71:MinClicksPerWeek>ValueHere</e71:MinClicksPerWeek>
+              <e71:MaxClicksPerWeek>ValueHere</e71:MaxClicksPerWeek>
+              <e71:AverageCPC>ValueHere</e71:AverageCPC>
+              <e71:MinImpressionsPerWeek>ValueHere</e71:MinImpressionsPerWeek>
+              <e71:MaxImpressionsPerWeek>ValueHere</e71:MaxImpressionsPerWeek>
+              <e71:CTR>ValueHere</e71:CTR>
+              <e71:MinTotalCostPerWeek>ValueHere</e71:MinTotalCostPerWeek>
+              <e71:MaxTotalCostPerWeek>ValueHere</e71:MaxTotalCostPerWeek>
+              <e71:Currency>ValueHere</e71:Currency>
+              <e71:EstimatedAdPosition>ValueHere</e71:EstimatedAdPosition>
+            </e71:EstimatedPositionAndTraffic>
+          </e71:EstimatedPositions>
+        </e71:KeywordEstimatedPosition>
       </KeywordEstimatedPositions>
     </GetEstimatedPositionByKeywordsResponse>
   </s:Body>
@@ -114,6 +114,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetEstimatedPositionByKeywordsResponse> GetEstimatedPositionByKeywordsAsync(
 	IList<string> keywords,

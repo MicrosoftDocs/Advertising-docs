@@ -55,18 +55,18 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SendUserInvitationRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <UserInvitation xmlns:e441="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e441:Id>ValueHere</e441:Id>
-        <e441:FirstName i:nil="false">ValueHere</e441:FirstName>
-        <e441:LastName i:nil="false">ValueHere</e441:LastName>
-        <e441:Email i:nil="false">ValueHere</e441:Email>
-        <e441:CustomerId>ValueHere</e441:CustomerId>
-        <e441:Role>ValueHere</e441:Role>
-        <e441:AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <UserInvitation xmlns:e35="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e35:Id>ValueHere</e35:Id>
+        <e35:FirstName i:nil="false">ValueHere</e35:FirstName>
+        <e35:LastName i:nil="false">ValueHere</e35:LastName>
+        <e35:Email i:nil="false">ValueHere</e35:Email>
+        <e35:CustomerId>ValueHere</e35:CustomerId>
+        <e35:Role>ValueHere</e35:Role>
+        <e35:AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <a1:long>ValueHere</a1:long>
-        </e441:AccountIds>
-        <e441:ExpirationDate>ValueHere</e441:ExpirationDate>
-        <e441:Lcid>ValueHere</e441:Lcid>
+        </e35:AccountIds>
+        <e35:ExpirationDate>ValueHere</e35:ExpirationDate>
+        <e35:Lcid>ValueHere</e35:Lcid>
       </UserInvitation>
     </SendUserInvitationRequest>
   </s:Body>
@@ -90,6 +90,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<SendUserInvitationResponse> SendUserInvitationAsync(
 	UserInvitation userInvitation)

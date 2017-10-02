@@ -69,14 +69,14 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <FindAccountsResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <AccountsInfo xmlns:e411="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e411:AccountInfo>
-          <e411:Id>ValueHere</e411:Id>
-          <e411:Name d4p1:nil="false">ValueHere</e411:Name>
-          <e411:Number d4p1:nil="false">ValueHere</e411:Number>
-          <e411:AccountLifeCycleStatus>ValueHere</e411:AccountLifeCycleStatus>
-          <e411:PauseReason d4p1:nil="false">ValueHere</e411:PauseReason>
-        </e411:AccountInfo>
+      <AccountsInfo xmlns:e5="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e5:AccountInfo>
+          <e5:Id>ValueHere</e5:Id>
+          <e5:Name d4p1:nil="false">ValueHere</e5:Name>
+          <e5:Number d4p1:nil="false">ValueHere</e5:Number>
+          <e5:AccountLifeCycleStatus>ValueHere</e5:AccountLifeCycleStatus>
+          <e5:PauseReason d4p1:nil="false">ValueHere</e5:PauseReason>
+        </e5:AccountInfo>
       </AccountsInfo>
     </FindAccountsResponse>
   </s:Body>
@@ -84,6 +84,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<FindAccountsResponse> FindAccountsAsync(
 	long customerId,

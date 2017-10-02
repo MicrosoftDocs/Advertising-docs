@@ -65,26 +65,26 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBudgetOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Opportunities xmlns:e470="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e470:BudgetOpportunity>
-          <e470:BudgetPoints d4p1:nil="false">
-            <e470:BudgetPoint>
-              <e470:BudgetAmount>ValueHere</e470:BudgetAmount>
-              <e470:BudgetPointType>ValueHere</e470:BudgetPointType>
-              <e470:EstimatedWeeklyClicks>ValueHere</e470:EstimatedWeeklyClicks>
-              <e470:EstimatedWeeklyCost>ValueHere</e470:EstimatedWeeklyCost>
-              <e470:EstimatedWeeklyImpressions>ValueHere</e470:EstimatedWeeklyImpressions>
-            </e470:BudgetPoint>
-          </e470:BudgetPoints>
-          <e470:BudgetType>ValueHere</e470:BudgetType>
-          <e470:CampaignId>ValueHere</e470:CampaignId>
-          <e470:CurrentBudget>ValueHere</e470:CurrentBudget>
-          <e470:IncreaseInClicks>ValueHere</e470:IncreaseInClicks>
-          <e470:IncreaseInImpressions>ValueHere</e470:IncreaseInImpressions>
-          <e470:PercentageIncreaseInClicks>ValueHere</e470:PercentageIncreaseInClicks>
-          <e470:PercentageIncreaseInImpressions>ValueHere</e470:PercentageIncreaseInImpressions>
-          <e470:RecommendedBudget>ValueHere</e470:RecommendedBudget>
-        </e470:BudgetOpportunity>
+      <Opportunities xmlns:e64="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e64:BudgetOpportunity>
+          <e64:BudgetPoints d4p1:nil="false">
+            <e64:BudgetPoint>
+              <e64:BudgetAmount>ValueHere</e64:BudgetAmount>
+              <e64:BudgetPointType>ValueHere</e64:BudgetPointType>
+              <e64:EstimatedWeeklyClicks>ValueHere</e64:EstimatedWeeklyClicks>
+              <e64:EstimatedWeeklyCost>ValueHere</e64:EstimatedWeeklyCost>
+              <e64:EstimatedWeeklyImpressions>ValueHere</e64:EstimatedWeeklyImpressions>
+            </e64:BudgetPoint>
+          </e64:BudgetPoints>
+          <e64:BudgetType>ValueHere</e64:BudgetType>
+          <e64:CampaignId>ValueHere</e64:CampaignId>
+          <e64:CurrentBudget>ValueHere</e64:CurrentBudget>
+          <e64:IncreaseInClicks>ValueHere</e64:IncreaseInClicks>
+          <e64:IncreaseInImpressions>ValueHere</e64:IncreaseInImpressions>
+          <e64:PercentageIncreaseInClicks>ValueHere</e64:PercentageIncreaseInClicks>
+          <e64:PercentageIncreaseInImpressions>ValueHere</e64:PercentageIncreaseInImpressions>
+          <e64:RecommendedBudget>ValueHere</e64:RecommendedBudget>
+        </e64:BudgetOpportunity>
       </Opportunities>
     </GetBudgetOpportunitiesResponse>
   </s:Body>
@@ -92,6 +92,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetBudgetOpportunitiesResponse> GetBudgetOpportunitiesAsync(
 	long campaignId)

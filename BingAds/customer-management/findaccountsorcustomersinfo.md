@@ -67,16 +67,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <FindAccountsOrCustomersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <AccountInfoWithCustomerData xmlns:e412="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e412:AccountInfoWithCustomerData>
-          <e412:CustomerId d4p1:nil="false">ValueHere</e412:CustomerId>
-          <e412:CustomerName d4p1:nil="false">ValueHere</e412:CustomerName>
-          <e412:AccountId>ValueHere</e412:AccountId>
-          <e412:AccountName d4p1:nil="false">ValueHere</e412:AccountName>
-          <e412:AccountNumber d4p1:nil="false">ValueHere</e412:AccountNumber>
-          <e412:AccountLifeCycleStatus>ValueHere</e412:AccountLifeCycleStatus>
-          <e412:PauseReason d4p1:nil="false">ValueHere</e412:PauseReason>
-        </e412:AccountInfoWithCustomerData>
+      <AccountInfoWithCustomerData xmlns:e6="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e6:AccountInfoWithCustomerData>
+          <e6:CustomerId d4p1:nil="false">ValueHere</e6:CustomerId>
+          <e6:CustomerName d4p1:nil="false">ValueHere</e6:CustomerName>
+          <e6:AccountId>ValueHere</e6:AccountId>
+          <e6:AccountName d4p1:nil="false">ValueHere</e6:AccountName>
+          <e6:AccountNumber d4p1:nil="false">ValueHere</e6:AccountNumber>
+          <e6:AccountLifeCycleStatus>ValueHere</e6:AccountLifeCycleStatus>
+          <e6:PauseReason d4p1:nil="false">ValueHere</e6:PauseReason>
+        </e6:AccountInfoWithCustomerData>
       </AccountInfoWithCustomerData>
     </FindAccountsOrCustomersInfoResponse>
   </s:Body>
@@ -84,6 +84,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<FindAccountsOrCustomersInfoResponse> FindAccountsOrCustomersInfoAsync(
 	string filter,

@@ -81,17 +81,17 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordLocationsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordLocationResult xmlns:e495="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e495:KeywordLocationResult>
-          <e495:Keyword d4p1:nil="false">ValueHere</e495:Keyword>
-          <e495:KeywordLocations d4p1:nil="false">
-            <e495:KeywordLocation>
-              <e495:Device d4p1:nil="false">ValueHere</e495:Device>
-              <e495:Location d4p1:nil="false">ValueHere</e495:Location>
-              <e495:Percentage>ValueHere</e495:Percentage>
-            </e495:KeywordLocation>
-          </e495:KeywordLocations>
-        </e495:KeywordLocationResult>
+      <KeywordLocationResult xmlns:e89="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e89:KeywordLocationResult>
+          <e89:Keyword d4p1:nil="false">ValueHere</e89:Keyword>
+          <e89:KeywordLocations d4p1:nil="false">
+            <e89:KeywordLocation>
+              <e89:Device d4p1:nil="false">ValueHere</e89:Device>
+              <e89:Location d4p1:nil="false">ValueHere</e89:Location>
+              <e89:Percentage>ValueHere</e89:Percentage>
+            </e89:KeywordLocation>
+          </e89:KeywordLocations>
+        </e89:KeywordLocationResult>
       </KeywordLocationResult>
     </GetKeywordLocationsResponse>
   </s:Body>
@@ -99,6 +99,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetKeywordLocationsResponse> GetKeywordLocationsAsync(
 	IList<string> keywords,

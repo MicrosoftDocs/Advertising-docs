@@ -69,38 +69,38 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Opportunities xmlns:e496="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e496:KeywordOpportunity d4p1:type="-- derived type specified here with the appropriate prefix --">
-          <e496:AdGroupId>ValueHere</e496:AdGroupId>
-          <e496:AdGroupName d4p1:nil="false">ValueHere</e496:AdGroupName>
-          <e496:CampaignId>ValueHere</e496:CampaignId>
-          <e496:CampaignName d4p1:nil="false">ValueHere</e496:CampaignName>
-          <e496:Competition>ValueHere</e496:Competition>
-          <e496:EstimatedIncreaseInClicks>ValueHere</e496:EstimatedIncreaseInClicks>
-          <e496:EstimatedIncreaseInCost>ValueHere</e496:EstimatedIncreaseInCost>
-          <e496:EstimatedIncreaseInImpressions>ValueHere</e496:EstimatedIncreaseInImpressions>
-          <e496:MatchType>ValueHere</e496:MatchType>
-          <e496:MonthlySearches>ValueHere</e496:MonthlySearches>
-          <e496:SuggestedBid>ValueHere</e496:SuggestedBid>
-          <e496:SuggestedKeyword d4p1:nil="false">ValueHere</e496:SuggestedKeyword>
+      <Opportunities xmlns:e90="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e90:KeywordOpportunity d4p1:type="-- derived type specified here with the appropriate prefix --">
+          <e90:AdGroupId>ValueHere</e90:AdGroupId>
+          <e90:AdGroupName d4p1:nil="false">ValueHere</e90:AdGroupName>
+          <e90:CampaignId>ValueHere</e90:CampaignId>
+          <e90:CampaignName d4p1:nil="false">ValueHere</e90:CampaignName>
+          <e90:Competition>ValueHere</e90:Competition>
+          <e90:EstimatedIncreaseInClicks>ValueHere</e90:EstimatedIncreaseInClicks>
+          <e90:EstimatedIncreaseInCost>ValueHere</e90:EstimatedIncreaseInCost>
+          <e90:EstimatedIncreaseInImpressions>ValueHere</e90:EstimatedIncreaseInImpressions>
+          <e90:MatchType>ValueHere</e90:MatchType>
+          <e90:MonthlySearches>ValueHere</e90:MonthlySearches>
+          <e90:SuggestedBid>ValueHere</e90:SuggestedBid>
+          <e90:SuggestedKeyword d4p1:nil="false">ValueHere</e90:SuggestedKeyword>
           <!--These fields are applicable if the derived type attribute is set to BroadMatchKeywordOpportunity-->
-          <e496:AverageCPC>ValueHere</e496:AverageCPC>
-          <e496:AverageCTR>ValueHere</e496:AverageCTR>
-          <e496:ClickShare>ValueHere</e496:ClickShare>
-          <e496:ImpressionShare>ValueHere</e496:ImpressionShare>
-          <e496:ReferenceKeywordBid>ValueHere</e496:ReferenceKeywordBid>
-          <e496:ReferenceKeywordId>ValueHere</e496:ReferenceKeywordId>
-          <e496:ReferenceKeywordMatchType>ValueHere</e496:ReferenceKeywordMatchType>
-          <e496:SearchQueryKPIs d4p1:nil="false">
-            <e496:BroadMatchSearchQueryKPI>
-              <e496:AverageCTR>ValueHere</e496:AverageCTR>
-              <e496:Clicks>ValueHere</e496:Clicks>
-              <e496:Impressions>ValueHere</e496:Impressions>
-              <e496:SRPV>ValueHere</e496:SRPV>
-              <e496:SearchQuery d4p1:nil="false">ValueHere</e496:SearchQuery>
-            </e496:BroadMatchSearchQueryKPI>
-          </e496:SearchQueryKPIs>
-        </e496:KeywordOpportunity>
+          <e90:AverageCPC>ValueHere</e90:AverageCPC>
+          <e90:AverageCTR>ValueHere</e90:AverageCTR>
+          <e90:ClickShare>ValueHere</e90:ClickShare>
+          <e90:ImpressionShare>ValueHere</e90:ImpressionShare>
+          <e90:ReferenceKeywordBid>ValueHere</e90:ReferenceKeywordBid>
+          <e90:ReferenceKeywordId>ValueHere</e90:ReferenceKeywordId>
+          <e90:ReferenceKeywordMatchType>ValueHere</e90:ReferenceKeywordMatchType>
+          <e90:SearchQueryKPIs d4p1:nil="false">
+            <e90:BroadMatchSearchQueryKPI>
+              <e90:AverageCTR>ValueHere</e90:AverageCTR>
+              <e90:Clicks>ValueHere</e90:Clicks>
+              <e90:Impressions>ValueHere</e90:Impressions>
+              <e90:SRPV>ValueHere</e90:SRPV>
+              <e90:SearchQuery d4p1:nil="false">ValueHere</e90:SearchQuery>
+            </e90:BroadMatchSearchQueryKPI>
+          </e90:SearchQueryKPIs>
+        </e90:KeywordOpportunity>
       </Opportunities>
     </GetKeywordOpportunitiesResponse>
   </s:Body>
@@ -108,6 +108,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetKeywordOpportunitiesResponse> GetKeywordOpportunitiesAsync(
 	long adGroupId,

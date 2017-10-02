@@ -73,16 +73,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Result xmlns:e482="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e482:KeywordCategoryResult>
-          <e482:Keyword d4p1:nil="false">ValueHere</e482:Keyword>
-          <e482:KeywordCategories d4p1:nil="false">
-            <e482:KeywordCategory>
-              <e482:Category d4p1:nil="false">ValueHere</e482:Category>
-              <e482:ConfidenceScore>ValueHere</e482:ConfidenceScore>
-            </e482:KeywordCategory>
-          </e482:KeywordCategories>
-        </e482:KeywordCategoryResult>
+      <Result xmlns:e76="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e76:KeywordCategoryResult>
+          <e76:Keyword d4p1:nil="false">ValueHere</e76:Keyword>
+          <e76:KeywordCategories d4p1:nil="false">
+            <e76:KeywordCategory>
+              <e76:Category d4p1:nil="false">ValueHere</e76:Category>
+              <e76:ConfidenceScore>ValueHere</e76:ConfidenceScore>
+            </e76:KeywordCategory>
+          </e76:KeywordCategories>
+        </e76:KeywordCategoryResult>
       </Result>
     </GetKeywordCategoriesResponse>
   </s:Body>
@@ -90,6 +90,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetKeywordCategoriesResponse> GetKeywordCategoriesAsync(
 	IList<string> keywords,

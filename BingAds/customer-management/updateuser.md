@@ -47,50 +47,50 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <UpdateUserRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <User xmlns:e456="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e456:ContactInfo i:nil="false">
-          <e456:Address i:nil="false">
-            <e456:City i:nil="false">ValueHere</e456:City>
-            <e456:CountryCode i:nil="false">ValueHere</e456:CountryCode>
-            <e456:Id i:nil="false">ValueHere</e456:Id>
-            <e456:Line1 i:nil="false">ValueHere</e456:Line1>
-            <e456:Line2 i:nil="false">ValueHere</e456:Line2>
-            <e456:Line3 i:nil="false">ValueHere</e456:Line3>
-            <e456:Line4 i:nil="false">ValueHere</e456:Line4>
-            <e456:PostalCode i:nil="false">ValueHere</e456:PostalCode>
-            <e456:StateOrProvince i:nil="false">ValueHere</e456:StateOrProvince>
-            <e456:TimeStamp i:nil="false">ValueHere</e456:TimeStamp>
-          </e456:Address>
-          <e456:ContactByPhone i:nil="false">ValueHere</e456:ContactByPhone>
-          <e456:ContactByPostalMail i:nil="false">ValueHere</e456:ContactByPostalMail>
-          <e456:Email i:nil="false">ValueHere</e456:Email>
-          <e456:EmailFormat i:nil="false">ValueHere</e456:EmailFormat>
-          <e456:Fax i:nil="false">ValueHere</e456:Fax>
-          <e456:HomePhone i:nil="false">ValueHere</e456:HomePhone>
-          <e456:Id i:nil="false">ValueHere</e456:Id>
-          <e456:Mobile i:nil="false">ValueHere</e456:Mobile>
-          <e456:Phone1 i:nil="false">ValueHere</e456:Phone1>
-          <e456:Phone2 i:nil="false">ValueHere</e456:Phone2>
-        </e456:ContactInfo>
-        <e456:CustomerAppScope i:nil="false">ValueHere</e456:CustomerAppScope>
-        <e456:CustomerId i:nil="false">ValueHere</e456:CustomerId>
-        <e456:Id i:nil="false">ValueHere</e456:Id>
-        <e456:JobTitle i:nil="false">ValueHere</e456:JobTitle>
-        <e456:LastModifiedByUserId i:nil="false">ValueHere</e456:LastModifiedByUserId>
-        <e456:LastModifiedTime i:nil="false">ValueHere</e456:LastModifiedTime>
-        <e456:Lcid i:nil="false">ValueHere</e456:Lcid>
-        <e456:Name i:nil="false">
-          <e456:FirstName i:nil="false">ValueHere</e456:FirstName>
-          <e456:LastName i:nil="false">ValueHere</e456:LastName>
-          <e456:MiddleInitial i:nil="false">ValueHere</e456:MiddleInitial>
-        </e456:Name>
-        <e456:Password i:nil="false">ValueHere</e456:Password>
-        <e456:SecretAnswer i:nil="false">ValueHere</e456:SecretAnswer>
-        <e456:SecretQuestion>ValueHere</e456:SecretQuestion>
-        <e456:UserLifeCycleStatus i:nil="false">ValueHere</e456:UserLifeCycleStatus>
-        <e456:TimeStamp i:nil="false">ValueHere</e456:TimeStamp>
-        <e456:UserName i:nil="false">ValueHere</e456:UserName>
-        <e456:IsMigratedToMicrosoftAccount>ValueHere</e456:IsMigratedToMicrosoftAccount>
+      <User xmlns:e50="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e50:ContactInfo i:nil="false">
+          <e50:Address i:nil="false">
+            <e50:City i:nil="false">ValueHere</e50:City>
+            <e50:CountryCode i:nil="false">ValueHere</e50:CountryCode>
+            <e50:Id i:nil="false">ValueHere</e50:Id>
+            <e50:Line1 i:nil="false">ValueHere</e50:Line1>
+            <e50:Line2 i:nil="false">ValueHere</e50:Line2>
+            <e50:Line3 i:nil="false">ValueHere</e50:Line3>
+            <e50:Line4 i:nil="false">ValueHere</e50:Line4>
+            <e50:PostalCode i:nil="false">ValueHere</e50:PostalCode>
+            <e50:StateOrProvince i:nil="false">ValueHere</e50:StateOrProvince>
+            <e50:TimeStamp i:nil="false">ValueHere</e50:TimeStamp>
+          </e50:Address>
+          <e50:ContactByPhone i:nil="false">ValueHere</e50:ContactByPhone>
+          <e50:ContactByPostalMail i:nil="false">ValueHere</e50:ContactByPostalMail>
+          <e50:Email i:nil="false">ValueHere</e50:Email>
+          <e50:EmailFormat i:nil="false">ValueHere</e50:EmailFormat>
+          <e50:Fax i:nil="false">ValueHere</e50:Fax>
+          <e50:HomePhone i:nil="false">ValueHere</e50:HomePhone>
+          <e50:Id i:nil="false">ValueHere</e50:Id>
+          <e50:Mobile i:nil="false">ValueHere</e50:Mobile>
+          <e50:Phone1 i:nil="false">ValueHere</e50:Phone1>
+          <e50:Phone2 i:nil="false">ValueHere</e50:Phone2>
+        </e50:ContactInfo>
+        <e50:CustomerAppScope i:nil="false">ValueHere</e50:CustomerAppScope>
+        <e50:CustomerId i:nil="false">ValueHere</e50:CustomerId>
+        <e50:Id i:nil="false">ValueHere</e50:Id>
+        <e50:JobTitle i:nil="false">ValueHere</e50:JobTitle>
+        <e50:LastModifiedByUserId i:nil="false">ValueHere</e50:LastModifiedByUserId>
+        <e50:LastModifiedTime i:nil="false">ValueHere</e50:LastModifiedTime>
+        <e50:Lcid i:nil="false">ValueHere</e50:Lcid>
+        <e50:Name i:nil="false">
+          <e50:FirstName i:nil="false">ValueHere</e50:FirstName>
+          <e50:LastName i:nil="false">ValueHere</e50:LastName>
+          <e50:MiddleInitial i:nil="false">ValueHere</e50:MiddleInitial>
+        </e50:Name>
+        <e50:Password i:nil="false">ValueHere</e50:Password>
+        <e50:SecretAnswer i:nil="false">ValueHere</e50:SecretAnswer>
+        <e50:SecretQuestion>ValueHere</e50:SecretQuestion>
+        <e50:UserLifeCycleStatus i:nil="false">ValueHere</e50:UserLifeCycleStatus>
+        <e50:TimeStamp i:nil="false">ValueHere</e50:TimeStamp>
+        <e50:UserName i:nil="false">ValueHere</e50:UserName>
+        <e50:IsMigratedToMicrosoftAccount>ValueHere</e50:IsMigratedToMicrosoftAccount>
       </User>
     </UpdateUserRequest>
   </s:Body>
@@ -114,6 +114,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<UpdateUserResponse> UpdateUserAsync(
 	User user)

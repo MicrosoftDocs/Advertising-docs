@@ -78,11 +78,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e668="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e668:KeyValuePairOfstringstring>
-              <e668:key d4p1:nil="false">ValueHere</e668:key>
-              <e668:value d4p1:nil="false">ValueHere</e668:value>
-            </e668:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e262="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e262:KeyValuePairOfstringstring>
+              <e262:key d4p1:nil="false">ValueHere</e262:key>
+              <e262:value d4p1:nil="false">ValueHere</e262:value>
+            </e262:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -101,6 +101,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<SetSharedEntityAssociationsResponse> SetSharedEntityAssociationsAsync(
 	IList<SharedEntityAssociation> associations)

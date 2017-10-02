@@ -59,7 +59,7 @@ The [AdvertiserAccount](advertiseraccount.md) object derives from the [Account](
 |<a name="accountfinancialstatus"></a>AccountFinancialStatus|The financial status of the account. For example, the status can indicate whether the account is in good standing or is past due.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[AccountFinancialStatus](accountfinancialstatus.md)|
 |<a name="id"></a>Id|The system generated identifier of the account.<br /><br />This is the identifier that you set the *AccountId* element and *CustomerAccountId* SOAP header to in many of the campaign requests.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**long**|
 |<a name="language"></a>Language|The language used to render the invoice (if you use an invoice as your payment method).<br /><br />If you specify a language value when signing up a customer, the value is ignored. The signup process instead gets the language value from the *Lcid* element of the [User](../customer-management/user.md). If the *Lcid* element is set to a value such as *FrenchCanada*, the *Language* element is set to *French*.<br/><br/>**Add:** Read-only<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|[LanguageType](languagetype.md)|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|For a list of valid key and value strings for this element, see [Account ForwardCompatibilityMap](#ForwardCompatibilityMap) in the section below.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove a key and value pair, set the key and then set the value to an empty string (*""*).|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version. For a list of valid key and value strings for this element, see [Remarks](#remarks) below.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove a key and value pair, set the key and then set the value to an empty string (*""*).|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="lastmodifiedbyuserid"></a>LastModifiedByUserId|The identifier of the last user to update the account?s information.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**long**|
 |<a name="lastmodifiedtime"></a>LastModifiedTime|The date and time that the account was last updated. The value is in Coordinated Universal Time (UTC).<br /><br />**Note:** The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**dateTime**|
 |<a name="name"></a>Name|The name of the account. The name can contain a maximum of 100 characters and must be unique within the customer.<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
@@ -72,6 +72,43 @@ The [AdvertiserAccount](advertiseraccount.md) object derives from the [Account](
 |<a name="timestamp"></a>TimeStamp|The time-stamp value that the system uses internally to reconcile updates when you call the [UpdateAccount](../customer-management/updateaccount.md) and [DeleteAccount](../customer-management/deleteaccount.md) operations.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**base64Binary**|
 |<a name="timezone"></a>TimeZone|The default time-zone value to use for campaigns in this account.<br /><br />If you do not specify a value when the account is added, the time zone will be set to *PacificTimeUSCanadaTijuana* by default.<br /><br />**Note:** This time-zone value is used by the Bing Ads web application to display the account time zone preference, and does not provide a default time-zone value for campaigns that are created by using the Campaign Management API.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|[TimeZoneType](timezonetype.md)|
 |<a name="pausereason"></a>PauseReason|A flag value that indicates who paused the account. The following are the possible values:<br /><br />1 ? The user paused the account.<br /><br />2 ? The billing service paused the account.<br /><br />4 ? The user and billing service paused the account.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**unsignedByte**|
+
+## <a name="remarks"></a>Remarks
+The following is the list of keys that are available for the *ForwardCompatibilityMap* element of an *Account*.
+
+-   [AutoTag](#autotag)
+
+-   [TrackingUrlTemplate](#trackingurltemplate)
+
+### <a name="autotag"></a>AutoTag
+Bing Ads can automatically add UTM tags to your destination URL so you can use your website analytics tool, for example Google Analytics, to track how people got to your website. Auto-tags are applied for example to expanded text ads, keywords, Bing Shopping Campaigns, and Sitelink Extensions. For details about auto-tagging, please see the Bing Ads help article [How do I add UTM tags to my landing page URL?](http://help.bingads.microsoft.com/#apex/3/en/56762/-1).
+
+The  *AutoTag* key and value pair is an account level setting that determines whether to append or replace the supported UTM tracking codes. Tracking codes are inserted dynamically when each ad is shown, and the URL that you set up and stored in Bing Ads is not updated. 
+
+The possible values for the *AutoTag* key are as follows. If the *AutoTag* key is not specified, the default value is 0.
+
+* 0 - Bing Ads will not append any UTM tracking codes to your ad or keyword final URL.
+
+* 1 - Bing Ads will automatically append the supported UTM tracking codes, and preserve any existing UTM tracking codes that you added to your ad or keyword's final URL.
+
+* 2 - Bing Ads will automatically append the supported UTM tracking codes, and replace any of the existing and supported UTM tracking codes that you added to your ad or keyword's final URL.
+
+### <a name="trackingurltemplate"></a>TrackingUrlTemplate
+The tracking template to use as a default for all URLs in your account. The value of the *TrackingUrlTemplate* key can be set to any valid string as described below.
+
+The following validation rules apply to tracking templates.
+
+-   Tracking templates defined for lower level entities e.g. keyword override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](http://go.microsoft.com/fwlink/?LinkID=627130).
+
+-   The length of the tracking template is limited to 2,048 characters.
+
+    **Note:** The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
+
+-   The tracking template must be a well-formed URL beginning with one of the following: *http://*, *https://*, *{lpurl}*, or *{unescapedlpurl}*.
+
+-   You must include at least one of the following landing page URL parameters: *{lpurl}*, *{lpurl+2}*, *{lpurl+3}*, *{unescapedlpurl}*, *{escapedlpurl}*. Additionally, you can use any dynamic parameter supported by Bing Ads. For a list of supported parameters, see the *Available parameters* sections within the Bing Ads help article [Set up a tracking template](https://help.bingads.microsoft.com/#apex/3/en/56772/-1).
+
+-   Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the final URL will include the key and value placeholders of your custom parameters without substitution. For example if your tracking template is  for example *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither {_season} or {_promocode}  are defined at the campaign, ad group, keyword, or ad level, then the final URL will be the same.
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  

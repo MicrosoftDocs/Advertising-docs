@@ -92,11 +92,11 @@ The following template shows the order of the [body](#response-body) and [header
           <BudgetType d4p1:nil="false">ValueHere</BudgetType>
           <DailyBudget d4p1:nil="false">ValueHere</DailyBudget>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e632="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e632:KeyValuePairOfstringstring>
-              <e632:key d4p1:nil="false">ValueHere</e632:key>
-              <e632:value d4p1:nil="false">ValueHere</e632:value>
-            </e632:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e226="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e226:KeyValuePairOfstringstring>
+              <e226:key d4p1:nil="false">ValueHere</e226:key>
+              <e226:value d4p1:nil="false">ValueHere</e226:value>
+            </e226:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
@@ -104,13 +104,13 @@ The following template shows the order of the [body](#response-body) and [header
           <Status d4p1:nil="false">ValueHere</Status>
           <TimeZone d4p1:nil="false">ValueHere</TimeZone>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e633="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e633:Parameters d4p1:nil="false">
-              <e633:CustomParameter>
-                <e633:Key d4p1:nil="false">ValueHere</e633:Key>
-                <e633:Value d4p1:nil="false">ValueHere</e633:Value>
-              </e633:CustomParameter>
-            </e633:Parameters>
+          <UrlCustomParameters xmlns:e227="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e227:Parameters d4p1:nil="false">
+              <e227:CustomParameter>
+                <e227:Key d4p1:nil="false">ValueHere</e227:Key>
+                <e227:Value d4p1:nil="false">ValueHere</e227:Value>
+              </e227:CustomParameter>
+            </e227:Parameters>
           </UrlCustomParameters>
           <CampaignType d4p1:nil="false">ValueHere</CampaignType>
           <Settings d4p1:nil="false">
@@ -138,6 +138,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetCampaignsByAccountIdResponse> GetCampaignsByAccountIdAsync(
 	long accountId,

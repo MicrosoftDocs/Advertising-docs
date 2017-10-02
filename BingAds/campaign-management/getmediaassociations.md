@@ -88,11 +88,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e655="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e655:KeyValuePairOfstringstring>
-              <e655:key d4p1:nil="false">ValueHere</e655:key>
-              <e655:value d4p1:nil="false">ValueHere</e655:value>
-            </e655:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e249="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e249:KeyValuePairOfstringstring>
+              <e249:key d4p1:nil="false">ValueHere</e249:key>
+              <e249:value d4p1:nil="false">ValueHere</e249:value>
+            </e249:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -111,6 +111,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetMediaAssociationsResponse> GetMediaAssociationsAsync(
 	MediaEnabledEntityFilter mediaEnabledEntities,

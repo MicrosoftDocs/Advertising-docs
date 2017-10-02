@@ -6,7 +6,7 @@ author: eric-urban
 ms.author: eur
 ---
 # KeyValuePairOfstringstring Data Object
-Reserved.
+The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
 
 ## Syntax
 ```xml
@@ -31,8 +31,8 @@ Reserved.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="key"></a>key|Reserved.|**string**|
-|<a name="value"></a>value|Reserved.|**string**|
+|<a name="key"></a>key|The name of the setting.|**string**|
+|<a name="value"></a>value|The value of the setting.|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

@@ -32,14 +32,14 @@ Defines the possible roles of a user.
 |Value|Description|
 |-----------|---------------|
 |<a name="advertisercampaignmanager"></a>AdvertiserCampaignManager|This role has permissions to view selected accounts and add, edit, or delete campaigns within the selected accounts. The Advertiser Campaign Manager can view payment methods, but cannot manage any billing and payment tasks.|
-|<a name="clientadmin"></a>ClientAdmin|Reserved.|
-|<a name="clientmanager"></a>ClientManager|Reserved.|
-|<a name="clientviewer"></a>ClientViewer|Reserved.|
-|<a name="publisheraccountmanager"></a>PublisherAccountManager|Reserved.|
-|<a name="publisheradmin"></a>PublisherAdmin|Reserved.|
-|<a name="publisheradviewer"></a>PublisherAdViewer|Reserved.|
-|<a name="publisherlistmanager"></a>PublisherListManager|Reserved.|
-|<a name="publisherreportuser"></a>PublisherReportUser|Reserved.|
+|<a name="clientadmin"></a>ClientAdmin|Reserved for internal use.|
+|<a name="clientmanager"></a>ClientManager|Reserved for internal use.|
+|<a name="clientviewer"></a>ClientViewer|Reserved for internal use.|
+|<a name="publisheraccountmanager"></a>PublisherAccountManager|Reserved for internal use.|
+|<a name="publisheradmin"></a>PublisherAdmin|Reserved for internal use.|
+|<a name="publisheradviewer"></a>PublisherAdViewer|Reserved for internal use.|
+|<a name="publisherlistmanager"></a>PublisherListManager|Reserved for internal use.|
+|<a name="publisherreportuser"></a>PublisherReportUser|Reserved for internal use.|
 |<a name="standarduser"></a>StandardUser|This role has permissions to manage campaigns and perform some billing activities on specific accounts. This role cannot add, edit, or delete payment methods or other users; create or delete accounts; or link to or unlink from clients.|
 |<a name="superadmin"></a>SuperAdmin|This role has full permissions for all accounts. A Super Admin can manage everything related to billing and payments, account details, and other users (including other Super Admins). The Super Admin can specify which accounts other users have access to. When signing up as a new customer, the first user is the Super Admin.|
 

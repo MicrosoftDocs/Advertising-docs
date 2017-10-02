@@ -28,7 +28,7 @@ The *GetBulkUploadStatusResponse* object defines the [body](#response-body) and 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="errors"></a>Errors|An array of *OperationError* objects corresponding to errors encountered during the system processing of the bulk file after your HTTP POST upload completed.<br /><br />For example, an *OperationError* would include the *BulkServiceFormatVersionNotSupported* error code if the uploaded file contains one or more bulk records that are not supported with the corresponding file format version.|[OperationError](operationerror.md) array|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility. This element can be used to avoid otherwise breaking changes when new elements are added in future releases.<br /><br />**Note:** Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *GetBulkUploadStatusResponse* message object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />**Note:** Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *GetBulkUploadStatusResponse* message object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="percentcomplete"></a>PercentComplete|The progress completion percentage for system processing of the uploaded bulk file. The value range is between 0 and 100.<br /><br />**Note:** You should also compare the upload status. If the upload fails, the percent complete will reset to zero (0).|**int**|
 |<a name="requeststatus"></a>RequestStatus|The status of the upload. The following are the possible returned status values.<br /><br />Completed - The upload file was accepted and processed successfully without errors.<br /><br />CompletedWithErrors - The upload completed with one or more errors. While the overall upload was successful, one or more add or update errors could have occurred. As a best practice you should request error information via the *ResponseMode* element when calling [GetBulkUploadUrl](../bulk/getbulkuploadurl.md) and check the *ResultFileUrl* for any errors.<br /><br />Failed - The entire upload failed due to an unexpected error. You may submit a new upload with fewer entities or try again to submit the same upload later.<br /><br />FileUploaded - The upload request has been received and is in the queue for processing.<br /><br />InProgress - The upload file has been accepted and the upload is in progress.<br /><br />PendingFileUpload - The upload file has not been received for the corresponding *RequestId*.<br/><br/>UploadFileRowCountExceeded - The limit of bulk records in the upload file has been exceeded. For more information about limits and upload best practices, see [Bulk Upload](~/guides/bulk-download-upload.md#bulkupload).<br/><br/>UploadFileFormatNotSupported - The [Format Version](../bulk/format-version.md) *Name* field specified in the upload is not supported for this version of the Bulk API.|**string**|
 |<a name="resultfileurl"></a>ResultFileUrl|The URL of the file that contains the requested results, for example upload error information.<br /><br />**Note:** The URL must be used within five minutes of the time that the *GetBulkUploadStatus* operation returns the *Completed* status response string. If you do not start the download within this period of time, you will need to call *GetBulkUploadStatus* again to get a new URL.|**string**|
@@ -77,11 +77,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Message d4p1:nil="false">ValueHere</Message>
         </OperationError>
       </Errors>
-      <ForwardCompatibilityMap xmlns:e506="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e506:KeyValuePairOfstringstring>
-          <e506:key d4p1:nil="false">ValueHere</e506:key>
-          <e506:value d4p1:nil="false">ValueHere</e506:value>
-        </e506:KeyValuePairOfstringstring>
+      <ForwardCompatibilityMap xmlns:e100="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e100:KeyValuePairOfstringstring>
+          <e100:key d4p1:nil="false">ValueHere</e100:key>
+          <e100:value d4p1:nil="false">ValueHere</e100:value>
+        </e100:KeyValuePairOfstringstring>
       </ForwardCompatibilityMap>
       <PercentComplete>ValueHere</PercentComplete>
       <RequestStatus d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</RequestStatus>
@@ -92,6 +92,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetBulkUploadStatusResponse> GetBulkUploadStatusAsync(
 	string requestId)

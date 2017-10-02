@@ -82,11 +82,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e547="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e547:KeyValuePairOfstringstring>
-              <e547:key d4p1:nil="false">ValueHere</e547:key>
-              <e547:value d4p1:nil="false">ValueHere</e547:value>
-            </e547:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e141="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e141:KeyValuePairOfstringstring>
+              <e141:key d4p1:nil="false">ValueHere</e141:key>
+              <e141:value d4p1:nil="false">ValueHere</e141:value>
+            </e141:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -105,6 +105,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<AddLabelsResponse> AddLabelsAsync(
 	IList<Label> labels)

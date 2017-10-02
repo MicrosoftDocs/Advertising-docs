@@ -78,11 +78,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e581="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e581:KeyValuePairOfstringstring>
-              <e581:key d4p1:nil="false">ValueHere</e581:key>
-              <e581:value d4p1:nil="false">ValueHere</e581:value>
-            </e581:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e175="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e175:KeyValuePairOfstringstring>
+              <e175:key d4p1:nil="false">ValueHere</e175:key>
+              <e175:value d4p1:nil="false">ValueHere</e175:value>
+            </e175:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -101,6 +101,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<DeleteSharedEntityAssociationsResponse> DeleteSharedEntityAssociationsAsync(
 	IList<SharedEntityAssociation> associations)

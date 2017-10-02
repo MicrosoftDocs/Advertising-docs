@@ -73,11 +73,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SuggestKeywordsForUrlResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Keywords xmlns:e503="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e503:KeywordAndConfidence>
-          <e503:SuggestedKeyword d4p1:nil="false">ValueHere</e503:SuggestedKeyword>
-          <e503:ConfidenceScore>ValueHere</e503:ConfidenceScore>
-        </e503:KeywordAndConfidence>
+      <Keywords xmlns:e97="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e97:KeywordAndConfidence>
+          <e97:SuggestedKeyword d4p1:nil="false">ValueHere</e97:SuggestedKeyword>
+          <e97:ConfidenceScore>ValueHere</e97:ConfidenceScore>
+        </e97:KeywordAndConfidence>
       </Keywords>
     </SuggestKeywordsForUrlResponse>
   </s:Body>
@@ -85,6 +85,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<SuggestKeywordsForUrlResponse> SuggestKeywordsForUrlAsync(
 	string url,

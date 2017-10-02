@@ -49,22 +49,22 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SearchAccountsRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Predicates xmlns:e422="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e422:Predicate>
-          <e422:Field i:nil="false">ValueHere</e422:Field>
-          <e422:Operator>ValueHere</e422:Operator>
-          <e422:Value i:nil="false">ValueHere</e422:Value>
-        </e422:Predicate>
+      <Predicates xmlns:e16="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e16:Predicate>
+          <e16:Field i:nil="false">ValueHere</e16:Field>
+          <e16:Operator>ValueHere</e16:Operator>
+          <e16:Value i:nil="false">ValueHere</e16:Value>
+        </e16:Predicate>
       </Predicates>
-      <Ordering xmlns:e423="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e423:OrderBy>
-          <e423:Field>ValueHere</e423:Field>
-          <e423:Order>ValueHere</e423:Order>
-        </e423:OrderBy>
+      <Ordering xmlns:e17="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e17:OrderBy>
+          <e17:Field>ValueHere</e17:Field>
+          <e17:Order>ValueHere</e17:Order>
+        </e17:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e424="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e424:Index>ValueHere</e424:Index>
-        <e424:Size>ValueHere</e424:Size>
+      <PageInfo xmlns:e18="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e18:Index>ValueHere</e18:Index>
+        <e18:Size>ValueHere</e18:Size>
       </PageInfo>
     </SearchAccountsRequest>
   </s:Body>
@@ -81,62 +81,62 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SearchAccountsResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Accounts xmlns:e425="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e425:Account d4p1:type="-- derived type specified here with the appropriate prefix --">
-          <e425:AccountType>ValueHere</e425:AccountType>
-          <e425:BillToCustomerId d4p1:nil="false">ValueHere</e425:BillToCustomerId>
-          <e425:CountryCode d4p1:nil="false">ValueHere</e425:CountryCode>
-          <e425:CurrencyType d4p1:nil="false">ValueHere</e425:CurrencyType>
-          <e425:AccountFinancialStatus d4p1:nil="false">ValueHere</e425:AccountFinancialStatus>
-          <e425:Id d4p1:nil="false">ValueHere</e425:Id>
-          <e425:Language d4p1:nil="false">ValueHere</e425:Language>
-          <ForwardCompatibilityMap xmlns:e426="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e426:KeyValuePairOfstringstring>
-              <e426:key d4p1:nil="false">ValueHere</e426:key>
-              <e426:value d4p1:nil="false">ValueHere</e426:value>
-            </e426:KeyValuePairOfstringstring>
+      <Accounts xmlns:e19="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e19:Account d4p1:type="-- derived type specified here with the appropriate prefix --">
+          <e19:AccountType>ValueHere</e19:AccountType>
+          <e19:BillToCustomerId d4p1:nil="false">ValueHere</e19:BillToCustomerId>
+          <e19:CountryCode d4p1:nil="false">ValueHere</e19:CountryCode>
+          <e19:CurrencyType d4p1:nil="false">ValueHere</e19:CurrencyType>
+          <e19:AccountFinancialStatus d4p1:nil="false">ValueHere</e19:AccountFinancialStatus>
+          <e19:Id d4p1:nil="false">ValueHere</e19:Id>
+          <e19:Language d4p1:nil="false">ValueHere</e19:Language>
+          <ForwardCompatibilityMap xmlns:e20="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e20:KeyValuePairOfstringstring>
+              <e20:key d4p1:nil="false">ValueHere</e20:key>
+              <e20:value d4p1:nil="false">ValueHere</e20:value>
+            </e20:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <e425:LastModifiedByUserId d4p1:nil="false">ValueHere</e425:LastModifiedByUserId>
-          <e425:LastModifiedTime d4p1:nil="false">ValueHere</e425:LastModifiedTime>
-          <e425:Name d4p1:nil="false">ValueHere</e425:Name>
-          <e425:Number d4p1:nil="false">ValueHere</e425:Number>
-          <e425:ParentCustomerId>ValueHere</e425:ParentCustomerId>
-          <e425:PaymentMethodId d4p1:nil="false">ValueHere</e425:PaymentMethodId>
-          <e425:PaymentMethodType d4p1:nil="false">ValueHere</e425:PaymentMethodType>
-          <e425:PrimaryUserId d4p1:nil="false">ValueHere</e425:PrimaryUserId>
-          <e425:AccountLifeCycleStatus d4p1:nil="false">ValueHere</e425:AccountLifeCycleStatus>
-          <e425:TimeStamp d4p1:nil="false">ValueHere</e425:TimeStamp>
-          <e425:TimeZone d4p1:nil="false">ValueHere</e425:TimeZone>
-          <e425:PauseReason d4p1:nil="false">ValueHere</e425:PauseReason>
+          <e19:LastModifiedByUserId d4p1:nil="false">ValueHere</e19:LastModifiedByUserId>
+          <e19:LastModifiedTime d4p1:nil="false">ValueHere</e19:LastModifiedTime>
+          <e19:Name d4p1:nil="false">ValueHere</e19:Name>
+          <e19:Number d4p1:nil="false">ValueHere</e19:Number>
+          <e19:ParentCustomerId>ValueHere</e19:ParentCustomerId>
+          <e19:PaymentMethodId d4p1:nil="false">ValueHere</e19:PaymentMethodId>
+          <e19:PaymentMethodType d4p1:nil="false">ValueHere</e19:PaymentMethodType>
+          <e19:PrimaryUserId d4p1:nil="false">ValueHere</e19:PrimaryUserId>
+          <e19:AccountLifeCycleStatus d4p1:nil="false">ValueHere</e19:AccountLifeCycleStatus>
+          <e19:TimeStamp d4p1:nil="false">ValueHere</e19:TimeStamp>
+          <e19:TimeZone d4p1:nil="false">ValueHere</e19:TimeZone>
+          <e19:PauseReason d4p1:nil="false">ValueHere</e19:PauseReason>
           <!--These fields are applicable if the derived type attribute is set to AdvertiserAccount-->
-          <e425:LinkedAgencies d4p1:nil="false">
-            <e425:CustomerInfo>
-              <e425:Id d4p1:nil="false">ValueHere</e425:Id>
-              <e425:Name d4p1:nil="false">ValueHere</e425:Name>
-            </e425:CustomerInfo>
-          </e425:LinkedAgencies>
-          <e425:SalesHouseCustomerId d4p1:nil="false">ValueHere</e425:SalesHouseCustomerId>
-          <TaxInformation xmlns:e427="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e427:KeyValuePairOfstringstring>
-              <e427:key d4p1:nil="false">ValueHere</e427:key>
-              <e427:value d4p1:nil="false">ValueHere</e427:value>
-            </e427:KeyValuePairOfstringstring>
+          <e19:LinkedAgencies d4p1:nil="false">
+            <e19:CustomerInfo>
+              <e19:Id d4p1:nil="false">ValueHere</e19:Id>
+              <e19:Name d4p1:nil="false">ValueHere</e19:Name>
+            </e19:CustomerInfo>
+          </e19:LinkedAgencies>
+          <e19:SalesHouseCustomerId d4p1:nil="false">ValueHere</e19:SalesHouseCustomerId>
+          <TaxInformation xmlns:e21="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e21:KeyValuePairOfstringstring>
+              <e21:key d4p1:nil="false">ValueHere</e21:key>
+              <e21:value d4p1:nil="false">ValueHere</e21:value>
+            </e21:KeyValuePairOfstringstring>
           </TaxInformation>
-          <e425:BackUpPaymentInstrumentId d4p1:nil="false">ValueHere</e425:BackUpPaymentInstrumentId>
-          <e425:BillingThresholdAmount d4p1:nil="false">ValueHere</e425:BillingThresholdAmount>
-          <e425:BusinessAddress d4p1:nil="false">
-            <e425:City d4p1:nil="false">ValueHere</e425:City>
-            <e425:CountryCode d4p1:nil="false">ValueHere</e425:CountryCode>
-            <e425:Id d4p1:nil="false">ValueHere</e425:Id>
-            <e425:Line1 d4p1:nil="false">ValueHere</e425:Line1>
-            <e425:Line2 d4p1:nil="false">ValueHere</e425:Line2>
-            <e425:Line3 d4p1:nil="false">ValueHere</e425:Line3>
-            <e425:Line4 d4p1:nil="false">ValueHere</e425:Line4>
-            <e425:PostalCode d4p1:nil="false">ValueHere</e425:PostalCode>
-            <e425:StateOrProvince d4p1:nil="false">ValueHere</e425:StateOrProvince>
-            <e425:TimeStamp d4p1:nil="false">ValueHere</e425:TimeStamp>
-          </e425:BusinessAddress>
-        </e425:Account>
+          <e19:BackUpPaymentInstrumentId d4p1:nil="false">ValueHere</e19:BackUpPaymentInstrumentId>
+          <e19:BillingThresholdAmount d4p1:nil="false">ValueHere</e19:BillingThresholdAmount>
+          <e19:BusinessAddress d4p1:nil="false">
+            <e19:City d4p1:nil="false">ValueHere</e19:City>
+            <e19:CountryCode d4p1:nil="false">ValueHere</e19:CountryCode>
+            <e19:Id d4p1:nil="false">ValueHere</e19:Id>
+            <e19:Line1 d4p1:nil="false">ValueHere</e19:Line1>
+            <e19:Line2 d4p1:nil="false">ValueHere</e19:Line2>
+            <e19:Line3 d4p1:nil="false">ValueHere</e19:Line3>
+            <e19:Line4 d4p1:nil="false">ValueHere</e19:Line4>
+            <e19:PostalCode d4p1:nil="false">ValueHere</e19:PostalCode>
+            <e19:StateOrProvince d4p1:nil="false">ValueHere</e19:StateOrProvince>
+            <e19:TimeStamp d4p1:nil="false">ValueHere</e19:TimeStamp>
+          </e19:BusinessAddress>
+        </e19:Account>
       </Accounts>
     </SearchAccountsResponse>
   </s:Body>
@@ -144,6 +144,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<SearchAccountsResponse> SearchAccountsAsync(
 	IList<Predicate> predicates,

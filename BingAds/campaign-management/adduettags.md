@@ -98,11 +98,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e555="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e555:KeyValuePairOfstringstring>
-              <e555:key d4p1:nil="false">ValueHere</e555:key>
-              <e555:value d4p1:nil="false">ValueHere</e555:value>
-            </e555:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e149="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e149:KeyValuePairOfstringstring>
+              <e149:key d4p1:nil="false">ValueHere</e149:key>
+              <e149:value d4p1:nil="false">ValueHere</e149:value>
+            </e149:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -121,6 +121,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<AddUetTagsResponse> AddUetTagsAsync(
 	IList<UetTag> uetTags)

@@ -430,6 +430,8 @@
           href: ../bulk/date.md
         - name: EditorialError
           href: ../bulk/editorialerror.md
+        - name: KeyValuePairOfstringstring
+          href: ../bulk/keyvaluepairofstringstring.md
         - name: OperationError
           href: ../bulk/operationerror.md
         - name: PerformanceStatsDateRange
@@ -1001,6 +1003,8 @@
           href: ../campaign-management/instoretransactiongoal.md
         - name: Keyword
           href: ../campaign-management/keyword.md
+        - name: KeyValuePairOfstringstring
+          href: ../campaign-management/keyvaluepairofstringstring.md
         - name: Label
           href: ../campaign-management/label.md
         - name: LabelAssociation
@@ -1375,6 +1379,8 @@
           href: ../customer-management/customerinfo.md
         - name: DateRange
           href: ../customer-management/daterange.md
+        - name: KeyValuePairOfstringstring
+          href: ../customer-management/keyvaluepairofstringstring.md
         - name: OperationError
           href: ../customer-management/operationerror.md
         - name: OrderBy

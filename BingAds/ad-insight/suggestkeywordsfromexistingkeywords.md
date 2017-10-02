@@ -85,16 +85,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SuggestKeywordsFromExistingKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordSuggestions xmlns:e504="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e504:KeywordSuggestion>
-          <e504:Keyword d4p1:nil="false">ValueHere</e504:Keyword>
-          <e504:SuggestionsAndConfidence d4p1:nil="false">
-            <e504:KeywordAndConfidence>
-              <e504:SuggestedKeyword d4p1:nil="false">ValueHere</e504:SuggestedKeyword>
-              <e504:ConfidenceScore>ValueHere</e504:ConfidenceScore>
-            </e504:KeywordAndConfidence>
-          </e504:SuggestionsAndConfidence>
-        </e504:KeywordSuggestion>
+      <KeywordSuggestions xmlns:e98="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e98:KeywordSuggestion>
+          <e98:Keyword d4p1:nil="false">ValueHere</e98:Keyword>
+          <e98:SuggestionsAndConfidence d4p1:nil="false">
+            <e98:KeywordAndConfidence>
+              <e98:SuggestedKeyword d4p1:nil="false">ValueHere</e98:SuggestedKeyword>
+              <e98:ConfidenceScore>ValueHere</e98:ConfidenceScore>
+            </e98:KeywordAndConfidence>
+          </e98:SuggestionsAndConfidence>
+        </e98:KeywordSuggestion>
       </KeywordSuggestions>
     </SuggestKeywordsFromExistingKeywordsResponse>
   </s:Body>
@@ -102,6 +102,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<SuggestKeywordsFromExistingKeywordsResponse> SuggestKeywordsFromExistingKeywordsAsync(
 	IList<string> keywords,

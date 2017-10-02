@@ -72,18 +72,18 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBidOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Opportunities xmlns:e469="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e469:BidOpportunity>
-          <e469:AdGroupId>ValueHere</e469:AdGroupId>
-          <e469:CampaignId>ValueHere</e469:CampaignId>
-          <e469:CurrentBid>ValueHere</e469:CurrentBid>
-          <e469:EstimatedIncreaseInClicks>ValueHere</e469:EstimatedIncreaseInClicks>
-          <e469:EstimatedIncreaseInCost>ValueHere</e469:EstimatedIncreaseInCost>
-          <e469:EstimatedIncreaseInImpressions>ValueHere</e469:EstimatedIncreaseInImpressions>
-          <e469:KeywordId>ValueHere</e469:KeywordId>
-          <e469:MatchType d4p1:nil="false">ValueHere</e469:MatchType>
-          <e469:SuggestedBid>ValueHere</e469:SuggestedBid>
-        </e469:BidOpportunity>
+      <Opportunities xmlns:e63="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e63:BidOpportunity>
+          <e63:AdGroupId>ValueHere</e63:AdGroupId>
+          <e63:CampaignId>ValueHere</e63:CampaignId>
+          <e63:CurrentBid>ValueHere</e63:CurrentBid>
+          <e63:EstimatedIncreaseInClicks>ValueHere</e63:EstimatedIncreaseInClicks>
+          <e63:EstimatedIncreaseInCost>ValueHere</e63:EstimatedIncreaseInCost>
+          <e63:EstimatedIncreaseInImpressions>ValueHere</e63:EstimatedIncreaseInImpressions>
+          <e63:KeywordId>ValueHere</e63:KeywordId>
+          <e63:MatchType d4p1:nil="false">ValueHere</e63:MatchType>
+          <e63:SuggestedBid>ValueHere</e63:SuggestedBid>
+        </e63:BidOpportunity>
       </Opportunities>
     </GetBidOpportunitiesResponse>
   </s:Body>
@@ -91,6 +91,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetBidOpportunitiesResponse> GetBidOpportunitiesAsync(
 	long adGroupId,

@@ -63,37 +63,37 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetCustomerResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Customer xmlns:e417="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e417:CustomerAddress d4p1:nil="false">
-          <e417:City d4p1:nil="false">ValueHere</e417:City>
-          <e417:CountryCode d4p1:nil="false">ValueHere</e417:CountryCode>
-          <e417:Id d4p1:nil="false">ValueHere</e417:Id>
-          <e417:Line1 d4p1:nil="false">ValueHere</e417:Line1>
-          <e417:Line2 d4p1:nil="false">ValueHere</e417:Line2>
-          <e417:Line3 d4p1:nil="false">ValueHere</e417:Line3>
-          <e417:Line4 d4p1:nil="false">ValueHere</e417:Line4>
-          <e417:PostalCode d4p1:nil="false">ValueHere</e417:PostalCode>
-          <e417:StateOrProvince d4p1:nil="false">ValueHere</e417:StateOrProvince>
-          <e417:TimeStamp d4p1:nil="false">ValueHere</e417:TimeStamp>
-        </e417:CustomerAddress>
-        <e417:CustomerFinancialStatus d4p1:nil="false">ValueHere</e417:CustomerFinancialStatus>
-        <e417:Id d4p1:nil="false">ValueHere</e417:Id>
-        <e417:Industry d4p1:nil="false">ValueHere</e417:Industry>
-        <e417:LastModifiedByUserId d4p1:nil="false">ValueHere</e417:LastModifiedByUserId>
-        <e417:LastModifiedTime d4p1:nil="false">ValueHere</e417:LastModifiedTime>
-        <e417:MarketCountry d4p1:nil="false">ValueHere</e417:MarketCountry>
-        <ForwardCompatibilityMap xmlns:e418="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-          <e418:KeyValuePairOfstringstring>
-            <e418:key d4p1:nil="false">ValueHere</e418:key>
-            <e418:value d4p1:nil="false">ValueHere</e418:value>
-          </e418:KeyValuePairOfstringstring>
+      <Customer xmlns:e11="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e11:CustomerAddress d4p1:nil="false">
+          <e11:City d4p1:nil="false">ValueHere</e11:City>
+          <e11:CountryCode d4p1:nil="false">ValueHere</e11:CountryCode>
+          <e11:Id d4p1:nil="false">ValueHere</e11:Id>
+          <e11:Line1 d4p1:nil="false">ValueHere</e11:Line1>
+          <e11:Line2 d4p1:nil="false">ValueHere</e11:Line2>
+          <e11:Line3 d4p1:nil="false">ValueHere</e11:Line3>
+          <e11:Line4 d4p1:nil="false">ValueHere</e11:Line4>
+          <e11:PostalCode d4p1:nil="false">ValueHere</e11:PostalCode>
+          <e11:StateOrProvince d4p1:nil="false">ValueHere</e11:StateOrProvince>
+          <e11:TimeStamp d4p1:nil="false">ValueHere</e11:TimeStamp>
+        </e11:CustomerAddress>
+        <e11:CustomerFinancialStatus d4p1:nil="false">ValueHere</e11:CustomerFinancialStatus>
+        <e11:Id d4p1:nil="false">ValueHere</e11:Id>
+        <e11:Industry d4p1:nil="false">ValueHere</e11:Industry>
+        <e11:LastModifiedByUserId d4p1:nil="false">ValueHere</e11:LastModifiedByUserId>
+        <e11:LastModifiedTime d4p1:nil="false">ValueHere</e11:LastModifiedTime>
+        <e11:MarketCountry d4p1:nil="false">ValueHere</e11:MarketCountry>
+        <ForwardCompatibilityMap xmlns:e12="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+          <e12:KeyValuePairOfstringstring>
+            <e12:key d4p1:nil="false">ValueHere</e12:key>
+            <e12:value d4p1:nil="false">ValueHere</e12:value>
+          </e12:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e417:MarketLanguage d4p1:nil="false">ValueHere</e417:MarketLanguage>
-        <e417:Name d4p1:nil="false">ValueHere</e417:Name>
-        <e417:ServiceLevel d4p1:nil="false">ValueHere</e417:ServiceLevel>
-        <e417:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e417:CustomerLifeCycleStatus>
-        <e417:TimeStamp d4p1:nil="false">ValueHere</e417:TimeStamp>
-        <e417:Number d4p1:nil="false">ValueHere</e417:Number>
+        <e11:MarketLanguage d4p1:nil="false">ValueHere</e11:MarketLanguage>
+        <e11:Name d4p1:nil="false">ValueHere</e11:Name>
+        <e11:ServiceLevel d4p1:nil="false">ValueHere</e11:ServiceLevel>
+        <e11:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e11:CustomerLifeCycleStatus>
+        <e11:TimeStamp d4p1:nil="false">ValueHere</e11:TimeStamp>
+        <e11:Number d4p1:nil="false">ValueHere</e11:Number>
       </Customer>
     </GetCustomerResponse>
   </s:Body>
@@ -101,6 +101,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetCustomerResponse> GetCustomerAsync(
 	long customerId)

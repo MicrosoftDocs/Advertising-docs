@@ -52,11 +52,11 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <GetBidLandscapeByAdGroupIdsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <AdGroupBidLandscapeInputs xmlns:e466="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
-        <e466:AdGroupBidLandscapeInput>
-          <e466:AdGroupBidLandscapeType>ValueHere</e466:AdGroupBidLandscapeType>
-          <e466:AdGroupId>ValueHere</e466:AdGroupId>
-        </e466:AdGroupBidLandscapeInput>
+      <AdGroupBidLandscapeInputs xmlns:e60="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
+        <e60:AdGroupBidLandscapeInput>
+          <e60:AdGroupBidLandscapeType>ValueHere</e60:AdGroupBidLandscapeType>
+          <e60:AdGroupId>ValueHere</e60:AdGroupId>
+        </e60:AdGroupBidLandscapeInput>
       </AdGroupBidLandscapeInputs>
     </GetBidLandscapeByAdGroupIdsRequest>
   </s:Body>
@@ -73,32 +73,32 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBidLandscapeByAdGroupIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <BidLandscape xmlns:e467="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e467:AdGroupBidLandscape>
-          <e467:AdGroupId>ValueHere</e467:AdGroupId>
-          <e467:AdGroupBidLandscapeType>ValueHere</e467:AdGroupBidLandscapeType>
-          <e467:StartDate d4p1:nil="false">
-            <e467:Day>ValueHere</e467:Day>
-            <e467:Month>ValueHere</e467:Month>
-            <e467:Year>ValueHere</e467:Year>
-          </e467:StartDate>
-          <e467:EndDate d4p1:nil="false">
-            <e467:Day>ValueHere</e467:Day>
-            <e467:Month>ValueHere</e467:Month>
-            <e467:Year>ValueHere</e467:Year>
-          </e467:EndDate>
-          <e467:BidLandscapePoints d4p1:nil="false">
-            <e467:BidLandscapePoint>
-              <e467:Bid>ValueHere</e467:Bid>
-              <e467:Clicks d4p1:nil="false">ValueHere</e467:Clicks>
-              <e467:Impressions>ValueHere</e467:Impressions>
-              <e467:TopImpressions d4p1:nil="false">ValueHere</e467:TopImpressions>
-              <e467:Currency>ValueHere</e467:Currency>
-              <e467:Cost d4p1:nil="false">ValueHere</e467:Cost>
-              <e467:MarginalCPC d4p1:nil="false">ValueHere</e467:MarginalCPC>
-            </e467:BidLandscapePoint>
-          </e467:BidLandscapePoints>
-        </e467:AdGroupBidLandscape>
+      <BidLandscape xmlns:e61="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e61:AdGroupBidLandscape>
+          <e61:AdGroupId>ValueHere</e61:AdGroupId>
+          <e61:AdGroupBidLandscapeType>ValueHere</e61:AdGroupBidLandscapeType>
+          <e61:StartDate d4p1:nil="false">
+            <e61:Day>ValueHere</e61:Day>
+            <e61:Month>ValueHere</e61:Month>
+            <e61:Year>ValueHere</e61:Year>
+          </e61:StartDate>
+          <e61:EndDate d4p1:nil="false">
+            <e61:Day>ValueHere</e61:Day>
+            <e61:Month>ValueHere</e61:Month>
+            <e61:Year>ValueHere</e61:Year>
+          </e61:EndDate>
+          <e61:BidLandscapePoints d4p1:nil="false">
+            <e61:BidLandscapePoint>
+              <e61:Bid>ValueHere</e61:Bid>
+              <e61:Clicks d4p1:nil="false">ValueHere</e61:Clicks>
+              <e61:Impressions>ValueHere</e61:Impressions>
+              <e61:TopImpressions d4p1:nil="false">ValueHere</e61:TopImpressions>
+              <e61:Currency>ValueHere</e61:Currency>
+              <e61:Cost d4p1:nil="false">ValueHere</e61:Cost>
+              <e61:MarginalCPC d4p1:nil="false">ValueHere</e61:MarginalCPC>
+            </e61:BidLandscapePoint>
+          </e61:BidLandscapePoints>
+        </e61:AdGroupBidLandscape>
       </BidLandscape>
     </GetBidLandscapeByAdGroupIdsResponse>
   </s:Body>
@@ -106,6 +106,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetBidLandscapeByAdGroupIdsResponse> GetBidLandscapeByAdGroupIdsAsync(
 	IList<AdGroupBidLandscapeInput> adGroupBidLandscapeInputs)

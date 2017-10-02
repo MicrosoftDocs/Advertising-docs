@@ -70,25 +70,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetInsertionOrdersByAccountResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <InsertionOrders xmlns:e460="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e460:InsertionOrder>
-          <e460:AccountId>ValueHere</e460:AccountId>
-          <e460:BalanceAmount d4p1:nil="false">ValueHere</e460:BalanceAmount>
-          <e460:BookingCountryCode d4p1:nil="false">ValueHere</e460:BookingCountryCode>
-          <e460:Comment d4p1:nil="false">ValueHere</e460:Comment>
-          <e460:EndDate>ValueHere</e460:EndDate>
-          <e460:InsertionOrderId d4p1:nil="false">ValueHere</e460:InsertionOrderId>
-          <e460:LastModifiedByUserId d4p1:nil="false">ValueHere</e460:LastModifiedByUserId>
-          <e460:LastModifiedTime d4p1:nil="false">ValueHere</e460:LastModifiedTime>
-          <e460:NotificationThreshold d4p1:nil="false">ValueHere</e460:NotificationThreshold>
-          <e460:ReferenceId d4p1:nil="false">ValueHere</e460:ReferenceId>
-          <e460:SpendCapAmount>ValueHere</e460:SpendCapAmount>
-          <e460:StartDate>ValueHere</e460:StartDate>
-          <e460:Name d4p1:nil="false">ValueHere</e460:Name>
-          <e460:Status d4p1:nil="false">ValueHere</e460:Status>
-          <e460:PurchaseOrder d4p1:nil="false">ValueHere</e460:PurchaseOrder>
-          <e460:ChangePendingReview d4p1:nil="false">ValueHere</e460:ChangePendingReview>
-        </e460:InsertionOrder>
+      <InsertionOrders xmlns:e54="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e54:InsertionOrder>
+          <e54:AccountId>ValueHere</e54:AccountId>
+          <e54:BalanceAmount d4p1:nil="false">ValueHere</e54:BalanceAmount>
+          <e54:BookingCountryCode d4p1:nil="false">ValueHere</e54:BookingCountryCode>
+          <e54:Comment d4p1:nil="false">ValueHere</e54:Comment>
+          <e54:EndDate>ValueHere</e54:EndDate>
+          <e54:InsertionOrderId d4p1:nil="false">ValueHere</e54:InsertionOrderId>
+          <e54:LastModifiedByUserId d4p1:nil="false">ValueHere</e54:LastModifiedByUserId>
+          <e54:LastModifiedTime d4p1:nil="false">ValueHere</e54:LastModifiedTime>
+          <e54:NotificationThreshold d4p1:nil="false">ValueHere</e54:NotificationThreshold>
+          <e54:ReferenceId d4p1:nil="false">ValueHere</e54:ReferenceId>
+          <e54:SpendCapAmount>ValueHere</e54:SpendCapAmount>
+          <e54:StartDate>ValueHere</e54:StartDate>
+          <e54:Name d4p1:nil="false">ValueHere</e54:Name>
+          <e54:Status d4p1:nil="false">ValueHere</e54:Status>
+          <e54:PurchaseOrder d4p1:nil="false">ValueHere</e54:PurchaseOrder>
+          <e54:ChangePendingReview d4p1:nil="false">ValueHere</e54:ChangePendingReview>
+        </e54:InsertionOrder>
       </InsertionOrders>
     </GetInsertionOrdersByAccountResponse>
   </s:Body>
@@ -96,6 +96,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetInsertionOrdersByAccountResponse> GetInsertionOrdersByAccountAsync(
 	long accountId,

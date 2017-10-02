@@ -88,11 +88,11 @@ The following template shows the order of the [body](#response-body) and [header
               <Details d4p1:nil="false">ValueHere</Details>
               <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
               <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-              <ForwardCompatibilityMap xmlns:e577="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-                <e577:KeyValuePairOfstringstring>
-                  <e577:key d4p1:nil="false">ValueHere</e577:key>
-                  <e577:value d4p1:nil="false">ValueHere</e577:value>
-                </e577:KeyValuePairOfstringstring>
+              <ForwardCompatibilityMap xmlns:e171="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+                <e171:KeyValuePairOfstringstring>
+                  <e171:key d4p1:nil="false">ValueHere</e171:key>
+                  <e171:value d4p1:nil="false">ValueHere</e171:value>
+                </e171:KeyValuePairOfstringstring>
               </ForwardCompatibilityMap>
               <Index>ValueHere</Index>
               <Message d4p1:nil="false">ValueHere</Message>
@@ -109,11 +109,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e578="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e578:KeyValuePairOfstringstring>
-              <e578:key d4p1:nil="false">ValueHere</e578:key>
-              <e578:value d4p1:nil="false">ValueHere</e578:value>
-            </e578:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e172="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e172:KeyValuePairOfstringstring>
+              <e172:key d4p1:nil="false">ValueHere</e172:key>
+              <e172:value d4p1:nil="false">ValueHere</e172:value>
+            </e172:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -126,6 +126,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<DeleteNegativeKeywordsFromEntitiesResponse> DeleteNegativeKeywordsFromEntitiesAsync(
 	IList<EntityNegativeKeyword> entityNegativeKeywords)

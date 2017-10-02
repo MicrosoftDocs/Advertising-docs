@@ -49,7 +49,7 @@ The [NegativeKeyword](negativekeyword.md) object derives from the [SharedListIte
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility. This element can be used to avoid otherwise breaking changes when new elements are added in future releases.<br /><br />**Note:** Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *SharedListItem* object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />**Note:** Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *SharedListItem* object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="type"></a>Type|The type of the shared list item.  This value is *NegativeKeyword* when you retrieve a negative keyword. For more information about shared list item types, see [SharedListItem Data Object Remarks](../campaign-management/sharedlistitem.md#remarks).<br/><br/>**Add:** Read-only|**string**|
 
 ## Requirements

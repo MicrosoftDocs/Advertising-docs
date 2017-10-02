@@ -49,22 +49,22 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SearchInsertionOrdersRequest xmlns="https://bingads.microsoft.com/Billing/v11">
-      <Predicates xmlns:e461="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e461:Predicate>
-          <e461:Field i:nil="false">ValueHere</e461:Field>
-          <e461:Operator>ValueHere</e461:Operator>
-          <e461:Value i:nil="false">ValueHere</e461:Value>
-        </e461:Predicate>
+      <Predicates xmlns:e55="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e55:Predicate>
+          <e55:Field i:nil="false">ValueHere</e55:Field>
+          <e55:Operator>ValueHere</e55:Operator>
+          <e55:Value i:nil="false">ValueHere</e55:Value>
+        </e55:Predicate>
       </Predicates>
-      <Ordering xmlns:e462="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e462:OrderBy>
-          <e462:Field>ValueHere</e462:Field>
-          <e462:Order>ValueHere</e462:Order>
-        </e462:OrderBy>
+      <Ordering xmlns:e56="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e56:OrderBy>
+          <e56:Field>ValueHere</e56:Field>
+          <e56:Order>ValueHere</e56:Order>
+        </e56:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e463="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e463:Index>ValueHere</e463:Index>
-        <e463:Size>ValueHere</e463:Size>
+      <PageInfo xmlns:e57="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e57:Index>ValueHere</e57:Index>
+        <e57:Size>ValueHere</e57:Size>
       </PageInfo>
     </SearchInsertionOrdersRequest>
   </s:Body>
@@ -81,25 +81,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SearchInsertionOrdersResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <InsertionOrders xmlns:e464="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e464:InsertionOrder>
-          <e464:AccountId>ValueHere</e464:AccountId>
-          <e464:BalanceAmount d4p1:nil="false">ValueHere</e464:BalanceAmount>
-          <e464:BookingCountryCode d4p1:nil="false">ValueHere</e464:BookingCountryCode>
-          <e464:Comment d4p1:nil="false">ValueHere</e464:Comment>
-          <e464:EndDate>ValueHere</e464:EndDate>
-          <e464:InsertionOrderId d4p1:nil="false">ValueHere</e464:InsertionOrderId>
-          <e464:LastModifiedByUserId d4p1:nil="false">ValueHere</e464:LastModifiedByUserId>
-          <e464:LastModifiedTime d4p1:nil="false">ValueHere</e464:LastModifiedTime>
-          <e464:NotificationThreshold d4p1:nil="false">ValueHere</e464:NotificationThreshold>
-          <e464:ReferenceId d4p1:nil="false">ValueHere</e464:ReferenceId>
-          <e464:SpendCapAmount>ValueHere</e464:SpendCapAmount>
-          <e464:StartDate>ValueHere</e464:StartDate>
-          <e464:Name d4p1:nil="false">ValueHere</e464:Name>
-          <e464:Status d4p1:nil="false">ValueHere</e464:Status>
-          <e464:PurchaseOrder d4p1:nil="false">ValueHere</e464:PurchaseOrder>
-          <e464:ChangePendingReview d4p1:nil="false">ValueHere</e464:ChangePendingReview>
-        </e464:InsertionOrder>
+      <InsertionOrders xmlns:e58="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e58:InsertionOrder>
+          <e58:AccountId>ValueHere</e58:AccountId>
+          <e58:BalanceAmount d4p1:nil="false">ValueHere</e58:BalanceAmount>
+          <e58:BookingCountryCode d4p1:nil="false">ValueHere</e58:BookingCountryCode>
+          <e58:Comment d4p1:nil="false">ValueHere</e58:Comment>
+          <e58:EndDate>ValueHere</e58:EndDate>
+          <e58:InsertionOrderId d4p1:nil="false">ValueHere</e58:InsertionOrderId>
+          <e58:LastModifiedByUserId d4p1:nil="false">ValueHere</e58:LastModifiedByUserId>
+          <e58:LastModifiedTime d4p1:nil="false">ValueHere</e58:LastModifiedTime>
+          <e58:NotificationThreshold d4p1:nil="false">ValueHere</e58:NotificationThreshold>
+          <e58:ReferenceId d4p1:nil="false">ValueHere</e58:ReferenceId>
+          <e58:SpendCapAmount>ValueHere</e58:SpendCapAmount>
+          <e58:StartDate>ValueHere</e58:StartDate>
+          <e58:Name d4p1:nil="false">ValueHere</e58:Name>
+          <e58:Status d4p1:nil="false">ValueHere</e58:Status>
+          <e58:PurchaseOrder d4p1:nil="false">ValueHere</e58:PurchaseOrder>
+          <e58:ChangePendingReview d4p1:nil="false">ValueHere</e58:ChangePendingReview>
+        </e58:InsertionOrder>
       </InsertionOrders>
     </SearchInsertionOrdersResponse>
   </s:Body>
@@ -107,6 +107,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<SearchInsertionOrdersResponse> SearchInsertionOrdersAsync(
 	IList<Predicate> predicates,

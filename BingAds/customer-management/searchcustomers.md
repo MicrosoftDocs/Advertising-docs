@@ -52,26 +52,26 @@ The following template shows the order of the [body](#request-body) and [header]
   <s:Body>
     <SearchCustomersRequest xmlns="https://bingads.microsoft.com/Customer/v11">
       <ApplicationScope>ValueHere</ApplicationScope>
-      <Predicates xmlns:e433="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e433:Predicate>
-          <e433:Field i:nil="false">ValueHere</e433:Field>
-          <e433:Operator>ValueHere</e433:Operator>
-          <e433:Value i:nil="false">ValueHere</e433:Value>
-        </e433:Predicate>
+      <Predicates xmlns:e27="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e27:Predicate>
+          <e27:Field i:nil="false">ValueHere</e27:Field>
+          <e27:Operator>ValueHere</e27:Operator>
+          <e27:Value i:nil="false">ValueHere</e27:Value>
+        </e27:Predicate>
       </Predicates>
-      <DateRange xmlns:e434="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e434:MinDate i:nil="false">ValueHere</e434:MinDate>
-        <e434:MaxDate i:nil="false">ValueHere</e434:MaxDate>
+      <DateRange xmlns:e28="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e28:MinDate i:nil="false">ValueHere</e28:MinDate>
+        <e28:MaxDate i:nil="false">ValueHere</e28:MaxDate>
       </DateRange>
-      <Ordering xmlns:e435="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e435:OrderBy>
-          <e435:Field>ValueHere</e435:Field>
-          <e435:Order>ValueHere</e435:Order>
-        </e435:OrderBy>
+      <Ordering xmlns:e29="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e29:OrderBy>
+          <e29:Field>ValueHere</e29:Field>
+          <e29:Order>ValueHere</e29:Order>
+        </e29:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e436="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e436:Index>ValueHere</e436:Index>
-        <e436:Size>ValueHere</e436:Size>
+      <PageInfo xmlns:e30="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e30:Index>ValueHere</e30:Index>
+        <e30:Size>ValueHere</e30:Size>
       </PageInfo>
     </SearchCustomersRequest>
   </s:Body>
@@ -88,39 +88,39 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SearchCustomersResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Customers xmlns:e437="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e437:Customer>
-          <e437:CustomerAddress d4p1:nil="false">
-            <e437:City d4p1:nil="false">ValueHere</e437:City>
-            <e437:CountryCode d4p1:nil="false">ValueHere</e437:CountryCode>
-            <e437:Id d4p1:nil="false">ValueHere</e437:Id>
-            <e437:Line1 d4p1:nil="false">ValueHere</e437:Line1>
-            <e437:Line2 d4p1:nil="false">ValueHere</e437:Line2>
-            <e437:Line3 d4p1:nil="false">ValueHere</e437:Line3>
-            <e437:Line4 d4p1:nil="false">ValueHere</e437:Line4>
-            <e437:PostalCode d4p1:nil="false">ValueHere</e437:PostalCode>
-            <e437:StateOrProvince d4p1:nil="false">ValueHere</e437:StateOrProvince>
-            <e437:TimeStamp d4p1:nil="false">ValueHere</e437:TimeStamp>
-          </e437:CustomerAddress>
-          <e437:CustomerFinancialStatus d4p1:nil="false">ValueHere</e437:CustomerFinancialStatus>
-          <e437:Id d4p1:nil="false">ValueHere</e437:Id>
-          <e437:Industry d4p1:nil="false">ValueHere</e437:Industry>
-          <e437:LastModifiedByUserId d4p1:nil="false">ValueHere</e437:LastModifiedByUserId>
-          <e437:LastModifiedTime d4p1:nil="false">ValueHere</e437:LastModifiedTime>
-          <e437:MarketCountry d4p1:nil="false">ValueHere</e437:MarketCountry>
-          <ForwardCompatibilityMap xmlns:e438="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e438:KeyValuePairOfstringstring>
-              <e438:key d4p1:nil="false">ValueHere</e438:key>
-              <e438:value d4p1:nil="false">ValueHere</e438:value>
-            </e438:KeyValuePairOfstringstring>
+      <Customers xmlns:e31="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e31:Customer>
+          <e31:CustomerAddress d4p1:nil="false">
+            <e31:City d4p1:nil="false">ValueHere</e31:City>
+            <e31:CountryCode d4p1:nil="false">ValueHere</e31:CountryCode>
+            <e31:Id d4p1:nil="false">ValueHere</e31:Id>
+            <e31:Line1 d4p1:nil="false">ValueHere</e31:Line1>
+            <e31:Line2 d4p1:nil="false">ValueHere</e31:Line2>
+            <e31:Line3 d4p1:nil="false">ValueHere</e31:Line3>
+            <e31:Line4 d4p1:nil="false">ValueHere</e31:Line4>
+            <e31:PostalCode d4p1:nil="false">ValueHere</e31:PostalCode>
+            <e31:StateOrProvince d4p1:nil="false">ValueHere</e31:StateOrProvince>
+            <e31:TimeStamp d4p1:nil="false">ValueHere</e31:TimeStamp>
+          </e31:CustomerAddress>
+          <e31:CustomerFinancialStatus d4p1:nil="false">ValueHere</e31:CustomerFinancialStatus>
+          <e31:Id d4p1:nil="false">ValueHere</e31:Id>
+          <e31:Industry d4p1:nil="false">ValueHere</e31:Industry>
+          <e31:LastModifiedByUserId d4p1:nil="false">ValueHere</e31:LastModifiedByUserId>
+          <e31:LastModifiedTime d4p1:nil="false">ValueHere</e31:LastModifiedTime>
+          <e31:MarketCountry d4p1:nil="false">ValueHere</e31:MarketCountry>
+          <ForwardCompatibilityMap xmlns:e32="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e32:KeyValuePairOfstringstring>
+              <e32:key d4p1:nil="false">ValueHere</e32:key>
+              <e32:value d4p1:nil="false">ValueHere</e32:value>
+            </e32:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <e437:MarketLanguage d4p1:nil="false">ValueHere</e437:MarketLanguage>
-          <e437:Name d4p1:nil="false">ValueHere</e437:Name>
-          <e437:ServiceLevel d4p1:nil="false">ValueHere</e437:ServiceLevel>
-          <e437:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e437:CustomerLifeCycleStatus>
-          <e437:TimeStamp d4p1:nil="false">ValueHere</e437:TimeStamp>
-          <e437:Number d4p1:nil="false">ValueHere</e437:Number>
-        </e437:Customer>
+          <e31:MarketLanguage d4p1:nil="false">ValueHere</e31:MarketLanguage>
+          <e31:Name d4p1:nil="false">ValueHere</e31:Name>
+          <e31:ServiceLevel d4p1:nil="false">ValueHere</e31:ServiceLevel>
+          <e31:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e31:CustomerLifeCycleStatus>
+          <e31:TimeStamp d4p1:nil="false">ValueHere</e31:TimeStamp>
+          <e31:Number d4p1:nil="false">ValueHere</e31:Number>
+        </e31:Customer>
       </Customers>
     </SearchCustomersResponse>
   </s:Body>
@@ -128,6 +128,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<SearchCustomersResponse> SearchCustomersAsync(
 	ApplicationType applicationScope,

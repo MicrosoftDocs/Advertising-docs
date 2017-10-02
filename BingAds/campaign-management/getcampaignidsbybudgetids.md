@@ -81,11 +81,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e631="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e631:KeyValuePairOfstringstring>
-              <e631:key d4p1:nil="false">ValueHere</e631:key>
-              <e631:value d4p1:nil="false">ValueHere</e631:value>
-            </e631:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e225="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e225:KeyValuePairOfstringstring>
+              <e225:key d4p1:nil="false">ValueHere</e225:key>
+              <e225:value d4p1:nil="false">ValueHere</e225:value>
+            </e225:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -104,6 +104,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetCampaignIdsByBudgetIdsResponse> GetCampaignIdsByBudgetIdsAsync(
 	IList<long> budgetIds)

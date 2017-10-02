@@ -53,22 +53,22 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SearchClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Predicates xmlns:e428="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e428:Predicate>
-          <e428:Field i:nil="false">ValueHere</e428:Field>
-          <e428:Operator>ValueHere</e428:Operator>
-          <e428:Value i:nil="false">ValueHere</e428:Value>
-        </e428:Predicate>
+      <Predicates xmlns:e22="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e22:Predicate>
+          <e22:Field i:nil="false">ValueHere</e22:Field>
+          <e22:Operator>ValueHere</e22:Operator>
+          <e22:Value i:nil="false">ValueHere</e22:Value>
+        </e22:Predicate>
       </Predicates>
-      <Ordering xmlns:e429="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e429:OrderBy>
-          <e429:Field>ValueHere</e429:Field>
-          <e429:Order>ValueHere</e429:Order>
-        </e429:OrderBy>
+      <Ordering xmlns:e23="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e23:OrderBy>
+          <e23:Field>ValueHere</e23:Field>
+          <e23:Order>ValueHere</e23:Order>
+        </e23:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e430="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e430:Index>ValueHere</e430:Index>
-        <e430:Size>ValueHere</e430:Size>
+      <PageInfo xmlns:e24="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e24:Index>ValueHere</e24:Index>
+        <e24:Size>ValueHere</e24:Size>
       </PageInfo>
     </SearchClientLinksRequest>
   </s:Body>
@@ -85,31 +85,31 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SearchClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <ClientLinks xmlns:e431="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e431:ClientLink>
-          <e431:ClientAccountId d4p1:nil="false">ValueHere</e431:ClientAccountId>
-          <e431:ClientAccountNumber d4p1:nil="false">ValueHere</e431:ClientAccountNumber>
-          <e431:ManagingCustomerId d4p1:nil="false">ValueHere</e431:ManagingCustomerId>
-          <e431:ManagingCustomerNumber d4p1:nil="false">ValueHere</e431:ManagingCustomerNumber>
-          <e431:Note d4p1:nil="false">ValueHere</e431:Note>
-          <e431:Name d4p1:nil="false">ValueHere</e431:Name>
-          <e431:InviterEmail d4p1:nil="false">ValueHere</e431:InviterEmail>
-          <e431:InviterName d4p1:nil="false">ValueHere</e431:InviterName>
-          <e431:InviterPhone d4p1:nil="false">ValueHere</e431:InviterPhone>
-          <e431:IsBillToClient>ValueHere</e431:IsBillToClient>
-          <e431:StartDate d4p1:nil="false">ValueHere</e431:StartDate>
-          <e431:Status d4p1:nil="false">ValueHere</e431:Status>
-          <e431:SuppressNotification>ValueHere</e431:SuppressNotification>
-          <e431:LastModifiedDateTime>ValueHere</e431:LastModifiedDateTime>
-          <e431:LastModifiedByUserId>ValueHere</e431:LastModifiedByUserId>
-          <e431:Timestamp d4p1:nil="false">ValueHere</e431:Timestamp>
-          <ForwardCompatibilityMap xmlns:e432="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e432:KeyValuePairOfstringstring>
-              <e432:key d4p1:nil="false">ValueHere</e432:key>
-              <e432:value d4p1:nil="false">ValueHere</e432:value>
-            </e432:KeyValuePairOfstringstring>
+      <ClientLinks xmlns:e25="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e25:ClientLink>
+          <e25:ClientAccountId d4p1:nil="false">ValueHere</e25:ClientAccountId>
+          <e25:ClientAccountNumber d4p1:nil="false">ValueHere</e25:ClientAccountNumber>
+          <e25:ManagingCustomerId d4p1:nil="false">ValueHere</e25:ManagingCustomerId>
+          <e25:ManagingCustomerNumber d4p1:nil="false">ValueHere</e25:ManagingCustomerNumber>
+          <e25:Note d4p1:nil="false">ValueHere</e25:Note>
+          <e25:Name d4p1:nil="false">ValueHere</e25:Name>
+          <e25:InviterEmail d4p1:nil="false">ValueHere</e25:InviterEmail>
+          <e25:InviterName d4p1:nil="false">ValueHere</e25:InviterName>
+          <e25:InviterPhone d4p1:nil="false">ValueHere</e25:InviterPhone>
+          <e25:IsBillToClient>ValueHere</e25:IsBillToClient>
+          <e25:StartDate d4p1:nil="false">ValueHere</e25:StartDate>
+          <e25:Status d4p1:nil="false">ValueHere</e25:Status>
+          <e25:SuppressNotification>ValueHere</e25:SuppressNotification>
+          <e25:LastModifiedDateTime>ValueHere</e25:LastModifiedDateTime>
+          <e25:LastModifiedByUserId>ValueHere</e25:LastModifiedByUserId>
+          <e25:Timestamp d4p1:nil="false">ValueHere</e25:Timestamp>
+          <ForwardCompatibilityMap xmlns:e26="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e26:KeyValuePairOfstringstring>
+              <e26:key d4p1:nil="false">ValueHere</e26:key>
+              <e26:value d4p1:nil="false">ValueHere</e26:value>
+            </e26:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-        </e431:ClientLink>
+        </e25:ClientLink>
       </ClientLinks>
     </SearchClientLinksResponse>
   </s:Body>
@@ -117,6 +117,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<SearchClientLinksResponse> SearchClientLinksAsync(
 	IList<Predicate> predicates,

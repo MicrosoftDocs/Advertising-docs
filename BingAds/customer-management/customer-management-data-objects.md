@@ -24,7 +24,7 @@ The Customer Management service defines the following data objects.
 |[Customer](customer.md)|Defines a customer.|
 |[CustomerInfo](customerinfo.md)|Defines a customer identification object that contains information that identifies a customer.|
 |[DateRange](daterange.md)|Defines a date range object.|
-|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|Reserved.|
+|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.|
 |[OperationError](operationerror.md)|Defines an error object that contains the details that explain why the service operation failed.|
 |[OrderBy](orderby.md)|Defines an order for the list of entities returned using one of the search operations, for example [SearchAccounts](../customer-management/searchaccounts.md), [SearchClientLinks](../customer-management/searchclientlinks.md), or [SearchCustomers](../customer-management/searchcustomers.md).|
 |[Paging](paging.md)|Defines a paging object for the list of entities returned using one of the search operations, for example [SearchAccounts](../customer-management/searchaccounts.md), [SearchClientLinks](../customer-management/searchclientlinks.md), or [SearchCustomers](../customer-management/searchcustomers.md).|

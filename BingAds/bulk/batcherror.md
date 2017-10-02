@@ -32,7 +32,7 @@ Defines an error object that identifies the item within the batch of items in th
 |<a name="details"></a>Details|A message that provides additional details about the batch error. This string can be empty.|**string**|
 |<a name="errorcode"></a>ErrorCode|A symbolic string constant that identifies the error. For example, *UserIsNotAuthorized*.|**string**|
 |<a name="fieldpath"></a>FieldPath|Reserved for future use.|**string**|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility. This element can be used to avoid otherwise breaking changes when new elements are added in future releases.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="index"></a>Index|The zero-based index of the item in the batch of items in the request message that failed.	|**int**|
 |<a name="message"></a>Message|A message that describes the error.|**string**|
 |<a name="type"></a>Type|Reserved for future use.|**string**|

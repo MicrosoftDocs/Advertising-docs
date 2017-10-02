@@ -108,11 +108,11 @@ The following template shows the order of the [body](#response-body) and [header
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e611="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e611:KeyValuePairOfstringstring>
-              <e611:key d4p1:nil="false">ValueHere</e611:key>
-              <e611:value d4p1:nil="false">ValueHere</e611:value>
-            </e611:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e205="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e205:KeyValuePairOfstringstring>
+              <e205:key d4p1:nil="false">ValueHere</e205:key>
+              <e205:value d4p1:nil="false">ValueHere</e205:value>
+            </e205:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Language d4p1:nil="false">ValueHere</Language>
@@ -144,13 +144,13 @@ The following template shows the order of the [body](#response-body) and [header
           </StartDate>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e612="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e612:Parameters d4p1:nil="false">
-              <e612:CustomParameter>
-                <e612:Key d4p1:nil="false">ValueHere</e612:Key>
-                <e612:Value d4p1:nil="false">ValueHere</e612:Value>
-              </e612:CustomParameter>
-            </e612:Parameters>
+          <UrlCustomParameters xmlns:e206="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e206:Parameters d4p1:nil="false">
+              <e206:CustomParameter>
+                <e206:Key d4p1:nil="false">ValueHere</e206:Key>
+                <e206:Value d4p1:nil="false">ValueHere</e206:Value>
+              </e206:CustomParameter>
+            </e206:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
@@ -160,11 +160,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e613="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e613:KeyValuePairOfstringstring>
-              <e613:key d4p1:nil="false">ValueHere</e613:key>
-              <e613:value d4p1:nil="false">ValueHere</e613:value>
-            </e613:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e207="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e207:KeyValuePairOfstringstring>
+              <e207:key d4p1:nil="false">ValueHere</e207:key>
+              <e207:value d4p1:nil="false">ValueHere</e207:value>
+            </e207:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -183,6 +183,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetAdGroupsByIdsResponse> GetAdGroupsByIdsAsync(
 	long campaignId,

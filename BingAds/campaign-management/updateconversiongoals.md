@@ -112,11 +112,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e704="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e704:KeyValuePairOfstringstring>
-              <e704:key d4p1:nil="false">ValueHere</e704:key>
-              <e704:value d4p1:nil="false">ValueHere</e704:value>
-            </e704:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e298="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e298:KeyValuePairOfstringstring>
+              <e298:key d4p1:nil="false">ValueHere</e298:key>
+              <e298:value d4p1:nil="false">ValueHere</e298:value>
+            </e298:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -135,6 +135,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<UpdateConversionGoalsResponse> UpdateConversionGoalsAsync(
 	IList<ConversionGoal> conversionGoals)

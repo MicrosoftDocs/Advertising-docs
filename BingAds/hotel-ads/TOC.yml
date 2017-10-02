@@ -3,7 +3,7 @@
 - name: Hotel API
   href: ../hotel-api/hotel-api.md
   items:
-  - name: Get Started with the Hotel API
+  - name: Get Started
     href: ../hotel-api/get-started.md
   - name: Manage Hotel Ad Campaigns
     href: ../hotel-api/manage-hotel-campaigns.md

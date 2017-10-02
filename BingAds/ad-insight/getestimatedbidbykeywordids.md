@@ -72,28 +72,28 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedBidByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedBids xmlns:e472="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e472:KeywordIdEstimatedBid>
-          <e472:KeywordId>ValueHere</e472:KeywordId>
-          <e472:KeywordEstimatedBid d4p1:nil="false">
-            <e472:Keyword d4p1:nil="false">ValueHere</e472:Keyword>
-            <e472:EstimatedBids d4p1:nil="false">
-              <e472:EstimatedBidAndTraffic>
-                <e472:MinClicksPerWeek d4p1:nil="false">ValueHere</e472:MinClicksPerWeek>
-                <e472:MaxClicksPerWeek d4p1:nil="false">ValueHere</e472:MaxClicksPerWeek>
-                <e472:AverageCPC d4p1:nil="false">ValueHere</e472:AverageCPC>
-                <e472:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e472:MinImpressionsPerWeek>
-                <e472:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e472:MaxImpressionsPerWeek>
-                <e472:CTR d4p1:nil="false">ValueHere</e472:CTR>
-                <e472:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e472:MinTotalCostPerWeek>
-                <e472:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e472:MaxTotalCostPerWeek>
-                <e472:Currency>ValueHere</e472:Currency>
-                <e472:MatchType>ValueHere</e472:MatchType>
-                <e472:EstimatedMinBid>ValueHere</e472:EstimatedMinBid>
-              </e472:EstimatedBidAndTraffic>
-            </e472:EstimatedBids>
-          </e472:KeywordEstimatedBid>
-        </e472:KeywordIdEstimatedBid>
+      <KeywordEstimatedBids xmlns:e66="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e66:KeywordIdEstimatedBid>
+          <e66:KeywordId>ValueHere</e66:KeywordId>
+          <e66:KeywordEstimatedBid d4p1:nil="false">
+            <e66:Keyword d4p1:nil="false">ValueHere</e66:Keyword>
+            <e66:EstimatedBids d4p1:nil="false">
+              <e66:EstimatedBidAndTraffic>
+                <e66:MinClicksPerWeek d4p1:nil="false">ValueHere</e66:MinClicksPerWeek>
+                <e66:MaxClicksPerWeek d4p1:nil="false">ValueHere</e66:MaxClicksPerWeek>
+                <e66:AverageCPC d4p1:nil="false">ValueHere</e66:AverageCPC>
+                <e66:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e66:MinImpressionsPerWeek>
+                <e66:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e66:MaxImpressionsPerWeek>
+                <e66:CTR d4p1:nil="false">ValueHere</e66:CTR>
+                <e66:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e66:MinTotalCostPerWeek>
+                <e66:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e66:MaxTotalCostPerWeek>
+                <e66:Currency>ValueHere</e66:Currency>
+                <e66:MatchType>ValueHere</e66:MatchType>
+                <e66:EstimatedMinBid>ValueHere</e66:EstimatedMinBid>
+              </e66:EstimatedBidAndTraffic>
+            </e66:EstimatedBids>
+          </e66:KeywordEstimatedBid>
+        </e66:KeywordIdEstimatedBid>
       </KeywordEstimatedBids>
     </GetEstimatedBidByKeywordIdsResponse>
   </s:Body>
@@ -101,6 +101,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetEstimatedBidByKeywordIdsResponse> GetEstimatedBidByKeywordIdsAsync(
 	IList<long> keywordIds,

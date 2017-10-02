@@ -65,11 +65,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetUsersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <UsersInfo xmlns:e421="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e421:UserInfo>
-          <e421:Id>ValueHere</e421:Id>
-          <e421:UserName d4p1:nil="false">ValueHere</e421:UserName>
-        </e421:UserInfo>
+      <UsersInfo xmlns:e15="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e15:UserInfo>
+          <e15:Id>ValueHere</e15:Id>
+          <e15:UserName d4p1:nil="false">ValueHere</e15:UserName>
+        </e15:UserInfo>
       </UsersInfo>
     </GetUsersInfoResponse>
   </s:Body>
@@ -77,6 +77,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<GetUsersInfoResponse> GetUsersInfoAsync(
 	long customerId,

@@ -36,7 +36,7 @@ The [ApiBatchFault](apibatchfault.md) object derives from the [ApiFault](apifaul
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="operationerrors"></a>OperationErrors|Reserved.|[OperationError](operationerror.md) array|
+|<a name="operationerrors"></a>OperationErrors|An array of OperationError objects that contains the reasons that explain why the service operation failed when the error is not related to a specific item in the batch of items.|[OperationError](operationerror.md) array|
 
 ## <a name="inheritedelements"></a>Inherited Elements
 

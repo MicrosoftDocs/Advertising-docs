@@ -73,11 +73,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e569="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e569:KeyValuePairOfstringstring>
-              <e569:key d4p1:nil="false">ValueHere</e569:key>
-              <e569:value d4p1:nil="false">ValueHere</e569:value>
-            </e569:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e163="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e163:KeyValuePairOfstringstring>
+              <e163:key d4p1:nil="false">ValueHere</e163:key>
+              <e163:value d4p1:nil="false">ValueHere</e163:value>
+            </e163:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -96,6 +96,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 protected async Task<DeleteBudgetsResponse> DeleteBudgetsAsync(
 	IList<long> budgetIds)
