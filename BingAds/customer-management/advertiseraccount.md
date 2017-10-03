@@ -1,4 +1,4 @@
----
+﻿---
 title: AdvertiserAccount Data Object
 ms.service: bing-ads-customer-management
 ms.topic: article
@@ -74,13 +74,14 @@ The [AdvertiserAccount](advertiseraccount.md) object derives from the [Account](
 |<a name="pausereason"></a>PauseReason|A flag value that indicates who paused the account. The following are the possible values:<br /><br />1 ? The user paused the account.<br /><br />2 ? The billing service paused the account.<br /><br />4 ? The user and billing service paused the account.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**unsignedByte**|
 
 ## <a name="remarks"></a>Remarks
+### <a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap
 The following is the list of keys that are available for the *ForwardCompatibilityMap* element of an *Account*.
 
 -   [AutoTag](#autotag)
 
 -   [TrackingUrlTemplate](#trackingurltemplate)
 
-### <a name="autotag"></a>AutoTag
+#### <a name="autotag"></a>AutoTag
 Bing Ads can automatically add UTM tags to your destination URL so you can use your website analytics tool, for example Google Analytics, to track how people got to your website. Auto-tags are applied for example to expanded text ads, keywords, Bing Shopping Campaigns, and Sitelink Extensions. For details about auto-tagging, please see the Bing Ads help article [How do I add UTM tags to my landing page URL?](http://help.bingads.microsoft.com/#apex/3/en/56762/-1).
 
 The  *AutoTag* key and value pair is an account level setting that determines whether to append or replace the supported UTM tracking codes. Tracking codes are inserted dynamically when each ad is shown, and the URL that you set up and stored in Bing Ads is not updated. 
@@ -93,22 +94,32 @@ The possible values for the *AutoTag* key are as follows. If the *AutoTag* key i
 
 * 2 - Bing Ads will automatically append the supported UTM tracking codes, and replace any of the existing and supported UTM tracking codes that you added to your ad or keyword's final URL.
 
-### <a name="trackingurltemplate"></a>TrackingUrlTemplate
+#### <a name="trackingurltemplate"></a>TrackingUrlTemplate
 The tracking template to use as a default for all URLs in your account. The value of the *TrackingUrlTemplate* key can be set to any valid string as described below.
 
 The following validation rules apply to tracking templates.
 
 -   Tracking templates defined for lower level entities e.g. keyword override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](http://go.microsoft.com/fwlink/?LinkID=627130).
 
--   The length of the tracking template is limited to 2,048 characters.
-
-    **Note:** The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
+-   The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 
 -   The tracking template must be a well-formed URL beginning with one of the following: *http://*, *https://*, *{lpurl}*, or *{unescapedlpurl}*.
 
 -   You must include at least one of the following landing page URL parameters: *{lpurl}*, *{lpurl+2}*, *{lpurl+3}*, *{unescapedlpurl}*, *{escapedlpurl}*. Additionally, you can use any dynamic parameter supported by Bing Ads. For a list of supported parameters, see the *Available parameters* sections within the Bing Ads help article [Set up a tracking template](https://help.bingads.microsoft.com/#apex/3/en/56772/-1).
 
 -   Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the final URL will include the key and value placeholders of your custom parameters without substitution. For example if your tracking template is  for example *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither {_season} or {_promocode}  are defined at the campaign, ad group, keyword, or ad level, then the final URL will be the same.
+
+### <a name="taxinformation"></a>AdvertiserAccount TaxInformation
+The following is the list of keys that are available for the *TaxInformation* element of an *AdvertiserAccount*.  
+
+|TaxInformation Key|Description|Countries|
+|---------|---------|---------|
+|TaxId|The account's tax identifier The tax identifier must be valid in the country that you specified in the BusinessAddress element. Without a tax identifier, taxes might apply based on your business location.<br/><br/>**Add:** Required<br/>**Update:** Read-only|Brazil, Australia, Taiwan|
+|GstInNumber|GSTINNumber	This number starts with two numbers representing the state code in which the business is registered followed by a maximum of 13 number and letters.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|India|
+|NZGSTNumber|The NZGSTN Number is an 8 or 9 Digit long TaxID. Without a NZGSTN Number taxes might apply based on your business location.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|New Zealand|
+|PanNumber|The PAN number.<br/><br/>**Add:** Required<br/>**Update:** Read-only|India|
+|TaxType|You can indicate the type of tax. Possible values are Business and Personal.<br/><br/>**Add:** Optional<br/>**Update:** Optional|All|
+|VATNumber|The account's Value Added Tax (VAT) registration number (also known as VAT identifier). This number starts with 2 letters that are specific to each country/region, followed by a maximum of 12 numbers or letters. The VAT number must be valid in the country that you specified in the BusinessAddress element. Without a VAT registration number or exemption certificate, taxes might apply based on your business location.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|Austria, Belgium, Bulgaria, Cyprus, Czech Republic, Germany, Denmark, Estonia, Greece, Spain, Finland, France, United Kingdom, Croatia, Hungary, Ireland, Italy, Lithuania, Luxembourg, Latvia, Malta, The Netherlands, Poland, Portugal, Romania, Sweden, Slovenia, Slovakia|.
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  

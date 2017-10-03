@@ -1,4 +1,4 @@
----
+﻿---
 title: Date Data Object
 ms.service: bing-ads-campaign-management
 ms.topic: article

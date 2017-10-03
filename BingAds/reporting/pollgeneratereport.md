@@ -1,4 +1,4 @@
----
+﻿---
 title: PollGenerateReport Service Operation
 ms.service: bing-ads-reporting
 ms.topic: article

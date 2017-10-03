@@ -1,4 +1,4 @@
----
+﻿---
 title: DataScope Value Set
 ms.service: bing-ads-bulk
 ms.topic: article

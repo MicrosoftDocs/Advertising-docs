@@ -1,4 +1,4 @@
----
+﻿---
 title: AdExtensionByKeywordReportRequest Data Object
 ms.service: bing-ads-reporting
 ms.topic: article

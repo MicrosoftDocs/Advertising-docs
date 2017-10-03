@@ -1,4 +1,4 @@
----
+﻿---
 title: Campaign Management Service Operations
 ms.service: bing-ads-campaign-management
 ms.topic: article

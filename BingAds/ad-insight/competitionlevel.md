@@ -1,4 +1,4 @@
----
+﻿---
 title: CompetitionLevel Value Set
 ms.service: bing-ads-ad-insight
 ms.topic: article

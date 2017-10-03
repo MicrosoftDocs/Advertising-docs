@@ -1,4 +1,4 @@
----
+﻿---
 title: PredicateOperator Value Set
 ms.service: bing-ads-customer-management
 ms.topic: article

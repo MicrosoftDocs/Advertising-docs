@@ -1,4 +1,4 @@
----
+﻿---
 title: SetLabelAssociations Service Operation
 ms.service: bing-ads-campaign-management
 ms.topic: article

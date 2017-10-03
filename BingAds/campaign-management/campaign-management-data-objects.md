@@ -1,4 +1,4 @@
----
+﻿---
 title: Campaign Management Data Objects
 ms.service: bing-ads-campaign-management
 ms.topic: article

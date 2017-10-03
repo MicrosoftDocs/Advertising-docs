@@ -1,4 +1,4 @@
----
+﻿---
 title: GetAccountMonthlySpend Service Operation
 ms.service: bing-ads-customer-billing
 ms.topic: article

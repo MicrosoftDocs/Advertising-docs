@@ -1,4 +1,4 @@
----
+﻿---
 title: AccountThroughAdGroupReportScope Data Object
 ms.service: bing-ads-reporting
 ms.topic: article

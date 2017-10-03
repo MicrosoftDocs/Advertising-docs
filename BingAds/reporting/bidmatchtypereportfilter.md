@@ -1,4 +1,4 @@
----
+﻿---
 title: BidMatchTypeReportFilter Value Set
 ms.service: bing-ads-reporting
 ms.topic: article

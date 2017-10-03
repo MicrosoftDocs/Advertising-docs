@@ -1,4 +1,4 @@
----
+﻿---
 title: KeywordCategory Data Object
 ms.service: bing-ads-ad-insight
 ms.topic: article

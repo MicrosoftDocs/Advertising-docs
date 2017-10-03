@@ -1,4 +1,4 @@
----
+﻿---
 title: QuerySearchParameter Data Object
 ms.service: bing-ads-ad-insight
 ms.topic: article

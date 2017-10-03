@@ -1,4 +1,4 @@
----
+﻿---
 title: UserInvitation Data Object
 ms.service: bing-ads-customer-management
 ms.topic: article

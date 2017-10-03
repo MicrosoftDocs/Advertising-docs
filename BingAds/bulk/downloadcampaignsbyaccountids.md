@@ -1,4 +1,4 @@
----
+﻿---
 title: DownloadCampaignsByAccountIds Service Operation
 ms.service: bing-ads-bulk
 ms.topic: article

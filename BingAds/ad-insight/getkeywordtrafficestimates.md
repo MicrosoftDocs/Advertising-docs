@@ -1,4 +1,4 @@
----
+﻿---
 title: GetKeywordTrafficEstimates Service Operation
 ms.service: bing-ads-ad-insight
 ms.topic: article

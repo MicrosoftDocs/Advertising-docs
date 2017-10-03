@@ -1,4 +1,4 @@
----
+﻿---
 title: Bulk Service Operations
 ms.service: bing-ads-bulk
 ms.topic: article
