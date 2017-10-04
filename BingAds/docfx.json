@@ -36,7 +36,8 @@
       "uhfHeaderId": "MSDocsHeader-BingAds",
       "searchScope": ["Bing Ads"],
       "breadcrumb_path": "/BingAds/breadcrumb/TOC.json",
-      "extendBreadcrumb": "true"
+      "extendBreadcrumb": "true",
+      "titleSuffix": "Bing Ads"
     },
     "fileMetadata": {
       "dev_langs": 
