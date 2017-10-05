@@ -11,15 +11,15 @@ The expanded text ad format works seamlessly on mobile, tablet and desktop devic
 
 ## <a name="bulk"></a>Bulk API for Expanded Text Ads
 The following Bulk record is added for managing expanded text ads.
-* [Expanded Text Ad](~/bulk/expanded-text-ad.md)
+* [Expanded Text Ad](~/bulk-service/expanded-text-ad.md)
 
 ## <a name="campaign"></a>Campaign Management API for Expanded Text Ads
-The [ExpandedTextAd](~/campaign-management/expandedtextad.md) object is derived from the [Ad](~/campaign-management/ad.md) base class and can be managed with any of the existing ad operations e.g. [AddAds](~/campaign-management/addads.md), [DeleteAds](~/campaign-management/deleteads.md), and [UpdateAds](~/campaign-management/updateads.md). 
+The [ExpandedTextAd](~/campaign-management-service/expandedtextad.md) object is derived from the [Ad](~/campaign-management-service/ad.md) base class and can be managed with any of the existing ad operations e.g. [AddAds](~/campaign-management-service/addads.md), [DeleteAds](~/campaign-management-service/deleteads.md), and [UpdateAds](~/campaign-management-service/updateads.md). 
 
-You can include *ExpandedText* as an [AdType](~/campaign-management/adtype.md) in the *AdTypes* request element of the following operations to retrieve expanded text ads.
-* [GetAdsByAdGroupId](~/campaign-management/getadsbyadgroupid.md)
-* [GetAdsByEditorialStatus](~/campaign-management/getadsbyeditorialstatus.md)
-* [GetAdsByIds](~/campaign-management/getadsbyids.md)
+You can include *ExpandedText* as an [AdType](~/campaign-management-service/adtype.md) in the *AdTypes* request element of the following operations to retrieve expanded text ads.
+* [GetAdsByAdGroupId](~/campaign-management-service/getadsbyadgroupid.md)
+* [GetAdsByEditorialStatus](~/campaign-management-service/getadsbyeditorialstatus.md)
+* [GetAdsByIds](~/campaign-management-service/getadsbyids.md)
 
 ## <a name="countdown"></a>Countdowns for Expanded Text Ads
 Countdown customizers let you easily add a countdown ? by day, hour, and then minute ? to an event in your Expanded Text Ad. The countdown, which automatically updates as the event draws nearer, is eye-catching and gives potential customers greater incentive to click your ad.

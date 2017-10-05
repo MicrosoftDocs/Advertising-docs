@@ -21,7 +21,7 @@ To use Bing Ads APIs, you must have a developer token and valid user credentials
 The sandbox and production environments use separate credentials. You can sign up for a [Sandbox](sandbox.md) account [here](https://secure.sandbox.bingads.microsoft.com/Auth?EnvContext=Sandbox). Everyone can use the universal sandbox developer token i.e., **BBD37VB98**.
 
 ## <a name="where-to-use"></a>Where to Use the API Credentials
-When you call a service operation such as [GetCampaignsByAccountId](~/campaign-management/getcampaignsbyaccountid.md), you must specify [request header](#request-header) elements such as DeveloperToken, CustomerId, and CustomerAccountId.
+When you call a service operation such as [GetCampaignsByAccountId](~/campaign-management-service/getcampaignsbyaccountid.md), you must specify [request header](#request-header) elements such as DeveloperToken, CustomerId, and CustomerAccountId.
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -83,7 +83,7 @@ To get a user's customer ID and account ID, you can sign in to the Bing Ads web 
 
 With the Customer Management API you can get the customer and account identifiers for each authenticated user. 
 
-Call [GetUser](~/customer-management/getuser.md) with your Bing Ads credentials and DeveloperToken. Within the Body set the UserId nil. The response will include a [User](~/customer-management/user.md) object that contains the UserId.
+Call [GetUser](~/customer-management-service/getuser.md) with your Bing Ads credentials and DeveloperToken. Within the Body set the UserId nil. The response will include a [User](~/customer-management-service/user.md) object that contains the UserId.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -103,7 +103,7 @@ Call [GetUser](~/customer-management/getuser.md) with your Bing Ads credentials 
 </s:Envelope>
 ```
 
-Then call [SearchAccounts](~/customer-management/getuser.md) with the UserId returned via the previous step. The returned advertiser account (or accounts) will include account and customer identifiers.
+Then call [SearchAccounts](~/customer-management-service/getuser.md) with the UserId returned via the previous step. The returned advertiser account (or accounts) will include account and customer identifiers.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

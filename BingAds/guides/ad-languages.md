@@ -39,9 +39,9 @@ The following are the possible languages that you may use to write your ads and 
 |TraditionalChinese<br /><br />**Note:** You must use *TraditionalChinese* (without space) when setting the language of a campaign or ad group.<br /><br />**Note:** You must use *Traditional Chinese* (with space) when setting request elements using the Ad Insight Service.|ZH|
 		
 ## <a name="productlanguage"></a>Product Language
-Your [customer](~/customer-management/customer.md) language determines the language of the Bing Ads interface. 
+Your [customer](~/customer-management-service/customer.md) language determines the language of the Bing Ads interface. 
 
-The following country codes are supported per customer language e.g. you can use these languages and countries in the [Customer](~/customer-management/customer.md) object when calling the [SignupCustomer](~/customer-management/signupcustomer.md) operation.
+The following country codes are supported per customer language e.g. you can use these languages and countries in the [Customer](~/customer-management-service/customer.md) object when calling the [SignupCustomer](~/customer-management-service/signupcustomer.md) operation.
 
 > [!NOTE]
 > In New Zealand, Bing Ads is available only on the Bing network. For other countries listed below, Bing Ads is available on the Yahoo Bing Network.

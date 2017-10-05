@@ -6,7 +6,7 @@ author: "eric-urban"
 ms.author: "eur"
 ---
 # Geographical Location Codes
-Geographical locations data can be used to for [Location Targeting](~/guides/show-ads-target-audience.md#locationcriterion). You can call the [GetGeoLocationsFileUrl](~/campaign-management/getgeolocationsfileurl.md) operation to get a temporary file URL that can be used to download the latest geographical locations data. You can also get the data from the [Bing Ads Developer Portal](https://developers.azure.bingads.microsoft.com/Account). You must be signed in to the developer portal with a Microsoft account user who has Bing Ads credentials. 
+Geographical locations data can be used to for [Location Targeting](~/guides/show-ads-target-audience.md#locationcriterion). You can call the [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md) operation to get a temporary file URL that can be used to download the latest geographical locations data. You can also get the data from the [Bing Ads Developer Portal](https://developers.azure.bingads.microsoft.com/Account). You must be signed in to the developer portal with a Microsoft account user who has Bing Ads credentials. 
 
 > [!NOTE]
 > As a best practice you should download the file instead of opening it directly through an application such as Microsoft Excel. If you view the locations data in a text editor, be sure to use UTF-8 encoding instead of ANSI, otherwise some characters will not be displayed accurately.
@@ -23,7 +23,7 @@ The comma separated value (CSV) file contains data organized in the following no
 
 
 ### <a name="version2"></a>File Format Version 2.0
-If you specified *Version* as 2.0 when calling the [GetGeoLocationsFileUrl](~/campaign-management/getgeolocationsfileurl.md) operation, the following data is available in the downloaded file. File format version 2.0 is only supported with Bing Ads API Version 11.
+If you specified *Version* as 2.0 when calling the [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md) operation, the following data is available in the downloaded file. File format version 2.0 is only supported with Bing Ads API Version 11.
 
 |Column Name|Description|
 |---------------|---------------|
@@ -48,7 +48,7 @@ Version 2.0 is only supported with Campaign Management API version 11. If you ar
 
 
 ### <a name="version1"></a>File Format Version 1.0
-If you specified *Version* as 1.0 when calling the [GetGeoLocationsFileUrl](~/campaign-management/getgeolocationsfileurl.md) operation, the following data is available in the downloaded file. 
+If you specified *Version* as 1.0 when calling the [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md) operation, the following data is available in the downloaded file. 
 
 > [!IMPORTANT]
 > The locations file Version 1.0 is deprecated in favor of version 2.0. After October 31, 2017 version 1.0 will be sunset and only 2.0 will be supported. In the meantime file format version 1.0 is supported with Bing Ads API Version 10 and Version 11.

@@ -1,32 +1,32 @@
 - name: Overview
   href: index.md
 - name: Hotel API
-  href: ../hotel-api/hotel-api.md
+  href: ../hotel-service/hotel-api.md
   items:
   - name: Get Started
-    href: ../hotel-api/get-started.md
+    href: ../hotel-service/get-started.md
   - name: Manage Hotel Ad Campaigns
-    href: ../hotel-api/manage-hotel-campaigns.md
+    href: ../hotel-service/manage-hotel-campaigns.md
   - name: Hotel API Reference
-    href: ../hotel-api/reference.md
+    href: ../hotel-service/reference.md
   - name: Throttling Requests
-    href: ../hotel-api/throttle-requests.md
+    href: ../hotel-service/throttle-requests.md
   - name: Code Examples
-    href: ../hotel-api/code-examples.md
+    href: ../hotel-service/code-examples.md
     items:
     - name: Subaccount
-      href: ../hotel-api/code-example-subaccount.md
+      href: ../hotel-service/code-example-subaccount.md
     - name: Hotel Group
-      href: ../hotel-api/code-example-hotel-group.md
+      href: ../hotel-service/code-example-hotel-group.md
     - name: Hotel
-      href: ../hotel-api/code-example-hotel.md
+      href: ../hotel-service/code-example-hotel.md
     - name: OAuth
-      href: ../hotel-api/code-example-oauth.md
+      href: ../hotel-service/code-example-oauth.md
       items:
       - name: CodeGrantFlow
-        href: ../hotel-api/code-example-codegrantflow.md
+        href: ../hotel-service/code-example-codegrantflow.md
       - name: Call CodeGrantFlow in
-        href: ../hotel-api/code-example-call-codegrantflow.md
+        href: ../hotel-service/code-example-call-codegrantflow.md
 - name: Transaction Message
   href: ../transaction-message/transaction-message.md
   items:

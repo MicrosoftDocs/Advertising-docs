@@ -42,12 +42,12 @@
     "fileMetadata": {
       "dev_langs": 
       {
-        "ad-insight/**.md": ["csharp", "java", "php", "python"],
-        "bulk/**.md": ["csharp", "java", "php", "python"],
-        "campaign-management/**.md": ["csharp", "java", "php", "python"],
-        "customer-management/**.md": ["csharp", "java", "php", "python"],
-        "customer-billing/**.md": ["csharp", "java", "php", "python"],
-        "reporting/**.md": ["csharp", "java", "php", "python"]
+        "ad-insight-service/**.md": ["csharp", "java", "php", "python"],
+        "bulk-service/**.md": ["csharp", "java", "php", "python"],
+        "campaign-management-service/**.md": ["csharp", "java", "php", "python"],
+        "customer-management-service/**.md": ["csharp", "java", "php", "python"],
+        "customer-billing-service/**.md": ["csharp", "java", "php", "python"],
+        "reporting-service/**.md": ["csharp", "java", "php", "python"]
       },
       "ms.prod": 
       { 
@@ -57,13 +57,13 @@
       }, 
       "ms.service": 
       { 
-        "ad-insight/**.yml": "bing-ads-ad-insight",
-        "customer-billing/**.yml": "bing-ads-customer-billing",
-        "bulk/**.yml": "bing-ads-bulk",
-        "campaign-management/**.yml": "bing-ads-campaign-management",
-        "customer-management/**.yml": "bing-ads-customer-management",
-        "reporting/**.yml": "bing-ads-reporting",
-        "hotel-api/**.yml": "hotel-ads"
+        "ad-insight-service/**.yml": "bing-ads-ad-insight",
+        "customer-billing-service/**.yml": "bing-ads-customer-billing",
+        "bulk-service/**.yml": "bing-ads-bulk",
+        "campaign-management-service/**.yml": "bing-ads-campaign-management",
+        "customer-management-service/**.yml": "bing-ads-customer-management",
+        "reporting-service/**.yml": "bing-ads-reporting",
+        "hotel-api-service/**.yml": "hotel-ads"
       }, 
       "ms.technology": 
       { 
