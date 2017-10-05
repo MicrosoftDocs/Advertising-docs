@@ -41,7 +41,7 @@ if __name__ == '__main__':
     TARGET_ID_KEY=-1
     CAMPAIGN_ID_KEY=-123
 
-    FILE_DIRECTORY='c:/bulk/'
+    FILE_DIRECTORY='c:/bulk-service/'
     RESULT_FILE_NAME='result.csv'
     UPLOAD_FILE_NAME='upload.csv'
     FILE_TYPE = DownloadFileType.csv
