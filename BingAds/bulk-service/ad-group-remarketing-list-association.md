@@ -126,9 +126,11 @@ The percentage you want to increase/decrease the bid amount for the remarketing 
 
 Supported values are negative ninety (-90.00) through positive nine hundred (900.00).
 
-**Important:** If not specified, the default bid adjustment value is *0*. The default value is subject to change.
+> [!IMPORTANT]
+> If not specified, the default bid adjustment value is *0*. The default value is subject to change.
 
-**Important:** Bing Ads won't apply any bid boosts until the associated remarketing list has at least 1,000 users. If someone qualifies to be part of multiple remarketing lists AND the remarketing lists are associated with the same ad group with different bid adjustments, the highest bid adjustment will be applied. For more information about Remarketing in Paid Search, see [Reach your audience](http://help.bingads.microsoft.com/#apex/3/en/n5022/1).
+> [!IMPORTANT]
+> Bing Ads won't apply any bid boosts until the associated remarketing list has at least 1,000 users. If someone qualifies to be part of multiple remarketing lists AND the remarketing lists are associated with the same ad group with different bid adjustments, the highest bid adjustment will be applied. For more information about Remarketing in Paid Search, see [Reach your audience](http://help.bingads.microsoft.com/#apex/3/en/n5022/1).
 
 **Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    

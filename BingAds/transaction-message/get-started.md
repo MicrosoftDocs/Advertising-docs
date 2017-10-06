@@ -64,7 +64,7 @@ Before sending Bing the transaction message, use the [Transaction XSD](https://b
 
 The following example shows using xmllint to validate the message contained in SampleTransaction.xml.
 
-```
+```powershell
 xmllint.exe --schema transaction.xsd SampleTransaction.xml
 ```
 
@@ -93,7 +93,7 @@ If you compress the transaction message (recommended), include the following hea
 
 The following shows an example POST request.
 
-```
+```http
 POST https://hotels.api.bingads.microsoft.com/api/customers/abc123/transactions HTTP/1.1
 Content-Type: application/xml; charset=utf-8
 Host: hotels.api.bingads.microsoft.com

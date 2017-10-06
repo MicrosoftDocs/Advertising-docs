@@ -37,7 +37,7 @@ You may also specify the following optional headers:
 
 The following shows an example POST request.
 
-```
+```http
 POST https://hotels.api.bingads.microsoft.com/api/customers/abc123/transactions HTTP/1.1
 Content-Type: application/xml; charset=utf-8
 Host: hotels.api.bingads.microsoft.com

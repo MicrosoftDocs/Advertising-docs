@@ -22,7 +22,7 @@ The example web application sends authentication requests to the Microsoft accou
 
 5.  Within the **Views** -&gt; **Home** folder of the BingAdsWebApp project, open the Index.cshtml file and replace its contents with the following code block. This defines the web page view that displays results of the service calls that will be written further below.
 
-    ```
+    ```no-highlight
     @{
     ViewBag.Title = "Index";
     }

@@ -10,6 +10,6 @@ Bing provides the [Transaction XSD](https://bhacstatic.blob.core.windows.net/sch
 
 The following example shows using xmllint to validate the message contained in SampleTransaction.xml.
 
-```
+```powershell
 xmllint.exe --schema transaction.xsd SampleTransaction.xml
 ```

@@ -245,7 +245,7 @@ The example web application sends authentication requests to the Microsoft accou
 ## <a name="sandbox"></a>Configuring Sandbox
 To use the [Sandbox](../guides/sandbox.md) environment, create a new text file named *bingads.properties* within your project source root directory e.g. **ProjectName\src\bingads.properties** and add the following text. The following are the complete contents of the *bingads.properties* file. If the sandbox environment setting is malformed or missing, the default environment is production.
 
-```
+```no-highlight
 environment=Sandbox
 ```
 

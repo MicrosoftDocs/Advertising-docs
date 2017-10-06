@@ -8,7 +8,7 @@ ms.author: "eur"
 # Entity Hierarchy and Limits
 The following figure shows the high level Bing Ads entity object model from the perspective of one customer that has one or more accounts. For information on services available to manage Bing Ads entities, see [Bing Ads API Overview](~/guides/index.md).
 
-![Entity Hierarchy](/Image/entity-hierarchy.png)  
+![Entity Hierarchy](../guides/media/entity-hierarchy.png)  
 
 A subset of entities with property limits (subject to change) are listed below. For a comprehensive list of entities and limits please see the [Bing Ads API reference](~/guides/reference.md) documentation. 
 

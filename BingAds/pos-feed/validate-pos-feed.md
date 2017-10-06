@@ -10,6 +10,6 @@ Bing provides the [PointsOfSale XSD](https://bhacstatic.blob.core.windows.net/sc
 
 The following example shows using xmllint to validate the SamplePointsOfSale.xml feed file.
 
-```
+```powershell
 xmllint.exe --schema point_of_sale.xsd SamplePointsOfSale.xml
 ```

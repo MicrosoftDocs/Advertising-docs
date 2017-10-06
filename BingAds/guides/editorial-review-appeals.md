@@ -6,17 +6,12 @@ author: "eric-urban"
 ms.author: "eur"
 ---
 # Editorial Review and Appeals
-For an ad to be eligible to be served, it must meet the editorial guidelines of the market that it serves. The same is true for ad extensions and keywords. For editorial guidelines by market, see [Editorial Guidelines](http://advertise.bingads.microsoft.com/editorial-guidelines).
+For an ad to be eligible to be served, it must meet the editorial guidelines of the market that it serves. The same is true for ad extensions and keywords. 
+
+> [!TIP]
+> For editorial guidelines, see the [Bing Ads Policies](https://help.bingads.microsoft.com/#apex/3/en/52023/1) help article.
 
 For information about the editorial review process and how to determine whether the entity passed or failed the review, see the following sections.
-
--   [Entities and Delivery Status](#entitydeliverystatus)
-
--   [Ad Editorial Review](#adeditorialreview)
-
--   [Ad Extension Editorial Review](#adextensioneditorialreview)
-
--   [Keyword Editorial Review](#keywordeditorialreview)
 
 To find ads or keywords that failed the editorial review process, call the respective [GetAdsByEditorialStatus](~/campaign-management-service/getadsbyeditorialstatus.md) or [GetKeywordsByEditorialStatus](~/campaign-management-service/getkeywordsbyeditorialstatus.md) operation. Set the *EditorialStatus* element to Disapproved.
 
@@ -43,8 +38,6 @@ Before an ad can be served, it must pass editorial review. An initial review is 
 
 The ad then goes through an in-depth review in the background. To find ads that failed the more in-depth review, call the [GetAdsByEditorialStatus](~/campaign-management-service/getadsbyeditorialstatus.md) operation. To determine the reason why an ad failed the review and whether it is appealable, call the [GetEditorialReasonsByIds](~/campaign-management-service/geteditorialreasonsbyids.md) operation.
 
-If the status of an ad group is *Draft*, the ads will begin the in-depth review when you update its status to *Paused* or *Active*.
-
 If an ad is updated, it is subject to the same review process as a new ad. Effectively the ad is paused unless or until the updated ad copy is immediately approved.
 
 ## <a name="adextensioneditorialreview"></a>Ad Extension Editorial Review
@@ -61,8 +54,6 @@ To determine whether the extension passed the in-depth review with associated en
 When you add keywords, they go through an initial editorial review. If a keyword fails the initial review, the [AddKeywords](~/campaign-management-service/addkeywords.md) operation fails and throws an editorial fault that identifies the editorial issues. If the initial review succeeds, the keywords are added to the ad group. They then go through an in-depth review in the background.
 
 To find keywords that failed the more in-depth review, call the [GetKeywordsByEditorialStatus](~/campaign-management-service/getkeywordsbyeditorialstatus.md) operation. To determine the reason why a keyword failed the review and whether it is appealable, call the [GetEditorialReasonsByIds](~/campaign-management-service/geteditorialreasonsbyids.md) operation.
-
-If the status of an ad group is *Draft*, the keywords will begin the in-depth review when you update its status to *Paused* or *Active*.
 
 ## See Also
 [Campaign Management Service Reference](~/campaign-management-service/campaign-management-service-reference.md)

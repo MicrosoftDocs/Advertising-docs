@@ -126,7 +126,8 @@ The percentage you want to increase/decrease the bid amount for the custom audie
 
 Supported values are negative ninety (-90.00) through positive nine hundred (900.00).
 
-**Important:** If not specified, the default bid adjustment value is *0*. The default value is subject to change.
+> [!IMPORTANT]
+> If not specified, the default bid adjustment value is *0*. The default value is subject to change.
 
 **Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    

@@ -49,7 +49,7 @@ Typically indicates that while the credentials are correct for the target enviro
 ### HTTP 500
 All Bing Ads services adhere to the Simple Object Access Protocol (SOAP) 1.1 specification whereby errors are returned with a HTTP 500 code. For example, see the following.
 
-```
+```http
 HTTP/1.1 500 Internal Server Error
 ```
 This is not in and of itself representative of an actionable code, and you should inspect the fault details for more information on the specific error.

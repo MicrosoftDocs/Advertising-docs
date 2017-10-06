@@ -39,7 +39,7 @@ For an example that gets and updates subaccounts, see [C# example](../hotel-serv
 
 To get the list of subaccounts, send the following request.
 
-```
+```http
 GET https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts HTTP/1.1
 Authorization: Bearer <oauthaccesstoken>
 Accept: application/json
@@ -48,7 +48,7 @@ Host: <host>
 
 The response contains a [collectionresponse](../hotel-service/reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [SubAccount](../hotel-service/reference.md#subaccount) objects.
 
-```
+```http
 HTTP/1.1 200 OK
 x-ms-requestid: a21451ae-f86b-4a19-a00e-9265b59a99ec
 x-ms-trackingid: 7cd2710c-821a-48e8-99af-efdc05aebe86
@@ -87,7 +87,7 @@ To pause a subaccount, set the `Bid` or `Budget` property to zero (0.0). All hot
 
 To update any of these properties, send the following request. The body of the request contains a [subaccount](../hotel-service/reference.md#subaccount) object with only the properties that you want to update. This example shows adding multipliers.
 
-```
+```http
 PATCH https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>') HTTP/1.1
 Authorization: Bearer <oauthaccesstoken>
 Content-Type: application/json
@@ -141,7 +141,7 @@ Content-Length: 682
 
 To get a specific subaccount, send the following request. The subaccount ID must be wrapped in single quotes as shown.
 
-```
+```http
 GET https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>') HTTP/1.1
 Authorization: Bearer <oauthaccesstoken>
 Accept: application/json
@@ -150,7 +150,7 @@ Host: <host>
 
 The response contains a contains a [subaccount](../hotel-service/reference.md#subaccount) object.
 
-```
+```http
 HTTP/1.1 200 OK
 x-ms-requestid: 58d37dd1-78ae-4ced-91e4-7f57e647ddee
 x-ms-trackingid: 5345bf4f-e64a-47a6-8d1e-43cc0231dc1b
@@ -228,7 +228,7 @@ For an example that gets, adds, and updates hotel groups, see [C# example](../ho
 
 To get the list of hotel groups under a subaccount, send the following request.
 
-```
+```http
 GET https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups HTTP/1.1
 Authorization: Bearer <oauthaccesstoken>
 Accept: application/json
@@ -237,7 +237,7 @@ Host: <host>
 
 The response contains a [collectionresponse](../hotel-service/reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [HotelGroup](../hotel-service/reference.md#hotelgroup) objects. This example shows the default Ungrouped group.
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json; odata.metadata=minimal
 x-ms-requestid: f526c0e6-f7d8-48c7-9270-8fb0a0465153
@@ -279,7 +279,7 @@ For details about the valid bid range for your market, see the Currency Value ta
 
 The following example creates a hotel group that inherits the bid and bid multipliers from the subaccount.
 
-```
+```http
 POST https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups HTTP/1.1
 Authorization: Bearer <oauthaccesstoken>
 Accept: application/json
@@ -291,7 +291,7 @@ Content-Length: 26
 
 The response is an [addresponse](../hotel-service/reference.md#addresponse) object that contains the ID of the added hotel group.
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Length: 140
 Content-Type: application/json; odata.metadata=minimal
@@ -319,7 +319,7 @@ To pause a hotel group, set the `Bid` property to zero (0.0). All hotels in the 
 
 To update any of these properties, send the following request. The body of the request contains a [hotelgroup](../hotel-service/reference.md#hotelgroup) object with only the properties that you want to update. This example shows adding a bid and multipliers.
 
-```
+```http
 PATCH https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups('<hotelgroupid>') HTTP/1.1
 Authorization: Bearer <oauthaccesstoken>
 Content-Type: application/json
@@ -362,7 +362,7 @@ Host: <host>
 
 To get a specific hotel group, send the following request. The hotel group ID must be wrapped in single quotes as shown.
 
-```
+```http
 GET https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups('<hotelgroupid>') HTTP/1.1
 Authorization: Bearer <oauthaccesstoken>
 Accept: application/json
@@ -371,7 +371,7 @@ Host: <host>
 
 The response contains a [hotelgroup](../hotel-service/reference.md#hotelgroup) object.
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Length: 813
 Content-Type: application/json; odata.metadata=minimal
@@ -434,7 +434,7 @@ For an example that gets and updates hotels, see [C# example](../hotel-service/c
 
 To get the list of hotels in a hotel group, send the following request.
 
-```
+```http
 GET https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups('<hotelgroupid>')/Hotels HTTP/1.1
 Authorization: Bearer <oauthaccesstoken>
 Accept: application/json
@@ -443,7 +443,7 @@ Host: <host>
 
 The response contains a [collectionresponse](../hotel-service/reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [Hotel](../hotel-service/reference.md#hotel) objects.
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Length: 1611
 Content-Type: application/json; odata.metadata=minimal
@@ -532,7 +532,7 @@ To pause a hotel, set the `Bid` property to zero (0.0). Paused hotels will not s
 
 To update any of these properties, send the following request. The body of the request contains a [hotel](../hotel-service/reference.md#hotel) object with only the properties that you want to update. This example shows updating the multipliers.
 
-```
+```json
 {
   "BidMultipliers":[
     {
@@ -554,7 +554,7 @@ To update any of these properties, send the following request. The body of the r
 
 To get a specific hotel, send the following request. The hotel ID must be wrapped in single quotes as shown.
 
-```
+```http
 GET https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups('<hotelgroupid>')/Hotels('<hotelid>') HTTP/1.1
 Authorization: Bearer <oauthaccesstoken>
 Accept: application/json
@@ -563,7 +563,7 @@ Host: <host>
 
 The response contains a [hotel](../hotel-service/reference.md#hotel) object.
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Length: 1122
 Content-Type: application/json; odata.metadata=minimal
@@ -600,7 +600,7 @@ x-ms-trackingid: ceb70eb3-36ca-4b99-a5f7-b1a04de1e4ae
 When you import your hotel feed file, the hotels go in the default Ungrouped hotel group. If you create new hotel groups so you can logically organize your hotel, you'll need to move them from the Ungrouped hotel group to one of the groups you created.
 
 To move a hotel from one group to another, send the following request. The body of the request is an [associationcollection](../hotel-service/reference.md#associationcollection) object. 
-```
+```http
 POST https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/Associate HTTP/1.1
 Authorization: Bearer <oauthaccesstoken>
 Content-Type: application/json
@@ -625,7 +625,7 @@ The Associate method should always return success. If one or more of the associa
 
 The response contains a [collectionresponse](../hotel-service/reference.md#collectionresponse) object. If the all associations succeeded, the `value` array is empty. Otherwise, `value` contains a [HotelAssociation](../hotel-service/reference.md#hotelassociation) object for each association that failed. The association's `Errors` field contains the reasons for the failure.
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Length: 770
 Content-Type: application/json; odata.metadata=minimal
@@ -654,7 +654,7 @@ x-ms-trackingid: a5f2510e-709a-4370-876e-bfb05ef2b8df
 
 To get a list of all hotel and hotel group associations for a subaccount, send the following request:
 
-```
+```http
 GET https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/Associations HTTP/1.1
 Authorization: Bearer <oauthaccesstoken>
 Accept: application/json
@@ -663,7 +663,7 @@ Host: <host>
 
 The response contains a [collectionresponse](../hotel-service/reference.md#collectionresponse) object. The `context` field identifies the type of object in the `value` array. In this case, `value` contains a list of [HotelAsssociation](../hotel-service/reference.md#hotelassociation) objects.
 
-```
+```http
 HTTP/1.1 200 OK
 Content-Length: 6880
 Content-Type: application/json; odata.metadata=minimal

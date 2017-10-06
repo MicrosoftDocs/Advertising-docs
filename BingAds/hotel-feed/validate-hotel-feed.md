@@ -10,6 +10,6 @@ Bing provides the [Hotel XSD](https://bhacstatic.blob.core.windows.net/schemas/h
 
 The following example shows using xmllint to validate the SampleHotelsFeed.xml feed file.
 
-```
+```powershell
 xmllint.exe --schema hotel.xsd SampleHotelsFeed.xml
 ```

@@ -51,8 +51,7 @@ Do not try to instantiate an *AdExtension*. You can create one or more following
 ## <a name="remarks"></a>Remarks
 If you generate the SOAP manually, use the *type* attribute of the `<AdExtension>` node as shown in the following example to specify the type of ad extension.
 
-```
-xml
+```xml
 <AdExtension i:type="ReviewAdExtension" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
     <Id i:nil="true" />
     <Status i:nil=?true? />

@@ -452,7 +452,7 @@ Using a Microsoft account requires that you interact with a web browser control 
 > [!IMPORTANT]
 > Be sure you are running this application from a secure location and store the refresh token securely.
 
-```
+```python
 authorization_data.authentication.token_refreshed_callback=save_refresh_token
 ```
 

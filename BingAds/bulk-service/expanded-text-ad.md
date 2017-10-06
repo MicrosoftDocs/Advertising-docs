@@ -140,7 +140,8 @@ var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadPa
 ### <a name="adformatpreference"></a>Ad Format Preference
 The *Ad Format Preference* field is used to indicate whether or not you prefer the ad copy to be shown to users as a search or native ad. Search ads tend to be written as a call to action, whereas native ads should be written in more of an informational style. By defining at least one ad that should be used as native, the search ads will only be shown in search results.
 
-**Important:** You must define at least one expanded text ad per ad group that is not native preferred, otherwise the ad copy of all expanded text ads will be eligible for both search and native ads.
+> [!IMPORTANT]
+> You must define at least one expanded text ad per ad group that is not native preferred, otherwise the ad copy of all expanded text ads will be eligible for both search and native ads.
 
 Possible values are *Native* and *All*. If set to *All*, the ad will be eligible for both search and native ad formats. If set to *Native*, the ad will only be eligible for the native ad format.
 

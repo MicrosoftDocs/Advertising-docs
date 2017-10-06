@@ -75,7 +75,7 @@ For one time or short term authentication, you should follow the implicit grant 
 
 1.  Request user consent through a web browser control. Connect to the authorization endpoint, by using a URL in the following format. Replace CLIENT_ID with the value configured in [Registering Your Application](#registerapplication).
 
-    ```
+    ```http
     https://login.live.com/oauth20_authorize.srf?client_id=CLIENT_ID&scope=bingads.manage&response_type=token&redirect_uri=https://login.live.com/oauth20_desktop.srf&state=ClientStateGoesHere
     ```
     > [!NOTE]
@@ -99,7 +99,7 @@ For repeat or long term authentication, you should follow the authorization code
 
 1.  Request user consent through a web browser control. Connect to the authorization endpoint, by using a URL in the following format. Replace CLIENT_ID with the value configured in [Registering Your Application](#registerapplication).
 
-    ```
+    ```http
     https://login.live.com/oauth20_authorize.srf?client_id=CLIENT_ID&scope=bingads.manage&response_type=code&redirect_uri=REDIRECTURI&state=ClientStateGoesHere
     ```
     > [!NOTE]
@@ -120,7 +120,7 @@ For repeat or long term authentication, you should follow the authorization code
 
 4.  Use the authorization code to request the access token and refresh token. The body of the request must include the request parameters and the Content-Type header must be set to *application/x-www-form-urlencoded*. Set the code parameter to the value of the authorization code retrieved in the previous step, and the grant type set to *authorization_code*. The *redirect_uri* must exactly match the redirect URI used to obtain the authorization code. Be sure to encode the redirect URL. If you registered a web application, include the *client_secret* parameter and set it to the value provisioned in [Registering Your Application](#registerapplication). The following shows an example POST request for a desktop app. 
 
-    ```
+    ```http
     POST https://login.live.com/oauth20_token.srf HTTP/1.1
     Accept: application/json
     Content-Type: application/x-www-form-urlencoded
@@ -142,7 +142,7 @@ For repeat or long term authentication, you should follow the authorization code
 
     The body of the request must include the request parameters and the Content-Type header must be set to *application/x-www-form-urlencoded*. Set the refresh token parameter to the value of the refresh token retrieved in the previous step, and the grant type set to *refresh_token*. The *redirect_uri* must exactly match the redirect URI used to obtain the authorization code. Be sure to encode the redirect URL. If you registered a web application, include the *client_secret* parameter and set it to the value provisioned in [Registering Your Application](#registerapplication). The following shows an example POST request for a desktop app. 
 
-    ```
+    ```http
     POST https://login.live.com/oauth20_token.srf HTTP/1.1
     Accept: application/json
     Content-Type: application/x-www-form-urlencoded
@@ -156,7 +156,7 @@ For repeat or long term authentication, you should follow the authorization code
     
 7.  You may need to start again from Step 1 and request user consent if, for example you [signed the user out](#userlogout), the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf. In that case, the authorization service would return an invalid grant error as shown in the following example.
 
-    ```
+    ```json
     {"error":"invalid_grant","error_description":"The user could not be authenticated or the grant is expired. The user must first sign in and if needed grant the client application access to the requested scope."}
     ```
 
@@ -166,7 +166,7 @@ To sign a user out, perform the following steps:
 2.  Perform any sign out actions in your application (for example, cleaning up local state, removing any cached items, etc.).
 3.  Make a call to the authorization web service using this URL:
 
-    ```
+    ```http
     GET https://login.live.com/oauth20_logout.srf?client_id={client_id}&redirect_uri={redirect_uri}
     ```
     

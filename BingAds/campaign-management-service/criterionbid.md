@@ -37,7 +37,7 @@ For Java and the .NET languages, do not set the *Type* element because the value
 
 If you generate the SOAP manually, use the *type* attribute of the `<CriterionBid>` node (as shown in the following example) to specify the type of criterion.
 
-```
+```xml
 <CriterionBid i:type="BidMultiplier" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
      . . .
 </CriterionBid>

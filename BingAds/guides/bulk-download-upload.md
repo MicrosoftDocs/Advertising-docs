@@ -87,7 +87,7 @@ The following is an overview of the request settings and upload workflow.
 
     Here is an example.
 
-    ```
+    ```http
     POST <UploadUrl> HTTP/1.1
     AuthenticationToken: <AuthenticationToken>
     DeveloperToken: <DeveloperToken>
@@ -99,7 +99,7 @@ The following is an overview of the request settings and upload workflow.
 4.  Check the HTTP response status code. If the HTTP response status code is 200, then the file was received successfully by Bing Ads. If the HTTP response status code is 401, then authentication failed e.g. *UserName*, *Password*, *AuthenticationToken*, or *DeveloperToken* was invalid.  If the HTTP response status code is 400, then you should also check the response stream for [Bing Ads Operation Error Codes](../guides/operation-error-codes.md) for example, in the range of 3220 - 3227. 
 
     Here is an example error response message that the URL had already been used to upload a bulk file.
-    ```
+    ```http
     HTTP/1.1 400 Bad Request
     Cache-Control: private
     Content-Type: application/json; charset=utf-8

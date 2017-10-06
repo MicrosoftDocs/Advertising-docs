@@ -47,15 +47,15 @@ The `Transaction` element contains a list of [Result](../transaction-message/ref
 
 The following shows a `Result` element that specifies the required child elements.
 
-```
-  <Result>
-    <Property>13579</Property>
-    <Checkin>2017-06-10</Checkin>
-    <Nights>2</Nights>
-    <Baserate currency="USD">159.99</Baserate>
-    <Tax currency="USD">20.00</Tax>
-    <OtherFees currency="USD">4.00</OtherFees>
-  </Result>
+```xml
+<Result>
+  <Property>13579</Property>
+  <Checkin>2017-06-10</Checkin>
+  <Nights>2</Nights>
+  <Baserate currency="USD">159.99</Baserate>
+  <Tax currency="USD">20.00</Tax>
+  <OtherFees currency="USD">4.00</OtherFees>
+</Result>
 ```
 
 The `Property` ID must match the ID of a property in your hotel feed file. The `Checkin` date must be within the 90-day advanced booking window, and `Nights` must be in the range 1 through 14.
@@ -114,21 +114,21 @@ To remove an itinerary, set its `Baserate`, `Tax`, and `OtherFees` elements to -
 
 The following shows a `Result` element that includes the optional child elements.
 
-```
-  <Result>
-    <Property>13579</Property>
-    <Checkin>2017-06-10</Checkin>
-    <Nights>2</Nights>
-    <Baserate currency="USD">159.99</Baserate>
-    <Tax currency="USD">20.00</Tax>
-    <OtherFees currency="USD">4.00</OtherFees>
-    <ChargeCurrency>deposit</ChargeCurrency>
-    <Custom1>summer2017</Custom1>
-    <AllowablePointsOfSale>
-      <PointOfSale id="mobile"/>
-      <PointOfSale id="desktop"/>
-    </AllowablePointsOfSale>
-  </Result>
+```xml
+<Result>
+  <Property>13579</Property>
+  <Checkin>2017-06-10</Checkin>
+  <Nights>2</Nights>
+  <Baserate currency="USD">159.99</Baserate>
+  <Tax currency="USD">20.00</Tax>
+  <OtherFees currency="USD">4.00</OtherFees>
+  <ChargeCurrency>deposit</ChargeCurrency>
+  <Custom1>summer2017</Custom1>
+  <AllowablePointsOfSale>
+    <PointOfSale id="mobile"/>
+    <PointOfSale id="desktop"/>
+  </AllowablePointsOfSale>
+</Result>
 ```
 
 Use the `ChargeCurrency` element to specify when the user is charged for the booking. By default, the user pays when they book (this is the Web option). This example uses Deposit, which asks the user to pay a portion at booking and the remainder later (for example, when they check out).
