@@ -1,4 +1,4 @@
----
+﻿---
 title: AddConversionGoals Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -117,11 +117,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e136="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e136:KeyValuePairOfstringstring>
-              <e136:key d4p1:nil="false">ValueHere</e136:key>
-              <e136:value d4p1:nil="false">ValueHere</e136:value>
-            </e136:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e86="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e86:KeyValuePairOfstringstring>
+              <e86:key d4p1:nil="false">ValueHere</e86:key>
+              <e86:value d4p1:nil="false">ValueHere</e86:value>
+            </e86:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -142,7 +142,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<AddConversionGoalsResponse> AddConversionGoalsAsync(
+public async Task<AddConversionGoalsResponse> AddConversionGoalsAsync(
 	IList<ConversionGoal> conversionGoals)
 {
 	var request = new AddConversionGoalsRequest

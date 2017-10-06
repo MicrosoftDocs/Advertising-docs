@@ -1,4 +1,4 @@
----
+﻿---
 title: AddMedia Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -87,7 +87,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<AddMediaResponse> AddMediaAsync(
+public async Task<AddMediaResponse> AddMediaAsync(
 	long accountId,
 	IList<Media> media)
 {
@@ -102,7 +102,7 @@ protected async Task<AddMediaResponse> AddMediaAsync(
 ```
 ```java
 static AddMediaResponse addMedia(
-	long accountId,
+	java.lang.Long accountId,
 	ArrayOfMedia media) throws RemoteException, Exception
 {
 	AddMediaRequest request = new AddMediaRequest();

@@ -1,4 +1,4 @@
----
+﻿---
 title: TrafficEstimate Data Object
 ms.service: bing-ads-ad-insight-service
 ms.topic: article

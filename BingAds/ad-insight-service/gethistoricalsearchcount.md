@@ -1,4 +1,4 @@
----
+﻿---
 title: GetHistoricalSearchCount Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -63,15 +63,15 @@ The following template shows the order of the [body](#request-body) and [header]
       <PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:string>ValueHere</a1:string>
       </PublisherCountries>
-      <StartDate xmlns:e73="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
-        <e73:Day>ValueHere</e73:Day>
-        <e73:Month>ValueHere</e73:Month>
-        <e73:Year>ValueHere</e73:Year>
+      <StartDate xmlns:e16="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
+        <e16:Day>ValueHere</e16:Day>
+        <e16:Month>ValueHere</e16:Month>
+        <e16:Year>ValueHere</e16:Year>
       </StartDate>
-      <EndDate xmlns:e74="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
-        <e74:Day>ValueHere</e74:Day>
-        <e74:Month>ValueHere</e74:Month>
-        <e74:Year>ValueHere</e74:Year>
+      <EndDate xmlns:e17="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
+        <e17:Day>ValueHere</e17:Day>
+        <e17:Month>ValueHere</e17:Month>
+        <e17:Year>ValueHere</e17:Year>
       </EndDate>
       <TimePeriodRollup i:nil="false">ValueHere</TimePeriodRollup>
       <Devices i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -92,25 +92,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetHistoricalSearchCountResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordSearchCounts xmlns:e75="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e75:KeywordSearchCount>
-          <e75:Keyword d4p1:nil="false">ValueHere</e75:Keyword>
-          <e75:SearchCountsByAttributes d4p1:nil="false">
-            <e75:SearchCountsByAttributes>
-              <e75:Device d4p1:nil="false">ValueHere</e75:Device>
-              <e75:HistoricalSearchCounts d4p1:nil="false">
-                <e75:HistoricalSearchCountPeriodic>
-                  <e75:SearchCount>ValueHere</e75:SearchCount>
-                  <e75:DayMonthAndYear d4p1:nil="false">
-                    <e75:Day>ValueHere</e75:Day>
-                    <e75:Month>ValueHere</e75:Month>
-                    <e75:Year>ValueHere</e75:Year>
-                  </e75:DayMonthAndYear>
-                </e75:HistoricalSearchCountPeriodic>
-              </e75:HistoricalSearchCounts>
-            </e75:SearchCountsByAttributes>
-          </e75:SearchCountsByAttributes>
-        </e75:KeywordSearchCount>
+      <KeywordSearchCounts xmlns:e18="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e18:KeywordSearchCount>
+          <e18:Keyword d4p1:nil="false">ValueHere</e18:Keyword>
+          <e18:SearchCountsByAttributes d4p1:nil="false">
+            <e18:SearchCountsByAttributes>
+              <e18:Device d4p1:nil="false">ValueHere</e18:Device>
+              <e18:HistoricalSearchCounts d4p1:nil="false">
+                <e18:HistoricalSearchCountPeriodic>
+                  <e18:SearchCount>ValueHere</e18:SearchCount>
+                  <e18:DayMonthAndYear d4p1:nil="false">
+                    <e18:Day>ValueHere</e18:Day>
+                    <e18:Month>ValueHere</e18:Month>
+                    <e18:Year>ValueHere</e18:Year>
+                  </e18:DayMonthAndYear>
+                </e18:HistoricalSearchCountPeriodic>
+              </e18:HistoricalSearchCounts>
+            </e18:SearchCountsByAttributes>
+          </e18:SearchCountsByAttributes>
+        </e18:KeywordSearchCount>
       </KeywordSearchCounts>
     </GetHistoricalSearchCountResponse>
   </s:Body>
@@ -120,7 +120,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetHistoricalSearchCountResponse> GetHistoricalSearchCountAsync(
+public async Task<GetHistoricalSearchCountResponse> GetHistoricalSearchCountAsync(
 	IList<string> keywords,
 	string language,
 	IList<string> publisherCountries,
@@ -146,11 +146,11 @@ protected async Task<GetHistoricalSearchCountResponse> GetHistoricalSearchCountA
 ```java
 static GetHistoricalSearchCountResponse getHistoricalSearchCount(
 	ArrayOfstring keywords,
-	string language,
+	java.lang.String language,
 	ArrayOfstring publisherCountries,
 	DayMonthAndYear startDate,
 	DayMonthAndYear endDate,
-	string timePeriodRollup,
+	java.lang.String timePeriodRollup,
 	ArrayOfstring devices) throws RemoteException, Exception
 {
 	GetHistoricalSearchCountRequest request = new GetHistoricalSearchCountRequest();

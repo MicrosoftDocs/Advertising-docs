@@ -1,4 +1,4 @@
----
+﻿---
 title: GetHistoricalKeywordPerformance Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -86,23 +86,23 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetHistoricalKeywordPerformanceResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordHistoricalPerformances xmlns:e72="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e72:KeywordHistoricalPerformance>
-          <e72:Keyword d4p1:nil="false">ValueHere</e72:Keyword>
-          <e72:KeywordKPIs d4p1:nil="false">
-            <e72:KeywordKPI>
-              <e72:Device d4p1:nil="false">ValueHere</e72:Device>
-              <e72:MatchType>ValueHere</e72:MatchType>
-              <e72:AdPosition>ValueHere</e72:AdPosition>
-              <e72:Clicks>ValueHere</e72:Clicks>
-              <e72:Impressions>ValueHere</e72:Impressions>
-              <e72:AverageCPC>ValueHere</e72:AverageCPC>
-              <e72:CTR>ValueHere</e72:CTR>
-              <e72:TotalCost>ValueHere</e72:TotalCost>
-              <e72:AverageBid>ValueHere</e72:AverageBid>
-            </e72:KeywordKPI>
-          </e72:KeywordKPIs>
-        </e72:KeywordHistoricalPerformance>
+      <KeywordHistoricalPerformances xmlns:e15="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e15:KeywordHistoricalPerformance>
+          <e15:Keyword d4p1:nil="false">ValueHere</e15:Keyword>
+          <e15:KeywordKPIs d4p1:nil="false">
+            <e15:KeywordKPI>
+              <e15:Device d4p1:nil="false">ValueHere</e15:Device>
+              <e15:MatchType>ValueHere</e15:MatchType>
+              <e15:AdPosition>ValueHere</e15:AdPosition>
+              <e15:Clicks>ValueHere</e15:Clicks>
+              <e15:Impressions>ValueHere</e15:Impressions>
+              <e15:AverageCPC>ValueHere</e15:AverageCPC>
+              <e15:CTR>ValueHere</e15:CTR>
+              <e15:TotalCost>ValueHere</e15:TotalCost>
+              <e15:AverageBid>ValueHere</e15:AverageBid>
+            </e15:KeywordKPI>
+          </e15:KeywordKPIs>
+        </e15:KeywordHistoricalPerformance>
       </KeywordHistoricalPerformances>
     </GetHistoricalKeywordPerformanceResponse>
   </s:Body>
@@ -112,10 +112,10 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetHistoricalKeywordPerformanceResponse> GetHistoricalKeywordPerformanceAsync(
+public async Task<GetHistoricalKeywordPerformanceResponse> GetHistoricalKeywordPerformanceAsync(
 	IList<string> keywords,
-	TimeInterval timeInterval,
-	AdPosition targetAdPosition,
+	TimeInterval? timeInterval,
+	AdPosition? targetAdPosition,
 	IList<MatchType> matchTypes,
 	string language,
 	IList<string> publisherCountries,
@@ -141,7 +141,7 @@ static GetHistoricalKeywordPerformanceResponse getHistoricalKeywordPerformance(
 	TimeInterval timeInterval,
 	AdPosition targetAdPosition,
 	ArrayOfMatchType matchTypes,
-	string language,
+	java.lang.String language,
 	ArrayOfstring publisherCountries,
 	ArrayOfstring devices) throws RemoteException, Exception
 {

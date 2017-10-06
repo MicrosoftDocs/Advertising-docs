@@ -1,4 +1,4 @@
----
+﻿---
 title: Customer Billing Service Operations
 ms.service: bing-ads-customer-billing-service
 ms.topic: article

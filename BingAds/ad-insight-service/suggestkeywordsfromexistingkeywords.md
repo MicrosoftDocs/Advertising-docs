@@ -1,4 +1,4 @@
----
+﻿---
 title: SuggestKeywordsFromExistingKeywords Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -86,16 +86,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SuggestKeywordsFromExistingKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordSuggestions xmlns:e98="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e98:KeywordSuggestion>
-          <e98:Keyword d4p1:nil="false">ValueHere</e98:Keyword>
-          <e98:SuggestionsAndConfidence d4p1:nil="false">
-            <e98:KeywordAndConfidence>
-              <e98:SuggestedKeyword d4p1:nil="false">ValueHere</e98:SuggestedKeyword>
-              <e98:ConfidenceScore>ValueHere</e98:ConfidenceScore>
-            </e98:KeywordAndConfidence>
-          </e98:SuggestionsAndConfidence>
-        </e98:KeywordSuggestion>
+      <KeywordSuggestions xmlns:e41="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e41:KeywordSuggestion>
+          <e41:Keyword d4p1:nil="false">ValueHere</e41:Keyword>
+          <e41:SuggestionsAndConfidence d4p1:nil="false">
+            <e41:KeywordAndConfidence>
+              <e41:SuggestedKeyword d4p1:nil="false">ValueHere</e41:SuggestedKeyword>
+              <e41:ConfidenceScore>ValueHere</e41:ConfidenceScore>
+            </e41:KeywordAndConfidence>
+          </e41:SuggestionsAndConfidence>
+        </e41:KeywordSuggestion>
       </KeywordSuggestions>
     </SuggestKeywordsFromExistingKeywordsResponse>
   </s:Body>
@@ -105,14 +105,14 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<SuggestKeywordsFromExistingKeywordsResponse> SuggestKeywordsFromExistingKeywordsAsync(
+public async Task<SuggestKeywordsFromExistingKeywordsResponse> SuggestKeywordsFromExistingKeywordsAsync(
 	IList<string> keywords,
 	string language,
 	IList<string> publisherCountries,
 	int maxSuggestionsPerKeyword,
 	int suggestionType,
-	boolean removeDuplicates,
-	boolean excludeBrand,
+	bool removeDuplicates,
+	bool excludeBrand,
 	long adGroupId,
 	long campaignId)
 {
@@ -135,14 +135,14 @@ protected async Task<SuggestKeywordsFromExistingKeywordsResponse> SuggestKeyword
 ```java
 static SuggestKeywordsFromExistingKeywordsResponse suggestKeywordsFromExistingKeywords(
 	ArrayOfstring keywords,
-	string language,
+	java.lang.String language,
 	ArrayOfstring publisherCountries,
 	int maxSuggestionsPerKeyword,
 	int suggestionType,
 	boolean removeDuplicates,
 	boolean excludeBrand,
-	long adGroupId,
-	long campaignId) throws RemoteException, Exception
+	java.lang.Long adGroupId,
+	java.lang.Long campaignId) throws RemoteException, Exception
 {
 	SuggestKeywordsFromExistingKeywordsRequest request = new SuggestKeywordsFromExistingKeywordsRequest();
 

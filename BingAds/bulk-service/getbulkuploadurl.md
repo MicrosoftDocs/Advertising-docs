@@ -1,4 +1,4 @@
----
+﻿---
 title: GetBulkUploadUrl Service Operation
 ms.service: bing-ads-bulk-service
 ms.topic: article
@@ -79,7 +79,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetBulkUploadUrlResponse> GetBulkUploadUrlAsync(
+public async Task<GetBulkUploadUrlResponse> GetBulkUploadUrlAsync(
 	ResponseMode responseMode,
 	long accountId)
 {
@@ -95,7 +95,7 @@ protected async Task<GetBulkUploadUrlResponse> GetBulkUploadUrlAsync(
 ```java
 static GetBulkUploadUrlResponse getBulkUploadUrl(
 	ResponseMode responseMode,
-	long accountId) throws RemoteException, Exception
+	java.lang.Long accountId) throws RemoteException, Exception
 {
 	GetBulkUploadUrlRequest request = new GetBulkUploadUrlRequest();
 

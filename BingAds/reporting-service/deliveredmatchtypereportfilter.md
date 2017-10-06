@@ -1,4 +1,4 @@
----
+﻿---
 title: DeliveredMatchTypeReportFilter Value Set
 ms.service: bing-ads-reporting-service
 ms.topic: article

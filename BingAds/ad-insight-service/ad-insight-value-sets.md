@@ -1,4 +1,4 @@
----
+﻿---
 title: Ad Insight Value Sets
 ms.service: bing-ads-ad-insight-service
 ms.topic: article

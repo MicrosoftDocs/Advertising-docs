@@ -1,4 +1,4 @@
----
+﻿---
 title: Ad Insight Service Operations
 ms.service: bing-ads-ad-insight-service
 ms.topic: article

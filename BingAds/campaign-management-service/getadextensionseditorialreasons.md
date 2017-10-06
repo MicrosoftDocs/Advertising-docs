@@ -1,4 +1,4 @@
----
+﻿---
 title: GetAdExtensionsEditorialReasons Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -97,11 +97,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e199="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e199:KeyValuePairOfstringstring>
-              <e199:key d4p1:nil="false">ValueHere</e199:key>
-              <e199:value d4p1:nil="false">ValueHere</e199:value>
-            </e199:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e149="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e149:KeyValuePairOfstringstring>
+              <e149:key d4p1:nil="false">ValueHere</e149:key>
+              <e149:value d4p1:nil="false">ValueHere</e149:value>
+            </e149:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -122,7 +122,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetAdExtensionsEditorialReasonsResponse> GetAdExtensionsEditorialReasonsAsync(
+public async Task<GetAdExtensionsEditorialReasonsResponse> GetAdExtensionsEditorialReasonsAsync(
 	long accountId,
 	IList<AdExtensionIdToEntityIdAssociation> adExtensionIdToEntityIdAssociations,
 	AssociationType associationType)
@@ -139,7 +139,7 @@ protected async Task<GetAdExtensionsEditorialReasonsResponse> GetAdExtensionsEdi
 ```
 ```java
 static GetAdExtensionsEditorialReasonsResponse getAdExtensionsEditorialReasons(
-	long accountId,
+	java.lang.Long accountId,
 	ArrayOfAdExtensionIdToEntityIdAssociation adExtensionIdToEntityIdAssociations,
 	AssociationType associationType) throws RemoteException, Exception
 {

@@ -1,4 +1,4 @@
----
+﻿---
 title: GetLabelsByIds Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -88,11 +88,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e247="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e247:KeyValuePairOfstringstring>
-              <e247:key d4p1:nil="false">ValueHere</e247:key>
-              <e247:value d4p1:nil="false">ValueHere</e247:value>
-            </e247:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e197="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e197:KeyValuePairOfstringstring>
+              <e197:key d4p1:nil="false">ValueHere</e197:key>
+              <e197:value d4p1:nil="false">ValueHere</e197:value>
+            </e197:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -113,7 +113,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetLabelsByIdsResponse> GetLabelsByIdsAsync(
+public async Task<GetLabelsByIdsResponse> GetLabelsByIdsAsync(
 	IList<long> labelIds,
 	Paging pageInfo)
 {

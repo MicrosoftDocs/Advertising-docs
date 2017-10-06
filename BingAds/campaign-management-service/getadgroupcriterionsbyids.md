@@ -1,4 +1,4 @@
----
+﻿---
 title: GetAdGroupCriterionsByIds Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -123,14 +123,14 @@ The following template shows the order of the [body](#response-body) and [header
             <AudienceId d4p1:nil="false">ValueHere</AudienceId>
             <AudienceType d4p1:nil="false">ValueHere</AudienceType>
             <!--This field is applicable if the derived type attribute is set to Webpage-->
-            <Parameter xmlns:e200="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-              <e200:Conditions d4p1:nil="false">
-                <e200:WebpageCondition>
-                  <e200:Argument d4p1:nil="false">ValueHere</e200:Argument>
-                  <e200:Operand>ValueHere</e200:Operand>
-                </e200:WebpageCondition>
-              </e200:Conditions>
-              <e200:CriterionName d4p1:nil="false">ValueHere</e200:CriterionName>
+            <Parameter xmlns:e150="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+              <e150:Conditions d4p1:nil="false">
+                <e150:WebpageCondition>
+                  <e150:Argument d4p1:nil="false">ValueHere</e150:Argument>
+                  <e150:Operand>ValueHere</e150:Operand>
+                </e150:WebpageCondition>
+              </e150:Conditions>
+              <e150:CriterionName d4p1:nil="false">ValueHere</e150:CriterionName>
             </Parameter>
           </Criterion>
           <Id d4p1:nil="false">ValueHere</Id>
@@ -146,11 +146,11 @@ The following template shows the order of the [body](#response-body) and [header
           </CriterionBid>
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e201="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e201:AppUrl>
-              <e201:OsType d4p1:nil="false">ValueHere</e201:OsType>
-              <e201:Url d4p1:nil="false">ValueHere</e201:Url>
-            </e201:AppUrl>
+          <FinalAppUrls xmlns:e151="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e151:AppUrl>
+              <e151:OsType d4p1:nil="false">ValueHere</e151:OsType>
+              <e151:Url d4p1:nil="false">ValueHere</e151:Url>
+            </e151:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -159,13 +159,13 @@ The following template shows the order of the [body](#response-body) and [header
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e202="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e202:Parameters d4p1:nil="false">
-              <e202:CustomParameter>
-                <e202:Key d4p1:nil="false">ValueHere</e202:Key>
-                <e202:Value d4p1:nil="false">ValueHere</e202:Value>
-              </e202:CustomParameter>
-            </e202:Parameters>
+          <UrlCustomParameters xmlns:e152="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e152:Parameters d4p1:nil="false">
+              <e152:CustomParameter>
+                <e152:Key d4p1:nil="false">ValueHere</e152:Key>
+                <e152:Value d4p1:nil="false">ValueHere</e152:Value>
+              </e152:CustomParameter>
+            </e152:Parameters>
           </UrlCustomParameters>
           <!--No additional fields are applicable if the derived type attribute is set to NegativeAdGroupCriterion-->
         </AdGroupCriterion>
@@ -178,10 +178,10 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetAdGroupCriterionsByIdsResponse> GetAdGroupCriterionsByIdsAsync(
+public async Task<GetAdGroupCriterionsByIdsResponse> GetAdGroupCriterionsByIdsAsync(
 	IList<long> adGroupCriterionIds,
 	long adGroupId,
-	AdGroupCriterionType? criterionType)
+	AdGroupCriterionType criterionType)
 {
 	var request = new GetAdGroupCriterionsByIdsRequest
 	{
@@ -196,7 +196,7 @@ protected async Task<GetAdGroupCriterionsByIdsResponse> GetAdGroupCriterionsById
 ```java
 static GetAdGroupCriterionsByIdsResponse getAdGroupCriterionsByIds(
 	ArrayOflong adGroupCriterionIds,
-	long adGroupId,
+	java.lang.Long adGroupId,
 	ArrayList<AdGroupCriterionType> criterionType) throws RemoteException, Exception
 {
 	GetAdGroupCriterionsByIdsRequest request = new GetAdGroupCriterionsByIdsRequest();

@@ -1,4 +1,4 @@
----
+﻿---
 title: DeleteCampaigns Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -76,11 +76,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e165="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e165:KeyValuePairOfstringstring>
-              <e165:key d4p1:nil="false">ValueHere</e165:key>
-              <e165:value d4p1:nil="false">ValueHere</e165:value>
-            </e165:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e115="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e115:KeyValuePairOfstringstring>
+              <e115:key d4p1:nil="false">ValueHere</e115:key>
+              <e115:value d4p1:nil="false">ValueHere</e115:value>
+            </e115:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -101,7 +101,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<DeleteCampaignsResponse> DeleteCampaignsAsync(
+public async Task<DeleteCampaignsResponse> DeleteCampaignsAsync(
 	long accountId,
 	IList<long> campaignIds)
 {
@@ -116,7 +116,7 @@ protected async Task<DeleteCampaignsResponse> DeleteCampaignsAsync(
 ```
 ```java
 static DeleteCampaignsResponse deleteCampaigns(
-	long accountId,
+	java.lang.Long accountId,
 	ArrayOflong campaignIds) throws RemoteException, Exception
 {
 	DeleteCampaignsRequest request = new DeleteCampaignsRequest();

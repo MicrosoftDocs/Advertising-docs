@@ -1,4 +1,4 @@
----
+﻿---
 title: DeleteKeywords Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -76,11 +76,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e166="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e166:KeyValuePairOfstringstring>
-              <e166:key d4p1:nil="false">ValueHere</e166:key>
-              <e166:value d4p1:nil="false">ValueHere</e166:value>
-            </e166:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e116="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e116:KeyValuePairOfstringstring>
+              <e116:key d4p1:nil="false">ValueHere</e116:key>
+              <e116:value d4p1:nil="false">ValueHere</e116:value>
+            </e116:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -101,7 +101,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<DeleteKeywordsResponse> DeleteKeywordsAsync(
+public async Task<DeleteKeywordsResponse> DeleteKeywordsAsync(
 	long adGroupId,
 	IList<long> keywordIds)
 {
@@ -116,7 +116,7 @@ protected async Task<DeleteKeywordsResponse> DeleteKeywordsAsync(
 ```
 ```java
 static DeleteKeywordsResponse deleteKeywords(
-	long adGroupId,
+	java.lang.Long adGroupId,
 	ArrayOflong keywordIds) throws RemoteException, Exception
 {
 	DeleteKeywordsRequest request = new DeleteKeywordsRequest();

@@ -1,4 +1,4 @@
----
+﻿---
 title: UpdateUetTags Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -84,11 +84,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e306="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e306:KeyValuePairOfstringstring>
-              <e306:key d4p1:nil="false">ValueHere</e306:key>
-              <e306:value d4p1:nil="false">ValueHere</e306:value>
-            </e306:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e256="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e256:KeyValuePairOfstringstring>
+              <e256:key d4p1:nil="false">ValueHere</e256:key>
+              <e256:value d4p1:nil="false">ValueHere</e256:value>
+            </e256:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -109,7 +109,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<UpdateUetTagsResponse> UpdateUetTagsAsync(
+public async Task<UpdateUetTagsResponse> UpdateUetTagsAsync(
 	IList<UetTag> uetTags)
 {
 	var request = new UpdateUetTagsRequest

@@ -1,4 +1,4 @@
----
+﻿---
 title: DownloadCampaignsByAccountIds Service Operation
 ms.service: bing-ads-bulk-service
 ms.topic: article
@@ -108,14 +108,14 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<DownloadCampaignsByAccountIdsResponse> DownloadCampaignsByAccountIdsAsync(
+public async Task<DownloadCampaignsByAccountIdsResponse> DownloadCampaignsByAccountIdsAsync(
 	IList<long> accountIds,
-	CompressionType compressionType,
-	DataScope? dataScope,
+	CompressionType? compressionType,
+	DataScope dataScope,
 	IList<DownloadEntity> downloadEntities,
-	DownloadFileType downloadFileType,
+	DownloadFileType? downloadFileType,
 	string formatVersion,
-	dateTime lastSyncTimeInUTC,
+	DateTime lastSyncTimeInUTC,
 	PerformanceStatsDateRange performanceStatsDateRange)
 {
 	var request = new DownloadCampaignsByAccountIdsRequest
@@ -140,8 +140,8 @@ static DownloadCampaignsByAccountIdsResponse downloadCampaignsByAccountIds(
 	ArrayList<DataScope> dataScope,
 	ArrayOfDownloadEntity downloadEntities,
 	DownloadFileType downloadFileType,
-	string formatVersion,
-	dateTime lastSyncTimeInUTC,
+	java.lang.String formatVersion,
+	Calendar lastSyncTimeInUTC,
 	PerformanceStatsDateRange performanceStatsDateRange) throws RemoteException, Exception
 {
 	DownloadCampaignsByAccountIdsRequest request = new DownloadCampaignsByAccountIdsRequest();

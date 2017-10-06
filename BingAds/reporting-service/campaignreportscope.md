@@ -1,4 +1,4 @@
----
+﻿---
 title: CampaignReportScope Data Object
 ms.service: bing-ads-reporting-service
 ms.topic: article

@@ -1,4 +1,4 @@
----
+﻿---
 title: PollGenerateReport Service Operation
 ms.service: bing-ads-reporting-service
 ms.topic: article
@@ -81,7 +81,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<PollGenerateReportResponse> PollGenerateReportAsync(
+public async Task<PollGenerateReportResponse> PollGenerateReportAsync(
 	string reportRequestId)
 {
 	var request = new PollGenerateReportRequest
@@ -94,7 +94,7 @@ protected async Task<PollGenerateReportResponse> PollGenerateReportAsync(
 ```
 ```java
 static PollGenerateReportResponse pollGenerateReport(
-	string reportRequestId) throws RemoteException, Exception
+	java.lang.String reportRequestId) throws RemoteException, Exception
 {
 	PollGenerateReportRequest request = new PollGenerateReportRequest();
 
