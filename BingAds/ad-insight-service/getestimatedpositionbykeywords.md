@@ -1,4 +1,4 @@
----
+﻿---
 title: GetEstimatedPositionByKeywords Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -89,25 +89,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedPositionByKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedPositions xmlns:e71="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e71:KeywordEstimatedPosition>
-          <e71:Keyword d4p1:nil="false">ValueHere</e71:Keyword>
-          <e71:EstimatedPositions d4p1:nil="false">
-            <e71:EstimatedPositionAndTraffic>
-              <e71:MatchType>ValueHere</e71:MatchType>
-              <e71:MinClicksPerWeek>ValueHere</e71:MinClicksPerWeek>
-              <e71:MaxClicksPerWeek>ValueHere</e71:MaxClicksPerWeek>
-              <e71:AverageCPC>ValueHere</e71:AverageCPC>
-              <e71:MinImpressionsPerWeek>ValueHere</e71:MinImpressionsPerWeek>
-              <e71:MaxImpressionsPerWeek>ValueHere</e71:MaxImpressionsPerWeek>
-              <e71:CTR>ValueHere</e71:CTR>
-              <e71:MinTotalCostPerWeek>ValueHere</e71:MinTotalCostPerWeek>
-              <e71:MaxTotalCostPerWeek>ValueHere</e71:MaxTotalCostPerWeek>
-              <e71:Currency>ValueHere</e71:Currency>
-              <e71:EstimatedAdPosition>ValueHere</e71:EstimatedAdPosition>
-            </e71:EstimatedPositionAndTraffic>
-          </e71:EstimatedPositions>
-        </e71:KeywordEstimatedPosition>
+      <KeywordEstimatedPositions xmlns:e14="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e14:KeywordEstimatedPosition>
+          <e14:Keyword d4p1:nil="false">ValueHere</e14:Keyword>
+          <e14:EstimatedPositions d4p1:nil="false">
+            <e14:EstimatedPositionAndTraffic>
+              <e14:MatchType>ValueHere</e14:MatchType>
+              <e14:MinClicksPerWeek>ValueHere</e14:MinClicksPerWeek>
+              <e14:MaxClicksPerWeek>ValueHere</e14:MaxClicksPerWeek>
+              <e14:AverageCPC>ValueHere</e14:AverageCPC>
+              <e14:MinImpressionsPerWeek>ValueHere</e14:MinImpressionsPerWeek>
+              <e14:MaxImpressionsPerWeek>ValueHere</e14:MaxImpressionsPerWeek>
+              <e14:CTR>ValueHere</e14:CTR>
+              <e14:MinTotalCostPerWeek>ValueHere</e14:MinTotalCostPerWeek>
+              <e14:MaxTotalCostPerWeek>ValueHere</e14:MaxTotalCostPerWeek>
+              <e14:Currency>ValueHere</e14:Currency>
+              <e14:EstimatedAdPosition>ValueHere</e14:EstimatedAdPosition>
+            </e14:EstimatedPositionAndTraffic>
+          </e14:EstimatedPositions>
+        </e14:KeywordEstimatedPosition>
       </KeywordEstimatedPositions>
     </GetEstimatedPositionByKeywordsResponse>
   </s:Body>
@@ -117,12 +117,12 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetEstimatedPositionByKeywordsResponse> GetEstimatedPositionByKeywordsAsync(
+public async Task<GetEstimatedPositionByKeywordsResponse> GetEstimatedPositionByKeywordsAsync(
 	IList<string> keywords,
 	double maxBid,
 	string language,
 	IList<string> publisherCountries,
-	Currency currency,
+	Currency? currency,
 	IList<MatchType> matchTypes,
 	long campaignId,
 	long adGroupId)
@@ -146,12 +146,12 @@ protected async Task<GetEstimatedPositionByKeywordsResponse> GetEstimatedPositio
 static GetEstimatedPositionByKeywordsResponse getEstimatedPositionByKeywords(
 	ArrayOfstring keywords,
 	double maxBid,
-	string language,
+	java.lang.String language,
 	ArrayOfstring publisherCountries,
 	Currency currency,
 	ArrayOfMatchType matchTypes,
-	long campaignId,
-	long adGroupId) throws RemoteException, Exception
+	java.lang.Long campaignId,
+	java.lang.Long adGroupId) throws RemoteException, Exception
 {
 	GetEstimatedPositionByKeywordsRequest request = new GetEstimatedPositionByKeywordsRequest();
 

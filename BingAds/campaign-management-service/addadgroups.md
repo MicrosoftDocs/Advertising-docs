@@ -1,4 +1,4 @@
----
+﻿---
 title: AddAdGroups Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -89,11 +89,11 @@ The following template shows the order of the [body](#request-body) and [header]
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e118="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e118:KeyValuePairOfstringstring>
-              <e118:key i:nil="false">ValueHere</e118:key>
-              <e118:value i:nil="false">ValueHere</e118:value>
-            </e118:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e68="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e68:KeyValuePairOfstringstring>
+              <e68:key i:nil="false">ValueHere</e68:key>
+              <e68:value i:nil="false">ValueHere</e68:value>
+            </e68:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Language i:nil="false">ValueHere</Language>
@@ -125,13 +125,13 @@ The following template shows the order of the [body](#request-body) and [header]
           </StartDate>
           <Status i:nil="false">ValueHere</Status>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e119="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e119:Parameters i:nil="false">
-              <e119:CustomParameter>
-                <e119:Key i:nil="false">ValueHere</e119:Key>
-                <e119:Value i:nil="false">ValueHere</e119:Value>
-              </e119:CustomParameter>
-            </e119:Parameters>
+          <UrlCustomParameters xmlns:e69="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            <e69:Parameters i:nil="false">
+              <e69:CustomParameter>
+                <e69:Key i:nil="false">ValueHere</e69:Key>
+                <e69:Value i:nil="false">ValueHere</e69:Value>
+              </e69:CustomParameter>
+            </e69:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
@@ -159,11 +159,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e120="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e120:KeyValuePairOfstringstring>
-              <e120:key d4p1:nil="false">ValueHere</e120:key>
-              <e120:value d4p1:nil="false">ValueHere</e120:value>
-            </e120:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e70="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e70:KeyValuePairOfstringstring>
+              <e70:key d4p1:nil="false">ValueHere</e70:key>
+              <e70:value d4p1:nil="false">ValueHere</e70:value>
+            </e70:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -184,7 +184,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<AddAdGroupsResponse> AddAdGroupsAsync(
+public async Task<AddAdGroupsResponse> AddAdGroupsAsync(
 	long campaignId,
 	IList<AdGroup> adGroups)
 {
@@ -199,7 +199,7 @@ protected async Task<AddAdGroupsResponse> AddAdGroupsAsync(
 ```
 ```java
 static AddAdGroupsResponse addAdGroups(
-	long campaignId,
+	java.lang.Long campaignId,
 	ArrayOfAdGroup adGroups) throws RemoteException, Exception
 {
 	AddAdGroupsRequest request = new AddAdGroupsRequest();

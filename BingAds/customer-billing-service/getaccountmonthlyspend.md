@@ -1,4 +1,4 @@
----
+﻿---
 title: GetAccountMonthlySpend Service Operation
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
@@ -75,9 +75,9 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetAccountMonthlySpendResponse> GetAccountMonthlySpendAsync(
+public async Task<GetAccountMonthlySpendResponse> GetAccountMonthlySpendAsync(
 	long accountId,
-	dateTime monthYear)
+	DateTime monthYear)
 {
 	var request = new GetAccountMonthlySpendRequest
 	{
@@ -90,8 +90,8 @@ protected async Task<GetAccountMonthlySpendResponse> GetAccountMonthlySpendAsync
 ```
 ```java
 static GetAccountMonthlySpendResponse getAccountMonthlySpend(
-	long accountId,
-	dateTime monthYear) throws RemoteException, Exception
+	java.lang.Long accountId,
+	Calendar monthYear) throws RemoteException, Exception
 {
 	GetAccountMonthlySpendRequest request = new GetAccountMonthlySpendRequest();
 

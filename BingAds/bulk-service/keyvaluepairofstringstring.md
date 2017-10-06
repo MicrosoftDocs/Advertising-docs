@@ -1,4 +1,4 @@
----
+﻿---
 title: KeyValuePairOfstringstring Data Object
 ms.service: bing-ads-bulk-service
 ms.topic: article

@@ -1,4 +1,4 @@
----
+﻿---
 title: GetBulkUploadStatus Service Operation
 ms.service: bing-ads-bulk-service
 ms.topic: article
@@ -78,11 +78,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Message d4p1:nil="false">ValueHere</Message>
         </OperationError>
       </Errors>
-      <ForwardCompatibilityMap xmlns:e100="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e100:KeyValuePairOfstringstring>
-          <e100:key d4p1:nil="false">ValueHere</e100:key>
-          <e100:value d4p1:nil="false">ValueHere</e100:value>
-        </e100:KeyValuePairOfstringstring>
+      <ForwardCompatibilityMap xmlns:e2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e2:KeyValuePairOfstringstring>
+          <e2:key d4p1:nil="false">ValueHere</e2:key>
+          <e2:value d4p1:nil="false">ValueHere</e2:value>
+        </e2:KeyValuePairOfstringstring>
       </ForwardCompatibilityMap>
       <PercentComplete>ValueHere</PercentComplete>
       <RequestStatus d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</RequestStatus>
@@ -95,7 +95,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetBulkUploadStatusResponse> GetBulkUploadStatusAsync(
+public async Task<GetBulkUploadStatusResponse> GetBulkUploadStatusAsync(
 	string requestId)
 {
 	var request = new GetBulkUploadStatusRequest
@@ -108,7 +108,7 @@ protected async Task<GetBulkUploadStatusResponse> GetBulkUploadStatusAsync(
 ```
 ```java
 static GetBulkUploadStatusResponse getBulkUploadStatus(
-	string requestId) throws RemoteException, Exception
+	java.lang.String requestId) throws RemoteException, Exception
 {
 	GetBulkUploadStatusRequest request = new GetBulkUploadStatusRequest();
 

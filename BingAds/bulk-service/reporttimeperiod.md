@@ -1,4 +1,4 @@
----
+﻿---
 title: ReportTimePeriod Value Set
 ms.service: bing-ads-bulk-service
 ms.topic: article

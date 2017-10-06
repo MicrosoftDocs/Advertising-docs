@@ -1,4 +1,4 @@
----
+﻿---
 title: NegativeKeywordList Data Object
 ms.service: bing-ads-campaign-management-service
 ms.topic: article

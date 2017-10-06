@@ -1,4 +1,4 @@
----
+﻿---
 title: GetUser Service Operation
 ms.service: bing-ads-customer-management-service
 ms.topic: article

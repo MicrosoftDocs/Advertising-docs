@@ -1,4 +1,4 @@
----
+﻿---
 title: AppealEditorialRejections Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -52,11 +52,11 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <AppealEditorialRejectionsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <EntityIdToParentIdAssociations xmlns:e150="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-        <e150:EntityIdToParentIdAssociation>
-          <e150:EntityId>ValueHere</e150:EntityId>
-          <e150:ParentId>ValueHere</e150:ParentId>
-        </e150:EntityIdToParentIdAssociation>
+      <EntityIdToParentIdAssociations xmlns:e100="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+        <e100:EntityIdToParentIdAssociation>
+          <e100:EntityId>ValueHere</e100:EntityId>
+          <e100:ParentId>ValueHere</e100:ParentId>
+        </e100:EntityIdToParentIdAssociation>
       </EntityIdToParentIdAssociations>
       <EntityType>ValueHere</EntityType>
       <JustificationText i:nil="false">ValueHere</JustificationText>
@@ -81,11 +81,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e151="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e151:KeyValuePairOfstringstring>
-              <e151:key d4p1:nil="false">ValueHere</e151:key>
-              <e151:value d4p1:nil="false">ValueHere</e151:value>
-            </e151:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e101="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e101:KeyValuePairOfstringstring>
+              <e101:key d4p1:nil="false">ValueHere</e101:key>
+              <e101:value d4p1:nil="false">ValueHere</e101:value>
+            </e101:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -106,7 +106,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<AppealEditorialRejectionsResponse> AppealEditorialRejectionsAsync(
+public async Task<AppealEditorialRejectionsResponse> AppealEditorialRejectionsAsync(
 	IList<EntityIdToParentIdAssociation> entityIdToParentIdAssociations,
 	EntityType entityType,
 	string justificationText)
@@ -125,7 +125,7 @@ protected async Task<AppealEditorialRejectionsResponse> AppealEditorialRejection
 static AppealEditorialRejectionsResponse appealEditorialRejections(
 	ArrayOfEntityIdToParentIdAssociation entityIdToParentIdAssociations,
 	EntityType entityType,
-	string justificationText) throws RemoteException, Exception
+	java.lang.String justificationText) throws RemoteException, Exception
 {
 	AppealEditorialRejectionsRequest request = new AppealEditorialRejectionsRequest();
 

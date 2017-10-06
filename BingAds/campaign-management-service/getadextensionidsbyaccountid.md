@@ -1,4 +1,4 @@
----
+﻿---
 title: GetAdExtensionIdsByAccountId Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -81,10 +81,10 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetAdExtensionIdsByAccountIdResponse> GetAdExtensionIdsByAccountIdAsync(
+public async Task<GetAdExtensionIdsByAccountIdResponse> GetAdExtensionIdsByAccountIdAsync(
 	long accountId,
-	AdExtensionsTypeFilter? adExtensionType,
-	AssociationType associationType)
+	AdExtensionsTypeFilter adExtensionType,
+	AssociationType? associationType)
 {
 	var request = new GetAdExtensionIdsByAccountIdRequest
 	{
@@ -98,7 +98,7 @@ protected async Task<GetAdExtensionIdsByAccountIdResponse> GetAdExtensionIdsByAc
 ```
 ```java
 static GetAdExtensionIdsByAccountIdResponse getAdExtensionIdsByAccountId(
-	long accountId,
+	java.lang.Long accountId,
 	ArrayList<AdExtensionsTypeFilter> adExtensionType,
 	AssociationType associationType) throws RemoteException, Exception
 {

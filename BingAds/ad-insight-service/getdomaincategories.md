@@ -1,4 +1,4 @@
----
+﻿---
 title: GetDomainCategories Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -70,12 +70,12 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetDomainCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Categories xmlns:e65="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e65:DomainCategory>
-          <e65:Bid>ValueHere</e65:Bid>
-          <e65:CategoryName d4p1:nil="false">ValueHere</e65:CategoryName>
-          <e65:Coverage>ValueHere</e65:Coverage>
-        </e65:DomainCategory>
+      <Categories xmlns:e8="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e8:DomainCategory>
+          <e8:Bid>ValueHere</e8:Bid>
+          <e8:CategoryName d4p1:nil="false">ValueHere</e8:CategoryName>
+          <e8:Coverage>ValueHere</e8:Coverage>
+        </e8:DomainCategory>
       </Categories>
     </GetDomainCategoriesResponse>
   </s:Body>
@@ -85,7 +85,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetDomainCategoriesResponse> GetDomainCategoriesAsync(
+public async Task<GetDomainCategoriesResponse> GetDomainCategoriesAsync(
 	string categoryName,
 	string domainName,
 	string language)
@@ -102,9 +102,9 @@ protected async Task<GetDomainCategoriesResponse> GetDomainCategoriesAsync(
 ```
 ```java
 static GetDomainCategoriesResponse getDomainCategories(
-	string categoryName,
-	string domainName,
-	string language) throws RemoteException, Exception
+	java.lang.String categoryName,
+	java.lang.String domainName,
+	java.lang.String language) throws RemoteException, Exception
 {
 	GetDomainCategoriesRequest request = new GetDomainCategoriesRequest();
 

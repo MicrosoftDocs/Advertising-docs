@@ -1,4 +1,4 @@
----
+﻿---
 title: SetNegativeSitesToCampaigns Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -81,11 +81,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e261="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e261:KeyValuePairOfstringstring>
-              <e261:key d4p1:nil="false">ValueHere</e261:key>
-              <e261:value d4p1:nil="false">ValueHere</e261:value>
-            </e261:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e211="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e211:KeyValuePairOfstringstring>
+              <e211:key d4p1:nil="false">ValueHere</e211:key>
+              <e211:value d4p1:nil="false">ValueHere</e211:value>
+            </e211:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -106,7 +106,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<SetNegativeSitesToCampaignsResponse> SetNegativeSitesToCampaignsAsync(
+public async Task<SetNegativeSitesToCampaignsResponse> SetNegativeSitesToCampaignsAsync(
 	long accountId,
 	IList<CampaignNegativeSites> campaignNegativeSites)
 {
@@ -121,7 +121,7 @@ protected async Task<SetNegativeSitesToCampaignsResponse> SetNegativeSitesToCamp
 ```
 ```java
 static SetNegativeSitesToCampaignsResponse setNegativeSitesToCampaigns(
-	long accountId,
+	java.lang.Long accountId,
 	ArrayOfCampaignNegativeSites campaignNegativeSites) throws RemoteException, Exception
 {
 	SetNegativeSitesToCampaignsRequest request = new SetNegativeSitesToCampaignsRequest();

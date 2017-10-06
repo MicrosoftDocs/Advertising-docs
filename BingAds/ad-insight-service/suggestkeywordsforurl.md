@@ -1,4 +1,4 @@
----
+﻿---
 title: SuggestKeywordsForUrl Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -74,11 +74,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SuggestKeywordsForUrlResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Keywords xmlns:e97="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e97:KeywordAndConfidence>
-          <e97:SuggestedKeyword d4p1:nil="false">ValueHere</e97:SuggestedKeyword>
-          <e97:ConfidenceScore>ValueHere</e97:ConfidenceScore>
-        </e97:KeywordAndConfidence>
+      <Keywords xmlns:e40="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e40:KeywordAndConfidence>
+          <e40:SuggestedKeyword d4p1:nil="false">ValueHere</e40:SuggestedKeyword>
+          <e40:ConfidenceScore>ValueHere</e40:ConfidenceScore>
+        </e40:KeywordAndConfidence>
       </Keywords>
     </SuggestKeywordsForUrlResponse>
   </s:Body>
@@ -88,12 +88,12 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<SuggestKeywordsForUrlResponse> SuggestKeywordsForUrlAsync(
+public async Task<SuggestKeywordsForUrlResponse> SuggestKeywordsForUrlAsync(
 	string url,
 	string language,
 	int maxKeywords,
 	double minConfidenceScore,
-	boolean excludeBrand)
+	bool excludeBrand)
 {
 	var request = new SuggestKeywordsForUrlRequest
 	{
@@ -109,8 +109,8 @@ protected async Task<SuggestKeywordsForUrlResponse> SuggestKeywordsForUrlAsync(
 ```
 ```java
 static SuggestKeywordsForUrlResponse suggestKeywordsForUrl(
-	string url,
-	string language,
+	java.lang.String url,
+	java.lang.String language,
 	int maxKeywords,
 	double minConfidenceScore,
 	boolean excludeBrand) throws RemoteException, Exception

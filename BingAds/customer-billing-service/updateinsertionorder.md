@@ -1,4 +1,4 @@
----
+﻿---
 title: UpdateInsertionOrder Service Operation
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
@@ -48,23 +48,23 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <UpdateInsertionOrderRequest xmlns="https://bingads.microsoft.com/Billing/v11">
-      <InsertionOrder xmlns:e59="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e59:AccountId>ValueHere</e59:AccountId>
-        <e59:BalanceAmount i:nil="false">ValueHere</e59:BalanceAmount>
-        <e59:BookingCountryCode i:nil="false">ValueHere</e59:BookingCountryCode>
-        <e59:Comment i:nil="false">ValueHere</e59:Comment>
-        <e59:EndDate>ValueHere</e59:EndDate>
-        <e59:InsertionOrderId i:nil="false">ValueHere</e59:InsertionOrderId>
-        <e59:LastModifiedByUserId i:nil="false">ValueHere</e59:LastModifiedByUserId>
-        <e59:LastModifiedTime i:nil="false">ValueHere</e59:LastModifiedTime>
-        <e59:NotificationThreshold i:nil="false">ValueHere</e59:NotificationThreshold>
-        <e59:ReferenceId i:nil="false">ValueHere</e59:ReferenceId>
-        <e59:SpendCapAmount>ValueHere</e59:SpendCapAmount>
-        <e59:StartDate>ValueHere</e59:StartDate>
-        <e59:Name i:nil="false">ValueHere</e59:Name>
-        <e59:Status i:nil="false">ValueHere</e59:Status>
-        <e59:PurchaseOrder i:nil="false">ValueHere</e59:PurchaseOrder>
-        <e59:ChangePendingReview i:nil="false">ValueHere</e59:ChangePendingReview>
+      <InsertionOrder xmlns:e50="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e50:AccountId>ValueHere</e50:AccountId>
+        <e50:BalanceAmount i:nil="false">ValueHere</e50:BalanceAmount>
+        <e50:BookingCountryCode i:nil="false">ValueHere</e50:BookingCountryCode>
+        <e50:Comment i:nil="false">ValueHere</e50:Comment>
+        <e50:EndDate>ValueHere</e50:EndDate>
+        <e50:InsertionOrderId i:nil="false">ValueHere</e50:InsertionOrderId>
+        <e50:LastModifiedByUserId i:nil="false">ValueHere</e50:LastModifiedByUserId>
+        <e50:LastModifiedTime i:nil="false">ValueHere</e50:LastModifiedTime>
+        <e50:NotificationThreshold i:nil="false">ValueHere</e50:NotificationThreshold>
+        <e50:ReferenceId i:nil="false">ValueHere</e50:ReferenceId>
+        <e50:SpendCapAmount>ValueHere</e50:SpendCapAmount>
+        <e50:StartDate>ValueHere</e50:StartDate>
+        <e50:Name i:nil="false">ValueHere</e50:Name>
+        <e50:Status i:nil="false">ValueHere</e50:Status>
+        <e50:PurchaseOrder i:nil="false">ValueHere</e50:PurchaseOrder>
+        <e50:ChangePendingReview i:nil="false">ValueHere</e50:ChangePendingReview>
       </InsertionOrder>
     </UpdateInsertionOrderRequest>
   </s:Body>
@@ -90,7 +90,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<UpdateInsertionOrderResponse> UpdateInsertionOrderAsync(
+public async Task<UpdateInsertionOrderResponse> UpdateInsertionOrderAsync(
 	InsertionOrder insertionOrder)
 {
 	var request = new UpdateInsertionOrderRequest

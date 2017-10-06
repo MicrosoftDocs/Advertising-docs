@@ -1,4 +1,4 @@
----
+﻿---
 title: GetBillingDocuments Service Operation
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
@@ -71,12 +71,12 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBillingDocumentsResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <BillingDocuments xmlns:e52="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e52:BillingDocument>
-          <e52:Data d4p1:nil="false">ValueHere</e52:Data>
-          <e52:Id>ValueHere</e52:Id>
-          <e52:Type>ValueHere</e52:Type>
-        </e52:BillingDocument>
+      <BillingDocuments xmlns:e43="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e43:BillingDocument>
+          <e43:Data d4p1:nil="false">ValueHere</e43:Data>
+          <e43:Id>ValueHere</e43:Id>
+          <e43:Type>ValueHere</e43:Type>
+        </e43:BillingDocument>
       </BillingDocuments>
     </GetBillingDocumentsResponse>
   </s:Body>
@@ -86,7 +86,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetBillingDocumentsResponse> GetBillingDocumentsAsync(
+public async Task<GetBillingDocumentsResponse> GetBillingDocumentsAsync(
 	IList<long> documentIds,
 	DataType type)
 {

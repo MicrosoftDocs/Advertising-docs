@@ -1,4 +1,4 @@
----
+﻿---
 title: DeleteAdGroupCriterions Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -80,11 +80,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e159="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e159:KeyValuePairOfstringstring>
-              <e159:key d4p1:nil="false">ValueHere</e159:key>
-              <e159:value d4p1:nil="false">ValueHere</e159:value>
-            </e159:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e109="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e109:KeyValuePairOfstringstring>
+              <e109:key d4p1:nil="false">ValueHere</e109:key>
+              <e109:value d4p1:nil="false">ValueHere</e109:value>
+            </e109:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -105,10 +105,10 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<DeleteAdGroupCriterionsResponse> DeleteAdGroupCriterionsAsync(
+public async Task<DeleteAdGroupCriterionsResponse> DeleteAdGroupCriterionsAsync(
 	IList<long> adGroupCriterionIds,
 	long adGroupId,
-	AdGroupCriterionType? criterionType)
+	AdGroupCriterionType criterionType)
 {
 	var request = new DeleteAdGroupCriterionsRequest
 	{
@@ -123,7 +123,7 @@ protected async Task<DeleteAdGroupCriterionsResponse> DeleteAdGroupCriterionsAsy
 ```java
 static DeleteAdGroupCriterionsResponse deleteAdGroupCriterions(
 	ArrayOflong adGroupCriterionIds,
-	long adGroupId,
+	java.lang.Long adGroupId,
 	ArrayList<AdGroupCriterionType> criterionType) throws RemoteException, Exception
 {
 	DeleteAdGroupCriterionsRequest request = new DeleteAdGroupCriterionsRequest();

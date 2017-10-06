@@ -1,4 +1,4 @@
----
+﻿---
 title: SetAdExtensionsAssociations Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -84,11 +84,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e258="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e258:KeyValuePairOfstringstring>
-              <e258:key d4p1:nil="false">ValueHere</e258:key>
-              <e258:value d4p1:nil="false">ValueHere</e258:value>
-            </e258:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e208="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e208:KeyValuePairOfstringstring>
+              <e208:key d4p1:nil="false">ValueHere</e208:key>
+              <e208:value d4p1:nil="false">ValueHere</e208:value>
+            </e208:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -109,7 +109,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<SetAdExtensionsAssociationsResponse> SetAdExtensionsAssociationsAsync(
+public async Task<SetAdExtensionsAssociationsResponse> SetAdExtensionsAssociationsAsync(
 	long accountId,
 	IList<AdExtensionIdToEntityIdAssociation> adExtensionIdToEntityIdAssociations,
 	AssociationType associationType)
@@ -126,7 +126,7 @@ protected async Task<SetAdExtensionsAssociationsResponse> SetAdExtensionsAssocia
 ```
 ```java
 static SetAdExtensionsAssociationsResponse setAdExtensionsAssociations(
-	long accountId,
+	java.lang.Long accountId,
 	ArrayOfAdExtensionIdToEntityIdAssociation adExtensionIdToEntityIdAssociations,
 	AssociationType associationType) throws RemoteException, Exception
 {

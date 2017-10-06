@@ -1,4 +1,4 @@
----
+﻿---
 title: AddSharedEntity Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -55,11 +55,11 @@ The following template shows the order of the [body](#request-body) and [header]
     <AddSharedEntityRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <SharedEntity i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
         <AssociationCount i:nil="false">ValueHere</AssociationCount>
-        <ForwardCompatibilityMap xmlns:e146="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e146:KeyValuePairOfstringstring>
-            <e146:key i:nil="false">ValueHere</e146:key>
-            <e146:value i:nil="false">ValueHere</e146:value>
-          </e146:KeyValuePairOfstringstring>
+        <ForwardCompatibilityMap xmlns:e96="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e96:KeyValuePairOfstringstring>
+            <e96:key i:nil="false">ValueHere</e96:key>
+            <e96:value i:nil="false">ValueHere</e96:value>
+          </e96:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
         <Id i:nil="false">ValueHere</Id>
         <Name i:nil="false">ValueHere</Name>
@@ -69,11 +69,11 @@ The following template shows the order of the [body](#request-body) and [header]
       </SharedEntity>
       <ListItems i:nil="false">
         <SharedListItem i:type="-- derived type specified here with the appropriate prefix --">
-          <ForwardCompatibilityMap xmlns:e147="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e147:KeyValuePairOfstringstring>
-              <e147:key i:nil="false">ValueHere</e147:key>
-              <e147:value i:nil="false">ValueHere</e147:value>
-            </e147:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e97="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e97:KeyValuePairOfstringstring>
+              <e97:key i:nil="false">ValueHere</e97:key>
+              <e97:value i:nil="false">ValueHere</e97:value>
+            </e97:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Type i:nil="false">ValueHere</Type>
           <!--These fields are applicable if the derived type attribute is set to NegativeKeyword-->
@@ -106,11 +106,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e148="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e148:KeyValuePairOfstringstring>
-              <e148:key d4p1:nil="false">ValueHere</e148:key>
-              <e148:value d4p1:nil="false">ValueHere</e148:value>
-            </e148:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e98="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e98:KeyValuePairOfstringstring>
+              <e98:key d4p1:nil="false">ValueHere</e98:key>
+              <e98:value d4p1:nil="false">ValueHere</e98:value>
+            </e98:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -132,7 +132,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<AddSharedEntityResponse> AddSharedEntityAsync(
+public async Task<AddSharedEntityResponse> AddSharedEntityAsync(
 	SharedEntity sharedEntity,
 	IList<SharedListItem> listItems)
 {

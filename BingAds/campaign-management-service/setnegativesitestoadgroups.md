@@ -1,4 +1,4 @@
----
+﻿---
 title: SetNegativeSitesToAdGroups Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -81,11 +81,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e260="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e260:KeyValuePairOfstringstring>
-              <e260:key d4p1:nil="false">ValueHere</e260:key>
-              <e260:value d4p1:nil="false">ValueHere</e260:value>
-            </e260:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e210="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e210:KeyValuePairOfstringstring>
+              <e210:key d4p1:nil="false">ValueHere</e210:key>
+              <e210:value d4p1:nil="false">ValueHere</e210:value>
+            </e210:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -106,7 +106,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<SetNegativeSitesToAdGroupsResponse> SetNegativeSitesToAdGroupsAsync(
+public async Task<SetNegativeSitesToAdGroupsResponse> SetNegativeSitesToAdGroupsAsync(
 	long campaignId,
 	IList<AdGroupNegativeSites> adGroupNegativeSites)
 {
@@ -121,7 +121,7 @@ protected async Task<SetNegativeSitesToAdGroupsResponse> SetNegativeSitesToAdGro
 ```
 ```java
 static SetNegativeSitesToAdGroupsResponse setNegativeSitesToAdGroups(
-	long campaignId,
+	java.lang.Long campaignId,
 	ArrayOfAdGroupNegativeSites adGroupNegativeSites) throws RemoteException, Exception
 {
 	SetNegativeSitesToAdGroupsRequest request = new SetNegativeSitesToAdGroupsRequest();

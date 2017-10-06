@@ -1,4 +1,4 @@
----
+﻿---
 title: DeleteAds Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -76,11 +76,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e161="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e161:KeyValuePairOfstringstring>
-              <e161:key d4p1:nil="false">ValueHere</e161:key>
-              <e161:value d4p1:nil="false">ValueHere</e161:value>
-            </e161:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e111="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e111:KeyValuePairOfstringstring>
+              <e111:key d4p1:nil="false">ValueHere</e111:key>
+              <e111:value d4p1:nil="false">ValueHere</e111:value>
+            </e111:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -101,7 +101,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<DeleteAdsResponse> DeleteAdsAsync(
+public async Task<DeleteAdsResponse> DeleteAdsAsync(
 	long adGroupId,
 	IList<long> adIds)
 {
@@ -116,7 +116,7 @@ protected async Task<DeleteAdsResponse> DeleteAdsAsync(
 ```
 ```java
 static DeleteAdsResponse deleteAds(
-	long adGroupId,
+	java.lang.Long adGroupId,
 	ArrayOflong adIds) throws RemoteException, Exception
 {
 	DeleteAdsRequest request = new DeleteAdsRequest();

@@ -1,4 +1,4 @@
----
+﻿---
 title: ResponseMode Value Set
 ms.service: bing-ads-bulk-service
 ms.topic: article

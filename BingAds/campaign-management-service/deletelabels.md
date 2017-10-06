@@ -1,4 +1,4 @@
----
+﻿---
 title: DeleteLabels Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -74,11 +74,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e168="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e168:KeyValuePairOfstringstring>
-              <e168:key d4p1:nil="false">ValueHere</e168:key>
-              <e168:value d4p1:nil="false">ValueHere</e168:value>
-            </e168:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e118="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e118:KeyValuePairOfstringstring>
+              <e118:key d4p1:nil="false">ValueHere</e118:key>
+              <e118:value d4p1:nil="false">ValueHere</e118:value>
+            </e118:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -99,7 +99,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<DeleteLabelsResponse> DeleteLabelsAsync(
+public async Task<DeleteLabelsResponse> DeleteLabelsAsync(
 	IList<long> labelIds)
 {
 	var request = new DeleteLabelsRequest

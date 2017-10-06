@@ -1,4 +1,4 @@
----
+﻿---
 title: AddKeywords Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -80,11 +80,11 @@ The following template shows the order of the [body](#request-body) and [header]
           </BiddingScheme>
           <DestinationUrl i:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus i:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e137="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e137:AppUrl>
-              <e137:OsType i:nil="false">ValueHere</e137:OsType>
-              <e137:Url i:nil="false">ValueHere</e137:Url>
-            </e137:AppUrl>
+          <FinalAppUrls xmlns:e87="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            <e87:AppUrl>
+              <e87:OsType i:nil="false">ValueHere</e87:OsType>
+              <e87:Url i:nil="false">ValueHere</e87:Url>
+            </e87:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -92,11 +92,11 @@ The following template shows the order of the [body](#request-body) and [header]
           <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e138="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e138:KeyValuePairOfstringstring>
-              <e138:key i:nil="false">ValueHere</e138:key>
-              <e138:value i:nil="false">ValueHere</e138:value>
-            </e138:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e88="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e88:KeyValuePairOfstringstring>
+              <e88:key i:nil="false">ValueHere</e88:key>
+              <e88:value i:nil="false">ValueHere</e88:value>
+            </e88:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <MatchType i:nil="false">ValueHere</MatchType>
@@ -106,13 +106,13 @@ The following template shows the order of the [body](#request-body) and [header]
           <Status i:nil="false">ValueHere</Status>
           <Text i:nil="false">ValueHere</Text>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e139="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e139:Parameters i:nil="false">
-              <e139:CustomParameter>
-                <e139:Key i:nil="false">ValueHere</e139:Key>
-                <e139:Value i:nil="false">ValueHere</e139:Value>
-              </e139:CustomParameter>
-            </e139:Parameters>
+          <UrlCustomParameters xmlns:e89="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            <e89:Parameters i:nil="false">
+              <e89:CustomParameter>
+                <e89:Key i:nil="false">ValueHere</e89:Key>
+                <e89:Value i:nil="false">ValueHere</e89:Value>
+              </e89:CustomParameter>
+            </e89:Parameters>
           </UrlCustomParameters>
         </Keyword>
       </Keywords>
@@ -140,11 +140,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e140="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e140:KeyValuePairOfstringstring>
-              <e140:key d4p1:nil="false">ValueHere</e140:key>
-              <e140:value d4p1:nil="false">ValueHere</e140:value>
-            </e140:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e90="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e90:KeyValuePairOfstringstring>
+              <e90:key d4p1:nil="false">ValueHere</e90:key>
+              <e90:value d4p1:nil="false">ValueHere</e90:value>
+            </e90:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -165,7 +165,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<AddKeywordsResponse> AddKeywordsAsync(
+public async Task<AddKeywordsResponse> AddKeywordsAsync(
 	long adGroupId,
 	IList<Keyword> keywords)
 {
@@ -180,7 +180,7 @@ protected async Task<AddKeywordsResponse> AddKeywordsAsync(
 ```
 ```java
 static AddKeywordsResponse addKeywords(
-	long adGroupId,
+	java.lang.Long adGroupId,
 	ArrayOfKeyword keywords) throws RemoteException, Exception
 {
 	AddKeywordsRequest request = new AddKeywordsRequest();

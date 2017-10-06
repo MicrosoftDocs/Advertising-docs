@@ -1,4 +1,4 @@
----
+﻿---
 title: AddBudgets Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -84,11 +84,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e128="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e128:KeyValuePairOfstringstring>
-              <e128:key d4p1:nil="false">ValueHere</e128:key>
-              <e128:value d4p1:nil="false">ValueHere</e128:value>
-            </e128:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e78="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e78:KeyValuePairOfstringstring>
+              <e78:key d4p1:nil="false">ValueHere</e78:key>
+              <e78:value d4p1:nil="false">ValueHere</e78:value>
+            </e78:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -109,7 +109,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<AddBudgetsResponse> AddBudgetsAsync(
+public async Task<AddBudgetsResponse> AddBudgetsAsync(
 	IList<Budget> budgets)
 {
 	var request = new AddBudgetsRequest

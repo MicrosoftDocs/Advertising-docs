@@ -1,4 +1,4 @@
----
+﻿---
 title: GetNegativeSitesByCampaignIds Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -85,11 +85,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e253="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e253:KeyValuePairOfstringstring>
-              <e253:key d4p1:nil="false">ValueHere</e253:key>
-              <e253:value d4p1:nil="false">ValueHere</e253:value>
-            </e253:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e203="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e203:KeyValuePairOfstringstring>
+              <e203:key d4p1:nil="false">ValueHere</e203:key>
+              <e203:value d4p1:nil="false">ValueHere</e203:value>
+            </e203:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -110,7 +110,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetNegativeSitesByCampaignIdsResponse> GetNegativeSitesByCampaignIdsAsync(
+public async Task<GetNegativeSitesByCampaignIdsResponse> GetNegativeSitesByCampaignIdsAsync(
 	long accountId,
 	IList<long> campaignIds)
 {
@@ -125,7 +125,7 @@ protected async Task<GetNegativeSitesByCampaignIdsResponse> GetNegativeSitesByCa
 ```
 ```java
 static GetNegativeSitesByCampaignIdsResponse getNegativeSitesByCampaignIds(
-	long accountId,
+	java.lang.Long accountId,
 	ArrayOflong campaignIds) throws RemoteException, Exception
 {
 	GetNegativeSitesByCampaignIdsRequest request = new GetNegativeSitesByCampaignIdsRequest();

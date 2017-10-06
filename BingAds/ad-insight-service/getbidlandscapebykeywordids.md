@@ -1,4 +1,4 @@
----
+﻿---
 title: GetBidLandscapeByKeywordIds Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -73,31 +73,31 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBidLandscapeByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <BidLandscape xmlns:e62="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e62:KeywordBidLandscape>
-          <e62:KeywordId>ValueHere</e62:KeywordId>
-          <e62:StartDate d4p1:nil="false">
-            <e62:Day>ValueHere</e62:Day>
-            <e62:Month>ValueHere</e62:Month>
-            <e62:Year>ValueHere</e62:Year>
-          </e62:StartDate>
-          <e62:EndDate d4p1:nil="false">
-            <e62:Day>ValueHere</e62:Day>
-            <e62:Month>ValueHere</e62:Month>
-            <e62:Year>ValueHere</e62:Year>
-          </e62:EndDate>
-          <e62:BidLandscapePoints d4p1:nil="false">
-            <e62:BidLandscapePoint>
-              <e62:Bid>ValueHere</e62:Bid>
-              <e62:Clicks d4p1:nil="false">ValueHere</e62:Clicks>
-              <e62:Impressions>ValueHere</e62:Impressions>
-              <e62:TopImpressions d4p1:nil="false">ValueHere</e62:TopImpressions>
-              <e62:Currency>ValueHere</e62:Currency>
-              <e62:Cost d4p1:nil="false">ValueHere</e62:Cost>
-              <e62:MarginalCPC d4p1:nil="false">ValueHere</e62:MarginalCPC>
-            </e62:BidLandscapePoint>
-          </e62:BidLandscapePoints>
-        </e62:KeywordBidLandscape>
+      <BidLandscape xmlns:e5="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e5:KeywordBidLandscape>
+          <e5:KeywordId>ValueHere</e5:KeywordId>
+          <e5:StartDate d4p1:nil="false">
+            <e5:Day>ValueHere</e5:Day>
+            <e5:Month>ValueHere</e5:Month>
+            <e5:Year>ValueHere</e5:Year>
+          </e5:StartDate>
+          <e5:EndDate d4p1:nil="false">
+            <e5:Day>ValueHere</e5:Day>
+            <e5:Month>ValueHere</e5:Month>
+            <e5:Year>ValueHere</e5:Year>
+          </e5:EndDate>
+          <e5:BidLandscapePoints d4p1:nil="false">
+            <e5:BidLandscapePoint>
+              <e5:Bid>ValueHere</e5:Bid>
+              <e5:Clicks d4p1:nil="false">ValueHere</e5:Clicks>
+              <e5:Impressions>ValueHere</e5:Impressions>
+              <e5:TopImpressions d4p1:nil="false">ValueHere</e5:TopImpressions>
+              <e5:Currency>ValueHere</e5:Currency>
+              <e5:Cost d4p1:nil="false">ValueHere</e5:Cost>
+              <e5:MarginalCPC d4p1:nil="false">ValueHere</e5:MarginalCPC>
+            </e5:BidLandscapePoint>
+          </e5:BidLandscapePoints>
+        </e5:KeywordBidLandscape>
       </BidLandscape>
     </GetBidLandscapeByKeywordIdsResponse>
   </s:Body>
@@ -107,9 +107,9 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetBidLandscapeByKeywordIdsResponse> GetBidLandscapeByKeywordIdsAsync(
+public async Task<GetBidLandscapeByKeywordIdsResponse> GetBidLandscapeByKeywordIdsAsync(
 	IList<long> keywordIds,
-	boolean includeCurrentBid)
+	bool includeCurrentBid)
 {
 	var request = new GetBidLandscapeByKeywordIdsRequest
 	{

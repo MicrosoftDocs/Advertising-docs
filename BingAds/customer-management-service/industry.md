@@ -1,4 +1,4 @@
----
+﻿---
 title: Industry Value Set
 ms.service: bing-ads-customer-management-service
 ms.topic: article

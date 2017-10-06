@@ -1,4 +1,4 @@
----
+﻿---
 title: GetInsertionOrdersByAccount Service Operation
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
@@ -71,25 +71,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetInsertionOrdersByAccountResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <InsertionOrders xmlns:e54="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e54:InsertionOrder>
-          <e54:AccountId>ValueHere</e54:AccountId>
-          <e54:BalanceAmount d4p1:nil="false">ValueHere</e54:BalanceAmount>
-          <e54:BookingCountryCode d4p1:nil="false">ValueHere</e54:BookingCountryCode>
-          <e54:Comment d4p1:nil="false">ValueHere</e54:Comment>
-          <e54:EndDate>ValueHere</e54:EndDate>
-          <e54:InsertionOrderId d4p1:nil="false">ValueHere</e54:InsertionOrderId>
-          <e54:LastModifiedByUserId d4p1:nil="false">ValueHere</e54:LastModifiedByUserId>
-          <e54:LastModifiedTime d4p1:nil="false">ValueHere</e54:LastModifiedTime>
-          <e54:NotificationThreshold d4p1:nil="false">ValueHere</e54:NotificationThreshold>
-          <e54:ReferenceId d4p1:nil="false">ValueHere</e54:ReferenceId>
-          <e54:SpendCapAmount>ValueHere</e54:SpendCapAmount>
-          <e54:StartDate>ValueHere</e54:StartDate>
-          <e54:Name d4p1:nil="false">ValueHere</e54:Name>
-          <e54:Status d4p1:nil="false">ValueHere</e54:Status>
-          <e54:PurchaseOrder d4p1:nil="false">ValueHere</e54:PurchaseOrder>
-          <e54:ChangePendingReview d4p1:nil="false">ValueHere</e54:ChangePendingReview>
-        </e54:InsertionOrder>
+      <InsertionOrders xmlns:e45="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e45:InsertionOrder>
+          <e45:AccountId>ValueHere</e45:AccountId>
+          <e45:BalanceAmount d4p1:nil="false">ValueHere</e45:BalanceAmount>
+          <e45:BookingCountryCode d4p1:nil="false">ValueHere</e45:BookingCountryCode>
+          <e45:Comment d4p1:nil="false">ValueHere</e45:Comment>
+          <e45:EndDate>ValueHere</e45:EndDate>
+          <e45:InsertionOrderId d4p1:nil="false">ValueHere</e45:InsertionOrderId>
+          <e45:LastModifiedByUserId d4p1:nil="false">ValueHere</e45:LastModifiedByUserId>
+          <e45:LastModifiedTime d4p1:nil="false">ValueHere</e45:LastModifiedTime>
+          <e45:NotificationThreshold d4p1:nil="false">ValueHere</e45:NotificationThreshold>
+          <e45:ReferenceId d4p1:nil="false">ValueHere</e45:ReferenceId>
+          <e45:SpendCapAmount>ValueHere</e45:SpendCapAmount>
+          <e45:StartDate>ValueHere</e45:StartDate>
+          <e45:Name d4p1:nil="false">ValueHere</e45:Name>
+          <e45:Status d4p1:nil="false">ValueHere</e45:Status>
+          <e45:PurchaseOrder d4p1:nil="false">ValueHere</e45:PurchaseOrder>
+          <e45:ChangePendingReview d4p1:nil="false">ValueHere</e45:ChangePendingReview>
+        </e45:InsertionOrder>
       </InsertionOrders>
     </GetInsertionOrdersByAccountResponse>
   </s:Body>
@@ -99,7 +99,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetInsertionOrdersByAccountResponse> GetInsertionOrdersByAccountAsync(
+public async Task<GetInsertionOrdersByAccountResponse> GetInsertionOrdersByAccountAsync(
 	long accountId,
 	IList<long> insertionOrderIds)
 {
@@ -114,7 +114,7 @@ protected async Task<GetInsertionOrdersByAccountResponse> GetInsertionOrdersByAc
 ```
 ```java
 static GetInsertionOrdersByAccountResponse getInsertionOrdersByAccount(
-	long accountId,
+	java.lang.Long accountId,
 	ArrayOflong insertionOrderIds) throws RemoteException, Exception
 {
 	GetInsertionOrdersByAccountRequest request = new GetInsertionOrdersByAccountRequest();
