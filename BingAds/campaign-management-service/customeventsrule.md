@@ -1,4 +1,4 @@
-﻿---
+---
 title: CustomEventsRule Data Object
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -56,6 +56,31 @@ The [CustomEventsRule](customeventsrule.md) object derives from the [Remarketing
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="type"></a>Type|The type of the remarketing rule. For more information about remarketing rule types, see the [RemarketingRule Data Object Remarks](../campaign-management-service/remarketingrule.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
+
+## <a name="remarks"></a>Remarks
+For the *CustomEvents* rule, you must include one or more of the following conditional event operator pairs: (*ActionOperator* and *Action*), (*CategoryOperator* and *Category*), (*LabelOperator* and *Label*), (*ValueOperator* and *Value*). If more than one condition is specified, the conditions are joined using the logical *AND* operator. In other words the visitor will only be added to your remarketing list if all of the specified rule conditions are met.
+
+For example let's say that the following custom events are set.
+
+```xml
+<Rule i:type="a:CustomEventsRule" xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11">
+  <a:Type>CustomEvents</a:Type>
+  <a:Action>play</a:Action>
+  <a:ActionOperator>Equals</a:ActionOperator>
+  <a:Category>video</a:Category>
+  <a:CategoryOperator>Equals</a:CategoryOperator>
+  <a:Label>trailer</a:Label>
+  <a:LabelOperator>Equals</a:LabelOperator>
+  <a:Value>5</a:Value>
+  <a:ValueOperator>Equals</a:ValueOperator>
+</Rule>
+```
+
+The above definition is translated to the following logical expression:
+
+*(Category Equals video) and (Action Equals play) and (Label Equals trailer) and (Value Equals 5)*
+
+Evaluation of the logical expression determines who will be added to the remarketing list.
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

@@ -1,4 +1,4 @@
-﻿---
+---
 title: CampaignStatus Value Set
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -27,11 +27,11 @@ Defines the possible status values of a campaign.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="active"></a>Active|The campaign is active, which indicates that the campaign?s ads can be served.|
-|<a name="budgetandmanualpaused"></a>BudgetAndManualPaused|The campaign is paused, which indicates that the campaign?s ads will not serve. This status results when a user sets the campaign status to paused after the service pauses the campaign because the budget is depleted.|
-|<a name="budgetpaused"></a>BudgetPaused|The campaign is paused, which indicates that the campaign?s ads will not serve. The service sets this status when the budget is depleted. The service will set the status back to *Active* when the budget is restored.|
+|<a name="active"></a>Active|The campaign is active, which indicates that the campaign's ads can be served.|
+|<a name="budgetandmanualpaused"></a>BudgetAndManualPaused|The campaign is paused, which indicates that the campaign's ads will not serve. This status results when a user sets the campaign status to paused after the service pauses the campaign because the budget is depleted.|
+|<a name="budgetpaused"></a>BudgetPaused|The campaign is paused, which indicates that the campaign's ads will not serve. The service sets this status when the budget is depleted. The service will set the status back to *Active* when the budget is restored.|
 |<a name="deleted"></a>Deleted|The campaign is deleted. This status is for internal use only. Because all Get operations do not return deleted objects, you will not see an object with this status.|
-|<a name="paused"></a>Paused|The campaign is paused, which indicates that the campaign?s ads will not serve.|
+|<a name="paused"></a>Paused|The campaign is paused, which indicates that the campaign's ads will not serve.|
 |<a name="suspended"></a>Suspended|Your campaign has been suspended and no ads are eligible for delivery because of potentially fraudulent activity. <br />Please contact [Bing Ads Support](http://go.microsoft.com/fwlink/?LinkId=269631).|
 
 ## Requirements

@@ -1,13 +1,13 @@
-﻿---
+---
 title: GetAdExtensionIdsByAccountId Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets the ad extensions from the account?s ad extension library.
+description: Gets the ad extensions from the account's ad extension library.
 ---
 # GetAdExtensionIdsByAccountId Service Operation
-Gets the ad extensions from the account?s ad extension library.
+Gets the ad extensions from the account's ad extension library.
 
 ## <a name="request"></a>Request Elements
 The *GetAdExtensionIdsByAccountIdRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -18,7 +18,7 @@ The *GetAdExtensionIdsByAccountIdRequest* object defines the [body](#request-bod
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the ad extensions to get.|**long**|
 |<a name="adextensiontype"></a>AdExtensionType|The types of ad extensions to get from the account. You can specify one or more types. For possible values, see [AdExtensionsTypeFilter](../campaign-management-service/adextensionstypefilter.md).|[AdExtensionsTypeFilter](adextensionstypefilter.md)|
-|<a name="associationtype"></a>AssociationType|A value that filters the extensions based on whether they?re associated with a specific entity type. For possible values, see [AssociationType](../campaign-management-service/associationtype.md).<br /><br />**Note:** To get all extensions including those not associated with any entity, set this element to NULL.|[AssociationType](associationtype.md)|
+|<a name="associationtype"></a>AssociationType|A value that filters the extensions based on whether they?re associated with a specific entity type. For possible values, see [AssociationType](../campaign-management-service/associationtype.md).<br /><br /> To get all extensions including those not associated with any entity, set this element to NULL.|[AssociationType](associationtype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

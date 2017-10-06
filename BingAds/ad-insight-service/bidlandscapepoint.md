@@ -1,4 +1,4 @@
-﻿---
+---
 title: BidLandscapePoint Data Object
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -32,11 +32,11 @@ Defines an object that contains estimates of clicks, cost, and impressions  give
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="bid"></a>Bid|The suggested bid value.|**double**|
-|<a name="clicks"></a>Clicks|The estimated number of clicks.<br /><br />**Note:** This element will be nil if there is no estimate available.|**double**|
+|<a name="clicks"></a>Clicks|The estimated number of clicks.<br /><br /> This element will be nil if there is no estimate available.|**double**|
 |<a name="impressions"></a>Impressions|The estimated number of impressions.|**long**|
-|<a name="topimpressions"></a>TopImpressions|The estimated number of impressions in the top or mainline ad results.<br /><br />**Note:** This element will be nil if there is no estimate available.|**long**|
+|<a name="topimpressions"></a>TopImpressions|The estimated number of impressions in the top or mainline ad results.<br /><br /> This element will be nil if there is no estimate available.|**long**|
 |<a name="currency"></a>Currency|The monetary unit of the suggested bid value and estimated performance statistics.|[Currency](currency.md)|
-|<a name="cost"></a>Cost|The estimated cost.<br /><br />**Note:** This element will be nil if there is no estimate available.|**double**|
+|<a name="cost"></a>Cost|The estimated cost.<br /><br /> This element will be nil if there is no estimate available.|**double**|
 |<a name="marginalcpc"></a>MarginalCPC|Reserved for future use.|**double**|
 
 ## Requirements

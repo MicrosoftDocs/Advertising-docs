@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetCustomersInfo Service Operation
 ms.service: bing-ads-customer-management-service
 ms.topic: article
@@ -84,7 +84,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetCustomersInfoResponse> GetCustomersInfoAsync(
+public async Task<GetCustomersInfoResponse> GetCustomersInfoAsync(
 	string customerNameFilter,
 	int topN,
 	ApplicationType applicationScope)
@@ -101,7 +101,7 @@ protected async Task<GetCustomersInfoResponse> GetCustomersInfoAsync(
 ```
 ```java
 static GetCustomersInfoResponse getCustomersInfo(
-	string customerNameFilter,
+	java.lang.String customerNameFilter,
 	int topN,
 	ApplicationType applicationScope) throws RemoteException, Exception
 {

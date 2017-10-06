@@ -1,4 +1,4 @@
-﻿---
+---
 title: BudgetOpportunity Data Object
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -40,7 +40,7 @@ Defines an object that contains the suggested budget with estimated clicks and i
 |<a name="budgetpoints"></a>BudgetPoints|The list of budget points with weekly impressions, clicks and cost estimates for the given budget amount.|[BudgetPoint](budgetpoint.md) array|
 |<a name="budgettype"></a>BudgetType|The type of budget that the campaign uses.|[BudgetLimitType](budgetlimittype.md)|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign to which the suggested budget applies.|**long**|
-|<a name="currentbudget"></a>CurrentBudget|The campaign?s current budget.|**double**|
+|<a name="currentbudget"></a>CurrentBudget|The campaign's current budget.|**double**|
 |<a name="increaseinclicks"></a>IncreaseInClicks|The estimated clicks opportunities corresponding to the suggested budget.|**double**|
 |<a name="increaseinimpressions"></a>IncreaseInImpressions|The estimated impressions opportunities corresponding to the suggested budget.|**long**|
 |<a name="percentageincreaseinclicks"></a>PercentageIncreaseInClicks|The estimated percentage increase in clicks corresponding to the suggested budget.|**int**|

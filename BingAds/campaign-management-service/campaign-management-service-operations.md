@@ -1,4 +1,4 @@
-﻿---
+---
 title: Campaign Management Service Operations
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -11,7 +11,7 @@ The Campaign Management service defines the following data objects.
 
 |Service Operation|Description|Request Limits|
 |---|---|---|
-|[AddAdExtensions](addadextensions.md)|Adds one or more ad extensions to an account?s ad extension library.|N/A.|
+|[AddAdExtensions](addadextensions.md)|Adds one or more ad extensions to an account's ad extension library.|N/A.|
 |[AddAdGroupCriterions](addadgroupcriterions.md)|Adds one or more ad group criterions.|N/A.|
 |[AddAdGroups](addadgroups.md)|Adds new ad groups to a specified campaign.|N/A.|
 |[AddAds](addads.md)|Adds one or more ads to an ad group.|N/A.|
@@ -23,14 +23,14 @@ The Campaign Management service defines the following data objects.
 |[AddKeywords](addkeywords.md)|Adds one or more keywords to an ad group.|N/A.|
 |[AddLabels](addlabels.md)|Adds one or more labels to an account.|N/A.|
 |[AddListItemsToSharedList](addlistitemstosharedlist.md)|Adds negative keywords to the shared negative keyword list.|N/A.|
-|[AddMedia](addmedia.md)|Adds the specified media to an account?s media library.|N/A.|
+|[AddMedia](addmedia.md)|Adds the specified media to an account's media library.|N/A.|
 |[AddNegativeKeywordsToEntities](addnegativekeywordstoentities.md)|Adds negative keywords to the specified campaign or ad group.|N/A.|
 |[AddSharedEntity](addsharedentity.md)|Adds a negative keyword list to the account's library.|N/A.|
 |[AddUetTags](adduettags.md)|Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Bing Ads to collect actions people take on your website.|N/A.|
 |[AppealEditorialRejections](appealeditorialrejections.md)|Appeals the editorial rejections of one or more ads or keywords that failed editorial review.|N/A.|
 |[ApplyOfflineConversions](applyofflineconversions.md)|Applies offline conversions for the account with Microsoft Click Id among other offline conversion data.|N/A.|
 |[ApplyProductPartitionActions](applyproductpartitionactions.md)|Applies an add, update, or delete action to each of the specified [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md), which each contain a [ProductPartition](../campaign-management-service/productpartition.md).|N/A.|
-|[DeleteAdExtensions](deleteadextensions.md)|Deletes one or more ad extensions from the account?s ad extension library.|N/A.|
+|[DeleteAdExtensions](deleteadextensions.md)|Deletes one or more ad extensions from the account's ad extension library.|N/A.|
 |[DeleteAdExtensionsAssociations](deleteadextensionsassociations.md)|Removes the specified association from the respective campaigns or ad groups.|N/A.|
 |[DeleteAdGroupCriterions](deleteadgroupcriterions.md)|Deletes the specified ad group criterions.|N/A.|
 |[DeleteAdGroups](deleteadgroups.md)|Deletes one or more ad groups from the specified campaign.|N/A.|
@@ -43,15 +43,15 @@ The Campaign Management service defines the following data objects.
 |[DeleteLabelAssociations](deletelabelassociations.md)|Deletes label associations.|N/A.|
 |[DeleteLabels](deletelabels.md)|Deletes one or more labels from the account.|N/A.|
 |[DeleteListItemsFromSharedList](deletelistitemsfromsharedlist.md)|Deletes negative keywords from a negative keyword list.|N/A.|
-|[DeleteMedia](deletemedia.md)|Deletes the specified media from an account?s media library.|N/A.|
+|[DeleteMedia](deletemedia.md)|Deletes the specified media from an account's media library.|N/A.|
 |[DeleteNegativeKeywordsFromEntities](deletenegativekeywordsfromentities.md)|Deletes negative keywords from the specified campaign or ad group.|N/A.|
 |[DeleteSharedEntities](deletesharedentities.md)|Deletes negative keyword lists from the account's library.|N/A.|
 |[DeleteSharedEntityAssociations](deletesharedentityassociations.md)|Removes the association between a negative keyword list and an entity such as a campaign.|N/A.|
 |[GetAccountMigrationStatuses](getaccountmigrationstatuses.md)|Gets the migration status info for the specified accounts.|N/A.|
 |[GetAccountProperties](getaccountproperties.md)|Gets account level properties by name.|N/A.|
-|[GetAdExtensionIdsByAccountId](getadextensionidsbyaccountid.md)|Gets the ad extensions from the account?s ad extension library.|N/A.|
+|[GetAdExtensionIdsByAccountId](getadextensionidsbyaccountid.md)|Gets the ad extensions from the account's ad extension library.|N/A.|
 |[GetAdExtensionsAssociations](getadextensionsassociations.md)|Gets the respective ad extension associations by the specified campaign and ad group identifiers.|N/A.|
-|[GetAdExtensionsByIds](getadextensionsbyids.md)|Gets the specified ad extensions from the account?s ad extension library.|N/A.|
+|[GetAdExtensionsByIds](getadextensionsbyids.md)|Gets the specified ad extensions from the account's ad extension library.|N/A.|
 |[GetAdExtensionsEditorialReasons](getadextensionseditorialreasons.md)|Gets editorial rejection reasons for the respective ad extension and entity associations.|N/A.|
 |[GetAdGroupCriterionsByIds](getadgroupcriterionsbyids.md)|Gets ad group criterions by identifiers and types.|N/A.|
 |[GetAdGroupsByCampaignId](getadgroupsbycampaignid.md)|Gets the ad groups within the specified campaign.|N/A.|
@@ -78,10 +78,10 @@ The Campaign Management service defines the following data objects.
 |[GetLabelAssociationsByLabelIds](getlabelassociationsbylabelids.md)|Gets label associations by label identifiers.|N/A.|
 |[GetLabelsByIds](getlabelsbyids.md)|Gets labels by label identifiers.|N/A.|
 |[GetListItemsBySharedList](getlistitemsbysharedlist.md)|Gets the negative keywords of a negative keyword list.|N/A.|
-|[GetMediaAssociations](getmediaassociations.md)|Gets the media associations of the specified entity type from an account?s media library.|N/A.|
-|[GetMediaByIds](getmediabyids.md)|Gets the specified media from an account?s media library.|N/A.|
-|[GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md)|Gets the media meta data of the specified entity type from an account?s media library.|N/A.|
-|[GetMediaMetaDataByIds](getmediametadatabyids.md)|Gets the specified media meta data from an account?s media library.|N/A.|
+|[GetMediaAssociations](getmediaassociations.md)|Gets the media associations of the specified entity type from an account's media library.|N/A.|
+|[GetMediaByIds](getmediabyids.md)|Gets the specified media from an account's media library.|N/A.|
+|[GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md)|Gets the media meta data of the specified entity type from an account's media library.|N/A.|
+|[GetMediaMetaDataByIds](getmediametadatabyids.md)|Gets the specified media meta data from an account's media library.|N/A.|
 |[GetNegativeKeywordsByEntityIds](getnegativekeywordsbyentityids.md)|Gets the negative keywords that are only associated with the specified campaigns or ad groups.|N/A.|
 |[GetNegativeSitesByAdGroupIds](getnegativesitesbyadgroupids.md)|Gets the negative site URLs of the specified ad groups.|N/A.|
 |[GetNegativeSitesByCampaignIds](getnegativesitesbycampaignids.md)|Gets the negative site URLs of the specified campaigns.|N/A.|
@@ -95,7 +95,7 @@ The Campaign Management service defines the following data objects.
 |[SetNegativeSitesToAdGroups](setnegativesitestoadgroups.md)|Sets the negative site URLs of the specified ad groups.|N/A.|
 |[SetNegativeSitesToCampaigns](setnegativesitestocampaigns.md)|Sets the negative site URLs of the specified campaigns.|N/A.|
 |[SetSharedEntityAssociations](setsharedentityassociations.md)|Sets the association between a campaign and a negative keyword list.|N/A.|
-|[UpdateAdExtensions](updateadextensions.md)|Updates one or more ad extensions within an account?s ad extension library.|N/A.|
+|[UpdateAdExtensions](updateadextensions.md)|Updates one or more ad extensions within an account's ad extension library.|N/A.|
 |[UpdateAdGroupCriterions](updateadgroupcriterions.md)|Updates one or more ad group criterions.|N/A.|
 |[UpdateAdGroups](updateadgroups.md)|Updates the specified ad groups in a campaign.|N/A.|
 |[UpdateAds](updateads.md)|Updates the specified ads within an ad group.|N/A.|

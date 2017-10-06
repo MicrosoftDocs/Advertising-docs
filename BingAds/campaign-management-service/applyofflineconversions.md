@@ -1,4 +1,4 @@
-﻿---
+---
 title: ApplyOfflineConversions Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -90,11 +90,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e102="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e102:KeyValuePairOfstringstring>
-              <e102:key d4p1:nil="false">ValueHere</e102:key>
-              <e102:value d4p1:nil="false">ValueHere</e102:value>
-            </e102:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e152="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e152:KeyValuePairOfstringstring>
+              <e152:key d4p1:nil="false">ValueHere</e152:key>
+              <e152:value d4p1:nil="false">ValueHere</e152:value>
+            </e152:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

@@ -1,4 +1,4 @@
-﻿---
+---
 title: DeleteAccount Service Operation
 ms.service: bing-ads-customer-management-service
 ms.topic: article
@@ -75,7 +75,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<DeleteAccountResponse> DeleteAccountAsync(
+public async Task<DeleteAccountResponse> DeleteAccountAsync(
 	long accountId,
 	base64Binary timeStamp)
 {
@@ -90,8 +90,8 @@ protected async Task<DeleteAccountResponse> DeleteAccountAsync(
 ```
 ```java
 static DeleteAccountResponse deleteAccount(
-	long accountId,
-	base64Binary timeStamp) throws RemoteException, Exception
+	java.lang.Long accountId,
+	byte[] timeStamp) throws RemoteException, Exception
 {
 	DeleteAccountRequest request = new DeleteAccountRequest();
 

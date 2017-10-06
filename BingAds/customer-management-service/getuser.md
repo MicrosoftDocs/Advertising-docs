@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetUser Service Operation
 ms.service: bing-ads-customer-management-service
 ms.topic: article
@@ -16,7 +16,7 @@ The *GetUserRequest* object defines the [body](#request-body) and [header](#requ
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="userid"></a>UserId|The identifier of the user to get.<br /><br />**Note**: If this element is null or not provided, the response will include details for the authenticated user specified in the request header.|**long**|
+|<a name="userid"></a>UserId|The identifier of the user to get.<br /><br /> If this element is null or not provided, the response will include details for the authenticated user specified in the request header.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -129,7 +129,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetUserResponse> GetUserAsync(
+public async Task<GetUserResponse> GetUserAsync(
 	long userId)
 {
 	var request = new GetUserRequest
@@ -142,7 +142,7 @@ protected async Task<GetUserResponse> GetUserAsync(
 ```
 ```java
 static GetUserResponse getUser(
-	long userId) throws RemoteException, Exception
+	java.lang.Long userId) throws RemoteException, Exception
 {
 	GetUserRequest request = new GetUserRequest();
 

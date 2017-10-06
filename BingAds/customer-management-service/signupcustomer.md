@@ -1,4 +1,4 @@
-﻿---
+---
 title: SignupCustomer Service Operation
 ms.service: bing-ads-customer-management-service
 ms.topic: article
@@ -17,7 +17,7 @@ The *SignupCustomerRequest* object defines the [body](#request-body) and [header
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="customer"></a>Customer|A [Customer](../customer-management-service/customer.md) that specifies the details of the customer that you are adding.|[Customer](customer.md)|
-|<a name="account"></a>Account|An [Account](../customer-management-service/account.md) that specifies the details of the customer?s primary account.<br /><br />**Note**: Do not instantiate the *Account* data object. Instead, instantiate the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) that derives from the *Account* data object.|[Account](account.md)|
+|<a name="account"></a>Account|An [Account](../customer-management-service/account.md) that specifies the details of the customer?s primary account.<br /><br /> Do not instantiate the *Account* data object. Instead, instantiate the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) that derives from the *Account* data object.|[Account](account.md)|
 |<a name="parentcustomerid"></a>ParentCustomerId|The customer identifier of the reseller that will manage this customer.|**long**|
 |<a name="applicationscope"></a>ApplicationScope|Determines  the type of customer application. The default is Advertiser.<br /><br />The scope of this customer and the scope of the parent customer must be the same; for example, they must both be set to Advertiser.|[ApplicationType](applicationtype.md)|
 
@@ -172,7 +172,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<SignupCustomerResponse> SignupCustomerAsync(
+public async Task<SignupCustomerResponse> SignupCustomerAsync(
 	Customer customer,
 	Account account,
 	long parentCustomerId,
@@ -193,7 +193,7 @@ protected async Task<SignupCustomerResponse> SignupCustomerAsync(
 static SignupCustomerResponse signupCustomer(
 	Customer customer,
 	Account account,
-	long parentCustomerId,
+	java.lang.Long parentCustomerId,
 	ApplicationType applicationScope) throws RemoteException, Exception
 {
 	SignupCustomerRequest request = new SignupCustomerRequest();

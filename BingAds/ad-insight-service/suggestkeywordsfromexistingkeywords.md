@@ -1,4 +1,4 @@
-﻿---
+---
 title: SuggestKeywordsFromExistingKeywords Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -23,8 +23,8 @@ The *SuggestKeywordsFromExistingKeywordsRequest* object defines the [body](#requ
 |<a name="suggestiontype"></a>SuggestionType|The provider to use to generate the keyword suggestions. For a list of possible providers, the language and country restrictions of each provider, and the default provider by country, see the [Remarks](#remarks) section below.|**int**|
 |<a name="removeduplicates"></a>RemoveDuplicates|A Boolean value that determines whether to remove duplicate keywords from the list of suggested keywords. To remove duplicates, set to true. The default is false.|**boolean**|
 |<a name="excludebrand"></a>ExcludeBrand|A value that determines whether the results exclude brand keywords. To exclude brand keywords in the result, set to true. The default is false.|**boolean**|
-|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group for suggested keywords.<br /><br />**Note:** This element is not yet supported and may be used to influence keyword suggestions in a future release|**long**|
-|<a name="campaignid"></a>CampaignId|The identifier of the campaign for suggested keywords.<br /><br />**Note:** This element is not yet supported and may be used to influence keyword suggestions in a future release|**long**|
+|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group for suggested keywords.<br /><br /> This element is not yet supported and may be used to influence keyword suggestions in a future release|**long**|
+|<a name="campaignid"></a>CampaignId|The identifier of the campaign for suggested keywords.<br /><br /> This element is not yet supported and may be used to influence keyword suggestions in a future release|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -86,16 +86,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SuggestKeywordsFromExistingKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordSuggestions xmlns:e41="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e41:KeywordSuggestion>
-          <e41:Keyword d4p1:nil="false">ValueHere</e41:Keyword>
-          <e41:SuggestionsAndConfidence d4p1:nil="false">
-            <e41:KeywordAndConfidence>
-              <e41:SuggestedKeyword d4p1:nil="false">ValueHere</e41:SuggestedKeyword>
-              <e41:ConfidenceScore>ValueHere</e41:ConfidenceScore>
-            </e41:KeywordAndConfidence>
-          </e41:SuggestionsAndConfidence>
-        </e41:KeywordSuggestion>
+      <KeywordSuggestions xmlns:e98="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e98:KeywordSuggestion>
+          <e98:Keyword d4p1:nil="false">ValueHere</e98:Keyword>
+          <e98:SuggestionsAndConfidence d4p1:nil="false">
+            <e98:KeywordAndConfidence>
+              <e98:SuggestedKeyword d4p1:nil="false">ValueHere</e98:SuggestedKeyword>
+              <e98:ConfidenceScore>ValueHere</e98:ConfidenceScore>
+            </e98:KeywordAndConfidence>
+          </e98:SuggestionsAndConfidence>
+        </e98:KeywordSuggestion>
       </KeywordSuggestions>
     </SuggestKeywordsFromExistingKeywordsResponse>
   </s:Body>

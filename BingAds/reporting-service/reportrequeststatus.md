@@ -1,4 +1,4 @@
-﻿---
+---
 title: ReportRequestStatus Data Object
 ms.service: bing-ads-reporting-service
 ms.topic: article
@@ -23,7 +23,7 @@ Defines the status of a report request.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="reportdownloadurl"></a>ReportDownloadUrl|The URL from where the report can be downloaded. Once returned, the URL is valid for five minutes.<br /><br />The report that you download is compressed by using zip compression. You must first unzip the report before you can use its contents.<br /><br />**Note:** Use the download URL only if the *Status* element is set to *Success*. Even when the *Status* is set to *Success*, this element can be nil if no data is available for the submitted report parameters.|**string**|
+|<a name="reportdownloadurl"></a>ReportDownloadUrl|The URL from where the report can be downloaded. Once returned, the URL is valid for five minutes.<br /><br />The report that you download is compressed by using zip compression. You must first unzip the report before you can use its contents.<br /><br /> Use the download URL only if the *Status* element is set to *Success*. Even when the *Status* is set to *Success*, this element can be nil if no data is available for the submitted report parameters.|**string**|
 |<a name="status"></a>Status|The status of a report request.|[ReportRequestStatusType](reportrequeststatustype.md)|
 
 ## Requirements

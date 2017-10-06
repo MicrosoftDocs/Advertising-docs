@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetNegativeKeywordsByEntityIds Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -19,7 +19,7 @@ The *GetNegativeKeywordsByEntityIdsRequest* object defines the [body](#request-b
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="entityids"></a>EntityIds|An array of entity identifiers to return the associated negative keywords.<br /><br />**Note:** The specified entities must all exist within the same parent entity, for example the ad group identifiers must all exist within the same campaign.<br /><br />This array can contain a maximum of 1 element.|**long**|
+|<a name="entityids"></a>EntityIds|An array of entity identifiers to return the associated negative keywords.<br /><br /> The specified entities must all exist within the same parent entity, for example the ad group identifiers must all exist within the same campaign.<br /><br />This array can contain a maximum of 1 element.|**long**|
 |<a name="entitytype"></a>EntityType|The type of entity corresponding to the specified *EntityIds* element.<br /><br />Possible values include *AdGroup* and *Campaign*.|**string**|
 |<a name="parententityid"></a>ParentEntityId|The identifier of the parent entity corresponding to the specified *EntityIds* element.<br /><br />If the entity type is AdGroup, this element should be set to the campaign identifier that contains all of the specified ad groups.<br /><br />If the entity type is Campaign, the service uses the *CustomerAccountId* header element and this element is ignored.|**long**|
 
@@ -95,11 +95,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e201="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e201:KeyValuePairOfstringstring>
-              <e201:key d4p1:nil="false">ValueHere</e201:key>
-              <e201:value d4p1:nil="false">ValueHere</e201:value>
-            </e201:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e251="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e251:KeyValuePairOfstringstring>
+              <e251:key d4p1:nil="false">ValueHere</e251:key>
+              <e251:value d4p1:nil="false">ValueHere</e251:value>
+            </e251:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

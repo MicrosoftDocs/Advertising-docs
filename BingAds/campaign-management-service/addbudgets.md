@@ -1,4 +1,4 @@
-﻿---
+---
 title: AddBudgets Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -84,11 +84,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e78="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e78:KeyValuePairOfstringstring>
-              <e78:key d4p1:nil="false">ValueHere</e78:key>
-              <e78:value d4p1:nil="false">ValueHere</e78:value>
-            </e78:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e128="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e128:KeyValuePairOfstringstring>
+              <e128:key d4p1:nil="false">ValueHere</e128:key>
+              <e128:value d4p1:nil="false">ValueHere</e128:value>
+            </e128:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

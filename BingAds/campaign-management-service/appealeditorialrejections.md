@@ -1,4 +1,4 @@
-﻿---
+---
 title: AppealEditorialRejections Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -18,7 +18,7 @@ The *AppealEditorialRejectionsRequest* object defines the [body](#request-body) 
 |-----------|---------------|-------------|
 |<a name="entityidtoparentidassociations"></a>EntityIdToParentIdAssociations|A list of unique identifiers of the ads or keywords that failed editorial review. The list can contain a maximum of 1,000 [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) objects.<br /><br />You submit each ad or keyword identifier with their respective ad group parent identifier in a [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) object. The list of [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) must include either ad identifiers or keyword identifiers ? the list cannot include a mix ad and keyword entity identifiers.<br /><br />If an entity in the list has already been approved, the entity is ignored. If an entity in the list is not appealable, the call fails. If an entity in the list has an appeal pending, this request supersedes the pending request.|[EntityIdToParentIdAssociation](entityidtoparentidassociation.md) array|
 |<a name="entitytype"></a>EntityType|The type of entity that the entity to parent list contains. The supported values are *Ad* and *Keyword*.|[EntityType](entitytype.md)|
-|<a name="justificationtext"></a>JustificationText|The justification for the appeal. The string can contain a maximum of 1,000 characters. The justification applies to all of the specified entities.<br /><br />**Note:** A useful justification should include reasons why the ad or keyword is compliant with editorial policy for example, *JustificationText = "my ads for paint guns are not firearms, they are painting tools"*.|**string**|
+|<a name="justificationtext"></a>JustificationText|The justification for the appeal. The string can contain a maximum of 1,000 characters. The justification applies to all of the specified entities.<br /><br /> A useful justification should include reasons why the ad or keyword is compliant with editorial policy for example, *JustificationText = "my ads for paint guns are not firearms, they are painting tools"*.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -52,11 +52,11 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <AppealEditorialRejectionsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
-      <EntityIdToParentIdAssociations xmlns:e100="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-        <e100:EntityIdToParentIdAssociation>
-          <e100:EntityId>ValueHere</e100:EntityId>
-          <e100:ParentId>ValueHere</e100:ParentId>
-        </e100:EntityIdToParentIdAssociation>
+      <EntityIdToParentIdAssociations xmlns:e150="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+        <e150:EntityIdToParentIdAssociation>
+          <e150:EntityId>ValueHere</e150:EntityId>
+          <e150:ParentId>ValueHere</e150:ParentId>
+        </e150:EntityIdToParentIdAssociation>
       </EntityIdToParentIdAssociations>
       <EntityType>ValueHere</EntityType>
       <JustificationText i:nil="false">ValueHere</JustificationText>
@@ -81,11 +81,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e101="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e101:KeyValuePairOfstringstring>
-              <e101:key d4p1:nil="false">ValueHere</e101:key>
-              <e101:value d4p1:nil="false">ValueHere</e101:value>
-            </e101:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e151="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e151:KeyValuePairOfstringstring>
+              <e151:key d4p1:nil="false">ValueHere</e151:key>
+              <e151:value d4p1:nil="false">ValueHere</e151:value>
+            </e151:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

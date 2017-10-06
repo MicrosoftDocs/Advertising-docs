@@ -1,4 +1,4 @@
-﻿---
+---
 title: AdType Value Set
 ms.service: bing-ads-campaign-management-service
 ms.topic: article

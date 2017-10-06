@@ -1,4 +1,4 @@
-﻿---
+---
 title: SearchQueryPerformanceReportFilter Data Object
 ms.service: bing-ads-reporting-service
 ms.topic: article
@@ -37,7 +37,7 @@ Defines the criteria to use to filter the search query performance report data.
 |<a name="adtype"></a>AdType|The report will include data for only the specified ad types. For example, the report can include data for product or text ads. You can specify one or more ad types.|[AdTypeReportFilter](adtypereportfilter.md)|
 |<a name="campaignstatus"></a>CampaignStatus|The report will include data for campaigns that have the specified status value. You can specify one or more status values.|[CampaignStatusReportFilter](campaignstatusreportfilter.md)|
 |<a name="deliveredmatchtype"></a>DeliveredMatchType|The report will include data for only the specified delivered match types (as opposed to the bid match type). For example, you can use the filter to include data for ads that were delivered using the exact or phrase match type.<br /><br />You can specify one or more delivered match types.|[DeliveredMatchTypeReportFilter](deliveredmatchtypereportfilter.md)|
-|<a name="excludezeroclicks"></a>ExcludeZeroClicks|If the value of this element is set to *true*, search terms that had one or more ad impressions but resulted in zero clicks in the specified time duration will be excluded from the report.<br /><br />The default value is *false*, in which case the report will include zero click search term data.<br /><br />**Note**: Regardless of the value of this filter, search terms with zero clicks in the last 30 days will always be excluded.|**boolean**|
+|<a name="excludezeroclicks"></a>ExcludeZeroClicks|If the value of this element is set to *true*, search terms that had one or more ad impressions but resulted in zero clicks in the specified time duration will be excluded from the report.<br /><br />The default value is *false*, in which case the report will include zero click search term data.<br /><br /> Regardless of the value of this filter, search terms with zero clicks in the last 30 days will always be excluded.|**boolean**|
 |<a name="keywordstatus"></a>KeywordStatus|The report will include data for only the keyword status. For example, you can use the filter to include data for only active keywords.<br /><br />You can specify one or more keyword statuses.|[KeywordStatusReportFilter](keywordstatusreportfilter.md)|
 |<a name="languagecode"></a>LanguageCode|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](~/guides/ad-languages.md).|**string**|
 |<a name="searchqueries"></a>SearchQueries|The report will include data for only the specified search query strings.<br /><br />The list can contain a maximum of 30 strings, and each string can contain a maximum of 256 characters.|**string**|

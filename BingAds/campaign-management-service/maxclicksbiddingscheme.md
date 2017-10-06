@@ -1,4 +1,4 @@
-﻿---
+---
 title: MaxClicksBiddingScheme Data Object
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -12,7 +12,7 @@ Defines an object that represents the maximum clicks bid strategy type.
 Use this bid strategy to maximize the number of clicks given your maximum allowed budget.
 
 > [!IMPORTANT]
-> If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group?s or keyword?s bid strategy to *ManualCpc*. For more details, see [Budget and Bid Strategies](~/guides/budget-bid-strategies.md).
+> If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. For more details, see [Budget and Bid Strategies](~/guides/budget-bid-strategies.md).
  -  You can continue to set the ad group and keyword bids; however they will not be used by Bing Ads.
  -  Bing Ads will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Bing Ads may change them at any type using this bid strategy type.
  -  You can continue to set bid adjustments e.g. for age, gender, or location; however with one exception they will not be used by Bing Ads. Bing Ads will not honor any bid adjustments, unless you have set a bid adjustment of -100% (opt out).

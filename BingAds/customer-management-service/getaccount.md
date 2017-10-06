@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetAccount Service Operation
 ms.service: bing-ads-customer-management-service
 ms.topic: article
@@ -127,7 +127,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetAccountResponse> GetAccountAsync(
+public async Task<GetAccountResponse> GetAccountAsync(
 	long accountId)
 {
 	var request = new GetAccountRequest
@@ -140,7 +140,7 @@ protected async Task<GetAccountResponse> GetAccountAsync(
 ```
 ```java
 static GetAccountResponse getAccount(
-	long accountId) throws RemoteException, Exception
+	java.lang.Long accountId) throws RemoteException, Exception
 {
 	GetAccountRequest request = new GetAccountRequest();
 

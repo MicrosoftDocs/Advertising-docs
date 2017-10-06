@@ -1,4 +1,4 @@
-﻿---
+---
 title: Reporting Service Operations
 ms.service: bing-ads-reporting-service
 ms.topic: article

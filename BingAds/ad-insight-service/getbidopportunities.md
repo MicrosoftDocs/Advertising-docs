@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetBidOpportunities Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -21,7 +21,7 @@ The *GetBidOpportunitiesRequest* object defines the [body](#request-body) and [h
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group for which you want to determine keyword bid opportunities.<br /><br />If this element is nil or empty, the operation will return all bid opportunities for the specified campaign.|**long**|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad group specified in the *AdGroupId* element.<br /><br />If this element is nil or empty, then the *AdGroupId* must also be nil or empty, and the operation will return all bid opportunities for the account.|**long**|
-|<a name="opportunitytype"></a>OpportunityType|Determines the type or types of bid opportunities corresponding to your ad position goals.<br /><br />**Note:** The operation will only return opportunities if there?s a suggested increase within 100% of your current bid that will help you achieve the specified goal.|[BidOpportunityType](bidopportunitytype.md)|
+|<a name="opportunitytype"></a>OpportunityType|Determines the type or types of bid opportunities corresponding to your ad position goals.<br /><br /> The operation will only return opportunities if there?s a suggested increase within 100% of your current bid that will help you achieve the specified goal.|[BidOpportunityType](bidopportunitytype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -73,18 +73,18 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBidOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Opportunities xmlns:e6="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e6:BidOpportunity>
-          <e6:AdGroupId>ValueHere</e6:AdGroupId>
-          <e6:CampaignId>ValueHere</e6:CampaignId>
-          <e6:CurrentBid>ValueHere</e6:CurrentBid>
-          <e6:EstimatedIncreaseInClicks>ValueHere</e6:EstimatedIncreaseInClicks>
-          <e6:EstimatedIncreaseInCost>ValueHere</e6:EstimatedIncreaseInCost>
-          <e6:EstimatedIncreaseInImpressions>ValueHere</e6:EstimatedIncreaseInImpressions>
-          <e6:KeywordId>ValueHere</e6:KeywordId>
-          <e6:MatchType d4p1:nil="false">ValueHere</e6:MatchType>
-          <e6:SuggestedBid>ValueHere</e6:SuggestedBid>
-        </e6:BidOpportunity>
+      <Opportunities xmlns:e63="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e63:BidOpportunity>
+          <e63:AdGroupId>ValueHere</e63:AdGroupId>
+          <e63:CampaignId>ValueHere</e63:CampaignId>
+          <e63:CurrentBid>ValueHere</e63:CurrentBid>
+          <e63:EstimatedIncreaseInClicks>ValueHere</e63:EstimatedIncreaseInClicks>
+          <e63:EstimatedIncreaseInCost>ValueHere</e63:EstimatedIncreaseInCost>
+          <e63:EstimatedIncreaseInImpressions>ValueHere</e63:EstimatedIncreaseInImpressions>
+          <e63:KeywordId>ValueHere</e63:KeywordId>
+          <e63:MatchType d4p1:nil="false">ValueHere</e63:MatchType>
+          <e63:SuggestedBid>ValueHere</e63:SuggestedBid>
+        </e63:BidOpportunity>
       </Opportunities>
     </GetBidOpportunitiesResponse>
   </s:Body>

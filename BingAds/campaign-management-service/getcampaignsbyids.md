@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetCampaignsByIds Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -98,11 +98,11 @@ The following template shows the order of the [body](#response-body) and [header
           <BudgetType d4p1:nil="false">ValueHere</BudgetType>
           <DailyBudget d4p1:nil="false">ValueHere</DailyBudget>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e178="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e178:KeyValuePairOfstringstring>
-              <e178:key d4p1:nil="false">ValueHere</e178:key>
-              <e178:value d4p1:nil="false">ValueHere</e178:value>
-            </e178:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e228="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e228:KeyValuePairOfstringstring>
+              <e228:key d4p1:nil="false">ValueHere</e228:key>
+              <e228:value d4p1:nil="false">ValueHere</e228:value>
+            </e228:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
@@ -110,13 +110,13 @@ The following template shows the order of the [body](#response-body) and [header
           <Status d4p1:nil="false">ValueHere</Status>
           <TimeZone d4p1:nil="false">ValueHere</TimeZone>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e179="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e179:Parameters d4p1:nil="false">
-              <e179:CustomParameter>
-                <e179:Key d4p1:nil="false">ValueHere</e179:Key>
-                <e179:Value d4p1:nil="false">ValueHere</e179:Value>
-              </e179:CustomParameter>
-            </e179:Parameters>
+          <UrlCustomParameters xmlns:e229="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e229:Parameters d4p1:nil="false">
+              <e229:CustomParameter>
+                <e229:Key d4p1:nil="false">ValueHere</e229:Key>
+                <e229:Value d4p1:nil="false">ValueHere</e229:Value>
+              </e229:CustomParameter>
+            </e229:Parameters>
           </UrlCustomParameters>
           <CampaignType d4p1:nil="false">ValueHere</CampaignType>
           <Settings d4p1:nil="false">
@@ -144,11 +144,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e180="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e180:KeyValuePairOfstringstring>
-              <e180:key d4p1:nil="false">ValueHere</e180:key>
-              <e180:value d4p1:nil="false">ValueHere</e180:value>
-            </e180:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e230="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e230:KeyValuePairOfstringstring>
+              <e230:key d4p1:nil="false">ValueHere</e230:key>
+              <e230:value d4p1:nil="false">ValueHere</e230:value>
+            </e230:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

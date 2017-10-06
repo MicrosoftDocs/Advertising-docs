@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customer Data Object
 ms.service: bing-ads-customer-management-service
 ms.topic: article
@@ -42,7 +42,7 @@ Defines a customer.
 |<a name="lastmodifiedbyuserid"></a>LastModifiedByUserId|The identifier of the last user to update the customer?s information.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**long**|
 |<a name="lastmodifiedtime"></a>LastModifiedTime|The date and time that the customer information was last updated. The value is in Coordinated Universal Time (UTC).<br /><br />The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the **dateTime** entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**dateTime**|
 |<a name="marketcountry"></a>MarketCountry|The primary country where the customer operates. For a list of customer market country code values, see [Product Language](~/guides/ad-languages.md#productlanguage).<br/><br/>**Add:** Required<br/>**Update:** Read-only|**string**|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />**Note:** Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *Customer* object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *Customer* object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="marketlanguage"></a>MarketLanguage|The primary language that the customer uses. Your customer market language determines the language of the Bing Ads interface. For a list of customer market language code values, see [Product Language](~/guides/ad-languages.md#productlanguage).<br/><br/>**Add:** Required<br/>**Update:** Read-only|[LanguageType](languagetype.md)|
 |<a name="name"></a>Name|The name of the customer. The name can contain a maximum of 100 characters.<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
 |<a name="servicelevel"></a>ServiceLevel|For internal use only. If this element is set when calling [SignupCustomer](../customer-management-service/signupcustomer.md) an error will be returned. If this element is set when calling [UpdateCustomer](../customer-management-service/updatecustomer.md) the element will be ignored.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[ServiceLevel](servicelevel.md)|

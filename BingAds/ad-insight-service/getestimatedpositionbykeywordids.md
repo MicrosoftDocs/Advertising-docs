@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetEstimatedPositionByKeywordIds Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -73,28 +73,28 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedPositionByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedPositions xmlns:e13="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e13:KeywordIdEstimatedPosition>
-          <e13:KeywordId>ValueHere</e13:KeywordId>
-          <e13:KeywordEstimatedPosition d4p1:nil="false">
-            <e13:Keyword d4p1:nil="false">ValueHere</e13:Keyword>
-            <e13:EstimatedPositions d4p1:nil="false">
-              <e13:EstimatedPositionAndTraffic>
-                <e13:MatchType>ValueHere</e13:MatchType>
-                <e13:MinClicksPerWeek>ValueHere</e13:MinClicksPerWeek>
-                <e13:MaxClicksPerWeek>ValueHere</e13:MaxClicksPerWeek>
-                <e13:AverageCPC>ValueHere</e13:AverageCPC>
-                <e13:MinImpressionsPerWeek>ValueHere</e13:MinImpressionsPerWeek>
-                <e13:MaxImpressionsPerWeek>ValueHere</e13:MaxImpressionsPerWeek>
-                <e13:CTR>ValueHere</e13:CTR>
-                <e13:MinTotalCostPerWeek>ValueHere</e13:MinTotalCostPerWeek>
-                <e13:MaxTotalCostPerWeek>ValueHere</e13:MaxTotalCostPerWeek>
-                <e13:Currency>ValueHere</e13:Currency>
-                <e13:EstimatedAdPosition>ValueHere</e13:EstimatedAdPosition>
-              </e13:EstimatedPositionAndTraffic>
-            </e13:EstimatedPositions>
-          </e13:KeywordEstimatedPosition>
-        </e13:KeywordIdEstimatedPosition>
+      <KeywordEstimatedPositions xmlns:e70="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e70:KeywordIdEstimatedPosition>
+          <e70:KeywordId>ValueHere</e70:KeywordId>
+          <e70:KeywordEstimatedPosition d4p1:nil="false">
+            <e70:Keyword d4p1:nil="false">ValueHere</e70:Keyword>
+            <e70:EstimatedPositions d4p1:nil="false">
+              <e70:EstimatedPositionAndTraffic>
+                <e70:MatchType>ValueHere</e70:MatchType>
+                <e70:MinClicksPerWeek>ValueHere</e70:MinClicksPerWeek>
+                <e70:MaxClicksPerWeek>ValueHere</e70:MaxClicksPerWeek>
+                <e70:AverageCPC>ValueHere</e70:AverageCPC>
+                <e70:MinImpressionsPerWeek>ValueHere</e70:MinImpressionsPerWeek>
+                <e70:MaxImpressionsPerWeek>ValueHere</e70:MaxImpressionsPerWeek>
+                <e70:CTR>ValueHere</e70:CTR>
+                <e70:MinTotalCostPerWeek>ValueHere</e70:MinTotalCostPerWeek>
+                <e70:MaxTotalCostPerWeek>ValueHere</e70:MaxTotalCostPerWeek>
+                <e70:Currency>ValueHere</e70:Currency>
+                <e70:EstimatedAdPosition>ValueHere</e70:EstimatedAdPosition>
+              </e70:EstimatedPositionAndTraffic>
+            </e70:EstimatedPositions>
+          </e70:KeywordEstimatedPosition>
+        </e70:KeywordIdEstimatedPosition>
       </KeywordEstimatedPositions>
     </GetEstimatedPositionByKeywordIdsResponse>
   </s:Body>

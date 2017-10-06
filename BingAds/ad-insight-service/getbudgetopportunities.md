@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetBudgetOpportunities Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -66,26 +66,26 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBudgetOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Opportunities xmlns:e7="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e7:BudgetOpportunity>
-          <e7:BudgetPoints d4p1:nil="false">
-            <e7:BudgetPoint>
-              <e7:BudgetAmount>ValueHere</e7:BudgetAmount>
-              <e7:BudgetPointType>ValueHere</e7:BudgetPointType>
-              <e7:EstimatedWeeklyClicks>ValueHere</e7:EstimatedWeeklyClicks>
-              <e7:EstimatedWeeklyCost>ValueHere</e7:EstimatedWeeklyCost>
-              <e7:EstimatedWeeklyImpressions>ValueHere</e7:EstimatedWeeklyImpressions>
-            </e7:BudgetPoint>
-          </e7:BudgetPoints>
-          <e7:BudgetType>ValueHere</e7:BudgetType>
-          <e7:CampaignId>ValueHere</e7:CampaignId>
-          <e7:CurrentBudget>ValueHere</e7:CurrentBudget>
-          <e7:IncreaseInClicks>ValueHere</e7:IncreaseInClicks>
-          <e7:IncreaseInImpressions>ValueHere</e7:IncreaseInImpressions>
-          <e7:PercentageIncreaseInClicks>ValueHere</e7:PercentageIncreaseInClicks>
-          <e7:PercentageIncreaseInImpressions>ValueHere</e7:PercentageIncreaseInImpressions>
-          <e7:RecommendedBudget>ValueHere</e7:RecommendedBudget>
-        </e7:BudgetOpportunity>
+      <Opportunities xmlns:e64="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e64:BudgetOpportunity>
+          <e64:BudgetPoints d4p1:nil="false">
+            <e64:BudgetPoint>
+              <e64:BudgetAmount>ValueHere</e64:BudgetAmount>
+              <e64:BudgetPointType>ValueHere</e64:BudgetPointType>
+              <e64:EstimatedWeeklyClicks>ValueHere</e64:EstimatedWeeklyClicks>
+              <e64:EstimatedWeeklyCost>ValueHere</e64:EstimatedWeeklyCost>
+              <e64:EstimatedWeeklyImpressions>ValueHere</e64:EstimatedWeeklyImpressions>
+            </e64:BudgetPoint>
+          </e64:BudgetPoints>
+          <e64:BudgetType>ValueHere</e64:BudgetType>
+          <e64:CampaignId>ValueHere</e64:CampaignId>
+          <e64:CurrentBudget>ValueHere</e64:CurrentBudget>
+          <e64:IncreaseInClicks>ValueHere</e64:IncreaseInClicks>
+          <e64:IncreaseInImpressions>ValueHere</e64:IncreaseInImpressions>
+          <e64:PercentageIncreaseInClicks>ValueHere</e64:PercentageIncreaseInClicks>
+          <e64:PercentageIncreaseInImpressions>ValueHere</e64:PercentageIncreaseInImpressions>
+          <e64:RecommendedBudget>ValueHere</e64:RecommendedBudget>
+        </e64:BudgetOpportunity>
       </Opportunities>
     </GetBudgetOpportunitiesResponse>
   </s:Body>

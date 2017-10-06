@@ -1,13 +1,13 @@
-﻿---
+---
 title: GetMediaMetaDataByAccountId Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets the media meta data of the specified entity type from an account?s media library.
+description: Gets the media meta data of the specified entity type from an account's media library.
 ---
 # GetMediaMetaDataByAccountId Service Operation
-Gets the media meta data of the specified entity type from an account?s media library.
+Gets the media meta data of the specified entity type from an account's media library.
 
 > [!NOTE]
 > This operation does not return media meta data for location ad extensions. For getting location ad extension media, you should use [GetMediaByIds](../campaign-management-service/getmediabyids.md).

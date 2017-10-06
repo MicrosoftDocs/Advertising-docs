@@ -1,4 +1,4 @@
-﻿---
+---
 title: CallDetailReportColumn Value Set
 ms.service: bing-ads-reporting-service
 ms.topic: article
@@ -51,8 +51,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="adgroupname"></a>AdGroupName|The ad group name.|
 |<a name="adgroupstatus"></a>AdGroupStatus|The ad group status.|
 |<a name="areacode"></a>AreaCode|The area code where the user was physically located when they clicked the ad.|
-|<a name="callstatus"></a>CallStatus|The call status.**Note**: This column is deprecated and will be removed in a future API version. Bing Ads stopped charging for manual calls to a tracked number on March 12, 2014, and the CallStatus value is empty for any dates since.|
-|<a name="calltypename"></a>CallTypeName|The name of the call type.**Note**: This column is deprecated and will be removed in a future API version. Bing Ads stopped charging for manual calls to a tracked number on March 12, 2014, and the CallTypeName value is empty for any dates since.|
+|<a name="callstatus"></a>CallStatus|The call status. This column is deprecated and will be removed in a future API version. Bing Ads stopped charging for manual calls to a tracked number on March 12, 2014, and the CallStatus value is empty for any dates since.|
+|<a name="calltypename"></a>CallTypeName|The name of the call type. This column is deprecated and will be removed in a future API version. Bing Ads stopped charging for manual calls to a tracked number on March 12, 2014, and the CallTypeName value is empty for any dates since.|
 |<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
 |<a name="campaignstatus"></a>CampaignStatus|The campaign status.|
@@ -61,6 +61,20 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="endtime"></a>EndTime|The end time of the call.|
 |<a name="starttime"></a>StartTime|The start time of the call.|
 |<a name="state"></a>State|The state used to deliver the ad. The location where the user was in physically when they clicked the ad.|
+
+## <a name="remarks"></a>Remarks
+### <a name="requiredcolumns"></a>Required Columns
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
+
+> [!NOTE]
+> The TimePeriod column is required for all aggregation types except Summary.
+
+|Column|
+|----------|
+|CallStatus|
+|CallTypeName|
+|EndTime|
+|StartTime|
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  

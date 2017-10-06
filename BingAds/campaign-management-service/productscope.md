@@ -1,4 +1,4 @@
-﻿---
+---
 title: ProductScope Data Object
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -31,7 +31,7 @@ The *ProductScope* criterion can only be included within [BiddableCampaignCriter
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="conditions"></a>Conditions|A list of up to 7 product conditions that helps determine whether a product from the Bing Merchant Center store gets served as an ad.<br /><br />**Note:** Conditions may be returned by Bing Ads services in a different order from the order that you submitted.<br /><br />**Add:** Required<br/>**Update:** Required|[ProductCondition](productcondition.md) array|
+|<a name="conditions"></a>Conditions|A list of up to 7 product conditions that helps determine whether a product from the Bing Merchant Center store gets served as an ad.<br /><br /> Conditions may be returned by Bing Ads services in a different order from the order that you submitted.<br /><br />**Add:** Required<br/>**Update:** Required|[ProductCondition](productcondition.md) array|
 
 The [ProductScope](productscope.md) object has [Inherited Elements](#inheritedelements).
 

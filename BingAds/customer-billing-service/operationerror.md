@@ -1,4 +1,4 @@
-﻿---
+---
 title: OperationError Data Object
 ms.service: bing-ads-customer-billing-service
 ms.topic: article

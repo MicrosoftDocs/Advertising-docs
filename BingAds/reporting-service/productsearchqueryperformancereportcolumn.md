@@ -1,4 +1,4 @@
-﻿---
+---
 title: ProductSearchQueryPerformanceReportColumn Value Set
 ms.service: bing-ads-reporting-service
 ms.topic: article
@@ -90,7 +90,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |<a name="language"></a>Language|The ad group language.For possible values see [Ad Languages](~/guides/ad-languages.md). The language display name will be provided in the report e.g. *English*.|
 |<a name="merchantproductid"></a>MerchantProductId|The report will include a column that contains the unique identifier provided by a merchant for each product offer.|
-|<a name="network"></a>Network|The current network setting of an ad group. The following is a list of possible values:AOL searchBing and Yahoo! searchContentSyndicated search partners|
+|<a name="network"></a>Network|The current network setting of an ad group. The possible values include AOL search, Bing and Yahoo! search, Content, and Syndicated search partners.|
 |<a name="partitiontype"></a>PartitionType|The product partition type.|
 |<a name="productgroup"></a>ProductGroup|The forward slash ('/') delimited list of product conditions, reported as Operand = Attribute. For example "Product Type = Home / Product Type = Electronics / Product Type = DVD Player"|
 |<a name="revenue"></a>Revenue|The revenue optionally reported by the advertiser as a result of conversions. Corresponds to the optional *revenue* parameter of a Bing Ads campaign analytics tracking script.|
@@ -98,9 +98,23 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="revenueperconversion"></a>RevenuePerConversion|The revenue per conversion.The formula for calculating the revenue per conversion is *(Revenue / Conversions)*.|
 |<a name="searchquery"></a>SearchQuery|The search term used by your potential audience.|
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
-|<a name="timeperiod"></a>TimePeriod|The time period of each report row.**Note**: You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](~/guides/reports.md#timeperiod).|
+|<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](~/guides/reports.md#timeperiod).|
 |<a name="title"></a>Title|The product item name. For example the title of a book, DVD, or game.|
 |<a name="totalclicksonadelements"></a>TotalClicksOnAdElements|The number of clicks when this ad element was present in the ad copy, whether this or another ad element was clicked on.|
+
+## <a name="remarks"></a>Remarks
+### <a name="requiredcolumns"></a>Required Columns
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
+
+> [!NOTE]
+> The TimePeriod column is required for all aggregation types except Summary.
+
+|Column|
+|----------|
+|CampaignId|
+|MerchantProductId|
+|SearchQuery|
+|TimePeriod|
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  

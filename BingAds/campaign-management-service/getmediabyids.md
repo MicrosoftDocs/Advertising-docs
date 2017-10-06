@@ -1,13 +1,13 @@
-﻿---
+---
 title: GetMediaByIds Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets the specified media from an account?s media library.
+description: Gets the specified media from an account's media library.
 ---
 # GetMediaByIds Service Operation
-Gets the specified media from an account?s media library.
+Gets the specified media from an account's media library.
 
 > [!NOTE]
 > This operation only supports media identifiers for location ad extensions. For getting image ad extension media, you should use [GetMediaMetaDataByIds](../campaign-management-service/getmediametadatabyids.md).

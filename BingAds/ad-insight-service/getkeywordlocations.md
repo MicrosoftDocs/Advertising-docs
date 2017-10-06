@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetKeywordLocations Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -82,17 +82,17 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordLocationsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordLocationResult xmlns:e32="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e32:KeywordLocationResult>
-          <e32:Keyword d4p1:nil="false">ValueHere</e32:Keyword>
-          <e32:KeywordLocations d4p1:nil="false">
-            <e32:KeywordLocation>
-              <e32:Device d4p1:nil="false">ValueHere</e32:Device>
-              <e32:Location d4p1:nil="false">ValueHere</e32:Location>
-              <e32:Percentage>ValueHere</e32:Percentage>
-            </e32:KeywordLocation>
-          </e32:KeywordLocations>
-        </e32:KeywordLocationResult>
+      <KeywordLocationResult xmlns:e89="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e89:KeywordLocationResult>
+          <e89:Keyword d4p1:nil="false">ValueHere</e89:Keyword>
+          <e89:KeywordLocations d4p1:nil="false">
+            <e89:KeywordLocation>
+              <e89:Device d4p1:nil="false">ValueHere</e89:Device>
+              <e89:Location d4p1:nil="false">ValueHere</e89:Location>
+              <e89:Percentage>ValueHere</e89:Percentage>
+            </e89:KeywordLocation>
+          </e89:KeywordLocations>
+        </e89:KeywordLocationResult>
       </KeywordLocationResult>
     </GetKeywordLocationsResponse>
   </s:Body>

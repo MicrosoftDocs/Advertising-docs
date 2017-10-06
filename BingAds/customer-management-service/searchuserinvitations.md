@@ -1,4 +1,4 @@
-﻿---
+---
 title: SearchUserInvitations Service Operation
 ms.service: bing-ads-customer-management-service
 ms.topic: article
@@ -18,7 +18,7 @@ The *SearchUserInvitationsRequest* object defines the [body](#request-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="predicates"></a>Predicates|Determines the request conditions. This operation's response will include user invitations that match all of the specified predicates.<br /><br />**Note**: You may specify only one predicate.<br /><br />For a list of supported *Field* and *Operator* elements of a *Predicate* object for this service operation, see [Predicate Field and Operator](#predicates).|[Predicate](predicate.md) array|
+|<a name="predicates"></a>Predicates|Determines the request conditions. This operation's response will include user invitations that match all of the specified predicates.<br /><br /> You may specify only one predicate.<br /><br />For a list of supported *Field* and *Operator* elements of a *Predicate* object for this service operation, see [Predicate Field and Operator](#predicates).|[Predicate](predicate.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -95,7 +95,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<SearchUserInvitationsResponse> SearchUserInvitationsAsync(
+public async Task<SearchUserInvitationsResponse> SearchUserInvitationsAsync(
 	IList<Predicate> predicates)
 {
 	var request = new SearchUserInvitationsRequest

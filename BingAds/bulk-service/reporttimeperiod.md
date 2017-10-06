@@ -1,4 +1,4 @@
-﻿---
+---
 title: ReportTimePeriod Value Set
 ms.service: bing-ads-bulk-service
 ms.topic: article
@@ -33,12 +33,12 @@ Defines the date range values for the requested performance data in a bulk downl
 
 |Value|Description|
 |-----------|---------------|
-|<a name="lastfourweeks"></a>LastFourWeeks|Performance data for the four calendar weeks prior to today.<br /><br />**Note:** A calendar week runs from Sunday to Saturday.|
+|<a name="lastfourweeks"></a>LastFourWeeks|Performance data for the four calendar weeks prior to today.<br /><br /> A calendar week runs from Sunday to Saturday.|
 |<a name="lastmonth"></a>LastMonth|Performance data for the previous calendar month.|
 |<a name="lastsevendays"></a>LastSevenDays|Performance data for the previous seven days, one row for each day.|
 |<a name="lastsixmonths"></a>LastSixMonths|Performance data for the previous six calendar months.|
 |<a name="lastthreemonths"></a>LastThreeMonths|Performance data for the previous three calendar months.|
-|<a name="lastweek"></a>LastWeek|Performance data for the previous calendar week.<br /><br />**Note:** A calendar week runs from Sunday to Saturday.|
+|<a name="lastweek"></a>LastWeek|Performance data for the previous calendar week.<br /><br /> A calendar week runs from Sunday to Saturday.|
 |<a name="lastyear"></a>LastYear|Performance data for the previous calendar year.|
 |<a name="thismonth"></a>ThisMonth|Performance data for the current calendar month.|
 |<a name="thisweek"></a>ThisWeek|Performance data for the current calendar week.|

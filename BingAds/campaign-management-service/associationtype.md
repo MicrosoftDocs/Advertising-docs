@@ -1,4 +1,4 @@
-﻿---
+---
 title: AssociationType Value Set
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -42,8 +42,8 @@ Defines the entity types that can be associated with an ad extension.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="account"></a>Account|Refers to ad extension associations with accounts.<br /><br />**Note:** Call ad extensions cannot be associated with an account.|
-|<a name="adgroup"></a>AdGroup|Refers to ad extension associations with ad groups.<br /><br />**Note:** Call and Location ad extensions cannot be associated with an ad group.|
+|<a name="account"></a>Account|Refers to ad extension associations with accounts.<br /><br /> Call ad extensions cannot be associated with an account.|
+|<a name="adgroup"></a>AdGroup|Refers to ad extension associations with ad groups.<br /><br /> Call and Location ad extensions cannot be associated with an ad group.|
 |<a name="campaign"></a>Campaign|Refers to ad extension associations with campaigns.|
 
 ## Requirements

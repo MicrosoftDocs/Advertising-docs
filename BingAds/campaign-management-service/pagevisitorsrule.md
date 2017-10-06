@@ -1,4 +1,4 @@
-﻿---
+---
 title: PageVisitorsRule Data Object
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -42,6 +42,67 @@ The [PageVisitorsRule](pagevisitorsrule.md) object derives from the [Remarketing
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="type"></a>Type|The type of the remarketing rule. For more information about remarketing rule types, see the [RemarketingRule Data Object Remarks](../campaign-management-service/remarketingrule.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
+
+## <a name="remarks"></a>Remarks
+Remarketing rules are conditions used to determine who to add to your remarketing list. For the *PageVisitors* rule, you must include one or more rule item groups. With each rule item group, the rule item conditions for the same page are joined using the logical *AND* operator. Then, each result from the list of rule item groups are joined using the logical *OR* operator. In other words the user will be added to your remarketing list if all of the specified rule item conditions within any one of the rule item groups are met.
+
+For example let's say that the following rule item groups are set.
+
+```xml
+<Rule i:type="a:PageVisitorsRule" xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11">
+  <a:Type>PageVisitors</a:Type>
+  <a:RuleItemGroups>
+    <a:RuleItemGroup>
+      <a:Items>
+        <a:RuleItem i:type="a:StringRuleItem">
+          <a:Type>String</a:Type>
+          <a:Operand>Url</a:Operand>
+          <a:Operator>Contains</a:Operator>
+          <a:Value>X</a:Value>
+        </a:RuleItem>
+        <a:RuleItem i:type="a:StringRuleItem">
+          <a:Type>String</a:Type>
+          <a:Operand>ReferrerUrl</a:Operand>
+          <a:Operator>DoesNotContain</a:Operator>
+          <a:Value>Z</a:Value>
+        </a:RuleItem>
+      </a:Items>
+    </a:RuleItemGroup>
+    <a:RuleItemGroup>
+      <a:Items>
+        <a:RuleItem i:type="a:StringRuleItem">
+          <a:Type>String</a:Type>
+          <a:Operand>Url</a:Operand>
+          <a:Operator>DoesNotBeginWith</a:Operator>
+          <a:Value>Y</a:Value>
+        </a:RuleItem>
+      </a:Items>
+    </a:RuleItemGroup>
+    <a:RuleItemGroup>
+      <a:Items>
+        <a:RuleItem i:type="a:StringRuleItem">
+          <a:Type>String</a:Type>
+          <a:Operand>ReferrerUrl</a:Operand>
+          <a:Operator>Equals</a:Operator>
+          <a:Value>Z</a:Value>
+        </a:RuleItem>
+      </a:Items>
+    </a:RuleItemGroup>
+  </a:RuleItemGroups>
+</Rule>
+```
+
+The above definition is translated to the following logical expression:
+
+*((Url Contains X) and (ReferrerUrl DoesNotContain Z)) or ((Url DoesNotBeginWith Y)) or ((ReferrerUrl Equals Z))*
+
+Evaluation of the logical expression determines which of the following example users will be added to the remarketing list.
+
+|User|Url Visited|Referrer Url|Added to List|
+|-----------|---------------|-------------|-------------|
+|User 1|A<br/>|X|Yes. Evaluation of the logical expression results as *True*.<br/><br/>*((Url Contains X) and (ReferrerUrl DoesNotContain Z)) or ((Url DoesNotBeginWith Y)) or ((ReferrerUrl Equals Z))*<br/><br/>*(False and True) or (True) or (False)*<br/><br/>*False or True or False*<br/><br/>*True*|
+|User 2|B<br/>|Y|No. Evaluation of the logical expression results as *False*.<br/><br/>*((Url Contains X) and (ReferrerUrl DoesNotContain Z)) or ((Url DoesNotBeginWith Y)) or ((ReferrerUrl Equals Z))*<br/><br/>*(False and True) or (False) or (False)*<br/><br/>*False or False or False*<br/><br/>*False*|
+|User 3|C<br/>|Z|Yes. Evaluation of the logical expression results as *True*.<br/><br/>*((Url Contains X) and (ReferrerUrl DoesNotContain Z)) or ((Url DoesNotBeginWith Y)) or ((ReferrerUrl Equals Z))*<br/><br/>*(False and False) or (True) or (True)*<br/><br/>*False or True or True*<br/><br/>*True*|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

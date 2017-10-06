@@ -1,4 +1,4 @@
-﻿---
+---
 title: KeywordEstimatedBid Data Object
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -27,7 +27,7 @@ Defines an object that contains the keyword and the estimated bid value for each
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword to which the estimates apply.|**string**|
-|<a name="estimatedbids"></a>EstimatedBids|A list of [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md) data objects that contains the suggested bid value for the keyword and match type. If there is data available for the keyword, the [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md) object will provide an estimated bid value. Otherwise, if no data is available the *EstimatedBids* element will be null.<br /><br />Each object also contains estimates of clicks, average cost per click (CPC), impressions, click-through rate (CTR), and total cost given the suggested bid.<br /><br />If there is no data available for a match type, the array will not include estimates for the match type.<br /><br />**Note:** Some returned elements of the [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md) may be NULL.|[EstimatedBidAndTraffic](estimatedbidandtraffic.md) array|
+|<a name="estimatedbids"></a>EstimatedBids|A list of [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md) data objects that contains the suggested bid value for the keyword and match type. If there is data available for the keyword, the [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md) object will provide an estimated bid value. Otherwise, if no data is available the *EstimatedBids* element will be null.<br /><br />Each object also contains estimates of clicks, average cost per click (CPC), impressions, click-through rate (CTR), and total cost given the suggested bid.<br /><br />If there is no data available for a match type, the array will not include estimates for the match type.<br /><br /> Some returned elements of the [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md) may be NULL.|[EstimatedBidAndTraffic](estimatedbidandtraffic.md) array|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

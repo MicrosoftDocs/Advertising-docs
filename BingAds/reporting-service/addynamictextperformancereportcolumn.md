@@ -1,4 +1,4 @@
-﻿---
+---
 title: AdDynamicTextPerformanceReportColumn Value Set
 ms.service: bing-ads-reporting-service
 ms.topic: article
@@ -102,9 +102,25 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="path1"></a>Path1|The path 1 attribute of an ad.|
 |<a name="path2"></a>Path2|The path 2 attribute of an ad.|
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
-|<a name="timeperiod"></a>TimePeriod|The time period of each report row.**Note**: You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](~/guides/reports.md#timeperiod).|
+|<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](~/guides/reports.md#timeperiod).|
 |<a name="titlepart1"></a>TitlePart1|The title part 1 attribute of an ad.|
 |<a name="titlepart2"></a>TitlePart2|The title part 2 attribute of an ad.|
+
+## <a name="remarks"></a>Remarks
+### <a name="requiredcolumns"></a>Required Columns
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
+
+> [!NOTE]
+> The TimePeriod column is required for all aggregation types except Summary.
+
+|Column|
+|----------|
+|AdTitle|
+|DestinationUrl|
+|Param1|
+|Param2|
+|Param3|
+|TimePeriod|
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  

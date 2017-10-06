@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetBulkUploadUrl Service Operation
 ms.service: bing-ads-bulk-service
 ms.topic: article

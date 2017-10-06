@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetBudgetsByIds Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -84,11 +84,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e171="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e171:KeyValuePairOfstringstring>
-              <e171:key d4p1:nil="false">ValueHere</e171:key>
-              <e171:value d4p1:nil="false">ValueHere</e171:value>
-            </e171:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e221="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e221:KeyValuePairOfstringstring>
+              <e221:key d4p1:nil="false">ValueHere</e221:key>
+              <e221:value d4p1:nil="false">ValueHere</e221:value>
+            </e221:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

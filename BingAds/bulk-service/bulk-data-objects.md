@@ -1,4 +1,4 @@
-﻿---
+---
 title: Bulk Data Objects
 ms.service: bing-ads-bulk-service
 ms.topic: article

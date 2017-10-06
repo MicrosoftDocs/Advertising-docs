@@ -1,4 +1,4 @@
-﻿---
+---
 title: AdApiError Data Object
 ms.service: bing-ads-bulk-service
 ms.topic: article

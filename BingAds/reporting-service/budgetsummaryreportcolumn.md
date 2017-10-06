@@ -1,4 +1,4 @@
-﻿---
+---
 title: BudgetSummaryReportColumn Value Set
 ms.service: bing-ads-reporting-service
 ms.topic: article
@@ -47,6 +47,18 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="date"></a>Date|The date for the downloaded report records. The date will be in the time zone of the campaign|
 |<a name="monthlybudget"></a>MonthlyBudget|The average amount of campaign budget spent during a calendar month.|
 |<a name="monthtodatespend"></a>MonthToDateSpend|The amount of money spent to date for the month.|
+
+## <a name="remarks"></a>Remarks
+### <a name="requiredcolumns"></a>Required Columns
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
+
+|Column|
+|----------|
+|AccountName|
+|AccountNumber|
+|CampaignName|
+|CurrencyCode|
+|Date|
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  

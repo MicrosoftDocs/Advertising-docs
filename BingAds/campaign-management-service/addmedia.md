@@ -1,13 +1,13 @@
-﻿---
+---
 title: AddMedia Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Adds the specified media to an account?s media library.
+description: Adds the specified media to an account's media library.
 ---
 # AddMedia Service Operation
-Adds the specified media to an account?s media library. Depending on the type of [Media](../campaign-management-service/media.md), you can then add the media to one or more [ImageAdExtension](../campaign-management-service/imageadextension.md) or [LocationAdExtension](../campaign-management-service/locationadextension.md) objects.
+Adds the specified media to an account's media library. Depending on the type of [Media](../campaign-management-service/media.md), you can then add the media to one or more [ImageAdExtension](../campaign-management-service/imageadextension.md) or [LocationAdExtension](../campaign-management-service/locationadextension.md) objects.
 
 ## <a name="request"></a>Request Elements
 The *AddMediaRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -17,7 +17,7 @@ The *AddMediaRequest* object defines the [body](#request-body) and [header](#req
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that owns the media library.|**long**|
-|<a name="media"></a>Media|An array of *Media* to add to the account?s media library.<br /><br />You can add a maximum of 10 media in a single call.|[Media](media.md) array|
+|<a name="media"></a>Media|An array of *Media* to add to the account's media library.<br /><br />You can add a maximum of 10 media in a single call.|[Media](media.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

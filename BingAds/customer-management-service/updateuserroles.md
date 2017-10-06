@@ -1,4 +1,4 @@
-﻿---
+---
 title: UpdateUserRoles Service Operation
 ms.service: bing-ads-customer-management-service
 ms.topic: article
@@ -35,7 +35,7 @@ The *UpdateUserRolesResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="lastmodifiedtime"></a>LastModifiedTime|The date and time that the user roles were last updated. The value is in Coordinated Universal Time (UTC).<br/><br/>**Note:** The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|**dateTime**|
+|<a name="lastmodifiedtime"></a>LastModifiedTime|The date and time that the user roles were last updated. The value is in Coordinated Universal Time (UTC).<br/><br/> The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|**dateTime**|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -95,7 +95,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<UpdateUserRolesResponse> UpdateUserRolesAsync(
+public async Task<UpdateUserRolesResponse> UpdateUserRolesAsync(
 	long customerId,
 	long userId,
 	int newRoleId,
@@ -122,8 +122,8 @@ protected async Task<UpdateUserRolesResponse> UpdateUserRolesAsync(
 ```
 ```java
 static UpdateUserRolesResponse updateUserRoles(
-	long customerId,
-	long userId,
+	java.lang.Long customerId,
+	java.lang.Long userId,
 	int newRoleId,
 	ArrayOflong newAccountIds,
 	ArrayOflong newCustomerIds,
@@ -204,10 +204,10 @@ If an advertiser campaign manager is limited to managing accounts 123 and 789, a
 
 -   Set the *DeleteAccountIds* element to an array that contains 123, 456, and 789.
 
-Users with account level roles can be restricted to specific accounts. Users with customer level roles can access all accounts within the user?s customer, and their access cannot be restricted to specific accounts.
+Users with account level roles can be restricted to specific accounts. Users with customer level roles can access all accounts within the user's customer, and their access cannot be restricted to specific accounts.
 
 > [!NOTE]
-> When attempting to restrict customer level user roles to specific accounts the *UpdateUserRoles* operation will not fail, and the user will retain access for all accounts within the user?s customer.
+> When attempting to restrict customer level user roles to specific accounts the *UpdateUserRoles* operation will not fail, and the user will retain access for all accounts within the user's customer.
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customer Billing Value Sets
 ms.service: bing-ads-customer-billing-service
 ms.topic: article

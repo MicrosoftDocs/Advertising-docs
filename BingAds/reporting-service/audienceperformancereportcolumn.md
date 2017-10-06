@@ -1,4 +1,4 @@
-﻿---
+---
 title: AudiencePerformanceReportColumn Value Set
 ms.service: bing-ads-reporting-service
 ms.topic: article
@@ -82,7 +82,20 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="revenueperconversion"></a>RevenuePerConversion|The revenue per conversion.The formula for calculating the revenue per conversion is *(Revenue / Conversions)*.|
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
 |<a name="targetingsetting"></a>TargetingSetting|This attribute reflects the current value of your ad group's audience targeting setting. The possible values are "Target and bid" or "Bid only".Target and bid: Show ads only to people included in the remarketing list, with the option to change the bid amount.Bid only: Show ads to people searching for your ad, with the option to change the bid amount for people included in the remarketing list.|
-|<a name="timeperiod"></a>TimePeriod|The time period of each report row.**Note**: You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](~/guides/reports.md#timeperiod).|
+|<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](~/guides/reports.md#timeperiod).|
+
+## <a name="remarks"></a>Remarks
+### <a name="requiredcolumns"></a>Required Columns
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
+
+> [!NOTE]
+> The TimePeriod column is required for all aggregation types except Summary.
+
+|Column|
+|----------|
+|AccountId|
+|AudienceId|
+|TimePeriod|
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  

@@ -29,7 +29,7 @@ The SDK uses the production environment by default. With the .NET and Java SDKs 
 environment=Sandbox
 ```
 
-You can also set the API environment parameter of individual [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md), [Service Client](#service-client), and [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md) instances. Setting the *apiEnvironment* overrides the global setting only for the specified service client instance or instances. Unless otherwise intended, you should be careful not to inadvertently configure a mixed set of environments.    
+You can also set the API environment parameter of individual [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md), [Service Client](#serviceclient), and [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md) instances. Setting the *apiEnvironment* overrides the global setting only for the specified service client instance or instances. Unless otherwise intended, you should be careful not to inadvertently configure a mixed set of environments.    
 
 ```csharp
 BulkServiceManager BulkService = new BulkServiceManager(authorizationData, ApiEnvironment.Sandbox);
@@ -218,11 +218,11 @@ For repeat or long term authentication, you should follow the authorization code
     access_token = oauth_tokens.access_token
     ```
 
-    If this step succeeded, your application has permissions to manage the user's Bing Ads accounts. To call Bing Ads services, you should initialize either [Service Client](#service-client), [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md), or [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md) with [AuthorizationData](#authorization-data) that contains your *OAuthWebAuthCodeGrant* instance.
+    If this step succeeded, your application has permissions to manage the user's Bing Ads accounts. To call Bing Ads services, you should initialize either [Service Client](#serviceclient), [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md), or [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md) with [AuthorizationData](#authorization-data) that contains your *OAuthWebAuthCodeGrant* instance.
     
-    For more information, see [Using AuthorizationData](#authorizationdata), [Using Service Client](#service-client), [Using BulkServiceManager](#bulkservicemanager), and [Using ReportingServiceManager](#reportingservicemanager).
+    For more information, see [Using AuthorizationData](#authorization-data), [Using Service Client](#serviceclient), [Using BulkServiceManager](sdk-bulk-service-manager.md), and [Using ReportingServiceManager](sdk-reporting-service-manager.md).
 
-4.  When calling Bing Ads services with [Service Client](#service-client), [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md), or [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md), it is important to save the most recent refresh token whenever new OAuth tokens are received.  
+4.  When calling Bing Ads services with [Service Client](#serviceclient), [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md), or [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md), it is important to save the most recent refresh token whenever new OAuth tokens are received.  
 
     ```csharp
     // If you already have a refresh token, use it to request new access and refresh tokens.
@@ -283,7 +283,7 @@ For repeat or long term authentication, you should follow the authorization code
 
 
 ## <a name="authorization-data"></a>Using AuthorizationData
-The [AuthorizationData](#authorization-data) class contains properties that Bing Ads uses to authorize a user. The [Service Client](#service-client), [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md) and [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md) classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 
+The [AuthorizationData](#authorization-data) class contains properties that Bing Ads uses to authorize a user. The [Service Client](#serviceclient), [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md) and [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md) classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 
 
 The following code block shows how to create an instance of [AuthorizationData](#authorization-data) and set its *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties.
 
@@ -331,14 +331,14 @@ You can use an instance of the *ServiceClient* class to call any methods of one 
 > If you are using the Bulk or Reporting services, use the [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md) or [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md) instead of *ServiceClient*. For example the [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md) will submit your download request to the bulk service, poll the service until completed, and download the file to the local directory that you specified in the request. You'll save even more time because you don't have to write or parse the upload or results files. 
 
 ```csharp
-// The primary method of the [Service Client](#service-client) class is *CallAsync*. The *method* parameter is the delegate for the service operation that you want to call. The *request* parameter of this method must be a request message corresponding to the name of the service operation specified by the first request parameter. The request message must match the service operation that is specified as the delegate in the first request.
+// The primary method of the ServiceClient class is CallAsync. The method parameter is the delegate for the service operation that you want to call. The request parameter of this method must be a request message corresponding to the name of the service operation specified by the first request parameter. The request message must match the service operation that is specified as the delegate in the first request.
 
 public async Task<TResponse> CallAsync<TRequest, TResponse>(
     Func<TService, TRequest, Task<TResponse>> method, TRequest request)
 
-// The header elements that the *CallAsync* method sets will differ depending on the type of authentication specified in [AuthorizationData](#authorization-data) object and the requirements of the service. For example if you use one of the OAuth classes such as *OAuthWebAuthCodeGrant*, the *AuthenticationToken* will be set by *CallAsync*, whereas the *UserName* and *Password* headers will remain empty. If you use *PasswordAuthentication*, the *UserName* and *Password* headers will be set by *CallAsync* instead of *AuthenticationToken*.
+// The header elements that the CallAsync method sets will differ depending on the type of authentication specified in AuthorizationData object and the requirements of the service. For example if you use one of the OAuth classes such as OAuthWebAuthCodeGrant, the AuthenticationToken will be set by CallAsync, whereas the UserName and Password headers will remain empty. If you use PasswordAuthentication, the UserName and Password headers will be set by CallAsync instead of AuthenticationToken.
 
-// In the following sample, the method delegate is *(s, r) => s.GetUserAsync(r)* which takes a *GetUserRequest* message as the request parameter (*TRequest*) and returns a *GetUserResponse* message (*TResponse*).
+// In the following sample, the method delegate is (s, r) => s.GetUserAsync(r) which takes a GetUserRequest message as the request parameter (TRequest) and returns a GetUserResponse message (TResponse).
 
 private async Task<User> GetUserAsync(long? userId)
 {
@@ -364,12 +364,12 @@ getUserRequest.setUserId(userId);
 User user = CustomerService.getService().getUser(getUserRequest).getUser();
 ```
 ```php
-// You can use a single instance of the *ServiceClient* class to call any methods in the service, for example you can set the *CustomerManagementVersion11* service client type as follows.
+// You can use a single instance of the ServiceClient class to call any methods in the service, for example you can set the CustomerManagementVersion11 service client type as follows.
 
 $customerProxy = new ServiceClient(ServiceClientType::CustomerManagementVersion11, $authorizationData, ApiEnvironment::Production);
 )
 
-// Depending on the *Authentication* type specified in [AuthorizationData](#authorizationdata), the corresponding [Service Request Header](../guides/authentication-oauth.md#serviceheaders) fields are set when you create a new *ServiceClient*. For example if you use the *OAuthWebAuthCodeGrant* authentication type, the *AuthenticationToken* service request header will be set. If you use *PasswordAuthentication*, the *UserName* and *Password* headers will be set instead of *AuthenticationToken*.
+// Depending on the Authentication type specified in AuthorizationData, the corresponding Service Request Header fields are set when you create a new ServiceClient. For example if you use the OAuthWebAuthCodeGrant authentication type, the AuthenticationToken service request header will be set. If you use PasswordAuthentication, the UserName and Password headers will be set instead of AuthenticationToken.
 ```
 ```python
 # You can use the Customer Management service to get the current authenticated user.
@@ -384,7 +384,7 @@ user = customer_service.GetUser(UserId = None).User
 ```
 
 > [!IMPORTANT]
-> If you set the *AuthenticationToken*, *CustomerId*, *AccountId*, *DeveloperToken*, *UserName*, or *Password* header elements in the request parameter e.g., *GetUserRequest*, they will be ignored. [Service Client](#service-client) always uses the [AuthorizationData](#authorization-data) provided with its initialization.
+> If you set the *AuthenticationToken*, *CustomerId*, *AccountId*, *DeveloperToken*, *UserName*, or *Password* header elements in the request parameter e.g., *GetUserRequest*, they will be ignored. [Service Client](#serviceclient) always uses the [AuthorizationData](#authorization-data) provided with its initialization.
 
 
 ## See Also

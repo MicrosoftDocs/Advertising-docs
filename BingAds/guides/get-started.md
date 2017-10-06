@@ -21,7 +21,7 @@ To use Bing Ads APIs, you must have a developer token and valid user credentials
 The sandbox and production environments use separate credentials. You can sign up for a [Sandbox](sandbox.md) account [here](https://secure.sandbox.bingads.microsoft.com/Auth?EnvContext=Sandbox). Everyone can use the universal sandbox developer token i.e., **BBD37VB98**.
 
 ## <a name="where-to-use"></a>Where to Use the API Credentials
-When you call a service operation such as [GetCampaignsByAccountId](~/campaign-management-service/getcampaignsbyaccountid.md), you must specify [request header](#request-header) elements such as DeveloperToken, CustomerId, and CustomerAccountId.
+When you call a service operation such as [GetCampaignsByAccountId](~/campaign-management-service/getcampaignsbyaccountid.md), you must specify [request header](#request-headers) elements such as DeveloperToken, CustomerId, and CustomerAccountId.
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -44,7 +44,7 @@ When you call a service operation such as [GetCampaignsByAccountId](~/campaign-m
 </s:Envelope>
 ```
 
-If you are using one of the Bing Ads [SDKs](~/guides/client-libraries.md), the [request header](#request-header) elements are set using *AuthorizationData*. For more details about the SDK authentication library see [Authentication With the SDKs](~/guides/sdk-authentication.md). 
+If you are using one of the Bing Ads [SDKs](~/guides/client-libraries.md), the [request header](#request-headers) elements are set using *AuthorizationData*. For more details about the SDK authentication library see [Authentication With the SDKs](~/guides/sdk-authentication.md). 
 
 ```csharp
 var authorizationData = new AuthorizationData

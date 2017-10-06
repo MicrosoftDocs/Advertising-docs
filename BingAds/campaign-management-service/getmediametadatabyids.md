@@ -1,13 +1,13 @@
-﻿---
+---
 title: GetMediaMetaDataByIds Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets the specified media meta data from an account?s media library.
+description: Gets the specified media meta data from an account's media library.
 ---
 # GetMediaMetaDataByIds Service Operation
-Gets the specified media meta data from an account?s media library.
+Gets the specified media meta data from an account's media library.
 
 > [!NOTE]
 > This operation does not return media meta data for location ad extensions. For getting location ad extension media, you should use [GetMediaByIds](../campaign-management-service/getmediabyids.md).
@@ -95,11 +95,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e200="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e200:KeyValuePairOfstringstring>
-              <e200:key d4p1:nil="false">ValueHere</e200:key>
-              <e200:value d4p1:nil="false">ValueHere</e200:value>
-            </e200:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e250="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e250:KeyValuePairOfstringstring>
+              <e250:key d4p1:nil="false">ValueHere</e250:key>
+              <e250:value d4p1:nil="false">ValueHere</e250:value>
+            </e250:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

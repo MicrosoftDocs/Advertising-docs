@@ -1,4 +1,4 @@
-﻿---
+---
 title: Predicate Data Object
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
@@ -26,7 +26,7 @@ Defines a predicate for the list of insertion orders returned using the [SearchI
 |-----------|---------------|-------------|
 |<a name="field"></a>Field|The name of the element for  the object you are searching.<br /><br />For possible values, see the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.|**string**|
 |<a name="operator"></a>Operator|Defines the relationship between the field and the value.|[PredicateOperator](predicateoperator.md)|
-|<a name="value"></a>Value|The string to search in the specified field.<br /><br />**Note**: The length of this string must be four or greater, unless the field is set to MarketCountry or MarketLanguage.|**string**|
+|<a name="value"></a>Value|The string to search in the specified field.<br /><br /> The length of this string must be four or greater, unless the field is set to MarketCountry or MarketLanguage.|**string**|
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  

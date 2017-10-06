@@ -1,4 +1,4 @@
-﻿---
+---
 title: InheritFromParentBiddingScheme Data Object
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -34,7 +34,7 @@ This is the default bid strategy type for your ad groups and keywords. Use this 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|The type of bidding scheme (a.k.a. bid strategy type) that is inherited from the parent campaign or ad group. This value is equal to the *Type* element of the campaign or ad group's [BiddingScheme](../campaign-management-service/biddingscheme.md) object. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, and *TargetCpa*.<br/><br/>**Note:** Not everyone has this feature yet. If you don?t, don?t worry. It?s coming soon.<br /><br />**Note:** This element is not returned by default. You must include *InheritedBidStrategyType* in the *ReturnAdditionalFields* optional request element when calling [GetAdGroupsByCampaignId](../campaign-management-service/getadgroupsbycampaignid.md), [GetAdGroupsByIds](../campaign-management-service/getadgroupsbyids.md), [GetKeywordsByAdGroupId](../campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](../campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](../campaign-management-service/getkeywordsbyids.md).|**string**|
+|<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|The type of bidding scheme (a.k.a. bid strategy type) that is inherited from the parent campaign or ad group. This value is equal to the *Type* element of the campaign or ad group's [BiddingScheme](../campaign-management-service/biddingscheme.md) object. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, and *TargetCpa*.<br/><br/> Not everyone has this feature yet. If you don?t, don?t worry. It?s coming soon.<br /><br /> This element is not returned by default. You must include *InheritedBidStrategyType* in the *ReturnAdditionalFields* optional request element when calling [GetAdGroupsByCampaignId](../campaign-management-service/getadgroupsbycampaignid.md), [GetAdGroupsByIds](../campaign-management-service/getadgroupsbyids.md), [GetKeywordsByAdGroupId](../campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](../campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](../campaign-management-service/getkeywordsbyids.md).|**string**|
 
 The [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md) object has [Inherited Elements](#inheritedelements).
 

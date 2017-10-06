@@ -1,4 +1,4 @@
-﻿---
+---
 title: FindAccounts Service Operation
 ms.service: bing-ads-customer-management-service
 ms.topic: article
@@ -87,11 +87,11 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<FindAccountsResponse> FindAccountsAsync(
+public async Task<FindAccountsResponse> FindAccountsAsync(
 	long customerId,
 	string accountFilter,
 	int topN,
-	ApplicationType applicationScope)
+	ApplicationType? applicationScope)
 {
 	var request = new FindAccountsRequest
 	{
@@ -106,8 +106,8 @@ protected async Task<FindAccountsResponse> FindAccountsAsync(
 ```
 ```java
 static FindAccountsResponse findAccounts(
-	long customerId,
-	string accountFilter,
+	java.lang.Long customerId,
+	java.lang.String accountFilter,
 	int topN,
 	ApplicationType applicationScope) throws RemoteException, Exception
 {

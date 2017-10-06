@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetAccountsInfo Service Operation
 ms.service: bing-ads-customer-management-service
 ms.topic: article
@@ -16,7 +16,7 @@ The *GetAccountsInfoRequest* object defines the [body](#request-body) and [heade
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customerid"></a>CustomerId|The identifier of the customer who owns the accounts to get. If not set, the user?s credentials are used to determine the customer.|**long**|
+|<a name="customerid"></a>CustomerId|The identifier of the customer who owns the accounts to get. If not set, the user's credentials are used to determine the customer.|**long**|
 |<a name="onlyparentaccounts"></a>OnlyParentAccounts|Determines whether to return only the accounts that belong to the customer or to also return the accounts that the customer manages for other customers. To return all accounts (those that belong to the customer and those that the customer manages), set this element to **false**; otherwise, set to **true** to return account information for only the specified customer. The default is **false**.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -83,9 +83,9 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<GetAccountsInfoResponse> GetAccountsInfoAsync(
+public async Task<GetAccountsInfoResponse> GetAccountsInfoAsync(
 	long customerId,
-	boolean onlyParentAccounts)
+	bool onlyParentAccounts)
 {
 	var request = new GetAccountsInfoRequest
 	{
@@ -98,7 +98,7 @@ protected async Task<GetAccountsInfoResponse> GetAccountsInfoAsync(
 ```
 ```java
 static GetAccountsInfoResponse getAccountsInfo(
-	long customerId,
+	java.lang.Long customerId,
 	boolean onlyParentAccounts) throws RemoteException, Exception
 {
 	GetAccountsInfoRequest request = new GetAccountsInfoRequest();

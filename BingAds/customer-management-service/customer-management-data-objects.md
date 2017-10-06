@@ -1,4 +1,4 @@
-﻿---
+---
 title: Customer Management Data Objects
 ms.service: bing-ads-customer-management-service
 ms.topic: article

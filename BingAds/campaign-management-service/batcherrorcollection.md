@@ -1,4 +1,4 @@
-﻿---
+---
 title: BatchErrorCollection Data Object
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -35,7 +35,7 @@ Defines an error object that contains batch error details for the top level list
 |<a name="details"></a>Details|A message that provides additional details about the batch error for the top level list index. This string can be empty.|**string**|
 |<a name="errorcode"></a>ErrorCode|A symbolic string constant that identifies the error for the top level list index.|**string**|
 |<a name="fieldpath"></a>FieldPath|Reserved for future use.|**string**|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />**Note:** Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this data object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this data object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="index"></a>Index|The zero-based top level list index in the request message that failed.|**int**|
 |<a name="message"></a>Message|A message that describes the error for the top level list index.|**string**|
 |<a name="type"></a>Type|Reserved for internal use.|**string**|

@@ -1,4 +1,4 @@
-﻿---
+---
 title: ReportTimePeriod Value Set
 ms.service: bing-ads-reporting-service
 ms.topic: article
@@ -33,12 +33,12 @@ Defines the predefined time and date range values for a report request.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="lastfourweeks"></a>LastFourWeeks|A cumulative report for the four calendar weeks prior to today.<br /><br />**Note**: A calendar week runs from Sunday to Saturday.|
+|<a name="lastfourweeks"></a>LastFourWeeks|A cumulative report for the four calendar weeks prior to today.<br /><br /> A calendar week runs from Sunday to Saturday.|
 |<a name="lastmonth"></a>LastMonth|A cumulative report for the previous calendar month.|
 |<a name="lastsevendays"></a>LastSevenDays|A report for the previous seven days, one row for each day.|
 |<a name="lastsixmonths"></a>LastSixMonths|A cumulative report for the previous six calendar months.|
 |<a name="lastthreemonths"></a>LastThreeMonths|A cumulative report for the previous three calendar months.|
-|<a name="lastweek"></a>LastWeek|A cumulative report for the previous calendar week.<br /><br />**Note**: A calendar week runs from Sunday to Saturday.|
+|<a name="lastweek"></a>LastWeek|A cumulative report for the previous calendar week.<br /><br /> A calendar week runs from Sunday to Saturday.|
 |<a name="lastyear"></a>LastYear|A cumulative report for the previous calendar year.|
 |<a name="thismonth"></a>ThisMonth|A cumulative report for the current calendar month.|
 |<a name="thisweek"></a>ThisWeek|A cumulative report for the current calendar week.|

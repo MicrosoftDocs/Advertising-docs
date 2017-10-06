@@ -1,13 +1,13 @@
-﻿---
+---
 title: DeleteMedia Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Deletes the specified media from an account?s media library.
+description: Deletes the specified media from an account's media library.
 ---
 # DeleteMedia Service Operation
-Deletes the specified media from an account?s media library.
+Deletes the specified media from an account's media library.
 
 > [!NOTE]
 > This service operation is not yet supported.
@@ -79,11 +79,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e120="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e120:KeyValuePairOfstringstring>
-              <e120:key d4p1:nil="false">ValueHere</e120:key>
-              <e120:value d4p1:nil="false">ValueHere</e120:value>
-            </e120:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e170="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e170:KeyValuePairOfstringstring>
+              <e170:key d4p1:nil="false">ValueHere</e170:key>
+              <e170:value d4p1:nil="false">ValueHere</e170:value>
+            </e170:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

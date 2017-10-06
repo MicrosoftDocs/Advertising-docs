@@ -1,4 +1,4 @@
-﻿---
+---
 title: ProductPartition Data Object
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -34,7 +34,7 @@ The *ProductPartition* criterion can be included within [BiddableAdGroupCriterio
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="condition"></a>Condition|A condition that helps determine whether a product from the Bing Merchant Center store gets served as an ad.<br /><br />Multiple product conditions can be specified by creating a tree of *ProductPartition* objects using [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md). For a catalog item to be served as an ad, it must meet all conditions. To get a list of all conditions for an ad group, call [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) with the *AdGroupCriterionIds* element set to null and the *CriterionType* element set to ProductPartition.<br/><br/>**Add:** Required<br/>**Update:** Update is not supported for this object|[ProductCondition](productcondition.md)|
-|<a name="parentcriterionid"></a>ParentCriterionId|The identifier of the parent [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md).<br /><br />**Note:** This element must be set to null if the product partition represents the root node of a product partition tree.<br/><br/>**Add:** Required<br/>**Update:** Update is not supported for this object<br/>**Delete:** Required|**long**|
+|<a name="parentcriterionid"></a>ParentCriterionId|The identifier of the parent [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md).<br /><br /> This element must be set to null if the product partition represents the root node of a product partition tree.<br/><br/>**Add:** Required<br/>**Update:** Update is not supported for this object<br/>**Delete:** Required|**long**|
 |<a name="partitiontype"></a>PartitionType|The type of product partition, for example *Subdivision* or *Unit*.<br/><br/>**Add:** Required<br/>**Update:** Update is not supported for this object|[ProductPartitionType](productpartitiontype.md)|
 
 The [ProductPartition](productpartition.md) object has [Inherited Elements](#inheritedelements).

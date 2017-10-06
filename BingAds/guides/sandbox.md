@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment.
 ---
 # Sandbox
 Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served.
@@ -12,15 +13,6 @@ Supported services in sandbox vary from production. To get the web service addre
 
 > [!NOTE]
 > Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. Notifications are posted in the [Bing Ads Developer Blog](https://blogs.msdn.microsoft.com/bing_ads_api/).
-
--   [Getting Access](#access)  
--   [Sandbox Best Practices](#bestpractices)  
--   [Ad Insight Service](#adinsight)  
--   [Bulk Service](#bulk)  
--   [Campaign Management Service](#campaign)  
--   [Customer Management Service](#customer)  
--   [Customer Billing Service](#billing)  
--   [Reporting Service](#reporting)  
 
 ## <a name="access"></a>Getting Access
 The sandbox and production environments use separate credentials. To get access to sandbox, go to the sandbox's [Bing Ads](https://sandbox.bingads.microsoft.com) web application and click **Sign up** to get a sandbox account. You will use the same username and password to call the API.
@@ -70,7 +62,7 @@ Sandbox supports a limited set of keywords for testing Ad Insight service operat
 |sport|
 |the hotel|
 
-### <a name="adintel_serviceops"></a>Service Operations
+### <a name="adintel-serviceops"></a>Service Operations
 Ad Insight service operations differ from production, and limitations are described in the following table.
 
 |Service Operation|Sandbox Limitations|

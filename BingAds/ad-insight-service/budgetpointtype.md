@@ -1,4 +1,4 @@
-﻿---
+---
 title: BudgetPointType Value Set
 ms.service: bing-ads-ad-insight-service
 ms.topic: article

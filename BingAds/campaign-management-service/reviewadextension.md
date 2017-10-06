@@ -1,4 +1,4 @@
-﻿---
+---
 title: ReviewAdExtension Data Object
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -33,7 +33,7 @@ You can associate a review ad extension with one or more campaigns and ad groups
 |-----------|---------------|-------------|
 |<a name="isexact"></a>IsExact|Determines whether the review text is an exact quote or paraphrased. <br/><br/>If not specified, the default value of false indicates that the review text is paraphrased from the source. If set to *True*, the review text will be surrounded automatically with quotation marks when displayed with the ad.<br/><br/>**Add:** Optional<br/>**Update:** Optional|**boolean**|
 |<a name="source"></a>Source|The review source name.<br/><br/>The combined length of the *Source* and *Text* strings must not exceed 67 characters. Note that for Traditional Chinese characters, the combined length of the Source and Text *Source* and *Text* strings is limited to 33 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
-|<a name="text"></a>Text|The text that is either a paraphrase or an exact quote from the review source.<br/><br/>The combined length of the *Source* and *Text* strings must not exceed 67 characters. Note that for Traditional Chinese characters, the combined length of the Source and Text *Source* and *Text* strings is limited to 33 characters.<br/><br/>**Note:** Do not surround the text with quotation marks. If *IsExact* is set to *True*, the review text will be surrounded automatically with quotation marks when displayed with the ad.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
+|<a name="text"></a>Text|The text that is either a paraphrase or an exact quote from the review source.<br/><br/>The combined length of the *Source* and *Text* strings must not exceed 67 characters. Note that for Traditional Chinese characters, the combined length of the Source and Text *Source* and *Text* strings is limited to 33 characters.<br/><br/> Do not surround the text with quotation marks. If *IsExact* is set to *True*, the review text will be surrounded automatically with quotation marks when displayed with the ad.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
 |<a name="url"></a>Url|The review source Url.<br/><br/>The Url must begin with either the *http://* or *https://* prefix.<br/><br/>The length of this string is limited to 2,048 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
 
 The [ReviewAdExtension](reviewadextension.md) object has [Inherited Elements](#inheritedelements).

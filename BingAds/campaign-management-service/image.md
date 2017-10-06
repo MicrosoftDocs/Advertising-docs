@@ -1,13 +1,13 @@
-﻿---
+---
 title: Image Data Object
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines an image object that can be added to an account?s media library.
+description: Defines an image object that can be added to an account's media library.
 ---
 # Image Data Object
-Defines an image object that can be added to an account?s media library.
+Defines an image object that can be added to an account's media library.
 
 The *Image* object derives from the *Media* object. For a list of the inherited elements, see the [Media](../campaign-management-service/media.md) object.
 
@@ -28,7 +28,7 @@ The *Image* object derives from the *Media* object. For a list of the inherited 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="data"></a>Data|A base64 string that represents the image or icon to add to the library. The base64 string can contain a maximum of 102,400 characters.<br /><br />For information about restrictions and supported data types, see [Image Data](#imagedata) below.|**string**|
+|<a name="data"></a>Data|A base64 string that represents the image or icon to add to the library. The base64 string can contain a maximum of 102,400 characters.<br /><br />For information about restrictions and supported data types, see [Remarks](#remarks) below.|**string**|
 
 The [Image](image.md) object has [Inherited Elements](#inheritedelements).
 

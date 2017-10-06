@@ -1,4 +1,4 @@
-﻿---
+---
 title: KeywordAndConfidence Data Object
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines an object that contains a suggested keyword and a confidence score.
 ---
 # KeywordAndConfidence Data Object
-Defines an object that contains a suggested keyword and a confidence score. The confidence score indicates the probability that the keyword would match a user?s search query.
+Defines an object that contains a suggested keyword and a confidence score. The confidence score indicates the probability that the keyword would match a user's search query.
 
 ## Syntax
 ```xml
@@ -24,7 +24,7 @@ Defines an object that contains a suggested keyword and a confidence score. The 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="suggestedkeyword"></a>SuggestedKeyword|The suggested keyword.|**string**|
-|<a name="confidencescore"></a>ConfidenceScore|A score from 0.0 to 1.0 that indicates the probability that the keyword would match a user?s search query.|**double**|
+|<a name="confidencescore"></a>ConfidenceScore|A score from 0.0 to 1.0 that indicates the probability that the keyword would match a user's search query.|**double**|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

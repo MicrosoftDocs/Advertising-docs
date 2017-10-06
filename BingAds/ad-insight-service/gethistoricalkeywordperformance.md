@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetHistoricalKeywordPerformance Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -18,11 +18,11 @@ The *GetHistoricalKeywordPerformanceRequest* object defines the [body](#request-
 |-----------|---------------|-------------|
 |<a name="keywords"></a>Keywords|An array of keywords for which you want to get historical performance statistics. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string**|
 |<a name="timeinterval"></a>TimeInterval|The time period that identifies the data to use to determine the key performance index of the specified keywords. For example, use data from the previous seven days or previous 30 days to determine the keyword performance.<br /><br />The default value is *Last7Days*.|[TimeInterval](timeinterval.md)|
-|<a name="targetadposition"></a>TargetAdPosition|The position of the search results for which you want to get performance data.<br /><br />For example, to get performance data when ads appeared in the first position of the mainline by using the keyword and match type, set this element to MainLine1. To get performance data when ads appeared in any position of the search results by using the keyword and match type, set this element to All.<br /><br />The default value is *All*.<br /><br />**Note:** If you specify *All* for this element, the service will return multiple results per keyword for  each supported ad position. If you specify Aggregate, the service will return one aggregated result.|[AdPosition](adposition.md)|
+|<a name="targetadposition"></a>TargetAdPosition|The position of the search results for which you want to get performance data.<br /><br />For example, to get performance data when ads appeared in the first position of the mainline by using the keyword and match type, set this element to MainLine1. To get performance data when ads appeared in any position of the search results by using the keyword and match type, set this element to All.<br /><br />The default value is *All*.<br /><br /> If you specify *All* for this element, the service will return multiple results per keyword for  each supported ad position. If you specify Aggregate, the service will return one aggregated result.|[AdPosition](adposition.md)|
 |<a name="matchtypes"></a>MatchTypes|The match types for which you want to get historical data.<br /><br />You may not specify the Content match type.|[MatchType](matchtype.md) array|
 |<a name="language"></a>Language|The language in which the keywords are written.<br /><br />The countries/regions that you specify in the *PublisherCountries* element must support the specified language.<br /><br />For possible values, see [Ad Languages](~/guides/ad-languages.md).|**string**|
 |<a name="publishercountries"></a>PublisherCountries|The country codes of the countries/regions to use as the source of the historical data.<br /><br />You can specify one or more country codes. Each country/region that you specify must support the language specified in the *Language* element.<br /><br />For possible values, see [Geographical Location Codes](~/guides/geographical-location-codes.md).<br /><br />If Null, the default is all countries/regions that support the specified language.|**string**|
-|<a name="devices"></a>Devices|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword performance data for the device types that you specify only, if available.<br />Used to determine a keyword?s performance on the specified device types.|**string**|
+|<a name="devices"></a>Devices|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword performance data for the device types that you specify only, if available.<br />Used to determine a keyword's performance on the specified device types.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -86,23 +86,23 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetHistoricalKeywordPerformanceResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordHistoricalPerformances xmlns:e15="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e15:KeywordHistoricalPerformance>
-          <e15:Keyword d4p1:nil="false">ValueHere</e15:Keyword>
-          <e15:KeywordKPIs d4p1:nil="false">
-            <e15:KeywordKPI>
-              <e15:Device d4p1:nil="false">ValueHere</e15:Device>
-              <e15:MatchType>ValueHere</e15:MatchType>
-              <e15:AdPosition>ValueHere</e15:AdPosition>
-              <e15:Clicks>ValueHere</e15:Clicks>
-              <e15:Impressions>ValueHere</e15:Impressions>
-              <e15:AverageCPC>ValueHere</e15:AverageCPC>
-              <e15:CTR>ValueHere</e15:CTR>
-              <e15:TotalCost>ValueHere</e15:TotalCost>
-              <e15:AverageBid>ValueHere</e15:AverageBid>
-            </e15:KeywordKPI>
-          </e15:KeywordKPIs>
-        </e15:KeywordHistoricalPerformance>
+      <KeywordHistoricalPerformances xmlns:e72="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e72:KeywordHistoricalPerformance>
+          <e72:Keyword d4p1:nil="false">ValueHere</e72:Keyword>
+          <e72:KeywordKPIs d4p1:nil="false">
+            <e72:KeywordKPI>
+              <e72:Device d4p1:nil="false">ValueHere</e72:Device>
+              <e72:MatchType>ValueHere</e72:MatchType>
+              <e72:AdPosition>ValueHere</e72:AdPosition>
+              <e72:Clicks>ValueHere</e72:Clicks>
+              <e72:Impressions>ValueHere</e72:Impressions>
+              <e72:AverageCPC>ValueHere</e72:AverageCPC>
+              <e72:CTR>ValueHere</e72:CTR>
+              <e72:TotalCost>ValueHere</e72:TotalCost>
+              <e72:AverageBid>ValueHere</e72:AverageBid>
+            </e72:KeywordKPI>
+          </e72:KeywordKPIs>
+        </e72:KeywordHistoricalPerformance>
       </KeywordHistoricalPerformances>
     </GetHistoricalKeywordPerformanceResponse>
   </s:Body>

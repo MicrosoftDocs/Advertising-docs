@@ -1,4 +1,4 @@
-﻿---
+---
 title: GoalsAndFunnelsReportColumn Value Set
 ms.service: bing-ads-reporting-service
 ms.topic: article
@@ -56,12 +56,12 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="adgroupid"></a>AdGroupId|The Bing Ads assigned identifier of an ad group.|
 |<a name="adgroupname"></a>AdGroupName|The ad group name.|
 |<a name="adgroupstatus"></a>AdGroupStatus|The ad group status.|
-|<a name="assists"></a>Assists|The number of conversions from other ads within the same account that were preceded by one or more clicks from this ad.An ad is considered to have assisted the conversion if it was clicked before the most recently clicked ad that was credited with the conversion. Additionally, the click corresponding to the assist must occur  within the conversion period of the goal.**Note:** Available for accounts that are setup to use analytics with Bing Ads Universal Event Tracking. For more information, see the [Track sales and other conversions](http://go.microsoft.com/fwlink/?LinkID=624771) help topic.|
+|<a name="assists"></a>Assists|The number of conversions from other ads within the same account that were preceded by one or more clicks from this ad.An ad is considered to have assisted the conversion if it was clicked before the most recently clicked ad that was credited with the conversion. Additionally, the click corresponding to the assist must occur  within the conversion period of the goal. Available for accounts that are setup to use analytics with Bing Ads Universal Event Tracking. For more information, see the [Track sales and other conversions](http://go.microsoft.com/fwlink/?LinkID=624771) help topic.|
 |<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
 |<a name="campaignstatus"></a>CampaignStatus|The campaign status.|
-|<a name="conversions"></a>Conversions|The number of conversions. A conversion is the completion of an action by a customer after viewing your ad. The action could be purchasing your product, registering for your webinar, joining an organization, or whatever you consider your goal and best measure of the ad's success.<br/><br/>**Note:** Available for accounts that are setup to use analytics with Bing Ads Universal Event Tracking. For more information, see the [Track sales and other conversions](http://go.microsoft.com/fwlink/?LinkID=624771) help topic.|
-|<a name="deviceos"></a>DeviceOS|The operating system of the device reported in the *DeviceType* column.The possible values include *Android*, *Blackberry*, *iOS*, *Other*, *Unknown*, and *Windows*.If the operating system of the device cannot be determined or is not one of the operating systems that you can target, the value in this column will be *Unknown*. **Note**: For time periods prior to July 15th, 2015, the value returned in the report will be Unknown.|
+|<a name="conversions"></a>Conversions|The number of conversions. A conversion is the completion of an action by a customer after viewing your ad. The action could be purchasing your product, registering for your webinar, joining an organization, or whatever you consider your goal and best measure of the ad's success.<br/><br/> Available for accounts that are setup to use analytics with Bing Ads Universal Event Tracking. For more information, see the [Track sales and other conversions](http://go.microsoft.com/fwlink/?LinkID=624771) help topic.|
+|<a name="deviceos"></a>DeviceOS|The operating system of the device reported in the *DeviceType* column.The possible values include *Android*, *Blackberry*, *iOS*, *Other*, *Unknown*, and *Windows*.If the operating system of the device cannot be determined or is not one of the operating systems that you can target, the value in this column will be *Unknown*.  For time periods prior to July 15th, 2015, the value returned in the report will be Unknown.|
 |<a name="devicetype"></a>DeviceType|The device name attribute of a device OS target bid. The type of device which showed ads.The possible values include *Computer*, *Smartphone*, *Tablet*, and *Unknown*.|
 |<a name="goal"></a>Goal|The name of your event tracking or campaign analytics goal.|
 |<a name="goalid"></a>GoalId|The Bing Ads assigned identifier of a goal.|
@@ -69,8 +69,20 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="keyword"></a>Keyword|The keyword text.|
 |<a name="keywordid"></a>KeywordId|The Bing Ads assigned identifier of a keyword.|
 |<a name="keywordstatus"></a>KeywordStatus|The keyword status.|
-|<a name="revenue"></a>Revenue|The revenue optionally reported by the advertiser as a result of conversions. Corresponds to the optional *revenue* parameter of a Bing Ads campaign analytics tracking script.<br/><br/>**Note:** Available for accounts that are setup to use analytics with Bing Ads Universal Event Tracking. For more information, see the [Track sales and other conversions](http://go.microsoft.com/fwlink/?LinkID=624771) help topic.|
-|<a name="timeperiod"></a>TimePeriod|The time period of each report row.**Note**: You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](~/guides/reports.md#timeperiod).|
+|<a name="revenue"></a>Revenue|The revenue optionally reported by the advertiser as a result of conversions. Corresponds to the optional *revenue* parameter of a Bing Ads campaign analytics tracking script.<br/><br/> Available for accounts that are setup to use analytics with Bing Ads Universal Event Tracking. For more information, see the [Track sales and other conversions](http://go.microsoft.com/fwlink/?LinkID=624771) help topic.|
+|<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](~/guides/reports.md#timeperiod).|
+
+## <a name="remarks"></a>Remarks
+### <a name="requiredcolumns"></a>Required Columns
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
+
+> [!NOTE]
+> The TimePeriod column is required for all aggregation types except Summary.
+
+|Column|
+|----------|
+|Goal|
+|TimePeriod|
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  

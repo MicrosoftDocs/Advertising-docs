@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetConversionGoalsByIds Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -119,11 +119,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e181="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e181:KeyValuePairOfstringstring>
-              <e181:key d4p1:nil="false">ValueHere</e181:key>
-              <e181:value d4p1:nil="false">ValueHere</e181:value>
-            </e181:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e231="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e231:KeyValuePairOfstringstring>
+              <e231:key d4p1:nil="false">ValueHere</e231:key>
+              <e231:value d4p1:nil="false">ValueHere</e231:value>
+            </e231:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

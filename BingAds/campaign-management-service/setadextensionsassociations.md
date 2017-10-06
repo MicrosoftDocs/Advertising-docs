@@ -1,4 +1,4 @@
-﻿---
+---
 title: SetAdExtensionsAssociations Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -20,7 +20,7 @@ The *SetAdExtensionsAssociationsRequest* object defines the [body](#request-body
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that owns the extensions.|**long**|
-|<a name="adextensionidtoentityidassociations"></a>AdExtensionIdToEntityIdAssociations|The list of ad extensions with associated account, campaign, or ad group. You can only associate ad extensions with one type of entity per service call. Specify the entity type with the *AssociationType* element.<br /><br />**Note:** Call and Location ad extensions cannot be associated with an ad group. Call ad extensions cannot be associated with an account.<br /><br />You may set a maximum of 100 associations per service call.|[AdExtensionIdToEntityIdAssociation](adextensionidtoentityidassociation.md) array|
+|<a name="adextensionidtoentityidassociations"></a>AdExtensionIdToEntityIdAssociations|The list of ad extensions with associated account, campaign, or ad group. You can only associate ad extensions with one type of entity per service call. Specify the entity type with the *AssociationType* element.<br /><br /> Call and Location ad extensions cannot be associated with an ad group. Call ad extensions cannot be associated with an account.<br /><br />You may set a maximum of 100 associations per service call.|[AdExtensionIdToEntityIdAssociation](adextensionidtoentityidassociation.md) array|
 |<a name="associationtype"></a>AssociationType|The type of all entities specified in the *AdExtensionIdToEntityIdAssociations* list.|[AssociationType](associationtype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -84,11 +84,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e208="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e208:KeyValuePairOfstringstring>
-              <e208:key d4p1:nil="false">ValueHere</e208:key>
-              <e208:value d4p1:nil="false">ValueHere</e208:value>
-            </e208:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e258="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e258:KeyValuePairOfstringstring>
+              <e258:key d4p1:nil="false">ValueHere</e258:key>
+              <e258:value d4p1:nil="false">ValueHere</e258:value>
+            </e258:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

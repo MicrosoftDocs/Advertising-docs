@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetAdGroupsByCampaignId Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -104,11 +104,11 @@ The following template shows the order of the [body](#response-body) and [header
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e153="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e153:KeyValuePairOfstringstring>
-              <e153:key d4p1:nil="false">ValueHere</e153:key>
-              <e153:value d4p1:nil="false">ValueHere</e153:value>
-            </e153:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e203="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e203:KeyValuePairOfstringstring>
+              <e203:key d4p1:nil="false">ValueHere</e203:key>
+              <e203:value d4p1:nil="false">ValueHere</e203:value>
+            </e203:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Language d4p1:nil="false">ValueHere</Language>
@@ -140,13 +140,13 @@ The following template shows the order of the [body](#response-body) and [header
           </StartDate>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e154="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e154:Parameters d4p1:nil="false">
-              <e154:CustomParameter>
-                <e154:Key d4p1:nil="false">ValueHere</e154:Key>
-                <e154:Value d4p1:nil="false">ValueHere</e154:Value>
-              </e154:CustomParameter>
-            </e154:Parameters>
+          <UrlCustomParameters xmlns:e204="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e204:Parameters d4p1:nil="false">
+              <e204:CustomParameter>
+                <e204:Key d4p1:nil="false">ValueHere</e204:Key>
+                <e204:Value d4p1:nil="false">ValueHere</e204:Value>
+              </e204:CustomParameter>
+            </e204:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>

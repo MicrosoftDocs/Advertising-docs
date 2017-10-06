@@ -1,4 +1,4 @@
-﻿---
+---
 title: CustomerInfo Data Object
 ms.service: bing-ads-customer-management-service
 ms.topic: article

@@ -1,4 +1,4 @@
-﻿---
+---
 title: UpdateCustomer Service Operation
 ms.service: bing-ads-customer-management-service
 ms.topic: article
@@ -28,7 +28,7 @@ The *UpdateCustomerResponse* object defines the [body](#response-body) and [head
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="lastmodifiedtime"></a>LastModifiedTime|The date and time that the customer was last updated. The value is in Coordinated Universal Time (UTC).<br/><br/>**Note:** The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|**dateTime**|
+|<a name="lastmodifiedtime"></a>LastModifiedTime|The date and time that the customer was last updated. The value is in Coordinated Universal Time (UTC).<br/><br/> The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|**dateTime**|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -104,7 +104,7 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
-protected async Task<UpdateCustomerResponse> UpdateCustomerAsync(
+public async Task<UpdateCustomerResponse> UpdateCustomerAsync(
 	Customer customer)
 {
 	var request = new UpdateCustomerRequest

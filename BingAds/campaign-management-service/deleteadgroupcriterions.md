@@ -1,4 +1,4 @@
-﻿---
+---
 title: DeleteAdGroupCriterions Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -18,7 +18,7 @@ The *DeleteAdGroupCriterionsRequest* object defines the [body](#request-body) an
 |-----------|---------------|-------------|
 |<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of unique identifiers that identify the criterion to delete.<br/><br/>You can include up to 1,000 ad group criterion identifiers per request. |**long**|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that owns the criterion to delete.|**long**|
-|<a name="criteriontype"></a>CriterionType|The type of criterion to delete, for example *Webpage*. You can specify only one criterion type value per call.<br/><br/>To add, delete, or update target criterions i.e., age, day and time, device, gender, location, location intent, and radius criterions, you must specify the *CriterionType* value as *Targets*. You can add, delete, and update multiple target criterion types in the same operation. To retrieve these target criterions via [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) you must request the specific type individually i.e., *Age*, *DayTime*, *Device*, *Gender*, *Location*, *LocationIntent*, and *Radius*.<br/><br/>To add, delete, or update audience criterions i.e., custom audiences, in-market audiences, and remarketing lists, you must specify the *CriterionType* value as *Audience*.  You can add, delete, and update multiple target criterion types in the same operation. To retrieve these audience criterions via [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) you must request the specific type individually i.e., *Custom*, *InMarket*, and *RemarketingList*.<br/><br/>**Note:** You cannot delete a [ProductPartition](../campaign-management-service/productpartition.md) with this operation. Instead, you should use [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md).|[AdGroupCriterionType](adgroupcriteriontype.md)|
+|<a name="criteriontype"></a>CriterionType|The type of criterion to delete, for example *Webpage*. You can specify only one criterion type value per call.<br/><br/>To add, delete, or update target criterions i.e., age, day and time, device, gender, location, location intent, and radius criterions, you must specify the *CriterionType* value as *Targets*. You can add, delete, and update multiple target criterion types in the same operation. To retrieve these target criterions via [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) you must request the specific type individually i.e., *Age*, *DayTime*, *Device*, *Gender*, *Location*, *LocationIntent*, and *Radius*.<br/><br/>To add, delete, or update audience criterions i.e., custom audiences, in-market audiences, and remarketing lists, you must specify the *CriterionType* value as *Audience*.  You can add, delete, and update multiple target criterion types in the same operation. To retrieve these audience criterions via [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) you must request the specific type individually i.e., *Custom*, *InMarket*, and *RemarketingList*.<br/><br/> You cannot delete a [ProductPartition](../campaign-management-service/productpartition.md) with this operation. Instead, you should use [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md).|[AdGroupCriterionType](adgroupcriteriontype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -80,11 +80,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e109="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e109:KeyValuePairOfstringstring>
-              <e109:key d4p1:nil="false">ValueHere</e109:key>
-              <e109:value d4p1:nil="false">ValueHere</e109:value>
-            </e109:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e159="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e159:KeyValuePairOfstringstring>
+              <e159:key d4p1:nil="false">ValueHere</e159:key>
+              <e159:value d4p1:nil="false">ValueHere</e159:value>
+            </e159:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

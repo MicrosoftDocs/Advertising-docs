@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetKeywordIdeaCategories Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -65,11 +65,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordIdeaCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordIdeaCategories xmlns:e21="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e21:KeywordIdeaCategory>
-          <e21:CategoryId>ValueHere</e21:CategoryId>
-          <e21:CategoryName d4p1:nil="false">ValueHere</e21:CategoryName>
-        </e21:KeywordIdeaCategory>
+      <KeywordIdeaCategories xmlns:e78="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e78:KeywordIdeaCategory>
+          <e78:CategoryId>ValueHere</e78:CategoryId>
+          <e78:CategoryName d4p1:nil="false">ValueHere</e78:CategoryName>
+        </e78:KeywordIdeaCategory>
       </KeywordIdeaCategories>
     </GetKeywordIdeaCategoriesResponse>
   </s:Body>

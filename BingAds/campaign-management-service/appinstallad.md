@@ -1,4 +1,4 @@
-﻿---
+---
 title: AppInstallAd Data Object
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -35,7 +35,7 @@ Defines an app install ad. Create an app install ad if your intention is to driv
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="appplatform"></a>AppPlatform|The application platform.<br /><br />Possible values include *iOS* and *Android*.<br /><br />**Add:** Required<br/>**Update:** Optional|**string**|
-|<a name="appstoreid"></a>AppStoreId|The application identifier provided by the app store.<br /><br />**Note:** If the application is new, please expect to wait 4-7 days before the ad will be eligible to deliver.<br /><br />**Add:** Required<br/>**Update:** Optional|**string**|
+|<a name="appstoreid"></a>AppStoreId|The application identifier provided by the app store.<br /><br /> If the application is new, please expect to wait 4-7 days before the ad will be eligible to deliver.<br /><br />**Add:** Required<br/>**Update:** Optional|**string**|
 |<a name="text"></a>Text|The ad copy. The copy must contain at least one word. The ad?s copy and title combined must total at least three words.<br /><br />The ad copy cannot contain dynamic text strings such as {keyword}. <br /><br />The maximum input length of the copy is 71 characters. Note that for ad groups that use Traditional Chinese, the text is limited to 38 characters.<br /><br />The ad copy cannot contain the newline (\n) character.<br /><br />**Add:** Required<br/>**Update:** Optional|**string**|
 |<a name="title"></a>Title|The title of the ad. The title must contain at least one word. The ad?s copy and title combined must total at least three words.<br /><br />The title cannot contain dynamic text strings such as {keyword}.<br /><br />The maximum input length of the title is 25 characters. Note that for ad groups that use Traditional Chinese, the title is limited to 15 characters.<br /><br />The title cannot contain the newline (\n) character.<br /><br />**Add:** Required<br/>**Update:** Optional|**string**|
 

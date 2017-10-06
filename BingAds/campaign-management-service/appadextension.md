@@ -1,4 +1,4 @@
-﻿---
+---
 title: AppAdExtension Data Object
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -37,7 +37,7 @@ You can associate an app ad extension with one or more campaigns and ad groups. 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="appplatform"></a>AppPlatform|The application platform.<br /><br />Possible values include iOS, Android, Windows Phone, and Windows.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
-|<a name="appstoreid"></a>AppStoreId|The application identifier provided by the app store.<br /><br />**Note:** If the application is new, please expect to wait 4-7 days before the ad will be eligible to deliver.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
+|<a name="appstoreid"></a>AppStoreId|The application identifier provided by the app store.<br /><br /> If the application is new, please expect to wait 4-7 days before the ad will be eligible to deliver.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
 |<a name="destinationurl"></a>DestinationUrl|The URL of the app store download webpage that users are taken to when they click the app extension link.<br /><br />The URL can contain dynamic text strings such as {keyword}. For a list of supported parameters, see the Available parameters section within the Bing Ads help article [What tracking or URL parameters can I use?](http://help.bingads.microsoft.com/#apex/3/en/56799/2).<br /><br />The URL can contain a maximum of 1,024 characters. If the URL does not specify a protocol, the system uses the HTTP protocol when a user clicks the ad. If the URL specifies the HTTP protocol when you add an ad, the service will remove the http:// protocol string (the HTTP protocol string does not count against the 1,024 character limit); however, the service will not remove an HTTPS protocol string (https://) from the URL.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
 |<a name="displaytext"></a>DisplayText|The text displayed in the app ad extension. The text can contain a maximum of 35 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
 |<a name="finalappurls"></a>FinalAppUrls|Reserved for future use.|[AppUrl](appurl.md) array|

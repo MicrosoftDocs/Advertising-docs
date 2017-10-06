@@ -1,4 +1,4 @@
-﻿---
+---
 title: Reporting Data Objects
 ms.service: bing-ads-reporting-service
 ms.topic: article

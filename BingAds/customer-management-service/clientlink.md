@@ -1,4 +1,4 @@
-﻿---
+---
 title: ClientLink Data Object
 ms.service: bing-ads-customer-management-service
 ms.topic: article
@@ -54,10 +54,10 @@ Defines a client link object. Acceptance of a client link invitation enables an 
 |<a name="startdate"></a>StartDate|The date when the status would update. For an accepted link request the status would transition towards Active on this date, and for an unlink request the status would transition towards Inactive on this date.<br /><br />If not specified, this value will be set to the current date and time.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|**dateTime**|
 |<a name="status"></a>Status|Determines the life cycle status of the client link, for example whether the client link has been accepted or declined.<br /><br />When adding a client link this element cannot be specified, and the service sets the effective status to LinkPending.<br/><br/>**Add:** Read-only<br/>**Update:** Required|[ClientLinkStatus](clientlinkstatus.md)|
 |<a name="suppressnotification"></a>SuppressNotification|Determines whether or not to send email notification of the client link invitation to the primary user of the client account.<br /><br />If set to true the client will not receive an email and otherwise, since the default value is false, the client will receive an email notification.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|**boolean**|
-|<a name="lastmodifieddatetime"></a>LastModifiedDateTime|The date and time that the client link was last updated. The value is in Coordinated Universal Time (UTC).<br /><br />**Note:** The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**dateTime**|
+|<a name="lastmodifieddatetime"></a>LastModifiedDateTime|The date and time that the client link was last updated. The value is in Coordinated Universal Time (UTC).<br /><br /> The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**dateTime**|
 |<a name="lastmodifiedbyuserid"></a>LastModifiedByUserId|The identifier of the last user to update the client link?s information.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**long**|
 |<a name="timestamp"></a>Timestamp|Reserved for future use.|**base64Binary**|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />**Note:** Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *ClientLink* object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *ClientLink* object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  

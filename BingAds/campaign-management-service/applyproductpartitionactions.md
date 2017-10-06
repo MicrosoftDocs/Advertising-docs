@@ -1,4 +1,4 @@
-﻿---
+---
 title: ApplyProductPartitionActions Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -28,8 +28,8 @@ The *ApplyProductPartitionActionsResponse* object defines the [body](#response-b
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of identifiers that identify the criterion that had the action applied. The list of identifiers corresponds directly to the list of criterion in the request.<br /><br />**Note:** If any criterion action failed, then all remaining criterion actions will be rejected, and all elements in this list will be null.|**long**|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.<br /><br />**Note:** For criterion which failed due to user error, an actionable error code will be returned.<br /><br />**Note:** If any criterion action failed, then all remaining criterion actions will be rejected, and none of the elements in this list will be null. For criterion that might have otherwise succeeded,  a generic error will be returned which explains that a related entity failed.|[BatchError](batcherror.md) array|
+|<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of identifiers that identify the criterion that had the action applied. The list of identifiers corresponds directly to the list of criterion in the request.<br /><br /> If any criterion action failed, then all remaining criterion actions will be rejected, and all elements in this list will be null.|**long**|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.<br /><br /> For criterion which failed due to user error, an actionable error code will be returned.<br /><br /> If any criterion action failed, then all remaining criterion actions will be rejected, and none of the elements in this list will be null. For criterion that might have otherwise succeeded,  a generic error will be returned which explains that a related entity failed.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -104,14 +104,14 @@ The following template shows the order of the [body](#request-body) and [header]
               <AudienceId i:nil="false">ValueHere</AudienceId>
               <AudienceType i:nil="false">ValueHere</AudienceType>
               <!--This field is applicable if the derived type attribute is set to Webpage-->
-              <Parameter xmlns:e103="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-                <e103:Conditions i:nil="false">
-                  <e103:WebpageCondition>
-                    <e103:Argument i:nil="false">ValueHere</e103:Argument>
-                    <e103:Operand>ValueHere</e103:Operand>
-                  </e103:WebpageCondition>
-                </e103:Conditions>
-                <e103:CriterionName i:nil="false">ValueHere</e103:CriterionName>
+              <Parameter xmlns:e153="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+                <e153:Conditions i:nil="false">
+                  <e153:WebpageCondition>
+                    <e153:Argument i:nil="false">ValueHere</e153:Argument>
+                    <e153:Operand>ValueHere</e153:Operand>
+                  </e153:WebpageCondition>
+                </e153:Conditions>
+                <e153:CriterionName i:nil="false">ValueHere</e153:CriterionName>
               </Parameter>
             </Criterion>
             <Id i:nil="false">ValueHere</Id>
@@ -127,11 +127,11 @@ The following template shows the order of the [body](#request-body) and [header]
             </CriterionBid>
             <DestinationUrl i:nil="false">ValueHere</DestinationUrl>
             <EditorialStatus i:nil="false">ValueHere</EditorialStatus>
-            <FinalAppUrls xmlns:e104="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-              <e104:AppUrl>
-                <e104:OsType i:nil="false">ValueHere</e104:OsType>
-                <e104:Url i:nil="false">ValueHere</e104:Url>
-              </e104:AppUrl>
+            <FinalAppUrls xmlns:e154="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+              <e154:AppUrl>
+                <e154:OsType i:nil="false">ValueHere</e154:OsType>
+                <e154:Url i:nil="false">ValueHere</e154:Url>
+              </e154:AppUrl>
             </FinalAppUrls>
             <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
               <a1:string>ValueHere</a1:string>
@@ -140,13 +140,13 @@ The following template shows the order of the [body](#request-body) and [header]
               <a1:string>ValueHere</a1:string>
             </FinalUrls>
             <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-            <UrlCustomParameters xmlns:e105="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-              <e105:Parameters i:nil="false">
-                <e105:CustomParameter>
-                  <e105:Key i:nil="false">ValueHere</e105:Key>
-                  <e105:Value i:nil="false">ValueHere</e105:Value>
-                </e105:CustomParameter>
-              </e105:Parameters>
+            <UrlCustomParameters xmlns:e155="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+              <e155:Parameters i:nil="false">
+                <e155:CustomParameter>
+                  <e155:Key i:nil="false">ValueHere</e155:Key>
+                  <e155:Value i:nil="false">ValueHere</e155:Value>
+                </e155:CustomParameter>
+              </e155:Parameters>
             </UrlCustomParameters>
             <!--No additional fields are applicable if the derived type attribute is set to NegativeAdGroupCriterion-->
           </AdGroupCriterion>
@@ -176,11 +176,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e106="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e106:KeyValuePairOfstringstring>
-              <e106:key d4p1:nil="false">ValueHere</e106:key>
-              <e106:value d4p1:nil="false">ValueHere</e106:value>
-            </e106:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e156="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e156:KeyValuePairOfstringstring>
+              <e156:key d4p1:nil="false">ValueHere</e156:key>
+              <e156:value d4p1:nil="false">ValueHere</e156:value>
+            </e156:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

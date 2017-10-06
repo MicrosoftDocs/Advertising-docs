@@ -1,4 +1,4 @@
-﻿---
+---
 title: GetEstimatedBidByKeywordIds Service Operation
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
@@ -73,28 +73,28 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedBidByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedBids xmlns:e9="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e9:KeywordIdEstimatedBid>
-          <e9:KeywordId>ValueHere</e9:KeywordId>
-          <e9:KeywordEstimatedBid d4p1:nil="false">
-            <e9:Keyword d4p1:nil="false">ValueHere</e9:Keyword>
-            <e9:EstimatedBids d4p1:nil="false">
-              <e9:EstimatedBidAndTraffic>
-                <e9:MinClicksPerWeek d4p1:nil="false">ValueHere</e9:MinClicksPerWeek>
-                <e9:MaxClicksPerWeek d4p1:nil="false">ValueHere</e9:MaxClicksPerWeek>
-                <e9:AverageCPC d4p1:nil="false">ValueHere</e9:AverageCPC>
-                <e9:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e9:MinImpressionsPerWeek>
-                <e9:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e9:MaxImpressionsPerWeek>
-                <e9:CTR d4p1:nil="false">ValueHere</e9:CTR>
-                <e9:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e9:MinTotalCostPerWeek>
-                <e9:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e9:MaxTotalCostPerWeek>
-                <e9:Currency>ValueHere</e9:Currency>
-                <e9:MatchType>ValueHere</e9:MatchType>
-                <e9:EstimatedMinBid>ValueHere</e9:EstimatedMinBid>
-              </e9:EstimatedBidAndTraffic>
-            </e9:EstimatedBids>
-          </e9:KeywordEstimatedBid>
-        </e9:KeywordIdEstimatedBid>
+      <KeywordEstimatedBids xmlns:e66="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e66:KeywordIdEstimatedBid>
+          <e66:KeywordId>ValueHere</e66:KeywordId>
+          <e66:KeywordEstimatedBid d4p1:nil="false">
+            <e66:Keyword d4p1:nil="false">ValueHere</e66:Keyword>
+            <e66:EstimatedBids d4p1:nil="false">
+              <e66:EstimatedBidAndTraffic>
+                <e66:MinClicksPerWeek d4p1:nil="false">ValueHere</e66:MinClicksPerWeek>
+                <e66:MaxClicksPerWeek d4p1:nil="false">ValueHere</e66:MaxClicksPerWeek>
+                <e66:AverageCPC d4p1:nil="false">ValueHere</e66:AverageCPC>
+                <e66:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e66:MinImpressionsPerWeek>
+                <e66:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e66:MaxImpressionsPerWeek>
+                <e66:CTR d4p1:nil="false">ValueHere</e66:CTR>
+                <e66:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e66:MinTotalCostPerWeek>
+                <e66:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e66:MaxTotalCostPerWeek>
+                <e66:Currency>ValueHere</e66:Currency>
+                <e66:MatchType>ValueHere</e66:MatchType>
+                <e66:EstimatedMinBid>ValueHere</e66:EstimatedMinBid>
+              </e66:EstimatedBidAndTraffic>
+            </e66:EstimatedBids>
+          </e66:KeywordEstimatedBid>
+        </e66:KeywordIdEstimatedBid>
       </KeywordEstimatedBids>
     </GetEstimatedBidByKeywordIdsResponse>
   </s:Body>

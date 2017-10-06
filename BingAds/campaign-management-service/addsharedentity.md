@@ -1,4 +1,4 @@
-﻿---
+---
 title: AddSharedEntity Service Operation
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
@@ -17,7 +17,7 @@ The *AddSharedEntityRequest* object defines the [body](#request-body) and [heade
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="sharedentity"></a>SharedEntity|The negative keyword list to add to the account's shared library.|[SharedEntity](sharedentity.md)|
-|<a name="listitems"></a>ListItems|The negative keywords to add to the negative keyword list.<br /><br />The list can contain a maximum of 5,000 items.<br /><br />**Note:** You cannot add existing negative keywords with assigned identifiers. You can add the same negative keyword and match type to a negative keyword list, and it will be assigned a new identifier.|[SharedListItem](sharedlistitem.md) array|
+|<a name="listitems"></a>ListItems|The negative keywords to add to the negative keyword list.<br /><br />The list can contain a maximum of 5,000 items.<br /><br /> You cannot add existing negative keywords with assigned identifiers. You can add the same negative keyword and match type to a negative keyword list, and it will be assigned a new identifier.|[SharedListItem](sharedlistitem.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -55,11 +55,11 @@ The following template shows the order of the [body](#request-body) and [header]
     <AddSharedEntityRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <SharedEntity i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
         <AssociationCount i:nil="false">ValueHere</AssociationCount>
-        <ForwardCompatibilityMap xmlns:e96="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e96:KeyValuePairOfstringstring>
-            <e96:key i:nil="false">ValueHere</e96:key>
-            <e96:value i:nil="false">ValueHere</e96:value>
-          </e96:KeyValuePairOfstringstring>
+        <ForwardCompatibilityMap xmlns:e146="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e146:KeyValuePairOfstringstring>
+            <e146:key i:nil="false">ValueHere</e146:key>
+            <e146:value i:nil="false">ValueHere</e146:value>
+          </e146:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
         <Id i:nil="false">ValueHere</Id>
         <Name i:nil="false">ValueHere</Name>
@@ -69,11 +69,11 @@ The following template shows the order of the [body](#request-body) and [header]
       </SharedEntity>
       <ListItems i:nil="false">
         <SharedListItem i:type="-- derived type specified here with the appropriate prefix --">
-          <ForwardCompatibilityMap xmlns:e97="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e97:KeyValuePairOfstringstring>
-              <e97:key i:nil="false">ValueHere</e97:key>
-              <e97:value i:nil="false">ValueHere</e97:value>
-            </e97:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e147="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e147:KeyValuePairOfstringstring>
+              <e147:key i:nil="false">ValueHere</e147:key>
+              <e147:value i:nil="false">ValueHere</e147:value>
+            </e147:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Type i:nil="false">ValueHere</Type>
           <!--These fields are applicable if the derived type attribute is set to NegativeKeyword-->
@@ -106,11 +106,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e98="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e98:KeyValuePairOfstringstring>
-              <e98:key d4p1:nil="false">ValueHere</e98:key>
-              <e98:value d4p1:nil="false">ValueHere</e98:value>
-            </e98:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e148="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e148:KeyValuePairOfstringstring>
+              <e148:key d4p1:nil="false">ValueHere</e148:key>
+              <e148:value d4p1:nil="false">ValueHere</e148:value>
+            </e148:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
