@@ -95,11 +95,11 @@ The following template shows the order of the [body](#response-body) and [header
           </BiddingScheme>
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e235="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e235:AppUrl>
-              <e235:OsType d4p1:nil="false">ValueHere</e235:OsType>
-              <e235:Url d4p1:nil="false">ValueHere</e235:Url>
-            </e235:AppUrl>
+          <FinalAppUrls xmlns:e847="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e847:AppUrl>
+              <e847:OsType d4p1:nil="false">ValueHere</e847:OsType>
+              <e847:Url d4p1:nil="false">ValueHere</e847:Url>
+            </e847:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -107,11 +107,11 @@ The following template shows the order of the [body](#response-body) and [header
           <FinalUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e236="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e236:KeyValuePairOfstringstring>
-              <e236:key d4p1:nil="false">ValueHere</e236:key>
-              <e236:value d4p1:nil="false">ValueHere</e236:value>
-            </e236:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e848="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e848:KeyValuePairOfstringstring>
+              <e848:key d4p1:nil="false">ValueHere</e848:key>
+              <e848:value d4p1:nil="false">ValueHere</e848:value>
+            </e848:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <MatchType d4p1:nil="false">ValueHere</MatchType>
@@ -121,13 +121,13 @@ The following template shows the order of the [body](#response-body) and [header
           <Status d4p1:nil="false">ValueHere</Status>
           <Text d4p1:nil="false">ValueHere</Text>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e237="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e237:Parameters d4p1:nil="false">
-              <e237:CustomParameter>
-                <e237:Key d4p1:nil="false">ValueHere</e237:Key>
-                <e237:Value d4p1:nil="false">ValueHere</e237:Value>
-              </e237:CustomParameter>
-            </e237:Parameters>
+          <UrlCustomParameters xmlns:e849="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e849:Parameters d4p1:nil="false">
+              <e849:CustomParameter>
+                <e849:Key d4p1:nil="false">ValueHere</e849:Key>
+                <e849:Value d4p1:nil="false">ValueHere</e849:Value>
+              </e849:CustomParameter>
+            </e849:Parameters>
           </UrlCustomParameters>
         </Keyword>
       </Keywords>
@@ -149,7 +149,7 @@ public async Task<GetKeywordsByAdGroupIdResponse> GetKeywordsByAdGroupIdAsync(
 		ReturnAdditionalFields = returnAdditionalFields
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetKeywordsByAdGroupIdAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetKeywordsByAdGroupIdAsync(r), request));
 }
 ```
 ```java
@@ -162,7 +162,7 @@ static GetKeywordsByAdGroupIdResponse getKeywordsByAdGroupId(
 	request.setAdGroupId(adGroupId);
 	request.setReturnAdditionalFields(returnAdditionalFields);
 
-	return CampaignManagement.getService().getKeywordsByAdGroupId(request);
+	return CampaignManagementService.getService().getKeywordsByAdGroupId(request);
 }
 ```
 ```php

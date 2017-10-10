@@ -84,11 +84,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e258="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e258:KeyValuePairOfstringstring>
-              <e258:key d4p1:nil="false">ValueHere</e258:key>
-              <e258:value d4p1:nil="false">ValueHere</e258:value>
-            </e258:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e870="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e870:KeyValuePairOfstringstring>
+              <e870:key d4p1:nil="false">ValueHere</e870:key>
+              <e870:value d4p1:nil="false">ValueHere</e870:value>
+            </e870:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -121,7 +121,7 @@ public async Task<SetAdExtensionsAssociationsResponse> SetAdExtensionsAssociatio
 		AssociationType = associationType
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.SetAdExtensionsAssociationsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.SetAdExtensionsAssociationsAsync(r), request));
 }
 ```
 ```java
@@ -136,7 +136,7 @@ static SetAdExtensionsAssociationsResponse setAdExtensionsAssociations(
 	request.setAdExtensionIdToEntityIdAssociations(adExtensionIdToEntityIdAssociations);
 	request.setAssociationType(associationType);
 
-	return CampaignManagement.getService().setAdExtensionsAssociations(request);
+	return CampaignManagementService.getService().setAdExtensionsAssociations(request);
 }
 ```
 ```php

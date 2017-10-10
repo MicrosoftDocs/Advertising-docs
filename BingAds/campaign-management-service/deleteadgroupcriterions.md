@@ -80,11 +80,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e159="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e159:KeyValuePairOfstringstring>
-              <e159:key d4p1:nil="false">ValueHere</e159:key>
-              <e159:value d4p1:nil="false">ValueHere</e159:value>
-            </e159:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e771="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e771:KeyValuePairOfstringstring>
+              <e771:key d4p1:nil="false">ValueHere</e771:key>
+              <e771:value d4p1:nil="false">ValueHere</e771:value>
+            </e771:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -117,7 +117,7 @@ public async Task<DeleteAdGroupCriterionsResponse> DeleteAdGroupCriterionsAsync(
 		CriterionType = criterionType
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.DeleteAdGroupCriterionsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.DeleteAdGroupCriterionsAsync(r), request));
 }
 ```
 ```java
@@ -132,7 +132,7 @@ static DeleteAdGroupCriterionsResponse deleteAdGroupCriterions(
 	request.setAdGroupId(adGroupId);
 	request.setCriterionType(criterionType);
 
-	return CampaignManagement.getService().deleteAdGroupCriterions(request);
+	return CampaignManagementService.getService().deleteAdGroupCriterions(request);
 }
 ```
 ```php

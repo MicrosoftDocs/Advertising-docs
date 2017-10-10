@@ -9,13 +9,13 @@ description: Applies offline conversions for the account with Microsoft Click Id
 # ApplyOfflineConversions Service Operation
 Applies offline conversions for the account with Microsoft Click Id among other offline conversion data.
 
-Let?s say a customer sees your ad, clicks on it, but ends up calling you, leading to a sale that was taken offline. How can you track when your search ad leads to a conversion offline and outside of your website? You can import offline conversions, to better measure what happens after your ad was clicked.
+Let's say a customer sees your ad, clicks on it, but ends up calling you, leading to a sale that was taken offline. How can you track when your search ad leads to a conversion offline and outside of your website? You can import offline conversions, to better measure what happens after your ad was clicked.
 
 After creating an [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md), you?ll need to wait two hours before sending Bing Ads any offline conversions. If you do not wait two hours, then your offline conversion data might not be applied. After you send Bing Ads the offline conversions, it can take up to five hours to view conversion data.
 
 Each offline conversion needs to be associated to a single click ID. A single click ID can, however, be associated with multiple conversion goals and also be associated with the same goal multiple times, as long as the conversion time is different. Also, the same conversion can't be imported more than once. If more than one is attempted, the first instance will be used and the others will be ignored.
 
-The value of the conversion can be included in the import file along with a custom currency. If no currency is stated, the conversion goal?s default will be used.
+The value of the conversion can be included in the import file along with a custom currency. If no currency is stated, the conversion goal's default will be used.
 
 For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
 
@@ -90,11 +90,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e152="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e152:KeyValuePairOfstringstring>
-              <e152:key d4p1:nil="false">ValueHere</e152:key>
-              <e152:value d4p1:nil="false">ValueHere</e152:value>
-            </e152:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e764="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e764:KeyValuePairOfstringstring>
+              <e764:key d4p1:nil="false">ValueHere</e764:key>
+              <e764:value d4p1:nil="false">ValueHere</e764:value>
+            </e764:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -123,7 +123,7 @@ public async Task<ApplyOfflineConversionsResponse> ApplyOfflineConversionsAsync(
 		OfflineConversions = offlineConversions
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.ApplyOfflineConversionsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.ApplyOfflineConversionsAsync(r), request));
 }
 ```
 ```java
@@ -134,7 +134,7 @@ static ApplyOfflineConversionsResponse applyOfflineConversions(
 
 	request.setOfflineConversions(offlineConversions);
 
-	return CampaignManagement.getService().applyOfflineConversions(request);
+	return CampaignManagementService.getService().applyOfflineConversions(request);
 }
 ```
 ```php

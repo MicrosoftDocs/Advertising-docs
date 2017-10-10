@@ -35,8 +35,8 @@ The *AddUetTagsResponse* object defines the [body](#response-body) and [header](
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="uettags"></a>UetTags|An array of [UetTag](../campaign-management-service/uettag.md) objects to add to the customer's shared UET tag library.<br/><br/>The customer is determined by the required *CustomerId* header element.<br /><br />You can add a maximum of 100 UET tags in a single call, although please note that you can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2).<br/><br/> If the call is successful, the tracking script that you should add to your website is included in a corresponding [UetTag](../campaign-management-service/uettag.md) within the response message.|[UetTag](uettag.md) array|
 |<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="uettags"></a>UetTags|An array of [UetTag](../campaign-management-service/uettag.md) objects to add to the customer's shared UET tag library.<br/><br/>The customer is determined by the required *CustomerId* header element.<br /><br />You can add a maximum of 100 UET tags in a single call, although please note that you can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2).<br/><br/> If the call is successful, the tracking script that you should add to your website is included in a corresponding [UetTag](../campaign-management-service/uettag.md) within the response message.|[UetTag](uettag.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -99,11 +99,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e149="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e149:KeyValuePairOfstringstring>
-              <e149:key d4p1:nil="false">ValueHere</e149:key>
-              <e149:value d4p1:nil="false">ValueHere</e149:value>
-            </e149:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e761="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e761:KeyValuePairOfstringstring>
+              <e761:key d4p1:nil="false">ValueHere</e761:key>
+              <e761:value d4p1:nil="false">ValueHere</e761:value>
+            </e761:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -132,7 +132,7 @@ public async Task<AddUetTagsResponse> AddUetTagsAsync(
 		UetTags = uetTags
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.AddUetTagsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.AddUetTagsAsync(r), request));
 }
 ```
 ```java
@@ -143,7 +143,7 @@ static AddUetTagsResponse addUetTags(
 
 	request.setUetTags(uetTags);
 
-	return CampaignManagement.getService().addUetTags(request);
+	return CampaignManagementService.getService().addUetTags(request);
 }
 ```
 ```php

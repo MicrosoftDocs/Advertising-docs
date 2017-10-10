@@ -48,50 +48,50 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <UpdateUserRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <User xmlns:e50="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e50:ContactInfo i:nil="false">
-          <e50:Address i:nil="false">
-            <e50:City i:nil="false">ValueHere</e50:City>
-            <e50:CountryCode i:nil="false">ValueHere</e50:CountryCode>
-            <e50:Id i:nil="false">ValueHere</e50:Id>
-            <e50:Line1 i:nil="false">ValueHere</e50:Line1>
-            <e50:Line2 i:nil="false">ValueHere</e50:Line2>
-            <e50:Line3 i:nil="false">ValueHere</e50:Line3>
-            <e50:Line4 i:nil="false">ValueHere</e50:Line4>
-            <e50:PostalCode i:nil="false">ValueHere</e50:PostalCode>
-            <e50:StateOrProvince i:nil="false">ValueHere</e50:StateOrProvince>
-            <e50:TimeStamp i:nil="false">ValueHere</e50:TimeStamp>
-          </e50:Address>
-          <e50:ContactByPhone i:nil="false">ValueHere</e50:ContactByPhone>
-          <e50:ContactByPostalMail i:nil="false">ValueHere</e50:ContactByPostalMail>
-          <e50:Email i:nil="false">ValueHere</e50:Email>
-          <e50:EmailFormat i:nil="false">ValueHere</e50:EmailFormat>
-          <e50:Fax i:nil="false">ValueHere</e50:Fax>
-          <e50:HomePhone i:nil="false">ValueHere</e50:HomePhone>
-          <e50:Id i:nil="false">ValueHere</e50:Id>
-          <e50:Mobile i:nil="false">ValueHere</e50:Mobile>
-          <e50:Phone1 i:nil="false">ValueHere</e50:Phone1>
-          <e50:Phone2 i:nil="false">ValueHere</e50:Phone2>
-        </e50:ContactInfo>
-        <e50:CustomerAppScope i:nil="false">ValueHere</e50:CustomerAppScope>
-        <e50:CustomerId i:nil="false">ValueHere</e50:CustomerId>
-        <e50:Id i:nil="false">ValueHere</e50:Id>
-        <e50:JobTitle i:nil="false">ValueHere</e50:JobTitle>
-        <e50:LastModifiedByUserId i:nil="false">ValueHere</e50:LastModifiedByUserId>
-        <e50:LastModifiedTime i:nil="false">ValueHere</e50:LastModifiedTime>
-        <e50:Lcid i:nil="false">ValueHere</e50:Lcid>
-        <e50:Name i:nil="false">
-          <e50:FirstName i:nil="false">ValueHere</e50:FirstName>
-          <e50:LastName i:nil="false">ValueHere</e50:LastName>
-          <e50:MiddleInitial i:nil="false">ValueHere</e50:MiddleInitial>
-        </e50:Name>
-        <e50:Password i:nil="false">ValueHere</e50:Password>
-        <e50:SecretAnswer i:nil="false">ValueHere</e50:SecretAnswer>
-        <e50:SecretQuestion>ValueHere</e50:SecretQuestion>
-        <e50:UserLifeCycleStatus i:nil="false">ValueHere</e50:UserLifeCycleStatus>
-        <e50:TimeStamp i:nil="false">ValueHere</e50:TimeStamp>
-        <e50:UserName i:nil="false">ValueHere</e50:UserName>
-        <e50:IsMigratedToMicrosoftAccount>ValueHere</e50:IsMigratedToMicrosoftAccount>
+      <User xmlns:e662="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e662:ContactInfo i:nil="false">
+          <e662:Address i:nil="false">
+            <e662:City i:nil="false">ValueHere</e662:City>
+            <e662:CountryCode i:nil="false">ValueHere</e662:CountryCode>
+            <e662:Id i:nil="false">ValueHere</e662:Id>
+            <e662:Line1 i:nil="false">ValueHere</e662:Line1>
+            <e662:Line2 i:nil="false">ValueHere</e662:Line2>
+            <e662:Line3 i:nil="false">ValueHere</e662:Line3>
+            <e662:Line4 i:nil="false">ValueHere</e662:Line4>
+            <e662:PostalCode i:nil="false">ValueHere</e662:PostalCode>
+            <e662:StateOrProvince i:nil="false">ValueHere</e662:StateOrProvince>
+            <e662:TimeStamp i:nil="false">ValueHere</e662:TimeStamp>
+          </e662:Address>
+          <e662:ContactByPhone i:nil="false">ValueHere</e662:ContactByPhone>
+          <e662:ContactByPostalMail i:nil="false">ValueHere</e662:ContactByPostalMail>
+          <e662:Email i:nil="false">ValueHere</e662:Email>
+          <e662:EmailFormat i:nil="false">ValueHere</e662:EmailFormat>
+          <e662:Fax i:nil="false">ValueHere</e662:Fax>
+          <e662:HomePhone i:nil="false">ValueHere</e662:HomePhone>
+          <e662:Id i:nil="false">ValueHere</e662:Id>
+          <e662:Mobile i:nil="false">ValueHere</e662:Mobile>
+          <e662:Phone1 i:nil="false">ValueHere</e662:Phone1>
+          <e662:Phone2 i:nil="false">ValueHere</e662:Phone2>
+        </e662:ContactInfo>
+        <e662:CustomerAppScope i:nil="false">ValueHere</e662:CustomerAppScope>
+        <e662:CustomerId i:nil="false">ValueHere</e662:CustomerId>
+        <e662:Id i:nil="false">ValueHere</e662:Id>
+        <e662:JobTitle i:nil="false">ValueHere</e662:JobTitle>
+        <e662:LastModifiedByUserId i:nil="false">ValueHere</e662:LastModifiedByUserId>
+        <e662:LastModifiedTime i:nil="false">ValueHere</e662:LastModifiedTime>
+        <e662:Lcid i:nil="false">ValueHere</e662:Lcid>
+        <e662:Name i:nil="false">
+          <e662:FirstName i:nil="false">ValueHere</e662:FirstName>
+          <e662:LastName i:nil="false">ValueHere</e662:LastName>
+          <e662:MiddleInitial i:nil="false">ValueHere</e662:MiddleInitial>
+        </e662:Name>
+        <e662:Password i:nil="false">ValueHere</e662:Password>
+        <e662:SecretAnswer i:nil="false">ValueHere</e662:SecretAnswer>
+        <e662:SecretQuestion>ValueHere</e662:SecretQuestion>
+        <e662:UserLifeCycleStatus i:nil="false">ValueHere</e662:UserLifeCycleStatus>
+        <e662:TimeStamp i:nil="false">ValueHere</e662:TimeStamp>
+        <e662:UserName i:nil="false">ValueHere</e662:UserName>
+        <e662:IsMigratedToMicrosoftAccount>ValueHere</e662:IsMigratedToMicrosoftAccount>
       </User>
     </UpdateUserRequest>
   </s:Body>
@@ -125,7 +125,7 @@ public async Task<UpdateUserResponse> UpdateUserAsync(
 		User = user
 	};
 
-	return (await CustomerManagement.CallAsync((s, r) => s.UpdateUserAsync(r), request));
+	return (await CustomerManagementService.CallAsync((s, r) => s.UpdateUserAsync(r), request));
 }
 ```
 ```java
@@ -136,7 +136,7 @@ static UpdateUserResponse updateUser(
 
 	request.setUser(user);
 
-	return CustomerManagement.getService().updateUser(request);
+	return CustomerManagementService.getService().updateUser(request);
 }
 ```
 ```php

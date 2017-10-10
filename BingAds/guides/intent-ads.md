@@ -13,7 +13,7 @@ The ads created using the search creative assets are then displayed to the user 
 Intent ads are a part of standard Bing Ads campaigns on the search network and support all of the targeting available from Bing Ads. Intent ads have CPC pricing. 
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
 You can set a bid adjustment for each campaign and ad group. The bid adjustment is the percent amount by which to adjust your bid for native ads above or below the base ad group or keyword bid. Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent native ads from showing for the campaign or ad group. If you do not set a bid adjustment for your ad groups they will inherit from the campaign bid adjustment setting by default.
 

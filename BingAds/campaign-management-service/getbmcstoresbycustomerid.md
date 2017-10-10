@@ -86,7 +86,7 @@ public async Task<GetBMCStoresByCustomerIdResponse> GetBMCStoresByCustomerIdAsyn
 	{
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetBMCStoresByCustomerIdAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetBMCStoresByCustomerIdAsync(r), request));
 }
 ```
 ```java
@@ -95,7 +95,7 @@ static GetBMCStoresByCustomerIdResponse getBMCStoresByCustomerId() throws Remote
 	GetBMCStoresByCustomerIdRequest request = new GetBMCStoresByCustomerIdRequest();
 
 
-	return CampaignManagement.getService().getBMCStoresByCustomerId(request);
+	return CampaignManagementService.getService().getBMCStoresByCustomerId(request);
 }
 ```
 ```php

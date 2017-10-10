@@ -14,9 +14,6 @@ To set up offine conversion tracking, create an [OfflineConversionGoal](../campa
 > [!IMPORTANT]
 > Every time you create a new [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](../campaign-management-service/accountproperty.md) is set to *True* automatically. For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It?s coming soon.
-
 ## Syntax
 ```xml
 <xs:complexType name="OfflineConversionGoal" xmlns:xs="http://www.w3.org/2001/XMLSchema">

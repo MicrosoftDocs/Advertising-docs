@@ -102,7 +102,7 @@ public async Task<GetMediaMetaDataByAccountIdResponse> GetMediaMetaDataByAccount
 		MediaEnabledEntities = mediaEnabledEntities
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetMediaMetaDataByAccountIdAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetMediaMetaDataByAccountIdAsync(r), request));
 }
 ```
 ```java
@@ -113,7 +113,7 @@ static GetMediaMetaDataByAccountIdResponse getMediaMetaDataByAccountId(
 
 	request.setMediaEnabledEntities(mediaEnabledEntities);
 
-	return CampaignManagement.getService().getMediaMetaDataByAccountId(request);
+	return CampaignManagementService.getService().getMediaMetaDataByAccountId(request);
 }
 ```
 ```php

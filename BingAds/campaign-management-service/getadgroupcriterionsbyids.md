@@ -123,14 +123,14 @@ The following template shows the order of the [body](#response-body) and [header
             <AudienceId d4p1:nil="false">ValueHere</AudienceId>
             <AudienceType d4p1:nil="false">ValueHere</AudienceType>
             <!--This field is applicable if the derived type attribute is set to Webpage-->
-            <Parameter xmlns:e200="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-              <e200:Conditions d4p1:nil="false">
-                <e200:WebpageCondition>
-                  <e200:Argument d4p1:nil="false">ValueHere</e200:Argument>
-                  <e200:Operand>ValueHere</e200:Operand>
-                </e200:WebpageCondition>
-              </e200:Conditions>
-              <e200:CriterionName d4p1:nil="false">ValueHere</e200:CriterionName>
+            <Parameter xmlns:e812="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+              <e812:Conditions d4p1:nil="false">
+                <e812:WebpageCondition>
+                  <e812:Argument d4p1:nil="false">ValueHere</e812:Argument>
+                  <e812:Operand>ValueHere</e812:Operand>
+                </e812:WebpageCondition>
+              </e812:Conditions>
+              <e812:CriterionName d4p1:nil="false">ValueHere</e812:CriterionName>
             </Parameter>
           </Criterion>
           <Id d4p1:nil="false">ValueHere</Id>
@@ -146,11 +146,11 @@ The following template shows the order of the [body](#response-body) and [header
           </CriterionBid>
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e201="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e201:AppUrl>
-              <e201:OsType d4p1:nil="false">ValueHere</e201:OsType>
-              <e201:Url d4p1:nil="false">ValueHere</e201:Url>
-            </e201:AppUrl>
+          <FinalAppUrls xmlns:e813="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e813:AppUrl>
+              <e813:OsType d4p1:nil="false">ValueHere</e813:OsType>
+              <e813:Url d4p1:nil="false">ValueHere</e813:Url>
+            </e813:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -159,13 +159,13 @@ The following template shows the order of the [body](#response-body) and [header
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e202="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e202:Parameters d4p1:nil="false">
-              <e202:CustomParameter>
-                <e202:Key d4p1:nil="false">ValueHere</e202:Key>
-                <e202:Value d4p1:nil="false">ValueHere</e202:Value>
-              </e202:CustomParameter>
-            </e202:Parameters>
+          <UrlCustomParameters xmlns:e814="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e814:Parameters d4p1:nil="false">
+              <e814:CustomParameter>
+                <e814:Key d4p1:nil="false">ValueHere</e814:Key>
+                <e814:Value d4p1:nil="false">ValueHere</e814:Value>
+              </e814:CustomParameter>
+            </e814:Parameters>
           </UrlCustomParameters>
           <!--No additional fields are applicable if the derived type attribute is set to NegativeAdGroupCriterion-->
         </AdGroupCriterion>
@@ -190,7 +190,7 @@ public async Task<GetAdGroupCriterionsByIdsResponse> GetAdGroupCriterionsByIdsAs
 		CriterionType = criterionType
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetAdGroupCriterionsByIdsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetAdGroupCriterionsByIdsAsync(r), request));
 }
 ```
 ```java
@@ -205,7 +205,7 @@ static GetAdGroupCriterionsByIdsResponse getAdGroupCriterionsByIds(
 	request.setAdGroupId(adGroupId);
 	request.setCriterionType(criterionType);
 
-	return CampaignManagement.getService().getAdGroupCriterionsByIds(request);
+	return CampaignManagementService.getService().getAdGroupCriterionsByIds(request);
 }
 ```
 ```php

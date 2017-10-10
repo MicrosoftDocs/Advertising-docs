@@ -30,9 +30,9 @@ Show your ads for every relevant search, spending at an accelerated rate until y
 Consider using this option if you want your ads to show more frequently earlier in the day until your budget is reached, to maximize the number of impressions.
 
 ### <a name="dailystandard"></a>DailyBudgetStandard
-Show your ads evenly every day throughout the month so you don?t run out of budget early in the month. If the click rate is higher than expected, the rate of spend may be slowed to ensure that the budget is available until the end of the day; however, you won?t exceed the estimated monthly budget.
+Show your ads evenly every day throughout the month so you don't run out of budget early in the month. If the click rate is higher than expected, the rate of spend may be slowed to ensure that the budget is available until the end of the day; however, you won't exceed the estimated monthly budget.
 
-This is a great option if you have a limited budget and want your ads to show evenly throughout the day. This way, your ads won?t show all at once in the morning, using up your limited budget early in the day. You will also be able to monitor your budget on a daily basis, making adjustments as necessary, to maximize your budget.
+This is a great option if you have a limited budget and want your ads to show evenly throughout the day. This way, your ads won't show all at once in the morning, using up your limited budget early in the day. You will also be able to monitor your budget on a daily basis, making adjustments as necessary, to maximize your budget.
 
 ### <a name="budget_rules"></a>Budget Rules
 Before you can submit your ad campaign, you need to set a campaign budget amount and select a budget type. Don't worry, you can change your budget amount and budget types at any time. Changes to your budget generally take effect within an hour or so. For a high level introduction to campaign budgets, see [What are my budget options?](http://help.bingads.microsoft.com/#apex/3/en/51006/1) 
@@ -87,7 +87,7 @@ With the *ManualCpc* (manual cost per click) bid strategy, you set your ad group
 With the *MaxClicks* bid strategy, Bing Ads automatically sets your bids with the goal of getting as many clicks as possible with your provided budget.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 > 
 > The *MaxClicks* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States.
 
@@ -95,7 +95,7 @@ With the *MaxClicks* bid strategy, Bing Ads automatically sets your bids with th
 With the *MaxConversions* bid strategy, Bing Ads automatically sets your bids with the goal of getting as many conversions as possible with your provided budget. 
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 > 
 > The *MaxConversions* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 
@@ -110,7 +110,7 @@ The *EnhancedCpc* bid strategy is available to all advertisers worldwide. Note t
 With the *TargetCpa* bid strategy, Bing Ads automatically sets your bids such that the target average CPA (cost per acquisition) is attained. 
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 > 
 > The *TargetCpa* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 

@@ -82,7 +82,7 @@ public async Task<DeleteCustomerResponse> DeleteCustomerAsync(
 		TimeStamp = timeStamp
 	};
 
-	return (await CustomerManagement.CallAsync((s, r) => s.DeleteCustomerAsync(r), request));
+	return (await CustomerManagementService.CallAsync((s, r) => s.DeleteCustomerAsync(r), request));
 }
 ```
 ```java
@@ -95,7 +95,7 @@ static DeleteCustomerResponse deleteCustomer(
 	request.setCustomerId(customerId);
 	request.setTimeStamp(timeStamp);
 
-	return CustomerManagement.getService().deleteCustomer(request);
+	return CustomerManagementService.getService().deleteCustomer(request);
 }
 ```
 ```php

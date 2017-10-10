@@ -89,11 +89,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e249="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e249:KeyValuePairOfstringstring>
-              <e249:key d4p1:nil="false">ValueHere</e249:key>
-              <e249:value d4p1:nil="false">ValueHere</e249:value>
-            </e249:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e861="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e861:KeyValuePairOfstringstring>
+              <e861:key d4p1:nil="false">ValueHere</e861:key>
+              <e861:value d4p1:nil="false">ValueHere</e861:value>
+            </e861:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -124,7 +124,7 @@ public async Task<GetMediaAssociationsResponse> GetMediaAssociationsAsync(
 		MediaIds = mediaIds
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetMediaAssociationsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetMediaAssociationsAsync(r), request));
 }
 ```
 ```java
@@ -137,7 +137,7 @@ static GetMediaAssociationsResponse getMediaAssociations(
 	request.setMediaEnabledEntities(mediaEnabledEntities);
 	request.setMediaIds(mediaIds);
 
-	return CampaignManagement.getService().getMediaAssociations(request);
+	return CampaignManagementService.getService().getMediaAssociations(request);
 }
 ```
 ```php

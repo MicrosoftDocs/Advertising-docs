@@ -74,11 +74,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e168="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e168:KeyValuePairOfstringstring>
-              <e168:key d4p1:nil="false">ValueHere</e168:key>
-              <e168:value d4p1:nil="false">ValueHere</e168:value>
-            </e168:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e780="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e780:KeyValuePairOfstringstring>
+              <e780:key d4p1:nil="false">ValueHere</e780:key>
+              <e780:value d4p1:nil="false">ValueHere</e780:value>
+            </e780:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -107,7 +107,7 @@ public async Task<DeleteLabelsResponse> DeleteLabelsAsync(
 		LabelIds = labelIds
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.DeleteLabelsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.DeleteLabelsAsync(r), request));
 }
 ```
 ```java
@@ -118,7 +118,7 @@ static DeleteLabelsResponse deleteLabels(
 
 	request.setLabelIds(labelIds);
 
-	return CampaignManagement.getService().deleteLabels(request);
+	return CampaignManagementService.getService().deleteLabels(request);
 }
 ```
 ```php

@@ -16,13 +16,13 @@ The *GetHistoricalKeywordPerformanceRequest* object defines the [body](#request-
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywords"></a>Keywords|An array of keywords for which you want to get historical performance statistics. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string**|
-|<a name="timeinterval"></a>TimeInterval|The time period that identifies the data to use to determine the key performance index of the specified keywords. For example, use data from the previous seven days or previous 30 days to determine the keyword performance.<br /><br />The default value is *Last7Days*.|[TimeInterval](timeinterval.md)|
-|<a name="targetadposition"></a>TargetAdPosition|The position of the search results for which you want to get performance data.<br /><br />For example, to get performance data when ads appeared in the first position of the mainline by using the keyword and match type, set this element to MainLine1. To get performance data when ads appeared in any position of the search results by using the keyword and match type, set this element to All.<br /><br />The default value is *All*.<br /><br /> If you specify *All* for this element, the service will return multiple results per keyword for  each supported ad position. If you specify Aggregate, the service will return one aggregated result.|[AdPosition](adposition.md)|
-|<a name="matchtypes"></a>MatchTypes|The match types for which you want to get historical data.<br /><br />You may not specify the Content match type.|[MatchType](matchtype.md) array|
-|<a name="language"></a>Language|The language in which the keywords are written.<br /><br />The countries/regions that you specify in the *PublisherCountries* element must support the specified language.<br /><br />For possible values, see [Ad Languages](~/guides/ad-languages.md).|**string**|
-|<a name="publishercountries"></a>PublisherCountries|The country codes of the countries/regions to use as the source of the historical data.<br /><br />You can specify one or more country codes. Each country/region that you specify must support the language specified in the *Language* element.<br /><br />For possible values, see [Geographical Location Codes](~/guides/geographical-location-codes.md).<br /><br />If Null, the default is all countries/regions that support the specified language.|**string**|
 |<a name="devices"></a>Devices|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword performance data for the device types that you specify only, if available.<br />Used to determine a keyword's performance on the specified device types.|**string**|
+|<a name="keywords"></a>Keywords|An array of keywords for which you want to get historical performance statistics. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string**|
+|<a name="language"></a>Language|The language in which the keywords are written.<br /><br />The countries/regions that you specify in the *PublisherCountries* element must support the specified language.<br /><br />For possible values, see [Ad Languages](~/guides/ad-languages.md).|**string**|
+|<a name="matchtypes"></a>MatchTypes|The match types for which you want to get historical data.<br /><br />You may not specify the Content match type.|[MatchType](matchtype.md) array|
+|<a name="publishercountries"></a>PublisherCountries|The country codes of the countries/regions to use as the source of the historical data.<br /><br />You can specify one or more country codes. Each country/region that you specify must support the language specified in the *Language* element.<br /><br />For possible values, see [Geographical Location Codes](~/guides/geographical-location-codes.md).<br /><br />If Null, the default is all countries/regions that support the specified language.|**string**|
+|<a name="targetadposition"></a>TargetAdPosition|The position of the search results for which you want to get performance data.<br /><br />For example, to get performance data when ads appeared in the first position of the mainline by using the keyword and match type, set this element to MainLine1. To get performance data when ads appeared in any position of the search results by using the keyword and match type, set this element to All.<br /><br />The default value is *All*.<br /><br /> If you specify *All* for this element, the service will return multiple results per keyword for  each supported ad position. If you specify Aggregate, the service will return one aggregated result.|[AdPosition](adposition.md)|
+|<a name="timeinterval"></a>TimeInterval|The time period that identifies the data to use to determine the key performance index of the specified keywords. For example, use data from the previous seven days or previous 30 days to determine the keyword performance.<br /><br />The default value is *Last7Days*.|[TimeInterval](timeinterval.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -86,23 +86,23 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetHistoricalKeywordPerformanceResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordHistoricalPerformances xmlns:e72="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e72:KeywordHistoricalPerformance>
-          <e72:Keyword d4p1:nil="false">ValueHere</e72:Keyword>
-          <e72:KeywordKPIs d4p1:nil="false">
-            <e72:KeywordKPI>
-              <e72:Device d4p1:nil="false">ValueHere</e72:Device>
-              <e72:MatchType>ValueHere</e72:MatchType>
-              <e72:AdPosition>ValueHere</e72:AdPosition>
-              <e72:Clicks>ValueHere</e72:Clicks>
-              <e72:Impressions>ValueHere</e72:Impressions>
-              <e72:AverageCPC>ValueHere</e72:AverageCPC>
-              <e72:CTR>ValueHere</e72:CTR>
-              <e72:TotalCost>ValueHere</e72:TotalCost>
-              <e72:AverageBid>ValueHere</e72:AverageBid>
-            </e72:KeywordKPI>
-          </e72:KeywordKPIs>
-        </e72:KeywordHistoricalPerformance>
+      <KeywordHistoricalPerformances xmlns:e684="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e684:KeywordHistoricalPerformance>
+          <e684:Keyword d4p1:nil="false">ValueHere</e684:Keyword>
+          <e684:KeywordKPIs d4p1:nil="false">
+            <e684:KeywordKPI>
+              <e684:Device d4p1:nil="false">ValueHere</e684:Device>
+              <e684:MatchType>ValueHere</e684:MatchType>
+              <e684:AdPosition>ValueHere</e684:AdPosition>
+              <e684:Clicks>ValueHere</e684:Clicks>
+              <e684:Impressions>ValueHere</e684:Impressions>
+              <e684:AverageCPC>ValueHere</e684:AverageCPC>
+              <e684:CTR>ValueHere</e684:CTR>
+              <e684:TotalCost>ValueHere</e684:TotalCost>
+              <e684:AverageBid>ValueHere</e684:AverageBid>
+            </e684:KeywordKPI>
+          </e684:KeywordKPIs>
+        </e684:KeywordHistoricalPerformance>
       </KeywordHistoricalPerformances>
     </GetHistoricalKeywordPerformanceResponse>
   </s:Body>
@@ -132,7 +132,7 @@ public async Task<GetHistoricalKeywordPerformanceResponse> GetHistoricalKeywordP
 		Devices = devices
 	};
 
-	return (await AdInsight.CallAsync((s, r) => s.GetHistoricalKeywordPerformanceAsync(r), request));
+	return (await AdInsightService.CallAsync((s, r) => s.GetHistoricalKeywordPerformanceAsync(r), request));
 }
 ```
 ```java
@@ -155,7 +155,7 @@ static GetHistoricalKeywordPerformanceResponse getHistoricalKeywordPerformance(
 	request.setPublisherCountries(publisherCountries);
 	request.setDevices(devices);
 
-	return AdInsight.getService().getHistoricalKeywordPerformance(request);
+	return AdInsightService.getService().getHistoricalKeywordPerformance(request);
 }
 ```
 ```php

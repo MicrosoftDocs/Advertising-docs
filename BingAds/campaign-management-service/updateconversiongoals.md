@@ -113,11 +113,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e298="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e298:KeyValuePairOfstringstring>
-              <e298:key d4p1:nil="false">ValueHere</e298:key>
-              <e298:value d4p1:nil="false">ValueHere</e298:value>
-            </e298:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e910="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e910:KeyValuePairOfstringstring>
+              <e910:key d4p1:nil="false">ValueHere</e910:key>
+              <e910:value d4p1:nil="false">ValueHere</e910:value>
+            </e910:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -146,7 +146,7 @@ public async Task<UpdateConversionGoalsResponse> UpdateConversionGoalsAsync(
 		ConversionGoals = conversionGoals
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.UpdateConversionGoalsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.UpdateConversionGoalsAsync(r), request));
 }
 ```
 ```java
@@ -157,7 +157,7 @@ static UpdateConversionGoalsResponse updateConversionGoals(
 
 	request.setConversionGoals(conversionGoals);
 
-	return CampaignManagement.getService().updateConversionGoals(request);
+	return CampaignManagementService.getService().updateConversionGoals(request);
 }
 ```
 ```php

@@ -100,7 +100,7 @@ public async Task<GetAccountMigrationStatusesResponse> GetAccountMigrationStatus
 		MigrationType = migrationType
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetAccountMigrationStatusesAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetAccountMigrationStatusesAsync(r), request));
 }
 ```
 ```java
@@ -113,7 +113,7 @@ static GetAccountMigrationStatusesResponse getAccountMigrationStatuses(
 	request.setAccountIds(accountIds);
 	request.setMigrationType(migrationType);
 
-	return CampaignManagement.getService().getAccountMigrationStatuses(request);
+	return CampaignManagementService.getService().getAccountMigrationStatuses(request);
 }
 ```
 ```php

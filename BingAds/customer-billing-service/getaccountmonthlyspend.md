@@ -85,7 +85,7 @@ public async Task<GetAccountMonthlySpendResponse> GetAccountMonthlySpendAsync(
 		MonthYear = monthYear
 	};
 
-	return (await CustomerBilling.CallAsync((s, r) => s.GetAccountMonthlySpendAsync(r), request));
+	return (await CustomerBillingService.CallAsync((s, r) => s.GetAccountMonthlySpendAsync(r), request));
 }
 ```
 ```java
@@ -98,7 +98,7 @@ static GetAccountMonthlySpendResponse getAccountMonthlySpend(
 	request.setAccountId(accountId);
 	request.setMonthYear(monthYear);
 
-	return CustomerBilling.getService().getAccountMonthlySpend(request);
+	return CustomerBillingService.getService().getAccountMonthlySpend(request);
 }
 ```
 ```php

@@ -23,7 +23,7 @@ Also note that you must have conversion tracking (a UET tag and a conversion goa
 To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must have at least 15 conversions in the last 30 days. If you try to add or update a campaign to use one of these strategy types, the requested operation will fail if there is not enough conversion history. If an active campaign uses one of these bid strategy types, and then ceases to meet the minimum conversion history requirement at any time, Bing Ads will stop auto bidding but will continue to use the *DailyBudgetStandard* budget type. For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It?s coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 > 
 > The *TargetCpa* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 

@@ -124,21 +124,21 @@ The following template shows the order of the [body](#response-body) and [header
             <AudienceId d4p1:nil="false">ValueHere</AudienceId>
             <AudienceType d4p1:nil="false">ValueHere</AudienceType>
             <!--This field is applicable if the derived type attribute is set to Webpage-->
-            <Parameter xmlns:e222="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-              <e222:Conditions d4p1:nil="false">
-                <e222:WebpageCondition>
-                  <e222:Argument d4p1:nil="false">ValueHere</e222:Argument>
-                  <e222:Operand>ValueHere</e222:Operand>
-                </e222:WebpageCondition>
-              </e222:Conditions>
-              <e222:CriterionName d4p1:nil="false">ValueHere</e222:CriterionName>
+            <Parameter xmlns:e834="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+              <e834:Conditions d4p1:nil="false">
+                <e834:WebpageCondition>
+                  <e834:Argument d4p1:nil="false">ValueHere</e834:Argument>
+                  <e834:Operand>ValueHere</e834:Operand>
+                </e834:WebpageCondition>
+              </e834:Conditions>
+              <e834:CriterionName d4p1:nil="false">ValueHere</e834:CriterionName>
             </Parameter>
           </Criterion>
-          <ForwardCompatibilityMap xmlns:e223="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e223:KeyValuePairOfstringstring>
-              <e223:key d4p1:nil="false">ValueHere</e223:key>
-              <e223:value d4p1:nil="false">ValueHere</e223:value>
-            </e223:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e835="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e835:KeyValuePairOfstringstring>
+              <e835:key d4p1:nil="false">ValueHere</e835:key>
+              <e835:value d4p1:nil="false">ValueHere</e835:value>
+            </e835:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Status d4p1:nil="false">ValueHere</Status>
@@ -160,11 +160,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e224="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e224:KeyValuePairOfstringstring>
-              <e224:key d4p1:nil="false">ValueHere</e224:key>
-              <e224:value d4p1:nil="false">ValueHere</e224:value>
-            </e224:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e836="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e836:KeyValuePairOfstringstring>
+              <e836:key d4p1:nil="false">ValueHere</e836:key>
+              <e836:value d4p1:nil="false">ValueHere</e836:value>
+            </e836:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -197,7 +197,7 @@ public async Task<GetCampaignCriterionsByIdsResponse> GetCampaignCriterionsByIds
 		CriterionType = criterionType
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetCampaignCriterionsByIdsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetCampaignCriterionsByIdsAsync(r), request));
 }
 ```
 ```java
@@ -212,7 +212,7 @@ static GetCampaignCriterionsByIdsResponse getCampaignCriterionsByIds(
 	request.setCampaignId(campaignId);
 	request.setCriterionType(criterionType);
 
-	return CampaignManagement.getService().getCampaignCriterionsByIds(request);
+	return CampaignManagementService.getService().getCampaignCriterionsByIds(request);
 }
 ```
 ```php

@@ -19,14 +19,14 @@ The *GetEstimatedPositionByKeywordsRequest* object defines the [body](#request-b
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywords"></a>Keywords|An array of keywords for which you want to get the estimated position in the search results, based on the specified bid value. You may specify a maximum of 1,000 keywords and each keyword can contains a maximum of 100 characters.|**string**|
-|<a name="maxbid"></a>MaxBid|The maximum bid value to use to determine the estimated position in the search results.|**double**|
-|<a name="language"></a>Language|The language used to help determine  the country to use as the source of data for estimating the bids, if the *PublisherCountries* element is not specified.<br /><br /> The language must be supported in each of the countries in the *PublisherCountries* element.<br /><br />For possible values and information about the relationship between languages and countries, see [Ad Languages](~/guides/ad-languages.md).<br /><br />The default value is determined by the *PublisherCountries* element and the location targets associated with the specified *AdGroupId* and *CampaignId*. For more information, see the [Remarks](#remarks) section below.|**string**|
-|<a name="publishercountries"></a>PublisherCountries|The country codes of the countries to use as the source of data for estimating the bids.<br /><br /> All of the countries must support the language specified in the *Language* element.<br /><br />You may specify one or more country codes. For possible values, see [Geographical Location Codes](~/guides/geographical-location-codes.md).<br /><br />The default value is determined by the *Language* element and the location targets associated with the specified *AdGroupId* and *CampaignId*. For more information, see the [Remarks](#remarks) section below.|**string**|
-|<a name="currency"></a>Currency|The monetary unit to use to calculate the cost estimates and suggested bid value.<br /><br />If not set, the service determines the currency from the account specified in the CustomerAccountId header element. If neither is set, the service uses USDollar.|[Currency](currency.md)|
-|<a name="matchtypes"></a>MatchTypes|An array of unique match types for which you want to get estimates.<br /><br />You may not specify the Content match type.|[MatchType](matchtype.md) array|
-|<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad group specified in *AdGroupId*. If you do not specify an ad group, the campaign's performance data is used to help determine how well the keyword might perform in the context of the campaign.<br /><br /> Specifying a campaign and ad group helps improve the accuracy of the suggested position. If neither *AdGroupId* or *CampaignId* are specified, the operation uses the specified *CustomerAccountId* header element to help determine how well the keyword might perform in the context of the account.|**long**|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group whose performance data is used to help determine how well the keyword might perform in the context of the ad group. Specifying an ad group helps improve the accuracy of the suggested position.<br /><br />If you specify an ad group, you must specify the campaign that it belongs to.|**long**|
+|<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad group specified in *AdGroupId*. If you do not specify an ad group, the campaign's performance data is used to help determine how well the keyword might perform in the context of the campaign.<br /><br /> Specifying a campaign and ad group helps improve the accuracy of the suggested position. If neither *AdGroupId* or *CampaignId* are specified, the operation uses the specified *CustomerAccountId* header element to help determine how well the keyword might perform in the context of the account.|**long**|
+|<a name="currency"></a>Currency|The monetary unit to use to calculate the cost estimates and suggested bid value.<br /><br />If not set, the service determines the currency from the account specified in the CustomerAccountId header element. If neither is set, the service uses USDollar.|[Currency](currency.md)|
+|<a name="keywords"></a>Keywords|An array of keywords for which you want to get the estimated position in the search results, based on the specified bid value. You may specify a maximum of 1,000 keywords and each keyword can contains a maximum of 100 characters.|**string**|
+|<a name="language"></a>Language|The language used to help determine  the country to use as the source of data for estimating the bids, if the *PublisherCountries* element is not specified.<br /><br /> The language must be supported in each of the countries in the *PublisherCountries* element.<br /><br />For possible values and information about the relationship between languages and countries, see [Ad Languages](~/guides/ad-languages.md).<br /><br />The default value is determined by the *PublisherCountries* element and the location targets associated with the specified *AdGroupId* and *CampaignId*. For more information, see the [Remarks](#remarks) section below.|**string**|
+|<a name="matchtypes"></a>MatchTypes|An array of unique match types for which you want to get estimates.<br /><br />You may not specify the Content match type.|[MatchType](matchtype.md) array|
+|<a name="maxbid"></a>MaxBid|The maximum bid value to use to determine the estimated position in the search results.|**double**|
+|<a name="publishercountries"></a>PublisherCountries|The country codes of the countries to use as the source of data for estimating the bids.<br /><br /> All of the countries must support the language specified in the *Language* element.<br /><br />You may specify one or more country codes. For possible values, see [Geographical Location Codes](~/guides/geographical-location-codes.md).<br /><br />The default value is determined by the *Language* element and the location targets associated with the specified *AdGroupId* and *CampaignId*. For more information, see the [Remarks](#remarks) section below.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -89,25 +89,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedPositionByKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedPositions xmlns:e71="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e71:KeywordEstimatedPosition>
-          <e71:Keyword d4p1:nil="false">ValueHere</e71:Keyword>
-          <e71:EstimatedPositions d4p1:nil="false">
-            <e71:EstimatedPositionAndTraffic>
-              <e71:MatchType>ValueHere</e71:MatchType>
-              <e71:MinClicksPerWeek>ValueHere</e71:MinClicksPerWeek>
-              <e71:MaxClicksPerWeek>ValueHere</e71:MaxClicksPerWeek>
-              <e71:AverageCPC>ValueHere</e71:AverageCPC>
-              <e71:MinImpressionsPerWeek>ValueHere</e71:MinImpressionsPerWeek>
-              <e71:MaxImpressionsPerWeek>ValueHere</e71:MaxImpressionsPerWeek>
-              <e71:CTR>ValueHere</e71:CTR>
-              <e71:MinTotalCostPerWeek>ValueHere</e71:MinTotalCostPerWeek>
-              <e71:MaxTotalCostPerWeek>ValueHere</e71:MaxTotalCostPerWeek>
-              <e71:Currency>ValueHere</e71:Currency>
-              <e71:EstimatedAdPosition>ValueHere</e71:EstimatedAdPosition>
-            </e71:EstimatedPositionAndTraffic>
-          </e71:EstimatedPositions>
-        </e71:KeywordEstimatedPosition>
+      <KeywordEstimatedPositions xmlns:e683="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e683:KeywordEstimatedPosition>
+          <e683:Keyword d4p1:nil="false">ValueHere</e683:Keyword>
+          <e683:EstimatedPositions d4p1:nil="false">
+            <e683:EstimatedPositionAndTraffic>
+              <e683:MatchType>ValueHere</e683:MatchType>
+              <e683:MinClicksPerWeek>ValueHere</e683:MinClicksPerWeek>
+              <e683:MaxClicksPerWeek>ValueHere</e683:MaxClicksPerWeek>
+              <e683:AverageCPC>ValueHere</e683:AverageCPC>
+              <e683:MinImpressionsPerWeek>ValueHere</e683:MinImpressionsPerWeek>
+              <e683:MaxImpressionsPerWeek>ValueHere</e683:MaxImpressionsPerWeek>
+              <e683:CTR>ValueHere</e683:CTR>
+              <e683:MinTotalCostPerWeek>ValueHere</e683:MinTotalCostPerWeek>
+              <e683:MaxTotalCostPerWeek>ValueHere</e683:MaxTotalCostPerWeek>
+              <e683:Currency>ValueHere</e683:Currency>
+              <e683:EstimatedAdPosition>ValueHere</e683:EstimatedAdPosition>
+            </e683:EstimatedPositionAndTraffic>
+          </e683:EstimatedPositions>
+        </e683:KeywordEstimatedPosition>
       </KeywordEstimatedPositions>
     </GetEstimatedPositionByKeywordsResponse>
   </s:Body>
@@ -139,7 +139,7 @@ public async Task<GetEstimatedPositionByKeywordsResponse> GetEstimatedPositionBy
 		AdGroupId = adGroupId
 	};
 
-	return (await AdInsight.CallAsync((s, r) => s.GetEstimatedPositionByKeywordsAsync(r), request));
+	return (await AdInsightService.CallAsync((s, r) => s.GetEstimatedPositionByKeywordsAsync(r), request));
 }
 ```
 ```java
@@ -164,7 +164,7 @@ static GetEstimatedPositionByKeywordsResponse getEstimatedPositionByKeywords(
 	request.setCampaignId(campaignId);
 	request.setAdGroupId(adGroupId);
 
-	return AdInsight.getService().getEstimatedPositionByKeywords(request);
+	return AdInsightService.getService().getEstimatedPositionByKeywords(request);
 }
 ```
 ```php

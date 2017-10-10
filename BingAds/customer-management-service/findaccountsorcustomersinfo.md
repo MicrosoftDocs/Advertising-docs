@@ -16,9 +16,9 @@ The *FindAccountsOrCustomersInfoRequest* object defines the [body](#request-body
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="filter"></a>Filter|The criteria to use to filter the list of accounts and customers. You can specify either an account name, account number, or customer name.<br /><br />The filter value can contain a partial or full name or number. The operation includes the account or customer in the result if the name or number begins with the specified filter value.<br /><br />The operation performs a case-insensitive comparison when it compares your filter value to the name or number. For example, if you specify ?t? as the filter value, the list will include accounts and customers whose names begin with ?t? or ?T?.<br /><br />The operation filters first for accounts that match the filter criteria. If the number of accounts that match the filter criteria is less than the specified *TopN* value, the operation searches for customers whose name matches the filter criteria.<br /><br />Setting this element to an empty string is the same as calling the [GetAccountsInfo](../customer-management-service/getaccountsinfo.md) followed by calling the [GetCustomersInfo](../customer-management-service/getcustomersinfo.md).|**string**|
-|<a name="topn"></a>TopN|A nonzero positive integer that specifies the number of accounts to return in the result. You must specify a value from 1 through 5,000.|**int**|
 |<a name="applicationscope"></a>ApplicationScope|A value that determines whether to return advertiser accounts or publisher accounts. If you do not specify the scope, the list may include both types of accounts.|[ApplicationType](applicationtype.md)|
+|<a name="filter"></a>Filter|The criteria to use to filter the list of accounts and customers. You can specify either an account name, account number, or customer name.<br /><br />The filter value can contain a partial or full name or number. The operation includes the account or customer in the result if the name or number begins with the specified filter value.<br /><br />The operation performs a case-insensitive comparison when it compares your filter value to the name or number. For example, if you specify 't? as the filter value, the list will include accounts and customers whose names begin with 't? or 't?.<br /><br />The operation filters first for accounts that match the filter criteria. If the number of accounts that match the filter criteria is less than the specified *TopN* value, the operation searches for customers whose name matches the filter criteria.<br /><br />Setting this element to an empty string is the same as calling the [GetAccountsInfo](../customer-management-service/getaccountsinfo.md) followed by calling the [GetCustomersInfo](../customer-management-service/getcustomersinfo.md).|**string**|
+|<a name="topn"></a>TopN|A nonzero positive integer that specifies the number of accounts to return in the result. You must specify a value from 1 through 5,000.|**int**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -68,16 +68,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <FindAccountsOrCustomersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <AccountInfoWithCustomerData xmlns:e6="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e6:AccountInfoWithCustomerData>
-          <e6:CustomerId d4p1:nil="false">ValueHere</e6:CustomerId>
-          <e6:CustomerName d4p1:nil="false">ValueHere</e6:CustomerName>
-          <e6:AccountId>ValueHere</e6:AccountId>
-          <e6:AccountName d4p1:nil="false">ValueHere</e6:AccountName>
-          <e6:AccountNumber d4p1:nil="false">ValueHere</e6:AccountNumber>
-          <e6:AccountLifeCycleStatus>ValueHere</e6:AccountLifeCycleStatus>
-          <e6:PauseReason d4p1:nil="false">ValueHere</e6:PauseReason>
-        </e6:AccountInfoWithCustomerData>
+      <AccountInfoWithCustomerData xmlns:e618="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e618:AccountInfoWithCustomerData>
+          <e618:CustomerId d4p1:nil="false">ValueHere</e618:CustomerId>
+          <e618:CustomerName d4p1:nil="false">ValueHere</e618:CustomerName>
+          <e618:AccountId>ValueHere</e618:AccountId>
+          <e618:AccountName d4p1:nil="false">ValueHere</e618:AccountName>
+          <e618:AccountNumber d4p1:nil="false">ValueHere</e618:AccountNumber>
+          <e618:AccountLifeCycleStatus>ValueHere</e618:AccountLifeCycleStatus>
+          <e618:PauseReason d4p1:nil="false">ValueHere</e618:PauseReason>
+        </e618:AccountInfoWithCustomerData>
       </AccountInfoWithCustomerData>
     </FindAccountsOrCustomersInfoResponse>
   </s:Body>
@@ -99,7 +99,7 @@ public async Task<FindAccountsOrCustomersInfoResponse> FindAccountsOrCustomersIn
 		ApplicationScope = applicationScope
 	};
 
-	return (await CustomerManagement.CallAsync((s, r) => s.FindAccountsOrCustomersInfoAsync(r), request));
+	return (await CustomerManagementService.CallAsync((s, r) => s.FindAccountsOrCustomersInfoAsync(r), request));
 }
 ```
 ```java
@@ -114,7 +114,7 @@ static FindAccountsOrCustomersInfoResponse findAccountsOrCustomersInfo(
 	request.setTopN(topN);
 	request.setApplicationScope(applicationScope);
 
-	return CustomerManagement.getService().findAccountsOrCustomersInfo(request);
+	return CustomerManagementService.getService().findAccountsOrCustomersInfo(request);
 }
 ```
 ```php

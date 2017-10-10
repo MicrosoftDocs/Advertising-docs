@@ -168,7 +168,7 @@ Each ad group can contain between one and 100 ads combined, whether the type of 
 Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create a text ad with app ad extensions.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
 You can manage dynamic search ads using the Bulk service ([App Install Ad Record](~/bulk-service/app-install-ad.md)) or Campaign Management service ([AppInstallAd](~/campaign-management-service/appinstallad.md)).
 
@@ -183,7 +183,7 @@ The following table defines limits for app install ad properties.
 With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
 You can manage dynamic search ads using the Bulk service ([Dynamic Search Ad Record](~/bulk-service/dynamic-search-ad.md)) or Campaign Management service ([DynamicSearchAd](~/campaign-management-service/dynamicsearchad.md)).
 
@@ -199,9 +199,12 @@ The following table defines limits for dynamic search ad properties.
 ### <a name="expandedtextad"></a>Expanded Text Ad
 An expanded text ad specifies the creative, such as the titles and text of the ad.
 
-You can manage expanded text ads using the Bulk service ([Expanded Text Ad Record](~/bulk-service/expanded-text-ad.md)) or Campaign Management service ([TextAd](~/campaign-management-service/expandedtextad.md)).
+You can manage expanded text ads using the Bulk service ([Expanded Text Ad Record](~/bulk-service/expanded-text-ad.md)) or Campaign Management service ([ExpandedTextAd](~/campaign-management-service/expandedtextad.md)).
 
 The following table defines limits for expanded text ad properties.
+
+> [!NOTE]
+> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
 
 |Property|Limit|
 |------------|---------|

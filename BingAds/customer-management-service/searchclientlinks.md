@@ -20,9 +20,9 @@ The *SearchClientLinksRequest* object defines the [body](#request-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="predicates"></a>Predicates|Determines the request conditions. This operation's response will include client links that match all of the specified predicates.<br /><br /> You can specify either one or two predicates.<br /><br />For a list of supported *Field* and *Operator* elements of a *Predicate* object for this service operation, see [Predicate Field and Operator](#predicates).|[Predicate](predicate.md) array|
 |<a name="ordering"></a>Ordering|Determines the order of results.<br /><br /> If specified, you should only include one *OrderBy* element in the list. Additional elements are not supported and will be ignored by the service.<br /><br />For this service operation, the following values are supported in the *Field* element of a *OrderBy* object.<br /><br />*Id* - The order is determined by the *ClientAccountId* element of the returned [ClientLink](../customer-management-service/clientlink.md).<br /><br />*Name* - The order is determined by the *Name* element of the returned [ClientLink](../customer-management-service/clientlink.md).<br /><br />*Number* - The order is determined by the *ManagingCustomerNumber* element of the returned [ClientLink](../customer-management-service/clientlink.md).|[OrderBy](orderby.md) array|
 |<a name="pageinfo"></a>PageInfo|Determines the index and size of  results per page.|[Paging](paging.md)|
+|<a name="predicates"></a>Predicates|Determines the request conditions. This operation's response will include client links that match all of the specified predicates.<br /><br /> You can specify either one or two predicates.<br /><br />For a list of supported *Field* and *Operator* elements of a *Predicate* object for this service operation, see [Predicate Field and Operator](#predicates).|[Predicate](predicate.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -54,22 +54,22 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SearchClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Predicates xmlns:e22="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e22:Predicate>
-          <e22:Field i:nil="false">ValueHere</e22:Field>
-          <e22:Operator>ValueHere</e22:Operator>
-          <e22:Value i:nil="false">ValueHere</e22:Value>
-        </e22:Predicate>
+      <Predicates xmlns:e634="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e634:Predicate>
+          <e634:Field i:nil="false">ValueHere</e634:Field>
+          <e634:Operator>ValueHere</e634:Operator>
+          <e634:Value i:nil="false">ValueHere</e634:Value>
+        </e634:Predicate>
       </Predicates>
-      <Ordering xmlns:e23="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e23:OrderBy>
-          <e23:Field>ValueHere</e23:Field>
-          <e23:Order>ValueHere</e23:Order>
-        </e23:OrderBy>
+      <Ordering xmlns:e635="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e635:OrderBy>
+          <e635:Field>ValueHere</e635:Field>
+          <e635:Order>ValueHere</e635:Order>
+        </e635:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e24="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e24:Index>ValueHere</e24:Index>
-        <e24:Size>ValueHere</e24:Size>
+      <PageInfo xmlns:e636="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e636:Index>ValueHere</e636:Index>
+        <e636:Size>ValueHere</e636:Size>
       </PageInfo>
     </SearchClientLinksRequest>
   </s:Body>
@@ -86,31 +86,31 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SearchClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <ClientLinks xmlns:e25="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e25:ClientLink>
-          <e25:ClientAccountId d4p1:nil="false">ValueHere</e25:ClientAccountId>
-          <e25:ClientAccountNumber d4p1:nil="false">ValueHere</e25:ClientAccountNumber>
-          <e25:ManagingCustomerId d4p1:nil="false">ValueHere</e25:ManagingCustomerId>
-          <e25:ManagingCustomerNumber d4p1:nil="false">ValueHere</e25:ManagingCustomerNumber>
-          <e25:Note d4p1:nil="false">ValueHere</e25:Note>
-          <e25:Name d4p1:nil="false">ValueHere</e25:Name>
-          <e25:InviterEmail d4p1:nil="false">ValueHere</e25:InviterEmail>
-          <e25:InviterName d4p1:nil="false">ValueHere</e25:InviterName>
-          <e25:InviterPhone d4p1:nil="false">ValueHere</e25:InviterPhone>
-          <e25:IsBillToClient>ValueHere</e25:IsBillToClient>
-          <e25:StartDate d4p1:nil="false">ValueHere</e25:StartDate>
-          <e25:Status d4p1:nil="false">ValueHere</e25:Status>
-          <e25:SuppressNotification>ValueHere</e25:SuppressNotification>
-          <e25:LastModifiedDateTime>ValueHere</e25:LastModifiedDateTime>
-          <e25:LastModifiedByUserId>ValueHere</e25:LastModifiedByUserId>
-          <e25:Timestamp d4p1:nil="false">ValueHere</e25:Timestamp>
-          <ForwardCompatibilityMap xmlns:e26="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e26:KeyValuePairOfstringstring>
-              <e26:key d4p1:nil="false">ValueHere</e26:key>
-              <e26:value d4p1:nil="false">ValueHere</e26:value>
-            </e26:KeyValuePairOfstringstring>
+      <ClientLinks xmlns:e637="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e637:ClientLink>
+          <e637:ClientAccountId d4p1:nil="false">ValueHere</e637:ClientAccountId>
+          <e637:ClientAccountNumber d4p1:nil="false">ValueHere</e637:ClientAccountNumber>
+          <e637:ManagingCustomerId d4p1:nil="false">ValueHere</e637:ManagingCustomerId>
+          <e637:ManagingCustomerNumber d4p1:nil="false">ValueHere</e637:ManagingCustomerNumber>
+          <e637:Note d4p1:nil="false">ValueHere</e637:Note>
+          <e637:Name d4p1:nil="false">ValueHere</e637:Name>
+          <e637:InviterEmail d4p1:nil="false">ValueHere</e637:InviterEmail>
+          <e637:InviterName d4p1:nil="false">ValueHere</e637:InviterName>
+          <e637:InviterPhone d4p1:nil="false">ValueHere</e637:InviterPhone>
+          <e637:IsBillToClient>ValueHere</e637:IsBillToClient>
+          <e637:StartDate d4p1:nil="false">ValueHere</e637:StartDate>
+          <e637:Status d4p1:nil="false">ValueHere</e637:Status>
+          <e637:SuppressNotification>ValueHere</e637:SuppressNotification>
+          <e637:LastModifiedDateTime>ValueHere</e637:LastModifiedDateTime>
+          <e637:LastModifiedByUserId>ValueHere</e637:LastModifiedByUserId>
+          <e637:Timestamp d4p1:nil="false">ValueHere</e637:Timestamp>
+          <ForwardCompatibilityMap xmlns:e638="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e638:KeyValuePairOfstringstring>
+              <e638:key d4p1:nil="false">ValueHere</e638:key>
+              <e638:value d4p1:nil="false">ValueHere</e638:value>
+            </e638:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-        </e25:ClientLink>
+        </e637:ClientLink>
       </ClientLinks>
     </SearchClientLinksResponse>
   </s:Body>
@@ -132,7 +132,7 @@ public async Task<SearchClientLinksResponse> SearchClientLinksAsync(
 		PageInfo = pageInfo
 	};
 
-	return (await CustomerManagement.CallAsync((s, r) => s.SearchClientLinksAsync(r), request));
+	return (await CustomerManagementService.CallAsync((s, r) => s.SearchClientLinksAsync(r), request));
 }
 ```
 ```java
@@ -147,7 +147,7 @@ static SearchClientLinksResponse searchClientLinks(
 	request.setOrdering(ordering);
 	request.setPageInfo(pageInfo);
 
-	return CustomerManagement.getService().searchClientLinks(request);
+	return CustomerManagementService.getService().searchClientLinks(request);
 }
 ```
 ```php

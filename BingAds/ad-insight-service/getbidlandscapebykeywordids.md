@@ -19,8 +19,8 @@ The *GetBidLandscapeByKeywordIdsRequest* object defines the [body](#request-body
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordids"></a>KeywordIds|An array of identifiers of the keywords for which you want to get the list of suggested bid values with estimated performance statistics.<br /><br />You may specify a maximum of 1,000 keywords.|**long**|
 |<a name="includecurrentbid"></a>IncludeCurrentBid|When set to **false**, the suggested bid values might not include the keyword's current bid. The default value is **false**.<br /><br />When set to **true**, one of the suggested bid values will be equal to the keyword's current bid.|**boolean**|
+|<a name="keywordids"></a>KeywordIds|An array of identifiers of the keywords for which you want to get the list of suggested bid values with estimated performance statistics.<br /><br />You may specify a maximum of 1,000 keywords.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -73,31 +73,31 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBidLandscapeByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <BidLandscape xmlns:e62="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e62:KeywordBidLandscape>
-          <e62:KeywordId>ValueHere</e62:KeywordId>
-          <e62:StartDate d4p1:nil="false">
-            <e62:Day>ValueHere</e62:Day>
-            <e62:Month>ValueHere</e62:Month>
-            <e62:Year>ValueHere</e62:Year>
-          </e62:StartDate>
-          <e62:EndDate d4p1:nil="false">
-            <e62:Day>ValueHere</e62:Day>
-            <e62:Month>ValueHere</e62:Month>
-            <e62:Year>ValueHere</e62:Year>
-          </e62:EndDate>
-          <e62:BidLandscapePoints d4p1:nil="false">
-            <e62:BidLandscapePoint>
-              <e62:Bid>ValueHere</e62:Bid>
-              <e62:Clicks d4p1:nil="false">ValueHere</e62:Clicks>
-              <e62:Impressions>ValueHere</e62:Impressions>
-              <e62:TopImpressions d4p1:nil="false">ValueHere</e62:TopImpressions>
-              <e62:Currency>ValueHere</e62:Currency>
-              <e62:Cost d4p1:nil="false">ValueHere</e62:Cost>
-              <e62:MarginalCPC d4p1:nil="false">ValueHere</e62:MarginalCPC>
-            </e62:BidLandscapePoint>
-          </e62:BidLandscapePoints>
-        </e62:KeywordBidLandscape>
+      <BidLandscape xmlns:e674="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e674:KeywordBidLandscape>
+          <e674:KeywordId>ValueHere</e674:KeywordId>
+          <e674:StartDate d4p1:nil="false">
+            <e674:Day>ValueHere</e674:Day>
+            <e674:Month>ValueHere</e674:Month>
+            <e674:Year>ValueHere</e674:Year>
+          </e674:StartDate>
+          <e674:EndDate d4p1:nil="false">
+            <e674:Day>ValueHere</e674:Day>
+            <e674:Month>ValueHere</e674:Month>
+            <e674:Year>ValueHere</e674:Year>
+          </e674:EndDate>
+          <e674:BidLandscapePoints d4p1:nil="false">
+            <e674:BidLandscapePoint>
+              <e674:Bid>ValueHere</e674:Bid>
+              <e674:Clicks d4p1:nil="false">ValueHere</e674:Clicks>
+              <e674:Impressions>ValueHere</e674:Impressions>
+              <e674:TopImpressions d4p1:nil="false">ValueHere</e674:TopImpressions>
+              <e674:Currency>ValueHere</e674:Currency>
+              <e674:Cost d4p1:nil="false">ValueHere</e674:Cost>
+              <e674:MarginalCPC d4p1:nil="false">ValueHere</e674:MarginalCPC>
+            </e674:BidLandscapePoint>
+          </e674:BidLandscapePoints>
+        </e674:KeywordBidLandscape>
       </BidLandscape>
     </GetBidLandscapeByKeywordIdsResponse>
   </s:Body>
@@ -117,7 +117,7 @@ public async Task<GetBidLandscapeByKeywordIdsResponse> GetBidLandscapeByKeywordI
 		IncludeCurrentBid = includeCurrentBid
 	};
 
-	return (await AdInsight.CallAsync((s, r) => s.GetBidLandscapeByKeywordIdsAsync(r), request));
+	return (await AdInsightService.CallAsync((s, r) => s.GetBidLandscapeByKeywordIdsAsync(r), request));
 }
 ```
 ```java
@@ -130,7 +130,7 @@ static GetBidLandscapeByKeywordIdsResponse getBidLandscapeByKeywordIds(
 	request.setKeywordIds(keywordIds);
 	request.setIncludeCurrentBid(includeCurrentBid);
 
-	return AdInsight.getService().getBidLandscapeByKeywordIds(request);
+	return AdInsightService.getService().getBidLandscapeByKeywordIds(request);
 }
 ```
 ```php

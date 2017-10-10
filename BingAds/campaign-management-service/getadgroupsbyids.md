@@ -16,8 +16,8 @@ The *GetAdGroupsByIdsRequest* object defines the [body](#request-body) and [head
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="campaignid"></a>CampaignId|The identifier of the campaign that contains the ad groups to get.|**long**|
 |<a name="adgroupids"></a>AdGroupIds|A maximum of 1,000 identifiers of the ad groups to get.|**long**|
+|<a name="campaignid"></a>CampaignId|The identifier of the campaign that contains the ad groups to get.|**long**|
 |<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [AdGroup](../campaign-management-service/adgroup.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[AdGroupAdditionalField](adgroupadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -109,11 +109,11 @@ The following template shows the order of the [body](#response-body) and [header
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e205="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e205:KeyValuePairOfstringstring>
-              <e205:key d4p1:nil="false">ValueHere</e205:key>
-              <e205:value d4p1:nil="false">ValueHere</e205:value>
-            </e205:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e817="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e817:KeyValuePairOfstringstring>
+              <e817:key d4p1:nil="false">ValueHere</e817:key>
+              <e817:value d4p1:nil="false">ValueHere</e817:value>
+            </e817:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Language d4p1:nil="false">ValueHere</Language>
@@ -145,13 +145,13 @@ The following template shows the order of the [body](#response-body) and [header
           </StartDate>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e206="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e206:Parameters d4p1:nil="false">
-              <e206:CustomParameter>
-                <e206:Key d4p1:nil="false">ValueHere</e206:Key>
-                <e206:Value d4p1:nil="false">ValueHere</e206:Value>
-              </e206:CustomParameter>
-            </e206:Parameters>
+          <UrlCustomParameters xmlns:e818="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e818:Parameters d4p1:nil="false">
+              <e818:CustomParameter>
+                <e818:Key d4p1:nil="false">ValueHere</e818:Key>
+                <e818:Value d4p1:nil="false">ValueHere</e818:Value>
+              </e818:CustomParameter>
+            </e818:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
@@ -161,11 +161,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e207="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e207:KeyValuePairOfstringstring>
-              <e207:key d4p1:nil="false">ValueHere</e207:key>
-              <e207:value d4p1:nil="false">ValueHere</e207:value>
-            </e207:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e819="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e819:KeyValuePairOfstringstring>
+              <e819:key d4p1:nil="false">ValueHere</e819:key>
+              <e819:value d4p1:nil="false">ValueHere</e819:value>
+            </e819:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -198,7 +198,7 @@ public async Task<GetAdGroupsByIdsResponse> GetAdGroupsByIdsAsync(
 		ReturnAdditionalFields = returnAdditionalFields
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetAdGroupsByIdsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetAdGroupsByIdsAsync(r), request));
 }
 ```
 ```java
@@ -213,7 +213,7 @@ static GetAdGroupsByIdsResponse getAdGroupsByIds(
 	request.setAdGroupIds(adGroupIds);
 	request.setReturnAdditionalFields(returnAdditionalFields);
 
-	return CampaignManagement.getService().getAdGroupsByIds(request);
+	return CampaignManagementService.getService().getAdGroupsByIds(request);
 }
 ```
 ```php

@@ -16,9 +16,9 @@ The *SearchInsertionOrdersRequest* object defines the [body](#request-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="predicates"></a>Predicates|Determines the request conditions. This operation's response will include accounts that match all of the specified predicates.<br /><br /> You may specify up to 6 predicates, and one of the predicate fields must be AccountId. You may use the StartDate and EndDate predicate fields twice each to specify start and end date ranges, and otherwise may only use each predicate field once.<br /><br />For a list of supported *Field* and *Operator* elements of a *Predicate* object for this service operation, see [Predicate Field and Operator](#predicates).|[Predicate](predicate.md) array|
 |<a name="ordering"></a>Ordering|Determines the order of results by the specified property of an account.<br /><br /> You should only specify one *OrderBy* element in the array. Additional elements are not supported and will be ignored by the service.<br /><br />For this service operation, the following values are supported in the *Field* element of a *OrderBy* object.<br /><br />*Id* - The order is determined by the *InsertionOrderId*element of the returned [InsertionOrder](../customer-billing-service/insertionorder.md).<br /><br />*Name* - The order is determined by the *Name* element of the returned [InsertionOrder](../customer-billing-service/insertionorder.md).|[OrderBy](orderby.md) array|
 |<a name="pageinfo"></a>PageInfo|Determines the index and size of  results per page.|[Paging](paging.md)|
+|<a name="predicates"></a>Predicates|Determines the request conditions. This operation's response will include accounts that match all of the specified predicates.<br /><br /> You may specify up to 6 predicates, and one of the predicate fields must be AccountId. You may use the StartDate and EndDate predicate fields twice each to specify start and end date ranges, and otherwise may only use each predicate field once.<br /><br />For a list of supported *Field* and *Operator* elements of a *Predicate* object for this service operation, see [Predicate Field and Operator](#predicates).|[Predicate](predicate.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -50,22 +50,22 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SearchInsertionOrdersRequest xmlns="https://bingads.microsoft.com/Billing/v11">
-      <Predicates xmlns:e55="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e55:Predicate>
-          <e55:Field i:nil="false">ValueHere</e55:Field>
-          <e55:Operator>ValueHere</e55:Operator>
-          <e55:Value i:nil="false">ValueHere</e55:Value>
-        </e55:Predicate>
+      <Predicates xmlns:e667="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e667:Predicate>
+          <e667:Field i:nil="false">ValueHere</e667:Field>
+          <e667:Operator>ValueHere</e667:Operator>
+          <e667:Value i:nil="false">ValueHere</e667:Value>
+        </e667:Predicate>
       </Predicates>
-      <Ordering xmlns:e56="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e56:OrderBy>
-          <e56:Field>ValueHere</e56:Field>
-          <e56:Order>ValueHere</e56:Order>
-        </e56:OrderBy>
+      <Ordering xmlns:e668="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e668:OrderBy>
+          <e668:Field>ValueHere</e668:Field>
+          <e668:Order>ValueHere</e668:Order>
+        </e668:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e57="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e57:Index>ValueHere</e57:Index>
-        <e57:Size>ValueHere</e57:Size>
+      <PageInfo xmlns:e669="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e669:Index>ValueHere</e669:Index>
+        <e669:Size>ValueHere</e669:Size>
       </PageInfo>
     </SearchInsertionOrdersRequest>
   </s:Body>
@@ -82,25 +82,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SearchInsertionOrdersResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <InsertionOrders xmlns:e58="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e58:InsertionOrder>
-          <e58:AccountId>ValueHere</e58:AccountId>
-          <e58:BalanceAmount d4p1:nil="false">ValueHere</e58:BalanceAmount>
-          <e58:BookingCountryCode d4p1:nil="false">ValueHere</e58:BookingCountryCode>
-          <e58:Comment d4p1:nil="false">ValueHere</e58:Comment>
-          <e58:EndDate>ValueHere</e58:EndDate>
-          <e58:InsertionOrderId d4p1:nil="false">ValueHere</e58:InsertionOrderId>
-          <e58:LastModifiedByUserId d4p1:nil="false">ValueHere</e58:LastModifiedByUserId>
-          <e58:LastModifiedTime d4p1:nil="false">ValueHere</e58:LastModifiedTime>
-          <e58:NotificationThreshold d4p1:nil="false">ValueHere</e58:NotificationThreshold>
-          <e58:ReferenceId d4p1:nil="false">ValueHere</e58:ReferenceId>
-          <e58:SpendCapAmount>ValueHere</e58:SpendCapAmount>
-          <e58:StartDate>ValueHere</e58:StartDate>
-          <e58:Name d4p1:nil="false">ValueHere</e58:Name>
-          <e58:Status d4p1:nil="false">ValueHere</e58:Status>
-          <e58:PurchaseOrder d4p1:nil="false">ValueHere</e58:PurchaseOrder>
-          <e58:ChangePendingReview d4p1:nil="false">ValueHere</e58:ChangePendingReview>
-        </e58:InsertionOrder>
+      <InsertionOrders xmlns:e670="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e670:InsertionOrder>
+          <e670:AccountId>ValueHere</e670:AccountId>
+          <e670:BalanceAmount d4p1:nil="false">ValueHere</e670:BalanceAmount>
+          <e670:BookingCountryCode d4p1:nil="false">ValueHere</e670:BookingCountryCode>
+          <e670:Comment d4p1:nil="false">ValueHere</e670:Comment>
+          <e670:EndDate>ValueHere</e670:EndDate>
+          <e670:InsertionOrderId d4p1:nil="false">ValueHere</e670:InsertionOrderId>
+          <e670:LastModifiedByUserId d4p1:nil="false">ValueHere</e670:LastModifiedByUserId>
+          <e670:LastModifiedTime d4p1:nil="false">ValueHere</e670:LastModifiedTime>
+          <e670:NotificationThreshold d4p1:nil="false">ValueHere</e670:NotificationThreshold>
+          <e670:ReferenceId d4p1:nil="false">ValueHere</e670:ReferenceId>
+          <e670:SpendCapAmount>ValueHere</e670:SpendCapAmount>
+          <e670:StartDate>ValueHere</e670:StartDate>
+          <e670:Name d4p1:nil="false">ValueHere</e670:Name>
+          <e670:Status d4p1:nil="false">ValueHere</e670:Status>
+          <e670:PurchaseOrder d4p1:nil="false">ValueHere</e670:PurchaseOrder>
+          <e670:ChangePendingReview d4p1:nil="false">ValueHere</e670:ChangePendingReview>
+        </e670:InsertionOrder>
       </InsertionOrders>
     </SearchInsertionOrdersResponse>
   </s:Body>
@@ -122,7 +122,7 @@ public async Task<SearchInsertionOrdersResponse> SearchInsertionOrdersAsync(
 		PageInfo = pageInfo
 	};
 
-	return (await CustomerBilling.CallAsync((s, r) => s.SearchInsertionOrdersAsync(r), request));
+	return (await CustomerBillingService.CallAsync((s, r) => s.SearchInsertionOrdersAsync(r), request));
 }
 ```
 ```java
@@ -137,7 +137,7 @@ static SearchInsertionOrdersResponse searchInsertionOrders(
 	request.setOrdering(ordering);
 	request.setPageInfo(pageInfo);
 
-	return CustomerBilling.getService().searchInsertionOrders(request);
+	return CustomerBillingService.getService().searchInsertionOrders(request);
 }
 ```
 ```php

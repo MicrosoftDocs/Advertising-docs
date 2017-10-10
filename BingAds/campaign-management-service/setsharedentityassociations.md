@@ -79,11 +79,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e262="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e262:KeyValuePairOfstringstring>
-              <e262:key d4p1:nil="false">ValueHere</e262:key>
-              <e262:value d4p1:nil="false">ValueHere</e262:value>
-            </e262:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e874="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e874:KeyValuePairOfstringstring>
+              <e874:key d4p1:nil="false">ValueHere</e874:key>
+              <e874:value d4p1:nil="false">ValueHere</e874:value>
+            </e874:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -112,7 +112,7 @@ public async Task<SetSharedEntityAssociationsResponse> SetSharedEntityAssociatio
 		Associations = associations
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.SetSharedEntityAssociationsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.SetSharedEntityAssociationsAsync(r), request));
 }
 ```
 ```java
@@ -123,7 +123,7 @@ static SetSharedEntityAssociationsResponse setSharedEntityAssociations(
 
 	request.setAssociations(associations);
 
-	return CampaignManagement.getService().setSharedEntityAssociations(request);
+	return CampaignManagementService.getService().setSharedEntityAssociations(request);
 }
 ```
 ```php

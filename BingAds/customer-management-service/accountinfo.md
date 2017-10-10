@@ -26,10 +26,10 @@ Defines an account identification object that contains information that identifi
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
+|<a name="accountlifecyclestatus"></a>AccountLifeCycleStatus|The status of the account.|[AccountLifeCycleStatus](accountlifecyclestatus.md)|
 |<a name="id"></a>Id|The system generated identifier of the account.|**long**|
 |<a name="name"></a>Name|The name of the account.|**string**|
 |<a name="number"></a>Number|The account number.|**string**|
-|<a name="accountlifecyclestatus"></a>AccountLifeCycleStatus|The status of the account.|[AccountLifeCycleStatus](accountlifecyclestatus.md)|
 |<a name="pausereason"></a>PauseReason|A flag value that indicates who paused the account. The following are the possible values:<br /><br />1 ? The user paused the account.<br /><br />2 ? The billing service paused the account.<br /><br />4 ? The user and billing service paused the account.|**unsignedByte**|
 
 ## Requirements

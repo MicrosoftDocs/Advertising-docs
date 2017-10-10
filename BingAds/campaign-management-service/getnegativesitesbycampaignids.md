@@ -85,11 +85,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e253="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e253:KeyValuePairOfstringstring>
-              <e253:key d4p1:nil="false">ValueHere</e253:key>
-              <e253:value d4p1:nil="false">ValueHere</e253:value>
-            </e253:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e865="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e865:KeyValuePairOfstringstring>
+              <e865:key d4p1:nil="false">ValueHere</e865:key>
+              <e865:value d4p1:nil="false">ValueHere</e865:value>
+            </e865:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -120,7 +120,7 @@ public async Task<GetNegativeSitesByCampaignIdsResponse> GetNegativeSitesByCampa
 		CampaignIds = campaignIds
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetNegativeSitesByCampaignIdsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetNegativeSitesByCampaignIdsAsync(r), request));
 }
 ```
 ```java
@@ -133,7 +133,7 @@ static GetNegativeSitesByCampaignIdsResponse getNegativeSitesByCampaignIds(
 	request.setAccountId(accountId);
 	request.setCampaignIds(campaignIds);
 
-	return CampaignManagement.getService().getNegativeSitesByCampaignIds(request);
+	return CampaignManagementService.getService().getNegativeSitesByCampaignIds(request);
 }
 ```
 ```php

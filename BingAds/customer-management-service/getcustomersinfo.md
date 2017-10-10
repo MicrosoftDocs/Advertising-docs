@@ -9,7 +9,7 @@ description: Gets a list of objects that contain customer identification informa
 # GetCustomersInfo Service Operation
 Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.
 
-The list that this operation returns is based on the customers that the user that you specify in the *UserName* header element of the request, has access to. If the user is a member of the reseller?s user group, the list will contain all customers that the reseller has signed up or a subset of customers if the user is limited to a subset of customers by a user role.
+The list that this operation returns is based on the customers that the user that you specify in the *UserName* header element of the request, has access to. If the user is a member of the reseller's user group, the list will contain all customers that the reseller has signed up or a subset of customers if the user is limited to a subset of customers by a user role.
 
 ## <a name="request"></a>Request Elements
 The *GetCustomersInfoRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -18,9 +18,9 @@ The *GetCustomersInfoRequest* object defines the [body](#request-body) and [head
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customernamefilter"></a>CustomerNameFilter|A partial or full name of the customers that you want to get. The operation includes the customer in the result if the customer?s name begins with the specified filter name. If you do not want to filter by customer name, set this element to an empty string.<br /><br />The operation performs a case-insensitive comparison when it compares your name filter value to the customer names. For example, if you specify ?t? as the name filter, the list will include customers whose names begin with ?t? or ?T?.|**string**|
-|<a name="topn"></a>TopN|A nonzero positive integer that specifies the number of customers to return in the result.|**int**|
 |<a name="applicationscope"></a>ApplicationScope|A value that determines whether to return results for advertising customers or publishing customers. If you do not specify the scope, the list may include both types of customers.|[ApplicationType](applicationtype.md)|
+|<a name="customernamefilter"></a>CustomerNameFilter|A partial or full name of the customers that you want to get. The operation includes the customer in the result if the customer's name begins with the specified filter name. If you do not want to filter by customer name, set this element to an empty string.<br /><br />The operation performs a case-insensitive comparison when it compares your name filter value to the customer names. For example, if you specify 't? as the name filter, the list will include customers whose names begin with 't? or 't?.|**string**|
+|<a name="topn"></a>TopN|A nonzero positive integer that specifies the number of customers to return in the result.|**int**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -70,11 +70,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetCustomersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <CustomersInfo xmlns:e13="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e13:CustomerInfo>
-          <e13:Id d4p1:nil="false">ValueHere</e13:Id>
-          <e13:Name d4p1:nil="false">ValueHere</e13:Name>
-        </e13:CustomerInfo>
+      <CustomersInfo xmlns:e625="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e625:CustomerInfo>
+          <e625:Id d4p1:nil="false">ValueHere</e625:Id>
+          <e625:Name d4p1:nil="false">ValueHere</e625:Name>
+        </e625:CustomerInfo>
       </CustomersInfo>
     </GetCustomersInfoResponse>
   </s:Body>
@@ -96,7 +96,7 @@ public async Task<GetCustomersInfoResponse> GetCustomersInfoAsync(
 		ApplicationScope = applicationScope
 	};
 
-	return (await CustomerManagement.CallAsync((s, r) => s.GetCustomersInfoAsync(r), request));
+	return (await CustomerManagementService.CallAsync((s, r) => s.GetCustomersInfoAsync(r), request));
 }
 ```
 ```java
@@ -111,7 +111,7 @@ static GetCustomersInfoResponse getCustomersInfo(
 	request.setTopN(topN);
 	request.setApplicationScope(applicationScope);
 
-	return CustomerManagement.getService().getCustomersInfo(request);
+	return CustomerManagementService.getService().getCustomersInfo(request);
 }
 ```
 ```php

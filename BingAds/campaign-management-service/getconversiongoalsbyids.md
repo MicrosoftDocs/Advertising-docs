@@ -119,11 +119,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e231="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e231:KeyValuePairOfstringstring>
-              <e231:key d4p1:nil="false">ValueHere</e231:key>
-              <e231:value d4p1:nil="false">ValueHere</e231:value>
-            </e231:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e843="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e843:KeyValuePairOfstringstring>
+              <e843:key d4p1:nil="false">ValueHere</e843:key>
+              <e843:value d4p1:nil="false">ValueHere</e843:value>
+            </e843:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -154,7 +154,7 @@ public async Task<GetConversionGoalsByIdsResponse> GetConversionGoalsByIdsAsync(
 		ConversionGoalTypes = conversionGoalTypes
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetConversionGoalsByIdsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetConversionGoalsByIdsAsync(r), request));
 }
 ```
 ```java
@@ -167,7 +167,7 @@ static GetConversionGoalsByIdsResponse getConversionGoalsByIds(
 	request.setConversionGoalIds(conversionGoalIds);
 	request.setConversionGoalTypes(conversionGoalTypes);
 
-	return CampaignManagement.getService().getConversionGoalsByIds(request);
+	return CampaignManagementService.getService().getConversionGoalsByIds(request);
 }
 ```
 ```php

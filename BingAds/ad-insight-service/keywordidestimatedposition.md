@@ -26,8 +26,8 @@ Defines an object that contains the identifier of a keyword and the estimated se
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordid"></a>KeywordId|The identifier of the keyword to which the estimated position applies.|**long**|
 |<a name="keywordestimatedposition"></a>KeywordEstimatedPosition|An object that contains the keyword string and estimated position in the search results given the specified maximum bid.|[KeywordEstimatedPosition](keywordestimatedposition.md)|
+|<a name="keywordid"></a>KeywordId|The identifier of the keyword to which the estimated position applies.|**long**|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

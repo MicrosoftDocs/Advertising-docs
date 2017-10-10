@@ -23,8 +23,8 @@ Defines an object that contains a suggested keyword and a confidence score. The 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="suggestedkeyword"></a>SuggestedKeyword|The suggested keyword.|**string**|
 |<a name="confidencescore"></a>ConfidenceScore|A score from 0.0 to 1.0 that indicates the probability that the keyword would match a user's search query.|**double**|
+|<a name="suggestedkeyword"></a>SuggestedKeyword|The suggested keyword.|**string**|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

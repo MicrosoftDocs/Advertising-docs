@@ -84,11 +84,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e128="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e128:KeyValuePairOfstringstring>
-              <e128:key d4p1:nil="false">ValueHere</e128:key>
-              <e128:value d4p1:nil="false">ValueHere</e128:value>
-            </e128:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e740="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e740:KeyValuePairOfstringstring>
+              <e740:key d4p1:nil="false">ValueHere</e740:key>
+              <e740:value d4p1:nil="false">ValueHere</e740:value>
+            </e740:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -117,7 +117,7 @@ public async Task<AddBudgetsResponse> AddBudgetsAsync(
 		Budgets = budgets
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.AddBudgetsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.AddBudgetsAsync(r), request));
 }
 ```
 ```java
@@ -128,7 +128,7 @@ static AddBudgetsResponse addBudgets(
 
 	request.setBudgets(budgets);
 
-	return CampaignManagement.getService().addBudgets(request);
+	return CampaignManagementService.getService().addBudgets(request);
 }
 ```
 ```php

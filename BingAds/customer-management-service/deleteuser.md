@@ -16,8 +16,8 @@ The *DeleteUserRequest* object defines the [body](#request-body) and [header](#r
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="userid"></a>UserId|The identifier of the user to delete.|**long**|
 |<a name="timestamp"></a>TimeStamp|The time-stamp value that the operation uses to reconcile the update. You must call  [GetUser](../customer-management-service/getuser.md) to get the time-stamp value. The delete operation fails if the user object has a time-stamp value that differs from the one that you pass.|**base64Binary**|
+|<a name="userid"></a>UserId|The identifier of the user to delete.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -82,7 +82,7 @@ public async Task<DeleteUserResponse> DeleteUserAsync(
 		TimeStamp = timeStamp
 	};
 
-	return (await CustomerManagement.CallAsync((s, r) => s.DeleteUserAsync(r), request));
+	return (await CustomerManagementService.CallAsync((s, r) => s.DeleteUserAsync(r), request));
 }
 ```
 ```java
@@ -95,7 +95,7 @@ static DeleteUserResponse deleteUser(
 	request.setUserId(userId);
 	request.setTimeStamp(timeStamp);
 
-	return CustomerManagement.getService().deleteUser(request);
+	return CustomerManagementService.getService().deleteUser(request);
 }
 ```
 ```php

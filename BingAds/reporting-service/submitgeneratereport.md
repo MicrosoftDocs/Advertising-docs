@@ -1443,7 +1443,7 @@ public async Task<SubmitGenerateReportResponse> SubmitGenerateReportAsync(
 		ReportRequest = reportRequest
 	};
 
-	return (await Reporting.CallAsync((s, r) => s.SubmitGenerateReportAsync(r), request));
+	return (await ReportingService.CallAsync((s, r) => s.SubmitGenerateReportAsync(r), request));
 }
 ```
 ```java
@@ -1454,7 +1454,7 @@ static SubmitGenerateReportResponse submitGenerateReport(
 
 	request.setReportRequest(reportRequest);
 
-	return Reporting.getService().submitGenerateReport(request);
+	return ReportingService.getService().submitGenerateReport(request);
 }
 ```
 ```php

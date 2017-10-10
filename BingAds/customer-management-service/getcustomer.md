@@ -64,37 +64,37 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetCustomerResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Customer xmlns:e11="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e11:CustomerAddress d4p1:nil="false">
-          <e11:City d4p1:nil="false">ValueHere</e11:City>
-          <e11:CountryCode d4p1:nil="false">ValueHere</e11:CountryCode>
-          <e11:Id d4p1:nil="false">ValueHere</e11:Id>
-          <e11:Line1 d4p1:nil="false">ValueHere</e11:Line1>
-          <e11:Line2 d4p1:nil="false">ValueHere</e11:Line2>
-          <e11:Line3 d4p1:nil="false">ValueHere</e11:Line3>
-          <e11:Line4 d4p1:nil="false">ValueHere</e11:Line4>
-          <e11:PostalCode d4p1:nil="false">ValueHere</e11:PostalCode>
-          <e11:StateOrProvince d4p1:nil="false">ValueHere</e11:StateOrProvince>
-          <e11:TimeStamp d4p1:nil="false">ValueHere</e11:TimeStamp>
-        </e11:CustomerAddress>
-        <e11:CustomerFinancialStatus d4p1:nil="false">ValueHere</e11:CustomerFinancialStatus>
-        <e11:Id d4p1:nil="false">ValueHere</e11:Id>
-        <e11:Industry d4p1:nil="false">ValueHere</e11:Industry>
-        <e11:LastModifiedByUserId d4p1:nil="false">ValueHere</e11:LastModifiedByUserId>
-        <e11:LastModifiedTime d4p1:nil="false">ValueHere</e11:LastModifiedTime>
-        <e11:MarketCountry d4p1:nil="false">ValueHere</e11:MarketCountry>
-        <ForwardCompatibilityMap xmlns:e12="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-          <e12:KeyValuePairOfstringstring>
-            <e12:key d4p1:nil="false">ValueHere</e12:key>
-            <e12:value d4p1:nil="false">ValueHere</e12:value>
-          </e12:KeyValuePairOfstringstring>
+      <Customer xmlns:e623="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e623:CustomerAddress d4p1:nil="false">
+          <e623:City d4p1:nil="false">ValueHere</e623:City>
+          <e623:CountryCode d4p1:nil="false">ValueHere</e623:CountryCode>
+          <e623:Id d4p1:nil="false">ValueHere</e623:Id>
+          <e623:Line1 d4p1:nil="false">ValueHere</e623:Line1>
+          <e623:Line2 d4p1:nil="false">ValueHere</e623:Line2>
+          <e623:Line3 d4p1:nil="false">ValueHere</e623:Line3>
+          <e623:Line4 d4p1:nil="false">ValueHere</e623:Line4>
+          <e623:PostalCode d4p1:nil="false">ValueHere</e623:PostalCode>
+          <e623:StateOrProvince d4p1:nil="false">ValueHere</e623:StateOrProvince>
+          <e623:TimeStamp d4p1:nil="false">ValueHere</e623:TimeStamp>
+        </e623:CustomerAddress>
+        <e623:CustomerFinancialStatus d4p1:nil="false">ValueHere</e623:CustomerFinancialStatus>
+        <e623:Id d4p1:nil="false">ValueHere</e623:Id>
+        <e623:Industry d4p1:nil="false">ValueHere</e623:Industry>
+        <e623:LastModifiedByUserId d4p1:nil="false">ValueHere</e623:LastModifiedByUserId>
+        <e623:LastModifiedTime d4p1:nil="false">ValueHere</e623:LastModifiedTime>
+        <e623:MarketCountry d4p1:nil="false">ValueHere</e623:MarketCountry>
+        <ForwardCompatibilityMap xmlns:e624="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+          <e624:KeyValuePairOfstringstring>
+            <e624:key d4p1:nil="false">ValueHere</e624:key>
+            <e624:value d4p1:nil="false">ValueHere</e624:value>
+          </e624:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e11:MarketLanguage d4p1:nil="false">ValueHere</e11:MarketLanguage>
-        <e11:Name d4p1:nil="false">ValueHere</e11:Name>
-        <e11:ServiceLevel d4p1:nil="false">ValueHere</e11:ServiceLevel>
-        <e11:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e11:CustomerLifeCycleStatus>
-        <e11:TimeStamp d4p1:nil="false">ValueHere</e11:TimeStamp>
-        <e11:Number d4p1:nil="false">ValueHere</e11:Number>
+        <e623:MarketLanguage d4p1:nil="false">ValueHere</e623:MarketLanguage>
+        <e623:Name d4p1:nil="false">ValueHere</e623:Name>
+        <e623:ServiceLevel d4p1:nil="false">ValueHere</e623:ServiceLevel>
+        <e623:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e623:CustomerLifeCycleStatus>
+        <e623:TimeStamp d4p1:nil="false">ValueHere</e623:TimeStamp>
+        <e623:Number d4p1:nil="false">ValueHere</e623:Number>
       </Customer>
     </GetCustomerResponse>
   </s:Body>
@@ -112,7 +112,7 @@ public async Task<GetCustomerResponse> GetCustomerAsync(
 		CustomerId = customerId
 	};
 
-	return (await CustomerManagement.CallAsync((s, r) => s.GetCustomerAsync(r), request));
+	return (await CustomerManagementService.CallAsync((s, r) => s.GetCustomerAsync(r), request));
 }
 ```
 ```java
@@ -123,7 +123,7 @@ static GetCustomerResponse getCustomer(
 
 	request.setCustomerId(customerId);
 
-	return CustomerManagement.getService().getCustomer(request);
+	return CustomerManagementService.getService().getCustomer(request);
 }
 ```
 ```php

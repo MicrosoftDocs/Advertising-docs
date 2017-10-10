@@ -16,7 +16,7 @@ The *UpdateCampaignCriterionsRequest* object defines the [body](#request-body) a
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="campaigncriterions"></a>CampaignCriterions|The list of campaign criterions to update.<br/><br/>You can include up to 100 campaign criterions per request.<br /><br />Within each [CampaignCriterion](../campaign-management-service/campaigncriterion.md) object, you must specify the criterion?s ID and the ID of the campaign that it belongs to.|[CampaignCriterion](campaigncriterion.md) array|
+|<a name="campaigncriterions"></a>CampaignCriterions|The list of campaign criterions to update.<br/><br/>You can include up to 100 campaign criterions per request.<br /><br />Within each [CampaignCriterion](../campaign-management-service/campaigncriterion.md) object, you must specify the criterion's ID and the ID of the campaign that it belongs to.|[CampaignCriterion](campaigncriterion.md) array|
 |<a name="criteriontype"></a>CriterionType|The type of criterion to update, for example *Webpage*. You can specify only one criterion type value per call.<br/><br/>To add, delete, or update target criterions i.e., age, day and time, device, gender, location, location intent, and radius criterions, you must specify the *CriterionType* value as *Targets*. You can add, delete, and update multiple target criterion types in the same operation. To retrieve these target criterions via [GetCampaignCriterionsByIds](../campaign-management-service/getcampaigncriterionsbyids.md) you must request the specific type individually i.e., *Age*, *DayTime*, *Device*, *Gender*, *Location*, *LocationIntent*, and *Radius*.|[CampaignCriterionType](campaigncriteriontype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -103,21 +103,21 @@ The following template shows the order of the [body](#request-body) and [header]
             <AudienceId i:nil="false">ValueHere</AudienceId>
             <AudienceType i:nil="false">ValueHere</AudienceType>
             <!--This field is applicable if the derived type attribute is set to Webpage-->
-            <Parameter xmlns:e291="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-              <e291:Conditions i:nil="false">
-                <e291:WebpageCondition>
-                  <e291:Argument i:nil="false">ValueHere</e291:Argument>
-                  <e291:Operand>ValueHere</e291:Operand>
-                </e291:WebpageCondition>
-              </e291:Conditions>
-              <e291:CriterionName i:nil="false">ValueHere</e291:CriterionName>
+            <Parameter xmlns:e903="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+              <e903:Conditions i:nil="false">
+                <e903:WebpageCondition>
+                  <e903:Argument i:nil="false">ValueHere</e903:Argument>
+                  <e903:Operand>ValueHere</e903:Operand>
+                </e903:WebpageCondition>
+              </e903:Conditions>
+              <e903:CriterionName i:nil="false">ValueHere</e903:CriterionName>
             </Parameter>
           </Criterion>
-          <ForwardCompatibilityMap xmlns:e292="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e292:KeyValuePairOfstringstring>
-              <e292:key i:nil="false">ValueHere</e292:key>
-              <e292:value i:nil="false">ValueHere</e292:value>
-            </e292:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e904="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e904:KeyValuePairOfstringstring>
+              <e904:key i:nil="false">ValueHere</e904:key>
+              <e904:value i:nil="false">ValueHere</e904:value>
+            </e904:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Status i:nil="false">ValueHere</Status>
@@ -158,11 +158,11 @@ The following template shows the order of the [body](#response-body) and [header
               <Details d4p1:nil="false">ValueHere</Details>
               <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
               <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-              <ForwardCompatibilityMap xmlns:e293="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-                <e293:KeyValuePairOfstringstring>
-                  <e293:key d4p1:nil="false">ValueHere</e293:key>
-                  <e293:value d4p1:nil="false">ValueHere</e293:value>
-                </e293:KeyValuePairOfstringstring>
+              <ForwardCompatibilityMap xmlns:e905="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+                <e905:KeyValuePairOfstringstring>
+                  <e905:key d4p1:nil="false">ValueHere</e905:key>
+                  <e905:value d4p1:nil="false">ValueHere</e905:value>
+                </e905:KeyValuePairOfstringstring>
               </ForwardCompatibilityMap>
               <Index>ValueHere</Index>
               <Message d4p1:nil="false">ValueHere</Message>
@@ -179,11 +179,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e294="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e294:KeyValuePairOfstringstring>
-              <e294:key d4p1:nil="false">ValueHere</e294:key>
-              <e294:value d4p1:nil="false">ValueHere</e294:value>
-            </e294:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e906="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e906:KeyValuePairOfstringstring>
+              <e906:key d4p1:nil="false">ValueHere</e906:key>
+              <e906:value d4p1:nil="false">ValueHere</e906:value>
+            </e906:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -208,7 +208,7 @@ public async Task<UpdateCampaignCriterionsResponse> UpdateCampaignCriterionsAsyn
 		CriterionType = criterionType
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.UpdateCampaignCriterionsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.UpdateCampaignCriterionsAsync(r), request));
 }
 ```
 ```java
@@ -221,7 +221,7 @@ static UpdateCampaignCriterionsResponse updateCampaignCriterions(
 	request.setCampaignCriterions(campaignCriterions);
 	request.setCriterionType(criterionType);
 
-	return CampaignManagement.getService().updateCampaignCriterions(request);
+	return CampaignManagementService.getService().updateCampaignCriterions(request);
 }
 ```
 ```php

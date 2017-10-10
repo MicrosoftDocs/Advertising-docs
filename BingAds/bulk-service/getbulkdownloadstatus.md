@@ -81,11 +81,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Message d4p1:nil="false">ValueHere</Message>
         </OperationError>
       </Errors>
-      <ForwardCompatibilityMap xmlns:e99="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e99:KeyValuePairOfstringstring>
-          <e99:key d4p1:nil="false">ValueHere</e99:key>
-          <e99:value d4p1:nil="false">ValueHere</e99:value>
-        </e99:KeyValuePairOfstringstring>
+      <ForwardCompatibilityMap xmlns:e711="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e711:KeyValuePairOfstringstring>
+          <e711:key d4p1:nil="false">ValueHere</e711:key>
+          <e711:value d4p1:nil="false">ValueHere</e711:value>
+        </e711:KeyValuePairOfstringstring>
       </ForwardCompatibilityMap>
       <PercentComplete>ValueHere</PercentComplete>
       <RequestStatus d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</RequestStatus>
@@ -106,7 +106,7 @@ public async Task<GetBulkDownloadStatusResponse> GetBulkDownloadStatusAsync(
 		RequestId = requestId
 	};
 
-	return (await Bulk.CallAsync((s, r) => s.GetBulkDownloadStatusAsync(r), request));
+	return (await BulkService.CallAsync((s, r) => s.GetBulkDownloadStatusAsync(r), request));
 }
 ```
 ```java
@@ -117,7 +117,7 @@ static GetBulkDownloadStatusResponse getBulkDownloadStatus(
 
 	request.setRequestId(requestId);
 
-	return Bulk.getService().getBulkDownloadStatus(request);
+	return BulkService.getService().getBulkDownloadStatus(request);
 }
 ```
 ```php

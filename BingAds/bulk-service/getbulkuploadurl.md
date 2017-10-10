@@ -16,8 +16,8 @@ The *GetBulkUploadUrlRequest* object defines the [body](#request-body) and [head
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="responsemode"></a>ResponseMode|Specify whether to return errors and their corresponding data, or only the errors in the results file. The default is *ErrorsOnly*.|[ResponseMode](responsemode.md)|
 |<a name="accountid"></a>AccountId|The account identifier corresponding to the data that will be uploaded.|**long**|
+|<a name="responsemode"></a>ResponseMode|Specify whether to return errors and their corresponding data, or only the errors in the results file. The default is *ErrorsOnly*.|[ResponseMode](responsemode.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -89,7 +89,7 @@ public async Task<GetBulkUploadUrlResponse> GetBulkUploadUrlAsync(
 		AccountId = accountId
 	};
 
-	return (await Bulk.CallAsync((s, r) => s.GetBulkUploadUrlAsync(r), request));
+	return (await BulkService.CallAsync((s, r) => s.GetBulkUploadUrlAsync(r), request));
 }
 ```
 ```java
@@ -102,7 +102,7 @@ static GetBulkUploadUrlResponse getBulkUploadUrl(
 	request.setResponseMode(responseMode);
 	request.setAccountId(accountId);
 
-	return Bulk.getService().getBulkUploadUrl(request);
+	return BulkService.getService().getBulkUploadUrl(request);
 }
 ```
 ```php

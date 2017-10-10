@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a condition that determines whether a product is selected from a customer?s Bing Merchant Center catalog file.
+description: Defines a condition that determines whether a product is selected from a customer's Bing Merchant Center catalog file.
 ---
 # ProductCondition Data Object
-Defines a condition that determines whether a product is selected from a customer?s Bing Merchant Center catalog file.
+Defines a condition that determines whether a product is selected from a customer's Bing Merchant Center catalog file.
 
 ## Syntax
 ```xml
@@ -23,8 +23,8 @@ Defines a condition that determines whether a product is selected from a custome
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="attribute"></a>Attribute|The condition?s attribute value.<br /><br />An attribute?s value must exactly match the value specified in the customer?s Bing Merchant Center catalog file.<br /><br />The available *Attribute* and *Operand* values vary depending on the criterion type.<br /><br />For [ProductScope](../campaign-management-service/productscope.md) and [ProductPartition](../campaign-management-service/productpartition.md) conditions, see [Bing Shopping Product Conditions](~/guides/product-ads.md#conditions).<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|**string**|
-|<a name="operand"></a>Operand|The condition?s operand. The operands implicitly include the equal operator. For example, read Brand as Brand=.<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|**string**|
+|<a name="attribute"></a>Attribute|The condition's attribute value.<br /><br />An attribute's value must exactly match the value specified in the customer's Bing Merchant Center catalog file.<br /><br />The available *Attribute* and *Operand* values vary depending on the criterion type.<br /><br />For [ProductScope](../campaign-management-service/productscope.md) and [ProductPartition](../campaign-management-service/productpartition.md) conditions, see [Bing Shopping Product Conditions](~/guides/product-ads.md#conditions).<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|**string**|
+|<a name="operand"></a>Operand|The condition's operand. The operands implicitly include the equal operator. For example, read Brand as Brand=.<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

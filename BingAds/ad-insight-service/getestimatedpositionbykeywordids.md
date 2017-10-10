@@ -73,28 +73,28 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedPositionByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedPositions xmlns:e70="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e70:KeywordIdEstimatedPosition>
-          <e70:KeywordId>ValueHere</e70:KeywordId>
-          <e70:KeywordEstimatedPosition d4p1:nil="false">
-            <e70:Keyword d4p1:nil="false">ValueHere</e70:Keyword>
-            <e70:EstimatedPositions d4p1:nil="false">
-              <e70:EstimatedPositionAndTraffic>
-                <e70:MatchType>ValueHere</e70:MatchType>
-                <e70:MinClicksPerWeek>ValueHere</e70:MinClicksPerWeek>
-                <e70:MaxClicksPerWeek>ValueHere</e70:MaxClicksPerWeek>
-                <e70:AverageCPC>ValueHere</e70:AverageCPC>
-                <e70:MinImpressionsPerWeek>ValueHere</e70:MinImpressionsPerWeek>
-                <e70:MaxImpressionsPerWeek>ValueHere</e70:MaxImpressionsPerWeek>
-                <e70:CTR>ValueHere</e70:CTR>
-                <e70:MinTotalCostPerWeek>ValueHere</e70:MinTotalCostPerWeek>
-                <e70:MaxTotalCostPerWeek>ValueHere</e70:MaxTotalCostPerWeek>
-                <e70:Currency>ValueHere</e70:Currency>
-                <e70:EstimatedAdPosition>ValueHere</e70:EstimatedAdPosition>
-              </e70:EstimatedPositionAndTraffic>
-            </e70:EstimatedPositions>
-          </e70:KeywordEstimatedPosition>
-        </e70:KeywordIdEstimatedPosition>
+      <KeywordEstimatedPositions xmlns:e682="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e682:KeywordIdEstimatedPosition>
+          <e682:KeywordId>ValueHere</e682:KeywordId>
+          <e682:KeywordEstimatedPosition d4p1:nil="false">
+            <e682:Keyword d4p1:nil="false">ValueHere</e682:Keyword>
+            <e682:EstimatedPositions d4p1:nil="false">
+              <e682:EstimatedPositionAndTraffic>
+                <e682:MatchType>ValueHere</e682:MatchType>
+                <e682:MinClicksPerWeek>ValueHere</e682:MinClicksPerWeek>
+                <e682:MaxClicksPerWeek>ValueHere</e682:MaxClicksPerWeek>
+                <e682:AverageCPC>ValueHere</e682:AverageCPC>
+                <e682:MinImpressionsPerWeek>ValueHere</e682:MinImpressionsPerWeek>
+                <e682:MaxImpressionsPerWeek>ValueHere</e682:MaxImpressionsPerWeek>
+                <e682:CTR>ValueHere</e682:CTR>
+                <e682:MinTotalCostPerWeek>ValueHere</e682:MinTotalCostPerWeek>
+                <e682:MaxTotalCostPerWeek>ValueHere</e682:MaxTotalCostPerWeek>
+                <e682:Currency>ValueHere</e682:Currency>
+                <e682:EstimatedAdPosition>ValueHere</e682:EstimatedAdPosition>
+              </e682:EstimatedPositionAndTraffic>
+            </e682:EstimatedPositions>
+          </e682:KeywordEstimatedPosition>
+        </e682:KeywordIdEstimatedPosition>
       </KeywordEstimatedPositions>
     </GetEstimatedPositionByKeywordIdsResponse>
   </s:Body>
@@ -114,7 +114,7 @@ public async Task<GetEstimatedPositionByKeywordIdsResponse> GetEstimatedPosition
 		MaxBid = maxBid
 	};
 
-	return (await AdInsight.CallAsync((s, r) => s.GetEstimatedPositionByKeywordIdsAsync(r), request));
+	return (await AdInsightService.CallAsync((s, r) => s.GetEstimatedPositionByKeywordIdsAsync(r), request));
 }
 ```
 ```java
@@ -127,7 +127,7 @@ static GetEstimatedPositionByKeywordIdsResponse getEstimatedPositionByKeywordIds
 	request.setKeywordIds(keywordIds);
 	request.setMaxBid(maxBid);
 
-	return AdInsight.getService().getEstimatedPositionByKeywordIds(request);
+	return AdInsightService.getService().getEstimatedPositionByKeywordIds(request);
 }
 ```
 ```php

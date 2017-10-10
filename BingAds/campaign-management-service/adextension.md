@@ -46,7 +46,7 @@ Do not try to instantiate an *AdExtension*. You can create one or more following
 |<a name="scheduling"></a>Scheduling|Determines the calendar day and time ranges when the ad extension is eligible to be shown in ads.<br/><br/> This element is not applicable for the [SiteLinksAdExtension](../campaign-management-service/sitelinksadextension.md) type; You can specify a *Scheduling* element for each [SiteLink](../campaign-management-service/sitelink.md) object (nested list within the [SiteLinksAdExtension](../campaign-management-service/sitelinksadextension.md)) instead. For all other ad extension types including [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md), the [AdExtension](../campaign-management-service/adextension.md) object will include the *Scheduling* element.|[Schedule](schedule.md)|
 |<a name="status"></a>Status|The status of the ad extension. The value will always be *Active* because the Campaign Management service does not return deleted ad extensions.|[AdExtensionStatus](adextensionstatus.md)|
 |<a name="type"></a>Type|The type of ad extension. <br/><br/>For more information, see [Remarks](#remarks).|**string**|
-|<a name="version"></a>Version|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it?s revised.|**int**|
+|<a name="version"></a>Version|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it's revised.|**int**|
 
 ## <a name="remarks"></a>Remarks
 If you generate the SOAP manually, use the *type* attribute of the `<AdExtension>` node as shown in the following example to specify the type of ad extension.
@@ -54,7 +54,7 @@ If you generate the SOAP manually, use the *type* attribute of the `<AdExtension
 ```xml
 <AdExtension i:type="ReviewAdExtension" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
     <Id i:nil="true" />
-    <Status i:nil=?true? />
+    <Status i:nil="true" />
       . . .
 </AdExtension>
 ```

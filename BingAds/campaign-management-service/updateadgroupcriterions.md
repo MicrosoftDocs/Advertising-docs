@@ -16,7 +16,7 @@ The *UpdateAdGroupCriterionsRequest* object defines the [body](#request-body) an
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupcriterions"></a>AdGroupCriterions|The list of criterions to update.<br/><br/>You can include up to 1,000 ad group criterions per request.<br /><br />Within each [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) object, you must specify the criterion?s ID and the ID of the ad group that it belongs to.|[AdGroupCriterion](adgroupcriterion.md) array|
+|<a name="adgroupcriterions"></a>AdGroupCriterions|The list of criterions to update.<br/><br/>You can include up to 1,000 ad group criterions per request.<br /><br />Within each [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) object, you must specify the criterion's ID and the ID of the ad group that it belongs to.|[AdGroupCriterion](adgroupcriterion.md) array|
 |<a name="criteriontype"></a>CriterionType|The type of criterion to update, for example *Webpage*. You can specify only one criterion type value per call.<br/><br/>To add, delete, or update target criterions i.e., age, day and time, device, gender, location, location intent, and radius criterions, you must specify the *CriterionType* value as *Targets*. You can add, delete, and update multiple target criterion types in the same operation. To retrieve these target criterions via [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) you must request the specific type individually i.e., *Age*, *DayTime*, *Device*, *Gender*, *Location*, *LocationIntent*, and *Radius*.<br/><br/>To add, delete, or update audience criterions i.e., custom audiences, in-market audiences, and remarketing lists, you must specify the *CriterionType* value as *Audience*.  You can add, delete, and update multiple target criterion types in the same operation. To retrieve these audience criterions via [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) you must request the specific type individually i.e., *Custom*, *InMarket*, and *RemarketingList*.<br/><br/> You cannot update a [ProductPartition](../campaign-management-service/productpartition.md) with this operation. Instead, you should use [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md).|[AdGroupCriterionType](adgroupcriteriontype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -103,14 +103,14 @@ The following template shows the order of the [body](#request-body) and [header]
             <AudienceId i:nil="false">ValueHere</AudienceId>
             <AudienceType i:nil="false">ValueHere</AudienceType>
             <!--This field is applicable if the derived type attribute is set to Webpage-->
-            <Parameter xmlns:e275="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-              <e275:Conditions i:nil="false">
-                <e275:WebpageCondition>
-                  <e275:Argument i:nil="false">ValueHere</e275:Argument>
-                  <e275:Operand>ValueHere</e275:Operand>
-                </e275:WebpageCondition>
-              </e275:Conditions>
-              <e275:CriterionName i:nil="false">ValueHere</e275:CriterionName>
+            <Parameter xmlns:e887="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+              <e887:Conditions i:nil="false">
+                <e887:WebpageCondition>
+                  <e887:Argument i:nil="false">ValueHere</e887:Argument>
+                  <e887:Operand>ValueHere</e887:Operand>
+                </e887:WebpageCondition>
+              </e887:Conditions>
+              <e887:CriterionName i:nil="false">ValueHere</e887:CriterionName>
             </Parameter>
           </Criterion>
           <Id i:nil="false">ValueHere</Id>
@@ -126,11 +126,11 @@ The following template shows the order of the [body](#request-body) and [header]
           </CriterionBid>
           <DestinationUrl i:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus i:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e276="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e276:AppUrl>
-              <e276:OsType i:nil="false">ValueHere</e276:OsType>
-              <e276:Url i:nil="false">ValueHere</e276:Url>
-            </e276:AppUrl>
+          <FinalAppUrls xmlns:e888="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            <e888:AppUrl>
+              <e888:OsType i:nil="false">ValueHere</e888:OsType>
+              <e888:Url i:nil="false">ValueHere</e888:Url>
+            </e888:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -139,13 +139,13 @@ The following template shows the order of the [body](#request-body) and [header]
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e277="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e277:Parameters i:nil="false">
-              <e277:CustomParameter>
-                <e277:Key i:nil="false">ValueHere</e277:Key>
-                <e277:Value i:nil="false">ValueHere</e277:Value>
-              </e277:CustomParameter>
-            </e277:Parameters>
+          <UrlCustomParameters xmlns:e889="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            <e889:Parameters i:nil="false">
+              <e889:CustomParameter>
+                <e889:Key i:nil="false">ValueHere</e889:Key>
+                <e889:Value i:nil="false">ValueHere</e889:Value>
+              </e889:CustomParameter>
+            </e889:Parameters>
           </UrlCustomParameters>
           <!--No additional fields are applicable if the derived type attribute is set to NegativeAdGroupCriterion-->
         </AdGroupCriterion>
@@ -175,11 +175,11 @@ The following template shows the order of the [body](#response-body) and [header
               <Details d4p1:nil="false">ValueHere</Details>
               <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
               <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-              <ForwardCompatibilityMap xmlns:e278="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-                <e278:KeyValuePairOfstringstring>
-                  <e278:key d4p1:nil="false">ValueHere</e278:key>
-                  <e278:value d4p1:nil="false">ValueHere</e278:value>
-                </e278:KeyValuePairOfstringstring>
+              <ForwardCompatibilityMap xmlns:e890="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+                <e890:KeyValuePairOfstringstring>
+                  <e890:key d4p1:nil="false">ValueHere</e890:key>
+                  <e890:value d4p1:nil="false">ValueHere</e890:value>
+                </e890:KeyValuePairOfstringstring>
               </ForwardCompatibilityMap>
               <Index>ValueHere</Index>
               <Message d4p1:nil="false">ValueHere</Message>
@@ -196,11 +196,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e279="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e279:KeyValuePairOfstringstring>
-              <e279:key d4p1:nil="false">ValueHere</e279:key>
-              <e279:value d4p1:nil="false">ValueHere</e279:value>
-            </e279:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e891="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e891:KeyValuePairOfstringstring>
+              <e891:key d4p1:nil="false">ValueHere</e891:key>
+              <e891:value d4p1:nil="false">ValueHere</e891:value>
+            </e891:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -225,7 +225,7 @@ public async Task<UpdateAdGroupCriterionsResponse> UpdateAdGroupCriterionsAsync(
 		CriterionType = criterionType
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.UpdateAdGroupCriterionsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.UpdateAdGroupCriterionsAsync(r), request));
 }
 ```
 ```java
@@ -238,7 +238,7 @@ static UpdateAdGroupCriterionsResponse updateAdGroupCriterions(
 	request.setAdGroupCriterions(adGroupCriterions);
 	request.setCriterionType(criterionType);
 
-	return CampaignManagement.getService().updateAdGroupCriterions(request);
+	return CampaignManagementService.getService().updateAdGroupCriterions(request);
 }
 ```
 ```php

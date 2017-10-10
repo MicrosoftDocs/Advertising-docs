@@ -9,7 +9,7 @@ ms.author: "eur"
 Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 > 
 > Reporting for labels is not yet available via Bing Ads API. You can use Reporting in the Bing Ads web applicationn. 
 

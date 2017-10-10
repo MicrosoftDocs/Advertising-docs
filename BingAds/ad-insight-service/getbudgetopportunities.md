@@ -66,26 +66,26 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBudgetOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Opportunities xmlns:e64="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e64:BudgetOpportunity>
-          <e64:BudgetPoints d4p1:nil="false">
-            <e64:BudgetPoint>
-              <e64:BudgetAmount>ValueHere</e64:BudgetAmount>
-              <e64:BudgetPointType>ValueHere</e64:BudgetPointType>
-              <e64:EstimatedWeeklyClicks>ValueHere</e64:EstimatedWeeklyClicks>
-              <e64:EstimatedWeeklyCost>ValueHere</e64:EstimatedWeeklyCost>
-              <e64:EstimatedWeeklyImpressions>ValueHere</e64:EstimatedWeeklyImpressions>
-            </e64:BudgetPoint>
-          </e64:BudgetPoints>
-          <e64:BudgetType>ValueHere</e64:BudgetType>
-          <e64:CampaignId>ValueHere</e64:CampaignId>
-          <e64:CurrentBudget>ValueHere</e64:CurrentBudget>
-          <e64:IncreaseInClicks>ValueHere</e64:IncreaseInClicks>
-          <e64:IncreaseInImpressions>ValueHere</e64:IncreaseInImpressions>
-          <e64:PercentageIncreaseInClicks>ValueHere</e64:PercentageIncreaseInClicks>
-          <e64:PercentageIncreaseInImpressions>ValueHere</e64:PercentageIncreaseInImpressions>
-          <e64:RecommendedBudget>ValueHere</e64:RecommendedBudget>
-        </e64:BudgetOpportunity>
+      <Opportunities xmlns:e676="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e676:BudgetOpportunity>
+          <e676:BudgetPoints d4p1:nil="false">
+            <e676:BudgetPoint>
+              <e676:BudgetAmount>ValueHere</e676:BudgetAmount>
+              <e676:BudgetPointType>ValueHere</e676:BudgetPointType>
+              <e676:EstimatedWeeklyClicks>ValueHere</e676:EstimatedWeeklyClicks>
+              <e676:EstimatedWeeklyCost>ValueHere</e676:EstimatedWeeklyCost>
+              <e676:EstimatedWeeklyImpressions>ValueHere</e676:EstimatedWeeklyImpressions>
+            </e676:BudgetPoint>
+          </e676:BudgetPoints>
+          <e676:BudgetType>ValueHere</e676:BudgetType>
+          <e676:CampaignId>ValueHere</e676:CampaignId>
+          <e676:CurrentBudget>ValueHere</e676:CurrentBudget>
+          <e676:IncreaseInClicks>ValueHere</e676:IncreaseInClicks>
+          <e676:IncreaseInImpressions>ValueHere</e676:IncreaseInImpressions>
+          <e676:PercentageIncreaseInClicks>ValueHere</e676:PercentageIncreaseInClicks>
+          <e676:PercentageIncreaseInImpressions>ValueHere</e676:PercentageIncreaseInImpressions>
+          <e676:RecommendedBudget>ValueHere</e676:RecommendedBudget>
+        </e676:BudgetOpportunity>
       </Opportunities>
     </GetBudgetOpportunitiesResponse>
   </s:Body>
@@ -103,7 +103,7 @@ public async Task<GetBudgetOpportunitiesResponse> GetBudgetOpportunitiesAsync(
 		CampaignId = campaignId
 	};
 
-	return (await AdInsight.CallAsync((s, r) => s.GetBudgetOpportunitiesAsync(r), request));
+	return (await AdInsightService.CallAsync((s, r) => s.GetBudgetOpportunitiesAsync(r), request));
 }
 ```
 ```java
@@ -114,7 +114,7 @@ static GetBudgetOpportunitiesResponse getBudgetOpportunities(
 
 	request.setCampaignId(campaignId);
 
-	return AdInsight.getService().getBudgetOpportunities(request);
+	return AdInsightService.getService().getBudgetOpportunities(request);
 }
 ```
 ```php

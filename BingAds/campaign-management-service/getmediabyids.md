@@ -100,7 +100,7 @@ public async Task<GetMediaByIdsResponse> GetMediaByIdsAsync(
 		MediaIds = mediaIds
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetMediaByIdsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetMediaByIdsAsync(r), request));
 }
 ```
 ```java
@@ -113,7 +113,7 @@ static GetMediaByIdsResponse getMediaByIds(
 	request.setAccountId(accountId);
 	request.setMediaIds(mediaIds);
 
-	return CampaignManagement.getService().getMediaByIds(request);
+	return CampaignManagementService.getService().getMediaByIds(request);
 }
 ```
 ```php

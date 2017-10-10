@@ -19,8 +19,8 @@ The *GetGeoLocationsFileUrlRequest* object defines the [body](#request-body) and
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="version"></a>Version|The version of the location file that you want to download.<br/><br/>Currently the only supported version is 1.0. You must set this value to *1.0*. |**string**|
 |<a name="languagelocale"></a>LanguageLocale|The language and locale of the geographical location code descriptions. The supported language locale values are *zh-Hant* (Traditional Chinese), *en* (English), *fr* (French), *de* (German), *it* (Italian), *pt-BR* (Brazilian Portuguese), and *es* (Spanish).|**string**|
+|<a name="version"></a>Version|The version of the location file that you want to download.<br/><br/>Currently the only supported version is 1.0. You must set this value to *1.0*. |**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -94,7 +94,7 @@ public async Task<GetGeoLocationsFileUrlResponse> GetGeoLocationsFileUrlAsync(
 		LanguageLocale = languageLocale
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetGeoLocationsFileUrlAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetGeoLocationsFileUrlAsync(r), request));
 }
 ```
 ```java
@@ -107,7 +107,7 @@ static GetGeoLocationsFileUrlResponse getGeoLocationsFileUrl(
 	request.setVersion(version);
 	request.setLanguageLocale(languageLocale);
 
-	return CampaignManagement.getService().getGeoLocationsFileUrl(request);
+	return CampaignManagementService.getService().getGeoLocationsFileUrl(request);
 }
 ```
 ```php

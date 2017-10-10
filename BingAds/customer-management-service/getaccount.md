@@ -64,60 +64,60 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetAccountResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Account xmlns:e7="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" d4p1:type="-- derived type specified here with the appropriate prefix --" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e7:AccountType>ValueHere</e7:AccountType>
-        <e7:BillToCustomerId d4p1:nil="false">ValueHere</e7:BillToCustomerId>
-        <e7:CountryCode d4p1:nil="false">ValueHere</e7:CountryCode>
-        <e7:CurrencyType d4p1:nil="false">ValueHere</e7:CurrencyType>
-        <e7:AccountFinancialStatus d4p1:nil="false">ValueHere</e7:AccountFinancialStatus>
-        <e7:Id d4p1:nil="false">ValueHere</e7:Id>
-        <e7:Language d4p1:nil="false">ValueHere</e7:Language>
-        <ForwardCompatibilityMap xmlns:e8="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-          <e8:KeyValuePairOfstringstring>
-            <e8:key d4p1:nil="false">ValueHere</e8:key>
-            <e8:value d4p1:nil="false">ValueHere</e8:value>
-          </e8:KeyValuePairOfstringstring>
+      <Account xmlns:e619="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" d4p1:type="-- derived type specified here with the appropriate prefix --" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e619:AccountType>ValueHere</e619:AccountType>
+        <e619:BillToCustomerId d4p1:nil="false">ValueHere</e619:BillToCustomerId>
+        <e619:CountryCode d4p1:nil="false">ValueHere</e619:CountryCode>
+        <e619:CurrencyType d4p1:nil="false">ValueHere</e619:CurrencyType>
+        <e619:AccountFinancialStatus d4p1:nil="false">ValueHere</e619:AccountFinancialStatus>
+        <e619:Id d4p1:nil="false">ValueHere</e619:Id>
+        <e619:Language d4p1:nil="false">ValueHere</e619:Language>
+        <ForwardCompatibilityMap xmlns:e620="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+          <e620:KeyValuePairOfstringstring>
+            <e620:key d4p1:nil="false">ValueHere</e620:key>
+            <e620:value d4p1:nil="false">ValueHere</e620:value>
+          </e620:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e7:LastModifiedByUserId d4p1:nil="false">ValueHere</e7:LastModifiedByUserId>
-        <e7:LastModifiedTime d4p1:nil="false">ValueHere</e7:LastModifiedTime>
-        <e7:Name d4p1:nil="false">ValueHere</e7:Name>
-        <e7:Number d4p1:nil="false">ValueHere</e7:Number>
-        <e7:ParentCustomerId>ValueHere</e7:ParentCustomerId>
-        <e7:PaymentMethodId d4p1:nil="false">ValueHere</e7:PaymentMethodId>
-        <e7:PaymentMethodType d4p1:nil="false">ValueHere</e7:PaymentMethodType>
-        <e7:PrimaryUserId d4p1:nil="false">ValueHere</e7:PrimaryUserId>
-        <e7:AccountLifeCycleStatus d4p1:nil="false">ValueHere</e7:AccountLifeCycleStatus>
-        <e7:TimeStamp d4p1:nil="false">ValueHere</e7:TimeStamp>
-        <e7:TimeZone d4p1:nil="false">ValueHere</e7:TimeZone>
-        <e7:PauseReason d4p1:nil="false">ValueHere</e7:PauseReason>
+        <e619:LastModifiedByUserId d4p1:nil="false">ValueHere</e619:LastModifiedByUserId>
+        <e619:LastModifiedTime d4p1:nil="false">ValueHere</e619:LastModifiedTime>
+        <e619:Name d4p1:nil="false">ValueHere</e619:Name>
+        <e619:Number d4p1:nil="false">ValueHere</e619:Number>
+        <e619:ParentCustomerId>ValueHere</e619:ParentCustomerId>
+        <e619:PaymentMethodId d4p1:nil="false">ValueHere</e619:PaymentMethodId>
+        <e619:PaymentMethodType d4p1:nil="false">ValueHere</e619:PaymentMethodType>
+        <e619:PrimaryUserId d4p1:nil="false">ValueHere</e619:PrimaryUserId>
+        <e619:AccountLifeCycleStatus d4p1:nil="false">ValueHere</e619:AccountLifeCycleStatus>
+        <e619:TimeStamp d4p1:nil="false">ValueHere</e619:TimeStamp>
+        <e619:TimeZone d4p1:nil="false">ValueHere</e619:TimeZone>
+        <e619:PauseReason d4p1:nil="false">ValueHere</e619:PauseReason>
         <!--These fields are applicable if the derived type attribute is set to AdvertiserAccount-->
-        <e7:LinkedAgencies d4p1:nil="false">
-          <e7:CustomerInfo>
-            <e7:Id d4p1:nil="false">ValueHere</e7:Id>
-            <e7:Name d4p1:nil="false">ValueHere</e7:Name>
-          </e7:CustomerInfo>
-        </e7:LinkedAgencies>
-        <e7:SalesHouseCustomerId d4p1:nil="false">ValueHere</e7:SalesHouseCustomerId>
-        <TaxInformation xmlns:e9="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-          <e9:KeyValuePairOfstringstring>
-            <e9:key d4p1:nil="false">ValueHere</e9:key>
-            <e9:value d4p1:nil="false">ValueHere</e9:value>
-          </e9:KeyValuePairOfstringstring>
+        <e619:LinkedAgencies d4p1:nil="false">
+          <e619:CustomerInfo>
+            <e619:Id d4p1:nil="false">ValueHere</e619:Id>
+            <e619:Name d4p1:nil="false">ValueHere</e619:Name>
+          </e619:CustomerInfo>
+        </e619:LinkedAgencies>
+        <e619:SalesHouseCustomerId d4p1:nil="false">ValueHere</e619:SalesHouseCustomerId>
+        <TaxInformation xmlns:e621="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+          <e621:KeyValuePairOfstringstring>
+            <e621:key d4p1:nil="false">ValueHere</e621:key>
+            <e621:value d4p1:nil="false">ValueHere</e621:value>
+          </e621:KeyValuePairOfstringstring>
         </TaxInformation>
-        <e7:BackUpPaymentInstrumentId d4p1:nil="false">ValueHere</e7:BackUpPaymentInstrumentId>
-        <e7:BillingThresholdAmount d4p1:nil="false">ValueHere</e7:BillingThresholdAmount>
-        <e7:BusinessAddress d4p1:nil="false">
-          <e7:City d4p1:nil="false">ValueHere</e7:City>
-          <e7:CountryCode d4p1:nil="false">ValueHere</e7:CountryCode>
-          <e7:Id d4p1:nil="false">ValueHere</e7:Id>
-          <e7:Line1 d4p1:nil="false">ValueHere</e7:Line1>
-          <e7:Line2 d4p1:nil="false">ValueHere</e7:Line2>
-          <e7:Line3 d4p1:nil="false">ValueHere</e7:Line3>
-          <e7:Line4 d4p1:nil="false">ValueHere</e7:Line4>
-          <e7:PostalCode d4p1:nil="false">ValueHere</e7:PostalCode>
-          <e7:StateOrProvince d4p1:nil="false">ValueHere</e7:StateOrProvince>
-          <e7:TimeStamp d4p1:nil="false">ValueHere</e7:TimeStamp>
-        </e7:BusinessAddress>
+        <e619:BackUpPaymentInstrumentId d4p1:nil="false">ValueHere</e619:BackUpPaymentInstrumentId>
+        <e619:BillingThresholdAmount d4p1:nil="false">ValueHere</e619:BillingThresholdAmount>
+        <e619:BusinessAddress d4p1:nil="false">
+          <e619:City d4p1:nil="false">ValueHere</e619:City>
+          <e619:CountryCode d4p1:nil="false">ValueHere</e619:CountryCode>
+          <e619:Id d4p1:nil="false">ValueHere</e619:Id>
+          <e619:Line1 d4p1:nil="false">ValueHere</e619:Line1>
+          <e619:Line2 d4p1:nil="false">ValueHere</e619:Line2>
+          <e619:Line3 d4p1:nil="false">ValueHere</e619:Line3>
+          <e619:Line4 d4p1:nil="false">ValueHere</e619:Line4>
+          <e619:PostalCode d4p1:nil="false">ValueHere</e619:PostalCode>
+          <e619:StateOrProvince d4p1:nil="false">ValueHere</e619:StateOrProvince>
+          <e619:TimeStamp d4p1:nil="false">ValueHere</e619:TimeStamp>
+        </e619:BusinessAddress>
       </Account>
     </GetAccountResponse>
   </s:Body>
@@ -135,7 +135,7 @@ public async Task<GetAccountResponse> GetAccountAsync(
 		AccountId = accountId
 	};
 
-	return (await CustomerManagement.CallAsync((s, r) => s.GetAccountAsync(r), request));
+	return (await CustomerManagementService.CallAsync((s, r) => s.GetAccountAsync(r), request));
 }
 ```
 ```java
@@ -146,7 +146,7 @@ static GetAccountResponse getAccount(
 
 	request.setAccountId(accountId);
 
-	return CustomerManagement.getService().getAccount(request);
+	return CustomerManagementService.getService().getAccount(request);
 }
 ```
 ```php

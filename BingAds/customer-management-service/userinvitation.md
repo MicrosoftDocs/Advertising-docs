@@ -38,15 +38,15 @@ For more information about user authentication, see [Authentication with OAuth](
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="id"></a>Id|A system generated unique identifier for the user invitation.<br/><br/>**Send:** Read-only|**long**|
-|<a name="firstname"></a>FirstName|The first name of the user. The first name is limited to 40 characters.<br/><br/>**Send:** Required|**string**|
-|<a name="lastname"></a>LastName|The last name of the user. The last name is limited to 40 characters.<br/><br/>**Send:** Required|**string**|
-|<a name="email"></a>Email|The email address corresponding to the user's Microsoft account. The address can contain a maximum of 100 characters.<br/><br/>**Send:** Required|**string**|
-|<a name="customerid"></a>CustomerId|The identifier of the customer this user is invited to manage. The *AccountIds* element determines which customer accounts the user can manage.<br/><br/>**Send:** Required|**long**|
-|<a name="role"></a>Role|The user role, which determines the level of access that the user has to the accounts specified in the AccountIds element.<br/><br/>**Send:** Required|[UserRole](userrole.md)|
 |<a name="accountids"></a>AccountIds|An array of identifiers of the accounts that the user can manage. To specify that the user can manage all current and future accounts of the customer to which the user belongs, set to NULL.<br /><br />Users with account level roles such as Advertiser Campaign Manager can be restricted to specific accounts. Users with customer level roles such as Super Admin can access all accounts within the user's customer, and their access cannot be restricted to specific accounts.<br /><br /> When attempting to restrict customer level user roles, for example attempting to restrict a Super Admin to specific accounts, the operation will not fail and the user will be granted access for all accounts within the specified customer.<br/><br/>**Send:** Optional|**long**|
+|<a name="customerid"></a>CustomerId|The identifier of the customer this user is invited to manage. The *AccountIds* element determines which customer accounts the user can manage.<br/><br/>**Send:** Required|**long**|
+|<a name="email"></a>Email|The email address corresponding to the user's Microsoft account. The address can contain a maximum of 100 characters.<br/><br/>**Send:** Required|**string**|
 |<a name="expirationdate"></a>ExpirationDate|The date and time that the user invitation will expire. The value is in Coordinated Universal Time (UTC).<br /><br /> The duration of a user invitation is subject to change, and currently set at 30 days. You cannot set or update this value.<br/><br/>**Send:** Read-only|**dateTime**|
+|<a name="firstname"></a>FirstName|The first name of the user. The first name is limited to 40 characters.<br/><br/>**Send:** Required|**string**|
+|<a name="id"></a>Id|A system generated unique identifier for the user invitation.<br/><br/>**Send:** Read-only|**long**|
+|<a name="lastname"></a>LastName|The last name of the user. The last name is limited to 40 characters.<br/><br/>**Send:** Required|**string**|
 |<a name="lcid"></a>Lcid|The locale to use when sending correspondence to the user by email or postal mail. The default is EnglishUS.<br/><br/>**Send:** Required|[LCID](lcid.md)|
+|<a name="role"></a>Role|The user role, which determines the level of access that the user has to the accounts specified in the AccountIds element.<br/><br/>**Send:** Required|[UserRole](userrole.md)|
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  

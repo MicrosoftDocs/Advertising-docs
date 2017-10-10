@@ -75,11 +75,11 @@ The following template shows the order of the [body](#response-body) and [header
           <AdFormatPreference d4p1:nil="false">ValueHere</AdFormatPreference>
           <DevicePreference d4p1:nil="false">ValueHere</DevicePreference>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e208="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e208:AppUrl>
-              <e208:OsType d4p1:nil="false">ValueHere</e208:OsType>
-              <e208:Url d4p1:nil="false">ValueHere</e208:Url>
-            </e208:AppUrl>
+          <FinalAppUrls xmlns:e820="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e820:AppUrl>
+              <e820:OsType d4p1:nil="false">ValueHere</e820:OsType>
+              <e820:Url d4p1:nil="false">ValueHere</e820:Url>
+            </e820:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -87,23 +87,23 @@ The following template shows the order of the [body](#response-body) and [header
           <FinalUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e209="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e209:KeyValuePairOfstringstring>
-              <e209:key d4p1:nil="false">ValueHere</e209:key>
-              <e209:value d4p1:nil="false">ValueHere</e209:value>
-            </e209:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e821="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e821:KeyValuePairOfstringstring>
+              <e821:key d4p1:nil="false">ValueHere</e821:key>
+              <e821:value d4p1:nil="false">ValueHere</e821:value>
+            </e821:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
           <Type d4p1:nil="false">ValueHere</Type>
-          <UrlCustomParameters xmlns:e210="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e210:Parameters d4p1:nil="false">
-              <e210:CustomParameter>
-                <e210:Key d4p1:nil="false">ValueHere</e210:Key>
-                <e210:Value d4p1:nil="false">ValueHere</e210:Value>
-              </e210:CustomParameter>
-            </e210:Parameters>
+          <UrlCustomParameters xmlns:e822="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e822:Parameters d4p1:nil="false">
+              <e822:CustomParameter>
+                <e822:Key d4p1:nil="false">ValueHere</e822:Key>
+                <e822:Value d4p1:nil="false">ValueHere</e822:Value>
+              </e822:CustomParameter>
+            </e822:Parameters>
           </UrlCustomParameters>
           <!--These fields are applicable if the derived type attribute is set to TextAd-->
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
@@ -148,7 +148,7 @@ public async Task<GetAdsByAdGroupIdResponse> GetAdsByAdGroupIdAsync(
 		AdTypes = adTypes
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetAdsByAdGroupIdAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetAdsByAdGroupIdAsync(r), request));
 }
 ```
 ```java
@@ -161,7 +161,7 @@ static GetAdsByAdGroupIdResponse getAdsByAdGroupId(
 	request.setAdGroupId(adGroupId);
 	request.setAdTypes(adTypes);
 
-	return CampaignManagement.getService().getAdsByAdGroupId(request);
+	return CampaignManagementService.getService().getAdsByAdGroupId(request);
 }
 ```
 ```php

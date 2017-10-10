@@ -89,7 +89,7 @@ public async Task<PollGenerateReportResponse> PollGenerateReportAsync(
 		ReportRequestId = reportRequestId
 	};
 
-	return (await Reporting.CallAsync((s, r) => s.PollGenerateReportAsync(r), request));
+	return (await ReportingService.CallAsync((s, r) => s.PollGenerateReportAsync(r), request));
 }
 ```
 ```java
@@ -100,7 +100,7 @@ static PollGenerateReportResponse pollGenerateReport(
 
 	request.setReportRequestId(reportRequestId);
 
-	return Reporting.getService().pollGenerateReport(request);
+	return ReportingService.getService().pollGenerateReport(request);
 }
 ```
 ```php

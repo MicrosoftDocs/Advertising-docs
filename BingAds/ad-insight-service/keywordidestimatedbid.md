@@ -26,8 +26,8 @@ Defines an object that contains the identifier of the keyword and the suggested 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordid"></a>KeywordId|The identifier of the keyword to which the suggested bid applies.|**long**|
 |<a name="keywordestimatedbid"></a>KeywordEstimatedBid|An object that contains the keyword string and the suggested bid value for each match type.|[KeywordEstimatedBid](keywordestimatedbid.md)|
+|<a name="keywordid"></a>KeywordId|The identifier of the keyword to which the suggested bid applies.|**long**|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

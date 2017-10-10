@@ -35,17 +35,17 @@ Defines an object that contains the estimated search results position and estima
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="matchtype"></a>MatchType|The keyword match type used to determine the estimates.|[MatchType](matchtype.md)|
-|<a name="minclicksperweek"></a>MinClicksPerWeek|The estimated minimum number of clicks per week.|**double**|
-|<a name="maxclicksperweek"></a>MaxClicksPerWeek|The estimated maximum number of clicks per week.|**double**|
 |<a name="averagecpc"></a>AverageCPC|The estimated average CPC.<br /><br />The formula used to calculate the average CPC is (maximum total cost / maximum number of clicks).|**double**|
-|<a name="minimpressionsperweek"></a>MinImpressionsPerWeek|The estimated minimum number of impressions per week.|**long**|
-|<a name="maximpressionsperweek"></a>MaxImpressionsPerWeek|The estimated maximum number of impressions per week.|**long**|
 |<a name="ctr"></a>CTR|The estimated CTR.<br /><br />The formula used to calculate the CTR is (maximum number of clicks / maximum number of impressions) &#42; 100.|**double**|
-|<a name="mintotalcostperweek"></a>MinTotalCostPerWeek|The estimated minimum cost per week.|**double**|
-|<a name="maxtotalcostperweek"></a>MaxTotalCostPerWeek|The estimated maximum cost per week.|**double**|
 |<a name="currency"></a>Currency|The monetary unit of the cost values, such as *AverageCPC*.|[Currency](currency.md)|
 |<a name="estimatedadposition"></a>EstimatedAdPosition|The position in the search results given the specified bid.|**double**|
+|<a name="matchtype"></a>MatchType|The keyword match type used to determine the estimates.|[MatchType](matchtype.md)|
+|<a name="maxclicksperweek"></a>MaxClicksPerWeek|The estimated maximum number of clicks per week.|**double**|
+|<a name="maximpressionsperweek"></a>MaxImpressionsPerWeek|The estimated maximum number of impressions per week.|**long**|
+|<a name="maxtotalcostperweek"></a>MaxTotalCostPerWeek|The estimated maximum cost per week.|**double**|
+|<a name="minclicksperweek"></a>MinClicksPerWeek|The estimated minimum number of clicks per week.|**double**|
+|<a name="minimpressionsperweek"></a>MinImpressionsPerWeek|The estimated minimum number of impressions per week.|**long**|
+|<a name="mintotalcostperweek"></a>MinTotalCostPerWeek|The estimated minimum cost per week.|**double**|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

@@ -16,10 +16,10 @@ The *GetKeywordDemographicsRequest* object defines the [body](#request-body) and
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
+|<a name="device"></a>Device|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword demographics data for the device types that you specify only, if available.|**string**|
 |<a name="keywords"></a>Keywords|An array of keywords for which you want to get demographics data. The data is broken out by device type. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string**|
 |<a name="language"></a>Language|The language in which the keywords are written.<br /><br />For possible values, see [Ad Languages](~/guides/ad-languages.md).|**string**|
 |<a name="publishercountry"></a>PublisherCountry|The country code of the country/region to use as the source of the demographics data.<br /><br />The country/region that you specify must support the language specified in the *Language* element.<br /><br />For possible values, see [Geographical Location Codes](~/guides/ad-languages.md).|**string**|
-|<a name="device"></a>Device|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword demographics data for the device types that you specify only, if available.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -76,24 +76,24 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordDemographicsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordDemographicResult xmlns:e77="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e77:KeywordDemographicResult>
-          <e77:Keyword d4p1:nil="false">ValueHere</e77:Keyword>
-          <e77:KeywordDemographics d4p1:nil="false">
-            <e77:KeywordDemographic>
-              <e77:Device d4p1:nil="false">ValueHere</e77:Device>
-              <e77:Age18_24>ValueHere</e77:Age18_24>
-              <e77:Age25_34>ValueHere</e77:Age25_34>
-              <e77:Age35_49>ValueHere</e77:Age35_49>
-              <e77:Age50_64>ValueHere</e77:Age50_64>
-              <e77:Age65Plus>ValueHere</e77:Age65Plus>
-              <e77:AgeUnknown>ValueHere</e77:AgeUnknown>
-              <e77:Female>ValueHere</e77:Female>
-              <e77:Male>ValueHere</e77:Male>
-              <e77:GenderUnknown>ValueHere</e77:GenderUnknown>
-            </e77:KeywordDemographic>
-          </e77:KeywordDemographics>
-        </e77:KeywordDemographicResult>
+      <KeywordDemographicResult xmlns:e689="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e689:KeywordDemographicResult>
+          <e689:Keyword d4p1:nil="false">ValueHere</e689:Keyword>
+          <e689:KeywordDemographics d4p1:nil="false">
+            <e689:KeywordDemographic>
+              <e689:Device d4p1:nil="false">ValueHere</e689:Device>
+              <e689:Age18_24>ValueHere</e689:Age18_24>
+              <e689:Age25_34>ValueHere</e689:Age25_34>
+              <e689:Age35_49>ValueHere</e689:Age35_49>
+              <e689:Age50_64>ValueHere</e689:Age50_64>
+              <e689:Age65Plus>ValueHere</e689:Age65Plus>
+              <e689:AgeUnknown>ValueHere</e689:AgeUnknown>
+              <e689:Female>ValueHere</e689:Female>
+              <e689:Male>ValueHere</e689:Male>
+              <e689:GenderUnknown>ValueHere</e689:GenderUnknown>
+            </e689:KeywordDemographic>
+          </e689:KeywordDemographics>
+        </e689:KeywordDemographicResult>
       </KeywordDemographicResult>
     </GetKeywordDemographicsResponse>
   </s:Body>
@@ -117,7 +117,7 @@ public async Task<GetKeywordDemographicsResponse> GetKeywordDemographicsAsync(
 		Device = device
 	};
 
-	return (await AdInsight.CallAsync((s, r) => s.GetKeywordDemographicsAsync(r), request));
+	return (await AdInsightService.CallAsync((s, r) => s.GetKeywordDemographicsAsync(r), request));
 }
 ```
 ```java
@@ -134,7 +134,7 @@ static GetKeywordDemographicsResponse getKeywordDemographics(
 	request.setPublisherCountry(publisherCountry);
 	request.setDevice(device);
 
-	return AdInsight.getService().getKeywordDemographics(request);
+	return AdInsightService.getService().getKeywordDemographics(request);
 }
 ```
 ```php

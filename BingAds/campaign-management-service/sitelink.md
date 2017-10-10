@@ -10,7 +10,7 @@ description: Defines a site link to include in an ad.
 Defines a site link to include in an ad. The link should take the user to content in your website that is relevant in the context of the ad.
 
 > [!NOTE]
-> During calendar year 2017, Bing Ads upgraded all [SiteLinksAdExtension](../campaign-management-service/sitelinksadextension.md) objects (contains multiple sitelinks per ad extension) to [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md) objects (contains one sitelink per ad extension).
+> During calendar year 2017, Bing Ads upgraded all [SiteLinksAdExtension](../campaign-management-service/sitelinksadextension.md) objects (contains multiple sitelinks per ad extension) to [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md) objects (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions.
 
 ## Syntax
 ```xml

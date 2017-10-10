@@ -83,7 +83,7 @@ public async Task<GetCustomerPilotFeaturesResponse> GetCustomerPilotFeaturesAsyn
 		CustomerId = customerId
 	};
 
-	return (await CustomerManagement.CallAsync((s, r) => s.GetCustomerPilotFeaturesAsync(r), request));
+	return (await CustomerManagementService.CallAsync((s, r) => s.GetCustomerPilotFeaturesAsync(r), request));
 }
 ```
 ```java
@@ -94,7 +94,7 @@ static GetCustomerPilotFeaturesResponse getCustomerPilotFeatures(
 
 	request.setCustomerId(customerId);
 
-	return CustomerManagement.getService().getCustomerPilotFeatures(request);
+	return CustomerManagementService.getService().getCustomerPilotFeatures(request);
 }
 ```
 ```php

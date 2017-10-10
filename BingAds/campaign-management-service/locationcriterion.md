@@ -11,7 +11,7 @@ Defines a criterion that can be used to show ads to users in a specific location
 
 With location criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about:
 *  All available countries/regions
-*  Selected cities, zip codes, metro areas, states/provinces, and countries/regions
+*  Selected cities, postal codes, metro areas, counties, states/provinces, and countries/regions
 
 Each location criterion defines a location code for the accompanying criterion bid adjustment. 
 
@@ -46,7 +46,7 @@ Also note that you must consider the location, negative location, and radius cri
 |-----------|---------------|-------------|
 |<a name="displayname"></a>DisplayName|The location display name.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 |<a name="enclosedlocationids"></a>EnclosedLocationIds|Reserved for internal use.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**long**|
-|<a name="locationid"></a>LocationId|The unique Bing Ads identifier for the location where you want to show your ads.<br /><br />For geographical location codes, see [Geographical Location Codes](~/guides/geographical-location-codes.md).<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting.|**long**|
+|<a name="locationid"></a>LocationId|The unique Bing Ads identifier for the location where you want to show your ads.<br /><br />For geographical location codes, see [GetGeoLocationsFileUrl](getgeolocationsfileurl.md) and [Geographical Location Codes](~/guides/geographical-location-codes.md).<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting.|**long**|
 |<a name="locationtype"></a>LocationType|The location type.<br/><br/>Possible values include, but are not limited to *City*, *Country*, *MetroArea*, *PostalCode*, and *State*.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only |**string**|
 
 The [LocationCriterion](locationcriterion.md) object has [Inherited Elements](#inheritedelements).

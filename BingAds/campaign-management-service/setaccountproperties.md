@@ -85,7 +85,7 @@ public async Task<SetAccountPropertiesResponse> SetAccountPropertiesAsync(
 		AccountProperties = accountProperties
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.SetAccountPropertiesAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.SetAccountPropertiesAsync(r), request));
 }
 ```
 ```java
@@ -96,7 +96,7 @@ static SetAccountPropertiesResponse setAccountProperties(
 
 	request.setAccountProperties(accountProperties);
 
-	return CampaignManagement.getService().setAccountProperties(request);
+	return CampaignManagementService.getService().setAccountProperties(request);
 }
 ```
 ```php

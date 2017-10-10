@@ -79,11 +79,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e259="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e259:KeyValuePairOfstringstring>
-              <e259:key d4p1:nil="false">ValueHere</e259:key>
-              <e259:value d4p1:nil="false">ValueHere</e259:value>
-            </e259:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e871="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e871:KeyValuePairOfstringstring>
+              <e871:key d4p1:nil="false">ValueHere</e871:key>
+              <e871:value d4p1:nil="false">ValueHere</e871:value>
+            </e871:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -114,7 +114,7 @@ public async Task<SetLabelAssociationsResponse> SetLabelAssociationsAsync(
 		LabelAssociations = labelAssociations
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.SetLabelAssociationsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.SetLabelAssociationsAsync(r), request));
 }
 ```
 ```java
@@ -127,7 +127,7 @@ static SetLabelAssociationsResponse setLabelAssociations(
 	request.setEntityType(entityType);
 	request.setLabelAssociations(labelAssociations);
 
-	return CampaignManagement.getService().setLabelAssociations(request);
+	return CampaignManagementService.getService().setLabelAssociations(request);
 }
 ```
 ```php

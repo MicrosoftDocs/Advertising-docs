@@ -97,11 +97,11 @@ The following template shows the order of the [body](#response-body) and [header
           </BiddingScheme>
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e238="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e238:AppUrl>
-              <e238:OsType d4p1:nil="false">ValueHere</e238:OsType>
-              <e238:Url d4p1:nil="false">ValueHere</e238:Url>
-            </e238:AppUrl>
+          <FinalAppUrls xmlns:e850="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e850:AppUrl>
+              <e850:OsType d4p1:nil="false">ValueHere</e850:OsType>
+              <e850:Url d4p1:nil="false">ValueHere</e850:Url>
+            </e850:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -109,11 +109,11 @@ The following template shows the order of the [body](#response-body) and [header
           <FinalUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e239="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e239:KeyValuePairOfstringstring>
-              <e239:key d4p1:nil="false">ValueHere</e239:key>
-              <e239:value d4p1:nil="false">ValueHere</e239:value>
-            </e239:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e851="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e851:KeyValuePairOfstringstring>
+              <e851:key d4p1:nil="false">ValueHere</e851:key>
+              <e851:value d4p1:nil="false">ValueHere</e851:value>
+            </e851:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <MatchType d4p1:nil="false">ValueHere</MatchType>
@@ -123,13 +123,13 @@ The following template shows the order of the [body](#response-body) and [header
           <Status d4p1:nil="false">ValueHere</Status>
           <Text d4p1:nil="false">ValueHere</Text>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e240="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e240:Parameters d4p1:nil="false">
-              <e240:CustomParameter>
-                <e240:Key d4p1:nil="false">ValueHere</e240:Key>
-                <e240:Value d4p1:nil="false">ValueHere</e240:Value>
-              </e240:CustomParameter>
-            </e240:Parameters>
+          <UrlCustomParameters xmlns:e852="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e852:Parameters d4p1:nil="false">
+              <e852:CustomParameter>
+                <e852:Key d4p1:nil="false">ValueHere</e852:Key>
+                <e852:Value d4p1:nil="false">ValueHere</e852:Value>
+              </e852:CustomParameter>
+            </e852:Parameters>
           </UrlCustomParameters>
         </Keyword>
       </Keywords>
@@ -153,7 +153,7 @@ public async Task<GetKeywordsByEditorialStatusResponse> GetKeywordsByEditorialSt
 		ReturnAdditionalFields = returnAdditionalFields
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetKeywordsByEditorialStatusAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetKeywordsByEditorialStatusAsync(r), request));
 }
 ```
 ```java
@@ -168,7 +168,7 @@ static GetKeywordsByEditorialStatusResponse getKeywordsByEditorialStatus(
 	request.setEditorialStatus(editorialStatus);
 	request.setReturnAdditionalFields(returnAdditionalFields);
 
-	return CampaignManagement.getService().getKeywordsByEditorialStatus(request);
+	return CampaignManagementService.getService().getKeywordsByEditorialStatus(request);
 }
 ```
 ```php

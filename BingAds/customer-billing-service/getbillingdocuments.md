@@ -71,12 +71,12 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBillingDocumentsResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <BillingDocuments xmlns:e52="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e52:BillingDocument>
-          <e52:Data d4p1:nil="false">ValueHere</e52:Data>
-          <e52:Id>ValueHere</e52:Id>
-          <e52:Type>ValueHere</e52:Type>
-        </e52:BillingDocument>
+      <BillingDocuments xmlns:e664="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e664:BillingDocument>
+          <e664:Data d4p1:nil="false">ValueHere</e664:Data>
+          <e664:Id>ValueHere</e664:Id>
+          <e664:Type>ValueHere</e664:Type>
+        </e664:BillingDocument>
       </BillingDocuments>
     </GetBillingDocumentsResponse>
   </s:Body>
@@ -96,7 +96,7 @@ public async Task<GetBillingDocumentsResponse> GetBillingDocumentsAsync(
 		Type = type
 	};
 
-	return (await CustomerBilling.CallAsync((s, r) => s.GetBillingDocumentsAsync(r), request));
+	return (await CustomerBillingService.CallAsync((s, r) => s.GetBillingDocumentsAsync(r), request));
 }
 ```
 ```java
@@ -109,7 +109,7 @@ static GetBillingDocumentsResponse getBillingDocuments(
 	request.setDocumentIds(documentIds);
 	request.setType(type);
 
-	return CustomerBilling.getService().getBillingDocuments(request);
+	return CustomerBillingService.getService().getBillingDocuments(request);
 }
 ```
 ```php

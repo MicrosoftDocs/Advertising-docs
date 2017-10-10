@@ -130,7 +130,7 @@ public async Task<DownloadCampaignsByAccountIdsResponse> DownloadCampaignsByAcco
 		PerformanceStatsDateRange = performanceStatsDateRange
 	};
 
-	return (await Bulk.CallAsync((s, r) => s.DownloadCampaignsByAccountIdsAsync(r), request));
+	return (await BulkService.CallAsync((s, r) => s.DownloadCampaignsByAccountIdsAsync(r), request));
 }
 ```
 ```java
@@ -155,7 +155,7 @@ static DownloadCampaignsByAccountIdsResponse downloadCampaignsByAccountIds(
 	request.setLastSyncTimeInUTC(lastSyncTimeInUTC);
 	request.setPerformanceStatsDateRange(performanceStatsDateRange);
 
-	return Bulk.getService().downloadCampaignsByAccountIds(request);
+	return BulkService.getService().downloadCampaignsByAccountIds(request);
 }
 ```
 ```php

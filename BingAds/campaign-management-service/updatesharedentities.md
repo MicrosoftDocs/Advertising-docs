@@ -53,11 +53,11 @@ The following template shows the order of the [body](#request-body) and [header]
       <SharedEntities i:nil="false">
         <SharedEntity i:type="-- derived type specified here with the appropriate prefix --">
           <AssociationCount i:nil="false">ValueHere</AssociationCount>
-          <ForwardCompatibilityMap xmlns:e304="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e304:KeyValuePairOfstringstring>
-              <e304:key i:nil="false">ValueHere</e304:key>
-              <e304:value i:nil="false">ValueHere</e304:value>
-            </e304:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e916="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e916:KeyValuePairOfstringstring>
+              <e916:key i:nil="false">ValueHere</e916:key>
+              <e916:value i:nil="false">ValueHere</e916:value>
+            </e916:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Name i:nil="false">ValueHere</Name>
@@ -87,11 +87,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e305="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e305:KeyValuePairOfstringstring>
-              <e305:key d4p1:nil="false">ValueHere</e305:key>
-              <e305:value d4p1:nil="false">ValueHere</e305:value>
-            </e305:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e917="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e917:KeyValuePairOfstringstring>
+              <e917:key d4p1:nil="false">ValueHere</e917:key>
+              <e917:value d4p1:nil="false">ValueHere</e917:value>
+            </e917:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -120,7 +120,7 @@ public async Task<UpdateSharedEntitiesResponse> UpdateSharedEntitiesAsync(
 		SharedEntities = sharedEntities
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.UpdateSharedEntitiesAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.UpdateSharedEntitiesAsync(r), request));
 }
 ```
 ```java
@@ -131,7 +131,7 @@ static UpdateSharedEntitiesResponse updateSharedEntities(
 
 	request.setSharedEntities(sharedEntities);
 
-	return CampaignManagement.getService().updateSharedEntities(request);
+	return CampaignManagementService.getService().updateSharedEntities(request);
 }
 ```
 ```php

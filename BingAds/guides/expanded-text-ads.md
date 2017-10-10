@@ -2,12 +2,13 @@
 title: "Expanded Text Ads"
 ms.service: "bing-ads"
 ms.topic: "article"
+author: eric-urban
+ms.author: eur
 ---
 # Expanded Text Ads
 The expanded text ad format works seamlessly on mobile, tablet and desktop devices so you can focus more on crafting your longer ad copy and optimizing your ad text to better engage your customers before they click your ad.
 
-> [!NOTE]
-> Before you can use expanded text ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](~/guides/url-tracking-upgraded-urls.md).
+![expandedtextad](../guides/media/expanded-text-ad.png)
 
 ## <a name="bulk"></a>Bulk API for Expanded Text Ads
 The following Bulk record is added for managing expanded text ads.

@@ -16,8 +16,8 @@ The *SetNegativeSitesToAdGroupsRequest* object defines the [body](#request-body)
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="campaignid"></a>CampaignId|The identifier of the campaign that contains the ad groups.|**long**|
 |<a name="adgroupnegativesites"></a>AdGroupNegativeSites|An array of [AdGroupNegativeSites](../campaign-management-service/adgroupnegativesites.md) objects that identify the ad groups to update with the specified negative site URLs.<br /><br />The array can contain a maximum of 5,000 objects.<br /><br />The total number of URLs that you can specify per request for all ad groups combined is 30,000. For example, if you specify 2,500 URLs per ad group, the maximum number of [AdGroupNegativeSites](../campaign-management-service/adgroupnegativesites.md) objects that you should pass is 12.|[AdGroupNegativeSites](adgroupnegativesites.md) array|
+|<a name="campaignid"></a>CampaignId|The identifier of the campaign that contains the ad groups.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -81,11 +81,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e260="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e260:KeyValuePairOfstringstring>
-              <e260:key d4p1:nil="false">ValueHere</e260:key>
-              <e260:value d4p1:nil="false">ValueHere</e260:value>
-            </e260:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e872="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e872:KeyValuePairOfstringstring>
+              <e872:key d4p1:nil="false">ValueHere</e872:key>
+              <e872:value d4p1:nil="false">ValueHere</e872:value>
+            </e872:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -116,7 +116,7 @@ public async Task<SetNegativeSitesToAdGroupsResponse> SetNegativeSitesToAdGroups
 		AdGroupNegativeSites = adGroupNegativeSites
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.SetNegativeSitesToAdGroupsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.SetNegativeSitesToAdGroupsAsync(r), request));
 }
 ```
 ```java
@@ -129,7 +129,7 @@ static SetNegativeSitesToAdGroupsResponse setNegativeSitesToAdGroups(
 	request.setCampaignId(campaignId);
 	request.setAdGroupNegativeSites(adGroupNegativeSites);
 
-	return CampaignManagement.getService().setNegativeSitesToAdGroups(request);
+	return CampaignManagementService.getService().setNegativeSitesToAdGroups(request);
 }
 ```
 ```php

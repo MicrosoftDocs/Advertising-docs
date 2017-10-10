@@ -61,31 +61,31 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <AddClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <ClientLinks xmlns:e1="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e1:ClientLink>
-          <e1:ClientAccountId i:nil="false">ValueHere</e1:ClientAccountId>
-          <e1:ClientAccountNumber i:nil="false">ValueHere</e1:ClientAccountNumber>
-          <e1:ManagingCustomerId i:nil="false">ValueHere</e1:ManagingCustomerId>
-          <e1:ManagingCustomerNumber i:nil="false">ValueHere</e1:ManagingCustomerNumber>
-          <e1:Note i:nil="false">ValueHere</e1:Note>
-          <e1:Name i:nil="false">ValueHere</e1:Name>
-          <e1:InviterEmail i:nil="false">ValueHere</e1:InviterEmail>
-          <e1:InviterName i:nil="false">ValueHere</e1:InviterName>
-          <e1:InviterPhone i:nil="false">ValueHere</e1:InviterPhone>
-          <e1:IsBillToClient>ValueHere</e1:IsBillToClient>
-          <e1:StartDate i:nil="false">ValueHere</e1:StartDate>
-          <e1:Status i:nil="false">ValueHere</e1:Status>
-          <e1:SuppressNotification>ValueHere</e1:SuppressNotification>
-          <e1:LastModifiedDateTime>ValueHere</e1:LastModifiedDateTime>
-          <e1:LastModifiedByUserId>ValueHere</e1:LastModifiedByUserId>
-          <e1:Timestamp i:nil="false">ValueHere</e1:Timestamp>
-          <ForwardCompatibilityMap xmlns:e2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e2:KeyValuePairOfstringstring>
-              <e2:key i:nil="false">ValueHere</e2:key>
-              <e2:value i:nil="false">ValueHere</e2:value>
-            </e2:KeyValuePairOfstringstring>
+      <ClientLinks xmlns:e613="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e613:ClientLink>
+          <e613:ClientAccountId i:nil="false">ValueHere</e613:ClientAccountId>
+          <e613:ClientAccountNumber i:nil="false">ValueHere</e613:ClientAccountNumber>
+          <e613:ManagingCustomerId i:nil="false">ValueHere</e613:ManagingCustomerId>
+          <e613:ManagingCustomerNumber i:nil="false">ValueHere</e613:ManagingCustomerNumber>
+          <e613:Note i:nil="false">ValueHere</e613:Note>
+          <e613:Name i:nil="false">ValueHere</e613:Name>
+          <e613:InviterEmail i:nil="false">ValueHere</e613:InviterEmail>
+          <e613:InviterName i:nil="false">ValueHere</e613:InviterName>
+          <e613:InviterPhone i:nil="false">ValueHere</e613:InviterPhone>
+          <e613:IsBillToClient>ValueHere</e613:IsBillToClient>
+          <e613:StartDate i:nil="false">ValueHere</e613:StartDate>
+          <e613:Status i:nil="false">ValueHere</e613:Status>
+          <e613:SuppressNotification>ValueHere</e613:SuppressNotification>
+          <e613:LastModifiedDateTime>ValueHere</e613:LastModifiedDateTime>
+          <e613:LastModifiedByUserId>ValueHere</e613:LastModifiedByUserId>
+          <e613:Timestamp i:nil="false">ValueHere</e613:Timestamp>
+          <ForwardCompatibilityMap xmlns:e614="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e614:KeyValuePairOfstringstring>
+              <e614:key i:nil="false">ValueHere</e614:key>
+              <e614:value i:nil="false">ValueHere</e614:value>
+            </e614:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-        </e1:ClientLink>
+        </e613:ClientLink>
       </ClientLinks>
     </AddClientLinksRequest>
   </s:Body>
@@ -102,21 +102,21 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <AddClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <OperationErrors xmlns:e3="https://bingads.microsoft.com/Customer/v11/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e3:OperationError>
-          <e3:Code>ValueHere</e3:Code>
-          <e3:Details d4p1:nil="false">ValueHere</e3:Details>
-          <e3:Message d4p1:nil="false">ValueHere</e3:Message>
-        </e3:OperationError>
+      <OperationErrors xmlns:e615="https://bingads.microsoft.com/Customer/v11/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e615:OperationError>
+          <e615:Code>ValueHere</e615:Code>
+          <e615:Details d4p1:nil="false">ValueHere</e615:Details>
+          <e615:Message d4p1:nil="false">ValueHere</e615:Message>
+        </e615:OperationError>
       </OperationErrors>
-      <PartialErrors xmlns:e4="https://bingads.microsoft.com/Customer/v11/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e4:ArrayOfOperationError>
-          <e4:OperationError>
-            <e4:Code>ValueHere</e4:Code>
-            <e4:Details d4p1:nil="false">ValueHere</e4:Details>
-            <e4:Message d4p1:nil="false">ValueHere</e4:Message>
-          </e4:OperationError>
-        </e4:ArrayOfOperationError>
+      <PartialErrors xmlns:e616="https://bingads.microsoft.com/Customer/v11/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e616:ArrayOfOperationError>
+          <e616:OperationError>
+            <e616:Code>ValueHere</e616:Code>
+            <e616:Details d4p1:nil="false">ValueHere</e616:Details>
+            <e616:Message d4p1:nil="false">ValueHere</e616:Message>
+          </e616:OperationError>
+        </e616:ArrayOfOperationError>
       </PartialErrors>
     </AddClientLinksResponse>
   </s:Body>
@@ -134,7 +134,7 @@ public async Task<AddClientLinksResponse> AddClientLinksAsync(
 		ClientLinks = clientLinks
 	};
 
-	return (await CustomerManagement.CallAsync((s, r) => s.AddClientLinksAsync(r), request));
+	return (await CustomerManagementService.CallAsync((s, r) => s.AddClientLinksAsync(r), request));
 }
 ```
 ```java
@@ -145,7 +145,7 @@ static AddClientLinksResponse addClientLinks(
 
 	request.setClientLinks(clientLinks);
 
-	return CustomerManagement.getService().addClientLinks(request);
+	return CustomerManagementService.getService().addClientLinks(request);
 }
 ```
 ```php

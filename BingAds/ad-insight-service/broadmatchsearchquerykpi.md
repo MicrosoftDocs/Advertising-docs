@@ -29,8 +29,8 @@ Defines an object that contains search query statistics of including broad match
 |<a name="averagectr"></a>AverageCTR|The average CTR for the search query.|**double**|
 |<a name="clicks"></a>Clicks|The clicks for the search query.|**double**|
 |<a name="impressions"></a>Impressions|The impressions for the search query.|**long**|
-|<a name="srpv"></a>SRPV|The SRPV for the search query.|**long**|
 |<a name="searchquery"></a>SearchQuery|The search query corresponding to the keyword.|**string**|
+|<a name="srpv"></a>SRPV|The SRPV for the search query.|**long**|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

@@ -85,7 +85,7 @@ public async Task<DeleteAccountResponse> DeleteAccountAsync(
 		TimeStamp = timeStamp
 	};
 
-	return (await CustomerManagement.CallAsync((s, r) => s.DeleteAccountAsync(r), request));
+	return (await CustomerManagementService.CallAsync((s, r) => s.DeleteAccountAsync(r), request));
 }
 ```
 ```java
@@ -98,7 +98,7 @@ static DeleteAccountResponse deleteAccount(
 	request.setAccountId(accountId);
 	request.setTimeStamp(timeStamp);
 
-	return CustomerManagement.getService().deleteAccount(request);
+	return CustomerManagementService.getService().deleteAccount(request);
 }
 ```
 ```php

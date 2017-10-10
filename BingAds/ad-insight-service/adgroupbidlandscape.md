@@ -29,11 +29,11 @@ Defines an object that contains a list of estimated clicks, cost, and impression
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupid"></a>AdGroupId|The ad group identifier.|**long**|
 |<a name="adgroupbidlandscapetype"></a>AdGroupBidLandscapeType|Indicates whether all or a subset of an ad group's existing keywords were used to determine the bid landscape.|[AdGroupBidLandscapeType](adgroupbidlandscapetype.md)|
-|<a name="startdate"></a>StartDate|The first date used to calculate the bid landscape. The start date is usually seven days prior to the end date.<br /><br />The difference between the start and end dates could be less than seven if performance data is not available, for example with a new ad group.|[DayMonthAndYear](daymonthandyear.md)|
-|<a name="enddate"></a>EndDate|The most recent date used to calculate the bid landscape. The end date should be approximately 2 days prior to today's date when the service is called.|[DayMonthAndYear](daymonthandyear.md)|
+|<a name="adgroupid"></a>AdGroupId|The ad group identifier.|**long**|
 |<a name="bidlandscapepoints"></a>BidLandscapePoints|The list of the total estimated clicks, cost, and impressions from *StartDate* to *EndDate* given the suggested bid.|[BidLandscapePoint](bidlandscapepoint.md) array|
+|<a name="enddate"></a>EndDate|The most recent date used to calculate the bid landscape. The end date should be approximately 2 days prior to today's date when the service is called.|[DayMonthAndYear](daymonthandyear.md)|
+|<a name="startdate"></a>StartDate|The first date used to calculate the bid landscape. The start date is usually seven days prior to the end date.<br /><br />The difference between the start and end dates could be less than seven if performance data is not available, for example with a new ad group.|[DayMonthAndYear](daymonthandyear.md)|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

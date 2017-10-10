@@ -80,7 +80,7 @@ public async Task<GetBSCCountriesResponse> GetBSCCountriesAsync()
 	{
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetBSCCountriesAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetBSCCountriesAsync(r), request));
 }
 ```
 ```java
@@ -89,7 +89,7 @@ static GetBSCCountriesResponse getBSCCountries() throws RemoteException, Excepti
 	GetBSCCountriesRequest request = new GetBSCCountriesRequest();
 
 
-	return CampaignManagement.getService().getBSCCountries(request);
+	return CampaignManagementService.getService().getBSCCountries(request);
 }
 ```
 ```php

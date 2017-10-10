@@ -97,7 +97,7 @@ public async Task<AddMediaResponse> AddMediaAsync(
 		Media = media
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.AddMediaAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.AddMediaAsync(r), request));
 }
 ```
 ```java
@@ -110,7 +110,7 @@ static AddMediaResponse addMedia(
 	request.setAccountId(accountId);
 	request.setMedia(media);
 
-	return CampaignManagement.getService().addMedia(request);
+	return CampaignManagementService.getService().addMedia(request);
 }
 ```
 ```php

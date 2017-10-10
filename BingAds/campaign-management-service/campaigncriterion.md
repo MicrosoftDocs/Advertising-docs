@@ -46,7 +46,7 @@ If you generate the SOAP manually, use the *type* attribute of the `<CampaignCri
 ```xml
 <CampaignCriterion i:type="BiddableCampaignCriterion" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
     <Id i:nil="true" />
-    <Status i:nil=?true? />
+    <Status i:nil="true" />
      . . .
 </CampaignCriterion>
 ```

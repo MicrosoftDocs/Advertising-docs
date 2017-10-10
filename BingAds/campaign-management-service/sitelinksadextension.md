@@ -10,7 +10,7 @@ description: Defines an object with *multiple* sitelinks per ad extension.
 Defines an object with *multiple* sitelinks per ad extension. You can use the sitelinks to promote certain products, services, or sections of your website and take potential customers to exactly the information they were searching for. This can increase both click-through-rate and conversions.
 
 > [!NOTE]
-> During calendar year 2017, Bing Ads upgraded all [SiteLinksAdExtension](../campaign-management-service/sitelinksadextension.md) objects (contains multiple sitelinks per ad extension) to [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md) objects (contains one sitelink per ad extension).
+> During calendar year 2017, Bing Ads upgraded all [SiteLinksAdExtension](../campaign-management-service/sitelinksadextension.md) objects (contains multiple sitelinks per ad extension) to [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md) objects (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions.
 
 ## Syntax
 ```xml
@@ -46,7 +46,7 @@ The [SiteLinksAdExtension](sitelinksadextension.md) object derives from the [AdE
 |<a name="scheduling"></a>Scheduling|This element is not supported at the parent site link ad extension level. <br/><br/> Whereas this element is not applicable for the *SiteLinksAdExtension* object, you can specify a *Scheduling* element within each individual [SiteLink](../campaign-management-service/sitelink.md) object (nested list within the *SiteLinksAdExtension*). For most other ad extension types including [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md), the [AdExtension](../campaign-management-service/adextension.md) object will include the *Scheduling* element.<br/><br/>**Add:** Not applicable.<br/>**Update:** Not applicable.|[Schedule](schedule.md)|
 |<a name="status"></a>Status|The status of the ad extension. The value will always be *Active* because the Campaign Management service does not return deleted ad extensions.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[AdExtensionStatus](adextensionstatus.md)|
 |<a name="type"></a>Type|The type of the ad extension. This value is *SiteLinksAdExtension* when you retrieve a sitelinks ad extension. <br/><br/>**Add:** Read-only<br/>**Update:** Read-only<br/><br/>For more information about ad extension types, see the [Ad Extension Data Object Remarks](../campaign-management-service/adextension.md#remarks).|**string**|
-|<a name="version"></a>Version|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it?s revised.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**int**|
+|<a name="version"></a>Version|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it's revised.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**int**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

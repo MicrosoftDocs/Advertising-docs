@@ -65,11 +65,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordIdeaCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordIdeaCategories xmlns:e78="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e78:KeywordIdeaCategory>
-          <e78:CategoryId>ValueHere</e78:CategoryId>
-          <e78:CategoryName d4p1:nil="false">ValueHere</e78:CategoryName>
-        </e78:KeywordIdeaCategory>
+      <KeywordIdeaCategories xmlns:e690="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e690:KeywordIdeaCategory>
+          <e690:CategoryId>ValueHere</e690:CategoryId>
+          <e690:CategoryName d4p1:nil="false">ValueHere</e690:CategoryName>
+        </e690:KeywordIdeaCategory>
       </KeywordIdeaCategories>
     </GetKeywordIdeaCategoriesResponse>
   </s:Body>
@@ -85,7 +85,7 @@ public async Task<GetKeywordIdeaCategoriesResponse> GetKeywordIdeaCategoriesAsyn
 	{
 	};
 
-	return (await AdInsight.CallAsync((s, r) => s.GetKeywordIdeaCategoriesAsync(r), request));
+	return (await AdInsightService.CallAsync((s, r) => s.GetKeywordIdeaCategoriesAsync(r), request));
 }
 ```
 ```java
@@ -94,7 +94,7 @@ static GetKeywordIdeaCategoriesResponse getKeywordIdeaCategories() throws Remote
 	GetKeywordIdeaCategoriesRequest request = new GetKeywordIdeaCategoriesRequest();
 
 
-	return AdInsight.getService().getKeywordIdeaCategories(request);
+	return AdInsightService.getService().getKeywordIdeaCategories(request);
 }
 ```
 ```php

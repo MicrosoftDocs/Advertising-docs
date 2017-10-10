@@ -89,11 +89,11 @@ The following template shows the order of the [body](#response-body) and [header
               <Details d4p1:nil="false">ValueHere</Details>
               <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
               <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-              <ForwardCompatibilityMap xmlns:e171="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-                <e171:KeyValuePairOfstringstring>
-                  <e171:key d4p1:nil="false">ValueHere</e171:key>
-                  <e171:value d4p1:nil="false">ValueHere</e171:value>
-                </e171:KeyValuePairOfstringstring>
+              <ForwardCompatibilityMap xmlns:e783="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+                <e783:KeyValuePairOfstringstring>
+                  <e783:key d4p1:nil="false">ValueHere</e783:key>
+                  <e783:value d4p1:nil="false">ValueHere</e783:value>
+                </e783:KeyValuePairOfstringstring>
               </ForwardCompatibilityMap>
               <Index>ValueHere</Index>
               <Message d4p1:nil="false">ValueHere</Message>
@@ -110,11 +110,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e172="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e172:KeyValuePairOfstringstring>
-              <e172:key d4p1:nil="false">ValueHere</e172:key>
-              <e172:value d4p1:nil="false">ValueHere</e172:value>
-            </e172:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e784="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e784:KeyValuePairOfstringstring>
+              <e784:key d4p1:nil="false">ValueHere</e784:key>
+              <e784:value d4p1:nil="false">ValueHere</e784:value>
+            </e784:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -137,7 +137,7 @@ public async Task<DeleteNegativeKeywordsFromEntitiesResponse> DeleteNegativeKeyw
 		EntityNegativeKeywords = entityNegativeKeywords
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.DeleteNegativeKeywordsFromEntitiesAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.DeleteNegativeKeywordsFromEntitiesAsync(r), request));
 }
 ```
 ```java
@@ -148,7 +148,7 @@ static DeleteNegativeKeywordsFromEntitiesResponse deleteNegativeKeywordsFromEnti
 
 	request.setEntityNegativeKeywords(entityNegativeKeywords);
 
-	return CampaignManagement.getService().deleteNegativeKeywordsFromEntities(request);
+	return CampaignManagementService.getService().deleteNegativeKeywordsFromEntities(request);
 }
 ```
 ```php

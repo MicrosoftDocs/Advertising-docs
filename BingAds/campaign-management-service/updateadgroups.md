@@ -16,8 +16,8 @@ The *UpdateAdGroupsRequest* object defines the [body](#request-body) and [header
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad groups to update.|**long**|
 |<a name="adgroups"></a>AdGroups|An array that can contain a maximum of 1,000 [AdGroup](../campaign-management-service/adgroup.md) objects to update.|[AdGroup](adgroup.md) array|
+|<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad groups to update.|**long**|
 |<a name="updatenativebidadjustment"></a>UpdateNativeBidAdjustment|Determines whether or not the service should use the *NativeBidAdjustment* element of each specified [AdGroup](../campaign-management-service/adgroup.md) during update.  If set to True, the *NativeBidAdjustment* will be used, and otherwise it will be ignored and your existing native bid adjustment setting will be retained during update.<br /><br />The default value is False if  this element is not set.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -89,11 +89,11 @@ The following template shows the order of the [body](#request-body) and [header]
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e280="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e280:KeyValuePairOfstringstring>
-              <e280:key i:nil="false">ValueHere</e280:key>
-              <e280:value i:nil="false">ValueHere</e280:value>
-            </e280:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e892="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e892:KeyValuePairOfstringstring>
+              <e892:key i:nil="false">ValueHere</e892:key>
+              <e892:value i:nil="false">ValueHere</e892:value>
+            </e892:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Language i:nil="false">ValueHere</Language>
@@ -125,13 +125,13 @@ The following template shows the order of the [body](#request-body) and [header]
           </StartDate>
           <Status i:nil="false">ValueHere</Status>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e281="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e281:Parameters i:nil="false">
-              <e281:CustomParameter>
-                <e281:Key i:nil="false">ValueHere</e281:Key>
-                <e281:Value i:nil="false">ValueHere</e281:Value>
-              </e281:CustomParameter>
-            </e281:Parameters>
+          <UrlCustomParameters xmlns:e893="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            <e893:Parameters i:nil="false">
+              <e893:CustomParameter>
+                <e893:Key i:nil="false">ValueHere</e893:Key>
+                <e893:Value i:nil="false">ValueHere</e893:Value>
+              </e893:CustomParameter>
+            </e893:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
@@ -157,11 +157,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e282="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e282:KeyValuePairOfstringstring>
-              <e282:key d4p1:nil="false">ValueHere</e282:key>
-              <e282:value d4p1:nil="false">ValueHere</e282:value>
-            </e282:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e894="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e894:KeyValuePairOfstringstring>
+              <e894:key d4p1:nil="false">ValueHere</e894:key>
+              <e894:value d4p1:nil="false">ValueHere</e894:value>
+            </e894:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -194,7 +194,7 @@ public async Task<UpdateAdGroupsResponse> UpdateAdGroupsAsync(
 		UpdateNativeBidAdjustment = updateNativeBidAdjustment
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.UpdateAdGroupsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.UpdateAdGroupsAsync(r), request));
 }
 ```
 ```java
@@ -209,7 +209,7 @@ static UpdateAdGroupsResponse updateAdGroups(
 	request.setAdGroups(adGroups);
 	request.setUpdateNativeBidAdjustment(updateNativeBidAdjustment);
 
-	return CampaignManagement.getService().updateAdGroups(request);
+	return CampaignManagementService.getService().updateAdGroups(request);
 }
 ```
 ```php

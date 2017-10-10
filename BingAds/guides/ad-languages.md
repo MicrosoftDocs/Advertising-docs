@@ -17,7 +17,7 @@ Language options in Bing Ads give you control over your advertising campaign and
 Your ad language setting determines the language you will use when you write your ads and should be the language of your customers. The campaign level languages setting applies to all ad groups in the campaign; However, If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The ad group level language setting applies to all ads in an ad group. 
 
 > [!NOTE] 
-> Not everyone has the Campaign languages feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has the Campaign languages feature yet. If you don't, don't worry. It's coming soon.
 
 Your ad language in combination with your location targeting determines who will see your ads. To learn more, see the Bing Ads help article [How does ad language and location targeting affect who can see my ads?](https://help.bingads.microsoft.com/#apex/3/en/51100/0)
 

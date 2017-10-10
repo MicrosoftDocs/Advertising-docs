@@ -19,14 +19,14 @@ The *GetEstimatedBidByKeywordsRequest* object defines the [body](#request-body) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
+|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group whose performance data is used to help determine how well the keyword might perform in the context of the ad group. Specifying an ad group helps improve the accuracy of the suggested bid.<br /><br />If you specify an ad group, you must specify the campaign that it belongs to.|**long**|
+|<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad group specified in *AdGroupId*. If you do not specify an ad group, the campaign's performance data is used to help determine how well the keyword might perform in the context of the campaign.<br /><br /> Specifying a campaign and ad group helps improve the accuracy of the suggested bid. If neither *AdGroupId* or *CampaignId* are specified, the operation uses the specified *CustomerAccountId* header element to help determine how well the keyword might perform in the context of the account.|**long**|
+|<a name="currency"></a>Currency|The monetary unit to use to calculate the cost estimates and suggested bid value.<br /><br />If not set, the service determines the currency from the account specified in the *CustomerAccountId* header element. If neither *Currency* or  *CustomerAccountId* is set, the service uses USDollar.|[Currency](currency.md)|
+|<a name="entitylevelbid"></a>EntityLevelBid|Determines whether to return estimates for keyword level bids, ad group level bids, or both.<br /><br />- Set *EntityLevelBid* to Keyword to get an array of [KeywordEstimatedBid](../ad-insight-service/keywordestimatedbid.md) corresponding to the specified keywords.<br /><br />- Set *EntityLevelBid* to AdGroup to get one [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md) for the specified ad group.<br /><br />- Set *EntityLevelBid* to AllEntities to get an array of [KeywordEstimatedBid](../ad-insight-service/keywordestimatedbid.md) for keywords and one [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md) for an ad group.<br /><br />If you do not set *EntityLevelBid*, the default is to return only an array of [KeywordEstimatedBid](../ad-insight-service/keywordestimatedbid.md), or the equivalent of setting *EntityLevelBid* to Keyword.<br /><br />If you set *EntityLevelBid* to any value other thanKeyword, AdGroup, or AllEntities, the service will return *Code 3501* with *ErrorCode CampaignServiceBidLevelInvalid*.|**string**|
 |<a name="keywords"></a>Keywords|A list of [KeywordAndMatchType](../ad-insight-service/keywordandmatchtype.md) data objects for which you want to get suggested bid values. You may specify a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|[KeywordAndMatchType](keywordandmatchtype.md) array|
-|<a name="targetpositionforads"></a>TargetPositionForAds|The position where you want your ads to appear in the search results.<br /><br />The default value is *MainLine1*.|[TargetAdPosition](targetadposition.md)|
 |<a name="language"></a>Language|The language used to help determine  the country to use as the source of data for estimating the bids, if the *PublisherCountries* element is not specified.<br /><br /> The language must be supported in each of the countries in the *PublisherCountries* element.<br /><br />For possible values and information about the relationship between languages and countries, see [Ad Languages](~/guides/ad-languages.md).<br /><br />The default value is determined by the *PublisherCountries* element and the location targets associated with the specified *AdGroupId* and *CampaignId*. For more information, see the [Remarks](#remarks) section below.|**string**|
 |<a name="publishercountries"></a>PublisherCountries|The country codes of the countries to use as the source of data for estimating the bids.<br /><br /> All of the countries must support the language specified in the *Language* element.<br /><br />You may specify one or more country codes. For possible values, see [Geographical Location Codes](~/guides/geographical-location-codes.md).<br /><br />The default value is determined by the *Language* element and the location targets associated with the specified *AdGroupId* and *CampaignId*. For more information, see the [Remarks](#remarks) section below.|**string**|
-|<a name="currency"></a>Currency|The monetary unit to use to calculate the cost estimates and suggested bid value.<br /><br />If not set, the service determines the currency from the account specified in the *CustomerAccountId* header element. If neither *Currency* or  *CustomerAccountId* is set, the service uses USDollar.|[Currency](currency.md)|
-|<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad group specified in *AdGroupId*. If you do not specify an ad group, the campaign's performance data is used to help determine how well the keyword might perform in the context of the campaign.<br /><br /> Specifying a campaign and ad group helps improve the accuracy of the suggested bid. If neither *AdGroupId* or *CampaignId* are specified, the operation uses the specified *CustomerAccountId* header element to help determine how well the keyword might perform in the context of the account.|**long**|
-|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group whose performance data is used to help determine how well the keyword might perform in the context of the ad group. Specifying an ad group helps improve the accuracy of the suggested bid.<br /><br />If you specify an ad group, you must specify the campaign that it belongs to.|**long**|
-|<a name="entitylevelbid"></a>EntityLevelBid|Determines whether to return estimates for keyword level bids, ad group level bids, or both.<br /><br />- Set *EntityLevelBid* to Keyword to get an array of [KeywordEstimatedBid](../ad-insight-service/keywordestimatedbid.md) corresponding to the specified keywords.<br /><br />- Set *EntityLevelBid* to AdGroup to get one [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md) for the specified ad group.<br /><br />- Set *EntityLevelBid* to AllEntities to get an array of [KeywordEstimatedBid](../ad-insight-service/keywordestimatedbid.md) for keywords and one [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md) for an ad group.<br /><br />If you do not set *EntityLevelBid*, the default is to return only an array of [KeywordEstimatedBid](../ad-insight-service/keywordestimatedbid.md), or the equivalent of setting *EntityLevelBid* to Keyword.<br /><br />If you set *EntityLevelBid* to any value other thanKeyword, AdGroup, or AllEntities, the service will return *Code 3501* with *ErrorCode CampaignServiceBidLevelInvalid*.|**string**|
+|<a name="targetpositionforads"></a>TargetPositionForAds|The position where you want your ads to appear in the search results.<br /><br />The default value is *MainLine1*.|[TargetAdPosition](targetadposition.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -38,8 +38,8 @@ The *GetEstimatedBidByKeywordsResponse* object defines the [body](#response-body
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordestimatedbids"></a>KeywordEstimatedBids|An array of [KeywordEstimatedBid](../ad-insight-service/keywordestimatedbid.md) data objects. The array contains an item for each keyword specified in the request.  If the keyword is not valid, the corresponding item in the array will be null.<br /><br />Each [KeywordEstimatedBid](../ad-insight-service/keywordestimatedbid.md) contains a keyword and *EstimatedPositions* element. If data is available for the keyword, the [EstimatedPositionAndTraffic](../ad-insight-service/estimatedpositionandtraffic.md) will provide the suggested bid value that could have resulted in an ad appearing in the targeted position of the search results. Otherwise, the *EstimatedPositions* element will be set to null.|[KeywordEstimatedBid](keywordestimatedbid.md) array|
 |<a name="adgroupestimatedbid"></a>AdGroupEstimatedBid|Contains estimates of clicks, average cost per click (CPC), impressions, click-through rate (CTR), and total cost for the specified ad group if you would use the suggested bid.<br /><br /> The *MatchType* value within the [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md) will always be Aggregate. In this context, it represents the default search bid for an ad group.|[EstimatedBidAndTraffic](estimatedbidandtraffic.md)|
+|<a name="keywordestimatedbids"></a>KeywordEstimatedBids|An array of [KeywordEstimatedBid](../ad-insight-service/keywordestimatedbid.md) data objects. The array contains an item for each keyword specified in the request.  If the keyword is not valid, the corresponding item in the array will be null.<br /><br />Each [KeywordEstimatedBid](../ad-insight-service/keywordestimatedbid.md) contains a keyword and *EstimatedPositions* element. If data is available for the keyword, the [EstimatedPositionAndTraffic](../ad-insight-service/estimatedpositionandtraffic.md) will provide the suggested bid value that could have resulted in an ad appearing in the targeted position of the search results. Otherwise, the *EstimatedPositions* element will be set to null.|[KeywordEstimatedBid](keywordestimatedbid.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -61,13 +61,13 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <GetEstimatedBidByKeywordsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Keywords xmlns:e67="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Message" i:nil="false">
-        <e67:KeywordAndMatchType>
-          <e67:KeywordText i:nil="false">ValueHere</e67:KeywordText>
-          <e67:MatchTypes i:nil="false">
+      <Keywords xmlns:e679="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Message" i:nil="false">
+        <e679:KeywordAndMatchType>
+          <e679:KeywordText i:nil="false">ValueHere</e679:KeywordText>
+          <e679:MatchTypes i:nil="false">
             <MatchType>ValueHere</MatchType>
-          </e67:MatchTypes>
-        </e67:KeywordAndMatchType>
+          </e679:MatchTypes>
+        </e679:KeywordAndMatchType>
       </Keywords>
       <TargetPositionForAds>ValueHere</TargetPositionForAds>
       <Language i:nil="false">ValueHere</Language>
@@ -93,38 +93,38 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedBidByKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedBids xmlns:e68="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e68:KeywordEstimatedBid>
-          <e68:Keyword d4p1:nil="false">ValueHere</e68:Keyword>
-          <e68:EstimatedBids d4p1:nil="false">
-            <e68:EstimatedBidAndTraffic>
-              <e68:MinClicksPerWeek d4p1:nil="false">ValueHere</e68:MinClicksPerWeek>
-              <e68:MaxClicksPerWeek d4p1:nil="false">ValueHere</e68:MaxClicksPerWeek>
-              <e68:AverageCPC d4p1:nil="false">ValueHere</e68:AverageCPC>
-              <e68:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e68:MinImpressionsPerWeek>
-              <e68:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e68:MaxImpressionsPerWeek>
-              <e68:CTR d4p1:nil="false">ValueHere</e68:CTR>
-              <e68:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e68:MinTotalCostPerWeek>
-              <e68:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e68:MaxTotalCostPerWeek>
-              <e68:Currency>ValueHere</e68:Currency>
-              <e68:MatchType>ValueHere</e68:MatchType>
-              <e68:EstimatedMinBid>ValueHere</e68:EstimatedMinBid>
-            </e68:EstimatedBidAndTraffic>
-          </e68:EstimatedBids>
-        </e68:KeywordEstimatedBid>
+      <KeywordEstimatedBids xmlns:e680="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e680:KeywordEstimatedBid>
+          <e680:Keyword d4p1:nil="false">ValueHere</e680:Keyword>
+          <e680:EstimatedBids d4p1:nil="false">
+            <e680:EstimatedBidAndTraffic>
+              <e680:MinClicksPerWeek d4p1:nil="false">ValueHere</e680:MinClicksPerWeek>
+              <e680:MaxClicksPerWeek d4p1:nil="false">ValueHere</e680:MaxClicksPerWeek>
+              <e680:AverageCPC d4p1:nil="false">ValueHere</e680:AverageCPC>
+              <e680:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e680:MinImpressionsPerWeek>
+              <e680:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e680:MaxImpressionsPerWeek>
+              <e680:CTR d4p1:nil="false">ValueHere</e680:CTR>
+              <e680:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e680:MinTotalCostPerWeek>
+              <e680:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e680:MaxTotalCostPerWeek>
+              <e680:Currency>ValueHere</e680:Currency>
+              <e680:MatchType>ValueHere</e680:MatchType>
+              <e680:EstimatedMinBid>ValueHere</e680:EstimatedMinBid>
+            </e680:EstimatedBidAndTraffic>
+          </e680:EstimatedBids>
+        </e680:KeywordEstimatedBid>
       </KeywordEstimatedBids>
-      <AdGroupEstimatedBid xmlns:e69="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e69:MinClicksPerWeek d4p1:nil="false">ValueHere</e69:MinClicksPerWeek>
-        <e69:MaxClicksPerWeek d4p1:nil="false">ValueHere</e69:MaxClicksPerWeek>
-        <e69:AverageCPC d4p1:nil="false">ValueHere</e69:AverageCPC>
-        <e69:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e69:MinImpressionsPerWeek>
-        <e69:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e69:MaxImpressionsPerWeek>
-        <e69:CTR d4p1:nil="false">ValueHere</e69:CTR>
-        <e69:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e69:MinTotalCostPerWeek>
-        <e69:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e69:MaxTotalCostPerWeek>
-        <e69:Currency>ValueHere</e69:Currency>
-        <e69:MatchType>ValueHere</e69:MatchType>
-        <e69:EstimatedMinBid>ValueHere</e69:EstimatedMinBid>
+      <AdGroupEstimatedBid xmlns:e681="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e681:MinClicksPerWeek d4p1:nil="false">ValueHere</e681:MinClicksPerWeek>
+        <e681:MaxClicksPerWeek d4p1:nil="false">ValueHere</e681:MaxClicksPerWeek>
+        <e681:AverageCPC d4p1:nil="false">ValueHere</e681:AverageCPC>
+        <e681:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e681:MinImpressionsPerWeek>
+        <e681:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e681:MaxImpressionsPerWeek>
+        <e681:CTR d4p1:nil="false">ValueHere</e681:CTR>
+        <e681:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e681:MinTotalCostPerWeek>
+        <e681:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e681:MaxTotalCostPerWeek>
+        <e681:Currency>ValueHere</e681:Currency>
+        <e681:MatchType>ValueHere</e681:MatchType>
+        <e681:EstimatedMinBid>ValueHere</e681:EstimatedMinBid>
       </AdGroupEstimatedBid>
     </GetEstimatedBidByKeywordsResponse>
   </s:Body>
@@ -156,7 +156,7 @@ public async Task<GetEstimatedBidByKeywordsResponse> GetEstimatedBidByKeywordsAs
 		EntityLevelBid = entityLevelBid
 	};
 
-	return (await AdInsight.CallAsync((s, r) => s.GetEstimatedBidByKeywordsAsync(r), request));
+	return (await AdInsightService.CallAsync((s, r) => s.GetEstimatedBidByKeywordsAsync(r), request));
 }
 ```
 ```java
@@ -181,7 +181,7 @@ static GetEstimatedBidByKeywordsResponse getEstimatedBidByKeywords(
 	request.setAdGroupId(adGroupId);
 	request.setEntityLevelBid(entityLevelBid);
 
-	return AdInsight.getService().getEstimatedBidByKeywords(request);
+	return AdInsightService.getService().getEstimatedBidByKeywords(request);
 }
 ```
 ```php

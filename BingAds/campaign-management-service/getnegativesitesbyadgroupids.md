@@ -16,8 +16,8 @@ The *GetNegativeSitesByAdGroupIdsRequest* object defines the [body](#request-bod
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="campaignid"></a>CampaignId|The identifier of the campaign that contains the ad groups.|**long**|
 |<a name="adgroupids"></a>AdGroupIds|An array of identifiers of the ad groups that contain the negative site URLs that you want to get.<br /><br />The call fails if the sum of all negative site URLs defined in the specified list of ad groups exceeds 30,000 URLs. To ensure that the call succeeds, consider limiting the number of ad groups to 15.|**long**|
+|<a name="campaignid"></a>CampaignId|The identifier of the campaign that contains the ad groups.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -85,11 +85,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e252="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e252:KeyValuePairOfstringstring>
-              <e252:key d4p1:nil="false">ValueHere</e252:key>
-              <e252:value d4p1:nil="false">ValueHere</e252:value>
-            </e252:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e864="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e864:KeyValuePairOfstringstring>
+              <e864:key d4p1:nil="false">ValueHere</e864:key>
+              <e864:value d4p1:nil="false">ValueHere</e864:value>
+            </e864:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -120,7 +120,7 @@ public async Task<GetNegativeSitesByAdGroupIdsResponse> GetNegativeSitesByAdGrou
 		AdGroupIds = adGroupIds
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetNegativeSitesByAdGroupIdsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetNegativeSitesByAdGroupIdsAsync(r), request));
 }
 ```
 ```java
@@ -133,7 +133,7 @@ static GetNegativeSitesByAdGroupIdsResponse getNegativeSitesByAdGroupIds(
 	request.setCampaignId(campaignId);
 	request.setAdGroupIds(adGroupIds);
 
-	return CampaignManagement.getService().getNegativeSitesByAdGroupIds(request);
+	return CampaignManagementService.getService().getNegativeSitesByAdGroupIds(request);
 }
 ```
 ```php

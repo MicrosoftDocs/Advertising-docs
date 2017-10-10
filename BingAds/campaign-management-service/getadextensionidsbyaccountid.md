@@ -93,7 +93,7 @@ public async Task<GetAdExtensionIdsByAccountIdResponse> GetAdExtensionIdsByAccou
 		AssociationType = associationType
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetAdExtensionIdsByAccountIdAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetAdExtensionIdsByAccountIdAsync(r), request));
 }
 ```
 ```java
@@ -108,7 +108,7 @@ static GetAdExtensionIdsByAccountIdResponse getAdExtensionIdsByAccountId(
 	request.setAdExtensionType(adExtensionType);
 	request.setAssociationType(associationType);
 
-	return CampaignManagement.getService().getAdExtensionIdsByAccountId(request);
+	return CampaignManagementService.getService().getAdExtensionIdsByAccountId(request);
 }
 ```
 ```php

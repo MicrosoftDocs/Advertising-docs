@@ -83,11 +83,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e245="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e245:KeyValuePairOfstringstring>
-              <e245:key d4p1:nil="false">ValueHere</e245:key>
-              <e245:value d4p1:nil="false">ValueHere</e245:value>
-            </e245:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e857="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e857:KeyValuePairOfstringstring>
+              <e857:key d4p1:nil="false">ValueHere</e857:key>
+              <e857:value d4p1:nil="false">ValueHere</e857:value>
+            </e857:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -118,7 +118,7 @@ public async Task<GetLabelAssociationsByEntityIdsResponse> GetLabelAssociationsB
 		EntityType = entityType
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetLabelAssociationsByEntityIdsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetLabelAssociationsByEntityIdsAsync(r), request));
 }
 ```
 ```java
@@ -131,7 +131,7 @@ static GetLabelAssociationsByEntityIdsResponse getLabelAssociationsByEntityIds(
 	request.setEntityIds(entityIds);
 	request.setEntityType(entityType);
 
-	return CampaignManagement.getService().getLabelAssociationsByEntityIds(request);
+	return CampaignManagementService.getService().getLabelAssociationsByEntityIds(request);
 }
 ```
 ```php

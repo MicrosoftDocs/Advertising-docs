@@ -79,11 +79,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e303="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e303:KeyValuePairOfstringstring>
-              <e303:key d4p1:nil="false">ValueHere</e303:key>
-              <e303:value d4p1:nil="false">ValueHere</e303:value>
-            </e303:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e915="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e915:KeyValuePairOfstringstring>
+              <e915:key d4p1:nil="false">ValueHere</e915:key>
+              <e915:value d4p1:nil="false">ValueHere</e915:value>
+            </e915:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -112,7 +112,7 @@ public async Task<UpdateLabelsResponse> UpdateLabelsAsync(
 		Labels = labels
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.UpdateLabelsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.UpdateLabelsAsync(r), request));
 }
 ```
 ```java
@@ -123,7 +123,7 @@ static UpdateLabelsResponse updateLabels(
 
 	request.setLabels(labels);
 
-	return CampaignManagement.getService().updateLabels(request);
+	return CampaignManagementService.getService().updateLabels(request);
 }
 ```
 ```php

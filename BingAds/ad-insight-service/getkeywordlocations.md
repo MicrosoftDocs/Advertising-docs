@@ -16,13 +16,13 @@ The *GetKeywordLocationsRequest* object defines the [body](#request-body) and [h
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
+|<a name="device"></a>Device|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword locations data for only the device types that you specify, if available.|**string**|
 |<a name="keywords"></a>Keywords|An array of keywords for which you want to get geographical location information. The data is broken out by device type. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string**|
 |<a name="language"></a>Language|The language in which the keywords are written.<br /><br />For possible values, see [Ad Languages](~/guides/ad-languages.md).|**string**|
-|<a name="publishercountry"></a>PublisherCountry|The country code of the country/region to use as the source of the location data.<br /><br />The country/region that you specify must support the language specified in the *Language* element.<br /><br />For possible values, see [Geographical Location Codes](~/guides/ad-languages.md).|**string**|
-|<a name="device"></a>Device|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword locations data for only the device types that you specify, if available.|**string**|
 |<a name="level"></a>Level|The level at which to aggregate the geographical location data. The following are the possible values:<br /><br />0 - Country<br /><br />1 ? State/Province<br /><br />2 ? Metropolitan area<br /><br />3 - City<br /><br />The default value is 1 (State/Province).|**int**|
-|<a name="parentcountry"></a>ParentCountry|The country from which the search originated.<br /><br />For possible values, see [Geographical Location Codes](~/guides/geographical-location-codes.md).<br /><br />The default is US.|**string**|
 |<a name="maxlocations"></a>MaxLocations|The maximum number of locations to return. You can request a maximum of 10 locations.<br /><br />The default value is 10.|**int**|
+|<a name="parentcountry"></a>ParentCountry|The country from which the search originated.<br /><br />For possible values, see [Geographical Location Codes](~/guides/geographical-location-codes.md).<br /><br />The default is US.|**string**|
+|<a name="publishercountry"></a>PublisherCountry|The country code of the country/region to use as the source of the location data.<br /><br />The country/region that you specify must support the language specified in the *Language* element.<br /><br />For possible values, see [Geographical Location Codes](~/guides/ad-languages.md).|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -82,17 +82,17 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordLocationsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordLocationResult xmlns:e89="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e89:KeywordLocationResult>
-          <e89:Keyword d4p1:nil="false">ValueHere</e89:Keyword>
-          <e89:KeywordLocations d4p1:nil="false">
-            <e89:KeywordLocation>
-              <e89:Device d4p1:nil="false">ValueHere</e89:Device>
-              <e89:Location d4p1:nil="false">ValueHere</e89:Location>
-              <e89:Percentage>ValueHere</e89:Percentage>
-            </e89:KeywordLocation>
-          </e89:KeywordLocations>
-        </e89:KeywordLocationResult>
+      <KeywordLocationResult xmlns:e701="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e701:KeywordLocationResult>
+          <e701:Keyword d4p1:nil="false">ValueHere</e701:Keyword>
+          <e701:KeywordLocations d4p1:nil="false">
+            <e701:KeywordLocation>
+              <e701:Device d4p1:nil="false">ValueHere</e701:Device>
+              <e701:Location d4p1:nil="false">ValueHere</e701:Location>
+              <e701:Percentage>ValueHere</e701:Percentage>
+            </e701:KeywordLocation>
+          </e701:KeywordLocations>
+        </e701:KeywordLocationResult>
       </KeywordLocationResult>
     </GetKeywordLocationsResponse>
   </s:Body>
@@ -122,7 +122,7 @@ public async Task<GetKeywordLocationsResponse> GetKeywordLocationsAsync(
 		MaxLocations = maxLocations
 	};
 
-	return (await AdInsight.CallAsync((s, r) => s.GetKeywordLocationsAsync(r), request));
+	return (await AdInsightService.CallAsync((s, r) => s.GetKeywordLocationsAsync(r), request));
 }
 ```
 ```java
@@ -145,7 +145,7 @@ static GetKeywordLocationsResponse getKeywordLocations(
 	request.setParentCountry(parentCountry);
 	request.setMaxLocations(maxLocations);
 
-	return AdInsight.getService().getKeywordLocations(request);
+	return AdInsightService.getService().getKeywordLocations(request);
 }
 ```
 ```php

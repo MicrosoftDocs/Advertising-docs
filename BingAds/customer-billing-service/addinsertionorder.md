@@ -28,8 +28,8 @@ The *AddInsertionOrderResponse* object defines the [body](#response-body) and [h
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="insertionorderid"></a>InsertionOrderId|A *long* value that represents the identifier for the insertion order that was added.|**long**|
 |<a name="createtime"></a>CreateTime|Identifies the server time in UTC when the insertion order was added.|**dateTime**|
+|<a name="insertionorderid"></a>InsertionOrderId|A *long* value that represents the identifier for the insertion order that was added.|**long**|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -49,23 +49,23 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <AddInsertionOrderRequest xmlns="https://bingads.microsoft.com/Billing/v11">
-      <InsertionOrder xmlns:e51="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e51:AccountId>ValueHere</e51:AccountId>
-        <e51:BalanceAmount i:nil="false">ValueHere</e51:BalanceAmount>
-        <e51:BookingCountryCode i:nil="false">ValueHere</e51:BookingCountryCode>
-        <e51:Comment i:nil="false">ValueHere</e51:Comment>
-        <e51:EndDate>ValueHere</e51:EndDate>
-        <e51:InsertionOrderId i:nil="false">ValueHere</e51:InsertionOrderId>
-        <e51:LastModifiedByUserId i:nil="false">ValueHere</e51:LastModifiedByUserId>
-        <e51:LastModifiedTime i:nil="false">ValueHere</e51:LastModifiedTime>
-        <e51:NotificationThreshold i:nil="false">ValueHere</e51:NotificationThreshold>
-        <e51:ReferenceId i:nil="false">ValueHere</e51:ReferenceId>
-        <e51:SpendCapAmount>ValueHere</e51:SpendCapAmount>
-        <e51:StartDate>ValueHere</e51:StartDate>
-        <e51:Name i:nil="false">ValueHere</e51:Name>
-        <e51:Status i:nil="false">ValueHere</e51:Status>
-        <e51:PurchaseOrder i:nil="false">ValueHere</e51:PurchaseOrder>
-        <e51:ChangePendingReview i:nil="false">ValueHere</e51:ChangePendingReview>
+      <InsertionOrder xmlns:e663="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e663:AccountId>ValueHere</e663:AccountId>
+        <e663:BalanceAmount i:nil="false">ValueHere</e663:BalanceAmount>
+        <e663:BookingCountryCode i:nil="false">ValueHere</e663:BookingCountryCode>
+        <e663:Comment i:nil="false">ValueHere</e663:Comment>
+        <e663:EndDate>ValueHere</e663:EndDate>
+        <e663:InsertionOrderId i:nil="false">ValueHere</e663:InsertionOrderId>
+        <e663:LastModifiedByUserId i:nil="false">ValueHere</e663:LastModifiedByUserId>
+        <e663:LastModifiedTime i:nil="false">ValueHere</e663:LastModifiedTime>
+        <e663:NotificationThreshold i:nil="false">ValueHere</e663:NotificationThreshold>
+        <e663:ReferenceId i:nil="false">ValueHere</e663:ReferenceId>
+        <e663:SpendCapAmount>ValueHere</e663:SpendCapAmount>
+        <e663:StartDate>ValueHere</e663:StartDate>
+        <e663:Name i:nil="false">ValueHere</e663:Name>
+        <e663:Status i:nil="false">ValueHere</e663:Status>
+        <e663:PurchaseOrder i:nil="false">ValueHere</e663:PurchaseOrder>
+        <e663:ChangePendingReview i:nil="false">ValueHere</e663:ChangePendingReview>
       </InsertionOrder>
     </AddInsertionOrderRequest>
   </s:Body>
@@ -100,7 +100,7 @@ public async Task<AddInsertionOrderResponse> AddInsertionOrderAsync(
 		InsertionOrder = insertionOrder
 	};
 
-	return (await CustomerBilling.CallAsync((s, r) => s.AddInsertionOrderAsync(r), request));
+	return (await CustomerBillingService.CallAsync((s, r) => s.AddInsertionOrderAsync(r), request));
 }
 ```
 ```java
@@ -111,7 +111,7 @@ static AddInsertionOrderResponse addInsertionOrder(
 
 	request.setInsertionOrder(insertionOrder);
 
-	return CustomerBilling.getService().addInsertionOrder(request);
+	return CustomerBillingService.getService().addInsertionOrder(request);
 }
 ```
 ```php

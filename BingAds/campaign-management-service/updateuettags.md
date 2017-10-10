@@ -84,11 +84,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e306="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e306:KeyValuePairOfstringstring>
-              <e306:key d4p1:nil="false">ValueHere</e306:key>
-              <e306:value d4p1:nil="false">ValueHere</e306:value>
-            </e306:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e918="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e918:KeyValuePairOfstringstring>
+              <e918:key d4p1:nil="false">ValueHere</e918:key>
+              <e918:value d4p1:nil="false">ValueHere</e918:value>
+            </e918:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -117,7 +117,7 @@ public async Task<UpdateUetTagsResponse> UpdateUetTagsAsync(
 		UetTags = uetTags
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.UpdateUetTagsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.UpdateUetTagsAsync(r), request));
 }
 ```
 ```java
@@ -128,7 +128,7 @@ static UpdateUetTagsResponse updateUetTags(
 
 	request.setUetTags(uetTags);
 
-	return CampaignManagement.getService().updateUetTags(request);
+	return CampaignManagementService.getService().updateUetTags(request);
 }
 ```
 ```php

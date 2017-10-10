@@ -79,11 +79,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e170="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e170:KeyValuePairOfstringstring>
-              <e170:key d4p1:nil="false">ValueHere</e170:key>
-              <e170:value d4p1:nil="false">ValueHere</e170:value>
-            </e170:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e782="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e782:KeyValuePairOfstringstring>
+              <e782:key d4p1:nil="false">ValueHere</e782:key>
+              <e782:value d4p1:nil="false">ValueHere</e782:value>
+            </e782:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -114,7 +114,7 @@ public async Task<DeleteMediaResponse> DeleteMediaAsync(
 		MediaIds = mediaIds
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.DeleteMediaAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.DeleteMediaAsync(r), request));
 }
 ```
 ```java
@@ -127,7 +127,7 @@ static DeleteMediaResponse deleteMedia(
 	request.setAccountId(accountId);
 	request.setMediaIds(mediaIds);
 
-	return CampaignManagement.getService().deleteMedia(request);
+	return CampaignManagementService.getService().deleteMedia(request);
 }
 ```
 ```php

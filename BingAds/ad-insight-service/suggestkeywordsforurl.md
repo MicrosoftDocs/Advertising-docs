@@ -16,11 +16,11 @@ The *SuggestKeywordsForUrlRequest* object defines the [body](#request-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="url"></a>Url|The URL of the webpage to scan for possible keywords. The URL can contain a maximum of 2,000 characters.|**string**|
+|<a name="excludebrand"></a>ExcludeBrand|A value that determines whether the results exclude brand keywords. To exclude brand keywords in the result, set to true. The default is false.|**boolean**|
 |<a name="language"></a>Language|The language used by the website.<br /><br />For possible values, see [Ad Languages](~/guides/ad-languages.md).<br /><br />The default is English.|**string**|
 |<a name="maxkeywords"></a>MaxKeywords|A positive integer value that specifies the maximum number of keywords to return. The maximum value that you can specify is 200.<br /><br />The default is 10.|**int**|
 |<a name="minconfidencescore"></a>MinConfidenceScore|A filter value that limits the keywords that the service returns to those that have a confidence score that is greater than or equal to the specified score. For example, you can specify that you want the operation to return only keywords that have a confidence score of at least 80 percent (0.8).<br /><br />If null, the confidence score is not used to limit the results.|**double**|
-|<a name="excludebrand"></a>ExcludeBrand|A value that determines whether the results exclude brand keywords. To exclude brand keywords in the result, set to true. The default is false.|**boolean**|
+|<a name="url"></a>Url|The URL of the webpage to scan for possible keywords. The URL can contain a maximum of 2,000 characters.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -74,11 +74,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SuggestKeywordsForUrlResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Keywords xmlns:e97="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e97:KeywordAndConfidence>
-          <e97:SuggestedKeyword d4p1:nil="false">ValueHere</e97:SuggestedKeyword>
-          <e97:ConfidenceScore>ValueHere</e97:ConfidenceScore>
-        </e97:KeywordAndConfidence>
+      <Keywords xmlns:e709="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e709:KeywordAndConfidence>
+          <e709:SuggestedKeyword d4p1:nil="false">ValueHere</e709:SuggestedKeyword>
+          <e709:ConfidenceScore>ValueHere</e709:ConfidenceScore>
+        </e709:KeywordAndConfidence>
       </Keywords>
     </SuggestKeywordsForUrlResponse>
   </s:Body>
@@ -104,7 +104,7 @@ public async Task<SuggestKeywordsForUrlResponse> SuggestKeywordsForUrlAsync(
 		ExcludeBrand = excludeBrand
 	};
 
-	return (await AdInsight.CallAsync((s, r) => s.SuggestKeywordsForUrlAsync(r), request));
+	return (await AdInsightService.CallAsync((s, r) => s.SuggestKeywordsForUrlAsync(r), request));
 }
 ```
 ```java
@@ -123,7 +123,7 @@ static SuggestKeywordsForUrlResponse suggestKeywordsForUrl(
 	request.setMinConfidenceScore(minConfidenceScore);
 	request.setExcludeBrand(excludeBrand);
 
-	return AdInsight.getService().suggestKeywordsForUrl(request);
+	return AdInsightService.getService().suggestKeywordsForUrl(request);
 }
 ```
 ```php

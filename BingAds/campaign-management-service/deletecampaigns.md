@@ -76,11 +76,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e165="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e165:KeyValuePairOfstringstring>
-              <e165:key d4p1:nil="false">ValueHere</e165:key>
-              <e165:value d4p1:nil="false">ValueHere</e165:value>
-            </e165:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e777="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e777:KeyValuePairOfstringstring>
+              <e777:key d4p1:nil="false">ValueHere</e777:key>
+              <e777:value d4p1:nil="false">ValueHere</e777:value>
+            </e777:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -111,7 +111,7 @@ public async Task<DeleteCampaignsResponse> DeleteCampaignsAsync(
 		CampaignIds = campaignIds
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.DeleteCampaignsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.DeleteCampaignsAsync(r), request));
 }
 ```
 ```java
@@ -124,7 +124,7 @@ static DeleteCampaignsResponse deleteCampaigns(
 	request.setAccountId(accountId);
 	request.setCampaignIds(campaignIds);
 
-	return CampaignManagement.getService().deleteCampaigns(request);
+	return CampaignManagementService.getService().deleteCampaigns(request);
 }
 ```
 ```php

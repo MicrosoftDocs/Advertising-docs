@@ -28,10 +28,10 @@ The *GetUserResponse* object defines the [body](#response-body) and [header](#re
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="user"></a>User|A user object that contains information about the user.|[User](user.md)|
-|<a name="roles"></a>Roles|An array of roles that determines the permissions that the user has to manage the customer or account data.<br /><br />Possible values include the following:<br />16 - The user has the **Advertiser Campaign Manager** role.<br />33 - The user has the **Aggregator** role.<br />41 - The user has the **Super Admin** role.<br />100 - The user has the **ClientViewer** role.<br />203 - The user has the **Standard** role.<br /><br />For more information, see [User Roles and Available Service Operations](~/guides/customer-accounts.md#userroles).<br /><br />**Important**: The list above provides examples of possible return values. Other  values might be returned. Deprecated or internal roles can be included in the response.|**int**|
-|<a name="accounts"></a>Accounts|An array of identifiers of the accounts to which the user has access permissions. If the *Roles* element contains an account role and the *Accounts* element contains a 0 (zero)-length array, it indicates that the user has access permissions to all of the customer?s accounts.|**long**|
+|<a name="accounts"></a>Accounts|An array of identifiers of the accounts to which the user has access permissions. If the *Roles* element contains an account role and the *Accounts* element contains a 0 (zero)-length array, it indicates that the user has access permissions to all of the customer's accounts.|**long**|
 |<a name="customers"></a>Customers|An array of identifiers of the customers to which the user has access permissions. If the *Roles* element contains a customer role and the *Customers* element contains a 0 (zero)-length array, it indicates that the user has access permissions to all customers.|**long**|
+|<a name="roles"></a>Roles|An array of roles that determines the permissions that the user has to manage the customer or account data.<br /><br />Possible values include the following:<br />16 - The user has the **Advertiser Campaign Manager** role.<br />33 - The user has the **Aggregator** role.<br />41 - The user has the **Super Admin** role.<br />100 - The user has the **ClientViewer** role.<br />203 - The user has the **Standard** role.<br /><br />For more information, see [User Roles and Available Service Operations](~/guides/customer-accounts.md#userroles).<br /><br />**Important**: The list above provides examples of possible return values. Other  values might be returned. Deprecated or internal roles can be included in the response.|**int**|
+|<a name="user"></a>User|A user object that contains information about the user.|[User](user.md)|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -67,50 +67,50 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetUserResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <User xmlns:e14="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e14:ContactInfo d4p1:nil="false">
-          <e14:Address d4p1:nil="false">
-            <e14:City d4p1:nil="false">ValueHere</e14:City>
-            <e14:CountryCode d4p1:nil="false">ValueHere</e14:CountryCode>
-            <e14:Id d4p1:nil="false">ValueHere</e14:Id>
-            <e14:Line1 d4p1:nil="false">ValueHere</e14:Line1>
-            <e14:Line2 d4p1:nil="false">ValueHere</e14:Line2>
-            <e14:Line3 d4p1:nil="false">ValueHere</e14:Line3>
-            <e14:Line4 d4p1:nil="false">ValueHere</e14:Line4>
-            <e14:PostalCode d4p1:nil="false">ValueHere</e14:PostalCode>
-            <e14:StateOrProvince d4p1:nil="false">ValueHere</e14:StateOrProvince>
-            <e14:TimeStamp d4p1:nil="false">ValueHere</e14:TimeStamp>
-          </e14:Address>
-          <e14:ContactByPhone d4p1:nil="false">ValueHere</e14:ContactByPhone>
-          <e14:ContactByPostalMail d4p1:nil="false">ValueHere</e14:ContactByPostalMail>
-          <e14:Email d4p1:nil="false">ValueHere</e14:Email>
-          <e14:EmailFormat d4p1:nil="false">ValueHere</e14:EmailFormat>
-          <e14:Fax d4p1:nil="false">ValueHere</e14:Fax>
-          <e14:HomePhone d4p1:nil="false">ValueHere</e14:HomePhone>
-          <e14:Id d4p1:nil="false">ValueHere</e14:Id>
-          <e14:Mobile d4p1:nil="false">ValueHere</e14:Mobile>
-          <e14:Phone1 d4p1:nil="false">ValueHere</e14:Phone1>
-          <e14:Phone2 d4p1:nil="false">ValueHere</e14:Phone2>
-        </e14:ContactInfo>
-        <e14:CustomerAppScope d4p1:nil="false">ValueHere</e14:CustomerAppScope>
-        <e14:CustomerId d4p1:nil="false">ValueHere</e14:CustomerId>
-        <e14:Id d4p1:nil="false">ValueHere</e14:Id>
-        <e14:JobTitle d4p1:nil="false">ValueHere</e14:JobTitle>
-        <e14:LastModifiedByUserId d4p1:nil="false">ValueHere</e14:LastModifiedByUserId>
-        <e14:LastModifiedTime d4p1:nil="false">ValueHere</e14:LastModifiedTime>
-        <e14:Lcid d4p1:nil="false">ValueHere</e14:Lcid>
-        <e14:Name d4p1:nil="false">
-          <e14:FirstName d4p1:nil="false">ValueHere</e14:FirstName>
-          <e14:LastName d4p1:nil="false">ValueHere</e14:LastName>
-          <e14:MiddleInitial d4p1:nil="false">ValueHere</e14:MiddleInitial>
-        </e14:Name>
-        <e14:Password d4p1:nil="false">ValueHere</e14:Password>
-        <e14:SecretAnswer d4p1:nil="false">ValueHere</e14:SecretAnswer>
-        <e14:SecretQuestion>ValueHere</e14:SecretQuestion>
-        <e14:UserLifeCycleStatus d4p1:nil="false">ValueHere</e14:UserLifeCycleStatus>
-        <e14:TimeStamp d4p1:nil="false">ValueHere</e14:TimeStamp>
-        <e14:UserName d4p1:nil="false">ValueHere</e14:UserName>
-        <e14:IsMigratedToMicrosoftAccount>ValueHere</e14:IsMigratedToMicrosoftAccount>
+      <User xmlns:e626="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e626:ContactInfo d4p1:nil="false">
+          <e626:Address d4p1:nil="false">
+            <e626:City d4p1:nil="false">ValueHere</e626:City>
+            <e626:CountryCode d4p1:nil="false">ValueHere</e626:CountryCode>
+            <e626:Id d4p1:nil="false">ValueHere</e626:Id>
+            <e626:Line1 d4p1:nil="false">ValueHere</e626:Line1>
+            <e626:Line2 d4p1:nil="false">ValueHere</e626:Line2>
+            <e626:Line3 d4p1:nil="false">ValueHere</e626:Line3>
+            <e626:Line4 d4p1:nil="false">ValueHere</e626:Line4>
+            <e626:PostalCode d4p1:nil="false">ValueHere</e626:PostalCode>
+            <e626:StateOrProvince d4p1:nil="false">ValueHere</e626:StateOrProvince>
+            <e626:TimeStamp d4p1:nil="false">ValueHere</e626:TimeStamp>
+          </e626:Address>
+          <e626:ContactByPhone d4p1:nil="false">ValueHere</e626:ContactByPhone>
+          <e626:ContactByPostalMail d4p1:nil="false">ValueHere</e626:ContactByPostalMail>
+          <e626:Email d4p1:nil="false">ValueHere</e626:Email>
+          <e626:EmailFormat d4p1:nil="false">ValueHere</e626:EmailFormat>
+          <e626:Fax d4p1:nil="false">ValueHere</e626:Fax>
+          <e626:HomePhone d4p1:nil="false">ValueHere</e626:HomePhone>
+          <e626:Id d4p1:nil="false">ValueHere</e626:Id>
+          <e626:Mobile d4p1:nil="false">ValueHere</e626:Mobile>
+          <e626:Phone1 d4p1:nil="false">ValueHere</e626:Phone1>
+          <e626:Phone2 d4p1:nil="false">ValueHere</e626:Phone2>
+        </e626:ContactInfo>
+        <e626:CustomerAppScope d4p1:nil="false">ValueHere</e626:CustomerAppScope>
+        <e626:CustomerId d4p1:nil="false">ValueHere</e626:CustomerId>
+        <e626:Id d4p1:nil="false">ValueHere</e626:Id>
+        <e626:JobTitle d4p1:nil="false">ValueHere</e626:JobTitle>
+        <e626:LastModifiedByUserId d4p1:nil="false">ValueHere</e626:LastModifiedByUserId>
+        <e626:LastModifiedTime d4p1:nil="false">ValueHere</e626:LastModifiedTime>
+        <e626:Lcid d4p1:nil="false">ValueHere</e626:Lcid>
+        <e626:Name d4p1:nil="false">
+          <e626:FirstName d4p1:nil="false">ValueHere</e626:FirstName>
+          <e626:LastName d4p1:nil="false">ValueHere</e626:LastName>
+          <e626:MiddleInitial d4p1:nil="false">ValueHere</e626:MiddleInitial>
+        </e626:Name>
+        <e626:Password d4p1:nil="false">ValueHere</e626:Password>
+        <e626:SecretAnswer d4p1:nil="false">ValueHere</e626:SecretAnswer>
+        <e626:SecretQuestion>ValueHere</e626:SecretQuestion>
+        <e626:UserLifeCycleStatus d4p1:nil="false">ValueHere</e626:UserLifeCycleStatus>
+        <e626:TimeStamp d4p1:nil="false">ValueHere</e626:TimeStamp>
+        <e626:UserName d4p1:nil="false">ValueHere</e626:UserName>
+        <e626:IsMigratedToMicrosoftAccount>ValueHere</e626:IsMigratedToMicrosoftAccount>
       </User>
       <Roles d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <a1:int>ValueHere</a1:int>
@@ -137,7 +137,7 @@ public async Task<GetUserResponse> GetUserAsync(
 		UserId = userId
 	};
 
-	return (await CustomerManagement.CallAsync((s, r) => s.GetUserAsync(r), request));
+	return (await CustomerManagementService.CallAsync((s, r) => s.GetUserAsync(r), request));
 }
 ```
 ```java
@@ -148,7 +148,7 @@ static GetUserResponse getUser(
 
 	request.setUserId(userId);
 
-	return CustomerManagement.getService().getUser(request);
+	return CustomerManagementService.getService().getUser(request);
 }
 ```
 ```php

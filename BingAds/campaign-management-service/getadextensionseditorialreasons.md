@@ -97,11 +97,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e199="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e199:KeyValuePairOfstringstring>
-              <e199:key d4p1:nil="false">ValueHere</e199:key>
-              <e199:value d4p1:nil="false">ValueHere</e199:value>
-            </e199:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e811="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e811:KeyValuePairOfstringstring>
+              <e811:key d4p1:nil="false">ValueHere</e811:key>
+              <e811:value d4p1:nil="false">ValueHere</e811:value>
+            </e811:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -134,7 +134,7 @@ public async Task<GetAdExtensionsEditorialReasonsResponse> GetAdExtensionsEditor
 		AssociationType = associationType
 	};
 
-	return (await CampaignManagement.CallAsync((s, r) => s.GetAdExtensionsEditorialReasonsAsync(r), request));
+	return (await CampaignManagementService.CallAsync((s, r) => s.GetAdExtensionsEditorialReasonsAsync(r), request));
 }
 ```
 ```java
@@ -149,7 +149,7 @@ static GetAdExtensionsEditorialReasonsResponse getAdExtensionsEditorialReasons(
 	request.setAdExtensionIdToEntityIdAssociations(adExtensionIdToEntityIdAssociations);
 	request.setAssociationType(associationType);
 
-	return CampaignManagement.getService().getAdExtensionsEditorialReasons(request);
+	return CampaignManagementService.getService().getAdExtensionsEditorialReasons(request);
 }
 ```
 ```php

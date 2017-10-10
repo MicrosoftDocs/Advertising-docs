@@ -18,8 +18,8 @@ The *GetKeywordCategoriesRequest* object defines the [body](#request-body) and [
 |-----------|---------------|-------------|
 |<a name="keywords"></a>Keywords|An array of keywords for which you want to determine the possible keyword categories that each keyword belongs to. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string**|
 |<a name="language"></a>Language|The language in which the keywords are written. You must set this element to English.|**string**|
-|<a name="publishercountry"></a>PublisherCountry|The country code of the country/region to use as the source of the category data.<br /><br /> You must set this element to US.|**string**|
 |<a name="maxcategories"></a>MaxCategories|The number of categories to include in the results. The maximum number of categories that you can request is 5.<br /><br />The default is 5.|**int**|
+|<a name="publishercountry"></a>PublisherCountry|The country code of the country/region to use as the source of the category data.<br /><br /> You must set this element to US.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -74,16 +74,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Result xmlns:e76="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e76:KeywordCategoryResult>
-          <e76:Keyword d4p1:nil="false">ValueHere</e76:Keyword>
-          <e76:KeywordCategories d4p1:nil="false">
-            <e76:KeywordCategory>
-              <e76:Category d4p1:nil="false">ValueHere</e76:Category>
-              <e76:ConfidenceScore>ValueHere</e76:ConfidenceScore>
-            </e76:KeywordCategory>
-          </e76:KeywordCategories>
-        </e76:KeywordCategoryResult>
+      <Result xmlns:e688="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e688:KeywordCategoryResult>
+          <e688:Keyword d4p1:nil="false">ValueHere</e688:Keyword>
+          <e688:KeywordCategories d4p1:nil="false">
+            <e688:KeywordCategory>
+              <e688:Category d4p1:nil="false">ValueHere</e688:Category>
+              <e688:ConfidenceScore>ValueHere</e688:ConfidenceScore>
+            </e688:KeywordCategory>
+          </e688:KeywordCategories>
+        </e688:KeywordCategoryResult>
       </Result>
     </GetKeywordCategoriesResponse>
   </s:Body>
@@ -107,7 +107,7 @@ public async Task<GetKeywordCategoriesResponse> GetKeywordCategoriesAsync(
 		MaxCategories = maxCategories
 	};
 
-	return (await AdInsight.CallAsync((s, r) => s.GetKeywordCategoriesAsync(r), request));
+	return (await AdInsightService.CallAsync((s, r) => s.GetKeywordCategoriesAsync(r), request));
 }
 ```
 ```java
@@ -124,7 +124,7 @@ static GetKeywordCategoriesResponse getKeywordCategories(
 	request.setPublisherCountry(publisherCountry);
 	request.setMaxCategories(maxCategories);
 
-	return AdInsight.getService().getKeywordCategories(request);
+	return AdInsightService.getService().getKeywordCategories(request);
 }
 ```
 ```php

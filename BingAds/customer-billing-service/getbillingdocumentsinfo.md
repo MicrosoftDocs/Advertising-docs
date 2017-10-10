@@ -20,8 +20,8 @@ The *GetBillingDocumentsInfoRequest* object defines the [body](#request-body) an
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountids"></a>AccountIds|A list of identifiers of the accounts whose billing document information you want to get.|**long**|
+|<a name="enddate"></a>EndDate|The end date to use for specifying the billing documents to get.<br /><br />To specify today's date as the end date, set *EndDate* to NULL.<br /><br />The end date cannot be earlier than the start date. You must specify the date in Coordinated Universal Time (UTC).|**dateTime**|
 |<a name="startdate"></a>StartDate|The start date to use for specifying the billing documents to get.<br /><br />The start date cannot be later than the end date. You must specify the date in Coordinated Universal Time (UTC).|**dateTime**|
-|<a name="enddate"></a>EndDate|The end date to use for specifying the billing documents to get.<br /><br />To specify today?s date as the end date, set *EndDate* to NULL.<br /><br />The end date cannot be earlier than the start date. You must specify the date in Coordinated Universal Time (UTC).|**dateTime**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -73,16 +73,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBillingDocumentsInfoResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <BillingDocumentsInfo xmlns:e53="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e53:BillingDocumentInfo>
-          <e53:AccountId>ValueHere</e53:AccountId>
-          <e53:AccountName d4p1:nil="false">ValueHere</e53:AccountName>
-          <e53:AccountNumber d4p1:nil="false">ValueHere</e53:AccountNumber>
-          <e53:Amount>ValueHere</e53:Amount>
-          <e53:CurrencyCode d4p1:nil="false">ValueHere</e53:CurrencyCode>
-          <e53:DocumentDate d4p1:nil="false">ValueHere</e53:DocumentDate>
-          <e53:DocumentId d4p1:nil="false">ValueHere</e53:DocumentId>
-        </e53:BillingDocumentInfo>
+      <BillingDocumentsInfo xmlns:e665="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e665:BillingDocumentInfo>
+          <e665:AccountId>ValueHere</e665:AccountId>
+          <e665:AccountName d4p1:nil="false">ValueHere</e665:AccountName>
+          <e665:AccountNumber d4p1:nil="false">ValueHere</e665:AccountNumber>
+          <e665:Amount>ValueHere</e665:Amount>
+          <e665:CurrencyCode d4p1:nil="false">ValueHere</e665:CurrencyCode>
+          <e665:DocumentDate d4p1:nil="false">ValueHere</e665:DocumentDate>
+          <e665:DocumentId d4p1:nil="false">ValueHere</e665:DocumentId>
+        </e665:BillingDocumentInfo>
       </BillingDocumentsInfo>
     </GetBillingDocumentsInfoResponse>
   </s:Body>
@@ -104,7 +104,7 @@ public async Task<GetBillingDocumentsInfoResponse> GetBillingDocumentsInfoAsync(
 		EndDate = endDate
 	};
 
-	return (await CustomerBilling.CallAsync((s, r) => s.GetBillingDocumentsInfoAsync(r), request));
+	return (await CustomerBillingService.CallAsync((s, r) => s.GetBillingDocumentsInfoAsync(r), request));
 }
 ```
 ```java
@@ -119,7 +119,7 @@ static GetBillingDocumentsInfoResponse getBillingDocumentsInfo(
 	request.setStartDate(startDate);
 	request.setEndDate(endDate);
 
-	return CustomerBilling.getService().getBillingDocumentsInfo(request);
+	return CustomerBillingService.getService().getBillingDocumentsInfo(request);
 }
 ```
 ```php
