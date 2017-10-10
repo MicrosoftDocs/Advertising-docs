@@ -155,7 +155,7 @@ Represents the association status between the ad group and the criterion bid. If
 ### <a name="subtype"></a>Sub Type
 The location sub type that you are not targeting. For example the value is *City* if the record represents a city location criterion.
 
-Possible values are *City*, *Country*, *MetroArea*, *PostalCode*, and *State*.
+Possible values are *City*, *Country*, *County*, *MetroArea*, *PostalCode*, and *State*.
 
 **Add:** Read-only  
 **Update:** Read-only  

@@ -328,7 +328,7 @@ The path can contain dynamic parameters such as {MatchType}. For a list of suppo
 The maximum input length of the path is 50 characters with dynamic text strings. However, the ad will fail to display if the path exceeds 15 characters after dynamic text substitution occurs. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of the path is 25 characters, and the path is limited to 7 characters after substitution.
 
 > [!IMPORTANT]
-> Starting the week of September 18th, the double-width character check will be done according to the characters used instead of the ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. Our support team will contact you if your current ads are affected by this change. 
+> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
 
 The path cannot contain the forward slash (/) or newline (\n) characters.
 
@@ -350,7 +350,7 @@ The path can contain dynamic parameters such as {MatchType}. For a list of suppo
 The maximum input length of the path is 50 characters with dynamic text strings. However, the ad will fail to display if the path exceeds 15 characters after dynamic text substitution occurs. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of the path is 25 characters, and the path is limited to 7 characters after substitution.
 
 > [!IMPORTANT]
-> Starting the week of September 18th, the double-width character check will be done according to the characters used instead of the ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. Our support team will contact you if your current ads are affected by this change. 
+> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
 
 The path cannot contain the forward slash (/) or newline (\n) characters.
 	
@@ -390,7 +390,7 @@ The text can contain dynamic text strings such as {keyword}. For more informatio
 The maximum input length of the copy is 300 characters, and can contain dynamic text strings. However, the ad will fail to display if the copy exceeds 80 characters after dynamic text substitution occurs. Note that for ad groups that use Traditional Chinese the maximum input length of the copy is 150 characters, and the text is limited to 40 characters after substitution.
 
 > [!IMPORTANT]
-> Starting the week of September 18th, the double-width character check will be done according to the characters used instead of the ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. Our support team will contact you if your current ads are affected by this change. 
+> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
 
 The text cannot contain the newline (\n) character.
 
@@ -408,7 +408,7 @@ The title can contain dynamic text strings such as {keyword}. For more informati
 The maximum input length of each title part is 30 characters without dynamic text. If dynamic text strings are used, the maximum input length of *Title Part 1* and *Title Part 2* combined is 77 characters. However, the ad will fail to display if either *Title Part 1* or *Title Part 2* exceeds 30 characters after dynamic text substitution occurs. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of each title part is 15 characters without dynamic text. If dynamic text strings are used, the maximum input length of *Title Part 1* and *Title Part 2* combined is 37 characters. However, the ad will fail to display if either *Title Part 1* or *Title Part 2* exceeds 15 characters after dynamic text substitution occurs.
 
 > [!IMPORTANT]
-> Starting the week of September 18th, the double-width character check will be done according to the characters used instead of the ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. Our support team will contact you if your current ads are affected by this change. 
+> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
 
 The title cannot contain the newline (\n) character.
 
@@ -426,7 +426,7 @@ The title can contain dynamic text strings such as {keyword}. For more informati
 The maximum input length of each title part is 30 characters without dynamic text. If dynamic text strings are used, the maximum input length of *Title Part 1* and *Title Part 2* combined is 77 characters. However, the ad will fail to display if either *Title Part 1* or *Title Part 2* exceeds 30 characters after dynamic text substitution occurs. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of each title part is 15 characters without dynamic text. If dynamic text strings are used, the maximum input length of *Title Part 1* and *Title Part 2* combined is 37 characters. However, the ad will fail to display if either *Title Part 1* or *Title Part 2* exceeds 15 characters after dynamic text substitution occurs.
 
 > [!IMPORTANT]
-> Starting the week of September 18th, the double-width character check will be done according to the characters used instead of the ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. Our support team will contact you if your current ads are affected by this change. 
+> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
 
 The title cannot contain the newline (\n) character.
 

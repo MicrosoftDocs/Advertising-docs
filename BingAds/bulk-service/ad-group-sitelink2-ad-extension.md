@@ -11,7 +11,7 @@ dev_langs:
 Defines an association record between an [Ad Group](../bulk-service/ad-group.md) and a [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or sitelink2 ad extension, use the [Ad Group](../bulk-service/ad-group.md) or [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) record. 
 
 > [!NOTE]
-> During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) records (contains one sitelink per ad extension).
+> During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) records (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions.
 	
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Ad Group Sitelink2 Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 

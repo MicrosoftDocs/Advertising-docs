@@ -13,7 +13,7 @@ Defines a sitelink2 ad extension that can be downloaded and uploaded in a bulk f
 The *Sitelink2 Ad Extension* record adheres to the single sitelink data model, where each Sitelink2 Ad Extension has *one* sitelink. The entire Sitelink2 Ad Extension is represented as a single *Sitelink2 Ad Extension* record in the bulk file.
 
 > [!NOTE]
-> During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) records (contains one sitelink per ad extension).  
+> During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) records (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions. 
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Sitelink2 Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 

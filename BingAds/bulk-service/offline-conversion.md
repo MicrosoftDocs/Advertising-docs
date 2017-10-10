@@ -13,9 +13,6 @@ After the [OfflineConversionGoal](~/campaign-management-service/offlineconversio
 > [!NOTE]
 > Bulk download is not supported. You cannot get, update, or delete an offline conversion.
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
-
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Offline Conversion* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 

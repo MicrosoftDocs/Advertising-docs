@@ -13,7 +13,7 @@ Defines a sitelink ad extension that can be downloaded and uploaded in a bulk fi
 The *Sitelink Ad Extension* record adheres to the nested sitelink data model, where each sitelink ad extension has *multiple* sitelinks. Each sitelink is represented as a single *Sitelink Ad Extension* record in the bulk file. In other words, to represent multiple sitelinks for one sitelink ad extension, you must read and write multiple rows in the bulk file. Ad extension level properties such as *Id* and *Parent Id* columns will be the same for all sitelinks, while the sitelink level properties such as *Sitelink Extension Order* and *Sitelink Extension Link Text* will differ for each record.
 
 > [!NOTE]
-> During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) records (contains one sitelink per ad extension).  
+> During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) records (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Sitelink Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 

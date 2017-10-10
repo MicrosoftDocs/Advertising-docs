@@ -12,7 +12,7 @@ Defines a campaign location criterion that can be uploaded and downloaded in a b
 
 With location criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about:
 *  All available countries/regions
-*  Selected cities, zip codes, metro areas, states/provinces, and countries/regions
+*  Selected cities, zip codes, metro areas, counties, states/provinces, and countries/regions
 
 Each location criterion defines a location code for the accompanying criterion bid adjustment. 
 
@@ -165,7 +165,7 @@ Represents the association status between the a campaign and the criterion bid. 
 ### <a name="subtype"></a>Sub Type
 The location sub type that you are targeting. For example the value is *City* if the record represents a city location criterion.
 
-Possible values are *City*, *Country*, *MetroArea*, *PostalCode*, and *State*.
+Possible values are *City*, *Country*, *County*, *MetroArea*, *PostalCode*, and *State*.
 
 **Add:** Read-only  
 **Update:** Read-only  
