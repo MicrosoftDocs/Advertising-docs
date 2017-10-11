@@ -4,7 +4,7 @@ ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the attributes and performance statistics columns that you can include in the [AdPerformanceReportRequest](../reporting-service/adperformancereportrequest.md).
+description: Defines the attributes and performance statistics columns that you can include in the AdPerformanceReportRequest.
 ---
 # AdPerformanceReportColumn Value Set
 Defines the attributes and performance statistics columns that you can include in the [AdPerformanceReportRequest](../reporting-service/adperformancereportrequest.md).

@@ -4,7 +4,7 @@ ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the attributes and performance statistics columns that you can include in the [AdExtensionByKeywordReportRequest](../reporting-service/adextensionbykeywordreportrequest.md).
+description: Defines the attributes and performance statistics columns that you can include in the AdExtensionByKeywordReportRequest.
 ---
 # AdExtensionByKeywordReportColumn Value Set
 Defines the attributes and performance statistics columns that you can include in the [AdExtensionByKeywordReportRequest](../reporting-service/adextensionbykeywordreportrequest.md).

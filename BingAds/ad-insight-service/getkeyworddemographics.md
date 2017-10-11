@@ -76,24 +76,24 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordDemographicsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordDemographicResult xmlns:e689="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e689:KeywordDemographicResult>
-          <e689:Keyword d4p1:nil="false">ValueHere</e689:Keyword>
-          <e689:KeywordDemographics d4p1:nil="false">
-            <e689:KeywordDemographic>
-              <e689:Device d4p1:nil="false">ValueHere</e689:Device>
-              <e689:Age18_24>ValueHere</e689:Age18_24>
-              <e689:Age25_34>ValueHere</e689:Age25_34>
-              <e689:Age35_49>ValueHere</e689:Age35_49>
-              <e689:Age50_64>ValueHere</e689:Age50_64>
-              <e689:Age65Plus>ValueHere</e689:Age65Plus>
-              <e689:AgeUnknown>ValueHere</e689:AgeUnknown>
-              <e689:Female>ValueHere</e689:Female>
-              <e689:Male>ValueHere</e689:Male>
-              <e689:GenderUnknown>ValueHere</e689:GenderUnknown>
-            </e689:KeywordDemographic>
-          </e689:KeywordDemographics>
-        </e689:KeywordDemographicResult>
+      <KeywordDemographicResult xmlns:e77="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e77:KeywordDemographicResult>
+          <e77:Keyword d4p1:nil="false">ValueHere</e77:Keyword>
+          <e77:KeywordDemographics d4p1:nil="false">
+            <e77:KeywordDemographic>
+              <e77:Device d4p1:nil="false">ValueHere</e77:Device>
+              <e77:Age18_24>ValueHere</e77:Age18_24>
+              <e77:Age25_34>ValueHere</e77:Age25_34>
+              <e77:Age35_49>ValueHere</e77:Age35_49>
+              <e77:Age50_64>ValueHere</e77:Age50_64>
+              <e77:Age65Plus>ValueHere</e77:Age65Plus>
+              <e77:AgeUnknown>ValueHere</e77:AgeUnknown>
+              <e77:Female>ValueHere</e77:Female>
+              <e77:Male>ValueHere</e77:Male>
+              <e77:GenderUnknown>ValueHere</e77:GenderUnknown>
+            </e77:KeywordDemographic>
+          </e77:KeywordDemographics>
+        </e77:KeywordDemographicResult>
       </KeywordDemographicResult>
     </GetKeywordDemographicsResponse>
   </s:Body>

@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a paging object for the list of insertion orders returned using the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.
+description: Defines a paging object for the list of insertion orders returned using the SearchInsertionOrders operation.
 ---
 # Paging Data Object
 Defines a paging object for the list of insertion orders returned using the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.

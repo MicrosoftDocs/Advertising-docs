@@ -70,12 +70,12 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetDomainCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Categories xmlns:e677="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e677:DomainCategory>
-          <e677:Bid>ValueHere</e677:Bid>
-          <e677:CategoryName d4p1:nil="false">ValueHere</e677:CategoryName>
-          <e677:Coverage>ValueHere</e677:Coverage>
-        </e677:DomainCategory>
+      <Categories xmlns:e65="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e65:DomainCategory>
+          <e65:Bid>ValueHere</e65:Bid>
+          <e65:CategoryName d4p1:nil="false">ValueHere</e65:CategoryName>
+          <e65:Coverage>ValueHere</e65:Coverage>
+        </e65:DomainCategory>
       </Categories>
     </GetDomainCategoriesResponse>
   </s:Body>

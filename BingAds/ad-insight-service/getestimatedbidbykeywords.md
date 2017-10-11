@@ -61,13 +61,13 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <GetEstimatedBidByKeywordsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Keywords xmlns:e679="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Message" i:nil="false">
-        <e679:KeywordAndMatchType>
-          <e679:KeywordText i:nil="false">ValueHere</e679:KeywordText>
-          <e679:MatchTypes i:nil="false">
+      <Keywords xmlns:e67="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Message" i:nil="false">
+        <e67:KeywordAndMatchType>
+          <e67:KeywordText i:nil="false">ValueHere</e67:KeywordText>
+          <e67:MatchTypes i:nil="false">
             <MatchType>ValueHere</MatchType>
-          </e679:MatchTypes>
-        </e679:KeywordAndMatchType>
+          </e67:MatchTypes>
+        </e67:KeywordAndMatchType>
       </Keywords>
       <TargetPositionForAds>ValueHere</TargetPositionForAds>
       <Language i:nil="false">ValueHere</Language>
@@ -93,38 +93,38 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedBidByKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedBids xmlns:e680="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e680:KeywordEstimatedBid>
-          <e680:Keyword d4p1:nil="false">ValueHere</e680:Keyword>
-          <e680:EstimatedBids d4p1:nil="false">
-            <e680:EstimatedBidAndTraffic>
-              <e680:MinClicksPerWeek d4p1:nil="false">ValueHere</e680:MinClicksPerWeek>
-              <e680:MaxClicksPerWeek d4p1:nil="false">ValueHere</e680:MaxClicksPerWeek>
-              <e680:AverageCPC d4p1:nil="false">ValueHere</e680:AverageCPC>
-              <e680:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e680:MinImpressionsPerWeek>
-              <e680:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e680:MaxImpressionsPerWeek>
-              <e680:CTR d4p1:nil="false">ValueHere</e680:CTR>
-              <e680:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e680:MinTotalCostPerWeek>
-              <e680:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e680:MaxTotalCostPerWeek>
-              <e680:Currency>ValueHere</e680:Currency>
-              <e680:MatchType>ValueHere</e680:MatchType>
-              <e680:EstimatedMinBid>ValueHere</e680:EstimatedMinBid>
-            </e680:EstimatedBidAndTraffic>
-          </e680:EstimatedBids>
-        </e680:KeywordEstimatedBid>
+      <KeywordEstimatedBids xmlns:e68="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e68:KeywordEstimatedBid>
+          <e68:Keyword d4p1:nil="false">ValueHere</e68:Keyword>
+          <e68:EstimatedBids d4p1:nil="false">
+            <e68:EstimatedBidAndTraffic>
+              <e68:MinClicksPerWeek d4p1:nil="false">ValueHere</e68:MinClicksPerWeek>
+              <e68:MaxClicksPerWeek d4p1:nil="false">ValueHere</e68:MaxClicksPerWeek>
+              <e68:AverageCPC d4p1:nil="false">ValueHere</e68:AverageCPC>
+              <e68:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e68:MinImpressionsPerWeek>
+              <e68:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e68:MaxImpressionsPerWeek>
+              <e68:CTR d4p1:nil="false">ValueHere</e68:CTR>
+              <e68:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e68:MinTotalCostPerWeek>
+              <e68:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e68:MaxTotalCostPerWeek>
+              <e68:Currency>ValueHere</e68:Currency>
+              <e68:MatchType>ValueHere</e68:MatchType>
+              <e68:EstimatedMinBid>ValueHere</e68:EstimatedMinBid>
+            </e68:EstimatedBidAndTraffic>
+          </e68:EstimatedBids>
+        </e68:KeywordEstimatedBid>
       </KeywordEstimatedBids>
-      <AdGroupEstimatedBid xmlns:e681="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e681:MinClicksPerWeek d4p1:nil="false">ValueHere</e681:MinClicksPerWeek>
-        <e681:MaxClicksPerWeek d4p1:nil="false">ValueHere</e681:MaxClicksPerWeek>
-        <e681:AverageCPC d4p1:nil="false">ValueHere</e681:AverageCPC>
-        <e681:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e681:MinImpressionsPerWeek>
-        <e681:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e681:MaxImpressionsPerWeek>
-        <e681:CTR d4p1:nil="false">ValueHere</e681:CTR>
-        <e681:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e681:MinTotalCostPerWeek>
-        <e681:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e681:MaxTotalCostPerWeek>
-        <e681:Currency>ValueHere</e681:Currency>
-        <e681:MatchType>ValueHere</e681:MatchType>
-        <e681:EstimatedMinBid>ValueHere</e681:EstimatedMinBid>
+      <AdGroupEstimatedBid xmlns:e69="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e69:MinClicksPerWeek d4p1:nil="false">ValueHere</e69:MinClicksPerWeek>
+        <e69:MaxClicksPerWeek d4p1:nil="false">ValueHere</e69:MaxClicksPerWeek>
+        <e69:AverageCPC d4p1:nil="false">ValueHere</e69:AverageCPC>
+        <e69:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e69:MinImpressionsPerWeek>
+        <e69:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e69:MaxImpressionsPerWeek>
+        <e69:CTR d4p1:nil="false">ValueHere</e69:CTR>
+        <e69:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e69:MinTotalCostPerWeek>
+        <e69:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e69:MaxTotalCostPerWeek>
+        <e69:Currency>ValueHere</e69:Currency>
+        <e69:MatchType>ValueHere</e69:MatchType>
+        <e69:EstimatedMinBid>ValueHere</e69:EstimatedMinBid>
       </AdGroupEstimatedBid>
     </GetEstimatedBidByKeywordsResponse>
   </s:Body>

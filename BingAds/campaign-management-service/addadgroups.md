@@ -89,11 +89,11 @@ The following template shows the order of the [body](#request-body) and [header]
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e730="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e730:KeyValuePairOfstringstring>
-              <e730:key i:nil="false">ValueHere</e730:key>
-              <e730:value i:nil="false">ValueHere</e730:value>
-            </e730:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e118="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e118:KeyValuePairOfstringstring>
+              <e118:key i:nil="false">ValueHere</e118:key>
+              <e118:value i:nil="false">ValueHere</e118:value>
+            </e118:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Language i:nil="false">ValueHere</Language>
@@ -125,13 +125,13 @@ The following template shows the order of the [body](#request-body) and [header]
           </StartDate>
           <Status i:nil="false">ValueHere</Status>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e731="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e731:Parameters i:nil="false">
-              <e731:CustomParameter>
-                <e731:Key i:nil="false">ValueHere</e731:Key>
-                <e731:Value i:nil="false">ValueHere</e731:Value>
-              </e731:CustomParameter>
-            </e731:Parameters>
+          <UrlCustomParameters xmlns:e119="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            <e119:Parameters i:nil="false">
+              <e119:CustomParameter>
+                <e119:Key i:nil="false">ValueHere</e119:Key>
+                <e119:Value i:nil="false">ValueHere</e119:Value>
+              </e119:CustomParameter>
+            </e119:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
@@ -159,11 +159,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e732="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e732:KeyValuePairOfstringstring>
-              <e732:key d4p1:nil="false">ValueHere</e732:key>
-              <e732:value d4p1:nil="false">ValueHere</e732:value>
-            </e732:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e120="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e120:KeyValuePairOfstringstring>
+              <e120:key d4p1:nil="false">ValueHere</e120:key>
+              <e120:value d4p1:nil="false">ValueHere</e120:value>
+            </e120:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

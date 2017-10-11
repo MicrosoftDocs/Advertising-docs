@@ -4,7 +4,7 @@ ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](../ad-insight-service/getbidopportunities.md).
+description: Defines the possible bid opportunity types you can request when calling GetBidOpportunities.
 ---
 # BidOpportunityType Value Set
 Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](../ad-insight-service/getbidopportunities.md).

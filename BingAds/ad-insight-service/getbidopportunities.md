@@ -73,18 +73,18 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBidOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Opportunities xmlns:e675="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e675:BidOpportunity>
-          <e675:AdGroupId>ValueHere</e675:AdGroupId>
-          <e675:CampaignId>ValueHere</e675:CampaignId>
-          <e675:CurrentBid>ValueHere</e675:CurrentBid>
-          <e675:EstimatedIncreaseInClicks>ValueHere</e675:EstimatedIncreaseInClicks>
-          <e675:EstimatedIncreaseInCost>ValueHere</e675:EstimatedIncreaseInCost>
-          <e675:EstimatedIncreaseInImpressions>ValueHere</e675:EstimatedIncreaseInImpressions>
-          <e675:KeywordId>ValueHere</e675:KeywordId>
-          <e675:MatchType d4p1:nil="false">ValueHere</e675:MatchType>
-          <e675:SuggestedBid>ValueHere</e675:SuggestedBid>
-        </e675:BidOpportunity>
+      <Opportunities xmlns:e63="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e63:BidOpportunity>
+          <e63:AdGroupId>ValueHere</e63:AdGroupId>
+          <e63:CampaignId>ValueHere</e63:CampaignId>
+          <e63:CurrentBid>ValueHere</e63:CurrentBid>
+          <e63:EstimatedIncreaseInClicks>ValueHere</e63:EstimatedIncreaseInClicks>
+          <e63:EstimatedIncreaseInCost>ValueHere</e63:EstimatedIncreaseInCost>
+          <e63:EstimatedIncreaseInImpressions>ValueHere</e63:EstimatedIncreaseInImpressions>
+          <e63:KeywordId>ValueHere</e63:KeywordId>
+          <e63:MatchType d4p1:nil="false">ValueHere</e63:MatchType>
+          <e63:SuggestedBid>ValueHere</e63:SuggestedBid>
+        </e63:BidOpportunity>
       </Opportunities>
     </GetBidOpportunitiesResponse>
   </s:Body>

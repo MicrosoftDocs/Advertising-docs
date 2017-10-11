@@ -53,11 +53,11 @@ The following template shows the order of the [body](#request-body) and [header]
       <Audiences i:nil="false">
         <Audience i:type="-- derived type specified here with the appropriate prefix --">
           <Description i:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e899="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e899:KeyValuePairOfstringstring>
-              <e899:key i:nil="false">ValueHere</e899:key>
-              <e899:value i:nil="false">ValueHere</e899:value>
-            </e899:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e287="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e287:KeyValuePairOfstringstring>
+              <e287:key i:nil="false">ValueHere</e287:key>
+              <e287:value i:nil="false">ValueHere</e287:value>
+            </e287:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <MembershipDuration i:nil="false">ValueHere</MembershipDuration>
@@ -66,85 +66,85 @@ The following template shows the order of the [body](#request-body) and [header]
           <Scope i:nil="false">ValueHere</Scope>
           <Type>ValueHere</Type>
           <!--These fields are applicable if the derived type attribute is set to RemarketingList-->
-          <Rule xmlns:e900="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
-            <e900:Type i:nil="false">ValueHere</e900:Type>
+          <Rule xmlns:e288="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
+            <e288:Type i:nil="false">ValueHere</e288:Type>
             <!--This field is applicable if the derived type attribute is set to PageVisitorsRule-->
-            <e900:RuleItemGroups i:nil="false">
-              <e900:RuleItemGroup>
-                <e900:Items i:nil="false">
-                  <e900:RuleItem i:type="-- derived type specified here with the appropriate prefix --">
-                    <e900:Type i:nil="false">ValueHere</e900:Type>
+            <e288:RuleItemGroups i:nil="false">
+              <e288:RuleItemGroup>
+                <e288:Items i:nil="false">
+                  <e288:RuleItem i:type="-- derived type specified here with the appropriate prefix --">
+                    <e288:Type i:nil="false">ValueHere</e288:Type>
                     <!--These fields are applicable if the derived type attribute is set to StringRuleItem-->
-                    <e900:Operand i:nil="false">ValueHere</e900:Operand>
-                    <e900:Operator>ValueHere</e900:Operator>
-                    <e900:Value i:nil="false">ValueHere</e900:Value>
-                  </e900:RuleItem>
-                </e900:Items>
-              </e900:RuleItemGroup>
-            </e900:RuleItemGroups>
+                    <e288:Operand i:nil="false">ValueHere</e288:Operand>
+                    <e288:Operator>ValueHere</e288:Operator>
+                    <e288:Value i:nil="false">ValueHere</e288:Value>
+                  </e288:RuleItem>
+                </e288:Items>
+              </e288:RuleItemGroup>
+            </e288:RuleItemGroups>
             <!--These fields are applicable if the derived type attribute is set to PageVisitorsWhoVisitedAnotherPageRule-->
-            <e900:AnotherRuleItemGroups i:nil="false">
-              <e900:RuleItemGroup>
-                <e900:Items i:nil="false">
-                  <e900:RuleItem i:type="-- derived type specified here with the appropriate prefix --">
-                    <e900:Type i:nil="false">ValueHere</e900:Type>
+            <e288:AnotherRuleItemGroups i:nil="false">
+              <e288:RuleItemGroup>
+                <e288:Items i:nil="false">
+                  <e288:RuleItem i:type="-- derived type specified here with the appropriate prefix --">
+                    <e288:Type i:nil="false">ValueHere</e288:Type>
                     <!--These fields are applicable if the derived type attribute is set to StringRuleItem-->
-                    <e900:Operand i:nil="false">ValueHere</e900:Operand>
-                    <e900:Operator>ValueHere</e900:Operator>
-                    <e900:Value i:nil="false">ValueHere</e900:Value>
-                  </e900:RuleItem>
-                </e900:Items>
-              </e900:RuleItemGroup>
-            </e900:AnotherRuleItemGroups>
-            <e900:RuleItemGroups i:nil="false">
-              <e900:RuleItemGroup>
-                <e900:Items i:nil="false">
-                  <e900:RuleItem i:type="-- derived type specified here with the appropriate prefix --">
-                    <e900:Type i:nil="false">ValueHere</e900:Type>
+                    <e288:Operand i:nil="false">ValueHere</e288:Operand>
+                    <e288:Operator>ValueHere</e288:Operator>
+                    <e288:Value i:nil="false">ValueHere</e288:Value>
+                  </e288:RuleItem>
+                </e288:Items>
+              </e288:RuleItemGroup>
+            </e288:AnotherRuleItemGroups>
+            <e288:RuleItemGroups i:nil="false">
+              <e288:RuleItemGroup>
+                <e288:Items i:nil="false">
+                  <e288:RuleItem i:type="-- derived type specified here with the appropriate prefix --">
+                    <e288:Type i:nil="false">ValueHere</e288:Type>
                     <!--These fields are applicable if the derived type attribute is set to StringRuleItem-->
-                    <e900:Operand i:nil="false">ValueHere</e900:Operand>
-                    <e900:Operator>ValueHere</e900:Operator>
-                    <e900:Value i:nil="false">ValueHere</e900:Value>
-                  </e900:RuleItem>
-                </e900:Items>
-              </e900:RuleItemGroup>
-            </e900:RuleItemGroups>
+                    <e288:Operand i:nil="false">ValueHere</e288:Operand>
+                    <e288:Operator>ValueHere</e288:Operator>
+                    <e288:Value i:nil="false">ValueHere</e288:Value>
+                  </e288:RuleItem>
+                </e288:Items>
+              </e288:RuleItemGroup>
+            </e288:RuleItemGroups>
             <!--These fields are applicable if the derived type attribute is set to PageVisitorsWhoDidNotVisitAnotherPageRule-->
-            <e900:ExcludeRuleItemGroups i:nil="false">
-              <e900:RuleItemGroup>
-                <e900:Items i:nil="false">
-                  <e900:RuleItem i:type="-- derived type specified here with the appropriate prefix --">
-                    <e900:Type i:nil="false">ValueHere</e900:Type>
+            <e288:ExcludeRuleItemGroups i:nil="false">
+              <e288:RuleItemGroup>
+                <e288:Items i:nil="false">
+                  <e288:RuleItem i:type="-- derived type specified here with the appropriate prefix --">
+                    <e288:Type i:nil="false">ValueHere</e288:Type>
                     <!--These fields are applicable if the derived type attribute is set to StringRuleItem-->
-                    <e900:Operand i:nil="false">ValueHere</e900:Operand>
-                    <e900:Operator>ValueHere</e900:Operator>
-                    <e900:Value i:nil="false">ValueHere</e900:Value>
-                  </e900:RuleItem>
-                </e900:Items>
-              </e900:RuleItemGroup>
-            </e900:ExcludeRuleItemGroups>
-            <e900:IncludeRuleItemGroups i:nil="false">
-              <e900:RuleItemGroup>
-                <e900:Items i:nil="false">
-                  <e900:RuleItem i:type="-- derived type specified here with the appropriate prefix --">
-                    <e900:Type i:nil="false">ValueHere</e900:Type>
+                    <e288:Operand i:nil="false">ValueHere</e288:Operand>
+                    <e288:Operator>ValueHere</e288:Operator>
+                    <e288:Value i:nil="false">ValueHere</e288:Value>
+                  </e288:RuleItem>
+                </e288:Items>
+              </e288:RuleItemGroup>
+            </e288:ExcludeRuleItemGroups>
+            <e288:IncludeRuleItemGroups i:nil="false">
+              <e288:RuleItemGroup>
+                <e288:Items i:nil="false">
+                  <e288:RuleItem i:type="-- derived type specified here with the appropriate prefix --">
+                    <e288:Type i:nil="false">ValueHere</e288:Type>
                     <!--These fields are applicable if the derived type attribute is set to StringRuleItem-->
-                    <e900:Operand i:nil="false">ValueHere</e900:Operand>
-                    <e900:Operator>ValueHere</e900:Operator>
-                    <e900:Value i:nil="false">ValueHere</e900:Value>
-                  </e900:RuleItem>
-                </e900:Items>
-              </e900:RuleItemGroup>
-            </e900:IncludeRuleItemGroups>
+                    <e288:Operand i:nil="false">ValueHere</e288:Operand>
+                    <e288:Operator>ValueHere</e288:Operator>
+                    <e288:Value i:nil="false">ValueHere</e288:Value>
+                  </e288:RuleItem>
+                </e288:Items>
+              </e288:RuleItemGroup>
+            </e288:IncludeRuleItemGroups>
             <!--These fields are applicable if the derived type attribute is set to CustomEventsRule-->
-            <e900:Action i:nil="false">ValueHere</e900:Action>
-            <e900:ActionOperator>ValueHere</e900:ActionOperator>
-            <e900:Category i:nil="false">ValueHere</e900:Category>
-            <e900:CategoryOperator>ValueHere</e900:CategoryOperator>
-            <e900:Label i:nil="false">ValueHere</e900:Label>
-            <e900:LabelOperator>ValueHere</e900:LabelOperator>
-            <e900:Value i:nil="false">ValueHere</e900:Value>
-            <e900:ValueOperator>ValueHere</e900:ValueOperator>
+            <e288:Action i:nil="false">ValueHere</e288:Action>
+            <e288:ActionOperator>ValueHere</e288:ActionOperator>
+            <e288:Category i:nil="false">ValueHere</e288:Category>
+            <e288:CategoryOperator>ValueHere</e288:CategoryOperator>
+            <e288:Label i:nil="false">ValueHere</e288:Label>
+            <e288:LabelOperator>ValueHere</e288:LabelOperator>
+            <e288:Value i:nil="false">ValueHere</e288:Value>
+            <e288:ValueOperator>ValueHere</e288:ValueOperator>
           </Rule>
           <TagId i:nil="false">ValueHere</TagId>
           <!--No additional fields are applicable if the derived type attribute is set to CustomAudience-->
@@ -172,11 +172,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e901="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e901:KeyValuePairOfstringstring>
-              <e901:key d4p1:nil="false">ValueHere</e901:key>
-              <e901:value d4p1:nil="false">ValueHere</e901:value>
-            </e901:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e289="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e289:KeyValuePairOfstringstring>
+              <e289:key d4p1:nil="false">ValueHere</e289:key>
+              <e289:value d4p1:nil="false">ValueHere</e289:value>
+            </e289:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

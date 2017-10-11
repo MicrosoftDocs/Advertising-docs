@@ -93,11 +93,11 @@ The following template shows the order of the [body](#response-body) and [header
           <BudgetType d4p1:nil="false">ValueHere</BudgetType>
           <DailyBudget d4p1:nil="false">ValueHere</DailyBudget>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e838="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e838:KeyValuePairOfstringstring>
-              <e838:key d4p1:nil="false">ValueHere</e838:key>
-              <e838:value d4p1:nil="false">ValueHere</e838:value>
-            </e838:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e226="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e226:KeyValuePairOfstringstring>
+              <e226:key d4p1:nil="false">ValueHere</e226:key>
+              <e226:value d4p1:nil="false">ValueHere</e226:value>
+            </e226:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
@@ -105,13 +105,13 @@ The following template shows the order of the [body](#response-body) and [header
           <Status d4p1:nil="false">ValueHere</Status>
           <TimeZone d4p1:nil="false">ValueHere</TimeZone>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e839="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e839:Parameters d4p1:nil="false">
-              <e839:CustomParameter>
-                <e839:Key d4p1:nil="false">ValueHere</e839:Key>
-                <e839:Value d4p1:nil="false">ValueHere</e839:Value>
-              </e839:CustomParameter>
-            </e839:Parameters>
+          <UrlCustomParameters xmlns:e227="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e227:Parameters d4p1:nil="false">
+              <e227:CustomParameter>
+                <e227:Key d4p1:nil="false">ValueHere</e227:Key>
+                <e227:Value d4p1:nil="false">ValueHere</e227:Value>
+              </e227:CustomParameter>
+            </e227:Parameters>
           </UrlCustomParameters>
           <CampaignType d4p1:nil="false">ValueHere</CampaignType>
           <Settings d4p1:nil="false">

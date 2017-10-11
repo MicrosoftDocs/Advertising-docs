@@ -50,46 +50,46 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <GetKeywordTrafficEstimatesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <CampaignEstimators xmlns:e703="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
-        <e703:CampaignEstimator>
-          <e703:AdGroupEstimators i:nil="false">
-            <e703:AdGroupEstimator>
-              <e703:AdGroupId i:nil="false">ValueHere</e703:AdGroupId>
-              <e703:KeywordEstimators i:nil="false">
-                <e703:KeywordEstimator>
-                  <Keyword xmlns:e704="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" i:nil="false">
-                    <e704:Id i:nil="false">ValueHere</e704:Id>
-                    <e704:MatchType>ValueHere</e704:MatchType>
-                    <e704:Text i:nil="false">ValueHere</e704:Text>
+      <CampaignEstimators xmlns:e91="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
+        <e91:CampaignEstimator>
+          <e91:AdGroupEstimators i:nil="false">
+            <e91:AdGroupEstimator>
+              <e91:AdGroupId i:nil="false">ValueHere</e91:AdGroupId>
+              <e91:KeywordEstimators i:nil="false">
+                <e91:KeywordEstimator>
+                  <Keyword xmlns:e92="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" i:nil="false">
+                    <e92:Id i:nil="false">ValueHere</e92:Id>
+                    <e92:MatchType>ValueHere</e92:MatchType>
+                    <e92:Text i:nil="false">ValueHere</e92:Text>
                   </Keyword>
-                  <e703:MaxCpc i:nil="false">ValueHere</e703:MaxCpc>
-                </e703:KeywordEstimator>
-              </e703:KeywordEstimators>
-              <e703:MaxCpc>ValueHere</e703:MaxCpc>
-            </e703:AdGroupEstimator>
-          </e703:AdGroupEstimators>
-          <e703:CampaignId i:nil="false">ValueHere</e703:CampaignId>
-          <Criteria xmlns:e705="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" i:nil="false">
-            <e705:Criterion i:type="-- derived type specified here with the appropriate prefix --">
+                  <e91:MaxCpc i:nil="false">ValueHere</e91:MaxCpc>
+                </e91:KeywordEstimator>
+              </e91:KeywordEstimators>
+              <e91:MaxCpc>ValueHere</e91:MaxCpc>
+            </e91:AdGroupEstimator>
+          </e91:AdGroupEstimators>
+          <e91:CampaignId i:nil="false">ValueHere</e91:CampaignId>
+          <Criteria xmlns:e93="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" i:nil="false">
+            <e93:Criterion i:type="-- derived type specified here with the appropriate prefix --">
               <!--This field is applicable if the derived type attribute is set to LocationCriterion-->
-              <e705:LocationId>ValueHere</e705:LocationId>
+              <e93:LocationId>ValueHere</e93:LocationId>
               <!--This field is applicable if the derived type attribute is set to LanguageCriterion-->
-              <e705:Language i:nil="false">ValueHere</e705:Language>
+              <e93:Language i:nil="false">ValueHere</e93:Language>
               <!--This field is applicable if the derived type attribute is set to NetworkCriterion-->
-              <e705:Network>ValueHere</e705:Network>
+              <e93:Network>ValueHere</e93:Network>
               <!--This field is applicable if the derived type attribute is set to DeviceCriterion-->
-              <e705:DeviceName i:nil="false">ValueHere</e705:DeviceName>
-            </e705:Criterion>
+              <e93:DeviceName i:nil="false">ValueHere</e93:DeviceName>
+            </e93:Criterion>
           </Criteria>
-          <e703:DailyBudget i:nil="false">ValueHere</e703:DailyBudget>
-          <NegativeKeywords xmlns:e706="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" i:nil="false">
-            <e706:NegativeKeyword>
-              <e706:Id i:nil="false">ValueHere</e706:Id>
-              <e706:MatchType>ValueHere</e706:MatchType>
-              <e706:Text i:nil="false">ValueHere</e706:Text>
-            </e706:NegativeKeyword>
+          <e91:DailyBudget i:nil="false">ValueHere</e91:DailyBudget>
+          <NegativeKeywords xmlns:e94="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" i:nil="false">
+            <e94:NegativeKeyword>
+              <e94:Id i:nil="false">ValueHere</e94:Id>
+              <e94:MatchType>ValueHere</e94:MatchType>
+              <e94:Text i:nil="false">ValueHere</e94:Text>
+            </e94:NegativeKeyword>
           </NegativeKeywords>
-        </e703:CampaignEstimator>
+        </e91:CampaignEstimator>
       </CampaignEstimators>
     </GetKeywordTrafficEstimatesRequest>
   </s:Body>
@@ -106,40 +106,40 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordTrafficEstimatesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <CampaignEstimates xmlns:e707="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e707:CampaignEstimate>
-          <e707:AdGroupEstimates d4p1:nil="false">
-            <e707:AdGroupEstimate>
-              <e707:AdGroupId d4p1:nil="false">ValueHere</e707:AdGroupId>
-              <e707:KeywordEstimates d4p1:nil="false">
-                <e707:KeywordEstimate>
-                  <Keyword xmlns:e708="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" d4p1:nil="false">
-                    <e708:Id d4p1:nil="false">ValueHere</e708:Id>
-                    <e708:MatchType>ValueHere</e708:MatchType>
-                    <e708:Text d4p1:nil="false">ValueHere</e708:Text>
+      <CampaignEstimates xmlns:e95="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e95:CampaignEstimate>
+          <e95:AdGroupEstimates d4p1:nil="false">
+            <e95:AdGroupEstimate>
+              <e95:AdGroupId d4p1:nil="false">ValueHere</e95:AdGroupId>
+              <e95:KeywordEstimates d4p1:nil="false">
+                <e95:KeywordEstimate>
+                  <Keyword xmlns:e96="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" d4p1:nil="false">
+                    <e96:Id d4p1:nil="false">ValueHere</e96:Id>
+                    <e96:MatchType>ValueHere</e96:MatchType>
+                    <e96:Text d4p1:nil="false">ValueHere</e96:Text>
                   </Keyword>
-                  <e707:Maximum d4p1:nil="false">
-                    <e707:AverageCpc>ValueHere</e707:AverageCpc>
-                    <e707:AveragePosition>ValueHere</e707:AveragePosition>
-                    <e707:Clicks>ValueHere</e707:Clicks>
-                    <e707:Ctr>ValueHere</e707:Ctr>
-                    <e707:Impressions>ValueHere</e707:Impressions>
-                    <e707:TotalCost>ValueHere</e707:TotalCost>
-                  </e707:Maximum>
-                  <e707:Minimum d4p1:nil="false">
-                    <e707:AverageCpc>ValueHere</e707:AverageCpc>
-                    <e707:AveragePosition>ValueHere</e707:AveragePosition>
-                    <e707:Clicks>ValueHere</e707:Clicks>
-                    <e707:Ctr>ValueHere</e707:Ctr>
-                    <e707:Impressions>ValueHere</e707:Impressions>
-                    <e707:TotalCost>ValueHere</e707:TotalCost>
-                  </e707:Minimum>
-                </e707:KeywordEstimate>
-              </e707:KeywordEstimates>
-            </e707:AdGroupEstimate>
-          </e707:AdGroupEstimates>
-          <e707:CampaignId d4p1:nil="false">ValueHere</e707:CampaignId>
-        </e707:CampaignEstimate>
+                  <e95:Maximum d4p1:nil="false">
+                    <e95:AverageCpc>ValueHere</e95:AverageCpc>
+                    <e95:AveragePosition>ValueHere</e95:AveragePosition>
+                    <e95:Clicks>ValueHere</e95:Clicks>
+                    <e95:Ctr>ValueHere</e95:Ctr>
+                    <e95:Impressions>ValueHere</e95:Impressions>
+                    <e95:TotalCost>ValueHere</e95:TotalCost>
+                  </e95:Maximum>
+                  <e95:Minimum d4p1:nil="false">
+                    <e95:AverageCpc>ValueHere</e95:AverageCpc>
+                    <e95:AveragePosition>ValueHere</e95:AveragePosition>
+                    <e95:Clicks>ValueHere</e95:Clicks>
+                    <e95:Ctr>ValueHere</e95:Ctr>
+                    <e95:Impressions>ValueHere</e95:Impressions>
+                    <e95:TotalCost>ValueHere</e95:TotalCost>
+                  </e95:Minimum>
+                </e95:KeywordEstimate>
+              </e95:KeywordEstimates>
+            </e95:AdGroupEstimate>
+          </e95:AdGroupEstimates>
+          <e95:CampaignId d4p1:nil="false">ValueHere</e95:CampaignId>
+        </e95:CampaignEstimate>
       </CampaignEstimates>
     </GetKeywordTrafficEstimatesResponse>
   </s:Body>

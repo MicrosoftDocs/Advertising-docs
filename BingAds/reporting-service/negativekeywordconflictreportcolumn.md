@@ -4,7 +4,7 @@ ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the attributes columns that you can include in the [NegativeKeywordConflictReportRequest](../reporting-service/negativekeywordconflictreportrequest.md).
+description: Defines the attributes columns that you can include in the NegativeKeywordConflictReportRequest.
 ---
 # NegativeKeywordConflictReportColumn Value Set
 Defines the attributes columns that you can include in the [NegativeKeywordConflictReportRequest](../reporting-service/negativekeywordconflictreportrequest.md).

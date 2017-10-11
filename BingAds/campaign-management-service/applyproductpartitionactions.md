@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Applies an add, update, or delete action to each of the specified [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md), which each contain a [ProductPartition](../campaign-management-service/productpartition.md).
+description: Applies an add, update, or delete action to each of the specified BiddableAdGroupCriterion or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md), which each contain a [ProductPartition](../campaign-management-service/productpartition.md).
 ---
 # ApplyProductPartitionActions Service Operation
 Applies an add, update, or delete action to each of the specified [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md), which each contain a [ProductPartition](../campaign-management-service/productpartition.md).
@@ -104,14 +104,14 @@ The following template shows the order of the [body](#request-body) and [header]
               <AudienceId i:nil="false">ValueHere</AudienceId>
               <AudienceType i:nil="false">ValueHere</AudienceType>
               <!--This field is applicable if the derived type attribute is set to Webpage-->
-              <Parameter xmlns:e765="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-                <e765:Conditions i:nil="false">
-                  <e765:WebpageCondition>
-                    <e765:Argument i:nil="false">ValueHere</e765:Argument>
-                    <e765:Operand>ValueHere</e765:Operand>
-                  </e765:WebpageCondition>
-                </e765:Conditions>
-                <e765:CriterionName i:nil="false">ValueHere</e765:CriterionName>
+              <Parameter xmlns:e153="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+                <e153:Conditions i:nil="false">
+                  <e153:WebpageCondition>
+                    <e153:Argument i:nil="false">ValueHere</e153:Argument>
+                    <e153:Operand>ValueHere</e153:Operand>
+                  </e153:WebpageCondition>
+                </e153:Conditions>
+                <e153:CriterionName i:nil="false">ValueHere</e153:CriterionName>
               </Parameter>
             </Criterion>
             <Id i:nil="false">ValueHere</Id>
@@ -127,11 +127,11 @@ The following template shows the order of the [body](#request-body) and [header]
             </CriterionBid>
             <DestinationUrl i:nil="false">ValueHere</DestinationUrl>
             <EditorialStatus i:nil="false">ValueHere</EditorialStatus>
-            <FinalAppUrls xmlns:e766="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-              <e766:AppUrl>
-                <e766:OsType i:nil="false">ValueHere</e766:OsType>
-                <e766:Url i:nil="false">ValueHere</e766:Url>
-              </e766:AppUrl>
+            <FinalAppUrls xmlns:e154="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+              <e154:AppUrl>
+                <e154:OsType i:nil="false">ValueHere</e154:OsType>
+                <e154:Url i:nil="false">ValueHere</e154:Url>
+              </e154:AppUrl>
             </FinalAppUrls>
             <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
               <a1:string>ValueHere</a1:string>
@@ -140,13 +140,13 @@ The following template shows the order of the [body](#request-body) and [header]
               <a1:string>ValueHere</a1:string>
             </FinalUrls>
             <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-            <UrlCustomParameters xmlns:e767="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-              <e767:Parameters i:nil="false">
-                <e767:CustomParameter>
-                  <e767:Key i:nil="false">ValueHere</e767:Key>
-                  <e767:Value i:nil="false">ValueHere</e767:Value>
-                </e767:CustomParameter>
-              </e767:Parameters>
+            <UrlCustomParameters xmlns:e155="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+              <e155:Parameters i:nil="false">
+                <e155:CustomParameter>
+                  <e155:Key i:nil="false">ValueHere</e155:Key>
+                  <e155:Value i:nil="false">ValueHere</e155:Value>
+                </e155:CustomParameter>
+              </e155:Parameters>
             </UrlCustomParameters>
             <!--No additional fields are applicable if the derived type attribute is set to NegativeAdGroupCriterion-->
           </AdGroupCriterion>
@@ -176,11 +176,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e768="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e768:KeyValuePairOfstringstring>
-              <e768:key d4p1:nil="false">ValueHere</e768:key>
-              <e768:value d4p1:nil="false">ValueHere</e768:value>
-            </e768:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e156="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e156:KeyValuePairOfstringstring>
+              <e156:key d4p1:nil="false">ValueHere</e156:key>
+              <e156:value d4p1:nil="false">ValueHere</e156:value>
+            </e156:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

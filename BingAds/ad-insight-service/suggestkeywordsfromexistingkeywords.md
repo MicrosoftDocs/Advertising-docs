@@ -86,16 +86,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SuggestKeywordsFromExistingKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordSuggestions xmlns:e710="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e710:KeywordSuggestion>
-          <e710:Keyword d4p1:nil="false">ValueHere</e710:Keyword>
-          <e710:SuggestionsAndConfidence d4p1:nil="false">
-            <e710:KeywordAndConfidence>
-              <e710:SuggestedKeyword d4p1:nil="false">ValueHere</e710:SuggestedKeyword>
-              <e710:ConfidenceScore>ValueHere</e710:ConfidenceScore>
-            </e710:KeywordAndConfidence>
-          </e710:SuggestionsAndConfidence>
-        </e710:KeywordSuggestion>
+      <KeywordSuggestions xmlns:e98="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e98:KeywordSuggestion>
+          <e98:Keyword d4p1:nil="false">ValueHere</e98:Keyword>
+          <e98:SuggestionsAndConfidence d4p1:nil="false">
+            <e98:KeywordAndConfidence>
+              <e98:SuggestedKeyword d4p1:nil="false">ValueHere</e98:SuggestedKeyword>
+              <e98:ConfidenceScore>ValueHere</e98:ConfidenceScore>
+            </e98:KeywordAndConfidence>
+          </e98:SuggestionsAndConfidence>
+        </e98:KeywordSuggestion>
       </KeywordSuggestions>
     </SuggestKeywordsFromExistingKeywordsResponse>
   </s:Body>

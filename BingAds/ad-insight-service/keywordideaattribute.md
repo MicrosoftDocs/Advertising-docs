@@ -4,7 +4,7 @@ ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Determines which properties of the [KeywordIdea](../ad-insight-service/keywordidea.md) object you want returned when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.
+description: Determines which properties of the KeywordIdea object you want returned when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.
 ---
 # KeywordIdeaAttribute Value Set
 Determines which properties of the [KeywordIdea](../ad-insight-service/keywordidea.md) object you want returned when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.

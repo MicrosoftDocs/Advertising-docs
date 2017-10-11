@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the possible status values of an [InsertionOrder](../customer-billing-service/insertionorder.md).
+description: Defines the possible status values of an InsertionOrder.
 ---
 # InsertionOrderStatus Value Set
 Defines the possible status values of an [InsertionOrder](../customer-billing-service/insertionorder.md).

@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the ascending or descending sort order of results for [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
+description: Defines the ascending or descending sort order of results for SearchInsertionOrders.
 ---
 # SortOrder Value Set
 Defines the ascending or descending sort order of results for [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).

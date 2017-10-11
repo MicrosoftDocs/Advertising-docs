@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the possible status values of a [ClientLink](../customer-management-service/clientlink.md).
+description: Defines the possible status values of a ClientLink.
 ---
 # ClientLinkStatus Value Set
 Defines the possible status values of a [ClientLink](../customer-management-service/clientlink.md).

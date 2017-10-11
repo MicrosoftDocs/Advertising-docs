@@ -50,22 +50,22 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SearchInsertionOrdersRequest xmlns="https://bingads.microsoft.com/Billing/v11">
-      <Predicates xmlns:e667="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e667:Predicate>
-          <e667:Field i:nil="false">ValueHere</e667:Field>
-          <e667:Operator>ValueHere</e667:Operator>
-          <e667:Value i:nil="false">ValueHere</e667:Value>
-        </e667:Predicate>
+      <Predicates xmlns:e55="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e55:Predicate>
+          <e55:Field i:nil="false">ValueHere</e55:Field>
+          <e55:Operator>ValueHere</e55:Operator>
+          <e55:Value i:nil="false">ValueHere</e55:Value>
+        </e55:Predicate>
       </Predicates>
-      <Ordering xmlns:e668="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e668:OrderBy>
-          <e668:Field>ValueHere</e668:Field>
-          <e668:Order>ValueHere</e668:Order>
-        </e668:OrderBy>
+      <Ordering xmlns:e56="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e56:OrderBy>
+          <e56:Field>ValueHere</e56:Field>
+          <e56:Order>ValueHere</e56:Order>
+        </e56:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e669="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e669:Index>ValueHere</e669:Index>
-        <e669:Size>ValueHere</e669:Size>
+      <PageInfo xmlns:e57="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e57:Index>ValueHere</e57:Index>
+        <e57:Size>ValueHere</e57:Size>
       </PageInfo>
     </SearchInsertionOrdersRequest>
   </s:Body>
@@ -82,25 +82,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SearchInsertionOrdersResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <InsertionOrders xmlns:e670="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e670:InsertionOrder>
-          <e670:AccountId>ValueHere</e670:AccountId>
-          <e670:BalanceAmount d4p1:nil="false">ValueHere</e670:BalanceAmount>
-          <e670:BookingCountryCode d4p1:nil="false">ValueHere</e670:BookingCountryCode>
-          <e670:Comment d4p1:nil="false">ValueHere</e670:Comment>
-          <e670:EndDate>ValueHere</e670:EndDate>
-          <e670:InsertionOrderId d4p1:nil="false">ValueHere</e670:InsertionOrderId>
-          <e670:LastModifiedByUserId d4p1:nil="false">ValueHere</e670:LastModifiedByUserId>
-          <e670:LastModifiedTime d4p1:nil="false">ValueHere</e670:LastModifiedTime>
-          <e670:NotificationThreshold d4p1:nil="false">ValueHere</e670:NotificationThreshold>
-          <e670:ReferenceId d4p1:nil="false">ValueHere</e670:ReferenceId>
-          <e670:SpendCapAmount>ValueHere</e670:SpendCapAmount>
-          <e670:StartDate>ValueHere</e670:StartDate>
-          <e670:Name d4p1:nil="false">ValueHere</e670:Name>
-          <e670:Status d4p1:nil="false">ValueHere</e670:Status>
-          <e670:PurchaseOrder d4p1:nil="false">ValueHere</e670:PurchaseOrder>
-          <e670:ChangePendingReview d4p1:nil="false">ValueHere</e670:ChangePendingReview>
-        </e670:InsertionOrder>
+      <InsertionOrders xmlns:e58="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e58:InsertionOrder>
+          <e58:AccountId>ValueHere</e58:AccountId>
+          <e58:BalanceAmount d4p1:nil="false">ValueHere</e58:BalanceAmount>
+          <e58:BookingCountryCode d4p1:nil="false">ValueHere</e58:BookingCountryCode>
+          <e58:Comment d4p1:nil="false">ValueHere</e58:Comment>
+          <e58:EndDate>ValueHere</e58:EndDate>
+          <e58:InsertionOrderId d4p1:nil="false">ValueHere</e58:InsertionOrderId>
+          <e58:LastModifiedByUserId d4p1:nil="false">ValueHere</e58:LastModifiedByUserId>
+          <e58:LastModifiedTime d4p1:nil="false">ValueHere</e58:LastModifiedTime>
+          <e58:NotificationThreshold d4p1:nil="false">ValueHere</e58:NotificationThreshold>
+          <e58:ReferenceId d4p1:nil="false">ValueHere</e58:ReferenceId>
+          <e58:SpendCapAmount>ValueHere</e58:SpendCapAmount>
+          <e58:StartDate>ValueHere</e58:StartDate>
+          <e58:Name d4p1:nil="false">ValueHere</e58:Name>
+          <e58:Status d4p1:nil="false">ValueHere</e58:Status>
+          <e58:PurchaseOrder d4p1:nil="false">ValueHere</e58:PurchaseOrder>
+          <e58:ChangePendingReview d4p1:nil="false">ValueHere</e58:ChangePendingReview>
+        </e58:InsertionOrder>
       </InsertionOrders>
     </SearchInsertionOrdersResponse>
   </s:Body>

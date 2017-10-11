@@ -55,11 +55,11 @@ The following template shows the order of the [body](#request-body) and [header]
     <AddSharedEntityRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <SharedEntity i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
         <AssociationCount i:nil="false">ValueHere</AssociationCount>
-        <ForwardCompatibilityMap xmlns:e758="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e758:KeyValuePairOfstringstring>
-            <e758:key i:nil="false">ValueHere</e758:key>
-            <e758:value i:nil="false">ValueHere</e758:value>
-          </e758:KeyValuePairOfstringstring>
+        <ForwardCompatibilityMap xmlns:e146="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e146:KeyValuePairOfstringstring>
+            <e146:key i:nil="false">ValueHere</e146:key>
+            <e146:value i:nil="false">ValueHere</e146:value>
+          </e146:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
         <Id i:nil="false">ValueHere</Id>
         <Name i:nil="false">ValueHere</Name>
@@ -69,11 +69,11 @@ The following template shows the order of the [body](#request-body) and [header]
       </SharedEntity>
       <ListItems i:nil="false">
         <SharedListItem i:type="-- derived type specified here with the appropriate prefix --">
-          <ForwardCompatibilityMap xmlns:e759="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e759:KeyValuePairOfstringstring>
-              <e759:key i:nil="false">ValueHere</e759:key>
-              <e759:value i:nil="false">ValueHere</e759:value>
-            </e759:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e147="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e147:KeyValuePairOfstringstring>
+              <e147:key i:nil="false">ValueHere</e147:key>
+              <e147:value i:nil="false">ValueHere</e147:value>
+            </e147:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Type i:nil="false">ValueHere</Type>
           <!--These fields are applicable if the derived type attribute is set to NegativeKeyword-->
@@ -106,11 +106,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e760="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e760:KeyValuePairOfstringstring>
-              <e760:key d4p1:nil="false">ValueHere</e760:key>
-              <e760:value d4p1:nil="false">ValueHere</e760:value>
-            </e760:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e148="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e148:KeyValuePairOfstringstring>
+              <e148:key d4p1:nil="false">ValueHere</e148:key>
+              <e148:value d4p1:nil="false">ValueHere</e148:value>
+            </e148:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

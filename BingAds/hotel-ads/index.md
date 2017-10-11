@@ -1,4 +1,11 @@
-# Hotel Ads
+---
+title: "Hotel Ads Overview"
+ms.service: "bing-ads"
+ms.topic: "article"
+author: "swhite-msft"
+ms.author: "scottwhi"
+---
+# Hotel Ads Overview
 > [!NOTE]
 > Hotel Ads is now under pilot and available to pilot participants only. Please contact your account manager for details.
 >

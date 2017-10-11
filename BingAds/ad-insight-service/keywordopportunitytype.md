@@ -4,7 +4,7 @@ ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the possible keyword opportunity types you can request when calling [GetKeywordOpportunities](../ad-insight-service/getkeywordopportunities.md).
+description: Defines the possible keyword opportunity types you can request when calling GetKeywordOpportunities.
 ---
 # KeywordOpportunityType Value Set
 Defines the possible keyword opportunity types you can request when calling [GetKeywordOpportunities](../ad-insight-service/getkeywordopportunities.md).

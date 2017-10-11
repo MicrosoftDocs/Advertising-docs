@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the field order of insertion orders returned using [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
+description: Defines the field order of insertion orders returned using SearchInsertionOrders.
 ---
 # OrderByField Value Set
 Defines the field order of insertion orders returned using [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
