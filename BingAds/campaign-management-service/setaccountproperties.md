@@ -25,9 +25,7 @@ The *SetAccountPropertiesRequest* object defines the [body](#request-body) and [
 The *SetAccountPropertiesResponse* object defines the [body](#response-body) and [header](#response-header) elements of the service operation response. The elements are returned in the same order as shown in the [Response SOAP](#response-soap).
 
 ### <a name="response-body"></a>Response Body Elements
-
-|Element|Description|Data Type|
-|-----------|---------------|-------------|
+There are not any elements in the operation's response body.
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

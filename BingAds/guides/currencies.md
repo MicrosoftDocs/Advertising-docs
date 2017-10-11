@@ -1,12 +1,12 @@
 ---
-title: "Currencies"
+title: "Bing Ads Currencies"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
 description: Find out about currencies supported with the Bing Ads API. 
 ---
-# Currencies
+# Bing Ads Currencies
 The following currency values are supported for Bing Ads advertising accounts.
 
 * [Bid and Budget Currencies](#bidandbudget)
@@ -41,7 +41,7 @@ With the exception of the Indonesian Rupiah (IDR), bid estimates are supported b
 
 
 |Currency Value|Description|Minimum Bid|Maximum Bid|Minimum Daily Budget|Minimum Monthly Budget|Maximum Monthly Budget|
-|------------------|---------------|---------------|---------------|------------------------|--------------------------|--------------------------|
+|-----|-----|-----|-----|-----|-------|-------|
 |ArgentinePeso|The Argentine Peso (ARS).|0.05|5,000.00|0.05|2.00|152,500,000.00|
 |AustralianDollar|The Australian Dollar (AUD).|0.01|1,000.00|0.05|5.00|30,000,000.00|
 |Baht|The Thai Baht (THB).|0.14|31,000.00|2.00|150.00|927,000,000.00|
@@ -74,7 +74,7 @@ With the exception of the Indonesian Rupiah (IDR), bid estimates are supported b
 The following currency codes are supported for conversion goals by setting the *CurrencyCode* element of the [ConversionGoalRevenue](~/campaign-management-service/conversiongoalrevenue.md) object.
 
 |Currency Code|Currency Name|
-|------------------|---------------|
+|-----|-----|
 |AED|United Arab Emirates Dirham|
 |ALL|Albanian Lek|
 |AMD|Armenian Dram|

@@ -283,11 +283,11 @@ The *AgencyContactName* and *AgencyCustomerId* elements are removed from the [Ad
 #### Proxy Client
 Update your proxy client to use the new endpoint address and namespace.
 
-The namespace is `https://bingads.microsoft.com/reporting-service/v11`.
+The namespace is `https://bingads.microsoft.com/Reporting/v11`.
 
-The production endpoint is [https://reporting.api.bingads.microsoft.com/Api/Advertiser/reporting-service/v11/ReportingService.svc](https://reporting.api.bingads.microsoft.com/Api/Advertiser/reporting-service/v11/ReportingService.svc).
+The production endpoint is [https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc).
 
-The sandbox endpoint is [https://reporting.api.sandbox.bingads.microsoft.com/Api/Advertiser/reporting-service/v11/ReportingService.svc](https://reporting.api.sandbox.bingads.microsoft.com/Api/Advertiser/reporting-service/v11/ReportingService.svc).
+The sandbox endpoint is [https://reporting.api.sandbox.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc](https://reporting.api.sandbox.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc).
 
 #### <a name="reporting-downloadedcolumns"></a>Consistency Between WSDL Contract and Downloaded Report Columns
 Previously there were some discrepancies between the report column value set names and the names of the columns in the downloaded reports. In Reporting API Version 11 most of the downloaded column names match the requested value. For example now when you submit a [KeywordPerformanceReportRequest](~/reporting-service/keywordperformancereportrequest.md) with the *BidMatchType* value from the [KeywordPerformanceReportColumn](~/reporting-service/keywordperformancereportcolumn.md) value set, the column name in the downloaded report is also *BidMatchType* in Reporting API Version 11. Previously in version 9, the column name in the downloaded report was *BiddedMatchType*.

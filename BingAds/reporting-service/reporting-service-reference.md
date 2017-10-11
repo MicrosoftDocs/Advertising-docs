@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Reference documentation for the Bing Ads Reporting API.
 ---
 # Reporting Service Reference
 The Reporting [service](~/guides/web-service-addresses.md) defines an Application Programming Interface (API) that you can use to request and download reports.

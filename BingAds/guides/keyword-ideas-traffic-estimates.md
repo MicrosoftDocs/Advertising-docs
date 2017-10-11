@@ -19,7 +19,7 @@ Given a list of existing keywords, the [GetKeywordIdeas](~/ad-insight-service/ge
 
 With the Bing Ads web application's Keyword Planner tool you search for new keywords using a phrase, website, or category as shown in the screen shot below.
  
-![GetKeywordIdeas to Keyword Planner UI](../guides/media/getkeywordideas-keyword-planner-ui.png)
+![GetKeywordIdeas to Keyword Planner UI](../guides/media/getkeywordideas-keyword-planner-ui.png "GetKeywordIdeas to Keyword Planner UI")
 
 Likewise with the [GetKeywordIdeas](~/ad-insight-service/getkeywordideas.md) operation you must specify one or more of the corresponding search parameters.
 -  The [QuerySearchParameter](~/ad-insight-service/querysearchparameter.md) corresponds to filling in *Product or service*.
@@ -37,7 +37,7 @@ Once you have already settled on an initial set of keywords, the [GetKeywordTraf
 
 With the Bing Ads web application's Keyword Planner tool under *Get performance and cost estimates* you are prompted to either enter keywords or upload a file with keywords. The [GetKeywordTrafficEstimates](~/ad-insight-service/getkeywordtrafficestimates.md) operation requires that you already have a list of keywords e.g., retrieved via the [GetKeywordIdeas](~/ad-insight-service/getkeywordideas.md) operation. 
 
-![GetKeywordTrafficEstimates to Keyword Planner UI](../guides/media/getkeywordtrafficestimates-keyword-planner-ui.png)
+![GetKeywordTrafficEstimates to Keyword Planner UI](../guides/media/getkeywordtrafficestimates-keyword-planner-ui.png "GetKeywordTrafficEstimates to Keyword Planner UI")
 
 The following inputs are required for the [GetKeywordTrafficEstimates](~/ad-insight-service/getkeywordtrafficestimates.md) operation.
 -  In the *Criteria* element of the [CampaignEstimator](~/ad-insight-service/campaignestimator.md) object you must specify all of these criteria: [LanguageCriterion](~/ad-insight-service/languagecriterion.md), [LocationCriterion](~/ad-insight-service/locationcriterion.md), and [NetworkCriterion](~/ad-insight-service/networkcriterion.md).

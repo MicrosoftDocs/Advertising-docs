@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Reference documentation for the Bing Ads Customer Management API.
 ---
 # Customer Management Service Reference
 The Customer Management [service](~/guides/web-service-addresses.md) defines an Application Programming Interface (API) that you use to manage customers, accounts, and users.

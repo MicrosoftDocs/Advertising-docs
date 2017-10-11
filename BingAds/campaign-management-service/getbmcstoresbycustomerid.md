@@ -13,9 +13,7 @@ Gets the Bing Merchant Center stores for the specified customer.
 The *GetBMCStoresByCustomerIdRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
 ### <a name="request-body"></a>Request Body Elements
-
-|Element|Description|Data Type|
-|-----------|---------------|-------------|
+There are not any elements in the operation's request body.
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

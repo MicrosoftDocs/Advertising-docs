@@ -36,7 +36,7 @@ We'll create a virtual environment for local development. In your project right-
 
 -   Make sure the option to **Download and install packages** is checked.
 
-![pythonsdk_PTVS_AddVirtualEnv](../guides/media/pythonsdk-ptvs-addvirtualenv.png "pythonsdk_PTVS_AddVirtualEnv")
+![Add virtual env](../guides/media/pythonsdk-ptvs-addvirtualenv.png "Add virtual env")
 
 > [!NOTE]
 > For more information about Python virtual environments, see [PEP 405 - Python Virtual Environments](https://www.python.org/dev/peps/pep-0405/).

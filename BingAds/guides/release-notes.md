@@ -200,13 +200,9 @@ Bulk entity support for new version 11 features e.g. *BulkPriceAdExtension* will
 
 ### <a name="reporting-v11-dsa-may2017"></a>Dynamic Search Ads Reports
 The the following reports are added for Dynamic Search Ads.
-
-|Report Request|Report Filter|Report Column|
-|-------------|-----------------|-----------------|
-|[DSAAutoTargetPerformanceReportRequest](~/reporting-service/dsaautotargetperformancereportrequest.md)|[DSAAutoTargetPerformanceReportFilter](~/reporting-service/dsaautotargetperformancereportfilter.md)|[DSAAutoTargetPerformanceReportColumn](~/reporting-service/dsaautotargetperformancereportcolumn.md)|
-|[DSACategoryPerformanceReportRequest](~/reporting-service/dsacategoryperformancereportrequest.md)|[DSACategoryPerformanceReportFilter](~/reporting-service/dsacategoryperformancereportfilter.md)|[DSACategoryPerformanceReportColumn](~/reporting-service/dsacategoryperformancereportcolumn.md)|
-|[DSASearchQueryPerformanceReportRequest](~/reporting-service/dsasearchqueryperformancereportrequest.md)|[DSASearchQueryPerformanceReportFilter](~/reporting-service/dsasearchqueryperformancereportfilter.md)|[DSASearchQueryPerformanceReportColumn](~/reporting-service/dsasearchqueryperformancereportcolumn.md)|
-
+- [DSAAutoTargetPerformanceReportRequest](~/reporting-service/dsaautotargetperformancereportrequest.md)  
+- [DSACategoryPerformanceReportRequest](~/reporting-service/dsacategoryperformancereportrequest.md)  
+- [DSASearchQueryPerformanceReportRequest](~/reporting-service/dsasearchqueryperformancereportrequest.md)
 
 ## <a name="april2017"></a>April 2017
 For information about this month's changes to Bing Ads services, see the following sections.
@@ -221,7 +217,7 @@ A preview of the Bing Ads API Version 11 is released to sandbox. For more detail
 ### <a name="php-sdk-april2017"></a>Bing Ads PHP Software Development Kit (SDK)
 The Bing Ads PHP SDK is now available. 
 
-For details please see the [blog post](https://blogs.msdn.microsoft.com/bing-ads-api/2017/04/05/announcing-bing-ads-php-sdk/) and [Get Started Using PHP with Bing Ads Services](get-started-php.md).
+For details please see the [blog post](https://blogs.msdn.microsoft.com/bing_ads_api/2017/04/05/announcing-bing-ads-php-sdk/) and [Get Started Using PHP with Bing Ads Services](get-started-php.md).
 
 ### <a name="productsearchqueryperformancereport-april2017"></a>Bing Shopping Product Search Query Performance Report
 The Product Search Query performance report is now available for Bing Shopping Campaigns. Submit the [ProductPartitionPerformanceReportRequest](~/reporting-service/productpartitionperformancereportrequest.md) to see what your audience is searching for when your product ads are shown.

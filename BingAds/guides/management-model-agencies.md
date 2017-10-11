@@ -37,7 +37,7 @@ To update a client link, the *TimeStamp* element is required for validation, so 
 The client may only use the *UpdateClientLinks* operation to update the status as LinkAccepted or LinkDeclined.
 
 > [!NOTE]
-> The client may accept or decline through an application built on the Bing Ads API, or through the **Accounts &amp; Billing** tab in the Bing Ads web application. In either case the client credentials must be used to accept or decline. For more information, see [Accept an agency request](http://advertise.bingads.microsoft.com/help-topic/how-to/moonshot_proc_acceptagencyinvitation.htm/accept-an-agency-request).
+> The client may accept or decline through an application built on the Bing Ads API, or through the **Accounts & Billing** tab in the Bing Ads web application. In either case the client credentials must be used to accept or decline. For more information, see the Bing Ads help article [Getting started as an agency with Bing Ads](https://help.bingads.microsoft.com/#apex/3/en/52083/3-500).
 
 If the client sets the status to LinkDeclined, the client link lifecycle ends. You may not update a declined client link, and you must send a new invitation to manage the client account. If the client sets the status to LinkAccepted, the status transitions to LinkInProgress. If the link process succeeds, the service updates the client link status to Active.
 
@@ -56,22 +56,6 @@ If the unlink process fails, possibly due to a billing transition error, the cli
 ![Unlink from Client](../guides/media/client-unlink-status-flow.png "Unlink from Client")
 
 For code examples that show how to add and update a client link invitation, see [Manage Client Code Example](../guides/code-example-manage-client.md).
-
-## Credentials and Account Access
-The following are the header elements and the corresponding identifiers that an agency would use.
-
-> [!NOTE]
-> If you use the *AuthenticationToken*, the *UserName* and *Password* elements are ignored. For more information, see [Authentication with OAuth](../guides/authentication-oauth.md).
-
-|Header Element|Owner|
-|------------------|---------|
-|AuthenticationToken|The OAuth access token corresponding to the agency's linked Microsoft Account.|
-|UserName|The sign-in user name.<br /><br />**Note:** For agencies, this is the username within the agency's customer shell that has the Super Admin, Advertiser Campaign Manager, or Viewer role. For more information see [Account Permissions and the Developer Token](../guides/customer-accounts.md#accountpermissions) and [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles) within [Customer Accounts](../guides/customer-accounts.md).|
-|Password|The sign-in password of the user specified in UserName.|
-|DeveloperToken|The agency's token.<br /><br />**Note:** It is recommended for an agency to use the multi-user developer token to authenticate with any agency user. An agency needs only one such token. It is not necessary to request a single-user token for each user. For more information about token types, see [Account Permissions and the Developer Token](../guides/customer-accounts.md#accountpermissions).|
-|CustomerId|The identifier of the customer that contains and owns the account. If you manage an account of another customer, you should use that customer ID instead of your own customer ID. |
-|CustomerAccountId|A managed customer's account ID.|
-For more information about customer and account identifiers, see [Get Started With the Bing Ads API](../guides/get-started.md).
 
 ## See Also
 [Customer Accounts](../guides/customer-accounts.md)  

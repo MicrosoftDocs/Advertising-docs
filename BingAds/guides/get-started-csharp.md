@@ -30,7 +30,7 @@ Install the Bing Ads .NET SDK through [NuGet](https://www.nuget.org/packages/Mic
 1. Right-click on your Visual Studio project and select **Manage NuGet Packages**.
 
 2. Browse online for *Microsoft.BingAds.SDK* e.g., try searching for *bingads*..
-   ![](~/guides/media/net-sdk-install.png)  
+   ![Install .NET SDK](~/guides/media/net-sdk-install.png "Install .NET SDK")  
 
 3. Select the project or projects where you want the SDK installed, and click the **Install** button*.
 

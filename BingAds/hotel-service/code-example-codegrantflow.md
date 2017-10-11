@@ -5,6 +5,8 @@ ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"
 description: 
+dev_langs:
+  - csharp
 ---
 # CodeGrantFlow Code Example
 The following example shows a simple browser implementation for getting an OAuth access and refresh token. For more information about the calls made in this example, see [Authentication with OAuth](~/guides/authentication-oauth.md).

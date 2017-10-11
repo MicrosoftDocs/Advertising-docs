@@ -22,7 +22,7 @@ You must first [register an application](../guides/authentication-oauth.md#regis
 2.  Navigate to your local project directory e.g. *c:\dev\BingAdsPHP* and [install](~/guides/get-started-php.md#installation) the Bing Ads PHP SDK. You should now see the vendor directory which contains both the SDK source and samples. 
 3.  Copy both *AuthHelper.php* and the *V11* directory (with included samples) to your local project directory e.g. copy from *c:\dev\BingAdsPHP\vendor\microsoft\bingads\samples* to *c:\dev\BingAdsPHP*.
 
-    ![Sample PHP Project Directory](../guides/media/sample-php-project-directory.PNG)  
+    ![Sample PHP Project Directory](../guides/media/sample-php-project-directory.png "Sample PHP Project Directory")  
     > [!NOTE]
     > You have alternative options for example, changing the path of *autoload.php* within *AuthHelper.php* and within each sample that you want to run. You could also write your application from scratch in the *c:\dev\BingAdsPHP* directory. 
     

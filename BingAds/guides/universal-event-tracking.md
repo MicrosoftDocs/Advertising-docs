@@ -9,7 +9,7 @@ description: Universal event tracking is a prerequisite for conversion tracking 
 # Universal Event Tracking
 UET is a powerful Bing Ads tool. You just need to create one single UET tag and then add it to your website once. This tag records what customers do on your website then Bing Ads starts collecting that data allowing you to track conversions (like purchases or leads) or target audiences using remarketing lists. UET is a prerequisite for conversion tracking and remarketing in paid search.
 
-![Universal Event Tracking](../guides/media/universal-event-tracking.png)
+![Universal Event Tracking](../guides/media/universal-event-tracking.png "Universal Event Tracking")
 
 There are a few steps to get this set up. You will need to:
 * Create a [UET tag](#uet) once in Bing Ads
@@ -74,9 +74,9 @@ With the Bulk service you can use the following record types to download and upl
 You can use the *Remarketing Targeting Setting* field in the [Ad Group](~/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all remarketing lists that are associated with this ad group. 
 
 ### <a name="remarketing_campaign"></a>Remarketing Campaign Management APIs
-If you are using the Campaign Management service you can add, get, update, or delete the [RemarketingList](~/campaign-management-service/remarketinglist.md), with the respective [AddAudiences](~/campaign-management-service/addaudiences.md), [GetAudiencesByIds](~/campaign-management-service/getaudiencesbyids.md), [UpdateAudiences](~/campaign-management-service/updateaudiences.md), and [DeleteAudiences](~/campaign-management-service/deleteaudiences.md) operations.
+The [RemarketingList](~/campaign-management-service/remarketinglist.md) derives from the [Audience](~/campaign-management-service/audience.md) base class. If you are using the Campaign Management service you can add, get, update, or delete the [RemarketingList](~/campaign-management-service/remarketinglist.md), with the respective [AddAudiences](~/campaign-management-service/addaudiences.md), [GetAudiencesByIds](~/campaign-management-service/getaudiencesbyids.md), [UpdateAudiences](~/campaign-management-service/updateaudiences.md), and [DeleteAudiences](~/campaign-management-service/deleteaudiences.md) operations.
 
-To add, get, update, or delete the ad group remarketing list association between your remarketing list and ad group (whether associations or exclusions), use the [AdGroupCriterion](~/campaign-management-service/adgroupcriterion.md) object with the respective [AddAdGroupCriterions](~/campaign-management-service/addadgroupcriterions.md), [GetAdGroupCriterionsByIds](~/campaign-management-service/getadgroupcriterionsbyids.md), [UpdateAdGroupCriterions](~/campaign-management-service/updateadgroupcriterions.md), and [DeleteAdGroupCriterions](~/campaign-management-service/deleteadgroupcriterions.md) operations. 
+To add, get, update, or delete the ad group remarketing list association between your remarketing list and ad group (whether associations or exclusions), use the [BiddableAdGroupCriterion](~/campaign-management-service/biddableadgroupcriterion.md) object with the respective [AddAdGroupCriterions](~/campaign-management-service/addadgroupcriterions.md), [GetAdGroupCriterionsByIds](~/campaign-management-service/getadgroupcriterionsbyids.md), [UpdateAdGroupCriterions](~/campaign-management-service/updateadgroupcriterions.md), and [DeleteAdGroupCriterions](~/campaign-management-service/deleteadgroupcriterions.md) operations. You can use the [NegativeAdGroupCriterion](~/campaign-management-service/negativeadgroupcriterion.md) object with the same operations to set remarketing list exclusions. 
 
 
 ## See Also

@@ -22,24 +22,8 @@ The following figure shows two child customers created and managed by a reseller
 
 ![Management Model Direct Reseller](../guides/media/management-model-reseller.png "Management Model Direct Reseller")
 
-## Credentials and Account Access
-The following are the header elements and the corresponding identifiers that a reseller would use.
-
-> [!NOTE]
-> If you use the *AuthenticationToken*, the *UserName* and *Password* elements are ignored. For more information, see [Authentication with OAuth](../guides/authentication-oauth.md).
-
-|Header Element|Owner|
-|------------------|---------|
-|AuthenticationToken|The OAuth access token corresponding to the aggregator's linked Microsoft Account.|
-|UserName|The reseller's aggregator sign-in user name.<br /><br />**Note:** As a best practice the reseller's aggregator user should always be used. If a unique business requirement is flagged, it is possible to create new users within the managed customers and join them with a multi-user token in calls to some service operations. For more information see [Account Permissions and the Developer Token](../guides/customer-accounts.md#accountpermissions) and [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles) within [Customer Accounts](../guides/customer-accounts.md).|
-|Password|The sign-in password of the user specified in UserName.|
-|DeveloperToken|The reseller's token.<br /><br />**Note:** A single-user (SU) developer token is sufficient to authenticate with the corresponding user. For more information on token types, see [Account Permissions and the Developer Token](../guides/customer-accounts.md#accountpermissions).|
-|CustomerId|The identifier of the customer that contains and owns the account. If you manage an account of another customer e.g. child customer created via [SignupCustomer](~/customer-management-service/signupcustomer.md), you should use that customer ID instead of your own customer ID. |
-|CustomerAccountId|A managed customer's account ID.|
-For more information about customer and account identifiers, see [Get Started With the Bing Ads API](../guides/get-started.md).
-
 ## <a name="reseller_signup"></a>How to Get Reseller API Credentials
-To request reseller API credentials, please contact your designated account management team for details about getting the API Reseller role. If you are not currently a reseller but would like to become one, see [Become a Microsoft Advertising Authorized Reseller](https://advertise.bingads.microsoft.com/en-us/bing-partners/welcome).
+To request reseller API credentials, please contact your designated account management team for details about getting the API Reseller role. If you are not currently a reseller but would like to become one, go to the [The Bing Partner Program](https://advertise.bingads.microsoft.com/en-us/bing-partners/welcome) welcome page.
 
 ## See Also
 [Customer Accounts](../guides/customer-accounts.md)  

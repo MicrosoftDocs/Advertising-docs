@@ -5,6 +5,8 @@ ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"
 description: 
+dev_langs:
+  - csharp
 ---
 # OAuth Code Example
 The following topics break out a simple desktop implementation used to get an access and refresh token. The example does not support the recommended state query parameter.

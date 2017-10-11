@@ -5,6 +5,8 @@ ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"
 description: 
+dev_langs:
+  - csharp
 ---
 # Hotel Code Example
 The following example shows the requests you use to list, get, and update hotels. The example also shows how to associate a hotel with a hotel group. 

@@ -23,7 +23,7 @@ Countdown customizers let you easily add a countdown ? by day, hour, and then mi
 
 Let's say you're going to have a big online sale for 3 days from February 14 through 16 (ending at midnight as soon as February 17th begins). With the countdown syntax, you could set the ad's Title Part 2 like this: "Sale ends in {=countdown("2018/02/17 00:00:00","en-us",3)}!". Here's when your ad would run and examples of how it would look:
 
-![countdown](../guides/media/countdown.png)
+![Expanded Text Ad Countdown](../guides/media/countdown.png "Expanded Text Ad Countdown")
 
 After an ad's countdown ends, the ad will stop running but will retain the status *Active*. You can make the ad start running again by either:  
 -  Updating the ad's Countdown ends date to a point in the future, or

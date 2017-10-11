@@ -1,12 +1,12 @@
 ---
-title: "Code Examples"
+title: "Bing Ads Code Examples"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
 description: Discover code examples in C#, Java, PHP, and Python.
 ---
-# Code Examples
+# Bing Ads Code Examples
 Get started developing Bing Ads applications in any programming language which supports web services. Samples are provided in the docs listed below.
 
 |Title|Description|

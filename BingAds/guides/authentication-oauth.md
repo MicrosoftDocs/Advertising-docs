@@ -42,23 +42,23 @@ Before you can manage authentication for users of your Bing Ads application, you
 
 2.  Under **Converged applications**, click **Add an app**.
 
-    ![Register add app](../guides/media/register-add-app.png)
+    ![Add an app](../guides/media/register-add-app.png "Add an app")
     
     If you have previously registered Live SDK applications, then you will also see an option to add another Live SDK application. We recommend adding all new apps under **Converged applications**.  At this time you are not required to migrate app registrations. If migration away from **Live SDK applications** is required in the future, we will announce it well in advance.
 
 3.  Provide the application name and click **Create application**.
 
-    ![Create application](../guides/media/create-application.png)
+    ![Create application](../guides/media/create-application.png "Create application")
 
 4.  Click **Add Platform** and choose *Web* if you want to register a web application, and otherwise select *Native Application*. 
 
-    ![Register add platform](../guides/media/register-add-platform.PNG)
+    ![Add platform](../guides/media/register-add-platform.PNG "Add platform")
     
     If you register a native app you should ignore the provided redirect URI and instead use *https://login.live.com/oauth20_desktop.srf* as the redirect URI. If you register a web app, then you must also provide your exact redirect URI (including for example the *https* prefix).
 
 5.  Under **Advanced Options**, check the box for **Live SDK support**.
 
-    ![Live SDK support](../guides/media/live-sdk-support.png)
+    ![Live SDK support](../guides/media/live-sdk-support.png "Live SDK support")
 
 6.  Save your changes and take note of your *Application Id*. You will use it as the CLIENT_ID in the OAuth grant flow. Also take note of your client secret and redirect URI if you registered a web application. You will also use these values to manage authentication with OAuth.
 

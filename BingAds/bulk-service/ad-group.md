@@ -249,12 +249,8 @@ Specifying a content match bid at the keyword level overrides the ad group’s c
 ### <a name="contentnetwork"></a>Content Network
 Determines whether the ads within this ad group will be displayed on the content distribution channel.
 
-> [!NOTE]
-> The content ad distribution channel is not supported for ad groups in Bing Shopping campaigns or Dynamic Search Ads campaigns.
-
 > [!IMPORTANT]
-> Bing Ads no longer serves ads on the content network. Starting July 30th, 2017 you won't be able to set the Content ad distribution either. If you try to add or update an ad group with ad distribution set only to Content, the *CampaignServiceAdGroupMediumNotAllowedForDistributionChannel* error will be returned.  If you try to add or update an ad group with ad distribution set to both Search and Content, the operation will succeed, however the ad distribution will be stored as Search only. By end of Q3 calendar 2017, Bing Ads will migrate the remaining Content ad groups to Search only. Then when you retrieve the ad groups which were previously set to Search and Content or Content
-only, the ad distribution will be Search only.  
+> Bing Ads no longer serves ads on the content network. Starting July 30th, 2017 you cannot set the Content ad distribution either. If you try to add or update an ad group with ad distribution set only to Content, the *CampaignServiceAdGroupMediumNotAllowedForDistributionChannel* error will be returned.  If you try to add or update an ad group with ad distribution set to both Search and Content, the operation will succeed, however the ad distribution will be stored as Search only. By end of calendar year 2017, Bing Ads will migrate the remaining Content ad groups to Search only. Then when you retrieve the ad groups which were previously set to Search and Content or Content only, the ad distribution will be Search only.  
 
 Set the value *On* for ad distribution on the content network, and otherwise set the value *Off*.
 

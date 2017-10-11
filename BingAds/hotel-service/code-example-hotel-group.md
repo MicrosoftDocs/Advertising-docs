@@ -5,6 +5,8 @@ ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"
 description: 
+dev_langs:
+  - csharp
 ---
 # Hotel Group Code Example
 The following example shows the requests you use to list, get, add, and update hotel groups. 

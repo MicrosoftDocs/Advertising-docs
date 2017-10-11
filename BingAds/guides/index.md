@@ -23,7 +23,7 @@ When you advertise using Bing Ads, your search ads can appear on the search resu
 
 Your ads can appear on search results page when a customer does a search on Bing. Where you ad appears on search results pages is determined by the keywords you use to associate your ads. For example, Sarah owns a toy store and wants to create ads for kids' electronics. She might include keywords like "walkie-talkies", "electronic pets", and "kids' music players" so her ads could be more relevant to customers' searches, and show above or next to the search results.
 
-![overview_textad](../guides/media/overview-textad.png "overview_textad")
+![Expanded Text Ad](../guides/media/overview-textad.png "Expanded Text Ad")
 
 To see where Bing Ads is available and whether your ads will run, please see [Where does Bing Ads show your ads?](https://help.bingads.microsoft.com/#apex/3/en/50873/0) You can also set your ads to the languages your customers speak, which will influence where your ads will appear. For example, if Sarah wants her ads to be in German, her ads can appear not only in Germany but Austria and Switzerland as well. For more information, see [Ad Languages](../guides/ad-languages.md).
 
@@ -39,7 +39,7 @@ A Bing Shopping campaign enables you to advertise the products from your Bing Me
 ## <a name="audience"></a>Show ads to your target audience
 Your ads can appear specifically for customers on the go, who use their smartphones and tablets to search and browse the Internet. Or you can create ads that appear on both desktops and smartphones but prioritize where you want the ads to appear more often.
 
-![overview_mobilead](../guides/media/overview-mobilead.png "overview_mobilead")
+![Search results on mobile](../guides/media/overview-mobilead.png "Search results on mobile")
 
 You can show your ads to customers in specific locations, like cities or countries. For example, Sarah wants only local customers to see her ads. She can set your ads to appear to customers within a 20-mile radius around her shop by using radius targeting.
 
