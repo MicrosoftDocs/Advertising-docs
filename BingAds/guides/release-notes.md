@@ -1,11 +1,12 @@
 ---
-title: "Release Notes"
+title: "Bing Ads API Release Notes"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Get information about the changes to the Bing Ads services for each month.
 ---
-# Release Notes
+# Bing Ads API Release Notes
 For information about the changes to the Bing Ads services for each month, see the following sections.
 
 ## <a name="september2017"></a>September 2017

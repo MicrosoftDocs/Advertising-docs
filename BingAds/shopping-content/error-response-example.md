@@ -2,8 +2,9 @@
 title: "Error Response Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Error Response Example
 The error response varies depending on the URI being called. See the following responses for JSON and XML examples.

@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Learn about the Bing Ads entity hierarchy to plan your campaign setup.
 ---
 # Entity Hierarchy and Limits
 The following figure shows the high level Bing Ads entity object model from the perspective of one customer that has one or more accounts. For information on services available to manage Bing Ads entities, see [Bing Ads API Overview](~/guides/index.md).
@@ -298,9 +299,9 @@ The following table defines limits for keyword properties.
 |Destination Url|The string can contain a maximum of 1,024 characters.|
 |Final Url|The string can contain a maximum of 2,048 characters.|
 |Final Mobile Url|The string can contain a maximum of 2,048 characters.|
-|Param1|The string can contain a maximum of 1,022 characters.<br /><br />**Note:** The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
-|Param2|The string can contain a maximum of 70 characters.<br /><br />**Note:** The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
-|Param3|The string can contain a maximum of 70 characters.<br /><br />**Note:** The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
+|Param1|The string can contain a maximum of 1,022 characters.<br /><br />The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
+|Param2|The string can contain a maximum of 70 characters.<br /><br />The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
+|Param3|The string can contain a maximum of 70 characters.<br /><br />The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
 |Text|The string can contain a maximum of 100 characters.|
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 

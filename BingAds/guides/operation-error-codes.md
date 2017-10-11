@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Reference documentation for service operation error codes.
 ---
 # Operation Error Codes
 Bing Ads service operations may return error codes depending on the context. The list provided below includes error codes across all Bing Ads services. For information about error codes per service operation, see the reference page for each operation.
@@ -1005,7 +1006,8 @@ CampaignServiceEditorialValidationError
 **Description**
 The specified entity did not pass editorial validation. Please see the *ReasonCode* element of this error object for details.
 
-**Note:** For a list of editorial reason codes, see [Bing Ads Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md).
+> [!NOTE] 
+> For a list of editorial reason codes, see [Bing Ads Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md).
 
 ***
 
@@ -3738,19 +3740,6 @@ Not yet implemented.
 ***
 
 **Numeric Code**
-1468
-
-**Symbolic Error Code**
-CampaignServiceGeoTargetsAndBusinessTargetsMutuallyExclusive
-
-**Description**
-Geographic targets (Country/State/MetroArea/City) and Radius targets are mutually exclusive.
-
-**Note:** Beginning in Q3 2014 this error is no longer available, and you can specify geographical and radius targets in the same target object. For example you can specify both a country target and radius target.
-
-***
-
-**Numeric Code**
 1471
 
 **Symbolic Error Code**
@@ -5098,7 +5087,8 @@ Not applicable
 **Description**
 Customer Threshold can only be set by users belonging to the bill to customer.
 
-**Note:** This error might be returned by the *UpdateAccount* operation if you do not have permissions to update the payment method. You can remove the optional fields from the update request and try again.
+> [!NOTE] 
+> This error might be returned by the *UpdateAccount* operation if you do not have permissions to update the payment method. You can remove the optional fields from the update request and try again.
  
 ***
 
@@ -5111,7 +5101,8 @@ Not applicable
 **Description**
 Billing of the balance amount in the account failed.
 
-**Note:** This error could occur when attempting to delete an account. Before an account can be deleted the final billing must succeed.
+> [!NOTE] 
+> This error could occur when attempting to delete an account. Before an account can be deleted the final billing must succeed.
 
 ***
 ## 2500
@@ -5887,7 +5878,8 @@ CampaignServiceAccountTooBigToDownload
 **Description**
 The account has more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) to download the account's campaigns in multiple requests. The Details field contains the campaign identifiers under the account.
 
-**Note:** Calling the [DownloadCampaignsByAccountIds](~/bulk-service/downloadcampaignsbyaccountids.md) operation with an account that contains more than four million keywords will fail.
+> [!NOTE] 
+> Calling the [DownloadCampaignsByAccountIds](~/bulk-service/downloadcampaignsbyaccountids.md) operation with an account that contains more than four million keywords will fail.
 
 ***
 
@@ -5988,7 +5980,8 @@ BulkServiceCampaignsTooBigToDownload
 **Description**
 The campaigns included in the download have more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) with fewer campaigns.
 
-**Note:** Calling the [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) operation with an account that contains more than eight million keywords will fail.
+> [!NOTE] 
+> Calling the [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) operation with an account that contains more than eight million keywords will fail.
 
 ***
 
@@ -7912,7 +7905,8 @@ CampaignServiceMediaTypeInvalid
 **Description**
 The type of media is not valid.
 
-**Note:** This error may be thrown during a call to the [AddMedia](~/campaign-management-service/addmedia.md) operation if either the media *Type* or *MediaType* is invalid.
+> [!NOTE] 
+> This error may be thrown during a call to the [AddMedia](~/campaign-management-service/addmedia.md) operation if either the media *Type* or *MediaType* is invalid.
 
 ***
 

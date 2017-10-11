@@ -2,8 +2,9 @@
 title: "Hotel Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Hotel Code Example
 The following example shows the requests you use to list, get, and update hotels. The example also shows how to associate a hotel with a hotel group. 

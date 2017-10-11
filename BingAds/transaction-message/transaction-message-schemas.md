@@ -2,8 +2,9 @@
 title: "Transaction Message Schemas"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Transaction Message Schemas
 The Transaction XSD (transaction.xsd) defines the schema for Bing Hotel's transaction message. The schema defines the objects that you use to specify itineraries. For information about the objects and elements that Bing uses, see [Transaction Message Reference](../transaction-message/reference.md).

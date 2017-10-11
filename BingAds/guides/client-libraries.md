@@ -4,9 +4,10 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: The Bing Ads Software Development Kits enhance the experience of developing Bing Ads applications with .NET, Java, PHP, and Python languages.
 ---
 # Client Libraries
-You can develop Bing Ads applications with any programming language that supports web services. The Bing Ads Software Development Kits (SDK) enhance the experience of developing Bing Ads applications with .NET, Java, and Python languages. Each SDK includes a proxy to all Bing Ads API web services and abstracts low level details of authentication with OAuth. You can use the high level *BulkServiceManager* and *ReportingServiceManager* interfaces to abstract and execute operations in the low level Bulk and Reporting services. For example instead of calling *SubmitGenerateReport* and *PollGenerateReport* to download a report, you download a report using one method with the *ReportingServiceManager* class.
+You can develop Bing Ads applications with any programming language that supports web services. The Bing Ads Software Development Kits (SDK) enhance the experience of developing Bing Ads applications with .NET, Java, PHP, and Python languages. Each SDK includes a proxy to all Bing Ads API web services and abstracts low level details of authentication with OAuth. You can use the high level *BulkServiceManager* and *ReportingServiceManager* interfaces to abstract and execute operations in the low level Bulk and Reporting services. For example instead of calling *SubmitGenerateReport* and *PollGenerateReport* to download a report, you download a report using one method with the *ReportingServiceManager* class.
 
 > [!NOTE]
 > The PHP SDK does not include *BulkServiceManager* and *ReportingServiceManager* interfaces as described for the other three SDKs.
@@ -17,8 +18,8 @@ You can develop Bing Ads applications with any programming language that support
 |-------|-----------------|----------|----------------|-----------------|-----------|
 |Bing Ads .NET SDK|[Get Started](../guides/get-started-csharp.md)|[GitHub](https://github.com/BingAds/BingAds-dotNet-SDK)|[NuGet](https://www.nuget.org/packages/Microsoft.BingAds.SDK/)|[GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples) &#124; [Docs](../guides/code-examples.md)|[Bing Ads .NET SDK License](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/LICENSE.md)|
 |Bing Ads Java SDK|[Get Started](../guides/get-started-java.md) |[GitHub](https://github.com/BingAds/BingAds-Java-SDK)|[Maven](https://github.com/BingAds/BingAds-Java-SDK#Maven-Artifact)|[GitHub](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples) &#124; [Docs](../guides/code-examples.md)|[Bing Ads Java SDK License](https://github.com/BingAds/BingAds-Java-SDK/blob/master/LICENSE)|
-|Bing Ads Python SDK|[Get Started](../guides/get-started-python.md) |[GitHub](https://github.com/BingAds/BingAds-Python-SDK)|[PyPi](https://pypi.python.org/pypi/bingads)|[GitHub](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples) &#124; [Docs](../guides/code-examples.md)|[Bing Ads Python SDK License](https://github.com/BingAds/BingAds-Python-SDK/blob/master/LICENSE)|
 |Bing Ads PHP SDK|[Get Started](../guides/get-started-php.md)|[GitHub](https://github.com/BingAds/BingAds-PHP-SDK)|[Packagist](https://packagist.org/packages/microsoft/bingads)|[GitHub](https://github.com/BingAds/BingAds-PHP-SDK/tree/master/samples) &#124; [Docs](../guides/code-examples.md)|[Bing Ads PHP SDK License](https://github.com/BingAds/BingAds-PHP-SDK/blob/master/LICENSE.md)|
+|Bing Ads Python SDK|[Get Started](../guides/get-started-python.md) |[GitHub](https://github.com/BingAds/BingAds-Python-SDK)|[PyPi](https://pypi.python.org/pypi/bingads)|[GitHub](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples) &#124; [Docs](../guides/code-examples.md)|[Bing Ads Python SDK License](https://github.com/BingAds/BingAds-Python-SDK/blob/master/LICENSE)|
 
 ## <a name="namespaces"></a>Namespaces
 

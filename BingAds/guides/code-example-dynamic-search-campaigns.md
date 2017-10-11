@@ -1,9 +1,10 @@
 ---
-title: "Dynamic Search Campaigns"
+title: "Dynamic Search Campaigns Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Setup Dynamic Search ads in C#, Java, PHP, or Python.
 dev_langs:
   - csharp
   - java

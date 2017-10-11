@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Get your ads in front of the right people.
 ---
 # Show Ads to Your Target Audience
 Getting your ad in front of the right people; that's what targeting is all about. With targeting, Bing Ads can help you focus a campaign or ad group on potential customers who meet specific criteria, so you can increase the chance that they see your ads. You may target your ads to display to users of a certain age group, display at a certain day and time of the week, or display to users in a particular geographical location.

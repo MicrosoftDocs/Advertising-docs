@@ -4,15 +4,21 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Learn about the steps to request and download a report.
+dev_langs:
+  - csharp
+  - java
+  - php
+  - python
 ---
 # Request and Download a Report
 The following procedure outlines the steps to submit a report request and to download the report.
 
-If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../guides/client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](~/reporting-service/submitgeneratereport.md#request) and [PollGenerateReportRequest](~/reporting-service/pollgeneratereport.md#request) to download a report, you can use one method with the *ReportingServiceManager* class. For more information about downloading reports with the SDKs, see [Reporting Service Manager](../guides/sdk-reporting-service-manager.md).
+If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../guides/client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](~/reporting-service/submitgeneratereport.md#request) and [PollGenerateReportRequest](~/reporting-service/pollgeneratereport.md#request) to download a report, you can use one method with the [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md). 
 
 For code examples that demonstrate how to download reports, see [Report Requests Code Example](~/guides/code-example-report-requests.md).
 
-#### Request a Report
+## Request a Report
 
 1.  Determine the report that you want to request. For a list of reports that you can request, see [Report Types](../guides/report-types.md).
 
@@ -38,7 +44,7 @@ For code examples that demonstrate how to download reports, see [Report Requests
 
 8.  The report file is compressed; therefore, you must unzip it to read the report.
 
-#### Create a Custom Date Range
+## Create a Custom Date Range
 The following procedure shows how to specify a custom date range for a report request. This is optional for the report request workflow described above. If you specify a custom date range, you must not set the *ReportTime.PredefinedTime* element. Also note that the *Aggregation* element of the report request object determines how the data for the specified time period is aggregated. 
 
 1.  Create an instance of the [ReportTime](~/reporting-service/reporttime.md) object. Assign the *ReportTime* object to the *Time* element of the [ReportRequest](~/reporting-service/reportrequest.md) data object.
@@ -67,6 +73,51 @@ request.Time.CustomDateRangeEnd = new Date();
 request.Time.CustomDateRangeEnd.Day = endDate.Day;
 request.Time.CustomDateRangeEnd.Month = endDate.Month;
 request.Time.CustomDateRangeEnd.Year = endDate.Year;
+```
+```java
+report.setTime(new ReportTime());
+
+Calendar calendar = Calendar.getInstance();
+report.getTime().setCustomDateRangeStart(new Date());
+report.getTime().getCustomDateRangeStart().setMonth(1);
+report.getTime().getCustomDateRangeStart().setDay(1);
+report.getTime().getCustomDateRangeStart().setYear(calendar.get(Calendar.YEAR)-1);
+report.getTime().setCustomDateRangeEnd(new Date());
+report.getTime().getCustomDateRangeEnd().setMonth(12);
+report.getTime().getCustomDateRangeEnd().setDay(31);
+report.getTime().getCustomDateRangeEnd().setYear(calendar.get(Calendar.YEAR)-1);
+```
+```php
+$report->Time = new ReportTime();
+$report->Time->PredefinedTime = null;
+
+date_default_timezone_set('UTC');
+$LastYear = date("Y") - 1;
+$report->Time->CustomDateRangeStart = new Date();
+$report->Time->CustomDateRangeStart->Month = 1;
+$report->Time->CustomDateRangeStart->Day = 1;
+$report->Time->CustomDateRangeStart->Year = $LastYear;
+$report->Time->CustomDateRangeEnd = new Date();
+$report->Time->CustomDateRangeEnd->Month = 12;
+$report->Time->CustomDateRangeEnd->Day = 31;
+$report->Time->CustomDateRangeEnd->Year = $LastYear;
+```
+```python
+report_time=reporting_service.factory.create('ReportTime')
+
+custom_date_range_start=reporting_service.factory.create('Date')
+custom_date_range_start.Day=1
+custom_date_range_start.Month=1
+custom_date_range_start.Year=int(strftime("%Y", gmtime()))-1
+report_time.CustomDateRangeStart=custom_date_range_start
+custom_date_range_end=reporting_service.factory.create('Date')
+custom_date_range_end.Day=31
+custom_date_range_end.Month=12
+custom_date_range_end.Year=int(strftime("%Y", gmtime()))-1
+report_time.CustomDateRangeEnd=custom_date_range_end
+report_time.PredefinedTime=None
+
+report_request.Time=report_time
 ```
 
 ## See Also

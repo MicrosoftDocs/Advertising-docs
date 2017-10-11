@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Discover bid and budget opportunities.
 ---
 # Budget and Bid Opportunities
 The [Ad Insight](~/ad-insight-service/ad-insight-service-reference.md) service is a keyword research service that you can use to research keyword, bid, and budget opportunities:
@@ -18,14 +19,6 @@ The [Ad Insight](~/ad-insight-service/ad-insight-service-reference.md) service i
 You can get most of this information broken out by device type.
 
 Some operations, such as [GetHistoricalKeywordPerformance](~/ad-insight-service/gethistoricalkeywordperformance.md), let you request data for multiple countries. For information about how the data is aggregated when you specify multiple countries, see [Aggregating Data](#aggregate).
-
-The Ad Insight operations are grouped into the following categories.
-
--   [Campaign Budget Opportunities](#campaignopportunities)  
--   [Ad Group Bid Opportunities](#adgroupopportunities)  
--   [Keyword Bid Opportunities](#keywordopportunities)  
--   [Keyword Research and Opportunities](#keywordresearch)  
--   [Aggregating Data](#aggregate)  
 
 ## <a name="campaignopportunities"></a>Campaign Budget Opportunities
 To identify campaigns that have been paused or are in jeopardy of being paused due to budget-related issues, call the [GetBudgetOpportunities](~/ad-insight-service/getbudgetopportunities.md) operation. The response contains a list of [BudgetOpportunity](~/ad-insight-service/budgetopportunity.md) objects that recommends a budget, which may increase the campaign's clicks and impressions and decrease the chance of the campaign being paused for budget-related reasons. Each [BudgetOpportunity](~/ad-insight-service/budgetopportunity.md) contains a list of [BudgetPoint](~/ad-insight-service/budgetpoint.md) objects. You can use the budget points to compare your current budget to any of the proposed budgets.

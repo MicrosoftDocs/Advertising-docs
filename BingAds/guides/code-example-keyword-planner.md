@@ -1,9 +1,10 @@
 ---
-title: "Keyword Planner"
+title: "Keyword Planner Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Get keyword ideas and traffic estimates in C# or PHP.
 dev_langs:
   - csharp
   - php

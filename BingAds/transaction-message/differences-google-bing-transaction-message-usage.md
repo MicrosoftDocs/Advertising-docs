@@ -2,8 +2,9 @@
 title: "Differences Between Google&#39;s and Bing&#39;s Transaction Message Usage"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Differences Between Google&#39;s and Bing&#39;s Transaction Message Usage
 The following are the differences between Google's Transaction Message implementation and Bing's.

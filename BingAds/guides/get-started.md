@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Get a developer token and learn about authentication with the Bing Ads API.
 dev_langs:
   - csharp
   - java

@@ -2,8 +2,9 @@
 title: "Managing your Products"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Managing your Products
 Content API is a RESTful API that uses the [Products](../shopping-content/products-resource.md) resource to manage product offerings in your Bing Merchant Center (BMC) store. 

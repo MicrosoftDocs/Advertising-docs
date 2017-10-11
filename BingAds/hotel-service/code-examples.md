@@ -2,8 +2,9 @@
 title: "Code Examples"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Code Examples
 This section provides code examples that show how to use the resources available in the Hotel API.

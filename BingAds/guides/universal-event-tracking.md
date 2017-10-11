@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Universal event tracking is a prerequisite for conversion tracking and remarketing in paid search.
 ---
 # Universal Event Tracking
 UET is a powerful Bing Ads tool. You just need to create one single UET tag and then add it to your website once. This tag records what customers do on your website then Bing Ads starts collecting that data allowing you to track conversions (like purchases or leads) or target audiences using remarketing lists. UET is a prerequisite for conversion tracking and remarketing in paid search.
@@ -28,7 +29,7 @@ Before you can track conversions or target audiences using a remarketing list, y
 > For each of the operations described in this section, you must specify the customer identifier in the *CustomerId* header element. 
 
 1. First you should call the [GetUetTagsByIds](~/campaign-management-service/getuettagsbyids.md) operation to check whether a tag has already been created. You can leave the *TagIds* element null or empty to request all UET tags available for the customer.
-2. You can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2). If you do not already have a UET tag that can be used, or if you need another UET tag, call the [AddUetTags](~/campaign-management-service/adduettags.md) service operation to create a new UET tag. If the call is successful, the tracking script that you should add to your website is included in a corresponding [UetTag](~/campaign-management-service/uettag.md) within the response message. **Note:** Later as needed you can update the name and description of a [UetTag](~/campaign-management-service/uettag.md) with the [UpdateUetTags](~/campaign-management-service/updateuettags.md) operation.
+2. You can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2). If you do not already have a UET tag that can be used, or if you need another UET tag, call the [AddUetTags](~/campaign-management-service/adduettags.md) service operation to create a new UET tag. If the call is successful, the tracking script that you should add to your website is included in a corresponding [UetTag](~/campaign-management-service/uettag.md) within the response message. Later as needed you can update the name and description of a [UetTag](~/campaign-management-service/uettag.md) with the [UpdateUetTags](~/campaign-management-service/updateuettags.md) operation.
 
 After you retreive the tracking script from the [AddUetTags](~/campaign-management-service/adduettags.md) or [GetUetTagsByIds](~/campaign-management-service/getuettagsbyids.md) operation, the next step is to add the UET tag tracking code to your website. We recommend that you, or your website administrator, add it to your entire website in either the head or body sections. If your website has a master page, then that is the best place to add it because you add it once and it is included on all pages. For more information, see [How do I add the UET tag to my website?](http://help.bingads.microsoft.com/#apex/3/en/56688/2-500) 
 
@@ -49,14 +50,12 @@ There are five types of conversion goals. The [ConversionGoal](~/campaign-manage
 * [PagesViewedPerVisitGoal](~/campaign-management-service/pagesviewedpervisitgoal.md)
 * [UrlGoal](~/campaign-management-service/urlgoal.md)
 
-
 The following operations are added for managing conversion goals.
 
 * [AddConversionGoals](~/campaign-management-service/addconversiongoals.md)
 * [GetConversionGoalsByIds](~/campaign-management-service/getconversiongoalsbyids.md)
 * [GetConversionGoalsByTagIds](~/campaign-management-service/getconversiongoalsbytagids.md)
 * [UpdateConversionGoals](~/campaign-management-service/updateconversiongoals.md)
-
 
 ## <a name="remarketing"></a>Remarketing APIs
 Remarketing in Paid Search lets you improve your return on investment by optimizing your campaigns for specific audiences, which are the people who have visited your website before. When you create remarketing lists, you specify what user actions on your website qualify them to be part of the remarketing lists. 

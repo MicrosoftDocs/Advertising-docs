@@ -1,9 +1,10 @@
 ---
-title: "Manage Client"
+title: "Manage Client Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Manage clients as an agency in C#, Java, PHP, or Python.
 dev_langs:
   - csharp
   - java

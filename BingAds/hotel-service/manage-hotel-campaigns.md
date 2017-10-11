@@ -2,8 +2,9 @@
 title: "Manage Hotel Ad Campaigns"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Manage Hotel Ad Campaigns
 > [!NOTE]

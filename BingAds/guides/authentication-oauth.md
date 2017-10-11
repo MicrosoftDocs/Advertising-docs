@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Authenticate for Bing Ads production services with a Microsoft Account.
 ---
 # Authentication with OAuth
 Bing Ads implements the implicit and authorization grant flows of the [OAuth 2.0](http://tools.ietf.org/html/draft-ietf-oauth-v2-15) protocol to enable authentication of Microsoft Accounts that are linked to Bing Ads accounts. You should authenticate for Bing Ads production services with a Microsoft Account, instead of providing the Bing Ads username and password set. Authentication with a Microsoft Account is currently not supported in [Sandbox](../guides/sandbox.md).
@@ -13,10 +14,10 @@ Bing Ads implements the implicit and authorization grant flows of the [OAuth 2.0
 > 
 > The *DeveloperToken* header element is always required. For information on how to get a *DeveloperToken*, see [Get Started With the Bing Ads API](../guides/get-started.md).
 
-A [Microsoft Account](http://windows.microsoft.com/en-US/windows-8/microsoft-account#1TC=t1) is an email address and password alias that an advertiser and other users may use to manage multiple services, including Bing Ads. Advertisers may associate a Microsoft Account with a Bing Ads account by [signing up](https://bingads.microsoft.com) or being [Managing Users](../guides/customer-accounts.md#managingusers) to manage an existing Bing Ads account. Advertisers must use their Microsoft Account to grant your application access to manage their Bing Ads accounts. When the user successfully provides consent, your application is able to obtain an access token that it can then use to authenticate on behalf of the user.
+A [Microsoft Account](https://account.microsoft.com/account) is an email address and password alias that an advertiser and other users may use to manage multiple services, including Bing Ads. Advertisers may associate a Microsoft Account with a Bing Ads account by [signing up](https://bingads.microsoft.com) or being [Managing Users](../guides/customer-accounts.md#managingusers) to manage an existing Bing Ads account. Advertisers must use their Microsoft Account to grant your application access to manage their Bing Ads accounts. When the user successfully provides consent, your application is able to obtain an access token that it can then use to authenticate on behalf of the user.
 
 > [!NOTE]
-> To take advantage of advanced security, users should turn on [two-step verification](http://windows.microsoft.com/en-us/windows/two-step-verification-faq?woldogcb=0) within their Microsoft account [Security settings](https://account.live.com/proofs/Manage). Opting in for two-step verification ensures the user is prompted for a security code when they sign in on a device not previously designated as trusted by the user. The Microsoft Account authentication service provisions and verifies the security code after your application connects to the authorization endpoint, and before user consent is requested for your application to manage their Bing Ads accounts.
+> To take advantage of advanced security, users should turn on [two-step verification](https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification) within their Microsoft account [Security settings](https://account.live.com/proofs/Manage). Opting in for two-step verification ensures the user is prompted for a security code when they sign in on a device not previously designated as trusted by the user. The Microsoft Account authentication service provisions and verifies the security code after your application connects to the authorization endpoint, and before user consent is requested for your application to manage their Bing Ads accounts.
 
 At a high level you should complete the following steps to authenticate a Microsoft Account with Bing Ads using OAuth.
 

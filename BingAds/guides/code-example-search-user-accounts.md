@@ -1,9 +1,10 @@
 ---
-title: "Search User Accounts"
+title: "Search User Accounts Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Search for accounts by user in C#, Java, PHP, or Python.
 dev_langs:
   - csharp
   - java

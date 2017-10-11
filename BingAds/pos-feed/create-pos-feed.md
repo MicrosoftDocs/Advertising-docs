@@ -2,8 +2,9 @@
 title: "Creating a Points of Sale Feed"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Creating a Points of Sale Feed
 > [!NOTE]

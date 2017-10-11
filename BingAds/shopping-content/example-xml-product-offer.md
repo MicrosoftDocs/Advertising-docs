@@ -2,8 +2,9 @@
 title: "Example XML Product Offer"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Example XML Product Offer
 The following shows an example of a product offer in XML that a GET request returns. 

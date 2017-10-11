@@ -2,8 +2,9 @@
 title: "Subaccount C# Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Subaccount C# Example
 The following example shows the requests you use to list, get, and update subaccounts. 

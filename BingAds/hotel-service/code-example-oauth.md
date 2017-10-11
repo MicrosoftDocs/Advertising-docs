@@ -2,8 +2,9 @@
 title: "OAuth Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # OAuth Code Example
 The following topics break out a simple desktop implementation used to get an access and refresh token. The example does not support the recommended state query parameter.

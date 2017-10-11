@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Setup bid and budget strategies.
 ---
 # Budget and Bid Strategies
 Before your ads can run, you need to set your campaign's budget. You'll also need to choose a bid strategy type, and optionally set keyword level match type bids. Depending on the type of campaign you are running, see the following sections for more details.
@@ -20,7 +21,7 @@ Your budget tells Bing Ads how much you want to spend on your campaign. You can 
 With shared budgets you can set a single daily budget that can be used by any campaign within the same account. This enables you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Bing Ads account. 
 
 > [!IMPORTANT]
-> To avoid a breaking change when updating campaigns, you might need to code for shared budgets in the Bing Ads platform, even if you do not plan to use shared budgets. For more details and to determine whether the campaign uses a shared budget, check the value of the *BudgetId* element ([Campaign](~/campaign-management-service/campaign.md) object) or *Budget Id* field (Bulk ([Campaign](~/bulk-service/campaign.md) object) record).
+> You might need to code for shared budgets in the Bing Ads platform, even if you do not plan to use shared budgets. For more details and to determine whether the campaign uses a shared budget, check the value of the *BudgetId* element ([Campaign](~/campaign-management-service/campaign.md) object) or *Budget Id* field (Bulk ([Campaign](~/bulk-service/campaign.md) object) record).
 
 The Bing Ads API supports the *DailyBudgetAccelerated* and *DailyBudgetStandard* values as defined in the [BudgetLimitType](~/campaign-management-service/budgetlimittype.md) value set.
 
@@ -62,7 +63,7 @@ The following bid strategy types are available per campaign type. For more infor
 |[ManualCpc](#manualcpc)|All|
 |[MaxClicks](#maxclicks)|SearchAndContent<br/>DynamicSearchAds|
 |[MaxConversions](#maxconversions)|SearchAndContent<br/>DynamicSearchAds|
-|[EnhancedCpc](#enhancedcpc)|All<br/><br/>**Note:** For campaigns of type *Shopping* only the *EnhancedCpc* bid strategy can be used, and you must be in the Bing Shopping Enhanced CPC pilot. The pilot ID is 340.|
+|[EnhancedCpc](#enhancedcpc)|All<br/><br/>For campaigns of type *Shopping* only the *EnhancedCpc* bid strategy can be used, and you must be in the Bing Shopping Enhanced CPC pilot. The pilot ID is 340.|
 |[TargetCpa](#targetcpa)|SearchAndContent<br/>DynamicSearchAds|
 
 > [!IMPORTANT] 

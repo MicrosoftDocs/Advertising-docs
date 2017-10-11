@@ -2,8 +2,9 @@
 title: "Get Started"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: "swhite-msft"
+ms.author: "scottwhi"
+description: 
 ---
 # Get Started
 ## <a name="credentials"/> Do you have your Bing Ads credentials and developer token?

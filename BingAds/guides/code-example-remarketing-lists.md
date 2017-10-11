@@ -1,9 +1,10 @@
 ---
-title: "Remarketing Lists"
+title: "Remarketing Lists Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Setup remarketing lists in C#, Java, PHP, or Python.
 dev_langs:
   - csharp
   - java

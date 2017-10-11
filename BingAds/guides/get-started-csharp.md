@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Install the Bing Ads .NET SDK and discover code examples.
 ---
 # Get Started Using C# with Bing Ads Services
 To get started developing Bing Ads applications with a .NET language, you can start with the [provided examples](~/guides/code-examples.md) or follow one of the application walkthroughs for a [Web](~/guides/walkthrough-web-application-csharp.md) or [Desktop](~/guides/walkthrough-desktop-application-csharp.md) application. The examples have been developed with the Bing Ads .NET [SDK](~/guides/client-libraries.md) and [Visual Studio Community](https://www.visualstudio.com/vs/community/). Your custom configuration may vary.

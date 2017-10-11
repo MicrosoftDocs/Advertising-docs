@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Setup Intent ads with the Bing Ads API.
 ---
 # Intent Ads
 Bing Intent ads are an extension of search network, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Intent ads are created automatically by Bing Ads leveraging all of your Bing Ads creative elements including ad title, text, URL, and ad extensions including image extensions.  
@@ -19,10 +20,6 @@ You can set a bid adjustment for each campaign and ad group. The bid adjustment 
 
 You can manage native ads settings with either the [Bulk Service](~/bulk-service/bulk-service-reference.md) or [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](~/bulk-service/bulk-service-reference.md) if you need to upload or download a high volume of entity settings. For example you can update all ad groups for your entire account in a single upload. In comparison, with the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md) you can only update 100 ad groups per call and those ad groups must be in the same campaign. For details see the following sections.
 
--   [Intent Ads with the Bulk Service](#bulkservice)  
--   [Intent Ads with the Campaign Management Service](#campaignservice)  
--   [Getting Performance Reports for Native Ads](#reporting)  
-
 ## <a name="bulkservice"></a>Intent Ads with the Bulk Service
 The [Bulk Service](~/bulk-service/bulk-service-reference.md) service create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](~/bulk-service/bulk-file-schema.md) and [Bulk Download and Upload](bulk-download-upload.md).
 
@@ -36,7 +33,8 @@ These are the Bing Ads entities with properties for managing Bing Intent ads tha
 
 For example you can follow these steps to set up an image ad extension for native ads.
 
-**Note:** You can use the [Bulk Service](~/bulk-service/bulk-service-reference.md) for most steps, but you will still need to use the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md) to add media to your account's media library.
+> [!NOTE]
+> You can use the [Bulk Service](~/bulk-service/bulk-service-reference.md) for most steps, but you will still need to use the [Campaign Management Service](#campaignservice) to add media to your account's media library.
 
 1.  Add one to six [Image](~/campaign-management-service/image.md) items to your account's media library with the [AddMedia](~/campaign-management-service/addmedia.md) operation. The images must be one of the supported [Media](~/campaign-management-service/media.md) types (aspect ratios) for an [Image Ad Extension](~/bulk-service/image-ad-extension.md).
 
@@ -54,9 +52,6 @@ For example you can follow these steps to set up an image ad extension for nativ
 
 ## <a name="campaignservice"></a>Intent Ads with the Campaign Management Service
 Bing Intent ads can be accessed using the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
-
-> [!NOTE]
-> Partial success is supported for a subset of these operations. For example if you submit 10 ad groups and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](handle-service-errors-exceptions.md#partial-success).
 
 1.  Add one to six [Image](~/campaign-management-service/image.md) items to your account's media library with the [AddMedia](~/campaign-management-service/addmedia.md) operation. The images must be one of the supported [Media](~/campaign-management-service/media.md) types (aspect ratios) for an [ImageAdExtension](~/campaign-management-service/imageadextension.md).
 

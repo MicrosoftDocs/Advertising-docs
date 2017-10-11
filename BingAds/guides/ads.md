@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Setup ads with the Bing Ads API.
 ---
 # Ads
 Bing Ads provides a variety of options for ads. You can extend the ad layout to be more visually appealing and feature rich using ad extensions.

@@ -1,9 +1,10 @@
 ---
-title: "Offline Conversions"
+title: "Offline Conversions Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Upload offline conversions in C#.
 dev_langs:
   - csharp
 ---

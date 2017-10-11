@@ -1,9 +1,10 @@
 ---
-title: "Keywords and Ads"
+title: "Keywords and Ads Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Setup keywords and ads in C#, Java, PHP, or Python.
 dev_langs:
   - csharp
   - java

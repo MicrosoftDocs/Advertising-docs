@@ -2,8 +2,9 @@
 title: "Get Started with the Hotel API"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Get Started with the Hotel API
 <a name="doyouhavecredentials"/> 

@@ -1,9 +1,10 @@
 ---
-title: "Bulk Shopping Campaigns"
+title: "Bulk Shopping Campaigns Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Setup Product ads in C#, Java, or Python.
 dev_langs:
   - csharp
   - java

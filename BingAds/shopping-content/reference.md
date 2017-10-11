@@ -2,8 +2,9 @@
 title: "Content API Reference"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: "swhite-msft"
+ms.author: "scottwhi"
+description: 
 ---
 # Content API Reference
 The Bing Ads Content API is a RESTful API that provides standard CRUD (Create, Read, Update, Delete) style operations by sending HTTP requests to specific URLs. The following section provide reference content that describe the programming elements of each resource.

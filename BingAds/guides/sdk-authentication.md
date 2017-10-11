@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Learn about authentication and basic service calls with the Bing Ads SDKs.
 dev_langs:
   - csharp
   - java

@@ -15,14 +15,14 @@ Supported services in sandbox vary from production. To get the web service addre
 > Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. Notifications are posted in the [Bing Ads Developer Blog](https://blogs.msdn.microsoft.com/bing_ads_api/).
 
 ## <a name="access"></a>Getting Access
-The sandbox and production environments use separate credentials. To get access to sandbox, go to the sandbox's [Bing Ads](https://sandbox.bingads.microsoft.com) web application and click **Sign up** to get a sandbox account. You will use the same username and password to call the API.
+The sandbox and production environments use separate credentials. To get access to sandbox, go to the sandbox's [Bing Ads](https://secure.sandbox.bingads.microsoft.com/Auth?EnvContext=Sandbox) web application and click **Sign up** to get a sandbox account. You will use the same username and password to call the API.
 
 When you sign up for an account, append _sbx to the username that you choose, for example contosoapi_sbx. In addition, do not specify a payment instrument.
 
 All Bing Ads customers may use the following multi-user developer token in sandbox: **BBD37VB98**
 
 > [!NOTE]
-> Authentication with a Microsoft Account is not supported in sandbox. You can test your sandbox application with the *UserName* and *Password* legacy header elements, and then with the *AuthenticationToken* element verify authentication of a Microsoft account via OAuth in production. For more information, see [Managing User Authentication with OAuth](../guides/authentication-oauth.md).
+> Authentication with a Microsoft Account is not supported in sandbox. You can test your sandbox application with the *UserName* and *Password* legacy header elements, and then with the *AuthenticationToken* element verify authentication of a Microsoft account via OAuth in production. For more information, see [Authentication with OAuth](../guides/authentication-oauth.md).
 
 ## <a name="bestpractices"></a>Sandbox Best Practices
 Sandbox should not be used in the same capacity as production.
@@ -37,9 +37,6 @@ Opportunities are updated daily in sandbox for existing campaigns, ad groups, an
 
 > [!NOTE]
 > Sandbox opportunity data is refreshed and updated each weekend, and is available by Monday.
-
--   [Supported Keywords](#supportedkeywords)  
--   [Service Operations](#adintel-serviceops)  
 
 ### <a name="supportedkeywords"></a>Supported Keywords
 Sandbox supports a limited set of keywords for testing Ad Insight service operations. You should not use the test data to infer or expect similar estimates for your keywords in production. You may use the following set of keywords to test your application.
@@ -62,7 +59,7 @@ Sandbox supports a limited set of keywords for testing Ad Insight service operat
 |sport|
 |the hotel|
 
-### <a name="adintel-serviceops"></a>Service Operations
+### <a name="ad-insight-serviceops"></a>Service Operations
 Ad Insight service operations differ from production, and limitations are described in the following table.
 
 |Service Operation|Sandbox Limitations|
@@ -73,7 +70,7 @@ Ad Insight service operations differ from production, and limitations are descri
 |[GetEstimatedPositionByKeywordIds](~/ad-insight-service/getestimatedpositionbykeywordids.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
 |[GetEstimatedPositionByKeywords](~/ad-insight-service/getestimatedpositionbykeywords.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
 |[GetHistoricalKeywordPerformance](~/ad-insight-service/gethistoricalkeywordperformance.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *MatchType* and *AdPosition* elements must be set to *Aggregate*.<br /><br />The *Devices* element must be set to *Computers* or left nil.|
-|[GetHistoricalSearchCount](~/ad-insight-service/gethistoricalsearchcount.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *EndMonthAndYear* element must be set to the previous month. For example if today's date is June 10, 2013, the end month should be May 2013.<br /><br />The *Devices* element must be set to *Computers* or left nil.|
+|[GetHistoricalSearchCount](~/ad-insight-service/gethistoricalsearchcount.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *EndMonthAndYear* element must be set to the previous month. For example if today's date is October 10, 2017, the end month should be October 2017.<br /><br />The *Devices* element must be set to *Computers* or left nil.|
 |[GetKeywordCategories](~/ad-insight-service/getkeywordcategories.md)|There should be no difference in sandbox versus production.|
 |[GetKeywordDemographics](~/ad-insight-service/getkeyworddemographics.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *Devices* element must be set to *Computers* or left nil.|
 |[GetKeywordLocations](~/ad-insight-service/getkeywordlocations.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *Devices* element must be set to *Computers* or left nil.|
@@ -84,9 +81,6 @@ Ad Insight service operations differ from production, and limitations are descri
 The file size limit for upload in production is 100MB or 2.5 million rows. For sandbox the limit is 20K rows. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 ## <a name="campaign"></a>Campaign Management Service
-
--   [Editorial Support](#editorialsupport)  
--   [Product Ads](#productads)  
 
 ### <a name="editorialsupport"></a>Editorial Support
 Sandbox supports limited editorial reviews and appeals.
@@ -157,6 +151,9 @@ When you create a keyword, test performance data should be generated within a fe
 
 The following reports can return performance data in sandbox.
 
+> [!NOTE]
+> All other report types can be submitted successfully, and the sandbox service will return an empty report.
+
 -   [AccountPerformanceReportRequest](~/reporting-service/accountperformancereportrequest.md)  
 -   [AdDynamicTextPerformanceReportRequest](~/reporting-service/addynamictextperformancereportrequest.md)  
 -   [AdGroupPerformanceReportRequest](~/reporting-service/adgroupperformancereportrequest.md)  
@@ -166,7 +163,4 @@ The following reports can return performance data in sandbox.
 -   [DestinationUrlPerformanceReportRequest](~/reporting-service/destinationurlperformancereportrequest.md)  
 -   [KeywordPerformanceReportRequest](~/reporting-service/keywordperformancereportrequest.md)  
 -   [UserLocationPerformanceReportRequest](~/reporting-service/userlocationperformancereportrequest.md)  
-
-> [!NOTE]
-> All other report types can be submitted successfully, and the sandbox service will return an empty report.
 

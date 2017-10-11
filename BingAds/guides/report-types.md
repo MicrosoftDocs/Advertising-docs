@@ -4,22 +4,12 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Each report type aggregates the data at a different level or with a different focus.
 ---
 # Report Types
 The reporting service provides reports that you can use to track finances, measure ad performance, and adjust settings to optimize your budget or campaign. The service supports the majority of popular reports available in the Bing Ads web application.
 
 Each report type aggregates the data at a different level or with a different focus. For example, you can get the performance data broken out at the keyword level, which is the lowest level of aggregation for a search campaign; or you get the performance data rolled up to the account level, which is the highest level of aggregation. You should expect a keyword performance report to take longer to generate than an account performance report.
-
-The reports that you can request are grouped into the following categories.
-
--   [Performance](#performance)  
--   [Ad Extensions](#adextensions)  
--   [Product Ads](#productads)  
--   [Dynamic Search Ads](#dynamicsearchads)  
--   [Change History](#changehistory)  
--   [Targeting](#targeting)  
--   [Campaign Analytics](#analytics)  
--   [Billing and Budget](#budget)  
 
 ## <a name="performance"></a>Performance
 Delivery performance reports show the overall effectiveness and cost of ads and keywords for a specified time period. Most of the reports include a similar set of performance statistics, for example impressions, clicks, and click-through rate. The optional attributes are a strong factor in distinguishing which report to use. For example the ad performance, ad dynamic text performance, and destination URL performance reports all provide similar ad performance data, each with a different set of attributes. 

@@ -2,6 +2,11 @@
 title: "Walkthrough: Bing Ads Desktop Application in PHP"
 ms.service: "bing-ads"
 ms.topic: "article"
+author: "eric-urban"
+ms.author: "eur"
+description: Create a desktop application using the Bing Ads PHP SDK.
+dev_langs:
+  - php
 ---
 # Walkthrough: Bing Ads Desktop Application in PHP
 This guide describes how you can download samples from the [GitHub source](https://github.com/BingAds/BingAds-PHP-SDK), edit with your credentials, and run in a local console. 

@@ -2,21 +2,17 @@
 title: "Migrating to Bing Ads API Version 11"
 ms.service: "bing-ads"
 ms.topic: "article"
+author: "eric-urban"
+ms.author: "eur"
+description: Get details about migrating to Bing Ads API version 11.
 ---
 # Migrating to Bing Ads API Version 11
-All Bing Ads API SOAP web services will be available with Version 11.   
+All Bing Ads API SOAP web services are available with Version 11.   
 
 > [!IMPORTANT]
 > With the availability of Bing Ads API version 11, the previous versions of the API (v10 for Ad Insight, Bulk, and Campaign Management services and v9 for Customer Billing, Customer Management, and Reporting services) are sunset as of October 31st. 
 
 The sections below describe changes from version 10 to version 11 of the [Ad Insight](~/ad-insight-service/ad-insight-service-reference.md), [Bulk](~/bulk-service/bulk-service-reference.md), and [Campaign Management](~/campaign-management-service/campaign-management-service-reference.md) services, and changes from version 9 to version 11 of the [Customer Billing](~/customer-billing-service/customer-billing-service-reference.md), [Customer Management](~/customer-management-service/customer-management-service-reference.md), and [Reporting](~/reporting-service/reporting-service-reference.md) services.
-
--   [Ad Insight](#adinsight)
--   [Bulk](#bulk)
--   [Campaign Management](#campaign)
--   [Customer Billing](#billing)
--   [Customer Management](#customer)
--   [Reporting](#reporting)
 
 ## <a name="adinsight"></a>Ad Insight
 

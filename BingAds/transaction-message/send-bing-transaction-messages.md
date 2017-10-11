@@ -2,8 +2,9 @@
 title: "Sending Bing Transaction Messages"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Sending Bing Transaction Messages
 Before sending a transaction message:

@@ -2,8 +2,10 @@
 title: "Creating a Hotel Feed"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "scottwhi"
+author: "swhite-msft"
+description: 
+ms.author: "swhite-msft"
+description: 
 ---
 # Creating a Hotel Feed
 > [!NOTE]

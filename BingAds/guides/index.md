@@ -4,9 +4,9 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Find out if the Bing Ads API is right for you. 
 ---
 # Bing Ads API Overview
-
 Bing Ads is a pay-per-click (PPC) advertising platform used to display ads based on the keywords used in a user's search query.  For advertisers placing a large number of ads or developers building advertising tools, the Bing Ads API provides a programmatic interface to Bing Ads. Using the Bing Ads API is the most efficient way to manage many large campaigns or to integrate your marketing with other in-house systems. The Bing Ads API also supports multiple customer accounts making it easy for ad agencies to manage campaigns for many clients. Some organizations may choose a hybrid approach; using the web UI for most tasks but automating reporting or campaign optimization with the API.
 
 ## <a name="who"></a>Who should use the Bing Ads API
@@ -21,7 +21,7 @@ For [Customer Accounts](../guides/customer-accounts.md), you should use the [Cus
 ## <a name="where"></a>Where your ads will appear
 When you advertise using Bing Ads, your search ads can appear on the search results page on websites throughout the world. These sites can include Bing, AOL, and Yahoo owned and operated sites as well as Bing, AOL, and Yahoo syndicated search partner sites. (Syndicated search partner sites are sites that use Bing and Yahoo search results.) For more information, see [About ad distribution](https://help.bingads.microsoft.com/#apex/3/en/50871/0). 
 
-Your ads can appear on search results page when a customer does a search on Bing. Where you ad appears on search results pages is determined by the keywords you use to associate your ads. For example, Sarah owns a toy store and wants to create ads for kids? electronics. She might include keywords like "walkie-talkies", "electronic pets", and "kids? music players" so her ads could be more relevant to customers? searches, and show above or next to the search results.
+Your ads can appear on search results page when a customer does a search on Bing. Where you ad appears on search results pages is determined by the keywords you use to associate your ads. For example, Sarah owns a toy store and wants to create ads for kids' electronics. She might include keywords like "walkie-talkies", "electronic pets", and "kids' music players" so her ads could be more relevant to customers' searches, and show above or next to the search results.
 
 ![overview_textad](../guides/media/overview-textad.png "overview_textad")
 

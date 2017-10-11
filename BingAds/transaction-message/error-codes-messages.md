@@ -2,8 +2,9 @@
 title: "Error Codes and Messages"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Error Codes and Messages
 When you send Bing your transaction message to process, Bing may return one of the following HTTP status codes:

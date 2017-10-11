@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Determine whether the ad, ad extensions, or keyword passed or failed the editorial review.
 ---
 # Editorial Review and Appeals
 For an ad to be eligible to be served, it must meet the editorial guidelines of the market that it serves. The same is true for ad extensions and keywords. 

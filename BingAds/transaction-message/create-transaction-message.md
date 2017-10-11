@@ -2,8 +2,9 @@
 title: "Creating a Transaction Message"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Creating a Transaction Message
 To provide Bing your hotel pricing and availability data, create an XML document that contains a transaction message. The transaction message contains a list of check-in dates, lengths of stay, and pricing. 

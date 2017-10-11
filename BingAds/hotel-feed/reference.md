@@ -2,8 +2,10 @@
 title: "Hotel Feed Reference"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "scottwhi"
+author: "swhite-msft"
+description: 
+ms.author: "swhite-msft"
+description: 
 ---
 # Hotel Feed Reference
 > [!NOTE]

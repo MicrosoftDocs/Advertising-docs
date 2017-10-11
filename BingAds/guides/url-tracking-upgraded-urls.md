@@ -4,14 +4,12 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: URL tracking allows you to find out how people got to your website by adding tracking parameters in Bing Ads and then using a third-party tracking tool or service to analyze the data.
 ---
 # URL Tracking with Upgraded URLs
 URL tracking allows you to find out how people got to your website by adding tracking parameters in Bing Ads and then using a third-party tracking tool or service to analyze the data. When an ad is served, the tracking parameters are dynamically appended to your landing page URL. This landing page URL is recorded on your web server and then a third-party tracking tool, like Adobe or Google Analytics, can interpret the data.
 
 If you have set up [tracking in Bing Ads](https://help.bingads.microsoft.com/#apex/3/en/56798/2) by adding URL parameters to your destination URLs, you will be interested in Upgraded URLs. Upgraded URLs separate the landing page URL from the tracking or URL parameters so if you want to edit your URL parameters, your ad doesn't have to go through another editorial review. It also allows you to define a separate mobile landing page URL if you have a website that is optimized for smaller devices.
-
-> [!IMPORTANT]
-> If you are currently using Destination URLs, you must eventually replace them with Final URLs. This will be required no earlier than calendar year 2017.  
 
 By separating the tracking template details from the final URLs you can take advantage of the following benefits:
 -   You can define tracking templates for one or more account, campaign, ad group, keyword, ad, or Sitelink Extension. If you use a common tracking template for all ads in your campaign for example, you can update it once at the campaign level instead of making changes to all of your ads. Tracking templates and custom parameters defined for lower level entities e.g. keyword override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).  
@@ -55,9 +53,7 @@ We recommend adding a default tracking template at the account level so that all
 ## <a name="finalurlvalidation"></a>Final URLs
 The following validation rules apply to Final URLs and Final Mobile URLs.
 
-- The length of the URL is limited to 2,048 characters.
-
-    **Note:** The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
+- The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 
 - You may specify up to 10 items for both *FinalUrls* and *FinalMobileUrls*; however, only the first item in each list is used for delivery. The service allows up to 10 for potential forward compatibility.
 

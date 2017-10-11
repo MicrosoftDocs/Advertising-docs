@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: The technical guides describe core advertising scenarios using Bing Ads services.
 ---
 # Bing Ads Technical Guides
 The technical guides below describe core advertising scenarios using Bing Ads services.

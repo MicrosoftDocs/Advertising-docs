@@ -2,8 +2,9 @@
 title: "CodeGrantFlow Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # CodeGrantFlow Code Example
 The following example shows a simple browser implementation for getting an OAuth access and refresh token. For more information about the calls made in this example, see [Authentication with OAuth](~/guides/authentication-oauth.md).

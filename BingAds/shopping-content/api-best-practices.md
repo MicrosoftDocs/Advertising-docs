@@ -2,8 +2,9 @@
 title: "API Best Practices"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: "swhite-msft"
+ms.author: "scottwhi"
+description: 
 ---
 # API Best Practices
 The following are the recommended best practices.

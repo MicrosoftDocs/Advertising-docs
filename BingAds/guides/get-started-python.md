@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Install the Bing Ads Python SDK and discover code examples.
 dev_langs:
   - python
 ---

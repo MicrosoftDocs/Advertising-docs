@@ -4,20 +4,10 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Reference the data retention time periods for Bing Ads performance data.
 ---
 # Reporting Data Retention Time Periods
 Reporting data is kept for specified periods of time. This topic provides the data retention time periods for Bing Ads performance data. Use this information to see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report.
-
-Retention periods for reporting data is broken down into the following report categories.
-
--   [Performance](#performance)  
--   [Ad Extensions](#adextensions)  
--   [Product Ads](#productads)  
--   [Dynamic Search Ads](#dynamicsearchads)  
--   [Change History](#changehistory)  
--   [Targeting](#targeting)  
--   [Campaign Analytics](#analytics)  
--   [Billing and Budget](#budget)  
 
 > [!NOTE]
 > Retention periods are not applicable for the [Negative Keyword Conflict Report](~/reporting-service/negativekeywordconflictreportrequest.md). The report is generated based on the current keywords and negative keywords.

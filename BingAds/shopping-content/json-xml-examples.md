@@ -2,8 +2,9 @@
 title: "JSON and XML Examples"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: "swhite-msft"
+ms.author: "scottwhi"
+description: 
 ---
 # JSON and XML Examples
 This section provides JSON and XML example responses.

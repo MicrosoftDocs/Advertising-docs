@@ -2,8 +2,9 @@
 title: "Getting a List of Product Offers Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: "swhite-msft"
+ms.author: "scottwhi"
+description: 
 dev_langs: 
   - csharp
   - java

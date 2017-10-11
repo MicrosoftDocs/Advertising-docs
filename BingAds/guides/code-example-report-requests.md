@@ -1,9 +1,10 @@
 ---
-title: "Report Requests"
+title: "Report Requests Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Get performance reports in C#, Java, PHP, or Python.
 dev_langs:
   - csharp
   - java

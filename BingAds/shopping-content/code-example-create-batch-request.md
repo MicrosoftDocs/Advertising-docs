@@ -2,8 +2,9 @@
 title: "Creating a Batch Request Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: "swhite-msft"
+ms.author: "scottwhi"
+description: 
 dev_langs: 
   - csharp
   - java

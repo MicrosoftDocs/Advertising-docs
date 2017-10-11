@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Hotel Ads Overview
 > [!NOTE]

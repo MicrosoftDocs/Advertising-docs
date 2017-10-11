@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Setup campaigns with the Bing Ads API.
 ---
 # Campaigns
 The Bing Ads API provides access to all of your campaign settings, including ads, keywords, ad extensions, and targets. For an introduction to the account and campaign hierarchy within a customer, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).

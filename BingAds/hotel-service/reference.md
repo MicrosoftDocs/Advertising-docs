@@ -2,8 +2,9 @@
 title: "Hotel API Reference"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Hotel API Reference
 > [!NOTE]

@@ -2,6 +2,9 @@
 title: "Dynamic Search Ads"
 ms.service: "bing-ads"
 ms.topic: "article"
+author: "eric-urban"
+ms.author: "eur"
+description: Setup Dynamic Search ads with the Bing Ads API.
 ---
 # Dynamic Search Ads
 Dynamic Search Ads are coming to Bing Ads. You will be able to create a new type of campaign where the ad copy is automatically generated from the content on your website. 
@@ -12,7 +15,7 @@ Dynamic Search Ads are coming to Bing Ads. You will be able to create a new type
 > Before you can use dynamic search ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](~/guides/url-tracking-upgraded-urls.md).
 
 ## <a name="bulk"></a>Bulk API for Dynamic Search Ads  
-The following Bulk records are added for managing dynamic search ads campaigns.
+The following Bulk records are available for managing dynamic search ads campaigns.
 * [Ad Group Dynamic Search Ad Target](~/bulk-service/ad-group-dynamic-search-ad-target.md)
 * [Ad Group Negative Dynamic Search Ad Target](~/bulk-service/ad-group-negative-dynamic-search-ad-target.md)
 * [Campaign Negative Dynamic Search Ad Target](~/bulk-service/campaign-negative-dynamic-search-ad-target.md)

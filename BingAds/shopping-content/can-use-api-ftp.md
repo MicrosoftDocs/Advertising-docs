@@ -2,8 +2,9 @@
 title: "Can I Use the API and FTP?"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Can I Use the API and FTP?
 Yes, in the following, very limited cases you may use the API and FTP together without conflicts occurring.

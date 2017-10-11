@@ -2,8 +2,9 @@
 title: "Release Notes"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+author: "swhite-msft"
+ms.author: "scottwhi"
+description: 
 ---
 # Release Notes
 This topic describes recent changes made to Version 9.1 of the Content API.

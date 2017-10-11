@@ -4,6 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Learn about error handling and troubleshooting your application.
 ---
 # Handling Service Errors and Exceptions
 This article describes details on error handling and troubleshooting your application.
@@ -200,6 +201,27 @@ You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/sp
     System.setProperty("https.proxyHost", "127.0.0.1");
     System.setProperty("https.proxyPort", "8888");
     ```
+
+## <a name="php-exceptions"><a/>PHP Exceptions
+If you use the Bing Ads PHP [SDK](~/guides/client-libraries.md), your application should be prepared to handle Bing Ads API [service level exceptions](#faultoverview) and [Bing Ads PHP SDK](#php-sdk-exceptions) exceptions described below. 
+
+For troubleshooting PHP applications, see [PHP SDK Troubleshooting](#php-troubleshooting).
+
+### <a name="php-troubleshooting"></a>PHP SDK Troubleshooting
+Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](http://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
+
+#### <a name="php-troubleshooting-print"></a>Print SOAP
+In PHP you can use the following methods to print the SOAP envelopes. Each of the PHP code examples include these statements to print the errors to the console.   
+
+```php
+print $proxy->GetService()->__getLastRequest()."\n";
+print $proxy->GetService()->__getLastResponse()."\n";
+```
+
+### <a name="php-sdk-exceptions"></a>PHP SDK Exceptions
+The Bing Ads PHP SDK exceptions abstract some of the service level exceptions. To work around most of the exceptions you can try again, and feel free to contact support if the issue persists after multiple retry attempts.
+
+You should also handle the *OAuthTokenRequestException*, which is thrown if an error was returned from the Microsft Account authorization server. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example you might have specified an invalid client ID. 
     
 ## <a name="python-exceptions"><a/>Python Exceptions
 If you use the Bing Ads Python [SDK](~/guides/client-libraries.md), your application should be prepared to handle Bing Ads API [service level exceptions](#faultoverview) and [Bing Ads Python SDK](#python-sdk-exceptions) exceptions described below. 
@@ -236,27 +258,6 @@ logging.basicConfig(level=logging.INFO)
 logging.getLogger('suds.client').setLevel(logging.DEBUG)
 ```
     
-## <a name="php-exceptions"><a/>PHP Exceptions
-If you use the Bing Ads PHP [SDK](~/guides/client-libraries.md), your application should be prepared to handle Bing Ads API [service level exceptions](#faultoverview) and [Bing Ads PHP SDK](#php-sdk-exceptions) exceptions described below. 
-
-For troubleshooting PHP applications, see [PHP SDK Troubleshooting](#php-troubleshooting).
-
-### <a name="php-troubleshooting"></a>PHP SDK Troubleshooting
-Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](http://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
-
-#### <a name="php-troubleshooting-print"></a>Print SOAP
-In PHP you can use the following methods to print the SOAP envelopes. Each of the PHP code examples include these statements to print the errors to the console.   
-
-```php
-print $proxy->GetService()->__getLastRequest()."\n";
-print $proxy->GetService()->__getLastResponse()."\n";
-```
-
-### <a name="php-sdk-exceptions"></a>PHP SDK Exceptions
-The Bing Ads PHP SDK exceptions abstract some of the service level exceptions. To work around most of the exceptions you can try again, and feel free to contact support if the issue persists after multiple retry attempts.
-
-You should also handle the *OAuthTokenRequestException*, which is thrown if an error was returned from the Microsft Account authorization server. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example you might have specified an invalid client ID. 
-
 ## <a name="contact-support"></a>Contact Support
 To get help with issues that you cannot resolve, consider posting in the [API Developer](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) forum where an active Bing Ads product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Bing Ads Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support).
 

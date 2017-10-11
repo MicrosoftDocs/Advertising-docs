@@ -2,8 +2,9 @@
 title: "Hotel Group Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-author: "eric-urban"
+author: "swhite-msft"
 ms.author: "scottwhi"
+description: 
 ---
 # Hotel Group Code Example
 The following example shows the requests you use to list, get, add, and update hotel groups. 

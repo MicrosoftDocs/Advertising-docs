@@ -4,22 +4,12 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Setup Product ads with the Bing Ads API.
 ---
 # Product Ads
 A Bing Shopping campaign enables you to advertise the products from your Bing Merchant Center store product catalog. Product ads from a Bing Shopping campaign include details about the product, an image, and optional promotional text.
 
 You can manage Bing Shopping settings with either the [Bulk Service](~/bulk-service/bulk-service-reference.md) or [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](~/bulk-service/bulk-service-reference.md) if you need to upload or download a high volume of entity settings. For example you can update all ad groups for your entire account in a single upload. In comparison, with the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md) you can only update 100 ad groups per call and those ad groups must be in the same campaign. For details see the following sections. 
-
--   [Setup Bing Merchant Center](#setup)
-
--   [Create a Bing Shopping Campaign with the Bulk Service](#bingshopping-bulkservice)
-
--   [Create a Bing Shopping Campaign with the Campaign Management Service](#bingshopping-campaignservice)
-
--   [Product Conditions](#conditions)
-
--   [Performance Statistics for Bing Shopping Campaigns](#reports)
-
 
 ## <a name="setup"></a>Setup Bing Merchant Center
 To create a Bing Shopping campaign, follow these steps.
@@ -43,13 +33,14 @@ These are the Bing Shopping entities that can be accessed using the [Bulk Servic
 -   [Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md)
 -   [Product Ad](~/bulk-service/product-ad.md)
 
-For code examples that show how to apply product conditions for Bing Shopping campaigns using the Bulk service, see [Bulk Shopping Campaigns Example](../guides/code-example-bulk-shopping-campaigns.md).
+> [!TIP]
+> For code examples that show how to apply product conditions for Bing Shopping campaigns using the Bulk service, see [Bulk Shopping Campaigns Example](../guides/code-example-bulk-shopping-campaigns.md).
 
 To create a Bing Shopping campaign, follow these steps.
 
 1.  Create one or more Bing Shopping campaigns.
 
-    > [!TIP]
+    > [!NOTE]
     > You must create designated campaigns for Bing Shopping. You may not create text ads in your Bing Shopping campaigns.
 
     -   Set the *Campaign Type* field of the [Campaign](~/bulk-service/campaign.md) to *Shopping*.
@@ -108,31 +99,19 @@ To create a Bing Shopping campaign, follow these steps.
 
     -   You may not specify duplicate product conditions in a branch. For more information, see [Product Conditions](#conditions).
 
-5.  Upload a product ad. You must add at least one [Product Ad](~/bulk-service/product-ad.md) to the corresponding ad group. A [Product Ad](~/bulk-service/product-ad.md) is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Bing Merchant Center store's product catalog. The primary purpose of the [Product Ad](~/bulk-service/product-ad.md) object is to provide promotional text that the delivery engine adds to the product ads that it generates. For example, if the promotional text is set to ?Free shipping on $99 purchases?, the delivery engine will set the product ad's description to ?Free shipping on $99 purchases.?
+5.  Upload a product ad. You must add at least one [Product Ad](~/bulk-service/product-ad.md) to the corresponding ad group. A [Product Ad](~/bulk-service/product-ad.md) is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Bing Merchant Center store's product catalog. The primary purpose of the [Product Ad](~/bulk-service/product-ad.md) object is to provide promotional text that the delivery engine adds to the product ads that it generates. For example, if the promotional text is set to "Free shipping on $99 purchases", the delivery engine will set the product ad's description to "Free shipping on $99 purchases."
 
 After you complete these steps, the delivery engine can begin serving product ads for the products that it finds in the customer's Bing Merchant Center store. If the user's search query has product intent, the delivery engine searches the customer's Bing Merchant Center store for products that matches the query. If it finds a product, and the product meets the conditions of the product filters specified in the product scope and product partitions, the delivery engine generates a product ad using the product details from the store.
 
 ## <a name="bingshopping-campaignservice"></a>Create a Bing Shopping Campaign with the Campaign Management Service
-These are the Bing Shopping entities that can be accessed using the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
+To create a Bing Shopping campaign with the Campaign Management API, follow these steps.
 
-> [!NOTE]
-> Partial success is supported for a subset of these operations. For example if you submit 10 ad groups and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](../guides/handle-service-errors-exceptions.md#partial-success).
-
-|Entities|Service Operations|
-|------------|----------------------|
-|[Campaign](~/campaign-management-service/campaign.md)|[AddCampaigns]((~/campaign-management-service/addcampaigns.md)<br /><br />[DeleteCampaigns]((~/campaign-management-service/deletecampaigns.md)<br /><br />[GetCampaignsByAccountId]((~/campaign-management-service/getcampaignsbyaccountid.md)<br /><br />[GetCampaignsByIds]((~/campaign-management-service/getcampaignsbyids.md)<br /><br />[UpdateCampaigns]((~/campaign-management-service/updatecampaigns.md)|
-|[ProductScope](~/campaign-management-service/productscope.md)|[AddCampaignCriterions](~/campaign-management-service/addcampaigncriterions.md)<br /><br />[DeleteCampaignCriterions]((~/campaign-management-service/updatecampaigncriterions.md)<br /><br />[GetCampaignCriterionsByIds]((~/campaign-management-service/getcampaigncriterionsbyids.md)<br /><br />[UpdateCampaignCriterions]((~/campaign-management-service/updatecampaigncriterions.md)|
-|[AdGroup](~/campaign-management-service/adgroup.md)|[AddAdGroups]((~/campaign-management-service/addadgroups.md)<br /><br />[DeleteAdGroups]((~/campaign-management-service/deleteadgroups.md)<br /><br />[GetAdGroupsByCampaignId](~/campaign-management-service/getadgroupsbycampaignid.md)<br /><br />[GetAdGroupsByIds](~/campaign-management-service/getadgroupsbyids.md)<br /><br />[UpdateAdGroups](~/campaign-management-service/updateadgroups.md)|
-|[ProductAd](~/campaign-management-service/productad.md)|[AddAds](~/campaign-management-service/addads.md)<br /><br />[GetAdsByAdGroupId](~/campaign-management-service/getadsbyadgroupid.md)<br /><br />[DeleteAds](~/campaign-management-service/deleteads.md)<br /><br />[GetAdsByEditorialStatus](~/campaign-management-service/getadsbyeditorialstatus.md)<br /><br />[GetAdsByIds](~/campaign-management-service/getadsbyids.md)<br /><br />[UpdateAds](~/campaign-management-service/updateads.md)|
-|[BiddableAdGroupCriterion](~/campaign-management-service/biddableadgroupcriterion.md)<br /><br />**Note:** Currently the only supported [BiddableAdGroupCriterion](~/campaign-management-service/biddableadgroupcriterion.md) is used for a Bing Shopping campaign [ProductPartition](~/campaign-management-service/productpartition.md). You cannot update or delete a product partition, so [ApplyProductPartitionActions](~/campaign-management-service/applyproductpartitionactions.md) is used for all write operations. [AddAdGroupCriterions](~/campaign-management-service/addadgroupcriterions.md), [DeleteAdGroupCriterions](~/campaign-management-service/deleteadgroupcriterions.md), and [UpdateAdGroupCriterions](~/campaign-management-service/updateadgroupcriterions.md) operations are not supported for managing Bing Shopping campaigns.|[ApplyProductPartitionActions](~/campaign-management-service/applyproductpartitionactions.md)<br /><br />[GetAdGroupCriterionsByIds](~/campaign-management-service/getadgroupcriterionsbyids.md)
-
-For code examples that show how to apply product conditions for Bing Shopping campaigns using the Campaign Management service, see [Shopping Campaigns Example](../guides/code-example-shopping-campaigns.md).
-
-To create a Bing Shopping campaign, follow these steps.
+> [!TIP]
+> For code examples that show how to apply product conditions for Bing Shopping campaigns using the Campaign Management service, see [Shopping Campaigns Example](../guides/code-example-shopping-campaigns.md).
 
 1.  Create one or more Bing Shopping campaigns.
 
-    > [!TIP]
+    > [!NOTE]
     > You must create designated campaigns for Bing Shopping. You may not create text ads in your Bing Shopping campaigns.
 
     -   Set the *CampaignType* element of the [Campaign](~/campaign-management-service/campaign.md) to *Shopping*.
@@ -191,7 +170,7 @@ To create a Bing Shopping campaign, follow these steps.
 
     -   You may not specify duplicate product conditions in a branch. For more information, see [Product Conditions](#conditions).
 
-5.  Create a product ad. You must add at least one [ProductAd](~/campaign-management-service/productad.md) to the corresponding ad group. A *ProductAd* is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Bing Merchant Center store's product catalog. The primary purpose of the *ProductAd* object is to provide promotional text that the delivery engine adds to the product ads that it generates. For example, if the promotional text is set to ?Free shipping on $99 purchases?, the delivery engine will set the product ad's description to ?Free shipping on $99 purchases.?
+5.  Create a product ad. You must add at least one [ProductAd](~/campaign-management-service/productad.md) to the corresponding ad group. A *ProductAd* is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Bing Merchant Center store's product catalog. The primary purpose of the *ProductAd* object is to provide promotional text that the delivery engine adds to the product ads that it generates. For example, if the promotional text is set to "Free shipping on $99 purchases", the delivery engine will set the product ad's description to "Free shipping on $99 purchases."
 
     To create a product ad, instantiate a *ProductAd* object and set the *PromotionalText* element as needed. If you do not want to add promotional text to your ads, set *PromotionalText* to null or an empty string. Next, call the [AddAds](~/campaign-management-service/addads.md) operation to add the product ad to an ad group.
 
@@ -244,4 +223,3 @@ When you download entities with the [Bulk Service](~/bulk-service/bulk-service-r
 > -   If you have modified your product partition tree structure within the last hour, the tree structure of your product partitions will always be up to date in the [Bulk Service](~/bulk-service/bulk-service-reference.md) download. Only the *Ad Group Product Partition* record that represents you tree root node will contain performance statistics fields such as impressions and clicks, which may lag behind the performance statistics that you see in the Bing Ads web application by up to an hour.
 > -   If you have modified your product partition tree structure within the last hour, both the performance statistics and the tree structure of your product partitions returned in a report through the [Reporting Service](~/reporting-service/reporting-service-reference.md) may lag behind the data that you see in the Bing Ads web application by up to an hour.
 
- 

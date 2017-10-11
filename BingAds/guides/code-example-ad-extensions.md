@@ -1,9 +1,10 @@
 ---
-title: "Ad Extensions"
+title: "Ad Extensions Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
+description: Setup ad extensions in C#, Java, PHP, or Python.
 dev_langs:
   - csharp
   - java
