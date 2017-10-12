@@ -1,12 +1,12 @@
 ---
-title: UpdateConversionGoals Service Operation
+title: UpdateConversionGoals Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates conversion goals within the account's shared conversion goal library.
 ---
-# UpdateConversionGoals Service Operation
+# UpdateConversionGoals Service Operation - Campaign Management
 Updates conversion goals within the account's shared conversion goal library. 
 
 > [!TIP]

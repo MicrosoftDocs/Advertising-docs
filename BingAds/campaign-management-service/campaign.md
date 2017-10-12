@@ -1,12 +1,12 @@
 ---
-title: Campaign Data Object
+title: Campaign Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a campaign.
 ---
-# Campaign Data Object
+# Campaign Data Object - Campaign Management
 Defines a campaign.
 
 ## Syntax

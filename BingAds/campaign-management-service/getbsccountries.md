@@ -1,12 +1,12 @@
 ---
-title: GetBSCCountries Service Operation
+title: GetBSCCountries Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the list of supported sales country codes for Bing Shopping campaigns.
 ---
-# GetBSCCountries Service Operation
+# GetBSCCountries Service Operation - Campaign Management
 Gets the list of supported sales country codes for Bing Shopping campaigns.
 
 ## <a name="request"></a>Request Elements

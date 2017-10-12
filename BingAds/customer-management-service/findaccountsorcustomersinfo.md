@@ -1,12 +1,12 @@
 ---
-title: FindAccountsOrCustomersInfo Service Operation
+title: FindAccountsOrCustomersInfo Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets a list of the accounts and customers that match the specified filter criteria.
 ---
-# FindAccountsOrCustomersInfo Service Operation
+# FindAccountsOrCustomersInfo Service Operation - Customer Management
 Gets a list of the accounts and customers that match the specified filter criteria.
 
 ## <a name="request"></a>Request Elements

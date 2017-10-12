@@ -1,12 +1,12 @@
 ---
-title: NegativeKeyword Data Object
+title: NegativeKeyword Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a negative keyword with match type.
 ---
-# NegativeKeyword Data Object
+# NegativeKeyword Data Object - Ad Insight
 Defines a negative keyword with match type.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: AdvertiserAccount Data Object
+title: AdvertiserAccount Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an advertiser account.
 ---
-# AdvertiserAccount Data Object
+# AdvertiserAccount Data Object - Customer Management
 Defines an advertiser account.
 
 ## Syntax

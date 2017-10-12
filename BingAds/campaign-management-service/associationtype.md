@@ -1,12 +1,12 @@
 ---
-title: AssociationType Value Set
+title: AssociationType Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the entity types that can be associated with an ad extension.
 ---
-# AssociationType Value Set
+# AssociationType Value Set - Campaign Management
 Defines the entity types that can be associated with an ad extension.
 
 ## Syntax

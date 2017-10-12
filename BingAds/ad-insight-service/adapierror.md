@@ -1,12 +1,12 @@
 ---
-title: AdApiError Data Object
+title: AdApiError Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an error object that contains the details that explain why the service operation failed.
 ---
-# AdApiError Data Object
+# AdApiError Data Object - Ad Insight
 Defines an error object that contains the details that explain why the service operation failed.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: Audience Data Object
+title: Audience Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the base object of an audience.
 ---
-# Audience Data Object
+# Audience Data Object - Campaign Management
 Defines the base object of an audience.
 
 Do not try to instantiate an *Audience*. You can create one or more following objects that derive from it.

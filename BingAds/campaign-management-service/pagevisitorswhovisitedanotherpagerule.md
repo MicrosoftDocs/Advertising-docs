@@ -1,12 +1,12 @@
 ---
-title: PageVisitorsWhoVisitedAnotherPageRule Data Object
+title: PageVisitorsWhoVisitedAnotherPageRule Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a page visitors who visited another page remarketing rule.
 ---
-# PageVisitorsWhoVisitedAnotherPageRule Data Object
+# PageVisitorsWhoVisitedAnotherPageRule Data Object - Campaign Management
 Defines a page visitors who visited another page remarketing rule. 
 
 Remarketing rules are conditions used to determine who to add to your remarketing list. For the *PageVisitorsWhoVisitedAnotherPage* rule, you must include one or more rule item groups for the page visited (*RuleItemGroups*), and you must also include one or more rule item groups for another page that must have been visited (*AnotherRuleItemGroups*). 

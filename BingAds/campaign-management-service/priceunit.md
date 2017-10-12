@@ -1,12 +1,12 @@
 ---
-title: PriceUnit Value Set
+title: PriceUnit Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines price units for price ad extensions.
 ---
-# PriceUnit Value Set
+# PriceUnit Value Set - Campaign Management
 Defines price units for price ad extensions.
 
 ## Syntax

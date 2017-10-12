@@ -1,12 +1,12 @@
 ---
-title: Address Data Object
+title: Address Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a postal address.
 ---
-# Address Data Object
+# Address Data Object - Campaign Management
 Defines a postal address.
 
 ## Syntax

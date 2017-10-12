@@ -1,12 +1,12 @@
 ---
-title: GetCustomersInfo Service Operation
+title: GetCustomersInfo Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.
 ---
-# GetCustomersInfo Service Operation
+# GetCustomersInfo Service Operation - Customer Management
 Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.
 
 The list that this operation returns is based on the customers that the user that you specify in the *UserName* header element of the request, has access to. If the user is a member of the reseller's user group, the list will contain all customers that the reseller has signed up or a subset of customers if the user is limited to a subset of customers by a user role.

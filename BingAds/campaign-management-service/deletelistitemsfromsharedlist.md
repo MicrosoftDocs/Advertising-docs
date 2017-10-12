@@ -1,12 +1,12 @@
 ---
-title: DeleteListItemsFromSharedList Service Operation
+title: DeleteListItemsFromSharedList Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes negative keywords from a negative keyword list.
 ---
-# DeleteListItemsFromSharedList Service Operation
+# DeleteListItemsFromSharedList Service Operation - Campaign Management
 Deletes negative keywords from a negative keyword list.
 
 > [!NOTE]

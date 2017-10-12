@@ -1,12 +1,12 @@
 ---
-title: KeywordSuggestion Data Object
+title: KeywordSuggestion Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains a list of suggested keywords that may perform better than the specified keyword.
 ---
-# KeywordSuggestion Data Object
+# KeywordSuggestion Data Object - Ad Insight
 Defines an object that contains a list of suggested keywords that may perform better than the specified keyword.
 
 ## Syntax

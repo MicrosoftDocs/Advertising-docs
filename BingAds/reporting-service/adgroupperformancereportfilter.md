@@ -1,12 +1,12 @@
 ---
-title: AdGroupPerformanceReportFilter Data Object
+title: AdGroupPerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the ad group performance report data.
 ---
-# AdGroupPerformanceReportFilter Data Object
+# AdGroupPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the ad group performance report data.
 
 ## Syntax

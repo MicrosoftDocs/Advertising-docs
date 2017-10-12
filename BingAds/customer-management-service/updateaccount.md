@@ -1,12 +1,12 @@
 ---
-title: UpdateAccount Service Operation
+title: UpdateAccount Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates the details of the specified account.
 ---
-# UpdateAccount Service Operation
+# UpdateAccount Service Operation - Customer Management
 Updates the details of the specified account.
 
 ## <a name="request"></a>Request Elements

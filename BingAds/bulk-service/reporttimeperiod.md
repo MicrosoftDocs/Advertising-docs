@@ -1,12 +1,12 @@
 ---
-title: ReportTimePeriod Value Set
+title: ReportTimePeriod Value Set - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the date range values for the requested performance data in a bulk download.
 ---
-# ReportTimePeriod Value Set
+# ReportTimePeriod Value Set - Bulk
 Defines the date range values for the requested performance data in a bulk download.
 
 ## Syntax

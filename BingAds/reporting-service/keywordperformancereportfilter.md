@@ -1,12 +1,12 @@
 ---
-title: KeywordPerformanceReportFilter Data Object
+title: KeywordPerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the keyword performance report data.
 ---
-# KeywordPerformanceReportFilter Data Object
+# KeywordPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the keyword performance report data.
 
 ## Syntax

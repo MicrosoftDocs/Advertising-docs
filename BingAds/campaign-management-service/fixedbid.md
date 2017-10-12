@@ -1,12 +1,12 @@
 ---
-title: FixedBid Data Object
+title: FixedBid Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the fixed bid to use in the auction.
 ---
-# FixedBid Data Object
+# FixedBid Data Object - Campaign Management
 Defines the fixed bid to use in the auction.
 
 ## Syntax

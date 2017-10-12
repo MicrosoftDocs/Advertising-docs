@@ -1,12 +1,12 @@
 ---
-title: CustomerFinancialStatus Value Set
+title: CustomerFinancialStatus Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible financial status values of a customer.
 ---
-# CustomerFinancialStatus Value Set
+# CustomerFinancialStatus Value Set - Customer Management
 Defines the possible financial status values of a customer.
 
 ## Syntax

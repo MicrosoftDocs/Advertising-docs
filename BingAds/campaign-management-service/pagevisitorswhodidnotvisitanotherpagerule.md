@@ -1,12 +1,12 @@
 ---
-title: PageVisitorsWhoDidNotVisitAnotherPageRule Data Object
+title: PageVisitorsWhoDidNotVisitAnotherPageRule Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a page visitors who did not visit another page remarketing rule.
 ---
-# PageVisitorsWhoDidNotVisitAnotherPageRule Data Object
+# PageVisitorsWhoDidNotVisitAnotherPageRule Data Object - Campaign Management
 Defines a page visitors who did not visit another page remarketing rule.
 
 Remarketing rules are conditions used to determine who to add to your remarketing list. For the *PageVisitorsWhoDidNotVisitAnotherPage* rule, you must include one or more rule item groups for the page visited (*IncludeRuleItemGroups*), and you must also include one or more rule item groups for the page that must not have been visited (*ExcludeRuleItemGroups*). 

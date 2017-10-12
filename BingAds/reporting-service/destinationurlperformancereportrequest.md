@@ -1,12 +1,12 @@
 ---
-title: DestinationUrlPerformanceReportRequest Data Object
+title: DestinationUrlPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a destination URL performance report request.
 ---
-# DestinationUrlPerformanceReportRequest Data Object
+# DestinationUrlPerformanceReportRequest Data Object - Reporting
 Defines a destination URL performance report request. Use this report to identify landing pages that met audience expectations and potentially resulted in high click-through or conversion rates. 
 
 You can request impressions, clicks, spend, and average cost per click for your landing pages. Once downloaded, this data can be sorted by destination URL, account, campaign, and ad group.

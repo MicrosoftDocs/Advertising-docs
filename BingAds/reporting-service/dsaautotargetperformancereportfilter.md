@@ -1,12 +1,12 @@
 ---
-title: DSAAutoTargetPerformanceReportFilter Data Object
+title: DSAAutoTargetPerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the DSA auto target performance report data.
 ---
-# DSAAutoTargetPerformanceReportFilter Data Object
+# DSAAutoTargetPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the DSA auto target performance report data.
 
 ## Syntax

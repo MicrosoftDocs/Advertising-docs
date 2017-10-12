@@ -1,12 +1,12 @@
 ---
-title: SetLabelAssociations Service Operation
+title: SetLabelAssociations Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Sets label associations.
 ---
-# SetLabelAssociations Service Operation
+# SetLabelAssociations Service Operation - Campaign Management
 Sets label associations.
 
 ## <a name="request"></a>Request Elements

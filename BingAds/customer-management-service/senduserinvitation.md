@@ -1,12 +1,12 @@
 ---
-title: SendUserInvitation Service Operation
+title: SendUserInvitation Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Sends an invitation for  a Microsoft account user to manage one or more Bing Ads customer accounts.
 ---
-# SendUserInvitation Service Operation
+# SendUserInvitation Service Operation - Customer Management
 Sends an invitation for  a Microsoft account user to manage one or more Bing Ads customer accounts. When the invitation is accepted, the user's Microsoft account is linked to the specified Bing Ads customer accounts.  
 
 It is possible to have multiple pending invitations sent to the same email address, which have not yet expired. It is also possible for those invitations to have specified different user roles, for example if you sent an invitation with an incorrect user role and then sent a second invitation with the correct user role. The recipient can accept any of the invitations. The Bing Ads API does not support any operations to delete pending user invitations. After you invite a user, the only way to cancel the invitation is through the Bing Ads web application. You can find both pending and accepted invitations in the Users section of Accounts & Billing.

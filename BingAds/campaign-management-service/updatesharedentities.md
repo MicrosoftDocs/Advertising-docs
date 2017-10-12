@@ -1,12 +1,12 @@
 ---
-title: UpdateSharedEntities Service Operation
+title: UpdateSharedEntities Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates negative keyword lists within the account's library.
 ---
-# UpdateSharedEntities Service Operation
+# UpdateSharedEntities Service Operation - Campaign Management
 Updates negative keyword lists within the account's library.
 
 ## <a name="request"></a>Request Elements

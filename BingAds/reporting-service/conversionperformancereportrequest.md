@@ -1,12 +1,12 @@
 ---
-title: ConversionPerformanceReportRequest Data Object
+title: ConversionPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a conversion performance report request.
 ---
-# ConversionPerformanceReportRequest Data Object
+# ConversionPerformanceReportRequest Data Object - Reporting
 Defines a conversion performance report request. Use this report to understand which campaigns and keywords are leading an audience to complete a purchase or other conversion action. 
 
 You can request conversions, assists, revenue, and revenue per conversion for your campaigns. Once downloaded, this data can be sorted by account, ad group, campaign, keyword, and device type. 

@@ -1,12 +1,12 @@
 ---
-title: DeleteCampaignCriterions Service Operation
+title: DeleteCampaignCriterions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes one or more campaign criterions.
 ---
-# DeleteCampaignCriterions Service Operation
+# DeleteCampaignCriterions Service Operation - Campaign Management
 Deletes one or more campaign criterions.
 
 ## <a name="request"></a>Request Elements

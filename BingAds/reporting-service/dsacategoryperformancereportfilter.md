@@ -1,12 +1,12 @@
 ---
-title: DSACategoryPerformanceReportFilter Data Object
+title: DSACategoryPerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the DSA category performance report data.
 ---
-# DSACategoryPerformanceReportFilter Data Object
+# DSACategoryPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the DSA category performance report data.
 
 ## Syntax

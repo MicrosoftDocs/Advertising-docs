@@ -1,12 +1,12 @@
 ---
-title: SearchQueryReportAggregation Value Set
+title: SearchQueryReportAggregation Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the aggregation values that you can use in a search query performance report.
 ---
-# SearchQueryReportAggregation Value Set
+# SearchQueryReportAggregation Value Set - Reporting
 Defines the aggregation values that you can use in a search query performance report.
 
 ## Syntax

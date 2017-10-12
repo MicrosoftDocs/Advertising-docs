@@ -1,12 +1,12 @@
 ---
-title: Keyword Data Object
+title: Keyword Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a keyword with match type.
 ---
-# Keyword Data Object
+# Keyword Data Object - Ad Insight
 Defines a keyword with match type.
 
 ## Syntax

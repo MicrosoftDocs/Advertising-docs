@@ -1,12 +1,12 @@
 ---
-title: DownloadFileType Value Set
+title: DownloadFileType Value Set - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the file formats for a download request.
 ---
-# DownloadFileType Value Set
+# DownloadFileType Value Set - Bulk
 Defines the file formats for a download request.
 
 > [!NOTE]

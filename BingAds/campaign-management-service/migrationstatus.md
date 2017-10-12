@@ -1,12 +1,12 @@
 ---
-title: MigrationStatus Value Set
+title: MigrationStatus Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible migration status values.
 ---
-# MigrationStatus Value Set
+# MigrationStatus Value Set - Campaign Management
 Defines the possible migration status values.
 
 ## Syntax

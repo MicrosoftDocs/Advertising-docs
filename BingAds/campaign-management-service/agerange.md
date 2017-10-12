@@ -1,12 +1,12 @@
 ---
-title: AgeRange Value Set
+title: AgeRange Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible age range values that you can use to target ads to People.
 ---
-# AgeRange Value Set
+# AgeRange Value Set - Campaign Management
 Defines the possible age range values that you can use to target ads to People.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: Keyword Data Object
+title: Keyword Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a keyword.
 ---
-# Keyword Data Object
+# Keyword Data Object - Campaign Management
 Defines a keyword.
 
 ## Syntax

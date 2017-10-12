@@ -1,12 +1,12 @@
 ---
-title: OperationError Data Object
+title: OperationError Data Object - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an error object that contains the details that explain why the service operation failed.
 ---
-# OperationError Data Object
+# OperationError Data Object - Customer Billing
 Defines an error object that contains the details that explain why the service operation failed.
 
 ## Syntax

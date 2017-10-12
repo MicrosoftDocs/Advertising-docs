@@ -1,12 +1,12 @@
 ---
-title: AddAdGroupCriterions Service Operation
+title: AddAdGroupCriterions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Adds one or more ad group criterions.
 ---
-# AddAdGroupCriterions Service Operation
+# AddAdGroupCriterions Service Operation - Campaign Management
 Adds one or more ad group criterions.
 
 ## <a name="request"></a>Request Elements

@@ -1,12 +1,12 @@
 ---
-title: CustomerInfo Data Object
+title: CustomerInfo Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a customer identification object that contains information that identifies a customer.
 ---
-# CustomerInfo Data Object
+# CustomerInfo Data Object - Customer Management
 Defines a customer identification object that contains information that identifies a customer.
 
 ## Syntax

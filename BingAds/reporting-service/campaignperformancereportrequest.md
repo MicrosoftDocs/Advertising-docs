@@ -1,12 +1,12 @@
 ---
-title: CampaignPerformanceReportRequest Data Object
+title: CampaignPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a campaign performance report request.
 ---
-# CampaignPerformanceReportRequest Data Object
+# CampaignPerformanceReportRequest Data Object - Reporting
 Defines a campaign performance report request. Use this report to view high-level performance statistics and quality attributes for each campaign or account. This is also a quick way to flag any major campaign or account problems.
 
 You can request impressions, impression share (%), clicks, spend, and average cost per click for each campaign or account. Once downloaded, this data can be sorted by campaign, campaign status, and quality score.

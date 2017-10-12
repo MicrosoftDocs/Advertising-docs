@@ -1,12 +1,12 @@
 ---
-title: GetCampaignCriterionsByIds Service Operation
+title: GetCampaignCriterionsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the specified campaign criterions.
 ---
-# GetCampaignCriterionsByIds Service Operation
+# GetCampaignCriterionsByIds Service Operation - Campaign Management
 Gets the specified campaign criterions.
 
 ## <a name="request"></a>Request Elements

@@ -1,12 +1,12 @@
 ---
-title: GetCustomer Service Operation
+title: GetCustomer Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the details of a customer.
 ---
-# GetCustomer Service Operation
+# GetCustomer Service Operation - Customer Management
 Gets the details of a customer.
 
 ## <a name="request"></a>Request Elements

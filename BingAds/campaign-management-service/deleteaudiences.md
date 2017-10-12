@@ -1,12 +1,12 @@
 ---
-title: DeleteAudiences Service Operation
+title: DeleteAudiences Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes the specified audiences.
 ---
-# DeleteAudiences Service Operation
+# DeleteAudiences Service Operation - Campaign Management
 Deletes the specified audiences.
 
 ## <a name="request"></a>Request Elements

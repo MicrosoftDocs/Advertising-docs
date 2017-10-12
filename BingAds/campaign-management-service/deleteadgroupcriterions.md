@@ -1,12 +1,12 @@
 ---
-title: DeleteAdGroupCriterions Service Operation
+title: DeleteAdGroupCriterions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes the specified ad group criterions.
 ---
-# DeleteAdGroupCriterions Service Operation
+# DeleteAdGroupCriterions Service Operation - Campaign Management
 Deletes the specified ad group criterions.
 
 ## <a name="request"></a>Request Elements

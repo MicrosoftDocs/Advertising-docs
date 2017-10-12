@@ -1,12 +1,12 @@
 ---
-title: TargetAdPosition Value Set
+title: TargetAdPosition Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible positions where you can target an ad to appear in the search results or on a content-based webpage.
 ---
-# TargetAdPosition Value Set
+# TargetAdPosition Value Set - Ad Insight
 Defines the possible positions where you can target an ad to appear in the search results or on a content-based webpage.
 
 ## Syntax

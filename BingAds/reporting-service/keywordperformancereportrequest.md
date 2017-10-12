@@ -1,12 +1,12 @@
 ---
-title: KeywordPerformanceReportRequest Data Object
+title: KeywordPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a keyword performance report request.
 ---
-# KeywordPerformanceReportRequest Data Object
+# KeywordPerformanceReportRequest Data Object - Reporting
 Defines a keyword performance report request. Use this report to find out which keywords are performing well and those that are not. 
 
 You can request impressions, clicks, spend, and average cost per click for your landing pages. Once downloaded, this data can be sorted by keyword, account, campaign, and ad group.

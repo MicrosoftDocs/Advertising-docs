@@ -1,12 +1,12 @@
 ---
-title: DownloadEntity Value Set
+title: DownloadEntity Value Set - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the entities that may be downloaded in bulk.
 ---
-# DownloadEntity Value Set
+# DownloadEntity Value Set - Bulk
 Defines the entities that may be downloaded in bulk.
 
 For more information, see [Bulk File Schema](../bulk-service/bulk-file-schema.md).

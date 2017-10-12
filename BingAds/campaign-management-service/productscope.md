@@ -1,12 +1,12 @@
 ---
-title: ProductScope Data Object
+title: ProductScope Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a campaign level product scope with list of conditions that help determine whether a product from the Bing Merchant Center store gets served as a product ad.
 ---
-# ProductScope Data Object
+# ProductScope Data Object - Campaign Management
 Defines a campaign level product scope with list of conditions that help determine whether a product from the Bing Merchant Center store gets served as a product ad.
 
 The *ProductScope* criterion can only be included within [BiddableCampaignCriterion](../campaign-management-service/biddablecampaigncriterion.md). Also note that ad group level [ProductPartition](../campaign-management-service/productpartition.md) can be added to [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) and [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md). Duplicate or conflicting product conditions attempted within an ad group's [ProductPartition](../campaign-management-service/productpartition.md) group will be rejected by the [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md) operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level product scope.

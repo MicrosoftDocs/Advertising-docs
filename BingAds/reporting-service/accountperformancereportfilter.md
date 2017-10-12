@@ -1,12 +1,12 @@
 ---
-title: AccountPerformanceReportFilter Data Object
+title: AccountPerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the account performance report data.
 ---
-# AccountPerformanceReportFilter Data Object
+# AccountPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the account performance report data.
 
 ## Syntax

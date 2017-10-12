@@ -1,12 +1,12 @@
 ---
-title: MatchType Value Set
+title: MatchType Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible match types for a keyword or negative keyword.
 ---
-# MatchType Value Set
+# MatchType Value Set - Campaign Management
 Defines the possible match types for a keyword or negative keyword.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: GoalsAndFunnelsReportRequest Data Object
+title: GoalsAndFunnelsReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a goals and funnels report request.
 ---
-# GoalsAndFunnelsReportRequest Data Object
+# GoalsAndFunnelsReportRequest Data Object - Reporting
 Defines a goals and funnels report request. Use this report to discover whether your audience completes each step through the land, browse, prospect, and conversion pages of your website. For example, you can use this report to determine the step that users leave the conversion funnel, so that you can improve or remove that step to increase the chance that the user will continue to the next step.
 
 You can request spend, revenue, assists, conversions, and conversion steps of your websites. Once downloaded, this data can be sorted by account, ad group, campaign, keyword, and goal.

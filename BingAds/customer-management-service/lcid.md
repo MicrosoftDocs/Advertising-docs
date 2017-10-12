@@ -1,12 +1,12 @@
 ---
-title: LCID Value Set
+title: LCID Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a selection of locale values.
 ---
-# LCID Value Set
+# LCID Value Set - Customer Management
 Defines a selection of locale values.
 
 > [!NOTE]

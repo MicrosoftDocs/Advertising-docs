@@ -1,12 +1,12 @@
 ---
-title: AdExtensionIdentity Data Object
+title: AdExtensionIdentity Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that identifies an ad extension revision.
 ---
-# AdExtensionIdentity Data Object
+# AdExtensionIdentity Data Object - Campaign Management
 Defines an object that identifies an ad extension revision.
 
 ## Syntax

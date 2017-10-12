@@ -1,12 +1,12 @@
 ---
-title: SuggestKeywordsForUrl Service Operation
+title: SuggestKeywordsForUrl Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Suggests the possible keywords for the content located at the specified URL.
 ---
-# SuggestKeywordsForUrl Service Operation
+# SuggestKeywordsForUrl Service Operation - Ad Insight
 Suggests the possible keywords for the content located at the specified URL.
 
 ## <a name="request"></a>Request Elements

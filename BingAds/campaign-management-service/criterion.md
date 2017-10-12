@@ -1,12 +1,12 @@
 ---
-title: Criterion Data Object
+title: Criterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the base object of a criterion.
 ---
-# Criterion Data Object
+# Criterion Data Object - Campaign Management
 Defines the base object of a criterion.
 
 Do not try to instantiate a *Criterion*. You can create one or more following objects that derive from it.

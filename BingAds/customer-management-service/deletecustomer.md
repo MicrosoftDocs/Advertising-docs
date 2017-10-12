@@ -1,12 +1,12 @@
 ---
-title: DeleteCustomer Service Operation
+title: DeleteCustomer Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes a customer.
 ---
-# DeleteCustomer Service Operation
+# DeleteCustomer Service Operation - Customer Management
 Deletes a customer.
 
 ## <a name="request"></a>Request Elements

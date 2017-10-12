@@ -1,12 +1,12 @@
 ---
-title: Bid Data Object
+title: Bid Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a bid.
 ---
-# Bid Data Object
+# Bid Data Object - Campaign Management
 Defines a bid.
 
 ## Syntax

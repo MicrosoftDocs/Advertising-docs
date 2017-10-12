@@ -1,12 +1,12 @@
 ---
-title: Media Data Object
+title: Media Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the base object of media.
 ---
-# Media Data Object
+# Media Data Object - Campaign Management
 Defines the base object of media.
 
 Do not try to instantiate a *Media*. You can create the following object that derives from it.

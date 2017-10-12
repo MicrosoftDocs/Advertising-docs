@@ -1,12 +1,12 @@
 ---
-title: ConversionGoalCountType Value Set
+title: ConversionGoalCountType Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines how your conversions are recorded within your chosen conversion window.
 ---
-# ConversionGoalCountType Value Set
+# ConversionGoalCountType Value Set - Campaign Management
 Defines how your conversions are recorded within your chosen conversion window.
 
 For example, you track two conversions: leads and sales. You pick *Unique* for leads and *All* for sales. When one ad click turns into two leads and two sales, it's counted as three conversions: one for the unique lead, and two for all the sales. 

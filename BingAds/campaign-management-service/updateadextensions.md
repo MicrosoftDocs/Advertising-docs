@@ -1,12 +1,12 @@
 ---
-title: UpdateAdExtensions Service Operation
+title: UpdateAdExtensions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates one or more ad extensions within an account's ad extension library.
 ---
-# UpdateAdExtensions Service Operation
+# UpdateAdExtensions Service Operation - Campaign Management
 Updates one or more ad extensions within an account's ad extension library.
 
 ## <a name="request"></a>Request Elements

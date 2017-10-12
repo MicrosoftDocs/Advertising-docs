@@ -1,12 +1,12 @@
 ---
-title: SharedListItem Data Object
+title: SharedListItem Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the base class of a shared list item.
 ---
-# SharedListItem Data Object
+# SharedListItem Data Object - Campaign Management
 Defines the base class of a shared list item.
 
 Do not try to instantiate a *SharedListItem*. You can create the following object that derives from it.

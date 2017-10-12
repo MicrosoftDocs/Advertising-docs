@@ -1,12 +1,12 @@
 ---
-title: MatchType Value Set
+title: MatchType Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible keyword match type values.
 ---
-# MatchType Value Set
+# MatchType Value Set - Ad Insight
 Defines the possible keyword match type values.
 
 ## Syntax

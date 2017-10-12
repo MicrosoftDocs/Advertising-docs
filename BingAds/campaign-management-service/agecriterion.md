@@ -1,12 +1,12 @@
 ---
-title: AgeCriterion Data Object
+title: AgeCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a criterion that can be used to show ads to users in a specific age range.
 ---
-# AgeCriterion Data Object
+# AgeCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to users in a specific age range.
 
 The *AgeCriterion* criterion can be included within [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) and [CampaignCriterion](../campaign-management-service/campaigncriterion.md) objects. If ad group level age criterions are specified, the campaign level age criterions are ignored for that ad group. In other words the ad group age criterions override the campaign age criterions, and are not applied as a union.   

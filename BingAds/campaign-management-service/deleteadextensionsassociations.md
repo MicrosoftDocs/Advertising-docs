@@ -1,12 +1,12 @@
 ---
-title: DeleteAdExtensionsAssociations Service Operation
+title: DeleteAdExtensionsAssociations Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Removes the specified association from the respective campaigns or ad groups.
 ---
-# DeleteAdExtensionsAssociations Service Operation
+# DeleteAdExtensionsAssociations Service Operation - Campaign Management
 Removes the specified association from the respective campaigns or ad groups.
 
 ## <a name="request"></a>Request Elements

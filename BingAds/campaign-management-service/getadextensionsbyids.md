@@ -1,12 +1,12 @@
 ---
-title: GetAdExtensionsByIds Service Operation
+title: GetAdExtensionsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the specified ad extensions from the account's ad extension library.
 ---
-# GetAdExtensionsByIds Service Operation
+# GetAdExtensionsByIds Service Operation - Campaign Management
 Gets the specified ad extensions from the account's ad extension library.
 
 ## <a name="request"></a>Request Elements

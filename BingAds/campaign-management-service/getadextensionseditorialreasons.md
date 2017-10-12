@@ -1,12 +1,12 @@
 ---
-title: GetAdExtensionsEditorialReasons Service Operation
+title: GetAdExtensionsEditorialReasons Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets editorial rejection reasons for the respective ad extension and entity associations.
 ---
-# GetAdExtensionsEditorialReasons Service Operation
+# GetAdExtensionsEditorialReasons Service Operation - Campaign Management
 Gets editorial rejection reasons for the respective ad extension and entity associations.
 
 ## <a name="request"></a>Request Elements

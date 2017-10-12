@@ -1,12 +1,12 @@
 ---
-title: GetBudgetOpportunities Service Operation
+title: GetBudgetOpportunities Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the campaign budget opportunities of the specified campaign.
 ---
-# GetBudgetOpportunities Service Operation
+# GetBudgetOpportunities Service Operation - Ad Insight
 Gets the campaign budget opportunities of the specified campaign.
 
 ## <a name="request"></a>Request Elements

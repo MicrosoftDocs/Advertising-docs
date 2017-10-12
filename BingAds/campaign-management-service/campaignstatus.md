@@ -1,12 +1,12 @@
 ---
-title: CampaignStatus Value Set
+title: CampaignStatus Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible status values of a campaign.
 ---
-# CampaignStatus Value Set
+# CampaignStatus Value Set - Campaign Management
 Defines the possible status values of a campaign.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: GetNegativeSitesByCampaignIds Service Operation
+title: GetNegativeSitesByCampaignIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the negative site URLs of the specified campaigns.
 ---
-# GetNegativeSitesByCampaignIds Service Operation
+# GetNegativeSitesByCampaignIds Service Operation - Campaign Management
 Gets the negative site URLs of the specified campaigns.
 
 ## <a name="request"></a>Request Elements

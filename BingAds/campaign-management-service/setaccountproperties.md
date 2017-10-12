@@ -1,12 +1,12 @@
 ---
-title: SetAccountProperties Service Operation
+title: SetAccountProperties Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Sets account level properties by name.
 ---
-# SetAccountProperties Service Operation
+# SetAccountProperties Service Operation - Campaign Management
 Sets account level properties by name.
 
 ## <a name="request"></a>Request Elements

@@ -1,12 +1,12 @@
 ---
-title: EnhancedCpcBiddingScheme Data Object
+title: EnhancedCpcBiddingScheme Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that represents the enhanced CPC bid strategy type.
 ---
-# EnhancedCpcBiddingScheme Data Object
+# EnhancedCpcBiddingScheme Data Object - Campaign Management
 Defines an object that represents the enhanced CPC bid strategy type.
 
 Use the enhanced CPC bid strategy type to set your ad group and keyword bids, and Bing Ads will automatically adjust your bids in real time so that you bid up to 30% higher on users that are more likely to convert and up to 100% less on users less likely to convert. Bing Ads will still respect your campaign budget limit.

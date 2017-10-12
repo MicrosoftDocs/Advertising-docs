@@ -1,12 +1,12 @@
 ---
-title: ApiFaultDetail Data Object
+title: ApiFaultDetail Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 ---
-# ApiFaultDetail Data Object
+# ApiFaultDetail Data Object - Ad Insight
 Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 
 ## Syntax

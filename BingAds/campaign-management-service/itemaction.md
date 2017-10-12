@@ -1,12 +1,12 @@
 ---
-title: ItemAction Value Set
+title: ItemAction Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible types of item actions, for example to add, delete, or update the product partition criterion.
 ---
-# ItemAction Value Set
+# ItemAction Value Set - Campaign Management
 Defines the possible types of item actions, for example to add, delete, or update the product partition criterion.
 
 ## Syntax

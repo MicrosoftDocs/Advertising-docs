@@ -1,12 +1,12 @@
 ---
-title: AdExtensionDetailReportRequest Data Object
+title: AdExtensionDetailReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an ad extension detail report request.
 ---
-# AdExtensionDetailReportRequest Data Object
+# AdExtensionDetailReportRequest Data Object - Reporting
 Defines an ad extension detail report request. Use this report to discover the effectiveness of individual ad extension items, for example, each link of a sitelink extension.
 
 You can request impressions, clicks, spend, and average cost per click of individual extension items. This data can be sorted by the individual ad extension display name, ad extension ID, and ad extension type.

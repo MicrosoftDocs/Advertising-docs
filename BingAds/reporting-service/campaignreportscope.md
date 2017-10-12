@@ -1,12 +1,12 @@
 ---
-title: CampaignReportScope Data Object
+title: CampaignReportScope Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a campaign to include in the report.
 ---
-# CampaignReportScope Data Object
+# CampaignReportScope Data Object - Reporting
 Defines a campaign to include in the report.
 
 ## Syntax

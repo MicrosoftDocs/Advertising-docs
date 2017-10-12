@@ -1,12 +1,12 @@
 ---
-title: AppInstallAd Data Object
+title: AppInstallAd Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an app install ad.
 ---
-# AppInstallAd Data Object
+# AppInstallAd Data Object - Campaign Management
 Defines an app install ad. Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create a text ad with app ad extensions.
 
 > [!NOTE]

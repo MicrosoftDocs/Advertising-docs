@@ -1,12 +1,12 @@
 ---
-title: PricingModel Value Set
+title: PricingModel Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the pricing model for an ad group.
 ---
-# PricingModel Value Set
+# PricingModel Value Set - Campaign Management
 Defines the pricing model for an ad group.
 
 ## Syntax

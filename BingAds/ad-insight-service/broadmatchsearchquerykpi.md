@@ -1,12 +1,12 @@
 ---
-title: BroadMatchSearchQueryKPI Data Object
+title: BroadMatchSearchQueryKPI Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains search query statistics of including broad match type keyword bids.
 ---
-# BroadMatchSearchQueryKPI Data Object
+# BroadMatchSearchQueryKPI Data Object - Ad Insight
 Defines an object that contains search query statistics of including broad match type keyword bids.
 
 ## Syntax

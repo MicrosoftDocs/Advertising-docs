@@ -1,12 +1,12 @@
 ---
-title: AdGroupBidLandscape Data Object
+title: AdGroupBidLandscape Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains a list of estimated clicks, cost, and impressions from 1 to 7 days for the ad group identifier given the suggested bid.
 ---
-# AdGroupBidLandscape Data Object
+# AdGroupBidLandscape Data Object - Ad Insight
 Defines an object that contains a list of estimated clicks, cost, and impressions from 1 to 7 days for the ad group identifier given the suggested bid.
 
 > [!NOTE]

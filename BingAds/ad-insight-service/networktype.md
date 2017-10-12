@@ -1,12 +1,12 @@
 ---
-title: NetworkType Value Set
+title: NetworkType Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible search networks on which an ad can display.
 ---
-# NetworkType Value Set
+# NetworkType Value Set - Ad Insight
 Defines the possible search networks on which an ad can display. 
 
 You can specify a network type when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) and [GetKeywordTrafficEstimates](../ad-insight-service/getkeywordtrafficestimates.md) operations. For more information about networks and ad distribution, see the [About Ad Distribution](http://help.bingads.microsoft.com/#apex/3/en/50871/0) help article.

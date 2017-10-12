@@ -1,12 +1,12 @@
 ---
-title: DeleteSharedEntityAssociations Service Operation
+title: DeleteSharedEntityAssociations Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Removes the association between a negative keyword list and an entity such as a campaign.
 ---
-# DeleteSharedEntityAssociations Service Operation
+# DeleteSharedEntityAssociations Service Operation - Campaign Management
 Removes the association between a negative keyword list and an entity such as a campaign.
 
 ## <a name="request"></a>Request Elements

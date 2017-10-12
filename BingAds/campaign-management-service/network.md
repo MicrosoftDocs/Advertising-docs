@@ -1,12 +1,12 @@
 ---
-title: Network Value Set
+title: Network Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible search networks on which an ad can display.
 ---
-# Network Value Set
+# Network Value Set - Campaign Management
 Defines the possible search networks on which an ad can display.
 For more information about networks and ad distribution, see the [About Ad Distribution](http://help.bingads.microsoft.com/#apex/3/en/50871/0) help article.
 

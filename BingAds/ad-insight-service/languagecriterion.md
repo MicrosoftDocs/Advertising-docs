@@ -1,12 +1,12 @@
 ---
-title: LanguageCriterion Data Object
+title: LanguageCriterion Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: The language criterion that you can include when requesting keyword ideas or traffic estimates.
 ---
-# LanguageCriterion Data Object
+# LanguageCriterion Data Object - Ad Insight
 The language criterion that you can include when requesting keyword ideas or traffic estimates.
 
 Suggestions are customized for the language you select.

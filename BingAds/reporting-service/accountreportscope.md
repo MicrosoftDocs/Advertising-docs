@@ -1,12 +1,12 @@
 ---
-title: AccountReportScope Data Object
+title: AccountReportScope Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the set of accounts to include in the report.
 ---
-# AccountReportScope Data Object
+# AccountReportScope Data Object - Reporting
 Defines the set of accounts to include in the report.
 
 ## Syntax

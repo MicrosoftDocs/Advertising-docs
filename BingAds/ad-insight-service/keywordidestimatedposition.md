@@ -1,12 +1,12 @@
 ---
-title: KeywordIdEstimatedPosition Data Object
+title: KeywordIdEstimatedPosition Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains the identifier of a keyword and the estimated search results position for the keyword and match type.
 ---
-# KeywordIdEstimatedPosition Data Object
+# KeywordIdEstimatedPosition Data Object - Ad Insight
 Defines an object that contains the identifier of a keyword and the estimated search results position for the keyword and match type.
 
 > [!NOTE]

@@ -1,12 +1,12 @@
 ---
-title: SubmitGenerateReport Service Operation
+title: SubmitGenerateReport Service Operation - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Submits a report request.
 ---
-# SubmitGenerateReport Service Operation
+# SubmitGenerateReport Service Operation - Reporting
 Submits a report request.
 
 > [!NOTE]

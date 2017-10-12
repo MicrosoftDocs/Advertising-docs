@@ -1,12 +1,12 @@
 ---
-title: Opportunity Data Object
+title: Opportunity Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: This is the base class from which opportunity objects derive.
 ---
-# Opportunity Data Object
+# Opportunity Data Object - Ad Insight
 This is the base class from which opportunity objects derive. The class contains the unique key used to identify the opportunity.
 
 Do not try to instantiate an *Opportunity*. You can create one or more following objects that derive from it.

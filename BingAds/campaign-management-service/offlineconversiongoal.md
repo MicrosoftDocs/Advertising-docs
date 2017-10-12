@@ -1,12 +1,12 @@
 ---
-title: OfflineConversionGoal Data Object
+title: OfflineConversionGoal Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an offline conversion goal.
 ---
-# OfflineConversionGoal Data Object
+# OfflineConversionGoal Data Object - Campaign Management
 Defines an offline conversion goal. Use this type of goal if you have lead generation as an objective. Lead generation is when potential customers fill out a form or quote of interest, and then the sale is completed offline in person or over the phone (for example, car purchases, insurance quotes, mortgages, etc.).  
 
 To set up offine conversion tracking, create an [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md), wait two hours, and then send Bing Ads the [OfflineConversion](../campaign-management-service/offlineconversion.md) data via the [ApplyOfflineConversions](../campaign-management-service/applyofflineconversions.md) operation.

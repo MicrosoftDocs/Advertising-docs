@@ -1,12 +1,12 @@
 ---
-title: GetAdExtensionsAssociations Service Operation
+title: GetAdExtensionsAssociations Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the respective ad extension associations by the specified campaign and ad group identifiers.
 ---
-# GetAdExtensionsAssociations Service Operation
+# GetAdExtensionsAssociations Service Operation - Campaign Management
 Gets the respective ad extension associations by the specified campaign and ad group identifiers.
 
 ## <a name="request"></a>Request Elements

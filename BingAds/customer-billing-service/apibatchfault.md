@@ -1,12 +1,12 @@
 ---
-title: ApiBatchFault Data Object
+title: ApiBatchFault Data Object - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 ---
-# ApiBatchFault Data Object
+# ApiBatchFault Data Object - Customer Billing
 Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: GetKeywordsByEditorialStatus Service Operation
+title: GetKeywordsByEditorialStatus Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Retrieves the keywords with the specified editorial review status.
 ---
-# GetKeywordsByEditorialStatus Service Operation
+# GetKeywordsByEditorialStatus Service Operation - Campaign Management
 Retrieves the keywords with the specified editorial review status.
 
 ## <a name="request"></a>Request Elements

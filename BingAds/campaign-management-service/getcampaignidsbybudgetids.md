@@ -1,12 +1,12 @@
 ---
-title: GetCampaignIdsByBudgetIds Service Operation
+title: GetCampaignIdsByBudgetIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the campaign identifiers that share each specified budget.
 ---
-# GetCampaignIdsByBudgetIds Service Operation
+# GetCampaignIdsByBudgetIds Service Operation - Campaign Management
 Gets the campaign identifiers that share each specified budget.
 
 ## <a name="request"></a>Request Elements

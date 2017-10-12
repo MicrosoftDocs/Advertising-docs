@@ -1,12 +1,12 @@
 ---
-title: PerformanceStatsDateRange Data Object
+title: PerformanceStatsDateRange Data Object - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the date range values for the requested performance data in a bulk download.
 ---
-# PerformanceStatsDateRange Data Object
+# PerformanceStatsDateRange Data Object - Bulk
 Defines the date range values for the requested performance data in a bulk download.
 
 ## Syntax

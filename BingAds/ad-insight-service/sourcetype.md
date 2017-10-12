@@ -1,12 +1,12 @@
 ---
-title: SourceType Value Set
+title: SourceType Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the source or seed for the keyword idea.
 ---
-# SourceType Value Set
+# SourceType Value Set - Ad Insight
 Defines the source or seed for the keyword idea. 
 
 You can request that the source be returned in the [KeywordIdea](../ad-insight-service/keywordidea.md) object when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.

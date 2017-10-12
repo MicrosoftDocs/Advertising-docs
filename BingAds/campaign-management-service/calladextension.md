@@ -1,12 +1,12 @@
 ---
-title: CallAdExtension Data Object
+title: CallAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that specifies a click-to-call phone number to include in a text ad.
 ---
-# CallAdExtension Data Object
+# CallAdExtension Data Object - Campaign Management
 Defines an object that specifies a click-to-call phone number to include in a text ad.
 
 You can associate a call ad extension with one or more campaigns; however, a campaign can be associated with only one call ad extension.

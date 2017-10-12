@@ -1,12 +1,12 @@
 ---
-title: GetKeywordDemographics Service Operation
+title: GetKeywordDemographics Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the age and gender of users who have searched for the specified keywords.
 ---
-# GetKeywordDemographics Service Operation
+# GetKeywordDemographics Service Operation - Ad Insight
 Gets the age and gender of users who have searched for the specified keywords.
 
 ## <a name="request"></a>Request Elements

@@ -1,12 +1,12 @@
 ---
-title: AdGroupNegativeSites Data Object
+title: AdGroupNegativeSites Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains the negative site URLs of an ad group.
 ---
-# AdGroupNegativeSites Data Object
+# AdGroupNegativeSites Data Object - Campaign Management
 Defines an object that contains the negative site URLs of an ad group.
 
 ## Syntax

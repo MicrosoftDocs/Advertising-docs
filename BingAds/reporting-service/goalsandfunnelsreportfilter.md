@@ -1,12 +1,12 @@
 ---
-title: GoalsAndFunnelsReportFilter Data Object
+title: GoalsAndFunnelsReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the goals and funnels report data.
 ---
-# GoalsAndFunnelsReportFilter Data Object
+# GoalsAndFunnelsReportFilter Data Object - Reporting
 Defines the criteria to use to filter the goals and funnels report data.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: CustomEventsRule Data Object
+title: CustomEventsRule Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a custom events remarketing rule.
 ---
-# CustomEventsRule Data Object
+# CustomEventsRule Data Object - Campaign Management
 Defines a custom events remarketing rule. 
 
 Remarketing rules are conditions used to determine who to add to your remarketing list. For the custom events rule, you must include one or more of the following conditional event operator pairs: (*ActionOperator* and *Action*), (*CategoryOperator* and *Category*), (*LabelOperator* and *Label*), (*ValueOperator* and *Value*). If more than one condition is specified, the conditions are joined using the logical *AND* operator. In other words the visitor will only be added to your remarketing list if all of the specified rule conditions are met.

@@ -1,12 +1,12 @@
 ---
-title: UserLocationPerformanceReportFilter Data Object
+title: UserLocationPerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the user location performance report data.
 ---
-# UserLocationPerformanceReportFilter Data Object
+# UserLocationPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the user location performance report data.
 
 ## Syntax

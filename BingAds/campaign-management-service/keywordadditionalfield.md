@@ -1,12 +1,12 @@
 ---
-title: KeywordAdditionalField Value Set
+title: KeywordAdditionalField Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a list of optional Keyword properties that you can request when calling [GetKeywordsByAdGroupId](../campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](../campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](../campaign-management-service/getkeywordsbyids.md).
 ---
-# KeywordAdditionalField Value Set
+# KeywordAdditionalField Value Set - Campaign Management
 Defines a list of optional [Keyword](../campaign-management-service/keyword.md) properties that you can request when calling [GetKeywordsByAdGroupId](../campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](../campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](../campaign-management-service/getkeywordsbyids.md). This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding propertys will be included in the [Keyword](../campaign-management-service/keyword.md) object by default.
 
 ## Syntax

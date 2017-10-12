@@ -1,12 +1,12 @@
 ---
-title: InheritFromParentBiddingScheme Data Object
+title: InheritFromParentBiddingScheme Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that represents the inherit from parent bid strategy type.
 ---
-# InheritFromParentBiddingScheme Data Object
+# InheritFromParentBiddingScheme Data Object - Campaign Management
 Defines an object that represents the inherit from parent bid strategy type.
 
 This is the default bid strategy type for your ad groups and keywords. Use this bid strategy type to inherit the bid strategy type of the respective parent campaign or ad group.

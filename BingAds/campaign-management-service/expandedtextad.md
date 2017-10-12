@@ -1,12 +1,12 @@
 ---
-title: ExpandedTextAd Data Object
+title: ExpandedTextAd Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an expanded text ad.
 ---
-# ExpandedTextAd Data Object
+# ExpandedTextAd Data Object - Campaign Management
 Defines an expanded text ad.
 
 This ad format works seamlessly on mobile, tablet and desktop devices so you can focus more on crafting your longer ad copy and optimizing your ad text to better engage your customers before they click your ad.

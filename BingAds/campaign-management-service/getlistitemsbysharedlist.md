@@ -1,12 +1,12 @@
 ---
-title: GetListItemsBySharedList Service Operation
+title: GetListItemsBySharedList Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the negative keywords of a negative keyword list.
 ---
-# GetListItemsBySharedList Service Operation
+# GetListItemsBySharedList Service Operation - Campaign Management
 Gets the negative keywords of a negative keyword list.
 
 > [!NOTE]

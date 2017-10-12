@@ -1,12 +1,12 @@
 ---
-title: EditorialError Data Object
+title: EditorialError Data Object - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an error object that identifies the entity with the batch of entities that failed editorial review.
 ---
-# EditorialError Data Object
+# EditorialError Data Object - Bulk
 Defines an error object that identifies the entity with the batch of entities that failed editorial review.
 
 ## Syntax

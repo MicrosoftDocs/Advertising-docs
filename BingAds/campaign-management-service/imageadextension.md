@@ -1,12 +1,12 @@
 ---
-title: ImageAdExtension Data Object
+title: ImageAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an ad extension that specifies an image with alternative text to include in a text ad.
 ---
-# ImageAdExtension Data Object
+# ImageAdExtension Data Object - Campaign Management
 Defines an ad extension that specifies an image with alternative text to include in a text ad.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: DeleteMedia Service Operation
+title: DeleteMedia Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes the specified media from an account's media library.
 ---
-# DeleteMedia Service Operation
+# DeleteMedia Service Operation - Campaign Management
 Deletes the specified media from an account's media library.
 
 > [!NOTE]

@@ -1,12 +1,12 @@
 ---
-title: AdDynamicTextPerformanceReportRequest Data Object
+title: AdDynamicTextPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an ad dynamic text performance report request.
 ---
-# AdDynamicTextPerformanceReportRequest Data Object
+# AdDynamicTextPerformanceReportRequest Data Object - Reporting
 Defines an ad dynamic text performance report request. Use this report to identify which dynamic text strings are performing well and which strings you should consider changing.
 
 You can request impressions, clicks, spend, and average cost per click of your dynamic text strings. Once downloaded, this data can be sorted by ad title, destination URL, param 1, param 2, and param 3.

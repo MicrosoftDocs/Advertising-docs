@@ -1,12 +1,12 @@
 ---
-title: GetAdsByIds Service Operation
+title: GetAdsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Retrieves the specified ads from the specified ad group.
 ---
-# GetAdsByIds Service Operation
+# GetAdsByIds Service Operation - Campaign Management
 Retrieves the specified ads from the specified ad group.
 
 ## <a name="request"></a>Request Elements

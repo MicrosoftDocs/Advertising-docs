@@ -1,12 +1,12 @@
 ---
-title: DownloadCampaignsByCampaignIds Service Operation
+title: DownloadCampaignsByCampaignIds Service Operation - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Downloads settings and performance data for the specified campaigns.
 ---
-# DownloadCampaignsByCampaignIds Service Operation
+# DownloadCampaignsByCampaignIds Service Operation - Bulk
 Downloads settings and performance data for the specified campaigns. You can request all campaign data or only the data that has changed since the last time you downloaded the campaign.
 
 > [!NOTE]

@@ -1,12 +1,12 @@
 ---
-title: CampaignCriterionStatus Value Set
+title: CampaignCriterionStatus Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible campaign criterion status values.
 ---
-# CampaignCriterionStatus Value Set
+# CampaignCriterionStatus Value Set - Campaign Management
 Defines the possible campaign criterion status values.
 
 ## Syntax

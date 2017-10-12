@@ -1,12 +1,12 @@
 ---
-title: GetBillingDocumentsInfo Service Operation
+title: GetBillingDocumentsInfo Service Operation - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets a list of objects that contains billing document identification information, for example the billing document identifier, amount, and account identifier.
 ---
-# GetBillingDocumentsInfo Service Operation
+# GetBillingDocumentsInfo Service Operation - Customer Billing
 Gets a list of objects that contains billing document identification information, for example the billing document identifier, amount, and account identifier.
 
 > [!NOTE]

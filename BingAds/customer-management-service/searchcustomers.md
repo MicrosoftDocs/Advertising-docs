@@ -1,12 +1,12 @@
 ---
-title: SearchCustomers Service Operation
+title: SearchCustomers Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Searches for customers that match a specified criteria.
 ---
-# SearchCustomers Service Operation
+# SearchCustomers Service Operation - Customer Management
 Searches for customers that match a specified criteria.
 
 ## <a name="request"></a>Request Elements

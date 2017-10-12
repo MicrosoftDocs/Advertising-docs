@@ -1,12 +1,12 @@
 ---
-title: DayTimeCriterion Data Object
+title: DayTimeCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a criterion that can be used to show ads to users during a specific day and time range.
 ---
-# DayTimeCriterion Data Object
+# DayTimeCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to users during a specific day and time range.
 
 The *DayTimeCriterion* criterion can be included within [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) and [CampaignCriterion](../campaign-management-service/campaigncriterion.md) objects. If ad group level day and time criterions are specified, the campaign level day and time criterions are ignored for that ad group. In other words the ad group day and time criterions override the campaign day and time criterions, and are not applied as a union.   

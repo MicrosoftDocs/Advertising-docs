@@ -1,12 +1,12 @@
 ---
-title: KeywordIdeaCategory Data Object
+title: KeywordIdeaCategory Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains a keyword idea category.
 ---
-# KeywordIdeaCategory Data Object
+# KeywordIdeaCategory Data Object - Ad Insight
 Defines an object that contains a keyword idea category.
 
 You can use the category identifier in the [CategorySearchParameter](../ad-insight-service/categorysearchparameter.md) when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md).

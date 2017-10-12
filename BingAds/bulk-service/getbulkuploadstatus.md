@@ -1,12 +1,12 @@
 ---
-title: GetBulkUploadStatus Service Operation
+title: GetBulkUploadStatus Service Operation - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the status and completion progress of a bulk upload request.
 ---
-# GetBulkUploadStatus Service Operation
+# GetBulkUploadStatus Service Operation - Bulk
 Gets the status and completion progress of a bulk upload request.
 
 ## <a name="request"></a>Request Elements

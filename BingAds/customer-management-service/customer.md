@@ -1,12 +1,12 @@
 ---
-title: Customer Data Object
+title: Customer Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a customer.
 ---
-# Customer Data Object
+# Customer Data Object - Customer Management
 Defines a customer.
 
 ## Syntax

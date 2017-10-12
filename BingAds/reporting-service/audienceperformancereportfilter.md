@@ -1,12 +1,12 @@
 ---
-title: AudiencePerformanceReportFilter Data Object
+title: AudiencePerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the audience performance report data.
 ---
-# AudiencePerformanceReportFilter Data Object
+# AudiencePerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the audience performance report data.
 
 ## Syntax

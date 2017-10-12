@@ -1,12 +1,12 @@
 ---
-title: GetAccountProperties Service Operation
+title: GetAccountProperties Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets account level properties by name.
 ---
-# GetAccountProperties Service Operation
+# GetAccountProperties Service Operation - Campaign Management
 Gets account level properties by name.
 
 ## <a name="request"></a>Request Elements

@@ -1,12 +1,12 @@
 ---
-title: IdeaTextSearchParameter Data Object
+title: IdeaTextSearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: The idea text search parameter filter that you can include when requesting keyword ideas.
 ---
-# IdeaTextSearchParameter Data Object
+# IdeaTextSearchParameter Data Object - Ad Insight
 The idea text search parameter filter that you can include when requesting keyword ideas.
 
 Use these options to refine what keywords are returned when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md). You can limit the keyword ideas to include or exclude specific keywords. 

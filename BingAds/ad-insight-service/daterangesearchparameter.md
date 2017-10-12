@@ -1,12 +1,12 @@
 ---
-title: DateRangeSearchParameter Data Object
+title: DateRangeSearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: The date range search parameter that you can include when requesting keyword ideas.
 ---
-# DateRangeSearchParameter Data Object
+# DateRangeSearchParameter Data Object - Ad Insight
 The date range search parameter that you can include when requesting keyword ideas.
 
 For more information about the significance of the date range search parameter, see *MonthlySearchCounts* with the [KeywordIdea](../ad-insight-service/keywordidea.md) object.

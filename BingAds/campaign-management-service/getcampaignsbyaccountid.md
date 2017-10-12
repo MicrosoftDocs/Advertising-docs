@@ -1,12 +1,12 @@
 ---
-title: GetCampaignsByAccountId Service Operation
+title: GetCampaignsByAccountId Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the campaigns within an account.
 ---
-# GetCampaignsByAccountId Service Operation
+# GetCampaignsByAccountId Service Operation - Campaign Management
 Gets the campaigns within an account.
 
 ## <a name="request"></a>Request Elements

@@ -1,12 +1,12 @@
 ---
-title: GetKeywordsByIds Service Operation
+title: GetKeywordsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Retrieves the specified keywords.
 ---
-# GetKeywordsByIds Service Operation
+# GetKeywordsByIds Service Operation - Campaign Management
 Retrieves the specified keywords.
 
 ## <a name="request"></a>Request Elements

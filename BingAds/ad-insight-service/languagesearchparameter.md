@@ -1,12 +1,12 @@
 ---
-title: LanguageSearchParameter Data Object
+title: LanguageSearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: The language search parameter filter that you can include when requesting keyword ideas.
 ---
-# LanguageSearchParameter Data Object
+# LanguageSearchParameter Data Object - Ad Insight
 The language search parameter filter that you can include when requesting keyword ideas.
 
 If you do not include the language search parameter when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md), then keyword ideas will be returned for all languages.

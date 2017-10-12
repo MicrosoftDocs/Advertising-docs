@@ -1,12 +1,12 @@
 ---
-title: Budget Data Object
+title: Budget Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Represents a budget that can be shared by any campaigns in an account.
 ---
-# Budget Data Object
+# Budget Data Object - Campaign Management
 Represents a budget that can be shared by any campaigns in an account.
 
 You can set a single daily budget that can be used by any campaign within the same account. This will enable you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Bing Ads account. 

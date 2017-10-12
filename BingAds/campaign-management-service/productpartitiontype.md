@@ -1,12 +1,12 @@
 ---
-title: ProductPartitionType Value Set
+title: ProductPartitionType Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible types of product partitions.
 ---
-# ProductPartitionType Value Set
+# ProductPartitionType Value Set - Campaign Management
 Defines the possible types of product partitions.
 
 ## Syntax

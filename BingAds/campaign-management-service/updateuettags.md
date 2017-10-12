@@ -1,12 +1,12 @@
 ---
-title: UpdateUetTags Service Operation
+title: UpdateUetTags Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates the specified Universal Event Tracking (UET) tags.
 ---
-# UpdateUetTags Service Operation
+# UpdateUetTags Service Operation - Campaign Management
 Updates the specified Universal Event Tracking (UET) tags.
 
 > [!TIP]

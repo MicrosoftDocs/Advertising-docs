@@ -1,12 +1,12 @@
 ---
-title: RuleItemGroup Data Object
+title: RuleItemGroup Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains a list of remarketing list rule items that apply to the same visited page.
 ---
-# RuleItemGroup Data Object
+# RuleItemGroup Data Object - Campaign Management
 Defines an object that contains a list of remarketing list rule items that apply to the same visited page. 
 
 ## Syntax

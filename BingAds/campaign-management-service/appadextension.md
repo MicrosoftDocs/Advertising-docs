@@ -1,12 +1,12 @@
 ---
-title: AppAdExtension Data Object
+title: AppAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an app ad extension that can be included in a text ad.
 ---
-# AppAdExtension Data Object
+# AppAdExtension Data Object - Campaign Management
 Defines an app ad extension that can be included in a text ad.
 
 You can associate an app ad extension with one or more campaigns and ad groups. Each campaign or ad group can be associated with multiple app ad extensions.

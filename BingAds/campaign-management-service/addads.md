@@ -1,12 +1,12 @@
 ---
-title: AddAds Service Operation
+title: AddAds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Adds one or more ads to an ad group.
 ---
-# AddAds Service Operation
+# AddAds Service Operation - Campaign Management
 Adds one or more ads to an ad group.
 
 > [!IMPORTANT]

@@ -1,12 +1,12 @@
 ---
-title: AdStatusReportFilter Value Set
+title: AdStatusReportFilter Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the ad status values that you can use to filter the report data.
 ---
-# AdStatusReportFilter Value Set
+# AdStatusReportFilter Value Set - Reporting
 Defines the ad status values that you can use to filter the report data. These values are also used as column values in reports that include ad status, such as the search query performance report.
 
 ## Syntax

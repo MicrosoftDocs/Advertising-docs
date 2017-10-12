@@ -1,12 +1,12 @@
 ---
-title: ProductPartitionPerformanceReportRequest Data Object
+title: ProductPartitionPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a product partition performance report request that aggregates the performance data by product group and product partition type for a specified time period.
 ---
-# ProductPartitionPerformanceReportRequest Data Object
+# ProductPartitionPerformanceReportRequest Data Object - Reporting
 Defines a product partition performance report request that aggregates the performance data by product group and product partition type for a specified time period. You can include details in the report such as impressions, clicks, and spend that you can use to identify whether or not the product partitions are performing well.
 
 To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.

@@ -1,12 +1,12 @@
 ---
-title: DeviceOSReportFilter Value Set
+title: DeviceOSReportFilter Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the device operating system values that you can use to filter the report data.
 ---
-# DeviceOSReportFilter Value Set
+# DeviceOSReportFilter Value Set - Reporting
 Defines the device operating system values that you can use to filter the report data.
 
 ## Syntax

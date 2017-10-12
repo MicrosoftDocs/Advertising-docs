@@ -1,12 +1,12 @@
 ---
-title: DSAAutoTargetPerformanceReportRequest Data Object
+title: DSAAutoTargetPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a DSA auto target performance report request.
 ---
-# DSAAutoTargetPerformanceReportRequest Data Object
+# DSAAutoTargetPerformanceReportRequest Data Object - Reporting
 Defines a DSA auto target performance report request. 
 
 You can request impressions, clicks, click-through rate, and average position for the dynamic ad targets that have triggered your ads. 

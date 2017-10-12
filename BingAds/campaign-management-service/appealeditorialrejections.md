@@ -1,12 +1,12 @@
 ---
-title: AppealEditorialRejections Service Operation
+title: AppealEditorialRejections Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Appeals the editorial rejections of one or more ads or keywords that failed editorial review.
 ---
-# AppealEditorialRejections Service Operation
+# AppealEditorialRejections Service Operation - Campaign Management
 Appeals the editorial rejections of one or more ads or keywords that failed editorial review.
 
 ## <a name="request"></a>Request Elements

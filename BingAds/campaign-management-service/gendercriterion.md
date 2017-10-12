@@ -1,12 +1,12 @@
 ---
-title: GenderCriterion Data Object
+title: GenderCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a criterion that can be used to show ads to users of a specific gender.
 ---
-# GenderCriterion Data Object
+# GenderCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to users of a specific gender.
 
 The *GenderCriterion* criterion can be included within [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) and [CampaignCriterion](../campaign-management-service/campaigncriterion.md) objects. If ad group level gender criterions are specified, the campaign level gender criterions are ignored for that ad group. In other words the ad group gender criterions override the campaign gender criterions, and are not applied as a union.   

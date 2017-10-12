@@ -1,12 +1,12 @@
 ---
-title: KeywordStatusReportFilter Value Set
+title: KeywordStatusReportFilter Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the keyword status values that you can use to filter the report data.
 ---
-# KeywordStatusReportFilter Value Set
+# KeywordStatusReportFilter Value Set - Reporting
 Defines the keyword status values that you can use to filter the report data. These values are also used as column values in reports that include keyword status, such as the keyword performance report.
 
 ## Syntax

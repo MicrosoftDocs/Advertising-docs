@@ -1,12 +1,12 @@
 ---
-title: KeywordIdeaAttribute Value Set
+title: KeywordIdeaAttribute Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Determines which properties of the KeywordIdea object you want returned when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.
 ---
-# KeywordIdeaAttribute Value Set
+# KeywordIdeaAttribute Value Set - Ad Insight
 Determines which properties of the [KeywordIdea](../ad-insight-service/keywordidea.md) object you want returned when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.
 
 ## Syntax

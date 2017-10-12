@@ -1,12 +1,12 @@
 ---
-title: Account Data Object
+title: Account Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an account.
 ---
-# Account Data Object
+# Account Data Object - Customer Management
 Defines an account. This is the base object from which the advertising accounts derive.
 
 Do not try to instantiate an *Account*. You can create the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object that derives from it. 

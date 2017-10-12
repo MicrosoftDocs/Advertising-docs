@@ -1,12 +1,12 @@
 ---
-title: Date Data Object
+title: Date Data Object - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a calendar date by month, day, and year.
 ---
-# Date Data Object
+# Date Data Object - Bulk
 Defines a calendar date by month, day, and year.
 
 ## Syntax

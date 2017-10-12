@@ -1,12 +1,12 @@
 ---
-title: GetKeywordsByAdGroupId Service Operation
+title: GetKeywordsByAdGroupId Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the keywords within an ad group.
 ---
-# GetKeywordsByAdGroupId Service Operation
+# GetKeywordsByAdGroupId Service Operation - Campaign Management
 Gets the keywords within an ad group.
 
 ## <a name="request"></a>Request Elements

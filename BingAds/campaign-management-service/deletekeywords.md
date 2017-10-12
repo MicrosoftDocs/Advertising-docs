@@ -1,12 +1,12 @@
 ---
-title: DeleteKeywords Service Operation
+title: DeleteKeywords Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes one or more keywords in a specified ad group.
 ---
-# DeleteKeywords Service Operation
+# DeleteKeywords Service Operation - Campaign Management
 Deletes one or more keywords in a specified ad group.
 
 ## <a name="request"></a>Request Elements

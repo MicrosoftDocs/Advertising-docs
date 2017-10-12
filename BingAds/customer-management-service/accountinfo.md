@@ -1,12 +1,12 @@
 ---
-title: AccountInfo Data Object
+title: AccountInfo Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an account identification object that contains information that identifies an account.
 ---
-# AccountInfo Data Object
+# AccountInfo Data Object - Customer Management
 Defines an account identification object that contains information that identifies an account.
 
 ## Syntax

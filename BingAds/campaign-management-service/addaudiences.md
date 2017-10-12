@@ -1,12 +1,12 @@
 ---
-title: AddAudiences Service Operation
+title: AddAudiences Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Adds one or more audiences.
 ---
-# AddAudiences Service Operation
+# AddAudiences Service Operation - Campaign Management
 Adds one or more audiences.
 
 ## <a name="request"></a>Request Elements

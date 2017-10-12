@@ -1,12 +1,12 @@
 ---
-title: AgeGenderDemographicReportFilter Data Object
+title: AgeGenderDemographicReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the age and gender demographic report data.
 ---
-# AgeGenderDemographicReportFilter Data Object
+# AgeGenderDemographicReportFilter Data Object - Reporting
 Defines the criteria to use to filter the age and gender demographic report data.
 
 ## Syntax

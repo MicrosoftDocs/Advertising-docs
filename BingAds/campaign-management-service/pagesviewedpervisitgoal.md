@@ -1,12 +1,12 @@
 ---
-title: PagesViewedPerVisitGoal Data Object
+title: PagesViewedPerVisitGoal Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a pages viewed per visit conversion goal.
 ---
-# PagesViewedPerVisitGoal Data Object
+# PagesViewedPerVisitGoal Data Object - Campaign Management
 Defines a pages viewed per visit conversion goal. Use this type of goal to count every time someone visits more than a specified number of pages on your website as a conversion. For example you can count a conversion if someone viewed more than 5 pages on a support site or product catalog.
 
 > [!TIP]

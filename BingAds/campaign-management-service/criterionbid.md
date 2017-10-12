@@ -1,12 +1,12 @@
 ---
-title: CriterionBid Data Object
+title: CriterionBid Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a base class for criterion bids.
 ---
-# CriterionBid Data Object
+# CriterionBid Data Object - Campaign Management
 Defines a base class for criterion bids.
 
 Do not try to instantiate a *CriterionBid*. You can create the following object that derives from it.

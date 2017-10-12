@@ -1,12 +1,12 @@
 ---
-title: UpdateLabels Service Operation
+title: UpdateLabels Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates the labels within the account.
 ---
-# UpdateLabels Service Operation
+# UpdateLabels Service Operation - Campaign Management
 Updates the labels within the account.
 
 ## <a name="request"></a>Request Elements

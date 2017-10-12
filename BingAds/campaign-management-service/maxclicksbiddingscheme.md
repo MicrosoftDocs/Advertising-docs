@@ -1,12 +1,12 @@
 ---
-title: MaxClicksBiddingScheme Data Object
+title: MaxClicksBiddingScheme Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that represents the maximum clicks bid strategy type.
 ---
-# MaxClicksBiddingScheme Data Object
+# MaxClicksBiddingScheme Data Object - Campaign Management
 Defines an object that represents the maximum clicks bid strategy type.
 
 Use this bid strategy to maximize the number of clicks given your maximum allowed budget.

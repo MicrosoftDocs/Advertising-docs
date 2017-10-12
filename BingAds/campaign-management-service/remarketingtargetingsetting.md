@@ -1,12 +1,12 @@
 ---
-title: RemarketingTargetingSetting Value Set
+title: RemarketingTargetingSetting Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: The targeting setting that is applicable for all audiences e.g., custom audiences and remarketing lists that are associated with this ad group.
 ---
-# RemarketingTargetingSetting Value Set
+# RemarketingTargetingSetting Value Set - Campaign Management
 The targeting setting that is applicable for all audiences e.g., custom audiences and remarketing lists that are associated with this ad group. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
 
 ## Syntax

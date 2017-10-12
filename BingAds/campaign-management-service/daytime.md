@@ -1,12 +1,12 @@
 ---
-title: DayTime Data Object
+title: DayTime Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a day of the week and time range for ad extension scheduling.
 ---
-# DayTime Data Object
+# DayTime Data Object - Campaign Management
 Defines a day of the week and time range for ad extension scheduling. 
 
 ## Syntax

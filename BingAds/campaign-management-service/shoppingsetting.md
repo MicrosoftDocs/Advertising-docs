@@ -1,12 +1,12 @@
 ---
-title: ShoppingSetting Data Object
+title: ShoppingSetting Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the campaign level settings for a Bing Shopping Campaign.
 ---
-# ShoppingSetting Data Object
+# ShoppingSetting Data Object - Campaign Management
 Defines the campaign level settings for a Bing Shopping Campaign.
 
 ## Syntax

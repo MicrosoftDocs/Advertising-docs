@@ -1,12 +1,12 @@
 ---
-title: DeleteLabels Service Operation
+title: DeleteLabels Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes one or more labels from the account.
 ---
-# DeleteLabels Service Operation
+# DeleteLabels Service Operation - Campaign Management
 Deletes one or more labels from the account.
 
 ## <a name="request"></a>Request Elements

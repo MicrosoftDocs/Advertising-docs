@@ -1,12 +1,12 @@
 ---
-title: StructuredSnippetAdExtension Data Object
+title: StructuredSnippetAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.
 ---
-# StructuredSnippetAdExtension Data Object
+# StructuredSnippetAdExtension Data Object - Campaign Management
 Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.
 
 In the following example, *Courses* is the header, and *.NET*, *Java*, *Python*, and *PHP* are examples of individual values.

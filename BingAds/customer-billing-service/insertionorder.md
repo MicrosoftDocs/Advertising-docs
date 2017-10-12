@@ -1,12 +1,12 @@
 ---
-title: InsertionOrder Data Object
+title: InsertionOrder Data Object - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an insertion order.
 ---
-# InsertionOrder Data Object
+# InsertionOrder Data Object - Customer Billing
 Defines an insertion order.
 
 An account can have multiple active insertion orders, and only one insertion order is spending at a time. The spending insertion order is the one with the earliest end date.

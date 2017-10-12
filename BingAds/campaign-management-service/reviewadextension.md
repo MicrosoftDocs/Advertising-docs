@@ -1,12 +1,12 @@
 ---
-title: ReviewAdExtension Data Object
+title: ReviewAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that specifies third-party reviews (exact or paraphrased) about your business, products, or services to include in a text ad.
 ---
-# ReviewAdExtension Data Object
+# ReviewAdExtension Data Object - Campaign Management
 Defines an object that specifies third-party reviews (exact or paraphrased) about your business, products, or services to include in a text ad.
 
 You can associate a review ad extension with one or more campaigns and ad groups. Each campaign or ad group can be associated with between 1 and 20 review ad extensions. A text ad will only include one review per impression.

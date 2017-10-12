@@ -1,12 +1,12 @@
 ---
-title: GetBidOpportunities Service Operation
+title: GetBidOpportunities Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the keyword bid opportunities of the specified ad group.
 ---
-# GetBidOpportunities Service Operation
+# GetBidOpportunities Service Operation - Ad Insight
 Gets the keyword bid opportunities of the specified ad group.
 
 > [!NOTE]

@@ -1,12 +1,12 @@
 ---
-title: GetKeywordLocations Service Operation
+title: GetKeywordLocations Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the geographical locations of users who have searched for the specified keywords.
 ---
-# GetKeywordLocations Service Operation
+# GetKeywordLocations Service Operation - Ad Insight
 Gets the geographical locations of users who have searched for the specified keywords.
 
 ## <a name="request"></a>Request Elements

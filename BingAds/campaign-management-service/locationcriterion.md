@@ -1,12 +1,12 @@
 ---
-title: LocationCriterion Data Object
+title: LocationCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a criterion that can be used to show ads to users in a specific location.
 ---
-# LocationCriterion Data Object
+# LocationCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to users in a specific location.
 
 With location criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about:

@@ -1,12 +1,12 @@
 ---
-title: GetKeywordIdeaCategories Service Operation
+title: GetKeywordIdeaCategories Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the list of keyword idea categories.
 ---
-# GetKeywordIdeaCategories Service Operation
+# GetKeywordIdeaCategories Service Operation - Ad Insight
 Gets the list of keyword idea categories.
 
 You can use the *CategoryId* element of a [KeywordCategory](../ad-insight-service/keywordcategory.md) as a part of the [CategorySearchParameter](../ad-insight-service/categorysearchparameter.md) when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.

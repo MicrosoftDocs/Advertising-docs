@@ -1,12 +1,12 @@
 ---
-title: AddNegativeKeywordsToEntities Service Operation
+title: AddNegativeKeywordsToEntities Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Adds negative keywords to the specified campaign or ad group.
 ---
-# AddNegativeKeywordsToEntities Service Operation
+# AddNegativeKeywordsToEntities Service Operation - Campaign Management
 Adds negative keywords to the specified campaign or ad group.
 
 > [!NOTE]

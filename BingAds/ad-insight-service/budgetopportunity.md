@@ -1,12 +1,12 @@
 ---
-title: BudgetOpportunity Data Object
+title: BudgetOpportunity Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains the suggested budget with estimated clicks and impressions opportunities.
 ---
-# BudgetOpportunity Data Object
+# BudgetOpportunity Data Object - Ad Insight
 Defines an object that contains the suggested budget with estimated clicks and impressions opportunities. Additionally, the object contains a list of budget points with weekly impressions, clicks and cost estimates for the given budget amount.
 
 > [!NOTE]

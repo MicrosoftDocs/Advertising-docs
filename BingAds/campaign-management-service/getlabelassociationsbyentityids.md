@@ -1,12 +1,12 @@
 ---
-title: GetLabelAssociationsByEntityIds Service Operation
+title: GetLabelAssociationsByEntityIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets label associations by entity identifiers.
 ---
-# GetLabelAssociationsByEntityIds Service Operation
+# GetLabelAssociationsByEntityIds Service Operation - Campaign Management
 Gets label associations by entity identifiers.
 
 ## <a name="request"></a>Request Elements

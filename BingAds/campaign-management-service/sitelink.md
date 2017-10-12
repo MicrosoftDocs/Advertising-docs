@@ -1,12 +1,12 @@
 ---
-title: SiteLink Data Object
+title: SiteLink Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a site link to include in an ad.
 ---
-# SiteLink Data Object
+# SiteLink Data Object - Campaign Management
 Defines a site link to include in an ad. The link should take the user to content in your website that is relevant in the context of the ad.
 
 > [!NOTE]

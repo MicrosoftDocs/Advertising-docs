@@ -1,12 +1,12 @@
 ---
-title: ProductPartitionUnitPerformanceReportFilter Data Object
+title: ProductPartitionUnitPerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the product partition  performance report data.
 ---
-# ProductPartitionUnitPerformanceReportFilter Data Object
+# ProductPartitionUnitPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the product partition  performance report data.
 
 ## Syntax

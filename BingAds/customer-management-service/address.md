@@ -1,12 +1,12 @@
 ---
-title: Address Data Object
+title: Address Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a postal address.
 ---
-# Address Data Object
+# Address Data Object - Customer Management
 Defines a postal address.
 
 ## Syntax

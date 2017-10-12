@@ -1,12 +1,12 @@
 ---
-title: GetKeywordIdeas Service Operation
+title: GetKeywordIdeas Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the list of keyword ideas.
 ---
-# GetKeywordIdeas Service Operation
+# GetKeywordIdeas Service Operation - Ad Insight
 Gets the list of keyword ideas.
 
 Suggests new ad groups and keywords based on your existing keywords, website, and product category. You can also request historical statistics for keywords e.g., monthly searches, competition, average CPC, and ad impression share. You can use the returned suggested keyword bids as input to the [GetKeywordTrafficEstimates](../ad-insight-service/getkeywordtrafficestimates.md) operation.

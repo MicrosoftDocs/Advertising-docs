@@ -1,12 +1,12 @@
 ---
-title: KeywordIdea Data Object
+title: KeywordIdea Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains a suggested keyword with historical statistics, like monthly search volume, competition, suggested minimum bid, and ad impression share.
 ---
-# KeywordIdea Data Object
+# KeywordIdea Data Object - Ad Insight
 Defines an object that contains a suggested keyword with historical statistics, like monthly search volume, competition, suggested minimum bid, and ad impression share.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: SearchVolumeSearchParameter Data Object
+title: SearchVolumeSearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: The search volume search parameter filter that you can include when requesting keyword ideas.
 ---
-# SearchVolumeSearchParameter Data Object
+# SearchVolumeSearchParameter Data Object - Ad Insight
 The search volume search parameter filter that you can include when requesting keyword ideas.
 
 If you do not include the search volume search parameter when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md), then keyword ideas will be returned regardless of search volume.

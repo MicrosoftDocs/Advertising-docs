@@ -1,12 +1,12 @@
 ---
-title: PollGenerateReport Service Operation
+title: PollGenerateReport Service Operation - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the status of a report request.
 ---
-# PollGenerateReport Service Operation
+# PollGenerateReport Service Operation - Reporting
 Gets the status of a report request.
 
 > [!NOTE]

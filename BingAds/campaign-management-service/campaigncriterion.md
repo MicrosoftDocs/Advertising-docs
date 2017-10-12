@@ -1,12 +1,12 @@
 ---
-title: CampaignCriterion Data Object
+title: CampaignCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a criterion that you want applied to the specified campaign.
 ---
-# CampaignCriterion Data Object
+# CampaignCriterion Data Object - Campaign Management
 Defines a criterion that you want applied to the specified campaign.
 
 Do not try to instantiate a *CampaignCriterion*. You can create one or more following objects that derive from it.

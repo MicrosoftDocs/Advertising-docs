@@ -1,12 +1,12 @@
 ---
-title: SharedEntity Data Object
+title: SharedEntity Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the base class of a shared entity.
 ---
-# SharedEntity Data Object
+# SharedEntity Data Object - Campaign Management
 Defines the base class of a shared entity.
 
 Do not try to instantiate a *SharedEntity*. You can create the following object that derives from it.

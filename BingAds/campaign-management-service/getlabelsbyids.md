@@ -1,12 +1,12 @@
 ---
-title: GetLabelsByIds Service Operation
+title: GetLabelsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets labels by label identifiers.
 ---
-# GetLabelsByIds Service Operation
+# GetLabelsByIds Service Operation - Campaign Management
 Gets labels by label identifiers.
 
 ## <a name="request"></a>Request Elements

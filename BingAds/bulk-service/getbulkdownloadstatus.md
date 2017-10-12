@@ -1,12 +1,12 @@
 ---
-title: GetBulkDownloadStatus Service Operation
+title: GetBulkDownloadStatus Service Operation - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the status of a bulk download request.
 ---
-# GetBulkDownloadStatus Service Operation
+# GetBulkDownloadStatus Service Operation - Bulk
 Gets the status of a bulk download request.
 
 > [!NOTE]

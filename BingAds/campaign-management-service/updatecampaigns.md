@@ -1,12 +1,12 @@
 ---
-title: UpdateCampaigns Service Operation
+title: UpdateCampaigns Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates specified campaigns in a specified account.
 ---
-# UpdateCampaigns Service Operation
+# UpdateCampaigns Service Operation - Campaign Management
 Updates specified campaigns in a specified account.
 
 ## <a name="request"></a>Request Elements

@@ -1,12 +1,12 @@
 ---
-title: BudgetLimitType Value Set
+title: BudgetLimitType Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible budget types that you can specify for a campaign.
 ---
-# BudgetLimitType Value Set
+# BudgetLimitType Value Set - Campaign Management
 Defines the possible budget types that you can specify for a campaign.
 
 ## Syntax

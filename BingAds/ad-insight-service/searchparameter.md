@@ -1,12 +1,12 @@
 ---
-title: SearchParameter Data Object
+title: SearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: This is the base class from which keyword idea search parameter objects derive.
 ---
-# SearchParameter Data Object
+# SearchParameter Data Object - Ad Insight
 This is the base class from which keyword idea search parameter objects derive. 
 
 Do not try to instantiate a [SearchParameter](../ad-insight-service/searchparameter.md). You can create one or more following objects that derive from it.

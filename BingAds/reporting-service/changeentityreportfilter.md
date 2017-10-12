@@ -1,12 +1,12 @@
 ---
-title: ChangeEntityReportFilter Value Set
+title: ChangeEntityReportFilter Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the types of entities by which you can filter the report data.
 ---
-# ChangeEntityReportFilter Value Set
+# ChangeEntityReportFilter Value Set - Reporting
 Defines the types of entities by which you can filter the report data.
 
 ## Syntax

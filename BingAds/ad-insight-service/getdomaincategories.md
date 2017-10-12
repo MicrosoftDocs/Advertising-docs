@@ -1,12 +1,12 @@
 ---
-title: GetDomainCategories Service Operation
+title: GetDomainCategories Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the list of categories available for the website domain and language.
 ---
-# GetDomainCategories Service Operation
+# GetDomainCategories Service Operation - Ad Insight
 Gets the list of categories available for the website domain and language.
 
 ## <a name="request"></a>Request Elements

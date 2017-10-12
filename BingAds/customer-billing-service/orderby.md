@@ -1,12 +1,12 @@
 ---
-title: OrderBy Data Object
+title: OrderBy Data Object - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an order for the list of insertion orders returned using the SearchInsertionOrders operation.
 ---
-# OrderBy Data Object
+# OrderBy Data Object - Customer Billing
 Defines an order for the list of insertion orders returned using the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.
 
 ## Syntax

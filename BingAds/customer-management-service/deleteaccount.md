@@ -1,12 +1,12 @@
 ---
-title: DeleteAccount Service Operation
+title: DeleteAccount Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes an account.
 ---
-# DeleteAccount Service Operation
+# DeleteAccount Service Operation - Customer Management
 Deletes an account.
 
 > [!NOTE]

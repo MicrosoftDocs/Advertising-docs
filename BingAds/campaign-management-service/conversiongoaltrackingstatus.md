@@ -1,12 +1,12 @@
 ---
-title: ConversionGoalTrackingStatus Value Set
+title: ConversionGoalTrackingStatus Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible system-determined status values of a conversion goal.
 ---
-# ConversionGoalTrackingStatus Value Set
+# ConversionGoalTrackingStatus Value Set - Campaign Management
 Defines the possible system-determined status values of a conversion goal. These are the status values that can be set by the system, for example the system sets the status to *TagUnverified* if the UET tag has not yet been verified. 
 
 > [!NOTE]

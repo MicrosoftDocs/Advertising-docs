@@ -1,12 +1,12 @@
 ---
-title: KeywordDemographicResult Data Object
+title: KeywordDemographicResult Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains the keyword and percentage of users by age and gender (if known) who searched for the specified keyword.
 ---
-# KeywordDemographicResult Data Object
+# KeywordDemographicResult Data Object - Ad Insight
 Defines an object that contains the keyword and percentage of users by age and gender (if known) who searched for the specified keyword.
 
 ## Syntax

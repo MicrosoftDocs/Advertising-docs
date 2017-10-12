@@ -1,12 +1,12 @@
 ---
-title: Setting Data Object
+title: Setting Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the base class of a setting.
 ---
-# Setting Data Object
+# Setting Data Object - Campaign Management
 Defines the base class of a setting.
 
 Do not try to instantiate a *Setting*. You can create one or more following objects that derive from it.

@@ -1,12 +1,12 @@
 ---
-title: DSACategoryPerformanceReportRequest Data Object
+title: DSACategoryPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a DSA category performance report request.
 ---
-# DSACategoryPerformanceReportRequest Data Object
+# DSACategoryPerformanceReportRequest Data Object - Reporting
 Defines a DSA category performance report request. 
 
 You can request impressions, clicks, click-through rate, and average position for the dynamic ad categories that have triggered your ads. 

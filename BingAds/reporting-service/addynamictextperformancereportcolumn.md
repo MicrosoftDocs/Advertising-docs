@@ -1,12 +1,12 @@
 ---
-title: AdDynamicTextPerformanceReportColumn Value Set
+title: AdDynamicTextPerformanceReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the AdDynamicTextPerformanceReportRequest Data Object.
 ---
-# AdDynamicTextPerformanceReportColumn Value Set
+# AdDynamicTextPerformanceReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [AdDynamicTextPerformanceReportRequest Data Object](../reporting-service/addynamictextperformancereportrequest.md).
 
 The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](~/guides/reports.md#columnsdata).

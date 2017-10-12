@@ -1,12 +1,12 @@
 ---
-title: UpdateUser Service Operation
+title: UpdateUser Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates the details of the specified user.
 ---
-# UpdateUser Service Operation
+# UpdateUser Service Operation - Customer Management
 Updates the details of the specified user.
 
 ## <a name="request"></a>Request Elements

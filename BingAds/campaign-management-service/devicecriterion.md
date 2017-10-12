@@ -1,12 +1,12 @@
 ---
-title: DeviceCriterion Data Object
+title: DeviceCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a criterion that can be used to show ads on specific devices.
 ---
-# DeviceCriterion Data Object
+# DeviceCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads on specific devices.
 
 When you target by device, you choose to show ads to potential customers when they're using desktops and tablets or smartphones. 

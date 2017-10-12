@@ -1,12 +1,12 @@
 ---
-title: UpdateKeywords Service Operation
+title: UpdateKeywords Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates the keywords within a specified ad group.
 ---
-# UpdateKeywords Service Operation
+# UpdateKeywords Service Operation - Campaign Management
 Updates the keywords within a specified ad group.
 
 ## <a name="request"></a>Request Elements

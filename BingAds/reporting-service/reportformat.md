@@ -1,12 +1,12 @@
 ---
-title: ReportFormat Value Set
+title: ReportFormat Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the file formats that you can use for a report.
 ---
-# ReportFormat Value Set
+# ReportFormat Value Set - Reporting
 Defines the file formats that you can use for a report.
 
 ## Syntax

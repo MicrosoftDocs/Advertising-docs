@@ -1,12 +1,12 @@
 ---
-title: CallDetailReportRequest Data Object
+title: CallDetailReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a call detail report request.
 ---
-# CallDetailReportRequest Data Object
+# CallDetailReportRequest Data Object - Reporting
 Defines a call detail report request. Use this report to discover which accounts, campaigns, or ad groups are driving the most completed phone calls.
 
 You can request duration and phone spend for each forwarded call that originated from a call ad extension.

@@ -1,12 +1,12 @@
 ---
-title: RadiusCriterion Data Object
+title: RadiusCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a criterion that can be used to show ads to users within the radius of a specific geographical location.
 ---
-# RadiusCriterion Data Object
+# RadiusCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to users within the radius of a specific geographical location.
 
 With radius criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about a specified radius around a zip code, coordinates, landmark, or area.

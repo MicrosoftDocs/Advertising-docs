@@ -1,12 +1,12 @@
 ---
-title: DeleteLabelAssociations Service Operation
+title: DeleteLabelAssociations Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes label associations.
 ---
-# DeleteLabelAssociations Service Operation
+# DeleteLabelAssociations Service Operation - Campaign Management
 Deletes label associations.
 
 ## <a name="request"></a>Request Elements

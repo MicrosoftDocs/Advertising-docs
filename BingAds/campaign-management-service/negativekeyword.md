@@ -1,12 +1,12 @@
 ---
-title: NegativeKeyword Data Object
+title: NegativeKeyword Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a negative keyword with match type.
 ---
-# NegativeKeyword Data Object
+# NegativeKeyword Data Object - Campaign Management
 Defines a negative keyword with match type. A negative keyword can be added and deleted, but cannot be updated.
 
 You may choose to assign negative keywords to an individual campaign or ad group. An assigned set of negative keywords cannot be shared with other campaigns or ad groups.

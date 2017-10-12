@@ -1,12 +1,12 @@
 ---
-title: CustomParameter Data Object
+title: CustomParameter Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a key and value custom parameter for URL tracking.
 ---
-# CustomParameter Data Object
+# CustomParameter Data Object - Campaign Management
 Defines a key and value custom parameter for URL tracking. Used for campaign, ad group, ad, keyword, sitelink, and ad group criterion URL custom parameters.
 
 ## Syntax

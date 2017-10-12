@@ -1,12 +1,12 @@
 ---
-title: BudgetSummaryReportRequest Data Object
+title: BudgetSummaryReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a budget summary report request.
 ---
-# BudgetSummaryReportRequest Data Object
+# BudgetSummaryReportRequest Data Object - Reporting
 Defines a budget summary report request. Use this report to discover how your campaign's budget is performing for the month. For example, the report shows your monthly budget, how much you have spent to date, and whether you are on target to spend your monthly budget.
 
 You can request your monthly budget, how much you have spent to date, and whether you are on target to spend your monthly budget.

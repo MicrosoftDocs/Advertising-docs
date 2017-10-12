@@ -1,12 +1,12 @@
 ---
-title: AppInstallGoal Data Object
+title: AppInstallGoal Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an app install conversion goal.
 ---
-# AppInstallGoal Data Object
+# AppInstallGoal Data Object - Campaign Management
 Defines an app install conversion goal. Use this type of goal to track every time someone installs your app as a conversion.
 
 For other conversion goal types you create a Universal Event Tracking (UET) tag, add it to your website, and then create a conversion goal. But for app install conversion goals, all you have to do is use the app-specific URL that is provided by the Bing Ads-certified partner. For more information, please see [How to track mobile app installs as conversions](http://help.bingads.microsoft.com/#apex/3/en/56690/2). 

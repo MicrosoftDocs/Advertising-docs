@@ -1,12 +1,12 @@
 ---
-title: GetAdGroupCriterionsByIds Service Operation
+title: GetAdGroupCriterionsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets ad group criterions by identifiers and types.
 ---
-# GetAdGroupCriterionsByIds Service Operation
+# GetAdGroupCriterionsByIds Service Operation - Campaign Management
 Gets ad group criterions by identifiers and types.
 
 ## <a name="request"></a>Request Elements

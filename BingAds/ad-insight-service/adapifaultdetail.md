@@ -1,12 +1,12 @@
 ---
-title: AdApiFaultDetail Data Object
+title: AdApiFaultDetail Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a fault object that operations return when generic errors occur, such as an authentication error.
 ---
-# AdApiFaultDetail Data Object
+# AdApiFaultDetail Data Object - Ad Insight
 Defines a fault object that operations return when generic errors occur, such as an authentication error.
 
 ## Syntax

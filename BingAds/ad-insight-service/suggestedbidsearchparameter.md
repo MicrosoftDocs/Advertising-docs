@@ -1,12 +1,12 @@
 ---
-title: SuggestedBidSearchParameter Data Object
+title: SuggestedBidSearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: The suggested bid search parameter filter that you can include when requesting keyword ideas.
 ---
-# SuggestedBidSearchParameter Data Object
+# SuggestedBidSearchParameter Data Object - Ad Insight
 The suggested bid search parameter filter that you can include when requesting keyword ideas.
 
 If you do not include the suggested bid search parameter when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md), then keyword ideas will be returned regardless of suggested bid.

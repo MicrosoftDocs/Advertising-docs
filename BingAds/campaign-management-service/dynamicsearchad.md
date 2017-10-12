@@ -1,12 +1,12 @@
 ---
-title: DynamicSearchAd Data Object
+title: DynamicSearchAd Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a dynamic search ad.
 ---
-# DynamicSearchAd Data Object
+# DynamicSearchAd Data Object - Campaign Management
 Defines a dynamic search ad. With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target.
 
 > [!NOTE]

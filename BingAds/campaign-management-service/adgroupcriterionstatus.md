@@ -1,12 +1,12 @@
 ---
-title: AdGroupCriterionStatus Value Set
+title: AdGroupCriterionStatus Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible ad group criterion status values.
 ---
-# AdGroupCriterionStatus Value Set
+# AdGroupCriterionStatus Value Set - Campaign Management
 Defines the possible ad group criterion status values.
 
 ## Syntax

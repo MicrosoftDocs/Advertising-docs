@@ -1,12 +1,12 @@
 ---
-title: NumberOperator Value Set
+title: NumberOperator Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the operators that can be applied to remarketing list rule item number values.
 ---
-# NumberOperator Value Set
+# NumberOperator Value Set - Campaign Management
 Defines the operators that can be applied to remarketing list rule item number values.
 
 ## Syntax

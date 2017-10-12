@@ -1,12 +1,12 @@
 ---
-title: GetBillingDocuments Service Operation
+title: GetBillingDocuments Service Operation - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the specified billing documents.
 ---
-# GetBillingDocuments Service Operation
+# GetBillingDocuments Service Operation - Customer Billing
 Gets the specified billing documents.
 
 > [!NOTE]

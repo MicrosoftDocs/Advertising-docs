@@ -1,12 +1,12 @@
 ---
-title: ReportRequest Data Object
+title: ReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the base object for all report requests.
 ---
-# ReportRequest Data Object
+# ReportRequest Data Object - Reporting
 Defines the base object for all report requests.
 
 Do not instantiate this object. Instead, you may instantiate one of the report request objects which derives from this object, for example the [CampaignPerformanceReportRequest](../reporting-service/campaignperformancereportrequest.md). For a list of reports, see the [Report Types](~/guides/report-types.md) guide.

@@ -1,12 +1,12 @@
 ---
-title: UpdateUserRoles Service Operation
+title: UpdateUserRoles Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates the roles of the specified user.
 ---
-# UpdateUserRoles Service Operation
+# UpdateUserRoles Service Operation - Customer Management
 Updates the roles of the specified user.
 
 ## <a name="request"></a>Request Elements

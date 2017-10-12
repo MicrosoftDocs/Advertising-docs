@@ -1,12 +1,12 @@
 ---
-title: GetAdGroupsByCampaignId Service Operation
+title: GetAdGroupsByCampaignId Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the ad groups within the specified campaign.
 ---
-# GetAdGroupsByCampaignId Service Operation
+# GetAdGroupsByCampaignId Service Operation - Campaign Management
 Gets the ad groups within the specified campaign.
 
 ## <a name="request"></a>Request Elements

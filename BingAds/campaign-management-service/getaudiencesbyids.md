@@ -1,12 +1,12 @@
 ---
-title: GetAudiencesByIds Service Operation
+title: GetAudiencesByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Retrieves the specified audiences from the specified account.
 ---
-# GetAudiencesByIds Service Operation
+# GetAudiencesByIds Service Operation - Campaign Management
 Retrieves the specified audiences from the specified account.
 
 ## <a name="request"></a>Request Elements

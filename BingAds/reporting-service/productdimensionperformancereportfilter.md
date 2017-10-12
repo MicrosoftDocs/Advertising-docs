@@ -1,12 +1,12 @@
 ---
-title: ProductDimensionPerformanceReportFilter Data Object
+title: ProductDimensionPerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the product dimension performance report data.
 ---
-# ProductDimensionPerformanceReportFilter Data Object
+# ProductDimensionPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the product dimension performance report data.
 
 ## Syntax

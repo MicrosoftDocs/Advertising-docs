@@ -1,12 +1,12 @@
 ---
-title: ApiFault Data Object
+title: ApiFault Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 ---
-# ApiFault Data Object
+# ApiFault Data Object - Customer Management
 Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 
 ## Syntax

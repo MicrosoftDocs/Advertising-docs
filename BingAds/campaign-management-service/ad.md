@@ -1,12 +1,12 @@
 ---
-title: Ad Data Object
+title: Ad Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the base object of an ad.
 ---
-# Ad Data Object
+# Ad Data Object - Campaign Management
 Defines the base object of an ad.
 
 Do not try to instantiate an *Ad*. You can create one or more following objects that derive from it.

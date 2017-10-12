@@ -1,12 +1,12 @@
 ---
-title: Webpage Data Object
+title: Webpage Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a webpage parameter that contains a list of webpage conditions or criteria that help determine whether you want to show dynamic search ads.
 ---
-# Webpage Data Object
+# Webpage Data Object - Campaign Management
 Defines a webpage parameter that contains a list of webpage conditions or criteria that help determine whether you want to show dynamic search ads.
 
 The *Webpage* criterion can be included within [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md), [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md), and [NegativeCampaignCriterion](../campaign-management-service/negativecampaigncriterion.md) objects. If ad group level negative webpage criterions are specified, the campaign level negative webpage criterions are ignored for that ad group. In other words the ad group negative webpage criterions override the campaign negative webpage criterions, and are not applied as a union.   

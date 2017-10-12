@@ -1,12 +1,12 @@
 ---
-title: ShareOfVoiceReportFilter Data Object
+title: ShareOfVoiceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the share of voice report data.
 ---
-# ShareOfVoiceReportFilter Data Object
+# ShareOfVoiceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the share of voice report data.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: AddKeywords Service Operation
+title: AddKeywords Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Adds one or more keywords to an ad group.
 ---
-# AddKeywords Service Operation
+# AddKeywords Service Operation - Campaign Management
 Adds one or more keywords to an ad group.
 
 ## <a name="request"></a>Request Elements

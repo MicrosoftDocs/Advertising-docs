@@ -1,12 +1,12 @@
 ---
-title: ApplyOfflineConversions Service Operation
+title: ApplyOfflineConversions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Applies offline conversions for the account with Microsoft Click Id among other offline conversion data.
 ---
-# ApplyOfflineConversions Service Operation
+# ApplyOfflineConversions Service Operation - Campaign Management
 Applies offline conversions for the account with Microsoft Click Id among other offline conversion data.
 
 Let's say a customer sees your ad, clicks on it, but ends up calling you, leading to a sale that was taken offline. How can you track when your search ad leads to a conversion offline and outside of your website? You can import offline conversions, to better measure what happens after your ad was clicked.

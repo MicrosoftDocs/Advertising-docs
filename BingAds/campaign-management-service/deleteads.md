@@ -1,12 +1,12 @@
 ---
-title: DeleteAds Service Operation
+title: DeleteAds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes one or more ads from the specified ad group.
 ---
-# DeleteAds Service Operation
+# DeleteAds Service Operation - Campaign Management
 Deletes one or more ads from the specified ad group.
 
 ## <a name="request"></a>Request Elements

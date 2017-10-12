@@ -1,12 +1,12 @@
 ---
-title: AdGroupBidLandscapeType Value Set
+title: AdGroupBidLandscapeType Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible values that indicate whether all or a subset of an ad group's existing keywords are used to determine the bid landscape.
 ---
-# AdGroupBidLandscapeType Value Set
+# AdGroupBidLandscapeType Value Set - Ad Insight
 Defines the possible values that indicate whether all or a subset of an ad group's existing keywords are used to determine the bid landscape.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: PriceExtensionType Value Set
+title: PriceExtensionType Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible types of price ad extensions.
 ---
-# PriceExtensionType Value Set
+# PriceExtensionType Value Set - Campaign Management
 Defines the possible types of price ad extensions.
 
 ## Syntax

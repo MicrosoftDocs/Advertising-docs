@@ -1,12 +1,12 @@
 ---
-title: AdGroupCriterion Data Object
+title: AdGroupCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a criterion that you want applied to the specified ad group.
 ---
-# AdGroupCriterion Data Object
+# AdGroupCriterion Data Object - Campaign Management
 Defines a criterion that you want applied to the specified ad group.
 
 Do not try to instantiate an *AdGroupCriterion*. You can create one or more following objects that derive from it.

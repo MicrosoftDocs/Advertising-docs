@@ -1,12 +1,12 @@
 ---
-title: AccountPerformanceReportRequest Data Object
+title: AccountPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an account performance report request.
 ---
-# AccountPerformanceReportRequest Data Object
+# AccountPerformanceReportRequest Data Object - Reporting
 Defines an account performance report request. Use this report to observe long-term account performance and trends.
 You can request impressions, impression share (%), clicks, spend, and average cost per click for individual accounts. Once downloaded, this data can be sorted by individual accounts, currency, bid match type, and delivered match type.
 

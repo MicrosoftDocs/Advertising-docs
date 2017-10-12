@@ -1,12 +1,12 @@
 ---
-title: KeyValuePairOfstringstring Data Object
+title: KeyValuePairOfstringstring Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
 ---
-# KeyValuePairOfstringstring Data Object
+# KeyValuePairOfstringstring Data Object - Customer Management
 The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: NegativeAdGroupCriterion Data Object
+title: NegativeAdGroupCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a criterion that you want to exclude from the specified ad group.
 ---
-# NegativeAdGroupCriterion Data Object
+# NegativeAdGroupCriterion Data Object - Campaign Management
 Defines a criterion that you want to exclude from the specified ad group.
 
 ## Syntax

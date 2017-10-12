@@ -1,12 +1,12 @@
 ---
-title: BillingDocument Data Object
+title: BillingDocument Data Object - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a billing document.
 ---
-# BillingDocument Data Object
+# BillingDocument Data Object - Customer Billing
 Defines a billing document.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: AddConversionGoals Service Operation
+title: AddConversionGoals Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Adds new conversion goals to the account's shared conversion goal library.
 ---
-# AddConversionGoals Service Operation
+# AddConversionGoals Service Operation - Campaign Management
 Adds new conversion goals to the account's shared conversion goal library. 
 
 > [!TIP]

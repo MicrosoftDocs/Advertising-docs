@@ -1,12 +1,12 @@
 ---
-title: ProductSearchQueryPerformanceReportColumn Value Set
+title: ProductSearchQueryPerformanceReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the ProductSearchQueryPerformanceReportRequest.
 ---
-# ProductSearchQueryPerformanceReportColumn Value Set
+# ProductSearchQueryPerformanceReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [ProductSearchQueryPerformanceReportRequest](../reporting-service/productsearchqueryperformancereportrequest.md).
 
 The report will include data only for search terms that resulted in a significant number of clicks in the last 30 days.

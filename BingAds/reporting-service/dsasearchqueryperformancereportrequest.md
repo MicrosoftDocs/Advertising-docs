@@ -1,12 +1,12 @@
 ---
-title: DSASearchQueryPerformanceReportRequest Data Object
+title: DSASearchQueryPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a DSA search query performance report request.
 ---
-# DSASearchQueryPerformanceReportRequest Data Object
+# DSASearchQueryPerformanceReportRequest Data Object - Reporting
 Defines a DSA search query performance report request. Use this report to find out which search terms are in demand for your DSA campaign and the performance of dynamic headlines that are being displayed. 
 
 You can request impressions, clicks, click-through rate, and average position for search terms that have triggered your ads. 

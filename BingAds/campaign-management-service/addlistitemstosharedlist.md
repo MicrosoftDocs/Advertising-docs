@@ -1,12 +1,12 @@
 ---
-title: AddListItemsToSharedList Service Operation
+title: AddListItemsToSharedList Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Adds negative keywords to the shared negative keyword list.
 ---
-# AddListItemsToSharedList Service Operation
+# AddListItemsToSharedList Service Operation - Campaign Management
 Adds negative keywords to the shared negative keyword list.
 
 > [!NOTE]

@@ -1,12 +1,12 @@
 ---
-title: ApplicationType Value Set
+title: ApplicationType Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible application types.
 ---
-# ApplicationType Value Set
+# ApplicationType Value Set - Customer Management
 Defines the possible application types.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: BidMultiplier Data Object
+title: BidMultiplier Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the multiplier by which to adjust your base bid for the corresponding criterion.
 ---
-# BidMultiplier Data Object
+# BidMultiplier Data Object - Campaign Management
 Defines the multiplier by which to adjust your base bid for the corresponding criterion.
 
 ## Syntax

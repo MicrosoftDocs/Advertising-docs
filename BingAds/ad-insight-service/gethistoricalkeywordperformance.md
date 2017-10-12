@@ -1,12 +1,12 @@
 ---
-title: GetHistoricalKeywordPerformance Service Operation
+title: GetHistoricalKeywordPerformance Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the historical performance of the normalized search term.
 ---
-# GetHistoricalKeywordPerformance Service Operation
+# GetHistoricalKeywordPerformance Service Operation - Ad Insight
 Gets the historical performance of the normalized search term. The results are aggregated by device type.
 
 ## <a name="request"></a>Request Elements

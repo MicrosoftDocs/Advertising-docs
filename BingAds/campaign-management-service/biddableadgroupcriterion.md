@@ -1,12 +1,12 @@
 ---
-title: BiddableAdGroupCriterion Data Object
+title: BiddableAdGroupCriterion Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a biddable criterion that you want applied to the specified ad group.
 ---
-# BiddableAdGroupCriterion Data Object
+# BiddableAdGroupCriterion Data Object - Campaign Management
 Defines a biddable criterion that you want applied to the specified ad group.
 
 ## Syntax

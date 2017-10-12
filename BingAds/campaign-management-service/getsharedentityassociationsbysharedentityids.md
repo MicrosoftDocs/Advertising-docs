@@ -1,12 +1,12 @@
 ---
-title: GetSharedEntityAssociationsBySharedEntityIds Service Operation
+title: GetSharedEntityAssociationsBySharedEntityIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets shared entity associations for the specified negative keyword lists.
 ---
-# GetSharedEntityAssociationsBySharedEntityIds Service Operation
+# GetSharedEntityAssociationsBySharedEntityIds Service Operation - Campaign Management
 Gets shared entity associations for the specified negative keyword lists.
 
 ## <a name="request"></a>Request Elements

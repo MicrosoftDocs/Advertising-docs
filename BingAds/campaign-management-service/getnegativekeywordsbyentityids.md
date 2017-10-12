@@ -1,12 +1,12 @@
 ---
-title: GetNegativeKeywordsByEntityIds Service Operation
+title: GetNegativeKeywordsByEntityIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the negative keywords that are only associated with the specified campaigns or ad groups.
 ---
-# GetNegativeKeywordsByEntityIds Service Operation
+# GetNegativeKeywordsByEntityIds Service Operation - Campaign Management
 Gets the negative keywords that are only associated with the specified campaigns or ad groups.
 
 > [!NOTE]

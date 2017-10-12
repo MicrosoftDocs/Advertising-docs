@@ -1,12 +1,12 @@
 ---
-title: SignupCustomer Service Operation
+title: SignupCustomer Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Signs up a customer with Bing Ads.
 ---
-# SignupCustomer Service Operation
+# SignupCustomer Service Operation - Customer Management
 Signs up a customer with Bing Ads.
 
 ## <a name="request"></a>Request Elements

@@ -1,12 +1,12 @@
 ---
-title: DeviceSearchParameter Data Object
+title: DeviceSearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: The device search parameter filter that you can include when requesting keyword ideas.
 ---
-# DeviceSearchParameter Data Object
+# DeviceSearchParameter Data Object - Ad Insight
 The device search parameter filter that you can include when requesting keyword ideas.
 
 If you do not include the device search parameter when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md), then keyword ideas will be returned for all devices.

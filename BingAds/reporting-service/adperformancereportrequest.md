@@ -1,12 +1,12 @@
 ---
-title: AdPerformanceReportRequest Data Object
+title: AdPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an ad performance report request.
 ---
-# AdPerformanceReportRequest Data Object
+# AdPerformanceReportRequest Data Object - Reporting
 Defines an ad performance report request. Use this report to help you determine which ads lead to clicks and conversions, and which are not performing. Having underperforming ads in your account can pull down the quality of your campaigns.
 
 You can request impressions, clicks, spend, and average cost per click for each ad. Once downloaded, this data can be sorted by ad ID, ad status, ad title, display URL, and destination URL.

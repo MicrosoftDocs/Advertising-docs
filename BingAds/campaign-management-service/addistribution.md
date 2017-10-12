@@ -1,12 +1,12 @@
 ---
-title: AdDistribution Value Set
+title: AdDistribution Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the ad distribution for the ad group.
 ---
-# AdDistribution Value Set
+# AdDistribution Value Set - Campaign Management
 Defines the ad distribution for the ad group.
 
 ## Syntax

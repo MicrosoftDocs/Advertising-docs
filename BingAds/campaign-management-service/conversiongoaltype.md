@@ -1,12 +1,12 @@
 ---
-title: ConversionGoalType Value Set
+title: ConversionGoalType Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the current possible types of conversion goals.
 ---
-# ConversionGoalType Value Set
+# ConversionGoalType Value Set - Campaign Management
 Defines the current possible types of conversion goals. 
 
 ## Syntax

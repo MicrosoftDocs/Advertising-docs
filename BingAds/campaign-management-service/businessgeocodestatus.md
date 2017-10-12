@@ -1,12 +1,12 @@
 ---
-title: BusinessGeoCodeStatus Value Set
+title: BusinessGeoCodeStatus Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.
 ---
-# BusinessGeoCodeStatus Value Set
+# BusinessGeoCodeStatus Value Set - Campaign Management
 Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.
 
 ## Syntax

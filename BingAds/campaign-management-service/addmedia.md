@@ -1,12 +1,12 @@
 ---
-title: AddMedia Service Operation
+title: AddMedia Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Adds the specified media to an account's media library.
 ---
-# AddMedia Service Operation
+# AddMedia Service Operation - Campaign Management
 Adds the specified media to an account's media library. Depending on the type of [Media](../campaign-management-service/media.md), you can then add the media to one or more [ImageAdExtension](../campaign-management-service/imageadextension.md) or [LocationAdExtension](../campaign-management-service/locationadextension.md) objects.
 
 ## <a name="request"></a>Request Elements

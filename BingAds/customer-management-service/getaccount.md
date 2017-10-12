@@ -1,12 +1,12 @@
 ---
-title: GetAccount Service Operation
+title: GetAccount Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the details of an account.
 ---
-# GetAccount Service Operation
+# GetAccount Service Operation - Customer Management
 Gets the details of an account.
 
 ## <a name="request"></a>Request Elements

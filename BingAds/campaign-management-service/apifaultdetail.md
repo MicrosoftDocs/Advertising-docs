@@ -1,12 +1,12 @@
 ---
-title: ApiFaultDetail Data Object
+title: ApiFaultDetail Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 ---
-# ApiFaultDetail Data Object
+# ApiFaultDetail Data Object - Campaign Management
 Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 
 ## Syntax

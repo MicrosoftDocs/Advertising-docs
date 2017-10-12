@@ -1,12 +1,12 @@
 ---
-title: GetConversionGoalsByIds Service Operation
+title: GetConversionGoalsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the specified conversion goals.
 ---
-# GetConversionGoalsByIds Service Operation
+# GetConversionGoalsByIds Service Operation - Campaign Management
 Gets the specified conversion goals. 
 
 > [!TIP]

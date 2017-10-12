@@ -1,12 +1,12 @@
 ---
-title: DeleteSharedEntities Service Operation
+title: DeleteSharedEntities Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes negative keyword lists from the account's library.
 ---
-# DeleteSharedEntities Service Operation
+# DeleteSharedEntities Service Operation - Campaign Management
 Deletes negative keyword lists from the account's library.
 
 ## <a name="request"></a>Request Elements

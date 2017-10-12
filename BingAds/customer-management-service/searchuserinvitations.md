@@ -1,12 +1,12 @@
 ---
-title: SearchUserInvitations Service Operation
+title: SearchUserInvitations Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Searches for user invitations that match a specified criteria.
 ---
-# SearchUserInvitations Service Operation
+# SearchUserInvitations Service Operation - Customer Management
 Searches for user invitations that match a specified criteria.
 
 This operation returns all pending invitations, whether or not they have expired. Accepted invitations are not included in the response.  

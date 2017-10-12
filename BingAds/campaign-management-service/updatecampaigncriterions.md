@@ -1,12 +1,12 @@
 ---
-title: UpdateCampaignCriterions Service Operation
+title: UpdateCampaignCriterions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates one or more campaign criterions.
 ---
-# UpdateCampaignCriterions Service Operation
+# UpdateCampaignCriterions Service Operation - Campaign Management
 Updates one or more campaign criterions.
 
 ## <a name="request"></a>Request Elements

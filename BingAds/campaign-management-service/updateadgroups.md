@@ -1,12 +1,12 @@
 ---
-title: UpdateAdGroups Service Operation
+title: UpdateAdGroups Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates the specified ad groups in a campaign.
 ---
-# UpdateAdGroups Service Operation
+# UpdateAdGroups Service Operation - Campaign Management
 Updates the specified ad groups in a campaign.
 
 ## <a name="request"></a>Request Elements

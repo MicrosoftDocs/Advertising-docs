@@ -1,12 +1,12 @@
 ---
-title: SearchInsertionOrders Service Operation
+title: SearchInsertionOrders Service Operation - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Searches for insertion orders that match a specified criteria.
 ---
-# SearchInsertionOrders Service Operation
+# SearchInsertionOrders Service Operation - Customer Billing
 Searches for insertion orders that match a specified criteria.
 
 ## <a name="request"></a>Request Elements

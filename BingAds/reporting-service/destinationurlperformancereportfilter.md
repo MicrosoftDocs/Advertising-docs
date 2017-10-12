@@ -1,12 +1,12 @@
 ---
-title: DestinationUrlPerformanceReportFilter Data Object
+title: DestinationUrlPerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the destination URL performance report data.
 ---
-# DestinationUrlPerformanceReportFilter Data Object
+# DestinationUrlPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the destination URL performance report data.
 
 ## Syntax

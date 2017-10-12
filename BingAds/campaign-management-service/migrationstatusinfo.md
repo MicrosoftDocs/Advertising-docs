@@ -1,12 +1,12 @@
 ---
-title: MigrationStatusInfo Data Object
+title: MigrationStatusInfo Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains the migration type and status for an account.
 ---
-# MigrationStatusInfo Data Object
+# MigrationStatusInfo Data Object - Campaign Management
 Defines an object that contains the migration type and status for an account.
 
 ## Syntax

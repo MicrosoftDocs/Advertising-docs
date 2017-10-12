@@ -1,12 +1,12 @@
 ---
-title: BMCStore Data Object
+title: BMCStore Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a Bing Merchant Center store.
 ---
-# BMCStore Data Object
+# BMCStore Data Object - Campaign Management
 Defines a Bing Merchant Center store.
 
 Elements of this object are defined in the Bing Merchant Center store, and read-only in Bing Ads.  Values of elements do not restrict Bing Ads features. For example, a Bing Shopping campaign and product ad may be added whether the *IsActive* element is set to true or false.

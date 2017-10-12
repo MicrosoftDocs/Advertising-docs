@@ -1,12 +1,12 @@
 ---
-title: DeviceTypeReportFilter Value Set
+title: DeviceTypeReportFilter Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the device type values that you can use to filter the report data.
 ---
-# DeviceTypeReportFilter Value Set
+# DeviceTypeReportFilter Value Set - Reporting
 Defines the device type values that you can use to filter the report data. These values are also used as column values in reports that include device type information, such as the ad group performance report.
 
 ## Syntax

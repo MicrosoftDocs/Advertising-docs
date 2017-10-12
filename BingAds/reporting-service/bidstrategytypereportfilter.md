@@ -1,12 +1,12 @@
 ---
-title: BidStrategyTypeReportFilter Value Set
+title: BidStrategyTypeReportFilter Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible values that you can use to use to filter the report data by bid strategy type.
 ---
-# BidStrategyTypeReportFilter Value Set
+# BidStrategyTypeReportFilter Value Set - Reporting
 Defines the possible values that you can use to use to filter the report data by bid strategy type.
 
 ## Syntax

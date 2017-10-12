@@ -1,12 +1,12 @@
 ---
-title: GetBMCStoresByCustomerId Service Operation
+title: GetBMCStoresByCustomerId Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the Bing Merchant Center stores for the specified customer.
 ---
-# GetBMCStoresByCustomerId Service Operation
+# GetBMCStoresByCustomerId Service Operation - Campaign Management
 Gets the Bing Merchant Center stores for the specified customer.
 
 ## <a name="request"></a>Request Elements

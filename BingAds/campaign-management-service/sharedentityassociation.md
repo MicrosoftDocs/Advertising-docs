@@ -1,12 +1,12 @@
 ---
-title: SharedEntityAssociation Data Object
+title: SharedEntityAssociation Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains association information for a campaign and shared entity such as a negative keyword list.
 ---
-# SharedEntityAssociation Data Object
+# SharedEntityAssociation Data Object - Campaign Management
 Defines an object that contains association information for a campaign and shared entity such as a negative keyword list.
 
 ## Syntax

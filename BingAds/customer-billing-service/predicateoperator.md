@@ -1,12 +1,12 @@
 ---
-title: PredicateOperator Value Set
+title: PredicateOperator Value Set - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the condition of results for insertion orders returned using SearchInsertionOrders.
 ---
-# PredicateOperator Value Set
+# PredicateOperator Value Set - Customer Billing
 Defines the condition of results for insertion orders returned using [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
 
 ## Syntax

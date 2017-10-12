@@ -1,12 +1,12 @@
 ---
-title: PriceTableRow Data Object
+title: PriceTableRow Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines pricing information by currency and unit that you can use with price ad extensions.
 ---
-# PriceTableRow Data Object
+# PriceTableRow Data Object - Campaign Management
 Defines pricing information by currency and unit that you can use with price ad extensions.
 
 ## Syntax

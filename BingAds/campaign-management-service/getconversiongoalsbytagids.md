@@ -1,12 +1,12 @@
 ---
-title: GetConversionGoalsByTagIds Service Operation
+title: GetConversionGoalsByTagIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the conversion goals that use the specified UET tags.
 ---
-# GetConversionGoalsByTagIds Service Operation
+# GetConversionGoalsByTagIds Service Operation - Campaign Management
 Gets the conversion goals that use the specified UET tags. 
 
 > [!TIP]

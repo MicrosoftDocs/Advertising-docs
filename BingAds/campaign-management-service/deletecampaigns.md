@@ -1,12 +1,12 @@
 ---
-title: DeleteCampaigns Service Operation
+title: DeleteCampaigns Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes one or more campaigns in a specified account.
 ---
-# DeleteCampaigns Service Operation
+# DeleteCampaigns Service Operation - Campaign Management
 Deletes one or more campaigns in a specified account.
 
 ## <a name="request"></a>Request Elements

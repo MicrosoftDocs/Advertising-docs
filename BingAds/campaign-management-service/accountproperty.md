@@ -1,12 +1,12 @@
 ---
-title: AccountProperty Data Object
+title: AccountProperty Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Maps an account level property name to a string value.
 ---
-# AccountProperty Data Object
+# AccountProperty Data Object - Campaign Management
 Maps an account level property name to a string value.
 
 ## Syntax

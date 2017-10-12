@@ -1,12 +1,12 @@
 ---
-title: GetBulkUploadUrl Service Operation
+title: GetBulkUploadUrl Service Operation - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Submits a request for a URL where a bulk upload file may be posted.
 ---
-# GetBulkUploadUrl Service Operation
+# GetBulkUploadUrl Service Operation - Bulk
 Submits a request for a URL where a bulk upload file may be posted.
 
 ## <a name="request"></a>Request Elements

@@ -1,12 +1,12 @@
 ---
-title: DSASearchQueryPerformanceReportColumn Value Set
+title: DSASearchQueryPerformanceReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the DSASearchQueryPerformanceReportRequest.
 ---
-# DSASearchQueryPerformanceReportColumn Value Set
+# DSASearchQueryPerformanceReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [DSASearchQueryPerformanceReportRequest](../reporting-service/dsasearchqueryperformancereportrequest.md).
 
 The report will include data only for search terms that resulted in a significant number of clicks in the last 30 days.

@@ -1,12 +1,12 @@
 ---
-title: SearchQueryPerformanceReportRequest Data Object
+title: SearchQueryPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a search query performance report request.
 ---
-# SearchQueryPerformanceReportRequest Data Object
+# SearchQueryPerformanceReportRequest Data Object - Reporting
 Defines a search query performance report request. Use this report to see what your audience is searching for when your ads are shown. You can use this information to make informed additions, removals, or edits to both your keyword and negative keyword lists.
 
 You can request impressions, clicks, click-through rate, and average position for search terms that have triggered your ads. For example, if you are a mortgage lender who is running a campaign with the following keywords: mortgage, home mortgage, and home equity loans; and the report shows that the search query ?mortgage rates? results in many impressions of your ad, you would probably add ?rates? to your keyword list. However, if you do not provide reverse mortgages and the report shows that the search query ?reverse mortgage? results in many impressions, you would probably add ?reverse mortgage? to your negative keywords list.

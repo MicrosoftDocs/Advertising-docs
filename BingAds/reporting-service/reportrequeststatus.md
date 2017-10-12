@@ -1,12 +1,12 @@
 ---
-title: ReportRequestStatus Data Object
+title: ReportRequestStatus Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the status of a report request.
 ---
-# ReportRequestStatus Data Object
+# ReportRequestStatus Data Object - Reporting
 Defines the status of a report request.
 
 ## Syntax

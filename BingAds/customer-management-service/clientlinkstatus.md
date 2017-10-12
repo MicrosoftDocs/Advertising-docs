@@ -1,12 +1,12 @@
 ---
-title: ClientLinkStatus Value Set
+title: ClientLinkStatus Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible status values of a ClientLink.
 ---
-# ClientLinkStatus Value Set
+# ClientLinkStatus Value Set - Customer Management
 Defines the possible status values of a [ClientLink](../customer-management-service/clientlink.md).
 
 For more information about the client link lifecycle, see [Link to Client Accounts](~/guides/management-model-agencies.md#clientlink).

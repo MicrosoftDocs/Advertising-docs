@@ -1,12 +1,12 @@
 ---
-title: ConversionGoal Data Object
+title: ConversionGoal Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the base object of a conversion goal.
 ---
-# ConversionGoal Data Object
+# ConversionGoal Data Object - Campaign Management
 Defines the base object of a conversion goal.
 
 Do not try to instantiate a *ConversionGoal*. You can create one or more following objects that derive from it.

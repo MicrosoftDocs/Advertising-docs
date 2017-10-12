@@ -1,12 +1,12 @@
 ---
-title: WebpageParameter Data Object
+title: WebpageParameter Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the conditions or criteria that determine whether you want to show dynamic search ads.
 ---
-# WebpageParameter Data Object
+# WebpageParameter Data Object - Campaign Management
 Defines the conditions or criteria that determine whether you want to show dynamic search ads.
 
 ## Syntax

@@ -1,12 +1,12 @@
 ---
-title: CalloutAdExtension Data Object
+title: CalloutAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that specifies additional text about your business, products, or services to include in a text ad.
 ---
-# CalloutAdExtension Data Object
+# CalloutAdExtension Data Object - Campaign Management
 Defines an object that specifies additional text about your business, products, or services to include in a text ad.
 
 You can associate a callout ad extension with one or more campaigns and ad groups. Each campaign or ad group can be associated with between 2 and 20 callout ad extensions. If you associate one or fewer callout extensions with your campaign or ad group, no callout text will serve with your ad. A text ad may include between 2 to 4 callouts per impression. 

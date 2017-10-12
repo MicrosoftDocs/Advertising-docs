@@ -1,12 +1,12 @@
 ---
-title: ProductSearchQueryPerformanceReportFilter Data Object
+title: ProductSearchQueryPerformanceReportFilter Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the Bing Shopping product search query performance report data.
 ---
-# ProductSearchQueryPerformanceReportFilter Data Object
+# ProductSearchQueryPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the Bing Shopping product search query performance report data.
 
 ## Syntax

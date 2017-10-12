@@ -1,12 +1,12 @@
 ---
-title: UpdateBudgets Service Operation
+title: UpdateBudgets Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates the specified budgets in the account's shared budget library.
 ---
-# UpdateBudgets Service Operation
+# UpdateBudgets Service Operation - Campaign Management
 Updates the specified budgets in the account's shared budget library.
 
 ## <a name="request"></a>Request Elements

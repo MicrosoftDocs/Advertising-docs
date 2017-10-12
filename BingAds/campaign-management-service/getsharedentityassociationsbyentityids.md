@@ -1,12 +1,12 @@
 ---
-title: GetSharedEntityAssociationsByEntityIds Service Operation
+title: GetSharedEntityAssociationsByEntityIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets negative keyword list associations for the specified campaigns.
 ---
-# GetSharedEntityAssociationsByEntityIds Service Operation
+# GetSharedEntityAssociationsByEntityIds Service Operation - Campaign Management
 Gets negative keyword list associations for the specified campaigns.
 
 ## <a name="request"></a>Request Elements
