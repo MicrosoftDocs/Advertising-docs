@@ -1,10 +1,9 @@
 ---
 title: "Validating your Hotel Feed"
-ms.service: "bing-ads"
+ms.service: "hotel-ads-hotel-feed"
 ms.topic: "article"
 author: "swhite-msft"
-description: 
-ms.author: "swhite-msft"
+ms.author: "scottwhi"
 description: 
 ---
 # Validating your Hotel Feed

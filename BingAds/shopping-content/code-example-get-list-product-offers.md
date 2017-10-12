@@ -1,6 +1,6 @@
 ---
 title: "Getting a List of Product Offers Code Example"
-ms.service: "bing-ads"
+ms.service: "shopping-content-api"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"
@@ -181,8 +181,7 @@ namespace List
             Console.WriteLine("expiry date: " + product.ExpirationDate);
 
             Console.WriteLine("title: " + product.Title);
-            Console.WriteLine("description: " + product.Description);
-
+            Console.WriteLine("
             if (product.Price != null)
             {
                 Console.WriteLine("price: {0} {1}", 

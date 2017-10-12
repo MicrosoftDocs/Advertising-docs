@@ -1,6 +1,6 @@
 ---
 title: "Points of Sale Reference"
-ms.service: "bing-ads"
+ms.service: "hotel-ads-pos-feed"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"

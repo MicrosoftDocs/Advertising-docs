@@ -1,12 +1,12 @@
 ---
-title: "Get Started"
-ms.service: "bing-ads"
+title: "Get Started with the Content API"
+ms.service: "shopping-content-api"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"
 description: 
 ---
-# Get Started
+# Get Started with the Content API
 ## <a name="credentials"/> Do you have your Bing Ads credentials and developer token?
 To use the Content API, you must have a Bing Ads account and credentials. New users to Bing Ads must use a Microsoft account to access Bing Ads. Current users that haven't transitioned to a Microsoft account may use their Bing Ads user name. 
 

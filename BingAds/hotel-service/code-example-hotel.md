@@ -1,6 +1,6 @@
 ---
 title: "Hotel Code Example"
-ms.service: "bing-ads"
+ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"

@@ -1,6 +1,6 @@
 ---
 title: "Differences Between Google&#39;s and Bing&#39;s Transaction Message Usage"
-ms.service: "bing-ads"
+ms.service: "hotel-ads-transaction-message"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"

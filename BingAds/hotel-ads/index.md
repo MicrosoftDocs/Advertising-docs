@@ -1,6 +1,6 @@
 ---
 title: "Hotel Ads Overview"
-ms.service: "bing-ads"
+ms.service: "hotel-ads"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"

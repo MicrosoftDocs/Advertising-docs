@@ -1,12 +1,12 @@
 ---
-title: "Get Started"
-ms.service: "bing-ads"
+title: "Get Started with Transaction Messages"
+ms.service: "hotel-ads-transaction-message"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"
 description: 
 ---
-# Get Started
+# Get Started with Transaction Messages
 > [!NOTE]
 > Hotel Ads is now under pilot and available to pilot participants only. Please contact your account manager for details.
 

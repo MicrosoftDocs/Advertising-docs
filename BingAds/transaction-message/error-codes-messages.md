@@ -1,6 +1,6 @@
 ---
 title: "Error Codes and Messages"
-ms.service: "bing-ads"
+ms.service: "hotel-ads-transaction-message"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"

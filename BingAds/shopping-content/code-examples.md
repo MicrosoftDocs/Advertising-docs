@@ -1,6 +1,6 @@
 ---
 title: "Content API Code Examples"
-ms.service: "bing-ads"
+ms.service: "shopping-content-api"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"

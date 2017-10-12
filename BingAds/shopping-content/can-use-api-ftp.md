@@ -1,6 +1,6 @@
 ---
 title: "Can I Use the API and FTP?"
-ms.service: "bing-ads"
+ms.service: "shopping-content-api"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"

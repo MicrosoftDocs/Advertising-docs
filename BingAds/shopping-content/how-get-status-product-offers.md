@@ -1,6 +1,6 @@
 ---
 title: "How Do I Get the Status of Product Offers?"
-ms.service: "bing-ads"
+ms.service: "shopping-content-api"
 ms.topic: "article"
 author: "swhite-msft"
 ms.author: "scottwhi"
