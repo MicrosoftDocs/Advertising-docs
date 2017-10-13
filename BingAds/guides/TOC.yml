@@ -46,6 +46,8 @@
     href: ./code-example-ad-extensions.md
   - name: Bulk Ad Extensions
     href: ./code-example-bulk-ad-extensions.md
+  - name: Bulk Keywords and Ads
+    href: ./code-example-bulk-keywords-ads.md
   - name: Bulk Shopping Campaigns
     href: ./code-example-bulk-shopping-campaigns.md
   - name: Budget Opportunities

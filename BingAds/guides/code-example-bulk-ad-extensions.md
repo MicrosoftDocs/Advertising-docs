@@ -4,7 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Setup ad extensions in C#, Java, PHP, or Python.
+description: Setup ad extensions with the Bulk service in C#, Java, or Python.
 dev_langs:
   - csharp
   - java

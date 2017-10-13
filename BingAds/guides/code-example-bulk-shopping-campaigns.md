@@ -4,7 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Setup Product ads in C#, Java, or Python.
+description: Setup Product ads with the Bulk service in C#, Java, or Python.
 dev_langs:
   - csharp
   - java

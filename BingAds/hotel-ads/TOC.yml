@@ -23,10 +23,10 @@
     - name: OAuth
       href: ../hotel-service/code-example-oauth.md
       items:
-      - name: CodeGrantFlow
-        href: ../hotel-service/code-example-codegrantflow.md
       - name: Call CodeGrantFlow
         href: ../hotel-service/code-example-call-codegrantflow.md
+      - name: CodeGrantFlow
+        href: ../hotel-service/code-example-codegrantflow.md
 - name: Transaction Message
   href: ../transaction-message/transaction-message.md
   items:
