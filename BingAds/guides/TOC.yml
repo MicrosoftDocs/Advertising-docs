@@ -91,10 +91,13 @@
   items:
   - name: Authentication
     href: ./sdk-authentication.md
+    displayName: SDK
   - name: Bulk Service Manager
     href: ./sdk-bulk-service-manager.md
+    displayName: SDK
   - name: Reporting Service Manager
     href: ./sdk-reporting-service-manager.md
+    displayName: SDK
 - name: Technical Guides
   href: ./technical-guides.md
   items:
