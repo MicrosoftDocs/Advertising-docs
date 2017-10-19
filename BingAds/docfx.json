@@ -51,23 +51,29 @@
       },
       "ms.prod": 
       { 
-         "guides/**.yml": "bing-ads",
-         "shopping-content/**.yml": "bing-ads-shopping-content",
-         "hotel-ads/**.yml": "bing-ads-hotel-ads"
+        "guides/**.yml": "bing-ads",
+        "shopping-content/**.yml": "bing-ads",
+        "hotel-ads/**.yml": "bing-ads"
       }, 
       "ms.service": 
       { 
-        "ad-insight-service/**.yml": "bing-ads-ad-insight",
-        "customer-billing-service/**.yml": "bing-ads-customer-billing",
-        "bulk-service/**.yml": "bing-ads-bulk",
-        "campaign-management-service/**.yml": "bing-ads-campaign-management",
-        "customer-management-service/**.yml": "bing-ads-customer-management",
-        "reporting-service/**.yml": "bing-ads-reporting",
-        "hotel-api-service/**.yml": "hotel-ads"
+        "ad-insight-service/**.yml": "bing-ads-ad-insight-service",
+        "customer-billing-service/**.yml": "bing-ads-customer-billing-service",
+        "bulk-service/**.yml": "bing-ads-bulk-service",
+        "campaign-management-service/**.yml": "bing-ads-campaign-management-service",
+        "customer-management-service/**.yml": "bing-ads-customer-management-service",
+        "reporting-service/**.yml": "bing-ads-reporting-service",
+        "shopping-content/**.yml": "bing-ads-shopping-content",
+        "hotel-feed/**.yml": "hotel-ads-hotel-feed",
+        "hotel-api-service/**.yml": "hotel-ads-hotel-service",
+        "pos-feed/**.yml": "hotel-ads-pos-feed",
+        "transaction-message/**.yml": "hotel-ads-transaction-message"        
       }, 
       "ms.technology": 
       { 
-        "pos-feed/**.yml": "intune" 
+        "guides/**.yml": "bing-ads-api",
+        "shopping-content/**.yml": "bing-ads-shopping-content",
+        "hotel-ads/**.yml": "bing-ads-hotel-ads"
       }
     },
     "template": [],
