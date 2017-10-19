@@ -159,7 +159,7 @@ The following table defines limits for ad group properties.
 
 |Property|Limit|
 |------------|---------|
-|Name|The string can contain a maximum of 128 characters, and must be unique among all active ad groups within the campaign.|
+|Name|The string can contain a maximum of 256 characters, and must be unique among all active ad groups within the campaign.|
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
 ## <a name="ads"></a>Ads

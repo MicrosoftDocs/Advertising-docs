@@ -153,7 +153,7 @@ var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadPa
 ### <a name="adgroup"></a>Ad Group
 The name of the ad group.
 
-The name must be unique among all active ad groups within the campaign. The name can contain a maximum of 128 characters.
+The name must be unique among all active ad groups within the campaign. The name can contain a maximum of 256 characters.
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
