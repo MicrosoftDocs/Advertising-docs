@@ -67,7 +67,10 @@
         "hotel-feed/**.yml": "hotel-ads-hotel-feed",
         "hotel-api-service/**.yml": "hotel-ads-hotel-service",
         "pos-feed/**.yml": "hotel-ads-pos-feed",
-        "transaction-message/**.yml": "hotel-ads-transaction-message"        
+        "transaction-message/**.yml": "hotel-ads-transaction-message",
+        "hint-message/**.yml": "hotel-ads-hint-message",
+        "query-message/**.yml": "hotel-ads-query-message",
+        "query-control-message/**.yml": "hotel-ads-query-control-message"    
       }, 
       "ms.technology": 
       { 
