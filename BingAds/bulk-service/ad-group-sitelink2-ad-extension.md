@@ -1,6 +1,6 @@
 ---
 title: "Ad Group Sitelink2 Ad Extension"
-ms.service: "bing-ads"
+ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"

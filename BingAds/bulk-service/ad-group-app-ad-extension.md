@@ -1,6 +1,6 @@
 ---
 title: "Ad Group App Ad Extension"
-ms.service: "bing-ads"
+ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"

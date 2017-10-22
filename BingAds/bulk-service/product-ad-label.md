@@ -1,6 +1,6 @@
 ---
 title: "Product Ad Label"
-ms.service: "bing-ads"
+ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"

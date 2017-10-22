@@ -1,6 +1,6 @@
 ---
 title: "Bulk Service Reference"
-ms.service: "bing-ads-bulk-service"
+ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
