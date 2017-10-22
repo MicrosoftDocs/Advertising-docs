@@ -26,7 +26,7 @@ The Ad Insight service defines the following service operations.
 |[GetKeywordCategories](getkeywordcategories.md)|Gets the keyword categories to which the specified keywords belong.|1,000 *Keywords*<br />5 *MaxCategories*|
 |[GetKeywordDemographics](getkeyworddemographics.md)|Gets the age and gender of users who have searched for the specified keywords.|1,000 *Keywords*|
 |[GetKeywordIdeaCategories](getkeywordideacategories.md)|Gets the list of keyword idea categories.|Not applicable|
-|[GetKeywordIdeas](getkeywordideas.md)|Gets the list of keyword ideas.|Maximum 1 of each [SearchParameter](../ad-insight/searchparameter.md) type within *SearchParameters*|
+|[GetKeywordIdeas](getkeywordideas.md)|Gets the list of keyword ideas.|Maximum 1 of each [SearchParameter](searchparameter.md) type within *SearchParameters*|
 |[GetKeywordLocations](getkeywordlocations.md)|Gets the geographical locations of users who have searched for the specified keywords.|1,000 *Keywords*<br />10 *MaxLocations*|
 |[GetKeywordOpportunities](getkeywordopportunities.md)|Gets a list of keyword suggestions that are relevant to the specified ad group.|1 *AdGroupId*<br />1 *CampaignId*|
 |[GetKeywordTrafficEstimates](getkeywordtrafficestimates.md)|Provides traffic estimates for keywords e.g., average CPC, average position, clicks, CTR, impressions, and total cost.|N/A.|
