@@ -134,20 +134,22 @@ static GetEstimatedBidByKeywordIdsResponse getEstimatedBidByKeywordIds(
 static function GetEstimatedBidByKeywordIds(
 	$keywordIds,
 	$targetPositionForAds)
+{
 
-	$getEstimatedBidByKeywordIdsRequest = new GetEstimatedBidByKeywordIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetEstimatedBidByKeywordIdsRequest();
 
 	$request->KeywordIds = $keywordIds;
 	$request->TargetPositionForAds = $targetPositionForAds;
 
-	return $AdInsightProxy->GetService()->GetEstimatedBidByKeywordIds($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetEstimatedBidByKeywordIds($request);
 }
 ```
 ```python
 response=adinsight.GetEstimatedBidByKeywordIds(
-	KeywordIds=KeywordIdsHere,
-	TargetPositionForAds=TargetPositionForAdsHere
-)
+	KeywordIds=KeywordIds,
+	TargetPositionForAds=TargetPositionForAds)
 ```
 
 ## Requirements

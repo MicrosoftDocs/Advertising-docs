@@ -134,18 +134,20 @@ static GetBudgetsByIdsResponse getBudgetsByIds(
 ```php
 static function GetBudgetsByIds(
 	$budgetIds)
+{
 
-	$getBudgetsByIdsRequest = new GetBudgetsByIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetBudgetsByIdsRequest();
 
 	$request->BudgetIds = $budgetIds;
 
-	return $CampaignManagementProxy->GetService()->GetBudgetsByIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetBudgetsByIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetBudgetsByIds(
-	BudgetIds=BudgetIdsHere
-)
+	BudgetIds=BudgetIds)
 ```
 
 ## Requirements

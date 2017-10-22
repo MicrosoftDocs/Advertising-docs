@@ -134,20 +134,22 @@ static SetLabelAssociationsResponse setLabelAssociations(
 static function SetLabelAssociations(
 	$entityType,
 	$labelAssociations)
+{
 
-	$setLabelAssociationsRequest = new SetLabelAssociationsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new SetLabelAssociationsRequest();
 
 	$request->EntityType = $entityType;
 	$request->LabelAssociations = $labelAssociations;
 
-	return $CampaignManagementProxy->GetService()->SetLabelAssociations($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->SetLabelAssociations($request);
 }
 ```
 ```python
 response=campaignmanagement.SetLabelAssociations(
-	EntityType=EntityTypeHere,
-	LabelAssociations=LabelAssociationsHere
-)
+	EntityType=EntityType,
+	LabelAssociations=LabelAssociations)
 ```
 
 ## Requirements

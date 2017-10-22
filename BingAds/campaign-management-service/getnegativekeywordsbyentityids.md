@@ -155,22 +155,24 @@ static function GetNegativeKeywordsByEntityIds(
 	$entityIds,
 	$entityType,
 	$parentEntityId)
+{
 
-	$getNegativeKeywordsByEntityIdsRequest = new GetNegativeKeywordsByEntityIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetNegativeKeywordsByEntityIdsRequest();
 
 	$request->EntityIds = $entityIds;
 	$request->EntityType = $entityType;
 	$request->ParentEntityId = $parentEntityId;
 
-	return $CampaignManagementProxy->GetService()->GetNegativeKeywordsByEntityIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetNegativeKeywordsByEntityIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetNegativeKeywordsByEntityIds(
-	EntityIds=EntityIdsHere,
-	EntityType=EntityTypeHere,
-	ParentEntityId=ParentEntityIdHere
-)
+	EntityIds=EntityIds,
+	EntityType=EntityType,
+	ParentEntityId=ParentEntityId)
 ```
 
 ## Requirements

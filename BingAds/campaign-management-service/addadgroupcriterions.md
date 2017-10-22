@@ -249,20 +249,22 @@ static AddAdGroupCriterionsResponse addAdGroupCriterions(
 static function AddAdGroupCriterions(
 	$adGroupCriterions,
 	$criterionType)
+{
 
-	$addAdGroupCriterionsRequest = new AddAdGroupCriterionsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddAdGroupCriterionsRequest();
 
 	$request->AdGroupCriterions = $adGroupCriterions;
 	$request->CriterionType = $criterionType;
 
-	return $CampaignManagementProxy->GetService()->AddAdGroupCriterions($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddAdGroupCriterions($request);
 }
 ```
 ```python
 response=campaignmanagement.AddAdGroupCriterions(
-	AdGroupCriterions=AdGroupCriterionsHere,
-	CriterionType=CriterionTypeHere
-)
+	AdGroupCriterions=AdGroupCriterions,
+	CriterionType=CriterionType)
 ```
 
 ## Requirements

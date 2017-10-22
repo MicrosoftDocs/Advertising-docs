@@ -131,20 +131,22 @@ static DeleteAdGroupsResponse deleteAdGroups(
 static function DeleteAdGroups(
 	$campaignId,
 	$adGroupIds)
+{
 
-	$deleteAdGroupsRequest = new DeleteAdGroupsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteAdGroupsRequest();
 
 	$request->CampaignId = $campaignId;
 	$request->AdGroupIds = $adGroupIds;
 
-	return $CampaignManagementProxy->GetService()->DeleteAdGroups($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteAdGroups($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteAdGroups(
-	CampaignId=CampaignIdHere,
-	AdGroupIds=AdGroupIdsHere
-)
+	CampaignId=CampaignId,
+	AdGroupIds=AdGroupIds)
 ```
 
 ## Requirements

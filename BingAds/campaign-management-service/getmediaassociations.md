@@ -144,20 +144,22 @@ static GetMediaAssociationsResponse getMediaAssociations(
 static function GetMediaAssociations(
 	$mediaEnabledEntities,
 	$mediaIds)
+{
 
-	$getMediaAssociationsRequest = new GetMediaAssociationsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetMediaAssociationsRequest();
 
 	$request->MediaEnabledEntities = $mediaEnabledEntities;
 	$request->MediaIds = $mediaIds;
 
-	return $CampaignManagementProxy->GetService()->GetMediaAssociations($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetMediaAssociations($request);
 }
 ```
 ```python
 response=campaignmanagement.GetMediaAssociations(
-	MediaEnabledEntities=MediaEnabledEntitiesHere,
-	MediaIds=MediaIdsHere
-)
+	MediaEnabledEntities=MediaEnabledEntities,
+	MediaIds=MediaIds)
 ```
 
 ## Requirements

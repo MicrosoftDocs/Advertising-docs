@@ -214,20 +214,22 @@ static AddAdGroupsResponse addAdGroups(
 static function AddAdGroups(
 	$campaignId,
 	$adGroups)
+{
 
-	$addAdGroupsRequest = new AddAdGroupsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddAdGroupsRequest();
 
 	$request->CampaignId = $campaignId;
 	$request->AdGroups = $adGroups;
 
-	return $CampaignManagementProxy->GetService()->AddAdGroups($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddAdGroups($request);
 }
 ```
 ```python
 response=campaignmanagement.AddAdGroups(
-	CampaignId=CampaignIdHere,
-	AdGroups=AdGroupsHere
-)
+	CampaignId=CampaignId,
+	AdGroups=AdGroups)
 ```
 
 ## Requirements

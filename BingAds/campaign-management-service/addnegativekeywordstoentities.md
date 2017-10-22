@@ -162,18 +162,20 @@ static AddNegativeKeywordsToEntitiesResponse addNegativeKeywordsToEntities(
 ```php
 static function AddNegativeKeywordsToEntities(
 	$entityNegativeKeywords)
+{
 
-	$addNegativeKeywordsToEntitiesRequest = new AddNegativeKeywordsToEntitiesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddNegativeKeywordsToEntitiesRequest();
 
 	$request->EntityNegativeKeywords = $entityNegativeKeywords;
 
-	return $CampaignManagementProxy->GetService()->AddNegativeKeywordsToEntities($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddNegativeKeywordsToEntities($request);
 }
 ```
 ```python
 response=campaignmanagement.AddNegativeKeywordsToEntities(
-	EntityNegativeKeywords=EntityNegativeKeywordsHere
-)
+	EntityNegativeKeywords=EntityNegativeKeywords)
 ```
 
 ## Requirements

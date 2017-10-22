@@ -129,18 +129,20 @@ static DeleteSharedEntityAssociationsResponse deleteSharedEntityAssociations(
 ```php
 static function DeleteSharedEntityAssociations(
 	$associations)
+{
 
-	$deleteSharedEntityAssociationsRequest = new DeleteSharedEntityAssociationsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteSharedEntityAssociationsRequest();
 
 	$request->Associations = $associations;
 
-	return $CampaignManagementProxy->GetService()->DeleteSharedEntityAssociations($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteSharedEntityAssociations($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteSharedEntityAssociations(
-	Associations=AssociationsHere
-)
+	Associations=Associations)
 ```
 
 ## Requirements

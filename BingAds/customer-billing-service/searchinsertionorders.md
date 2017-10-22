@@ -145,22 +145,24 @@ static function SearchInsertionOrders(
 	$predicates,
 	$ordering,
 	$pageInfo)
+{
 
-	$searchInsertionOrdersRequest = new SearchInsertionOrdersRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerBillingProxy'];
+
+	$request = new SearchInsertionOrdersRequest();
 
 	$request->Predicates = $predicates;
 	$request->Ordering = $ordering;
 	$request->PageInfo = $pageInfo;
 
-	return $CustomerBillingProxy->GetService()->SearchInsertionOrders($request);
+	return $GLOBALS['CustomerBillingProxy']->GetService()->SearchInsertionOrders($request);
 }
 ```
 ```python
 response=customerbilling.SearchInsertionOrders(
-	Predicates=PredicatesHere,
-	Ordering=OrderingHere,
-	PageInfo=PageInfoHere
-)
+	Predicates=Predicates,
+	Ordering=Ordering,
+	PageInfo=PageInfo)
 ```
 
 ## Requirements

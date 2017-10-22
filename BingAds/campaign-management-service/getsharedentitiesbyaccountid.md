@@ -115,18 +115,20 @@ static GetSharedEntitiesByAccountIdResponse getSharedEntitiesByAccountId(
 ```php
 static function GetSharedEntitiesByAccountId(
 	$sharedEntityType)
+{
 
-	$getSharedEntitiesByAccountIdRequest = new GetSharedEntitiesByAccountIdRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetSharedEntitiesByAccountIdRequest();
 
 	$request->SharedEntityType = $sharedEntityType;
 
-	return $CampaignManagementProxy->GetService()->GetSharedEntitiesByAccountId($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetSharedEntitiesByAccountId($request);
 }
 ```
 ```python
 response=campaignmanagement.GetSharedEntitiesByAccountId(
-	SharedEntityType=SharedEntityTypeHere
-)
+	SharedEntityType=SharedEntityType)
 ```
 
 ## Requirements

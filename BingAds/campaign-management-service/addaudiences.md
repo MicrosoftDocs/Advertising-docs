@@ -226,18 +226,20 @@ static AddAudiencesResponse addAudiences(
 ```php
 static function AddAudiences(
 	$audiences)
+{
 
-	$addAudiencesRequest = new AddAudiencesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddAudiencesRequest();
 
 	$request->Audiences = $audiences;
 
-	return $CampaignManagementProxy->GetService()->AddAudiences($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddAudiences($request);
 }
 ```
 ```python
 response=campaignmanagement.AddAudiences(
-	Audiences=AudiencesHere
-)
+	Audiences=Audiences)
 ```
 
 ## Requirements

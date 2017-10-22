@@ -118,18 +118,20 @@ static SendUserInvitationResponse sendUserInvitation(
 ```php
 static function SendUserInvitation(
 	$userInvitation)
+{
 
-	$sendUserInvitationRequest = new SendUserInvitationRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new SendUserInvitationRequest();
 
 	$request->UserInvitation = $userInvitation;
 
-	return $CustomerManagementProxy->GetService()->SendUserInvitation($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->SendUserInvitation($request);
 }
 ```
 ```python
 response=customermanagement.SendUserInvitation(
-	UserInvitation=UserInvitationHere
-)
+	UserInvitation=UserInvitation)
 ```
 
 ## Requirements

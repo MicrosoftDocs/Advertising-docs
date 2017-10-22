@@ -157,22 +157,24 @@ static function GetAdExtensionsEditorialReasons(
 	$accountId,
 	$adExtensionIdToEntityIdAssociations,
 	$associationType)
+{
 
-	$getAdExtensionsEditorialReasonsRequest = new GetAdExtensionsEditorialReasonsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetAdExtensionsEditorialReasonsRequest();
 
 	$request->AccountId = $accountId;
 	$request->AdExtensionIdToEntityIdAssociations = $adExtensionIdToEntityIdAssociations;
 	$request->AssociationType = $associationType;
 
-	return $CampaignManagementProxy->GetService()->GetAdExtensionsEditorialReasons($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAdExtensionsEditorialReasons($request);
 }
 ```
 ```python
 response=campaignmanagement.GetAdExtensionsEditorialReasons(
-	AccountId=AccountIdHere,
-	AdExtensionIdToEntityIdAssociations=AdExtensionIdToEntityIdAssociationsHere,
-	AssociationType=AssociationTypeHere
-)
+	AccountId=AccountId,
+	AdExtensionIdToEntityIdAssociations=AdExtensionIdToEntityIdAssociations,
+	AssociationType=AssociationType)
 ```
 
 ## Requirements

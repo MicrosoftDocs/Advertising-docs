@@ -129,18 +129,20 @@ static UpdateLabelsResponse updateLabels(
 ```php
 static function UpdateLabels(
 	$labels)
+{
 
-	$updateLabelsRequest = new UpdateLabelsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new UpdateLabelsRequest();
 
 	$request->Labels = $labels;
 
-	return $CampaignManagementProxy->GetService()->UpdateLabels($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->UpdateLabels($request);
 }
 ```
 ```python
 response=campaignmanagement.UpdateLabels(
-	Labels=LabelsHere
-)
+	Labels=Labels)
 ```
 
 ## Requirements

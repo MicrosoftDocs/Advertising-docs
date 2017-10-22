@@ -141,22 +141,24 @@ static function DeleteAdExtensionsAssociations(
 	$accountId,
 	$adExtensionIdToEntityIdAssociations,
 	$associationType)
+{
 
-	$deleteAdExtensionsAssociationsRequest = new DeleteAdExtensionsAssociationsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteAdExtensionsAssociationsRequest();
 
 	$request->AccountId = $accountId;
 	$request->AdExtensionIdToEntityIdAssociations = $adExtensionIdToEntityIdAssociations;
 	$request->AssociationType = $associationType;
 
-	return $CampaignManagementProxy->GetService()->DeleteAdExtensionsAssociations($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteAdExtensionsAssociations($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteAdExtensionsAssociations(
-	AccountId=AccountIdHere,
-	AdExtensionIdToEntityIdAssociations=AdExtensionIdToEntityIdAssociationsHere,
-	AssociationType=AssociationTypeHere
-)
+	AccountId=AccountId,
+	AdExtensionIdToEntityIdAssociations=AdExtensionIdToEntityIdAssociations,
+	AssociationType=AssociationType)
 ```
 
 ## Requirements

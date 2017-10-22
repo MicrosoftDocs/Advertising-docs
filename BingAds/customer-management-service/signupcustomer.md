@@ -212,24 +212,26 @@ static function SignupCustomer(
 	$account,
 	$parentCustomerId,
 	$applicationScope)
+{
 
-	$signupCustomerRequest = new SignupCustomerRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new SignupCustomerRequest();
 
 	$request->Customer = $customer;
 	$request->Account = $account;
 	$request->ParentCustomerId = $parentCustomerId;
 	$request->ApplicationScope = $applicationScope;
 
-	return $CustomerManagementProxy->GetService()->SignupCustomer($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->SignupCustomer($request);
 }
 ```
 ```python
 response=customermanagement.SignupCustomer(
-	Customer=CustomerHere,
-	Account=AccountHere,
-	ParentCustomerId=ParentCustomerIdHere,
-	ApplicationScope=ApplicationScopeHere
-)
+	Customer=Customer,
+	Account=Account,
+	ParentCustomerId=ParentCustomerId,
+	ApplicationScope=ApplicationScope)
 ```
 
 ## Requirements

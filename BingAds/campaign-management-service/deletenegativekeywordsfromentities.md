@@ -154,18 +154,20 @@ static DeleteNegativeKeywordsFromEntitiesResponse deleteNegativeKeywordsFromEnti
 ```php
 static function DeleteNegativeKeywordsFromEntities(
 	$entityNegativeKeywords)
+{
 
-	$deleteNegativeKeywordsFromEntitiesRequest = new DeleteNegativeKeywordsFromEntitiesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteNegativeKeywordsFromEntitiesRequest();
 
 	$request->EntityNegativeKeywords = $entityNegativeKeywords;
 
-	return $CampaignManagementProxy->GetService()->DeleteNegativeKeywordsFromEntities($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteNegativeKeywordsFromEntities($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteNegativeKeywordsFromEntities(
-	EntityNegativeKeywords=EntityNegativeKeywordsHere
-)
+	EntityNegativeKeywords=EntityNegativeKeywords)
 ```
 
 ## Requirements

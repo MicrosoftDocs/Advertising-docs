@@ -117,20 +117,22 @@ static AddMediaResponse addMedia(
 static function AddMedia(
 	$accountId,
 	$media)
+{
 
-	$addMediaRequest = new AddMediaRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddMediaRequest();
 
 	$request->AccountId = $accountId;
 	$request->Media = $media;
 
-	return $CampaignManagementProxy->GetService()->AddMedia($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddMedia($request);
 }
 ```
 ```python
 response=campaignmanagement.AddMedia(
-	AccountId=AccountIdHere,
-	Media=MediaHere
-)
+	AccountId=AccountId,
+	Media=Media)
 ```
 
 ## Requirements

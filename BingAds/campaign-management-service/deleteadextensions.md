@@ -131,20 +131,22 @@ static DeleteAdExtensionsResponse deleteAdExtensions(
 static function DeleteAdExtensions(
 	$accountId,
 	$adExtensionIds)
+{
 
-	$deleteAdExtensionsRequest = new DeleteAdExtensionsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteAdExtensionsRequest();
 
 	$request->AccountId = $accountId;
 	$request->AdExtensionIds = $adExtensionIds;
 
-	return $CampaignManagementProxy->GetService()->DeleteAdExtensions($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteAdExtensions($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteAdExtensions(
-	AccountId=AccountIdHere,
-	AdExtensionIds=AdExtensionIdsHere
-)
+	AccountId=AccountId,
+	AdExtensionIds=AdExtensionIds)
 ```
 
 ## Requirements

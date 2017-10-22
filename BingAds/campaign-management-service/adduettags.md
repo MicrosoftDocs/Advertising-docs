@@ -149,18 +149,20 @@ static AddUetTagsResponse addUetTags(
 ```php
 static function AddUetTags(
 	$uetTags)
+{
 
-	$addUetTagsRequest = new AddUetTagsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddUetTagsRequest();
 
 	$request->UetTags = $uetTags;
 
-	return $CampaignManagementProxy->GetService()->AddUetTags($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddUetTags($request);
 }
 ```
 ```python
 response=campaignmanagement.AddUetTags(
-	UetTags=UetTagsHere
-)
+	UetTags=UetTags)
 ```
 
 ## Requirements

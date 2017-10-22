@@ -176,8 +176,11 @@ static function SearchCustomers(
 	$dateRange,
 	$ordering,
 	$pageInfo)
+{
 
-	$searchCustomersRequest = new SearchCustomersRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new SearchCustomersRequest();
 
 	$request->ApplicationScope = $applicationScope;
 	$request->Predicates = $predicates;
@@ -185,17 +188,16 @@ static function SearchCustomers(
 	$request->Ordering = $ordering;
 	$request->PageInfo = $pageInfo;
 
-	return $CustomerManagementProxy->GetService()->SearchCustomers($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->SearchCustomers($request);
 }
 ```
 ```python
 response=customermanagement.SearchCustomers(
-	ApplicationScope=ApplicationScopeHere,
-	Predicates=PredicatesHere,
-	DateRange=DateRangeHere,
-	Ordering=OrderingHere,
-	PageInfo=PageInfoHere
-)
+	ApplicationScope=ApplicationScope,
+	Predicates=Predicates,
+	DateRange=DateRange,
+	Ordering=Ordering,
+	PageInfo=PageInfo)
 ```
 
 ## Requirements

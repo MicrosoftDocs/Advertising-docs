@@ -133,24 +133,26 @@ static function GetKeywordCategories(
 	$language,
 	$publisherCountry,
 	$maxCategories)
+{
 
-	$getKeywordCategoriesRequest = new GetKeywordCategoriesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetKeywordCategoriesRequest();
 
 	$request->Keywords = $keywords;
 	$request->Language = $language;
 	$request->PublisherCountry = $publisherCountry;
 	$request->MaxCategories = $maxCategories;
 
-	return $AdInsightProxy->GetService()->GetKeywordCategories($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetKeywordCategories($request);
 }
 ```
 ```python
 response=adinsight.GetKeywordCategories(
-	Keywords=KeywordsHere,
-	Language=LanguageHere,
-	PublisherCountry=PublisherCountryHere,
-	MaxCategories=MaxCategoriesHere
-)
+	Keywords=Keywords,
+	Language=Language,
+	PublisherCountry=PublisherCountry,
+	MaxCategories=MaxCategories)
 ```
 
 ## Requirements

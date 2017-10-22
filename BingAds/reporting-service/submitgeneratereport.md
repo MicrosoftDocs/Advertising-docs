@@ -1460,18 +1460,20 @@ static SubmitGenerateReportResponse submitGenerateReport(
 ```php
 static function SubmitGenerateReport(
 	$reportRequest)
+{
 
-	$submitGenerateReportRequest = new SubmitGenerateReportRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['ReportingProxy'];
+
+	$request = new SubmitGenerateReportRequest();
 
 	$request->ReportRequest = $reportRequest;
 
-	return $ReportingProxy->GetService()->SubmitGenerateReport($request);
+	return $GLOBALS['ReportingProxy']->GetService()->SubmitGenerateReport($request);
 }
 ```
 ```python
 response=reporting.SubmitGenerateReport(
-	ReportRequest=ReportRequestHere
-)
+	ReportRequest=ReportRequest)
 ```
 
 ## Requirements

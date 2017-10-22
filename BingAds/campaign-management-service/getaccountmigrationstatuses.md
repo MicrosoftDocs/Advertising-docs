@@ -120,20 +120,22 @@ static GetAccountMigrationStatusesResponse getAccountMigrationStatuses(
 static function GetAccountMigrationStatuses(
 	$accountIds,
 	$migrationType)
+{
 
-	$getAccountMigrationStatusesRequest = new GetAccountMigrationStatusesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetAccountMigrationStatusesRequest();
 
 	$request->AccountIds = $accountIds;
 	$request->MigrationType = $migrationType;
 
-	return $CampaignManagementProxy->GetService()->GetAccountMigrationStatuses($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAccountMigrationStatuses($request);
 }
 ```
 ```python
 response=campaignmanagement.GetAccountMigrationStatuses(
-	AccountIds=AccountIdsHere,
-	MigrationType=MigrationTypeHere
-)
+	AccountIds=AccountIds,
+	MigrationType=MigrationType)
 ```
 
 ## Requirements

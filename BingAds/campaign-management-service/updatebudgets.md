@@ -130,18 +130,20 @@ static UpdateBudgetsResponse updateBudgets(
 ```php
 static function UpdateBudgets(
 	$budgets)
+{
 
-	$updateBudgetsRequest = new UpdateBudgetsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new UpdateBudgetsRequest();
 
 	$request->Budgets = $budgets;
 
-	return $CampaignManagementProxy->GetService()->UpdateBudgets($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->UpdateBudgets($request);
 }
 ```
 ```python
 response=campaignmanagement.UpdateBudgets(
-	Budgets=BudgetsHere
-)
+	Budgets=Budgets)
 ```
 
 ## Requirements

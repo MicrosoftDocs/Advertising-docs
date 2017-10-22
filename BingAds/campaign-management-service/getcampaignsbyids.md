@@ -204,22 +204,24 @@ static function GetCampaignsByIds(
 	$accountId,
 	$campaignIds,
 	$campaignType)
+{
 
-	$getCampaignsByIdsRequest = new GetCampaignsByIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetCampaignsByIdsRequest();
 
 	$request->AccountId = $accountId;
 	$request->CampaignIds = $campaignIds;
 	$request->CampaignType = $campaignType;
 
-	return $CampaignManagementProxy->GetService()->GetCampaignsByIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetCampaignsByIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetCampaignsByIds(
-	AccountId=AccountIdHere,
-	CampaignIds=CampaignIdsHere,
-	CampaignType=CampaignTypeHere
-)
+	AccountId=AccountId,
+	CampaignIds=CampaignIds,
+	CampaignType=CampaignType)
 ```
 
 ## Requirements

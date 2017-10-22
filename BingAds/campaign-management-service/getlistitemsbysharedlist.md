@@ -120,18 +120,20 @@ static GetListItemsBySharedListResponse getListItemsBySharedList(
 ```php
 static function GetListItemsBySharedList(
 	$sharedList)
+{
 
-	$getListItemsBySharedListRequest = new GetListItemsBySharedListRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetListItemsBySharedListRequest();
 
 	$request->SharedList = $sharedList;
 
-	return $CampaignManagementProxy->GetService()->GetListItemsBySharedList($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetListItemsBySharedList($request);
 }
 ```
 ```python
 response=campaignmanagement.GetListItemsBySharedList(
-	SharedList=SharedListHere
-)
+	SharedList=SharedList)
 ```
 
 ## Requirements

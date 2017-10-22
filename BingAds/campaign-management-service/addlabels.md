@@ -133,18 +133,20 @@ static AddLabelsResponse addLabels(
 ```php
 static function AddLabels(
 	$labels)
+{
 
-	$addLabelsRequest = new AddLabelsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddLabelsRequest();
 
 	$request->Labels = $labels;
 
-	return $CampaignManagementProxy->GetService()->AddLabels($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddLabels($request);
 }
 ```
 ```python
 response=campaignmanagement.AddLabels(
-	Labels=LabelsHere
-)
+	Labels=Labels)
 ```
 
 ## Requirements

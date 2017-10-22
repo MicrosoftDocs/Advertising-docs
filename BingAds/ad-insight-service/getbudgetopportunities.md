@@ -120,18 +120,20 @@ static GetBudgetOpportunitiesResponse getBudgetOpportunities(
 ```php
 static function GetBudgetOpportunities(
 	$campaignId)
+{
 
-	$getBudgetOpportunitiesRequest = new GetBudgetOpportunitiesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetBudgetOpportunitiesRequest();
 
 	$request->CampaignId = $campaignId;
 
-	return $AdInsightProxy->GetService()->GetBudgetOpportunities($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetBudgetOpportunities($request);
 }
 ```
 ```python
 response=adinsight.GetBudgetOpportunities(
-	CampaignId=CampaignIdHere
-)
+	CampaignId=CampaignId)
 ```
 
 ## Requirements

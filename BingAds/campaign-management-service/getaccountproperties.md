@@ -131,18 +131,20 @@ static GetAccountPropertiesResponse getAccountProperties(
 ```php
 static function GetAccountProperties(
 	$accountPropertyNames)
+{
 
-	$getAccountPropertiesRequest = new GetAccountPropertiesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetAccountPropertiesRequest();
 
 	$request->AccountPropertyNames = $accountPropertyNames;
 
-	return $CampaignManagementProxy->GetService()->GetAccountProperties($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAccountProperties($request);
 }
 ```
 ```python
 response=campaignmanagement.GetAccountProperties(
-	AccountPropertyNames=AccountPropertyNamesHere
-)
+	AccountPropertyNames=AccountPropertyNames)
 ```
 
 ## Requirements

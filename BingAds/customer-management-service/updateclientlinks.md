@@ -151,18 +151,20 @@ static UpdateClientLinksResponse updateClientLinks(
 ```php
 static function UpdateClientLinks(
 	$clientLinks)
+{
 
-	$updateClientLinksRequest = new UpdateClientLinksRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new UpdateClientLinksRequest();
 
 	$request->ClientLinks = $clientLinks;
 
-	return $CustomerManagementProxy->GetService()->UpdateClientLinks($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->UpdateClientLinks($request);
 }
 ```
 ```python
 response=customermanagement.UpdateClientLinks(
-	ClientLinks=ClientLinksHere
-)
+	ClientLinks=ClientLinks)
 ```
 
 ## Requirements

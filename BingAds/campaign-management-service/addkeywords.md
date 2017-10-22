@@ -195,20 +195,22 @@ static AddKeywordsResponse addKeywords(
 static function AddKeywords(
 	$adGroupId,
 	$keywords)
+{
 
-	$addKeywordsRequest = new AddKeywordsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddKeywordsRequest();
 
 	$request->AdGroupId = $adGroupId;
 	$request->Keywords = $keywords;
 
-	return $CampaignManagementProxy->GetService()->AddKeywords($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddKeywords($request);
 }
 ```
 ```python
 response=campaignmanagement.AddKeywords(
-	AdGroupId=AdGroupIdHere,
-	Keywords=KeywordsHere
-)
+	AdGroupId=AdGroupId,
+	Keywords=Keywords)
 ```
 
 ## Requirements

@@ -1,6 +1,6 @@
 ---
 title: "Ad Insight Service Reference"
-ms.service: "bing-ads"
+ms.service: "bing-ads-ad-insight-service"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"

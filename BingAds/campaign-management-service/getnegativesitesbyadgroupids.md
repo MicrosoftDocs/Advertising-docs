@@ -140,20 +140,22 @@ static GetNegativeSitesByAdGroupIdsResponse getNegativeSitesByAdGroupIds(
 static function GetNegativeSitesByAdGroupIds(
 	$campaignId,
 	$adGroupIds)
+{
 
-	$getNegativeSitesByAdGroupIdsRequest = new GetNegativeSitesByAdGroupIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetNegativeSitesByAdGroupIdsRequest();
 
 	$request->CampaignId = $campaignId;
 	$request->AdGroupIds = $adGroupIds;
 
-	return $CampaignManagementProxy->GetService()->GetNegativeSitesByAdGroupIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetNegativeSitesByAdGroupIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetNegativeSitesByAdGroupIds(
-	CampaignId=CampaignIdHere,
-	AdGroupIds=AdGroupIdsHere
-)
+	CampaignId=CampaignId,
+	AdGroupIds=AdGroupIds)
 ```
 
 ## Requirements

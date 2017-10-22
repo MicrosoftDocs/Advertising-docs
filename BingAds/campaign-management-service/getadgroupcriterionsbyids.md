@@ -213,22 +213,24 @@ static function GetAdGroupCriterionsByIds(
 	$adGroupCriterionIds,
 	$adGroupId,
 	$criterionType)
+{
 
-	$getAdGroupCriterionsByIdsRequest = new GetAdGroupCriterionsByIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetAdGroupCriterionsByIdsRequest();
 
 	$request->AdGroupCriterionIds = $adGroupCriterionIds;
 	$request->AdGroupId = $adGroupId;
 	$request->CriterionType = $criterionType;
 
-	return $CampaignManagementProxy->GetService()->GetAdGroupCriterionsByIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAdGroupCriterionsByIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetAdGroupCriterionsByIds(
-	AdGroupCriterionIds=AdGroupCriterionIdsHere,
-	AdGroupId=AdGroupIdHere,
-	CriterionType=CriterionTypeHere
-)
+	AdGroupCriterionIds=AdGroupCriterionIds,
+	AdGroupId=AdGroupId,
+	CriterionType=CriterionType)
 ```
 
 ## Requirements

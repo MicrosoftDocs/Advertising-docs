@@ -153,20 +153,22 @@ static AddListItemsToSharedListResponse addListItemsToSharedList(
 static function AddListItemsToSharedList(
 	$listItems,
 	$sharedList)
+{
 
-	$addListItemsToSharedListRequest = new AddListItemsToSharedListRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddListItemsToSharedListRequest();
 
 	$request->ListItems = $listItems;
 	$request->SharedList = $sharedList;
 
-	return $CampaignManagementProxy->GetService()->AddListItemsToSharedList($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddListItemsToSharedList($request);
 }
 ```
 ```python
 response=campaignmanagement.AddListItemsToSharedList(
-	ListItems=ListItemsHere,
-	SharedList=SharedListHere
-)
+	ListItems=ListItems,
+	SharedList=SharedList)
 ```
 
 ## Requirements

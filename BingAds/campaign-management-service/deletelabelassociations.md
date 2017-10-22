@@ -134,20 +134,22 @@ static DeleteLabelAssociationsResponse deleteLabelAssociations(
 static function DeleteLabelAssociations(
 	$entityType,
 	$labelAssociations)
+{
 
-	$deleteLabelAssociationsRequest = new DeleteLabelAssociationsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteLabelAssociationsRequest();
 
 	$request->EntityType = $entityType;
 	$request->LabelAssociations = $labelAssociations;
 
-	return $CampaignManagementProxy->GetService()->DeleteLabelAssociations($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteLabelAssociations($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteLabelAssociations(
-	EntityType=EntityTypeHere,
-	LabelAssociations=LabelAssociationsHere
-)
+	EntityType=EntityType,
+	LabelAssociations=LabelAssociations)
 ```
 
 ## Requirements

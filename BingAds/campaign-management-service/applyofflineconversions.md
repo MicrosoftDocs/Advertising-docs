@@ -140,18 +140,20 @@ static ApplyOfflineConversionsResponse applyOfflineConversions(
 ```php
 static function ApplyOfflineConversions(
 	$offlineConversions)
+{
 
-	$applyOfflineConversionsRequest = new ApplyOfflineConversionsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new ApplyOfflineConversionsRequest();
 
 	$request->OfflineConversions = $offlineConversions;
 
-	return $CampaignManagementProxy->GetService()->ApplyOfflineConversions($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->ApplyOfflineConversions($request);
 }
 ```
 ```python
 response=campaignmanagement.ApplyOfflineConversions(
-	OfflineConversions=OfflineConversionsHere
-)
+	OfflineConversions=OfflineConversions)
 ```
 
 ## Requirements

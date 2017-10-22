@@ -115,18 +115,20 @@ static UpdateInsertionOrderResponse updateInsertionOrder(
 ```php
 static function UpdateInsertionOrder(
 	$insertionOrder)
+{
 
-	$updateInsertionOrderRequest = new UpdateInsertionOrderRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerBillingProxy'];
+
+	$request = new UpdateInsertionOrderRequest();
 
 	$request->InsertionOrder = $insertionOrder;
 
-	return $CustomerBillingProxy->GetService()->UpdateInsertionOrder($request);
+	return $GLOBALS['CustomerBillingProxy']->GetService()->UpdateInsertionOrder($request);
 }
 ```
 ```python
 response=customerbilling.UpdateInsertionOrder(
-	InsertionOrder=InsertionOrderHere
-)
+	InsertionOrder=InsertionOrder)
 ```
 
 ## Requirements

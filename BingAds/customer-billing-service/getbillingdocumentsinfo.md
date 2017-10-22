@@ -127,22 +127,24 @@ static function GetBillingDocumentsInfo(
 	$accountIds,
 	$startDate,
 	$endDate)
+{
 
-	$getBillingDocumentsInfoRequest = new GetBillingDocumentsInfoRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerBillingProxy'];
+
+	$request = new GetBillingDocumentsInfoRequest();
 
 	$request->AccountIds = $accountIds;
 	$request->StartDate = $startDate;
 	$request->EndDate = $endDate;
 
-	return $CustomerBillingProxy->GetService()->GetBillingDocumentsInfo($request);
+	return $GLOBALS['CustomerBillingProxy']->GetService()->GetBillingDocumentsInfo($request);
 }
 ```
 ```python
 response=customerbilling.GetBillingDocumentsInfo(
-	AccountIds=AccountIdsHere,
-	StartDate=StartDateHere,
-	EndDate=EndDateHere
-)
+	AccountIds=AccountIds,
+	StartDate=StartDate,
+	EndDate=EndDate)
 ```
 
 ## Requirements

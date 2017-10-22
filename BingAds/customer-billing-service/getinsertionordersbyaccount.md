@@ -129,20 +129,22 @@ static GetInsertionOrdersByAccountResponse getInsertionOrdersByAccount(
 static function GetInsertionOrdersByAccount(
 	$accountId,
 	$insertionOrderIds)
+{
 
-	$getInsertionOrdersByAccountRequest = new GetInsertionOrdersByAccountRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerBillingProxy'];
+
+	$request = new GetInsertionOrdersByAccountRequest();
 
 	$request->AccountId = $accountId;
 	$request->InsertionOrderIds = $insertionOrderIds;
 
-	return $CustomerBillingProxy->GetService()->GetInsertionOrdersByAccount($request);
+	return $GLOBALS['CustomerBillingProxy']->GetService()->GetInsertionOrdersByAccount($request);
 }
 ```
 ```python
 response=customerbilling.GetInsertionOrdersByAccount(
-	AccountId=AccountIdHere,
-	InsertionOrderIds=InsertionOrderIdsHere
-)
+	AccountId=AccountId,
+	InsertionOrderIds=InsertionOrderIds)
 ```
 
 ## Requirements

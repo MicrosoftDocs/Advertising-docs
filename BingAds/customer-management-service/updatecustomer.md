@@ -129,18 +129,20 @@ static UpdateCustomerResponse updateCustomer(
 ```php
 static function UpdateCustomer(
 	$customer)
+{
 
-	$updateCustomerRequest = new UpdateCustomerRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new UpdateCustomerRequest();
 
 	$request->Customer = $customer;
 
-	return $CustomerManagementProxy->GetService()->UpdateCustomer($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->UpdateCustomer($request);
 }
 ```
 ```python
 response=customermanagement.UpdateCustomer(
-	Customer=CustomerHere
-)
+	Customer=Customer)
 ```
 
 ## Requirements

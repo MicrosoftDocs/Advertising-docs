@@ -58,6 +58,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="FinalMobileURL" />
     <xs:enumeration value="FinalAppURL" />
     <xs:enumeration value="AdDescription" />
+    <xs:enumeration value="AdLabels" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -76,6 +77,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="adgroupname"></a>AdGroupName|The ad group name.|
 |<a name="adgroupstatus"></a>AdGroupStatus|The ad group status.|
 |<a name="adid"></a>AdId|The Bing Ads assigned identifier of an ad.|
+|<a name="adlabels"></a>AdLabels|The labels applied to the ad.<br/><br/>Labels are delimited by a semicolon (;) in the report download.|
 |<a name="adstatus"></a>AdStatus|The ad status.|
 |<a name="adtitle"></a>AdTitle|The ad title.|
 |<a name="adtype"></a>AdType|The ad type.|

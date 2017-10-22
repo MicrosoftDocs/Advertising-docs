@@ -92,16 +92,18 @@ static GetBSCCountriesResponse getBSCCountries() throws RemoteException, Excepti
 ```
 ```php
 static function GetBSCCountries()
+{
 
-	$getBSCCountriesRequest = new GetBSCCountriesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetBSCCountriesRequest();
 
 
-	return $CampaignManagementProxy->GetService()->GetBSCCountries($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetBSCCountries($request);
 }
 ```
 ```python
 response=campaignmanagement.GetBSCCountries()
-)
 ```
 
 ## Requirements

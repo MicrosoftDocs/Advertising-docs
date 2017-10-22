@@ -136,20 +136,22 @@ static SetNegativeSitesToAdGroupsResponse setNegativeSitesToAdGroups(
 static function SetNegativeSitesToAdGroups(
 	$campaignId,
 	$adGroupNegativeSites)
+{
 
-	$setNegativeSitesToAdGroupsRequest = new SetNegativeSitesToAdGroupsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new SetNegativeSitesToAdGroupsRequest();
 
 	$request->CampaignId = $campaignId;
 	$request->AdGroupNegativeSites = $adGroupNegativeSites;
 
-	return $CampaignManagementProxy->GetService()->SetNegativeSitesToAdGroups($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->SetNegativeSitesToAdGroups($request);
 }
 ```
 ```python
 response=campaignmanagement.SetNegativeSitesToAdGroups(
-	CampaignId=CampaignIdHere,
-	AdGroupNegativeSites=AdGroupNegativeSitesHere
-)
+	CampaignId=CampaignId,
+	AdGroupNegativeSites=AdGroupNegativeSites)
 ```
 
 ## Requirements

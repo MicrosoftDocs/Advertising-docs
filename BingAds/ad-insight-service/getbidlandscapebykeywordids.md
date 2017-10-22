@@ -137,20 +137,22 @@ static GetBidLandscapeByKeywordIdsResponse getBidLandscapeByKeywordIds(
 static function GetBidLandscapeByKeywordIds(
 	$keywordIds,
 	$includeCurrentBid)
+{
 
-	$getBidLandscapeByKeywordIdsRequest = new GetBidLandscapeByKeywordIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetBidLandscapeByKeywordIdsRequest();
 
 	$request->KeywordIds = $keywordIds;
 	$request->IncludeCurrentBid = $includeCurrentBid;
 
-	return $AdInsightProxy->GetService()->GetBidLandscapeByKeywordIds($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetBidLandscapeByKeywordIds($request);
 }
 ```
 ```python
 response=adinsight.GetBidLandscapeByKeywordIds(
-	KeywordIds=KeywordIdsHere,
-	IncludeCurrentBid=IncludeCurrentBidHere
-)
+	KeywordIds=KeywordIds,
+	IncludeCurrentBid=IncludeCurrentBid)
 ```
 
 ## Requirements

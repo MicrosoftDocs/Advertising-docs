@@ -146,22 +146,24 @@ static function GetKeywordOpportunities(
 	$adGroupId,
 	$campaignId,
 	$opportunityType)
+{
 
-	$getKeywordOpportunitiesRequest = new GetKeywordOpportunitiesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetKeywordOpportunitiesRequest();
 
 	$request->AdGroupId = $adGroupId;
 	$request->CampaignId = $campaignId;
 	$request->OpportunityType = $opportunityType;
 
-	return $AdInsightProxy->GetService()->GetKeywordOpportunities($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetKeywordOpportunities($request);
 }
 ```
 ```python
 response=adinsight.GetKeywordOpportunities(
-	AdGroupId=AdGroupIdHere,
-	CampaignId=CampaignIdHere,
-	OpportunityType=OpportunityTypeHere
-)
+	AdGroupId=AdGroupId,
+	CampaignId=CampaignId,
+	OpportunityType=OpportunityType)
 ```
 
 ## Requirements

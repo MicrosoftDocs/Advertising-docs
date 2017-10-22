@@ -142,18 +142,20 @@ static UpdateUserResponse updateUser(
 ```php
 static function UpdateUser(
 	$user)
+{
 
-	$updateUserRequest = new UpdateUserRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new UpdateUserRequest();
 
 	$request->User = $user;
 
-	return $CustomerManagementProxy->GetService()->UpdateUser($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->UpdateUser($request);
 }
 ```
 ```python
 response=customermanagement.UpdateUser(
-	User=UserHere
-)
+	User=User)
 ```
 
 ## Requirements

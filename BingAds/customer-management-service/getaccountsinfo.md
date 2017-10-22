@@ -113,20 +113,22 @@ static GetAccountsInfoResponse getAccountsInfo(
 static function GetAccountsInfo(
 	$customerId,
 	$onlyParentAccounts)
+{
 
-	$getAccountsInfoRequest = new GetAccountsInfoRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new GetAccountsInfoRequest();
 
 	$request->CustomerId = $customerId;
 	$request->OnlyParentAccounts = $onlyParentAccounts;
 
-	return $CustomerManagementProxy->GetService()->GetAccountsInfo($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->GetAccountsInfo($request);
 }
 ```
 ```python
 response=customermanagement.GetAccountsInfo(
-	CustomerId=CustomerIdHere,
-	OnlyParentAccounts=OnlyParentAccountsHere
-)
+	CustomerId=CustomerId,
+	OnlyParentAccounts=OnlyParentAccounts)
 ```
 
 ## Requirements

@@ -154,18 +154,20 @@ static GetUserResponse getUser(
 ```php
 static function GetUser(
 	$userId)
+{
 
-	$getUserRequest = new GetUserRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new GetUserRequest();
 
 	$request->UserId = $userId;
 
-	return $CustomerManagementProxy->GetService()->GetUser($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->GetUser($request);
 }
 ```
 ```python
 response=customermanagement.GetUser(
-	UserId=UserIdHere
-)
+	UserId=UserId)
 ```
 
 ## Requirements

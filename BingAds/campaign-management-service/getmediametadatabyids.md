@@ -145,18 +145,20 @@ static GetMediaMetaDataByIdsResponse getMediaMetaDataByIds(
 ```php
 static function GetMediaMetaDataByIds(
 	$mediaIds)
+{
 
-	$getMediaMetaDataByIdsRequest = new GetMediaMetaDataByIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetMediaMetaDataByIdsRequest();
 
 	$request->MediaIds = $mediaIds;
 
-	return $CampaignManagementProxy->GetService()->GetMediaMetaDataByIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetMediaMetaDataByIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetMediaMetaDataByIds(
-	MediaIds=MediaIdsHere
-)
+	MediaIds=MediaIds)
 ```
 
 ## Requirements

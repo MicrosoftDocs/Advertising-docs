@@ -137,18 +137,20 @@ static UpdateSharedEntitiesResponse updateSharedEntities(
 ```php
 static function UpdateSharedEntities(
 	$sharedEntities)
+{
 
-	$updateSharedEntitiesRequest = new UpdateSharedEntitiesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new UpdateSharedEntitiesRequest();
 
 	$request->SharedEntities = $sharedEntities;
 
-	return $CampaignManagementProxy->GetService()->UpdateSharedEntities($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->UpdateSharedEntities($request);
 }
 ```
 ```python
 response=campaignmanagement.UpdateSharedEntities(
-	SharedEntities=SharedEntitiesHere
-)
+	SharedEntities=SharedEntities)
 ```
 
 ## Requirements

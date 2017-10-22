@@ -169,20 +169,22 @@ static GetKeywordsByAdGroupIdResponse getKeywordsByAdGroupId(
 static function GetKeywordsByAdGroupId(
 	$adGroupId,
 	$returnAdditionalFields)
+{
 
-	$getKeywordsByAdGroupIdRequest = new GetKeywordsByAdGroupIdRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetKeywordsByAdGroupIdRequest();
 
 	$request->AdGroupId = $adGroupId;
 	$request->ReturnAdditionalFields = $returnAdditionalFields;
 
-	return $CampaignManagementProxy->GetService()->GetKeywordsByAdGroupId($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetKeywordsByAdGroupId($request);
 }
 ```
 ```python
 response=campaignmanagement.GetKeywordsByAdGroupId(
-	AdGroupId=AdGroupIdHere,
-	ReturnAdditionalFields=ReturnAdditionalFieldsHere
-)
+	AdGroupId=AdGroupId,
+	ReturnAdditionalFields=ReturnAdditionalFields)
 ```
 
 ## Requirements

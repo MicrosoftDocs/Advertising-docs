@@ -226,18 +226,20 @@ static ApplyProductPartitionActionsResponse applyProductPartitionActions(
 ```php
 static function ApplyProductPartitionActions(
 	$criterionActions)
+{
 
-	$applyProductPartitionActionsRequest = new ApplyProductPartitionActionsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new ApplyProductPartitionActionsRequest();
 
 	$request->CriterionActions = $criterionActions;
 
-	return $CampaignManagementProxy->GetService()->ApplyProductPartitionActions($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->ApplyProductPartitionActions($request);
 }
 ```
 ```python
 response=campaignmanagement.ApplyProductPartitionActions(
-	CriterionActions=CriterionActionsHere
-)
+	CriterionActions=CriterionActions)
 ```
 
 ## Requirements

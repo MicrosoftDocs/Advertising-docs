@@ -207,22 +207,24 @@ static function GetKeywordIdeas(
 	$expandIdeas,
 	$ideaAttributes,
 	$searchParameters)
+{
 
-	$getKeywordIdeasRequest = new GetKeywordIdeasRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetKeywordIdeasRequest();
 
 	$request->ExpandIdeas = $expandIdeas;
 	$request->IdeaAttributes = $ideaAttributes;
 	$request->SearchParameters = $searchParameters;
 
-	return $AdInsightProxy->GetService()->GetKeywordIdeas($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetKeywordIdeas($request);
 }
 ```
 ```python
 response=adinsight.GetKeywordIdeas(
-	ExpandIdeas=ExpandIdeasHere,
-	IdeaAttributes=IdeaAttributesHere,
-	SearchParameters=SearchParametersHere
-)
+	ExpandIdeas=ExpandIdeas,
+	IdeaAttributes=IdeaAttributes,
+	SearchParameters=SearchParameters)
 ```
 
 ## Requirements

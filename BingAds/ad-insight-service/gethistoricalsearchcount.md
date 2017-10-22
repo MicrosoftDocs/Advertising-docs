@@ -175,8 +175,11 @@ static function GetHistoricalSearchCount(
 	$endDate,
 	$timePeriodRollup,
 	$devices)
+{
 
-	$getHistoricalSearchCountRequest = new GetHistoricalSearchCountRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetHistoricalSearchCountRequest();
 
 	$request->Keywords = $keywords;
 	$request->Language = $language;
@@ -186,19 +189,18 @@ static function GetHistoricalSearchCount(
 	$request->TimePeriodRollup = $timePeriodRollup;
 	$request->Devices = $devices;
 
-	return $AdInsightProxy->GetService()->GetHistoricalSearchCount($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetHistoricalSearchCount($request);
 }
 ```
 ```python
 response=adinsight.GetHistoricalSearchCount(
-	Keywords=KeywordsHere,
-	Language=LanguageHere,
-	PublisherCountries=PublisherCountriesHere,
-	StartDate=StartDateHere,
-	EndDate=EndDateHere,
-	TimePeriodRollup=TimePeriodRollupHere,
-	Devices=DevicesHere
-)
+	Keywords=Keywords,
+	Language=Language,
+	PublisherCountries=PublisherCountries,
+	StartDate=StartDate,
+	EndDate=EndDate,
+	TimePeriodRollup=TimePeriodRollup,
+	Devices=Devices)
 ```
 
 ## Requirements

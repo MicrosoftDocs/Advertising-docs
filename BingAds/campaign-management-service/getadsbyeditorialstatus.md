@@ -175,22 +175,24 @@ static function GetAdsByEditorialStatus(
 	$adGroupId,
 	$editorialStatus,
 	$adTypes)
+{
 
-	$getAdsByEditorialStatusRequest = new GetAdsByEditorialStatusRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetAdsByEditorialStatusRequest();
 
 	$request->AdGroupId = $adGroupId;
 	$request->EditorialStatus = $editorialStatus;
 	$request->AdTypes = $adTypes;
 
-	return $CampaignManagementProxy->GetService()->GetAdsByEditorialStatus($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAdsByEditorialStatus($request);
 }
 ```
 ```python
 response=campaignmanagement.GetAdsByEditorialStatus(
-	AdGroupId=AdGroupIdHere,
-	EditorialStatus=EditorialStatusHere,
-	AdTypes=AdTypesHere
-)
+	AdGroupId=AdGroupId,
+	EditorialStatus=EditorialStatus,
+	AdTypes=AdTypes)
 ```
 
 ## Requirements

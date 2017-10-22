@@ -151,18 +151,20 @@ static AddClientLinksResponse addClientLinks(
 ```php
 static function AddClientLinks(
 	$clientLinks)
+{
 
-	$addClientLinksRequest = new AddClientLinksRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new AddClientLinksRequest();
 
 	$request->ClientLinks = $clientLinks;
 
-	return $CustomerManagementProxy->GetService()->AddClientLinks($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->AddClientLinks($request);
 }
 ```
 ```python
 response=customermanagement.AddClientLinks(
-	ClientLinks=ClientLinksHere
-)
+	ClientLinks=ClientLinks)
 ```
 
 ## Requirements

@@ -114,20 +114,22 @@ static GetGeoLocationsFileUrlResponse getGeoLocationsFileUrl(
 static function GetGeoLocationsFileUrl(
 	$version,
 	$languageLocale)
+{
 
-	$getGeoLocationsFileUrlRequest = new GetGeoLocationsFileUrlRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetGeoLocationsFileUrlRequest();
 
 	$request->Version = $version;
 	$request->LanguageLocale = $languageLocale;
 
-	return $CampaignManagementProxy->GetService()->GetGeoLocationsFileUrl($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetGeoLocationsFileUrl($request);
 }
 ```
 ```python
 response=campaignmanagement.GetGeoLocationsFileUrl(
-	Version=VersionHere,
-	LanguageLocale=LanguageLocaleHere
-)
+	Version=Version,
+	LanguageLocale=LanguageLocale)
 ```
 
 ## Requirements

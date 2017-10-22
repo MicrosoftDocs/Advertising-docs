@@ -103,20 +103,22 @@ static DeleteAccountResponse deleteAccount(
 static function DeleteAccount(
 	$accountId,
 	$timeStamp)
+{
 
-	$deleteAccountRequest = new DeleteAccountRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new DeleteAccountRequest();
 
 	$request->AccountId = $accountId;
 	$request->TimeStamp = $timeStamp;
 
-	return $CustomerManagementProxy->GetService()->DeleteAccount($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->DeleteAccount($request);
 }
 ```
 ```python
 response=customermanagement.DeleteAccount(
-	AccountId=AccountIdHere,
-	TimeStamp=TimeStampHere
-)
+	AccountId=AccountId,
+	TimeStamp=TimeStamp)
 ```
 
 ## Requirements

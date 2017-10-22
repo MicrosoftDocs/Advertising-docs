@@ -220,22 +220,24 @@ static function GetCampaignCriterionsByIds(
 	$campaignCriterionIds,
 	$campaignId,
 	$criterionType)
+{
 
-	$getCampaignCriterionsByIdsRequest = new GetCampaignCriterionsByIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetCampaignCriterionsByIdsRequest();
 
 	$request->CampaignCriterionIds = $campaignCriterionIds;
 	$request->CampaignId = $campaignId;
 	$request->CriterionType = $criterionType;
 
-	return $CampaignManagementProxy->GetService()->GetCampaignCriterionsByIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetCampaignCriterionsByIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetCampaignCriterionsByIds(
-	CampaignCriterionIds=CampaignCriterionIdsHere,
-	CampaignId=CampaignIdHere,
-	CriterionType=CriterionTypeHere
-)
+	CampaignCriterionIds=CampaignCriterionIds,
+	CampaignId=CampaignId,
+	CriterionType=CriterionType)
 ```
 
 ## Requirements

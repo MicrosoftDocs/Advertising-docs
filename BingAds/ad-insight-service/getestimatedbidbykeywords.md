@@ -194,8 +194,11 @@ static function GetEstimatedBidByKeywords(
 	$campaignId,
 	$adGroupId,
 	$entityLevelBid)
+{
 
-	$getEstimatedBidByKeywordsRequest = new GetEstimatedBidByKeywordsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetEstimatedBidByKeywordsRequest();
 
 	$request->Keywords = $keywords;
 	$request->TargetPositionForAds = $targetPositionForAds;
@@ -206,20 +209,19 @@ static function GetEstimatedBidByKeywords(
 	$request->AdGroupId = $adGroupId;
 	$request->EntityLevelBid = $entityLevelBid;
 
-	return $AdInsightProxy->GetService()->GetEstimatedBidByKeywords($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetEstimatedBidByKeywords($request);
 }
 ```
 ```python
 response=adinsight.GetEstimatedBidByKeywords(
-	Keywords=KeywordsHere,
-	TargetPositionForAds=TargetPositionForAdsHere,
-	Language=LanguageHere,
-	PublisherCountries=PublisherCountriesHere,
-	Currency=CurrencyHere,
-	CampaignId=CampaignIdHere,
-	AdGroupId=AdGroupIdHere,
-	EntityLevelBid=EntityLevelBidHere
-)
+	Keywords=Keywords,
+	TargetPositionForAds=TargetPositionForAds,
+	Language=Language,
+	PublisherCountries=PublisherCountries,
+	Currency=Currency,
+	CampaignId=CampaignId,
+	AdGroupId=AdGroupId,
+	EntityLevelBid=EntityLevelBid)
 ```
 
 ## <a name="remarks"></a>Remarks

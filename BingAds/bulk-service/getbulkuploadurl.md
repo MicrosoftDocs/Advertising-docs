@@ -109,20 +109,22 @@ static GetBulkUploadUrlResponse getBulkUploadUrl(
 static function GetBulkUploadUrl(
 	$responseMode,
 	$accountId)
+{
 
-	$getBulkUploadUrlRequest = new GetBulkUploadUrlRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['BulkProxy'];
+
+	$request = new GetBulkUploadUrlRequest();
 
 	$request->ResponseMode = $responseMode;
 	$request->AccountId = $accountId;
 
-	return $BulkProxy->GetService()->GetBulkUploadUrl($request);
+	return $GLOBALS['BulkProxy']->GetService()->GetBulkUploadUrl($request);
 }
 ```
 ```python
 response=bulk.GetBulkUploadUrl(
-	ResponseMode=ResponseModeHere,
-	AccountId=AccountIdHere
-)
+	ResponseMode=ResponseMode,
+	AccountId=AccountId)
 ```
 
 ## Requirements

@@ -1,6 +1,6 @@
 ---
 title: "Customer Billing Service Reference"
-ms.service: "bing-ads"
+ms.service: "bing-ads-customer-billing-service"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"

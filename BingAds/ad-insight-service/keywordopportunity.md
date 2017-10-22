@@ -45,7 +45,7 @@ Defines an object that contains a suggested keyword and bid value.
 |<a name="estimatedincreaseinclicks"></a>EstimatedIncreaseInClicks|Estimated increase in clicks if the opportunity is applied.|**double**|
 |<a name="estimatedincreaseincost"></a>EstimatedIncreaseInCost|Estimated increase in cost if the opportunity is applied.|**double**|
 |<a name="estimatedincreaseinimpressions"></a>EstimatedIncreaseInImpressions|Estimated increase in impressions if the opportunity is applied.|**long**|
-|<a name="matchtype"></a>MatchType|The match type that the suggested bid applies to. The following are the possible match-type values:<br /><br />1 ? Exact match<br /><br />2 ? Phrase match<br /><br />3 ? Broad match|**int**|
+|<a name="matchtype"></a>MatchType|The match type that the suggested bid applies to. The following are the possible match-type values:<br /><br />1 - Exact match<br /><br />2 - Phrase match<br /><br />3 - Broad match|**int**|
 |<a name="monthlysearches"></a>MonthlySearches|The estimated monthly volume of user search queries that may match the suggested keyword for the corresponding *MatchType* element.|**long**|
 |<a name="suggestedbid"></a>SuggestedBid|The suggested bid that may result in your ads serving on the first page of the search query results.|**double**|
 |<a name="suggestedkeyword"></a>SuggestedKeyword|The suggested keyword.|**string**|

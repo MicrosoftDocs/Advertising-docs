@@ -174,18 +174,20 @@ static GetKeywordTrafficEstimatesResponse getKeywordTrafficEstimates(
 ```php
 static function GetKeywordTrafficEstimates(
 	$campaignEstimators)
+{
 
-	$getKeywordTrafficEstimatesRequest = new GetKeywordTrafficEstimatesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetKeywordTrafficEstimatesRequest();
 
 	$request->CampaignEstimators = $campaignEstimators;
 
-	return $AdInsightProxy->GetService()->GetKeywordTrafficEstimates($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetKeywordTrafficEstimates($request);
 }
 ```
 ```python
 response=adinsight.GetKeywordTrafficEstimates(
-	CampaignEstimators=CampaignEstimatorsHere
-)
+	CampaignEstimators=CampaignEstimators)
 ```
 
 ## Requirements

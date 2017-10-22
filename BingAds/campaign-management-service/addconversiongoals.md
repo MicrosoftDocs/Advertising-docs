@@ -167,18 +167,20 @@ static AddConversionGoalsResponse addConversionGoals(
 ```php
 static function AddConversionGoals(
 	$conversionGoals)
+{
 
-	$addConversionGoalsRequest = new AddConversionGoalsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddConversionGoalsRequest();
 
 	$request->ConversionGoals = $conversionGoals;
 
-	return $CampaignManagementProxy->GetService()->AddConversionGoals($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddConversionGoals($request);
 }
 ```
 ```python
 response=campaignmanagement.AddConversionGoals(
-	ConversionGoals=ConversionGoalsHere
-)
+	ConversionGoals=ConversionGoals)
 ```
 
 ## Requirements

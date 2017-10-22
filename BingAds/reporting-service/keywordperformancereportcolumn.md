@@ -80,6 +80,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="FinalMobileURL" />
     <xs:enumeration value="FinalAppURL" />
     <xs:enumeration value="BidStrategyType" />
+    <xs:enumeration value="KeywordLabels" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -135,6 +136,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |<a name="keyword"></a>Keyword|The keyword text.|
 |<a name="keywordid"></a>KeywordId|The Bing Ads assigned identifier of a keyword.|
+|<a name="keywordlabels"></a>KeywordLabels|The labels applied to the keyword.<br/><br/>Labels are delimited by a semicolon (;) in the report download.|
 |<a name="keywordstatus"></a>KeywordStatus|The keyword status.|
 |<a name="landingpageexperience"></a>LandingPageExperience|An aggregate quality assessment of all landing pages on your site. The landing page experience score measures whether your landing page is likely to provide a good experience to customers who click your ad and land on your website.A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score. Data for this column is typically updated 14-18 hours after the UTC day ends.|
 |<a name="language"></a>Language|The ad group language.For possible values see [Ad Languages](~/guides/ad-languages.md). The language display name will be provided in the report e.g. *English*.|

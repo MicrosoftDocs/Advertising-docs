@@ -217,22 +217,24 @@ static function UpdateAdGroups(
 	$campaignId,
 	$adGroups,
 	$updateNativeBidAdjustment)
+{
 
-	$updateAdGroupsRequest = new UpdateAdGroupsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new UpdateAdGroupsRequest();
 
 	$request->CampaignId = $campaignId;
 	$request->AdGroups = $adGroups;
 	$request->UpdateNativeBidAdjustment = $updateNativeBidAdjustment;
 
-	return $CampaignManagementProxy->GetService()->UpdateAdGroups($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->UpdateAdGroups($request);
 }
 ```
 ```python
 response=campaignmanagement.UpdateAdGroups(
-	CampaignId=CampaignIdHere,
-	AdGroups=AdGroupsHere,
-	UpdateNativeBidAdjustment=UpdateNativeBidAdjustmentHere
-)
+	CampaignId=CampaignId,
+	AdGroups=AdGroups,
+	UpdateNativeBidAdjustment=UpdateNativeBidAdjustment)
 ```
 
 ## Requirements

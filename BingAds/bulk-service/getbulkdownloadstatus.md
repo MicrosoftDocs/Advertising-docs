@@ -123,18 +123,20 @@ static GetBulkDownloadStatusResponse getBulkDownloadStatus(
 ```php
 static function GetBulkDownloadStatus(
 	$requestId)
+{
 
-	$getBulkDownloadStatusRequest = new GetBulkDownloadStatusRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['BulkProxy'];
+
+	$request = new GetBulkDownloadStatusRequest();
 
 	$request->RequestId = $requestId;
 
-	return $BulkProxy->GetService()->GetBulkDownloadStatus($request);
+	return $GLOBALS['BulkProxy']->GetService()->GetBulkDownloadStatus($request);
 }
 ```
 ```python
 response=bulk.GetBulkDownloadStatus(
-	RequestId=RequestIdHere
-)
+	RequestId=RequestId)
 ```
 
 ## Requirements

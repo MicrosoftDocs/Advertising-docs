@@ -100,18 +100,20 @@ static SetAccountPropertiesResponse setAccountProperties(
 ```php
 static function SetAccountProperties(
 	$accountProperties)
+{
 
-	$setAccountPropertiesRequest = new SetAccountPropertiesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new SetAccountPropertiesRequest();
 
 	$request->AccountProperties = $accountProperties;
 
-	return $CampaignManagementProxy->GetService()->SetAccountProperties($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->SetAccountProperties($request);
 }
 ```
 ```python
 response=campaignmanagement.SetAccountProperties(
-	AccountProperties=AccountPropertiesHere
-)
+	AccountProperties=AccountProperties)
 ```
 
 ## Requirements

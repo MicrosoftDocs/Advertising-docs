@@ -140,22 +140,24 @@ static function DeleteAdGroupCriterions(
 	$adGroupCriterionIds,
 	$adGroupId,
 	$criterionType)
+{
 
-	$deleteAdGroupCriterionsRequest = new DeleteAdGroupCriterionsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteAdGroupCriterionsRequest();
 
 	$request->AdGroupCriterionIds = $adGroupCriterionIds;
 	$request->AdGroupId = $adGroupId;
 	$request->CriterionType = $criterionType;
 
-	return $CampaignManagementProxy->GetService()->DeleteAdGroupCriterions($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteAdGroupCriterions($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteAdGroupCriterions(
-	AdGroupCriterionIds=AdGroupCriterionIdsHere,
-	AdGroupId=AdGroupIdHere,
-	CriterionType=CriterionTypeHere
-)
+	AdGroupCriterionIds=AdGroupCriterionIds,
+	AdGroupId=AdGroupId,
+	CriterionType=CriterionType)
 ```
 
 ## Requirements

@@ -167,8 +167,11 @@ static function GetHistoricalKeywordPerformance(
 	$language,
 	$publisherCountries,
 	$devices)
+{
 
-	$getHistoricalKeywordPerformanceRequest = new GetHistoricalKeywordPerformanceRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetHistoricalKeywordPerformanceRequest();
 
 	$request->Keywords = $keywords;
 	$request->TimeInterval = $timeInterval;
@@ -178,19 +181,18 @@ static function GetHistoricalKeywordPerformance(
 	$request->PublisherCountries = $publisherCountries;
 	$request->Devices = $devices;
 
-	return $AdInsightProxy->GetService()->GetHistoricalKeywordPerformance($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetHistoricalKeywordPerformance($request);
 }
 ```
 ```python
 response=adinsight.GetHistoricalKeywordPerformance(
-	Keywords=KeywordsHere,
-	TimeInterval=TimeIntervalHere,
-	TargetAdPosition=TargetAdPositionHere,
-	MatchTypes=MatchTypesHere,
-	Language=LanguageHere,
-	PublisherCountries=PublisherCountriesHere,
-	Devices=DevicesHere
-)
+	Keywords=Keywords,
+	TimeInterval=TimeInterval,
+	TargetAdPosition=TargetAdPosition,
+	MatchTypes=MatchTypes,
+	Language=Language,
+	PublisherCountries=PublisherCountries,
+	Devices=Devices)
 ```
 
 ## Requirements

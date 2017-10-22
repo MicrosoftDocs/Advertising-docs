@@ -245,20 +245,22 @@ static UpdateAdGroupCriterionsResponse updateAdGroupCriterions(
 static function UpdateAdGroupCriterions(
 	$adGroupCriterions,
 	$criterionType)
+{
 
-	$updateAdGroupCriterionsRequest = new UpdateAdGroupCriterionsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new UpdateAdGroupCriterionsRequest();
 
 	$request->AdGroupCriterions = $adGroupCriterions;
 	$request->CriterionType = $criterionType;
 
-	return $CampaignManagementProxy->GetService()->UpdateAdGroupCriterions($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->UpdateAdGroupCriterions($request);
 }
 ```
 ```python
 response=campaignmanagement.UpdateAdGroupCriterions(
-	AdGroupCriterions=AdGroupCriterionsHere,
-	CriterionType=CriterionTypeHere
-)
+	AdGroupCriterions=AdGroupCriterions,
+	CriterionType=CriterionType)
 ```
 
 ## Requirements

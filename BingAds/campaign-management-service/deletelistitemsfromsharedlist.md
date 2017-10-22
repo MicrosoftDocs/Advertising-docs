@@ -137,20 +137,22 @@ static DeleteListItemsFromSharedListResponse deleteListItemsFromSharedList(
 static function DeleteListItemsFromSharedList(
 	$listItemIds,
 	$sharedList)
+{
 
-	$deleteListItemsFromSharedListRequest = new DeleteListItemsFromSharedListRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteListItemsFromSharedListRequest();
 
 	$request->ListItemIds = $listItemIds;
 	$request->SharedList = $sharedList;
 
-	return $CampaignManagementProxy->GetService()->DeleteListItemsFromSharedList($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteListItemsFromSharedList($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteListItemsFromSharedList(
-	ListItemIds=ListItemIdsHere,
-	SharedList=SharedListHere
-)
+	ListItemIds=ListItemIds,
+	SharedList=SharedList)
 ```
 
 ## Requirements

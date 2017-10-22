@@ -138,18 +138,20 @@ static GetUetTagsByIdsResponse getUetTagsByIds(
 ```php
 static function GetUetTagsByIds(
 	$tagIds)
+{
 
-	$getUetTagsByIdsRequest = new GetUetTagsByIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetUetTagsByIdsRequest();
 
 	$request->TagIds = $tagIds;
 
-	return $CampaignManagementProxy->GetService()->GetUetTagsByIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetUetTagsByIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetUetTagsByIds(
-	TagIds=TagIdsHere
-)
+	TagIds=TagIds)
 ```
 
 ## Requirements

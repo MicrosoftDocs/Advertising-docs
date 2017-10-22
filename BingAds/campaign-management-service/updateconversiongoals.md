@@ -163,18 +163,20 @@ static UpdateConversionGoalsResponse updateConversionGoals(
 ```php
 static function UpdateConversionGoals(
 	$conversionGoals)
+{
 
-	$updateConversionGoalsRequest = new UpdateConversionGoalsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new UpdateConversionGoalsRequest();
 
 	$request->ConversionGoals = $conversionGoals;
 
-	return $CampaignManagementProxy->GetService()->UpdateConversionGoals($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->UpdateConversionGoals($request);
 }
 ```
 ```python
 response=campaignmanagement.UpdateConversionGoals(
-	ConversionGoals=ConversionGoalsHere
-)
+	ConversionGoals=ConversionGoals)
 ```
 
 ## Requirements

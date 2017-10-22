@@ -129,18 +129,20 @@ static GetCustomerResponse getCustomer(
 ```php
 static function GetCustomer(
 	$customerId)
+{
 
-	$getCustomerRequest = new GetCustomerRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new GetCustomerRequest();
 
 	$request->CustomerId = $customerId;
 
-	return $CustomerManagementProxy->GetService()->GetCustomer($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->GetCustomer($request);
 }
 ```
 ```python
 response=customermanagement.GetCustomer(
-	CustomerId=CustomerIdHere
-)
+	CustomerId=CustomerId)
 ```
 
 ## Requirements

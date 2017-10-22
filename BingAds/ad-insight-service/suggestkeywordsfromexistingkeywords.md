@@ -170,8 +170,11 @@ static function SuggestKeywordsFromExistingKeywords(
 	$excludeBrand,
 	$adGroupId,
 	$campaignId)
+{
 
-	$suggestKeywordsFromExistingKeywordsRequest = new SuggestKeywordsFromExistingKeywordsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new SuggestKeywordsFromExistingKeywordsRequest();
 
 	$request->Keywords = $keywords;
 	$request->Language = $language;
@@ -183,21 +186,20 @@ static function SuggestKeywordsFromExistingKeywords(
 	$request->AdGroupId = $adGroupId;
 	$request->CampaignId = $campaignId;
 
-	return $AdInsightProxy->GetService()->SuggestKeywordsFromExistingKeywords($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->SuggestKeywordsFromExistingKeywords($request);
 }
 ```
 ```python
 response=adinsight.SuggestKeywordsFromExistingKeywords(
-	Keywords=KeywordsHere,
-	Language=LanguageHere,
-	PublisherCountries=PublisherCountriesHere,
-	MaxSuggestionsPerKeyword=MaxSuggestionsPerKeywordHere,
-	SuggestionType=SuggestionTypeHere,
-	RemoveDuplicates=RemoveDuplicatesHere,
-	ExcludeBrand=ExcludeBrandHere,
-	AdGroupId=AdGroupIdHere,
-	CampaignId=CampaignIdHere
-)
+	Keywords=Keywords,
+	Language=Language,
+	PublisherCountries=PublisherCountries,
+	MaxSuggestionsPerKeyword=MaxSuggestionsPerKeyword,
+	SuggestionType=SuggestionType,
+	RemoveDuplicates=RemoveDuplicates,
+	ExcludeBrand=ExcludeBrand,
+	AdGroupId=AdGroupId,
+	CampaignId=CampaignId)
 ```
 
 ## <a name="remarks"></a>Remarks

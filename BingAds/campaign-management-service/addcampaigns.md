@@ -197,20 +197,22 @@ static AddCampaignsResponse addCampaigns(
 static function AddCampaigns(
 	$accountId,
 	$campaigns)
+{
 
-	$addCampaignsRequest = new AddCampaignsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddCampaignsRequest();
 
 	$request->AccountId = $accountId;
 	$request->Campaigns = $campaigns;
 
-	return $CampaignManagementProxy->GetService()->AddCampaigns($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddCampaigns($request);
 }
 ```
 ```python
 response=campaignmanagement.AddCampaigns(
-	AccountId=AccountIdHere,
-	Campaigns=CampaignsHere
-)
+	AccountId=AccountId,
+	Campaigns=Campaigns)
 ```
 
 ## Requirements

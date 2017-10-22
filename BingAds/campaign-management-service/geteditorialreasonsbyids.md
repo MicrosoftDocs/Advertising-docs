@@ -17,7 +17,7 @@ The *GetEditorialReasonsByIdsRequest* object defines the [body](#request-body) a
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the specified entities.|**long**|
-|<a name="entityidtoparentidassociations"></a>EntityIdToParentIdAssociations|A list of  [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) objects that each contain the unique system identifier of an entity such as ad or keyword, and the identifier of its parent. An ad group is the parent of an ad or keyword.<br /><br />The list must include all ads or all keywords which failed editorial review ? the list cannot include a mix ads and keywords. The list can contain a maximum of 1,000 identifiers.|[EntityIdToParentIdAssociation](entityidtoparentidassociation.md) array|
+|<a name="entityidtoparentidassociations"></a>EntityIdToParentIdAssociations|A list of  [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) objects that each contain the unique system identifier of an entity such as ad or keyword, and the identifier of its parent. An ad group is the parent of an ad or keyword.<br /><br />The list must include all ads or all keywords which failed editorial review. The list cannot include a mix ads and keywords. The list can contain a maximum of 1,000 identifiers.|[EntityIdToParentIdAssociation](entityidtoparentidassociation.md) array|
 |<a name="entitytype"></a>EntityType|The type of entities that the entity list contains.|[EntityType](entitytype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -159,22 +159,24 @@ static function GetEditorialReasonsByIds(
 	$accountId,
 	$entityIdToParentIdAssociations,
 	$entityType)
+{
 
-	$getEditorialReasonsByIdsRequest = new GetEditorialReasonsByIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetEditorialReasonsByIdsRequest();
 
 	$request->AccountId = $accountId;
 	$request->EntityIdToParentIdAssociations = $entityIdToParentIdAssociations;
 	$request->EntityType = $entityType;
 
-	return $CampaignManagementProxy->GetService()->GetEditorialReasonsByIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetEditorialReasonsByIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetEditorialReasonsByIds(
-	AccountId=AccountIdHere,
-	EntityIdToParentIdAssociations=EntityIdToParentIdAssociationsHere,
-	EntityType=EntityTypeHere
-)
+	AccountId=AccountId,
+	EntityIdToParentIdAssociations=EntityIdToParentIdAssociations,
+	EntityType=EntityType)
 ```
 
 ## Requirements

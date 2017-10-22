@@ -174,20 +174,22 @@ static GetConversionGoalsByTagIdsResponse getConversionGoalsByTagIds(
 static function GetConversionGoalsByTagIds(
 	$tagIds,
 	$conversionGoalTypes)
+{
 
-	$getConversionGoalsByTagIdsRequest = new GetConversionGoalsByTagIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetConversionGoalsByTagIdsRequest();
 
 	$request->TagIds = $tagIds;
 	$request->ConversionGoalTypes = $conversionGoalTypes;
 
-	return $CampaignManagementProxy->GetService()->GetConversionGoalsByTagIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetConversionGoalsByTagIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetConversionGoalsByTagIds(
-	TagIds=TagIdsHere,
-	ConversionGoalTypes=ConversionGoalTypesHere
-)
+	TagIds=TagIds,
+	ConversionGoalTypes=ConversionGoalTypes)
 ```
 
 ## Requirements

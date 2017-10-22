@@ -155,22 +155,24 @@ static function SearchClientLinks(
 	$predicates,
 	$ordering,
 	$pageInfo)
+{
 
-	$searchClientLinksRequest = new SearchClientLinksRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new SearchClientLinksRequest();
 
 	$request->Predicates = $predicates;
 	$request->Ordering = $ordering;
 	$request->PageInfo = $pageInfo;
 
-	return $CustomerManagementProxy->GetService()->SearchClientLinks($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->SearchClientLinks($request);
 }
 ```
 ```python
 response=customermanagement.SearchClientLinks(
-	Predicates=PredicatesHere,
-	Ordering=OrderingHere,
-	PageInfo=PageInfoHere
-)
+	Predicates=Predicates,
+	Ordering=Ordering,
+	PageInfo=PageInfo)
 ```
 
 ## Requirements

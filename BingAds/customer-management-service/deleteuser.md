@@ -100,20 +100,22 @@ static DeleteUserResponse deleteUser(
 static function DeleteUser(
 	$userId,
 	$timeStamp)
+{
 
-	$deleteUserRequest = new DeleteUserRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new DeleteUserRequest();
 
 	$request->UserId = $userId;
 	$request->TimeStamp = $timeStamp;
 
-	return $CustomerManagementProxy->GetService()->DeleteUser($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->DeleteUser($request);
 }
 ```
 ```python
 response=customermanagement.DeleteUser(
-	UserId=UserIdHere,
-	TimeStamp=TimeStampHere
-)
+	UserId=UserId,
+	TimeStamp=TimeStamp)
 ```
 
 ## Requirements

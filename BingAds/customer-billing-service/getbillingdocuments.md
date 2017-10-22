@@ -116,20 +116,22 @@ static GetBillingDocumentsResponse getBillingDocuments(
 static function GetBillingDocuments(
 	$documentIds,
 	$type)
+{
 
-	$getBillingDocumentsRequest = new GetBillingDocumentsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerBillingProxy'];
+
+	$request = new GetBillingDocumentsRequest();
 
 	$request->DocumentIds = $documentIds;
 	$request->Type = $type;
 
-	return $CustomerBillingProxy->GetService()->GetBillingDocuments($request);
+	return $GLOBALS['CustomerBillingProxy']->GetService()->GetBillingDocuments($request);
 }
 ```
 ```python
 response=customerbilling.GetBillingDocuments(
-	DocumentIds=DocumentIdsHere,
-	Type=TypeHere
-)
+	DocumentIds=DocumentIds,
+	Type=Type)
 ```
 
 ## Requirements

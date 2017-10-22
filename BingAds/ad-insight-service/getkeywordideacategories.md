@@ -97,16 +97,18 @@ static GetKeywordIdeaCategoriesResponse getKeywordIdeaCategories() throws Remote
 ```
 ```php
 static function GetKeywordIdeaCategories()
+{
 
-	$getKeywordIdeaCategoriesRequest = new GetKeywordIdeaCategoriesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetKeywordIdeaCategoriesRequest();
 
 
-	return $AdInsightProxy->GetService()->GetKeywordIdeaCategories($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetKeywordIdeaCategories($request);
 }
 ```
 ```python
 response=adinsight.GetKeywordIdeaCategories()
-)
 ```
 
 ## Requirements

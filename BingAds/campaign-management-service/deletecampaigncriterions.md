@@ -140,22 +140,24 @@ static function DeleteCampaignCriterions(
 	$campaignCriterionIds,
 	$campaignId,
 	$criterionType)
+{
 
-	$deleteCampaignCriterionsRequest = new DeleteCampaignCriterionsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteCampaignCriterionsRequest();
 
 	$request->CampaignCriterionIds = $campaignCriterionIds;
 	$request->CampaignId = $campaignId;
 	$request->CriterionType = $criterionType;
 
-	return $CampaignManagementProxy->GetService()->DeleteCampaignCriterions($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteCampaignCriterions($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteCampaignCriterions(
-	CampaignCriterionIds=CampaignCriterionIdsHere,
-	CampaignId=CampaignIdHere,
-	CriterionType=CriterionTypeHere
-)
+	CampaignCriterionIds=CampaignCriterionIds,
+	CampaignId=CampaignId,
+	CriterionType=CriterionType)
 ```
 
 ## Requirements

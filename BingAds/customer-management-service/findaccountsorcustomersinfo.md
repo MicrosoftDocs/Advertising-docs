@@ -17,7 +17,7 @@ The *FindAccountsOrCustomersInfoRequest* object defines the [body](#request-body
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="applicationscope"></a>ApplicationScope|A value that determines whether to return advertiser accounts or publisher accounts. If you do not specify the scope, the list may include both types of accounts.|[ApplicationType](applicationtype.md)|
-|<a name="filter"></a>Filter|The criteria to use to filter the list of accounts and customers. You can specify either an account name, account number, or customer name.<br /><br />The filter value can contain a partial or full name or number. The operation includes the account or customer in the result if the name or number begins with the specified filter value.<br /><br />The operation performs a case-insensitive comparison when it compares your filter value to the name or number. For example, if you specify 't? as the filter value, the list will include accounts and customers whose names begin with 't? or 't?.<br /><br />The operation filters first for accounts that match the filter criteria. If the number of accounts that match the filter criteria is less than the specified *TopN* value, the operation searches for customers whose name matches the filter criteria.<br /><br />Setting this element to an empty string is the same as calling the [GetAccountsInfo](../customer-management-service/getaccountsinfo.md) followed by calling the [GetCustomersInfo](../customer-management-service/getcustomersinfo.md).|**string**|
+|<a name="filter"></a>Filter|The criteria to use to filter the list of accounts and customers. You can specify either an account name, account number, or customer name.<br /><br />The filter value can contain a partial or full name or number. The operation includes the account or customer in the result if the name or number begins with the specified filter value.<br /><br />The operation performs a case-insensitive comparison when it compares your filter value to the name or number. For example, if you specify "t" as the filter value, the list will include accounts and customers whose names begin with "t" or "T".<br /><br />The operation filters first for accounts that match the filter criteria. If the number of accounts that match the filter criteria is less than the specified *TopN* value, the operation searches for customers whose name matches the filter criteria.<br /><br />Setting this element to an empty string is the same as calling the [GetAccountsInfo](../customer-management-service/getaccountsinfo.md) followed by calling the [GetCustomersInfo](../customer-management-service/getcustomersinfo.md).|**string**|
 |<a name="topn"></a>TopN|A nonzero positive integer that specifies the number of accounts to return in the result. You must specify a value from 1 through 5,000.|**int**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -122,22 +122,24 @@ static function FindAccountsOrCustomersInfo(
 	$filter,
 	$topN,
 	$applicationScope)
+{
 
-	$findAccountsOrCustomersInfoRequest = new FindAccountsOrCustomersInfoRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new FindAccountsOrCustomersInfoRequest();
 
 	$request->Filter = $filter;
 	$request->TopN = $topN;
 	$request->ApplicationScope = $applicationScope;
 
-	return $CustomerManagementProxy->GetService()->FindAccountsOrCustomersInfo($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->FindAccountsOrCustomersInfo($request);
 }
 ```
 ```python
 response=customermanagement.FindAccountsOrCustomersInfo(
-	Filter=FilterHere,
-	TopN=TopNHere,
-	ApplicationScope=ApplicationScopeHere
-)
+	Filter=Filter,
+	TopN=TopN,
+	ApplicationScope=ApplicationScope)
 ```
 
 ## Requirements

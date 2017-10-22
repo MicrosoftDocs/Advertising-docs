@@ -233,20 +233,22 @@ static GetAudiencesByIdsResponse getAudiencesByIds(
 static function GetAudiencesByIds(
 	$audienceIds,
 	$type)
+{
 
-	$getAudiencesByIdsRequest = new GetAudiencesByIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetAudiencesByIdsRequest();
 
 	$request->AudienceIds = $audienceIds;
 	$request->Type = $type;
 
-	return $CampaignManagementProxy->GetService()->GetAudiencesByIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAudiencesByIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetAudiencesByIds(
-	AudienceIds=AudienceIdsHere,
-	Type=TypeHere
-)
+	AudienceIds=AudienceIds,
+	Type=Type)
 ```
 
 ## Requirements

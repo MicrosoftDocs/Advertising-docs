@@ -382,20 +382,22 @@ static UpdateAdExtensionsResponse updateAdExtensions(
 static function UpdateAdExtensions(
 	$accountId,
 	$adExtensions)
+{
 
-	$updateAdExtensionsRequest = new UpdateAdExtensionsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new UpdateAdExtensionsRequest();
 
 	$request->AccountId = $accountId;
 	$request->AdExtensions = $adExtensions;
 
-	return $CampaignManagementProxy->GetService()->UpdateAdExtensions($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->UpdateAdExtensions($request);
 }
 ```
 ```python
 response=campaignmanagement.UpdateAdExtensions(
-	AccountId=AccountIdHere,
-	AdExtensions=AdExtensionsHere
-)
+	AccountId=AccountId,
+	AdExtensions=AdExtensions)
 ```
 
 ## Requirements

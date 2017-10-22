@@ -392,24 +392,26 @@ static function GetAdExtensionsAssociations(
 	$adExtensionType,
 	$associationType,
 	$entityIds)
+{
 
-	$getAdExtensionsAssociationsRequest = new GetAdExtensionsAssociationsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetAdExtensionsAssociationsRequest();
 
 	$request->AccountId = $accountId;
 	$request->AdExtensionType = $adExtensionType;
 	$request->AssociationType = $associationType;
 	$request->EntityIds = $entityIds;
 
-	return $CampaignManagementProxy->GetService()->GetAdExtensionsAssociations($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAdExtensionsAssociations($request);
 }
 ```
 ```python
 response=campaignmanagement.GetAdExtensionsAssociations(
-	AccountId=AccountIdHere,
-	AdExtensionType=AdExtensionTypeHere,
-	AssociationType=AssociationTypeHere,
-	EntityIds=EntityIdsHere
-)
+	AccountId=AccountId,
+	AdExtensionType=AdExtensionType,
+	AssociationType=AssociationType,
+	EntityIds=EntityIds)
 ```
 
 ## Requirements

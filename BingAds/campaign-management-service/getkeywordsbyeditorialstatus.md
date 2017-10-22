@@ -176,22 +176,24 @@ static function GetKeywordsByEditorialStatus(
 	$adGroupId,
 	$editorialStatus,
 	$returnAdditionalFields)
+{
 
-	$getKeywordsByEditorialStatusRequest = new GetKeywordsByEditorialStatusRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetKeywordsByEditorialStatusRequest();
 
 	$request->AdGroupId = $adGroupId;
 	$request->EditorialStatus = $editorialStatus;
 	$request->ReturnAdditionalFields = $returnAdditionalFields;
 
-	return $CampaignManagementProxy->GetService()->GetKeywordsByEditorialStatus($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetKeywordsByEditorialStatus($request);
 }
 ```
 ```python
 response=campaignmanagement.GetKeywordsByEditorialStatus(
-	AdGroupId=AdGroupIdHere,
-	EditorialStatus=EditorialStatusHere,
-	ReturnAdditionalFields=ReturnAdditionalFieldsHere
-)
+	AdGroupId=AdGroupId,
+	EditorialStatus=EditorialStatus,
+	ReturnAdditionalFields=ReturnAdditionalFields)
 ```
 
 ## Requirements

@@ -193,20 +193,22 @@ static UpdateAdsResponse updateAds(
 static function UpdateAds(
 	$adGroupId,
 	$ads)
+{
 
-	$updateAdsRequest = new UpdateAdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new UpdateAdsRequest();
 
 	$request->AdGroupId = $adGroupId;
 	$request->Ads = $ads;
 
-	return $CampaignManagementProxy->GetService()->UpdateAds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->UpdateAds($request);
 }
 ```
 ```python
 response=campaignmanagement.UpdateAds(
-	AdGroupId=AdGroupIdHere,
-	Ads=AdsHere
-)
+	AdGroupId=AdGroupId,
+	Ads=Ads)
 ```
 
 ## Requirements

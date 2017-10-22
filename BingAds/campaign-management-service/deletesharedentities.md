@@ -137,18 +137,20 @@ static DeleteSharedEntitiesResponse deleteSharedEntities(
 ```php
 static function DeleteSharedEntities(
 	$sharedEntities)
+{
 
-	$deleteSharedEntitiesRequest = new DeleteSharedEntitiesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteSharedEntitiesRequest();
 
 	$request->SharedEntities = $sharedEntities;
 
-	return $CampaignManagementProxy->GetService()->DeleteSharedEntities($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteSharedEntities($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteSharedEntities(
-	SharedEntities=SharedEntitiesHere
-)
+	SharedEntities=SharedEntities)
 ```
 
 ## Requirements

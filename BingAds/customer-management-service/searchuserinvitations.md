@@ -120,18 +120,20 @@ static SearchUserInvitationsResponse searchUserInvitations(
 ```php
 static function SearchUserInvitations(
 	$predicates)
+{
 
-	$searchUserInvitationsRequest = new SearchUserInvitationsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new SearchUserInvitationsRequest();
 
 	$request->Predicates = $predicates;
 
-	return $CustomerManagementProxy->GetService()->SearchUserInvitations($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->SearchUserInvitations($request);
 }
 ```
 ```python
 response=customermanagement.SearchUserInvitations(
-	Predicates=PredicatesHere
-)
+	Predicates=Predicates)
 ```
 
 ## Requirements

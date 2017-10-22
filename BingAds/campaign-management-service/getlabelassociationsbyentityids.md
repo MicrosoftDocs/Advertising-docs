@@ -138,20 +138,22 @@ static GetLabelAssociationsByEntityIdsResponse getLabelAssociationsByEntityIds(
 static function GetLabelAssociationsByEntityIds(
 	$entityIds,
 	$entityType)
+{
 
-	$getLabelAssociationsByEntityIdsRequest = new GetLabelAssociationsByEntityIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetLabelAssociationsByEntityIdsRequest();
 
 	$request->EntityIds = $entityIds;
 	$request->EntityType = $entityType;
 
-	return $CampaignManagementProxy->GetService()->GetLabelAssociationsByEntityIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetLabelAssociationsByEntityIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetLabelAssociationsByEntityIds(
-	EntityIds=EntityIdsHere,
-	EntityType=EntityTypeHere
-)
+	EntityIds=EntityIds,
+	EntityType=EntityType)
 ```
 
 ## Requirements

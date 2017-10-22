@@ -134,20 +134,22 @@ static DeleteMediaResponse deleteMedia(
 static function DeleteMedia(
 	$accountId,
 	$mediaIds)
+{
 
-	$deleteMediaRequest = new DeleteMediaRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteMediaRequest();
 
 	$request->AccountId = $accountId;
 	$request->MediaIds = $mediaIds;
 
-	return $CampaignManagementProxy->GetService()->DeleteMedia($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteMedia($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteMedia(
-	AccountId=AccountIdHere,
-	MediaIds=MediaIdsHere
-)
+	AccountId=AccountId,
+	MediaIds=MediaIds)
 ```
 
 ## Requirements

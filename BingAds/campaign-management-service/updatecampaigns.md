@@ -193,20 +193,22 @@ static UpdateCampaignsResponse updateCampaigns(
 static function UpdateCampaigns(
 	$accountId,
 	$campaigns)
+{
 
-	$updateCampaignsRequest = new UpdateCampaignsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new UpdateCampaignsRequest();
 
 	$request->AccountId = $accountId;
 	$request->Campaigns = $campaigns;
 
-	return $CampaignManagementProxy->GetService()->UpdateCampaigns($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->UpdateCampaigns($request);
 }
 ```
 ```python
 response=campaignmanagement.UpdateCampaigns(
-	AccountId=AccountIdHere,
-	Campaigns=CampaignsHere
-)
+	AccountId=AccountId,
+	Campaigns=Campaigns)
 ```
 
 ## Requirements

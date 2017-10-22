@@ -136,20 +136,22 @@ static SetNegativeSitesToCampaignsResponse setNegativeSitesToCampaigns(
 static function SetNegativeSitesToCampaigns(
 	$accountId,
 	$campaignNegativeSites)
+{
 
-	$setNegativeSitesToCampaignsRequest = new SetNegativeSitesToCampaignsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new SetNegativeSitesToCampaignsRequest();
 
 	$request->AccountId = $accountId;
 	$request->CampaignNegativeSites = $campaignNegativeSites;
 
-	return $CampaignManagementProxy->GetService()->SetNegativeSitesToCampaigns($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->SetNegativeSitesToCampaigns($request);
 }
 ```
 ```python
 response=campaignmanagement.SetNegativeSitesToCampaigns(
-	AccountId=AccountIdHere,
-	CampaignNegativeSites=CampaignNegativeSitesHere
-)
+	AccountId=AccountId,
+	CampaignNegativeSites=CampaignNegativeSites)
 ```
 
 ## Requirements

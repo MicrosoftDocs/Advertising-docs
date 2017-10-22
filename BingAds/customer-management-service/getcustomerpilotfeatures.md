@@ -100,18 +100,20 @@ static GetCustomerPilotFeaturesResponse getCustomerPilotFeatures(
 ```php
 static function GetCustomerPilotFeatures(
 	$customerId)
+{
 
-	$getCustomerPilotFeaturesRequest = new GetCustomerPilotFeaturesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new GetCustomerPilotFeaturesRequest();
 
 	$request->CustomerId = $customerId;
 
-	return $CustomerManagementProxy->GetService()->GetCustomerPilotFeatures($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->GetCustomerPilotFeatures($request);
 }
 ```
 ```python
 response=customermanagement.GetCustomerPilotFeatures(
-	CustomerId=CustomerIdHere
-)
+	CustomerId=CustomerId)
 ```
 
 ## Requirements

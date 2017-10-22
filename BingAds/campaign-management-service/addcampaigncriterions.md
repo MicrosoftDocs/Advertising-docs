@@ -232,20 +232,22 @@ static AddCampaignCriterionsResponse addCampaignCriterions(
 static function AddCampaignCriterions(
 	$campaignCriterions,
 	$criterionType)
+{
 
-	$addCampaignCriterionsRequest = new AddCampaignCriterionsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddCampaignCriterionsRequest();
 
 	$request->CampaignCriterions = $campaignCriterions;
 	$request->CriterionType = $criterionType;
 
-	return $CampaignManagementProxy->GetService()->AddCampaignCriterions($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddCampaignCriterions($request);
 }
 ```
 ```python
 response=campaignmanagement.AddCampaignCriterions(
-	CampaignCriterions=CampaignCriterionsHere,
-	CriterionType=CriterionTypeHere
-)
+	CampaignCriterions=CampaignCriterions,
+	CriterionType=CriterionType)
 ```
 
 ## Requirements

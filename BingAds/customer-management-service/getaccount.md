@@ -152,18 +152,20 @@ static GetAccountResponse getAccount(
 ```php
 static function GetAccount(
 	$accountId)
+{
 
-	$getAccountRequest = new GetAccountRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new GetAccountRequest();
 
 	$request->AccountId = $accountId;
 
-	return $CustomerManagementProxy->GetService()->GetAccount($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->GetAccount($request);
 }
 ```
 ```python
 response=customermanagement.GetAccount(
-	AccountId=AccountIdHere
-)
+	AccountId=AccountId)
 ```
 
 ## Requirements

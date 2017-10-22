@@ -110,20 +110,22 @@ static GetUsersInfoResponse getUsersInfo(
 static function GetUsersInfo(
 	$customerId,
 	$statusFilter)
+{
 
-	$getUsersInfoRequest = new GetUsersInfoRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new GetUsersInfoRequest();
 
 	$request->CustomerId = $customerId;
 	$request->StatusFilter = $statusFilter;
 
-	return $CustomerManagementProxy->GetService()->GetUsersInfo($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->GetUsersInfo($request);
 }
 ```
 ```python
 response=customermanagement.GetUsersInfo(
-	CustomerId=CustomerIdHere,
-	StatusFilter=StatusFilterHere
-)
+	CustomerId=CustomerId,
+	StatusFilter=StatusFilter)
 ```
 
 ## Requirements

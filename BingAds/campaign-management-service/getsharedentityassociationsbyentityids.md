@@ -147,22 +147,24 @@ static function GetSharedEntityAssociationsByEntityIds(
 	$entityIds,
 	$entityType,
 	$sharedEntityType)
+{
 
-	$getSharedEntityAssociationsByEntityIdsRequest = new GetSharedEntityAssociationsByEntityIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetSharedEntityAssociationsByEntityIdsRequest();
 
 	$request->EntityIds = $entityIds;
 	$request->EntityType = $entityType;
 	$request->SharedEntityType = $sharedEntityType;
 
-	return $CampaignManagementProxy->GetService()->GetSharedEntityAssociationsByEntityIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetSharedEntityAssociationsByEntityIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetSharedEntityAssociationsByEntityIds(
-	EntityIds=EntityIdsHere,
-	EntityType=EntityTypeHere,
-	SharedEntityType=SharedEntityTypeHere
-)
+	EntityIds=EntityIds,
+	EntityType=EntityType,
+	SharedEntityType=SharedEntityType)
 ```
 
 ## Requirements

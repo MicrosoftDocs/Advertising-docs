@@ -177,8 +177,11 @@ static function GetEstimatedPositionByKeywords(
 	$matchTypes,
 	$campaignId,
 	$adGroupId)
+{
 
-	$getEstimatedPositionByKeywordsRequest = new GetEstimatedPositionByKeywordsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetEstimatedPositionByKeywordsRequest();
 
 	$request->Keywords = $keywords;
 	$request->MaxBid = $maxBid;
@@ -189,20 +192,19 @@ static function GetEstimatedPositionByKeywords(
 	$request->CampaignId = $campaignId;
 	$request->AdGroupId = $adGroupId;
 
-	return $AdInsightProxy->GetService()->GetEstimatedPositionByKeywords($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetEstimatedPositionByKeywords($request);
 }
 ```
 ```python
 response=adinsight.GetEstimatedPositionByKeywords(
-	Keywords=KeywordsHere,
-	MaxBid=MaxBidHere,
-	Language=LanguageHere,
-	PublisherCountries=PublisherCountriesHere,
-	Currency=CurrencyHere,
-	MatchTypes=MatchTypesHere,
-	CampaignId=CampaignIdHere,
-	AdGroupId=AdGroupIdHere
-)
+	Keywords=Keywords,
+	MaxBid=MaxBid,
+	Language=Language,
+	PublisherCountries=PublisherCountries,
+	Currency=Currency,
+	MatchTypes=MatchTypes,
+	CampaignId=CampaignId,
+	AdGroupId=AdGroupId)
 ```
 
 ## <a name="remarks"></a>Remarks

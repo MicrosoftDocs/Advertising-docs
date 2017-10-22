@@ -124,18 +124,20 @@ static DeleteLabelsResponse deleteLabels(
 ```php
 static function DeleteLabels(
 	$labelIds)
+{
 
-	$deleteLabelsRequest = new DeleteLabelsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteLabelsRequest();
 
 	$request->LabelIds = $labelIds;
 
-	return $CampaignManagementProxy->GetService()->DeleteLabels($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteLabels($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteLabels(
-	LabelIds=LabelIdsHere
-)
+	LabelIds=LabelIds)
 ```
 
 ## Requirements

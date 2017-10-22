@@ -143,24 +143,26 @@ static function GetKeywordDemographics(
 	$language,
 	$publisherCountry,
 	$device)
+{
 
-	$getKeywordDemographicsRequest = new GetKeywordDemographicsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetKeywordDemographicsRequest();
 
 	$request->Keywords = $keywords;
 	$request->Language = $language;
 	$request->PublisherCountry = $publisherCountry;
 	$request->Device = $device;
 
-	return $AdInsightProxy->GetService()->GetKeywordDemographics($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetKeywordDemographics($request);
 }
 ```
 ```python
 response=adinsight.GetKeywordDemographics(
-	Keywords=KeywordsHere,
-	Language=LanguageHere,
-	PublisherCountry=PublisherCountryHere,
-	Device=DeviceHere
-)
+	Keywords=Keywords,
+	Language=Language,
+	PublisherCountry=PublisherCountry,
+	Device=Device)
 ```
 
 ## Requirements

@@ -117,18 +117,20 @@ static AddInsertionOrderResponse addInsertionOrder(
 ```php
 static function AddInsertionOrder(
 	$insertionOrder)
+{
 
-	$addInsertionOrderRequest = new AddInsertionOrderRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerBillingProxy'];
+
+	$request = new AddInsertionOrderRequest();
 
 	$request->InsertionOrder = $insertionOrder;
 
-	return $CustomerBillingProxy->GetService()->AddInsertionOrder($request);
+	return $GLOBALS['CustomerBillingProxy']->GetService()->AddInsertionOrder($request);
 }
 ```
 ```python
 response=customerbilling.AddInsertionOrder(
-	InsertionOrder=InsertionOrderHere
-)
+	InsertionOrder=InsertionOrder)
 ```
 
 ## Requirements

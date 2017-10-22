@@ -133,8 +133,11 @@ static function SuggestKeywordsForUrl(
 	$maxKeywords,
 	$minConfidenceScore,
 	$excludeBrand)
+{
 
-	$suggestKeywordsForUrlRequest = new SuggestKeywordsForUrlRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new SuggestKeywordsForUrlRequest();
 
 	$request->Url = $url;
 	$request->Language = $language;
@@ -142,17 +145,16 @@ static function SuggestKeywordsForUrl(
 	$request->MinConfidenceScore = $minConfidenceScore;
 	$request->ExcludeBrand = $excludeBrand;
 
-	return $AdInsightProxy->GetService()->SuggestKeywordsForUrl($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->SuggestKeywordsForUrl($request);
 }
 ```
 ```python
 response=adinsight.SuggestKeywordsForUrl(
-	Url=UrlHere,
-	Language=LanguageHere,
-	MaxKeywords=MaxKeywordsHere,
-	MinConfidenceScore=MinConfidenceScoreHere,
-	ExcludeBrand=ExcludeBrandHere
-)
+	Url=Url,
+	Language=Language,
+	MaxKeywords=MaxKeywords,
+	MinConfidenceScore=MinConfidenceScore,
+	ExcludeBrand=ExcludeBrand)
 ```
 
 ## Requirements

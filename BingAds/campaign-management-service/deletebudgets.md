@@ -124,18 +124,20 @@ static DeleteBudgetsResponse deleteBudgets(
 ```php
 static function DeleteBudgets(
 	$budgetIds)
+{
 
-	$deleteBudgetsRequest = new DeleteBudgetsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteBudgetsRequest();
 
 	$request->BudgetIds = $budgetIds;
 
-	return $CampaignManagementProxy->GetService()->DeleteBudgets($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteBudgets($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteBudgets(
-	BudgetIds=BudgetIdsHere
-)
+	BudgetIds=BudgetIds)
 ```
 
 ## Requirements

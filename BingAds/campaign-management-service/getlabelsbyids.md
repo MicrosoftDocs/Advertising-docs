@@ -143,20 +143,22 @@ static GetLabelsByIdsResponse getLabelsByIds(
 static function GetLabelsByIds(
 	$labelIds,
 	$pageInfo)
+{
 
-	$getLabelsByIdsRequest = new GetLabelsByIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetLabelsByIdsRequest();
 
 	$request->LabelIds = $labelIds;
 	$request->PageInfo = $pageInfo;
 
-	return $CampaignManagementProxy->GetService()->GetLabelsByIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetLabelsByIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetLabelsByIds(
-	LabelIds=LabelIdsHere,
-	PageInfo=PageInfoHere
-)
+	LabelIds=LabelIds,
+	PageInfo=PageInfo)
 ```
 
 ## Requirements

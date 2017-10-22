@@ -98,16 +98,18 @@ static GetBMCStoresByCustomerIdResponse getBMCStoresByCustomerId() throws Remote
 ```
 ```php
 static function GetBMCStoresByCustomerId()
+{
 
-	$getBMCStoresByCustomerIdRequest = new GetBMCStoresByCustomerIdRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetBMCStoresByCustomerIdRequest();
 
 
-	return $CampaignManagementProxy->GetService()->GetBMCStoresByCustomerId($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetBMCStoresByCustomerId($request);
 }
 ```
 ```python
 response=campaignmanagement.GetBMCStoresByCustomerId()
-)
 ```
 
 ## Requirements

@@ -124,18 +124,20 @@ static DeleteAudiencesResponse deleteAudiences(
 ```php
 static function DeleteAudiences(
 	$audienceIds)
+{
 
-	$deleteAudiencesRequest = new DeleteAudiencesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteAudiencesRequest();
 
 	$request->AudienceIds = $audienceIds;
 
-	return $CampaignManagementProxy->GetService()->DeleteAudiences($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteAudiences($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteAudiences(
-	AudienceIds=AudienceIdsHere
-)
+	AudienceIds=AudienceIds)
 ```
 
 ## Requirements

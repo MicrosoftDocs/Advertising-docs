@@ -119,18 +119,20 @@ static GetMediaMetaDataByAccountIdResponse getMediaMetaDataByAccountId(
 ```php
 static function GetMediaMetaDataByAccountId(
 	$mediaEnabledEntities)
+{
 
-	$getMediaMetaDataByAccountIdRequest = new GetMediaMetaDataByAccountIdRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetMediaMetaDataByAccountIdRequest();
 
 	$request->MediaEnabledEntities = $mediaEnabledEntities;
 
-	return $CampaignManagementProxy->GetService()->GetMediaMetaDataByAccountId($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetMediaMetaDataByAccountId($request);
 }
 ```
 ```python
 response=campaignmanagement.GetMediaMetaDataByAccountId(
-	MediaEnabledEntities=MediaEnabledEntitiesHere
-)
+	MediaEnabledEntities=MediaEnabledEntities)
 ```
 
 ## Requirements

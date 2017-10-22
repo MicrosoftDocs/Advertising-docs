@@ -90,7 +90,7 @@ The Campaign Management service defines the following data objects.
 |[Keyword](keyword.md)|Defines a keyword.|
 |[Label](label.md)|Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you.|
 |[LabelAssociation](labelassociation.md)|Defines the relationship between a label and campaign, ad group, ad, or keyword entity.|
-|[LocationAdExtension](locationadextension.md)|Defines an ad extension that specifies a business? address and phone number to include in a text ad.|
+|[LocationAdExtension](locationadextension.md)|Defines an ad extension that specifies a business address and phone number to include in a text ad.|
 |[LocationCriterion](locationcriterion.md)|Defines a criterion that can be used to show ads to users in a specific location.|
 |[LocationIntentCriterion](locationintentcriterion.md)|Defines a criterion that determines the intent option for all location and radius criterions of the campaign or ad group.|
 |[ManualCpcBiddingScheme](manualcpcbiddingscheme.md)|Defines an object that represents the manual CPC bid strategy type.|

@@ -134,20 +134,22 @@ static GetEstimatedPositionByKeywordIdsResponse getEstimatedPositionByKeywordIds
 static function GetEstimatedPositionByKeywordIds(
 	$keywordIds,
 	$maxBid)
+{
 
-	$getEstimatedPositionByKeywordIdsRequest = new GetEstimatedPositionByKeywordIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetEstimatedPositionByKeywordIdsRequest();
 
 	$request->KeywordIds = $keywordIds;
 	$request->MaxBid = $maxBid;
 
-	return $AdInsightProxy->GetService()->GetEstimatedPositionByKeywordIds($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetEstimatedPositionByKeywordIds($request);
 }
 ```
 ```python
 response=adinsight.GetEstimatedPositionByKeywordIds(
-	KeywordIds=KeywordIdsHere,
-	MaxBid=MaxBidHere
-)
+	KeywordIds=KeywordIds,
+	MaxBid=MaxBid)
 ```
 
 ## Requirements

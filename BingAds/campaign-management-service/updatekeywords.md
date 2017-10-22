@@ -191,20 +191,22 @@ static UpdateKeywordsResponse updateKeywords(
 static function UpdateKeywords(
 	$adGroupId,
 	$keywords)
+{
 
-	$updateKeywordsRequest = new UpdateKeywordsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new UpdateKeywordsRequest();
 
 	$request->AdGroupId = $adGroupId;
 	$request->Keywords = $keywords;
 
-	return $CampaignManagementProxy->GetService()->UpdateKeywords($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->UpdateKeywords($request);
 }
 ```
 ```python
 response=campaignmanagement.UpdateKeywords(
-	AdGroupId=AdGroupIdHere,
-	Keywords=KeywordsHere
-)
+	AdGroupId=AdGroupId,
+	Keywords=Keywords)
 ```
 
 ## Requirements

@@ -106,18 +106,20 @@ static PollGenerateReportResponse pollGenerateReport(
 ```php
 static function PollGenerateReport(
 	$reportRequestId)
+{
 
-	$pollGenerateReportRequest = new PollGenerateReportRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['ReportingProxy'];
+
+	$request = new PollGenerateReportRequest();
 
 	$request->ReportRequestId = $reportRequestId;
 
-	return $ReportingProxy->GetService()->PollGenerateReport($request);
+	return $GLOBALS['ReportingProxy']->GetService()->PollGenerateReport($request);
 }
 ```
 ```python
 response=reporting.PollGenerateReport(
-	ReportRequestId=ReportRequestIdHere
-)
+	ReportRequestId=ReportRequestId)
 ```
 
 ## Requirements

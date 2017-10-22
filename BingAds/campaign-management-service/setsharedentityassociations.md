@@ -129,18 +129,20 @@ static SetSharedEntityAssociationsResponse setSharedEntityAssociations(
 ```php
 static function SetSharedEntityAssociations(
 	$associations)
+{
 
-	$setSharedEntityAssociationsRequest = new SetSharedEntityAssociationsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new SetSharedEntityAssociationsRequest();
 
 	$request->Associations = $associations;
 
-	return $CampaignManagementProxy->GetService()->SetSharedEntityAssociations($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->SetSharedEntityAssociations($request);
 }
 ```
 ```python
 response=campaignmanagement.SetSharedEntityAssociations(
-	Associations=AssociationsHere
-)
+	Associations=Associations)
 ```
 
 ## Requirements

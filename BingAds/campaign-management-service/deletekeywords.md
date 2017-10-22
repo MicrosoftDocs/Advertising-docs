@@ -131,20 +131,22 @@ static DeleteKeywordsResponse deleteKeywords(
 static function DeleteKeywords(
 	$adGroupId,
 	$keywordIds)
+{
 
-	$deleteKeywordsRequest = new DeleteKeywordsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteKeywordsRequest();
 
 	$request->AdGroupId = $adGroupId;
 	$request->KeywordIds = $keywordIds;
 
-	return $CampaignManagementProxy->GetService()->DeleteKeywords($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteKeywords($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteKeywords(
-	AdGroupId=AdGroupIdHere,
-	KeywordIds=KeywordIdsHere
-)
+	AdGroupId=AdGroupId,
+	KeywordIds=KeywordIds)
 ```
 
 ## Requirements

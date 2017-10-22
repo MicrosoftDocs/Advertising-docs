@@ -228,20 +228,22 @@ static UpdateCampaignCriterionsResponse updateCampaignCriterions(
 static function UpdateCampaignCriterions(
 	$campaignCriterions,
 	$criterionType)
+{
 
-	$updateCampaignCriterionsRequest = new UpdateCampaignCriterionsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new UpdateCampaignCriterionsRequest();
 
 	$request->CampaignCriterions = $campaignCriterions;
 	$request->CriterionType = $criterionType;
 
-	return $CampaignManagementProxy->GetService()->UpdateCampaignCriterions($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->UpdateCampaignCriterions($request);
 }
 ```
 ```python
 response=campaignmanagement.UpdateCampaignCriterions(
-	CampaignCriterions=CampaignCriterionsHere,
-	CriterionType=CriterionTypeHere
-)
+	CampaignCriterions=CampaignCriterions,
+	CriterionType=CriterionType)
 ```
 
 ## Requirements

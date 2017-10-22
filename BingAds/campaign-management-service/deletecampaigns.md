@@ -131,20 +131,22 @@ static DeleteCampaignsResponse deleteCampaigns(
 static function DeleteCampaigns(
 	$accountId,
 	$campaignIds)
+{
 
-	$deleteCampaignsRequest = new DeleteCampaignsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new DeleteCampaignsRequest();
 
 	$request->AccountId = $accountId;
 	$request->CampaignIds = $campaignIds;
 
-	return $CampaignManagementProxy->GetService()->DeleteCampaigns($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->DeleteCampaigns($request);
 }
 ```
 ```python
 response=campaignmanagement.DeleteCampaigns(
-	AccountId=AccountIdHere,
-	CampaignIds=CampaignIdsHere
-)
+	AccountId=AccountId,
+	CampaignIds=CampaignIds)
 ```
 
 ## Requirements

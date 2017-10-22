@@ -221,22 +221,24 @@ static function GetAdGroupsByIds(
 	$campaignId,
 	$adGroupIds,
 	$returnAdditionalFields)
+{
 
-	$getAdGroupsByIdsRequest = new GetAdGroupsByIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetAdGroupsByIdsRequest();
 
 	$request->CampaignId = $campaignId;
 	$request->AdGroupIds = $adGroupIds;
 	$request->ReturnAdditionalFields = $returnAdditionalFields;
 
-	return $CampaignManagementProxy->GetService()->GetAdGroupsByIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAdGroupsByIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetAdGroupsByIds(
-	CampaignId=CampaignIdHere,
-	AdGroupIds=AdGroupIdsHere,
-	ReturnAdditionalFields=ReturnAdditionalFieldsHere
-)
+	CampaignId=CampaignId,
+	AdGroupIds=AdGroupIds,
+	ReturnAdditionalFields=ReturnAdditionalFields)
 ```
 
 ## Requirements

@@ -162,20 +162,22 @@ static AddSharedEntityResponse addSharedEntity(
 static function AddSharedEntity(
 	$sharedEntity,
 	$listItems)
+{
 
-	$addSharedEntityRequest = new AddSharedEntityRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AddSharedEntityRequest();
 
 	$request->SharedEntity = $sharedEntity;
 	$request->ListItems = $listItems;
 
-	return $CampaignManagementProxy->GetService()->AddSharedEntity($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AddSharedEntity($request);
 }
 ```
 ```python
 response=campaignmanagement.AddSharedEntity(
-	SharedEntity=SharedEntityHere,
-	ListItems=ListItemsHere
-)
+	SharedEntity=SharedEntity,
+	ListItems=ListItems)
 ```
 
 ## Requirements

@@ -152,18 +152,20 @@ static UpdateAccountResponse updateAccount(
 ```php
 static function UpdateAccount(
 	$account)
+{
 
-	$updateAccountRequest = new UpdateAccountRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new UpdateAccountRequest();
 
 	$request->Account = $account;
 
-	return $CustomerManagementProxy->GetService()->UpdateAccount($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->UpdateAccount($request);
 }
 ```
 ```python
 response=customermanagement.UpdateAccount(
-	Account=AccountHere
-)
+	Account=Account)
 ```
 
 ## Requirements

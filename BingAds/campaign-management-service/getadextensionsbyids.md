@@ -376,22 +376,24 @@ static function GetAdExtensionsByIds(
 	$accountId,
 	$adExtensionIds,
 	$adExtensionType)
+{
 
-	$getAdExtensionsByIdsRequest = new GetAdExtensionsByIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetAdExtensionsByIdsRequest();
 
 	$request->AccountId = $accountId;
 	$request->AdExtensionIds = $adExtensionIds;
 	$request->AdExtensionType = $adExtensionType;
 
-	return $CampaignManagementProxy->GetService()->GetAdExtensionsByIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAdExtensionsByIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetAdExtensionsByIds(
-	AccountId=AccountIdHere,
-	AdExtensionIds=AdExtensionIdsHere,
-	AdExtensionType=AdExtensionTypeHere
-)
+	AccountId=AccountId,
+	AdExtensionIds=AdExtensionIds,
+	AdExtensionType=AdExtensionType)
 ```
 
 ## Requirements

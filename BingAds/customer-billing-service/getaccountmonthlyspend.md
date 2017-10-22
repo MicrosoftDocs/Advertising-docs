@@ -105,20 +105,22 @@ static GetAccountMonthlySpendResponse getAccountMonthlySpend(
 static function GetAccountMonthlySpend(
 	$accountId,
 	$monthYear)
+{
 
-	$getAccountMonthlySpendRequest = new GetAccountMonthlySpendRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerBillingProxy'];
+
+	$request = new GetAccountMonthlySpendRequest();
 
 	$request->AccountId = $accountId;
 	$request->MonthYear = $monthYear;
 
-	return $CustomerBillingProxy->GetService()->GetAccountMonthlySpend($request);
+	return $GLOBALS['CustomerBillingProxy']->GetService()->GetAccountMonthlySpend($request);
 }
 ```
 ```python
 response=customerbilling.GetAccountMonthlySpend(
-	AccountId=AccountIdHere,
-	MonthYear=MonthYearHere
-)
+	AccountId=AccountId,
+	MonthYear=MonthYear)
 ```
 
 ## Requirements

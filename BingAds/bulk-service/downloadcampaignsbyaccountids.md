@@ -168,8 +168,11 @@ static function DownloadCampaignsByAccountIds(
 	$formatVersion,
 	$lastSyncTimeInUTC,
 	$performanceStatsDateRange)
+{
 
-	$downloadCampaignsByAccountIdsRequest = new DownloadCampaignsByAccountIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['BulkProxy'];
+
+	$request = new DownloadCampaignsByAccountIdsRequest();
 
 	$request->AccountIds = $accountIds;
 	$request->CompressionType = $compressionType;
@@ -180,20 +183,19 @@ static function DownloadCampaignsByAccountIds(
 	$request->LastSyncTimeInUTC = $lastSyncTimeInUTC;
 	$request->PerformanceStatsDateRange = $performanceStatsDateRange;
 
-	return $BulkProxy->GetService()->DownloadCampaignsByAccountIds($request);
+	return $GLOBALS['BulkProxy']->GetService()->DownloadCampaignsByAccountIds($request);
 }
 ```
 ```python
 response=bulk.DownloadCampaignsByAccountIds(
-	AccountIds=AccountIdsHere,
-	CompressionType=CompressionTypeHere,
-	DataScope=DataScopeHere,
-	DownloadEntities=DownloadEntitiesHere,
-	DownloadFileType=DownloadFileTypeHere,
-	FormatVersion=FormatVersionHere,
-	LastSyncTimeInUTC=LastSyncTimeInUTCHere,
-	PerformanceStatsDateRange=PerformanceStatsDateRangeHere
-)
+	AccountIds=AccountIds,
+	CompressionType=CompressionType,
+	DataScope=DataScope,
+	DownloadEntities=DownloadEntities,
+	DownloadFileType=DownloadFileType,
+	FormatVersion=FormatVersion,
+	LastSyncTimeInUTC=LastSyncTimeInUTC,
+	PerformanceStatsDateRange=PerformanceStatsDateRange)
 ```
 
 ## Requirements

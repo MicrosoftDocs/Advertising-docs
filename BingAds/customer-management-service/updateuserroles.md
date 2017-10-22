@@ -155,8 +155,11 @@ static function UpdateUserRoles(
 	$deleteRoleId,
 	$deleteAccountIds,
 	$deleteCustomerIds)
+{
 
-	$updateUserRolesRequest = new UpdateUserRolesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new UpdateUserRolesRequest();
 
 	$request->CustomerId = $customerId;
 	$request->UserId = $userId;
@@ -167,20 +170,19 @@ static function UpdateUserRoles(
 	$request->DeleteAccountIds = $deleteAccountIds;
 	$request->DeleteCustomerIds = $deleteCustomerIds;
 
-	return $CustomerManagementProxy->GetService()->UpdateUserRoles($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->UpdateUserRoles($request);
 }
 ```
 ```python
 response=customermanagement.UpdateUserRoles(
-	CustomerId=CustomerIdHere,
-	UserId=UserIdHere,
-	NewRoleId=NewRoleIdHere,
-	NewAccountIds=NewAccountIdsHere,
-	NewCustomerIds=NewCustomerIdsHere,
-	DeleteRoleId=DeleteRoleIdHere,
-	DeleteAccountIds=DeleteAccountIdsHere,
-	DeleteCustomerIds=DeleteCustomerIdsHere
-)
+	CustomerId=CustomerId,
+	UserId=UserId,
+	NewRoleId=NewRoleId,
+	NewAccountIds=NewAccountIds,
+	NewCustomerIds=NewCustomerIds,
+	DeleteRoleId=DeleteRoleId,
+	DeleteAccountIds=DeleteAccountIds,
+	DeleteCustomerIds=DeleteCustomerIds)
 ```
 
 ## <a name="remarks"></a>Remarks

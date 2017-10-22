@@ -120,22 +120,24 @@ static function GetDomainCategories(
 	$categoryName,
 	$domainName,
 	$language)
+{
 
-	$getDomainCategoriesRequest = new GetDomainCategoriesRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetDomainCategoriesRequest();
 
 	$request->CategoryName = $categoryName;
 	$request->DomainName = $domainName;
 	$request->Language = $language;
 
-	return $AdInsightProxy->GetService()->GetDomainCategories($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetDomainCategories($request);
 }
 ```
 ```python
 response=adinsight.GetDomainCategories(
-	CategoryName=CategoryNameHere,
-	DomainName=DomainNameHere,
-	Language=LanguageHere
-)
+	CategoryName=CategoryName,
+	DomainName=DomainName,
+	Language=Language)
 ```
 
 ## Requirements

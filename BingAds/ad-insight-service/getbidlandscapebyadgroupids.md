@@ -134,18 +134,20 @@ static GetBidLandscapeByAdGroupIdsResponse getBidLandscapeByAdGroupIds(
 ```php
 static function GetBidLandscapeByAdGroupIds(
 	$adGroupBidLandscapeInputs)
+{
 
-	$getBidLandscapeByAdGroupIdsRequest = new GetBidLandscapeByAdGroupIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['AdInsightProxy'];
+
+	$request = new GetBidLandscapeByAdGroupIdsRequest();
 
 	$request->AdGroupBidLandscapeInputs = $adGroupBidLandscapeInputs;
 
-	return $AdInsightProxy->GetService()->GetBidLandscapeByAdGroupIds($request);
+	return $GLOBALS['AdInsightProxy']->GetService()->GetBidLandscapeByAdGroupIds($request);
 }
 ```
 ```python
 response=adinsight.GetBidLandscapeByAdGroupIds(
-	AdGroupBidLandscapeInputs=AdGroupBidLandscapeInputsHere
-)
+	AdGroupBidLandscapeInputs=AdGroupBidLandscapeInputs)
 ```
 
 ## Requirements

@@ -16,7 +16,7 @@ The *AppealEditorialRejectionsRequest* object defines the [body](#request-body) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="entityidtoparentidassociations"></a>EntityIdToParentIdAssociations|A list of unique identifiers of the ads or keywords that failed editorial review. The list can contain a maximum of 1,000 [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) objects.<br /><br />You submit each ad or keyword identifier with their respective ad group parent identifier in a [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) object. The list of [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) must include either ad identifiers or keyword identifiers ? the list cannot include a mix ad and keyword entity identifiers.<br /><br />If an entity in the list has already been approved, the entity is ignored. If an entity in the list is not appealable, the call fails. If an entity in the list has an appeal pending, this request supersedes the pending request.|[EntityIdToParentIdAssociation](entityidtoparentidassociation.md) array|
+|<a name="entityidtoparentidassociations"></a>EntityIdToParentIdAssociations|A list of unique identifiers of the ads or keywords that failed editorial review. The list can contain a maximum of 1,000 [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) objects.<br /><br />You submit each ad or keyword identifier with their respective ad group parent identifier in a [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) object. The list of [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) must include either ad identifiers or keyword identifiers. The list cannot include a mix ad and keyword entity identifiers.<br /><br />If an entity in the list has already been approved, the entity is ignored. If an entity in the list is not appealable, the call fails. If an entity in the list has an appeal pending, this request supersedes the pending request.|[EntityIdToParentIdAssociation](entityidtoparentidassociation.md) array|
 |<a name="entitytype"></a>EntityType|The type of entity that the entity to parent list contains. The supported values are *Ad* and *Keyword*.|[EntityType](entitytype.md)|
 |<a name="justificationtext"></a>JustificationText|The justification for the appeal. The string can contain a maximum of 1,000 characters. The justification applies to all of the specified entities.<br /><br /> A useful justification should include reasons why the ad or keyword is compliant with editorial policy for example, *JustificationText = "my ads for paint guns are not firearms, they are painting tools"*.|**string**|
 
@@ -141,22 +141,24 @@ static function AppealEditorialRejections(
 	$entityIdToParentIdAssociations,
 	$entityType,
 	$justificationText)
+{
 
-	$appealEditorialRejectionsRequest = new AppealEditorialRejectionsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new AppealEditorialRejectionsRequest();
 
 	$request->EntityIdToParentIdAssociations = $entityIdToParentIdAssociations;
 	$request->EntityType = $entityType;
 	$request->JustificationText = $justificationText;
 
-	return $CampaignManagementProxy->GetService()->AppealEditorialRejections($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->AppealEditorialRejections($request);
 }
 ```
 ```python
 response=campaignmanagement.AppealEditorialRejections(
-	EntityIdToParentIdAssociations=EntityIdToParentIdAssociationsHere,
-	EntityType=EntityTypeHere,
-	JustificationText=JustificationTextHere
-)
+	EntityIdToParentIdAssociations=EntityIdToParentIdAssociations,
+	EntityType=EntityType,
+	JustificationText=JustificationText)
 ```
 
 ## Requirements

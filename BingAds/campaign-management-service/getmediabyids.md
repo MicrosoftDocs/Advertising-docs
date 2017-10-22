@@ -120,20 +120,22 @@ static GetMediaByIdsResponse getMediaByIds(
 static function GetMediaByIds(
 	$accountId,
 	$mediaIds)
+{
 
-	$getMediaByIdsRequest = new GetMediaByIdsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
+
+	$request = new GetMediaByIdsRequest();
 
 	$request->AccountId = $accountId;
 	$request->MediaIds = $mediaIds;
 
-	return $CampaignManagementProxy->GetService()->GetMediaByIds($request);
+	return $GLOBALS['CampaignManagementProxy']->GetService()->GetMediaByIds($request);
 }
 ```
 ```python
 response=campaignmanagement.GetMediaByIds(
-	AccountId=AccountIdHere,
-	MediaIds=MediaIdsHere
-)
+	AccountId=AccountId,
+	MediaIds=MediaIds)
 ```
 
 ## Requirements

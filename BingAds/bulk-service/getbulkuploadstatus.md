@@ -120,18 +120,20 @@ static GetBulkUploadStatusResponse getBulkUploadStatus(
 ```php
 static function GetBulkUploadStatus(
 	$requestId)
+{
 
-	$getBulkUploadStatusRequest = new GetBulkUploadStatusRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['BulkProxy'];
+
+	$request = new GetBulkUploadStatusRequest();
 
 	$request->RequestId = $requestId;
 
-	return $BulkProxy->GetService()->GetBulkUploadStatus($request);
+	return $GLOBALS['BulkProxy']->GetService()->GetBulkUploadStatus($request);
 }
 ```
 ```python
 response=bulk.GetBulkUploadStatus(
-	RequestId=RequestIdHere
-)
+	RequestId=RequestId)
 ```
 
 ## Requirements

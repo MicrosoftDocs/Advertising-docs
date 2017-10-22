@@ -182,22 +182,24 @@ static function SearchAccounts(
 	$predicates,
 	$ordering,
 	$pageInfo)
+{
 
-	$searchAccountsRequest = new SearchAccountsRequest();
+	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
+
+	$request = new SearchAccountsRequest();
 
 	$request->Predicates = $predicates;
 	$request->Ordering = $ordering;
 	$request->PageInfo = $pageInfo;
 
-	return $CustomerManagementProxy->GetService()->SearchAccounts($request);
+	return $GLOBALS['CustomerManagementProxy']->GetService()->SearchAccounts($request);
 }
 ```
 ```python
 response=customermanagement.SearchAccounts(
-	Predicates=PredicatesHere,
-	Ordering=OrderingHere,
-	PageInfo=PageInfoHere
-)
+	Predicates=Predicates,
+	Ordering=Ordering,
+	PageInfo=PageInfo)
 ```
 
 ## Requirements
