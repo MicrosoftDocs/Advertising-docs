@@ -2,6 +2,7 @@
 title: "Error Codes and Messages"
 ms.service: "hotel-ads-transaction-message"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "swhite-msft"
 ms.author: "scottwhi"
 description: 

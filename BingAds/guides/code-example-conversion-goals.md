@@ -2,6 +2,7 @@
 title: "Conversion Goals Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Setup conversion goals in C#, Java, PHP, or Python.

@@ -2,6 +2,7 @@
 title: "Keyword First Page Bid"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "eric-urban"
 ms.author: "eur"
 dev_langs:

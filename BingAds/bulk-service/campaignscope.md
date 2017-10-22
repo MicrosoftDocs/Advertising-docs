@@ -1,7 +1,8 @@
 ---
 title: CampaignScope Data Object - Bulk
 ms.service: bing-ads-bulk-service
-ms.topic: article
+ms.topic: "article"
+ms.date: 11/1/2017
 author: eric-urban
 ms.author: eur
 description: Defines an object that identifies a campaign to download.

@@ -2,6 +2,7 @@
 title: "Keyword Ideas and Traffic Estimates"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Get keyword ideas and traffic estimates.

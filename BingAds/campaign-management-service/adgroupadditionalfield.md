@@ -1,7 +1,8 @@
 ---
 title: AdGroupAdditionalField Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: article
+ms.topic: "article"
+ms.date: 11/1/2017
 author: eric-urban
 ms.author: eur
 description: Defines a list of optional AdGroup properties that you can request when calling [GetAdGroupsByCampaignId](../campaign-management-service/getadgroupsbycampaignid.md) and [GetAdGroupsByIds](../campaign-management-service/getadgroupsbyids.md).

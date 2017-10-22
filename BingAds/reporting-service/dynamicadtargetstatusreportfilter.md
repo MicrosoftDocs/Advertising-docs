@@ -1,7 +1,8 @@
 ---
 title: DynamicAdTargetStatusReportFilter Value Set - Reporting
 ms.service: bing-ads-reporting-service
-ms.topic: article
+ms.topic: "article"
+ms.date: 11/1/2017
 author: eric-urban
 ms.author: eur
 description: Defines the dynamic ad target status values that you can use to filter the report data.

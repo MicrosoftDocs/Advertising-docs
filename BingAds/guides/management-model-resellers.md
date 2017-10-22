@@ -2,6 +2,7 @@
 title: "Management Model for Resellers"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "eric-urban"
 ms.author: "eur"
 description: A reseller can programmatically create new customer accounts and gets billed by invoice for all advertising costs incurred by their customers.

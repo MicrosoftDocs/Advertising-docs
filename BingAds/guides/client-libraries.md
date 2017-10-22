@@ -2,6 +2,7 @@
 title: "Bing Ads Client Libraries"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "eric-urban"
 ms.author: "eur"
 description: The Bing Ads Software Development Kits enhance the experience of developing Bing Ads applications with .NET, Java, PHP, and Python languages.

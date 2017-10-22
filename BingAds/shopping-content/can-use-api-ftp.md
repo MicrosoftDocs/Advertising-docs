@@ -2,6 +2,7 @@
 title: "Can I Use the API and FTP?"
 ms.service: "shopping-content-api"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "swhite-msft"
 ms.author: "scottwhi"
 description: 

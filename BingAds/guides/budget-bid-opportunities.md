@@ -2,6 +2,7 @@
 title: "Budget and Bid Opportunities"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Discover bid and budget opportunities.

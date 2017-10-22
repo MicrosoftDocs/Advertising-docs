@@ -2,6 +2,7 @@
 title: "Offline Conversion"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
+ms.date: 11/1/2017
 ---
 # Offline Conversion
 Defines an offline conversion that can be uploaded in a bulk file.

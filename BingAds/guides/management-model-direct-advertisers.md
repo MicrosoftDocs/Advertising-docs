@@ -2,6 +2,7 @@
 title: "Management Model for Direct Advertisers"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "eric-urban"
 ms.author: "eur"
 description: A direct advertiser builds a Bing Ads application for its own advertising campaigns and is billed directly by Bing Ads for valid ad clicks.

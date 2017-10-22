@@ -1,7 +1,8 @@
 ---
 title: ApplyProductPartitionActions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: article
+ms.topic: "article"
+ms.date: 11/1/2017
 author: eric-urban
 ms.author: eur
 description: Applies an add, update, or delete action to each of the specified BiddableAdGroupCriterion or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md), which each contain a [ProductPartition](../campaign-management-service/productpartition.md).

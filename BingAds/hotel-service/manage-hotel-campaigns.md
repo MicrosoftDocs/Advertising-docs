@@ -2,6 +2,7 @@
 title: "Manage Hotel Ad Campaigns"
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "swhite-msft"
 ms.author: "scottwhi"
 description: 

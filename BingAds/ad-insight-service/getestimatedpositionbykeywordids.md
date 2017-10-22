@@ -1,7 +1,8 @@
 ---
 title: GetEstimatedPositionByKeywordIds Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
-ms.topic: article
+ms.topic: "article"
+ms.date: 11/1/2017
 author: eric-urban
 ms.author: eur
 description: Gets the estimated position in the search results if the specified bid value had been used for the keywords in the last 7 days.

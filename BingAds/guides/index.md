@@ -2,6 +2,7 @@
 title: "Bing Ads API Overview"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Find out if the Bing Ads API is right for you. 

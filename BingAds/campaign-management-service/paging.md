@@ -1,7 +1,8 @@
 ---
 title: Paging Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: article
+ms.topic: "article"
+ms.date: 11/1/2017
 author: eric-urban
 ms.author: eur
 description: Defines a paging object that you can use to request labels and label associations in batches.

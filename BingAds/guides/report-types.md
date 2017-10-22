@@ -2,6 +2,7 @@
 title: "Report Types"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Each report type aggregates the data at a different level or with a different focus.

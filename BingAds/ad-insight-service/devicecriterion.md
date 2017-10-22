@@ -1,7 +1,8 @@
 ---
 title: DeviceCriterion Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
-ms.topic: article
+ms.topic: "article"
+ms.date: 11/1/2017
 author: eric-urban
 ms.author: eur
 description: The device criterion that you can include when requesting keyword ideas or traffic estimates.

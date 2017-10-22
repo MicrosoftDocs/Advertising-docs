@@ -2,6 +2,7 @@
 title: "Management Model for Agencies"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "eric-urban"
 ms.author: "eur"
 description: An agency builds a Bing Ads application for their company to manage the campaigns of their advertising clients.

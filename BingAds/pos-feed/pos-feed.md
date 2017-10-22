@@ -2,6 +2,7 @@
 title: "Points of Sale Feed"
 ms.service: "hotel-ads-pos-feed"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "swhite-msft"
 ms.author: "scottwhi"
 description: 

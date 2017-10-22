@@ -2,6 +2,7 @@
 title: "Bing Ads Technical Guides"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "eric-urban"
 ms.author: "eur"
 description: The technical guides describe core advertising scenarios using Bing Ads services.

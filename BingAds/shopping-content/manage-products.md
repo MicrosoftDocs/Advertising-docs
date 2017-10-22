@@ -2,6 +2,7 @@
 title: "Managing your Products"
 ms.service: "shopping-content-api"
 ms.topic: "article"
+ms.date: 11/1/2017
 author: "swhite-msft"
 ms.author: "scottwhi"
 description: 
