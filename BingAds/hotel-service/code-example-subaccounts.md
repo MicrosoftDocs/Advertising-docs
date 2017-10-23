@@ -1,23 +1,26 @@
 ---
-title: "Hotel Group Code Example"
+title: "Subaccount Code Example"
+description: Shows hot to list, get, and update hotel subaccounts.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
 ms.date: 11/1/2017
 author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
-description: 
 dev_langs:
   - csharp
+ms.date: 11/1/2017
 ---
-# Hotel Group Code Example
-The following example shows the requests you use to list, get, add, and update hotel groups. 
+
+# Subaccount code example
+
+The following example shows the requests you use to list, get, and update subaccounts. 
 
 For details about the elements used in this example, see the [reference](../hotel-service/reference.md) section. 
 
-For additional information, see [Working with hotel groups](../hotel-service/manage-hotel-campaigns.md#workingwithhotelgroups). 
+For additional information, see [Working with subaccounts](../hotel-service/manage-hotel-campaigns.md#workingwithsubaccounts). 
 
-The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Get Started](../transaction-message/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-service/code-example-oauth.md).
-
+The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Getting Started](../hotel-service/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-service/code-example-oauth.md).
 
 ```csharp
 using System;
@@ -32,7 +35,7 @@ using System.Web;
 using Newtonsoft.Json;       // NuGet Json.NET
 using Newtonsoft.Json.Linq;
 
-namespace ListHotelGroups
+namespace ListSubAccounts
 {
     class Program
     {
@@ -40,18 +43,16 @@ namespace ListHotelGroups
         // registered your application.
 
         private static string clientId = "<clientidgoeshere>";
-        private static string clientSecret = null;  // Desktop app, so no secret.
-        private static string storedRefreshToken = "<refreshtokengoeshere";
+        private static string clientSecret = null;  // Desktop app, so there's no secret
+        private static string storedRefreshToken = "<refreshtokengoeshere>"; 
 
         private static string customerId = "<customeridgoeshere>";
         private static string accountId = "<accountidgoeshere>";
-        private static string subaccountId = "<subaccountgoeshere>";
-        private static string hotelGroupId = null;
 
 
         private static string BaseUri = "https://partner.api.sandbox.bingads.microsoft.com/Travel/V1";
-        private static string HotelGroupsTemplate = "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups";
-        private static string HotelGroupTemplate = "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups('{3}')";
+        private static string SubaccountsTemplate = "/Customers({0})/Accounts({1})/SubAccounts";
+        private static string SubaccountTemplate = "/Customers({0})/Accounts({1})/SubAccounts('{2}')";
 
 
         static void Main(string[] args)
@@ -61,112 +62,131 @@ namespace ListHotelGroups
                 // TODO: Add the calls to the OAuth code that you use to get the access and 
                 // refresh tokens. Consider using the Bing Ads SDK to get the tokens.
 
+                tokens = GetOauthTokens(storedRefreshToken);
 
                 if (tokens.AccessToken != null)
                 {
                     var headers = new WebHeaderCollection();
                     headers.Add(HttpRequestHeader.Authorization, "Bearer " + tokens.AccessToken);
 
-                    Console.WriteLine("**** Listing hotel groups ****");
+                    Console.WriteLine("**** Getting the list of subaccounts ****\n");
 
-                    var uri = string.Format(BaseUri + HotelGroupsTemplate, customerId, accountId, subaccountId);
+                    var uri = string.Format(BaseUri + SubaccountsTemplate, customerId, accountId);
                     var collection = GetResource(uri, headers, typeof(CollectionResponse)) as CollectionResponse;
-                    PrintHotelGroups(collection.value);
+                    PrintSubAccounts(collection.value);
 
                     // Creates a list of bid multipliers.
 
-                    var multipliers = new List<object>();
-                    //multipliers.Add(new UserCountryMultiplier()
-                    //{
+                    //var multipliers = new List<object>();
+                    //multipliers.Add(new UserCountryMultiplier() {
                     //    Factor = 1.1,
                     //    Countries = new[] { "US" }.ToList<string>(),
                     //    type = "#Model.UserCountryMultiplier"
                     //});
-                    multipliers.Add(new DeviceTypeMultiplier()
-                    {
-                        Factor = .65,
-                        DeviceTypes = new[] { "Desktop" }.ToList<string>(),
-                        type = "#Model.DeviceMultiplier"
-                    });
-                    //multipliers.Add(new LengthOfStayMultiplier()
-                    //{
+                    //multipliers.Add(new SiteMultiplier() {
+                    //    Factor = .85,
+                    //    Sites = new[] { "LocalUniversal", "MapResults" }.ToList<string>(),
+                    //    type = "#Model.SiteMultiplier"
+                    //});
+                    //multipliers.Add(new DeviceTypeMultiplier() {
+                    //    Factor = .65,
+                    //    DeviceTypes = new[] { "Desktop" }.ToList<string>(),
+                    //    type = "#Model.DeviceMultiplier"
+                    //});
+                    //multipliers.Add(new LengthOfStayMultiplier() {
                     //    Factor = 1.3,
-                    //    MinimumNumberOfNights = 7,
+                    //    MinimumNumberOfNights = 5,
                     //    type = "#Model.LengthOfStayMultiplier"
                     //});
-                    ////multipliers.Add(new DateTypeMultiplier()
-                    ////{
+                    ////multipliers.Add(new DateTypeMultiplier() {
                     ////    Factor = .35,
-                    ////    DateType = "Default",
+                    ////    DateType = "Selected",
                     ////    type = "#Model.DateTypeMultiplier"
                     ////});
-                    //multipliers.Add(new CheckinDayOfWeekMultiplier()
-                    //{
-                    //    Factor = 1.5,
+                    //multipliers.Add(new CheckinDayOfWeekMultiplier() {
+                    //    Factor = 1.2,
                     //    DaysOfWeek = new[] { "Thursday", "Friday", "Saturday" }.ToList<string>(),
                     //    type = "#Model.CheckinDayOfWeekMultiplier"
                     //});
                     //multipliers.Add(new CheckinDayOfWeekMultiplier()
                     //{
-                    //    Factor = 2.5,
+                    //    Factor = .9,
                     //    DaysOfWeek = new[] { "Sunday", "Monday" }.ToList<string>(),
                     //    type = "#Model.CheckinDayOfWeekMultiplier"
                     //});
-                    //multipliers.Add(new AdvanceWindowBookingMultiplier()
-                    //{
+                    //multipliers.Add(new AdvanceWindowBookingMultiplier() {
                     //    Factor = 1.3,
                     //    MinimumNumberOfDays = 3,
                     //    type = "#Model.AdvanceBookingWindowMultiplier"
                     //});
 
-                    // Create the hotel group to add. Not specifying the bid
-                    // and multipliers, so they inherit from the subaccount.
+                    //SubAccount subaccount = new SubAccount()
+                    //{
+                    //    Name = "scottwhi-test",
+                    //    DailyBudget = new Budget()
+                    //    {
+                    //        Amount = 125.25
+                    //    },
+                    //    MaximumBid = new FixedBid()
+                    //    {
+                    //        Amount = 5.0,
+                    //        type = "#Model.FixedBid"
+                    //    },
+                    //    Bid = new FixedBid()
+                    //    {
+                    //        Amount = 2.75,
+                    //        type = "#Model.FixedBid"
+                    //    },
+                    //    BidMultipliers = multipliers
+                    //};
 
-                    HotelGroup hotelGroup = new HotelGroup()
+                    //// NOTE: Adding the subaccount will fail because Bing currently allows only one subaccount.
+
+                    //Console.WriteLine("**** Adding a subaccounts ****\n");
+
+                    //var subaccountId = AddUpdateResource(uri, headers, subaccount, typeof(SubAccount)) as string;
+                    //Console.WriteLine("Added subaccount {0}.\n", subaccountId); // ID of new subaccount
+
+                    //Console.WriteLine("**** Getting the list of subaccounts after adding a subaccount ****\n");
+
+                    //collection = GetResource(uri, headers, typeof(CollectionResponse)) as CollectionResponse;
+                    //PrintSubAccounts(collection.value);
+
+
+                    var subaccountId = ((JObject)collection.value[0]).ToObject<SubAccount>().Id;
+
+
+                    // Specify only the fields of the subaccount that you want to update.
+
+                    SubAccount subaccountToUpdate = new SubAccount()
                     {
-                        Name = "summer sale",
-                        //Bid = new FixedBid()
+                        Id = subaccountId,
+                        //DailyBudget = new Budget()
                         //{
-                        //    Amount = 2.75,
+                        //    Amount = 125.25
+                        //},
+                        //MaximumBid = new FixedBid()
+                        //{
+                        //    Amount = 10.0,
                         //    type = "#Model.FixedBid"
                         //},
+                        Bid = new FixedBid()
+                        {
+                            Amount = 3.48,
+                            type = "#Model.FixedBid"
+                        },
                         //BidMultipliers = multipliers
                     };
 
-                    Console.WriteLine("**** Adding hotel group ****");
+                    Console.WriteLine("**** Updating subaccount {0} ****\n", subaccountId);
 
-                    var hotelGroupId = AddUpdateResource(uri, headers, hotelGroup, typeof(HotelGroup)) as string;
-                    Console.WriteLine("Added hotel group {0}.\n", hotelGroupId); // ID of new hotel group
+                    uri = string.Format(BaseUri + SubaccountTemplate, customerId, accountId, subaccountId);
+                    AddUpdateResource(uri, headers, subaccountToUpdate, typeof(SubAccount), "PATCH");
 
-                    Console.WriteLine("**** Listing hotel groups after adding group ****");
+                    Console.WriteLine("**** Getting subaccount {0} after update ****\n", subaccountId);
 
-                    collection = GetResource(uri, headers, typeof(CollectionResponse)) as CollectionResponse;
-                    PrintHotelGroups(collection.value);
-
-
-                    // Specify only the fields of the hotel group that you want to update.
-
-                    var hotelGroupToUpdate = new HotelGroup()
-                    {
-                        Id = hotelGroupId,
-                        //Bid = new FixedBid()
-                        //{
-                        //    Amount = 4.75,
-                        //    type = "#Model.FixedBid"
-                        //},
-                        BidMultipliers = multipliers
-                    };
-
-                    Console.WriteLine("**** Updating hotel group {0} ****\n", hotelGroupId);
-
-                    uri = string.Format(BaseUri + HotelGroupTemplate, customerId, accountId, subaccountId, hotelGroupId);
-                    AddUpdateResource(uri, headers, hotelGroup, typeof(HotelGroup), "PATCH");
-
-                    Console.WriteLine("**** Getting hotel group {0} after update ****\n", hotelGroupId);
-
-                    var group = GetResource(uri, headers, typeof(HotelGroup)) as HotelGroup;
-                    PrintHotelGroup(group);
-
+                    var updatedSubaccount = GetResource(uri, headers, typeof(SubAccount)) as SubAccount;
+                    PrintSubAccount(updatedSubaccount);
                 }
 
             }
@@ -178,7 +198,7 @@ namespace ListHotelGroups
                 Console.WriteLine("\n" + e.Message);
 
                 // If the request is bad, the API returns the errors in the 
-                // body of the request. 
+                // body of the response. 
 
                 if (response != null &&
                     (HttpStatusCode.BadRequest == response.StatusCode))
@@ -263,38 +283,31 @@ namespace ListHotelGroups
 
 
 
-        private static void PrintHotelGroups(List<object> groups)
+        private static void PrintSubAccounts(List<object> subaccounts)
         {
-            foreach (var group in groups)
+            foreach (var subaccount in subaccounts)
             {
-                var g = ((JObject)group).ToObject<HotelGroup>();
+                var s = ((JObject)subaccount).ToObject<SubAccount>();
 
-                PrintHotelGroup(g);
+                PrintSubAccount(s);
             }
-
         }
 
 
-        private static void PrintHotelGroup(HotelGroup group)
+        private static void PrintSubAccount(SubAccount subaccount)
         {
-            Console.WriteLine("Group name: " + group.Name);
-            Console.WriteLine("Group ID: " + group.Id);
-            Console.WriteLine("Group status: " + group.Status);
-            Console.WriteLine("Bid source: " + ((group.BidSource != null) ? group.BidSource : string.Empty));
+            Console.WriteLine("Campaign name: " + subaccount.Name);
+            Console.WriteLine("Campaign ID: " + subaccount.Id);
+            Console.WriteLine("Campaign status: " + subaccount.Status);
+            Console.WriteLine("Daily budget: " + subaccount.DailyBudget.Amount);
+            Console.WriteLine("Maximum bid: " + subaccount.MaximumBid.Amount);
 
-            if (group.Bid != null)
-            {
-                var b = ((JObject)group.Bid).ToObject<Bid>();
-                Console.WriteLine("{0}: {1}", (b.GetBidType() == "FixedBid") ? "Fixed bid" : "Percentage bid", b.Amount);
-            }
-            else
-            {
-                Console.WriteLine("Bid:");
-            }
+            var b = ((JObject)subaccount.Bid).ToObject<Bid>();
+            Console.WriteLine("{0}: {1}", (b.GetBidType() == "FixedBid") ? "Fixed bid" : "Percentage bid", b.Amount);
 
-            if (group.BidMultipliers != null && group.BidMultipliers.Count > 0)
+            if (subaccount.BidMultipliers != null && subaccount.BidMultipliers.Count > 0)
             {
-                foreach (var multiplier in group.BidMultipliers)
+                foreach (var multiplier in subaccount.BidMultipliers)
                 {
                     var m = ((JObject)multiplier).ToObject<Multiplier>();
                     Console.WriteLine("{0}: {1}", m.GetMultiplierType(), m.Factor);
@@ -364,16 +377,12 @@ namespace ListHotelGroups
                             }
                         default: break;
                     }
+
+                    Console.WriteLine();
                 }
-            }
-            else
-            {
-                Console.WriteLine("Multipliers:");
-            }
 
-            Console.WriteLine();
+            }
         }
-
 
 
         private static void PrintErrors(List<object> errors)
@@ -391,21 +400,17 @@ namespace ListHotelGroups
 }
 
 
-// Defines a hotel group.
+// Defines a subaccount (or hotel campaign).
 
-class HotelGroup
+class SubAccount
 {
     public string Id { get; set; }
-
     public string Name { get; set; }
-
     public string Status { get; set; }
-
+    public Budget DailyBudget { get; set; }
+    public FixedBid MaximumBid { get; set; }
     public object Bid { get; set; }
-
     public List<object> BidMultipliers { get; set; }
-
-    public string BidSource { get; set; }
 }
 
 // Defines a daily budget that spread throughout the day.
@@ -510,7 +515,6 @@ class CheckinDayOfWeekMultiplier : Multiplier
 
 class DateTypeMultiplier : Multiplier
 {
-    //public List<string> DateType { get; set; }
     public string DateType { get; set; }
 }
 
@@ -522,16 +526,11 @@ class AddResponse
 {
     // Contains the ID of the newly added resource.
     public string value { get; set; }
-
-    // The data type of the content in the value field.
-
-    [JsonProperty("@odata.context")]
-    public string context { get; set; }
 }
 
 
 // Defines the response object for GETs that return
-// lists of resources (i.e., /SubAccounts('12345')/HotelGroups).
+// lists of resources (i.e., /Subaccounts).
 
 class CollectionResponse
 {
@@ -539,23 +538,12 @@ class CollectionResponse
 
     public List<object> value { get; set; }
 
-    // The data type of the content in the value field.
-
-    [JsonProperty("@odata.context")]
-    public string context { get; set; }
-
     // The number of resources in the value list. The object
     // include this field only if the request specifies the $count query parameter.
 
     [JsonProperty("@odata.count")]
     public UInt32 count { get; set; }
 
-    // Gets the type of resouce from the context field.
-
-    public string GetReourceType()
-    {
-        return context.Substring(context.LastIndexOf('#') + 1);
-    }
 }
 
 

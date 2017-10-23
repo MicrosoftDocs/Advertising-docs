@@ -1,16 +1,20 @@
 ---
 title: "Creating a Transaction Message"
+description: Shows how to create a transaction message that describes your hotels' itineraries.
 ms.service: "hotel-ads-transaction-message"
 ms.topic: "article"
 ms.date: 11/1/2017
 author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
+manager: ehansen
+ms.date: 11/1/2017
 ---
-# Creating a Transaction Message
+
+# Create a Transaction Message
+
 To provide Bing your hotel pricing and availability data, create an XML document that contains a transaction message. The transaction message contains a list of check-in dates, lengths of stay, and pricing. 
 
-Transaction messages may contain up to 90 days of advanced booking, and each booking may specify up to a 14 nights stay. A check-in date and length of stay is referred to as an itinerary. If you specify the maximum number of itineraries, the message would contain 1,260 itineraries.
+Transaction messages may contain up to 180 days of advanced booking, and each booking may specify up to a 14 nights stay. A check-in date and length of stay is referred to as an itinerary. If you specify the maximum number of itineraries, the message would contain 2,520 itineraries.
 
 Transaction messages are limited to 100 MB of uncompressed data or 10 MB of compressed data (using GZip compression). To reduce network traffic, you should send compressed data.
 
@@ -19,7 +23,7 @@ A transaction message should contain only itineraries that you're adding or upda
 The document must use UTF-8 encoding and must conform to the [Transaction XSD](https://bhacstatic.blob.core.windows.net/schemas/transaction.xsd). 
 
 > [!IMPORTANT]
-> You must read and follow all Hotel Ads policies. For the list of policies, see [Pilot programs policies](https://advertise.bingads.microsoft.com/en-us/resources/policies/pilot-programs#hotel%20Ads).
+> You must read and follow all Hotel Ads policies. For the list of policies, see [Pilot programs policies](https://advertise.bingads.microsoft.com/en-us/resources/policies/pilot-programs#Hotel%20Ads).
 
 > [!NOTE]
 > Bing does not support all Transaction XSD elements. Bing ignores any element or attribute in the message that it does not support. The [Transaction Message Reference](../transaction-message/reference.md) includes only those elements and attributes that Bing supports. 
@@ -50,14 +54,14 @@ The `Transaction` element contains a list of [Result](../transaction-message/ref
 The following shows a `Result` element that specifies the required child elements.
 
 ```xml
-<Result>
-  <Property>13579</Property>
-  <Checkin>2017-06-10</Checkin>
-  <Nights>2</Nights>
-  <Baserate currency="USD">159.99</Baserate>
-  <Tax currency="USD">20.00</Tax>
-  <OtherFees currency="USD">4.00</OtherFees>
-</Result>
+  <Result>
+    <Property>13579</Property>
+    <Checkin>2017-06-10</Checkin>
+    <Nights>2</Nights>
+    <Baserate currency="USD">159.99</Baserate>
+    <Tax currency="USD">20.00</Tax>
+    <OtherFees currency="USD">4.00</OtherFees>
+  </Result>
 ```
 
 The `Property` ID must match the ID of a property in your hotel feed file. The `Checkin` date must be within the 90-day advanced booking window, and `Nights` must be in the range 1 through 14.
@@ -109,28 +113,31 @@ If you allow five days advanced booking and stays of up to three-nights, your me
 </Transaction>
 ```
 
-After your message that defines the 15 itineraries, each subsequent message would include only those itineraries that changed. For example, pricing or availability changes.
+After defining the 15 itineraries, each subsequent message would include only those itineraries that changed. For example, pricing or availability changes.
+
+## Removing itineraries
 
 To remove an itinerary, set its `Baserate`, `Tax`, and `OtherFees` elements to -1.00. Bing automatically removes itineraries with check in dates that have past. 
 
+## Using the optional Result elements
 
 The following shows a `Result` element that includes the optional child elements.
 
 ```xml
-<Result>
-  <Property>13579</Property>
-  <Checkin>2017-06-10</Checkin>
-  <Nights>2</Nights>
-  <Baserate currency="USD">159.99</Baserate>
-  <Tax currency="USD">20.00</Tax>
-  <OtherFees currency="USD">4.00</OtherFees>
-  <ChargeCurrency>deposit</ChargeCurrency>
-  <Custom1>summer2017</Custom1>
-  <AllowablePointsOfSale>
-    <PointOfSale id="mobile"/>
-    <PointOfSale id="desktop"/>
-  </AllowablePointsOfSale>
-</Result>
+  <Result>
+    <Property>13579</Property>
+    <Checkin>2017-06-10</Checkin>
+    <Nights>2</Nights>
+    <Baserate currency="USD">159.99</Baserate>
+    <Tax currency="USD">20.00</Tax>
+    <OtherFees currency="USD">4.00</OtherFees>
+    <ChargeCurrency>deposit</ChargeCurrency>
+    <Custom1>summer2017</Custom1>
+    <AllowablePointsOfSale>
+      <PointOfSale id="mobile"/>
+      <PointOfSale id="desktop"/>
+    </AllowablePointsOfSale>
+  </Result>
 ```
 
 Use the `ChargeCurrency` element to specify when the user is charged for the booking. By default, the user pays when they book (this is the Web option). This example uses Deposit, which asks the user to pay a portion at booking and the remainder later (for example, when they check out).
@@ -141,8 +148,8 @@ Use the `AllowablePointsOfSale` element to specify specific POS URLs that user's
 
 ## Next steps
 
-Before sending transaction messages, first send your hotel feed file and points of sale file to your TAM. After they import the data into Bing, you may begin sending transaction messages. Transaction messages sent before the data is imported will fail.
+Before sending transaction messages, make sure your hotel feed file and points of sale file are up to date. To update these files, contact your TAM. After the TAM imports the data into Bing, you may begin sending transaction messages. Transaction messages sent before the data is imported will fail.
 
 Validate the transaction message before sending it to Bing. For information, see [Validating your Transaction Message](../transaction-message/validate-transaction-message.md).
 
-Send your transaction message to Bing. For information, see [Sending Bing Transaction Messages](../transaction-message/send-bing-transaction-messages.md).
+For information about sending Bing your transaction message, see [Pushing Transaction Messages to Bing](../transaction-message/push-transaction-message.md) or [Having Bing Pull Transaction Messages](pull-transaction-message.md).

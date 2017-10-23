@@ -1,22 +1,26 @@
 ---
-title: "Hotel Code Example"
+title: "Hotel Group Code Example"
+description: Shows how to add, list, and update hotel groups.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
 ms.date: 11/1/2017
 author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
-description: 
 dev_langs:
   - csharp
+ms.date: 11/1/2017
 ---
-# Hotel Code Example
-The following example shows the requests you use to list, get, and update hotels. The example also shows how to associate a hotel with a hotel group. 
+
+# Hotel Group code example
+
+The following example shows the requests you use to list, get, add, and update hotel groups. 
 
 For details about the elements used in this example, see the [reference](../hotel-service/reference.md) section. 
 
-For additional information, see [Working with hotels](../hotel-service/manage-hotel-campaigns.md#workingwithhotels). 
+For additional information, see [Working with hotel groups](../hotel-service/manage-hotel-campaigns.md#workingwithhotelgroups). 
 
-The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Get Started](../transaction-message/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [OAuth Code Example](../hotel-service/code-example-oauth.md).
+The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Getting Started](../hotel-service/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-service/code-example-oauth.md).
 
 
 ```csharp
@@ -32,7 +36,7 @@ using System.Web;
 using Newtonsoft.Json;       // NuGet Json.NET
 using Newtonsoft.Json.Linq;
 
-namespace ListHotels
+namespace ListHotelGroups
 {
     class Program
     {
@@ -40,121 +44,131 @@ namespace ListHotels
         // registered your application.
 
         private static string clientId = "<clientidgoeshere>";
-        private static string clientSecret = null;  // Desktop app, so no secret
+        private static string clientSecret = null;  // Desktop app, so no secret.
         private static string storedRefreshToken = "<refreshtokengoeshere";
-
 
         private static string customerId = "<customeridgoeshere>";
         private static string accountId = "<accountidgoeshere>";
-        private static string subaccountId = "<subaccountidgoeshere>";
-        private static string hotelGroupId = "<hotelgroupidgoeshere>";
-        private static string hotelId = "<hotelidgoeshere>";
-        private static string ungroupedHotelGroupId = "<hotelgroupidgoeshere>";
+        private static string subaccountId = "<subaccountgoeshere>";
 
 
         private static string BaseUri = "https://partner.api.sandbox.bingads.microsoft.com/Travel/V1";
-        private static string HotelsTemplate = "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups('{3}')/Hotels";
-        private static string HotelTemplate = "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups('{3}')/Hotels('{4}')";
-        private static string AssociateTemplate = "/Customers({0})/Accounts({1})/SubAccounts('{2}')/Associate";
+        private static string HotelGroupsTemplate = "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups";
+        private static string HotelGroupTemplate = "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups('{3}')";
 
 
         static void Main(string[] args)
-        { 
+        {
             try
             {
                 // TODO: Add the calls to the OAuth code that you use to get the access and 
                 // refresh tokens. Consider using the Bing Ads SDK to get the tokens.
 
-                tokens = GetOauthTokens(storedRefreshToken);
 
                 if (tokens.AccessToken != null)
                 {
                     var headers = new WebHeaderCollection();
                     headers.Add(HttpRequestHeader.Authorization, "Bearer " + tokens.AccessToken);
 
-                    Console.WriteLine("**** Listing hotels for hotel group {0} ****\n", hotelGroupId);
+                    Console.WriteLine("**** Listing hotel groups ****");
 
-                    var uri = string.Format(BaseUri + HotelsTemplate, customerId, accountId, subaccountId, hotelGroupId);
+                    var uri = string.Format(BaseUri + HotelGroupsTemplate, customerId, accountId, subaccountId);
                     var collection = GetResource(uri, headers, typeof(CollectionResponse)) as CollectionResponse;
-                    PrintHotels(collection.value);
+                    PrintHotelGroups(collection.value);
 
+                    // Creates a list of bid multipliers.
 
                     var multipliers = new List<object>();
-                    multipliers.Add(new CheckInDayOfWeekMultiplier()
+                    //multipliers.Add(new UserCountryMultiplier()
+                    //{
+                    //    Factor = 1.1,
+                    //    Countries = new[] { "US" }.ToList<string>(),
+                    //    type = "#Model.UserCountryMultiplier"
+                    //});
+                    multipliers.Add(new DeviceTypeMultiplier()
                     {
-                        Factor = 1.2,
-                        DaysOfWeek = new[] { "Thursday", "Friday", "Saturday" }.ToList<string>(),
-                        type = "#Model.CheckinDayOfWeekMultiplier"
+                        Factor = .65,
+                        DeviceTypes = new[] { "Desktop" }.ToList<string>(),
+                        type = "#Model.DeviceMultiplier"
                     });
-                    multipliers.Add(new CheckInDayOfWeekMultiplier()
+                    //multipliers.Add(new LengthOfStayMultiplier()
+                    //{
+                    //    Factor = 1.3,
+                    //    MinimumNumberOfNights = 7,
+                    //    type = "#Model.LengthOfStayMultiplier"
+                    //});
+                    ////multipliers.Add(new DateTypeMultiplier()
+                    ////{
+                    ////    Factor = .35,
+                    ////    DateType = "Default",
+                    ////    type = "#Model.DateTypeMultiplier"
+                    ////});
+                    //multipliers.Add(new CheckinDayOfWeekMultiplier()
+                    //{
+                    //    Factor = 1.5,
+                    //    DaysOfWeek = new[] { "Thursday", "Friday", "Saturday" }.ToList<string>(),
+                    //    type = "#Model.CheckinDayOfWeekMultiplier"
+                    //});
+                    //multipliers.Add(new CheckinDayOfWeekMultiplier()
+                    //{
+                    //    Factor = 2.5,
+                    //    DaysOfWeek = new[] { "Sunday", "Monday" }.ToList<string>(),
+                    //    type = "#Model.CheckinDayOfWeekMultiplier"
+                    //});
+                    //multipliers.Add(new AdvanceWindowBookingMultiplier()
+                    //{
+                    //    Factor = 1.3,
+                    //    MinimumNumberOfDays = 3,
+                    //    type = "#Model.AdvanceBookingWindowMultiplier"
+                    //});
+
+                    // Create the hotel group to add. Not specifying the bid
+                    // and multipliers, so they inherit from the subaccount.
+
+                    HotelGroup hotelGroup = new HotelGroup()
                     {
-                        Factor = .9,
-                        DaysOfWeek = new[] { "Sunday", "Monday" }.ToList<string>(),
-                        type = "#Model.CheckinDayOfWeekMultiplier"
-                    });
-                    multipliers.Add(new AdvanceWindowBookingMultiplier()
+                        Name = "summer sale",
+                        //Bid = new FixedBid()
+                        //{
+                        //    Amount = 2.75,
+                        //    type = "#Model.FixedBid"
+                        //},
+                        //BidMultipliers = multipliers
+                    };
+
+                    Console.WriteLine("**** Adding hotel group ****");
+
+                    var hotelGroupId = AddUpdateResource(uri, headers, hotelGroup, typeof(HotelGroup)) as string;
+                    Console.WriteLine("Added hotel group {0}.\n", hotelGroupId); // ID of new hotel group
+
+                    Console.WriteLine("**** Listing hotel groups after adding group ****");
+
+                    collection = GetResource(uri, headers, typeof(CollectionResponse)) as CollectionResponse;
+                    PrintHotelGroups(collection.value);
+
+
+                    // Specify only the fields of the hotel group that you want to update.
+
+                    var hotelGroupToUpdate = new HotelGroup()
                     {
-                        Factor = 1.3,
-                        MinimumNumberOfDays = 3,
-                        type = "#Model.AdvanceBookingWindowMultiplier"
-                    });
-
-
-                    Console.WriteLine("**** Getting hotel {0} from Ungrouped before update ****\n", hotelId);
-
-                    uri = string.Format(BaseUri + HotelTemplate, customerId, accountId, subaccountId, ungroupedHotelGroupId, hotelId);
-                    var hotel = GetResource(uri, headers, typeof(Hotel)) as Hotel;
-                    PrintHotel(hotel);
-
-
-                    hotel = new Hotel()
-                    {
+                        Id = hotelGroupId,
+                        //Bid = new FixedBid()
+                        //{
+                        //    Amount = 4.75,
+                        //    type = "#Model.FixedBid"
+                        //},
                         BidMultipliers = multipliers
                     };
 
-                    Console.WriteLine("**** Updating multipliers for hotel {0} ****\n", hotelId);
+                    Console.WriteLine("**** Updating hotel group {0} ****\n", hotelGroupId);
 
-                    AddUpdateResource(uri, headers, hotel, typeof(Hotel), typeof(AddResponse), "PATCH");
+                    uri = string.Format(BaseUri + HotelGroupTemplate, customerId, accountId, subaccountId, hotelGroupId);
+                    AddUpdateResource(uri, headers, hotelGroup, typeof(HotelGroup), "PATCH");
 
-                    Console.WriteLine("**** Getting hotel {0} after update ****\n", hotelId);
-                    hotel = GetResource(uri, headers, typeof(Hotel)) as Hotel;
-                    PrintHotel(hotel);
+                    Console.WriteLine("**** Getting hotel group {0} after update ****\n", hotelGroupId);
 
-
-                    Console.WriteLine("**** Associating hotel {0} with hotel group {1} ****\n", hotelId, hotelGroupId);
-
-                    var associations = new List<HotelAssociation>();
-                    associations.Add(new HotelAssociation()
-                    {
-
-                        HotelGroupId = hotelGroupId,
-                        HotelId = hotelId
-                    });
-
-                    AssociationCollection associationCollection = new AssociationCollection()
-                    {
-                        HotelAssociations = associations
-                    };
-
-                    Console.WriteLine("**** Adding hotel association****\n");
-
-                    uri = string.Format(BaseUri + AssociateTemplate, customerId, accountId, subaccountId);
-                    collection = AddUpdateResource(uri, headers, associationCollection, typeof(AssociationCollection), typeof(CollectionResponse)) as CollectionResponse;
-
-                    // The /Associate method will try to apply all associations in the
-                    // request. It returns any associations that failed and the reason
-                    // for the failure.
-
-                    if (collection.value != null && collection.value.Count > 0)
-                    {
-                        PrintAssociationErrors(collection.value);
-                    }
-
-                    Console.WriteLine("**** Listing hotels for hotel group {0} ****\n", hotelGroupId);
-
-                    uri = string.Format(BaseUri + HotelsTemplate, customerId, accountId, subaccountId, hotelGroupId);
-                    collection = GetResource(uri, headers, typeof(CollectionResponse)) as CollectionResponse;
-                    PrintHotels(collection.value);
+                    var group = GetResource(uri, headers, typeof(HotelGroup)) as HotelGroup;
+                    PrintHotelGroup(group);
 
                 }
 
@@ -167,7 +181,7 @@ namespace ListHotels
                 Console.WriteLine("\n" + e.Message);
 
                 // If the request is bad, the API returns the errors in the 
-                // body of the request. 
+                // body of the response. 
 
                 if (response != null &&
                     (HttpStatusCode.BadRequest == response.StatusCode))
@@ -184,11 +198,6 @@ namespace ListHotels
                     }
                 }
             }
-            catch (OAuthTokenRequestException e)
-            {
-                Console.WriteLine("\n" + e.Message);
-                Console.WriteLine("\n" + e.Details);
-            }
             catch (Exception e)
             {
                 Console.WriteLine("\n" + e.Message);
@@ -197,6 +206,7 @@ namespace ListHotels
 
 
         // Gets the requested resource.
+
         private static object GetResource(string uri, WebHeaderCollection headers, Type resourceType)
         {
             object resource = null;
@@ -217,9 +227,10 @@ namespace ListHotels
             return resource;
         }
 
+
         // Adds or updates the resource.
 
-        private static object AddUpdateResource(string uri, WebHeaderCollection headers, object resource, Type requestType, Type responseType, string verb = "POST")
+        private static string AddUpdateResource(string uri, WebHeaderCollection headers, object resource, Type type, string verb = "POST")
         {
             var request = (HttpWebRequest)WebRequest.Create(uri);
             request.Method = verb;
@@ -229,7 +240,7 @@ namespace ListHotels
             var serializerSettings = new JsonSerializerSettings();
             serializerSettings.NullValueHandling = NullValueHandling.Ignore;
 
-            var json = JsonConvert.SerializeObject(resource, requestType, serializerSettings);
+            var json = JsonConvert.SerializeObject(resource, type, serializerSettings);
             request.ContentLength = json.Length;
             using (Stream requestStream = request.GetRequestStream())
             {
@@ -240,44 +251,43 @@ namespace ListHotels
 
             var response = (HttpWebResponse)request.GetResponse();
 
-            object responseObject = null;
+            AddResponse addResponse = null;
 
             using (Stream responseStream = response.GetResponseStream())
             {
                 var reader = new StreamReader(responseStream);
                 var jsonOut = reader.ReadToEnd();
                 reader.Close();
-                responseObject = JsonConvert.DeserializeObject(jsonOut, responseType);
+                addResponse = JsonConvert.DeserializeObject<AddResponse>(jsonOut);
             }
 
-            return responseObject;
+            return addResponse.value;
         }
 
 
-        private static void PrintHotels(List<object> hotels)
-        {
-            foreach (var hotel in hotels)
-            {
-                var h = ((JObject)hotel).ToObject<Hotel>();
 
-                PrintHotel(h);
+        private static void PrintHotelGroups(List<object> groups)
+        {
+            foreach (var group in groups)
+            {
+                var g = ((JObject)group).ToObject<HotelGroup>();
+
+                PrintHotelGroup(g);
             }
 
         }
 
 
-        private static void PrintHotel(Hotel hotel)
+        private static void PrintHotelGroup(HotelGroup group)
         {
-            Console.WriteLine("Hotel name: " + hotel.Name);
-            Console.WriteLine("Hotel ID: " + hotel.Id);
-            Console.WriteLine("Partner hotel ID: " + hotel.PartnerHotelId);
-            Console.WriteLine("Hotel status: " + hotel.Status);
-            Console.WriteLine("Country code: " + hotel.CountryCode);
-            Console.WriteLine("Bid source: " + ((hotel.BidSource != null) ? hotel.BidSource : string.Empty));
+            Console.WriteLine("Group name: " + group.Name);
+            Console.WriteLine("Group ID: " + group.Id);
+            Console.WriteLine("Group status: " + group.Status);
+            Console.WriteLine("Bid source: " + ((group.BidSource != null) ? group.BidSource : string.Empty));
 
-            if (hotel.Bid != null)
+            if (group.Bid != null)
             {
-                var b = ((JObject)hotel.Bid).ToObject<Bid>();
+                var b = ((JObject)group.Bid).ToObject<Bid>();
                 Console.WriteLine("{0}: {1}", (b.GetBidType() == "FixedBid") ? "Fixed bid" : "Percentage bid", b.Amount);
             }
             else
@@ -285,15 +295,18 @@ namespace ListHotels
                 Console.WriteLine("Bid:");
             }
 
-            if (hotel.BidMultipliers != null && hotel.BidMultipliers.Count > 0)
+            Console.WriteLine("Bid multiplier source: " + ((group.BidMultiplierSource != null) ? group.BidMultiplierSource : string.Empty));
+
+            if (group.BidMultipliers != null && group.BidMultipliers.Count > 0)
             {
-                foreach (var multiplier in hotel.BidMultipliers)
+                foreach (var multiplier in group.BidMultipliers)
                 {
                     var m = ((JObject)multiplier).ToObject<Multiplier>();
                     Console.WriteLine("{0}: {1}", m.GetMultiplierType(), m.Factor);
 
-                    switch (m.GetMultiplierType()) { 
-                        case "UserCountryMultiplier" :
+                    switch (m.GetMultiplierType())
+                    {
+                        case "UserCountryMultiplier":
                             {
                                 var userCountryMultiplier = ((JObject)multiplier).ToObject<UserCountryMultiplier>();
 
@@ -325,7 +338,7 @@ namespace ListHotels
                             }
                         case "CheckinDayOfWeekMultiplier":
                             {
-                                var dayOfWeekMultiplier = ((JObject)multiplier).ToObject<CheckInDayOfWeekMultiplier>();
+                                var dayOfWeekMultiplier = ((JObject)multiplier).ToObject<CheckinDayOfWeekMultiplier>();
 
                                 foreach (var device in dayOfWeekMultiplier.DaysOfWeek)
                                 {
@@ -368,56 +381,24 @@ namespace ListHotels
 
 
 
-        private static void PrintAssociationErrors(List<object> associations)
-        {
-            foreach (var association in associations)
-            {
-                var a = ((JObject)association).ToObject<HotelAssociation>();
-
-                PrintAssociationError(a);
-            }
-        }
-
-        private static void PrintAssociationError(HotelAssociation association)
-        {
-            Console.WriteLine("Hotel group ID: " + association.HotelGroupId);
-            Console.WriteLine("Hotel group name: " + association.HotelGroupName);
-            Console.WriteLine("Hotel ID: " + association.HotelId);
-            Console.WriteLine("Hotel group name: " + association.HotelName);
-
-            foreach (var error in association.Errors)
-            {
-                Console.WriteLine("Error code: " + error.Code);
-                Console.WriteLine("Error message: " + error.Message);
-                Console.WriteLine("Error parameter: " + error.Property);
-            }
-
-            Console.WriteLine();
-        }
-
-
         private static void PrintErrors(List<object> errors)
         {
             foreach (var error in errors)
             {
                 var e = ((JObject)error).ToObject<AdsApiError>();
 
-                PrintError(e);
+                Console.WriteLine("\nError code: " + e.Code);
+                Console.WriteLine("Error message: " + e.Message);
+                Console.WriteLine("Error parameter: " + e.Property);
             }
-        }
-        private static void PrintError(AdsApiError error)
-        {
-                Console.WriteLine("\nError code: " + error.Code);
-                Console.WriteLine("Error message: " + error.Message);
-                Console.WriteLine("Error parameter: " + error.Property);
         }
     }
 }
 
 
-// Defines a hotel.
+// Defines a hotel group.
 
-class Hotel
+class HotelGroup
 {
     public string Id { get; set; }
 
@@ -431,9 +412,7 @@ class Hotel
 
     public string BidSource { get; set; }
 
-    public string CountryCode { get; set; }
-
-    public string PartnerHotelId { get; set; }
+    public string BidMultiplierSource { get; set; }
 }
 
 // Defines a daily budget that spread throughout the day.
@@ -528,7 +507,7 @@ class AdvanceWindowBookingMultiplier : Multiplier
 // Defines the multiplier to use if the user is checking in on
 // the specified week day.
 
-class CheckInDayOfWeekMultiplier : Multiplier
+class CheckinDayOfWeekMultiplier : Multiplier
 {
     public List<string> DaysOfWeek { get; set; }
 }
@@ -550,16 +529,11 @@ class AddResponse
 {
     // Contains the ID of the newly added resource.
     public string value { get; set; }
-
-    // The data type of the content in the value field.
-
-    [JsonProperty("@odata.context")]
-    public string context { get; set; }
 }
 
 
 // Defines the response object for GETs that return
-// lists of resources (i.e., /SubAccounts('12345')/HotelGroups('45678')/Hotels).
+// lists of resources (i.e., /SubAccounts('12345')/HotelGroups).
 
 class CollectionResponse
 {
@@ -567,53 +541,11 @@ class CollectionResponse
 
     public List<object> value { get; set; }
 
-    // The data type of the content in the value field.
-
-    [JsonProperty("@odata.context")]
-    public string context { get; set; }
-
     // The number of resources in the value list. The object
     // include this field only if the request specifies the $count query parameter.
 
     [JsonProperty("@odata.count")]
     public UInt32 count { get; set; }
-
-    // Gets the type of resouce from the context field.
-
-    public string GetReourceType()
-    {
-        return context.Substring(context.LastIndexOf('#') + 1);
-    }
-}
-
-
-
-// Defines a hotel association, which defines the relationship
-// between a hotel and a hotel group. A hotel may belong
-// to only one group.
-
-class HotelAssociation
-{
-    public string HotelGroupId { get; set; }
-
-    public string HotelGroupName { get; set; }
-
-    public string HotelId { get; set; }
-
-    public string HotelName { get; set; }
-
-    public string PartnerHotelId { get; set; }
-
-    public List<AdsApiError> Errors { get; set; }
-}
-
-
-// Defines a collection of hotel associations.
-
-class AssociationCollection
-{
-    // Contains the list of requested resources.
-    public List<HotelAssociation> HotelAssociations { get; set; }
 }
 
 
