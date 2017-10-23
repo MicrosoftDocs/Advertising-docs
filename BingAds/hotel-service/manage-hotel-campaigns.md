@@ -86,7 +86,7 @@ x-ms-trackingid: 7cd2710c-821a-48e8-99af-efdc05aebe86
 
 The subaccount specifies the default bid and bid multipliers to use for hotel groups and hotels that don't specify a bid or multipliers. The subaccount also specifies the budget that's spread throughout the day, and the maximum bid that you want all bids not to exceed.
 
-For details about the valid bid range and budget for your market, see the Currency Value table in the [Currencies](../bingads/guides/currencies.md) topic.
+For details about the valid bid range and budget for your market, see the Currency Value table in the [Currencies](../guides/currencies.md) topic.
 
 To pause a subaccount, set the `Bid` or `Budget` property to zero (0.0). All hotels in the paused subaccount will not serve. To activate the subaccount, set `Bid` and `Budget` to a value greater than zero.  
 
@@ -286,7 +286,7 @@ x-ms-trackingid: 21fafae0-4053-46e0-8271-87bc5fce6312
 
 You would create a new hotel group if you want to create a new logical grouping of hotels. To specify the hotel group, use the [HotelGroup](../hotel-service/reference.md#hotelgroup) object. The only required field is `Name`. Use a descriptive name that indicates the grouping. The `Bid` and `BidMultipliers` fields are optional. If you don't specify them, the group uses the bid and bid multipliers from the subaccount. Specify them if you want to override the subaccount values. You can specify the bid, multipliers, or both.
 
-For details about the valid bid range for your market, see the Currency Value table in the [Currencies](../bingads/guides/currencies.md) topic.
+For details about the valid bid range for your market, see the Currency Value table in the [Currencies](../guides/currencies.md) topic.
 
 The following example creates a hotel group that inherits the bid and bid multipliers from the subaccount.
 
@@ -321,7 +321,7 @@ After adding a hotel group, use the [associate](../hotel-service/reference.md#as
 
 The hotel group specifies the default bid and bid multipliers to use for hotels in the group. The group either explicitly specifies them or inherits them from the subaccount it belongs to. You can use the API to update the bid and bid multipliers to use for hotels that do not specify a bid or multipliers.
 
-For details about the valid bid range and budget for your market, see the Currency Value table in the [Currencies](../bingads/guides/currencies.md) topic.
+For details about the valid bid range and budget for your market, see the Currency Value table in the [Currencies](../guides/currencies.md) topic.
 
 If the subaccount specifies the a maximum bid, the hotel group's bid must be less than the subaccount's maximum bid.
 
@@ -436,7 +436,7 @@ The following are the REST templates that you use to manage hotels.
 - `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')/Hotels` &mdash; [GET](../hotel-service/reference.md#listhotels)
 - `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')/Hotels('{hotelGroupId}')` &mdash; [GET](../hotel-service/reference.md#gethotel) | [PATCH](../hotel-service/reference.md#updatehotel)
 
-For an example that gets and updates hotels, see [C# example](../hotel-service/code-example-hotels%20C%23%20Exampl.md).
+For an example that gets and updates hotels, see [C# example](../hotel-service/code-example-hotels.md).
 
 
 <a name="listinghotels" />
@@ -535,7 +535,7 @@ x-ms-trackingid: 3787a393-eca3-4ad0-be3d-dd4c7ae08906
 
 The hotel specifies the bid and bid multipliers to use for hotel ads. The hotel either explicitly specifies them or inherits them from the hotel group or subaccount, in that order. You can use the API to update the bid and bid multipliers to use for the hotel's ad.
 
-For details about the valid bid range for your market, see the Currency Value table in the [Currencies](../bingads/guides/currencies.md) topic.
+For details about the valid bid range for your market, see the Currency Value table in the [Currencies](../guides/currencies.md) topic.
 
 If the subaccount specifies the a maximum bid, the hotel's bid must be less than the subaccount's maximum bid.
 
