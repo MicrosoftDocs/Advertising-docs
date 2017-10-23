@@ -11,7 +11,7 @@ ms.date: 11/1/2017
 
 # Process a Query message
 
-If you sign up for pull requests or pull with hints requests, Bing sends you a [Query](../Topic/Query%20Message.md) message that specifies the itinerary data that you need to send in your next [Transaction](../transaction-message/transaction-message.md) message.
+If you sign up for pull requests or pull with hints requests, Bing sends you a [Query](../query-message/query-message.md) message that specifies the itinerary data that you need to send in your next [Transaction](../transaction-message/transaction-message.md) message.
 
 ## Using pull requests
 

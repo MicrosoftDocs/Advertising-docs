@@ -28,7 +28,7 @@
   - name: Throttling requests
     href: ../hotel-service/throttle-requests.md
 - name: QueryControl Message
-  href: ../query-control-message/hotel-feed.md
+  href: ../query-control-message/query-control-message.md
   items:
   - name: Create a QueryControl message
     href: ../query-control-message/create-query-control-message.md
@@ -72,9 +72,9 @@
   - name: Create a Transaction message
     href: ../transaction-message/create-transaction-message.md
   - name: Pull Transaction messages
-    href: ../transaction-message/pull-transaction-messages.md
+    href: ../transaction-message/pull-transaction-message.md
   - name: Push Transaction messages
-    href: ../transaction-message/push-transaction-messages.md
+    href: ../transaction-message/push-transaction-message.md
   - name: Validate your Transaction message
     href: ../transaction-message/validate-transaction-message.md
   - name: Transaction message reference

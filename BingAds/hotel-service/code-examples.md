@@ -16,7 +16,7 @@ This section provides code examples that show how to use the resources available
 
 * Get, list, and update subaccounts: [C#](../hotel-service/code-example-subaccounts.md)
 * Get, list, add, and update hotel groups: [C#](../hotel-service/code-example-hotel-groups.md)
-* Get, list, update, and associate hotels: [C#](../hotel-service/code-example-hotel.md)
+* Get, list, update, and associate hotels: [C#](../hotel-service/code-example-hotels.md)
 
 For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-service/code-example-oauth.md).
 
