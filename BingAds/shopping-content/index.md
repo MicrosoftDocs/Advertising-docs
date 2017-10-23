@@ -19,7 +19,7 @@ manage their [Bing Merchant Center](http://help.bingads.microsoft.com/#apex/3/en
 
 -   Provides the ability to download catalog status reports.
 
-- Provides the ability to manage your catalogs programmatically.
+-   Provides the ability to manage your catalogs programmatically.
 
 
 ## Who Should Use the API?
