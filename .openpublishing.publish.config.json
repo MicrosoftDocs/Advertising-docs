@@ -1,13 +1,13 @@
 {
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
   "docsets_to_publish": [
     {
       "docset_name": "BingAds",
       "build_source_folder": "BingAds",
       "build_output_subfolder": "BingAds",
       "locale": "en-us",
-      "monikers": ["bingads-11"],
+      "monikers": [
+        "bingads-11"
+      ],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
@@ -20,10 +20,14 @@
       "version": 0
     }
   ],
-  "notification_subscribers": ["eric.urban@microsoft.com"],
+  "notification_subscribers": [
+    "eric.urban@microsoft.com",
+    "scott.white@microsoft.com"
+  ],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -34,23 +38,30 @@
     {
       "path_to_root": "BingAds-dotNet-SDK",
       "url": "https://github.com/BingAds/BingAds-dotNet-SDK.git",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "BingAds-Java-SDK",
       "url": "https://github.com/BingAds/BingAds-Java-SDK.git",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "BingAds-PHP-SDK",
       "url": "https://github.com/BingAds/BingAds-PHP-SDK.git",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "BingAds-Python-SDK",
       "url": "https://github.com/BingAds/BingAds-Python-SDK.git",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     }
   ],
-  "need_generate_pdf_url_template": false
+  "branch_target_mapping": {},
+  "need_generate_pdf_url_template": false,
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false
 }
