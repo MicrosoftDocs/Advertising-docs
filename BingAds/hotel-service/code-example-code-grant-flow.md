@@ -1,15 +1,19 @@
 ---
 title: "CodeGrantFlow Code Example"
+description: Shows a simple implementation for calling the identity service and getting an OAuth access and refresh token.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
-description: 
 dev_langs:
   - csharp
+ms.date: 11/1/2017
 ---
-# CodeGrantFlow Code Example
-The following example shows a simple browser implementation for getting an OAuth access and refresh token. For more information about the calls made in this example, see [Authentication with OAuth](~/guides/authentication-oauth.md).
+
+# CodeGrantFlow code example
+
+The following example shows a simple browser implementation for getting an OAuth access and refresh token. For more information about the calls made in this example, see [Managing User Authentication with OAuth](../bingads/guides/authentication-oauth).
 
 > [!NOTE]
 > The example currently points to the SI environment for getting Bing Ads access tokens. To use the example for the production environment, please remove the *Production OAuth server endpoints* from comments and place the *SI OAuth server endpoints* in comments.
@@ -45,9 +49,9 @@ namespace Content.OAuth
 
         // Production OAuth server endpoints.
 
-        //private string authorizationUri = "https://login.live.com/oauth20_authorize.srf";  // Authorization code endpoint
-        //private string redirectUri = "https://login.live.com/oauth20_desktop.srf";  // Callback endpoint
-        //private string refreshUri = "https://login.live.com/oauth20_token.srf";  // Get tokens endpoint
+        //private string AuthorizationUri = "https://login.live.com/oauth20_authorize.srf";  // Authorization code endpoint
+        //private string RedirectUri = "https://login.live.com/oauth20_desktop.srf";  // Callback endpoint
+        //private string RefreshUri = "https://login.live.com/oauth20_token.srf";  // Get tokens endpoint
 
         // SI OAuth server endpoints. 
         // If you use -int domains, you must use a clientID from https://apps.dev.microsoft-int.com/#/appList.
@@ -182,7 +186,7 @@ namespace Content.OAuth
 
         private void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
         {
-            Dictionary\<string, string> parameters = null;
+            Dictionary<string, string> parameters = null;
 
             if (!string.IsNullOrEmpty(e.Url.Query))
             {
@@ -214,9 +218,9 @@ namespace Content.OAuth
 
         // Parses the query string.
 
-        private Dictionary\<string, string> ParseFragment(string queryString, char[] delimeters)
+        private Dictionary<string, string> ParseFragment(string queryString, char[] delimeters)
         {
-            var parameters = new Dictionary\<string, string>();
+            var parameters = new Dictionary<string, string>();
 
             string[] pairs = queryString.Split(delimeters, StringSplitOptions.RemoveEmptyEntries);
 

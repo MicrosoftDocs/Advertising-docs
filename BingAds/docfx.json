@@ -49,14 +49,9 @@
         "customer-billing-service/**.md": ["csharp", "java", "php", "python"],
         "reporting-service/**.md": ["csharp", "java", "php", "python"]
       },
-      "ms.prod": 
-      { 
-        "guides/**.yml": "bing-ads",
-        "shopping-content/**.yml": "bing-ads",
-        "hotel-ads/**.yml": "bing-ads"
-      }, 
       "ms.service": 
       { 
+        "guides/**.yml": "bing-ads",
         "ad-insight-service/**.yml": "bing-ads-ad-insight-service",
         "customer-billing-service/**.yml": "bing-ads-customer-billing-service",
         "bulk-service/**.yml": "bing-ads-bulk-service",
@@ -64,6 +59,7 @@
         "customer-management-service/**.yml": "bing-ads-customer-management-service",
         "reporting-service/**.yml": "bing-ads-reporting-service",
         "shopping-content/**.yml": "bing-ads-shopping-content",
+        "hotel-ads/**.yml": "hotel-ads",
         "hotel-feed/**.yml": "hotel-ads-hotel-feed",
         "hotel-api-service/**.yml": "hotel-ads-hotel-service",
         "pos-feed/**.yml": "hotel-ads-pos-feed",
@@ -72,12 +68,6 @@
         "query-message/**.yml": "hotel-ads-query-message",
         "query-control-message/**.yml": "hotel-ads-query-control-message"    
       }, 
-      "ms.technology": 
-      { 
-        "guides/**.yml": "bing-ads-api",
-        "shopping-content/**.yml": "bing-ads-shopping-content",
-        "hotel-ads/**.yml": "bing-ads-hotel-ads"
-      }
     },
     "template": [],
     "dest": "BingAds"

@@ -1,20 +1,35 @@
 ---
 title: "Get Started with Transaction Messages"
+description: Quick start guide to getting started with Transaction Messages
 ms.service: "hotel-ads-transaction-message"
 ms.topic: "article"
 author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
-description: 
+ms.date: 11/1/2017
 ---
-# Get Started with Transaction Messages
+
+# Get started with Transaction Messages
+
 > [!NOTE]
-> Hotel Ads is now under pilot and available to pilot participants only. Please contact your account manager for details.
+> This beta release of Hotel Ads is available to select participants only. For information about participating in the beta release program, please contact your account manager.
 
 If you create hotel ad campaigns in Bing Ads, use transaction messages to update your itinerary data (pricing and availability). 
 
-## Getting permissions
+Before you can send Bing transaction messages, you must contact your account manager to sign up.
 
-Before you can send Bing transaction messages, you must contact your account manager to sign up. You must provide the IPv4 addresses (or address ranges in CIDR format) of all servers that you will use to send transaction messages.
+## Different modes for sending Bing your transaction data
+
+ Bing supports the following modes that you can use to provide your transaction data.
+
+- Push mode
+- Pull mode
+- Pull mode with hints
+
+With the push mode, you send Bing your unsolicited updates at the intervals you choose. To use this mode, you must provide the IPv4 addresses (or address ranges in CIDR format) of all servers that you will use to send transaction messages. For information, see [Pushing Transaction Messages to Bing](../transaction-message/push-transaction-message.md).
+
+With the pull mode options, Bing sends you Query messages that specifies the hotel itinerary data you should return. The difference between the two pull modes is the amount of data that you send to Bing. With pull mode, you return data for all itineraries and all hotels. But with pull with hints, you tell Bing what data changed and it requests only that data. For information, see [Having Bing Pull Transaction Messages](../transaction-message/pull-transaction-message.md).
+
 
 
 ## What's a transaction message 
@@ -52,7 +67,7 @@ A transaction message is an XML document that contains pricing and availability 
 </Transaction>
 ```
 
-You may specify up to 90 days advanced booking with stays of up to 14 nights. For example, if the message's `timestamp` is 2017-06-10, the last `Checkin` date that the message may specify is 2017-09-08.
+You may specify up to 180 days advanced booking with stays of up to 14 nights. For example, if the message's `timestamp` is 2017-06-10, the last `Checkin` date that the message may specify is 2017-09-08.
 
 The document must use UTF-8 encoding.
 
@@ -65,66 +80,10 @@ Before sending Bing the transaction message, use the [Transaction XSD](https://b
 
 The following example shows using xmllint to validate the message contained in SampleTransaction.xml.
 
-```powershell
+```
 xmllint.exe --schema transaction.xsd SampleTransaction.xml
 ```
 
 > [!NOTE]
 > There are constraints not defined by the XSD that may generate errors at the time Bing processes the message. Be sure that your message complies with all constraints defined in this document.
-
-## Before sending your message...
-
-Before sending transaction messages, provide your [hotel feed file](../hotel-feed/hotel-feed.md) and [points of sale file](../pos-feed/pos-feed.md) to your account manager. After they import the data into Bing, you may begin sending transaction messages. Transaction messages sent before the data is imported will fail.
-
-## Where to send the message?
-
-Send the transaction message in the body of an HTTPS POST request to:
-
-`https://hotels.api.bingads.microsoft.com/api/customers/<customerId>/transactions`
-
-Set \<customerId\> to the advertiser's customer ID.
-  
-The request must include the following header:
-
-- Content-Type: `application/xml; charset=utf-8` 
-  
-If you compress the transaction message (recommended), include the following header:
-
-- Content-Encoding: gzip
-
-The following shows an example POST request.
-
-```http
-POST https://hotels.api.bingads.microsoft.com/api/customers/abc123/transactions HTTP/1.1
-Content-Type: application/xml; charset=utf-8
-Host: hotels.api.bingads.microsoft.com
-
-<?xml version="1.0" encoding="UTF-8"?>
-<Transaction timestamp="2017-05-25T20:44:56-04:00" id="de0be689-d094-406e-
-8027-724309deb373">
-  <Result>
-    <Property>13579</Property>
-    <Checkin>2017-06-10</Checkin>
-    <Nights>2</Nights>
-    <Baserate currency="USD">159.99</Baserate>
-    <Tax currency="USD">20.00</Tax>
-    <OtherFees currency="USD">4.00</OtherFees>
-    <AllowablePointsOfSale>
-      <PointOfSale id="mobile"/>
-      <PointOfSale id="desktop"/>
-    </AllowablePointsOfSale>
-  </Result>
-</Transaction>
-```
-
-The POST request places the message in a queue to be processed and then returns. You may have a maximum of five requests queued or being processed at the same time. If you exceed the limit, the request fails with 429. 
-
-To determine whether Bing successfully processed the message, see Hotel Ads Feed Status in the Bing Hotel Center of Bing Ads web application.
-
-[Read more](../transaction-message/send-bing-transaction-messages.md).
-
-
-## How often do I need to send messages
-
-Send transaction messages whenever pricing and availability changes.
 

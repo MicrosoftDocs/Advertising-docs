@@ -1,14 +1,20 @@
 ---
 title: "Hotel Feed"
+description: Hotel feed overview.
 ms.service: "hotel-ads-hotel-feed"
 ms.topic: "article"
 author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
-description: 
+ms.date: 11/1/2017
 ---
+
 # Hotel Feed
+
 > [!NOTE]
-> Hotel Ads is now under pilot and available to pilot participants only. Please contact your account manager for details.
+> This beta release of Hotel Ads is available to select participants only. For information about participating in the beta release program, please contact your account manager.
+>
+> The Hotel feed and documentation are subject to change. 
 
 If you create hotel ads in Bing, you must use a hotel feed to provide Bing information about the hotels that you advertise. You must define and import your hotel feed prior to sending Bing [Transaction Messages](../transaction-message/transaction-message.md).
 

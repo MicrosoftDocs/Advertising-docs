@@ -1,20 +1,24 @@
 ---
 title: "Transaction Message Reference"
+description: Describes the schema that defines a transaction message. 
 ms.service: "hotel-ads-transaction-message"
 ms.topic: "article"
 author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
-description: 
+ms.date: 11/1/2017
 ---
-# Transaction Message Reference
+
+# Transaction Message reference
+
 > [!NOTE]
-> Hotel Ads is now under pilot and available to pilot participants only.  Please contact your account manager for details.
+> This alpha release of Hotel Ads is available to select participants only. For information about participating in the alpha release program, please contact your account manager.
 
 If you create hotel ads in Bing, you use transaction messages to provide Bing your itinerary data. This section describes the elements of a transaction message defined by the [Transaction XSD](https://bhacstatic.blob.core.windows.net/schemas/transaction.xsd). 
 
 For information about creating a transaction message, see [Creating a Transaction Message](../transaction-message/create-transaction-message.md).
 
-For information about sending a transaction message, see [Sending a Transaction Message](../transaction-message/send-bing-transaction-messages.md).
+For information about sending a transaction message, see [Pusing a Transaction Message to Bing](../transaction-message/puse-transaction-message.md) or [Having Bing Pull Transaction Messages](../transaction-message/pull-transaction-message.md).
 
 > [!NOTE]
 > Bing does not support all Transaction XSD elements. This topic includes only those elements and attributes that Bing supports. Bing ignores all other elements and attributes. 

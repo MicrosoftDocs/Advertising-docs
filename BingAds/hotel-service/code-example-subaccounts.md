@@ -1,21 +1,25 @@
 ---
 title: "Subaccount Code Example"
+description: Shows hot to list, get, and update hotel subaccounts.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
-description: 
 dev_langs:
   - csharp
+ms.date: 11/1/2017
 ---
-# Subaccount Code Example
+
+# Subaccount code example
+
 The following example shows the requests you use to list, get, and update subaccounts. 
 
 For details about the elements used in this example, see the [reference](../hotel-service/reference.md) section. 
 
 For additional information, see [Working with subaccounts](../hotel-service/manage-hotel-campaigns.md#workingwithsubaccounts). 
 
-The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Get Started](../transaction-message/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [OAuth Code Example](../hotel-service/code-example-oauth.md).
+The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Getting Started](../hotel-service/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-service/code-example-oauth.md).
 
 ```csharp
 using System;
@@ -193,7 +197,7 @@ namespace ListSubAccounts
                 Console.WriteLine("\n" + e.Message);
 
                 // If the request is bad, the API returns the errors in the 
-                // body of the request. 
+                // body of the response. 
 
                 if (response != null &&
                     (HttpStatusCode.BadRequest == response.StatusCode))
@@ -521,11 +525,6 @@ class AddResponse
 {
     // Contains the ID of the newly added resource.
     public string value { get; set; }
-
-    // The data type of the content in the value field.
-
-    [JsonProperty("@odata.context")]
-    public string context { get; set; }
 }
 
 
@@ -538,23 +537,12 @@ class CollectionResponse
 
     public List<object> value { get; set; }
 
-    // The data type of the content in the value field.
-
-    [JsonProperty("@odata.context")]
-    public string context { get; set; }
-
     // The number of resources in the value list. The object
     // include this field only if the request specifies the $count query parameter.
 
     [JsonProperty("@odata.count")]
     public UInt32 count { get; set; }
 
-    // Gets the type of resouce from the context field.
-
-    public string GetReourceType()
-    {
-        return context.Substring(context.LastIndexOf('#') + 1);
-    }
 }
 
 

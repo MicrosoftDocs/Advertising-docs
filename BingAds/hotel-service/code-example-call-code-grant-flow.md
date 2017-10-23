@@ -1,15 +1,19 @@
 ---
 title: "Call CodeGrantFlow Code Example"
+description: Shows how to call the CodeGrantFlow code example to authenticate the user.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
 author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
-description: 
 dev_langs:
   - csharp
+ms.date: 11/1/2017
 ---
-# Call CodeGrantFlow Code Example
-The following shows how to call the [CodeGrantFlow](../hotel-service/code-example-codegrantflow.md) DLL to get your access and refresh token. You can use the code found here to enable OAuth in the other examples found in this documention.
+
+# Call CodeGrantFlow code example
+
+The following shows how to call the [CodeGrantFlow](../hotel-service/code-example-code-grant-flow.md) DLL to get your access and refresh token. You can use the code found here to enable OAuth in the other examples found in this documention.
 
 ```csharp
 using System;
