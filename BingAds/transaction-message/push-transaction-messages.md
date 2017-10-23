@@ -1,13 +1,17 @@
 ---
 title: "Sending Bing Transaction Messages"
+description: Provides the details for sending transaction messages to Bing Ads.
 ms.service: "hotel-ads-transaction-message"
 ms.topic: "article"
 ms.date: 11/1/2017
 author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
-description: 
+ms.date: 11/1/2017
 ---
-# Sending Bing Transaction Messages
+
+# Pushing Transaction Messages to Bing Ads
+
 Before sending a transaction message:
 
 - Validate the message to ensure that it's compliant with the [Transaction XSD](https://bhacstatic.blob.core.windows.net/schemas/transaction.xsd). This will save you round trips and time having to fix errors.
@@ -16,17 +20,19 @@ Before sending a transaction message:
   
 - Ensure that you have less than five requests queued or being processed. Your application should include the logic necessary to stay within the limit. If you exceed the limit, the request fails with HTTP status code 429. 
 
-## Sending the message
 
-Send the transaction message in the body of an HTTPS POST request to:
+After validating the message, send it to Bing in the body of an HTTPS POST request. The URL that you send the request to is:
 
 `https://hotels.api.bingads.microsoft.com/api/customers/<customerId>/transactions`
 
 Set \<customerId\> to the advertiser's customer ID.
   
-The request must include the following header:
+The request must include the following headers:
 
-- Content-Type: `application/xml; charset=utf-8` 
+- Content-Type: application/xml; charset=utf-8
+- Authorization: Bearer \<accesstokengoeshere> 
+
+For details about getting an OAuth access token, see [Getting Started](../hotel-service/get-started.md) in Hotel API.
   
 You may also specify the following optional headers:
 
@@ -39,7 +45,7 @@ You may also specify the following optional headers:
 
 The following shows an example POST request.
 
-```http
+```
 POST https://hotels.api.bingads.microsoft.com/api/customers/abc123/transactions HTTP/1.1
 Content-Type: application/xml; charset=utf-8
 Host: hotels.api.bingads.microsoft.com
@@ -62,7 +68,10 @@ Host: hotels.api.bingads.microsoft.com
 </Transaction>
 ```
 
-The POST request places the message in a queue to be processed and then returns. To determine whether Bing successfully processed the message, see Hotel Ads Feed Status in the Bing Hotel Center of Bing Ads web application.
+The POST request places the message in a queue to be processed and then returns. You may have a maximum of five requests queued or being processed at the same time. If you exceed the limit, the request fails with 429. 
+
+To determine whether Bing successfully processed the message, see Hotel Ads Feed Status in the Bing Hotel Center of Bing Ads web application.
+
 
 If the request succeeds (the message is successfully placed in the queue), the response's body includes an XML document that specifies the number of bytes read (`BytesReceived`) from the request's body (the transaction message). 
 
@@ -79,3 +88,9 @@ The `FeedId` element contains a Bing-generated ID that uniquely identifies the f
 If the request fails, the response body will include an XML document that contains a list of error codes and messages that identify why the request failed. For a list of error codes and messages, see [Error Codes and Messages](../transaction-message/error-codes-messages.md).
 
 The response includes the WebRequestActivityId response header. The header contains the ID associated with the request in the log files. Whenever a request fails, capture the ID. If you're unable to resolve the issue, provide this ID when you contact Support.
+
+
+
+## How often do I need to send messages
+
+Send transaction messages whenever pricing and availability changes.

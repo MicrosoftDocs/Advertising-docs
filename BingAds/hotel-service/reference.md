@@ -1,13 +1,17 @@
 ---
 title: "Hotel API Reference"
+description: Describes the endpoint, headers, query parameters, and objects of the Hotel Ads API.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
 ms.date: 11/1/2017
 author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
-description: 
+ms.date: 11/1/2017
 ---
-# Hotel API Reference
+
+# Hotel API reference
+
 > [!NOTE]
 > Hotel Ads is under pilot and available to pilot participants only.  Please contact your account manager for details.
 >

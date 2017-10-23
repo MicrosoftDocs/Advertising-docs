@@ -1,15 +1,19 @@
 ---
 title: "Hotel API"
+description: Overview of the Hotel API, which you use to manage your hotel campaigns in Bing Ads.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
 ms.date: 11/1/2017
 author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
-description: 
+ms.date: 11/1/2017
 ---
+
 # Hotel API
+
 > [!NOTE]
-> Hotel Ads is under pilot and available to pilot participants only.  Please contact your account manager for details.
+> This beta release of Hotel Ads is available to select participants only. For information about participating in the beta release program, please contact your account manager.
 >
 > The API and documentation are subject to change.
 
@@ -35,7 +39,7 @@ For information about moving the hotel to a different hotel group, see [Associat
 
 ## What needs in place before I start?
 
-You'll need credentials and your hotel feeds set up. For information, see [Get Started](../transaction-message/get-started.md)
+You'll need credentials and your hotel feeds set up. For information, see [Getting Started](../hotel-service/get-started.md)
 
 
 ## How do I manage my resources?

@@ -1,15 +1,19 @@
 ---
 title: "Points of Sale Reference"
+description: Describes the schema used to create a points of sale feed file.
 ms.service: "hotel-ads-pos-feed"
 ms.topic: "article"
 ms.date: 11/1/2017
 author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
-description: 
+ms.date: 11/1/2017
 ---
-# Points of Sale Reference
+
+# Points of Sale reference
+
 > [!NOTE]
-> Hotel Ads is now under pilot and available to pilot participants only. Please contact your account manager for details.
+> This beta release of Hotel Ads is available to select participants only. For information about participating in the beta release program, please contact your account manager.
 
 If you create hotel ads in Bing, you must use a Points of Sale feed to provide Bing the point of sale URLs to include in ads. You must define and import your points of sale feed prior to sending Bing [Transaction Messages](../transaction-message/transaction-message.md). 
 
