@@ -67,7 +67,7 @@
         "hint-message/**.yml": "hotel-ads-hint-message",
         "query-message/**.yml": "hotel-ads-query-message",
         "query-control-message/**.yml": "hotel-ads-query-control-message"    
-      }, 
+      }
     },
     "template": [],
     "dest": "BingAds"
