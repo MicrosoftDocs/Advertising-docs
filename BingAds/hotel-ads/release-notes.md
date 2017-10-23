@@ -27,7 +27,7 @@ Released the Beta version of Hotel Ads.
   
 - Added the following messages to support the two types of pull requests.  
   - [QueryControl](../query-control-message/query-control-message.md) message  
-  - [Hint](../hint/hint-message.md) message
+  - [Hint](../hint-message/hint-message.md) message
   - [Query](../query-message/query-message.md) message  
   
 - Increased the number of days prior to check in that users can book (advanced booking window) from 90 days to 180 days. 
@@ -47,7 +47,7 @@ Released the Beta version of Hotel Ads.
 
 #### Nonbreaking changes
 
-- Added the `BidMultiplierSource` field to the [Hotel](../hotel-service/reference.md#Hotel) and  [HotelGroup](../hotel-service/reference.md#HotelGroup) objects. The source field indicates whether the object inherits or defines the bid multiplers. For example, if hotel object inherits the multipliers from the subaccount, `BidMultiplierSource` is SubAccount.  
+- Added the `BidMultiplierSource` field to the [Hotel](../hotel-service/reference.md#hotel) and  [HotelGroup](../hotel-service/reference.md#hotelgroup) objects. The source field indicates whether the object inherits or defines the bid multiplers. For example, if hotel object inherits the multipliers from the subaccount, `BidMultiplierSource` is SubAccount.  
   
 - Added support for the [$select](../hotel-service/reference.md#select-param) OData query parameter. You can use the parameter to select the fields that you want the response to include.  
   
@@ -63,7 +63,7 @@ Released the Beta version of Hotel Ads.
 
 - Limited the list of hotel associations that you may specify in a single request to 500. For information, see the [/Associate](../hotel-service/reference.md#associate) template.  
   
-- Removed the `@odata.context` field from response objects. For example, the [AddResponse](../hotel-service/reference.md#AddResponse) and [CollectionResponse](../hotel-service/reference.md#CollectionResponse) objects no longer include the `@odata.context` field.
+- Removed the `@odata.context` field from response objects. For example, the [AddResponse](../hotel-service/reference.md#addresponse) and [CollectionResponse](../hotel-service/reference.md#collectionresponse) objects no longer include the `@odata.context` field.
 
 ## August 16, 2017
 

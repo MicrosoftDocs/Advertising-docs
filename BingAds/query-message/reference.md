@@ -55,7 +55,7 @@ Defines the list of properties that Bing wants data for, and the options for the
 
 |Element|Description|Children
 |-|-|-
-||Bing this option if you signed up for pull requests, or you signed up for pull with hints requests and your [Hint](../Topic/Hint%20Message%20Reference.md) message specifies exact itineraries (includes the \<Stay\> element).|[pointQueryGroup](#pointquerygroup)
+||Bing this option if you signed up for pull requests, or you signed up for pull with hints requests and your [Hint](../hint-message/reference.md) message specifies exact itineraries (includes the \<Stay\> element).|[pointQueryGroup](#pointquerygroup)
 ||Bing uses this option if you signed up for pull with hints requests and your hint specifies a check-in date range.|[rangeQueryGroup](#rangequerygroup)
 |PropertyList|A list of one or more hotel IDs that you must return itinerary data for. |[propertyListType](#propertylisttype)
 

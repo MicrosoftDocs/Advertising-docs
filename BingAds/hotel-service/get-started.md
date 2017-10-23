@@ -21,16 +21,16 @@ Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. Th
 <a name="authenticatingcredentials"/> 
 ## Authenticating your credentials
 
-The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Managing User Authentication with OAuth](../bingads/guides/authentication-oauth.md). 
+The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Managing User Authentication with OAuth](../guides/authentication-oauth.md). 
 
-You *can* use the [Bing Ads SDK](..bingads/guides/client-libraries.md) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](..bingads/guides/get-started-csharp.md#oauth) | [Java](..bingads/guides/get-started-java.md#oauth) | [Python](..bingads/guides/get-started-python.md#oauth). (You should only use the SDK to get the access token if you're using the SDK for Bing ad campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
+You *can* use the [Bing Ads SDK](../guides/client-libraries.md) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](../guides/get-started-csharp.md#oauth) | [Java](../guides/get-started-java.md#oauth) | [Python](../guides/get-started-python.md#oauth). (You should only use the SDK to get the access token if you're using the SDK for Bing ad campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
 
 If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md) for an example OAuth implementation.
 
 > [!NOTE]
 > If you use the API from a service, you must write a simple app to get the refresh token for a user that has permissions to access the hotel data. You will call the app you write once just to get the refresh token. After getting the refresh token, store it in secure storage that's accessible by your service. 
 >
-> Follow the steps outlined in [Managing User Authentication with OAuth](../bingads/guides/authentication-oauth.md) for getting the client ID for your app and for implementing the code grant flow. For an example of a simple console app that you use to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md).
+> Follow the steps outlined in [Managing User Authentication with OAuth](../guides/authentication-oauth.md) for getting the client ID for your app and for implementing the code grant flow. For an example of a simple console app that you use to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md).
 >
 > After getting the initial refresh token, the following shows the basic calling sequence that you'll make to get the access token that you set the Authorization header to.
 >
@@ -106,7 +106,7 @@ var headers = new WebHeaderCollection();
 headers.Add(HttpRequestHeader.Authorization, "Bearer " + tokens.AccessToken);
 ```
 
-For information about the Authorization header and other headers that the request and response may contain, see [Headers](../hotel-service/reference.md#Headers). 
+For information about the Authorization header and other headers that the request and response may contain, see [Headers](../hotel-service/reference.md#headers). 
 
 > [!NOTE]
 > The Hotel API uses the standard Authorization header. If you use the Bing Ads SDK to get the OAuth tokens, you'll use the SDK to get the tokens and then set the Authorization header.

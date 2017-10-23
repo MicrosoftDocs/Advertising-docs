@@ -19,7 +19,7 @@ If you create hotel ads in Bing, you use transaction messages to provide Bing yo
 
 For information about creating a transaction message, see [Creating a Transaction Message](../transaction-message/create-transaction-message.md).
 
-For information about sending a transaction message, see [Pusing a Transaction Message to Bing](../transaction-message/puse-transaction-message.md) or [Having Bing Pull Transaction Messages](../transaction-message/pull-transaction-message.md).
+For information about sending a transaction message, see [Pusing a Transaction Message to Bing](../transaction-message/push-transaction-message.md) or [Having Bing Pull Transaction Messages](../transaction-message/pull-transaction-message.md).
 
 > [!NOTE]
 > Bing does not support all Transaction XSD elements. This topic includes only those elements and attributes that Bing supports. Bing ignores all other elements and attributes. 
