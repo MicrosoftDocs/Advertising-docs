@@ -23,7 +23,7 @@ Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. Th
 
 The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Managing User Authentication with OAuth](../guides/authentication-oauth.md). 
 
-You *can* use the [Bing Ads SDK](../guides/client-libraries.md) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](../guides/get-started-csharp.md#oauth) | [Java](../guides/get-started-java.md#oauth) | [Python](../guides/get-started-python.md#oauth). (You should only use the SDK to get the access token if you're using the SDK for Bing ad campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
+You *can* use the [Bing Ads SDK](../guides/client-libraries.md) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](../guides/get-started-csharp.md) | [Java](../guides/get-started-java.md) | [Python](../guides/get-started-python.md). (You should only use the SDK to get the access token if you're using the SDK for Bing ad campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
 
 If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md) for an example OAuth implementation.
 
@@ -53,7 +53,7 @@ If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Examp
 
 You cannot use the Bing Ads SDK in the SI environment to get the access token. For SI, you can either clone the SDK Git repository and update the endpoints accordingly, or write your own AOuth implementation.
 
-For the SI environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Managing User Authentication with OAuth](../bingads/guides/authentication-oauth.md), substitute them with the following SI endpoints.
+For the SI environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Managing User Authentication with OAuth](../guides/authentication-oauth.md), substitute them with the following SI endpoints.
 
  - si.bingads.microsoft.com&mdash;Endpoint for Bing Ads
  - account.microsoft-int.com&mdash;Endpoint for getting an SI Microsoft account 
