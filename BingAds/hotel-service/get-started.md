@@ -49,23 +49,23 @@ If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Examp
 >
 > You should only get a new access token just before the current token expires. Do not get a new access token for each call.
 
-### Authenticating your credentials in SI
+### Authenticating your credentials in sandbox
 
-You cannot use the Bing Ads SDK in the SI environment to get the access token. For SI, you can either clone the SDK Git repository and update the endpoints accordingly, or write your own AOuth implementation.
+You cannot use the Bing Ads SDK in the sandbox environment to get the access token. For sandbox, you can either clone the SDK Git repository and update the endpoints accordingly, or write your own AOuth implementation.
 
-For the SI environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Managing User Authentication with OAuth](../guides/authentication-oauth.md), substitute them with the following SI endpoints.
+For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Managing User Authentication with OAuth](../guides/authentication-oauth.md), substitute them with the following SI endpoints.
 
- - si.bingads.microsoft.com&mdash;Endpoint for Bing Ads
- - account.microsoft-int.com&mdash;Endpoint for getting an SI Microsoft account 
- - outlook-int.com&mdash;Endpoint for SI email used when getting an SI Microsoft account
- - apps.dev.microsoft-int.com/#/appList&mdash;Endpoint for getting an SI client ID
+ - partner.api.sandbox.bingads.microsoft.com&mdash;Endpoint for Bing Ads sandbox
+ - account.microsoft-int.com&mdash;Endpoint for getting a sandbox Microsoft account 
+ - outlook-int.com&mdash;Endpoint for sandbox email used when getting a sandbox Microsoft account
+ - apps.dev.microsoft-int.com/#/appList&mdash;Endpoint for getting a sandbox client ID
  - login.live-int.com&mdash;Endpoint for OAuth requests
 
 
 <a name="getsicredentials"/> 
-## Getting SI (sandbox) credentials
+## Getting sandbox credentials
 
-You use the SI (sandbox) environment to test your application before putting it in production. Use the following steps to get an SI account.
+You use the sandbox environment to test your application before putting it in production. Use the following steps to get a sandbox account.
 
 1)	Open a browser and navigate to si.bingads.microsoft.com
 2)	Click **Sign up for Bing Ads** or **Sign up now**
@@ -73,7 +73,7 @@ You use the SI (sandbox) environment to test your application before putting it 
 4)	For **Import/Create Campaign**, select **Option 3: Skip this step**
 5)	For **Go Live**, click **Skip**
 
-The above steps create a Bing Ads legacy account. To use Hotel Ads API, you need an SI Microsoft account (MSA). To get an MSA that you can use in SI, you need to invite a user to work on your account. The following steps show how to invite a user to work on your account.
+The above steps create a Bing Ads legacy account. To use Hotel Ads API, you need a sandbox Microsoft account (MSA). To get an MSA that you can use in sandbox, you need to invite a user to work on your account. The following steps show how to invite a user to work on your account.
 
 1)	In Bing Ads, click your user name (upper right corner)
 2)	Click **Accounts & Billing**
@@ -84,7 +84,7 @@ The above steps create a Bing Ads legacy account. To use Hotel Ads API, you need
 
 Bing Ads sends an email invite to the user. If the invite doesn’t show up in the inbox, check the Junk Email folder. It may take a while to receive the invite. The following steps show how to accept the invitation.
 
-1)	Open the email from Bing Ads SI Test with subject line, Invitation to Bing Ads
+1)	Open the email from Bing Ads with subject line, Invitation to Bing Ads
 2)	Click the embedded link
 3)	Select **Create a new email address** to create an MSA
 4)	Click **Next**
