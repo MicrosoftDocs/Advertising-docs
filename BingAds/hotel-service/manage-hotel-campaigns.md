@@ -15,7 +15,7 @@ ms.date: 11/1/2017
 > [!NOTE]
 > This beta release of Hotel Ads is available to select participants only. For information about participating in the beta release program, please contact your account manager.
 >
-> The API and documenation are subject to change.
+> The API and documentation are subject to change.
 
 The Hotel API lets you manage your hotel ad campaigns and bidding.
 
