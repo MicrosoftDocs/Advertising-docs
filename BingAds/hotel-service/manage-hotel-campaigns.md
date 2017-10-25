@@ -25,6 +25,8 @@ If you haven't already done so, familiarize yourself with the following topics:
 - [Getting started](../hotel-service/get-started.md)
 - [API reference](../hotel-service/reference.md)
 
+For Hotel API endpoints, see [Endpoints](../hotel-service/reference.md#endpoints). 
+
 <a name="workingwithsubaccounts" />
 ## Working with subaccounts
 
@@ -91,7 +93,7 @@ For details about the valid bid range and budget for your market, see the Curren
 
 To pause a subaccount, set the `Bid` or `Budget` property to zero (0.0). All hotels in the paused subaccount will not serve. To activate the subaccount, set `Bid` and `Budget` to a value greater than zero.  
 
-To update a subaccount, send a PATCH request. The body of the request contains a [SubAccount](../hotel-service/reference.md#subaccount) object with only the properties that you want to update. This example shows adding multipliers.
+To update a subaccount, send a PATCH request. The body of the request is a [SubAccount](../hotel-service/reference.md#subaccount) object. Include only the properties that you want to update. This example shows updating multipliers.
 
 ```
 PATCH https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>') HTTP/1.1
@@ -328,7 +330,7 @@ If the subaccount specifies the a maximum bid, the hotel group's bid must be les
 
 To pause a hotel group, set the `Bid` property to zero (0.0). All hotels in the paused hotel group will not serve. To activate the hotel group, set `Bid` to a value greater than zero.  
 
-To update a hotel group, send a PATCH request. The body of the request contains a [HotelGroup](../hotel-service/reference.md#hotelgroup) object with only the properties that you want to update. This example shows adding a bid and multipliers.
+To update a hotel group, send a PATCH request. The body of the request is a [HotelGroup](../hotel-service/reference.md#hotelgroup) object. Include only the properties that you want to update. This example shows updating the bid and multipliers.
 
 ```
 PATCH https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups('<hotelgroupid>') HTTP/1.1
@@ -542,7 +544,7 @@ If the subaccount specifies the a maximum bid, the hotel's bid must be less than
 
 To pause a hotel, set the `Bid` property to zero (0.0). Paused hotels will not serve. To activate the hotel, set `Bid` to a value greater than zero. A hotel will also not serve if the hotel group or subaccount that it belongs to is paused. 
 
-To update a hotel, send a PATCH request. The body of the request contains a [Hotel](../hotel-service/reference.md#hotel) object with only the properties that you want to update. This example shows updating the multipliers.
+To update a hotel, send a PATCH request. The body of the request is a [Hotel](../hotel-service/reference.md#hotel) object. Include only the properties that you want to update. This example shows updating the multipliers.
 
 ```
 {

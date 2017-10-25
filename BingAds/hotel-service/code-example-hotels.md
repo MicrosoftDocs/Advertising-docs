@@ -245,17 +245,24 @@ namespace ListHotels
 
             var response = (HttpWebResponse)request.GetResponse();
 
-            object responseObject = null;
-
-            using (Stream responseStream = response.GetResponseStream())
+            if (verb == "POST")
             {
-                var reader = new StreamReader(responseStream);
-                var jsonOut = reader.ReadToEnd();
-                reader.Close();
-                responseObject = JsonConvert.DeserializeObject(jsonOut, responseType);
-            }
+                object responseObject = null;
 
-            return responseObject;
+                using (Stream responseStream = response.GetResponseStream())
+                {
+                    var reader = new StreamReader(responseStream);
+                    var jsonOut = reader.ReadToEnd();
+                    reader.Close();
+                    responseObject = JsonConvert.DeserializeObject(jsonOut, responseType);
+                }
+
+                return responseObject;
+            }
+            else
+            {
+                return null;
+            }
         }
 
 
