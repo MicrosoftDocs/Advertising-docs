@@ -268,17 +268,24 @@ namespace ListSubAccounts
 
             var response = (HttpWebResponse)request.GetResponse();
 
-            AddResponse addResponse = null;
-
-            using (Stream responseStream = response.GetResponseStream())
+            if (verb == "POST")
             {
-                var reader = new StreamReader(responseStream);
-                var jsonOut = reader.ReadToEnd();
-                reader.Close();
-                addResponse = JsonConvert.DeserializeObject<AddResponse>(jsonOut);
-            }
+                AddResponse addResponse = null;
 
-            return addResponse.value;
+                using (Stream responseStream = response.GetResponseStream())
+                {
+                    var reader = new StreamReader(responseStream);
+                    var jsonOut = reader.ReadToEnd();
+                    reader.Close();
+                    addResponse = JsonConvert.DeserializeObject<AddResponse>(jsonOut);
+                }
+
+                return addResponse.value;
+            }
+            else
+            {
+                return null;
+            }
         }
 
 
