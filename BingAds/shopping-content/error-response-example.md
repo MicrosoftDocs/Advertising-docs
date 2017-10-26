@@ -1,11 +1,13 @@
 ---
 title: "Error Response Example"
+description: "Shows example json representing an error response returned by the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
 ---
 # Error Response Example
 The error response varies depending on the URI being called. See the following responses for JSON and XML examples.

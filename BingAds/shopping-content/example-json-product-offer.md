@@ -1,11 +1,13 @@
 ---
 title: "Example JSON Product Offer"
+description: "Shows example json representing a product offer returned by the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
 ---
 # Example JSON Product Offer
 The following shows an example of a product offer in JSON that a GET request returns. 

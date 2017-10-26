@@ -1,11 +1,13 @@
 ---
 title: "Managing your Catalogs"
+description: "Learn how to manage catalogs using the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
 ---
 # Managing your Catalogs
 Content API is a RESTful API that uses the [Catalogs](../shopping-content/catalogs-resource.md) resource to manage catalogs in your Bing Merchant Center (BMC) store. 

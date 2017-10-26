@@ -1,11 +1,13 @@
 ---
 title: "JSON and XML Examples"
+description: "Links to json and xml example responses returned by the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
 ---
 # JSON and XML Examples
 This section provides JSON and XML example responses.

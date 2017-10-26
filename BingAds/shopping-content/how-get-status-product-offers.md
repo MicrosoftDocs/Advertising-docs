@@ -1,11 +1,13 @@
 ---
 title: "How Do I Get the Status of Product Offers?"
+description: "Learn how to get the status of proudct offers with the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
 ---
 # How Do I Get the Status of Product Offers?
 When you add or update a product offer in a catalog or store, the contents of the offer are validated and it goes through editorial review. That process can take up to 36 hours. To see whether the offer passed the review process, use the [Status](../shopping-content/status-resource.md) resource. The resource lets you get the status of product offers that you uploaded to a catalog or store.

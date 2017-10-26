@@ -1,11 +1,13 @@
 ---
 title: "Content API Code Examples"
+description: "A list of links providing more information on each operation available in the Content API."
+author: "swhite-msft"
+manager: "ehnasen"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
 ---
 # Content API Code Examples
 This section provides code examples that show how to use the resources available in the Content API.
