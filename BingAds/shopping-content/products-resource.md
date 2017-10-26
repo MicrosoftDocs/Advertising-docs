@@ -1,11 +1,13 @@
 ---
 title: "Products Resource"
+description: "Provides information about the products resource and related elements of the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
 ---
 # Products Resource
 The Products resource lets you manage product offerings in your Bing Merchant Center store (BMC). For information about using the Products resources, see [Managing your Products](../shopping-content/manage-products.md). For examples that show how to add, delete, and get products, see [Code Examples](../shopping-content/code-examples.md).

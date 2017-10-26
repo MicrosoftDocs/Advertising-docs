@@ -1,11 +1,13 @@
 ---
 title: "Content API Overview"
+description: "Describes the Content API, what it does, and who should use it."
+author: "swhite-msft"
+manager: "ehansen"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
 ---
 # Content API Overview
 Bing Ads Content API is a RESTful API that allows advertisers to programmatically 

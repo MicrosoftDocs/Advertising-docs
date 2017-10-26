@@ -1,11 +1,14 @@
 ---
 title: "Downloading a Catalog Status Report Code Example"
+description: "Code sample showing how to download a catalog status report with the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
+
 dev_langs: 
   - csharp
   - java

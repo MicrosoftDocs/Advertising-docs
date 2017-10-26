@@ -1,11 +1,14 @@
 ---
 title: "Creating a Batch Request Code Example"
+description: "Code samples showing how to create a batch request with the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
+
 dev_langs: 
   - csharp
   - java

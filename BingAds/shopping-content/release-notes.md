@@ -1,11 +1,12 @@
 ---
 title: "Release Notes"
+description: "Describes the history of changes made to the Content API."
+author: "swhite-msft"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
 ---
 # Release Notes
 This topic describes recent changes made to Version 9.1 of the Content API.

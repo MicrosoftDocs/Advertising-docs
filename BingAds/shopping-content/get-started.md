@@ -1,11 +1,13 @@
 ---
 title: "Get Started with the Content API"
+description: "Learn how to get started using the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
 ---
 # Get Started with the Content API
 ## <a name="credentials"/> Do you have your Bing Ads credentials and developer token?

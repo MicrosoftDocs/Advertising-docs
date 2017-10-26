@@ -1,11 +1,13 @@
 ---
 title: "Example XML Product Offer"
+description: "Shows example xml representing a product offer returned by the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
 ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.date: 11/1/2017
-author: "swhite-msft"
 ms.author: "scottwhi"
-description: 
 ---
 # Example XML Product Offer
 The following shows an example of a product offer in XML that a GET request returns. 
