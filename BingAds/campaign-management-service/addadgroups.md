@@ -2,7 +2,7 @@
 title: AddAdGroups Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Adds new ad groups to a specified campaign.
@@ -228,7 +228,7 @@ static function AddAdGroups(
 }
 ```
 ```python
-response=campaignmanagement.AddAdGroups(
+response=campaignmanagement_service.AddAdGroups(
 	CampaignId=CampaignId,
 	AdGroups=AdGroups)
 ```

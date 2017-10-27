@@ -1,14 +1,15 @@
 ---
-title: "Campaign"
+title: "Campaign Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Campaign fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Campaign
+# Campaign Record - Bulk
 Defines a campaign that can be uploaded and downloaded in a bulk file. 
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
@@ -390,7 +391,7 @@ For possible values, see the Language column within [Ad Languages](~/guides/ad-l
 > [!IMPORTANT]
 > Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](~/customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. More specific dates and implementation details will be provided later through the [Bing Ads API Blog](https://blogs.msdn.microsoft.com/bing_ads_api/), and in the meantime you should update your application right away to support the change. Also note that as a one time migration when the customer is added to pilot, campaign languages are set to the union of all individual ad group languages. For example if you have three ad groups with language set to *English*, *German*, and *French*, then at the time of pilot enablement this campaign's languages will be set to a list including *English*, *German*, and *French*. 
 
-**Add:** Optional  
+**Add:** Optional. If there is no campaign language set, then the language of each ad group within the campaign will be required.   
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. Once campaign languages are set, you cannot delete all of them. The list of languages that you specify during update replaces the previous settings i.e. does not append to the existing set of languages.  
 **Delete:** Read-only  
 

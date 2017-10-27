@@ -2,7 +2,7 @@
 title: GetAccountMonthlySpend Service Operation - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the amount spent by the account in the specified month.
@@ -119,7 +119,7 @@ static function GetAccountMonthlySpend(
 }
 ```
 ```python
-response=customerbilling.GetAccountMonthlySpend(
+response=customerbilling_service.GetAccountMonthlySpend(
 	AccountId=AccountId,
 	MonthYear=MonthYear)
 ```

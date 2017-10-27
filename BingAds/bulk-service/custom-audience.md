@@ -1,14 +1,15 @@
 ---
-title: "Custom Audience"
+title: "Custom Audience Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Custom Audience fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Custom Audience
+# Custom Audience Record - Bulk
 Defines a custom audience that can be downloaded and uploaded in a bulk file. 
 
 > [!NOTE]

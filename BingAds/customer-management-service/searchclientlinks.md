@@ -2,7 +2,7 @@
 title: SearchClientLinks Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: This feature is not supported in sandbox.Searches for the client links for the customer of the current authenticated user, filtered by the search criteria.
@@ -170,7 +170,7 @@ static function SearchClientLinks(
 }
 ```
 ```python
-response=customermanagement.SearchClientLinks(
+response=customermanagement_service.SearchClientLinks(
 	Predicates=Predicates,
 	Ordering=Ordering,
 	PageInfo=PageInfo)

@@ -2,7 +2,7 @@
 title: SendUserInvitation Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Sends an invitation for  a Microsoft account user to manage one or more Bing Ads customer accounts.
@@ -131,7 +131,7 @@ static function SendUserInvitation(
 }
 ```
 ```python
-response=customermanagement.SendUserInvitation(
+response=customermanagement_service.SendUserInvitation(
 	UserInvitation=UserInvitation)
 ```
 

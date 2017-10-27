@@ -2,7 +2,7 @@
 title: SearchAccounts Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Searches for accounts that match a specified criteria.
@@ -197,7 +197,7 @@ static function SearchAccounts(
 }
 ```
 ```python
-response=customermanagement.SearchAccounts(
+response=customermanagement_service.SearchAccounts(
 	Predicates=Predicates,
 	Ordering=Ordering,
 	PageInfo=PageInfo)

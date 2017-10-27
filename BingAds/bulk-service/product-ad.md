@@ -1,14 +1,15 @@
 ---
-title: "Product Ad"
+title: "Product Ad Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Product Ad fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Product Ad
+# Product Ad Record - Bulk
 Defines a product ad that can be downloaded and uploaded in a bulk file.
 
 A product ad is not used directly for delivered ad copy.  Instead, the delivery engine generates product ads from the product details that it finds in the customer’s Bing Merchant Center store catalog.

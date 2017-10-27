@@ -2,7 +2,7 @@
 title: GetEstimatedBidByKeywords Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the estimated bid value of one or more keywords that could result in an ad appearing in the targeted position in the search results.
@@ -214,7 +214,7 @@ static function GetEstimatedBidByKeywords(
 }
 ```
 ```python
-response=adinsight.GetEstimatedBidByKeywords(
+response=adinsight_service.GetEstimatedBidByKeywords(
 	Keywords=Keywords,
 	TargetPositionForAds=TargetPositionForAds,
 	Language=Language,

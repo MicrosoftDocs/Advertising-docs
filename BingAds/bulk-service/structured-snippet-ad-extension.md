@@ -1,14 +1,15 @@
 ---
-title: "Structured Snippet Ad Extension"
+title: "Structured Snippet Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Structured Snippet Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Structured Snippet Ad Extension
+# Structured Snippet Ad Extension Record - Bulk
 Defines a structured snippet ad extension that can be downloaded and uploaded in a bulk file.
 
 A structured snippet ad extension pairs one header with between 3 and 10 snippet values that tell customers more about your business.

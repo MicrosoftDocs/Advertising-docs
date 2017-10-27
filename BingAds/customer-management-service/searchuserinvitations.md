@@ -2,7 +2,7 @@
 title: SearchUserInvitations Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Searches for user invitations that match a specified criteria.
@@ -133,7 +133,7 @@ static function SearchUserInvitations(
 }
 ```
 ```python
-response=customermanagement.SearchUserInvitations(
+response=customermanagement_service.SearchUserInvitations(
 	Predicates=Predicates)
 ```
 

@@ -3,11 +3,10 @@ title: "Hotel API"
 description: Overview of the Hotel API, which you use to manage your hotel campaigns in Bing Ads.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"
-ms.date: 11/1/2017
 ---
 
 # Hotel API

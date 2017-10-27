@@ -2,7 +2,7 @@
 title: AddNegativeKeywordsToEntities Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Adds negative keywords to the specified campaign or ad group.
@@ -175,7 +175,7 @@ static function AddNegativeKeywordsToEntities(
 }
 ```
 ```python
-response=campaignmanagement.AddNegativeKeywordsToEntities(
+response=campaignmanagement_service.AddNegativeKeywordsToEntities(
 	EntityNegativeKeywords=EntityNegativeKeywords)
 ```
 

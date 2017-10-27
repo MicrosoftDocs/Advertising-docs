@@ -2,7 +2,7 @@
 title: GetAdExtensionsEditorialReasons Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets editorial rejection reasons for the respective ad extension and entity associations.
@@ -172,7 +172,7 @@ static function GetAdExtensionsEditorialReasons(
 }
 ```
 ```python
-response=campaignmanagement.GetAdExtensionsEditorialReasons(
+response=campaignmanagement_service.GetAdExtensionsEditorialReasons(
 	AccountId=AccountId,
 	AdExtensionIdToEntityIdAssociations=AdExtensionIdToEntityIdAssociations,
 	AssociationType=AssociationType)

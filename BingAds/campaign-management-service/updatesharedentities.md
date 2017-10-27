@@ -2,7 +2,7 @@
 title: UpdateSharedEntities Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Updates negative keyword lists within the account's library.
@@ -150,7 +150,7 @@ static function UpdateSharedEntities(
 }
 ```
 ```python
-response=campaignmanagement.UpdateSharedEntities(
+response=campaignmanagement_service.UpdateSharedEntities(
 	SharedEntities=SharedEntities)
 ```
 

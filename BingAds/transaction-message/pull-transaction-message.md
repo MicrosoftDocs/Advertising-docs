@@ -3,10 +3,10 @@ title: "Having Bing Ads pull Transaction Messages"
 description: Provides the details for having Bing Ads pull transaction messages.
 ms.service: "hotel-ads-transaction-message"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"
-ms.date: 11/1/2017
 ---
 
 # Having Bing Ads pull Transaction Messages

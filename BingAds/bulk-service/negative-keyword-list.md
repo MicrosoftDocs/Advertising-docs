@@ -1,14 +1,15 @@
 ---
-title: "Negative Keyword List"
+title: "Negative Keyword List Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Negative Keyword List fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Negative Keyword List
+# Negative Keyword List Record - Bulk
 Defines a negative keyword list that can be downloaded and uploaded in a bulk file.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File

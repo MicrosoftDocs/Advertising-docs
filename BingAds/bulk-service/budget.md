@@ -1,14 +1,15 @@
 ---
-title: "Budget"
+title: "Budget Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Budget fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Budget
+# Budget Record - Bulk
 Defines a budget that can be uploaded and downloaded in a bulk file.
 
 You can set a single daily budget that can be used by any campaign within the same account. This will enable you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Bing Ads account.

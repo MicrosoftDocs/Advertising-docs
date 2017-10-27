@@ -2,7 +2,7 @@
 title: UpdateConversionGoals Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Updates conversion goals within the account's shared conversion goal library.
@@ -176,7 +176,7 @@ static function UpdateConversionGoals(
 }
 ```
 ```python
-response=campaignmanagement.UpdateConversionGoals(
+response=campaignmanagement_service.UpdateConversionGoals(
 	ConversionGoals=ConversionGoals)
 ```
 

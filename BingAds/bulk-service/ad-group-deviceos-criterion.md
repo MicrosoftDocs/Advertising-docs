@@ -1,14 +1,15 @@
 ---
-title: "Ad Group DeviceOS Criterion"
+title: "Ad Group DeviceOS Criterion Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group DeviceOS Criterion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group DeviceOS Criterion
+# Ad Group DeviceOS Criterion Record - Bulk
 Defines an ad group device OS criterion that can be uploaded and downloaded in a bulk file.
 
 When you target by device, you choose to show ads to potential customers when they're using desktops and tablets or smartphones. 

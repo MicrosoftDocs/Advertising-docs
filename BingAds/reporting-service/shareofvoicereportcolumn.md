@@ -2,7 +2,7 @@
 title: ShareOfVoiceReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the ShareOfVoiceReportRequest.
@@ -14,7 +14,10 @@ The attribute columns that you include in a report can affect how the statistics
 
 For a list of columns that you must include, please see the [Required Columns](#requiredcolumns) section below.
 
-To see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report, see [Report Data Retention Time Periods](~/guides/report-data-retention-time-periods.md).
+To see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report, see [Report Data Retention Time Periods](~/guides/report-data-retention-time-periods.md).  
+
+> [!NOTE]
+> The ImpressionSharePercent, ImpressionLostToBudgetPercent, and ImpressionLostToRankPercent columns are the only applicable Share of Voice data available for Bing Ads Shopping Campaigns. 
 
 ## Syntax
 ```xml

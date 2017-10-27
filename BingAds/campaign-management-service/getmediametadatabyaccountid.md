@@ -2,7 +2,7 @@
 title: GetMediaMetaDataByAccountId Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the media meta data of the specified entity type from an account's media library.
@@ -132,7 +132,7 @@ static function GetMediaMetaDataByAccountId(
 }
 ```
 ```python
-response=campaignmanagement.GetMediaMetaDataByAccountId(
+response=campaignmanagement_service.GetMediaMetaDataByAccountId(
 	MediaEnabledEntities=MediaEnabledEntities)
 ```
 

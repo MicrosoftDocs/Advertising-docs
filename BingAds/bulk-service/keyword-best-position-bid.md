@@ -1,14 +1,13 @@
 ---
-title: "Keyword Best Position Bid"
+title: "Keyword Best Position Bid Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
-dev_langs:
-  - csharp
+description: Describes the Keyword Best Position Bid fields in a Bulk file.
 ---
-# Keyword Best Position Bid
+# Keyword Best Position Bid Record - Bulk
 Defines a keyword's estimated best position bid that can be downloaded in a bulk file.
 
 ## <a name="keywordbestpositionbid"></a>Keyword Best Position Bid Record

@@ -3,11 +3,10 @@ title: "Get Started with the Hotel API"
 description: Provides details about getting credentials and authenticating users.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"
-ms.date: 11/1/2017
 ---
 
 # Get started with the Hotel API

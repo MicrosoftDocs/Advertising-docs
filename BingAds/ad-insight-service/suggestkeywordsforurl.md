@@ -2,7 +2,7 @@
 title: SuggestKeywordsForUrl Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Suggests the possible keywords for the content located at the specified URL.
@@ -150,7 +150,7 @@ static function SuggestKeywordsForUrl(
 }
 ```
 ```python
-response=adinsight.SuggestKeywordsForUrl(
+response=adinsight_service.SuggestKeywordsForUrl(
 	Url=Url,
 	Language=Language,
 	MaxKeywords=MaxKeywords,

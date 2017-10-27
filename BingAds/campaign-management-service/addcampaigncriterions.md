@@ -2,7 +2,7 @@
 title: AddCampaignCriterions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Adds one or more campaign criterions that help determine whether ads in each campaign get served.
@@ -246,7 +246,7 @@ static function AddCampaignCriterions(
 }
 ```
 ```python
-response=campaignmanagement.AddCampaignCriterions(
+response=campaignmanagement_service.AddCampaignCriterions(
 	CampaignCriterions=CampaignCriterions,
 	CriterionType=CriterionType)
 ```

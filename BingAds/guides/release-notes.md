@@ -2,13 +2,38 @@
 title: "Bing Ads API Release Notes"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Get information about the changes to the Bing Ads services for each month.
 ---
 # Bing Ads API Release Notes
 For information about the changes to the Bing Ads services for each month, see the following sections.
+
+
+## <a name="october2017"></a>October 2017
+For information about this month's changes to Bing Ads services, see the following sections.
+
+-   [New Reporting Column for Exact Match Impression Share](#reporting-exactmatchimpressionshare-october2017)  
+-   [New Reporting Columns for Labels](#reporting-labels-october2017)  
+
+
+### <a name="reporting-exactmatchimpressionshare-october2017"></a>New Reporting Column for Exact Match Impression Share
+You can now include the exact match impression share percent in the performance data download. 
+
+The *ExactMatchImpressionSharePercent* column has been added to the [AccountPerformanceReportColumn](~/reporting-service/accountperformancereportcolumn.md), [AdGroupPerformanceReportColumn](~/reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](~/reporting-service/campaignperformancereportcolumn.md), and [ShareOfVoiceReportColumn](~/reporting-service/shareofvoicereportcolumn.md) value sets. 
+
+### <a name="reporting-labels-october2017"></a>New Reporting Columns for Labels
+You can now include campaign, ad group, ad, and keyword labels in the performance data download. 
+
+The *AdLabels* column has been added to the [AdDynamicTextPerformanceReportColumn](~/reporting-service/addynamictextperformancereportcolumn.md) and [AdPerformanceReportColumn](~/reporting-service/adperformancereportcolumn.md) value sets.  
+
+The *AdGroupLabels* column has been added to the [AdGroupPerformanceReportColumn](~/reporting-service/adgroupperformancereportcolumn.md) value set.  
+
+The *CampaignLabels* column has been added to the [CampaignPerformanceReportColumn](~/reporting-service/campaignperformancereportcolumn.md) value set.  
+
+The *KeywordLabels* column has been added to the [KeywordPerformanceReportColumn](~/reporting-service/keywordperformancereportcolumn.md) and [ShareOfVoiceReportColumn](~/reporting-service/shareofvoicereportcolumn.md) value sets.  
+
 
 ## <a name="september2017"></a>September 2017
 For information about this month's changes to Bing Ads services, see the following sections.

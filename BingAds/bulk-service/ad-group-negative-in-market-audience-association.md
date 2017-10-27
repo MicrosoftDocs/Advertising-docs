@@ -1,14 +1,15 @@
 ---
-title: "Ad Group Negative In Market Audience Association"
+title: "Ad Group Negative In Market Audience Association Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group Negative In Market Audience Association fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group Negative In Market Audience Association
+# Ad Group Negative In Market Audience Association Record - Bulk
 Defines an Ad Group Negative In Market Audience Association that can be uploaded and downloaded in a bulk file. 
 
 > [!NOTE]

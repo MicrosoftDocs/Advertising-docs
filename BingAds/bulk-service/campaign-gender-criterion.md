@@ -1,14 +1,15 @@
 ---
-title: "Campaign Gender Criterion"
+title: "Campaign Gender Criterion Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Campaign Gender Criterion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Campaign Gender Criterion
+# Campaign Gender Criterion Record - Bulk
 Defines a campaign gender criterion that can be uploaded and downloaded in a bulk file.
 
 You can target customers by gender so that your ads are displayed more frequently to people who will be interested in them. 

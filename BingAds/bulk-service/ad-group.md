@@ -1,14 +1,15 @@
 ---
-title: "Ad Group"
+title: "Ad Group Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group
+# Ad Group Record - Bulk
 Defines an ad group that can be uploaded and downloaded in a bulk file.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File

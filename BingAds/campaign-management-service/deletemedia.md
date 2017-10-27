@@ -2,7 +2,7 @@
 title: DeleteMedia Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Deletes the specified media from an account's media library.
@@ -148,7 +148,7 @@ static function DeleteMedia(
 }
 ```
 ```python
-response=campaignmanagement.DeleteMedia(
+response=campaignmanagement_service.DeleteMedia(
 	AccountId=AccountId,
 	MediaIds=MediaIds)
 ```

@@ -1,14 +1,15 @@
 ---
-title: "Account Review Ad Extension"
+title: "Account Review Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Account Review Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Account Review Ad Extension
+# Account Review Ad Extension Record - Bulk
 Defines an association record between an [Account](../bulk-service/account.md) and a [Review Ad Extension](../bulk-service/review-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the account or review ad extension, use the [Account](../bulk-service/account.md) or [Review Ad Extension](../bulk-service/review-ad-extension.md) record.
 	
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File

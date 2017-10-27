@@ -1,14 +1,15 @@
 ---
-title: "Ad Group Negative Keyword"
+title: "Ad Group Negative Keyword Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group Negative Keyword fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group Negative Keyword
+# Ad Group Negative Keyword Record - Bulk
 Defines a negative keyword assigned to an ad group that can be uploaded and downloaded in a bulk file.
 
 In the bulk schema each of the negative keywords associated with an ad group are represented individually by their own row. For example if an ad group has two negative keywords, they are represented by two *Ad Group Negative Keyword* records in the bulk file with *Status* set to Active.

@@ -2,7 +2,7 @@
 title: SearchCustomers Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Searches for customers that match a specified criteria.
@@ -193,7 +193,7 @@ static function SearchCustomers(
 }
 ```
 ```python
-response=customermanagement.SearchCustomers(
+response=customermanagement_service.SearchCustomers(
 	ApplicationScope=ApplicationScope,
 	Predicates=Predicates,
 	DateRange=DateRange,

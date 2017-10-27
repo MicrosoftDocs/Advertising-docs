@@ -2,7 +2,7 @@
 title: UpdateAdGroups Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Updates the specified ad groups in a campaign.
@@ -232,7 +232,7 @@ static function UpdateAdGroups(
 }
 ```
 ```python
-response=campaignmanagement.UpdateAdGroups(
+response=campaignmanagement_service.UpdateAdGroups(
 	CampaignId=CampaignId,
 	AdGroups=AdGroups,
 	UpdateNativeBidAdjustment=UpdateNativeBidAdjustment)

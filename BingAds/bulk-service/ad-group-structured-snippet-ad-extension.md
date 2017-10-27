@@ -1,14 +1,15 @@
 ---
-title: "Ad Group Structured Snippet Ad Extension"
+title: "Ad Group Structured Snippet Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group Structured Snippet Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group Structured Snippet Ad Extension
+# Ad Group Structured Snippet Ad Extension Record - Bulk
 Defines an association record between an [Ad Group](../bulk-service/ad-group.md) and a [Structured Snippet Ad Extension](../bulk-service/structured-snippet-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or structured snippet ad extension, use the [Ad Group](../bulk-service/ad-group.md) or [Structured Snippet Ad Extension](../bulk-service/structured-snippet-ad-extension.md) record.
 	
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File

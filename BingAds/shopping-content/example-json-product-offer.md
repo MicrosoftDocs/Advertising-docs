@@ -6,7 +6,7 @@ manager: "ehansen"
 
 ms.service: "shopping-content-api"
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 ms.author: "scottwhi"
 ---
 # Example JSON Product Offer

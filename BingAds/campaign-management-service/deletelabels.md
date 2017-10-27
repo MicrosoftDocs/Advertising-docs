@@ -2,7 +2,7 @@
 title: DeleteLabels Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Deletes one or more labels from the account.
@@ -137,7 +137,7 @@ static function DeleteLabels(
 }
 ```
 ```python
-response=campaignmanagement.DeleteLabels(
+response=campaignmanagement_service.DeleteLabels(
 	LabelIds=LabelIds)
 ```
 

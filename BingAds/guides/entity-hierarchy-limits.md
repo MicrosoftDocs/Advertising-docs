@@ -2,7 +2,7 @@
 title: "Entity Hierarchy and Limits"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Learn about the Bing Ads entity hierarchy to plan your campaign setup.

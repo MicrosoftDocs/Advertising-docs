@@ -1,14 +1,15 @@
 ---
-title: "Ad Group Radius Criterion"
+title: "Ad Group Radius Criterion Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group Radius Criterion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group Radius Criterion
+# Ad Group Radius Criterion Record - Bulk
 Defines an ad group radius criterion that can be uploaded and downloaded in a bulk file.
 
 With radius criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about a specified radius around a zip code, coordinates, landmark, or area.

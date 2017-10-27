@@ -1,14 +1,15 @@
 ---
-title: "Label"
+title: "Label Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Label fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Label
+# Label Record - Bulk
 Defines a label that can be uploaded and downloaded in a bulk file.
 
 Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.

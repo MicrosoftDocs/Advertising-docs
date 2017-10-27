@@ -2,7 +2,7 @@
 title: DeleteAdExtensionsAssociations Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Removes the specified association from the respective campaigns or ad groups.
@@ -156,7 +156,7 @@ static function DeleteAdExtensionsAssociations(
 }
 ```
 ```python
-response=campaignmanagement.DeleteAdExtensionsAssociations(
+response=campaignmanagement_service.DeleteAdExtensionsAssociations(
 	AccountId=AccountId,
 	AdExtensionIdToEntityIdAssociations=AdExtensionIdToEntityIdAssociations,
 	AssociationType=AssociationType)

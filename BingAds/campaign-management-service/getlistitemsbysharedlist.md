@@ -2,7 +2,7 @@
 title: GetListItemsBySharedList Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the negative keywords of a negative keyword list.
@@ -133,7 +133,7 @@ static function GetListItemsBySharedList(
 }
 ```
 ```python
-response=campaignmanagement.GetListItemsBySharedList(
+response=campaignmanagement_service.GetListItemsBySharedList(
 	SharedList=SharedList)
 ```
 

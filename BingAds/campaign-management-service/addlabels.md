@@ -2,7 +2,7 @@
 title: AddLabels Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Adds one or more labels to an account.
@@ -146,7 +146,7 @@ static function AddLabels(
 }
 ```
 ```python
-response=campaignmanagement.AddLabels(
+response=campaignmanagement_service.AddLabels(
 	Labels=Labels)
 ```
 

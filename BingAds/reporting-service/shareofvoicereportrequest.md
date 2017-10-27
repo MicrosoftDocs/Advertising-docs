@@ -2,7 +2,7 @@
 title: ShareOfVoiceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Defines a share of voice (SOV) report request.
@@ -13,9 +13,6 @@ Defines a share of voice (SOV) report request. Use this report to view impressio
 You can request impressions, impression share (%), impression share lost to budget (%), and impression share lost to bid. Once downloaded, this data can be sorted by keyword, keyword ID, landing page user experience, and quality score.
 
 To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
-
-> [!NOTE]
-> You should not use this report to get performance data for Bing Shopping campaigns. It is only applicable for other campaign types.
 
 ## Syntax
 ```xml

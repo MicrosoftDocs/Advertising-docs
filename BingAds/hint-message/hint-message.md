@@ -3,10 +3,10 @@ title: Hint messages
 description: Landing page for hint message content.
 ms.service: "hotel-ads-hint-message"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"
-ms.date: 11/1/2017
 ---
 
 # Hint messages

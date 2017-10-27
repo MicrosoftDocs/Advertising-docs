@@ -1,14 +1,15 @@
 ---
-title: "Sitelink Ad Extension"
+title: "Sitelink Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Sitelink Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Sitelink Ad Extension
+# Sitelink Ad Extension Record - Bulk
 Defines a sitelink ad extension that can be downloaded and uploaded in a bulk file.
 
 The *Sitelink Ad Extension* record adheres to the nested sitelink data model, where each sitelink ad extension has *multiple* sitelinks. Each sitelink is represented as a single *Sitelink Ad Extension* record in the bulk file. In other words, to represent multiple sitelinks for one sitelink ad extension, you must read and write multiple rows in the bulk file. Ad extension level properties such as *Id* and *Parent Id* columns will be the same for all sitelinks, while the sitelink level properties such as *Sitelink Extension Order* and *Sitelink Extension Link Text* will differ for each record.

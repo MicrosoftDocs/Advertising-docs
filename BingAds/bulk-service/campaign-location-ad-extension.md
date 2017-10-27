@@ -1,14 +1,15 @@
 ---
-title: "Campaign Location Ad Extension"
+title: "Campaign Location Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Campaign Location Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Campaign Location Ad Extension
+# Campaign Location Ad Extension Record - Bulk
 Defines an association record between a [Campaign](../bulk-service/campaign.md) and an [Location Ad Extension](../bulk-service/location-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or location ad extension, use the [Campaign](../bulk-service/campaign.md) or [Location Ad Extension](../bulk-service/location-ad-extension.md) record.
 	
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File

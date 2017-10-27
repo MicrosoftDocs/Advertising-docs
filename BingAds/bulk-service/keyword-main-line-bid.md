@@ -1,14 +1,13 @@
 ---
-title: "Keyword Main Line Bid"
+title: "Keyword Main Line Bid Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
-dev_langs:
-  - csharp
+description: Describes the Keyword Main Line Bid fields in a Bulk file.
 ---
-# Keyword Main Line Bid
+# Keyword Main Line Bid Record - Bulk
 Defines a keyword's estimated main line bid that can be downloaded in a bulk file.
 
 ## <a name="keywordmainlinebid"></a>Keyword Main Line Bid Record

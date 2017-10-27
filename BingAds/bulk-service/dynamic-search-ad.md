@@ -1,20 +1,21 @@
 ---
-title: "Dynamic Search Ad"
+title: "Dynamic Search Ad Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Dynamic Search Ad fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Dynamic Search Ad
+# Dynamic Search Ad Record - Bulk
 Defines a dynamic search ad that can be downloaded and uploaded in a bulk file.
 
 With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+> This feature is currently available in the United States and the United Kingdom.  
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Dynamic Search Ad* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 

@@ -1,10 +1,15 @@
 ---
-title: "Offline Conversion"
+title: "Offline Conversion Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
+author: "eric-urban"
+ms.author: "eur"
+description: Describes the Offline Conversion fields in a Bulk file.
+dev_langs:
+  - csharp
 ---
-# Offline Conversion
+# Offline Conversion Record - Bulk
 Defines an offline conversion that can be uploaded in a bulk file.
 
 To set up offine conversion tracking, create an [OfflineConversionGoal](~/campaign-management-service/offlineconversiongoal.md). If you set the *CountType* of the [OfflineConversionGoal](~/campaign-management-service/offlineconversiongoal.md) to *All*, then all offline conversions for the same *MicrosoftClickId* with different conversion times will be added cumulatively. If you set the *CountType* of the [OfflineConversionGoal](~/campaign-management-service/offlineconversiongoal.md) to *Unique*, then only the first conversion that happens after an ad click will be counted. Duplicate offline conversions with the same *MicrosoftClickId* and *ConversionTime* will be ignored. In other words only the first offline conversion for a given *MicrosoftClickId* and *ConversionTime* will be counted.

@@ -2,7 +2,7 @@
 title: LocationCriterion Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: The location criterion that you can include when requesting keyword ideas or traffic estimates.
@@ -27,7 +27,7 @@ The location criterion that you can include when requesting keyword ideas or tra
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="locationid"></a>LocationId|The Bing Ads identifier of the location that you want to target.<br/><br/>You can get keyword ideas and traffic estimates for country, state, metro area, and city locations. Postal code location identifiers are not supported for keyword ideas and traffic estimate requests.<br/><br/>Currently this feature is available in the United States, United Kingdom, Canada, Australia, France, and Germany. To get a list of geographical location identifiers use the Campaign Management service i.e., the [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md) service operation.|**long**|
+|<a name="locationid"></a>LocationId|The Bing Ads identifier of the location that you want to target.<br/><br/>You can get keyword ideas and traffic estimates for city, country, county, metro area, and state locations. Postal code location identifiers are not supported for keyword ideas and traffic estimate requests.<br/><br/>Currently this feature is available in the United States, United Kingdom, Canada, Australia, France, and Germany. To get a list of geographical location identifiers use the Campaign Management service i.e., the [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md) service operation.|**long**|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

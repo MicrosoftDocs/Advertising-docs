@@ -2,7 +2,7 @@
 title: "Ad Languages"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Language options in Bing Ads give you control over your advertising campaign and experience. 

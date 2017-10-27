@@ -2,7 +2,7 @@
 title: "Authentication with OAuth"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Authenticate for Bing Ads production services with a Microsoft Account.

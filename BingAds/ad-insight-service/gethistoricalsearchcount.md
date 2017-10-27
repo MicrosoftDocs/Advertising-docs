@@ -2,7 +2,7 @@
 title: GetHistoricalSearchCount Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the number of times the normalized term was used in a search during the specified time period.
@@ -194,7 +194,7 @@ static function GetHistoricalSearchCount(
 }
 ```
 ```python
-response=adinsight.GetHistoricalSearchCount(
+response=adinsight_service.GetHistoricalSearchCount(
 	Keywords=Keywords,
 	Language=Language,
 	PublisherCountries=PublisherCountries,

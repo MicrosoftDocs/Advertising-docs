@@ -2,7 +2,7 @@
 title: GetCampaignCriterionsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the specified campaign criterions.
@@ -235,7 +235,7 @@ static function GetCampaignCriterionsByIds(
 }
 ```
 ```python
-response=campaignmanagement.GetCampaignCriterionsByIds(
+response=campaignmanagement_service.GetCampaignCriterionsByIds(
 	CampaignCriterionIds=CampaignCriterionIds,
 	CampaignId=CampaignId,
 	CriterionType=CriterionType)

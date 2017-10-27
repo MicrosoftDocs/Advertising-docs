@@ -2,7 +2,7 @@
 title: GetAccountsInfo Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.
@@ -127,7 +127,7 @@ static function GetAccountsInfo(
 }
 ```
 ```python
-response=customermanagement.GetAccountsInfo(
+response=customermanagement_service.GetAccountsInfo(
 	CustomerId=CustomerId,
 	OnlyParentAccounts=OnlyParentAccounts)
 ```

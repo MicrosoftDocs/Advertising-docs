@@ -1,14 +1,15 @@
 ---
-title: "Ad Group Negative Remarketing List Association"
+title: "Ad Group Negative Remarketing List Association Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group Negative Remarketing List Association fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group Negative Remarketing List Association
+# Ad Group Negative Remarketing List Association Record - Bulk
 Defines an Ad Group Negative Remarketing List Association that can be uploaded and downloaded in a bulk file. 
 
 > [!TIP]

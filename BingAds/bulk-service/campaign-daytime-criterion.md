@@ -1,14 +1,15 @@
 ---
-title: "Campaign DayTime Criterion"
+title: "Campaign DayTime Criterion Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Campaign DayTime Criterion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Campaign DayTime Criterion
+# Campaign DayTime Criterion Record - Bulk
 Defines a campaign day and time criterion that can be uploaded and downloaded in a bulk file.
 
 As your campaign progresses, you may find that your click-through rate and conversion rate are highest during certain times, for example, weeknights. This might be a perfect opportunity to use bid adjustments to improve your chances of displaying your ad Monday through Friday from 6:00 P.M. to 11:00 P.M.. When targeting by time, you are targeting the searcher's local time zone. For example, if you increase your bid by 10% for 6:00 P.M. to 11:00 P.M., that bid adjustment will be effective from 6:00 P.M. to 11:00 P.M. Eastern Time for searchers in New York, then be effective 6:00 P.M. to 11:00 P.M. Pacific Time for searchers in Seattle. Now you are showing your ads when your potential customers are online!

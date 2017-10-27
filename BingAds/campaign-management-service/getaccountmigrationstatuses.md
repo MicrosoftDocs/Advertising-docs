@@ -2,7 +2,7 @@
 title: GetAccountMigrationStatuses Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the migration status info for the specified accounts.
@@ -134,7 +134,7 @@ static function GetAccountMigrationStatuses(
 }
 ```
 ```python
-response=campaignmanagement.GetAccountMigrationStatuses(
+response=campaignmanagement_service.GetAccountMigrationStatuses(
 	AccountIds=AccountIds,
 	MigrationType=MigrationType)
 ```

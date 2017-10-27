@@ -2,7 +2,7 @@
 title: DeleteCampaigns Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Deletes one or more campaigns in a specified account.
@@ -145,7 +145,7 @@ static function DeleteCampaigns(
 }
 ```
 ```python
-response=campaignmanagement.DeleteCampaigns(
+response=campaignmanagement_service.DeleteCampaigns(
 	AccountId=AccountId,
 	CampaignIds=CampaignIds)
 ```
