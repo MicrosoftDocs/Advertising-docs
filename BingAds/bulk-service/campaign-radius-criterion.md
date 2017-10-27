@@ -1,14 +1,15 @@
 ---
-title: "Campaign Radius Criterion"
+title: "Campaign Radius Criterion Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Campaign Radius Criterion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Campaign Radius Criterion
+# Campaign Radius Criterion Record - Bulk
 Defines a campaign radius criterion that can be uploaded and downloaded in a bulk file.
 
 With radius criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about a specified radius around a zip code, coordinates, landmark, or area.

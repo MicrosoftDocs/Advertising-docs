@@ -1,14 +1,15 @@
 ---
-title: "Ad Group Age Criterion"
+title: "Ad Group Age Criterion Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group Age Criterion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group Age Criterion
+# Ad Group Age Criterion Record - Bulk
 Defines an ad group age criterion that can be uploaded and downloaded in a bulk file. 
 
 You can target customers by age so that your ads are displayed more frequently to people who will be interested in them. 

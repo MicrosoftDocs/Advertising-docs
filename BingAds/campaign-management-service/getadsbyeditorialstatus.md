@@ -2,7 +2,7 @@
 title: GetAdsByEditorialStatus Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Retrieves the ads that belong to the specified ad group and have the specified editorial review status.
@@ -190,7 +190,7 @@ static function GetAdsByEditorialStatus(
 }
 ```
 ```python
-response=campaignmanagement.GetAdsByEditorialStatus(
+response=campaignmanagement_service.GetAdsByEditorialStatus(
 	AdGroupId=AdGroupId,
 	EditorialStatus=EditorialStatus,
 	AdTypes=AdTypes)

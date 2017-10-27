@@ -2,7 +2,7 @@
 title: SearchInsertionOrders Service Operation - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Searches for insertion orders that match a specified criteria.
@@ -160,7 +160,7 @@ static function SearchInsertionOrders(
 }
 ```
 ```python
-response=customerbilling.SearchInsertionOrders(
+response=customerbilling_service.SearchInsertionOrders(
 	Predicates=Predicates,
 	Ordering=Ordering,
 	PageInfo=PageInfo)

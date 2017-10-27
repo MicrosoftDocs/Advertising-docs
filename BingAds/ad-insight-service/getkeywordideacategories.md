@@ -2,7 +2,7 @@
 title: GetKeywordIdeaCategories Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the list of keyword idea categories.
@@ -109,7 +109,7 @@ static function GetKeywordIdeaCategories()
 }
 ```
 ```python
-response=adinsight.GetKeywordIdeaCategories()
+response=adinsight_service.GetKeywordIdeaCategories()
 ```
 
 ## Requirements

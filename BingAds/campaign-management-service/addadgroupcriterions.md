@@ -2,7 +2,7 @@
 title: AddAdGroupCriterions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Adds one or more ad group criterions.
@@ -263,7 +263,7 @@ static function AddAdGroupCriterions(
 }
 ```
 ```python
-response=campaignmanagement.AddAdGroupCriterions(
+response=campaignmanagement_service.AddAdGroupCriterions(
 	AdGroupCriterions=AdGroupCriterions,
 	CriterionType=CriterionType)
 ```

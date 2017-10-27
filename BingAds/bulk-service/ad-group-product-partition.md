@@ -1,14 +1,15 @@
 ---
-title: "Ad Group Product Partition"
+title: "Ad Group Product Partition Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group Product Partition fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group Product Partition
+# Ad Group Product Partition Record - Bulk
 Defines an ad group product partition that can be uploaded and downloaded in a bulk file.
 
 You can upload *Ad Group Product Partition* records for multiple ad groups in the same bulk file, as long as the validation rules are satisfied as described in [Create a Bing Shopping Campaign with the Bulk Service](~/guides/product-ads.md#bingshopping-bulkservice). For example if you are creating or modifying the tree structure, parent product partition tree nodes must be ordered ahead of the child product partition tree nodes; however, the order does not matter for non-structural changes such as updating the bid. For example if you want to update the bids without adding, deleting, or updating the tree structure, then you only need to upload the *Id*, *Parent Id*, and *Bid* fields.   

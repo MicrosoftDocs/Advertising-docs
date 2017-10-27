@@ -3,10 +3,10 @@ title: Query message reference
 description: Describes the schema elements of a Query message.
 ms.service: "hotel-ads-query-message"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"
-ms.date: 11/1/2017
 ---
 
 # Query message reference

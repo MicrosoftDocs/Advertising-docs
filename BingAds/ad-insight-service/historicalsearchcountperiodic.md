@@ -2,7 +2,7 @@
 title: HistoricalSearchCountPeriodic Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains the number of times that the keyword was used in a search query during the specified time period.

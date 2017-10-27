@@ -2,7 +2,7 @@
 title: UpdateBudgets Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Updates the specified budgets in the account's shared budget library.
@@ -143,7 +143,7 @@ static function UpdateBudgets(
 }
 ```
 ```python
-response=campaignmanagement.UpdateBudgets(
+response=campaignmanagement_service.UpdateBudgets(
 	Budgets=Budgets)
 ```
 

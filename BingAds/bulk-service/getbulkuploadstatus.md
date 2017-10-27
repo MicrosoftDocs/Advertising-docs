@@ -2,7 +2,7 @@
 title: GetBulkUploadStatus Service Operation - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the status and completion progress of a bulk upload request.
@@ -133,7 +133,7 @@ static function GetBulkUploadStatus(
 }
 ```
 ```python
-response=bulk.GetBulkUploadStatus(
+response=bulk_service.GetBulkUploadStatus(
 	RequestId=RequestId)
 ```
 

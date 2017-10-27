@@ -2,7 +2,7 @@
 title: SetLabelAssociations Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Sets label associations.
@@ -148,7 +148,7 @@ static function SetLabelAssociations(
 }
 ```
 ```python
-response=campaignmanagement.SetLabelAssociations(
+response=campaignmanagement_service.SetLabelAssociations(
 	EntityType=EntityType,
 	LabelAssociations=LabelAssociations)
 ```

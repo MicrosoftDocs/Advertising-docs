@@ -2,7 +2,7 @@
 title: GetLabelsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets labels by label identifiers.
@@ -157,7 +157,7 @@ static function GetLabelsByIds(
 }
 ```
 ```python
-response=campaignmanagement.GetLabelsByIds(
+response=campaignmanagement_service.GetLabelsByIds(
 	LabelIds=LabelIds,
 	PageInfo=PageInfo)
 ```

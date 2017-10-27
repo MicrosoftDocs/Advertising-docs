@@ -1,14 +1,15 @@
 ---
-title: "AdGroup Sitelink Ad Extension"
+title: "AdGroup Sitelink Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the AdGroup Sitelink Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# AdGroup Sitelink Ad Extension
+# AdGroup Sitelink Ad Extension Record - Bulk
 Defines an association record between an [Ad Group](../bulk-service/ad-group.md) and a [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or sitelink ad extension, use the [Ad Group](../bulk-service/ad-group.md) or [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md) record. 
 
 > [!NOTE]

@@ -1,14 +1,15 @@
 ---
-title: "Campaign Product Scope"
+title: "Campaign Product Scope Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Campaign Product Scope fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Campaign Product Scope
+# Campaign Product Scope Record - Bulk
 Defines a campaign's set of product conditions that can be uploaded and downloaded in a bulk file.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File

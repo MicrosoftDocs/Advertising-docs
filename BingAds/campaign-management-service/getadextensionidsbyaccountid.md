@@ -2,7 +2,7 @@
 title: GetAdExtensionIdsByAccountId Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the ad extensions from the account's ad extension library.
@@ -131,7 +131,7 @@ static function GetAdExtensionIdsByAccountId(
 }
 ```
 ```python
-response=campaignmanagement.GetAdExtensionIdsByAccountId(
+response=campaignmanagement_service.GetAdExtensionIdsByAccountId(
 	AccountId=AccountId,
 	AdExtensionType=AdExtensionType,
 	AssociationType=AssociationType)

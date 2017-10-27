@@ -1,14 +1,15 @@
 ---
-title: "Ad Group Negative Site"
+title: "Ad Group Negative Site Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group Negative Site fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group Negative Site
+# Ad Group Negative Site Record - Bulk
 Defines a negative site assigned to an ad group that can be uploaded and downloaded in a bulk file.
 
 In the bulk schema each of the negative sites associated with an ad group are represented individually by their own row. For example if you have two negative sites, they are represented by two *Ad Group Negative Site* records in the bulk file with *Status* set to Active. When uploading or downloading records for an updated list of associated negative sites, one record will have *Status* set to Deleted with an empty *Website* field. This indicates that some changes have been made to the list, and the *Ad Group Negative Site* records that follow are active.

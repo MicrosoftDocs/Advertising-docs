@@ -2,7 +2,7 @@
 title: GetCustomer Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the details of a customer.
@@ -142,7 +142,7 @@ static function GetCustomer(
 }
 ```
 ```python
-response=customermanagement.GetCustomer(
+response=customermanagement_service.GetCustomer(
 	CustomerId=CustomerId)
 ```
 

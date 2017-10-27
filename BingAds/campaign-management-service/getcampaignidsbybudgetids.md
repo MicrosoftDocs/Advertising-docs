@@ -2,7 +2,7 @@
 title: GetCampaignIdsByBudgetIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the campaign identifiers that share each specified budget.
@@ -145,7 +145,7 @@ static function GetCampaignIdsByBudgetIds(
 }
 ```
 ```python
-response=campaignmanagement.GetCampaignIdsByBudgetIds(
+response=campaignmanagement_service.GetCampaignIdsByBudgetIds(
 	BudgetIds=BudgetIds)
 ```
 

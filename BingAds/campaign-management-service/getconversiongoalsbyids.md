@@ -2,7 +2,7 @@
 title: GetConversionGoalsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the specified conversion goals.
@@ -188,7 +188,7 @@ static function GetConversionGoalsByIds(
 }
 ```
 ```python
-response=campaignmanagement.GetConversionGoalsByIds(
+response=campaignmanagement_service.GetConversionGoalsByIds(
 	ConversionGoalIds=ConversionGoalIds,
 	ConversionGoalTypes=ConversionGoalTypes)
 ```

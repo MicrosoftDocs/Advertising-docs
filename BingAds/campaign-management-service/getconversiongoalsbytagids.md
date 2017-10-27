@@ -2,7 +2,7 @@
 title: GetConversionGoalsByTagIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the conversion goals that use the specified UET tags.
@@ -188,7 +188,7 @@ static function GetConversionGoalsByTagIds(
 }
 ```
 ```python
-response=campaignmanagement.GetConversionGoalsByTagIds(
+response=campaignmanagement_service.GetConversionGoalsByTagIds(
 	TagIds=TagIds,
 	ConversionGoalTypes=ConversionGoalTypes)
 ```

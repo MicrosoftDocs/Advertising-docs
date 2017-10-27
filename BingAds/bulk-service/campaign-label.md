@@ -1,14 +1,15 @@
 ---
-title: "Campaign Label"
+title: "Campaign Label Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Campaign Label fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Campaign Label
+# Campaign Label Record - Bulk
 Defines an association record between a [Campaign](../bulk-service/campaign.md) and a [Label](../bulk-service/label.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or label, use the [Campaign](../bulk-service/campaign.md) or [Label](../bulk-service/label.md) record.
 
 > [!NOTE]

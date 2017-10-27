@@ -1,14 +1,15 @@
 ---
-title: "Ad Group Negative Location Criterion"
+title: "Ad Group Negative Location Criterion Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group Negative Location Criterion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group Negative Location Criterion
+# Ad Group Negative Location Criterion Record - Bulk
 Defines an ad group negative location criterion that can be uploaded and downloaded in a bulk file.
 
 Although location criterions are most often used to designate the specific locations where you want to show your ads, Bing Ads also lets you specify locations you want to exclude from seeing your ads.

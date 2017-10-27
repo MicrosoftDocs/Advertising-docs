@@ -2,7 +2,7 @@
 title: FindAccounts Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets a list of accounts owned by the specified customer that match the specified filter criteria.
@@ -143,7 +143,7 @@ static function FindAccounts(
 }
 ```
 ```python
-response=customermanagement.FindAccounts(
+response=customermanagement_service.FindAccounts(
 	CustomerId=CustomerId,
 	AccountFilter=AccountFilter,
 	TopN=TopN,

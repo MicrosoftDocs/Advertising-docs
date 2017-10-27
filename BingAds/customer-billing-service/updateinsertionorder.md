@@ -2,7 +2,7 @@
 title: UpdateInsertionOrder Service Operation - Customer Billing
 ms.service: bing-ads-customer-billing-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Updates an insertion order within the specified account.
@@ -128,7 +128,7 @@ static function UpdateInsertionOrder(
 }
 ```
 ```python
-response=customerbilling.UpdateInsertionOrder(
+response=customerbilling_service.UpdateInsertionOrder(
 	InsertionOrder=InsertionOrder)
 ```
 

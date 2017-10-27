@@ -2,7 +2,7 @@
 title: "Editorial Review and Appeals"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Determine whether the ad, ad extensions, or keyword passed or failed the editorial review.

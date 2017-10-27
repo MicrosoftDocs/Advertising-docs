@@ -1,14 +1,15 @@
 ---
-title: "App Install Ad Label"
+title: "App Install Ad Label Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the App Install Ad Label fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# App Install Ad Label
+# App Install Ad Label Record - Bulk
 Defines an association record between an [App Install Ad](../bulk-service/app-install-ad.md) and a [Label](../bulk-service/label.md) that can be uploaded and downloaded in a bulk file. To upload or download the app install ad or label, use the [App Install Ad](../bulk-service/app-install-ad.md) or [Label](../bulk-service/label.md) record.
 
 > [!NOTE]

@@ -3,10 +3,10 @@ title: Google and Bing Ads hint messages differences
 description: Lists the differences between Google and Bing Ads hint messages
 ms.service: "hotel-ads-hint-message"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"
-ms.date: 11/1/2017
 ---
 
 # Differences between Google and Bing Ads Hint messages

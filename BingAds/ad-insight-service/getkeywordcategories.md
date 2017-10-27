@@ -2,7 +2,7 @@
 title: GetKeywordCategories Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the keyword categories to which the specified keywords belong.
@@ -149,7 +149,7 @@ static function GetKeywordCategories(
 }
 ```
 ```python
-response=adinsight.GetKeywordCategories(
+response=adinsight_service.GetKeywordCategories(
 	Keywords=Keywords,
 	Language=Language,
 	PublisherCountry=PublisherCountry,

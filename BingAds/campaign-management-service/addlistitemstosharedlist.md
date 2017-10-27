@@ -2,7 +2,7 @@
 title: AddListItemsToSharedList Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Adds negative keywords to the shared negative keyword list.
@@ -167,7 +167,7 @@ static function AddListItemsToSharedList(
 }
 ```
 ```python
-response=campaignmanagement.AddListItemsToSharedList(
+response=campaignmanagement_service.AddListItemsToSharedList(
 	ListItems=ListItems,
 	SharedList=SharedList)
 ```

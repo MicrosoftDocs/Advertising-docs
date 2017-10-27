@@ -1,14 +1,15 @@
 ---
-title: "Sitelink2 Ad Extension"
+title: "Sitelink2 Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Sitelink2 Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Sitelink2 Ad Extension
+# Sitelink2 Ad Extension Record - Bulk
 Defines a sitelink2 ad extension that can be downloaded and uploaded in a bulk file.
 
 The *Sitelink2 Ad Extension* record adheres to the single sitelink data model, where each Sitelink2 Ad Extension has *one* sitelink. The entire Sitelink2 Ad Extension is represented as a single *Sitelink2 Ad Extension* record in the bulk file.

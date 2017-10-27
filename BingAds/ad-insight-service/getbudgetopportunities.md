@@ -2,7 +2,7 @@
 title: GetBudgetOpportunities Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the campaign budget opportunities of the specified campaign.
@@ -133,7 +133,7 @@ static function GetBudgetOpportunities(
 }
 ```
 ```python
-response=adinsight.GetBudgetOpportunities(
+response=adinsight_service.GetBudgetOpportunities(
 	CampaignId=CampaignId)
 ```
 

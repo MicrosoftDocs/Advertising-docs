@@ -1,14 +1,15 @@
 ---
-title: "Campaign Review Ad Extension"
+title: "Campaign Review Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Campaign Review Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Campaign Review Ad Extension
+# Campaign Review Ad Extension Record - Bulk
 Defines an association record between a [Campaign](../bulk-service/campaign.md) and an [Review Ad Extension](../bulk-service/review-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or review ad extension, use the [Campaign](../bulk-service/campaign.md) or [Review Ad Extension](../bulk-service/review-ad-extension.md) record.
 	
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File

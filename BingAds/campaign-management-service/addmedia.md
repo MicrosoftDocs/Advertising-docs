@@ -2,7 +2,7 @@
 title: AddMedia Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Adds the specified media to an account's media library.
@@ -131,7 +131,7 @@ static function AddMedia(
 }
 ```
 ```python
-response=campaignmanagement.AddMedia(
+response=campaignmanagement_service.AddMedia(
 	AccountId=AccountId,
 	Media=Media)
 ```

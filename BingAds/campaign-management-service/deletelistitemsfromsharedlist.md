@@ -2,7 +2,7 @@
 title: DeleteListItemsFromSharedList Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Deletes negative keywords from a negative keyword list.
@@ -151,7 +151,7 @@ static function DeleteListItemsFromSharedList(
 }
 ```
 ```python
-response=campaignmanagement.DeleteListItemsFromSharedList(
+response=campaignmanagement_service.DeleteListItemsFromSharedList(
 	ListItemIds=ListItemIds,
 	SharedList=SharedList)
 ```

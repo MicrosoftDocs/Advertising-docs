@@ -2,7 +2,7 @@
 title: "Customer Accounts"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Manage accounts as a direct advertiser, on behalf of other customers, or build commercial tools.

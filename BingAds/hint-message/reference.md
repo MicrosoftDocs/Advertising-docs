@@ -3,10 +3,10 @@ title: Hint message reference
 description: Describes the schema that defines the elements for creating a hint message.
 ms.service: "hotel-ads-hint-message"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"
-ms.date: 11/1/2017
 ---
 
 # Hint Message reference

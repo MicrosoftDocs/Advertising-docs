@@ -2,9 +2,10 @@
 title: "Bulk File Schema"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the schema for records in a Bulk file.
 ---
 # Bulk File Schema
 The bulk schema defines the contents of the file for download or upload with the Bing Ads Bulk service. For both download and upload, the Bulk service supports the file types and corresponding schemas in the [DownloadEntity](../bulk-service/downloadentity.md) value set.
@@ -108,14 +109,14 @@ Record Type  |Supported Campaign Types
 [Campaign Sitelink Ad Extension](../bulk-service/campaign-sitelink-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Campaign Sitelink2 Ad Extension](../bulk-service/campaign-sitelink2-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Campaign Structured Snippet Ad Extension](../bulk-service/campaign-structured-snippet-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
-[Custom Audience](../bulk-service/custom-audience.md)<br /><br />**Note:** Only update is supported for upload. You cannot add or delete a custom audience using the Bing Ads API.     |All         
+[Custom Audience](../bulk-service/custom-audience.md)<br /><br />Only update is supported for upload. You cannot add or delete a custom audience using the Bing Ads API.     |All         
 [Dynamic Search Ad](../bulk-service/dynamic-search-ad.md)     |DynamicSearchAds         
 [Dynamic Search Ad Label](../bulk-service/dynamic-search-ad-label.md)     |DynamicSearchAds         
 [Expanded Text Ad](../bulk-service/expanded-text-ad.md)     |SearchAndContent         
 [Expanded Text Ad Label](../bulk-service/expanded-text-ad-label.md)     |SearchAndContent         
 [Format Version](../bulk-service/format-version.md)     |All         
 [Image Ad Extension](../bulk-service/image-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
-[In Market Audience](../bulk-service/in-market-audience.md)<br /><br />**Note:** Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API.     |All         
+[In Market Audience](../bulk-service/in-market-audience.md)<br /><br />Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API.     |All         
 [Keyword](../bulk-service/keyword.md)     |SearchAndContent         
 [Keyword Label](../bulk-service/keyword-label.md)     |SearchAndContent         
 [Keyword Best Position Bid](../bulk-service/keyword-best-position-bid.md)     |SearchAndContent         
@@ -124,7 +125,7 @@ Record Type  |Supported Campaign Types
 [Label](../bulk-service/label.md)     |All         
 [Location Ad Extension](../bulk-service/location-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Negative Keyword List](../bulk-service/negative-keyword-list.md)     |All         
-[Offline Conversion](../bulk-service/offline-conversion.md)<br /><br />**Note:** Bulk upload only supports adding new offline conversion data. Bulk download, bulk upload update, and bulk upload delete  operations are not supported.      |All         
+[Offline Conversion](../bulk-service/offline-conversion.md)<br /><br />Bulk upload only supports adding new offline conversion data. Bulk download, bulk upload update, and bulk upload delete  operations are not supported.      |All         
 [Price Ad Extension](../bulk-service/price-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Product Ad](../bulk-service/product-ad.md)     |Shopping         
 [Product Ad Label](../bulk-service/product-ad-label.md)     |Shopping         
@@ -161,9 +162,13 @@ The download file will always include a record for the [Format Version](../bulk-
 
 -  If you use the reserved *delete_value* string in place of a required value set, the results file will return the default value. For example if you set the *Network Distribution* field of the [Ad Group](../bulk-service/ad-group.md) record to *delete_value*, then the *Network Distribution* field would be set to *OwnedAndOperatedAndSyndicatedSearch* in the results file.  In this example the ad group's network distribution would be set to *OwnedAndOperatedAndSyndicatedSearch*.
 
--  If you are replacing one set of records with another set then you must specify the deleted records prior to the new set. For example to replace all existing [Campaign Negative Keyword](../bulk-service/campaign-negative-keyword.md) for a given campaign, first include a [Campaign Negative Keyword](../bulk-service/campaign-negative-keyword.md) with *Status* set to Deleted and *Parent Id* set to the campaign ID. If you do not specify any *Id* i.e., do not attempt to delete a specific camapaign negative keyword, this will effectively delete all [Campaign Negative Keyword](../bulk-service/campaign-negative-keyword.md) for that campaign. Below the "delete all" record, you can include one or more new [Campaign Negative Keyword](../bulk-service/campaign-negative-keyword.md) records with all of the required properties for the upload add operation. **Note:** Target criterion records do not support "delete all" for bulk upload; however, you might observe a null *Id* field because Bing Ads API version 10 supported "delete all" for targets.
+-  If you are replacing one set of records with another set then you must specify the deleted records prior to the new set. For example to replace all existing [Campaign Negative Keyword](../bulk-service/campaign-negative-keyword.md) for a given campaign, first include a [Campaign Negative Keyword](../bulk-service/campaign-negative-keyword.md) with *Status* set to Deleted and *Parent Id* set to the campaign ID. If you do not specify any *Id* i.e., do not attempt to delete a specific camapaign negative keyword, this will effectively delete all [Campaign Negative Keyword](../bulk-service/campaign-negative-keyword.md) for that campaign. Below the "delete all" record, you can include one or more new [Campaign Negative Keyword](../bulk-service/campaign-negative-keyword.md) records with all of the required properties for the upload add operation. 
+  > [!NOTE]
+  > Target criterion records do not support "delete all" for bulk upload; however, you might observe a null *Id* field because Bing Ads API version 10 supported "delete all" for targets.
 
--  If you are replacing an existing record with a new record that has the same unique properties, then you must specify the deleted record prior to the new record. For example to replace an existing [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md) for a given ad group, first include an [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md) with *Status* set to Deleted, *Id* set to the existing dynamic ad target (webpage criterion) ID, and *Parent Id* set to the ad group ID. Below the deleted record, you can include a new [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md) record (presumably with new webpage conditions). **Note:** In most cases you can update the existing record instead of submitting separate delete and add records, for example you can update the *Bid Adjustment* field of an existing [Campaign Gender Criterion](../bulk-service/campaign-gender-criterion.md). 
+-  If you are replacing an existing record with a new record that has the same unique properties, then you must specify the deleted record prior to the new record. For example to replace an existing [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md) for a given ad group, first include an [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md) with *Status* set to Deleted, *Id* set to the existing dynamic ad target (webpage criterion) ID, and *Parent Id* set to the ad group ID. Below the deleted record, you can include a new [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md) record (presumably with new webpage conditions). 
+  > [!NOTE]
+  > In most cases you can update the existing record instead of submitting separate delete and add records, for example you can update the *Bid Adjustment* field of an existing [Campaign Gender Criterion](../bulk-service/campaign-gender-criterion.md). 
 
 -  When deleting a record the *Id* field is required. A reference to the parent entity, whether the value is a Bing Ads assigned system identifier or  a [Reference Keys](#referencekeys) for the parent record, is also required. For example when deleting an ad group, either the *Parent Id* field of the  [Ad Group](../bulk-service/ad-group.md) record should match the *Id* field in the [Campaign](../bulk-service/campaign.md) record or the *Campaign* field of the  [Ad Group](../bulk-service/ad-group.md) record should match the *Campaign* field in the [Campaign](../bulk-service/campaign.md) record. If both are provided then the *Parent Id* field of the  [Ad Group](../bulk-service/ad-group.md) record ([Reference Keys](#referencekeys)) is ignored.
 

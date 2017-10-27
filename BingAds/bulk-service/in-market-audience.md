@@ -1,14 +1,15 @@
 ---
-title: "In Market Audience"
+title: "In Market Audience Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the In Market Audience fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# In Market Audience
+# In Market Audience Record - Bulk
 Defines an in-market audience that can be downloaded in a bulk file. 
 
 > [!NOTE]

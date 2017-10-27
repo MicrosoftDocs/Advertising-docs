@@ -2,7 +2,7 @@
 title: DynamicSearchAd Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Defines a dynamic search ad.
@@ -11,7 +11,7 @@ description: Defines a dynamic search ad.
 Defines a dynamic search ad. With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
+> This feature is currently available in the United States and the United Kingdom.  
 
 To get started with dynamic search ads, first you'll need to [add](../campaign-management-service/addcampaigns.md) a new [Campaign](../campaign-management-service/campaign.md) with its type set to *DynamicSearchAds*. When you create the campaign, you'll need to include a [DynamicSearchAdsSetting](../campaign-management-service/dynamicsearchadssetting.md) that specifies the target website domain and language.
 

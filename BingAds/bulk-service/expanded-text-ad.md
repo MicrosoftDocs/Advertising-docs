@@ -1,14 +1,15 @@
 ---
-title: "Expanded Text Ad"
+title: "Expanded Text Ad Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Expanded Text Ad fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Expanded Text Ad
+# Expanded Text Ad Record - Bulk
 Defines an expanded text ad that can be downloaded and uploaded in a bulk file.
 
 This ad format works seamlessly on mobile, tablet and desktop devices so you can focus more on crafting your longer ad copy and optimizing your ad text to better engage your customers before they click your ad.

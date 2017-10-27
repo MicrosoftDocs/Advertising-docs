@@ -1,14 +1,15 @@
 ---
-title: "Ad Group Location Criterion"
+title: "Ad Group Location Criterion Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group Location Criterion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group Location Criterion
+# Ad Group Location Criterion Record - Bulk
 Defines an ad group location criterion that can be uploaded and downloaded in a bulk file.
 
 With location criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about:

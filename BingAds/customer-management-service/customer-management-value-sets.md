@@ -2,7 +2,7 @@
 title: Customer Management Value Sets
 ms.service: bing-ads-customer-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Value sets reference for the CustomerManagement service.

@@ -1,14 +1,15 @@
 ---
-title: "Ad Group Price Ad Extension"
+title: "Ad Group Price Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group Price Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group Price Ad Extension
+# Ad Group Price Ad Extension Record - Bulk
 Defines an association record between an [Ad Group](../bulk-service/ad-group.md) and a [Price Ad Extension](../bulk-service/price-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or Price Ad Extension, use the [Ad Group](../bulk-service/ad-group.md) or [Price Ad Extension](../bulk-service/price-ad-extension.md) record.
 
 > [!NOTE]

@@ -2,7 +2,7 @@
 title: GetEstimatedPositionByKeywords Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the estimated position in the search results if the specified bid value would be used for the specified keywords.
@@ -197,7 +197,7 @@ static function GetEstimatedPositionByKeywords(
 }
 ```
 ```python
-response=adinsight.GetEstimatedPositionByKeywords(
+response=adinsight_service.GetEstimatedPositionByKeywords(
 	Keywords=Keywords,
 	MaxBid=MaxBid,
 	Language=Language,

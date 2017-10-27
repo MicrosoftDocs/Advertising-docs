@@ -2,7 +2,7 @@
 title: SubmitGenerateReport Service Operation - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Submits a report request.
@@ -1473,7 +1473,7 @@ static function SubmitGenerateReport(
 }
 ```
 ```python
-response=reporting.SubmitGenerateReport(
+response=reporting_service.SubmitGenerateReport(
 	ReportRequest=ReportRequest)
 ```
 

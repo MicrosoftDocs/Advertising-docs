@@ -2,7 +2,7 @@
 title: GetAdGroupsByCampaignId Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the ad groups within the specified campaign.
@@ -202,7 +202,7 @@ static function GetAdGroupsByCampaignId(
 }
 ```
 ```python
-response=campaignmanagement.GetAdGroupsByCampaignId(
+response=campaignmanagement_service.GetAdGroupsByCampaignId(
 	CampaignId=CampaignId,
 	ReturnAdditionalFields=ReturnAdditionalFields)
 ```

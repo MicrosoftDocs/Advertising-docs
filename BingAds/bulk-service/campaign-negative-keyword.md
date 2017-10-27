@@ -1,14 +1,15 @@
 ---
-title: "Campaign Negative Keyword"
+title: "Campaign Negative Keyword Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Campaign Negative Keyword fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Campaign Negative Keyword
+# Campaign Negative Keyword Record - Bulk
 Defines a negative keyword assigned to a campaign that can be uploaded and downloaded in a bulk file.
 
 In the bulk schema each of the negative keywords associated with a campaign are represented individually by their own row. For example if a campaign has two negative keywords, they are represented by two *Campaign Negative Keyword* records in the bulk file with *Status* set to Active.

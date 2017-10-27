@@ -2,7 +2,7 @@
 title: GetSharedEntityAssociationsByEntityIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets negative keyword list associations for the specified campaigns.
@@ -162,7 +162,7 @@ static function GetSharedEntityAssociationsByEntityIds(
 }
 ```
 ```python
-response=campaignmanagement.GetSharedEntityAssociationsByEntityIds(
+response=campaignmanagement_service.GetSharedEntityAssociationsByEntityIds(
 	EntityIds=EntityIds,
 	EntityType=EntityType,
 	SharedEntityType=SharedEntityType)

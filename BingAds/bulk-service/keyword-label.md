@@ -1,14 +1,15 @@
 ---
-title: "Keyword Label"
+title: "Keyword Label Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Keyword Label fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Keyword Label
+# Keyword Label Record - Bulk
 Defines an association record between a [Keyword](../bulk-service/keyword.md) and a [Label](../bulk-service/label.md) that can be uploaded and downloaded in a bulk file. To upload or download the keyword or label, use the [Keyword](../bulk-service/keyword.md) or [Label](../bulk-service/label.md) record.
 
 > [!NOTE]

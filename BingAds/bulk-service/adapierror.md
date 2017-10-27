@@ -2,7 +2,7 @@
 title: AdApiError Data Object - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Defines an error object that contains the details that explain why the service operation failed.

@@ -2,7 +2,7 @@
 title: GetBidLandscapeByAdGroupIds Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Given a list of existing ad groups, this operation returns for each a list of suggested bids and estimated performance statistics.
@@ -147,7 +147,7 @@ static function GetBidLandscapeByAdGroupIds(
 }
 ```
 ```python
-response=adinsight.GetBidLandscapeByAdGroupIds(
+response=adinsight_service.GetBidLandscapeByAdGroupIds(
 	AdGroupBidLandscapeInputs=AdGroupBidLandscapeInputs)
 ```
 

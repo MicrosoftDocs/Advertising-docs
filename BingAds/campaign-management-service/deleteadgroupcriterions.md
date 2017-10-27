@@ -2,7 +2,7 @@
 title: DeleteAdGroupCriterions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Deletes the specified ad group criterions.
@@ -155,7 +155,7 @@ static function DeleteAdGroupCriterions(
 }
 ```
 ```python
-response=campaignmanagement.DeleteAdGroupCriterions(
+response=campaignmanagement_service.DeleteAdGroupCriterions(
 	AdGroupCriterionIds=AdGroupCriterionIds,
 	AdGroupId=AdGroupId,
 	CriterionType=CriterionType)

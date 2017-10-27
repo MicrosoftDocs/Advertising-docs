@@ -2,7 +2,7 @@
 title: DownloadCampaignsByCampaignIds Service Operation - Bulk
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Downloads settings and performance data for the specified campaigns.
@@ -191,7 +191,7 @@ static function DownloadCampaignsByCampaignIds(
 }
 ```
 ```python
-response=bulk.DownloadCampaignsByCampaignIds(
+response=bulk_service.DownloadCampaignsByCampaignIds(
 	Campaigns=Campaigns,
 	CompressionType=CompressionType,
 	DataScope=DataScope,

@@ -1,18 +1,16 @@
 ---
-title: "Ad Group Dynamic Search Ad Target"
+title: "Ad Group Dynamic Search Ad Target Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Ad Group Dynamic Search Ad Target fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Ad Group Dynamic Search Ad Target
-Defines an Ad Group Dynamic Search Ad Target that can be uploaded and downloaded in a bulk file.
-
-> [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+# Ad Group Dynamic Search Ad Target Record - Bulk
+Defines an Ad Group Dynamic Search Ad Target that can be uploaded and downloaded in a bulk file.  
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Ad Group Dynamic Search Ad Target* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 

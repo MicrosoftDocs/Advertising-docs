@@ -2,7 +2,7 @@
 title: GetKeywordIdeas Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets the list of keyword ideas.
@@ -222,7 +222,7 @@ static function GetKeywordIdeas(
 }
 ```
 ```python
-response=adinsight.GetKeywordIdeas(
+response=adinsight_service.GetKeywordIdeas(
 	ExpandIdeas=ExpandIdeas,
 	IdeaAttributes=IdeaAttributes,
 	SearchParameters=SearchParameters)

@@ -2,7 +2,7 @@
 title: UpdateAdGroupCriterions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Updates one or more ad group criterions.
@@ -259,7 +259,7 @@ static function UpdateAdGroupCriterions(
 }
 ```
 ```python
-response=campaignmanagement.UpdateAdGroupCriterions(
+response=campaignmanagement_service.UpdateAdGroupCriterions(
 	AdGroupCriterions=AdGroupCriterions,
 	CriterionType=CriterionType)
 ```

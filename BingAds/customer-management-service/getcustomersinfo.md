@@ -2,7 +2,7 @@
 title: GetCustomersInfo Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.
@@ -134,7 +134,7 @@ static function GetCustomersInfo(
 }
 ```
 ```python
-response=customermanagement.GetCustomersInfo(
+response=customermanagement_service.GetCustomersInfo(
 	CustomerNameFilter=CustomerNameFilter,
 	TopN=TopN,
 	ApplicationScope=ApplicationScope)

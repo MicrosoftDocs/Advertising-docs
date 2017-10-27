@@ -2,7 +2,7 @@
 title: "Bulk Keywords and Ads Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Setup ads and keywords with the Bulk service in C#, Java, or Python.

@@ -2,7 +2,7 @@
 title: DeleteBudgets Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Deletes budgets from the account's shared budget library.
@@ -137,7 +137,7 @@ static function DeleteBudgets(
 }
 ```
 ```python
-response=campaignmanagement.DeleteBudgets(
+response=campaignmanagement_service.DeleteBudgets(
 	BudgetIds=BudgetIds)
 ```
 

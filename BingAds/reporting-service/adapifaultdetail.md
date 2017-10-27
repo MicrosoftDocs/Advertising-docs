@@ -2,7 +2,7 @@
 title: AdApiFaultDetail Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Defines a fault object that operations return when generic errors occur, such as an authentication error.

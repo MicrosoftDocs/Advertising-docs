@@ -1,14 +1,13 @@
 ---
-title: "Keyword First Page Bid"
+title: "Keyword First Page Bid Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
-dev_langs:
-  - csharp
+description: Describes the Keyword First Page Bid fields in a Bulk file.
 ---
-# Keyword First Page Bid
+# Keyword First Page Bid Record - Bulk
 Defines a keyword's estimated first page bid that can be downloaded in a bulk file.
 
 ## <a name="keywordfirstpagebid"></a>Keyword First Page Bid Record

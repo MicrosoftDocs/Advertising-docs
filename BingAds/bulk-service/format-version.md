@@ -1,14 +1,13 @@
 ---
-title: "Format Version"
+title: "Format Version Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
-dev_langs:
-  - csharp
+description: Describes the Format Version fields in a Bulk file.
 ---
-# Format Version
+# Format Version Record - Bulk
 Defines the format version of records in a bulk file.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File

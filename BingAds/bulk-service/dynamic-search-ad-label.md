@@ -1,14 +1,15 @@
 ---
-title: "Dynamic Search Ad Label"
+title: "Dynamic Search Ad Label Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/1/2017
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Describes the Dynamic Search Ad Label fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-# Dynamic Search Ad Label
+# Dynamic Search Ad Label Record - Bulk
 Defines an association record between a [Dynamic Search Ad](../bulk-service/dynamic-search-ad.md) and a [Label](../bulk-service/label.md) that can be uploaded and downloaded in a bulk file. To upload or download the dynamic search ad or label, use the [Dynamic Search Ad](../bulk-service/dynamic-search-ad.md) or [Label](../bulk-service/label.md) record.
 
 > [!NOTE]
