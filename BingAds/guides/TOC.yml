@@ -11,11 +11,14 @@
   items:
   - name: Get Started Using C#
     href: ./get-started-csharp.md
+    displayName: .net c# csharp
     items:
     - name: Walkthrough - Bing Ads Desktop Application in C#
       href: ./walkthrough-desktop-application-csharp.md
+      displayName: .net c# csharp
     - name: Walkthrough - Bing Ads Web Application in C#
       href: ./walkthrough-web-application-csharp.md
+      displayName: .net c# csharp
   - name: Get Started Using Java
     href: ./get-started-java.md
     items:
