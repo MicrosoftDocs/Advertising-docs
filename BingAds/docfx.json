@@ -32,6 +32,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "contributors_to_exclude": ["openpublishingbuild", "Pacort", "saldana"],      
       "defaultDevLang": "csharp",
       "uhfHeaderId": "MSDocsHeader-BingAds",
       "searchScope": ["Bing Ads"],
