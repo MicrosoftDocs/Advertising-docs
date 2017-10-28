@@ -178,13 +178,13 @@ To sign a user out, perform the following steps:
  
 
 ## <a name="oauthparameters"></a>OAuth Authorization Parameters
-The following sections list the request and response parameters that are available when calling the Live Connect authorization service as described in the [Implicit Grant Flow](#implicit) and [Authorization Code Grant Flow](#authorizationcode) walkthroughs above.
+The following sections list the request and response parameters that are available when calling the [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) authorization service as described in the [Implicit Grant Flow](#implicit) and [Authorization Code Grant Flow](#authorizationcode) walkthroughs above.
 
 > [!NOTE]
 > The Bing Ads SDKs do not directly expose the *authentication_token*, *display*, *error*, *error_description*, *grant_type*, *locale*, *response_type*, or *scope*, parameters. The Bing Ads SDKs do expose the *client_id*, *client_secret*, *redirect_uri*, and *state*  parameters. 
 
 ### <a name="oauthrequestparameters"></a>OAuth Request Authorization Parameters
-The following table lists the request parameters that are available when calling the Live Connect authorization service. 
+The following table lists the request parameters that are available when calling the [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) authorization service. 
 
 Parameter  |Description  
 ---------|---------
@@ -199,7 +199,7 @@ Parameter  |Description
 *display*     |The display type to be used for the authorization page. Valid values are "popup", "touch", "page", or "none".       
 
 ### <a name="oauthresponseparameters"></a>OAuth Response Authorization Parameters
-The following table lists the response parameters that are available when calling the Live Connect authorization service. 
+The following table lists the response parameters that are available when calling the [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) authorization service. 
 
 Parameter  |Description  
 ---------|---------
@@ -209,28 +209,30 @@ Parameter  |Description
 *error*     |Error code identifying the error that occurred.
 *error_description*     |A description of the error.
 *expires_in*     |Equivalent to the *expires_in* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.14).
+*id_token*     |An unsigned JSON Web Token (JWT). The app can base64Url decode the segments of this token to request information about the user who signed in. The app can cache the values and display them, but it should not rely on them for any authorization or security boundaries.    
 *refresh_token*     |Equivalent to the *refresh_token* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.17).
 *scope*     |Equivalent to the *scope* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.4).
-*state*     |Equivalent to the *state* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.5). This value is passed through from the *state* request parameter, and you should receive the same value unchanged in the response.
+*state*     |Equivalent to the *state* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.5). When you request an authorization code this value is passed through from the *state* request parameter, and you should receive the same value unchanged in the response.
 *token_type*     |The type of data to be returned in the response from the authorization server. 
-*user_id*     |The unique Live Connect identifier for the authenticated Microsoft account.    
 
 ## <a name="serviceheaders"></a>Service Request Header
-When making a service call, you still have the option of specifying the *UserName* and *Password* header elements along with your *DeveloperToken* as follows.
+When making a Bing Ads service call, you still have the option of specifying the *UserName* and *Password* header elements along with your *DeveloperToken* as follows. In this case the UserName cannot be a Microsoft account (email address), and the OAuth flows described above are not applicable. 
 
 ```xml
 <DeveloperToken i:nil="false"></DeveloperToken>
 <Password i:nil="false"></Password>
 <UserName i:nil="false"></UserName>
 ```
+
 You may specify the *AuthenticationToken* instead of the *UserName* and *Password* for a given user. Set the *AuthenticationToken* element to the value of the access token returned via OAuth, as described in the sections above. The *DeveloperToken* is still required as follows.
+> [!NOTE]
+> If you specify *UserName*, *Password*, and *AuthenticationToken*, the *UserName* and *Password* are not validated. Authentication would succeed or fail based solely on the value of the *AuthenticationToken*, even if the *UserName* and *Password* represent valid credentials.
 
 ```xml
 <AuthenticationToken i:nil="false"></AuthenticationToken>
 <DeveloperToken i:nil="false"></DeveloperToken>
 ```
-> [!NOTE]
-> If you specify *UserName*, *Password*, and *AuthenticationToken*, the *UserName* and *Password* are not validated. Authentication would succeed or fail based solely on the value of the *AuthenticationToken*, even if the *UserName* and *Password* represent valid credentials.
+
 
 ## See Also
 [Bing Ads Web Service Addresses](../guides/web-service-addresses.md)
