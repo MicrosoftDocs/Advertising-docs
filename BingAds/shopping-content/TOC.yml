@@ -18,6 +18,7 @@
   href: ../shopping-content/manage-catalogs.md
 - name: Code Examples
   href: ../shopping-content/code-examples.md
+  displayName: .net c# csharp java
   items:
   - name: Authenticating Microsoft Account Credentials
     href: ../shopping-content/code-example-authentication-oauth.md
@@ -46,6 +47,7 @@
     href: ../shopping-content/error-response-example.md
 - name: API Reference
   href: ../shopping-content/reference.md
+  displayName: rest
   items:
   - name: Catalogs Resource
     href: ../shopping-content/catalogs-resource.md

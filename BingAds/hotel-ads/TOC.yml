@@ -9,6 +9,7 @@
     href: ../hotel-service/manage-hotel-campaigns.md
   - name: Code examples
     href: ../hotel-service/code-examples.md
+    displayName: .net c# csharp
     items:
     - name: Subaccounts
       href: ../hotel-service/code-example-subaccounts.md

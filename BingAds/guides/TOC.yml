@@ -41,6 +41,7 @@
   href: ./sandbox.md
 - name: Code Examples
   href: ./code-examples.md
+  displayName: .net c# csharp java python php
   items:
   - name: Ad Extensions
     href: ./code-example-ad-extensions.md
@@ -86,18 +87,18 @@
     href: ./code-example-target-criterions.md
 - name: Client Libraries
   href: ./client-libraries.md
-  displayName: SDK
+  displayName: sdk .net c# csharp java python php
   expanded: true
   items:
   - name: Authentication
     href: ./sdk-authentication.md
-    displayName: SDK
+    displayName: sdk .net c# csharp java python php
   - name: Bulk Service Manager
     href: ./sdk-bulk-service-manager.md
-    displayName: SDK
+    displayName: sdk .net c# csharp java python
   - name: Reporting Service Manager
     href: ./sdk-reporting-service-manager.md
-    displayName: SDK
+    displayName: sdk .net c# csharp java python
 - name: Technical Guides
   href: ./technical-guides.md
   items:
@@ -109,7 +110,7 @@
     displayName: wsdl
   - name: Handling Service Errors and Exceptions
     href: ./handle-service-errors-exceptions.md
-    displayName: support help debug
+    displayName: support help debug troubleshoot
   - name: Customer Accounts
     href: ./customer-accounts.md
     items:
@@ -176,7 +177,7 @@
   items:
   - name: Web Service Addresses
     href: ./web-service-addresses.md
-    displayName: wsdl
+    displayName: wsdl endpoint soap
   - name: Version 11 Services
     href: ./services.md
     items:
