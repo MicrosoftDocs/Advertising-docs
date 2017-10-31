@@ -35,6 +35,57 @@ You can install the Bing Ads PHP [SDK](~/guides/client-libraries.md) using the [
 ## <a name="walkthrough"></a>Walkthroughs
 Once you have the Bing Ads PHP [SDK](~/guides/client-libraries.md) installed you can either browse the [Bing Ads Code Examples](../guides/code-examples.md), download the examples at [GitHub](https://github.com/BingAds/BingAds-PHP-SDK/), or follow one of the application walkthroughs for a [Web](walkthrough-web-application-php.md) or [Desktop](walkthrough-desktop-application-php.md) application.
 
+## <a name="soapvar"></a>Using SoapVar
+To send a complex type that inherits from a base class, you must encode the object as a [SoapVar](http://php.net/manual/en/class.soapvar.php). In the following example the BiddableCampaignCriterion (derived from CampaignCriterion), LocationCriterion (derived from Criterion), and BidMultiplier (derived from CriterionBid) are all encoded. 
+
+
+```php
+$campaignCriterions = array();
+
+$locationBiddableCampaignCriterion = new BiddableCampaignCriterion();
+$locationBiddableCampaignCriterion->CampaignId = $campaignId;
+$locationCriterion = new LocationCriterion();
+$locationCriterion->LocationId = 190;
+$encodedLocationCriterion = new SoapVar($locationCriterion, SOAP_ENC_OBJECT, 'LocationCriterion', $GLOBALS['CampaignProxy']->GetNamespace());
+$locationBiddableCampaignCriterion->Criterion = $encodedLocationCriterion;
+$bidMultiplier = new BidMultiplier();
+$bidMultiplier->Multiplier = 0;
+$encodedBidMultiplier = new SoapVar($bidMultiplier, SOAP_ENC_OBJECT, 'BidMultiplier', $GLOBALS['CampaignProxy']->GetNamespace());
+$locationBiddableCampaignCriterion->CriterionBid = $encodedBidMultiplier;
+
+$encodedCriterion = new SoapVar($locationBiddableCampaignCriterion, SOAP_ENC_OBJECT, 'BiddableCampaignCriterion', $GLOBALS['CampaignProxy']->GetNamespace());
+$campaignCriterions[] = $encodedCriterion;
+```
+
+If you do not encode the CriterionBid as concrete type BidMultiplier, the generated request SOAP is an empty abstract CriterionBid element. This will result in a serialization exception with the message "Cannot create an abstract class."
+```xml
+<ns1:CriterionBid>
+```
+
+The object must be properly encoded with the complex type e.g., BidMultiplier. 
+```xml
+<ns1:CriterionBid xsi:type="ns1:BidMultiplier">
+    <ns1:Type xsi:nil="true" />
+    <ns1:Multiplier>0</ns1:Multiplier>
+</ns1:CriterionBid>
+```
+
+Reference documentation for each data object specifies whether or not the complex type is derived from a base type e.g., please see [BiddableCampaignCriterion](~/campaign-management-service/biddablecampaigncriterion.md), [LocationCriterion](~/campaign-management-service/locationcriterion.md), and [BidMultiplier](~/campaign-management-service/bidmultiplier.md). 
+
+The WSDL also defines the hierarchy e.g., the following definition for BidMultiplier.
+```xml
+<xs:complexType name="BidMultiplier">
+  <xs:complexContent mixed="false">
+    <xs:extension base="tns:CriterionBid">
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Multiplier" type="xs:double"/>
+      </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+<xs:element name="BidMultiplier" nillable="true" type="tns:BidMultiplier"/>
+```
+
 ## See Also
 [Bing Ads Client Libraries](../guides/client-libraries.md)    
 [Bing Ads Code Examples](../guides/code-examples.md)    
