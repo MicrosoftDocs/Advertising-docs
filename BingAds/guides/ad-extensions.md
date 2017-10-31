@@ -64,7 +64,7 @@ You can use Price Extensions to display your products or services with their cor
 ![Price Ad Extension](~/guides/media/price-ad-extension.png "Price Ad Extension")
 
 ### <a name="reviewextensions"></a>Review Extensions
-Potential customers like to know about other customers? experiences when searching for products or services. Share positive reviews from a reputable third-party source about your business, products, or services in your ads with a Review Extension. An ad will only include one review per impression.
+Potential customers like to know about other customers' experiences when searching for products or services. Share positive reviews from a reputable third-party source about your business, products, or services in your ads with a Review Extension. An ad will only include one review per impression.
 
 ![Review Ad Extension](~/guides/media/review-ad-extension.png "Review Ad Extension")
 
@@ -76,11 +76,11 @@ You may associate site links ad extensions with your campaigns or ad groups, and
 ![Sitelink Ad Extension](~/guides/media/overview-sitelinkadextension.png "Sitelink Ad Extension")
 
 ### <a name="structuredsnippetextensions"></a>Structured Snippet Extensions
-Structured Snippet Extensions give potential customers more context on a specific aspect of your products and services. A Structured snippet is made up of a header and a list of 3-10 values which correspond to the header. For example, you might use the header ?Brands:? and the values ?Windows, Xbox, Skype? to let customers know about what brands are available at your store.
+Structured Snippet Extensions give potential customers more context on a specific aspect of your products and services. A Structured snippet is made up of a header and a list of 3-10 values which correspond to the header. For example, you might use the header "Brands:" and the values "Windows, Xbox, Skype" to let customers know about what brands are available at your store.
 
 ![Structured Snippet Ad Extension](~/guides/media/structured-snippet-ad-extension.png "Structured Snippet Ad Extension")
 
-This extension is not clickable and, similar to other extensions, will appear beneath your ad's description. Structured Snippets have no impact on the other extensions you?re already using. Structured Snippets should not duplicate what is already stated in the ad. Our full list of Structured Snippet policies can be found [here](https://advertise.bingads.microsoft.com/resources/policies/ad-extensions-policies).
+This extension is not clickable and, similar to other extensions, will appear beneath your ad's description. Structured Snippets have no impact on the other extensions you're already using. Structured Snippets should not duplicate what is already stated in the ad. Our full list of Structured Snippet policies can be found [here](https://advertise.bingads.microsoft.com/resources/policies/ad-extensions-policies).
 
 An ad will only include one structured snippet (one headline with 3 - 10 values) per impression. Keep in mind that your ads won't always show Structured Snippets and if they do show Structured Snippets, the format they appear may vary. Structured Snippets are free to add to your ad, available in all Bing Ads markets (excluding Hong Kong and Taiwan), and serve on desktop and tablet devices. 
 

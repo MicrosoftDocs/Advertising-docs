@@ -98,7 +98,7 @@ You must specify a value for each component of the term.
 
 |Component|Description|
 |-------------|---------------|
-|*MatchType*|Determines whether the magic term is the only word in the keyword. The following are the possible match-type values (not case sensitive) that you can specify.<br /><br />e ? Exact. The keyword must contain only the magic term.<br /><br />p ? Phrase. The keyword can contain other words in addition to the magic term.|
+|*MatchType*|Determines whether the magic term is the only word in the keyword. The following are the possible match-type values (not case sensitive) that you can specify.<br /><br />e - Exact. The keyword must contain only the magic term.<br /><br />p - Phrase. The keyword can contain other words in addition to the magic term.|
 |*Language*|Determines the editorial guidelines to apply. You should specify the same language that the ad group specifies. The following are the possible language values (not case sensitive) that you can specify.<br /><br />EN - English<br /><br />FR - French<br /><br />DE - German|
 |*FlagArea*|Determines the area of the editorial guidelines to apply to the term. The following are the possible guideline areas that you can specify.<br /><br />3 - Alcohol<br /><br />15 - Gambling<br /><br />97 ? Adult Erotica<br /><br />To specify more than one flag area for a keyword, specify multiple phrase magic terms. For example, pen3m569m1 pen15m569m1.|
 |m|Literal. Must be m.|
