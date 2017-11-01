@@ -3,7 +3,6 @@ title: "Points of Sale Reference"
 description: Describes the schema used to create a points of sale feed file.
 ms.service: "hotel-ads-pos-feed"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

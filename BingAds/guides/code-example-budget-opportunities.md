@@ -2,7 +2,6 @@
 title: "Budget Opportunities Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Get budget opportunities in C#, Java, PHP, or Python.

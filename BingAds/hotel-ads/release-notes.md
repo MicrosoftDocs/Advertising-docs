@@ -3,7 +3,6 @@ title: "Release notes"
 description: Identifies the changes made to Hotel Ads for each release.
 ms.service: "hotel-ads"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

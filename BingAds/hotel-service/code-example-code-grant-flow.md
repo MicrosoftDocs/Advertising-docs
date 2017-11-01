@@ -3,7 +3,6 @@ title: "CodeGrantFlow Code Example"
 description: Shows a simple implementation for calling the identity service and getting an OAuth access and refresh token.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

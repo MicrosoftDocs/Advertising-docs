@@ -3,7 +3,6 @@ title: "Points of Sale Feed"
 description: Points of sale landing page
 ms.service: "hotel-ads-pos-feed"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

@@ -2,7 +2,6 @@
 title: "Bing Ads Web Service Addresses"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Refer to the list of Bing Ads web service addresses.

@@ -2,7 +2,6 @@
 title: GetKeywordOpportunities Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets a list of keyword suggestions that are relevant to the specified ad group.

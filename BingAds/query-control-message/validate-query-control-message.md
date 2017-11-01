@@ -3,7 +3,6 @@ title: Validate QueryControl messages
 description: Shows how to validate a QueryControl message
 ms.service: "hotel-ads-query-control-message"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

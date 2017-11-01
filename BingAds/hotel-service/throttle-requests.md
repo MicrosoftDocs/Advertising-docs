@@ -3,7 +3,6 @@ title: "Throttling Requests"
 description: Describes the experience when your app exceeds the number of requests per minute that your app may  make.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

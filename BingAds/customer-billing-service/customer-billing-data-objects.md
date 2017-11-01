@@ -2,7 +2,6 @@
 title: Customer Billing Data Objects
 ms.service: bing-ads-customer-billing-service
 ms.topic: "article"
-ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Data objects reference for the CustomerBilling service.

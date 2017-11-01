@@ -3,7 +3,6 @@ title: "Validating your Points of Sale Feed"
 description: Shows how to validate your points of sale feed file before sending it to Bing Ads.
 ms.service: "hotel-ads-pos-feed"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

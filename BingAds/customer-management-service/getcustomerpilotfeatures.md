@@ -2,7 +2,6 @@
 title: GetCustomerPilotFeatures Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: "article"
-ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Gets a list of the pilot programs in which the specified customer participates.

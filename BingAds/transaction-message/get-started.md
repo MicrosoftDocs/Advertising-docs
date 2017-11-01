@@ -3,7 +3,6 @@ title: "Get Started with Transaction Messages"
 description: Quick start guide to getting started with Transaction Messages
 ms.service: "hotel-ads-transaction-message"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

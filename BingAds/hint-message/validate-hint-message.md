@@ -3,7 +3,6 @@ title: Validate a hint message
 description: Shows how to validate a hint message before sending it to Bing Ads.
 ms.service: "hotel-ads-hint-message"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

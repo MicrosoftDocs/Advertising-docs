@@ -3,7 +3,6 @@ title: Query message schema
 description: Lists the Query schemas.
 ms.service: "hotel-ads-query-message"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

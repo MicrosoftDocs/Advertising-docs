@@ -2,7 +2,6 @@
 title: WebpageConditionOperand Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Defines the operands that can be applied to arguments of a webpage condition or criterion for dynamic search ads.

@@ -2,7 +2,6 @@
 title: "Bulk Shopping Campaigns Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Setup Product ads with the Bulk service in C#, Java, or Python.

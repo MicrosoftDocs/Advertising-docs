@@ -2,7 +2,6 @@
 title: AdPosition Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
 ms.topic: "article"
-ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Defines the possible positions of an ad in the search results or on a content-based webpage.

@@ -3,7 +3,6 @@ title: Hint message schema
 description: Lists the schemas the define a hint message.
 ms.service: "hotel-ads-hint-message"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

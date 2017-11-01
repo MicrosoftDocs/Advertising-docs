@@ -2,7 +2,6 @@
 title: "Walkthrough: Bing Ads Desktop Application in C#"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Create a desktop application using the Bing Ads .NET SDK.

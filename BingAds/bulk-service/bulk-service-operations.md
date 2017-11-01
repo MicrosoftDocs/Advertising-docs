@@ -2,7 +2,6 @@
 title: Bulk Service Operations
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Service operations reference for the Bulk service.

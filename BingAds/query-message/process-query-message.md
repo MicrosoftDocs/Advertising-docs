@@ -3,7 +3,6 @@ title: Process a Query message
 description: Shows how to process a Query message that Bing Ads sends you requesting your hotel itinerary data. 
 ms.service: "hotel-ads-query-message"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"
