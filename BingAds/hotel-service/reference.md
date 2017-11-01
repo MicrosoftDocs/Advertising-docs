@@ -108,10 +108,13 @@ The following are the resource objects used by the API.
 |[HotelGroup](#hotelgroup)|Defines a logical grouping of hotel ads.
 |[LengthOfStayMultiplier](#lengthofstaymultiplier)|Defines the amount to adjust the base bid by if the user stays the specified number of nights or longer.
 |[PercentageBid](#percentagebid)|Defines a bid based on the percentage of the hotel room's rate.
-|[SiteMultiplier](#sitemultiplier)|Defines the amount to adjust the base bid by if the user is searching for hotels on one of the specified Bing sites.
+of the specified Bing sites.
 |[SubAccount](#subaccount)|Defines the top-level hotel ads grouping. You can think of this logically as a hotel campaign.
 |[UserCountryMultiplier](#usercountrymultiplier)|Defines the amount to adjust the base bid by if the user accesses one of the Bing domains.
 
+<!--
+|[SiteMultiplier](#sitemultiplier)|Defines the amount to adjust the base bid by if the user is searching for hotels on one 
+-->
 
 
 ### AddResponse
@@ -236,7 +239,7 @@ Defines a hotel ad.
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
 |Bid|The base bid. Bing uses this bid in the auction unless you specify one or more multipliers (see `BidMultipliers`). If you don't specify a bid, the hotel inherits the bid from the hotel group or subaccount, in that order. When getting a hotel, if the hotel doesn't specify a bid, this field contains the inherited bid.<br /><br />Setting the bid to 0 pauses the hotel (see `Status`).<br /><br />The following are the types of bids that you may specify.<ul><li>[FixedBid](#fixedbid)</li><li>[PercentageBid](#percentagebid)</li></ul>|object|N/A|Optional
-|BidMultipliers|A list of multipliers to apply to the base bid. Bing applies the multipliers to the base bid and uses the adjusted bid in the auction. If the hotel does not specify a bid, the multipliers adjust the inherited bid.<br /><br />If you don't specify multipliers, the hotel inherits them from the hotel group or subaccount, in that order. When getting a hotel, if the hotel doesn't specify multipliers, this field contains the inherited multipliers.<br /><br />The following are the types of multipliers that you may specify.<ul><li>[AdvanceBookingWindowMultiplier](#advancebookingwindowmultiplier)</li><li>[CheckinDayOfWeekMultiplier](#checkindayofweekmultiplier)</li><li>[DateTypeMultiplier](#datetypemultiplier)</li><li>[DeviceMultiplier](#devicemultiplier)</li><li>[LengthOfStayMultiplier](#lengthofstaymultiplier)</li><li>[SiteMultiplier](#sitemultiplier)</li><li>[UserCountryMultiplier](#usercountrymultiplier)</li></ul>|object[]|N/A|Optional
+|BidMultipliers|A list of multipliers to apply to the base bid. Bing applies the multipliers to the base bid and uses the adjusted bid in the auction. If the hotel does not specify a bid, the multipliers adjust the inherited bid.<br /><br />If you don't specify multipliers, the hotel inherits them from the hotel group or subaccount, in that order. When getting a hotel, if the hotel doesn't specify multipliers, this field contains the inherited multipliers.<br /><br />The following are the types of multipliers that you may specify.<ul><li>[AdvanceBookingWindowMultiplier](#advancebookingwindowmultiplier)</li><li>[CheckinDayOfWeekMultiplier](#checkindayofweekmultiplier)</li><li>[DateTypeMultiplier](#datetypemultiplier)</li><li>[DeviceMultiplier](#devicemultiplier)</li><li>[LengthOfStayMultiplier](#lengthofstaymultiplier)</li><!--<li>[SiteMultiplier](#sitemultiplier)</li>--><li>[UserCountryMultiplier](#usercountrymultiplier)</li></ul>|object[]|N/A|Optional
 |BidMultiplierSource|The source of the bid multipliers. The following are the possible values.<ul><li>SubAccount</li><li>HotelGroup</li><li>Hotel</li></ul>For example, if the hotel and hotel group didn't specify multipliers, the hotel inherits the multipliers from the subaccount. In this case, this field is set to SubAccount.|String|N/A|Read-only
 |BidSource|The source of the bid. The following are the possible values.<ul><li>SubAccount</li><li>HotelGroup</li><li>Hotel</li></ul>For example, if the hotel specifies a bid, this field is set to Hotel.|String|N/A|Read-only
 |CountryCode|The two-letter ISO 3116 county code of the country where the hotel is located. The country is the same country that you specified for the hotel in your hotel feed file.|String|Read-only|Read-only
@@ -267,7 +270,7 @@ Defines a logical grouping of hotels.
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
 |Bid|The base bid that hotels in the group inherit if they don't specify a bid. For usage, see `Bid` in the [Hotel](#hotel) object.<br /><br /> If you don't specify a bid, the group inherits the bid from the subaccount. When getting a hotel group, if the group doesn't specify a bid, this field contains the inherited bid.<br /><br />Setting the bid to zero (0) pauses the hotel group and any hotels associated with the group (see `Status`).<br /><br />The following are the types of bids that you may specify.<ul><li>[FixedBid](#fixedbid)</li><li>[PercentageBid](#percentagebid)</li></ul>|object|Optional|Optional
-|BidMultipliers|A list of multipliers that hotels in the group inherit if they don't specify multipliers. For usage, see `BidMultipliers` in the [Hotel](#hotel) object.<br /><br /> If you don't specify multipliers, the group inherits them from the subaccount.<br /><br />The following are the types of multipliers that you may specify.<ul><li>[AdvanceBookingWindowMultiplier](#advancebookingwindowmultiplier)</li><li>[CheckinDayOfWeekMultiplier](#checkindayofweekmultiplier)</li><li>[DateTypeMultiplier](#datetypemultiplier)</li><li>[DeviceMultiplier](#devicemultiplier)</li><li>[LengthOfStayMultiplier](#lengthofstaymultiplier)</li><li>[SiteMultiplier](#sitemultiplier)</li><li>[UserCountryMultiplier](#usercountrymultiplier)</li></ul>|object[]|Optional|Optional
+|BidMultipliers|A list of multipliers that hotels in the group inherit if they don't specify multipliers. For usage, see `BidMultipliers` in the [Hotel](#hotel) object.<br /><br /> If you don't specify multipliers, the group inherits them from the subaccount.<br /><br />The following are the types of multipliers that you may specify.<ul><li>[AdvanceBookingWindowMultiplier](#advancebookingwindowmultiplier)</li><li>[CheckinDayOfWeekMultiplier](#checkindayofweekmultiplier)</li><li>[DateTypeMultiplier](#datetypemultiplier)</li><li>[DeviceMultiplier](#devicemultiplier)</li><li>[LengthOfStayMultiplier](#lengthofstaymultiplier)</li><!--<li>[SiteMultiplier](#sitemultiplier)</li>--><li>[UserCountryMultiplier](#usercountrymultiplier)</li></ul>|object[]|Optional|Optional
 |BidMultiplierSource|The source of the bid multipliers. The following are the possible values. <ul><li>SubAccount</li><li>HotelGroup</li></ul>For example, if the hotel group didn't specify multipliers, the hotel group inherits the multipliers from the subaccount. In this case, this field is set to SubAccount.|String|Read-only|Read-only
 |BidSource|The source of the bid. The following are the possible values. <ul><li>SubAccount</li><li>HotelGroup</li></ul>For example, if the hotel group specifies multipliers, this field is set to HotelGroup.|String|Read-only|Read-only
 |HotelAssociationCount|The number of hotels associated with hotel groups in the subaccount.|Unsigned Integer|Read-only|Read-only
@@ -307,7 +310,7 @@ Defines a bid based on the percentage of the hotel room's rate.
 |Amount|The percentage bid amount. The valid range is 0 through 1000. For example, to bid 5 percent of the room's rate, set `Amount` to 5.0.<br /><br />The bid amount is the per-night bid. For example, if the bid is 3% of a $99 room rate and the itinerary is for a 3-night stay, the final bid is $8.91.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.PercentageBid".|String|Required|Required
 
-
+<!--
 ### SiteMultiplier
 
 Defines the amount to adjust the base bid by if the user is searching for hotels on one of the specified Bing sites.
@@ -318,6 +321,7 @@ Defines the amount to adjust the base bid by if the user is searching for hotels
 |Sites|A list of sites. Apply the multiplier if the user is using one of the sites to search for hotels. The following are the possible values.<br /><br /><ul><li>LocalUniversal&mdash;The user is searching for hotels on Bing.com or a partner site.</li><li>MapResults&mdash;The user is searching for hotels on Bing.com/maps.</li></ul>|String[]|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.SiteMultiplier".|String|Required|Required
 
+-->
 
 ### SubAccount
 
@@ -326,7 +330,7 @@ Defines the top-level hotel ads grouping. You can think of this logically as a h
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
 |Bid|The base bid that hotels inherit if they, or the group they belong to, don't specify a bid. For usage, see `Bid` in the [Hotel](#hotel) object.<br /><br />Setting the bid to 0 will pause the subaccount (see `Status`). Pausing the subaccount also pauses the subaccount's hotel groups and hotels.<br /><br />The following are the types of bids that you may specify.<ul><li>[FixedBid](#fixedbid)</li><li>[PercentageBid](#percentagebid)</li></ul>|object|Required|Optional
-|BidMultipliers|A list of multipliers that hotels inherit if they, or the group they belong to, don't specify multipliers. For usage, see `BidMultipliers` in the [Hotel](#hotel) object.<br /><br />The following are the types of multipliers that you may specify.<ul><li>[AdvanceBookingWindowMultiplier](#advancebookingwindowmultiplier)</li><li>[CheckinDayOfWeekMultiplier](#checkindayofweekmultiplier)</li><li>[DateTypeMultiplier](#datetypemultiplier)</li><li>[DeviceMultiplier](#devicemultiplier)</li><li>[LengthOfStayMultiplier](#lengthofstaymultiplier)</li><li>[SiteMultiplier](#sitemultiplier)</li><li>[UserCountryMultiplier](#usercountrymultiplier)</li></ul>|object[]|Optional|Optional
+|BidMultipliers|A list of multipliers that hotels inherit if they, or the group they belong to, don't specify multipliers. For usage, see `BidMultipliers` in the [Hotel](#hotel) object.<br /><br />The following are the types of multipliers that you may specify.<ul><li>[AdvanceBookingWindowMultiplier](#advancebookingwindowmultiplier)</li><li>[CheckinDayOfWeekMultiplier](#checkindayofweekmultiplier)</li><li>[DateTypeMultiplier](#datetypemultiplier)</li><li>[DeviceMultiplier](#devicemultiplier)</li><li>[LengthOfStayMultiplier](#lengthofstaymultiplier)</li><!--<li>[SiteMultiplier](#sitemultiplier)</li>--><li>[UserCountryMultiplier](#usercountrymultiplier)</li></ul>|object[]|Optional|Optional
 |DailyBudget|The daily budget to spread through-out the day.<br /><br />Setting the budget to 0 will pause the subaccount (see `Status`). Pausing the subaccount also pauses the subaccount's hotel groups and hotels.|[Budget](#budget)|Required|Optional
 |HotelAssociationCount|The number of hotels associated with hotel groups in the subaccount.|Unsigned Integer|Read-only|Read-only
 |Id|A system-generated ID that uniquely identifies the subaccount.|String|Read-only|Required
