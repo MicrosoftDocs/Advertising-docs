@@ -7,7 +7,9 @@
       "build_source_folder": "BingAds",
       "build_output_subfolder": "BingAds",
       "locale": "en-us",
-      "monikers": ["bingads-11"],
+      "monikers": [
+        "bingads-11"
+      ],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
@@ -27,6 +29,7 @@
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -41,22 +44,26 @@
     {
       "path_to_root": "BingAds-dotNet-SDK",
       "url": "https://github.com/BingAds/BingAds-dotNet-SDK.git",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "BingAds-Java-SDK",
       "url": "https://github.com/BingAds/BingAds-Java-SDK.git",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "BingAds-PHP-SDK",
       "url": "https://github.com/BingAds/BingAds-PHP-SDK.git",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     },
     {
       "path_to_root": "BingAds-Python-SDK",
       "url": "https://github.com/BingAds/BingAds-Python-SDK.git",
-      "branch": "master"
+      "branch": "master",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {
