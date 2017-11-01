@@ -2,31 +2,29 @@
 title: "Expanded Text Ads"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
+author: "eric-urban"
+ms.author: "eur"
+description: Setup Expanded Text ads with the Bing Ads API.
 ---
 # Expanded Text Ads
 The expanded text ad format works seamlessly on mobile, tablet and desktop devices so you can focus more on crafting your longer ad copy and optimizing your ad text to better engage your customers before they click your ad.
 
-> [!NOTE]
-> Before you can use expanded text ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](~/guides/url-tracking-upgraded-urls.md).
+![expandedtextad](../guides/media/expanded-text-ad.png)
 
 ## <a name="bulk"></a>Bulk API for Expanded Text Ads
-The following Bulk record is added for managing expanded text ads.
-* [Expanded Text Ad](~/bulk/expanded-text-ad.md)
+The following Bulk record is available for managing expanded text ads.
+* [Expanded Text Ad](~/bulk-service/expanded-text-ad.md)
 
 ## <a name="campaign"></a>Campaign Management API for Expanded Text Ads
-The [ExpandedTextAd](~/campaign-management/expandedtextad.md) object is derived from the [Ad](~/campaign-management/ad.md) base class and can be managed with any of the existing ad operations e.g. [AddAds](~/campaign-management/addads.md), [DeleteAds](~/campaign-management/deleteads.md), and [UpdateAds](~/campaign-management/updateads.md). 
-
-You can include *ExpandedText* as an [AdType](~/campaign-management/adtype.md) in the *AdTypes* request element of the following operations to retrieve expanded text ads.
-* [GetAdsByAdGroupId](~/campaign-management/getadsbyadgroupid.md)
-* [GetAdsByEditorialStatus](~/campaign-management/getadsbyeditorialstatus.md)
-* [GetAdsByIds](~/campaign-management/getadsbyids.md)
+The [ExpandedTextAd](~/campaign-management-service/expandedtextad.md) object is derived from the [Ad](~/campaign-management-service/ad.md) base class and can be managed with any of the existing ad operations e.g. [AddAds](~/campaign-management-service/addads.md), [DeleteAds](~/campaign-management-service/deleteads.md), [GetAdsByAdGroupId](~/campaign-management-service/getadsbyadgroupid.md), and [UpdateAds](~/campaign-management-service/updateads.md). 
 
 ## <a name="countdown"></a>Countdowns for Expanded Text Ads
 Countdown customizers let you easily add a countdown ? by day, hour, and then minute ? to an event in your Expanded Text Ad. The countdown, which automatically updates as the event draws nearer, is eye-catching and gives potential customers greater incentive to click your ad.
 
 Let's say you're going to have a big online sale for 3 days from February 14 through 16 (ending at midnight as soon as February 17th begins). With the countdown syntax, you could set the ad's Title Part 2 like this: "Sale ends in {=countdown("2018/02/17 00:00:00","en-us",3)}!". Here's when your ad would run and examples of how it would look:
 
-![countdown](../guides/media/countdown.png)
+![Expanded Text Ad Countdown](../guides/media/countdown.png "Expanded Text Ad Countdown")
 
 After an ad's countdown ends, the ad will stop running but will retain the status *Active*. You can make the ad start running again by either:  
 -  Updating the ad's Countdown ends date to a point in the future, or

@@ -1,9 +1,13 @@
 ---
 title: "Status Resource"
-ms.service: "bing-ads"
+description: "Describes the status resource and related programming elements of the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
+ms.service: "shopping-content-api"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+ms.date: 11/01/2017
+ms.author: "scottwhi"
 ---
 # Status Resource
 The Status resource lets you get the status of product offers that you uploaded to the specified catalog. After you upload offers to the catalog, they go through a validation and editorial review process. This process can take up to a 36 hours. The offer is included in the report only after it completes the review process.

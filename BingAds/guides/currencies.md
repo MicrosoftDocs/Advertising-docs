@@ -1,11 +1,13 @@
 ---
-title: "Currencies"
+title: "Bing Ads Currencies"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Find out about currencies supported with the Bing Ads API. 
 ---
-# Currencies
+# Bing Ads Currencies
 The following currency values are supported for Bing Ads advertising accounts.
 
 * [Bid and Budget Currencies](#bidandbudget)
@@ -13,34 +15,34 @@ The following currency values are supported for Bing Ads advertising accounts.
  
 ## <a name="bidandbudget"></a>Bid and Budget Currencies
 
-You must first set up an [AdvertiserAccount](~/customer-management/advertiseraccount.md) with one of the supported currency values listed below.
+You must first set up an [AdvertiserAccount](~/customer-management-service/advertiseraccount.md) with one of the supported currency values listed below.
 
 > [!NOTE]
 > The possible range of values for bid and budget are subject to change.
 
-Using the [Campaign Management](~/campaign-management/campaign-management-service-reference.md) service, you can set the following properties within the supported value ranges described in the table below. 
-- The *Amount* element of a [Budget](~/campaign-management/budget.md) object
-- The *DailyBudget* element of a [Campaign](~/campaign-management/campaign.md) object
-- The *SearchBid* and *ContentMatchBid* element of an [AdGroup](~/campaign-management/adgroup.md) object
-- The *Bid* element of a [Keyword](~/campaign-management/keyword.md) object
-- The *CriterionBid* element of a [BiddableAdGroupCriterion](~/campaign-management/biddableadgroupcriterion.md) object
+Using the [Campaign Management](~/campaign-management-service/campaign-management-service-reference.md) service, you can set the following properties within the supported value ranges described in the table below. 
+- The *Amount* element of a [Budget](~/campaign-management-service/budget.md) object
+- The *DailyBudget* element of a [Campaign](~/campaign-management-service/campaign.md) object
+- The *SearchBid* and *ContentMatchBid* element of an [AdGroup](~/campaign-management-service/adgroup.md) object
+- The *Bid* element of a [Keyword](~/campaign-management-service/keyword.md) object
+- The *CriterionBid* element of a [BiddableAdGroupCriterion](~/campaign-management-service/biddableadgroupcriterion.md) object
 
-Using the [Bulk](~/bulk/bulk-service-reference.md) service, you can set the following properties within the supported value ranges described in the table below. 
-- The *Budget* field of a [Budget](~/bulk/budget.md) record
-- The *Budget* field of a [Campaign](~/bulk/campaign.md) record
-- The *Search Bid* and *Content Bid* field of an [AdGroup](~/bulk/ad-group.md) record
-- The *Bid* field of a [Keyword](~/bulk/keyword.md) record
-- The *Bid* field of an [Ad Group Product Partition](~/bulk/campaign.md) record
+Using the [Bulk](~/bulk-service/bulk-service-reference.md) service, you can set the following properties within the supported value ranges described in the table below. 
+- The *Budget* field of a [Budget](~/bulk-service/budget.md) record
+- The *Budget* field of a [Campaign](~/bulk-service/campaign.md) record
+- The *Search Bid* and *Content Bid* field of an [AdGroup](~/bulk-service/ad-group.md) record
+- The *Bid* field of a [Keyword](~/bulk-service/keyword.md) record
+- The *Bid* field of an [Ad Group Product Partition](~/bulk-service/campaign.md) record
 
-With the exception of the Indonesian Rupiah (IDR), bid estimates are supported by currency with the [Ad Insight](~/ad-insight/ad-insight-service-reference.md) service.
+With the exception of the Indonesian Rupiah (IDR), bid estimates are supported by currency with the [Ad Insight](~/ad-insight-service/ad-insight-service-reference.md) service.
 
-- The *Currency* element of the [BidLandscapePoint](~/ad-insight/bidlandscapepoint.md) object is available in the response from the [GetBidLandscapeByAdGroupIds](~/ad-insight/getbidlandscapebyadgroupids.md) and [GetBidLandscapeByKeywordIds](~/ad-insight/getbidlandscapebykeywordids.md) operations.
-- The *Currency* element of the [EstimatedBidAndTraffic](~/ad-insight/estimatedbidandtraffic.md) object is available in the response from the [GetEstimatedBidByKeywordIds](~/ad-insight/getestimatedbidbykeywordids.md) and [GetEstimatedBidByKeywords](~/ad-insight/getestimatedbidbykeywords.md) operations.
-- The *Currency* element of the [EstimatedPositionAndTraffic](~/ad-insight/estimatedpositionandtraffic.md) object is available in the response from the [GetEstimatedPositionByKeywordIds](~/ad-insight/getestimatedpositionbykeywordids.md) and [GetEstimatedPositionByKeywords](~/ad-insight/getestimatedpositionbykeywords.md) operations.
+- The *Currency* element of the [BidLandscapePoint](~/ad-insight-service/bidlandscapepoint.md) object is available in the response from the [GetBidLandscapeByAdGroupIds](~/ad-insight-service/getbidlandscapebyadgroupids.md) and [GetBidLandscapeByKeywordIds](~/ad-insight-service/getbidlandscapebykeywordids.md) operations.
+- The *Currency* element of the [EstimatedBidAndTraffic](~/ad-insight-service/estimatedbidandtraffic.md) object is available in the response from the [GetEstimatedBidByKeywordIds](~/ad-insight-service/getestimatedbidbykeywordids.md) and [GetEstimatedBidByKeywords](~/ad-insight-service/getestimatedbidbykeywords.md) operations.
+- The *Currency* element of the [EstimatedPositionAndTraffic](~/ad-insight-service/estimatedpositionandtraffic.md) object is available in the response from the [GetEstimatedPositionByKeywordIds](~/ad-insight-service/getestimatedpositionbykeywordids.md) and [GetEstimatedPositionByKeywords](~/ad-insight-service/getestimatedpositionbykeywords.md) operations.
 
 
 |Currency Value|Description|Minimum Bid|Maximum Bid|Minimum Daily Budget|Minimum Monthly Budget|Maximum Monthly Budget|
-|------------------|---------------|---------------|---------------|------------------------|--------------------------|--------------------------|
+|-----|-----|-----|-----|-----|-------|-------|
 |ArgentinePeso|The Argentine Peso (ARS).|0.05|5,000.00|0.05|2.00|152,500,000.00|
 |AustralianDollar|The Australian Dollar (AUD).|0.01|1,000.00|0.05|5.00|30,000,000.00|
 |Baht|The Thai Baht (THB).|0.14|31,000.00|2.00|150.00|927,000,000.00|
@@ -70,10 +72,10 @@ With the exception of the Indonesian Rupiah (IDR), bid estimates are supported b
 
 ## <a name="conversiongoalrevenue"></a>Conversion Goal Revenue Currencies
 
-The following currency codes are supported for conversion goals by setting the *CurrencyCode* element of the [ConversionGoalRevenue](~/campaign-management/conversiongoalrevenue.md) object.
+The following currency codes are supported for conversion goals by setting the *CurrencyCode* element of the [ConversionGoalRevenue](~/campaign-management-service/conversiongoalrevenue.md) object.
 
 |Currency Code|Currency Name|
-|------------------|---------------|
+|-----|-----|
 |AED|United Arab Emirates Dirham|
 |ALL|Albanian Lek|
 |AMD|Armenian Dram|

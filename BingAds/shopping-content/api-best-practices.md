@@ -1,9 +1,13 @@
 ---
 title: "API Best Practices"
-ms.service: "bing-ads"
+description: "Describes best practices when using the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
+ms.service: "shopping-content-api"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+ms.date: 11/01/2017
+ms.author: "scottwhi"
 ---
 # API Best Practices
 The following are the recommended best practices.

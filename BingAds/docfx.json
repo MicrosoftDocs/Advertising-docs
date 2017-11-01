@@ -32,41 +32,42 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "contributors_to_exclude": ["openpublishingbuild", "Pacort", "saldana"],      
       "defaultDevLang": "csharp",
       "uhfHeaderId": "MSDocsHeader-BingAds",
       "searchScope": ["Bing Ads"],
       "breadcrumb_path": "/BingAds/breadcrumb/TOC.json",
-      "extendBreadcrumb": "true"
+      "extendBreadcrumb": "true",
+      "titleSuffix": "Bing Ads"
     },
     "fileMetadata": {
       "dev_langs": 
       {
-        "ad-insight/**.md": ["csharp", "java", "php", "python"],
-        "bulk/**.md": ["csharp", "java", "php", "python"],
-        "campaign-management/**.md": ["csharp", "java", "php", "python"],
-        "customer-management/**.md": ["csharp", "java", "php", "python"],
-        "customer-billing/**.md": ["csharp", "java", "php", "python"],
-        "reporting/**.md": ["csharp", "java", "php", "python"]
+        "ad-insight-service/**.md": ["csharp", "java", "php", "python"],
+        "bulk-service/**.md": ["csharp", "java", "php", "python"],
+        "campaign-management-service/**.md": ["csharp", "java", "php", "python"],
+        "customer-management-service/**.md": ["csharp", "java", "php", "python"],
+        "customer-billing-service/**.md": ["csharp", "java", "php", "python"],
+        "reporting-service/**.md": ["csharp", "java", "php", "python"]
       },
-      "ms.prod": 
-      { 
-         "guides/**.yml": "bing-ads",
-         "shopping-content/**.yml": "bing-ads-shopping-content",
-         "hotel-ads/**.yml": "bing-ads-hotel-ads"
-      }, 
       "ms.service": 
       { 
-        "ad-insight/**.yml": "bing-ads-ad-insight",
-        "customer-billing/**.yml": "bing-ads-customer-billing",
-        "bulk/**.yml": "bing-ads-bulk",
-        "campaign-management/**.yml": "bing-ads-campaign-management",
-        "customer-management/**.yml": "bing-ads-customer-management",
-        "reporting/**.yml": "bing-ads-reporting",
-        "hotel-api/**.yml": "hotel-ads"
-      }, 
-      "ms.technology": 
-      { 
-        "pos-feed/**.yml": "intune" 
+        "guides/**.yml": "bing-ads",
+        "ad-insight-service/**.yml": "bing-ads-ad-insight-service",
+        "customer-billing-service/**.yml": "bing-ads-customer-billing-service",
+        "bulk-service/**.yml": "bing-ads-bulk-service",
+        "campaign-management-service/**.yml": "bing-ads-campaign-management-service",
+        "customer-management-service/**.yml": "bing-ads-customer-management-service",
+        "reporting-service/**.yml": "bing-ads-reporting-service",
+        "shopping-content/**.yml": "bing-ads-shopping-content",
+        "hotel-ads/**.yml": "hotel-ads",
+        "hotel-feed/**.yml": "hotel-ads-hotel-feed",
+        "hotel-api-service/**.yml": "hotel-ads-hotel-service",
+        "pos-feed/**.yml": "hotel-ads-pos-feed",
+        "transaction-message/**.yml": "hotel-ads-transaction-message",
+        "hint-message/**.yml": "hotel-ads-hint-message",
+        "query-message/**.yml": "hotel-ads-query-message",
+        "query-control-message/**.yml": "hotel-ads-query-control-message"    
       }
     },
     "template": [],

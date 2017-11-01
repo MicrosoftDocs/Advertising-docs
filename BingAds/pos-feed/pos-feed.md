@@ -1,13 +1,20 @@
 ---
 title: "Points of Sale Feed"
-ms.service: "bing-ads"
+description: Points of sale landing page
+ms.service: "hotel-ads-pos-feed"
 ms.topic: "article"
-author: "eric-urban"
+ms.date: 11/01/2017
+author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
 ---
+
 # Points of Sale Feed
+
 > [!NOTE]
-> Hotel Ads is now under pilot and available to pilot participants only.  Please contact your account manager for details.
+> This beta release of Hotel Ads is available to select participants only. For information about participating in the beta release program, please contact your account manager.
+>
+> The Points of Sale feed and documentation are subject to change.
 
 If you create hotel ads in Bing, you must use a points of sale feed to provide Bing information about the sites that users use to book rooms. You must define and import your points of sale feed prior to sending Bing [Transaction Messages](../transaction-message/transaction-message.md).
 

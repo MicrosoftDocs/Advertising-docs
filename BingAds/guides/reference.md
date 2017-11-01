@@ -1,11 +1,13 @@
 ---
-title: "API Reference"
+title: "Bing Ads API Reference"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Bing Ads web service and common market values reference documentation.
 ---
-# API Reference
+# Bing Ads API Reference
 For Bing Ads reference content, see the following sections.
 
 |Topic|Description|

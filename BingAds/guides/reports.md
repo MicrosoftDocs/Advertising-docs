@@ -2,8 +2,10 @@
 title: "Reports"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Track finances and measure ad performance to optimize your budget or campaign settings.
 ---
 # Reports
 The Reporting service contains the operations that you use to submit report requests and poll for their status. The reports provide detailed statistics about Bing Ads accounts, campaigns, and ad groups. The information can help you track finances, measure ad performance, and adjust settings to optimize your budget or campaign. For example, you can use the keyword performance report to see which keywords are performing well and those that are not.
@@ -13,7 +15,7 @@ When submitting a report request, you choose the [Report Attributes and Performa
 
 You will also specify the report parameters that restrict or limit the returned data set. For example, you can set the aggregation level to group the data by day or month; specify the time period of the data to include in the report by using specific dates or predefined date ranges, such as today or the last seven days; specify the scope of the data by identifying the accounts, campaigns, and ad groups to include in the report; and set filter criteria to filter the report data. For information about time periods that you can specify for each aggregation value, see [Aggregation and Time](#aggregation-time) below.
 
-For a list of reports that you can request, see [Report Types](../guides/report-types.md). For a complete list of report parameters that you can set, see each report request object and the [ReportRequest](~/reporting/reportrequest.md) base object.
+For a list of reports that you can request, see [Report Types](../guides/report-types.md). For a complete list of report parameters that you can set, see each report request object and the [ReportRequest](~/reporting-service/reportrequest.md) base object.
 
 For information about how to request and download a report, see [Request and Download a Report](../guides/request-download-report.md)When the report completes successfully, you can download the report from the URL that the service returns. The report file is compressed, so you must unzip the file to read the report. There is no limit to the number of reports that the system can store; however, the length of time that the reports are stored is undefined. The service does not check for duplicate report requests.
 
@@ -102,25 +104,25 @@ For reports that include impression share performance statistics columns you can
 > [!IMPORTANT]
 > In the Bing Ads web application, users are not allowed to select the restricted column combinations. Using the Bing Ads API the report submission will not fail, for example if you include BidMatchType and ImpressionLostToBidPercent; however, the fields returned in the downloaded report will be 0 (zero) in place of any meaningful data.
 
-The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [AccountPerformanceReportRequest](~/reporting/accountperformancereportrequest.md) and [AdGroupPerformanceReportRequest](~/reporting/adgroupperformancereportrequest.md).
+The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [AccountPerformanceReportRequest](~/reporting-service/accountperformancereportrequest.md) and [AdGroupPerformanceReportRequest](~/reporting-service/adgroupperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
 |DeviceOS<br /><br />TopVsOther|ImpressionLostToBidPercent<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToAdRelevancePercent<br /><br />ImpressionLostToExpectedCtrPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
 
-The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [CampaignPerformanceReportRequest](~/reporting/campaignperformancereportrequest.md).
+The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [CampaignPerformanceReportRequest](~/reporting-service/campaignperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
 |BudgetAssociationStatus<br /><br />BudgetStatus<br /><br />BudgetName<br /><br />DeviceOS<br /><br />TopVsOther|ImpressionLostToBidPercent<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToAdRelevancePercent<br /><br />ImpressionLostToExpectedCtrPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
 
-The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductDimensionPerformanceReportRequest](~/reporting/productdimensionperformancereportrequest.md).
+The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductDimensionPerformanceReportRequest](~/reporting-service/productdimensionperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
 |AdId<br /><br />AdStatus<br /><br />Language<br /><br />Network|BenchmarkBid<br /><br />BenchmarkCtr<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
 	
-The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductPartitionPerformanceReportRequest](~/reporting/productpartitionperformancereportrequest.md).
+The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductPartitionPerformanceReportRequest](~/reporting-service/productpartitionperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
@@ -154,7 +156,7 @@ For most report requests you must set the *Aggregation* and *Time* elements. The
 |Yearly|ThisYear<br /><br />LastYear<br /><br />Custom date range|
 
 ## <a name="zeroimpressions"></a>Zero Impressions
-The report data can include rows with zero impressions if the impression occurred before the requested time period and then a subsequent action such as click, conversion, or phone call occurs during the requested time period. Likewise even within the requested time period if you download a daily report for performance last week, it is possible that all of the impressions occurred on Sunday and then clicks or other performance occurred e.g. Monday or Tuesday. The report data for Monday or Tuesday might have clicks with zero impressions. You can use the [Bulk Service](~/bulk/bulk-service-reference.md) or [Campaign Management Service](~/campaign-management/campaign-management-service-reference.md) to get all entities in your account, regardless of whether or not they have any associated performance data.
+The report data can include rows with zero impressions if the impression occurred before the requested time period and then a subsequent action such as click, conversion, or phone call occurs during the requested time period. Likewise even within the requested time period if you download a daily report for performance last week, it is possible that all of the impressions occurred on Sunday and then clicks or other performance occurred e.g. Monday or Tuesday. The report data for Monday or Tuesday might have clicks with zero impressions. You can use the [Bulk Service](~/bulk-service/bulk-service-reference.md) or [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md) to get all entities in your account, regardless of whether or not they have any associated performance data.
 
 ## <a name="reptimezones"></a>Time Zones in Reporting
 When you create a report request, specify the date range time period based on the time zone of the campaign. The report data is stored in the time zone of the campaign (taking into account daylight saving time for those time zones that support daylight saving time). For example, if the time zone of the campaign is Pacific Time and a click occurs at noon Eastern Time, the time of the click is recorded as 9:00 AM. If you request a report for the campaign using hourly aggregation, the report data will include a click that occurred at 9:00 AM (the report data is not adjusted based on the local time zone of the user). 

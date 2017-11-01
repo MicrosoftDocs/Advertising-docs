@@ -1,8 +1,12 @@
 ---
 title: "How Do I Get the Status of Product Offers?"
-ms.service: "bing-ads"
+description: "Learn how to get the status of proudct offers with the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
+ms.service: "shopping-content-api"
 ms.topic: "article"
-author: "eric-urban"
+ms.date: 11/01/2017
 ms.author: "scottwhi"
 ---
 # How Do I Get the Status of Product Offers?
@@ -33,7 +37,7 @@ Send an HTTP GET request to the resulting URL. The response will contain a [Stat
 
 The following shows an example `Status` object.
 
-```
+```json
 {
   "catalogId": 12345,
   "publishedCount": 80,
@@ -52,7 +56,7 @@ For a code example that shows how to get the catalog's status and download the r
 
 <a name="examplereport" />The following shows an example report.  
 
-```
+```csv
 "Catalog Name","Catalog Id","Store Id","Upload Time"
 "Default Catalog","1234","5678","04/21/2016 01:59:06"
 

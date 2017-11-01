@@ -1,9 +1,11 @@
 ---
-title: "Target Criterions"
+title: "Target Criterions Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Setup target criteria in C#, Java, PHP, or Python.
 dev_langs:
   - csharp
   - java

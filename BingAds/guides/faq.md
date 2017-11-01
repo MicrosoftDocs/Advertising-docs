@@ -2,8 +2,10 @@
 title: "Frequently Asked Questions"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Find answers to some frequently asked questions about the Bing Ads API.
 ---
 # Frequently Asked Questions
 This article contains answers to some frequently asked questions about the Bing Ads API.
@@ -20,7 +22,7 @@ We have heard requests for additional SDKs e.g. Perl and Ruby, although there is
 You should always use the latest version as soon as we announce support via the [blog](https://blogs.msdn.microsoft.com/bing_ads_api/) or [release notes](~/guides/release-notes.md). As of May 2017 Version 11 is the highest supported version for Ad Insight, Bulk, Campaign Management API, Customer Billing, Customer Management, and Reporting API. 
 
 ## Q. Should I use the Bulk or Campaign Management API?
-The [Bulk service](~/bulk/bulk-service-reference.md) is recommended, especially if you need to add or update ads and keywords across multiple ad groups or campaigns in an account. Some features are not available in Bulk e.g. [AddUetTags](~/campaign-management/adduettags.md), [GetBMCStoresByCustomerId](~/campaign-management/getbmcstoresbycustomerid.md), [GetGeoLocationsFileUrl](~/campaign-management/getgeolocationsfileurl.md), and [GetMediaByIds](~/campaign-management/getmediabyids.md). For these features of course you must use the [Campaign Management service](~/campaign-management/campaign-management-service-reference.md). 
+The [Bulk service](~/bulk-service/bulk-service-reference.md) is recommended, especially if you need to add or update ads and keywords across multiple ad groups or campaigns in an account. Some features are not available in Bulk e.g. [AddUetTags](~/campaign-management-service/adduettags.md), [GetBMCStoresByCustomerId](~/campaign-management-service/getbmcstoresbycustomerid.md), [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md), and [GetMediaByIds](~/campaign-management-service/getmediabyids.md). For these features of course you must use the [Campaign Management service](~/campaign-management-service/campaign-management-service-reference.md). 
 
 ## Q. Which API performance reports are available and when will my data be available?
 The Reporting service supports most of the same [report types](~/guides/report-types.md) that you can find in the Bing Ads web application. Be sure to check out the [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md) and [Reporting Data Retention Time Periods](~/guides/report-data-retention-time-periods.md) guides for availability details.

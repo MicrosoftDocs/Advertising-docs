@@ -2,11 +2,13 @@
 title: "Bing Ads Web Service Addresses"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Refer to the list of Bing Ads web service addresses.
 ---
 # Bing Ads Web Service Addresses
-Use the following web service addresses to access the Bing Ads web service operations.
+You can use the following web service addresses to access the Bing Ads web service operations.
 
 ## <a name="version11"></a>Version 11
 

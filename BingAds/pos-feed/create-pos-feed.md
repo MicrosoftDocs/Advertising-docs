@@ -1,13 +1,18 @@
 ---
 title: "Creating a Points of Sale Feed"
-ms.service: "bing-ads"
+description: Shows how to create a points of sale feed file that contains a list of booking sites.
+ms.service: "hotel-ads-pos-feed"
 ms.topic: "article"
-author: "eric-urban"
+ms.date: 11/01/2017
+author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
 ---
-# Creating a Points of Sale Feed
+
+# Create a Points of Sale Feed
+
 > [!NOTE]
-> Hotel Ads is now under pilot and available to pilot participants only.  Please contact your account manager for details.
+> This beta release of Hotel Ads is available to select participants only. For information about participating in the beta release program, please contact your account manager.
 
 To provide Bing your points of sale data, create an XML document that contains a point of sale (POS) for each booking site you support. A POS describes the POS's display name, URL, and criteria for matching the user to a POS.
 
@@ -27,10 +32,10 @@ The points of sale feed contains a single, top-level [PointsOfSale](../pos-feed/
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <PointsOfSale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance>
-? <PointOfSale>
-? ? . . .
-? </PointOfSale>
-? ...
+  <PointOfSale>
+    . . .
+  </PointOfSale>
+  ...
 </PointsOfSale>
 ```
 
@@ -45,15 +50,15 @@ The following shows `PointOfSale` elements that define points of sale for Englis
 
 ```xml
   <PointOfSale id="English">
-? ? <DisplayNames display_text="ContosoTravel.com" display_language="en" />
-? ? <Match status="yes" language="en" />
-? ? <URL>http://contoso.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
-? </PointOfSale>
+    <DisplayNames display_text="ContosoTravel.com" display_language="en" />
+    <Match status="yes" language="en" />
+    <URL>http://contoso.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
+  </PointOfSale>
   <PointOfSale id="English-Mobile">
-? ? <DisplayNames display_text="ContosoTravel.com" display_language="en" />
-? ? <Match status="yes" language="en" device="mobile" />
-? ? <URL>http://mobile.contoso.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
-? </PointOfSale>
+    <DisplayNames display_text="ContosoTravel.com" display_language="en" />
+    <Match status="yes" language="en" device="mobile" />
+    <URL>http://mobile.contoso.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
+  </PointOfSale>
 ```
 
 Include the `DisplayNames` element only for online travel agencies. Don't include `DisplayNames` for central reservations system (CRS) suppliers (also known as integration partners) and direct suppliers (such as hotel owners or chains). For CRS suppliers and direct suppliers, Bing uses the hotel's name from the hotel feed.
@@ -74,17 +79,17 @@ The following shows a complete points of sale XML document.
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <PointsOfSale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-? ? xsi:noNamespaceSchemaLocation="http://www.gstatic.com/localfeed/local_feed.xsd">
+    xsi:noNamespaceSchemaLocation="http://www.gstatic.com/localfeed/local_feed.xsd">
   <PointOfSale id="English">
-? ? <DisplayNames display_text="ContosoTravel.com" display_language="en" />
-? ? <Match status="yes" language="en" />
-? ? <URL>http://contoso.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
-? </PointOfSale>
+    <DisplayNames display_text="ContosoTravel.com" display_language="en" />
+    <Match status="yes" language="en" />
+    <URL>http://contoso.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
+  </PointOfSale>
   <PointOfSale id="English-Mobile">
-? ? <DisplayNames display_text="ContosoTravel.com" display_language="en" />
-? ? <Match status="yes" language="en" device="mobile" />
-? ? <URL>http://mobile.contoso.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
-? </PointOfSale>
+    <DisplayNames display_text="ContosoTravel.com" display_language="en" />
+    <Match status="yes" language="en" device="mobile" />
+    <URL>http://mobile.contoso.com/landing?hid=(PARTNER-HOTEL-ID)&amp;checkin=(CHECKINYEAR)-(CHECKINMONTH)-(CHECKINDAY)&amp;checkout=(CHECKOUTYEAR)-(CHECKOUTMONTH)-(CHECKOUTDAY)&amp;language=(USER-LANGUAGE)</URL>
+  </PointOfSale>
 </PointsOfSale>
 ```
 
@@ -117,8 +122,8 @@ The `Match` element's status attribute determines whether to include or exclude 
 ```
 <PointOfSale id='exclude-example'>
   . . .
-? \<Match status='never' country='US' />
-? \<Match status='never' country='FR' />
+  <Match status='never' country='US' />
+  <Match status='never' country='FR' />
   . . .
 </PointOfSale>
 ``` 
@@ -129,7 +134,7 @@ If status is *yes*, Bing will not eliminate any points of sale from consideratio
 ```
 <PointOfSale id='exclude-example'>
   . . .
-? \<Match status='yes' country='FR' />
+  <Match status='yes' country='FR' />
   . . .
 </PointOfSale>
 ``` 
@@ -151,7 +156,7 @@ The following are the possible dynamic variable names that you may specify in th
 
 |Name|Description
 |-|-
-|ADVANCE?BOOKING?WINDOW|The number of days in advance of the check-in date that the booking took place. For example, 36.
+|ADVANCE‑BOOKING‑WINDOW|The number of days in advance of the check-in date that the booking took place. For example, 36.
 |CHECKINDAY|The two-digit day specified in the `Checkin` element of the Transaction Message. For example, 20.
 |CHECKINDAY-OF-WEEK|The day of the week that the check-in takes place. Bing uses digits 0 through 6 to represent Monday through Sunday. For example, 1 is Tuesday.
 |CHECKINMONTH|The two-digit month specified in the `Checkin` element of the Transaction Message. For example, 06.
@@ -168,7 +173,7 @@ The following are the possible dynamic variable names that you may specify in th
 |PARTNER-CURRENCY|The three-letter currency code specified in the currency attribute of the `Baserate` element in the Transaction Message. For example, USD.
 |PARTNER-HOTEL-ID|The hotel's ID specified in the `id` element of the Hotel Feed.
 |PRICE-DISPLAYED-TAX|The amount of tax in the user's local currency. The tax amount is based on the `Tax` element specified in the Transaction Message. For example, 3.14. 
-|PRICE?DISPLAYED?TOTAL|The total cost of the room in the user's local currency. The amount is based on the sum of the `Baserate`, `Tax`, and `OtherFees` elements specified in the Transaction Message. For example, 152.13.
+|PRICE‑DISPLAYED‑TOTAL|The total cost of the room in the user's local currency. The amount is based on the sum of the `Baserate`, `Tax`, and `OtherFees` elements specified in the Transaction Message. For example, 152.13.
 |USER-COUNTRY|Two-letter country code of the country where the user is located. The value is extracted from the end-user's client settings. For example, US.
 |USER-CURRENCY|Three-letter currency code of the local currency used by the user. The value is inferred from the end-user's client settings. For example, USD.
 |USER-DEVICE|The end-user's device type. The following are the possible values.<ul><li>mobile</li><li>tablet</li><li>desktop</li><li>unknown</li></ul>The value is inferred from the end-user's client settings.
@@ -180,10 +185,10 @@ All dates, such as CHECKINDAY, are in the hotel's timezone.
 
 The following shows an example URL that contains dynamic query parameters and encoded entities.
 
-```
+```xml
 <URL>http://www.partnerdomain.com?hotelID=(PARTNER-HOTEL-ID)
-? &amp;checkinDay=(CHECKINDAY)&amp;checkinMonth=(CHECKINMONTH)
-? &amp;checkinYear=(CHECKINYEAR)&amp;nights=(LENGTH)</URL>
+  &amp;checkinDay=(CHECKINDAY)&amp;checkinMonth=(CHECKINMONTH)
+  &amp;checkinYear=(CHECKINYEAR)&amp;nights=(LENGTH)</URL>
 ```
 
 Before Bing uses the URL in the ad, it substitutes values for the dynamic variable names. For example, if the user books a room for 6 nights starting on 6/7/2017 for hotel #42, Bing renders the URL as:
@@ -208,7 +213,8 @@ The following are general rules to follow when using dynamic variables.
 - Use encoded entities for special characters. For example, replace ampersands (&amp;) with \&amp;, space with %20, and forward slash (/) with %2F.
 
 - Values for a single parameter may be constructed from multiple variables. For example, you may construct the value of a checkinDate query parameter from the CHECKINDAY, CHECKINMONTH, and CHECKINYEAR variables.  
-  ```  
+  
+  ```xml  
   <URL>http://www.partnerdomain.com?checkinDate=(CHECKINDAY)%2F;(CHECKINMONTH)%2F;(CHECKINYEAR)</URL>  
   ```
   
@@ -227,7 +233,7 @@ In addition to the variables listed above, you can also use the following direct
 
 For example, the following URL sets the popup_datepicker query parameter to **true** if the user used default dates instead of specifying dates.
 
-```
+```xml
 <URL>http://partner.com?hotelID=(PARTNER-HOTEL-ID)
 &amp;checkinDay=(CHECKINDAY)&amp;checkinMonth=(CHECKINMONTH)&amp;checkinYear=(CHECKINYEAR)
 &amp;nights=(LENGTH)(IF-DEFAULT-DATE)&amp;popup_datepicker=true(ELSE)

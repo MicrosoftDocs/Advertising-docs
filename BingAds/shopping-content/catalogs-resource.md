@@ -1,9 +1,13 @@
 ---
 title: "Catalogs Resource"
-ms.service: "bing-ads"
+description: "Provides information about the catalogs resource and related elements of the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
+ms.service: "shopping-content-api"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+ms.date: 11/01/2017
+ms.author: "scottwhi"
 ---
 # Catalogs Resource
 The Catalogs resource lets you manage catalogs in your Bing Merchant Center store (BMC). For information about using the Catalogs resources, see [Managing your Catalogs](../shopping-content/manage-catalogs.md). For examples that show how to add, delete, and get catalogs, see [Code Examples](../shopping-content/code-examples.md#catalog).

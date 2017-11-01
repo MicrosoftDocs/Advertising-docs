@@ -2,56 +2,166 @@
 title: "Get Started With the Bing Ads API"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Get a developer token and learn about authentication with the Bing Ads API.
+dev_langs:
+  - csharp
+  - java
+  - php
+  - python
 ---
 # Get Started With the Bing Ads API
-Any Bing Ads user with a developer token can begin using the Bing Ads Application Programming Interface (API). For advertisers placing a large number of ads or developers building advertising tools, the Bing Ads API provides a programmatic interface to Bing Ads. You can write your Bing Ads application in any language that supports web services. Code [examples](../guides/code-examples.md) are available in C# ([Get Started](../guides/get-started-csharp.md)), Java ([Get Started](../guides/get-started-java.md)), PHP ([Get Started](../guides/get-started-php.md)), and Python ([Get Started](../guides/get-started-python.md)). For more information about available services, see [Bing Ads API Overview](../guides/index.md).
+Any Bing Ads user with a developer token can begin using the Bing Ads API. For advertisers placing a large number of ads or developers building advertising tools, the Bing Ads API provides a programmatic interface to Bing Ads. You can write your Bing Ads application in any language that supports web services. To get started with a specific SDK, see Get Started in [C#](~/guides/get-started-csharp.md) | [Java](~/guides/get-started-java.md) | [PHP](~/guides/get-started-php.md) | [Python](~/guides/get-started-python.md).
 
-## <a name="direct-signup"></a>Getting a Developer Token
+## <a name="get-developer-token"></a>Get a Developer Token
 To use Bing Ads APIs, you must have a developer token and valid user credentials. 
--  If you do not yet have a Bing Ads account, go to the [Bing Ads](https://bingads.microsoft.com/Default.aspx) web application, and click **Sign up**. 
+-  If you do not yet have a Bing Ads account, you can sign up via the [Bing Ads web application](https://secure.bingads.microsoft.com/). 
 -  To get a developer token for production, you must login at the [Bing Ads Developer Portal](https://developers.bingads.microsoft.com/Account) as a Microsoft Account user with the Super Admin role. Then click on the **Request Token** button. The Super Admin may request API access for any user within their customer scope. For more information, see [User Roles and Available Service Operations](customer-accounts.md#userroles).
 
-The sandbox and production environments use separate credentials. For information about getting immediate access to the sandbox, see [Sandbox](sandbox.md).
+The sandbox and production environments use separate credentials. You can sign up for a [Sandbox](sandbox.md) account [here](https://secure.sandbox.bingads.microsoft.com/Auth?EnvContext=Sandbox). Everyone can use the universal sandbox developer token i.e., **BBD37VB98**.
 
 ## <a name="where-to-use"></a>Where to Use the API Credentials
+When you call a service operation such as [GetCampaignsByAccountId](~/campaign-management-service/getcampaignsbyaccountid.md), you must specify [request header](#request-headers) elements such as DeveloperToken, CustomerId, and CustomerAccountId.
+
+```xml
+<s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <Action mustUnderstand="1">GetCampaignsByAccountId</Action>
+    <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
+    <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
+    <CustomerAccountId i:nil="false">ValueHere</CustomerAccountId>
+    <CustomerId i:nil="false">ValueHere</CustomerId>
+    <DeveloperToken i:nil="false">ValueHere</DeveloperToken>
+    <Password i:nil="false">ValueHere</Password>
+    <UserName i:nil="false">ValueHere</UserName>
+  </s:Header>
+  <s:Body>
+    <GetCampaignsByAccountIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+      <AccountId>ValueHere</AccountId>
+      <CampaignType>ValueHere</CampaignType>
+    </GetCampaignsByAccountIdRequest>
+  </s:Body>
+</s:Envelope>
+```
+
+If you are using one of the Bing Ads [SDKs](~/guides/client-libraries.md), the [request header](#request-headers) elements are set using *AuthorizationData*. For more details about the SDK authentication library see [Authentication With the SDKs](~/guides/sdk-authentication.md). 
+
+```csharp
+var authorizationData = new AuthorizationData
+{
+    Authentication = <AuthenticationGoesHere>, 
+    CustomerId = <CustomerIdGoesHere>,
+    AccountId = <AccountIdGoesHere>,
+    DeveloperToken = "<DeveloperTokenGoesHere>"
+};
+```
+```java
+static AuthorizationData authorizationData = new AuthorizationData();
+authorizationData.setAuthentication(<AuthenticationGoesHere>);
+authorizationData.setCustomerId("<CustomerIdGoesHere>");
+authorizationData.setAccountId("<AccountIdGoesHere>");
+authorizationData.setDeveloperToken("<DeveloperTokenGoesHere>");
+```
+```php
+$authorizationData = (new AuthorizationData())
+    ->withAuthentication($AuthenticationGoesHere)
+    ->withCustomerId($CustomerIdGoesHere)
+    ->withAccountId($AccountIdGoesHere)
+    ->withDeveloperToken($DeveloperTokenGoesHere);
+```
+```python
+authorization_data = AuthorizationData(
+    authentication = <AuthenticationGoesHere>,
+    customer_id = <CustomerIdGoesHere>,
+    account_id = <AccountIdGoesHere>,
+    developer_token = '<DeveloperTokenGoesHere>'
+)
+```
+
+## <a name="get-ids"></a> Get Your Account and Customer Ids
+To get a user's customer ID and account ID, you can sign in to the Bing Ads web application and click on the **Campaigns** tab. The URL will contain a *cid* key/value pair in the query string that identifies your customer ID, and an *aid* key/value pair that identifies your account ID. For example, *https://ui.bingads.microsoft.com/campaign/Campaigns.m?cid=FindCustomerIdHere&aid=FindAccountIdHere#/customer/FindCustomerIdHere/account/FindAccountIdHere/campaign*.
+
+With the Customer Management API you can get the customer and account identifiers for each authenticated user. 
+
+Call [GetUser](~/customer-management-service/getuser.md) with your Bing Ads credentials and DeveloperToken. Within the Body set the UserId nil. The response will include a [User](~/customer-management-service/user.md) object that contains the UserId.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Header>
+    <h:ApplicationToken i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v11" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    <h:AuthenticationToken xmlns:h="https://bingads.microsoft.com/Customer/v11">OAuthAccessTokenGoesHere</h:AuthenticationToken>
+    <h:DeveloperToken xmlns:h="https://bingads.microsoft.com/Customer/v11">DeveloperTokenGoesHere</h:DeveloperToken>
+    <h:Password i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v11" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    <h:UserName i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v11" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    </s:Header>
+    <s:Body>
+    <GetUserRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+        <UserId i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    </GetUserRequest>
+    </s:Body>
+</s:Envelope>
+```
+
+Then call [SearchAccounts](~/customer-management-service/getuser.md) with the UserId returned via the previous step. The returned advertiser account (or accounts) will include account and customer identifiers.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+    <s:Header>
+    <h:ApplicationToken i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v11" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    <h:AuthenticationToken xmlns:h="https://bingads.microsoft.com/Customer/v11">OAuthAccessTokenGoesHere</h:AuthenticationToken>
+    <h:DeveloperToken xmlns:h="https://bingads.microsoft.com/Customer/v11">DeveloperTokenGoesHere</h:DeveloperToken>
+    <h:Password i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v11" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    <h:UserName i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v11" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    </s:Header>
+    <s:Body>
+    <SearchAccountsRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+        <Predicates xmlns:a="https://bingads.microsoft.com/Customer/v11/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Predicate>
+            <a:Field>UserId</a:Field>
+            <a:Operator>Equals</a:Operator>
+            <a:Value>UserIdGoesHere</a:Value>
+        </a:Predicate>
+        </Predicates>
+        <Ordering i:nil="true" xmlns:a="https://bingads.microsoft.com/Customer/v11/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+        <PageInfo xmlns:a="https://bingads.microsoft.com/Customer/v11/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <a:Index>0</a:Index>
+        <a:Size>10</a:Size>
+        </PageInfo>
+    </SearchAccountsRequest>
+    </s:Body>
+</s:Envelope>
+```
+
+> [!TIP]
+> See [Search User Accounts Code Example](~/guides/code-example-search-user-accounts.md) for a code example that returns accounts for the current authenticated user.
+
+## <a name="request-headers"></a>Request Header Elements
 Bing Ads services use Simple Object Access Protocol (SOAP) to exchange the request and response messages with the service operation. For more information, see [Bing Ads Services Protocol](../guides/services-protocol.md).
 
 Each SOAP request must include the following SOAP headers, which contain the user's credentials.
 
-|Element|Description|Data Type|Required|
-|-----------|---------------|-------------|------------|
-|*ApplicationToken*|The application-access token.|*string*|No. This header element is not used and should be null.|
-|*AuthenticationToken*|The OAuth access token used to manage Bing Ads accounts linked to a Microsoft Account. For more information, see [Authentication with OAuth](../guides/authentication-oauth.md).|*string*|Required if the *UserName* and *Password* elements are not specified.|
-|*CustomerAccountId*|The identifier of the account that owns the entities in the request. This header element must have the same value as the *AccountId* body element when both are required.|*string*|Required for service operations related to ad extensions and bid estimations. As a best practice you should always specify this element for operations limited in scope to a single account per service call.|
-|*CustomerId*|The identifier of the customer that contains and owns the account. If you manage an account of another customer, you should use that customer ID instead of your own customer ID.|*string*|Required for service operations related to targeting and editorial. As a best practice you should always specify this element.|
-|*DeveloperToken*|The client application's developer access token.|*string*|Yes.|
-|*Password*|The Bing Ads user's sign-in password.<br/><br/>**Note:** New customers are required to sign up for Bing Ads with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy Bing Ads managed credentials may continue to specify the  *UserName* and *Password* header elements. In future versions of the API, Bing Ads will transition exclusively to Microsoft Account authentication. For more information, see [Authentication with OAuth](../guides/authentication-oauth.md).|*string*|Required if the *AuthenticationToken* element is not specified.|
-|*UserName*|The Bing Ads user's sign-in user name. You may not set this element to a Microsoft account.<br/><br/>**Note:** New customers are required to sign up for Bing Ads with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy Bing Ads managed credentials may continue to specify the  *UserName* and *Password* header elements. In future versions of the API, Bing Ads will transition exclusively to Microsoft Account authentication. For more information, see [Authentication with OAuth](../guides/authentication-oauth.md).|*string*|Required if the *AuthenticationToken* element is not specified.|
-## <a name="accountcustomerid"></a>Account and Customer Identifiers
-Many Bing Ads service operations require an account ID and some require a customer ID. The following sections describe the account and customer identifiers, and provides information on retrieving the identifiers.
+|Element|Description|Data Type|
+|-----------|---------------|-------------|
+|ApplicationToken|This header element is not used and should be ignored.|**string**|
+|AuthenticationToken|The OAuth access token that represents a Microsoft Account user who has permissions to Bing Ads accounts.|**string**|
+|CustomerAccountId|The identifier of the account that owns the entities in the request. This header element must have the same value as the AccountId body element when both are required.|**string**|
+|CustomerId|The identifier of the customer that contains and owns the account. If you manage an account of another customer, you should use that customer ID instead of your own customer ID.|**string**|
+|DeveloperToken|The developer token used to access the Bing Ads API.|**string**|
+|Password|The Bing Ads managed user's sign-in password.|**string**|
+|UserName|The Bing Ads managed user's sign-in name. You must not set this element to a Microsoft account or email address.|**string**|
 
-### <a name="accountid"></a>Account Identifier
-The *account identifier* is a numeric identifier that identifies an account.
+> [!IMPORTANT]
+> The UserName and Password header elements are deprecated. In future versions of the API, Bing Ads will transition exclusively to Microsoft Account (email address) authentication. For more information, see [Authentication with OAuth](~/guides/authentication-oauth.md). UserName and Password are still required for Bing Ads managed credentials, but they are not applicable for Microsoft account authentication. To authenticate a Microsoft account, use the AuthenticationToken] header instead of UserName and Password.  
 
-Many of the campaign management operations require that you specify the account identifier in the body of the request message. For example, the [GetCampaignsByAccountId](~/campaign-management/getcampaignsbyaccountid.md) operation returns all of the campaigns for the account that you specify in the body of the request message.
+> [!WARNING]
+> Do not mistake the account number for the account identifier. The account number is the system generated account number that is used to identify the account in the Bing Ads web application. The account number has the form xxxxxxxx, where xxxxxxxx is a series of any eight alphanumeric characters. The API service requests only use the account identifier, and never use the account number.
 
-Do not confuse the *account identifier* with the *account number*. The account number is the system generated account number that is used to identify the account in the Bing Ads web application. The account number has the form xxxxxxxx, where xxxxxxxx is a series of any eight alphanumeric characters.
-The API uses only the account identifier, never the account number.
-
-### <a name="customeraccountid"></a>Customer Account Identifier
-The *customer account identifier* is the same as the account identifier. You specify the account identifier in the *CustomerAccountId* SOAP request header element.
-
-As a best practice you should always specify the identifier of the account being accessed in the *CustomerAccountId* header element. Some of the campaign management operations require that you specify the account ID in the request message, and most of them require that you specify the account ID in the *CustomerAccountId* header element.
-
-### <a name="customerid"></a>Customer Identifier
-The *customer identifier* is the numeric identifier that identifies a customer. You specify the customer identifier in the *CustomerId* SOAP request header element.
-
-As a best practice you should always specify the identifier of the customer that owns the account in the *CustomerId* header element. Only operations that store data in the customer library for example targets, require you to set the *CustomerId* header element. Operations that require you to specify the customer ID will state this in the corresponding service operation topic.
-
-### Getting Your Account ID and Customer ID
-To get a user's customer ID and account ID, you can sign in to the Bing Ads web application and click on the **Campaigns** tab. The URL will contain a *cid* key/value pair in the query string that identifies your customer ID, and an *aid* key/value pair that identifies your account ID. For example, *https://ui.bingads.microsoft.com/campaign/Campaigns.m?cid=FindCustomerIdHere&aid=FindAccountIdHere#/customer/FindCustomerIdHere/account/FindAccountIdHere/campaign*.
+> [!NOTE]
+> With the exception of the Customer Billing and Customer Management services, the CustomerAccountId and CustomerId are required for most service operations. As a best practice you should always specify them in the request.  
 
 ## <a name="need-help"></a>Need Help?
 For troubleshooting tips, see [Handling Service Errors and Exceptions](../guides/handle-service-errors-exceptions.md).

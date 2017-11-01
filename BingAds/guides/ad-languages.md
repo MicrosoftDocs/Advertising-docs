@@ -2,24 +2,21 @@
 title: "Ad Languages"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Language options in Bing Ads give you control over your advertising campaign and experience. 
 ---
 # Ad Languages
 Language options in Bing Ads give you control over your advertising campaign and experience. 
-
-* [Ad Language](#adlanguage)  
-* [Product Language](#productlanguage)  
-* [Countdown Language](#countdownlanguage)  
-* [Structured Snippet Headers](#structuredsnippetheaders)
  
 ## <a name="adlanguage"></a>Ad Language
 Your ad language setting determines the language you will use when you write your ads and should be the language of your customers. The campaign level languages setting applies to all ad groups in the campaign; However, If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The ad group level language setting applies to all ads in an ad group. 
 
 > [!NOTE] 
-> Not everyone has the Campaign languages feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has the Campaign languages feature yet. If you don't, don't worry. It's coming soon.
 
-Your ad language in combination with your location targeting determines who will see your ads. To learn more, see the Bing Ads help article [How does ad language and location targeting affect who can see my ads?](https://help.bingads.microsoft.com/#apex/3/en/51100/0)
+Your ad language in combination with your [location targeting](~/guides/show-ads-target-audience.md) determines who will see your ads. When determining if your ads are eligible to be shown to a particular search user, Bing Ads first determines if your ad language allows for your ad to be shown in a particular country or region then considers the location criteria (and other criteria) settings you have configured. If the target criteria is met and the ad language is available in the country/region, the ad is eligible to display. To learn more, see the Bing Ads help article [How does ad language and location targeting affect who can see my ads?](https://help.bingads.microsoft.com/#apex/3/en/51100/0)
 
 The following are the possible languages that you may use to write your ads and keywords.
 
@@ -33,15 +30,15 @@ The following are the possible languages that you may use to write your ads and 
 |German|DE|
 |Italian|IT|
 |Norwegian|NO|
-|Portuguese|PT<br /><br />**Note:** This code differs from the ISO standard for Brazilian Portuguese, PTB.|
+|Portuguese|PT<br /><br />This code differs from the ISO standard for Brazilian Portuguese, PTB.|
 |Spanish|ES|
 |Swedish|SV|
-|TraditionalChinese<br /><br />**Note:** You must use *TraditionalChinese* (without space) when setting the language of a campaign or ad group.<br /><br />**Note:** You must use *Traditional Chinese* (with space) when setting request elements using the Ad Insight Service.|ZH|
+|TraditionalChinese<br /><br />You must use *TraditionalChinese* (without space) when setting the language of a campaign or ad group.<br /><br />You must use *Traditional Chinese* (with space) when setting request elements using the Ad Insight Service.|ZH|
 		
 ## <a name="productlanguage"></a>Product Language
-Your [customer](~/customer-management/customer.md) language determines the language of the Bing Ads interface. 
+Your [customer](~/customer-management-service/customer.md) language determines the language of the Bing Ads interface. 
 
-The following country codes are supported per customer language e.g. you can use these languages and countries in the [Customer](~/customer-management/customer.md) object when calling the [SignupCustomer](~/customer-management/signupcustomer.md) operation.
+The following country codes are supported per customer language e.g. [resellers](~/guides/management-model-resellers.md) can use these languages and countries in the [Customer](~/customer-management-service/customer.md) object when calling the [SignupCustomer](~/customer-management-service/signupcustomer.md) operation.
 
 > [!NOTE]
 > In New Zealand, Bing Ads is available only on the Bing network. For other countries listed below, Bing Ads is available on the Yahoo Bing Network.
@@ -58,7 +55,7 @@ The following country codes are supported per customer language e.g. you can use
 
 		
 ## <a name="countdownlanguage"></a>Countdown Language
-Countdown customizers let you easily add a countdown (by day, hour, and then minute) to an event in your Expanded Text Ad. The following language codes are supported for [countdown functions](../guides/expanded-text-ads.md#countdown).
+Countdown customizers let you easily add a countdown (by day, hour, and then minute) to an event in your [Expanded Text Ad](~/guides/expanded-text-ads.md). The following language codes are supported for [countdown functions](../guides/expanded-text-ads.md#countdown).
 
 |Language Code|Language|Countdown Length|
 |------------|------------|------------------|

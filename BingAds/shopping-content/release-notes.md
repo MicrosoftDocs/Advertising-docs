@@ -1,9 +1,12 @@
 ---
 title: "Release Notes"
-ms.service: "bing-ads"
+description: "Describes the history of changes made to the Content API."
+author: "swhite-msft"
+
+ms.service: "shopping-content-api"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+ms.date: 11/01/2017
+ms.author: "scottwhi"
 ---
 # Release Notes
 This topic describes recent changes made to Version 9.1 of the Content API.

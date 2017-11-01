@@ -2,8 +2,10 @@
 title: "Authentication with OAuth"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Authenticate for Bing Ads production services with a Microsoft Account.
 ---
 # Authentication with OAuth
 Bing Ads implements the implicit and authorization grant flows of the [OAuth 2.0](http://tools.ietf.org/html/draft-ietf-oauth-v2-15) protocol to enable authentication of Microsoft Accounts that are linked to Bing Ads accounts. You should authenticate for Bing Ads production services with a Microsoft Account, instead of providing the Bing Ads username and password set. Authentication with a Microsoft Account is currently not supported in [Sandbox](../guides/sandbox.md).
@@ -13,10 +15,10 @@ Bing Ads implements the implicit and authorization grant flows of the [OAuth 2.0
 > 
 > The *DeveloperToken* header element is always required. For information on how to get a *DeveloperToken*, see [Get Started With the Bing Ads API](../guides/get-started.md).
 
-A [Microsoft Account](http://windows.microsoft.com/en-US/windows-8/microsoft-account#1TC=t1) is an email address and password alias that an advertiser and other users may use to manage multiple services, including Bing Ads. Advertisers may associate a Microsoft Account with a Bing Ads account by [signing up](https://bingads.microsoft.com) or being [Managing Users](../guides/customer-accounts.md#managingusers) to manage an existing Bing Ads account. Advertisers must use their Microsoft Account to grant your application access to manage their Bing Ads accounts. When the user successfully provides consent, your application is able to obtain an access token that it can then use to authenticate on behalf of the user.
+A [Microsoft Account](https://account.microsoft.com/account) is an email address and password alias that an advertiser and other users may use to manage multiple services, including Bing Ads. Advertisers may associate a Microsoft Account with a Bing Ads account by [signing up](https://bingads.microsoft.com) or being invited to [manage](../guides/customer-accounts.md#managingusers) an existing Bing Ads account. Advertisers must use their Microsoft Account to grant your application access to manage their Bing Ads accounts. When the user successfully provides consent, your application is able to obtain an access token that it can then use to authenticate on behalf of the user.
 
 > [!NOTE]
-> To take advantage of advanced security, users should turn on [two-step verification](http://windows.microsoft.com/en-us/windows/two-step-verification-faq?woldogcb=0) within their Microsoft account [Security settings](https://account.live.com/proofs/Manage). Opting in for two-step verification ensures the user is prompted for a security code when they sign in on a device not previously designated as trusted by the user. The Microsoft Account authentication service provisions and verifies the security code after your application connects to the authorization endpoint, and before user consent is requested for your application to manage their Bing Ads accounts.
+> To take advantage of advanced security, users should turn on [two-step verification](https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification) within their Microsoft account [Security settings](https://account.live.com/proofs/Manage). Opting in for two-step verification ensures the user is prompted for a security code when they sign in on a device not previously designated as trusted by the user. The Microsoft Account authentication service provisions and verifies the security code after your application connects to the authorization endpoint, and before user consent is requested for your application to manage their Bing Ads accounts.
 
 At a high level you should complete the following steps to authenticate a Microsoft Account with Bing Ads using OAuth.
 
@@ -24,7 +26,9 @@ At a high level you should complete the following steps to authenticate a Micros
 
 2.  Request user consent for your application to manage their Bing Ads accounts, by initiating either the [Implicit Grant Flow](#implicit) or [Authorization Code Grant Flow](#authorizationcode).
 
-    > [!NOTE]
+    > [!IMPORTANT]
+    > You must provide consent at least once through the web application consent flow. For repeat or long term authentication, you should follow the [authorization code grant flow](#authorizationcode) for obtaining an access token and refresh token. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. You may need to request user consent again for example, if the Microsoft Account password was changed or the Microsoft Account owner removed permissions for your application to authenticate on their behalf. 
+    > 
     > Users can revoke your application's access to their accounts at [https://account.live.com/consent/Manage](https://account.live.com/consent/Manage).
 
 3.  Complete either the [Implicit Grant Flow](#implicit) or [Authorization Code Grant Flow](#authorizationcode) to obtain an access token that can be used to authenticate with Bing Ads services.
@@ -41,30 +45,31 @@ Before you can manage authentication for users of your Bing Ads application, you
 
 2.  Under **Converged applications**, click **Add an app**.
 
-    ![Register add app](../guides/media/register-add-app.png)
+    ![Add an app](../guides/media/register-add-app.png "Add an app")
     
     If you have previously registered Live SDK applications, then you will also see an option to add another Live SDK application. We recommend adding all new apps under **Converged applications**.  At this time you are not required to migrate app registrations. If migration away from **Live SDK applications** is required in the future, we will announce it well in advance.
 
 3.  Provide the application name and click **Create application**.
 
-    ![Create application](../guides/media/create-application.png)
+    ![Create application](../guides/media/create-application.png "Create application")
 
 4.  Click **Add Platform** and choose *Web* if you want to register a web application, and otherwise select *Native Application*. 
 
-    ![Register add platform](../guides/media/register-add-platform.PNG)
+    ![Add platform](../guides/media/register-add-platform.PNG "Add platform")
     
     If you register a native app you should ignore the provided redirect URI and instead use *https://login.live.com/oauth20_desktop.srf* as the redirect URI. If you register a web app, then you must also provide your exact redirect URI (including for example the *https* prefix).
 
 5.  Under **Advanced Options**, check the box for **Live SDK support**.
 
-    ![Live SDK support](../guides/media/live-sdk-support.png)
+    ![Live SDK support](../guides/media/live-sdk-support.png "Live SDK support")
 
 6.  Save your changes and take note of your *Application Id*. You will use it as the CLIENT_ID in the OAuth grant flow. Also take note of your client secret and redirect URI if you registered a web application. You will also use these values to manage authentication with OAuth.
 
 ## <a name="managingoauthtokens"></a>Managing OAuth Tokens
 Once you have registered your application you can manage the access token for a Microsoft Account user already linked or registered with Bing Ads. For one time or short term access to manage a user's accounts, see [Implicit Grant Flow](#implicit). The access token is short lived and will expire in minutes or hours as determined by the authentication service. Additionally, the Microsoft Account user may change their password or remove permissions for your application to authenticate on their behalf. For repeat or long term access to manage a user's accounts, see [Authorization Code Grant Flow](#authorizationcode).
 
-For details about how to get access and refresh tokens using the Bing Ads SDKs, see Using OAuth in [C#](../guides/get-started-csharp.md#oauth) | [Java](../guides/get-started-java.md#oauth) | [Python](../guides/get-started-python.md#oauth).
+ > [!TIP]
+> For details about how to get access and refresh tokens using the Bing Ads SDKs, see [Authentication With the SDKs](~/guides/sdk-authentication.md#oauth).
 
 ### <a name="implicit"></a>Implicit Grant Flow
 For one time or short term authentication, you should follow the implicit grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Implicit Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#section-4.2).
@@ -74,7 +79,7 @@ For one time or short term authentication, you should follow the implicit grant 
 
 1.  Request user consent through a web browser control. Connect to the authorization endpoint, by using a URL in the following format. Replace CLIENT_ID with the value configured in [Registering Your Application](#registerapplication).
 
-    ```
+    ```http
     https://login.live.com/oauth20_authorize.srf?client_id=CLIENT_ID&scope=bingads.manage&response_type=token&redirect_uri=https://login.live.com/oauth20_desktop.srf&state=ClientStateGoesHere
     ```
     > [!NOTE]
@@ -98,7 +103,7 @@ For repeat or long term authentication, you should follow the authorization code
 
 1.  Request user consent through a web browser control. Connect to the authorization endpoint, by using a URL in the following format. Replace CLIENT_ID with the value configured in [Registering Your Application](#registerapplication).
 
-    ```
+    ```http
     https://login.live.com/oauth20_authorize.srf?client_id=CLIENT_ID&scope=bingads.manage&response_type=code&redirect_uri=REDIRECTURI&state=ClientStateGoesHere
     ```
     > [!NOTE]
@@ -119,7 +124,7 @@ For repeat or long term authentication, you should follow the authorization code
 
 4.  Use the authorization code to request the access token and refresh token. The body of the request must include the request parameters and the Content-Type header must be set to *application/x-www-form-urlencoded*. Set the code parameter to the value of the authorization code retrieved in the previous step, and the grant type set to *authorization_code*. The *redirect_uri* must exactly match the redirect URI used to obtain the authorization code. Be sure to encode the redirect URL. If you registered a web application, include the *client_secret* parameter and set it to the value provisioned in [Registering Your Application](#registerapplication). The following shows an example POST request for a desktop app. 
 
-    ```
+    ```http
     POST https://login.live.com/oauth20_token.srf HTTP/1.1
     Accept: application/json
     Content-Type: application/x-www-form-urlencoded
@@ -129,7 +134,7 @@ For repeat or long term authentication, you should follow the authorization code
     client_id=000A1A1A1&code=a1a1861bc-c5a1-c7a1-8ba1-846c6271a1a1&grant_type=authorization_code&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf
     ```
     > [!IMPORTANT]
-    > If you are using one of our SDKs the tokens will be refreshed automatically. Be sure to securely store the received refresh token. For more information see Using OAuth in [.NET](../guides/get-started-csharp.md#oauth) | [Java](../guides/get-started-java.md#oauth) | [Python](../guides/get-started-python.md#oauth).
+    > If you are using one of our SDKs the tokens will be refreshed automatically. Be sure to securely store the received refresh token. For more information see [Authentication With the SDKs](~/guides/sdk-authentication.md#oauth).
 
 5.  Get the *access_token*, *refresh_token*, and *expires_in* values from the JSON response stream.
 
@@ -141,7 +146,7 @@ For repeat or long term authentication, you should follow the authorization code
 
     The body of the request must include the request parameters and the Content-Type header must be set to *application/x-www-form-urlencoded*. Set the refresh token parameter to the value of the refresh token retrieved in the previous step, and the grant type set to *refresh_token*. The *redirect_uri* must exactly match the redirect URI used to obtain the authorization code. Be sure to encode the redirect URL. If you registered a web application, include the *client_secret* parameter and set it to the value provisioned in [Registering Your Application](#registerapplication). The following shows an example POST request for a desktop app. 
 
-    ```
+    ```http
     POST https://login.live.com/oauth20_token.srf HTTP/1.1
     Accept: application/json
     Content-Type: application/x-www-form-urlencoded
@@ -155,7 +160,7 @@ For repeat or long term authentication, you should follow the authorization code
     
 7.  You may need to start again from Step 1 and request user consent if, for example you [signed the user out](#userlogout), the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf. In that case, the authorization service would return an invalid grant error as shown in the following example.
 
-    ```
+    ```json
     {"error":"invalid_grant","error_description":"The user could not be authenticated or the grant is expired. The user must first sign in and if needed grant the client application access to the requested scope."}
     ```
 
@@ -165,7 +170,7 @@ To sign a user out, perform the following steps:
 2.  Perform any sign out actions in your application (for example, cleaning up local state, removing any cached items, etc.).
 3.  Make a call to the authorization web service using this URL:
 
-    ```
+    ```http
     GET https://login.live.com/oauth20_logout.srf?client_id={client_id}&redirect_uri={redirect_uri}
     ```
     
@@ -173,13 +178,13 @@ To sign a user out, perform the following steps:
  
 
 ## <a name="oauthparameters"></a>OAuth Authorization Parameters
-The following sections list the request and response parameters that are available when calling the Live Connect authorization service as described in the [Implicit Grant Flow](#implicit) and [Authorization Code Grant Flow](#authorizationcode) walkthroughs above.
+The following sections list the request and response parameters that are available when calling the [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) authorization service as described in the [Implicit Grant Flow](#implicit) and [Authorization Code Grant Flow](#authorizationcode) walkthroughs above.
 
 > [!NOTE]
 > The Bing Ads SDKs do not directly expose the *authentication_token*, *display*, *error*, *error_description*, *grant_type*, *locale*, *response_type*, or *scope*, parameters. The Bing Ads SDKs do expose the *client_id*, *client_secret*, *redirect_uri*, and *state*  parameters. 
 
 ### <a name="oauthrequestparameters"></a>OAuth Request Authorization Parameters
-The following table lists the request parameters that are available when calling the Live Connect authorization service. 
+The following table lists the request parameters that are available when calling the [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) authorization service. 
 
 Parameter  |Description  
 ---------|---------
@@ -194,7 +199,7 @@ Parameter  |Description
 *display*     |The display type to be used for the authorization page. Valid values are "popup", "touch", "page", or "none".       
 
 ### <a name="oauthresponseparameters"></a>OAuth Response Authorization Parameters
-The following table lists the response parameters that are available when calling the Live Connect authorization service. 
+The following table lists the response parameters that are available when calling the [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) authorization service. 
 
 Parameter  |Description  
 ---------|---------
@@ -204,28 +209,30 @@ Parameter  |Description
 *error*     |Error code identifying the error that occurred.
 *error_description*     |A description of the error.
 *expires_in*     |Equivalent to the *expires_in* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.14).
+*id_token*     |An unsigned JSON Web Token (JWT). The app can base64Url decode the segments of this token to request information about the user who signed in. The app can cache the values and display them, but it should not rely on them for any authorization or security boundaries.    
 *refresh_token*     |Equivalent to the *refresh_token* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.17).
 *scope*     |Equivalent to the *scope* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.4).
-*state*     |Equivalent to the *state* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.5). This value is passed through from the *state* request parameter, and you should receive the same value unchanged in the response.
+*state*     |Equivalent to the *state* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.5). When you request an authorization code this value is passed through from the *state* request parameter, and you should receive the same value unchanged in the response.
 *token_type*     |The type of data to be returned in the response from the authorization server. 
-*user_id*     |The unique Live Connect identifier for the authenticated Microsoft account.    
 
 ## <a name="serviceheaders"></a>Service Request Header
-When making a service call, you still have the option of specifying the *UserName* and *Password* header elements along with your *DeveloperToken* as follows.
+When making a Bing Ads service call, you still have the option of specifying the *UserName* and *Password* header elements along with your *DeveloperToken* as follows. In this case the UserName cannot be a Microsoft account (email address), and the OAuth flows described above are not applicable. 
 
 ```xml
 <DeveloperToken i:nil="false"></DeveloperToken>
 <Password i:nil="false"></Password>
 <UserName i:nil="false"></UserName>
 ```
+
 You may specify the *AuthenticationToken* instead of the *UserName* and *Password* for a given user. Set the *AuthenticationToken* element to the value of the access token returned via OAuth, as described in the sections above. The *DeveloperToken* is still required as follows.
+> [!NOTE]
+> If you specify *UserName*, *Password*, and *AuthenticationToken*, the *UserName* and *Password* are not validated. Authentication would succeed or fail based solely on the value of the *AuthenticationToken*, even if the *UserName* and *Password* represent valid credentials.
 
 ```xml
 <AuthenticationToken i:nil="false"></AuthenticationToken>
 <DeveloperToken i:nil="false"></DeveloperToken>
 ```
-> [!NOTE]
-> If you specify *UserName*, *Password*, and *AuthenticationToken*, the *UserName* and *Password* are not validated. Authentication would succeed or fail based solely on the value of the *AuthenticationToken*, even if the *UserName* and *Password* represent valid credentials.
+
 
 ## See Also
 [Bing Ads Web Service Addresses](../guides/web-service-addresses.md)

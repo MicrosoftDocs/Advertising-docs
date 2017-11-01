@@ -2,31 +2,26 @@
 title: "Walkthrough: Bing Ads Desktop Application in Python"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Create a desktop application using the Bing Ads Python SDK.
+dev_langs:
+  - python
 ---
 # Walkthrough: Bing Ads Desktop Application in Python
-This tutorial describes how to get started running a Bing Ads desktop console application using Python. You will create a new project in Visual Studio, set up a virtual environment, and run the application in a console.
-
-## Desktop Console Application Goal
-By the end of this tutorial you will have a desktop console application that will authenticate your Microsoft account user credentials and add a new campaign to your Bing Ads account. Using a Microsoft account requires that you interact with a web browser control (UI) at least once to give initial consent. If you modify the example (described below) you may choose to [Save and use the refresh token](#saverefreshtoken) and use it repetitively without user input in your console application.
+This tutorial describes how to get started running a Bing Ads desktop console application using Python. You will create a new project in Visual Studio, set up a virtual environment, and run the application in a console. By the end of this tutorial you will have a desktop console application that will authenticate your Microsoft account user credentials and add a new campaign to your Bing Ads account. Using a Microsoft account requires that you interact with a web browser control (UI) at least once to give initial consent. If you modify the example (described below) you may choose to [Save and use the refresh token](#saverefreshtoken) and use it repetitively without user input in your console application.
 
 ## <a name="requirements"></a>Prerequisites
 To follow this tutorial path, you will develop your application on Windows using [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). If you are using another operating system or development environment, you can browse this guide for context and then see [Get Started Using Python with Bing Ads Services](../guides/get-started-python.md) for an overview of the Python SDK.
 
 You will need to install either Python 2.7 or 3.4 in your development environment.
 
-You will need the [Bing Ads Python SDK](https://github.com/BingAds/BingAds-Python-SDK), and this tutorial will walk you through the installation.
+You will need to [install](~/guides/get-started-python.md#installation) the [Bing Ads Python SDK](~/guides/client-libraries.md), and this tutorial will walk you through the installation.
 
-You will need at least one user with Bing Ads credentials including either a Microsoft account (recommended) or the Bing Ads legacy *UserName* and *Password* set, and a developer token. For more information see [Get Started With the Bing Ads API](../guides/get-started.md).
+You will need at least one user with Bing Ads credentials including either a Microsoft account (recommended) or the Bing Ads legacy *UserName* and *Password* set, and a [developer token](~/guides/get-started.md#get-developer-token). 
 
-To use the OAuth 2.0 features of this web application, you will need to register an application at the [Microsoft account Developer Center](https://account.live.com/developers/applications). The Microsoft account user who registers your application is not required to have Bing Ads access. Please consider the following during app registration:
-
--   Since this is a desktop console application, choose **Yes** when asked if you are registering a mobile or desktop client app.
-
--   You should not register any redirect URLs. For any desktop or mobile application, use *https://login.live.com/oauth20_desktop.srf* as the redirect URI.
-
--   Take note of the Client ID as you will use it later in this tutorial.
+To use the OAuth 2.0 features of this web application, you will need to [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID. You'll need to register a native app (not web) for this example.
 
 ## Create new Python Application
 After you have installed [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/), go to **File** -&gt; **New** -&gt; **Project** -&gt; **Templates** -&gt; **Other Languages** -&gt; **Python**, and select **Python Application** from the list of Python templates.
@@ -42,7 +37,7 @@ We'll create a virtual environment for local development. In your project right-
 
 -   Make sure the option to **Download and install packages** is checked.
 
-![pythonsdk_PTVS_AddVirtualEnv](../guides/media/pythonsdk-ptvs-addvirtualenv.png "pythonsdk_PTVS_AddVirtualEnv")
+![Add virtual env](../guides/media/pythonsdk-ptvs-addvirtualenv.png "Add virtual env")
 
 > [!NOTE]
 > For more information about Python virtual environments, see [PEP 405 - Python Virtual Environments](https://www.python.org/dev/peps/pep-0405/).
@@ -51,12 +46,12 @@ We'll create a virtual environment for local development. In your project right-
 Under **Python Environments** right-click your virtual environment, for example **Python 2.7** and select **Install Python Package**. Using **pip**, specify **bingads** as the name of the package to install, and then click **OK**.
 
 ## Add example code
-Edit the Python file that was provided when you created the project, for example **ConsoleGettingStarted.py**. Replace its contents with the following example. You'll need to edit the values of CLIENT_ID and DEVELOPER_TOKEN with your own. For more information, see [Prerequisites](#requirements).
+Edit the Python file that was provided when you created the project, for example **ConsoleGettingStarted.py**. Replace its contents with the following example. You must edit the sample below with the ClientId that was provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](~/guides/get-started.md#get-developer-token). For more information, see [Prerequisites](#requirements).
 
 ```python
 from bingads.service_client import ServiceClient
 from bingads.authorization import *
-from bingads.v10.bulk import *
+from bingads.v11.bulk import *
 
 import sys
 import webbrowser
@@ -90,7 +85,7 @@ if __name__ == '__main__':
     CLIENT_STATE="ClientStateGoesHere"
 
     # The directory for the bulk files.
-    FILE_DIRECTORY='c:/bulk/'
+    FILE_DIRECTORY='c:/bulk-service/'
 
     # The name of the bulk upload result file.
     RESULT_FILE_NAME='result.csv'
@@ -461,7 +456,7 @@ Using a Microsoft account requires that you interact with a web browser control 
 > [!IMPORTANT]
 > Be sure you are running this application from a secure location and store the refresh token securely.
 
-```
+```python
 authorization_data.authentication.token_refreshed_callback=save_refresh_token
 ```
 

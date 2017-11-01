@@ -2,8 +2,10 @@
 title: "Ads"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Setup ads with the Bing Ads API.
 ---
 # Ads
 Bing Ads provides a variety of options for ads. You can extend the ad layout to be more visually appealing and feature rich using ad extensions.
@@ -14,5 +16,5 @@ Bing Ads provides a variety of options for ads. You can extend the ad layout to 
 |[Dynamic Search Ads](../guides/dynamic-search-ads.md)|Dynamic Search Ads are coming to Bing Ads. You will be able to create a new type of campaign where the ad copy is automatically generated from the content on your website.|
 |[Editorial Review and Appeals](../guides/editorial-review-appeals.md)|Learn about the editorial review process and how to determine whether ads or keywords passed or failed the review.|
 |[Expanded Text Ads](../guides/expanded-text-ads.md)|The expanded text ad format works seamlessly on mobile, tablet and desktop devices so you can focus more on crafting your longer ad copy and optimizing your ad text to better engage your customers before they click your ad.|
-|[Intent Ads](../guides/intent-ads.md)|Native ads are an extension of search network, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Native ads are created automatically by Bing Ads leveraging all of your Bing Ads creative elements including ad title, text, URL, and ad extensions including image extensions. Native ads are a part of standard Bing Ads campaigns on the search network and support all of the targeting available from Bing Ads. Native ads have CPC pricing.<br/><br/>**Note**: Native ads are currently available to a limited number of customers and will only be shown on select premium publisher websites.|
+|[Intent Ads](../guides/intent-ads.md)|Native ads are an extension of search network, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Native ads are created automatically by Bing Ads leveraging all of your Bing Ads creative elements including ad title, text, URL, and ad extensions including image extensions. Native ads are a part of standard Bing Ads campaigns on the search network and support all of the targeting available from Bing Ads. Native ads have CPC pricing.<br/><br/>Intent ads are currently available to a limited number of customers and will only be shown on select premium publisher websites.|
 |[Product Ads](../guides/product-ads.md)| Product ads from a Bing Shopping campaign include details about the product, an image, and optional promotional text. A Bing Shopping campaign enables you to advertise the products from your Bing Merchant Center store product catalog.|

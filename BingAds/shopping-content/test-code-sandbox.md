@@ -1,9 +1,13 @@
 ---
 title: "Testing your Code in Sandbox"
-ms.service: "bing-ads"
+description: "Describes options for testing Content API client code."
+author: "swhite-msft"
+manager: "ehansen"
+
+ms.service: "shopping-content-api"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+ms.date: 11/01/2017
+ms.author: "scottwhi"
 ---
 # Testing your Code in Sandbox
 Bing Ads does not provide a sandbox for the Content API where you can test your application before you deploy it to the production environment. 

@@ -2,8 +2,10 @@
 title: "Bing Ads Operation Error Codes"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Reference documentation for service operation error codes.
 ---
 # Operation Error Codes
 Bing Ads service operations may return error codes depending on the context. The list provided below includes error codes across all Bing Ads services. For information about error codes per service operation, see the reference page for each operation.
@@ -13,7 +15,7 @@ For more information about error handling and troubleshooting, see [Handling Ser
 ## <a name="error-codes"><a/>Error Codes
 In the list below, the **Numeric Code** and **Symbolic Error Code** headers correspond to the respective *Code* and *ErrorCode* elements of the returned error data object.
 
-The *BatchError* and *OperationError* objects for [Customer Billing](~/customer-billing/customer-billing-service-reference.md) and [Customer Management](~/customer-management/customer-management-service-reference.md) services do not contain the *ErrorCode* element. The corresponding **Symbolic Error Code** table entries below are noted as **Not applicable**.
+The *BatchError* and *OperationError* objects for [Customer Billing](~/customer-billing-service/customer-billing-service-reference.md) and [Customer Management](~/customer-management-service/customer-management-service-reference.md) services do not contain the *ErrorCode* element. The corresponding **Symbolic Error Code** table entries below are noted as **Not applicable**.
 
 Some symbolic error codes begin with the strings *BulkService* or *CampaignService*. Error codes beginning with *CampaignService* may be included in error codes for the bulk and campaign service, so you should not make assumptions about the naming convention.
 
@@ -1005,7 +1007,8 @@ CampaignServiceEditorialValidationError
 **Description**
 The specified entity did not pass editorial validation. Please see the *ReasonCode* element of this error object for details.
 
-**Note:** For a list of editorial reason codes, see [Bing Ads Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md).
+> [!NOTE] 
+> For a list of editorial reason codes, see [Bing Ads Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md).
 
 ***
 
@@ -3738,19 +3741,6 @@ Not yet implemented.
 ***
 
 **Numeric Code**
-1468
-
-**Symbolic Error Code**
-CampaignServiceGeoTargetsAndBusinessTargetsMutuallyExclusive
-
-**Description**
-Geographic targets (Country/State/MetroArea/City) and Radius targets are mutually exclusive.
-
-**Note:** Beginning in Q3 2014 this error is no longer available, and you can specify geographical and radius targets in the same target object. For example you can specify both a country target and radius target.
-
-***
-
-**Numeric Code**
 1471
 
 **Symbolic Error Code**
@@ -3768,7 +3758,7 @@ Prepaid client accounts are not supported for management by agencies. The client
 Not applicable.
 
 **Description**
-You cannot get, delete, or update an account that is being linked or unlinked. You can determine the client link status with the [SearchClientLinks](~/customer-management/searchclientlinks.md) operation. If the client link status is *LinkInProgress* or *UnlinkInProgress*, try waiting 5 to 30 minutes and try again. If the issue persists please reach out to [support](https://advertise.bingads.microsoft.com/bing-ads-support). 
+You cannot get, delete, or update an account that is being linked or unlinked. You can determine the client link status with the [SearchClientLinks](~/customer-management-service/searchclientlinks.md) operation. If the client link status is *LinkInProgress* or *UnlinkInProgress*, try waiting 5 to 30 minutes and try again. If the issue persists please reach out to [support](https://advertise.bingads.microsoft.com/bing-ads-support). 
 
 ***
 
@@ -5098,7 +5088,8 @@ Not applicable
 **Description**
 Customer Threshold can only be set by users belonging to the bill to customer.
 
-**Note:** This error might be returned by the *UpdateAccount* operation if you do not have permissions to update the payment method. You can remove the optional fields from the update request and try again.
+> [!NOTE] 
+> This error might be returned by the *UpdateAccount* operation if you do not have permissions to update the payment method. You can remove the optional fields from the update request and try again.
  
 ***
 
@@ -5111,7 +5102,8 @@ Not applicable
 **Description**
 Billing of the balance amount in the account failed.
 
-**Note:** This error could occur when attempting to delete an account. Before an account can be deleted the final billing must succeed.
+> [!NOTE] 
+> This error could occur when attempting to delete an account. Before an account can be deleted the final billing must succeed.
 
 ***
 ## 2500
@@ -5885,9 +5877,10 @@ The download request ID is not valid.
 CampaignServiceAccountTooBigToDownload
 
 **Description**
-The account has more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](~/bulk/downloadcampaignsbycampaignids.md) to download the account's campaigns in multiple requests. The Details field contains the campaign identifiers under the account.
+The account has more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) to download the account's campaigns in multiple requests. The Details field contains the campaign identifiers under the account.
 
-**Note:** Calling the [DownloadCampaignsByAccountIds](~/bulk/downloadcampaignsbyaccountids.md) operation with an account that contains more than four million keywords will fail.
+> [!NOTE] 
+> Calling the [DownloadCampaignsByAccountIds](~/bulk-service/downloadcampaignsbyaccountids.md) operation with an account that contains more than four million keywords will fail.
 
 ***
 
@@ -5986,9 +5979,10 @@ The start and end date for performance statistics should be valid and within the
 BulkServiceCampaignsTooBigToDownload
 
 **Description**
-The campaigns included in the download have more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](~/bulk/downloadcampaignsbycampaignids.md) with fewer campaigns.
+The campaigns included in the download have more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) with fewer campaigns.
 
-**Note:** Calling the [DownloadCampaignsByCampaignIds](~/bulk/downloadcampaignsbycampaignids.md) operation with an account that contains more than eight million keywords will fail.
+> [!NOTE] 
+> Calling the [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) operation with an account that contains more than eight million keywords will fail.
 
 ***
 
@@ -7912,7 +7906,8 @@ CampaignServiceMediaTypeInvalid
 **Description**
 The type of media is not valid.
 
-**Note:** This error may be thrown during a call to the [AddMedia](~/campaign-management/addmedia.md) operation if either the media *Type* or *MediaType* is invalid.
+> [!NOTE] 
+> This error may be thrown during a call to the [AddMedia](~/campaign-management-service/addmedia.md) operation if either the media *Type* or *MediaType* is invalid.
 
 ***
 

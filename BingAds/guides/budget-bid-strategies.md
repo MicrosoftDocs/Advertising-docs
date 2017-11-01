@@ -2,8 +2,10 @@
 title: "Budget and Bid Strategies"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Setup bid and budget strategies.
 ---
 # Budget and Bid Strategies
 Before your ads can run, you need to set your campaign's budget. You'll also need to choose a bid strategy type, and optionally set keyword level match type bids. Depending on the type of campaign you are running, see the following sections for more details.
@@ -20,9 +22,9 @@ Your budget tells Bing Ads how much you want to spend on your campaign. You can 
 With shared budgets you can set a single daily budget that can be used by any campaign within the same account. This enables you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Bing Ads account. 
 
 > [!IMPORTANT]
-> To avoid a breaking change when updating campaigns, you might need to code for shared budgets in the Bing Ads platform, even if you do not plan to use shared budgets. For more details and to determine whether the campaign uses a shared budget, check the value of the *BudgetId* element ([Campaign](~/campaign-management/campaign.md) object) or *Budget Id* field (Bulk ([Campaign](~/bulk/campaign.md) object) record).
+> You might need to code for shared budgets in the Bing Ads platform, even if you do not plan to use shared budgets. For more details and to determine whether the campaign uses a shared budget, check the value of the *BudgetId* element ([Campaign](~/campaign-management-service/campaign.md) object) or *Budget Id* field (Bulk ([Campaign](~/bulk-service/campaign.md) object) record).
 
-The Bing Ads API supports the *DailyBudgetAccelerated* and *DailyBudgetStandard* values as defined in the [BudgetLimitType](~/campaign-management/budgetlimittype.md) value set.
+The Bing Ads API supports the *DailyBudgetAccelerated* and *DailyBudgetStandard* values as defined in the [BudgetLimitType](~/campaign-management-service/budgetlimittype.md) value set.
 
 ### <a name="dailyaccelerated"></a>DailyBudgetAccelerated
 Show your ads for every relevant search, spending at an accelerated rate until you run out of budget for the day. When the daily budget limit is reached, your ads will stop displaying until the next calendar day.
@@ -30,9 +32,9 @@ Show your ads for every relevant search, spending at an accelerated rate until y
 Consider using this option if you want your ads to show more frequently earlier in the day until your budget is reached, to maximize the number of impressions.
 
 ### <a name="dailystandard"></a>DailyBudgetStandard
-Show your ads evenly every day throughout the month so you don?t run out of budget early in the month. If the click rate is higher than expected, the rate of spend may be slowed to ensure that the budget is available until the end of the day; however, you won?t exceed the estimated monthly budget.
+Show your ads evenly every day throughout the month so you don't run out of budget early in the month. If the click rate is higher than expected, the rate of spend may be slowed to ensure that the budget is available until the end of the day; however, you won't exceed the estimated monthly budget.
 
-This is a great option if you have a limited budget and want your ads to show evenly throughout the day. This way, your ads won?t show all at once in the morning, using up your limited budget early in the day. You will also be able to monitor your budget on a daily basis, making adjustments as necessary, to maximize your budget.
+This is a great option if you have a limited budget and want your ads to show evenly throughout the day. This way, your ads won't show all at once in the morning, using up your limited budget early in the day. You will also be able to monitor your budget on a daily basis, making adjustments as necessary, to maximize your budget.
 
 ### <a name="budget_rules"></a>Budget Rules
 Before you can submit your ad campaign, you need to set a campaign budget amount and select a budget type. Don't worry, you can change your budget amount and budget types at any time. Changes to your budget generally take effect within an hour or so. For a high level introduction to campaign budgets, see [What are my budget options?](http://help.bingads.microsoft.com/#apex/3/en/51006/1) 
@@ -53,7 +55,7 @@ The service will update the monthly budget of an existing campaign by using the 
 Your bid strategy setting tells Bing Ads how you want to manage your bids. Whichever bid strategy you use, Bing Ads will always respect your budget limit. 
 
 > [!NOTE]
-> The Bing Ads web application uses the term *Bid strategy*, the Bing Ads Bulk API uses the *Bid Strategy Type* column for upload and download, and the Bing Ads Campaign Management API derives several bid strategy objects from the [BiddingScheme](~/campaign-management/biddingscheme.md) object.
+> The Bing Ads web application uses the term *Bid strategy*, the Bing Ads Bulk API uses the *Bid Strategy Type* column for upload and download, and the Bing Ads Campaign Management API derives several bid strategy objects from the [BiddingScheme](~/campaign-management-service/biddingscheme.md) object.
 
 The following bid strategy types are available per campaign type. For more information see the [Automatically optimize your campaign with bid strategies](https://help.bingads.microsoft.com/#apex/3/en/56786/1) help article.
 
@@ -62,7 +64,7 @@ The following bid strategy types are available per campaign type. For more infor
 |[ManualCpc](#manualcpc)|All|
 |[MaxClicks](#maxclicks)|SearchAndContent<br/>DynamicSearchAds|
 |[MaxConversions](#maxconversions)|SearchAndContent<br/>DynamicSearchAds|
-|[EnhancedCpc](#enhancedcpc)|All<br/><br/>**Note:** For campaigns of type *Shopping* only the *EnhancedCpc* bid strategy can be used, and you must be in the Bing Shopping Enhanced CPC pilot. The pilot ID is 340.|
+|[EnhancedCpc](#enhancedcpc)|All<br/><br/>For campaigns of type *Shopping* only the *EnhancedCpc* bid strategy can be used, and you must be in the Bing Shopping Enhanced CPC pilot. The pilot ID is 340.|
 |[TargetCpa](#targetcpa)|SearchAndContent<br/>DynamicSearchAds|
 
 > [!IMPORTANT] 
@@ -87,7 +89,7 @@ With the *ManualCpc* (manual cost per click) bid strategy, you set your ad group
 With the *MaxClicks* bid strategy, Bing Ads automatically sets your bids with the goal of getting as many clicks as possible with your provided budget.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 > 
 > The *MaxClicks* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States.
 
@@ -95,7 +97,7 @@ With the *MaxClicks* bid strategy, Bing Ads automatically sets your bids with th
 With the *MaxConversions* bid strategy, Bing Ads automatically sets your bids with the goal of getting as many conversions as possible with your provided budget. 
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 > 
 > The *MaxConversions* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 
@@ -110,7 +112,7 @@ The *EnhancedCpc* bid strategy is available to all advertisers worldwide. Note t
 With the *TargetCpa* bid strategy, Bing Ads automatically sets your bids such that the target average CPA (cost per acquisition) is attained. 
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 > 
 > The *TargetCpa* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 
@@ -163,7 +165,7 @@ The following table shows example keyword bid values for each match type, as wel
 |0.20|No bid|No bid|Exact|0.20|
 |0.20|No bid|No bid|Phrase|None. Would not participate in auction.|
 
-For Search and Content campaigns, take a look at the keywords you've created for your ad group. Are they all closely related? Do you want to add any others? Are you using a mix of match types? Consider using the [Ad Insight Service](~/ad-insight/ad-insight-service-reference.md) to get ideas for additional keywords you might want to include in this ad group, and for suggested starting bids. For more information, see [Budget and Bid Opportunities](../guides/budget-bid-opportunities.md). You should create a keyword for each match type that you want to bid on. For example, to bid on exact-match and phrase-match for the keyword *car*, you must create two Keyword objects. When you add the keywords, you?ll get a unique keyword ID for each keyword and match-type combination. Keep in mind that you cannot change a keyword's match type from one match-type bid to another match-type bid. For example, you cannot update a keyword from exact match to phrase match. Instead, you must add a new keyword that specifies a bid amount for the new match type. Optionally you may delete the original keyword if you do not want to bid on its match type.
+For Search and Content campaigns, take a look at the keywords you've created for your ad group. Are they all closely related? Do you want to add any others? Are you using a mix of match types? Consider using the [Ad Insight Service](~/ad-insight-service/ad-insight-service-reference.md) to get ideas for additional keywords you might want to include in this ad group, and for suggested starting bids. For more information, see [Budget and Bid Opportunities](../guides/budget-bid-opportunities.md). You should create a keyword for each match type that you want to bid on. For example, to bid on exact-match and phrase-match for the keyword *car*, you must create two Keyword objects. When you add the keywords, you?ll get a unique keyword ID for each keyword and match-type combination. Keep in mind that you cannot change a keyword's match type from one match-type bid to another match-type bid. For example, you cannot update a keyword from exact match to phrase match. Instead, you must add a new keyword that specifies a bid amount for the new match type. Optionally you may delete the original keyword if you do not want to bid on its match type.
 
 You can also use negative keywords to prevent you ads from being served if the user's search query contains one of your negative keywords. For more information about negative keywords, see [Negative Keywords](../guides/negative-keywords.md).
 

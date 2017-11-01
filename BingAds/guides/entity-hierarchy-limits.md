@@ -2,13 +2,15 @@
 title: "Entity Hierarchy and Limits"
 ms.service: "bing-ads"
 ms.topic: "article"
+ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
+description: Learn about the Bing Ads entity hierarchy to plan your campaign setup.
 ---
 # Entity Hierarchy and Limits
 The following figure shows the high level Bing Ads entity object model from the perspective of one customer that has one or more accounts. For information on services available to manage Bing Ads entities, see [Bing Ads API Overview](~/guides/index.md).
 
-![Entity Hierarchy](/Image/entity-hierarchy.png)  
+![Entity Hierarchy](../guides/media/entity-hierarchy.png "Entity Hierarchy")  
 
 A subset of entities with property limits (subject to change) are listed below. For a comprehensive list of entities and limits please see the [Bing Ads API reference](~/guides/reference.md) documentation. 
 
@@ -18,7 +20,7 @@ A subset of entities with property limits (subject to change) are listed below. 
 ## <a name="account"></a>Account
 Organizes campaigns and identifies the payment instrument used to settle the account.  Three accounts are allowed per credit card.
 
-The following table defines limits for [AdvertiserAccount](~/customer-management/advertiseraccount.md) properties.
+The following table defines limits for [AdvertiserAccount](~/customer-management-service/advertiseraccount.md) properties.
 
 |Property|Limit|
 |------------|---------|
@@ -27,7 +29,7 @@ The following table defines limits for [AdvertiserAccount](~/customer-management
 ## <a name="adextensions"></a>Ad Extensions
 Ad extensions let you decorate text ads with additional information that helps customers find relevant information about your products and services. Ad extensions are stored in a shared library at the account level. After adding the extension to your shared library, you must also explicitly associate it with the account or one or more campaigns or ad groups within the account for the extension to become eligible for delivery. For more information, see [Ad Extensions](ad-extensions.md).
 
-An account can contain up to 1,500,000 sitelink2 ad extensions. Outside of that limit, each account can contain up to 150,000 ad extensions of all other types combined.  
+An account can contain up to 200,000 sitelink2 ad extensions. Outside of that limit, each account can contain up to 150,000 ad extensions of all other types combined.  
 
 The entity to ad extension association limit varies by ad extension type. 
 
@@ -53,7 +55,7 @@ The entity to ad extension association limit varies by ad extension type.
 > For each account, only 1,000 campaigns and 1,000 ad groups can be associated with image ad extensions.  
 
 ### <a name="appadextension"></a>App Ad Extension
-You can manage app ad extensions using the Bulk service ([App Ad Extension Record](~/bulk/app-ad-extension.md)) or Campaign Management service ([AppAdExtension](~/campaign-management/appadextension.md)).
+You can manage app ad extensions using the Bulk service ([App Ad Extension Record](~/bulk-service/app-ad-extension.md)) or Campaign Management service ([AppAdExtension](~/campaign-management-service/appadextension.md)).
 
 The following table defines limits for app ad extension properties.
 
@@ -63,7 +65,7 @@ The following table defines limits for app ad extension properties.
 |Display Text|The string can contain a maximum of 35 characters.|
 
 ### <a name="calladextension"></a>Call Ad Extension
-You can manage call ad extensions using the Bulk service ([Call Ad Extension Record](~/bulk/call-ad-extension.md)) or Campaign Management service ([CallAdExtension](~/campaign-management/calladextension.md)).
+You can manage call ad extensions using the Bulk service ([Call Ad Extension Record](~/bulk-service/call-ad-extension.md)) or Campaign Management service ([CallAdExtension](~/campaign-management-service/calladextension.md)).
 
 The following table defines limits for call ad extension properties.
 
@@ -72,7 +74,7 @@ The following table defines limits for call ad extension properties.
 |Phone Number|The string can contain a maximum of 35 characters.|
 
 ### <a name="calloutadextension"></a>Callout Ad Extension
-You can manage callout ad extensions using the Bulk service ([Callout Ad Extension Record](~/bulk/callout-ad-extension.md)) or Campaign Management service ([CalloutAdExtension](~/campaign-management/calloutadextension.md)).
+You can manage callout ad extensions using the Bulk service ([Callout Ad Extension Record](~/bulk-service/callout-ad-extension.md)) or Campaign Management service ([CalloutAdExtension](~/campaign-management-service/calloutadextension.md)).
 
 The following table defines limits for call ad extension properties.
 
@@ -81,7 +83,7 @@ The following table defines limits for call ad extension properties.
 |Text|The string can contain a maximum of 25 characters. Note that for Traditional Chinese characters, the text is limited to 12 characters.|
 
 ### <a name="imageadextension"></a>Image Ad Extension
-You can manage image ad extensions using the Bulk service ([Image Ad Extension Record](~/bulk/image-ad-extension.md)) or Campaign Management service ([ImageAdExtension](~/campaign-management/imageadextension.md)).
+You can manage image ad extensions using the Bulk service ([Image Ad Extension Record](~/bulk-service/image-ad-extension.md)) or Campaign Management service ([ImageAdExtension](~/campaign-management-service/imageadextension.md)).
 
 The following table defines limits for image ad extension properties.
 
@@ -91,7 +93,7 @@ The following table defines limits for image ad extension properties.
 |Destination Url|The string can contain a maximum of 1,024 characters.|
 
 ### <a name="locationadextension"></a>Location Ad Extension
-You can manage location ad extensions using the Bulk service ([Location Ad Extension Record](~/bulk/location-ad-extension.md)) or Campaign Management service ([LocationAdExtension](~/campaign-management/locationadextension.md)).
+You can manage location ad extensions using the Bulk service ([Location Ad Extension Record](~/bulk-service/location-ad-extension.md)) or Campaign Management service ([LocationAdExtension](~/campaign-management-service/locationadextension.md)).
 
 The following table defines limits for location ad extension properties.
 
@@ -101,7 +103,7 @@ The following table defines limits for location ad extension properties.
 |Phone Number|The string can contain a maximum of 35 characters.|
 
 ### <a name="priceadextension"></a>Price Ad Extension
-You can manage price ad extensions using the Bulk service ([Price Ad Extension Record](~/bulk/price-ad-extension.md)) or Campaign Management service ([PriceAdExtension](~/campaign-management/priceadextension.md)).
+You can manage price ad extensions using the Bulk service ([Price Ad Extension Record](~/bulk-service/price-ad-extension.md)) or Campaign Management service ([PriceAdExtension](~/campaign-management-service/priceadextension.md)).
 
 The following table defines limits for price ad extension properties.
 
@@ -110,7 +112,7 @@ The following table defines limits for price ad extension properties.
 |Table Rows|You must have between 3 and 8 price table rows.|
 
 ### <a name="reviewadextension"></a>Review Ad Extension
-You can manage review ad extensions using the Bulk service ([Review Ad Extension Record](~/bulk/review-ad-extension.md)) or Campaign Management service ([ReviewAdExtension](~/campaign-management/reviewadextension.md)).
+You can manage review ad extensions using the Bulk service ([Review Ad Extension Record](~/bulk-service/review-ad-extension.md)) or Campaign Management service ([ReviewAdExtension](~/campaign-management-service/reviewadextension.md)).
 
 The following table defines limits for review ad extension properties.
 
@@ -121,7 +123,7 @@ The following table defines limits for review ad extension properties.
 |Url|The string can contain a maximum of 255 characters.|
 
 ### <a name="sitelinkadextension"></a>Sitelink Ad Extension
-You can manage sitelink ad extensions using the Bulk service ([Sitelink Ad Extension Record](~/bulk/sitelink-ad-extension.md) or [Sitelink2 Ad Extension Record](~/bulk/sitelink2-ad-extension.md)) or Campaign Management service ([SiteLink2AdExtension](~/campaign-management/sitelinksadextension.md) or [SiteLinksAdExtension](~/campaign-management/sitelink2adextension.md)).
+You can manage sitelink ad extensions using the Bulk service ([Sitelink Ad Extension Record](~/bulk-service/sitelink-ad-extension.md) or [Sitelink2 Ad Extension Record](~/bulk-service/sitelink2-ad-extension.md)) or Campaign Management service ([SiteLink2AdExtension](~/campaign-management-service/sitelinksadextension.md) or [SiteLinksAdExtension](~/campaign-management-service/sitelink2adextension.md)).
 
 > [!NOTE]
 > At the end of September 2017, Bing Ads upgraded all sitelinks ad extensions (contains multiple sitelinks per ad extension) to sitelink2 ad extensions (contains one sitelink per ad extension).
@@ -139,7 +141,7 @@ The following table defines limits for sitelink ad extension properties.
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
 ### <a name="structuredsnippetadextension"></a>Structured Snippet Ad Extension
-You can manage structured snippet ad extensions using the Bulk service ([Structured Snippet Ad Extension Record](~/bulk/structured-snippet-ad-extension.md)) or Campaign Management service ([StructuredSnippetAdExtension](~/campaign-management/structuredsnippetadextension.md)).
+You can manage structured snippet ad extensions using the Bulk service ([Structured Snippet Ad Extension Record](~/bulk-service/structured-snippet-ad-extension.md)) or Campaign Management service ([StructuredSnippetAdExtension](~/campaign-management-service/structuredsnippetadextension.md)).
 
 The following table defines limits for structured snippet ad extension properties.
 
@@ -152,13 +154,13 @@ The ad group object specifies the default bid values for each match type, whethe
 
 Each campaign can have up to 20,000 ad groups. Each ad group may have multiple ads and keywords. You'll want to give these ad groups meaningful names and keep them tightly focused with related keywords and a small number of ads, for example 3 ads per ad group.
 
-You can manage ad groups using the Bulk service ([Ad Group Record](~/bulk/ad-group.md)) or Campaign Management service ([AdGroup](~/campaign-management/adgroup.md)).
+You can manage ad groups using the Bulk service ([Ad Group Record](~/bulk-service/ad-group.md)) or Campaign Management service ([AdGroup](~/campaign-management-service/adgroup.md)).
 
 The following table defines limits for ad group properties.
 
 |Property|Limit|
 |------------|---------|
-|Name|The string can contain a maximum of 128 characters, and must be unique among all active ad groups within the campaign.|
+|Name|The string can contain a maximum of 256 characters, and must be unique among all active ad groups within the campaign.|
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
 ## <a name="ads"></a>Ads
@@ -168,9 +170,9 @@ Each ad group can contain between one and 100 ads combined, whether the type of 
 Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create a text ad with app ad extensions.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
-You can manage dynamic search ads using the Bulk service ([App Install Ad Record](~/bulk/app-install-ad.md)) or Campaign Management service ([AppInstallAd](~/campaign-management/appinstallad.md)).
+You can manage dynamic search ads using the Bulk service ([App Install Ad Record](~/bulk-service/app-install-ad.md)) or Campaign Management service ([AppInstallAd](~/campaign-management-service/appinstallad.md)).
 
 The following table defines limits for app install ad properties.
 
@@ -183,9 +185,9 @@ The following table defines limits for app install ad properties.
 With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don?t, don?t worry. It's coming soon.
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
-You can manage dynamic search ads using the Bulk service ([Dynamic Search Ad Record](~/bulk/dynamic-search-ad.md)) or Campaign Management service ([DynamicSearchAd](~/campaign-management/dynamicsearchad.md)).
+You can manage dynamic search ads using the Bulk service ([Dynamic Search Ad Record](~/bulk-service/dynamic-search-ad.md)) or Campaign Management service ([DynamicSearchAd](~/campaign-management-service/dynamicsearchad.md)).
 
 The following table defines limits for dynamic search ad properties.
 
@@ -199,9 +201,12 @@ The following table defines limits for dynamic search ad properties.
 ### <a name="expandedtextad"></a>Expanded Text Ad
 An expanded text ad specifies the creative, such as the titles and text of the ad.
 
-You can manage expanded text ads using the Bulk service ([Expanded Text Ad Record](~/bulk/expanded-text-ad.md)) or Campaign Management service ([TextAd](~/campaign-management/expandedtextad.md)).
+You can manage expanded text ads using the Bulk service ([Expanded Text Ad Record](~/bulk-service/expanded-text-ad.md)) or Campaign Management service ([ExpandedTextAd](~/campaign-management-service/expandedtextad.md)).
 
 The following table defines limits for expanded text ad properties.
+
+> [!NOTE]
+> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
 
 |Property|Limit|
 |------------|---------|
@@ -220,7 +225,7 @@ A product ad specifies the creative, such as the promotional text of the ad.
 
 Each ad group can contain between one and 100 ads combined, whether the type of ad is dynamic search, expanded text, or product ad.
 
-You can manage product ads using the Bulk service ([Product Ad Record](~/bulk/product-ad.md)) or Campaign Management service ([ProductAd](~/campaign-management/productad.md)).
+You can manage product ads using the Bulk service ([Product Ad Record](~/bulk-service/product-ad.md)) or Campaign Management service ([ProductAd](~/campaign-management-service/productad.md)).
 
 The following table defines limits for product ad properties.
 
@@ -247,7 +252,7 @@ Represents a budget that can be shared by any campaigns in an account. You can s
 
 Each account can have up to 11,000 shared budgets. Each shared budget can be assigned to up to 10,000 campaigns; however, a campaign can only have one budget.
 
-You can manage shared budgets using the Bulk service ([Budget Record](~/bulk/budget.md)) or Campaign Management service ([Budget](~/campaign-management/budget.md)).
+You can manage shared budgets using the Bulk service ([Budget Record](~/bulk-service/budget.md)) or Campaign Management service ([Budget](~/campaign-management-service/budget.md)).
 
 The following table defines limits for budget properties.
 
@@ -258,7 +263,7 @@ The following table defines limits for budget properties.
 ## <a name="campaign"></a>Campaign
 The campaign object is the top level object of an advertising campaign and is where you specify the campaign's budget. Each account can have up to 10,000 campaigns.
 
-You can manage campaigns using the Bulk service ([Campaign Record](~/bulk/campaign.md)) or Campaign Management service ([Campaign](~/campaign-management/campaign.md)).
+You can manage campaigns using the Bulk service ([Campaign Record](~/bulk-service/campaign.md)) or Campaign Management service ([Campaign](~/campaign-management-service/campaign.md)).
 
 The following table defines limits for campaign properties.
 
@@ -271,7 +276,7 @@ The following table defines limits for campaign properties.
 ## <a name="customer"></a>Customer
 Defines a customer. All advertising activity is organized by customer. Each customer can have between one and six accounts, and be managed by up to 15 users.
 
-The following table defines limits for [Customer](~/customer-management/customer.md) properties.
+The following table defines limits for [Customer](~/customer-management-service/customer.md) properties.
 
 |Property|Limit|
 |------------|---------|
@@ -286,7 +291,7 @@ Each account can contain 5,000,000 keywords.
 
 Each customer can contain 50,000,000 keywords.
 
-You can manage keywords using the Bulk service ([Keyword Record](~/bulk/keyword.md)) or Campaign Management service ([Keyword](~/campaign-management/keyword.md)).
+You can manage keywords using the Bulk service ([Keyword Record](~/bulk-service/keyword.md)) or Campaign Management service ([Keyword](~/campaign-management-service/keyword.md)).
 
 The following table defines limits for keyword properties.
 
@@ -295,9 +300,9 @@ The following table defines limits for keyword properties.
 |Destination Url|The string can contain a maximum of 1,024 characters.|
 |Final Url|The string can contain a maximum of 2,048 characters.|
 |Final Mobile Url|The string can contain a maximum of 2,048 characters.|
-|Param1|The string can contain a maximum of 1,022 characters.<br /><br />**Note:** The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
-|Param2|The string can contain a maximum of 70 characters.<br /><br />**Note:** The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
-|Param3|The string can contain a maximum of 70 characters.<br /><br />**Note:** The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
+|Param1|The string can contain a maximum of 1,022 characters.<br /><br />The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
+|Param2|The string can contain a maximum of 70 characters.<br /><br />The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
+|Param3|The string can contain a maximum of 70 characters.<br /><br />The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
 |Text|The string can contain a maximum of 100 characters.|
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
@@ -308,7 +313,7 @@ Each account can contain 100,000 labels.
 
 Although not pictured above, labels can be associated with campaigns, ad groups, ads, and keywords. You can apply one label to multiple entities. The association count is only limited by the number of campaigns, ad groups, ads, and keywords in your account.
 
-You can manage labels using the Bulk service ([Label Record](~/bulk/label.md)) or Campaign Management service ([Label](~/campaign-management/label.md)).
+You can manage labels using the Bulk service ([Label Record](~/bulk-service/label.md)) or Campaign Management service ([Label](~/campaign-management-service/label.md)).
 
 
 |Property|Limit|
@@ -336,7 +341,7 @@ For more information about managing negative keywords and negative keyword lists
 ## <a name="negativesites"></a>Negative Site Placements
 To prevent your ad from appearing on specific web sites within the search network you can configure website exclusions, also known as negative site placements. To explicitly opt out from having your search ads displayed on partner websites sites, you can specify negative sites at the campaign and ad group level. For search ads, you can specify only syndicated search websites. Ad-group-level website exclusions override campaign-level website exclusions.
 
-You can manage negative site placements using the Campaign Management service ([AdGroupNegativeSites](~/campaign-management/adgroupnegativesites.md)) and ([CampaignNegativeSites](~/campaign-management/campaignnegativesites.md)).
+You can manage negative site placements using the Campaign Management service ([AdGroupNegativeSites](~/campaign-management-service/adgroupnegativesites.md)) and ([CampaignNegativeSites](~/campaign-management-service/campaignnegativesites.md)).
 
 Each ad group or campaign can contain up to 2,500 negative site placements. Each URL must specify the domain name e.g., *contoso.com* which can include up to three subdomains and two subdirectories. The subdomain count includes the *www* prefix. For example *one.two.three.contoso.com/1/2*, *www.two.three.contoso.com/1/2*, and *one.two.contoso.co.uk/1/2* are valid URLs, whereas *one.two.three.contoso.co.uk/1/2* (too many subdomains) and *one.two.three.contoso.com/1/2/3* (too many subdirectories) are not.
 
@@ -347,7 +352,7 @@ After you create a shopping campaign, Bing Ads creates a default ad group. That 
 
 There is a 1 to 1 relationship between ad groups and product groups. In other words, each ad group has one product group and vice versa.
 
-You can manage product groups using the Bulk service ([Ad Group Product Partition](~/bulk/ad-group-product-partition.md)) or Campaign Management service ([ProductPartition](~/campaign-management/productpartition.md)).
+You can manage product groups using the Bulk service ([Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md)) or Campaign Management service ([ProductPartition](~/campaign-management-service/productpartition.md)).
 
 For more information, see the Bing Ads Help article [Understand and use product groups](https://help.bingads.microsoft.com/#apex/3/en/50901/1).
 

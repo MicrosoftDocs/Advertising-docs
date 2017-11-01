@@ -1,11 +1,15 @@
 ---
-title: "Get Started"
-ms.service: "bing-ads"
+title: "Get Started with the Content API"
+description: "Learn how to get started using the Content API."
+author: "swhite-msft"
+manager: "ehansen"
+
+ms.service: "shopping-content-api"
 ms.topic: "article"
-author: "eric-urban"
-ms.author: "eur"
+ms.date: 11/01/2017
+ms.author: "scottwhi"
 ---
-# Get Started
+# Get Started with the Content API
 ## <a name="credentials"/> Do you have your Bing Ads credentials and developer token?
 To use the Content API, you must have a Bing Ads account and credentials. New users to Bing Ads must use a Microsoft account to access Bing Ads. Current users that haven't transitioned to a Microsoft account may use their Bing Ads user name. 
 
@@ -19,7 +23,7 @@ Content API uses the same authentication schemes as Bing Ads API. If you use leg
 
 For details about authenticating Microsoft account credentials with OAuth, see [Managing User Authentication with OAuth](~/guides/authentication-oauth.md). You *can* use the [Bing Ads SDK](~/guides/client-libraries.md) for .NET, Java, or Python to authenticate both legacy and Microsoft account credentials (but only for authentication; the Bing Ads SDK does not provide interfaces for the Content API).
 
-For an example that shows how to use OAuth to authenticate Microsoft account credentials, see [Authenticating Microsoft Account Credentials in C#](../shopping-content/authentication-oauth-csharp.md).
+For an example that shows how to use OAuth to authenticate Microsoft account credentials, see [Authenticating Microsoft Account Credentials in C#](../shopping-content/code-example-authentication-oauth.md).
 
 ## Where to use your credentials and developer tokens?
 

@@ -1,11 +1,16 @@
 ---
 title: "Error Codes and Messages"
-ms.service: "bing-ads"
+description: Lists the possible error codes and messages that Bing returns if the transaction message is not valid. 
+ms.service: "hotel-ads-transaction-message"
 ms.topic: "article"
-author: "eric-urban"
+ms.date: 11/01/2017
+author: "swhite-msft"
+manager: ehansen
 ms.author: "scottwhi"
 ---
-# Error Codes and Messages
+
+# Error codes and messages
+
 When you send Bing your transaction message to process, Bing may return one of the following HTTP status codes:
 
 |Status Code|Description
@@ -25,7 +30,7 @@ If an HTTP error occurs, the body of the response contains an XML document that 
   <ApiError>
     <Code>IPAddressNotAllowed</Code>
     <Message>Customer 4 is not authorized to use IP address 167.220.24.77.</Message>
-    \<Property i:nil="true"/>
+    <Property i:nil="true"/>
   </ApiError>
 </ArrayOfApiError>
 ```
