@@ -2,7 +2,6 @@
 title: ContactInfo Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
 ms.topic: "article"
-ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Defines the contact information for a user.

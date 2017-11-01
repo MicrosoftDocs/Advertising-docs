@@ -2,7 +2,6 @@
 title: ChangeTypeReportFilter Value Set - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: "article"
-ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Defines the types of changes to entities by which you can filter the report data.

@@ -3,7 +3,6 @@ title: "Creating a Hotel Feed"
 description: Shows how to create a hotel feed file that lists the hotel properties you want to advertise.
 ms.service: "hotel-ads-hotel-feed"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

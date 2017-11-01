@@ -2,7 +2,6 @@
 title: KeywordAdditionalField Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Defines a list of optional Keyword properties that you can request when calling [GetKeywordsByAdGroupId](../campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](../campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](../campaign-management-service/getkeywordsbyids.md).

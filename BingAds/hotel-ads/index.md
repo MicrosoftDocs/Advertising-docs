@@ -3,7 +3,6 @@ title: "Hotel Ads"
 description: Hotel Ads enables advertisers to showcase their hotels on Bing.com across devices.
 ms.service: "hotel-ads"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

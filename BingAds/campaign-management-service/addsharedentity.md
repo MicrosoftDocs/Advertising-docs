@@ -2,7 +2,6 @@
 title: AddSharedEntity Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Adds a negative keyword list to the account's library.

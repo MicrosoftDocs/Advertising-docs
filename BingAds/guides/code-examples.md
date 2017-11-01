@@ -2,7 +2,6 @@
 title: "Bing Ads Code Examples"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Discover code examples in C#, Java, PHP, and Python.

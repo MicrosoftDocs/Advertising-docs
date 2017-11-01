@@ -3,7 +3,6 @@ title: "Subaccount Code Example"
 description: Shows hot to list, get, and update hotel subaccounts.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

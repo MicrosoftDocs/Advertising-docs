@@ -3,7 +3,6 @@ title: "Manage Hotel Ad Campaigns"
 description: Shows how to manage your hotel campaign's subaccounts, hotel groups, and hotels.
 ms.service: "hotel-ads-hotel-service"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

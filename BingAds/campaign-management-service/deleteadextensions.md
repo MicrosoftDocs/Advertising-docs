@@ -2,7 +2,6 @@
 title: DeleteAdExtensions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: "article"
-ms.date: 11/01/2017
 author: eric-urban
 ms.author: eur
 description: Deletes one or more ad extensions from the account's ad extension library.

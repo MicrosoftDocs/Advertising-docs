@@ -3,7 +3,6 @@ title: Query Message
 description: Landing page for Query Message
 ms.service: "hotel-ads-query-message"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"

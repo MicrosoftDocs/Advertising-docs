@@ -2,7 +2,6 @@
 title: "Bing Ads Services Protocol"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: You can write your Bing Ads application in any language that supports web services.

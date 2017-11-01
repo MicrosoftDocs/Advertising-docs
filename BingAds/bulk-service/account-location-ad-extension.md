@@ -2,7 +2,6 @@
 title: "Account Location Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Describes the Account Location Ad Extension fields in a Bulk file.

@@ -2,7 +2,6 @@
 title: "Universal Event Tracking"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Universal event tracking is a prerequisite for conversion tracking and remarketing in paid search.

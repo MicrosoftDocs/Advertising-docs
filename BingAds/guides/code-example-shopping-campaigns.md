@@ -2,7 +2,6 @@
 title: "Shopping Campaign Code Examples"
 ms.service: "bing-ads"
 ms.topic: "article"
-ms.date: 11/01/2017
 author: "eric-urban"
 ms.author: "eur"
 description: Setup Product ads in C#, Java, PHP, or Python.
