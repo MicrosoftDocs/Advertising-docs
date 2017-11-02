@@ -7,15 +7,24 @@ ms.author: "eur"
 description: Get information about the changes to the Bing Ads services for each month.
 ---
 # Bing Ads API Release Notes
-For information about the changes to the Bing Ads services for each month, see the following sections.
+For information about the changes to the Bing Ads services for each month, see the following sections.  
 
+## <a name="november2017"></a>November 2017
+For information about this month's changes to Bing Ads services, see the following sections.
+
+-   [New Reporting Columns for Estimated Bids](#reporting-estimatedbids-november2017)  
+
+
+### <a name="reporting-estimatedbids-november2017"></a>New Reporting Columns for Estimated Bids
+You can now include estimated bid columns in the keyword performance data download. 
+
+The *Mainline1Bid*, *MainlineBid*, and *SidebarBid* columns are added to the [KeywordPerformanceReportColumn](~/reporting-service/keywordperformancereportcolumn.md) value set. 
 
 ## <a name="october2017"></a>October 2017
 For information about this month's changes to Bing Ads services, see the following sections.
 
 -   [New Reporting Column for Exact Match Impression Share](#reporting-exactmatchimpressionshare-october2017)  
 -   [New Reporting Columns for Labels](#reporting-labels-october2017)  
-
 
 ### <a name="reporting-exactmatchimpressionshare-october2017"></a>New Reporting Column for Exact Match Impression Share
 You can now include the exact match impression share percent in the performance data download. 
