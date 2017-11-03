@@ -1,10 +1,15 @@
 ---
 title: GetAccountsInfo Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetAccountsInfo Service Operation - Customer Management
 Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.

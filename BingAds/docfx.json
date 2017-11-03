@@ -41,15 +41,6 @@
       "titleSuffix": "Bing Ads"
     },
     "fileMetadata": {
-      "dev_langs": 
-      {
-        "ad-insight-service/**.md": ["csharp", "java", "php", "python"],
-        "bulk-service/**.md": ["csharp", "java", "php", "python"],
-        "campaign-management-service/**.md": ["csharp", "java", "php", "python"],
-        "customer-management-service/**.md": ["csharp", "java", "php", "python"],
-        "customer-billing-service/**.md": ["csharp", "java", "php", "python"],
-        "reporting-service/**.md": ["csharp", "java", "php", "python"]
-      },
       "ms.service": 
       { 
         "guides/**.yml": "bing-ads",

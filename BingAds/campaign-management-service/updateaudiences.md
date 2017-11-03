@@ -1,10 +1,15 @@
 ---
 title: UpdateAudiences Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates the specified audiences.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # UpdateAudiences Service Operation - Campaign Management
 Updates the specified audiences.

@@ -1,7 +1,7 @@
 ---
 title: AccountProperty Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Maps an account level property name to a string value.
@@ -32,7 +32,7 @@ Maps an account level property name to a string value.
 If the *Name* element is set to *MSCLKIDAutoTaggingEnabled*, then the value can be set to either *True* or *False*. If the value is *True*, then the MSCLKID auto tagging feature is enabled. You might want to enable auto-tagging of MSCLKID for tracking leads via offline conversion goals. If auto-tagging of MSCLKID is enabled, the MSCLKID is automatically appended to the landing page URL when a customer clicks on your ad. For example, *www.contoso.com/?msclkid={msclkid}*. The click ID is unique for each ad click and multiple clicks on the same ad from the same user will result in multiple click IDs.
 
 > [!IMPORTANT]
-> Every time you create a new [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](../campaign-management-service/accountproperty.md) is set to *True* automatically. For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
+> Every time you create a new [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](../campaign-management-service/accountproperty.md) is set to *True* automatically. If the Scope of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) is set to *Customer* level, then the [AccountProperty](../campaign-management-service/accountproperty.md) for all accounts under the Customer will be set. For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
 
 
 #### <a name="trackingurltemplate"></a>TrackingUrlTemplate

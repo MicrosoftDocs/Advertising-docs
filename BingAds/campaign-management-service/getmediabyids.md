@@ -1,10 +1,15 @@
 ---
 title: GetMediaByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the specified media from an account's media library.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetMediaByIds Service Operation - Campaign Management
 Gets the specified media from an account's media library.

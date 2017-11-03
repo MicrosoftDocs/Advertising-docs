@@ -1,7 +1,7 @@
 ---
 title: BroadMatchKeywordOpportunity Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains the marketplace impact statistics of including broad match type keyword bids.

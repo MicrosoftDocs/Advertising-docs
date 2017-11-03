@@ -1,7 +1,7 @@
 ---
 title: LocationAdExtension Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an ad extension that specifies a business address and phone number to include in a text ad.

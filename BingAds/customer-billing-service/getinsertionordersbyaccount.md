@@ -1,10 +1,15 @@
 ---
 title: GetInsertionOrdersByAccount Service Operation - Customer Billing
 ms.service: bing-ads-customer-billing-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets a list of insertion orders for the specified account.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetInsertionOrdersByAccount Service Operation - Customer Billing
 Gets a list of insertion orders for the specified account.

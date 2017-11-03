@@ -1,7 +1,7 @@
 ---
 title: ProductSearchQueryPerformanceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a Bing Shopping campaign product search query performance report request.

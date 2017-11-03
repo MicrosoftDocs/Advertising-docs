@@ -1,10 +1,15 @@
 ---
 title: GetBulkDownloadStatus Service Operation - Bulk
 ms.service: bing-ads-bulk-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the status of a bulk download request.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetBulkDownloadStatus Service Operation - Bulk
 Gets the status of a bulk download request.

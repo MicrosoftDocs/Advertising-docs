@@ -1,7 +1,7 @@
 ---
 title: Ad Insight Value Sets
 ms.service: bing-ads-ad-insight-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Value sets reference for the AdInsight service.

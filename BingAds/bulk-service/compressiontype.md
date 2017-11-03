@@ -1,7 +1,7 @@
 ---
 title: CompressionType Value Set - Bulk
 ms.service: bing-ads-bulk-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible compression types for the file to download.

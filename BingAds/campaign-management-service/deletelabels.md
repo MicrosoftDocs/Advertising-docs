@@ -1,10 +1,15 @@
 ---
 title: DeleteLabels Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes one or more labels from the account.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # DeleteLabels Service Operation - Campaign Management
 Deletes one or more labels from the account.

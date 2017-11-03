@@ -1,10 +1,15 @@
 ---
 title: GetCampaignCriterionsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the specified campaign criterions.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetCampaignCriterionsByIds Service Operation - Campaign Management
 Gets the specified campaign criterions.

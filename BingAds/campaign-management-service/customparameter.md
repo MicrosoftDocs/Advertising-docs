@@ -1,7 +1,7 @@
 ---
 title: CustomParameter Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a key and value custom parameter for URL tracking.

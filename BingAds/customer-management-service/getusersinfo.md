@@ -1,10 +1,15 @@
 ---
 title: GetUsersInfo Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets a list of objects that contains user identification information, for example the user name and identifier of the user.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetUsersInfo Service Operation - Customer Management
 Gets a list of objects that contains user identification information, for example the user name and identifier of the user.

@@ -1,10 +1,15 @@
 ---
 title: GetBulkUploadUrl Service Operation - Bulk
 ms.service: bing-ads-bulk-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Submits a request for a URL where a bulk upload file may be posted.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetBulkUploadUrl Service Operation - Bulk
 Submits a request for a URL where a bulk upload file may be posted.

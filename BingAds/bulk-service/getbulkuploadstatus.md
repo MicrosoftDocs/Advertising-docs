@@ -1,10 +1,15 @@
 ---
 title: GetBulkUploadStatus Service Operation - Bulk
 ms.service: bing-ads-bulk-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the status and completion progress of a bulk upload request.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetBulkUploadStatus Service Operation - Bulk
 Gets the status and completion progress of a bulk upload request.

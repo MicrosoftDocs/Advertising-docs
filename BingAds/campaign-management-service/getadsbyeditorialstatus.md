@@ -1,10 +1,15 @@
 ---
 title: GetAdsByEditorialStatus Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Retrieves the ads that belong to the specified ad group and have the specified editorial review status.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetAdsByEditorialStatus Service Operation - Campaign Management
 Retrieves the ads that belong to the specified ad group and have the specified editorial review status.

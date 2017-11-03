@@ -1,10 +1,15 @@
 ---
 title: GetBillingDocuments Service Operation - Customer Billing
 ms.service: bing-ads-customer-billing-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the specified billing documents.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetBillingDocuments Service Operation - Customer Billing
 Gets the specified billing documents.

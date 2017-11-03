@@ -1,10 +1,15 @@
 ---
 title: GetAdsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Retrieves the specified ads from the specified ad group.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetAdsByIds Service Operation - Campaign Management
 Retrieves the specified ads from the specified ad group.

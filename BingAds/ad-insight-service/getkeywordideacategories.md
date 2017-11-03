@@ -1,10 +1,15 @@
 ---
 title: GetKeywordIdeaCategories Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the list of keyword idea categories.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetKeywordIdeaCategories Service Operation - Ad Insight
 Gets the list of keyword idea categories.

@@ -1,10 +1,15 @@
 ---
 title: DeleteLabelAssociations Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes label associations.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # DeleteLabelAssociations Service Operation - Campaign Management
 Deletes label associations.

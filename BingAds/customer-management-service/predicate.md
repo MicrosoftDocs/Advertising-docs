@@ -1,7 +1,7 @@
 ---
 title: Predicate Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a predicate for the list of entities requested using one of the search operations, for example SearchAccounts, [SearchClientLinks](../customer-management-service/searchclientlinks.md), or [SearchCustomers](../customer-management-service/searchcustomers.md).

@@ -1,10 +1,15 @@
 ---
 title: DeleteCustomer Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes a customer.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # DeleteCustomer Service Operation - Customer Management
 Deletes a customer.

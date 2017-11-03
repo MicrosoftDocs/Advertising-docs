@@ -1,10 +1,15 @@
 ---
 title: SendUserInvitation Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Sends an invitation for  a Microsoft account user to manage one or more Bing Ads customer accounts.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # SendUserInvitation Service Operation - Customer Management
 Sends an invitation for  a Microsoft account user to manage one or more Bing Ads customer accounts. When the invitation is accepted, the user's Microsoft account is linked to the specified Bing Ads customer accounts.  

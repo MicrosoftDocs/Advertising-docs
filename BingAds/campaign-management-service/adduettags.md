@@ -1,10 +1,15 @@
 ---
 title: AddUetTags Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Bing Ads to collect actions people take on your website.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # AddUetTags Service Operation - Campaign Management
 Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Bing Ads to collect actions people take on your website.

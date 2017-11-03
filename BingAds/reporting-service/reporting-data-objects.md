@@ -1,7 +1,7 @@
 ---
 title: Reporting Data Objects
 ms.service: bing-ads-reporting-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Data objects reference for the Reporting service.

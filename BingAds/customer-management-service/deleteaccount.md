@@ -1,10 +1,15 @@
 ---
 title: DeleteAccount Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes an account.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # DeleteAccount Service Operation - Customer Management
 Deletes an account.

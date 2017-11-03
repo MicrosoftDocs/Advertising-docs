@@ -1,7 +1,7 @@
 ---
 title: Campaign Management Service Operations
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Service operations reference for the CampaignManagement service.

@@ -1,10 +1,15 @@
 ---
 title: GetEditorialReasonsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the reasons why the specified entities failed editorial review and whether the rejection is appealable.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetEditorialReasonsByIds Service Operation - Campaign Management
 Gets the reasons why the specified entities failed editorial review and whether the rejection is appealable.

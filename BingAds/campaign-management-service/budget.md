@@ -1,7 +1,7 @@
 ---
 title: Budget Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Represents a budget that can be shared by any campaigns in an account.

@@ -1,10 +1,15 @@
 ---
 title: SubmitGenerateReport Service Operation - Reporting
 ms.service: bing-ads-reporting-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Submits a report request.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # SubmitGenerateReport Service Operation - Reporting
 Submits a report request.

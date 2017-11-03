@@ -1,10 +1,15 @@
 ---
 title: DeleteNegativeKeywordsFromEntities Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes negative keywords from the specified campaign or ad group.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # DeleteNegativeKeywordsFromEntities Service Operation - Campaign Management
 Deletes negative keywords from the specified campaign or ad group.

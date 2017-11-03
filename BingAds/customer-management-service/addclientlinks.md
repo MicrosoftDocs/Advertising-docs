@@ -1,10 +1,15 @@
 ---
 title: AddClientLinks Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Initiates the client link process to manage the account of another customer.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # AddClientLinks Service Operation - Customer Management
 Initiates the client link process to manage the account of another customer. Sends an invitation from an agency to a potential client.  For more information about the client link lifecycle, see [Link to Client Accounts](~/guides/management-model-agencies.md#clientlink).

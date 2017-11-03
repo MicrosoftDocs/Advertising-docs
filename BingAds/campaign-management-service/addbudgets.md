@@ -1,10 +1,15 @@
 ---
 title: AddBudgets Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Adds new budgets to the account's shared budget library.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # AddBudgets Service Operation - Campaign Management
 Adds new budgets to the account's shared budget library.

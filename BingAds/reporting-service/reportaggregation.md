@@ -1,7 +1,7 @@
 ---
 title: ReportAggregation Value Set - Reporting
 ms.service: bing-ads-reporting-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the aggregation values that you can use for a report.

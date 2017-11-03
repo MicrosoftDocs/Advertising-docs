@@ -1,10 +1,15 @@
 ---
 title: UpdateUserRoles Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates the roles of the specified user.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # UpdateUserRoles Service Operation - Customer Management
 Updates the roles of the specified user.

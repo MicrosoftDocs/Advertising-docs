@@ -1,10 +1,15 @@
 ---
 title: GetBMCStoresByCustomerId Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the Bing Merchant Center stores for the specified customer.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetBMCStoresByCustomerId Service Operation - Campaign Management
 Gets the Bing Merchant Center stores for the specified customer.

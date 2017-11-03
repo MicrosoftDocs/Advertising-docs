@@ -1,7 +1,7 @@
 ---
 title: InsertionOrder Data Object - Customer Billing
 ms.service: bing-ads-customer-billing-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an insertion order.

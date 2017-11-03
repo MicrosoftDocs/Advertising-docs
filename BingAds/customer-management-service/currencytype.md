@@ -1,7 +1,7 @@
 ---
 title: CurrencyType Value Set - Customer Management
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a selection of currency values.

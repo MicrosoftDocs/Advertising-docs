@@ -1,10 +1,15 @@
 ---
 title: GetUetTagsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the specified Universal Event Tracking (UET) tags.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetUetTagsByIds Service Operation - Campaign Management
 Gets the specified Universal Event Tracking (UET) tags.

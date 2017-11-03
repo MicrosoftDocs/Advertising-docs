@@ -1,7 +1,7 @@
 ---
 title: SearchCountsByAttributes Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains a list of keyword historical search counts for the corresponding device attribute.

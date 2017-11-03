@@ -1,7 +1,7 @@
 ---
 title: Customer Management Service Operations
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Service operations reference for the CustomerManagement service.

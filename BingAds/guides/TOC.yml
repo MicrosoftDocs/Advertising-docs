@@ -151,7 +151,6 @@
     items:
     - name: Ad Extensions
       href: ./ad-extensions.md
-      displayName: upgrade migrate
     - name: App Install Ads
       href: ./app-install-ads.md
     - name: Dynamic Search Ads
@@ -164,6 +163,9 @@
       href: ./intent-ads.md
     - name: Product Ads
       href: ./product-ads.md
+    - name: Upgrade from Multiple Sitelinks to One Sitelink Per Extension
+      href: ./upgrade-sitelink2.md
+      displayName: upgrade migrate
   - name: Reports
     href: ./reports.md
     items:

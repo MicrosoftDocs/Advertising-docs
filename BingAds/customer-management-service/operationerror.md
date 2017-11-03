@@ -1,7 +1,7 @@
 ---
 title: OperationError Data Object - Customer Management
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an error object that contains the details that explain why the service operation failed.

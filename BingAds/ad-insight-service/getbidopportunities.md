@@ -1,10 +1,15 @@
 ---
 title: GetBidOpportunities Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the keyword bid opportunities of the specified ad group.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetBidOpportunities Service Operation - Ad Insight
 Gets the keyword bid opportunities of the specified ad group.

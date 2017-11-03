@@ -1,7 +1,7 @@
 ---
 title: OfflineConversionGoal Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an offline conversion goal.
@@ -12,7 +12,7 @@ Defines an offline conversion goal. Use this type of goal if you have lead gener
 To set up offine conversion tracking, create an [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md), wait two hours, and then send Bing Ads the [OfflineConversion](../campaign-management-service/offlineconversion.md) data via the [ApplyOfflineConversions](../campaign-management-service/applyofflineconversions.md) operation.
 
 > [!IMPORTANT]
-> Every time you create a new [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](../campaign-management-service/accountproperty.md) is set to *True* automatically. For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
+> Every time you create a new [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](../campaign-management-service/accountproperty.md) is set to *True* automatically. If the Scope of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) is set to *Customer* level, then the [AccountProperty](../campaign-management-service/accountproperty.md) for all accounts under the Customer will be set. For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
 
 ## Syntax
 ```xml
