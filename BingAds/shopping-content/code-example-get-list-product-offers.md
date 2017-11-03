@@ -11,6 +11,7 @@ ms.author: "scottwhi"
 dev_langs: 
   - csharp
   - java
+  - python
 ---
 # Getting a List of Product Offers Code Example
 This example shows how to get a list of product offers from the store.
@@ -1548,3 +1549,79 @@ class ContentError
 }
 
 ``` 
+
+```python
+"""Content API examples for Python"""
+
+import json
+import requests
+
+class ContentApiClientExample:
+    """Content api client example"""
+
+    #Register your app at https://apps.dev.microsoft.com to get a valid ClientId and app secret
+    client_id = '<client_id_goes_here>'
+    application_secret = '<application_secret_goes_here>'
+
+    # Get your dev token from the bingads
+    # developer portal https://developers.bingads.microsoft.com/Account
+    dev_token = '<dev_token_goes_here>'
+
+    # Get your merchant id by logging into https://secure.bingads.microsoft.com
+    # - Click Tools / Bing Merchant Center
+    # - Click a store
+    # - Click Store Settings: MerchantId is the Store ID
+    merchant_id = '<merchant_id_goes_here>'
+
+    authentication_token = '<authentication_token_goes_here>'   
+
+    base_uri = 'https://content.api.bingads.microsoft.com/shopping/v9.1'
+    bmc_uri = base_uri + '/bmc/{0}'
+
+    def get_oauth_tokens(self):
+        """Get authentication headers"""
+        return {
+            'DeveloperToken': self.dev_token,
+            'AuthenticationToken': self.authentication_token
+        }
+
+    list_products_uri = bmc_uri + "/products"
+    list_products_querystring = "?max-results=250&alt=json"
+    list_products_start_token_querystring = "?max-results=250&alt=json&start-token={1}"
+    def list_products(self, next_page_token=None):
+        """List products"""
+        if next_page_token is not None:
+            query_string = self.list_products_start_token_querystring
+            url = (self.list_products_uri + query_string).format(self.merchant_id, next_page_token)
+        else:
+            query_string = self.list_products_querystring
+            url = (self.list_products_uri + query_string).format(self.merchant_id)
+
+        response = requests.get(url, headers=self.get_oauth_tokens())
+        products = json.loads(response.text)
+        return {
+            'responseText': response.text,
+            'products': products
+        }
+
+def print_product( product):
+    """Print product properties"""
+    print("id: " + product['id'])
+    print("title: " + product['title'])
+
+api = ContentApiClientExample()
+
+# List products
+print('*** List products ***')
+product_list_response = api.list_products()
+products_response = product_list_response['products']
+for product in products_response['resources']:
+    print_product(product)
+while 'nextPageToken' in products_response:
+    product_list_response = api.list_products(next_page_token=products_response['nextPageToken'])
+    products_response = product_list_response['products']
+    for product in products_response['resources']:
+        print_product(product)
+print('*** / End list producst ***')
+
+```
