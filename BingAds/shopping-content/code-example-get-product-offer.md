@@ -11,6 +11,7 @@ ms.author: "scottwhi"
 dev_langs: 
   - csharp
   - java
+  - python
 ---
 # Getting a Product Offer Code Example
 This example shows how to get a single product offer. 
@@ -1329,4 +1330,68 @@ class ContentError
 	
     public ErrorCollection getError() { return this.error; }
 }
+```
+
+```python
+"""Content API examples for Python"""
+
+import string
+import random
+from datetime import datetime, timedelta
+import json
+import requests
+
+class ContentApiClientExample:
+    """Content api client"""
+
+    #Register your app at https://apps.dev.microsoft.com to get a valid ClientId and app secret
+    client_id = '<client_id_goes_here>'
+    application_secret = '<application_secret_goes_here>'
+
+    # Get your dev token from the bingads
+    # developer portal https://developers.bingads.microsoft.com/Account
+    dev_token = '<dev_token_goes_here>'
+
+    # Get your merchant id by logging into https://secure.bingads.microsoft.com
+    # - Click Tools / Bing Merchant Center
+    # - Click a store
+    # - Click Store Settings: MerchantId is the Store ID
+    merchant_id = '<merchant_id_goes_here>'
+
+    authentication_token = '<authentication_token_goes_here>'     
+
+    base_uri = 'https://content.api.bingads.microsoft.com/shopping/v9.1'
+    bmc_uri = base_uri + '/bmc/{0}'
+
+    def get_oauth_tokens(self):
+        """Get authentication headers"""
+        return {
+            'DeveloperToken': self.dev_token,
+            'AuthenticationToken': self.authentication_token
+        }
+
+    get_product_uri = bmc_uri + "/products/{1}"
+    get_product_query_string = "?alt=json"
+    def get_product(self, product_id):
+        """Get an existing product"""
+        url = (self.get_product_uri + self.get_product_query_string).format(self.merchant_id, product_id) # pylint: disable=C0301
+        response = requests.get(url, headers=self.get_oauth_tokens())
+        return {
+            'responseText': response.text,
+            'product': json.loads(response.text)
+        }
+
+# helper methods
+def print_product(product):
+    """Print product properties"""
+    print("id: " + product['id'])
+    print("title: " + product['title'])
+
+# / end helper method
+product_id = '<product_id_goes_here>'
+
+api = ContentApiClientExample()
+product_response = api.get_product(product_id)
+print_product(product_response['product'])
+
 ```
