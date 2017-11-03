@@ -1,10 +1,15 @@
 ---
 title: GetHistoricalKeywordPerformance Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the historical performance of the normalized search term.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetHistoricalKeywordPerformance Service Operation - Ad Insight
 Gets the historical performance of the normalized search term. The results are aggregated by device type.

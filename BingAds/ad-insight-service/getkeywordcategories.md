@@ -1,10 +1,15 @@
 ---
 title: GetKeywordCategories Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the keyword categories to which the specified keywords belong.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetKeywordCategories Service Operation - Ad Insight
 Gets the keyword categories to which the specified keywords belong.

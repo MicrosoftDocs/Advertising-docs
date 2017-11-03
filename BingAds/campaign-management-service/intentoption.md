@@ -1,7 +1,7 @@
 ---
 title: IntentOption Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible intent options for location criterion, for example to target people in, searching for, or viewing pages about your targeted location.

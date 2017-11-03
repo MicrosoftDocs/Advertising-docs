@@ -1,7 +1,7 @@
 ---
 title: Schedule Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the start and end date ranges for ad extension scheduling.

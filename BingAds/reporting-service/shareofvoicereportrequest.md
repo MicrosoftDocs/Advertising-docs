@@ -1,7 +1,7 @@
 ---
 title: ShareOfVoiceReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a share of voice (SOV) report request.

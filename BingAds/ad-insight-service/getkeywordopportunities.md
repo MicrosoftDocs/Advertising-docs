@@ -1,10 +1,15 @@
 ---
 title: GetKeywordOpportunities Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets a list of keyword suggestions that are relevant to the specified ad group.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetKeywordOpportunities Service Operation - Ad Insight
 Gets a list of keyword suggestions that are relevant to the specified ad group. The keyword suggestion also includes a suggested bid value.

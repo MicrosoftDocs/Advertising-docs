@@ -1,7 +1,7 @@
 ---
 title: SearchCampaignChangeHistoryReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a change history report request.

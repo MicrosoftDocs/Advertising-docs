@@ -1,10 +1,15 @@
 ---
 title: GetMediaMetaDataByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the specified media meta data from an account's media library.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetMediaMetaDataByIds Service Operation - Campaign Management
 Gets the specified media meta data from an account's media library.

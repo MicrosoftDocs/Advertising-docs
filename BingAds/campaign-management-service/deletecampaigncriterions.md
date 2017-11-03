@@ -1,10 +1,15 @@
 ---
 title: DeleteCampaignCriterions Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes one or more campaign criterions.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # DeleteCampaignCriterions Service Operation - Campaign Management
 Deletes one or more campaign criterions.

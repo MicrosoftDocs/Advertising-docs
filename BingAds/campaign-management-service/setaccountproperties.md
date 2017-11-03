@@ -1,10 +1,15 @@
 ---
 title: SetAccountProperties Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Sets account level properties by name.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # SetAccountProperties Service Operation - Campaign Management
 Sets account level properties by name.

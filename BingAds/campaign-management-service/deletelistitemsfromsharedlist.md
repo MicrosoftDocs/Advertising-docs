@@ -1,10 +1,15 @@
 ---
 title: DeleteListItemsFromSharedList Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Deletes negative keywords from a negative keyword list.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # DeleteListItemsFromSharedList Service Operation - Campaign Management
 Deletes negative keywords from a negative keyword list.

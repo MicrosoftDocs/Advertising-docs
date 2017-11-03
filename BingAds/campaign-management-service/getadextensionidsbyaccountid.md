@@ -1,10 +1,15 @@
 ---
 title: GetAdExtensionIdsByAccountId Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the ad extensions from the account's ad extension library.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetAdExtensionIdsByAccountId Service Operation - Campaign Management
 Gets the ad extensions from the account's ad extension library.

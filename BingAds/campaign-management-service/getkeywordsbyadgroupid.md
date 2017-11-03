@@ -1,10 +1,15 @@
 ---
 title: GetKeywordsByAdGroupId Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the keywords within an ad group.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetKeywordsByAdGroupId Service Operation - Campaign Management
 Gets the keywords within an ad group.

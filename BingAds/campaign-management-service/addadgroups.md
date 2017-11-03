@@ -1,10 +1,15 @@
 ---
 title: AddAdGroups Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Adds new ad groups to a specified campaign.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # AddAdGroups Service Operation - Campaign Management
 Adds new ad groups to a specified campaign.

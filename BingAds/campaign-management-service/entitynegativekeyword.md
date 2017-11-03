@@ -1,7 +1,7 @@
 ---
 title: EntityNegativeKeyword Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines an object that contains a set of negative keywords that are only associated with the corresponding entity such as a campaign or ad group.

@@ -1,7 +1,7 @@
 ---
 title: Bulk Data Objects
 ms.service: bing-ads-bulk-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Data objects reference for the Bulk service.

@@ -1,7 +1,7 @@
 ---
 title: ApplicationFault Data Object - Bulk
 ms.service: bing-ads-bulk-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the base object from which all fault detail objects derive.

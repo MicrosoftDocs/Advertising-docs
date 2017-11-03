@@ -1,10 +1,15 @@
 ---
 title: GetCustomer Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the details of a customer.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetCustomer Service Operation - Customer Management
 Gets the details of a customer.

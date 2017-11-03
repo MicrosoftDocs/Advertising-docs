@@ -1,7 +1,7 @@
 ---
 title: DestinationUrlPerformanceReportColumn Value Set - Reporting
 ms.service: bing-ads-reporting-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the DestinationUrlPerformanceReportRequest.

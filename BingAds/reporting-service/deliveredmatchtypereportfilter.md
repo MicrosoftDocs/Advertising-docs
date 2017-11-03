@@ -1,7 +1,7 @@
 ---
 title: DeliveredMatchTypeReportFilter Value Set - Reporting
 ms.service: bing-ads-reporting-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the delivered match type values that you can use to filter the report data.

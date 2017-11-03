@@ -1,10 +1,15 @@
 ---
 title: GetConversionGoalsByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the specified conversion goals.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetConversionGoalsByIds Service Operation - Campaign Management
 Gets the specified conversion goals. 

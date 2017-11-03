@@ -1,10 +1,15 @@
 ---
 title: GetEstimatedBidByKeywords Service Operation - Ad Insight
 ms.service: bing-ads-ad-insight-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the estimated bid value of one or more keywords that could result in an ad appearing in the targeted position in the search results.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetEstimatedBidByKeywords Service Operation - Ad Insight
 Gets the estimated bid value of one or more keywords that could result in an ad appearing in the targeted position in the search results.

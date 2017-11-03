@@ -1,7 +1,7 @@
 ---
 title: CategorySearchParameter Data Object - Ad Insight
 ms.service: bing-ads-ad-insight-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: The keyword category search parameter that you can use as a seed for new keyword ideas.

@@ -1,7 +1,7 @@
 ---
 title: DataType Value Set - Customer Billing
 ms.service: bing-ads-customer-billing-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines the possible formats in which to generate the billing document.

@@ -1,10 +1,15 @@
 ---
 title: UpdateConversionGoals Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Updates conversion goals within the account's shared conversion goal library.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # UpdateConversionGoals Service Operation - Campaign Management
 Updates conversion goals within the account's shared conversion goal library. 

@@ -1,10 +1,15 @@
 ---
 title: GetKeywordsByEditorialStatus Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Retrieves the keywords with the specified editorial review status.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetKeywordsByEditorialStatus Service Operation - Campaign Management
 Retrieves the keywords with the specified editorial review status.

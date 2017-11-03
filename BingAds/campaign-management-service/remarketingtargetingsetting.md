@@ -1,7 +1,7 @@
 ---
 title: RemarketingTargetingSetting Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: The targeting setting that is applicable for all audiences e.g., custom audiences and remarketing lists that are associated with this ad group.

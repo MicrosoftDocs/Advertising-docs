@@ -1,10 +1,15 @@
 ---
 title: SearchUserInvitations Service Operation - Customer Management
 ms.service: bing-ads-customer-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Searches for user invitations that match a specified criteria.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # SearchUserInvitations Service Operation - Customer Management
 Searches for user invitations that match a specified criteria.

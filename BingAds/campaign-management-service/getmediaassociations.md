@@ -1,10 +1,15 @@
 ---
 title: GetMediaAssociations Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Gets the media associations of the specified entity type from an account's media library.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetMediaAssociations Service Operation - Campaign Management
 Gets the media associations of the specified entity type from an account's media library.

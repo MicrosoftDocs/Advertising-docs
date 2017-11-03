@@ -1,7 +1,7 @@
 ---
 title: Currency Value Set - Ad Insight
 ms.service: bing-ads-ad-insight-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Defines a selection of currency values.

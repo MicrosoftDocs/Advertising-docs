@@ -1,7 +1,7 @@
 ---
 title: Campaign Management Value Sets
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Value sets reference for the CampaignManagement service.

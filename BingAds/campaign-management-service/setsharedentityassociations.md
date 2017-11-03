@@ -1,10 +1,15 @@
 ---
 title: SetSharedEntityAssociations Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Sets the association between a campaign and a negative keyword list.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # SetSharedEntityAssociations Service Operation - Campaign Management
 Sets the association between a campaign and a negative keyword list.

@@ -1,10 +1,15 @@
 ---
 title: GetAudiencesByIds Service Operation - Campaign Management
 ms.service: bing-ads-campaign-management-service
-ms.topic: "article"
+ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Retrieves the specified audiences from the specified account.
+dev_langs: 
+  - csharp
+  - java
+  - php
+  - python
 ---
 # GetAudiencesByIds Service Operation - Campaign Management
 Retrieves the specified audiences from the specified account.
