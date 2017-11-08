@@ -12,6 +12,14 @@ ms.author: "scottwhi"
 
 For information about changes that were included with each release, see the following sections.
 
+## November 8, 2017
+
+### Nonbreaking changes
+
+- Added the production endpoint (see [Endpoints](hotel-service/reference.md#endpoints)).  
+  
+- Fixed documentation error: Removed Paused as a possible value from the `Status` field of [Hotel](hotel-service/reference.md#hotel), [HotelGroup](hotel-service/reference.md#hotelgroup), and [Subaccount](hotel-service/reference.md#subaccount). 
+
 ## October 15, 2017
 
 Released the Beta version of Hotel Ads.
@@ -46,7 +54,7 @@ Released the Beta version of Hotel Ads.
 
 #### Nonbreaking changes
 
-- Added the `BidMultiplierSource` field to the [Hotel](../hotel-service/reference.md#hotel) and  [HotelGroup](../hotel-service/reference.md#hotelgroup) objects. The source field indicates whether the object inherits or defines the bid multiplers. For example, if hotel object inherits the multipliers from the subaccount, `BidMultiplierSource` is SubAccount.  
+- Added the `BidMultiplierSource` field to the [Hotel](../hotel-service/reference.md#hotel) and  [HotelGroup](../hotel-service/reference.md#hotelgroup) objects. The source field indicates whether the object inherits or defines the bid multipliers. For example, if hotel object inherits the multipliers from the subaccount, `BidMultiplierSource` is SubAccount.  
   
 - Added support for the [$select](../hotel-service/reference.md#select-param) OData query parameter. You can use the parameter to select the fields that you want the response to include.  
   

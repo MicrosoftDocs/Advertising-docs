@@ -19,9 +19,10 @@ The Hotel API lets you manage your hotel ad campaigns and bidding.
 
 ## Endpoints
 
-The following is the base URI that you use to construct the endpoint.  
+The following are the base URIs that you use to construct the endpoint.  
 
-`https://partner.api.sandbox.bingads.microsoft.com/Travel/V1/`
+- Sandbox&mdash;`https://partner.api.sandbox.bingads.microsoft.com/Travel/V1/`
+- Production&mdash;`https://partner.api.bingads.microsoft.com/Travel/v1/`
 
 The endpoint must include the customer and account resources.
 
@@ -41,7 +42,7 @@ Next, append a template from the following table to add, get, and update hotel r
 |<a name="listsubaccounts" />SubAccounts|GET|Gets the list of hotel campaigns defined for the specified account.<br /><br />**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [SubAccount](#subaccount) objects.
 |<a name="addsubaccounts" />SubAccounts|POST|Adds the subaccount to the specified account. You can think of subaccounts as hotel campaigns. Use subaccounts to logically organize your hotel ad campaigns. You may have up to 1,000 active hotel campaigns per account.<br /><br />**NOTE**: For the Alpha release, an account may have one subaccount only.<br /><br />**Request body**: Contains the [SubAccount](#subaccount) to add.<br /><br />**Response body**: If successful, contains an [AddResponse](#addresponse) object. The `value` field contains the ID of the added hotel campaign.
 |<a name="getsubaccount" />SubAccounts('{subAccountId}')|GET|Gets the specified subaccount.<br /><br />**Response body**: Contains a [SubAccount](#subaccount) object.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to get.</li></ul>
-|<a name="updatesubaccount" />SubAccounts('{subAccountId}')|PATCH|Updates the subaccount.<br /><br />**Request body**: Contains a [SubAccount](#subaccount) object that specifies only those field to update.<br /><br />**Response body**: None. If successful, returns HTTP status code 204.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to update.</li></ul>
+|<a name="updatesubaccount" />SubAccounts('{subAccountId}')|PATCH|Updates the subaccount.<br /><br />**Request body**: Contains a [SubAccount](#subaccount) object that specifies only those fields to update.<br /><br />**Response body**: None. If successful, returns HTTP status code 204.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to update.</li></ul>
 |<a name="listhotelgroups" />SubAccounts('{subAccountId}')/HotelGroups|GET|Gets the list of hotel groups in the specified subaccount.<br /><br />**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [HotelGroup](#hotelgroup) objects.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the hotel groups to get.</li></ul>
 |<a name="addhotelgroup" />SubAccounts('{subAccountId}')/HotelGroups|POST|Adds the hotel group to the specified subaccount. Use hotel groups to create logical groupings of hotel ads. You may create up to 1,000 active hotel groups per subaccount.<br /><br />**Request body**: Contains the [HotelGroup](#hotelgroup) to add to the subaccount.<br /><br />**Response body**: If successful, contains an [AddResponse](#addresponse) object. The `value` field contains the ID of the added hotel group.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to add the hotel group to.</li></ul>
 |<a name="gethotelgroup" />SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')|GET|Gets the specified hotel group.<br /><br />**Response body**: Contains a [HotelGroup](#hotelgroup) object.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the hotel group.</li><li>`{hotelGroupId}`&mdash;Set to the ID of the hotel group to get.</li></ul>
@@ -98,7 +99,7 @@ The following are the resource objects used by the API.
 |[AssociationCollection](#associationcollection)|Defines a collection of hotel associations.
 |[Budget](#budget)|Defines the daily budget for hotel ads in a subaccount.
 |[CollectionResponse](#collectionresponse)|Defines a response object for requests that get a list of resources.
-|[CheckinDayOfWeekMultiplier](#checkindayofweekmultiplier)|Defines the amount to adjust the base bid by if the user checks in on one of the specified week days.
+|[CheckinDayOfWeekMultiplier](#checkindayofweekmultiplier)|Defines the amount to adjust the base bid by if the user checks in on one of the specified weekdays.
 |[DateTypeMultiplier](#datetypemultiplier)|Defines the amount to adjust the base bid by if the user searched for hotels using specific dates.
 |[DeviceMultiplier](#devicemultiplier)|Defines the amount to adjust the base bid by if the user is using one of the specified devices to search for hotels.
 |[FixedBid](#fixedbid)|Defines a fixed bid amount.
@@ -107,12 +108,11 @@ The following are the resource objects used by the API.
 |[HotelGroup](#hotelgroup)|Defines a logical grouping of hotel ads.
 |[LengthOfStayMultiplier](#lengthofstaymultiplier)|Defines the amount to adjust the base bid by if the user stays the specified number of nights or longer.
 |[PercentageBid](#percentagebid)|Defines a bid based on the percentage of the hotel room's rate.
-of the specified Bing sites.
 |[SubAccount](#subaccount)|Defines the top-level hotel ads grouping. You can think of this logically as a hotel campaign.
 |[UserCountryMultiplier](#usercountrymultiplier)|Defines the amount to adjust the base bid by if the user accesses one of the Bing domains.
 
 <!--
-|[SiteMultiplier](#sitemultiplier)|Defines the amount to adjust the base bid by if the user is searching for hotels on one 
+|[SiteMultiplier](#sitemultiplier)|Defines the amount to adjust the base bid by if the user is searching for hotels on one of the specified Bing sites.
 -->
 
 
@@ -179,12 +179,12 @@ Defines the daily budget for hotel ads in a subaccount.
 
 ### CheckinDayOfWeekMultiplier
 
-Defines the amount to adjust the base bid by if the user checks in on one of the specified week days.
+Defines the amount to adjust the base bid by if the user checks in on one of the specified weekdays.
 
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|DaysOfWeek|A list of week days. Apply the multiplier if the user is checking on one of the specified days. The following are the possible values.<br /><br /><ul><li>Monday</li><li>Tuesday</li><li>Wednesday</li><li>Thursday</li><li>Friday</li><li>Saturday</li><li>Sunday</li></ul>|String[]|Required|Optional
+|DaysOfWeek|A list of weekdays. Apply the multiplier if the user is checking on one of the specified days. The following are the possible values.<br /><br /><ul><li>Monday</li><li>Tuesday</li><li>Wednesday</li><li>Thursday</li><li>Friday</li><li>Saturday</li><li>Sunday</li></ul>|String[]|Required|Optional
 |Factor|The percentage amount to adjust the base bid by. The valid range is 0.0 through 10.0, with a precision of two decimal places. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.CheckinDayOfWeekMultiplier".|String|Required|Required
 
@@ -237,7 +237,7 @@ Defines a hotel ad.
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Bid|The base bid. Bing uses this bid in the auction unless you specify one or more multipliers (see `BidMultipliers`). If you don't specify a bid, the hotel inherits the bid from the hotel group or subaccount, in that order. When getting a hotel, if the hotel doesn't specify a bid, this field contains the inherited bid.<br /><br />Setting the bid to 0 pauses the hotel (see `Status`).<br /><br />The following are the types of bids that you may specify.<ul><li>[FixedBid](#fixedbid)</li><li>[PercentageBid](#percentagebid)</li></ul>|object|N/A|Optional
+|Bid|The base bid. Bing uses this bid in the auction unless you specify one or more multipliers (see `BidMultipliers`). If you don't specify a bid, the hotel inherits the bid from the hotel group or subaccount, in that order. When getting a hotel, if the hotel doesn't specify a bid, this field contains the inherited bid.<br /><br />Setting the bid to 0 prevents the hotel from serving.<br /><br />The following are the types of bids that you may specify.<ul><li>[FixedBid](#fixedbid)</li><li>[PercentageBid](#percentagebid)</li></ul>|object|N/A|Optional
 |BidMultipliers|A list of multipliers to apply to the base bid. Bing applies the multipliers to the base bid and uses the adjusted bid in the auction. If the hotel does not specify a bid, the multipliers adjust the inherited bid.<br /><br />If you don't specify multipliers, the hotel inherits them from the hotel group or subaccount, in that order. When getting a hotel, if the hotel doesn't specify multipliers, this field contains the inherited multipliers.<br /><br />The following are the types of multipliers that you may specify.<ul><li>[AdvanceBookingWindowMultiplier](#advancebookingwindowmultiplier)</li><li>[CheckinDayOfWeekMultiplier](#checkindayofweekmultiplier)</li><li>[DateTypeMultiplier](#datetypemultiplier)</li><li>[DeviceMultiplier](#devicemultiplier)</li><li>[LengthOfStayMultiplier](#lengthofstaymultiplier)</li><!--<li>[SiteMultiplier](#sitemultiplier)</li>--><li>[UserCountryMultiplier](#usercountrymultiplier)</li></ul>|object[]|N/A|Optional
 |BidMultiplierSource|The source of the bid multipliers. The following are the possible values.<ul><li>SubAccount</li><li>HotelGroup</li><li>Hotel</li></ul>For example, if the hotel and hotel group didn't specify multipliers, the hotel inherits the multipliers from the subaccount. In this case, this field is set to SubAccount.|String|N/A|Read-only
 |BidSource|The source of the bid. The following are the possible values.<ul><li>SubAccount</li><li>HotelGroup</li><li>Hotel</li></ul>For example, if the hotel specifies a bid, this field is set to Hotel.|String|N/A|Read-only
@@ -245,7 +245,7 @@ Defines a hotel ad.
 |Id|A system-generated ID that uniquely identifies the hotel.|String|N/A|Required
 |Name|The name of the hotel. The name is the same name you specified in your hotel feed file.|String|N/A|Read-only
 |PartnerHotelId|The ID that you used to identify the hotel in the hotel feeds file.|String|N/A|Read-only
-|Status|The status of the hotel. The following are the possible values.<ul><li>Active&mdash;The hotel is active. The hotel may participate in auctions if it is associated with an active hotel group and subaccount.</li><li>Paused&mdash;The hotel ad is paused. The hotel ad will not participate in auctions until the owner activates it again.</li><li>Deleted&mdash;The user deleted the hotel. Users may delete hotels by using the UI only.</li></ul>By default, hotels are active. To pause an active hotel ad, set the `Bid` field to 0. To resume a paused hotel ad, set the `Bid` field to a non-zero value.<br /><br />If a hotel ad is not serving, it may be because the hotel group it's associated with or the subaccount is not active.|String|N/A|Read-only
+|Status|The status of the hotel entity. The following are the possible values.<ul><li>Active&mdash;The hotel is not deleted and may be updated.</li><li>Deleted&mdash;The user deleted the hotel. Users may delete hotels by using the UI only.</li></ul>|String|N/A|Read-only
 
 
 ### HotelAssociation
@@ -268,14 +268,14 @@ Defines a logical grouping of hotels.
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Bid|The base bid that hotels in the group inherit if they don't specify a bid. For usage, see `Bid` in the [Hotel](#hotel) object.<br /><br /> If you don't specify a bid, the group inherits the bid from the subaccount. When getting a hotel group, if the group doesn't specify a bid, this field contains the inherited bid.<br /><br />Setting the bid to zero (0) pauses the hotel group and any hotels associated with the group (see `Status`).<br /><br />The following are the types of bids that you may specify.<ul><li>[FixedBid](#fixedbid)</li><li>[PercentageBid](#percentagebid)</li></ul>|object|Optional|Optional
+|Bid|The base bid that hotels in the group inherit if they don't specify a bid. For usage, see `Bid` in the [Hotel](#hotel) object.<br /><br /> If you don't specify a bid, the group inherits the bid from the subaccount. When getting a hotel group, if the group doesn't specify a bid, this field contains the inherited bid.<br /><br />Setting the bid to zero (0) prevents hotels in the group from serving.<br /><br />The following are the types of bids that you may specify.<ul><li>[FixedBid](#fixedbid)</li><li>[PercentageBid](#percentagebid)</li></ul>|object|Optional|Optional
 |BidMultipliers|A list of multipliers that hotels in the group inherit if they don't specify multipliers. For usage, see `BidMultipliers` in the [Hotel](#hotel) object.<br /><br /> If you don't specify multipliers, the group inherits them from the subaccount.<br /><br />The following are the types of multipliers that you may specify.<ul><li>[AdvanceBookingWindowMultiplier](#advancebookingwindowmultiplier)</li><li>[CheckinDayOfWeekMultiplier](#checkindayofweekmultiplier)</li><li>[DateTypeMultiplier](#datetypemultiplier)</li><li>[DeviceMultiplier](#devicemultiplier)</li><li>[LengthOfStayMultiplier](#lengthofstaymultiplier)</li><!--<li>[SiteMultiplier](#sitemultiplier)</li>--><li>[UserCountryMultiplier](#usercountrymultiplier)</li></ul>|object[]|Optional|Optional
 |BidMultiplierSource|The source of the bid multipliers. The following are the possible values. <ul><li>SubAccount</li><li>HotelGroup</li></ul>For example, if the hotel group didn't specify multipliers, the hotel group inherits the multipliers from the subaccount. In this case, this field is set to SubAccount.|String|Read-only|Read-only
 |BidSource|The source of the bid. The following are the possible values. <ul><li>SubAccount</li><li>HotelGroup</li></ul>For example, if the hotel group specifies multipliers, this field is set to HotelGroup.|String|Read-only|Read-only
 |HotelAssociationCount|The number of hotels associated with hotel groups in the subaccount.|Unsigned Integer|Read-only|Read-only
 |Id|A system-generated ID that uniquely identifies the group.|String|Read-only|Required
 |Name|The name of the group. The name may contain a maximum of 256 characters.|String|Required|Read-only
-|Status|The status of the hotel group. The following are the possible values.<ul><li>Active&mdash;The hotel group is active. Hotels in the group may actively participate in auctions.</li><li>Paused&mdash;The hotel group is paused. Hotels in the group will not participate in auctions until the owner activates the group again.</li><li>Deleted&mdash;The user deleted the hotel group. Users may delete hotel groups by using the UI only.</li></ul>By default, when you create a hotel group, it is active. To pause an active hotel group, set the `Bid` field to 0. To resume a paused hotel group, set the `Bid` field to a non-zero value.<br /><br />If hotels in the hotel group are not serving, it may be because the subaccount that the hotel group belongs to is not active.|String|Read-only|Read-only
+|Status|The status of the hotel group entity. The following are the possible values.<ul><li>Active&mdash;The hotel group is not deleted and may be updated.</li><li>Deleted&mdash;The user deleted the hotel group. Users may delete hotel groups by using the UI only.</li></ul>|String|Read-only|Read-only
 
 
 ### LengthOfStayMultiplier
@@ -328,14 +328,14 @@ Defines the top-level hotel ads grouping. You can think of this logically as a h
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Bid|The base bid that hotels inherit if they, or the group they belong to, don't specify a bid. For usage, see `Bid` in the [Hotel](#hotel) object.<br /><br />Setting the bid to 0 will pause the subaccount (see `Status`). Pausing the subaccount also pauses the subaccount's hotel groups and hotels.<br /><br />The following are the types of bids that you may specify.<ul><li>[FixedBid](#fixedbid)</li><li>[PercentageBid](#percentagebid)</li></ul>|object|Required|Optional
+|Bid|The base bid that hotels inherit if they, or the group they belong to, don't specify a bid. For usage, see `Bid` in the [Hotel](#hotel) object.<br /><br />Setting the bid to 0 prevents hotels in the subaccount from serving.<br /><br />The following are the types of bids that you may specify.<ul><li>[FixedBid](#fixedbid)</li><li>[PercentageBid](#percentagebid)</li></ul>|object|Required|Optional
 |BidMultipliers|A list of multipliers that hotels inherit if they, or the group they belong to, don't specify multipliers. For usage, see `BidMultipliers` in the [Hotel](#hotel) object.<br /><br />The following are the types of multipliers that you may specify.<ul><li>[AdvanceBookingWindowMultiplier](#advancebookingwindowmultiplier)</li><li>[CheckinDayOfWeekMultiplier](#checkindayofweekmultiplier)</li><li>[DateTypeMultiplier](#datetypemultiplier)</li><li>[DeviceMultiplier](#devicemultiplier)</li><li>[LengthOfStayMultiplier](#lengthofstaymultiplier)</li><!--<li>[SiteMultiplier](#sitemultiplier)</li>--><li>[UserCountryMultiplier](#usercountrymultiplier)</li></ul>|object[]|Optional|Optional
-|DailyBudget|The daily budget to spread through-out the day.<br /><br />Setting the budget to 0 will pause the subaccount (see `Status`). Pausing the subaccount also pauses the subaccount's hotel groups and hotels.|[Budget](#budget)|Required|Optional
+|DailyBudget|The daily budget to spread through-out the day.<br /><br />Setting the budget to 0 prevents hotels in the subaccount from serving.|[Budget](#budget)|Required|Optional
 |HotelAssociationCount|The number of hotels associated with hotel groups in the subaccount.|Unsigned Integer|Read-only|Read-only
 |Id|A system-generated ID that uniquely identifies the subaccount.|String|Read-only|Required
 |MaximumBid|The not-to-exceed bid amount.|[FixedBid](#fixedbid)|Optional|Optional
 |Name|The name of the subaccount. The name may contain a maximum of 128 characters.|String|Required|Read-only
-|Status|The status of the subaccount. The following are the possible values.<ul><li>Active&mdash;The sub account is active. Hotels in the subaccount may actively participate in auctions.</li><li>Paused&mdash;The subaccount is paused. Hotels in the subaccount will not participate in auctions until the owner activates the subaccount again.</li><li>Deleted&mdash;The user deleted the subaccount. Users may delete subaccounts by using the UI only.</li></ul>By default, when you create a subaccount, it is active. To pause an active subaccount, set the `Bid` or `Budget` field to 0. To resume a paused subaccount, set the `Bid` and `Budget` fields to a non-zero value.|String|Read-only|Read-only
+|Status|The status of the subaccount entity. The following are the possible values.<ul><li>Active&mdash;The sub account is not deleted and may be updated.</li><li>Deleted&mdash;The user deleted the subaccount. Users may delete subaccounts by using the UI only.</li></ul>|String|Read-only|Read-only
 
 
 ### UserCountryMultiplier
