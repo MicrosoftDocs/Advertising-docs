@@ -12,7 +12,7 @@ ms.author: "scottwhi"
 
 <a name="doyouhavecredentials"/> 
 ## Do you have your Bing Ads credentials?
-To use the Hotel API, you must have a Bing Ads account and a Microsoft account. To get a Bing Ads account, go to [http://bingads.microsoft.com](http://bingads.microsoft.com). If you're not signed in to your Microsoft account, you'll be redirected to sign in to your Microsoft account or sign up for a Microsoft account. After signing in, you'll have the option to **Sign up for a new Bing Ads account**. Select the sign up option and continue with the sign up process.
+To use the Hotel API, you must have a Bing Ads account and a Microsoft account. To get a Bing Ads account, go to [http://bingads.microsoft.com](http://bingads.microsoft.com). If you're not signed in to your Microsoft account, you'll be redirected to sign in to your Microsoft account or sign up for a Microsoft account. After signing in, you'll have the option to **Sign up for a new Bing Ads account**. Select the sign-up option and continue with the sign-up process.
 
 Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. The API ignores it if you include it.
 

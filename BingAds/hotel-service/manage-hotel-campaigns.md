@@ -89,7 +89,7 @@ The subaccount specifies the default bid and bid multipliers to use for hotel gr
 
 For details about the valid bid range and budget for your market, see the Currency Value table in the [Currencies](../guides/currencies.md) topic.
 
-To pause a subaccount, set the `Bid` or `Budget` property to zero (0.0). All hotels in the paused subaccount will not serve. To activate the subaccount, set `Bid` and `Budget` to a value greater than zero.  
+To prevent hotels in the subaccount from serving, set the `Bid` or `Budget` property to zero (0.0). 
 
 To update a subaccount, send a PATCH request. The body of the request is a [SubAccount](../hotel-service/reference.md#subaccount) object. Include only the properties that you want to update. This example shows updating multipliers.
 
@@ -154,7 +154,7 @@ Accept: application/json
 Host: <host>
 ```
 
-The response contains a contains a [SubAccount](../hotel-service/reference.md#subaccount) object.
+The response contains a [SubAccount](../hotel-service/reference.md#subaccount) object.
 
 ```
 HTTP/1.1 200 OK
@@ -324,9 +324,10 @@ The hotel group specifies the default bid and bid multipliers to use for hotels 
 
 For details about the valid bid range and budget for your market, see the Currency Value table in the [Currencies](../guides/currencies.md) topic.
 
-If the subaccount specifies the a maximum bid, the hotel group's bid must be less than the subaccount's maximum bid.
+If the subaccount specifies a maximum bid, the hotel group's bid must be less than the subaccount's maximum bid.
 
-To pause a hotel group, set the `Bid` property to zero (0.0). All hotels in the paused hotel group will not serve. To activate the hotel group, set `Bid` to a value greater than zero.  
+To prevent hotels in a hotel group from serving, set the `Bid` property to zero (0.0). If the `Bid` property to greater than zero but the hotels in the group are not serving, it may be because the `Bid` or `Budget` property of the subaccount that the group belongs to is zero. 
+
 
 To update a hotel group, send a PATCH request. The body of the request is a [HotelGroup](../hotel-service/reference.md#hotelgroup) object. Include only the properties that you want to update. This example shows updating the bid and multipliers.
 
@@ -538,9 +539,10 @@ The hotel specifies the bid and bid multipliers to use for hotel ads. The hotel 
 
 For details about the valid bid range for your market, see the Currency Value table in the [Currencies](../guides/currencies.md) topic.
 
-If the subaccount specifies the a maximum bid, the hotel's bid must be less than the subaccount's maximum bid.
+If the subaccount specifies a maximum bid, the hotel's bid must be less than the subaccount's maximum bid.
 
-To pause a hotel, set the `Bid` property to zero (0.0). Paused hotels will not serve. To activate the hotel, set `Bid` to a value greater than zero. A hotel will also not serve if the hotel group or subaccount that it belongs to is paused. 
+To prevent a hotel from serving, set the `Bid` property to zero (0.0). If the `Bid` property to greater than zero but the hotel is not serving, it may be because the `Bid` property of the hotel group or subaccount that it belongs to is zero. 
+
 
 To update a hotel, send a PATCH request. The body of the request is a [Hotel](../hotel-service/reference.md#hotel) object. Include only the properties that you want to update. This example shows updating the multipliers.
 
