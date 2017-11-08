@@ -1,0 +1,24 @@
+{
+    "redirections": [
+        {
+            "source_path": "BingAds/shopping-content/code-example-get-product-offer.md",
+            "redirect_url": "code-example-manage-products",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/shopping-content/code-example-insert-product-offer.md",
+            "redirect_url": "code-example-manage-products",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/shopping-content/code-example-get-list-product-offer.md",
+            "redirect_url": "code-example-manage-products",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/shopping-content/code-example-delete-product-offer.md",
+            "redirect_url": "code-example-manage-products",
+            "redirect_document_id": false
+        }
+    ]
+}

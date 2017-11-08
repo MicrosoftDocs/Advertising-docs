@@ -19,17 +19,8 @@ This section provides code examples that show how to use the resources available
 ### <a name="batch"></a>
 [Creating a Batch Request](../shopping-content/code-example-create-batch-request.md)  
 
-### <a name="delete"></a>
-[Deleting a Product Offer](../shopping-content/code-example-delete-product-offer.md)  
-
-### <a name="list"></a>
-[Getting a List of Product Offers](../shopping-content/code-example-get-list-product-offers.md)  
-
-### <a name="get"></a>
-[Getting a Product Offer](../shopping-content/code-example-get-product-offer.md)  
-
-### <a name="insert"></a>
-[Inserting a Product Offer](../shopping-content/code-example-insert-product-offer.md)  
+### <a name="products"></a>
+[Managing Products](../shopping-content/code-example-manage-products.md)
 
 ## Catalog status resource code examples
 
