@@ -16,9 +16,9 @@ For information about changes that were included with each release, see the foll
 
 ### Nonbreaking changes
 
-- Added the production endpoint (see [Endpoints](hotel-service/reference.md#endpoints)).  
+- Added the production endpoint (see [Endpoints](../hotel-service/reference.md#endpoints)).  
   
-- Fixed documentation error: Removed Paused as a possible value from the `Status` field of [Hotel](hotel-service/reference.md#hotel), [HotelGroup](hotel-service/reference.md#hotelgroup), and [Subaccount](hotel-service/reference.md#subaccount). 
+- Fixed documentation error: Removed Paused as a possible value from the `Status` field of [Hotel](../hotel-service/reference.md#hotel), [HotelGroup](../hotel-service/reference.md#hotelgroup), and [Subaccount](../hotel-service/reference.md#subaccount). 
 
 ## October 15, 2017
 
