@@ -24,14 +24,8 @@
     href: ../shopping-content/code-example-authentication-oauth.md
   - name: Creating a Batch Request
     href: ../shopping-content/code-example-create-batch-request.md
-  - name: Getting a List of Product Offers
-    href: ../shopping-content/code-example-get-list-product-offers.md
-  - name: Inserting a Product Offer
-    href: ../shopping-content/code-example-insert-product-offer.md
-  - name: Getting a Product Offer
-    href: ../shopping-content/code-example-get-product-offer.md
-  - name: Deleting a Product Offer
-    href: ../shopping-content/code-example-delete-product-offer.md
+  - name: Managing Products
+    href: ../shopping-content/code-example-manage-products.md
   - name: Managing Catalogs
     href: ../shopping-content/code-example-manage-catalogs.md
   - name: Downloading a Catalog Status Report
