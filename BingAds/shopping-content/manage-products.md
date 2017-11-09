@@ -44,7 +44,7 @@ Send an HTTP GET request to the resulting URL. If the product was found, the res
 
 If you inserted a product with the same ID in multiple catalogs, the service will return only one of them, and which one is undetermined. You should not insert a product with the same product ID into multiple catalogs.
 
-For a code example that shows how to get a product offer, see [Getting a Product Offer](../shopping-content/code-example-manage-products.md).
+For a code example that shows how to get a product offer, see [Managing Products Code Example](../shopping-content/code-example-manage-products.md).
 
 
 ## <a name="list"></a> Getting a list of product offers from the store
@@ -65,7 +65,7 @@ If there are more offers available, the response will include the `nextPageToken
 
 `https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/{bmcMerchantId}/products?max-results=250&start-token=DFSos893j...`
 
-For a code example that shows how to get a list of product offers, see [Getting a List of Product Offers](../shopping-content/code-example-manage-products.md).
+For a code example that shows how to get a list of product offers, see [Managing Products Code Example](../shopping-content/code-example-manage-products.md).
 
 
 ## <a name="delete"></a> Deleting an offer from the store
@@ -80,7 +80,7 @@ Send an HTTP DELETE request to the resulting URL. If the product was found, it w
 
 If you inserted a product with the same product ID in multiple catalogs, the service will delete all of them. You should not insert a product with the same product ID into multiple catalogs.
 
-For a code example that shows how to delete a product offer, see [Deleting a Product Offer](../shopping-content/code-example-manage-products.md).
+For a code example that shows how to delete a product offer, see [Managing Products Code Example](../shopping-content/code-example-manage-products.md).
 
 ## <a name="insert"></a> Adding and updating a product offer
 
@@ -147,7 +147,7 @@ An offer that is displayed in a product ad  will include the price, title, store
 
 For apparel products that are available in multiple colors, patterns or materials, create a product for each variant and use the [itemGroupId](../shopping-content/products-resource.md#itemgroupid) field to group all product variants.
 
-For a code example that shows how to insert a product offer, see [Inserting a Product Offer](../shopping-content/code-example-manage-products.md).
+For a code example that shows how to insert a product offer, see [Managing Products Code Example](../shopping-content/code-example-manage-products.md).
 
 
 ## <a name="batch" /> Using batch processing
