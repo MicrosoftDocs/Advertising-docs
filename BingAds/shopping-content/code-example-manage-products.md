@@ -808,69 +808,150 @@ namespace Products
 ```java
 package com.microsoft.contentapi.examples;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.io.*;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
-import java.net.URL;
+import java.lang.reflect.*;
+import java.net.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+import javafx.application.Application;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebEvent;
+import javafx.scene.web.WebView;
+import javafx.stage.Stage;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.microsoft.bingads.*;
 import com.microsoft.contentapi.examples.datatransferobjects.*;
 
-public class ManageProductsExample {
+public class ManageProductsExample extends Application {
+
+    private boolean alreadyHaveRedirect = false;
+
     private static String BaseUri = "https://content.api.bingads.microsoft.com/shopping/v9.1";
     private static String BmcUri = BaseUri + "/bmc/%s";
-    private static String ClientState = "ClientStateGoesHere";
 
     private static String ClientId = "<CLIENTIDGOESHERE>";
     private static String DeveloperToken = "<DEVELOPERTOKENGOESHERE>";
     private static String MerchantId = "<STOREIDGOESHERE>";
 
-    private static String authenticationToken = "<AUTHENTICATIONTOKENGOESHERE>";
+    private static String authenticationToken;
 
-    public static void main(String args[]) throws Exception {
-        try{
-            // Get the default catalog
-            Catalog defaultCatalog = retrieveDefaultCatalog();
+    @Override
+    public void start(Stage primaryStage) {
 
-            // Add a product to catalog
-            Product testProduct = createTestProduct("My Test Product %s");
-            // if catalog id is not specified the product will be added to the default catalog, here we are specifying the default explicitly
-            Product addedProduct = AddProduct(defaultCatalog.getId(), testProduct);
-            System.out.println("*** Added product to catalog (catalog.Id=" + defaultCatalog.getId() + ", product.Id=" + addedProduct.getId() + ")***");
-            Print(addedProduct);
-            System.out.println("*** / End of added product (catalog.Id=" + defaultCatalog.getId() + ", product.Id=" + addedProduct.getId() + ")***");
-            System.out.println();
+        // Create an instance of OAuthDesktopMobileAuthCodeGrant that will be used to manage Microsoft Account user authorization. 
+        // Replace ClientId with the value configured when you registered your application. OAuthDesktopMobileAuthCodeGrant is
+    	// included in the BingAds Java Sdk
+        final OAuthDesktopMobileAuthCodeGrant oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(ClientId);
 
-            // Retrieve a product by id
-            Product retrievedProduct = GetProduct(addedProduct.getId());
-            System.out.println("*** Retrieved product (product.Id=" + retrievedProduct.getId() + ")***");
-            Print(retrievedProduct);
-            System.out.println("*** / End retreived product (product.Id=" + retrievedProduct.getId() + ")***");
-            System.out.println();
+        oAuthDesktopMobileAuthCodeGrant.setNewTokensListener(new NewOAuthTokensReceivedListener() {
+            @Override
+            public void onNewOAuthTokensReceived(OAuthTokens newTokens) {
+                   java.lang.String newAccessToken = newTokens.getAccessToken();
+                   java.lang.String newRefreshToken = newTokens.getRefreshToken();
+                   java.lang.String refreshTime = new java.text.SimpleDateFormat(
+                           "MM/dd/yyyy HH:mm:ss").format(new java.util.Date());
 
-            // List products
-            System.out.println("*** Listing products ***");
-            for (Product product : ListProducts())
-            {
-                Print(product);
+                   System.out.printf("Token refresh time: %s\n", refreshTime);
+                   System.out.printf("New access token: %s\n", newAccessToken);
+                   System.out.printf("You should securely store this new refresh token: %s\n", newRefreshToken);
+
             }
-            System.out.println("*** / End of listing products ***");
-            System.out.println();
+        });
 
-            // Delete product
-            System.out.println("*** Deleting Product (" + addedProduct.getId() + ") ***");
-            DeleteProduct(addedProduct.getId());
-            System.out.println("*** / Deleting Product Done (" + addedProduct.getId() + ") ***");
-        }catch(Exception ex) {
-            System.out.println(ex.getMessage());
-        }
+        // WebView is a Node that manages a WebEngine and displays its content. 
+        // For more information, see javafx.scene.web at https://docs.oracle.com/javafx/2/api/javafx/scene/web/WebView.html
+        WebView webView = new WebView();       
+
+        webView.getEngine().setOnStatusChanged(new EventHandler<WebEvent<String>>() {
+
+            // You may need to override the handle method depending on your project and JRE settings
+            // @Override 
+            public void handle(WebEvent<String> event) {
+                if (event.getSource() instanceof WebEngine) {
+                    try {
+                        WebEngine webEngine = (WebEngine) event.getSource();
+                        String webEngineLocation = webEngine.getLocation();
+                        URL url = new URL(webEngineLocation); 
+
+                        System.out.println(url);
+
+                        if (url.getPath().equals("/oauth20_desktop.srf")) {
+                            if (alreadyHaveRedirect) {
+                                return;
+                            }
+
+                            alreadyHaveRedirect = true;
+
+                            // To get the initial access and refresh tokens you must call requestAccessAndRefreshTokens with the authorization redirection URL. 
+
+                            OAuthTokens tokens = oAuthDesktopMobileAuthCodeGrant.requestAccessAndRefreshTokens(url);
+                            authenticationToken = tokens.getAccessToken();
+                            
+                            // Get the default catalog
+                            Catalog defaultCatalog = retrieveDefaultCatalog();
+
+                            // Add a product to catalog
+                            Product testProduct = createTestProduct("My Test Product %s");
+                            // if catalog id is not specified the product will be added to the default catalog, here we are specifying the default explicitly
+                            Product addedProduct = AddProduct(defaultCatalog.getId(), testProduct);
+                            System.out.println("*** Added product to catalog (catalog.Id=" + defaultCatalog.getId() + ", product.Id=" + addedProduct.getId() + ")***");
+                            Print(addedProduct);
+                            System.out.println("*** / End of added product (catalog.Id=" + defaultCatalog.getId() + ", product.Id=" + addedProduct.getId() + ")***");
+                            System.out.println();
+
+                            // Retrieve a product by id
+                            Product retrievedProduct = GetProduct(addedProduct.getId());
+                            System.out.println("*** Retrieved product (product.Id=" + retrievedProduct.getId() + ")***");
+                            Print(retrievedProduct);
+                            System.out.println("*** / End retreived product (product.Id=" + retrievedProduct.getId() + ")***");
+                            System.out.println();
+
+                            // List products
+                            System.out.println("*** Listing products ***");
+                            for (Product product : ListProducts())
+                            {
+                                Print(product);
+                            }
+                            System.out.println("*** / End of listing products ***");
+                            System.out.println();
+
+                            // Delete product
+                            System.out.println("*** Deleting Product (" + addedProduct.getId() + ") ***");
+                            DeleteProduct(addedProduct.getId());
+                            System.out.println("*** / Deleting Product Done (" + addedProduct.getId() + ") ***");                            
+                        }
+                    } catch (Exception ex) {
+                    	System.out.println("Error encountered: ");
+                        System.out.println(ex.getMessage());
+                        ex.printStackTrace();
+                    }
+                }
+            }
+        });
+
+        // Request user consent by connecting to the Microsoft Account authorization endpoint through a web browser. 
+
+        URL authorizationEndpoint = oAuthDesktopMobileAuthCodeGrant.getAuthorizationEndpoint();
+
+        webView.getEngine().load(authorizationEndpoint.toString());
+
+        // The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application
+        // to manage their Bing Ads accounts. The authorization service calls back to your application with the redirection URI, which 
+        // includes an authorization code if the user authorized your application to manage their Bing Ads accounts. 
+        // For example the callback URI includes an access token as follows if the user granted permissions for your application to manage 
+        // their Bing Ads accounts: https://login.live.com/oauth20_desktop.srf?code=Access-Code-Provided-Here&lc=1033. 
+
+        Scene scene = new Scene(webView, 800, 600);
+
+        primaryStage.setTitle("Content API Manage Products example");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
+
 
     public static Catalog retrieveDefaultCatalog() throws IOException {
         List<Catalog> catalogs = ListCatalogs();
@@ -918,7 +999,6 @@ public class ManageProductsExample {
         String url = String.format(AddProductUri + AddProductQueryString, MerchantId, catalogId);
         return Request("POST", url, product, Product.class);
     }
-
     // Get
     public static String GetUri = BmcUri + "/products/%s";
     public static String GetQueryString = "?alt=json";
@@ -933,8 +1013,7 @@ public class ManageProductsExample {
     public static void DeleteProduct(String productId) throws Exception {
         String url = String.format(DeletetUri + DeleteQueryString, MerchantId, productId);
         ContentError contentError = Request("DELETE", url, null, ContentError.class);
-        if (contentError != null)
-        {
+        if (contentError != null){
             ErrorCollection error = contentError.getError();
             throw new Exception(error.toString());
         }
@@ -969,7 +1048,7 @@ public class ManageProductsExample {
     }
 
     /***
-     * Use reflection to output the gettable properties of the
+     * Use reflection to output the properties of the
      * specified value
      * @param value
      * @throws InvocationTargetException
@@ -1065,6 +1144,11 @@ public class ManageProductsExample {
         }
 
         return result;
+    }
+
+    // Launch the application
+    public static void main(String[] args) {
+        launch(args);
     }
 }
 
