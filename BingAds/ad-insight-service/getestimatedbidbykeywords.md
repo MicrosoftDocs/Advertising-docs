@@ -145,8 +145,8 @@ public async Task<GetEstimatedBidByKeywordsResponse> GetEstimatedBidByKeywordsAs
 	string language,
 	IList<string> publisherCountries,
 	Currency? currency,
-	long campaignId,
-	long adGroupId,
+	long? campaignId,
+	long? adGroupId,
 	string entityLevelBid)
 {
 	var request = new GetEstimatedBidByKeywordsRequest

@@ -120,7 +120,7 @@ public async Task<DownloadCampaignsByAccountIdsResponse> DownloadCampaignsByAcco
 	IList<DownloadEntity> downloadEntities,
 	DownloadFileType? downloadFileType,
 	string formatVersion,
-	DateTime lastSyncTimeInUTC,
+	DateTime? lastSyncTimeInUTC,
 	PerformanceStatsDateRange performanceStatsDateRange)
 {
 	var request = new DownloadCampaignsByAccountIdsRequest

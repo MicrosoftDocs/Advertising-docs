@@ -123,7 +123,7 @@ public async Task<DownloadCampaignsByCampaignIdsResponse> DownloadCampaignsByCam
 	IList<DownloadEntity> downloadEntities,
 	DownloadFileType? downloadFileType,
 	string formatVersion,
-	DateTime lastSyncTimeInUTC,
+	DateTime? lastSyncTimeInUTC,
 	PerformanceStatsDateRange performanceStatsDateRange)
 {
 	var request = new DownloadCampaignsByCampaignIdsRequest

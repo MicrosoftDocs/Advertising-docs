@@ -96,9 +96,9 @@ The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md
 public async Task<SuggestKeywordsForUrlResponse> SuggestKeywordsForUrlAsync(
 	string url,
 	string language,
-	int maxKeywords,
-	double minConfidenceScore,
-	bool excludeBrand)
+	int? maxKeywords,
+	double? minConfidenceScore,
+	bool? excludeBrand)
 {
 	var request = new SuggestKeywordsForUrlRequest
 	{

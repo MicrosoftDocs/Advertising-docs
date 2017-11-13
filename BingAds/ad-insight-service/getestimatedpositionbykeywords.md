@@ -129,8 +129,8 @@ public async Task<GetEstimatedPositionByKeywordsResponse> GetEstimatedPositionBy
 	IList<string> publisherCountries,
 	Currency? currency,
 	IList<MatchType> matchTypes,
-	long campaignId,
-	long adGroupId)
+	long? campaignId,
+	long? adGroupId)
 {
 	var request = new GetEstimatedPositionByKeywordsRequest
 	{

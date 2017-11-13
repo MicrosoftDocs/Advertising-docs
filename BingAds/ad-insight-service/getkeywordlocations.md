@@ -112,9 +112,9 @@ public async Task<GetKeywordLocationsResponse> GetKeywordLocationsAsync(
 	string language,
 	string publisherCountry,
 	IList<string> device,
-	int level,
+	int? level,
 	string parentCountry,
-	int maxLocations)
+	int? maxLocations)
 {
 	var request = new GetKeywordLocationsRequest
 	{
