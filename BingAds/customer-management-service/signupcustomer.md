@@ -180,7 +180,7 @@ The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md
 public async Task<SignupCustomerResponse> SignupCustomerAsync(
 	Customer customer,
 	Account account,
-	long parentCustomerId,
+	long? parentCustomerId,
 	ApplicationType applicationScope)
 {
 	var request = new SignupCustomerRequest

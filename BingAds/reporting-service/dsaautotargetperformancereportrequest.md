@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a DSA auto target performance report request.
 ---
 # DSAAutoTargetPerformanceReportRequest Data Object - Reporting
-Defines a DSA auto target performance report request. 
+Defines a DSA auto target performance report request. Use this report to understand how your dynamic ad targets are performing and where bid adjustments may be useful.
 
 You can request impressions, clicks, click-through rate, and average position for the dynamic ad targets that have triggered your ads. 
 

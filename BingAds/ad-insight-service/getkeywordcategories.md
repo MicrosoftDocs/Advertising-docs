@@ -102,7 +102,7 @@ public async Task<GetKeywordCategoriesResponse> GetKeywordCategoriesAsync(
 	IList<string> keywords,
 	string language,
 	string publisherCountry,
-	int maxCategories)
+	int? maxCategories)
 {
 	var request = new GetKeywordCategoriesRequest
 	{

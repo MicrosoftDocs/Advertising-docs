@@ -458,10 +458,7 @@ The following validation rules apply to tracking templates. For more details abo
 **Delete:** Read-only  
 
 ## <a name="bidsuggestionsdata"></a>Bid Suggestions Data Fields in the Bulk File
-If the requested download [DataScope Value Set](../bulk-service/datascope.md) includes *BidSuggestionsData*, the download file will also include the following record types for each corresponding keyword.
-* [Keyword Best Position Bid](../bulk-service/keyword-best-position-bid.md)
-* [Keyword Main Line Bid](../bulk-service/keyword-main-line-bid.md)
-* [Keyword First Page Bid](../bulk-service/keyword-first-page-bid.md)
+If the requested download [DataScope Value Set](../bulk-service/datascope.md) includes *BidSuggestionsData*, the download file can also contain the [Keyword Best Position Bid](../bulk-service/keyword-best-position-bid.md), [Keyword Main Line Bid](../bulk-service/keyword-main-line-bid.md), and [Keyword First Page Bid](../bulk-service/keyword-first-page-bid.md) records corresponding to each downloaded keyword. 
 
 ## <a name="entityperformancedata"></a>Performance Data Fields in the Bulk File
 If the [DataScope Value Set](../bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
@@ -471,59 +468,19 @@ If the [DataScope Value Set](../bulk-service/datascope.md) element of the downlo
 |*Spend*|The cost per click (CPC) summed for each click.|
 |*Impressions*|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |*Clicks*|The number of times that the ads in the account were clicked.|
-|*CTR*|The click-through rate (CTR) is the number of times an ad was clicked, divided by the number of times the ad was shown (impressions). For example, if your ads got 50 clicks given 2,348 impressions, your CTR is 2.13 (%).
-
-The formula for calculating CTR is *(Clicks / Impressions) * 100*.|
-|*Avg CPC*|The average cost per click (CPC). The total cost of all clicks on an ad divided by the number of clicks. This is the average amount you're actually charged each time your ad is clicked. For example, if you paid a total of 48.35 for 300 clicks, your average CPC is 0.16.
-
-The formula for calculating the average CPC is *(Spend /Clicks)*.|
-|*Avg CPM*|The average of the cost-per-thousand impressions of the ads.
-
-The value will be 0 (zero) if the corresponding ad groups do not specify the Content ad distribution medium.|
+|*CTR*|The click-through rate (CTR) is the number of times an ad was clicked, divided by the number of times the ad was shown (impressions). For example, if your ads got 50 clicks given 2,348 impressions, your CTR is 2.13 (%).<br/><br/>The formula for calculating CTR is *(Clicks / Impressions) * 100*.|
+|*Avg CPC*|The average cost per click (CPC). The total cost of all clicks on an ad divided by the number of clicks. This is the average amount you're actually charged each time your ad is clicked. For example, if you paid a total of 48.35 for 300 clicks, your average CPC is 0.16.<br/><br/>The formula for calculating the average CPC is *(Spend /Clicks)*.|
+|*Avg CPM*|The average of the cost-per-thousand impressions of the ads.<br/><br/>The value will be 0 (zero) if the corresponding ad groups do not specify the Content ad distribution medium.|
 |*Avg position*|The average position of the ad on a webpage.|
 |*Conversions*|The number of conversions. A conversion is the completion of an action by a customer after viewing your ad. The action could be purchasing your product, registering for your webinar, joining an organization, or whatever you consider your goal and best measure of the ad's success.|
-|*CPA*|The cost per conversion. The formula for calculating the cost per conversion is *(Spend / Conversions)*.
-
-Only ads in campaigns that enable conversion tracking contribute to the conversion number, so unless all campaigns in the account enable conversion tracking, the number will not be accurate.|
+|*CPA*|The cost per conversion. The formula for calculating the cost per conversion is *(Spend / Conversions)*.<br/><br/>Only ads in campaigns that enable conversion tracking contribute to the conversion number, so unless all campaigns in the account enable conversion tracking, the number will not be accurate.|
 
 ## <a name="qualityscore"></a>Quality Score Fields in the Bulk File
 If the [DataScope Value Set](../bulk-service/datascope.md) element of the download request includes *QualityScore*, the download file will also include the following fields in this record.
 
 |Column Header|Description|
 |-----------------|---------------|
-|*Quality Score*|The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Bing Ads using the *KeywordRelevance*, *LandingPageRelevance*, and *LandingPageUserExperience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.
-
-Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for content and syndicated networks do not affect quality score. The value in the report will be blank if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.
-
-**Note**: Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.
-
-If you run the report multiple times in a day, the quality score values could change from report to report based on when you run the report relative to when the scores are calculated.
-
-If you specify a time period that spans multiple days, the quality score is the current and most recently calculated score and will be reported as the same for each day in the time period. Use the historic quality score to find out how quality score may have changed over time. Historical quality score is a daily snapshot of the rolling quality score.  For more information on historic quality score, see the *HistoricQualityScore* column.|
-|*Keyword Relevance*|A numeric score that indicates how likely your ads will be clicked and how well your keyword competes against other keywords targeting the same traffic. This score predicts whether your keyword is likely to lead to a click on your ads, taking into account how well your keyword has performed in the past relative to your ad's position.
-
-*KeywordRelevance* is equivalent to the **Expected Click-Through Rate** label used in the Bing Ads web application.
-
-A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.
-
-If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.
-
-**Note**: Data for this column is typically updated 14-18 hours after the UTC day ends.|
-|*Landing Page Relevance*|A numeric score that indicates how relevant your ad and landing page are to the customer's search query or other input.
-
-*LandingPageRelevance* is equivalent to the **Ad Relevance** label used in the Bing Ads web application.
-
-A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.
-
-If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.
-
-**Note**: Data for this column is typically updated 14-18 hours after the UTC day ends.|
-|*Landing Page User Experience*|A numeric score that indicates whether your landing page is likely to provide a good experience to customers who click your ad and land on your website.
-
-*LandingPageUserExperience* is equivalent to the **Landing Page Experience** label used in the Bing Ads web application.
-
-A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.
-
-If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.
-
-**Note**: Data for this column is typically updated 14-18 hours after the UTC day ends.|
+|*Quality Score*|The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Bing Ads using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.<br/><br/>Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for content and syndicated networks do not affect quality score. The value in the report will be blank if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.<br/><br/>If you run the report multiple times in a day, the quality score values could change from report to report based on when you run the report relative to when the scores are calculated.<br/><br/>If you specify a time period that spans multiple days, the quality score is the current and most recently calculated score and will be reported as the same for each day in the time period. Use the historic quality score to find out how quality score may have changed over time. Historical quality score is a daily snapshot of the rolling quality score. For more information on historic quality score, see the *HistoricQualityScore* column in [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).|
+|*Keyword Relevance*|A numeric score that indicates how likely your ads will be clicked and how well your keyword competes against other keywords targeting the same traffic. This score predicts whether your keyword is likely to lead to a click on your ads, taking into account how well your keyword has performed in the past relative to your ad's position.<br/><br/>*Keyword Relevance* is equivalent to the **Expected Click-Through Rate** label used in the Bing Ads web application.<br/><br/>A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.<br/><br/>If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.<br/><br/>Data for this column is typically updated 14-18 hours after the UTC day ends.|
+|*Landing Page Relevance*|A numeric score that indicates how relevant your ad and landing page are to the customer's search query or other input.<br/><br/>*Landing Page Relevance* is equivalent to the **Ad Relevance** label used in the Bing Ads web application.<br/><br/>A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.<br/><br/>If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.<br/><br/>Data for this column is typically updated 14-18 hours after the UTC day ends.|
+|*Landing Page User Experience*|A numeric score that indicates whether your landing page is likely to provide a good experience to customers who click your ad and land on your website.<br/><br/>*Landing Page User Experience* is equivalent to the **Landing Page Experience** label used in the Bing Ads web application.<br/><br/>A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.<br/><br/>If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.<br/><br/>Data for this column is typically updated 14-18 hours after the UTC day ends.|

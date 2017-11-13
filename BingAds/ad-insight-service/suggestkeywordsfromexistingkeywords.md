@@ -114,12 +114,12 @@ public async Task<SuggestKeywordsFromExistingKeywordsResponse> SuggestKeywordsFr
 	IList<string> keywords,
 	string language,
 	IList<string> publisherCountries,
-	int maxSuggestionsPerKeyword,
-	int suggestionType,
-	bool removeDuplicates,
-	bool excludeBrand,
-	long adGroupId,
-	long campaignId)
+	int? maxSuggestionsPerKeyword,
+	int? suggestionType,
+	bool? removeDuplicates,
+	bool? excludeBrand,
+	long? adGroupId,
+	long? campaignId)
 {
 	var request = new SuggestKeywordsFromExistingKeywordsRequest
 	{

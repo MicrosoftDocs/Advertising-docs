@@ -101,7 +101,7 @@ The following template shows the order of the [body](#response-body) and [header
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetBudgetOpportunitiesResponse> GetBudgetOpportunitiesAsync(
-	long campaignId)
+	long? campaignId)
 {
 	var request = new GetBudgetOpportunitiesRequest
 	{

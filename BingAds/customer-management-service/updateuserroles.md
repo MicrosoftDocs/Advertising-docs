@@ -103,10 +103,10 @@ The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md
 public async Task<UpdateUserRolesResponse> UpdateUserRolesAsync(
 	long customerId,
 	long userId,
-	int newRoleId,
+	int? newRoleId,
 	IList<long> newAccountIds,
 	IList<long> newCustomerIds,
-	int deleteRoleId,
+	int? deleteRoleId,
 	IList<long> deleteAccountIds,
 	IList<long> deleteCustomerIds)
 {

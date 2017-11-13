@@ -32,7 +32,7 @@ For details about using the Products resource, see the following sections.
 * [Adding and updating a product offer](#insert)
 * [Using batch processing](#batch)
 
-## <a name="get" /> Getting a product offer from the store
+## <a name="get"></a> Getting a product offer from the store
 
 To get a specific product offer from the store, append the following template to the base URI.
 
@@ -44,10 +44,10 @@ Send an HTTP GET request to the resulting URL. If the product was found, the res
 
 If you inserted a product with the same ID in multiple catalogs, the service will return only one of them, and which one is undetermined. You should not insert a product with the same product ID into multiple catalogs.
 
-For a code example that shows how to get a product offer, see [Getting a Product Offer](../shopping-content/code-examples.md#get).
+For a code example that shows how to get a product offer, see [Managing Products Code Example](../shopping-content/code-example-manage-products.md).
 
 
-## <a name="list" /> Getting a list of product offers from the store
+## <a name="list"></a> Getting a list of product offers from the store
 
 To get a list of the product offers that are in the store, append the following template to the base URI.
 
@@ -65,10 +65,10 @@ If there are more offers available, the response will include the `nextPageToken
 
 `https://content.api.bingads.microsoft.com/shopping/v9.1/bmc/{bmcMerchantId}/products?max-results=250&start-token=DFSos893j...`
 
-For a code example that shows how to get a list of product offers, see [Getting a List of Product Offers](../shopping-content/code-examples.md#list).
+For a code example that shows how to get a list of product offers, see [Managing Products Code Example](../shopping-content/code-example-manage-products.md).
 
 
-## <a name="delete" /> Deleting an offer from the store
+## <a name="delete"></a> Deleting an offer from the store
 
 To delete a specific product offer from the store, append the following template to the base URI.
 
@@ -80,9 +80,9 @@ Send an HTTP DELETE request to the resulting URL. If the product was found, it w
 
 If you inserted a product with the same product ID in multiple catalogs, the service will delete all of them. You should not insert a product with the same product ID into multiple catalogs.
 
-For a code example that shows how to delete a product offer, see [Deleting a Product Offer](../shopping-content/code-examples.md#delete).
+For a code example that shows how to delete a product offer, see [Managing Products Code Example](../shopping-content/code-example-manage-products.md).
 
-## <a name="insert" /> Adding and updating a product offer
+## <a name="insert"></a> Adding and updating a product offer
 
 Adding or updating an offer is an insert operation. Because an update is an insert operation, you must include all fields of the offer in the request; you cannot not update a single field.
 
@@ -147,7 +147,7 @@ An offer that is displayed in a product ad  will include the price, title, store
 
 For apparel products that are available in multiple colors, patterns or materials, create a product for each variant and use the [itemGroupId](../shopping-content/products-resource.md#itemgroupid) field to group all product variants.
 
-For a code example that shows how to insert a product offer, see [Inserting a Product Offer](../shopping-content/code-examples.md#insert).
+For a code example that shows how to insert a product offer, see [Managing Products Code Example](../shopping-content/code-example-manage-products.md).
 
 
 ## <a name="batch" /> Using batch processing

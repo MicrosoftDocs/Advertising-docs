@@ -207,7 +207,6 @@ Possible values are *Active*, *Paused*, or *Deleted*.
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Required. The Status must be set to *Deleted*.
 
-
 ## <a name="entityperformancedata"></a>Performance Data Fields in the Bulk File
 If the [DataScope Value Set](../bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
 
@@ -216,17 +215,9 @@ If the [DataScope Value Set](../bulk-service/datascope.md) element of the downlo
 |*Spend*|The cost per click (CPC) summed for each click.|
 |*Impressions*|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |*Clicks*|The number of times that the ads in the account were clicked.|
-|*CTR*|The click-through rate (CTR) is the number of times an ad was clicked, divided by the number of times the ad was shown (impressions). For example, if your ads got 50 clicks given 2,348 impressions, your CTR is 2.13 (%).
-
-The formula for calculating CTR is *(Clicks / Impressions) * 100*.|
-|*Avg CPC*|The average cost per click (CPC). The total cost of all clicks on an ad divided by the number of clicks. This is the average amount you're actually charged each time your ad is clicked. For example, if you paid a total of 48.35 for 300 clicks, your average CPC is 0.16.
-
-The formula for calculating the average CPC is *(Spend /Clicks)*.|
-|*Avg CPM*|The average of the cost-per-thousand impressions of the ads.
-
-The value will be 0 (zero) if the corresponding ad groups do not specify the Content ad distribution medium.|
+|*CTR*|The click-through rate (CTR) is the number of times an ad was clicked, divided by the number of times the ad was shown (impressions). For example, if your ads got 50 clicks given 2,348 impressions, your CTR is 2.13 (%).<br/><br/>The formula for calculating CTR is *(Clicks / Impressions) * 100*.|
+|*Avg CPC*|The average cost per click (CPC). The total cost of all clicks on an ad divided by the number of clicks. This is the average amount you're actually charged each time your ad is clicked. For example, if you paid a total of 48.35 for 300 clicks, your average CPC is 0.16.<br/><br/>The formula for calculating the average CPC is *(Spend /Clicks)*.|
+|*Avg CPM*|The average of the cost-per-thousand impressions of the ads.<br/><br/>The value will be 0 (zero) if the corresponding ad groups do not specify the Content ad distribution medium.|
 |*Avg position*|The average position of the ad on a webpage.|
 |*Conversions*|The number of conversions. A conversion is the completion of an action by a customer after viewing your ad. The action could be purchasing your product, registering for your webinar, joining an organization, or whatever you consider your goal and best measure of the ad's success.|
-|*CPA*|The cost per conversion. The formula for calculating the cost per conversion is *(Spend / Conversions)*.
-
-Only ads in campaigns that enable conversion tracking contribute to the conversion number, so unless all campaigns in the account enable conversion tracking, the number will not be accurate.|
+|*CPA*|The cost per conversion. The formula for calculating the cost per conversion is *(Spend / Conversions)*.<br/><br/>Only ads in campaigns that enable conversion tracking contribute to the conversion number, so unless all campaigns in the account enable conversion tracking, the number will not be accurate.|
