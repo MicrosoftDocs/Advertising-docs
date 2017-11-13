@@ -114,7 +114,7 @@ The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md
 ```csharp
 public async Task<GetBidLandscapeByKeywordIdsResponse> GetBidLandscapeByKeywordIdsAsync(
 	IList<long> keywordIds,
-	bool includeCurrentBid)
+	bool? includeCurrentBid)
 {
 	var request = new GetBidLandscapeByKeywordIdsRequest
 	{

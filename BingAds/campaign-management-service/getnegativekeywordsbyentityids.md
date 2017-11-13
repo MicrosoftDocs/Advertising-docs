@@ -128,7 +128,7 @@ The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md
 public async Task<GetNegativeKeywordsByEntityIdsResponse> GetNegativeKeywordsByEntityIdsAsync(
 	IList<long> entityIds,
 	string entityType,
-	long parentEntityId)
+	long? parentEntityId)
 {
 	var request = new GetNegativeKeywordsByEntityIdsRequest
 	{

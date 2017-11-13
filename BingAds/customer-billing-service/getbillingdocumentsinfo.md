@@ -100,7 +100,7 @@ The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md
 public async Task<GetBillingDocumentsInfoResponse> GetBillingDocumentsInfoAsync(
 	IList<long> accountIds,
 	DateTime startDate,
-	DateTime endDate)
+	DateTime? endDate)
 {
 	var request = new GetBillingDocumentsInfoRequest
 	{
