@@ -11,6 +11,7 @@ ms.author: "scottwhi"
 dev_langs: 
   - csharp
   - java
+  - python
 ---
 # Managing Catalogs Code Example
 This example shows how to get, add, update, and delete catalogs in the specified store.  
@@ -1113,5 +1114,95 @@ class ContentError
 	
  public ErrorCollection getError() { return this.error; }
 }
+
+```
+
+```python
+"""Content API Manage Catalogs Example"""
+import json
+import string
+import random
+import requests
+
+BASE_URI = 'https://content.api.bingads.microsoft.com/shopping/v9.1'
+BMC_URI = BASE_URI + '/bmc/{0}'
+
+CLIENT_ID = '<CLIENTIDGOESHERE>'
+DEV_TOKEN = '<DEVELOPERTOKENGOESHERE>'
+MERCHANT_ID = '<STOREIDGOESHERE>'
+
+AUTHENTICATION_TOKEN = '<AUTHENTICATIONTOKENGOESHERE>'
+
+AUTHENTICATION_HEADERS = {'DeveloperToken': DEV_TOKEN, 'AuthenticationToken': AUTHENTICATION_TOKEN}
+
+def main():
+    """The main entry point of this example"""
+
+    # List catalogs
+    print("*** List catalogs ***")
+    catalogs = list_catalogs()
+    for catalog in catalogs:
+        print_json(catalog)
+    print("*** / End of catalogs list ***")
+
+    # Add catalog
+    added_catalog = add_catalog("My Test Catalog")
+    print("*** Added test catalog (catalog.Id=" + str(added_catalog['id']) + ")")
+    print_json(added_catalog)
+    print("*** / End added test catalog (catalog.Id=" + str(added_catalog['id']) + ")")
+
+    # Update catalog
+    added_catalog['name'] = "Updated - " + added_catalog['name']
+    updated_catalog = update_catalog(added_catalog)
+    print("*** Updated test catalog (catalog.Id=" + str(updated_catalog['id']) + ") ***")
+    print_json(updated_catalog)
+    print("*** / End of updated test catalog (catalog.Id=" + str(updated_catalog['id']) + ")***")
+
+    # Delete catalog
+    print("*** Deleting catalog (" + str(updated_catalog['id']) + "***")
+    delete_catalog(updated_catalog['id'])
+    print("*** / End deleting catalog (" + str(updated_catalog['id']) + "***")
+
+CATALOGS_URI = BMC_URI + "/catalogs"
+def list_catalogs():
+    """list catalogs for the specified merchant"""
+    url = CATALOGS_URI.format(MERCHANT_ID)
+    response = requests.get(url, headers=AUTHENTICATION_HEADERS)
+    response.raise_for_status()
+    return json.loads(response.text)['catalogs']
+
+def add_catalog(catalog_name):
+    """Add a catalog"""
+    url = CATALOGS_URI.format(MERCHANT_ID)
+    catalog = {'Name': catalog_name + "(" + random_string(16) +")", 'Market': "en-US", 'IsPublishingEnabled': True}
+    response = requests.post(url, headers=AUTHENTICATION_HEADERS, data=json.dumps(catalog))
+    response.raise_for_status()
+    return json.loads(response.text)
+
+CATALOG_URI = CATALOGS_URI + "/{1}"
+def update_catalog(catalog):
+    """Update a catalog"""
+    url = CATALOG_URI.format(MERCHANT_ID, catalog['id'])
+    response = requests.put(url, headers=AUTHENTICATION_HEADERS, data=json.dumps(catalog))
+    response.raise_for_status()
+    return json.loads(response.text)
+
+def delete_catalog(catalog_id):
+    """Delete a catalog"""
+    url = CATALOG_URI.format(MERCHANT_ID, catalog_id)
+    response = requests.delete(url, headers=AUTHENTICATION_HEADERS)
+    response.raise_for_status()
+
+def print_json(obj):
+    """Print the object as json"""
+    print(json.dumps(obj, sort_keys=True, indent=4, separators=(',', ': ')))
+
+def random_string(length=6):
+    """Get a random string of characters of the specified length"""
+    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))
+
+# Main execution
+if __name__ == '__main__':
+    main()
 
 ```
