@@ -24,7 +24,7 @@ The comma separated value (CSV) file contains data organized in the following no
 
 
 ### <a name="version2"></a>File Format Version 2.0
-If you specified *Version* as 2.0 when calling the [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md) operation, the following data is available in the downloaded file. File format version 2.0 is only supported with Bing Ads API Version 11.
+If you specified *Version* as 2.0 when calling the [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md) operation, the following data is available in the downloaded file. Bing Ads API Version 11 only supports file format version 2.0.
 
 |Column Name|Description|
 |---------------|---------------|
@@ -34,37 +34,6 @@ If you specified *Version* as 2.0 when calling the [GetGeoLocationsFileUrl](~/ca
 |Replaces|Reserved for future use to indicate which location or locations are replaced by the location in this row.|
 |Status|Reserved for future use to indicate whether the location in this row is active or deprecated. Currently there are no deprecated locations provided in the CSV file.|
 |AdWords Location Id|The *Google AdWords* Location Criterion Id that matches closest to the Bing Ads geographical location ID. You can use this for mapping Bing Ads locations to the estimated AdWords locations.<br /><br />This value is a heuristic estimate that can be used for mapping AdWords and Bing Ads geographical locations.|
-
-### <a name="version2migration"></a>Migrating to File Format Version 2.0
-File format version 2.0 is only supported with Bing Ads API Version 11. Please note the following changes from version 1.0 to 2.0.
-
-|Version 1.0 Column|Version 2.0 Column|
-|---------------|---------------|
-|Id|Location Id|
-|Display Name|Bing Display Name|
-|Target Type|Location Type|
-|AdWords Location ID|AdWords Location Id|
-|Code|N/A (removed)|
-|Descriptor|N/A (removed)|
-
-
-### <a name="version1"></a>File Format Version 1.0
-If you specified *Version* as 1.0 when calling the [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md) operation, the following data is available in the downloaded file. 
-
-> [!NOTE]
-> Starting November 1st, 2017 only version 2.0 of the locations file is supported. 
-
-|Column Name|Description|
-|---------------|---------------|
-|ID|The unique Bing Ads system identifier for the location.|
-|Code|This value can be used to set the location target.<br /><br />If this field itself contains commas the enclosed data will be surrounded by quotes, but you should not use the quotes when setting a location target bid. For example *Seattle, Seattle-Tacoma, WA WA US* is a valid city code.|
-|Display Name|The optional name that you can use to display the locations data, for example to users of your application. Vertical bars are used to separate the location components from most to least specific. For example given Seattle&#124;Washington&#124;United States the most specific component is the city of Seattle within the state of Washington of the United States.<br/><br/>Multiple location codes can have the same display name. You must not use the display name for anything other than presentation, for example do not assume any hierarchy or take any dependencies on the display name.|
-|Descriptor|The optional friendly name corresponding to the Target Type column. There is not necessarily a one to one relationship between this value and the Target Type column. You should not assume any hierarchy or take any dependencies on the descriptor.|
-|Target Type|Determines the type of location target can accept the value in the Code column.|
-|Replaces|Reserved for future use to indicate which location or locations are replaced by the location in this row.|
-|Status|Reserved for future use to indicate whether the location in this row is active or deprecated. Currently there are no deprecated locations provided in the CSV file.|
-|AdWords Location ID|he *Google AdWords* Location Criterion Id that matches closest to the Bing Ads geographical location ID. You can use this for mapping Bing Ads locations to the estimated AdWords locations.<br /><br />This value is a heuristic estimate that can be used for mapping AdWords and Bing Ads geographical locations.|
-
 
 ## See Also
 [Show Ads to Your Target Audience](~/guides/show-ads-target-audience.md)  
