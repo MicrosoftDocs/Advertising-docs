@@ -320,14 +320,14 @@ Defines a report job.
 
 |Name|Value|Type|Add
 |-|-|-|-
-|Columns|The list of columns to include in the report. The order that the report includes them is undetermined. The reporting server may also interleave other relevant columns not explicitly requested. The column names are case sensitive. For a list of column names, see Report Columns for the report type you're requesting (for example, for PerformanceReport, see [Report Columns](report.md#report-columns)).|String[]|Required
+|Columns|The list of columns to include in the report. The order that the report includes them is undetermined. The reporting server may also interleave other relevant columns not explicitly requested. The column names are case sensitive. For a list of column names, see Report Columns for the report type you're requesting (for example, for PerformanceReport, see [Report Columns](reporting.md#report-columns)).|String[]|Required
 |Compression|The type of compression to apply to the report. The following are the possible case-insensitive values.<ul><li>ZIP</li></ul>The default is no compression.|Boolean|Optional
 |EndDate|The UTC end date of the report in the form YYYY-MM-dd. The report contains data that falls within the start and end dates, inclusively.<br /><br />The end date must be on or later than the start date.|String|Required
-|Filter|The OData filter string to apply. The maximum length of the filter string is 1,000 characters. For information about using filters, see [Filtering report data](report.md#filtering-report-data). |String|Optional
+|Filter|The OData filter string to apply. The maximum length of the filter string is 1,000 characters. For information about using filters, see [Filtering report data](reporting.md#filtering-report-data). |String|Optional
 |Format|The format of the contents in the report. The following are the possible case-insensitive values.<ul><li>csv</li></ul>The default is csv.|String|Optional
 |HotelGroupId|The ID of the hotel to limit the report to. To set this field, you must also set `SubaccountId`.|String|Optional
 |Id|An ID that uniquely identifies the report job.|String|Read-only
-|ReportType|The type of entity or report to download. The following are the possible case-sensitive values. <ul><li>[Performance](report.md#performance-report-columns)</li></ul>|String|Required
+|ReportType|The type of entity or report to download. The following are the possible case-sensitive values. <ul><li>[Performance](reporting.md#performance-report-columns)</li></ul>|String|Required
 |StartDate|The UTC start date of the report in the form YYYY-MM-dd.|String|Required
 |Status|The status of the report job. The following are the possible values.<ul><li>Completed&mdash;The report job completed successfully. Use the URL in the `Url` field to download the report.</li><li>Failed</li><li>InProgress&mdash;The service is in the process of building the report.</li><li>PendingExecution&mdash;The report request is queued</li></ul>|String|Read-only
 |SubaccountId|The ID of the subaccount to limit the report to.|String|Optional

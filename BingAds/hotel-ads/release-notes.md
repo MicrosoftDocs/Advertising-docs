@@ -24,7 +24,7 @@ For information about changes that were included with each release, see the foll
 
   - Added the [ReportJob](../hotel-service/reference.md#reportjob) object that you use to specify your report request  
 
-  - Added the [Hotel Ads Reporting API](../hotel-service/report.md) overview, which details the reporting workflow.
+  - Added the [Hotel Ads Reporting API](../hotel-service/reporting.md) overview, which details the reporting workflow.
 
 
 ## November 17, 2017
