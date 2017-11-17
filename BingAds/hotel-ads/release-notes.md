@@ -12,6 +12,14 @@ ms.author: "scottwhi"
 
 For information about changes that were included with each release, see the following sections.
 
+
+## November 17, 2017
+
+### Nonbreaking changes
+
+- Added the Delete URI template for hotel groups (see [SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')](../hotel-service/reference.md#deletehotelgroup)).  
+
+
 ## November 8, 2017
 
 ### Nonbreaking changes
