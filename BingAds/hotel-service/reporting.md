@@ -64,6 +64,8 @@ https://partner.api.bingads.microsoft.com/Travel/v1/Customers({customerId})/Acco
 
 The body of the response is a [ReportJob](reference.md#reportjob) object. To determine the job's status, access the `Status` field. When the job finishes, `Status` is set to Completed and the `Url` field contains the URL that you use to download the report. The URL is valid for five minutes. If the URL expires, you must send another GET request to get the status of the job and a new download URL. 
 
+The report is valid for an undertermined amount of time after it completes but typically for at least two days. After two days, you should submit a new report request.
+
 How long it takes for report jobs to finish is undetermined and is based on several variables that are constantly changing such number of jobs in the queue, amount of data, and size of reporting period. Generally, you should poll for the status of the job every five seconds until the job's status is Completed or Failed. 
 
 If you asked the service to compress the report data (see the report job's `Compression` field), remember to uncompress the report before reading it.
@@ -101,8 +103,6 @@ In addition to using `Filter`, you can use the `SubaccountId` and `HotelGroupId`
 
 ## Performance report columns
 
-**Need minimum required columns and combinations**
-
 
 Reports contain [dimension](#dimension-columns) columns and [metric](#metric-columns) columns. The metric data rolls up to the lowest-level dimension in the dimension hierarchy that you specify in your report request.
 
@@ -133,6 +133,9 @@ Date            Subaccount        Hotel group       Clicks
 2017-11-16      123               321               15
 
 
+The request must include at least one dimension column and one metric column.
+
+
 ### Dimension columns
 
 |Column name|Report column name|Description
@@ -158,7 +161,7 @@ Date            Subaccount        Hotel group       Clicks
 |-|-|-
 |AverageCPC|Avg. CPC|The average cost per click, which is calculated by dividing the total cost of all clicks by the number of clicks. 
 |AveragePosition|Avg. pos.|The average position of ads on the results page. Position refers to the order of the ad on the page relative to all other ads across all slots.
-|AverageSlotPosition|AverageSlotPosition|The average position of ads in the slot type. If you include this metric, you should also include the SlotType dimension column.
+|AverageSlotPosition|Avg. slot pos.|The average position of ads in the slot type. If you include this metric, you should also include the SlotType dimension column.
 |Clicks|Clicks|The number of time ads were clicked.
 |CTR|CTR|The click-through-rate of the ads. CTR is calculated by dividing the number of times the ads were clicked by the number of impressions.
 |Impressions|Impr.|The number of times ads were shown.

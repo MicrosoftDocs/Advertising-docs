@@ -55,7 +55,7 @@ Next, append a template from the following table to add, get, and update hotel r
 |<a name="ungrouped" />SubAccounts('{subAccountId}')/Ungrouped|GET|Gets the list of hotels in the Ungrouped hotel group. When you create a subaccount, Bing creates the Ungrouped hotel group. All hotels from your hotel feed that are not otherwise associated with other groups are placed in this group. To associate a hotel in this group with a different hotel group, see the [Associate](#associate) template. <br /><br />**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [Hotel](#hotel) objects.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the ungrouped hotel ads to get.</li></ul>
 |<a name="associations" />SubAccounts('{subAccountId}')/Associations|GET|Gets a list of hotel and hotel group associations.<br /><br />**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [HotelAssociation](#hotelassociation) objects.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the associations to get.</li></ul>
 |<a name="associate" />SubAccounts('{subAccountId}')/Associate|POST|Adds a list of hotel and hotel group associations to the subaccount.<br /><br />**Request body**: Contains an [AssociationCollection](#associationcollection) object. The `HotelAssociation` field contains a list with a maximum of 500 [HotelAssociation](#hotelassociation) objects. Each object associates a hotel with a hotel group. You can associate a hotel with only one hotel group.<br /><br />**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains a list of [HotelAssociation](#hotelassociation) objects. The list contains only those associations that failed validation. The list is empty if there are no errors. The association's `Errors` field contains the list of reasons why the association failed.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to add the associations to.
-|<a name="addreportjob" />ReportJobs|POST|Adds a report request to the report queue. <br /><br />**Request body**: Contains the [ReportJob](#reportjob) object that defines the report request that you're adding to the queue.<br /><br />**Response body**: If the report request is successfully added to the queue, contains an [AddResponse](#addreponse) objet that contains the ID of the report job. Use the ID in subsequent GET requests to get the status of the report job.
+|<a name="addreportjob" />ReportJobs|POST|Adds a report request to the report queue. <br /><br />**Request body**: Contains the [ReportJob](#reportjob) object that defines the report request that you're adding to the queue.<br /><br />**Response body**: If the report request is successfully added to the queue, the body is an [AddResponse](#addreponse) object that contains the ID of the report job. Use the ID in subsequent GET requests to get the status of the report job.
 |<a name="getreportjob" />ReportJobs('{jobId}')|GET|Gets the status of the specified report job.<br /><br />**Response body**: Contains a [ReportJob](#reportjob) object. Use the `Status` field to determine when the job finishes. When the job is complete, use the URL in the `Url` field to download the report.<br /><br />**Resource parameters**:<ul><li>`{jobId}`&mdash;The ID of the report job to get the status of. Set to the ID of the report job that your POST request returned.</li></ul>
 
 
@@ -135,7 +135,7 @@ Defines an error that occurred.
 
 |Name|Value|Type
 |-|-|-
-|Code|A symbolic code that identifies the error.|String
+|Code|A symbolic code that identifies the error. For a list of codes, see [Error codes](#error-codes).|String
 |Message|A description of the error.|String
 |Parameter|The name of the object, field, or parameter that caused the error.|String
 
@@ -320,18 +320,18 @@ Defines a report job.
 
 |Name|Value|Type|Add
 |-|-|-|-
-|Columns|The list of columns to include in the report. The order that the report includes them is undetermined. The reporting server may also interleave other relevant columns not explicitly requested. The column names are case sensitive. For a list of column names, see Report Columns for the report type you're requesting (for example, for PerformanceReport, see [Report Columns](reporting.md#performance-report-columns)).|String[]|Required
-|Compression|The type of compression to apply to the report. The following are the possible case-insensitive values.<ul><li>ZIP</li></ul>The default is no compression.|Boolean|Optional
-|EndDate|The UTC end date of the report in the form YYYY-MM-dd. The report contains data that falls within the start and end dates, inclusively.<br /><br />The end date must be on or later than the start date.|String|Required
-|Filter|The OData filter string to apply. The maximum length of the filter string is 1,000 characters. For information about using filters, see [Filtering report data](reporting.md#filtering-report-data). |String|Optional
-|Format|The format of the contents in the report. The following are the possible case-insensitive values.<ul><li>csv</li></ul>The default is csv.|String|Optional
-|HotelGroupId|The ID of the hotel to limit the report to. To set this field, you must also set `SubaccountId`.|String|Optional
+|<a name="columns" />Columns|The list of columns to include in the report. The order that the report includes them is undetermined. The reporting server may also interleave other relevant columns not explicitly requested. The column names are case sensitive. For a list of column names, see Report Columns for the report type you're requesting (for example, for PerformanceReport, see [Performance report columns](reporting.md#performance-report-columns)). The columns must include at lease one dimension-type column and one metric-type column.|String[]|Required
+|<a name="compression" />Compression|The type of compression to apply to the report. The following are the possible case-insensitive values.<ul><li>ZIP</li></ul>The default is no compression.|Boolean|Optional
+|<a name="enddate" />EndDate|The UTC end date of the report in the form YYYY-MM-dd. The report contains data that falls within the start and end dates, inclusively.<br /><br />The end date must be on or later than the start date.|String|Required
+|<a name="filter" />Filter|The OData filter string to apply. The maximum length of the filter string is 1,000 characters. For information about using filters, see [Filtering report data](reporting.md#filtering-report-data). |String|Optional
+|<a name="format" />Format|The format of the contents in the report. The following are the possible case-insensitive values.<ul><li>csv</li></ul>The default is csv.|String|Optional
+|<a name="hotelgroupid" />HotelGroupId|The ID of the hotel to limit the report to. To set this field, you must also set `SubaccountId`.|String|Optional
 |Id|An ID that uniquely identifies the report job.|String|Read-only
-|ReportType|The type of entity or report to download. The following are the possible case-sensitive values. <ul><li>[Performance](reporting.md#performance-report-columns)</li></ul>|String|Required
-|StartDate|The UTC start date of the report in the form YYYY-MM-dd.|String|Required
-|Status|The status of the report job. The following are the possible values.<ul><li>Completed&mdash;The report job completed successfully. Use the URL in the `Url` field to download the report.</li><li>Failed</li><li>InProgress&mdash;The service is in the process of building the report.</li><li>PendingExecution&mdash;The report request is queued</li></ul>|String|Read-only
-|SubaccountId|The ID of the subaccount to limit the report to.|String|Optional
-|Url|The URL of the report to download. The service provides the URL when `Status` is Completed. The URL is valid for five (5) minutes from the time you get a report job with `Status` set to Completed. If the URL expires, send a GET request to get the status of the job again.
+|<a name="reporttype" />ReportType|The type of entity or report to download. The following are the possible case-sensitive values. <ul><li>[Performance](reporting.md#performance-report-columns)</li></ul>|String|Required
+|<a name="startdate" />StartDate|The UTC start date of the report in the form YYYY-MM-dd. The earliest date that you may specify is three years from today.|String|Required
+|<a name="status" />Status|The status of the report job. The following are the possible values.<ul><li>Completed&mdash;The report job completed successfully. Use the URL in the `Url` field to download the report.</li><li>Failed&mdash;The job failed for some reason. In case the error is a transient error, you may want to resubmit the job. If the job fails again, capture the the request ID in the X-MS-RequestId header and contact support.</li><li>InProgress&mdash;The service is in the process of building the report.</li><li>PendingExecution&mdash;The report request is queued</li></ul>|String|Read-only
+|<a name="subaccountid" />SubaccountId|The ID of the subaccount to limit the report to.|String|Optional
+|<a name="url" />Url|The URL of the report to download. The service provides the URL when `Status` is Completed. The URL is valid for five (5) minutes from the time you get a report job with `Status` set to Completed. If the URL expires, send a GET request to get the status of the job again and a new URL.
 
 
 <!--
@@ -378,7 +378,7 @@ Defines the amount to adjust the base bid by if the user accesses one of the Bin
 
 
 
-## HTTP Status Codes
+## HTTP status codes
 
 The requests may return the following HTTP status codes.
 
@@ -386,10 +386,24 @@ The requests may return the following HTTP status codes.
 |-----------|-----------
 |200|Successfully retrieved the resource.
 |201|Successfully added the resource.
-|204|Successfully updated the resource.
+|204|Successfully updated or deleted the resource.
 |400|Bad request. Either a query parameter value is not valid or content in the request body is not valid.
 |401|Unauthorized. The user's credentials are not valid. 
 |404|Not found. 
 |429|Too many requests. The API limits the number of requests you may make per minute. The limit is not documented and is subject to change. The API returns this status code if you exceed the limit. You must wait 60 after receiving this error before resending the request.
 |500|Server error.
+
+
+
+## Error codes
+
+### Reporting error codes
+
+|Error code|Description
+|-|-
+|DuplicateValues|One or more of the following occurred:<ul><li>The [Columns](#columns) field contains the same column name more than once.</li><li>The [Filter](#filter) field contains a value more than once.</li></ul>
+|FilterTooLong|The OData filter string that you set `Filter` to is too long. For the allowed maximum length, see [Filter](#filter).
+|FormatVersionNotSupported|The `Format` field is set to a value this is not supported. For a list of supported formats, see [Format](#format).
+|InvalidDateRange|The reporting period that you specified is not valid. For information about specifying a valid date range, see the [StarteDate](#startdate) and [EndDate](#enddate) fields.
+|InvalidReportName|The `ReportType` field is set to a report name that is not valid. For a list of valid report names, see [ReportType](#reporttype).
 
