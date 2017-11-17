@@ -224,7 +224,7 @@ Hotel groups are the second level of organization that you use to group hotels. 
 The following are the REST templates that you use to manage hotel groups.
 
 - `/SubAccounts('{subAccountId}')/HotelGroups` &mdash; [GET](../hotel-service/reference.md#listhotelgroups) | [POST](../hotel-service/reference.md#addhotelgroup)
-- `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')` &mdash; [GET](../hotel-service/reference.md#gethotelgroup) | [PATCH](../hotel-service/reference.md#updatehotelgroup)
+- `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')` &mdash; [GET](../hotel-service/reference.md#gethotelgroup) | [PATCH](../hotel-service/reference.md#updatehotelgroup) | [DELETE](../hotel-service/reference.md#deletehotelgroup)
 
 For an example that gets, adds, and updates hotel groups, see [C# example](../hotel-service/code-example-hotel-groups.md).
 
