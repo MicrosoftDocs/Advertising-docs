@@ -162,7 +162,7 @@ This bulk field maps to the *Id* field of the [Ad Group](../bulk-service/ad-grou
 ### <a name="status"></a>Status
 The association status. 
 
-Possible values are *Active*, *Paused*, or *Deleted*. 
+Possible values are *Active* or *Deleted*. 
 
 **Add:** Optional. The default status value is *Active*.   
 **Update:** Optional    
