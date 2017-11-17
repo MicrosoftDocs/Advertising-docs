@@ -401,7 +401,8 @@ The requests may return the following HTTP status codes.
 
 |Error code|Description
 |-|-
-|DuplicateValues|One or more of the following occurred:<ul><li>The [Columns](#columns) field contains the same column name more than once.</li><li>The [Filter](#filter) field contains a value more than once.</li></ul>
+|CompressionTypeNotSupported|The `Compression` field is set to a value this is not supported. For a list of supported compression algorithms, see [Compression](#compression).
+|DuplicateValues|The [Columns](#columns) field contains the same column name more than once.</li></ul>
 |FilterTooLong|The OData filter string that you set `Filter` to is too long. For the allowed maximum length, see [Filter](#filter).
 |FormatVersionNotSupported|The `Format` field is set to a value this is not supported. For a list of supported formats, see [Format](#format).
 |InvalidDateRange|The reporting period that you specified is not valid. For information about specifying a valid date range, see the [StarteDate](#startdate) and [EndDate](#enddate) fields.
