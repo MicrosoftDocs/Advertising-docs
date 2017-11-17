@@ -35,7 +35,7 @@ Next, append a template from the following table to add, get, and update hotel r
 `https://partner.api.sandbox.bingads.microsoft.com/Travel/V1/Customers({customerId})/Accounts({accountId})/SubAccounts('{subAccountId}')/HotelGroups`.  
 
 > [!NOTE]
-> The IDs for SubAccounts, HotelGroups, and Hotels are strings and must be enclosed in single quotes. For example, SubAccounts('12345')/HotelGroups. This applies to SubAccounts, HotelGroups, and Hotels only; do not use single quotes for Customers and Accounts.
+> The IDs for SubAccounts, HotelGroups, Hotels, and ReportJobs are strings and must be enclosed in single quotes. For example, SubAccounts('12345')/HotelGroups. This applies to SubAccounts, HotelGroups, Hotels, and ReportJobs only; do not use single quotes for Customers and Accounts.
 
 |Template|Verb|Description|
 |-|-|-
@@ -55,6 +55,8 @@ Next, append a template from the following table to add, get, and update hotel r
 |<a name="ungrouped" />SubAccounts('{subAccountId}')/Ungrouped|GET|Gets the list of hotels in the Ungrouped hotel group. When you create a subaccount, Bing creates the Ungrouped hotel group. All hotels from your hotel feed that are not otherwise associated with other groups are placed in this group. To associate a hotel in this group with a different hotel group, see the [Associate](#associate) template. <br /><br />**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [Hotel](#hotel) objects.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the ungrouped hotel ads to get.</li></ul>
 |<a name="associations" />SubAccounts('{subAccountId}')/Associations|GET|Gets a list of hotel and hotel group associations.<br /><br />**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains the list of [HotelAssociation](#hotelassociation) objects.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount that contains the associations to get.</li></ul>
 |<a name="associate" />SubAccounts('{subAccountId}')/Associate|POST|Adds a list of hotel and hotel group associations to the subaccount.<br /><br />**Request body**: Contains an [AssociationCollection](#associationcollection) object. The `HotelAssociation` field contains a list with a maximum of 500 [HotelAssociation](#hotelassociation) objects. Each object associates a hotel with a hotel group. You can associate a hotel with only one hotel group.<br /><br />**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains a list of [HotelAssociation](#hotelassociation) objects. The list contains only those associations that failed validation. The list is empty if there are no errors. The association's `Errors` field contains the list of reasons why the association failed.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to add the associations to.
+|<a name="addreportjob" />ReportJobs|POST|Adds a report request to the report queue. <br /><br />**Request body**: Contains the [ReportJob](#reportjob) object that defines the report request that you're adding to the queue.<br /><br />**Response body**: If the report request is successfully added to the queue, contains an [AddResponse](#addreponse) objet that contains the ID of the report job. Use the ID in subsequent GET requests to get the status of the report job.
+|<a name="getreportjob" />ReportJobs('{jobId}')|GET|Gets the status of the specified report job.<br /><br />**Response body**: Contains a [ReportJob](#reportjob) object. Use the `Status` field to determine when the job finishes. When the job is complete, use the URL in the `Url` field to download the report.<br /><br />**Resource parameters**:<ul><li>`{jobId}`&mdash;The ID of the report job to get the status of. Set to the ID of the report job that your POST request returned.</li></ul>
 
 
 ## Query Parameters
@@ -109,6 +111,7 @@ The following are the resource objects used by the API.
 |[HotelGroup](#hotelgroup)|Defines a logical grouping of hotel ads.
 |[LengthOfStayMultiplier](#lengthofstaymultiplier)|Defines the amount to adjust the base bid by if the user stays the specified number of nights or longer.
 |[PercentageBid](#percentagebid)|Defines a bid based on the percentage of the hotel room's rate.
+|[ReportJob](#reportjob)|Defines a report job.
 |[SubAccount](#subaccount)|Defines the top-level hotel ads grouping. You can think of this logically as a hotel campaign.
 |[UserCountryMultiplier](#usercountrymultiplier)|Defines the amount to adjust the base bid by if the user accesses one of the Bing domains.
 
@@ -309,6 +312,27 @@ Defines a bid based on the percentage of the hotel room's rate.
 |-|-|-|-|-
 |Amount|The percentage bid amount. The valid range is 0 through 1000. For example, to bid 5 percent of the room's rate, set `Amount` to 5.0.<br /><br />The bid amount is the per-night bid. For example, if the bid is 3% of a $99 room rate and the itinerary is for a 3-night stay, the final bid is $8.91.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.PercentageBid".|String|Required|Required
+
+
+### ReportJob
+
+Defines a report job.
+
+|Name|Value|Type|Add
+|-|-|-|-
+|Columns|The list of columns to include in the report. The order that the report includes them is undetermined. The reporting server may also interleave other relevant columns not explicitly requested. The column names are case sensitive. For a list of column names, see Report Columns for the report type you're requesting (for example, for PerformanceReport, see [Report Columns](report.md#report-columns)).|String[]|Required
+|Compression|The type of compression to apply to the report. The following are the possible case-insensitive values.<ul><li>ZIP</li></ul>The default is no compression.|Boolean|Optional
+|EndDate|The UTC end date of the report in the form YYYY-MM-dd. The report contains data that falls within the start and end dates, inclusively.<br /><br />The end date must be on or later than the start date.|String|Required
+|Filter|The OData filter string to apply. The maximum length of the filter string is 1,000 characters. For information about using filters, see [Filtering report data](report.md#filtering-report-data). |String|Optional
+|Format|The format of the contents in the report. The following are the possible case-insensitive values.<ul><li>csv</li></ul>The default is csv.|String|Optional
+|HotelGroupId|The ID of the hotel to limit the report to. To set this field, you must also set `SubaccountId`.|String|Optional
+|Id|An ID that uniquely identifies the report job.|String|Read-only
+|ReportType|The type of entity or report to download. The following are the possible case-sensitive values. <ul><li>[Performance](report.md#performance-report-columns)</li></ul>|String|Required
+|StartDate|The UTC start date of the report in the form YYYY-MM-dd.|String|Required
+|Status|The status of the report job. The following are the possible values.<ul><li>Completed&mdash;The report job completed successfully. Use the URL in the `Url` field to download the report.</li><li>Failed</li><li>InProgress&mdash;The service is in the process of building the report.</li><li>PendingExecution&mdash;The report request is queued</li></ul>|String|Read-only
+|SubaccountId|The ID of the subaccount to limit the report to.|String|Optional
+|Url|The URL of the report to download. The service provides the URL when `Status` is Completed. The URL is valid for five (5) minutes from the time you get a report job with `Status` set to Completed. If the URL expires, send a GET request to get the status of the job again.
+
 
 <!--
 ### SiteMultiplier
