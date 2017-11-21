@@ -48,7 +48,7 @@ The following example shows a `ReportJob` request for a performance report.
 
 The above request asks to generate a performance report. By default, the service generates reports in CSV format.
 
-The response to the POST contains a report job ID (see [AddResponse](reference.md#addresponse)). For example,
+The response to the POST contains a report job ID (see [AddResponse](reference.md#addresponse)). For example:
 
 ```json
 {
@@ -74,7 +74,7 @@ If you asked the service to compress the report data (see the report job's `Comp
 
 ## Filtering report data
 
-You can use the `Filter` field in the [ReportJob](reference.md#reportjob) request object to filter the data in the report. You may filter the report on the following dimension columns and any [metric column](#metric-columns).
+You can use the `Filter` field in the [ReportJob](reference.md#reportjob) request object to filter the data in the report. You may filter the report on the following dimension columns and any [measure column](#measure-columns).
 
 - SubaccountId/Name
 - HotelGroupId/Name
@@ -104,7 +104,7 @@ In addition to using `Filter`, you can use the `SubaccountId` and `HotelGroupId`
 ## Performance report columns
 
 
-Reports contain [dimension](#dimension-columns) columns and [metric](#metric-columns) columns. The metric data rolls up to the lowest-level dimension in the dimension hierarchy that you specify in your report request.
+Reports contain [dimension](#dimension-columns) columns and [measure](#measure-columns) columns (metrics). The metric data rolls up to the lowest-level dimension in the dimension hierarchy that you specify in your report request.
 
 The following is the hierarchy for Performance Report.
 
@@ -120,20 +120,20 @@ The following is the hierarchy for Performance Report.
 
 For example, if the request contains SubaccountId and Clicks, the clicks roll up to SubaccountId.
 
-Date            Subaccount      Clicks
-----------      ----------      -------
-2017-11-16      123             40
+|Date|Subaccount|Clicks
+|-|-|-
+|2017-11-16|123|40
 
 And if the request contains SubaccountId, HotelGroupId, and Clicks, the clicks roll up to HotelGroupId. 
 
-Date            Subaccount        Hotel group       Clicks
-----------      ----------        -----------       -------
-2017-11-16      123               987               12
-2017-11-16      123               654               13
-2017-11-16      123               321               15
+|Date|Subaccount|Hotel group|Clicks
+|-|-|-|-
+|2017-11-16|123|987|12
+|2017-11-16|123|654|13
+|2017-11-16|123|321|15
 
 
-The request must include at least one dimension column and one metric column.
+The request must include at least one dimension column and one measure column.
 
 
 ### Dimension columns
@@ -155,7 +155,7 @@ The request must include at least one dimension column and one metric column.
 |UserCountry|User country|The two-letter ISO 3116 country code of the country where the user is located. For example, US for United States.
 
 
-### Metric columns
+### Measure columns
 
 |Column name|Report column name|Description
 |-|-|-
