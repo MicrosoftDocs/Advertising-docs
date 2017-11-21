@@ -19,9 +19,9 @@ Reporting is an asynchronous process where you send a request with report parame
 
 ## Requesting a report
 
-To request a report, send an HTTP POST request to (shows using the production endpoint):
+To request a report, send an HTTP POST request to the following endpoint (for the sandbox endpoint, see [Endpoints](reference.md#endpoints)):
 
-https://partner.api.bingads.microsoft.com/Travel/v1/Customers({customerId})/Accounts({accountId})/reportjobs
+`https://partner.api.bingads.microsoft.com/Travel/v1/Customers({customerId})/Accounts({accountId})/reportjobs`
 
 The body of the request is a [ReportJob](reference.md#reportjob) object. The following are the fields that you must specify in the request.
 
