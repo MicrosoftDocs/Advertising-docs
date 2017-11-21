@@ -25,6 +25,8 @@ If you haven't already done so, familiarize yourself with the following topics:
 
 For Hotel API endpoints, see [Endpoints](../hotel-service/reference.md#endpoints). 
 
+For information about reporting, see [Hotel Ads Reporting API](reporting.md).
+
 <a name="workingwithsubaccounts" />
 ## Working with subaccounts
 

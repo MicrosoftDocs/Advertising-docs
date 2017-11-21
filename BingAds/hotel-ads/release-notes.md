@@ -12,6 +12,20 @@ ms.author: "scottwhi"
 
 For information about changes that were included with each release, see the following sections.
 
+## November 21, 2017
+
+### Nonbreaking changes
+
+- Added the Reporting API  
+  
+  - Added the following new URI templates:  
+    - POST [/ReportJobs](../hotel-service/reference.md#addreportjob) used to add a report request to the report queue
+    - GET [/ReportJobs('{jobId}')](../hotel-service/reference.md#getreportjob) used to check the status of the report job  
+
+  - Added the [ReportJob](../hotel-service/reference.md#reportjob) object that you use to specify your report request  
+
+  - Added the [Hotel Ads Reporting API](../hotel-service/reporting.md) overview, which details the reporting workflow.
+
 
 ## November 17, 2017
 
