@@ -70,7 +70,8 @@ How long it takes for report jobs to finish is undetermined and is based on seve
 
 If you asked the service to compress the report data (see the report job's `Compression` field), remember to uncompress the report before reading it.
 
-
+> [!NOTE]
+> Compression is not available at this time. The [Release Notes](../hotel-ads/release-notes.md) topic will include a note when it's available.
 
 ## Filtering report data
 
