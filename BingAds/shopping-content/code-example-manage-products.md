@@ -11,6 +11,7 @@ ms.author: "v-brapel"
 dev_langs: 
   - csharp
   - java
+  - python
 ---
 # Managing Products Code Example
 This example shows how to get, add, update, and delete products in the specified store.  
@@ -1594,5 +1595,163 @@ public class UnitPricing
     public void setValue(Double value) { this.value = value; }
 }
 
+```
+
+```python
+"""Content API Manage Products Example"""
+import string
+import random
+from datetime import datetime, timedelta
+import json
+import requests
+
+BASE_URI = 'https://content.api.bingads.microsoft.com/shopping/v9.1'
+BMC_URI = BASE_URI + '/bmc/{0}'
+
+CLIENT_ID = '<CLIENTIDGOESHERE>'
+DEV_TOKEN = '<DEVELOPERTOKENGOESHERE>'
+MERCHANT_ID = '<STOREIDGOESHERE>'
+
+AUTHENTICATION_TOKEN = '<AUTHENTICATIONTOKENGOESHERE>'
+
+AUTHENTICATION_HEADERS = {'DeveloperToken': DEV_TOKEN, 'AuthenticationToken': AUTHENTICATION_TOKEN}
+
+def main():
+    """The main entry point of this example"""
+
+    try:
+        # Get the default catalog
+        default_catalog = retrieve_default_catalog()
+
+        # Add a product to catalog
+        test_product = create_test_product("My Test Product")
+        # if catalog id is not specified the product will be added to the default catalog, here we are specifying the default explicitly
+        added_product = add_product(default_catalog['id'], test_product)
+        print("*** Added product to catalog (catalog.Id=" + str(default_catalog['id']) + ", product.Id=" + str(added_product['id']) + ")***")
+        print_json(added_product)
+        print("*** / End of added product (catalog.Id=" + str(default_catalog['id']) + ", product.Id=" + str(added_product['id']) + ")***")
+        print()
+        
+        # Retrieve a product by id
+        retrieved_product = get_product(added_product['id'])
+        print("*** Retrieved product (product.Id=" + str(retrieved_product['id']) + ")***")
+        print_json(retrieved_product)
+        print("*** / End retrieved product (product.Id=" + str(retrieved_product['id']) + ")***")
+        print()
+
+        # List products
+        print("*** Listing products ***")
+        for product in list_products():
+            print_json(product)
+        print("*** / End listing producst ***")
+        print()
+
+        # Delete product
+        print("*** Deleting product (" + str(added_product['id']) + ")***")
+        delete_product(added_product['id'])
+        print("*** / Deleting product Done (" + str(added_product['id']) + ")***")
+    except Exception as ex:
+        raise ex
+
+def retrieve_default_catalog():
+    """Retrieve the default catalog"""
+    catalogs = list_catalogs()
+    for catalog in catalogs:
+        if catalog['isDefault']:
+            return catalog
+    return None
+
+# List catalogs
+CATALOGS_URI = BMC_URI + "/catalogs"
+def list_catalogs():
+    """list catalogs for the current merchant"""
+    url = CATALOGS_URI.format(MERCHANT_ID)
+    response = requests.get(url, headers=AUTHENTICATION_HEADERS)
+    response.raise_for_status()
+    return json.loads(response.text)['catalogs']
+
+# List products
+LIST_PRODUCTS_URI = BMC_URI + "/products"
+# max-results set to 2 to test paging, this would be set to a
+# higher value in a real world scenario based on your needs
+LIST_PRODUCTS_QUERYSTRING = "?max-results=2&alt=json"
+LIST_PRODUCST_START_TOKEN_QUERYSTRING = "?max-results=2&alt=json&start-token={1}"
+def list_products(next_page_token=None):
+    """List products"""    
+    url = (LIST_PRODUCTS_URI + LIST_PRODUCTS_QUERYSTRING).format(MERCHANT_ID)
+    results = []
+
+    while url is not None:
+        response = requests.get(url, headers=AUTHENTICATION_HEADERS)
+        response.raise_for_status()
+        products_response = json.loads(response.text)
+        for product in products_response['resources']:
+            results.append(product)
+        if 'nextPageToken' in products_response:
+            url = (LIST_PRODUCTS_URI + LIST_PRODUCST_START_TOKEN_QUERYSTRING).format(MERCHANT_ID, products_response['nextPageToken'])
+        else:
+            url = None
+    return results   
+
+ADD_PRODUCT_URI = BMC_URI + "/products"
+ADD_PRODUCT_QUERY_STRING = "?bmc-catalog-id={1}&alt=json"
+def add_product(catalog_id, product):
+    """Add a product"""
+    url = (ADD_PRODUCT_URI + ADD_PRODUCT_QUERY_STRING).format(MERCHANT_ID, catalog_id)
+    response = requests.post(url, headers=AUTHENTICATION_HEADERS, data=json.dumps(product))
+    response.raise_for_status()
+    return json.loads(response.text)
+
+GET_PRODUCT_URI = BMC_URI + "/products/{1}"
+GET_PRODUCT_QUERY_STRING = "?alt=json"
+def get_product(product_id):
+    """Get an existing product"""
+    url = (GET_PRODUCT_URI + GET_PRODUCT_QUERY_STRING).format(MERCHANT_ID, product_id)
+    response = requests.get(url, headers=AUTHENTICATION_HEADERS)
+    response.raise_for_status()
+    return json.loads(response.text)
+
+DELETE_PRODUCT_URI = BMC_URI + "/products/{1}"
+DELETE_PRODUCT_QUERY_STRING = "?alt=json"
+def delete_product(product_id):
+    """Delete a product"""
+    url = (DELETE_PRODUCT_URI + DELETE_PRODUCT_QUERY_STRING).format(MERCHANT_ID, product_id)
+    response = requests.delete(url, headers=AUTHENTICATION_HEADERS)
+    response.raise_for_status()
+
+def print_json(obj):
+    """Print the object as json"""
+    print(json.dumps(obj, sort_keys=True, indent=4, separators=(',', ': ')))
+
+def create_test_product(title_prefix):
+    """
+    Create and return an in memory product for testing.
+    You will want to set the values as appropriate for your purposes.
+    """
+    return {
+        'offerId': 'YourUniqueId(' + random_string(16) + ')',
+        'title': title_prefix + '(' + random_string(4) + ')',
+        'availability': 'in stock',
+        'channel': 'Online',
+        'condition': 'New',
+        'contentLanguage': 'en',
+        'link': 'http://www.contoso.com/apperal/men/tshirts.htm',
+        'imageLink': 'http://www.contoso.com/pics/tees.jpg',
+        'price': {
+            'currency': 'USD',
+            'value': 1205.00
+        },
+        'targetCountry': 'US',
+        'identifierExists': False,
+        'expirationDate': (datetime.utcnow()+timedelta(days=45)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    }
+
+def random_string(length=6):
+    """Get a random string of characters of the specified length"""
+    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))
+
+# Main execution
+if __name__ == '__main__':
+    main()
 
 ```

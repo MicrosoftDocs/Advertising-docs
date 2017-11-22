@@ -11,11 +11,12 @@ ms.author: "scottwhi"
 dev_langs: 
   - csharp
   - java
+  - python
 ---
 # Downloading a Catalog Status Report Code Example
 This example shows how to get the status of product offers that were uploaded to the specified catalog. If offers failed validation or editorial review, the example downloads the report that shows the reasons why the offer failed the review. 
 
-For information about the class used by this example, see [Status](../shopping-content/status-resource.md#status). For information about getting the report, see [How Do I Get the Status of Product Offers?](../shopping-content/how-get-status-product-offers.md).
+For information about the class used by this example, see [Status](../shopping-content/status-resource.md#status). For information about getting the report, see [How Do I Get the Status of Product Offers?](../shopping-content/how-get-status-product-offers.md)
 
 ```csharp
 using System;
@@ -751,4 +752,81 @@ class ContentError
 	
 public ErrorCollection getError() { return this.error; }
 }
+```
+
+```python
+"""Content API Catalog Status Example"""
+import json
+import zipfile
+import os
+import requests
+
+BASE_URI = 'https://content.api.bingads.microsoft.com/shopping/v9.1'
+BMC_URI = BASE_URI + '/bmc/{0}'
+
+CLIENT_ID = '<CLIENTIDGOESHERE>'
+DEV_TOKEN = '<DEVELOPERTOKENGOESHERE>'
+MERCHANT_ID = '<STOREIDGOESHERE>'
+
+AUTHENTICATION_TOKEN = '<AUTHENTICATIONTOKENGOESHERE>'
+
+AUTHENTICATION_HEADERS = {'DeveloperToken': DEV_TOKEN, 'AuthenticationToken': AUTHENTICATION_TOKEN}
+
+DOWNLOAD_PATH = "MerchantCatalogReport.zip"
+
+def main():
+    """The main entry point of this example"""
+    catalog_status = get_catalog_status_report(retrieve_default_catalog()['id'])
+    print_json(catalog_status)
+    if catalog_status['rejectedCount'] > 0:
+        report_path = get_rejection_report(catalog_status['rejectionReportUrl'])
+        zipped_report = zipfile.ZipFile(report_path, 'r') # read the zipfile
+        zipped_report.extractall('.')
+        print('Report was written to ' + os.path.join(os.getcwd(), 'MerchantCatalogReport.csv'))    
+
+STATUS_URI = BMC_URI + "/catalogs/{1}/status?alt=json"
+def get_catalog_status_report(catalog_id):
+    """Get a catalog status report"""
+    print('catalog status example')
+    url = STATUS_URI.format(MERCHANT_ID, catalog_id)
+    response = requests.get(url, headers=AUTHENTICATION_HEADERS)
+    response.raise_for_status()
+    return json.loads(response.text)
+
+def get_rejection_report(rejection_report_url, download_path=DOWNLOAD_PATH):
+    """Download rejection report"""
+    headers = dict(AUTHENTICATION_HEADERS)
+    headers['Accept'] = 'application/x-zip-compressed'
+    report_response = requests.get(rejection_report_url, headers)
+    report_response.raise_for_status()
+    content = report_response.content
+    print(content)
+    report_file = open(DOWNLOAD_PATH, 'wb')
+    report_file.write(content)
+    report_file.close()
+    return download_path
+
+def retrieve_default_catalog():
+    """Retrieve the default catalog"""
+    catalogs = list_catalogs()
+    for catalog in catalogs:
+        if catalog['isDefault']:
+            return catalog
+    return None
+
+CATALOGS_URI = BMC_URI + "/catalogs"
+def list_catalogs():
+    """list catalogs for the current merchant"""
+    url = CATALOGS_URI.format(MERCHANT_ID)
+    response = requests.get(url, headers=AUTHENTICATION_HEADERS)
+    response.raise_for_status()
+    return json.loads(response.text)['catalogs']
+
+def print_json(obj):
+    """Print the object as json"""
+    print(json.dumps(obj, sort_keys=True, indent=4, separators=(',', ': ')))
+
+# Main execution
+if __name__ == '__main__':
+    main()
 ```
