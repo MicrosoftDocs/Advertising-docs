@@ -6,10 +6,11 @@ ms.topic: "article"
 author: "swhite-msft"
 manager: ehansen
 ms.author: "scottwhi"
+
 dev_langs:
   - csharp
+  - python
 ---
-
 # Subaccount code example
 
 The following example shows the requests you use to list, get, and update subaccounts. 
@@ -563,5 +564,77 @@ class AdsApiError
     public string Message { get; set; }
     public string Property { get; set; }
 }
+```
 
+```python
+"""Hotel API Sub accounts example"""
+import json
+import requests
+
+BASE_URI = 'https://partner.api.sandbox.bingads.microsoft.com/Travel/V1'
+
+CLIENT_ID = '<CLIENTIDGOESHERE'
+
+CUSTOMER_ID = "<CUSTOMERIDGOESHERE>"
+ACCOUNT_ID = "<ACCOUNTIDGOESHERE>"
+
+AUTHENTICATION_TOKEN = '<AUTHENTICATIONTOKENGOESHERE>'
+
+AUTHENTICATION_HEADER = {'Authorization': "Bearer " + AUTHENTICATION_TOKEN}
+
+def main():
+    """The main entry point of this example"""
+    print('Subaccounts example')
+
+    try:
+        subaccounts = get_subaccounts(CUSTOMER_ID, ACCOUNT_ID)
+        print_json(subaccounts)
+        subaccount_id = subaccounts['value'][0]['Id']
+
+        subaccount_to_update = {
+            "Id": subaccount_id,
+            "Bid": {
+                "Amount": 3.48,
+                "@odata.type": "#Model.FixedBid"
+            }
+        }
+
+        update_subaccount(CUSTOMER_ID, ACCOUNT_ID, subaccount_to_update)
+        updated_subaccount = get_subaccount(CUSTOMER_ID, ACCOUNT_ID, subaccount_id)
+        print_json(updated_subaccount)
+    except Exception as ex:
+        raise ex
+
+SUB_ACCOUNTS_URI = BASE_URI + "/Customers({0})/Accounts({1})/SubAccounts"
+SUB_ACCOUNT_URI = BASE_URI + "/Customers({0})/Accounts({1})/SubAccounts('{2}')"
+def get_subaccounts(customer_id, account_id):
+    """Get an existing product"""
+    url = (SUB_ACCOUNTS_URI).format(customer_id, account_id)
+    response = requests.get(url, headers=AUTHENTICATION_HEADER)
+    response.raise_for_status()
+    return json.loads(response.text)
+
+def update_subaccount(customer_id, account_id, sub_account):
+    """Update a sub account"""
+    url = (SUB_ACCOUNT_URI).format(customer_id, account_id, sub_account['Id'])
+    headers = {'Content-Type': 'application/json'}
+    for header in AUTHENTICATION_HEADER:
+        headers[header] = AUTHENTICATION_HEADER[header]
+    response = requests.patch(url, headers=headers, data=json.dumps(sub_account))
+    response.raise_for_status()
+
+def get_subaccount(customer_id, account_id, subaccount_id):
+    """Get a sub account"""
+    url = (SUB_ACCOUNT_URI).format(customer_id, account_id, subaccount_id)
+    response = requests.get(url, headers=AUTHENTICATION_HEADER)
+    response.raise_for_status()
+    return json.loads(response.text)
+
+def print_json(obj):
+    """Print the object as json"""
+    print(json.dumps(obj, sort_keys=True, indent=4, separators=(',', ': ')))
+
+# Main execution
+if __name__ == '__main__':
+    main()
 ```
