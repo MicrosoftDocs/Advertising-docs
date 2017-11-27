@@ -8,6 +8,7 @@ manager: ehansen
 ms.author: "scottwhi"
 dev_langs:
   - csharp
+  - python
 ---
 
 # Hotel Group code example
@@ -565,5 +566,99 @@ class AdsApiError
     public string Message { get; set; }
     public string Property { get; set; }
 }
+
+```
+
+```python
+"""Hotel API hotel group example"""
+import json
+import random
+import requests
+import string
+
+BASE_URI = 'https://partner.api.sandbox.bingads.microsoft.com/Travel/V1'
+
+CLIENT_ID = '<CLIENTIDGOESHERE'
+
+CUSTOMER_ID = "<CUSTOMERIDGOESHERE>"
+ACCOUNT_ID = "<ACCOUNTIDGOESHERE>"
+
+AUTHENTICATION_TOKEN = '<AUTHENTICATIONTOKENGOESHERE>'
+
+AUTHENTICATION_HEADER = {'Authorization': "Bearer " + AUTHENTICATION_TOKEN}
+
+def main():
+    """The main entry point of this example"""
+    print('Group example')
+
+    try:
+        hotel_groups = get_hotel_groups(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID)
+        print_json(hotel_groups)
+
+        hotel_group_id = add_hotel_group(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, {"Name": "summer sale " + random_string()})        
+        print("Added hotel group " + hotel_group_id)
+
+        hotel_group_to_update = {
+            "Id": hotel_group_id,
+            "Multipliers": {
+                {
+                    "Factor": .65,
+                    "DeviceTypes": {"Desktop"},
+                    "@odata.type": "#Model.DeviceMultiplier"
+                }
+            }
+        }
+
+        update_hotel_group(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, hotel_group_to_update)
+
+        hotel_group = get_hotel_group(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, hotel_group_id)
+        print_json(hotel_group)
+    except Exception as ex:
+        raise ex
+
+HOTEL_GROUPS_URI = BASE_URI + "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups"
+HOTEL_GROUP_URI = BASE_URI + "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups('{3}')"
+def get_hotel_groups(customer_id, account_id, subaccount_id):
+    """Get hotel groups"""
+    url = HOTEL_GROUPS_URI.format(customer_id, account_id, subaccount_id)
+    response = requests.get(url, headers=AUTHENTICATION_HEADER)
+    response.raise_for_status()
+    return json.loads(response.text)
+
+def add_hotel_group(customer_id, account_id, subaccount_id, hotel_group):
+    """Add a hotel group"""
+    url = HOTEL_GROUPS_URI.format(customer_id, account_id, subaccount_id)
+    headers = {'Content-Type': 'application/json'}
+    for header in AUTHENTICATION_HEADER:
+        headers[header] = AUTHENTICATION_HEADER[header]
+    response = requests.post(url, headers=headers, data=json.dumps(hotel_group))
+    response.raise_for_status()
+    return json.loads(response.text)['value']
+
+def update_hotel_group(customer_id, account_id, subaccount_id, hotel_group):
+    """Update a hotel group"""
+    url = HOTEL_GROUP_URI.format(customer_id, account_id, subaccount_id, hotel_group['id'])
+    response = requests.patch(url, headers=AUTHENTICATION_HEADER, data=json.dumps(hotel_group))
+    response.raise_for_status()
+    return json.loads(response.text)
+
+def get_hotel_group(customer_id, account_id, subaccount_id, hotel_group_id):
+    """Get a hotel group by id"""
+    url = HOTEL_GROUP_URI.format(customer_id, account_id, subaccount_id, hotel_group_id)
+    response = requests.get(url, headers=AUTHENTICATION_HEADER)
+    response.raise_for_status()
+    return json.loads(response.text)
+
+def print_json(obj):
+    """Print the object as json"""
+    print(json.dumps(obj, sort_keys=True, indent=4, separators=(',', ': ')))
+
+def random_string(length=6):
+    """Get a random string of characters of the specified length"""
+    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))
+
+# Main execution
+if __name__ == '__main__':
+    main()
 
 ```
