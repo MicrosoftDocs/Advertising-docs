@@ -16,7 +16,7 @@ The following example shows how to request a Hotel Ads Performance report, poll 
 
 For details about the elements used in this example, see the [reference](../hotel-service/reference.md) section. 
 
-For additional information, see [Working with hotel groups](../hotel-service/reporting.md). 
+For additional information, see [Hotel Ads Reporting API](../hotel-service/reporting.md). 
 
 This example uses the [CodeGrantFlow code example](../hotel-service/code-example-code-grant-flow.md) to get the access token. For this example to work, you must include CodeGrantFlow example in your project. For other options that you can use to get the OAuth access and refresh tokens, see [Getting Started](../hotel-service/get-started.md). 
 
