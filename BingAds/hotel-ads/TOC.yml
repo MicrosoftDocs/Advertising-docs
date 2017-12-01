@@ -19,6 +19,8 @@
       href: ../hotel-service/code-example-hotel-groups.md
     - name: Hotels
       href: ../hotel-service/code-example-hotels.md
+    - name: Reporting
+      href: ../hotel-service/code-example-reporting.md
     - name: OAuth
       href: ../hotel-service/code-example-oauth.md
       items:

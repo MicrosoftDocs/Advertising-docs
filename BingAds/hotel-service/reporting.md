@@ -17,11 +17,13 @@ ms.author: "scottwhi"
 
 Reporting is an asynchronous process where you send a request with report parameters to the reporting service and it puts the request in a queue. You then poll the service for status of the report job. When the status is Completed, you use the URL that the service provides to download the report.
 
+For an example that shows how to request and download a report, see [Reporting code example](code-example-reporting.md).
+
 ## Requesting a report
 
 To request a report, send an HTTP POST request to the following endpoint (for the sandbox endpoint, see [Endpoints](reference.md#endpoints)):
 
-`https://partner.api.bingads.microsoft.com/Travel/v1/Customers({customerId})/Accounts({accountId})/reportjobs`
+`https://partner.api.bingads.microsoft.com/Travel/v1/Customers({customerId})/Accounts({accountId})/ReportJobs`
 
 The body of the request is a [ReportJob](reference.md#reportjob) object. The following are the fields that you must specify in the request.
 
@@ -56,15 +58,16 @@ The response to the POST contains a report job ID (see [AddResponse](reference.m
 }
 ```
 
+
 ## Polling for the status of a report job
 
 After getting the ID, use it to get the status of the report job. To get the status, send an HTTP GET request to:
 
-https://partner.api.bingads.microsoft.com/Travel/v1/Customers({customerId})/Accounts({accountId})/reportjobs('{jobId}')
+https://partner.api.bingads.microsoft.com/Travel/v1/Customers({customerId})/Accounts({accountId})/ReportJobs('{jobId}')
 
-The body of the response is a [ReportJob](reference.md#reportjob) object. To determine the job's status, access the `Status` field. When the job finishes, `Status` is set to Completed and the `Url` field contains the URL that you use to download the report. The URL is valid for five minutes. If the URL expires, you must send another GET request to get the status of the job and a new download URL. 
+The report job is valid for an undertermined amount of time after it completes but typically for at least seven days. After seven days, you should submit a new report request.
 
-The report is valid for an undertermined amount of time after it completes but typically for at least two days. After two days, you should submit a new report request.
+The body of the response is a [ReportJob](reference.md#reportjob) object. To determine the job's status, access the `Status` field. When the job finishes, `Status` is set to Completed and the `Url` field contains the URL that you use to download the report. The URL is valid for seven days. If the URL expires, you must submit a new job request. 
 
 How long it takes for report jobs to finish is undetermined and is based on several variables that are constantly changing such number of jobs in the queue, amount of data, and size of reporting period. Generally, you should poll for the status of the job every five seconds until the job's status is Completed or Failed. 
 
@@ -72,6 +75,7 @@ If you asked the service to compress the report data (see the report job's `Comp
 
 > [!NOTE]
 > Compression is not available at this time. The [Release Notes](../hotel-ads/release-notes.md) topic will include a note when it's available.
+
 
 ## Filtering report data
 
@@ -100,6 +104,7 @@ Set `Filter` to an OData [$filter](http://www.odata.org/getting-started/basic-tu
 ```
 
 In addition to using `Filter`, you can use the `SubaccountId` and `HotelGroupId` fields in the [ReportJob](reference.md#reportjob) request object to limit the report to the specified subaccount or hotel group. If you want to limit the scope to a single subaccount or hotel group, using these fields offer better performance than using `Filter`. Also, If you use these request fields, you should not include them in the filter.
+
 
 
 ## Performance report columns
@@ -160,12 +165,24 @@ The request must include at least one dimension column and one measure column.
 
 |Column name|Report column name|Description
 |-|-|-
-|AverageCPC|Avg. CPC|The average cost per click, which is calculated by dividing the total cost of all clicks by the number of clicks. 
+|AverageCPC|Avg. CPC|The average cost per click, which is calculated by dividing the total cost of all clicks by the number of clicks. The cost is in the account's currency.
 |AveragePosition|Avg. pos.|The average position of ads on the results page. Position refers to the order of the ad on the page relative to all other ads across all slots.
 |AverageSlotPosition|Avg. slot pos.|The average position of ads in the slot type. If you include this metric, you should also include the SlotType dimension column.
 |Clicks|Clicks|The number of time ads were clicked.
 |CTR|CTR|The click-through-rate of the ads. CTR is calculated by dividing the number of times the ads were clicked by the number of impressions.
 |Impressions|Impr.|The number of times ads were shown.
-|SpendUSD|Spend|The cost per click (CPC) summed for each click, in US dollars.
+|Spend|Spend|The total cost of all clicks. The spend is in the account's currency.
 
 
+## Sample Performance report
+
+The following shows an example of the report's header rows and columns.
+
+```
+"Performance report (October 30, 2017 - November 29, 2017)"
+Request Id: f11b6610-5b85-4d7f-97ad-69668eb9da11
+
+Date,Subaccount ID,Hotel group ID,Clicks,CTR,Impr.,Spend,User country
+```
+
+The first header row contains the report's name and requested reporting period. The second header row contains the report's request ID. If there's a problem with the report, you'd use the ID when you contact support to get help with the issue.
