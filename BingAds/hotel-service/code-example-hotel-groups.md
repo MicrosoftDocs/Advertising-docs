@@ -8,6 +8,7 @@ manager: ehansen
 ms.author: "scottwhi"
 dev_langs:
   - csharp
+  - python
 ---
 
 # Hotel Group code example
@@ -565,5 +566,115 @@ class AdsApiError
     public string Message { get; set; }
     public string Property { get; set; }
 }
+
+```
+
+```python
+"""Hotel API hotel group example"""
+import json
+import random
+import requests
+import string
+
+BASE_URI = 'https://partner.api.sandbox.bingads.microsoft.com/Travel/V1'
+
+CLIENT_ID = '<CLIENTIDGOESHERE>'
+
+CUSTOMER_ID = "<CUSTOMERIDGOESHERE>"
+ACCOUNT_ID = "<ACCOUNTIDGOESHERE>"
+SUBACCOUNT_ID = "<SUBACCOUNTIDGOESHERE>"
+
+AUTHORIZATIONBEARER_TOKEN = '<AUTHENTICATIONTOKENGOESHERE>'
+
+HEADERS = {
+    'Authorization': "Bearer " + AUTHORIZATIONBEARER_TOKEN,
+    'Content-Type': 'application/json'
+}
+
+def main():
+    """The main entry point of this example"""
+    print('Group example')
+
+    try:
+        print("*** Retrieving hotel groups ***")
+        hotel_groups = get_hotel_groups(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID)
+        print_json(hotel_groups)
+
+        print("*** Adding a hotel group ***")
+        # The hotel group name must be unique so we append a random string to ensure uniqueness.
+        # You may use any convention as appropriate for your needs to ensure uniqueness of the name.
+        hotel_group_id = add_hotel_group(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, {"Name": "summer sale " + random_string()})
+        print("*** Added hotel group {0} ***".format(hotel_group_id))
+
+        hotel_group_to_update = {
+            "Id": hotel_group_id,
+            "BidMultipliers": [
+                {
+                    "Factor": .65,
+                    "DeviceTypes": ["Desktop"],
+                    '@odata.type': '#Model.DeviceMultiplier'
+                }
+            ]
+        }
+
+        print("*** Updating hotel group ***")
+        update_hotel_group(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, hotel_group_to_update)
+
+        print("*** Retrieving hotel group after update ***")
+        hotel_group = get_hotel_group(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, hotel_group_id)
+        print_json(hotel_group)
+        
+        print("*** Deleting hotel group {0} ***".format(hotel_group_id))
+        delete_hotel_group(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, hotel_group_id)
+    except Exception as ex:
+        raise ex
+
+HOTEL_GROUPS_URI = BASE_URI + "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups"
+HOTEL_GROUP_URI = BASE_URI + "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups('{3}')"
+def get_hotel_groups(customer_id, account_id, subaccount_id):
+    """Get hotel groups"""
+    url = HOTEL_GROUPS_URI.format(customer_id, account_id, subaccount_id)
+    response = requests.get(url, headers=HEADERS)
+    response.raise_for_status()
+    return json.loads(response.text)
+
+def add_hotel_group(customer_id, account_id, subaccount_id, hotel_group):
+    """Add a hotel group"""
+    url = HOTEL_GROUPS_URI.format(customer_id, account_id, subaccount_id)
+    response = requests.post(url, headers=HEADERS, data=json.dumps(hotel_group))
+    response.raise_for_status()
+    return json.loads(response.text)['value']
+
+def update_hotel_group(customer_id, account_id, subaccount_id, hotel_group):
+    """Update a hotel group"""
+    url = HOTEL_GROUP_URI.format(customer_id, account_id, subaccount_id, hotel_group['Id'])
+    response = requests.patch(url, headers=HEADERS, data=json.dumps(hotel_group))
+    response.raise_for_status()
+
+def get_hotel_group(customer_id, account_id, subaccount_id, hotel_group_id):
+    """Get a hotel group by id"""
+    url = HOTEL_GROUP_URI.format(customer_id, account_id, subaccount_id, hotel_group_id)
+    response = requests.get(url, headers=HEADERS)
+    response.raise_for_status()
+    return json.loads(response.text)
+
+HOTEL_GROUP_URI = BASE_URI + "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups('{3}')"
+def delete_hotel_group(customer_id, account_id, subaccount_id, hotel_group_id):
+    """Delete a hotel group"""
+    url = HOTEL_GROUP_URI.format(customer_id, account_id, subaccount_id, hotel_group_id)
+    response = requests.delete(url, headers=HEADERS)
+    response.raise_for_status()
+
+def print_json(obj):
+    """Print the object as json"""
+    print(json.dumps(obj, sort_keys=True, indent=4, separators=(',', ': ')))
+
+def random_string(length=6):
+    """Get a random string of characters of the specified length"""
+    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))
+
+# Main execution
+if __name__ == '__main__':
+    main()
 
 ```

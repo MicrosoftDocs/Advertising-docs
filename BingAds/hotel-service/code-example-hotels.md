@@ -8,6 +8,7 @@ manager: ehansen
 ms.author: "scottwhi"
 dev_langs:
   - csharp
+  - python
 ---
 
 # Hotel code example
@@ -628,4 +629,157 @@ class AdsApiError
     public string Property { get; set; }
 }
 
+```
+
+```python
+"""Hotel API hotel example"""
+import json
+import random
+import string
+import requests
+
+BASE_URI = 'https://partner.api.sandbox.bingads.microsoft.com/Travel/V1'
+
+CLIENT_ID = '<CLIENTIDGOESHERE>'
+
+CUSTOMER_ID = "<CUSTOMERIDGOESHERE>"
+ACCOUNT_ID = "<ACCOUNTIDGOESHERE>"
+SUBACCOUNT_ID = "<SUBACCOUNTGOESHERE>"
+
+AUTHORIZATIONBEARER_TOKEN = '<AUTHENTICATIONTOKENGOESHERE>'
+AUTHORIZATION_HEADER = {'Authorization': "Bearer " + AUTHORIZATIONBEARER_TOKEN}
+
+def main():
+    """The main entry point of this example"""
+    try:
+        print('Hotel example')
+
+        print('*** Listing ungrouped hotels ***')
+        ungrouped_hotels = list_ungrouped_hotels(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID)
+        print_json(ungrouped_hotels)
+
+        one_test_hotel = ungrouped_hotels[0]
+        print('*** Getting one test hotel {0} ***'.format(one_test_hotel['Name']))
+        hotel_to_update = get_hotel(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, one_test_hotel['Id'])
+        print_json(hotel_to_update)
+
+        hotel_to_update['BidMultipliers'] = [
+            {
+                "Factor": 1.2,
+                "DaysOfWeek": ["Thursday", "Friday", "Saturday"],
+                "@odata.type": "#Model.CheckinDayOfWeekMultiplier"
+            },
+            {
+                "Factor": .9,
+                "DaysOfWeek": ["Sunday", "Monday"],
+                "@odata.type": "#Model.CheckinDayOfWeekMultiplier"
+            },
+            {
+                "Factor": 1.3,
+                "MinimumNumberOfDays": 3,
+                "@odata.type": "#Model.AdvanceBookingWindowMultiplier"
+            }
+        ]
+
+        print("*** Updating hotel {0} ***".format(hotel_to_update['Name']))
+        update_hotel(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, hotel_to_update)
+
+        print("*** Retrieving hotel after update ***")
+        retrieved_hotel = get_hotel(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, hotel_to_update['Id'])
+        print_json(retrieved_hotel)
+
+        print('*** Listing hotel groups ***')
+        hotel_groups = list_hotel_groups(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID)
+        print_json(hotel_groups)
+
+        print("*** Add a hotel group ***")
+        hotel_group_to_add = {"Name": "Test Hotel Group {0}".format(random_string())}
+        added_hotel_group_id = add_hotel_group(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, hotel_group_to_add)
+        print("*** Added hotel group {0}: {1} ***".format(added_hotel_group_id, hotel_group_to_add['Name']))
+
+        print("*** Associating hotel {0} to hotel group {1}".format(hotel_to_update['Name'], added_hotel_group_id))
+        associations = associate_hotel_to_group(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, hotel_to_update['Id'], added_hotel_group_id)
+        print_json(associations)
+
+        print("*** Ungrouping hotel {0} ***".format(hotel_to_update['Name']))
+        ungroup_hotel(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, hotel_to_update['Id'])
+
+    except Exception as ex:
+        raise ex
+
+UNGROUPED_URI = BASE_URI + "/Customers({0})/Accounts({1})/SubAccounts('{2}')/Ungrouped"
+def list_ungrouped_hotels(customer_id, account_id, subaccount_id):
+    """Get an existing product"""
+    url = UNGROUPED_URI.format(customer_id, account_id, subaccount_id)
+    response = requests.get(url, headers=AUTHORIZATION_HEADER)
+    response.raise_for_status()
+    return json.loads(response.text)['value']
+
+HOTEL_GROUPS_URI = BASE_URI + "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups"
+def list_hotel_groups(customer_id, account_id, subaccount_id):
+    """List hotel groups"""
+    url = HOTEL_GROUPS_URI.format(customer_id, account_id, subaccount_id)
+    response = requests.get(url, headers=AUTHORIZATION_HEADER)
+    response.raise_for_status()
+    return json.loads(response.text)['value']
+
+def add_hotel_group(customer_id, account_id, subaccount_id, hotel_group):
+    """Add a hotel group"""
+    url = HOTEL_GROUPS_URI.format(customer_id, account_id, subaccount_id)
+    response = requests.post(url, headers=AUTHORIZATION_HEADER, data=json.dumps(hotel_group))
+    response.raise_for_status()
+    return json.loads(response.text)['value']
+
+HOTEL_URI = BASE_URI + "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups('{3}')/Hotels('{4}')"
+def get_hotel(customer_id, account_id, subaccount_id, hotel_id, hotel_group_id=None):
+    """Get a hotel by Id"""
+    if hotel_group_id is None:
+        hotel_group_id = get_default_hotel_group(customer_id, account_id, subaccount_id)['Id']
+    url = HOTEL_URI.format(customer_id, account_id, subaccount_id, hotel_group_id, hotel_id)
+    response = requests.get(url, headers=AUTHORIZATION_HEADER)
+    response.raise_for_status()
+    return json.loads(response.text)
+
+def update_hotel(customer_id, account_id, subaccount_id, hotel, hotel_group_id=None):
+    """Update a hotel"""
+    if hotel_group_id is None:
+        hotel_group_id = get_default_hotel_group(customer_id, account_id, subaccount_id)['Id']
+    url = HOTEL_URI.format(customer_id, account_id, subaccount_id, hotel_group_id, hotel['Id'])
+    response = requests.patch(url, headers=AUTHORIZATION_HEADER)
+    response.raise_for_status()
+
+def get_default_hotel_group(customer_id, account_id, subaccount_id):
+    """Get the hotel group named 'Ungrouped'"""
+    hotel_groups = list_hotel_groups(customer_id, account_id, subaccount_id)
+    return [x for x in hotel_groups if x['Name'] == 'Ungrouped'][0]
+
+ASSOCIATE_URI = BASE_URI + "/Customers({0})/Accounts({1})/SubAccounts('{2}')/Associate"
+def associate_hotel_to_group(customer_id, account_id, subaccount_id, hotel_id, hotel_group_id=None):
+    """Associate a hotel to a hotel group"""
+    if hotel_group_id is None:
+        hotel_group_id = get_default_hotel_group(customer_id, account_id, subaccount_id)['Id']
+    url = ASSOCIATE_URI.format(customer_id, account_id, subaccount_id)
+    response = requests.post(url, headers=AUTHORIZATION_HEADER, data=json.dumps({
+        "HotelAssociations": [
+            {"HotelGroupId": hotel_group_id, "HotelId": hotel_id}
+        ]
+    }))
+    response.raise_for_status()
+    return json.loads(response.text)['value']
+
+def ungroup_hotel(customer_id, account_id, subaccount_id, hotel_id):
+    """Associate a hotel to the 'Ungrouped' hotel group"""
+    return associate_hotel_to_group(customer_id, account_id, subaccount_id, hotel_id, hotel_group_id=None)
+
+def print_json(obj):
+    """Print the object as json"""
+    print(json.dumps(obj, sort_keys=True, indent=4, separators=(',', ': ')))
+
+def random_string(length=6):
+    """Get a random string of characters of the specified length"""
+    return ''.join(random.choices(string.ascii_uppercase + string.digits, k=length))
+
+# Main execution
+if __name__ == '__main__':
+    main()
 ```
