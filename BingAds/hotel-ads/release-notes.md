@@ -12,6 +12,16 @@ ms.author: "scottwhi"
 
 For information about changes that were included with each release, see the following sections.
 
+## December 1, 2017
+
+### Breaking changes
+
+- Renamed the SpendUSD Performance Report column to [Spend](../hotel-service/reporting.md#measure-columns).
+
+### Documentation changes  
+
+- Added reporting example code (see [Reporting code example](../hotel-service/code-example-reporting.md)).
+
 ## November 21, 2017
 
 ### Nonbreaking changes
