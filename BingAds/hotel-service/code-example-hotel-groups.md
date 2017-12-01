@@ -601,8 +601,7 @@ def main():
         print_json(hotel_groups)
 
         print("*** Adding a hotel group ***")
-        # The hotel group name must be unique so we append a random string to ensure uniqueness.
-        # You may use any convention as appropriate for your needs to ensure uniqueness of the name.
+        # The hotel group name must be unique. This example appends a random string to ensure that the hotel group name is unique in case you run the example multiple times; appending the random string is not required.
         hotel_group_id = add_hotel_group(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, {"Name": "summer sale " + random_string()})
         print("*** Added hotel group {0} ***".format(hotel_group_id))
 
