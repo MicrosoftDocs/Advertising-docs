@@ -12,15 +12,23 @@ ms.author: "scottwhi"
 
 For information about changes that were included with each release, see the following sections.
 
+
+
 ## December 1, 2017
 
 ### Breaking changes
 
-- Renamed the SpendUSD Performance Report column to [Spend](../hotel-service/reporting.md#measure-columns).
+- Renamed the SpendUSD Performance Report column to [Spend](../hotel-service/reporting.md#measure-columns).  
+  
+- Changed the length of time that the download URL is valid. The URL now expires in seven days instead of five minutes.
+  
+- Changed the length of time that the report job is available. The job now expires in about seven days instead of two days.
 
 ### Documentation changes  
 
 - Added reporting example code (see [Reporting code example](../hotel-service/code-example-reporting.md)).
+
+
 
 ## November 21, 2017
 
@@ -37,11 +45,13 @@ For information about changes that were included with each release, see the foll
   - Added the [Hotel Ads Reporting API](../hotel-service/reporting.md) overview, which details the reporting workflow.
 
 
+
 ## November 17, 2017
 
 ### Nonbreaking changes
 
 - Added the Delete URI template for hotel groups (see [SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')](../hotel-service/reference.md#deletehotelgroup)).  
+
 
 
 ## November 8, 2017
@@ -51,6 +61,8 @@ For information about changes that were included with each release, see the foll
 - Added the production endpoint (see [Endpoints](../hotel-service/reference.md#endpoints)).  
   
 - Fixed documentation error: Removed Paused as a possible value from the `Status` field of [Hotel](../hotel-service/reference.md#hotel), [HotelGroup](../hotel-service/reference.md#hotelgroup), and [Subaccount](../hotel-service/reference.md#subaccount). 
+
+
 
 ## October 15, 2017
 

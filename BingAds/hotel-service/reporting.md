@@ -58,15 +58,16 @@ The response to the POST contains a report job ID (see [AddResponse](reference.m
 }
 ```
 
+
 ## Polling for the status of a report job
 
 After getting the ID, use it to get the status of the report job. To get the status, send an HTTP GET request to:
 
 https://partner.api.bingads.microsoft.com/Travel/v1/Customers({customerId})/Accounts({accountId})/ReportJobs('{jobId}')
 
-The body of the response is a [ReportJob](reference.md#reportjob) object. To determine the job's status, access the `Status` field. When the job finishes, `Status` is set to Completed and the `Url` field contains the URL that you use to download the report. The URL is valid for five minutes. If the URL expires, you must send another GET request to get the status of the job and a new download URL. 
+The report job is valid for an undertermined amount of time after it completes but typically for at least seven days. After seven days, you should submit a new report request.
 
-The report is valid for an undertermined amount of time after it completes but typically for at least two days. After two days, you should submit a new report request.
+The body of the response is a [ReportJob](reference.md#reportjob) object. To determine the job's status, access the `Status` field. When the job finishes, `Status` is set to Completed and the `Url` field contains the URL that you use to download the report. The URL is valid for seven days. If the URL expires, you must submit a new job request. 
 
 How long it takes for report jobs to finish is undetermined and is based on several variables that are constantly changing such number of jobs in the queue, amount of data, and size of reporting period. Generally, you should poll for the status of the job every five seconds until the job's status is Completed or Failed. 
 
@@ -74,6 +75,7 @@ If you asked the service to compress the report data (see the report job's `Comp
 
 > [!NOTE]
 > Compression is not available at this time. The [Release Notes](../hotel-ads/release-notes.md) topic will include a note when it's available.
+
 
 ## Filtering report data
 
