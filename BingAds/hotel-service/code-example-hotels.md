@@ -704,6 +704,8 @@ def main():
         print("*** Ungrouping hotel {0} ***".format(hotel_to_update['Name']))
         ungroup_hotel(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, hotel_to_update['Id'])
 
+        print("*** Deleting hotel group {0} ***".format(added_hotel_group_id))
+        delete_hotel_group(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, added_hotel_group_id)
     except Exception as ex:
         raise ex
 
@@ -770,6 +772,13 @@ def associate_hotel_to_group(customer_id, account_id, subaccount_id, hotel_id, h
 def ungroup_hotel(customer_id, account_id, subaccount_id, hotel_id):
     """Associate a hotel to the 'Ungrouped' hotel group"""
     return associate_hotel_to_group(customer_id, account_id, subaccount_id, hotel_id, hotel_group_id=None)
+
+HOTEL_GROUP_URI = BASE_URI + "/Customers({0})/Accounts({1})/SubAccounts('{2}')/HotelGroups('{3}')"
+def delete_hotel_group(customer_id, account_id, subaccount_id, hotel_group_id):
+    """Delete a hotel group"""
+    url = HOTEL_GROUP_URI.format(customer_id, account_id, subaccount_id, hotel_group_id)
+    response = requests.delete(url, headers=AUTHORIZATION_HEADER)
+    response.raise_for_status()
 
 def print_json(obj):
     """Print the object as json"""
