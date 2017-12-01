@@ -19,7 +19,7 @@ For details about the elements used in this example, see the [reference](../hote
 
 For additional information, see [Working with hotels](../hotel-service/manage-hotel-campaigns.md#workingwithhotels). 
 
-The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Getting Started](../hotel-service/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-service/code-example-oauth.md).
+The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Getting Started](../hotel-service/get-started.md). For a simple example that shows how to get an OAuth access and refresh token in C#, see [Call CodeGrantflow example](../hotel-service/code-example-call-code-grant-flow.md).
 
 
 ```csharp
