@@ -19,7 +19,7 @@ For details about the elements used in this example, see the [reference](../hote
 
 For additional information, see [Working with hotel groups](../hotel-service/manage-hotel-campaigns.md#workingwithhotelgroups). 
 
-The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Getting Started](../hotel-service/get-started.md). For a simple example that shows how to get an OAuth access and refresh token, see [C#](../hotel-service/code-example-oauth.md).
+The example does not include calls to get the OAuth access and refresh tokens. For options in getting the tokens, see [Getting Started](../hotel-service/get-started.md). For a simple example that shows how to get an OAuth access and refresh token in C#, see [Call CodeGrantflow example](../hotel-service/code-example-call-code-grant-flow.md).
 
 
 ```csharp
@@ -601,7 +601,9 @@ def main():
         print_json(hotel_groups)
 
         print("*** Adding a hotel group ***")
-        # The hotel group name must be unique. This example appends a random string to ensure that the hotel group name is unique in case you run the example multiple times; appending the random string is not required.
+        # The hotel group name must be unique. This example appends a random string to
+        # ensure that the hotel group name is unique in case you run the example multiple
+        # times; appending the random string is not required.
         hotel_group_id = add_hotel_group(CUSTOMER_ID, ACCOUNT_ID, SUBACCOUNT_ID, {"Name": "summer sale " + random_string()})
         print("*** Added hotel group {0} ***".format(hotel_group_id))
 
