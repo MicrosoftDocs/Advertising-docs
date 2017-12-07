@@ -21,8 +21,8 @@ The *GetKeywordLocationsRequest* object defines the [body](#request-body) and [h
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="device"></a>Device|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword locations data for only the device types that you specify, if available.|**string**|
-|<a name="keywords"></a>Keywords|An array of keywords for which you want to get geographical location information. The data is broken out by device type. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string**|
+|<a name="device"></a>Device|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword locations data for only the device types that you specify, if available.|**string** array|
+|<a name="keywords"></a>Keywords|An array of keywords for which you want to get geographical location information. The data is broken out by device type. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string** array|
 |<a name="language"></a>Language|The language in which the keywords are written.<br /><br />For possible values, see [Ad Languages](~/guides/ad-languages.md).|**string**|
 |<a name="level"></a>Level|The level at which to aggregate the geographical location data. The following are the possible values:<br /><br />0 - Country<br /><br />1 - State/Province<br /><br />2 - Metropolitan area<br /><br />3 - City<br /><br />The default value is 1 (State/Province).|**int**|
 |<a name="maxlocations"></a>MaxLocations|The maximum number of locations to return. You can request a maximum of 10 locations.<br /><br />The default value is 10.|**int**|
@@ -192,5 +192,5 @@ response=adinsight_service.GetKeywordLocations(
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Namespace: *Microsoft.Advertiser.AdInsight.Api.Service.V11*  
 

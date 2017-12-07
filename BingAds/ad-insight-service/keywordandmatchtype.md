@@ -28,7 +28,7 @@ Defines an object that contains a keyword and corresponding match types.
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Message  
+Namespace: *http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Message*  
 
 ## Used By
 [GetEstimatedBidByKeywords](getestimatedbidbykeywords.md)  

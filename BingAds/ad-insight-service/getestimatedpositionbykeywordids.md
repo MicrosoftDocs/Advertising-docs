@@ -24,7 +24,7 @@ The *GetEstimatedPositionByKeywordIdsRequest* object defines the [body](#request
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordids"></a>KeywordIds|An array of identifiers of the keywords for which you want to get the estimated position in the search results, based on the specified bid value. You may specify a maximum of 1,000 keyword identifiers.|**long**|
+|<a name="keywordids"></a>KeywordIds|An array of identifiers of the keywords for which you want to get the estimated position in the search results, based on the specified bid value. You may specify a maximum of 1,000 keyword identifiers.|**long** array|
 |<a name="maxbid"></a>MaxBid|The maximum bid value to use to determine the estimated position in the search results.<br /><br />You must specify the bid value in the currency of the account.|**double**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -159,5 +159,5 @@ response=adinsight_service.GetEstimatedPositionByKeywordIds(
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Namespace: *Microsoft.Advertiser.AdInsight.Api.Service.V11*  
 

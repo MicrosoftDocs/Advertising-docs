@@ -25,7 +25,7 @@ The *GetBidLandscapeByKeywordIdsRequest* object defines the [body](#request-body
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="includecurrentbid"></a>IncludeCurrentBid|When set to **false**, the suggested bid values might not include the keyword's current bid. The default value is **false**.<br /><br />When set to **true**, one of the suggested bid values will be equal to the keyword's current bid.|**boolean**|
-|<a name="keywordids"></a>KeywordIds|An array of identifiers of the keywords for which you want to get the list of suggested bid values with estimated performance statistics.<br /><br />You may specify a maximum of 1,000 keywords.|**long**|
+|<a name="keywordids"></a>KeywordIds|An array of identifiers of the keywords for which you want to get the list of suggested bid values with estimated performance statistics.<br /><br />You may specify a maximum of 1,000 keywords.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -162,5 +162,5 @@ response=adinsight_service.GetBidLandscapeByKeywordIds(
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Namespace: *Microsoft.Advertiser.AdInsight.Api.Service.V11*  
 
