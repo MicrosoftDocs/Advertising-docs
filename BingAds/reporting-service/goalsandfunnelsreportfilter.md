@@ -35,12 +35,12 @@ Defines the criteria to use to filter the goals and funnels report data.
 |<a name="campaignstatus"></a>CampaignStatus|The report will include data for only the campaign status. For example, you can use the filter to include data for only active campaigns.<br /><br />You can specify one or more campaign statuses.|[CampaignStatusReportFilter](campaignstatusreportfilter.md)|
 |<a name="deviceos"></a>DeviceOS|The report will include data where the ad is displayed on the specified device operating systems. For example, you may use the filter to include data for only ads displayed on Windows devices.|[DeviceOSReportFilter](deviceosreportfilter.md)|
 |<a name="devicetype"></a>DeviceType|The report will include data where the ad is displayed on the specified device types. For example, you may use the filter to include data for only ads displayed on smartphones.<br /><br />You may specify one or more device types.|[DeviceTypeReportFilter](devicetypereportfilter.md)|
-|<a name="goalids"></a>GoalIds|The report will include data for only the specified goals. The list can contain a maximum of 300 identifiers.|**long**|
+|<a name="goalids"></a>GoalIds|The report will include data for only the specified goals. The list can contain a maximum of 300 identifiers.|**long** array|
 |<a name="keywordstatus"></a>KeywordStatus|The report will include data for only the keyword status. For example, you can use the filter to include data for only active keywords.<br /><br />You can specify one or more keyword statuses.|[KeywordStatusReportFilter](keywordstatusreportfilter.md)|
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https://bingads.microsoft.com/Reporting/v11  
+Namespace: ```https://bingads.microsoft.com/Reporting/v11```  
 
 ## Used By
 [GoalsAndFunnelsReportRequest](goalsandfunnelsreportrequest.md)  

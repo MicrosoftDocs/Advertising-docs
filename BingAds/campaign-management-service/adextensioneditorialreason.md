@@ -26,13 +26,13 @@ Defines an object that you can use to determine the component of an ad extension
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="location"></a>Location|The component of the ad extension that failed editorial review.|**string**|
-|<a name="publishercountries"></a>PublisherCountries|The list of publisher countries whose editorial guidelines do not allow the specified term.|**string**|
+|<a name="publishercountries"></a>PublisherCountries|The list of publisher countries whose editorial guidelines do not allow the specified term.|**string** array|
 |<a name="reasoncode"></a>ReasonCode|A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/guides/editorial-failure-reason-codes.md).|**int**|
 |<a name="term"></a>Term|The term that failed editorial review.<br /><br />This element will not be set if a combination of terms caused the failure or if the failure was based on a policy violation.|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 
 ## Used By
 [AdExtensionEditorialReasonCollection](adextensioneditorialreasoncollection.md)  

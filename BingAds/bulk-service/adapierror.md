@@ -32,7 +32,7 @@ Defines an error object that contains the details that explain why the service o
 
 ## Requirements
 Service: [BulkService.svc v11](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
-Namespace: https://adapi.microsoft.com  
+Namespace: ```https://adapi.microsoft.com```  
 
 ## Used By
 [AdApiFaultDetail](adapifaultdetail.md)  

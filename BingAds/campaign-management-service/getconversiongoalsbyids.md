@@ -24,7 +24,7 @@ The *GetConversionGoalsByIdsRequest* object defines the [body](#request-body) an
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="conversiongoalids"></a>ConversionGoalIds|A maximum of 100 identifiers of the conversion goals that you want to get. <br /><br />If *ConversionGoalIds* is null or empty, then you are effectively requesting all conversion goals of the specified types for the account. |**long**|
+|<a name="conversiongoalids"></a>ConversionGoalIds|A maximum of 100 identifiers of the conversion goals that you want to get. <br /><br />If *ConversionGoalIds* is null or empty, then you are effectively requesting all conversion goals of the specified types for the account. |**long** array|
 |<a name="conversiongoaltypes"></a>ConversionGoalTypes|One or more types of conversion goals to return. |[ConversionGoalType](conversiongoaltype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -199,5 +199,5 @@ response=campaignmanagement_service.GetConversionGoalsByIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

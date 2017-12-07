@@ -26,5 +26,5 @@ Defines the base object from which all fault detail objects derive.
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://adapi.microsoft.com  
+Namespace: ```https://adapi.microsoft.com```  
 

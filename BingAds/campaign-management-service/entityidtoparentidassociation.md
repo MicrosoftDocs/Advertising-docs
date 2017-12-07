@@ -28,7 +28,7 @@ Defines an object that contains the unique system identifier of an entity such a
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11  
+Namespace: ```http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11```  
 
 ## Used By
 [AppealEditorialRejections](appealeditorialrejections.md)  

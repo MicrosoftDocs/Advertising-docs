@@ -22,11 +22,11 @@ The *UpdateUserRolesRequest* object defines the [body](#request-body) and [heade
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="customerid"></a>CustomerId|The identifier of the customer to which the user belongs.|**long**|
-|<a name="deleteaccountids"></a>DeleteAccountIds|An array of identifiers of the accounts to remove from the list of accounts that the user can manage.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long**|
-|<a name="deletecustomerids"></a>DeleteCustomerIds|An array of identifiers of the customers to remove from the list of customers that the user can manage.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long**|
+|<a name="deleteaccountids"></a>DeleteAccountIds|An array of identifiers of the accounts to remove from the list of accounts that the user can manage.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long** array|
+|<a name="deletecustomerids"></a>DeleteCustomerIds|An array of identifiers of the customers to remove from the list of customers that the user can manage.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long** array|
 |<a name="deleteroleid"></a>DeleteRoleId|The identifier of the role to which the values specified in the *DeleteAccountIds* or *DeleteCustomerIds* element applies, if set.<br /><br />For more information about possible role values, see the corresponding **Integer Value** column within the [UserRole](../customer-management-service/userrole.md).|**int**|
-|<a name="newaccountids"></a>NewAccountIds|An array of identifiers of the accounts to restrict the user to. The user will be able to manage only these accounts.<br/><br/>If the user is currently restricted to a set of accounts, set this element to the new accounts that you want the user to also manage. For example, if the user currently manages accounts 123 and 456, and you want the user to also manage account 789, set this element to 789.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long**|
-|<a name="newcustomerids"></a>NewCustomerIds|An array of identifiers of the customers to restrict the user to. The user will be able to manage only these customers.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long**|
+|<a name="newaccountids"></a>NewAccountIds|An array of identifiers of the accounts to restrict the user to. The user will be able to manage only these accounts.<br/><br/>If the user is currently restricted to a set of accounts, set this element to the new accounts that you want the user to also manage. For example, if the user currently manages accounts 123 and 456, and you want the user to also manage account 789, set this element to 789.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long** array|
+|<a name="newcustomerids"></a>NewCustomerIds|An array of identifiers of the customers to restrict the user to. The user will be able to manage only these customers.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long** array|
 |<a name="newroleid"></a>NewRoleId|The identifier of the role to which the values specified in the *NewAccountIds* or *NewCustomerIds* element applies to, if set.<br /><br />For more information about possible role values, see the corresponding **Integer Value** column within the [UserRole](../customer-management-service/userrole.md).|**int**|
 |<a name="userid"></a>UserId|The identifier of the user whose role you want to update.|**long**|
 
@@ -218,5 +218,5 @@ Users with account level roles can be restricted to specific accounts. Users wit
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https://bingads.microsoft.com/Customer/v11  
+Namespace: ```https://bingads.microsoft.com/Customer/v11```  
 

@@ -25,7 +25,7 @@ The *DeleteMediaRequest* object defines the [body](#request-body) and [header](#
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that owns the media library.|**long**|
-|<a name="mediaids"></a>MediaIds|A maximum of 100 media identifiers to delete from the account's media library.|**long**|
+|<a name="mediaids"></a>MediaIds|A maximum of 100 media identifiers to delete from the account's media library.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -159,5 +159,5 @@ response=campaignmanagement_service.DeleteMedia(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

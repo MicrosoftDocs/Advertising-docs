@@ -24,13 +24,13 @@ Defines the set of accounts, campaigns, and ad groups to include in the report.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accountids"></a>AccountIds|An array of account identifiers that identifies the account data to include in the report. You can specify a maximum of 1,000 account identifiers.|**long**|
+|<a name="accountids"></a>AccountIds|An array of account identifiers that identifies the account data to include in the report. You can specify a maximum of 1,000 account identifiers.|**long** array|
 |<a name="adgroups"></a>AdGroups|An array of *AdGroupReportScope* objects that identifies the ad group data to include in the report. You can specify a maximum of 300 ad group identifiers.|[AdGroupReportScope](adgroupreportscope.md) array|
 |<a name="campaigns"></a>Campaigns|An array of *CampaignReportScope* objects that identifies the campaign data to include in the report. You can specify a maximum of 300 campaign identifiers.|[CampaignReportScope](campaignreportscope.md) array|
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https://bingads.microsoft.com/Reporting/v11  
+Namespace: ```https://bingads.microsoft.com/Reporting/v11```  
 
 ## Used By
 [AdDynamicTextPerformanceReportRequest](addynamictextperformancereportrequest.md)  

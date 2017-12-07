@@ -33,12 +33,12 @@ Defines the criteria to use to filter the conversion performance report data.
 |<a name="adgroupstatus"></a>AdGroupStatus|The report will include data for only the ad group status. For example, you can use the filter to include data for only active ad groups.<br /><br />You can specify one or more ad group statuses.|[AdGroupStatusReportFilter](adgroupstatusreportfilter.md)|
 |<a name="campaignstatus"></a>CampaignStatus|The report will include data for only the campaign status. For example, you can use the filter to include data for only active campaigns.<br /><br />You can specify one or more campaign statuses.|[CampaignStatusReportFilter](campaignstatusreportfilter.md)|
 |<a name="devicetype"></a>DeviceType|The report will include data for only the specified types of devices on which the ad is displayed. For example, you can use the filter to include data only for text ads displayed on smartphones.<br /><br />You can specify one or more device types.|[DeviceTypeReportFilter](devicetypereportfilter.md)|
-|<a name="keywords"></a>Keywords|The report will include data for only the specified keywords. You can specify a maximum of 75 keywords. Each keyword can contain a maximum of 100 characters.|**string**|
+|<a name="keywords"></a>Keywords|The report will include data for only the specified keywords. You can specify a maximum of 75 keywords. Each keyword can contain a maximum of 100 characters.|**string** array|
 |<a name="keywordstatus"></a>KeywordStatus|The report will include data for only the keyword status. For example, you can use the filter to include data for only active keywords.<br /><br />You can specify one or more keyword statuses.|[KeywordStatusReportFilter](keywordstatusreportfilter.md)|
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https://bingads.microsoft.com/Reporting/v11  
+Namespace: ```https://bingads.microsoft.com/Reporting/v11```  
 
 ## Used By
 [ConversionPerformanceReportRequest](conversionperformancereportrequest.md)  

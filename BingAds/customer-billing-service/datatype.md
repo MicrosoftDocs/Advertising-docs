@@ -40,7 +40,7 @@ Defines the possible formats in which to generate the billing document.
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https://bingads.microsoft.com/Billing/v11  
+Namespace: ```https://bingads.microsoft.com/Billing/v11```  
 
 ## Used By
 [BillingDocument](billingdocument.md)  

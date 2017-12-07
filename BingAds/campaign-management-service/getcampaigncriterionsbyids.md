@@ -21,7 +21,7 @@ The *GetCampaignCriterionsByIdsRequest* object defines the [body](#request-body)
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="campaigncriterionids"></a>CampaignCriterionIds|A list of unique identifiers that identify the campaign criterions to get.<br/><br/>You can include up to 100 campaign criterion identifiers per request.<br /><br />If this element is null, all criterions for the specified *CampaignId* will be retrieved.|**long**|
+|<a name="campaigncriterionids"></a>CampaignCriterionIds|A list of unique identifiers that identify the campaign criterions to get.<br/><br/>You can include up to 100 campaign criterion identifiers per request.<br /><br />If this element is null, all criterions for the specified *CampaignId* will be retrieved.|**long** array|
 |<a name="campaignid"></a>CampaignId|The unique identifier of the campaign whose criterions you want to get.|**long**|
 |<a name="criteriontype"></a>CriterionType|The type of criterion to get, for example *Webpage*. You can specify only one type. The *Targets* value is not allowed for this operation.|[CampaignCriterionType](campaigncriteriontype.md)|
 
@@ -247,5 +247,5 @@ response=campaignmanagement_service.GetCampaignCriterionsByIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

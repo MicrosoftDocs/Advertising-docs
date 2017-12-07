@@ -21,7 +21,7 @@ The *GetAdGroupCriterionsByIdsRequest* object defines the [body](#request-body) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of unique identifiers that identify the criterions to get.<br/><br/>You can include up to 1,000 ad group criterion identifiers per request. <br /><br />If this element is null, all criterions for the specified *AdGroupId* will be retrieved.|**long**|
+|<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of unique identifiers that identify the criterions to get.<br/><br/>You can include up to 1,000 ad group criterion identifiers per request. <br /><br />If this element is null, all criterions for the specified *AdGroupId* will be retrieved.|**long** array|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that owns the criterions to get.|**long**|
 |<a name="criteriontype"></a>CriterionType|The type of criterion to get, for example *Webpage*. You can specify only one type. The *Targets* and *Audience* values are not allowed for this operation.|[AdGroupCriterionType](adgroupcriteriontype.md)|
 
@@ -240,5 +240,5 @@ response=campaignmanagement_service.GetAdGroupCriterionsByIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

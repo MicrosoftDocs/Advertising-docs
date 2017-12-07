@@ -22,7 +22,7 @@ The *GetNegativeSitesByCampaignIdsRequest* object defines the [body](#request-bo
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the campaigns.|**long**|
-|<a name="campaignids"></a>CampaignIds|An array of identifiers of the campaigns that contain the negative site URLs that you want to get.<br /><br />The call fails if the sum of all negative site URLs defined in the specified list of campaigns exceeds 30,000 URLs. To ensure that the call succeeds, consider limiting the number of campaigns to 15.|**long**|
+|<a name="campaignids"></a>CampaignIds|An array of identifiers of the campaigns that contain the negative site URLs that you want to get.<br /><br />The call fails if the sum of all negative site URLs defined in the specified list of campaigns exceeds 30,000 URLs. To ensure that the call succeeds, consider limiting the number of campaigns to 15.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -165,5 +165,5 @@ response=campaignmanagement_service.GetNegativeSitesByCampaignIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

@@ -26,7 +26,7 @@ Defines an array of objects that associate an ad extension and its editorial sta
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 
 ## Used By
 [GetAdExtensionsAssociations](getadextensionsassociations.md)  

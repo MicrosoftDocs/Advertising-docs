@@ -37,7 +37,7 @@ The list of key and value strings for forward compatibility to avoid otherwise b
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: http://schemas.datacontract.org/2004/07/System.Collections.Generic  
+Namespace: ```http://schemas.datacontract.org/2004/07/System.Collections.Generic```  
 
 ## Used By
 [Account](account.md)  

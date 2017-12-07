@@ -41,8 +41,8 @@ You can associate an app ad extension with one or more campaigns and ad groups. 
 |<a name="destinationurl"></a>DestinationUrl|The URL of the app store download webpage that users are taken to when they click the app extension link.<br /><br />The URL can contain dynamic text strings such as {keyword}. For a list of supported parameters, see the Available parameters section within the Bing Ads help article [What tracking or URL parameters can I use?](http://help.bingads.microsoft.com/#apex/3/en/56799/2).<br /><br />The URL can contain a maximum of 1,024 characters. If the URL does not specify a protocol, the system uses the HTTP protocol when a user clicks the ad. If the URL specifies the HTTP protocol when you add an ad, the service will remove the http:// protocol string (the HTTP protocol string does not count against the 1,024 character limit); however, the service will not remove an HTTPS protocol string (https://) from the URL.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
 |<a name="displaytext"></a>DisplayText|The text displayed in the app ad extension. The text can contain a maximum of 35 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|
 |<a name="finalappurls"></a>FinalAppUrls|Reserved for future use.|[AppUrl](appurl.md) array|
-|<a name="finalmobileurls"></a>FinalMobileUrls|Reserved for future use.|**string**|
-|<a name="finalurls"></a>FinalUrls|Reserved for future use.|**string**|
+|<a name="finalmobileurls"></a>FinalMobileUrls|Reserved for future use.|**string** array|
+|<a name="finalurls"></a>FinalUrls|Reserved for future use.|**string** array|
 |<a name="trackingurltemplate"></a>TrackingUrlTemplate|Reserved for future use.|**string**|
 |<a name="urlcustomparameters"></a>UrlCustomParameters|Reserved for future use.|[CustomParameters](customparameters.md)|
 
@@ -65,5 +65,5 @@ The [AppAdExtension](appadextension.md) object derives from the [AdExtension](ad
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

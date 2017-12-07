@@ -41,5 +41,5 @@ The [ApiFault](apifault.md) object derives from the [ApplicationFault](applicati
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https://bingads.microsoft.com/Customer/v11/Exception  
+Namespace: ```https://bingads.microsoft.com/Customer/v11/Exception```  
 

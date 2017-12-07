@@ -21,7 +21,7 @@ The *DeleteAdGroupCriterionsRequest* object defines the [body](#request-body) an
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of unique identifiers that identify the criterion to delete.<br/><br/>You can include up to 1,000 ad group criterion identifiers per request. |**long**|
+|<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of unique identifiers that identify the criterion to delete.<br/><br/>You can include up to 1,000 ad group criterion identifiers per request. |**long** array|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that owns the criterion to delete.|**long**|
 |<a name="criteriontype"></a>CriterionType|The type of criterion to delete, for example *Webpage*. You can specify only one criterion type value per call.<br/><br/>To add, delete, or update target criterions i.e., age, day and time, device, gender, location, location intent, and radius criterions, you must specify the *CriterionType* value as *Targets*. You can add, delete, and update multiple target criterion types in the same operation. To retrieve these target criterions via [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) you must request the specific type individually i.e., *Age*, *DayTime*, *Device*, *Gender*, *Location*, *LocationIntent*, and *Radius*.<br/><br/>To add, delete, or update audience criterions i.e., custom audiences, in-market audiences, and remarketing lists, you must specify the *CriterionType* value as *Audience*.  You can add, delete, and update multiple target criterion types in the same operation. To retrieve these audience criterions via [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) you must request the specific type individually i.e., *Custom*, *InMarket*, and *RemarketingList*.<br/><br/> You cannot delete a [ProductPartition](../campaign-management-service/productpartition.md) with this operation. Instead, you should use [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md).|[AdGroupCriterionType](adgroupcriteriontype.md)|
 
@@ -167,5 +167,5 @@ response=campaignmanagement_service.DeleteAdGroupCriterions(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

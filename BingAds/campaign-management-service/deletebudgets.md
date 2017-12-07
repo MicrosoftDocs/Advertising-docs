@@ -21,7 +21,7 @@ The *DeleteBudgetsRequest* object defines the [body](#request-body) and [header]
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="budgetids"></a>BudgetIds|A maximum of 100 budget identifiers to delete from the account's shared budget library.<br/><br/>The account is determined by the required *CustomerAccountId* header element.|**long**|
+|<a name="budgetids"></a>BudgetIds|A maximum of 100 budget identifiers to delete from the account's shared budget library.<br/><br/>The account is determined by the required *CustomerAccountId* header element.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -147,5 +147,5 @@ response=campaignmanagement_service.DeleteBudgets(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

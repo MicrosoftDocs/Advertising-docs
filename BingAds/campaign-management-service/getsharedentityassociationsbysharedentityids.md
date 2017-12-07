@@ -22,7 +22,7 @@ The *GetSharedEntityAssociationsBySharedEntityIdsRequest* object defines the [bo
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="entitytype"></a>EntityType|The type of entity corresponding to the specified *EntityIds* element.<br /><br />Currently the only supported value is *Campaign*.|**string**|
-|<a name="sharedentityids"></a>SharedEntityIds|The list of negative keyword list identifiers to return associations with campaigns.<br /><br />This array can contain a maximum of one element.|**long**|
+|<a name="sharedentityids"></a>SharedEntityIds|The list of negative keyword list identifiers to return associations with campaigns.<br /><br />This array can contain a maximum of one element.|**long** array|
 |<a name="sharedentitytype"></a>SharedEntityType|The type of shared entity to get associations from the account's library.<br /><br />Currently the only supported value is *NegativeKeywordList*.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -174,5 +174,5 @@ response=campaignmanagement_service.GetSharedEntityAssociationsBySharedEntityIds
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

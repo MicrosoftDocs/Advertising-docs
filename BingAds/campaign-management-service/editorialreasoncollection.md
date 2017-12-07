@@ -32,7 +32,7 @@ Defines a collection of ads or keywords that failed editorial review, and the re
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 
 ## Used By
 [GetEditorialReasonsByIds](geteditorialreasonsbyids.md)  

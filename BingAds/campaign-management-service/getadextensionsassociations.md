@@ -24,7 +24,7 @@ The *GetAdExtensionsAssociationsRequest* object defines the [body](#request-body
 |<a name="accountid"></a>AccountId|The identifier of the account that owns the extensions.|**long**|
 |<a name="adextensiontype"></a>AdExtensionType|Filters the returned associations by ad extension type.|[AdExtensionsTypeFilter](adextensionstypefilter.md)|
 |<a name="associationtype"></a>AssociationType|Filters the returned associations by entity type.|[AssociationType](associationtype.md)|
-|<a name="entityids"></a>EntityIds|The list of entity identifiers by which you may request the respective ad extension associations.|**long**|
+|<a name="entityids"></a>EntityIds|The list of entity identifiers by which you may request the respective ad extension associations.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -421,5 +421,5 @@ response=campaignmanagement_service.GetAdExtensionsAssociations(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

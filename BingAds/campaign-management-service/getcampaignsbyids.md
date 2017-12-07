@@ -22,7 +22,7 @@ The *GetCampaignsByIdsRequest* object defines the [body](#request-body) and [hea
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the campaigns to get.|**long**|
-|<a name="campaignids"></a>CampaignIds|A maximum of 100 identifiers of the campaigns to get from the specified account.<br /><br />The identifiers must correspond to campaigns of the specified *CampaignType* or types, and otherwise the service will return error code *EntityIdFilterMismatch* (Code 516).|**long**|
+|<a name="campaignids"></a>CampaignIds|A maximum of 100 identifiers of the campaigns to get from the specified account.<br /><br />The identifiers must correspond to campaigns of the specified *CampaignType* or types, and otherwise the service will return error code *EntityIdFilterMismatch* (Code 516).|**long** array|
 |<a name="campaigntype"></a>CampaignType|The type of campaigns to get, for example *SearchAndContent*, *Shopping*, or *DynamicSearchAds*. You can specify one or more types.|[CampaignType](campaigntype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -231,5 +231,5 @@ response=campaignmanagement_service.GetCampaignsByIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

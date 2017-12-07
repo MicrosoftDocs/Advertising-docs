@@ -44,8 +44,8 @@ Do not try to instantiate an *Ad*. You can create one or more following objects 
 |<a name="devicepreference"></a>DevicePreference|Determines the device preference for showing the ad. <br /><br />Device preference is only supported for [AppInstallAd](../campaign-management-service/appinstallad.md) and [TextAd](../campaign-management-service/textad.md) objects.|**long**|
 |<a name="editorialstatus"></a>EditorialStatus|The editorial review status of the ad, which indicates whether the ad is pending review, has been approved, or has been disapproved.|[AdEditorialStatus](adeditorialstatus.md)|
 |<a name="finalappurls"></a>FinalAppUrls|Reserved for future use.|[AppUrl](appurl.md) array|
-|<a name="finalmobileurls"></a>FinalMobileUrls|The mobile landing page URL. <br /><br />Final mobile URLs is only supported for text ads. For more details see [TextAd](../campaign-management-service/textad.md).|**string**|
-|<a name="finalurls"></a>FinalUrls|The last or final URL where a user is ultimately taken, whether or not the click to final URL path included any redirects.<br /><br />Final URLs are only supported for [AppInstallAd](../campaign-management-service/appinstallad.md), [ExpandedTextAd](../campaign-management-service/expandedtextad.md), and [TextAd](../campaign-management-service/textad.md) objects.|**string**|
+|<a name="finalmobileurls"></a>FinalMobileUrls|The mobile landing page URL. <br /><br />Final mobile URLs is only supported for text ads. For more details see [TextAd](../campaign-management-service/textad.md).|**string** array|
+|<a name="finalurls"></a>FinalUrls|The last or final URL where a user is ultimately taken, whether or not the click to final URL path included any redirects.<br /><br />Final URLs are only supported for [AppInstallAd](../campaign-management-service/appinstallad.md), [ExpandedTextAd](../campaign-management-service/expandedtextad.md), and [TextAd](../campaign-management-service/textad.md) objects.|**string** array|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The unique Bing Ads identifier for the ad.|**long**|
 |<a name="status"></a>Status|The status of the ad.|[AdStatus](adstatus.md)|
@@ -80,7 +80,7 @@ If you generate the SOAP manually, use the *type* attribute of the *Ad* node as 
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 
 ## Used By
 [AddAds](addads.md)  

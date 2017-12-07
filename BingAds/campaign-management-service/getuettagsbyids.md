@@ -24,7 +24,7 @@ The *GetUetTagsByIdsRequest* object defines the [body](#request-body) and [heade
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="tagids"></a>TagIds|A maximum of 100 identifiers of the UET tags that you want to get. <br /><br />If *TagIds* is null or empty, then you are effectively requesting all UET tags that are available for the customer.|**long**|
+|<a name="tagids"></a>TagIds|A maximum of 100 identifiers of the UET tags that you want to get. <br /><br />If *TagIds* is null or empty, then you are effectively requesting all UET tags that are available for the customer.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -161,5 +161,5 @@ response=campaignmanagement_service.GetUetTagsByIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

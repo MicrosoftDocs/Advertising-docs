@@ -22,11 +22,11 @@ Defines an object that contains a list of entity identifiers.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="ids"></a>Ids|A list of entity identifiers.|**long**|
+|<a name="ids"></a>Ids|A list of entity identifiers.|**long** array|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 
 ## Used By
 [AddNegativeKeywordsToEntities](addnegativekeywordstoentities.md)  

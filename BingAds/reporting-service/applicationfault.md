@@ -26,5 +26,5 @@ Defines the base object from which all fault detail objects derive.
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https://adapi.microsoft.com  
+Namespace: ```https://adapi.microsoft.com```  
 

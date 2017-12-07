@@ -21,7 +21,7 @@ The *GetLabelAssociationsByEntityIdsRequest* object defines the [body](#request-
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="entityids"></a>EntityIds|The list of entity identifiers used to request label associations.<br /><br />The maximum size of the list is 100 items per service request.|**long**|
+|<a name="entityids"></a>EntityIds|The list of entity identifiers used to request label associations.<br /><br />The maximum size of the list is 100 items per service request.|**long** array|
 |<a name="entitytype"></a>EntityType|Filters the returned associations by entity type.<br/><br/>The supported entity type values are *Campaign*, *AdGroup*, *Ad*, and *Keyword*.|[EntityType](entitytype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -163,5 +163,5 @@ response=campaignmanagement_service.GetLabelAssociationsByEntityIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

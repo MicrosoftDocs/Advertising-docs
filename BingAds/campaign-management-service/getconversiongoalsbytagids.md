@@ -25,7 +25,7 @@ The *GetConversionGoalsByTagIdsRequest* object defines the [body](#request-body)
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="conversiongoaltypes"></a>ConversionGoalTypes|One or more types of conversion goals to return. |[ConversionGoalType](conversiongoaltype.md)|
-|<a name="tagids"></a>TagIds|A maximum of 100 tag identifiers that are used by the returned conversion goals. |**long**|
+|<a name="tagids"></a>TagIds|A maximum of 100 tag identifiers that are used by the returned conversion goals. |**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -199,5 +199,5 @@ response=campaignmanagement_service.GetConversionGoalsByTagIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

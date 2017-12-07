@@ -165,5 +165,5 @@ response=customermanagement_service.UpdateUser(
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https://bingads.microsoft.com/Customer/v11  
+Namespace: ```https://bingads.microsoft.com/Customer/v11```  
 

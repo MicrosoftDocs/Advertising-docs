@@ -37,8 +37,8 @@ Defines a biddable criterion that you want applied to the specified ad group.
 |<a name="destinationurl"></a>DestinationUrl|The URL of the webpage that the user is taken to when they click the ad.<br /><br />This element is only used if the *Criterion* property that is [inherited](#inheritedelements) from the [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) object is a [ProductPartition](../campaign-management-service/productpartition.md) criterion. For details see [ProductPartition Usage](#productpartition) below.|**string**|
 |<a name="editorialstatus"></a>EditorialStatus|Reserved for future use.|[AdGroupCriterionEditorialStatus](adgroupcriterioneditorialstatus.md)|
 |<a name="finalappurls"></a>FinalAppUrls|Reserved for future use.|[AppUrl](appurl.md) array|
-|<a name="finalmobileurls"></a>FinalMobileUrls|Reserved for future use.|**string**|
-|<a name="finalurls"></a>FinalUrls|Reserved for future use.|**string**|
+|<a name="finalmobileurls"></a>FinalMobileUrls|Reserved for future use.|**string** array|
+|<a name="finalurls"></a>FinalUrls|Reserved for future use.|**string** array|
 |<a name="trackingurltemplate"></a>TrackingUrlTemplate|Tracking templates are where you can specify URL tracking parameters that are used in tandem with your final URL or landing page.<br/><br/> We recommend that you add the tracking template at the account level and then it will be applied to all URLs for lower level entities such as campaigns, ad groups, and ads. To learn more, see the Bing Ads help articles [URL Tracking with Upgraded URLs](~/guides/url-tracking-upgraded-urls.md).<br/><br/>This element is only used if the *Criterion* property that is [inherited](#inheritedelements) from the [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) object is either a [ProductPartition](../campaign-management-service/productpartition.md) or [Webpage](../campaign-management-service/webpage.md) criterion. For details see [ProductPartition Usage](#productpartition) and [Webpage Usage](#webpage) below.|**string**|
 |<a name="urlcustomparameters"></a>UrlCustomParameters|Your custom collection of key and value parameters for URL tracking.<br/><br/>This element is only used if the *Criterion* property that is [inherited](#inheritedelements) from the [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) object is either a [ProductPartition](../campaign-management-service/productpartition.md) or [Webpage](../campaign-management-service/webpage.md) criterion. For details see [ProductPartition Usage](#productpartition) and [Webpage Usage](#webpage) below.|[CustomParameters](customparameters.md)|
 
@@ -132,5 +132,5 @@ On update, set the *UrlCustomParameters* element to null or empty to retain any 
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

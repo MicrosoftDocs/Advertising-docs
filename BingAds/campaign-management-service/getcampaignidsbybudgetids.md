@@ -21,7 +21,7 @@ The *GetCampaignIdsByBudgetIdsRequest* object defines the [body](#request-body) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="budgetids"></a>BudgetIds|A list of unique budget identifiers that identify the campaign identifiers to get. You can specify a maximum of 1,000 IDs budget IDs, and each budget could be shared by up to 10,000 campaign identifiers. For each budget ID that you specify in the request, an [IdCollection](../campaign-management-service/idcollection.md) that contains between 1 and 10,000 campaign identifers will be returned. <br/><br/>The budget IDs must be in the same account that you specified in the required *CustomerAccountId* header element.|**long**|
+|<a name="budgetids"></a>BudgetIds|A list of unique budget identifiers that identify the campaign identifiers to get. You can specify a maximum of 1,000 IDs budget IDs, and each budget could be shared by up to 10,000 campaign identifiers. For each budget ID that you specify in the request, an [IdCollection](../campaign-management-service/idcollection.md) that contains between 1 and 10,000 campaign identifers will be returned. <br/><br/>The budget IDs must be in the same account that you specified in the required *CustomerAccountId* header element.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -155,5 +155,5 @@ response=campaignmanagement_service.GetCampaignIdsByBudgetIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

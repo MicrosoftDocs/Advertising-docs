@@ -22,7 +22,7 @@ The *DeleteKeywordsRequest* object defines the [body](#request-body) and [header
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that contains the keywords to delete.|**long**|
-|<a name="keywordids"></a>KeywordIds|A maximum of 1,000 keywords identifiers to delete.|**long**|
+|<a name="keywordids"></a>KeywordIds|A maximum of 1,000 keywords identifiers to delete.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -156,5 +156,5 @@ response=campaignmanagement_service.DeleteKeywords(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

@@ -28,7 +28,7 @@ Defines an order for the list of entities returned using one of the search opera
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https://bingads.microsoft.com/Customer/v11/Entities  
+Namespace: ```https://bingads.microsoft.com/Customer/v11/Entities```  
 
 ## Used By
 [SearchAccounts](searchaccounts.md)  

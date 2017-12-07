@@ -60,7 +60,7 @@ When updating an *InsertionOrder* object, only the *Status* element can be speci
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https://bingads.microsoft.com/Customer/v11/Entities  
+Namespace: ```https://bingads.microsoft.com/Customer/v11/Entities```  
 
 ## Used By
 [AddInsertionOrder](addinsertionorder.md)  

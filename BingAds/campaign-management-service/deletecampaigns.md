@@ -22,7 +22,7 @@ The *DeleteCampaignsRequest* object defines the [body](#request-body) and [heade
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the campaigns to delete.|**long**|
-|<a name="campaignids"></a>CampaignIds|A maximum of 100 campaign identifiers to delete.|**long**|
+|<a name="campaignids"></a>CampaignIds|A maximum of 100 campaign identifiers to delete.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -156,5 +156,5 @@ response=campaignmanagement_service.DeleteCampaigns(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
 

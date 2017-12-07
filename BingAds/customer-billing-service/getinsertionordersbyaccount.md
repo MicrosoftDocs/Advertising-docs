@@ -25,7 +25,7 @@ The *GetInsertionOrdersByAccountRequest* object defines the [body](#request-body
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the insertion orders to get.|**long**|
-|<a name="insertionorderids"></a>InsertionOrderIds|A list of identifiers of the insertion orders to get. To get all insertion orders, including those that have expired, set to NULL.|**long**|
+|<a name="insertionorderids"></a>InsertionOrderIds|A list of identifiers of the insertion orders to get. To get all insertion orders, including those that have expired, set to NULL.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -154,5 +154,5 @@ response=customerbilling_service.GetInsertionOrdersByAccount(
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https://bingads.microsoft.com/Billing/v11  
+Namespace: ```https://bingads.microsoft.com/Billing/v11```  
 
