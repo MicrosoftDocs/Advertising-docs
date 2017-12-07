@@ -26,5 +26,5 @@ Defines the base object from which all fault detail objects derive.
 
 ## Requirements
 Service: [BulkService.svc v11](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
-Namespace: ```https://adapi.microsoft.com```  
+Namespace: https\://adapi.microsoft.com  
 

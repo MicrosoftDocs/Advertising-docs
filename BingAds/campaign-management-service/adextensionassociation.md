@@ -32,7 +32,7 @@ Defines the relationship and editorial status of an ad extension with an account
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 
 ## Used By
 [AdExtensionAssociationCollection](adextensionassociationcollection.md)  

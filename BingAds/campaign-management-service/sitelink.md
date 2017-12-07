@@ -49,7 +49,7 @@ Defines a site link to include in an ad. The link should take the user to conten
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 
 ## Used By
 [SiteLinksAdExtension](sitelinksadextension.md)  

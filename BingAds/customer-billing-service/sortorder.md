@@ -28,7 +28,7 @@ Defines the ascending or descending sort order of results for [SearchInsertionOr
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: ```https://bingads.microsoft.com/Billing/v11```  
+Namespace: https\://bingads.microsoft.com/Billing/v11  
 
 ## Used By
 [OrderBy](orderby.md)  

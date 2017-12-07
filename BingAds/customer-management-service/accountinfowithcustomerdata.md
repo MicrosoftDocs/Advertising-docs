@@ -38,7 +38,7 @@ Defines an object that contains information that identifies an account and the c
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: ```https://bingads.microsoft.com/Customer/v11/Entities```  
+Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
 
 ## Used By
 [FindAccountsOrCustomersInfo](findaccountsorcustomersinfo.md)  

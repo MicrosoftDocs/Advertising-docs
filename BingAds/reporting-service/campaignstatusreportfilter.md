@@ -46,7 +46,7 @@ Defines the campaign status values that you can use to filter the report data. T
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: ```https://bingads.microsoft.com/Reporting/v11```  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [AdExtensionByAdReportFilter](adextensionbyadreportfilter.md)  

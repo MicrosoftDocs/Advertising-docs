@@ -66,7 +66,7 @@ Do not try to instantiate an *Account*. You can create the [AdvertiserAccount](.
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: ```https://bingads.microsoft.com/Customer/v11/Entities```  
+Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
 
 ## Used By
 [GetAccount](getaccount.md)  

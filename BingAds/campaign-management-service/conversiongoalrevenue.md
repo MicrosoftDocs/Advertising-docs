@@ -30,7 +30,7 @@ Defines properties for revenue that can be tracked by a conversion goal.
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 
 ## Used By
 [ConversionGoal](conversiongoal.md)  

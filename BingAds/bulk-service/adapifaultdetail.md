@@ -41,5 +41,5 @@ The [AdApiFaultDetail](adapifaultdetail.md) object derives from the [Application
 
 ## Requirements
 Service: [BulkService.svc v11](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
-Namespace: ```https://adapi.microsoft.com```  
+Namespace: https\://adapi.microsoft.com  
 

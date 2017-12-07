@@ -28,7 +28,7 @@ Defines a collection of ad extensions that failed editorial review.
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 
 ## Used By
 [GetAdExtensionsEditorialReasons](getadextensionseditorialreasons.md)  

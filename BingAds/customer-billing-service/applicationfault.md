@@ -26,5 +26,5 @@ Defines the base object from which all fault detail objects derive.
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: ```https://adapi.microsoft.com```  
+Namespace: https\://adapi.microsoft.com  
 

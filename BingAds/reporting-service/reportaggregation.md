@@ -40,7 +40,7 @@ Defines the aggregation values that you can use for a report.
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: ```https://bingads.microsoft.com/Reporting/v11```  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [AccountPerformanceReportRequest](accountperformancereportrequest.md)  

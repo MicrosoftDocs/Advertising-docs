@@ -233,5 +233,5 @@ Given multiple countries from one of the property sets above, the service will t
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: ```Microsoft.Advertiser.AdInsight.Api.Service.V11```  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
 

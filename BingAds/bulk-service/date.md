@@ -30,7 +30,7 @@ Defines a calendar date by month, day, and year.
 
 ## Requirements
 Service: [BulkService.svc v11](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
-Namespace: ```https://bingads.microsoft.com/CampaignManagement/v11```  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 
 ## Used By
 [PerformanceStatsDateRange](performancestatsdaterange.md)  

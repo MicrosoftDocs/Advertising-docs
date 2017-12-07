@@ -41,5 +41,5 @@ The [AdApiFaultDetail](adapifaultdetail.md) object derives from the [Application
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: ```https://adapi.microsoft.com```  
+Namespace: https\://adapi.microsoft.com  
 

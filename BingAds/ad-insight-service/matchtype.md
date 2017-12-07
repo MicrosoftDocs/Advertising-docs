@@ -34,7 +34,7 @@ Defines the possible keyword match type values.
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: ```Microsoft.Advertiser.AdInsight.Api.Service.V11```  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
 
 ## Used By
 [EstimatedBidAndTraffic](estimatedbidandtraffic.md)  

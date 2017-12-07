@@ -32,7 +32,7 @@ Defines an error object that contains the details that explain why the service o
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: ```https://bingads.microsoft.com/AdInsight/v11```  
+Namespace: https\://bingads.microsoft.com/AdInsight/v11  
 
 ## Used By
 [ApiFaultDetail](apifaultdetail.md)  

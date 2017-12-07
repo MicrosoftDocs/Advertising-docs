@@ -37,7 +37,7 @@ The list of key and value strings for forward compatibility to avoid otherwise b
 
 ## Requirements
 Service: [BulkService.svc v11](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
-Namespace: ```http://schemas.datacontract.org/2004/07/System.Collections.Generic```  
+Namespace: http\://schemas.datacontract.org/2004/07/System.Collections.Generic  
 
 ## Used By
 [BatchError](batcherror.md)  

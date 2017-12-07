@@ -32,7 +32,7 @@ Defines an error object that contains the details that explain why the service o
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: ```https://adapi.microsoft.com```  
+Namespace: https\://adapi.microsoft.com  
 
 ## Used By
 [AdApiFaultDetail](adapifaultdetail.md)  

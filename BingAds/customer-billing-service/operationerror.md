@@ -30,7 +30,7 @@ Defines an error object that contains the details that explain why the service o
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: ```https://bingads.microsoft.com/Customer/v11/Exception```  
+Namespace: https\://bingads.microsoft.com/Customer/v11/Exception  
 
 ## Used By
 [ApiFault](apifault.md)  

@@ -218,5 +218,5 @@ Users with account level roles can be restricted to specific accounts. Users wit
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: ```https://bingads.microsoft.com/Customer/v11```  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 

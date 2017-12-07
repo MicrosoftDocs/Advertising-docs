@@ -32,7 +32,7 @@ Defines an error object that contains the details that explain why the service o
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: ```https://adapi.microsoft.com```  
+Namespace: https\://adapi.microsoft.com  
 
 ## Used By
 [AdApiFaultDetail](adapifaultdetail.md)  

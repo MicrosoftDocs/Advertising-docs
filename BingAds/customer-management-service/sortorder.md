@@ -28,7 +28,7 @@ Defines the ascending or descending sort order of results for one of the search 
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: ```https://bingads.microsoft.com/Customer/v11```  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 
 ## Used By
 [OrderBy](orderby.md)  

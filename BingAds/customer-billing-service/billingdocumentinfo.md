@@ -38,7 +38,7 @@ Defines a billing document identification object that contains information about
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: ```https://bingads.microsoft.com/Customer/v11/Entities```  
+Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
 
 ## Used By
 [GetBillingDocumentsInfo](getbillingdocumentsinfo.md)  
