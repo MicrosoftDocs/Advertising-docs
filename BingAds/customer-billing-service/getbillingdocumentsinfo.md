@@ -24,7 +24,7 @@ The *GetBillingDocumentsInfoRequest* object defines the [body](#request-body) an
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accountids"></a>AccountIds|A list of identifiers of the accounts whose billing document information you want to get.|**long**|
+|<a name="accountids"></a>AccountIds|A list of identifiers of the accounts whose billing document information you want to get.|**long** array|
 |<a name="enddate"></a>EndDate|The end date to use for specifying the billing documents to get.<br /><br />To specify today's date as the end date, set *EndDate* to NULL.<br /><br />The end date cannot be earlier than the start date. You must specify the date in Coordinated Universal Time (UTC).|**dateTime**|
 |<a name="startdate"></a>StartDate|The start date to use for specifying the billing documents to get.<br /><br />The start date cannot be later than the end date. You must specify the date in Coordinated Universal Time (UTC).|**dateTime**|
 
@@ -154,5 +154,5 @@ response=customerbilling_service.GetBillingDocumentsInfo(
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https://bingads.microsoft.com/Billing/v11  
+Namespace: https\://bingads.microsoft.com/Billing/v11  
 

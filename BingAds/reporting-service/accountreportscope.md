@@ -22,11 +22,11 @@ Defines the set of accounts to include in the report.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accountids"></a>AccountIds|An array of a maximum of 1,000 account identifiers that identifies the account data to include in the report.<br /><br />To include every account to which the user has access, including accounts that the user manages, set this element to NULL.|**long**|
+|<a name="accountids"></a>AccountIds|An array of a maximum of 1,000 account identifiers that identifies the account data to include in the report.<br /><br />To include every account to which the user has access, including accounts that the user manages, set this element to NULL.|**long** array|
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https://bingads.microsoft.com/Reporting/v11  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [AccountPerformanceReportRequest](accountperformancereportrequest.md)  

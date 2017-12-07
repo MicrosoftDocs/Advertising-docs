@@ -21,7 +21,7 @@ The *GetLabelsByIdsRequest* object defines the [body](#request-body) and [header
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="labelids"></a>LabelIds|The identifiers of the labels to get.<br /><br />The maximum size of the list is 1,000 items per service request. If this element is not specified, the operation will return all active labels in the account (1,000 results per page).|**long**|
+|<a name="labelids"></a>LabelIds|The identifiers of the labels to get.<br /><br />The maximum size of the list is 1,000 items per service request. If this element is not specified, the operation will return all active labels in the account (1,000 results per page).|**long** array|
 |<a name="pageinfo"></a>PageInfo|Determines the index and size of label results per page.<br /><br />If this element is not specified, the defaut page Index is *0* and the default Size is *1,000*.|[Paging](paging.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -168,5 +168,5 @@ response=campaignmanagement_service.GetLabelsByIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

@@ -21,7 +21,7 @@ The *DeleteAudiencesRequest* object defines the [body](#request-body) and [heade
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="audienceids"></a>AudienceIds|The IDs of the audiences to delete.<br/><br/>You can specify a maximum of 100 IDs.<br/><br/>You can only delete [RemarketingList](../campaign-management-service/remarketinglist.md) objects that correspond to the IDs. You cannot add [CustomAudience](../campaign-management-service/customaudience.md) or [InMarketAudience](../campaign-management-service/inmarketaudience.md) objects.|**long**|
+|<a name="audienceids"></a>AudienceIds|The IDs of the audiences to delete.<br/><br/>You can specify a maximum of 100 IDs.<br/><br/>You can only delete [RemarketingList](../campaign-management-service/remarketinglist.md) objects that correspond to the IDs. You cannot add [CustomAudience](../campaign-management-service/customaudience.md) or [InMarketAudience](../campaign-management-service/inmarketaudience.md) objects.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -147,5 +147,5 @@ response=campaignmanagement_service.DeleteAudiences(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

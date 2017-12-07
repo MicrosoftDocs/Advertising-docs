@@ -30,7 +30,7 @@ Defines an object that contains a set of negative keywords that are only associa
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 
 ## Used By
 [AddNegativeKeywordsToEntities](addnegativekeywordstoentities.md)  

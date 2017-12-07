@@ -21,7 +21,7 @@ The *GetKeywordCategoriesRequest* object defines the [body](#request-body) and [
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywords"></a>Keywords|An array of keywords for which you want to determine the possible keyword categories that each keyword belongs to. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string**|
+|<a name="keywords"></a>Keywords|An array of keywords for which you want to determine the possible keyword categories that each keyword belongs to. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string** array|
 |<a name="language"></a>Language|The language in which the keywords are written. You must set this element to English.|**string**|
 |<a name="maxcategories"></a>MaxCategories|The number of categories to include in the results. The maximum number of categories that you can request is 5.<br /><br />The default is 5.|**int**|
 |<a name="publishercountry"></a>PublisherCountry|The country code of the country/region to use as the source of the category data.<br /><br /> You must set this element to US.|**string**|

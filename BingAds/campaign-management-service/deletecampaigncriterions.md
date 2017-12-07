@@ -21,7 +21,7 @@ The *DeleteCampaignCriterionsRequest* object defines the [body](#request-body) a
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="campaigncriterionids"></a>CampaignCriterionIds|A list of unique system identifiers corresponding to the campaign criterions that you want to delete.<br/><br/>You can include up to 100 campaign criterion identifiers per request.|**long**|
+|<a name="campaigncriterionids"></a>CampaignCriterionIds|A list of unique system identifiers corresponding to the campaign criterions that you want to delete.<br/><br/>You can include up to 100 campaign criterion identifiers per request.|**long** array|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the criterions to delete.|**long**|
 |<a name="criteriontype"></a>CriterionType|The type of criterion to delete, for example *Webpage*. You can specify only one criterion type value per call.<br/><br/>To add, delete, or update target criterions i.e., age, day and time, device, gender, location, location intent, and radius criterions, you must specify the *CriterionType* value as *Targets*. You can add, delete, and update multiple target criterion types in the same operation. To retrieve these target criterions via [GetCampaignCriterionsByIds](../campaign-management-service/getcampaigncriterionsbyids.md) you must request the specific type individually i.e., *Age*, *DayTime*, *Device*, *Gender*, *Location*, *LocationIntent*, and *Radius*. |[CampaignCriterionType](campaigncriteriontype.md)|
 
@@ -167,5 +167,5 @@ response=campaignmanagement_service.DeleteCampaignCriterions(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

@@ -52,8 +52,8 @@ The [AppInstallAd](appinstallad.md) object derives from the [Ad](ad.md) object, 
 |<a name="devicepreference"></a>DevicePreference|This element determines whether the preference is for app install ads to be displayed on mobile and tablet devices or only on mobile devices. (App install ads are not currently supported on desktop computers.)<br /><br />To specify a preference for mobile devices only (i.e. excluding tablets), set this element to *30001*.<br /><br />To specify a preference for both mobile and tablet devices, set this element to *0* (zero) or leave the element nil. By default, this element will be nil. <br /><br />**Add:** Optional<br/>**Update:** Optional|**long**|
 |<a name="editorialstatus"></a>EditorialStatus|The editorial review status of the ad, which indicates whether the ad is pending review, has been approved, or has been disapproved.<br /><br />**Add:** Read-only<br/>**Update:** Read-only|[AdEditorialStatus](adeditorialstatus.md)|
 |<a name="finalappurls"></a>FinalAppUrls|Not supported for app install ads.|[AppUrl](appurl.md) array|
-|<a name="finalmobileurls"></a>FinalMobileUrls|Not supported for app install ads.|**string**|
-|<a name="finalurls"></a>FinalUrls|The URL where a search user lands and can choose to install an app.<br /><br />**Add:** Required<br/>**Update:** Optional|**string**|
+|<a name="finalmobileurls"></a>FinalMobileUrls|Not supported for app install ads.|**string** array|
+|<a name="finalurls"></a>FinalUrls|The URL where a search user lands and can choose to install an app.<br /><br />**Add:** Required<br/>**Update:** Optional|**string** array|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />There are currently not any ForwardCompatibilityMap key and value pairs that are applicable for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The unique Bing Ads identifier for the ad.<br /><br />**Add:** Read-only<br/>**Update:** Required and Read-only|**long**|
 |<a name="status"></a>Status|The status of the ad.<br /><br />**Add:** Optional<br/>**Update:** Optional|[AdStatus](adstatus.md)|
@@ -63,5 +63,5 @@ The [AppInstallAd](appinstallad.md) object derives from the [Ad](ad.md) object, 
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

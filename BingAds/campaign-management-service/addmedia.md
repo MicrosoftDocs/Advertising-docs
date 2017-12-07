@@ -34,7 +34,7 @@ The *AddMediaResponse* object defines the [body](#response-body) and [header](#r
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediaids"></a>MediaIds|The identifiers of the media that you added to the library. You use the identifier to set the appropriate media ID field in the [ImageAdExtension](../campaign-management-service/imageadextension.md) or [LocationAdExtension](../campaign-management-service/locationadextension.md) object.<br /><br />You can get the media for image ad extensions with the [GetMediaMetaDataByAccountId](../campaign-management-service/getmediametadatabyaccountid.md) and [GetMediaMetaDataByIds](../campaign-management-service/getmediametadatabyids.md) operations.<br /><br />You can get the media for location ad extensions with the [GetMediaByIds](../campaign-management-service/getmediabyids.md). operation.|**long**|
+|<a name="mediaids"></a>MediaIds|The identifiers of the media that you added to the library. You use the identifier to set the appropriate media ID field in the [ImageAdExtension](../campaign-management-service/imageadextension.md) or [LocationAdExtension](../campaign-management-service/locationadextension.md) object.<br /><br />You can get the media for image ad extensions with the [GetMediaMetaDataByAccountId](../campaign-management-service/getmediametadatabyaccountid.md) and [GetMediaMetaDataByIds](../campaign-management-service/getmediametadatabyids.md) operations.<br /><br />You can get the media for location ad extensions with the [GetMediaByIds](../campaign-management-service/getmediabyids.md). operation.|**long** array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -142,5 +142,5 @@ response=campaignmanagement_service.AddMedia(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

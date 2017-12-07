@@ -21,7 +21,7 @@ The *DeleteAdGroupsRequest* object defines the [body](#request-body) and [header
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupids"></a>AdGroupIds|A maximum of 1,000 identifiers of the ad groups to delete.|**long**|
+|<a name="adgroupids"></a>AdGroupIds|A maximum of 1,000 identifiers of the ad groups to delete.|**long** array|
 |<a name="campaignid"></a>CampaignId|The campaign that contains the ad groups to delete.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -156,5 +156,5 @@ response=campaignmanagement_service.DeleteAdGroups(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

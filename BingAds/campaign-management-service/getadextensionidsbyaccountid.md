@@ -35,7 +35,7 @@ The *GetAdExtensionIdsByAccountIdResponse* object defines the [body](#response-b
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adextensionids"></a>AdExtensionIds|A list of ad extension IDs. To get the extension, call the [GetAdExtensionsByIds](../campaign-management-service/getadextensionsbyids.md) operation.|**long**|
+|<a name="adextensionids"></a>AdExtensionIds|A list of ad extension IDs. To get the extension, call the [GetAdExtensionsByIds](../campaign-management-service/getadextensionsbyids.md) operation.|**long** array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -143,5 +143,5 @@ response=campaignmanagement_service.GetAdExtensionIdsByAccountId(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

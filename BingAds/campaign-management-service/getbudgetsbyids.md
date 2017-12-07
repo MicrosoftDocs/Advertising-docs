@@ -21,7 +21,7 @@ The *GetBudgetsByIdsRequest* object defines the [body](#request-body) and [heade
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="budgetids"></a>BudgetIds|A list of unique budget identifiers that identify the budgets to get. You can specify a maximum of 100 IDs. <br/><br/>The budget IDs must be in the same account that you specified in the required *CustomerAccountId* header element.<br/><br/>If you leave this element nil or empty, then the operation will return all budgets that are available to be shared with campaigns in the account.|**long**|
+|<a name="budgetids"></a>BudgetIds|A list of unique budget identifiers that identify the budgets to get. You can specify a maximum of 100 IDs. <br/><br/>The budget IDs must be in the same account that you specified in the required *CustomerAccountId* header element.<br/><br/>If you leave this element nil or empty, then the operation will return all budgets that are available to be shared with campaigns in the account.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -157,5 +157,5 @@ response=campaignmanagement_service.GetBudgetsByIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

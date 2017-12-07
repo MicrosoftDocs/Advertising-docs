@@ -34,7 +34,7 @@ The *AddAdGroupCriterionsResponse* object defines the [body](#response-body) and
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of unique system identifiers corresponding to the criterion that were added.<br /><br />The list of identifiers corresponds directly to the list of criterion in the request. Items of the list may be returned as null. For each list index where a criterion was not added, the corresponding element will be null.|**long**|
+|<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of unique system identifiers corresponding to the criterion that were added.<br /><br />The list of identifiers corresponds directly to the list of criterion in the request. Items of the list may be returned as null. For each list index where a criterion was not added, the corresponding element will be null.|**long** array|
 |<a name="ismigrated"></a>IsMigrated|Indicates whether or not the ad group where you added target criterions previously shared target criterions with another campaign or ad group. In that case this operation migrates the shared target associations and assigns new ad group criterion IDs.<br/><br/>If this value is true and if you already have criterion IDs for targets such as age, day and time, device, gender, and location, then you should replace those IDs with all of the new IDs returned by the [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) operation (specify *TargetCriterions* as the *CriterionType*). You only need to sync target criterion IDs, and this is not applicable for other criterion types such as webpage criterions. |**boolean**|
 |<a name="nestedpartialerrors"></a>NestedPartialErrors|An array of [BatchErrorCollection](../campaign-management-service/batcherrorcollection.md) objects that contain details for any criterion that were not successfully added. The top level error within each [BatchErrorCollection](../campaign-management-service/batcherrorcollection.md) object corresponds to potential criterion errors. The nested list of [BatchError](../campaign-management-service/batcherror.md) objects would include any errors specific to the list of items a criterion can have.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchErrorCollection](batcherrorcollection.md) array|
 
@@ -274,5 +274,5 @@ response=campaignmanagement_service.AddAdGroupCriterions(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 
