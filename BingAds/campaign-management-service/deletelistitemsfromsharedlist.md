@@ -24,7 +24,7 @@ The *DeleteListItemsFromSharedListRequest* object defines the [body](#request-bo
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="listitemids"></a>ListItemIds|The list of identifiers of negative keywords to delete from the negative keyword list.<br /><br />This array can contain a maximum of 5,000 elements.|**long**|
+|<a name="listitemids"></a>ListItemIds|The list of identifiers of negative keywords to delete from the negative keyword list.<br /><br />This array can contain a maximum of 5,000 elements.|**long** array|
 |<a name="sharedlist"></a>SharedList|The negative keyword list within the account's shared library, from which to delete the specified negative keywords.|[SharedList](sharedlist.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -162,5 +162,5 @@ response=campaignmanagement_service.DeleteListItemsFromSharedList(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

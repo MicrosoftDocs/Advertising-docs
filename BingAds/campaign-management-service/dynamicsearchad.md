@@ -58,8 +58,8 @@ The [DynamicSearchAd](dynamicsearchad.md) object derives from the [Ad](ad.md) ob
 |<a name="devicepreference"></a>DevicePreference|This element is not applicable for dynamic search ads.|**long**|
 |<a name="editorialstatus"></a>EditorialStatus|The editorial review status of the ad, which indicates whether the ad is pending review, has been approved, or has been disapproved.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[AdEditorialStatus](adeditorialstatus.md)|
 |<a name="finalappurls"></a>FinalAppUrls|This element is not applicable for dynamic search ads.|[AppUrl](appurl.md) array|
-|<a name="finalmobileurls"></a>FinalMobileUrls|This element is not applicable for dynamic search ads.|**string**|
-|<a name="finalurls"></a>FinalUrls|This element is not applicable for dynamic search ads.|**string**|
+|<a name="finalmobileurls"></a>FinalMobileUrls|This element is not applicable for dynamic search ads.|**string** array|
+|<a name="finalurls"></a>FinalUrls|This element is not applicable for dynamic search ads.|**string** array|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />Currently there are no supported forward compatibility map key and value pairs for dynamic search ads.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The unique Bing Ads identifier of the ad.<br/><br/>**Add:** Read-only<br/>**Update:** Required and Read-Only|**long**|
 |<a name="status"></a>Status|The status of the ad.<br/><br/>**Add:** Optional<br/>**Update:** Optional|[AdStatus](adstatus.md)|
@@ -69,5 +69,5 @@ The [DynamicSearchAd](dynamicsearchad.md) object derives from the [Ad](ad.md) ob
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

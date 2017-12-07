@@ -32,7 +32,7 @@ Defines an error object that contains the details that explain why the service o
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https://bingads.microsoft.com/Reporting/v11  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [ApiFaultDetail](apifaultdetail.md)  

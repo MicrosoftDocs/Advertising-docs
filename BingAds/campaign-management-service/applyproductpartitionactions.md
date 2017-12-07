@@ -33,7 +33,7 @@ The *ApplyProductPartitionActionsResponse* object defines the [body](#response-b
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of identifiers that identify the criterion that had the action applied. The list of identifiers corresponds directly to the list of criterion in the request.<br /><br /> If any criterion action failed, then all remaining criterion actions will be rejected, and all elements in this list will be null.|**long**|
+|<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of identifiers that identify the criterion that had the action applied. The list of identifiers corresponds directly to the list of criterion in the request.<br /><br /> If any criterion action failed, then all remaining criterion actions will be rejected, and all elements in this list will be null.|**long** array|
 |<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.<br /><br /> For criterion which failed due to user error, an actionable error code will be returned.<br /><br /> If any criterion action failed, then all remaining criterion actions will be rejected, and none of the elements in this list will be null. For criterion that might have otherwise succeeded,  a generic error will be returned which explains that a related entity failed.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
@@ -249,5 +249,5 @@ response=campaignmanagement_service.ApplyProductPartitionActions(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

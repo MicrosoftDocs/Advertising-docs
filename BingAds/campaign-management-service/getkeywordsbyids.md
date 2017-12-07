@@ -22,7 +22,7 @@ The *GetKeywordsByIdsRequest* object defines the [body](#request-body) and [head
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group whose keywords you want to get.|**long**|
-|<a name="keywordids"></a>KeywordIds|A maximum of 1,000 identifiers of the keywords to get.|**long**|
+|<a name="keywordids"></a>KeywordIds|A maximum of 1,000 identifiers of the keywords to get.|**long** array|
 |<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [Keyword](../campaign-management-service/keyword.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[KeywordAdditionalField](keywordadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -229,5 +229,5 @@ response=campaignmanagement_service.GetKeywordsByIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

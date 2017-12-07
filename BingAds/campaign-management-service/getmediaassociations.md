@@ -25,7 +25,7 @@ The *GetMediaAssociationsRequest* object defines the [body](#request-body) and [
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="mediaenabledentities"></a>MediaEnabledEntities|Filters the results to only return media associations with the specified type of media enabled entity.<br /><br />Currently only ImageAdExtension is supported.|[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|
-|<a name="mediaids"></a>MediaIds|The identifiers of the media to get corresponding entity associations.<br /><br />You can specify a maximum of 10 media identifiers in a single call.|**long**|
+|<a name="mediaids"></a>MediaIds|The identifiers of the media to get corresponding entity associations.<br /><br />You can specify a maximum of 10 media identifiers in a single call.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -169,5 +169,5 @@ response=campaignmanagement_service.GetMediaAssociations(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

@@ -22,7 +22,7 @@ The *GetAdsByIdsRequest* object defines the [body](#request-body) and [header](#
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that contains the ads to get.|**long**|
-|<a name="adids"></a>AdIds|A maximum of 20 identifiers of the requested ads.<br/><br/> If the ad identifiers do not match the requested ad types, then the operation will return a batch error for each requested ad.|**long**|
+|<a name="adids"></a>AdIds|A maximum of 20 identifiers of the requested ads.<br/><br/> If the ad identifiers do not match the requested ad types, then the operation will return a batch error for each requested ad.|**long** array|
 |<a name="adtypes"></a>AdTypes|One or more types of ads to return.|[AdType](adtype.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -228,5 +228,5 @@ response=campaignmanagement_service.GetAdsByIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

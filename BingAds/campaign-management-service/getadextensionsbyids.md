@@ -22,7 +22,7 @@ The *GetAdExtensionsByIdsRequest* object defines the [body](#request-body) and [
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that owns the ad extensions.|**long**|
-|<a name="adextensionids"></a>AdExtensionIds|A list of ad extension identifiers. You can specify a maximum of 100 identifiers.|**long**|
+|<a name="adextensionids"></a>AdExtensionIds|A list of ad extension identifiers. You can specify a maximum of 100 identifiers.|**long** array|
 |<a name="adextensiontype"></a>AdExtensionType|The types of ad extensions that the list of identifiers contains.|[AdExtensionsTypeFilter](adextensionstypefilter.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -403,5 +403,5 @@ response=campaignmanagement_service.GetAdExtensionsByIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

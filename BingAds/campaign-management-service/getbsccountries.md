@@ -30,7 +30,7 @@ The *GetBSCCountriesResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="countrycodes"></a>CountryCodes|The list of supported sales country codes for Bing Shopping campaigns. You can pass any one of the returned values in the *SalesCountryCode* element of a [ShoppingSetting](../campaign-management-service/shoppingsetting.md) object.|**string**|
+|<a name="countrycodes"></a>CountryCodes|The list of supported sales country codes for Bing Shopping campaigns. You can pass any one of the returned values in the *SalesCountryCode* element of a [ShoppingSetting](../campaign-management-service/shoppingsetting.md) object.|**string** array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -113,5 +113,5 @@ response=campaignmanagement_service.GetBSCCountries()
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

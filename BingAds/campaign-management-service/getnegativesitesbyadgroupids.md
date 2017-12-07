@@ -21,7 +21,7 @@ The *GetNegativeSitesByAdGroupIdsRequest* object defines the [body](#request-bod
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupids"></a>AdGroupIds|An array of identifiers of the ad groups that contain the negative site URLs that you want to get.<br /><br />The call fails if the sum of all negative site URLs defined in the specified list of ad groups exceeds 30,000 URLs. To ensure that the call succeeds, consider limiting the number of ad groups to 15.|**long**|
+|<a name="adgroupids"></a>AdGroupIds|An array of identifiers of the ad groups that contain the negative site URLs that you want to get.<br /><br />The call fails if the sum of all negative site URLs defined in the specified list of ad groups exceeds 30,000 URLs. To ensure that the call succeeds, consider limiting the number of ad groups to 15.|**long** array|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign that contains the ad groups.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -165,5 +165,5 @@ response=campaignmanagement_service.GetNegativeSitesByAdGroupIds(
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https://bingads.microsoft.com/CampaignManagement/v11  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
 

@@ -24,7 +24,7 @@ The *GetEstimatedBidByKeywordIdsRequest* object defines the [body](#request-body
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordids"></a>KeywordIds|An array of identifiers of the keywords for which you want to get the suggested bid values that could have resulted in your ad appearing in the targeted position in the search results. You may specify a maximum of 1,000 keywords.|**long**|
+|<a name="keywordids"></a>KeywordIds|An array of identifiers of the keywords for which you want to get the suggested bid values that could have resulted in your ad appearing in the targeted position in the search results. You may specify a maximum of 1,000 keywords.|**long** array|
 |<a name="targetpositionforads"></a>TargetPositionForAds|The position in which you want your ads to appear in the search results.<br /><br />The default value is MainLine1.|[TargetAdPosition](targetadposition.md)|
 
 ### <a name="request-header"></a>Request Header Elements

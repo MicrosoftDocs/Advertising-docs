@@ -26,5 +26,5 @@ Defines the base object from which all fault detail objects derive.
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: https://adapi.microsoft.com  
+Namespace: https\://adapi.microsoft.com  
 

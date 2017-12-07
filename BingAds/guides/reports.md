@@ -107,25 +107,25 @@ The following attribute and impression share performance statistics columns are 
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|DeviceOS<br /><br />TopVsOther|ImpressionLostToBidPercent<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToAdRelevancePercent<br /><br />ImpressionLostToExpectedCtrPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
+|BidMatchType<br /><br />DeviceOS<br /><br />TopVsOther|ExactMatchImpressionSharePercent<br /><br />ImpressionLostToAdRelevancePercent<br /><br />ImpressionLostToBidPercent<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToExpectedCtrPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
 
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [CampaignPerformanceReportRequest](~/reporting-service/campaignperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|BudgetAssociationStatus<br /><br />BudgetStatus<br /><br />BudgetName<br /><br />DeviceOS<br /><br />TopVsOther|ImpressionLostToBidPercent<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToAdRelevancePercent<br /><br />ImpressionLostToExpectedCtrPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
+|BidMatchType<br /><br />BudgetAssociationStatus<br /><br />BudgetName<br /><br />BudgetStatus<br /><br />DeviceOS<br /><br />TopVsOther|ExactMatchImpressionSharePercent<br /><br />ImpressionLostToAdRelevancePercent<br /><br />ImpressionLostToBidPercent<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToExpectedCtrPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
 
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductDimensionPerformanceReportRequest](~/reporting-service/productdimensionperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|AdId<br /><br />AdStatus<br /><br />Language<br /><br />Network|BenchmarkBid<br /><br />BenchmarkCtr<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
+|AdDistribution<br /><br />AdId<br /><br />AdStatus<br /><br />ClickType<br /><br />Language<br /><br />LocalStoreCode<br /><br />Network<br /><br />TopVsOther|BenchmarkBid<br /><br />BenchmarkCtr<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
 	
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductPartitionPerformanceReportRequest](~/reporting-service/productpartitionperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|AdId<br /><br />AdStatus<br /><br />BidMatchType<br /><br />DeliveredMatchType<br /><br />Language<br /><br />Network<br /><br />TopVsOther|BenchmarkBid<br /><br />BenchmarkCtr<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
+|AdDistribution<br /><br />AdId<br /><br />AdStatus<br /><br />BidMatchType<br /><br />ClickType<br /><br />DeliveredMatchType<br /><br />Language<br /><br />LocalStoreCode<br /><br />Network<br /><br />TopVsOther|BenchmarkBid<br /><br />BenchmarkCtr<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
 
 ## <a name="timeperiod"></a>TimePeriod Column
 If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For example, if the aggregation level is Daily, the report uses GregorianDate as the column label. The following are the column labels that the report uses based on the specified aggregation level.

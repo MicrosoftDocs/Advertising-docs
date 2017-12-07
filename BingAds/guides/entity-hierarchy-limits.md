@@ -23,7 +23,7 @@ The following table defines limits for [AdvertiserAccount](~/customer-management
 
 |Property|Limit|
 |------------|---------|
-|Name|The string can contain a maximum of 100 characters and must be unique within the customer.|
+|Name|The string can contain between 3 and 100 characters and must be unique among all account names within the customer.|
 
 ## <a name="adextensions"></a>Ad Extensions
 Ad extensions let you decorate text ads with additional information that helps customers find relevant information about your products and services. Ad extensions are stored in a shared library at the account level. After adding the extension to your shared library, you must also explicitly associate it with the account or one or more campaigns or ad groups within the account for the extension to become eligible for delivery. For more information, see [Ad Extensions](ad-extensions.md).

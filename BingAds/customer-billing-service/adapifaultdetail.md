@@ -41,5 +41,5 @@ The [AdApiFaultDetail](adapifaultdetail.md) object derives from the [Application
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https://adapi.microsoft.com  
+Namespace: https\://adapi.microsoft.com  
 

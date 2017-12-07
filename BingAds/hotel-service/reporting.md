@@ -172,6 +172,8 @@ The request must include at least one dimension column and one measure column.
 |CTR|CTR|The click-through-rate of the ads. CTR is calculated by dividing the number of times the ads were clicked by the number of impressions.
 |Impressions|Impr.|The number of times ads were shown.
 |Spend|Spend|The total cost of all clicks. The spend is in the account's currency.
+|SpendUSD|Spend USD|The total cost of all clicks. The spend is in USD.
+|AverageCPCUSD|Avg. CPC USD|The average cost per click, which is calculated by dividing the total cost of all clicks by the number of clicks. The spend is in USD.
 
 
 ## Sample Performance report
