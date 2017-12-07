@@ -31,7 +31,7 @@ Defines an object that contains the identifier of the keyword and the suggested 
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: *http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity*  
+Namespace: ```http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity```  
 
 ## Used By
 [GetEstimatedBidByKeywordIds](getestimatedbidbykeywordids.md)  
