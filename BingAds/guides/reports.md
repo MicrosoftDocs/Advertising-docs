@@ -42,7 +42,7 @@ For information about when the books are closed for reporting, see [Determining 
 "YourAccountId","YourCampaignId","shoe sale","345","Computer","80"
 "YourAccountId","YourCampaignId","shoe sale","345","Smartphone","5"
 
-"?2017 Microsoft Corporation. All rights reserved. "
+"@2017 Microsoft Corporation. All rights reserved. "
 ```
 
 ## <a name="columnsdata"></a>Columns that Group the Data
@@ -64,7 +64,7 @@ The attribute columns that you include in a report affects the values within the
 "YourAccountId","YourCampaignId","shoes delivered","234","1"
 "YourAccountId","YourCampaignId","shoe sale","345","98"
 
-"?2017 Microsoft Corporation. All rights reserved. "
+"@2017 Microsoft Corporation. All rights reserved. "
 ```
 
 
@@ -90,7 +90,7 @@ If you then include the *DeviceType* column, the report will contain a row for e
 "YourAccountId","YourCampaignId","shoe sale","345","Smartphone","5"
 "YourAccountId","YourCampaignId","shoe sale","345","Tablet","13"
 
-"?2017 Microsoft Corporation. All rights reserved. "
+"@2017 Microsoft Corporation. All rights reserved. "
 ```
 
 For more information about each type of available columns, see [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).
