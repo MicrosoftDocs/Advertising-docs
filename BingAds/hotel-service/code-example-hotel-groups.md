@@ -8,6 +8,7 @@ manager: ehansen
 ms.author: "scottwhi"
 dev_langs:
   - csharp
+  - java
   - python
 ---
 
@@ -567,6 +568,435 @@ class AdsApiError
     public string Property { get; set; }
 }
 
+```
+
+```java
+// This example uses the Jackson json library as well as the Apache http components
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
+// http://www-us.apache.org/dist//httpcomponents/httpclient/binary/httpcomponents-client-4.5.3-bin.tar.gz
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.microsoft.bing.hotels.datatransferobjects.*;
+import javafx.application.Application;
+import javafx.stage.Stage;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPatch;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicHeader;
+import org.apache.http.protocol.HTTP;
+
+import java.io.*;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.util.*;
+
+public class GroupsExample {
+    private static String clientId = "<CLIENTIDGOESHERE>";
+    private static String customerId = "<CUSTOMERIDGOESHERE>";
+    private static String accountId = "<ACCOUNTIDGOESHERE>";
+    private static String subAccountId = "<SUBACCOUNTIDGOESHERE>";
+
+    private static String authorizationToken = "<AUTHORIZATIONTOKENGOESHERE>";
+
+    public static void main(String[] args) throws IOException {
+
+        try {
+            // Get Hotel Groups
+            System.out.println("*** Getting hotel groups ***");
+            List<HotelGroup> hotelGroups = getHotelGroups(customerId, accountId, subAccountId);
+            for (HotelGroup hotelGroup: hotelGroups) {
+                Print(hotelGroup);
+            }
+
+            // Add Hotel Group
+            System.out.println("*** Adding hotel group ***");
+            HotelGroup hotelGroup = new HotelGroup();
+            // The hotel group name must be unique. This example appends a random string to
+            // ensure that the hotel group name is unique in case you run the example multiple
+            // times; appending the random string is not required.
+            hotelGroup.setName(String.format("Test Hotel Group %s", UUID.randomUUID()));
+            String hotelGroupId = addHotelGroup(customerId, accountId, subAccountId, hotelGroup);
+
+            // Update Hotel Group
+            System.out.println("*** Updating hotel group ***");
+            HotelGroup hotelGroupToUpdate = new HotelGroup();
+            hotelGroupToUpdate.setId(hotelGroupId);
+            DeviceMultiplier multiplier = new DeviceMultiplier("Desktop");
+            multiplier.setFactor(.65);
+            hotelGroupToUpdate.setBidMultipliers(multiplier);
+            updateHotelGroup(customerId, accountId, subAccountId, hotelGroupToUpdate);
+
+            // Get Hotel Group
+            System.out.println("*** Getting hotel group ***");
+            HotelGroup retrieved = getHotelGroup(customerId, accountId, subAccountId, hotelGroupId);
+            Print(retrieved);
+
+            // Delete Hotel Group
+            System.out.println("*** Deleting hotel group ***");
+            deleteHotelGroup(customerId, accountId, subAccountId, hotelGroupId);
+            System.out.println("*** Done ***");
+        } catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+    private static final String BASE_URI = "https://partner.api.sandbox.bingads.microsoft.com/Travel/V1";
+    private static final String HOTEL_GROUPS_URI = BASE_URI + "/Customers(%s)/Accounts(%s)/SubAccounts('%s')/HotelGroups";
+    private static final String HOTEL_GROUP_URI = BASE_URI + "/Customers(%s)/Accounts(%s)/SubAccounts('%s')/HotelGroups('%s')";
+    public static List<HotelGroup> getHotelGroups(String customerId, String accountId, String subAccountId) throws IOException, AdsApiError {
+        String url = String.format(HOTEL_GROUPS_URI, customerId, accountId, subAccountId);
+        CollectionResponse response = Request("GET", url, null, CollectionResponse.class);
+        ObjectMapper mapper = new ObjectMapper();
+
+        return mapper.convertValue(response.getValue(), new TypeReference<List<HotelGroup>>(){});
+    }
+
+    public static String addHotelGroup(String customerId, String accountId, String subAccountId, HotelGroup hotelGroup) throws IOException, AdsApiError {
+        String url = String.format(HOTEL_GROUPS_URI, customerId, accountId, subAccountId);
+        AddResponse response = Request("POST", url, hotelGroup, AddResponse.class);
+        return response.getValue();
+    }
+
+    public static void updateHotelGroup(String customerId, String accountId, String subAccountId, HotelGroup hotelGroup){
+        String url = String.format(HOTEL_GROUP_URI, customerId, accountId, subAccountId, hotelGroup.getId());
+        Patch(url, hotelGroup);
+    }
+
+    public static HotelGroup getHotelGroup(String customerId, String accountId, String subAccountId, String hotelGroupId) throws AdsApiError, IOException {
+        String url = String.format(HOTEL_GROUP_URI, customerId, accountId, subAccountId, hotelGroupId);
+        return Request("GET", url, null, HotelGroup.class);
+    }
+
+    public static void deleteHotelGroup(String customerId, String accountId, String subAccountId, String hotelGroupId) throws AdsApiError, IOException {
+        String url = String.format(HOTEL_GROUP_URI, customerId, accountId, subAccountId, hotelGroupId);
+        Request("DELETE", url, null, Object.class);
+    }
+
+    /***
+     * Use reflection to output the properties of the
+     * specified value
+     * @param value
+     * @throws InvocationTargetException
+     * @throws IllegalAccessException
+     */
+    protected static void Print(Object value) throws InvocationTargetException, IllegalAccessException {
+        Class<?> clazz = value.getClass();
+        Method[] methods = clazz.getDeclaredMethods();
+        for (Method method : methods) {
+            String methodName = method.getName();
+            if (methodName.startsWith("get")) {
+                Object propertyValue = method.invoke(value);
+                if (propertyValue != null) {
+                    System.out.println(methodName.substring(3, methodName.length()) + ": " + propertyValue.toString());
+                }
+            }
+        }
+    }
+
+    protected static void Patch(String uri, Object instance){
+        try {
+            HttpClient client = new DefaultHttpClient();
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+            String json = mapper.writeValueAsString(instance);
+            StringEntity entity = new StringEntity(json);
+            entity.setContentType(new BasicHeader(HTTP.CONTENT_TYPE, "application/json"));
+
+            HttpPatch patch = new HttpPatch(uri);
+            patch.setEntity(entity);
+            patch.addHeader("Authorization", "Bearer " + authorizationToken);
+            HttpResponse response = client.execute(patch);
+            System.out.println("Update Response Code : " + response.getStatusLine().getStatusCode());
+            HttpEntity responseEntity = response.getEntity();
+            if (responseEntity != null) {
+                BufferedReader rd = new BufferedReader(new InputStreamReader(responseEntity.getContent()));
+                String line = "";
+                while ((line = rd.readLine()) != null) {
+                    System.out.println(line);
+                }
+            }
+        } catch(Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    protected static <T> T Request(String method, String uri, Object instance, Class<T> clazz) throws AdsApiError, IOException {
+        T result = null;
+        ObjectMapper jsonSerializer = new ObjectMapper();
+        HttpURLConnection connection = null;
+        InputStream inputStream = null;
+        BufferedReader reader = null;
+
+        try {
+            URL url = new URL(uri);
+            connection = (HttpURLConnection)url.openConnection();
+            connection.setRequestMethod(method);
+            connection.setRequestProperty("Authorization", "Bearer " + authorizationToken);
+            connection.setRequestProperty("Content-Type", "application/json");
+
+            connection.setDoOutput(true);
+            connection.setDoInput(true);
+            connection.setUseCaches(false);
+
+            if (instance != null) {
+                String json = jsonSerializer.writeValueAsString(instance);
+                OutputStreamWriter outputStream = new OutputStreamWriter(connection.getOutputStream());
+                outputStream.write(json);
+                outputStream.close();
+            }
+
+            int statusCode = connection.getResponseCode();
+            if (statusCode >= HttpURLConnection.HTTP_BAD_REQUEST) {
+                inputStream = connection.getErrorStream();
+            } else {
+                inputStream = connection.getInputStream();
+            }
+
+            StringBuffer response = new StringBuffer();
+            reader = new BufferedReader(new InputStreamReader(inputStream));
+            char[] buffer = new char[1024];
+            int length = 0;
+            while ((length = reader.read(buffer)) != -1) {
+                response.append(new String(buffer, 0, length));
+            }
+            if (statusCode >= HttpURLConnection.HTTP_BAD_REQUEST) {
+                if (statusCode < HttpURLConnection.HTTP_INTERNAL_ERROR) {
+                    CollectionResponse collectionResponse = jsonSerializer.readValue(response.toString(), CollectionResponse.class);
+                    ObjectMapper mapper = new ObjectMapper();
+
+                    AdsApiError error = mapper.convertValue(collectionResponse.getValue().get(0), new TypeReference<AdsApiError>(){});
+                    throw error;
+                }
+                else {
+                    throw new Exception(response.toString());
+                }
+            }
+            String responseJson = response.toString();
+            if(responseJson.length() > 0){
+                result = jsonSerializer.readValue(responseJson, clazz);
+            }
+        } catch (ProtocolException e) {
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (connection != null) {
+                connection.disconnect();
+            }
+
+            if (reader != null) {
+                reader.close();
+            }
+
+            if (inputStream != null) {
+                inputStream.close();
+            }
+        }
+
+        return result;
+    }
+}
+
+// HotelGroups.java
+package com.microsoft.bing.hotels.datatransferobjects;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class HotelGroup {
+    private String id;
+    private String name;
+    private String status;
+    private Object bid;
+    private List<Object> bidMultipliers;
+    private String bidSource;
+    private String bidMultiplierSource;
+    public HotelGroup(){
+        this.bidMultipliers = new ArrayList();
+    }
+    @JsonProperty("Id")
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    @JsonProperty("Name")
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @JsonProperty("Status")
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    @JsonProperty("Bid")
+    public Object getBid() {
+        return bid;
+    }
+
+    public void setBid(Object bid) {
+        this.bid = bid;
+    }
+
+    @JsonProperty("BidMultipliers")
+    public List<Object> getBidMultipliers() {
+        if(this.bidMultipliers.size() > 0){
+            return bidMultipliers;
+        }
+        return null;
+    }
+
+    public void setBidMultipliers(Object... bidMultipliers) {
+        this.bidMultipliers.clear();
+        for(Object multiplier : bidMultipliers){
+            this.bidMultipliers.add(multiplier);
+        }
+    }
+
+    @JsonProperty("BidSource")
+    public String getBidSource() {
+        return bidSource;
+    }
+
+    public void setBidSource(String bidSource) {
+        this.bidSource = bidSource;
+    }
+
+    @JsonProperty("BidMultiplierSource")
+    public String getBidMultiplierSource() {
+        return bidMultiplierSource;
+    }
+
+    public void setBidMultiplierSource(String bidMultiplierSource) {
+        this.bidMultiplierSource = bidMultiplierSource;
+    }
+}
+
+// AdsApiError.java
+package com.microsoft.bing.hotels.datatransferobjects;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class AdsApiError extends Exception {
+    String code;
+    String apiMessage;
+    String property;
+
+    @JsonProperty("Code")
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    @JsonProperty("Message")
+    public String getApiMessage() {
+        return apiMessage;
+    }
+
+    public void setApiMessage(String message) {
+        this.apiMessage = message;
+    }
+
+    @JsonProperty("Property")
+    public String getProperty() {
+        return property;
+    }
+
+    public void setProperty(String property) {
+        this.property = property;
+    }
+
+    public String getMessage(){
+        return String.format("Code: %s, Message: %s, Property: %s", getCode(), getApiMessage(), getProperty());
+    }
+}
+
+// DeviceMultiplier.java
+package com.microsoft.bing.hotels.datatransferobjects;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class DeviceMultiplier extends Multiplier{
+    private String[] deviceTypes;
+    public DeviceMultiplier(String... deviceTypes){
+        this.deviceTypes = deviceTypes;
+        this.setType("#Model.DeviceMultiplier");
+    }
+
+    @JsonProperty("DeviceTypes")
+    public String[] getDevicesTypes(){
+        return deviceTypes;
+    }
+
+    public void setDevicesTypes(String[] deviceTypes){
+        this.deviceTypes = deviceTypes;
+    }
+}
+
+// Multiplier.java
+package com.microsoft.bing.hotels.datatransferobjects;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Multiplier {
+    private String type;
+    private double factor;
+
+    @JsonProperty("@odata.type")
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    @JsonProperty("Factor")
+    public double getFactor() {
+        return factor;
+    }
+
+    public void setFactor(double factor) {
+        this.factor = factor;
+    }
+}
 ```
 
 ```python

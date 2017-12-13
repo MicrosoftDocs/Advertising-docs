@@ -9,6 +9,7 @@ ms.author: "scottwhi"
 
 dev_langs:
   - csharp
+  - java
   - python
 ---
 # Subaccount code example
@@ -563,6 +564,350 @@ class AdsApiError
     public string Code { get; set; }
     public string Message { get; set; }
     public string Property { get; set; }
+}
+```
+
+```java
+// This example uses the Jackson json library as well as the Apache http components.
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
+// http://www-us.apache.org/dist//httpcomponents/httpclient/binary/httpcomponents-client-4.5.3-bin.tar.gz
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.microsoft.bing.hotels.datatransferobjects.CollectionResponse;
+import com.microsoft.bing.hotels.datatransferobjects.ContentError;
+import com.microsoft.bing.hotels.datatransferobjects.FixedBid;
+import com.microsoft.bing.hotels.datatransferobjects.SubAccount;
+import com.sun.org.apache.regexp.internal.RE;
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+import java.io.*;
+import java.lang.reflect.*;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.http.*;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPatch;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.message.BasicHeader;
+import org.apache.http.params.HttpParams;
+import org.apache.http.protocol.HTTP;
+
+import javax.swing.text.html.parser.Entity;
+
+public class SubAccountsExample {
+    private static String clientId = "<CLIENTIDGOESHERE>";
+    private static String customerId = "<CUSTOMERIDGOESHERE>";
+    private static String accountId = "<ACCOUNTIDGOESHERE>";
+
+    private static String authorizationToken = "<AUTHORIZATIONTOKENGOESHERE>";
+
+    public static void main(String[] args) throws IOException {
+
+        try {
+            List<SubAccount> subAccounts = getSubAccounts(customerId, accountId);
+            for (SubAccount subAccount: subAccounts) {
+                Print(subAccount);
+            }
+            String subAccountId = subAccounts.get(0).getId();
+            SubAccount toUpdate = new SubAccount();
+            toUpdate.setId(subAccountId);
+            FixedBid fixedBid = new FixedBid();
+            fixedBid.setAmount(3.47);
+            fixedBid.setType("#Model.FixedBid");
+            toUpdate.setBid(fixedBid);
+            updateSubAccount(customerId, accountId, toUpdate);
+
+            SubAccount updatedSubAccount = getSubAccount(customerId, accountId, subAccountId);
+            Print(updatedSubAccount);
+        } catch(Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+    private static final String BASE_URI = "https://partner.api.sandbox.bingads.microsoft.com/Travel/V1";
+    private static final String SUB_ACCOUNTS_URI = BASE_URI + "/Customers(%s)/Accounts(%s)/SubAccounts";
+    private static final String SUB_ACCOUNT_URI = BASE_URI + "/Customers(%s)/Accounts(%s)/SubAccounts('%s')";
+    public static List<SubAccount> getSubAccounts(String customerId, String accountId) throws IOException {
+        String url = String.format(SUB_ACCOUNTS_URI, customerId, accountId);
+        CollectionResponse response = Request("GET", url, null, CollectionResponse.class);
+        ObjectMapper mapper = new ObjectMapper();
+
+        return mapper.convertValue(response.getValue(), new TypeReference<List<SubAccount>>(){});
+    }
+
+    public static void updateSubAccount(String customerId, String accountId, SubAccount subAccount) throws IOException {
+        String url = String.format(SUB_ACCOUNT_URI, customerId, accountId, subAccount.getId());
+        Patch(url, subAccount);
+    }
+
+    public static SubAccount getSubAccount(String customerId, String accountId, String subAccountId) throws IOException {
+        String url = String.format(SUB_ACCOUNT_URI, customerId, accountId, subAccountId);
+        SubAccount subAccount = Request("GET", url, null, SubAccount.class);
+        return subAccount;
+    }
+    /***
+     * Use reflection to output the properties of the
+     * specified value
+     * @param value
+     * @throws InvocationTargetException
+     * @throws IllegalAccessException
+     */
+    protected static void Print(Object value) throws InvocationTargetException, IllegalAccessException {
+        Class<?> clazz = value.getClass();
+        Method[] methods = clazz.getDeclaredMethods();
+        for (Method method : methods) {
+            try {
+
+                String methodName = method.getName();
+                if (methodName.startsWith("get")) {
+                    Object propertyValue = method.invoke(value);
+                    if(propertyValue != null){
+                        System.out.println(methodName.substring(3, methodName.length()) + ": " + propertyValue.toString());
+                    }
+                }
+            } catch(Exception ex) {
+                System.out.println(ex.getStackTrace());
+            }
+        }
+    }
+
+    protected static <T> void Patch(String uri, T instance){
+        try {
+            HttpClient client = new DefaultHttpClient();
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+            String json = mapper.writeValueAsString(instance);
+            StringEntity entity = new StringEntity(json);
+            entity.setContentType(new BasicHeader(HTTP.CONTENT_TYPE, "application/json"));
+
+            HttpPatch patch = new HttpPatch(uri);
+            patch.setEntity(entity);
+            patch.addHeader("Authorization", "Bearer " + authorizationToken);
+            HttpResponse response = client.execute(patch);
+            System.out.println("Update Response Code : " + response.getStatusLine().getStatusCode());
+            HttpEntity responseEntity = response.getEntity();
+            if (responseEntity != null) {
+                BufferedReader rd = new BufferedReader(new InputStreamReader(responseEntity.getContent()));
+                String line = "";
+                while ((line = rd.readLine()) != null) {
+                    System.out.println(line);
+                }
+            }
+            Print(response);
+        } catch(Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    protected static <T> T Request(String method, String uri, T instance, Class<T> clazz) throws IOException {
+        T result = null;
+        ObjectMapper jsonSerializer = new ObjectMapper();
+        HttpURLConnection connection = null;
+        InputStream inputStream = null;
+        BufferedReader reader = null;
+
+        try {
+            URL url = new URL(uri);
+            connection = (HttpURLConnection)url.openConnection();
+            connection.setRequestMethod(method);
+            connection.setRequestProperty("Authorization", "Bearer " + authorizationToken);
+            connection.setRequestProperty("Content-Type", "application/json");
+
+            connection.setDoOutput(true);
+            connection.setDoInput(true);
+            connection.setUseCaches(false);
+
+            if (instance != null) {
+                String json = jsonSerializer.writeValueAsString(instance);
+                OutputStreamWriter outputStream = new OutputStreamWriter(connection.getOutputStream());
+                outputStream.write(json);
+                outputStream.close();
+            }
+
+            int statusCode = connection.getResponseCode();
+            if (statusCode >= HttpURLConnection.HTTP_BAD_REQUEST) {
+                inputStream = connection.getErrorStream();
+            } else {
+                inputStream = connection.getInputStream();
+            }
+
+            StringBuffer response = new StringBuffer();
+            reader = new BufferedReader(new InputStreamReader(inputStream));
+            char[] buffer = new char[1024];
+            int length = 0;
+            while ((length = reader.read(buffer)) != -1) {
+                response.append(new String(buffer, 0, length));
+            }
+            if (statusCode >= HttpURLConnection.HTTP_BAD_REQUEST) {
+                if (statusCode < HttpURLConnection.HTTP_INTERNAL_ERROR) {
+                    CollectionResponse errors = jsonSerializer.readValue(response.toString(), CollectionResponse.class);
+                    throw new Exception(errors.getValue().toString());
+                }
+                else {
+                    throw new Exception(response.toString());
+                }
+            }
+            String responseJson = response.toString();
+            if (responseJson.length() > 0) {
+                result = jsonSerializer.readValue(responseJson, clazz);
+            }
+        } catch (ProtocolException e) {
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (connection != null) {
+                connection.disconnect();
+            }
+
+            if (reader != null) {
+                reader.close();
+            }
+
+            if (inputStream != null) {
+                inputStream.close();
+            }
+        }
+
+        return result;
+    }
+
+    public void start(Stage stage) throws Exception {
+        main(null);
+    }
+}
+
+// CollectionResponse.java
+package com.microsoft.bing.hotels.datatransferobjects;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import java.util.List;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class CollectionResponse {
+    private List<Object> value;
+    public List<Object> getValue() { return this.value; }
+    public void setValue(List<Object> value){this.value = value;}
+}
+
+// Bid.java
+package com.microsoft.bing.hotels.datatransferobjects;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Bid {
+    double amount;
+    @JsonProperty("Amount")
+    public double getAmount(){
+        return this.amount;
+    }
+    public void setAmount(double amount){
+        this.amount = amount;
+    }
+
+    String type;
+    @JsonProperty("@odata.type")
+    public String getType(){return this.type;}
+    public void setType(String type){
+        this.type = type;
+    }
+}
+
+// FixedBid.java
+package com.microsoft.bing.hotels.datatransferobjects;
+
+public class FixedBid extends Bid{
+}
+
+// SubAccount.java
+package com.microsoft.bing.hotels.datatransferobjects;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.List;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class SubAccount {
+    private String id;
+    private String name;
+    private String status;
+    private Budget dailyBudget;
+    private FixedBid maximumBid;
+    private Object bid;
+    private List<Object> bidMultipliers;
+
+    @JsonProperty("Id")
+    public String getId(){
+        return this.id;
+    }
+    public void setId(String id){
+        this.id = id;
+    }
+
+    @JsonProperty("Name")
+    public String getName(){
+        return this.name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+
+    @JsonProperty("Status")
+    public String getStatus() {
+        return status;
+    }
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    @JsonProperty("DailyBudget")
+    public Budget getDailyBudget() {
+        return dailyBudget;
+    }
+    public void setDailyBudget(Budget dailyBudget) {
+        this.dailyBudget = dailyBudget;
+    }
+
+    @JsonProperty("MaximumBid")
+    public FixedBid getMaximumBid() {
+        return maximumBid;
+    }
+    public void setMaximumBid(FixedBid maximumBid) {
+        this.maximumBid = maximumBid;
+    }
+
+    @JsonProperty("Bid")
+    public Object getBid() {
+        return bid;
+    }
+    public void setBid(Object bid) {
+        this.bid = bid;
+    }
+
+    @JsonProperty("BidMultipliers")
+    public List<Object> getBidMultipliers() {
+        return bidMultipliers;
+    }
+    public void setBidMultipliers(List<Object> bidMultipliers) {
+        this.bidMultipliers = bidMultipliers;
+    }
 }
 ```
 

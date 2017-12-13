@@ -12,7 +12,12 @@ ms.author: "scottwhi"
 
 For information about changes that were included with each release, see the following sections.
 
+## December 15, 2017
 
+### Nonbreaking changes
+
+- Added [SpendUSD](../hotel-service/reporting.md#measure-columns) Performance Report column.
+- Added [AverageCPCUSD](../hotel-service/reporting.md#measure-columns) Performance Report column.
 
 ## December 1, 2017
 
