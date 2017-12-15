@@ -647,7 +647,7 @@ ACCOUNT_ID = "<ACCOUNTIDGOESHERE>"
 SUBACCOUNT_ID = "<SUBACCOUNTGOESHERE>"
 
 AUTHORIZATIONBEARER_TOKEN = '<AUTHENTICATIONTOKENGOESHERE>'
-AUTHORIZATION_HEADER = {'Authorization': "Bearer " + AUTHORIZATIONBEARER_TOKEN}
+AUTHORIZATION_HEADER = {'Authorization': "Bearer " + AUTHORIZATIONBEARER_TOKEN, 'Content-Type': 'application/json'}
 
 def main():
     """The main entry point of this example"""
@@ -747,7 +747,7 @@ def update_hotel(customer_id, account_id, subaccount_id, hotel, hotel_group_id=N
     if hotel_group_id is None:
         hotel_group_id = get_default_hotel_group(customer_id, account_id, subaccount_id)['Id']
     url = HOTEL_URI.format(customer_id, account_id, subaccount_id, hotel_group_id, hotel['Id'])
-    response = requests.patch(url, headers=AUTHORIZATION_HEADER)
+    response = requests.patch(url, headers=AUTHORIZATION_HEADER, data=json.dumps(hotel))
     response.raise_for_status()
 
 def get_default_hotel_group(customer_id, account_id, subaccount_id):
