@@ -774,8 +774,7 @@ public class GroupsExample {
 
                     AdsApiError error = mapper.convertValue(collectionResponse.getValue().get(0), new TypeReference<AdsApiError>(){});
                     throw error;
-                }
-                else {
+                } else {
                     throw new Exception(response.toString());
                 }
             }

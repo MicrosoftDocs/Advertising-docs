@@ -672,7 +672,7 @@ public class SubAccountsExample {
                 String methodName = method.getName();
                 if (methodName.startsWith("get")) {
                     Object propertyValue = method.invoke(value);
-                    if(propertyValue != null){
+                    if (propertyValue != null) {
                         System.out.println(methodName.substring(3, methodName.length()) + ": " + propertyValue.toString());
                     }
                 }
@@ -753,8 +753,7 @@ public class SubAccountsExample {
                 if (statusCode < HttpURLConnection.HTTP_INTERNAL_ERROR) {
                     CollectionResponse errors = jsonSerializer.readValue(response.toString(), CollectionResponse.class);
                     throw new Exception(errors.getValue().toString());
-                }
-                else {
+                } else {
                     throw new Exception(response.toString());
                 }
             }
