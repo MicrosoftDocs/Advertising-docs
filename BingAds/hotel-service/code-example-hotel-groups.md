@@ -571,7 +571,7 @@ class AdsApiError
 ```
 
 ```java
-// This example uses the Jackson json library as well as the Apache http components
+// This example uses the Jackson json library as well as the Apache HttpComponents™ client.
 // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
 // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations
 // http://www-us.apache.org/dist//httpcomponents/httpclient/binary/httpcomponents-client-4.5.3-bin.tar.gz
@@ -774,8 +774,7 @@ public class GroupsExample {
 
                     AdsApiError error = mapper.convertValue(collectionResponse.getValue().get(0), new TypeReference<AdsApiError>(){});
                     throw error;
-                }
-                else {
+                } else {
                     throw new Exception(response.toString());
                 }
             }
