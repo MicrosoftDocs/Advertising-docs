@@ -17,6 +17,7 @@ For information about changes that were included with each release, see the foll
 ### Nonbreaking changes
 
 - Added [SpendUSD](../hotel-service/reporting.md#measure-columns) Performance Report column.
+
 - Added [AverageCPCUSD](../hotel-service/reporting.md#measure-columns) Performance Report column.
 
 ## December 1, 2017
