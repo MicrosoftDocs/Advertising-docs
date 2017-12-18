@@ -165,14 +165,14 @@ The request must include at least one dimension column and one measure column.
 
 |Column name|Report column name|Description
 |-|-|-
-|AverageCPC|Avg. CPC|The average cost per click, which is calculated by dividing the total cost of all clicks by the number of clicks. The cost is in the account's currency.
+|AverageCPC|Avg. CPC|The average cost per click, which is calculated by dividing the total cost of all clicks by the number of clicks. The cost is in the account's currency.  Data is available starting from 12/06/2017.
 |AverageCPCUSD|Avg. CPC USD|The average cost per click, which is calculated by dividing the total cost of all clicks by the number of clicks. The cost is in US dollars.
 |AveragePosition|Avg. pos.|The average position of ads on the results page. Position refers to the order of the ad on the page relative to all other ads across all slots.
 |AverageSlotPosition|Avg. slot pos.|The average position of ads in the slot type. If you include this metric, you should also include the SlotType dimension column.
 |Clicks|Clicks|The number of time ads were clicked.
 |CTR|CTR|The click-through-rate of the ads. CTR is calculated by dividing the number of times the ads were clicked by the number of impressions.
 |Impressions|Impr.|The number of times ads were shown.
-|Spend|Spend|The total cost of all clicks. The cost is in the account's currency.
+|Spend|Spend|The total cost of all clicks. The cost is in the account's currency.  Data is available starting from 12/06/2017.
 |SpendUSD|Spend USD|The total cost of all clicks. The cost is in US dollars.
 
 
