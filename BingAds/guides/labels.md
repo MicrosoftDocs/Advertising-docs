@@ -9,11 +9,6 @@ description: Labels let you organize campaigns, ad groups, ads, and keywords int
 # Labels
 Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
-> 
-> Reporting for labels is not yet available via Bing Ads API. You can use Reporting in the Bing Ads web applicationn. 
-
 With labels, you could:
 * Run a report to compare "Holiday 2016" and "Holiday 2017" performance, across campaigns, ad groups, ads, and keywords.
 * Run a report to compare ads and keywords that include brand names against ads and keywords that use generic terms.

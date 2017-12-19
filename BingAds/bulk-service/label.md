@@ -13,9 +13,6 @@ Defines a label that can be uploaded and downloaded in a bulk file.
 
 Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
-
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Label* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 
