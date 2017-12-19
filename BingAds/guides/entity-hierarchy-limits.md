@@ -241,10 +241,9 @@ The following table defines limits for audience properties.
 |MembershipDuration|The mimimum duration is 1 day and the maximum duration allowed is 180 days.|
 |Name|The name of the audience. The name can contain a maximum of 128 characters.|
 
-### <a name="remarketinglist"></a>Remarketing List
-A remarketing list extends the audience abstract class. You create a remarketing list to define the audience based on actions people take on your website, and then you create an association between the remarketing list and an ad group. 
+You can have up to 1,000 custom audiences per customer. You can have up to 1,000 remarketing lists per account, or 5,000 per customer. The in-market audiences maximum is only limited by the number of in-market audiences provided by Bing Ads. 
 
-You can have up to 1,000 remarketing lists per account, or 5,000 per customer. There is a limit of 20,000,000 associations per acccount.
+There is a limit of 20,000,000 associations per acccount combined for custom audience, in-market audience, and remarketing list associations (whether the associations are used for inclusion or exclusion).
 
 ## <a name="budget"></a>Budget
 Represents a budget that can be shared by any campaigns in an account. You can set a single daily budget that can be used by any campaign within the same account. This will enable you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Bing Ads account.
