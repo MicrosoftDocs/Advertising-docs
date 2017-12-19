@@ -125,14 +125,14 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Not supported  
 
 ### <a name="parentid"></a>Parent Id
-The system generated identifier of the account or customer. If the *Scope* is set to *Account*, this is the account ID, and otherwise it is the customer ID.
+The Bing Ads identifier of the customer that contains the in-market audience.
 
 **Add:** Not supported  
 **Update:** Not supported    
 **Delete:** Not supported  
 
 ### <a name="scope"></a>Scope
-Scope defines what accounts can use this in-market audience. If scope is set to *Account*, the in-market audience can only be associated with ad groups within one specified account (*Parent Id*). If scope is set to *Customer*, the in-market audience can be associated with any ad groups across all of the customer's accounts.
+Scope defines what accounts can use this in-market audience. For an in-market audience the only supported scope is *Customer*, and the in-market audience can be associated with any ad groups across all of the customer's accounts.
 
 **Add:** Not supported  
 **Update:** Not supported    
