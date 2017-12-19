@@ -11,9 +11,6 @@ dev_langs:
 # Keyword Label Record - Bulk
 Defines an association record between a [Keyword](../bulk-service/keyword.md) and a [Label](../bulk-service/label.md) that can be uploaded and downloaded in a bulk file. To upload or download the keyword or label, use the [Keyword](../bulk-service/keyword.md) or [Label](../bulk-service/label.md) record.
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
-
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Keyword Label* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 

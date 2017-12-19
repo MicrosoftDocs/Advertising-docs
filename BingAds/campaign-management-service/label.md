@@ -9,9 +9,6 @@ description: Labels let you organize campaigns, ad groups, ads, and keywords int
 # Label Data Object - Campaign Management
 Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
-
 ## Syntax
 ```xml
 <xs:complexType name="Label" xmlns:xs="http://www.w3.org/2001/XMLSchema">
