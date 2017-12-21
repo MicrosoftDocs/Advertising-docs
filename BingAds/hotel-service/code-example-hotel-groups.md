@@ -10,6 +10,7 @@ dev_langs:
   - csharp
   - java
   - python
+  - curl
 ---
 
 # Hotel Group code example
@@ -1107,4 +1108,26 @@ def random_string(length=6):
 if __name__ == '__main__':
     main()
 
+```
+
+```curl
+#!/usr/bin/sh
+CUSTOMERID=<CUSTOMERIDGOESHERE>
+ACCOUNTID=<ACCOUNTIDGOESHERE>
+SUBACCOUNTID=<SUBACCOUNTIDGOESHERE>
+AUTHORIZATIONTOKEN=<AUTHENTICATIONTOKENGOESHERE>
+
+echo "*** Listing Hotel Groups ***"
+curl -X GET "https://partner.api.bingads.microsoft.com/Travel/V1/Customers($CUSTOMERID)/Accounts($ACCOUNTID)/SubAccounts('$SUBACCOUNTID')/HotelGroups" -H "accept: application/json" -H "content-type: application/json" -H "Authorization: Bearer $AUTHORIZATIONTOKEN"
+
+echo "*** Adding a hotel group ***"
+HOTELGROUPNAMETOADD=<HOTELGROUPNAMEGOESHERE>
+curl -X POST "https://partner.api.bingads.microsoft.com/Travel/V1/Customers($CUSTOMERID)/Accounts($ACCOUNTID)/SubAccounts('$SUBACCOUNTID')/HotelGroups" -H "accept: application/json" -H "content-type: application/json" -H "Authorization: Bearer $AUTHORIZATIONTOKEN" -d "{\"Name\":\"$HOTELGROUPNAMETOADD\"}"
+
+echo "*** Updating hotel group  ***"
+HOTELGROUPID=<HOTELGROUPIDGOESHERE>
+curl -X PATCH "https://partner.api.bingads.microsoft.com/Travel/V1/Customers($CUSTOMERID)/Accounts($ACCOUNTID)/SubAccounts('$SUBACCOUNTID')/HotelGroups('$HOTELGROUPID')" -H "accept: application/json" -H "content-type: application/json" -H "Authorization: Bearer $AUTHORIZATIONTOKEN" -d "{\"Id\":\"$HOTELGROUPID\",\"BidMultipliers\":[{\"DeviceTypes\":[\"Desktop\",\"Mobile\",\"Tablet\"],\"Factor\":5.5,\"@odata.type\":\"#Model.DeviceMultiplier\"}]}"
+
+echo "*** Deleting hotel group ***"
+curl -X DELETE "https://partner.api.bingads.microsoft.com/Travel/V1/Customers($CUSTOMERID)/Accounts($ACCOUNTID)/SubAccounts('$SUBACCOUNTID')/HotelGroups('$HOTELGROUPID')" -H "accept: application/json" -H "content-type: application/json" -H "Authorization: Bearer $AUTHORIZATIONTOKEN"
 ```
