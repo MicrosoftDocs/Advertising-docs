@@ -23,12 +23,15 @@ You must first [register an application](../guides/authentication-oauth.md#regis
 3.  Copy both *AuthHelper.php* and the *V11* directory (with included samples) to your local project directory e.g. copy from *c:\dev\BingAdsPHP\vendor\microsoft\bingads\samples* to *c:\dev\BingAdsPHP*.
 
     ![Sample PHP Project Directory](../guides/media/sample-php-project-directory.png "Sample PHP Project Directory")  
+
     > [!NOTE]
     > You have alternative options for example, changing the path of *autoload.php* within *AuthHelper.php* and within each sample that you want to run. You could also write your application from scratch in the *c:\dev\BingAdsPHP* directory. 
     
 4. Within the *AuthHelper.php* sample helper file, edit the *UserName*, *Password*, and *DeveloperToken* values to your own credentials. 
+
    > [!NOTE] 
    > To authenticate with OAuth you'll need a refresh token to get started. For details see [OAuth Refresh Token](#oauth).
+
 5. Edit one of the samples e.g. *\V11\SearchUserAccounts.php*. Choose the authentication helper function that you will use, and comment out the other. 
    ```php
    // You should authenticate for Bing Ads production services with a Microsoft Account, 
@@ -55,8 +58,10 @@ To authenticate with OAuth you'll need a refresh token to get started.
 4. You should be prompted to copy and paste the authorization URL into a web browser. The one time user consent is required, and thereafter you will be able to use the refresh token to request new access and refresh tokens.
 5. After authorizing your application to manage your Bing Ads accounts, copy the resulting URL (with *code* parameter) and paste it into the console window. Then press the *Enter* (return) key to continue execution.
 6. The refresh token will be written to *refresh.txt*. You can change the location by editing the *OAuthRefreshTokenPath* setting within *AuthHelper.php*.
+
    > [!IMPORTANT] 
    > This quick start example is not recommended in production. You should only store a Bing Ads user's refresh token in a secure location.
+
 7. Subsequent calls to the *AuthenticateWithOAuth* helper function will attempt to read the refresh token from the same location. 
    
 
