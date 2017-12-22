@@ -13,6 +13,7 @@ Get started developing Bing Ads applications in any programming language which s
 |-----|-----|
 |[Ad Extensions](./code-example-ad-extensions.md)|This example shows how to add, get, and delete extensions for an account's ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial reviews.|
 |[Bulk Ad Extensions](./code-example-bulk-ad-extensions.md)|This example shows how to add, get, and delete extensions for a campaign with the Bulk service.|
+|[Bulk Keywords and Ads](./code-example-bulk-keywords-ads.md)|This example demonstrates how to setup ads and keywords for a search advertising campaign using the Bulk service.|
 |[Bulk Shopping Campaigns](./code-example-bulk-shopping-campaigns.md)|This example demonstrates how to apply product conditions for Bing Shopping Campaigns using the Bulk service.|
 |[Budget Opportunities](./code-example-budget-opportunities.md)|This example demonstrates how to get the budget opportunities for each campaign in the current authenticated account.|
 |[Conversion Goals](./code-example-conversion-goals.md)|This example demonstrates how to manage UET tags and conversion goals.|
