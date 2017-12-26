@@ -1,0 +1,114 @@
+- name: Overview
+  href: /bingads/scripts/
+- name: Authorization
+  href: /bingads/scripts/authorization
+- name: Get Started
+  href: /bingads/scripts/get-started
+- name: Concepts
+  href: /bingads/scripts/concepts/
+  items:
+    - name: Iterators
+      href: /bingads/scripts/concepts/iterators
+    - name: Selectors
+      href: /bingads/scripts/concepts/selectors      
+    - name: Builders
+      href: /bingads/scripts/concepts/builders    
+- name: Examples
+  href: /bingads/scripts/examples/
+  items:
+    - name: Accounts
+      href: /bingads/scripts/examples/accounts
+    - name: Ad Groups
+      href: /bingads/scripts/examples/adgroups
+    - name: Campaigns
+      href: /bingads/scripts/examples/campaigns
+- name: Reference
+  href: /bingads/scripts/reference-overview
+  items:     
+    - name: Single-Account  
+      href: ./reference/BingAdsApp
+      items:
+        - name: Account
+          href: ./reference/Account
+        - name: Ad
+          href: ./reference/Ad
+        - name: AdBuilderSpace
+          href: ./reference/AdBuilderSpace
+        - name: Address
+          href: ./reference/Address
+        - name: AdGroup
+          href: ./reference/AdGroup
+        - name: AdGroupBuilder
+          href: ./reference/AdGroupBuilder
+        - name: AdGroupDevices
+          href: ./reference/AdGroupDevices
+        - name: AdGroupIterator
+          href: ./reference/AdGroupIterator
+        - name: AdGroupOperation
+          href: ./reference/AdGroupOperation
+        - name: AdGroupSelector
+          href: ./reference/AdGroupSelector
+        - name: AdGroupUrls
+          href: ./reference/AdGroupUrls
+        - name: AdIterator
+          href: ./reference/AdIterator
+        - name: AdOperation
+          href: ./reference/AdOperation
+        - name: AdParam
+          href: ./reference/AdParam
+        - name: AdParamIterator
+          href: ./reference/AdParamIterator
+        - name: AdParamSelector
+          href: ./reference/AdParamSelector
+        - name: AdSelector
+          href: ./reference/AdSelector
+        - name: AdTypeSpace
+          href: ./reference/AdTypeSpace
+        - name: AdUrls
+          href: ./reference/AdUrls
+        - name: AdViewSpace
+          href: ./reference/AdViewSpace
+        - name: BingAdsApp
+          href: ./reference/BingAdsApp
+        - name: BingAdsDate
+          href: ./reference/BingAdsDate
+        - name: Blob
+          href: ./reference/Blob
+        - name: Budget
+          href: ./reference/Budget
+        - name: Campaign
+          href: ./reference/Campaign
+        - name: CampaignIterator
+          href: ./reference/CampaignIterator
+        - name: CampaignSelector
+          href: ./reference/CampaignSelector
+        - name: CampaignUrls
+          href: ./reference/CampaignUrls
+        - name: ExecutionInfo
+          href: ./reference/ExecutionInfo
+        - name: ExpandedTextAd
+          href: ./reference/ExpandedTextAd
+        - name: ExpandedTextAdBuilder
+          href: ./reference/ExpandedTextAdBuilder
+        - name: HTTPResponse
+          href: ./reference/HTTPResponse
+        - name: Keyword
+          href: ./reference/Keyword
+        - name: KeywordBuilder
+          href: ./reference/KeywordBuilder
+        - name: KeywordIterator
+          href: ./reference/KeywordIterator
+        - name: KeywordOperation
+          href: ./reference/KeywordOperation
+        - name: KeywordSelector
+          href: ./reference/KeywordSelector
+        - name: KeywordUrls
+          href: ./reference/KeywordUrls
+        - name: Logger
+          href: ./reference/Logger
+        - name: Stats
+          href: ./reference/Stats
+        - name: UrlFetchApp
+          href: ./reference/UrlFetchApp
+        - name: Utilities
+          href: ./reference/Utilities

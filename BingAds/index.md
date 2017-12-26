@@ -448,7 +448,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/hotel-service/reference">
+                            <a href="/bingads/hotel-service/reference/bingadsapp">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -460,6 +460,125 @@ description: Bing Ads API documentation home.
                                         <div class="cardText">
                                             <h3>Reference</h3>
                                             <p>Browse the REST web services reference content for Hotel Ads.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#bingadsscripts">Bing Ads Scripts</a>
+                    <ul id="bingadsscripts" class="cardsC">
+                        <li>
+                            <a href="/bingads/scripts/">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-introduction.svg" alt="Introduction to Bing Ads Scripts" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Introduction to Bing Ads Scripts</h3>
+                                            <p>Bing Ads Scripts enable programmatic control over your Bing Ads data using JavaScript in a browser-based IDE.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/bingads/scripts/get-started">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-get-started.svg" alt="Get started" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Get started</h3>
+                                            <p>Write your first campaign automation script.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/bingads/scripts/concepts/">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-reports.svg" alt="concepts" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Concepts</h3>
+                                            <p>Learn about core Bing Ads Scripts concepts.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/bingads/scripts/authorization">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-authentication.svg" alt="Authentication with OAuth" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Script Authorization</h3>
+                                            <p>Learn how authorization is handled by the Bing Ads Scripts system.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/bingads/scripts/examples">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-code-examples.svg" alt="Code Examples" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Code Examples</h3>
+                                            <p>Jump start your campaign automation with some examples.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/bingads/scripts/reference/BingAdsApp">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-reference.svg" alt="Reference" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Reference</h3>
+                                            <p>Browse the reference content for Bing Ads Scripts.</p>
                                         </div>
                                     </div>
                                 </div>

@@ -21,8 +21,6 @@
     }
   ],
   "notification_subscribers": [
-    "eric.urban@microsoft.com",
-    "scottwhi@microsoft.com"
   ],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
