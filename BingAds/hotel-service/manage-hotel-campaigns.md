@@ -40,7 +40,7 @@ The following are the REST templates that you use to manage subaccounts.
 - `/SubAccounts` &mdash; [GET](../hotel-service/reference.md#listsubaccounts) | [POST](../hotel-service/reference.md#addsubaccounts)
 - `/SubAccounts('{subAccountId}')` &mdash; [GET](../hotel-service/reference.md#getsubaccount) | [PATCH](../hotel-service/reference.md#updatesubaccount)
 
-For an example that gets and updates subaccounts, see [C# example](../hotel-service/code-example-subaccounts.md).
+For an example that gets and updates subaccounts, see [code examples](../hotel-service/code-example-subaccounts.md). (Use the Language selector in the right pane to see the example in different languages.)
 
 <a name="listingsubaccounts" />
 ### Listing subaccounts
@@ -92,6 +92,8 @@ The subaccount specifies the default bid and bid multipliers to use for hotel gr
 For details about the valid bid range and budget for your market, see the Currency Value table in the [Currencies](../guides/currencies.md) topic.
 
 To prevent hotels in the subaccount from serving, set the `Bid` or `Budget` property to zero (0.0). 
+
+If the subaccount specifies bid multipliers and you want to remove them, set `BidMultipliers` to an empty array (for example, "BidMultipliers":[]).
 
 To update a subaccount, send a PATCH request. The body of the request is a [SubAccount](../hotel-service/reference.md#subaccount) object. Include only the properties that you want to update. This example shows updating multipliers.
 
@@ -228,7 +230,7 @@ The following are the REST templates that you use to manage hotel groups.
 - `/SubAccounts('{subAccountId}')/HotelGroups` &mdash; [GET](../hotel-service/reference.md#listhotelgroups) | [POST](../hotel-service/reference.md#addhotelgroup)
 - `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')` &mdash; [GET](../hotel-service/reference.md#gethotelgroup) | [PATCH](../hotel-service/reference.md#updatehotelgroup) | [DELETE](../hotel-service/reference.md#deletehotelgroup)
 
-For an example that gets, adds, and updates hotel groups, see [C# example](../hotel-service/code-example-hotel-groups.md).
+For an example that gets, adds, and updates hotel groups, see [code examples](../hotel-service/code-example-hotel-groups.md). (Use the Language selector in the right pane to see the example in different languages.)
 
 <a name="listinghotelgroups" />
 ### Listing hotel groups
@@ -328,7 +330,11 @@ For details about the valid bid range and budget for your market, see the Curren
 
 If the subaccount specifies a maximum bid, the hotel group's bid must be less than the subaccount's maximum bid.
 
-To prevent hotels in a hotel group from serving, set the `Bid` property to zero (0.0). If the `Bid` property to greater than zero but the hotels in the group are not serving, it may be because the `Bid` or `Budget` property of the subaccount that the group belongs to is zero. 
+To prevent hotels in a hotel group from serving, set the `Bid` property to zero (0.0). If the `Bid` property is greater than zero but the hotels in the group are not serving, it may be because the `Bid` or `Budget` property of the subaccount that the group belongs to is zero. 
+
+If the hotel group specifies a bid and you want to remove it, set `Bid` to null (for example, "Bid":null).
+
+If the hotel group specifies bid multipliers and you want to remove them, set `BidMultipliers` to an empty array (for example, "BidMultipliers":[]).
 
 
 To update a hotel group, send a PATCH request. The body of the request is a [HotelGroup](../hotel-service/reference.md#hotelgroup) object. Include only the properties that you want to update. This example shows updating the bid and multipliers.
@@ -440,7 +446,7 @@ The following are the REST templates that you use to manage hotels.
 - `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')/Hotels` &mdash; [GET](../hotel-service/reference.md#listhotels)
 - `/SubAccounts('{subAccountId}')/HotelGroups('{hotelGroupId}')/Hotels('{hotelGroupId}')` &mdash; [GET](../hotel-service/reference.md#gethotel) | [PATCH](../hotel-service/reference.md#updatehotel)
 
-For an example that gets and updates hotels, see [C# example](../hotel-service/code-example-hotels.md).
+For an example that gets and updates hotels, see [hotel examples](../hotel-service/code-example-hotels.md). (Use the Language selector in the right pane to see the example in different languages.)
 
 
 <a name="listinghotels" />
@@ -543,7 +549,11 @@ For details about the valid bid range for your market, see the Currency Value ta
 
 If the subaccount specifies a maximum bid, the hotel's bid must be less than the subaccount's maximum bid.
 
-To prevent a hotel from serving, set the `Bid` property to zero (0.0). If the `Bid` property to greater than zero but the hotel is not serving, it may be because the `Bid` property of the hotel group or subaccount that it belongs to is zero. 
+To prevent a hotel from serving, set the `Bid` property to zero (0.0). If the `Bid` property is greater than zero but the hotel is not serving, it may be because the `Bid` property of the hotel group or subaccount that it belongs to is zero. 
+
+If the hotel specifies a bid and you want to remove it, set `Bid` to null (for example, "Bid":null).
+
+If the hotel specifies bid multipliers and you want to remove them, set `BidMultipliers` to an empty array (for example, "BidMultipliers":[]).
 
 
 To update a hotel, send a PATCH request. The body of the request is a [Hotel](../hotel-service/reference.md#hotel) object. Include only the properties that you want to update. This example shows updating the multipliers.

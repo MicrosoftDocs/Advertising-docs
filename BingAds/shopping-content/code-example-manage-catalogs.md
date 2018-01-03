@@ -12,6 +12,7 @@ dev_langs:
   - csharp
   - java
   - python
+  - php
 ---
 # Managing Catalogs Code Example
 This example shows how to get, add, update, and delete catalogs in the specified store.  
@@ -1204,5 +1205,141 @@ def random_string(length=6):
 # Main execution
 if __name__ == '__main__':
     main()
+
+```
+
+```php
+<?php
+$clientId = '<CLIENTIDGOESHERE>';
+$devToken = '<DEVELOPERTOKENGOESHERE>';
+$merchantId = '<STOREIDGOESHERE>';
+$authenticationToken = '<AUTHENTICATIONTOKENGOESHERE>';
+
+$baseUri = 'https://content.api.bingads.microsoft.com/shopping/v9.1';
+$bmcUri = $baseUri . '/bmc/%s';
+$catalogsUri = $bmcUri . "/catalogs";
+$catalogUri = $catalogsUri . "/%s";
+
+# List catalogs
+echo("*** List catalogs ***\r\n");
+$catalogs = list_catalogs();
+$count = count($catalogs);
+for ($i = 0; $i < $count; $i++) {
+    printObject($catalogs[$i]);
+}
+echo("*** / End of catalogs list ***\r\n");
+echo("\r\n");
+
+# Add catalog
+$testCatalog = add_catalog("Test Catalog (" . uniqid() . ")");
+echo("*** Added test catalog (catalog.Id=" . $testCatalog['id'] . ")***\r\n");
+echo printObject($testCatalog);
+echo("*** / End of added test catalog (catalog.Id=" . $testCatalog['id'] . ")***\r\n");
+echo("\r\n");
+
+# Update catalog
+$testCatalog['name'] = "Updated  - " . $testCatalog['name'];
+$updatedCatalog = update_catalog($testCatalog);
+echo("*** Updated catalog " . $updatedCatalog['id'] . "***\r\n");
+printObject($updatedCatalog);
+echo("*** / End of updated catalog " . $updatedCatalog['id'] . "***\r\n");
+echo("\r\n");
+
+# Delete catalog
+echo("*** Deleting catalog " . $updatedCatalog['id'] . "***\r\n");
+delete_catalog($updatedCatalog['id']);
+echo("\r\n");
+
+echo("*** List catalogs after delete ***\r\n");
+$catalogs = list_catalogs();
+$count = count($catalogs);
+for ($i = 0; $i < $count; $i++) {
+    printObject($catalogs[$i]);
+}
+echo("*** / End of catalogs list ***");
+
+function list_catalogs(){
+    global $merchantId, $catalogsUri;
+
+    $url = sprintf($catalogsUri, $merchantId);
+    $result = request('GET', $url);
+    if ($result === FALSE) {  
+        throw new Exception(var_dump($result));
+    } else {
+        $catalogs = json_decode($result, true)["catalogs"];
+        return $catalogs;
+    }    
+}
+
+function add_catalog($catalogName){
+    global $merchantId, $catalogsUri;
+
+    $url = sprintf($catalogsUri, $merchantId);
+    $result = request('POST', $url, array(
+        'name' => $catalogName,
+        'market' => 'en-US',
+        'isPublishingEnabled' => true
+    ));
+    if ($result === FALSE) {  
+        throw new Exception(var_dump($result));
+    } else {
+        echo("add catalog response: " . var_dump($result) . "\r\n");
+        return json_decode($result, true);        
+    } 
+}
+
+function update_catalog($catalog){
+    global $merchantId, $catalogUri;
+
+    $url = sprintf($catalogUri, $merchantId, $catalog['id']);
+    $result = request('PUT', $url, $catalog);
+    if ($result === FALSE) {  
+        throw new Exception(var_dump($result));
+    } else {
+        echo("update catalog response: " . var_dump($result) . "\r\n");
+        return json_decode($result, true);        
+    } 
+}
+
+function delete_catalog($catalogId){
+    global $merchantId, $catalogUri;
+
+    $url = sprintf($catalogUri, $merchantId, $catalogId);
+    $result = request('DELETE', $url);
+    if ($result === FALSE) {  
+        throw new Exception(var_dump($result));
+    } else {
+        return json_decode($result, true);        
+    } 
+}
+
+function request($method, $url, $data = null){
+    global $devToken, $authenticationToken;
+    $options = array(
+        'http' => array(
+            'method'  => $method,
+            'header'  => "AuthenticationToken: $authenticationToken\r\n" .
+                        "DeveloperToken: $devToken\r\n" .
+                        "Content-type: application/json\r\n"
+        )
+    );
+    $json = null;
+    if ($data !== null) {
+        $json = json_encode($data);
+        $options['http']['content'] = $json;
+    }
+    $context  = stream_context_create($options);
+    echo("requesting ($method): $url\r\n");
+    if ($json !== null) {
+        echo("json data: $json\r\n");
+    }
+    return file_get_contents($url, false, $context);
+}
+
+function printObject($object){
+    foreach ($object as $prop => $value) {
+        echo("$prop: $value\r\n");
+    }
+}
 
 ```

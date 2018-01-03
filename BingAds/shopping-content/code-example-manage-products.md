@@ -12,6 +12,7 @@ dev_langs:
   - csharp
   - java
   - python
+  - php
 ---
 # Managing Products Code Example
 This example shows how to get, add, update, and delete products in the specified store.  
@@ -1753,5 +1754,181 @@ def random_string(length=6):
 # Main execution
 if __name__ == '__main__':
     main()
+
+```
+
+```php
+<?php
+$clientId = '<CLIENTIDGOESHERE>';
+$devToken = '<DEVELOPERTOKENGOESHERE>';
+$merchantId = '<STOREIDGOESHERE>';
+$authenticationToken = '<AUTHENTICATIONTOKENGOESHERE>';
+
+$baseUri = 'https://content.api.bingads.microsoft.com/shopping/v9.1';
+$bmcUri = $baseUri . '/bmc/%s';
+$catalogsUri = $bmcUri . "/catalogs";
+$catalogUri = $catalogsUri . "/%s";
+
+$productsUri = $bmcUri . '/products';
+$productUri = $productsUri . '/%s';
+
+$defaultCatalog = retrieve_default_catalog();
+
+# Add a product to a catalog
+$testProduct = create_test_product('My Test Product');
+$addedProduct = add_product($defaultCatalog['id'], $testProduct);
+echo("*** Added product to catalog (catalog id = " . $defaultCatalog['id'] . ", product id = " . $addedProduct['id'] . ")***\r\n");
+printObject($addedProduct);
+echo("*** / End of added product to catalog (catalog id = " . $defaultCatalog['id'] . ", product id = " . $addedProduct['id'] . ")***\r\n");
+
+# Retrieve a product
+$retrievedProduct = get_product($addedProduct['id']);
+echo("*** Retrieved product (product id = " . $retrievedProduct['id'] . ")***\r\n");
+printObject($retrievedProduct);
+echo("*** / End of retrieved product (product id = " . $retrievedProduct['id'] . ")***\r\n");
+
+# List products
+$products = list_products();
+echo("*** Listing products ***\r\n");
+foreach ($products as $index => $value) {
+    printObject($value);
+}
+echo("*** / End of listing products ***\r\n");
+
+echo("*** Deleting product (" . $addedProduct['id'] . ")***\r\n");
+delete_product($addedProduct['id']);
+echo("*** / Deleting product done (" . $addedProduct['id'] . ")***\r\n");
+
+function retrieve_default_catalog(){
+    $catalogs = list_catalogs();
+    $count = count($catalogs);
+    for ($i = 0; $i < $count; ++$i){
+        $catalog = $catalogs[$i];
+        if ($catalog['isDefault']) {
+            return $catalog;
+        }
+    }
+}
+
+function list_catalogs(){
+    global $merchantId, $catalogsUri;
+
+    $url = sprintf($catalogsUri, $merchantId);
+    $result = request('GET', $url);
+    if ($result === FALSE) {  
+        throw new Exception(var_dump($result));
+    } else {
+        $catalogs = json_decode($result, TRUE)["catalogs"];
+        return $catalogs;
+    }    
+}
+
+function list_products($nextPageToken = null){
+    global $merchantId, $productsUri;
+    # max-results set to 2 to test paging, this would be set to a
+    # higher value in a real world scenario based on your needs.
+    $productsQueryString = '?max-results=2&alt=json';
+    $productsStartTokenQueryString = $productsQueryString . '&start-token=%s';
+
+    $url = sprintf($productsUri . $productsQueryString, $merchantId);
+    $results = array();
+    while ($url !== null) {
+        $result = request('GET', $url);
+        if ($result === FALSE) {  
+            throw new Exception(var_dump($result));
+        }
+        $productsResponse = json_decode($result, TRUE);
+        
+        foreach ($productsResponse['resources'] as $key => $value) {
+            array_push($results, $value);
+        }
+        if ($productsResponse !== null && array_key_exists('nextPageToken', $productsResponse)) {
+            $url = sprintf($productsUri . $productsStartTokenQueryString, $merchantId, $productsResponse['nextPageToken']);
+        } else {
+            $url = null;
+        }
+    }
+    return $results;
+}
+
+function add_product($catalogId, $product){
+    global $merchantId, $productsUri;
+    
+    $url = sprintf($productsUri . '?bmc-catalog-id=%s&alt=json', $merchantId, $catalogId);
+    $result = request('POST', $url, $product);
+    if ($result === FALSE) {  
+        throw new Exception(var_dump($result));
+    } 
+    return json_decode($result, TRUE);    
+}
+
+function get_product($productId){    
+    global $merchantId, $productUri;
+    $url = sprintf($productUri . "?alt=json", $merchantId, $productId);
+    $result = request('GET', $url);
+    if ($result === FALSE) {  
+        throw new Exception(var_dump($result));
+    } 
+    return json_decode($result, TRUE); 
+}
+
+function delete_product($productId){
+    global $merchantId, $productUri;
+    $url = sprintf($productUri . "?alt=json", $merchantId, $productId);
+    $result = request('DELETE', $url);
+    if ($result === FALSE) {  
+        throw new Exception(var_dump($result));
+    } 
+}
+
+function request($method, $url, $data = null){
+    global $devToken, $authenticationToken;
+    $options = array(
+        'http' => array(
+            'method'  => $method,
+            'header'  => "AuthenticationToken: $authenticationToken\r\n" .
+                        "DeveloperToken: $devToken\r\n" .
+                        "Content-type: application/json\r\n"
+        )
+    );
+    $json = null;
+    if($data !== null){
+        $json = json_encode($data);
+        $options['http']['content'] = $json;
+    }
+    $context  = stream_context_create($options);
+    echo("requesting ($method): $url\r\n");
+    if($json !== null){
+        echo("json data: $json\r\n");
+    }
+    return file_get_contents($url, FALSE, $context);
+}
+
+function create_test_product($titlePrefix){
+    $expDate = date_add(new DateTime(), date_interval_create_from_date_string("45 days"));
+    return array(
+        'offerId' => "YourUniqueId(" . uniqid() . ")",
+        'title' => "$titlePrefix (" . uniqid() . ")",
+        'availability' => "in stock",
+        'channel' => "Online",
+        'condition' => "New",
+        'contentLanguage' => "en",
+        'link' => "http://www.contoso.com/apperal/men/tshirts.htm",
+        'imageLink' => "http://www.contoso.com/pics/tees.jpg",
+        'price' => array(
+            'currency' => 'USD',
+            'value' => 5.00,
+        ),
+        'targetCountry' => 'US',
+        'identifierExists' => FALSE,
+        'expirationDate' => $expDate->format("Y-m-d\TH:i:s\Z")
+    );
+}
+
+function printObject($object){
+    foreach($object as $prop => $value){
+        echo("$prop: $value\r\n");
+    }
+}
 
 ```
