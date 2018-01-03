@@ -8,9 +8,9 @@ manager: ehansen
 ms.author: "scottwhi"
 dev_langs:
   - csharp
+  - curl
   - java
   - python
-  - curl
 ---
 
 # Hotel Group code example
