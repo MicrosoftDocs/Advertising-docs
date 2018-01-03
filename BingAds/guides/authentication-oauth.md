@@ -21,7 +21,7 @@ A [Microsoft Account](https://account.microsoft.com/account) is an email address
 
 At a high level you should complete the following steps to authenticate a Microsoft Account with Bing Ads using OAuth.
 
-1.  [Registering Your Application](#registerapplication) your application.
+1.  [Register](#registerapplication) your application.
 
 2.  Request user consent for your application to manage their Bing Ads accounts, by initiating either the [Implicit Grant Flow](#implicit) or [Authorization Code Grant Flow](#authorizationcode).
 
