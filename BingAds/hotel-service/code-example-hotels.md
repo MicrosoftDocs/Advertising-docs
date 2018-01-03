@@ -10,6 +10,7 @@ dev_langs:
   - csharp
   - java
   - python
+  - curl
 ---
 
 # Hotel code example
@@ -1571,4 +1572,26 @@ def random_string(length=6):
 # Main execution
 if __name__ == '__main__':
     main()
+```
+
+```curl
+#!/usr/bin/sh
+CUSTOMERID=<CUSTOMERIDGOESHERE>
+ACCOUNTID=<ACCOUNTIDGOESHERE>
+SUBACCOUNTID=<SUBACCOUNTIDGOESHERE>
+AUTHORIZATIONTOKEN=<AUTHENTICATIONTOKENGOESHERE>
+HOTELGROUPID=<HOTELGROUPIDGOESHERE>
+HOTELID=<HOTELIDGOESHERE>
+
+echo "*** Getting ungrouped hotels ***"
+curl -X GET "https://partner.api.sandbox.bingads.microsoft.com/Travel/V1/Customers($CUSTOMERID)/Accounts($ACCOUNTID)/SubAccounts('$SUBACCOUNTID')/Ungrouped" -H "accept: application/json" -H "content-type: application/json" -H "Authorization: Bearer $AUTHORIZATIONTOKEN"
+
+echo "*** Updating hotel $HOTELID ***"
+curl -X PATCH "https://partner.api.sandbox.bingads.microsoft.com/Travel/V1/Customers($CUSTOMERID)/Accounts($ACCOUNTID)/SubAccounts('$SUBACCOUNTID')/HotelGroups('$HOTELGROUPID')/Hotels('$HOTELID')" -H "accept: application/json" -H "content-type: application/json" -H "Authorization: Bearer $AUTHORIZATIONTOKEN" -d "{\"BidMultipliers\":[{\"DaysOfWeek\":[\"Thursday\",\"Friday\",\"Saturday\"],\"Factor\":1.2,\"@odata.type\":\"#Model.CheckinDayOfWeekMultiplier\"},{\"DaysOfWeek\":[\"Sunday\",\"Monday\"],\"Factor\":0.9,\"@odata.type\":\"#Model.CheckinDayOfWeekMultiplier\"},{\"MinimumNumberOfDays\":3,\"Factor\":1.3,\"@odata.type\":\"#Model.AdvanceBookingWindowMultiplier\"}]}"
+
+echo "*** Getting hotel $HOTELID ***"
+curl -X GET "https://partner.api.sandbox.bingads.microsoft.com/Travel/V1/Customers($CUSTOMERID)/Accounts($ACCOUNTID)/SubAccounts('$SUBACCOUNTID')/HotelGroups('$HOTELGROUPID')/Hotels('$HOTELID')" -H "accept: application/json" -H "content-type: application/json" -H "Authorization: Bearer $AUTHORIZATIONTOKEN" 
+
+echo "*** Associating hotel $HOTELID with hotel group $HOTELGROUPID ***"
+curl -X POST "https://partner.api.sandbox.bingads.microsoft.com/Travel/V1/Customers($CUSTOMERID)/Accounts($ACCOUNTID)/SubAccounts('$ACCOUNTID')/Associate" -d "{\"HotelAssociations\":[{\"HotelGroupId\":\"$HOTELGROUPID\",\"HotelId\":\"$HOTELID\"}]}"
 ```
