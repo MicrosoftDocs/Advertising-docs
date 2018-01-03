@@ -68,8 +68,8 @@ You use the sandbox environment to test your application before putting it in pr
 1.	Open a browser and navigate to si.bingads.microsoft.com
 2.	Click **Sign up for Bing Ads** or **Sign up now**
 3.	Fill out the **Create Account** form
-4.	For **Import/Create Campaign**, select **Option 3: Skip this step**
-5.	For **Go Live**, click **Skip**
+4.	For **Import/Create Campaign**, click **Skip campaign creation**
+5.	For **Go Live**, click **Skip payment information**
 
 The above steps create a Bing Ads legacy account. To use Hotel Ads API, you need a sandbox Microsoft account (MSA). To get an MSA that you can use in sandbox, you need to invite a user to work on your account. The following steps show how to invite a user to work on your account.
 
