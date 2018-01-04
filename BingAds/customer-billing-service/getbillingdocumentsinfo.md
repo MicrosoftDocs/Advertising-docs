@@ -14,9 +14,6 @@ dev_langs:
 # GetBillingDocumentsInfo Service Operation - Customer Billing
 Gets a list of objects that contains billing document identification information, for example the billing document identifier, amount, and account identifier.
 
-> [!NOTE]
-> This operation will not return billing documents associated with Yahoo!-managed accounts.
-
 ## <a name="request"></a>Request Elements
 The *GetBillingDocumentsInfoRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 

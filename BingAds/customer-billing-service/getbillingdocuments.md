@@ -14,9 +14,6 @@ dev_langs:
 # GetBillingDocuments Service Operation - Customer Billing
 Gets the specified billing documents.
 
-> [!NOTE]
-> This operation will not return billing documents associated with Yahoo!-managed accounts.
-
 ## <a name="request"></a>Request Elements
 The *GetBillingDocumentsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
