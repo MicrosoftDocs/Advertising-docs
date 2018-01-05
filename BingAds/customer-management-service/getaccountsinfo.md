@@ -71,14 +71,14 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetAccountsInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <AccountsInfo xmlns:e10="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e10:AccountInfo>
-          <e10:Id>ValueHere</e10:Id>
-          <e10:Name d4p1:nil="false">ValueHere</e10:Name>
-          <e10:Number d4p1:nil="false">ValueHere</e10:Number>
-          <e10:AccountLifeCycleStatus>ValueHere</e10:AccountLifeCycleStatus>
-          <e10:PauseReason d4p1:nil="false">ValueHere</e10:PauseReason>
-        </e10:AccountInfo>
+      <AccountsInfo xmlns:e316="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e316:AccountInfo>
+          <e316:Id>ValueHere</e316:Id>
+          <e316:Name d4p1:nil="false">ValueHere</e316:Name>
+          <e316:Number d4p1:nil="false">ValueHere</e316:Number>
+          <e316:AccountLifeCycleStatus>ValueHere</e316:AccountLifeCycleStatus>
+          <e316:PauseReason d4p1:nil="false">ValueHere</e316:PauseReason>
+        </e316:AccountInfo>
       </AccountsInfo>
     </GetAccountsInfoResponse>
   </s:Body>

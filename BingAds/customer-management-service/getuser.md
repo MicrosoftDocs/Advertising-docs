@@ -72,50 +72,50 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetUserResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <User xmlns:e14="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e14:ContactInfo d4p1:nil="false">
-          <e14:Address d4p1:nil="false">
-            <e14:City d4p1:nil="false">ValueHere</e14:City>
-            <e14:CountryCode d4p1:nil="false">ValueHere</e14:CountryCode>
-            <e14:Id d4p1:nil="false">ValueHere</e14:Id>
-            <e14:Line1 d4p1:nil="false">ValueHere</e14:Line1>
-            <e14:Line2 d4p1:nil="false">ValueHere</e14:Line2>
-            <e14:Line3 d4p1:nil="false">ValueHere</e14:Line3>
-            <e14:Line4 d4p1:nil="false">ValueHere</e14:Line4>
-            <e14:PostalCode d4p1:nil="false">ValueHere</e14:PostalCode>
-            <e14:StateOrProvince d4p1:nil="false">ValueHere</e14:StateOrProvince>
-            <e14:TimeStamp d4p1:nil="false">ValueHere</e14:TimeStamp>
-          </e14:Address>
-          <e14:ContactByPhone d4p1:nil="false">ValueHere</e14:ContactByPhone>
-          <e14:ContactByPostalMail d4p1:nil="false">ValueHere</e14:ContactByPostalMail>
-          <e14:Email d4p1:nil="false">ValueHere</e14:Email>
-          <e14:EmailFormat d4p1:nil="false">ValueHere</e14:EmailFormat>
-          <e14:Fax d4p1:nil="false">ValueHere</e14:Fax>
-          <e14:HomePhone d4p1:nil="false">ValueHere</e14:HomePhone>
-          <e14:Id d4p1:nil="false">ValueHere</e14:Id>
-          <e14:Mobile d4p1:nil="false">ValueHere</e14:Mobile>
-          <e14:Phone1 d4p1:nil="false">ValueHere</e14:Phone1>
-          <e14:Phone2 d4p1:nil="false">ValueHere</e14:Phone2>
-        </e14:ContactInfo>
-        <e14:CustomerAppScope d4p1:nil="false">ValueHere</e14:CustomerAppScope>
-        <e14:CustomerId d4p1:nil="false">ValueHere</e14:CustomerId>
-        <e14:Id d4p1:nil="false">ValueHere</e14:Id>
-        <e14:JobTitle d4p1:nil="false">ValueHere</e14:JobTitle>
-        <e14:LastModifiedByUserId d4p1:nil="false">ValueHere</e14:LastModifiedByUserId>
-        <e14:LastModifiedTime d4p1:nil="false">ValueHere</e14:LastModifiedTime>
-        <e14:Lcid d4p1:nil="false">ValueHere</e14:Lcid>
-        <e14:Name d4p1:nil="false">
-          <e14:FirstName d4p1:nil="false">ValueHere</e14:FirstName>
-          <e14:LastName d4p1:nil="false">ValueHere</e14:LastName>
-          <e14:MiddleInitial d4p1:nil="false">ValueHere</e14:MiddleInitial>
-        </e14:Name>
-        <e14:Password d4p1:nil="false">ValueHere</e14:Password>
-        <e14:SecretAnswer d4p1:nil="false">ValueHere</e14:SecretAnswer>
-        <e14:SecretQuestion>ValueHere</e14:SecretQuestion>
-        <e14:UserLifeCycleStatus d4p1:nil="false">ValueHere</e14:UserLifeCycleStatus>
-        <e14:TimeStamp d4p1:nil="false">ValueHere</e14:TimeStamp>
-        <e14:UserName d4p1:nil="false">ValueHere</e14:UserName>
-        <e14:IsMigratedToMicrosoftAccount>ValueHere</e14:IsMigratedToMicrosoftAccount>
+      <User xmlns:e320="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e320:ContactInfo d4p1:nil="false">
+          <e320:Address d4p1:nil="false">
+            <e320:City d4p1:nil="false">ValueHere</e320:City>
+            <e320:CountryCode d4p1:nil="false">ValueHere</e320:CountryCode>
+            <e320:Id d4p1:nil="false">ValueHere</e320:Id>
+            <e320:Line1 d4p1:nil="false">ValueHere</e320:Line1>
+            <e320:Line2 d4p1:nil="false">ValueHere</e320:Line2>
+            <e320:Line3 d4p1:nil="false">ValueHere</e320:Line3>
+            <e320:Line4 d4p1:nil="false">ValueHere</e320:Line4>
+            <e320:PostalCode d4p1:nil="false">ValueHere</e320:PostalCode>
+            <e320:StateOrProvince d4p1:nil="false">ValueHere</e320:StateOrProvince>
+            <e320:TimeStamp d4p1:nil="false">ValueHere</e320:TimeStamp>
+          </e320:Address>
+          <e320:ContactByPhone d4p1:nil="false">ValueHere</e320:ContactByPhone>
+          <e320:ContactByPostalMail d4p1:nil="false">ValueHere</e320:ContactByPostalMail>
+          <e320:Email d4p1:nil="false">ValueHere</e320:Email>
+          <e320:EmailFormat d4p1:nil="false">ValueHere</e320:EmailFormat>
+          <e320:Fax d4p1:nil="false">ValueHere</e320:Fax>
+          <e320:HomePhone d4p1:nil="false">ValueHere</e320:HomePhone>
+          <e320:Id d4p1:nil="false">ValueHere</e320:Id>
+          <e320:Mobile d4p1:nil="false">ValueHere</e320:Mobile>
+          <e320:Phone1 d4p1:nil="false">ValueHere</e320:Phone1>
+          <e320:Phone2 d4p1:nil="false">ValueHere</e320:Phone2>
+        </e320:ContactInfo>
+        <e320:CustomerAppScope d4p1:nil="false">ValueHere</e320:CustomerAppScope>
+        <e320:CustomerId d4p1:nil="false">ValueHere</e320:CustomerId>
+        <e320:Id d4p1:nil="false">ValueHere</e320:Id>
+        <e320:JobTitle d4p1:nil="false">ValueHere</e320:JobTitle>
+        <e320:LastModifiedByUserId d4p1:nil="false">ValueHere</e320:LastModifiedByUserId>
+        <e320:LastModifiedTime d4p1:nil="false">ValueHere</e320:LastModifiedTime>
+        <e320:Lcid d4p1:nil="false">ValueHere</e320:Lcid>
+        <e320:Name d4p1:nil="false">
+          <e320:FirstName d4p1:nil="false">ValueHere</e320:FirstName>
+          <e320:LastName d4p1:nil="false">ValueHere</e320:LastName>
+          <e320:MiddleInitial d4p1:nil="false">ValueHere</e320:MiddleInitial>
+        </e320:Name>
+        <e320:Password d4p1:nil="false">ValueHere</e320:Password>
+        <e320:SecretAnswer d4p1:nil="false">ValueHere</e320:SecretAnswer>
+        <e320:SecretQuestion>ValueHere</e320:SecretQuestion>
+        <e320:UserLifeCycleStatus d4p1:nil="false">ValueHere</e320:UserLifeCycleStatus>
+        <e320:TimeStamp d4p1:nil="false">ValueHere</e320:TimeStamp>
+        <e320:UserName d4p1:nil="false">ValueHere</e320:UserName>
+        <e320:IsMigratedToMicrosoftAccount>ValueHere</e320:IsMigratedToMicrosoftAccount>
       </User>
       <Roles d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <a1:int>ValueHere</a1:int>

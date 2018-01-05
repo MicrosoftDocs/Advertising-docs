@@ -78,28 +78,28 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedPositionByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedPositions xmlns:e70="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e70:KeywordIdEstimatedPosition>
-          <e70:KeywordId>ValueHere</e70:KeywordId>
-          <e70:KeywordEstimatedPosition d4p1:nil="false">
-            <e70:Keyword d4p1:nil="false">ValueHere</e70:Keyword>
-            <e70:EstimatedPositions d4p1:nil="false">
-              <e70:EstimatedPositionAndTraffic>
-                <e70:MatchType>ValueHere</e70:MatchType>
-                <e70:MinClicksPerWeek>ValueHere</e70:MinClicksPerWeek>
-                <e70:MaxClicksPerWeek>ValueHere</e70:MaxClicksPerWeek>
-                <e70:AverageCPC>ValueHere</e70:AverageCPC>
-                <e70:MinImpressionsPerWeek>ValueHere</e70:MinImpressionsPerWeek>
-                <e70:MaxImpressionsPerWeek>ValueHere</e70:MaxImpressionsPerWeek>
-                <e70:CTR>ValueHere</e70:CTR>
-                <e70:MinTotalCostPerWeek>ValueHere</e70:MinTotalCostPerWeek>
-                <e70:MaxTotalCostPerWeek>ValueHere</e70:MaxTotalCostPerWeek>
-                <e70:Currency>ValueHere</e70:Currency>
-                <e70:EstimatedAdPosition>ValueHere</e70:EstimatedAdPosition>
-              </e70:EstimatedPositionAndTraffic>
-            </e70:EstimatedPositions>
-          </e70:KeywordEstimatedPosition>
-        </e70:KeywordIdEstimatedPosition>
+      <KeywordEstimatedPositions xmlns:e376="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e376:KeywordIdEstimatedPosition>
+          <e376:KeywordId>ValueHere</e376:KeywordId>
+          <e376:KeywordEstimatedPosition d4p1:nil="false">
+            <e376:Keyword d4p1:nil="false">ValueHere</e376:Keyword>
+            <e376:EstimatedPositions d4p1:nil="false">
+              <e376:EstimatedPositionAndTraffic>
+                <e376:MatchType>ValueHere</e376:MatchType>
+                <e376:MinClicksPerWeek>ValueHere</e376:MinClicksPerWeek>
+                <e376:MaxClicksPerWeek>ValueHere</e376:MaxClicksPerWeek>
+                <e376:AverageCPC>ValueHere</e376:AverageCPC>
+                <e376:MinImpressionsPerWeek>ValueHere</e376:MinImpressionsPerWeek>
+                <e376:MaxImpressionsPerWeek>ValueHere</e376:MaxImpressionsPerWeek>
+                <e376:CTR>ValueHere</e376:CTR>
+                <e376:MinTotalCostPerWeek>ValueHere</e376:MinTotalCostPerWeek>
+                <e376:MaxTotalCostPerWeek>ValueHere</e376:MaxTotalCostPerWeek>
+                <e376:Currency>ValueHere</e376:Currency>
+                <e376:EstimatedAdPosition>ValueHere</e376:EstimatedAdPosition>
+              </e376:EstimatedPositionAndTraffic>
+            </e376:EstimatedPositions>
+          </e376:KeywordEstimatedPosition>
+        </e376:KeywordIdEstimatedPosition>
       </KeywordEstimatedPositions>
     </GetEstimatedPositionByKeywordIdsResponse>
   </s:Body>

@@ -54,23 +54,23 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <AddInsertionOrderRequest xmlns="https://bingads.microsoft.com/Billing/v11">
-      <InsertionOrder xmlns:e51="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e51:AccountId>ValueHere</e51:AccountId>
-        <e51:BalanceAmount i:nil="false">ValueHere</e51:BalanceAmount>
-        <e51:BookingCountryCode i:nil="false">ValueHere</e51:BookingCountryCode>
-        <e51:Comment i:nil="false">ValueHere</e51:Comment>
-        <e51:EndDate>ValueHere</e51:EndDate>
-        <e51:InsertionOrderId i:nil="false">ValueHere</e51:InsertionOrderId>
-        <e51:LastModifiedByUserId i:nil="false">ValueHere</e51:LastModifiedByUserId>
-        <e51:LastModifiedTime i:nil="false">ValueHere</e51:LastModifiedTime>
-        <e51:NotificationThreshold i:nil="false">ValueHere</e51:NotificationThreshold>
-        <e51:ReferenceId i:nil="false">ValueHere</e51:ReferenceId>
-        <e51:SpendCapAmount>ValueHere</e51:SpendCapAmount>
-        <e51:StartDate>ValueHere</e51:StartDate>
-        <e51:Name i:nil="false">ValueHere</e51:Name>
-        <e51:Status i:nil="false">ValueHere</e51:Status>
-        <e51:PurchaseOrder i:nil="false">ValueHere</e51:PurchaseOrder>
-        <e51:ChangePendingReview i:nil="false">ValueHere</e51:ChangePendingReview>
+      <InsertionOrder xmlns:e357="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e357:AccountId>ValueHere</e357:AccountId>
+        <e357:BalanceAmount i:nil="false">ValueHere</e357:BalanceAmount>
+        <e357:BookingCountryCode i:nil="false">ValueHere</e357:BookingCountryCode>
+        <e357:Comment i:nil="false">ValueHere</e357:Comment>
+        <e357:EndDate>ValueHere</e357:EndDate>
+        <e357:InsertionOrderId i:nil="false">ValueHere</e357:InsertionOrderId>
+        <e357:LastModifiedByUserId i:nil="false">ValueHere</e357:LastModifiedByUserId>
+        <e357:LastModifiedTime i:nil="false">ValueHere</e357:LastModifiedTime>
+        <e357:NotificationThreshold i:nil="false">ValueHere</e357:NotificationThreshold>
+        <e357:ReferenceId i:nil="false">ValueHere</e357:ReferenceId>
+        <e357:SpendCapAmount>ValueHere</e357:SpendCapAmount>
+        <e357:StartDate>ValueHere</e357:StartDate>
+        <e357:Name i:nil="false">ValueHere</e357:Name>
+        <e357:Status i:nil="false">ValueHere</e357:Status>
+        <e357:PurchaseOrder i:nil="false">ValueHere</e357:PurchaseOrder>
+        <e357:ChangePendingReview i:nil="false">ValueHere</e357:ChangePendingReview>
       </InsertionOrder>
     </AddInsertionOrderRequest>
   </s:Body>
