@@ -121,7 +121,7 @@ This property will be empty if the search audience size is less than 1,000. The 
 
 This property will be empty for up to 24 hours while the audience is being built, for example if you add or update the remarketing list membership duration, rule, or tag identifier. 
 
-This property will be empty if the UET tag associated with the remarketing list has a status of Unverified or Inactive, because the remarketing list can't receive the customer information from your website that it needs to build the list.
+This property will be empty if the UET tag associated with the remarketing list has a status of Unverified or Inactive, because the remarketing list can't receive the customer information from your website that it needs to build the list.
 
 **Add:** Read-only  
 **Update:** Read-only    
