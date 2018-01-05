@@ -25,7 +25,7 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="ParentId" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Scope" nillable="true" type="tns:EntityScope" />
-    <xs:element minOccurs="0" name="SearchSize" nillable="true" type="xs:int">
+    <xs:element minOccurs="0" name="SearchSize" nillable="true" type="xs:long">
       <xs:annotation>
         <xs:appinfo>
           <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
