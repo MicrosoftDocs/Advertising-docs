@@ -70,6 +70,7 @@ The following template shows the order of the [body](#request-body) and [header]
           <Name i:nil="false">ValueHere</Name>
           <ParentId i:nil="false">ValueHere</ParentId>
           <Scope i:nil="false">ValueHere</Scope>
+          <SearchSize i:nil="false">ValueHere</SearchSize>
           <Type>ValueHere</Type>
           <!--These fields are applicable if the derived type attribute is set to RemarketingList-->
           <Rule xmlns:e126="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
