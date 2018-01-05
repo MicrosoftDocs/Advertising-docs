@@ -22,6 +22,7 @@ The *GetAudiencesByIdsRequest* object defines the [body](#request-body) and [hea
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="audienceids"></a>AudienceIds|A maximum of 100 identifiers of the requested audiences.<br/><br/>If this element is null or empty, then you are effectively requesting all customer and account scoped audiences for the specified account.<br/><br/> If the audience identifiers do not match the requested audience types, then the operation will return a batch error for each requested audience ID.|**long** array|
+|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [Audience](../campaign-management-service/audience.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[AudienceAdditionalField](audienceadditionalfield.md)|
 |<a name="type"></a>Type|One or more types of audiences to return.|[AudienceType](audiencetype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -61,6 +62,7 @@ The following template shows the order of the [body](#request-body) and [header]
         <a1:long>ValueHere</a1:long>
       </AudienceIds>
       <Type>ValueHere</Type>
+      <ReturnAdditionalFields i:nil="false">ValueHere</ReturnAdditionalFields>
     </GetAudiencesByIdsRequest>
   </s:Body>
 </s:Envelope>
@@ -90,6 +92,7 @@ The following template shows the order of the [body](#response-body) and [header
           <Name d4p1:nil="false">ValueHere</Name>
           <ParentId d4p1:nil="false">ValueHere</ParentId>
           <Scope d4p1:nil="false">ValueHere</Scope>
+          <SearchSize d4p1:nil="false">ValueHere</SearchSize>
           <Type>ValueHere</Type>
           <!--These fields are applicable if the derived type attribute is set to RemarketingList-->
           <Rule xmlns:e219="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false" d4p1:type="-- derived type specified here with the appropriate prefix --">
@@ -210,12 +213,14 @@ The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md
 ```csharp
 public async Task<GetAudiencesByIdsResponse> GetAudiencesByIdsAsync(
 	IList<long> audienceIds,
-	AudienceType type)
+	AudienceType type,
+	AudienceAdditionalField? returnAdditionalFields)
 {
 	var request = new GetAudiencesByIdsRequest
 	{
 		AudienceIds = audienceIds,
-		Type = type
+		Type = type,
+		ReturnAdditionalFields = returnAdditionalFields
 	};
 
 	return (await CampaignManagementService.CallAsync((s, r) => s.GetAudiencesByIdsAsync(r), request));
@@ -224,12 +229,14 @@ public async Task<GetAudiencesByIdsResponse> GetAudiencesByIdsAsync(
 ```java
 static GetAudiencesByIdsResponse getAudiencesByIds(
 	ArrayOflong audienceIds,
-	ArrayList<AudienceType> type) throws RemoteException, Exception
+	ArrayList<AudienceType> type,
+	ArrayList<AudienceAdditionalField> returnAdditionalFields) throws RemoteException, Exception
 {
 	GetAudiencesByIdsRequest request = new GetAudiencesByIdsRequest();
 
 	request.setAudienceIds(audienceIds);
 	request.setType(type);
+	request.setReturnAdditionalFields(returnAdditionalFields);
 
 	return CampaignManagementService.getService().getAudiencesByIds(request);
 }
@@ -237,7 +244,8 @@ static GetAudiencesByIdsResponse getAudiencesByIds(
 ```php
 static function GetAudiencesByIds(
 	$audienceIds,
-	$type)
+	$type,
+	$returnAdditionalFields)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
@@ -246,6 +254,7 @@ static function GetAudiencesByIds(
 
 	$request->AudienceIds = $audienceIds;
 	$request->Type = $type;
+	$request->ReturnAdditionalFields = $returnAdditionalFields;
 
 	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAudiencesByIds($request);
 }
@@ -253,7 +262,8 @@ static function GetAudiencesByIds(
 ```python
 response=campaignmanagement_service.GetAudiencesByIds(
 	AudienceIds=AudienceIds,
-	Type=Type)
+	Type=Type,
+	ReturnAdditionalFields=ReturnAdditionalFields)
 ```
 
 ## Requirements

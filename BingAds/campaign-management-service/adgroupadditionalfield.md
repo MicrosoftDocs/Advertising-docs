@@ -26,7 +26,7 @@ Defines a list of optional [AdGroup](../campaign-management-service/adgroup.md) 
 
 |Value|Description|
 |-----------|---------------|
-|<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|Includes the *InheritedBidStrategyType* element that can be nested within the *BiddingScheme* element of an [AdGroup](../campaign-management-service/adgroup.md) object. The *InheritedBidStrategyType* will only be returned if the *BiddingScheme* element is an [InheritFromParentBiddingScheme](../campaign-management-service/inheritfromparentbiddingscheme.md) object.|
+|<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|Request that the *InheritedBidStrategyType* element be included within each returned [InheritFromParentBiddingScheme](../campaign-management-service/inheritfromparentbiddingscheme.md) object (nested within the *BiddingScheme* element of an [AdGroup](../campaign-management-service/adgroup.md)).|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
