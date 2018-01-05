@@ -18,6 +18,7 @@ Defines a remarketing list that can be downloaded and uploaded in a bulk file.
 For a *Remarketing List* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 
 - [Audience](#audience)
+- [Audience Search Size](#audiencesearchsize)
 - [Client Id](#clientid)
 - [Description](#description)
 - [Id](#id)
@@ -111,6 +112,19 @@ The name can contain a maximum of 128 characters
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Delete:** Read-only  
+
+### <a name="audiencesearchsize"></a>Audience Search Size
+The total number of people who belong to this audience. This gives you an idea of how many search users you can target.
+
+This property will be empty if the search audience size is less than 1,000. The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
+
+This property will be empty for up to 24 hours while the audience is being built, for example if you add or update the remarketing list membership duration, rule, or tag identifier. 
+
+This property will be empty if the UET tag associated with the remarketing list has a status of Unverified or Inactive, because the remarketing list can't receive the customer information from your website that it needs to build the list.
+
+**Add:** Read-only  
+**Update:** Read-only    
 **Delete:** Read-only  
 
 ### <a name="clientid"></a>Client Id
