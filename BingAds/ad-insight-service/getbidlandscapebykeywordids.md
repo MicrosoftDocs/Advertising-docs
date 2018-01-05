@@ -78,31 +78,31 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBidLandscapeByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <BidLandscape xmlns:e62="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e62:KeywordBidLandscape>
-          <e62:KeywordId>ValueHere</e62:KeywordId>
-          <e62:StartDate d4p1:nil="false">
-            <e62:Day>ValueHere</e62:Day>
-            <e62:Month>ValueHere</e62:Month>
-            <e62:Year>ValueHere</e62:Year>
-          </e62:StartDate>
-          <e62:EndDate d4p1:nil="false">
-            <e62:Day>ValueHere</e62:Day>
-            <e62:Month>ValueHere</e62:Month>
-            <e62:Year>ValueHere</e62:Year>
-          </e62:EndDate>
-          <e62:BidLandscapePoints d4p1:nil="false">
-            <e62:BidLandscapePoint>
-              <e62:Bid>ValueHere</e62:Bid>
-              <e62:Clicks d4p1:nil="false">ValueHere</e62:Clicks>
-              <e62:Impressions>ValueHere</e62:Impressions>
-              <e62:TopImpressions d4p1:nil="false">ValueHere</e62:TopImpressions>
-              <e62:Currency>ValueHere</e62:Currency>
-              <e62:Cost d4p1:nil="false">ValueHere</e62:Cost>
-              <e62:MarginalCPC d4p1:nil="false">ValueHere</e62:MarginalCPC>
-            </e62:BidLandscapePoint>
-          </e62:BidLandscapePoints>
-        </e62:KeywordBidLandscape>
+      <BidLandscape xmlns:e368="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e368:KeywordBidLandscape>
+          <e368:KeywordId>ValueHere</e368:KeywordId>
+          <e368:StartDate d4p1:nil="false">
+            <e368:Day>ValueHere</e368:Day>
+            <e368:Month>ValueHere</e368:Month>
+            <e368:Year>ValueHere</e368:Year>
+          </e368:StartDate>
+          <e368:EndDate d4p1:nil="false">
+            <e368:Day>ValueHere</e368:Day>
+            <e368:Month>ValueHere</e368:Month>
+            <e368:Year>ValueHere</e368:Year>
+          </e368:EndDate>
+          <e368:BidLandscapePoints d4p1:nil="false">
+            <e368:BidLandscapePoint>
+              <e368:Bid>ValueHere</e368:Bid>
+              <e368:Clicks d4p1:nil="false">ValueHere</e368:Clicks>
+              <e368:Impressions>ValueHere</e368:Impressions>
+              <e368:TopImpressions d4p1:nil="false">ValueHere</e368:TopImpressions>
+              <e368:Currency>ValueHere</e368:Currency>
+              <e368:Cost d4p1:nil="false">ValueHere</e368:Cost>
+              <e368:MarginalCPC d4p1:nil="false">ValueHere</e368:MarginalCPC>
+            </e368:BidLandscapePoint>
+          </e368:BidLandscapePoints>
+        </e368:KeywordBidLandscape>
       </BidLandscape>
     </GetBidLandscapeByKeywordIdsResponse>
   </s:Body>

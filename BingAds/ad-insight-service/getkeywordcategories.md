@@ -79,16 +79,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Result xmlns:e76="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e76:KeywordCategoryResult>
-          <e76:Keyword d4p1:nil="false">ValueHere</e76:Keyword>
-          <e76:KeywordCategories d4p1:nil="false">
-            <e76:KeywordCategory>
-              <e76:Category d4p1:nil="false">ValueHere</e76:Category>
-              <e76:ConfidenceScore>ValueHere</e76:ConfidenceScore>
-            </e76:KeywordCategory>
-          </e76:KeywordCategories>
-        </e76:KeywordCategoryResult>
+      <Result xmlns:e382="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e382:KeywordCategoryResult>
+          <e382:Keyword d4p1:nil="false">ValueHere</e382:Keyword>
+          <e382:KeywordCategories d4p1:nil="false">
+            <e382:KeywordCategory>
+              <e382:Category d4p1:nil="false">ValueHere</e382:Category>
+              <e382:ConfidenceScore>ValueHere</e382:ConfidenceScore>
+            </e382:KeywordCategory>
+          </e382:KeywordCategories>
+        </e382:KeywordCategoryResult>
       </Result>
     </GetKeywordCategoriesResponse>
   </s:Body>

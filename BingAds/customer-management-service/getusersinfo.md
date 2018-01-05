@@ -71,11 +71,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetUsersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <UsersInfo xmlns:e15="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e15:UserInfo>
-          <e15:Id>ValueHere</e15:Id>
-          <e15:UserName d4p1:nil="false">ValueHere</e15:UserName>
-        </e15:UserInfo>
+      <UsersInfo xmlns:e321="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e321:UserInfo>
+          <e321:Id>ValueHere</e321:Id>
+          <e321:UserName d4p1:nil="false">ValueHere</e321:UserName>
+        </e321:UserInfo>
       </UsersInfo>
     </GetUsersInfoResponse>
   </s:Body>

@@ -53,50 +53,50 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <UpdateUserRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <User xmlns:e50="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e50:ContactInfo i:nil="false">
-          <e50:Address i:nil="false">
-            <e50:City i:nil="false">ValueHere</e50:City>
-            <e50:CountryCode i:nil="false">ValueHere</e50:CountryCode>
-            <e50:Id i:nil="false">ValueHere</e50:Id>
-            <e50:Line1 i:nil="false">ValueHere</e50:Line1>
-            <e50:Line2 i:nil="false">ValueHere</e50:Line2>
-            <e50:Line3 i:nil="false">ValueHere</e50:Line3>
-            <e50:Line4 i:nil="false">ValueHere</e50:Line4>
-            <e50:PostalCode i:nil="false">ValueHere</e50:PostalCode>
-            <e50:StateOrProvince i:nil="false">ValueHere</e50:StateOrProvince>
-            <e50:TimeStamp i:nil="false">ValueHere</e50:TimeStamp>
-          </e50:Address>
-          <e50:ContactByPhone i:nil="false">ValueHere</e50:ContactByPhone>
-          <e50:ContactByPostalMail i:nil="false">ValueHere</e50:ContactByPostalMail>
-          <e50:Email i:nil="false">ValueHere</e50:Email>
-          <e50:EmailFormat i:nil="false">ValueHere</e50:EmailFormat>
-          <e50:Fax i:nil="false">ValueHere</e50:Fax>
-          <e50:HomePhone i:nil="false">ValueHere</e50:HomePhone>
-          <e50:Id i:nil="false">ValueHere</e50:Id>
-          <e50:Mobile i:nil="false">ValueHere</e50:Mobile>
-          <e50:Phone1 i:nil="false">ValueHere</e50:Phone1>
-          <e50:Phone2 i:nil="false">ValueHere</e50:Phone2>
-        </e50:ContactInfo>
-        <e50:CustomerAppScope i:nil="false">ValueHere</e50:CustomerAppScope>
-        <e50:CustomerId i:nil="false">ValueHere</e50:CustomerId>
-        <e50:Id i:nil="false">ValueHere</e50:Id>
-        <e50:JobTitle i:nil="false">ValueHere</e50:JobTitle>
-        <e50:LastModifiedByUserId i:nil="false">ValueHere</e50:LastModifiedByUserId>
-        <e50:LastModifiedTime i:nil="false">ValueHere</e50:LastModifiedTime>
-        <e50:Lcid i:nil="false">ValueHere</e50:Lcid>
-        <e50:Name i:nil="false">
-          <e50:FirstName i:nil="false">ValueHere</e50:FirstName>
-          <e50:LastName i:nil="false">ValueHere</e50:LastName>
-          <e50:MiddleInitial i:nil="false">ValueHere</e50:MiddleInitial>
-        </e50:Name>
-        <e50:Password i:nil="false">ValueHere</e50:Password>
-        <e50:SecretAnswer i:nil="false">ValueHere</e50:SecretAnswer>
-        <e50:SecretQuestion>ValueHere</e50:SecretQuestion>
-        <e50:UserLifeCycleStatus i:nil="false">ValueHere</e50:UserLifeCycleStatus>
-        <e50:TimeStamp i:nil="false">ValueHere</e50:TimeStamp>
-        <e50:UserName i:nil="false">ValueHere</e50:UserName>
-        <e50:IsMigratedToMicrosoftAccount>ValueHere</e50:IsMigratedToMicrosoftAccount>
+      <User xmlns:e356="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e356:ContactInfo i:nil="false">
+          <e356:Address i:nil="false">
+            <e356:City i:nil="false">ValueHere</e356:City>
+            <e356:CountryCode i:nil="false">ValueHere</e356:CountryCode>
+            <e356:Id i:nil="false">ValueHere</e356:Id>
+            <e356:Line1 i:nil="false">ValueHere</e356:Line1>
+            <e356:Line2 i:nil="false">ValueHere</e356:Line2>
+            <e356:Line3 i:nil="false">ValueHere</e356:Line3>
+            <e356:Line4 i:nil="false">ValueHere</e356:Line4>
+            <e356:PostalCode i:nil="false">ValueHere</e356:PostalCode>
+            <e356:StateOrProvince i:nil="false">ValueHere</e356:StateOrProvince>
+            <e356:TimeStamp i:nil="false">ValueHere</e356:TimeStamp>
+          </e356:Address>
+          <e356:ContactByPhone i:nil="false">ValueHere</e356:ContactByPhone>
+          <e356:ContactByPostalMail i:nil="false">ValueHere</e356:ContactByPostalMail>
+          <e356:Email i:nil="false">ValueHere</e356:Email>
+          <e356:EmailFormat i:nil="false">ValueHere</e356:EmailFormat>
+          <e356:Fax i:nil="false">ValueHere</e356:Fax>
+          <e356:HomePhone i:nil="false">ValueHere</e356:HomePhone>
+          <e356:Id i:nil="false">ValueHere</e356:Id>
+          <e356:Mobile i:nil="false">ValueHere</e356:Mobile>
+          <e356:Phone1 i:nil="false">ValueHere</e356:Phone1>
+          <e356:Phone2 i:nil="false">ValueHere</e356:Phone2>
+        </e356:ContactInfo>
+        <e356:CustomerAppScope i:nil="false">ValueHere</e356:CustomerAppScope>
+        <e356:CustomerId i:nil="false">ValueHere</e356:CustomerId>
+        <e356:Id i:nil="false">ValueHere</e356:Id>
+        <e356:JobTitle i:nil="false">ValueHere</e356:JobTitle>
+        <e356:LastModifiedByUserId i:nil="false">ValueHere</e356:LastModifiedByUserId>
+        <e356:LastModifiedTime i:nil="false">ValueHere</e356:LastModifiedTime>
+        <e356:Lcid i:nil="false">ValueHere</e356:Lcid>
+        <e356:Name i:nil="false">
+          <e356:FirstName i:nil="false">ValueHere</e356:FirstName>
+          <e356:LastName i:nil="false">ValueHere</e356:LastName>
+          <e356:MiddleInitial i:nil="false">ValueHere</e356:MiddleInitial>
+        </e356:Name>
+        <e356:Password i:nil="false">ValueHere</e356:Password>
+        <e356:SecretAnswer i:nil="false">ValueHere</e356:SecretAnswer>
+        <e356:SecretQuestion>ValueHere</e356:SecretQuestion>
+        <e356:UserLifeCycleStatus i:nil="false">ValueHere</e356:UserLifeCycleStatus>
+        <e356:TimeStamp i:nil="false">ValueHere</e356:TimeStamp>
+        <e356:UserName i:nil="false">ValueHere</e356:UserName>
+        <e356:IsMigratedToMicrosoftAccount>ValueHere</e356:IsMigratedToMicrosoftAccount>
       </User>
     </UpdateUserRequest>
   </s:Body>
