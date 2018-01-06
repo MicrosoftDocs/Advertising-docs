@@ -8,9 +8,10 @@ manager: ehansen
 ms.author: "scottwhi"
 dev_langs:
   - csharp
+  - curl
   - java
   - python
-  - curl
+  - php
 ---
 
 # Hotel Group code example
@@ -1130,4 +1131,144 @@ curl -X PATCH "https://partner.api.bingads.microsoft.com/Travel/V1/Customers($CU
 
 echo "*** Deleting hotel group ***"
 curl -X DELETE "https://partner.api.bingads.microsoft.com/Travel/V1/Customers($CUSTOMERID)/Accounts($ACCOUNTID)/SubAccounts('$SUBACCOUNTID')/HotelGroups('$HOTELGROUPID')" -H "accept: application/json" -H "content-type: application/json" -H "Authorization: Bearer $AUTHORIZATIONTOKEN"
+```
+
+```php
+<?php
+$customerId = '<CUSTOMERIDGOESHERE>';
+$accountId = '<ACCOUNTIDGOESHERE>';
+$subaccountId = '<SUBACCOUNTIDGOESHERE>';
+$authenticationToken = '<AUTHENTICATIONTOKENGOESHERE>';
+
+$baseUri = "https://partner.api.bingads.microsoft.com/Travel/V1";
+$hotelGroupsUri = $baseUri . "/Customers(%s)/Accounts(%s)/SubAccounts('%s')/HotelGroups";
+$hotelGroupUri = $baseUri . "/Customers(%s)/Accounts(%s)/SubAccounts('%s')/HotelGroups('%s')";
+
+echo("*** Retrieving hotel groups ***\r\n");
+$hotelGroups = get_hotel_groups();
+foreach ($hotelGroups as $index => $hotelGroup) {
+    printObject($hotelGroup);
+    echo("\r\n");
+}
+
+echo("*** Adding a hotel group ***\r\n");
+# The hotel group name must be unique. This example appends a unique id to
+# ensure that the hotel group name is unique in case you run the example multiple
+# times; appending the unique id is not required.
+$hotelGroupId = add_hotel_group(array('Name' => 'Test Hotel Group (' . uniqid() . ')' ));
+echo("*** Added hotel group $hotelGroupId ***\r\n");
+
+$hotelGroupToUpdate = array(
+    'Id' => $hotelGroupId,
+    'BidMultipliers' => array(
+        array(
+            'Factor' => .65,
+            'DeviceTypes' => array('Desktop'),
+            '@odata.type' => '#Model.DeviceMultiplier'
+        )
+    )
+);
+
+echo("*** Updating hotel group ***\r\n");
+update_hotel_group($hotelGroupToUpdate);
+
+echo("*** Retrieving hotel group after update ***\r\n");
+$hotelGroup = get_hotel_group($hotelGroupId);
+printObject($hotelGroup);
+
+echo("*** Deleting hotel group $hotelGroupId ***\r\n");
+delete_hotel_group($hotelGroupId);
+
+function get_hotel_groups(){
+    global $customerId, $accountId, $subaccountId, $hotelGroupsUri;
+
+    $url = sprintf($hotelGroupsUri, $customerId, $accountId, $subaccountId);
+    $result = request('GET', $url);
+    if ($result === FALSE) {
+        throw new Exception(var_dump($result));
+    } else {
+        return json_decode($result, true)['value'];
+    }
+}
+
+function add_hotel_group($hotelGroup){
+    global $customerId, $accountId, $subaccountId, $hotelGroupsUri;
+
+    $url = sprintf($hotelGroupsUri, $customerId, $accountId, $subaccountId);
+    $result = request('POST', $url, $hotelGroup);
+    if ($result === FALSE) {
+        throw new Exception(var_dump($result));
+    } else {
+        return json_decode($result, true)['value'];
+    }
+}
+
+function update_hotel_group($hotelGroup){
+    global $customerId, $accountId, $subaccountId, $hotelGroupUri;
+
+    $url = sprintf($hotelGroupUri, $customerId, $accountId, $subaccountId, $hotelGroup['Id']);
+    $result = request('PATCH', $url, $hotelGroup);
+    if ($result === FALSE) {
+        throw new Exception(var_dump($result));
+    } else {
+        return json_decode($result, true);
+    }
+}
+
+function get_hotel_group($hotelGroupId){
+    global $customerId, $accountId, $subaccountId, $hotelGroupUri;
+
+    $url = sprintf($hotelGroupUri, $customerId, $accountId, $subaccountId, $hotelGroupId);
+    $result = request('GET', $url);
+    if ($result === FALSE) {
+        throw new Exception(var_dump($result));
+    } else {
+        return json_decode($result, true);
+    }
+}
+
+function delete_hotel_group($hotelGroupId){
+    global $customerId, $accountId, $subaccountId, $hotelGroupUri;
+    
+    $url = sprintf($hotelGroupUri, $customerId, $accountId, $subaccountId, $hotelGroupId);
+    $result = request('DELETE', $url);
+    if ($result === FALSE) {
+        throw new Exception(var_dump($result));
+    }
+}
+
+function request($method, $url, $data = null){
+    global $authenticationToken;
+    $options = array(
+        'http' => array(
+            'method'  => $method,
+            'header'  => "Authorization: Bearer $authenticationToken\r\n" .
+                        "Content-type: application/json\r\n"
+        )
+    );
+    $json = null;
+    if ($data !== null) {
+        $json = json_encode($data);
+        $options['http']['content'] = $json;
+    }
+    $context  = stream_context_create($options);
+    echo("requesting ($method): $url\r\n");
+    if ($json !== null) {
+        echo("json data: $json\r\n");
+    }
+    return file_get_contents($url, false, $context);
+}
+
+function printObject($object, $tabCount = 0){
+    $tabs = str_repeat("\t", $tabCount);
+    foreach ($object as $prop => $value) {
+        if (is_array($value)) {
+            echo("$prop: ");
+            printObject($value, $tabCount + 1);
+        } else {            
+            echo("$tabs$prop: $value\r\n");
+        }
+    } 
+}
+
 ```
