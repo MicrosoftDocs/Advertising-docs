@@ -8,9 +8,10 @@ manager: ehansen
 ms.author: "scottwhi"
 dev_langs:
   - csharp
+  - curl
   - java
   - python
-  - curl
+  - php
 ---
 
 # Hotel code example
@@ -1594,4 +1595,219 @@ curl -X GET "https://partner.api.sandbox.bingads.microsoft.com/Travel/V1/Custome
 
 echo "*** Associating hotel $HOTELID with hotel group $HOTELGROUPID ***"
 curl -X POST "https://partner.api.sandbox.bingads.microsoft.com/Travel/V1/Customers($CUSTOMERID)/Accounts($ACCOUNTID)/SubAccounts('$ACCOUNTID')/Associate" -d "{\"HotelAssociations\":[{\"HotelGroupId\":\"$HOTELGROUPID\",\"HotelId\":\"$HOTELID\"}]}"
+```
+
+```php
+<?php
+$customerId = '<CUSTOMERIDGOESHERE>';
+$accountId = '<ACCOUNTIDGOESHERE>';
+$subaccountId = '<SUBACCOUNTIDGOESHERE>';
+$authenticationToken = '<AUTHENTICATIONTOKENGOESHERE>';
+
+$baseUri = "https://partner.api.sandbox.bingads.microsoft.com/Travel/V1";
+$ungroupedUri = $baseUri . "/Customers(%s)/Accounts(%s)/SubAccounts('%s')/Ungrouped";
+$hotelGroupsUri = $baseUri . "/Customers(%s)/Accounts(%s)/SubAccounts('%s')/HotelGroups";
+$hotelGroupUri = $baseUri . "/Customers(%s)/Accounts(%s)/SubAccounts('%s')/HotelGroups('%s')";
+$hotelUri = $baseUri . "/Customers(%s)/Accounts(%s)/SubAccounts('%s')/HotelGroups('%s')/Hotels('%s')";
+$associateUri = $baseUri . "/Customers(%s)/Accounts(%s)/SubAccounts('%s')/Associate";
+
+echo("*** Listing ungrouped hotels ***\r\n");
+$ungroupedHotels = list_ungrouped_hotels();
+printObject($ungroupedHotels);
+
+$oneTestHotel = $ungroupedHotels[0];
+echo(sprintf("*** Getting one test hotel %s ***\r\n", $oneTestHotel['Name']));
+$hotelToUpdate = get_hotel($oneTestHotel['Id']);
+printObject($hotelToUpdate);
+
+$hotelToUpdate['BidMultipliers'] = array(
+    array(
+        "Factor" => 1.2,
+        "DaysOfWeek" => array("Thursday", "Friday", "Saturday"),
+        "@odata.type" => "#Model.CheckinDayOfWeekMultiplier"
+    ),
+    array(
+        "Factor" => .9,
+        "DaysOfWeek" => array("Sunday", "Monday"),
+        "@odata.type" => "#Model.CheckinDayOfWeekMultiplier"
+    ),
+    array(
+        "Factor" => 1.3,
+        "MinimumNumberOfDays" => 3,
+        "@odata.type" => "#Model.AdvanceBookingWindowMultiplier"
+    )
+);
+
+echo(sprintf("*** Updating hotel %s ***\r\n", $hotelToUpdate['Name']));
+update_hotel($hotelToUpdate);
+
+echo("*** Retrieving hotel after update ***");
+$retrievedHotel = get_hotel($hotelToUpdate['Id']);
+printObject($retrievedHotel);
+
+echo("*** Listing hotel groups ***\r\n");
+$hotelGroups = list_hotel_groups();
+printObject($hotelGroups);
+
+echo("*** Adding a hotel group ***\r\n");
+$hotelGroupToAdd = array('Name' => 'Test Hotel Group (' . uniqid() . ')');
+$addedHotelGroupId = add_hotel_group($hotelGroupToAdd);
+echo(sprintf("*** Added hotel group %s: %s ***\r\n", $addedHotelGroupId, $hotelGroupToAdd['Name']));
+
+echo(sprintf("*** Associating hotel %s to hotel group %s ***\r\n", $hotelGroupToAdd['Name'], $addedHotelGroupId));
+$associations = associate_hotel_to_group($retrievedHotel['Id'], $addedHotelGroupId);
+printObject($associations);
+
+echo(sprintf("*** Ungrouping hotel %s ***\r\n", $retrievedHotel['Name']));
+ungroup_hotel($retrievedHotel['Id']);
+
+echo("*** Deleting hotel group $addedHotelGroupId ***\r\n");
+delete_hotel_group($addedHotelGroupId);
+
+function list_ungrouped_hotels(){
+    global $customerId, $accountId, $subaccountId, $ungroupedUri;
+    
+    $url = sprintf($ungroupedUri, $customerId, $accountId, $subaccountId);
+    $result = request('GET', $url);
+    if ($result === FALSE) {
+        throw new Exception(var_dump($result));
+    } else {
+        return json_decode($result, true)['value'];
+    }
+}
+
+function get_hotel($hotelId, $hotelGroupId = null){
+    global $customerId, $accountId, $subaccountId, $hotelUri;
+
+    # If $hotelGroupId is not specified then use the Id of the hotel group named "Ungrouped"
+    if($hotelGroupId === null){
+        $hotelGroupId = get_default_hotel_group()['Id'];
+    }
+    $url = sprintf($hotelUri, $customerId, $accountId, $subaccountId, $hotelGroupId, $hotelId);
+    $result = request('GET', $url);
+    if ($result === FALSE) {
+        throw new Exception(var_dump($result));
+    } else {
+        return json_decode($result, true);
+    }
+}
+
+function update_hotel($hotel, $hotelGroupId = null){
+    global $customerId, $accountId, $subaccountId, $hotelUri;
+
+    # If $hotelGroupId is not specified then use the Id of the hotel group named "Ungrouped"
+    if($hotelGroupId === null){
+        $hotelGroupId = get_default_hotel_group()['Id'];
+    }
+    $url = sprintf($hotelUri, $customerId, $accountId, $subaccountId, $hotelGroupId, $hotel['Id']);
+    $result = request('PATCH', $url, $hotel);
+    if ($result === FALSE) {
+        throw new Exception(var_dump($result));
+    }
+}
+
+function list_hotel_groups(){
+    global $customerId, $accountId, $subaccountId, $hotelGroupsUri;
+
+    $url = sprintf($hotelGroupsUri, $customerId, $accountId, $subaccountId);
+    $result = request('GET', $url);
+    if ($result === FALSE) {
+        throw new Exception(var_dump($result));
+    } else {
+        return json_decode($result, true)['value'];
+    }
+}
+
+function ungrouped_hotel_filter($hotel){
+    return $hotel['Name'] == 'Ungrouped';
+}
+
+function get_default_hotel_group(){
+    return array_filter(list_hotel_groups(), "ungrouped_hotel_filter")[0];
+}
+
+function add_hotel_group($hotelGroup){
+    global $customerId, $accountId, $subaccountId, $hotelGroupsUri;
+
+    $url = sprintf($hotelGroupsUri, $customerId, $accountId, $subaccountId);
+    $result = request('POST', $url, $hotelGroup);
+    if ($result === FALSE) {
+        throw new Exception(var_dump($result));
+    } else {
+        return json_decode($result, true)['value'];
+    }
+}
+
+function delete_hotel_group($hotelGroupId){
+    global $customerId, $accountId, $subaccountId, $hotelGroupUri;
+    
+    $url = sprintf($hotelGroupUri, $customerId, $accountId, $subaccountId, $hotelGroupId);
+    $result = request('DELETE', $url);
+    if ($result === FALSE) {
+        throw new Exception(var_dump($result));
+    }
+}
+
+function associate_hotel_to_group($hotelId, $hotelGroupId = null){
+    global $customerId, $accountId, $subaccountId, $associateUri;
+
+    # If $hotelGroupId is not specified then use the Id of the hotel group named "Ungrouped"
+    if($hotelGroupId === null){
+        $hotelGroupId = get_default_hotel_group()['Id'];
+    }
+    $url = sprintf($associateUri, $customerId, $accountId, $subaccountId);
+    $result = request('POST', $url, array(
+        "HotelAssociations" => array(
+            array(
+                "HotelGroupId" => $hotelGroupId,
+                "HotelId" => $hotelId
+            )
+        )
+    ));
+    if ($result === FALSE) {
+        throw new Exception(var_dump($result));
+    } else {
+        return json_decode($result, true)['value'];
+    }
+}
+
+function ungroup_hotel($hotelId){
+    # Associate the specified $hotelId to the 'Ungrouped' hotel group by specifying null for the $hotelGroupId
+    return associate_hotel_to_group($hotelId, null);
+}
+
+function request($method, $url, $data = null){
+    global $authenticationToken;
+    $options = array(
+        'http' => array(
+            'method'  => $method,
+            'header'  => "Authorization: Bearer $authenticationToken\r\n" .
+                        "Content-type: application/json\r\n"
+        )
+    );
+    $json = null;
+    if ($data !== null) {
+        $json = json_encode($data);
+        $options['http']['content'] = $json;
+    }
+    $context  = stream_context_create($options);
+    echo("requesting ($method): $url\r\n");
+    if ($json !== null) {
+        echo("json data: $json\r\n");
+    }
+    return file_get_contents($url, false, $context);
+}
+
+function printObject($object, $tabCount = 0){
+    $tabs = str_repeat("\t", $tabCount);
+    foreach ($object as $prop => $value) {
+        if (is_array($value)) {
+            echo("$prop: ");
+            printObject($value, $tabCount + 1);
+        } else {            
+            echo("$tabs$prop: $value\r\n");
+        }
+    } 
+}
+
 ```
