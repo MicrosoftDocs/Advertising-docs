@@ -79,7 +79,7 @@ If you asked the service to compress the report data (see the report job's `Comp
 
 ## Filtering report data
 
-You can use the `Filter` field in the [ReportJob](reference.md#reportjob) request object to filter the data in the report. You may filter the report on the following dimension columns and any [measure column](#measure-columns).
+To filter the data in the report, use the `Filter` field in the [ReportJob](reference.md#reportjob) request object. You may filter the report on the following dimension columns and any [measure column](#measure-columns). The column names are case sensitive.
 
 - SubaccountId/Name
 - HotelGroupId/Name
@@ -88,7 +88,7 @@ You can use the `Filter` field in the [ReportJob](reference.md#reportjob) reques
 
 Using filters is an AND operation. For example, if you filter on HotelPartnerId equal to 123 and DeviceType equal to Mobile, the report will contain data only where the partner's hotel ID is 123 AND the device type is mobile.
 
-Set `Filter` to an OData [$filter](http://www.odata.org/getting-started/basic-tutorial/#queryData) string. The following example shows how to filter the report for ads shown on desktops and tablets.
+Set `Filter` to an OData [$filter](http://www.odata.org/getting-started/basic-tutorial/#queryData) string. The following example shows how to filter the report for ads shown on desktops and tablets. The enumeration values that you use in the filter are case sensitive. For example, use Desktop instead of desktop.
 
 ```json
 {
