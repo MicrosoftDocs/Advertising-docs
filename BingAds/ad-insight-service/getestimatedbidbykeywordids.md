@@ -78,28 +78,28 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedBidByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedBids xmlns:e66="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e66:KeywordIdEstimatedBid>
-          <e66:KeywordId>ValueHere</e66:KeywordId>
-          <e66:KeywordEstimatedBid d4p1:nil="false">
-            <e66:Keyword d4p1:nil="false">ValueHere</e66:Keyword>
-            <e66:EstimatedBids d4p1:nil="false">
-              <e66:EstimatedBidAndTraffic>
-                <e66:MinClicksPerWeek d4p1:nil="false">ValueHere</e66:MinClicksPerWeek>
-                <e66:MaxClicksPerWeek d4p1:nil="false">ValueHere</e66:MaxClicksPerWeek>
-                <e66:AverageCPC d4p1:nil="false">ValueHere</e66:AverageCPC>
-                <e66:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e66:MinImpressionsPerWeek>
-                <e66:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e66:MaxImpressionsPerWeek>
-                <e66:CTR d4p1:nil="false">ValueHere</e66:CTR>
-                <e66:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e66:MinTotalCostPerWeek>
-                <e66:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e66:MaxTotalCostPerWeek>
-                <e66:Currency>ValueHere</e66:Currency>
-                <e66:MatchType>ValueHere</e66:MatchType>
-                <e66:EstimatedMinBid>ValueHere</e66:EstimatedMinBid>
-              </e66:EstimatedBidAndTraffic>
-            </e66:EstimatedBids>
-          </e66:KeywordEstimatedBid>
-        </e66:KeywordIdEstimatedBid>
+      <KeywordEstimatedBids xmlns:e372="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e372:KeywordIdEstimatedBid>
+          <e372:KeywordId>ValueHere</e372:KeywordId>
+          <e372:KeywordEstimatedBid d4p1:nil="false">
+            <e372:Keyword d4p1:nil="false">ValueHere</e372:Keyword>
+            <e372:EstimatedBids d4p1:nil="false">
+              <e372:EstimatedBidAndTraffic>
+                <e372:MinClicksPerWeek d4p1:nil="false">ValueHere</e372:MinClicksPerWeek>
+                <e372:MaxClicksPerWeek d4p1:nil="false">ValueHere</e372:MaxClicksPerWeek>
+                <e372:AverageCPC d4p1:nil="false">ValueHere</e372:AverageCPC>
+                <e372:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e372:MinImpressionsPerWeek>
+                <e372:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e372:MaxImpressionsPerWeek>
+                <e372:CTR d4p1:nil="false">ValueHere</e372:CTR>
+                <e372:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e372:MinTotalCostPerWeek>
+                <e372:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e372:MaxTotalCostPerWeek>
+                <e372:Currency>ValueHere</e372:Currency>
+                <e372:MatchType>ValueHere</e372:MatchType>
+                <e372:EstimatedMinBid>ValueHere</e372:EstimatedMinBid>
+              </e372:EstimatedBidAndTraffic>
+            </e372:EstimatedBids>
+          </e372:KeywordEstimatedBid>
+        </e372:KeywordIdEstimatedBid>
       </KeywordEstimatedBids>
     </GetEstimatedBidByKeywordIdsResponse>
   </s:Body>

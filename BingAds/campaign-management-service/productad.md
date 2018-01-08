@@ -45,7 +45,7 @@ The [ProductAd](productad.md) object derives from the [Ad](ad.md) object, and in
 |<a name="finalurls"></a>FinalUrls|Not supported for product ads.|**string** array|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />There are currently not any ForwardCompatibilityMap key and value pairs that are applicable for product ads.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The unique Bing Ads identifier for the ad.<br /><br />**Add:** Read-only<br/>**Update:** Required and Read-only|**long**|
-|<a name="status"></a>Status|The status of the ad.<br /><br />**Add:** Optional<br/>**Update:** Optional|[AdStatus](adstatus.md)|
+|<a name="status"></a>Status|The status of the ad.<br/><br/>You can set the ad status to Active or Paused.<br /><br />**Add:** Optional<br/>**Update:** Optional|[AdStatus](adstatus.md)|
 |<a name="trackingurltemplate"></a>TrackingUrlTemplate|Not supported for product ads.|**string**|
 |<a name="type"></a>Type|The type of the ad. This value is *Product* when you retrieve a product ad. For more information about ad types, see the [Ad Data Object Remarks](../campaign-management-service/ad.md#remarks).<br /><br />**Add:** Read-only<br/>**Update:** Read-only|[AdType](adtype.md)|
 |<a name="urlcustomparameters"></a>UrlCustomParameters|Not supported for product ads.|[CustomParameters](customparameters.md)|

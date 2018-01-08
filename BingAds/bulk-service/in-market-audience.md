@@ -21,6 +21,7 @@ Defines an in-market audience that can be downloaded in a bulk file.
 For a *In Market Audience* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 
 - [Audience](#audience)
+- [Audience Search Size](#audiencesearchsize)
 - [Client Id](#clientid)
 - [Description](#description)
 - [Id](#id)
@@ -81,6 +82,15 @@ The name can contain a maximum of 128 characters
 **Add:** Not supported  
 **Update:** Not supported    
 **Delete:** Not supported  
+
+### <a name="audiencesearchsize"></a>Audience Search Size
+The total number of people who belong to this audience. This gives you an idea of how many search users you can target.
+
+This property will be empty if the search audience size is less than 1,000. The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
+
+**Add:** Read-only  
+**Update:** Read-only    
+**Delete:** Read-only  
 
 ### <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.

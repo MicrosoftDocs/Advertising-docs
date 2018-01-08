@@ -1165,6 +1165,8 @@
           href: ../campaign-management-service/appealstatus.md
         - name: AssociationType
           href: ../campaign-management-service/associationtype.md
+        - name: AudienceAdditionalField
+          href: ../campaign-management-service/audienceadditionalfield.md
         - name: AudienceType
           href: ../campaign-management-service/audiencetype.md
         - name: BudgetLimitType

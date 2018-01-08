@@ -75,16 +75,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBillingDocumentsInfoResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <BillingDocumentsInfo xmlns:e53="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e53:BillingDocumentInfo>
-          <e53:AccountId>ValueHere</e53:AccountId>
-          <e53:AccountName d4p1:nil="false">ValueHere</e53:AccountName>
-          <e53:AccountNumber d4p1:nil="false">ValueHere</e53:AccountNumber>
-          <e53:Amount>ValueHere</e53:Amount>
-          <e53:CurrencyCode d4p1:nil="false">ValueHere</e53:CurrencyCode>
-          <e53:DocumentDate d4p1:nil="false">ValueHere</e53:DocumentDate>
-          <e53:DocumentId d4p1:nil="false">ValueHere</e53:DocumentId>
-        </e53:BillingDocumentInfo>
+      <BillingDocumentsInfo xmlns:e359="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e359:BillingDocumentInfo>
+          <e359:AccountId>ValueHere</e359:AccountId>
+          <e359:AccountName d4p1:nil="false">ValueHere</e359:AccountName>
+          <e359:AccountNumber d4p1:nil="false">ValueHere</e359:AccountNumber>
+          <e359:Amount>ValueHere</e359:Amount>
+          <e359:CurrencyCode d4p1:nil="false">ValueHere</e359:CurrencyCode>
+          <e359:DocumentDate d4p1:nil="false">ValueHere</e359:DocumentDate>
+          <e359:DocumentId d4p1:nil="false">ValueHere</e359:DocumentId>
+        </e359:BillingDocumentInfo>
       </BillingDocumentsInfo>
     </GetBillingDocumentsInfoResponse>
   </s:Body>
