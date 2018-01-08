@@ -17,7 +17,7 @@ For information about changes that were included with each release, see the foll
 
 ### Nonbreaking changes
 
-- Added support for using the OData $filter query parameter with the [/Associations](../hotel-service/reference.md#associations) resource. For information about using $filter to return associations by hotel ID, see [Filtering hotel associations](manage-hotel-campaigns.md#filterassociations).
+- Added support for using the OData $filter query parameter with the [/Associations](../hotel-service/reference.md#associations) resource. For information about using $filter to return associations by hotel ID, see [Filtering hotel associations](../hotel-service/manage-hotel-campaigns.md#filterassociations).
 
 
 ## December 15, 2017
