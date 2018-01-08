@@ -681,6 +681,8 @@ x-ms-trackingid: a5f2510e-709a-4370-876e-bfb05ef2b8df
 }
 ```
 
+### Getting hotel associations
+
 To get a list of all hotel and hotel group associations for a subaccount, send the following request:
 
 ```
@@ -723,3 +725,17 @@ x-ms-trackingid: 4fa56e03-7e86-4f44-b671-8e00a67c2eed
 }
 ```
 
+
+<a name="filterassociations" />
+### Filtering hotel associations
+
+To return a subset of associations, use the OData $filter query parameter. You may filter associations by `HotelId` or `PartnerHotelId` only. The maximum URL length (2,048) determines the number of IDs that you can specify. If the URL exceeds 2,048 characters, the request returns 404.
+
+The following shows an example that returns the specified hotel associations.
+
+```
+GET https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/Associations?$filter=HotelId+eq+'55113020342282'+or+HotelId+eq+'55113020344943' HTTP/1.1
+Authorization: Bearer <accesstokengoeshere>
+Accept: application/json
+Host: <host>
+```
