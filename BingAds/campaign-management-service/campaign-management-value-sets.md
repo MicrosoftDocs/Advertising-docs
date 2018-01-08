@@ -28,6 +28,7 @@ The Campaign Management service defines the following value sets.
 |[AgeRange](agerange.md)|Defines the possible age range values that you can use to target ads to People.|
 |[AppealStatus](appealstatus.md)|Defines the values that you use to determine whether an editorial rejection is appealable.|
 |[AssociationType](associationtype.md)|Defines the entity types that can be associated with an ad extension.|
+|[AudienceAdditionalField](audienceadditionalfield.md)|Defines a list of optional [Audience](../campaign-management-service/audience.md) properties that you can request when calling [GetAudiencesByIds](../campaign-management-service/getaudiencesbyids.md).|
 |[AudienceType](audiencetype.md)|Defines the possible audience types.|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible budget types that you can specify for a campaign.|
 |[BusinessGeoCodeStatus](businessgeocodestatus.md)|Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.|

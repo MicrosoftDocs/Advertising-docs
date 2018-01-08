@@ -75,38 +75,38 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Opportunities xmlns:e90="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e90:KeywordOpportunity d4p1:type="-- derived type specified here with the appropriate prefix --">
-          <e90:AdGroupId>ValueHere</e90:AdGroupId>
-          <e90:AdGroupName d4p1:nil="false">ValueHere</e90:AdGroupName>
-          <e90:CampaignId>ValueHere</e90:CampaignId>
-          <e90:CampaignName d4p1:nil="false">ValueHere</e90:CampaignName>
-          <e90:Competition>ValueHere</e90:Competition>
-          <e90:EstimatedIncreaseInClicks>ValueHere</e90:EstimatedIncreaseInClicks>
-          <e90:EstimatedIncreaseInCost>ValueHere</e90:EstimatedIncreaseInCost>
-          <e90:EstimatedIncreaseInImpressions>ValueHere</e90:EstimatedIncreaseInImpressions>
-          <e90:MatchType>ValueHere</e90:MatchType>
-          <e90:MonthlySearches>ValueHere</e90:MonthlySearches>
-          <e90:SuggestedBid>ValueHere</e90:SuggestedBid>
-          <e90:SuggestedKeyword d4p1:nil="false">ValueHere</e90:SuggestedKeyword>
+      <Opportunities xmlns:e396="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e396:KeywordOpportunity d4p1:type="-- derived type specified here with the appropriate prefix --">
+          <e396:AdGroupId>ValueHere</e396:AdGroupId>
+          <e396:AdGroupName d4p1:nil="false">ValueHere</e396:AdGroupName>
+          <e396:CampaignId>ValueHere</e396:CampaignId>
+          <e396:CampaignName d4p1:nil="false">ValueHere</e396:CampaignName>
+          <e396:Competition>ValueHere</e396:Competition>
+          <e396:EstimatedIncreaseInClicks>ValueHere</e396:EstimatedIncreaseInClicks>
+          <e396:EstimatedIncreaseInCost>ValueHere</e396:EstimatedIncreaseInCost>
+          <e396:EstimatedIncreaseInImpressions>ValueHere</e396:EstimatedIncreaseInImpressions>
+          <e396:MatchType>ValueHere</e396:MatchType>
+          <e396:MonthlySearches>ValueHere</e396:MonthlySearches>
+          <e396:SuggestedBid>ValueHere</e396:SuggestedBid>
+          <e396:SuggestedKeyword d4p1:nil="false">ValueHere</e396:SuggestedKeyword>
           <!--These fields are applicable if the derived type attribute is set to BroadMatchKeywordOpportunity-->
-          <e90:AverageCPC>ValueHere</e90:AverageCPC>
-          <e90:AverageCTR>ValueHere</e90:AverageCTR>
-          <e90:ClickShare>ValueHere</e90:ClickShare>
-          <e90:ImpressionShare>ValueHere</e90:ImpressionShare>
-          <e90:ReferenceKeywordBid>ValueHere</e90:ReferenceKeywordBid>
-          <e90:ReferenceKeywordId>ValueHere</e90:ReferenceKeywordId>
-          <e90:ReferenceKeywordMatchType>ValueHere</e90:ReferenceKeywordMatchType>
-          <e90:SearchQueryKPIs d4p1:nil="false">
-            <e90:BroadMatchSearchQueryKPI>
-              <e90:AverageCTR>ValueHere</e90:AverageCTR>
-              <e90:Clicks>ValueHere</e90:Clicks>
-              <e90:Impressions>ValueHere</e90:Impressions>
-              <e90:SRPV>ValueHere</e90:SRPV>
-              <e90:SearchQuery d4p1:nil="false">ValueHere</e90:SearchQuery>
-            </e90:BroadMatchSearchQueryKPI>
-          </e90:SearchQueryKPIs>
-        </e90:KeywordOpportunity>
+          <e396:AverageCPC>ValueHere</e396:AverageCPC>
+          <e396:AverageCTR>ValueHere</e396:AverageCTR>
+          <e396:ClickShare>ValueHere</e396:ClickShare>
+          <e396:ImpressionShare>ValueHere</e396:ImpressionShare>
+          <e396:ReferenceKeywordBid>ValueHere</e396:ReferenceKeywordBid>
+          <e396:ReferenceKeywordId>ValueHere</e396:ReferenceKeywordId>
+          <e396:ReferenceKeywordMatchType>ValueHere</e396:ReferenceKeywordMatchType>
+          <e396:SearchQueryKPIs d4p1:nil="false">
+            <e396:BroadMatchSearchQueryKPI>
+              <e396:AverageCTR>ValueHere</e396:AverageCTR>
+              <e396:Clicks>ValueHere</e396:Clicks>
+              <e396:Impressions>ValueHere</e396:Impressions>
+              <e396:SRPV>ValueHere</e396:SRPV>
+              <e396:SearchQuery d4p1:nil="false">ValueHere</e396:SearchQuery>
+            </e396:BroadMatchSearchQueryKPI>
+          </e396:SearchQueryKPIs>
+        </e396:KeywordOpportunity>
       </Opportunities>
     </GetKeywordOpportunitiesResponse>
   </s:Body>

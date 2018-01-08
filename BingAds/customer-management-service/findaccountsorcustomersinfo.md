@@ -73,16 +73,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <FindAccountsOrCustomersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <AccountInfoWithCustomerData xmlns:e6="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e6:AccountInfoWithCustomerData>
-          <e6:CustomerId d4p1:nil="false">ValueHere</e6:CustomerId>
-          <e6:CustomerName d4p1:nil="false">ValueHere</e6:CustomerName>
-          <e6:AccountId>ValueHere</e6:AccountId>
-          <e6:AccountName d4p1:nil="false">ValueHere</e6:AccountName>
-          <e6:AccountNumber d4p1:nil="false">ValueHere</e6:AccountNumber>
-          <e6:AccountLifeCycleStatus>ValueHere</e6:AccountLifeCycleStatus>
-          <e6:PauseReason d4p1:nil="false">ValueHere</e6:PauseReason>
-        </e6:AccountInfoWithCustomerData>
+      <AccountInfoWithCustomerData xmlns:e312="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e312:AccountInfoWithCustomerData>
+          <e312:CustomerId d4p1:nil="false">ValueHere</e312:CustomerId>
+          <e312:CustomerName d4p1:nil="false">ValueHere</e312:CustomerName>
+          <e312:AccountId>ValueHere</e312:AccountId>
+          <e312:AccountName d4p1:nil="false">ValueHere</e312:AccountName>
+          <e312:AccountNumber d4p1:nil="false">ValueHere</e312:AccountNumber>
+          <e312:AccountLifeCycleStatus>ValueHere</e312:AccountLifeCycleStatus>
+          <e312:PauseReason d4p1:nil="false">ValueHere</e312:PauseReason>
+        </e312:AccountInfoWithCustomerData>
       </AccountInfoWithCustomerData>
     </FindAccountsOrCustomersInfoResponse>
   </s:Body>

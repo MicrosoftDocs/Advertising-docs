@@ -73,12 +73,12 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBillingDocumentsResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <BillingDocuments xmlns:e52="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e52:BillingDocument>
-          <e52:Data d4p1:nil="false">ValueHere</e52:Data>
-          <e52:Id>ValueHere</e52:Id>
-          <e52:Type>ValueHere</e52:Type>
-        </e52:BillingDocument>
+      <BillingDocuments xmlns:e358="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e358:BillingDocument>
+          <e358:Data d4p1:nil="false">ValueHere</e358:Data>
+          <e358:Id>ValueHere</e358:Id>
+          <e358:Type>ValueHere</e358:Type>
+        </e358:BillingDocument>
       </BillingDocuments>
     </GetBillingDocumentsResponse>
   </s:Body>

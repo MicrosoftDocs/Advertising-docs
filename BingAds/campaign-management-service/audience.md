@@ -25,6 +25,13 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="ParentId" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Scope" nillable="true" type="tns:EntityScope" />
+    <xs:element minOccurs="0" name="SearchSize" nillable="true" type="xs:long">
+      <xs:annotation>
+        <xs:appinfo>
+          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:element>
     <xs:element minOccurs="0" name="Type" type="tns:AudienceType" />
   </xs:sequence>
 </xs:complexType>
@@ -41,6 +48,7 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
 |<a name="name"></a>Name|The name of the audience. The name can contain a maximum of 128 characters.|**string**|
 |<a name="parentid"></a>ParentId|The Bing Ads identifier of the account or customer. <br/><br/>If the *Scope* is set to *Account*, this is the account ID, and otherwise it is the customer ID.|**long**|
 |<a name="scope"></a>Scope|Scope defines what accounts can use this audience.<br/><br/> If scope is set to *Account*, the audience can only be associated with ad groups within one specified account (*ParentId*). If scope is set to *Customer*, the audience can be associated with any ad groups across all of the customer's accounts.|[EntityScope](entityscope.md)|
+|<a name="searchsize"></a>SearchSize|The total number of people who belong to this audience. This gives you an idea of how many search users you can target.<br/><br/>This property will be nil or empty if the search audience size is less than 1,000. The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.<br/><br/>This property will be nil or empty for up to 24 hours while the audience is being built, for example if you add or update the remarketing list membership duration, rule, or tag identifier. Likewise if you have imported new custom audiences from DMP, it takes 24 hours to build the audience, and in the meantime this property will be nil or empty.<br/><br/>This property will be nil or empty if the UET tag associated with the remarketing list has a status of Unverified or Inactive, because the remarketing list can't receive the customer information from your website that it needs to build the list.|**long**|
 |<a name="type"></a>Type|The type of the audience. For more information about audience types, see the [Remarks](#remarks).|[AudienceType](audiencetype.md)|
 
 ## <a name="remarks"></a>Remarks

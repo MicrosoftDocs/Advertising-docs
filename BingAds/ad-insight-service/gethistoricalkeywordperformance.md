@@ -91,23 +91,23 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetHistoricalKeywordPerformanceResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordHistoricalPerformances xmlns:e72="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e72:KeywordHistoricalPerformance>
-          <e72:Keyword d4p1:nil="false">ValueHere</e72:Keyword>
-          <e72:KeywordKPIs d4p1:nil="false">
-            <e72:KeywordKPI>
-              <e72:Device d4p1:nil="false">ValueHere</e72:Device>
-              <e72:MatchType>ValueHere</e72:MatchType>
-              <e72:AdPosition>ValueHere</e72:AdPosition>
-              <e72:Clicks>ValueHere</e72:Clicks>
-              <e72:Impressions>ValueHere</e72:Impressions>
-              <e72:AverageCPC>ValueHere</e72:AverageCPC>
-              <e72:CTR>ValueHere</e72:CTR>
-              <e72:TotalCost>ValueHere</e72:TotalCost>
-              <e72:AverageBid>ValueHere</e72:AverageBid>
-            </e72:KeywordKPI>
-          </e72:KeywordKPIs>
-        </e72:KeywordHistoricalPerformance>
+      <KeywordHistoricalPerformances xmlns:e378="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e378:KeywordHistoricalPerformance>
+          <e378:Keyword d4p1:nil="false">ValueHere</e378:Keyword>
+          <e378:KeywordKPIs d4p1:nil="false">
+            <e378:KeywordKPI>
+              <e378:Device d4p1:nil="false">ValueHere</e378:Device>
+              <e378:MatchType>ValueHere</e378:MatchType>
+              <e378:AdPosition>ValueHere</e378:AdPosition>
+              <e378:Clicks>ValueHere</e378:Clicks>
+              <e378:Impressions>ValueHere</e378:Impressions>
+              <e378:AverageCPC>ValueHere</e378:AverageCPC>
+              <e378:CTR>ValueHere</e378:CTR>
+              <e378:TotalCost>ValueHere</e378:TotalCost>
+              <e378:AverageBid>ValueHere</e378:AverageBid>
+            </e378:KeywordKPI>
+          </e378:KeywordKPIs>
+        </e378:KeywordHistoricalPerformance>
       </KeywordHistoricalPerformances>
     </GetHistoricalKeywordPerformanceResponse>
   </s:Body>

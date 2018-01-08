@@ -61,18 +61,18 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SendUserInvitationRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <UserInvitation xmlns:e35="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e35:Id>ValueHere</e35:Id>
-        <e35:FirstName i:nil="false">ValueHere</e35:FirstName>
-        <e35:LastName i:nil="false">ValueHere</e35:LastName>
-        <e35:Email i:nil="false">ValueHere</e35:Email>
-        <e35:CustomerId>ValueHere</e35:CustomerId>
-        <e35:Role>ValueHere</e35:Role>
-        <e35:AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <UserInvitation xmlns:e341="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e341:Id>ValueHere</e341:Id>
+        <e341:FirstName i:nil="false">ValueHere</e341:FirstName>
+        <e341:LastName i:nil="false">ValueHere</e341:LastName>
+        <e341:Email i:nil="false">ValueHere</e341:Email>
+        <e341:CustomerId>ValueHere</e341:CustomerId>
+        <e341:Role>ValueHere</e341:Role>
+        <e341:AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <a1:long>ValueHere</a1:long>
-        </e35:AccountIds>
-        <e35:ExpirationDate>ValueHere</e35:ExpirationDate>
-        <e35:Lcid>ValueHere</e35:Lcid>
+        </e341:AccountIds>
+        <e341:ExpirationDate>ValueHere</e341:ExpirationDate>
+        <e341:Lcid>ValueHere</e341:Lcid>
       </UserInvitation>
     </SendUserInvitationRequest>
   </s:Body>
