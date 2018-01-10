@@ -9,6 +9,20 @@ description: Get information about the changes to the Bing Ads services for each
 # Bing Ads API Release Notes
 For information about the changes to the Bing Ads services for each month, see the following sections.  
 
+## <a name="january2018"></a>January 2018
+For information about this month's changes to Bing Ads services, see the following sections.
+
+-   [Audience Search Size](#audiencesearchsize-january2018)  
+
+### <a name="audiencesearchsize-january2018"></a>Audience Search Size
+You can find out the total number of people who belong to an audience i.e., custom audience, in-market audience, and remarketing list size. This gives you an idea of how many search users you can target.
+
+#### <a name="bulk-v11-audiencesearchsize-january2018"></a>Bulk API Version 11 for Audience Search Size  
+You can fetch the audience search size in the *Audience Search Size* column of the [Custom Audience](~/bulk-service/custom-audience.md), [In Market Audience](~/bulk-service/in-market-audience.md), and [Remarketing List](~/bulk-service/remarketing-list.md) Bulk records.
+
+#### <a name="campaign-v11-audiencesearchsize-january2018"></a>Campaign Management API Version 11 for Audience Search Size  
+You can fetch the audience search size in the *SearchSize* property of the [CustomAudience](~/campaign-management-service/customaudience.md), [InMarketAudience](~/campaign-management-service/inmarketaudience.md), and [RemarketingList](~/campaign-management-service/remarketinglist.md) objects. The *SearchSize* property is inherited from the [Audience](~/campaign-management-service/audience.md) base class.
+
 ## <a name="november2017"></a>November 2017
 For information about this month's changes to Bing Ads services, see the following sections.
 
