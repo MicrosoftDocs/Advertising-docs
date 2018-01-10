@@ -29,6 +29,8 @@ Maps an account level property name to a string value.
 ## <a name="remarks"></a>Remarks
 ### <a name="accountpropertyvalues"></a>Account Property Values
 #### <a name="msclkidautotaggingenabled"></a>MSCLKIDAutoTaggingEnabled
+Determines whether auto-tagging of the MSCLKID query string parameter is enabled. The MSCLKID is a 32-character GUID that is unique for each ad click.
+
 If the *Name* element is set to *MSCLKIDAutoTaggingEnabled*, then the value can be set to either *True* or *False*. If the value is *True*, then the MSCLKID auto tagging feature is enabled. You might want to enable auto-tagging of MSCLKID for tracking leads via offline conversion goals. If auto-tagging of MSCLKID is enabled, the MSCLKID is automatically appended to the landing page URL when a customer clicks on your ad. For example, *www.contoso.com/?msclkid={msclkid}*. The click ID is unique for each ad click and multiple clicks on the same ad from the same user will result in multiple click IDs.
 
 > [!IMPORTANT]
