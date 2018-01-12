@@ -12,7 +12,11 @@ For information about the changes to the Bing Ads services for each month, see t
 ## <a name="january2018"></a>January 2018
 For information about this month's changes to Bing Ads services, see the following sections.
 
+-   [Bing Ads Software Development Kit (SDK) Updates](#sdk-january2018)  
 -   [Audience Search Size](#audiencesearchsize-january2018)  
+
+### <a name="sdk-january2018"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, PHP, and Python SDKs are updated to support [audience search size](https://docs.microsoft.com/en-us/bingads/guides/release-notes#audiencesearchsize-january2018). 
 
 ### <a name="audiencesearchsize-january2018"></a>Audience Search Size
 You can find out the total number of people who belong to an audience i.e., custom audience, in-market audience, and remarketing list size. This gives you an idea of how many search users you can target.
