@@ -11,6 +11,8 @@ dev_langs:
 # Location Ad Extension Record - Bulk
 Defines a location ad extension that can be downloaded and uploaded in a bulk file.
 
+You can associate a location ad extension with the account or with campaigns in the account. Each entity (account or campaign) can be associated with as many location ad extensions as you decide, up to the total number of location ad extensions in your account. Use the [Account Location Ad Extension](account-location-ad-extension.md) and [Campaign Location Ad Extension](campaign-location-ad-extension.md) records to manage location ad extension associations.
+
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Location Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 

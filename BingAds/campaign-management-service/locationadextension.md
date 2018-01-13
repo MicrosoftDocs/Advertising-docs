@@ -9,6 +9,8 @@ description: Defines an ad extension that specifies a business address and phone
 # LocationAdExtension Data Object - Campaign Management
 Defines an ad extension that specifies a business address and phone number to include in a text ad.
 
+You can associate a location ad extension with the account or with campaigns in the account. Each entity (account or campaign) can be associated with as many location ad extensions as you decide, up to the total number of location ad extensions in your account.
+
 ## Syntax
 ```xml
 <xs:complexType name="LocationAdExtension" xmlns:xs="http://www.w3.org/2001/XMLSchema">

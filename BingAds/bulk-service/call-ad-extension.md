@@ -11,6 +11,8 @@ dev_langs:
 # Call Ad Extension Record - Bulk
 Defines a call ad extension that can be uploaded and downloaded in a bulk file.
 
+You can associate a call ad extension with campaigns in the account. Each entity (campaign) can be associated with one call ad extension. Use the [Campaign Call Ad Extension](campaign-call-ad-extension.md) record to manage call ad extension associations.
+
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Call Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 

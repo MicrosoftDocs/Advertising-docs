@@ -11,6 +11,8 @@ dev_langs:
 # App Ad Extension Record - Bulk
 Defines an app ad extension that can be uploaded and downloaded in a bulk file.
 
+You can associate an app ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with as many app ad extensions as you decide, up to the total number of app ad extensions in your account. Use the [Account App Ad Extension](account-app-ad-extension.md), [Ad Group App Ad Extension](ad-group-app-ad-extension.md), and [Campaign App Ad Extension](campaign-app-ad-extension.md) records to manage app ad extension associations.
+
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *App Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 

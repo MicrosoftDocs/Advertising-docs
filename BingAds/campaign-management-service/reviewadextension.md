@@ -7,9 +7,9 @@ ms.author: eur
 description: Defines an object that specifies third-party reviews (exact or paraphrased) about your business, products, or services to include in a text ad.
 ---
 # ReviewAdExtension Data Object - Campaign Management
-Defines an object that specifies third-party reviews (exact or paraphrased) about your business, products, or services to include in a text ad.
+Defines an object that specifies third-party reviews (exact or paraphrased) about your business, products, or services to include in an expanded text ad.
 
-You can associate a review ad extension with one or more campaigns and ad groups. Each campaign or ad group can be associated with between 1 and 20 review ad extensions. A text ad will only include one review per impression.
+You can associate a review ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 review ad extensions. An expanded text ad will only include one review per impression.
 
 ## Syntax
 ```xml
