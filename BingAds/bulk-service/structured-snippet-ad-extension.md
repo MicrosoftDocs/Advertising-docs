@@ -15,6 +15,8 @@ A structured snippet ad extension pairs one header with between 3 and 10 snippet
 
 In the following example, *Courses* is the header, and *.NET*, *Java*, *Python*, and *PHP* are examples of individual values.
 
+You can associate a structured snippet ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 structured snippet ad extensions. An expanded text ad will only include one structured snippet (one headline with 3 - 10 values) per impression. Use the [Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md), [Ad Group Structured Snippet Ad Extension](ad-group-structured-snippet-ad-extension.md), and [Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md) records to manage structured snippet ad extension associations.
+
 **Courses: .NET, Java, Python, PHP**
 
 You can associate a structured snippet ad extension with one or more campaigns and ad groups. Each campaign or ad group can be associated with between 1 and 20 structured snippet ad extensions. A text ad will only include one structured snippet (one headline with 3 - 10 values) per impression.

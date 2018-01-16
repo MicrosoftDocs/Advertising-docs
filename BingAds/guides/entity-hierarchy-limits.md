@@ -26,11 +26,20 @@ The following table defines limits for [AdvertiserAccount](~/customer-management
 |Name|The string can contain between 3 and 100 characters and must be unique among all account names within the customer.|
 
 ## <a name="adextensions"></a>Ad Extensions
-Ad extensions let you decorate text ads with additional information that helps customers find relevant information about your products and services. Ad extensions are stored in a shared library at the account level. After adding the extension to your shared library, you must also explicitly associate it with the account or one or more campaigns or ad groups within the account for the extension to become eligible for delivery. For more information, see [Ad Extensions](ad-extensions.md).
+Ad extensions let you decorate expanded text ads with additional information that helps customers find relevant information about your products and services. Ad extensions are stored in a shared library at the account level. After adding the extension to your shared library, you must also explicitly associate it with the account or one or more campaigns or ad groups within the account for the extension to become eligible for delivery. For more information, see [Ad Extensions](ad-extensions.md).
 
 An account can contain up to 200,000 sitelink2 ad extensions. Outside of that limit, each account can contain up to 150,000 ad extensions of all other types combined.  
 
-The entity to ad extension association limit varies by ad extension type. 
+The entity (account, campaign, or ad group) to ad extension association limit varies by ad extension type. 
+
+> [!NOTE]
+> Call ad extensions can only be associated at the campaign level. 
+> 
+> Location ad extensions can only be associated at the account and campaign level i.e., cannot be associated with ad groups.
+> 
+> You must associate between 2 and 20 callout ad extensions per entity. If you associate one or fewer callout extensions with your account, campaign, or ad group, then no callout text will serve with your ad. An ad may include between 2 to 4 callouts per impression.
+> 
+> For each account, only 1,000 campaigns and 1,000 ad groups can be associated with image ad extensions.  
 
 |Ad Extension Type|Association Limit Per Entity|
 |------------|---------|
@@ -43,15 +52,6 @@ The entity to ad extension association limit varies by ad extension type.
 |[Review Ad Extension](#reviewadextension)|20|
 |[Sitelink2 Ad Extension](#sitelinkadextension)|20|
 |[Structured Snippet Ad Extension](#structuredsnippetadextension)|20|
-
-> [!NOTE]
-> Call ad extensions can only be associated at the campaign level. 
-> 
-> Location ad extensions can only be associated at the account and campaign level i.e., cannot be associated with ad groups.
-> 
-> You must associate between 2 and 20 callout ad extensions per entity. If you associate one or fewer callout extensions with your account, campaign, or ad group, then no callout text will serve with your ad. An ad may include between 2 to 4 callouts per impression.
-> 
-> For each account, only 1,000 campaigns and 1,000 ad groups can be associated with image ad extensions.  
 
 ### <a name="appadextension"></a>App Ad Extension
 You can manage app ad extensions using the Bulk service ([App Ad Extension Record](~/bulk-service/app-ad-extension.md)) or Campaign Management service ([AppAdExtension](~/campaign-management-service/appadextension.md)).
@@ -166,7 +166,7 @@ The following table defines limits for ad group properties.
 Each ad group can contain between one and 100 ads combined, whether the type of ad is app install, dynamic search, expanded text, or product ad.
 
 ### <a name="appinstallad"></a>App Install Ad
-Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create a text ad with app ad extensions.
+Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create an expanded text ad with app ad extensions.
 
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.

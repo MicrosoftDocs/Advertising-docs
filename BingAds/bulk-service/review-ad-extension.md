@@ -11,6 +11,8 @@ dev_langs:
 # Review Ad Extension Record - Bulk
 Defines a review ad extension that can be downloaded and uploaded in a bulk file.
 
+You can associate a review ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 review ad extensions. An expanded text ad will only include one review per impression. Use the [Account Review Ad Extension](account-review-ad-extension.md), [Ad Group Review Ad Extension](ad-group-review-ad-extension.md), and [Campaign Review Ad Extension](campaign-review-ad-extension.md) records to manage review ad extension associations.
+
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Review Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 

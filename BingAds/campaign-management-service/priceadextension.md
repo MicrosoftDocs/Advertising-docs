@@ -12,6 +12,8 @@ Defines an ad extension that includes between 3 and 8 price table rows.
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
+You can associate a price ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 price ad extensions.
+
 ## Syntax
 ```xml
 <xs:complexType name="PriceAdExtension" xmlns:xs="http://www.w3.org/2001/XMLSchema">

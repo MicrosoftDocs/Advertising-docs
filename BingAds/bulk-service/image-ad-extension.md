@@ -11,6 +11,8 @@ dev_langs:
 # Image Ad Extension Record - Bulk
 Defines an image ad extension that can be downloaded and uploaded in a bulk file.
 
+You can associate an image ad extension with the account or with campaigns and ad groups in the account. For each account, only 1,000 campaigns and 1,000 ad groups can be associated with image ad extensions. Each entity (account, campaign, or ad group) can be associated with up to 6 image ad extensions. Use the [Account Image Ad Extension](account-image-ad-extension.md), [Ad Group Image Ad Extension](ad-group-image-ad-extension.md), and [Campaign Image Ad Extension](campaign-image-ad-extension.md) records to manage image ad extension associations.
+
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Image Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 

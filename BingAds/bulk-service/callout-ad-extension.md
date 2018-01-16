@@ -11,6 +11,10 @@ dev_langs:
 # Callout Ad Extension Record - Bulk
 Defines a callout ad extension that can be downloaded and uploaded in a bulk file.
 
+You can associate an app ad extension with the account or with campaigns and ad groups in the account. You must associate between 2 and 20 callout ad extensions per entity (account, campaign, or ad group). If you associate one or fewer callout extensions with your account, campaign, or ad group, then no callout text will serve with your ad. An ad may include between 2 to 4 callouts per impression. Use the [Account Callout Ad Extension](account-callout-ad-extension.md), [Ad Group Callout Ad Extension](ad-group-callout-ad-extension.md), and [Campaign Callout Ad Extension](campaign-callout-ad-extension.md) records to manage callout ad extension associations.
+
+Ad extensions that are associated at the ad group level will override ad extensions of the same type that are associated at the campaign level. For example if you have 2 callout extensions set for *Campaign A*, zero callout extensions associated with *Ad Group AA*, and one callout extension associated with *Ad Group AB*, then only *Ad Group AA* is eligible to have its text ads decorated with callouts.
+
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Callout Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 

@@ -12,6 +12,8 @@ Defines an object with *one* sitelink per ad extension. You can use the sitelink
 > [!NOTE]
 > During calendar year 2017, Bing Ads upgraded all [SiteLinksAdExtension](../campaign-management-service/sitelinksadextension.md) objects (contains multiple sitelinks per ad extension) to [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md) objects (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions.
 
+You can associate a sitelink2 ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 sitelink2 ad extensions.
+
 ## Syntax
 ```xml
 <xs:complexType name="Sitelink2AdExtension" xmlns:xs="http://www.w3.org/2001/XMLSchema">

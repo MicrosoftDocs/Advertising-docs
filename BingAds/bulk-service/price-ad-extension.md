@@ -14,7 +14,7 @@ Defines an ad extension that includes between 3 and 8 price table rows.
 > [!NOTE]
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
 
-You can associate a price ad extension with one or more accounts, campaigns, and ad groups. Each account, campaign, or ad group can be associated with between 1 and 20 price ad extensions. 
+You can associate a price ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 price ad extensions. Use the [Account Price Ad Extension](account-price-ad-extension.md), [Ad Group Price Ad Extension](ad-group-price-ad-extension.md), and [Campaign Price Ad Extension](campaign-price-ad-extension.md) records to manage price ad extension associations.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Price Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 

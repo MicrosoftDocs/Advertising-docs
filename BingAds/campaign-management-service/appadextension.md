@@ -9,7 +9,7 @@ description: Defines an app ad extension that can be included in a text ad.
 # AppAdExtension Data Object - Campaign Management
 Defines an app ad extension that can be included in a text ad.
 
-You can associate an app ad extension with one or more campaigns and ad groups. Each campaign or ad group can be associated with multiple app ad extensions.
+You can associate an app ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with as many app ad extensions as you decide, up to the total number of app ad extensions in your account.
 
 ## Syntax
 ```xml
