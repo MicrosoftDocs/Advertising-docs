@@ -16,6 +16,8 @@ The *Sitelink2 Ad Extension* record adheres to the single sitelink data model, w
 > [!NOTE]
 > During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) records (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions. 
 
+You can associate a sitelink2 ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 sitelink2 ad extensions. Use the [Account Sitelink2 Ad Extension](account-sitelink2-ad-extension.md), [Ad Group Sitelink2 Ad Extension](ad-group-sitelink2-ad-extension.md), and [Campaign Sitelink2 Ad Extension](campaign-sitelink2-ad-extension.md) records to manage sitelink2 ad extension associations.
+
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Sitelink2 Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 

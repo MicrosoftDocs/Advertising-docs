@@ -9,7 +9,7 @@ description: Defines an object that specifies a click-to-call phone number to in
 # CallAdExtension Data Object - Campaign Management
 Defines an object that specifies a click-to-call phone number to include in a text ad.
 
-You can associate a call ad extension with one or more campaigns; however, a campaign can be associated with only one call ad extension.
+You can associate a call ad extension with campaigns in the account. Each entity (campaign) can be associated with one call ad extension.
 
 ## Syntax
 ```xml

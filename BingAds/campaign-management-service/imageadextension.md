@@ -4,10 +4,12 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines an ad extension that specifies an image with alternative text to include in a text ad.
+description: Defines an ad extension that specifies an image with alternative text to include in an expanded text ad.
 ---
 # ImageAdExtension Data Object - Campaign Management
-Defines an ad extension that specifies an image with alternative text to include in a text ad.
+Defines an ad extension that specifies an image with alternative text to include in an expanded text ad.
+
+You can associate an image ad extension with the account or with campaigns and ad groups in the account. For each account, only 1,000 campaigns and 1,000 ad groups can be associated with image ad extensions. Each entity (account, campaign, or ad group) can be associated with up to 6 image ad extensions.
 
 ## Syntax
 ```xml

@@ -9,7 +9,7 @@ description: Defines an object that specifies additional text about your busines
 # CalloutAdExtension Data Object - Campaign Management
 Defines an object that specifies additional text about your business, products, or services to include in a text ad.
 
-You can associate a callout ad extension with one or more campaigns and ad groups. Each campaign or ad group can be associated with between 2 and 20 callout ad extensions. If you associate one or fewer callout extensions with your campaign or ad group, no callout text will serve with your ad. A text ad may include between 2 to 4 callouts per impression. 
+You can associate an app ad extension with the account or with campaigns and ad groups in the account. You must associate between 2 and 20 callout ad extensions per entity (account, campaign, or ad group). If you associate one or fewer callout extensions with your account, campaign, or ad group, then no callout text will serve with your ad. An ad may include between 2 to 4 callouts per impression.
 
 Ad extensions that are associated at the ad group level will override ad extensions of the same type that are associated at the campaign level. For example if you have 2 callout extensions set for *Campaign A*, zero callout extensions associated with *Ad Group AA*, and one callout extension associated with *Ad Group AB*, then only *Ad Group AA* is eligible to have its text ads decorated with callouts.
 
