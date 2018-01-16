@@ -34,6 +34,7 @@ using System.Net.Http;
 using System.Web;
 using System.Timers;
 using System.Windows.Forms;  // Add reference; required for CodeGrantFlow
+using System.IO.Compression; // Add reference; required for ZIP compression
 using Content.OAuth;
 using Newtonsoft.Json;       // NuGet Json.NET
 using Newtonsoft.Json.Linq;
@@ -61,12 +62,15 @@ namespace Reporting
         private static string jobId = null;
         private static string downloadUrl = null;
 
-        // This example downloads a report in CSV format so the file's extension is .csv.
+        // The extension you use depends of the requested format and whether you requested compression.
+        // This example downloads a report in uncompressed CSV format so the file's extension is .csv.
+        // If you request compression, use .zip.
 
         public static string downloadPath = string.Format(@"c:\reports\{0}.csv",
             "Performance_" + DateTime.Now.ToString("yyyyMMddThhmm"));
 
 
+        // You can optionally pass the ID of a previous report job.
 
         static void Main(string[] args)
         {
@@ -90,6 +94,8 @@ namespace Reporting
                     if (null != downloadUrl)
                     {
                         DownloadReport(downloadUrl, downloadPath);
+                        var reportPath = DecompressReport(downloadPath);  // Include if you use compression
+                        Console.WriteLine("Report downloaded to: " + reportPath);  // Include if you use compression
                     }
                 }
             }
@@ -367,7 +373,7 @@ namespace Reporting
         {
             var request = (HttpWebRequest)WebRequest.Create(uri);
             request.Method = "GET";
-            //request.Accept = "application/x-zip-compressed";
+            //request.Accept = "application/zip";  // Include if you request compression
             var response = (HttpWebResponse)request.GetResponse();
 
             var fileInfo = new FileInfo(path);
@@ -398,6 +404,16 @@ namespace Reporting
             fileStream.Close();
         }
 
+        // Decompresses the report. Include if you use compression.
+
+        private static string DecompressReport(String path)  
+        {
+            var fileInfo = new FileInfo(downloadPath);
+            var decompressedFileName = fileInfo.Name.Remove(fileInfo.Name.Length - fileInfo.Extension.Length);
+            var decompressedPath = fileInfo.Directory.FullName + "\\" + decompressedFileName;
+            ZipFile.ExtractToDirectory(downloadPath, decompressedPath);
+            return decompressedPath;
+        }
 
     }
 
