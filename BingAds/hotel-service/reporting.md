@@ -48,7 +48,7 @@ The following example shows a `ReportJob` request for a performance report.
 }
 ```
 
-The above request asks to generate a performance report. By default, the service generates reports in CSV format.
+The above request asks to generate a performance report. By default, the service generates reports in uncompressed CSV format. To compress the report and improve download performance, specify the [Compression](reference.md#compression) field and set it to ZIP.
 
 The response to the POST contains a report job ID (see [AddResponse](reference.md#addresponse)). For example:
 
@@ -71,10 +71,15 @@ The body of the response is a [ReportJob](reference.md#reportjob) object. To det
 
 How long it takes for report jobs to finish is undetermined and is based on several variables that are constantly changing such number of jobs in the queue, amount of data, and size of reporting period. Generally, you should poll for the status of the job every five seconds until the job's status is Completed or Failed. 
 
-If you asked the service to compress the report data (see the report job's `Compression` field), remember to uncompress the report before reading it.
 
-> [!NOTE]
-> Compression is not available at this time. The [Release Notes](../hotel-ads/release-notes.md) topic will include a note when it's available.
+
+## Downloading the report
+
+When the report job's status is Completed, the job will contain the URL that you use to download the report in the job's `Url` field. To download the report, send an HTTP GET request to the specified URL.
+
+For uncompressed reports, the GET response's Content-Type header contains text/csv. For compressed reports, the header contains application/zip.
+
+If you asked the service to compress the report data (see the report job's `Compression` field), the service places the file in a folder and uses ZIP compression to compress the report. Remember to uncompress the folder before accessing and reading the report. The name of the report file is auto-generated and has the form, dimensionrow-\<GUID\>.
 
 
 ## Filtering report data
