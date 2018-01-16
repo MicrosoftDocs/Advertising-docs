@@ -13,6 +13,14 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
+
+## January 15, 2017
+
+### Nonbreaking changes
+
+- Added support for compressing the report data. Use this feature to improve download performance. For information about requesting compression, see the report job's [Compression](../hotel-service/reference.md#compression) field.
+
+
 ## January 8, 2017
 
 ### Nonbreaking changes
