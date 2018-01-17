@@ -13,6 +13,13 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
+## January 17, 2017
+
+### Breaking changes coming
+
+- If you download performance reports, be aware that the file name will soon change from dimensionrow-\<request ID\> to performance-\<request ID\>. 
+
+
 
 ## January 15, 2017
 
