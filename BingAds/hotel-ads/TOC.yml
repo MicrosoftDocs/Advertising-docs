@@ -93,7 +93,9 @@
 - name: Hotel Feed
   href: ../hotel-feed/hotel-feed.md
   items:
-  - name: Create a Hotel Feed
+  - name: Create a CSV Hotel Feed
+    href: ../hotel-feed/create-csv-hotel-feed.md
+  - name: Create an XML Hotel Feed
     href: ../hotel-feed/create-hotel-feed.md
   - name: Validate your Hotel Feed
     href: ../hotel-feed/validate-hotel-feed.md

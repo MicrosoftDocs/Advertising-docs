@@ -13,6 +13,14 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
+
+## January 18, 2017
+
+### Nonbreaking changes
+
+- Added support for sending [Hotel feeds](../hotel-feed/hotel-feed.md) in TSV and CSV file format. For details, see [Creating a CSV Hotel Feed](../hotel-feed/create-csv-hotel-feed.md).
+
+
 ## January 17, 2017
 
 ### Breaking changes coming
