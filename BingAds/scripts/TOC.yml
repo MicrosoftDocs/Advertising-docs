@@ -1,15 +1,15 @@
 - name: Overview
-  href: /bingads/bingads-scripts/
+  href: /bingads/scripts/
 - name: Concepts
   items:
     - name: Selectors
-      href: /bingads/bingads-scripts/concepts/selectors
+      href: /bingads/scripts/concepts/selectors
     - name: Iterators
-      href: /bingads/bingads-scripts/concepts/iterators
+      href: /bingads/scripts/concepts/iterators
     - name: Builders
-      href: /bingads/bingads-scripts/concepts/builders    
+      href: /bingads/scripts/concepts/builders    
 - name: Reference
-  href: /bingads/bingads-scripts/reference/BingAdsApp
+  href: /bingads/scripts/reference/BingAdsApp
   items:
   - name: Account
     href: ./reference/Account

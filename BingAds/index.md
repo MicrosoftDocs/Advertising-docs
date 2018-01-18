@@ -471,8 +471,8 @@ description: Bing Ads API documentation home.
                 <li>
                     <a href="#bingadsscripts">Bing Ads Scripts</a>
                     <ul id="bingadsscripts" class="cardsC">
-                                                <li>
-                            <a href="/bingads/bingads-scripts/">
+                        <li>
+                            <a href="/bingads/scripts/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -491,7 +491,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/bingads-scripts/concepts/selectors">
+                            <a href="/bingads/scripts/concepts/selectors">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -510,7 +510,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/bingads-scripts/reference/BingAdsApp">
+                            <a href="/bingads/scripts/reference/BingAdsApp">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
