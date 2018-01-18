@@ -21,7 +21,7 @@ To provide Bing your hotel listings, create an XML document or CSV file that con
 
 |Topic|Description
 |-|-
-|[Creating a CSV Hotel Feed](../hotel-feed/create-hotel-feed.md)|Provides information about building a CSV hotel feed file.
+|[Creating a CSV Hotel Feed](../hotel-feed/create-csv-hotel-feed.md)|Provides information about building a CSV hotel feed file.
 |[Creating an XML Hotel Feed](../hotel-feed/create-hotel-feed.md)|Provides information about building an XML hotel feed file.
 |[Validating your Hotel Feed](../hotel-feed/validate-hotel-feed.md)|Provides information about using the Hotel XSD to validate your XML feed file.
 |[Hotel Feed Reference](../hotel-feed/reference.md)|Provides descriptions of the elements and attributes in the Hotel XSD.

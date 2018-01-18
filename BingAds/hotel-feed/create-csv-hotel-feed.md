@@ -34,12 +34,12 @@ If your property has missing or incorrect information, Bing may not be able to m
 
 ## Defining a hotel listing
 
-The first line of the feed file must contain the column names (headers) of the hotel data that the feed contains. The feed must include the column names of all required data elements. Only include the names of optional columns if you provide data for them.
+The first line of the feed file is the header row, which contains the column names of the hotel data in the feed. The header must include the column names of all required data elements. Only include the names of optional columns if you provide data for them.
 
 The following is the list of columns that you may include in the feed. The feed file may contain the columns in any order and the column names are case insensitive.
 
 |Column name|Description|Data type|Required
-|-|-|-
+|-|-|-|-
 |id|An opaque, user-defined ID that uniquely identifies the hotel within the feed.<br /><br />When you create your transaction message, use this ID in the `Property` element of your transaction message to identify the hotel.|String|Yes
 |name|The hotel's name. The name may contain a maximum of 200 characters.|String|Yes
 |address|The street address of the hotel using free-form text. Separate each component of the address with a comma and enclose the address in quotes. For example, "1234 Billings Way, Redmond, WA, 98030". Use this column only if you provide the address using free-form text; otherwise, use the address component columns (for example, addr1, city, province). You are encouraged to use the address component columns instead of using free-form text.|String|Yes
@@ -55,7 +55,7 @@ The following is the list of columns that you may include in the feed. The feed 
 |phone|The main voice telephone number that users use to contact the hotel. The number should be the front desk's phone number and not a central reservations phone number.<br /><br />Notes:<ul><li>Use dashes, spaces, or parentheses in the phone number to make it easier to read. For example, use “610-222-3333” or “(610) 222-3333” rather than “6102223333”.</li><li>Specify only one telephone number; do not specify multiple numbers, such as 650-123-2222/33.</li><li>The telephone number may contain an extension of up to 7 digits. Precede extensions with one of the following abbreviations: "ext", "extn", and "x". For example, "408-555-1111x12345" or "408-555-1111 x12345".</li><li>The telephone number may not include alphabetical characters.</li><li>If the telephone number includes the country code, precede it with a "+". For example, “+65 6722-2323” for a number in Singapore where the country code is 65, or “+001 (408) 555-1111” for a number in the United States where the country code is 001.</li></ul>|String|Yes
 
 > [!NOTE]
-> The `address` column and the `addr`, `addr2`, `addr3`, `city`, `province`, and `postal_code` columns are mutually exclusive. Specify either the `address` column or the address component columns. Specifying the address components is preferred.
+> The `address` column and the `addr`, `addr2`, `addr3`, `city`, `province`, and `postal_code` columns are mutually exclusive. Specify either the `address` column or the address component columns. Specifying the address component columns is preferred.
 >  
 > Although you may specify either geographical coordinates or a telephone number, you should specify both to ensure a better chance of matching properties in Bing Maps.
 
