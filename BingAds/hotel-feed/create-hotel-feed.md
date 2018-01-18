@@ -1,6 +1,6 @@
 ---
 title: "Creating a Hotel Feed"
-description: Shows how to create a hotel feed file that lists the hotel properties you want to advertise.
+description: Shows how to create an XML hotel feed file that lists the hotel properties you want to advertise.
 ms.service: "hotel-ads-hotel-feed"
 ms.topic: "article"
 author: "swhite-msft"
@@ -8,14 +8,18 @@ manager: ehansen
 ms.author: "scottwhi"
 ---
 
-# Create a Hotel Feed file
+# Create an XML Hotel Feed file
 
 > [!NOTE]
 > This beta release of Hotel Ads is available to select participants only. For information about participating in the beta release program, please contact your account manager.
+>
+> The Hotel feed and documentation are subject to change. 
 
 To provide Bing your hotel listings, create an XML document that contains a listing of each hotel you want to advertise. A listing describes the hotel's name, address, telephone number, and geographical coordinates.
 
 The document must use UTF-8 encoding and must conform to the [Hotel XSD](https://bhacstatic.blob.core.windows.net/schemas/hotel.xsd). 
+
+For information about creating a feed file using CSV or TSV file format, see [Creating a CSV Hotel Feed file](create-csv-hotel-feed.md).
 
 > [!NOTE]
 > Bing does not support all XSD elements. Bing ignores any element or attribute in the document that it does not support. The [Hotel Feed Reference](../hotel-feed/reference.md) includes only those elements and attributes that Bing supports. 
