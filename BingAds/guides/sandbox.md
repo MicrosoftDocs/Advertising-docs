@@ -19,7 +19,7 @@ The sandbox and production environments use separate credentials. To get access 
 
 When you sign up for an account, append _sbx to the username that you choose, for example contosoapi_sbx. In addition, do not specify a payment instrument.
 
-All Bing Ads customers may use the following multi-user developer token in sandbox: **BBD37VB98**
+All Bing Ads customers may use the following universal developer token in sandbox: **BBD37VB98**
 
 > [!NOTE]
 > Authentication with a Microsoft Account is not supported in sandbox. You can test your sandbox application with the *UserName* and *Password* legacy header elements, and then with the *AuthenticationToken* element verify authentication of a Microsoft account via OAuth in production. For more information, see [Authentication with OAuth](../guides/authentication-oauth.md).
