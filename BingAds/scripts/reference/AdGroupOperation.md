@@ -4,5 +4,5 @@ Represents the definition of an ad group constructed via [AdGroupBuilder](./AdGr
 |Method|Return Type|Description|
 |-|-|-
 getErrors|String[]|Returns an empty array if the ad group was successfully created, otherwise returns the errors encountered during the execution of this operation.<br />
-getResult|[AdGroup](./AdGroup)|Returns the newly created <br />
+getResult|[AdGroup](./AdGroup)|Returns the newly created `AdGroup`, otherwise returns `null` if this operation failed to execute.<br />
 isSuccessful|boolean|Returns <br />
