@@ -279,6 +279,17 @@ The operation does not support the specified entity type.
 ***
 
 **Numeric Code**
+303
+
+**Symbolic Error Code**
+ApiVersionNoLongerSupported
+
+**Description**
+This version of the Bing Ads API is no longer supported. Please migrate to the latest version of the API. For more details, visit [https://go.microsoft.com/fwlink/?linkid=862106](https://go.microsoft.com/fwlink/?linkid=862106).
+
+***
+
+**Numeric Code**
 310
 
 **Symbolic Error Code**
