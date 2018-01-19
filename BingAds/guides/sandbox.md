@@ -15,7 +15,7 @@ Supported services in sandbox vary from production. To get the web service addre
 > Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. Notifications are posted in the [Bing Ads Developer Blog](https://blogs.msdn.microsoft.com/bing_ads_api/).
 
 ## <a name="access"></a>Getting Access
-The sandbox and production environments use separate credentials. To get access to sandbox, go to the sandbox's [Bing Ads](https://secure.sandbox.bingads.microsoft.com/Auth?EnvContext=Sandbox) web application and click **Sign up** to get a sandbox account. You will use the same username and password to call the API.
+The sandbox and production environments use separate credentials. To get access to sandbox, go to the sandbox's [Bing Ads](https://secure.sandbox.bingads.microsoft.com/) web application and click **Sign up** to get a sandbox account. You will use the same username and password to call the API.
 
 When you sign up for an account, append _sbx to the username that you choose, for example contosoapi_sbx. In addition, do not specify a payment instrument.
 
