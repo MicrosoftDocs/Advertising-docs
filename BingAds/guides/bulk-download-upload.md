@@ -126,7 +126,7 @@ Please consider these tips to maximize Bulk upload performance.
 
 -   Large files can degrade the upload performance. It is optional and recommended that the file be compressed for upload. If compressed it must be formatted as ZIP with the corresponding extension. The file size limit for upload in production is 100MB and up to 4 million rows. For [Sandbox](../guides/sandbox.md) the limit is 20K rows. That said if you can limit concurrent threads below 5 or 6, then consider splitting the file rather than approaching the file size limit.
 
--   Consider using up to 5 or 6 threads to upload files in parallel. Wait on each thread until the previous file was processed, and then you can reuse the thread to upload another file. For example, one thread can upload a file and after the upload status is either *Completed*, *CompletedwithErrors*, or *Failed* that thread can upload another file. 
+-   Consider using up to 5 or 6 threads to upload files in parallel. Wait on each thread until the previous file was processed, and then you can reuse the thread to upload another file. For example, one thread can upload a file and after the upload status is either *Completed*, *CompletedWithErrors*, or *Failed* that thread can upload another file. 
 
 -   Upload only the entities and fields that you are adding or updating. If supplied, read-only fields such as performance data will be ignored. 
 
@@ -136,7 +136,7 @@ Please consider these tips to maximize Bulk upload performance.
 
 -   For partial retry attempts, do not upload the entire file if only a subset of the records resulted in errors. Only upload the records that you want to retry. 
 
--   Do not retry until the upload status is either *Completed*, *CompletedwithErrors*, or *Failed*. If by chance performance does not meet expectations, please wait for the result anyways. 
+-   Do not retry until the upload status is either *Completed*, *CompletedWithErrors*, or *Failed*. If by chance performance does not meet expectations, please wait for the result anyways. 
 
 -   Poll for upload results at reasonable intervals. Initially you should wait one minute for every 10K rows uploaded. After the initial wait time, consider polling in one minute intervals.
 
