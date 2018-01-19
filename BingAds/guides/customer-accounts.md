@@ -107,10 +107,6 @@ Now with multi-user credentials it is possible via the Bing Ads web application 
 
 > [!IMPORTANT]
 > Bing Ads API Version 11 does not support multi-user credentials across multiple customers. If you authenticate with multi-user credentials, then you will only have the permissions originally granted to that user. Starting with Bing Ads API Version 12 the multi-user credentials can access accounts across multiple customers. More details will be available during Q2 of Calendar Year 2018. 
-Previously one set of Bing Ads credentials could only be associated with a single user role. You could manage accounts across multiple customers as an agency, but the user role per account was not configurable. To enable finer control over access rights, you would have had to create multiple usernames with unique user roles per customer or account. Now with multi-user credentials it is possible via the Bing Ads web application to sign in with one set of credentials and manage multiple customer accounts with varying user roles.
-
-> [!IMPORTANT]
-> Bing Ads API Version 11 does not support multi-user credentials. If you authenticate with multi-user credentials, then you will only have the permissions originally granted to that user. The ability to authenticate with multi-user user credentials will be available starting with Bing Ads API Version 12. More details will be available during Q2 of Calendar Year 2018. 
 
 Let's consider the following user roles and permissions before multi-user consolidation. Each user must login separately and has different permissions during each logged in session. Likewise via the API each user's access token (see [Authentication with OAuth](authentication-oauth.md)) represents permissions limited to the corresponding user and role. 
 
