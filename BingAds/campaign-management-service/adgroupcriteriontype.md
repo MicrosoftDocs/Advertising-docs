@@ -113,6 +113,27 @@ Defines the possible types of ad group criterions.
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
+        <xs:enumeration value="CompanyName">
+          <xs:annotation>
+            <xs:appinfo>
+              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">32768</EnumerationValue>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="JobFunction">
+          <xs:annotation>
+            <xs:appinfo>
+              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">65536</EnumerationValue>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:enumeration>
+        <xs:enumeration value="Industry">
+          <xs:annotation>
+            <xs:appinfo>
+              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">131072</EnumerationValue>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:enumeration>
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -125,11 +146,14 @@ Defines the possible types of ad group criterions.
 |-----------|---------------|
 |<a name="age"></a>Age|The ad group criterion is an age criterion.<br/><br/>The *Criterion* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) can be an instance of [AgeCriterion](../campaign-management-service/agecriterion.md), but age criterion are not supported with [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md).<br/><br/>The *CriterionBid* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) must be an instance of [BidMultiplier](../campaign-management-service/bidmultiplier.md) when paired with this criterion type.|
 |<a name="audience"></a>Audience|The ad group criterion is an audience criterion.<br/><br/>The *Criterion* element of either an [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md) can be an instance of [AudienceCriterion](../campaign-management-service/audiencecriterion.md). In other words you can include some audiences, and exclude other audiences.<br/><br/>The *CriterionBid* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) must be an instance of [BidMultiplier](../campaign-management-service/bidmultiplier.md) when paired with this criterion type.<br/><br/>To add, delete, or update audience criterions i.e., custom audiences, in-market audiences, and remarketing lists, you must specify the *Audience* value. To retrieve these audience criterions via [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) you must request the specific type i.e., *Custom*, *InMarket*, and *RemarketingList*.|
+|<a name="companyname"></a>CompanyName|Reserved.|
 |<a name="customaudience"></a>CustomAudience|The ad group criterion is a custom audience association.<br/><br/>This criterion type value is only used by the [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) operation to request the custom audience associations represented by the [AudienceCriterion](../campaign-management-service/audiencecriterion.md) objects. To manage the custom audience, see [CustomAudience](../campaign-management-service/customaudience.md). |
 |<a name="daytime"></a>DayTime|The ad group criterion is a day and time criterion.<br/><br/>The *Criterion* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) can be an instance of [DayTimeCriterion](../campaign-management-service/daytimecriterion.md), but day and time criterion are not supported with [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md).<br/><br/>The *CriterionBid* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) must be an instance of [BidMultiplier](../campaign-management-service/bidmultiplier.md) when paired with this criterion type.|
 |<a name="device"></a>Device|The ad group criterion is a device criterion.<br/><br/>The *Criterion* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) can be an instance of [DeviceCriterion](../campaign-management-service/devicecriterion.md), but device criterion are not supported with [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md).<br/><br/>The *CriterionBid* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) must be an instance of [BidMultiplier](../campaign-management-service/bidmultiplier.md) when paired with this criterion type.|
 |<a name="gender"></a>Gender|The ad group criterion is a gender criterion.<br/><br/>The *Criterion* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) can be an instance of [GenderCriterion](../campaign-management-service/gendercriterion.md), but gender criterion are not supported with [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md).<br/><br/>The *CriterionBid* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) must be an instance of [BidMultiplier](../campaign-management-service/bidmultiplier.md) when paired with this criterion type.|
+|<a name="industry"></a>Industry|Reserved.|
 |<a name="inmarketaudience"></a>InMarketAudience|The ad group criterion is an in-market audience association.<br/><br/>This criterion type value is only used by the [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) operation to request the in-market audience associations represented by the [AudienceCriterion](../campaign-management-service/audiencecriterion.md) objects. To manage the in-market audience, see [InMarketAudience](../campaign-management-service/inmarketaudience.md). |
+|<a name="jobfunction"></a>JobFunction|Reserved.|
 |<a name="location"></a>Location|The ad group criterion is a location criterion.<br/><br/>The *Criterion* element of either an [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md) can be an instance of [LocationCriterion](../campaign-management-service/locationcriterion.md). In other words you can include some locations, and exclude other locations.<br/><br/>The *CriterionBid* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) must be an instance of [BidMultiplier](../campaign-management-service/bidmultiplier.md) when paired with this criterion type.|
 |<a name="locationintent"></a>LocationIntent|The ad group criterion is a location intent criterion.<br/><br/>The *Criterion* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) can be an instance of [LocationIntentCriterion](../campaign-management-service/locationintentcriterion.md), but location intent criterion are not supported with [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md).<br/><br/>The *CriterionBid* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) must be nil or empty when paired with this criterion type.|
 |<a name="productpartition"></a>ProductPartition|The ad group criterion is a product partition criterion.<br/><br/>The *Criterion* element of either an [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md) can be an instance of [ProductPartition](../campaign-management-service/productpartition.md). In other words you can include some product partitions, and exclude other product partitions.<br/><br/>This criterion type is only used with Bing Shopping campaigns.<br/><br/>The *CriterionBid* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) must be an instance of [FixedBid](../campaign-management-service/fixedbid.md) when paired with this criterion type.|

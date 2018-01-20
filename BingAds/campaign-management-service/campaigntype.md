@@ -18,6 +18,7 @@ Defines the possible campaign types.
         <xs:enumeration value="SearchAndContent" />
         <xs:enumeration value="Shopping" />
         <xs:enumeration value="DynamicSearchAds" />
+        <xs:enumeration value="Audience" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -28,6 +29,7 @@ Defines the possible campaign types.
 
 |Value|Description|
 |-----------|---------------|
+|<a name="audience"></a>Audience|Reserved.|
 |<a name="dynamicsearchads"></a>DynamicSearchAds|The campaign is a Dynamic Search Ads campaign.|
 |<a name="searchandcontent"></a>SearchAndContent|The campaign is a Search and Content campaign.|
 |<a name="shopping"></a>Shopping|The campaign is a Bing Shopping campaign.|

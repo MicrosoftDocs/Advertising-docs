@@ -16,6 +16,7 @@ Defines the possible values representing entities that are enabled for media suc
     <xs:simpleType>
       <xs:restriction base="xs:string">
         <xs:enumeration value="ImageAdExtension" />
+        <xs:enumeration value="ResponsiveAd" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -27,6 +28,7 @@ Defines the possible values representing entities that are enabled for media suc
 |Value|Description|
 |-----------|---------------|
 |<a name="imageadextension"></a>ImageAdExtension|The media enabled entity is an [ImageAdExtension](../campaign-management-service/imageadextension.md).<br /><br />When you call [GetMediaMetaDataByAccountId](../campaign-management-service/getmediametadatabyaccountid.md) or [GetMediaMetaDataByIds](../campaign-management-service/getmediametadatabyids.md), the service will return exactly three [ImageMediaRepresentation](../campaign-management-service/imagemediarepresentation.md) objects with varying height and width properties.|
+|<a name="responsivead"></a>ResponsiveAd|Reserved.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
