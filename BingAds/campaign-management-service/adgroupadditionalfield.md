@@ -16,6 +16,8 @@ Defines a list of optional [AdGroup](../campaign-management-service/adgroup.md) 
     <xs:simpleType>
       <xs:restriction base="xs:string">
         <xs:enumeration value="InheritedBidStrategyType" />
+        <xs:enumeration value="PrivacyStatus" />
+        <xs:enumeration value="TargetSetting" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -27,6 +29,8 @@ Defines a list of optional [AdGroup](../campaign-management-service/adgroup.md) 
 |Value|Description|
 |-----------|---------------|
 |<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|Request that the *InheritedBidStrategyType* element be included within each returned [InheritFromParentBiddingScheme](../campaign-management-service/inheritfromparentbiddingscheme.md) object (nested within the *BiddingScheme* element of an [AdGroup](../campaign-management-service/adgroup.md)).|
+|<a name="privacystatus"></a>PrivacyStatus|Reserved.|
+|<a name="targetsetting"></a>TargetSetting|Reserved.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

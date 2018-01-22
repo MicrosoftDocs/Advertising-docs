@@ -81,7 +81,7 @@ The Campaign Management service defines the following data objects.
 |[GeoPoint](geopoint.md)|Defines an object that contains the longitude and latitude coordinates of a geographical location.|
 |[IdCollection](idcollection.md)|Defines an object that contains a list of entity identifiers.|
 |[Image](image.md)|Defines an image object that can be added to an account's media library.|
-|[ImageAdExtension](imageadextension.md)|Defines an ad extension that specifies an image with alternative text to include in a text ad.|
+|[ImageAdExtension](imageadextension.md)|Defines an ad extension that specifies an image with alternative text to include in an expanded text ad.|
 |[ImageMediaRepresentation](imagemediarepresentation.md)|Defines an image media representation with height and width.|
 |[InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md)|Defines an object that represents the inherit from parent bid strategy type.|
 |[InMarketAudience](inmarketaudience.md)|Defines an in-market audience.|
@@ -119,10 +119,12 @@ The Campaign Management service defines the following data objects.
 |[ProductCondition](productcondition.md)|Defines a condition that determines whether a product is selected from a customer's Bing Merchant Center catalog file.|
 |[ProductPartition](productpartition.md)|Defines an ad group level product partition with one condition that helps determine whether a product from the Bing Merchant Center store gets served as a product ad.|
 |[ProductScope](productscope.md)|Defines a campaign level product scope with list of conditions that help determine whether a product from the Bing Merchant Center store gets served as a product ad.|
+|[ProfileCriterion](profilecriterion.md)|Reserved.|
 |[RadiusCriterion](radiuscriterion.md)|Defines a criterion that can be used to show ads to users within the radius of a specific geographical location.|
 |[RemarketingList](remarketinglist.md)|Defines a remarketing list.|
 |[RemarketingRule](remarketingrule.md)|Defines the base object of a remarketing rule.|
-|[ReviewAdExtension](reviewadextension.md)|Defines an object that specifies third-party reviews (exact or paraphrased) about your business, products, or services to include in a text ad.|
+|[ResponsiveAd](responsivead.md)|Reserved.|
+|[ReviewAdExtension](reviewadextension.md)|Defines an object that specifies third-party reviews (exact or paraphrased) about your business, products, or services to include in an expanded text ad.|
 |[RuleItem](ruleitem.md)|Defines the base class of a remarketing list rule item.|
 |[RuleItemGroup](ruleitemgroup.md)|Defines an object that contains a list of remarketing list rule items that apply to the same visited page.|
 |[Schedule](schedule.md)|Defines the start and end date ranges for ad extension scheduling.|
@@ -138,6 +140,8 @@ The Campaign Management service defines the following data objects.
 |[StringRuleItem](stringruleitem.md)|Defines a rule expression that depends on the string values of the Url or Referrer Url.|
 |[StructuredSnippetAdExtension](structuredsnippetadextension.md)|Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.|
 |[TargetCpaBiddingScheme](targetcpabiddingscheme.md)|Defines an object that represents the target CPA bid strategy type.|
+|[TargetSetting](targetsetting.md)|Reserved.|
+|[TargetSettingDetail](targetsettingdetail.md)|Reserved.|
 |[TextAd](textad.md)|Defines a text ad.|
 |[UetTag](uettag.md)|Defines a Universal Event Tracking (UET) tag that you can add to your website to allow Bing Ads to collect actions people take on your website.|
 |[UrlGoal](urlgoal.md)|Defines a URL conversion goal.|
