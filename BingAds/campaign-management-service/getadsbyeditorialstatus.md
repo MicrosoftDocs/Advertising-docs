@@ -82,11 +82,11 @@ The following template shows the order of the [body](#response-body) and [header
           <AdFormatPreference d4p1:nil="false">ValueHere</AdFormatPreference>
           <DevicePreference d4p1:nil="false">ValueHere</DevicePreference>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e517="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e517:AppUrl>
-              <e517:OsType d4p1:nil="false">ValueHere</e517:OsType>
-              <e517:Url d4p1:nil="false">ValueHere</e517:Url>
-            </e517:AppUrl>
+          <FinalAppUrls xmlns:e211="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e211:AppUrl>
+              <e211:OsType d4p1:nil="false">ValueHere</e211:OsType>
+              <e211:Url d4p1:nil="false">ValueHere</e211:Url>
+            </e211:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -94,23 +94,23 @@ The following template shows the order of the [body](#response-body) and [header
           <FinalUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e518="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e518:KeyValuePairOfstringstring>
-              <e518:key d4p1:nil="false">ValueHere</e518:key>
-              <e518:value d4p1:nil="false">ValueHere</e518:value>
-            </e518:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e212="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e212:KeyValuePairOfstringstring>
+              <e212:key d4p1:nil="false">ValueHere</e212:key>
+              <e212:value d4p1:nil="false">ValueHere</e212:value>
+            </e212:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
           <Type d4p1:nil="false">ValueHere</Type>
-          <UrlCustomParameters xmlns:e519="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e519:Parameters d4p1:nil="false">
-              <e519:CustomParameter>
-                <e519:Key d4p1:nil="false">ValueHere</e519:Key>
-                <e519:Value d4p1:nil="false">ValueHere</e519:Value>
-              </e519:CustomParameter>
-            </e519:Parameters>
+          <UrlCustomParameters xmlns:e213="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e213:Parameters d4p1:nil="false">
+              <e213:CustomParameter>
+                <e213:Key d4p1:nil="false">ValueHere</e213:Key>
+                <e213:Value d4p1:nil="false">ValueHere</e213:Value>
+              </e213:CustomParameter>
+            </e213:Parameters>
           </UrlCustomParameters>
           <!--These fields are applicable if the derived type attribute is set to TextAd-->
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
@@ -134,6 +134,16 @@ The following template shows the order of the [body](#response-body) and [header
           <!--These fields are applicable if the derived type attribute is set to DynamicSearchAd-->
           <Path1 d4p1:nil="false">ValueHere</Path1>
           <Path2 d4p1:nil="false">ValueHere</Path2>
+          <Text d4p1:nil="false">ValueHere</Text>
+          <!--These fields are applicable if the derived type attribute is set to ResponsiveAd-->
+          <BusinessName d4p1:nil="false">ValueHere</BusinessName>
+          <CallToAction d4p1:nil="false">ValueHere</CallToAction>
+          <Headline d4p1:nil="false">ValueHere</Headline>
+          <LandscapeImageMediaId d4p1:nil="false">ValueHere</LandscapeImageMediaId>
+          <LandscapeLogoMediaId d4p1:nil="false">ValueHere</LandscapeLogoMediaId>
+          <LongHeadline d4p1:nil="false">ValueHere</LongHeadline>
+          <SquareImageMediaId d4p1:nil="false">ValueHere</SquareImageMediaId>
+          <SquareLogoMediaId d4p1:nil="false">ValueHere</SquareLogoMediaId>
           <Text d4p1:nil="false">ValueHere</Text>
         </Ad>
       </Ads>

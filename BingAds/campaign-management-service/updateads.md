@@ -67,11 +67,11 @@ The following template shows the order of the [body](#request-body) and [header]
           <AdFormatPreference i:nil="false">ValueHere</AdFormatPreference>
           <DevicePreference i:nil="false">ValueHere</DevicePreference>
           <EditorialStatus i:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e589="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e589:AppUrl>
-              <e589:OsType i:nil="false">ValueHere</e589:OsType>
-              <e589:Url i:nil="false">ValueHere</e589:Url>
-            </e589:AppUrl>
+          <FinalAppUrls xmlns:e283="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            <e283:AppUrl>
+              <e283:OsType i:nil="false">ValueHere</e283:OsType>
+              <e283:Url i:nil="false">ValueHere</e283:Url>
+            </e283:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -79,23 +79,23 @@ The following template shows the order of the [body](#request-body) and [header]
           <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e590="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e590:KeyValuePairOfstringstring>
-              <e590:key i:nil="false">ValueHere</e590:key>
-              <e590:value i:nil="false">ValueHere</e590:value>
-            </e590:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e284="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e284:KeyValuePairOfstringstring>
+              <e284:key i:nil="false">ValueHere</e284:key>
+              <e284:value i:nil="false">ValueHere</e284:value>
+            </e284:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Status i:nil="false">ValueHere</Status>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
           <Type i:nil="false">ValueHere</Type>
-          <UrlCustomParameters xmlns:e591="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e591:Parameters i:nil="false">
-              <e591:CustomParameter>
-                <e591:Key i:nil="false">ValueHere</e591:Key>
-                <e591:Value i:nil="false">ValueHere</e591:Value>
-              </e591:CustomParameter>
-            </e591:Parameters>
+          <UrlCustomParameters xmlns:e285="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            <e285:Parameters i:nil="false">
+              <e285:CustomParameter>
+                <e285:Key i:nil="false">ValueHere</e285:Key>
+                <e285:Value i:nil="false">ValueHere</e285:Value>
+              </e285:CustomParameter>
+            </e285:Parameters>
           </UrlCustomParameters>
           <!--These fields are applicable if the derived type attribute is set to TextAd-->
           <DestinationUrl i:nil="false">ValueHere</DestinationUrl>
@@ -120,6 +120,16 @@ The following template shows the order of the [body](#request-body) and [header]
           <Path1 i:nil="false">ValueHere</Path1>
           <Path2 i:nil="false">ValueHere</Path2>
           <Text i:nil="false">ValueHere</Text>
+          <!--These fields are applicable if the derived type attribute is set to ResponsiveAd-->
+          <BusinessName i:nil="false">ValueHere</BusinessName>
+          <CallToAction i:nil="false">ValueHere</CallToAction>
+          <Headline i:nil="false">ValueHere</Headline>
+          <LandscapeImageMediaId i:nil="false">ValueHere</LandscapeImageMediaId>
+          <LandscapeLogoMediaId i:nil="false">ValueHere</LandscapeLogoMediaId>
+          <LongHeadline i:nil="false">ValueHere</LongHeadline>
+          <SquareImageMediaId i:nil="false">ValueHere</SquareImageMediaId>
+          <SquareLogoMediaId i:nil="false">ValueHere</SquareLogoMediaId>
+          <Text i:nil="false">ValueHere</Text>
         </Ad>
       </Ads>
     </UpdateAdsRequest>
@@ -143,11 +153,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e592="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e592:KeyValuePairOfstringstring>
-              <e592:key d4p1:nil="false">ValueHere</e592:key>
-              <e592:value d4p1:nil="false">ValueHere</e592:value>
-            </e592:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e286="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e286:KeyValuePairOfstringstring>
+              <e286:key d4p1:nil="false">ValueHere</e286:key>
+              <e286:value d4p1:nil="false">ValueHere</e286:value>
+            </e286:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

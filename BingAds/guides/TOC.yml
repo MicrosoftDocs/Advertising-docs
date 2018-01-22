@@ -813,6 +813,8 @@
           href: ../campaign-management-service/getnegativesitesbyadgroupids.md
         - name: GetNegativeSitesByCampaignIds
           href: ../campaign-management-service/getnegativesitesbycampaignids.md
+        - name: GetProfileDataFileUrl
+          href: ../campaign-management-service/getprofiledatafileurl.md
         - name: GetSharedEntitiesByAccountId
           href: ../campaign-management-service/getsharedentitiesbyaccountid.md
         - name: GetSharedEntityAssociationsByEntityIds
@@ -1078,12 +1080,16 @@
           href: ../campaign-management-service/productpartition.md
         - name: ProductScope
           href: ../campaign-management-service/productscope.md
+        - name: ProfileCriterion
+          href: ../campaign-management-service/profilecriterion.md
         - name: RadiusCriterion
           href: ../campaign-management-service/radiuscriterion.md
         - name: RemarketingList
           href: ../campaign-management-service/remarketinglist.md
         - name: RemarketingRule
           href: ../campaign-management-service/remarketingrule.md
+        - name: ResponsiveAd
+          href: ../campaign-management-service/responsivead.md
         - name: ReviewAdExtension
           href: ../campaign-management-service/reviewadextension.md
         - name: RuleItem
@@ -1116,6 +1122,10 @@
           href: ../campaign-management-service/structuredsnippetadextension.md
         - name: TargetCpaBiddingScheme
           href: ../campaign-management-service/targetcpabiddingscheme.md
+        - name: TargetSetting
+          href: ../campaign-management-service/targetsetting.md
+        - name: TargetSettingDetail
+          href: ../campaign-management-service/targetsettingdetail.md
         - name: TextAd
           href: ../campaign-management-service/textad.md
         - name: UetTag
@@ -1151,6 +1161,8 @@
           href: ../campaign-management-service/adgroupcriterionstatus.md
         - name: AdGroupCriterionType
           href: ../campaign-management-service/adgroupcriteriontype.md
+        - name: AdGroupPrivacyStatus
+          href: ../campaign-management-service/adgroupprivacystatus.md
         - name: AdGroupStatus
           href: ../campaign-management-service/adgroupstatus.md
         - name: AdRotationType
@@ -1173,6 +1185,8 @@
           href: ../campaign-management-service/budgetlimittype.md
         - name: BusinessGeoCodeStatus
           href: ../campaign-management-service/businessgeocodestatus.md
+        - name: CallToAction
+          href: ../campaign-management-service/calltoaction.md
         - name: CampaignCriterionStatus
           href: ../campaign-management-service/campaigncriterionstatus.md
         - name: CampaignCriterionType
@@ -1191,6 +1205,8 @@
           href: ../campaign-management-service/conversiongoaltrackingstatus.md
         - name: ConversionGoalType
           href: ../campaign-management-service/conversiongoaltype.md
+        - name: CriterionTypeGroup
+          href: ../campaign-management-service/criteriontypegroup.md
         - name: Day
           href: ../campaign-management-service/day.md
         - name: DistanceUnit
@@ -1235,6 +1251,8 @@
           href: ../campaign-management-service/pricingmodel.md
         - name: ProductPartitionType
           href: ../campaign-management-service/productpartitiontype.md
+        - name: ProfileType
+          href: ../campaign-management-service/profiletype.md
         - name: RemarketingTargetingSetting
           href: ../campaign-management-service/remarketingtargetingsetting.md
         - name: StringOperator

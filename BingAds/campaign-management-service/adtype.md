@@ -19,6 +19,7 @@ Defines the type of ad.
     <xs:enumeration value="AppInstall" />
     <xs:enumeration value="ExpandedText" />
     <xs:enumeration value="DynamicSearch" />
+    <xs:enumeration value="ResponsiveAd" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -32,6 +33,7 @@ Defines the type of ad.
 |<a name="expandedtext"></a>ExpandedText|Refers to an [ExpandedTextAd](../campaign-management-service/expandedtextad.md).|
 |<a name="image"></a>Image|Reserved for future use.|
 |<a name="product"></a>Product|Refers to a [ProductAd](../campaign-management-service/productad.md).|
+|<a name="responsivead"></a>ResponsiveAd|Reserved.|
 |<a name="text"></a>Text|Refers to a [TextAd](../campaign-management-service/textad.md).|
 
 ## Requirements
