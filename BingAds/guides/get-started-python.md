@@ -9,7 +9,7 @@ dev_langs:
   - python
 ---
 # Get Started Using Python with Bing Ads Services
-To get started developing Bing Ads applications with Java, you can start with the [provided examples](~/guides/code-examples.md) or follow one of the application walkthroughs for a [Web](~/guides/walkthrough-web-application-java.md) or [Desktop](~/guides/walkthrough-desktop-application-java.md) application. The examples have been developed with the Bing Ads Java [SDK](~/guides/client-libraries.md) and run with [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). Your custom configuration may vary.
+To get started developing Bing Ads applications with Python, you can start with the [provided examples](~/guides/code-examples.md) or follow one of the application walkthroughs for a [Web](~/guides/walkthrough-web-application-python.md) or [Desktop](~/guides/walkthrough-desktop-application-python.md) application. The examples have been developed with the Bing Ads Python [SDK](~/guides/client-libraries.md) and run with [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). Your custom configuration may vary.
 
 You will need user credentials with access to Bing Ads either in [production](https://secure.bingads.microsoft.com/) or [sandbox](https://secure.sandbox.bingads.microsoft.com/Auth?EnvContext=Sandbox). For the production environment you will need a [production developer token](~/guides/get-started.md#get-developer-token). All sandbox clients can use the universal sandbox developer token i.e., **BBD37VB98**. For more information, please see [Get Started With the Bing Ads API](../guides/get-started.md) and [Sandbox](../guides/sandbox.md).
 
@@ -38,7 +38,7 @@ pip.exe install --upgrade bingads
 ```
 
 ## <a name="walkthrough"></a>Walkthroughs
-Once you have the Bing Ads Python [SDK](~/guides/client-libraries.md) installed, you can either download the examples from [GitHub](https://github.com/BingAds/BingAds-Python-SDK) or follow one of the application walkthroughs for a [Walkthrough: Bing Ads Web Application in Python](../guides/walkthrough-web-application-java.md) or [Walkthrough: Bing Ads Desktop Application in Python](../guides/walkthrough-desktop-application-python.md) application.
+Once you have the Bing Ads Python [SDK](~/guides/client-libraries.md) installed, you can either download the examples from [GitHub](https://github.com/BingAds/BingAds-Python-SDK) or follow one of the application walkthroughs for a [Walkthrough: Bing Ads Web Application in Python](../guides/walkthrough-web-application-python.md) or [Walkthrough: Bing Ads Desktop Application in Python](../guides/walkthrough-desktop-application-python.md) application.
 
 ## <a name="suds"></a>Using Suds
 The Bing Ads Python SDK uses the *suds-jurko* SOAP SDK to instantiate programming elements for the Bing Ads API i.e., service operations, data objects, and value sets. You will pass Suds factory objects via either a *ServiceClient*, *BulkServiceManager*, or *ReportingServiceManager* class. Since Suds is included as an SDK dependency, you can use Suds directly to call any of the Bing Ads web services.
