@@ -3,10 +3,9 @@ Provides information about the type of an ad. Use [Ad.getType](./Ad#getType) for
 
 |Method|Return Type|Description|
 |-|-|-
-[expandedTextAd]('#expandedTextAd')|boolean|Returns true if this ad is an ExpandedTextAd. <br />
+[expandedTextAd]('#expandedtextad')|boolean|Returns true if this ad is an ExpandedTextAd. <br />
 
-<a name="expandedTextAd"></a>
-## expandedTextAd
+## <a name="expandedtextad"></a>expandedTextAd
 Returns true if this ad is an ExpandedTextAd. 
 
 
