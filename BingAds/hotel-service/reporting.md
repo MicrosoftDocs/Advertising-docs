@@ -79,10 +79,9 @@ When the report job's status is Completed, the job will contain the URL that you
 
 For uncompressed reports, the GET response's Content-Type header contains text/csv. For compressed reports, the header contains application/zip.
 
-If you asked the service to compress the report data (see the report job's `Compression` field), the service places the file in a folder and uses ZIP compression to compress the report. Remember to uncompress the folder before accessing and reading the report. The name of the report file is auto-generated and has the form, dimensionrow-\<GUID\>.
+If you asked the service to compress the report data (see the report job's `Compression` field), the service places the file in a folder and uses ZIP compression to compress the report. Remember to uncompress the folder before accessing and reading the report. The name of the report file is auto-generated and has the form, performance-\<request ID\>.
 
-> [!NOTE]
-> The name of the report file will soon change from dimensionrow-\<request ID GUID\> to performance-\<request ID GUID\>.
+
 
 ## Filtering report data
 
