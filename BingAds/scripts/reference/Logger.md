@@ -3,10 +3,10 @@ Provides methods to write text to the logging console.
 
 |Method|Return Type|Description|
 |-|-|-
-[clear]('#clear')|void|Clears this log.<br />
-[getLog]('#getlog')|String|Returns the complete list of messages in the current log.<br />
-[log(data)]('#log~data~')|[Logger](./Logger)|Write the provided string to the logger's console.<br />
-[log(format, values)]('#log~format_-values~')|[Logger](./Logger)|Writes a formatted string to the logger's console, using the string format and values provided.<br />
+[clear]("#clear")|void|Clears this log.<br />
+[getLog]("#getlog")|String|Returns the complete list of messages in the current log.<br />
+[log(data)]("#log~data~")|[Logger](./Logger)|Write the provided string to the logger's console.<br />
+[log(format, values)]("#log~format_-values~")|[Logger](./Logger)|Writes a formatted string to the logger's console, using the string format and values provided.<br />
 
 ## <a name="clear"></a>clear
 Clears this log.
