@@ -3,9 +3,9 @@ Provides methods to iterate through ad groups.
 
 |Method|Return Type|Description|
 |-|-|-
-[hasNext]("#hasnext")|boolean|Returns <br />
-[next]("#next")|[AdGroup](./AdGroup)|Advances to the next ad group in this iterator and returns it.<br />
-[totalNumEntities]("#totalnumentities")|int|Returns the total number of ad groups indexed by this iterator.<br />
+[hasNext](#hasnext)|boolean|Returns <br />
+[next](#next)|[AdGroup](./AdGroup)|Advances to the next ad group in this iterator and returns it.<br />
+[totalNumEntities](#totalnumentities)|int|Returns the total number of ad groups indexed by this iterator.<br />
 
 ## <a name="hasnext"></a>hasNext
 Returns 
