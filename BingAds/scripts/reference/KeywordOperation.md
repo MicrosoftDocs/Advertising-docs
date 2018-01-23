@@ -3,9 +3,9 @@ Represents the definition of a keyword constructed via [KeywordBuilder](./Keywor
 
 |Method|Return Type|Description|
 |-|-|-
-[getErrors]('#getErrors}')|String[]|Returns an empty array if the keyword was successfully created, otherwise returns the errors encountered during the execution of this operation.<br />
-[getResult]('#getResult}')|[Keyword](./Keyword)|Returns the newly created Keyword, otherwise returns null if this operation failed to execute.<br />
-[isSuccessful]('#isSuccessful}')|boolean|Returns <br />
+[getErrors]('#getErrors')|String[]|Returns an empty array if the keyword was successfully created, otherwise returns the errors encountered during the execution of this operation.<br />
+[getResult]('#getResult')|[Keyword](./Keyword)|Returns the newly created Keyword, otherwise returns null if this operation failed to execute.<br />
+[isSuccessful]('#isSuccessful')|boolean|Returns <br />
 
 <a name="#getErrors"></a>
 ## getErrors

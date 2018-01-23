@@ -3,9 +3,9 @@ Represents the definition of an ad group constructed via [AdGroupBuilder](./AdGr
 
 |Method|Return Type|Description|
 |-|-|-
-[getErrors]('#getErrors}')|String[]|Returns an empty array if the ad group was successfully created, otherwise returns the errors encountered during the execution of this operation.<br />
-[getResult]('#getResult}')|[AdGroup](./AdGroup)|Returns the newly created `AdGroup`, otherwise returns `null` if this operation failed to execute.<br />
-[isSuccessful]('#isSuccessful}')|boolean|Returns <br />
+[getErrors]('#getErrors')|String[]|Returns an empty array if the ad group was successfully created, otherwise returns the errors encountered during the execution of this operation.<br />
+[getResult]('#getResult')|[AdGroup](./AdGroup)|Returns the newly created `AdGroup`, otherwise returns `null` if this operation failed to execute.<br />
+[isSuccessful]('#isSuccessful')|boolean|Returns <br />
 
 <a name="#getErrors"></a>
 ## getErrors

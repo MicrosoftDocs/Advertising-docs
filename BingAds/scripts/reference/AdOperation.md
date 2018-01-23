@@ -3,9 +3,9 @@ Represents the definition of an ad constructed via [AdBuilderSpace](./AdBuilderS
 
 |Method|Return Type|Description|
 |-|-|-
-[getErrors]('#getErrors}')|String[]|Returns an empty array if the ad was successfully created, otherwise returns the errors encountered during the execution of this operation.<br />
-[getResult]('#getResult}')|[Ad](./Ad)|Returns the newly created Ad, otherwise returns null if this operation failed to execute.<br />
-[isSuccessful]('#isSuccessful}')|boolean|Returns <br />
+[getErrors]('#getErrors')|String[]|Returns an empty array if the ad was successfully created, otherwise returns the errors encountered during the execution of this operation.<br />
+[getResult]('#getResult')|[Ad](./Ad)|Returns the newly created Ad, otherwise returns null if this operation failed to execute.<br />
+[isSuccessful]('#isSuccessful')|boolean|Returns <br />
 
 <a name="#getErrors"></a>
 ## getErrors
