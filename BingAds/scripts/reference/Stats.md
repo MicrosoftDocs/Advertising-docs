@@ -13,47 +13,47 @@ Provides information about statistics related to the different entity types in B
 [getCtr]('#getCtr')|double|Returns the calick through rate of the associated entity within the 0..1 range. <br />
 [getImpressions]('#getImpressions')|long|Returns the number of impressions of the associated entity.<br />
 
-<a name="#getAverageCpc"></a>
+<a name="getAverageCpc"></a>
 ## getAverageCpc
 Returns the average cost per click of the associated entity.
 
 
-<a name="#getAverageCpm"></a>
+<a name="getAverageCpm"></a>
 ## getAverageCpm
 Returns the average cost per thousand impressions of the associated entity.
 
 
-<a name="#getAveragePosition"></a>
+<a name="getAveragePosition"></a>
 ## getAveragePosition
 Returns the average position of the associated entity.
 
 
-<a name="#getClickConversionRate"></a>
+<a name="getClickConversionRate"></a>
 ## getClickConversionRate
 Returns the conversion rate for clicks of the associated entity within the 0..1 range.
 
 
-<a name="#getClicks"></a>
+<a name="getClicks"></a>
 ## getClicks
 Returns the number of clicks of the associated entity.
 
 
-<a name="#getConvertedClicks"></a>
+<a name="getConvertedClicks"></a>
 ## getConvertedClicks
 Returns the number of clicks that converted of the associated entity.
 
 
-<a name="#getCost"></a>
+<a name="getCost"></a>
 ## getCost
 Returns the cost (spend) of the associated entity in the currency of the current account.
 
 
-<a name="#getCtr"></a>
+<a name="getCtr"></a>
 ## getCtr
 Returns the calick through rate of the associated entity within the 0..1 range. 
 
 
-<a name="#getImpressions"></a>
+<a name="getImpressions"></a>
 ## getImpressions
 Returns the number of impressions of the associated entity.
 

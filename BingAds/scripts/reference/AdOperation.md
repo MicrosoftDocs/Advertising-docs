@@ -7,17 +7,17 @@ Represents the definition of an ad constructed via [AdBuilderSpace](./AdBuilderS
 [getResult]('#getResult')|[Ad](./Ad)|Returns the newly created Ad, otherwise returns null if this operation failed to execute.<br />
 [isSuccessful]('#isSuccessful')|boolean|Returns <br />
 
-<a name="#getErrors"></a>
+<a name="getErrors"></a>
 ## getErrors
 Returns an empty array if the ad was successfully created, otherwise returns the errors encountered during the execution of this operation.
 
 
-<a name="#getResult"></a>
+<a name="getResult"></a>
 ## getResult
 Returns the newly created Ad, otherwise returns null if this operation failed to execute.
 
 
-<a name="#isSuccessful"></a>
+<a name="isSuccessful"></a>
 ## isSuccessful
 Returns 
 

@@ -5,7 +5,7 @@ Provides a type-specific view of an ad.
 |-|-|-
 [expandedTextAd]('#expandedTextAd')|[ExpandedTextAd](./ExpandedTextAd)|Returns this ad as an [ExpandedTextAd](./ExpandedTextAd).<br />
 
-<a name="#expandedTextAd"></a>
+<a name="expandedTextAd"></a>
 ## expandedTextAd
 Returns this ad as an [ExpandedTextAd](./ExpandedTextAd).
 
