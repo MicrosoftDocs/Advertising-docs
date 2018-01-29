@@ -4,7 +4,7 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Get keyword ideas and traffic estimates in C#, Java, PHP, or Python.
+description: Get keyword ideas and traffic estimates in C#, Java, PHP, or Python. 
 dev_langs:
   - csharp
   - java
