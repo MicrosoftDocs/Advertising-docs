@@ -7,7 +7,9 @@ ms.author: "eur"
 description: Get keyword ideas and traffic estimates in C# or PHP.
 dev_langs:
   - csharp
+  - java
   - php
+  - python
 ---
 # Keyword Planner Code Example
 This example demonstrates how to get keyword ideas and traffic estimates for search advertising campaigns.
