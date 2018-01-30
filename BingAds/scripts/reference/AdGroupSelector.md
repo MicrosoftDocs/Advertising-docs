@@ -1,7 +1,8 @@
 # AdGroupSelector
 Provides methods to select ad groups by using filtering and sorting.
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [forDateRange(String dateRange)](#fordaterange~string-daterange~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector by filtering ad groups in this selector using the date range provided. Supported values for the date range include:<br />  <br /> `TODAY`,<br />  `YESTERDAY`,<br /> `LAST_7_DAYS`,<br /> `THIS_WEEK_SUN_TODAY`,<br /> `LAST_14_DAYS`,<br /> `LAST_30_DAYS`,<br /> `LAST_WEEK_SUN_SAT`,<br /> `THIS_MONTH`,<br /> `LAST_MONTH`,<br /> `ALL_TIME`<br /><br />
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector by filtering ad groups in this selector using the beginning and ending dates provided.  The date parameters can be entered as a string in YYYYMMDD format or as an object with year, month and day fields.  An example for such an object is <code>{year: 2016, month: 5, day: 13}</code>.<br />

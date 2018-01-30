@@ -6,7 +6,8 @@ Example usage:
  var stats = ad.getStatsFor("THIS_MONTH");
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [asType](#astype)|[AdViewSpace](./AdViewSpace)|Returns an AdViewSpace object, which provides access to properties specific to the type of this ad.<br />
 [enable](#enable)|void|Enables the ad.<br />

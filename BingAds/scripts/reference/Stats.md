@@ -9,7 +9,8 @@ Example usage:
  // etc.
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [getAverageCpc](#getaveragecpc)|double|Returns the average cost per click of the associated entity.<br />
 [getAverageCpm](#getaveragecpm)|double|Returns the average cost per thousand impressions of the associated entity.<br />

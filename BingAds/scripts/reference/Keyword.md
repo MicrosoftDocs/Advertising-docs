@@ -6,7 +6,8 @@ Example usage:
  var stats = keyword.getStatsFor("THIS_MONTH");
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [adParams](#adparams)|[AdParamSelector](./AdParamSelector)|Returns a selector of all ad params under this keyword.<br />
 [clearDestinationUrl](#cleardestinationurl)|void|Clears the destination URL of this keyword. <br />

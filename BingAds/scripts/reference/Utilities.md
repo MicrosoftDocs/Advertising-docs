@@ -1,7 +1,8 @@
 # Utilities
 Provides utility methods for encoding/decoding data, formatting dates, manipulating JSON data and other miscellaneous logic.
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [base64Decode(String encoded)](#base64decode~string-encoded~)|Byte[]|Returns the raw data represented by the argument as a byte array. The argument needs to be encoded as base-64.<br />
 [base64Encode(String encoded, Charset charset)](#base64encode~string-encoded_-charset-charset~)|Byte[]|Returns the raw data represented by the argument as a byte array and in the specified character set. The argument needs to be encoded as base-64.<br />

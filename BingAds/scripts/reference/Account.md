@@ -6,7 +6,8 @@ Example usage:
  var stats = account.getStatsFor("THIS_MONTH");
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [getCurrencyCode](#getcurrencycode)|String|Returns the account's currency code. The return value is in ISO 4217 format. For example, USD for U.S. Dollar. See [Bing Ads Currencies](https://docs.microsoft.com/en-us/bingads/guides/currencies) for the full list of supported values. <br />
 [getCustomerId](#getcustomerid)|String|Returns the customer ID of this account.

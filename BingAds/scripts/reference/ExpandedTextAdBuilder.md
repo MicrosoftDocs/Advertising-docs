@@ -14,7 +14,8 @@ Example usage:
  var ad = adOperation.getResult();
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [build](#build)|[AdOperation](./AdOperation)|Creates and returns an ad operation that can later be used to construct the new expanded text ad in the system.<br />
 [withCustomParameters(String customParameters)](#withcustomparameters~string-customparameters~)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|Sets the custom parameters used with this new expanded text ad. The parameters must be specified as an Object in the form of a map such as <code>{key1: ‘value1’, key2: ‘value2’, key3: ‘value3’}</code>."<br />

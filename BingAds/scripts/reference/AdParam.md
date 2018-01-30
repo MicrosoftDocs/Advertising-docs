@@ -1,7 +1,8 @@
 # AdParam
 Represents an ad param (custom parameters). 
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [getEntityType](#getentitytype)|String|Returns the entity type of this ad param, which is “AdParam”.<br />
 [getIndex](#getindex)|int|Returns the index of this ad param.<br />

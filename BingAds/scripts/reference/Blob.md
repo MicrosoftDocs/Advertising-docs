@@ -1,7 +1,8 @@
 # Blob
 Provides methods to represent binary data and exchange.
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [copyBlob](#copyblob)|[Blob](./Blob)|Returns a copy of this blob.<br />
 [getAs(String contentType)](#getas~string-contenttype~)|[Blob](./Blob)|Returns the contents of this blob converted to the specified MIME type. For blobs containing images, any image format such as 'image/bmp', 'image/gif', 'image/jpeg', or 'image/png' can be specified for the input parameter.<br />

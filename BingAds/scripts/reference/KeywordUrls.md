@@ -1,7 +1,8 @@
 # KeywordUrls
 Provides access to the URLs for this keyword.
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [clearFinalUrl](#clearfinalurl)|void|Clears the final URL of this keyword.<br />
 [clearMobileFinalUrl](#clearmobilefinalurl)|void|Clears the mobile final URL of this keyword. <br />

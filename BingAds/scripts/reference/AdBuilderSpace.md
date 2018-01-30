@@ -14,7 +14,8 @@ Example usage:
  var ad = adOperation.getResult();
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [expandedTextAdBuilder](#expandedtextadbuilder)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|Returns a new expanded text ad builder object associated with the parent ad group.<br />
 

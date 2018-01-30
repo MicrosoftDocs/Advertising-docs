@@ -1,7 +1,8 @@
 # Campaign
 Represents a campaign in the Bing Ads system.
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [adGroups](#adgroups)|[AdGroupSelector](./AdGroupSelector)|Returns the selector of all ad groups under this campaign.<br />
 [ads](#ads)|[AdSelector](./AdSelector)|Returns the selector of all ads under this campaign.<br />

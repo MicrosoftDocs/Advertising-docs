@@ -8,7 +8,8 @@ Example usage:
  }
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|boolean|Returns <br />
 [next](#next)|[AdParam](./AdParam)|Advances to the next ad param in this iterator and returns it.<br />

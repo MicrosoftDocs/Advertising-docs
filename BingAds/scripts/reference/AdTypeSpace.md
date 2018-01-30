@@ -9,7 +9,8 @@ Example usage:
  }
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [expandedTextAd](#expandedtextad)|boolean|Returns true if this ad is an ExpandedTextAd. <br />
 

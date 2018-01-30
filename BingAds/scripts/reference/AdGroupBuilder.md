@@ -11,7 +11,8 @@ Example usage:
  var adGroup = adGroupOperation.getResult();
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [build](#build)|[AdGroupOperation](./AdGroupOperation)|Returns an ad group operation which represents the ad group to be created.<br />
 [withBiddingStrategy(String bidStrategy)](#withbiddingstrategy~string-bidstrategy~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the type of bidding strategy to be used for this new ad group. The only supported value is `MANUAL_CPC`<br />

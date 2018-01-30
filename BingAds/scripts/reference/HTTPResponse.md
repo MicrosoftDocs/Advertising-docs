@@ -1,7 +1,8 @@
 # HTTPResponse
 Provides access to information about HTTP responses.
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [getAllHeaders](#getallheaders)|Object|Returns a JavaScript key/value map of HTTP headers.<br />
 [getAs(String contentType)](#getas~string-contenttype~)|[Blob](./Blob)|Returns the contents of this object as a blob converted to the specified MIME type. For blobs containing images,  any image format such as 'image/bmp', 'image/gif', 'image/jpeg', or 'image/png' can be specified for the input parameter.<br />

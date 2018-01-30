@@ -6,7 +6,8 @@ Example usage:
  var mobileBidModifier = adGroup.devices().getMobileBidModifier();
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [clearDesktopBidModifier](#cleardesktopbidmodifier)|void|Clears the desktop bid modifier for this ad group.<br />
 [clearMobileBidModifier](#clearmobilebidmodifier)|void|Clears the mobile bid modifier for this ad group.<br />

@@ -1,7 +1,8 @@
 # ExecutionInfo
 Provides information about the environment in which the current script is executing.
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [getRemainingCreateQuota](#getremainingcreatequota)|int|Returns the remaining number of Bing Ads entities this script is allowed to create during its current runtime.<br />
 [getRemainingGetQuota](#getremaininggetquota)|int|Returns the remaining number of Bing Ads entities this script is allowed to retrieve during its current runtime.<br />

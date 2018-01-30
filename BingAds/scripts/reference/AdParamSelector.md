@@ -11,7 +11,8 @@ Example usage:
  }
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [get](#get)|[AdParamIterator](./AdParamIterator)|Returns an iterator indexing the ad params in this selector.<br />
 

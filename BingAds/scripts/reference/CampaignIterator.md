@@ -8,7 +8,8 @@ Example usage:
  }
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|boolean|Returns true if this iterator has more campaign elements <br />
 [next](#next)|[Campaign](./Campaign)|Advances to the next campaign in this iterator and returns it.<br />

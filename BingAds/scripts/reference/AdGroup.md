@@ -6,7 +6,8 @@ Example usage:
  var stats = adGroup.getStatsFor("THIS_MONTH");
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [ads](#ads)|[AdSelector](./AdSelector)|Returns a selector of all the ads under this ad group.<br />
 [devices](#devices)|[AdGroupDevices](./AdGroupDevices)|Returns an AdGroupDevices object associated with this ad group.<br />

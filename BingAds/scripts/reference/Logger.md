@@ -1,7 +1,8 @@
 # Logger
 Provides methods to write text to the logging console.
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [clear](#clear)|void|Clears this log.<br />
 [getLog](#getlog)|String|Returns the complete list of messages in the current log.<br />

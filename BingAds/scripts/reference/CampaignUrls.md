@@ -1,7 +1,8 @@
 # CampaignUrls
 Provides access to the URLs for this campaign.
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [clearTrackingTemplate](#cleartrackingtemplate)|void|Clears the tracking template of this campaign.<br />
 [getCustomParameters](#getcustomparameters)|Object|Returns the custom parameters of this campaign. The returned object is in the format <code>{key1: 'value1', key2: 'value2', key3: 'value3'}</code>.<br />

@@ -1,7 +1,8 @@
 # Address
 Represents the address of a geographical location. The different components of a street address such as city, postal code, province and country are exposed by this object.
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [getCityName](#getcityname)|String|Returns the city name of this address, or null if not provided.<br />
 [getCountryCode](#getcountrycode)|String|Returns the country code of this address, or null if not provided.<br />

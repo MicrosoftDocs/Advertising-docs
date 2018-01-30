@@ -6,7 +6,8 @@ Example usage:
  var stats = budget.getStatsFor("THIS_MONTH");
 ```
 
-|Method|Return Type|Description|
+## Methods
+|Method Name|Return Type|Description|
 |-|-|-
 [campaigns](#campaigns)|[CampaignSelector](./CampaignSelector)|Returns the selector of all campaigns that share this budget.<br />
 [getAmount](#getamount)|double|Returns the amount of this budget, in the currency of the current account.<br />
