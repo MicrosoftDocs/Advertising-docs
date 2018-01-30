@@ -1,6 +1,11 @@
 # Keyword
 Represents a keyword in the Bing Ads system.
 
+Example usage:
+```javascript
+ var stats = keyword.getStatsFor(&quot;THIS_MONTH&quot;);
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [adParams](#adparams)|[AdParamSelector](./AdParamSelector)|Returns a selector of all ad params under this keyword.<br />

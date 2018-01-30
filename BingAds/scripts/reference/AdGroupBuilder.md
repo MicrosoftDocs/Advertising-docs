@@ -3,12 +3,12 @@ Provides methods which can be used to define and build an ad group.
 
 Example usage:
 ```javascript
-var adGroupBuilder = campaign.newAdGroupBuilder();
-var adGroupOperation = adGroupBuilder
-        .withName("ad group name")
-        .withStatus("PAUSED")
-        .build();
-var adGroup = adGroupOperation.getResult();
+ var adGroupBuilder = campaign.newAdGroupBuilder();
+ var adGroupOperation = adGroupBuilder
+    .withName(&quot;ad group name&quot;)
+    .withStatus(&quot;PAUSED&quot;)
+    .build();
+ var adGroup = adGroupOperation.getResult();
 ```
 
 |Method|Return Type|Description|

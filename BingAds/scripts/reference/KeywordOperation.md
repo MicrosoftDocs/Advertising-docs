@@ -1,6 +1,29 @@
 # KeywordOperation
 Represents the definition of a keyword constructed via [KeywordBuilder](./KeywordBuilder). The keyword is only stored in the system when any of the methods on this object are invoked or when the script finishes execution, whichever comes first. For more efficiency, store the operation objects in an array and only invoke its methods when all operations have been constructed.
 
+Example usage:
+```javascript
+ // For the purpose of this example, suppose that the fetchKeywords()
+ // function fetches keyword data from your data source of choice, so that
+ // keywordsToCreate is an array of strings, where each string is the text
+ // for a keyword.
+ var adGroup = BingAdsApp.adGroups().get().next();
+ var keywordsToCreate = fetchKeywords();
+ var keywordOps = [];
+ for (var i = 0; i &lt; keywordsToCreate.length; i++) {
+   keywordOps.push(
+       adGroup.newKeywordBuilder().withText(keywordsToCreate[i]).build());
+ }
+ for (var i = 0; i &lt; keywordOps.length; i++) {
+   if (keywordOps[i].isSuccessful()) {
+     keywordOps[i].getResult().applyLabel('myLabel');
+   } else {
+     Logger.log('Errors from Keyword [' + keywordsToCreate[i] + ']: '
+         + keywordOps[i].getErrors());
+   }
+ }
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [getErrors](#geterrors)|String[]|Returns an empty array if the keyword was successfully created, otherwise returns the errors encountered during the execution of this operation.<br />

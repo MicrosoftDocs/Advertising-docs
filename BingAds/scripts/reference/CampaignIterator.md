@@ -1,6 +1,13 @@
 # CampaignIterator
 Provides methods to iterate through campaigns.
 
+Example usage:
+```javascript
+ while (campaignIterator.hasNext()) {
+   var campaign = campaignIterator.next();
+ }
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|boolean|Returns true if this iterator has more campaign elements <br />

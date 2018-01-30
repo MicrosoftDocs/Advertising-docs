@@ -1,6 +1,11 @@
 # Account
 Provides information about an account. This is always the current account in which the script is running.
 
+Example usage:
+```javascript
+ var stats = account.getStatsFor(&quot;THIS_MONTH&quot;);
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [getCurrencyCode](#getcurrencycode)|String|Returns the account's currency code. The return value is in ISO 4217 format. For example, USD for U.S. Dollar. See [Bing Ads Currencies](https://docs.microsoft.com/en-us/bingads/guides/currencies) for the full list of supported values. <br />

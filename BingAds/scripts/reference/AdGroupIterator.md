@@ -1,6 +1,13 @@
 # AdGroupIterator
 Provides methods to iterate through ad groups.
 
+Example usage:
+```javascript
+ while (adGroupIterator.hasNext()) {
+   var adGroup = adGroupIterator.next();
+ }
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|boolean|Returns <br />

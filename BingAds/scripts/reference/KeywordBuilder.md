@@ -1,6 +1,16 @@
 # KeywordBuilder
 Provides methods for defining and building a keyword.
 
+Example usage:
+```javascript
+ var keywordOperation = adGroup.newKeywordBuilder()
+    .withText(&quot;text&quot;)
+    .withCpc(1.5)
+    .withFinalUrl(&quot;http://www.example.com&quot;)
+    .build();
+ var keyword = keywordOperation.getResult();
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [build](#build)|[KeywordOperation](./KeywordOperation)|Returns a keyword operation with the defined properties which can later be used to construct the keyword.<br />

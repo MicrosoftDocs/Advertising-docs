@@ -12,8 +12,7 @@ Returns an empty array if the ad group was successfully created, otherwise retur
 
 
 ## <a name="getresult"></a>getResult
-Returns the newly created `AdGroup`, otherwise returns `null` if this operation failed to execute.
-
+Returns the newly created `AdGroup`, otherwise returns `null` if this operation failed to execute.<br />
 
 ## <a name="issuccessful"></a>isSuccessful
 Returns 

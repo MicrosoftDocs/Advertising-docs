@@ -1,6 +1,19 @@
 # ExpandedTextAdBuilder
 Provides methods to define an expanded text ad.
 
+Example usage:
+```javascript
+ var adOperation = adGroup.newAd().expandedTextAdBuilder()
+    .withHeadlinePart1(&quot;First headline of ad&quot;)
+    .withHeadlinePart2(&quot;Second headline of ad&quot;)
+    .withDescription(&quot;Ad description&quot;)
+    .withPath1(&quot;path1&quot;)
+    .withPath2(&quot;path2&quot;)
+    .withFinalUrl(&quot;http://www.example.com&quot;)
+    .build();
+ var ad = adOperation.getResult();
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [build](#build)|[AdOperation](./AdOperation)|Creates and returns an ad operation that can later be used to construct the new expanded text ad in the system.<br />

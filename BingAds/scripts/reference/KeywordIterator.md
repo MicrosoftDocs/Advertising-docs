@@ -1,6 +1,13 @@
 # KeywordIterator
 Provides methods to iterate through keywords.
 
+Example usage:
+```javascript
+ while (keywordIterator.hasNext()) {
+   var keyword = keywordIterator.next();
+ }
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|boolean|Returns <br />

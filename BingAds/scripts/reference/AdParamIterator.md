@@ -1,6 +1,13 @@
 # AdParamIterator
 Provides methods to iterate through ad params.
 
+Example usage:
+```javascript
+ while (adParamIterator.hasNext()) {
+   var adParam = adParamIterator.next();
+ }
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|boolean|Returns <br />

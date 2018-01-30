@@ -1,6 +1,11 @@
 # AdGroup
 Represents an ad group in the Bing Ads system.
 
+Example usage:
+```javascript
+ var stats = adGroup.getStatsFor(&quot;THIS_MONTH&quot;);
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [ads](#ads)|[AdSelector](./AdSelector)|Returns a selector of all the ads under this ad group.<br />

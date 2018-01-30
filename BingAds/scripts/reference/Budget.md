@@ -1,6 +1,11 @@
 # Budget
 Represents a budget in the Bing Ads system.
 
+Example usage:
+```javascript
+ var stats = budget.getStatsFor(&quot;THIS_MONTH&quot;);
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [campaigns](#campaigns)|[CampaignSelector](./CampaignSelector)|Returns the selector of all campaigns that share this budget.<br />

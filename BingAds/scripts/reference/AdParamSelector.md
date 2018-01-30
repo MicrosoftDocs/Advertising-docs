@@ -1,6 +1,16 @@
 # AdParamSelector
 Provides methods to select ad params by using filtering and sorting.
 
+Example usage:
+```javascript
+ var adParamSelector = BingAdsApp.adParams();
+
+ var adParamIterator = adParamSelector.get();
+ while (adParamIterator.hasNext()) {
+   var adParam = adParamIterator.next();
+ }
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [get](#get)|[AdParamIterator](./AdParamIterator)|Returns an iterator indexing the ad params in this selector.<br />

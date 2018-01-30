@@ -1,6 +1,13 @@
 # AdIterator
 Provides methods to iterate through ads.
 
+Example usage:
+```javascript
+ while (adIterator.hasNext()) {
+   var ad = adIterator.next();
+ }
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|boolean|Returns <br />

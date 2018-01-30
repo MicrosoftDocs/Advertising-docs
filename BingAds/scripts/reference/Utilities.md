@@ -5,15 +5,15 @@ Provides utility methods for encoding/decoding data, formatting dates, manipulat
 |-|-|-
 [base64Decode(String encoded)](#base64decode~string-encoded~)|Byte[]|Returns the raw data represented by the argument as a byte array. The argument needs to be encoded as base-64.<br />
 [base64Encode(String encoded, Charset charset)](#base64encode~string-encoded_-charset-charset~)|Byte[]|Returns the raw data represented by the argument as a byte array and in the specified character set. The argument needs to be encoded as base-64.<br />
-[computeHmacSignature(MacAlgorithm algorithm, String value, String key)](#computehmacsignature~macalgorithm-algorithm_-string-value,-string-key~)|Byte[]|Returns a message authentication code computed by the specified algorithm on the specified key and value.<br />
-[formatDate(Date date, String timeZone, String format)](#formatdate~date-date_-string-timezone,-string-format~)|String|Returns a date formatted according to the <br />
+[computeHmacSignature(MacAlgorithm algorithm, String value, String key)](#computehmacsignature~macalgorithm-algorithm_-string-value_-string-key~)|Byte[]|Returns a message authentication code computed by the specified algorithm on the specified key and value.<br />
+[formatDate(Date date, String timeZone, String format)](#formatdate~date-date_-string-timezone_-string-format~)|String|Returns a date formatted according to the <br />
 [formatString(String template, Object... args)](#formatstring~string-template_-object...-args~)|String|Returns a string with <br />
 [newBlob(Byte[] data)](#newblob~byte-data~)|[Blob](./Blob)|Creates a new blob object from the provided byte array.<br />
 [newBlob(Byte[] data, String contentType)](#newblob~byte-data_-string-contenttype~)|[Blob](./Blob)|Creates a new blob object from the provided byte array and content type (can be null). <br />
-[newBlob(Byte[] data, String contentType, String name)](#newblob~byte-data_-string-contenttype,-string-name~)|[Blob](./Blob)|Creates a new blob object from the provided byte array, content type (can be null), and name.<br />
+[newBlob(Byte[] data, String contentType, String name)](#newblob~byte-data_-string-contenttype_-string-name~)|[Blob](./Blob)|Creates a new blob object from the provided byte array, content type (can be null), and name.<br />
 [newBlob(String data)](#newblob~string-data~)|[Blob](./Blob)|Creates a new blob object from the provided string.<br />
 [newBlob(String data, String contentType)](#newblob~string-data_-string-contenttype~)|[Blob](./Blob)|Creates a new blob object from the provided string and content type (can be null). <br />
-[newBlob(String data, String contentType, String name)](#newblob~string-data_-string-contenttype,-string-name~)|[Blob](./Blob)|Creates a new blob object from the provided string, content type (can be null), and name.<br />
+[newBlob(String data, String contentType, String name)](#newblob~string-data_-string-contenttype_-string-name~)|[Blob](./Blob)|Creates a new blob object from the provided string, content type (can be null), and name.<br />
 [parseCsv(String csv)](#parsecsv~string-csv~)|String[][]|Returns a 2D string array parsed from the specified CSV string.<br />
 [parseCsv(String csv, Char delimiter)](#parsecsv~string-csv_-char-delimiter~)|String[][]|Returns a 2D string array parsed from the specified CSV string and the custom delimiter character.<br />
 [Sleep(int milliseconds)](#sleep~int-milliseconds~)|void|Pauses the execution of the script for the specified number of milliseconds. The maximum allowed value for the argument is 300000 (or 5 minutes).<br />
@@ -29,11 +29,11 @@ Returns the raw data represented by the argument as a byte array. The argument n
 Returns the raw data represented by the argument as a byte array and in the specified character set. The argument needs to be encoded as base-64.
 
 
-## <a name="computehmacsignature~macalgorithm-algorithm_-string-value,-string-key~"></a>computeHmacSignature(MacAlgorithm algorithm, String value, String key)
+## <a name="computehmacsignature~macalgorithm-algorithm_-string-value_-string-key~"></a>computeHmacSignature(MacAlgorithm algorithm, String value, String key)
 Returns a message authentication code computed by the specified algorithm on the specified key and value.
 
 
-## <a name="formatdate~date-date_-string-timezone,-string-format~"></a>formatDate(Date date, String timeZone, String format)
+## <a name="formatdate~date-date_-string-timezone_-string-format~"></a>formatDate(Date date, String timeZone, String format)
 Returns a date formatted according to the 
 
 
@@ -49,7 +49,7 @@ Creates a new blob object from the provided byte array.
 Creates a new blob object from the provided byte array and content type (can be null). 
 
 
-## <a name="newblob~byte-data_-string-contenttype,-string-name~"></a>newBlob(Byte[] data, String contentType, String name)
+## <a name="newblob~byte-data_-string-contenttype_-string-name~"></a>newBlob(Byte[] data, String contentType, String name)
 Creates a new blob object from the provided byte array, content type (can be null), and name.
 
 
@@ -61,7 +61,7 @@ Creates a new blob object from the provided string.
 Creates a new blob object from the provided string and content type (can be null). 
 
 
-## <a name="newblob~string-data_-string-contenttype,-string-name~"></a>newBlob(String data, String contentType, String name)
+## <a name="newblob~string-data_-string-contenttype_-string-name~"></a>newBlob(String data, String contentType, String name)
 Creates a new blob object from the provided string, content type (can be null), and name.
 
 

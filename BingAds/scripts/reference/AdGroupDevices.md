@@ -1,6 +1,11 @@
 # AdGroupDevices
 Provides method to set device-dependent ad group bid modifiers.
 
+Example usage:
+```javascript
+ var mobileBidModifier = adGroup.devices().getMobileBidModifier();
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [clearDesktopBidModifier](#cleardesktopbidmodifier)|void|Clears the desktop bid modifier for this ad group.<br />

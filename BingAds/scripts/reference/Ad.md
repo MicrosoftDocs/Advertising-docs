@@ -1,6 +1,11 @@
 # Ad
 Represents an ad in the Bing Ads system.
 
+Example usage:
+```javascript
+ var stats = ad.getStatsFor(&quot;THIS_MONTH&quot;);
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [asType](#astype)|[AdViewSpace](./AdViewSpace)|Returns an AdViewSpace object, which provides access to properties specific to the type of this ad.<br />

@@ -1,6 +1,14 @@
 # Stats
 Provides information about statistics related to the different entity types in Bing Ads.
 
+Example usage:
+```javascript
+ var stats = campaign.getStatsFor(&quot;LAST_MONTH&quot;);
+ var impressions = stats.getImpressions();
+ var clicks = stats.getClicks();
+ // etc.
+```
+
 |Method|Return Type|Description|
 |-|-|-
 [getAverageCpc](#getaveragecpc)|double|Returns the average cost per click of the associated entity.<br />
