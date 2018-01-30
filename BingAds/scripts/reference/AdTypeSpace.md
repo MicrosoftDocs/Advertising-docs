@@ -9,12 +9,12 @@ Example usage:
  }
 ```
 
-## Methods
+# Methods
 |Method Name|Return Type|Description|
 |-|-|-
 [expandedTextAd](#expandedtextad)|boolean|Returns true if this ad is an ExpandedTextAd. <br />
 
-### <a name="expandedtextad"></a>expandedTextAd
+## <a name="expandedtextad"></a>expandedTextAd
 Returns true if this ad is an ExpandedTextAd. 
 
 

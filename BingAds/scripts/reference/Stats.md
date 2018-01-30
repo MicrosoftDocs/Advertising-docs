@@ -9,7 +9,7 @@ Example usage:
  // etc.
 ```
 
-## Methods
+# Methods
 |Method Name|Return Type|Description|
 |-|-|-
 [getAverageCpc](#getaveragecpc)|double|Returns the average cost per click of the associated entity.<br />
@@ -22,39 +22,39 @@ Example usage:
 [getCtr](#getctr)|double|Returns the calick through rate of the associated entity within the 0..1 range. <br />
 [getImpressions](#getimpressions)|long|Returns the number of impressions of the associated entity.<br />
 
-### <a name="getaveragecpc"></a>getAverageCpc
+## <a name="getaveragecpc"></a>getAverageCpc
 Returns the average cost per click of the associated entity.
 
 
-### <a name="getaveragecpm"></a>getAverageCpm
+## <a name="getaveragecpm"></a>getAverageCpm
 Returns the average cost per thousand impressions of the associated entity.
 
 
-### <a name="getaverageposition"></a>getAveragePosition
+## <a name="getaverageposition"></a>getAveragePosition
 Returns the average position of the associated entity.
 
 
-### <a name="getclickconversionrate"></a>getClickConversionRate
+## <a name="getclickconversionrate"></a>getClickConversionRate
 Returns the conversion rate for clicks of the associated entity within the 0..1 range.
 
 
-### <a name="getclicks"></a>getClicks
+## <a name="getclicks"></a>getClicks
 Returns the number of clicks of the associated entity.
 
 
-### <a name="getconvertedclicks"></a>getConvertedClicks
+## <a name="getconvertedclicks"></a>getConvertedClicks
 Returns the number of clicks that converted of the associated entity.
 
 
-### <a name="getcost"></a>getCost
+## <a name="getcost"></a>getCost
 Returns the cost (spend) of the associated entity in the currency of the current account.
 
 
-### <a name="getctr"></a>getCtr
+## <a name="getctr"></a>getCtr
 Returns the calick through rate of the associated entity within the 0..1 range. 
 
 
-### <a name="getimpressions"></a>getImpressions
+## <a name="getimpressions"></a>getImpressions
 Returns the number of impressions of the associated entity.
 
 
