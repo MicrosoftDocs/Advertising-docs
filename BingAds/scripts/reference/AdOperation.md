@@ -37,15 +37,15 @@ Example usage:
 [getResult](#getresult)|[Ad](./Ad)|Returns the newly created Ad, otherwise returns null if this operation failed to execute.<br />
 [isSuccessful](#issuccessful)|boolean|Returns <br />
 
-## <a name="geterrors"></a>getErrors
+### <a name="geterrors"></a>getErrors
 Returns an empty array if the ad was successfully created, otherwise returns the errors encountered during the execution of this operation.
 
 
-## <a name="getresult"></a>getResult
+### <a name="getresult"></a>getResult
 Returns the newly created Ad, otherwise returns null if this operation failed to execute.
 
 
-## <a name="issuccessful"></a>isSuccessful
+### <a name="issuccessful"></a>isSuccessful
 Returns 
 
 

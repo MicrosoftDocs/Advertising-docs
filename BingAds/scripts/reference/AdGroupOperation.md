@@ -8,14 +8,14 @@ Represents the definition of an ad group constructed via [AdGroupBuilder](./AdGr
 [getResult](#getresult)|[AdGroup](./AdGroup)|Returns the newly created `AdGroup`, otherwise returns `null` if this operation failed to execute.<br />
 [isSuccessful](#issuccessful)|boolean|Returns <br />
 
-## <a name="geterrors"></a>getErrors
+### <a name="geterrors"></a>getErrors
 Returns an empty array if the ad group was successfully created, otherwise returns the errors encountered during the execution of this operation.
 
 
-## <a name="getresult"></a>getResult
+### <a name="getresult"></a>getResult
 Returns the newly created `AdGroup`, otherwise returns `null` if this operation failed to execute.<br />
 
-## <a name="issuccessful"></a>isSuccessful
+### <a name="issuccessful"></a>isSuccessful
 Returns 
 
 

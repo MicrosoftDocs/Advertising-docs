@@ -28,43 +28,43 @@ Example usage:
 [withPath2(String path2)](#withpath2~string-path2~)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|Sets the second path of the display URL of this new expanded text ad to the specified value.<br />
 [withTrackingTemplate(String trackingTemplate)](#withtrackingtemplate~string-trackingtemplate~)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|Sets the tracking template of this new expanded text ad to the specified value.<br />
 
-## <a name="build"></a>build
+### <a name="build"></a>build
 Creates and returns an ad operation that can later be used to construct the new expanded text ad in the system.
 
 
-## <a name="withcustomparameters~string-customparameters~"></a>withCustomParameters(String customParameters)
+### <a name="withcustomparameters~string-customparameters~"></a>withCustomParameters(String customParameters)
 Sets the custom parameters used with this new expanded text ad. The parameters must be specified as an Object in the form of a map such as <code>{key1: ‘value1’, key2: ‘value2’, key3: ‘value3’}</code>."
 
 
-## <a name="withdescription~string-description~"></a>withDescription(String description)
+### <a name="withdescription~string-description~"></a>withDescription(String description)
 Sets the description of this new expanded text ad. 
 
 
-## <a name="withfinalurl~string-finalurl~"></a>withFinalUrl(String finalUrl)
+### <a name="withfinalurl~string-finalurl~"></a>withFinalUrl(String finalUrl)
 Sets the final URL of this new expanded text to the specified value.
 
 
-## <a name="withheadlinepart1~string-headlinepart1~"></a>withHeadlinePart1(String headlinePart1)
+### <a name="withheadlinepart1~string-headlinepart1~"></a>withHeadlinePart1(String headlinePart1)
 Sets the first part of the headline of this new expanded text ad to the specified value.
 
 
-## <a name="withheadlinepart2~string-headlinepart2~"></a>withHeadlinePart2(String headlinePart2)
+### <a name="withheadlinepart2~string-headlinepart2~"></a>withHeadlinePart2(String headlinePart2)
 Sets the second part of the headline of this new expanded text ad to the specified value.
 
 
-## <a name="withmobilefinalurl~string-mobilefinalurl~"></a>withMobileFinalUrl(String mobileFinalUrl)
+### <a name="withmobilefinalurl~string-mobilefinalurl~"></a>withMobileFinalUrl(String mobileFinalUrl)
 Sets the mobile final URL of this new expanded text ad to the specified value.
 
 
-## <a name="withpath1~string-path1~"></a>withPath1(String path1)
+### <a name="withpath1~string-path1~"></a>withPath1(String path1)
 Sets the first path of the display URL of this new expanded text ad to the specified value.
 
 
-## <a name="withpath2~string-path2~"></a>withPath2(String path2)
+### <a name="withpath2~string-path2~"></a>withPath2(String path2)
 Sets the second path of the display URL of this new expanded text ad to the specified value.
 
 
-## <a name="withtrackingtemplate~string-trackingtemplate~"></a>withTrackingTemplate(String trackingTemplate)
+### <a name="withtrackingtemplate~string-trackingtemplate~"></a>withTrackingTemplate(String trackingTemplate)
 Sets the tracking template of this new expanded text ad to the specified value.
 
 

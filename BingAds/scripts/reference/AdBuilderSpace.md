@@ -19,7 +19,7 @@ Example usage:
 |-|-|-
 [expandedTextAdBuilder](#expandedtextadbuilder)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|Returns a new expanded text ad builder object associated with the parent ad group.<br />
 
-## <a name="expandedtextadbuilder"></a>expandedTextAdBuilder
+### <a name="expandedtextadbuilder"></a>expandedTextAdBuilder
 Returns a new expanded text ad builder object associated with the parent ad group.
 
 

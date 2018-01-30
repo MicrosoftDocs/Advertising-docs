@@ -19,39 +19,39 @@ Example usage:
 [setMobileBidModifier(double bidModifier)](#setmobilebidmodifier~double-bidmodifier~)|void|Sets the mobile bid modifier for this ad group to the provided value.<br />
 [setTabletBidModifier(double bidModifier)](#settabletbidmodifier~double-bidmodifier~)|void|Sets the tablet bid modifier for this ad group to the provided value.<br />
 
-## <a name="cleardesktopbidmodifier"></a>clearDesktopBidModifier
+### <a name="cleardesktopbidmodifier"></a>clearDesktopBidModifier
 Clears the desktop bid modifier for this ad group.
 
 
-## <a name="clearmobilebidmodifier"></a>clearMobileBidModifier
+### <a name="clearmobilebidmodifier"></a>clearMobileBidModifier
 Clears the mobile bid modifier for this ad group.
 
 
-## <a name="cleartabletbidmodifier"></a>clearTabletBidModifier
+### <a name="cleartabletbidmodifier"></a>clearTabletBidModifier
 Clears the tablet bid modifier for this ad group.
 
 
-## <a name="getdesktopbidmodifier"></a>getDesktopBidModifier
+### <a name="getdesktopbidmodifier"></a>getDesktopBidModifier
 Returns the current desktop bid modifier for this ad group.
 
 
-## <a name="getmobilebidmodifier"></a>getMobileBidModifier
+### <a name="getmobilebidmodifier"></a>getMobileBidModifier
 Returns the current mobile bid modifier for this ad group.
 
 
-## <a name="gettabletbidmodifier"></a>getTabletBidModifier
+### <a name="gettabletbidmodifier"></a>getTabletBidModifier
 Returns the current tablet bid modifier for this ad group.
 
 
-## <a name="setdesktopbidmodifier~double-bidmodifier~"></a>setDesktopBidModifier(double bidModifier)
+### <a name="setdesktopbidmodifier~double-bidmodifier~"></a>setDesktopBidModifier(double bidModifier)
 Sets the desktop bid modifier for this ad group to the provided value.
 
 
-## <a name="setmobilebidmodifier~double-bidmodifier~"></a>setMobileBidModifier(double bidModifier)
+### <a name="setmobilebidmodifier~double-bidmodifier~"></a>setMobileBidModifier(double bidModifier)
 Sets the mobile bid modifier for this ad group to the provided value.
 
 
-## <a name="settabletbidmodifier~double-bidmodifier~"></a>setTabletBidModifier(double bidModifier)
+### <a name="settabletbidmodifier~double-bidmodifier~"></a>setTabletBidModifier(double bidModifier)
 Sets the tablet bid modifier for this ad group to the provided value.
 
 

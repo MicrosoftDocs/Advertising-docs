@@ -11,27 +11,27 @@ This is the root object of the Bing Ads Scripts API. It provides methods to retr
 [getExecutionInfo](#getexecutioninfo)|[ExecutionInfo](./ExecutionInfo)|Returns information about the environment in which the script is currently executing.<br />
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector)|Returns a selector of all keywords in the current account.<br />
 
-## <a name="adgroups"></a>adGroups
+### <a name="adgroups"></a>adGroups
 Returns a selector of all ad groups in the current account.
 
 
-## <a name="ads"></a>ads
+### <a name="ads"></a>ads
 Returns a selector of all ads in the current account.
 
 
-## <a name="campaigns"></a>campaigns
+### <a name="campaigns"></a>campaigns
 Returns a selector of all campaigns in the current account.
 
 
-## <a name="currentaccount"></a>currentAccount
+### <a name="currentaccount"></a>currentAccount
 Returns the account in which the script is currently executing.
 
 
-## <a name="getexecutioninfo"></a>getExecutionInfo
+### <a name="getexecutioninfo"></a>getExecutionInfo
 Returns information about the environment in which the script is currently executing.
 
 
-## <a name="keywords"></a>keywords
+### <a name="keywords"></a>keywords
 Returns a selector of all keywords in the current account.
 
 
