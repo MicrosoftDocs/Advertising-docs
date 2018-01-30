@@ -3,7 +3,7 @@ Represents an ad in the Bing Ads system.
 
 Example usage:
 ```javascript
- var stats = ad.getStatsFor(&quot;THIS_MONTH&quot;);
+ var stats = ad.getStatsFor("THIS_MONTH");
 ```
 
 |Method|Return Type|Description|

@@ -4,12 +4,12 @@ Provides a method to create an ad in an ad group.
 Example usage:
 ```javascript
  var adOperation = adGroup.newAd().expandedTextAdBuilder()
-    .withHeadlinePart1(&quot;First headline of ad&quot;)
-    .withHeadlinePart2(&quot;Second headline of ad&quot;)
-    .withDescription(&quot;Ad description&quot;)
-    .withPath1(&quot;path1&quot;)
-    .withPath2(&quot;path2&quot;)
-    .withFinalUrl(&quot;http://www.example.com&quot;)
+    .withHeadlinePart1("First headline of ad")
+    .withHeadlinePart2("Second headline of ad")
+    .withDescription("Ad description")
+    .withPath1("path1")
+    .withPath2("path2")
+    .withFinalUrl("http://www.example.com")
     .build();
  var ad = adOperation.getResult();
 ```

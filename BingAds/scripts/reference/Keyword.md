@@ -3,7 +3,7 @@ Represents a keyword in the Bing Ads system.
 
 Example usage:
 ```javascript
- var stats = keyword.getStatsFor(&quot;THIS_MONTH&quot;);
+ var stats = keyword.getStatsFor("THIS_MONTH");
 ```
 
 |Method|Return Type|Description|

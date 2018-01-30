@@ -4,9 +4,9 @@ Provides methods for defining and building a keyword.
 Example usage:
 ```javascript
  var keywordOperation = adGroup.newKeywordBuilder()
-    .withText(&quot;text&quot;)
+    .withText("text")
     .withCpc(1.5)
-    .withFinalUrl(&quot;http://www.example.com&quot;)
+    .withFinalUrl("http://www.example.com")
     .build();
  var keyword = keywordOperation.getResult();
 ```

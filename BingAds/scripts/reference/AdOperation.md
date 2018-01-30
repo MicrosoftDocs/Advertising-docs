@@ -9,7 +9,7 @@ Example usage:
  var adgroup = BingAdsApp.adGroups().get().next();
  var adsToCreate = fetchAdText();
  var adOps = [];
- for (var i = 0; i &lt; adsToCreate.length; i++) {
+ for (var i = 0; i < adsToCreate.length; i++) {
      adOps.push(
          adGroup.newAd().expandedTextAdBuilder()
              .withHeadlinePart1(adsToCreate[i].headlinePart1)
@@ -20,7 +20,7 @@ Example usage:
              .withFinalUrl(adsToCreate[i].finalUrl)
              .build());
  }
- for (var i = 0; i &lt; adOps.length; i++) {
+ for (var i = 0; i < adOps.length; i++) {
    if (adOps[i].isSuccessful()) {
      adOps[i].getResult().applyLabel('myLabel');
    } else {

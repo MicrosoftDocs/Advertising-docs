@@ -3,7 +3,7 @@ Provides information about statistics related to the different entity types in B
 
 Example usage:
 ```javascript
- var stats = campaign.getStatsFor(&quot;LAST_MONTH&quot;);
+ var stats = campaign.getStatsFor("LAST_MONTH");
  var impressions = stats.getImpressions();
  var clicks = stats.getClicks();
  // etc.

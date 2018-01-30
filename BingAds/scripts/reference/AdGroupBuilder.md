@@ -5,8 +5,8 @@ Example usage:
 ```javascript
  var adGroupBuilder = campaign.newAdGroupBuilder();
  var adGroupOperation = adGroupBuilder
-    .withName(&quot;ad group name&quot;)
-    .withStatus(&quot;PAUSED&quot;)
+    .withName("ad group name")
+    .withStatus("PAUSED")
     .build();
  var adGroup = adGroupOperation.getResult();
 ```

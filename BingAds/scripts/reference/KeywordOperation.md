@@ -10,11 +10,11 @@ Example usage:
  var adGroup = BingAdsApp.adGroups().get().next();
  var keywordsToCreate = fetchKeywords();
  var keywordOps = [];
- for (var i = 0; i &lt; keywordsToCreate.length; i++) {
+ for (var i = 0; i < keywordsToCreate.length; i++) {
    keywordOps.push(
        adGroup.newKeywordBuilder().withText(keywordsToCreate[i]).build());
  }
- for (var i = 0; i &lt; keywordOps.length; i++) {
+ for (var i = 0; i < keywordOps.length; i++) {
    if (keywordOps[i].isSuccessful()) {
      keywordOps[i].getResult().applyLabel('myLabel');
    } else {

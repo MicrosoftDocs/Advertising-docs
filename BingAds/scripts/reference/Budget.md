@@ -3,7 +3,7 @@ Represents a budget in the Bing Ads system.
 
 Example usage:
 ```javascript
- var stats = budget.getStatsFor(&quot;THIS_MONTH&quot;);
+ var stats = budget.getStatsFor("THIS_MONTH");
 ```
 
 |Method|Return Type|Description|

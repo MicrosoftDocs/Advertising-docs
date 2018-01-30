@@ -3,7 +3,7 @@ Provides information about an account. This is always the current account in whi
 
 Example usage:
 ```javascript
- var stats = account.getStatsFor(&quot;THIS_MONTH&quot;);
+ var stats = account.getStatsFor("THIS_MONTH");
 ```
 
 |Method|Return Type|Description|
