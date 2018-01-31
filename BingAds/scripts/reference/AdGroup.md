@@ -16,7 +16,7 @@ Example usage:
 [getEntityType](#getentitytype)|String|Returns the entity type of this ad group, which is “Ad Group”.<br />
 [getId](#getid)|long|Returns the ID of this ad group.<br />
 [getName](#getname)|String|Returns the name of this ad group.<br />
-[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|String|Returns stats for this ad group for the given date range. Supported values include:<br /> <br /> `TODAY`,<br /> `YESTERDAY`,<br /> `LAST_7_DAYS`,<br /> `THIS_WEEK_SUN_TODAY`,<br /> `LAST_14_DAYS`,<br /> `LAST_30_DAYS`,<br /> `LAST_WEEK_SUN_SAT`,<br /> `THIS_MONTH`,<br /> `LAST_MONTH`,<br /> `ALL_TIME`<br /><br />
+[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|String|Returns stats for this ad group for the given date range. Supported values include:<br /> <br /> `TODAY`<br />`YESTERDAY`<br />`LAST_7_DAYS`<br />`THIS_WEEK_SUN_TODAY`<br />`LAST_14_DAYS`<br />`LAST_30_DAYS`<br />`LAST_WEEK_SUN_SAT`<br />`THIS_MONTH`<br />`LAST_MONTH`<br />`ALL_TIME`<br /><br />
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns stats for this ad group for the given custom date range. Both parameters can be either a string in `YYYYMMDD` format or an object with year, month and day properties. In either case, a full date must be specified <br />
 [isEnabled](#isenabled)|boolean|Returns true if this ad group is enabled. <br />
 [isPaused](#ispaused)|boolean|Returns true if this ad group is paused. <br />
@@ -85,7 +85,7 @@ Returns the name of this ad group.
 String|Name of the ad group.
 
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
-Returns stats for this ad group for the given date range. Supported values include:<br /> <br /> `TODAY`,<br /> `YESTERDAY`,<br /> `LAST_7_DAYS`,<br /> `THIS_WEEK_SUN_TODAY`,<br /> `LAST_14_DAYS`,<br /> `LAST_30_DAYS`,<br /> `LAST_WEEK_SUN_SAT`,<br /> `THIS_MONTH`,<br /> `LAST_MONTH`,<br /> `ALL_TIME`<br />
+Returns stats for this ad group for the given date range. Supported values include:<br /> <br /> `TODAY`<br />`YESTERDAY`<br />`LAST_7_DAYS`<br />`THIS_WEEK_SUN_TODAY`<br />`LAST_14_DAYS`<br />`LAST_30_DAYS`<br />`LAST_WEEK_SUN_SAT`<br />`THIS_MONTH`<br />`LAST_MONTH`<br />`ALL_TIME`<br />
 
 ### Arguments:
 |Name|Type|Description|

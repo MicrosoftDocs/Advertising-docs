@@ -19,7 +19,7 @@ Example usage:
 [getEntityType](#getentitytype)|String|Returns the type of entity of this ad, which is “Ad”.<br />
 [getHeadline](#getheadline)|String|Returns the headline (title) of this ad. This value could be null for some types of ads.<br />
 [getId](#getid)|long|Returns the ID of this ad. In order to specify a unique ID for an ad, both its ad group ID and this ID must be specified.<br />
-[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|String|Returns stats for this ad for the given date range. Supported values include:<br /> <br /> `TODAY`,<br /> `YESTERDAY`,<br /> `LAST_7_DAYS`,<br /> `THIS_WEEK_SUN_TODAY`,<br /> `LAST_14_DAYS`,<br /> `LAST_30_DAYS`,<br /> `LAST_WEEK_SUN_SAT`,<br /> `THIS_MONTH`,<br /> `LAST_MONTH`,<br /> `ALL_TIME`<br /><br />
+[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|String|Returns stats for this ad for the given date range. Supported values include:<br /> <br /> `TODAY`<br />`YESTERDAY`<br />`LAST_7_DAYS`<br />`THIS_WEEK_SUN_TODAY`<br />`LAST_14_DAYS`<br />`LAST_30_DAYS`<br />`LAST_WEEK_SUN_SAT`<br />`THIS_MONTH`<br />`LAST_MONTH`<br />`ALL_TIME`<br /><br />
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns stats for this ad for the given custom date range. Both parameters can be either a string in YYYYMMDD format or an object with year, month and day properties. In either case, a full date must be specified <br />
 [getType](#gettype)|String|Returns the type of this ad. Supported values include: `EXPANDED_TEXT_AD` and `TEXT_AD`<br />
 [isEnabled](#isenabled)|boolean|Returns true if this ad is enabled. <br />
@@ -111,7 +111,7 @@ Returns the ID of this ad. In order to specify a unique ID for an ad, both its a
 long|The ID of the ad.
 
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
-Returns stats for this ad for the given date range. Supported values include:<br /> <br /> `TODAY`,<br /> `YESTERDAY`,<br /> `LAST_7_DAYS`,<br /> `THIS_WEEK_SUN_TODAY`,<br /> `LAST_14_DAYS`,<br /> `LAST_30_DAYS`,<br /> `LAST_WEEK_SUN_SAT`,<br /> `THIS_MONTH`,<br /> `LAST_MONTH`,<br /> `ALL_TIME`<br />
+Returns stats for this ad for the given date range. Supported values include:<br /> <br /> `TODAY`<br />`YESTERDAY`<br />`LAST_7_DAYS`<br />`THIS_WEEK_SUN_TODAY`<br />`LAST_14_DAYS`<br />`LAST_30_DAYS`<br />`LAST_WEEK_SUN_SAT`<br />`THIS_MONTH`<br />`LAST_MONTH`<br />`ALL_TIME`<br />
 
 ### Arguments:
 |Name|Type|Description|
