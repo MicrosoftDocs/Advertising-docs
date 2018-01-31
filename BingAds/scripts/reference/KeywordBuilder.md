@@ -28,6 +28,7 @@ Returns a keyword operation with the defined properties which can later be used 
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordOperation](./KeywordOperation)|The associated keyword operation.
 
 ## <a name="withcpc~double-cpc~"></a>withCpc(double cpc)
@@ -35,10 +36,12 @@ Returns a keyword builder with the CPC property set to the specified value.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 cpc|double|The max CPC bid of the keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordBuilder](./KeywordBuilder)|The keyword builder with the specified max CPC.
 
 ## <a name="withcustomparameters~-string-customparameters~"></a>withCustomParameters( String customParameters)
@@ -46,10 +49,12 @@ Returns a keyword builder with the custom parameters set to the specified value.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 customParameters|Object|The custom parameters of the keyword as a map of the<br />        following form: <code>{key1: 'value1', key2: 'value2', key3: 'value3'}</code>.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordBuilder](./KeywordBuilder)|The keyword builder with the specified custom parameters.
 
 ## <a name="withdestinationurl~string-destinationurl~"></a>withDestinationUrl(String destinationUrl)
@@ -57,6 +62,7 @@ Returns a keyword builder with the destination URL set to the specified value.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordBuilder](./KeywordBuilder)|
 
 ## <a name="withfinalurl~string-finalurl~"></a>withFinalUrl(String finalUrl)
@@ -64,10 +70,12 @@ Returns a keyword builder with the final URL set to the specified value.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 finalUrl|String|The final URL for the keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordBuilder](./KeywordBuilder)|The keyword builder with the specified final URL.
 
 ## <a name="withmobilefinalurl~string-mobilefinalurl~"></a>withMobileFinalUrl(String mobileFinalUrl)
@@ -75,10 +83,12 @@ Returns a keyword builder with the mobile final URL set to the specified value.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 mobileFinalUrl|String|The mobile final URL for the keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordBuilder](./KeywordBuilder)|The keyword builder with the specified final URL.
 
 ## <a name="withtext~string-text~"></a>withText(String text)
@@ -86,10 +96,12 @@ Returns a keyword builder with the text set to the specified value. Setting the 
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 text|String|The text of the keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordBuilder](./KeywordBuilder)|Keyword builder with the specified text.
 
 ## <a name="withtrackingtemplate~-string-trackingtemplate~"></a>withTrackingTemplate( String trackingTemplate)
@@ -97,9 +109,11 @@ Returns a keyword builder with the tracking template set to the specified value.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 trackingTemplate|String|The tracking template for the keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordBuilder](./KeywordBuilder)|The keyword builder with the specified tracking template.
 

@@ -20,6 +20,7 @@ Returns true if this iterator has more campaign elements
 
 ### Returns:
 |Type|Description|
+|-|-
 boolean|true if the iterator has more elements.
 
 ## <a name="next"></a>next
@@ -27,6 +28,7 @@ Advances to the next campaign in this iterator and returns it.
 
 ### Returns:
 |Type|Description|
+|-|-
 [Campaign](./Campaign)|The next Campaign in the iterator.
 
 ## <a name="totalnumentities"></a>totalNumEntities
@@ -34,5 +36,6 @@ Returns the total number of campaigns indexed by this iterator. If the total num
 
 ### Returns:
 |Type|Description|
+|-|-
 int|The number of entities matched by the selector which generated this iterator.
 

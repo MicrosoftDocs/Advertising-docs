@@ -24,6 +24,7 @@ Clears the desktop bid modifier for this ad group.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|The desktop bid modifier.
 
 ## <a name="clearmobilebidmodifier"></a>clearMobileBidModifier
@@ -31,6 +32,7 @@ Clears the mobile bid modifier for this ad group.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|The desktop bid modifier.
 
 ## <a name="cleartabletbidmodifier"></a>clearTabletBidModifier
@@ -38,6 +40,7 @@ Clears the tablet bid modifier for this ad group.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|The desktop bid modifier.
 
 ## <a name="getdesktopbidmodifier"></a>getDesktopBidModifier
@@ -45,6 +48,7 @@ Returns the current desktop bid modifier for this ad group.
 
 ### Returns:
 |Type|Description|
+|-|-
 double|The desktop bid modifier.
 
 ## <a name="getmobilebidmodifier"></a>getMobileBidModifier
@@ -52,6 +56,7 @@ Returns the current mobile bid modifier for this ad group.
 
 ### Returns:
 |Type|Description|
+|-|-
 double|The mobile bid modifier.
 
 ## <a name="gettabletbidmodifier"></a>getTabletBidModifier
@@ -59,6 +64,7 @@ Returns the current tablet bid modifier for this ad group.
 
 ### Returns:
 |Type|Description|
+|-|-
 double|The tablet bid modifier.
 
 ## <a name="setdesktopbidmodifier~double-bidmodifier~"></a>setDesktopBidModifier(double bidModifier)
@@ -66,10 +72,12 @@ Sets the desktop bid modifier for this ad group to the provided value.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 modifier|double|The new desktop bid modifier.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|
 
 ## <a name="setmobilebidmodifier~double-bidmodifier~"></a>setMobileBidModifier(double bidModifier)
@@ -77,10 +85,12 @@ Sets the mobile bid modifier for this ad group to the provided value.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 modifier|double|The new mobile bid modifier.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|
 
 ## <a name="settabletbidmodifier~double-bidmodifier~"></a>setTabletBidModifier(double bidModifier)
@@ -88,9 +98,11 @@ Sets the tablet bid modifier for this ad group to the provided value.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 modifier|double|The new tablet bid modifier.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|
 

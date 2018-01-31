@@ -21,18 +21,21 @@ Returns the account's currency code. The return value is in ISO 4217 format. For
 
 ### Returns:
 |Type|Description|
+|-|-
 String|The currency code of the account.
 
 ## <a name="getcustomerid"></a>getCustomerId
 Returns the customer ID of this account.
 ### Returns:
 |Type|Description|
+|-|-
 String|The customer ID of the account.
 
 ## <a name="getname"></a>getName
 Returns the name of this account.
 ### Returns:
 |Type|Description|
+|-|-
 String|The account descriptive name, or null if one doesn't exist.
 
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
@@ -41,10 +44,12 @@ Supported values include:<br /><br /> `TODAY`,<br /> `YESTERDAY`,<br /> `LAST_7_
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 dateRange|String|Date range for which the stats are requested.
 
 ### Returns:
 |Type|Description|
+|-|-
 String|The stats for the specified date range.
 
 ## <a name="getstatsfor~object-datefrom_-object-dateto~"></a>getStatsFor(Object dateFrom, Object dateTo)
@@ -52,11 +57,13 @@ Returns stats for this account for the given custom date range. Both parameters 
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 dateFrom|Object|Start date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.
 dateTo|Object|End date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.
 
 ### Returns:
 |Type|Description|
+|-|-
 String|The stats for the specified date range.
 
 ## <a name="gettimezone"></a>getTimeZone
@@ -64,5 +71,6 @@ Returns the POSIX time-zone value used by the Bing Ads web application to displa
 
 ### Returns:
 |Type|Description|
+|-|-
 String|The time zone of the account.
 

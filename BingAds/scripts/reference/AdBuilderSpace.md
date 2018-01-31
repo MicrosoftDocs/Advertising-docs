@@ -24,5 +24,6 @@ Returns a new expanded text ad builder object associated with the parent ad grou
 
 ### Returns:
 |Type|Description|
+|-|-
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|A new expanded text ad builder associated with the ad group.
 

@@ -21,5 +21,6 @@ Returns an iterator indexing the ad params in this selector.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdParamIterator](./AdParamIterator)|Iterator of the requested ad params.
 

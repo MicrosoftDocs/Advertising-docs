@@ -48,10 +48,12 @@ Returns a selector by filtering ads in this selector using the date range provid
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 dateRange|String|Date range to set onto the selector.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdSelector](./AdSelector)|The selector with date range applied.
 
 ## <a name="fordaterange~object-datefrom_-object-dateto~"></a>forDateRange(Object dateFrom, Object dateTo)
@@ -59,11 +61,13 @@ Returns a selector by filtering ads in this selector using the beginning and end
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 dateFrom|Object|Start date of the date range.
 dateTo|Object|End date of the date range.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdSelector](./AdSelector)|The selector with date range applied.
 
 ## <a name="get"></a>get
@@ -71,6 +75,7 @@ Returns an iterator indexing the ads in this selector.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdIterator](./AdIterator)|Iterator of the requested ads.
 
 ## <a name="orderby~string-orderby~"></a>orderBy(String orderBy)
@@ -78,10 +83,12 @@ Returns a selector by specifying the condition for ordering the ads in this sele
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 orderBy|String|Ordering to apply.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdSelector](./AdSelector)|The selector with ordering applied.
 
 ## <a name="withcondition~string-condition~"></a>withCondition(String condition)
@@ -89,10 +96,12 @@ Returns a selector by specifying the filtering condition on the ads in this sele
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 condition|String|Condition to add to the selector.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdSelector](./AdSelector)|The selector with the condition applied.
 
 ## <a name="withids~long-ids~"></a>withIds(long[] ids)
@@ -100,10 +109,12 @@ Returns a selector by specifying the list of IDs to filter ads in this selector.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 ids|long[][]|Array of ad IDs.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdSelector](./AdSelector)|The selector restricted to the given IDs.
 
 ## <a name="withlimit~int-limit~"></a>withLimit(int limit)
@@ -111,9 +122,11 @@ Returns a selector with as many ads as specified by the limit argument selected 
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 limit|int|How many entities to return.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdSelector](./AdSelector)|The selector with limit applied.
 

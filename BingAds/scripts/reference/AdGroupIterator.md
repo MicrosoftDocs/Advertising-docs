@@ -20,6 +20,7 @@ Returns
 
 ### Returns:
 |Type|Description|
+|-|-
 boolean|true if the iterator has more elements.
 
 ## <a name="next"></a>next
@@ -27,6 +28,7 @@ Advances to the next ad group in this iterator and returns it.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdGroup](./AdGroup)|The next AdGroup in the iterator.
 
 ## <a name="totalnumentities"></a>totalNumEntities
@@ -34,5 +36,6 @@ Returns the total number of ad groups indexed by this iterator.
 
 ### Returns:
 |Type|Description|
+|-|-
 int|The number of entities matched by the selector which generated this iterator.
 

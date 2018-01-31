@@ -14,6 +14,7 @@ Returns the remaining number of Bing Ads entities this script is allowed to crea
 
 ### Returns:
 |Type|Description|
+|-|-
 int|The remaining number of AdWords entities the script is allowed to create in this
  execution.
 
@@ -22,6 +23,7 @@ Returns the remaining number of Bing Ads entities this script is allowed to retr
 
 ### Returns:
 |Type|Description|
+|-|-
 int|The remaining number of AdWords entities the script is allowed to fetch in this
  execution.
 
@@ -30,6 +32,7 @@ Returns the remaining amount of execution time, in seconds, this script is allow
 
 ### Returns:
 |Type|Description|
+|-|-
 int|The remaining time in seconds the script is allowed to execute.
 
 ## <a name="ispreview"></a>isPreview
@@ -37,6 +40,7 @@ Returns true if this script is running in preview mode; false otherwise if it is
 
 ### Returns:
 |Type|Description|
+|-|-
 boolean|true if the script is currently being previewed, or false if it is
  a live execution.
 

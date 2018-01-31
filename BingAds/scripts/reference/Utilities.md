@@ -27,6 +27,7 @@ Returns the raw data represented by the argument as a byte array. The argument n
 
 ### Returns:
 |Type|Description|
+|-|-
 Byte[]|
 
 ## <a name="base64encode~string-encoded_-charset-charset~"></a>base64Encode(String encoded, Charset charset)
@@ -34,6 +35,7 @@ Returns the raw data represented by the argument as a byte array and in the spec
 
 ### Returns:
 |Type|Description|
+|-|-
 Byte[]|
 
 ## <a name="computehmacsignature~macalgorithm-algorithm_-string-value_-string-key~"></a>computeHmacSignature(MacAlgorithm algorithm, String value, String key)
@@ -41,6 +43,7 @@ Returns a message authentication code computed by the specified algorithm on the
 
 ### Returns:
 |Type|Description|
+|-|-
 Byte[]|
 
 ## <a name="formatdate~date-date_-string-timezone_-string-format~"></a>formatDate(Date date, String timeZone, String format)
@@ -48,6 +51,7 @@ Returns a date formatted according to the
 
 ### Returns:
 |Type|Description|
+|-|-
 String|
 
 ## <a name="formatstring~string-template_-object...-args~"></a>formatString(String template, Object... args)
@@ -55,6 +59,7 @@ Returns a string with
 
 ### Returns:
 |Type|Description|
+|-|-
 String|
 
 ## <a name="newblob~byte-data~"></a>newBlob(Byte[] data)
@@ -62,6 +67,7 @@ Creates a new blob object from the provided byte array.
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="newblob~byte-data_-string-contenttype~"></a>newBlob(Byte[] data, String contentType)
@@ -69,6 +75,7 @@ Creates a new blob object from the provided byte array and content type (can be 
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="newblob~byte-data_-string-contenttype_-string-name~"></a>newBlob(Byte[] data, String contentType, String name)
@@ -76,6 +83,7 @@ Creates a new blob object from the provided byte array, content type (can be nul
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="newblob~string-data~"></a>newBlob(String data)
@@ -83,6 +91,7 @@ Creates a new blob object from the provided string.
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="newblob~string-data_-string-contenttype~"></a>newBlob(String data, String contentType)
@@ -90,6 +99,7 @@ Creates a new blob object from the provided string and content type (can be null
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="newblob~string-data_-string-contenttype_-string-name~"></a>newBlob(String data, String contentType, String name)
@@ -97,6 +107,7 @@ Creates a new blob object from the provided string, content type (can be null), 
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="parsecsv~string-csv~"></a>parseCsv(String csv)
@@ -104,6 +115,7 @@ Returns a 2D string array parsed from the specified CSV string.
 
 ### Returns:
 |Type|Description|
+|-|-
 String[][]|
 
 ## <a name="parsecsv~string-csv_-char-delimiter~"></a>parseCsv(String csv, Char delimiter)
@@ -111,6 +123,7 @@ Returns a 2D string array parsed from the specified CSV string and the custom de
 
 ### Returns:
 |Type|Description|
+|-|-
 String[][]|
 
 ## <a name="sleep~int-milliseconds~"></a>Sleep(int milliseconds)
@@ -118,6 +131,7 @@ Pauses the execution of the script for the specified number of milliseconds. The
 
 ### Returns:
 |Type|Description|
+|-|-
 void|
 
 ## <a name="unzip~blob-blob~"></a>unzip(Blob blob)
@@ -125,6 +139,7 @@ Decompresses and returns the component files contained within the blob represent
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob[]](./Blob)|
 
 ## <a name="zip~blob-blobs~"></a>zip(Blob[] blobs)
@@ -132,6 +147,7 @@ Compresses the files in the blob array and returns a blob representing a zip fil
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="zip~blob-blobs_-string-name~"></a>zip(Blob[] blobs, String name)
@@ -139,5 +155,6 @@ Compresses the files in the blob array and returns a blob representing a zip fil
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 

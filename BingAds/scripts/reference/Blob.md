@@ -23,6 +23,7 @@ Returns a copy of this blob.
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="getas~string-contenttype~"></a>getAs(String contentType)
@@ -30,6 +31,7 @@ Returns the contents of this blob converted to the specified MIME type. For blob
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="getbytes"></a>getBytes
@@ -37,6 +39,7 @@ Returns the contents of this blob as a byte array.
 
 ### Returns:
 |Type|Description|
+|-|-
 Byte[]|
 
 ## <a name="getcontenttype"></a>getContentType
@@ -44,6 +47,7 @@ Returns the content type of the data stored in this blob; null if the type is no
 
 ### Returns:
 |Type|Description|
+|-|-
 String|
 
 ## <a name="getdataasstring"></a>getDataAsString
@@ -51,6 +55,7 @@ Returns the content of this blob as a String in UTF-8 encoding.
 
 ### Returns:
 |Type|Description|
+|-|-
 String|
 
 ## <a name="getdataasstring~string-charset~"></a>getDataAsString(String charset)
@@ -58,6 +63,7 @@ Returns the content of this blob as a String in the specified encoding.
 
 ### Returns:
 |Type|Description|
+|-|-
 String|
 
 ## <a name="getname"></a>getName
@@ -65,6 +71,7 @@ Returns the name of this blog.
 
 ### Returns:
 |Type|Description|
+|-|-
 String|
 
 ## <a name="setbytes~byte-data~"></a>setBytes(Byte[] data)
@@ -72,6 +79,7 @@ Sets the data to store in this blob.
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="setcontenttype~string-contenttype~"></a>setContentType(String contentType)
@@ -79,6 +87,7 @@ Sets the content type of the data stored in this blob.
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="setcontenttypefromextension~string-fileextension~"></a>setContentTypeFromExtension(String fileExtension)
@@ -86,6 +95,7 @@ Sets the content type of the data stored in this blob based on the specified fil
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="setdatafromstring~string-data~"></a>setDataFromString(String data)
@@ -93,6 +103,7 @@ Sets the data to store in this blob from the provided string in UTF-8 encoding.
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="setdatafromstring~string-data_-string-charset~"></a>setDataFromString(String data, String charset)
@@ -100,6 +111,7 @@ Sets the data to store in this blob from the provided string in the given encodi
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 
 ## <a name="setname~name~"></a>setName(name)
@@ -107,5 +119,6 @@ Sets the name of the blob.
 
 ### Returns:
 |Type|Description|
+|-|-
 [Blob](./Blob)|
 

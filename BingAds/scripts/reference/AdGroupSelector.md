@@ -39,10 +39,12 @@ Returns a selector by filtering ad groups in this selector using the date range 
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 dateRange|String|Date range to set onto the selector.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdGroupSelector](./AdGroupSelector)|The selector with date range applied.
 
 ## <a name="fordaterange~object-datefrom_-object-dateto~"></a>forDateRange(Object dateFrom, Object dateTo)
@@ -50,11 +52,13 @@ Returns a selector by filtering ad groups in this selector using the beginning a
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 dateFrom|Object|Start date of the date range.
 dateTo|Object|End date of the date range.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdGroupSelector](./AdGroupSelector)|The selector with date range applied.
 
 ## <a name="get"></a>get
@@ -62,6 +66,7 @@ Returns an iterator indexing the ad groups in this selector.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdGroupIterator](./AdGroupIterator)|Iterator of the requested ad groups.
 
 ## <a name="orderby~string-orderby~"></a>orderBy(String orderBy)
@@ -69,10 +74,12 @@ Returns a selector by specifying the condition for ordering the ad groups in thi
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 orderBy|String|Ordering to apply.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdGroupSelector](./AdGroupSelector)|The selector with ordering applied.
 
 ## <a name="withcondition~string-condition~"></a>withCondition(String condition)
@@ -80,10 +87,12 @@ Returns a selector by specifying the filtering condition on the ad groups in thi
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 condition|String|Condition to add to the selector.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdGroupSelector](./AdGroupSelector)|The selector with the condition applied.
 
 ## <a name="withids~long-ids~"></a>withIds(long[] ids)
@@ -91,10 +100,12 @@ Returns a selector by specifying the list of IDs to filter ad groups in this sel
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 ids|long[]|Array of ad group IDs.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdGroupSelector](./AdGroupSelector)|The selector restricted to the given IDs.
 
 ## <a name="withlimit~int-limit~"></a>withLimit(int limit)
@@ -102,9 +113,11 @@ Returns a selector with as many ad groups as specified by the limit argument sel
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 limit|int|How many entities to return.
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdGroupSelector](./AdGroupSelector)|The selector with limit applied.
 

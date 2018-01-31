@@ -21,6 +21,7 @@ Clears the final URL of this keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|The custom parameters of the keyword as a map of the following form:
          {key1: 'value1', key2: 'value2', key3: 'value3'}.
 
@@ -29,6 +30,7 @@ Clears the mobile final URL of this keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|The custom parameters of the keyword as a map of the following form:
          {key1: 'value1', key2: 'value2', key3: 'value3'}.
 
@@ -37,6 +39,7 @@ Clears the tracking template of this keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|The custom parameters of the keyword as a map of the following form:
          {key1: 'value1', key2: 'value2', key3: 'value3'}.
 
@@ -45,6 +48,7 @@ Returns the custom parameters of this keyword. The returned object is in the for
 
 ### Returns:
 |Type|Description|
+|-|-
 Object|The custom parameters of the keyword as a map of the following form:
          {key1: 'value1', key2: 'value2', key3: 'value3'}.
 
@@ -53,6 +57,7 @@ Returns the final URL of this keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 String|The final URL of the keyword.
 
 ## <a name="getmobilefinalurl"></a>getMobileFinalUrl
@@ -60,6 +65,7 @@ Returns the mobile final URL of this keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 String|The mobile final URL of the keyword.
 
 ## <a name="gettrackingtemplate"></a>getTrackingTemplate
@@ -67,6 +73,7 @@ Returns the tracking template of this keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 String|The tracking template of the keyword.
 
 ## <a name="setcustomparameters~string-customparameters~"></a>setCustomParameters(String customParameters)
@@ -74,10 +81,12 @@ Sets the custom parameters of this keyword. The returned object is in the format
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 customParameters|Object|The custom parameters of the keyword as a map of the<br />        form <code>{key1: 'value1', key2: 'value2', key3: 'value3'}</code>.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|
 
 ## <a name="setfinalurl~string-finalurl~"></a>setFinalUrl(String finalUrl)
@@ -85,10 +94,12 @@ Sets the final URL of this keyword.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 finalUrl|String|The final URL of the keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|
 
 ## <a name="setmobilefinalurl~string-mobilefinalurl~"></a>setMobileFinalUrl(String mobileFinalUrl)
@@ -96,10 +107,12 @@ Sets the mobile final URL of this keyword.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 mobileFinalUrl|String|The mobile final URL of the keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|
 
 ## <a name="settrackingtemplate~string-trackingtemplate~"></a>setTrackingTemplate(String trackingTemplate)
@@ -107,9 +120,11 @@ Sets the tracking template of this keyword.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 trackingTemplate|String|The tracking template of the keyword.
 
 ### Returns:
 |Type|Description|
+|-|-
 void|
 

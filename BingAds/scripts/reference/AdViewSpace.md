@@ -19,5 +19,6 @@ Returns this ad as an [ExpandedTextAd](./ExpandedTextAd).
 
 ### Returns:
 |Type|Description|
+|-|-
 [ExpandedTextAd](./ExpandedTextAd)|The ad as an ExpandedTextAd.
 

@@ -33,6 +33,7 @@ Creates and returns an ad operation that can later be used to construct the new 
 
 ### Returns:
 |Type|Description|
+|-|-
 [AdOperation](./AdOperation)|The associated ad operation.
 
 ## <a name="withcustomparameters~string-customparameters~"></a>withCustomParameters(String customParameters)
@@ -40,10 +41,12 @@ Sets the custom parameters used with this new expanded text ad. The parameters m
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 customParameters|Object|The custom parameters of the ad as a map of the<br />        following form: <code>{key1: 'value1', key2: 'value2', key3: 'value3'}</code>.
 
 ### Returns:
 |Type|Description|
+|-|-
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|The ad builder with the specified custom parameters.
 
 ## <a name="withdescription~string-description~"></a>withDescription(String description)
@@ -51,10 +54,12 @@ Sets the description of this new expanded text ad.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 description|String|The ad description.
 
 ### Returns:
 |Type|Description|
+|-|-
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|Ad builder with the specified description.
 
 ## <a name="withfinalurl~string-finalurl~"></a>withFinalUrl(String finalUrl)
@@ -62,10 +67,12 @@ Sets the final URL of this new expanded text to the specified value.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 finalUrl|String|The final URL for the ad.
 
 ### Returns:
 |Type|Description|
+|-|-
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|The ad builder with the specified final URL.
 
 ## <a name="withheadlinepart1~string-headlinepart1~"></a>withHeadlinePart1(String headlinePart1)
@@ -73,10 +80,12 @@ Sets the first part of the headline of this new expanded text ad to the specifie
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 headlinePart1|String|The first part of the headline for the ad.
 
 ### Returns:
 |Type|Description|
+|-|-
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|Ad builder with the specified first part of the headline.
 
 ## <a name="withheadlinepart2~string-headlinepart2~"></a>withHeadlinePart2(String headlinePart2)
@@ -84,10 +93,12 @@ Sets the second part of the headline of this new expanded text ad to the specifi
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 headlinePart2|String|The second part of the headline for the ad.
 
 ### Returns:
 |Type|Description|
+|-|-
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|Ad builder with the specified second part of the headline.
 
 ## <a name="withmobilefinalurl~string-mobilefinalurl~"></a>withMobileFinalUrl(String mobileFinalUrl)
@@ -95,10 +106,12 @@ Sets the mobile final URL of this new expanded text ad to the specified value.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 mobileFinalUrl|String|The mobile final URL for the ad.
 
 ### Returns:
 |Type|Description|
+|-|-
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|The ad builder with the specified final URL.
 
 ## <a name="withpath1~string-path1~"></a>withPath1(String path1)
@@ -106,10 +119,12 @@ Sets the first path of the display URL of this new expanded text ad to the speci
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 urlPath1|String|The text of the first path.
 
 ### Returns:
 |Type|Description|
+|-|-
 [ExpandedTextAdBuilder](ExpandedTextAdBuilder)|Ad builder with the specified first URL path.
 
 ## <a name="withpath2~string-path2~"></a>withPath2(String path2)
@@ -117,10 +132,12 @@ Sets the second path of the display URL of this new expanded text ad to the spec
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 urlPath2|String|The text of the second path.
 
 ### Returns:
 |Type|Description|
+|-|-
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|Ad builder with the specified second URL path.
 
 ## <a name="withtrackingtemplate~string-trackingtemplate~"></a>withTrackingTemplate(String trackingTemplate)
@@ -128,9 +145,11 @@ Sets the tracking template of this new expanded text ad to the specified value.
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 trackingTemplate|String|The tracking template for the ad.
 
 ### Returns:
 |Type|Description|
+|-|-
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|The ad builder with the specified tracking template.
 

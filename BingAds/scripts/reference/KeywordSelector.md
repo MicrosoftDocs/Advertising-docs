@@ -43,10 +43,12 @@ Returns a selector by filtering keywords in this selector using the date range p
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 dateRange|String|Date range to set onto the selector.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordSelector](./KeywordSelector)|The selector with date range applied.
 
 ## <a name="fordaterange~object-datefrom_-object-dateto~"></a>forDateRange(Object dateFrom, Object dateTo)
@@ -54,11 +56,13 @@ Returns a selector by filtering keywords in this selector using the beginning an
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 dateFrom|Object|Start date of the date range.
 dateTo|Object|End date of the date range.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordSelector](./KeywordSelector)|The selector with date range applied.
 
 ## <a name="get"></a>get
@@ -66,6 +70,7 @@ Returns an iterator indexing the keywords in this selector.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordIterator](./KeywordIterator)|Iterator of the requested keywords.
 
 ## <a name="orderby~string-orderby~"></a>orderBy(String orderBy)
@@ -73,10 +78,12 @@ Returns a selector by specifying the condition for ordering the keywords in this
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 orderBy|String|Ordering to apply.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordSelector](./KeywordSelector)|The selector with ordering applied.
 
 ## <a name="withcondition~string-condition~"></a>withCondition(String condition)
@@ -84,10 +91,12 @@ Returns a selector by specifying the filtering condition on the keywords in this
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 condition|String|Condition to add to the selector.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordSelector](./KeywordSelector)|The selector with the condition applied.
 
 ## <a name="withids~long-ids~"></a>withIds(long[] ids)
@@ -95,10 +104,12 @@ Returns a selector by specifying the list of IDs to filter keywords in this sele
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 ids|long[][]|Array of keyword IDs.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordSelector](./KeywordSelector)|The selector restricted to the given IDs.
 
 ## <a name="withlimit~int-limit~"></a>withLimit(int limit)
@@ -106,9 +117,11 @@ Returns a selector with as many keywords as specified by the limit argument sele
 
 ### Arguments:
 |Name|Type|Description|
+|-|-|-
 limit|int|How many entities to return.
 
 ### Returns:
 |Type|Description|
+|-|-
 [KeywordSelector](./KeywordSelector)|The selector with limit applied.
 
