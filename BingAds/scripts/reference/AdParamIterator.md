@@ -18,12 +18,21 @@ Example usage:
 ## <a name="hasnext"></a>hasNext
 Returns 
 
+### Returns:
+|Type|Description|
+boolean|true if the iterator has more elements.
 
 ## <a name="next"></a>next
 Advances to the next ad param in this iterator and returns it.
 
+### Returns:
+|Type|Description|
+[AdParam](./AdParam)|The next AdParam in the iterator.
 
 ## <a name="totalnumentities"></a>totalNumEntities
 Returns the total number of ad params indexed by this iterator.
 
+### Returns:
+|Type|Description|
+int|The number of entities matched by the selector which generated this iterator.
 

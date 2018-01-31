@@ -10,8 +10,14 @@ Provides methods to fetch resources and communicate with other hosts over the In
 ## <a name="fetch~string-url~"></a>fetch(String url)
 Places a request to fetch a URL. The URL may be either HTTP or HTTPS.
 
+### Returns:
+|Type|Description|
+[HTTPResponse](./HTTPResponse)|
 
 ## <a name="fetch~string-url_-object-params~"></a>fetch(String url, Object params)
 Places a request to fetch a URL using optional advanced parameters. The URL may be either HTTP or HTTPS. The parameters supported are listed below.
 
+### Returns:
+|Type|Description|
+[HTTPResponse](./HTTPResponse)|
 

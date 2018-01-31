@@ -11,11 +11,21 @@ Represents the definition of an ad group constructed via [AdGroupBuilder](./AdGr
 ## <a name="geterrors"></a>getErrors
 Returns an empty array if the ad group was successfully created, otherwise returns the errors encountered during the execution of this operation.
 
+### Returns:
+|Type|Description|
+String[]|The errors that occurred during the AdGroupOperation.
 
 ## <a name="getresult"></a>getResult
 Returns the newly created `AdGroup`, otherwise returns `null` if this operation failed to execute.<br />
+### Returns:
+|Type|Description|
+[AdGroup](./AdGroup)|The AdGroup created by the
+         AdGroupOperation.
 
 ## <a name="issuccessful"></a>isSuccessful
 Returns 
 
+### Returns:
+|Type|Description|
+boolean|true if the operation was successful.
 
