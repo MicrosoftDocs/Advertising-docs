@@ -12,7 +12,7 @@ dev_langs:
 Defines a custom audience that can be downloaded and uploaded in a bulk file. 
 
 > [!NOTE]
-> Only update of the *Description* is supported for upload. You cannot add or delete a custom audience using the Bing Ads API. Having said that, you can add and delete ad group custom audience associations and exclusions.
+> Only update of the *Audience* (audience name) and *Description* fields are supported for upload. You cannot add or delete a custom audience using the Bing Ads API. Having said that, you can add and delete ad group custom audience associations and exclusions.
 
 > [!NOTE]
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
@@ -95,7 +95,7 @@ The name of the custom audience.
 The name can contain a maximum of 128 characters
 
 **Add:** Not supported  
-**Update:** Read-only    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Not supported  
 
 ### <a name="audiencesearchsize"></a>Audience Search Size
