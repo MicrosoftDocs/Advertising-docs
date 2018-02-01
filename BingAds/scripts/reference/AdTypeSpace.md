@@ -13,6 +13,7 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [expandedTextAd](#expandedtextad)|boolean|Returns true if this ad is an ExpandedTextAd. <br />
+&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="expandedtextad"></a>expandedTextAd
 Returns true if this ad is an ExpandedTextAd. 
@@ -22,4 +23,3 @@ Returns true if this ad is an ExpandedTextAd.
 |-|-
 boolean|Whether the ad is an ExpandedTextAd.
 &nbsp;|&nbsp;
-

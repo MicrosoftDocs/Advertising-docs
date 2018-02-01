@@ -36,6 +36,7 @@ Example usage:
 [getErrors](#geterrors)|String[]|Returns an empty array if the ad was successfully created, otherwise returns the errors encountered during the execution of this operation.<br />
 [getResult](#getresult)|[Ad](./Ad)|Returns the newly created Ad, otherwise returns null if this operation failed to execute.<br />
 [isSuccessful](#issuccessful)|boolean|Returns <br />
+&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="geterrors"></a>getErrors
 Returns an empty array if the ad was successfully created, otherwise returns the errors encountered during the execution of this operation.
@@ -45,7 +46,6 @@ Returns an empty array if the ad was successfully created, otherwise returns the
 |-|-
 String[]|The errors that occurred during the AdOperation.
 &nbsp;|&nbsp;
-
 ## <a name="getresult"></a>getResult
 Returns the newly created Ad, otherwise returns null if this operation failed to execute.
 
@@ -55,7 +55,6 @@ Returns the newly created Ad, otherwise returns null if this operation failed to
 [Ad](./Ad)|The Ad created by the
          AdOperation.
 &nbsp;|&nbsp;
-
 ## <a name="issuccessful"></a>isSuccessful
 Returns 
 
@@ -64,4 +63,3 @@ Returns
 |-|-
 boolean|true if the operation was successful.
 &nbsp;|&nbsp;
-

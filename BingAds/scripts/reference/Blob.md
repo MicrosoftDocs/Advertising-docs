@@ -17,6 +17,7 @@ Provides methods to represent binary data and exchange.
 [setDataFromString(String data)](#setdatafromstring~string-data~)|[Blob](./Blob)|Sets the data to store in this blob from the provided string in UTF-8 encoding.<br />
 [setDataFromString(String data, String charset)](#setdatafromstring~string-data_-string-charset~)|[Blob](./Blob)|Sets the data to store in this blob from the provided string in the given encoding.<br />
 [setName(name)](#setname~name~)|[Blob](./Blob)|Sets the name of the blob.<br />
+&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="copyblob"></a>copyBlob
 Returns a copy of this blob.
@@ -26,7 +27,6 @@ Returns a copy of this blob.
 |-|-
 [Blob](./Blob)|
 &nbsp;|&nbsp;
-
 ## <a name="getas~string-contenttype~"></a>getAs(String contentType)
 Returns the contents of this blob converted to the specified MIME type. For blobs containing images, any image format such as 'image/bmp', 'image/gif', 'image/jpeg', or 'image/png' can be specified for the input parameter.
 
@@ -35,7 +35,6 @@ Returns the contents of this blob converted to the specified MIME type. For blob
 |-|-
 [Blob](./Blob)|
 &nbsp;|&nbsp;
-
 ## <a name="getbytes"></a>getBytes
 Returns the contents of this blob as a byte array.
 
@@ -44,7 +43,6 @@ Returns the contents of this blob as a byte array.
 |-|-
 Byte[]|
 &nbsp;|&nbsp;
-
 ## <a name="getcontenttype"></a>getContentType
 Returns the content type of the data stored in this blob; null if the type is not known
 
@@ -53,7 +51,6 @@ Returns the content type of the data stored in this blob; null if the type is no
 |-|-
 String|
 &nbsp;|&nbsp;
-
 ## <a name="getdataasstring"></a>getDataAsString
 Returns the content of this blob as a String in UTF-8 encoding.
 
@@ -62,7 +59,6 @@ Returns the content of this blob as a String in UTF-8 encoding.
 |-|-
 String|
 &nbsp;|&nbsp;
-
 ## <a name="getdataasstring~string-charset~"></a>getDataAsString(String charset)
 Returns the content of this blob as a String in the specified encoding.
 
@@ -71,7 +67,6 @@ Returns the content of this blob as a String in the specified encoding.
 |-|-
 String|
 &nbsp;|&nbsp;
-
 ## <a name="getname"></a>getName
 Returns the name of this blog.
 
@@ -80,7 +75,6 @@ Returns the name of this blog.
 |-|-
 String|
 &nbsp;|&nbsp;
-
 ## <a name="setbytes~byte-data~"></a>setBytes(Byte[] data)
 Sets the data to store in this blob.
 
@@ -89,7 +83,6 @@ Sets the data to store in this blob.
 |-|-
 [Blob](./Blob)|
 &nbsp;|&nbsp;
-
 ## <a name="setcontenttype~string-contenttype~"></a>setContentType(String contentType)
 Sets the content type of the data stored in this blob.
 
@@ -98,7 +91,6 @@ Sets the content type of the data stored in this blob.
 |-|-
 [Blob](./Blob)|
 &nbsp;|&nbsp;
-
 ## <a name="setcontenttypefromextension~string-fileextension~"></a>setContentTypeFromExtension(String fileExtension)
 Sets the content type of the data stored in this blob based on the specified file extension. If the content type cannot be guessed from the specified extension, it will be set to null.
 
@@ -107,7 +99,6 @@ Sets the content type of the data stored in this blob based on the specified fil
 |-|-
 [Blob](./Blob)|
 &nbsp;|&nbsp;
-
 ## <a name="setdatafromstring~string-data~"></a>setDataFromString(String data)
 Sets the data to store in this blob from the provided string in UTF-8 encoding.
 
@@ -116,7 +107,6 @@ Sets the data to store in this blob from the provided string in UTF-8 encoding.
 |-|-
 [Blob](./Blob)|
 &nbsp;|&nbsp;
-
 ## <a name="setdatafromstring~string-data_-string-charset~"></a>setDataFromString(String data, String charset)
 Sets the data to store in this blob from the provided string in the given encoding.
 
@@ -125,7 +115,6 @@ Sets the data to store in this blob from the provided string in the given encodi
 |-|-
 [Blob](./Blob)|
 &nbsp;|&nbsp;
-
 ## <a name="setname~name~"></a>setName(name)
 Sets the name of the blob.
 
@@ -134,4 +123,3 @@ Sets the name of the blob.
 |-|-
 [Blob](./Blob)|
 &nbsp;|&nbsp;
-

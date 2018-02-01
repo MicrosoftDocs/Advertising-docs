@@ -14,6 +14,7 @@ Example usage:
 [hasNext](#hasnext)|boolean|Returns <br />
 [next](#next)|[AdParam](./AdParam)|Advances to the next ad param in this iterator and returns it.<br />
 [totalNumEntities](#totalnumentities)|int|Returns the total number of ad params indexed by this iterator.<br />
+&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="hasnext"></a>hasNext
 Returns 
@@ -23,7 +24,6 @@ Returns
 |-|-
 boolean|true if the iterator has more elements.
 &nbsp;|&nbsp;
-
 ## <a name="next"></a>next
 Advances to the next ad param in this iterator and returns it.
 
@@ -32,7 +32,6 @@ Advances to the next ad param in this iterator and returns it.
 |-|-
 [AdParam](./AdParam)|The next AdParam in the iterator.
 &nbsp;|&nbsp;
-
 ## <a name="totalnumentities"></a>totalNumEntities
 Returns the total number of ad params indexed by this iterator.
 
@@ -41,4 +40,3 @@ Returns the total number of ad params indexed by this iterator.
 |-|-
 int|The number of entities matched by the selector which generated this iterator.
 &nbsp;|&nbsp;
-

@@ -18,6 +18,7 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [expandedTextAdBuilder](#expandedtextadbuilder)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|Returns a new expanded text ad builder object associated with the parent ad group.<br />
+&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="expandedtextadbuilder"></a>expandedTextAdBuilder
 Returns a new expanded text ad builder object associated with the parent ad group.
@@ -27,4 +28,3 @@ Returns a new expanded text ad builder object associated with the parent ad grou
 |-|-
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder)|A new expanded text ad builder associated with the ad group.
 &nbsp;|&nbsp;
-

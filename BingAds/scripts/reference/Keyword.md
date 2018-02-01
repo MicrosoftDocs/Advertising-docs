@@ -30,6 +30,7 @@ Example usage:
 [remove](#remove)|void|Removes this keyword.<br />
 [setAdParam(int index, String insertionText)](#setadparam~int-index_-string-insertiontext~)|void|Creates an ad param with the specified insertion text and at the index specified on this keyword. <br />
 [urls](#urls)|[KeywordUrls](./KeywordUrls)|Returns the URL fields of this keyword.<br />
+&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="adparams"></a>adParams
 Returns a selector of all ad params under this keyword.
@@ -39,7 +40,6 @@ Returns a selector of all ad params under this keyword.
 |-|-
 [AdParamSelector](./AdParamSelector)|Selector of all ad params belonging to this keyword.
 &nbsp;|&nbsp;
-
 ## <a name="cleardestinationurl"></a>clearDestinationUrl
 Clears the destination URL of this keyword. 
 
@@ -48,7 +48,6 @@ Clears the destination URL of this keyword.
 |-|-
 void|The ad group to which this keyword belongs.
 &nbsp;|&nbsp;
-
 ## <a name="enable"></a>enable
 Enables this keyword.
 
@@ -57,7 +56,6 @@ Enables this keyword.
 |-|-
 void|The ad group to which this keyword belongs.
 &nbsp;|&nbsp;
-
 ## <a name="getadgroup"></a>getAdGroup
 Returns the parent ad group of this keyword.
 
@@ -66,7 +64,6 @@ Returns the parent ad group of this keyword.
 |-|-
 [AdGroup](AdGroup)|The ad group to which this keyword belongs.
 &nbsp;|&nbsp;
-
 ## <a name="getapprovalstatus"></a>getApprovalStatus
 Returns the approval status of this keyword. Supported values include:<br /> <br /> APPROVED,<br /> PENDING_REVIEW,<br /> UNDER_REVIEW,<br /> DISAPPROVED<br />
 
@@ -75,7 +72,6 @@ Returns the approval status of this keyword. Supported values include:<br /> <br
 |-|-
 String|The approval status of the keyword.
 &nbsp;|&nbsp;
-
 ## <a name="getcampaign"></a>getCampaign
 Returns the parent campaign of this keyword.
 
@@ -84,7 +80,6 @@ Returns the parent campaign of this keyword.
 |-|-
 [Campaign](./Campaign)|The campaign to which this keyword belongs.
 &nbsp;|&nbsp;
-
 ## <a name="getentitytype"></a>getEntityType
 Returns the entity type of this keyword, which is "Keyword".
 
@@ -93,7 +88,6 @@ Returns the entity type of this keyword, which is "Keyword".
 |-|-
 String|Type of this entity: "Keyword".
 &nbsp;|&nbsp;
-
 ## <a name="getfirstpagecpc"></a>getFirstPageCpc
 Returns the estimated first page bid for this keyword.
 
@@ -102,7 +96,6 @@ Returns the estimated first page bid for this keyword.
 |-|-
 double|The first page cpc for the keyword.
 &nbsp;|&nbsp;
-
 ## <a name="getid"></a>getId
 Returns the ID of this keyword.
 
@@ -111,7 +104,6 @@ Returns the ID of this keyword.
 |-|-
 long|The ID of the keyword.
 &nbsp;|&nbsp;
-
 ## <a name="getmatchtype"></a>getMatchType
 Returns the match type of this keyword. Supported values include:<br /> <br /> BROAD,<br /> PHRASE,<br /> EXACT<br />
 
@@ -120,7 +112,6 @@ Returns the match type of this keyword. Supported values include:<br /> <br /> B
 |-|-
 String|The match type of the keyword.
 &nbsp;|&nbsp;
-
 ## <a name="getqualityscore"></a>getQualityScore
 Returns the quality score of this keyword, in the range 1…10.
 
@@ -129,7 +120,6 @@ Returns the quality score of this keyword, in the range 1…10.
 |-|-
 int|The quality score of the keyword.
 &nbsp;|&nbsp;
-
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
 Returns stats for this keyword for the given date range. Supported values include:<br /> <br /> TODAY<br /> YESTERDAY<br /> LAST_7_DAYS<br /> THIS_WEEK_SUN_TODAY<br /> LAST_14_DAYS<br /> LAST_30_DAYS<br /> LAST_WEEK_SUN_SAT<br /> THIS_MONTH<br /> LAST_MONTH<br /> ALL_TIME<br />
 
@@ -138,13 +128,11 @@ Returns stats for this keyword for the given date range. Supported values includ
 |-|-|-
 dateRange|String|Date range for which the stats are requested.
 &nbsp;|&nbsp;|&nbsp;
-
 ### Returns:
 |Type|Description|
 |-|-
 String|The stats for the specified date range.
 &nbsp;|&nbsp;
-
 ## <a name="getstatsfor~object-datefrom_-object-dateto~"></a>getStatsFor(Object dateFrom, Object dateTo)
 Returns stats for this keyword for the given custom date range. Both parameters can be either a string in YYYYMMDD format or an object with year, month and day properties. In either case, a full date must be specified. 
 
@@ -153,13 +141,11 @@ Returns stats for this keyword for the given custom date range. Both parameters 
 |-|-|-
 dateFrom|Object|Start date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.dateTo|Object|End date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.
 &nbsp;|&nbsp;|&nbsp;
-
 ### Returns:
 |Type|Description|
 |-|-
 String|The stats for the specified date range.
 &nbsp;|&nbsp;
-
 ## <a name="gettext"></a>getText
 Returns the text of this keyword. The text will be returned in the format as follows, based on the match type of this keyword:<br /> <br /> &nbsp;•	books – broad match<br /> &nbsp;•	"books" – phrase match<br /> &nbsp;•	[origin of species] – exact match<br />
 
@@ -168,7 +154,6 @@ Returns the text of this keyword. The text will be returned in the format as fol
 |-|-
 String|The text of the keyword.
 &nbsp;|&nbsp;
-
 ## <a name="gettopofpagecpc"></a>getTopOfPageCpc
 Returns the estimated mainline bid for this keyword.
 
@@ -177,7 +162,6 @@ Returns the estimated mainline bid for this keyword.
 |-|-
 double|The top of page cpc for the keyword.
 &nbsp;|&nbsp;
-
 ## <a name="isenabled"></a>isEnabled
 Returns true if this keyword is enabled 
 
@@ -186,7 +170,6 @@ Returns true if this keyword is enabled
 |-|-
 boolean|true if the keyword is enabled.
 &nbsp;|&nbsp;
-
 ## <a name="ispaused"></a>isPaused
 Returns true if this keyword is paused. 
 
@@ -195,7 +178,6 @@ Returns true if this keyword is paused.
 |-|-
 boolean|true if the keyword is paused.
 &nbsp;|&nbsp;
-
 ## <a name="pause"></a>pause
 Pauses this keyword.
 
@@ -204,7 +186,6 @@ Pauses this keyword.
 |-|-
 void|Access to this keyword's URL fields.
 &nbsp;|&nbsp;
-
 ## <a name="remove"></a>remove
 Removes this keyword.
 
@@ -213,7 +194,6 @@ Removes this keyword.
 |-|-
 void|Access to this keyword's URL fields.
 &nbsp;|&nbsp;
-
 ## <a name="setadparam~int-index_-string-insertiontext~"></a>setAdParam(int index, String insertionText)
 Creates an ad param with the specified insertion text and at the index specified on this keyword. 
 
@@ -223,13 +203,11 @@ Creates an ad param with the specified insertion text and at the index specified
 index|int|Defines which parameterized snippet of ad text to replace. For example,<br />                      a value of <code>1</code> indicates a replacement for the <code>{param1:default-value} </code> token. This field equals either <code>1</code> and
                       <code>2</code>.insertionText|String|Numeric value to insert into the ad text.
 &nbsp;|&nbsp;|&nbsp;
-
 ### Returns:
 |Type|Description|
 |-|-
 void|Access to this keyword's URL fields.
 &nbsp;|&nbsp;
-
 ## <a name="urls"></a>urls
 Returns the URL fields of this keyword.
 
@@ -238,4 +216,3 @@ Returns the URL fields of this keyword.
 |-|-
 [KeywordUrls](./KeywordUrls)|Access to this keyword's URL fields.
 &nbsp;|&nbsp;
-

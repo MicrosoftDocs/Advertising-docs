@@ -7,6 +7,7 @@ Represents the definition of an ad group constructed via [AdGroupBuilder](./AdGr
 [getErrors](#geterrors)|String[]|Returns an empty array if the ad group was successfully created, otherwise returns the errors encountered during the execution of this operation.<br />
 [getResult](#getresult)|[AdGroup](./AdGroup)|Returns the newly created `AdGroup`, otherwise returns `null` if this operation failed to execute.<br />
 [isSuccessful](#issuccessful)|boolean|Returns <br />
+&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="geterrors"></a>getErrors
 Returns an empty array if the ad group was successfully created, otherwise returns the errors encountered during the execution of this operation.
@@ -16,7 +17,6 @@ Returns an empty array if the ad group was successfully created, otherwise retur
 |-|-
 String[]|The errors that occurred during the AdGroupOperation.
 &nbsp;|&nbsp;
-
 ## <a name="getresult"></a>getResult
 Returns the newly created `AdGroup`, otherwise returns `null` if this operation failed to execute.<br />
 ### Returns:
@@ -25,7 +25,6 @@ Returns the newly created `AdGroup`, otherwise returns `null` if this operation 
 [AdGroup](./AdGroup)|The AdGroup created by the
          AdGroupOperation.
 &nbsp;|&nbsp;
-
 ## <a name="issuccessful"></a>isSuccessful
 Returns 
 
@@ -34,4 +33,3 @@ Returns
 |-|-
 boolean|true if the operation was successful.
 &nbsp;|&nbsp;
-

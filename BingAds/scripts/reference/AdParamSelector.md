@@ -15,6 +15,7 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [get](#get)|[AdParamIterator](./AdParamIterator)|Returns an iterator indexing the ad params in this selector.<br />
+&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="get"></a>get
 Returns an iterator indexing the ad params in this selector.
@@ -24,4 +25,3 @@ Returns an iterator indexing the ad params in this selector.
 |-|-
 [AdParamIterator](./AdParamIterator)|Iterator of the requested ad params.
 &nbsp;|&nbsp;
-

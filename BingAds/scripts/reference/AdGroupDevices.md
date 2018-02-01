@@ -18,6 +18,7 @@ Example usage:
 [setDesktopBidModifier(double bidModifier)](#setdesktopbidmodifier~double-bidmodifier~)|void|Sets the desktop bid modifier for this ad group to the provided value.<br />
 [setMobileBidModifier(double bidModifier)](#setmobilebidmodifier~double-bidmodifier~)|void|Sets the mobile bid modifier for this ad group to the provided value.<br />
 [setTabletBidModifier(double bidModifier)](#settabletbidmodifier~double-bidmodifier~)|void|Sets the tablet bid modifier for this ad group to the provided value.<br />
+&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="cleardesktopbidmodifier"></a>clearDesktopBidModifier
 Clears the desktop bid modifier for this ad group.
@@ -27,7 +28,6 @@ Clears the desktop bid modifier for this ad group.
 |-|-
 void|The desktop bid modifier.
 &nbsp;|&nbsp;
-
 ## <a name="clearmobilebidmodifier"></a>clearMobileBidModifier
 Clears the mobile bid modifier for this ad group.
 
@@ -36,7 +36,6 @@ Clears the mobile bid modifier for this ad group.
 |-|-
 void|The desktop bid modifier.
 &nbsp;|&nbsp;
-
 ## <a name="cleartabletbidmodifier"></a>clearTabletBidModifier
 Clears the tablet bid modifier for this ad group.
 
@@ -45,7 +44,6 @@ Clears the tablet bid modifier for this ad group.
 |-|-
 void|The desktop bid modifier.
 &nbsp;|&nbsp;
-
 ## <a name="getdesktopbidmodifier"></a>getDesktopBidModifier
 Returns the current desktop bid modifier for this ad group.
 
@@ -54,7 +52,6 @@ Returns the current desktop bid modifier for this ad group.
 |-|-
 double|The desktop bid modifier.
 &nbsp;|&nbsp;
-
 ## <a name="getmobilebidmodifier"></a>getMobileBidModifier
 Returns the current mobile bid modifier for this ad group.
 
@@ -63,7 +60,6 @@ Returns the current mobile bid modifier for this ad group.
 |-|-
 double|The mobile bid modifier.
 &nbsp;|&nbsp;
-
 ## <a name="gettabletbidmodifier"></a>getTabletBidModifier
 Returns the current tablet bid modifier for this ad group.
 
@@ -72,7 +68,6 @@ Returns the current tablet bid modifier for this ad group.
 |-|-
 double|The tablet bid modifier.
 &nbsp;|&nbsp;
-
 ## <a name="setdesktopbidmodifier~double-bidmodifier~"></a>setDesktopBidModifier(double bidModifier)
 Sets the desktop bid modifier for this ad group to the provided value.
 
@@ -81,13 +76,11 @@ Sets the desktop bid modifier for this ad group to the provided value.
 |-|-|-
 modifier|double|The new desktop bid modifier.
 &nbsp;|&nbsp;|&nbsp;
-
 ### Returns:
 |Type|Description|
 |-|-
 void|
 &nbsp;|&nbsp;
-
 ## <a name="setmobilebidmodifier~double-bidmodifier~"></a>setMobileBidModifier(double bidModifier)
 Sets the mobile bid modifier for this ad group to the provided value.
 
@@ -96,13 +89,11 @@ Sets the mobile bid modifier for this ad group to the provided value.
 |-|-|-
 modifier|double|The new mobile bid modifier.
 &nbsp;|&nbsp;|&nbsp;
-
 ### Returns:
 |Type|Description|
 |-|-
 void|
 &nbsp;|&nbsp;
-
 ## <a name="settabletbidmodifier~double-bidmodifier~"></a>setTabletBidModifier(double bidModifier)
 Sets the tablet bid modifier for this ad group to the provided value.
 
@@ -111,10 +102,8 @@ Sets the tablet bid modifier for this ad group to the provided value.
 |-|-|-
 modifier|double|The new tablet bid modifier.
 &nbsp;|&nbsp;|&nbsp;
-
 ### Returns:
 |Type|Description|
 |-|-
 void|
 &nbsp;|&nbsp;
-

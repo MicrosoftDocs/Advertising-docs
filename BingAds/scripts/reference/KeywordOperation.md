@@ -30,6 +30,7 @@ Example usage:
 [getErrors](#geterrors)|String[]|Returns an empty array if the keyword was successfully created, otherwise returns the errors encountered during the execution of this operation.<br />
 [getResult](#getresult)|[Keyword](./Keyword)|Returns the newly created Keyword, otherwise returns null if this operation failed to execute.<br />
 [isSuccessful](#issuccessful)|boolean|Returns <br />
+&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="geterrors"></a>getErrors
 Returns an empty array if the keyword was successfully created, otherwise returns the errors encountered during the execution of this operation.
@@ -39,7 +40,6 @@ Returns an empty array if the keyword was successfully created, otherwise return
 |-|-
 String[]|The errors that occurred during the KeywordOperation.
 &nbsp;|&nbsp;
-
 ## <a name="getresult"></a>getResult
 Returns the newly created Keyword, otherwise returns null if this operation failed to execute.
 
@@ -49,7 +49,6 @@ Returns the newly created Keyword, otherwise returns null if this operation fail
 [Keyword](./Keyword)|The Keyword created by the
          KeywordOperation.
 &nbsp;|&nbsp;
-
 ## <a name="issuccessful"></a>isSuccessful
 Returns 
 
@@ -58,4 +57,3 @@ Returns
 |-|-
 boolean|true if the operation was successful.
 &nbsp;|&nbsp;
-
