@@ -148,7 +148,7 @@ A point of sale (POS) contains a `URL` element that identifies the site where us
 The following shows the syntax that you use to specify dynamic query parameters in your POS URL.
 
 ```
-http://domain.com/path?param-name=(dynamic-varible-name)
+http://domain.com/path?param-name=(dynamic-variable-name)
 ```
 
 The following are the possible dynamic variable names that you may specify in the URL.
@@ -167,12 +167,15 @@ The following are the possible dynamic variable names that you may specify in th
 |CUSTOM[1-5]|The values of the custom fields (for example, Custom1) specified in the `Result` element of the Transaction message.
 |DATE-TYPE|Indicates whether the user specified check-in and check-out dates. The following are the possible values.<ul><li>default&mdash;The user clicked on a hotel ad that used default dates.</li><li>selected&mdash;The user clicked on a hotel ad with specific check-in and check-out dates.</li></ul>
 |BING-SITE|The Bing property that originated the ad request. The following are the possible values.<ul><li>localuniversal&mdash;The ad originated from a search results page.</li><li>mapresults&mdash;The ad originated from a maps site.</li><li>unknown&mdash;The ad originated from an undetermined source.</li></ul>
+|HOTELGROUP_ID|The ID of the hotel group that the hotel ad belongs to.
 |LENGTH|The length of stay specified in the `Nights` element of the Transaction Message. For example, 3.
 |NUM-ADULTS|The number of adults occupying the room. The default value is 2.
 |PARTNER-CURRENCY|The three-letter currency code specified in the currency attribute of the `Baserate` element in the Transaction Message. For example, USD.
 |PARTNER-HOTEL-ID|The hotel's ID specified in the `id` element of the Hotel Feed.
 |PRICE-DISPLAYED-TAX|The amount of tax in the user's local currency. The tax amount is based on the `Tax` element specified in the Transaction Message. For example, 3.14. 
 |PRICE‑DISPLAYED‑TOTAL|The total cost of the room in the user's local currency. The amount is based on the sum of the `Baserate`, `Tax`, and `OtherFees` elements specified in the Transaction Message. For example, 152.13.
+|SLOT_TYPE|The placement of the ad on the results page. The parameter may contain the following possible values:<ul><li>A&mdash;The priority slot where ads are shown on the results page when it loads.</li><li>B&mdash;The secondary slot where ads are shown only after the user clicks **More rates**.</li></ul>
+|SUBACCOUNT_ID|The ID of the subaccount that the hotel ads campaign belongs to.
 |USER-COUNTRY|Two-letter country code of the country where the user is located. The value is extracted from the end-user's client settings. For example, US.
 |USER-CURRENCY|Three-letter currency code of the local currency used by the user. The value is inferred from the end-user's client settings. For example, USD.
 |USER-DEVICE|The end-user's device type. The following are the possible values.<ul><li>mobile</li><li>tablet</li><li>desktop</li><li>unknown</li></ul>The value is inferred from the end-user's client settings.
