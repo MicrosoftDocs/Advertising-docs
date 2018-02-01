@@ -15,6 +15,7 @@ Returns the day of month (1 to 31) for this date.
 |Type|Description|
 |-|-
 int|
+&nbsp;|&nbsp;
 
 ## <a name="month"></a>month
 Returns the month as a number (1 to 12) for this date.
@@ -23,6 +24,7 @@ Returns the month as a number (1 to 12) for this date.
 |Type|Description|
 |-|-
 int|
+&nbsp;|&nbsp;
 
 ## <a name="year"></a>year
 Returns the year for this date.
@@ -31,4 +33,5 @@ Returns the year for this date.
 |Type|Description|
 |-|-
 int|
+&nbsp;|&nbsp;
 

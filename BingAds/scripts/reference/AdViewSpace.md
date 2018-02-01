@@ -21,4 +21,5 @@ Returns this ad as an [ExpandedTextAd](./ExpandedTextAd).
 |Type|Description|
 |-|-
 [ExpandedTextAd](./ExpandedTextAd)|The ad as an ExpandedTextAd.
+&nbsp;|&nbsp;
 

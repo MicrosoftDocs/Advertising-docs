@@ -18,6 +18,7 @@ Returns the entity type of this ad param, which is “AdParam”.
 |Type|Description|
 |-|-
 String|Type of this entity: "AdParam".
+&nbsp;|&nbsp;
 
 ## <a name="getindex"></a>getIndex
 Returns the index of this ad param.
@@ -26,6 +27,7 @@ Returns the index of this ad param.
 |Type|Description|
 |-|-
 int|The index of the ad param.
+&nbsp;|&nbsp;
 
 ## <a name="getinsertiontext"></a>getInsertionText
 Returns the insertion text of this ad param.
@@ -34,6 +36,7 @@ Returns the insertion text of this ad param.
 |Type|Description|
 |-|-
 String|The insertion text of the ad param.
+&nbsp;|&nbsp;
 
 ## <a name="getkeyword"></a>getKeyword
 Returns the Keyword this ad param belongs to.
@@ -42,6 +45,7 @@ Returns the Keyword this ad param belongs to.
 |Type|Description|
 |-|-
 [Keyword](./Keyword)|The Keyword the ad param belongs to.
+&nbsp;|&nbsp;
 
 ## <a name="remove"></a>remove
 Removes this ad param.
@@ -50,6 +54,7 @@ Removes this ad param.
 |Type|Description|
 |-|-
 void|
+&nbsp;|&nbsp;
 
 ## <a name="setinsertiontext~string-insertiontext~"></a>setInsertionText(String insertionText)
 Sets the insertion text of this ad param to the given value.
@@ -58,9 +63,11 @@ Sets the insertion text of this ad param to the given value.
 |Name|Type|Description|
 |-|-|-
 insertionText|String|Insertion text.
+&nbsp;|&nbsp;|&nbsp;
 
 ### Returns:
 |Type|Description|
 |-|-
 void|
+&nbsp;|&nbsp;
 

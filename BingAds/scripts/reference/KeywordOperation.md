@@ -38,6 +38,7 @@ Returns an empty array if the keyword was successfully created, otherwise return
 |Type|Description|
 |-|-
 String[]|The errors that occurred during the KeywordOperation.
+&nbsp;|&nbsp;
 
 ## <a name="getresult"></a>getResult
 Returns the newly created Keyword, otherwise returns null if this operation failed to execute.
@@ -47,6 +48,7 @@ Returns the newly created Keyword, otherwise returns null if this operation fail
 |-|-
 [Keyword](./Keyword)|The Keyword created by the
          KeywordOperation.
+&nbsp;|&nbsp;
 
 ## <a name="issuccessful"></a>isSuccessful
 Returns 
@@ -55,4 +57,5 @@ Returns
 |Type|Description|
 |-|-
 boolean|true if the operation was successful.
+&nbsp;|&nbsp;
 

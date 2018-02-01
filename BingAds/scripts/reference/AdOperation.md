@@ -44,6 +44,7 @@ Returns an empty array if the ad was successfully created, otherwise returns the
 |Type|Description|
 |-|-
 String[]|The errors that occurred during the AdOperation.
+&nbsp;|&nbsp;
 
 ## <a name="getresult"></a>getResult
 Returns the newly created Ad, otherwise returns null if this operation failed to execute.
@@ -53,6 +54,7 @@ Returns the newly created Ad, otherwise returns null if this operation failed to
 |-|-
 [Ad](./Ad)|The Ad created by the
          AdOperation.
+&nbsp;|&nbsp;
 
 ## <a name="issuccessful"></a>isSuccessful
 Returns 
@@ -61,4 +63,5 @@ Returns
 |Type|Description|
 |-|-
 boolean|true if the operation was successful.
+&nbsp;|&nbsp;
 

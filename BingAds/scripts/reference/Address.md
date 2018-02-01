@@ -19,6 +19,7 @@ Returns the city name of this address, or null if not provided.
 |Type|Description|
 |-|-
 String|The city name, or null if not known.
+&nbsp;|&nbsp;
 
 ## <a name="getcountrycode"></a>getCountryCode
 Returns the country code of this address, or null if not provided.
@@ -27,6 +28,7 @@ Returns the country code of this address, or null if not provided.
 |Type|Description|
 |-|-
 String|The country code, or null if not known.
+&nbsp;|&nbsp;
 
 ## <a name="getpostalcode"></a>getPostalCode
 Returns the postal code of this address, or null if not provided. 
@@ -35,6 +37,7 @@ Returns the postal code of this address, or null if not provided.
 |Type|Description|
 |-|-
 String|The postal code, or null if not known.
+&nbsp;|&nbsp;
 
 ## <a name="getprovincecode"></a>getProvinceCode
 Returns the province code of this address, or null if not provided.
@@ -43,6 +46,7 @@ Returns the province code of this address, or null if not provided.
 |Type|Description|
 |-|-
 String|The province code, or null if not known.
+&nbsp;|&nbsp;
 
 ## <a name="getprovincename"></a>getProvinceName
 Returns the province name of this address, or null if not provided. 
@@ -51,6 +55,7 @@ Returns the province name of this address, or null if not provided.
 |Type|Description|
 |-|-
 String|The province name, or null if not known.
+&nbsp;|&nbsp;
 
 ## <a name="getstreetaddress"></a>getStreetAddress
 Returns the street address of this address, or null if not provided 
@@ -59,6 +64,7 @@ Returns the street address of this address, or null if not provided
 |Type|Description|
 |-|-
 String|The street address, or null if not known.
+&nbsp;|&nbsp;
 
 ## <a name="getstreetaddress2"></a>getStreetAddress2
 Returns the second line of the street address of this address, or null if not provided
@@ -67,4 +73,5 @@ Returns the second line of the street address of this address, or null if not pr
 |Type|Description|
 |-|-
 String|The second line of the street address, or null if not known.
+&nbsp;|&nbsp;
 

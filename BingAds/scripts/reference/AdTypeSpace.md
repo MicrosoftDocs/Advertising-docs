@@ -21,4 +21,5 @@ Returns true if this ad is an ExpandedTextAd.
 |Type|Description|
 |-|-
 boolean|Whether the ad is an ExpandedTextAd.
+&nbsp;|&nbsp;
 

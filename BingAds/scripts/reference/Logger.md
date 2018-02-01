@@ -16,6 +16,7 @@ Clears this log.
 |Type|Description|
 |-|-
 void|
+&nbsp;|&nbsp;
 
 ## <a name="getlog"></a>getLog
 Returns the complete list of messages in the current log.
@@ -24,6 +25,7 @@ Returns the complete list of messages in the current log.
 |Type|Description|
 |-|-
 String|
+&nbsp;|&nbsp;
 
 ## <a name="log~data~"></a>log(data)
 Write the provided string to the logger's console.
@@ -32,6 +34,7 @@ Write the provided string to the logger's console.
 |Type|Description|
 |-|-
 [Logger](./Logger)|
+&nbsp;|&nbsp;
 
 ## <a name="log~format_-values~"></a>log(format, values)
 Writes a formatted string to the logger's console, using the string format and values provided.
@@ -40,4 +43,5 @@ Writes a formatted string to the logger's console, using the string format and v
 |Type|Description|
 |-|-
 [Logger](./Logger)|
+&nbsp;|&nbsp;
 

@@ -22,6 +22,7 @@ Returns
 |Type|Description|
 |-|-
 boolean|true if the iterator has more elements.
+&nbsp;|&nbsp;
 
 ## <a name="next"></a>next
 Advances to the next ad param in this iterator and returns it.
@@ -30,6 +31,7 @@ Advances to the next ad param in this iterator and returns it.
 |Type|Description|
 |-|-
 [AdParam](./AdParam)|The next AdParam in the iterator.
+&nbsp;|&nbsp;
 
 ## <a name="totalnumentities"></a>totalNumEntities
 Returns the total number of ad params indexed by this iterator.
@@ -38,4 +40,5 @@ Returns the total number of ad params indexed by this iterator.
 |Type|Description|
 |-|-
 int|The number of entities matched by the selector which generated this iterator.
+&nbsp;|&nbsp;
 

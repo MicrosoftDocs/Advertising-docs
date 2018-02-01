@@ -22,6 +22,7 @@ Returns
 |Type|Description|
 |-|-
 boolean|true if the iterator has more elements.
+&nbsp;|&nbsp;
 
 ## <a name="next"></a>next
 Advances to the next ad in this iterator and returns it.
@@ -30,6 +31,7 @@ Advances to the next ad in this iterator and returns it.
 |Type|Description|
 |-|-
 [Ad](./Ad)|The next Ad in the iterator.
+&nbsp;|&nbsp;
 
 ## <a name="totalnumentities"></a>totalNumEntities
 Returns the total number of ads indexed by this iterator. Note that if the total number of entities returned by this method exceeds the limit for entity reads, the hasNext method will return false and next will throw an error as soon as the latter is reached.
@@ -38,4 +40,5 @@ Returns the total number of ads indexed by this iterator. Note that if the total
 |Type|Description|
 |-|-
 int|The number of entities matched by the selector which generated this iterator.
+&nbsp;|&nbsp;
 

@@ -20,6 +20,7 @@ Returns a JavaScript key/value map of HTTP headers.
 |Type|Description|
 |-|-
 Object|
+&nbsp;|&nbsp;
 
 ## <a name="getas~string-contenttype~"></a>getAs(String contentType)
 Returns the contents of this object as a blob converted to the specified MIME type. For blobs containing images,  any image format such as 'image/bmp', 'image/gif', 'image/jpeg', or 'image/png' can be specified for the input parameter.
@@ -28,6 +29,7 @@ Returns the contents of this object as a blob converted to the specified MIME ty
 |Type|Description|
 |-|-
 [Blob](./Blob)|
+&nbsp;|&nbsp;
 
 ## <a name="getblob"></a>getBlob
 Returns the data inside this object as a blob.
@@ -36,6 +38,7 @@ Returns the data inside this object as a blob.
 |Type|Description|
 |-|-
 [Blob](./Blob)|
+&nbsp;|&nbsp;
 
 ## <a name="getcontent"></a>getContent
 Returns the raw binary content of this HTTP response as a byte array.
@@ -44,6 +47,7 @@ Returns the raw binary content of this HTTP response as a byte array.
 |Type|Description|
 |-|-
 Byte[]|
+&nbsp;|&nbsp;
 
 ## <a name="getcontenttext"></a>getContentText
 Returns the content of this HTTP response encoded as a string.
@@ -52,6 +56,7 @@ Returns the content of this HTTP response encoded as a string.
 |Type|Description|
 |-|-
 String|
+&nbsp;|&nbsp;
 
 ## <a name="getcontenttext~string-charset~"></a>getContentText(String charset)
 Returns the content of this HTTP response encoded as a string using the specified character set.
@@ -60,6 +65,7 @@ Returns the content of this HTTP response encoded as a string using the specifie
 |Type|Description|
 |-|-
 String|
+&nbsp;|&nbsp;
 
 ## <a name="getheaders"></a>getHeaders
 Returns the attribute/value map of headers for this HTTP response.
@@ -68,6 +74,7 @@ Returns the attribute/value map of headers for this HTTP response.
 |Type|Description|
 |-|-
 Object|
+&nbsp;|&nbsp;
 
 ## <a name="getresponsecode"></a>getResponseCode
 Returns the HTTP status code (for e.g., 200 for OK) of this HTTP response.
@@ -76,4 +83,5 @@ Returns the HTTP status code (for e.g., 200 for OK) of this HTTP response.
 |Type|Description|
 |-|-
 int|
+&nbsp;|&nbsp;
 

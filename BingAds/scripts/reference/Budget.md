@@ -27,6 +27,7 @@ Returns the selector of all campaigns that share this budget.
 |Type|Description|
 |-|-
 [CampaignSelector](./CampaignSelector)|Selector of all campaigns that share this budget.
+&nbsp;|&nbsp;
 
 ## <a name="getamount"></a>getAmount
 Returns the amount of this budget, in the currency of the current account.
@@ -35,6 +36,7 @@ Returns the amount of this budget, in the currency of the current account.
 |Type|Description|
 |-|-
 double|Amount of the budget.
+&nbsp;|&nbsp;
 
 ## <a name="getdeliverymethod"></a>getDeliveryMethod
 Returns the delivery method for this budget. Supported values include:<br /> <br /> STANDARD,<br /> ACCELERATED<br />
@@ -43,6 +45,7 @@ Returns the delivery method for this budget. Supported values include:<br /> <br
 |Type|Description|
 |-|-
 String|Delivery method of the budget.
+&nbsp;|&nbsp;
 
 ## <a name="getentitytype"></a>getEntityType
 Returns the entity type of this budget, in this case "Budget".
@@ -51,6 +54,7 @@ Returns the entity type of this budget, in this case "Budget".
 |Type|Description|
 |-|-
 String|Type of this entity: "Budget".
+&nbsp;|&nbsp;
 
 ## <a name="getid"></a>getId
 Returns the ID of this budget.
@@ -59,6 +63,7 @@ Returns the ID of this budget.
 |Type|Description|
 |-|-
 long|The ID of the budget.
+&nbsp;|&nbsp;
 
 ## <a name="getname"></a>getName
 Returns the name of this budget.
@@ -67,6 +72,7 @@ Returns the name of this budget.
 |Type|Description|
 |-|-
 String|Name of the budget.
+&nbsp;|&nbsp;
 
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
 Returns stats for this budget for the given date range. Supported values include:<br /> <br /> TODAY<br /> YESTERDAY<br /> LAST_7_DAYS<br /> THIS_WEEK_SUN_TODAY<br /> LAST_14_DAYS<br /> LAST_30_DAYS<br /> LAST_WEEK_SUN_SAT<br /> THIS_MONTH<br /> LAST_MONTH<br /> ALL_TIME<br />
@@ -75,11 +81,13 @@ Returns stats for this budget for the given date range. Supported values include
 |Name|Type|Description|
 |-|-|-
 dateRange|String|Date range for which the stats are requested.
+&nbsp;|&nbsp;|&nbsp;
 
 ### Returns:
 |Type|Description|
 |-|-
 String|The stats for the specified date range.
+&nbsp;|&nbsp;
 
 ## <a name="getstatsfor~object-datefrom_-object-dateto~"></a>getStatsFor(Object dateFrom, Object dateTo)
 Returns stats for this budget for the given custom date range. Both parameters can be either a string in YYYYMMDD format or an object with year, month and day properties. In either case, a full date must be specified.
@@ -87,13 +95,14 @@ Returns stats for this budget for the given custom date range. Both parameters c
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
-dateFrom|Object|Start date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.
-dateTo|Object|End date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.
+dateFrom|Object|Start date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.dateTo|Object|End date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.
+&nbsp;|&nbsp;|&nbsp;
 
 ### Returns:
 |Type|Description|
 |-|-
 String|The stats for the specified date range.
+&nbsp;|&nbsp;
 
 ## <a name="isexplicitlyshared"></a>isExplicitlyShared
 Returns true if this budget is shared across two or more campaigns; false otherwise. 
@@ -102,6 +111,7 @@ Returns true if this budget is shared across two or more campaigns; false otherw
 |Type|Description|
 |-|-
 boolean|true if the budget is explicitly shared.
+&nbsp;|&nbsp;
 
 ## <a name="setamount~double-amount~"></a>setAmount(double amount)
 Sets the amount of this budget to the specified value, in the currency of the current account.
@@ -110,9 +120,11 @@ Sets the amount of this budget to the specified value, in the currency of the cu
 |Name|Type|Description|
 |-|-|-
 amount|double|The amount of the budget.
+&nbsp;|&nbsp;|&nbsp;
 
 ### Returns:
 |Type|Description|
 |-|-
 void|
+&nbsp;|&nbsp;
 

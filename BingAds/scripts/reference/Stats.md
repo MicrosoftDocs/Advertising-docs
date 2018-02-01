@@ -29,6 +29,7 @@ Returns the average cost per click of the associated entity.
 |Type|Description|
 |-|-
 double|The average cost per click.
+&nbsp;|&nbsp;
 
 ## <a name="getaveragecpm"></a>getAverageCpm
 Returns the average cost per thousand impressions of the associated entity.
@@ -37,6 +38,7 @@ Returns the average cost per thousand impressions of the associated entity.
 |Type|Description|
 |-|-
 double|The average cost per thousand impressions.
+&nbsp;|&nbsp;
 
 ## <a name="getaverageposition"></a>getAveragePosition
 Returns the average position of the associated entity.
@@ -45,6 +47,7 @@ Returns the average position of the associated entity.
 |Type|Description|
 |-|-
 double|The average position.
+&nbsp;|&nbsp;
 
 ## <a name="getclickconversionrate"></a>getClickConversionRate
 Returns the conversion rate for clicks of the associated entity within the 0..1 range.
@@ -53,6 +56,7 @@ Returns the conversion rate for clicks of the associated entity within the 0..1 
 |Type|Description|
 |-|-
 double|
+&nbsp;|&nbsp;
 
 ## <a name="getclicks"></a>getClicks
 Returns the number of clicks of the associated entity.
@@ -61,6 +65,7 @@ Returns the number of clicks of the associated entity.
 |Type|Description|
 |-|-
 long|The number of clicks.
+&nbsp;|&nbsp;
 
 ## <a name="getconvertedclicks"></a>getConvertedClicks
 Returns the number of clicks that converted of the associated entity.
@@ -69,6 +74,7 @@ Returns the number of clicks that converted of the associated entity.
 |Type|Description|
 |-|-
 long|
+&nbsp;|&nbsp;
 
 ## <a name="getcost"></a>getCost
 Returns the cost (spend) of the associated entity in the currency of the current account.
@@ -77,6 +83,7 @@ Returns the cost (spend) of the associated entity in the currency of the current
 |Type|Description|
 |-|-
 double|The cost in the default currency of the account.
+&nbsp;|&nbsp;
 
 ## <a name="getctr"></a>getCtr
 Returns the calick through rate of the associated entity within the 0..1 range. 
@@ -85,6 +92,7 @@ Returns the calick through rate of the associated entity within the 0..1 range.
 |Type|Description|
 |-|-
 double|The click through rate.
+&nbsp;|&nbsp;
 
 ## <a name="getimpressions"></a>getImpressions
 Returns the number of impressions of the associated entity.
@@ -93,4 +101,5 @@ Returns the number of impressions of the associated entity.
 |Type|Description|
 |-|-
 long|The number of impressions.
+&nbsp;|&nbsp;
 

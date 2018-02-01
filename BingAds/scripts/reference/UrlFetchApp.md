@@ -14,6 +14,7 @@ Places a request to fetch a URL. The URL may be either HTTP or HTTPS.
 |Type|Description|
 |-|-
 [HTTPResponse](./HTTPResponse)|
+&nbsp;|&nbsp;
 
 ## <a name="fetch~string-url_-object-params~"></a>fetch(String url, Object params)
 Places a request to fetch a URL using optional advanced parameters. The URL may be either HTTP or HTTPS. The parameters supported are listed below.
@@ -22,4 +23,5 @@ Places a request to fetch a URL using optional advanced parameters. The URL may 
 |Type|Description|
 |-|-
 [HTTPResponse](./HTTPResponse)|
+&nbsp;|&nbsp;
 
