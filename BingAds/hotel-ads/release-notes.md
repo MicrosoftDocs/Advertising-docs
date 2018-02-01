@@ -28,7 +28,7 @@ For information about changes that were included with each release, see the foll
 
 
 
-## January 17, 2017
+## February 1, 2017
 
 ### Nonbreaking changes
 
