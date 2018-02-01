@@ -27,6 +27,18 @@ For information about changes that were included with each release, see the foll
 - Added support for sending [Hotel feeds](../hotel-feed/hotel-feed.md) in TSV and CSV file format. For details, see [Creating a CSV Hotel Feed](../hotel-feed/create-csv-hotel-feed.md).
 
 
+
+## January 17, 2017
+
+### Nonbreaking changes
+
+- Added the following dynamic query parameters to the [URL](../pos-feed/reference.md#postype_url) element of the Points of Sale (POS) feed. [Read more](../pos-feed/create-pos-feed.md#using-dynamic-query-parameters).  
+  
+  - SUBACCOUNT_ID  
+  - HOTELGROUP_ID  
+  - SLOT_TYPE
+
+
 ## January 17, 2017
 
 ### Breaking changes coming
