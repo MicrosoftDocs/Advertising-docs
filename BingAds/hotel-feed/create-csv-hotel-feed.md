@@ -78,9 +78,9 @@ abc123,Great Ambers Getaway,1234 Porter Rd,Goldendale,WA,98234,US,47.694351,-122
 ## What happens if the hotel's ID, name, or address changes?
 
 
-If a hotel’s ID, name, or address changes between feed runs, Bing Ads may treat the hotel as a new hotel property and create a new listing for it. If Bing creates a new listing, prior performance history for the old hotel is available for up to 36 months. However, the old hotel's bids and multipliers will not transfer to the new hotel entity. 
+If you change a hotel’s property values between feed runs (for example, its name, address, phone, etc.), Bing Ads may treat it as a new hotel property and create a new listing for it. If Bing creates a new listing, prior performance history for the old hotel remains available for up to 36 months. Note that the old hotel's bids and multipliers will not transfer to the new hotel entity. 
 
-Also, if you remove a hotel and add it back in a later feed with the same ID, name, and address, Bing treats it as a new listing. The performance report shows it as two separate listings.
+If you remove a hotel and add it back in a later feed with the same property values as before, Bing treats it as a new listing. Also, the performance report will show it as two separate listings.
 
 
 
