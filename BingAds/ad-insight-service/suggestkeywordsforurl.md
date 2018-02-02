@@ -23,7 +23,7 @@ The *SuggestKeywordsForUrlRequest* object defines the [body](#request-body) and 
 |-----------|---------------|-------------|
 |<a name="excludebrand"></a>ExcludeBrand|A value that determines whether the results exclude brand keywords. To exclude brand keywords in the result, set to true. The default is false.|**boolean**|
 |<a name="language"></a>Language|The language used by the website.<br /><br />For possible values, see [Ad Languages](~/guides/ad-languages.md).<br /><br />The default is English.|**string**|
-|<a name="maxkeywords"></a>MaxKeywords|A positive integer value that specifies the maximum number of keywords to return. The maximum value that you can specify is 200.<br /><br />The default is 10.|**int**|
+|<a name="maxkeywords"></a>MaxKeywords|A positive integer value that specifies the maximum number of keywords to return. The maximum value that you can specify is 800.<br /><br />The default is 10.|**int**|
 |<a name="minconfidencescore"></a>MinConfidenceScore|A filter value that limits the keywords that the service returns to those that have a confidence score that is greater than or equal to the specified score. For example, you can specify that you want the operation to return only keywords that have a confidence score of at least 80 percent (0.8).<br /><br />If null, the confidence score is not used to limit the results.|**double**|
 |<a name="url"></a>Url|The URL of the webpage to scan for possible keywords. The URL can contain a maximum of 2,000 characters.|**string**|
 
