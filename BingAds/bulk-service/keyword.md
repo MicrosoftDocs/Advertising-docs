@@ -298,10 +298,7 @@ The system generated identifier of the keyword.
 **Delete:** Read-only and Required  
 
 ### <a name="inheritedbidstrategytype"></a>Inherited Bid Strategy Type
-The bid strategy type that is inherited from the parent campaign or ad group. This value is equal to the parent campaign or ad group's *Bid Strategy Type* field. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, and *TargetCpa*.
-
-> [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+The bid strategy type that is inherited from the parent campaign or ad group if the keyword's *Bid Strategy Type* is set to *InheritFromParent*. This value is equal to the parent campaign or ad group's *Bid Strategy Type* field. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, and *TargetCpa*.
 
 **Add:** Read-only  
 **Update:** Read-only  
