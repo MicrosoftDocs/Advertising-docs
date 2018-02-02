@@ -478,7 +478,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-introduction.svg" alt="Introduction to Bing Ads Scripts" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-scripts-introduction.svg" alt="Introduction to Bing Ads Scripts" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -497,7 +497,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-reports.svg" alt="concepts" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-scripts-concepts.svg" alt="concepts" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -516,7 +516,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-reference.svg" alt="Reference" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-scripts-reference.svg" alt="Reference" />
                                             </div>
                                         </div>
                                         <div class="cardText">
