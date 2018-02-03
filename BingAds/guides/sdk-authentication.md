@@ -92,7 +92,7 @@ reporting_service_manager = ReportingServiceManager(
 ```
 
 ## <a name="oauth"></a>Using OAuth
-Bing Ads SDKs support the standard OAuth 2.0 flow as defined in detail in the [The OAuth 2.0 Authorization Framework](https://tools.ietf.org/html/draft-ietf-oauth-v2-31).The OAuth classes in the SDK abstract the low level user authorization details such as formatting the authorization and redirect URIs, setting the request headers, and parsing the redirect traffic and response stream. To use OAuth with the Bing Ads .NET SDK, the *Authentication* property of your [AuthorizationData](#authorization-data) object must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant* or *OAuthDesktopMobileImplicitGrant*. 
+Bing Ads SDKs support the standard OAuth 2.0 flow as defined in detail in the [The OAuth 2.0 Authorization Framework](http://tools.ietf.org/html/rfc6749).The OAuth classes in the SDK abstract the low level user authorization details such as formatting the authorization and redirect URIs, setting the request headers, and parsing the redirect traffic and response stream. To use OAuth with the Bing Ads .NET SDK, the *Authentication* property of your [AuthorizationData](#authorization-data) object must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant* or *OAuthDesktopMobileImplicitGrant*. 
 
 > [!NOTE]
 > Currently OAuth is only supported in production. 
@@ -164,7 +164,7 @@ For repeat or long term authentication, you should follow the authorization code
     
     The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their Bing Ads accounts.
     
-    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their Bing Ads accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their Bing Ads accounts: *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their Bing Ads accounts, you should use the code right away in the next step. The short duration of the authorization code, for example 5 minutes, is subject to change.
+    The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their Bing Ads accounts. For example the callback Url includes an authorization code as follows if the user granted permissions for your application to manage their Bing Ads accounts: *https://contoso.com/redirect/?code=CODE&state=ClientStateGoesHere*. If the user granted your application permissions to manage their Bing Ads accounts, you should use the code right away in the next step. The short duration of the authorization code, approximately 5 minutes, is subject to change.
     
     If the user denied your application permissions to manage their Bing Ads accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
 
@@ -280,7 +280,7 @@ For repeat or long term authentication, you should follow the authorization code
     > Whereas the refresh token parameter does not have a defined expiration period, you should expect it to last several months. 
     
     > [!IMPORTANT]
-    > You may need to start again from Step 1 and request user consent if, for example the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf.
+    > You should expect to start again from Step 1 and request user consent if, for example the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf.
 
 
 ## <a name="authorization-data"></a>Using AuthorizationData

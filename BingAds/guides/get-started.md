@@ -15,11 +15,11 @@ dev_langs:
 Any Bing Ads user with a developer token can begin using the Bing Ads API. For advertisers placing a large number of ads or developers building advertising tools, the Bing Ads API provides a programmatic interface to Bing Ads. You can write your Bing Ads application in any language that supports web services. To get started with a specific SDK, see Get Started in [C#](~/guides/get-started-csharp.md) | [Java](~/guides/get-started-java.md) | [PHP](~/guides/get-started-php.md) | [Python](~/guides/get-started-python.md).
 
 ## <a name="get-developer-token"></a>Get a Developer Token
-To use Bing Ads APIs, you must have a developer token and valid user credentials. 
+To use Bing Ads APIs, you must have a developer token and valid user credentials. A developer token enables programmatic access to the accounts permitted for a user. Each provisioned user is assigned a role, for example Super Admin, and granted permissions to one or more accounts. The same accounts available in the Bing Ads web application are available to the corresponding user programmatically through the API. For more information see [Account Permissions and the Developer Token](customer-accounts.md#accountpermissions). 
 -  If you do not yet have a Bing Ads account, you can sign up via the [Bing Ads web application](https://secure.bingads.microsoft.com/). 
 -  To get a developer token for production, you must login at the [Bing Ads Developer Portal](https://developers.bingads.microsoft.com/Account) as a Microsoft Account user with the Super Admin role. Then click on the **Request Token** button. The Super Admin may request API access for any user within their customer scope. For more information, see [User Roles and Available Service Operations](customer-accounts.md#userroles).
 
-The sandbox and production environments use separate credentials. You can sign up for a [Sandbox](sandbox.md) account [here](https://secure.sandbox.bingads.microsoft.com/Auth?EnvContext=Sandbox). Everyone can use the universal sandbox developer token i.e., **BBD37VB98**.
+The sandbox and production environments use separate credentials. You can sign up for a [Sandbox](sandbox.md) account [here](https://secure.sandbox.bingads.microsoft.com/). Everyone can use the universal sandbox developer token i.e., **BBD37VB98**.
 
 ## <a name="where-to-use"></a>Where to Use the API Credentials
 When you call a service operation such as [GetCampaignsByAccountId](~/campaign-management-service/getcampaignsbyaccountid.md), you must specify [request header](#request-headers) elements such as DeveloperToken, CustomerId, and CustomerAccountId.
@@ -156,7 +156,7 @@ Each SOAP request must include the following SOAP headers, which contain the use
 > [!IMPORTANT]
 > The UserName and Password header elements are deprecated. In future versions of the API, Bing Ads will transition exclusively to Microsoft Account (email address) authentication. For more information, see [Authentication with OAuth](~/guides/authentication-oauth.md). UserName and Password are still required for Bing Ads managed credentials, but they are not applicable for Microsoft account authentication. To authenticate a Microsoft account, use the AuthenticationToken] header instead of UserName and Password.  
 
-> [!WARNING]
+> [!TIP]
 > Do not mistake the account number for the account identifier. The account number is the system generated account number that is used to identify the account in the Bing Ads web application. The account number has the form xxxxxxxx, where xxxxxxxx is a series of any eight alphanumeric characters. The API service requests only use the account identifier, and never use the account number.
 
 > [!NOTE]
