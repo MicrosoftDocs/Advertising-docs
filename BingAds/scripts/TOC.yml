@@ -3,7 +3,7 @@
 - name: Concepts
   items:
     - name: Authorization
-      href: /bingads/scripts/concepts/autorization
+      href: /bingads/scripts/concepts/authorization
     - name: Selectors
       href: /bingads/scripts/concepts/selectors
     - name: Iterators
