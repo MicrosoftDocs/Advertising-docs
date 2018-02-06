@@ -29,6 +29,7 @@ ConvertedClicks|long|withCondition(&quot;ConvertedClicks &lt;&#x3D; 4&quot;)|Con
 Cost|double|withCondition(&quot;Cost &gt; 4.48&quot;). The value is in the currency of the account.|Spend
 Ctr|double|withCondition(&quot;Ctr &gt; 0.01&quot;). Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.|CTR
 Impressions|long|withCondition(&quot;Impressions !&#x3D; 0&quot;)|Impr.
+&nbsp;|&nbsp;|&nbsp;|&nbsp;
 <strong>Campaign attributes</strong>|
 Status|Enumeration:<br />&nbsp;ENABLED<br />&nbsp;PAUSED<br />&nbsp;REMOVED<br />&nbsp;BUDGET_PAUSED<br />&nbsp;BUDGET_AND_USER_PAUSED|withCondition(&quot;Status &#x3D; PAUSED&quot;)|Campaign status
 Name|String|withCondition(&quot;Name CONTAINS_IGNORE_CASE &#x27;promotion&#x27;&quot;)|Campaign name
@@ -36,6 +37,7 @@ Budget|double|withCondition(&quot;Budget &gt; 10.0&quot;)|Budget
 Type|Enumeration:<br />&nbsp;SEARCH_AND_CONTENT<br />&nbsp;SHOPPING<br />&nbsp;DYNAMIC_SEARCH_ADS|withCondition(&quot;Type &#x3D; &#x27;SEARCH_AND_CONTENT&#x27;&quot;)|Bing-specific filter
 BudgetType|Enumeration:<br />&nbsp;STANDARD<br />&nbsp;ACCELERATED|withCondition(&quot;BudgetType &#x3D; &#x27;ACCELERATED&#x27;&quot;)|Bing-specific filter
 DeliveryStatus|Enumeration:<br />&nbsp;ELIGIBLE<br />&nbsp;LIMITED_BY_BUDGET<br />&nbsp;HOLD<br />&nbsp;CAMPAIGN_OUT_OF_BUDGET<br />&nbsp;CAMPAIGN_SUSPENDED<br />&nbsp;CAMPAIGN_PAUSED|withCondition(&quot;DeliveryStatus NOT IN [&#x27;LIMITED_BY_BUDGET&#x27;, &#x27;HOLD&#x27;, &#x27;CAMPAIGN_OUT_OF_BUDGET&#x27;]&quot;)|Bing-specific filter
+&nbsp;|&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
 Returns a selector by filtering campaigns in this selector using the date range provided. Supported values for the date range include:<br /> <br /> TODAY<br /> YESTERDAY<br /> LAST_7_DAYS<br /> THIS_WEEK_SUN_TODAY<br /> LAST_14_DAYS<br /> LAST_30_DAYS<br /> LAST_WEEK_SUN_SAT<br /> THIS_MONTH<br /> LAST_MONTH<br /> ALL_TIME<br />

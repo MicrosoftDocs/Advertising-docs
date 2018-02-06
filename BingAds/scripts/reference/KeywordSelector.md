@@ -29,6 +29,7 @@ ConvertedClicks|long|withCondition(&quot;ConvertedClicks &lt;&#x3D; 4&quot;)|Con
 Cost|double|withCondition(&quot;Cost &gt; 4.48&quot;). The value is in the currency of the account.|Spend
 Ctr|double|withCondition(&quot;Ctr &gt; 0.01&quot;). Note that Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.|CTR
 Impressions|long|withCondition(&quot;Impressions !&#x3D; 0&quot;)|Impr.
+&nbsp;|&nbsp;|&nbsp;|&nbsp;
 <strong>Keyword</strong>|
 Status|Enumeration:<br />&nbsp;ENABLED<br />&nbsp;PAUSED<br />&nbsp;DISABLED|withCondition(&quot;Status &#x3D; PAUSED&quot;)|Status
 Text|String|withCondition(&quot;Text STARTS_WITH &#x27;books&#x27;&quot;)|Keyword Text
@@ -39,6 +40,7 @@ FinalUrls|String|withCondition(&quot;FinalUrls CONTAINS &#x27;http://www.example
 QualityScore|int|withCondition(&quot;QualityScore &gt; 5&quot;)|Qual. score
 FirstPageCpc|double|withCondition(&quot;FirstPageCpc &gt; 6.00&quot;). The value specified is in the currency of the current account.|Est. first page bid
 TopOfPageCpc|double|withCondition(&quot;TopOfPageCpc &gt; 8.00&quot;). The value specified is in the currency of the current account.|Est. mainline bid
+&nbsp;|&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
 Returns a selector by filtering keywords in this selector using the date range provided. Supported values for the date range include:<br /> <br /> TODAY<br /> YESTERDAY<br /> LAST_7_DAYS<br /> THIS_WEEK_SUN_TODAY<br /> LAST_14_DAYS<br /> LAST_30_DAYS<br /> LAST_WEEK_SUN_SAT<br /> THIS_MONTH<br /> LAST_MONTH<br /> ALL_TIME<br />
