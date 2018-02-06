@@ -22,8 +22,7 @@ Returns the newly created `AdGroup`, otherwise returns `null` if this operation 
 ### Returns:
 |Type|Description|
 |-|-
-[AdGroup](./AdGroup)|The AdGroup created by the
-         AdGroupOperation.
+[AdGroup](./AdGroup)|The AdGroup created by the AdGroupOperation.
 &nbsp;|&nbsp;
 ## <a name="issuccessful"></a>isSuccessful
 Returns 

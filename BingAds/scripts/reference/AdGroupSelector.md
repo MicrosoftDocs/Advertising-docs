@@ -1,6 +1,20 @@
 # AdGroupSelector
 Provides methods to select ad groups by using filtering and sorting.
 
+Example usage:
+```javascript
+var adGroupSelector = BingAdsApp
+     .adGroups()
+     .withCondition("Impressions > 100")
+     .forDateRange("LAST_MONTH")
+     .orderBy("Clicks DESC");
+
+ var adGroupIterator = adGroupSelector.get();
+ while (adGroupIterator.hasNext()) {
+   var adGroup = adGroupIterator.next();
+ }
+```
+
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
