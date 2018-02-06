@@ -52,8 +52,7 @@ Returns the newly created Ad, otherwise returns null if this operation failed to
 ### Returns:
 |Type|Description|
 |-|-
-[Ad](./Ad)|The Ad created by the
-         AdOperation.
+[Ad](./Ad)|The Ad created by the AdOperation.
 &nbsp;|&nbsp;
 ## <a name="issuccessful"></a>isSuccessful
 Returns 
