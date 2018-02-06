@@ -13,14 +13,14 @@ Example usage:
 [clearDestinationUrl](#cleardestinationurl)|void|Clears the destination URL of this keyword. <br />
 [enable](#enable)|void|Enables this keyword.<br />
 [getAdGroup](#getadgroup)|[AdGroup](AdGroup)|Returns the parent ad group of this keyword.<br />
-[getApprovalStatus](#getapprovalstatus)|String|Returns the approval status of this keyword. Supported values include:<br /> <br /> APPROVED,<br /> PENDING_REVIEW,<br /> UNDER_REVIEW,<br /> DISAPPROVED<br /><br />
+[getApprovalStatus](#getapprovalstatus)|String|Returns the approval status of this keyword. Supported values include:<br /> <br /> `APPROVED`<br /> `PENDING_REVIEW`<br /> `UNDER_REVIEW`<br /> `DISAPPROVED`<br /><br />
 [getCampaign](#getcampaign)|[Campaign](./Campaign)|Returns the parent campaign of this keyword.<br />
 [getEntityType](#getentitytype)|String|Returns the entity type of this keyword, which is "Keyword".<br />
 [getFirstPageCpc](#getfirstpagecpc)|double|Returns the estimated first page bid for this keyword.<br />
 [getId](#getid)|long|Returns the ID of this keyword.<br />
-[getMatchType](#getmatchtype)|String|Returns the match type of this keyword. Supported values include:<br /> <br /> BROAD,<br /> PHRASE,<br /> EXACT<br /><br />
+[getMatchType](#getmatchtype)|String|Returns the match type of this keyword. Supported values include:<br /> <br /> `BROAD`<br /> `PHRASE`<br /> `EXACT`<br /><br />
 [getQualityScore](#getqualityscore)|int|Returns the quality score of this keyword, in the range 1…10.<br />
-[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|String|Returns stats for this keyword for the given date range. Supported values include:<br /> <br /> TODAY<br /> YESTERDAY<br /> LAST_7_DAYS<br /> THIS_WEEK_SUN_TODAY<br /> LAST_14_DAYS<br /> LAST_30_DAYS<br /> LAST_WEEK_SUN_SAT<br /> THIS_MONTH<br /> LAST_MONTH<br /> ALL_TIME<br /><br />
+[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|String|Returns stats for this keyword for the given date range. Supported values include:<br /> <br /> `TODAY`<br /> `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br /><br />
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns stats for this keyword for the given custom date range. Both parameters can be either a string in YYYYMMDD format or an object with year, month and day properties. In either case, a full date must be specified. <br />
 [getText](#gettext)|String|Returns the text of this keyword. The text will be returned in the format as follows, based on the match type of this keyword:<br /> <br /> &nbsp;•	books – broad match<br /> &nbsp;•	"books" – phrase match<br /> &nbsp;•	[origin of species] – exact match<br /><br />
 [getTopOfPageCpc](#gettopofpagecpc)|double|Returns the estimated mainline bid for this keyword.<br />
@@ -65,7 +65,7 @@ Returns the parent ad group of this keyword.
 [AdGroup](AdGroup)|The ad group to which this keyword belongs.
 &nbsp;|&nbsp;
 ## <a name="getapprovalstatus"></a>getApprovalStatus
-Returns the approval status of this keyword. Supported values include:<br /> <br /> APPROVED,<br /> PENDING_REVIEW,<br /> UNDER_REVIEW,<br /> DISAPPROVED<br />
+Returns the approval status of this keyword. Supported values include:<br /> <br /> `APPROVED`<br /> `PENDING_REVIEW`<br /> `UNDER_REVIEW`<br /> `DISAPPROVED`<br />
 
 ### Returns:
 |Type|Description|
@@ -105,7 +105,7 @@ Returns the ID of this keyword.
 long|The ID of the keyword.
 &nbsp;|&nbsp;
 ## <a name="getmatchtype"></a>getMatchType
-Returns the match type of this keyword. Supported values include:<br /> <br /> BROAD,<br /> PHRASE,<br /> EXACT<br />
+Returns the match type of this keyword. Supported values include:<br /> <br /> `BROAD`<br /> `PHRASE`<br /> `EXACT`<br />
 
 ### Returns:
 |Type|Description|
@@ -121,7 +121,7 @@ Returns the quality score of this keyword, in the range 1…10.
 int|The quality score of the keyword.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
-Returns stats for this keyword for the given date range. Supported values include:<br /> <br /> TODAY<br /> YESTERDAY<br /> LAST_7_DAYS<br /> THIS_WEEK_SUN_TODAY<br /> LAST_14_DAYS<br /> LAST_30_DAYS<br /> LAST_WEEK_SUN_SAT<br /> THIS_MONTH<br /> LAST_MONTH<br /> ALL_TIME<br />
+Returns stats for this keyword for the given date range. Supported values include:<br /> <br /> `TODAY`<br /> `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br />
 
 ### Arguments:
 |Name|Type|Description|
