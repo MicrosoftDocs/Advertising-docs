@@ -18,28 +18,28 @@ Supported columns for keyword filtering.
 |Column|Type|Example|Bing Web UI filter|
 |-|-|-|-
 <strong>Stats</strong>|
-AverageCpc|double|withCondition(&quot;AverageCpc &lt; 1.45&quot;)|Avg. CPC
-AverageCpm|double|withCondition(&quot;AverageCpm &gt; 0.48&quot;)|Avg. CPM
-AveragePageviews|double|withCondition(&quot;AveragePageviews &gt; 0&quot;)|
-AveragePosition|double|withCondition(&quot;AveragePosition &gt; 7.5&quot;)|Avg. pos.
-BounceRate|double|withCondition(&quot;BounceRate &lt; 0.5&quot;)|
-ClickConversionRate|double|withCondition(&quot;ClickConversionRate &gt; 0.1&quot;)|Conv. Rate
-Clicks|long|withCondition(&quot;Clicks &gt;&#x3D; 21&quot;)|Clicks
-ConvertedClicks|long|withCondition(&quot;ConvertedClicks &lt;&#x3D; 4&quot;)|Conv.
-Cost|double|withCondition(&quot;Cost &gt; 4.48&quot;). The value is in the currency of the account.|Spend
-Ctr|double|withCondition(&quot;Ctr &gt; 0.01&quot;). Note that Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.|CTR
-Impressions|long|withCondition(&quot;Impressions !&#x3D; 0&quot;)|Impr.
+AverageCpc|double|`withCondition(&quot;AverageCpc &lt; 1.45&quot;)`|Avg. CPC
+AverageCpm|double|`withCondition(&quot;AverageCpm &gt; 0.48&quot;)`|Avg. CPM
+AveragePageviews|double|`withCondition(&quot;AveragePageviews &gt; 0&quot;)`|
+AveragePosition|double|`withCondition(&quot;AveragePosition &gt; 7.5&quot;)`|Avg. pos.
+BounceRate|double|`withCondition(&quot;BounceRate &lt; 0.5&quot;)`|
+ClickConversionRate|double|`withCondition(&quot;ClickConversionRate &gt; 0.1&quot;)`|Conv. Rate
+Clicks|long|`withCondition(&quot;Clicks &gt;&#x3D; 21&quot;)`|Clicks
+ConvertedClicks|long|`withCondition(&quot;ConvertedClicks &lt;&#x3D; 4&quot;)`|Conv.
+Cost|double|`withCondition(&quot;Cost &gt; 4.48&quot;). The value is in the currency of the account.`|Spend
+Ctr|double|`withCondition(&quot;Ctr &gt; 0.01&quot;). Note that Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.`|CTR
+Impressions|long|`withCondition(&quot;Impressions !&#x3D; 0&quot;)`|Impr.
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 <strong>Keyword</strong>|
-Status|Enumeration:<br />&nbsp;ENABLED<br />&nbsp;PAUSED<br />&nbsp;DISABLED|withCondition(&quot;Status &#x3D; PAUSED&quot;)|Status
-Text|String|withCondition(&quot;Text STARTS_WITH &#x27;books&#x27;&quot;)|Keyword Text
-KeywordMatchType|Enumeration:<br />&nbsp;BROAD<br />&nbsp;EXACT<br />&nbsp;PHRASE<br />&nbsp;CONTENT|withCondition(&quot;KeywordMatchType &#x3D; EXACT&quot;)|Match type
-MaxCpc|double|withCondition(&quot;MaxCpc &gt; 0.40&quot;). The value specified is in the currency of the current account.|Bid
-DestinationUrl|String|withCondition(&quot;DestinationUrl STARTS_WITH &#x27;http://www.example.com&#x27;&quot;)|Destination URL
-FinalUrls|String|withCondition(&quot;FinalUrls CONTAINS &#x27;http://www.example.com&#x27;&quot;)|
-QualityScore|int|withCondition(&quot;QualityScore &gt; 5&quot;)|Qual. score
-FirstPageCpc|double|withCondition(&quot;FirstPageCpc &gt; 6.00&quot;). The value specified is in the currency of the current account.|Est. first page bid
-TopOfPageCpc|double|withCondition(&quot;TopOfPageCpc &gt; 8.00&quot;). The value specified is in the currency of the current account.|Est. mainline bid
+Status|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`DISABLED`|`withCondition(&quot;Status &#x3D; PAUSED&quot;)`|Status
+Text|String|`withCondition(&quot;Text STARTS_WITH &#x27;books&#x27;&quot;)`|Keyword Text
+KeywordMatchType|Enumeration:<br />&nbsp;`BROAD`<br />&nbsp;`EXACT`<br />&nbsp;`PHRASE`<br />&nbsp;`CONTENT`|`withCondition(&quot;KeywordMatchType &#x3D; EXACT&quot;)`|Match type
+MaxCpc|double|`withCondition(&quot;MaxCpc &gt; 0.40&quot;). The value specified is in the currency of the current account.`|Bid
+DestinationUrl|String|`withCondition(&quot;DestinationUrl STARTS_WITH &#x27;http://www.example.com&#x27;&quot;)`|Destination URL
+FinalUrls|String|`withCondition(&quot;FinalUrls CONTAINS &#x27;http://www.example.com&#x27;&quot;)`|
+QualityScore|int|`withCondition(&quot;QualityScore &gt; 5&quot;)`|Qual. score
+FirstPageCpc|double|`withCondition(&quot;FirstPageCpc &gt; 6.00&quot;). The value specified is in the currency of the current account.`|Est. first page bid
+TopOfPageCpc|double|`withCondition(&quot;TopOfPageCpc &gt; 8.00&quot;). The value specified is in the currency of the current account.`|Est. mainline bid
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)

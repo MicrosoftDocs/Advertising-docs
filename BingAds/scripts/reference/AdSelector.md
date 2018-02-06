@@ -18,33 +18,33 @@ Supported columns for ad filtering.
 |Column|Type|Example|Bing Web UI filter|
 |-|-|-|-
 <strong>Stats</strong>|
-AverageCpc|double|withCondition(&quot;AverageCpc &lt; 1.45&quot;)|Avg. CPC
-AverageCpm|double|withCondition(&quot;AverageCpm &gt; 0.48&quot;)|Avg. CPM
-AveragePageviews|double|withCondition(&quot;AveragePageviews &gt; 0&quot;)|
-AveragePosition|double|withCondition(&quot;AveragePosition &gt; 7.5&quot;)|Avg. pos.
-BounceRate|double|withCondition(&quot;BounceRate &lt; 0.5&quot;)|
-ClickConversionRate|double|withCondition(&quot;ClickConversionRate &gt; 0.1&quot;)|Conv. Rate
-Clicks|long|withCondition(&quot;Clicks &gt;&#x3D; 21&quot;)|Clicks
-ConvertedClicks|long|withCondition(&quot;ConvertedClicks &lt;&#x3D; 4&quot;)|Conv.
-Cost|double|withCondition(&quot;Cost &gt; 4.48&quot;). The value is in the currency of the account.|Spend
-Ctr|double|withCondition(&quot;Ctr &gt; 0.01&quot;). Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.|CTR
-Impressions|long|withCondition(&quot;Impressions !&#x3D; 0&quot;)|Impr.
+AverageCpc|double|`withCondition(&quot;AverageCpc &lt; 1.45&quot;)`|Avg. CPC
+AverageCpm|double|`withCondition(&quot;AverageCpm &gt; 0.48&quot;)`|Avg. CPM
+AveragePageviews|double|`withCondition(&quot;AveragePageviews &gt; 0&quot;)`|
+AveragePosition|double|`withCondition(&quot;AveragePosition &gt; 7.5&quot;)`|Avg. pos.
+BounceRate|double|`withCondition(&quot;BounceRate &lt; 0.5&quot;)`|
+ClickConversionRate|double|`withCondition(&quot;ClickConversionRate &gt; 0.1&quot;)`|Conv. Rate
+Clicks|long|`withCondition(&quot;Clicks &gt;&#x3D; 21&quot;)`|Clicks
+ConvertedClicks|long|`withCondition(&quot;ConvertedClicks &lt;&#x3D; 4&quot;)`|Conv.
+Cost|double|`withCondition(&quot;Cost &gt; 4.48&quot;). The value is in the currency of the account.`|Spend
+Ctr|double|`withCondition(&quot;Ctr &gt; 0.01&quot;). Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.`|CTR
+Impressions|long|`withCondition(&quot;Impressions !&#x3D; 0&quot;)`|Impr.
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 <strong>Ad attributes</strong>|
-Status|Enumeration:<br />&nbsp;ENABLED<br />&nbsp;PAUSED<br />&nbsp;DISABLED|withCondition(&quot;Status &#x3D; PAUSED&quot;)|Status
-ApprovalStatus|Enumeration:<br />&nbsp;APPROVED<br />&nbsp;DISAPPROVED<br />&nbsp;UNCHECKED|withCondition(&quot;ApprovalStatus NOT_IN [DISAPPROVED, UNCHECKED]&quot;)|Delivery
-Type|Enumeration:<br />&nbsp;EXPANDED_TEXT_AD<br />&nbsp;MOBILE_AD<br />&nbsp;TEXT_AD|withCondition(&quot;Type NOT_IN [IMAGE_AD, RICH_MEDIA_AD]&quot;)|Ad type
-Headline|String|withCondition(&quot;Headline CONTAINS_IGNORE_CASE &#x27;leather shoes&#x27;&quot;)|Ad title
-Description1|String|withCondition(&quot;Description1 STARTS_WITH &#x27;Leather&#x27;&quot;)|Ad text
-Description2|String|withCondition(&quot;Description2 &#x3D; &#x27;Hurry to buy&#x27;&quot;)|
-DisplayUrl|String|withCondition(&quot;DisplayUrl STARTS_WITH &#x27;www.example.com&#x27;&quot;)|Display URL
-DestinationUrl|String|withCondition(&quot;DestinationUrl STARTS_WITH &#x27;http://www.example.com&#x27;&quot;)|Destination URL
-CreativeFinalUrls|String|withCondition(&quot;CreativeFinalUrls CONTAINS &#x27;http://www.example.com&#x27;&quot;)|
-AdGroupName|String|withCondition(&quot;AdGroupName CONTAINS_IGNORE_CASE &#x27;shoes&#x27;&quot;)|Ad group name
-AdGroupStatus|Enumeration:<br />&nbsp;ENABLED<br />&nbsp;PAUSED<br />&nbsp;REMOVED|withCondition(&quot;AdGroupStatus &#x3D; ENABLED&quot;). Use to fetch ads from only ENABLED ad groups.|
-CampaignName|String|withCondition(&quot;CampaignName CONTAINS_IGNORE_CASE &#x27;promotion&#x27;&quot;)	Campaign name|
-CampaignStatus|Enumeration:<br />&nbsp;ENABLED<br />&nbsp;PAUSED<br />&nbsp;REMOVED|withCondition(&quot;CampaignStatus &#x3D; ENABLED&quot;). Use to fetch ads from only ENABLED campaigns.|
-DevicePreferenceType|Enumeration:<br />&nbsp;MOBILE<br />&nbsp;ALL|withCondition(&quot;DevicePreferenceType &#x3D; MOBILE&quot;). Use to fetch only mobile-preferred ads.|Device preference
+Status|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`DISABLED`|`withCondition(&quot;Status &#x3D; PAUSED&quot;)`|Status
+ApprovalStatus|Enumeration:<br />&nbsp;`APPROVED`<br />&nbsp;`DISAPPROVED`<br />&nbsp;`UNCHECKED`|`withCondition(&quot;ApprovalStatus NOT_IN [DISAPPROVED, UNCHECKED]&quot;)`|Delivery
+Type|Enumeration:<br />&nbsp;`EXPANDED_TEXT_AD`<br />&nbsp;`MOBILE_AD`<br />&nbsp;`TEXT_AD`|`withCondition(&quot;Type NOT_IN [IMAGE_AD, RICH_MEDIA_AD]&quot;)`|Ad type
+Headline|String|`withCondition(&quot;Headline CONTAINS_IGNORE_CASE &#x27;leather shoes&#x27;&quot;)`|Ad title
+Description1|String|`withCondition(&quot;Description1 STARTS_WITH &#x27;Leather&#x27;&quot;)`|Ad text
+Description2|String|`withCondition(&quot;Description2 &#x3D; &#x27;Hurry to buy&#x27;&quot;)`|
+DisplayUrl|String|`withCondition(&quot;DisplayUrl STARTS_WITH &#x27;www.example.com&#x27;&quot;)`|Display URL
+DestinationUrl|String|`withCondition(&quot;DestinationUrl STARTS_WITH &#x27;http://www.example.com&#x27;&quot;)`|Destination URL
+CreativeFinalUrls|String|`withCondition(&quot;CreativeFinalUrls CONTAINS &#x27;http://www.example.com&#x27;&quot;)`|
+AdGroupName|String|`withCondition(&quot;AdGroupName CONTAINS_IGNORE_CASE &#x27;shoes&#x27;&quot;)`|Ad group name
+AdGroupStatus|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`REMOVED`|`withCondition(&quot;AdGroupStatus &#x3D; ENABLED&quot;). Use to fetch ads from only ENABLED ad groups.`|
+CampaignName|String|`withCondition(&quot;CampaignName CONTAINS_IGNORE_CASE &#x27;promotion&#x27;&quot;)	Campaign name`|
+CampaignStatus|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`REMOVED`|`withCondition(&quot;CampaignStatus &#x3D; ENABLED&quot;). Use to fetch ads from only ENABLED campaigns.`|
+DevicePreferenceType|Enumeration:<br />&nbsp;`MOBILE`<br />&nbsp;`ALL`|`withCondition(&quot;DevicePreferenceType &#x3D; MOBILE&quot;). Use to fetch only mobile-preferred ads.`|Device preference
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
