@@ -2,6 +2,8 @@
   href: /bingads/scripts/
 - name: Concepts
   items:
+    - name: Authorization
+      href: /bingads/scripts/concepts/autorization
     - name: Selectors
       href: /bingads/scripts/concepts/selectors
     - name: Iterators
