@@ -16,8 +16,7 @@ Returns the custom parameters of this ad. The returned object is in the format <
 ### Returns:
 |Type|Description|
 |-|-
-Object|The custom parameters of the ad as a map of the following form:
-         {key1: 'value1', key2: 'value2', key3: 'value3'}.
+Object|The custom parameters of the ad as a map of the following form: {key1: 'value1', key2: 'value2', key3: 'value3'}.
 &nbsp;|&nbsp;
 ## <a name="getfinalurl"></a>getFinalUrl
 Returns the final URL of this ad.
