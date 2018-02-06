@@ -23,8 +23,7 @@ Clears the final URL of this keyword.
 ### Returns:
 |Type|Description|
 |-|-
-void|The custom parameters of the keyword as a map of the following form:
-         {key1: 'value1', key2: 'value2', key3: 'value3'}.
+void|The custom parameters of the keyword as a map of the following form: {key1: 'value1', key2: 'value2', key3: 'value3'}.
 &nbsp;|&nbsp;
 ## <a name="clearmobilefinalurl"></a>clearMobileFinalUrl
 Clears the mobile final URL of this keyword. 
@@ -32,8 +31,7 @@ Clears the mobile final URL of this keyword.
 ### Returns:
 |Type|Description|
 |-|-
-void|The custom parameters of the keyword as a map of the following form:
-         {key1: 'value1', key2: 'value2', key3: 'value3'}.
+void|The custom parameters of the keyword as a map of the following form: {key1: 'value1', key2: 'value2', key3: 'value3'}.
 &nbsp;|&nbsp;
 ## <a name="cleartrackingtemplate"></a>clearTrackingTemplate
 Clears the tracking template of this keyword.
@@ -41,8 +39,7 @@ Clears the tracking template of this keyword.
 ### Returns:
 |Type|Description|
 |-|-
-void|The custom parameters of the keyword as a map of the following form:
-         {key1: 'value1', key2: 'value2', key3: 'value3'}.
+void|The custom parameters of the keyword as a map of the following form: {key1: 'value1', key2: 'value2', key3: 'value3'}.
 &nbsp;|&nbsp;
 ## <a name="getcustomparameters"></a>getCustomParameters
 Returns the custom parameters of this keyword. The returned object is in the format <code>{key1: 'value1', key2: 'value2', key3: 'value3'}</code>.
@@ -50,8 +47,7 @@ Returns the custom parameters of this keyword. The returned object is in the for
 ### Returns:
 |Type|Description|
 |-|-
-Object|The custom parameters of the keyword as a map of the following form:
-         {key1: 'value1', key2: 'value2', key3: 'value3'}.
+Object|The custom parameters of the keyword as a map of the following form: {key1: 'value1', key2: 'value2', key3: 'value3'}.
 &nbsp;|&nbsp;
 ## <a name="getfinalurl"></a>getFinalUrl
 Returns the final URL of this keyword.
