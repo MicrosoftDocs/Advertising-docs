@@ -9,7 +9,7 @@
     - name: Builders
       href: /bingads/scripts/concepts/builders    
 - name: Reference
-  href: /bingads/scripts/reference/BingAdsApp
+  href: /bingads/scripts/reference-overview
   items:
   - name: Account
     href: ./reference/Account
