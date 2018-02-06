@@ -26,7 +26,7 @@ Returns a selector of all ads in the current account.
 ### Returns:
 |Type|Description|
 |-|-
-[AdSelector](./AdSelector)|
+[AdSelector](./AdSelector)|The selector of all ads in the current account.
 &nbsp;|&nbsp;
 ## <a name="campaigns"></a>campaigns
 Returns a selector of all campaigns in the current account.
@@ -42,7 +42,7 @@ Returns the account in which the script is currently executing.
 ### Returns:
 |Type|Description|
 |-|-
-[Account](./Account)|
+[Account](./Account)|The account in which the script is currently executing.
 &nbsp;|&nbsp;
 ## <a name="getexecutioninfo"></a>getExecutionInfo
 Returns information about the environment in which the script is currently executing.
@@ -50,7 +50,7 @@ Returns information about the environment in which the script is currently execu
 ### Returns:
 |Type|Description|
 |-|-
-[ExecutionInfo](./ExecutionInfo)|
+[ExecutionInfo](./ExecutionInfo)|Information about the environment in which the script is currently executing.
 &nbsp;|&nbsp;
 ## <a name="keywords"></a>keywords
 Returns a selector of all keywords in the current account.
@@ -58,5 +58,5 @@ Returns a selector of all keywords in the current account.
 ### Returns:
 |Type|Description|
 |-|-
-[KeywordSelector](./KeywordSelector)|
+[KeywordSelector](./KeywordSelector)|Selector of all keywords in the current account.
 &nbsp;|&nbsp;
