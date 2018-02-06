@@ -41,6 +41,5 @@ Returns true if this script is running in preview mode; false otherwise if it is
 ### Returns:
 |Type|Description|
 |-|-
-boolean|true if the script is currently being previewed, or false if it is
- a live execution.
+boolean|true if the script is currently being previewed, or false if it is a live execution.
 &nbsp;|&nbsp;
