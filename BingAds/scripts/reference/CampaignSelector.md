@@ -18,25 +18,25 @@ Supported columns for campaign filtering.
 |Column|Type|Example|Bing Web UI filter|
 |-|-|-|-
 <strong>Stats</strong>|
-AverageCpc|double|`withCondition(&quot;AverageCpc &lt; 1.45&quot;)`|Avg. CPC
-AverageCpm|double|`withCondition(&quot;AverageCpm &gt; 0.48&quot;)`|Avg. CPM
-AveragePageviews|double|`withCondition(&quot;AveragePageviews &gt; 0&quot;)`|
-AveragePosition|double|`withCondition(&quot;AveragePosition &gt; 7.5&quot;)`|Avg. pos.
-BounceRate|double|`withCondition(&quot;BounceRate &lt; 0.5&quot;)`|
-ClickConversionRate|double|`withCondition(&quot;ClickConversionRate &gt; 0.1&quot;)`|Conv. Rate
-Clicks|long|`withCondition(&quot;Clicks &gt;&#x3D; 21&quot;)`|Clicks
-ConvertedClicks|long|`withCondition(&quot;ConvertedClicks &lt;&#x3D; 4&quot;)`|Conv.
-Cost|double|`withCondition(&quot;Cost &gt; 4.48&quot;). The value is in the currency of the account.`|Spend
-Ctr|double|`withCondition(&quot;Ctr &gt; 0.01&quot;). Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.`|CTR
-Impressions|long|`withCondition(&quot;Impressions !&#x3D; 0&quot;)`|Impr.
+AverageCpc|double|`withCondition("AverageCpc < 1.45")`|Avg. CPC
+AverageCpm|double|`withCondition("AverageCpm > 0.48")`|Avg. CPM
+AveragePageviews|double|`withCondition("AveragePageviews > 0")`|
+AveragePosition|double|`withCondition("AveragePosition > 7.5")`|Avg. pos.
+BounceRate|double|`withCondition("BounceRate < 0.5")`|
+ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`|Conv. Rate
+Clicks|long|`withCondition("Clicks >= 21")`|Clicks
+ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`|Conv.
+Cost|double|`withCondition("Cost > 4.48"). The value is in the currency of the account.`|Spend
+Ctr|double|`withCondition("Ctr > 0.01"). Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.`|CTR
+Impressions|long|`withCondition("Impressions != 0")`|Impr.
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 <strong>Campaign attributes</strong>|
-Status|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`REMOVED`<br />&nbsp;`BUDGET_PAUSED`<br />&nbsp;`BUDGET_AND_USER_PAUSED`|`withCondition(&quot;Status &#x3D; PAUSED&quot;)`|Campaign status
-Name|String|`withCondition(&quot;Name CONTAINS_IGNORE_CASE &#x27;promotion&#x27;&quot;)`|Campaign name
-Budget|double|`withCondition(&quot;Budget &gt; 10.0&quot;)`|Budget
-Type|Enumeration:<br />&nbsp;`SEARCH_AND_CONTENT`<br />&nbsp;`SHOPPING`<br />&nbsp;`DYNAMIC_SEARCH_ADS`|`withCondition(&quot;Type &#x3D; &#x27;SEARCH_AND_CONTENT&#x27;&quot;)`|Bing-specific filter
-BudgetType|Enumeration:<br />&nbsp;`STANDARD`<br />&nbsp;`ACCELERATED`|`withCondition(&quot;BudgetType &#x3D; &#x27;ACCELERATED&#x27;&quot;)`|Bing-specific filter
-DeliveryStatus|Enumeration:<br />&nbsp;`ELIGIBLE`<br />&nbsp;`LIMITED_BY_BUDGET`<br />&nbsp;`HOLD`<br />&nbsp;`CAMPAIGN_OUT_OF_BUDGET`<br />&nbsp;`CAMPAIGN_SUSPENDED`<br />&nbsp;`CAMPAIGN_PAUSED`|`withCondition(&quot;DeliveryStatus NOT IN [&#x27;LIMITED_BY_BUDGET&#x27;, &#x27;HOLD&#x27;, &#x27;CAMPAIGN_OUT_OF_BUDGET&#x27;]&quot;)`|Bing-specific filter
+Status|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`REMOVED`<br />&nbsp;`BUDGET_PAUSED`<br />&nbsp;`BUDGET_AND_USER_PAUSED`|`withCondition("Status = PAUSED")`|Campaign status
+Name|String|`withCondition("Name CONTAINS_IGNORE_CASE 'promotion'")`|Campaign name
+Budget|double|`withCondition("Budget > 10.0")`|Budget
+Type|Enumeration:<br />&nbsp;`SEARCH_AND_CONTENT`<br />&nbsp;`SHOPPING`<br />&nbsp;`DYNAMIC_SEARCH_ADS`|`withCondition("Type = 'SEARCH_AND_CONTENT'")`|Bing-specific filter
+BudgetType|Enumeration:<br />&nbsp;`STANDARD`<br />&nbsp;`ACCELERATED`|`withCondition("BudgetType = 'ACCELERATED'")`|Bing-specific filter
+DeliveryStatus|Enumeration:<br />&nbsp;`ELIGIBLE`<br />&nbsp;`LIMITED_BY_BUDGET`<br />&nbsp;`HOLD`<br />&nbsp;`CAMPAIGN_OUT_OF_BUDGET`<br />&nbsp;`CAMPAIGN_SUSPENDED`<br />&nbsp;`CAMPAIGN_PAUSED`|`withCondition("DeliveryStatus NOT IN ['LIMITED_BY_BUDGET', 'HOLD', 'CAMPAIGN_OUT_OF_BUDGET']")`|Bing-specific filter
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)

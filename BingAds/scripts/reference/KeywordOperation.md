@@ -47,7 +47,7 @@ Returns the newly created Keyword, otherwise returns null if this operation fail
 |Type|Description|
 |-|-
 [Keyword](./Keyword)|The Keyword created by the
-         KeywordOperation.
+ KeywordOperation.
 &nbsp;|&nbsp;
 ## <a name="issuccessful"></a>isSuccessful
 Returns 

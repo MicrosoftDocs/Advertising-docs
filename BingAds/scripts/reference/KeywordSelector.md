@@ -4,7 +4,7 @@ Provides methods to select keywords by using filtering and sorting.
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[forDateRange(String dateRange)](#fordaterange~string-daterange~)|[KeywordSelector](./KeywordSelector)|Returns a selector by filtering keywords in this selector using the date range provided. Supported values for the date range include:<br /> <br /> TODAY<br /> YESTERDAY<br /> LAST_7_DAYS<br /> THIS_WEEK_SUN_TODAY<br /> LAST_14_DAYS<br /> LAST_30_DAYS<br /> LAST_WEEK_SUN_SAT<br /> THIS_MONTH<br /> LAST_MONTH<br /> ALL_TIME<br /><br />
+[forDateRange(String dateRange)](#fordaterange~string-daterange~)|[KeywordSelector](./KeywordSelector)|Returns a selector by filtering keywords in this selector using the date range provided. Supported values for the date range include:<br /> <br /> `TODAY`<br /> `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br /><br />
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[KeywordSelector](./KeywordSelector)|Returns a selector by filtering keywords in this selector using the beginning and ending dates provided. The date parameters can be entered as a string in YYYYMMDD format or as an object with year, month and day fields. An example for such an object is <code>{year: 2016, month: 5, day: 13}</code>.<br />
 [get](#get)|[KeywordIterator](./KeywordIterator)|Returns an iterator indexing the keywords in this selector.<br />
 [orderBy(String orderBy)](#orderby~string-orderby~)|[KeywordSelector](./KeywordSelector)|Returns a selector by specifying the condition for ordering the keywords in this selector. The format for the condition is "columnName orderDirection", for example, "Cost DESC".<br /> <br /> &nbsp;•	columnName can only be one column which is supported by the withCondition method.<br /> &nbsp;•	orderDirection can be either ASC for ascending or DESC for descending. If no order direction is specified, ASC is used by default.<br /> <br /> <code>orderBy()</code> can be invoked multiple times by calling it in sequence as shown by the following example:<br /> <br /> <code> keywordSelector = keywordSelector.orderBy(“MaxCpc”)<br /> &nbsp;&nbsp;.orderBy(“Clicks ASC”);<br /> </code><br />
@@ -18,32 +18,32 @@ Supported columns for keyword filtering.
 |Column|Type|Example|Bing Web UI filter|
 |-|-|-|-
 <strong>Stats</strong>|
-AverageCpc|double|`withCondition(&quot;AverageCpc &lt; 1.45&quot;)`|Avg. CPC
-AverageCpm|double|`withCondition(&quot;AverageCpm &gt; 0.48&quot;)`|Avg. CPM
-AveragePageviews|double|`withCondition(&quot;AveragePageviews &gt; 0&quot;)`|
-AveragePosition|double|`withCondition(&quot;AveragePosition &gt; 7.5&quot;)`|Avg. pos.
-BounceRate|double|`withCondition(&quot;BounceRate &lt; 0.5&quot;)`|
-ClickConversionRate|double|`withCondition(&quot;ClickConversionRate &gt; 0.1&quot;)`|Conv. Rate
-Clicks|long|`withCondition(&quot;Clicks &gt;&#x3D; 21&quot;)`|Clicks
-ConvertedClicks|long|`withCondition(&quot;ConvertedClicks &lt;&#x3D; 4&quot;)`|Conv.
-Cost|double|`withCondition(&quot;Cost &gt; 4.48&quot;). The value is in the currency of the account.`|Spend
-Ctr|double|`withCondition(&quot;Ctr &gt; 0.01&quot;). Note that Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.`|CTR
-Impressions|long|`withCondition(&quot;Impressions !&#x3D; 0&quot;)`|Impr.
+AverageCpc|double|`withCondition("AverageCpc < 1.45")`|Avg. CPC
+AverageCpm|double|`withCondition("AverageCpm > 0.48")`|Avg. CPM
+AveragePageviews|double|`withCondition("AveragePageviews > 0")`|
+AveragePosition|double|`withCondition("AveragePosition > 7.5")`|Avg. pos.
+BounceRate|double|`withCondition("BounceRate < 0.5")`|
+ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`|Conv. Rate
+Clicks|long|`withCondition("Clicks >= 21")`|Clicks
+ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`|Conv.
+Cost|double|`withCondition("Cost > 4.48"). The value is in the currency of the account.`|Spend
+Ctr|double|`withCondition("Ctr > 0.01"). Note that Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.`|CTR
+Impressions|long|`withCondition("Impressions != 0")`|Impr.
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 <strong>Keyword</strong>|
-Status|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`DISABLED`|`withCondition(&quot;Status &#x3D; PAUSED&quot;)`|Status
-Text|String|`withCondition(&quot;Text STARTS_WITH &#x27;books&#x27;&quot;)`|Keyword Text
-KeywordMatchType|Enumeration:<br />&nbsp;`BROAD`<br />&nbsp;`EXACT`<br />&nbsp;`PHRASE`<br />&nbsp;`CONTENT`|`withCondition(&quot;KeywordMatchType &#x3D; EXACT&quot;)`|Match type
-MaxCpc|double|`withCondition(&quot;MaxCpc &gt; 0.40&quot;). The value specified is in the currency of the current account.`|Bid
-DestinationUrl|String|`withCondition(&quot;DestinationUrl STARTS_WITH &#x27;http://www.example.com&#x27;&quot;)`|Destination URL
-FinalUrls|String|`withCondition(&quot;FinalUrls CONTAINS &#x27;http://www.example.com&#x27;&quot;)`|
-QualityScore|int|`withCondition(&quot;QualityScore &gt; 5&quot;)`|Qual. score
-FirstPageCpc|double|`withCondition(&quot;FirstPageCpc &gt; 6.00&quot;). The value specified is in the currency of the current account.`|Est. first page bid
-TopOfPageCpc|double|`withCondition(&quot;TopOfPageCpc &gt; 8.00&quot;). The value specified is in the currency of the current account.`|Est. mainline bid
+Status|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`DISABLED`|`withCondition("Status = PAUSED")`|Status
+Text|String|`withCondition("Text STARTS_WITH 'books'")`|Keyword Text
+KeywordMatchType|Enumeration:<br />&nbsp;`BROAD`<br />&nbsp;`EXACT`<br />&nbsp;`PHRASE`<br />&nbsp;`CONTENT`|`withCondition("KeywordMatchType = EXACT")`|Match type
+MaxCpc|double|`withCondition("MaxCpc > 0.40"). The value specified is in the currency of the current account.`|Bid
+DestinationUrl|String|`withCondition("DestinationUrl STARTS_WITH 'http://www.example.com'")`|Destination URL
+FinalUrls|String|`withCondition("FinalUrls CONTAINS 'http://www.example.com'")`|
+QualityScore|int|`withCondition("QualityScore > 5")`|Qual. score
+FirstPageCpc|double|`withCondition("FirstPageCpc > 6.00"). The value specified is in the currency of the current account.`|Est. first page bid
+TopOfPageCpc|double|`withCondition("TopOfPageCpc > 8.00"). The value specified is in the currency of the current account.`|Est. mainline bid
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
-Returns a selector by filtering keywords in this selector using the date range provided. Supported values for the date range include:<br /> <br /> TODAY<br /> YESTERDAY<br /> LAST_7_DAYS<br /> THIS_WEEK_SUN_TODAY<br /> LAST_14_DAYS<br /> LAST_30_DAYS<br /> LAST_WEEK_SUN_SAT<br /> THIS_MONTH<br /> LAST_MONTH<br /> ALL_TIME<br />
+Returns a selector by filtering keywords in this selector using the date range provided. Supported values for the date range include:<br /> <br /> `TODAY`<br /> `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br />
 
 ### Arguments:
 |Name|Type|Description|
