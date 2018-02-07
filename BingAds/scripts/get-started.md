@@ -1,6 +1,6 @@
 # Get Started With Bing Ads Scripts
 
-1. Sign in to your BingAds account.
+1. Sign in to your Bing Ads account.
 2. Expand the <strong>Bulk Operations</strong> section of the navigation panel on the left.
 3. Click <strong>Scripts</strong>.
 4. Copy and paste the code below into the code editor.
