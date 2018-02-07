@@ -183,7 +183,7 @@
   - name: Web Service Addresses
     href: ./web-service-addresses.md
     displayName: wsdl endpoint soap
-- name: Version 12 Services
+  - name: Version 12 Services
     href: ./services.md
     items:
     - name: Ad Insight Service
