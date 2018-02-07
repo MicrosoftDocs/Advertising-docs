@@ -48,8 +48,7 @@ function getCampaignStats() {
   if (campaignIterator.hasNext()) {
     var campaign = campaignIterator.next();
     // You can also request reports for pre-defined date ranges. See
-    // https://docs.microsoft.com/bingads/scripts/reference/campaign?branch=bing-ads-scripts-phase-1#getstatsfor~string-daterange~,
-    // DateRangeLiteral section for possible values.
+    // https://docs.microsoft.com/bingads/scripts/reference/campaign?#getstatsfor~string-daterange~.
     var stats = campaign.getStatsFor('LAST_MONTH');
     Logger.log(campaign.getName() + ', ' + stats.getClicks() + 'clicks, ' +
         stats.getImpressions() + ' impressions');
