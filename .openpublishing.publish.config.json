@@ -9,7 +9,7 @@
         "bingads-11",
         "bingads-12"
       ],
-      "moniker_ranges": ["= bingads-11", "= bingads-12"],
+      "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
