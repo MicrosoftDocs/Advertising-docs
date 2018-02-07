@@ -11,6 +11,7 @@
     - name: Builders
       href: /bingads/scripts/concepts/builders    
 - name: Examples
+  href: /bingads/scripts/examples/
   items:
     - name: Accounts
       href: /bingads/scripts/examples/accounts
