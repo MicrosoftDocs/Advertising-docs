@@ -5,6 +5,7 @@
 - name: Get Started
   href: /bingads/scripts/get-started
 - name: Scripting Concepts
+  href: /bingads/scripts/concepts/
   items:
     - name: Selectors
       href: /bingads/scripts/concepts/selectors
