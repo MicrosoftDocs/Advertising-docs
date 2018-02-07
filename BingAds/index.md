@@ -491,7 +491,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/scripts/concepts/selectors">
+                            <a href="/bingads/scripts/concepts/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
