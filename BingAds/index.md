@@ -491,6 +491,25 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
+                            <a href="/bingads/scripts/get-started">
+                            <div class="cardSize">
+                                <div class="cardPadding">
+                                    <div class="card">
+                                        <div class="cardImageOuter">
+                                            <div class="cardImage">
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-get-started.svg" alt="Get started" />
+                                            </div>
+                                        </div>
+                                        <div class="cardText">
+                                            <h3>Get started</h3>
+                                            <p>Write your first campaign automation script.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
                             <a href="/bingads/scripts/concepts/">
                             <div class="cardSize">
                                 <div class="cardPadding">
@@ -522,25 +541,6 @@ description: Bing Ads API documentation home.
                                         <div class="cardText">
                                             <h3>Script Authorization</h3>
                                             <p>Learn how authorization is handled by the Bing Ads Scripts system.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/bingads/scripts/get-started">
-                            <div class="cardSize">
-                                <div class="cardPadding">
-                                    <div class="card">
-                                        <div class="cardImageOuter">
-                                            <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-get-started.svg" alt="Get started" />
-                                            </div>
-                                        </div>
-                                        <div class="cardText">
-                                            <h3>Get started</h3>
-                                            <p>Write your first campaign automation script.</p>
                                         </div>
                                     </div>
                                 </div>
