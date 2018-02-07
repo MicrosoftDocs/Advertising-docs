@@ -10,6 +10,14 @@
       href: /bingads/scripts/concepts/iterators
     - name: Builders
       href: /bingads/scripts/concepts/builders    
+- name: Examples
+  items:
+    - name: Accounts
+      href: /bingads/scripts/examples/accounts
+    - name: Ad Groups
+      href: /bingads/scripts/examples/adgroups
+    - name: Campaigns
+      href: /bingads/scripts/examples/campaigns
 - name: Reference
   href: /bingads/scripts/reference-overview
   items:
