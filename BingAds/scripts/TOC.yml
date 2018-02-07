@@ -7,10 +7,10 @@
 - name: Scripting Concepts
   href: /bingads/scripts/concepts/
   items:
-    - name: Selectors
-      href: /bingads/scripts/concepts/selectors
     - name: Iterators
       href: /bingads/scripts/concepts/iterators
+    - name: Selectors
+      href: /bingads/scripts/concepts/selectors      
     - name: Builders
       href: /bingads/scripts/concepts/builders    
 - name: Examples
