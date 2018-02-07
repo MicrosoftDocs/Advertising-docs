@@ -11,8 +11,8 @@ For Bing Ads reference content, see the following sections.
 
 |Topic|Description|
 |---------|---------------|
-|[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)|The web service addresses for Bing Ads API version 11.|
-|[Bing Ads Services](../guides/services.md)|The web service reference documentation for Bing Ads API version 11.|
+|[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)|The web service addresses for Bing Ads API versions 11 and 12.|
+|[Bing Ads Services](../guides/services.md)|The web service reference documentation for Bing Ads API.|
 |[Bing Ads Operation Error Codes](../guides/operation-error-codes.md)|Defines the *Code* and *ErrorCode* elements that may be returned in an error data object.|
 |[Bing Ads Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md)|Defines the reason codes of why an ad, keyword, or ad extension failed editorial review.|
 |[Ad Languages](../guides/ad-languages.md)|Lists the available languages that you may use to write your ads and keywords for each country.|
