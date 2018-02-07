@@ -5,11 +5,11 @@
       "build_source_folder": "BingAds",
       "build_output_subfolder": "BingAds",
       "locale": "en-us",
-      "monikers": [
-        "bingads-11",
-        "bingads-12"
+      "monikers": [],
+      "moniker_ranges": [
+        "= bingads-11",
+        "= bingads-12"
       ],
-      "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
