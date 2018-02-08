@@ -11,12 +11,28 @@ ms.topic: "article"
 
 # Selectors
 
-Selector is a type of class that provides methods to filter objects in Bing Ads Scripts using a SQL-like mechanism. The following standard methods are provided on all selector classes:
+Selectors allow one to specify filter and sort criteria when retrieving Bing Ads entities.  Selectors provide functionality roughly equivalent to SQL `WHERE` and `ORDER BY` clauses. The following methods are provided on all selector classes:
 
-- <code>withCondition()</code> – uses a SQL-like clause to select objects. For example, `Name STARTS_WITH 'Contoso'`
-- <code>withIds()</code> – uses a collection of IDs to select specific objects. It is analogous to a SQL `IN` clause.
-- <code>forDateRange()</code> – returns elements matching a date range, such as `LAST_14_DAYS`.
-- <code>orderBy()</code> – orders the returned elements by specified field, for example `Clicks DESC`.
-- <code>withLimit()</code> – returns only the specified number of elements; analogous to `SQL TOP(x)` clause.
+- <code>withCondition()</code> – analogous to a SQL `WHERE` clause; used to specify conditions which must be met for entities to be retrieved. For example, `withCondition('Name STARTS_WITH "Contoso"')`.
+- <code>withIds()</code> – analogous to a SQL `IN` clause; used to specify an array of IDs to retrieve specific entities. For example, `withIds([1,2,3,4])`.
+- <code>forDateRange()</code> – returns elements matching a specified date range. For example, `forDateRange("LAST_14_DAYS")`.
+- <code>orderBy()</code> – orders the returned elements by a specified field. For example, `orderBy("Clicks DESC")`.
+- <code>withLimit()</code> – analogous to a SQL `TOP` clause; returns only the specified number of elements. For example, `withLimit(50)`.
 
-Multiple conditions can be AND-ed to filter more narrowly. Filters are recommended to be used before getting iterator for efficient performance.
+Because each method returns the selector with the new filter criteria applied, multiple conditions can be chained together to create more specific filters. For example:
+
+```javascript
+var campaignSelector = BingAdsApp.campaigns()
+    .withCondition("Clicks > 10")
+    .withCondition("Impressions > 100")
+    .orderBy("Impressions DESC")
+    .forDateRange("YESTERDAY");
+```
+
+Filters should be as specific as possible to retrieve only the entities you want; this will result in improved script performance.  
+
+Once the selector is instantiated and has had filters applied, it can be used to create an iterator by invoking the selector's `get()` method.
+
+Proceed to the next section to learn how to use [Builders](./builders) to create Bing Ads entities.
+> [!div class="nextstepaction"]
+> [Builders](./builders)
