@@ -6,53 +6,68 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "group-bingads-11",
-        "src": "BingAds/bingads-11"
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "group": "group-bingads-12",
-        "src": "BingAds/bingads-12"
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
-          "BingAds/bingads-11",
-          "BingAds/bingads-12",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
-      }
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "guides",
+        "src": "guides",
+        "dest": "guides",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "bingads-11",
+        "src": "bingads-11",
+        "dest": "bingads-11",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "bingads-12",
+        "src": "bingads-12",
+        "dest": "bingads-12",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }      
     ],
     "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
-        ],
-        "group": "group-bingads-11",
-        "src": "BingAds/bingads-11"
-      },
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
-        ],
-        "group": "group-bingads-12",
-        "src": "BingAds/bingads-12"
-      },
       {
         "files": [
           "**/*.png",
@@ -63,7 +78,50 @@
           "**/obj/**",
           "**/includes/**"
         ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "group": "guides",
+        "src": "guides",
+        "dest": "guides",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "group": "bingads-11",
+        "src": "bingads-11",
+        "dest": "bingads-11",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "group": "bingads-12",
+        "src": "bingads-12",
+        "dest": "bingads-12",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
       }
+      
     ],
     "overwrite": [],
     "externalReference": [],
@@ -100,12 +158,16 @@
     "template": [],
     "dest": "BingAds",
     "groups": {
-      "group1": {
-        "dest": "BingAds/bingads-11",
+      "guides": {
+        "dest": "guides",
+        "moniker_range": ">= bingads-12 < bingads-11"
+      },
+      "bingads-11": {
+        "dest": "bingads-11",
         "moniker_range": "= bingads-11"
       },
-      "group2": {
-        "dest": "BingAds/bingads-12",
+      "bingads-12": {
+        "dest": "bingads-12",
         "moniker_range": "= bingads-12"
       }
     }
