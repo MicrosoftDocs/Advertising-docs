@@ -1,6 +1,6 @@
 # Authorization
 
-Regular Bing Ads authorization occurs in this sequence:
+Regular Bing Ads authorization is handled as follows:
 
 - User logs into Bing Ads, using their user name or email address and password.
 - Bing Ads authenticates the user's credentials and establishes a session.

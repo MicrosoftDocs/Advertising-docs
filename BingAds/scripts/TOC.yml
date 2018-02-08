@@ -4,7 +4,7 @@
   href: /bingads/scripts/authorization
 - name: Get Started
   href: /bingads/scripts/get-started
-- name: Scripting Concepts
+- name: Concepts
   href: /bingads/scripts/concepts/
   items:
     - name: Iterators

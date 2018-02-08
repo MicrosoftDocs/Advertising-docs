@@ -11,8 +11,29 @@ ms.topic: "article"
 
 # Iterators
 
-Used to enumerate a list of objects in most Bing Ads entity selectors such as keywords. It is not possible to directly access ```i```th element like in an array. The common methods are defined for an iterator:
+Iterators are used to visit each item in a list of items such as a list of Bing Ads entities. Iterators are similar to arrays but with some differences; the length or item count may not be known so it is not possible to directly access an item by index. Additionally, iterators help to reduce memory pressure by loading only a single item at a time rather than the entire set of items.  Methods defined on iterators are as follows:
 
-- <code>boolean hasNext()</code> – returns true if next position for pointer is not at the last element in list
-- <code>Object next()</code> – returns the object at the next position of the pointer
-- <code>totalNumEntities()</code> – returns the number of items in iterator
+- <code>boolean hasNext()</code> – returns true if the current position is not the last element in the list.
+- <code>Object next()</code> – advances the current position and returns the object at that location in the list.
+- <code>totalNumEntities()</code> – returns the number of items in the iterator.
+
+While it is not possible to access an item directly by index, the number of entities that would be traversed can be determined using the `totalNumEntities()` method.  This can be helpful when partitioning data for processing.  For example:
+
+```javascript
+var keywords = campaign.keywords()
+    .withCondition("Ctr > 0.01")
+    .forDateRange("YESTERDAY")
+    .get();
+// Did we retrieve too many?
+if (keywords.totalNumEntities() > 50000) {
+    // Adjust the condition to retrieve fewer keywords.
+    keywords = campaign.keywords()
+      .withCondition("Ctr > 0.015")
+      .forDateRange("YESTERDAY")
+      .get();
+}
+```
+
+Proceed to the next section to understand how to use [Selectors](./selectors.md) to obtain iterators.
+> [!div class="nextstepaction"]
+> [Selectors](./selectors.md)
