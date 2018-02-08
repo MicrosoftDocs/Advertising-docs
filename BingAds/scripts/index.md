@@ -4,8 +4,8 @@ Bing Ads Scripts enable programmatic control over your Bing Ads data using JavaS
 
 Proceed to learn more about Bing Ads Scripts related concepts and read the reference documentation.
 > [!div class="nextstepaction"]
-> [Selectors](./concepts/selectors.md)
 > [Iterators](./concepts/iterators.md)
+> [Selectors](./concepts/selectors.md)
 > [Builders](./concepts/builders.md)
 > [Reference](./reference/BingAdsApp.md)
 
