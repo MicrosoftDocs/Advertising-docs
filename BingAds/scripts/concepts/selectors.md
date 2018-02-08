@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # Selectors
 
-Selectors allow one to specify filter and sort criteria when retrieving Bing Ads entities.  Selectors provide functionality roughly equivalent to SQL `WHERE` and `ORDER BY` clauses. The following methods are provided on all selector classes:
+Selectors allow you to specify filter and sort criteria when retrieving Bing Ads entities.  Selectors provide functionality roughly equivalent to SQL `WHERE` and `ORDER BY` clauses. The following methods are provided on all selector classes:
 
 - <code>withCondition()</code> – analogous to a SQL `WHERE` clause; used to specify conditions which must be met for entities to be retrieved. For example, `withCondition('Name STARTS_WITH "Contoso"')`.
 - <code>withIds()</code> – analogous to a SQL `IN` clause; used to specify an array of IDs to retrieve specific entities. For example, `withIds([1,2,3,4])`.
@@ -29,9 +29,7 @@ var campaignSelector = BingAdsApp.campaigns()
     .forDateRange("YESTERDAY");
 ```
 
-Filters should be as specific as possible to retrieve only the entities you want; this will result in improved script performance.  
-
-Once the selector is instantiated and has had filters applied, it can be used to create an iterator by invoking the selector's `get()` method.
+Filters should be as specific as possible to retrieve only the entities you want; this results in improved script performance. Once the selector is instantiated and has had filters applied, it can be used to create an iterator by invoking the selector's `get()` method.
 
 Proceed to the next section to learn how to use [Builders](./builders) to create Bing Ads entities.
 > [!div class="nextstepaction"]

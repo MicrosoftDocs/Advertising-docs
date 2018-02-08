@@ -11,8 +11,25 @@ ms.topic: "article"
 
 # Builders
 
-Used to create new entities in Bing Ads Scripts. It is possible to create entity synchronously or asynchronously. Creating entities is a two-stage process:
+Builders are used to create new Bing Ads entities. Using a builder you specify the properties of the entity to be built then invoke the `build()` method to return an operation object.  Using the operation object you can determine the outcome of the operation and take appropriate actions. The following example demonstrates how to create a keyword using a builder and the resulting operation object:
 
-- Defining the entity by means of the builder object which returns an operation object.
-- Invoking any of the methods on the operation object creates the actual entity.
+```javascript
+// Retrieve an ad group.
+var adGroup = BingAdsApp.adGroups().get().next();
 
+var keywordOperation = adGroup.newKeywordBuilder()
+    .withCpc(1.2)
+    .withText("shirts")
+    .withFinalUrl("https://www.contoso.com/shirts")
+    .build();
+
+// Optional: examine the outcome. The call to isSuccessful()
+// will block until the operation completes.
+if (keywordOperation.isSuccessful()) {
+  // Get the result.
+  var keyword = keywordOperation.getResult();
+} else {
+  // Handle the errors.
+  var errors = keywordOperation.getErrors();
+}
+```
