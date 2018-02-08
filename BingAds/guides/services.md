@@ -6,7 +6,7 @@ author: "eric-urban"
 ms.author: "eur"
 description: Reference documentation for Bing Ads web services.
 ---
-::: moniker range="= bingads-12"
+::: moniker range="bingads-12"
 # Version 12 Services
 
 |Topic|Description|
@@ -17,9 +17,10 @@ description: Reference documentation for Bing Ads web services.
 |[Customer Billing Service Reference](../customer-billing-service/customer-billing-service-reference.md?view=bingads-12)|The Customer Billing service defines API elements that you can use to get invoices, insertion orders, and monthly spend for an account.|
 |[Customer Management Service Reference](../customer-management-service/customer-management-service-reference.md?view=bingads-12)|The Customer Management service defines programming elements that you use to manage customers, accounts, and users.|
 |[Reporting Service Reference](../reporting-service/reporting-service-reference.md?view=bingads-12)|The Reporting service defines programming elements that you can use to request and download reports.|
+
 ::: moniker-end
 
-::: moniker range="= bingads-11"
+::: moniker range="bingads-11"
 # Version 11 Services
 
 |Topic|Description|
@@ -30,6 +31,7 @@ description: Reference documentation for Bing Ads web services.
 |[Customer Billing Service Reference](../customer-billing-service/customer-billing-service-reference.md?view=bingads-11)|The Customer Billing service defines API elements that you can use to get invoices, insertion orders, and monthly spend for an account.|
 |[Customer Management Service Reference](../customer-management-service/customer-management-service-reference.md?view=bingads-11)|The Customer Management service defines programming elements that you use to manage customers, accounts, and users.|
 |[Reporting Service Reference](../reporting-service/reporting-service-reference.md?view=bingads-11)|The Reporting service defines programming elements that you can use to request and download reports.|
+
 ::: moniker-end
 
 ## <a name="see-also"></a>See Also
