@@ -183,6 +183,7 @@
   - name: Web Service Addresses
     href: ./web-service-addresses.md
     displayName: wsdl endpoint soap
+::: moniker range="bingads-12"
   - name: Version 11 Services
     href: ./services.md
     items:
@@ -1749,6 +1750,7 @@
           href: ../reporting-service/sortorder.md
         - name: UserLocationPerformanceReportColumn
           href: ../reporting-service/userlocationperformancereportcolumn.md
+::: moniker-end
   - name: Operation Error Codes
     href: ./operation-error-codes.md
   - name: Editorial Failure Reason Codes

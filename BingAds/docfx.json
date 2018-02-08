@@ -160,7 +160,7 @@
     "groups": {
       "guides": {
         "dest": "guides",
-        "moniker_range": ">= bingads-12 < bingads-11"
+        "moniker_range": "= bingads-12 = bingads-11"
       },
       "bingads-11": {
         "dest": "bingads-11",
