@@ -183,12 +183,11 @@
   - name: Web Service Addresses
     href: ./web-service-addresses.md
     displayName: wsdl endpoint soap
-::: moniker range="bingads-12"
   - name: Version 11 Services
     href: ./services.md
     items:
     - name: Ad Insight Service
-      href: ../ad-insight-service/ad-insight-service-reference.md
+      href: ../ad-insight-service/ad-insight-service-reference.md?view=bingads-11
       items: 
       - name: Ad Insight Service Operations
         href: ../ad-insight-service/ad-insight-service-operations.md
@@ -1750,7 +1749,6 @@
           href: ../reporting-service/sortorder.md
         - name: UserLocationPerformanceReportColumn
           href: ../reporting-service/userlocationperformancereportcolumn.md
-::: moniker-end
   - name: Operation Error Codes
     href: ./operation-error-codes.md
   - name: Editorial Failure Reason Codes
