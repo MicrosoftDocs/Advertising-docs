@@ -15,13 +15,13 @@ Selectors allow you to specify filter and sort criteria when retrieving Bing Ads
 
 - <code>withCondition()</code> – analogous to a SQL `WHERE` clause; used to specify conditions which must be met for entities to be retrieved.<br />Example:<br />
     &nbsp;&nbsp;&nbsp;`withCondition('Name STARTS_WITH "Contoso"')`<br /><br />
-- <code>withIds()</code> – analogous to a SQL `IN` clause; used to specify an array of IDs to retrieve specific entities.<br />Example:<br />
+- <code>withIds()</code> – analogous to a SQL `IN` clause; used to specify an array of IDs to retrieve specific entities.<br />&nbsp;Example:<br />
     &nbsp;&nbsp;&nbsp;`withIds([1,2,3,4])`<br /><br />
-- <code>forDateRange()</code> – returns elements matching a specified date range.<br />Example:<br />
+- <code>forDateRange()</code> – returns elements matching a specified date range.<br />&nbsp;Example:<br />
     &nbsp;&nbsp;&nbsp;`forDateRange("LAST_14_DAYS")`<br /><br />
-- <code>orderBy()</code> – orders the returned elements by a specified field. For example:<br />
+- <code>orderBy()</code> – orders the returned elements by a specified field.<br />&nbsp;Example:<br />
     &nbsp;&nbsp;&nbsp;`orderBy("Clicks DESC")`<br /><br />
-- <code>withLimit()</code> – analogous to a SQL `TOP` clause; returns only the specified number of elements.<br />For example:<br />
+- <code>withLimit()</code> – analogous to a SQL `TOP` clause; returns only the specified number of elements.<br />&nbsp;Example:<br />
     &nbsp;&nbsp;&nbsp;`withLimit(50)`<br /><br />
 
 Because each method returns the selector with the new filter criteria applied, multiple conditions can be chained together to create more specific filters. For example:
