@@ -22,7 +22,7 @@ Reserved.
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
-        <xs:enumeration value="JobFuntion">
+        <xs:enumeration value="JobFunction">
           <xs:annotation>
             <xs:appinfo>
               <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
@@ -48,7 +48,7 @@ Reserved.
 |-----------|---------------|
 |<a name="companyname"></a>CompanyName|Reserved.|
 |<a name="industry"></a>Industry|Reserved.|
-|<a name="jobfuntion"></a>JobFuntion|Reserved.|
+|<a name="jobfunction"></a>JobFunction|Reserved.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
