@@ -4,10 +4,10 @@ ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the entities that may be downloaded in bulk.
+description: Defines the entities that may be downloaded and uploaded in bulk.
 ---
 # DownloadEntity Value Set - Bulk
-Defines the entities that may be downloaded in bulk.
+Defines the entities that may be downloaded and uploaded in bulk.
 
 For more information, see [Bulk File Schema](../bulk-service/bulk-file-schema.md).
 
@@ -610,6 +610,27 @@ For more information, see [Bulk File Schema](../bulk-service/bulk-file-schema.md
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
+    <xs:enumeration value="CoOpCampaigns">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">86</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="ResponsiveAds">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">87</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="ResponsiveAdLabels">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">88</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -680,6 +701,7 @@ For more information, see [Bulk File Schema](../bulk-service/bulk-file-schema.md
 |<a name="campaignsitelinksadextensions"></a>CampaignSiteLinksAdExtensions|This value is deprecated in favor of CampaignSitelink2AdExtensions.|
 |<a name="campaignstructuredsnippetadextensions"></a>CampaignStructuredSnippetAdExtensions|Include [Campaign Structured Snippet Ad Extension](../bulk-service/campaign-structured-snippet-ad-extension.md) records in the download that represents the association relationship between a campaign and a structured snippet ad extension. For [Structured Snippet Ad Extension](../bulk-service/structured-snippet-ad-extension.md) records, you should include the StructuredSnippetAdExtensions value in the download request.|
 |<a name="campaigntargetcriterions"></a>CampaignTargetCriterions|Include [Campaign Age Criterion](../bulk-service/campaign-age-criterion.md), [Campaign DayTime Criterion](../bulk-service/campaign-daytime-criterion.md), [Campaign DeviceOS Criterion](../bulk-service/campaign-deviceos-criterion.md), [Campaign Gender Criterion](../bulk-service/campaign-gender-criterion.md), [Campaign Location Criterion](../bulk-service/campaign-location-criterion.md), [Campaign Location Intent Criterion](../bulk-service/campaign-location-intent-criterion.md), [Campaign Negative Location Criterion](../bulk-service/campaign-negative-location-criterion.md), and [Campaign Radius Criterion](../bulk-service/campaign-radius-criterion.md) records in the download data.|
+|<a name="coopcampaigns"></a>CoOpCampaigns|Reserved.|
 |<a name="customaudiences"></a>CustomAudiences|Include [Custom Audience](../bulk-service/custom-audience.md) records in the download data.<br/><br/> The [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) operations return the same set of custom audiences for the current authenticated user. All custom audiences that have Scope set to Customer are included. The custom audiences that have Scope set to Account are also included if the user has access to view or manage those accounts. In other words, if a custom audience is in account scope for an account that the user cannot access, then it is excluded from the download results.|
 |<a name="dynamicsearchadlabels"></a>DynamicSearchAdLabels|Include [Dynamic Search Ad Label](../bulk-service/dynamic-search-ad-label.md) records in the download that each represent a label applied to a dynamic search ad. For [Label](../bulk-service/label.md) records, you should include the Labels value in the download request.|
 |<a name="dynamicsearchads"></a>DynamicSearchAds|Include [Dynamic Search Ad](../bulk-service/dynamic-search-ad.md) records in the download data.<br/><br/> To get all types of ads instead of requesting ads by type, you can include the Ads value in the download request.|
@@ -696,6 +718,8 @@ For more information, see [Bulk File Schema](../bulk-service/bulk-file-schema.md
 |<a name="productadlabels"></a>ProductAdLabels|Include [Product Ad Label](../bulk-service/product-ad-label.md) records in the download that each represent a label applied to a product ad. For [Label](../bulk-service/label.md) records, you should include the Labels value in the download request.|
 |<a name="productads"></a>ProductAds|Include [Product Ad](../bulk-service/product-ad.md) records in the download data.<br/><br/> To get all types of ads instead of requesting ads by type, you can include the Ads value in the download request.|
 |<a name="remarketinglists"></a>RemarketingLists|Include [Remarketing List](../bulk-service/remarketing-list.md) records in the download data.<br/><br/> The [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) operations return the same set of remarketing lists for the current authenticated user. All remarketing lists that have Scope set to Customer are included. The remarketing lists that have Scope set to Account are also included if the user has access to view or manage those accounts. In other words, if a remarketing list is in account scope for an account that the user cannot access, then it is excluded from the download results.|
+|<a name="responsiveadlabels"></a>ResponsiveAdLabels|Reserved.|
+|<a name="responsiveads"></a>ResponsiveAds|Reserved.|
 |<a name="reviewadextensions"></a>ReviewAdExtensions|Include [Review Ad Extension](../bulk-service/review-ad-extension.md) records in the download data.<br/><br/> To get all review ad extensions from your account's extension library, use the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) operation. To get only the review ad extensions that are associated with entities within the specified campaigns, use the [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) operation.|
 |<a name="sharednegativekeywords"></a>SharedNegativeKeywords|Include [Shared Negative Keyword](../bulk-service/shared-negative-keyword.md) records in the download data. Shared negative keywords belong to a negative keyword list. For [Negative Keyword List](../bulk-service/negative-keyword-list.md) records, you should include the NegativeKeywordLists value in the download request.|
 |<a name="sitelink2adextensions"></a>Sitelink2AdExtensions|Include [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) records in the download data.<br/><br/> To get all sitelink2 ad extensions from your account's extension library, use the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) operation. To get only the sitelink2 ad extensions that are associated with entities within the specified campaigns, use the [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) operation.|
