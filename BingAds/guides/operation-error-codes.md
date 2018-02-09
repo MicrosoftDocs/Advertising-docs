@@ -81,17 +81,6 @@ We have detected suspicious activity on your Bing Ads account. We think someone 
 ***
 
 **Numeric Code**
-108
-
-**Symbolic Error Code**
-Not applicable.
-
-**Description**
-The account identifier is invalid.
-
-***
-
-**Numeric Code**
 109
 
 **Symbolic Error Code**
@@ -132,17 +121,6 @@ CallRateExceeded
 
 **Description**
 You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.
-
-***
-
-**Numeric Code**
-192
-
-**Symbolic Error Code**
-Not applicable.
-
-**Description**
-The account may not be updated given its current lifecycle status.
 
 ***
 
@@ -5079,6 +5057,17 @@ The report was not found.
 ***
 
 **Numeric Code**
+2108
+
+**Symbolic Error Code**
+Not applicable.
+
+**Description**
+The account identifier is invalid.
+
+***
+
+**Numeric Code**
 2180
 
 **Symbolic Error Code**
@@ -5086,6 +5075,17 @@ Not applicable
 
 **Description**
 You must specify at least three characters in the search filter.
+
+***
+
+**Numeric Code**
+2192
+
+**Symbolic Error Code**
+Not applicable.
+
+**Description**
+The account may not be updated given its current lifecycle status.
 
 ***
 
