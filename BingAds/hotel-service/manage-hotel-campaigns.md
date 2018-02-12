@@ -235,7 +235,9 @@ For an example that gets, adds, and updates hotel groups, see [code examples](..
 <a name="listinghotelgroups" />
 ### Listing hotel groups
 
-To get the list of hotel groups under a subaccount, send the following request.
+By default, when you request a list of hotel groups under a subaccount, the API returns a maximum of 1,000 groups. To determine the total number of groups in the subaccount, use the [$count](./reference.md#count-param) query paramater. To specify the number of groups to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of groups that you can request in single call is 5,000. If the subaccount contains more than 5,000 groups, use the $top and [$skip](./reference.md#skip-param) query parameters to page through all groups.
+
+To get a list of the first 1,000 hotel groups under a subaccount, send the following request.
 
 ```
 GET https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups HTTP/1.1
@@ -452,7 +454,9 @@ For an example that gets and updates hotels, see [hotel examples](../hotel-servi
 <a name="listinghotels" />
 ### Listing hotels
 
-To get the list of hotels in a hotel group, send the following request.
+By default, when you request a list of hotels in a hotel group, the API returns a maximum of 1,000 hotels. To determine the total number of hotels in the hotel group, use the [$count](./reference.md#count-param) query paramater. To specify the number of hotels to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of hotels that you can request in single call is 5,000. If your hotel group contains more than 5,000 hotels, use the $top and [$skip](./reference.md#skip-param) query parameters to page through all hotels.
+
+To get the first 1,000 hotels in a hotel group, send the following request.
 
 ```
 GET https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups('<hotelgroupid>')/Hotels HTTP/1.1
@@ -683,7 +687,11 @@ x-ms-trackingid: a5f2510e-709a-4370-876e-bfb05ef2b8df
 
 ### Getting hotel associations
 
-To get a list of all hotel and hotel group associations for a subaccount, send the following request:
+
+By default, when you request a list of associations in a subaccount, the API returns a maximum of 1,000 associations. To determine the total number of associations, use the [$count](./reference.md#count-param) query paramater. To specify the number of associations to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of associations that you can request in single call is 5,000. If your subaccount contains more than 5,000 associations, use the $top and [$skip](./reference.md#skip-param) query parameters to page through all associations.
+
+
+To get  the first 1,000 hotel and hotel group associations for a subaccount, send the following request:
 
 ```
 GET https://<host>/Travel/V1/Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/Associations HTTP/1.1
