@@ -29,7 +29,7 @@ The production endpoint is [https://adinsight.api.bingads.microsoft.com/Api/Adve
 The sandbox endpoint is [https://adinsight.api.sandbox.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc](https://adinsight.api.sandbox.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc).
 
 #### <a name="adinsight-monthlybudget"></a>Campaign Monthly Budget
-The *MonthlyBudgetSpendUntilDepleted* value is removed from the the [BudgetLimitType](~/ad-insight-service/budgetlimittype.md) value set. Previously the [GetBudgetOpportunities](~/ad-insight-service/getbudgetopportunities.md) operation would return monthly budget opportunities for campaigns using monthly budgets. Monthly budgets are no longer supported in Bing Ads. 
+The *MonthlyBudgetSpendUntilDepleted* value is removed from the [BudgetLimitType](~/ad-insight-service/budgetlimittype.md) value set. Previously the [GetBudgetOpportunities](~/ad-insight-service/getbudgetopportunities.md) operation would return monthly budget opportunities for campaigns using monthly budgets. Monthly budgets are no longer supported in Bing Ads. 
 
 
 ## <a name="bulk"></a>Bulk
