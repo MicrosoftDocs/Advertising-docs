@@ -5,6 +5,7 @@
       "build_source_folder": "BingAds",
       "build_output_subfolder": "BingAds",
       "locale": "en-us",
+      "monikers": [],
       "moniker_ranges": [
         "= bingads-11",
         "= bingads-12"
