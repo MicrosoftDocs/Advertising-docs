@@ -58,7 +58,8 @@ Returns a selector by filtering campaigns in this selector using the beginning a
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
-dateFrom|Object|Start date of the date range.dateTo|Object|End date of the date range.
+dateFrom|Object|Start date of the date range.
+dateTo|Object|End date of the date range.
 &nbsp;|&nbsp;|&nbsp;
 ### Returns:
 |Type|Description|

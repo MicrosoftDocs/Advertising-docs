@@ -139,7 +139,8 @@ Returns stats for this keyword for the given custom date range. Both parameters 
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
-dateFrom|Object|Start date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.dateTo|Object|End date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.
+dateFrom|Object|Start date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.
+dateTo|Object|End date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.
 &nbsp;|&nbsp;|&nbsp;
 ### Returns:
 |Type|Description|
@@ -201,7 +202,8 @@ Creates an ad param with the specified insertion text and at the index specified
 |Name|Type|Description|
 |-|-|-
 index|int|Defines which parameterized snippet of ad text to replace. For example,<br />                      a value of <code>1</code> indicates a replacement for the <code>{param1:default-value} </code> token. This field equals either <code>1</code> and
-                      <code>2</code>.insertionText|String|Numeric value to insert into the ad text.
+                      <code>2</code>.
+insertionText|String|Numeric value to insert into the ad text.
 &nbsp;|&nbsp;|&nbsp;
 ### Returns:
 |Type|Description|

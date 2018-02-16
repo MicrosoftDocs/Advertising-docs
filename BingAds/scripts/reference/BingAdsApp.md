@@ -1,6 +1,8 @@
 # BingAdsApp
 This is the root object of the Bing Ads Scripts API. It provides methods to retrieve different types of entities from the Bing Ads system for the current account.
 
+This is a test for adding additional information.
+
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
