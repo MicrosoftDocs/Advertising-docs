@@ -16,7 +16,7 @@ Returns the remaining number of Bing Ads entities this script is allowed to crea
 ### Returns:
 |Type|Description|
 |-|-
-int|The remaining number of AdWords entities the script is allowed to create in this execution.
+int|The remaining number of entities the script is allowed to create in this execution.
 &nbsp;|&nbsp;
 ## <a name="getremaininggetquota"></a>getRemainingGetQuota
 Returns the remaining number of Bing Ads entities this script is allowed to retrieve during its current runtime.
@@ -24,7 +24,7 @@ Returns the remaining number of Bing Ads entities this script is allowed to retr
 ### Returns:
 |Type|Description|
 |-|-
-int|The remaining number of AdWords entities the script is allowed to fetch in this execution.
+int|The remaining number of entities the script is allowed to fetch in this execution.
 &nbsp;|&nbsp;
 ## <a name="getremainingtime"></a>getRemainingTime
 Returns the remaining amount of execution time, in seconds, this script is allowed during its current runtime.
