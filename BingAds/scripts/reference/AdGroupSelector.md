@@ -19,7 +19,7 @@ var adGroupSelector = BingAdsApp
 |Method Name|Return Type|Description|
 |-|-|-
 [forDateRange(String dateRange)](#fordaterange~string-daterange~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector using the specified predefined date range.
-[forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector by filtering the ad groups using the specified start and end dates.
+[forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector with the specified start and end dates.
 [get](#get)|[AdGroupIterator](./AdGroupIterator)|Returns an iterator that you use to get the ad groups in this selector.
 [orderBy(String orderBy)](#orderby~string-orderby~)|[AdGroupSelector](./AdGroupSelector)|Specifies the ordering of the ad groups retrieved.
 [withCondition(String condition)](#withcondition~string-condition~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector by specifying the filtering condition on the ad groups in this selector. The format for the condition string is "columnName operator value", for e.g., "AverageCpm > 0.35", where:<br /> <br /> &nbsp;•	columnName must be from the list of supported columns for ad groups (see table below).<br /> &nbsp;&nbsp;o	If a Stats column is used in withCondition, it must be preceded by a forDateRange() invocation in the call chain.<br /> &nbsp;•	operator must be from the list of standard operators supported by Bing Ads Scripts.<br /> &nbsp;•	value is a value that falls within the accepted range of values for the data type of the column represented by columnName.<br /> <br /> As with the <code>orderBy()</code> method, <code>withCondition()</code> can also be used multiple times.<br /><br />
@@ -55,10 +55,15 @@ dateRange|String|Date range to set onto the selector.
 [AdGroupSelector](./AdGroupSelector)|The selector with date range applied.
 &nbsp;|&nbsp;
 ## <a name="fordaterange~object-datefrom_-object-dateto~"></a>forDateRange(Object dateFrom, Object dateTo)
-Returns a selector by filtering the ad groups using the specified start and end dates.  
+Returns a selector with the specified start and end dates.
 
-The date parameters can be entered as a string in YYYYMMDD format or as an object with year, month and day fields.  For example, <code>{year: 2016, month: 5, day: 13}</code>.
+You may specify the date parameters using strings or objects. To use strings, specify the date in the form, YYYYMMDD. If you use objects, create a JSON object with the following fields:  
 
+- year
+- month
+- day
+
+For example, {year: 2016, month: 5, day: 13}.
 
 ### Arguments:
 |Name|Type|Description|
