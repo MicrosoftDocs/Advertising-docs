@@ -17,6 +17,7 @@ Provides access to information about HTTP responses.
 ## <a name="getallheaders"></a>getAllHeaders
 Returns a JavaScript key/value map of HTTP headers.
 
+
 ### Returns:
 |Type|Description|
 |-|-
@@ -24,6 +25,7 @@ Object|
 &nbsp;|&nbsp;
 ## <a name="getas~string-contenttype~"></a>getAs(String contentType)
 Returns the contents of this object as a blob converted to the specified MIME type. For blobs containing images,  any image format such as 'image/bmp', 'image/gif', 'image/jpeg', or 'image/png' can be specified for the input parameter.
+
 
 ### Returns:
 |Type|Description|
@@ -33,6 +35,7 @@ Returns the contents of this object as a blob converted to the specified MIME ty
 ## <a name="getblob"></a>getBlob
 Returns the data inside this object as a blob.
 
+
 ### Returns:
 |Type|Description|
 |-|-
@@ -40,6 +43,7 @@ Returns the data inside this object as a blob.
 &nbsp;|&nbsp;
 ## <a name="getcontent"></a>getContent
 Returns the raw binary content of this HTTP response as a byte array.
+
 
 ### Returns:
 |Type|Description|
@@ -49,6 +53,7 @@ Byte[]|
 ## <a name="getcontenttext"></a>getContentText
 Returns the content of this HTTP response encoded as a string.
 
+
 ### Returns:
 |Type|Description|
 |-|-
@@ -56,6 +61,7 @@ String|
 &nbsp;|&nbsp;
 ## <a name="getcontenttext~string-charset~"></a>getContentText(String charset)
 Returns the content of this HTTP response encoded as a string using the specified character set.
+
 
 ### Returns:
 |Type|Description|
@@ -65,6 +71,7 @@ String|
 ## <a name="getheaders"></a>getHeaders
 Returns the attribute/value map of headers for this HTTP response.
 
+
 ### Returns:
 |Type|Description|
 |-|-
@@ -72,6 +79,7 @@ Object|
 &nbsp;|&nbsp;
 ## <a name="getresponsecode"></a>getResponseCode
 Returns the HTTP status code (for e.g., 200 for OK) of this HTTP response.
+
 
 ### Returns:
 |Type|Description|

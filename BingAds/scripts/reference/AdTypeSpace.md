@@ -18,6 +18,7 @@ Example usage:
 ## <a name="expandedtextad"></a>expandedTextAd
 Returns true if this ad is an ExpandedTextAd. 
 
+
 ### Returns:
 |Type|Description|
 |-|-
