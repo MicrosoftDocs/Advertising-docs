@@ -1,6 +1,20 @@
 # AdSelector
 Provides methods to select ads by using filtering and sorting.
 
+Example usage:
+```javascript
+ var adSelector = BingAdsApp
+     .ads()
+     .withCondition("Impressions > 100")
+     .forDateRange("LAST_MONTH")
+     .orderBy("Clicks DESC");
+
+ var adIterator = adSelector.get();
+ while (adIterator.hasNext()) {
+   var ad = adIterator.next();
+ }
+```
+
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
