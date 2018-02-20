@@ -54,7 +54,18 @@ CampaignStatus|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
 Returns a selector by filtering ad groups in this selector using the date range provided.
-Supported values for the date range include:<br />  <br /> `TODAY`<br />  `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br />
+Supported values for the date range include:
+
+`TODAY`
+`YESTERDAY`
+`LAST_7_DAYS`
+`THIS_WEEK_SUN_TODAY`
+`LAST_14_DAYS`
+`LAST_30_DAYS`
+`LAST_WEEK_SUN_SAT`
+`THIS_MONTH`
+`LAST_MONTH`
+`ALL_TIME`
 
 
 ### Arguments:
