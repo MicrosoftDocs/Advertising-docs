@@ -18,7 +18,7 @@ var adGroupSelector = BingAdsApp
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[forDateRange(String dateRange)](#fordaterange~string-daterange~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector by filtering ad groups in this selector using the date range provided.
+[forDateRange(String dateRange)](#fordaterange~string-daterange~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector using the specified predefined date range.
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector by filtering the ad groups using the specified start and end dates.
 [get](#get)|[AdGroupIterator](./AdGroupIterator)|Returns an iterator that you use to get the ad groups in this selector.
 [orderBy(String orderBy)](#orderby~string-orderby~)|[AdGroupSelector](./AdGroupSelector)|Specifies the ordering of the ad groups retrieved.
@@ -28,9 +28,20 @@ var adGroupSelector = BingAdsApp
 &nbsp;|&nbsp;|&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
-Returns a selector by filtering ad groups in this selector using the date range provided.
+Returns a selector using the specified predefined date range.
 
-Supported values for the date range are: `TODAY`, `YESTERDAY`, `LAST_7_DAYS`, `THIS_WEEK_SUN_TODAY`, `LAST_14_DAYS`, `LAST_30_DAYS`, `LAST_WEEK_SUN_SAT`, `THIS_MONTH`, `LAST_MONTH`, `ALL_TIME`
+Supported date range values:
+
+- TODAY
+- YESTERDAY
+- LAST_7_DAYS
+- THIS_WEEK_SUN_TODAY
+- LAST_14_DAYS
+- LAST_30_DAYS
+- LAST_WEEK_SUN_SAT
+- THIS_MONTH
+- LAST_MONTH
+- ALL_TIME
 
 
 ### Arguments:
@@ -70,7 +81,10 @@ Returns an iterator that you use to get the ad groups in this selector.
 ## <a name="orderby~string-orderby~"></a>orderBy(String orderBy)
 Specifies the ordering of the ad groups retrieved.
 
-The format for the condition is "columnName orderDirection", for e.g., "Cost DESC". <br /> <br />         &nbsp;� columnName can only be one column which is supported by the withCondition method.<br /> &nbsp;� orderDirection can be either ASC for ascending or DESC for descending. If no order direction is specified, ASC is used by default.<br /> <br /> <code>orderBy()</code> can be invoked multiple times by calling it in sequence as shown by the following example:<br /> <br /> <code> agSelector = agSelector.orderBy("MaxCpc")<br /> &nbsp;&nbsp;.orderBy("Clicks ASC"); </code>
+The format for the condition is "<columnName> <orderDirection>", for example, "Cost DESC". 
+
+- columnName can only be one column which is supported by the withCondition method.
+- orderDirection can be either ASC for ascending or DESC for descending. If no order direction is specified, ASC is used by default.<br /> <br /> <code>orderBy()</code> can be invoked multiple times by calling it in sequence as shown by the following example:<br /> <br /> <code> agSelector = agSelector.orderBy("MaxCpc")<br /> &nbsp;&nbsp;.orderBy("Clicks ASC"); </code>
 
 ### Arguments:
 |Name|Type|Description|

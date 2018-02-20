@@ -4,7 +4,7 @@ Provides methods to select ads by using filtering and sorting.
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[forDateRange(String dateRange)](#fordaterange~string-daterange~)|[AdSelector](./AdSelector)|Returns a selector by filtering ads in this selector using the date range provided. Supported values for the date range include:<br /> <br /> `TODAY`<br /> `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br /><br />
+[forDateRange(String dateRange)](#fordaterange~string-daterange~)|[AdSelector](./AdSelector)|Returns a selector using the specified predefined date range.
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[AdSelector](./AdSelector)|Returns a selector by filtering ads in this selector using the beginning and ending dates provided. The date parameters can be entered as a string in YYYYMMDD format or as an object with year, month and day fields. An example for such an object is <code>{year: 2016, month: 5, day: 13}</code>.<br />
 [get](#get)|[AdIterator](./AdIterator)|Returns an iterator indexing the ads in this selector.<br />
 [orderBy(String orderBy)](#orderby~string-orderby~)|[AdSelector](./AdSelector)|Returns a selector by specifying the condition for ordering the ads in this selector. The format for the condition is "columnName orderDirection", for e.g., "Cost DESC".<br /> <br /> &nbsp;•	columnName can only be one column which is supported by the withCondition method.<br /> &nbsp;•	orderDirection can be either ASC for ascending or DESC for descending. If no order direction is specified, ASC is used by default.<br /> <br /> <code>orderBy()</code> can be invoked multiple times by calling it in sequence as shown by the following example:<br /> <br /> <code>adSelector = adSelector.orderBy("MaxCpc")<br /> .orderBy("Clicks ASC");<br /> </code><br />
@@ -14,7 +14,21 @@ Provides methods to select ads by using filtering and sorting.
 &nbsp;|&nbsp;|&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
-Returns a selector by filtering ads in this selector using the date range provided. Supported values for the date range include:<br /> <br /> `TODAY`<br /> `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br />
+Returns a selector using the specified predefined date range.
+
+Supported date range values:
+
+- TODAY
+- YESTERDAY
+- LAST_7_DAYS
+- THIS_WEEK_SUN_TODAY
+- LAST_14_DAYS
+- LAST_30_DAYS
+- LAST_WEEK_SUN_SAT
+- THIS_MONTH
+- LAST_MONTH
+- ALL_TIME
+
 
 ### Arguments:
 |Name|Type|Description|
