@@ -21,9 +21,9 @@ var adGroupSelector = BingAdsApp
 [forDateRange(String dateRange)](#fordaterange~string-daterange~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector using the specified predefined date range.
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector with the specified start and end dates.
 [get](#get)|[AdGroupIterator](./AdGroupIterator)|Returns an iterator that you use to get the ad groups in this selector.
-[orderBy(String orderBy)](#orderby~string-orderby~)|[AdGroupSelector](./AdGroupSelector)|Specifies the ordering of the ad groups retrieved.
-[withCondition(String condition)](#withcondition~string-condition~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector with the specified filtering conditions applied.
-[withIds(long[] ids)](#withids~long-ids~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector by specifying the list of IDs to filter ad groups in this selector. The input argument can accept a maximum of 10,000 IDs. If any more IDs are provided, any subsequent get() call on this selector will fail with an error.<br />
+[orderBy(String orderBy)](#orderby~string-orderby~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector with the specified ordering.
+[withCondition(String condition)](#withcondition~string-condition~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector with the specified filtering conditions.
+[withIds(long[] ids)](#withids~long-ids~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector that will return only ad groups with the specified IDs.
 [withLimit(int limit)](#withlimit~int-limit~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector with as many ad groups as specified by the limit argument selected from the beginning in this selector.<br />
 &nbsp;|&nbsp;|&nbsp;
 
@@ -84,7 +84,7 @@ Returns an iterator that you use to get the ad groups in this selector.
 [AdGroupIterator](./AdGroupIterator)|Iterator used to get the ad groups in this selector.
 &nbsp;|&nbsp;
 ## <a name="orderby~string-orderby~"></a>orderBy(String orderBy)
-Specifies the ordering of the ad groups retrieved.
+Returns a selector with the specified ordering.
 
 The format for the condition is "&lt;columnName&gt; &lt;orderDirection&gt;", for example, "Cost DESC". 
 
@@ -102,7 +102,7 @@ orderBy|String|Ordering to apply.
 [AdGroupSelector](./AdGroupSelector)|The selector with ordering applied.
 &nbsp;|&nbsp;
 ## <a name="withcondition~string-condition~"></a>withCondition(String condition)
-Returns a selector with the specified filtering conditions applied.
+Returns a selector with the specified filtering conditions.
 
 Specify the condition parameter in the form, "columnName operator value" where: 
 
@@ -169,7 +169,9 @@ condition|String|Condition to add to the selector.
 [AdGroupSelector](./AdGroupSelector)|The selector with the condition applied.
 &nbsp;|&nbsp;
 ## <a name="withids~long-ids~"></a>withIds(long[] ids)
-Returns a selector by specifying the list of IDs to filter ad groups in this selector. The input argument can accept a maximum of 10,000 IDs. If any more IDs are provided, any subsequent get() call on this selector will fail with an error.
+Returns a selector that will return only ad groups with the specified IDs.
+
+The maximum number of IDs that you may specify is 10,000. If you specify more than 10,000 IDs, calling the get method will fail.
 
 ### Arguments:
 |Name|Type|Description|
