@@ -14,6 +14,8 @@ This is the root object of the Bing Ads Scripts API. It provides methods to retr
 ## <a name="adgroups"></a>adGroups
 Returns a selector of all ad groups in the current account.
 
+
+
 ### Returns:
 |Type|Description|
 |-|-
