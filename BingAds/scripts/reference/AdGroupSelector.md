@@ -89,7 +89,10 @@ Returns a selector with the specified ordering.
 Specify the orderBy parameter in the form, "columnName [ASC|DESC]" where:
 
 - columnName can only be one column which is supported by the withCondition method.
-- orderDirection can be either ASC for ascending or DESC for descending. If no order direction is specified, ASC is used by default.<br /> <br /> <code>orderBy()</code> can be invoked multiple times by calling it in sequence as shown by the following example:<br /> <br /> <code> agSelector = agSelector.orderBy("MaxCpc")<br /> &nbsp;&nbsp;.orderBy("Clicks ASC"); </code>
+- orderDirection is the direction to order the results in. Set to ASC to order the results in ascending order or DESC�to order the results in descending order. The default is ASC.
+- You may order the results by one or more metrics by chaining together multiple orderBy calls. For example, the following call returns results in ascending order by MaxCpc.
+
+<code>agSelector = agSelector.orderBy("MaxCpc");</code>
 
 ### Arguments:
 |Name|Type|Description|
