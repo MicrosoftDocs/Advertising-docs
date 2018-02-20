@@ -87,7 +87,7 @@ String|Name of the ad group.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
 Returns a [Stats](./Stats) object for this ad group for the specified predefined date range.
-Supported values for the date range include:&lt;br /&gt;  &lt;br /&gt; &#x60;TODAY&#x60;&lt;br /&gt;  &#x60;YESTERDAY&#x60;&lt;br /&gt; &#x60;LAST_7_DAYS&#x60;&lt;br /&gt; &#x60;THIS_WEEK_SUN_TODAY&#x60;&lt;br /&gt; &#x60;LAST_14_DAYS&#x60;&lt;br /&gt; &#x60;LAST_30_DAYS&#x60;&lt;br /&gt; &#x60;LAST_WEEK_SUN_SAT&#x60;&lt;br /&gt; &#x60;THIS_MONTH&#x60;&lt;br /&gt; &#x60;LAST_MONTH&#x60;&lt;br /&gt; &#x60;ALL_TIME&#x60;&lt;br /&gt;
+Supported values for the date range include:<br />  <br /> `TODAY`<br />  `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br />
 
 
 ### Arguments:

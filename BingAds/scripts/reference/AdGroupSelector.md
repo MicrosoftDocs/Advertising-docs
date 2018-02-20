@@ -54,7 +54,7 @@ CampaignStatus|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
 Returns a selector by filtering ad groups in this selector using the date range provided.
-Supported values for the date range include:&lt;br /&gt;  &lt;br /&gt; &#x60;TODAY&#x60;&lt;br /&gt;  &#x60;YESTERDAY&#x60;&lt;br /&gt; &#x60;LAST_7_DAYS&#x60;&lt;br /&gt; &#x60;THIS_WEEK_SUN_TODAY&#x60;&lt;br /&gt; &#x60;LAST_14_DAYS&#x60;&lt;br /&gt; &#x60;LAST_30_DAYS&#x60;&lt;br /&gt; &#x60;LAST_WEEK_SUN_SAT&#x60;&lt;br /&gt; &#x60;THIS_MONTH&#x60;&lt;br /&gt; &#x60;LAST_MONTH&#x60;&lt;br /&gt; &#x60;ALL_TIME&#x60;&lt;br /&gt;
+Supported values for the date range include:<br />  <br /> `TODAY`<br />  `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br />
 
 
 ### Arguments:
@@ -69,7 +69,7 @@ dateRange|String|Date range to set onto the selector.
 &nbsp;|&nbsp;
 ## <a name="fordaterange~object-datefrom_-object-dateto~"></a>forDateRange(Object dateFrom, Object dateTo)
 Returns a selector by filtering the ad groups using the specified start and end dates.  
-The date parameters can be entered as a string in YYYYMMDD format or as an object with year, month and day fields.  For example, &lt;code&gt;{year: 2016, month: 5, day: 13}&lt;/code&gt;.
+The date parameters can be entered as a string in YYYYMMDD format or as an object with year, month and day fields.  For example, <code>{year: 2016, month: 5, day: 13}</code>.
 
 
 ### Arguments:
@@ -92,7 +92,7 @@ Returns an iterator that you use to get the ad groups in this selector.
 &nbsp;|&nbsp;
 ## <a name="orderby~string-orderby~"></a>orderBy(String orderBy)
 Specifies the ordering of the ad groups retrieved.
-The format for the condition is &quot;columnName orderDirection&quot;, for e.g., &quot;Cost DESC&quot;. &lt;br /&gt; &lt;br /&gt;         &amp;nbsp;� columnName can only be one column which is supported by the withCondition method.&lt;br /&gt; &amp;nbsp;� orderDirection can be either ASC for ascending or DESC for descending. If no order direction is specified, ASC is used by default.&lt;br /&gt; &lt;br /&gt; &lt;code&gt;orderBy()&lt;/code&gt; can be invoked multiple times by calling it in sequence as shown by the following example:&lt;br /&gt; &lt;br /&gt; &lt;code&gt; agSelector &#x3D; agSelector.orderBy(&quot;MaxCpc&quot;)&lt;br /&gt; &amp;nbsp;&amp;nbsp;.orderBy(&quot;Clicks ASC&quot;); &lt;/code&gt;
+The format for the condition is "columnName orderDirection", for e.g., "Cost DESC". <br /> <br />         &nbsp;� columnName can only be one column which is supported by the withCondition method.<br /> &nbsp;� orderDirection can be either ASC for ascending or DESC for descending. If no order direction is specified, ASC is used by default.<br /> <br /> <code>orderBy()</code> can be invoked multiple times by calling it in sequence as shown by the following example:<br /> <br /> <code> agSelector = agSelector.orderBy("MaxCpc")<br /> &nbsp;&nbsp;.orderBy("Clicks ASC"); </code>
 
 ### Arguments:
 |Name|Type|Description|
