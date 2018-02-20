@@ -1,6 +1,5 @@
 # BingAdsApp
-This is the root object of the Bing Ads Scripts API. It provides methods to retrieve different types of entities from the Bing Ads system for the current account.
-
+This is the root object of the Bing Ads Scripts API. It provides methods to retrieve different types of Bing Ads entities for the current Bing Ads account.
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
@@ -18,7 +17,7 @@ Returns a selector of all ad groups in the current account.
 ### Returns:
 |Type|Description|
 |-|-
-[AdGroupSelector](./AdGroupSelector)|The selector of all ad groups in the campaign.
+[AdGroupSelector](./AdGroupSelector)|The selector of all ad groups in the current account.
 &nbsp;|&nbsp;
 ## <a name="ads"></a>ads
 Returns a selector of all ads in the current account.

@@ -18,7 +18,7 @@ var adGroupSelector = BingAdsApp
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[forDateRange(String dateRange)](#fordaterange~string-daterange~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector by filtering ad groups in this selector using the date range provided. Supported values for the date range include:<br />  <br /> `TODAY`<br />  `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br /><br />
+[forDateRange(String dateRange)](#fordaterange~string-daterange~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector by filtering ad groups in this selector using the date range provided.
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector by filtering ad groups in this selector using the beginning and ending dates provided.  The date parameters can be entered as a string in YYYYMMDD format or as an object with year, month and day fields.  An example for such an object is <code>{year: 2016, month: 5, day: 13}</code>.<br />
 [get](#get)|[AdGroupIterator](./AdGroupIterator)|Returns an iterator indexing the ad groups in this selector.<br />
 [orderBy(String orderBy)](#orderby~string-orderby~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector by specifying the condition for ordering the ad groups in this selector. The format for the condition is "columnName orderDirection", for e.g., "Cost DESC". <br /> <br />         &nbsp;• columnName can only be one column which is supported by the withCondition method.<br /> &nbsp;• orderDirection can be either ASC for ascending or DESC for descending. If no order direction is specified, ASC is used by default.<br /> <br /> <code>orderBy()</code> can be invoked multiple times by calling it in sequence as shown by the following example:<br /> <br /> <code> agSelector = agSelector.orderBy("MaxCpc")<br /> &nbsp;&nbsp;.orderBy("Clicks ASC"); </code>
@@ -53,8 +53,7 @@ CampaignStatus|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
-Returns a selector by filtering ad groups in this selector using the date range provided. Supported values for the date range include:<br />  <br /> `TODAY`<br />  `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br />
-
+Returns a selector by filtering ad groups in this selector using the date range provided.
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
