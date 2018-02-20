@@ -27,31 +27,6 @@ var adGroupSelector = BingAdsApp
 [withLimit(int limit)](#withlimit~int-limit~)|[AdGroupSelector](./AdGroupSelector)|Returns a selector with as many ad groups as specified by the limit argument selected from the beginning in this selector.<br />
 &nbsp;|&nbsp;|&nbsp;
 
-Supported columns for ad group filtering. 
-
-|Column|Type|Example|Bing Web UI filter|
-|-|-|-|-
-<strong>Stats</strong>|
-AverageCpc|double|`withCondition("AverageCpc < 1.45")`|Avg. CPC
-AverageCpm|double|`withCondition("AverageCpm > 0.48")`|Avg. CPM
-AveragePageviews|double|`withCondition("AveragePageviews > 0")`|
-AveragePosition|double|`withCondition("AveragePosition > 7.5")`|Avg. pos.
-BounceRate|double|`withCondition("BounceRate < 0.5")`|
-ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`|Conv. Rate
-Clicks|long|`withCondition("Clicks >= 21")`|Clicks
-ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`|Conv.
-Cost|double|`withCondition("Cost > 4.48"). The value is in the currency of the account.`|Spend
-Ctr|double|`withCondition("Ctr > 0.01"). Note that Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.`|CTR
-Impressions|long|`withCondition("Impressions != 0")`|Impr.
-&nbsp;|&nbsp;|&nbsp;|&nbsp;
-<strong>Ad group attributes</strong>|
-Status|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`REMOVED`|`withCondition("Status = PAUSED")`|
-Name|String|`withCondition("Name CONTAINS_IGNORE_CASE 'shoes'")`|Ad group name
-CampaignName|String|`withCondition("CampaignName CONTAINS_IGNORE_CASE 'promotion'")`|Campaign name
-KeywordMaxCpc|double|`withCondition("KeywordMaxCpc > 10.0"). The value is in the currency of the account.`|
-CampaignStatus|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`REMOVED`|`withCondition("CampaignStatus = ENABLED"). Use to return ad groups from only ENABLED campaigns.`|
-&nbsp;|&nbsp;|&nbsp;|&nbsp;
-
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
 Returns a selector by filtering ad groups in this selector using the date range provided.
 
@@ -87,7 +62,6 @@ dateTo|Object|End date of the date range.
 &nbsp;|&nbsp;
 ## <a name="get"></a>get
 Returns an iterator that you use to get the ad groups in this selector.
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -112,6 +86,31 @@ orderBy|String|Ordering to apply.
 Returns a selector by specifying the filtering condition on the ad groups in this selector. The format for the condition string is "columnName operator value", for e.g., "AverageCpm > 0.35", where:<br /> <br /> &nbsp;•	columnName must be from the list of supported columns for ad groups (see table below).<br /> &nbsp;&nbsp;o	If a Stats column is used in withCondition, it must be preceded by a forDateRange() invocation in the call chain.<br /> &nbsp;•	operator must be from the list of standard operators supported by Bing Ads Scripts.<br /> &nbsp;•	value is a value that falls within the accepted range of values for the data type of the column represented by columnName.<br /> <br /> As with the <code>orderBy()</code> method, <code>withCondition()</code> can also be used multiple times.<br />
 
 
+Supported columns for ad group filtering. 
+
+|Column|Type|Example|Bing Web UI filter|
+|-|-|-|-
+<strong>Stats</strong>|
+AverageCpc|double|`withCondition("AverageCpc < 1.45")`|Avg. CPC
+AverageCpm|double|`withCondition("AverageCpm > 0.48")`|Avg. CPM
+AveragePageviews|double|`withCondition("AveragePageviews > 0")`|
+AveragePosition|double|`withCondition("AveragePosition > 7.5")`|Avg. pos.
+BounceRate|double|`withCondition("BounceRate < 0.5")`|
+ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`|Conv. Rate
+Clicks|long|`withCondition("Clicks >= 21")`|Clicks
+ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`|Conv.
+Cost|double|`withCondition("Cost > 4.48")`. The value is in the currency of the account.|Spend
+Ctr|double|`withCondition("Ctr > 0.01")`. Note that Ctr is returned in 0..1 range, so 5% Ctr is represented as 0.05.|CTR
+Impressions|long|`withCondition("Impressions != 0")`|Impr.
+&nbsp;|&nbsp;|&nbsp;|&nbsp;
+<strong>Ad group attributes</strong>|
+Status|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`REMOVED`|`withCondition("Status = PAUSED")`|
+Name|String|`withCondition("Name CONTAINS_IGNORE_CASE 'shoes'")`|Ad group name
+CampaignName|String|`withCondition("CampaignName CONTAINS_IGNORE_CASE 'promotion'")`|Campaign name
+KeywordMaxCpc|double|`withCondition("KeywordMaxCpc > 10.0")`. The value is in the currency of the account.|
+CampaignStatus|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`REMOVED`|`withCondition("CampaignStatus = ENABLED"). Use to return ad groups from only ENABLED campaigns.`|
+&nbsp;|&nbsp;|&nbsp;|&nbsp;
+
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
@@ -125,7 +124,6 @@ condition|String|Condition to add to the selector.
 ## <a name="withids~long-ids~"></a>withIds(long[] ids)
 Returns a selector by specifying the list of IDs to filter ad groups in this selector. The input argument can accept a maximum of 10,000 IDs. If any more IDs are provided, any subsequent get() call on this selector will fail with an error.
 
-
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
@@ -138,7 +136,6 @@ ids|long[]|Array of ad group IDs.
 &nbsp;|&nbsp;
 ## <a name="withlimit~int-limit~"></a>withLimit(int limit)
 Returns a selector with as many ad groups as specified by the limit argument selected from the beginning in this selector.
-
 
 ### Arguments:
 |Name|Type|Description|

@@ -23,7 +23,6 @@ Example usage:
 ## <a name="expandedtextadbuilder"></a>expandedTextAdBuilder
 Returns a new expanded text ad builder object associated with the parent ad group.
 
-
 ### Returns:
 |Type|Description|
 |-|-

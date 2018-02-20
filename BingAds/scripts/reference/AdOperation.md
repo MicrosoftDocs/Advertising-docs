@@ -41,7 +41,6 @@ Example usage:
 ## <a name="geterrors"></a>getErrors
 Returns an empty array if the ad was successfully created, otherwise returns the errors encountered during the execution of this operation.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -50,7 +49,6 @@ String[]|The errors that occurred during the AdOperation.
 ## <a name="getresult"></a>getResult
 Returns the newly created Ad, otherwise returns null if this operation failed to execute.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -58,7 +56,6 @@ Returns the newly created Ad, otherwise returns null if this operation failed to
 &nbsp;|&nbsp;
 ## <a name="issuccessful"></a>isSuccessful
 Returns 
-
 
 ### Returns:
 |Type|Description|

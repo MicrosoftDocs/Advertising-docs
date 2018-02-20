@@ -26,7 +26,6 @@ Example usage:
 ## <a name="build"></a>build
 Returns an ad group operation which represents the ad group to be created.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -34,7 +33,6 @@ Returns an ad group operation which represents the ad group to be created.
 &nbsp;|&nbsp;
 ## <a name="withbiddingstrategy~string-biddingstrategy~"></a>withBiddingStrategy(String biddingStrategy)
 Sets the type of bidding strategy to be used for this new ad group. The only supported value is `MANUAL_CPC`
-
 
 ### Arguments:
 |Name|Type|Description|
@@ -49,7 +47,6 @@ biddingStrategy|String|The standard bidding strategy of the ad group.
 ## <a name="withcpc~double-cpc~"></a>withCpc(double cpc)
 Sets the maximum CPC bid to be used for this new ad group. If no CPC is specified, the default of 0.30 will be specified.
 
-
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
@@ -62,7 +59,6 @@ cpc|double|The max CPC bid of the ad group.
 &nbsp;|&nbsp;
 ## <a name="withcustomparameters~object-customparams~"></a>withCustomParameters(Object customParams)
 Sets the custom parameters to be used with this new ad group. The parameters need to be specified as an Object in the form of a map such as:<br /> <code>{ key: 'value1', key2: 'value2', key3: 'value3' }</code>
-
 
 ### Arguments:
 |Name|Type|Description|
@@ -77,7 +73,6 @@ customParameters|Object|The custom parameters of the ad group as a map of the<br
 ## <a name="withname~string-name~"></a>withName(String name)
 Sets the name of this new ad group. 
 
-
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
@@ -91,7 +86,6 @@ name|String|Ad group name.
 ## <a name="withstatus~string-status~"></a>withStatus(String status)
 Sets the status of this new ad group to the provided value. If no value is given, the default value of `ENABLED` is set.
 
-
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
@@ -104,7 +98,6 @@ status|String|Ad group status.
 &nbsp;|&nbsp;
 ## <a name="withtrackingtemplate~string-trackingtemplate~"></a>withTrackingTemplate(String trackingTemplate)
 Sets the tracking template to be used with this new ad group.
-
 
 ### Arguments:
 |Name|Type|Description|

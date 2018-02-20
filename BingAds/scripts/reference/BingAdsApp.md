@@ -25,7 +25,6 @@ Returns a selector of all ad groups in the current account.
 ## <a name="ads"></a>ads
 Returns a selector of all ads in the current account.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -33,7 +32,6 @@ Returns a selector of all ads in the current account.
 &nbsp;|&nbsp;
 ## <a name="campaigns"></a>campaigns
 Returns a selector of all campaigns in the current account.
-
 
 ### Returns:
 |Type|Description|
@@ -43,7 +41,6 @@ Returns a selector of all campaigns in the current account.
 ## <a name="currentaccount"></a>currentAccount
 Returns the account in which the script is currently executing.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -52,7 +49,6 @@ Returns the account in which the script is currently executing.
 ## <a name="getexecutioninfo"></a>getExecutionInfo
 Returns information about the environment in which the script is currently executing.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -60,7 +56,6 @@ Returns information about the environment in which the script is currently execu
 &nbsp;|&nbsp;
 ## <a name="keywords"></a>keywords
 Returns a selector of all keywords in the current account.
-
 
 ### Returns:
 |Type|Description|

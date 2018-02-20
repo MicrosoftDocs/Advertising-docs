@@ -18,7 +18,6 @@ Example usage:
 ## <a name="expandedtextad"></a>expandedTextAd
 Returns this ad as an [ExpandedTextAd](./ExpandedTextAd).
 
-
 ### Returns:
 |Type|Description|
 |-|-

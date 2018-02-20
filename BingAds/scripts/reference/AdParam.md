@@ -15,7 +15,6 @@ Represents an ad param (custom parameters).
 ## <a name="getentitytype"></a>getEntityType
 Returns the entity type of this ad param, which is “AdParam”.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -23,7 +22,6 @@ String|Type of this entity: "AdParam".
 &nbsp;|&nbsp;
 ## <a name="getindex"></a>getIndex
 Returns the index of this ad param.
-
 
 ### Returns:
 |Type|Description|
@@ -33,7 +31,6 @@ int|The index of the ad param.
 ## <a name="getinsertiontext"></a>getInsertionText
 Returns the insertion text of this ad param.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -41,7 +38,6 @@ String|The insertion text of the ad param.
 &nbsp;|&nbsp;
 ## <a name="getkeyword"></a>getKeyword
 Returns the Keyword this ad param belongs to.
-
 
 ### Returns:
 |Type|Description|
@@ -51,7 +47,6 @@ Returns the Keyword this ad param belongs to.
 ## <a name="remove"></a>remove
 Removes this ad param.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -59,7 +54,6 @@ void|
 &nbsp;|&nbsp;
 ## <a name="setinsertiontext~string-insertiontext~"></a>setInsertionText(String insertionText)
 Sets the insertion text of this ad param to the given value.
-
 
 ### Arguments:
 |Name|Type|Description|

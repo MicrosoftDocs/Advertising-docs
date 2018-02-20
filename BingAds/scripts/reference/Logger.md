@@ -13,7 +13,6 @@ Provides methods to write text to the logging console.
 ## <a name="clear"></a>clear
 Clears this log.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -21,7 +20,6 @@ void|
 &nbsp;|&nbsp;
 ## <a name="getlog"></a>getLog
 Returns the complete list of messages in the current log.
-
 
 ### Returns:
 |Type|Description|
@@ -31,7 +29,6 @@ String|
 ## <a name="log~data~"></a>log(data)
 Write the provided string to the logger's console.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -39,7 +36,6 @@ Write the provided string to the logger's console.
 &nbsp;|&nbsp;
 ## <a name="log~format_-values~"></a>log(format, values)
 Writes a formatted string to the logger's console, using the string format and values provided.
-
 
 ### Returns:
 |Type|Description|

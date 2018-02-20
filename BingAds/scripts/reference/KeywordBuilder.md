@@ -27,7 +27,6 @@ Example usage:
 ## <a name="build"></a>build
 Returns a keyword operation with the defined properties which can later be used to construct the keyword.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -35,7 +34,6 @@ Returns a keyword operation with the defined properties which can later be used 
 &nbsp;|&nbsp;
 ## <a name="withcpc~double-cpc~"></a>withCpc(double cpc)
 Returns a keyword builder with the CPC property set to the specified value.
-
 
 ### Arguments:
 |Name|Type|Description|
@@ -50,7 +48,6 @@ cpc|double|The max CPC bid of the keyword.
 ## <a name="withcustomparameters~-string-customparameters~"></a>withCustomParameters( String customParameters)
 Returns a keyword builder with the custom parameters set to the specified value. The custom parameters are in the format: <code>{key1: 'value1', key2: 'value2', key3: 'value3'}</code>.
 
-
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
@@ -64,7 +61,6 @@ customParameters|Object|The custom parameters of the keyword as a map of the<br 
 ## <a name="withdestinationurl~string-destinationurl~"></a>withDestinationUrl(String destinationUrl)
 Returns a keyword builder with the destination URL set to the specified value.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -72,7 +68,6 @@ Returns a keyword builder with the destination URL set to the specified value.
 &nbsp;|&nbsp;
 ## <a name="withfinalurl~string-finalurl~"></a>withFinalUrl(String finalUrl)
 Returns a keyword builder with the final URL set to the specified value.
-
 
 ### Arguments:
 |Name|Type|Description|
@@ -87,7 +82,6 @@ finalUrl|String|The final URL for the keyword.
 ## <a name="withmobilefinalurl~string-mobilefinalurl~"></a>withMobileFinalUrl(String mobileFinalUrl)
 Returns a keyword builder with the mobile final URL set to the specified value.
 
-
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
@@ -101,7 +95,6 @@ mobileFinalUrl|String|The mobile final URL for the keyword.
 ## <a name="withtext~string-text~"></a>withText(String text)
 Returns a keyword builder with the text set to the specified value. Setting the text requires specifying the match type as well by means of extra characters as shown below:<br /> <br /> &nbsp;•	kwBuilder.withText("books") - broad match.<br /> &nbsp;•	kwBuilder.withText("\"books\"") - phrase match.<br /> &nbsp;•	kwBuilder.withText("[the origin of species]") - exact match<br />        
 
-
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
@@ -114,7 +107,6 @@ text|String|The text of the keyword.
 &nbsp;|&nbsp;
 ## <a name="withtrackingtemplate~-string-trackingtemplate~"></a>withTrackingTemplate( String trackingTemplate)
 Returns a keyword builder with the tracking template set to the specified value.
-
 
 ### Arguments:
 |Name|Type|Description|

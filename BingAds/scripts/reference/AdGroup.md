@@ -32,7 +32,6 @@ Example usage:
 ## <a name="ads"></a>ads
 Returns a selector of all the ads under this ad group.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -40,7 +39,6 @@ Returns a selector of all the ads under this ad group.
 &nbsp;|&nbsp;
 ## <a name="devices"></a>devices
 Returns an AdGroupDevices object associated with this ad group.
-
 
 ### Returns:
 |Type|Description|
@@ -50,7 +48,6 @@ Returns an AdGroupDevices object associated with this ad group.
 ## <a name="enable"></a>enable
 Enables this ad group.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -58,7 +55,6 @@ void|Access to this ad group's extensions.
 &nbsp;|&nbsp;
 ## <a name="getcampaign"></a>getCampaign
 Returns the parent campaign of this ad group.
-
 
 ### Returns:
 |Type|Description|
@@ -68,7 +64,6 @@ Returns the parent campaign of this ad group.
 ## <a name="getentitytype"></a>getEntityType
 Returns the entity type of this ad group, which is “Ad Group”.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -77,7 +72,6 @@ String|Type of this entity: "AdGroup".
 ## <a name="getid"></a>getId
 Returns the ID of this ad group.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -85,7 +79,6 @@ long|The ID of the ad group.
 &nbsp;|&nbsp;
 ## <a name="getname"></a>getName
 Returns the name of this ad group.
-
 
 ### Returns:
 |Type|Description|
@@ -111,7 +104,6 @@ dateRange|String|Predefined date range for which the stats are requested.
 ## <a name="getstatsfor~object-datefrom_-object-dateto~"></a>getStatsFor(Object dateFrom, Object dateTo)
 Returns stats for this ad group for the given custom date range. Both parameters can be either a string in `YYYYMMDD` format or an object with year, month and day properties. In either case, a full date must be specified 
 
-
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
@@ -126,7 +118,6 @@ String|The stats for the specified date range.
 ## <a name="isenabled"></a>isEnabled
 Returns true if this ad group is enabled. 
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -134,7 +125,6 @@ boolean|true if the ad group is enabled.
 &nbsp;|&nbsp;
 ## <a name="ispaused"></a>isPaused
 Returns true if this ad group is paused. 
-
 
 ### Returns:
 |Type|Description|
@@ -144,7 +134,6 @@ boolean|true if the ad group is paused.
 ## <a name="isremoved"></a>isRemoved
 Returns true if this ad group is removed. 
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -152,7 +141,6 @@ boolean|true if the ad group is removed.
 &nbsp;|&nbsp;
 ## <a name="keywords"></a>keywords
 Returns a selector of all the keywords under this ad group.
-
 
 ### Returns:
 |Type|Description|
@@ -162,7 +150,6 @@ Returns a selector of all the keywords under this ad group.
 ## <a name="newad"></a>newAd
 Returns a new ad builder space associated with this ad group, which can be used to construct the new ad.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -170,7 +157,6 @@ Returns a new ad builder space associated with this ad group, which can be used 
 &nbsp;|&nbsp;
 ## <a name="newkeywordbuilder"></a>newKeywordBuilder
 Returns a new keyword builder associated with this ad group, which can be used to construct the new keyword.
-
 
 ### Returns:
 |Type|Description|
@@ -180,7 +166,6 @@ Returns a new keyword builder associated with this ad group, which can be used t
 ## <a name="pause"></a>pause
 Pauses this ad group.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -188,7 +173,6 @@ void|Access to certain kinds of targeting criteria in this ad group.
 &nbsp;|&nbsp;
 ## <a name="setname~string-name~"></a>setName(String name)
 Sets the name of this ad group.
-
 
 ### Arguments:
 |Name|Type|Description|
@@ -202,7 +186,6 @@ void|Access to certain kinds of targeting criteria in this ad group.
 &nbsp;|&nbsp;
 ## <a name="urls"></a>urls
 Returns an AdGroupUrls object which provides access to the URL fields of this ad group.
-
 
 ### Returns:
 |Type|Description|

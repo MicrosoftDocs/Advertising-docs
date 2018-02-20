@@ -12,7 +12,6 @@ Represents a calendar date in terms of year, month and day.
 ## <a name="day"></a>day
 Returns the day of month (1 to 31) for this date.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -21,7 +20,6 @@ int|
 ## <a name="month"></a>month
 Returns the month as a number (1 to 12) for this date.
 
-
 ### Returns:
 |Type|Description|
 |-|-
@@ -29,7 +27,6 @@ int|
 &nbsp;|&nbsp;
 ## <a name="year"></a>year
 Returns the year for this date.
-
 
 ### Returns:
 |Type|Description|
