@@ -107,9 +107,31 @@ Returns a selector with the specified filtering conditions applied.
 Specify the condition parameter in the form, "columnName operator value" where: 
 
 - columnName must be from the list of supported columns for ad groups (see table below).
-- operator must be from the list of standard operators supported by Bing Ads Scripts.
-- value is a value that falls within the accepted range of values for the data type of the column represented by columnName.
-- If a Stats column is used in withCondition, a forDateRange() invocation must be included in the call chain.
+- operator is one of the supported [operators](#Operators).
+
+### Operators
+The operator that can be used in a condition depends on the type of column. 
+For Integer and Long columns: 
+
+```
+<  <=  >  >=  =  !=
+```
+For Double columns: 
+```
+<  >
+```
+For String columns: 
+```
+=  !=  STARTS_WITH  STARTS_WITH_IGNORE_CASE  CONTAINS
+ CONTAINS_IGNORE_CASE  DOES_NOT_CONTAIN  DOES_NOT_CONTAIN_IGNORE_CASE
+```
+For Enumeration columns: 
+```
+=  !=  IN []  NOT_IN []
+```
+
+Operators are case-sensitive: `starts_with` won't work. 
+If you set columnName to a performance metric column name, you must include the forDateRange method in the call chain.
 
 Supported columns for ad group filtering. 
 
