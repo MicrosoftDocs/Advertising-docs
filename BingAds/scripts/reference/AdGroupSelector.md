@@ -86,7 +86,7 @@ Returns an iterator that you use to get the ad groups in this selector.
 ## <a name="orderby~string-orderby~"></a>orderBy(String orderBy)
 Returns a selector with the specified ordering.
 
-The format for the condition is "&lt;columnName&gt; &lt;orderDirection&gt;", for example, "Cost DESC". 
+Specify the orderBy parameter in the form, "columnName [ASC|DESC]" where:
 
 - columnName can only be one column which is supported by the withCondition method.
 - orderDirection can be either ASC for ascending or DESC for descending. If no order direction is specified, ASC is used by default.<br /> <br /> <code>orderBy()</code> can be invoked multiple times by calling it in sequence as shown by the following example:<br /> <br /> <code> agSelector = agSelector.orderBy("MaxCpc")<br /> &nbsp;&nbsp;.orderBy("Clicks ASC"); </code>
