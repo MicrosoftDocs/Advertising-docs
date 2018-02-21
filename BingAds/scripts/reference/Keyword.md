@@ -221,7 +221,7 @@ Removes this keyword.
 ### Returns:
 |Type|Description|
 |-|-
-void|Access to this keyword's URL fields.
+void|
 &nbsp;|&nbsp;
 ## <a name="setadparam~int-index_-string-insertiontext~"></a>setAdParam(int index, String insertionText)
 Creates an ad param with the specified insertion text and at the index specified on this keyword. 

@@ -223,7 +223,7 @@ Removes this ad.
 ### Returns:
 |Type|Description|
 |-|-
-void|Access to this ad's URL fields.
+void|
 &nbsp;|&nbsp;
 ## <a name="urls"></a>urls
 Returns an AdUrls object which provides access to the `URL` fields of this ad. 
