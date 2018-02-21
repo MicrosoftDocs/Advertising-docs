@@ -22,7 +22,7 @@ Example usage:
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[AdSelector](./AdSelector)|Returns a selector with the specified start and end dates.
 [get](#get)|[AdIterator](./AdIterator)|Returns an iterator indexing the ads in this selector.<br />
 [orderBy(String orderBy)](#orderby~string-orderby~)|[AdSelector](./AdSelector)|Returns a selector with the specified ordering.
-[withCondition(String condition)](#withcondition~string-condition~)|[AdSelector](./AdSelector)|Returns a selector by specifying the filtering condition on the ads in this selector. The format for the condition string is "columnName operator value", for e.g., "AverageCpm > 0.35", where:<br /> <br /> &nbsp;•	columnName must be from the list of supported columns for ads (see table below).<br /> &nbsp;&nbsp;o	If a Stats column is used in withCondition, it must be preceded by a forDateRange() invocation in the call chain.<br /> &nbsp;•	operator must be from the list of standard operators supported by Bing Ads Scripts.<br /> &nbsp;•	value is a value that falls within the accepted range of values for the data type of the column represented by columnName.<br /> <br /> As with the <code>orderBy()</code> method, <code>withCondition()</code> can also be used multiple times.<br /><br />
+[withCondition(String condition)](#withcondition~string-condition~)|[AdSelector](./AdSelector)|Returns a selector with the specified filtering conditions.
 [withIds(long[] ids)](#withids~long-ids~)|[AdSelector](./AdSelector)|Returns a selector by specifying the list of IDs to filter ads in this selector. The input argument can accept a maximum of 10,000 IDs. If any more IDs are provided, any subsequent get() call on this selector will fail with an error<br />
 [withLimit(int limit)](#withlimit~int-limit~)|[AdSelector](./AdSelector)|Returns a selector with as many ads as specified by the limit argument selected from the beginning in this selector.<br />
 &nbsp;|&nbsp;|&nbsp;
@@ -103,10 +103,38 @@ orderBy|String|Ordering to apply.
 [AdSelector](./AdSelector)|The selector with ordering applied.
 &nbsp;|&nbsp;
 ## <a name="withcondition~string-condition~"></a>withCondition(String condition)
-Returns a selector by specifying the filtering condition on the ads in this selector. The format for the condition string is "columnName operator value", for e.g., "AverageCpm > 0.35", where:<br /> <br /> &nbsp;•	columnName must be from the list of supported columns for ads (see table below).<br /> &nbsp;&nbsp;o	If a Stats column is used in withCondition, it must be preceded by a forDateRange() invocation in the call chain.<br /> &nbsp;•	operator must be from the list of standard operators supported by Bing Ads Scripts.<br /> &nbsp;•	value is a value that falls within the accepted range of values for the data type of the column represented by columnName.<br /> <br /> As with the <code>orderBy()</code> method, <code>withCondition()</code> can also be used multiple times.<br />
+Returns a selector with the specified filtering conditions.
 
+Specify the condition parameter in the form, "columnName operator value" where: 
 
+- columnName is the name of a performance metric to order the results by. For a list of possible values, see [Supported Columns](#supported-ad-group-columns).  If you set columName to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange~string-daterange~) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~).
+- operator is one of the supported [operators](#operators).
 
+### Operators
+The operator that can be used in a condition depends on the type of column. 
+For Integer and Long columns: 
+
+```
+<  <=  >  >=  =  !=
+```
+For Double columns: 
+```
+<  >
+```
+For String columns: 
+```
+=  !=  STARTS_WITH  STARTS_WITH_IGNORE_CASE  CONTAINS
+ CONTAINS_IGNORE_CASE  DOES_NOT_CONTAIN  DOES_NOT_CONTAIN_IGNORE_CASE
+```
+For Enumeration columns: 
+```
+=  !=  IN []  NOT_IN []
+```
+
+Operators are case-sensitive: `starts_with` won't work. 
+
+<a name="supported-ad-columns"></a>
+### Supported Columns
 Supported columns for ad filtering. 
 
 |Column|Type|Example|Bing Web UI filter|

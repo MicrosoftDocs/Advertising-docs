@@ -20,7 +20,7 @@ var customerId = account.getCustomerId();
 ## <a name="getcurrencycode"></a>getCurrencyCode
 Returns the account's currency code. 
 
-The currency code in ISO 4217 format. For example, USD for U.S. Dollar. See [Bing Ads Currencies](https://docs.microsoft.com/en-us/bingads/guides/currencies) for the full list of supported values. 
+The currency code is in ISO 4217 format. For example, USD for U.S. Dollar. See [Bing Ads Currencies](https://docs.microsoft.com/en-us/bingads/guides/currencies) for the full list of supported values. 
 
 
 ### Returns:
