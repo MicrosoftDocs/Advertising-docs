@@ -19,7 +19,9 @@ Upon initial provisioning the reseller customer does not have any accounts to ma
 -   A managed customer is created  
 -   An account is created within the managed customer  
 
-For more information about creating reseller managed customers, see [Adding Customers](../guides/customer-accounts.md#createcustomer).
+When you call the [SignupCustomer](~/customer-management-service/signupcustomer.md) operation, pass both [Customer](~/customer-management-service/customer.md) and [Account](~/customer-management-service/account.md) objects. The customer object includes the customer's name, the address where the customer is located, the market in which the customer operates, and the industry in which the customer participates. Although it is possible to add multiple customers with the same details, you should use unique customer names so that users can easily distinguish between customers in a user interface.
+
+The account object must specify the name of the account; the type of currency to use to settle the account; and the payment method identifier, which must be set to null. The operation generates an invoice account and sets the payment method identifier to the identifier associated with the reseller's invoice. You are invoiced for all charges incurred by the customers that you manage.
 
 The following figure shows two child customers created and managed by a reseller. These are referred to as child customers because the billing rolls up to the reseller's payment instrument. The aggregator user can programmatically manage all accounts across multiple reseller-managed child customers.
 
