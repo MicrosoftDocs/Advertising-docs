@@ -23,7 +23,7 @@ Example usage:
 [get](#get)|[AdIterator](./AdIterator)|Returns an iterator indexing the ads in this selector.<br />
 [orderBy(String orderBy)](#orderby~string-orderby~)|[AdSelector](./AdSelector)|Returns a selector with the specified ordering.
 [withCondition(String condition)](#withcondition~string-condition~)|[AdSelector](./AdSelector)|Returns a selector with the specified filtering conditions.
-[withIds(long[] ids)](#withids~long-ids~)|[AdSelector](./AdSelector)|Returns a selector by specifying the list of IDs to filter ads in this selector. The input argument can accept a maximum of 10,000 IDs. If any more IDs are provided, any subsequent get() call on this selector will fail with an error<br />
+[withIds(long[] ids)](#withids~long-ids~)|[AdSelector](./AdSelector)|Returns a selector that will return only ads with the specified IDs.
 [withLimit(int limit)](#withlimit~int-limit~)|[AdSelector](./AdSelector)|Returns a selector with as many ads as specified by the limit argument selected from the beginning in this selector.<br />
 &nbsp;|&nbsp;|&nbsp;
 
@@ -180,7 +180,9 @@ condition|String|Condition to add to the selector.
 [AdSelector](./AdSelector)|The selector with the condition applied.
 &nbsp;|&nbsp;
 ## <a name="withids~long-ids~"></a>withIds(long[] ids)
-Returns a selector by specifying the list of IDs to filter ads in this selector. The input argument can accept a maximum of 10,000 IDs. If any more IDs are provided, any subsequent get() call on this selector will fail with an error
+Returns a selector that will return only ads with the specified IDs.
+
+The maximum number of IDs that you may specify is 1,000.If you specify more than 1,000 IDs, calling the get method will fail.
 
 ### Arguments:
 |Name|Type|Description|

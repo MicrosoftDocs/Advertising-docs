@@ -21,7 +21,7 @@ Example usage:
 [getId](#getid)|long|Returns the ID of this ad. In order to specify a unique ID for an ad, both its ad group ID and this ID must be specified.<br />
 [getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this ad for the specified predefined date range.
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this ad for the specified date range.
-[getType](#gettype)|String|Returns the type of this ad. Supported values include: `EXPANDED_TEXT_AD` and `TEXT_AD`<br />
+[getType](#gettype)|String|Returns the type of the ad.
 [isEnabled](#isenabled)|boolean|Returns true if this ad is enabled. <br />
 [isMobilePreferred](#ismobilepreferred)|boolean|Returns true if this ad indicates mobile device preference or false otherwise. <br />
 [isPaused](#ispaused)|boolean|Returns true if this ad is paused. <br />
@@ -165,7 +165,12 @@ dateTo|Object|End date of the date range.
 [Stats](./Stats)|The stats for the specified date range.
 &nbsp;|&nbsp;
 ## <a name="gettype"></a>getType
-Returns the type of this ad. Supported values include: `EXPANDED_TEXT_AD` and `TEXT_AD`
+Returns the type of the ad. 
+
+Possible values are: 
+
+- EXPANDED_TEXT_AD
+- TEXT_AD
 
 ### Returns:
 |Type|Description|
