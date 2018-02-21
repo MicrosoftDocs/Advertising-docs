@@ -22,7 +22,7 @@ Example usage:
 [getId](#getid)|long|Returns the ID of this ad. In order to specify a unique ID for an ad, both its ad group ID and this ID need to be specified. <br />
 [getPath1](#getpath1)|String|Returns the first path that appears with this ad's display URL.<br />
 [getPath2](#getpath2)|String|Returns the second path that appears with this ad's display URL.<br />
-[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns stats for this ad for the given date range. Supported values include:<br /> <br /> `TODAY`<br /> `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br /><br />
+[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this expanded text ad for the specified predefined date range.
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns stats for this ad for the given custom date range. Both parameters can be either a string in YYYYMMDD format or an object with year, month and day properties. In either case, a full date must be specified. <br />
 [getType](#gettype)|String|Returns the type of this ad. Supported values include:<br /> <br /> `EXPANDED_TEXT_AD` and `TEXT_AD`<br /><br />
 [isEnabled](#isenabled)|boolean|Returns true if this ad is enabled. <br />
@@ -138,7 +138,20 @@ Returns the second path that appears with this ad's display URL.
 String|The second path that appears with the ad's displayed URL.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
-Returns stats for this ad for the given date range. Supported values include:<br /> <br /> `TODAY`<br /> `YESTERDAY`<br /> `LAST_7_DAYS`<br /> `THIS_WEEK_SUN_TODAY`<br /> `LAST_14_DAYS`<br /> `LAST_30_DAYS`<br /> `LAST_WEEK_SUN_SAT`<br /> `THIS_MONTH`<br /> `LAST_MONTH`<br /> `ALL_TIME`<br />
+Returns a [Stats](./Stats) object for this expanded text ad for the specified predefined date range.
+
+Supported date range values:
+
+- TODAY
+- YESTERDAY
+- LAST_7_DAYS
+- THIS_WEEK_SUN_TODAY
+- LAST_14_DAYS
+- LAST_30_DAYS
+- LAST_WEEK_SUN_SAT
+- THIS_MONTH
+- LAST_MONTH
+- ALL_TIME
 
 ### Arguments:
 |Name|Type|Description|
