@@ -23,7 +23,7 @@ Example usage:
 [getPath1](#getpath1)|String|Returns the first path that appears with this ad's display URL.<br />
 [getPath2](#getpath2)|String|Returns the second path that appears with this ad's display URL.<br />
 [getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this expanded text ad for the specified predefined date range.
-[getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns a [Stats](./Stats) object for this expanded text ad for the specified date range.
+[getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this expanded text ad for the specified date range.
 [getType](#gettype)|String|Returns the type of this ad. Supported values include:<br /> <br /> `EXPANDED_TEXT_AD` and `TEXT_AD`<br /><br />
 [isEnabled](#isenabled)|boolean|Returns true if this ad is enabled. <br />
 [isPaused](#ispaused)|boolean|Returns true if this ad is paused <br />
@@ -182,7 +182,7 @@ dateTo|Object|End date of the date range. Must be either a string in <code>YYYYM
 ### Returns:
 |Type|Description|
 |-|-
-String|The stats for the specified date range.
+[Stats](./Stats)|The stats for the specified date range.
 &nbsp;|&nbsp;
 ## <a name="gettype"></a>getType
 Returns the type of this ad. Supported values include:<br /> <br /> `EXPANDED_TEXT_AD` and `TEXT_AD`<br />

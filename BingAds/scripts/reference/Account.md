@@ -13,7 +13,7 @@ var customerId = account.getCustomerId();
 [getCustomerId](#getcustomerid)|String|Returns the customer ID of this account.
 [getName](#getname)|String|Returns the name of this account.
 [getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this account for the specified predefined date range.
-[getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns a [Stats](./Stats) object for this account for the specified date range.
+[getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this account for the specified date range.
 [getTimeZone](#gettimezone)|String|Returns the POSIX time-zone value used by the Bing Ads web application to display the account time zone preference. <br />
 &nbsp;|&nbsp;|&nbsp;
 
@@ -87,7 +87,7 @@ dateTo|Object|End date of the date range. Must be either a string in <code>YYYYM
 ### Returns:
 |Type|Description|
 |-|-
-String|The stats for the specified date range.
+[Stats](./Stats)|The stats for the specified date range.
 &nbsp;|&nbsp;
 ## <a name="gettimezone"></a>getTimeZone
 Returns the POSIX time-zone value used by the Bing Ads web application to display the account time zone preference. 

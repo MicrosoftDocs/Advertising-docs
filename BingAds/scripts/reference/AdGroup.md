@@ -17,7 +17,7 @@ Example usage:
 [getId](#getid)|long|Returns the ID of this ad group.<br />
 [getName](#getname)|String|Returns the name of this ad group.<br />
 [getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this ad group for the specified predefined date range.
-[getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns a [Stats](./Stats) object for this ad group for the specified date range.
+[getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this ad group for the specified date range.
 [isEnabled](#isenabled)|boolean|Returns true if this ad group is enabled. <br />
 [isPaused](#ispaused)|boolean|Returns true if this ad group is paused. <br />
 [isRemoved](#isremoved)|boolean|Returns true if this ad group is removed. <br />
@@ -130,7 +130,7 @@ dateTo|Object|End date of the date range. Must be either a string in <code>YYYYM
 ### Returns:
 |Type|Description|
 |-|-
-String|The stats for the specified date range.
+[Stats](./Stats)|The stats for the specified date range.
 &nbsp;|&nbsp;
 ## <a name="isenabled"></a>isEnabled
 Returns true if this ad group is enabled. 
