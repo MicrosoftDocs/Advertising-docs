@@ -27,7 +27,7 @@ Example usage:
 [getType](#gettype)|String|Returns the type of this ad. Supported values include:<br /> <br /> `EXPANDED_TEXT_AD` and `TEXT_AD`<br /><br />
 [isEnabled](#isenabled)|boolean|Returns true if this ad is enabled. <br />
 [isPaused](#ispaused)|boolean|Returns true if this ad is paused <br />
-[isType](#istype)|[AdTypeSpace](./AdTypeSpace)|Returns an object which provides more information on the type of this ad.
+[isType](#istype)|[AdTypeSpace](./AdTypeSpace)|Returns an object which provides more information about the type of this ad.
 [pause](#pause)|void|Pauses this ad.<br />
 [remove](#remove)|void|Removes this ad.<br />
 [urls](#urls)|[AdUrls](./AdUrls)|Returns an AdUrls object which provides access to the URL fields of this <br />
@@ -214,7 +214,7 @@ Returns true if this ad is paused
 boolean|true if the ad is paused.
 &nbsp;|&nbsp;
 ## <a name="istype"></a>isType
-Returns an object which provides more information on the type of this ad.
+Returns an object which provides more information about the type of this ad.
 ### Returns:
 |Type|Description|
 |-|-

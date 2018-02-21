@@ -24,10 +24,10 @@ Example usage:
 [isEnabled](#isenabled)|boolean|Returns true if this ad is enabled. <br />
 [isMobilePreferred](#ismobilepreferred)|boolean|Indicates whether the ad should be shown on mobile devices instead of desktops or tablets.
 [isPaused](#ispaused)|boolean|Returns true if this ad is paused. <br />
-[isType](#istype)|[AdTypeSpace](./AdTypeSpace)|Returns an object which provides more information on the type of this ad.
+[isType](#istype)|[AdTypeSpace](./AdTypeSpace)|Returns an object which provides more information about the type of this ad.
 [pause](#pause)|void|Pauses this ad.<br />
 [remove](#remove)|void|Removes this ad.<br />
-[urls](#urls)|[AdUrls](./AdUrls)|Returns an AdUrls object which provides access to the `URL` fields of this ad. <br />
+[urls](#urls)|[AdUrls](./AdUrls)|Returns an AdUrls object which provides access to the URL fields of this ad.
 &nbsp;|&nbsp;|&nbsp;
 
 ## <a name="astype"></a>asType
@@ -203,7 +203,7 @@ Returns true if this ad is paused.
 boolean|true if the ad is paused.
 &nbsp;|&nbsp;
 ## <a name="istype"></a>isType
-Returns an object which provides more information on the type of this ad.
+Returns an object which provides more information about the type of this ad.
 ### Returns:
 |Type|Description|
 |-|-
@@ -226,8 +226,7 @@ Removes this ad.
 void|
 &nbsp;|&nbsp;
 ## <a name="urls"></a>urls
-Returns an AdUrls object which provides access to the `URL` fields of this ad. 
-
+Returns an AdUrls object which provides access to the URL fields of this ad.
 ### Returns:
 |Type|Description|
 |-|-
