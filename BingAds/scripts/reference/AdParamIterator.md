@@ -30,7 +30,7 @@ Advances to the next ad param in this iterator and returns it.
 ### Returns:
 |Type|Description|
 |-|-
-[AdParam](./AdParam)|The next AdParam in the iterator.
+[AdParam](./AdParam)|The next ad param in the iterator.
 &nbsp;|&nbsp;
 ## <a name="totalnumentities"></a>totalNumEntities
 Returns the total number of ad params indexed by this iterator.

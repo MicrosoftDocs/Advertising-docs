@@ -30,7 +30,7 @@ Advances to the next keyword in this iterator and returns it.
 ### Returns:
 |Type|Description|
 |-|-
-[Keyword](./Keyword)|The next Keyword in the iterator.
+[Keyword](./Keyword)|The next keyword in the iterator.
 &nbsp;|&nbsp;
 ## <a name="totalnumentities"></a>totalNumEntities
 Returns the total number of keywords indexed by this iterator. If the total number of entities returned by this method exceeds the limit for entity reads, the hasNext method will return false and next will throw an error as soon as the latter is reached.

@@ -1,5 +1,5 @@
 # AdGroupIterator
-Provides methods to iterate through ad groups.
+Provides methods to iterate through a list of ad groups.
 
 Example usage:
 ```javascript
@@ -11,18 +11,17 @@ Example usage:
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[hasNext](#hasnext)|boolean|Returns <br />
+[hasNext](#hasnext)|boolean|Returns true if the iterator has more ad group elements.
 [next](#next)|[AdGroup](./AdGroup)|Advances to the next ad group in this iterator and returns it.<br />
 [totalNumEntities](#totalnumentities)|int|Returns the total number of ad groups indexed by this iterator.<br />
 &nbsp;|&nbsp;|&nbsp;
 
 ## <a name="hasnext"></a>hasNext
-Returns 
-
+Returns true if the iterator has more ad group elements.
 ### Returns:
 |Type|Description|
 |-|-
-boolean|true if the iterator has more elements.
+boolean|True if the iterator has more elements.
 &nbsp;|&nbsp;
 ## <a name="next"></a>next
 Advances to the next ad group in this iterator and returns it.
@@ -30,7 +29,7 @@ Advances to the next ad group in this iterator and returns it.
 ### Returns:
 |Type|Description|
 |-|-
-[AdGroup](./AdGroup)|The next AdGroup in the iterator.
+[AdGroup](./AdGroup)|The next ad group in the iterator.
 &nbsp;|&nbsp;
 ## <a name="totalnumentities"></a>totalNumEntities
 Returns the total number of ad groups indexed by this iterator.

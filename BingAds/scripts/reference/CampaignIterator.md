@@ -30,7 +30,7 @@ Advances to the next campaign in this iterator and returns it.
 ### Returns:
 |Type|Description|
 |-|-
-[Campaign](./Campaign)|The next Campaign in the iterator.
+[Campaign](./Campaign)|The next campaign in the iterator.
 &nbsp;|&nbsp;
 ## <a name="totalnumentities"></a>totalNumEntities
 Returns the total number of campaigns indexed by this iterator. If the total number of  entities returned by this method exceeds the limit for entity reads, the hasNext method will return  false and next will throw an error as soon as the latter is reached.
