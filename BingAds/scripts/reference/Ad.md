@@ -16,7 +16,7 @@ Example usage:
 [getDisapprovalReasons](#getdisapprovalreasons)|String[]|Returns the reasons for why the ad was disapproved.
 [getDisplayUrl](#getdisplayurl)|String|Returns the display URL of this ad. This value could be null for some types of ads.<br />
 [getEntityType](#getentitytype)|String|Returns the type of entity of this ad.
-[getHeadline](#getheadline)|String|Returns the headline (title) of this ad. This value could be null for some types of ads.<br />
+[getHeadline](#getheadline)|String|Returns the headline (title) of this ad.
 [getId](#getid)|long|Returns the ID of this ad.
 [getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for the specified predefined date range.
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this ad for the specified date range.
@@ -24,7 +24,7 @@ Example usage:
 [isEnabled](#isenabled)|boolean|Returns true if this ad is enabled. <br />
 [isMobilePreferred](#ismobilepreferred)|boolean|Indicates whether the ad should be shown on mobile devices instead of desktops or tablets.
 [isPaused](#ispaused)|boolean|Returns true if this ad is paused. <br />
-[isType](#istype)|[AdTypeSpace](./AdTypeSpace)|Returns an AdTypeSpace object which provides more information on the type of this ad. <br />
+[isType](#istype)|[AdTypeSpace](./AdTypeSpace)|Returns an object which provides more information on the type of this ad.
 [pause](#pause)|void|Pauses this ad.<br />
 [remove](#remove)|void|Removes this ad.<br />
 [urls](#urls)|[AdUrls](./AdUrls)|Returns an AdUrls object which provides access to the `URL` fields of this ad. <br />
@@ -101,7 +101,10 @@ Returns the type of entity of this ad.
 String|Type of this entity: "Ad".
 &nbsp;|&nbsp;
 ## <a name="getheadline"></a>getHeadline
-Returns the headline (title) of this ad. This value could be null for some types of ads.
+Returns the headline (title) of this ad.
+
+May return null for some types of ads.
+
 
 ### Returns:
 |Type|Description|
@@ -200,8 +203,7 @@ Returns true if this ad is paused.
 boolean|true if the ad is paused.
 &nbsp;|&nbsp;
 ## <a name="istype"></a>isType
-Returns an AdTypeSpace object which provides more information on the type of this ad. 
-
+Returns an object which provides more information on the type of this ad.
 ### Returns:
 |Type|Description|
 |-|-
