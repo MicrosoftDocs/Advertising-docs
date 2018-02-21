@@ -33,6 +33,11 @@ Advances to the next ad group in this iterator and returns it.
 &nbsp;|&nbsp;
 ## <a name="totalnumentities"></a>totalNumEntities
 Returns the total number of ad groups indexed by this iterator.
+
+The returned number disregards limits, and the iterator is not guaranteed to have this many elements.
+
+hasNext will start to return false and next will start to throw exceptions when the limit for entity reads has been reached, even if the selector matched more entities.
+
 ### Returns:
 |Type|Description|
 |-|-
