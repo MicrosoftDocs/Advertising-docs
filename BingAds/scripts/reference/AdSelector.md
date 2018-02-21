@@ -182,7 +182,7 @@ condition|String|Condition to add to the selector.
 ## <a name="withids~long-ids~"></a>withIds(long[] ids)
 Returns a selector that will return only ads with the specified IDs.
 
-The maximum number of IDs that you may specify is 1,000.If you specify more than 1,000 IDs, calling the get method will fail.
+The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the get method will fail.
 
 ### Arguments:
 |Name|Type|Description|
