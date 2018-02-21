@@ -213,7 +213,7 @@ Pauses this keyword.
 ### Returns:
 |Type|Description|
 |-|-
-void|Access to this keyword's URL fields.
+void|
 &nbsp;|&nbsp;
 ## <a name="remove"></a>remove
 Removes this keyword.

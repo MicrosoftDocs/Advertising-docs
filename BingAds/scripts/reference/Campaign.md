@@ -173,7 +173,7 @@ Pauses this campaign.
 ### Returns:
 |Type|Description|
 |-|-
-void|Access to certain kinds of targeting criteria in this campaign.
+void|
 &nbsp;|&nbsp;
 ## <a name="setname~string-name~"></a>setName(String name)
 Sets the name of this campaign.

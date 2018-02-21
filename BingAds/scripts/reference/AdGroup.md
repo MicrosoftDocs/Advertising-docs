@@ -187,7 +187,7 @@ Pauses this ad group.
 ### Returns:
 |Type|Description|
 |-|-
-void|Access to certain kinds of targeting criteria in this ad group.
+void|
 &nbsp;|&nbsp;
 ## <a name="setname~string-name~"></a>setName(String name)
 Sets the name of this ad group.

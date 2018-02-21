@@ -227,7 +227,7 @@ Pauses this ad.
 ### Returns:
 |Type|Description|
 |-|-
-void|Access to this ad's URL fields.
+void|
 &nbsp;|&nbsp;
 ## <a name="remove"></a>remove
 Removes this ad.
