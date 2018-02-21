@@ -1331,6 +1331,8 @@
       - name: Customer Management Service Operations
         href: ../customer-management-service/customer-management-service-operations.md
         items: 
+        - name: AddAccount
+          href: ../customer-management-service/addaccount.md
         - name: AddClientLinks
           href: ../customer-management-service/addclientlinks.md
         - name: DeleteAccount

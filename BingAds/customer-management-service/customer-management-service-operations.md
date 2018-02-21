@@ -11,6 +11,7 @@ The Customer Management service defines the following service operations.
 
 |Service Operation|Description|Request Limits|
 |---|---|---|
+|[AddAccount](addaccount.md)|Reserved.|1 *Account*|
 |[AddClientLinks](addclientlinks.md)|Initiates the client link process to manage the account of another customer.|10 *ClientLink*|
 |[DeleteAccount](deleteaccount.md)|Deletes an account.|1 *AccountId*|
 |[DeleteCustomer](deletecustomer.md)|Deletes a customer.|1 *CustomerId*|
