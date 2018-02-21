@@ -13,7 +13,7 @@ Example usage:
 [clearDestinationUrl](#cleardestinationurl)|void|Clears the destination URL of this keyword. <br />
 [enable](#enable)|void|Enables this keyword.<br />
 [getAdGroup](#getadgroup)|[AdGroup](AdGroup)|Returns the parent ad group of this keyword.<br />
-[getApprovalStatus](#getapprovalstatus)|String|Returns the approval status of this keyword. Supported values include:<br /> <br /> `APPROVED`<br /> `PENDING_REVIEW`<br /> `UNDER_REVIEW`<br /> `DISAPPROVED`<br /><br />
+[getApprovalStatus](#getapprovalstatus)|String|Returns the approval status of the keyword.
 [getCampaign](#getcampaign)|[Campaign](./Campaign)|Returns the parent campaign of this keyword.<br />
 [getEntityType](#getentitytype)|String|Returns the entity type of this keyword, which is "Keyword".<br />
 [getFirstPageCpc](#getfirstpagecpc)|double|Returns the estimated first page bid for this keyword.<br />
@@ -65,7 +65,14 @@ Returns the parent ad group of this keyword.
 [AdGroup](AdGroup)|The ad group to which this keyword belongs.
 &nbsp;|&nbsp;
 ## <a name="getapprovalstatus"></a>getApprovalStatus
-Returns the approval status of this keyword. Supported values include:<br /> <br /> `APPROVED`<br /> `PENDING_REVIEW`<br /> `UNDER_REVIEW`<br /> `DISAPPROVED`<br />
+Returns the approval status of the keyword. 
+
+Possible values:
+
+- APPROVED
+- PENDING_REVIEW
+- UNDER_REVIEW
+- DISAPPROVED
 
 ### Returns:
 |Type|Description|

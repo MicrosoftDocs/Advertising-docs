@@ -12,7 +12,7 @@ Example usage:
 [asType](#astype)|[AdViewSpace](./AdViewSpace)|Returns an AdViewSpace object, which provides access to properties specific to the type of this ad.<br />
 [enable](#enable)|void|Enables the ad.<br />
 [getAdGroup](#getadgroup)|[AdGroup](./AdGroup)|Returns the parent ad group of this ad.<br />
-[getApprovalStatus](#getapprovalstatus)|String|Returns the approval status of this ad. Supported values include:<br /> <br /> APPROVED,<br /> DISAPPROVED<br /><br />
+[getApprovalStatus](#getapprovalstatus)|String|Returns the approval status of the ExpandedTextAD.
 [getCampaign](#getcampaign)|[Campaign](./Campaign)|Returns the parent campaign of this ad.<br />
 [getDescription](#getdescription)|String|Returns the description of this ad.<br />
 [getDisapprovalReasons](#getdisapprovalreasons)|String[]|Returns an array containing the reasons for which this ad was disapproved. If it is not disapproved, the array will be empty.<br />
@@ -58,7 +58,12 @@ Returns the parent ad group of this ad.
 [AdGroup](./AdGroup)|The ad group to which this ad belongs.
 &nbsp;|&nbsp;
 ## <a name="getapprovalstatus"></a>getApprovalStatus
-Returns the approval status of this ad. Supported values include:<br /> <br /> APPROVED,<br /> DISAPPROVED<br />
+Returns the approval status of the ExpandedTextAD.
+
+Possible values:
+
+- APPROVED
+- DISAPPROVED
 
 ### Returns:
 |Type|Description|
