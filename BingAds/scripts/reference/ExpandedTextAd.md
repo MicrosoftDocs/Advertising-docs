@@ -9,7 +9,7 @@ Example usage:
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[asType](#astype)|[AdViewSpace](./AdViewSpace)|Returns an AdViewSpace object, which provides access to properties specific to the type of this ad.<br />
+[asType](#astype)|[AdViewSpace](./AdViewSpace)|Returns properties specific to the type of this ad.
 [enable](#enable)|void|Enables the ad.<br />
 [getAdGroup](#getadgroup)|[AdGroup](./AdGroup)|Returns the parent ad group of this ad.<br />
 [getApprovalStatus](#getapprovalstatus)|String|Returns the approval status of the ExpandedTextAD.
@@ -22,7 +22,7 @@ Example usage:
 [getId](#getid)|long|Returns the ID of this ad. In order to specify a unique ID for an ad, both its ad group ID and this ID need to be specified. <br />
 [getPath1](#getpath1)|String|Returns the first path that appears with this ad's display URL.<br />
 [getPath2](#getpath2)|String|Returns the second path that appears with this ad's display URL.<br />
-[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this expanded text ad for the specified predefined date range.
+[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for the specified predefined date range.
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this expanded text ad for the specified date range.
 [getType](#gettype)|String|Returns the type of this ad. Supported values include:<br /> <br /> `EXPANDED_TEXT_AD` and `TEXT_AD`<br /><br />
 [isEnabled](#isenabled)|boolean|Returns true if this ad is enabled. <br />
@@ -34,12 +34,11 @@ Example usage:
 &nbsp;|&nbsp;|&nbsp;
 
 ## <a name="astype"></a>asType
-Returns an AdViewSpace object, which provides access to properties specific to the type of this ad.
-
+Returns properties specific to the type of this ad.
 ### Returns:
 |Type|Description|
 |-|-
-[AdViewSpace](./AdViewSpace)|An AdViewSpace.
+[AdViewSpace](./AdViewSpace)|A starting point for viewing type-specific ad information.
 &nbsp;|&nbsp;
 ## <a name="enable"></a>enable
 Enables the ad.
@@ -143,7 +142,7 @@ Returns the second path that appears with this ad's display URL.
 String|The second path that appears with the ad's displayed URL.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
-Returns a [Stats](./Stats) object for this expanded text ad for the specified predefined date range.
+Returns a [Stats](./Stats) object for the specified predefined date range.
 
 Supported date range values:
 
@@ -220,7 +219,7 @@ Returns an AdTypeSpace object which provides more information on the type of thi
 ### Returns:
 |Type|Description|
 |-|-
-[AdTypeSpace](./AdTypeSpace)|An AdTypeSpace.
+[AdTypeSpace](./AdTypeSpace)|An object that provides more information about the type of this ad.
 &nbsp;|&nbsp;
 ## <a name="pause"></a>pause
 Pauses this ad.

@@ -11,7 +11,7 @@ Represents a campaign in the Bing Ads system.
 [getEntityType](#getentitytype)|String|Returns the entity type of this campaign, which is "Campaign".<br />
 [getId](#getid)|long|Returns the ID of this campaign.<br />
 [getName](#getname)|String|Returns the name of this campaign.<br />
-[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this campaign for the specified predefined date range.
+[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for the specified predefined date range.
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this campaign for the specified date range.
 [isEnabled](#isenabled)|boolean|Returns true if this campaign is enabled. <br />
 [isPaused](#ispaused)|boolean|Returns true if this campaign is enabled <br />
@@ -80,7 +80,7 @@ Returns the name of this campaign.
 String|Name of the campaign.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
-Returns a [Stats](./Stats) object for this campaign for the specified predefined date range.
+Returns a [Stats](./Stats) object for the specified predefined date range.
 
 Supported date range values:
 

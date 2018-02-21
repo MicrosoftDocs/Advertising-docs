@@ -1,6 +1,5 @@
 # Ad
-Represents an ad in the Bing Ads system.
-
+Represents an ad.
 Example usage:
 ```javascript
  var stats = ad.getStatsFor("THIS_MONTH");
@@ -9,21 +8,21 @@ Example usage:
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[asType](#astype)|[AdViewSpace](./AdViewSpace)|Returns an AdViewSpace object, which provides access to properties specific to the type of this ad.<br />
+[asType](#astype)|[AdViewSpace](./AdViewSpace)|Returns properties specific to the type of this ad.
 [enable](#enable)|void|Enables the ad.<br />
 [getAdGroup](#getadgroup)|[AdGroup](./AdGroup)|Returns the parent ad group of this ad.<br />
 [getApprovalStatus](#getapprovalstatus)|String|Returns the approval status of the ad.
 [getCampaign](#getcampaign)|[Campaign](./Campaign)|Returns the parent campaign of this ad.<br />
-[getDisapprovalReasons](#getdisapprovalreasons)|String[]|Returns an array containing the reasons for which this ad was disapproved. If it is not disapproved, the array will be empty.<br />
+[getDisapprovalReasons](#getdisapprovalreasons)|String[]|Returns the reasons for why the ad was disapproved.
 [getDisplayUrl](#getdisplayurl)|String|Returns the display URL of this ad. This value could be null for some types of ads.<br />
-[getEntityType](#getentitytype)|String|Returns the type of entity of this ad, which is “Ad”.<br />
+[getEntityType](#getentitytype)|String|Returns the type of entity of this ad.
 [getHeadline](#getheadline)|String|Returns the headline (title) of this ad. This value could be null for some types of ads.<br />
-[getId](#getid)|long|Returns the ID of this ad. In order to specify a unique ID for an ad, both its ad group ID and this ID must be specified.<br />
-[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this ad for the specified predefined date range.
+[getId](#getid)|long|Returns the ID of this ad.
+[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for the specified predefined date range.
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this ad for the specified date range.
 [getType](#gettype)|String|Returns the type of the ad.
 [isEnabled](#isenabled)|boolean|Returns true if this ad is enabled. <br />
-[isMobilePreferred](#ismobilepreferred)|boolean|Returns true if this ad indicates mobile device preference or false otherwise. <br />
+[isMobilePreferred](#ismobilepreferred)|boolean|Indicates whether the ad should be shown on mobile devices instead of desktops or tablets.
 [isPaused](#ispaused)|boolean|Returns true if this ad is paused. <br />
 [isType](#istype)|[AdTypeSpace](./AdTypeSpace)|Returns an AdTypeSpace object which provides more information on the type of this ad. <br />
 [pause](#pause)|void|Pauses this ad.<br />
@@ -32,12 +31,11 @@ Example usage:
 &nbsp;|&nbsp;|&nbsp;
 
 ## <a name="astype"></a>asType
-Returns an AdViewSpace object, which provides access to properties specific to the type of this ad.
-
+Returns properties specific to the type of this ad.
 ### Returns:
 |Type|Description|
 |-|-
-[AdViewSpace](./AdViewSpace)|An AdViewSpace.
+[AdViewSpace](./AdViewSpace)|A starting point for viewing type-specific ad information.
 &nbsp;|&nbsp;
 ## <a name="enable"></a>enable
 Enables the ad.
@@ -45,7 +43,7 @@ Enables the ad.
 ### Returns:
 |Type|Description|
 |-|-
-void|The ad group to which this ad belongs.
+void|
 &nbsp;|&nbsp;
 ## <a name="getadgroup"></a>getAdGroup
 Returns the parent ad group of this ad.
@@ -77,12 +75,15 @@ Returns the parent campaign of this ad.
 [Campaign](./Campaign)|The campaign to which this ad belongs.
 &nbsp;|&nbsp;
 ## <a name="getdisapprovalreasons"></a>getDisapprovalReasons
-Returns an array containing the reasons for which this ad was disapproved. If it is not disapproved, the array will be empty.
+Returns the reasons for why the ad was disapproved. 
+
+If it is not disapproved, the array will be empty.
+
 
 ### Returns:
 |Type|Description|
 |-|-
-String[]|
+String[]|The reasons for why the ad was disapproved.
 &nbsp;|&nbsp;
 ## <a name="getdisplayurl"></a>getDisplayUrl
 Returns the display URL of this ad. This value could be null for some types of ads.
@@ -93,8 +94,7 @@ Returns the display URL of this ad. This value could be null for some types of a
 String|The display URL of the ad.
 &nbsp;|&nbsp;
 ## <a name="getentitytype"></a>getEntityType
-Returns the type of entity of this ad, which is “Ad”.
-
+Returns the type of entity of this ad.
 ### Returns:
 |Type|Description|
 |-|-
@@ -109,15 +109,14 @@ Returns the headline (title) of this ad. This value could be null for some types
 String|The headline of the ad.
 &nbsp;|&nbsp;
 ## <a name="getid"></a>getId
-Returns the ID of this ad. In order to specify a unique ID for an ad, both its ad group ID and this ID must be specified.
-
+Returns the ID of this ad.
 ### Returns:
 |Type|Description|
 |-|-
 long|The ID of the ad.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
-Returns a [Stats](./Stats) object for this ad for the specified predefined date range.
+Returns a [Stats](./Stats) object for the specified predefined date range.
 
 Supported date range values:
 
@@ -186,8 +185,7 @@ Returns true if this ad is enabled.
 boolean|true if the ad is enabled.
 &nbsp;|&nbsp;
 ## <a name="ismobilepreferred"></a>isMobilePreferred
-Returns true if this ad indicates mobile device preference or false otherwise. 
-
+Indicates whether the ad should be shown on mobile devices instead of desktops or tablets.
 ### Returns:
 |Type|Description|
 |-|-
@@ -207,7 +205,7 @@ Returns an AdTypeSpace object which provides more information on the type of thi
 ### Returns:
 |Type|Description|
 |-|-
-[AdTypeSpace](./AdTypeSpace)|An AdTypeSpace.
+[AdTypeSpace](./AdTypeSpace)|An object that provides more information about the type of this ad.
 &nbsp;|&nbsp;
 ## <a name="pause"></a>pause
 Pauses this ad.

@@ -16,7 +16,7 @@ Example usage:
 [getEntityType](#getentitytype)|String|Returns the entity type of this ad group, which is “Ad Group”.<br />
 [getId](#getid)|long|Returns the ID of this ad group.<br />
 [getName](#getname)|String|Returns the name of this ad group.<br />
-[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this ad group for the specified predefined date range.
+[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for the specified predefined date range.
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this ad group for the specified date range.
 [isEnabled](#isenabled)|boolean|Returns true if this ad group is enabled. <br />
 [isPaused](#ispaused)|boolean|Returns true if this ad group is paused. <br />
@@ -86,7 +86,7 @@ Returns the name of this ad group.
 String|Name of the ad group.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
-Returns a [Stats](./Stats) object for this ad group for the specified predefined date range.
+Returns a [Stats](./Stats) object for the specified predefined date range.
 
 Supported date range values:
 
