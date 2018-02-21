@@ -147,16 +147,17 @@ Returns a [Stats](./Stats) object for this ad for the specified date range.
 
 You may specify the date parameters using strings or objects. To use strings, specify the date in the form, YYYYMMDD. If you use objects, create a JSON object with the following fields:
 
-year
-month
-day
+- year
+- month
+- day
+
 For example, {year: 2016, month: 5, day: 13}.
 
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
-dateFrom|Object|Start date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.
-dateTo|Object|End date of the date range. Must be either a string in <code>YYYYMMDD</code> form,<br />                 or an object with <code>year</code>, <code>month</code> and <code>day</code> properties.
+dateFrom|Object|Start date of the date range.
+dateTo|Object|End date of the date range.
 &nbsp;|&nbsp;|&nbsp;
 ### Returns:
 |Type|Description|
