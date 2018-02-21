@@ -20,7 +20,7 @@ Example usage:
 [getId](#getid)|long|Returns the ID of this keyword.<br />
 [getMatchType](#getmatchtype)|String|Returns the match type of this keyword. Supported values include:<br /> <br /> `BROAD`<br /> `PHRASE`<br /> `EXACT`<br /><br />
 [getQualityScore](#getqualityscore)|int|Returns the quality score of this keyword, in the range 1…10.<br />
-[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for the specified predefined date range.
+[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns an object which provides statistics for the specified predefined date range.
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this keyword for the specified date range.
 [getText](#gettext)|String|Returns the text of this keyword. The text will be returned in the format as follows, based on the match type of this keyword:<br /> <br /> &nbsp;•	books – broad match<br /> &nbsp;•	"books" – phrase match<br /> &nbsp;•	[origin of species] – exact match<br /><br />
 [getTopOfPageCpc](#gettopofpagecpc)|double|Returns the estimated mainline bid for this keyword.<br />
@@ -128,7 +128,7 @@ Returns the quality score of this keyword, in the range 1…10.
 int|The quality score of the keyword.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
-Returns a [Stats](./Stats) object for the specified predefined date range.
+Returns an object which provides statistics for the specified predefined date range.
 
 Supported date range values:
 

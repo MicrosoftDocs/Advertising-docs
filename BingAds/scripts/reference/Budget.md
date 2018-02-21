@@ -15,7 +15,7 @@ Example usage:
 [getEntityType](#getentitytype)|String|Returns the entity type of this budget, in this case "Budget".<br />
 [getId](#getid)|long|Returns the ID of this budget.<br />
 [getName](#getname)|String|Returns the name of this budget.<br />
-[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for the specified predefined date range.
+[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns an object which provides statistics for the specified predefined date range.
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this budget for the specified date range.
 [isExplicitlyShared](#isexplicitlyshared)|boolean|Returns true if this budget is shared across two or more campaigns; false otherwise. <br />
 [setAmount(double amount)](#setamount~double-amount~)|void|Sets the amount of this budget to the specified value, in the currency of the current account.<br />
@@ -70,7 +70,7 @@ Returns the name of this budget.
 String|Name of the budget.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
-Returns a [Stats](./Stats) object for the specified predefined date range.
+Returns an object which provides statistics for the specified predefined date range.
 
 Supported date range values:
 

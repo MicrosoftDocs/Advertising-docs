@@ -18,7 +18,7 @@ Example usage:
 [getEntityType](#getentitytype)|String|Returns the type of entity of this ad.
 [getHeadline](#getheadline)|String|Returns the headline (title) of this ad.
 [getId](#getid)|long|Returns the ID of this ad.
-[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for the specified predefined date range.
+[getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns an object which provides statistics for the specified predefined date range.
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this ad for the specified date range.
 [getType](#gettype)|String|Returns the type of the ad.
 [isEnabled](#isenabled)|boolean|Returns true if this ad is enabled. <br />
@@ -119,7 +119,7 @@ Returns the ID of this ad.
 long|The ID of the ad.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~string-daterange~"></a>getStatsFor(String dateRange)
-Returns a [Stats](./Stats) object for the specified predefined date range.
+Returns an object which provides statistics for the specified predefined date range.
 
 Supported date range values:
 
