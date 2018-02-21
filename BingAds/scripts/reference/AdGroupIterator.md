@@ -13,7 +13,7 @@ Example usage:
 |-|-|-
 [hasNext](#hasnext)|boolean|Returns true if the iterator has more ad group elements.
 [next](#next)|[AdGroup](./AdGroup)|Advances to the next ad group in this iterator and returns it.<br />
-[totalNumEntities](#totalnumentities)|int|Returns the total number of ad groups indexed by this iterator.<br />
+[totalNumEntities](#totalnumentities)|int|Returns the total number of ad groups indexed by this iterator.
 &nbsp;|&nbsp;|&nbsp;
 
 ## <a name="hasnext"></a>hasNext
@@ -33,9 +33,8 @@ Advances to the next ad group in this iterator and returns it.
 &nbsp;|&nbsp;
 ## <a name="totalnumentities"></a>totalNumEntities
 Returns the total number of ad groups indexed by this iterator.
-
 ### Returns:
 |Type|Description|
 |-|-
-int|The number of entities matched by the selector which generated this iterator.
+int|The number of ad groups matched by the selector which generated this iterator.
 &nbsp;|&nbsp;
