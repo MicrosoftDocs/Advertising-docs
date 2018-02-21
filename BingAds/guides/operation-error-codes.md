@@ -1051,7 +1051,7 @@ The entity ID field cannot be null or empty. Please see the *ReasonCode* element
 CampaignServiceInvalidCampaignId
 
 **Description**
-The *Campaign.Id* element is not valid.
+The campaign identifier is not valid.
 
 ***
 
@@ -1062,7 +1062,7 @@ The *Campaign.Id* element is not valid.
 CampaignServiceInvalidCampaignName
 
 **Description**
-The *Campaign.Name* element is not valid.
+The campaign name is not valid.
 
 ***
 
@@ -1095,7 +1095,7 @@ The campaign object is null.
 CampaignServiceInvalidCampaignDescription
 
 **Description**
-The *Campaign.Description* element is not valid.
+The campaign description is not valid.
 
 ***
 
@@ -1106,7 +1106,7 @@ The *Campaign.Description* element is not valid.
 CampaignServiceInvalidMonthlyBudget
 
 **Description**
-The *Campaign.MonthlyBudget* element is not valid.
+This error code is no longer in use. Monthly budgets was last used with Bing Ads API version 10.
 
 ***
 
@@ -1117,7 +1117,7 @@ The *Campaign.MonthlyBudget* element is not valid.
 CampaignServiceInvalidDailyBudget
 
 **Description**
-The *Campaign.DailyBudget* element is not valid.
+The campaign daily budget is not valid.
 
 ***
 
@@ -1139,7 +1139,7 @@ Duplicate identifiers are contained in the array of campaigns.
 CampaignServiceInvalidConversionTrackingEnabled
 
 **Description**
-The *Campaign.ConversionTrackingEnabled* element must be set for the campaign.
+This error code is no longer in use. The ConversionTrackingEnabled element was last used with Bing Ads API version 9.
 
 ***
 
@@ -1150,7 +1150,7 @@ The *Campaign.ConversionTrackingEnabled* element must be set for the campaign.
 CampaignServiceTimeZoneNotEnabled
 
 **Description**
-The *Campaign.TimeZone* element must be set for the campaign.
+The campaign timezone is required.
 
 ***
 
@@ -1161,7 +1161,7 @@ The *Campaign.TimeZone* element must be set for the campaign.
 CampaignServiceDaylightSavingNotEnabled
 
 **Description**
-The *Campaign.DaylightSaving* element must be set for the campaign.
+This error code is no longer in use. The daylight saving setting was last used with Bing Ads API version 10.
 
 ***
 
@@ -1260,7 +1260,7 @@ The campaign status is not valid for the requested operation.
 CampaignServiceInvalidBudgetType
 
 **Description**
-The *Campaign.BudgetType* element is missing or is not valid.
+The campaign budget type is missing or is not valid.
 
 ***
 
@@ -1271,7 +1271,7 @@ The *Campaign.BudgetType* element is missing or is not valid.
 CampaignServiceCampaignBudgetAmountIsLessThanSpendAmount
 
 **Description**
-The new monthly campaign budget is less than the amount already spent for the current month.
+The new campaign budget is less than the amount already spent for the current month.
 
 ***
 
@@ -1711,18 +1711,7 @@ Duplicate identifiers are contained in the array of ad groups.
 CampaignServiceAdGroupEndDateShouldBeAfterStartDate
 
 **Description**
-The *AdGroup.EndDate* element must follow the *AdGroup.StartDate* element.
-
-***
-
-**Numeric Code**
-1205
-
-**Symbolic Error Code**
-CampaignServiceCannotUpdateLanguageAndRegion
-
-**Description**
-The *AdGroup.LanguageAndRegion* element cannot be updated.
+The ad group end date must be later than the ad group start date.
 
 ***
 
@@ -1777,7 +1766,7 @@ The ad group user cannot use the content medium.
 CampaignServiceAdGroupStartDateLessThanCurrentDate
 
 **Description**
-The *AdGroup.StartDate* element must be after the current date.
+The ad group start date must not be prior to today's date.
 
 ***
 
@@ -1859,35 +1848,13 @@ The number of ad group identifiers exceeds the limit.
 ***
 
 **Numeric Code**
-1220
-
-**Symbolic Error Code**
-CampaignServiceMissingDistributionChannel
-
-**Description**
-The *AdGroup.LanguageAndRegion* element, which represents the distribution channel, is missing.
-
-***
-
-**Numeric Code**
-1221
-
-**Symbolic Error Code**
-CampaignServiceAdGroupInvalidDistributionChannel
-
-**Description**
-The *AdGroup.LanguageAndRegion* element value is not valid.
-
-***
-
-**Numeric Code**
 1222
 
 **Symbolic Error Code**
 CampaignServiceAdGroupInvalidMedium
 
 **Description**
-The *AdGroup.AdDistribution* element value is not valid.
+The ad group ad distribution is not valid.
 
 ***
 
@@ -1909,18 +1876,7 @@ The specified distribution channel is not enabled for your market.
 CampaignServiceAdGroupMissingAdMedium
 
 **Description**
-The *AdGroup.AdDistribution* element is required when a new ad group is being created.
-
-***
-
-**Numeric Code**
-1225
-
-**Symbolic Error Code**
-CampaignServiceUserNotAuthorizedForDistributionChannel
-
-**Description**
-The specified user is not authorized to use the specified *AdGroup.LanguageAndRegion* element for the ad group.
+The ad group ad distribution is required when a new ad group is being created.
 
 ***
 
@@ -1931,7 +1887,7 @@ The specified user is not authorized to use the specified *AdGroup.LanguageAndRe
 CampaignServiceAdGroupStartDateCannotBeEarlierThanSubmitDate
 
 **Description**
-The *AdGroup.StartDate* element cannot be prior to the date that the ad group was submitted.
+The ad group start date cannot be prior to the date that the ad group was submitted.
 
 ***
 
@@ -1942,7 +1898,7 @@ The *AdGroup.StartDate* element cannot be prior to the date that the ad group wa
 CampaignServiceCannotSetPricingModelOnAdGroup
 
 **Description**
-The *AdGroup.PricingModel* element is not currently supported and must be null.
+The ad group pricing model is not supported and must be null.
 
 ***
 
@@ -2008,7 +1964,7 @@ The end date specified in the ad group is not valid.
 CampaignServiceAdGroupPricingModelCpmRequiresContentMedium
 
 **Description**
-The cost-per-thousand-impressions (CPM) pricing model is allowed only if the *AdGroup.AdDistribution* element contains "Content".
+The cost-per-thousand-impressions (CPM) pricing model is not supported.
 
 ***
 
@@ -2041,7 +1997,7 @@ The customer account is not allowed to create ad groups in the specified pricing
 CampaignServiceAdGroupPricingModelIsNull
 
 **Description**
-The *PricingModel* element is required when creating an ad group.
+This error code is no longer in use. The pricing model is optional and will be set to Cpc by default.
 
 ***
 
@@ -2052,7 +2008,7 @@ The *PricingModel* element is required when creating an ad group.
 CampaignServiceTypeCanBeSitePlacementOnlyForContentAdGroups
 
 **Description**
-The SitePlacement bidding model is only allowed for content ad groups.
+This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
 
 ***
 
@@ -2844,7 +2800,7 @@ The mobile ad phone number is not valid.
 CampaignServiceMobileAdRequiredDataMissing
 
 **Description**
-For a mobile ad, either the *PhoneNumber* and *BusinessName* elements or the *DestinationUrl* and *DisplayUrl* elements must be supplied.
+For a mobile ad, either the phone number and business name or the URLs must be supplied.
 
 ***
 
@@ -2855,7 +2811,7 @@ For a mobile ad, either the *PhoneNumber* and *BusinessName* elements or the *De
 CampaignServiceMobileAdSupportedForSearchOnlyAdGroups
 
 **Description**
-A mobile ad can be added only to an ad group whose *AdDistribution* element contains "Search".
+A mobile ad can be added only to an ad group whose ad distribution contains "Search".
 
 ***
 
@@ -2932,7 +2888,7 @@ The mobile ad contains a phone number that is blocked.
 CampaignServicePhoneNumberNotAllowedInAdTitle
 
 **Description**
-Phone numbers are not allowed in the *Title* element of a mobile ad.
+Phone numbers are not allowed in the title of a mobile ad.
 
 ***
 
@@ -2943,7 +2899,7 @@ Phone numbers are not allowed in the *Title* element of a mobile ad.
 CampaignServicePhoneNumberNotAllowedInAdText
 
 **Description**
-Phone numbers are not allowed in the *Text* element of a mobile ad.
+Phone numbers are not allowed in the text of a mobile ad.
 
 ***
 
@@ -2954,7 +2910,7 @@ Phone numbers are not allowed in the *Text* element of a mobile ad.
 CampaignServicePhoneNumberNotAllowedInAdDisplayUrl
 
 **Description**
-Phone numbers are not allowed in the *DisplayUrl* element of a mobile ad.
+Phone numbers are not allowed in the display URL of a mobile ad.
 
 ***
 
@@ -2965,7 +2921,7 @@ Phone numbers are not allowed in the *DisplayUrl* element of a mobile ad.
 CampaignServicePhoneNumberNotAllowedInAdBusinessName
 
 **Description**
-Phone numbers are not allowed in the *BusinessName* element of a mobile ad.
+Phone numbers are not allowed in the business name of a mobile ad.
 
 ***
 
@@ -3957,7 +3913,7 @@ The bid amount of a keyword, ad group, or product group is less than the minimum
 CampaignServiceBidAmountsGreaterThanCeilingPrice
 
 **Description**
-One or more of the bid values exceeds the daily or monthly budget that you specified for the campaign. If you specified a daily budget, verify that the bid values do not exceed the daily budget. If you specified a monthly budget, verify that the bid values do not exceed the monthly budget. If you specified a monthly budget that is distributed evenly throughout the month (based on a 30-day month), verify that the bid values do not exceed the resulting daily budget.
+One or more of the bid values exceeds the budget that you specified for the campaign. Please verify that the bid values do not exceed the daily budget. 
 
 ***
 
@@ -4001,7 +3957,7 @@ No more keywords can be added to this ad group.
 CampaignServiceForbiddenWordInKeywordText
 
 **Description**
-The *Keyword.Text* element contains forbidden text.
+The keyword text is invalid.
 
 ***
 
@@ -4012,7 +3968,7 @@ The *Keyword.Text* element contains forbidden text.
 CampaignServiceForbiddenWordInParam1
 
 **Symbolic Error Code**
-The *Keyword.Param1* element contains forbidden text.
+The keyword param1 contains forbidden text.
 
 ***
 
@@ -4023,7 +3979,7 @@ The *Keyword.Param1* element contains forbidden text.
 CampaignServiceForbiddenWordInParam2
 
 **Symbolic Error Code**
-The *Keyword.Param2* element contains forbidden text.
+The keyword param2 contains forbidden text.
 
 ***
 
@@ -4034,7 +3990,7 @@ The *Keyword.Param2* element contains forbidden text.
 CampaignServiceForbiddenWordInParam3
 
 **Symbolic Error Code**
-The *Keyword.Param3* element contains forbidden text.
+The keyword param3 contains forbidden text.
 
 ***
 
@@ -4045,7 +4001,7 @@ The *Keyword.Param3* element contains forbidden text.
 CampaignServiceExclusiveWordInKeywordText
 
 **Description**
-The *Keyword.Text* element contains a reserved word.
+The keyword text contains a reserved word.
 
 ***
 
@@ -4056,7 +4012,7 @@ The *Keyword.Text* element contains a reserved word.
 CampaignServiceExclusiveWordInParam1
 
 **Symbolic Error Code**
-The *Keyword.Param1* element contains a reserved word.
+The keyword param1 contains a reserved word.
 
 ***
 
@@ -4067,7 +4023,7 @@ The *Keyword.Param1* element contains a reserved word.
 CampaignServiceExclusiveWordInParam2
 
 **Symbolic Error Code**
-The *Keyword.Param2* element contains a reserved word.
+The keyword param2 contains a reserved word.
 
 ***
 
@@ -4078,7 +4034,7 @@ The *Keyword.Param2* element contains a reserved word.
 CampaignServiceExclusiveWordInParam3
 
 **Symbolic Error Code**
-The *Keyword.Param3* element contains a reserved word.
+The keyword param3 contains a reserved word.
 
 ***
 
@@ -4522,7 +4478,7 @@ ReportingServiceCustomDatesOverlimit
 **Description**
 The report time contains too many custom dates.
 
-The *Details* element of the *OperationError* object contains the maximum number of custom dates.
+Please refer to the *Details* element of the *OperationError* for information about the maximum number of custom dates.
 
 ***
 
@@ -4557,7 +4513,7 @@ ReportingServiceDuplicateColumns
 **Description**
 The list of columns to include in the report contains duplicate.
 
-The *Details* element of the *OperationError* object contains a comma-separated list of the duplicate column names.
+Please refer to the *Details* element of the *OperationError* object for a comma-separated list of the duplicate column names.
 
 ***
 
@@ -4581,7 +4537,7 @@ ReportingServiceInvalidAccountIdInCampaignReportScope
 **Description**
 The campaign report scope contains an account identifier that is not valid.
 
-The *Details* element of the *BatchError* object contains the account identifier that is not valid.
+Please refer to the *Details* element of the *BatchError* object for the account identifier that is not valid.
 
 ***
 
@@ -4594,7 +4550,7 @@ ReportingServiceInvalidCampaignIdInCampaignReportScope
 **Description**
 The campaign report scope contains a campaign identifier that is not valid.
 
-The *Details* element of the *BatchError* object contains the campaign identifier that is not valid.
+Please refer to the *Details* element of the *BatchError* object for the campaign identifier that is not valid.
 
 ***
 
@@ -4607,7 +4563,7 @@ ReportingServiceInvalidAccountIdInAdGroupReportScope
 **Description**
 The ad group report scope contains an account identifier that is not valid.
 
-The *Details* element of the *BatchError* object contains the account identifier that is not valid.
+Please refer to the *Details* element of the *BatchError* object for the account identifier that is not valid.
 
 ***
 
@@ -4620,7 +4576,7 @@ ReportingServiceInvalidCampaignIdInAdGroupReportScope
 **Description**
 The ad group report scope contains a campaign identifier that is not valid.
 
-The *Details* element of the *BatchError* object contains the campaign identifier that is not valid.
+Please refer to the *Details* element of the *BatchError* object for the campaign identifier that is not valid.
 
 ***
 
@@ -4633,7 +4589,7 @@ ReportingServiceInvalidAdGroupIdInAdGroupReportScope
 **Description**
 The ad group report scope contains an ad group identifier that is not valid.
 
-The *Details* element of the *BatchError* object contains the ad group identifier that is not valid.
+Please refer to the *Details* element of the *BatchError* object for the ad group identifier that is not valid.
 
 ***
 
@@ -4646,7 +4602,7 @@ ReportingServiceInvalidAccountIdInAccountReportScope
 **Description**
 The account report scope contains an account identifier that is not valid.
 
-The *Details* element of the *BatchError* object contains the account identifier that is not valid.
+Please refer to the *Details* element of the *BatchError* object for the account identifier that is not valid.
 
 ***
 
@@ -4745,7 +4701,9 @@ The report scope contains too many ad groups.
 ReportingServiceCrossSiteScriptNotAllowed
 
 **Description**
-The specified report request contains one or more strings that contain an embedded script. The *Details* element of the *BatchError* object contains the strings that caused this error.
+The specified report request contains one or more strings that contain an embedded script. 
+
+Please refer to the *Details* element of the *BatchError* object for the strings that caused this error.
 
 ***
 
@@ -4778,7 +4736,9 @@ The TimePeriod column cannot be specified in a report request that has a summary
 ReportingServiceInvalidAccountIds
 
 **Description**
-The report request contains at least one account identifier that is not valid. The *Details* element contains a comma-separated list of up to 20 account identifiers that are not valid.
+The report request contains at least one account identifier that is not valid. 
+
+Please refer to the *Details* element for a comma-separated list of up to 20 account identifiers that are not valid.
 
 ***
 
@@ -4789,7 +4749,9 @@ The report request contains at least one account identifier that is not valid. T
 ReportingServiceSiteIdMaxArraySizeReached
 
 **Description**
-The specified report scope contains too many website identifiers. The *Details* element of the *BatchError* object contains the maximum number of websites.
+The specified report scope contains too many website identifiers. 
+
+Please refer to the *Details* element of the *BatchError* object for the maximum number of websites.
 
 ***
 
@@ -4855,7 +4817,9 @@ The search query performance report filter contains one or more terms that are t
 SearchQueryOverLimit
 
 **Description**
-The search query performance report filter contains too many search queries. The *Details* element of the *BatchError* object contains the maximum number of search queries allowed.
+The search query performance report filter contains too many search queries. 
+
+Please refer to the *Details* element of the *BatchError* object for the maximum number of search queries allowed.
 
 ***
 
@@ -4877,7 +4841,9 @@ One or more of the keywords in the keyword performance report filter is too long
 KeywordOverLimit
 
 **Description**
-The keyword performance report filter contains too many keywords. The *Details* element of the *BatchError* object contains the maximum number of keywords allowed.
+The keyword performance report filter contains too many keywords. 
+
+Please refer to the *Details* element of the *BatchError* object for the maximum number of keywords allowed.
 
 ***
 
@@ -5126,7 +5092,7 @@ Billing of the balance amount in the account failed.
 CampaignServiceNullSitePlacement
 
 **Description**
-One or more website placement bids are null.
+This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
 
 ***
 
@@ -5137,7 +5103,7 @@ One or more website placement bids are null.
 CampaignServiceInvalidSitePlacementId
 
 **Description**
-The website placement bid identifier is not valid.
+This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
 
 ***
 
@@ -5148,7 +5114,7 @@ The website placement bid identifier is not valid.
 CampaignServiceDuplicateInSitePlacementIds
 
 **Description**
-The array of website placement bids contains a duplicate identifier.
+This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
 
 ***
 
@@ -5159,7 +5125,7 @@ The array of website placement bids contains a duplicate identifier.
 CampaignServiceSitePlacementsArrayShouldNotBeNullOrEmpty
 
 **Description**
-The array of website placement bids cannot be null or empty.
+This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
 
 ***
 
@@ -5170,7 +5136,7 @@ The array of website placement bids cannot be null or empty.
 CampaignServiceSitePlacementsArrayExceedsLimit
 
 **Description**
-The number of elements in the array of website placement bids exceeds the limit.
+This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
 
 ***
 
@@ -5181,7 +5147,7 @@ The number of elements in the array of website placement bids exceeds the limit.
 CampaignServiceSitePlacementOperationNotAllowedForPilot
 
 **Description**
-The customer is not authorized to perform the website placement bid operation.
+This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
 
 ***
 
@@ -5192,7 +5158,7 @@ The customer is not authorized to perform the website placement bid operation.
 CampaignServiceSitePlacementIdsArrayShouldNotBeNullOrEmpty
 
 **Description**
-The array of website placement bid identifiers is null or empty.
+This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
 
 ***
 
@@ -5203,7 +5169,7 @@ The array of website placement bid identifiers is null or empty.
 CampaignServiceSitePlacementIdsArrayExceedsLimit
 
 **Description**
-The number of elements in the array of website placement bid identifiers exceeds the limit.
+This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
 
 ***
 
@@ -5291,7 +5257,7 @@ The site placement status is not valid.
 CampaignServiceCannotChangeImageUrlOnUpdate
 
 **Description**
-The *ImageUrl* element cannot be updated.
+The image URL cannot be updated.
 
 ***
 
@@ -5368,7 +5334,7 @@ The customer is not allowed to use the specified target type.
 CampaignServiceIsLibraryTargetNotNull
 
 **Description**
-The *IsLibraryTarget* element is not allowed to be set or changed.
+This error code is no longer in use. Library targets were last used with Bing Ads API version 10.
 
 ***
 
@@ -10042,7 +10008,7 @@ TargetCpa is required for this bidding scheme.
 MaxCpcExceedsMonthlyBudget
 
 **Description**
-MaxCpc exceeds campaign monthly budget.
+This error code is no longer in use. Monthly budgets was last used with Bing Ads API version 10.
 
 ***
 
@@ -10856,7 +10822,7 @@ The budget type must be specified.
 CampaignServiceMonthlyBudgetNotAllowed
 
 **Description**
-Monthly budget type is not a valid Shared Budget type.
+This error code is no longer in use. Monthly budgets was last used with Bing Ads API version 10.
 
 ***
 
@@ -10944,7 +10910,7 @@ The budget id is invalid.
 CampaignServiceCannotUpdateSharedDailyBudgetToUnsharedMonthlyBudget
 
 **Description**
-The campaign is using a shared daily budget, therefore it can't be updated to use an unshared monthly budget. You can use an unshared daily budget instead.
+This error code is no longer in use. Monthly budgets was last used with Bing Ads API version 10.
 
 ***
 
