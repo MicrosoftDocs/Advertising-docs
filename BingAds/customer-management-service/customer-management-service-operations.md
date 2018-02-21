@@ -11,6 +11,7 @@ The Customer Management service defines the following service operations.
 
 |Service Operation|Description|Request Limits|
 |---|---|---|
+|[AddAccount](addaccount.md)|Creates a new account within an existing customer.|1 *Account*|
 |[AddClientLinks](addclientlinks.md)|Initiates the client link process to manage the account of another customer.|10 *ClientLink*|
 |[DeleteAccount](deleteaccount.md)|Deletes an account.|1 *AccountId*|
 |[DeleteCustomer](deletecustomer.md)|Deletes a customer.|1 *CustomerId*|
@@ -29,7 +30,7 @@ The Customer Management service defines the following service operations.
 |[SearchCustomers](searchcustomers.md)|Searches for customers that match a specified criteria.|10 *Predicates*|
 |[SearchUserInvitations](searchuserinvitations.md)|Searches for user invitations that match a specified criteria.|1 *Predicates*|
 |[SendUserInvitation](senduserinvitation.md)|Sends an invitation for  a Microsoft account user to manage one or more Bing Ads customer accounts.|1 *UserInvitation*|
-|[SignupCustomer](signupcustomer.md)|Signs up a customer with Bing Ads.|1 *Customer*<br /><br />1 *Account*|
+|[SignupCustomer](signupcustomer.md)|Creates a new customer and account that rolls up to your reseller payment method.|1 *Customer*<br /><br />1 *Account*|
 |[UpdateAccount](updateaccount.md)|Updates the details of the specified account.|1 *Account*|
 |[UpdateClientLinks](updateclientlinks.md)|Updates the status of the specified client links.|10 *ClientLink*|
 |[UpdateCustomer](updatecustomer.md)|Updates the details of the specified customer.|1 *Customer*|
