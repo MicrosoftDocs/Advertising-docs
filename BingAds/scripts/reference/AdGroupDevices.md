@@ -26,7 +26,7 @@ Clears the desktop bid modifier for this ad group.
 ### Returns:
 |Type|Description|
 |-|-
-void|The desktop bid modifier.
+void|
 &nbsp;|&nbsp;
 ## <a name="clearmobilebidmodifier"></a>clearMobileBidModifier
 Clears the mobile bid modifier for this ad group.
@@ -34,7 +34,7 @@ Clears the mobile bid modifier for this ad group.
 ### Returns:
 |Type|Description|
 |-|-
-void|The desktop bid modifier.
+void|
 &nbsp;|&nbsp;
 ## <a name="cleartabletbidmodifier"></a>clearTabletBidModifier
 Clears the tablet bid modifier for this ad group.
@@ -42,7 +42,7 @@ Clears the tablet bid modifier for this ad group.
 ### Returns:
 |Type|Description|
 |-|-
-void|The desktop bid modifier.
+void|
 &nbsp;|&nbsp;
 ## <a name="getdesktopbidmodifier"></a>getDesktopBidModifier
 Returns the current desktop bid modifier for this ad group.

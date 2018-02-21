@@ -45,7 +45,7 @@ Enables this campaign.
 ### Returns:
 |Type|Description|
 |-|-
-void|The associated excluded location operation.
+void|
 &nbsp;|&nbsp;
 ## <a name="getbudget"></a>getBudget
 Returns the budget for this campaign.
@@ -186,7 +186,7 @@ name|String|The new name for the campaign.
 ### Returns:
 |Type|Description|
 |-|-
-void|Access to certain kinds of targeting criteria in this campaign.
+void|
 &nbsp;|&nbsp;
 ## <a name="urls"></a>urls
 Returns the URL fields of this campaign.

@@ -46,7 +46,7 @@ Enables the ad.
 ### Returns:
 |Type|Description|
 |-|-
-void|The ad group to which this ad belongs.
+void|
 &nbsp;|&nbsp;
 ## <a name="getadgroup"></a>getAdGroup
 Returns the parent ad group of this ad.

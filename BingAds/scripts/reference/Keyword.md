@@ -46,7 +46,7 @@ Clears the destination URL of this keyword.
 ### Returns:
 |Type|Description|
 |-|-
-void|The ad group to which this keyword belongs.
+void|
 &nbsp;|&nbsp;
 ## <a name="enable"></a>enable
 Enables this keyword.
@@ -54,7 +54,7 @@ Enables this keyword.
 ### Returns:
 |Type|Description|
 |-|-
-void|The ad group to which this keyword belongs.
+void|
 &nbsp;|&nbsp;
 ## <a name="getadgroup"></a>getAdGroup
 Returns the parent ad group of this keyword.
@@ -236,7 +236,7 @@ insertionText|String|Numeric value to insert into the ad text.
 ### Returns:
 |Type|Description|
 |-|-
-void|Access to this keyword's URL fields.
+void|
 &nbsp;|&nbsp;
 ## <a name="urls"></a>urls
 Returns the URL fields of this keyword.

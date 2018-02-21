@@ -17,7 +17,7 @@ Clears the tracking template of this campaign.
 ### Returns:
 |Type|Description|
 |-|-
-void|The custom parameters of the campaign as a map of the following form: {key1: 'value1', key2: 'value2', key3: 'value3'}.
+void|
 &nbsp;|&nbsp;
 ## <a name="getcustomparameters"></a>getCustomParameters
 Returns the custom parameters of this campaign. The returned object is in the format <code>{key1: 'value1', key2: 'value2', key3: 'value3'}</code>.

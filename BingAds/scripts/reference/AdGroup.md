@@ -51,7 +51,7 @@ Enables this ad group.
 ### Returns:
 |Type|Description|
 |-|-
-void|Access to this ad group's extensions.
+void|
 &nbsp;|&nbsp;
 ## <a name="getcampaign"></a>getCampaign
 Returns the parent campaign of this ad group.
@@ -200,7 +200,7 @@ name|String|The new name for the ad group.
 ### Returns:
 |Type|Description|
 |-|-
-void|Access to certain kinds of targeting criteria in this ad group.
+void|
 &nbsp;|&nbsp;
 ## <a name="urls"></a>urls
 Returns an AdGroupUrls object which provides access to the URL fields of this ad group.
