@@ -107,7 +107,7 @@ Returns a selector with the specified filtering conditions.
 
 Specify the condition parameter in the form, "columnName operator value" where: 
 
-- columnName is the name of a performance metric to order the results by. For a list of possible values, see [Supported Columns](#supported-ad-group-columns).  If you set columName to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange~string-daterange~) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~).
+- columnName is the name of a performance metric to order the results by. For a list of possible values, see [Supported Columns](#supported-ad-columns).  If you set columName to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange~string-daterange~) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~).
 - operator is one of the supported [operators](#operators).
 
 ### Operators
