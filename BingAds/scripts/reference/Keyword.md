@@ -21,7 +21,7 @@ Example usage:
 [getMatchType](#getmatchtype)|String|Returns the match type of this keyword. Supported values include:<br /> <br /> `BROAD`<br /> `PHRASE`<br /> `EXACT`<br /><br />
 [getQualityScore](#getqualityscore)|int|Returns the quality score of this keyword, in the range 1…10.<br />
 [getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this keyword for the specified predefined date range.
-[getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns stats for this keyword for the given custom date range. Both parameters can be either a string in YYYYMMDD format or an object with year, month and day properties. In either case, a full date must be specified. <br />
+[getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns a [Stats](./Stats) object for this keyword for the specified date range.
 [getText](#gettext)|String|Returns the text of this keyword. The text will be returned in the format as follows, based on the match type of this keyword:<br /> <br /> &nbsp;•	books – broad match<br /> &nbsp;•	"books" – phrase match<br /> &nbsp;•	[origin of species] – exact match<br /><br />
 [getTopOfPageCpc](#gettopofpagecpc)|double|Returns the estimated mainline bid for this keyword.<br />
 [isEnabled](#isenabled)|boolean|Returns true if this keyword is enabled <br />
@@ -147,7 +147,14 @@ dateRange|String|Date range for which the stats are requested.
 [Stats](./Stats)|The stats for the specified date range.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~object-datefrom_-object-dateto~"></a>getStatsFor(Object dateFrom, Object dateTo)
-Returns stats for this keyword for the given custom date range. Both parameters can be either a string in YYYYMMDD format or an object with year, month and day properties. In either case, a full date must be specified. 
+Returns a [Stats](./Stats) object for this keyword for the specified date range.
+
+You may specify the date parameters using strings or objects. To use strings, specify the date in the form, YYYYMMDD. If you use objects, create a JSON object with the following fields:
+
+year
+month
+day
+For example, {year: 2016, month: 5, day: 13}.
 
 ### Arguments:
 |Name|Type|Description|

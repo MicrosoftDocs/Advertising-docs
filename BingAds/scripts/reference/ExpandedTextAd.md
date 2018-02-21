@@ -23,7 +23,7 @@ Example usage:
 [getPath1](#getpath1)|String|Returns the first path that appears with this ad's display URL.<br />
 [getPath2](#getpath2)|String|Returns the second path that appears with this ad's display URL.<br />
 [getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this expanded text ad for the specified predefined date range.
-[getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns stats for this ad for the given custom date range. Both parameters can be either a string in YYYYMMDD format or an object with year, month and day properties. In either case, a full date must be specified. <br />
+[getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns a [Stats](./Stats) object for this expanded text ad for the specified date range.
 [getType](#gettype)|String|Returns the type of this ad. Supported values include:<br /> <br /> `EXPANDED_TEXT_AD` and `TEXT_AD`<br /><br />
 [isEnabled](#isenabled)|boolean|Returns true if this ad is enabled. <br />
 [isPaused](#ispaused)|boolean|Returns true if this ad is paused <br />
@@ -164,7 +164,14 @@ dateRange|String|Date range for which the stats are requested.
 [Stats](./Stats)|The stats for the specified date range.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~object-datefrom_-object-dateto~"></a>getStatsFor(Object dateFrom, Object dateTo)
-Returns stats for this ad for the given custom date range. Both parameters can be either a string in YYYYMMDD format or an object with year, month and day properties. In either case, a full date must be specified. 
+Returns a [Stats](./Stats) object for this expanded text ad for the specified date range.
+
+You may specify the date parameters using strings or objects. To use strings, specify the date in the form, YYYYMMDD. If you use objects, create a JSON object with the following fields:
+
+year
+month
+day
+For example, {year: 2016, month: 5, day: 13}.
 
 ### Arguments:
 |Name|Type|Description|

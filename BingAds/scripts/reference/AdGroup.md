@@ -17,7 +17,7 @@ Example usage:
 [getId](#getid)|long|Returns the ID of this ad group.<br />
 [getName](#getname)|String|Returns the name of this ad group.<br />
 [getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this ad group for the specified predefined date range.
-[getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns stats for this ad group for the given custom date range. Both parameters can be either a string in `YYYYMMDD` format or an object with year, month and day properties. In either case, a full date must be specified <br />
+[getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|String|Returns a [Stats](./Stats) object for this ad group for the specified date range.
 [isEnabled](#isenabled)|boolean|Returns true if this ad group is enabled. <br />
 [isPaused](#ispaused)|boolean|Returns true if this ad group is paused. <br />
 [isRemoved](#isremoved)|boolean|Returns true if this ad group is removed. <br />
@@ -112,7 +112,14 @@ dateRange|String|Predefined date range for which the stats are requested.
 [Stats](./Stats)|The [Stats](./Stats) object for the specified predefined date range.
 &nbsp;|&nbsp;
 ## <a name="getstatsfor~object-datefrom_-object-dateto~"></a>getStatsFor(Object dateFrom, Object dateTo)
-Returns stats for this ad group for the given custom date range. Both parameters can be either a string in `YYYYMMDD` format or an object with year, month and day properties. In either case, a full date must be specified 
+Returns a [Stats](./Stats) object for this ad group for the specified date range.
+
+You may specify the date parameters using strings or objects. To use strings, specify the date in the form, YYYYMMDD. If you use objects, create a JSON object with the following fields:
+
+year
+month
+day
+For example, {year: 2016, month: 5, day: 13}.
 
 ### Arguments:
 |Name|Type|Description|
