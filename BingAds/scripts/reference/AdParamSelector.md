@@ -11,6 +11,11 @@ Example usage:
  }
 ```
 
+See also:
+- [AdParamIterator](./AdParamIterator)
+- [AdParam](./AdParam)
+
+
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-

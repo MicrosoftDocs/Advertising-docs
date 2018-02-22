@@ -15,6 +15,11 @@ Example usage:
  }
 ```
 
+See also:
+- [AdIterator](./AdIterator)
+- [Ad](./Ad)
+
+
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
@@ -24,7 +29,7 @@ Example usage:
 [orderBy(String orderBy)](#orderby~string-orderby~)|[AdSelector](./AdSelector)|Returns a selector with the specified ordering.
 [withCondition(String condition)](#withcondition~string-condition~)|[AdSelector](./AdSelector)|Returns a selector with the specified filtering conditions.
 [withIds(long[] ids)](#withids~long-ids~)|[AdSelector](./AdSelector)|Returns a selector that will return only ads with the specified IDs.
-[withLimit(int limit)](#withlimit~int-limit~)|[AdSelector](./AdSelector)|Returns a selector with as many ads as specified by the limit argument selected from the beginning in this selector.<br />
+[withLimit(int limit)](#withlimit~int-limit~)|[AdSelector](./AdSelector)|Returns a selector that will return only the specified number of results from the beginning of the result set.
 &nbsp;|&nbsp;|&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
@@ -195,8 +200,7 @@ ids|long[][]|Array of ad IDs.
 [AdSelector](./AdSelector)|The selector restricted to the given IDs.
 &nbsp;|&nbsp;
 ## <a name="withlimit~int-limit~"></a>withLimit(int limit)
-Returns a selector with as many ads as specified by the limit argument selected from the beginning in this selector.
-
+Returns a selector that will return only the specified number of results from the beginning of the result set.
 ### Arguments:
 |Name|Type|Description|
 |-|-|-

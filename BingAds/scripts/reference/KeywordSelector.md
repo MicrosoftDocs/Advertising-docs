@@ -10,7 +10,7 @@ Provides methods to select keywords by using filtering and sorting.
 [orderBy(String orderBy)](#orderby~string-orderby~)|[KeywordSelector](./KeywordSelector)|Returns a selector with the specified ordering.
 [withCondition(String condition)](#withcondition~string-condition~)|[KeywordSelector](./KeywordSelector)|Returns a selector with the specified filtering conditions.
 [withIds(long[] ids)](#withids~long-ids~)|[KeywordSelector](./KeywordSelector)|Returns a selector that will return only keywords with the specified IDs.
-[withLimit(int limit)](#withlimit~int-limit~)|[KeywordSelector](./KeywordSelector)|Returns a selector with as many keywords as specified by the limit argument selected from the beginning in this selector.<br />
+[withLimit(int limit)](#withlimit~int-limit~)|[KeywordSelector](./KeywordSelector)|Returns a selector that will return only the specified number of results from the beginning of the result set.
 &nbsp;|&nbsp;|&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
@@ -176,8 +176,7 @@ ids|long[][]|Array of keyword IDs.
 [KeywordSelector](./KeywordSelector)|The selector restricted to the given IDs.
 &nbsp;|&nbsp;
 ## <a name="withlimit~int-limit~"></a>withLimit(int limit)
-Returns a selector with as many keywords as specified by the limit argument selected from the beginning in this selector.
-
+Returns a selector that will return only the specified number of results from the beginning of the result set.
 ### Arguments:
 |Name|Type|Description|
 |-|-|-

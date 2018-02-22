@@ -10,7 +10,7 @@ Provides methods to select campaigns by using filtering and sorting.
 [orderBy(String orderBy)](#orderby~string-orderby~)|[CampaignSelector](./CampaignSelector)|Returns a selector with the specified ordering.
 [withCondition(String condition)](#withcondition~string-condition~)|[CampaignSelector](./CampaignSelector)|Returns a selector with the specified filtering conditions.
 [withIds(long[] ids)](#withids~long-ids~)|[CampaignSelector](./CampaignSelector)|Returns a selector that will return only campaigns with the specified IDs.
-[withLimit(int limit)](#withlimit~int-limit~)|[CampaignSelector](./CampaignSelector)|Returns a selector with as many campaigns as specified by the limit argument selected from the beginning in this selector.<br />
+[withLimit(int limit)](#withlimit~int-limit~)|[CampaignSelector](./CampaignSelector)|Returns a selector that will return only the specified number of results from the beginning of the result set.
 &nbsp;|&nbsp;|&nbsp;
 
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
@@ -173,8 +173,7 @@ ids|long[]|Array of campaign IDs.
 [CampaignSelector](./CampaignSelector)|The selector restricted to the given IDs.
 &nbsp;|&nbsp;
 ## <a name="withlimit~int-limit~"></a>withLimit(int limit)
-Returns a selector with as many campaigns as specified by the limit argument selected from the beginning in this selector.
-
+Returns a selector that will return only the specified number of results from the beginning of the result set.
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
