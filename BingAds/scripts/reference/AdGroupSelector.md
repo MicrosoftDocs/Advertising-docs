@@ -47,6 +47,13 @@ Supported date range values:
 - LAST_MONTH
 - ALL_TIME
 
+Example:
+```
+selector.forDateRange("LAST_7_DAYS");
+```
+
+Date range must be specified if the selector has conditions or ordering for metrics statistics applied.  Only the last date range specified will be used.
+
 
 ### Arguments:
 |Name|Type|Description|
