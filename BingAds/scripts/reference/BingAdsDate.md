@@ -1,35 +1,23 @@
 # BingAdsDate
 Represents a calendar date in terms of year, month and day.
 
-# Methods
-|Method Name|Return Type|Description|
+# Properties
+|Property Name|Type|Description|
 |-|-|-
-[day](#day)|int|Returns the day of month (1 to 31) for this date.<br />
-[month](#month)|int|Returns the month as a number (1 to 12) for this date.<br />
-[year](#year)|int|Returns the year for this date.<br />
-&nbsp;|&nbsp;|&nbsp;
+[day](#day)|int|Returns the day of month (1 to 31) for this date.&lt;br /&gt;
+[month](#month)|int|Returns the month as a number (1 to 12) for this date.&lt;br /&gt;
+[year](#year)|int|Returns the year for this date.&lt;br /&gt;
+&amp;nbsp;|&amp;nbsp;|&amp;nbsp;
 
-## <a name="day"></a>day
-Returns the day of month (1 to 31) for this date.
+## &lt;a name&#x3D;&quot;day&quot;&gt;&lt;/a&gt;day
+The day of month (1 to 31) for this date.
 
-### Returns:
-|Type|Description|
-|-|-
-int|
-&nbsp;|&nbsp;
-## <a name="month"></a>month
-Returns the month as a number (1 to 12) for this date.
+## &lt;a name&#x3D;&quot;month&quot;&gt;&lt;/a&gt;month
+The month as a number (1 to 12) for this date.
 
-### Returns:
-|Type|Description|
-|-|-
-int|
-&nbsp;|&nbsp;
-## <a name="year"></a>year
-Returns the year for this date.
+## &lt;a name&#x3D;&quot;year&quot;&gt;&lt;/a&gt;year
+The year for this date.
 
-### Returns:
-|Type|Description|
-|-|-
-int|
-&nbsp;|&nbsp;
+
+
+
