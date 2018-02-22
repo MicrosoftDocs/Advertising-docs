@@ -11,6 +11,7 @@
           "**/includes/**",
           "**/bingads-11/**",
           "**/bingads-12/**",
+          "**/guides/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -48,7 +49,23 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
-      }      
+      },
+      {
+        "group": "guides",
+        "src": "guides",
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }        
     ],
     "resource": [
       {
@@ -87,8 +104,20 @@
           "**/obj/**",
           "**/includes/**"
         ]
-      }
-      
+      },
+      {
+        "group": "guides",
+        "src": "guides",
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }      
     ],
     "overwrite": [],
     "externalReference": [],
@@ -123,7 +152,7 @@
       }
     },
     "template": [],
-    "dest": "BingAds",
+    "dest": "bingads",
     "groups": {
       "bingads-11": {
         "dest": "bingads",
@@ -132,6 +161,10 @@
       "bingads-12": {
         "dest": "bingads",
         "moniker_range": "= bingads-12"
+      },
+      "guides": {
+        "dest": "bingads",
+        "moniker_range": ">= bingads-11"
       }
     }
   }
