@@ -94,7 +94,7 @@ Bing Ads sends an email invite to the user. If the invite doesn’t show up in t
 After Bing creates the account, you may use the MSA with the Hotel Ads API to create hotel ad campaigns.
 
 > [!NOTE]
-> The MSA signup process returns you to the SI Bing Ads user interface (https://ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface. To access your Hotel Ads Campaigns using the Bing Ads user interface in sandbox, go to [https://ui.sandbox.bingads.microsoft.com](https://ui.sandbox.bingads.microsoft.com) and sign in using your new MSA email address.
+> The MSA signup process returns you to the SI Bing Ads user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface. To access your Hotel Ads Campaigns using the Bing Ads user interface in sandbox, go to [https://ui.sandbox.bingads.microsoft.com](https://ui.sandbox.bingads.microsoft.com) and sign in using your new MSA email address.
 
 
 
