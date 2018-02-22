@@ -15,6 +15,10 @@ var adGroupSelector = BingAdsApp
  }
 ```
 
+See also:
+- [AdGroupIterator](./AdGroupIterator)
+- [AdGroup](./AdGroup)
+
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
