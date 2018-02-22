@@ -1,6 +1,5 @@
 # Stats
-Provides information about statistics related to the different entity types in Bing Ads.
-
+Provides statistics related to the different entity types.
 Example usage:
 ```javascript
  var stats = campaign.getStatsFor("LAST_MONTH");

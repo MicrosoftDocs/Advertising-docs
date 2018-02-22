@@ -33,6 +33,12 @@ Returns a selector of all ads in the current account.
 ## <a name="campaigns"></a>campaigns
 Returns a selector of all campaigns in the current account.
 
+
+Example:
+```javascript
+var campaignSelector = BingAdsApp.campaigns();
+```
+
 ### Returns:
 |Type|Description|
 |-|-
