@@ -9,7 +9,7 @@ Example usage:
     .withDescription("Ad description")
     .withPath1("path1")
     .withPath2("path2")
-    .withFinalUrl("http://www.example.com")
+    .withFinalUrl("http://www.contoso.com")
     .build();
  var ad = adOperation.getResult();
 ```
@@ -72,6 +72,11 @@ description|String|The ad description.
 ## <a name="withfinalurl~string-finalurl~"></a>withFinalUrl(String finalUrl)
 Sets the final URL of this new expanded text to the specified value.
 
+
+The final URL represents the actual landing page for your ad. The final URL must be the URL of the page that the user ends up on after clicking on your ad, once all the redirects have taken place.
+
+Final URLs follow the same override rules as destination URLs. For example, a final URL at the keyword level overrides a final URL at an ad level.
+
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
@@ -110,6 +115,11 @@ headlinePart2|String|The second part of the headline for the ad.
 &nbsp;|&nbsp;
 ## <a name="withmobilefinalurl~string-mobilefinalurl~"></a>withMobileFinalUrl(String mobileFinalUrl)
 Sets the mobile final URL of this new expanded text ad to the specified value.
+
+
+The mobile final URL represents the actual landing page for your ad on a mobile device. The final mobile URL must be the URL of the page that the user ends up on after clicking on your ad on a mobile device, once all the redirects have taken place.
+
+Mobile final URLs follow the same override rules as destination URLs. For example, a mobile final URL at the keyword level overrides a mobile final URL at an ad level.
 
 ### Arguments:
 |Name|Type|Description|
