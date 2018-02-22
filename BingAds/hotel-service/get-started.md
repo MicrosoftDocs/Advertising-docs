@@ -21,7 +21,7 @@ Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. Th
 
 The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Managing User Authentication with OAuth](../guides/authentication-oauth.md). 
 
-You *can* use the [Bing Ads SDK](../guides/client-libraries.md) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](../guides/get-started-csharp.md) | [Java](../guides/get-started-java.md) | [Python](../guides/get-started-python.md). (You should only use the SDK to get the access token if you're using the SDK for Bing ad campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
+You *can* use the [Bing Ads SDK](../guides/client-libraries.md) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](../guides/get-started-csharp.md) | [Java](../guides/get-started-java.md) | [Python](../guides/get-started-python.md). (You should only use the SDK to get the access token if you're using the SDK for Bing Ads campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
 
 If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md) for an example OAuth implementation.
 
@@ -65,7 +65,7 @@ For the sandbox environment, the following are the endpoints you must use to get
 
 You use the sandbox environment to test your application before putting it in production. Use the following steps to get a sandbox account.
 
-1.	Open a browser and navigate to si.bingads.microsoft.com
+1.	Open a browser and navigate to sandbox.bingads.microsoft.com
 2.	Click **Sign up for Bing Ads** or **Sign up now**
 3.	Fill out the **Create Account** form
 4.	For **Import/Create Campaign**, click **Skip campaign creation**
@@ -80,7 +80,7 @@ The above steps create a Bing Ads legacy account. To use Hotel Ads API, you need
 5.	Enter the email address of the user to invite. The email server must be outlook.com (for example, someone@outlook.com).
 6.	Click **Send**
 
-Bing Ads sends an email invite to the user. If the invite doesn’t show up in the inbox, check the Junk Email folder. It may take a while to receive the invite. The following steps show how to accept the invitation.
+Bing Ads sends an email invite to the user. If the invite doesn’t show up in the inbox, check the Junk Email folder. It may take a couple of minutes to receive the invite. The following steps show how to accept the invitation.
 
 1.	Open the email from Bing Ads with subject line, Invitation to Bing Ads
 2.	Click the embedded link
@@ -88,9 +88,13 @@ Bing Ads sends an email invite to the user. If the invite doesn’t show up in t
 4.	Click **Next**
 5.	Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com).
 6.	Finish the work flow by specifying the rest of your user information
+7.  Exit Bing Ads after completing the MSA process.
+
 
 After Bing creates the account, you may use the MSA with the Hotel Ads API to create hotel ad campaigns.
 
+> [!NOTE]
+> The MSA signup process returns you to the SI Bing Ads user interface (https://ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface. To access your Hotel Ads Campaigns using the Bing Ads user interface in sandbox, go to [https://ui.sandbox.bingads.microsoft.com](https://ui.sandbox.bingads.microsoft.com) and sign in using your new MSA email address.
 
 
 

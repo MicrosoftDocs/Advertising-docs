@@ -13,7 +13,14 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
-## February 1, 2017
+## February 22, 2018
+
+### Nonbreaking change
+
+- Changed the sandbox URL that you use to get your initial sandbox account from si.bingads.microsoft.com to sandbox.bingads.microsoft.com (see [Getting sandbox credentials](../hotel-service/get-started.md#getting-sandbox-credentials)). 
+
+
+## February 1, 2018
 
 ### Nonbreaking changes
 
@@ -25,14 +32,14 @@ For information about changes that were included with each release, see the foll
 
 
 
-## January 23, 2017
+## January 23, 2018
 
 ### Breaking changes
 
 - Changed the Performance Report's file name from dimensionrow-\<request ID\> to performance-\<request ID\>. 
 
 
-## January 18, 2017
+## January 18, 2018
 
 ### Nonbreaking changes
 
@@ -41,7 +48,7 @@ For information about changes that were included with each release, see the foll
 
 
 
-## January 17, 2017
+## January 17, 2018
 
 ### Breaking changes coming
 
@@ -49,14 +56,14 @@ For information about changes that were included with each release, see the foll
 
 
 
-## January 15, 2017
+## January 15, 2018
 
 ### Nonbreaking changes
 
 - Added support for compressing the report data. Use this feature to improve download performance. For information about requesting compression, see the report job's [Compression](../hotel-service/reference.md#compression) field.
 
 
-## January 8, 2017
+## January 8, 2018
 
 ### Nonbreaking changes
 
