@@ -11,7 +11,7 @@ Example usage:
 |-|-|-
 [campaigns](#campaigns)|[CampaignSelector](./CampaignSelector)|Returns the selector of all campaigns that share this budget.<br />
 [getAmount](#getamount)|double|Returns the amount of this budget, in the currency of the current account.<br />
-[getDeliveryMethod](#getdeliverymethod)|String|Returns the delivery method for this budget. Supported values include:<br /> <br /> `STANDARD`<br /> `ACCELERATED`<br /><br />
+[getDeliveryMethod](#getdeliverymethod)|String|Returns the delivery method for this budget.
 [getEntityType](#getentitytype)|String|Returns the entity type of this budget, in this case "Budget".<br />
 [getId](#getid)|long|Returns the ID of this budget.<br />
 [getName](#getname)|String|Returns the name of this budget.<br />
@@ -38,7 +38,13 @@ Returns the amount of this budget, in the currency of the current account.
 double|Amount of the budget.
 &nbsp;|&nbsp;
 ## <a name="getdeliverymethod"></a>getDeliveryMethod
-Returns the delivery method for this budget. Supported values include:<br /> <br /> `STANDARD`<br /> `ACCELERATED`<br />
+Returns the delivery method for this budget. 
+
+Supported values are:
+
+- STANDARD
+- ACCELERATED
+
 
 ### Returns:
 |Type|Description|
