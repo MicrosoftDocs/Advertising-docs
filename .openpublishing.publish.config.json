@@ -8,7 +8,8 @@
       "monikers": [],
       "moniker_ranges": [
         "= bingads-11",
-        "= bingads-12"
+        "= bingads-12",
+        ">= bingads-11"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {

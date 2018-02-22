@@ -164,7 +164,7 @@
       },
       "guides": {
         "dest": "bingads",
-        "moniker_range": "= bingads-11 || = bingads-12"
+        "moniker_range": ">= bingads-11"
       }
     }
   }
