@@ -160,6 +160,11 @@ urlPath2|String|The text of the second path.
 ## <a name="withtrackingtemplate~string-trackingtemplate~"></a>withTrackingTemplate(String trackingTemplate)
 Sets the tracking template of this new expanded text ad to the specified value.
 
+
+You can optionally use the tracking template to specify additional tracking parameters or redirects. Bing Ads will use this template to assemble the actual destination URL to associate with the ad.
+
+A tracking template specified at a lower level entity will override the setting specified at a higher level entity, for example, a tracking template at the ad group level overrides the setting at the campaign level.
+
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
