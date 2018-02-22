@@ -53,6 +53,17 @@ String|The tracking template of the campaign.
 ## <a name="setcustomparameters~object-customparameters~"></a>setCustomParameters(Object customParameters)
 Sets the custom parameters of this campaign.
 
+
+The name of a custom parameter can contain only alphanumeric characters, and custom parameter values may not contain white space. When referring to the custom parameter in final URLs and tracking templates, you should surround the custom parameter in braces, and prefix an underscore to its name, for example {_param}.
+
+You can have up to 3 custom parameters for an entity. The key and value must not exceed 16 and 200 bytes respectively.
+
+Custom parameters specified at a lower level entity will override the setting specified at a higher level entity, for example, setting custom parameters at the ad group level overrides the setting at the campaign level, and custom parameters specified at the ad level override the setting at the ad group level.
+
+This method will replace any existing custom parameters.
+
+To clear the custom parameters of the campaign pass an empty object, for example `setCustomParamters({})`.  If custom parameters are cleared at a lower level entity (for example a keyword). and custom parameters are specified on a higher level entity, (for example, the parent ad group), then Bing Ads uses the custom parameters specified at the higher level (for example, the ad group custom parameters will be used).  To completely clear custom parameters they must be cleared at all levels.
+
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
