@@ -257,8 +257,7 @@ Creates an ad param with the specified insertion text and at the index specified
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
-index|int|Defines which parameterized snippet of ad text to replace. For example,<br />                      a value of <code>1</code> indicates a replacement for the <code>{param1:default-value} </code> token. This field equals either <code>1</code> and
-                      <code>2</code>.
+index|int|Defines which parameterized snippet of ad text to replace. For example, a value of `1` indicates a replacement for the `{param1:default-value}` token. This field equals either `1` and `2`.
 insertionText|String|Numeric value to insert into the ad text.
 &nbsp;|&nbsp;|&nbsp;
 ### Returns:
