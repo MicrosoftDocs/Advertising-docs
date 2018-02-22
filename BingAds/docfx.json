@@ -4,11 +4,15 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "breadcrumb/toc.yml"
+
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
+          "**/bingads-11/**",
+          "**/bingads-12/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -22,7 +26,7 @@
         ],
         "group": "bingads-11",
         "src": "bingads-11",
-        "dest": "bingads-11",
+        "dest": "bingads",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -39,7 +43,7 @@
         ],
         "group": "bingads-12",
         "src": "bingads-12",
-        "dest": "bingads-12",
+        "dest": "bingads",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -70,21 +74,21 @@
         ],
         "group": "bingads-11",
         "src": "bingads-11",
-        "dest": "bingads-11",
+        "dest": "bingads",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ]
       },
       {
+        "group": "bingads-12",
+        "src": "bingads-12",
+        "dest": "bingads",
         "files": [
           "**/*.png",
           "**/*.jpg",
           "**/*.gif"
-        ],
-        "group": "bingads-12",
-        "src": "bingads-12",
-        "dest": "bingads-12",
+        ],       
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -128,12 +132,12 @@
     "dest": "BingAds",
     "groups": {
       "bingads-11": {
-        "dest": "bingads-11",
-        "moniker_range": "= bingads-11"
+        "dest": "bingads",
+        "moniker_range": "bingads-11"
       },
       "bingads-12": {
-        "dest": "bingads-12",
-        "moniker_range": "= bingads-12"
+        "dest": "bingads",
+        "moniker_range": " bingads-12"
       }
     }
   }
