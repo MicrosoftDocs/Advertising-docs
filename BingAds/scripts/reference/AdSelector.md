@@ -77,6 +77,11 @@ You may specify the date parameters using strings or objects. To use strings, sp
 
 For example, {year: 2016, month: 5, day: 13}.
 
+The date range is inclusive on both ends.
+
+Date range must be specified if the selector has conditions or ordering for metrics statistics applied.  Only the last date range specified will be used.
+
+
 ### Arguments:
 |Name|Type|Description|
 |-|-|-

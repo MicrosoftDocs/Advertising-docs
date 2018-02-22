@@ -116,13 +116,18 @@ dateRange|String|Date range for which the stats are requested.
 ## <a name="getstatsfor~object-datefrom_-object-dateto~"></a>getStatsFor(Object dateFrom, Object dateTo)
 Returns a [Stats](./Stats) object for this campaign for the specified date range.
 
-You may specify the date parameters using strings or objects. To use strings, specify the date in the form, YYYYMMDD. If you use objects, create a JSON object with the following fields:
+You may specify the date parameters using strings or objects. To use strings, specify the date in the form, YYYYMMDD. If you use objects, create a JSON object with the following fields:  
 
 - year
 - month
 - day
 
 For example, {year: 2016, month: 5, day: 13}.
+
+The date range is inclusive on both ends.
+
+Date range must be specified if the selector has conditions or ordering for metrics statistics applied.  Only the last date range specified will be used.
+
 
 ### Arguments:
 |Name|Type|Description|
