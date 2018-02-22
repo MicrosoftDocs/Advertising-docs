@@ -1,6 +1,5 @@
 # AdViewSpace
-Provides a type-specific view of an ad. 
-
+Provides the methods used to convert the base ad object to other ad types such as an enhanced text ad object.
 Example usage:
 ```javascript
  if (ad.isType().expandedTextAd()) {
