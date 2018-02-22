@@ -20,13 +20,12 @@
         ]
       },
       {
+        "group": "bingads-11",
+        "src": "bingads-11",
         "files": [
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "bingads-11",
-        "src": "bingads-11",
-        "dest": "bingads",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -37,13 +36,12 @@
         ]
       },
       {
+        "group": "bingads-12",
+        "src": "bingads-12",
         "files": [
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "bingads-12",
-        "src": "bingads-12",
-        "dest": "bingads",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -67,14 +65,13 @@
         ]
       },
       {
+        "group": "bingads-11",
+        "src": "bingads-11",
         "files": [
           "**/*.png",
           "**/*.jpg",
           "**/*.gif"
         ],
-        "group": "bingads-11",
-        "src": "bingads-11",
-        "dest": "bingads",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -83,12 +80,11 @@
       {
         "group": "bingads-12",
         "src": "bingads-12",
-        "dest": "bingads",
         "files": [
           "**/*.png",
           "**/*.jpg",
           "**/*.gif"
-        ],       
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -129,11 +125,11 @@
       }
     },
     "template": [],
-    "dest": "BingAds",
+    "dest": "bingads",
     "groups": {
       "bingads-11": {
         "dest": "bingads",
-        "moniker_range": " = bingads-11"
+        "moniker_range": "= bingads-11"
       },
       "bingads-12": {
         "dest": "bingads",
