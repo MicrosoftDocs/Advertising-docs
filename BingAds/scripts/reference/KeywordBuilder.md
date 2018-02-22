@@ -17,7 +17,6 @@ Example usage:
 [build](#build)|[KeywordOperation](./KeywordOperation)|Returns a keyword operation with the defined properties which can later be used to construct the keyword.<br />
 [withCpc(double cpc)](#withcpc~double-cpc~)|[KeywordBuilder](./KeywordBuilder)|Returns a keyword builder with the CPC property set to the specified value.<br />
 [withCustomParameters( String customParameters)](#withcustomparameters~-string-customparameters~)|[KeywordBuilder](./KeywordBuilder)|Returns a keyword builder with the custom parameters set to the specified value.
-[withDestinationUrl(String destinationUrl)](#withdestinationurl~string-destinationurl~)|[KeywordBuilder](./KeywordBuilder)|Returns a keyword builder with the destination URL set to the specified value.<br />
 [withFinalUrl(String finalUrl)](#withfinalurl~string-finalurl~)|[KeywordBuilder](./KeywordBuilder)|Returns a keyword builder with the final URL set to the specified value.<br />
 [withMobileFinalUrl(String mobileFinalUrl)](#withmobilefinalurl~string-mobilefinalurl~)|[KeywordBuilder](./KeywordBuilder)|Returns a keyword builder with the mobile final URL set to the specified value.<br />
 [withText(String text)](#withtext~string-text~)|[KeywordBuilder](./KeywordBuilder)|Returns a keyword builder with the text set to the specified value.      <br />
@@ -64,16 +63,13 @@ customParameters|Object|The custom parameters of the keyword as a map of the<br 
 |-|-
 [KeywordBuilder](./KeywordBuilder)|The keyword builder with the specified custom parameters.
 &nbsp;|&nbsp;
-## <a name="withdestinationurl~string-destinationurl~"></a>withDestinationUrl(String destinationUrl)
-Returns a keyword builder with the destination URL set to the specified value.
-
-### Returns:
-|Type|Description|
-|-|-
-[KeywordBuilder](./KeywordBuilder)|
-&nbsp;|&nbsp;
 ## <a name="withfinalurl~string-finalurl~"></a>withFinalUrl(String finalUrl)
 Returns a keyword builder with the final URL set to the specified value.
+
+
+The final URL represents the actual landing page for your ad. The final URL must be the URL of the page that the user ends up on after clicking on your ad, once all the redirects have taken place.
+
+Final URLs follow the same override rules as destination URLs. For example, a final URL at the keyword level overrides a final URL at an ad level.
 
 ### Arguments:
 |Name|Type|Description|
@@ -87,6 +83,11 @@ finalUrl|String|The final URL for the keyword.
 &nbsp;|&nbsp;
 ## <a name="withmobilefinalurl~string-mobilefinalurl~"></a>withMobileFinalUrl(String mobileFinalUrl)
 Returns a keyword builder with the mobile final URL set to the specified value.
+
+
+The mobile final URL represents the actual landing page for your ad on a mobile device. The final mobile URL must be the URL of the page that the user ends up on after clicking on your ad on a mobile device, once all the redirects have taken place.
+
+Mobile final URLs follow the same override rules as destination URLs. For example, a mobile final URL at the keyword level overrides a mobile final URL at an ad level.
 
 ### Arguments:
 |Name|Type|Description|
