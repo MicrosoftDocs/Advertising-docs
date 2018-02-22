@@ -1,6 +1,5 @@
 # AdOperation
-Represents the definition of an ad constructed via [AdBuilderSpace](./AdBuilderSpace). The ad is only stored in the system when any of the methods on this object are invoked or when the script finishes execution, whichever comes first. For more efficiency, store the operation objects in an array and only invoke its methods when all operations have been constructed. 
-
+Represents the definition of an ad constructed via [AdBuilderSpace](./AdBuilderSpace). The ad is only stored in the system when any of the methods on this object are invoked or when the script finishes execution, whichever comes first. To make the script execute more efficiently, store the operation objects in an array and only invoke its methods when all operations have been constructed.
 Example usage:
 ```javascript
  // For the purpose of this example, suppose that the fetchAdText() function
