@@ -58,21 +58,21 @@ Countdown customizers let you easily add a countdown (by day, hour, and then min
 
 |Language Code|Language|Countdown Length|
 |------------|------------|------------------|
-|DA|Danish|11|
-|NL|Dutch|10|
-|en-AU|English|10|
-|en-GB|English|10|
-|en-US|English|10|
-|FI|Finnish|12|
-|FR|French|10|
+|DA|Danish|8|
+|NL|Dutch|8|
+|en-AU|English|8|
+|en-GB|English|8|
+|en-US|English|8|
+|FI|Finnish|9|
+|FR|French|9|
 |DE|German|10|
-|IT|Italian|10|
-|NO|Norwegian|11|
-|pt-BR|Portuguese|10|
-|pt-PT|Portuguese|10|
-|ES|Spanish|10|
-|ES-419|Spanish|10|
-|SV|Swedish|10|
+|IT|Italian|7|
+|NO|Norwegian|7|
+|pt-BR|Portuguese|8|
+|pt-PT|Portuguese|8|
+|ES|Spanish|8|
+|ES-419|Spanish|8|
+|SV|Swedish|8|
 |zh-HK|Traditional Chinese|7|
 |zh-TW|Traditional Chinese|7|
 
