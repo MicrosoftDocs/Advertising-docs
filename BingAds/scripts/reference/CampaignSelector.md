@@ -196,6 +196,17 @@ condition|String|Condition to add to the selector.
 ## <a name="withids~long-ids~"></a>withIds(long[] ids)
 Returns a selector that will return only campaigns with the specified IDs.
 
+
+The resulting selector can be further filtered by applying additional conditions to it.  All conditions will be 'AND' concatenated including any other ID based conditions.  For example:
+
+```javascript
+BingAdsApp.campaigns()
+    .withIds([11111, 22222, 33333])
+    .withIds([33333, 44444, 55555])
+```
+
+will only get the campaign with ID 33333 because it would be the only one satisfying both conditions.
+
 The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the get method will fail.
 
 ### Arguments:
