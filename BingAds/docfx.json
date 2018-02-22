@@ -4,7 +4,9 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "breadcrumb/toc.yml"
+
         ],
         "exclude": [
           "**/obj/**",
@@ -123,7 +125,7 @@
       }
     },
     "template": [],
-    "dest": "BingAds",
+    "dest": "bingads",
     "groups": {
       "bingads-11": {
         "dest": "bingads",
