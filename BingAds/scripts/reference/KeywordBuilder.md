@@ -20,7 +20,7 @@ Example usage:
 [withDestinationUrl(String destinationUrl)](#withdestinationurl~string-destinationurl~)|[KeywordBuilder](./KeywordBuilder)|Returns a keyword builder with the destination URL set to the specified value.<br />
 [withFinalUrl(String finalUrl)](#withfinalurl~string-finalurl~)|[KeywordBuilder](./KeywordBuilder)|Returns a keyword builder with the final URL set to the specified value.<br />
 [withMobileFinalUrl(String mobileFinalUrl)](#withmobilefinalurl~string-mobilefinalurl~)|[KeywordBuilder](./KeywordBuilder)|Returns a keyword builder with the mobile final URL set to the specified value.<br />
-[withText(String text)](#withtext~string-text~)|[KeywordBuilder](./KeywordBuilder)|Returns a keyword builder with the text set to the specified value. Setting the text requires specifying the match type as well by means of extra characters as shown below:<br /> <br /> &nbsp;•	kwBuilder.withText("books") - broad match.<br /> &nbsp;•	kwBuilder.withText("\"books\"") - phrase match.<br /> &nbsp;•	kwBuilder.withText("[the origin of species]") - exact match<br />        <br />
+[withText(String text)](#withtext~string-text~)|[KeywordBuilder](./KeywordBuilder)|Returns a keyword builder with the text set to the specified value.      <br />
 [withTrackingTemplate( String trackingTemplate)](#withtrackingtemplate~-string-trackingtemplate~)|[KeywordBuilder](./KeywordBuilder)|Returns a keyword builder with the tracking template set to the specified value.<br />
 &nbsp;|&nbsp;|&nbsp;
 
@@ -99,7 +99,15 @@ mobileFinalUrl|String|The mobile final URL for the keyword.
 [KeywordBuilder](./KeywordBuilder)|The keyword builder with the specified final URL.
 &nbsp;|&nbsp;
 ## <a name="withtext~string-text~"></a>withText(String text)
-Returns a keyword builder with the text set to the specified value. Setting the text requires specifying the match type as well by means of extra characters as shown below:<br /> <br /> &nbsp;•	kwBuilder.withText("books") - broad match.<br /> &nbsp;•	kwBuilder.withText("\"books\"") - phrase match.<br /> &nbsp;•	kwBuilder.withText("[the origin of species]") - exact match<br />        
+Returns a keyword builder with the text set to the specified value.      
+
+
+To specify match type for the new keyword:
+
+- `keywordBuilder.withText("books")` - broad match.
+- `keywordBuilder.withText("\"books\"")` - phrase match.
+- `keywordBuilder.withText("[hardcover books]") - exact match.
+
 
 ### Arguments:
 |Name|Type|Description|
