@@ -16,10 +16,10 @@ Example usage:
 |-|-|-
 [build](#build)|[AdGroupOperation](./AdGroupOperation)|Returns an ad group operation which represents the ad group to be created.<br />
 [withBiddingStrategy(String biddingStrategy)](#withbiddingstrategy~string-biddingstrategy~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the type of bidding strategy for the new ad group.
-[withCpc(double cpc)](#withcpc~double-cpc~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the maximum CPC bid to be used for this new ad group. If no CPC is specified, the default of 0.30 will be specified.<br />
+[withCpc(double cpc)](#withcpc~double-cpc~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the maximum CPC bid to be used for this new ad group.<br />
 [withCustomParameters(Object customParams)](#withcustomparameters~object-customparams~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the custom parameters for the new ad group.
 [withName(String name)](#withname~string-name~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the name of this new ad group. <br />
-[withStatus(String status)](#withstatus~string-status~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the status of this new ad group to the provided value. If no value is given, the default value of `ENABLED` is set.<br />
+[withStatus(String status)](#withstatus~string-status~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the status of this new ad group to the provided value.<br />
 [withTrackingTemplate(String trackingTemplate)](#withtrackingtemplate~string-trackingtemplate~)|[AdGroupBuilder](./AdGroupBuilder)|Sets the tracking template to be used with this new ad group.<br />
 &nbsp;|&nbsp;|&nbsp;
 
@@ -49,7 +49,11 @@ biddingStrategy|String|The standard bidding strategy of the ad group.
 [AdGroupBuilder](./AdGroupBuilder)|The ad group builder with the specified bidding strategy.
 &nbsp;|&nbsp;
 ## <a name="withcpc~double-cpc~"></a>withCpc(double cpc)
-Sets the maximum CPC bid to be used for this new ad group. If no CPC is specified, the default of 0.30 will be specified.
+Sets the maximum CPC bid to be used for this new ad group.
+
+
+If no CPC is specified, the default of 0.30 will be used.
+
 
 ### Arguments:
 |Name|Type|Description|
@@ -60,6 +64,7 @@ cpc|double|The max CPC bid of the ad group.
 |Type|Description|
 |-|-
 [AdGroupBuilder](./AdGroupBuilder)|The ad group builder with the specified max CPC.
+
 &nbsp;|&nbsp;
 ## <a name="withcustomparameters~object-customparams~"></a>withCustomParameters(Object customParams)
 Sets the custom parameters for the new ad group.
@@ -94,7 +99,10 @@ name|String|Ad group name.
 [AdGroupBuilder](./AdGroupBuilder)|Ad group builder with the specified name.
 &nbsp;|&nbsp;
 ## <a name="withstatus~string-status~"></a>withStatus(String status)
-Sets the status of this new ad group to the provided value. If no value is given, the default value of `ENABLED` is set.
+Sets the status of this new ad group to the provided value.
+
+
+If no value is specified, it will default to `ENABLED`.
 
 ### Arguments:
 |Name|Type|Description|

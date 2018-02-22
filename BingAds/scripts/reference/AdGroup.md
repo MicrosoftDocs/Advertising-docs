@@ -13,7 +13,7 @@ Example usage:
 [devices](#devices)|[AdGroupDevices](./AdGroupDevices)|Returns an AdGroupDevices object associated with this ad group.<br />
 [enable](#enable)|void|Enables this ad group.<br />
 [getCampaign](#getcampaign)|[Campaign](./Campaign)|Returns the parent campaign of this ad group.<br />
-[getEntityType](#getentitytype)|String|Returns the entity type of this ad group, which is “Ad Group”.<br />
+[getEntityType](#getentitytype)|String|Returns the entity type of this ad group, which is "AdGroup".<br />
 [getId](#getid)|long|Returns the ID of this ad group.<br />
 [getName](#getname)|String|Returns the name of this ad group.<br />
 [getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns an object which provides statistics for the specified predefined date range.
@@ -62,7 +62,7 @@ Returns the parent campaign of this ad group.
 [Campaign](./Campaign)|The campaign to which this ad group belongs.
 &nbsp;|&nbsp;
 ## <a name="getentitytype"></a>getEntityType
-Returns the entity type of this ad group, which is “Ad Group”.
+Returns the entity type of this ad group, which is "AdGroup".
 
 ### Returns:
 |Type|Description|
