@@ -17,7 +17,7 @@ Represents a campaign in the Bing Ads system.
 [isPaused](#ispaused)|boolean|Returns true if this campaign is enabled <br />
 [isRemoved](#isremoved)|boolean|Returns true if this campaign is removed. <br />
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector)|Returns the selector of all keywords under this campaign.<br />
-[newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder)|Returns the ad group builder for this campaign. After the build() method on the builder is called, the ad group will be created for this campaign.<br />
+[newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder)|Returns the ad group builder for this campaign.
 [pause](#pause)|void|Pauses this campaign.<br />
 [setName(String name)](#setname~string-name~)|void|Sets the name of this campaign.<br />
 [urls](#urls)|[CampaignUrls](./CampaignUrls)|Returns the URL fields of this campaign.<br />
@@ -173,7 +173,10 @@ Returns the selector of all keywords under this campaign.
 [KeywordSelector](./KeywordSelector)|The selector of all keywords in the campaign.
 &nbsp;|&nbsp;
 ## <a name="newadgroupbuilder"></a>newAdGroupBuilder
-Returns the ad group builder for this campaign. After the build() method on the builder is called, the ad group will be created for this campaign.
+Returns the ad group builder for this campaign. 
+
+When the build() method on the builder is called, the ad group will be created for this campaign.
+
 
 ### Returns:
 |Type|Description|
