@@ -94,7 +94,9 @@ When you migrate to version 12 remove the '2' suffix from all *Sitelink2* record
 The *Remarketing Targeting Setting* field of an [Ad Group](~/bulk-service/ad-group.md) is renamed as *Audience Targeting Setting*. The setting is applicable for all audiences, including but not limited to remarketing lists. 
 
 #### <a name="bulk-sunset-content"></a>Content Ad Distribution
-The Content ad distribution is no longer supported in Bing Ads, and the *Content* field of an [Ad Group](~/bulk-service/ad-group.md) is removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. 
+The Content ad distribution is no longer supported in Bing Ads, and the *Content Bid*, *Content Network*, and *Search Network* fields of an [Ad Group](~/bulk-service/ad-group.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. 
+
+Likewise the *Campaign Type* value of the corresponding [Campaign](~/bulk-service/campaign.md) is updated from *SearchAndContent* to *Search*. 
 
 #### <a name="bulk-sunset-cpm"></a>Cpm Pricing Model
 The CPM pricing model is no longer supported in Bing Ads, and the *Pricing Model* field of an [Ad Group](~/bulk-service/ad-group.md) is removed from version 12. The *Pricing Model* field in version 11 was optional, defaulted to *Cpc*, and could only be set to *Cpc*. 
@@ -143,6 +145,8 @@ The values returned in the *MediaType* and *Type* elements of a [Media](~/campai
 
 #### <a name="campaign-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *AdDistribution* element of an [AdGroup](~/campaign-management-service/adgroup.md) is removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. 
+
+Likewise the [CampaignType](~/campaign-management-service/campaigntype.md) value is updated from *SearchAndContent* to *Search*. 
 
 #### <a name="campaign-sunset-cpm"></a>Cpm Pricing Model
 The CPM pricing model is no longer supported in Bing Ads, and the *PricingModel* element of an [AdGroup](~/campaign-management-service/adgroup.md) is removed from version 12. The *PricingModel* element in version 11 was optional, defaulted to *Cpc*, and could only be set to *Cpc*. 
