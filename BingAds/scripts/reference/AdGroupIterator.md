@@ -8,6 +8,10 @@ Example usage:
  }
 ```
 
+See also:
+- [AdGroupSelector.get()](./AdGroupSelector#get)
+- [AdGroup](./AdGroup)
+
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
