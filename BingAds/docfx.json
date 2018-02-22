@@ -126,11 +126,11 @@
     "dest": "BingAds",
     "groups": {
       "bingads-11": {
-        "dest": "bingads-11",
+        "dest": "bingads",
         "moniker_range": "= bingads-11"
       },
       "bingads-12": {
-        "dest": "bingads-12",
+        "dest": "bingads",
         "moniker_range": "= bingads-12"
       }
     }
