@@ -17,7 +17,7 @@ Provides utility methods for encoding/decoding data, formatting dates, manipulat
 [newBlob(String data, String contentType, String name)](#newblob~string-data_-string-contenttype_-string-name~)|[Blob](./Blob)|Creates a new blob object from the provided string, content type (can be null), and name.<br />
 [parseCsv(String csv)](#parsecsv~string-csv~)|String[][]|Returns a 2D string array parsed from the specified CSV string.<br />
 [parseCsv(String csv, Char delimiter)](#parsecsv~string-csv_-char-delimiter~)|String[][]|Returns a 2D string array parsed from the specified CSV string and the custom delimiter character.<br />
-[Sleep(int milliseconds)](#sleep~int-milliseconds~)|void|Pauses the execution of the script for the specified number of milliseconds. The maximum allowed value for the argument is 300000 (or 5 minutes).<br />
+[Sleep(int milliseconds)](#sleep~int-milliseconds~)|void|Pauses the execution of the script for the specified number of milliseconds.
 [unzip(Blob blob)](#unzip~blob-blob~)|[Blob[]](./Blob)|Decompresses and returns the component files contained within the blob representing a zip file. <br />
 [zip(Blob[] blobs)](#zip~blob-blobs~)|[Blob](./Blob)|Compresses the files in the blob array and returns a blob representing a zip file.<br />
 [zip(Blob[] blobs, String name)](#zip~blob-blobs_-string-name~)|[Blob](./Blob)|Compresses the files in the blob array and returns a blob representing a zip file with the name specified in the second argument.<br />
@@ -128,7 +128,10 @@ Returns a 2D string array parsed from the specified CSV string and the custom de
 String[][]|
 &nbsp;|&nbsp;
 ## <a name="sleep~int-milliseconds~"></a>Sleep(int milliseconds)
-Pauses the execution of the script for the specified number of milliseconds. The maximum allowed value for the argument is 300000 (or 5 minutes).
+Pauses the execution of the script for the specified number of milliseconds.
+
+ The maximum allowed value for the argument is 300000 (or 5 minutes).
+
 
 ### Returns:
 |Type|Description|

@@ -71,6 +71,11 @@ Object|The custom parameters of the keyword as a map of the following form: {key
 ## <a name="getfinalurl"></a>getFinalUrl
 Returns the final URL of this keyword.
 
+
+The final URL represents the actual landing page for your ad. The final URL must be the URL of the page that the user ends up on after clicking on your ad, once all the redirects have taken place.
+
+Final URLs follow the same override rules as destination URLs. For example, a final URL at the keyword level overrides a final URL at an ad level.
+
 ### Returns:
 |Type|Description|
 |-|-
@@ -78,6 +83,11 @@ String|The final URL of the keyword.
 &nbsp;|&nbsp;
 ## <a name="getmobilefinalurl"></a>getMobileFinalUrl
 Returns the mobile final URL of this keyword. 
+
+
+The mobile final URL represents the actual landing page for your ad on a mobile device. The final mobile URL must be the URL of the page that the user ends up on after clicking on your ad on a mobile device, once all the redirects have taken place.
+
+Mobile final URLs follow the same override rules as destination URLs. For example, a mobile final URL at the keyword level overrides a mobile final URL at an ad level.
 
 ### Returns:
 |Type|Description|
@@ -123,6 +133,12 @@ void|
 ## <a name="setfinalurl~string-finalurl~"></a>setFinalUrl(String finalUrl)
 Sets the final URL of this keyword.
 
+
+The final URL represents the actual landing page for your ad. The final URL must be the URL of the page that the user ends up on after clicking on your ad, once all the redirects have taken place.
+
+Final URLs follow the same override rules as destination URLs. For example, a final URL at the keyword level overrides a final URL at an ad level.
+
+
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
@@ -136,6 +152,11 @@ void|
 ## <a name="setmobilefinalurl~string-mobilefinalurl~"></a>setMobileFinalUrl(String mobileFinalUrl)
 Sets the mobile final URL of this keyword. 
 
+
+The mobile final URL represents the actual landing page for your ad on a mobile device. The final mobile URL must be the URL of the page that the user ends up on after clicking on your ad on a mobile device, once all the redirects have taken place.
+
+Mobile final URLs follow the same override rules as destination URLs. For example, a mobile final URL at the keyword level overrides a mobile final URL at an ad level.
+
 ### Arguments:
 |Name|Type|Description|
 |-|-|-
@@ -148,6 +169,11 @@ void|
 &nbsp;|&nbsp;
 ## <a name="settrackingtemplate~string-trackingtemplate~"></a>setTrackingTemplate(String trackingTemplate)
 Sets the tracking template of this keyword.
+
+
+You can optionally use the tracking template to specify additional tracking parameters or redirects. Bing Ads will use this template to assemble the actual destination URL to associate with the ad.
+
+A tracking template specified at a lower level entity will override the setting specified at a higher level entity, for example, a tracking template at the ad group level overrides the setting at the campaign level.
 
 ### Arguments:
 |Name|Type|Description|
