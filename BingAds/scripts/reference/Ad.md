@@ -1,5 +1,6 @@
 # Ad
 Represents an ad.
+
 Example usage:
 ```javascript
  var stats = ad.getStatsFor("THIS_MONTH");
@@ -14,7 +15,7 @@ Example usage:
 [getApprovalStatus](#getapprovalstatus)|String|Returns the approval status of the ad.
 [getCampaign](#getcampaign)|[Campaign](./Campaign)|Returns the parent campaign of this ad.<br />
 [getDisapprovalReasons](#getdisapprovalreasons)|String[]|Returns the reasons for why the ad was disapproved.
-[getDisplayUrl](#getdisplayurl)|String|Returns the display URL of this ad. This value could be null for some types of ads.<br />
+[getDisplayUrl](#getdisplayurl)|String|Returns the display URL of this ad.
 [getEntityType](#getentitytype)|String|Returns the type of entity of this ad.
 [getHeadline](#getheadline)|String|Returns the headline (title) of this ad.
 [getId](#getid)|long|Returns the ID of this ad.
@@ -86,12 +87,15 @@ If it is not disapproved, the array will be empty.
 String[]|The reasons for why the ad was disapproved.
 &nbsp;|&nbsp;
 ## <a name="getdisplayurl"></a>getDisplayUrl
-Returns the display URL of this ad. This value could be null for some types of ads.
+Returns the display URL of this ad.
+
+May return null for some types of ads.
+
 
 ### Returns:
 |Type|Description|
 |-|-
-String|The display URL of the ad.
+String|The display URL of the ad or null.
 &nbsp;|&nbsp;
 ## <a name="getentitytype"></a>getEntityType
 Returns the type of entity of this ad.
