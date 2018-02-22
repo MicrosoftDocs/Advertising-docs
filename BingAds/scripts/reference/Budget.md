@@ -1,6 +1,5 @@
 # Budget
-Represents a budget in the Bing Ads system.
-
+Represents a budget.
 Example usage:
 ```javascript
  var stats = budget.getStatsFor("THIS_MONTH");

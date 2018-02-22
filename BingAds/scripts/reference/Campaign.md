@@ -1,5 +1,5 @@
 # Campaign
-Represents a campaign in the Bing Ads system.
+Represents a campaign.
 
 # Methods
 |Method Name|Return Type|Description|
