@@ -107,7 +107,7 @@ To specify match type for the new keyword:
 
 - `keywordBuilder.withText("books")` - broad match.
 - `keywordBuilder.withText("\"books\"")` - phrase match.
-- `keywordBuilder.withText("[hardcover books]") - exact match.
+- `keywordBuilder.withText("[hardcover books]")` - exact match.
 
 
 ### Arguments:

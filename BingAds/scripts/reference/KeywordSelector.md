@@ -16,7 +16,7 @@ Provides methods to select keywords by using filtering and sorting.
 ## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
 Returns a selector using the specified predefined date range.
 
-Supported values for the date range are: 
+Supported date range values:
 
 - TODAY
 - YESTERDAY
@@ -28,6 +28,13 @@ Supported values for the date range are:
 - THIS_MONTH
 - LAST_MONTH
 - ALL_TIME
+
+Example:
+```
+selector.forDateRange("LAST_7_DAYS");
+```
+
+Date range must be specified if the selector has conditions or ordering for metrics statistics applied.  Only the last date range specified will be used.
 
 
 ### Arguments:
