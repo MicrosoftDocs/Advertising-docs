@@ -36,6 +36,9 @@ void|
 ## <a name="cleartrackingtemplate"></a>clearTrackingTemplate
 Clears the tracking template of this keyword.
 
+
+If you clear the tracking template specified at a lower level entity (for example, a keyword), and you have also specified tracking template on a higher level entity, (for example, the parent ad group), then Bing Ads will use the tracking template specified at the higher level entity (the ad group level tracking template will be used). To completely clear the tracking template, it must be cleared at all levels of the hierarchy at which it was set.
+
 ### Returns:
 |Type|Description|
 |-|-
