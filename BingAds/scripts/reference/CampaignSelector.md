@@ -1,6 +1,25 @@
 # CampaignSelector
 Provides methods to select campaigns by using filtering and sorting.
 
+Example usage:
+```javascript
+ var campaignSelector = BingAdsApp
+     .campaigns()
+     .withCondition("Impressions > 100")
+     .forDateRange("LAST_MONTH")
+     .orderBy("Clicks DESC");
+
+ var campaignIterator = campaignSelector.get();
+ while (campaignIterator.hasNext()) {
+   var campaign = campaignIterator.next();
+ }
+```
+
+See also:
+- [CampaignIterator](./CampaignIterator)
+- [Campaign](./Campaign)
+
+
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-

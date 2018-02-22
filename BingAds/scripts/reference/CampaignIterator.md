@@ -8,6 +8,10 @@ Example usage:
  }
 ```
 
+See also:
+- [CampaignSelector.get()](./CampaignSelector#get)
+- [Campaign](./Campaign)
+
 # Methods
 |Method Name|Return Type|Description|
 |-|-|-
