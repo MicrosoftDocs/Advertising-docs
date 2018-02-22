@@ -163,8 +163,8 @@
         "moniker_range": "= bingads-12"
       },
       "guides": {
-        "dest": "bingads",
-        "moniker_range": "= bingads-12"
+        "dest": "bingads/guides",
+        "moniker_range": "=bingads-11 || =bingads-12"
       }
     }
   }
