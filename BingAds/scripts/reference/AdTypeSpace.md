@@ -1,5 +1,6 @@
 # AdTypeSpace
-Provides information about the type of an ad. 
+Provides information about the type of an ad.
+
 Example usage:
 ```javascript
  if (ad.isType().expandedTextAd()) {
