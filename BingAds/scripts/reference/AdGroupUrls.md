@@ -24,7 +24,8 @@ Returns the custom parameters of this ad group.
 ### Returns:
 |Type|Description|
 |-|-
-Object|The custom parameters of the ad group as a map of the following form: {key1: 'value1', key2: 'value2', key3: 'value3'}.
+Object|The custom parameters of the ad group as a map of the
+form: `{key1: 'value1', key2: 'value2', key3: 'value3'}`.
 &nbsp;|&nbsp;
 ## <a name="gettrackingtemplate"></a>getTrackingTemplate
 Returns the tracking template of this ad group.
