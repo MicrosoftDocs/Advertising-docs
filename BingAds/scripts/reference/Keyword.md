@@ -1,6 +1,5 @@
 # Keyword
-Represents a keyword in the Bing Ads system.
-
+Represents a keyword.
 Example usage:
 ```javascript
  var stats = keyword.getStatsFor("THIS_MONTH");
@@ -18,7 +17,7 @@ Example usage:
 [getEntityType](#getentitytype)|String|Returns the entity type of this keyword, which is "Keyword".<br />
 [getFirstPageCpc](#getfirstpagecpc)|double|Returns the estimated first page bid for this keyword.<br />
 [getId](#getid)|long|Returns the ID of this keyword.<br />
-[getMatchType](#getmatchtype)|String|Returns the match type of this keyword. Supported values include:<br /> <br /> `BROAD`<br /> `PHRASE`<br /> `EXACT`<br /><br />
+[getMatchType](#getmatchtype)|String|Returns the match type of this keyword.<br />
 [getQualityScore](#getqualityscore)|int|Returns the quality score of this keyword, in the range 1…10.<br />
 [getStatsFor(String dateRange)](#getstatsfor~string-daterange~)|[Stats](./Stats)|Returns an object which provides statistics for the specified predefined date range.
 [getStatsFor(Object dateFrom, Object dateTo)](#getstatsfor~object-datefrom_-object-dateto~)|[Stats](./Stats)|Returns a [Stats](./Stats) object for this keyword for the specified date range.
@@ -112,7 +111,15 @@ Returns the ID of this keyword.
 long|The ID of the keyword.
 &nbsp;|&nbsp;
 ## <a name="getmatchtype"></a>getMatchType
-Returns the match type of this keyword. Supported values include:<br /> <br /> `BROAD`<br /> `PHRASE`<br /> `EXACT`<br />
+Returns the match type of this keyword.
+
+
+Possible values are:
+
+- BROAD
+- PHRASE
+- EXACT
+
 
 ### Returns:
 |Type|Description|
