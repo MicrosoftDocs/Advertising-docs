@@ -174,12 +174,12 @@ Ctr|double|`withCondition("Ctr > 0.01"). Ctr is returned in 0..1 range, so 5% Ct
 Impressions|long|`withCondition("Impressions != 0")`|Impr.
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 <strong>Campaign attributes</strong>|
-Status|Enumeration:<br />&nbsp;`ENABLED`<br />&nbsp;`PAUSED`<br />&nbsp;`REMOVED`<br />&nbsp;`BUDGET_PAUSED`<br />&nbsp;`BUDGET_AND_USER_PAUSED`|`withCondition("Status = PAUSED")`|Campaign status
+Status|Enumeration:<br />&nbsp;ENABLED<br />&nbsp;PAUSED<br />&nbsp;REMOVED<br />&nbsp;BUDGET_PAUSED<br />&nbsp;BUDGET_AND_USER_PAUSED|`withCondition("Status = PAUSED")`|Campaign status
 Name|String|`withCondition("Name CONTAINS_IGNORE_CASE 'promotion'")`|Campaign name
 Budget|double|`withCondition("Budget > 10.0")`|Budget
-Type|Enumeration:<br />&nbsp;`SEARCH_AND_CONTENT`<br />&nbsp;`SHOPPING`<br />&nbsp;`DYNAMIC_SEARCH_ADS`|`withCondition("Type = 'SEARCH_AND_CONTENT'")`|Bing-specific filter
-BudgetType|Enumeration:<br />&nbsp;`STANDARD`<br />&nbsp;`ACCELERATED`|`withCondition("BudgetType = 'ACCELERATED'")`|Bing-specific filter
-DeliveryStatus|Enumeration:<br />&nbsp;`ELIGIBLE`<br />&nbsp;`LIMITED_BY_BUDGET`<br />&nbsp;`HOLD`<br />&nbsp;`CAMPAIGN_OUT_OF_BUDGET`<br />&nbsp;`CAMPAIGN_SUSPENDED`<br />&nbsp;`CAMPAIGN_PAUSED`|`withCondition("DeliveryStatus NOT IN ['LIMITED_BY_BUDGET', 'HOLD', 'CAMPAIGN_OUT_OF_BUDGET']")`|Bing-specific filter
+Type|Enumeration:<br />&nbsp;SEARCH_AND_CONTENT<br />&nbsp;SHOPPING<br />&nbsp;DYNAMIC_SEARCH_ADS|`withCondition("Type = 'SEARCH_AND_CONTENT'")`|Bing-specific filter
+BudgetType|Enumeration:<br />&nbsp;STANDARD<br />&nbsp;ACCELERATED|`withCondition("BudgetType = 'ACCELERATED'")`|Bing-specific filter
+DeliveryStatus|Enumeration:<br />&nbsp;ELIGIBLE<br />&nbsp;LIMITED_BY_BUDGET<br />&nbsp;HOLD<br />&nbsp;CAMPAIGN_OUT_OF_BUDGET<br />&nbsp;CAMPAIGN_SUSPENDED<br />&nbsp;CAMPAIGN_PAUSED|`withCondition("DeliveryStatus NOT IN ['LIMITED_BY_BUDGET', 'HOLD', 'CAMPAIGN_OUT_OF_BUDGET']")`|Bing-specific filter
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 
 
