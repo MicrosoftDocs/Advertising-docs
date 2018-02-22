@@ -20,6 +20,12 @@ Provides access to the URLs for this keyword.
 ## <a name="clearfinalurl"></a>clearFinalUrl
 Clears the final URL of this keyword.
 
+
+If the final URL is cleared at the keyword level the final URL of the associated ad is used instead.
+
+Ensure that any tracking template or final mobile URL is cleared prior to clearing the final URL because attempting to clear the final URL will fail if final mobile URL or tracking template are set on this keyword.
+
+
 ### Returns:
 |Type|Description|
 |-|-
@@ -27,6 +33,10 @@ void|
 &nbsp;|&nbsp;
 ## <a name="clearmobilefinalurl"></a>clearMobileFinalUrl
 Clears the mobile final URL of this keyword. 
+
+
+If the mobile final URL is cleared the final URL will be used instead.
+
 
 ### Returns:
 |Type|Description|
