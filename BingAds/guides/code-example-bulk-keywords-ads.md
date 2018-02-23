@@ -20,4 +20,4 @@ This example demonstrates how to setup ads and keywords for a search advertising
 [!code-python[Main](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/bulk_keywords_ads.py)]
 
 ## See Also
-[Get Started with the Bing Ads API](../guides/get-started.md)  
+[Get Started with the Bing Ads API](/bingads/guides/get-started.md)  

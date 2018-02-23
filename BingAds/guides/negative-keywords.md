@@ -17,11 +17,11 @@ For more information on when to use negative keywords see the Bing Ads help arti
 
 You can [assign negative keywords](#assignednegativekeywords) to an individual campaign or ad group. If you specify negative keywords at both campaign and ad group levels, both sets of negative keywords will be in effect for the corresponding ad group. Negative keywords can also be added and deleted from a [shared negative keyword list](#sharednegativekeywordlists). The negative keyword list can be shared or associated with multiple campaigns. The negative keyword lists associated with a campaign are also effectively applied to all ad groups in the campaign. For example all negative keywords shown in the diagram below are applied to the Fall Sale ad group either directly or through inheritance from the campaign level associations. For other ad groups (not pictured) within the Shoe Sales campaign, the negative keywords sandals, thongs, flip flops, slides would not be in effect, unless those ad group also have the same negative keywords at ad group level.
 
-![Two ways to add negative keywords](../guides/media/negative-keywords-structured.png "Two ways to add negative keywords")
+![Two ways to add negative keywords](/bingads/guides/media/negative-keywords-structured.png "Two ways to add negative keywords")
 
-For negative keyword limits per entity, please see [Negative Keywords](../guides/entity-hierarchy-limits.md#negativekeywords).
+For negative keyword limits per entity, please see [Negative Keywords](/bingads/guides/entity-hierarchy-limits.md#negativekeywords).
 
-For code examples that show how to associate negative keywords and negative keyword lists with a campaign using the Campaign Management service, see [Negative Keywords Code Example](../guides/code-example-negative-keywords.md).
+For code examples that show how to associate negative keywords and negative keyword lists with a campaign using the Campaign Management service, see [Negative Keywords Code Example](/bingads/guides/code-example-negative-keywords.md).
 
 ## <a name="assignednegativekeywords"></a>Assigned Negative Keywords
 You may choose to assign a set of negative keywords to an individual campaign or ad group. An assigned set of negative keywords cannot be shared with other campaigns or ad groups. You can manage an assigned set of negative keywords with the [AddNegativeKeywordsToEntities](~/campaign-management-service/addnegativekeywordstoentities.md), [DeleteNegativeKeywordsFromEntities](~/campaign-management-service/deletenegativekeywordsfromentities.md), and [GetNegativeKeywordsByEntityIds](~/campaign-management-service/getnegativekeywordsbyentityids.md) operations.
@@ -46,5 +46,5 @@ To associate a negative keyword list with a campaign, specify an array of [Share
 The reporting service provides a negative-keyword conflict report that lists the negative keywords that you also specify as keywords. Specifying a negative keyword that is also a keyword negates the keyword. For more information, see the [NegativeKeywordConflictReportRequest](~/reporting-service/negativekeywordconflictreportrequest.md) request.
 
 ## See Also
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)
+[Bing Ads Web Service Addresses](/bingads/guides/web-service-addresses.md)
 

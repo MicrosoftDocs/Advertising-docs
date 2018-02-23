@@ -23,7 +23,7 @@ To create a Bing Shopping campaign, follow these steps.
 After you complete these steps, you can follow the steps to [Create a Bing Shopping Campaign with the Campaign Management Service](#bingshopping-campaignservice).
 
 ## <a name="bingshopping-bulkservice"></a>Create a Bing Shopping Campaign with the Bulk Service
-The [Bulk Service](~/bulk-service/bulk-service-reference.md) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema]((~/bulk-service/bulk-file-schema.md) and [Bulk Download and Upload](../guides/bulk-download-upload.md).
+The [Bulk Service](~/bulk-service/bulk-service-reference.md) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema]((~/bulk-service/bulk-file-schema.md) and [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 These are the Bing Shopping entities that can be accessed using the [Bulk Service](~/bulk-service/bulk-service-reference.md).
 
@@ -34,7 +34,7 @@ These are the Bing Shopping entities that can be accessed using the [Bulk Servic
 -   [Product Ad](~/bulk-service/product-ad.md)
 
 > [!TIP]
-> For code examples that show how to apply product conditions for Bing Shopping campaigns using the Bulk service, see [Bulk Shopping Campaigns Example](../guides/code-example-bulk-shopping-campaigns.md).
+> For code examples that show how to apply product conditions for Bing Shopping campaigns using the Bulk service, see [Bulk Shopping Campaigns Example](/bingads/guides/code-example-bulk-shopping-campaigns.md).
 
 To create a Bing Shopping campaign, follow these steps.
 
@@ -107,7 +107,7 @@ After you complete these steps, the delivery engine can begin serving product ad
 To create a Bing Shopping campaign with the Campaign Management API, follow these steps.
 
 > [!TIP]
-> For code examples that show how to apply product conditions for Bing Shopping campaigns using the Campaign Management service, see [Shopping Campaigns Example](../guides/code-example-shopping-campaigns.md).
+> For code examples that show how to apply product conditions for Bing Shopping campaigns using the Campaign Management service, see [Shopping Campaigns Example](/bingads/guides/code-example-shopping-campaigns.md).
 
 1.  Create one or more Bing Shopping campaigns.
 
@@ -213,7 +213,7 @@ If you request a report using account level scope, then the performance reports 
     </Campaigns>
 </Scope>
 ```
-For more information about using the [Reporting Service](~/reporting-service/reporting-service-reference.md), see [Reports](../guides/reports.md) and [Request and Download a Report](../guides/request-download-report.md).
+For more information about using the [Reporting Service](~/reporting-service/reporting-service-reference.md), see [Reports](/bingads/guides/reports.md) and [Request and Download a Report](/bingads/guides/request-download-report.md).
 
 When you download entities with the [Bulk Service](~/bulk-service/bulk-service-reference.md), if the [DataScope](~/bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include performance statistics for most of the record types listed in [Create a Bing Shopping Campaign with the Bulk Service](#bingshopping-bulkservice). The tree root [Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md) record contains performance statistics for the entire tree, the [Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md) record corresponding to each subdivision contains the performance statistics of all leaf nodes under it, and the [Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md) record corresponding to each unit contains performance statistics only for that specific node.
 

@@ -29,7 +29,7 @@ For a *Campaign Negative Location Criterion* record, the following attribute fie
 - [Sub Type](#subtype)
 - [Target](#target)
 
-You can download all fields of the *Campaign Negative Location Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Campaign Negative Location Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new campaign negative location criterion if a valid campaign identifier (*Parent Id*) is provided. 
 
@@ -39,7 +39,7 @@ Format Version,,,,,,,,,,5,,,,,,,,
 Campaign Negative Location Criterion,,,-111,PostalCode,,ClientIdGoesHere,,79381,,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignNegativeLocationCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](/bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignNegativeLocationCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -152,7 +152,7 @@ Possible values are *City*, *Country*, *MetroArea*, *PostalCode*, and *State*.
 **Delete:** Read-only  
 
 ### <a name="target"></a>Target
-The identifier of the location that you do not want to target. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](../guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md).
+The identifier of the location that you do not want to target. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](/bingads/guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md).
 
 **Add:** Required  
 **Update:** Required  

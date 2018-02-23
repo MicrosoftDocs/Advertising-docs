@@ -14,7 +14,7 @@ Defines an expanded text ad that can be downloaded and uploaded in a bulk file.
 This ad format works seamlessly on mobile, tablet and desktop devices so you can focus more on crafting your longer ad copy and optimizing your ad text to better engage your customers before they click your ad.
 
 > [!NOTE]
-> Before you can use expanded text ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
+> Before you can use expanded text ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](/bingads/guides/url-tracking-upgraded-urls.md).
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Expanded Text Ad* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
@@ -43,7 +43,7 @@ For an *Expanded Text Ad* record, the following attribute fields are available i
 - [Title Part 2](#titlepart2)
 - [Tracking Template](#trackingtemplate)
 
-You can download all fields of the *Expanded Text Ad* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *ExpandedTextAds* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Expanded Text Ad* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *ExpandedTextAds* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new expanded text ad given a valid ad group ID (*Parent Id*). 
 
@@ -53,7 +53,7 @@ Format Version,,,,,,,,,,,,,,5,,,,,,,,,,
 Expanded Text Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,,,,,False,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,Contoso,Quick & Easy Setup,seattle,shoe sale
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkExpandedTextAd* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](/bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkExpandedTextAd* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -210,7 +210,7 @@ The component or property of the ad that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](/bingads/guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -322,7 +322,7 @@ This bulk field maps to the *Id* field of the [Ad Group](../bulk-service/ad-grou
 ### <a name="path1"></a>Path 1
 The first part of the optional path that will be appended to the domain portion of your display URL. The domain portion of your display URL e.g. *http://www.contoso.com* will be generated from the domain of your Final URL (*Final Url* field).  Then if you have specified a value for *Path 1* it will be appended to the display URL. If you have also specified a value for *Path 2*, then it will also be appended to the display URL after *Path 1*. For example if your *Final Url* contains *http://www.contoso.com*, *Path 1* is set to *subdirectory1*, and *Path 2* is set to *subdirectory2*, then the URL displayed will be *http://www.contoso.com/subdirectory1/subdirectory2*.
 
-The path can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
+The path can contain a countdown function. For more details see [Countdown Functions](/bingads/guides/expanded-text-ads.md#countdown). 
 
 The path can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
 
@@ -344,7 +344,7 @@ The second part of the optional path that will be appended to the domain portion
 
 You can only specify *Path 2* if *Path 1* is also set.
 
-The path can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
+The path can contain a countdown function. For more details see [Countdown Functions](/bingads/guides/expanded-text-ads.md#countdown). 
 	
 The path can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
 
@@ -384,7 +384,7 @@ The ad copy.
 
 The text must contain at least one word.
 
-The text can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
+The text can contain a countdown function. For more details see [Countdown Functions](/bingads/guides/expanded-text-ads.md#countdown). 
 
 The text can contain dynamic text strings such as {keyword}. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](http://help.bingads.microsoft.com/#apex/3/en/50811/1).
 
@@ -402,7 +402,7 @@ The text cannot contain the newline (\n) character.
 ### <a name="titlepart1"></a>Title Part 1
 The first part of the ad title. The *Title Part 1* and *Title Part 2* values will be automatically separated by a space, dash, and space (" - ") when the ad is shown, and you may not specify the dash in either of the title parts. Each part of the title must contain at least one word. 
 
-The title can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
+The title can contain a countdown function. For more details see [Countdown Functions](/bingads/guides/expanded-text-ads.md#countdown). 
 
 The title can contain dynamic text strings such as {keyword}. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](http://help.bingads.microsoft.com/#apex/3/en/50811/1).
 
@@ -420,7 +420,7 @@ The title cannot contain the newline (\n) character.
 ### <a name="titlepart2"></a>Title Part 2
 The second part of the ad title. The *Title Part 1* and *Title Part 2* values will be automatically separated by a space, dash, and space (" - ") when the ad is shown, and you may not specify the dash in either of the title parts. Each part of the title must contain at least one word.
 
-The title can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
+The title can contain a countdown function. For more details see [Countdown Functions](/bingads/guides/expanded-text-ads.md#countdown). 
 
 The title can contain dynamic text strings such as {keyword}. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](http://help.bingads.microsoft.com/#apex/3/en/50811/1).
     
@@ -440,7 +440,7 @@ The tracking template to use as a default for the URL specified with FinalUrls.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
+- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits.md).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 

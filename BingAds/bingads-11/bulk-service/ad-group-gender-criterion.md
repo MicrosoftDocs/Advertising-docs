@@ -30,7 +30,7 @@ For an *Ad Group Gender Criterion* record, the following attribute fields are av
 - [Status](#status)
 - [Target](#target)
 
-You can download all fields of the *Ad Group Gender Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group Gender Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new ad group gender criterion if a valid ad group identifier (*Parent Id*) is provided. 
 
@@ -40,7 +40,7 @@ Format Version,,,,,,,,,,,5,,,,,,,,,
 Ad Group Gender Criterion,Active,,-1111,,,,ClientIdGoesHere,,Female,20,,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupGenderCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](/bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupGenderCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();

@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 # Walkthrough: Bing Ads Web Application in C# #
-The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](../guides/get-started.md#get-developer-token). 
+The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](/bingads/guides/authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](/bingads/guides/get-started.md#get-developer-token). 
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
@@ -21,7 +21,7 @@ The example web application sends authentication requests to the Microsoft accou
 
 3.  Select the **MVC** project template and click **OK**.
 
-4.  Within the BingAdsWebApp project, install the SDK through NuGet. For more information, see [Installing the SDK](../guides/get-started-csharp.md#installation).
+4.  Within the BingAdsWebApp project, install the SDK through NuGet. For more information, see [Installing the SDK](/bingads/guides/get-started-csharp.md#installation).
 
 5.  Within the **Views** -&gt; **Home** folder of the BingAdsWebApp project, open the Index.cshtml file and replace its contents with the following code block. This defines the web page view that displays results of the service calls that will be written further below.
 
@@ -47,7 +47,7 @@ The example web application sends authentication requests to the Microsoft accou
     <p><b style="color: red">@ViewBag.CampaignErrors</b></p>
     ```
 
-6. Within the **Controllers** folder of the BingAdsWebApp project, open the HomeController.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](../guides/get-started.md#get-developer-token). 
+6. Within the **Controllers** folder of the BingAdsWebApp project, open the HomeController.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](/bingads/guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](/bingads/guides/get-started.md#get-developer-token). 
 
     ```csharp
     using System;
@@ -409,7 +409,7 @@ Set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* nod
 Optionally you should remove any unused local variables that had been used for OAuth in production.
 
 ## See Also
-[Sandbox](../guides/sandbox.md)  
-[Bing Ads Code Examples](../guides/code-examples.md)  
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
+[Sandbox](/bingads/guides/sandbox.md)  
+[Bing Ads Code Examples](/bingads/guides/code-examples.md)  
+[Bing Ads Web Service Addresses](/bingads/guides/web-service-addresses.md)  
 

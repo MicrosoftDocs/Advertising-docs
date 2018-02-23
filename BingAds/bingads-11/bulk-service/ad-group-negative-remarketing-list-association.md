@@ -12,7 +12,7 @@ dev_langs:
 Defines an Ad Group Negative Remarketing List Association that can be uploaded and downloaded in a bulk file. 
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](/bingads/guides/universal-event-tracking.md) technical guide.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Ad Group Negative Remarketing List Association* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
@@ -27,7 +27,7 @@ For an *Ad Group Negative Remarketing List Association* record, the following at
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Ad Group Negative Remarketing List Association* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupNegativeRemarketingListAssociations* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group Negative Remarketing List Association* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupNegativeRemarketingListAssociations* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Ad Group Negative Remarketing List Association given a valid ad group ID (*Parent Id*). 
 
@@ -37,7 +37,7 @@ Format Version,,,,,,,,,5,,,
 Ad Group Negative Remarketing List Association,Paused,,-1111,,,ClientIdGoesHere,,,,RemarketingListIdHere,My Remarketing List,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupNegativeRemarketingListAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](/bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupNegativeRemarketingListAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp

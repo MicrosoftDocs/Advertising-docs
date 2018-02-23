@@ -10,13 +10,13 @@ description: Track finances and measure ad performance to optimize your budget o
 The Reporting service contains the operations that you use to submit report requests and poll for their status. The reports provide detailed statistics about Bing Ads accounts, campaigns, and ad groups. The information can help you track finances, measure ad performance, and adjust settings to optimize your budget or campaign. For example, you can use the keyword performance report to see which keywords are performing well and those that are not.
 
 ## Reporting Service Overview
-When submitting a report request, you choose the [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md) to determine the contents of the report. For example, you may want to include impressions, clicks, and click-through rate. The report uses the column names as the column headers. The report includes the columns in the same order that you include them in the *Columns* element of the report request. For information about how columns affect data output, see [Columns that Group the Data](#columnsdata) below. For information about restrictions on column combinations in the same report request, see [Column Restrictions](#columnrestrictions) below.
+When submitting a report request, you choose the [Report Attributes and Performance Statistics](/bingads/guides/report-attributes-performance-statistics.md) to determine the contents of the report. For example, you may want to include impressions, clicks, and click-through rate. The report uses the column names as the column headers. The report includes the columns in the same order that you include them in the *Columns* element of the report request. For information about how columns affect data output, see [Columns that Group the Data](#columnsdata) below. For information about restrictions on column combinations in the same report request, see [Column Restrictions](#columnrestrictions) below.
 
 You will also specify the report parameters that restrict or limit the returned data set. For example, you can set the aggregation level to group the data by day or month; specify the time period of the data to include in the report by using specific dates or predefined date ranges, such as today or the last seven days; specify the scope of the data by identifying the accounts, campaigns, and ad groups to include in the report; and set filter criteria to filter the report data. For information about time periods that you can specify for each aggregation value, see [Aggregation and Time](#aggregation-time) below.
 
-For a list of reports that you can request, see [Report Types](../guides/report-types.md). For a complete list of report parameters that you can set, see each report request object and the [ReportRequest](~/reporting-service/reportrequest.md) base object.
+For a list of reports that you can request, see [Report Types](/bingads/guides/report-types.md). For a complete list of report parameters that you can set, see each report request object and the [ReportRequest](~/reporting-service/reportrequest.md) base object.
 
-For information about how to request and download a report, see [Request and Download a Report](../guides/request-download-report.md)When the report completes successfully, you can download the report from the URL that the service returns. The report file is compressed, so you must unzip the file to read the report. There is no limit to the number of reports that the system can store; however, the length of time that the reports are stored is undefined. The service does not check for duplicate report requests.
+For information about how to request and download a report, see [Request and Download a Report](/bingads/guides/request-download-report.md)When the report completes successfully, you can download the report from the URL that the service returns. The report file is compressed, so you must unzip the file to read the report. There is no limit to the number of reports that the system can store; however, the length of time that the reports are stored is undefined. The service does not check for duplicate report requests.
 
 For information about how the campaign's time zone affects the time period that you specify, see [Time Zones in Reporting](#reptimezones) below.
 
@@ -93,7 +93,7 @@ If you then include the *DeviceType* column, the report will contain a row for e
 "@2017 Microsoft Corporation. All rights reserved. "
 ```
 
-For more information about each type of available columns, see [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).
+For more information about each type of available columns, see [Report Attributes and Performance Statistics](/bingads/guides/report-attributes-performance-statistics.md).
 
 The *TimePeriod* attribute is required for most reports, so you should also consider that specifying a more granular aggregation period, for example monthly in the report request's *Aggregation* element, would further break down the click data by month. For example, the report would then contain a row for each unique combination of keyword, device, and month. The row is included only for months that contain clicks.
 
@@ -175,8 +175,8 @@ If you request a report that includes campaigns that span multiple time zones, t
 Each report request includes the *ReturnOnlyCompleteData* element that you can set to specify whether you want the service to generate the report only if all the data has been processed and is available based on the aggregation, scope, and time period values that you specify. If **true**, the request fails if the system has not finished processing all the data based on your criteria. However, if **false**, the request succeeds but the report will contain only the data that the system has finished processing at the time of the request, and there is no indication as to whether the data is complete. The default value is **false**.
 
 ## See Also
-[Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md)  
-[Report Types](../guides/report-types.md)  
-[Request and Download a Report](../guides/request-download-report.md)  
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
+[Report Attributes and Performance Statistics](/bingads/guides/report-attributes-performance-statistics.md)  
+[Report Types](/bingads/guides/report-types.md)  
+[Request and Download a Report](/bingads/guides/request-download-report.md)  
+[Bing Ads Web Service Addresses](/bingads/guides/web-service-addresses.md)  
 

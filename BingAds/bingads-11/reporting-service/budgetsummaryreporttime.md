@@ -10,7 +10,7 @@ description: Defines the date range values of a budget summary report request.
 Defines the date range values of a budget summary report request.
 
 > [!NOTE]
-> The *CustomDateRangeStart* and *CustomDateRangeEnd* elements versus the *PredefinedTime* element are mutually exclusive. For information about how the time zone of the campaign affects the date range that you specify, see [Time Zones in Reporting](../guides/reports.md#reptimezones).
+> The *CustomDateRangeStart* and *CustomDateRangeEnd* elements versus the *PredefinedTime* element are mutually exclusive. For information about how the time zone of the campaign affects the date range that you specify, see [Time Zones in Reporting](/bingads/guides/reports.md#reptimezones).
 
 ## Syntax
 ```xml

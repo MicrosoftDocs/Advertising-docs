@@ -9,7 +9,7 @@ description: Bing Ads provides an API sandbox environment where you can test you
 # Bing Ads Sandbox
 Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served.
 
-Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](../guides/web-service-addresses.md).
+Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](/bingads/guides/web-service-addresses.md).
 
 > [!NOTE]
 > Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. Notifications are posted in the [Bing Ads Developer Blog](https://blogs.msdn.microsoft.com/bing_ads_api/).
@@ -22,7 +22,7 @@ When you sign up for an account, append _sbx to the username that you choose, fo
 All Bing Ads customers may use the following universal developer token in sandbox: **BBD37VB98**
 
 > [!NOTE]
-> Authentication with a Microsoft Account is not supported in sandbox. You can test your sandbox application with the *UserName* and *Password* legacy header elements, and then with the *AuthenticationToken* element verify authentication of a Microsoft account via OAuth in production. For more information, see [Authentication with OAuth](../guides/authentication-oauth.md).
+> Authentication with a Microsoft Account is not supported in sandbox. You can test your sandbox application with the *UserName* and *Password* legacy header elements, and then with the *AuthenticationToken* element verify authentication of a Microsoft account via OAuth in production. For more information, see [Authentication with OAuth](/bingads/guides/authentication-oauth.md).
 
 ## <a name="bestpractices"></a>Sandbox Best Practices
 Sandbox should not be used in the same capacity as production.
@@ -78,7 +78,7 @@ Ad Insight service operations differ from production, and limitations are descri
 |[SuggestKeywordsFromExistingKeywords](~/ad-insight-service/suggestkeywordsfromexistingkeywords.md)|If the SuggestionType is set to 1, there should be no difference in behavior compared to production.<br /><br />For suggestion type values 2, 3, and 4, the results are limited to the set of keywords provided in sandbox. For more information, see [Supported Keywords](#supportedkeywords).|
 
 ## <a name="bulk"></a>Bulk Service
-The file size limit for upload in production is 100MB or 2.5 million rows. For sandbox the limit is 20K rows. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+The file size limit for upload in production is 100MB or 2.5 million rows. For sandbox the limit is 20K rows. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 ## <a name="campaign"></a>Campaign Management Service
 

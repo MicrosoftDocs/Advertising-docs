@@ -12,15 +12,15 @@ dev_langs:
 This tutorial describes how to get started running a Bing Ads desktop console application using Python. You will create a new project in Visual Studio, set up a virtual environment, and run the application in a console. By the end of this tutorial you will have a desktop console application that will authenticate your Microsoft account user credentials and add a new campaign to your Bing Ads account. Using a Microsoft account requires that you interact with a web browser control (UI) at least once to give initial consent. If you modify the example (described below) you may choose to [Save and use the refresh token](#saverefreshtoken) and use it repetitively without user input in your console application.
 
 ## <a name="requirements"></a>Prerequisites
-To follow this tutorial path, you will develop your application on Windows using [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). If you are using another operating system or development environment, you can browse this guide for context and then see [Get Started Using Python with Bing Ads Services](../guides/get-started-python.md) for an overview of the Python SDK.
+To follow this tutorial path, you will develop your application on Windows using [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). If you are using another operating system or development environment, you can browse this guide for context and then see [Get Started Using Python with Bing Ads Services](/bingads/guides/get-started-python.md) for an overview of the Python SDK.
 
 You will need to install either Python 2.7 or 3.4 in your development environment.
 
-You will need to [install](../guides/get-started-python.md#installation) the [Bing Ads Python SDK](../guides/client-libraries.md), and this tutorial will walk you through the installation.
+You will need to [install](/bingads/guides/get-started-python.md#installation) the [Bing Ads Python SDK](/bingads/guides/client-libraries.md), and this tutorial will walk you through the installation.
 
-You will need at least one user with Bing Ads credentials including either a Microsoft account (recommended) or the Bing Ads legacy *UserName* and *Password* set, and a [developer token](../guides/get-started.md#get-developer-token). 
+You will need at least one user with Bing Ads credentials including either a Microsoft account (recommended) or the Bing Ads legacy *UserName* and *Password* set, and a [developer token](/bingads/guides/get-started.md#get-developer-token). 
 
-To use the OAuth 2.0 features of this web application, you will need to [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID. You'll need to register a native app (not web) for this example.
+To use the OAuth 2.0 features of this web application, you will need to [register an application](/bingads/guides/authentication-oauth.md#registerapplication) and take note of the client ID. You'll need to register a native app (not web) for this example.
 
 ## Create new Python Application
 After you have installed [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/), go to **File** -&gt; **New** -&gt; **Project** -&gt; **Templates** -&gt; **Other Languages** -&gt; **Python**, and select **Python Application** from the list of Python templates.
@@ -36,7 +36,7 @@ We'll create a virtual environment for local development. In your project right-
 
 -   Make sure the option to **Download and install packages** is checked.
 
-![Add virtual env](../guides/media/pythonsdk-ptvs-addvirtualenv.png "Add virtual env")
+![Add virtual env](/bingads/guides/media/pythonsdk-ptvs-addvirtualenv.png "Add virtual env")
 
 > [!NOTE]
 > For more information about Python virtual environments, see [PEP 405 - Python Virtual Environments](https://www.python.org/dev/peps/pep-0405/).
@@ -45,7 +45,7 @@ We'll create a virtual environment for local development. In your project right-
 Under **Python Environments** right-click your virtual environment, for example **Python 2.7** and select **Install Python Package**. Using **pip**, specify **bingads** as the name of the package to install, and then click **OK**.
 
 ## Add example code
-Edit the Python file that was provided when you created the project, for example **ConsoleGettingStarted.py**. Replace its contents with the following example. You must edit the sample below with the ClientId that was provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](../guides/get-started.md#get-developer-token). For more information, see [Prerequisites](#requirements).
+Edit the Python file that was provided when you created the project, for example **ConsoleGettingStarted.py**. Replace its contents with the following example. You must edit the sample below with the ClientId that was provisioned when you [registered your application](/bingads/guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](/bingads/guides/get-started.md#get-developer-token). For more information, see [Prerequisites](#requirements).
 
 ```python
 from bingads.service_client import ServiceClient
@@ -460,5 +460,5 @@ authorization_data.authentication.token_refreshed_callback=save_refresh_token
 ```
 
 ## See Also
-[Get Started Using Python with Bing Ads Services](../guides/get-started-python.md)  
+[Get Started Using Python with Bing Ads Services](/bingads/guides/get-started-python.md)  
 

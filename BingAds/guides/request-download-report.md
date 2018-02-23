@@ -14,13 +14,13 @@ dev_langs:
 # Request and Download a Report
 The following procedure outlines the steps to submit a report request and to download the report.
 
-If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../guides/client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](~/reporting-service/submitgeneratereport.md#request) and [PollGenerateReportRequest](~/reporting-service/pollgeneratereport.md#request) to download a report, you can use one method with the [Reporting Service Manager](../guides/sdk-reporting-service-manager.md). 
+If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](/bingads/guides/client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](~/reporting-service/submitgeneratereport.md#request) and [PollGenerateReportRequest](~/reporting-service/pollgeneratereport.md#request) to download a report, you can use one method with the [Reporting Service Manager](/bingads/guides/sdk-reporting-service-manager.md). 
 
-For code examples that demonstrate how to download reports, see [Report Requests Code Example](../guides/code-example-report-requests.md).
+For code examples that demonstrate how to download reports, see [Report Requests Code Example](/bingads/guides/code-example-report-requests.md).
 
 ## Request a Report
 
-1.  Determine the report that you want to request. For a list of reports that you can request, see [Report Types](../guides/report-types.md).
+1.  Determine the report that you want to request. For a list of reports that you can request, see [Report Types](/bingads/guides/report-types.md).
 
 2.  Create an instance of the report request object. Some of the elements of the report request are required and some are optional. Set the elements as appropriate for your application. The elements of the report request determine, among others, the scope of data to include in the report, the columns of data to include in the report, and whether to generate the report only if all the data is available.
 

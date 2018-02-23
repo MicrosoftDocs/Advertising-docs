@@ -19,16 +19,16 @@ Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. Th
 <a name="authenticatingcredentials"/> 
 ## Authenticating your credentials
 
-The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Managing User Authentication with OAuth](../guides/authentication-oauth.md). 
+The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Managing User Authentication with OAuth](/bingads/guides/authentication-oauth.md). 
 
-You *can* use the [Bing Ads SDK](../guides/client-libraries.md) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](../guides/get-started-csharp.md) | [Java](../guides/get-started-java.md) | [Python](../guides/get-started-python.md). (You should only use the SDK to get the access token if you're using the SDK for Bing ad campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
+You *can* use the [Bing Ads SDK](/bingads/guides/client-libraries.md) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](/bingads/guides/get-started-csharp.md) | [Java](/bingads/guides/get-started-java.md) | [Python](/bingads/guides/get-started-python.md). (You should only use the SDK to get the access token if you're using the SDK for Bing ad campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
 
 If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md) for an example OAuth implementation.
 
 > [!NOTE]
 > If you use the API from a service, you must write a simple app to get the refresh token for a user that has permissions to access the hotel data. You will call the app you write once just to get the refresh token. After getting the refresh token, store it in secure storage that's accessible by your service. 
 >
-> Follow the steps outlined in [Managing User Authentication with OAuth](../guides/authentication-oauth.md) for getting the client ID for your app and for implementing the code grant flow. For an example of a simple console app that you use to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md).
+> Follow the steps outlined in [Managing User Authentication with OAuth](/bingads/guides/authentication-oauth.md) for getting the client ID for your app and for implementing the code grant flow. For an example of a simple console app that you use to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md).
 >
 > After getting the initial refresh token, the following shows the basic calling sequence that you'll make to get the access token that you set the Authorization header to.
 >
@@ -51,7 +51,7 @@ If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Examp
 
 You cannot use the Bing Ads SDK in the sandbox environment to get the access token. For sandbox, you can either clone the SDK Git repository and update the endpoints accordingly, or write your own AOuth implementation.
 
-For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Managing User Authentication with OAuth](../guides/authentication-oauth.md), substitute them with the following SI endpoints.
+For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Managing User Authentication with OAuth](/bingads/guides/authentication-oauth.md), substitute them with the following SI endpoints.
 
  - partner.api.sandbox.bingads.microsoft.com&mdash;Endpoint for Bing Ads sandbox
  - account.microsoft-int.com&mdash;Endpoint for getting a sandbox Microsoft account 

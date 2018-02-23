@@ -9,7 +9,7 @@ description: Describes the schema for records in a Bulk file.
 # Bulk File Schema
 The bulk schema defines the contents of the file for download or upload with the Bing Ads Bulk service. For both download and upload, the Bulk service supports the file types and corresponding schemas in the [DownloadEntity](../bulk-service/downloadentity.md) value set.
 
-For more information about using the Bulk service to manage your campaigns, see [Bulk Download and Upload](../guides/bulk-download-upload.md). For more information about understanding the data file contents, see the sections below.
+For more information about using the Bulk service to manage your campaigns, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md). For more information about understanding the data file contents, see the sections below.
 
 -   [File Schema](#fileschema)  
 -   [Format Versions](#formatversions)  
@@ -236,5 +236,5 @@ For example if you attempt to set the *Promotion* for *Product Ad* to www.bing.c
 |Type|Promotion|Editorial Location|Editorial Term|Editorial Reason Code|Error|Error Number|
 |--------|-------------|----------------------|------------------|-------------------------|---------|----------------|
 |Product Ad Error|www.bing.com|AdDescription|bing|17|CampaignServiceEditorialValidationError|1042|
-For more information, see [Bing Ads Operation Error Codes](../guides/operation-error-codes.md) and [Bing Ads Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md).
+For more information, see [Bing Ads Operation Error Codes](/bingads/guides/operation-error-codes.md) and [Bing Ads Editorial Failure Reason Codes](/bingads/guides/editorial-failure-reason-codes.md).
 

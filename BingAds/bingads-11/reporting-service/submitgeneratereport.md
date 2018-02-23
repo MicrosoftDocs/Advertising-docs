@@ -24,7 +24,7 @@ The *SubmitGenerateReportRequest* object defines the [body](#request-body) and [
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="reportrequest"></a>ReportRequest|The report request. The request must be an object that derives from [ReportRequest](../reporting-service/reportrequest.md). For a list of report request types, see [Report Types](../guides/report-types.md).|[ReportRequest](reportrequest.md)|
+|<a name="reportrequest"></a>ReportRequest|The report request. The request must be an object that derives from [ReportRequest](../reporting-service/reportrequest.md). For a list of report request types, see [Report Types](/bingads/guides/report-types.md).|[ReportRequest](reportrequest.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -1438,7 +1438,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](/bingads/guides/client-libraries.md). See [Bing Ads Code Examples](/bingads/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<SubmitGenerateReportResponse> SubmitGenerateReportAsync(
 	ReportRequest reportRequest)

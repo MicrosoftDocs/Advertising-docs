@@ -26,7 +26,7 @@ Defines a bid.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="amount"></a>Amount|The bid value. For details about the valid bid range for your market, see [Currencies](../guides/currencies.md).|**double**|
+|<a name="amount"></a>Amount|The bid value. For details about the valid bid range for your market, see [Currencies](/bingads/guides/currencies.md).|**double**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

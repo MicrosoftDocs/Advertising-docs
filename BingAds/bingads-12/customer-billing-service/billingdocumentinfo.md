@@ -36,7 +36,7 @@ Defines a billing document identification object that contains information about
 |<a name="accountname"></a>AccountName|The account name.|**string**|
 |<a name="accountnumber"></a>AccountNumber|The account number.|**string**|
 |<a name="amount"></a>Amount|The amount of the billing document.|**double**|
-|<a name="currencycode"></a>CurrencyCode|The currency of the billing document. For possible values, see [Currencies](../guides/currencies.md).|**string**|
+|<a name="currencycode"></a>CurrencyCode|The currency of the billing document. For possible values, see [Currencies](/bingads/guides/currencies.md).|**string**|
 |<a name="documentdate"></a>DocumentDate|The date of the billing document.|**dateTime**|
 |<a name="documentid"></a>DocumentId|An identifier of the billing document.|**long**|
 

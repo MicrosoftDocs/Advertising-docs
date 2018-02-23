@@ -12,7 +12,7 @@ Defines an ad group level product partition with one condition that helps determ
 The *ProductPartition* criterion can be included within [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) and [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md). Also note that campaign level [ProductScope](../campaign-management-service/productscope.md) can be added to [BiddableCampaignCriterion](../campaign-management-service/biddablecampaigncriterion.md). Duplicate or conflicting product conditions attempted within an ad group's product partition group will be rejected by the [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md) operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level [ProductScope](../campaign-management-service/productscope.md).
 
 > [!TIP]
-> For an implementation overview, see the [Bing Shopping Campaigns](../guides/product-ads.md) technical guide.
+> For an implementation overview, see the [Bing Shopping Campaigns](/bingads/guides/product-ads.md) technical guide.
 
 ## Syntax
 ```xml

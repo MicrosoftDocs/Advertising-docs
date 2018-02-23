@@ -20,7 +20,7 @@ For a *Product Ad Label* record, the following attribute fields are available in
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Product Ad Label* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *ProductAdLabels* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Product Ad Label* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *ProductAdLabels* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would apply a label to a product ad if the valid *Id* and *Parent Id* are provided. 
 
@@ -30,7 +30,7 @@ Format Version,,,,,,,,5,,,
 Product Ad Label,,-22,-11112,,,ClientIdGoesHere,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkProductAdLabel* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](/bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkProductAdLabel* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp

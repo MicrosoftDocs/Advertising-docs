@@ -30,7 +30,7 @@ Defines the fixed bid to use in the auction.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="amount"></a>Amount|The bid value. For details about the valid bid range for your market, see [Currencies](../guides/currencies.md).<br/><br/>**Add:** Required<br/>**Update:** Optional|**double**|
+|<a name="amount"></a>Amount|The bid value. For details about the valid bid range for your market, see [Currencies](/bingads/guides/currencies.md).<br/><br/>**Add:** Required<br/>**Update:** Optional|**double**|
 
 The [FixedBid](fixedbid.md) object has [Inherited Elements](#inheritedelements).
 

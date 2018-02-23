@@ -45,7 +45,7 @@ For a *Location Ad Extension* record, the following attribute fields are availab
 - [Use Searcher Time Zone](#usesearchertimezone)
 - [Version](#version)
 
-You can download all fields of the *Location Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *LocationAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Location Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *LocationAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Location Ad Extension to the account's shared library. 
 
@@ -55,7 +55,7 @@ Format Version,,,,,,,,,,,,,5,,,,,,,,,,,
 Location Ad Extension,Active,-15,0,,,ClientIdGoesHere,,,12/31/2018,Contoso Shoes,206-555-0100,,,(Monday[09:00-21:00]),FALSE,1234 Washington Place,Suite 1210,98608,Woodinville,,WA,0,0,US
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkLocationAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](/bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkLocationAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -220,7 +220,7 @@ Used to associate records in the bulk upload file with records in the results fi
 ### <a name="countrycode"></a>Country Code
 The country where the street address is located. 
 
-The country code must contain a 2 character country code. For a list of possible country codes that you can specify, see [Ad Languages](../guides/ad-languages.md).
+The country code must contain a 2 character country code. For a list of possible country codes that you can specify, see [Ad Languages](/bingads/guides/ad-languages.md).
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -234,7 +234,7 @@ The component or property of the ad extension that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](/bingads/guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  

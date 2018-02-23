@@ -14,7 +14,7 @@ description: Defines a remarketing list.
 Defines a remarketing list.
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](/bingads/guides/universal-event-tracking.md) technical guide.
 
 ## Syntax
 ```xml

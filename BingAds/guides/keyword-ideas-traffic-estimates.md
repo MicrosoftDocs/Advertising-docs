@@ -9,7 +9,7 @@ description: Get keyword ideas and traffic estimates.
 # Keyword Ideas and Traffic Estimates
 Choosing keywords is one of the most important aspects of creating and maintaining a successful advertising campaign. But where to start? How do you identify the many possible keywords that describe your business? How much should you bid on those keywords to be competitive with other advertisers?
 
-This guide describes how you can discover [keyword ideas](#keywordideas) and [traffic estimates](#keywordtrafficestimates) for your search advertising campaigns with the the [Ad Insight](~/ad-insight-service/ad-insight-service-reference.md) service. The results are similar to using the Keyword Planner tool in the Bing Ads web application. For additional keyword research, campaign budget opportunities, and ad group bid opportunities, see [Bid and Budget Opportunities](../guides/budget-bid-opportunities.md). 
+This guide describes how you can discover [keyword ideas](#keywordideas) and [traffic estimates](#keywordtrafficestimates) for your search advertising campaigns with the the [Ad Insight](~/ad-insight-service/ad-insight-service-reference.md) service. The results are similar to using the Keyword Planner tool in the Bing Ads web application. For additional keyword research, campaign budget opportunities, and ad group bid opportunities, see [Bid and Budget Opportunities](/bingads/guides/budget-bid-opportunities.md). 
 
 > [!NOTE]
 > Keyword Planner features are currently available to customers in the United States, United Kingdom, Canada, Australia, France, and Germany.
@@ -19,7 +19,7 @@ Given a list of existing keywords, the [GetKeywordIdeas](~/ad-insight-service/ge
 
 With the Bing Ads web application's Keyword Planner tool you search for new keywords using a phrase, website, or category as shown in the screen shot below.
  
-![GetKeywordIdeas to Keyword Planner UI](../guides/media/getkeywordideas-keyword-planner-ui.png "GetKeywordIdeas to Keyword Planner UI")
+![GetKeywordIdeas to Keyword Planner UI](/bingads/guides/media/getkeywordideas-keyword-planner-ui.png "GetKeywordIdeas to Keyword Planner UI")
 
 Likewise with the [GetKeywordIdeas](~/ad-insight-service/getkeywordideas.md) operation you must specify one or more of the corresponding search parameters.
 -  The [QuerySearchParameter](~/ad-insight-service/querysearchparameter.md) corresponds to filling in *Product or service*.
@@ -37,7 +37,7 @@ Once you have already settled on an initial set of keywords, the [GetKeywordTraf
 
 With the Bing Ads web application's Keyword Planner tool under *Get performance and cost estimates* you are prompted to either enter keywords or upload a file with keywords. The [GetKeywordTrafficEstimates](~/ad-insight-service/getkeywordtrafficestimates.md) operation requires that you already have a list of keywords e.g., retrieved via the [GetKeywordIdeas](~/ad-insight-service/getkeywordideas.md) operation. 
 
-![GetKeywordTrafficEstimates to Keyword Planner UI](../guides/media/getkeywordtrafficestimates-keyword-planner-ui.png "GetKeywordTrafficEstimates to Keyword Planner UI")
+![GetKeywordTrafficEstimates to Keyword Planner UI](/bingads/guides/media/getkeywordtrafficestimates-keyword-planner-ui.png "GetKeywordTrafficEstimates to Keyword Planner UI")
 
 The following inputs are required for the [GetKeywordTrafficEstimates](~/ad-insight-service/getkeywordtrafficestimates.md) operation.
 -  In the *Criteria* element of the [CampaignEstimator](~/ad-insight-service/campaignestimator.md) object you must specify all of these criteria: [LanguageCriterion](~/ad-insight-service/languagecriterion.md), [LocationCriterion](~/ad-insight-service/locationcriterion.md), and [NetworkCriterion](~/ad-insight-service/networkcriterion.md).
@@ -54,4 +54,4 @@ The result is a [KeywordEstimate](~/ad-insight-service/keywordestimate.md) list 
 
 ## See Also
 [Ad Insight Service Reference](~/ad-insight-service/ad-insight-service-reference.md)  
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
+[Bing Ads Web Service Addresses](/bingads/guides/web-service-addresses.md)  

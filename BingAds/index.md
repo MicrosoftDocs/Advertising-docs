@@ -20,7 +20,7 @@ description: Bing Ads API documentation home.
                     <a href="#bingapi">Bing Ads API</a>
                     <ul id="bingapi" class="cardsC">
                         <li>
-                            <a href="/bingads/guides/">
+                            <a href="/binga/bingads/guides/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -39,7 +39,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/get-started">
+                            <a href="/binga/bingads/guides/get-started">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -58,7 +58,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/authentication-oauth">
+                            <a href="/binga/bingads/guides/authentication-oauth">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -77,7 +77,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/customer-accounts">
+                            <a href="/binga/bingads/guides/customer-accounts">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -96,7 +96,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/campaigns">
+                            <a href="/binga/bingads/guides/campaigns">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -115,7 +115,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/reports">
+                            <a href="/binga/bingads/guides/reports">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -134,7 +134,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/sandbox">
+                            <a href="/binga/bingads/guides/sandbox">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -153,7 +153,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/client-libraries">
+                            <a href="/binga/bingads/guides/client-libraries">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -172,7 +172,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/guides/reference">
+                            <a href="/binga/bingads/guides/reference">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

@@ -14,4 +14,4 @@ This example demonstrates how to add labels and associate them with campaigns, a
 [!code-csharp[Main](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/Labels.cs)]
 
 ## See Also
-[Get Started with the Bing Ads API](../guides/get-started.md)  
+[Get Started with the Bing Ads API](/bingads/guides/get-started.md)  

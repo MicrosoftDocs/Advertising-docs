@@ -28,7 +28,7 @@ For an *Ad Group Negative Site* record, the following attribute fields are avail
 - [Status](#status)
 - [Website](#website)
 
-You can download all fields of the *Ad Group Negative Site* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupNegativeSites* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group Negative Site* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupNegativeSites* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new ad group negative site given a valid ad group ID (*Parent Id*). 
 
@@ -38,7 +38,7 @@ Format Version,,,,,,,,,5
 Ad Group Negative Site,Active,,-1111,,,contoso.com,ClientIdGoesHere,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupNegativeSite* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](/bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupNegativeSite* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp

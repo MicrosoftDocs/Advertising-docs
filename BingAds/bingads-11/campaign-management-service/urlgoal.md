@@ -10,7 +10,7 @@ description: Defines a URL conversion goal.
 Defines a URL conversion goal. Use this type of goal to count every time someone visits a web page as a conversion. For example you can count a conversion if someone visits the purchase confirmation page.  
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](/bingads/guides/universal-event-tracking.md) technical guide.
 
 > [!IMPORTANT]
 > Every time you create a new [DurationGoal](../campaign-management-service/durationgoal.md), [EventGoal](../campaign-management-service/eventgoal.md), [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md), [PagesViewedPerVisitGoal](../campaign-management-service/pagesviewedpervisitgoal.md) or [UrlGoal](../campaign-management-service/urlgoal.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](../campaign-management-service/accountproperty.md) is set to *True* automatically. If the Scope of the goal is set to *Customer* level, then the [AccountProperty](../campaign-management-service/accountproperty.md) for all accounts under the Customer will be set. 

@@ -9,7 +9,7 @@ description: Reference documentation for service operation error codes.
 # Operation Error Codes
 Bing Ads service operations may return error codes depending on the context. The list provided below includes error codes across all Bing Ads services. For information about error codes per service operation, see the reference page for each operation.
 
-For more information about error handling and troubleshooting, see [Handling Service Errors and Exceptions](../guides/handle-service-errors-exceptions.md).
+For more information about error handling and troubleshooting, see [Handling Service Errors and Exceptions](/bingads/guides/handle-service-errors-exceptions.md).
 
 ## <a name="error-codes"><a/>Error Codes
 In the list below, the **Numeric Code** and **Symbolic Error Code** headers correspond to the respective *Code* and *ErrorCode* elements of the returned error data object.
@@ -98,7 +98,7 @@ The account identifier is invalid.
 AuthenticationTokenExpired
 
 **Description**
-Authentication token expired. Please renew it or obtain a new token. For more information, see [Authentication with OAuth](../guides/authentication-oauth.md).
+Authentication token expired. Please renew it or obtain a new token. For more information, see [Authentication with OAuth](/bingads/guides/authentication-oauth.md).
 
 ***
 
@@ -850,7 +850,7 @@ The negative website URLs exceeded maximum allowed limit.
 CampaignServiceTimeZoneValueInvalid
 
 **Description**
-The time zone value is not valid. See [Time Zones](../guides/time-zones.md) for list of valid time zone values.
+The time zone value is not valid. See [Time Zones](/bingads/guides/time-zones.md) for list of valid time zone values.
 
 ***
 
@@ -1018,7 +1018,7 @@ CampaignServiceEditorialValidationError
 The specified entity did not pass editorial validation. Please see the *ReasonCode* element of this error object for details.
 
 > [!NOTE] 
-> For a list of editorial reason codes, see [Bing Ads Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md).
+> For a list of editorial reason codes, see [Bing Ads Editorial Failure Reason Codes](/bingads/guides/editorial-failure-reason-codes.md).
 
 ***
 

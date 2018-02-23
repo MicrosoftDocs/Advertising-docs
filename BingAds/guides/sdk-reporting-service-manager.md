@@ -315,7 +315,7 @@ print("Status: {0}\n".format(reporting_operation_status.status))
 ```
 
 ## See Also
-[Sandbox](../guides/sandbox.md)  
-[Bing Ads Code Examples](../guides/code-examples.md)    
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
+[Sandbox](/bingads/guides/sandbox.md)  
+[Bing Ads Code Examples](/bingads/guides/code-examples.md)    
+[Bing Ads Web Service Addresses](/bingads/guides/web-service-addresses.md)  
 

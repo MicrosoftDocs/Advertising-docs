@@ -11,7 +11,7 @@ dev_langs:
 # Ad Group Product Partition Record - Bulk
 Defines an ad group product partition that can be uploaded and downloaded in a bulk file.
 
-You can upload *Ad Group Product Partition* records for multiple ad groups in the same bulk file, as long as the validation rules are satisfied as described in [Create a Bing Shopping Campaign with the Bulk Service](../guides/product-ads.md#bingshopping-bulkservice). For example if you are creating or modifying the tree structure, parent product partition tree nodes must be ordered ahead of the child product partition tree nodes; however, the order does not matter for non-structural changes such as updating the bid. For example if you want to update the bids without adding, deleting, or updating the tree structure, then you only need to upload the *Id*, *Parent Id*, and *Bid* fields.   
+You can upload *Ad Group Product Partition* records for multiple ad groups in the same bulk file, as long as the validation rules are satisfied as described in [Create a Bing Shopping Campaign with the Bulk Service](/bingads/guides/product-ads.md#bingshopping-bulkservice). For example if you are creating or modifying the tree structure, parent product partition tree nodes must be ordered ahead of the child product partition tree nodes; however, the order does not matter for non-structural changes such as updating the bid. For example if you want to update the bids without adding, deleting, or updating the tree structure, then you only need to upload the *Id*, *Parent Id*, and *Bid* fields.   
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Ad Group Product Partition* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
@@ -33,7 +33,7 @@ For an *Ad Group Product Partition* record, the following attribute fields are a
 - [Sub Type](#subtype)
 - [Tracking Template](#trackingtemplate)
 
-You can download all fields of the *Ad Group Product Partition* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupProductPartitions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group Product Partition* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupProductPartitions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new ad group product partition given a valid ad group ID (*Parent Id*). 
 
@@ -43,7 +43,7 @@ Format Version,,,,,,,,,,5,,,,,,
 Ad Group Product Partition,Paused,,-1112,,,,ClientIdGoesHere,,0.5,,All,,FALSE,,,{_promoCode}=PROMO1; {_season}=summer
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupProductPartition* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](/bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupProductPartition* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -178,7 +178,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 ### <a name="destinationurl"></a>Destination Url
 The URL of the webpage that the user is taken to when they click the ad.
 
-If you are currently using Destination URLs, you must eventually replace them with Tracking Templates. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
+If you are currently using Destination URLs, you must eventually replace them with Tracking Templates. For more information, see [URL Tracking with Upgraded URLs](/bingads/guides/url-tracking-upgraded-urls.md).
 
 The URL can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
 
@@ -251,7 +251,7 @@ The condition’s attribute value.
 
 An attribute’s value must exactly match the value specified in the customer’s Bing Merchant Center catalog file.
 
-For available condition and value settings, see [Bing Shopping Product Conditions](../guides/product-ads.md#conditions).
+For available condition and value settings, see [Bing Shopping Product Conditions](/bingads/guides/product-ads.md#conditions).
 
 **Add:** Required  
 **Update:** Read-only. You cannot update the condition or value fields. To update the conditions you must delete the product partition and add a new one.    
@@ -280,7 +280,7 @@ The tracking templates can be used in tandem with the URL specified in the 'Link
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
+- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits.md).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 

@@ -10,7 +10,7 @@ description: Learn about error handling and troubleshooting your application.
 This article describes details on error handling and troubleshooting your application.
 
 ## <a name="faultoverview"></a>Fault Model Overview
-When a Bing Ads service operation fails, it will return a service fault e.g., the Customer Management service can return [ApiFault](~/customer-management-service/apifault.md). The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Bing Ads Operation Error Codes](../guides/operation-error-codes.md).
+When a Bing Ads service operation fails, it will return a service fault e.g., the Customer Management service can return [ApiFault](~/customer-management-service/apifault.md). The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Bing Ads Operation Error Codes](/bingads/guides/operation-error-codes.md).
 
 Available fault and data objects vary per service. This table describes the fault model and links to error data objects for each service.
 
@@ -30,7 +30,7 @@ Available fault and data objects vary per service. This table describes the faul
 Partial success means that when adding, updating, or deleting entities in batches of one or more, the operation may succeed for some and fail for part of the batch. 
 
 ### <a name="partial-success-bulk"></a>Partial Success With the Bulk Service
-When you [upload](../guides/bulk-download-upload.md) records in a [Bulk file](~/bulk-service/bulk-file-schema.md), the upload may succeed for some records and fail for others in the batch. When you call [GetBulkUploadUrl](~/bulk-service/getbulkuploadurl.md) you can choose whether or not to receive errors in the upload results file. 
+When you [upload](/bingads/guides/bulk-download-upload.md) records in a [Bulk file](~/bulk-service/bulk-file-schema.md), the upload may succeed for some records and fail for others in the batch. When you call [GetBulkUploadUrl](~/bulk-service/getbulkuploadurl.md) you can choose whether or not to receive errors in the upload results file. 
 
 ### <a name="partial-success-campaign-management"></a>Partial Success With the Campaign Management Service
 For most entities, partial success is supported when calling [Campaign Management](~/campaign-management-service/campaign-management-service-reference.md) service operations. For each list index where an entity was not added, the corresponding element will be null. The *PartialErrors* element represents an array of [BatchError](~/campaign-management-service/batcherror.md) objects that contain details for any entities that were not successfully added, updated, or deleted. The list only includes a [BatchError](~/campaign-management-service/batcherror.md) for unsuccessful attempts, and does not include null elements at the index of each successfully added entity. Similarly some operations return *NestedPartialErrors* as a list of [BatchErrorCollection](~/campaign-management-service/batcherrorcollection.md), or a two dimensional [BatchError](~/campaign-management-service/batcherror.md).
@@ -56,7 +56,7 @@ HTTP/1.1 500 Internal Server Error
 This is not in and of itself representative of an actionable code, and you should inspect the fault details for more information on the specific error.
 
 ## <a name="net-exceptions"><a/>.NET Exceptions
-If you use the Bing Ads .NET [SDK](../guides/client-libraries.md), your application should be prepared to handle Bing Ads API [service level exceptions](#faultoverview), [WCF exceptions](#net-wcf-exceptions), and [Bing Ads .NET SDK](#net-sdk-exceptions) exceptions described below. 
+If you use the Bing Ads .NET [SDK](/bingads/guides/client-libraries.md), your application should be prepared to handle Bing Ads API [service level exceptions](#faultoverview), [WCF exceptions](#net-wcf-exceptions), and [Bing Ads .NET SDK](#net-sdk-exceptions) exceptions described below. 
 
 For troubleshooting .NET applications, see [.NET SDK Troubleshooting](#net-troubleshooting).
 
@@ -98,7 +98,7 @@ You can follow these steps to capture the SOAP envelopes from a .NET application
  - Click **OK**, and then follow the prompts to export the Fiddler certificate. 
 
 ## <a name="java-exceptions"><a/>Java Exceptions
-If you use the Bing Ads Java [SDK](../guides/client-libraries.md), your application should be prepared to handle Bing Ads API [service level exceptions](#faultoverview) and [Bing Ads Java SDK](#java-sdk-exceptions) exceptions described below. 
+If you use the Bing Ads Java [SDK](/bingads/guides/client-libraries.md), your application should be prepared to handle Bing Ads API [service level exceptions](#faultoverview) and [Bing Ads Java SDK](#java-sdk-exceptions) exceptions described below. 
 
 For troubleshooting Java applications, see [Java SDK Troubleshooting](#java-troubleshooting).
 
@@ -153,7 +153,7 @@ When it is because the SOAP elements are invalid, out of order, or you specified
 #### <a name="java-troubleshooting-spring-cxf"></a>Spring Framework and Apache CXF Options
 You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/overview.html) and [Apache CXF](http://cxf.apache.org/docs/index.html) to capture the SOAP envelopes, for example if you are running a Maven application in Eclipse.
 
-1.  Set up the development environment as described in [Get Started Using Java with Bing Ads Services](../guides/get-started-java.md). 
+1.  Set up the development environment as described in [Get Started Using Java with Bing Ads Services](/bingads/guides/get-started-java.md). 
    
 2.  Edit pom.xml to include the *org.springframework* dependency. The following is a complete pom.xml example.
     ```xml
@@ -203,7 +203,7 @@ You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/sp
     ```
 
 ## <a name="php-exceptions"><a/>PHP Exceptions
-If you use the Bing Ads PHP [SDK](../guides/client-libraries.md), your application should be prepared to handle Bing Ads API [service level exceptions](#faultoverview) and [Bing Ads PHP SDK](#php-sdk-exceptions) exceptions described below. 
+If you use the Bing Ads PHP [SDK](/bingads/guides/client-libraries.md), your application should be prepared to handle Bing Ads API [service level exceptions](#faultoverview) and [Bing Ads PHP SDK](#php-sdk-exceptions) exceptions described below. 
 
 For troubleshooting PHP applications, see [PHP SDK Troubleshooting](#php-troubleshooting).
 
@@ -224,7 +224,7 @@ The Bing Ads PHP SDK exceptions abstract some of the service level exceptions. T
 You should also handle the *OAuthTokenRequestException*, which is thrown if an error was returned from the Microsft Account authorization server. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example you might have specified an invalid client ID. 
     
 ## <a name="python-exceptions"><a/>Python Exceptions
-If you use the Bing Ads Python [SDK](../guides/client-libraries.md), your application should be prepared to handle Bing Ads API [service level exceptions](#faultoverview) and [Bing Ads Python SDK](#python-sdk-exceptions) exceptions described below. 
+If you use the Bing Ads Python [SDK](/bingads/guides/client-libraries.md), your application should be prepared to handle Bing Ads API [service level exceptions](#faultoverview) and [Bing Ads Python SDK](#python-sdk-exceptions) exceptions described below. 
 
 For troubleshooting Python applications, see [Python SDK Troubleshooting](#python-troubleshooting).
 
@@ -270,6 +270,6 @@ To get help with issues that you cannot resolve, consider posting in the [API De
 > - **Environment**: Indicate whether the issue occurs in the production or sandbox environment.
 
 ## See Also
-[Bing Ads Operation Error Codes](../guides/operation-error-codes.md)  
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
+[Bing Ads Operation Error Codes](/bingads/guides/operation-error-codes.md)  
+[Bing Ads Web Service Addresses](/bingads/guides/web-service-addresses.md)  
 

@@ -35,7 +35,7 @@ For an *Campaign Product Scope* record, the following attribute fields are avail
 - [Product Value 7](#productvalue7)
 - [Status](#status)
 
-You can download all fields of the *Campaign Product Scope* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignProductScopes* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Campaign Product Scope* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignProductScopes* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new campaign product scope given a valid campaign ID (*Parent Id*). 
 
@@ -45,7 +45,7 @@ Format Version,,,,,,,,,,5,,,,,,,,,,,,,,,,,,
 Campaign Product Scope,Active,,-113,,,,ClientIdGoesHere,,,,Condition,New,CustomLabel0,MerchantDefinedCustomLabel,,,,,,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignProductScope* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](/bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignProductScope* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -187,7 +187,7 @@ The condition’s attribute value.
 
 An attribute’s value must exactly match the value specified in the customer’s Bing Merchant Center catalog file.
 
-For available condition and value settings, see [Bing Shopping Product Conditions](../guides/product-ads.md#conditions).
+For available condition and value settings, see [Bing Shopping Product Conditions](/bingads/guides/product-ads.md#conditions).
 
 **Add:** Required  
 **Update:** Read-only. You cannot update the condition or value fields. To update the conditions you must delete the product scope and add a new one.    
