@@ -478,7 +478,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-scripts-introduction.svg" alt="Introduction to Bing Ads Scripts" />
+                                                <img src="https://review.docs.microsoft.com/media/hubs/bingads/bing-ads-scripts-introduction.svg?branch=master" alt="Introduction to Bing Ads Scripts" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -516,7 +516,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-scripts-concepts.svg" alt="concepts" />
+                                                <img src="https://review.docs.microsoft.com/media/hubs/bingads/bing-ads-scripts-concepts.svg?branch=master" alt="concepts" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -573,7 +573,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-scripts-reference.svg" alt="Reference" />
+                                                <img src="https://review.docs.microsoft.com/media/hubs/bingads/bing-ads-scripts-reference.svg?branch=master" alt="Reference" />
                                             </div>
                                         </div>
                                         <div class="cardText">
