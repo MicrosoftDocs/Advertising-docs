@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Reference documentation for the Bing Ads Campaign Management API.
 ---
 # Campaign Management Service Reference
-The Campaign Management [service](~/guides/web-service-addresses.md) defines an Application Programming Interface (API) that you can use to manage your advertising campaigns.
+The Campaign Management [service](../guides/web-service-addresses.md) defines an Application Programming Interface (API) that you can use to manage your advertising campaigns.
 
 |Interface|Description|
 |---------|---------|
@@ -16,6 +16,6 @@ The Campaign Management [service](~/guides/web-service-addresses.md) defines an 
 |[Campaign Management Value Sets](campaign-management-value-sets.md)|Value sets include [CampaignType](campaigntype.md), [AdType](adtype.md), and [AdExtensionsTypeFilter](adextensionstypefilter.md). You'll also find value sets for supported budget type, editorial status, and more.|
 
 ## See Also
-[Get Started With the Bing Ads API](~/guides/get-started.md)  
-[Bing Ads Technical Guides](~/guides/technical-guides.md)  
-[Bing Ads Web Service Addresses](~/guides/web-service-addresses.md)  
+[Get Started With the Bing Ads API](../guides/get-started.md)  
+[Bing Ads Technical Guides](../guides/technical-guides.md)  
+[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  

@@ -11,7 +11,7 @@ description: Reference documentation for the Bing Ads Customer Management API.
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-The Customer Management [service](~/guides/web-service-addresses.md) defines an Application Programming Interface (API) that you use to manage customers, accounts, and users.
+The Customer Management [service](../guides/web-service-addresses.md) defines an Application Programming Interface (API) that you use to manage customers, accounts, and users.
 
 |Interface|Description|
 |---------|---------|
@@ -20,7 +20,7 @@ The Customer Management [service](~/guides/web-service-addresses.md) defines an 
 |[Customer Management Value Sets](customer-management-value-sets.md)|Value sets include [AccountLifeCycleStatus](accountlifecyclestatus.md), [ClientLinkStatus](clientlinkstatus.md), and [UserLifeCycleStatus](userlifecyclestatus.md). You'll also find value sets for supported currencies, user roles, and more.|
 
 ## See Also
-[Get Started With the Bing Ads API](~/guides/get-started.md)  
-[Bing Ads Technical Guides](~/guides/technical-guides.md)  
-[Bing Ads Web Service Addresses](~/guides/web-service-addresses.md)  
+[Get Started With the Bing Ads API](../guides/get-started.md)  
+[Bing Ads Technical Guides](../guides/technical-guides.md)  
+[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
 

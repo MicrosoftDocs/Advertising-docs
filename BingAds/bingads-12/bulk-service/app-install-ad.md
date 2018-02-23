@@ -14,7 +14,7 @@ Defines an app install ad that can be downloaded and uploaded in a bulk file. Cr
 > [!NOTE]
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
 >
-> Before you can use app install ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](~/guides/url-tracking-upgraded-urls.md).
+> Before you can use app install ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
 >
 > Bing Ads only supports *EN-US* apps.
 
@@ -43,7 +43,7 @@ For an *App Install Ad* record, the following attribute fields are available in 
 - [Title](#title)
 - [Tracking Template](#trackingtemplate)
 
-You can download all fields of the *App Install Ad* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AppInstallAds* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
+You can download all fields of the *App Install Ad* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AppInstallAds* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new app install ad given a valid ad group ID (*Parent Id*). 
 
@@ -53,7 +53,7 @@ Format Version,,,,,,,,,,,,,,5,,,,,,,,,,
 App Install Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,Contoso Quick Setup,Find New Customers & Increase Sales!,,,,All,,Android,AppStoreIdGoesHere,FinalUrlGoesHere,,,{_promoCode}=PROMO1; {_season}=summer,,,,
 ```
 
-If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAppInstallAd* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAppInstallAd* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -219,7 +219,7 @@ The component or property of the ad that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -336,7 +336,7 @@ The tracking template to use as a default for the URL specified with FinalUrls.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](~/guides/entity-hierarchy-limits.md).
+- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 

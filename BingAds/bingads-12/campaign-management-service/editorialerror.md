@@ -38,7 +38,7 @@ Defines an error object that identifies the entity with the batch of entities th
 |<a name="disapprovedtext"></a>DisapprovedText|The text that caused the entity to be disapproved.<br /><br />For text length violations, this element specifies the number of characters by which the specified text exceeds the maximum.|**string**|
 |<a name="location"></a>Location|The element or property of the entity that caused the entity to be disapproved.|**string**|
 |<a name="publishercountry"></a>PublisherCountry|The corresponding country or region for the flagged editorial issue.|**string**|
-|<a name="reasoncode"></a>ReasonCode|A numeric code that identifies the error. For more information, see [Editorial Failure Reason Codes](~/guides/editorial-failure-reason-codes.md).|**int**|
+|<a name="reasoncode"></a>ReasonCode|A numeric code that identifies the error. For more information, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md).|**int**|
 
 The [EditorialError](editorialerror.md) object has [Inherited Elements](#inheritedelements).
 

@@ -36,7 +36,7 @@ Format Version,,,,,5,,,,,
 Offline Conversion,,,,ClientIdGoesHere,,USD,My Goal Name,7/27/2017 6:50:54 PM,10,f894f652ea334e739002f7167ab8f8e3
 ```
 
-If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload the *BulkOfflineConversion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload the *BulkOfflineConversion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -87,7 +87,7 @@ Used to associate records in the bulk upload file with records in the results fi
 ### <a name="conversioncurrencycode"></a>Conversion Currency Code
 The currency code for the offline conversion.
 
-For more information, see [Currencies](~/guides/currencies.md).
+For more information, see [Currencies](../guides/currencies.md).
 
 **Add:** Optional. If you do not specify an offline conversion currency code, then the *CurrencyCode* element of the goal's [ConversionGoalRevenue](~/campaign-management-service/conversiongoalrevenue.md) is used.  
 

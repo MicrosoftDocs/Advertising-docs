@@ -10,7 +10,7 @@ description: Defines the possible time zones for the customer management service
 Defines the possible time zones for the customer management service.
 
 > [!NOTE]
-> The value set defines the full set of time zones. For more information, see [Time Zones](~/guides/time-zones.md).
+> The value set defines the full set of time zones. For more information, see [Time Zones](../guides/time-zones.md).
 
 ## Syntax
 ```xml

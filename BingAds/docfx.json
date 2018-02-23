@@ -155,16 +155,16 @@
     "dest": "bingads",
     "groups": {
       "bingads-11": {
-        "dest": "bingads",
+        "dest": "",
         "moniker_range": "= bingads-11"
       },
       "bingads-12": {
-        "dest": "bingads",
+        "dest": "",
         "moniker_range": "= bingads-12"
       },
       "guides": {
-        "dest": "bingads/guides",
-        "moniker_range": "=bingads-11 || =bingads-12"
+        "dest": "",
+        "moniker_range": "= bingads-12"
       }
     }
   }

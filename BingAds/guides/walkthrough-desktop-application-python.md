@@ -16,9 +16,9 @@ To follow this tutorial path, you will develop your application on Windows using
 
 You will need to install either Python 2.7 or 3.4 in your development environment.
 
-You will need to [install](~/guides/get-started-python.md#installation) the [Bing Ads Python SDK](~/guides/client-libraries.md), and this tutorial will walk you through the installation.
+You will need to [install](../guides/get-started-python.md#installation) the [Bing Ads Python SDK](../guides/client-libraries.md), and this tutorial will walk you through the installation.
 
-You will need at least one user with Bing Ads credentials including either a Microsoft account (recommended) or the Bing Ads legacy *UserName* and *Password* set, and a [developer token](~/guides/get-started.md#get-developer-token). 
+You will need at least one user with Bing Ads credentials including either a Microsoft account (recommended) or the Bing Ads legacy *UserName* and *Password* set, and a [developer token](../guides/get-started.md#get-developer-token). 
 
 To use the OAuth 2.0 features of this web application, you will need to [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID. You'll need to register a native app (not web) for this example.
 
@@ -45,7 +45,7 @@ We'll create a virtual environment for local development. In your project right-
 Under **Python Environments** right-click your virtual environment, for example **Python 2.7** and select **Install Python Package**. Using **pip**, specify **bingads** as the name of the package to install, and then click **OK**.
 
 ## Add example code
-Edit the Python file that was provided when you created the project, for example **ConsoleGettingStarted.py**. Replace its contents with the following example. You must edit the sample below with the ClientId that was provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](~/guides/get-started.md#get-developer-token). For more information, see [Prerequisites](#requirements).
+Edit the Python file that was provided when you created the project, for example **ConsoleGettingStarted.py**. Replace its contents with the following example. You must edit the sample below with the ClientId that was provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](../guides/get-started.md#get-developer-token). For more information, see [Prerequisites](#requirements).
 
 ```python
 from bingads.service_client import ServiceClient

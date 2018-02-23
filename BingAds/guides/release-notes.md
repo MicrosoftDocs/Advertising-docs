@@ -69,7 +69,7 @@ For information about this month's changes to Bing Ads services, see the followi
 ### <a name="sdk-september2017"></a>Bing Ads Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, PHP, and Python SDKs are updated with support for the following features. Unless otherwise noted the changes only apply to Bing Ads API version 11. Some objects are reserved for future use, so please refer to the service reference documentation for availability details.
 
-* The [Reporting]( ~/guides/release-notes.md#reporting-locations-august2017) service proxies are updated to support new columns for location targeting.  
+* The [Reporting]( ../guides/release-notes.md#reporting-locations-august2017) service proxies are updated to support new columns for location targeting.  
 * For the Bing Ads .NET SDK - Fixed the Bulk download DateTime parser for compatibility with localized time zone settings.  
 * For the Bing Ads Java SDK - Added an option to automatically delete the temporary bulk file used by BulkServiceManager for upload and download per the Github community [pull request](https://github.com/BingAds/BingAds-Java-SDK/issues/41). 
 * For the Bing Ads Java SDK - Implemented internal retry logic for creating a new service with the wsdl. 
@@ -85,10 +85,10 @@ For information about this month's changes to Bing Ads services, see the followi
 ### <a name="sdk-august2017"></a>Bing Ads Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, and Python SDKs are updated with support for the following features. Unless otherwise noted the changes only apply to Bing Ads API version 11. Some objects are reserved for future use, so please refer to the service reference documentation for availability details.
 
-* The [Campaign Management]( ~/guides/release-notes.md#inheritedbidstrategytype-july2017) service proxies are updated to support inherited bid strategy type.  
-* The [Reporting]( ~/guides/release-notes.md#reporting-bsc-july2017) service proxies are updated to support new columns for Bing Shopping campaigns.
-* New version 11 bulk labels objects are added i.e., *BulkLabel*, *BulkCampaignLabel*, *BulkAdGroupLabel*, *BulkKeywordLabel*, *BulkAppInstallAdLabel*, *BulkDynamicSearchAdLabel*, *BulkExpandedTextAdLabel*, *BulkProductAdLabel*, and *BulkTextAdLabel* objects are added to the SDK for reading and writing the corresponding [Bulk file records]( ~/guides/release-notes.md#bulk-v11-labels-july2017).
-* A new version 11 bulk offline conversion object is added i.e., the *BulkOfflineConversion* object is added to the SDK for writing and uploading the corresponding [Bulk file record]( ~/guides/release-notes.md#bulk-v11-offline-conversions-july2017).  
+* The [Campaign Management]( ../guides/release-notes.md#inheritedbidstrategytype-july2017) service proxies are updated to support inherited bid strategy type.  
+* The [Reporting]( ../guides/release-notes.md#reporting-bsc-july2017) service proxies are updated to support new columns for Bing Shopping campaigns.
+* New version 11 bulk labels objects are added i.e., *BulkLabel*, *BulkCampaignLabel*, *BulkAdGroupLabel*, *BulkKeywordLabel*, *BulkAppInstallAdLabel*, *BulkDynamicSearchAdLabel*, *BulkExpandedTextAdLabel*, *BulkProductAdLabel*, and *BulkTextAdLabel* objects are added to the SDK for reading and writing the corresponding [Bulk file records]( ../guides/release-notes.md#bulk-v11-labels-july2017).
+* A new version 11 bulk offline conversion object is added i.e., the *BulkOfflineConversion* object is added to the SDK for writing and uploading the corresponding [Bulk file record]( ../guides/release-notes.md#bulk-v11-offline-conversions-july2017).  
 * For the Bing Ads .NET SDK - Fixed the mapping for expired ad groups in the *BulkAdGroup* object. Previously if the ad group status in the bulk file was *Expired*, the SDK mapped and returned the value as *Deleted*. Prior to Bing Ads API version 10, expired ad groups were returned with a deleted status by design for backwards compatibility. 
 
 
@@ -109,7 +109,7 @@ For reference documentation, please see [CampaignNegativeSites](~/campaign-manag
 ### <a name="geo-locations-august2017"></a>Geographical Locations File Version 2.0 
 The [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md) operation now supports version 2.0. County location IDs are only available in version 2.0.
 
-For more details about the contents of each file version, see [Geographical Location Codes](~/guides/geographical-location-codes.md).
+For more details about the contents of each file version, see [Geographical Location Codes](../guides/geographical-location-codes.md).
 
 > [!IMPORTANT]
 > The locations file Version 1.0 is deprecated in favor of version 2.0. After October 31, 2017 version 1.0 will be sunset and only 2.0 will be supported. 
@@ -143,7 +143,7 @@ Once you have already settled on an initial set of keywords, the [GetKeywordTraf
 
 The result is a [KeywordEstimate](~/ad-insight-service/keywordestimate.md) list for each [AdGroupEstimate](~/ad-insight-service/adgroupestimate.md), which are all nested within one [CampaignEstimate](~/ad-insight-service/campaignestimate.md). Each keyword estimate includes a minimum and maximum [TrafficEstimate](~/ad-insight-service/trafficestimate.md). As previously mentioned, the traffic estimates for keywords include average CPC, average position, clicks, CTR, impressions, and total cost.
 
-For more details see the [Keyword Ideas and Traffic Estimates](~/guides/keyword-ideas-traffic-estimates.md) technical guide.
+For more details see the [Keyword Ideas and Traffic Estimates](../guides/keyword-ideas-traffic-estimates.md) technical guide.
 
 ### <a name="labels-july2017"></a>Labels
 Support for labels is added. Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.
@@ -222,11 +222,11 @@ The Bing Ads .NET, Java, and Python SDKs are updated with support for the follow
 * All BulkEntity derived SDK objects (except *BulkAdGroupProductPartition*) which previously contained the *AdGroupCriterion* or *CampaignCriterion* property are updated as either Biddable or Negative. Both the type and the name are updated e.g. *BulkAdGroupAgeCriterion* has property name *BiddableAdGroupCriterion* and data type *BiddableAdGroupCriterion*. The purpose is to be clear about the supported data type per bulk entity up front, rather than causing friction later i.e., runtime errors due to mismatch of BulkEntity to concrete criterion type. Several bulk entities were updated during the May 2017 release; and the remaining mappings are fixed with this release.
 
 #### <a name="sdk-non-breaking-changes-july2017"></a>Non Breaking Changes
-* The [Ad Insight]( ~/guides/release-notes.md#keyword-planner-july2017) service proxies are updated to support the keyword planner. 
-* The [Bulk]( ~/guides/release-notes.md#bulk-v11-labels-july2017) service proxies are updated to support labels.
-* The [Campaign Management]( ~/guides/release-notes.md#campaign-v11-labels-july2017) service proxies are updated to support labels.  
-* The [Bulk]( ~/guides/release-notes.md#bulk-v11-offline-conversions-july2017) service proxies are updated to support offline conversions.
-* The [Campaign Management]( ~/guides/release-notes.md#campaign-v11-offline-conversions-july2017) service proxies are updated to support offline conversions.  
+* The [Ad Insight]( ../guides/release-notes.md#keyword-planner-july2017) service proxies are updated to support the keyword planner. 
+* The [Bulk]( ../guides/release-notes.md#bulk-v11-labels-july2017) service proxies are updated to support labels.
+* The [Campaign Management]( ../guides/release-notes.md#campaign-v11-labels-july2017) service proxies are updated to support labels.  
+* The [Bulk]( ../guides/release-notes.md#bulk-v11-offline-conversions-july2017) service proxies are updated to support offline conversions.
+* The [Campaign Management]( ../guides/release-notes.md#campaign-v11-offline-conversions-july2017) service proxies are updated to support offline conversions.  
 * Support is added for Bulk entity mapping of multiple campaign languages i.e., updated mapping of the *Language* field in the Bulk file to the *BulkCampaign* and *BulkAdGroup*. 
 * Support is added for Bulk entity mapping of MaxConversions, MaxCpc, and TargetCpa bid strategy types i.e., mapping of the *Bid Strategy Type*, *Bid Strategy MaxCpc*, and *Bid Strategy TargetCpa* fields in the Bulk file to the *BulkCampaign*. 
 * Support is added for Bulk entity mapping of LocalInventoryAdsEnabled for Bing Shopping campaigns i.e., mapping of the *LocalInventoryAdsEnabled* field in the Bulk file to the *BulkCampaign*.
@@ -243,10 +243,10 @@ For information about this month's changes to Bing Ads services, see the followi
 -   [Dynamic Search Ads Reports](#reporting-v11-dsa-may2017)  
 
 ### <a name="v11-ga-may2017"></a>Bing Ads API Version 11 General Availability
-Bing Ads API Version 11 is released to production. For more details, see [Migrating to Bing Ads API Version 11](migrate-bing-ads-api-version-11.md) and [Bing Ads API Reference](~/guides/reference.md).
+Bing Ads API Version 11 is released to production. For more details, see [Migrating to Bing Ads API Version 11](migrate-bing-ads-api-version-11.md) and [Bing Ads API Reference](../guides/reference.md).
 
 ### <a name="sdk-may2017"></a>Bing Ads PHP Software Development Kit (SDK)
-The Bing Ads .NET, Java, and PHP SDKs are updated with support for Bing Ads API Version 11 [web service addresses](~/guides/web-service-addresses.md). This release enables you to [upgrade](migrate-bing-ads-api-version-11.md) existing features from version 9 and 10 to version 11. 
+The Bing Ads .NET, Java, and PHP SDKs are updated with support for Bing Ads API Version 11 [web service addresses](../guides/web-service-addresses.md). This release enables you to [upgrade](migrate-bing-ads-api-version-11.md) existing features from version 9 and 10 to version 11. 
 
 Bulk entity support for new version 11 features e.g. *BulkPriceAdExtension* will be added to the .NET, Java, and Python SDKs in a future release.
 

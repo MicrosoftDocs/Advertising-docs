@@ -9,7 +9,7 @@ dev_langs:
   - php
 ---
 # Walkthrough: Bing Ads Web Application in PHP
-This example web application demonstrates OAuth authentication in production. The application will prompt a Microsoft account user for permission to manage their Bing Ads accounts. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](~/guides/get-started.md#get-developer-token). You can create the example step by step as described below, or start with the [provided examples](~/guides/code-examples.md).
+This example web application demonstrates OAuth authentication in production. The application will prompt a Microsoft account user for permission to manage their Bing Ads accounts. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](../guides/get-started.md#get-developer-token). You can create the example step by step as described below, or start with the [provided examples](../guides/code-examples.md).
 
 ## <a name="webapp"></a>Web Application Authentication Example Walk-Through
 
@@ -173,7 +173,7 @@ This example web application demonstrates OAuth authentication in production. Th
     ?>
     ```
 
-4.  Create a new file named *WebAuthHelper.php*, and add the code as shown in the following example. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](~/guides/get-started.md#get-developer-token). 
+4.  Create a new file named *WebAuthHelper.php*, and add the code as shown in the following example. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](../guides/get-started.md#get-developer-token). 
 
     ```php
     <?php

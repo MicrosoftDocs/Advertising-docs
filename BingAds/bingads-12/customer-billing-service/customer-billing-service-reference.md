@@ -11,7 +11,7 @@ description: Reference documentation for the Bing Ads Customer Billing API.
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-The Customer Billing [service](~/guides/web-service-addresses.md) defines an Application Programming Interface (API) that you can use to get billing documents, insertion orders, and monthly spend for an account.
+The Customer Billing [service](../guides/web-service-addresses.md) defines an Application Programming Interface (API) that you can use to get billing documents, insertion orders, and monthly spend for an account.
 
 |Interface|Description|
 |---------|---------|
@@ -20,7 +20,7 @@ The Customer Billing [service](~/guides/web-service-addresses.md) defines an App
 |[Customer Billing Value Sets](../customer-billing-service/customer-billing-value-sets.md)|Value sets include [InsertionOrderStatus](../customer-billing-service/insertionorderstatus.md) and more.|
 
 ## See Also
-[Get Started With the Bing Ads API](~/guides/get-started.md)  
-[Bing Ads Technical Guides](~/guides/technical-guides.md)  
-[Bing Ads Web Service Addresses](~/guides/web-service-addresses.md)  
+[Get Started With the Bing Ads API](../guides/get-started.md)  
+[Bing Ads Technical Guides](../guides/technical-guides.md)  
+[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
 

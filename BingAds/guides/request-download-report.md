@@ -14,9 +14,9 @@ dev_langs:
 # Request and Download a Report
 The following procedure outlines the steps to submit a report request and to download the report.
 
-If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../guides/client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](~/reporting-service/submitgeneratereport.md#request) and [PollGenerateReportRequest](~/reporting-service/pollgeneratereport.md#request) to download a report, you can use one method with the [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md). 
+If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../guides/client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](~/reporting-service/submitgeneratereport.md#request) and [PollGenerateReportRequest](~/reporting-service/pollgeneratereport.md#request) to download a report, you can use one method with the [Reporting Service Manager](../guides/sdk-reporting-service-manager.md). 
 
-For code examples that demonstrate how to download reports, see [Report Requests Code Example](~/guides/code-example-report-requests.md).
+For code examples that demonstrate how to download reports, see [Report Requests Code Example](../guides/code-example-report-requests.md).
 
 ## Request a Report
 
