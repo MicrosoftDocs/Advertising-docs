@@ -49,23 +49,7 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
-      },
-      {
-        "group": "guides",
-        "src": "guides",
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      }        
+      }      
     ],
     "resource": [
       {
@@ -104,20 +88,7 @@
           "**/obj/**",
           "**/includes/**"
         ]
-      },
-      {
-        "group": "guides",
-        "src": "guides",
-        "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ]
-      }      
+      }     
     ],
     "overwrite": [],
     "externalReference": [],
@@ -159,10 +130,6 @@
         "moniker_range": "= bingads-11"
       },
       "bingads-12": {
-        "dest": "",
-        "moniker_range": "= bingads-12"
-      },
-      "guides": {
         "dest": "",
         "moniker_range": "= bingads-12"
       }
