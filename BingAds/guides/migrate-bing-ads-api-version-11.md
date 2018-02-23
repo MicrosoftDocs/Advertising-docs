@@ -29,7 +29,7 @@ The production endpoint is [https://adinsight.api.bingads.microsoft.com/Api/Adve
 The sandbox endpoint is [https://adinsight.api.sandbox.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc](https://adinsight.api.sandbox.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc).
 
 #### <a name="adinsight-monthlybudget"></a>Campaign Monthly Budget
-The *MonthlyBudgetSpendUntilDepleted* value is removed from the the [BudgetLimitType](~/ad-insight-service/budgetlimittype.md) value set. Previously the [GetBudgetOpportunities](~/ad-insight-service/getbudgetopportunities.md) operation would return monthly budget opportunities for campaigns using monthly budgets. Monthly budgets are no longer supported in Bing Ads. 
+The *MonthlyBudgetSpendUntilDepleted* value is removed from the [BudgetLimitType](~/ad-insight-service/budgetlimittype.md) value set. Previously the [GetBudgetOpportunities](~/ad-insight-service/getbudgetopportunities.md) operation would return monthly budget opportunities for campaigns using monthly budgets. Monthly budgets are no longer supported in Bing Ads. 
 
 
 ## <a name="bulk"></a>Bulk
@@ -355,7 +355,7 @@ The following geographic and user location reports have been renamed to clarify 
 
 In version 11, the [GeographicPerformanceReportRequest](~/reporting-service/geographicperformancereportrequest.md) with corresponding columns and filter replaces the *GeoLocationPerformanceReportRequest*.The geographic performance report shows impressions, clicks, spend, and average cost-per-click for each ad group, organized into columns that show the location used to serve ads. You can see where your traffic is coming from: the physical location of the people searching for your ad or the locations people are searching for. You can then validate whether your location targeting strategy is successful and identify opportunities to improve.
 
-In version 11, the [UserLocationPerformanceReportRequest](~/reporting-service/userlocationperformancereportrequest.md) with corresponding columns and filter replaces the *GeographicalLocationReportRequest*. The user location performance report shows impressions, clicks, spend, and average cost-per-click for each ad group, organized by city, country, metro area, radius, state, and account. You can see where your traffic is coming from broken out by the physical location and the location people are searching for. You can then validate whether your location targeting strategy is successful, and identify opportunities to improve.
+In version 11, the [UserLocationPerformanceReportRequest](~/reporting-service/userlocationperformancereportrequest.md) with corresponding columns and filter replaces the *GeographicalLocationReportRequest*. The user location performance report shows impressions, clicks, spend, and average cost-per-click for each ad group, organized by city, country, metro area (Nielsen DMA® in the United States), radius, state, and account. You can see where your traffic is coming from broken out by the physical location and the location people are searching for. You can then validate whether your location targeting strategy is successful, and identify opportunities to improve.
 
 |Report Request|Report Filter|Report Column|
 |-------------|-----------------|-----------------|
