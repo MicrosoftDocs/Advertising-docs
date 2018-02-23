@@ -68,7 +68,7 @@ The maximum number of gender criterions that you can specify per campaign or ad 
 ### <a name="locationcriterion"></a>Location Criterion
 With location criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about:
 *  All available countries/regions
-*  Selected cities, zip codes, metro areas, states/provinces, and countries/regions
+*  Selected cities, zip codes, metro areas (Nielsen DMA® in the United States), states/provinces, and countries/regions
 
 Each location criterion defines a location code for the accompanying criterion bid adjustment. If you are using the Campaign Management service, add the *LocationCriterion* to either the *BiddableCampaignCriterion* or *BiddableAdGroupCriterion* objects. If you are using the Bulk service, use either the [Campaign Location Criterion](~/bulk-service/campaign-location-criterion.md) or [Ad Group Location Criterion](~/bulk-service/ad-group-location-criterion.md) records. 
 
@@ -119,7 +119,7 @@ The base bid is adjusted by multipliers of the bid adjustment percentage values 
 > 
 > Multiple bid adjustments across location criterions are not combined. If you specify geographically-related combinations of country/region, state/province, metropolitan area, or city criterions, the bid adjustment of the most refined criterion would apply.
 > 
-> For example, if the search user is located in Redmond and country is set to `US` with a 10% bid adjustment, state is set to *US-WA* with a 20% bid adjustment, metro area is set to *Seattle-Tacoma, WA, WA US* with a 30% bid adjustment, and city is set to *Redmond, Seattle-Tacoma, WA WA US* with a 40% bid adjustment, then the bid would be adjusted by 40%. If the user is located elsewhere within the Seattle-Tacoma metropolitan area, for example in Bellevue, the bid would be increased by 30%.
+> For example, if the search user is located in Redmond and country is set to `US` with a 10% bid adjustment, state is set to *US-WA* with a 20% bid adjustment, metro area (Nielsen DMA® in the United States) is set to *Seattle-Tacoma, WA, WA US* with a 30% bid adjustment, and city is set to *Redmond, Seattle-Tacoma, WA WA US* with a 40% bid adjustment, then the bid would be adjusted by 40%. If the user is located elsewhere within the Seattle-Tacoma metropolitan area, for example in Bellevue, the bid would be increased by 30%.
 
 ## <a name="defaultcriterions"></a>Default Criterion Settings
 When you first create a campaign or ad group using the Bing Ads API, it will not have any criterions. Effectively the brand new campaign and ad group target all ages, days, hours, devices, genders, and locations. You should specify your minimum target criterions at the campaign level and then use ad group level criterions to narrow or refine your targeting requirements. As a best practice you should consider at minimum adding a campaign location criterion corresponding to the customer market country. 
