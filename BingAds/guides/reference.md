@@ -17,7 +17,7 @@ For Bing Ads reference content, see the following sections.
 |[Bing Ads Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md)|Defines the reason codes of why an ad, keyword, or ad extension failed editorial review.|
 |[Ad Languages](../guides/ad-languages.md)|Lists the available languages that you may use to write your ads and keywords for each country.|
 |[Currencies](../guides/currencies.md)|Contains a list of available currencies for Bing Ads advertising accounts.|
-|[Geographical Location Codes](../guides/geographical-location-codes.md)|Contains information about the country/region, state/province/territory, metro area, and city codes.|
+|[Geographical Location Codes](../guides/geographical-location-codes.md)|Contains information about the country/region, state/province/territory, metro area (Nielsen DMA® in the United States), and city codes.|
 |[Time Zones](../guides/time-zones.md)|Lists the possible time zone values.|
 
 ## <a name="see-also"></a>See Also
