@@ -13,7 +13,7 @@ description: Defines a media representation base class that includes a  media do
 
 Defines a media representation base class that includes a  media download Url.
 
-Do not try to instantiate a *MediaRepresentation*. You can create the [ImageMediaRepresentation](../campaign-management-service/imagemediarepresentation.md) object that derives from it. 
+Do not try to instantiate a *MediaRepresentation*. You can create the [ImageMediaRepresentation](/bingads/campaign-management-service/imagemediarepresentation.md) object that derives from it. 
 
 ## Syntax
 ```xml

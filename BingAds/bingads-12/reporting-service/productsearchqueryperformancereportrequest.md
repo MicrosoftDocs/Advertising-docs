@@ -17,7 +17,7 @@ You can request impressions, clicks, and click-through rate based on the search 
 
 The report will include only search terms that resulted in a significant number of clicks in the last 30 days.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](/bingads/reporting-service/submitgeneratereport.md) operation.
 
 ## Syntax
 ```xml

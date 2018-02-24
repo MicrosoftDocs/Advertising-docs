@@ -11,7 +11,7 @@ description: Defines the condition of results for insertion orders returned usin
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines the condition of results for insertion orders returned using [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
+Defines the condition of results for insertion orders returned using [SearchInsertionOrders](/bingads/customer-billing-service/searchinsertionorders.md).
 
 ## Syntax
 ```xml

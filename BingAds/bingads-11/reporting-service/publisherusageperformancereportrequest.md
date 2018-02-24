@@ -11,7 +11,7 @@ Defines a publisher usage performance report request. Use this report to see if 
 
 You can request impressions, clicks, spend, and conversions for websites including the Bing Ads and syndicated search partner networks. Once downloaded, this data can be sorted by website URL, account, campaign, and ad group.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](/bingads/reporting-service/submitgeneratereport.md) operation.
 
 ## Syntax
 ```xml

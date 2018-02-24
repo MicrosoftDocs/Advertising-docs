@@ -11,7 +11,7 @@ description: Defines a paging object for the list of insertion orders returned u
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines a paging object for the list of insertion orders returned using the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.
+Defines a paging object for the list of insertion orders returned using the [SearchInsertionOrders](/bingads/customer-billing-service/searchinsertionorders.md) operation.
 
 ## Syntax
 ```xml

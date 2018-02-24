@@ -18,7 +18,7 @@ You can request a record of changes made by user and date. For example, you can 
 > [!NOTE]
 > It can take approximately one hour from the time an entity is added, updated, or deleted for the change history to be available for reporting.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](/bingads/reporting-service/submitgeneratereport.md) operation.
 
 ## Syntax
 ```xml

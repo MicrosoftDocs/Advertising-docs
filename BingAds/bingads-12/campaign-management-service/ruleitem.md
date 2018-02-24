@@ -14,7 +14,7 @@ description: Defines the base class of a remarketing list rule item.
 Defines the base class of a remarketing list rule item.
 
 Do not try to instantiate a *RuleItem*. You can create one or more following objects that derive from it.
-- [StringRuleItem](../campaign-management-service/stringruleitem.md)
+- [StringRuleItem](/bingads/campaign-management-service/stringruleitem.md)
 
 ## Syntax
 ```xml

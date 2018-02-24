@@ -9,10 +9,10 @@ dev_langs:
   - csharp
 ---
 # Campaign Label Record - Bulk
-Defines an association record between a [Campaign](../bulk-service/campaign.md) and a [Label](../bulk-service/label.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or label, use the [Campaign](../bulk-service/campaign.md) or [Label](../bulk-service/label.md) record.
+Defines an association record between a [Campaign](/bingads/bulk-service/campaign.md) and a [Label](/bingads/bulk-service/label.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or label, use the [Campaign](/bingads/bulk-service/campaign.md) or [Label](/bingads/bulk-service/label.md) record.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Campaign Label* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For a *Campaign Label* record, the following attribute fields are available in the [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md). 
 
 - [Campaign](#campaign)
 - [Client Id](#clientid)
@@ -21,7 +21,7 @@ For a *Campaign Label* record, the following attribute fields are available in t
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Campaign Label* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignLabels* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Campaign Label* record by including the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value of *CampaignLabels* in the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](/bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would apply a label to a campaign if the valid *Id* and *Parent Id* are provided. 
 
@@ -89,9 +89,9 @@ Used to associate records in the bulk upload file with records in the results fi
 ### <a name="id"></a>Id
 The identifier of the label that is applied or removed from the campaign.
 
-This bulk field maps to the *Id* field of the [Label](../bulk-service/label.md) record. 
+This bulk field maps to the *Id* field of the [Label](/bingads/bulk-service/label.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](../bulk-service/label.md) record. This is recommended if you are applying new labels to campaigns in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](/bingads/bulk-service/label.md) record. This is recommended if you are applying new labels to campaigns in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/binga/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -106,9 +106,9 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The identifier of the campaign where this label is applied or removed.
 	
-This bulk field maps to the *Id* field of the [Campaign](../bulk-service/campaign.md) record. 
+This bulk field maps to the *Id* field of the [Campaign](/bingads/bulk-service/campaign.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are applying labels to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](/bingads/bulk-service/campaign.md) record. This is recommended if you are applying labels to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/binga/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 > [!NOTE]

@@ -12,10 +12,10 @@ The expanded text ad format works seamlessly on mobile, tablet and desktop devic
 ![expandedtextad](/bingads/guides/media/expanded-text-ad.png)
 
 ## <a name="bulk"></a>Bulk API for Expanded Text Ads
-The [Expanded Text Ad](/bingads/bulk-service/expanded-text-ad.md) Bulk record is available for managing expanded text ads i.e., you can upload or download data in this format.
+The [Expanded Text Ad](/binga/bingads/bulk-service/expanded-text-ad.md) Bulk record is available for managing expanded text ads i.e., you can upload or download data in this format.
 
 ## <a name="campaign"></a>Campaign Management API for Expanded Text Ads
-The [ExpandedTextAd](/bingads/campaign-management-service/expandedtextad.md) object is derived from the [Ad](/bingads/campaign-management-service/ad.md) base class and can be managed with any of the existing ad operations e.g. [AddAds](/bingads/campaign-management-service/addads.md), [DeleteAds](/bingads/campaign-management-service/deleteads.md), [GetAdsByAdGroupId](/bingads/campaign-management-service/getadsbyadgroupid.md), and [UpdateAds](/bingads/campaign-management-service/updateads.md). 
+The [ExpandedTextAd](/binga/bingads/campaign-management-service/expandedtextad.md) object is derived from the [Ad](/binga/bingads/campaign-management-service/ad.md) base class and can be managed with any of the existing ad operations e.g. [AddAds](/binga/bingads/campaign-management-service/addads.md), [DeleteAds](/binga/bingads/campaign-management-service/deleteads.md), [GetAdsByAdGroupId](/binga/bingads/campaign-management-service/getadsbyadgroupid.md), and [UpdateAds](/binga/bingads/campaign-management-service/updateads.md). 
 
 ## <a name="countdown"></a>Countdowns for Expanded Text Ads
 Countdown customizers let you easily add a countdown ? by day, hour, and then minute ? to an event in your Expanded Text Ad. The countdown, which automatically updates as the event draws nearer, is eye-catching and gives potential customers greater incentive to click your ad.

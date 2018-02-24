@@ -26,7 +26,7 @@ Defines a fault object that operations return when generic errors occur, such as
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="errors"></a>Errors|An array of [AdApiError](../ad-insight-service/adapierror.md) objects that contains the details that explain why the service operation failed.|[AdApiError](adapierror.md) array|
+|<a name="errors"></a>Errors|An array of [AdApiError](/bingads/ad-insight-service/adapierror.md) objects that contains the details that explain why the service operation failed.|[AdApiError](adapierror.md) array|
 
 The [AdApiFaultDetail](adapifaultdetail.md) object has [Inherited Elements](#inheritedelements).
 

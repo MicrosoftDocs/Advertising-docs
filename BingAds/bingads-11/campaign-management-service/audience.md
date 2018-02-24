@@ -10,9 +10,9 @@ description: Defines the base object of an audience.
 Defines the base object of an audience.
 
 Do not try to instantiate an *Audience*. You can create one or more following objects that derive from it.
-- [CustomAudience](../campaign-management-service/customaudience.md)  
-- [InMarketAudience](../campaign-management-service/inmarketaudience.md)  
-- [RemarketingList](../campaign-management-service/remarketinglist.md)  
+- [CustomAudience](/bingads/campaign-management-service/customaudience.md)  
+- [InMarketAudience](/bingads/campaign-management-service/inmarketaudience.md)  
+- [RemarketingList](/bingads/campaign-management-service/remarketinglist.md)  
 
 ## Syntax
 ```xml

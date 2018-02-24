@@ -11,7 +11,7 @@ Defines a share of voice (SOV) report request. Use this report to view impressio
 
 You can request impressions, impression share (%), impression share lost to budget (%), and impression share lost to bid. Once downloaded, this data can be sorted by keyword, keyword ID, landing page user experience, and quality score.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](/bingads/reporting-service/submitgeneratereport.md) operation.
 
 ## Syntax
 ```xml

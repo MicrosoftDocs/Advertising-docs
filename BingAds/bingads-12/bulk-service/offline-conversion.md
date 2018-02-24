@@ -11,15 +11,15 @@ dev_langs:
 # Offline Conversion Record - Bulk
 Defines an offline conversion that can be uploaded in a bulk file.
 
-To set up offine conversion tracking, create an [OfflineConversionGoal](/bingads/campaign-management-service/offlineconversiongoal.md). If you set the *CountType* of the [OfflineConversionGoal](/bingads/campaign-management-service/offlineconversiongoal.md) to *All*, then all offline conversions for the same *MicrosoftClickId* with different conversion times will be added cumulatively. If you set the *CountType* of the [OfflineConversionGoal](/bingads/campaign-management-service/offlineconversiongoal.md) to *Unique*, then only the first conversion that happens after an ad click will be counted. Duplicate offline conversions with the same *MicrosoftClickId* and *ConversionTime* will be ignored. In other words only the first offline conversion for a given *MicrosoftClickId* and *ConversionTime* will be counted.
+To set up offine conversion tracking, create an [OfflineConversionGoal](/binga/bingads/campaign-management-service/offlineconversiongoal.md). If you set the *CountType* of the [OfflineConversionGoal](/binga/bingads/campaign-management-service/offlineconversiongoal.md) to *All*, then all offline conversions for the same *MicrosoftClickId* with different conversion times will be added cumulatively. If you set the *CountType* of the [OfflineConversionGoal](/binga/bingads/campaign-management-service/offlineconversiongoal.md) to *Unique*, then only the first conversion that happens after an ad click will be counted. Duplicate offline conversions with the same *MicrosoftClickId* and *ConversionTime* will be ignored. In other words only the first offline conversion for a given *MicrosoftClickId* and *ConversionTime* will be counted.
 
-After the [OfflineConversionGoal](/bingads/campaign-management-service/offlineconversiongoal.md) is set up, wait two hours and then send Bing Ads the offline conversion data. It can take up to five hours to view conversion data in the Bing Ads reporting. For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
+After the [OfflineConversionGoal](/binga/bingads/campaign-management-service/offlineconversiongoal.md) is set up, wait two hours and then send Bing Ads the offline conversion data. It can take up to five hours to view conversion data in the Bing Ads reporting. For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
 
 > [!NOTE]
 > Bulk download is not supported. You cannot get, update, or delete an offline conversion.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Offline Conversion* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For an *Offline Conversion* record, the following attribute fields are available in the [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md). 
 
 - [Client Id](#clientid)
 - [Conversion Currency Code](#conversioncurrencycode)
@@ -89,7 +89,7 @@ The currency code for the offline conversion.
 
 For more information, see [Currencies](/bingads/guides/currencies.md).
 
-**Add:** Optional. If you do not specify an offline conversion currency code, then the *CurrencyCode* element of the goal's [ConversionGoalRevenue](/bingads/campaign-management-service/conversiongoalrevenue.md) is used.  
+**Add:** Optional. If you do not specify an offline conversion currency code, then the *CurrencyCode* element of the goal's [ConversionGoalRevenue](/binga/bingads/campaign-management-service/conversiongoalrevenue.md) is used.  
 
 ### <a name="conversionname"></a>Conversion Name
 The conversion goal name.
@@ -105,9 +105,9 @@ The date and time must be within the last 90 days, otherwise the operation will 
 
 To be counted by Bing Ads as an offline conversion after successful upload, the following additional requirements must be met:
 -  The date and time of the conversion must be set later than the date and time of the recorded click.  
--  The date and time must be within the conversion window. The *ConversionWindowInMinutes* property of the [OfflineConversionGoal](/bingads/campaign-management-service/offlineconversiongoal.md) determines the maximum length of time in minutes after a click that conversions will be tracked.
+-  The date and time must be within the conversion window. The *ConversionWindowInMinutes* property of the [OfflineConversionGoal](/binga/bingads/campaign-management-service/offlineconversiongoal.md) determines the maximum length of time in minutes after a click that conversions will be tracked.
 
-For example if three clicks were recorded on April 30th, if the *ConversionWindowInMinutes* of the [OfflineConversionGoal](/bingads/campaign-management-service/offlineconversiongoal.md) is equal to 30 days (43200 minutes), and if you send Bing Ads the following offline conversions on July 31st, then Bing Ads will only count the one with MicrosoftClickId=*2* as an offline conversion.
+For example if three clicks were recorded on April 30th, if the *ConversionWindowInMinutes* of the [OfflineConversionGoal](/binga/bingads/campaign-management-service/offlineconversiongoal.md) is equal to 30 days (43200 minutes), and if you send Bing Ads the following offline conversions on July 31st, then Bing Ads will only count the one with MicrosoftClickId=*2* as an offline conversion.
 -  MicrosoftClickId=*1*; ConversionTime=*2017-04-30T17:02:35.6853793Z*  
 -  MicrosoftClickId=*2*; ConversionTime=*2017-05-15T17:02:35.6853793Z*  
 -  MicrosoftClickId=*3*; ConversionTime=*2017-06-15T17:02:35.6853793Z*
@@ -119,12 +119,12 @@ The offline conversion data with MicrosoftClickId=*1* will not be uploaded since
 ### <a name="conversionvalue"></a>Conversion Value
 The offline conversion value.
 
-**Add:** Optional. If you do not specify an offline conversion value, then the *Value* element of the goal's [ConversionGoalRevenue](/bingads/campaign-management-service/conversiongoalrevenue.md) is used.  
+**Add:** Optional. If you do not specify an offline conversion value, then the *Value* element of the goal's [ConversionGoalRevenue](/binga/bingads/campaign-management-service/conversiongoalrevenue.md) is used.  
 
 ### <a name="microsoftclickid"></a>Microsoft Click Id
 The MSCLKID for the offline conversion.
 
-To ensure that auto-tagging is enabled for Microsoft click ID tracking, use the *MSCLKID Auto Tagging Enabled* field of the [Account](../bulk-service/account.md) record. 
+To ensure that auto-tagging is enabled for Microsoft click ID tracking, use the *MSCLKID Auto Tagging Enabled* field of the [Account](/bingads/bulk-service/account.md) record. 
 
 **Add:** Required  
 

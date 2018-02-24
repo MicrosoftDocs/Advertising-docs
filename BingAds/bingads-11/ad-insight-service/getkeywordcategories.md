@@ -36,7 +36,7 @@ The *GetKeywordCategoriesResponse* object defines the [body](#response-body) and
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="result"></a>Result|An array of [KeywordCategoryResult](../ad-insight-service/keywordcategoryresult.md) data objects. Each object contains the keyword and a list of categories to which it belongs.<br /><br />The list will include an item for each keyword that you specified in the request. If the keyword category cannot be determined, the *KeywordCategories* list will contain a single [KeywordCategory](../ad-insight-service/keywordcategory.md). The value of *Category* will be Unknown Category and the value of *ConfidenceScore* will be 0.0.|[KeywordCategoryResult](keywordcategoryresult.md) array|
+|<a name="result"></a>Result|An array of [KeywordCategoryResult](/bingads/ad-insight-service/keywordcategoryresult.md) data objects. Each object contains the keyword and a list of categories to which it belongs.<br /><br />The list will include an item for each keyword that you specified in the request. If the keyword category cannot be determined, the *KeywordCategories* list will contain a single [KeywordCategory](/bingads/ad-insight-service/keywordcategory.md). The value of *Category* will be Unknown Category and the value of *ConfidenceScore* will be 0.0.|[KeywordCategoryResult](keywordcategoryresult.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

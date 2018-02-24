@@ -17,7 +17,7 @@ The Campaign Management service defines the following value sets.
 |[AdExtensionEditorialStatus](adextensioneditorialstatus.md)|Defines the editorial review status values of an ad extension.|
 |[AdExtensionStatus](adextensionstatus.md)|Defines the possible status values of an ad extension.|
 |[AdExtensionsTypeFilter](adextensionstypefilter.md)|Defines the possible ad extension types.|
-|[AdGroupAdditionalField](adgroupadditionalfield.md)|Defines a list of optional [AdGroup](../campaign-management-service/adgroup.md) properties that you can request when calling [GetAdGroupsByCampaignId](../campaign-management-service/getadgroupsbycampaignid.md) and [GetAdGroupsByIds](../campaign-management-service/getadgroupsbyids.md).|
+|[AdGroupAdditionalField](adgroupadditionalfield.md)|Defines a list of optional [AdGroup](/bingads/campaign-management-service/adgroup.md) properties that you can request when calling [GetAdGroupsByCampaignId](/bingads/campaign-management-service/getadgroupsbycampaignid.md) and [GetAdGroupsByIds](/bingads/campaign-management-service/getadgroupsbyids.md).|
 |[AdGroupCriterionEditorialStatus](adgroupcriterioneditorialstatus.md)|Defines the editorial review status values of an ad group criterion.|
 |[AdGroupCriterionStatus](adgroupcriterionstatus.md)|Defines the possible ad group criterion status values.|
 |[AdGroupCriterionType](adgroupcriteriontype.md)|Defines the possible types of ad group criterions.|
@@ -29,7 +29,7 @@ The Campaign Management service defines the following value sets.
 |[AgeRange](agerange.md)|Defines the possible age range values that you can use to target ads to People.|
 |[AppealStatus](appealstatus.md)|Defines the values that you use to determine whether an editorial rejection is appealable.|
 |[AssociationType](associationtype.md)|Defines the entity types that can be associated with an ad extension.|
-|[AudienceAdditionalField](audienceadditionalfield.md)|Defines a list of optional [Audience](../campaign-management-service/audience.md) properties that you can request when calling [GetAudiencesByIds](../campaign-management-service/getaudiencesbyids.md).|
+|[AudienceAdditionalField](audienceadditionalfield.md)|Defines a list of optional [Audience](/bingads/campaign-management-service/audience.md) properties that you can request when calling [GetAudiencesByIds](/bingads/campaign-management-service/getaudiencesbyids.md).|
 |[AudienceType](audiencetype.md)|Defines the possible audience types.|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible budget types that you can specify for a campaign.|
 |[BusinessGeoCodeStatus](businessgeocodestatus.md)|Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.|
@@ -52,7 +52,7 @@ The Campaign Management service defines the following value sets.
 |[GenderType](gendertype.md)|Defines the genders that are available for gender criterion.|
 |[IntentOption](intentoption.md)|Defines the possible intent options for location criterion, for example to target people in, searching for, or viewing pages about your targeted location.|
 |[ItemAction](itemaction.md)|Defines the possible types of item actions, for example to add, delete, or update the product partition criterion.|
-|[KeywordAdditionalField](keywordadditionalfield.md)|Defines a list of optional [Keyword](../campaign-management-service/keyword.md) properties that you can request when calling [GetKeywordsByAdGroupId](../campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](../campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](../campaign-management-service/getkeywordsbyids.md).|
+|[KeywordAdditionalField](keywordadditionalfield.md)|Defines a list of optional [Keyword](/bingads/campaign-management-service/keyword.md) properties that you can request when calling [GetKeywordsByAdGroupId](/bingads/campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](/bingads/campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](/bingads/campaign-management-service/getkeywordsbyids.md).|
 |[KeywordEditorialStatus](keywordeditorialstatus.md)|Defines the editorial review status values of a keyword.|
 |[KeywordStatus](keywordstatus.md)|Defines the possible status values of a keyword.|
 |[MatchType](matchtype.md)|Defines the possible match types for a keyword or negative keyword.|

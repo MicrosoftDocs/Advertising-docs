@@ -21,9 +21,9 @@ The *SignupCustomerRequest* object defines the [body](#request-body) and [header
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="account"></a>Account|An [Account](../customer-management-service/account.md) that specifies the details of the customer's primary account.<br /><br /> Do not instantiate the *Account* data object. Instead, instantiate the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) that derives from the *Account* data object.|[Account](account.md)|
+|<a name="account"></a>Account|An [Account](/bingads/customer-management-service/account.md) that specifies the details of the customer's primary account.<br /><br /> Do not instantiate the *Account* data object. Instead, instantiate the [AdvertiserAccount](/bingads/customer-management-service/advertiseraccount.md) that derives from the *Account* data object.|[Account](account.md)|
 |<a name="applicationscope"></a>ApplicationScope|Determines  the type of customer application. The default is Advertiser.<br /><br />The scope of this customer and the scope of the parent customer must be the same; for example, they must both be set to Advertiser.|[ApplicationType](applicationtype.md)|
-|<a name="customer"></a>Customer|A [Customer](../customer-management-service/customer.md) that specifies the details of the customer that you are adding.|[Customer](customer.md)|
+|<a name="customer"></a>Customer|A [Customer](/bingads/customer-management-service/customer.md) that specifies the details of the customer that you are adding.|[Customer](customer.md)|
 |<a name="parentcustomerid"></a>ParentCustomerId|The customer identifier of the reseller that will manage this customer.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements

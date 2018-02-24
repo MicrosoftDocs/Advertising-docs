@@ -9,7 +9,7 @@ description: Defines a product partition unit performance report request that ag
 # ProductPartitionUnitPerformanceReportRequest Data Object - Reporting
 Defines a product partition unit performance report request that aggregates the performance data by product partition unit for a specified time period. You can include details in the report such as impressions, clicks, and spend that you can use to identify whether or not the product partitions are performing well.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](/bingads/reporting-service/submitgeneratereport.md) operation.
 
 > [!NOTE]
 > You should only use this report to get performance data for Bing Shopping campaigns. It is not applicable for other campaign types. 

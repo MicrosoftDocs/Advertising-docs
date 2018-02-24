@@ -17,7 +17,7 @@ Defines an ad extension that includes between 3 and 8 price table rows.
 You can associate a price ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 price ad extensions. Use the [Account Price Ad Extension](account-price-ad-extension.md), [Ad Group Price Ad Extension](ad-group-price-ad-extension.md), and [Campaign Price Ad Extension](campaign-price-ad-extension.md) records to manage price ad extension associations.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Price Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For a *Price Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md). 
 
 - [Ad Schedule](#adschedule)
 - [Client Id](#clientid)
@@ -47,7 +47,7 @@ For a *Price Ad Extension* record, the following attribute fields are available 
 - [Use Searcher Time Zone](#usesearchertimezone)
 - [Version](#version)
 
-You can download all fields of the *Price Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *PriceAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Price Ad Extension* record by including the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value of *PriceAdExtensions* in the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](/bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Price Ad Extension to the account's shared library. 
 
@@ -297,7 +297,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](/bingads/campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](/binga/bingads/campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -389,7 +389,7 @@ You must have between 3 and 8 price table items per price ad extension. All pric
 ### <a name="id"></a>Id
 The system generated identifier of the ad extension.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Price Ad Extension](../bulk-service/ad-group-price-ad-extension.md) and [Campaign Price Ad Extension](../bulk-service/campaign-price-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Price Ad Extension](/bingads/bulk-service/ad-group-price-ad-extension.md) and [Campaign Price Ad Extension](/bingads/bulk-service/campaign-price-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/binga/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -415,7 +415,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The system generated identifier of the account that contains the ad extension.
 
-This bulk field maps to the *Id* field of the [Account](../bulk-service/account.md) record.
+This bulk field maps to the *Id* field of the [Account](/bingads/bulk-service/account.md) record.
 
 **Add:** Read-only  
 **Update:** Read-only  

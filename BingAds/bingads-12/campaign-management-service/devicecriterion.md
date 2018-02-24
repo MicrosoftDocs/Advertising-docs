@@ -19,7 +19,7 @@ Each device criterion defines a device name for the accompanying criterion bid a
 
 The maximum number of device criterions that you can specify per campaign or ad group is three. You must either have three separate criterions for *Computers*, *Smartphones*, and *Tablets*, otherwise no device criterions can exist for the campaign or ad group.
 
-The *DeviceCriterion* criterion can be included within [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) and [CampaignCriterion](../campaign-management-service/campaigncriterion.md) objects. If ad group level device criterions are specified, the campaign level device criterions are ignored for that ad group. In other words the ad group device criterions override the campaign device criterions, and are not applied as a union.   
+The *DeviceCriterion* criterion can be included within [AdGroupCriterion](/bingads/campaign-management-service/adgroupcriterion.md) and [CampaignCriterion](/bingads/campaign-management-service/campaigncriterion.md) objects. If ad group level device criterions are specified, the campaign level device criterions are ignored for that ad group. In other words the ad group device criterions override the campaign device criterions, and are not applied as a union.   
 
 ## Syntax
 ```xml
@@ -51,7 +51,7 @@ The [DeviceCriterion](devicecriterion.md) object derives from the [Criterion](cr
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|The type of the criterion. This value is *Device* when you retrieve a device criterion. For more information about criterion types, see the [Criterion Data Object Remarks](../campaign-management-service/criterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
+|<a name="type"></a>Type|The type of the criterion. This value is *Device* when you retrieve a device criterion. For more information about criterion types, see the [Criterion Data Object Remarks](/bingads/campaign-management-service/criterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

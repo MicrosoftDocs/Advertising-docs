@@ -9,7 +9,7 @@ description: Defines a webpage parameter that contains a list of webpage conditi
 # Webpage Data Object - Campaign Management
 Defines a webpage parameter that contains a list of webpage conditions or criteria that help determine whether you want to show dynamic search ads.
 
-The *Webpage* criterion can be included within [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md), [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md), and [NegativeCampaignCriterion](../campaign-management-service/negativecampaigncriterion.md) objects. If ad group level negative webpage criterions are specified, the campaign level negative webpage criterions are ignored for that ad group. In other words the ad group negative webpage criterions override the campaign negative webpage criterions, and are not applied as a union.   
+The *Webpage* criterion can be included within [BiddableAdGroupCriterion](/bingads/campaign-management-service/biddableadgroupcriterion.md), [NegativeAdGroupCriterion](/bingads/campaign-management-service/negativeadgroupcriterion.md), and [NegativeCampaignCriterion](/bingads/campaign-management-service/negativecampaigncriterion.md) objects. If ad group level negative webpage criterions are specified, the campaign level negative webpage criterions are ignored for that ad group. In other words the ad group negative webpage criterions override the campaign negative webpage criterions, and are not applied as a union.   
 
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
@@ -42,7 +42,7 @@ The [Webpage](webpage.md) object derives from the [Criterion](criterion.md) obje
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|The type of the criterion. This value is *Webpage* when you retrieve a webpage criterion. For more information about criterion types, see the [Criterion Data Object Remarks](../campaign-management-service/criterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
+|<a name="type"></a>Type|The type of the criterion. This value is *Webpage* when you retrieve a webpage criterion. For more information about criterion types, see the [Criterion Data Object Remarks](/bingads/campaign-management-service/criterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

@@ -12,7 +12,7 @@ dev_langs:
 Defines a Campaign Negative Dynamic Search Ad Target that can be uploaded and downloaded in a bulk file.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Campaign Negative Dynamic Search Ad Target* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For a *Campaign Negative Dynamic Search Ad Target* record, the following attribute fields are available in the [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md). 
 
 - [Campaign](#campaign)
 - [Client Id](#clientid)
@@ -28,7 +28,7 @@ For a *Campaign Negative Dynamic Search Ad Target* record, the following attribu
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Campaign Negative Dynamic Search Ad Target* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignNegativeDynamicSearchAdTargets* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Campaign Negative Dynamic Search Ad Target* record by including the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value of *CampaignNegativeDynamicSearchAdTargets* in the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](/bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new campaign negative dynamic search ad target given a valid campaign ID (*Parent Id*). 
 
@@ -210,9 +210,9 @@ The criterion name length must be between 1 to 2048, inclusive.
 ### <a name="parentid"></a>Parent Id
 The system generated identifier of the campaign that contains the dynamic ad target (webpage criterion).
 
-This bulk field maps to the *Id* field of the [Campaign](../bulk-service/campaign.md) record.
+This bulk field maps to the *Id* field of the [Campaign](/bingads/bulk-service/campaign.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new dynamic ad targets to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](/bingads/bulk-service/campaign.md) record. This is recommended if you are adding new dynamic ad targets to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/binga/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only  
 **Delete:** Read-only  
 

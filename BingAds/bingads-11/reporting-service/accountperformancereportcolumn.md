@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the AccountPerformanceReportRequest.
 ---
 # AccountPerformanceReportColumn Value Set - Reporting
-Defines the attributes and performance statistics columns that you can include in the [AccountPerformanceReportRequest](../reporting-service/accountperformancereportrequest.md).
+Defines the attributes and performance statistics columns that you can include in the [AccountPerformanceReportRequest](/bingads/reporting-service/accountperformancereportrequest.md).
 
 The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](/bingads/guides/reports.md#columnsdata).
 

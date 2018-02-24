@@ -11,7 +11,7 @@ description: Defines the ascending or descending sort order of results for Searc
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines the ascending or descending sort order of results for [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
+Defines the ascending or descending sort order of results for [SearchInsertionOrders](/bingads/customer-billing-service/searchinsertionorders.md).
 
 ## Syntax
 ```xml

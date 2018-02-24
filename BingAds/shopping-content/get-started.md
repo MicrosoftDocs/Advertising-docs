@@ -22,7 +22,7 @@ Content API uses the same authentication schemes as Bing Ads API. If you use leg
 
 For details about authenticating Microsoft account credentials with OAuth, see [Managing User Authentication with OAuth](/bingads/guides/authentication-oauth.md). You *can* use the [Bing Ads SDK](/bingads/guides/client-libraries.md) for .NET, Java, or Python to authenticate both legacy and Microsoft account credentials (but only for authentication; the Bing Ads SDK does not provide interfaces for the Content API).
 
-For an example that shows how to use OAuth to authenticate Microsoft account credentials, see [Authenticating Microsoft Account Credentials in C#](../shopping-content/code-example-authentication-oauth.md).
+For an example that shows how to use OAuth to authenticate Microsoft account credentials, see [Authenticating Microsoft Account Credentials in C#](/bingads/shopping-content/code-example-authentication-oauth.md).
 
 ## Where to use your credentials and developer tokens?
 
@@ -32,7 +32,7 @@ All calls may specify either the AuthenticationToken header, if you use OAuth to
 
 If you manage catalogs on behalf of other customers, you must set the `CustomerId` header to the customer ID of the customer whose store you're managing, and the `CustomerAccountId` header to the account ID of any of the customer's accounts that you manage (it doesn't matter which managed account). 
 
-For information about these and other headers that the request and response may contain, see [Headers](../shopping-content/products-resource.md#headers). 
+For information about these and other headers that the request and response may contain, see [Headers](/bingads/shopping-content/products-resource.md#headers). 
 
 ## <a name="configurebmc"/> Configuring Bing Merchant Center to use the API
 
@@ -45,19 +45,19 @@ You must complete the following steps if you haven't already done so.
 2. [Create a Bing Merchant Center store](http://help.bingads.microsoft.com/#apex/3/en/51085/1)
 3. [Add a catalog](http://help.bingads.microsoft.com/#apex/3/en/51105/1)
 
-When you create a BMC store, the process creates a default catalog for you. The store and all catalogs that you create are automatically enabled for API management. The store contains a default catalog that all product gets, inserts, updates, and deletes apply to unless you specify the [bmc-catalog-id](../shopping-content/products-resource.md#bmccatalogid) query parameter in the resource URL. 
+When you create a BMC store, the process creates a default catalog for you. The store and all catalogs that you create are automatically enabled for API management. The store contains a default catalog that all product gets, inserts, updates, and deletes apply to unless you specify the [bmc-catalog-id](/bingads/shopping-content/products-resource.md#bmccatalogid) query parameter in the resource URL. 
 
 The **Store Setting** tab contains the Tenant URL, which you use as the base URI of your resource URL.
 
-As an alternative to adding and enabling catalogs using the BMC web application, you may use the [Catalogs](../shopping-content/catalogs-resource.md) resource. For more information, see [Managing your Catalogs](../shopping-content/manage-catalogs.md).
+As an alternative to adding and enabling catalogs using the BMC web application, you may use the [Catalogs](/bingads/shopping-content/catalogs-resource.md) resource. For more information, see [Managing your Catalogs](/bingads/shopping-content/manage-catalogs.md).
 
 > [!NOTE] 
-> You may be able to use the API with FTP in certain circumstances to update a catalog feed. For information about using the API with FTP, see [Can I Use the API and FTP?](../shopping-content/can-use-api-ftp.md). 
+> You may be able to use the API with FTP in certain circumstances to update a catalog feed. For information about using the API with FTP, see [Can I Use the API and FTP?](/bingads/shopping-content/can-use-api-ftp.md). 
 
 
 ## Next Steps
 Now that you're ready to start using the API, see the following sections.
 
-- [Testing your Code in sandbox](../shopping-content/test-code-sandbox.md)
-- [Managing your Catalogs](../shopping-content/manage-catalogs.md)
-- [Managing your Products](../shopping-content/manage-products.md) 
+- [Testing your Code in sandbox](/bingads/shopping-content/test-code-sandbox.md)
+- [Managing your Catalogs](/bingads/shopping-content/manage-catalogs.md)
+- [Managing your Products](/bingads/shopping-content/manage-products.md) 

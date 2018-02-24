@@ -17,7 +17,7 @@ dev_langs:
 # Managing Catalogs Code Example
 This example shows how to get, add, update, and delete catalogs in the specified store.  
 
-For information about the catalog-related classes used by this example, see [Catalogs](../shopping-content/catalogs-resource.md#catalogs) and [Catalog](../shopping-content/catalogs-resource.md#catalog). For information about working with catalogs, see [Managing your Catalogs](../shopping-content/manage-catalogs.md).
+For information about the catalog-related classes used by this example, see [Catalogs](/bingads/shopping-content/catalogs-resource.md#catalogs) and [Catalog](/bingads/shopping-content/catalogs-resource.md#catalog). For information about working with catalogs, see [Managing your Catalogs](/bingads/shopping-content/manage-catalogs.md).
 
 ```csharp
 using System;

@@ -29,13 +29,13 @@ Defines price units for price ad extensions.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="none"></a>None|The price of the [PriceAdExtension](../campaign-management-service/priceadextension.md) will not be appended with price unit text.|
-|<a name="perday"></a>PerDay|The *Per Day* price unit text will be appended to the price of the [PriceAdExtension](../campaign-management-service/priceadextension.md), for example *$9.99 Per Day*.|
-|<a name="perhour"></a>PerHour|The *Per Hour* price unit text will be appended to the price of the [PriceAdExtension](../campaign-management-service/priceadextension.md), for example *$9.99 Per Hour*.|
-|<a name="permonth"></a>PerMonth|The *Per Month* price unit text will be appended to the price of the [PriceAdExtension](../campaign-management-service/priceadextension.md), for example *$9.99 Per Month*.|
-|<a name="pernight"></a>PerNight|The *Per Night* price unit text will be appended to the price of the [PriceAdExtension](../campaign-management-service/priceadextension.md), for example *$9.99 Per Night*.|
-|<a name="perweek"></a>PerWeek|The *Per Week* price unit text will be appended to the price of the [PriceAdExtension](../campaign-management-service/priceadextension.md), for example *$9.99 Per Week*.|
-|<a name="peryear"></a>PerYear|The *Per Year* price unit text will be appended to the price of the [PriceAdExtension](../campaign-management-service/priceadextension.md), for example *$9.99 Per Year*.|
+|<a name="none"></a>None|The price of the [PriceAdExtension](/bingads/campaign-management-service/priceadextension.md) will not be appended with price unit text.|
+|<a name="perday"></a>PerDay|The *Per Day* price unit text will be appended to the price of the [PriceAdExtension](/bingads/campaign-management-service/priceadextension.md), for example *$9.99 Per Day*.|
+|<a name="perhour"></a>PerHour|The *Per Hour* price unit text will be appended to the price of the [PriceAdExtension](/bingads/campaign-management-service/priceadextension.md), for example *$9.99 Per Hour*.|
+|<a name="permonth"></a>PerMonth|The *Per Month* price unit text will be appended to the price of the [PriceAdExtension](/bingads/campaign-management-service/priceadextension.md), for example *$9.99 Per Month*.|
+|<a name="pernight"></a>PerNight|The *Per Night* price unit text will be appended to the price of the [PriceAdExtension](/bingads/campaign-management-service/priceadextension.md), for example *$9.99 Per Night*.|
+|<a name="perweek"></a>PerWeek|The *Per Week* price unit text will be appended to the price of the [PriceAdExtension](/bingads/campaign-management-service/priceadextension.md), for example *$9.99 Per Week*.|
+|<a name="peryear"></a>PerYear|The *Per Year* price unit text will be appended to the price of the [PriceAdExtension](/bingads/campaign-management-service/priceadextension.md), for example *$9.99 Per Year*.|
 |<a name="unknown"></a>Unknown|Reserved for forward compatibility.|
 
 ## Requirements

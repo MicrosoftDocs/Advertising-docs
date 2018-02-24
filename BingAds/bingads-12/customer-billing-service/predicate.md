@@ -11,7 +11,7 @@ description: Defines a predicate for the list of insertion orders returned using
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines a predicate for the list of insertion orders returned using the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.
+Defines a predicate for the list of insertion orders returned using the [SearchInsertionOrders](/bingads/customer-billing-service/searchinsertionorders.md) operation.
 
 ## Syntax
 ```xml
@@ -28,7 +28,7 @@ Defines a predicate for the list of insertion orders returned using the [SearchI
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="field"></a>Field|The name of the element for  the object you are searching.<br /><br />For possible values, see the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.|**string**|
+|<a name="field"></a>Field|The name of the element for  the object you are searching.<br /><br />For possible values, see the [SearchInsertionOrders](/bingads/customer-billing-service/searchinsertionorders.md) operation.|**string**|
 |<a name="operator"></a>Operator|Defines the relationship between the field and the value.|[PredicateOperator](predicateoperator.md)|
 |<a name="value"></a>Value|The string to search in the specified field.<br /><br /> The length of this string must be four or greater, unless the field is set to MarketCountry or MarketLanguage.|**string**|
 

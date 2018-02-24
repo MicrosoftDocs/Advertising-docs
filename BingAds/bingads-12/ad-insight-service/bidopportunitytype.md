@@ -11,7 +11,7 @@ description: Defines the possible bid opportunity types you can request when cal
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](../ad-insight-service/getbidopportunities.md).
+Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](/bingads/ad-insight-service/getbidopportunities.md).
 
 ## Syntax
 ```xml

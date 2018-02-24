@@ -13,7 +13,7 @@ description: Get details about migrating to Bing Ads API version 12.
 > [!IMPORTANT]
 > With the availability of Bing Ads API version 12, version 11 is deprecated and will sunset by October 31, 2018. 
 
-The sections below describe changes from version 11 to version 12 of the [Ad Insight](/bingads/ad-insight-service/ad-insight-service-reference.md), [Bulk](/bingads/bulk-service/bulk-service-reference.md), [Campaign Management](/bingads/campaign-management-service/campaign-management-service-reference.md), [Customer Billing](/bingads/customer-billing-service/customer-billing-service-reference.md), [Customer Management](/bingads/customer-management-service/customer-management-service-reference.md), and [Reporting](/bingads/reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services.
+The sections below describe changes from version 11 to version 12 of the [Ad Insight](/binga/bingads/ad-insight-service/ad-insight-service-reference.md), [Bulk](/binga/bingads/bulk-service/bulk-service-reference.md), [Campaign Management](/binga/bingads/campaign-management-service/campaign-management-service-reference.md), [Customer Billing](/binga/bingads/customer-billing-service/customer-billing-service-reference.md), [Customer Management](/binga/bingads/customer-management-service/customer-management-service-reference.md), and [Reporting](/binga/bingads/reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services.
 
 ## <a name="authentication"></a>Authentication for All Services
 
@@ -52,17 +52,17 @@ The production endpoint is [https://adinsight.api.bingads.microsoft.com/Api/Adve
 The sandbox endpoint is [https://adinsight.api.sandbox.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc](https://adinsight.api.sandbox.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc).
 
 #### <a name="adinsight-currencycode"></a>ISO Currency Codes
-The *Currency* value set is renamed as [CurrencyCode](/bingads/ad-insight-service/currencycode.md). The values are updated with ISO codes e.g., *USD* replaces *USDollar*.
+The *Currency* value set is renamed as [CurrencyCode](/binga/bingads/ad-insight-service/currencycode.md). The values are updated with ISO codes e.g., *USD* replaces *USDollar*.
 
-The new value set is used with the [BidLandscapePoint](/bingads/ad-insight-service/bidlandscapepoint.md), [EstimatedBidAndTraffic](/bingads/ad-insight-service/estimatedbidandtraffic.md), and [EstimatedPositionAndTraffic](/bingads/ad-insight-service/estimatedpositionandtraffic.md) objects. 
+The new value set is used with the [BidLandscapePoint](/binga/bingads/ad-insight-service/bidlandscapepoint.md), [EstimatedBidAndTraffic](/binga/bingads/ad-insight-service/estimatedbidandtraffic.md), and [EstimatedPositionAndTraffic](/binga/bingads/ad-insight-service/estimatedpositionandtraffic.md) objects. 
 
 #### <a name="adinsight-currencycode"></a>ISO Currency Codes
-In version 12 all attributes within the [KeywordIdea](/bingads/ad-insight-service/keywordidea.md) are nillable i.e., AdImpressionShare, Competition, Relevance, Source, and SuggestedBid. If you do not request them, the [GetKeywordIdeas](/bingads/ad-insight-service/getkeywordideas.md) operation will return nil properties in the returned [KeywordIdea](/bingads/ad-insight-service/keywordidea.md). In addition the Competition [KeywordIdeaAttribute](/bingads/ad-insight-service/keywordideaattribute.md) is no longer required when calling [GetKeywordIdeas](/bingads/ad-insight-service/getkeywordideas.md). 
+In version 12 all attributes within the [KeywordIdea](/binga/bingads/ad-insight-service/keywordidea.md) are nillable i.e., AdImpressionShare, Competition, Relevance, Source, and SuggestedBid. If you do not request them, the [GetKeywordIdeas](/binga/bingads/ad-insight-service/getkeywordideas.md) operation will return nil properties in the returned [KeywordIdea](/binga/bingads/ad-insight-service/keywordidea.md). In addition the Competition [KeywordIdeaAttribute](/binga/bingads/ad-insight-service/keywordideaattribute.md) is no longer required when calling [GetKeywordIdeas](/binga/bingads/ad-insight-service/getkeywordideas.md). 
 
-In version 11 if you didn't request AdImpressionShare, Relevance, Source, or SuggestedBid the [GetKeywordIdeas](/bingads/ad-insight-service/getkeywordideas.md) operation returned zero values (AdImpressionShare=0, Relevance=0, Source=Unknown, and SuggestedBid=0), although the values should not have been used. 
+In version 11 if you didn't request AdImpressionShare, Relevance, Source, or SuggestedBid the [GetKeywordIdeas](/binga/bingads/ad-insight-service/getkeywordideas.md) operation returned zero values (AdImpressionShare=0, Relevance=0, Source=Unknown, and SuggestedBid=0), although the values should not have been used. 
 
 #### <a name="adinsight-sunset-content"></a>Content Ad Distribution
-The Content ad distribution is no longer supported in Bing Ads, and the *Content* value is removed from the [MatchType](/bingads/ad-insight-service/matchtype.md) value set. 
+The Content ad distribution is no longer supported in Bing Ads, and the *Content* value is removed from the [MatchType](/binga/bingads/ad-insight-service/matchtype.md) value set. 
 
 ## <a name="bulk"></a>Bulk
 
@@ -81,28 +81,28 @@ The sandbox endpoint is [https://bulk.api.sandbox.bingads.microsoft.com/Api/Adve
 
 #### <a name="bulk-formatversion5"></a>Format Version 6.0
 
-Support for Bulk file format version 5.0 is removed. Bing Ads API Version 12 only supports format version 6.0. When calling the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) operations you must specify *6.0* in the *FormatVersion* request element. When uploading a bulk file, you must specify 6.0 in the *Name* field of the [Format Version](/bingads/bulk-service/format-version.md) record. Changes to records between format version 5.0 and 6.0 are described in more detail in the following sections.
+Support for Bulk file format version 5.0 is removed. Bing Ads API Version 12 only supports format version 6.0. When calling the [DownloadCampaignsByAccountIds](/binga/bingads/bulk-service/downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](/binga/bingads/bulk-service/downloadcampaignsbycampaignids.md) operations you must specify *6.0* in the *FormatVersion* request element. When uploading a bulk file, you must specify 6.0 in the *Name* field of the [Format Version](/binga/bingads/bulk-service/format-version.md) record. Changes to records between format version 5.0 and 6.0 are described in more detail in the following sections.
 
 #### <a name="bulk-sitelinkadextensions"></a>Sitelink Ad Extensions
 During calendar year 2017, Bing Ads upgraded all format version 5.0 *Sitelink Ad Extension* records (contains multiple sitelinks per ad extension) to *Sitelink2 Ad Extension* objects (contains one sitelink per ad extension). 
 
-In Bing Ads API Version 12 the format version 5.0 *Sitelink Ad Extension*, *Campaign Sitelink Ad Extension*, and *AdGroup Sitelink Ad Extension* records are removed. Likewise, the *SiteLinksAdExtension*, *CampaignSiteLinksAdExtensions*, and *AdGroupSiteLinksAdExtensions* values are removed from the [DownloadEntity](/bingads/bulk-service/download-entity) value set.
+In Bing Ads API Version 12 the format version 5.0 *Sitelink Ad Extension*, *Campaign Sitelink Ad Extension*, and *AdGroup Sitelink Ad Extension* records are removed. Likewise, the *SiteLinksAdExtension*, *CampaignSiteLinksAdExtensions*, and *AdGroupSiteLinksAdExtensions* values are removed from the [DownloadEntity](/binga/bingads/bulk-service/download-entity) value set.
 
-When you migrate to version 12 remove the '2' suffix from all *Sitelink2* records i.e., use the format version 6.0 [Sitelink Ad Extension](/bingads/bulk-service/sitelink-ad-extension.md), [Account Sitelink Ad Extension](/bingads/bulk-service/account-sitelink-ad-extension.md), [Campaign Sitelink Ad Extension](/bingads/bulk-service/campaign-sitelink-ad-extension.md), and [Ad Group Sitelink Ad Extension](/bingads/bulk-service/ad-group-sitelink-ad-extension.md) records. Likewise remove the '2' suffix from each [DownloadEntity](/bingads/bulk-service/download-entity) value in version 12 i.e., use *SitelinkAdExtensions*, *AccountSitelinkAdExtensions*, *CampaignSitelinkAdExtensions*, and *AdGroupSitelinkAdExtensions*.
+When you migrate to version 12 remove the '2' suffix from all *Sitelink2* records i.e., use the format version 6.0 [Sitelink Ad Extension](/binga/bingads/bulk-service/sitelink-ad-extension.md), [Account Sitelink Ad Extension](/binga/bingads/bulk-service/account-sitelink-ad-extension.md), [Campaign Sitelink Ad Extension](/binga/bingads/bulk-service/campaign-sitelink-ad-extension.md), and [Ad Group Sitelink Ad Extension](/binga/bingads/bulk-service/ad-group-sitelink-ad-extension.md) records. Likewise remove the '2' suffix from each [DownloadEntity](/binga/bingads/bulk-service/download-entity) value in version 12 i.e., use *SitelinkAdExtensions*, *AccountSitelinkAdExtensions*, *CampaignSitelinkAdExtensions*, and *AdGroupSitelinkAdExtensions*.
 
 #### <a name="bulk-audiencetargetingsetting"></a>Audience Targeting Setting
-The *Remarketing Targeting Setting* field of an [Ad Group](/bingads/bulk-service/ad-group.md) is renamed as *Audience Targeting Setting*. The setting is applicable for all audiences, including but not limited to remarketing lists. 
+The *Remarketing Targeting Setting* field of an [Ad Group](/binga/bingads/bulk-service/ad-group.md) is renamed as *Audience Targeting Setting*. The setting is applicable for all audiences, including but not limited to remarketing lists. 
 
 #### <a name="bulk-sunset-content"></a>Content Ad Distribution
-The Content ad distribution is no longer supported in Bing Ads, and the *Content Bid*, *Content Network*, and *Search Network* fields of an [Ad Group](/bingads/bulk-service/ad-group.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. 
+The Content ad distribution is no longer supported in Bing Ads, and the *Content Bid*, *Content Network*, and *Search Network* fields of an [Ad Group](/binga/bingads/bulk-service/ad-group.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. 
 
-Likewise the *Campaign Type* value of the corresponding [Campaign](/bingads/bulk-service/campaign.md) is updated from *SearchAndContent* to *Search*. 
+Likewise the *Campaign Type* value of the corresponding [Campaign](/binga/bingads/bulk-service/campaign.md) is updated from *SearchAndContent* to *Search*. 
 
 #### <a name="bulk-sunset-cpm"></a>Cpm Pricing Model
-The CPM pricing model is no longer supported in Bing Ads, and the *Pricing Model* field of an [Ad Group](/bingads/bulk-service/ad-group.md) is removed from version 12. The *Pricing Model* field in version 11 was optional, defaulted to *Cpc*, and could only be set to *Cpc*. 
+The CPM pricing model is no longer supported in Bing Ads, and the *Pricing Model* field of an [Ad Group](/binga/bingads/bulk-service/ad-group.md) is removed from version 12. The *Pricing Model* field in version 11 was optional, defaulted to *Cpc*, and could only be set to *Cpc*. 
 
 #### <a name="bulk-timezone"></a>Time Zone Updates
-The following time zone values are updated for the *Time Zone* field of the [Campaign](/bingads/bulk-service/campaign.md) record. 
+The following time zone values are updated for the *Time Zone* field of the [Campaign](/binga/bingads/bulk-service/campaign.md) record. 
 -  Since Magadan is now permanently in UTC+12 time zone, the value is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
 -  The value is updated from *Almaty_Novosibirsk* to *AlmatyNovosibirsk*.
 -  The value is updated from *MidwayIslandand_Samoa* to *MidwayIslandAndSamoa*.
@@ -122,43 +122,43 @@ The sandbox endpoint is [https://campaign.api.sandbox.bingads.microsoft.com/Api/
 
 
 #### <a name="campaign-returnadditionalfields"></a>Return Additional Fields
-The *ReturnAdditionalFields* element is removed from the [GetAdGroupsByCampaignId](/bingads/campaign-management-service/getadgroupsbycampaignid.md),[GetAdGroupsByIds](/bingads/campaign-management-service/getadgroupsbyids.md), [GetAudiencesByIds](/bingads/campaign-management-service/getaudiencesbyids.md), [GetKeywordsByAdGroupId](/bingads/campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](/bingads/campaign-management-service/getkeywordsbyeditorialstatus.md),  and [GetKeywordsByIds](/bingads/campaign-management-service/getkeywordsbyids.md) request messages, and the corresponding elements of each [AdGroup](/bingads/campaign-management-service/adgroup.md), [Audience](/bingads/campaign-management-service/audience.md), and [Keyword](/bingads/campaign-management-service/keyword.md) are returned by default.
+The *ReturnAdditionalFields* element is removed from the [GetAdGroupsByCampaignId](/binga/bingads/campaign-management-service/getadgroupsbycampaignid.md),[GetAdGroupsByIds](/binga/bingads/campaign-management-service/getadgroupsbyids.md), [GetAudiencesByIds](/binga/bingads/campaign-management-service/getaudiencesbyids.md), [GetKeywordsByAdGroupId](/binga/bingads/campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](/binga/bingads/campaign-management-service/getkeywordsbyeditorialstatus.md),  and [GetKeywordsByIds](/binga/bingads/campaign-management-service/getkeywordsbyids.md) request messages, and the corresponding elements of each [AdGroup](/binga/bingads/campaign-management-service/adgroup.md), [Audience](/binga/bingads/campaign-management-service/audience.md), and [Keyword](/binga/bingads/campaign-management-service/keyword.md) are returned by default.
 
 #### <a name="campaign-sitelinkadextensions"></a>Sitelink Ad Extensions
 During calendar year 2017, Bing Ads upgraded all version 11 *SiteLinksAdExtension* objects (contains multiple sitelinks per ad extension) to *Sitelink2AdExtension* objects (contains one sitelink per ad extension). 
 
-In Bing Ads API Version 12 the *SiteLinksAdExtension* and *SiteLink* objects are removed. The *Sitelink2AdExtension* object is renamed [SitelinkAdExtension](/bingads/campaign-management-service/sitelinkadextension.md). Likewise, the *SiteLinksAdExtension* value is removed from [AdExtensionsTypeFilter](/bingads/campaign-management-service/adextensionsstypefilter.md) value set, and the *Sitelink2AdExtension* value is renamed *Sitelink2AdExtension* (sans '2' suffix).
+In Bing Ads API Version 12 the *SiteLinksAdExtension* and *SiteLink* objects are removed. The *Sitelink2AdExtension* object is renamed [SitelinkAdExtension](/binga/bingads/campaign-management-service/sitelinkadextension.md). Likewise, the *SiteLinksAdExtension* value is removed from [AdExtensionsTypeFilter](/binga/bingads/campaign-management-service/adextensionsstypefilter.md) value set, and the *Sitelink2AdExtension* value is renamed *Sitelink2AdExtension* (sans '2' suffix).
 
-When you migrate to version 12 remove the '2' suffix from *Sitelink2AdExtension*, and otherwise the version 12 [SitelinkAdExtension](/bingads/campaign-management-service/sitelinkadextension.md) interface is identical to the version 11 *Sitelink2AdExtension* object. Likewise the ad extension [Type](/bingads/campaign-management-service/sitelinkadextension.md#type) value is *SitelinkAdExtension* when you retrieve a sitelink ad extension in version 12.
+When you migrate to version 12 remove the '2' suffix from *Sitelink2AdExtension*, and otherwise the version 12 [SitelinkAdExtension](/binga/bingads/campaign-management-service/sitelinkadextension.md) interface is identical to the version 11 *Sitelink2AdExtension* object. Likewise the ad extension [Type](/binga/bingads/campaign-management-service/sitelinkadextension.md#type) value is *SitelinkAdExtension* when you retrieve a sitelink ad extension in version 12.
 
 #### <a name="campaign-audiencetargetingsetting"></a>Audience Targeting Setting
-The *RemarketingTargetingSetting* element of an [AdGroup](/bingads/campaign-management-service/adgroup.md) is renamed as *AudienceTargetingSetting*. The setting is applicable for all audiences, including but not limited to remarketing lists. 
+The *RemarketingTargetingSetting* element of an [AdGroup](/binga/bingads/campaign-management-service/adgroup.md) is renamed as *AudienceTargetingSetting*. The setting is applicable for all audiences, including but not limited to remarketing lists. 
 
 #### <a name="campaign-accountmigrationstatusinfo"></a>Account Migration Status Info
-The *MigrationStatusInfo* (singular) element of an [AccountMigrationStatusesInfo](/bingads/campaign-management-service/accountmigrationstatusesinfo.md) object is renamed as *MigrationStatusInfos* (plural). This will resolve ambiguity between the returned name and data type.  
+The *MigrationStatusInfo* (singular) element of an [AccountMigrationStatusesInfo](/binga/bingads/campaign-management-service/accountmigrationstatusesinfo.md) object is renamed as *MigrationStatusInfos* (plural). This will resolve ambiguity between the returned name and data type.  
 
 #### <a name="campaign-expandedtextaddomain"></a>Expanded Text Ad Domain
-The *DisplayUrl* element of an [ExpandedTextAd](/bingads/campaign-management-service/expandedtextad.md) object is renamed as *Domain*.  
+The *DisplayUrl* element of an [ExpandedTextAd](/binga/bingads/campaign-management-service/expandedtextad.md) object is renamed as *Domain*.  
 
 #### <a name="campaign-mediatype"></a>Media Type
-The values returned in the *MediaType* and *Type* elements of a [Media](/bingads/campaign-management-service/media.md) object are swapped. In version 11 the derived media type of an [Image](/bingads/campaign-management-service/image.md) was returned in the *MediaType* element e.g., *Image*, and the aspect ratio was returned in the *Type* element e.g., *Image15x10*. In version 12 the derived media type of an [Image](/bingads/campaign-management-service/image.md) is returned in the *Type* element e.g., *Image*, and the aspect ratio is returned in the *MediaType* element e.g., *Image15x10*. Long term this should reduce friction for clients who depend on the derived type in the *Type* element.
+The values returned in the *MediaType* and *Type* elements of a [Media](/binga/bingads/campaign-management-service/media.md) object are swapped. In version 11 the derived media type of an [Image](/binga/bingads/campaign-management-service/image.md) was returned in the *MediaType* element e.g., *Image*, and the aspect ratio was returned in the *Type* element e.g., *Image15x10*. In version 12 the derived media type of an [Image](/binga/bingads/campaign-management-service/image.md) is returned in the *Type* element e.g., *Image*, and the aspect ratio is returned in the *MediaType* element e.g., *Image15x10*. Long term this should reduce friction for clients who depend on the derived type in the *Type* element.
 
 #### <a name="campaign-sunset-content"></a>Content Ad Distribution
-The Content ad distribution is no longer supported in Bing Ads, and the *AdDistribution* element of an [AdGroup](/bingads/campaign-management-service/adgroup.md) is removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. 
+The Content ad distribution is no longer supported in Bing Ads, and the *AdDistribution* element of an [AdGroup](/binga/bingads/campaign-management-service/adgroup.md) is removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. 
 
-Likewise the [CampaignType](/bingads/campaign-management-service/campaigntype.md) value is updated from *SearchAndContent* to *Search*. 
+Likewise the [CampaignType](/binga/bingads/campaign-management-service/campaigntype.md) value is updated from *SearchAndContent* to *Search*. 
 
 #### <a name="campaign-sunset-cpm"></a>Cpm Pricing Model
-The CPM pricing model is no longer supported in Bing Ads, and the *PricingModel* element of an [AdGroup](/bingads/campaign-management-service/adgroup.md) is removed from version 12. The *PricingModel* element in version 11 was optional, defaulted to *Cpc*, and could only be set to *Cpc*. 
+The CPM pricing model is no longer supported in Bing Ads, and the *PricingModel* element of an [AdGroup](/binga/bingads/campaign-management-service/adgroup.md) is removed from version 12. The *PricingModel* element in version 11 was optional, defaulted to *Cpc*, and could only be set to *Cpc*. 
 
 #### <a name="campaign-timezone"></a>Time Zone Updates
-The following time zone values are updated for the *TimeZone* element of the [Campaign](/bingads/campaign-management-service/campaign.md) object. 
+The following time zone values are updated for the *TimeZone* element of the [Campaign](/binga/bingads/campaign-management-service/campaign.md) object. 
 -  Since Magadan is now permanently in UTC+12 time zone, the value is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
 -  The value is updated from *Almaty_Novosibirsk* to *AlmatyNovosibirsk*.
 -  The value is updated from *MidwayIslandand_Samoa* to *MidwayIslandAndSamoa*.
 
 #### <a name="campaign-batcherrorcollectioneditorial"></a>Batch Error Collection Editorial Errors
-The Appealable, DisapprovedText, Location, PublisherCountry, and ReasonCode elements are added to the [BatchErrorCollection](/bingads/campaign-management-service/batcherrorcollection.md) object. 
+The Appealable, DisapprovedText, Location, PublisherCountry, and ReasonCode elements are added to the [BatchErrorCollection](/binga/bingads/campaign-management-service/batcherrorcollection.md) object. 
 
 ## <a name="billing"></a>Customer Billing
 
@@ -186,12 +186,12 @@ The production endpoint is [https://clientcenter.api.bingads.microsoft.com/Api/C
 The sandbox endpoint is [https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc](https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc).
 
 #### <a name="customer-advertiseraccount"></a>Advertiser Account
-The [AdvertiserAccount](/bingads/customer-management-service/advertiseraccount.md) object no longer derives from an *Account* base. The *Account* object is removed and its properties are moved directly to the [AdvertiserAccount](/bingads/customer-management-service/advertiseraccount.md) object. 
+The [AdvertiserAccount](/binga/bingads/customer-management-service/advertiseraccount.md) object no longer derives from an *Account* base. The *Account* object is removed and its properties are moved directly to the [AdvertiserAccount](/binga/bingads/customer-management-service/advertiseraccount.md) object. 
 
-Also because only one account type is supported, the *AccountType* and *ApplicationType* value sets are removed. In turn the *AccountType* element is removed from the [AdvertiserAccount](/bingads/customer-management-service/advertiseraccount.md) object, and the *ApplicationScope* request element is removed from the [SignupCustomer](/bingads/customer-management-service/signupcustomer.md) operation.
+Also because only one account type is supported, the *AccountType* and *ApplicationType* value sets are removed. In turn the *AccountType* element is removed from the [AdvertiserAccount](/binga/bingads/customer-management-service/advertiseraccount.md) object, and the *ApplicationScope* request element is removed from the [SignupCustomer](/binga/bingads/customer-management-service/signupcustomer.md) operation.
 
 #### <a name="customer-advertiseraccount"></a>AutoTag Type
-The *AutoTag* key and value pair is removed from the *ForwardCompatibilityMap* element of the [AdvertiserAccount](/bingads/customer-management-service/advertiseraccount.md) object. Instead the *AutoTagType* element is added to the [AdvertiserAccount](/bingads/customer-management-service/advertiseraccount.md). The new [AutoTagType](/bingads/customer-management-service/autotagtype.md) values are *Inactive*, *Preserve*, and *Replace*. If you used values 0, 1, or 2 in the version 11 *AutoTag*, then you can replace them with the version 12 auto tag type as follows.
+The *AutoTag* key and value pair is removed from the *ForwardCompatibilityMap* element of the [AdvertiserAccount](/binga/bingads/customer-management-service/advertiseraccount.md) object. Instead the *AutoTagType* element is added to the [AdvertiserAccount](/binga/bingads/customer-management-service/advertiseraccount.md). The new [AutoTagType](/binga/bingads/customer-management-service/autotagtype.md) values are *Inactive*, *Preserve*, and *Replace*. If you used values 0, 1, or 2 in the version 11 *AutoTag*, then you can replace them with the version 12 auto tag type as follows.
 
 Version 11|Version 12  
 ---------|---------
@@ -200,13 +200,13 @@ Version 11|Version 12
 2|Replace
 
 #### <a name="customer-advertiseraccount"></a>Tracking Url Template
-The *TrackingUrlTemplate* key and value pair is removed from the *ForwardCompatibilityMap* element of the [AdvertiserAccount](/bingads/customer-management-service/advertiseraccount.md) object. Instead you can set the [AccountProperty](/bingads/campaign-management-service/accountproperty.md) name for *TrackingUrlTemplate* via the Campaign Management service, or set the *Tracking Template* field of the [Account](/bingads/bulk-service/account.md) record via the Bulk service.  
+The *TrackingUrlTemplate* key and value pair is removed from the *ForwardCompatibilityMap* element of the [AdvertiserAccount](/binga/bingads/customer-management-service/advertiseraccount.md) object. Instead you can set the [AccountProperty](/binga/bingads/campaign-management-service/accountproperty.md) name for *TrackingUrlTemplate* via the Campaign Management service, or set the *Tracking Template* field of the [Account](/binga/bingads/bulk-service/account.md) record via the Bulk service.  
 
 #### <a name="customer-currencycode"></a>ISO Currency Codes
-The *CurrencyType* value set is renamed as [CurrencyCode](/bingads/customer-management-service/currencycode.md). The values are updated with ISO codes e.g., *USD* replaces *USDollar*. The new value set is used with the [AdvertiserAccount](/bingads/customer-management-service/advertiseraccount.md) object. 
+The *CurrencyType* value set is renamed as [CurrencyCode](/binga/bingads/customer-management-service/currencycode.md). The values are updated with ISO codes e.g., *USD* replaces *USDollar*. The new value set is used with the [AdvertiserAccount](/binga/bingads/customer-management-service/advertiseraccount.md) object. 
 
 #### <a name="customer-timezone"></a>Time Zone Updates
-The following values are updated in the [TimeZoneType](/bingads/customer-management-service/timezonetype.md) value set. 
+The following values are updated in the [TimeZoneType](/binga/bingads/customer-management-service/timezonetype.md) value set. 
 -  Since Magadan is now permanently in UTC+12 time zone, the value is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
 -  The value of *InternationalDatelineWest* (lowercase 'l' in Dateline) is updated to *InternationalDateLineWest* (uppercase 'L' in DateLine). 
 
@@ -224,7 +224,7 @@ The production endpoint is [https://reporting.api.bingads.microsoft.com/Api/Adve
 The sandbox endpoint is [https://reporting.api.sandbox.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc](https://reporting.api.sandbox.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc).
 
 #### <a name="reporting-downloadedcolumns"></a>Consistency Between WSDL Contract and Downloaded Report Columns
-Previously there were some discrepancies between the report column value set names and the names of the columns in the downloaded reports. In Reporting API Version 12 all of the downloaded column names match the requested value. For example now when you submit a [KeywordPerformanceReportRequest](/bingads/reporting-service/keywordperformancereportrequest.md) with the *BidStrategyType* value from the [KeywordPerformanceReportColumn](/bingads/reporting-service/keywordperformancereportcolumn.md) value set, the column name in the downloaded report is also *BidStrategyType* in Reporting API Version 12. Previously in version 11, the column name in the downloaded report was *Bid strategy type*.
+Previously there were some discrepancies between the report column value set names and the names of the columns in the downloaded reports. In Reporting API Version 12 all of the downloaded column names match the requested value. For example now when you submit a [KeywordPerformanceReportRequest](/binga/bingads/reporting-service/keywordperformancereportrequest.md) with the *BidStrategyType* value from the [KeywordPerformanceReportColumn](/binga/bingads/reporting-service/keywordperformancereportcolumn.md) value set, the column name in the downloaded report is also *BidStrategyType* in Reporting API Version 12. Previously in version 11, the column name in the downloaded report was *Bid strategy type*.
 
 The following column names have changed in the downloaded reports from version 11 to 12.
 
@@ -265,46 +265,46 @@ TopLevelCategory|Category0
 
 
 #### <a name="reporting-columnrestrictions"></a>Column Restrictions
-For some reports you cannot include constrained attributes in the same report request. For example when submitting the [AccountPerformanceReportRequest](/bingads/reporting-service/accountperformancereportrequest.md) and [AdGroupPerformanceReportRequest](/bingads/reporting-service/adgroupperformancereportrequest.md) if you include any of the impression share performance statistics columns, then you must exclude the *BidMatchType*, *DeviceOS*, and *TopVsOther* attribute columns. Likewise, if you include any of these attribute columns, then you must exclude all of the impression share performance statistics columns.
+For some reports you cannot include constrained attributes in the same report request. For example when submitting the [AccountPerformanceReportRequest](/binga/bingads/reporting-service/accountperformancereportrequest.md) and [AdGroupPerformanceReportRequest](/binga/bingads/reporting-service/adgroupperformancereportrequest.md) if you include any of the impression share performance statistics columns, then you must exclude the *BidMatchType*, *DeviceOS*, and *TopVsOther* attribute columns. Likewise, if you include any of these attribute columns, then you must exclude all of the impression share performance statistics columns.
 
 Starting with Bing Ads API Version 12, an error will be returned if you include any constrained report column combinations. Using Bing Ads API Version 11 the report submission did not fail; however, the fields returned in the downloaded report would be 0 (zero) in place of any meaningful data.
 
 For more details, see [Column Restrictions in Reports](reports.md#columnrestrictions).
 
 #### <a name="reporting-reportaggregation"></a>Report Aggregation
-For parity with aggregation options (unit of time) in the Bing Ads web application, Bing Ads API Version 12 enables comparable time periods that previously were not supported via Bing Ads API Version 11. The *NonHourlyReportAggregation* and *SearchQueryReportAggregation* value sets are removed, and you should use [ReportAggregation](/bingads/reporting-service/reportaggregation.md) values for all reports.
+For parity with aggregation options (unit of time) in the Bing Ads web application, Bing Ads API Version 12 enables comparable time periods that previously were not supported via Bing Ads API Version 11. The *NonHourlyReportAggregation* and *SearchQueryReportAggregation* value sets are removed, and you should use [ReportAggregation](/binga/bingads/reporting-service/reportaggregation.md) values for all reports.
 
-When submitting the following report requests, you must use the [ReportAggregation](/bingads/reporting-service/reportaggregation.md) data type instead of *NonHourlyReportAggregation* within the *ReportAggregation* element. Although the [ReportAggregation](/bingads/reporting-service/reportaggregation.md) value set includes additional aggregation periods, unless otherwise noted below these reports are still limited to Summary, Daily, Weekly, Monthly, and Yearly aggregation. If you submit a report with an invalid aggregation period, the API will return error code 2007, ReportingServiceInvalidReportAggregation. 
+When submitting the following report requests, you must use the [ReportAggregation](/binga/bingads/reporting-service/reportaggregation.md) data type instead of *NonHourlyReportAggregation* within the *ReportAggregation* element. Although the [ReportAggregation](/binga/bingads/reporting-service/reportaggregation.md) value set includes additional aggregation periods, unless otherwise noted below these reports are still limited to Summary, Daily, Weekly, Monthly, and Yearly aggregation. If you submit a report with an invalid aggregation period, the API will return error code 2007, ReportingServiceInvalidReportAggregation. 
 
 Report Request|Aggregation Periods Added in Version 12  
 ---------|---------
-[AdDynamicTextPerformanceReportRequest](/bingads/reporting-service/addynamictextperformancereportrequest.md)|Hourly
-[AdPerformanceReportRequest](/bingads/reporting-service/adperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
-[AgeGenderDemographicReportRequest](/bingads/reporting-service/agegenderdemographicreportrequest.md)|None
-[ConversionPerformanceReportRequest](/bingads/reporting-service/conversionperformancereportrequest.md)|None
-[DestinationUrlPerformanceReportRequest](/bingads/reporting-service/destinationurlperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
-[DSAAutoTargetPerformanceReportRequest](/bingads/reporting-service/dsaautotargetperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
-[DSACategoryPerformanceReportRequest](/bingads/reporting-service/dsacategoryperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
-[GeographicPerformanceReportRequest](/bingads/reporting-service/geographicperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
-[GoalsAndFunnelsReportRequest](/bingads/reporting-service/goalsandfunnelsreportrequest.md)|None
-[PublisherUsagePerformanceReportRequest](/bingads/reporting-service/publisherusageperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
-[ShareOfVoiceReportRequest](/bingads/reporting-service/shareofvoicereportrequest.md)|None
-[UserLocationPerformanceReportRequest](/bingads/reporting-service/userlocationperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
+[AdDynamicTextPerformanceReportRequest](/binga/bingads/reporting-service/addynamictextperformancereportrequest.md)|Hourly
+[AdPerformanceReportRequest](/binga/bingads/reporting-service/adperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
+[AgeGenderDemographicReportRequest](/binga/bingads/reporting-service/agegenderdemographicreportrequest.md)|None
+[ConversionPerformanceReportRequest](/binga/bingads/reporting-service/conversionperformancereportrequest.md)|None
+[DestinationUrlPerformanceReportRequest](/binga/bingads/reporting-service/destinationurlperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
+[DSAAutoTargetPerformanceReportRequest](/binga/bingads/reporting-service/dsaautotargetperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
+[DSACategoryPerformanceReportRequest](/binga/bingads/reporting-service/dsacategoryperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
+[GeographicPerformanceReportRequest](/binga/bingads/reporting-service/geographicperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
+[GoalsAndFunnelsReportRequest](/binga/bingads/reporting-service/goalsandfunnelsreportrequest.md)|None
+[PublisherUsagePerformanceReportRequest](/binga/bingads/reporting-service/publisherusageperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
+[ShareOfVoiceReportRequest](/binga/bingads/reporting-service/shareofvoicereportrequest.md)|None
+[UserLocationPerformanceReportRequest](/binga/bingads/reporting-service/userlocationperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
 
-When submitting the following report requests, you must use the [ReportAggregation](/bingads/reporting-service/reportaggregation.md) data type instead of *SearchQueryReportAggregation* within the *ReportAggregation* element.
--  [DSASearchQueryPerformanceReportRequest](/bingads/reporting-service/dsasearchqueryperformancereportrequest.md)
--  [SearchQueryPerformanceReportRequest](/bingads/reporting-service/searchqueryperformancereportrequest.md)
+When submitting the following report requests, you must use the [ReportAggregation](/binga/bingads/reporting-service/reportaggregation.md) data type instead of *SearchQueryReportAggregation* within the *ReportAggregation* element.
+-  [DSASearchQueryPerformanceReportRequest](/binga/bingads/reporting-service/dsasearchqueryperformancereportrequest.md)
+-  [SearchQueryPerformanceReportRequest](/binga/bingads/reporting-service/searchqueryperformancereportrequest.md)
 
 #### <a name="reporting-sunset-content"></a>Content Ad Distribution
-The Content ad distribution is no longer supported in Bing Ads, and the *Content* value is removed from the [AdDistributionReportFilter](/bingads/reporting-service/addistributionreportfilter.md), [BidMatchTypeReportFilter](/bingads/reporting-service/bidmatchtypereportfilter.md), and [DeliveredMatchTypeReportFilter](/bingads/reporting-service/deliveredmatchtypereportfilter.md) value sets. 
+The Content ad distribution is no longer supported in Bing Ads, and the *Content* value is removed from the [AdDistributionReportFilter](/binga/bingads/reporting-service/addistributionreportfilter.md), [BidMatchTypeReportFilter](/binga/bingads/reporting-service/bidmatchtypereportfilter.md), and [DeliveredMatchTypeReportFilter](/binga/bingads/reporting-service/deliveredmatchtypereportfilter.md) value sets. 
 
 ### New Features
 
 #### <a name="reporting-reporttimeperiod"></a>More Flexible Report Time Periods
-Bing Ads API version 12 now lets you choose a *TimeZone* when you submit a [ReportRequest](/bingads/reporting-service/reportrequest.md). The time zone can help you accurately scope data for the selected date range. 
+Bing Ads API version 12 now lets you choose a *TimeZone* when you submit a [ReportRequest](/binga/bingads/reporting-service/reportrequest.md). The time zone can help you accurately scope data for the selected date range. 
 
 #### <a name="reporting-reporttimeperiod"></a>More Flexible Report Time Periods
-Bing Ads API version 12 now lets you choose *LastFourteenDays* and *LastThirtyDays* from the [ReportTimePeriod](/bingads/reporting-service/reporttimeperiod.md) value set when you submit a report request. 
+Bing Ads API version 12 now lets you choose *LastFourteenDays* and *LastThirtyDays* from the [ReportTimePeriod](/binga/bingads/reporting-service/reporttimeperiod.md) value set when you submit a report request. 
  
 #### <a name="reporting-topvsother"></a>Top Vs Other for Product Dimension Report
-The *TopVsOther* column is added to the [ProductDimensionPerformanceReportColumn](/bingads/reporting-service/productdimensionperformancereportcolumn.md). 
+The *TopVsOther* column is added to the [ProductDimensionPerformanceReportColumn](/binga/bingads/reporting-service/productdimensionperformancereportcolumn.md). 

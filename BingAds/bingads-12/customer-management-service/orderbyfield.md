@@ -11,7 +11,7 @@ description: Defines the field order of entities returned using one of the searc
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines the field order of entities returned using one of the search operations, for example [SearchAccounts](../customer-management-service/searchaccounts.md), [SearchClientLinks](../customer-management-service/searchclientlinks.md), or [SearchCustomers](../customer-management-service/searchcustomers.md).
+Defines the field order of entities returned using one of the search operations, for example [SearchAccounts](/bingads/customer-management-service/searchaccounts.md), [SearchClientLinks](/bingads/customer-management-service/searchclientlinks.md), or [SearchCustomers](/bingads/customer-management-service/searchcustomers.md).
 
 ## Syntax
 ```xml

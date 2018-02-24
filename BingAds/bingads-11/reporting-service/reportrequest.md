@@ -9,7 +9,7 @@ description: Defines the base object for all report requests.
 # ReportRequest Data Object - Reporting
 Defines the base object for all report requests.
 
-Do not instantiate this object. Instead, you may instantiate one of the report request objects which derives from this object, for example the [CampaignPerformanceReportRequest](../reporting-service/campaignperformancereportrequest.md). For a list of reports, see the [Report Types](/bingads/guides/report-types.md) guide.
+Do not instantiate this object. Instead, you may instantiate one of the report request objects which derives from this object, for example the [CampaignPerformanceReportRequest](/bingads/reporting-service/campaignperformancereportrequest.md). For a list of reports, see the [Report Types](/bingads/guides/report-types.md) guide.
 
 ## Syntax
 ```xml

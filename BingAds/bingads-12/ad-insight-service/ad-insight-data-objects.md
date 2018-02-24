@@ -83,5 +83,5 @@ The Ad Insight service defines the following data objects.
 |[SearchParameter](searchparameter.md)|This is the base class from which keyword idea search parameter objects derive.|
 |[SearchVolumeSearchParameter](searchvolumesearchparameter.md)|The search volume search parameter filter that you can include when requesting keyword ideas.|
 |[SuggestedBidSearchParameter](suggestedbidsearchparameter.md)|The suggested bid search parameter filter that you can include when requesting keyword ideas.|
-|[TrafficEstimate](trafficestimate.md)|Defines an object that contains traffic estimates based on the campaign, ad group, and keyword criteria you specified when calling [GetKeywordTrafficEstimates](../ad-insight-service/getkeywordtrafficestimates.md).|
+|[TrafficEstimate](trafficestimate.md)|Defines an object that contains traffic estimates based on the campaign, ad group, and keyword criteria you specified when calling [GetKeywordTrafficEstimates](/bingads/ad-insight-service/getkeywordtrafficestimates.md).|
 |[UrlSearchParameter](urlsearchparameter.md)|The URL search parameter that you can use as a seed for new keyword ideas.|

@@ -11,7 +11,7 @@ description: Defines a list of optional Keyword properties that you can request 
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines a list of optional [Keyword](../campaign-management-service/keyword.md) properties that you can request when calling [GetKeywordsByAdGroupId](../campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](../campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](../campaign-management-service/getkeywordsbyids.md). This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding propertys will be included in the [Keyword](../campaign-management-service/keyword.md) object by default.
+Defines a list of optional [Keyword](/bingads/campaign-management-service/keyword.md) properties that you can request when calling [GetKeywordsByAdGroupId](/bingads/campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](/bingads/campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](/bingads/campaign-management-service/getkeywordsbyids.md). This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding propertys will be included in the [Keyword](/bingads/campaign-management-service/keyword.md) object by default.
 
 ## Syntax
 ```xml
@@ -30,7 +30,7 @@ Defines a list of optional [Keyword](../campaign-management-service/keyword.md) 
 
 |Value|Description|
 |-----------|---------------|
-|<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|Request that the *InheritedBidStrategyType* element be included within each returned [InheritFromParentBiddingScheme](../campaign-management-service/inheritfromparentbiddingscheme.md) object (nested within the *BiddingScheme* element of a [Keyword](../campaign-management-service/keyword.md)).|
+|<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|Request that the *InheritedBidStrategyType* element be included within each returned [InheritFromParentBiddingScheme](/bingads/campaign-management-service/inheritfromparentbiddingscheme.md) object (nested within the *BiddingScheme* element of a [Keyword](/bingads/campaign-management-service/keyword.md)).|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

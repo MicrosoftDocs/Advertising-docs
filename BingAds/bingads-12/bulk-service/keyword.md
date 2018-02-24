@@ -12,7 +12,7 @@ dev_langs:
 Defines a keyword that can be downloaded and uploaded in a bulk file.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Keyword* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For a *Keyword* record, the following attribute fields are available in the [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md). 
 
 - [Ad Group](#adgroup)
 - [Bid](#bid)
@@ -41,7 +41,7 @@ For a *Keyword* record, the following attribute fields are available in the [Bul
 - [Status](#status)
 - [Tracking Template](#trackingtemplate)
 
-You can download all fields of the *Keyword* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *Keywords* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Keyword* record by including the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value of *Keywords* in the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](/bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new keyword given a valid ad group ID (*Parent Id*). 
 
@@ -153,7 +153,7 @@ The name of the ad group that contains the keyword.
 ### <a name="bid"></a>Bid
 The bid to use when the userâ€™s search term and the keyword match.
 
-**Add:** Optional. If you do not specify a keyword level bid, the [Ad Group](../bulk-service/ad-group.md) bid for the corresponding search or content match type will be used. For more information, see [Budget and Bid Strategies](/bingads/guides/budget-bid-strategies.md).  
+**Add:** Optional. If you do not specify a keyword level bid, the [Ad Group](/bingads/bulk-service/ad-group.md) bid for the corresponding search or content match type will be used. For more information, see [Budget and Bid Strategies](/bingads/guides/budget-bid-strategies.md).  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.  
 **Delete:** Read-only  
 
@@ -227,7 +227,7 @@ The URL of the webpage to take the user to when they click the ad. The keywordâ€
 ### <a name="editorialappealstatus"></a>Editorial Appeal Status
 Determines whether you can appeal the issues found by the editorial review.
 
-Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](/bingads/campaign-management-service/appealstatus.md).
+Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](/binga/bingads/campaign-management-service/appealstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -250,7 +250,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the keyword.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [KeywordEditorialStatus Value Set](/bingads/campaign-management-service/keywordeditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [KeywordEditorialStatus Value Set](/binga/bingads/campaign-management-service/keywordeditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -410,9 +410,9 @@ Also note that if the ad group only has one ad, and if that ad uses {Param3} but
 ### <a name="parentid"></a>Parent Id
 The system generated identifier of the ad group that contains the keyword.
 
-This bulk field maps to the *Id* field of the [Ad Group](../bulk-service/ad-group.md) record.
+This bulk field maps to the *Id* field of the [Ad Group](/bingads/bulk-service/ad-group.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-service/ad-group.md) record. This is recommended if you are adding new keywords to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](/bingads/bulk-service/ad-group.md) record. This is recommended if you are adding new keywords to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/binga/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only  
 **Delete:** Read-only  
 
@@ -455,10 +455,10 @@ The following validation rules apply to tracking templates. For more details abo
 **Delete:** Read-only  
 
 ## <a name="bidsuggestionsdata"></a>Bid Suggestions Data Fields in the Bulk File
-If the requested download [DataScope Value Set](../bulk-service/datascope.md) includes *BidSuggestionsData*, the download file can also contain the [Keyword Best Position Bid](../bulk-service/keyword-best-position-bid.md), [Keyword Main Line Bid](../bulk-service/keyword-main-line-bid.md), and [Keyword First Page Bid](../bulk-service/keyword-first-page-bid.md) records corresponding to each downloaded keyword. 
+If the requested download [DataScope Value Set](/bingads/bulk-service/datascope.md) includes *BidSuggestionsData*, the download file can also contain the [Keyword Best Position Bid](/bingads/bulk-service/keyword-best-position-bid.md), [Keyword Main Line Bid](/bingads/bulk-service/keyword-main-line-bid.md), and [Keyword First Page Bid](/bingads/bulk-service/keyword-first-page-bid.md) records corresponding to each downloaded keyword. 
 
 ## <a name="entityperformancedata"></a>Performance Data Fields in the Bulk File
-If the [DataScope Value Set](../bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
+If the [DataScope Value Set](/bingads/bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
 
 |Column Header|Description|
 |-----------------|---------------|
@@ -473,7 +473,7 @@ If the [DataScope Value Set](../bulk-service/datascope.md) element of the downlo
 |*CPA*|The cost per conversion. The formula for calculating the cost per conversion is *(Spend / Conversions)*.<br/><br/>Only ads in campaigns that enable conversion tracking contribute to the conversion number, so unless all campaigns in the account enable conversion tracking, the number will not be accurate.|
 
 ## <a name="qualityscore"></a>Quality Score Fields in the Bulk File
-If the [DataScope Value Set](../bulk-service/datascope.md) element of the download request includes *QualityScore*, the download file will also include the following fields in this record.
+If the [DataScope Value Set](/bingads/bulk-service/datascope.md) element of the download request includes *QualityScore*, the download file will also include the following fields in this record.
 
 |Column Header|Description|
 |-----------------|---------------|

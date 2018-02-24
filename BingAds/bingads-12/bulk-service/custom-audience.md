@@ -18,7 +18,7 @@ Defines a custom audience that can be downloaded and uploaded in a bulk file.
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Custom Audience* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For a *Custom Audience* record, the following attribute fields are available in the [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md). 
 
 - [Audience](#audience)
 - [Audience Search Size](#audiencesearchsize)
@@ -31,7 +31,7 @@ For a *Custom Audience* record, the following attribute fields are available in 
 - [Scope](#scope)
 - [Status](#status)
 
-You can download all fields of the *Custom Audience* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CustomAudiences* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Custom Audience* record by including the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value of *CustomAudiences* in the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](/bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would update the description and membership duration of a custom audience. 
 

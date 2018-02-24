@@ -14,12 +14,12 @@ description: Defines a base class for criterion bids.
 Defines a base class for criterion bids.
 
 Do not try to instantiate a *CriterionBid*. You can create the following object that derives from it.
--   [BidMultiplier](../campaign-management-service/bidmultiplier.md)  
--   [FixedBid](../campaign-management-service/fixedbid.md)  
+-   [BidMultiplier](/bingads/campaign-management-service/bidmultiplier.md)  
+-   [FixedBid](/bingads/campaign-management-service/fixedbid.md)  
 
-For a list of criterion bids that you can use with [BiddableCampaignCriterion](../campaign-management-service/biddablecampaigncriterion.md), see the [CampaignCriterionType](../campaign-management-service/campaigncriteriontype.md) value set.
+For a list of criterion bids that you can use with [BiddableCampaignCriterion](/bingads/campaign-management-service/biddablecampaigncriterion.md), see the [CampaignCriterionType](/bingads/campaign-management-service/campaigncriteriontype.md) value set.
 
-For a list of criterion bids that you can use with [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md), see the [AdGroupCriterionType](../campaign-management-service/adgroupcriteriontype.md) value set.
+For a list of criterion bids that you can use with [BiddableAdGroupCriterion](/bingads/campaign-management-service/biddableadgroupcriterion.md), see the [AdGroupCriterionType](/bingads/campaign-management-service/adgroupcriteriontype.md) value set.
 
 ## Syntax
 ```xml

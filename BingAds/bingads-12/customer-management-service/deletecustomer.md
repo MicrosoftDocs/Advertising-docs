@@ -26,7 +26,7 @@ The *DeleteCustomerRequest* object defines the [body](#request-body) and [header
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="customerid"></a>CustomerId|The identifier of the customer to delete.|**long**|
-|<a name="timestamp"></a>TimeStamp|The time-stamp value that the operation uses to reconcile the update. You must call  [GetCustomer](../customer-management-service/getcustomer.md) to get the time-stamp value. The delete operation fails if the customer object has a time-stamp value that differs from the one that you pass.|**base64Binary**|
+|<a name="timestamp"></a>TimeStamp|The time-stamp value that the operation uses to reconcile the update. You must call  [GetCustomer](/bingads/customer-management-service/getcustomer.md) to get the time-stamp value. The delete operation fails if the customer object has a time-stamp value that differs from the one that you pass.|**base64Binary**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

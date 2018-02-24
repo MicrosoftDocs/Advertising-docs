@@ -15,7 +15,7 @@ dev_langs:
 Adds new conversion goals to the account's shared conversion goal library. 
 
 > [!IMPORTANT]
-> Every time you create a new [DurationGoal](../campaign-management-service/durationgoal.md), [EventGoal](../campaign-management-service/eventgoal.md), [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md), [PagesViewedPerVisitGoal](../campaign-management-service/pagesviewedpervisitgoal.md) or [UrlGoal](../campaign-management-service/urlgoal.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](../campaign-management-service/accountproperty.md) is set to *True* automatically. If the Scope of the goal is set to *Customer* level, then the [AccountProperty](../campaign-management-service/accountproperty.md) for all accounts under the Customer will be set. 
+> Every time you create a new [DurationGoal](/bingads/campaign-management-service/durationgoal.md), [EventGoal](/bingads/campaign-management-service/eventgoal.md), [OfflineConversionGoal](/bingads/campaign-management-service/offlineconversiongoal.md), [PagesViewedPerVisitGoal](/bingads/campaign-management-service/pagesviewedpervisitgoal.md) or [UrlGoal](/bingads/campaign-management-service/urlgoal.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](/bingads/campaign-management-service/accountproperty.md) is set to *True* automatically. If the Scope of the goal is set to *Customer* level, then the [AccountProperty](/bingads/campaign-management-service/accountproperty.md) for all accounts under the Customer will be set. 
 
 > [!TIP]
 > For an implementation overview, see the [Universal Event Tracking](/bingads/guides/universal-event-tracking.md) technical guide.
@@ -40,7 +40,7 @@ The *AddConversionGoalsResponse* object defines the [body](#response-body) and [
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="conversiongoalids"></a>ConversionGoalIds|A list of unique system identifiers corresponding to the conversion goals that were added.<br /><br />The list of identifiers corresponds directly to the list of conversion goals in the request. Items of the list may be returned as null. For each list index where a conversion goal was not added, the corresponding element will be null.|**long** array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](/bingads/campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

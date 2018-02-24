@@ -11,9 +11,9 @@ ms.author: "scottwhi"
 # Status Resource
 The Status resource lets you get the status of product offers that you uploaded to the specified catalog. After you upload offers to the catalog, they go through a validation and editorial review process. This process can take up to a 36 hours. The offer is included in the report only after it completes the review process.
 
-For an overview of how the process works, see [How Do I Get the Status of Product Offers?](../shopping-content/how-get-status-product-offers.md)
+For an overview of how the process works, see [How Do I Get the Status of Product Offers?](/bingads/shopping-content/how-get-status-product-offers.md)
 
-For a code example that shows how to get the catalog's status and download the report, see [Downloading the Catalog Status Report](../shopping-content/code-examples.md#status).
+For a code example that shows how to get the catalog's status and download the report, see [Downloading the Catalog Status Report](/bingads/shopping-content/code-examples.md#status).
 
 ## Base URI
 
@@ -48,11 +48,11 @@ The following are the request and response headers.
 |Header|Description|
 |---------|---------------|
 |Accept|Request header.\<p>Include this header when you download the report. You must set this header to `application/x-zip-compressed`. 
-|<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth authentication token. For information about getting a token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).<br/><br/>This header and the UserName header are mutually exclusive.
+|<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth authentication token. For information about getting a token, see [Authenticating your credentials](/bingads/shopping-content/get-started.md#authentication).<br/><br/>This header and the UserName header are mutually exclusive.
 |Content-Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request. 
 |<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any of the accounts that you manage on behalf of the customer specified in the `CustomerId` header; it doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
 |<a name="customerid"/> CustomerId|Request header.<br/><br/>The customer ID of the customer whose store you manage. Specify this header only if you manage the store on behalf of the customer. If you set this header, you must also set the `CustomerAccountId`  header.  
-|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Bing Ads credentials and developer token?](../shopping-content/get-started.md#credentials).
+|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Bing Ads credentials and developer token?](/bingads/shopping-content/get-started.md#credentials).
 |Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request. 
 |<a name="password"/>Password|Request header.<br/><br/>A Bing Ads user's sign-in password. Specify this header only if you use the UserName header; do not specify this header with the AuthenticationToken header.
 |<a name="username"/>UserName|Request header.<br/><br/>A Bing Ads user's sign-in user name. You may not set this element to a Microsoft account or email address. This header and the AuthenticationToken header are mutually exclusive.
@@ -117,11 +117,11 @@ The fourth row contains the following column names for the report body, which st
 
 |Column Name|Description|
 |---------------|---------------|
-|Item Id|The [offerId](../shopping-content/products-resource.md#offerid) of the offer that failed validation or editorial review. The report will contain unique IDs.
+|Item Id|The [offerId](/bingads/shopping-content/products-resource.md#offerid) of the offer that failed validation or editorial review. The report will contain unique IDs.
 |Message|The error being reported.
 |Type|The type of error. The possible values are Error or Warning.
 |Values|The data value that caused the error, if the error was caused by an invalid value.
-|Offer Snippet|A semicolon-delimited list of subset of the offer data. The format is [title](../shopping-content/products-resource.md#title);[productType](../shopping-content/products-resource.md#producttype);[link](../shopping-content/products-resource.md#link);[imageLink](../shopping-content/products-resource.md#imagelink);[price](../shopping-content/products-resource.md#price);[salePrice](../shopping-content/products-resource.md#saleprice);[saleStartDate](../shopping-content/products-resource.md#salepricedate);[saleEndDate](../shopping-content/products-resource.md#salepricedate). Not all errors will include all components. 
+|Offer Snippet|A semicolon-delimited list of subset of the offer data. The format is [title](/bingads/shopping-content/products-resource.md#title);[productType](/bingads/shopping-content/products-resource.md#producttype);[link](/bingads/shopping-content/products-resource.md#link);[imageLink](/bingads/shopping-content/products-resource.md#imagelink);[price](/bingads/shopping-content/products-resource.md#price);[salePrice](/bingads/shopping-content/products-resource.md#saleprice);[saleStartDate](/bingads/shopping-content/products-resource.md#salepricedate);[saleEndDate](/bingads/shopping-content/products-resource.md#salepricedate). Not all errors will include all components. 
 
-For an example of the report, see [Example Report](../shopping-content/how-get-status-product-offers.md#examplereport).
+For an example of the report, see [Example Report](/bingads/shopping-content/how-get-status-product-offers.md#examplereport).
 

@@ -17,7 +17,7 @@ You can request duration and phone spend for each forwarded call that originated
 
 There is one row or record in the report for each call made to the tracked number.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](/bingads/reporting-service/submitgeneratereport.md) operation.
 
 > [!NOTE]
 > You should not use this report to get performance data for Bing Shopping campaigns. It is only applicable for other campaign types.

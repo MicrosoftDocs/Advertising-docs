@@ -27,7 +27,7 @@ The *GetKeywordsByIdsRequest* object defines the [body](#request-body) and [head
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group whose keywords you want to get.|**long**|
 |<a name="keywordids"></a>KeywordIds|A maximum of 1,000 identifiers of the keywords to get.|**long** array|
-|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [Keyword](../campaign-management-service/keyword.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[KeywordAdditionalField](keywordadditionalfield.md)|
+|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [Keyword](/bingads/campaign-management-service/keyword.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[KeywordAdditionalField](keywordadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -39,8 +39,8 @@ The *GetKeywordsByIdsResponse* object defines the [body](#response-body) and [he
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywords"></a>Keywords|An array of [Keyword](../campaign-management-service/keyword.md) objects that corresponds directly to the keyword identifiers that you specified in the request. Items of the list may be returned as null. For each list index where a keyword was not retrieved, the corresponding element will be null.|[Keyword](keyword.md) array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="keywords"></a>Keywords|An array of [Keyword](/bingads/campaign-management-service/keyword.md) objects that corresponds directly to the keyword identifiers that you specified in the request. Items of the list may be returned as null. For each list index where a keyword was not retrieved, the corresponding element will be null.|[Keyword](keyword.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](/bingads/campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
