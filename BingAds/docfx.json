@@ -52,7 +52,7 @@
         ]
       },
       {
-        "group": "guides",
+        "group": "bingads-12",
         "src": "guides",
         "files": [
           "**/*.md",
@@ -107,7 +107,7 @@
         ]
       },
       {
-        "group": "guides",
+        "group": "bingads-12",
         "src": "guides",
         "files": [
           "**/*.png",
@@ -166,10 +166,6 @@
       "bingads-11": {
         "dest": "",
         "moniker_range": " = bingads-11"
-      },
-      "guides": {
-        "dest": "",
-        "moniker_range": " = bingads-11 || =  bingads-12"
       }
     }
   }
