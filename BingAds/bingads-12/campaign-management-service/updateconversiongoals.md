@@ -15,7 +15,7 @@ dev_langs:
 Updates conversion goals within the account's shared conversion goal library. 
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](bingads/guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
 
 ## <a name="request"></a>Request Elements
 The *UpdateConversionGoalsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -24,7 +24,7 @@ The *UpdateConversionGoalsRequest* object defines the [body](#request-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="conversiongoals"></a>ConversionGoals|An array of [ConversionGoal](bingads/campaign-management-service/conversiongoal.md) objects to update within the account's shared conversion goal library.<br /><br />You can update a maximum of 100 conversion goals in a single call. <br/><br/>The account is determined by the required *CustomerAccountId* header element.|[ConversionGoal](conversiongoal.md) array|
+|<a name="conversiongoals"></a>ConversionGoals|An array of [ConversionGoal](../campaign-management-service/conversiongoal.md) objects to update within the account's shared conversion goal library.<br /><br />You can update a maximum of 100 conversion goals in a single call. <br/><br/>The account is determined by the required *CustomerAccountId* header element.|[ConversionGoal](conversiongoal.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -36,7 +36,7 @@ The *UpdateConversionGoalsResponse* object defines the [body](#response-body) an
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](bingads/campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -141,7 +141,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<UpdateConversionGoalsResponse> UpdateConversionGoalsAsync(
 	IList<ConversionGoal> conversionGoals)

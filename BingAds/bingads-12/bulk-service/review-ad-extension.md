@@ -14,7 +14,7 @@ Defines a review ad extension that can be downloaded and uploaded in a bulk file
 You can associate a review ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 review ad extensions. An expanded text ad will only include one review per impression. Use the [Account Review Ad Extension](account-review-ad-extension.md), [Ad Group Review Ad Extension](ad-group-review-ad-extension.md), and [Campaign Review Ad Extension](campaign-review-ad-extension.md) records to manage review ad extension associations.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Review Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bingads/bulk-service/bulk-file-schema.md). 
+For a *Review Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 
 - [Ad Schedule](#adschedule)
 - [Client Id](#clientid)
@@ -36,7 +36,7 @@ For a *Review Ad Extension* record, the following attribute fields are available
 - [Use Searcher Time Zone](#usesearchertimezone)
 - [Version](#version)
 
-You can download all fields of the *Review Ad Extension* record by including the [DownloadEntity](bingads/bulk-service/downloadentity.md) value of *ReviewAdExtensions* in the [DownloadCampaignsByAccountIds](bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Review Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *ReviewAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Review Ad Extension to the account's shared library. 
 
@@ -46,7 +46,7 @@ Format Version,,,,,,,,,,,,5,,,,,
 Review Ad Extension,Active,-16,0,,,ClientIdGoesHere,,,12/31/2018,Review Text,,,(Monday[09:00-21:00]),FALSE,TRUE,Review Source Name,http://review.contoso.com
 ```
 
-If you are using the [Bing Ads SDKs](bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkReviewAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkReviewAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -153,7 +153,7 @@ The component or property of the ad extension that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](bingads/guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -162,7 +162,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](bingads/campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -189,7 +189,7 @@ The end date is inclusive. For example, if you set this field to 3/10/2017, the 
 ### <a name="id"></a>Id
 The system generated identifier of the ad extension.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Review Ad Extension](bingads/bulk-service/ad-group-review-ad-extension.md) and [Campaign Review Ad Extension](bingads/bulk-service/campaign-review-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Review Ad Extension](../bulk-service/ad-group-review-ad-extension.md) and [Campaign Review Ad Extension](../bulk-service/campaign-review-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -213,7 +213,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The system generated identifier of the account that contains the ad extension.
 
-This bulk field maps to the *Id* field of the [Account](bingads/bulk-service/account.md) record.
+This bulk field maps to the *Id* field of the [Account](../bulk-service/account.md) record.
 
 **Add:** Read-only  
 **Update:** Read-only  

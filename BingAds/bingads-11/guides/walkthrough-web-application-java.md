@@ -9,7 +9,7 @@ dev_langs:
   - java
 ---
 # Walkthrough: Bing Ads Web Application in Java
-The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](bingads/guides/authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](bingads/guides/get-started.md#get-developer-token).  You can create the example step by step as described below, or start with the [provided examples](bingads/guides/code-examples.md).
+The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](../guides/get-started.md#get-developer-token).  You can create the example step by step as described below, or start with the [provided examples](../guides/code-examples.md).
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
@@ -68,7 +68,7 @@ The example web application sends authentication requests to the Microsoft accou
 
 10. In **Project Explorer**, right-click the Web Content folder of your BingAdsWebApp project and select **New** -&gt; **JSP File**. Name the file *index.jsp* and then click **Finish**.
 
-11. Open the Index.jsp file and replace its contents with the following code block. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](bingads/guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](bingads/guides/get-started.md#get-developer-token). If you are using sandbox, you should instead follow the steps below in [Configuring Sandbox](#sandbox).
+11. Open the Index.jsp file and replace its contents with the following code block. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](../guides/get-started.md#get-developer-token). If you are using sandbox, you should instead follow the steps below in [Configuring Sandbox](#sandbox).
 
     ```java
     <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
@@ -246,7 +246,7 @@ The example web application sends authentication requests to the Microsoft accou
 12. The application is ready to be deployed to a server. For example you can publish a [Web App](http://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](http://azure.microsoft.com/services/app-service/). For more information, see [Deploying a Web Application](#deploy). When you start the application you will be prompted by default for Microsoft account credentials to authenticate in production.
 
 ## <a name="sandbox"></a>Configuring Sandbox
-To use the [Sandbox](bingads/guides/sandbox.md) environment, create a new text file named *bingads.properties* within your project source root directory e.g. **ProjectName\src\bingads.properties** and add the following text. The following are the complete contents of the *bingads.properties* file. If the sandbox environment setting is malformed or missing, the default environment is production.
+To use the [Sandbox](../guides/sandbox.md) environment, create a new text file named *bingads.properties* within your project source root directory e.g. **ProjectName\src\bingads.properties** and add the following text. The following are the complete contents of the *bingads.properties* file. If the sandbox environment setting is malformed or missing, the default environment is production.
 
 ```no-highlight
 environment=Sandbox
@@ -277,7 +277,7 @@ If you are using Microsoft Azure to deploy your web application, the following a
 -   Optionally you can install the Azure Toolkit for Eclipse (by Microsoft Open Technologies) and deploy your web application using Azure cloud services. For more information, see [Installing the Azure Toolkit for Eclipse (by Microsoft Open Technologies)](https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse-installation).
 
 ## See Also
-[Sandbox](bingads/guides/sandbox.md)  
-[Bing Ads Code Examples](bingads/guides/code-examples.md)  
-[Bing Ads Web Service Addresses](bingads/guides/web-service-addresses.md)  
+[Sandbox](../guides/sandbox.md)  
+[Bing Ads Code Examples](../guides/code-examples.md)  
+[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
 

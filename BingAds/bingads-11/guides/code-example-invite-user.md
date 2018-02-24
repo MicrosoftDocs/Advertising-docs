@@ -20,4 +20,4 @@ This example demonstrates how to invite a user to manage Bing Ads accounts.
 [!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/invite_user.py)]
 
 ## See Also
-[Get Started with the Bing Ads API](bingads/guides/get-started.md)  
+[Get Started with the Bing Ads API](../guides/get-started.md)  

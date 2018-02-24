@@ -12,7 +12,7 @@ Defines an object that represents the manual CPC bid strategy type.
 This is the default bid strategy type for your campaigns. Use the manual CPC bid strategy type if you will set your ad group and keyword bids, and Bing Ads will use these bids every time. 
 
 > [!TIP]
-> You can set your campaign's bid strategy to [EnhancedCpcBiddingScheme](bingads/campaign-management-service/enhancedcpcbiddingscheme.md), [MaxClicksBiddingScheme](bingads/campaign-management-service/maxclicksbiddingscheme.md), [MaxConversionsBiddingScheme](bingads/campaign-management-service/maxconversionsbiddingscheme.md), or [TargetCpaBiddingScheme](bingads/campaign-management-service/targetcpabiddingscheme.md) and then, at any time, set an individual ad group's or keyword's bid strategy to Manual CPC.
+> You can set your campaign's bid strategy to [EnhancedCpcBiddingScheme](../campaign-management-service/enhancedcpcbiddingscheme.md), [MaxClicksBiddingScheme](../campaign-management-service/maxclicksbiddingscheme.md), [MaxConversionsBiddingScheme](../campaign-management-service/maxconversionsbiddingscheme.md), or [TargetCpaBiddingScheme](../campaign-management-service/targetcpabiddingscheme.md) and then, at any time, set an individual ad group's or keyword's bid strategy to Manual CPC.
 
 ## Syntax
 ```xml
@@ -36,7 +36,7 @@ The [ManualCpcBiddingScheme](manualcpcbiddingscheme.md) object derives from the 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|The type of the bidding scheme. This value is *ManualCpcBiddingScheme* when you retrieve a manual CPC bidding scheme. For more information about bidding scheme types, see the [BiddingScheme Data Object Remarks](bingads/campaign-management-service/biddingscheme.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
+|<a name="type"></a>Type|The type of the bidding scheme. This value is *ManualCpcBiddingScheme* when you retrieve a manual CPC bidding scheme. For more information about bidding scheme types, see the [BiddingScheme Data Object Remarks](../campaign-management-service/biddingscheme.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

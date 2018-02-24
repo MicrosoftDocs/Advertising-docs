@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the possible bid opportunity types you can request when calling GetBidOpportunities.
 ---
 # BidOpportunityType Value Set - Ad Insight
-Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](bingads/ad-insight-service/getbidopportunities.md).
+Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](../ad-insight-service/getbidopportunities.md).
 
 ## Syntax
 ```xml

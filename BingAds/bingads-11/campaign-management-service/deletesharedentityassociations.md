@@ -33,7 +33,7 @@ The *DeleteSharedEntityAssociationsResponse* object defines the [body](#response
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](bingads/campaign-management-service/batcherror.md) objects that contain details for any associations that were not successfully deleted.<br /><br />The list of errors corresponds directly to the list of associations in the request. Items of the list may be returned as null. For each list index where an association was successfully deleted, the corresponding error element will be null. Ideally all associations are deleted successfully and all elements in this list are null.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any associations that were not successfully deleted.<br /><br />The list of errors corresponds directly to the list of associations in the request. Items of the list may be returned as null. For each list index where an association was successfully deleted, the corresponding error element will be null. Ideally all associations are deleted successfully and all elements in this list are null.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -107,7 +107,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<DeleteSharedEntityAssociationsResponse> DeleteSharedEntityAssociationsAsync(
 	IList<SharedEntityAssociation> associations)

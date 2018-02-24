@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a fault object that operations such as AddAdGroupCriterions, UpdateAdGroupCriterions, SetAdExtensionsAssociations, and UpdateAdExtensions return when one or more criterion or ad extensions in your request message fail editorial review.
 ---
 # EditorialApiFaultDetail Data Object - Campaign Management
-Defines a fault object that operations such as [AddAdGroupCriterions](bingads/campaign-management-service/addadgroupcriterions.md), [UpdateAdGroupCriterions](bingads/campaign-management-service/updateadgroupcriterions.md), [SetAdExtensionsAssociations](bingads/campaign-management-service/setadextensionsassociations.md), and [UpdateAdExtensions](bingads/campaign-management-service/updateadextensions.md) return when one or more criterion or ad extensions in your request message fail editorial review.
+Defines a fault object that operations such as [AddAdGroupCriterions](../campaign-management-service/addadgroupcriterions.md), [UpdateAdGroupCriterions](../campaign-management-service/updateadgroupcriterions.md), [SetAdExtensionsAssociations](../campaign-management-service/setadextensionsassociations.md), and [UpdateAdExtensions](../campaign-management-service/updateadextensions.md) return when one or more criterion or ad extensions in your request message fail editorial review.
 
 ## Syntax
 ```xml

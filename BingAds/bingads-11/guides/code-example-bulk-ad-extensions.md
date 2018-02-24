@@ -20,4 +20,4 @@ This example shows how to add, get, and delete extensions for an account's ad ex
 [!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/bulk_ad_extensions.py)]
 
 ## See Also
-[Get Started with the Bing Ads API](bingads/guides/get-started.md)  
+[Get Started with the Bing Ads API](../guides/get-started.md)  

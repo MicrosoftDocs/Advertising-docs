@@ -15,7 +15,7 @@ dev_langs:
 Gets the specified media from an account's media library.
 
 > [!NOTE]
-> This operation only supports media identifiers for location ad extensions. For getting image ad extension media, you should use [GetMediaMetaDataByIds](bingads/campaign-management-service/getmediametadatabyids.md).
+> This operation only supports media identifiers for location ad extensions. For getting image ad extension media, you should use [GetMediaMetaDataByIds](../campaign-management-service/getmediametadatabyids.md).
 
 ## <a name="request"></a>Request Elements
 The *GetMediaByIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -93,7 +93,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetMediaByIdsResponse> GetMediaByIdsAsync(
 	long accountId,

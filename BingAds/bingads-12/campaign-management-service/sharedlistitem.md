@@ -10,7 +10,7 @@ description: Defines the base class of a shared list item.
 Defines the base class of a shared list item.
 
 Do not try to instantiate a *SharedListItem*. You can create the following object that derives from it.
--   [NegativeKeyword](bingads/campaign-management-service/negativekeyword.md)
+-   [NegativeKeyword](../campaign-management-service/negativekeyword.md)
 
 ## Syntax
 ```xml

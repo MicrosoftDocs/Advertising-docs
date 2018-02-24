@@ -23,4 +23,4 @@ This example demonstrates how to associate remarketing lists with a new ad group
 [!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/remarketing_lists.py)]
 
 ## See Also
-[Get Started with the Bing Ads API](bingads/guides/get-started.md)  
+[Get Started with the Bing Ads API](../guides/get-started.md)  

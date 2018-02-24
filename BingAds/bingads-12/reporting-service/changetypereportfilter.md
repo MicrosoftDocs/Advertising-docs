@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the types of changes to entities by which you can filter the report data.
 ---
 # ChangeTypeReportFilter Value Set - Reporting
-Defines the types of changes to entities by which you can filter the report data. These values are also used as column values in the `HowChanged` column of the campaign change history report. For more information, see [SearchCampaignChangeHistoryReportColumn](bingads/reporting-service/searchcampaignchangehistoryreportcolumn.md).
+Defines the types of changes to entities by which you can filter the report data. These values are also used as column values in the `HowChanged` column of the campaign change history report. For more information, see [SearchCampaignChangeHistoryReportColumn](../reporting-service/searchcampaignchangehistoryreportcolumn.md).
 
 ## Syntax
 ```xml

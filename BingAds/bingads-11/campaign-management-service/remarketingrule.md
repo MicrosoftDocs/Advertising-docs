@@ -10,10 +10,10 @@ description: Defines the base object of a remarketing rule.
 Defines the base object of a remarketing rule.
 
 Do not try to instantiate a *RemarketingRule*. You can create one or more following objects that derive from it.
-- [CustomEventsRule](bingads/campaign-management-service/customeventsrule.md)
-- [PageVisitorsRule](bingads/campaign-management-service/pagevisitorsrule.md)
-- [PageVisitorsWhoDidNotVisitAnotherPageRule](bingads/campaign-management-service/pagevisitorswhodidnotvisitanotherpagerule.md) 
-- [PageVisitorsWhoVisitedAnotherPageRule](bingads/campaign-management-service/pagevisitorswhovisitedanotherpagerule.md)
+- [CustomEventsRule](../campaign-management-service/customeventsrule.md)
+- [PageVisitorsRule](../campaign-management-service/pagevisitorsrule.md)
+- [PageVisitorsWhoDidNotVisitAnotherPageRule](../campaign-management-service/pagevisitorswhodidnotvisitanotherpagerule.md) 
+- [PageVisitorsWhoVisitedAnotherPageRule](../campaign-management-service/pagevisitorswhovisitedanotherpagerule.md)
 
 ## Syntax
 ```xml

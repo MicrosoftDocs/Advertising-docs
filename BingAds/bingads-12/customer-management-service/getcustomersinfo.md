@@ -37,7 +37,7 @@ The *GetCustomersInfoResponse* object defines the [body](#response-body) and [he
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customersinfo"></a>CustomersInfo|An array of *CustomerInfo* objects that identifies the list of customers that meet the filter criteria.<br /><br />To get the customer data for a customer in the list, access the *Id* element of the *CustomerInfo* object and use it to call [GetCustomer](bingads/customer-management-service/getcustomer.md).|[CustomerInfo](customerinfo.md) array|
+|<a name="customersinfo"></a>CustomersInfo|An array of *CustomerInfo* objects that identifies the list of customers that meet the filter criteria.<br /><br />To get the customer data for a customer in the list, access the *Id* element of the *CustomerInfo* object and use it to call [GetCustomer](../customer-management-service/getcustomer.md).|[CustomerInfo](customerinfo.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -87,7 +87,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetCustomersInfoResponse> GetCustomersInfoAsync(
 	string customerNameFilter,

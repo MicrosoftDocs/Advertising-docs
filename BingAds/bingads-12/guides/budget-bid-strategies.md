@@ -21,9 +21,9 @@ Your budget tells Bing Ads how much you want to spend on your campaign. You can 
 With shared budgets you can set a single daily budget that can be used by any campaign within the same account. This enables you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Bing Ads account. 
 
 > [!IMPORTANT]
-> You might need to code for shared budgets in the Bing Ads platform, even if you do not plan to use shared budgets. For more details and to determine whether the campaign uses a shared budget, check the value of the *BudgetId* element ([Campaign](bingads/campaign-management-service/campaign.md) object) or *Budget Id* field (Bulk ([Campaign](bingads/bulk-service/campaign.md) object) record).
+> You might need to code for shared budgets in the Bing Ads platform, even if you do not plan to use shared budgets. For more details and to determine whether the campaign uses a shared budget, check the value of the *BudgetId* element ([Campaign](../campaign-management-service/campaign.md) object) or *Budget Id* field (Bulk ([Campaign](../bulk-service/campaign.md) object) record).
 
-The Bing Ads API supports the *DailyBudgetAccelerated* and *DailyBudgetStandard* values as defined in the [BudgetLimitType](bingads/campaign-management-service/budgetlimittype.md) value set.
+The Bing Ads API supports the *DailyBudgetAccelerated* and *DailyBudgetStandard* values as defined in the [BudgetLimitType](../campaign-management-service/budgetlimittype.md) value set.
 
 ### <a name="dailyaccelerated"></a>DailyBudgetAccelerated
 Show your ads for every relevant search, spending at an accelerated rate until you run out of budget for the day. When the daily budget limit is reached, your ads will stop displaying until the next calendar day.
@@ -38,7 +38,7 @@ This is a great option if you have a limited budget and want your ads to show ev
 ### <a name="budget_rules"></a>Budget Rules
 Before you can submit your ad campaign, you need to set a campaign budget amount and select a budget type. Don't worry, you can change your budget amount and budget types at any time. Changes to your budget generally take effect within an hour or so. For a high level introduction to campaign budgets, see [What are my budget options?](http://help.bingads.microsoft.com/#apex/3/en/51006/1) 
 
-If you create a campaign and specify a daily budget, the service calculates the monthly budget limit by multiplying the daily budget by the number of days in the month. The service calculates the new monthly budget at midnight (in the campaign's time zone) on the first day of each month. If the daily budget amount or calculated monthly budget amount is depleted, the campaign is paused automatically. The calculated monthly budget must be within the allowed range for the currency. For more information about minimum and maximum budgets allowed, see [Currencies](bingads/guides/currencies.md).
+If you create a campaign and specify a daily budget, the service calculates the monthly budget limit by multiplying the daily budget by the number of days in the month. The service calculates the new monthly budget at midnight (in the campaign's time zone) on the first day of each month. If the daily budget amount or calculated monthly budget amount is depleted, the campaign is paused automatically. The calculated monthly budget must be within the allowed range for the currency. For more information about minimum and maximum budgets allowed, see [Currencies](../guides/currencies.md).
 
 If you update a campaign that specifies a daily budget on the first day of the month, the service also calculates the monthly budget limit by multiplying the daily budget by the number of days in the month. However, if you update the daily budget after the first day of the month, the service uses the following formula to calculate the monthly budget.
 
@@ -54,7 +54,7 @@ The service will update the monthly budget of an existing campaign by using the 
 Your bid strategy setting tells Bing Ads how you want to manage your bids. Whichever bid strategy you use, Bing Ads will always respect your budget limit. 
 
 > [!NOTE]
-> The Bing Ads web application uses the term *Bid strategy*, the Bing Ads Bulk API uses the *Bid Strategy Type* column for upload and download, and the Bing Ads Campaign Management API derives several bid strategy objects from the [BiddingScheme](bingads/campaign-management-service/biddingscheme.md) object.
+> The Bing Ads web application uses the term *Bid strategy*, the Bing Ads Bulk API uses the *Bid Strategy Type* column for upload and download, and the Bing Ads Campaign Management API derives several bid strategy objects from the [BiddingScheme](../campaign-management-service/biddingscheme.md) object.
 
 The following bid strategy types are available per campaign type. For more information see the [Automatically optimize your campaign with bid strategies](https://help.bingads.microsoft.com/#apex/3/en/56786/1) help article.
 
@@ -73,7 +73,7 @@ The following bid strategy types are available per campaign type. For more infor
 > -  You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Bing Ads about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
 > -  Whether you chose the *DailyBudgetAccelerated* or *DailyBudgetStandard* budget type, Bing Ads will use the *DailyBudgetStandard* budget type. 
 > 
-> Also note that you must have conversion tracking (a UET tag and a conversion goal) set up for the *EnhancedCpc*, *MaxConversions*, and *TargetCpa* bid strategy types to work. See [Universal Event Tracking](bingads/guides/universal-event-tracking.md) for more information.
+> Also note that you must have conversion tracking (a UET tag and a conversion goal) set up for the *EnhancedCpc*, *MaxConversions*, and *TargetCpa* bid strategy types to work. See [Universal Event Tracking](../guides/universal-event-tracking.md) for more information.
 > 
 > To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must have at least 15 conversions in the last 30 days. If you try to add or update a campaign to use one of these strategy types, the requested operation will fail if there is not enough conversion history. If an active campaign uses one of these bid strategy types, and then ceases to meet the minimum conversion history requirement at any time, Bing Ads will stop auto bidding but will continue to use the *DailyBudgetStandard* budget type. For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
 
@@ -135,7 +135,7 @@ Broad match can also match on synonyms and other semantic variations of the quer
     
 Because the search engine can vary its algorithms to expand queries to find broader matches by looking for synonyms and other meanings of the queries, the outcome can sometimes result in keywords being matched to irrelevant queries.
 
-To reduce the chance of irrelevant ads being served to users and the quality score of those ads being affected due to low CTR, you can add any irrelevant queries to your list of negative keywords. To determine the irrelevant queries, see the [Report Types](bingads/guides/report-types.md).
+To reduce the chance of irrelevant ads being served to users and the quality score of those ads being affected due to low CTR, you can add any irrelevant queries to your list of negative keywords. To determine the irrelevant queries, see the [Report Types](../guides/report-types.md).
 
 You can also use the broad match modifier to require that specific terms in your keyword be present in the search term. To implement the broad match modifier, include a plus sign (+) in front of every term in the keyword that must be present in the search term. For example, if you bid on ?Hawaii hotels?, your ad could be served for the search queries, ?Hawaii beach hotels? and ?Hawaii rentals.? However, if you changed the keyword to ?+Hawaii +hotel?, the keyword would match only ?Hawaii beach hotels.?
 
@@ -145,7 +145,7 @@ If you include the broad match modifier on a keyword that specifies a phrase or 
 You should set the ad group *Search Bid* that will be used as the default bid for *Exact*, *Phrase*, and *Broad* match types. You can then override the default by setting individual keyword level match types. Generally, the more precise you require the match to be, the higher conversion rates tend to be while impressions tend to decrease. Finding the right balance between conversions and impressions can help maximize the return on investment (ROI) of your campaign. If you're not sure which match type to use, we suggest starting with broad match. You can then use keyword performance reports over time to see which keywords lead to ad clicks and optimize your keyword list.
 -   If a majority of the keywords in the report are not related to your ad, you might want to use one of the more precise match types.  
 -   For keywords that you want to continue leading to clicks, add them to your keyword list with a more specific match type such as Phrase or Exact.  
--   For keywords that you don't want leading to clicks, add them to your keyword list as negative keywords. For more information, see [Negative Keywords](bingads/guides/negative-keywords.md).  
+-   For keywords that you don't want leading to clicks, add them to your keyword list as negative keywords. For more information, see [Negative Keywords](../guides/negative-keywords.md).  
 
 Exact match is the most restrictive and broad match is the least restrictive match type. If the keyword matches by using the more restrictive match type, it will also match using the less restrictive match types. If the exact match comparison succeeds, the exact-match bid value is used if it exists; otherwise, it gets the bid value from the first less-restrictive match type that has a bid value (set at the keyword or ad group level).
 
@@ -164,9 +164,9 @@ The following table shows example keyword bid values for each match type, as wel
 |0.20|No bid|No bid|Exact|0.20|
 |0.20|No bid|No bid|Phrase|None. Would not participate in auction.|
 
-For Search and Content campaigns, take a look at the keywords you've created for your ad group. Are they all closely related? Do you want to add any others? Are you using a mix of match types? Consider using the [Ad Insight Service](bingads/ad-insight-service/ad-insight-service-reference.md) to get ideas for additional keywords you might want to include in this ad group, and for suggested starting bids. For more information, see [Budget and Bid Opportunities](bingads/guides/budget-bid-opportunities.md). You should create a keyword for each match type that you want to bid on. For example, to bid on exact-match and phrase-match for the keyword *car*, you must create two Keyword objects. When you add the keywords, you?ll get a unique keyword ID for each keyword and match-type combination. Keep in mind that you cannot change a keyword's match type from one match-type bid to another match-type bid. For example, you cannot update a keyword from exact match to phrase match. Instead, you must add a new keyword that specifies a bid amount for the new match type. Optionally you may delete the original keyword if you do not want to bid on its match type.
+For Search and Content campaigns, take a look at the keywords you've created for your ad group. Are they all closely related? Do you want to add any others? Are you using a mix of match types? Consider using the [Ad Insight Service](../ad-insight-service/ad-insight-service-reference.md) to get ideas for additional keywords you might want to include in this ad group, and for suggested starting bids. For more information, see [Budget and Bid Opportunities](../guides/budget-bid-opportunities.md). You should create a keyword for each match type that you want to bid on. For example, to bid on exact-match and phrase-match for the keyword *car*, you must create two Keyword objects. When you add the keywords, you?ll get a unique keyword ID for each keyword and match-type combination. Keep in mind that you cannot change a keyword's match type from one match-type bid to another match-type bid. For example, you cannot update a keyword from exact match to phrase match. Instead, you must add a new keyword that specifies a bid amount for the new match type. Optionally you may delete the original keyword if you do not want to bid on its match type.
 
-You can also use negative keywords to prevent you ads from being served if the user's search query contains one of your negative keywords. For more information about negative keywords, see [Negative Keywords](bingads/guides/negative-keywords.md).
+You can also use negative keywords to prevent you ads from being served if the user's search query contains one of your negative keywords. For more information about negative keywords, see [Negative Keywords](../guides/negative-keywords.md).
 
 ### <a name="normalization"></a>Keyword Normalization
 A keyword is considered a duplicate if it is the same as another keyword, but its punctuation varies. This is called keyword normalization, a process where extraneous characters like punctuation marks and accents are removed from keywords and customer queries. Keywords are normalized when you add them to an ad group to avoid duplicates of keywords that normalize into the same form. Bing Ads flags duplicate keywords so you can remove them. Removing the duplicate keywords will save you time while still giving you thorough keyword coverage. If one of your keywords is marked as a duplicate, there is no reason to manage both of them. You can remove either the duplicate or the original keyword without impacting your campaign.
@@ -181,5 +181,5 @@ Please also note the following validation rules.
 -   As you create your keywords, also be aware of the rules they must follow. Here's some more information: [Bing Ads policies](http://help.bingads.microsoft.com/#apex/3/en/52023/1).  
 
 ## See Also
-[Bing Ads Web Service Addresses](bingads/guides/web-service-addresses.md)
+[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)
 

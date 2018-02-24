@@ -24,7 +24,7 @@ Contains a keyword estimators with your keyword level filter criteria for traffi
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword used for traffic estimates.<br/><br/>You can request estimates for Phrase and Broad match types.|[Keyword](keyword.md)|
-|<a name="maxcpc"></a>MaxCpc|The maximum cost per click filter criteria for the keyword.<br/><br/>You can set the default maximum CPC for all of the ad group's keywords using the *MaxCpc* element of the [AdGroupEstimator](bingads/ad-insight-service/adgroupestimator.md) object. Use the keyword estimator if you want to override the max CPC for a specific keyword.|**double**|
+|<a name="maxcpc"></a>MaxCpc|The maximum cost per click filter criteria for the keyword.<br/><br/>You can set the default maximum CPC for all of the ad group's keywords using the *MaxCpc* element of the [AdGroupEstimator](../ad-insight-service/adgroupestimator.md) object. Use the keyword estimator if you want to override the max CPC for a specific keyword.|**double**|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

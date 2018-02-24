@@ -23,4 +23,4 @@ This example demonstrates how to get the budget opportunities for each campaign 
 [!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/budget_opportunities.py)]
 
 ## See Also
-[Get Started with the Bing Ads API](bingads/guides/get-started.md)  
+[Get Started with the Bing Ads API](../guides/get-started.md)  

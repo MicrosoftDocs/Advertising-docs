@@ -9,21 +9,21 @@ description: This is the base class from which keyword idea search parameter obj
 # SearchParameter Data Object - Ad Insight
 This is the base class from which keyword idea search parameter objects derive. 
 
-Do not try to instantiate a [SearchParameter](bingads/ad-insight-service/searchparameter.md). You can create one or more following objects that derive from it.
-- [CategorySearchParameter](bingads/ad-insight-service/categorysearchparameter.md)  
-- [CompetitionSearchParameter](bingads/ad-insight-service/competitionsearchparameter.md)  
-- [DateRangeSearchParameter](bingads/ad-insight-service/daterangesearchparameter.md)  
-- [DeviceSearchParameter](bingads/ad-insight-service/devicesearchparameter.md)  
-- [ExcludeAccountKeywordsSearchParameter](bingads/ad-insight-service/excludeaccountkeywordssearchparameter.md)  
-- [IdeaTextSearchParameter](bingads/ad-insight-service/ideatextsearchparameter.md)  
-- [ImpressionShareSearchParameter](bingads/ad-insight-service/impressionsharesearchparameter.md)  
-- [LanguageSearchParameter](bingads/ad-insight-service/languagesearchparameter.md)  
-- [LocationSearchParameter](bingads/ad-insight-service/locationsearchparameter.md)  
-- [NetworkSearchParameter](bingads/ad-insight-service/networksearchparameter.md)  
-- [QuerySearchParameter](bingads/ad-insight-service/querysearchparameter.md)  
-- [SearchVolumeSearchParameter](bingads/ad-insight-service/searchvolumesearchparameter.md)  
-- [SuggestedBidSearchParameter](bingads/ad-insight-service/suggestedbidsearchparameter.md)  
-- [UrlSearchParameter](bingads/ad-insight-service/urlsearchparameter.md)  
+Do not try to instantiate a [SearchParameter](../ad-insight-service/searchparameter.md). You can create one or more following objects that derive from it.
+- [CategorySearchParameter](../ad-insight-service/categorysearchparameter.md)  
+- [CompetitionSearchParameter](../ad-insight-service/competitionsearchparameter.md)  
+- [DateRangeSearchParameter](../ad-insight-service/daterangesearchparameter.md)  
+- [DeviceSearchParameter](../ad-insight-service/devicesearchparameter.md)  
+- [ExcludeAccountKeywordsSearchParameter](../ad-insight-service/excludeaccountkeywordssearchparameter.md)  
+- [IdeaTextSearchParameter](../ad-insight-service/ideatextsearchparameter.md)  
+- [ImpressionShareSearchParameter](../ad-insight-service/impressionsharesearchparameter.md)  
+- [LanguageSearchParameter](../ad-insight-service/languagesearchparameter.md)  
+- [LocationSearchParameter](../ad-insight-service/locationsearchparameter.md)  
+- [NetworkSearchParameter](../ad-insight-service/networksearchparameter.md)  
+- [QuerySearchParameter](../ad-insight-service/querysearchparameter.md)  
+- [SearchVolumeSearchParameter](../ad-insight-service/searchvolumesearchparameter.md)  
+- [SuggestedBidSearchParameter](../ad-insight-service/suggestedbidsearchparameter.md)  
+- [UrlSearchParameter](../ad-insight-service/urlsearchparameter.md)  
 
 ## Syntax
 ```xml

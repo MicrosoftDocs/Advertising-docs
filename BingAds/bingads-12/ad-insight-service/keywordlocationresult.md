@@ -24,7 +24,7 @@ Defines an object that contains the locations where users were located when they
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword.|**string**|
-|<a name="keywordlocations"></a>KeywordLocations|An array of [KeywordLocation](bingads/ad-insight-service/keywordlocation.md) objects that contains the geographical locations and the percentage of times that users searched for the keyword from that location.|[KeywordLocation](keywordlocation.md) array|
+|<a name="keywordlocations"></a>KeywordLocations|An array of [KeywordLocation](../ad-insight-service/keywordlocation.md) objects that contains the geographical locations and the percentage of times that users searched for the keyword from that location.|[KeywordLocation](keywordlocation.md) array|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

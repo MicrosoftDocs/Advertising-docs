@@ -35,7 +35,7 @@ The *GetLabelAssociationsByEntityIdsResponse* object defines the [body](#respons
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="labelassociations"></a>LabelAssociations|An array of label associations.<br /><br />For each entity identifier specified in the request, zero or more [LabelAssociation](labelassociation.md) objects are returned. Whereas the order of the returned [LabelAssociation](labelassociation.md) objects is guaranteed in the order of the requested entity identifiers, please note that multiple [LabelAssociation](labelassociation.md) objects can be returned for the same entity identifier.|[LabelAssociation](labelassociation.md) array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](bingads/campaign-management-service/batcherror.md) objects that contain details for any associations that were not successfully retrieved.<br /><br />The list of errors corresponds directly to the list of associations in the request. Items of the list may be returned as null. For each list index where an association was successfully retrieved, the corresponding error element will be null. Ideally all associations are retrieved successfully and all elements in this list are null.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any associations that were not successfully retrieved.<br /><br />The list of errors corresponds directly to the list of associations in the request. Items of the list may be returned as null. For each list index where an association was successfully retrieved, the corresponding error element will be null. Ideally all associations are retrieved successfully and all elements in this list are null.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -111,7 +111,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetLabelAssociationsByEntityIdsResponse> GetLabelAssociationsByEntityIdsAsync(
 	IList<long> entityIds,

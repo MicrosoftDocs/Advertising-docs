@@ -26,7 +26,7 @@ Defines the fixed bid to use in the auction.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="amount"></a>Amount|The bid value. For details about the valid bid range for your market, see [Currencies](bingads/guides/currencies.md).<br/><br/>**Add:** Required<br/>**Update:** Optional|**double**|
+|<a name="amount"></a>Amount|The bid value. For details about the valid bid range for your market, see [Currencies](../guides/currencies.md).<br/><br/>**Add:** Required<br/>**Update:** Optional|**double**|
 
 The [FixedBid](fixedbid.md) object has [Inherited Elements](#inheritedelements).
 
@@ -37,7 +37,7 @@ The [FixedBid](fixedbid.md) object derives from the [CriterionBid](criterionbid.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|The type of the criterion bid. This value is *FixedBid* when you retrieve a fixed bid criterion. For more information about criterion types, see the [CriterionBid Data Object Remarks](bingads/campaign-management-service/criterionbid.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
+|<a name="type"></a>Type|The type of the criterion bid. This value is *FixedBid* when you retrieve a fixed bid criterion. For more information about criterion types, see the [CriterionBid Data Object Remarks](../campaign-management-service/criterionbid.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

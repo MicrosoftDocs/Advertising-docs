@@ -15,7 +15,7 @@ dev_langs:
 Gets the specified Universal Event Tracking (UET) tags.
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](bingads/guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
 
 ## <a name="request"></a>Request Elements
 The *GetUetTagsByIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -36,8 +36,8 @@ The *GetUetTagsByIdsResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](bingads/campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
-|<a name="uettags"></a>UetTags|An array of [UetTag](bingads/campaign-management-service/uettag.md) objects that corresponds directly to the UET tag identifiers that you specified in the request. Items of the array may be returned as null. For each array index where a UET tag was not retrieved, the corresponding element will be null.|[UetTag](uettag.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="uettags"></a>UetTags|An array of [UetTag](../campaign-management-service/uettag.md) objects that corresponds directly to the UET tag identifiers that you specified in the request. Items of the array may be returned as null. For each array index where a UET tag was not retrieved, the corresponding element will be null.|[UetTag](uettag.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -116,7 +116,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetUetTagsByIdsResponse> GetUetTagsByIdsAsync(
 	IList<long> tagIds)

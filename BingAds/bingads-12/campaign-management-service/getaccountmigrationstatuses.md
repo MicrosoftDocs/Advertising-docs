@@ -22,7 +22,7 @@ The *GetAccountMigrationStatusesRequest* object defines the [body](#request-body
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountids"></a>AccountIds|The identifiers of each account to request migration status.<br/><br/>**Required**: Yes|**long** array|
-|<a name="migrationtype"></a>MigrationType|Filters the returned migration status by migration type.<br/><br/>Currently the only supported migration type is *SiteLinkAdExtension*. During calendar year 2017, Bing Ads upgraded all [SiteLinksAdExtension](bingads/campaign-management-service/sitelinksadextension.md) objects (contains multiple sitelinks per ad extension) to [Sitelink2AdExtension](bingads/campaign-management-service/sitelink2adextension.md) objects (contains one sitelink per ad extension).<br/><br/>**Required**: Yes|**string**|
+|<a name="migrationtype"></a>MigrationType|Filters the returned migration status by migration type.<br/><br/>Currently the only supported migration type is *SiteLinkAdExtension*. During calendar year 2017, Bing Ads upgraded all [SiteLinksAdExtension](../campaign-management-service/sitelinksadextension.md) objects (contains multiple sitelinks per ad extension) to [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md) objects (contains one sitelink per ad extension).<br/><br/>**Required**: Yes|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -93,7 +93,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetAccountMigrationStatusesResponse> GetAccountMigrationStatusesAsync(
 	IList<long> accountIds,

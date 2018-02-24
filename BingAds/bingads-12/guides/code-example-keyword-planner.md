@@ -23,4 +23,4 @@ This example demonstrates how to get keyword ideas and traffic estimates for sea
 [!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/keyword_planner.py)]
 
 ## See Also
-[Get Started with the Bing Ads API](bingads/guides/get-started.md)  
+[Get Started with the Bing Ads API](../guides/get-started.md)  

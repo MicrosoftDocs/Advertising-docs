@@ -34,6 +34,6 @@ Get started developing Bing Ads applications in any programming language which s
 |[Target Criterions](./code-example-target-criterions.md)|This example demonstrates how to use target criterions with the Campaign Management API.|
 
 ## See Also
-[Get Started with the Bing Ads API](bingads/guides/get-started.md)  
-[Bing Ads Web Service Addresses](bingads/guides/web-service-addresses.md)  
-[Bing Ads API Reference](bingads/guides/reference.md)  
+[Get Started with the Bing Ads API](../guides/get-started.md)  
+[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
+[Bing Ads API Reference](../guides/reference.md)  

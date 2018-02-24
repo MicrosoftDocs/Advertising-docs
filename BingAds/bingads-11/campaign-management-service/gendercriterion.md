@@ -9,7 +9,7 @@ description: Defines a criterion that can be used to show ads to users of a spec
 # GenderCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to users of a specific gender.
 
-The *GenderCriterion* criterion can be included within [AdGroupCriterion](bingads/campaign-management-service/adgroupcriterion.md) and [CampaignCriterion](bingads/campaign-management-service/campaigncriterion.md) objects. If ad group level gender criterions are specified, the campaign level gender criterions are ignored for that ad group. In other words the ad group gender criterions override the campaign gender criterions, and are not applied as a union.   
+The *GenderCriterion* criterion can be included within [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) and [CampaignCriterion](../campaign-management-service/campaigncriterion.md) objects. If ad group level gender criterions are specified, the campaign level gender criterions are ignored for that ad group. In other words the ad group gender criterions override the campaign gender criterions, and are not applied as a union.   
 
 ## Syntax
 ```xml
@@ -39,7 +39,7 @@ The [GenderCriterion](gendercriterion.md) object derives from the [Criterion](cr
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|The type of the criterion. This value is *Gender* when you retrieve a gender criterion. For more information about criterion types, see the [Criterion Data Object Remarks](bingads/campaign-management-service/criterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
+|<a name="type"></a>Type|The type of the criterion. This value is *Gender* when you retrieve a gender criterion. For more information about criterion types, see the [Criterion Data Object Remarks](../campaign-management-service/criterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

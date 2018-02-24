@@ -9,10 +9,10 @@ dev_langs:
   - csharp
 ---
 # Account Price Ad Extension Record - Bulk
-Defines an association record between an [Account](bingads/bulk-service/account.md) and a [Price Ad Extension](bingads/bulk-service/price-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the account or price ad extension, use the [Account](bingads/bulk-service/account.md) or [Price Ad Extension](bingads/bulk-service/price-ad-extension.md) record.
+Defines an association record between an [Account](../bulk-service/account.md) and a [Price Ad Extension](../bulk-service/price-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the account or price ad extension, use the [Account](../bulk-service/account.md) or [Price Ad Extension](../bulk-service/price-ad-extension.md) record.
 	
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Account Price Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bingads/bulk-service/bulk-file-schema.md). 
+For a *Account Price Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 
 - [Client Id](#clientid)
 - [Editorial Location](#editoriallocation)
@@ -25,7 +25,7 @@ For a *Account Price Ad Extension* record, the following attribute fields are av
 - [Publisher Countries](#publishercountries)
 - [Status](#status)
 
-You can download all fields of the *Account Price Ad Extension* record by including the [DownloadEntity](bingads/bulk-service/downloadentity.md) value of *AccountPriceAdExtensions* in the [DownloadCampaignsByAccountIds](bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Account Price Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AccountPriceAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would associate a price ad extension to an account if the valid *Id* is provided. 
 
@@ -35,7 +35,7 @@ Format Version,,,,,,5
 Account Price Ad Extension,Active,-11,,ClientIdGoesHere,,
 ```
 
-If you are using the [Bing Ads SDKs](bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAccountPriceAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAccountPriceAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -86,7 +86,7 @@ The component or property of the ad extension that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](bingads/guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Delete:** Read-only  
@@ -94,7 +94,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](bingads/campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Delete:** Read-only  
@@ -110,9 +110,9 @@ This field will not be set if a combination of terms caused the failure or if th
 ### <a name="id"></a>Id
 The identifier of the ad extension that is associated or removed from the account.
 
-This bulk field maps to the *Id* field of the [Price Ad Extension](bingads/bulk-service/price-ad-extension.md) record. 
+This bulk field maps to the *Id* field of the [Price Ad Extension](../bulk-service/price-ad-extension.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Price Ad Extension](bingads/bulk-service/price-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Price Ad Extension](../bulk-service/price-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -127,7 +127,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The identifier of the account where this ad extension is associated or removed.
 	
-This bulk field maps to the *Id* field of the [Account](bingads/bulk-service/account.md) record. 
+This bulk field maps to the *Id* field of the [Account](../bulk-service/account.md) record. 
 
 **Add:** Read-only  
 **Delete:** Read-only  
@@ -149,7 +149,7 @@ Possible values are *Active* and *Deleted*. If the ad extension is associated wi
 **Delete:** Required. The Status must be set to *Deleted*. 
 	
 ## <a name="entityperformancedata"></a>Performance Data Fields in the Bulk File
-If the [DataScope Value Set](bingads/bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
+If the [DataScope Value Set](../bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
 
 |Column Header|Description|
 |-----------------|---------------|

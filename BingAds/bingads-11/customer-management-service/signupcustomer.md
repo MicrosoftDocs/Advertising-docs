@@ -15,9 +15,9 @@ dev_langs:
 Creates a new customer and account that rolls up to your reseller payment method.
 
 > [!NOTE]
-> You must be a reseller with aggregator user permissions to call this operation. For more details see [Management Model for Resellers](bingads/guides/management-model-resellers.md).
+> You must be a reseller with aggregator user permissions to call this operation. For more details see [Management Model for Resellers](../guides/management-model-resellers.md).
 
-Pass both [Customer](bingads/customer-management-service/customer.md) and [Account](bingads/customer-management-service/account.md) objects in the request. The customer object includes the customer's name, the address where the customer is located, the market in which the customer operates, and the industry in which the customer participates. Although it is possible to add multiple customers with the same details, you should use unique customer names so that users can easily distinguish between customers in a user interface.
+Pass both [Customer](../customer-management-service/customer.md) and [Account](../customer-management-service/account.md) objects in the request. The customer object includes the customer's name, the address where the customer is located, the market in which the customer operates, and the industry in which the customer participates. Although it is possible to add multiple customers with the same details, you should use unique customer names so that users can easily distinguish between customers in a user interface.
 
 The account object must specify the name of the account; the type of currency to use to settle the account; and the payment method identifier, which must be set to null. The operation generates an invoice account and sets the payment method identifier to the identifier associated with the reseller's invoice. You are invoiced for all charges incurred by the customers that you manage.
 
@@ -30,9 +30,9 @@ The *SignupCustomerRequest* object defines the [body](#request-body) and [header
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="account"></a>Account|An [Account](bingads/customer-management-service/account.md) that specifies the details of the customer's primary account.<br /><br /> Do not instantiate the *Account* data object. Instead, instantiate the [AdvertiserAccount](bingads/customer-management-service/advertiseraccount.md) that derives from the *Account* data object.|[Account](account.md)|
+|<a name="account"></a>Account|An [Account](../customer-management-service/account.md) that specifies the details of the customer's primary account.<br /><br /> Do not instantiate the *Account* data object. Instead, instantiate the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) that derives from the *Account* data object.|[Account](account.md)|
 |<a name="applicationscope"></a>ApplicationScope|Determines  the type of customer application. The default is Advertiser.<br /><br />The scope of this customer and the scope of the parent customer must be the same; for example, they must both be set to Advertiser.|[ApplicationType](applicationtype.md)|
-|<a name="customer"></a>Customer|A [Customer](bingads/customer-management-service/customer.md) that specifies the details of the customer that you are adding.|[Customer](customer.md)|
+|<a name="customer"></a>Customer|A [Customer](../customer-management-service/customer.md) that specifies the details of the customer that you are adding.|[Customer](customer.md)|
 |<a name="parentcustomerid"></a>ParentCustomerId|The customer identifier of the reseller that will manage this customer.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -184,7 +184,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<SignupCustomerResponse> SignupCustomerAsync(
 	Customer customer,

@@ -23,7 +23,7 @@ The *GetAdGroupsByIdsRequest* object defines the [body](#request-body) and [head
 |-----------|---------------|-------------|
 |<a name="adgroupids"></a>AdGroupIds|A maximum of 1,000 identifiers of the ad groups to get.|**long** array|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign that contains the ad groups to get.|**long**|
-|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [AdGroup](bingads/campaign-management-service/adgroup.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[AdGroupAdditionalField](adgroupadditionalfield.md)|
+|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [AdGroup](../campaign-management-service/adgroup.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[AdGroupAdditionalField](adgroupadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -197,7 +197,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetAdGroupsByIdsResponse> GetAdGroupsByIdsAsync(
 	long campaignId,

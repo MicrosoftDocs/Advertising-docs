@@ -26,9 +26,9 @@ Defines a media meta data object. The meta data includes download Urls for one o
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The system identifier of the media meta data.|**long**|
-|<a name="mediatype"></a>MediaType|The name of the media subclass.<br /><br />For an [ImageMediaRepresentation](bingads/campaign-management-service/imagemediarepresentation.md), the *MediaType* is *Image*.|**string**|
-|<a name="representations"></a>Representations|An array of *MediaRepresentation*-derived objects, for example [ImageMediaRepresentation](bingads/campaign-management-service/imagemediarepresentation.md), that each include download Urls for one or more media representations. The number of representations depends on the type of media. For example media for image ad extensions  have multiple height and width representations, and you can access each individually. For more information see [MediaEnabledEntityFilter](bingads/campaign-management-service/mediaenabledentityfilter.md).|[MediaRepresentation](mediarepresentation.md) array|
-|<a name="type"></a>Type|The type of media in the library.<br /><br />For an [ImageMediaRepresentation](bingads/campaign-management-service/imagemediarepresentation.md),  the only possible value is *Image*.|**string**|
+|<a name="mediatype"></a>MediaType|The name of the media subclass.<br /><br />For an [ImageMediaRepresentation](../campaign-management-service/imagemediarepresentation.md), the *MediaType* is *Image*.|**string**|
+|<a name="representations"></a>Representations|An array of *MediaRepresentation*-derived objects, for example [ImageMediaRepresentation](../campaign-management-service/imagemediarepresentation.md), that each include download Urls for one or more media representations. The number of representations depends on the type of media. For example media for image ad extensions  have multiple height and width representations, and you can access each individually. For more information see [MediaEnabledEntityFilter](../campaign-management-service/mediaenabledentityfilter.md).|[MediaRepresentation](mediarepresentation.md) array|
+|<a name="type"></a>Type|The type of media in the library.<br /><br />For an [ImageMediaRepresentation](../campaign-management-service/imagemediarepresentation.md),  the only possible value is *Image*.|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the ascending or descending sort order of results for SearchInsertionOrders.
 ---
 # SortOrder Value Set - Customer Billing
-Defines the ascending or descending sort order of results for [SearchInsertionOrders](bingads/customer-billing-service/searchinsertionorders.md).
+Defines the ascending or descending sort order of results for [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
 
 ## Syntax
 ```xml

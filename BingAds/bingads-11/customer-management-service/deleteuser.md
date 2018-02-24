@@ -21,7 +21,7 @@ The *DeleteUserRequest* object defines the [body](#request-body) and [header](#r
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="timestamp"></a>TimeStamp|The time-stamp value that the operation uses to reconcile the update. You must call  [GetUser](bingads/customer-management-service/getuser.md) to get the time-stamp value. The delete operation fails if the user object has a time-stamp value that differs from the one that you pass.|**base64Binary**|
+|<a name="timestamp"></a>TimeStamp|The time-stamp value that the operation uses to reconcile the update. You must call  [GetUser](../customer-management-service/getuser.md) to get the time-stamp value. The delete operation fails if the user object has a time-stamp value that differs from the one that you pass.|**base64Binary**|
 |<a name="userid"></a>UserId|The identifier of the user to delete.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -73,7 +73,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<DeleteUserResponse> DeleteUserAsync(
 	long userId,

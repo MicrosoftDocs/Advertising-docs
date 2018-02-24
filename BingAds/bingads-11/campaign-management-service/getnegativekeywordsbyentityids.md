@@ -38,8 +38,8 @@ The *GetNegativeKeywordsByEntityIdsResponse* object defines the [body](#response
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="entitynegativekeywords"></a>EntityNegativeKeywords|An array of [EntityNegativeKeyword](bingads/campaign-management-service/entitynegativekeyword.md) objects that corresponds directly to the entity identifiers that you specified in the request. Items of the list may be returned as null. For each list index where negative keywords for an entity were not retrieved, the corresponding element will be null.|[EntityNegativeKeyword](entitynegativekeyword.md) array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](bingads/campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="entitynegativekeywords"></a>EntityNegativeKeywords|An array of [EntityNegativeKeyword](../campaign-management-service/entitynegativekeyword.md) objects that corresponds directly to the entity identifiers that you specified in the request. Items of the list may be returned as null. For each list index where negative keywords for an entity were not retrieved, the corresponding element will be null.|[EntityNegativeKeyword](entitynegativekeyword.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -123,7 +123,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetNegativeKeywordsByEntityIdsResponse> GetNegativeKeywordsByEntityIdsAsync(
 	IList<long> entityIds,

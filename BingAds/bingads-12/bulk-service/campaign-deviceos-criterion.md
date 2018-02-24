@@ -18,7 +18,7 @@ Each device criterion defines a device name for the accompanying criterion bid a
 The maximum number of device criterions that you can specify per campaign or ad group is three. You must either have three separate criterions for *Computers*, *Smartphones*, and *Tablets*, otherwise no device criterions can exist for the campaign or ad group.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Campaign DeviceOS Criterion* record, the following attribute fields are available in the [Bulk File Schema](bingads/bulk-service/bulk-file-schema.md). 
+For a *Campaign DeviceOS Criterion* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
 
 - [Bid Adjustment](#bidadjustment)
 - [Campaign](#campaign)
@@ -29,7 +29,7 @@ For a *Campaign DeviceOS Criterion* record, the following attribute fields are a
 - [Status](#status)
 - [Target](#target)
 
-You can download all fields of the *Campaign DeviceOS Criterion* record by including the [DownloadEntity](bingads/bulk-service/downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Campaign DeviceOS Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add three new campaign device criterions (one for each device type) if a valid campaign identifier (*Parent Id*) is provided. 
 
@@ -41,7 +41,7 @@ Campaign DeviceOS Criterion,,,-111,,,ClientIdGoesHere,,Smartphones,0,,,,,,,,,
 Campaign DeviceOS Criterion,,,-111,,,ClientIdGoesHere,,Tablets,0,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignDeviceOSCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignDeviceOSCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -180,9 +180,9 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The identifier of the campaign where this criterion is applied or removed.
 	
-This bulk field maps to the *Id* field of the [Campaign](bingads/bulk-service/campaign.md) record. 
+This bulk field maps to the *Id* field of the [Campaign](../bulk-service/campaign.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](bingads/bulk-service/campaign.md) record. This is recommended if you are adding new criterions to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new criterions to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
