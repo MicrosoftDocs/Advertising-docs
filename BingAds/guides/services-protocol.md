@@ -46,7 +46,7 @@ The following are the overhead costs, in processing time, that are associated wi
 -   Authenticating the user name and password.  
 -   Validating the developer token.  
 
-These costs occur whether you process a single item or a set of items. To minimize overhead, in general, you should try to process as many items in one call as possible. For example, instead of calling [UpdateCampaigns](~/campaign-management-service/updatecampaigns.md) for each campaign that you want to update, call it only once for multiple campaigns that you want to update. To manage large scale data you should use the [Bulk service](~/bulk-service/bulk-service-reference.md). The Bulk service allows you to download data as a TSV or CSV file, modify it as needed, and then upload your changes. For more information about using the Bulk service, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+These costs occur whether you process a single item or a set of items. To minimize overhead, in general, you should try to process as many items in one call as possible. For example, instead of calling [UpdateCampaigns](~/campaign-management-service/updatecampaigns.md) for each campaign that you want to update, call it only once for multiple campaigns that you want to update. To manage large scale data you should use the [Bulk service](/bingads/bulk-service/bulk-service-reference.md). The Bulk service allows you to download data as a TSV or CSV file, modify it as needed, and then upload your changes. For more information about using the Bulk service, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 Because of the costs associated with establishing a connection to a web service, you should maintain the connection for as long as it is needed. For example, if you need to request multiple reports, use the same reporting service client object for all reporting service operation calls. Explicitly close the connection when you no longer need the service.
 
@@ -67,7 +67,7 @@ Should you hit the service call limit, you will see the following error:
 When you observe this error, you can resubmit the request under the limit after waiting 60 seconds.
 
 ### Bulk
-The Bulk service limits the number of requests that you can make to [DownloadCampaignsByAccountIds](~/bulk-service/downloadcampaignsbyaccountids.md), [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md), and [GetBulkUploadUrl](~/bulk-service/getbulkuploadurl.md). The details of the service limits are internal and subject to change.
+The Bulk service limits the number of requests that you can make to [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md), [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md), and [GetBulkUploadUrl](/bingads/bulk-service/getbulkuploadurl.md). The details of the service limits are internal and subject to change.
 
 Should you hit the service call limit, you will see the following error:
 

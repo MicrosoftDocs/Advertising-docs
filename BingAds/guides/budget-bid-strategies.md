@@ -21,7 +21,7 @@ Your budget tells Bing Ads how much you want to spend on your campaign. You can 
 With shared budgets you can set a single daily budget that can be used by any campaign within the same account. This enables you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Bing Ads account. 
 
 > [!IMPORTANT]
-> You might need to code for shared budgets in the Bing Ads platform, even if you do not plan to use shared budgets. For more details and to determine whether the campaign uses a shared budget, check the value of the *BudgetId* element ([Campaign](~/campaign-management-service/campaign.md) object) or *Budget Id* field (Bulk ([Campaign](~/bulk-service/campaign.md) object) record).
+> You might need to code for shared budgets in the Bing Ads platform, even if you do not plan to use shared budgets. For more details and to determine whether the campaign uses a shared budget, check the value of the *BudgetId* element ([Campaign](~/campaign-management-service/campaign.md) object) or *Budget Id* field (Bulk ([Campaign](/bingads/bulk-service/campaign.md) object) record).
 
 The Bing Ads API supports the *DailyBudgetAccelerated* and *DailyBudgetStandard* values as defined in the [BudgetLimitType](~/campaign-management-service/budgetlimittype.md) value set.
 

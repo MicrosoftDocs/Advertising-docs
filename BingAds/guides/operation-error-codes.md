@@ -5887,10 +5887,10 @@ The download request ID is not valid.
 CampaignServiceAccountTooBigToDownload
 
 **Description**
-The account has more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) to download the account's campaigns in multiple requests. The Details field contains the campaign identifiers under the account.
+The account has more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) to download the account's campaigns in multiple requests. The Details field contains the campaign identifiers under the account.
 
 > [!NOTE] 
-> Calling the [DownloadCampaignsByAccountIds](~/bulk-service/downloadcampaignsbyaccountids.md) operation with an account that contains more than four million keywords will fail.
+> Calling the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) operation with an account that contains more than four million keywords will fail.
 
 ***
 
@@ -5989,10 +5989,10 @@ The start and end date for performance statistics should be valid and within the
 BulkServiceCampaignsTooBigToDownload
 
 **Description**
-The campaigns included in the download have more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) with fewer campaigns.
+The campaigns included in the download have more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) with fewer campaigns.
 
 > [!NOTE] 
-> Calling the [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) operation with an account that contains more than eight million keywords will fail.
+> Calling the [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) operation with an account that contains more than eight million keywords will fail.
 
 ***
 

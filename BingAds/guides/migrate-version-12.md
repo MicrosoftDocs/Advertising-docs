@@ -13,7 +13,7 @@ description: Get details about migrating to Bing Ads API version 12.
 > [!IMPORTANT]
 > With the availability of Bing Ads API version 12, version 11 is deprecated and will sunset by October 31, 2018. 
 
-The sections below describe changes from version 11 to version 12 of the [Ad Insight](~/ad-insight-service/ad-insight-service-reference.md), [Bulk](~/bulk-service/bulk-service-reference.md), [Campaign Management](~/campaign-management-service/campaign-management-service-reference.md), [Customer Billing](~/customer-billing-service/customer-billing-service-reference.md), [Customer Management](~/customer-management-service/customer-management-service-reference.md), and [Reporting](~/reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services.
+The sections below describe changes from version 11 to version 12 of the [Ad Insight](~/ad-insight-service/ad-insight-service-reference.md), [Bulk](/bingads/bulk-service/bulk-service-reference.md), [Campaign Management](~/campaign-management-service/campaign-management-service-reference.md), [Customer Billing](~/customer-billing-service/customer-billing-service-reference.md), [Customer Management](~/customer-management-service/customer-management-service-reference.md), and [Reporting](~/reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services.
 
 ## <a name="authentication"></a>Authentication for All Services
 
@@ -81,28 +81,28 @@ The sandbox endpoint is [https://bulk.api.sandbox.bingads.microsoft.com/Api/Adve
 
 #### <a name="bulk-formatversion5"></a>Format Version 6.0
 
-Support for Bulk file format version 5.0 is removed. Bing Ads API Version 12 only supports format version 6.0. When calling the [DownloadCampaignsByAccountIds](~/bulk-service/downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) operations you must specify *6.0* in the *FormatVersion* request element. When uploading a bulk file, you must specify 6.0 in the *Name* field of the [Format Version](~/bulk-service/format-version.md) record. Changes to records between format version 5.0 and 6.0 are described in more detail in the following sections.
+Support for Bulk file format version 5.0 is removed. Bing Ads API Version 12 only supports format version 6.0. When calling the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) operations you must specify *6.0* in the *FormatVersion* request element. When uploading a bulk file, you must specify 6.0 in the *Name* field of the [Format Version](/bingads/bulk-service/format-version.md) record. Changes to records between format version 5.0 and 6.0 are described in more detail in the following sections.
 
 #### <a name="bulk-sitelinkadextensions"></a>Sitelink Ad Extensions
 During calendar year 2017, Bing Ads upgraded all format version 5.0 *Sitelink Ad Extension* records (contains multiple sitelinks per ad extension) to *Sitelink2 Ad Extension* objects (contains one sitelink per ad extension). 
 
-In Bing Ads API Version 12 the format version 5.0 *Sitelink Ad Extension*, *Campaign Sitelink Ad Extension*, and *AdGroup Sitelink Ad Extension* records are removed. Likewise, the *SiteLinksAdExtension*, *CampaignSiteLinksAdExtensions*, and *AdGroupSiteLinksAdExtensions* values are removed from the [DownloadEntity](~/bulk-service/download-entity) value set.
+In Bing Ads API Version 12 the format version 5.0 *Sitelink Ad Extension*, *Campaign Sitelink Ad Extension*, and *AdGroup Sitelink Ad Extension* records are removed. Likewise, the *SiteLinksAdExtension*, *CampaignSiteLinksAdExtensions*, and *AdGroupSiteLinksAdExtensions* values are removed from the [DownloadEntity](/bingads/bulk-service/download-entity) value set.
 
-When you migrate to version 12 remove the '2' suffix from all *Sitelink2* records i.e., use the format version 6.0 [Sitelink Ad Extension](~/bulk-service/sitelink-ad-extension.md), [Account Sitelink Ad Extension](~/bulk-service/account-sitelink-ad-extension.md), [Campaign Sitelink Ad Extension](~/bulk-service/campaign-sitelink-ad-extension.md), and [Ad Group Sitelink Ad Extension](~/bulk-service/ad-group-sitelink-ad-extension.md) records. Likewise remove the '2' suffix from each [DownloadEntity](~/bulk-service/download-entity) value in version 12 i.e., use *SitelinkAdExtensions*, *AccountSitelinkAdExtensions*, *CampaignSitelinkAdExtensions*, and *AdGroupSitelinkAdExtensions*.
+When you migrate to version 12 remove the '2' suffix from all *Sitelink2* records i.e., use the format version 6.0 [Sitelink Ad Extension](/bingads/bulk-service/sitelink-ad-extension.md), [Account Sitelink Ad Extension](/bingads/bulk-service/account-sitelink-ad-extension.md), [Campaign Sitelink Ad Extension](/bingads/bulk-service/campaign-sitelink-ad-extension.md), and [Ad Group Sitelink Ad Extension](/bingads/bulk-service/ad-group-sitelink-ad-extension.md) records. Likewise remove the '2' suffix from each [DownloadEntity](/bingads/bulk-service/download-entity) value in version 12 i.e., use *SitelinkAdExtensions*, *AccountSitelinkAdExtensions*, *CampaignSitelinkAdExtensions*, and *AdGroupSitelinkAdExtensions*.
 
 #### <a name="bulk-audiencetargetingsetting"></a>Audience Targeting Setting
-The *Remarketing Targeting Setting* field of an [Ad Group](~/bulk-service/ad-group.md) is renamed as *Audience Targeting Setting*. The setting is applicable for all audiences, including but not limited to remarketing lists. 
+The *Remarketing Targeting Setting* field of an [Ad Group](/bingads/bulk-service/ad-group.md) is renamed as *Audience Targeting Setting*. The setting is applicable for all audiences, including but not limited to remarketing lists. 
 
 #### <a name="bulk-sunset-content"></a>Content Ad Distribution
-The Content ad distribution is no longer supported in Bing Ads, and the *Content Bid*, *Content Network*, and *Search Network* fields of an [Ad Group](~/bulk-service/ad-group.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. 
+The Content ad distribution is no longer supported in Bing Ads, and the *Content Bid*, *Content Network*, and *Search Network* fields of an [Ad Group](/bingads/bulk-service/ad-group.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. 
 
-Likewise the *Campaign Type* value of the corresponding [Campaign](~/bulk-service/campaign.md) is updated from *SearchAndContent* to *Search*. 
+Likewise the *Campaign Type* value of the corresponding [Campaign](/bingads/bulk-service/campaign.md) is updated from *SearchAndContent* to *Search*. 
 
 #### <a name="bulk-sunset-cpm"></a>Cpm Pricing Model
-The CPM pricing model is no longer supported in Bing Ads, and the *Pricing Model* field of an [Ad Group](~/bulk-service/ad-group.md) is removed from version 12. The *Pricing Model* field in version 11 was optional, defaulted to *Cpc*, and could only be set to *Cpc*. 
+The CPM pricing model is no longer supported in Bing Ads, and the *Pricing Model* field of an [Ad Group](/bingads/bulk-service/ad-group.md) is removed from version 12. The *Pricing Model* field in version 11 was optional, defaulted to *Cpc*, and could only be set to *Cpc*. 
 
 #### <a name="bulk-timezone"></a>Time Zone Updates
-The following time zone values are updated for the *Time Zone* field of the [Campaign](~/bulk-service/campaign.md) record. 
+The following time zone values are updated for the *Time Zone* field of the [Campaign](/bingads/bulk-service/campaign.md) record. 
 -  Since Magadan is now permanently in UTC+12 time zone, the value is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
 -  The value is updated from *Almaty_Novosibirsk* to *AlmatyNovosibirsk*.
 -  The value is updated from *MidwayIslandand_Samoa* to *MidwayIslandAndSamoa*.
@@ -200,7 +200,7 @@ Version 11|Version 12
 2|Replace
 
 #### <a name="customer-advertiseraccount"></a>Tracking Url Template
-The *TrackingUrlTemplate* key and value pair is removed from the *ForwardCompatibilityMap* element of the [AdvertiserAccount](~/customer-management-service/advertiseraccount.md) object. Instead you can set the [AccountProperty](~/campaign-management-service/accountproperty.md) name for *TrackingUrlTemplate* via the Campaign Management service, or set the *Tracking Template* field of the [Account](~/bulk-service/account.md) record via the Bulk service.  
+The *TrackingUrlTemplate* key and value pair is removed from the *ForwardCompatibilityMap* element of the [AdvertiserAccount](~/customer-management-service/advertiseraccount.md) object. Instead you can set the [AccountProperty](~/campaign-management-service/accountproperty.md) name for *TrackingUrlTemplate* via the Campaign Management service, or set the *Tracking Template* field of the [Account](/bingads/bulk-service/account.md) record via the Bulk service.  
 
 #### <a name="customer-currencycode"></a>ISO Currency Codes
 The *CurrencyType* value set is renamed as [CurrencyCode](~/customer-management-service/currencycode.md). The values are updated with ISO codes e.g., *USD* replaces *USDollar*. The new value set is used with the [AdvertiserAccount](~/customer-management-service/advertiseraccount.md) object. 

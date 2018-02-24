@@ -26,12 +26,12 @@ Using the [Campaign Management](~/campaign-management-service/campaign-managemen
 - The *Bid* element of a [Keyword](~/campaign-management-service/keyword.md) object
 - The *CriterionBid* element of a [BiddableAdGroupCriterion](~/campaign-management-service/biddableadgroupcriterion.md) object
 
-Using the [Bulk](~/bulk-service/bulk-service-reference.md) service, you can set the following properties within the supported value ranges described in the table below. 
-- The *Budget* field of a [Budget](~/bulk-service/budget.md) record
-- The *Budget* field of a [Campaign](~/bulk-service/campaign.md) record
-- The *Search Bid* and *Content Bid* field of an [AdGroup](~/bulk-service/ad-group.md) record
-- The *Bid* field of a [Keyword](~/bulk-service/keyword.md) record
-- The *Bid* field of an [Ad Group Product Partition](~/bulk-service/campaign.md) record
+Using the [Bulk](/bingads/bulk-service/bulk-service-reference.md) service, you can set the following properties within the supported value ranges described in the table below. 
+- The *Budget* field of a [Budget](/bingads/bulk-service/budget.md) record
+- The *Budget* field of a [Campaign](/bingads/bulk-service/campaign.md) record
+- The *Search Bid* and *Content Bid* field of an [AdGroup](/bingads/bulk-service/ad-group.md) record
+- The *Bid* field of a [Keyword](/bingads/bulk-service/keyword.md) record
+- The *Bid* field of an [Ad Group Product Partition](/bingads/bulk-service/campaign.md) record
 
 With the exception of the Indonesian Rupiah (IDR), bid estimates are supported by currency with the [Ad Insight](~/ad-insight-service/ad-insight-service-reference.md) service.
 

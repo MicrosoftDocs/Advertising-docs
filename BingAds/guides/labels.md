@@ -20,19 +20,19 @@ The important thing is that it's all up to you. You decide what your labels mean
 ![Labels in the Bing Ads Web Application](/bingads/guides/media/labels-bing-ads-web-application.png "Labels in the Bing Ads Web Application")
 
 ## <a name="bulkservice"></a>Managing Labels with the Bulk Service
-You can use the [Bulk Service](~/bulk-service/bulk-service-reference.md) i.e., [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md) to create, get, update, and delete both labels and label associations. 
+You can use the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) i.e., [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md) to create, get, update, and delete both labels and label associations. 
 
 The following Bulk records are available for managing labels and label associations. 
 
--   [Label](~/bulk-service/label.md)  
--   [Campaign Label](~/bulk-service/campaign-label.md)  
--   [Ad Group Label](~/bulk-service/ad-group-label.md)  
--   [Keyword Label](~/bulk-service/keyword-label.md)  
--   [App Install Ad Label](~/bulk-service/app-install-ad-label.md)  
--   [Dynamic Search Ad Label](~/bulk-service/dynamic-search-ad-label.md)  
--   [Expanded Text Ad Label](~/bulk-service/expanded-text-ad-label.md)  
--   [Product Ad Label](~/bulk-service/product-ad-label.md)  
--   [Text Ad Label](~/bulk-service/text-ad-label.md)  
+-   [Label](/bingads/bulk-service/label.md)  
+-   [Campaign Label](/bingads/bulk-service/campaign-label.md)  
+-   [Ad Group Label](/bingads/bulk-service/ad-group-label.md)  
+-   [Keyword Label](/bingads/bulk-service/keyword-label.md)  
+-   [App Install Ad Label](/bingads/bulk-service/app-install-ad-label.md)  
+-   [Dynamic Search Ad Label](/bingads/bulk-service/dynamic-search-ad-label.md)  
+-   [Expanded Text Ad Label](/bingads/bulk-service/expanded-text-ad-label.md)  
+-   [Product Ad Label](/bingads/bulk-service/product-ad-label.md)  
+-   [Text Ad Label](/bingads/bulk-service/text-ad-label.md)  
 
 For example, the following Bulk CSV example would apply a label to the campaign, ad group, keyword, and expanded text ad if the valid *Id* and *Parent Id* are provided. 
 

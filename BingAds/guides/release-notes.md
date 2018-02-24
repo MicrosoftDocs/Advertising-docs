@@ -22,7 +22,7 @@ The Bing Ads .NET, Java, PHP, and Python SDKs are updated to support [audience s
 You can find out the total number of people who belong to an audience i.e., custom audience, in-market audience, and remarketing list size. This gives you an idea of how many search users you can target.
 
 #### <a name="bulk-v11-audiencesearchsize-january2018"></a>Bulk API Version 11 for Audience Search Size  
-You can fetch the audience search size in the *Audience Search Size* column of the [Custom Audience](~/bulk-service/custom-audience.md), [In Market Audience](~/bulk-service/in-market-audience.md), and [Remarketing List](~/bulk-service/remarketing-list.md) Bulk records.
+You can fetch the audience search size in the *Audience Search Size* column of the [Custom Audience](/bingads/bulk-service/custom-audience.md), [In Market Audience](/bingads/bulk-service/in-market-audience.md), and [Remarketing List](/bingads/bulk-service/remarketing-list.md) Bulk records.
 
 #### <a name="campaign-v11-audiencesearchsize-january2018"></a>Campaign Management API Version 11 for Audience Search Size  
 You can fetch the audience search size in the *SearchSize* property of the [CustomAudience](~/campaign-management-service/customaudience.md), [InMarketAudience](~/campaign-management-service/inmarketaudience.md), and [RemarketingList](~/campaign-management-service/remarketinglist.md) objects. The *SearchSize* property is inherited from the [Audience](~/campaign-management-service/audience.md) base class.
@@ -150,15 +150,15 @@ Support for labels is added. Labels let you organize campaigns, ad groups, ads, 
 
 #### <a name="bulk-v11-labels-july2017"></a>Bulk API Version 11 for Labels  
 You can use the following Bulk record types to manage labels with the Bulk API.
--   [Label](~/bulk-service/label.md)
--   [Campaign Label](~/bulk-service/campaign-label.md)
--   [Ad Group Label](~/bulk-service/ad-group-label.md)
--   [Keyword Label](~/bulk-service/keyword-label.md)
--   [App Install Ad Label](~/bulk-service/app-install-ad-label.md)
--   [Dynamic Search Ad Label](~/bulk-service/dynamic-search-ad-label.md)
--   [Expanded Text Ad Label](~/bulk-service/expanded-text-ad-label.md)
--   [Product Ad Label](~/bulk-service/product-ad-label.md)
--   [Text Ad Label](~/bulk-service/text-ad-label.md)
+-   [Label](/bingads/bulk-service/label.md)
+-   [Campaign Label](/bingads/bulk-service/campaign-label.md)
+-   [Ad Group Label](/bingads/bulk-service/ad-group-label.md)
+-   [Keyword Label](/bingads/bulk-service/keyword-label.md)
+-   [App Install Ad Label](/bingads/bulk-service/app-install-ad-label.md)
+-   [Dynamic Search Ad Label](/bingads/bulk-service/dynamic-search-ad-label.md)
+-   [Expanded Text Ad Label](/bingads/bulk-service/expanded-text-ad-label.md)
+-   [Product Ad Label](/bingads/bulk-service/product-ad-label.md)
+-   [Text Ad Label](/bingads/bulk-service/text-ad-label.md)
 
 #### <a name="campaign-v11-labels-july2017"></a>Campaign Management API Version 11 for Labels  
 You can add, delete, get, and update labels ([Label](~/campaign-management-service/label.md) objects) with the corresponding operations.
@@ -183,9 +183,9 @@ You must also enable MSCLKID Auto Tagging. Every time you create a new [OfflineC
 For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking-Load).
 
 #### <a name="bulk-v11-offline-conversions-july2017"></a>Bulk API Version 11 for Offline Conversions  
-You can send Bing Ads the offline conversion data by uploading one or more [Offline Conversion](~/bulk-service/offline-conversion.md) Bulk records.
+You can send Bing Ads the offline conversion data by uploading one or more [Offline Conversion](/bingads/bulk-service/offline-conversion.md) Bulk records.
 
-To manage the MSCLKID Auto Tagging, use the *MSCLKID Auto Tagging Enabled* field of the [Account](~/bulk-service/account.md) Bulk record.
+To manage the MSCLKID Auto Tagging, use the *MSCLKID Auto Tagging Enabled* field of the [Account](/bingads/bulk-service/account.md) Bulk record.
 
 #### <a name="campaign-v11-offline-conversions-july2017"></a>Campaign Management API Version 11 for Offline Conversions  
 
@@ -206,7 +206,7 @@ The *ReturnOnAdSpend*, *BidStrategyType*, and *LocalStoreCode* columns have been
 You can get the bid strategy type that is inherited from each ad group or keyword's parent campaign or ad group. This value is equal to the parent campaign or ad group's *Bid Strategy Type* field. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, and *TargetCpa*.
 
 #### <a name="bulk-v11-inheritedbidstrategytype-july2017"></a>Bulk API Version 11 for Inherited Bid Strategy Type  
-The *Inherited Bid Strategy Type* field is added to the [Ad Group](~/bulk-service/ad-group.md) and [Keyword](~/bulk-service/keyword.md) records. 
+The *Inherited Bid Strategy Type* field is added to the [Ad Group](/bingads/bulk-service/ad-group.md) and [Keyword](/bingads/bulk-service/keyword.md) records. 
 
 #### <a name="campaign-v11-inheritedbidstrategytype-july2017"></a>Campaign Management API Version 11 for Inherited Bid Strategy Type  
 The *InheritedBidStrategyType* element is added to the  [InheritFromParentBiddingScheme](~/campaign-management-service/inheritfromparentbiddingscheme.md) object. This element is not returned by default. You must include *InheritedBidStrategyType* in the *ReturnAdditionalFields* optional request element when calling [GetAdGroupsByCampaignId](~/campaign-management-service/getadgroupsbycampaignid.md), [GetAdGroupsByIds](~/campaign-management-service/getadgroupsbyids.md), [GetKeywordsByAdGroupId](~/campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](~/campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](~/campaign-management-service/getkeywordsbyids.md).

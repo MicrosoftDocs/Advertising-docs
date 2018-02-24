@@ -9,7 +9,7 @@ description: Setup Product ads with the Bing Ads API.
 # Product Ads
 A Bing Shopping campaign enables you to advertise the products from your Bing Merchant Center store product catalog. Product ads from a Bing Shopping campaign include details about the product, an image, and optional promotional text.
 
-You can manage Bing Shopping settings with either the [Bulk Service](~/bulk-service/bulk-service-reference.md) or [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](~/bulk-service/bulk-service-reference.md) if you need to upload or download a high volume of entity settings. For example you can update all ad groups for your entire account in a single upload. In comparison, with the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md) you can only update 100 ad groups per call and those ad groups must be in the same campaign. For details see the following sections. 
+You can manage Bing Shopping settings with either the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) or [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) if you need to upload or download a high volume of entity settings. For example you can update all ad groups for your entire account in a single upload. In comparison, with the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md) you can only update 100 ad groups per call and those ad groups must be in the same campaign. For details see the following sections. 
 
 ## <a name="setup"></a>Setup Bing Merchant Center
 To create a Bing Shopping campaign, follow these steps.
@@ -23,15 +23,15 @@ To create a Bing Shopping campaign, follow these steps.
 After you complete these steps, you can follow the steps to [Create a Bing Shopping Campaign with the Campaign Management Service](#bingshopping-campaignservice).
 
 ## <a name="bingshopping-bulkservice"></a>Create a Bing Shopping Campaign with the Bulk Service
-The [Bulk Service](~/bulk-service/bulk-service-reference.md) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema]((~/bulk-service/bulk-file-schema.md) and [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+The [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema]((/bingads/bulk-service/bulk-file-schema.md) and [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
-These are the Bing Shopping entities that can be accessed using the [Bulk Service](~/bulk-service/bulk-service-reference.md).
+These are the Bing Shopping entities that can be accessed using the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md).
 
--   [Campaign](~/bulk-service/campaign.md)
--   [Campaign Product Scope](~/bulk-service/campaign-product-scope.md)
--   [Ad Group](~/bulk-service/ad-group.md)
--   [Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md)
--   [Product Ad](~/bulk-service/product-ad.md)
+-   [Campaign](/bingads/bulk-service/campaign.md)
+-   [Campaign Product Scope](/bingads/bulk-service/campaign-product-scope.md)
+-   [Ad Group](/bingads/bulk-service/ad-group.md)
+-   [Ad Group Product Partition](/bingads/bulk-service/ad-group-product-partition.md)
+-   [Product Ad](/bingads/bulk-service/product-ad.md)
 
 > [!TIP]
 > For code examples that show how to apply product conditions for Bing Shopping campaigns using the Bulk service, see [Bulk Shopping Campaigns Example](/bingads/guides/code-example-bulk-shopping-campaigns.md).
@@ -43,27 +43,27 @@ To create a Bing Shopping campaign, follow these steps.
     > [!NOTE]
     > You must create designated campaigns for Bing Shopping. You may not create text ads in your Bing Shopping campaigns.
 
-    -   Set the *Campaign Type* field of the [Campaign](~/bulk-service/campaign.md) to *Shopping*.
+    -   Set the *Campaign Type* field of the [Campaign](/bingads/bulk-service/campaign.md) to *Shopping*.
 
-    -   Set the *Priority* field of the [Campaign](~/bulk-service/campaign.md) to 0, 1, or 2.
+    -   Set the *Priority* field of the [Campaign](/bingads/bulk-service/campaign.md) to 0, 1, or 2.
 
-    -   Set the *COUNTRY_CODE* field of the [Campaign](~/bulk-service/campaign.md).
+    -   Set the *COUNTRY_CODE* field of the [Campaign](/bingads/bulk-service/campaign.md).
 
-    -   Set the *Store Id* field of the [Campaign](~/bulk-service/campaign.md).
+    -   Set the *Store Id* field of the [Campaign](/bingads/bulk-service/campaign.md).
 
-2.  Optionally, you can upload a [Campaign Product Scope](~/bulk-service/campaign-product-scope.md) criterion that will be associated with your Bing Shopping campaign. Use the product scope criterion to include a subset of your product catalog, for example a specific brand, category, or product type. A campaign can only be associated with one [Campaign Product Scope]((~/bulk-service/campaign-product-scope.md), which contains a list of up to 7 product conditions. You'll also be able to specify more specific product conditions for each ad group.
+2.  Optionally, you can upload a [Campaign Product Scope](/bingads/bulk-service/campaign-product-scope.md) criterion that will be associated with your Bing Shopping campaign. Use the product scope criterion to include a subset of your product catalog, for example a specific brand, category, or product type. A campaign can only be associated with one [Campaign Product Scope]((/bingads/bulk-service/campaign-product-scope.md), which contains a list of up to 7 product conditions. You'll also be able to specify more specific product conditions for each ad group.
 
     > [!NOTE]
     > Product conditions may be returned by Bing Ads services in a different order from the order that you submitted.
 
-3.  Upload an [Ad Group](~/bulk-service/ad-group.md) and set its *Parent Id* field to the *Id* of the campaign added above.
+3.  Upload an [Ad Group](/bingads/bulk-service/ad-group.md) and set its *Parent Id* field to the *Id* of the campaign added above.
 
-4.  Upload one or more [Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md) records which represent product partition nodes in a tree structure that will be used to further refine the product catalog offers. Duplicate or conflicting product conditions attempted within an ad group's product partition group will be rejected by the upload operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level [Campaign Product Scope](~/bulk-service/campaign-product-scope.md). For example given one ad group and one campaign, the [Campaign Product Scope](~/bulk-service/campaign-product-scope.md) and [Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md) may each have *Product Condition 1* set to CategoryL1 and *Product Value 1* set to Animals &amp; Pet Supplies, and the service will not throw any error or warning for a duplicate condition.
+4.  Upload one or more [Ad Group Product Partition](/bingads/bulk-service/ad-group-product-partition.md) records which represent product partition nodes in a tree structure that will be used to further refine the product catalog offers. Duplicate or conflicting product conditions attempted within an ad group's product partition group will be rejected by the upload operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level [Campaign Product Scope](/bingads/bulk-service/campaign-product-scope.md). For example given one ad group and one campaign, the [Campaign Product Scope](/bingads/bulk-service/campaign-product-scope.md) and [Ad Group Product Partition](/bingads/bulk-service/ad-group-product-partition.md) may each have *Product Condition 1* set to CategoryL1 and *Product Value 1* set to Animals &amp; Pet Supplies, and the service will not throw any error or warning for a duplicate condition.
 
     > [!NOTE]
     > There is a 1 to 1 relationship between ad groups and product groups. In other words, each ad group has one product group and vice versa. In the Bing Ads web application, for each ad group you would add one product group with multiple levels of division or multiple partitions. This is the equivalent of adding ad group level product partitions using the Bing Ads API. 
 
-    Please also consider the following validation rules for uploading [Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md) records.
+    Please also consider the following validation rules for uploading [Ad Group Product Partition](/bingads/bulk-service/ad-group-product-partition.md) records.
 
     -   At minimum you must specify at least the root node for the product partition group tree structure. The product partition group's root node must have its *Product Condition 1* field set to "All" and *Product Value 1* null or empty. If you are bidding on all products in the catalog equally, set the *Sub Type* field to *Unit*. If you are partitioning the bids based on more specific product conditions, then set the *Sub Type* field to *Subdivision*, the *Parent Criterion Id* to null or empty, and the *Id* to a negative value. You will use the negative value as *Parent Criterion Id* for any child nodes.
 
@@ -91,7 +91,7 @@ To create a Bing Shopping campaign, follow these steps.
 
     -   The *Bid* and *Destination Url* fields are only applicable if the *Is Excluded* field is FALSE which means that the node is a biddable ad group criterion. However, these fields are ignored for *Subdivision* partition nodes. Those elements are only relevant for *Unit* (leaf) partition nodes.
 
-    -   To pause any product partition you must pause the entire ad group by updating the *Status* field of the [Ad Group](~/bulk-service/ad-group.md) to Paused. You can pause the entire campaign by updating the *Status* field of the [Campaign](~/bulk-service/campaign.md) to Paused.
+    -   To pause any product partition you must pause the entire ad group by updating the *Status* field of the [Ad Group](/bingads/bulk-service/ad-group.md) to Paused. You can pause the entire campaign by updating the *Status* field of the [Campaign](/bingads/bulk-service/campaign.md) to Paused.
 
     -   For a *Deleted* action you only need to specify the *Id* and *Parent Id*.
 
@@ -99,7 +99,7 @@ To create a Bing Shopping campaign, follow these steps.
 
     -   You may not specify duplicate product conditions in a branch. For more information, see [Product Conditions](#conditions).
 
-5.  Upload a product ad. You must add at least one [Product Ad](~/bulk-service/product-ad.md) to the corresponding ad group. A [Product Ad](~/bulk-service/product-ad.md) is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Bing Merchant Center store's product catalog. The primary purpose of the [Product Ad](~/bulk-service/product-ad.md) object is to provide promotional text that the delivery engine adds to the product ads that it generates. For example, if the promotional text is set to "Free shipping on $99 purchases", the delivery engine will set the product ad's description to "Free shipping on $99 purchases."
+5.  Upload a product ad. You must add at least one [Product Ad](/bingads/bulk-service/product-ad.md) to the corresponding ad group. A [Product Ad](/bingads/bulk-service/product-ad.md) is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Bing Merchant Center store's product catalog. The primary purpose of the [Product Ad](/bingads/bulk-service/product-ad.md) object is to provide promotional text that the delivery engine adds to the product ads that it generates. For example, if the promotional text is set to "Free shipping on $99 purchases", the delivery engine will set the product ad's description to "Free shipping on $99 purchases."
 
 After you complete these steps, the delivery engine can begin serving product ads for the products that it finds in the customer's Bing Merchant Center store. If the user's search query has product intent, the delivery engine searches the customer's Bing Merchant Center store for products that matches the query. If it finds a product, and the product meets the conditions of the product filters specified in the product scope and product partitions, the delivery engine generates a product ad using the product details from the store.
 
@@ -215,11 +215,11 @@ If you request a report using account level scope, then the performance reports 
 ```
 For more information about using the [Reporting Service](~/reporting-service/reporting-service-reference.md), see [Reports](/bingads/guides/reports.md) and [Request and Download a Report](/bingads/guides/request-download-report.md).
 
-When you download entities with the [Bulk Service](~/bulk-service/bulk-service-reference.md), if the [DataScope](~/bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include performance statistics for most of the record types listed in [Create a Bing Shopping Campaign with the Bulk Service](#bingshopping-bulkservice). The tree root [Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md) record contains performance statistics for the entire tree, the [Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md) record corresponding to each subdivision contains the performance statistics of all leaf nodes under it, and the [Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md) record corresponding to each unit contains performance statistics only for that specific node.
+When you download entities with the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md), if the [DataScope](/bingads/bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include performance statistics for most of the record types listed in [Create a Bing Shopping Campaign with the Bulk Service](#bingshopping-bulkservice). The tree root [Ad Group Product Partition](/bingads/bulk-service/ad-group-product-partition.md) record contains performance statistics for the entire tree, the [Ad Group Product Partition](/bingads/bulk-service/ad-group-product-partition.md) record corresponding to each subdivision contains the performance statistics of all leaf nodes under it, and the [Ad Group Product Partition](/bingads/bulk-service/ad-group-product-partition.md) record corresponding to each unit contains performance statistics only for that specific node.
 
 > [!NOTE]
-> Performance statistics returned by the Bulk and Reporting services lags behind the performance statistics that you see in the Bing Ads web application by up to an hour. Please note the following differences between the [Bulk Service](~/bulk-service/bulk-service-reference.md) and [Reporting Service](~/reporting-service/reporting-service-reference.md) with respect to the freshness of the tree structure and performance statistics.
+> Performance statistics returned by the Bulk and Reporting services lags behind the performance statistics that you see in the Bing Ads web application by up to an hour. Please note the following differences between the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) and [Reporting Service](~/reporting-service/reporting-service-reference.md) with respect to the freshness of the tree structure and performance statistics.
 > 
-> -   If you have modified your product partition tree structure within the last hour, the tree structure of your product partitions will always be up to date in the [Bulk Service](~/bulk-service/bulk-service-reference.md) download. Only the *Ad Group Product Partition* record that represents you tree root node will contain performance statistics fields such as impressions and clicks, which may lag behind the performance statistics that you see in the Bing Ads web application by up to an hour.
+> -   If you have modified your product partition tree structure within the last hour, the tree structure of your product partitions will always be up to date in the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) download. Only the *Ad Group Product Partition* record that represents you tree root node will contain performance statistics fields such as impressions and clicks, which may lag behind the performance statistics that you see in the Bing Ads web application by up to an hour.
 > -   If you have modified your product partition tree structure within the last hour, both the performance statistics and the tree structure of your product partitions returned in a report through the [Reporting Service](~/reporting-service/reporting-service-reference.md) may lag behind the data that you see in the Bing Ads web application by up to an hour.
 

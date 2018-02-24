@@ -89,7 +89,7 @@ The identifier of the negative keyword list that is associated or removed from t
 
 This bulk field maps to the *Id* field of the [Negative Keyword List](../bulk-service/negative-keyword-list.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing negative keyword list identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Negative Keyword List](../bulk-service/negative-keyword-list.md) record. This is recommended if you are adding new negative keyword list and associating it with a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing negative keyword list identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Negative Keyword List](../bulk-service/negative-keyword-list.md) record. This is recommended if you are adding new negative keyword list and associating it with a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -106,7 +106,7 @@ The identifier of the campaign where this negative keyword list is associated or
 	
 This bulk field maps to the *Id* field of the [Campaign](../bulk-service/campaign.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new negative keyword list and associating it with a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new negative keyword list and associating it with a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 > [!NOTE]

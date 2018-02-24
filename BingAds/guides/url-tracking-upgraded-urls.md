@@ -21,7 +21,7 @@ For an overview of Final URLs and tracking templates, see the following Bing Ads
 -   [Can I use custom parameters?](http://help.bingads.microsoft.com/#apex/3/en/56774/-1)  
 -   [What are Upgraded URLs and how do I upgrade?](http://help.bingads.microsoft.com/#apex/3/en/56751/-1)  
 
-You can manage Final URLs, Custom Parameters, and Tracking Templates with either the [Bulk Service](~/bulk-service/bulk-service-reference.md) or [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](~/bulk-service/bulk-service-reference.md) service if you need to upload or download a high volume of entity settings. For example you can update all keyword bids for your entire account in a single upload. In comparison, with the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md) service you can only update 1,000 keywords per call and those keywords must be in the same ad group. For more details about Final URLs and tracking templates using the Bing Ads API, see the sections below.
+You can manage Final URLs, Custom Parameters, and Tracking Templates with either the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) or [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) service if you need to upload or download a high volume of entity settings. For example you can update all keyword bids for your entire account in a single upload. In comparison, with the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md) service you can only update 1,000 keywords per call and those keywords must be in the same ad group. For more details about Final URLs and tracking templates using the Bing Ads API, see the sections below.
 -   [Tracking Templates](#trackingtemplatevalidation)  
 -   [Final URLs](#finalurlvalidation)  
 -   [Custom Parameters](#customparametersvalidation)  
@@ -84,20 +84,20 @@ The following validation rules apply to custom parameters.
 -  You may include up to 3 custom parameters per entity.
 
 ## <a name="bulkservice"></a>URL Tracking with the Bulk Service
-The [Bulk Service](~/bulk-service/bulk-service-reference.md) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](~/bulk-service/bulk-file-schema.md) and [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+The [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md) and [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
-These are the Bing Ads entities with properties for managing URLs that can be accessed using the [Bulk Service](~/bulk-service/bulk-service-reference.md).
+These are the Bing Ads entities with properties for managing URLs that can be accessed using the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md).
 
--   [Campaign](~/bulk-service/campaign.md)
--   [Ad Group](~/bulk-service/ad-group.md)
--   [Ad Group Dynamic Search Ad Target](~/bulk-service/ad-group-dynamic-search-ad-target.md) 
--   [Ad Group Product Partition](~/bulk-service/ad-group-product-partition.md) 
--   [App Install Ad](~/bulk-service/app-install-ad.md)
--   [Expanded Text Ad](~/bulk-service/expanded-text-ad.md)
--   [Text Ad](~/bulk-service/text-ad.md)
--   [Keyword](~/bulk-service/keyword.md)
--   [Sitelink Ad Extension](~/bulk-service/sitelink-ad-extension.md)
--   [Sitelink2 Ad Extension](~/bulk-service/sitelink2-ad-extension.md)
+-   [Campaign](/bingads/bulk-service/campaign.md)
+-   [Ad Group](/bingads/bulk-service/ad-group.md)
+-   [Ad Group Dynamic Search Ad Target](/bingads/bulk-service/ad-group-dynamic-search-ad-target.md) 
+-   [Ad Group Product Partition](/bingads/bulk-service/ad-group-product-partition.md) 
+-   [App Install Ad](/bingads/bulk-service/app-install-ad.md)
+-   [Expanded Text Ad](/bingads/bulk-service/expanded-text-ad.md)
+-   [Text Ad](/bingads/bulk-service/text-ad.md)
+-   [Keyword](/bingads/bulk-service/keyword.md)
+-   [Sitelink Ad Extension](/bingads/bulk-service/sitelink-ad-extension.md)
+-   [Sitelink2 Ad Extension](/bingads/bulk-service/sitelink2-ad-extension.md)
 
 ## <a name="campaignservice"></a>URL Tracking with the Campaign Management Service
 These are the Bing Ads entities with properties for managing URLs that can be accessed using the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md). You can create, read, update, and delete these entities.

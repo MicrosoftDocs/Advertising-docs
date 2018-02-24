@@ -85,11 +85,11 @@ Once the integration has been completed, your custom audiences will appear in th
 
 ### <a name="customaudience-bulk"></a>Custom Audience Bulk APIs
 With the Bulk service you can use the following record types to download and upload in-market audience records and associate them with an ad group:
-- [Custom Audience](~/bulk-service/in-market-audience.md) 
-- [Ad Group Custom Audience Association](~/bulk-service/ad-group-in-market-audience-association.md)  
-- [Ad Group Negative Custom Audience Association](~/bulk-service/ad-group-negative-in-market-audience-association.md)  
+- [Custom Audience](/bingads/bulk-service/in-market-audience.md) 
+- [Ad Group Custom Audience Association](/bingads/bulk-service/ad-group-in-market-audience-association.md)  
+- [Ad Group Negative Custom Audience Association](/bingads/bulk-service/ad-group-negative-in-market-audience-association.md)  
 
-You can use the *Remarketing Targeting Setting* field in the [Ad Group](~/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
+You can use the *Remarketing Targeting Setting* field in the [Ad Group](/bingads/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
 
 ### <a name="customaudience-campaign"></a>Custom Audience Campaign Management APIs
 The [CustomAudience](~/campaign-management-service/customaudience.md) derives from the [Audience](~/campaign-management-service/audience.md) base class. If you are using the Campaign Management service you can get or update the [CustomAudience](~/campaign-management-service/customaudience.md), with the respective [GetAudiencesByIds](~/campaign-management-service/getaudiencesbyids.md) and [UpdateAudiences](~/campaign-management-service/updateaudiences.md) operations.
@@ -109,11 +109,11 @@ In-market audiences are curated lists of customers who have shown purchase inten
 
 ### <a name="inmarketaudience-bulk"></a>In-Market Bulk APIs
 With the Bulk service you can use the following record types to download and upload in-market audience records and associate them with an ad group:
-- [In Market Audience](~/bulk-service/in-market-audience.md) 
-- [Ad Group In Market Audience Association](~/bulk-service/ad-group-in-market-audience-association.md)  
-- [Ad Group Negative In Market Audience Association](~/bulk-service/ad-group-negative-in-market-audience-association.md)  
+- [In Market Audience](/bingads/bulk-service/in-market-audience.md) 
+- [Ad Group In Market Audience Association](/bingads/bulk-service/ad-group-in-market-audience-association.md)  
+- [Ad Group Negative In Market Audience Association](/bingads/bulk-service/ad-group-negative-in-market-audience-association.md)  
 
-You can use the *Remarketing Targeting Setting* field in the [Ad Group](~/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
+You can use the *Remarketing Targeting Setting* field in the [Ad Group](/bingads/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
 
 ### <a name="inmarketaudience-campaign"></a>In-Market Campaign Management APIs
 The [InMarketAudience](~/campaign-management-service/inmarketaudience.md) derives from the [Audience](~/campaign-management-service/audience.md) base class. If you are using the Campaign Management service you can get the [InMarketAudience](~/campaign-management-service/inmarketaudience.md), with the [GetAudiencesByIds](~/campaign-management-service/getaudiencesbyids.md) operation.
@@ -131,11 +131,11 @@ After you have set up [Universal Event Tracking (UET)](#uet), you can use the Bi
 
 ### <a name="remarketing-bulk"></a>Remarketing Bulk APIs
 With the Bulk service you can use the following record types to download and upload remarketing lists and associate them with an ad group:
-- [Remarketing List](~/bulk-service/remarketing-list.md) 
-- [Ad Group Remarketing List Association](~/bulk-service/ad-group-remarketing-list-association.md)  
-- [Ad Group Negative Remarketing List Association](~/bulk-service/ad-group-negative-remarketing-list-association.md)  
+- [Remarketing List](/bingads/bulk-service/remarketing-list.md) 
+- [Ad Group Remarketing List Association](/bingads/bulk-service/ad-group-remarketing-list-association.md)  
+- [Ad Group Negative Remarketing List Association](/bingads/bulk-service/ad-group-negative-remarketing-list-association.md)  
 
-You can use the *Remarketing Targeting Setting* field in the [Ad Group](~/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
+You can use the *Remarketing Targeting Setting* field in the [Ad Group](/bingads/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
 
 ### <a name="remarketing-campaign"></a>Remarketing Campaign Management APIs
 The [RemarketingList](~/campaign-management-service/remarketinglist.md) derives from the [Audience](~/campaign-management-service/audience.md) base class. If you are using the Campaign Management service you can add, get, update, or delete the [RemarketingList](~/campaign-management-service/remarketinglist.md), with the respective [AddAudiences](~/campaign-management-service/addaudiences.md), [GetAudiencesByIds](~/campaign-management-service/getaudiencesbyids.md), [UpdateAudiences](~/campaign-management-service/updateaudiences.md), and [DeleteAudiences](~/campaign-management-service/deleteaudiences.md) operations.

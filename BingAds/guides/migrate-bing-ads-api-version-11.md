@@ -12,7 +12,7 @@ All Bing Ads API SOAP web services are available with Version 11.
 > [!IMPORTANT]
 > With the availability of Bing Ads API version 11, the previous versions of the API (v10 for Ad Insight, Bulk, and Campaign Management services and v9 for Customer Billing, Customer Management, and Reporting services) are sunset as of October 31st. 
 
-The sections below describe changes from version 10 to version 11 of the [Ad Insight](~/ad-insight-service/ad-insight-service-reference.md), [Bulk](~/bulk-service/bulk-service-reference.md), and [Campaign Management](~/campaign-management-service/campaign-management-service-reference.md) services, and changes from version 9 to version 11 of the [Customer Billing](~/customer-billing-service/customer-billing-service-reference.md), [Customer Management](~/customer-management-service/customer-management-service-reference.md), and [Reporting](~/reporting-service/reporting-service-reference.md) services.
+The sections below describe changes from version 10 to version 11 of the [Ad Insight](~/ad-insight-service/ad-insight-service-reference.md), [Bulk](/bingads/bulk-service/bulk-service-reference.md), and [Campaign Management](~/campaign-management-service/campaign-management-service-reference.md) services, and changes from version 9 to version 11 of the [Customer Billing](~/customer-billing-service/customer-billing-service-reference.md), [Customer Management](~/customer-management-service/customer-management-service-reference.md), and [Reporting](~/reporting-service/reporting-service-reference.md) services.
 
 ## <a name="adinsight"></a>Ad Insight
 
@@ -47,49 +47,49 @@ The production endpoint is [https://bulk.api.bingads.microsoft.com/Api/Advertise
 The sandbox endpoint is [https://bulk.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc](https://bulk.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc).
 
 #### <a name="bulk-downloadentities"></a>Download Entities
-The *DownloadEntities* request element replaces the *Entities* request element for the [DownloadCampaignsByAccountIds](~/bulk-service/downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) operations. The *DownloadEntities* element accepts a list of [DownloadEntity](~/bulk-service/downloadentity.md) values instead of a flag set used in Bing Ads API version 10. The *BulkDownloadEntity* value set is removed. 
+The *DownloadEntities* request element replaces the *Entities* request element for the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) operations. The *DownloadEntities* element accepts a list of [DownloadEntity](/bingads/bulk-service/downloadentity.md) values instead of a flag set used in Bing Ads API version 10. The *BulkDownloadEntity* value set is removed. 
 
 #### <a name="bulk-formatversion5"></a>Format Version 5.0
 
-Support for Bulk file format version 4.0 is removed. Bing Ads API Version 11 only supports format version 5.0. When calling the [DownloadCampaignsByAccountIds](~/bulk-service/downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) operations you must specify *5.0* in the *FormatVersion* request element. When uploading a bulk file, you must specify 5.0 in the *Name* field of the [Format Version](~/bulk-service/format-version.md) record. Changes to records between format version 4.0 and 5.0 are described in more detail in the following sections.
+Support for Bulk file format version 4.0 is removed. Bing Ads API Version 11 only supports format version 5.0. When calling the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) operations you must specify *5.0* in the *FormatVersion* request element. When uploading a bulk file, you must specify 5.0 in the *Name* field of the [Format Version](/bingads/bulk-service/format-version.md) record. Changes to records between format version 4.0 and 5.0 are described in more detail in the following sections.
 
 #### <a name="bulk-targetcriterions"></a>Upgrade from Targets to Criterions
 Instead of using targets to show your ads based on age, day and time, device, gender, and location, starting with Bing Ads API version 11 you must use criterions. Partial update of target criterions is supported in Bing Ads API version 11. The following changes are required to upgrade from targets to criterions. 
-  * Replaced all target records with criterion records. For example the *Ad Group Age Target* record is replaced with the [Ad Group Age Criterion](~/bulk-service/ad-group-age-criterion.md) record. You can download the new criterion records using the *AdGroupTargetCriterions* and *CampaignTargetCriterions* values of the [DownloadEntity](~/bulk-service/downloadentity.md) value set. 
-  * The [Ad Group Age Criterion](~/bulk-service/ad-group-age-criterion.md) and [Campaign Age Criterion](~/bulk-service/campaign-age-criterion.md) records support new values in the *Target* field: *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*. The upper bound of each range previously supported in format version 4.0 were not inclusive, for example *EighteenToTwentyFive* would only target ages eighteen through twenty-four. The values in format version 5.0 match the effective target range that remains unchanged. 
-  * If an ad group or campaign has any device criterion, then it must have bids for all three device types. Please note this change when adding and updating [Ad Group DeviceOS Criterion](~/bulk-service/ad-group-deviceos-criterion.md) and [Campaign DeviceOS Criterion](~/bulk-service/campaign-deviceos-criterion.md) records. For example you cannot have a campaign that only has one [Campaign DeviceOS Criterion](~/bulk-service/campaign-deviceos-criterion.md) record. If the campaign has any device criterion then it must have three [Campaign DeviceOS Criterion](~/bulk-service/campaign-deviceos-criterion.md) records, each with corresponding supported bids for *Computers*, *Smartphones*, and *Tablets*. Previously in format version 4.0 the missing records were added automatically with bids set to '0' (zero).  
-  * The [Ad Group Location Criterion](~/bulk-service/ad-group-location-criterion.md) and [Campaign Location Criterion](~/bulk-service/campaign-location-criterion.md) records support location identifiers in the *Target* field, instead of the location codes that were accepted by the corresponding format version 4.0 target records. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](/bingads/guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md).
-  * The *Sub Type* field for [Ad Group Location Criterion](~/bulk-service/ad-group-location-criterion.md) and [Campaign Location Criterion](~/bulk-service/campaign-location-criterion.md) records can include these values: *City*, *Country*, *MetroArea*, *PostalCode*, and *State*. The *Sub Type* field in the Bulk file format version 4.0 target records included these values (with spaces between words): *City*, *Country*, *Metro Area*, *Postal Code*, and *State*. 
-  * The *Physical Intent* field is not available in the [Ad Group Location Criterion](~/bulk-service/ad-group-location-criterion.md), [Campaign Location Criterion](~/bulk-service/campaign-location-criterion.md), [Ad Group Radius Criterion](~/bulk-service/ad-group-radius-criterion.md), and [Campaign Radius Criterion](~/bulk-service/campaign-radius-criterion.md) records, as it had been in the corresponding format version 4.0 target records. To determine the intent option for all location and radius criterions of a given ad group or campaign, you can use the new [Ad Group Location Intent Criterion](~/bulk-service/ad-group-location-intent-criterion.md) and [Campaign Location Intent Criterion](~/bulk-service/campaign-location-intent-criterion.md) records. 
+  * Replaced all target records with criterion records. For example the *Ad Group Age Target* record is replaced with the [Ad Group Age Criterion](/bingads/bulk-service/ad-group-age-criterion.md) record. You can download the new criterion records using the *AdGroupTargetCriterions* and *CampaignTargetCriterions* values of the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value set. 
+  * The [Ad Group Age Criterion](/bingads/bulk-service/ad-group-age-criterion.md) and [Campaign Age Criterion](/bingads/bulk-service/campaign-age-criterion.md) records support new values in the *Target* field: *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*. The upper bound of each range previously supported in format version 4.0 were not inclusive, for example *EighteenToTwentyFive* would only target ages eighteen through twenty-four. The values in format version 5.0 match the effective target range that remains unchanged. 
+  * If an ad group or campaign has any device criterion, then it must have bids for all three device types. Please note this change when adding and updating [Ad Group DeviceOS Criterion](/bingads/bulk-service/ad-group-deviceos-criterion.md) and [Campaign DeviceOS Criterion](/bingads/bulk-service/campaign-deviceos-criterion.md) records. For example you cannot have a campaign that only has one [Campaign DeviceOS Criterion](/bingads/bulk-service/campaign-deviceos-criterion.md) record. If the campaign has any device criterion then it must have three [Campaign DeviceOS Criterion](/bingads/bulk-service/campaign-deviceos-criterion.md) records, each with corresponding supported bids for *Computers*, *Smartphones*, and *Tablets*. Previously in format version 4.0 the missing records were added automatically with bids set to '0' (zero).  
+  * The [Ad Group Location Criterion](/bingads/bulk-service/ad-group-location-criterion.md) and [Campaign Location Criterion](/bingads/bulk-service/campaign-location-criterion.md) records support location identifiers in the *Target* field, instead of the location codes that were accepted by the corresponding format version 4.0 target records. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](/bingads/guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md).
+  * The *Sub Type* field for [Ad Group Location Criterion](/bingads/bulk-service/ad-group-location-criterion.md) and [Campaign Location Criterion](/bingads/bulk-service/campaign-location-criterion.md) records can include these values: *City*, *Country*, *MetroArea*, *PostalCode*, and *State*. The *Sub Type* field in the Bulk file format version 4.0 target records included these values (with spaces between words): *City*, *Country*, *Metro Area*, *Postal Code*, and *State*. 
+  * The *Physical Intent* field is not available in the [Ad Group Location Criterion](/bingads/bulk-service/ad-group-location-criterion.md), [Campaign Location Criterion](/bingads/bulk-service/campaign-location-criterion.md), [Ad Group Radius Criterion](/bingads/bulk-service/ad-group-radius-criterion.md), and [Campaign Radius Criterion](/bingads/bulk-service/campaign-radius-criterion.md) records, as it had been in the corresponding format version 4.0 target records. To determine the intent option for all location and radius criterions of a given ad group or campaign, you can use the new [Ad Group Location Intent Criterion](/bingads/bulk-service/ad-group-location-intent-criterion.md) and [Campaign Location Intent Criterion](/bingads/bulk-service/campaign-location-intent-criterion.md) records. 
   * You cannot delete all criterions by sending one bulk record having *Status* set to *Deleted*. Previously using version 10 targets, you could have sent one row to delete all city targets for example. With criterions, each record must be updated and deleted individually with its unique identifier.
 
 #### <a name="bulk-remarketinglist"></a>Remarketing Lists
-For the remarketing list name in the [Remarketing List](~/bulk-service/remarketing-list.md) and [Ad Group Remarketing List Association](~/bulk-service/ad-group-remarketing-list-association.md) records, use the *Audience* field instead of the *Remarketing List* field. For the remarketing list identifier in the same records, use the *Audience Id* field instead of the *Remarketing List Id* field.
+For the remarketing list name in the [Remarketing List](/bingads/bulk-service/remarketing-list.md) and [Ad Group Remarketing List Association](/bingads/bulk-service/ad-group-remarketing-list-association.md) records, use the *Audience* field instead of the *Remarketing List* field. For the remarketing list identifier in the same records, use the *Audience Id* field instead of the *Remarketing List Id* field.
 
 Bing Ads API version 11 also supports custom and in-market [audiences](#bulk-audience), in addition to remarketing lists. 
 
 #### <a name="bulk-invalidcriterionstatus"></a>Invalid Criterion Status
-An error will be returned if you attempt to set the *Status* of the [Ad Group Negative Dynamic Search Ad Target](~/bulk-service/ad-group-negative-dynamic-search-ad-target.md) or [Campaign Negative Dynamic Search Ad Target](~/bulk-service/campaign-negative-dynamic-search-ad-target.md) to an invalid value e.g. *Paused*. In Bing Ads API version 10, the invalid status update would not succeed but would not result in an error.
+An error will be returned if you attempt to set the *Status* of the [Ad Group Negative Dynamic Search Ad Target](/bingads/bulk-service/ad-group-negative-dynamic-search-ad-target.md) or [Campaign Negative Dynamic Search Ad Target](/bingads/bulk-service/campaign-negative-dynamic-search-ad-target.md) to an invalid value e.g. *Paused*. In Bing Ads API version 10, the invalid status update would not succeed but would not result in an error.
 
 #### <a name="bulk-sunset-cpm"></a>Cpm Pricing Model
-The CPM pricing model is not supported in Bing Ads, and the *Pricing Model* field of an [Ad Group](~/bulk-service/ad-group.md) is now deprecated. The *Pricing Model* field is now optional, defaults to *Cpc*, and can only be set to *Cpc*. 
+The CPM pricing model is not supported in Bing Ads, and the *Pricing Model* field of an [Ad Group](/bingads/bulk-service/ad-group.md) is now deprecated. The *Pricing Model* field is now optional, defaults to *Cpc*, and can only be set to *Cpc*. 
 
 ### New Features
 
 #### <a name="bulk-audience"></a>Audience Associations and Exclusions
 Bing Ads API version 11 now supports custom audiences and in-market audiences, in addition to [remarketing lists](#bulk-remarketinglist). The following audience, association, and exclusion records are supported.
 
-*  [Remarketing List](~/bulk-service/remarketing-list.md)  
-*  [Ad Group Remarketing List Association](~/bulk-service/ad-group-remarketing-list-association.md)  
-*  [Ad Group Negative Remarketing List Association](~/bulk-service/ad-group-negative-remarketing-list-association.md)  
-*  [Custom Audience](~/bulk-service/custom-audience.md)  
-*  [Ad Group Custom Audience Association](~/bulk-service/ad-group-custom-audience-association.md)  
-*  [Ad Group Negative Custom Audience Association](~/bulk-service/ad-group-negative-custom-audience-association.md)  
-*  [In Market Audience](~/bulk-service/in-market-audience.md)  
-*  [Ad Group In Market Audience Association](~/bulk-service/ad-group-in-market-audience-association.md)  
-*  [Ad Group Negative In Market Audience Association](~/bulk-service/ad-group-negative-in-market-audience-association.md)  
+*  [Remarketing List](/bingads/bulk-service/remarketing-list.md)  
+*  [Ad Group Remarketing List Association](/bingads/bulk-service/ad-group-remarketing-list-association.md)  
+*  [Ad Group Negative Remarketing List Association](/bingads/bulk-service/ad-group-negative-remarketing-list-association.md)  
+*  [Custom Audience](/bingads/bulk-service/custom-audience.md)  
+*  [Ad Group Custom Audience Association](/bingads/bulk-service/ad-group-custom-audience-association.md)  
+*  [Ad Group Negative Custom Audience Association](/bingads/bulk-service/ad-group-negative-custom-audience-association.md)  
+*  [In Market Audience](/bingads/bulk-service/in-market-audience.md)  
+*  [Ad Group In Market Audience Association](/bingads/bulk-service/ad-group-in-market-audience-association.md)  
+*  [Ad Group Negative In Market Audience Association](/bingads/bulk-service/ad-group-negative-in-market-audience-association.md)  
 
-To download these record types individually you can include the following values from the [DownloadEntity](~/bulk-service/downloadentity.md) value set: *RemarketingLists*, *AdGroupRemarketingListAssociations*, *AdGroupNegativeRemarketingListAssociations*, *CustomAudiences*, *AdGroupCustomAudienceAssociations*, *AdGroupNegativeCustomAudienceAssociations*, *InMarketAudiences*, *AdGroupInMarketAudienceAssociations*, *AdGroupNegativeInMarketAudienceAssociations*. You can get all three types of audiences, associations, or exclusions by including the *Audiences*, *AdGroupAudienceAssociations*, and *AdGroupNegativeAudienceAssociations* values.
+To download these record types individually you can include the following values from the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value set: *RemarketingLists*, *AdGroupRemarketingListAssociations*, *AdGroupNegativeRemarketingListAssociations*, *CustomAudiences*, *AdGroupCustomAudienceAssociations*, *AdGroupNegativeCustomAudienceAssociations*, *InMarketAudiences*, *AdGroupInMarketAudienceAssociations*, *AdGroupNegativeInMarketAudienceAssociations*. You can get all three types of audiences, associations, or exclusions by including the *Audiences*, *AdGroupAudienceAssociations*, and *AdGroupNegativeAudienceAssociations* values.
 
 #### <a name="bulk-accountextensions"></a>Associate Ad Extensions with an Account
 Support is added for associating ad extensions at the account level. In Bing Ads API version 10 you could only associate ad extensions with campaigns and ad groups.
@@ -98,25 +98,25 @@ Support is added for associating ad extensions at the account level. In Bing Ads
 > Call ad extensions cannot be associated with an account.
 
 To get and set account level associations, use the following account level association records. 
-*   [Account App Ad Extension](~/bulk-service/account-app-ad-extension.md)   
-*   [Account Callout Ad Extension](~/bulk-service/account-callout-ad-extension.md)  
-*   [Account Image Ad Extension](~/bulk-service/account-image-ad-extension.md)  
-*   [Account Location Ad Extension](~/bulk-service/account-location-ad-extension.md)  
-*   [Account Price Ad Extension](~/bulk-service/account-price-ad-extension.md)  
-*   [Account Review Ad Extension](~/bulk-service/account-review-ad-extension.md)  
-*   [Account Sitelink2 Ad Extension](~/bulk-service/account-sitelink2-ad-extension.md)  
-*   [Account Structured Snippet Ad Extension](~/bulk-service/account-structured-snippet-ad-extension.md)  
+*   [Account App Ad Extension](/bingads/bulk-service/account-app-ad-extension.md)   
+*   [Account Callout Ad Extension](/bingads/bulk-service/account-callout-ad-extension.md)  
+*   [Account Image Ad Extension](/bingads/bulk-service/account-image-ad-extension.md)  
+*   [Account Location Ad Extension](/bingads/bulk-service/account-location-ad-extension.md)  
+*   [Account Price Ad Extension](/bingads/bulk-service/account-price-ad-extension.md)  
+*   [Account Review Ad Extension](/bingads/bulk-service/account-review-ad-extension.md)  
+*   [Account Sitelink2 Ad Extension](/bingads/bulk-service/account-sitelink2-ad-extension.md)  
+*   [Account Structured Snippet Ad Extension](/bingads/bulk-service/account-structured-snippet-ad-extension.md)  
 
-To download these record types individually you can include the following values from the [DownloadEntity](~/bulk-service/downloadentity.md) value set: *AccountAppAdExtensions*, *AccountCalloutAdExtensions*, *AccountImageAdExtensions*, *AccountLocationAdExtensions*, *AccountPriceAdExtensions*, *AccountReviewAdExtensions*, *AccountSitelink2AdExtensions*, *AccountStructuredSnippetAdExtensions*. 
+To download these record types individually you can include the following values from the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value set: *AccountAppAdExtensions*, *AccountCalloutAdExtensions*, *AccountImageAdExtensions*, *AccountLocationAdExtensions*, *AccountPriceAdExtensions*, *AccountReviewAdExtensions*, *AccountSitelink2AdExtensions*, *AccountStructuredSnippetAdExtensions*. 
 
 #### <a name="bulk-priceextensions"></a>Price Ad Extensions
 Support for price ad extensions is added. You can upload and download these price ad extension records.
-*  [Price Ad Extension](~/bulk-service/price-ad-extension.md)  
-*  [Account Price Ad Extension](~/bulk-service/account-price-ad-extension.md)  
-*  [Ad Group Price Ad Extension](~/bulk-service/ad-group-price-ad-extension.md)  
-*  [Campaign Price Ad Extension](~/bulk-service/campaign-price-ad-extension.md) 
+*  [Price Ad Extension](/bingads/bulk-service/price-ad-extension.md)  
+*  [Account Price Ad Extension](/bingads/bulk-service/account-price-ad-extension.md)  
+*  [Ad Group Price Ad Extension](/bingads/bulk-service/ad-group-price-ad-extension.md)  
+*  [Campaign Price Ad Extension](/bingads/bulk-service/campaign-price-ad-extension.md) 
 
-To download these record types individually you can include the following values from the [DownloadEntity](~/bulk-service/downloadentity.md) value set: *PriceAdExtensions*, *AdGroupPriceAdExtensions*, *CampaignPriceAdExtensions*, *AccountPriceAdExtensions*. 
+To download these record types individually you can include the following values from the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value set: *PriceAdExtensions*, *AdGroupPriceAdExtensions*, *CampaignPriceAdExtensions*, *AccountPriceAdExtensions*. 
 
 ## <a name="campaign"></a>Campaign Management
 
