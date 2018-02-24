@@ -23,4 +23,4 @@ This example demonstrates how to download the comma separated value (CSV) file t
 [!code-python[Main](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/geographical_locations.py)]
 
 ## See Also
-[Get Started with the Bing Ads API](../guides/get-started.md)  
+[Get Started with the Bing Ads API](/bingads/guides/get-started.md)  

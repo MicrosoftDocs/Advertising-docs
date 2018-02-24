@@ -282,7 +282,7 @@ Defines the shipping cost.
 |----|-----|----|----------------
 |country|Gets or sets the two-letter [ISO 3166](http://loc.gov/standards/iso639-2/php/code_list.php) country code of the country where the item is being shipped to.|String|\<country\>
 |locationGroupName|Gets or sets the location group name.|String|\<location_group_name\>
-|locationId|Gets or sets the ID of the geographic location where the item is being shipped to. For a list of IDs, see [Bing Ads Geographical Location Codes](~/guides/geographical-location-codes.md).|String|\<location_id\>
+|locationId|Gets or sets the ID of the geographic location where the item is being shipped to. For a list of IDs, see [Bing Ads Geographical Location Codes](/bingads/guides/geographical-location-codes.md).|String|\<location_id\>
 |postalCode|Gets or sets the postal code or postal code range of the location where the item is being shipped to. You may specify the postal code as follows:<br/><br/><ul><li>A complete postal code: 94114<br /><br /></li><li>A postal code with a wildcard (suffix only): 94\*<br /><br /></li><li>A range of codes: 94002-95460<br /><br /></li><li>A range of codes with wildcards (the postal code prefixes must be of equal length: 94\*-95\*</li></ul>|String|\<postal_code\>
 |price|Gets or sets the fixed price to ship the item to the specified location.|[ProductPrice](#productprice)|\<price\>
 |region|Gets or sets geographical region where the item is being shipped to (for example, zip code).|String|\<region\>
@@ -304,7 +304,7 @@ Defines the geographical location that determines the applicable taxes.
 |Name|Value|Type|XML element name
 |----|-----|----|----------------
 |country|Gets or sets the country whose tax rate applies. Uses the two-letter [ISO 3166](http://loc.gov/standards/iso639-2/php/code_list.php) country code.|String|\<country\>
-|locationId|Gets or sets the ID of the geographic location whose tax rate applies. For a list of IDs, see [Bing Ads Geographical Location Codes](~/guides/geographical-location-codes.md).|Long|\<location_id\>
+|locationId|Gets or sets the ID of the geographic location whose tax rate applies. For a list of IDs, see [Bing Ads Geographical Location Codes](/bingads/guides/geographical-location-codes.md).|Long|\<location_id\>
 |postalCode|Gets or sets the postal code or range of postal codes whose tax rate applies. You may specify the postal code as follows:<br/><br/><ul><li>A complete postal code: 94114<br /><br /></li><li>A postal code with a wildcard (suffix only): 94\*<br /><br /></li><li>A range of codes: 94002-95460<br /><br /></li><li>A range of codes with wildcards (the postal code prefixes must be of equal length: 94\*-95\*</li></ul>|String|\<postal_code\>|
 |rate|Gets or sets the percentage tax rate to apply to the price of the item. To specify a 5% rate, set this field to 5. To specify a 9.8% rate, set this field to 9.8.|Double|\<rate\>
 |region|Gets or sets a geographical region whose tax rate applies.|String|\<region\>

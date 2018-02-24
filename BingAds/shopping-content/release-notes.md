@@ -19,17 +19,17 @@ This release includes the following changes:
 ## <a name="may2017"></a>May 2017
 This release includes the following changes:
 
-- The following [Product](~/shopping-content/products-resource.md#product) fields are now required if the manufacturer assigns them.  
+- The following [Product](/bingads/shopping-content/products-resource.md#product) fields are now required if the manufacturer assigns them.  
   
-  - [brand](~/shopping-content/products-resource.md#brand) 
-  - [gtin](~/shopping-content/products-resource.md#gtin) 
-  - [mpn](~/shopping-content/products-resource.md#mpn)  
+  - [brand](/bingads/shopping-content/products-resource.md#brand) 
+  - [gtin](/bingads/shopping-content/products-resource.md#gtin) 
+  - [mpn](/bingads/shopping-content/products-resource.md#mpn)  
   
-  If the manufacturer assigns values for these fields, you must specify them in your offer. If you do not, BMC will accept the offer for now but will return a warning message in the response (see [warnings](~/shopping-content/products-resource.md#warnings)). You should update your code at your earliest convenience to begin providing this information.  
+  If the manufacturer assigns values for these fields, you must specify them in your offer. If you do not, BMC will accept the offer for now but will return a warning message in the response (see [warnings](/bingads/shopping-content/products-resource.md#warnings)). You should update your code at your earliest convenience to begin providing this information.  
   
-- If you do not specify the `brand`, `gtin`, or `mpn` fields, you must set the [identifierExists](~/shopping-content/products-resource.md#identifierexists) field to **false**. It's default is **true**.  
+- If you do not specify the `brand`, `gtin`, or `mpn` fields, you must set the [identifierExists](/bingads/shopping-content/products-resource.md#identifierexists) field to **false**. It's default is **true**.  
   
-- Added the `warnings` field to the [BatchItemError](~/shopping-content/products-resource.md#batchitemerror) object.
+- Added the `warnings` field to the [BatchItemError](/bingads/shopping-content/products-resource.md#batchitemerror) object.
 
  
 ## <a name="march2017"></a>March 2017

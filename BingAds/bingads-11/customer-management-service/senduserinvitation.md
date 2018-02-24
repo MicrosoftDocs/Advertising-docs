@@ -20,7 +20,7 @@ Since a recipient can accept the invitation and sign into Bing Ads with a Micros
 
 After the invitation has been accepted, you can call [GetUsersInfo](../customer-management-service/getusersinfo.md) and [GetUser](../customer-management-service/getuser.md) to access the Bing Ads user details. Once again though, since a recipient can accept the invitation and sign into Bing Ads with a Microsoft account different than the invitation email address, you cannot determine with certainty the mapping from [UserInvitation](../customer-management-service/userinvitation.md) to accepted [User](../customer-management-service/user.md). With the user ID returned by [GetUsersInfo](../customer-management-service/getusersinfo.md) or [GetUser](../customer-management-service/getuser.md), you can call [DeleteUser](../customer-management-service/deleteuser.md) to remove the user.
 
-For more information about user authentication, see [Authentication with OAuth](~/guides/authentication-oauth.md).
+For more information about user authentication, see [Authentication with OAuth](/bingads/guides/authentication-oauth.md).
 
 ## <a name="request"></a>Request Elements
 The *SendUserInvitationRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -96,7 +96,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](/bingads/guides/client-libraries.md). See [Bing Ads Code Examples](/bingads/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<SendUserInvitationResponse> SendUserInvitationAsync(
 	UserInvitation userInvitation)

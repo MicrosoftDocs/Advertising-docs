@@ -23,4 +23,4 @@ This example demonstrates how to request and retrieve performance reports.
 [!code-python[Main](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/report_requests.py)]
 
 ## See Also
-[Get Started with the Bing Ads API](../guides/get-started.md)  
+[Get Started with the Bing Ads API](/bingads/guides/get-started.md)  

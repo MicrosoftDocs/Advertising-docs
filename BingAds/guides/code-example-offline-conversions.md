@@ -17,4 +17,4 @@ This example demonstrates how to send Bing Ads your offline conversions using th
 [!code-python[Main](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/offline_conversions.py)]
 
 ## See Also
-[Get Started with the Bing Ads API](../guides/get-started.md)  
+[Get Started with the Bing Ads API](/bingads/guides/get-started.md)  

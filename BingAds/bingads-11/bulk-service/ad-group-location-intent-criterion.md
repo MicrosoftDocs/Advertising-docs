@@ -30,7 +30,7 @@ For an *Ad Group Location Intent Criterion* record, the following attribute fiel
 - [Status](#status)
 - [Target](#target)
 
-You can download all fields of the *Ad Group Location Intent Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group Location Intent Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new ad group location intent criterion if a valid ad group identifier (*Parent Id*) is provided. 
 
@@ -40,7 +40,7 @@ Format Version,,,,,,,,,,,5,,,,,,,,,
 Ad Group Location Intent Criterion,Active,,-1111,,,,ClientIdGoesHere,,PeopleIn,,,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupLocationIntentCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](/bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupLocationIntentCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -142,7 +142,7 @@ The identifier of the ad group where this criterion is applied or removed.
 	
 This bulk field maps to the *Id* field of the [Ad Group](../bulk-service/ad-group.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-service/ad-group.md) record. This is recommended if you are adding new criterions to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-service/ad-group.md) record. This is recommended if you are adding new criterions to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 

@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # Get Started With the Bing Ads API
-Any Bing Ads user with a developer token can begin using the Bing Ads API. For advertisers placing a large number of ads or developers building advertising tools, the Bing Ads API provides a programmatic interface to Bing Ads. You can write your Bing Ads application in any language that supports web services. To get started with a specific SDK, see Get Started in [C#](~/guides/get-started-csharp.md) | [Java](~/guides/get-started-java.md) | [PHP](~/guides/get-started-php.md) | [Python](~/guides/get-started-python.md).
+Any Bing Ads user with a developer token can begin using the Bing Ads API. For advertisers placing a large number of ads or developers building advertising tools, the Bing Ads API provides a programmatic interface to Bing Ads. You can write your Bing Ads application in any language that supports web services. To get started with a specific SDK, see Get Started in [C#](/bingads/guides/get-started-csharp.md) | [Java](/bingads/guides/get-started-java.md) | [PHP](/bingads/guides/get-started-php.md) | [Python](/bingads/guides/get-started-python.md).
 
 ## <a name="get-developer-token"></a>Get a Developer Token
 To use Bing Ads APIs, you must have a developer token and valid user credentials. A developer token enables programmatic access to the accounts permitted for a user. Each provisioned user is assigned a role, for example Super Admin, and granted permissions to one or more accounts. The same accounts available in the Bing Ads web application are available to the corresponding user programmatically through the API. For more information see [Account Permissions and the Developer Token](customer-accounts.md#accountpermissions). 
@@ -22,7 +22,7 @@ To use Bing Ads APIs, you must have a developer token and valid user credentials
 The sandbox and production environments use separate credentials. You can sign up for a [Sandbox](sandbox.md) account [here](https://secure.sandbox.bingads.microsoft.com/). Everyone can use the universal sandbox developer token i.e., **BBD37VB98**.
 
 ## <a name="where-to-use"></a>Where to Use the API Credentials
-When you call a service operation such as [GetCampaignsByAccountId](~/campaign-management-service/getcampaignsbyaccountid.md), you must specify [request header](#request-headers) elements such as DeveloperToken, CustomerId, and CustomerAccountId.
+When you call a service operation such as [GetCampaignsByAccountId](/bingads/campaign-management-service/getcampaignsbyaccountid.md), you must specify [request header](#request-headers) elements such as DeveloperToken, CustomerId, and CustomerAccountId.
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
@@ -45,7 +45,7 @@ When you call a service operation such as [GetCampaignsByAccountId](~/campaign-m
 </s:Envelope>
 ```
 
-If you are using one of the Bing Ads [SDKs](~/guides/client-libraries.md), the [request header](#request-headers) elements are set using *AuthorizationData*. For more details about the SDK authentication library see [Authentication With the SDKs](~/guides/sdk-authentication.md). 
+If you are using one of the Bing Ads [SDKs](/bingads/guides/client-libraries.md), the [request header](#request-headers) elements are set using *AuthorizationData*. For more details about the SDK authentication library see [Authentication With the SDKs](/bingads/guides/sdk-authentication.md). 
 
 ```csharp
 var authorizationData = new AuthorizationData
@@ -84,7 +84,7 @@ To get a user's customer ID and account ID, you can sign in to the Bing Ads web 
 
 With the Customer Management API you can get the customer and account identifiers for each authenticated user. 
 
-Call [GetUser](~/customer-management-service/getuser.md) with your Bing Ads credentials and DeveloperToken. Within the Body set the UserId nil. The response will include a [User](~/customer-management-service/user.md) object that contains the UserId.
+Call [GetUser](/bingads/customer-management-service/getuser.md) with your Bing Ads credentials and DeveloperToken. Within the Body set the UserId nil. The response will include a [User](/bingads/customer-management-service/user.md) object that contains the UserId.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -104,7 +104,7 @@ Call [GetUser](~/customer-management-service/getuser.md) with your Bing Ads cred
 </s:Envelope>
 ```
 
-Then call [SearchAccounts](~/customer-management-service/getuser.md) with the UserId returned via the previous step. The returned advertiser account (or accounts) will include account and customer identifiers.
+Then call [SearchAccounts](/bingads/customer-management-service/getuser.md) with the UserId returned via the previous step. The returned advertiser account (or accounts) will include account and customer identifiers.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -136,10 +136,10 @@ Then call [SearchAccounts](~/customer-management-service/getuser.md) with the Us
 ```
 
 > [!TIP]
-> See [Search User Accounts Code Example](~/guides/code-example-search-user-accounts.md) for a code example that returns accounts for the current authenticated user.
+> See [Search User Accounts Code Example](/bingads/guides/code-example-search-user-accounts.md) for a code example that returns accounts for the current authenticated user.
 
 ## <a name="request-headers"></a>Request Header Elements
-Bing Ads services use Simple Object Access Protocol (SOAP) to exchange the request and response messages with the service operation. For more information, see [Bing Ads Services Protocol](../guides/services-protocol.md).
+Bing Ads services use Simple Object Access Protocol (SOAP) to exchange the request and response messages with the service operation. For more information, see [Bing Ads Services Protocol](/bingads/guides/services-protocol.md).
 
 Each SOAP request must include the following SOAP headers, which contain the user's credentials.
 
@@ -154,7 +154,7 @@ Each SOAP request must include the following SOAP headers, which contain the use
 |UserName|The Bing Ads managed user's sign-in name. You must not set this element to a Microsoft account or email address.|**string**|
 
 > [!IMPORTANT]
-> The UserName and Password header elements are deprecated. In future versions of the API, Bing Ads will transition exclusively to Microsoft Account (email address) authentication. For more information, see [Authentication with OAuth](~/guides/authentication-oauth.md). UserName and Password are still required for Bing Ads managed credentials, but they are not applicable for Microsoft account authentication. To authenticate a Microsoft account, use the AuthenticationToken] header instead of UserName and Password.  
+> The UserName and Password header elements are deprecated. In future versions of the API, Bing Ads will transition exclusively to Microsoft Account (email address) authentication. For more information, see [Authentication with OAuth](/bingads/guides/authentication-oauth.md). UserName and Password are still required for Bing Ads managed credentials, but they are not applicable for Microsoft account authentication. To authenticate a Microsoft account, use the AuthenticationToken] header instead of UserName and Password.  
 
 > [!TIP]
 > Do not mistake the account number for the account identifier. The account number is the system generated account number that is used to identify the account in the Bing Ads web application. The account number has the form xxxxxxxx, where xxxxxxxx is a series of any eight alphanumeric characters. The API service requests only use the account identifier, and never use the account number.
@@ -163,11 +163,11 @@ Each SOAP request must include the following SOAP headers, which contain the use
 > With the exception of the Customer Billing and Customer Management services, the CustomerAccountId and CustomerId are required for most service operations. As a best practice you should always specify them in the request.  
 
 ## <a name="need-help"></a>Need Help?
-For troubleshooting tips, see [Handling Service Errors and Exceptions](../guides/handle-service-errors-exceptions.md).
+For troubleshooting tips, see [Handling Service Errors and Exceptions](/bingads/guides/handle-service-errors-exceptions.md).
 
 To get help with issues that you cannot resolve, consider posting in the [API Developer Forum](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) where an active Bing Ads product team or community member will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Bing Ads Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support).
 
 ## See Also
-[Bing Ads Technical Guides](../guides/technical-guides.md)  
-[Bing Ads API Reference](../guides/reference.md)  
+[Bing Ads Technical Guides](/bingads/guides/technical-guides.md)  
+[Bing Ads API Reference](/bingads/guides/reference.md)  
 

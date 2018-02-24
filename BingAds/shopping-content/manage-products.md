@@ -118,11 +118,11 @@ The `channel`, `contentLanguage`, `targetCountry`, and `offerId` are used to gen
 
 The following fields are also required if the manufacturer assigned values.
 
-  - [brand](~/shopping-content/products-resource.md) 
-  - [gtin](~/shopping-content/products-resource.md) 
-  - [mpn](~/shopping-content/products-resource.md)  
+  - [brand](/bingads/shopping-content/products-resource.md) 
+  - [gtin](/bingads/shopping-content/products-resource.md) 
+  - [mpn](/bingads/shopping-content/products-resource.md)  
 
-You must specify the values if known. If you do not specify any of them, you must set the [identifierExists](~/shopping-content/products-resource.md) field to **false**. The default is **true**.
+You must specify the values if known. If you do not specify any of them, you must set the [identifierExists](/bingads/shopping-content/products-resource.md) field to **false**. The default is **true**.
 
 If the product is known to have these identifiers and you do not specify them, BMC will accept the product for now but the `Product` object in the response will include the `warnings` field. You should always check if the `warnings` field exists and fix all identified issues.
 

@@ -14,7 +14,7 @@ After you create a UET tag (e.g. via [AddUetTags](../campaign-management-service
 You can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2).
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](~/guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](/bingads/guides/universal-event-tracking.md) technical guide.
 
 ## Syntax
 ```xml

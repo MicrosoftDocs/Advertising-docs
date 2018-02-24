@@ -24,7 +24,7 @@ The *Account* record is included in the Bulk download file automatically everyti
 The system generated identifier of the account.
 
 > [!IMPORTANT]
-> The Bing Ads Bulk API only supports one account per file. This field is ignored during upload, and effectively set to the account ID that is specified in the [GetBulkUploadUrl](~/bulk-service/getbulkuploadurl.md) service request.
+> The Bing Ads Bulk API only supports one account per file. This field is ignored during upload, and effectively set to the account ID that is specified in the [GetBulkUploadUrl](/bingads/bulk-service/getbulkuploadurl.md) service request.
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -65,7 +65,7 @@ The tracking template to use as a default for all URLs in your account.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](~/guides/entity-hierarchy-limits.md).
+- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits.md).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 

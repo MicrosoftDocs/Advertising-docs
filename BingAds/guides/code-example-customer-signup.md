@@ -23,4 +23,4 @@ This example demonstrates how a reseller can call SignupCustomer to create a new
 [!code-python[Main](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/customer_signup.py)]
 
 ## See Also
-[Get Started with the Bing Ads API](../guides/get-started.md)  
+[Get Started with the Bing Ads API](/bingads/guides/get-started.md)  

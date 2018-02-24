@@ -13,11 +13,11 @@ description: Defines the attributes and performance statistics columns that you 
 
 Defines the attributes and performance statistics columns that you can include in the [CallDetailReportRequest](../reporting-service/calldetailreportrequest.md).
 
-The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](~/guides/reports.md#columnsdata).
+The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](/bingads/guides/reports.md#columnsdata).
 
 For a list of columns that you must include, please see the [Required Columns](#requiredcolumns) section below.
 
-To see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report, see [Report Data Retention Time Periods](~/guides/report-data-retention-time-periods.md).
+To see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report, see [Report Data Retention Time Periods](/bingads/guides/report-data-retention-time-periods.md).
 
 ## Syntax
 ```xml
@@ -68,7 +68,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns
-The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](/bingads/guides/report-attributes-performance-statistics.md).
 
 > [!NOTE]
 > The TimePeriod column is required for all aggregation types except Summary.

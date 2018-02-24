@@ -29,7 +29,7 @@ The *SuggestKeywordsFromExistingKeywordsRequest* object defines the [body](#requ
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign for suggested keywords.<br /><br /> This element is not yet supported and may be used to influence keyword suggestions in a future release|**long**|
 |<a name="excludebrand"></a>ExcludeBrand|A value that determines whether the results exclude brand keywords. To exclude brand keywords in the result, set to true. The default is false.|**boolean**|
 |<a name="keywords"></a>Keywords|An array of keywords for which you want to get suggested keywords that could perform better. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string** array|
-|<a name="language"></a>Language|The language in which the keyword is written.<br /><br />For possible values, see [Ad Languages](~/guides/ad-languages.md). See the [Remarks](#remarks) section below for a list of providers that are supported for each language.<br /><br />The default is English.|**string**|
+|<a name="language"></a>Language|The language in which the keyword is written.<br /><br />For possible values, see [Ad Languages](/bingads/guides/ad-languages.md). See the [Remarks](#remarks) section below for a list of providers that are supported for each language.<br /><br />The default is English.|**string**|
 |<a name="maxsuggestionsperkeyword"></a>MaxSuggestionsPerKeyword|The maximum number of keyword suggestions to return per specified keyword. If *SuggestionType* is set to 4, you can request a maximum of 200 suggestions per keyword; otherwise the maximum suggestions that you can request is 100.<br /><br />The default is 50.|**int**|
 |<a name="publishercountries"></a>PublisherCountries|The country codes of the countries/regions to use as the source of data for determining the suggested keywords.<br /><br />You can specify one or more country codes. Each country that you specify must support the language that you specified in the *Language* element.<br /><br />For supported values, see the [Remarks](#remarks) section below.<br /><br />The default is all countries/regions that support the specified language.|**string** array|
 |<a name="removeduplicates"></a>RemoveDuplicates|A Boolean value that determines whether to remove duplicate keywords from the list of suggested keywords. To remove duplicates, set to true. The default is false.|**boolean**|
@@ -112,7 +112,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](/bingads/guides/client-libraries.md). See [Bing Ads Code Examples](/bingads/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<SuggestKeywordsFromExistingKeywordsResponse> SuggestKeywordsFromExistingKeywordsAsync(
 	IList<string> keywords,

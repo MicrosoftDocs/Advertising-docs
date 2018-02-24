@@ -12,7 +12,7 @@ dev_langs:
   - csharp
 ---
 # Authenticating Microsoft Account Credentials Code Example
-If your Bing Ads users use a Microsoft account, you will use OAuth to authenticate them. For information about using OAuth, see [Authentication with OAuth](~/guides/authentication-oauth.md). If you're currently using the [Bing Ads SDK](~/guides/client-libraries.md) for .NET to authenticate the user's Microsoft account credentials, you may continue to do so. 
+If your Bing Ads users use a Microsoft account, you will use OAuth to authenticate them. For information about using OAuth, see [Authentication with OAuth](/bingads/guides/authentication-oauth.md). If you're currently using the [Bing Ads SDK](/bingads/guides/client-libraries.md) for .NET to authenticate the user's Microsoft account credentials, you may continue to do so. 
 
 The following examples show how to get an OAuth token that you use to set the AuthenticationToken header to. The example is broken out into two part: the first example shows a simple client that calls the [second example](#secondexample) which implements the code grant flow process. 
 

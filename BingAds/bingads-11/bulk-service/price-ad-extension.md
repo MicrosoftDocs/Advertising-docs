@@ -47,7 +47,7 @@ For a *Price Ad Extension* record, the following attribute fields are available 
 - [Use Searcher Time Zone](#usesearchertimezone)
 - [Version](#version)
 
-You can download all fields of the *Price Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *PriceAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
+You can download all fields of the *Price Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *PriceAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Price Ad Extension to the account's shared library. 
 
@@ -58,7 +58,7 @@ Price Ad Extension,,-24,,,,ClientIdGoesHere,,,,,,(Monday[09:00-21:00]),FALSE,,{_
 
 ```
 
-If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkPriceAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](/bingads/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkPriceAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -253,7 +253,7 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Read-only  
 
 ### <a name="currencycode"></a>Currency Code (1-8)
-The bulk file includes up to 8 currency code columns, i.e., one for each price table item in the ad extension. The bulk file column headers are *Currency Code 1*, *Currency Code 2*, *Currency Code 3*, *Currency Code 4*, *Currency Code 5*, *Currency Code 6*, *Currency Code 7*, and *Currency Code 8*. For more information, see [Currencies](~/guides/currencies.md).
+The bulk file includes up to 8 currency code columns, i.e., one for each price table item in the ad extension. The bulk file column headers are *Currency Code 1*, *Currency Code 2*, *Currency Code 3*, *Currency Code 4*, *Currency Code 5*, *Currency Code 6*, *Currency Code 7*, and *Currency Code 8*. For more information, see [Currencies](/bingads/guides/currencies.md).
 
 You must have between 3 and 8 price table items per price ad extension. All price table items for a price ad extension must be in the same bulk file record. Each price table item is mapped to the same index of [Currency Code](#currencycode), [Final Mobile Url](#finalmobileurl), [Final Url](#finalurl), [Header](#header), [Price](#price), [Price Description](#pricedescription), [Price Unit](#priceunit), and [Price Qualifier](#pricequalifier) columns. For example the first price table item is mapped to the *Currency Code 1*, *Final Mobile Url 1*, *Final Url 1*, *Header 1*, *Price 1*, *Price Description 1*, *Price Unit 1*, and *Price Qualifier 1* columns.
 
@@ -288,7 +288,7 @@ The component or property of the ad extension that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](/bingads/guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -297,7 +297,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](~/campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](/bingads/campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -389,14 +389,14 @@ You must have between 3 and 8 price table items per price ad extension. All pric
 ### <a name="id"></a>Id
 The system generated identifier of the ad extension.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Price Ad Extension](../bulk-service/ad-group-price-ad-extension.md) and [Campaign Price Ad Extension](../bulk-service/campaign-price-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Price Ad Extension](../bulk-service/ad-group-price-ad-extension.md) and [Campaign Price Ad Extension](../bulk-service/campaign-price-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
 ### <a name="language"></a>Language
 The language for the ad copy of your price ad extension.
 
-For possible values, see [Ad Languages](~/guides/ad-languages.md).
+For possible values, see [Ad Languages](/bingads/guides/ad-languages.md).
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.   
@@ -510,7 +510,7 @@ The tracking template to use for your price table item URLs.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](~/guides/entity-hierarchy-limits.md).
+- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits.md).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 

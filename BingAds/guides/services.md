@@ -35,6 +35,6 @@ description: Reference documentation for Bing Ads web services.
 ::: moniker-end
 
 ## <a name="see-also"></a>See Also
-[Release Notes](../guides/release-notes.md)  
-[Get Started With the Bing Ads API](../guides/get-started.md)  
-[Bing Ads Technical Guides](../guides/technical-guides.md)  
+[Release Notes](/bingads/guides/release-notes.md)  
+[Get Started With the Bing Ads API](/bingads/guides/get-started.md)  
+[Bing Ads Technical Guides](/bingads/guides/technical-guides.md)  
