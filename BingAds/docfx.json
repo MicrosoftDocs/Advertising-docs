@@ -4,7 +4,8 @@
       {
         "files": [
           "**/*.md",
-          "**/*.yml"
+          "**/*.yml",
+          "breadcrumb/toc.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -19,7 +20,7 @@
         ]
       },
       {
-        "group": "bingads-11",
+        "group": "bingads",
         "src": "bingads-11",
         "files": [
           "**/*.md",
@@ -35,7 +36,7 @@
         ]
       },
       {
-        "group": "bingads-12",
+        "group": "bingads",
         "src": "bingads-12",
         "files": [
           "**/*.md",
@@ -49,7 +50,23 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
-      }       
+      },
+      {
+        "group": "bingads",
+        "src": "guides",
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }        
     ],
     "resource": [
       {
@@ -64,7 +81,7 @@
         ]
       },
       {
-        "group": "bingads-11",
+        "group": "bingads",
         "src": "bingads-11",
         "files": [
           "**/*.png",
@@ -77,8 +94,21 @@
         ]
       },
       {
-        "group": "bingads-12",
+        "group": "bingads",
         "src": "bingads-12",
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "group": "bingads",
+        "src": "guides",
         "files": [
           "**/*.png",
           "**/*.jpg",
@@ -120,18 +150,18 @@
         "hint-message/**.yml": "hotel-ads-hint-message",
         "query-message/**.yml": "hotel-ads-query-message",
         "query-control-message/**.yml": "hotel-ads-query-control-message"    
+      },
+      "monikerRange": {
+        "bingads-11/**/*.md": "= bingads-11",
+        "bingads-12/**/*.md": "= bingads-12"
       }
     },
     "template": [],
     "dest": "bingads",
     "groups": {
-      "bingads-11": {
+      "bingads": {
         "dest": "",
-        "moniker_range": "= bingads-11"
-      },
-      "bingads-12": {
-        "dest": "",
-        "moniker_range": "= bingads-12"
+        "moniker_range": " >= bingads-11"
       }
     }
   }
