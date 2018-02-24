@@ -15,7 +15,7 @@ dev_langs:
 Gets the status of a bulk download request.
 
 > [!NOTE]
-> You must use the same user credentials for the download request operation (either [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md)) and  the [GetBulkDownloadStatus](../bulk-service/getbulkdownloadstatus.md) polling operation.
+> You must use the same user credentials for the download request operation (either [DownloadCampaignsByAccountIds](bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](bingads/bulk-service/downloadcampaignsbycampaignids.md)) and  the [GetBulkDownloadStatus](bingads/bulk-service/getbulkdownloadstatus.md) polling operation.
 
 ## <a name="request"></a>Request Elements
 The *GetBulkDownloadStatusRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -24,7 +24,7 @@ The *GetBulkDownloadStatusRequest* object defines the [body](#request-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="requestid"></a>RequestId|The identifier of the download request.<br /><br />The [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) operations return this element as the *DownloadRequestId*.|**string**|
+|<a name="requestid"></a>RequestId|The identifier of the download request.<br /><br />The [DownloadCampaignsByAccountIds](bingads/bulk-service/downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](bingads/bulk-service/downloadcampaignsbycampaignids.md) operations return this element as the *DownloadRequestId*.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -40,7 +40,7 @@ The *GetBulkDownloadStatusResponse* object defines the [body](#response-body) an
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *GetBulkDownloadStatusResponse* message object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="percentcomplete"></a>PercentComplete|The progress completion percentage for system processing of the bulk download file.|**int**|
 |<a name="requeststatus"></a>RequestStatus|The status of the download. The possible values are as follows.<br /><br />Completed - The download completed successfully.<br /><br />InProgress - The download is in progress.<br /><br />Failed - The download failed. You may submit a new download with fewer entities, without performance data, or try again to submit the same download later.<br /><br />FailedFullSyncRequired - The request's *LastSyncTimeInUTC* element must be set to null, for example if the specified account was included in a data migration. After requesting a full download, you may begin requesting delta downloads again.|**string**|
-|<a name="resultfileurl"></a>ResultFileUrl|The URL that contains the download data. This element contains the URL when the *Status* element is *Success*.<br /><br /> You have five minutes from the time that *GetBulkDownloadStatus* returns success to start downloading the file. If you do not start the download within this time period, you will need to call *GetBulkDownloadStatus* again to get a new URL.<br /><br />The download file is compressed (in zip format), so you must unzip the file to access the data.<br /><br />For information about the bulk file format, see [Bulk File Schema](../bulk-service/bulk-file-schema.md).|**string**|
+|<a name="resultfileurl"></a>ResultFileUrl|The URL that contains the download data. This element contains the URL when the *Status* element is *Success*.<br /><br /> You have five minutes from the time that *GetBulkDownloadStatus* returns success to start downloading the file. If you do not start the download within this time period, you will need to call *GetBulkDownloadStatus* again to get a new URL.<br /><br />The download file is compressed (in zip format), so you must unzip the file to access the data.<br /><br />For information about the bulk file format, see [Bulk File Schema](bingads/bulk-service/bulk-file-schema.md).|**string**|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -101,7 +101,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetBulkDownloadStatusResponse> GetBulkDownloadStatusAsync(
 	string requestId)

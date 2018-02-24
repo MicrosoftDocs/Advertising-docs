@@ -32,13 +32,13 @@ Defines the current possible types of conversion goals.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="appinstall"></a>AppInstall|Refers to an [AppInstallGoal](../campaign-management-service/appinstallgoal.md)|
-|<a name="duration"></a>Duration|Refers to a [DurationGoal](../campaign-management-service/durationgoal.md)|
-|<a name="event"></a>Event|Refers to an [EventGoal](../campaign-management-service/eventgoal.md)|
-|<a name="instoretransaction"></a>InStoreTransaction|Refers to an [InStoreTransactionGoal](../campaign-management-service/instoretransactiongoal.md)|
-|<a name="offlineconversion"></a>OfflineConversion|Refers to an [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md)|
-|<a name="pagesviewedpervisit"></a>PagesViewedPerVisit|Refers to a [PagesViewedPerVisitGoal](../campaign-management-service/pagesviewedpervisitgoal.md)|
-|<a name="url"></a>Url|Refers to a [UrlGoal](../campaign-management-service/urlgoal.md)|
+|<a name="appinstall"></a>AppInstall|Refers to an [AppInstallGoal](bingads/campaign-management-service/appinstallgoal.md)|
+|<a name="duration"></a>Duration|Refers to a [DurationGoal](bingads/campaign-management-service/durationgoal.md)|
+|<a name="event"></a>Event|Refers to an [EventGoal](bingads/campaign-management-service/eventgoal.md)|
+|<a name="instoretransaction"></a>InStoreTransaction|Refers to an [InStoreTransactionGoal](bingads/campaign-management-service/instoretransactiongoal.md)|
+|<a name="offlineconversion"></a>OfflineConversion|Refers to an [OfflineConversionGoal](bingads/campaign-management-service/offlineconversiongoal.md)|
+|<a name="pagesviewedpervisit"></a>PagesViewedPerVisit|Refers to a [PagesViewedPerVisitGoal](bingads/campaign-management-service/pagesviewedpervisitgoal.md)|
+|<a name="url"></a>Url|Refers to a [UrlGoal](bingads/campaign-management-service/urlgoal.md)|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

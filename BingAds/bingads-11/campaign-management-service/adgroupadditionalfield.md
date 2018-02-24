@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a list of optional AdGroup properties that you can request when calling GetAdGroupsByCampaignId and GetAdGroupsByIds.
 ---
 # AdGroupAdditionalField Value Set - Campaign Management
-Defines a list of optional [AdGroup](../campaign-management-service/adgroup.md) properties that you can request when calling [GetAdGroupsByCampaignId](../campaign-management-service/getadgroupsbycampaignid.md) and [GetAdGroupsByIds](../campaign-management-service/getadgroupsbyids.md). This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding properties will be included in the [AdGroup](../campaign-management-service/adgroup.md) object by default.
+Defines a list of optional [AdGroup](bingads/campaign-management-service/adgroup.md) properties that you can request when calling [GetAdGroupsByCampaignId](bingads/campaign-management-service/getadgroupsbycampaignid.md) and [GetAdGroupsByIds](bingads/campaign-management-service/getadgroupsbyids.md). This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding properties will be included in the [AdGroup](bingads/campaign-management-service/adgroup.md) object by default.
 
 ## Syntax
 ```xml
@@ -28,7 +28,7 @@ Defines a list of optional [AdGroup](../campaign-management-service/adgroup.md) 
 
 |Value|Description|
 |-----------|---------------|
-|<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|Request that the *InheritedBidStrategyType* element be included within each returned [InheritFromParentBiddingScheme](../campaign-management-service/inheritfromparentbiddingscheme.md) object (nested within the *BiddingScheme* element of an [AdGroup](../campaign-management-service/adgroup.md)).|
+|<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|Request that the *InheritedBidStrategyType* element be included within each returned [InheritFromParentBiddingScheme](bingads/campaign-management-service/inheritfromparentbiddingscheme.md) object (nested within the *BiddingScheme* element of an [AdGroup](bingads/campaign-management-service/adgroup.md)).|
 |<a name="privacystatus"></a>PrivacyStatus|Reserved.|
 |<a name="targetsetting"></a>TargetSetting|Reserved.|
 

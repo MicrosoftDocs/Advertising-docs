@@ -9,7 +9,7 @@ description: The date range search parameter that you can include when requestin
 # DateRangeSearchParameter Data Object - Ad Insight
 The date range search parameter that you can include when requesting keyword ideas.
 
-For more information about the significance of the date range search parameter, see *MonthlySearchCounts* with the [KeywordIdea](../ad-insight-service/keywordidea.md) object.
+For more information about the significance of the date range search parameter, see *MonthlySearchCounts* with the [KeywordIdea](bingads/ad-insight-service/keywordidea.md) object.
 
 ## Syntax
 ```xml

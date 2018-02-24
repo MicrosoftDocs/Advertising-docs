@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the attribute columns that you can include in the SearchCampaignChangeHistoryReportRequest.
 ---
 # SearchCampaignChangeHistoryReportColumn Value Set - Reporting
-Defines the attribute columns that you can include in the [SearchCampaignChangeHistoryReportRequest](../reporting-service/searchcampaignchangehistoryreportrequest.md).
+Defines the attribute columns that you can include in the [SearchCampaignChangeHistoryReportRequest](bingads/reporting-service/searchcampaignchangehistoryreportrequest.md).
 
 For a list of columns that you must include, please see the [Required Columns](#requiredcolumns) section below.
 
@@ -48,13 +48,13 @@ For a list of columns that you must include, please see the [Required Columns](#
 |<a name="adgroupid"></a>AdGroupId|The Bing Ads assigned identifier of an ad group.  This column will be empty if *ItemChanged* is not Ad , Ad group, or Keyword.|
 |<a name="adgroupname"></a>AdGroupName|The ad group name.  This column will be empty if *ItemChanged* is not Ad , Ad group, or Keyword.|
 |<a name="adtitle"></a>AdTitle|The ad title.|
-|<a name="attributechanged"></a>AttributeChanged|Identifies the attribute or property of the entity from the *ItemChanged* column that changed.For a list of elements whose change history is reported, see the Attribute Changed column within [Remarks](../reporting-service/searchcampaignchangehistoryreportcolumn.md#remarks). This column is empty if a campaign, ad group, or ad entity was added or deleted.|
+|<a name="attributechanged"></a>AttributeChanged|Identifies the attribute or property of the entity from the *ItemChanged* column that changed.For a list of elements whose change history is reported, see the Attribute Changed column within [Remarks](bingads/reporting-service/searchcampaignchangehistoryreportcolumn.md#remarks). This column is empty if a campaign, ad group, or ad entity was added or deleted.|
 |<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
 |<a name="changedby"></a>ChangedBy|The username of the user that made the change to settings within the account. If the system made the change, the value will be Administrator.|
 |<a name="datetime"></a>DateTime|The date and time of the change. The date and time will be in the time zone of the campaign.|
 |<a name="displayurl"></a>DisplayUrl|The ad display URL.  This column will be empty if *ItemChanged* is not Ad.|
-|<a name="howchanged"></a>HowChanged|The value that indicates whether the element was added, updated, or deleted. For possible values, see [ChangeTypeReportFilter Value Set](../reporting-service/changetypereportfilter.md).For adds, the `NewValue` column contains the added entity. For deletes, the `OldValue` column contains the deleted entity. For updates, the `NewValue` column contains the new value and the `OldValue` column contains the old value.If an entity which has a delivery status property was added, for example a campaign, the value of `HowChanged` is Added. To report a deleted entity,  the `ItemChanged` field is Status, the `HowChanged` field is Changed, and the `NewValue` field is Deleted.Associating a target with a campaign or ad group will be reported as an add change. The `AttributeChanged` column will identify the target types contained in the target object. Updates to a target object will be reported as a delete change and an add change. Removing a campaign's or ad group's association with a target object will be reported as a delete change.|
+|<a name="howchanged"></a>HowChanged|The value that indicates whether the element was added, updated, or deleted. For possible values, see [ChangeTypeReportFilter Value Set](bingads/reporting-service/changetypereportfilter.md).For adds, the `NewValue` column contains the added entity. For deletes, the `OldValue` column contains the deleted entity. For updates, the `NewValue` column contains the new value and the `OldValue` column contains the old value.If an entity which has a delivery status property was added, for example a campaign, the value of `HowChanged` is Added. To report a deleted entity,  the `ItemChanged` field is Status, the `HowChanged` field is Changed, and the `NewValue` field is Deleted.Associating a target with a campaign or ad group will be reported as an add change. The `AttributeChanged` column will identify the target types contained in the target object. Updates to a target object will be reported as a delete change and an add change. Removing a campaign's or ad group's association with a target object will be reported as a delete change.|
 |<a name="itemchanged"></a>ItemChanged|The value that identifies the entity that changed.If the change is an update to an element of the entity or is related to a target associated with a campaign or ad group, the *AttributeChanged* column contains the element of the entity that changed or the type of target that was changed.|
 |<a name="keyword"></a>Keyword|The keyword text.  This column will be empty if *ItemChanged* is not Keyword.|
 |<a name="newvalue"></a>NewValue|The value after the change. For more information, see the *HowChanged* column.|
@@ -62,7 +62,7 @@ For a list of columns that you must include, please see the [Required Columns](#
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns
-The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](bingads/guides/report-attributes-performance-statistics.md).
 
 |Column|
 |----------|
@@ -117,7 +117,7 @@ When the *ItemChanged* field's value is Ad, change history for the following att
 |Custom parameters|Refers to the custom parameters of the ad.|
 |Destination URL|Refers to the destination URL of the ad.|
 |Display URL|Refers to the display URL of the ad.|
-|Editorial status|Refers to the editorial status of the ad.<br /><br /> If the ad is pending offline editorial review, then within a downloaded change history report the editorial status is represented as either *Pending - Active* or *Pending - Inactive*. For more information, see [Entities and Delivery Status](~/guides/editorial-review-appeals.md#entitydeliverystatus).|
+|Editorial status|Refers to the editorial status of the ad.<br /><br /> If the ad is pending offline editorial review, then within a downloaded change history report the editorial status is represented as either *Pending - Active* or *Pending - Inactive*. For more information, see [Entities and Delivery Status](bingads/guides/editorial-review-appeals.md#entitydeliverystatus).|
 |Final URL|Refers to the Final URL of the ad.|
 |Mobile URL|Refers to the Final Mobile URL of the ad.|
 |Status|Refers to the delivery status of the ad.<br /><br /> If reporting a deleted ad,  the *ItemChanged* field is Status, the *HowChanged* field is Changed, and the *NewValue* field is Deleted.|
@@ -210,7 +210,7 @@ When the *ItemChanged* field's value is Keyword, change history for the followin
 |Broad match bid|Refers to the broad match bid amount for the keyword.|
 |Content match bid|Refers to the content match bid amount for the keyword.|
 |Custom parameters|Refers to the custom parameters of the keyword.|
-|Editorial status|Refers to the editorial status of the keyword.<br /><br /> If the keyword is pending offline editorial review, then within a downloaded change history report the editorial status is represented as either *Pending - Active* or *Pending - Inactive*. For more information, see [Entities and Delivery Status](~/guides/editorial-review-appeals.md#entitydeliverystatus).|
+|Editorial status|Refers to the editorial status of the keyword.<br /><br /> If the keyword is pending offline editorial review, then within a downloaded change history report the editorial status is represented as either *Pending - Active* or *Pending - Inactive*. For more information, see [Entities and Delivery Status](bingads/guides/editorial-review-appeals.md#entitydeliverystatus).|
 |Exact match bid|Refers to the exact match bid amount for the keyword.|
 |Final URL|Refers to the Final URL of the keyword.|
 |Mobile URL|Refers to the Final Mobile URL of the keyword.|

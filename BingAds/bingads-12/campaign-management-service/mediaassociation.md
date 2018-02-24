@@ -9,7 +9,7 @@ description: Defines an object that represents the identified media and an assoc
 # MediaAssociation Data Object - Campaign Management
 Defines an object that represents the identified media and an associated entity, for example media associated with an ad group.
 
-You can get this object by calling [GetMediaAssociations](../campaign-management-service/getmediaassociations.md), and then use the media identifier with [GetMediaMetaDataByIds](../campaign-management-service/getmediametadatabyids.md), for example.
+You can get this object by calling [GetMediaAssociations](bingads/campaign-management-service/getmediaassociations.md), and then use the media identifier with [GetMediaMetaDataByIds](bingads/campaign-management-service/getmediametadatabyids.md), for example.
 
 ## Syntax
 ```xml

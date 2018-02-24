@@ -30,7 +30,7 @@ The *GetBSCCountriesResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="countrycodes"></a>CountryCodes|The list of supported sales country codes for Bing Shopping campaigns. You can pass any one of the returned values in the *SalesCountryCode* element of a [ShoppingSetting](../campaign-management-service/shoppingsetting.md) object.|**string** array|
+|<a name="countrycodes"></a>CountryCodes|The list of supported sales country codes for Bing Shopping campaigns. You can pass any one of the returned values in the *SalesCountryCode* element of a [ShoppingSetting](bingads/campaign-management-service/shoppingsetting.md) object.|**string** array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -75,7 +75,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetBSCCountriesResponse> GetBSCCountriesAsync()
 {

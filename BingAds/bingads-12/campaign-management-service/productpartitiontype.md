@@ -35,8 +35,8 @@ Defines the possible types of product partitions.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="subdivision"></a>Subdivision|The [ProductPartition](../campaign-management-service/productpartition.md) is a product group subdivision. A subdivision is also referred to as a branch node in a tree.|
-|<a name="unit"></a>Unit|The [ProductPartition](../campaign-management-service/productpartition.md) is a product group unit. A unit is also referred to as a leaf node in a tree.|
+|<a name="subdivision"></a>Subdivision|The [ProductPartition](bingads/campaign-management-service/productpartition.md) is a product group subdivision. A subdivision is also referred to as a branch node in a tree.|
+|<a name="unit"></a>Unit|The [ProductPartition](bingads/campaign-management-service/productpartition.md) is a product group unit. A unit is also referred to as a leaf node in a tree.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

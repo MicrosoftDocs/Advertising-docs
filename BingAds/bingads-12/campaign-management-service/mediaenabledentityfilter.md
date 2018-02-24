@@ -27,7 +27,7 @@ Defines the possible values representing entities that are enabled for media suc
 
 |Value|Description|
 |-----------|---------------|
-|<a name="imageadextension"></a>ImageAdExtension|The media enabled entity is an [ImageAdExtension](../campaign-management-service/imageadextension.md).<br /><br />When you call [GetMediaMetaDataByAccountId](../campaign-management-service/getmediametadatabyaccountid.md) or [GetMediaMetaDataByIds](../campaign-management-service/getmediametadatabyids.md), the service will return exactly three [ImageMediaRepresentation](../campaign-management-service/imagemediarepresentation.md) objects with varying height and width properties.|
+|<a name="imageadextension"></a>ImageAdExtension|The media enabled entity is an [ImageAdExtension](bingads/campaign-management-service/imageadextension.md).<br /><br />When you call [GetMediaMetaDataByAccountId](bingads/campaign-management-service/getmediametadatabyaccountid.md) or [GetMediaMetaDataByIds](bingads/campaign-management-service/getmediametadatabyids.md), the service will return exactly three [ImageMediaRepresentation](bingads/campaign-management-service/imagemediarepresentation.md) objects with varying height and width properties.|
 |<a name="responsivead"></a>ResponsiveAd|Reserved.|
 
 ## Requirements

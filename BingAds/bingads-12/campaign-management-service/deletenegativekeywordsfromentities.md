@@ -36,7 +36,7 @@ The *DeleteNegativeKeywordsFromEntitiesResponse* object defines the [body](#resp
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="nestedpartialerrors"></a>NestedPartialErrors|An array of [BatchErrorCollection](../campaign-management-service/batcherrorcollection.md) objects that contain details for any criterion that were not successfully deleted. The top level error within each [BatchErrorCollection](../campaign-management-service/batcherrorcollection.md) object corresponds to potential campaign or ad group errors. The nested list of [BatchError](../campaign-management-service/batcherror.md) objects would include any errors specific to the negative keywords that you attempted to delete from the campaign or ad group.<br /><br />>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchErrorCollection](batcherrorcollection.md) array|
+|<a name="nestedpartialerrors"></a>NestedPartialErrors|An array of [BatchErrorCollection](bingads/campaign-management-service/batcherrorcollection.md) objects that contain details for any criterion that were not successfully deleted. The top level error within each [BatchErrorCollection](bingads/campaign-management-service/batcherrorcollection.md) object corresponds to potential campaign or ad group errors. The nested list of [BatchError](bingads/campaign-management-service/batcherror.md) objects would include any errors specific to the negative keywords that you attempted to delete from the campaign or ad group.<br /><br />>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchErrorCollection](batcherrorcollection.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -132,7 +132,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<DeleteNegativeKeywordsFromEntitiesResponse> DeleteNegativeKeywordsFromEntitiesAsync(
 	IList<EntityNegativeKeyword> entityNegativeKeywords)

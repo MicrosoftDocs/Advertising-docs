@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Reference documentation for the Bing Ads Ad Insight API.
 ---
 # Ad Insight Service Reference
-The Ad Insight [service](~/guides/web-service-addresses.md) defines an Application Programming Interface (API) that you can use to determine the historical performance of keywords, get the estimated bid and position for a keyword, and to get suggested keywords from an existing keyword or from the content at a specified URL. The service can also help you discover bid, budget, and keyword opportunities.
+The Ad Insight [service](bingads/guides/web-service-addresses.md) defines an Application Programming Interface (API) that you can use to determine the historical performance of keywords, get the estimated bid and position for a keyword, and to get suggested keywords from an existing keyword or from the content at a specified URL. The service can also help you discover bid, budget, and keyword opportunities.
 
 |Interface|Description|
 |---------|---------|
@@ -16,6 +16,6 @@ The Ad Insight [service](~/guides/web-service-addresses.md) defines an Applicati
 |[Ad Insight Value Sets](ad-insight-value-sets.md)|Value sets include [BidOpportunityType](bidopportunitytype.md), [KeywordOpportunityType](keywordopportunitytype.md), and [TargetAdPosition](targetadposition.md). You'll also find value sets for supported budget limit type, currency, and more.|
 
 ## See Also
-[Get Started With the Bing Ads API](~/guides/get-started.md)  
-[Bing Ads Technical Guides](~/guides/technical-guides.md)  
-[Bing Ads Web Service Addresses](~/guides/web-service-addresses.md)  
+[Get Started With the Bing Ads API](bingads/guides/get-started.md)  
+[Bing Ads Technical Guides](bingads/guides/technical-guides.md)  
+[Bing Ads Web Service Addresses](bingads/guides/web-service-addresses.md)  

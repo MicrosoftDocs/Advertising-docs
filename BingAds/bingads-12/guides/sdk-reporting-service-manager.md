@@ -11,7 +11,7 @@ dev_langs:
   - python
 ---
 # Reporting Service Manager
-The SDK provides proxy classes to the service operations, data objects, and value sets defined for the [Reporting](~/reporting-service/reporting-service-reference.md) service.
+The SDK provides proxy classes to the service operations, data objects, and value sets defined for the [Reporting](bingads/reporting-service/reporting-service-reference.md) service.
 
 It also provides classes to accelerate productivity for downloading reports. For example an instance of the *ReportingServiceManager* class can submit your download request to the reporting service, poll the service until completed, and download the file to the local directory that you specified in the request.
 
@@ -315,7 +315,7 @@ print("Status: {0}\n".format(reporting_operation_status.status))
 ```
 
 ## See Also
-[Sandbox](../guides/sandbox.md)  
-[Bing Ads Code Examples](../guides/code-examples.md)    
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
+[Sandbox](bingads/guides/sandbox.md)  
+[Bing Ads Code Examples](bingads/guides/code-examples.md)    
+[Bing Ads Web Service Addresses](bingads/guides/web-service-addresses.md)  
 

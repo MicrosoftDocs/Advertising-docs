@@ -10,21 +10,21 @@ description: Defines the base object of a criterion.
 Defines the base object of a criterion.
 
 Do not try to instantiate a *Criterion*. You can create one or more following objects that derive from it.
--  [AgeCriterion](../campaign-management-service/agecriterion.md)  
--  [AudienceCriterion](../campaign-management-service/audiencecriterion.md)  
--  [DayTimeCriterion](../campaign-management-service/daytimecriterion.md)  
--  [DeviceCriterion](../campaign-management-service/devicecriterion.md)  
--  [GenderCriterion](../campaign-management-service/gendercriterion.md)  
--  [LocationCriterion](../campaign-management-service/locationcriterion.md)  
--  [LocationIntentCriterion](../campaign-management-service/locationintentcriterion.md)  
--  [ProductScope](../campaign-management-service/productscope.md)  
--  [ProductPartition](../campaign-management-service/productpartition.md)  
--  [RadiusCriterion](../campaign-management-service/radiuscriterion.md)  
--  [Webpage](../campaign-management-service/webpage.md)  
+-  [AgeCriterion](bingads/campaign-management-service/agecriterion.md)  
+-  [AudienceCriterion](bingads/campaign-management-service/audiencecriterion.md)  
+-  [DayTimeCriterion](bingads/campaign-management-service/daytimecriterion.md)  
+-  [DeviceCriterion](bingads/campaign-management-service/devicecriterion.md)  
+-  [GenderCriterion](bingads/campaign-management-service/gendercriterion.md)  
+-  [LocationCriterion](bingads/campaign-management-service/locationcriterion.md)  
+-  [LocationIntentCriterion](bingads/campaign-management-service/locationintentcriterion.md)  
+-  [ProductScope](bingads/campaign-management-service/productscope.md)  
+-  [ProductPartition](bingads/campaign-management-service/productpartition.md)  
+-  [RadiusCriterion](bingads/campaign-management-service/radiuscriterion.md)  
+-  [Webpage](bingads/campaign-management-service/webpage.md)  
 
-For a list of criterion types that you can use with [CampaignCriterion](../campaign-management-service/campaigncriterion.md), see the [CampaignCriterionType](../campaign-management-service/campaigncriteriontype.md) value set.
+For a list of criterion types that you can use with [CampaignCriterion](bingads/campaign-management-service/campaigncriterion.md), see the [CampaignCriterionType](bingads/campaign-management-service/campaigncriteriontype.md) value set.
 
-For a list of criterion types that you can use with [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md), see the [AdGroupCriterionType](../campaign-management-service/adgroupcriteriontype.md) value set.
+For a list of criterion types that you can use with [AdGroupCriterion](bingads/campaign-management-service/adgroupcriterion.md), see the [AdGroupCriterionType](bingads/campaign-management-service/adgroupcriteriontype.md) value set.
 
 ## Syntax
 ```xml

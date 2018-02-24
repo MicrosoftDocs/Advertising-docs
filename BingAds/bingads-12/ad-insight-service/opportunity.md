@@ -10,10 +10,10 @@ description: This is the base class from which opportunity objects derive.
 This is the base class from which opportunity objects derive. The class contains the unique key used to identify the opportunity.
 
 Do not try to instantiate an *Opportunity*. You can create one or more following objects that derive from it.
-- [BidOpportunity](../ad-insight-service/bidopportunity.md)  
-- [BudgetOpportunity](../ad-insight-service/budgetopportunity.md)  
-- [KeywordOpportunity](../ad-insight-service/keywordopportunity.md)  
-- [BroadMatchKeywordOpportunity](../ad-insight-service/broadmatchkeywordopportunity.md) (derived from [KeywordOpportunity](../ad-insight-service/keywordopportunity.md))
+- [BidOpportunity](bingads/ad-insight-service/bidopportunity.md)  
+- [BudgetOpportunity](bingads/ad-insight-service/budgetopportunity.md)  
+- [KeywordOpportunity](bingads/ad-insight-service/keywordopportunity.md)  
+- [BroadMatchKeywordOpportunity](bingads/ad-insight-service/broadmatchkeywordopportunity.md) (derived from [KeywordOpportunity](bingads/ad-insight-service/keywordopportunity.md))
 
 ## Syntax
 ```xml

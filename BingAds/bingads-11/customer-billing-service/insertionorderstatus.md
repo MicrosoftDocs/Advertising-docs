@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the possible status values of an InsertionOrder.
 ---
 # InsertionOrderStatus Value Set - Customer Billing
-Defines the possible status values of an [InsertionOrder](../customer-billing-service/insertionorder.md).
+Defines the possible status values of an [InsertionOrder](bingads/customer-billing-service/insertionorder.md).
 
 ## Syntax
 ```xml

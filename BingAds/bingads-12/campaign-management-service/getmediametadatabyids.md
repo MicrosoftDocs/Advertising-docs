@@ -15,7 +15,7 @@ dev_langs:
 Gets the specified media meta data from an account's media library.
 
 > [!NOTE]
-> This operation does not return media meta data for location ad extensions. For getting location ad extension media, you should use [GetMediaByIds](../campaign-management-service/getmediabyids.md).
+> This operation does not return media meta data for location ad extensions. For getting location ad extension media, you should use [GetMediaByIds](bingads/campaign-management-service/getmediabyids.md).
 
 ## <a name="request"></a>Request Elements
 The *GetMediaMetaDataByIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -36,8 +36,8 @@ The *GetMediaMetaDataByIdsResponse* object defines the [body](#response-body) an
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediametadata"></a>MediaMetaData|An array of [MediaMetaData](../campaign-management-service/mediametadata.md) objects that corresponds directly to the media identifiers that you specified in the request. Items of the list may be returned as null. For each list index where media meta data was not retrieved, the corresponding element will be null.<br /><br />The meta data includes download Urls for one or more media representations. The number of representations depends on the type of media. For example media for image ad extensions  have multiple height and width representations, and you can access each individually. For more information see [MediaEnabledEntityFilter](../campaign-management-service/mediaenabledentityfilter.md).|[MediaMetaData](mediametadata.md) array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="mediametadata"></a>MediaMetaData|An array of [MediaMetaData](bingads/campaign-management-service/mediametadata.md) objects that corresponds directly to the media identifiers that you specified in the request. Items of the list may be returned as null. For each list index where media meta data was not retrieved, the corresponding element will be null.<br /><br />The meta data includes download Urls for one or more media representations. The number of representations depends on the type of media. For example media for image ad extensions  have multiple height and width representations, and you can access each individually. For more information see [MediaEnabledEntityFilter](bingads/campaign-management-service/mediaenabledentityfilter.md).|[MediaMetaData](mediametadata.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](bingads/campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -123,7 +123,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetMediaMetaDataByIdsResponse> GetMediaMetaDataByIdsAsync(
 	IList<long> mediaIds)

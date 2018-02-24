@@ -14,13 +14,13 @@ dev_langs:
 # Shopping Campaigns Code Example
 This example demonstrates how to apply product conditions for Bing Shopping Campaigns.
 
-[!code-csharp[Main](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/ShoppingCampaigns.cs)]
+[!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/ShoppingCampaigns.cs)]
 
-[!code-java[Main](../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/ShoppingCampaigns.java)]
+[!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/ShoppingCampaigns.java)]
 
-[!code-php[Main](../../BingAds-PHP-SDK/samples/V11/ShoppingCampaigns.php)]
+[!code-php[Main](../../../BingAds-PHP-SDK/samples/V11/ShoppingCampaigns.php)]
 
-[!code-python[Main](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/shopping_campaigns.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/shopping_campaigns.py)]
 
 ## See Also
-[Get Started with the Bing Ads API](../guides/get-started.md)  
+[Get Started with the Bing Ads API](bingads/guides/get-started.md)  

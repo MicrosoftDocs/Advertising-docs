@@ -26,7 +26,7 @@ The Campaign Management service defines the following data objects.
 |[AdExtensionIdToEntityIdAssociation](adextensionidtoentityidassociation.md)|Defines an object that associates an ad extension to a supported entity, for example ad group or campaign.|
 |[AdGroup](adgroup.md)|Defines an ad group.|
 |[AdGroupCriterion](adgroupcriterion.md)|Defines a criterion that you want applied to the specified ad group.|
-|[AdGroupCriterionAction](adgroupcriterionaction.md)|Defines the action to apply to a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md), specifically one that contains a [ProductPartition](../campaign-management-service/productpartition.md).|
+|[AdGroupCriterionAction](adgroupcriterionaction.md)|Defines the action to apply to a [BiddableAdGroupCriterion](bingads/campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](bingads/campaign-management-service/negativeadgroupcriterion.md), specifically one that contains a [ProductPartition](bingads/campaign-management-service/productpartition.md).|
 |[AdGroupNegativeSites](adgroupnegativesites.md)|Defines an object that contains the negative site URLs of an ad group.|
 |[AdRotation](adrotation.md)|Defines an object that specifies the type of ad rotation to apply to the ad group.|
 |[AgeCriterion](agecriterion.md)|Defines a criterion that can be used to show ads to users in a specific age range.|
@@ -67,7 +67,7 @@ The Campaign Management service defines the following data objects.
 |[DurationGoal](durationgoal.md)|Defines a duration conversion goal.|
 |[DynamicSearchAd](dynamicsearchad.md)|Defines a dynamic search ad.|
 |[DynamicSearchAdsSetting](dynamicsearchadssetting.md)|Defines the campaign level settings for a Dynamic Search Ads campaign.|
-|[EditorialApiFaultDetail](editorialapifaultdetail.md)|Defines a fault object that operations such as [AddAdGroupCriterions](../campaign-management-service/addadgroupcriterions.md), [UpdateAdGroupCriterions](../campaign-management-service/updateadgroupcriterions.md), [SetAdExtensionsAssociations](../campaign-management-service/setadextensionsassociations.md), and [UpdateAdExtensions](../campaign-management-service/updateadextensions.md) return when one or more criterion or ad extensions in your request message fail editorial review.|
+|[EditorialApiFaultDetail](editorialapifaultdetail.md)|Defines a fault object that operations such as [AddAdGroupCriterions](bingads/campaign-management-service/addadgroupcriterions.md), [UpdateAdGroupCriterions](bingads/campaign-management-service/updateadgroupcriterions.md), [SetAdExtensionsAssociations](bingads/campaign-management-service/setadextensionsassociations.md), and [UpdateAdExtensions](bingads/campaign-management-service/updateadextensions.md) return when one or more criterion or ad extensions in your request message fail editorial review.|
 |[EditorialError](editorialerror.md)|Defines an error object that identifies the entity with the batch of entities that failed editorial review.|
 |[EditorialReason](editorialreason.md)|Defines an object that you can use to determine the component of an ad or keyword that failed editorial review, and the reason for the failure.|
 |[EditorialReasonCollection](editorialreasoncollection.md)|Defines a collection of ads or keywords that failed editorial review, and the reason for the failure.|

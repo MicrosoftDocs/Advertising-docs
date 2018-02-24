@@ -10,8 +10,8 @@ description: Defines a criterion that you want applied to the specified ad group
 Defines a criterion that you want applied to the specified ad group.
 
 Do not try to instantiate an *AdGroupCriterion*. You can create one or more following objects that derive from it.
--   [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md)
--   [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md)
+-   [BiddableAdGroupCriterion](bingads/campaign-management-service/biddableadgroupcriterion.md)
+-   [NegativeAdGroupCriterion](bingads/campaign-management-service/negativeadgroupcriterion.md)
 
 ## Syntax
 ```xml
@@ -31,13 +31,13 @@ Do not try to instantiate an *AdGroupCriterion*. You can create one or more foll
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group to apply the criterion to.|**long**|
-|<a name="criterion"></a>Criterion|The criterion to apply to the ad group. The criterion helps determine whether ads in the ad group are served.<br/><br/>For a list of available criterion types, see [AdGroupCriterionType](../campaign-management-service/adgroupcriteriontype.md).|[Criterion](criterion.md)|
+|<a name="criterion"></a>Criterion|The criterion to apply to the ad group. The criterion helps determine whether ads in the ad group are served.<br/><br/>For a list of available criterion types, see [AdGroupCriterionType](bingads/campaign-management-service/adgroupcriteriontype.md).|[Criterion](criterion.md)|
 |<a name="id"></a>Id|The unique Bing Ads identifier for the ad group criterion.|**long**|
 |<a name="status"></a>Status|A status value that determines whether to apply the criterion to the ad group.|[AdGroupCriterionStatus](adgroupcriterionstatus.md)|
 |<a name="type"></a>Type|The type of ad group criterion. For more information, see [Remarks](#remarks).|**string**|
 
 ## <a name="remarks"></a>Remarks
-For Java and the .NET languages, do not set the *Type* element because the value is determined by whether you instantiate a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md).
+For Java and the .NET languages, do not set the *Type* element because the value is determined by whether you instantiate a [BiddableAdGroupCriterion](bingads/campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](bingads/campaign-management-service/negativeadgroupcriterion.md).
 
 If you generate the SOAP manually, use the *type* attribute of the `<AdGroupCriterion>` node as shown in the following example, to specify the type of criterion.
 

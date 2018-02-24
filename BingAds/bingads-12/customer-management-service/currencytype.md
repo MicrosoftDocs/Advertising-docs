@@ -10,7 +10,7 @@ description: Defines a selection of currency values.
 Defines a selection of currency values.
 
 > [!NOTE]
-> The value set defines a broad selection of currency types; however, not all currencies are supported. For a list of supported currencies, see [Currencies](~/guides/currencies.md).
+> The value set defines a broad selection of currency types; however, not all currencies are supported. For a list of supported currencies, see [Currencies](bingads/guides/currencies.md).
 
 ## Syntax
 ```xml

@@ -10,7 +10,7 @@ description: A suggested keyword with minimum and maximum traffic estimates.
 A suggested keyword with minimum and maximum traffic estimates. Traffic estimates include average CPC, average position, clicks, CTR, impressions, and total cost.
 
 > [!NOTE]
-> The estimates are not a prediction or guarantee of future performance. The estimates can vary depending on the filter criteria you provide in the [GetKeywordTrafficEstimates](../ad-insight-service/getkeywordtrafficestimates.md) service request.
+> The estimates are not a prediction or guarantee of future performance. The estimates can vary depending on the filter criteria you provide in the [GetKeywordTrafficEstimates](bingads/ad-insight-service/getkeywordtrafficestimates.md) service request.
 
 ## Syntax
 ```xml

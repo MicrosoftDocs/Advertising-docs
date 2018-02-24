@@ -36,8 +36,8 @@ The *AddNegativeKeywordsToEntitiesResponse* object defines the [body](#response-
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="negativekeywordids"></a>NegativeKeywordIds|A list of [IdCollection](../campaign-management-service/idcollection.md) corresponding to the negative keywords that were added for the corresponding entity.<br /><br />Within an [IdCollection](../campaign-management-service/idcollection.md), the list of *Ids* corresponds directly to the list of negative keywords in the request. Items of the list may be returned as null. For each list index where a negative keyword was not added, the corresponding element will be null.|[IdCollection](idcollection.md) array|
-|<a name="nestedpartialerrors"></a>NestedPartialErrors|An array of [BatchErrorCollection](../campaign-management-service/batcherrorcollection.md) objects that contain details for any negative keyword that were not successfully added. The top level error within each [BatchErrorCollection](../campaign-management-service/batcherrorcollection.md) object corresponds to potential campaign or ad group errors. The nested list of [BatchError](../campaign-management-service/batcherror.md) objects would include any errors specific to the negative keywords that you attempted to add to the campaign or ad group.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchErrorCollection](batcherrorcollection.md) array|
+|<a name="negativekeywordids"></a>NegativeKeywordIds|A list of [IdCollection](bingads/campaign-management-service/idcollection.md) corresponding to the negative keywords that were added for the corresponding entity.<br /><br />Within an [IdCollection](bingads/campaign-management-service/idcollection.md), the list of *Ids* corresponds directly to the list of negative keywords in the request. Items of the list may be returned as null. For each list index where a negative keyword was not added, the corresponding element will be null.|[IdCollection](idcollection.md) array|
+|<a name="nestedpartialerrors"></a>NestedPartialErrors|An array of [BatchErrorCollection](bingads/campaign-management-service/batcherrorcollection.md) objects that contain details for any negative keyword that were not successfully added. The top level error within each [BatchErrorCollection](bingads/campaign-management-service/batcherrorcollection.md) object corresponds to potential campaign or ad group errors. The nested list of [BatchError](bingads/campaign-management-service/batcherror.md) objects would include any errors specific to the negative keywords that you attempted to add to the campaign or ad group.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchErrorCollection](batcherrorcollection.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -140,7 +140,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<AddNegativeKeywordsToEntitiesResponse> AddNegativeKeywordsToEntitiesAsync(
 	IList<EntityNegativeKeyword> entityNegativeKeywords)

@@ -10,7 +10,7 @@ description: Defines the possible system-determined status values of a UET tag.
 Defines the possible system-determined status values of a UET tag. These are the status values that can be set by the system, for example the system sets the status to *Unverified* if the UET tag has not yet been verified. 
 
 > [!NOTE]
-> The *UetTagTrackingStatus* in part influences the system-determined [ConversionGoalTrackingStatus](../campaign-management-service/conversiongoaltrackingstatus.md) of any [ConversionGoal](../campaign-management-service/conversiongoal.md) that is associated with the [UetTag](../campaign-management-service/uettag.md). If the *UetTagTrackingStatus* is *Active* then the [ConversionGoalTrackingStatus](../campaign-management-service/conversiongoaltrackingstatus.md) can be either *NoRecentConversions* or *RecordingConversions*, and otherwise the conversion goal tracking status mirrors the tag status.  
+> The *UetTagTrackingStatus* in part influences the system-determined [ConversionGoalTrackingStatus](bingads/campaign-management-service/conversiongoaltrackingstatus.md) of any [ConversionGoal](bingads/campaign-management-service/conversiongoal.md) that is associated with the [UetTag](bingads/campaign-management-service/uettag.md). If the *UetTagTrackingStatus* is *Active* then the [ConversionGoalTrackingStatus](bingads/campaign-management-service/conversiongoaltrackingstatus.md) can be either *NoRecentConversions* or *RecordingConversions*, and otherwise the conversion goal tracking status mirrors the tag status.  
 
 ## Syntax
 ```xml

@@ -7,14 +7,14 @@ ms.author: "eur"
 description: Authenticate for Bing Ads production services with a Microsoft Account.
 ---
 # Authentication with OAuth
-Bing Ads implements the implicit and authorization grant flows of the [OAuth 2.0](http://tools.ietf.org/html/rfc6749) protocol to enable authentication of Microsoft Accounts that are linked to Bing Ads accounts. You should authenticate for Bing Ads production services with a Microsoft Account, instead of providing the Bing Ads username and password set. Authentication with a Microsoft Account is currently not supported in [Sandbox](../guides/sandbox.md).
+Bing Ads implements the implicit and authorization grant flows of the [OAuth 2.0](http://tools.ietf.org/html/rfc6749) protocol to enable authentication of Microsoft Accounts that are linked to Bing Ads accounts. You should authenticate for Bing Ads production services with a Microsoft Account, instead of providing the Bing Ads username and password set. Authentication with a Microsoft Account is currently not supported in [Sandbox](bingads/guides/sandbox.md).
 
 > [!NOTE]
 > New customers are required to sign up for Bing Ads with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy Bing Ads credentials may continue to specify the *UserName* and *Password* header elements. Starting with Bing Ads API version 12, only OAuth authentication will be supported. Managed credentials i.e., the *UserName* and *Password* header elements will not be supported. More details will be available during Q2 of Calendar Year 2018.  
 > 
-> The *DeveloperToken* header element is always required. For information on how to get a *DeveloperToken*, see [Get Started With the Bing Ads API](../guides/get-started.md).
+> The *DeveloperToken* header element is always required. For information on how to get a *DeveloperToken*, see [Get Started With the Bing Ads API](bingads/guides/get-started.md).
 
-A [Microsoft Account](https://account.microsoft.com/account) is an email address and password alias that an advertiser and other users may use to manage multiple services, including Bing Ads. Advertisers may associate a Microsoft Account with a Bing Ads account by [signing up](https://bingads.microsoft.com) or being invited to [manage](../guides/customer-accounts.md#managingusers) an existing Bing Ads account. Advertisers must use their Microsoft Account to grant your application access to manage their Bing Ads accounts. When the user successfully provides consent, your application is able to obtain an access token that it can then use to authenticate on behalf of the user.
+A [Microsoft Account](https://account.microsoft.com/account) is an email address and password alias that an advertiser and other users may use to manage multiple services, including Bing Ads. Advertisers may associate a Microsoft Account with a Bing Ads account by [signing up](https://bingads.microsoft.com) or being invited to [manage](bingads/guides/customer-accounts.md#managingusers) an existing Bing Ads account. Advertisers must use their Microsoft Account to grant your application access to manage their Bing Ads accounts. When the user successfully provides consent, your application is able to obtain an access token that it can then use to authenticate on behalf of the user.
 
 > [!TIP]
 > To take advantage of advanced security, users should turn on [two-step verification](https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification) within their Microsoft account [Security settings](https://account.live.com/proofs/Manage). Opting in for two-step verification ensures the user is prompted for a security code when they sign in on a device not previously designated as trusted by the user. The Microsoft Account authentication service provisions and verifies the security code after your application connects to the authorization endpoint, and before user consent is requested for your application to manage their Bing Ads accounts.
@@ -44,23 +44,23 @@ Before you can manage authentication for users of your Bing Ads application, you
 
 2.  Under **Converged applications**, click **Add an app**.
 
-    ![Add an app](../guides/media/register-add-app.png "Add an app")
+    ![Add an app](bingads/guides/media/register-add-app.png "Add an app")
     
     If you have previously registered Live SDK applications, then you will also see an option to add another Live SDK application. We recommend adding all new apps under **Converged applications**.  At this time you are not required to migrate app registrations. If migration away from **Live SDK applications** is required in the future, we will announce it well in advance.
 
 3.  Provide the application name and click **Create application**.
 
-    ![Create application](../guides/media/create-application.png "Create application")
+    ![Create application](bingads/guides/media/create-application.png "Create application")
 
 4.  Click **Add Platform** and choose *Web* if you want to register a web application, and otherwise select *Native Application*. 
 
-    ![Add platform](../guides/media/register-add-platform.PNG "Add platform")
+    ![Add platform](bingads/guides/media/register-add-platform.PNG "Add platform")
     
     If you register a native app you should ignore the provided redirect URI and instead use *https://login.live.com/oauth20_desktop.srf* as the redirect URI. If you register a web app, then you must also provide your exact redirect URI (including for example the *https* prefix).
 
 5.  Under **Advanced Options**, check the box for **Live SDK support**.
 
-    ![Live SDK support](../guides/media/live-sdk-support.png "Live SDK support")
+    ![Live SDK support](bingads/guides/media/live-sdk-support.png "Live SDK support")
 
 6.  Save your changes and take note of your *Application Id*. You will use it as the CLIENT_ID in the OAuth grant flow. Also take note of your client secret and redirect URI if you registered a web application. You will also use these values to manage authentication with OAuth.
 
@@ -68,7 +68,7 @@ Before you can manage authentication for users of your Bing Ads application, you
 Once you have registered your application you can manage the access token for a Microsoft Account user already linked or registered with Bing Ads. For one time or short term access to manage a user's accounts, see [Implicit Grant Flow](#implicit). The access token is short lived and will expire in minutes or hours as determined by the authentication service. Additionally, the Microsoft Account user may change their password or remove permissions for your application to authenticate on their behalf. For repeat or long term access to manage a user's accounts, see [Authorization Code Grant Flow](#authorizationcode).
 
  > [!TIP]
-> For details about how to get access and refresh tokens using the Bing Ads SDKs, see [Authentication With the SDKs](~/guides/sdk-authentication.md#oauth).
+> For details about how to get access and refresh tokens using the Bing Ads SDKs, see [Authentication With the SDKs](bingads/guides/sdk-authentication.md#oauth).
 
 ### <a name="implicit"></a>Implicit Grant Flow
 For one time or short term authentication, you should follow the implicit grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Implicit Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#section-4.2).
@@ -133,7 +133,7 @@ For repeat or long term authentication, you should follow the authorization code
     client_id=000A1A1A1&code=a1a1861bc-c5a1-c7a1-8ba1-846c6271a1a1&grant_type=authorization_code&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf
     ```
     > [!IMPORTANT]
-    > If you are using one of our SDKs the tokens will be refreshed automatically. Be sure to securely store the received refresh token. For more information see [Authentication With the SDKs](~/guides/sdk-authentication.md#oauth).
+    > If you are using one of our SDKs the tokens will be refreshed automatically. Be sure to securely store the received refresh token. For more information see [Authentication With the SDKs](bingads/guides/sdk-authentication.md#oauth).
 
 5.  Get the *access_token*, *refresh_token*, and *expires_in* values from the JSON response stream.
 
@@ -234,5 +234,5 @@ You may specify the *AuthenticationToken* instead of the *UserName* and *Passwor
 
 
 ## See Also
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)
+[Bing Ads Web Service Addresses](bingads/guides/web-service-addresses.md)
 

@@ -9,11 +9,11 @@ description: This is the base class from which keyword planner criterion objects
 # Criterion Data Object - Ad Insight
 This is the base class from which keyword planner criterion objects derive. 
 
-Do not try to instantiate a [Criterion](../ad-insight-service/criterion.md). You can create one or more following objects that derive from it.
-- [DeviceCriterion](../ad-insight-service/devicecriterion.md)  
-- [LanguageCriterion](../ad-insight-service/languagecriterion.md)  
-- [LocationCriterion](../ad-insight-service/locationcriterion.md)  
-- [NetworkCriterion](../ad-insight-service/networkcriterion.md)  
+Do not try to instantiate a [Criterion](bingads/ad-insight-service/criterion.md). You can create one or more following objects that derive from it.
+- [DeviceCriterion](bingads/ad-insight-service/devicecriterion.md)  
+- [LanguageCriterion](bingads/ad-insight-service/languagecriterion.md)  
+- [LocationCriterion](bingads/ad-insight-service/locationcriterion.md)  
+- [NetworkCriterion](bingads/ad-insight-service/networkcriterion.md)  
 
 ## Syntax
 ```xml

@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines an order for the list of insertion orders returned using the SearchInsertionOrders operation.
 ---
 # OrderBy Data Object - Customer Billing
-Defines an order for the list of insertion orders returned using the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.
+Defines an order for the list of insertion orders returned using the [SearchInsertionOrders](bingads/customer-billing-service/searchinsertionorders.md) operation.
 
 ## Syntax
 ```xml

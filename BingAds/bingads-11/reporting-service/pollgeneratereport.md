@@ -15,7 +15,7 @@ dev_langs:
 Gets the status of a report request.
 
 > [!NOTE]
-> You must use the same user credentials for the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) and [PollGenerateReport](../reporting-service/pollgeneratereport.md). For more information, see [Request and Download a Report](~/guides/request-download-report.md).
+> You must use the same user credentials for the [SubmitGenerateReport](bingads/reporting-service/submitgeneratereport.md) and [PollGenerateReport](bingads/reporting-service/pollgeneratereport.md). For more information, see [Request and Download a Report](bingads/guides/request-download-report.md).
 
 ## <a name="request"></a>Request Elements
 The *PollGenerateReportRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -24,7 +24,7 @@ The *PollGenerateReportRequest* object defines the [body](#request-body) and [he
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="reportrequestid"></a>ReportRequestId|The identifier of the report request. The [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation returns the identifier.|**string**|
+|<a name="reportrequestid"></a>ReportRequestId|The identifier of the report request. The [SubmitGenerateReport](bingads/reporting-service/submitgeneratereport.md) operation returns the identifier.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -84,7 +84,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<PollGenerateReportResponse> PollGenerateReportAsync(
 	string reportRequestId)

@@ -15,7 +15,7 @@ dev_langs:
 Gets a list of insertion orders for the specified account.
 
 > [!NOTE]
-> This operation is deprecated and will be removed in a future API version. To get insertion orders, you should use the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.
+> This operation is deprecated and will be removed in a future API version. To get insertion orders, you should use the [SearchInsertionOrders](bingads/customer-billing-service/searchinsertionorders.md) operation.
 
 ## <a name="request"></a>Request Elements
 The *GetInsertionOrdersByAccountRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -102,7 +102,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](bingads/guides/client-libraries.md). See [Bing Ads Code Examples](bingads/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetInsertionOrdersByAccountResponse> GetInsertionOrdersByAccountAsync(
 	long accountId,
