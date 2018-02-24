@@ -179,11 +179,8 @@
         "hint-message/**.yml": "hotel-ads-hint-message",
         "query-message/**.yml": "hotel-ads-query-message",
         "query-control-message/**.yml": "hotel-ads-query-control-message"    
-      },
-      "monikerRange": {
-        "bingads-11/**/*.md": "= bingads-11",
-        "bingads-12/**/*.md": "= bingads-12"
       }
+      
     },
     "template": [],
     "dest": "bingads",
