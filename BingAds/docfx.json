@@ -20,7 +20,7 @@
         ]
       },
       {
-        "group": "bingads",
+        "group": "bingads-11",
         "src": "bingads-11",
         "files": [
           "**/*.md",
@@ -36,7 +36,7 @@
         ]
       },
       {
-        "group": "bingads",
+        "group": "bingads-12",
         "src": "bingads-12",
         "files": [
           "**/*.md",
@@ -52,7 +52,7 @@
         ]
       },
       {
-        "group": "bingads",
+        "group": "guides",
         "src": "guides",
         "files": [
           "**/*.md",
@@ -81,7 +81,7 @@
         ]
       },
       {
-        "group": "bingads",
+        "group": "bingads-11",
         "src": "bingads-11",
         "files": [
           "**/*.png",
@@ -94,7 +94,7 @@
         ]
       },
       {
-        "group": "bingads",
+        "group": "bingads-12",
         "src": "bingads-12",
         "files": [
           "**/*.png",
@@ -107,7 +107,7 @@
         ]
       },
       {
-        "group": "bingads",
+        "group": "guides",
         "src": "guides",
         "files": [
           "**/*.png",
@@ -123,7 +123,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "contributors_to_exclude": ["openpublishingbuild", "Pacort", "saldana"],      
+      "contributors_to_exclude": ["openpublishingbuild", "Pacort", "saldana","sudeepku"],      
       "defaultDevLang": "csharp",
       "uhfHeaderId": "MSDocsHeader-BingAds",
       "searchScope": ["Bing Ads"],
@@ -159,9 +159,17 @@
     "template": [],
     "dest": "bingads",
     "groups": {
-      "bingads": {
+      "bingads-12": {
         "dest": "",
-        "moniker_range": " >= bingads-11"
+        "moniker_range": " = bingads-12"
+      },
+      "bingads-11": {
+        "dest": "",
+        "moniker_range": " = bingads-11"
+      },
+      "guides": {
+        "dest": "",
+        "moniker_range": " = bingads-11 || =  bingads-12"
       }
     }
   }
