@@ -25,7 +25,7 @@ You can find out the total number of people who belong to an audience i.e., cust
 You can fetch the audience search size in the *Audience Search Size* column of the [Custom Audience](/bingads/bulk-service/custom-audience.md), [In Market Audience](/bingads/bulk-service/in-market-audience.md), and [Remarketing List](/bingads/bulk-service/remarketing-list.md) Bulk records.
 
 #### <a name="campaign-v11-audiencesearchsize-january2018"></a>Campaign Management API Version 11 for Audience Search Size  
-You can fetch the audience search size in the *SearchSize* property of the [CustomAudience](~/campaign-management-service/customaudience.md), [InMarketAudience](~/campaign-management-service/inmarketaudience.md), and [RemarketingList](~/campaign-management-service/remarketinglist.md) objects. The *SearchSize* property is inherited from the [Audience](~/campaign-management-service/audience.md) base class.
+You can fetch the audience search size in the *SearchSize* property of the [CustomAudience](/bingads/campaign-management-service/customaudience.md), [InMarketAudience](/bingads/campaign-management-service/inmarketaudience.md), and [RemarketingList](/bingads/campaign-management-service/remarketinglist.md) objects. The *SearchSize* property is inherited from the [Audience](/bingads/campaign-management-service/audience.md) base class.
 
 ## <a name="november2017"></a>November 2017
 For information about this month's changes to Bing Ads services, see the following sections.
@@ -36,7 +36,7 @@ For information about this month's changes to Bing Ads services, see the followi
 ### <a name="reporting-estimatedbids-november2017"></a>New Reporting Columns for Estimated Bids
 You can now include estimated bid columns in the keyword performance data download. 
 
-The *Mainline1Bid*, *MainlineBid*, and *SidebarBid* columns are added to the [KeywordPerformanceReportColumn](~/reporting-service/keywordperformancereportcolumn.md) value set. 
+The *Mainline1Bid*, *MainlineBid*, and *SidebarBid* columns are added to the [KeywordPerformanceReportColumn](/bingads/reporting-service/keywordperformancereportcolumn.md) value set. 
 
 ## <a name="october2017"></a>October 2017
 For information about this month's changes to Bing Ads services, see the following sections.
@@ -47,18 +47,18 @@ For information about this month's changes to Bing Ads services, see the followi
 ### <a name="reporting-exactmatchimpressionshare-october2017"></a>New Reporting Column for Exact Match Impression Share
 You can now include the exact match impression share percent in the performance data download. 
 
-The *ExactMatchImpressionSharePercent* column has been added to the [AccountPerformanceReportColumn](~/reporting-service/accountperformancereportcolumn.md), [AdGroupPerformanceReportColumn](~/reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](~/reporting-service/campaignperformancereportcolumn.md), and [ShareOfVoiceReportColumn](~/reporting-service/shareofvoicereportcolumn.md) value sets. 
+The *ExactMatchImpressionSharePercent* column has been added to the [AccountPerformanceReportColumn](/bingads/reporting-service/accountperformancereportcolumn.md), [AdGroupPerformanceReportColumn](/bingads/reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](/bingads/reporting-service/campaignperformancereportcolumn.md), and [ShareOfVoiceReportColumn](/bingads/reporting-service/shareofvoicereportcolumn.md) value sets. 
 
 ### <a name="reporting-labels-october2017"></a>New Reporting Columns for Labels
 You can now include campaign, ad group, ad, and keyword labels in the performance data download. 
 
-The *AdLabels* column has been added to the [AdDynamicTextPerformanceReportColumn](~/reporting-service/addynamictextperformancereportcolumn.md) and [AdPerformanceReportColumn](~/reporting-service/adperformancereportcolumn.md) value sets.  
+The *AdLabels* column has been added to the [AdDynamicTextPerformanceReportColumn](/bingads/reporting-service/addynamictextperformancereportcolumn.md) and [AdPerformanceReportColumn](/bingads/reporting-service/adperformancereportcolumn.md) value sets.  
 
-The *AdGroupLabels* column has been added to the [AdGroupPerformanceReportColumn](~/reporting-service/adgroupperformancereportcolumn.md) value set.  
+The *AdGroupLabels* column has been added to the [AdGroupPerformanceReportColumn](/bingads/reporting-service/adgroupperformancereportcolumn.md) value set.  
 
-The *CampaignLabels* column has been added to the [CampaignPerformanceReportColumn](~/reporting-service/campaignperformancereportcolumn.md) value set.  
+The *CampaignLabels* column has been added to the [CampaignPerformanceReportColumn](/bingads/reporting-service/campaignperformancereportcolumn.md) value set.  
 
-The *KeywordLabels* column has been added to the [KeywordPerformanceReportColumn](~/reporting-service/keywordperformancereportcolumn.md) and [ShareOfVoiceReportColumn](~/reporting-service/shareofvoicereportcolumn.md) value sets.  
+The *KeywordLabels* column has been added to the [KeywordPerformanceReportColumn](/bingads/reporting-service/keywordperformancereportcolumn.md) and [ShareOfVoiceReportColumn](/bingads/reporting-service/shareofvoicereportcolumn.md) value sets.  
 
 
 ## <a name="september2017"></a>September 2017
@@ -104,10 +104,10 @@ The following are invalid URLs:
 *  one.two.three.contoso.co.uk/1/2 (too many subdomains)  
 *  one.two.three.contoso.com/1/2/3 (too many subdirectories)  
 
-For reference documentation, please see [CampaignNegativeSites](~/campaign-management-service/campaignnegativesites.md) and [AdGroupNegativeSites](~/campaign-management-service/adgroupnegativesites.md).
+For reference documentation, please see [CampaignNegativeSites](/bingads/campaign-management-service/campaignnegativesites.md) and [AdGroupNegativeSites](/bingads/campaign-management-service/adgroupnegativesites.md).
 
 ### <a name="geo-locations-august2017"></a>Geographical Locations File Version 2.0 
-The [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md) operation now supports version 2.0. County location IDs are only available in version 2.0.
+The [GetGeoLocationsFileUrl](/bingads/campaign-management-service/getgeolocationsfileurl.md) operation now supports version 2.0. County location IDs are only available in version 2.0.
 
 For more details about the contents of each file version, see [Geographical Location Codes](/bingads/guides/geographical-location-codes.md).
 
@@ -115,9 +115,9 @@ For more details about the contents of each file version, see [Geographical Loca
 > The locations file Version 1.0 is deprecated in favor of version 2.0. After October 31, 2017 version 1.0 will be sunset and only 2.0 will be supported. 
 
 ### <a name="reporting-locations-august2017"></a>New Reporting Columns for Location Targeting
-The *County*, *LocationId*, and *PostalCode* columns have been added to the [GeographicPerformanceReportColumn](~/reporting-service/geographicperformancereportcolumn.md) value set.
+The *County*, *LocationId*, and *PostalCode* columns have been added to the [GeographicPerformanceReportColumn](/bingads/reporting-service/geographicperformancereportcolumn.md) value set.
 
-The *County*, *LocationId*, *PostalCode*, *QueryIntentCounty*, *QueryIntentPostalCode*, and *QueryIntentLocationId* columns have been added to the [UserLocationPerformanceReportColumn](~/reporting-service/userlocationperformancereportcolumn.md) value set.
+The *County*, *LocationId*, *PostalCode*, *QueryIntentCounty*, *QueryIntentPostalCode*, and *QueryIntentLocationId* columns have been added to the [UserLocationPerformanceReportColumn](/bingads/reporting-service/userlocationperformancereportcolumn.md) value set.
 
 ## <a name="july2017"></a>July 2017
 For information about this month's changes to Bing Ads services, see the following sections.
@@ -135,13 +135,13 @@ Support for keyword planner operations is added. The Keyword Planner was already
 > [!NOTE]
 > Keyword Planner features are currently available to customers in the United States, United Kingdom, Canada, Australia, France, and Germany.
 
-Given a list of existing keywords, the [GetKeywordIdeas](~/ad-insight-service/getkeywordideas.md) operation suggests new ad groups and keywords based on your existing keywords, website, and product category. You can also request historical statistics for keywords e.g., monthly searches, competition, average CPC, and ad impression share. You can use the returned suggested keyword bids as input to the [GetKeywordTrafficEstimates](~/ad-insight-service/getkeywordtrafficestimates.md) operation.
+Given a list of existing keywords, the [GetKeywordIdeas](/bingads/ad-insight-service/getkeywordideas.md) operation suggests new ad groups and keywords based on your existing keywords, website, and product category. You can also request historical statistics for keywords e.g., monthly searches, competition, average CPC, and ad impression share. You can use the returned suggested keyword bids as input to the [GetKeywordTrafficEstimates](/bingads/ad-insight-service/getkeywordtrafficestimates.md) operation.
 
-The result is a [KeywordIdea](~/ad-insight-service/keywordidea.md) list. Each keyword idea includes historical statistics for keywords e.g., monthly searches, competition, average CPC, and ad impression share. Whereas the Bing Ads web application returns a 12 month average of the historical monthly search counts, each [KeywordIdea](~/ad-insight-service/keywordidea.md) includes a list of monthly search counts. You can use each count individually or average them for parity with the Bing Ads web application's calculation.
+The result is a [KeywordIdea](/bingads/ad-insight-service/keywordidea.md) list. Each keyword idea includes historical statistics for keywords e.g., monthly searches, competition, average CPC, and ad impression share. Whereas the Bing Ads web application returns a 12 month average of the historical monthly search counts, each [KeywordIdea](/bingads/ad-insight-service/keywordidea.md) includes a list of monthly search counts. You can use each count individually or average them for parity with the Bing Ads web application's calculation.
 
-Once you have already settled on an initial set of keywords, the [GetKeywordTrafficEstimates](~/ad-insight-service/getkeywordtrafficestimates.md) operation provides traffic estimates for keywords e.g., average CPC, average position, clicks, CTR, impressions, and total cost. As input you provide the keyword, bid, language, location, and network, with optional campaign budget and negative keyword filters.
+Once you have already settled on an initial set of keywords, the [GetKeywordTrafficEstimates](/bingads/ad-insight-service/getkeywordtrafficestimates.md) operation provides traffic estimates for keywords e.g., average CPC, average position, clicks, CTR, impressions, and total cost. As input you provide the keyword, bid, language, location, and network, with optional campaign budget and negative keyword filters.
 
-The result is a [KeywordEstimate](~/ad-insight-service/keywordestimate.md) list for each [AdGroupEstimate](~/ad-insight-service/adgroupestimate.md), which are all nested within one [CampaignEstimate](~/ad-insight-service/campaignestimate.md). Each keyword estimate includes a minimum and maximum [TrafficEstimate](~/ad-insight-service/trafficestimate.md). As previously mentioned, the traffic estimates for keywords include average CPC, average position, clicks, CTR, impressions, and total cost.
+The result is a [KeywordEstimate](/bingads/ad-insight-service/keywordestimate.md) list for each [AdGroupEstimate](/bingads/ad-insight-service/adgroupestimate.md), which are all nested within one [CampaignEstimate](/bingads/ad-insight-service/campaignestimate.md). Each keyword estimate includes a minimum and maximum [TrafficEstimate](/bingads/ad-insight-service/trafficestimate.md). As previously mentioned, the traffic estimates for keywords include average CPC, average position, clicks, CTR, impressions, and total cost.
 
 For more details see the [Keyword Ideas and Traffic Estimates](/bingads/guides/keyword-ideas-traffic-estimates.md) technical guide.
 
@@ -161,24 +161,24 @@ You can use the following Bulk record types to manage labels with the Bulk API.
 -   [Text Ad Label](/bingads/bulk-service/text-ad-label.md)
 
 #### <a name="campaign-v11-labels-july2017"></a>Campaign Management API Version 11 for Labels  
-You can add, delete, get, and update labels ([Label](~/campaign-management-service/label.md) objects) with the corresponding operations.
--  [AddLabels](~/campaign-management-service/addlabels.md)  
--  [DeleteLabels](~/campaign-management-service/deletelabels.md)  
--  [GetLabelsByIds](~/campaign-management-service/getlabelsbyids.md)  
--  [UpdateLabels](~/campaign-management-service/updatelabels.md)  
+You can add, delete, get, and update labels ([Label](/bingads/campaign-management-service/label.md) objects) with the corresponding operations.
+-  [AddLabels](/bingads/campaign-management-service/addlabels.md)  
+-  [DeleteLabels](/bingads/campaign-management-service/deletelabels.md)  
+-  [GetLabelsByIds](/bingads/campaign-management-service/getlabelsbyids.md)  
+-  [UpdateLabels](/bingads/campaign-management-service/updatelabels.md)  
 
-You can set, get, and delete label associations ([LabelAssociation](~/campaign-management-service/labelassociation.md) objects) with the corresponding operations.
--  [DeleteLabelAssociations](~/campaign-management-service/deletelabelassociations.md)  
--  [GetLabelAssociationsByEntityIds](~/campaign-management-service/getlabelassociationsbyentityids.md)  
--  [GetLabelAssociationsByLabelIds](~/campaign-management-service/getlabelassociationsbylabelids.md)  
--  [SetLabelAssociations](~/campaign-management-service/setlabelassociations.md)  
+You can set, get, and delete label associations ([LabelAssociation](/bingads/campaign-management-service/labelassociation.md) objects) with the corresponding operations.
+-  [DeleteLabelAssociations](/bingads/campaign-management-service/deletelabelassociations.md)  
+-  [GetLabelAssociationsByEntityIds](/bingads/campaign-management-service/getlabelassociationsbyentityids.md)  
+-  [GetLabelAssociationsByLabelIds](/bingads/campaign-management-service/getlabelassociationsbylabelids.md)  
+-  [SetLabelAssociations](/bingads/campaign-management-service/setlabelassociations.md)  
 
 ### <a name="offline-conversions-july2017"></a>Offline Conversion Import
 Support for Offline Conversion Import is added. Use offline conversions to track the full impact and benefit of your search ads. It allows you to import offline conversions derived from a search click back into Bing Ads. 
 
 To set up offine conversion tracking, create an offline conversion goal with the [Campaign Management](#campaign-v11-offline-conversions-july2017) service or via the Bing Ads web application, wait two hours, and then send Bing Ads the offline conversion data with either the [Campaign Management](#campaign-v11-offline-conversions-july2017) service or [Bulk](#bulk-v11-offline-conversions-july2017) service.
 
-You must also enable MSCLKID Auto Tagging. Every time you create a new [OfflineConversionGoal](~/campaign-management-service/offlineconversiongoal.md) via either the Bing Ads web application or Campaign Management API, the MSCLKID Auto Tagging is enabled automatically. You can enable or disable auto tagging using either the [Campaign Management](#campaign-v11-offline-conversions-july2017) service or [Bulk](#bulk-v11-offline-conversions-july2017) service. 
+You must also enable MSCLKID Auto Tagging. Every time you create a new [OfflineConversionGoal](/bingads/campaign-management-service/offlineconversiongoal.md) via either the Bing Ads web application or Campaign Management API, the MSCLKID Auto Tagging is enabled automatically. You can enable or disable auto tagging using either the [Campaign Management](#campaign-v11-offline-conversions-july2017) service or [Bulk](#bulk-v11-offline-conversions-july2017) service. 
 
 For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking-Load).
 
@@ -189,18 +189,18 @@ To manage the MSCLKID Auto Tagging, use the *MSCLKID Auto Tagging Enabled* field
 
 #### <a name="campaign-v11-offline-conversions-july2017"></a>Campaign Management API Version 11 for Offline Conversions  
 
-You can manage [OfflineConversionGoal](~/campaign-management-service/offlineconversiongoal.md) objects with the previously shipped conversion goal service operations e.g. [AddConversionGoals](~/campaign-management-service/addconversiongoals.md).
+You can manage [OfflineConversionGoal](/bingads/campaign-management-service/offlineconversiongoal.md) objects with the previously shipped conversion goal service operations e.g. [AddConversionGoals](/bingads/campaign-management-service/addconversiongoals.md).
 
-You can send Bing Ads the offline conversion data by submitting [OfflineConversion](~/campaign-management-service/offlineconversion.md) data via the [ApplyOfflineConversions](~/campaign-management-service/applyofflineconversions.md) operation.
+You can send Bing Ads the offline conversion data by submitting [OfflineConversion](/bingads/campaign-management-service/offlineconversion.md) data via the [ApplyOfflineConversions](/bingads/campaign-management-service/applyofflineconversions.md) operation.
 
-To manage the MSCLKID Auto Tagging, use the corresponding [AccountProperty](~/campaign-management-service/accountproperty.md) (*MSCLKIDAutoTaggingEnabled*) via the [GetAccountProperties](~/campaign-management-service/getaccountproperties.md) and [SetAccountProperties](~/campaign-management-service/setaccountproperties.md) operations. 
+To manage the MSCLKID Auto Tagging, use the corresponding [AccountProperty](/bingads/campaign-management-service/accountproperty.md) (*MSCLKIDAutoTaggingEnabled*) via the [GetAccountProperties](/bingads/campaign-management-service/getaccountproperties.md) and [SetAccountProperties](/bingads/campaign-management-service/setaccountproperties.md) operations. 
 
 ### <a name="reporting-bsc-july2017"></a>New Reporting Columns for Bing Shopping Campaigns
-The *ReturnOnAdSpend*, *BidStrategyType*, *LocalStoreCode*, and *StoreId* columns have been added to the [ProductDimensionPerformanceReportColumn](~/reporting-service/productdimensionperformancereportcolumn.md) value set.
+The *ReturnOnAdSpend*, *BidStrategyType*, *LocalStoreCode*, and *StoreId* columns have been added to the [ProductDimensionPerformanceReportColumn](/bingads/reporting-service/productdimensionperformancereportcolumn.md) value set.
 
-The *ReturnOnAdSpend*, *BidStrategyType*, and *LocalStoreCode* columns have been added to the [ProductPartitionPerformanceReportColumn](~/reporting-service/productpartitionperformancereportcolumn.md) value set.
+The *ReturnOnAdSpend*, *BidStrategyType*, and *LocalStoreCode* columns have been added to the [ProductPartitionPerformanceReportColumn](/bingads/reporting-service/productpartitionperformancereportcolumn.md) value set.
 
-The *ReturnOnAdSpend*, *BidStrategyType*, and *LocalStoreCode* columns have been added to the [ProductPartitionUnitPerformanceReportColumn](~/reporting-service/productpartitionunitperformancereportcolumn.md) value set.
+The *ReturnOnAdSpend*, *BidStrategyType*, and *LocalStoreCode* columns have been added to the [ProductPartitionUnitPerformanceReportColumn](/bingads/reporting-service/productpartitionunitperformancereportcolumn.md) value set.
 
 ### <a name="inheritedbidstrategytype-july2017"></a>Inherited Bid Strategy Type
 You can get the bid strategy type that is inherited from each ad group or keyword's parent campaign or ad group. This value is equal to the parent campaign or ad group's *Bid Strategy Type* field. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, and *TargetCpa*.
@@ -209,7 +209,7 @@ You can get the bid strategy type that is inherited from each ad group or keywor
 The *Inherited Bid Strategy Type* field is added to the [Ad Group](/bingads/bulk-service/ad-group.md) and [Keyword](/bingads/bulk-service/keyword.md) records. 
 
 #### <a name="campaign-v11-inheritedbidstrategytype-july2017"></a>Campaign Management API Version 11 for Inherited Bid Strategy Type  
-The *InheritedBidStrategyType* element is added to the  [InheritFromParentBiddingScheme](~/campaign-management-service/inheritfromparentbiddingscheme.md) object. This element is not returned by default. You must include *InheritedBidStrategyType* in the *ReturnAdditionalFields* optional request element when calling [GetAdGroupsByCampaignId](~/campaign-management-service/getadgroupsbycampaignid.md), [GetAdGroupsByIds](~/campaign-management-service/getadgroupsbyids.md), [GetKeywordsByAdGroupId](~/campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](~/campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](~/campaign-management-service/getkeywordsbyids.md).
+The *InheritedBidStrategyType* element is added to the  [InheritFromParentBiddingScheme](/bingads/campaign-management-service/inheritfromparentbiddingscheme.md) object. This element is not returned by default. You must include *InheritedBidStrategyType* in the *ReturnAdditionalFields* optional request element when calling [GetAdGroupsByCampaignId](/bingads/campaign-management-service/getadgroupsbycampaignid.md), [GetAdGroupsByIds](/bingads/campaign-management-service/getadgroupsbyids.md), [GetKeywordsByAdGroupId](/bingads/campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](/bingads/campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](/bingads/campaign-management-service/getkeywordsbyids.md).
 
 
 ### <a name="sdk-july2017"></a>Bing Ads Software Development Kit (SDK) Updates
@@ -252,9 +252,9 @@ Bulk entity support for new version 11 features e.g. *BulkPriceAdExtension* will
 
 ### <a name="reporting-v11-dsa-may2017"></a>Dynamic Search Ads Reports
 The the following reports are added for Dynamic Search Ads.
-- [DSAAutoTargetPerformanceReportRequest](~/reporting-service/dsaautotargetperformancereportrequest.md)  
-- [DSACategoryPerformanceReportRequest](~/reporting-service/dsacategoryperformancereportrequest.md)  
-- [DSASearchQueryPerformanceReportRequest](~/reporting-service/dsasearchqueryperformancereportrequest.md)
+- [DSAAutoTargetPerformanceReportRequest](/bingads/reporting-service/dsaautotargetperformancereportrequest.md)  
+- [DSACategoryPerformanceReportRequest](/bingads/reporting-service/dsacategoryperformancereportrequest.md)  
+- [DSASearchQueryPerformanceReportRequest](/bingads/reporting-service/dsasearchqueryperformancereportrequest.md)
 
 ## <a name="april2017"></a>April 2017
 For information about this month's changes to Bing Ads services, see the following sections.
@@ -272,4 +272,4 @@ The Bing Ads PHP SDK is now available.
 For details please see the [blog post](https://blogs.msdn.microsoft.com/bing_ads_api/2017/04/05/announcing-bing-ads-php-sdk/) and [Get Started Using PHP with Bing Ads Services](get-started-php.md).
 
 ### <a name="productsearchqueryperformancereport-april2017"></a>Bing Shopping Product Search Query Performance Report
-The Product Search Query performance report is now available for Bing Shopping Campaigns. Submit the [ProductPartitionPerformanceReportRequest](~/reporting-service/productpartitionperformancereportrequest.md) to see what your audience is searching for when your product ads are shown.
+The Product Search Query performance report is now available for Bing Shopping Campaigns. Submit the [ProductPartitionPerformanceReportRequest](/bingads/reporting-service/productpartitionperformancereportrequest.md) to see what your audience is searching for when your product ads are shown.

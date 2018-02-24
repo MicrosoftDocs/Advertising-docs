@@ -249,7 +249,7 @@ Determines whether the ads within this ad group will be displayed on the content
 
 Set the value *On* for ad distribution on the content network, and otherwise set the value *Off*.
 
-The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](~/campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
+The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](/bingads/campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -306,7 +306,7 @@ The ad group language.
 For possible values, see the Language column within [Ad Languages](/bingads/guides/ad-languages.md)
 
 > [!IMPORTANT]
-> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](~/customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language by setting this field to *delete_value*. The *delete_value* keyword removes the previous setting. If you leave this field nil, then the ad group language will not be updated. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. More specific dates and implementation details will be provided later through the [Bing Ads API Blog](https://blogs.msdn.microsoft.com/bing_ads_api/), and in the meantime you should update your application right away to support the change. 
+> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](/bingads/customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language by setting this field to *delete_value*. The *delete_value* keyword removes the previous setting. If you leave this field nil, then the ad group language will not be updated. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. More specific dates and implementation details will be provided later through the [Bing Ads API Blog](https://blogs.msdn.microsoft.com/bing_ads_api/), and in the meantime you should update your application right away to support the change. 
 
 **Add:** Optional if the campaign has one or more languages set, and otherwise language is required.  
 **Update:** Optional if the customer is in the *Campaign Languages* pilot, and otherwise update is not allowed. If you are not in the pilot and try to change the language during update, no error will be returned and the setting will not be changed.  
@@ -329,7 +329,7 @@ Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly
 
 You must not set *Network Distribution* if the *Content Network* ad distribution channel is set to *On*, otherwise an error will be returned.
 
-If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](~/campaign-management-service/setnegativesitestoadgroups.md) or [SetNegativeSitesToCampaigns](~/campaign-management-service/setnegativesitestocampaigns.md) operation to prevent the ads from displaying on specific syndicated search websites.
+If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](/bingads/campaign-management-service/setnegativesitestoadgroups.md) or [SetNegativeSitesToCampaigns](/bingads/campaign-management-service/setnegativesitestocampaigns.md) operation to prevent the ads from displaying on specific syndicated search websites.
 
 **Add:** Optional. The default is *OwnedAndOperatedAndSyndicatedSearch*.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -390,7 +390,7 @@ Determines whether the ads within this ad group will be displayed on the search 
 
 Set the value *On* for ad distribution on the search network, and otherwise set the value *Off*.
 
-The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](~/campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
+The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](/bingads/campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    

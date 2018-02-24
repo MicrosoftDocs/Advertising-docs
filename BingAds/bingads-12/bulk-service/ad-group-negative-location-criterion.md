@@ -163,7 +163,7 @@ Possible values are *City*, *Country*, *County*, *MetroArea*, *PostalCode*, and 
 **Delete:** Read-only  
 
 ### <a name="target"></a>Target
-The identifier of the location that you do not want to target. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](/bingads/guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md).
+The identifier of the location that you do not want to target. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](/bingads/guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](/bingads/campaign-management-service/getgeolocationsfileurl.md).
 
 **Add:** Required  
 **Update:** Required  

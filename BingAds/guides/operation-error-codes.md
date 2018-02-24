@@ -14,7 +14,7 @@ For more information about error handling and troubleshooting, see [Handling Ser
 ## <a name="error-codes"><a/>Error Codes
 In the list below, the **Numeric Code** and **Symbolic Error Code** headers correspond to the respective *Code* and *ErrorCode* elements of the returned error data object.
 
-The *BatchError* and *OperationError* objects for [Customer Billing](~/customer-billing-service/customer-billing-service-reference.md) and [Customer Management](~/customer-management-service/customer-management-service-reference.md) services do not contain the *ErrorCode* element. The corresponding **Symbolic Error Code** table entries below are noted as **Not applicable**.
+The *BatchError* and *OperationError* objects for [Customer Billing](/bingads/customer-billing-service/customer-billing-service-reference.md) and [Customer Management](/bingads/customer-management-service/customer-management-service-reference.md) services do not contain the *ErrorCode* element. The corresponding **Symbolic Error Code** table entries below are noted as **Not applicable**.
 
 Some symbolic error codes begin with the strings *BulkService* or *CampaignService*. Error codes beginning with *CampaignService* may be included in error codes for the bulk and campaign service, so you should not make assumptions about the naming convention.
 
@@ -3768,7 +3768,7 @@ Prepaid client accounts are not supported for management by agencies. The client
 Not applicable.
 
 **Description**
-You cannot get, delete, or update an account that is being linked or unlinked. You can determine the client link status with the [SearchClientLinks](~/customer-management-service/searchclientlinks.md) operation. If the client link status is *LinkInProgress* or *UnlinkInProgress*, try waiting 5 to 30 minutes and try again. If the issue persists please reach out to [support](https://advertise.bingads.microsoft.com/bing-ads-support). 
+You cannot get, delete, or update an account that is being linked or unlinked. You can determine the client link status with the [SearchClientLinks](/bingads/customer-management-service/searchclientlinks.md) operation. If the client link status is *LinkInProgress* or *UnlinkInProgress*, try waiting 5 to 30 minutes and try again. If the issue persists please reach out to [support](https://advertise.bingads.microsoft.com/bing-ads-support). 
 
 ***
 
@@ -7917,7 +7917,7 @@ CampaignServiceMediaTypeInvalid
 The type of media is not valid.
 
 > [!NOTE] 
-> This error may be thrown during a call to the [AddMedia](~/campaign-management-service/addmedia.md) operation if either the media *Type* or *MediaType* is invalid.
+> This error may be thrown during a call to the [AddMedia](/bingads/campaign-management-service/addmedia.md) operation if either the media *Type* or *MediaType* is invalid.
 
 ***
 

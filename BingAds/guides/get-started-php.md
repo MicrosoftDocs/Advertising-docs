@@ -69,7 +69,7 @@ The object must be properly encoded with the complex type e.g., BidMultiplier.
 </ns1:CriterionBid>
 ```
 
-Reference documentation for each data object specifies whether or not the complex type is derived from a base type e.g., please see [BiddableCampaignCriterion](~/campaign-management-service/biddablecampaigncriterion.md), [LocationCriterion](~/campaign-management-service/locationcriterion.md), and [BidMultiplier](~/campaign-management-service/bidmultiplier.md). 
+Reference documentation for each data object specifies whether or not the complex type is derived from a base type e.g., please see [BiddableCampaignCriterion](/bingads/campaign-management-service/biddablecampaigncriterion.md), [LocationCriterion](/bingads/campaign-management-service/locationcriterion.md), and [BidMultiplier](/bingads/campaign-management-service/bidmultiplier.md). 
 
 The WSDL also defines the hierarchy e.g., the following definition for BidMultiplier.
 ```xml

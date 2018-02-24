@@ -21,7 +21,7 @@ For an overview of Final URLs and tracking templates, see the following Bing Ads
 -   [Can I use custom parameters?](http://help.bingads.microsoft.com/#apex/3/en/56774/-1)  
 -   [What are Upgraded URLs and how do I upgrade?](http://help.bingads.microsoft.com/#apex/3/en/56751/-1)  
 
-You can manage Final URLs, Custom Parameters, and Tracking Templates with either the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) or [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) service if you need to upload or download a high volume of entity settings. For example you can update all keyword bids for your entire account in a single upload. In comparison, with the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md) service you can only update 1,000 keywords per call and those keywords must be in the same ad group. For more details about Final URLs and tracking templates using the Bing Ads API, see the sections below.
+You can manage Final URLs, Custom Parameters, and Tracking Templates with either the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) or [Campaign Management Service](/bingads/campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) service if you need to upload or download a high volume of entity settings. For example you can update all keyword bids for your entire account in a single upload. In comparison, with the [Campaign Management Service](/bingads/campaign-management-service/campaign-management-service-reference.md) service you can only update 1,000 keywords per call and those keywords must be in the same ad group. For more details about Final URLs and tracking templates using the Bing Ads API, see the sections below.
 -   [Tracking Templates](#trackingtemplatevalidation)  
 -   [Final URLs](#finalurlvalidation)  
 -   [Custom Parameters](#customparametersvalidation)  
@@ -46,7 +46,7 @@ For an account, campaign, or ad group level tracking template, please note the f
 
 -   Additionally you must include at least one of the following landing page URL tags: *{lpurl}*, *{lpurl+2}*, *{lpurl+3}*, *{unescapedlpurl}*, *{escapedlpurl}*.
 
-We recommend adding a default tracking template at the account level so that all the campaigns, ad groups, ads, and Sitelink Extensions use the same URL format. If you add more tracking templates at the campaign, ad group, ad or Sitelink Extension level, they will override the account level settings. You can set the account level tracking template as the value of the *TrackingUrlTemplate* key within the *ForwardCompatibilityMap* element of the [Account Data Object](~/customer-management-service/account.md).
+We recommend adding a default tracking template at the account level so that all the campaigns, ad groups, ads, and Sitelink Extensions use the same URL format. If you add more tracking templates at the campaign, ad group, ad or Sitelink Extension level, they will override the account level settings. You can set the account level tracking template as the value of the *TrackingUrlTemplate* key within the *ForwardCompatibilityMap* element of the [Account Data Object](/bingads/customer-management-service/account.md).
 
 **Important:** Only super admin and standard users can update an account.
 
@@ -100,21 +100,21 @@ These are the Bing Ads entities with properties for managing URLs that can be ac
 -   [Sitelink2 Ad Extension](/bingads/bulk-service/sitelink2-ad-extension.md)
 
 ## <a name="campaignservice"></a>URL Tracking with the Campaign Management Service
-These are the Bing Ads entities with properties for managing URLs that can be accessed using the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
--  [AdGroup](~/campaign-management-service/adgroup.md)  
--  [AppInstallAd](~/campaign-management-service/appinstallad.md)  
--  [BiddableAdGroupCriterion](~/campaign-management-service/biddableadgroupcriterion.md)  
--  [DynamicSearchAd](~/campaign-management-service/dynamicsearchad.md)  
--  [ExpandedTextAd](~/campaign-management-service/expandedtextad.md)  
--  [Keyword](~/campaign-management-service/keyword.md)  
--  [SiteLink](~/campaign-management-service/sitelink.md)  
--  [Sitelink2AdExtension](~/campaign-management-service/sitelink2adextension.md)  
--  [TextAd](~/campaign-management-service/textad.md)  
+These are the Bing Ads entities with properties for managing URLs that can be accessed using the [Campaign Management Service](/bingads/campaign-management-service/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
+-  [AdGroup](/bingads/campaign-management-service/adgroup.md)  
+-  [AppInstallAd](/bingads/campaign-management-service/appinstallad.md)  
+-  [BiddableAdGroupCriterion](/bingads/campaign-management-service/biddableadgroupcriterion.md)  
+-  [DynamicSearchAd](/bingads/campaign-management-service/dynamicsearchad.md)  
+-  [ExpandedTextAd](/bingads/campaign-management-service/expandedtextad.md)  
+-  [Keyword](/bingads/campaign-management-service/keyword.md)  
+-  [SiteLink](/bingads/campaign-management-service/sitelink.md)  
+-  [Sitelink2AdExtension](/bingads/campaign-management-service/sitelink2adextension.md)  
+-  [TextAd](/bingads/campaign-management-service/textad.md)  
 
 ## <a name="reportingservice"></a>URL Tracking with the Reporting Service
-The following reports can be submitted and downloaded with the [Reporting Service](~/reporting-service/reporting-service-reference.md) to get performance data for Final URLs and Tracking Templates. 
+The following reports can be submitted and downloaded with the [Reporting Service](/bingads/reporting-service/reporting-service-reference.md) to get performance data for Final URLs and Tracking Templates. 
 
-The *TrackingTemplate* and *CustomParameters* columns for upgraded URLs are available in several reports for example, the [AdPerformanceReportColumn](~/reporting-service/adperformancereportcolumn.md).
+The *TrackingTemplate* and *CustomParameters* columns for upgraded URLs are available in several reports for example, the [AdPerformanceReportColumn](/bingads/reporting-service/adperformancereportcolumn.md).
 
 ## See Also
 [Bing Ads Web Service Addresses](/bingads/guides/web-service-addresses.md)

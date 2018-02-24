@@ -324,7 +324,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](~/campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](/bingads/campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -488,9 +488,9 @@ If you specify *Sitelink Extension Description1* or *Sitelink Extension Descript
 **Delete:** Read-only  
 
 ### <a name="sitelinkextensionorder"></a>Sitelink Extension Order
-This field value represents the order of this record in the comparable list of [SiteLink](~/campaign-management-service/sitelink.md) objects. For example if this row in the bulk file represents the first item in the list, this field's value is 1 (one).
+This field value represents the order of this record in the comparable list of [SiteLink](/bingads/campaign-management-service/sitelink.md) objects. For example if this row in the bulk file represents the first item in the list, this field's value is 1 (one).
 
-For the campaign management service, the SiteLinks element of the [SiteLinksAdExtension](~/campaign-management-service/sitelinksadextension.md) object is a list of [SiteLink](~/campaign-management-service/sitelink.md) objects.
+For the campaign management service, the SiteLinks element of the [SiteLinksAdExtension](/bingads/campaign-management-service/sitelinksadextension.md) object is a list of [SiteLink](/bingads/campaign-management-service/sitelink.md) objects.
 
 **Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    

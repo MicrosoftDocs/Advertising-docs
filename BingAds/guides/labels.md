@@ -47,19 +47,19 @@ Keyword Label,Active,-22,-11113,,,ClientIdGoesHere,,,,,
 ```
 
 ## <a name="campaignservice"></a>Managing Labels with the Campaign Management Service
-You can use the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md) to create, get, update, and delete both labels and label associations. 
+You can use the [Campaign Management Service](/bingads/campaign-management-service/campaign-management-service-reference.md) to create, get, update, and delete both labels and label associations. 
 
-You can add, delete, get, and update labels ([Label](~/campaign-management-service/label.md) objects) with the corresponding operations.
--  [AddLabels](~/campaign-management-service/addlabels.md)  
--  [DeleteLabels](~/campaign-management-service/deletelabels.md)  
--  [GetLabelsByIds](~/campaign-management-service/getlabelsbyids.md)  
--  [UpdateLabels](~/campaign-management-service/updatelabels.md)  
+You can add, delete, get, and update labels ([Label](/bingads/campaign-management-service/label.md) objects) with the corresponding operations.
+-  [AddLabels](/bingads/campaign-management-service/addlabels.md)  
+-  [DeleteLabels](/bingads/campaign-management-service/deletelabels.md)  
+-  [GetLabelsByIds](/bingads/campaign-management-service/getlabelsbyids.md)  
+-  [UpdateLabels](/bingads/campaign-management-service/updatelabels.md)  
 
-You can set, get, and delete label associations ([LabelAssociation](~/campaign-management-service/labelassociation.md) objects) with the corresponding operations.
--  [DeleteLabelAssociations](~/campaign-management-service/deletelabelassociations.md)  
--  [GetLabelAssociationsByEntityIds](~/campaign-management-service/getlabelassociationsbyentityids.md)  
--  [GetLabelAssociationsByLabelIds](~/campaign-management-service/getlabelassociationsbylabelids.md)  
--  [SetLabelAssociations](~/campaign-management-service/setlabelassociations.md)  
+You can set, get, and delete label associations ([LabelAssociation](/bingads/campaign-management-service/labelassociation.md) objects) with the corresponding operations.
+-  [DeleteLabelAssociations](/bingads/campaign-management-service/deletelabelassociations.md)  
+-  [GetLabelAssociationsByEntityIds](/bingads/campaign-management-service/getlabelassociationsbyentityids.md)  
+-  [GetLabelAssociationsByLabelIds](/bingads/campaign-management-service/getlabelassociationsbylabelids.md)  
+-  [SetLabelAssociations](/bingads/campaign-management-service/setlabelassociations.md)  
 
 
 

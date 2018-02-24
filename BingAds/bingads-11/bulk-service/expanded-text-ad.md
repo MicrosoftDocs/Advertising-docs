@@ -196,7 +196,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 ### <a name="editorialappealstatus"></a>Editorial Appeal Status
 Determines whether you can appeal the issues found by the editorial review.
 
-Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](~/campaign-management-service/appealstatus.md).
+Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](/bingads/campaign-management-service/appealstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -219,7 +219,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdEditorialStatus Value Set](~/campaign-management-service/adeditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdEditorialStatus Value Set](/bingads/campaign-management-service/adeditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  

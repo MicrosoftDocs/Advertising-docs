@@ -49,7 +49,7 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
-      }      
+      }       
     ],
     "resource": [
       {
@@ -88,7 +88,7 @@
           "**/obj/**",
           "**/includes/**"
         ]
-      }     
+      }   
     ],
     "overwrite": [],
     "externalReference": [],

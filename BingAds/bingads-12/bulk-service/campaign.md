@@ -337,7 +337,7 @@ For example, the following country code values are supported.
 * *FR* - France
 * *US* - United States
 
-To get the current list of supported country codes use the [GetBSCCountries](~/campaign-management-service/getbsccountries.md) operation via the Campaign Management service.
+To get the current list of supported country codes use the [GetBSCCountries](/bingads/campaign-management-service/getbsccountries.md) operation via the Campaign Management service.
 
 **Add:** Required if the *Campaign Type* field is set to *Shopping*. You cannot include this column for other campaign types.  
 **Update:** Read-only    
@@ -388,7 +388,7 @@ The campaign languages.
 For possible values, see the Language column within [Ad Languages](/bingads/guides/ad-languages.md). Each language in the bulk field is delimited by a semicolon and space ("; "), for example *English; French; German*. You can specify multiple languages individually in the list, or only include one string in this field set to *All* if you want to target all languages.
 
 > [!IMPORTANT]
-> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](~/customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. More specific dates and implementation details will be provided later through the [Bing Ads API Blog](https://blogs.msdn.microsoft.com/bing_ads_api/), and in the meantime you should update your application right away to support the change. Also note that as a one time migration when the customer is added to pilot, campaign languages are set to the union of all individual ad group languages. For example if you have three ad groups with language set to *English*, *German*, and *French*, then at the time of pilot enablement this campaign's languages will be set to a list including *English*, *German*, and *French*. 
+> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](/bingads/customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. More specific dates and implementation details will be provided later through the [Bing Ads API Blog](https://blogs.msdn.microsoft.com/bing_ads_api/), and in the meantime you should update your application right away to support the change. Also note that as a one time migration when the customer is added to pilot, campaign languages are set to the union of all individual ad group languages. For example if you have three ad groups with language set to *English*, *German*, and *French*, then at the time of pilot enablement this campaign's languages will be set to a list including *English*, *German*, and *French*. 
 
 **Add:** Optional. If there is no campaign language set, then the language of each ad group within the campaign will be required.   
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. Once campaign languages are set, you cannot delete all of them. The list of languages that you specify during update replaces the previous settings i.e. does not append to the existing set of languages.  
@@ -450,7 +450,7 @@ Possible values are *Active*, *Paused*, and *Deleted*.
 ### <a name="storeid"></a>Store Id
 The unique identifier for the Bing Merchant Center store that your product catalog feed belongs to.
 
-To get your store identifiers, call the [GetBMCStoresByCustomerId](~/campaign-management-service/getbmcstoresbycustomerid.md) operation.
+To get your store identifiers, call the [GetBMCStoresByCustomerId](/bingads/campaign-management-service/getbmcstoresbycustomerid.md) operation.
 
 **Add:** Required if the *Campaign Type* field is set to *Shopping*. You cannot include this column for other campaign types.  
 **Update:** Read-only  

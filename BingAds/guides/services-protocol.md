@@ -19,12 +19,12 @@ When you create a SOAP request message, the order of the elements within the SOA
 > XML is case-sensitive. You must use the correct case for the value names. Strongly-typed programming languages such as C# ensure that you have the correct case before you can compile. Other languages might not give you a compile error if the correct case is not used; however, the code fails at run time.
 
 ## Partial Success
-Bing Ads API supports partial completions for add, update, and delete operations; if one of the objects in the list of objects that you are adding, updating or deleting fails, the operation may succeed for others in the collection. When you call a Get operation that takes a list of identifiers for example, the [GetKeywordsByIds](~/campaign-management-service/getkeywordsbyids.md) operation, and one of the identifiers in the list is not valid, the operation will succeed and the response element that corresponds to the invalid request identifier will be nil.
+Bing Ads API supports partial completions for add, update, and delete operations; if one of the objects in the list of objects that you are adding, updating or deleting fails, the operation may succeed for others in the collection. When you call a Get operation that takes a list of identifiers for example, the [GetKeywordsByIds](/bingads/campaign-management-service/getkeywordsbyids.md) operation, and one of the identifiers in the list is not valid, the operation will succeed and the response element that corresponds to the invalid request identifier will be nil.
 
 ## Partial Update
 
 ### Campaign Management Partial Update
-Partial update is supported for most, but not all campaign management data objects. For example when updating the *Text* property of an [ExpandedTextAd](~/campaign-management-service/expandedtextad.md) you need only specify the *Id* and *Text* elements. Read-only elements such as the ad editorial status must be left nil or empty. The optional elements may be left empty and their existing settings are unchanged. 
+Partial update is supported for most, but not all campaign management data objects. For example when updating the *Text* property of an [ExpandedTextAd](/bingads/campaign-management-service/expandedtextad.md) you need only specify the *Id* and *Text* elements. Read-only elements such as the ad editorial status must be left nil or empty. The optional elements may be left empty and their existing settings are unchanged. 
 
 Partial update is not supported for targets or ad extensions. Any optional elements which are not sent with the update request will in effect be deleted from the respective target or extension.
 
@@ -32,7 +32,7 @@ Partial update is not supported for targets or ad extensions. Any optional eleme
 The customer management service performs a full update of entities, so in addition to the documented required properties you must provide values for all optional properties that you do not want to be nil or empty.  
 
 > [!NOTE]
-> One exception to this rule is the *ForwardCompatibilityMap* element of any object. For example if you do not provide the *ForwardCompatibilityMap* element of the [Account Data Object](~/customer-management-service/account.md), the service will not update or nullify any properties that would otherwise have been represented by key and value pairs.
+> One exception to this rule is the *ForwardCompatibilityMap* element of any object. For example if you do not provide the *ForwardCompatibilityMap* element of the [Account Data Object](/bingads/customer-management-service/account.md), the service will not update or nullify any properties that would otherwise have been represented by key and value pairs.
 
 ## <a name="store_locally"></a>Store Your Entity Identifiers Locally
 You should maintain a local store of your account and campaign entities. Specifically, you should locally store the identifiers of your accounts, customers, campaigns, ad groups, and keywords. Most calls require the identifier of the entity. If you store the identifier, you eliminate the call that is required to get the identifier.
@@ -46,7 +46,7 @@ The following are the overhead costs, in processing time, that are associated wi
 -   Authenticating the user name and password.  
 -   Validating the developer token.  
 
-These costs occur whether you process a single item or a set of items. To minimize overhead, in general, you should try to process as many items in one call as possible. For example, instead of calling [UpdateCampaigns](~/campaign-management-service/updatecampaigns.md) for each campaign that you want to update, call it only once for multiple campaigns that you want to update. To manage large scale data you should use the [Bulk service](/bingads/bulk-service/bulk-service-reference.md). The Bulk service allows you to download data as a TSV or CSV file, modify it as needed, and then upload your changes. For more information about using the Bulk service, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+These costs occur whether you process a single item or a set of items. To minimize overhead, in general, you should try to process as many items in one call as possible. For example, instead of calling [UpdateCampaigns](/bingads/campaign-management-service/updatecampaigns.md) for each campaign that you want to update, call it only once for multiple campaigns that you want to update. To manage large scale data you should use the [Bulk service](/bingads/bulk-service/bulk-service-reference.md). The Bulk service allows you to download data as a TSV or CSV file, modify it as needed, and then upload your changes. For more information about using the Bulk service, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 Because of the costs associated with establishing a connection to a web service, you should maintain the connection for as long as it is needed. For example, if you need to request multiple reports, use the same reporting service client object for all reporting service operation calls. Explicitly close the connection when you no longer need the service.
 
