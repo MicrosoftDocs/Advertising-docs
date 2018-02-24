@@ -66,7 +66,23 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
-      }        
+      } ,
+      {
+        "group": "bingads-11",
+        "src": "guides",
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }       
     ],
     "resource": [
       {
@@ -118,7 +134,20 @@
           "**/obj/**",
           "**/includes/**"
         ]
-      }   
+      },
+      {
+        "group": "bingads-11",
+        "src": "guides",
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }    
     ],
     "overwrite": [],
     "externalReference": [],
