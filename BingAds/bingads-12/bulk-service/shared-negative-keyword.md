@@ -12,7 +12,7 @@ dev_langs:
 Defines a negative keyword that is shared in a negative keyword list and can be downloaded and uploaded in a bulk file.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Shared Negative Keyword* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For an *Shared Negative Keyword* record, the following attribute fields are available in the [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md). 
 
 - [Client Id](#clientid)
 - [Id](#id)
@@ -22,7 +22,7 @@ For an *Shared Negative Keyword* record, the following attribute fields are avai
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Shared Negative Keyword* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *SharedNegativeKeywords* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Shared Negative Keyword* record by including the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value of *SharedNegativeKeywords* in the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](/bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new negative keyword to a negative keyword list given a valid negative keyword list ID (*Parent Id*). 
 
@@ -122,9 +122,9 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The system generated identifier of the negative keyword list that contains the negative keyword.
 
-This bulk field maps to the *Id* field of the [Negative Keyword List](../bulk-service/negative-keyword-list.md) record.
+This bulk field maps to the *Id* field of the [Negative Keyword List](/bingads/bulk-service/negative-keyword-list.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing negative keyword list identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Negative Keyword List](../bulk-service/negative-keyword-list.md) record. This is recommended if you are adding new negative keywords to a new negative keyword list in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing negative keyword list identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Negative Keyword List](/bingads/bulk-service/negative-keyword-list.md) record. This is recommended if you are adding new negative keywords to a new negative keyword list in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/binga/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.  
 **Delete:** Read-only  
 

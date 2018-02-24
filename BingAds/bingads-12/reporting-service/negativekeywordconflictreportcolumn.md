@@ -11,7 +11,7 @@ description: Defines the attributes columns that you can include in the Negative
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines the attributes columns that you can include in the [NegativeKeywordConflictReportRequest](../reporting-service/negativekeywordconflictreportrequest.md).
+Defines the attributes columns that you can include in the [NegativeKeywordConflictReportRequest](/bingads/reporting-service/negativekeywordconflictreportrequest.md).
 
 For a list of columns that you must include, please see the [Required Columns](#requiredcolumns) section below.
 

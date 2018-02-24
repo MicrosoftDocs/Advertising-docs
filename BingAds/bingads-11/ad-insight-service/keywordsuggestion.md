@@ -24,7 +24,7 @@ Defines an object that contains a list of suggested keywords that may perform be
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword to which the suggested keywords apply.|**string**|
-|<a name="suggestionsandconfidence"></a>SuggestionsAndConfidence|A [KeywordAndConfidence](../ad-insight-service/keywordandconfidence.md) array that contains a list of suggested keywords and, for each keyword, a score that indicates the probability that using the keyword would result in an ad being included in the results of a search query.<br /><br />The suggested keywords are sorted in order from keywords with the highest confidence score to those with the lowest confidence score.|[KeywordAndConfidence](keywordandconfidence.md) array|
+|<a name="suggestionsandconfidence"></a>SuggestionsAndConfidence|A [KeywordAndConfidence](/bingads/ad-insight-service/keywordandconfidence.md) array that contains a list of suggested keywords and, for each keyword, a score that indicates the probability that using the keyword would result in an ad being included in the results of a search query.<br /><br />The suggested keywords are sorted in order from keywords with the highest confidence score to those with the lowest confidence score.|[KeywordAndConfidence](keywordandconfidence.md) array|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

@@ -11,7 +11,7 @@ description: Defines a paging object for the list of entities returned using one
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines a paging object for the list of entities returned using one of the search operations, for example [SearchAccounts](../customer-management-service/searchaccounts.md), [SearchClientLinks](../customer-management-service/searchclientlinks.md), or [SearchCustomers](../customer-management-service/searchcustomers.md).
+Defines a paging object for the list of entities returned using one of the search operations, for example [SearchAccounts](/bingads/customer-management-service/searchaccounts.md), [SearchClientLinks](/bingads/customer-management-service/searchclientlinks.md), or [SearchCustomers](/bingads/customer-management-service/searchcustomers.md).
 
 ## Syntax
 ```xml

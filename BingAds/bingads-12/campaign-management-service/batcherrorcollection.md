@@ -11,7 +11,7 @@ description: Defines an error object that contains batch error details for the t
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines an error object that contains batch error details for the top level list index and a list of batch errors corresponding to the  nested list index. For example in the *NestedPartialErrors* response element for [AddNegativeKeywordsToEntities](../campaign-management-service/addnegativekeywordstoentities.md), the top level error details correspond to the campaign or ad group in the service request. The nested list of batch errors would include any errors specific to the negative keywords that you attempted to add to the campaign or ad group.
+Defines an error object that contains batch error details for the top level list index and a list of batch errors corresponding to the  nested list index. For example in the *NestedPartialErrors* response element for [AddNegativeKeywordsToEntities](/bingads/campaign-management-service/addnegativekeywordstoentities.md), the top level error details correspond to the campaign or ad group in the service request. The nested list of batch errors would include any errors specific to the negative keywords that you attempted to add to the campaign or ad group.
 
 ## Syntax
 ```xml

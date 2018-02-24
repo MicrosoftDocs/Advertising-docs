@@ -11,7 +11,7 @@ Defines a conversion performance report request. Use this report to understand w
 
 You can request conversions, assists, revenue, and revenue per conversion for your campaigns. Once downloaded, this data can be sorted by account, ad group, campaign, keyword, and device type. 
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](/bingads/reporting-service/submitgeneratereport.md) operation.
 
 > [!NOTE]
 > You should not use this report to get performance data for Bing Shopping campaigns. It is only applicable for other campaign types.

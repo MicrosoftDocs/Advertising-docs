@@ -15,7 +15,7 @@ Defines a DSA category performance report request. Use this report to check the 
 
 You can request impressions, clicks, click-through rate, and average position for the dynamic ad categories that have triggered your ads. 
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](/bingads/reporting-service/submitgeneratereport.md) operation.
 
 ## Syntax
 ```xml

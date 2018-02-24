@@ -24,7 +24,7 @@ Defines an object that contains the keyword and percentage of users by age and g
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword.|**string**|
-|<a name="keyworddemographics"></a>KeywordDemographics|An array of [KeywordDemographic](../ad-insight-service/keyworddemographic.md) data objects that contains the percentage of users by age and gender (if known) that searched for the keyword on the device.|[KeywordDemographic](keyworddemographic.md) array|
+|<a name="keyworddemographics"></a>KeywordDemographics|An array of [KeywordDemographic](/bingads/ad-insight-service/keyworddemographic.md) data objects that contains the percentage of users by age and gender (if known) that searched for the keyword on the device.|[KeywordDemographic](keyworddemographic.md) array|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

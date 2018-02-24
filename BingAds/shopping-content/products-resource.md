@@ -9,7 +9,7 @@ ms.topic: "article"
 ms.author: "scottwhi"
 ---
 # Products Resource
-The Products resource lets you manage product offerings in your Bing Merchant Center store (BMC). For information about using the Products resources, see [Managing your Products](../shopping-content/manage-products.md). For examples that show how to add, delete, and get products, see [Code Examples](../shopping-content/code-examples.md).
+The Products resource lets you manage product offerings in your Bing Merchant Center store (BMC). For information about using the Products resources, see [Managing your Products](/bingads/shopping-content/manage-products.md). For examples that show how to add, delete, and get products, see [Code Examples](/bingads/shopping-content/code-examples.md).
 
 ## Base URI
 
@@ -39,7 +39,7 @@ The endpoints may include the following query parameters.
 |---------|-----------|
 |<a name="alt"/>alt|Optional. Use to specify the type of content that's used in the request and response. The possible values are ```json``` and ```xml```. The default is ```json```.
 |<a name="bmccatalogid"/>bmc-catalog-id|Optional. Use to specify the catalog to insert (update) product offerings into.<br/><br/>Use this parameter if your store contains multiple catalogs. If you do not specify this parameter, the product is inserted into the store's default catalog.<br/><br/>This parameter is only used to insert product offerings. This parameter is ignored for Get, List, and Delete requests because they operate across catalogs. 
-|<a name="dryrun"/>dry-run|Optional. Use when debugging your application to test calls. Calls that include this parameter will not affect production data (products will not be inserted or deleted); however, the response will contain any errors that the call generates.<br/><br/>Consider the following limitations when using this parameter.<br/><br/><ul><li>Insert operations will not return IDs.<br /><br /></li><li>The service will not generate or return secondary error messages such as data quality, editorial issues, and database-related validations.</li></ul>For more information about testing your application, see [Sandbox](../shopping-content/test-code-sandbox.md). 
+|<a name="dryrun"/>dry-run|Optional. Use when debugging your application to test calls. Calls that include this parameter will not affect production data (products will not be inserted or deleted); however, the response will contain any errors that the call generates.<br/><br/>Consider the following limitations when using this parameter.<br/><br/><ul><li>Insert operations will not return IDs.<br /><br /></li><li>The service will not generate or return secondary error messages such as data quality, editorial issues, and database-related validations.</li></ul>For more information about testing your application, see [Sandbox](/bingads/shopping-content/test-code-sandbox.md). 
 |<a name="maxresults"/>max-results|Optional. Use to specify the maximum number of items to return in a List request. The maximum value that you may specify is 250. The default is 25. 
 |<a name="starttoken"/>start-token|Optional. Use to page through a store's list of products. The token identifies the next page of products to return in a List request. Do not specify this parameter in the first List request. If the catalog contains more than the requested number of products (see the **max-results** query parameter), the response will include the `nextPageToken` field (see [Products](#products)), which contains the token value that you use in the next List request.
 
@@ -49,12 +49,12 @@ The following are the request and response headers.
  
 |Header|Description|
 |---------|---------------|
-|<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth authentication token. For information about getting a token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).<br/><br/>This header and the UserName header are mutually exclusive.
+|<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth authentication token. For information about getting a token, see [Authenticating your credentials](/bingads/shopping-content/get-started.md#authentication).<br/><br/>This header and the UserName header are mutually exclusive.
 |Content-Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request.
 |Content-Type|Request and response header.<br/><br/>The type of content in the body of the request or response. For POSTs, if you use JSON, set this header to `application/json`. Otherwise, if you use XML, set this header to `application/xml`.
 |<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any of the accounts that you manage on behalf of the customer specified in the `CustomerId` header; it doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
 |<a name="customerid"/> CustomerId|Request header.<br/><br/>The customer ID of the customer whose store you manage. Specify this header only if you manage the store on behalf of the customer. If you set this header, you must also set the `CustomerAccountId`  header.  
-|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Bing Ads credentials and developer token?](../shopping-content/get-started.md#credentials).
+|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Bing Ads credentials and developer token?](/bingads/shopping-content/get-started.md#credentials).
 |Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request. 
 |<a name="password"/>Password|Request header.<br/><br/>A Bing Ads user's sign-in password. Specify this header only if you use the UserName header; do not specify this header with the AuthenticationToken header.
 |<a name="username"/>UserName|Request header.<br/><br/>A Bing Ads user's sign-in user name. You may not set this element to a Microsoft account or email address. This header and the AuthenticationToken header are mutually exclusive.

@@ -15,7 +15,7 @@ Defines an ad dynamic text performance report request. Use this report to identi
 
 You can request impressions, clicks, spend, and average cost per click of your dynamic text strings. Once downloaded, this data can be sorted by ad title, destination URL, param 1, param 2, and param 3.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](/bingads/reporting-service/submitgeneratereport.md) operation.
 
 > [!NOTE]
 > You should not use this report to get performance data for Bing Shopping campaigns. It is only applicable for other campaign types.

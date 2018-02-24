@@ -31,7 +31,7 @@ Defines the possible status values of an ad.
 |-----------|---------------|
 |<a name="active"></a>Active|The ad can be served.|
 |<a name="deleted"></a>Deleted|This status is for internal use only. Because all Get operations do not return deleted objects, you will not see an object with this status.|
-|<a name="inactive"></a>Inactive|This status is read-only. The ad is undergoing editorial review or has failed editorial review. To determine the  ad editorial status, see [AdEditorialStatus](../campaign-management-service/adeditorialstatus.md).|
+|<a name="inactive"></a>Inactive|This status is read-only. The ad is undergoing editorial review or has failed editorial review. To determine the  ad editorial status, see [AdEditorialStatus](/bingads/campaign-management-service/adeditorialstatus.md).|
 |<a name="paused"></a>Paused|The ad will not serve until the owner resumes it.|
 
 ## Requirements

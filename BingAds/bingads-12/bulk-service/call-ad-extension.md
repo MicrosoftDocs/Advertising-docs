@@ -14,7 +14,7 @@ Defines a call ad extension that can be uploaded and downloaded in a bulk file.
 You can associate a call ad extension with campaigns in the account. Each entity (campaign) can be associated with one call ad extension. Use the [Campaign Call Ad Extension](campaign-call-ad-extension.md) record to manage call ad extension associations.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Call Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For a *Call Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md). 
 
 - [Ad Schedule](#adschedule)
 - [Call Only](#callonly)
@@ -37,7 +37,7 @@ For a *Call Ad Extension* record, the following attribute fields are available i
 - [Use Searcher Time Zone](#usesearchertimezone)
 - [Version](#version)
 
-You can download all fields of the *Call Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CallAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Call Ad Extension* record by including the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value of *CallAdExtensions* in the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](/bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Call Ad Extension to the account's shared library. 
 
@@ -193,7 +193,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](/bingads/campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](/binga/bingads/campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -220,7 +220,7 @@ The end date is inclusive. For example, if you set this field to 3/10/2017, the 
 ### <a name="id"></a>Id
 The system generated identifier of the ad extension.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Campaign Call Ad Extension](../bulk-service/campaign-call-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Campaign Call Ad Extension](/bingads/bulk-service/campaign-call-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/binga/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -237,7 +237,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The system generated identifier of the account that contains the ad extension.
 
-This bulk field maps to the *Id* field of the [Account](../bulk-service/account.md) record.
+This bulk field maps to the *Id* field of the [Account](/bingads/bulk-service/account.md) record.
 
 **Add:** Read-only  
 **Update:** Read-only  

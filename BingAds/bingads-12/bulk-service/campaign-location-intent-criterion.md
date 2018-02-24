@@ -16,10 +16,10 @@ Each location intent criterion defines the intent option for all location and ra
 The maximum number of location intent criterions that you can specify per campaign or ad group is one.
 
 > [!NOTE]
-> You can only have one [Campaign Location Intent Criterion](../bulk-service/campaign-location-intent-criterion.md) record per campaign to determine the location intent option that applies for all of the campaign's [Campaign Location Criterion](../bulk-service/campaign-location-criterion.md) and [Campaign Radius Criterion](../bulk-service/campaign-radius-criterion.md) records. When you create the campaign's first criterion, a [Campaign Location Intent Criterion](../bulk-service/campaign-location-intent-criterion.md) record will also be added automatically with the default *Target* set to *PeopleInOrSearchingForOrViewingPages*. You can add or update a campaign's [Campaign Location Intent Criterion](../bulk-service/campaign-location-intent-criterion.md), whether or not the campaign has any other criterions. You cannot delete a campaign's [Campaign Location Intent Criterion](../bulk-service/campaign-location-intent-criterion.md), although it has no purpose without location or radius criterions. 
+> You can only have one [Campaign Location Intent Criterion](/bingads/bulk-service/campaign-location-intent-criterion.md) record per campaign to determine the location intent option that applies for all of the campaign's [Campaign Location Criterion](/bingads/bulk-service/campaign-location-criterion.md) and [Campaign Radius Criterion](/bingads/bulk-service/campaign-radius-criterion.md) records. When you create the campaign's first criterion, a [Campaign Location Intent Criterion](/bingads/bulk-service/campaign-location-intent-criterion.md) record will also be added automatically with the default *Target* set to *PeopleInOrSearchingForOrViewingPages*. You can add or update a campaign's [Campaign Location Intent Criterion](/bingads/bulk-service/campaign-location-intent-criterion.md), whether or not the campaign has any other criterions. You cannot delete a campaign's [Campaign Location Intent Criterion](/bingads/bulk-service/campaign-location-intent-criterion.md), although it has no purpose without location or radius criterions. 
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Campaign Location Intent Criterion* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For a *Campaign Location Intent Criterion* record, the following attribute fields are available in the [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md). 
 
 - [Campaign](#campaign)
 - [Client Id](#clientid)
@@ -29,7 +29,7 @@ For a *Campaign Location Intent Criterion* record, the following attribute field
 - [Status](#status)
 - [Target](#target)
 
-You can download all fields of the *Campaign Location Intent Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Campaign Location Intent Criterion* record by including the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](/bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new campaign location intent criterion if a valid campaign identifier (*Parent Id*) is provided. 
 
@@ -128,9 +128,9 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The identifier of the a campaign where this criterion is applied or removed.
 	
-This bulk field maps to the *Id* field of the [Campaign](../bulk-service/campaign.md) record. 
+This bulk field maps to the *Id* field of the [Campaign](/bingads/bulk-service/campaign.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing a campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new criterions to a new a campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing a campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](/bingads/bulk-service/campaign.md) record. This is recommended if you are adding new criterions to a new a campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/binga/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 

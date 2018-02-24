@@ -11,7 +11,7 @@ description: Defines the types of changes to entities by which you can filter th
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines the types of changes to entities by which you can filter the report data. These values are also used as column values in the `HowChanged` column of the campaign change history report. For more information, see [SearchCampaignChangeHistoryReportColumn](../reporting-service/searchcampaignchangehistoryreportcolumn.md).
+Defines the types of changes to entities by which you can filter the report data. These values are also used as column values in the `HowChanged` column of the campaign change history report. For more information, see [SearchCampaignChangeHistoryReportColumn](/bingads/reporting-service/searchcampaignchangehistoryreportcolumn.md).
 
 ## Syntax
 ```xml

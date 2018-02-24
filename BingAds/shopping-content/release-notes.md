@@ -19,17 +19,17 @@ This release includes the following changes:
 ## <a name="may2017"></a>May 2017
 This release includes the following changes:
 
-- The following [Product](/bingads/shopping-content/products-resource.md#product) fields are now required if the manufacturer assigns them.  
+- The following [Product](/binga/bingads/shopping-content/products-resource.md#product) fields are now required if the manufacturer assigns them.  
   
-  - [brand](/bingads/shopping-content/products-resource.md#brand) 
-  - [gtin](/bingads/shopping-content/products-resource.md#gtin) 
-  - [mpn](/bingads/shopping-content/products-resource.md#mpn)  
+  - [brand](/binga/bingads/shopping-content/products-resource.md#brand) 
+  - [gtin](/binga/bingads/shopping-content/products-resource.md#gtin) 
+  - [mpn](/binga/bingads/shopping-content/products-resource.md#mpn)  
   
-  If the manufacturer assigns values for these fields, you must specify them in your offer. If you do not, BMC will accept the offer for now but will return a warning message in the response (see [warnings](/bingads/shopping-content/products-resource.md#warnings)). You should update your code at your earliest convenience to begin providing this information.  
+  If the manufacturer assigns values for these fields, you must specify them in your offer. If you do not, BMC will accept the offer for now but will return a warning message in the response (see [warnings](/binga/bingads/shopping-content/products-resource.md#warnings)). You should update your code at your earliest convenience to begin providing this information.  
   
-- If you do not specify the `brand`, `gtin`, or `mpn` fields, you must set the [identifierExists](/bingads/shopping-content/products-resource.md#identifierexists) field to **false**. It's default is **true**.  
+- If you do not specify the `brand`, `gtin`, or `mpn` fields, you must set the [identifierExists](/binga/bingads/shopping-content/products-resource.md#identifierexists) field to **false**. It's default is **true**.  
   
-- Added the `warnings` field to the [BatchItemError](/bingads/shopping-content/products-resource.md#batchitemerror) object.
+- Added the `warnings` field to the [BatchItemError](/binga/bingads/shopping-content/products-resource.md#batchitemerror) object.
 
  
 ## <a name="march2017"></a>March 2017
@@ -40,14 +40,14 @@ This release includes the following changes:
 ## <a name="february2017"></a>February 2017
 This release includes the following changes:
 
-- Updated the `Product` object's [availability](../shopping-content/products-resource.md#availability) field to accept *out of stock* and *preorder* values. Only users in the pilot program may specify these values.
+- Updated the `Product` object's [availability](/bingads/shopping-content/products-resource.md#availability) field to accept *out of stock* and *preorder* values. Only users in the pilot program may specify these values.
 
 
 ## <a name="september2016"></a>September 2016
 This release includes the following changes:
 
-- Added the [promotionId](../shopping-content/products-resource.md#promotionid) field to the `Product` object. You use the promotion ID to associate a product offer with a promotion in your Promotions feed.
-- Updated the [price](../shopping-content/products-resource.md#price) and [saleprice](../shopping-content/products-resource.md#saleprice) fields of the `Product` object to allow a minimum price of 0.0 (zero) under certain conditions. Previously, the minimum price allowed was 0.01 (1 cent).
+- Added the [promotionId](/bingads/shopping-content/products-resource.md#promotionid) field to the `Product` object. You use the promotion ID to associate a product offer with a promotion in your Promotions feed.
+- Updated the [price](/bingads/shopping-content/products-resource.md#price) and [saleprice](/bingads/shopping-content/products-resource.md#saleprice) fields of the `Product` object to allow a minimum price of 0.0 (zero) under certain conditions. Previously, the minimum price allowed was 0.01 (1 cent).
  
 ## <a name="december2015"></a>December 2015
 For information about the changes to the Content API  services included in this release, see the following section.
@@ -57,7 +57,7 @@ For information about the changes to the Content API  services included in this 
 ### <a name="catalogsmanagement"></a>Catalogs Management Resource
 This release introduces the `catalogs` resource.
 
-For an overview and reference information about the `catalogs` resource see the topic [Catalogs Management Resource](../shopping-content/catalogs-resource.md). Code examples will be available in a forthcoming release.
+For an overview and reference information about the `catalogs` resource see the topic [Catalogs Management Resource](/bingads/shopping-content/catalogs-resource.md). Code examples will be available in a forthcoming release.
 
 ## <a name="october2015"></a>October 2015
 For information about the changes to the Content API  services included in this release, see the following sections.
@@ -69,9 +69,9 @@ For information about the changes to the Content API  services included in this 
 ### <a name="staturesource-october2015"></a>Status Resource
 This release introduces the `status` resource.
 
-For an overview and reference information about the `status` resource see the topic [Catalog Status Resource](../shopping-content/status-resource.md).
+For an overview and reference information about the `status` resource see the topic [Catalog Status Resource](/bingads/shopping-content/status-resource.md).
 
-For an example of using the `status` resource in code see the topic [Catalog Status Resource Code Examples](../shopping-content/code-examples.md#catalog).
+For an example of using the `status` resource in code see the topic [Catalog Status Resource Code Examples](/bingads/shopping-content/code-examples.md#catalog).
 
 ### <a name="docreorg-october2015"></a>Documentation Reorganization
 The Content API was previously documented as "Version 1" and "Version 2". To make the Bing Ads API documentation consistent, the version number used in documentation has been changed to use the version in the URI.
@@ -86,6 +86,6 @@ The April 2015 release updated the `products` resource to version 9.1.
 
 Version 9 (previously version 1) of the products resource will be deprecated. Use version 9.1.
 
-Version 9.1 of the Content API's `products` resource was previously documented as version 2. [Products Resource](../shopping-content/products-resource.md)
+Version 9.1 of the Content API's `products` resource was previously documented as version 2. [Products Resource](/bingads/shopping-content/products-resource.md)
 
 

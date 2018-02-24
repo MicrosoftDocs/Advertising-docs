@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the possible user-determined status values of a conversion goal.
 ---
 # ConversionGoalStatus Value Set - Campaign Management
-Defines the possible user-determined status values of a conversion goal. These are the status values that a user can decide to set, for example a goal can be set to *Paused* if you no longer wish to track conversions for that goal. For status values that can be set by the system, for example whether or not the UET tag is verified, see [ConversionGoalTrackingStatus](../campaign-management-service/conversiongoaltrackingstatus.md).   
+Defines the possible user-determined status values of a conversion goal. These are the status values that a user can decide to set, for example a goal can be set to *Paused* if you no longer wish to track conversions for that goal. For status values that can be set by the system, for example whether or not the UET tag is verified, see [ConversionGoalTrackingStatus](/bingads/campaign-management-service/conversiongoaltrackingstatus.md).   
 
 ## Syntax
 ```xml

@@ -39,7 +39,7 @@ The *GetHistoricalSearchCountResponse* object defines the [body](#response-body)
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordsearchcounts"></a>KeywordSearchCounts|An array of [KeywordSearchCount](../ad-insight-service/keywordsearchcount.md) data objects. The array contains an item for each keyword specified in the request. If the keyword is not valid, the corresponding item in the array will be null.<br /><br />Each [KeywordSearchCount](../ad-insight-service/keywordsearchcount.md) contains an array of [SearchCountsByAttributes](../ad-insight-service/searchcountsbyattributes.md).  The array contains an item for each unique device specified in the request.|[KeywordSearchCount](keywordsearchcount.md) array|
+|<a name="keywordsearchcounts"></a>KeywordSearchCounts|An array of [KeywordSearchCount](/bingads/ad-insight-service/keywordsearchcount.md) data objects. The array contains an item for each keyword specified in the request. If the keyword is not valid, the corresponding item in the array will be null.<br /><br />Each [KeywordSearchCount](/bingads/ad-insight-service/keywordsearchcount.md) contains an array of [SearchCountsByAttributes](/bingads/ad-insight-service/searchcountsbyattributes.md).  The array contains an item for each unique device specified in the request.|[KeywordSearchCount](keywordsearchcount.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

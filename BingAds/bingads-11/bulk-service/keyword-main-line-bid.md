@@ -10,7 +10,7 @@ description: Describes the Keyword Main Line Bid fields in a Bulk file.
 Defines a keyword's estimated main line bid that can be downloaded in a bulk file.
 
 ## <a name="keywordmainlinebid"></a>Keyword Main Line Bid Record
-For a *Keyword Main Line Bid* record, the following bulk fields are available for download. The keyword main line bid is equivalent to calling the [GetEstimatedBidByKeywordIds](/bingads/ad-insight-service/getestimatedbidbykeywordids.md) operation with the Ad Insight service, and specifying *MainLine* as the [TargetAdPosition](/bingads/ad-insight-service/targetadposition.md) value.
+For a *Keyword Main Line Bid* record, the following bulk fields are available for download. The keyword main line bid is equivalent to calling the [GetEstimatedBidByKeywordIds](/binga/bingads/ad-insight-service/getestimatedbidbykeywordids.md) operation with the Ad Insight service, and specifying *MainLine* as the [TargetAdPosition](/binga/bingads/ad-insight-service/targetadposition.md) value.
 
 |Column Header|Description|
 |-----------------|---------------|

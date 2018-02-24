@@ -15,7 +15,7 @@ Defines a geographic performance report request. Use this report to see where yo
 
 You can request impressions, clicks, spend, and average cost-per-click for each ad group, organized into columns that show the location used to serve ads.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](/bingads/reporting-service/submitgeneratereport.md) operation.
 
 ## Syntax
 ```xml

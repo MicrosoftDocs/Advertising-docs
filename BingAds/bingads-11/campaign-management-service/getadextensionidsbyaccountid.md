@@ -22,8 +22,8 @@ The *GetAdExtensionIdsByAccountIdRequest* object defines the [body](#request-bod
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the ad extensions to get.|**long**|
-|<a name="adextensiontype"></a>AdExtensionType|The types of ad extensions to get from the account. You can specify one or more types. For possible values, see [AdExtensionsTypeFilter](../campaign-management-service/adextensionstypefilter.md).|[AdExtensionsTypeFilter](adextensionstypefilter.md)|
-|<a name="associationtype"></a>AssociationType|A value that filters the extensions based on whether they?re associated with a specific entity type. For possible values, see [AssociationType](../campaign-management-service/associationtype.md).<br /><br /> To get all extensions including those not associated with any entity, set this element to NULL.|[AssociationType](associationtype.md)|
+|<a name="adextensiontype"></a>AdExtensionType|The types of ad extensions to get from the account. You can specify one or more types. For possible values, see [AdExtensionsTypeFilter](/bingads/campaign-management-service/adextensionstypefilter.md).|[AdExtensionsTypeFilter](adextensionstypefilter.md)|
+|<a name="associationtype"></a>AssociationType|A value that filters the extensions based on whether they?re associated with a specific entity type. For possible values, see [AssociationType](/bingads/campaign-management-service/associationtype.md).<br /><br /> To get all extensions including those not associated with any entity, set this element to NULL.|[AssociationType](associationtype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -35,7 +35,7 @@ The *GetAdExtensionIdsByAccountIdResponse* object defines the [body](#response-b
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adextensionids"></a>AdExtensionIds|A list of ad extension IDs. To get the extension, call the [GetAdExtensionsByIds](../campaign-management-service/getadextensionsbyids.md) operation.|**long** array|
+|<a name="adextensionids"></a>AdExtensionIds|A list of ad extension IDs. To get the extension, call the [GetAdExtensionsByIds](/bingads/campaign-management-service/getadextensionsbyids.md) operation.|**long** array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

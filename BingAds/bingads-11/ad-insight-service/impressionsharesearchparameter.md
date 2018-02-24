@@ -9,7 +9,7 @@ description: The impression share search parameter filter that you can include w
 # ImpressionShareSearchParameter Data Object - Ad Insight
 The impression share search parameter filter that you can include when requesting keyword ideas.
 
-If you do not include the impression share search parameter when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md), then keyword ideas will be returned regardless of impression share.
+If you do not include the impression share search parameter when calling [GetKeywordIdeas](/bingads/ad-insight-service/getkeywordideas.md), then keyword ideas will be returned regardless of impression share.
 
 ## Syntax
 ```xml

@@ -38,7 +38,7 @@ The *GetAccountsInfoResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accountsinfo"></a>AccountsInfo|An array of *AccountInfo* objects that identifies the list of accounts that the customer owns.<br /><br />To get the account data for an account in the list, access the *Id* element of the *AccountInfo* object and use it to call [GetAccount](../customer-management-service/getaccount.md).<br /><br />Note that there can be a delay of up to five minutes from the time that you add an account until the [GetAccountsInfo](../customer-management-service/getaccountsinfo.md) returns the account in the response.|[AccountInfo](accountinfo.md) array|
+|<a name="accountsinfo"></a>AccountsInfo|An array of *AccountInfo* objects that identifies the list of accounts that the customer owns.<br /><br />To get the account data for an account in the list, access the *Id* element of the *AccountInfo* object and use it to call [GetAccount](/bingads/customer-management-service/getaccount.md).<br /><br />Note that there can be a delay of up to five minutes from the time that you add an account until the [GetAccountsInfo](/bingads/customer-management-service/getaccountsinfo.md) returns the account in the response.|[AccountInfo](accountinfo.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

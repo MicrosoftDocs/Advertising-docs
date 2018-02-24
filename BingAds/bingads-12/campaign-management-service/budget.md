@@ -35,7 +35,7 @@ Say you have a budget of $20 to be used uniformly between two campaigns every da
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="amount"></a>Amount|The amount to spend daily across all campaigns that share the budget.<br/><br/>**Add:** Required<br/>**Update:** Optional|**decimal**|
-|<a name="associationcount"></a>AssociationCount|The number of [Campaign](../campaign-management-service/campaign.md) objects that currently share this budget.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**int**|
+|<a name="associationcount"></a>AssociationCount|The number of [Campaign](/bingads/campaign-management-service/campaign.md) objects that currently share this budget.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**int**|
 |<a name="budgettype"></a>BudgetType|The budget type determines the pace at which the budget is spent throughout the day.<br /><br />Possible values are *DailyBudgetAccelerated* and *DailyBudgetStandard*.<br/><br/>**Add:** Required<br/>**Update:** Optional|[BudgetLimitType](budgetlimittype.md)|
 |<a name="id"></a>Id|The unique Bing Ads identifier of the budget.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**long**|
 |<a name="name"></a>Name|The name of the budget. The name must be unique among all budgets within the account. The name can contain a maximum of 255 characters.<br /><br />The service performs a case-insensitive comparison when it compares the name to existing budget names.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|

@@ -11,7 +11,7 @@ description: Defines the field order of insertion orders returned using SearchIn
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines the field order of insertion orders returned using [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
+Defines the field order of insertion orders returned using [SearchInsertionOrders](/bingads/customer-billing-service/searchinsertionorders.md).
 
 ## Syntax
 ```xml

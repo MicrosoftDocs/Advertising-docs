@@ -15,7 +15,7 @@ dev_langs:
 # Creating a Batch Request Code Example
 This example shows how to create a batch request that can contain thousands of insert, get, and delete operations. 
 
-For information about the batch-related classes used by this example, see [Batch](../shopping-content/products-resource.md#batch), [Item](../shopping-content/products-resource.md#item), and [BatchItemError](../shopping-content/products-resource.md#batchitemerror). For information about using the batch feature, see [Using batch processing](../shopping-content/manage-products.md#batch).
+For information about the batch-related classes used by this example, see [Batch](/bingads/shopping-content/products-resource.md#batch), [Item](/bingads/shopping-content/products-resource.md#item), and [BatchItemError](/bingads/shopping-content/products-resource.md#batchitemerror). For information about using the batch feature, see [Using batch processing](/bingads/shopping-content/manage-products.md#batch).
 
 ```csharp
 using System;

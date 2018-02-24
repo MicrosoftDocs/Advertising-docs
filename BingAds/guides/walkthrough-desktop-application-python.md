@@ -84,7 +84,7 @@ if __name__ == '__main__':
     CLIENT_STATE="ClientStateGoesHere"
 
     # The directory for the bulk files.
-    FILE_DIRECTORY='c:/bulk-service/'
+    FILE_DIRECTORY='/bingads/bulk-service/'
 
     # The name of the bulk upload result file.
     RESULT_FILE_NAME='result.csv'

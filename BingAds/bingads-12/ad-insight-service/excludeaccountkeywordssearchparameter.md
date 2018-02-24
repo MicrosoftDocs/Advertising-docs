@@ -13,7 +13,7 @@ description: The exclude account keywords search parameter filter that you can i
 
 The exclude account keywords search parameter filter that you can include when requesting keyword ideas.
 
-If you do not include the exclude account keywords search parameter when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md), then keyword ideas will be returned whether or not they already exist in your account.
+If you do not include the exclude account keywords search parameter when calling [GetKeywordIdeas](/bingads/ad-insight-service/getkeywordideas.md), then keyword ideas will be returned whether or not they already exist in your account.
 
 ## Syntax
 ```xml

@@ -24,7 +24,7 @@ Defines an object that contains the keyword and a list of keyword categories tha
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword being categorized.|**string**|
-|<a name="keywordcategories"></a>KeywordCategories|An array of [KeywordCategory](../ad-insight-service/keywordcategory.md) objects that contains a keyword category and a score that indicates the confidence that the keyword belongs to that keyword category.|[KeywordCategory](keywordcategory.md) array|
+|<a name="keywordcategories"></a>KeywordCategories|An array of [KeywordCategory](/bingads/ad-insight-service/keywordcategory.md) objects that contains a keyword category and a score that indicates the confidence that the keyword belongs to that keyword category.|[KeywordCategory](keywordcategory.md) array|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

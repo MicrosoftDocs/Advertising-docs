@@ -45,7 +45,7 @@ The [StringRuleItem](stringruleitem.md) object derives from the [RuleItem](rulei
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|The type of rule item. For more information, see [RuleItem Data Object Remarks](../campaign-management-service/ruleitem.md#remarks).|**string**|
+|<a name="type"></a>Type|The type of rule item. For more information, see [RuleItem Data Object Remarks](/bingads/campaign-management-service/ruleitem.md#remarks).|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

@@ -13,7 +13,7 @@ description: Defines a campaign level product scope with list of conditions that
 
 Defines a campaign level product scope with list of conditions that help determine whether a product from the Bing Merchant Center store gets served as a product ad.
 
-The *ProductScope* criterion can only be included within [BiddableCampaignCriterion](../campaign-management-service/biddablecampaigncriterion.md). Also note that ad group level [ProductPartition](../campaign-management-service/productpartition.md) can be added to [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) and [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md). Duplicate or conflicting product conditions attempted within an ad group's [ProductPartition](../campaign-management-service/productpartition.md) group will be rejected by the [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md) operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level product scope.
+The *ProductScope* criterion can only be included within [BiddableCampaignCriterion](/bingads/campaign-management-service/biddablecampaigncriterion.md). Also note that ad group level [ProductPartition](/bingads/campaign-management-service/productpartition.md) can be added to [BiddableAdGroupCriterion](/bingads/campaign-management-service/biddableadgroupcriterion.md) and [NegativeAdGroupCriterion](/bingads/campaign-management-service/negativeadgroupcriterion.md). Duplicate or conflicting product conditions attempted within an ad group's [ProductPartition](/bingads/campaign-management-service/productpartition.md) group will be rejected by the [ApplyProductPartitionActions](/bingads/campaign-management-service/applyproductpartitionactions.md) operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level product scope.
 
 > [!TIP]
 > For an implementation overview, see the [Bing Shopping Campaigns](/bingads/guides/product-ads.md) technical guide.
@@ -46,7 +46,7 @@ The [ProductScope](productscope.md) object derives from the [Criterion](criterio
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|The type of the criterion. This value is *ProductScope* when you retrieve a product scope criterion. For more information about criterion types, see the [Criterion Data Object Remarks](../campaign-management-service/criterion.md#remarks).<br /><br />**Add:** Read-only<br/>**Update:** Read-only|**string**|
+|<a name="type"></a>Type|The type of the criterion. This value is *ProductScope* when you retrieve a product scope criterion. For more information about criterion types, see the [Criterion Data Object Remarks](/bingads/campaign-management-service/criterion.md#remarks).<br /><br />**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

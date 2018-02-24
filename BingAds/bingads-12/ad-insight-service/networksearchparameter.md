@@ -13,7 +13,7 @@ description: The network search parameter filter that you can include when reque
 
 The network search parameter filter that you can include when requesting keyword ideas.
 
-If you do not include the network search parameter when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md), then keyword ideas will be returned for all networks.
+If you do not include the network search parameter when calling [GetKeywordIdeas](/bingads/ad-insight-service/getkeywordideas.md), then keyword ideas will be returned for all networks.
 
 ## Syntax
 ```xml

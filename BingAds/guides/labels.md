@@ -20,19 +20,19 @@ The important thing is that it's all up to you. You decide what your labels mean
 ![Labels in the Bing Ads Web Application](/bingads/guides/media/labels-bing-ads-web-application.png "Labels in the Bing Ads Web Application")
 
 ## <a name="bulkservice"></a>Managing Labels with the Bulk Service
-You can use the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) i.e., [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md) to create, get, update, and delete both labels and label associations. 
+You can use the [Bulk Service](/binga/bingads/bulk-service/bulk-service-reference.md) i.e., [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md) to create, get, update, and delete both labels and label associations. 
 
 The following Bulk records are available for managing labels and label associations. 
 
--   [Label](/bingads/bulk-service/label.md)  
--   [Campaign Label](/bingads/bulk-service/campaign-label.md)  
--   [Ad Group Label](/bingads/bulk-service/ad-group-label.md)  
--   [Keyword Label](/bingads/bulk-service/keyword-label.md)  
--   [App Install Ad Label](/bingads/bulk-service/app-install-ad-label.md)  
--   [Dynamic Search Ad Label](/bingads/bulk-service/dynamic-search-ad-label.md)  
--   [Expanded Text Ad Label](/bingads/bulk-service/expanded-text-ad-label.md)  
--   [Product Ad Label](/bingads/bulk-service/product-ad-label.md)  
--   [Text Ad Label](/bingads/bulk-service/text-ad-label.md)  
+-   [Label](/binga/bingads/bulk-service/label.md)  
+-   [Campaign Label](/binga/bingads/bulk-service/campaign-label.md)  
+-   [Ad Group Label](/binga/bingads/bulk-service/ad-group-label.md)  
+-   [Keyword Label](/binga/bingads/bulk-service/keyword-label.md)  
+-   [App Install Ad Label](/binga/bingads/bulk-service/app-install-ad-label.md)  
+-   [Dynamic Search Ad Label](/binga/bingads/bulk-service/dynamic-search-ad-label.md)  
+-   [Expanded Text Ad Label](/binga/bingads/bulk-service/expanded-text-ad-label.md)  
+-   [Product Ad Label](/binga/bingads/bulk-service/product-ad-label.md)  
+-   [Text Ad Label](/binga/bingads/bulk-service/text-ad-label.md)  
 
 For example, the following Bulk CSV example would apply a label to the campaign, ad group, keyword, and expanded text ad if the valid *Id* and *Parent Id* are provided. 
 
@@ -47,19 +47,19 @@ Keyword Label,Active,-22,-11113,,,ClientIdGoesHere,,,,,
 ```
 
 ## <a name="campaignservice"></a>Managing Labels with the Campaign Management Service
-You can use the [Campaign Management Service](/bingads/campaign-management-service/campaign-management-service-reference.md) to create, get, update, and delete both labels and label associations. 
+You can use the [Campaign Management Service](/binga/bingads/campaign-management-service/campaign-management-service-reference.md) to create, get, update, and delete both labels and label associations. 
 
-You can add, delete, get, and update labels ([Label](/bingads/campaign-management-service/label.md) objects) with the corresponding operations.
--  [AddLabels](/bingads/campaign-management-service/addlabels.md)  
--  [DeleteLabels](/bingads/campaign-management-service/deletelabels.md)  
--  [GetLabelsByIds](/bingads/campaign-management-service/getlabelsbyids.md)  
--  [UpdateLabels](/bingads/campaign-management-service/updatelabels.md)  
+You can add, delete, get, and update labels ([Label](/binga/bingads/campaign-management-service/label.md) objects) with the corresponding operations.
+-  [AddLabels](/binga/bingads/campaign-management-service/addlabels.md)  
+-  [DeleteLabels](/binga/bingads/campaign-management-service/deletelabels.md)  
+-  [GetLabelsByIds](/binga/bingads/campaign-management-service/getlabelsbyids.md)  
+-  [UpdateLabels](/binga/bingads/campaign-management-service/updatelabels.md)  
 
-You can set, get, and delete label associations ([LabelAssociation](/bingads/campaign-management-service/labelassociation.md) objects) with the corresponding operations.
--  [DeleteLabelAssociations](/bingads/campaign-management-service/deletelabelassociations.md)  
--  [GetLabelAssociationsByEntityIds](/bingads/campaign-management-service/getlabelassociationsbyentityids.md)  
--  [GetLabelAssociationsByLabelIds](/bingads/campaign-management-service/getlabelassociationsbylabelids.md)  
--  [SetLabelAssociations](/bingads/campaign-management-service/setlabelassociations.md)  
+You can set, get, and delete label associations ([LabelAssociation](/binga/bingads/campaign-management-service/labelassociation.md) objects) with the corresponding operations.
+-  [DeleteLabelAssociations](/binga/bingads/campaign-management-service/deletelabelassociations.md)  
+-  [GetLabelAssociationsByEntityIds](/binga/bingads/campaign-management-service/getlabelassociationsbyentityids.md)  
+-  [GetLabelAssociationsByLabelIds](/binga/bingads/campaign-management-service/getlabelassociationsbylabelids.md)  
+-  [SetLabelAssociations](/binga/bingads/campaign-management-service/setlabelassociations.md)  
 
 
 

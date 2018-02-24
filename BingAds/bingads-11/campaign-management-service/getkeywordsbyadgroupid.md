@@ -22,7 +22,7 @@ The *GetKeywordsByAdGroupIdRequest* object defines the [body](#request-body) and
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that keywords are returned for.|**long**|
-|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [Keyword](../campaign-management-service/keyword.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[KeywordAdditionalField](keywordadditionalfield.md)|
+|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [Keyword](/bingads/campaign-management-service/keyword.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[KeywordAdditionalField](keywordadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -34,7 +34,7 @@ The *GetKeywordsByAdGroupIdResponse* object defines the [body](#response-body) a
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywords"></a>Keywords|An array of [Keyword](../campaign-management-service/keyword.md) objects that represents the retrieved keywords. If no keywords exist, an empty array is returned.|[Keyword](keyword.md) array|
+|<a name="keywords"></a>Keywords|An array of [Keyword](/bingads/campaign-management-service/keyword.md) objects that represents the retrieved keywords. If no keywords exist, an empty array is returned.|[Keyword](keyword.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

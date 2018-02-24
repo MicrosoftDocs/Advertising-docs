@@ -21,7 +21,7 @@ Ad extensions are stored in a shared library at the account level. After adding 
 
 Ad extensions that are associated at a lower level e.g., ad group will override ad extensions of the same type that are associated at a higher level e.g., campaign. For example if you have 2 callout extensions set for *Campaign A*, zero callout extensions associated with *Ad Group AA*, and one callout extension associated with *Ad Group AB*, then only *Ad Group AA* is eligible to have its ads decorated with callouts. 
 
-You can manage ad extensions with either the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) or [Campaign Management Service](/bingads/campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) if you need to upload or download a high volume of entity settings. For example you can update all ad extensions for your entire account in a single upload. In comparison, with the [Campaign Management Service](/bingads/campaign-management-service/campaign-management-service-reference.md) you can only update 100 ad extensions per call. For details see the following sections.
+You can manage ad extensions with either the [Bulk Service](/binga/bingads/bulk-service/bulk-service-reference.md) or [Campaign Management Service](/binga/bingads/campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](/binga/bingads/bulk-service/bulk-service-reference.md) if you need to upload or download a high volume of entity settings. For example you can update all ad extensions for your entire account in a single upload. In comparison, with the [Campaign Management Service](/binga/bingads/campaign-management-service/campaign-management-service-reference.md) you can only update 100 ad extensions per call. For details see the following sections.
 
 ## <a name="adextensiontypes"></a>Ad Extension Types
 Ad extension types include [App Extensions](#appextensions), [Call Extensions](#callextensions), [Callout Extensions](#calloutextensions), [Image Extensions](#imageextensions), [Location Extensions](#locationextensions), [Price Extensions](#priceextensions), [Review Extensions](#reviewextensions), [Sitelink Extensions](#sitelinkextensions), and [Structured Snippet Extensions](#structuredsnippetextensions).  
@@ -85,94 +85,94 @@ An ad will only include one structured snippet (one headline with 3 - 10 values)
 
 
 ## <a name="bulkservice"></a>Managing Ad Extensions with the Bulk Service
-You can use the [Bulk Service](/bingads/bulk-service/bulk-service-reference.md) i.e., [Bulk Download and Upload](bulk-download-upload.md) to create, get, update, and delete both ad extensions and ad extension associations. 
+You can use the [Bulk Service](/binga/bingads/bulk-service/bulk-service-reference.md) i.e., [Bulk Download and Upload](bulk-download-upload.md) to create, get, update, and delete both ad extensions and ad extension associations. 
 
 The following Bulk records are available for managing ad extensions and ad extension associations. 
 
 ### App Extensions
--   [App Ad Extension](/bingads/bulk-service/app-ad-extension.md)
--   [Ad Group App Ad Extension](/bingads/bulk-service/ad-group-app-ad-extension.md)
--   [Campaign App Ad Extension](/bingads/bulk-service/campaign-app-ad-extension.md)
+-   [App Ad Extension](/binga/bingads/bulk-service/app-ad-extension.md)
+-   [Ad Group App Ad Extension](/binga/bingads/bulk-service/ad-group-app-ad-extension.md)
+-   [Campaign App Ad Extension](/binga/bingads/bulk-service/campaign-app-ad-extension.md)
 
 ### Call Ad Extensions
--   [Call Ad Extension](/bingads/bulk-service/call-ad-extension.md)
--   [Campaign Call Ad Extension](/bingads/bulk-service/campaign-call-ad-extension.md)
+-   [Call Ad Extension](/binga/bingads/bulk-service/call-ad-extension.md)
+-   [Campaign Call Ad Extension](/binga/bingads/bulk-service/campaign-call-ad-extension.md)
 
 ### Callout Ad Extensions
--   [Callout Ad Extension](/bingads/bulk-service/callout-ad-extension.md)
--   [Ad Group Callout Ad Extension](/bingads/bulk-service/ad-group-callout-ad-extension.md)
--   [Campaign Callout Ad Extension](/bingads/bulk-service/campaign-callout-ad-extension.md)
+-   [Callout Ad Extension](/binga/bingads/bulk-service/callout-ad-extension.md)
+-   [Ad Group Callout Ad Extension](/binga/bingads/bulk-service/ad-group-callout-ad-extension.md)
+-   [Campaign Callout Ad Extension](/binga/bingads/bulk-service/campaign-callout-ad-extension.md)
 
 ### Image Ad Extensions
--   [Image Ad Extension](/bingads/bulk-service/image-ad-extension.md)
--   [Ad Group Image Ad Extension](/bingads/bulk-service/ad-group-image-ad-extension.md)
--   [Campaign Image Ad Extension](/bingads/bulk-service/campaign-image-ad-extension.md)
+-   [Image Ad Extension](/binga/bingads/bulk-service/image-ad-extension.md)
+-   [Ad Group Image Ad Extension](/binga/bingads/bulk-service/ad-group-image-ad-extension.md)
+-   [Campaign Image Ad Extension](/binga/bingads/bulk-service/campaign-image-ad-extension.md)
 
 ### Location Ad Extensions
--   [Location Ad Extension](/bingads/bulk-service/location-ad-extension.md)
--   [Campaign Location Ad Extension](/bingads/bulk-service/campaign-location-ad-extension.md)
+-   [Location Ad Extension](/binga/bingads/bulk-service/location-ad-extension.md)
+-   [Campaign Location Ad Extension](/binga/bingads/bulk-service/campaign-location-ad-extension.md)
 
 ### Price Ad Extensions
--   [Price Ad Extension](/bingads/bulk-service/price-ad-extension.md)
--   [Ad Group Price Ad Extension](/bingads/bulk-service/ad-group-price-ad-extension.md)
--   [Campaign Price Ad Extension](/bingads/bulk-service/campaign-price-ad-extension.md)
+-   [Price Ad Extension](/binga/bingads/bulk-service/price-ad-extension.md)
+-   [Ad Group Price Ad Extension](/binga/bingads/bulk-service/ad-group-price-ad-extension.md)
+-   [Campaign Price Ad Extension](/binga/bingads/bulk-service/campaign-price-ad-extension.md)
 
 ### Review Ad Extensions
--   [Review Ad Extension](/bingads/bulk-service/review-ad-extension.md)
--   [Ad Group Review Ad Extension](/bingads/bulk-service/ad-group-review-ad-extension.md)
--   [Campaign Review Ad Extension](/bingads/bulk-service/campaign-review-ad-extension.md)
+-   [Review Ad Extension](/binga/bingads/bulk-service/review-ad-extension.md)
+-   [Ad Group Review Ad Extension](/binga/bingads/bulk-service/ad-group-review-ad-extension.md)
+-   [Campaign Review Ad Extension](/binga/bingads/bulk-service/campaign-review-ad-extension.md)
 
 ### Sitelink2 Ad Extensions
--   [Sitelink2 Ad Extension](/bingads/bulk-service/sitelink2-ad-extension.md)
--   [Ad Group Sitelink2 Ad Extension](/bingads/bulk-service/ad-group-sitelink2-ad-extension.md)
--   [Campaign Sitelink2 Ad Extension](/bingads/bulk-service/campaign-sitelink2-ad-extension.md)
+-   [Sitelink2 Ad Extension](/binga/bingads/bulk-service/sitelink2-ad-extension.md)
+-   [Ad Group Sitelink2 Ad Extension](/binga/bingads/bulk-service/ad-group-sitelink2-ad-extension.md)
+-   [Campaign Sitelink2 Ad Extension](/binga/bingads/bulk-service/campaign-sitelink2-ad-extension.md)
 
 ### Structured Snippet Ad Extensions
--   [Structured Snippet Ad Extension](/bingads/bulk-service/structured-snippet-ad-extension.md)
--   [Ad Group Structured Snippet Ad Extension](/bingads/bulk-service/ad-group-structured-snippet-ad-extension.md)
--   [Campaign Structured Snippet Ad Extension](/bingads/bulk-service/campaign-structured-snippet-ad-extension.md)
+-   [Structured Snippet Ad Extension](/binga/bingads/bulk-service/structured-snippet-ad-extension.md)
+-   [Ad Group Structured Snippet Ad Extension](/binga/bingads/bulk-service/ad-group-structured-snippet-ad-extension.md)
+-   [Campaign Structured Snippet Ad Extension](/binga/bingads/bulk-service/campaign-structured-snippet-ad-extension.md)
 
 For code examples that show how to set up ad extensions using the Bulk service, see [Bulk Ad Extensions Code Example](/bingads/guides/code-example-bulk-ad-extensions.md).
 
 ## <a name="campaignservice"></a>Managing Ad Extensions with the Campaign Management Service
-You can use the [Campaign Management Service](/bingads/campaign-management-service/campaign-management-service-reference.md) to create, get, update, and delete both ad extensions and ad extension associations. 
+You can use the [Campaign Management Service](/binga/bingads/campaign-management-service/campaign-management-service-reference.md) to create, get, update, and delete both ad extensions and ad extension associations. 
 
 For code examples that show how to set up ad extensions using the Campaign Management service, see [Ad Extensions Code Example](/bingads/guides/code-example-ad-extensions.md).
 
 ### Entities
-These are the ad extension entities that can be accessed using the [Campaign Management Service](/bingads/campaign-management-service/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
+These are the ad extension entities that can be accessed using the [Campaign Management Service](/binga/bingads/campaign-management-service/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
 
--   [AppAdExtension](/bingads/campaign-management-service/appadextension.md)
--   [CallAdExtension](/bingads/campaign-management-service/calladextension.md)
--   [CalloutAdExtension](/bingads/campaign-management-service/calloutadextension.md)
--   [ImageAdExtension](/bingads/campaign-management-service/imageadextension.md)
--   [LocationAdExtension](/bingads/campaign-management-service/locationadextension.md)
--   [PriceAdExtension](/bingads/campaign-management-service/priceadextension.md)
--   [ReviewAdExtension](/bingads/campaign-management-service/reviewadextension.md)
--   [Sitelink2AdExtension](/bingads/campaign-management-service/sitelink2adextension.md)
--   [StructuredSnippetAdExtension](/bingads/campaign-management-service/structuredsnippetadextension.md)
+-   [AppAdExtension](/binga/bingads/campaign-management-service/appadextension.md)
+-   [CallAdExtension](/binga/bingads/campaign-management-service/calladextension.md)
+-   [CalloutAdExtension](/binga/bingads/campaign-management-service/calloutadextension.md)
+-   [ImageAdExtension](/binga/bingads/campaign-management-service/imageadextension.md)
+-   [LocationAdExtension](/binga/bingads/campaign-management-service/locationadextension.md)
+-   [PriceAdExtension](/binga/bingads/campaign-management-service/priceadextension.md)
+-   [ReviewAdExtension](/binga/bingads/campaign-management-service/reviewadextension.md)
+-   [Sitelink2AdExtension](/binga/bingads/campaign-management-service/sitelink2adextension.md)
+-   [StructuredSnippetAdExtension](/binga/bingads/campaign-management-service/structuredsnippetadextension.md)
 
 > [!NOTE]
-> The [AdExtension](/bingads/campaign-management-service/adextension.md) object is the base class from which all ad extensions are derived.
+> The [AdExtension](/binga/bingads/campaign-management-service/adextension.md) object is the base class from which all ad extensions are derived.
 
 ### Service Operations
-These are the [Campaign Management Service](/bingads/campaign-management-service/campaign-management-service-reference.md) service operations that can be used to add, get, update, and delete ad extensions.
+These are the [Campaign Management Service](/binga/bingads/campaign-management-service/campaign-management-service-reference.md) service operations that can be used to add, get, update, and delete ad extensions.
 
--   [AddAdExtensions](/bingads/campaign-management-service/addadextensions.md)  
--   [SetAdExtensionsAssociations](/bingads/campaign-management-service/setadextensionsassociations.md)  
--   [GetAdExtensionsByIds](/bingads/campaign-management-service/getadextensionsbyids.md)  
--   [GetAdExtensionIdsByAccountId](/bingads/campaign-management-service/getadextensionidsbyaccountid.md)  
--   [GetAdExtensionsAssociations](/bingads/campaign-management-service/getadextensionsassociations.md)  
--   [UpdateAdExtensions](/bingads/campaign-management-service/updateadextensions.md)
--   [DeleteAdExtensions](/bingads/campaign-management-service/deleteadextensions.md)  
--   [DeleteAdExtensionsAssociations](/bingads/campaign-management-service/deleteadextensionsassociations.md)
+-   [AddAdExtensions](/binga/bingads/campaign-management-service/addadextensions.md)  
+-   [SetAdExtensionsAssociations](/binga/bingads/campaign-management-service/setadextensionsassociations.md)  
+-   [GetAdExtensionsByIds](/binga/bingads/campaign-management-service/getadextensionsbyids.md)  
+-   [GetAdExtensionIdsByAccountId](/binga/bingads/campaign-management-service/getadextensionidsbyaccountid.md)  
+-   [GetAdExtensionsAssociations](/binga/bingads/campaign-management-service/getadextensionsassociations.md)  
+-   [UpdateAdExtensions](/binga/bingads/campaign-management-service/updateadextensions.md)
+-   [DeleteAdExtensions](/binga/bingads/campaign-management-service/deleteadextensions.md)  
+-   [DeleteAdExtensionsAssociations](/binga/bingads/campaign-management-service/deleteadextensionsassociations.md)
 
 > [!NOTE]
-> Partial update is not supported for ad extensions. Any optional elements which are not sent with the [UpdateAdExtensions](/bingads/campaign-management-service/updateadextensions.md) request will in effect be deleted from the extension.
+> Partial update is not supported for ad extensions. Any optional elements which are not sent with the [UpdateAdExtensions](/binga/bingads/campaign-management-service/updateadextensions.md) request will in effect be deleted from the extension.
 > 
 > Partial success is not supported when adding, updating, and deleting ad extensions. For example if you submit 10 ad extensions and 2 fail, the entire batch will fail.
 > 
-> Partial success is supported for [GetAdExtensionsAssociations](/bingads/campaign-management-service/getadextensionsassociations.md) and [SetAdExtensionsAssociations](/bingads/campaign-management-service/setadextensionsassociations.md). For example if you submit 10 ad extension associations and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](handle-service-errors-exceptions.md#partial-success).
+> Partial success is supported for [GetAdExtensionsAssociations](/binga/bingads/campaign-management-service/getadextensionsassociations.md) and [SetAdExtensionsAssociations](/binga/bingads/campaign-management-service/setadextensionsassociations.md). For example if you submit 10 ad extension associations and 2 fail, the remaining 8 will succeed. For more information, see [Partial Success using the Campaign Management Service](handle-service-errors-exceptions.md#partial-success).
 
 ## <a name="editorial"></a>Editorial Review
 When you associate an ad extension with a campaign or ad group, the extension goes through an initial editorial review. For more information, see [Ad Extension Editorial Review](editorial-review-appeals.md#adextensioneditorialreview).
@@ -180,11 +180,11 @@ When you associate an ad extension with a campaign or ad group, the extension go
 ## <a name="reporting"></a>Reporting
 You can use the following reports to get statistics about the effectiveness of the ad extensions that you've included in your ads.
 
--   [AdExtensionByAdReportRequest](/bingads/reporting-service/adextensionbyadreportrequest.md) - Aggregates performance data by ad for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
+-   [AdExtensionByAdReportRequest](/binga/bingads/reporting-service/adextensionbyadreportrequest.md) - Aggregates performance data by ad for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
 
--   [AdExtensionByKeywordReportRequest](/bingads/reporting-service/adextensionbykeywordreportrequest.md) - Aggregates performance data by keyword for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
+-   [AdExtensionByKeywordReportRequest](/binga/bingads/reporting-service/adextensionbykeywordreportrequest.md) - Aggregates performance data by keyword for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
 
--   [AdExtensionDetailReportRequest](/bingads/reporting-service/adextensiondetailreportrequest.md) - Lists all versions of an ad extension by account. You can use this information along with the performance data from the other two reports to determine which version performed better.
+-   [AdExtensionDetailReportRequest](/binga/bingads/reporting-service/adextensiondetailreportrequest.md) - Lists all versions of an ad extension by account. You can use this information along with the performance data from the other two reports to determine which version performed better.
 
 For more information about reporting, see [Reports](reports.md) and [Request and Download a Report](request-download-report.md).
 

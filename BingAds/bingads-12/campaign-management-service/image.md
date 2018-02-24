@@ -13,7 +13,7 @@ description: Defines an image object that can be added to an account's media lib
 
 Defines an image object that can be added to an account's media library.
 
-The *Image* object derives from the *Media* object. For a list of the inherited elements, see the [Media](../campaign-management-service/media.md) object.
+The *Image* object derives from the *Media* object. For a list of the inherited elements, see the [Media](/bingads/campaign-management-service/media.md) object.
 
 ## Syntax
 ```xml
@@ -44,8 +44,8 @@ The [Image](image.md) object derives from the [Media](media.md) object, and inhe
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The unique Bing Ads identifier of the media.|**long**|
-|<a name="mediatype"></a>MediaType|The media type. For more information about media types, see the [Media Data Object Remarks](../campaign-management-service/media.md#remarks).|**string**|
-|<a name="type"></a>Type|The type of media to add to the library.<br /><br />For media that will be used with a [LocationAdExtension](../campaign-management-service/locationadextension.md), the supported values are *Icon* and *Image*.<br /><br />For media that will be used with an [ImageAdExtension](../campaign-management-service/imageadextension.md), the supported values are *Image16x9*, *Image15x10*, *Image4x3*, and *Image12x10*.<br /><br />For more information about supported aspect ratios, see the [Remarks](#remarks) section below.|**string**|
+|<a name="mediatype"></a>MediaType|The media type. For more information about media types, see the [Media Data Object Remarks](/bingads/campaign-management-service/media.md#remarks).|**string**|
+|<a name="type"></a>Type|The type of media to add to the library.<br /><br />For media that will be used with a [LocationAdExtension](/bingads/campaign-management-service/locationadextension.md), the supported values are *Icon* and *Image*.<br /><br />For media that will be used with an [ImageAdExtension](/bingads/campaign-management-service/imageadextension.md), the supported values are *Image16x9*, *Image15x10*, *Image4x3*, and *Image12x10*.<br /><br />For more information about supported aspect ratios, see the [Remarks](#remarks) section below.|**string**|
 
 ## <a name="remarks"></a>Remarks
 The following MIME types are supported for the *Data* element of the *Image* data object.

@@ -18,7 +18,7 @@ Create an app install ad if your intention is to drive app downloads, and not ne
 
 ## <a name="bulk"></a>Bulk API for App Install Ads
 The following Bulk record is available for managing app install ads.
-* [App Install Ad](/bingads/bulk-service/app-install-ad.md)
+* [App Install Ad](/binga/bingads/bulk-service/app-install-ad.md)
 
 ## <a name="campaign"></a>Campaign Management API for App Install Ads
-The [AppInstallAd](/bingads/campaign-management-service/appinstallad.md) object is derived from the [Ad](/bingads/campaign-management-service/ad.md) base class and can be managed with any of the ad operations e.g. [AddAds](/bingads/campaign-management-service/addads.md), [DeleteAds](/bingads/campaign-management-service/deleteads.md), [GetAdsByAdGroupId](/bingads/campaign-management-service/getadsbyadgroupid.md), and [UpdateAds](/bingads/campaign-management-service/updateads.md). 
+The [AppInstallAd](/binga/bingads/campaign-management-service/appinstallad.md) object is derived from the [Ad](/binga/bingads/campaign-management-service/ad.md) base class and can be managed with any of the ad operations e.g. [AddAds](/binga/bingads/campaign-management-service/addads.md), [DeleteAds](/binga/bingads/campaign-management-service/deleteads.md), [GetAdsByAdGroupId](/binga/bingads/campaign-management-service/getadsbyadgroupid.md), and [UpdateAds](/binga/bingads/campaign-management-service/updateads.md). 

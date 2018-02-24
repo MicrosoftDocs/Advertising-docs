@@ -11,7 +11,7 @@ description: Determines which properties of the KeywordIdea object you want retu
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Determines which properties of the [KeywordIdea](../ad-insight-service/keywordidea.md) object you want returned when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.
+Determines which properties of the [KeywordIdea](/bingads/ad-insight-service/keywordidea.md) object you want returned when calling the [GetKeywordIdeas](/bingads/ad-insight-service/getkeywordideas.md) operation.
 
 ## Syntax
 ```xml

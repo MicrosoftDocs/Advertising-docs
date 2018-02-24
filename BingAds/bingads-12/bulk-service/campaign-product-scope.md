@@ -12,7 +12,7 @@ dev_langs:
 Defines a campaign's set of product conditions that can be uploaded and downloaded in a bulk file.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Campaign Product Scope* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For an *Campaign Product Scope* record, the following attribute fields are available in the [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md). 
 
 - [Campaign](#campaign)
 - [Client Id](#clientid)
@@ -35,7 +35,7 @@ For an *Campaign Product Scope* record, the following attribute fields are avail
 - [Product Value 7](#productvalue7)
 - [Status](#status)
 
-You can download all fields of the *Campaign Product Scope* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignProductScopes* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Campaign Product Scope* record by including the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value of *CampaignProductScopes* in the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](/bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new campaign product scope given a valid campaign ID (*Parent Id*). 
 
@@ -145,9 +145,9 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The system generated identifier of the campaign that contains the product scope.
 
-This bulk field maps to the *Id* field of the [Campaign](../bulk-service/campaign.md) record.
+This bulk field maps to the *Id* field of the [Campaign](/bingads/bulk-service/campaign.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new product scopes to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](/bingads/bulk-service/campaign.md) record. This is recommended if you are adding new product scopes to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/binga/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only  
 **Delete:** Read-only  
 

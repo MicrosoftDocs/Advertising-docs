@@ -196,7 +196,7 @@ description: Bing Ads API documentation home.
                     <a href="#contentapi">Content API</a>
                     <ul id="contentapi" class="cardsC">
                         <li>
-                            <a href="/bingads/shopping-content/">
+                            <a href="/binga/bingads/shopping-content/">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -215,7 +215,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/shopping-content/get-started">
+                            <a href="/binga/bingads/shopping-content/get-started">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -234,7 +234,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/shopping-content/manage-products">
+                            <a href="/binga/bingads/shopping-content/manage-products">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -253,7 +253,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li> 
                         <li>
-                            <a href="/bingads/shopping-content/manage-catalogs">
+                            <a href="/binga/bingads/shopping-content/manage-catalogs">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -272,7 +272,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>                
                         <li>
-                            <a href="/bingads/shopping-content/code-examples">
+                            <a href="/binga/bingads/shopping-content/code-examples">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -291,7 +291,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/shopping-content/reference">
+                            <a href="/binga/bingads/shopping-content/reference">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">

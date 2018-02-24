@@ -11,7 +11,7 @@ description: Defines the attributes and performance statistics columns that you 
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines the attributes and performance statistics columns that you can include in the [ProductPartitionUnitPerformanceReportRequest](../reporting-service/productpartitionunitperformancereportrequest.md).
+Defines the attributes and performance statistics columns that you can include in the [ProductPartitionUnitPerformanceReportRequest](/bingads/reporting-service/productpartitionunitperformancereportrequest.md).
 
 The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](/bingads/guides/reports.md#columnsdata).
 

@@ -17,7 +17,7 @@ dev_langs:
 # Managing Products Code Example
 This example shows how to get, add, update, and delete products in the specified store.  
 
-For information about the product-related classes used by this example, see [Products](../shopping-content/products-resource.md#products) and [Product](../shopping-content/products-resource.md#product).
+For information about the product-related classes used by this example, see [Products](/bingads/shopping-content/products-resource.md#products) and [Product](/bingads/shopping-content/products-resource.md#product).
 
 ```csharp
 using System;

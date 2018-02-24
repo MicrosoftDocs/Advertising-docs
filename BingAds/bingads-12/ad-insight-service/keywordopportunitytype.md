@@ -11,7 +11,7 @@ description: Defines the possible keyword opportunity types you can request when
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines the possible keyword opportunity types you can request when calling [GetKeywordOpportunities](../ad-insight-service/getkeywordopportunities.md).
+Defines the possible keyword opportunity types you can request when calling [GetKeywordOpportunities](/bingads/ad-insight-service/getkeywordopportunities.md).
 
 ## Syntax
 ```xml

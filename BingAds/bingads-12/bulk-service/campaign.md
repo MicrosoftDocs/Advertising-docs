@@ -12,7 +12,7 @@ dev_langs:
 Defines a campaign that can be uploaded and downloaded in a bulk file. 
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Campaign* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For a *Campaign* record, the following attribute fields are available in the [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md). 
 
 |Column Header|Supported Campaign Types|
 |-----------------|---------------|
@@ -41,7 +41,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Tracking Template](#trackingtemplate)|All|
 |[Website](#website)|DynamicSearchAds|
 
-You can download all fields of the *Campaign* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *Campaigns* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Campaign* record by including the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value of *Campaigns* in the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](/bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add one campaign of each type i.e. Search and Content, Shopping, and Dynamic Search Ads campaign. 
 
@@ -218,11 +218,11 @@ The target cost per acquisition (CPA) that you want used by Bing Ads to maximize
 ### <a name="bidstrategytype"></a>Bid Strategy Type
 The bid strategy type for how you want to manage your bids. 
 
-A bid strategy type set at the [Ad Group](../bulk-service/ad-group.md) or [Keyword](../bulk-service/keyword.md) level will take precedence over the campaign level bid strategy type. 
+A bid strategy type set at the [Ad Group](/bingads/bulk-service/ad-group.md) or [Keyword](/bingads/bulk-service/keyword.md) level will take precedence over the campaign level bid strategy type. 
 
 For campaigns you can use any of the following bid strategy types. 
 *  *EnhancedCpc* - Use the enhanced CPC bid strategy type to set your ad group and keyword bids, and Bing Ads will automatically adjust your bids in real time so that you bid up to 30% higher on users that are more likely to convert and up to 100% less on users less likely to convert. Bing Ads will still respect your campaign budget limit.  
-*  *ManualCpc* - This is the default bid strategy type for your campaigns. Use the manual CPC bid strategy type if you will set your [Ad Group](../bulk-service/ad-group.md) or [Keyword](../bulk-service/keyword.md) bids, and Bing Ads will use these bids every time.  
+*  *ManualCpc* - This is the default bid strategy type for your campaigns. Use the manual CPC bid strategy type if you will set your [Ad Group](/bingads/bulk-service/ad-group.md) or [Keyword](/bingads/bulk-service/keyword.md) bids, and Bing Ads will use these bids every time.  
 
 If you are signed up to pilot one or more of the auto bid strategy types, then you can also use the corresponding bid strategy type value:  
 
@@ -266,12 +266,12 @@ In the context of shared budgets, the budget amount is a read-only property that
 **Delete:** Read-only  
 
 ### <a name="budgetid"></a>Budget Id
-The system generated identifier of the [Budget](../bulk-service/budget.md) that this campaign shares with other campaigns in the account.
+The system generated identifier of the [Budget](/bingads/bulk-service/budget.md) that this campaign shares with other campaigns in the account.
 
 If the field is empty, then the campaign is not using a shared budget. If the field is not empty and the value is greater than zero, then the campaign is using a shared budget. If the campaign is using a shared budget, and you prefer that it use its own budget amount, set this element to '0' (zero) and set the *Budget* field to a valid budget amount.
 
 > [!NOTE]
-> This value corresponds to the *Id* column of the [Budget](../bulk-service/budget.md) record.
+> This value corresponds to the *Id* column of the [Budget](/bingads/bulk-service/budget.md) record.
 	
 **Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -280,7 +280,7 @@ If the field is empty, then the campaign is not using a shared budget. If the fi
 ### <a name="budgetname"></a>Budget Name
 The name of the shared budget.
 
-This value corresponds to the *Budget Name* column of the [Budget](../bulk-service/budget.md) record. You can only set this value using the [Budget](../bulk-service/budget.md) record.
+This value corresponds to the *Budget Name* column of the [Budget](/bingads/bulk-service/budget.md) record. You can only set this value using the [Budget](/bingads/bulk-service/budget.md) record.
 
 **Add:** Read-only  
 **Update:** Read-only    
@@ -337,7 +337,7 @@ For example, the following country code values are supported.
 * *FR* - France
 * *US* - United States
 
-To get the current list of supported country codes use the [GetBSCCountries](/bingads/campaign-management-service/getbsccountries.md) operation via the Campaign Management service.
+To get the current list of supported country codes use the [GetBSCCountries](/binga/bingads/campaign-management-service/getbsccountries.md) operation via the Campaign Management service.
 
 **Add:** Required if the *Campaign Type* field is set to *Shopping*. You cannot include this column for other campaign types.  
 **Update:** Read-only    
@@ -375,7 +375,7 @@ Currently the only supported language code is *EN*.
 ### <a name="id"></a>Id
 The system generated identifier of the campaign.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the campaign can then be referenced in the *Parent Id* field of dependent record types such as ad groups or criterion. This is recommended if you are adding new campaigns and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the campaign can then be referenced in the *Parent Id* field of dependent record types such as ad groups or criterion. This is recommended if you are adding new campaigns and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/binga/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -388,7 +388,7 @@ The campaign languages.
 For possible values, see the Language column within [Ad Languages](/bingads/guides/ad-languages.md). Each language in the bulk field is delimited by a semicolon and space ("; "), for example *English; French; German*. You can specify multiple languages individually in the list, or only include one string in this field set to *All* if you want to target all languages.
 
 > [!IMPORTANT]
-> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](/bingads/customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. More specific dates and implementation details will be provided later through the [Bing Ads API Blog](https://blogs.msdn.microsoft.com/bing_ads_api/), and in the meantime you should update your application right away to support the change. Also note that as a one time migration when the customer is added to pilot, campaign languages are set to the union of all individual ad group languages. For example if you have three ad groups with language set to *English*, *German*, and *French*, then at the time of pilot enablement this campaign's languages will be set to a list including *English*, *German*, and *French*. 
+> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](/binga/bingads/customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. More specific dates and implementation details will be provided later through the [Bing Ads API Blog](https://blogs.msdn.microsoft.com/bing_ads_api/), and in the meantime you should update your application right away to support the change. Also note that as a one time migration when the customer is added to pilot, campaign languages are set to the union of all individual ad group languages. For example if you have three ad groups with language set to *English*, *German*, and *French*, then at the time of pilot enablement this campaign's languages will be set to a list including *English*, *German*, and *French*. 
 
 **Add:** Optional. If there is no campaign language set, then the language of each ad group within the campaign will be required.   
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. Once campaign languages are set, you cannot delete all of them. The list of languages that you specify during update replaces the previous settings i.e. does not append to the existing set of languages.  
@@ -418,7 +418,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The system generated identifier of the account that contains the campaign.
 
-This bulk field maps to the *Id* field of the [Account](../bulk-service/account.md) record.
+This bulk field maps to the *Id* field of the [Account](/bingads/bulk-service/account.md) record.
 
 **Add:** Read-only and Required  
 **Update:** Read-only and Required  
@@ -429,7 +429,7 @@ Helps determine which Bing Shopping campaign serves ads, in the event that two o
 
 You must specify one of the supported values: 0, 1, or 2. The higher numbers are given higher priority.
 
-If two shopping campaigns use the product catalog feed from same Bing Merchant Center store, then  ads will be delivered for the [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md) with the highest bid.
+If two shopping campaigns use the product catalog feed from same Bing Merchant Center store, then  ads will be delivered for the [Ad Group Product Partition](/bingads/bulk-service/ad-group-product-partition.md) with the highest bid.
 
 > [!NOTE]
 > If you create a Bing Shopping campaign in the Bing Ads web application, the default priority selected is "Low" which is the equivalent of '0'.
@@ -450,7 +450,7 @@ Possible values are *Active*, *Paused*, and *Deleted*.
 ### <a name="storeid"></a>Store Id
 The unique identifier for the Bing Merchant Center store that your product catalog feed belongs to.
 
-To get your store identifiers, call the [GetBMCStoresByCustomerId](/bingads/campaign-management-service/getbmcstoresbycustomerid.md) operation.
+To get your store identifiers, call the [GetBMCStoresByCustomerId](/binga/bingads/campaign-management-service/getbmcstoresbycustomerid.md) operation.
 
 **Add:** Required if the *Campaign Type* field is set to *Shopping*. You cannot include this column for other campaign types.  
 **Update:** Read-only  
@@ -495,7 +495,7 @@ The length of the string is limited to 2,048 characters. If the domain name incl
 
 
 ## <a name="entityperformancedata"></a>Performance Data Fields in the Bulk File
-If the [DataScope Value Set](../bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
+If the [DataScope Value Set](/bingads/bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
 
 |Column Header|Description|
 |-----------------|---------------|
@@ -510,7 +510,7 @@ If the [DataScope Value Set](../bulk-service/datascope.md) element of the downlo
 |*CPA*|The cost per conversion. The formula for calculating the cost per conversion is *(Spend / Conversions)*.<br/><br/>Only ads in campaigns that enable conversion tracking contribute to the conversion number, so unless all campaigns in the account enable conversion tracking, the number will not be accurate.|
 
 ## <a name="qualityscore"></a>Quality Score Fields in the Bulk File
-If the [DataScope Value Set](../bulk-service/datascope.md) element of the download request includes *QualityScore*, the download file will also include the following fields in this record.
+If the [DataScope Value Set](/bingads/bulk-service/datascope.md) element of the download request includes *QualityScore*, the download file will also include the following fields in this record.
 
 |Column Header|Description|
 |-----------------|---------------|

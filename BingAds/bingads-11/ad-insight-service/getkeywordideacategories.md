@@ -14,7 +14,7 @@ dev_langs:
 # GetKeywordIdeaCategories Service Operation - Ad Insight
 Gets the list of keyword idea categories.
 
-You can use the *CategoryId* element of a [KeywordCategory](../ad-insight-service/keywordcategory.md) as a part of the [CategorySearchParameter](../ad-insight-service/categorysearchparameter.md) when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.
+You can use the *CategoryId* element of a [KeywordCategory](/bingads/ad-insight-service/keywordcategory.md) as a part of the [CategorySearchParameter](/bingads/ad-insight-service/categorysearchparameter.md) when calling the [GetKeywordIdeas](/bingads/ad-insight-service/getkeywordideas.md) operation.
 
 ## <a name="request"></a>Request Elements
 The *GetKeywordIdeaCategoriesRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

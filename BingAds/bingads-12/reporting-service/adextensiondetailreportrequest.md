@@ -15,7 +15,7 @@ Defines an ad extension detail report request. Use this report to discover the e
 
 You can request impressions, clicks, spend, and average cost per click of individual extension items. This data can be sorted by the individual ad extension display name, ad extension ID, and ad extension type.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](/bingads/reporting-service/submitgeneratereport.md) operation.
 
 > [!NOTE]
 > You should not use this report to get performance data for Bing Shopping campaigns. It is only applicable for other campaign types.

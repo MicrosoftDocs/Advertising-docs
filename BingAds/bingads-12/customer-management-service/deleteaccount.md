@@ -29,7 +29,7 @@ The *DeleteAccountRequest* object defines the [body](#request-body) and [header]
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account to delete.|**long**|
-|<a name="timestamp"></a>TimeStamp|The time-stamp value that the operation uses to reconcile the update. You must call  [GetAccount](../customer-management-service/getaccount.md) to get the time-stamp value. The delete operation fails if the account object has a time-stamp value that differs from the one that you pass.|**base64Binary**|
+|<a name="timestamp"></a>TimeStamp|The time-stamp value that the operation uses to reconcile the update. You must call  [GetAccount](/bingads/customer-management-service/getaccount.md) to get the time-stamp value. The delete operation fails if the account object has a time-stamp value that differs from the one that you pass.|**base64Binary**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

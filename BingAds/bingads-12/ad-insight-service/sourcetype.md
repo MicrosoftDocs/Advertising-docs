@@ -13,7 +13,7 @@ description: Defines the source or seed for the keyword idea.
 
 Defines the source or seed for the keyword idea. 
 
-You can request that the source be returned in the [KeywordIdea](../ad-insight-service/keywordidea.md) object when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.
+You can request that the source be returned in the [KeywordIdea](/bingads/ad-insight-service/keywordidea.md) object when calling the [GetKeywordIdeas](/bingads/ad-insight-service/getkeywordideas.md) operation.
 
 ## Syntax
 ```xml

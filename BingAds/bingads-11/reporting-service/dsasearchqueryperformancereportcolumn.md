@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the DSASearchQueryPerformanceReportRequest.
 ---
 # DSASearchQueryPerformanceReportColumn Value Set - Reporting
-Defines the attributes and performance statistics columns that you can include in the [DSASearchQueryPerformanceReportRequest](../reporting-service/dsasearchqueryperformancereportrequest.md).
+Defines the attributes and performance statistics columns that you can include in the [DSASearchQueryPerformanceReportRequest](/bingads/reporting-service/dsasearchqueryperformancereportrequest.md).
 
 The report will include data only for search terms that resulted in a significant number of clicks in the last 30 days.
 

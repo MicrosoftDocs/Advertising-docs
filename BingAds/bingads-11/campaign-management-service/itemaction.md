@@ -42,9 +42,9 @@ Defines the possible types of item actions, for example to add, delete, or updat
 
 |Value|Description|
 |-----------|---------------|
-|<a name="add"></a>Add|The requested action is to add the item, for example add the [ProductPartition](../campaign-management-service/productpartition.md).|
-|<a name="delete"></a>Delete|The requested action is to delete the item, for example delete the [ProductPartition](../campaign-management-service/productpartition.md).|
-|<a name="update"></a>Update|The requested action is to update the item, for example update the [ProductPartition](../campaign-management-service/productpartition.md).|
+|<a name="add"></a>Add|The requested action is to add the item, for example add the [ProductPartition](/bingads/campaign-management-service/productpartition.md).|
+|<a name="delete"></a>Delete|The requested action is to delete the item, for example delete the [ProductPartition](/bingads/campaign-management-service/productpartition.md).|
+|<a name="update"></a>Update|The requested action is to update the item, for example update the [ProductPartition](/bingads/campaign-management-service/productpartition.md).|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

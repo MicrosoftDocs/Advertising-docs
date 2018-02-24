@@ -40,12 +40,12 @@ If your catalog is small, or you have a limited ability to integrate with your i
 
 |Topic|Description|
 |---------|---------------|
-|[Release Notes](../shopping-content/release-notes.md)|Describes changes to the Bing Ads Content API for each release.|
-|[Get Started](../shopping-content/get-started.md)|Provides the steps for getting started using the Bing Ads Content API.|
-|[Testing your Code in Sandbox](../shopping-content/test-code-sandbox.md)|Provides options for testing your app before releasing it into production.|
-|[API Best Practices](../shopping-content/api-best-practices.md)|Provides best practices for using the Bing Ads Content API.|
-|[Managing your Products](../shopping-content/manage-products.md)|Provides details for how to use the [Products](../shopping-content/products-resource.md) resource to add, get, update, and delete product offers.|
-|[Managing your Catalogs](../shopping-content/manage-catalogs.md)|Provides details for how to use the [Catalogs](../shopping-content/catalogs-resource.md) resource to add, get, update, and delete API enabled catalogs.|
-|[How Do I Get the Status of Product Offers?](../shopping-content/how-get-status-product-offers.md)|Provides details for how to use the [Status](../shopping-content/catalogs-resource.md) resource to get the status of product offers in a catalog.|
-|[Code Examples](../shopping-content/code-examples.md)|Provides C# code examples that show how to use Bing Ads Content API resources.|
-|[Content API Reference](../shopping-content/reference.md)|Provides details about the programming elements of the Bing Ads Content API.|
+|[Release Notes](/bingads/shopping-content/release-notes.md)|Describes changes to the Bing Ads Content API for each release.|
+|[Get Started](/bingads/shopping-content/get-started.md)|Provides the steps for getting started using the Bing Ads Content API.|
+|[Testing your Code in Sandbox](/bingads/shopping-content/test-code-sandbox.md)|Provides options for testing your app before releasing it into production.|
+|[API Best Practices](/bingads/shopping-content/api-best-practices.md)|Provides best practices for using the Bing Ads Content API.|
+|[Managing your Products](/bingads/shopping-content/manage-products.md)|Provides details for how to use the [Products](/bingads/shopping-content/products-resource.md) resource to add, get, update, and delete product offers.|
+|[Managing your Catalogs](/bingads/shopping-content/manage-catalogs.md)|Provides details for how to use the [Catalogs](/bingads/shopping-content/catalogs-resource.md) resource to add, get, update, and delete API enabled catalogs.|
+|[How Do I Get the Status of Product Offers?](/bingads/shopping-content/how-get-status-product-offers.md)|Provides details for how to use the [Status](/bingads/shopping-content/catalogs-resource.md) resource to get the status of product offers in a catalog.|
+|[Code Examples](/bingads/shopping-content/code-examples.md)|Provides C# code examples that show how to use Bing Ads Content API resources.|
+|[Content API Reference](/bingads/shopping-content/reference.md)|Provides details about the programming elements of the Bing Ads Content API.|

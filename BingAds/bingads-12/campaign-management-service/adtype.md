@@ -32,13 +32,13 @@ Defines the type of ad.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="appinstall"></a>AppInstall|Refers to an [AppInstallAd](../campaign-management-service/appinstallad.md).|
-|<a name="dynamicsearch"></a>DynamicSearch|Refers to a [DynamicSearchAd](../campaign-management-service/dynamicsearchad.md).|
-|<a name="expandedtext"></a>ExpandedText|Refers to an [ExpandedTextAd](../campaign-management-service/expandedtextad.md).|
+|<a name="appinstall"></a>AppInstall|Refers to an [AppInstallAd](/bingads/campaign-management-service/appinstallad.md).|
+|<a name="dynamicsearch"></a>DynamicSearch|Refers to a [DynamicSearchAd](/bingads/campaign-management-service/dynamicsearchad.md).|
+|<a name="expandedtext"></a>ExpandedText|Refers to an [ExpandedTextAd](/bingads/campaign-management-service/expandedtextad.md).|
 |<a name="image"></a>Image|Reserved for future use.|
-|<a name="product"></a>Product|Refers to a [ProductAd](../campaign-management-service/productad.md).|
+|<a name="product"></a>Product|Refers to a [ProductAd](/bingads/campaign-management-service/productad.md).|
 |<a name="responsivead"></a>ResponsiveAd|Reserved.|
-|<a name="text"></a>Text|Refers to a [TextAd](../campaign-management-service/textad.md).|
+|<a name="text"></a>Text|Refers to a [TextAd](/bingads/campaign-management-service/textad.md).|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

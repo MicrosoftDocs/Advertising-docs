@@ -11,7 +11,7 @@ description: Defines a list of optional Audience properties that you can request
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines a list of optional [Audience](../campaign-management-service/audience.md) properties that you can request when calling [GetAudiencesByIds](../campaign-management-service/getaudiencesbyids.md). This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding propertys will be included in the [Audience](../campaign-management-service/audience.md) object by default.
+Defines a list of optional [Audience](/bingads/campaign-management-service/audience.md) properties that you can request when calling [GetAudiencesByIds](/bingads/campaign-management-service/getaudiencesbyids.md). This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding propertys will be included in the [Audience](/bingads/campaign-management-service/audience.md) object by default.
 
 ## Syntax
 ```xml
@@ -30,7 +30,7 @@ Defines a list of optional [Audience](../campaign-management-service/audience.md
 
 |Value|Description|
 |-----------|---------------|
-|<a name="searchsize"></a>SearchSize|Request that the *SearchSize* element be included within each returned [Audience](../campaign-management-service/audience.md) object.|
+|<a name="searchsize"></a>SearchSize|Request that the *SearchSize* element be included within each returned [Audience](/bingads/campaign-management-service/audience.md) object.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

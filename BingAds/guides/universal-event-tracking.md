@@ -28,10 +28,10 @@ Before you can track conversions or target audiences using a remarketing list, y
 > [!NOTE]
 > For each of the operations described in this section, you must specify the customer identifier in the *CustomerId* header element. 
 
-1. First you should call the [GetUetTagsByIds](/bingads/campaign-management-service/getuettagsbyids.md) operation to check whether a tag has already been created. You can leave the *TagIds* element null or empty to request all UET tags available for the customer.
-2. You can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2). If you do not already have a UET tag that can be used, or if you need another UET tag, call the [AddUetTags](/bingads/campaign-management-service/adduettags.md) service operation to create a new UET tag. If the call is successful, the tracking script that you should add to your website is included in a corresponding [UetTag](/bingads/campaign-management-service/uettag.md) within the response message. Later as needed you can update the name and description of a [UetTag](/bingads/campaign-management-service/uettag.md) with the [UpdateUetTags](/bingads/campaign-management-service/updateuettags.md) operation.
+1. First you should call the [GetUetTagsByIds](/binga/bingads/campaign-management-service/getuettagsbyids.md) operation to check whether a tag has already been created. You can leave the *TagIds* element null or empty to request all UET tags available for the customer.
+2. You can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2). If you do not already have a UET tag that can be used, or if you need another UET tag, call the [AddUetTags](/binga/bingads/campaign-management-service/adduettags.md) service operation to create a new UET tag. If the call is successful, the tracking script that you should add to your website is included in a corresponding [UetTag](/binga/bingads/campaign-management-service/uettag.md) within the response message. Later as needed you can update the name and description of a [UetTag](/binga/bingads/campaign-management-service/uettag.md) with the [UpdateUetTags](/binga/bingads/campaign-management-service/updateuettags.md) operation.
 
-After you retreive the tracking script from the [AddUetTags](/bingads/campaign-management-service/adduettags.md) or [GetUetTagsByIds](/bingads/campaign-management-service/getuettagsbyids.md) operation, the next step is to add the UET tag tracking code to your website. We recommend that you, or your website administrator, add it to your entire website in either the head or body sections. If your website has a master page, then that is the best place to add it because you add it once and it is included on all pages. For more information, see [How do I add the UET tag to my website?](http://help.bingads.microsoft.com/#apex/3/en/56688/2-500) 
+After you retreive the tracking script from the [AddUetTags](/binga/bingads/campaign-management-service/adduettags.md) or [GetUetTagsByIds](/binga/bingads/campaign-management-service/getuettagsbyids.md) operation, the next step is to add the UET tag tracking code to your website. We recommend that you, or your website administrator, add it to your entire website in either the head or body sections. If your website has a master page, then that is the best place to add it because you add it once and it is included on all pages. For more information, see [How do I add the UET tag to my website?](http://help.bingads.microsoft.com/#apex/3/en/56688/2-500) 
 
 Depending on what you want to do, either set up [conversion tracking](#conversiongoals) or [remarketing in paid search](#remarketing).
 
@@ -43,21 +43,21 @@ However, not all actions are created equal. You probably have a subset of action
 
 ### <a name="conversiongoals-campaign"></a>Conversion Goal Campaign Management APIs
 
-There are five types of conversion goals. The [ConversionGoal](/bingads/campaign-management-service/conversiongoal.md) is the base class from which all goals are derived. 
-* [AppInstallGoal](/bingads/campaign-management-service/appinstallgoal.md)
-* [DurationGoal](/bingads/campaign-management-service/durationgoal.md)
-* [EventGoal](/bingads/campaign-management-service/eventgoal.md)
-* [InStoreTransactionGoal](/bingads/campaign-management-service/instoretransactiongoal.md)
-* [OfflineConversionGoal](/bingads/campaign-management-service/offlineconversiongoal.md)
-* [PagesViewedPerVisitGoal](/bingads/campaign-management-service/pagesviewedpervisitgoal.md)
-* [UrlGoal](/bingads/campaign-management-service/urlgoal.md)
+There are five types of conversion goals. The [ConversionGoal](/binga/bingads/campaign-management-service/conversiongoal.md) is the base class from which all goals are derived. 
+* [AppInstallGoal](/binga/bingads/campaign-management-service/appinstallgoal.md)
+* [DurationGoal](/binga/bingads/campaign-management-service/durationgoal.md)
+* [EventGoal](/binga/bingads/campaign-management-service/eventgoal.md)
+* [InStoreTransactionGoal](/binga/bingads/campaign-management-service/instoretransactiongoal.md)
+* [OfflineConversionGoal](/binga/bingads/campaign-management-service/offlineconversiongoal.md)
+* [PagesViewedPerVisitGoal](/binga/bingads/campaign-management-service/pagesviewedpervisitgoal.md)
+* [UrlGoal](/binga/bingads/campaign-management-service/urlgoal.md)
 
 The following operations are added for managing conversion goals.
 
-* [AddConversionGoals](/bingads/campaign-management-service/addconversiongoals.md)
-* [GetConversionGoalsByIds](/bingads/campaign-management-service/getconversiongoalsbyids.md)
-* [GetConversionGoalsByTagIds](/bingads/campaign-management-service/getconversiongoalsbytagids.md)
-* [UpdateConversionGoals](/bingads/campaign-management-service/updateconversiongoals.md)
+* [AddConversionGoals](/binga/bingads/campaign-management-service/addconversiongoals.md)
+* [GetConversionGoalsByIds](/binga/bingads/campaign-management-service/getconversiongoalsbyids.md)
+* [GetConversionGoalsByTagIds](/binga/bingads/campaign-management-service/getconversiongoalsbytagids.md)
+* [UpdateConversionGoals](/binga/bingads/campaign-management-service/updateconversiongoals.md)
 
 
 ## <a name="customaudience"></a>Custom Audience APIs
@@ -85,18 +85,18 @@ Once the integration has been completed, your custom audiences will appear in th
 
 ### <a name="customaudience-bulk"></a>Custom Audience Bulk APIs
 With the Bulk service you can use the following record types to download and upload in-market audience records and associate them with an ad group:
-- [Custom Audience](/bingads/bulk-service/in-market-audience.md) 
-- [Ad Group Custom Audience Association](/bingads/bulk-service/ad-group-in-market-audience-association.md)  
-- [Ad Group Negative Custom Audience Association](/bingads/bulk-service/ad-group-negative-in-market-audience-association.md)  
+- [Custom Audience](/binga/bingads/bulk-service/in-market-audience.md) 
+- [Ad Group Custom Audience Association](/binga/bingads/bulk-service/ad-group-in-market-audience-association.md)  
+- [Ad Group Negative Custom Audience Association](/binga/bingads/bulk-service/ad-group-negative-in-market-audience-association.md)  
 
-You can use the *Remarketing Targeting Setting* field in the [Ad Group](/bingads/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
+You can use the *Remarketing Targeting Setting* field in the [Ad Group](/binga/bingads/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
 
 ### <a name="customaudience-campaign"></a>Custom Audience Campaign Management APIs
-The [CustomAudience](/bingads/campaign-management-service/customaudience.md) derives from the [Audience](/bingads/campaign-management-service/audience.md) base class. If you are using the Campaign Management service you can get or update the [CustomAudience](/bingads/campaign-management-service/customaudience.md), with the respective [GetAudiencesByIds](/bingads/campaign-management-service/getaudiencesbyids.md) and [UpdateAudiences](/bingads/campaign-management-service/updateaudiences.md) operations.
+The [CustomAudience](/binga/bingads/campaign-management-service/customaudience.md) derives from the [Audience](/binga/bingads/campaign-management-service/audience.md) base class. If you are using the Campaign Management service you can get or update the [CustomAudience](/binga/bingads/campaign-management-service/customaudience.md), with the respective [GetAudiencesByIds](/binga/bingads/campaign-management-service/getaudiencesbyids.md) and [UpdateAudiences](/binga/bingads/campaign-management-service/updateaudiences.md) operations.
 
-To add, get, update, or delete the association between your custom audience and ad group, use the [BiddableAdGroupCriterion](/bingads/campaign-management-service/biddableadgroupcriterion.md) object with the respective [AddAdGroupCriterions](/bingads/campaign-management-service/addadgroupcriterions.md), [GetAdGroupCriterionsByIds](/bingads/campaign-management-service/getadgroupcriterionsbyids.md), [UpdateAdGroupCriterions](/bingads/campaign-management-service/updateadgroupcriterions.md), and [DeleteAdGroupCriterions](/bingads/campaign-management-service/deleteadgroupcriterions.md) operations. You can use the [NegativeAdGroupCriterion](/bingads/campaign-management-service/negativeadgroupcriterion.md) object with the same operations to set custom audience exclusions. 
+To add, get, update, or delete the association between your custom audience and ad group, use the [BiddableAdGroupCriterion](/binga/bingads/campaign-management-service/biddableadgroupcriterion.md) object with the respective [AddAdGroupCriterions](/binga/bingads/campaign-management-service/addadgroupcriterions.md), [GetAdGroupCriterionsByIds](/binga/bingads/campaign-management-service/getadgroupcriterionsbyids.md), [UpdateAdGroupCriterions](/binga/bingads/campaign-management-service/updateadgroupcriterions.md), and [DeleteAdGroupCriterions](/binga/bingads/campaign-management-service/deleteadgroupcriterions.md) operations. You can use the [NegativeAdGroupCriterion](/binga/bingads/campaign-management-service/negativeadgroupcriterion.md) object with the same operations to set custom audience exclusions. 
 
-You can use the *RemarketingTargetingSetting* element in the [AdGroup](/bingads/campaign-management-service/adgroup.md) object to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
+You can use the *RemarketingTargetingSetting* element in the [AdGroup](/binga/bingads/campaign-management-service/adgroup.md) object to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
 
 ## <a name="inmarketaudience"></a>In-Market Audience APIs
 In-market audiences are curated lists of customers who have shown purchase intent signals within a particular category, including searches and clicks on Bing and page views on Microsoft services. Bing Ads supplies the curated list of potential customers, unlike remarketing in paid search, where the advertiser creates the list. You can target and modify bids for these audiences by associating in-market audience lists to ad groups, similar to what you do with remarketing lists.  
@@ -109,18 +109,18 @@ In-market audiences are curated lists of customers who have shown purchase inten
 
 ### <a name="inmarketaudience-bulk"></a>In-Market Bulk APIs
 With the Bulk service you can use the following record types to download and upload in-market audience records and associate them with an ad group:
-- [In Market Audience](/bingads/bulk-service/in-market-audience.md) 
-- [Ad Group In Market Audience Association](/bingads/bulk-service/ad-group-in-market-audience-association.md)  
-- [Ad Group Negative In Market Audience Association](/bingads/bulk-service/ad-group-negative-in-market-audience-association.md)  
+- [In Market Audience](/binga/bingads/bulk-service/in-market-audience.md) 
+- [Ad Group In Market Audience Association](/binga/bingads/bulk-service/ad-group-in-market-audience-association.md)  
+- [Ad Group Negative In Market Audience Association](/binga/bingads/bulk-service/ad-group-negative-in-market-audience-association.md)  
 
-You can use the *Remarketing Targeting Setting* field in the [Ad Group](/bingads/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
+You can use the *Remarketing Targeting Setting* field in the [Ad Group](/binga/bingads/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
 
 ### <a name="inmarketaudience-campaign"></a>In-Market Campaign Management APIs
-The [InMarketAudience](/bingads/campaign-management-service/inmarketaudience.md) derives from the [Audience](/bingads/campaign-management-service/audience.md) base class. If you are using the Campaign Management service you can get the [InMarketAudience](/bingads/campaign-management-service/inmarketaudience.md), with the [GetAudiencesByIds](/bingads/campaign-management-service/getaudiencesbyids.md) operation.
+The [InMarketAudience](/binga/bingads/campaign-management-service/inmarketaudience.md) derives from the [Audience](/binga/bingads/campaign-management-service/audience.md) base class. If you are using the Campaign Management service you can get the [InMarketAudience](/binga/bingads/campaign-management-service/inmarketaudience.md), with the [GetAudiencesByIds](/binga/bingads/campaign-management-service/getaudiencesbyids.md) operation.
 
-To add, get, update, or delete the association between your in-market audience and ad group, use the [BiddableAdGroupCriterion](/bingads/campaign-management-service/biddableadgroupcriterion.md) object with the respective [AddAdGroupCriterions](/bingads/campaign-management-service/addadgroupcriterions.md), [GetAdGroupCriterionsByIds](/bingads/campaign-management-service/getadgroupcriterionsbyids.md), [UpdateAdGroupCriterions](/bingads/campaign-management-service/updateadgroupcriterions.md), and [DeleteAdGroupCriterions](/bingads/campaign-management-service/deleteadgroupcriterions.md) operations. You can use the [NegativeAdGroupCriterion](/bingads/campaign-management-service/negativeadgroupcriterion.md) object with the same operations to set in-market audience exclusions. 
+To add, get, update, or delete the association between your in-market audience and ad group, use the [BiddableAdGroupCriterion](/binga/bingads/campaign-management-service/biddableadgroupcriterion.md) object with the respective [AddAdGroupCriterions](/binga/bingads/campaign-management-service/addadgroupcriterions.md), [GetAdGroupCriterionsByIds](/binga/bingads/campaign-management-service/getadgroupcriterionsbyids.md), [UpdateAdGroupCriterions](/binga/bingads/campaign-management-service/updateadgroupcriterions.md), and [DeleteAdGroupCriterions](/binga/bingads/campaign-management-service/deleteadgroupcriterions.md) operations. You can use the [NegativeAdGroupCriterion](/binga/bingads/campaign-management-service/negativeadgroupcriterion.md) object with the same operations to set in-market audience exclusions. 
 
-You can use the *RemarketingTargetingSetting* element in the [AdGroup](/bingads/campaign-management-service/adgroup.md) object to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
+You can use the *RemarketingTargetingSetting* element in the [AdGroup](/binga/bingads/campaign-management-service/adgroup.md) object to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
 
 ## <a name="remarketing"></a>Remarketing APIs
 Remarketing in Paid Search lets you improve your return on investment by optimizing your campaigns for specific audiences, which are the people who have visited your website before. When you create remarketing lists, you specify what user actions on your website qualify them to be part of the remarketing lists. 
@@ -131,18 +131,18 @@ After you have set up [Universal Event Tracking (UET)](#uet), you can use the Bi
 
 ### <a name="remarketing-bulk"></a>Remarketing Bulk APIs
 With the Bulk service you can use the following record types to download and upload remarketing lists and associate them with an ad group:
-- [Remarketing List](/bingads/bulk-service/remarketing-list.md) 
-- [Ad Group Remarketing List Association](/bingads/bulk-service/ad-group-remarketing-list-association.md)  
-- [Ad Group Negative Remarketing List Association](/bingads/bulk-service/ad-group-negative-remarketing-list-association.md)  
+- [Remarketing List](/binga/bingads/bulk-service/remarketing-list.md) 
+- [Ad Group Remarketing List Association](/binga/bingads/bulk-service/ad-group-remarketing-list-association.md)  
+- [Ad Group Negative Remarketing List Association](/binga/bingads/bulk-service/ad-group-negative-remarketing-list-association.md)  
 
-You can use the *Remarketing Targeting Setting* field in the [Ad Group](/bingads/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
+You can use the *Remarketing Targeting Setting* field in the [Ad Group](/binga/bingads/bulk-service/ad-group.md) record to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
 
 ### <a name="remarketing-campaign"></a>Remarketing Campaign Management APIs
-The [RemarketingList](/bingads/campaign-management-service/remarketinglist.md) derives from the [Audience](/bingads/campaign-management-service/audience.md) base class. If you are using the Campaign Management service you can add, get, update, or delete the [RemarketingList](/bingads/campaign-management-service/remarketinglist.md), with the respective [AddAudiences](/bingads/campaign-management-service/addaudiences.md), [GetAudiencesByIds](/bingads/campaign-management-service/getaudiencesbyids.md), [UpdateAudiences](/bingads/campaign-management-service/updateaudiences.md), and [DeleteAudiences](/bingads/campaign-management-service/deleteaudiences.md) operations.
+The [RemarketingList](/binga/bingads/campaign-management-service/remarketinglist.md) derives from the [Audience](/binga/bingads/campaign-management-service/audience.md) base class. If you are using the Campaign Management service you can add, get, update, or delete the [RemarketingList](/binga/bingads/campaign-management-service/remarketinglist.md), with the respective [AddAudiences](/binga/bingads/campaign-management-service/addaudiences.md), [GetAudiencesByIds](/binga/bingads/campaign-management-service/getaudiencesbyids.md), [UpdateAudiences](/binga/bingads/campaign-management-service/updateaudiences.md), and [DeleteAudiences](/binga/bingads/campaign-management-service/deleteaudiences.md) operations.
 
-To add, get, update, or delete the association between your remarketing list and ad group, use the [BiddableAdGroupCriterion](/bingads/campaign-management-service/biddableadgroupcriterion.md) object with the respective [AddAdGroupCriterions](/bingads/campaign-management-service/addadgroupcriterions.md), [GetAdGroupCriterionsByIds](/bingads/campaign-management-service/getadgroupcriterionsbyids.md), [UpdateAdGroupCriterions](/bingads/campaign-management-service/updateadgroupcriterions.md), and [DeleteAdGroupCriterions](/bingads/campaign-management-service/deleteadgroupcriterions.md) operations. You can use the [NegativeAdGroupCriterion](/bingads/campaign-management-service/negativeadgroupcriterion.md) object with the same operations to set remarketing list exclusions. 
+To add, get, update, or delete the association between your remarketing list and ad group, use the [BiddableAdGroupCriterion](/binga/bingads/campaign-management-service/biddableadgroupcriterion.md) object with the respective [AddAdGroupCriterions](/binga/bingads/campaign-management-service/addadgroupcriterions.md), [GetAdGroupCriterionsByIds](/binga/bingads/campaign-management-service/getadgroupcriterionsbyids.md), [UpdateAdGroupCriterions](/binga/bingads/campaign-management-service/updateadgroupcriterions.md), and [DeleteAdGroupCriterions](/binga/bingads/campaign-management-service/deleteadgroupcriterions.md) operations. You can use the [NegativeAdGroupCriterion](/binga/bingads/campaign-management-service/negativeadgroupcriterion.md) object with the same operations to set remarketing list exclusions. 
 
-You can use the *RemarketingTargetingSetting* element in the [AdGroup](/bingads/campaign-management-service/adgroup.md) object to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
+You can use the *RemarketingTargetingSetting* element in the [AdGroup](/binga/bingads/campaign-management-service/adgroup.md) object to determine the targeting setting that is applicable for all audiences that are associated with this ad group i.e., custom audiences, in-market audiences, and remarketing lists. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
 
 ## See Also
 

@@ -18,7 +18,7 @@ Each negative location criterion defines a location code where you do not want y
 The maximum number of combined location and negative location criterions that you can specify per campaign or ad group is 10,000. 
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Campaign Negative Location Criterion* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For a *Campaign Negative Location Criterion* record, the following attribute fields are available in the [Bulk File Schema](/bingads/bulk-service/bulk-file-schema.md). 
 
 - [Campaign](#campaign)
 - [Client Id](#clientid)
@@ -29,7 +29,7 @@ For a *Campaign Negative Location Criterion* record, the following attribute fie
 - [Sub Type](#subtype)
 - [Target](#target)
 
-You can download all fields of the *Campaign Negative Location Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
+You can download all fields of the *Campaign Negative Location Criterion* record by including the [DownloadEntity](/bingads/bulk-service/downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](/bingads/bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](/bingads/bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](/bingads/bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](/bingads/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new campaign negative location criterion if a valid campaign identifier (*Parent Id*) is provided. 
 
@@ -129,9 +129,9 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The identifier of the campaign where this criterion is applied or removed.
 	
-This bulk field maps to the *Id* field of the [Campaign](../bulk-service/campaign.md) record. 
+This bulk field maps to the *Id* field of the [Campaign](/bingads/bulk-service/campaign.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new criterions to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](/bingads/bulk-service/campaign.md) record. This is recommended if you are adding new criterions to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](/binga/bingads/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -152,7 +152,7 @@ Possible values are *City*, *Country*, *MetroArea*, *PostalCode*, and *State*.
 **Delete:** Read-only  
 
 ### <a name="target"></a>Target
-The identifier of the location that you do not want to target. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](/bingads/guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](/bingads/campaign-management-service/getgeolocationsfileurl.md).
+The identifier of the location that you do not want to target. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](/bingads/guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](/binga/bingads/campaign-management-service/getgeolocationsfileurl.md).
 
 **Add:** Required  
 **Update:** Required  

@@ -11,7 +11,7 @@ description: Defines the possible status values of an InsertionOrder.
 > [!IMPORTANT]
 > This v12 preview documentation is subject to change.
 
-Defines the possible status values of an [InsertionOrder](../customer-billing-service/insertionorder.md).
+Defines the possible status values of an [InsertionOrder](/bingads/customer-billing-service/insertionorder.md).
 
 ## Syntax
 ```xml

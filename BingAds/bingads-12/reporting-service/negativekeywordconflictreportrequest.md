@@ -15,7 +15,7 @@ Defines a negative keyword conflict report request. Use this report to discover 
 
 You can request negative keywords that conflict with some of your keywords, and block your ad from showing.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](/bingads/reporting-service/submitgeneratereport.md) operation.
 
 ## Syntax
 ```xml

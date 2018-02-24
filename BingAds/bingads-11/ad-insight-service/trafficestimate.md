@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines an object that contains traffic estimates based on the campaign, ad group, and keyword criteria you specified when calling GetKeywordTrafficEstimates.
 ---
 # TrafficEstimate Data Object - Ad Insight
-Defines an object that contains traffic estimates based on the campaign, ad group, and keyword criteria you specified when calling [GetKeywordTrafficEstimates](../ad-insight-service/getkeywordtrafficestimates.md).
+Defines an object that contains traffic estimates based on the campaign, ad group, and keyword criteria you specified when calling [GetKeywordTrafficEstimates](/bingads/ad-insight-service/getkeywordtrafficestimates.md).
 
 ## Syntax
 ```xml

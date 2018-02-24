@@ -82,7 +82,7 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
         }
     ```
 
--   For derived types such as [ExpandedTextAd](/bingads/campaign-management-service/expandedtextad.md), [NegativeKeyword](/bingads/campaign-management-service/negativekeyword.md), and [NegativeKeywordList](/bingads/campaign-management-service/negativekeywordlist.md), the Suds library requires that you use factory.create.
+-   For derived types such as [ExpandedTextAd](/binga/bingads/campaign-management-service/expandedtextad.md), [NegativeKeyword](/binga/bingads/campaign-management-service/negativekeyword.md), and [NegativeKeywordList](/binga/bingads/campaign-management-service/negativekeywordlist.md), the Suds library requires that you use factory.create.
 
     ```python
     ads = campaign_service.factory.create('ArrayOfAd')
@@ -133,7 +133,7 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
     ads.Ad.append(expanded_text_ad)
     ```
 
--   Any non-primitive elements must be specified for the Suds client e.g. *EditorialStatus* of type [AdEditorialStatus](/bingads/campaign-management-service/adeditorialstatus.md), even though the Bing Ads services do not require such elements.
+-   Any non-primitive elements must be specified for the Suds client e.g. *EditorialStatus* of type [AdEditorialStatus](/binga/bingads/campaign-management-service/adeditorialstatus.md), even though the Bing Ads services do not require such elements.
 
 -   Bing Ads Campaign Management service operations require that if you specify a non-primitives, it must be one of the values defined by the service i.e. it cannot be a nil element. Since Suds requires non-primitives and Bing Ads won't accept nil elements in place of an enum value, you must either set the non-primitives or they must be set to None. Also note that if the element is ready only you must set it to *None*. For example set *expanded_text_ad.EditorialStatus=None*. 
 

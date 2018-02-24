@@ -16,7 +16,7 @@ dev_langs:
 # Downloading a Catalog Status Report Code Example
 This example shows how to get the status of product offers that were uploaded to the specified catalog. If offers failed validation or editorial review, the example downloads the report that shows the reasons why the offer failed the review. 
 
-For information about the class used by this example, see [Status](../shopping-content/status-resource.md#status). For information about getting the report, see [How Do I Get the Status of Product Offers?](../shopping-content/how-get-status-product-offers.md)
+For information about the class used by this example, see [Status](/bingads/shopping-content/status-resource.md#status). For information about getting the report, see [How Do I Get the Status of Product Offers?](/bingads/shopping-content/how-get-status-product-offers.md)
 
 ```csharp
 using System;

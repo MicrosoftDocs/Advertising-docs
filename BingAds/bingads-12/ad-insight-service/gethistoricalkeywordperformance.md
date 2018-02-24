@@ -43,7 +43,7 @@ The *GetHistoricalKeywordPerformanceResponse* object defines the [body](#respons
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordhistoricalperformances"></a>KeywordHistoricalPerformances|An array of [KeywordHistoricalPerformance](../ad-insight-service/keywordhistoricalperformance.md) data objects. The array contains an item for each keyword, device, match type, and ad position specified in the request. If the keyword is not valid or has no data available, the corresponding item in the array will be null.|[KeywordHistoricalPerformance](keywordhistoricalperformance.md) array|
+|<a name="keywordhistoricalperformances"></a>KeywordHistoricalPerformances|An array of [KeywordHistoricalPerformance](/bingads/ad-insight-service/keywordhistoricalperformance.md) data objects. The array contains an item for each keyword, device, match type, and ad position specified in the request. If the keyword is not valid or has no data available, the corresponding item in the array will be null.|[KeywordHistoricalPerformance](keywordhistoricalperformance.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

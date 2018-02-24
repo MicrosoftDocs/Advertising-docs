@@ -41,7 +41,7 @@ The *SuggestKeywordsFromExistingKeywordsResponse* object defines the [body](#res
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordsuggestions"></a>KeywordSuggestions|An array of [KeywordSuggestion](../ad-insight-service/keywordsuggestion.md) data objects. The array contains an item for each keyword specified in the request. The object contains a list of suggested keywords that may perform better than the specified keyword.<br /><br />For each suggested keyword, the object includes a score that indicates the probability that using the keyword would result in an ad being included in the results of a search query. If there are no suggestions for a keyword, the *SuggestionsAndConfidence* element will be null.|[KeywordSuggestion](keywordsuggestion.md) array|
+|<a name="keywordsuggestions"></a>KeywordSuggestions|An array of [KeywordSuggestion](/bingads/ad-insight-service/keywordsuggestion.md) data objects. The array contains an item for each keyword specified in the request. The object contains a list of suggested keywords that may perform better than the specified keyword.<br /><br />For each suggested keyword, the object includes a score that indicates the probability that using the keyword would result in an ad being included in the results of a search query. If there are no suggestions for a keyword, the *SuggestionsAndConfidence* element will be null.|[KeywordSuggestion](keywordsuggestion.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
