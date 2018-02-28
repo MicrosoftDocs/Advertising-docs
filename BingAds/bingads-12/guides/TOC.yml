@@ -1435,8 +1435,12 @@
           href: ../customer-management-service/accountfinancialstatus.md
         - name: AccountLifeCycleStatus
           href: ../customer-management-service/accountlifecyclestatus.md
+        - name: AutoTagType
+          href: ../customer-management-service/autotagtype.md
         - name: ClientLinkStatus
           href: ../customer-management-service/clientlinkstatus.md
+        - name: CurrencyCode
+          href: ../customer-management-service/currencycode.md
         - name: CustomerFinancialStatus
           href: ../customer-management-service/customerfinancialstatus.md
         - name: CustomerLifeCycleStatus
