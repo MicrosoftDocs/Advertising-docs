@@ -8,6 +8,7 @@ description: Find out about currencies supported with the Bing Ads API.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Bing Ads Currencies
 The following currency values are supported for Bing Ads advertising accounts.
 

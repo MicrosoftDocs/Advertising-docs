@@ -8,6 +8,7 @@ description: Defines the criteria to use to filter the call detail report data.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CallDetailReportFilter Data Object - Reporting
 Defines the criteria to use to filter the call detail report data.
 

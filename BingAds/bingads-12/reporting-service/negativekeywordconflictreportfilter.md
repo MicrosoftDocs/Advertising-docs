@@ -8,6 +8,7 @@ description: Defines the criteria to use to filter the negative keyword conflict
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # NegativeKeywordConflictReportFilter Data Object - Reporting
 Defines the criteria to use to filter the negative keyword conflict report data.
 

@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Campaign Callout Ad Extension Record - Bulk
 Defines an association record between a [Campaign](../bulk-service/campaign.md) and an [Callout Ad Extension](../bulk-service/callout-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or callout ad extension, use the [Campaign](../bulk-service/campaign.md) or [Callout Ad Extension](../bulk-service/callout-ad-extension.md) record.
 	

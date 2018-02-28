@@ -8,6 +8,7 @@ description: Defines a custom events remarketing rule.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CustomEventsRule Data Object - Campaign Management
 Defines a custom events remarketing rule. 
 

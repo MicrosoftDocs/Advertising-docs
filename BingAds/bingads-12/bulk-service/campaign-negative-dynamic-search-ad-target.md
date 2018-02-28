@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Campaign Negative Dynamic Search Ad Target Record - Bulk
 Defines a Campaign Negative Dynamic Search Ad Target that can be uploaded and downloaded in a bulk file.
 

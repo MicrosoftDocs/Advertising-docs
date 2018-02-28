@@ -8,6 +8,7 @@ description: Defines an object that contains a keyword category and a confidence
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # KeywordCategory Data Object - Ad Insight
 Defines an object that contains a keyword category and a confidence score. The confidence score indicates the likelihood that the keyword belongs to the keyword category.
 

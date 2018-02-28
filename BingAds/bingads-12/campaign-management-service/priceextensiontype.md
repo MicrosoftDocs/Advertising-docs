@@ -8,6 +8,7 @@ description: Defines the possible types of price ad extensions.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # PriceExtensionType Value Set - Campaign Management
 Defines the possible types of price ad extensions.
 

@@ -8,6 +8,7 @@ description: Defines a user location performance report request.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # UserLocationPerformanceReportRequest Data Object - Reporting
 Defines a user location performance report request. Use this report to see where your traffic is coming from broken out by the physical location and the location people are searching for. You can then validate whether your location targeting strategy is successful, and identify opportunities to improve.
 

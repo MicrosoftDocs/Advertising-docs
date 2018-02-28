@@ -8,6 +8,7 @@ description: Defines the attribute columns that you can include in the SearchCam
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SearchCampaignChangeHistoryReportColumn Value Set - Reporting
 Defines the attribute columns that you can include in the [SearchCampaignChangeHistoryReportRequest](../reporting-service/searchcampaignchangehistoryreportrequest.md).
 

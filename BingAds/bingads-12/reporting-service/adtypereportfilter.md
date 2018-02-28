@@ -8,6 +8,7 @@ description: Defines the ad type values that you can use to filter the report da
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdTypeReportFilter Value Set - Reporting
 Defines the ad type values that you can use to filter the report data. These values are also used as column values in reports that include the ad type, such as the ad performance report.
 

@@ -8,6 +8,7 @@ description: Defines the types of entities by which you can filter the report da
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ChangeEntityReportFilter Value Set - Reporting
 Defines the types of entities by which you can filter the report data.
 

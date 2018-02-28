@@ -8,6 +8,7 @@ description: Bing Ads web service and common market values reference documentati
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Bing Ads API Reference
 For Bing Ads reference content, see the following sections.
 

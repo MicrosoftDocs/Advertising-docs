@@ -8,6 +8,7 @@ description: An agency builds a Bing Ads application for their company to manage
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Management Model for Agencies
 An agency builds a Bing Ads application for their company to manage the campaigns of their advertising clients. Agencies may manage some or all aspects of an advertiser account. When sending the invitation to manage a client account, the agency may specify whether the client or agency is responsible for billing. For more information about becoming an agency, see [Get Started as an agency with Bing Ads](http://help.bingads.microsoft.com/#apex/3/en/52083/3) or the [Resources for agency partners](https://advertise.bingads.microsoft.com/en-us/resources/bing-partner-program/agency-resources).
 

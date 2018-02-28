@@ -8,6 +8,7 @@ description: Defines the criteria to use to filter the campaign change history r
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SearchCampaignChangeHistoryReportFilter Data Object - Reporting
 Defines the criteria to use to filter the campaign change history report data.
 

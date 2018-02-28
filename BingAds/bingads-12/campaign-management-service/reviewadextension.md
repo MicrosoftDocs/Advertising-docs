@@ -8,6 +8,7 @@ description: Defines an object that specifies third-party reviews (exact or para
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ReviewAdExtension Data Object - Campaign Management
 Defines an object that specifies third-party reviews (exact or paraphrased) about your business, products, or services to include in an expanded text ad.
 

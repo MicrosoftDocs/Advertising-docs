@@ -8,6 +8,7 @@ description: Defines the criteria to use to filter the user location performance
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # UserLocationPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the user location performance report data.
 

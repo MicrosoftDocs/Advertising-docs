@@ -8,6 +8,7 @@ description: The device criterion that you can include when requesting keyword i
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DeviceCriterion Data Object - Ad Insight
 The device criterion that you can include when requesting keyword ideas or traffic estimates.
 

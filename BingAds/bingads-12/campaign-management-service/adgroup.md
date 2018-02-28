@@ -8,6 +8,7 @@ description: Defines an ad group.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdGroup Data Object - Campaign Management
 Defines an ad group.
 

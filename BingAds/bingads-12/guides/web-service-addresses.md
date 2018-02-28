@@ -8,6 +8,7 @@ description: Refer to the list of Bing Ads web service addresses.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Bing Ads Web Service Addresses
 You can use the following web service addresses to access the Bing Ads web service operations.
 

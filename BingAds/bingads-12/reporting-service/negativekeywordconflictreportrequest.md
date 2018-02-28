@@ -8,6 +8,7 @@ description: Defines a negative keyword conflict report request.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # NegativeKeywordConflictReportRequest Data Object - Reporting
 Defines a negative keyword conflict report request. Use this report to discover which keywords and negative keywords are in conflict, and whether the conflict is at the campaign or ad group level. Use this list to figure out which negative keywords to delete.
 

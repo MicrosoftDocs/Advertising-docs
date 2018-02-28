@@ -8,6 +8,7 @@ description: Defines the attributes columns that you can include in the Negative
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # NegativeKeywordConflictReportColumn Value Set - Reporting
 Defines the attributes columns that you can include in the [NegativeKeywordConflictReportRequest](../reporting-service/negativekeywordconflictreportrequest.md).
 

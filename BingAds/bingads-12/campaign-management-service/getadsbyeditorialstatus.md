@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetAdsByEditorialStatus Service Operation - Campaign Management
 Retrieves the ads that belong to the specified ad group and have the specified editorial review status.
 

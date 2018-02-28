@@ -12,6 +12,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Bulk Shopping Campaigns Code Example
 This example demonstrates how to apply product conditions for Bing Shopping Campaigns using the Bulk service.
 

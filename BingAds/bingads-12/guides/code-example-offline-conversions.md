@@ -11,6 +11,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Offline Conversions Code Example
 This example demonstrates how to send Bing Ads your offline conversions using the Campaign Management service.
 

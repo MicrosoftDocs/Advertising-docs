@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Campaign Radius Criterion Record - Bulk
 Defines a campaign radius criterion that can be uploaded and downloaded in a bulk file.
 

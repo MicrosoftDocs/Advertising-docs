@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Call Ad Extension Record - Bulk
 Defines a call ad extension that can be uploaded and downloaded in a bulk file.
 

@@ -8,6 +8,7 @@ description: Defines the ascending or descending sort order of results for Searc
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SortOrder Value Set - Customer Billing
 Defines the ascending or descending sort order of results for [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
 

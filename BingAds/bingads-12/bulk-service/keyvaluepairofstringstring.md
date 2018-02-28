@@ -8,6 +8,7 @@ description: The list of key and value strings for forward compatibility to avoi
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # KeyValuePairOfstringstring Data Object - Bulk
 The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
 

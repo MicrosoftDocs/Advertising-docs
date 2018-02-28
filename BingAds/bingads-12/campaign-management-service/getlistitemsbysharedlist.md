@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetListItemsBySharedList Service Operation - Campaign Management
 Gets the negative keywords of a negative keyword list.
 

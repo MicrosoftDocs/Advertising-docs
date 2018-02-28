@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Customer Signup Code Example
 This example demonstrates how a reseller can call SignupCustomer to create a new customer and account.
 

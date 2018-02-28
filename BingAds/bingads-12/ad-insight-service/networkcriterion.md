@@ -8,6 +8,7 @@ description: The network criterion that you can include when requesting keyword 
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # NetworkCriterion Data Object - Ad Insight
 The network criterion that you can include when requesting keyword ideas or traffic estimates.
 

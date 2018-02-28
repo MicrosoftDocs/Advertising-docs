@@ -8,6 +8,7 @@ description: Defines a call detail report request.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CallDetailReportRequest Data Object - Reporting
 Defines a call detail report request. Use this report to discover which accounts, campaigns, or ad groups are driving the most completed phone calls.
 

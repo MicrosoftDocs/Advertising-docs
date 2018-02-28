@@ -8,6 +8,7 @@ description: Defines the possible status values of a customer.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CustomerLifeCycleStatus Value Set - Customer Management
 Defines the possible status values of a customer.
 

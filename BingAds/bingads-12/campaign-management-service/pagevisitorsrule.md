@@ -8,6 +8,7 @@ description: Defines a page visitors remarketing rule.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # PageVisitorsRule Data Object - Campaign Management
 Defines a page visitors remarketing rule. 
 

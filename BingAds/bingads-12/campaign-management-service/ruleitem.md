@@ -8,6 +8,7 @@ description: Defines the base class of a remarketing list rule item.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # RuleItem Data Object - Campaign Management
 Defines the base class of a remarketing list rule item.
 

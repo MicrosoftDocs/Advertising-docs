@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SubmitGenerateReport Service Operation - Reporting
 Submits a report request.
 

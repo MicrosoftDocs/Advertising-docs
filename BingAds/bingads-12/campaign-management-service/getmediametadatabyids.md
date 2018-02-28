@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetMediaMetaDataByIds Service Operation - Campaign Management
 Gets the specified media meta data from an account's media library.
 

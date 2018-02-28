@@ -8,6 +8,7 @@ description: Defines a calendar date by month, day, and year.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Date Data Object - Bulk
 Defines a calendar date by month, day, and year.
 

@@ -8,6 +8,7 @@ description: Defines how your conversions are recorded within your chosen conver
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ConversionGoalCountType Value Set - Campaign Management
 Defines how your conversions are recorded within your chosen conversion window.
 

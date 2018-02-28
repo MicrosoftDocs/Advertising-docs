@@ -8,6 +8,7 @@ description: Defines an error object that contains the details that explain why 
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # OperationError Data Object - Reporting
 Defines an error object that contains the details that explain why the service operation failed.
 

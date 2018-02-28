@@ -8,6 +8,7 @@ description: Defines the possible financial status values of a customer.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CustomerFinancialStatus Value Set - Customer Management
 Defines the possible financial status values of a customer.
 

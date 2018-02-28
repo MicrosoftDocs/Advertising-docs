@@ -8,6 +8,7 @@ description: Defines the criteria to use to filter the ad extension by ad report
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdExtensionByAdReportFilter Data Object - Reporting
 Defines the criteria to use to filter the ad extension by ad report data.
 

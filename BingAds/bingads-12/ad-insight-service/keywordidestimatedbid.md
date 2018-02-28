@@ -8,6 +8,7 @@ description: Defines an object that contains the identifier of the keyword and t
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # KeywordIdEstimatedBid Data Object - Ad Insight
 Defines an object that contains the identifier of the keyword and the suggested bid value for the keyword and match type.
 

@@ -8,6 +8,7 @@ description: Defines the base object from which all fault detail objects derive.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ApplicationFault Data Object - Customer Management
 Defines the base object from which all fault detail objects derive.
 

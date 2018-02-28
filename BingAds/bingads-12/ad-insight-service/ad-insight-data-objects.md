@@ -8,6 +8,7 @@ description: Data objects reference for the AdInsight service.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Ad Insight Data Objects
 The Ad Insight service defines the following data objects.
 

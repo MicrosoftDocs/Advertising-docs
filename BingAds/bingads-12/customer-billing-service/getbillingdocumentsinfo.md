@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetBillingDocumentsInfo Service Operation - Customer Billing
 Gets a list of objects that contains billing document identification information, for example the billing document identifier, amount, and account identifier.
 

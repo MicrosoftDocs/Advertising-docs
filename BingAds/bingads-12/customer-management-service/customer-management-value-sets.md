@@ -8,6 +8,7 @@ description: Value sets reference for the CustomerManagement service.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Customer Management Value Sets
 The Customer Management service defines the following value sets.
 

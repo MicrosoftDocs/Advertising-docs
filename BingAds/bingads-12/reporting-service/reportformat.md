@@ -8,6 +8,7 @@ description: Defines the file formats that you can use for a report.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ReportFormat Value Set - Reporting
 Defines the file formats that you can use for a report.
 

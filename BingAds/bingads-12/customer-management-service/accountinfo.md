@@ -8,6 +8,7 @@ description: Defines an account identification object that contains information 
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AccountInfo Data Object - Customer Management
 Defines an account identification object that contains information that identifies an account.
 

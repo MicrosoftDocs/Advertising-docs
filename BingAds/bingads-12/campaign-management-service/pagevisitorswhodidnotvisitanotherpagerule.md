@@ -8,6 +8,7 @@ description: Defines a page visitors who did not visit another page remarketing 
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # PageVisitorsWhoDidNotVisitAnotherPageRule Data Object - Campaign Management
 Defines a page visitors who did not visit another page remarketing rule.
 

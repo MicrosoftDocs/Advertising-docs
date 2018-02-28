@@ -8,6 +8,7 @@ description: Defines a key performance index object for a keyword.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # KeywordKPI Data Object - Ad Insight
 Defines a key performance index object for a keyword. The object contains the historical performance statistics of the keyword for the corresponding match type, ad position, device, and network.
 

@@ -8,6 +8,7 @@ description: Defines an object that contains a suggested keyword with historical
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # KeywordIdea Data Object - Ad Insight
 Defines an object that contains a suggested keyword with historical statistics, like monthly search volume, competition, suggested minimum bid, and ad impression share.
 

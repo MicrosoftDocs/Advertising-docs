@@ -8,6 +8,7 @@ description: Defines an object that contains the key performance index data for 
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # KeywordHistoricalPerformance Data Object - Ad Insight
 Defines an object that contains the key performance index data for the specified keyword.
 

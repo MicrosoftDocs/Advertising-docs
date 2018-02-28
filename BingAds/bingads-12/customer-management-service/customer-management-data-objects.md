@@ -8,6 +8,7 @@ description: Data objects reference for the CustomerManagement service.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Customer Management Data Objects
 The Customer Management service defines the following data objects.
 

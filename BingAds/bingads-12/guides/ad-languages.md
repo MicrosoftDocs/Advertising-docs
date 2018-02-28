@@ -8,6 +8,7 @@ description: Language options in Bing Ads give you control over your advertising
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Ad Languages
 Language options in Bing Ads give you control over your advertising campaign and experience. 
  

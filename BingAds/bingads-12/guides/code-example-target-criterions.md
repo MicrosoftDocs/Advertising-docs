@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Target Criterions Code Example
 This example demonstrates how to use target criterions with the Campaign Management API.
 

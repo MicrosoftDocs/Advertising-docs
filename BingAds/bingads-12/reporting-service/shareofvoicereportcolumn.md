@@ -8,6 +8,7 @@ description: Defines the attributes and performance statistics columns that you 
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ShareOfVoiceReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [ShareOfVoiceReportRequest](../reporting-service/shareofvoicereportrequest.md).
 

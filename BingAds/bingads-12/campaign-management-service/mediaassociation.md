@@ -8,6 +8,7 @@ description: Defines an object that represents the identified media and an assoc
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # MediaAssociation Data Object - Campaign Management
 Defines an object that represents the identified media and an associated entity, for example media associated with an ad group.
 

@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Budget Opportunities Code Example
 This example demonstrates how to get the budget opportunities for each campaign in the current authenticated account.
 

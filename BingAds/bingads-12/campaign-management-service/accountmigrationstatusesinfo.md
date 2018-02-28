@@ -8,6 +8,7 @@ description: Defines an object that contains migration status for an account.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AccountMigrationStatusesInfo Data Object - Campaign Management
 Defines an object that contains migration status for an account.
 

@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AddBudgets Service Operation - Campaign Management
 Adds new budgets to the account's shared budget library.
 

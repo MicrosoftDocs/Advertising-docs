@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetAccountMonthlySpend Service Operation - Customer Billing
 Gets the amount spent by the account in the specified month.
 

@@ -8,6 +8,7 @@ description: Defines a criterion that determines the intent option for all locat
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # LocationIntentCriterion Data Object - Campaign Management
 Defines a criterion that determines the intent option for all location and radius criterions of the campaign or ad group. There isn't any accompanying criterion bid adjustment. 
 

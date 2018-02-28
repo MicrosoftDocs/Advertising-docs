@@ -8,6 +8,7 @@ description: Reference documentation for editorial failure reason codes.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Editorial Failure Reason Codes
 The following are the possible reason codes for an ad or keyword that failed editorial review. 
 

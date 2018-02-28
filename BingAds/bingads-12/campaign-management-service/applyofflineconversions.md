@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ApplyOfflineConversions Service Operation - Campaign Management
 Applies offline conversions for the account with Microsoft Click Id among other offline conversion data.
 

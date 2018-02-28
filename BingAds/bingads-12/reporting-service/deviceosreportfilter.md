@@ -8,6 +8,7 @@ description: Defines the device operating system values that you can use to filt
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DeviceOSReportFilter Value Set - Reporting
 Defines the device operating system values that you can use to filter the report data.
 

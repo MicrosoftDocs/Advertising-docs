@@ -8,6 +8,7 @@ description: Defines an ad group to include in the report.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdGroupReportScope Data Object - Reporting
 Defines an ad group to include in the report.
 

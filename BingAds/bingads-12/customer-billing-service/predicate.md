@@ -8,6 +8,7 @@ description: Defines a predicate for the list of insertion orders returned using
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Predicate Data Object - Customer Billing
 Defines a predicate for the list of insertion orders returned using the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.
 

@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetGeoLocationsFileUrl Service Operation - Campaign Management
 Gets a temporary URL that you can use to download a file that contains the supported geographical location targeting codes.
 

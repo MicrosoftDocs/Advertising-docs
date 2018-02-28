@@ -8,6 +8,7 @@ description: The device search parameter filter that you can include when reques
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DeviceSearchParameter Data Object - Ad Insight
 The device search parameter filter that you can include when requesting keyword ideas.
 

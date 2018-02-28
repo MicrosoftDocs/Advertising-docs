@@ -8,6 +8,7 @@ description: Defines an object that identifies a campaign to download.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CampaignScope Data Object - Bulk
 Defines an object that identifies a campaign to download.
 

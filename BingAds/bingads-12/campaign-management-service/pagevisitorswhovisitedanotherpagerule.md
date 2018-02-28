@@ -8,6 +8,7 @@ description: Defines a page visitors who visited another page remarketing rule.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # PageVisitorsWhoVisitedAnotherPageRule Data Object - Campaign Management
 Defines a page visitors who visited another page remarketing rule. 
 

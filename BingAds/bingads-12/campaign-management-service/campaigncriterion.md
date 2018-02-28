@@ -8,6 +8,7 @@ description: Defines a criterion that you want applied to the specified campaign
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CampaignCriterion Data Object - Campaign Management
 Defines a criterion that you want applied to the specified campaign.
 

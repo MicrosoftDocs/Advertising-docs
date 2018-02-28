@@ -8,6 +8,7 @@ description: Defines the possible search networks on which an ad can display.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # NetworkType Value Set - Ad Insight
 Defines the possible search networks on which an ad can display. 
 

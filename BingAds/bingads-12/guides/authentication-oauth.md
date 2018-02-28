@@ -8,6 +8,7 @@ description: Authenticate for Bing Ads production services with a Microsoft Acco
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Authentication with OAuth
 Bing Ads implements the implicit and authorization grant flows of the [OAuth 2.0](http://tools.ietf.org/html/rfc6749) protocol to enable authentication of Microsoft Accounts that are linked to Bing Ads accounts. You should authenticate for Bing Ads production services with a Microsoft Account, instead of providing the Bing Ads username and password set. Authentication with a Microsoft Account is currently not supported in [Sandbox](../guides/sandbox.md).
 

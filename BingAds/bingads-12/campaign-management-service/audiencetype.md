@@ -8,6 +8,7 @@ description: Defines the possible audience types.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AudienceType Value Set - Campaign Management
 Defines the possible audience types.
 

@@ -8,6 +8,7 @@ description: Defines the campaign level settings for a Dynamic Search Ads campai
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DynamicSearchAdsSetting Data Object - Campaign Management
 Defines the campaign level settings for a Dynamic Search Ads campaign.
 

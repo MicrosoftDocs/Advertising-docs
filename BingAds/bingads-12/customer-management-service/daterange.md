@@ -8,6 +8,7 @@ description: Defines a date range object.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DateRange Data Object - Customer Management
 Defines a date range object.
 

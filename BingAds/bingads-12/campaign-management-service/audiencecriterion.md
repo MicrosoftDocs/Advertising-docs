@@ -8,6 +8,7 @@ description: Defines a criterion that can be used to show ads to a specific audi
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AudienceCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to a specific audience.
 

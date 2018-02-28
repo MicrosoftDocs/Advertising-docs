@@ -8,6 +8,7 @@ description: Defines an object that represents the maximum conversions bid strat
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # MaxConversionsBiddingScheme Data Object - Campaign Management
 Defines an object that represents the maximum conversions bid strategy type.
 

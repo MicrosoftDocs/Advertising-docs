@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Geographical Locations Code Example
 This example demonstrates how to download the comma separated value (CSV) file that contains geographical location information that can be used with Bing Ads location targeting.
 

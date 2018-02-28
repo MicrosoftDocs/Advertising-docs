@@ -8,6 +8,7 @@ description: Defines an insertion order.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # InsertionOrder Data Object - Customer Billing
 Defines an insertion order.
 

@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Negative Keywords Code Example
 This example demonstrates how to associate negative keywords and negative keyword lists with a campaign.
 

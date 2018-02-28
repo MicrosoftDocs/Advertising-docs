@@ -8,6 +8,7 @@ description: Service operations reference for the Reporting service.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Reporting Service Operations
 The Reporting service defines the following service operations.
 

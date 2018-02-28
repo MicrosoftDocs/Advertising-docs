@@ -8,6 +8,7 @@ description: Defines an object that represents the enhanced CPC bid strategy typ
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # EnhancedCpcBiddingScheme Data Object - Campaign Management
 Defines an object that represents the enhanced CPC bid strategy type.
 

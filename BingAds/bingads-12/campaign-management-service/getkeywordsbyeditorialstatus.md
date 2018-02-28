@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetKeywordsByEditorialStatus Service Operation - Campaign Management
 Retrieves the keywords with the specified editorial review status.
 

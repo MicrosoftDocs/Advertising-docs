@@ -8,6 +8,7 @@ description: Defines an object that you can use to determine the component of an
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # EditorialReason Data Object - Campaign Management
 Defines an object that you can use to determine the component of an ad or keyword that failed editorial review, and the reason for the failure.
 

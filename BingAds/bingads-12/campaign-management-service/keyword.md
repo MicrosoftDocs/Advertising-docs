@@ -8,6 +8,7 @@ description: Defines a keyword.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Keyword Data Object - Campaign Management
 Defines a keyword.
 

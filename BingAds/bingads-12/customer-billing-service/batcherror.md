@@ -8,6 +8,7 @@ description: Defines an error object that identifies the item within the batch o
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # BatchError Data Object - Customer Billing
 Defines an error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.
 

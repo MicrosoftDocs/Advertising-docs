@@ -8,6 +8,7 @@ description: Value sets reference for the CustomerBilling service.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Customer Billing Value Sets
 The Customer Billing service defines the following value sets.
 

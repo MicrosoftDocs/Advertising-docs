@@ -8,6 +8,7 @@ description: Defines the possible compression types for the file to download.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CompressionType Value Set - Bulk
 Defines the possible compression types for the file to download.
 

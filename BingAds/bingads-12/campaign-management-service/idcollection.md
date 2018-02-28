@@ -8,6 +8,7 @@ description: Defines an object that contains a list of entity identifiers.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # IdCollection Data Object - Campaign Management
 Defines an object that contains a list of entity identifiers.
 

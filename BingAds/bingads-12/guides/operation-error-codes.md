@@ -8,6 +8,7 @@ description: Reference documentation for service operation error codes.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Operation Error Codes
 Bing Ads service operations may return error codes depending on the context. The list provided below includes error codes across all Bing Ads services. For information about error codes per service operation, see the reference page for each operation.
 

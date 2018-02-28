@@ -8,6 +8,7 @@ description: Defines the date range values for the requested performance data in
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # PerformanceStatsDateRange Data Object - Bulk
 Defines the date range values for the requested performance data in a bulk download.
 

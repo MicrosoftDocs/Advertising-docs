@@ -8,6 +8,7 @@ description: Defines the possible positions of an ad in the search results or on
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdPosition Value Set - Ad Insight
 Defines the possible positions of an ad in the search results or on a content-based webpage.
 

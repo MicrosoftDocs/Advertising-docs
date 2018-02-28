@@ -8,6 +8,7 @@ description: Defines the criteria to use to filter the search query performance 
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SearchQueryPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the search query performance report data.
 

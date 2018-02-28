@@ -8,6 +8,7 @@ description: Defines the set of accounts, campaigns, and ad groups to include in
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AccountThroughAdGroupReportScope Data Object - Reporting
 Defines the set of accounts, campaigns, and ad groups to include in the report.
 

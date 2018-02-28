@@ -8,6 +8,7 @@ description: Data objects reference for the Bulk service.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Bulk Data Objects
 The Bulk service defines the following data objects.
 

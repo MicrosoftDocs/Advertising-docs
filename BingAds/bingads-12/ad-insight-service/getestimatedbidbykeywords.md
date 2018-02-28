@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetEstimatedBidByKeywords Service Operation - Ad Insight
 Gets the estimated bid value of one or more keywords that could result in an ad appearing in the targeted position in the search results.
 

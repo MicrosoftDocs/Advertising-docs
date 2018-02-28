@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Dynamic Search Ad Record - Bulk
 Defines a dynamic search ad that can be downloaded and uploaded in a bulk file.
 

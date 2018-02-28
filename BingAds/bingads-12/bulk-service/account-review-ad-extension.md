@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Account Review Ad Extension Record - Bulk
 Defines an association record between an [Account](../bulk-service/account.md) and a [Review Ad Extension](../bulk-service/review-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the account or review ad extension, use the [Account](../bulk-service/account.md) or [Review Ad Extension](../bulk-service/review-ad-extension.md) record.
 	

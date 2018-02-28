@@ -8,6 +8,7 @@ description: Defines a criterion that can be used to show ads to users within th
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # RadiusCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to users within the radius of a specific geographical location.
 

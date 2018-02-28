@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Walkthrough: Bing Ads Web Application in Java
 The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](../guides/get-started.md#get-developer-token).  You can create the example step by step as described below, or start with the [provided examples](../guides/code-examples.md).
 

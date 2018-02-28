@@ -8,6 +8,7 @@ description: Defines the possible match types for a keyword or negative keyword.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # MatchType Value Set - Campaign Management
 Defines the possible match types for a keyword or negative keyword.
 

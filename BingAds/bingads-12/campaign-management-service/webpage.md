@@ -8,6 +8,7 @@ description: Defines a webpage parameter that contains a list of webpage conditi
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Webpage Data Object - Campaign Management
 Defines a webpage parameter that contains a list of webpage conditions or criteria that help determine whether you want to show dynamic search ads.
 

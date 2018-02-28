@@ -8,6 +8,7 @@ description: Defines the possible values that indicate whether all or a subset o
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdGroupBidLandscapeType Value Set - Ad Insight
 Defines the possible values that indicate whether all or a subset of an ad group's existing keywords are used to determine the bid landscape.
 

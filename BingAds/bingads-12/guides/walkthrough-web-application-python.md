@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Walkthrough: Bing Ads Web Application in Python
 This tutorial describes how to get started running a Bing Ads web application using the Python and the Django web framework on the [Azure App Service](http://azure.microsoft.com/services/app-service/). You will create the [Web App](http://azure.microsoft.com/services/app-service/web/) from the Azure gallery, set up Git deployment, and clone the repository locally. Then you will run the application locally, make changes, commit and push them to Azure.
 

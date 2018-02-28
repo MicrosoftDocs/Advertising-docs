@@ -8,6 +8,7 @@ description: Defines the values that you use to determine whether an editorial r
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AppealStatus Value Set - Campaign Management
 Defines the values that you use to determine whether an editorial rejection is appealable.
 

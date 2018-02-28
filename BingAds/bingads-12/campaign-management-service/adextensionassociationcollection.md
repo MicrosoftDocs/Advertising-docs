@@ -8,6 +8,7 @@ description: Defines an array of objects that associate an ad extension and its 
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdExtensionAssociationCollection Data Object - Campaign Management
 Defines an array of objects that associate an ad extension and its editorial status to an account, campaign, or ad group.
 

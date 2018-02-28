@@ -8,6 +8,7 @@ description: Defines a billing document identification object that contains info
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # BillingDocumentInfo Data Object - Customer Billing
 Defines a billing document identification object that contains information about a billing document, such as the billing document identifier, billing document amount, and account identifier.
 

@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Campaign Product Scope Record - Bulk
 Defines a campaign's set of product conditions that can be uploaded and downloaded in a bulk file.
 

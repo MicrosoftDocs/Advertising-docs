@@ -8,6 +8,7 @@ description: Describes the Keyword Main Line Bid fields in a Bulk file.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Keyword Main Line Bid Record - Bulk
 Defines a keyword's estimated main line bid that can be downloaded in a bulk file.
 

@@ -8,6 +8,7 @@ description: Defines the fixed bid to use in the auction.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # FixedBid Data Object - Campaign Management
 Defines the fixed bid to use in the auction.
 

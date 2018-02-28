@@ -8,6 +8,7 @@ description: Defines a criterion that you want to exclude from the specified cam
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # NegativeCampaignCriterion Data Object - Campaign Management
 Defines a criterion that you want to exclude from the specified campaign.
 

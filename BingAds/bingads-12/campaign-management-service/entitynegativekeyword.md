@@ -8,6 +8,7 @@ description: Defines an object that contains a set of negative keywords that are
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # EntityNegativeKeyword Data Object - Campaign Management
 Defines an object that contains a set of negative keywords that are only associated with the corresponding entity such as a campaign or ad group.
 

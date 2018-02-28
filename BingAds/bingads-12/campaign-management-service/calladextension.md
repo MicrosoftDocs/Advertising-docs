@@ -8,6 +8,7 @@ description: Defines an object that specifies a click-to-call phone number to in
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CallAdExtension Data Object - Campaign Management
 Defines an object that specifies a click-to-call phone number to include in a text ad.
 

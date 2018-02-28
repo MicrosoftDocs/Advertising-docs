@@ -8,6 +8,7 @@ description: Defines an object that specifies additional text about your busines
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CalloutAdExtension Data Object - Campaign Management
 Defines an object that specifies additional text about your business, products, or services to include in a text ad.
 

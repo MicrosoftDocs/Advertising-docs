@@ -8,6 +8,7 @@ description: Defines the criteria to use to filter the geographic performance re
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GeographicPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the geographic performance report data.
 

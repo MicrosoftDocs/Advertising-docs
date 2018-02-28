@@ -8,6 +8,7 @@ description: Manage accounts as a direct advertiser, on behalf of other customer
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Customer Accounts
 Whether you are managing your own Bing Ads account as a direct advertiser, building commercial tools, or managing campaigns on behalf of other customers, we will introduce opportunities and quickly get you oriented. Manage customer, account, and user entities programmatically with the Customer Management service. For an introduction to the account and campaign hierarchy within a customer, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
 

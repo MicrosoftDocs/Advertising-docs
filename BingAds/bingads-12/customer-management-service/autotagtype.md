@@ -8,6 +8,7 @@ description: Reserved.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AutoTagType Value Set - Customer Management
 Reserved.
 

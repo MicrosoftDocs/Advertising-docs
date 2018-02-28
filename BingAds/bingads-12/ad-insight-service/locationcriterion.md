@@ -8,6 +8,7 @@ description: The location criterion that you can include when requesting keyword
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # LocationCriterion Data Object - Ad Insight
 The location criterion that you can include when requesting keyword ideas or traffic estimates.
 

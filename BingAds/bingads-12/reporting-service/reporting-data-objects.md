@@ -8,6 +8,7 @@ description: Data objects reference for the Reporting service.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Reporting Data Objects
 The Reporting service defines the following data objects.
 

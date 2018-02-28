@@ -8,6 +8,7 @@ description: Defines a conversion performance report request.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ConversionPerformanceReportRequest Data Object - Reporting
 Defines a conversion performance report request. Use this report to understand which campaigns and keywords are leading an audience to complete a purchase or other conversion action. 
 

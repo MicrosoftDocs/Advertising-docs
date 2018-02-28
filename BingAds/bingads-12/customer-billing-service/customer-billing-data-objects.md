@@ -8,6 +8,7 @@ description: Data objects reference for the CustomerBilling service.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Customer Billing Data Objects
 The Customer Billing service defines the following data objects.
 

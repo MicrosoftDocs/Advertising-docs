@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetAdsByAdGroupId Service Operation - Campaign Management
 Retrieves the ads within an ad group.
 

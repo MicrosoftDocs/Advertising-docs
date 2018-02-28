@@ -8,6 +8,7 @@ description: Defines the predefined time and date range values for a report requ
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ReportTimePeriod Value Set - Reporting
 Defines the predefined time and date range values for a report request.
 

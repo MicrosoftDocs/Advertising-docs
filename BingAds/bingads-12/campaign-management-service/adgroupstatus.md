@@ -8,6 +8,7 @@ description: Defines the possible status values of an ad group.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdGroupStatus Value Set - Campaign Management
 Defines the possible status values of an ad group.
 

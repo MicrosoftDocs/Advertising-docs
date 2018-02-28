@@ -8,6 +8,7 @@ description: The network search parameter filter that you can include when reque
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # NetworkSearchParameter Data Object - Ad Insight
 The network search parameter filter that you can include when requesting keyword ideas.
 

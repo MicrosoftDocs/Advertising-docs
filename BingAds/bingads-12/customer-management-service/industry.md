@@ -8,6 +8,7 @@ description: Defines the possible industry segments in which a customer operates
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Industry Value Set - Customer Management
 Defines the possible industry segments in which a customer operates.
 

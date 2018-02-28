@@ -8,6 +8,7 @@ description: Describes the schema for records in a Bulk file.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Bulk File Schema
 The bulk schema defines the contents of the file for download or upload with the Bing Ads Bulk service. For both download and upload, the Bulk service supports the file types and corresponding schemas in the [DownloadEntity](../bulk-service/downloadentity.md) value set.
 

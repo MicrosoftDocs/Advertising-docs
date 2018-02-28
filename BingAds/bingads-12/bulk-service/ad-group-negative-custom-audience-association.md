@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Ad Group Negative Custom Audience Association Record - Bulk
 Defines an Ad Group Negative Custom Audience Association that can be uploaded and downloaded in a bulk file. 
 

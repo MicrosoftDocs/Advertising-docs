@@ -8,6 +8,7 @@ description: Describes the Format Version fields in a Bulk file.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Format Version Record - Bulk
 Defines the format version of records in a bulk file.
 

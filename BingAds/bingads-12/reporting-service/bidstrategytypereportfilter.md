@@ -8,6 +8,7 @@ description: Defines the possible values that you can use to use to filter the r
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # BidStrategyTypeReportFilter Value Set - Reporting
 Defines the possible values that you can use to use to filter the report data by bid strategy type.
 

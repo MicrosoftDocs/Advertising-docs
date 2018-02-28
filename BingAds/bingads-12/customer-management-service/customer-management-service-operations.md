@@ -8,6 +8,7 @@ description: Service operations reference for the CustomerManagement service.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Customer Management Service Operations
 The Customer Management service defines the following service operations.
 

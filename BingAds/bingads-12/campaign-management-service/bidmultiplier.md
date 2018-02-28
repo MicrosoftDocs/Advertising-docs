@@ -8,6 +8,7 @@ description: Defines the multiplier by which to adjust your base bid for the cor
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # BidMultiplier Data Object - Campaign Management
 Defines the multiplier by which to adjust your base bid for the corresponding criterion.
 

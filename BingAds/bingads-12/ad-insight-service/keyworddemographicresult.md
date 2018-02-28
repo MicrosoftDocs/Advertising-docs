@@ -8,6 +8,7 @@ description: Defines an object that contains the keyword and percentage of users
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # KeywordDemographicResult Data Object - Ad Insight
 Defines an object that contains the keyword and percentage of users by age and gender (if known) who searched for the specified keyword.
 

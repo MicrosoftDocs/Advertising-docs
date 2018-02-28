@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # In Market Audience Record - Bulk
 Defines an in-market audience that can be downloaded in a bulk file. 
 

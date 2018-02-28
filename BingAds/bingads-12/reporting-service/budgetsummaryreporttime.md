@@ -8,6 +8,7 @@ description: Defines the date range values of a budget summary report request.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # BudgetSummaryReportTime Data Object - Reporting
 Defines the date range values of a budget summary report request.
 

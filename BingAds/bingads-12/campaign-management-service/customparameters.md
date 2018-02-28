@@ -8,6 +8,7 @@ description: Defines a collection of key and value custom parameters for URL tra
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CustomParameters Data Object - Campaign Management
 Defines a collection of key and value custom parameters for URL tracking. Used for campaign, ad group, ad, keyword, sitelink, and ad group criterion URL custom parameters.
 

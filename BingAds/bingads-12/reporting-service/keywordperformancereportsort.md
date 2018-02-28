@@ -8,6 +8,7 @@ description: Defines a keyword performance report column and corresponding sort 
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # KeywordPerformanceReportSort Data Object - Reporting
 Defines a keyword performance report column and corresponding sort order.
 

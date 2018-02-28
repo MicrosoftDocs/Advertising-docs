@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetEditorialReasonsByIds Service Operation - Campaign Management
 Gets the reasons why the specified entities failed editorial review and whether the rejection is appealable.
 

@@ -8,6 +8,7 @@ description: Defines a Universal Event Tracking (UET) tag that you can add to yo
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # UetTag Data Object - Campaign Management
 Defines a Universal Event Tracking (UET) tag that you can add to your website to allow Bing Ads to collect actions people take on your website.
 

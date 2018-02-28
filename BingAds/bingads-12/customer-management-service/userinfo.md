@@ -8,6 +8,7 @@ description: Defines a user identification object that contains information that
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # UserInfo Data Object - Customer Management
 Defines a user identification object that contains information that identifies a user.
 

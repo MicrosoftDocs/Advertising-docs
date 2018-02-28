@@ -8,6 +8,7 @@ description: Defines the possible values representing entities that are enabled 
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # MediaEnabledEntityFilter Value Set - Campaign Management
 Defines the possible values representing entities that are enabled for media such as images.
 

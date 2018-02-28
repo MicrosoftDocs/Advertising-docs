@@ -8,6 +8,7 @@ description: Defines a DSA search query performance report request.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DSASearchQueryPerformanceReportRequest Data Object - Reporting
 Defines a DSA search query performance report request. Use this report to see how your ads perform against search terms. The data can help you find negative keywords (so that you're not spending money targeting the wrong customer), as well as the right keywords that create conversions. 
 

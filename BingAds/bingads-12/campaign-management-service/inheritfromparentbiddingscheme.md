@@ -8,6 +8,7 @@ description: Defines an object that represents the inherit from parent bid strat
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # InheritFromParentBiddingScheme Data Object - Campaign Management
 Defines an object that represents the inherit from parent bid strategy type.
 

@@ -8,6 +8,7 @@ description: Defines the criteria to use to filter the product partition perform
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ProductPartitionPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the product partition performance report data.
 

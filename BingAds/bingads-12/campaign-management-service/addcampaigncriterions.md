@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AddCampaignCriterions Service Operation - Campaign Management
 Adds one or more campaign criterions that help determine whether ads in each campaign get served.
 

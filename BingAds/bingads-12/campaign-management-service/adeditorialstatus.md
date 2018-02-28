@@ -8,6 +8,7 @@ description: Defines the editorial review status values of an ad.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdEditorialStatus Value Set - Campaign Management
 Defines the editorial review status values of an ad.
 

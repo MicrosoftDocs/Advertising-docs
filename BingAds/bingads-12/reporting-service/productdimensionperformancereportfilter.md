@@ -8,6 +8,7 @@ description: Defines the criteria to use to filter the product dimension perform
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ProductDimensionPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the product dimension performance report data.
 

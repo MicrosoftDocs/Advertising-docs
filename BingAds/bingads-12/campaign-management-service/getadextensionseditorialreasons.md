@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetAdExtensionsEditorialReasons Service Operation - Campaign Management
 Gets editorial rejection reasons for the respective ad extension and entity associations.
 

@@ -8,6 +8,7 @@ description: Defines an in-market audience.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # InMarketAudience Data Object - Campaign Management
 Defines an in-market audience. 
 

@@ -8,6 +8,7 @@ description: Defines an account performance report request.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AccountPerformanceReportRequest Data Object - Reporting
 Defines an account performance report request. Use this report to observe long-term account performance and trends.
 You can request impressions, impression share (%), clicks, spend, and average cost per click for individual accounts. Once downloaded, this data can be sorted by individual accounts, currency, bid match type, and delivered match type.

@@ -8,6 +8,7 @@ description: Defines a destination URL performance report request.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DestinationUrlPerformanceReportRequest Data Object - Reporting
 Defines a destination URL performance report request. Use this report to identify landing pages that met audience expectations and potentially resulted in high click-through or conversion rates. 
 

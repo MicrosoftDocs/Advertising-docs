@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Labels Code Example
 This example demonstrates how to add labels and associate them with campaigns, ad groups, keywords, and ads.
 

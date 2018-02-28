@@ -8,6 +8,7 @@ description: Defines the base object of an audience.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Audience Data Object - Campaign Management
 Defines the base object of an audience.
 

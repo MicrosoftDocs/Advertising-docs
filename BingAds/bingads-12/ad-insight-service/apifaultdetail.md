@@ -8,6 +8,7 @@ description: Defines a fault object that operations return when web service-spec
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ApiFaultDetail Data Object - Ad Insight
 Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 

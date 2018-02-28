@@ -8,6 +8,7 @@ description: Value sets reference for the AdInsight service.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Ad Insight Value Sets
 The Ad Insight service defines the following value sets.
 

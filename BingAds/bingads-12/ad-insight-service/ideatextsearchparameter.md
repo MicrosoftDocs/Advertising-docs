@@ -8,6 +8,7 @@ description: The idea text search parameter filter that you can include when req
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # IdeaTextSearchParameter Data Object - Ad Insight
 The idea text search parameter filter that you can include when requesting keyword ideas.
 

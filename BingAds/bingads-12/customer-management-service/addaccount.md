@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AddAccount Service Operation - Customer Management
 Creates a new account within an existing customer. 
 

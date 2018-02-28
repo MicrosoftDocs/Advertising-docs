@@ -8,6 +8,7 @@ description: Defines the possible keyword match type values.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # MatchType Value Set - Ad Insight
 Defines the possible keyword match type values.
 

@@ -8,6 +8,7 @@ description: Defines the name of account level properties.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AccountPropertyName Value Set - Campaign Management
 Defines the name of account level properties.
 

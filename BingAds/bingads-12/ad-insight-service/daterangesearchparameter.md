@@ -8,6 +8,7 @@ description: The date range search parameter that you can include when requestin
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DateRangeSearchParameter Data Object - Ad Insight
 The date range search parameter that you can include when requesting keyword ideas.
 

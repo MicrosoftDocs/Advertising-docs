@@ -8,6 +8,7 @@ description: The technical guides describe core advertising scenarios using Bing
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Bing Ads Technical Guides
 The technical guides below describe core advertising scenarios using Bing Ads services.
 

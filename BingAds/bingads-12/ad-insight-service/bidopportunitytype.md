@@ -8,6 +8,7 @@ description: Defines the possible bid opportunity types you can request when cal
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # BidOpportunityType Value Set - Ad Insight
 Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](../ad-insight-service/getbidopportunities.md).
 

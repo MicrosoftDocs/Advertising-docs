@@ -8,6 +8,7 @@ description: This is the base class from which keyword idea search parameter obj
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SearchParameter Data Object - Ad Insight
 This is the base class from which keyword idea search parameter objects derive. 
 

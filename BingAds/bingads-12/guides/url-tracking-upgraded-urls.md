@@ -8,6 +8,7 @@ description: URL tracking allows you to find out how people got to your website 
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # URL Tracking with Upgraded URLs
 URL tracking allows you to find out how people got to your website by adding tracking parameters in Bing Ads and then using a third-party tracking tool or service to analyze the data. When an ad is served, the tracking parameters are dynamically appended to your landing page URL. This landing page URL is recorded on your web server and then a third-party tracking tool, like Adobe or Google Analytics, can interpret the data.
 

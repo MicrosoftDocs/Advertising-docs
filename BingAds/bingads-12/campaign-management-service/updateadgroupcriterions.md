@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # UpdateAdGroupCriterions Service Operation - Campaign Management
 Updates one or more ad group criterions.
 

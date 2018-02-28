@@ -8,6 +8,7 @@ description: Defines a search query performance report request.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SearchQueryPerformanceReportRequest Data Object - Reporting
 Defines a search query performance report request. Use this report to see what your audience is searching for when your ads are shown. You can use this information to make informed additions, removals, or edits to both your keyword and negative keyword lists.
 

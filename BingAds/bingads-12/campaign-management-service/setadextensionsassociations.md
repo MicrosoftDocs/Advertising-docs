@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SetAdExtensionsAssociations Service Operation - Campaign Management
 Associates the specified ad extensions with the respective campaigns or ad groups.
 

@@ -8,6 +8,7 @@ description: Defines the relationship between a label and campaign, ad group, ad
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # LabelAssociation Data Object - Campaign Management
 Defines the relationship between a label and campaign, ad group, ad, or keyword entity.
 

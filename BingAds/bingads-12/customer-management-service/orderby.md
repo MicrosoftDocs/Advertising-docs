@@ -8,6 +8,7 @@ description: Defines an order for the list of entities returned using one of the
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # OrderBy Data Object - Customer Management
 Defines an order for the list of entities returned using one of the search operations, for example [SearchAccounts](../customer-management-service/searchaccounts.md), [SearchClientLinks](../customer-management-service/searchclientlinks.md), or [SearchCustomers](../customer-management-service/searchcustomers.md).
 

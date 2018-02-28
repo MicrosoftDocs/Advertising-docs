@@ -8,6 +8,7 @@ description: The keyword category search parameter that you can use as a seed fo
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CategorySearchParameter Data Object - Ad Insight
 The keyword category search parameter that you can use as a seed for new keyword ideas.
 

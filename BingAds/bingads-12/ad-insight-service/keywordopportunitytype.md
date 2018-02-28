@@ -8,6 +8,7 @@ description: Defines the possible keyword opportunity types you can request when
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # KeywordOpportunityType Value Set - Ad Insight
 Defines the possible keyword opportunity types you can request when calling [GetKeywordOpportunities](../ad-insight-service/getkeywordopportunities.md).
 

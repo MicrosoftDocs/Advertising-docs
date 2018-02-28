@@ -8,6 +8,7 @@ description: The suggested bid search parameter filter that you can include when
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SuggestedBidSearchParameter Data Object - Ad Insight
 The suggested bid search parameter filter that you can include when requesting keyword ideas.
 

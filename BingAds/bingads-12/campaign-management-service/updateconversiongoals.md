@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # UpdateConversionGoals Service Operation - Campaign Management
 Updates conversion goals within the account's shared conversion goal library. 
 

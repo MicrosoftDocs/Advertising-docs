@@ -12,6 +12,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Bulk Keywords and Ads Code Example
 This example demonstrates how to setup ads and keywords for a search advertising campaign.
 

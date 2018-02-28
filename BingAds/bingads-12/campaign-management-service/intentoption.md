@@ -8,6 +8,7 @@ description: Defines the possible intent options for location criterion, for exa
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # IntentOption Value Set - Campaign Management
 Defines the possible intent options for location criterion, for example to target people in, searching for, or viewing pages about your targeted location.
 

@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Campaign App Ad Extension Record - Bulk
 Defines an association record between a [Campaign](../bulk-service/campaign.md) and an [App Ad Extension](../bulk-service/app-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or app ad extension, use the [Campaign](../bulk-service/campaign.md) or [App Ad Extension](../bulk-service/app-ad-extension.md) record.
 	

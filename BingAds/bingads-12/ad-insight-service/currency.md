@@ -8,6 +8,7 @@ description: Defines a selection of currency values.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Currency Value Set - Ad Insight
 Defines a selection of currency values.
 

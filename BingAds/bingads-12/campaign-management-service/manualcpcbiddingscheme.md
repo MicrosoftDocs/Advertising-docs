@@ -8,6 +8,7 @@ description: Defines an object that represents the manual CPC bid strategy type.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ManualCpcBiddingScheme Data Object - Campaign Management
 Defines an object that represents the manual CPC bid strategy type. 
 

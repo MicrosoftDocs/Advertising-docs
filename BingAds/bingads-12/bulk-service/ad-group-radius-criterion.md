@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Ad Group Radius Criterion Record - Bulk
 Defines an ad group radius criterion that can be uploaded and downloaded in a bulk file.
 

@@ -8,6 +8,7 @@ description: Defines an app install ad.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AppInstallAd Data Object - Campaign Management
 Defines an app install ad. Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create a text ad with app ad extensions.
 

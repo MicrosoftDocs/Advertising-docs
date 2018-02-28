@@ -12,6 +12,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Reporting Service Manager
 The SDK provides proxy classes to the service operations, data objects, and value sets defined for the [Reporting](../reporting-service/reporting-service-reference.md) service.
 

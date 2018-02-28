@@ -8,6 +8,7 @@ description: Defines the possible status values of a campaign.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CampaignStatus Value Set - Campaign Management
 Defines the possible status values of a campaign.
 

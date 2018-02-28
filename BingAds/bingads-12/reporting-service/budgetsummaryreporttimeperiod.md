@@ -8,6 +8,7 @@ description: Defines the predefined time and date range values for a budget summ
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # BudgetSummaryReportTimePeriod Value Set - Reporting
 Defines the predefined time and date range values for a budget summary report request.
 

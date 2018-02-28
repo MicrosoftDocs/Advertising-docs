@@ -8,6 +8,7 @@ description: Defines an app ad extension that can be included in a text ad.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AppAdExtension Data Object - Campaign Management
 Defines an app ad extension that can be included in a text ad.
 

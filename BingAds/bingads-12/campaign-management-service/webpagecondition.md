@@ -8,6 +8,7 @@ description: Defines a condition or criterion that helps determine whether you w
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # WebpageCondition Data Object - Campaign Management
 Defines a condition or criterion that helps determine whether you want to show dynamic search ads.
 

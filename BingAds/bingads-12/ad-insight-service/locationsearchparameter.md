@@ -8,6 +8,7 @@ description: The location search parameter filter that you can include when requ
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # LocationSearchParameter Data Object - Ad Insight
 The location search parameter filter that you can include when requesting keyword ideas.
 

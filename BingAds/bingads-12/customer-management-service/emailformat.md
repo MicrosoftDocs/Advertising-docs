@@ -8,6 +8,7 @@ description: Defines the possible formats of the body of an email message.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # EmailFormat Value Set - Customer Management
 Defines the possible formats of the body of an email message.
 

@@ -8,6 +8,7 @@ description: Contains a nested list of suggested keywords for the campaign's ad 
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CampaignEstimate Data Object - Ad Insight
 Contains a nested list of suggested keywords for the campaign's ad groups with minimum and maximum traffic estimates. Traffic estimates include average CPC, average position, clicks, CTR, impressions, and total cost.
 

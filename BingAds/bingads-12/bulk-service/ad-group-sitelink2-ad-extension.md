@@ -10,6 +10,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Ad Group Sitelink2 Ad Extension Record - Bulk
 Defines an association record between an [Ad Group](../bulk-service/ad-group.md) and a [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or sitelink2 ad extension, use the [Ad Group](../bulk-service/ad-group.md) or [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) record. 
 

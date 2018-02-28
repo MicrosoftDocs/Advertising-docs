@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetKeywordDemographics Service Operation - Ad Insight
 Gets the age and gender of users who have searched for the specified keywords.
 

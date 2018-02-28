@@ -13,6 +13,7 @@ dev_langs:
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetCampaignsByIds Service Operation - Campaign Management
 Gets the specified campaigns within an account.
 
