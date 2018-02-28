@@ -12,9 +12,9 @@ dev_langs:
 # Offline Conversions Code Example
 This example demonstrates how to send Bing Ads your offline conversions using the Campaign Management service.
 
-[!code-csharp[Main](\.\./\.\./BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/OfflineConversions.cs)]
+[!code-csharp[Main](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/OfflineConversions.cs)]
 
-[!code-python[Main](\.\./\.\./BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/offline_conversions.py)]
+[!code-python[Main](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/offline_conversions.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](../guides/get-started.md)  
