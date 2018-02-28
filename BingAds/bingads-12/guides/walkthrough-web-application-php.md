@@ -8,6 +8,8 @@ description: Create a web application using the Bing Ads PHP SDK.
 dev_langs:
   - php
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Walkthrough: Bing Ads Web Application in PHP
 This example web application demonstrates OAuth authentication in production. The application will prompt a Microsoft account user for permission to manage their Bing Ads accounts. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](../guides/get-started.md#get-developer-token). You can create the example step by step as described below, or start with the [provided examples](../guides/code-examples.md).
 

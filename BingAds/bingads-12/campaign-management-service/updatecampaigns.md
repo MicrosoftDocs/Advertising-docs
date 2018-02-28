@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # UpdateCampaigns Service Operation - Campaign Management
 Updates specified campaigns in a specified account.
 

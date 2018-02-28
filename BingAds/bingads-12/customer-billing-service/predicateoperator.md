@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the condition of results for insertion orders returned using SearchInsertionOrders.
 ---
-# PredicateOperator Value Set - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# PredicateOperator Value Set - Customer Billing
 Defines the condition of results for insertion orders returned using [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
 
 ## Syntax

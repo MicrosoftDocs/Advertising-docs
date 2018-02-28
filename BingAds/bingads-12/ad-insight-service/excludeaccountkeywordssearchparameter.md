@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: The exclude account keywords search parameter filter that you can include when requesting keyword ideas.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # ExcludeAccountKeywordsSearchParameter Data Object - Ad Insight
 The exclude account keywords search parameter filter that you can include when requesting keyword ideas.
 

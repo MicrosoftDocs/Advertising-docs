@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the field order of entities returned using one of the search operations, for example SearchAccounts, SearchClientLinks, or SearchCustomers.
 ---
-# OrderByField Value Set - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# OrderByField Value Set - Customer Management
 Defines the field order of entities returned using one of the search operations, for example [SearchAccounts](../customer-management-service/searchaccounts.md), [SearchClientLinks](../customer-management-service/searchclientlinks.md), or [SearchCustomers](../customer-management-service/searchcustomers.md).
 
 ## Syntax

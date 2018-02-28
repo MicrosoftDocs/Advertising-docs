@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines a collection of ad extensions that failed editorial review.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # AdExtensionEditorialReasonCollection Data Object - Campaign Management
 Defines a collection of ad extensions that failed editorial review.
 

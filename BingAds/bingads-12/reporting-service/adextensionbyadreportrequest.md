@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an ad extension by ad report request.
 ---
-# AdExtensionByAdReportRequest Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AdExtensionByAdReportRequest Data Object - Reporting
 Defines an ad extension by ad report request. Use this report to compare how well different versions of your ad extensions are performing with each ad.
 
 You can request impressions, clicks, spend, and average cost per click by ad. Once downloaded, this data can be sorted by ad ID, ad title, ad extension type, and ad extension version.

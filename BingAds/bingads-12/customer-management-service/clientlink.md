@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a client link object.
 ---
-# ClientLink Data Object - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# ClientLink Data Object - Customer Management
 Defines a client link object. Acceptance of a client link invitation enables an agency to  manage the corresponding client accounts. To send an invitation to manage a client account, call the [AddClientLinks](../customer-management-service/addclientlinks.md) operation and specify one client link per account to manage. For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
 
 > [!NOTE]

@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that represents the target CPA bid strategy type.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # TargetCpaBiddingScheme Data Object - Campaign Management
 Defines an object that represents the target CPA bid strategy type.
 

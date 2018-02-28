@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# GetUsersInfo Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# GetUsersInfo Service Operation - Customer Management
 Gets a list of objects that contains user identification information, for example the user name and identifier of the user.
 
 ## <a name="request"></a>Request Elements
@@ -75,11 +73,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetUsersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <UsersInfo xmlns:e19="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e19:UserInfo>
-          <e19:Id>ValueHere</e19:Id>
-          <e19:UserName d4p1:nil="false">ValueHere</e19:UserName>
-        </e19:UserInfo>
+      <UsersInfo xmlns:e329="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e329:UserInfo>
+          <e329:Id>ValueHere</e329:Id>
+          <e329:UserName d4p1:nil="false">ValueHere</e329:UserName>
+        </e329:UserInfo>
       </UsersInfo>
     </GetUsersInfoResponse>
   </s:Body>

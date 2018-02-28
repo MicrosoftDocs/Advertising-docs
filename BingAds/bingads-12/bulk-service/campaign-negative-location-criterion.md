@@ -8,6 +8,8 @@ description: Describes the Campaign Negative Location Criterion fields in a Bulk
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Campaign Negative Location Criterion Record - Bulk
 Defines a campaign negative location criterion that can be uploaded and downloaded in a bulk file.
 

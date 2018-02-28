@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible values of a campaign budget point.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # BudgetPointType Value Set - Ad Insight
 Defines the possible values of a campaign budget point.
 

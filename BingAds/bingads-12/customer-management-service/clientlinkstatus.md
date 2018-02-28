@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible status values of a ClientLink.
 ---
-# ClientLinkStatus Value Set - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# ClientLinkStatus Value Set - Customer Management
 Defines the possible status values of a [ClientLink](../customer-management-service/clientlink.md).
 
 For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).

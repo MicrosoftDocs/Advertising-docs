@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # DeleteBudgets Service Operation - Campaign Management
 Deletes budgets from the account's shared budget library.
 

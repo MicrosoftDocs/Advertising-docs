@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Remarketing Lists Code Example
 This example demonstrates how to associate remarketing lists with a new ad group.
 

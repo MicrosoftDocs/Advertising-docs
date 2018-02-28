@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains a list of search counts for each device and network where the keyword was included in a search query.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # KeywordSearchCount Data Object - Ad Insight
 Defines an object that contains a list of search counts for each device and network where the keyword was included in a search query. The data is aggregated based on the attributes specified in the request.
 

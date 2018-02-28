@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a customer identification object that contains information that identifies a customer.
 ---
-# CustomerInfo Data Object - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# CustomerInfo Data Object - Customer Management
 Defines a customer identification object that contains information that identifies a customer.
 
 ## Syntax

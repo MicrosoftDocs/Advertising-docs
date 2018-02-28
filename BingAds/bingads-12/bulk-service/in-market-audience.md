@@ -8,6 +8,8 @@ description: Describes the In Market Audience fields in a Bulk file.
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # In Market Audience Record - Bulk
 Defines an in-market audience that can be downloaded in a bulk file. 
 

@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Search User Accounts Code Example
 This example demonstrates how to search for accounts that can be managed by the current authenticated user.
 

@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a keyword performance report request.
 ---
-# KeywordPerformanceReportRequest Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# KeywordPerformanceReportRequest Data Object - Reporting
 Defines a keyword performance report request. Use this report to find out which keywords are performing well and those that are not. 
 
 You can request impressions, clicks, spend, and average cost per click for your landing pages. Once downloaded, this data can be sorted by keyword, account, campaign, and ad group.

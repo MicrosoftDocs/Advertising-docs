@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# GetCustomerPilotFeatures Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# GetCustomerPilotFeatures Service Operation - Customer Management
 Gets a list of the pilot programs in which the specified customer participates.
 
 ## <a name="request"></a>Request Elements

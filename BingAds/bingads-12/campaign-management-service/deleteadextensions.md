@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # DeleteAdExtensions Service Operation - Campaign Management
 Deletes one or more ad extensions from the account's ad extension library.
 

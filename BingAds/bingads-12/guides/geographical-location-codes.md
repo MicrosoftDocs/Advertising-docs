@@ -6,6 +6,8 @@ author: "eric-urban"
 ms.author: "eur"
 description: Find out about geographical location codes supported with the Bing Ads API.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Geographical Location Codes
 Geographical locations data can be used to for [Location Targeting](../guides/show-ads-target-audience.md#locationcriterion) e.g. show ads to people in a specific country/region, state/province, county, metro area (Nielsen DMA® in the United States), postal code, or city. You can call the [GetGeoLocationsFileUrl](../campaign-management-service/getgeolocationsfileurl.md) operation to get a temporary file URL that can be used to download the latest geographical locations data. You can also get the data from the [Bing Ads Developer Portal](https://developers.azure.bingads.microsoft.com/Account). You must be signed in to the developer portal with a Microsoft account user who has Bing Ads credentials. 
 

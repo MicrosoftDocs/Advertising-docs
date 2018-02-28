@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Conversion Goals Code Example
 This example demonstrates how to manage UET tags and conversion goals.
 

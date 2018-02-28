@@ -6,6 +6,8 @@ author: "eric-urban"
 ms.author: "eur"
 description: Upgrade from Multiple Sitelinks to One Sitelink Per Extension.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Upgrade from Multiple Sitelinks to One Sitelink Per Extension
 > [!NOTE]
 > During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) records (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions.

@@ -6,6 +6,8 @@ author: "eric-urban"
 ms.author: "eur"
 description: Find answers to some frequently asked questions about the Bing Ads API.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Frequently Asked Questions
 This article contains answers to some frequently asked questions about the Bing Ads API.
 

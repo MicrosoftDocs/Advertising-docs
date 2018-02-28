@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains the number of times that the keyword was used in a search query during the specified time period.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # HistoricalSearchCountPeriodic Data Object - Ad Insight
 Defines an object that contains the number of times that the keyword was used in a search query during the specified time period.
 

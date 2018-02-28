@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains traffic estimates based on the campaign, ad group, and keyword criteria you specified when calling GetKeywordTrafficEstimates.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # TrafficEstimate Data Object - Ad Insight
 Defines an object that contains traffic estimates based on the campaign, ad group, and keyword criteria you specified when calling [GetKeywordTrafficEstimates](../ad-insight-service/getkeywordtrafficestimates.md).
 

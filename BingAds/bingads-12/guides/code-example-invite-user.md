@@ -10,6 +10,8 @@ dev_langs:
   - java
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Invite User Code Example
 This example demonstrates how to invite a user to manage Bing Ads accounts.
 

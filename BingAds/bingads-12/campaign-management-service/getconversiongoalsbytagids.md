@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # GetConversionGoalsByTagIds Service Operation - Campaign Management
 Gets the conversion goals that use the specified UET tags. 
 

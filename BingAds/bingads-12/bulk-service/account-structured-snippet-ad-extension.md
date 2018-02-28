@@ -8,6 +8,8 @@ description: Describes the Account Structured Snippet Ad Extension fields in a B
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Account Structured Snippet Ad Extension Record - Bulk
 Defines an association record between an [Account](../bulk-service/account.md) and a [Structured Snippet Ad Extension](../bulk-service/structured-snippet-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the account or structured snippet ad extension, use the [Account](../bulk-service/account.md) or [Structured Snippet Ad Extension](../bulk-service/structured-snippet-ad-extension.md) record.
 	

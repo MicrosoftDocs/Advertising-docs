@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines price units for price ad extensions.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # PriceUnit Value Set - Campaign Management
 Defines price units for price ad extensions.
 

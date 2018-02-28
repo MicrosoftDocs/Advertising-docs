@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines pricing information by currency and unit that you can use with price ad extensions.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # PriceTableRow Data Object - Campaign Management
 Defines pricing information by currency and unit that you can use with price ad extensions.
 

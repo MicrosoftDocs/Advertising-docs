@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the delivered match type values that you can use to filter the report data.
 ---
-# DeliveredMatchTypeReportFilter Value Set - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# DeliveredMatchTypeReportFilter Value Set - Reporting
 Defines the delivered match type values that you can use to filter the report data. These values are also used as column values in reports that include match type, such as the keyword performance report.
 
 ## Syntax

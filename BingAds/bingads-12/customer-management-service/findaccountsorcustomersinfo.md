@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# FindAccountsOrCustomersInfo Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# FindAccountsOrCustomersInfo Service Operation - Customer Management
 Gets a list of the accounts and customers that match the specified filter criteria.
 
 ## <a name="request"></a>Request Elements
@@ -75,16 +73,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <FindAccountsOrCustomersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <AccountInfoWithCustomerData xmlns:e9="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e9:AccountInfoWithCustomerData>
-          <e9:CustomerId d4p1:nil="false">ValueHere</e9:CustomerId>
-          <e9:CustomerName d4p1:nil="false">ValueHere</e9:CustomerName>
-          <e9:AccountId>ValueHere</e9:AccountId>
-          <e9:AccountName d4p1:nil="false">ValueHere</e9:AccountName>
-          <e9:AccountNumber d4p1:nil="false">ValueHere</e9:AccountNumber>
-          <e9:AccountLifeCycleStatus>ValueHere</e9:AccountLifeCycleStatus>
-          <e9:PauseReason d4p1:nil="false">ValueHere</e9:PauseReason>
-        </e9:AccountInfoWithCustomerData>
+      <AccountInfoWithCustomerData xmlns:e319="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e319:AccountInfoWithCustomerData>
+          <e319:CustomerId d4p1:nil="false">ValueHere</e319:CustomerId>
+          <e319:CustomerName d4p1:nil="false">ValueHere</e319:CustomerName>
+          <e319:AccountId>ValueHere</e319:AccountId>
+          <e319:AccountName d4p1:nil="false">ValueHere</e319:AccountName>
+          <e319:AccountNumber d4p1:nil="false">ValueHere</e319:AccountNumber>
+          <e319:AccountLifeCycleStatus>ValueHere</e319:AccountLifeCycleStatus>
+          <e319:PauseReason d4p1:nil="false">ValueHere</e319:PauseReason>
+        </e319:AccountInfoWithCustomerData>
       </AccountInfoWithCustomerData>
     </FindAccountsOrCustomersInfoResponse>
   </s:Body>

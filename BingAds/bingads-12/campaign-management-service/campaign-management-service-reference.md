@@ -6,6 +6,8 @@ author: "eric-urban"
 ms.author: "eur"
 description: Reference documentation for the Bing Ads Campaign Management API.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Campaign Management Service Reference
 The Campaign Management [service](../guides/web-service-addresses.md) defines an Application Programming Interface (API) that you can use to manage your advertising campaigns.
 

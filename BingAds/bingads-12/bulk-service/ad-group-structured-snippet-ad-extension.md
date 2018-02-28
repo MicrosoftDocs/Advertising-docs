@@ -8,6 +8,8 @@ description: Describes the Ad Group Structured Snippet Ad Extension fields in a 
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Ad Group Structured Snippet Ad Extension Record - Bulk
 Defines an association record between an [Ad Group](../bulk-service/ad-group.md) and a [Structured Snippet Ad Extension](../bulk-service/structured-snippet-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or structured snippet ad extension, use the [Ad Group](../bulk-service/ad-group.md) or [Structured Snippet Ad Extension](../bulk-service/structured-snippet-ad-extension.md) record.
 	

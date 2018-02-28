@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the DSA category performance report data.
 ---
-# DSACategoryPerformanceReportFilter Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# DSACategoryPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the DSA category performance report data.
 
 ## Syntax

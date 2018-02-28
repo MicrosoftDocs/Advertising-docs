@@ -6,6 +6,8 @@ author: "eric-urban"
 ms.author: "eur"
 description: Each report type aggregates the data at a different level or with a different focus.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Report Types
 The reporting service provides reports that you can use to track finances, measure ad performance, and adjust settings to optimize your budget or campaign. The service supports the majority of popular reports available in the Bing Ads web application.
 

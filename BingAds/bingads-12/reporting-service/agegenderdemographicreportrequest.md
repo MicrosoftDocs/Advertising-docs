@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an age and gender demographic report request.
 ---
-# AgeGenderDemographicReportRequest Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AgeGenderDemographicReportRequest Data Object - Reporting
 Defines an age and gender demographic report request. Use this report to discover how your campaigns and ad groups are resonating with audiences of diverse age and gender.
 
 You can request impression rate (%) and click-through-rate (%) for each campaign or ad group, organized by gender and age group.

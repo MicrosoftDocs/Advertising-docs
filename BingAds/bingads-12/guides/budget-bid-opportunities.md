@@ -6,6 +6,8 @@ author: "eric-urban"
 ms.author: "eur"
 description: Discover bid and budget opportunities.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Budget and Bid Opportunities
 The [Ad Insight](../ad-insight-service/ad-insight-service-reference.md) service is a keyword research service that you can use to research keyword, bid, and budget opportunities:
 

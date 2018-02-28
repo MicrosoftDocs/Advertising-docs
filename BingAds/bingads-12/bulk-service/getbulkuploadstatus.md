@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # GetBulkUploadStatus Service Operation - Bulk
 Gets the status and completion progress of a bulk upload request.
 

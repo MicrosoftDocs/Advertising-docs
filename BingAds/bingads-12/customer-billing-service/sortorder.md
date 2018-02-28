@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the ascending or descending sort order of results for SearchInsertionOrders.
 ---
-# SortOrder Value Set - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# SortOrder Value Set - Customer Billing
 Defines the ascending or descending sort order of results for [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
 
 ## Syntax

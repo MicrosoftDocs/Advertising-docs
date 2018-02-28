@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# AddClientLinks Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AddClientLinks Service Operation - Customer Management
 Initiates the client link process to manage the account of another customer. Sends an invitation from an agency to a potential client.  For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
 
 > [!NOTE]
@@ -70,31 +68,31 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <AddClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <ClientLinks xmlns:e4="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e4:ClientLink>
-          <e4:ClientAccountId i:nil="false">ValueHere</e4:ClientAccountId>
-          <e4:ClientAccountNumber i:nil="false">ValueHere</e4:ClientAccountNumber>
-          <e4:ManagingCustomerId i:nil="false">ValueHere</e4:ManagingCustomerId>
-          <e4:ManagingCustomerNumber i:nil="false">ValueHere</e4:ManagingCustomerNumber>
-          <e4:Note i:nil="false">ValueHere</e4:Note>
-          <e4:Name i:nil="false">ValueHere</e4:Name>
-          <e4:InviterEmail i:nil="false">ValueHere</e4:InviterEmail>
-          <e4:InviterName i:nil="false">ValueHere</e4:InviterName>
-          <e4:InviterPhone i:nil="false">ValueHere</e4:InviterPhone>
-          <e4:IsBillToClient>ValueHere</e4:IsBillToClient>
-          <e4:StartDate i:nil="false">ValueHere</e4:StartDate>
-          <e4:Status i:nil="false">ValueHere</e4:Status>
-          <e4:SuppressNotification>ValueHere</e4:SuppressNotification>
-          <e4:LastModifiedDateTime>ValueHere</e4:LastModifiedDateTime>
-          <e4:LastModifiedByUserId>ValueHere</e4:LastModifiedByUserId>
-          <e4:Timestamp i:nil="false">ValueHere</e4:Timestamp>
-          <ForwardCompatibilityMap xmlns:e5="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e5:KeyValuePairOfstringstring>
-              <e5:key i:nil="false">ValueHere</e5:key>
-              <e5:value i:nil="false">ValueHere</e5:value>
-            </e5:KeyValuePairOfstringstring>
+      <ClientLinks xmlns:e314="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e314:ClientLink>
+          <e314:ClientAccountId i:nil="false">ValueHere</e314:ClientAccountId>
+          <e314:ClientAccountNumber i:nil="false">ValueHere</e314:ClientAccountNumber>
+          <e314:ManagingCustomerId i:nil="false">ValueHere</e314:ManagingCustomerId>
+          <e314:ManagingCustomerNumber i:nil="false">ValueHere</e314:ManagingCustomerNumber>
+          <e314:Note i:nil="false">ValueHere</e314:Note>
+          <e314:Name i:nil="false">ValueHere</e314:Name>
+          <e314:InviterEmail i:nil="false">ValueHere</e314:InviterEmail>
+          <e314:InviterName i:nil="false">ValueHere</e314:InviterName>
+          <e314:InviterPhone i:nil="false">ValueHere</e314:InviterPhone>
+          <e314:IsBillToClient>ValueHere</e314:IsBillToClient>
+          <e314:StartDate i:nil="false">ValueHere</e314:StartDate>
+          <e314:Status i:nil="false">ValueHere</e314:Status>
+          <e314:SuppressNotification>ValueHere</e314:SuppressNotification>
+          <e314:LastModifiedDateTime>ValueHere</e314:LastModifiedDateTime>
+          <e314:LastModifiedByUserId>ValueHere</e314:LastModifiedByUserId>
+          <e314:Timestamp i:nil="false">ValueHere</e314:Timestamp>
+          <ForwardCompatibilityMap xmlns:e315="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e315:KeyValuePairOfstringstring>
+              <e315:key i:nil="false">ValueHere</e315:key>
+              <e315:value i:nil="false">ValueHere</e315:value>
+            </e315:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-        </e4:ClientLink>
+        </e314:ClientLink>
       </ClientLinks>
     </AddClientLinksRequest>
   </s:Body>
@@ -111,21 +109,21 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <AddClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <OperationErrors xmlns:e6="https://bingads.microsoft.com/Customer/v12/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e6:OperationError>
-          <e6:Code>ValueHere</e6:Code>
-          <e6:Details d4p1:nil="false">ValueHere</e6:Details>
-          <e6:Message d4p1:nil="false">ValueHere</e6:Message>
-        </e6:OperationError>
+      <OperationErrors xmlns:e316="https://bingads.microsoft.com/Customer/v12/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e316:OperationError>
+          <e316:Code>ValueHere</e316:Code>
+          <e316:Details d4p1:nil="false">ValueHere</e316:Details>
+          <e316:Message d4p1:nil="false">ValueHere</e316:Message>
+        </e316:OperationError>
       </OperationErrors>
-      <PartialErrors xmlns:e7="https://bingads.microsoft.com/Customer/v12/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e7:ArrayOfOperationError>
-          <e7:OperationError>
-            <e7:Code>ValueHere</e7:Code>
-            <e7:Details d4p1:nil="false">ValueHere</e7:Details>
-            <e7:Message d4p1:nil="false">ValueHere</e7:Message>
-          </e7:OperationError>
-        </e7:ArrayOfOperationError>
+      <PartialErrors xmlns:e317="https://bingads.microsoft.com/Customer/v12/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e317:ArrayOfOperationError>
+          <e317:OperationError>
+            <e317:Code>ValueHere</e317:Code>
+            <e317:Details d4p1:nil="false">ValueHere</e317:Details>
+            <e317:Message d4p1:nil="false">ValueHere</e317:Message>
+          </e317:OperationError>
+        </e317:ArrayOfOperationError>
       </PartialErrors>
     </AddClientLinksResponse>
   </s:Body>

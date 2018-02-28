@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the destination URL performance report data.
 ---
-# DestinationUrlPerformanceReportFilter Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# DestinationUrlPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the destination URL performance report data.
 
 ## Syntax

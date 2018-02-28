@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # GetBulkDownloadStatus Service Operation - Bulk
 Gets the status of a bulk download request.
 

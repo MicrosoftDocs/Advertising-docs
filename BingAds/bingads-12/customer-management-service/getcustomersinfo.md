@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# GetCustomersInfo Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# GetCustomersInfo Service Operation - Customer Management
 Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.
 
 The list that this operation returns is based on the customers that the user that you specify in the *UserName* header element of the request, has access to. If the user is a member of the reseller's user group, the list will contain all customers that the reseller has signed up or a subset of customers if the user is limited to a subset of customers by a user role.
@@ -77,11 +75,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetCustomersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <CustomersInfo xmlns:e16="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e16:CustomerInfo>
-          <e16:Id d4p1:nil="false">ValueHere</e16:Id>
-          <e16:Name d4p1:nil="false">ValueHere</e16:Name>
-        </e16:CustomerInfo>
+      <CustomersInfo xmlns:e326="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e326:CustomerInfo>
+          <e326:Id d4p1:nil="false">ValueHere</e326:Id>
+          <e326:Name d4p1:nil="false">ValueHere</e326:Name>
+        </e326:CustomerInfo>
       </CustomersInfo>
     </GetCustomersInfoResponse>
   </s:Body>

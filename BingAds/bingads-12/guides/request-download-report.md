@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Request and Download a Report
 The following procedure outlines the steps to submit a report request and to download the report.
 

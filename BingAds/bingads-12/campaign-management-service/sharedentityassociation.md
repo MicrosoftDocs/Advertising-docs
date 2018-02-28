@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains association information for a campaign and shared entity such as a negative keyword list.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # SharedEntityAssociation Data Object - Campaign Management
 Defines an object that contains association information for a campaign and shared entity such as a negative keyword list.
 

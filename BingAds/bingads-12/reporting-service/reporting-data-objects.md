@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Data objects reference for the Reporting service.
 ---
-# Reporting Data Objects
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# Reporting Data Objects
 The Reporting service defines the following data objects.
 
 |Data Object|Description|

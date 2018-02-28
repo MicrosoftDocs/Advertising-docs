@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# GetBillingDocumentsInfo Service Operation - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# GetBillingDocumentsInfo Service Operation - Customer Billing
 Gets a list of objects that contains billing document identification information, for example the billing document identifier, amount, and account identifier.
 
 ## <a name="request"></a>Request Elements
@@ -79,16 +77,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBillingDocumentsInfoResponse xmlns="https://bingads.microsoft.com/Billing/v12">
-      <BillingDocumentsInfo xmlns:e57="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e57:BillingDocumentInfo>
-          <e57:AccountId>ValueHere</e57:AccountId>
-          <e57:AccountName d4p1:nil="false">ValueHere</e57:AccountName>
-          <e57:AccountNumber d4p1:nil="false">ValueHere</e57:AccountNumber>
-          <e57:Amount>ValueHere</e57:Amount>
-          <e57:CurrencyCode d4p1:nil="false">ValueHere</e57:CurrencyCode>
-          <e57:DocumentDate d4p1:nil="false">ValueHere</e57:DocumentDate>
-          <e57:DocumentId d4p1:nil="false">ValueHere</e57:DocumentId>
-        </e57:BillingDocumentInfo>
+      <BillingDocumentsInfo xmlns:e367="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e367:BillingDocumentInfo>
+          <e367:AccountId>ValueHere</e367:AccountId>
+          <e367:AccountName d4p1:nil="false">ValueHere</e367:AccountName>
+          <e367:AccountNumber d4p1:nil="false">ValueHere</e367:AccountNumber>
+          <e367:Amount>ValueHere</e367:Amount>
+          <e367:CurrencyCode d4p1:nil="false">ValueHere</e367:CurrencyCode>
+          <e367:DocumentDate d4p1:nil="false">ValueHere</e367:DocumentDate>
+          <e367:DocumentId d4p1:nil="false">ValueHere</e367:DocumentId>
+        </e367:BillingDocumentInfo>
       </BillingDocumentsInfo>
     </GetBillingDocumentsInfoResponse>
   </s:Body>

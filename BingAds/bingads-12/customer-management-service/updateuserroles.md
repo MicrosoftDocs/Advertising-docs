@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# UpdateUserRoles Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# UpdateUserRoles Service Operation - Customer Management
 Updates the roles of the specified user.
 
 ## <a name="request"></a>Request Elements

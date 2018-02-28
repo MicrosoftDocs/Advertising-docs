@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# DeleteCustomer Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# DeleteCustomer Service Operation - Customer Management
 Deletes a customer.
 
 ## <a name="request"></a>Request Elements

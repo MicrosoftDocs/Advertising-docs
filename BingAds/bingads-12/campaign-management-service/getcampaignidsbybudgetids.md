@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # GetCampaignIdsByBudgetIds Service Operation - Campaign Management
 Gets the campaign identifiers that share each specified budget.
 

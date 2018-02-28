@@ -6,6 +6,8 @@ author: "eric-urban"
 ms.author: "eur"
 description: Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Bing Ads Sandbox
 Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served.
 

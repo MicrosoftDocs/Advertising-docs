@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an ad extension detail report request.
 ---
-# AdExtensionDetailReportRequest Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AdExtensionDetailReportRequest Data Object - Reporting
 Defines an ad extension detail report request. Use this report to discover the effectiveness of individual ad extension items, for example, each link of a sitelink extension.
 
 You can request impressions, clicks, spend, and average cost per click of individual extension items. This data can be sorted by the individual ad extension display name, ad extension ID, and ad extension type.

@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible financial status values of a customer.
 ---
-# CustomerFinancialStatus Value Set - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# CustomerFinancialStatus Value Set - Customer Management
 Defines the possible financial status values of a customer.
 
 ## Syntax

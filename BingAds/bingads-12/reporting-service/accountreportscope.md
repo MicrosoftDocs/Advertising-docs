@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the set of accounts to include in the report.
 ---
-# AccountReportScope Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AccountReportScope Data Object - Reporting
 Defines the set of accounts to include in the report.
 
 ## Syntax

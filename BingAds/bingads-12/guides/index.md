@@ -6,6 +6,8 @@ author: "eric-urban"
 ms.author: "eur"
 description: Find out if the Bing Ads API is right for you. 
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Bing Ads API Overview
 Bing Ads is a pay-per-click (PPC) advertising platform used to display ads based on the keywords used in a user's search query.  For advertisers placing a large number of ads or developers building advertising tools, the Bing Ads API provides a programmatic interface to Bing Ads. Using the Bing Ads API is the most efficient way to manage many large campaigns or to integrate your marketing with other in-house systems. The Bing Ads API also supports multiple customer accounts making it easy for ad agencies to manage campaigns for many clients. Some organizations may choose a hybrid approach; using the web UI for most tasks but automating reporting or campaign optimization with the API.
 

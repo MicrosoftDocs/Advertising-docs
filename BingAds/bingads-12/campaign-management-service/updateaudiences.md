@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # UpdateAudiences Service Operation - Campaign Management
 Updates the specified audiences.
 

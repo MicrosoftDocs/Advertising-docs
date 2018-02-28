@@ -8,6 +8,8 @@ description: Describes the Campaign Structured Snippet Ad Extension fields in a 
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Campaign Structured Snippet Ad Extension Record - Bulk
 Defines an association record between a [Campaign](../bulk-service/campaign.md) and an [Structured Snippet Ad Extension](../bulk-service/structured-snippet-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or structured snippet ad extension, use the [Campaign](../bulk-service/campaign.md) or [Structured Snippet Ad Extension](../bulk-service/structured-snippet-ad-extension.md) record.
 	

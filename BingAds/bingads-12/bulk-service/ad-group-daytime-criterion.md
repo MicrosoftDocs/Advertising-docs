@@ -8,6 +8,8 @@ description: Describes the Ad Group DayTime Criterion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Ad Group DayTime Criterion Record - Bulk
 Defines an ad group day and time criterion that can be uploaded and downloaded in a bulk file.
 

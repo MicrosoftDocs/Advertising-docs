@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the ad dynamic text performance report data.
 ---
-# AdDynamicTextPerformanceReportFilter Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AdDynamicTextPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the ad dynamic text performance report data.
 
 ## Syntax

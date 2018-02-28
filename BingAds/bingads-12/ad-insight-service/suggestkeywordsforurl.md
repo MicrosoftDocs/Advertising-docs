@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # SuggestKeywordsForUrl Service Operation - Ad Insight
 Suggests the possible keywords for the content located at the specified URL.
 

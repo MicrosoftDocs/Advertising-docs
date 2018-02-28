@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines the operators that can be applied to remarketing list rule item number values.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # NumberOperator Value Set - Campaign Management
 Defines the operators that can be applied to remarketing list rule item number values.
 

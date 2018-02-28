@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# AddInsertionOrder Service Operation - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AddInsertionOrder Service Operation - Customer Billing
 Adds an insertion order to the specified account.
 
 ## <a name="request"></a>Request Elements
@@ -58,23 +56,23 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <AddInsertionOrderRequest xmlns="https://bingads.microsoft.com/Billing/v12">
-      <InsertionOrder xmlns:e55="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e55:AccountId>ValueHere</e55:AccountId>
-        <e55:BalanceAmount i:nil="false">ValueHere</e55:BalanceAmount>
-        <e55:BookingCountryCode i:nil="false">ValueHere</e55:BookingCountryCode>
-        <e55:Comment i:nil="false">ValueHere</e55:Comment>
-        <e55:EndDate>ValueHere</e55:EndDate>
-        <e55:InsertionOrderId i:nil="false">ValueHere</e55:InsertionOrderId>
-        <e55:LastModifiedByUserId i:nil="false">ValueHere</e55:LastModifiedByUserId>
-        <e55:LastModifiedTime i:nil="false">ValueHere</e55:LastModifiedTime>
-        <e55:NotificationThreshold i:nil="false">ValueHere</e55:NotificationThreshold>
-        <e55:ReferenceId i:nil="false">ValueHere</e55:ReferenceId>
-        <e55:SpendCapAmount>ValueHere</e55:SpendCapAmount>
-        <e55:StartDate>ValueHere</e55:StartDate>
-        <e55:Name i:nil="false">ValueHere</e55:Name>
-        <e55:Status i:nil="false">ValueHere</e55:Status>
-        <e55:PurchaseOrder i:nil="false">ValueHere</e55:PurchaseOrder>
-        <e55:ChangePendingReview i:nil="false">ValueHere</e55:ChangePendingReview>
+      <InsertionOrder xmlns:e365="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e365:AccountId>ValueHere</e365:AccountId>
+        <e365:BalanceAmount i:nil="false">ValueHere</e365:BalanceAmount>
+        <e365:BookingCountryCode i:nil="false">ValueHere</e365:BookingCountryCode>
+        <e365:Comment i:nil="false">ValueHere</e365:Comment>
+        <e365:EndDate>ValueHere</e365:EndDate>
+        <e365:InsertionOrderId i:nil="false">ValueHere</e365:InsertionOrderId>
+        <e365:LastModifiedByUserId i:nil="false">ValueHere</e365:LastModifiedByUserId>
+        <e365:LastModifiedTime i:nil="false">ValueHere</e365:LastModifiedTime>
+        <e365:NotificationThreshold i:nil="false">ValueHere</e365:NotificationThreshold>
+        <e365:ReferenceId i:nil="false">ValueHere</e365:ReferenceId>
+        <e365:SpendCapAmount>ValueHere</e365:SpendCapAmount>
+        <e365:StartDate>ValueHere</e365:StartDate>
+        <e365:Name i:nil="false">ValueHere</e365:Name>
+        <e365:Status i:nil="false">ValueHere</e365:Status>
+        <e365:PurchaseOrder i:nil="false">ValueHere</e365:PurchaseOrder>
+        <e365:ChangePendingReview i:nil="false">ValueHere</e365:ChangePendingReview>
       </InsertionOrder>
     </AddInsertionOrderRequest>
   </s:Body>

@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines a negative keyword with match type.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # NegativeKeyword Data Object - Campaign Management
 Defines a negative keyword with match type. A negative keyword can be added and deleted, but cannot be updated.
 

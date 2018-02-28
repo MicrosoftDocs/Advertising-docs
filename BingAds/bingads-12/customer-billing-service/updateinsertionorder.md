@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# UpdateInsertionOrder Service Operation - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# UpdateInsertionOrder Service Operation - Customer Billing
 Updates an insertion order within the specified account.
 
 ## <a name="request"></a>Request Elements
@@ -57,23 +55,23 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <UpdateInsertionOrderRequest xmlns="https://bingads.microsoft.com/Billing/v12">
-      <InsertionOrder xmlns:e63="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e63:AccountId>ValueHere</e63:AccountId>
-        <e63:BalanceAmount i:nil="false">ValueHere</e63:BalanceAmount>
-        <e63:BookingCountryCode i:nil="false">ValueHere</e63:BookingCountryCode>
-        <e63:Comment i:nil="false">ValueHere</e63:Comment>
-        <e63:EndDate>ValueHere</e63:EndDate>
-        <e63:InsertionOrderId i:nil="false">ValueHere</e63:InsertionOrderId>
-        <e63:LastModifiedByUserId i:nil="false">ValueHere</e63:LastModifiedByUserId>
-        <e63:LastModifiedTime i:nil="false">ValueHere</e63:LastModifiedTime>
-        <e63:NotificationThreshold i:nil="false">ValueHere</e63:NotificationThreshold>
-        <e63:ReferenceId i:nil="false">ValueHere</e63:ReferenceId>
-        <e63:SpendCapAmount>ValueHere</e63:SpendCapAmount>
-        <e63:StartDate>ValueHere</e63:StartDate>
-        <e63:Name i:nil="false">ValueHere</e63:Name>
-        <e63:Status i:nil="false">ValueHere</e63:Status>
-        <e63:PurchaseOrder i:nil="false">ValueHere</e63:PurchaseOrder>
-        <e63:ChangePendingReview i:nil="false">ValueHere</e63:ChangePendingReview>
+      <InsertionOrder xmlns:e373="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e373:AccountId>ValueHere</e373:AccountId>
+        <e373:BalanceAmount i:nil="false">ValueHere</e373:BalanceAmount>
+        <e373:BookingCountryCode i:nil="false">ValueHere</e373:BookingCountryCode>
+        <e373:Comment i:nil="false">ValueHere</e373:Comment>
+        <e373:EndDate>ValueHere</e373:EndDate>
+        <e373:InsertionOrderId i:nil="false">ValueHere</e373:InsertionOrderId>
+        <e373:LastModifiedByUserId i:nil="false">ValueHere</e373:LastModifiedByUserId>
+        <e373:LastModifiedTime i:nil="false">ValueHere</e373:LastModifiedTime>
+        <e373:NotificationThreshold i:nil="false">ValueHere</e373:NotificationThreshold>
+        <e373:ReferenceId i:nil="false">ValueHere</e373:ReferenceId>
+        <e373:SpendCapAmount>ValueHere</e373:SpendCapAmount>
+        <e373:StartDate>ValueHere</e373:StartDate>
+        <e373:Name i:nil="false">ValueHere</e373:Name>
+        <e373:Status i:nil="false">ValueHere</e373:Status>
+        <e373:PurchaseOrder i:nil="false">ValueHere</e373:PurchaseOrder>
+        <e373:ChangePendingReview i:nil="false">ValueHere</e373:ChangePendingReview>
       </InsertionOrder>
     </UpdateInsertionOrderRequest>
   </s:Body>

@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the set of accounts and campaigns to include in the report.
 ---
-# AccountThroughCampaignReportScope Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AccountThroughCampaignReportScope Data Object - Reporting
 Defines the set of accounts and campaigns to include in the report.
 
 ## Syntax

@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines the file formats for a download request.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # DownloadFileType Value Set - Bulk
 Defines the file formats for a download request.
 

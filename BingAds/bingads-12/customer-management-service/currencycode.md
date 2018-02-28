@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Reserved.
 ---
-# CurrencyCode Value Set - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# CurrencyCode Value Set - Customer Management
 Reserved.
 
 ## Syntax

@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Value sets reference for the Reporting service.
 ---
-# Reporting Value Sets
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# Reporting Value Sets
 The Reporting service defines the following value sets.
 
 |Value Set|Description|

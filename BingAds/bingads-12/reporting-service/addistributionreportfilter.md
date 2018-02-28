@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the ad distribution medium values that you can use to filter the report data.
 ---
-# AdDistributionReportFilter Value Set - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AdDistributionReportFilter Value Set - Reporting
 Defines the ad distribution medium values that you can use to filter the report data. These values are also used as column values in reports that include ad distribution, such as the account performance report.
 
 ## Syntax

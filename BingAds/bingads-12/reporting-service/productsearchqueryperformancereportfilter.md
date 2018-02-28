@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the Bing Shopping product search query performance report data.
 ---
-# ProductSearchQueryPerformanceReportFilter Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# ProductSearchQueryPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the Bing Shopping product search query performance report data.
 
 ## Syntax

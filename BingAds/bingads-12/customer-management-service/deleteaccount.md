@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# DeleteAccount Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# DeleteAccount Service Operation - Customer Management
 Deletes an account.
 
 > [!NOTE]

@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# GetInsertionOrdersByAccount Service Operation - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# GetInsertionOrdersByAccount Service Operation - Customer Billing
 Gets a list of insertion orders for the specified account.
 
 > [!NOTE]
@@ -80,25 +78,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetInsertionOrdersByAccountResponse xmlns="https://bingads.microsoft.com/Billing/v12">
-      <InsertionOrders xmlns:e58="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e58:InsertionOrder>
-          <e58:AccountId>ValueHere</e58:AccountId>
-          <e58:BalanceAmount d4p1:nil="false">ValueHere</e58:BalanceAmount>
-          <e58:BookingCountryCode d4p1:nil="false">ValueHere</e58:BookingCountryCode>
-          <e58:Comment d4p1:nil="false">ValueHere</e58:Comment>
-          <e58:EndDate>ValueHere</e58:EndDate>
-          <e58:InsertionOrderId d4p1:nil="false">ValueHere</e58:InsertionOrderId>
-          <e58:LastModifiedByUserId d4p1:nil="false">ValueHere</e58:LastModifiedByUserId>
-          <e58:LastModifiedTime d4p1:nil="false">ValueHere</e58:LastModifiedTime>
-          <e58:NotificationThreshold d4p1:nil="false">ValueHere</e58:NotificationThreshold>
-          <e58:ReferenceId d4p1:nil="false">ValueHere</e58:ReferenceId>
-          <e58:SpendCapAmount>ValueHere</e58:SpendCapAmount>
-          <e58:StartDate>ValueHere</e58:StartDate>
-          <e58:Name d4p1:nil="false">ValueHere</e58:Name>
-          <e58:Status d4p1:nil="false">ValueHere</e58:Status>
-          <e58:PurchaseOrder d4p1:nil="false">ValueHere</e58:PurchaseOrder>
-          <e58:ChangePendingReview d4p1:nil="false">ValueHere</e58:ChangePendingReview>
-        </e58:InsertionOrder>
+      <InsertionOrders xmlns:e368="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e368:InsertionOrder>
+          <e368:AccountId>ValueHere</e368:AccountId>
+          <e368:BalanceAmount d4p1:nil="false">ValueHere</e368:BalanceAmount>
+          <e368:BookingCountryCode d4p1:nil="false">ValueHere</e368:BookingCountryCode>
+          <e368:Comment d4p1:nil="false">ValueHere</e368:Comment>
+          <e368:EndDate>ValueHere</e368:EndDate>
+          <e368:InsertionOrderId d4p1:nil="false">ValueHere</e368:InsertionOrderId>
+          <e368:LastModifiedByUserId d4p1:nil="false">ValueHere</e368:LastModifiedByUserId>
+          <e368:LastModifiedTime d4p1:nil="false">ValueHere</e368:LastModifiedTime>
+          <e368:NotificationThreshold d4p1:nil="false">ValueHere</e368:NotificationThreshold>
+          <e368:ReferenceId d4p1:nil="false">ValueHere</e368:ReferenceId>
+          <e368:SpendCapAmount>ValueHere</e368:SpendCapAmount>
+          <e368:StartDate>ValueHere</e368:StartDate>
+          <e368:Name d4p1:nil="false">ValueHere</e368:Name>
+          <e368:Status d4p1:nil="false">ValueHere</e368:Status>
+          <e368:PurchaseOrder d4p1:nil="false">ValueHere</e368:PurchaseOrder>
+          <e368:ChangePendingReview d4p1:nil="false">ValueHere</e368:ChangePendingReview>
+        </e368:InsertionOrder>
       </InsertionOrders>
     </GetInsertionOrdersByAccountResponse>
   </s:Body>

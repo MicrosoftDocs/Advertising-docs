@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Value sets reference for the CustomerManagement service.
 ---
-# Customer Management Value Sets
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# Customer Management Value Sets
 The Customer Management service defines the following value sets.
 
 |Value Set|Description|

@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# GetUser Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# GetUser Service Operation - Customer Management
 Gets the details of a user.
 
 ## <a name="request"></a>Request Elements
@@ -74,58 +72,58 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetUserResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <User xmlns:e17="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e17:ContactInfo d4p1:nil="false">
-          <e17:Address d4p1:nil="false">
-            <e17:City d4p1:nil="false">ValueHere</e17:City>
-            <e17:CountryCode d4p1:nil="false">ValueHere</e17:CountryCode>
-            <e17:Id d4p1:nil="false">ValueHere</e17:Id>
-            <e17:Line1 d4p1:nil="false">ValueHere</e17:Line1>
-            <e17:Line2 d4p1:nil="false">ValueHere</e17:Line2>
-            <e17:Line3 d4p1:nil="false">ValueHere</e17:Line3>
-            <e17:Line4 d4p1:nil="false">ValueHere</e17:Line4>
-            <e17:PostalCode d4p1:nil="false">ValueHere</e17:PostalCode>
-            <e17:StateOrProvince d4p1:nil="false">ValueHere</e17:StateOrProvince>
-            <e17:TimeStamp d4p1:nil="false">ValueHere</e17:TimeStamp>
-          </e17:Address>
-          <e17:ContactByPhone d4p1:nil="false">ValueHere</e17:ContactByPhone>
-          <e17:ContactByPostalMail d4p1:nil="false">ValueHere</e17:ContactByPostalMail>
-          <e17:Email d4p1:nil="false">ValueHere</e17:Email>
-          <e17:EmailFormat d4p1:nil="false">ValueHere</e17:EmailFormat>
-          <e17:Fax d4p1:nil="false">ValueHere</e17:Fax>
-          <e17:HomePhone d4p1:nil="false">ValueHere</e17:HomePhone>
-          <e17:Id d4p1:nil="false">ValueHere</e17:Id>
-          <e17:Mobile d4p1:nil="false">ValueHere</e17:Mobile>
-          <e17:Phone1 d4p1:nil="false">ValueHere</e17:Phone1>
-          <e17:Phone2 d4p1:nil="false">ValueHere</e17:Phone2>
-        </e17:ContactInfo>
-        <e17:CustomerId d4p1:nil="false">ValueHere</e17:CustomerId>
-        <e17:Id d4p1:nil="false">ValueHere</e17:Id>
-        <e17:JobTitle d4p1:nil="false">ValueHere</e17:JobTitle>
-        <e17:LastModifiedByUserId d4p1:nil="false">ValueHere</e17:LastModifiedByUserId>
-        <e17:LastModifiedTime d4p1:nil="false">ValueHere</e17:LastModifiedTime>
-        <e17:Lcid d4p1:nil="false">ValueHere</e17:Lcid>
-        <e17:Name d4p1:nil="false">
-          <e17:FirstName d4p1:nil="false">ValueHere</e17:FirstName>
-          <e17:LastName d4p1:nil="false">ValueHere</e17:LastName>
-          <e17:MiddleInitial d4p1:nil="false">ValueHere</e17:MiddleInitial>
-        </e17:Name>
-        <e17:Password d4p1:nil="false">ValueHere</e17:Password>
-        <e17:SecretAnswer d4p1:nil="false">ValueHere</e17:SecretAnswer>
-        <e17:SecretQuestion>ValueHere</e17:SecretQuestion>
-        <e17:UserLifeCycleStatus d4p1:nil="false">ValueHere</e17:UserLifeCycleStatus>
-        <e17:TimeStamp d4p1:nil="false">ValueHere</e17:TimeStamp>
-        <e17:UserName d4p1:nil="false">ValueHere</e17:UserName>
-        <e17:IsMigratedToMicrosoftAccount>ValueHere</e17:IsMigratedToMicrosoftAccount>
+      <User xmlns:e327="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e327:ContactInfo d4p1:nil="false">
+          <e327:Address d4p1:nil="false">
+            <e327:City d4p1:nil="false">ValueHere</e327:City>
+            <e327:CountryCode d4p1:nil="false">ValueHere</e327:CountryCode>
+            <e327:Id d4p1:nil="false">ValueHere</e327:Id>
+            <e327:Line1 d4p1:nil="false">ValueHere</e327:Line1>
+            <e327:Line2 d4p1:nil="false">ValueHere</e327:Line2>
+            <e327:Line3 d4p1:nil="false">ValueHere</e327:Line3>
+            <e327:Line4 d4p1:nil="false">ValueHere</e327:Line4>
+            <e327:PostalCode d4p1:nil="false">ValueHere</e327:PostalCode>
+            <e327:StateOrProvince d4p1:nil="false">ValueHere</e327:StateOrProvince>
+            <e327:TimeStamp d4p1:nil="false">ValueHere</e327:TimeStamp>
+          </e327:Address>
+          <e327:ContactByPhone d4p1:nil="false">ValueHere</e327:ContactByPhone>
+          <e327:ContactByPostalMail d4p1:nil="false">ValueHere</e327:ContactByPostalMail>
+          <e327:Email d4p1:nil="false">ValueHere</e327:Email>
+          <e327:EmailFormat d4p1:nil="false">ValueHere</e327:EmailFormat>
+          <e327:Fax d4p1:nil="false">ValueHere</e327:Fax>
+          <e327:HomePhone d4p1:nil="false">ValueHere</e327:HomePhone>
+          <e327:Id d4p1:nil="false">ValueHere</e327:Id>
+          <e327:Mobile d4p1:nil="false">ValueHere</e327:Mobile>
+          <e327:Phone1 d4p1:nil="false">ValueHere</e327:Phone1>
+          <e327:Phone2 d4p1:nil="false">ValueHere</e327:Phone2>
+        </e327:ContactInfo>
+        <e327:CustomerId d4p1:nil="false">ValueHere</e327:CustomerId>
+        <e327:Id d4p1:nil="false">ValueHere</e327:Id>
+        <e327:JobTitle d4p1:nil="false">ValueHere</e327:JobTitle>
+        <e327:LastModifiedByUserId d4p1:nil="false">ValueHere</e327:LastModifiedByUserId>
+        <e327:LastModifiedTime d4p1:nil="false">ValueHere</e327:LastModifiedTime>
+        <e327:Lcid d4p1:nil="false">ValueHere</e327:Lcid>
+        <e327:Name d4p1:nil="false">
+          <e327:FirstName d4p1:nil="false">ValueHere</e327:FirstName>
+          <e327:LastName d4p1:nil="false">ValueHere</e327:LastName>
+          <e327:MiddleInitial d4p1:nil="false">ValueHere</e327:MiddleInitial>
+        </e327:Name>
+        <e327:Password d4p1:nil="false">ValueHere</e327:Password>
+        <e327:SecretAnswer d4p1:nil="false">ValueHere</e327:SecretAnswer>
+        <e327:SecretQuestion>ValueHere</e327:SecretQuestion>
+        <e327:UserLifeCycleStatus d4p1:nil="false">ValueHere</e327:UserLifeCycleStatus>
+        <e327:TimeStamp d4p1:nil="false">ValueHere</e327:TimeStamp>
+        <e327:UserName d4p1:nil="false">ValueHere</e327:UserName>
+        <e327:IsMigratedToMicrosoftAccount>ValueHere</e327:IsMigratedToMicrosoftAccount>
       </User>
-      <CustomerRoles xmlns:e18="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e18:CustomerRole>
-          <e18:RoleId>ValueHere</e18:RoleId>
-          <e18:CustomerId>ValueHere</e18:CustomerId>
-          <e18:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <CustomerRoles xmlns:e328="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e328:CustomerRole>
+          <e328:RoleId>ValueHere</e328:RoleId>
+          <e328:CustomerId>ValueHere</e328:CustomerId>
+          <e328:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:long>ValueHere</a1:long>
-          </e18:AccountIds>
-        </e18:CustomerRole>
+          </e328:AccountIds>
+        </e328:CustomerRole>
       </CustomerRoles>
     </GetUserResponse>
   </s:Body>

@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # GetKeywordLocations Service Operation - Ad Insight
 Gets the geographical locations of users who have searched for the specified keywords.
 

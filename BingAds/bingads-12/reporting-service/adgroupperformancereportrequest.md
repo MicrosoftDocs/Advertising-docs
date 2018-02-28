@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an ad group performance report request.
 ---
-# AdGroupPerformanceReportRequest Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AdGroupPerformanceReportRequest Data Object - Reporting
 Defines an ad group performance report request. Use this report to more broadly compare delivery performance statistics by ad group, campaign, or account attributes rather than at the keyword level.
 
 You can request impressions, impression share (%), clicks, spend, and average cost per click of your ad groups. Once downloaded, this data can be sorted by ad group, ad group status, language, and network.

@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# SearchInsertionOrders Service Operation - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# SearchInsertionOrders Service Operation - Customer Billing
 Searches for insertion orders that match a specified criteria.
 
 ## <a name="request"></a>Request Elements
@@ -59,22 +57,22 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SearchInsertionOrdersRequest xmlns="https://bingads.microsoft.com/Billing/v12">
-      <Predicates xmlns:e59="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e59:Predicate>
-          <e59:Field i:nil="false">ValueHere</e59:Field>
-          <e59:Operator>ValueHere</e59:Operator>
-          <e59:Value i:nil="false">ValueHere</e59:Value>
-        </e59:Predicate>
+      <Predicates xmlns:e369="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e369:Predicate>
+          <e369:Field i:nil="false">ValueHere</e369:Field>
+          <e369:Operator>ValueHere</e369:Operator>
+          <e369:Value i:nil="false">ValueHere</e369:Value>
+        </e369:Predicate>
       </Predicates>
-      <Ordering xmlns:e60="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e60:OrderBy>
-          <e60:Field>ValueHere</e60:Field>
-          <e60:Order>ValueHere</e60:Order>
-        </e60:OrderBy>
+      <Ordering xmlns:e370="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e370:OrderBy>
+          <e370:Field>ValueHere</e370:Field>
+          <e370:Order>ValueHere</e370:Order>
+        </e370:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e61="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e61:Index>ValueHere</e61:Index>
-        <e61:Size>ValueHere</e61:Size>
+      <PageInfo xmlns:e371="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e371:Index>ValueHere</e371:Index>
+        <e371:Size>ValueHere</e371:Size>
       </PageInfo>
     </SearchInsertionOrdersRequest>
   </s:Body>
@@ -91,25 +89,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SearchInsertionOrdersResponse xmlns="https://bingads.microsoft.com/Billing/v12">
-      <InsertionOrders xmlns:e62="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e62:InsertionOrder>
-          <e62:AccountId>ValueHere</e62:AccountId>
-          <e62:BalanceAmount d4p1:nil="false">ValueHere</e62:BalanceAmount>
-          <e62:BookingCountryCode d4p1:nil="false">ValueHere</e62:BookingCountryCode>
-          <e62:Comment d4p1:nil="false">ValueHere</e62:Comment>
-          <e62:EndDate>ValueHere</e62:EndDate>
-          <e62:InsertionOrderId d4p1:nil="false">ValueHere</e62:InsertionOrderId>
-          <e62:LastModifiedByUserId d4p1:nil="false">ValueHere</e62:LastModifiedByUserId>
-          <e62:LastModifiedTime d4p1:nil="false">ValueHere</e62:LastModifiedTime>
-          <e62:NotificationThreshold d4p1:nil="false">ValueHere</e62:NotificationThreshold>
-          <e62:ReferenceId d4p1:nil="false">ValueHere</e62:ReferenceId>
-          <e62:SpendCapAmount>ValueHere</e62:SpendCapAmount>
-          <e62:StartDate>ValueHere</e62:StartDate>
-          <e62:Name d4p1:nil="false">ValueHere</e62:Name>
-          <e62:Status d4p1:nil="false">ValueHere</e62:Status>
-          <e62:PurchaseOrder d4p1:nil="false">ValueHere</e62:PurchaseOrder>
-          <e62:ChangePendingReview d4p1:nil="false">ValueHere</e62:ChangePendingReview>
-        </e62:InsertionOrder>
+      <InsertionOrders xmlns:e372="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e372:InsertionOrder>
+          <e372:AccountId>ValueHere</e372:AccountId>
+          <e372:BalanceAmount d4p1:nil="false">ValueHere</e372:BalanceAmount>
+          <e372:BookingCountryCode d4p1:nil="false">ValueHere</e372:BookingCountryCode>
+          <e372:Comment d4p1:nil="false">ValueHere</e372:Comment>
+          <e372:EndDate>ValueHere</e372:EndDate>
+          <e372:InsertionOrderId d4p1:nil="false">ValueHere</e372:InsertionOrderId>
+          <e372:LastModifiedByUserId d4p1:nil="false">ValueHere</e372:LastModifiedByUserId>
+          <e372:LastModifiedTime d4p1:nil="false">ValueHere</e372:LastModifiedTime>
+          <e372:NotificationThreshold d4p1:nil="false">ValueHere</e372:NotificationThreshold>
+          <e372:ReferenceId d4p1:nil="false">ValueHere</e372:ReferenceId>
+          <e372:SpendCapAmount>ValueHere</e372:SpendCapAmount>
+          <e372:StartDate>ValueHere</e372:StartDate>
+          <e372:Name d4p1:nil="false">ValueHere</e372:Name>
+          <e372:Status d4p1:nil="false">ValueHere</e372:Status>
+          <e372:PurchaseOrder d4p1:nil="false">ValueHere</e372:PurchaseOrder>
+          <e372:ChangePendingReview d4p1:nil="false">ValueHere</e372:ChangePendingReview>
+        </e372:InsertionOrder>
       </InsertionOrders>
     </SearchInsertionOrdersResponse>
   </s:Body>

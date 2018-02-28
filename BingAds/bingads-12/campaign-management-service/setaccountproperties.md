@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # SetAccountProperties Service Operation - Campaign Management
 Sets account level properties by name.
 

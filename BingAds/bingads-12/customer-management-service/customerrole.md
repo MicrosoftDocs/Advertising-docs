@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Reserved.
 ---
-# CustomerRole Data Object - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# CustomerRole Data Object - Customer Management
 Reserved.
 
 ## Syntax

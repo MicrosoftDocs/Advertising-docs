@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines a negative keyword with match type.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # NegativeKeyword Data Object - Ad Insight
 Defines a negative keyword with match type.
 

@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: For internal use only.
 ---
-# ServiceLevel Value Set - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# ServiceLevel Value Set - Customer Management
 For internal use only.
 
 ## Syntax

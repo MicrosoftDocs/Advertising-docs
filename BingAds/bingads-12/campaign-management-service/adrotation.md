@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that specifies the type of ad rotation to apply to the ad group.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # AdRotation Data Object - Campaign Management
 Defines an object that specifies the type of ad rotation to apply to the ad group.
 

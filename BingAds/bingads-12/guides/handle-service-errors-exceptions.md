@@ -6,6 +6,8 @@ author: "eric-urban"
 ms.author: "eur"
 description: Learn about error handling and troubleshooting your application.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Handling Service Errors and Exceptions
 This article describes details on error handling and troubleshooting your application.
 

@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# GetBillingDocuments Service Operation - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# GetBillingDocuments Service Operation - Customer Billing
 Gets the specified billing documents.
 
 ## <a name="request"></a>Request Elements
@@ -81,12 +79,12 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBillingDocumentsResponse xmlns="https://bingads.microsoft.com/Billing/v12">
-      <BillingDocuments xmlns:e56="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e56:BillingDocument>
-          <e56:Data d4p1:nil="false">ValueHere</e56:Data>
-          <e56:Id>ValueHere</e56:Id>
-          <e56:Type>ValueHere</e56:Type>
-        </e56:BillingDocument>
+      <BillingDocuments xmlns:e366="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e366:BillingDocument>
+          <e366:Data d4p1:nil="false">ValueHere</e366:Data>
+          <e366:Id>ValueHere</e366:Id>
+          <e366:Type>ValueHere</e366:Type>
+        </e366:BillingDocument>
       </BillingDocuments>
     </GetBillingDocumentsResponse>
   </s:Body>

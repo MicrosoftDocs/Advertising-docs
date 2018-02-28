@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the age and gender demographic report data.
 ---
-# AgeGenderDemographicReportFilter Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AgeGenderDemographicReportFilter Data Object - Reporting
 Defines the criteria to use to filter the age and gender demographic report data.
 
 ## Syntax

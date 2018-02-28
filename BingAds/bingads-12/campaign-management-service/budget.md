@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Represents a budget that can be shared by any campaigns in an account.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Budget Data Object - Campaign Management
 Represents a budget that can be shared by any campaigns in an account.
 

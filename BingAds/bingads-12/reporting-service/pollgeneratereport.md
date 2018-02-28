@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# PollGenerateReport Service Operation - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# PollGenerateReport Service Operation - Reporting
 Gets the status of a report request.
 
 > [!NOTE]

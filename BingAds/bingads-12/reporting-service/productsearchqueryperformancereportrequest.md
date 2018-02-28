@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a Bing Shopping campaign product search query performance report request.
 ---
-# ProductSearchQueryPerformanceReportRequest Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# ProductSearchQueryPerformanceReportRequest Data Object - Reporting
 Defines a Bing Shopping campaign product search query performance report request. Use this report to get insight into what your audience is searching for when your ads are shown as well as ensure that your product titles are relevant to search queries.  
 
 You can request impressions, clicks, and click-through rate based on the search terms that have triggered your ads. 

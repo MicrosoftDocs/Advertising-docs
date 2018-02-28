@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a billing document.
 ---
-# BillingDocument Data Object - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# BillingDocument Data Object - Customer Billing
 Defines a billing document.
 
 ## Syntax

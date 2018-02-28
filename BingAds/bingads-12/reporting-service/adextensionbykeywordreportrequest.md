@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an ad extension by keyword report request.
 ---
-# AdExtensionByKeywordReportRequest Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AdExtensionByKeywordReportRequest Data Object - Reporting
 Defines an ad extension by keyword report request. Use this report to compare how well different versions of your ad extensions are performing for each keyword.
 
 You can request impressions, clicks, spend, and average cost per click of your extensions for each keyword. Once downloaded, this data can be sorted by keyword, keyword ID, ad extension type, and ad extension version.

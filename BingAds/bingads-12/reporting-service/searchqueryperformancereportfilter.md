@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the search query performance report data.
 ---
-# SearchQueryPerformanceReportFilter Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# SearchQueryPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the search query performance report data.
 
 ## Syntax

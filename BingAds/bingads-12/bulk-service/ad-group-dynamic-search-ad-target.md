@@ -8,6 +8,8 @@ description: Describes the Ad Group Dynamic Search Ad Target fields in a Bulk fi
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Ad Group Dynamic Search Ad Target Record - Bulk
 Defines an Ad Group Dynamic Search Ad Target that can be uploaded and downloaded in a bulk file.  
 

@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the name of a user.
 ---
-# PersonName Data Object - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# PersonName Data Object - Customer Management
 Defines the name of a user.
 
 ## Syntax

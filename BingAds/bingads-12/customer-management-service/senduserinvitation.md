@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# SendUserInvitation Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# SendUserInvitation Service Operation - Customer Management
 Sends an invitation for  a Microsoft account user to manage one or more Bing Ads customer accounts. When the invitation is accepted, the user's Microsoft account is linked to the specified Bing Ads customer accounts.  
 
 It is possible to have multiple pending invitations sent to the same email address, which have not yet expired. It is also possible for those invitations to have specified different user roles, for example if you sent an invitation with an incorrect user role and then sent a second invitation with the correct user role. The recipient can accept any of the invitations. The Bing Ads API does not support any operations to delete pending user invitations. After you invite a user, the only way to cancel the invitation is through the Bing Ads web application. You can find both pending and accepted invitations in the Users section of Accounts & Billing.
@@ -65,18 +63,18 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SendUserInvitationRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <UserInvitation xmlns:e39="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e39:Id>ValueHere</e39:Id>
-        <e39:FirstName i:nil="false">ValueHere</e39:FirstName>
-        <e39:LastName i:nil="false">ValueHere</e39:LastName>
-        <e39:Email i:nil="false">ValueHere</e39:Email>
-        <e39:CustomerId>ValueHere</e39:CustomerId>
-        <e39:RoleId>ValueHere</e39:RoleId>
-        <e39:AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <UserInvitation xmlns:e349="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e349:Id>ValueHere</e349:Id>
+        <e349:FirstName i:nil="false">ValueHere</e349:FirstName>
+        <e349:LastName i:nil="false">ValueHere</e349:LastName>
+        <e349:Email i:nil="false">ValueHere</e349:Email>
+        <e349:CustomerId>ValueHere</e349:CustomerId>
+        <e349:RoleId>ValueHere</e349:RoleId>
+        <e349:AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <a1:long>ValueHere</a1:long>
-        </e39:AccountIds>
-        <e39:ExpirationDate>ValueHere</e39:ExpirationDate>
-        <e39:Lcid>ValueHere</e39:Lcid>
+        </e349:AccountIds>
+        <e349:ExpirationDate>ValueHere</e349:ExpirationDate>
+        <e349:Lcid>ValueHere</e349:Lcid>
       </UserInvitation>
     </SendUserInvitationRequest>
   </s:Body>

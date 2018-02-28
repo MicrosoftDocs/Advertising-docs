@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a product partition unit performance report request that aggregates the performance data by product partition unit for a specified time period.
 ---
-# ProductPartitionUnitPerformanceReportRequest Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# ProductPartitionUnitPerformanceReportRequest Data Object - Reporting
 Defines a product partition unit performance report request that aggregates the performance data by product partition unit for a specified time period. You can include details in the report such as impressions, clicks, and spend that you can use to identify whether or not the product partitions are performing well.
 
 To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.

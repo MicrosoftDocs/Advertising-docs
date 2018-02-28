@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# GetAccountMonthlySpend Service Operation - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# GetAccountMonthlySpend Service Operation - Customer Billing
 Gets the amount spent by the account in the specified month.
 
 ## <a name="request"></a>Request Elements

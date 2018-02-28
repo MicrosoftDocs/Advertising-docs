@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# SubmitGenerateReport Service Operation - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# SubmitGenerateReport Service Operation - Reporting
 Submits a report request.
 
 > [!NOTE]

@@ -8,6 +8,8 @@ description: Create a desktop application using the Bing Ads Python SDK.
 dev_langs:
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Walkthrough: Bing Ads Desktop Application in Python
 This tutorial describes how to get started running a Bing Ads desktop console application using Python. You will create a new project in Visual Studio, set up a virtual environment, and run the application in a console. By the end of this tutorial you will have a desktop console application that will authenticate your Microsoft account user credentials and add a new campaign to your Bing Ads account. Using a Microsoft account requires that you interact with a web browser control (UI) at least once to give initial consent. If you modify the example (described below) you may choose to [Save and use the refresh token](#saverefreshtoken) and use it repetitively without user input in your console application.
 

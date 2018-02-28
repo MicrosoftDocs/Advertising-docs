@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# GetAccountsInfo Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# GetAccountsInfo Service Operation - Customer Management
 Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.
 
 ## <a name="request"></a>Request Elements
@@ -75,14 +73,14 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetAccountsInfoResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <AccountsInfo xmlns:e13="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e13:AccountInfo>
-          <e13:Id>ValueHere</e13:Id>
-          <e13:Name d4p1:nil="false">ValueHere</e13:Name>
-          <e13:Number d4p1:nil="false">ValueHere</e13:Number>
-          <e13:AccountLifeCycleStatus>ValueHere</e13:AccountLifeCycleStatus>
-          <e13:PauseReason d4p1:nil="false">ValueHere</e13:PauseReason>
-        </e13:AccountInfo>
+      <AccountsInfo xmlns:e323="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e323:AccountInfo>
+          <e323:Id>ValueHere</e323:Id>
+          <e323:Name d4p1:nil="false">ValueHere</e323:Name>
+          <e323:Number d4p1:nil="false">ValueHere</e323:Number>
+          <e323:AccountLifeCycleStatus>ValueHere</e323:AccountLifeCycleStatus>
+          <e323:PauseReason d4p1:nil="false">ValueHere</e323:PauseReason>
+        </e323:AccountInfo>
       </AccountsInfo>
     </GetAccountsInfoResponse>
   </s:Body>

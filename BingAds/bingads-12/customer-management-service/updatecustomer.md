@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# UpdateCustomer Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# UpdateCustomer Service Operation - Customer Management
 Updates the details of the specified customer.
 
 ## <a name="request"></a>Request Elements
@@ -57,37 +55,37 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <UpdateCustomerRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <Customer xmlns:e52="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e52:CustomerAddress i:nil="false">
-          <e52:City i:nil="false">ValueHere</e52:City>
-          <e52:CountryCode i:nil="false">ValueHere</e52:CountryCode>
-          <e52:Id i:nil="false">ValueHere</e52:Id>
-          <e52:Line1 i:nil="false">ValueHere</e52:Line1>
-          <e52:Line2 i:nil="false">ValueHere</e52:Line2>
-          <e52:Line3 i:nil="false">ValueHere</e52:Line3>
-          <e52:Line4 i:nil="false">ValueHere</e52:Line4>
-          <e52:PostalCode i:nil="false">ValueHere</e52:PostalCode>
-          <e52:StateOrProvince i:nil="false">ValueHere</e52:StateOrProvince>
-          <e52:TimeStamp i:nil="false">ValueHere</e52:TimeStamp>
-        </e52:CustomerAddress>
-        <e52:CustomerFinancialStatus i:nil="false">ValueHere</e52:CustomerFinancialStatus>
-        <e52:Id i:nil="false">ValueHere</e52:Id>
-        <e52:Industry i:nil="false">ValueHere</e52:Industry>
-        <e52:LastModifiedByUserId i:nil="false">ValueHere</e52:LastModifiedByUserId>
-        <e52:LastModifiedTime i:nil="false">ValueHere</e52:LastModifiedTime>
-        <e52:MarketCountry i:nil="false">ValueHere</e52:MarketCountry>
-        <ForwardCompatibilityMap xmlns:e53="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e53:KeyValuePairOfstringstring>
-            <e53:key i:nil="false">ValueHere</e53:key>
-            <e53:value i:nil="false">ValueHere</e53:value>
-          </e53:KeyValuePairOfstringstring>
+      <Customer xmlns:e362="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e362:CustomerAddress i:nil="false">
+          <e362:City i:nil="false">ValueHere</e362:City>
+          <e362:CountryCode i:nil="false">ValueHere</e362:CountryCode>
+          <e362:Id i:nil="false">ValueHere</e362:Id>
+          <e362:Line1 i:nil="false">ValueHere</e362:Line1>
+          <e362:Line2 i:nil="false">ValueHere</e362:Line2>
+          <e362:Line3 i:nil="false">ValueHere</e362:Line3>
+          <e362:Line4 i:nil="false">ValueHere</e362:Line4>
+          <e362:PostalCode i:nil="false">ValueHere</e362:PostalCode>
+          <e362:StateOrProvince i:nil="false">ValueHere</e362:StateOrProvince>
+          <e362:TimeStamp i:nil="false">ValueHere</e362:TimeStamp>
+        </e362:CustomerAddress>
+        <e362:CustomerFinancialStatus i:nil="false">ValueHere</e362:CustomerFinancialStatus>
+        <e362:Id i:nil="false">ValueHere</e362:Id>
+        <e362:Industry i:nil="false">ValueHere</e362:Industry>
+        <e362:LastModifiedByUserId i:nil="false">ValueHere</e362:LastModifiedByUserId>
+        <e362:LastModifiedTime i:nil="false">ValueHere</e362:LastModifiedTime>
+        <e362:MarketCountry i:nil="false">ValueHere</e362:MarketCountry>
+        <ForwardCompatibilityMap xmlns:e363="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e363:KeyValuePairOfstringstring>
+            <e363:key i:nil="false">ValueHere</e363:key>
+            <e363:value i:nil="false">ValueHere</e363:value>
+          </e363:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e52:MarketLanguage i:nil="false">ValueHere</e52:MarketLanguage>
-        <e52:Name i:nil="false">ValueHere</e52:Name>
-        <e52:ServiceLevel i:nil="false">ValueHere</e52:ServiceLevel>
-        <e52:CustomerLifeCycleStatus i:nil="false">ValueHere</e52:CustomerLifeCycleStatus>
-        <e52:TimeStamp i:nil="false">ValueHere</e52:TimeStamp>
-        <e52:Number i:nil="false">ValueHere</e52:Number>
+        <e362:MarketLanguage i:nil="false">ValueHere</e362:MarketLanguage>
+        <e362:Name i:nil="false">ValueHere</e362:Name>
+        <e362:ServiceLevel i:nil="false">ValueHere</e362:ServiceLevel>
+        <e362:CustomerLifeCycleStatus i:nil="false">ValueHere</e362:CustomerLifeCycleStatus>
+        <e362:TimeStamp i:nil="false">ValueHere</e362:TimeStamp>
+        <e362:Number i:nil="false">ValueHere</e362:Number>
       </Customer>
     </UpdateCustomerRequest>
   </s:Body>

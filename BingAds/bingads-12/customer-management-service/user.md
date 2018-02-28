@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a user.
 ---
-# User Data Object - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# User Data Object - Customer Management
 Defines a user.
 
 ## Syntax

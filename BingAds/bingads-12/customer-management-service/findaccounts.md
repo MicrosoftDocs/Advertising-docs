@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# FindAccounts Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# FindAccounts Service Operation - Customer Management
 Gets a list of accounts owned by the specified customer that match the specified filter criteria.
 
 ## <a name="request"></a>Request Elements
@@ -77,14 +75,14 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <FindAccountsResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <AccountsInfo xmlns:e8="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e8:AccountInfo>
-          <e8:Id>ValueHere</e8:Id>
-          <e8:Name d4p1:nil="false">ValueHere</e8:Name>
-          <e8:Number d4p1:nil="false">ValueHere</e8:Number>
-          <e8:AccountLifeCycleStatus>ValueHere</e8:AccountLifeCycleStatus>
-          <e8:PauseReason d4p1:nil="false">ValueHere</e8:PauseReason>
-        </e8:AccountInfo>
+      <AccountsInfo xmlns:e318="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e318:AccountInfo>
+          <e318:Id>ValueHere</e318:Id>
+          <e318:Name d4p1:nil="false">ValueHere</e318:Name>
+          <e318:Number d4p1:nil="false">ValueHere</e318:Number>
+          <e318:AccountLifeCycleStatus>ValueHere</e318:AccountLifeCycleStatus>
+          <e318:PauseReason d4p1:nil="false">ValueHere</e318:PauseReason>
+        </e318:AccountInfo>
       </AccountsInfo>
     </FindAccountsResponse>
   </s:Body>

@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# GetCustomer Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# GetCustomer Service Operation - Customer Management
 Gets the details of a customer.
 
 ## <a name="request"></a>Request Elements
@@ -73,37 +71,37 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetCustomerResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <Customer xmlns:e14="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e14:CustomerAddress d4p1:nil="false">
-          <e14:City d4p1:nil="false">ValueHere</e14:City>
-          <e14:CountryCode d4p1:nil="false">ValueHere</e14:CountryCode>
-          <e14:Id d4p1:nil="false">ValueHere</e14:Id>
-          <e14:Line1 d4p1:nil="false">ValueHere</e14:Line1>
-          <e14:Line2 d4p1:nil="false">ValueHere</e14:Line2>
-          <e14:Line3 d4p1:nil="false">ValueHere</e14:Line3>
-          <e14:Line4 d4p1:nil="false">ValueHere</e14:Line4>
-          <e14:PostalCode d4p1:nil="false">ValueHere</e14:PostalCode>
-          <e14:StateOrProvince d4p1:nil="false">ValueHere</e14:StateOrProvince>
-          <e14:TimeStamp d4p1:nil="false">ValueHere</e14:TimeStamp>
-        </e14:CustomerAddress>
-        <e14:CustomerFinancialStatus d4p1:nil="false">ValueHere</e14:CustomerFinancialStatus>
-        <e14:Id d4p1:nil="false">ValueHere</e14:Id>
-        <e14:Industry d4p1:nil="false">ValueHere</e14:Industry>
-        <e14:LastModifiedByUserId d4p1:nil="false">ValueHere</e14:LastModifiedByUserId>
-        <e14:LastModifiedTime d4p1:nil="false">ValueHere</e14:LastModifiedTime>
-        <e14:MarketCountry d4p1:nil="false">ValueHere</e14:MarketCountry>
-        <ForwardCompatibilityMap xmlns:e15="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-          <e15:KeyValuePairOfstringstring>
-            <e15:key d4p1:nil="false">ValueHere</e15:key>
-            <e15:value d4p1:nil="false">ValueHere</e15:value>
-          </e15:KeyValuePairOfstringstring>
+      <Customer xmlns:e324="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e324:CustomerAddress d4p1:nil="false">
+          <e324:City d4p1:nil="false">ValueHere</e324:City>
+          <e324:CountryCode d4p1:nil="false">ValueHere</e324:CountryCode>
+          <e324:Id d4p1:nil="false">ValueHere</e324:Id>
+          <e324:Line1 d4p1:nil="false">ValueHere</e324:Line1>
+          <e324:Line2 d4p1:nil="false">ValueHere</e324:Line2>
+          <e324:Line3 d4p1:nil="false">ValueHere</e324:Line3>
+          <e324:Line4 d4p1:nil="false">ValueHere</e324:Line4>
+          <e324:PostalCode d4p1:nil="false">ValueHere</e324:PostalCode>
+          <e324:StateOrProvince d4p1:nil="false">ValueHere</e324:StateOrProvince>
+          <e324:TimeStamp d4p1:nil="false">ValueHere</e324:TimeStamp>
+        </e324:CustomerAddress>
+        <e324:CustomerFinancialStatus d4p1:nil="false">ValueHere</e324:CustomerFinancialStatus>
+        <e324:Id d4p1:nil="false">ValueHere</e324:Id>
+        <e324:Industry d4p1:nil="false">ValueHere</e324:Industry>
+        <e324:LastModifiedByUserId d4p1:nil="false">ValueHere</e324:LastModifiedByUserId>
+        <e324:LastModifiedTime d4p1:nil="false">ValueHere</e324:LastModifiedTime>
+        <e324:MarketCountry d4p1:nil="false">ValueHere</e324:MarketCountry>
+        <ForwardCompatibilityMap xmlns:e325="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+          <e325:KeyValuePairOfstringstring>
+            <e325:key d4p1:nil="false">ValueHere</e325:key>
+            <e325:value d4p1:nil="false">ValueHere</e325:value>
+          </e325:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e14:MarketLanguage d4p1:nil="false">ValueHere</e14:MarketLanguage>
-        <e14:Name d4p1:nil="false">ValueHere</e14:Name>
-        <e14:ServiceLevel d4p1:nil="false">ValueHere</e14:ServiceLevel>
-        <e14:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e14:CustomerLifeCycleStatus>
-        <e14:TimeStamp d4p1:nil="false">ValueHere</e14:TimeStamp>
-        <e14:Number d4p1:nil="false">ValueHere</e14:Number>
+        <e324:MarketLanguage d4p1:nil="false">ValueHere</e324:MarketLanguage>
+        <e324:Name d4p1:nil="false">ValueHere</e324:Name>
+        <e324:ServiceLevel d4p1:nil="false">ValueHere</e324:ServiceLevel>
+        <e324:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e324:CustomerLifeCycleStatus>
+        <e324:TimeStamp d4p1:nil="false">ValueHere</e324:TimeStamp>
+        <e324:Number d4p1:nil="false">ValueHere</e324:Number>
       </Customer>
     </GetCustomerResponse>
   </s:Body>

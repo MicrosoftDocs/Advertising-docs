@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Reserved.
 ---
-# AutoTagType Value Set - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AutoTagType Value Set - Customer Management
 Reserved.
 
 ## Syntax

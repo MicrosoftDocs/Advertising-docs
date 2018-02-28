@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Dynamic Search Campaigns Code Example
 This example uses the Bing Ads Campaign Management service to setup a Dynamic Search Ads (DSA) campaign.
 

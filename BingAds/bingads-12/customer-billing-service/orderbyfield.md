@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the field order of insertion orders returned using SearchInsertionOrders.
 ---
-# OrderByField Value Set - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# OrderByField Value Set - Customer Billing
 Defines the field order of insertion orders returned using [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
 
 ## Syntax

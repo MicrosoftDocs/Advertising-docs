@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains the marketplace impact statistics of including broad match type keyword bids.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # BroadMatchKeywordOpportunity Data Object - Ad Insight
 Defines an object that contains the marketplace impact statistics of including broad match type keyword bids.
 

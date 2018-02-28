@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # SuggestKeywordsFromExistingKeywords Service Operation - Ad Insight
 Suggests keywords that could perform better than the specified keywords.
 

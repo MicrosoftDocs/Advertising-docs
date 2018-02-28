@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains the longitude and latitude coordinates of a geographical location.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # GeoPoint Data Object - Campaign Management
 Defines an object that contains the longitude and latitude coordinates of a geographical location.
 

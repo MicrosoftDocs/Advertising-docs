@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible status values of an InsertionOrder.
 ---
-# InsertionOrderStatus Value Set - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# InsertionOrderStatus Value Set - Customer Billing
 Defines the possible status values of an [InsertionOrder](../customer-billing-service/insertionorder.md).
 
 ## Syntax

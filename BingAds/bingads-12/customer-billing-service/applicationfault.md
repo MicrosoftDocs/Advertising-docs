@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the base object from which all fault detail objects derive.
 ---
-# ApplicationFault Data Object - Customer Billing
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# ApplicationFault Data Object - Customer Billing
 Defines the base object from which all fault detail objects derive.
 
 ## Syntax

@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# UpdateUser Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# UpdateUser Service Operation - Customer Management
 Updates the details of the specified user.
 
 ## <a name="request"></a>Request Elements
@@ -57,49 +55,49 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <UpdateUserRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <User xmlns:e54="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e54:ContactInfo i:nil="false">
-          <e54:Address i:nil="false">
-            <e54:City i:nil="false">ValueHere</e54:City>
-            <e54:CountryCode i:nil="false">ValueHere</e54:CountryCode>
-            <e54:Id i:nil="false">ValueHere</e54:Id>
-            <e54:Line1 i:nil="false">ValueHere</e54:Line1>
-            <e54:Line2 i:nil="false">ValueHere</e54:Line2>
-            <e54:Line3 i:nil="false">ValueHere</e54:Line3>
-            <e54:Line4 i:nil="false">ValueHere</e54:Line4>
-            <e54:PostalCode i:nil="false">ValueHere</e54:PostalCode>
-            <e54:StateOrProvince i:nil="false">ValueHere</e54:StateOrProvince>
-            <e54:TimeStamp i:nil="false">ValueHere</e54:TimeStamp>
-          </e54:Address>
-          <e54:ContactByPhone i:nil="false">ValueHere</e54:ContactByPhone>
-          <e54:ContactByPostalMail i:nil="false">ValueHere</e54:ContactByPostalMail>
-          <e54:Email i:nil="false">ValueHere</e54:Email>
-          <e54:EmailFormat i:nil="false">ValueHere</e54:EmailFormat>
-          <e54:Fax i:nil="false">ValueHere</e54:Fax>
-          <e54:HomePhone i:nil="false">ValueHere</e54:HomePhone>
-          <e54:Id i:nil="false">ValueHere</e54:Id>
-          <e54:Mobile i:nil="false">ValueHere</e54:Mobile>
-          <e54:Phone1 i:nil="false">ValueHere</e54:Phone1>
-          <e54:Phone2 i:nil="false">ValueHere</e54:Phone2>
-        </e54:ContactInfo>
-        <e54:CustomerId i:nil="false">ValueHere</e54:CustomerId>
-        <e54:Id i:nil="false">ValueHere</e54:Id>
-        <e54:JobTitle i:nil="false">ValueHere</e54:JobTitle>
-        <e54:LastModifiedByUserId i:nil="false">ValueHere</e54:LastModifiedByUserId>
-        <e54:LastModifiedTime i:nil="false">ValueHere</e54:LastModifiedTime>
-        <e54:Lcid i:nil="false">ValueHere</e54:Lcid>
-        <e54:Name i:nil="false">
-          <e54:FirstName i:nil="false">ValueHere</e54:FirstName>
-          <e54:LastName i:nil="false">ValueHere</e54:LastName>
-          <e54:MiddleInitial i:nil="false">ValueHere</e54:MiddleInitial>
-        </e54:Name>
-        <e54:Password i:nil="false">ValueHere</e54:Password>
-        <e54:SecretAnswer i:nil="false">ValueHere</e54:SecretAnswer>
-        <e54:SecretQuestion>ValueHere</e54:SecretQuestion>
-        <e54:UserLifeCycleStatus i:nil="false">ValueHere</e54:UserLifeCycleStatus>
-        <e54:TimeStamp i:nil="false">ValueHere</e54:TimeStamp>
-        <e54:UserName i:nil="false">ValueHere</e54:UserName>
-        <e54:IsMigratedToMicrosoftAccount>ValueHere</e54:IsMigratedToMicrosoftAccount>
+      <User xmlns:e364="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e364:ContactInfo i:nil="false">
+          <e364:Address i:nil="false">
+            <e364:City i:nil="false">ValueHere</e364:City>
+            <e364:CountryCode i:nil="false">ValueHere</e364:CountryCode>
+            <e364:Id i:nil="false">ValueHere</e364:Id>
+            <e364:Line1 i:nil="false">ValueHere</e364:Line1>
+            <e364:Line2 i:nil="false">ValueHere</e364:Line2>
+            <e364:Line3 i:nil="false">ValueHere</e364:Line3>
+            <e364:Line4 i:nil="false">ValueHere</e364:Line4>
+            <e364:PostalCode i:nil="false">ValueHere</e364:PostalCode>
+            <e364:StateOrProvince i:nil="false">ValueHere</e364:StateOrProvince>
+            <e364:TimeStamp i:nil="false">ValueHere</e364:TimeStamp>
+          </e364:Address>
+          <e364:ContactByPhone i:nil="false">ValueHere</e364:ContactByPhone>
+          <e364:ContactByPostalMail i:nil="false">ValueHere</e364:ContactByPostalMail>
+          <e364:Email i:nil="false">ValueHere</e364:Email>
+          <e364:EmailFormat i:nil="false">ValueHere</e364:EmailFormat>
+          <e364:Fax i:nil="false">ValueHere</e364:Fax>
+          <e364:HomePhone i:nil="false">ValueHere</e364:HomePhone>
+          <e364:Id i:nil="false">ValueHere</e364:Id>
+          <e364:Mobile i:nil="false">ValueHere</e364:Mobile>
+          <e364:Phone1 i:nil="false">ValueHere</e364:Phone1>
+          <e364:Phone2 i:nil="false">ValueHere</e364:Phone2>
+        </e364:ContactInfo>
+        <e364:CustomerId i:nil="false">ValueHere</e364:CustomerId>
+        <e364:Id i:nil="false">ValueHere</e364:Id>
+        <e364:JobTitle i:nil="false">ValueHere</e364:JobTitle>
+        <e364:LastModifiedByUserId i:nil="false">ValueHere</e364:LastModifiedByUserId>
+        <e364:LastModifiedTime i:nil="false">ValueHere</e364:LastModifiedTime>
+        <e364:Lcid i:nil="false">ValueHere</e364:Lcid>
+        <e364:Name i:nil="false">
+          <e364:FirstName i:nil="false">ValueHere</e364:FirstName>
+          <e364:LastName i:nil="false">ValueHere</e364:LastName>
+          <e364:MiddleInitial i:nil="false">ValueHere</e364:MiddleInitial>
+        </e364:Name>
+        <e364:Password i:nil="false">ValueHere</e364:Password>
+        <e364:SecretAnswer i:nil="false">ValueHere</e364:SecretAnswer>
+        <e364:SecretQuestion>ValueHere</e364:SecretQuestion>
+        <e364:UserLifeCycleStatus i:nil="false">ValueHere</e364:UserLifeCycleStatus>
+        <e364:TimeStamp i:nil="false">ValueHere</e364:TimeStamp>
+        <e364:UserName i:nil="false">ValueHere</e364:UserName>
+        <e364:IsMigratedToMicrosoftAccount>ValueHere</e364:IsMigratedToMicrosoftAccount>
       </User>
     </UpdateUserRequest>
   </s:Body>

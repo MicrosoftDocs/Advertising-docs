@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Authentication With the SDKs
 This article covers authentication and basic service calls with the Bing Ads SDKs. 
 

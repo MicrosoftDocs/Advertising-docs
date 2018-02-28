@@ -11,11 +11,9 @@ dev_langs:
   - php
   - python
 ---
-# AddAccount Service Operation - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AddAccount Service Operation - Customer Management
 Creates a new account within an existing customer. 
 
 Only a user with Super Admin credentials can add accounts. 
@@ -64,59 +62,59 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <AddAccountRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <Account xmlns:e1="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e1:BillToCustomerId i:nil="false">ValueHere</e1:BillToCustomerId>
-        <e1:CountryCode i:nil="false">ValueHere</e1:CountryCode>
-        <e1:CurrencyCode i:nil="false">ValueHere</e1:CurrencyCode>
-        <e1:AccountFinancialStatus i:nil="false">ValueHere</e1:AccountFinancialStatus>
-        <e1:Id i:nil="false">ValueHere</e1:Id>
-        <e1:Language i:nil="false">ValueHere</e1:Language>
-        <e1:LastModifiedByUserId i:nil="false">ValueHere</e1:LastModifiedByUserId>
-        <e1:LastModifiedTime i:nil="false">ValueHere</e1:LastModifiedTime>
-        <e1:Name i:nil="false">ValueHere</e1:Name>
-        <e1:Number i:nil="false">ValueHere</e1:Number>
-        <e1:ParentCustomerId>ValueHere</e1:ParentCustomerId>
-        <e1:PaymentMethodId i:nil="false">ValueHere</e1:PaymentMethodId>
-        <e1:PaymentMethodType i:nil="false">ValueHere</e1:PaymentMethodType>
-        <e1:PrimaryUserId i:nil="false">ValueHere</e1:PrimaryUserId>
-        <e1:AccountLifeCycleStatus i:nil="false">ValueHere</e1:AccountLifeCycleStatus>
-        <e1:TimeStamp i:nil="false">ValueHere</e1:TimeStamp>
-        <e1:TimeZone i:nil="false">ValueHere</e1:TimeZone>
-        <e1:PauseReason i:nil="false">ValueHere</e1:PauseReason>
-        <ForwardCompatibilityMap xmlns:e2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e2:KeyValuePairOfstringstring>
-            <e2:key i:nil="false">ValueHere</e2:key>
-            <e2:value i:nil="false">ValueHere</e2:value>
-          </e2:KeyValuePairOfstringstring>
+      <Account xmlns:e311="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e311:BillToCustomerId i:nil="false">ValueHere</e311:BillToCustomerId>
+        <e311:CountryCode i:nil="false">ValueHere</e311:CountryCode>
+        <e311:CurrencyCode i:nil="false">ValueHere</e311:CurrencyCode>
+        <e311:AccountFinancialStatus i:nil="false">ValueHere</e311:AccountFinancialStatus>
+        <e311:Id i:nil="false">ValueHere</e311:Id>
+        <e311:Language i:nil="false">ValueHere</e311:Language>
+        <e311:LastModifiedByUserId i:nil="false">ValueHere</e311:LastModifiedByUserId>
+        <e311:LastModifiedTime i:nil="false">ValueHere</e311:LastModifiedTime>
+        <e311:Name i:nil="false">ValueHere</e311:Name>
+        <e311:Number i:nil="false">ValueHere</e311:Number>
+        <e311:ParentCustomerId>ValueHere</e311:ParentCustomerId>
+        <e311:PaymentMethodId i:nil="false">ValueHere</e311:PaymentMethodId>
+        <e311:PaymentMethodType i:nil="false">ValueHere</e311:PaymentMethodType>
+        <e311:PrimaryUserId i:nil="false">ValueHere</e311:PrimaryUserId>
+        <e311:AccountLifeCycleStatus i:nil="false">ValueHere</e311:AccountLifeCycleStatus>
+        <e311:TimeStamp i:nil="false">ValueHere</e311:TimeStamp>
+        <e311:TimeZone i:nil="false">ValueHere</e311:TimeZone>
+        <e311:PauseReason i:nil="false">ValueHere</e311:PauseReason>
+        <ForwardCompatibilityMap xmlns:e312="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e312:KeyValuePairOfstringstring>
+            <e312:key i:nil="false">ValueHere</e312:key>
+            <e312:value i:nil="false">ValueHere</e312:value>
+          </e312:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e1:LinkedAgencies i:nil="false">
-          <e1:CustomerInfo>
-            <e1:Id i:nil="false">ValueHere</e1:Id>
-            <e1:Name i:nil="false">ValueHere</e1:Name>
-          </e1:CustomerInfo>
-        </e1:LinkedAgencies>
-        <e1:SalesHouseCustomerId i:nil="false">ValueHere</e1:SalesHouseCustomerId>
-        <TaxInformation xmlns:e3="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e3:KeyValuePairOfstringstring>
-            <e3:key i:nil="false">ValueHere</e3:key>
-            <e3:value i:nil="false">ValueHere</e3:value>
-          </e3:KeyValuePairOfstringstring>
+        <e311:LinkedAgencies i:nil="false">
+          <e311:CustomerInfo>
+            <e311:Id i:nil="false">ValueHere</e311:Id>
+            <e311:Name i:nil="false">ValueHere</e311:Name>
+          </e311:CustomerInfo>
+        </e311:LinkedAgencies>
+        <e311:SalesHouseCustomerId i:nil="false">ValueHere</e311:SalesHouseCustomerId>
+        <TaxInformation xmlns:e313="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e313:KeyValuePairOfstringstring>
+            <e313:key i:nil="false">ValueHere</e313:key>
+            <e313:value i:nil="false">ValueHere</e313:value>
+          </e313:KeyValuePairOfstringstring>
         </TaxInformation>
-        <e1:BackUpPaymentInstrumentId i:nil="false">ValueHere</e1:BackUpPaymentInstrumentId>
-        <e1:BillingThresholdAmount i:nil="false">ValueHere</e1:BillingThresholdAmount>
-        <e1:BusinessAddress i:nil="false">
-          <e1:City i:nil="false">ValueHere</e1:City>
-          <e1:CountryCode i:nil="false">ValueHere</e1:CountryCode>
-          <e1:Id i:nil="false">ValueHere</e1:Id>
-          <e1:Line1 i:nil="false">ValueHere</e1:Line1>
-          <e1:Line2 i:nil="false">ValueHere</e1:Line2>
-          <e1:Line3 i:nil="false">ValueHere</e1:Line3>
-          <e1:Line4 i:nil="false">ValueHere</e1:Line4>
-          <e1:PostalCode i:nil="false">ValueHere</e1:PostalCode>
-          <e1:StateOrProvince i:nil="false">ValueHere</e1:StateOrProvince>
-          <e1:TimeStamp i:nil="false">ValueHere</e1:TimeStamp>
-        </e1:BusinessAddress>
-        <e1:AutoTagType i:nil="false">ValueHere</e1:AutoTagType>
+        <e311:BackUpPaymentInstrumentId i:nil="false">ValueHere</e311:BackUpPaymentInstrumentId>
+        <e311:BillingThresholdAmount i:nil="false">ValueHere</e311:BillingThresholdAmount>
+        <e311:BusinessAddress i:nil="false">
+          <e311:City i:nil="false">ValueHere</e311:City>
+          <e311:CountryCode i:nil="false">ValueHere</e311:CountryCode>
+          <e311:Id i:nil="false">ValueHere</e311:Id>
+          <e311:Line1 i:nil="false">ValueHere</e311:Line1>
+          <e311:Line2 i:nil="false">ValueHere</e311:Line2>
+          <e311:Line3 i:nil="false">ValueHere</e311:Line3>
+          <e311:Line4 i:nil="false">ValueHere</e311:Line4>
+          <e311:PostalCode i:nil="false">ValueHere</e311:PostalCode>
+          <e311:StateOrProvince i:nil="false">ValueHere</e311:StateOrProvince>
+          <e311:TimeStamp i:nil="false">ValueHere</e311:TimeStamp>
+        </e311:BusinessAddress>
+        <e311:AutoTagType i:nil="false">ValueHere</e311:AutoTagType>
       </Account>
     </AddAccountRequest>
   </s:Body>

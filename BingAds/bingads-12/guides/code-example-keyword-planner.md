@@ -11,6 +11,8 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Keyword Planner Code Example
 This example demonstrates how to get keyword ideas and traffic estimates for search advertising campaigns.
 

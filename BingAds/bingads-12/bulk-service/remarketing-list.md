@@ -8,6 +8,8 @@ description: Describes the Remarketing List fields in a Bulk file.
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Remarketing List Record - Bulk
 Defines a remarketing list that can be downloaded and uploaded in a bulk file. 
 

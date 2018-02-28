@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines the base object of a remarketing rule.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # RemarketingRule Data Object - Campaign Management
 Defines the base object of a remarketing rule.
 

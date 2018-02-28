@@ -8,6 +8,8 @@ description: Describes the Ad Group Negative Site fields in a Bulk file.
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # Ad Group Negative Site Record - Bulk
 Defines a negative site assigned to an ad group that can be uploaded and downloaded in a bulk file.
 

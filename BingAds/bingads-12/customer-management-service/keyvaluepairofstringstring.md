@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
 ---
-# KeyValuePairOfstringstring Data Object - Customer Management
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# KeyValuePairOfstringstring Data Object - Customer Management
 The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
 
 ## Syntax

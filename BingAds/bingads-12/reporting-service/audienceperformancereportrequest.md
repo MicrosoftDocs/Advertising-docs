@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an audience performance report request.
 ---
-# AudiencePerformanceReportRequest Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# AudiencePerformanceReportRequest Data Object - Reporting
 Defines an audience performance report request. Use this report to compare delivery performance statistics by audience, ad group, campaign, or account attributes.
 
 You can request impressions, clicks, spend, and average cost per click. Once downloaded, this data can be sorted by audience, association status, ad group, and targeting setting.

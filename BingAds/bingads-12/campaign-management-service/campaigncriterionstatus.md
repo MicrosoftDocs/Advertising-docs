@@ -6,6 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible campaign criterion status values.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
 # CampaignCriterionStatus Value Set - Campaign Management
 Defines the possible campaign criterion status values.
 

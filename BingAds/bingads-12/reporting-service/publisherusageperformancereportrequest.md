@@ -6,11 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a publisher usage performance report request.
 ---
-# PublisherUsagePerformanceReportRequest Data Object - Reporting
-
 > [!IMPORTANT]
-> This v12 preview documentation is subject to change.
-
+> This Bing Ads API Version 12 preview documentation is subject to change.
+# PublisherUsagePerformanceReportRequest Data Object - Reporting
 Defines a publisher usage performance report request. Use this report to see if any website URLs aren't performing well enough for your campaign or ad group target settings. For example, if ad impressions at those URLs yield a low click-through rate, then you might decide to exclude those websites from your campaign.
 
 You can request impressions, clicks, spend, and conversions for websites including the Bing Ads and syndicated search partner networks. Once downloaded, this data can be sorted by website URL, account, campaign, and ad group.
