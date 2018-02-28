@@ -1,190 +1,190 @@
 - name: Overview
-  href: ~/guides/index.md
+  href: ../../guides/index.md
   displayName: faq
 - name: Entity Hierarchy and Limits
-  href: ~/guides/entity-hierarchy-limits.md
+  href: ../../guides/entity-hierarchy-limits.md
 - name: FAQ
-  href: ~/guides/faq.md
+  href: ../../guides/faq.md
 - name: Get Started
-  href: ~/guides/get-started.md
+  href: ../../guides/get-started.md
   displayName: dev token developer token
   items:
   - name: Get Started Using C#
-    href: ~/guides/get-started-csharp.md
+    href: ../../guides/get-started-csharp.md
     displayName: .net c# csharp
     items:
     - name: Walkthrough - Bing Ads Desktop Application in C#
-      href: ~/guides/walkthrough-desktop-application-csharp.md
+      href: ../../guides/walkthrough-desktop-application-csharp.md
       displayName: .net c# csharp
     - name: Walkthrough - Bing Ads Web Application in C#
-      href: ~/guides/walkthrough-web-application-csharp.md
+      href: ../../guides/walkthrough-web-application-csharp.md
       displayName: .net c# csharp
   - name: Get Started Using Java
-    href: ~/guides/get-started-java.md
+    href: ../../guides/get-started-java.md
     items:
     - name: Walkthrough - Bing Ads Desktop Application in Java
-      href: ~/guides/walkthrough-desktop-application-java.md
+      href: ../../guides/walkthrough-desktop-application-java.md
     - name: Walkthrough - Bing Ads Web Application in Java
-      href: ~/guides/walkthrough-web-application-java.md
+      href: ../../guides/walkthrough-web-application-java.md
   - name: Get Started Using PHP
-    href: ~/guides/get-started-php.md
+    href: ../../guides/get-started-php.md
     items:
     - name: Walkthrough - Bing Ads Desktop Application in PHP
-      href: ~/guides/walkthrough-desktop-application-php.md
+      href: ../../guides/walkthrough-desktop-application-php.md
     - name: Walkthrough - Bing Ads Web Application in PHP
-      href: ~/guides/walkthrough-web-application-php.md
+      href: ../../guides/walkthrough-web-application-php.md
   - name: Get Started Using Python
-    href: ~/guides/get-started-python.md
+    href: ../../guides/get-started-python.md
     items:
     - name: Walkthrough - Bing Ads Desktop Application in Python
-      href: ~/guides/walkthrough-desktop-application-python.md
+      href: ../../guides/walkthrough-desktop-application-python.md
     - name: Walkthrough - Bing Ads Web Application in Python
-      href: ~/guides/walkthrough-web-application-python.md
+      href: ../../guides/walkthrough-web-application-python.md
 - name: Sandbox
-  href: ~/guides/sandbox.md
+  href: ../../guides/sandbox.md
 - name: Code Examples
-  href: ~/guides/code-examples.md
+  href: ../../guides/code-examples.md
   displayName: .net c# csharp java python php
   items:
   - name: Ad Extensions
-    href: ~/guides/code-example-ad-extensions.md
+    href: ../../guides/code-example-ad-extensions.md
   - name: Bulk Ad Extensions
-    href: ~/guides/code-example-bulk-ad-extensions.md
+    href: ../../guides/code-example-bulk-ad-extensions.md
   - name: Bulk Keywords and Ads
-    href: ~/guides/code-example-bulk-keywords-ads.md
+    href: ../../guides/code-example-bulk-keywords-ads.md
   - name: Bulk Shopping Campaigns
-    href: ~/guides/code-example-bulk-shopping-campaigns.md
+    href: ../../guides/code-example-bulk-shopping-campaigns.md
   - name: Budget Opportunities
-    href: ~/guides/code-example-budget-opportunities.md
+    href: ../../guides/code-example-budget-opportunities.md
   - name: Conversion Goals
-    href: ~/guides/code-example-conversion-goals.md
+    href: ../../guides/code-example-conversion-goals.md
   - name: Customer Signup
-    href: ~/guides/code-example-customer-signup.md
+    href: ../../guides/code-example-customer-signup.md
   - name: Dynamic Search Campaigns
-    href: ~/guides/code-example-dynamic-search-campaigns.md
+    href: ../../guides/code-example-dynamic-search-campaigns.md
   - name: Geographical Locations
-    href: ~/guides/code-example-geographical-locations.md
+    href: ../../guides/code-example-geographical-locations.md
   - name: Invite User
-    href: ~/guides/code-example-invite-user.md
+    href: ../../guides/code-example-invite-user.md
   - name: Keyword Planner
-    href: ~/guides/code-example-keyword-planner.md
+    href: ../../guides/code-example-keyword-planner.md
   - name: Keywords and Ads
-    href: ~/guides/code-example-keywords-ads.md
+    href: ../../guides/code-example-keywords-ads.md
   - name: Labels
-    href: ~/guides/code-example-labels.md
+    href: ../../guides/code-example-labels.md
   - name: Manage Client
-    href: ~/guides/code-example-manage-client.md
+    href: ../../guides/code-example-manage-client.md
   - name: Negative Keywords
-    href: ~/guides/code-example-negative-keywords.md
+    href: ../../guides/code-example-negative-keywords.md
   - name: Offline Conversions
-    href: ~/guides/code-example-offline-conversions.md
+    href: ../../guides/code-example-offline-conversions.md
   - name: Remarketing Lists
-    href: ~/guides/code-example-remarketing-lists.md
+    href: ../../guides/code-example-remarketing-lists.md
   - name: Report Requests
-    href: ~/guides/code-example-report-requests.md
+    href: ../../guides/code-example-report-requests.md
   - name: Search User Accounts
-    href: ~/guides/code-example-search-user-accounts.md
+    href: ../../guides/code-example-search-user-accounts.md
   - name: Shopping Campaigns
-    href: ~/guides/code-example-shopping-campaigns.md
+    href: ../../guides/code-example-shopping-campaigns.md
   - name: Target Criterions
-    href: ~/guides/code-example-target-criterions.md
+    href: ../../guides/code-example-target-criterions.md
 - name: Client Libraries
-  href: ~/guides/client-libraries.md
+  href: ../../guides/client-libraries.md
   displayName: sdk .net c# csharp java python php
   expanded: true
   items:
   - name: Authentication
-    href: ~/guides/sdk-authentication.md
+    href: ../../guides/sdk-authentication.md
     displayName: sdk .net c# csharp java python php
   - name: Bulk Service Manager
-    href: ~/guides/sdk-bulk-service-manager.md
+    href: ../../guides/sdk-bulk-service-manager.md
     displayName: sdk .net c# csharp java python
   - name: Reporting Service Manager
-    href: ~/guides/sdk-reporting-service-manager.md
+    href: ../../guides/sdk-reporting-service-manager.md
     displayName: sdk .net c# csharp java python
 - name: Technical Guides
-  href: ~/guides/technical-guides.md
+  href: ../../guides/technical-guides.md
   items:
   - name: Authentication with OAuth
-    href: ~/guides/authentication-oauth.md
+    href: ../../guides/authentication-oauth.md
     displayName: access refresh token scope
   - name: Services Protocol
-    href: ~/guides/services-protocol.md
+    href: ../../guides/services-protocol.md
     displayName: wsdl
   - name: Handling Service Errors and Exceptions
-    href: ~/guides/handle-service-errors-exceptions.md
+    href: ../../guides/handle-service-errors-exceptions.md
     displayName: support help debug troubleshoot
   - name: Customer Accounts
-    href: ~/guides/customer-accounts.md
+    href: ../../guides/customer-accounts.md
     items:
     - name: Management Model for Direct Advertisers
-      href: ~/guides/management-model-direct-advertisers.md
+      href: ../../guides/management-model-direct-advertisers.md
     - name: Management Model for Agencies
-      href: ~/guides/management-model-agencies.md
+      href: ../../guides/management-model-agencies.md
     - name: Management Model for Resellers
-      href: ~/guides/management-model-resellers.md
+      href: ../../guides/management-model-resellers.md
     - name: Management Model for Tool Providers
-      href: ~/guides/management-model-tool-providers.md
+      href: ../../guides/management-model-tool-providers.md
   - name: Campaigns
-    href: ~/guides/campaigns.md
+    href: ../../guides/campaigns.md
     items:
     - name: Budget and Bid Opportunities
-      href: ~/guides/budget-bid-opportunities.md
+      href: ../../guides/budget-bid-opportunities.md
     - name: Budget and Bid Strategies
-      href: ~/guides/budget-bid-strategies.md
+      href: ../../guides/budget-bid-strategies.md
     - name: Bulk Download and Upload
-      href: ~/guides/bulk-download-upload.md
+      href: ../../guides/bulk-download-upload.md
     - name: Labels
-      href: ~/guides/labels.md
+      href: ../../guides/labels.md
     - name: Keyword Ideas and Traffic Estimates
-      href: ~/guides/keyword-ideas-traffic-estimates.md
+      href: ../../guides/keyword-ideas-traffic-estimates.md
     - name: Negative Keywords
-      href: ~/guides/negative-keywords.md
+      href: ../../guides/negative-keywords.md
     - name: Show Ads to Your Target Audience
-      href: ~/guides/show-ads-target-audience.md
+      href: ../../guides/show-ads-target-audience.md
     - name: Universal Event Tracking
-      href: ~/guides/universal-event-tracking.md
+      href: ../../guides/universal-event-tracking.md
     - name: URL Tracking with Upgraded URLs
-      href: ~/guides/url-tracking-upgraded-urls.md
+      href: ../../guides/url-tracking-upgraded-urls.md
   - name: Ads
-    href: ~/guides/ads.md
+    href: ../../guides/ads.md
     items:
     - name: Ad Extensions
-      href: ~/guides/ad-extensions.md
+      href: ../../guides/ad-extensions.md
     - name: App Install Ads
-      href: ~/guides/app-install-ads.md
+      href: ../../guides/app-install-ads.md
     - name: Dynamic Search Ads
-      href: ~/guides/dynamic-search-ads.md
+      href: ../../guides/dynamic-search-ads.md
     - name: Editorial Review and Appeals
-      href: ~/guides/editorial-review-appeals.md
+      href: ../../guides/editorial-review-appeals.md
     - name: Expanded Text Ads
-      href: ~/guides/expanded-text-ads.md
+      href: ../../guides/expanded-text-ads.md
     - name: Intent Ads
-      href: ~/guides/intent-ads.md
+      href: ../../guides/intent-ads.md
     - name: Product Ads
-      href: ~/guides/product-ads.md
+      href: ../../guides/product-ads.md
     - name: Upgrade from Multiple Sitelinks to One Sitelink Per Extension
-      href: ~/guides/upgrade-sitelink2.md
+      href: ../../guides/upgrade-sitelink2.md
       displayName: upgrade migrate
   - name: Reports
-    href: ~/guides/reports.md
+    href: ../../guides/reports.md
     items:
     - name: Report Attributes and Performance Statistics
-      href: ~/guides/report-attributes-performance-statistics.md
+      href: ../../guides/report-attributes-performance-statistics.md
     - name: Report Types
-      href: ~/guides/report-types.md
+      href: ../../guides/report-types.md
     - name: Request and Download a Report
-      href: ~/guides/request-download-report.md
+      href: ../../guides/request-download-report.md
     - name: Report Data Retention Time Periods
-      href: ~/guides/report-data-retention-time-periods.md
+      href: ../../guides/report-data-retention-time-periods.md
 - name: API Reference
-  href: ~/guides/reference.md
+  href: ../../guides/reference.md
   items:
   - name: Web Service Addresses
-    href: ~/guides/web-service-addresses.md
+    href: ../../guides/web-service-addresses.md
     displayName: wsdl endpoint soap
   - name: Version 11 Services
-    href: ~/guides/services.md
+    href: ../../guides/services.md
     items:
     - name: Ad Insight Service
       href: ../ad-insight-service/ad-insight-service-reference.md
@@ -1752,18 +1752,18 @@
         - name: UserLocationPerformanceReportColumn
           href: ../reporting-service/userlocationperformancereportcolumn.md
   - name: Operation Error Codes
-    href: ~/guides/operation-error-codes.md
+    href: ../../guides/operation-error-codes.md
   - name: Editorial Failure Reason Codes
-    href: ~/guides/editorial-failure-reason-codes.md
+    href: ../../guides/editorial-failure-reason-codes.md
   - name: Ad Languages
-    href: ~/guides/ad-languages.md
+    href: ../../guides/ad-languages.md
   - name: Currencies
-    href: ~/guides/currencies.md
+    href: ../../guides/currencies.md
   - name: Geographical Location Codes
-    href: ~/guides/geographical-location-codes.md
+    href: ../../guides/geographical-location-codes.md
   - name: Time Zones
-    href: ~/guides/time-zones.md
+    href: ../../guides/time-zones.md
 - name: Release Notes
-  href: ~/guides/release-notes.md
+  href: ../../guides/release-notes.md
 - name: Migrating to Bing Ads API Version 11
-  href: ~/guides/migrate-bing-ads-api-version-11.md
+  href: ../../guides/migrate-bing-ads-api-version-11.md
