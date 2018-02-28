@@ -7,11 +7,14 @@ ms.author: eur
 description: Data objects reference for the CustomerManagement service.
 ---
 # Customer Management Data Objects
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 The Customer Management service defines the following data objects.
 
 |Data Object|Description|
 |---|---|
-|[Account](account.md)|Defines an account.|
 |[AccountInfo](accountinfo.md)|Defines an account identification object that contains information that identifies an account.|
 |[AccountInfoWithCustomerData](accountinfowithcustomerdata.md)|Defines an object that contains information that identifies an account and the customer that manages or owns the account.|
 |[AdApiError](adapierror.md)|Defines an error object that contains the details that explain why the service operation failed.|
@@ -24,6 +27,7 @@ The Customer Management service defines the following data objects.
 |[ContactInfo](contactinfo.md)|Defines the contact information for a user.|
 |[Customer](customer.md)|Defines a customer.|
 |[CustomerInfo](customerinfo.md)|Defines a customer identification object that contains information that identifies a customer.|
+|[CustomerRole](customerrole.md)|Reserved.|
 |[DateRange](daterange.md)|Defines a date range object.|
 |[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.|
 |[OperationError](operationerror.md)|Defines an error object that contains the details that explain why the service operation failed.|

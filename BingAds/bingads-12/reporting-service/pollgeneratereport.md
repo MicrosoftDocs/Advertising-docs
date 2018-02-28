@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # PollGenerateReport Service Operation - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Gets the status of a report request.
 
 > [!NOTE]
@@ -46,7 +50,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Reporting/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Reporting/v12">
     <Action mustUnderstand="1">PollGenerateReport</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -57,7 +61,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <PollGenerateReportRequest xmlns="https://bingads.microsoft.com/Reporting/v11">
+    <PollGenerateReportRequest xmlns="https://bingads.microsoft.com/Reporting/v12">
       <ReportRequestId i:nil="false">ValueHere</ReportRequestId>
     </PollGenerateReportRequest>
   </s:Body>
@@ -69,11 +73,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Reporting/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Reporting/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <PollGenerateReportResponse xmlns="https://bingads.microsoft.com/Reporting/v11">
+    <PollGenerateReportResponse xmlns="https://bingads.microsoft.com/Reporting/v12">
       <ReportRequestStatus d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <ReportDownloadUrl d4p1:nil="false">ValueHere</ReportDownloadUrl>
         <Status>ValueHere</Status>
@@ -84,7 +88,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<PollGenerateReportResponse> PollGenerateReportAsync(
 	string reportRequestId)
@@ -128,6 +132,6 @@ response=reporting_service.PollGenerateReport(
 ```
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 

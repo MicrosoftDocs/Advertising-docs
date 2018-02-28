@@ -7,6 +7,10 @@ ms.author: eur
 description: Service operations reference for the CustomerBilling service.
 ---
 # Customer Billing Service Operations
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 The Customer Billing service defines the following service operations.
 
 |Service Operation|Description|Request Limits|

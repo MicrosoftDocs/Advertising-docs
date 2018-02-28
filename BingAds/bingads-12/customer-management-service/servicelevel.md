@@ -7,6 +7,10 @@ ms.author: eur
 description: For internal use only.
 ---
 # ServiceLevel Value Set - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 For internal use only.
 
 ## Syntax
@@ -33,8 +37,8 @@ For internal use only.
 |<a name="selfservetrusted"></a>SelfServeTrusted|For internal use only.|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 
 ## Used By
 [Customer](customer.md)  

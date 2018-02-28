@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # GetCustomer Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Gets the details of a customer.
 
 ## <a name="request"></a>Request Elements
@@ -43,7 +47,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">GetCustomer</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -52,7 +56,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetCustomerRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+    <GetCustomerRequest xmlns="https://bingads.microsoft.com/Customer/v12">
       <CustomerId>ValueHere</CustomerId>
     </GetCustomerRequest>
   </s:Body>
@@ -64,42 +68,42 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetCustomerResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Customer xmlns:e317="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e317:CustomerAddress d4p1:nil="false">
-          <e317:City d4p1:nil="false">ValueHere</e317:City>
-          <e317:CountryCode d4p1:nil="false">ValueHere</e317:CountryCode>
-          <e317:Id d4p1:nil="false">ValueHere</e317:Id>
-          <e317:Line1 d4p1:nil="false">ValueHere</e317:Line1>
-          <e317:Line2 d4p1:nil="false">ValueHere</e317:Line2>
-          <e317:Line3 d4p1:nil="false">ValueHere</e317:Line3>
-          <e317:Line4 d4p1:nil="false">ValueHere</e317:Line4>
-          <e317:PostalCode d4p1:nil="false">ValueHere</e317:PostalCode>
-          <e317:StateOrProvince d4p1:nil="false">ValueHere</e317:StateOrProvince>
-          <e317:TimeStamp d4p1:nil="false">ValueHere</e317:TimeStamp>
-        </e317:CustomerAddress>
-        <e317:CustomerFinancialStatus d4p1:nil="false">ValueHere</e317:CustomerFinancialStatus>
-        <e317:Id d4p1:nil="false">ValueHere</e317:Id>
-        <e317:Industry d4p1:nil="false">ValueHere</e317:Industry>
-        <e317:LastModifiedByUserId d4p1:nil="false">ValueHere</e317:LastModifiedByUserId>
-        <e317:LastModifiedTime d4p1:nil="false">ValueHere</e317:LastModifiedTime>
-        <e317:MarketCountry d4p1:nil="false">ValueHere</e317:MarketCountry>
-        <ForwardCompatibilityMap xmlns:e318="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-          <e318:KeyValuePairOfstringstring>
-            <e318:key d4p1:nil="false">ValueHere</e318:key>
-            <e318:value d4p1:nil="false">ValueHere</e318:value>
-          </e318:KeyValuePairOfstringstring>
+    <GetCustomerResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <Customer xmlns:e14="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e14:CustomerAddress d4p1:nil="false">
+          <e14:City d4p1:nil="false">ValueHere</e14:City>
+          <e14:CountryCode d4p1:nil="false">ValueHere</e14:CountryCode>
+          <e14:Id d4p1:nil="false">ValueHere</e14:Id>
+          <e14:Line1 d4p1:nil="false">ValueHere</e14:Line1>
+          <e14:Line2 d4p1:nil="false">ValueHere</e14:Line2>
+          <e14:Line3 d4p1:nil="false">ValueHere</e14:Line3>
+          <e14:Line4 d4p1:nil="false">ValueHere</e14:Line4>
+          <e14:PostalCode d4p1:nil="false">ValueHere</e14:PostalCode>
+          <e14:StateOrProvince d4p1:nil="false">ValueHere</e14:StateOrProvince>
+          <e14:TimeStamp d4p1:nil="false">ValueHere</e14:TimeStamp>
+        </e14:CustomerAddress>
+        <e14:CustomerFinancialStatus d4p1:nil="false">ValueHere</e14:CustomerFinancialStatus>
+        <e14:Id d4p1:nil="false">ValueHere</e14:Id>
+        <e14:Industry d4p1:nil="false">ValueHere</e14:Industry>
+        <e14:LastModifiedByUserId d4p1:nil="false">ValueHere</e14:LastModifiedByUserId>
+        <e14:LastModifiedTime d4p1:nil="false">ValueHere</e14:LastModifiedTime>
+        <e14:MarketCountry d4p1:nil="false">ValueHere</e14:MarketCountry>
+        <ForwardCompatibilityMap xmlns:e15="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+          <e15:KeyValuePairOfstringstring>
+            <e15:key d4p1:nil="false">ValueHere</e15:key>
+            <e15:value d4p1:nil="false">ValueHere</e15:value>
+          </e15:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e317:MarketLanguage d4p1:nil="false">ValueHere</e317:MarketLanguage>
-        <e317:Name d4p1:nil="false">ValueHere</e317:Name>
-        <e317:ServiceLevel d4p1:nil="false">ValueHere</e317:ServiceLevel>
-        <e317:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e317:CustomerLifeCycleStatus>
-        <e317:TimeStamp d4p1:nil="false">ValueHere</e317:TimeStamp>
-        <e317:Number d4p1:nil="false">ValueHere</e317:Number>
+        <e14:MarketLanguage d4p1:nil="false">ValueHere</e14:MarketLanguage>
+        <e14:Name d4p1:nil="false">ValueHere</e14:Name>
+        <e14:ServiceLevel d4p1:nil="false">ValueHere</e14:ServiceLevel>
+        <e14:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e14:CustomerLifeCycleStatus>
+        <e14:TimeStamp d4p1:nil="false">ValueHere</e14:TimeStamp>
+        <e14:Number d4p1:nil="false">ValueHere</e14:Number>
       </Customer>
     </GetCustomerResponse>
   </s:Body>
@@ -107,7 +111,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetCustomerResponse> GetCustomerAsync(
 	long customerId)
@@ -151,6 +155,6 @@ response=customermanagement_service.GetCustomer(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines a selection of language values.
 ---
 # LanguageType Value Set - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines a selection of language values.
 
 > [!NOTE]
@@ -62,9 +66,9 @@ Defines a selection of language values.
 |<a name="traditionalchinese"></a>TraditionalChinese|The corresponding language type.|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 
 ## Used By
-[Account](account.md)  
+[AdvertiserAccount](advertiseraccount.md)  
 [Customer](customer.md)  

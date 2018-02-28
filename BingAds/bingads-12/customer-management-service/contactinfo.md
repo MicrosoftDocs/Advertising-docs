@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the contact information for a user.
 ---
 # ContactInfo Data Object - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the contact information for a user.
 
 ## Syntax
@@ -45,8 +49,8 @@ Defines the contact information for a user.
 |<a name="phone2"></a>Phone2|An alternate telephone number for the user. The telephone number can contain a maximum of 100 characters.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [User](user.md)  

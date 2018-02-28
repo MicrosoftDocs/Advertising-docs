@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # SearchUserInvitations Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Searches for user invitations that match a specified criteria.
 
 This operation returns all pending invitations, whether or not they have expired. Accepted invitations are not included in the response.  
@@ -45,7 +49,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">SearchUserInvitations</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -54,13 +58,13 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <SearchUserInvitationsRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Predicates xmlns:e339="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e339:Predicate>
-          <e339:Field i:nil="false">ValueHere</e339:Field>
-          <e339:Operator>ValueHere</e339:Operator>
-          <e339:Value i:nil="false">ValueHere</e339:Value>
-        </e339:Predicate>
+    <SearchUserInvitationsRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+      <Predicates xmlns:e37="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e37:Predicate>
+          <e37:Field i:nil="false">ValueHere</e37:Field>
+          <e37:Operator>ValueHere</e37:Operator>
+          <e37:Value i:nil="false">ValueHere</e37:Value>
+        </e37:Predicate>
       </Predicates>
     </SearchUserInvitationsRequest>
   </s:Body>
@@ -72,25 +76,25 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <SearchUserInvitationsResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <UserInvitations xmlns:e340="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e340:UserInvitation>
-          <e340:Id>ValueHere</e340:Id>
-          <e340:FirstName d4p1:nil="false">ValueHere</e340:FirstName>
-          <e340:LastName d4p1:nil="false">ValueHere</e340:LastName>
-          <e340:Email d4p1:nil="false">ValueHere</e340:Email>
-          <e340:CustomerId>ValueHere</e340:CustomerId>
-          <e340:Role>ValueHere</e340:Role>
-          <e340:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <SearchUserInvitationsResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <UserInvitations xmlns:e38="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e38:UserInvitation>
+          <e38:Id>ValueHere</e38:Id>
+          <e38:FirstName d4p1:nil="false">ValueHere</e38:FirstName>
+          <e38:LastName d4p1:nil="false">ValueHere</e38:LastName>
+          <e38:Email d4p1:nil="false">ValueHere</e38:Email>
+          <e38:CustomerId>ValueHere</e38:CustomerId>
+          <e38:RoleId>ValueHere</e38:RoleId>
+          <e38:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:long>ValueHere</a1:long>
-          </e340:AccountIds>
-          <e340:ExpirationDate>ValueHere</e340:ExpirationDate>
-          <e340:Lcid>ValueHere</e340:Lcid>
-        </e340:UserInvitation>
+          </e38:AccountIds>
+          <e38:ExpirationDate>ValueHere</e38:ExpirationDate>
+          <e38:Lcid>ValueHere</e38:Lcid>
+        </e38:UserInvitation>
       </UserInvitations>
     </SearchUserInvitationsResponse>
   </s:Body>
@@ -98,7 +102,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<SearchUserInvitationsResponse> SearchUserInvitationsAsync(
 	IList<Predicate> predicates)
@@ -142,6 +146,6 @@ response=customermanagement_service.SearchUserInvitations(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

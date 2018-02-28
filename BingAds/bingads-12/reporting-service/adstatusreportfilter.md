@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the ad status values that you can use to filter the report data.
 ---
 # AdStatusReportFilter Value Set - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the ad status values that you can use to filter the report data. These values are also used as column values in reports that include ad status, such as the search query performance report.
 
 ## Syntax
@@ -37,8 +41,8 @@ Defines the ad status values that you can use to filter the report data. These v
 |<a name="rejected"></a>Rejected|The report will contain ads that have been rejected by editorial review.|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [AdDynamicTextPerformanceReportFilter](addynamictextperformancereportfilter.md)  

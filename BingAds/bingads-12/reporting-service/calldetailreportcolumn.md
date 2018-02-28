@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the CallDetailReportRequest.
 ---
 # CallDetailReportColumn Value Set - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the attributes and performance statistics columns that you can include in the [CallDetailReportRequest](../reporting-service/calldetailreportrequest.md).
 
 The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](../guides/reports.md#columnsdata).
@@ -77,8 +81,8 @@ The report must include the following columns, and one or more of the performanc
 |StartTime|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [CallDetailReportRequest](calldetailreportrequest.md)  

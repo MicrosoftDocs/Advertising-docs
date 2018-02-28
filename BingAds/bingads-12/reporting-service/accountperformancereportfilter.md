@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the criteria to use to filter the account performance report data.
 ---
 # AccountPerformanceReportFilter Data Object - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the criteria to use to filter the account performance report data.
 
 ## Syntax
@@ -31,8 +35,8 @@ Defines the criteria to use to filter the account performance report data.
 |<a name="devicetype"></a>DeviceType|The report will include data where the ad is displayed on the specified device types. For example, you may use the filter to include data for only ads displayed on smartphones.<br /><br />You may specify one or more device types.|[DeviceTypeReportFilter](devicetypereportfilter.md)|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [AccountPerformanceReportRequest](accountperformancereportrequest.md)  

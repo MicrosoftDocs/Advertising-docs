@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # FindAccountsOrCustomersInfo Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Gets a list of the accounts and customers that match the specified filter criteria.
 
 ## <a name="request"></a>Request Elements
@@ -21,7 +25,6 @@ The *FindAccountsOrCustomersInfoRequest* object defines the [body](#request-body
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="applicationscope"></a>ApplicationScope|A value that determines whether to return advertiser accounts or publisher accounts. If you do not specify the scope, the list may include both types of accounts.|[ApplicationType](applicationtype.md)|
 |<a name="filter"></a>Filter|The criteria to use to filter the list of accounts and customers. You can specify either an account name, account number, or customer name.<br /><br />The filter value can contain a partial or full name or number. The operation includes the account or customer in the result if the name or number begins with the specified filter value.<br /><br />The operation performs a case-insensitive comparison when it compares your filter value to the name or number. For example, if you specify "t" as the filter value, the list will include accounts and customers whose names begin with "t" or "T".<br /><br />The operation filters first for accounts that match the filter criteria. If the number of accounts that match the filter criteria is less than the specified *TopN* value, the operation searches for customers whose name matches the filter criteria.<br /><br />Setting this element to an empty string is the same as calling the [GetAccountsInfo](../customer-management-service/getaccountsinfo.md) followed by calling the [GetCustomersInfo](../customer-management-service/getcustomersinfo.md).|**string**|
 |<a name="topn"></a>TopN|A nonzero positive integer that specifies the number of accounts to return in the result. You must specify a value from 1 through 5,000.|**int**|
 
@@ -45,7 +48,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">FindAccountsOrCustomersInfo</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -54,10 +57,9 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <FindAccountsOrCustomersInfoRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+    <FindAccountsOrCustomersInfoRequest xmlns="https://bingads.microsoft.com/Customer/v12">
       <Filter i:nil="false">ValueHere</Filter>
       <TopN>ValueHere</TopN>
-      <ApplicationScope i:nil="false">ValueHere</ApplicationScope>
     </FindAccountsOrCustomersInfoRequest>
   </s:Body>
 </s:Envelope>
@@ -68,21 +70,21 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <FindAccountsOrCustomersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <AccountInfoWithCustomerData xmlns:e312="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e312:AccountInfoWithCustomerData>
-          <e312:CustomerId d4p1:nil="false">ValueHere</e312:CustomerId>
-          <e312:CustomerName d4p1:nil="false">ValueHere</e312:CustomerName>
-          <e312:AccountId>ValueHere</e312:AccountId>
-          <e312:AccountName d4p1:nil="false">ValueHere</e312:AccountName>
-          <e312:AccountNumber d4p1:nil="false">ValueHere</e312:AccountNumber>
-          <e312:AccountLifeCycleStatus>ValueHere</e312:AccountLifeCycleStatus>
-          <e312:PauseReason d4p1:nil="false">ValueHere</e312:PauseReason>
-        </e312:AccountInfoWithCustomerData>
+    <FindAccountsOrCustomersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <AccountInfoWithCustomerData xmlns:e9="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e9:AccountInfoWithCustomerData>
+          <e9:CustomerId d4p1:nil="false">ValueHere</e9:CustomerId>
+          <e9:CustomerName d4p1:nil="false">ValueHere</e9:CustomerName>
+          <e9:AccountId>ValueHere</e9:AccountId>
+          <e9:AccountName d4p1:nil="false">ValueHere</e9:AccountName>
+          <e9:AccountNumber d4p1:nil="false">ValueHere</e9:AccountNumber>
+          <e9:AccountLifeCycleStatus>ValueHere</e9:AccountLifeCycleStatus>
+          <e9:PauseReason d4p1:nil="false">ValueHere</e9:PauseReason>
+        </e9:AccountInfoWithCustomerData>
       </AccountInfoWithCustomerData>
     </FindAccountsOrCustomersInfoResponse>
   </s:Body>
@@ -90,18 +92,16 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<FindAccountsOrCustomersInfoResponse> FindAccountsOrCustomersInfoAsync(
 	string filter,
-	int topN,
-	ApplicationType? applicationScope)
+	int topN)
 {
 	var request = new FindAccountsOrCustomersInfoRequest
 	{
 		Filter = filter,
-		TopN = topN,
-		ApplicationScope = applicationScope
+		TopN = topN
 	};
 
 	return (await CustomerManagementService.CallAsync((s, r) => s.FindAccountsOrCustomersInfoAsync(r), request));
@@ -110,14 +110,12 @@ public async Task<FindAccountsOrCustomersInfoResponse> FindAccountsOrCustomersIn
 ```java
 static FindAccountsOrCustomersInfoResponse findAccountsOrCustomersInfo(
 	java.lang.String filter,
-	int topN,
-	ApplicationType applicationScope) throws RemoteException, Exception
+	int topN) throws RemoteException, Exception
 {
 	FindAccountsOrCustomersInfoRequest request = new FindAccountsOrCustomersInfoRequest();
 
 	request.setFilter(filter);
 	request.setTopN(topN);
-	request.setApplicationScope(applicationScope);
 
 	return CustomerManagementService.getService().findAccountsOrCustomersInfo(request);
 }
@@ -125,8 +123,7 @@ static FindAccountsOrCustomersInfoResponse findAccountsOrCustomersInfo(
 ```php
 static function FindAccountsOrCustomersInfo(
 	$filter,
-	$topN,
-	$applicationScope)
+	$topN)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
@@ -135,7 +132,6 @@ static function FindAccountsOrCustomersInfo(
 
 	$request->Filter = $filter;
 	$request->TopN = $topN;
-	$request->ApplicationScope = $applicationScope;
 
 	return $GLOBALS['CustomerManagementProxy']->GetService()->FindAccountsOrCustomersInfo($request);
 }
@@ -143,11 +139,10 @@ static function FindAccountsOrCustomersInfo(
 ```python
 response=customermanagement_service.FindAccountsOrCustomersInfo(
 	Filter=Filter,
-	TopN=TopN,
-	ApplicationScope=ApplicationScope)
+	TopN=TopN)
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

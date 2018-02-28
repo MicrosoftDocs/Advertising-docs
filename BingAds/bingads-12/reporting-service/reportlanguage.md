@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the language values that you may specify for columns of a downloaded report.
 ---
 # ReportLanguage Value Set - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the language values that you may specify for columns of a downloaded report.
 
 ## Syntax
@@ -27,8 +31,8 @@ Defines the language values that you may specify for columns of a downloaded rep
 |<a name="french"></a>French|The report columns will be in French.|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [ReportRequest](reportrequest.md)  

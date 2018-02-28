@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines a paging object for the list of insertion orders returned using the SearchInsertionOrders operation.
 ---
 # Paging Data Object - Customer Billing
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines a paging object for the list of insertion orders returned using the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.
 
 ## Syntax
@@ -27,8 +31,8 @@ Defines a paging object for the list of insertion orders returned using the [Sea
 |<a name="size"></a>Size|The page size and the number of results to return in the specified page.<br /><br />The maximum size is 1,000.|**int**|
 
 ## Requirements
-Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [SearchInsertionOrders](searchinsertionorders.md)  

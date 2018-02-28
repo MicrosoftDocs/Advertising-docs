@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the criteria to use to filter the ad group performance report data.
 ---
 # AdGroupPerformanceReportFilter Data Object - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the criteria to use to filter the ad group performance report data.
 
 ## Syntax
@@ -37,8 +41,8 @@ Defines the criteria to use to filter the ad group performance report data.
 |<a name="status"></a>Status|The report will include data for only the specified ad group status values. For example, you can use the filter to include data for only active ad groups.<br /><br />You can specify one or more status values.|[AdGroupStatusReportFilter](adgroupstatusreportfilter.md)|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [AdGroupPerformanceReportRequest](adgroupperformancereportrequest.md)  

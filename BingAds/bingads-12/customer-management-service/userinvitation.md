@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines a user invitation.
 ---
 # UserInvitation Data Object - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines a user invitation. When the invitation is accepted, the user's Microsoft account is linked to the specified Bing Ads customer accounts.
 
 It is possible to have multiple pending invitations sent to the same email address, which have not yet expired. It is also possible for those invitations to have specified different user roles, for example if you sent an invitation with an incorrect user role and then sent a second invitation with the correct user role. The recipient can accept any of the invitations. The Bing Ads API does not support any operations to delete pending user invitations. After you invite a user, the only way to cancel the invitation is through the Bing Ads web application. You can find both pending and accepted invitations in the Users section of Accounts & Billing.
@@ -26,8 +30,8 @@ For more information about user authentication, see [Authentication with OAuth](
     <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="CustomerId" type="xs:long" />
-    <xs:element minOccurs="0" name="Role" type="tns:UserRole" />
-    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q6:ArrayOflong" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="RoleId" type="xs:int" />
+    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q7:ArrayOflong" xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
     <xs:element minOccurs="0" name="Lcid" type="tns:LCID" />
   </xs:sequence>
@@ -46,11 +50,11 @@ For more information about user authentication, see [Authentication with OAuth](
 |<a name="id"></a>Id|A system generated unique identifier for the user invitation.<br/><br/>**Send:** Read-only|**long**|
 |<a name="lastname"></a>LastName|The last name of the user. The last name is limited to 40 characters.<br/><br/>**Send:** Required|**string**|
 |<a name="lcid"></a>Lcid|The locale to use when sending correspondence to the user by email or postal mail. The default is EnglishUS.<br/><br/>**Send:** Required|[LCID](lcid.md)|
-|<a name="role"></a>Role|The user role, which determines the level of access that the user has to the accounts specified in the AccountIds element.<br/><br/>**Send:** Required|[UserRole](userrole.md)|
+|<a name="roleid"></a>RoleId|Reserved.|**int**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [SearchUserInvitations](searchuserinvitations.md)  

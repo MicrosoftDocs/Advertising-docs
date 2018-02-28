@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines a keyword performance report column and corresponding sort order.
 ---
 # KeywordPerformanceReportSort Data Object - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines a keyword performance report column and corresponding sort order.
 
 ## Syntax
@@ -27,8 +31,8 @@ Defines a keyword performance report column and corresponding sort order.
 |<a name="sortorder"></a>SortOrder|Defines the ascending or descending sort order of values within the specified report column.|[SortOrder](sortorder.md)|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [KeywordPerformanceReportRequest](keywordperformancereportrequest.md)  

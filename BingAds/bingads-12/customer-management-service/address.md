@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines a postal address.
 ---
 # Address Data Object - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines a postal address.
 
 ## Syntax
@@ -43,8 +47,8 @@ Defines a postal address.
 |<a name="timestamp"></a>TimeStamp|The date and time that the address was last updated. The value is in Coordinated Universal Time (UTC).<br/><br/> The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|**base64Binary**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [AdvertiserAccount](advertiseraccount.md)  

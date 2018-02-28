@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines an order for the list of insertion orders returned using the SearchInsertionOrders operation.
 ---
 # OrderBy Data Object - Customer Billing
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines an order for the list of insertion orders returned using the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.
 
 ## Syntax
@@ -27,8 +31,8 @@ Defines an order for the list of insertion orders returned using the [SearchInse
 |<a name="order"></a>Order|Determines whether the results are ascending or descending.|[SortOrder](sortorder.md)|
 
 ## Requirements
-Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [SearchInsertionOrders](searchinsertionorders.md)  

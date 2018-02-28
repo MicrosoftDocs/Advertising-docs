@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines a billing document identification object that contains information about a billing document, such as the billing document identifier, billing document amount, and account identifier.
 ---
 # BillingDocumentInfo Data Object - Customer Billing
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines a billing document identification object that contains information about a billing document, such as the billing document identifier, billing document amount, and account identifier.
 
 ## Syntax
@@ -37,8 +41,8 @@ Defines a billing document identification object that contains information about
 |<a name="documentid"></a>DocumentId|An identifier of the billing document.|**long**|
 
 ## Requirements
-Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [GetBillingDocumentsInfo](getbillingdocumentsinfo.md)  

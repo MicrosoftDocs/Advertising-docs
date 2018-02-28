@@ -7,6 +7,10 @@ ms.author: eur
 description: Service operations reference for the CustomerManagement service.
 ---
 # Customer Management Service Operations
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 The Customer Management service defines the following service operations.
 
 |Service Operation|Description|Request Limits|

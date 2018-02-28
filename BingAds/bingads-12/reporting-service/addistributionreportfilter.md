@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the ad distribution medium values that you can use to filter the report data.
 ---
 # AdDistributionReportFilter Value Set - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the ad distribution medium values that you can use to filter the report data. These values are also used as column values in reports that include ad distribution, such as the account performance report.
 
 ## Syntax
@@ -39,8 +43,8 @@ Defines the ad distribution medium values that you can use to filter the report 
 |<a name="search"></a>Search|The report will contain search ads.|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [AccountPerformanceReportFilter](accountperformancereportfilter.md)  

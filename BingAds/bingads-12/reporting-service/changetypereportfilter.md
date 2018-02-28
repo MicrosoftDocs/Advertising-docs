@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the types of changes to entities by which you can filter the report data.
 ---
 # ChangeTypeReportFilter Value Set - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the types of changes to entities by which you can filter the report data. These values are also used as column values in the `HowChanged` column of the campaign change history report. For more information, see [SearchCampaignChangeHistoryReportColumn](../reporting-service/searchcampaignchangehistoryreportcolumn.md).
 
 ## Syntax
@@ -33,8 +37,8 @@ Defines the types of changes to entities by which you can filter the report data
 |<a name="deleted"></a>Deleted|The report will include data for entities that have been deleted.|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [SearchCampaignChangeHistoryReportFilter](searchcampaignchangehistoryreportfilter.md)  

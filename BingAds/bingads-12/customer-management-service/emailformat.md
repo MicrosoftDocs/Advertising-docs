@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the possible formats of the body of an email message.
 ---
 # EmailFormat Value Set - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the possible formats of the body of an email message.
 
 ## Syntax
@@ -39,8 +43,8 @@ Defines the possible formats of the body of an email message.
 |<a name="text"></a>Text|The format of the body of the email message is plain text.|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 
 ## Used By
 [ContactInfo](contactinfo.md)  

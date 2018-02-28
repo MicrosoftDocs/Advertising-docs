@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the status of a report request.
 ---
 # ReportRequestStatus Data Object - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the status of a report request.
 
 ## Syntax
@@ -27,8 +31,8 @@ Defines the status of a report request.
 |<a name="status"></a>Status|The status of a report request.|[ReportRequestStatusType](reportrequeststatustype.md)|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [PollGenerateReport](pollgeneratereport.md)  

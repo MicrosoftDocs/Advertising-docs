@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the criteria to use to filter the keyword performance report data.
 ---
 # KeywordPerformanceReportFilter Data Object - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the criteria to use to filter the keyword performance report data.
 
 ## Syntax
@@ -55,8 +59,8 @@ Defines the criteria to use to filter the keyword performance report data.
 |<a name="qualityscore"></a>QualityScore|The report will include data for only keywords with the specified quality scores. You can filter the report based on one or more of the following relevance values:<br /><br />0 - N/A (as shown in the web application)<br /><br />1 - Underperforming<br /><br />2 - Underperforming<br /><br />3 - Underperforming<br /><br />4 - Underperforming<br /><br />5 - Underperforming<br /><br />6 - Average performance<br /><br />7 - Competitive<br /><br />8 - Competitive<br /><br />9 - Competitive<br /><br />10 - Competitive|**int** array|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [KeywordPerformanceReportRequest](keywordperformancereportrequest.md)  

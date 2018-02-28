@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines a user.
 ---
 # User Data Object - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines a user.
 
 ## Syntax
@@ -14,7 +18,6 @@ Defines a user.
 <xs:complexType name="User" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element minOccurs="0" name="ContactInfo" nillable="true" type="tns:ContactInfo" />
-    <xs:element minOccurs="0" name="CustomerAppScope" nillable="true" type="tns:ApplicationType" />
     <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
@@ -38,7 +41,6 @@ Defines a user.
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="contactinfo"></a>ContactInfo|The user's contact information.<br/><br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|[ContactInfo](contactinfo.md)|
-|<a name="customerappscope"></a>CustomerAppScope|Confirms that the customer to whom this user belongs is an advertiser.<br/><br/>**Update:** Read-only|[ApplicationType](applicationtype.md)|
 |<a name="customerid"></a>CustomerId|The identifier of the customer to whom this user belongs.<br/><br/>**Update:** Read-only|**long**|
 |<a name="id"></a>Id|The system generated identifier of the user.<br/><br/>**Update:** Required|**long**|
 |<a name="ismigratedtomicrosoftaccount"></a>IsMigratedToMicrosoftAccount|If *true*, the user can be authenticated using  a Microsoft Account. For more information, see [Authentication with OAuth](../guides/authentication-oauth.md).<br/><br/>**Update:** Read-only|**boolean**|
@@ -55,8 +57,8 @@ Defines a user.
 |<a name="username"></a>UserName|If the value of *IsMigratedToMicrosoftAccount* is false, this element contains the user's Bing Ads managed sign-in user name. The name is case-insensitive.<br /><br />If the value of *IsMigratedToMicrosoftAccount* is true, this element contains the email address corresponding to the authenticated Microsoft Account.<br /><br /> The email address of the Microsoft Account may differ from the Email element of the [ContactInfo](../customer-management-service/contactinfo.md) object.<br/><br/>**Update:** Read-only|**string**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [GetUser](getuser.md)  

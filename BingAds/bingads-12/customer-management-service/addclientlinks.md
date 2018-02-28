@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # AddClientLinks Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Initiates the client link process to manage the account of another customer. Sends an invitation from an agency to a potential client.  For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
 
 > [!NOTE]
@@ -56,7 +60,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">AddClientLinks</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -65,32 +69,32 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <AddClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <ClientLinks xmlns:e307="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e307:ClientLink>
-          <e307:ClientAccountId i:nil="false">ValueHere</e307:ClientAccountId>
-          <e307:ClientAccountNumber i:nil="false">ValueHere</e307:ClientAccountNumber>
-          <e307:ManagingCustomerId i:nil="false">ValueHere</e307:ManagingCustomerId>
-          <e307:ManagingCustomerNumber i:nil="false">ValueHere</e307:ManagingCustomerNumber>
-          <e307:Note i:nil="false">ValueHere</e307:Note>
-          <e307:Name i:nil="false">ValueHere</e307:Name>
-          <e307:InviterEmail i:nil="false">ValueHere</e307:InviterEmail>
-          <e307:InviterName i:nil="false">ValueHere</e307:InviterName>
-          <e307:InviterPhone i:nil="false">ValueHere</e307:InviterPhone>
-          <e307:IsBillToClient>ValueHere</e307:IsBillToClient>
-          <e307:StartDate i:nil="false">ValueHere</e307:StartDate>
-          <e307:Status i:nil="false">ValueHere</e307:Status>
-          <e307:SuppressNotification>ValueHere</e307:SuppressNotification>
-          <e307:LastModifiedDateTime>ValueHere</e307:LastModifiedDateTime>
-          <e307:LastModifiedByUserId>ValueHere</e307:LastModifiedByUserId>
-          <e307:Timestamp i:nil="false">ValueHere</e307:Timestamp>
-          <ForwardCompatibilityMap xmlns:e308="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e308:KeyValuePairOfstringstring>
-              <e308:key i:nil="false">ValueHere</e308:key>
-              <e308:value i:nil="false">ValueHere</e308:value>
-            </e308:KeyValuePairOfstringstring>
+    <AddClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+      <ClientLinks xmlns:e4="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e4:ClientLink>
+          <e4:ClientAccountId i:nil="false">ValueHere</e4:ClientAccountId>
+          <e4:ClientAccountNumber i:nil="false">ValueHere</e4:ClientAccountNumber>
+          <e4:ManagingCustomerId i:nil="false">ValueHere</e4:ManagingCustomerId>
+          <e4:ManagingCustomerNumber i:nil="false">ValueHere</e4:ManagingCustomerNumber>
+          <e4:Note i:nil="false">ValueHere</e4:Note>
+          <e4:Name i:nil="false">ValueHere</e4:Name>
+          <e4:InviterEmail i:nil="false">ValueHere</e4:InviterEmail>
+          <e4:InviterName i:nil="false">ValueHere</e4:InviterName>
+          <e4:InviterPhone i:nil="false">ValueHere</e4:InviterPhone>
+          <e4:IsBillToClient>ValueHere</e4:IsBillToClient>
+          <e4:StartDate i:nil="false">ValueHere</e4:StartDate>
+          <e4:Status i:nil="false">ValueHere</e4:Status>
+          <e4:SuppressNotification>ValueHere</e4:SuppressNotification>
+          <e4:LastModifiedDateTime>ValueHere</e4:LastModifiedDateTime>
+          <e4:LastModifiedByUserId>ValueHere</e4:LastModifiedByUserId>
+          <e4:Timestamp i:nil="false">ValueHere</e4:Timestamp>
+          <ForwardCompatibilityMap xmlns:e5="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e5:KeyValuePairOfstringstring>
+              <e5:key i:nil="false">ValueHere</e5:key>
+              <e5:value i:nil="false">ValueHere</e5:value>
+            </e5:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-        </e307:ClientLink>
+        </e4:ClientLink>
       </ClientLinks>
     </AddClientLinksRequest>
   </s:Body>
@@ -102,26 +106,26 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <AddClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <OperationErrors xmlns:e309="https://bingads.microsoft.com/Customer/v11/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e309:OperationError>
-          <e309:Code>ValueHere</e309:Code>
-          <e309:Details d4p1:nil="false">ValueHere</e309:Details>
-          <e309:Message d4p1:nil="false">ValueHere</e309:Message>
-        </e309:OperationError>
+    <AddClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <OperationErrors xmlns:e6="https://bingads.microsoft.com/Customer/v12/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e6:OperationError>
+          <e6:Code>ValueHere</e6:Code>
+          <e6:Details d4p1:nil="false">ValueHere</e6:Details>
+          <e6:Message d4p1:nil="false">ValueHere</e6:Message>
+        </e6:OperationError>
       </OperationErrors>
-      <PartialErrors xmlns:e310="https://bingads.microsoft.com/Customer/v11/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e310:ArrayOfOperationError>
-          <e310:OperationError>
-            <e310:Code>ValueHere</e310:Code>
-            <e310:Details d4p1:nil="false">ValueHere</e310:Details>
-            <e310:Message d4p1:nil="false">ValueHere</e310:Message>
-          </e310:OperationError>
-        </e310:ArrayOfOperationError>
+      <PartialErrors xmlns:e7="https://bingads.microsoft.com/Customer/v12/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e7:ArrayOfOperationError>
+          <e7:OperationError>
+            <e7:Code>ValueHere</e7:Code>
+            <e7:Details d4p1:nil="false">ValueHere</e7:Details>
+            <e7:Message d4p1:nil="false">ValueHere</e7:Message>
+          </e7:OperationError>
+        </e7:ArrayOfOperationError>
       </PartialErrors>
     </AddClientLinksResponse>
   </s:Body>
@@ -129,7 +133,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<AddClientLinksResponse> AddClientLinksAsync(
 	IList<ClientLink> clientLinks)
@@ -173,6 +177,6 @@ response=customermanagement_service.AddClientLinks(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

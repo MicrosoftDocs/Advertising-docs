@@ -7,6 +7,10 @@ ms.author: eur
 description: Data objects reference for the Reporting service.
 ---
 # Reporting Data Objects
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 The Reporting service defines the following data objects.
 
 |Data Object|Description|

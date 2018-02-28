@@ -1384,8 +1384,6 @@
       - name: Customer Management Data Objects
         href: ../customer-management-service/customer-management-data-objects.md
         items: 
-        - name: Account
-          href: ../customer-management-service/account.md
         - name: AccountInfo
           href: ../customer-management-service/accountinfo.md
         - name: AccountInfoWithCustomerData
@@ -1437,14 +1435,8 @@
           href: ../customer-management-service/accountfinancialstatus.md
         - name: AccountLifeCycleStatus
           href: ../customer-management-service/accountlifecyclestatus.md
-        - name: AccountType
-          href: ../customer-management-service/accounttype.md
-        - name: ApplicationType
-          href: ../customer-management-service/applicationtype.md
         - name: ClientLinkStatus
           href: ../customer-management-service/clientlinkstatus.md
-        - name: CurrencyType
-          href: ../customer-management-service/currencytype.md
         - name: CustomerFinancialStatus
           href: ../customer-management-service/customerfinancialstatus.md
         - name: CustomerLifeCycleStatus
@@ -1473,8 +1465,6 @@
           href: ../customer-management-service/timezonetype.md
         - name: UserLifeCycleStatus
           href: ../customer-management-service/userlifecyclestatus.md
-        - name: UserRole
-          href: ../customer-management-service/userrole.md
     - name: Reporting Service Reference
       href: ../reporting-service/reporting-service-reference.md
       items: 
@@ -1717,8 +1707,6 @@
           href: ../reporting-service/keywordstatusreportfilter.md
         - name: NegativeKeywordConflictReportColumn
           href: ../reporting-service/negativekeywordconflictreportcolumn.md
-        - name: NonHourlyReportAggregation
-          href: ../reporting-service/nonhourlyreportaggregation.md
         - name: ProductDimensionPerformanceReportColumn
           href: ../reporting-service/productdimensionperformancereportcolumn.md
         - name: ProductPartitionPerformanceReportColumn
@@ -1743,8 +1731,6 @@
           href: ../reporting-service/searchcampaignchangehistoryreportcolumn.md
         - name: SearchQueryPerformanceReportColumn
           href: ../reporting-service/searchqueryperformancereportcolumn.md
-        - name: SearchQueryReportAggregation
-          href: ../reporting-service/searchqueryreportaggregation.md
         - name: ShareOfVoiceReportColumn
           href: ../reporting-service/shareofvoicereportcolumn.md
         - name: SortOrder

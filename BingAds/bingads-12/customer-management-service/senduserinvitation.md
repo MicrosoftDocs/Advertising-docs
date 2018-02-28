@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # SendUserInvitation Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Sends an invitation for  a Microsoft account user to manage one or more Bing Ads customer accounts. When the invitation is accepted, the user's Microsoft account is linked to the specified Bing Ads customer accounts.  
 
 It is possible to have multiple pending invitations sent to the same email address, which have not yet expired. It is also possible for those invitations to have specified different user roles, for example if you sent an invitation with an incorrect user role and then sent a second invitation with the correct user role. The recipient can accept any of the invitations. The Bing Ads API does not support any operations to delete pending user invitations. After you invite a user, the only way to cancel the invitation is through the Bing Ads web application. You can find both pending and accepted invitations in the Users section of Accounts & Billing.
@@ -51,7 +55,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">SendUserInvitation</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -60,19 +64,19 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <SendUserInvitationRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <UserInvitation xmlns:e341="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e341:Id>ValueHere</e341:Id>
-        <e341:FirstName i:nil="false">ValueHere</e341:FirstName>
-        <e341:LastName i:nil="false">ValueHere</e341:LastName>
-        <e341:Email i:nil="false">ValueHere</e341:Email>
-        <e341:CustomerId>ValueHere</e341:CustomerId>
-        <e341:Role>ValueHere</e341:Role>
-        <e341:AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <SendUserInvitationRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+      <UserInvitation xmlns:e39="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e39:Id>ValueHere</e39:Id>
+        <e39:FirstName i:nil="false">ValueHere</e39:FirstName>
+        <e39:LastName i:nil="false">ValueHere</e39:LastName>
+        <e39:Email i:nil="false">ValueHere</e39:Email>
+        <e39:CustomerId>ValueHere</e39:CustomerId>
+        <e39:RoleId>ValueHere</e39:RoleId>
+        <e39:AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <a1:long>ValueHere</a1:long>
-        </e341:AccountIds>
-        <e341:ExpirationDate>ValueHere</e341:ExpirationDate>
-        <e341:Lcid>ValueHere</e341:Lcid>
+        </e39:AccountIds>
+        <e39:ExpirationDate>ValueHere</e39:ExpirationDate>
+        <e39:Lcid>ValueHere</e39:Lcid>
       </UserInvitation>
     </SendUserInvitationRequest>
   </s:Body>
@@ -84,11 +88,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <SendUserInvitationResponse xmlns="https://bingads.microsoft.com/Customer/v11">
+    <SendUserInvitationResponse xmlns="https://bingads.microsoft.com/Customer/v12">
       <UserInvitationId>ValueHere</UserInvitationId>
     </SendUserInvitationResponse>
   </s:Body>
@@ -96,7 +100,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<SendUserInvitationResponse> SendUserInvitationAsync(
 	UserInvitation userInvitation)
@@ -140,6 +144,6 @@ response=customermanagement_service.SendUserInvitation(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

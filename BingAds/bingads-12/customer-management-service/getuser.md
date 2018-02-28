@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # GetUser Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Gets the details of a user.
 
 ## <a name="request"></a>Request Elements
@@ -33,9 +37,7 @@ The *GetUserResponse* object defines the [body](#response-body) and [header](#re
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accounts"></a>Accounts|An array of identifiers of the accounts to which the user has access permissions. If the *Roles* element contains an account role and the *Accounts* element contains a 0 (zero)-length array, it indicates that the user has access permissions to all of the customer's accounts.|**long** array|
-|<a name="customers"></a>Customers|An array of identifiers of the customers to which the user has access permissions. If the *Roles* element contains a customer role and the *Customers* element contains a 0 (zero)-length array, it indicates that the user has access permissions to all customers.|**long** array|
-|<a name="roles"></a>Roles|An array of roles that determines the permissions that the user has to manage the customer or account data.<br /><br />Possible values include the following:<br />16 - The user has the **Advertiser Campaign Manager** role.<br />33 - The user has the **Aggregator** role.<br />41 - The user has the **Super Admin** role.<br />100 - The user has the **ClientViewer** role.<br />203 - The user has the **Standard** role.<br /><br />For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).<br /><br />**Important**: The list above provides examples of possible return values. Other  values might be returned. Deprecated or internal roles can be included in the response.|**int** array|
+|<a name="customerroles"></a>CustomerRoles|Reserved.|[CustomerRole](customerrole.md) array|
 |<a name="user"></a>User|A user object that contains information about the user.|[User](user.md)|
 
 ### <a name="response-header"></a>Response Header Elements
@@ -46,7 +48,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">GetUser</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -55,7 +57,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetUserRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+    <GetUserRequest xmlns="https://bingads.microsoft.com/Customer/v12">
       <UserId i:nil="false">ValueHere</UserId>
     </GetUserRequest>
   </s:Body>
@@ -67,72 +69,71 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetUserResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <User xmlns:e320="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e320:ContactInfo d4p1:nil="false">
-          <e320:Address d4p1:nil="false">
-            <e320:City d4p1:nil="false">ValueHere</e320:City>
-            <e320:CountryCode d4p1:nil="false">ValueHere</e320:CountryCode>
-            <e320:Id d4p1:nil="false">ValueHere</e320:Id>
-            <e320:Line1 d4p1:nil="false">ValueHere</e320:Line1>
-            <e320:Line2 d4p1:nil="false">ValueHere</e320:Line2>
-            <e320:Line3 d4p1:nil="false">ValueHere</e320:Line3>
-            <e320:Line4 d4p1:nil="false">ValueHere</e320:Line4>
-            <e320:PostalCode d4p1:nil="false">ValueHere</e320:PostalCode>
-            <e320:StateOrProvince d4p1:nil="false">ValueHere</e320:StateOrProvince>
-            <e320:TimeStamp d4p1:nil="false">ValueHere</e320:TimeStamp>
-          </e320:Address>
-          <e320:ContactByPhone d4p1:nil="false">ValueHere</e320:ContactByPhone>
-          <e320:ContactByPostalMail d4p1:nil="false">ValueHere</e320:ContactByPostalMail>
-          <e320:Email d4p1:nil="false">ValueHere</e320:Email>
-          <e320:EmailFormat d4p1:nil="false">ValueHere</e320:EmailFormat>
-          <e320:Fax d4p1:nil="false">ValueHere</e320:Fax>
-          <e320:HomePhone d4p1:nil="false">ValueHere</e320:HomePhone>
-          <e320:Id d4p1:nil="false">ValueHere</e320:Id>
-          <e320:Mobile d4p1:nil="false">ValueHere</e320:Mobile>
-          <e320:Phone1 d4p1:nil="false">ValueHere</e320:Phone1>
-          <e320:Phone2 d4p1:nil="false">ValueHere</e320:Phone2>
-        </e320:ContactInfo>
-        <e320:CustomerAppScope d4p1:nil="false">ValueHere</e320:CustomerAppScope>
-        <e320:CustomerId d4p1:nil="false">ValueHere</e320:CustomerId>
-        <e320:Id d4p1:nil="false">ValueHere</e320:Id>
-        <e320:JobTitle d4p1:nil="false">ValueHere</e320:JobTitle>
-        <e320:LastModifiedByUserId d4p1:nil="false">ValueHere</e320:LastModifiedByUserId>
-        <e320:LastModifiedTime d4p1:nil="false">ValueHere</e320:LastModifiedTime>
-        <e320:Lcid d4p1:nil="false">ValueHere</e320:Lcid>
-        <e320:Name d4p1:nil="false">
-          <e320:FirstName d4p1:nil="false">ValueHere</e320:FirstName>
-          <e320:LastName d4p1:nil="false">ValueHere</e320:LastName>
-          <e320:MiddleInitial d4p1:nil="false">ValueHere</e320:MiddleInitial>
-        </e320:Name>
-        <e320:Password d4p1:nil="false">ValueHere</e320:Password>
-        <e320:SecretAnswer d4p1:nil="false">ValueHere</e320:SecretAnswer>
-        <e320:SecretQuestion>ValueHere</e320:SecretQuestion>
-        <e320:UserLifeCycleStatus d4p1:nil="false">ValueHere</e320:UserLifeCycleStatus>
-        <e320:TimeStamp d4p1:nil="false">ValueHere</e320:TimeStamp>
-        <e320:UserName d4p1:nil="false">ValueHere</e320:UserName>
-        <e320:IsMigratedToMicrosoftAccount>ValueHere</e320:IsMigratedToMicrosoftAccount>
+    <GetUserResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <User xmlns:e17="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e17:ContactInfo d4p1:nil="false">
+          <e17:Address d4p1:nil="false">
+            <e17:City d4p1:nil="false">ValueHere</e17:City>
+            <e17:CountryCode d4p1:nil="false">ValueHere</e17:CountryCode>
+            <e17:Id d4p1:nil="false">ValueHere</e17:Id>
+            <e17:Line1 d4p1:nil="false">ValueHere</e17:Line1>
+            <e17:Line2 d4p1:nil="false">ValueHere</e17:Line2>
+            <e17:Line3 d4p1:nil="false">ValueHere</e17:Line3>
+            <e17:Line4 d4p1:nil="false">ValueHere</e17:Line4>
+            <e17:PostalCode d4p1:nil="false">ValueHere</e17:PostalCode>
+            <e17:StateOrProvince d4p1:nil="false">ValueHere</e17:StateOrProvince>
+            <e17:TimeStamp d4p1:nil="false">ValueHere</e17:TimeStamp>
+          </e17:Address>
+          <e17:ContactByPhone d4p1:nil="false">ValueHere</e17:ContactByPhone>
+          <e17:ContactByPostalMail d4p1:nil="false">ValueHere</e17:ContactByPostalMail>
+          <e17:Email d4p1:nil="false">ValueHere</e17:Email>
+          <e17:EmailFormat d4p1:nil="false">ValueHere</e17:EmailFormat>
+          <e17:Fax d4p1:nil="false">ValueHere</e17:Fax>
+          <e17:HomePhone d4p1:nil="false">ValueHere</e17:HomePhone>
+          <e17:Id d4p1:nil="false">ValueHere</e17:Id>
+          <e17:Mobile d4p1:nil="false">ValueHere</e17:Mobile>
+          <e17:Phone1 d4p1:nil="false">ValueHere</e17:Phone1>
+          <e17:Phone2 d4p1:nil="false">ValueHere</e17:Phone2>
+        </e17:ContactInfo>
+        <e17:CustomerId d4p1:nil="false">ValueHere</e17:CustomerId>
+        <e17:Id d4p1:nil="false">ValueHere</e17:Id>
+        <e17:JobTitle d4p1:nil="false">ValueHere</e17:JobTitle>
+        <e17:LastModifiedByUserId d4p1:nil="false">ValueHere</e17:LastModifiedByUserId>
+        <e17:LastModifiedTime d4p1:nil="false">ValueHere</e17:LastModifiedTime>
+        <e17:Lcid d4p1:nil="false">ValueHere</e17:Lcid>
+        <e17:Name d4p1:nil="false">
+          <e17:FirstName d4p1:nil="false">ValueHere</e17:FirstName>
+          <e17:LastName d4p1:nil="false">ValueHere</e17:LastName>
+          <e17:MiddleInitial d4p1:nil="false">ValueHere</e17:MiddleInitial>
+        </e17:Name>
+        <e17:Password d4p1:nil="false">ValueHere</e17:Password>
+        <e17:SecretAnswer d4p1:nil="false">ValueHere</e17:SecretAnswer>
+        <e17:SecretQuestion>ValueHere</e17:SecretQuestion>
+        <e17:UserLifeCycleStatus d4p1:nil="false">ValueHere</e17:UserLifeCycleStatus>
+        <e17:TimeStamp d4p1:nil="false">ValueHere</e17:TimeStamp>
+        <e17:UserName d4p1:nil="false">ValueHere</e17:UserName>
+        <e17:IsMigratedToMicrosoftAccount>ValueHere</e17:IsMigratedToMicrosoftAccount>
       </User>
-      <Roles d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <a1:int>ValueHere</a1:int>
-      </Roles>
-      <Accounts d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <a1:long>ValueHere</a1:long>
-      </Accounts>
-      <Customers d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <a1:long>ValueHere</a1:long>
-      </Customers>
+      <CustomerRoles xmlns:e18="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e18:CustomerRole>
+          <e18:RoleId>ValueHere</e18:RoleId>
+          <e18:CustomerId>ValueHere</e18:CustomerId>
+          <e18:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <a1:long>ValueHere</a1:long>
+          </e18:AccountIds>
+        </e18:CustomerRole>
+      </CustomerRoles>
     </GetUserResponse>
   </s:Body>
 </s:Envelope>
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetUserResponse> GetUserAsync(
 	long? userId)
@@ -176,6 +177,6 @@ response=customermanagement_service.GetUser(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

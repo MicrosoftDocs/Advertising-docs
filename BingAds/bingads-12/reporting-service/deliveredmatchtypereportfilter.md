@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the delivered match type values that you can use to filter the report data.
 ---
 # DeliveredMatchTypeReportFilter Value Set - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the delivered match type values that you can use to filter the report data. These values are also used as column values in reports that include match type, such as the keyword performance report.
 
 ## Syntax
@@ -35,8 +39,8 @@ Defines the delivered match type values that you can use to filter the report da
 |<a name="phrase"></a>Phrase|The report will contain ads that were delivered by using a phrase match comparison.|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [KeywordPerformanceReportFilter](keywordperformancereportfilter.md)  

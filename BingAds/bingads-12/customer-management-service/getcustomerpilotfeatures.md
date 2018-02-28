@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # GetCustomerPilotFeatures Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Gets a list of the pilot programs in which the specified customer participates.
 
 ## <a name="request"></a>Request Elements
@@ -43,7 +47,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">GetCustomerPilotFeatures</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -52,7 +56,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetCustomerPilotFeaturesRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+    <GetCustomerPilotFeaturesRequest xmlns="https://bingads.microsoft.com/Customer/v12">
       <CustomerId>ValueHere</CustomerId>
     </GetCustomerPilotFeaturesRequest>
   </s:Body>
@@ -64,11 +68,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetCustomerPilotFeaturesResponse xmlns="https://bingads.microsoft.com/Customer/v11">
+    <GetCustomerPilotFeaturesResponse xmlns="https://bingads.microsoft.com/Customer/v12">
       <FeaturePilotFlags d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <a1:int>ValueHere</a1:int>
       </FeaturePilotFlags>
@@ -78,7 +82,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetCustomerPilotFeaturesResponse> GetCustomerPilotFeaturesAsync(
 	long customerId)
@@ -122,6 +126,6 @@ response=customermanagement_service.GetCustomerPilotFeatures(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

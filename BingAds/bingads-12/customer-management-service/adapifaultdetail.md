@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines a fault object that operations return when generic errors occur, such as an authentication error.
 ---
 # AdApiFaultDetail Data Object - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines a fault object that operations return when generic errors occur, such as an authentication error.
 
 ## Syntax
@@ -40,6 +44,6 @@ The [AdApiFaultDetail](adapifaultdetail.md) object derives from the [Application
 |<a name="trackingid"></a>TrackingId|The identifier of the log entry that contains the details of the API call.|**string**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
 Namespace: https\://adapi.microsoft.com  
 

@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the ascending or descending sort order of values within the specified report column.
 ---
 # SortOrder Value Set - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the ascending or descending sort order of values within the specified report column.
 
 ## Syntax
@@ -27,8 +31,8 @@ Defines the ascending or descending sort order of values within the specified re
 |<a name="descending"></a>Descending|The results will be sorted descending.|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [KeywordPerformanceReportSort](keywordperformancereportsort.md)  

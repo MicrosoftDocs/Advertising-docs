@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the dynamic ad target status values that you can use to filter the report data.
 ---
 # DynamicAdTargetStatusReportFilter Value Set - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the dynamic ad target status values that you can use to filter the report data. These values are also used as column values in reports that include dynamic ad targets status, such as the DSA auto target performance report.
 
 ## Syntax
@@ -33,8 +37,8 @@ Defines the dynamic ad target status values that you can use to filter the repor
 |<a name="paused"></a>Paused|The report will contain dynamic ad targets that are paused.|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [DSAAutoTargetPerformanceReportFilter](dsaautotargetperformancereportfilter.md)  

@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # AddAccount Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Creates a new account within an existing customer. 
 
 Only a user with Super Admin credentials can add accounts. 
@@ -26,7 +30,7 @@ The *AddAccountRequest* object defines the [body](#request-body) and [header](#r
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="account"></a>Account|The account that you want to add to the existing customer.<br/><br/>You must specify the ParentCustomerId in the advertiser account object.|[Account](account.md)|
+|<a name="account"></a>Account|The account that you want to add to the existing customer.<br/><br/>You must specify the ParentCustomerId in the advertiser account object.|[AdvertiserAccount](advertiseraccount.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -50,7 +54,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">AddAccount</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -59,21 +63,14 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <AddAccountRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Account xmlns:e1="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
-        <e1:AccountType>ValueHere</e1:AccountType>
+    <AddAccountRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+      <Account xmlns:e1="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
         <e1:BillToCustomerId i:nil="false">ValueHere</e1:BillToCustomerId>
         <e1:CountryCode i:nil="false">ValueHere</e1:CountryCode>
-        <e1:CurrencyType i:nil="false">ValueHere</e1:CurrencyType>
+        <e1:CurrencyCode i:nil="false">ValueHere</e1:CurrencyCode>
         <e1:AccountFinancialStatus i:nil="false">ValueHere</e1:AccountFinancialStatus>
         <e1:Id i:nil="false">ValueHere</e1:Id>
         <e1:Language i:nil="false">ValueHere</e1:Language>
-        <ForwardCompatibilityMap xmlns:e2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e2:KeyValuePairOfstringstring>
-            <e2:key i:nil="false">ValueHere</e2:key>
-            <e2:value i:nil="false">ValueHere</e2:value>
-          </e2:KeyValuePairOfstringstring>
-        </ForwardCompatibilityMap>
         <e1:LastModifiedByUserId i:nil="false">ValueHere</e1:LastModifiedByUserId>
         <e1:LastModifiedTime i:nil="false">ValueHere</e1:LastModifiedTime>
         <e1:Name i:nil="false">ValueHere</e1:Name>
@@ -86,7 +83,12 @@ The following template shows the order of the [body](#request-body) and [header]
         <e1:TimeStamp i:nil="false">ValueHere</e1:TimeStamp>
         <e1:TimeZone i:nil="false">ValueHere</e1:TimeZone>
         <e1:PauseReason i:nil="false">ValueHere</e1:PauseReason>
-        <!--These fields are applicable if the derived type attribute is set to AdvertiserAccount-->
+        <ForwardCompatibilityMap xmlns:e2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e2:KeyValuePairOfstringstring>
+            <e2:key i:nil="false">ValueHere</e2:key>
+            <e2:value i:nil="false">ValueHere</e2:value>
+          </e2:KeyValuePairOfstringstring>
+        </ForwardCompatibilityMap>
         <e1:LinkedAgencies i:nil="false">
           <e1:CustomerInfo>
             <e1:Id i:nil="false">ValueHere</e1:Id>
@@ -114,6 +116,7 @@ The following template shows the order of the [body](#request-body) and [header]
           <e1:StateOrProvince i:nil="false">ValueHere</e1:StateOrProvince>
           <e1:TimeStamp i:nil="false">ValueHere</e1:TimeStamp>
         </e1:BusinessAddress>
+        <e1:AutoTagType i:nil="false">ValueHere</e1:AutoTagType>
       </Account>
     </AddAccountRequest>
   </s:Body>
@@ -125,11 +128,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <AddAccountResponse xmlns="https://bingads.microsoft.com/Customer/v11">
+    <AddAccountResponse xmlns="https://bingads.microsoft.com/Customer/v12">
       <AccountId>ValueHere</AccountId>
       <AccountNumber d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</AccountNumber>
       <CreateTime>ValueHere</CreateTime>
@@ -139,10 +142,10 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<AddAccountResponse> AddAccountAsync(
-	Account account)
+	AdvertiserAccount account)
 {
 	var request = new AddAccountRequest
 	{
@@ -154,7 +157,7 @@ public async Task<AddAccountResponse> AddAccountAsync(
 ```
 ```java
 static AddAccountResponse addAccount(
-	Account account) throws RemoteException, Exception
+	AdvertiserAccount account) throws RemoteException, Exception
 {
 	AddAccountRequest request = new AddAccountRequest();
 
@@ -183,6 +186,6 @@ response=customermanagement_service.AddAccount(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

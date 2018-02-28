@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # GetAccountsInfo Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.
 
 ## <a name="request"></a>Request Elements
@@ -44,7 +48,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">GetAccountsInfo</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -53,7 +57,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetAccountsInfoRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+    <GetAccountsInfoRequest xmlns="https://bingads.microsoft.com/Customer/v12">
       <CustomerId i:nil="false">ValueHere</CustomerId>
       <OnlyParentAccounts>ValueHere</OnlyParentAccounts>
     </GetAccountsInfoRequest>
@@ -66,19 +70,19 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetAccountsInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <AccountsInfo xmlns:e316="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e316:AccountInfo>
-          <e316:Id>ValueHere</e316:Id>
-          <e316:Name d4p1:nil="false">ValueHere</e316:Name>
-          <e316:Number d4p1:nil="false">ValueHere</e316:Number>
-          <e316:AccountLifeCycleStatus>ValueHere</e316:AccountLifeCycleStatus>
-          <e316:PauseReason d4p1:nil="false">ValueHere</e316:PauseReason>
-        </e316:AccountInfo>
+    <GetAccountsInfoResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <AccountsInfo xmlns:e13="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e13:AccountInfo>
+          <e13:Id>ValueHere</e13:Id>
+          <e13:Name d4p1:nil="false">ValueHere</e13:Name>
+          <e13:Number d4p1:nil="false">ValueHere</e13:Number>
+          <e13:AccountLifeCycleStatus>ValueHere</e13:AccountLifeCycleStatus>
+          <e13:PauseReason d4p1:nil="false">ValueHere</e13:PauseReason>
+        </e13:AccountInfo>
       </AccountsInfo>
     </GetAccountsInfoResponse>
   </s:Body>
@@ -86,7 +90,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetAccountsInfoResponse> GetAccountsInfoAsync(
 	long? customerId,
@@ -137,6 +141,6 @@ response=customermanagement_service.GetAccountsInfo(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the base object from which all fault detail objects derive.
 ---
 # ApplicationFault Data Object - Customer Billing
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the base object from which all fault detail objects derive.
 
 ## Syntax
@@ -25,6 +29,6 @@ Defines the base object from which all fault detail objects derive.
 |<a name="trackingid"></a>TrackingId|The identifier of the log entry that contains the details of the API call.|**string**|
 
 ## Requirements
-Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
+Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
 Namespace: https\://adapi.microsoft.com  
 

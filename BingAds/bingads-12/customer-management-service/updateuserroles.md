@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # UpdateUserRoles Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Updates the roles of the specified user.
 
 ## <a name="request"></a>Request Elements
@@ -50,7 +54,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">UpdateUserRoles</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -59,7 +63,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <UpdateUserRolesRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+    <UpdateUserRolesRequest xmlns="https://bingads.microsoft.com/Customer/v12">
       <CustomerId>ValueHere</CustomerId>
       <UserId>ValueHere</UserId>
       <NewRoleId i:nil="false">ValueHere</NewRoleId>
@@ -86,11 +90,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <UpdateUserRolesResponse xmlns="https://bingads.microsoft.com/Customer/v11">
+    <UpdateUserRolesResponse xmlns="https://bingads.microsoft.com/Customer/v12">
       <LastModifiedTime>ValueHere</LastModifiedTime>
     </UpdateUserRolesResponse>
   </s:Body>
@@ -98,7 +102,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<UpdateUserRolesResponse> UpdateUserRolesAsync(
 	long customerId,
@@ -217,6 +221,6 @@ Users with account level roles can be restricted to specific accounts. Users wit
 > When attempting to restrict customer level user roles to specific accounts the *UpdateUserRoles* operation will not fail, and the user will retain access for all accounts within the user's customer.
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

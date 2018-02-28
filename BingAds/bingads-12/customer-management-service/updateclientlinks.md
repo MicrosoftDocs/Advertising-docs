@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # UpdateClientLinks Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Updates the status of the specified client links. To update a client link, the *TimeStamp* element is required for validation, so you must first call the [SearchClientLinks](../customer-management-service/searchclientlinks.md) to get the existing *ClientLink* object. Then modify the *Status* element of the returned *ClientLink*, and include the updated *ClientLink* object  in a subsequent call to the *UpdateClientLinks* operation. For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
 
 If your user is within an agency, then the operation may be used to update the client link status of any account that you manage or have invited to manage. For more information about becoming an agency, see the [Resources for agency partners](https://advertise.bingads.microsoft.com/en-us/resources/bing-partner-program/agency-resources).
@@ -56,7 +60,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">UpdateClientLinks</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -65,32 +69,32 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <UpdateClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <ClientLinks xmlns:e350="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e350:ClientLink>
-          <e350:ClientAccountId i:nil="false">ValueHere</e350:ClientAccountId>
-          <e350:ClientAccountNumber i:nil="false">ValueHere</e350:ClientAccountNumber>
-          <e350:ManagingCustomerId i:nil="false">ValueHere</e350:ManagingCustomerId>
-          <e350:ManagingCustomerNumber i:nil="false">ValueHere</e350:ManagingCustomerNumber>
-          <e350:Note i:nil="false">ValueHere</e350:Note>
-          <e350:Name i:nil="false">ValueHere</e350:Name>
-          <e350:InviterEmail i:nil="false">ValueHere</e350:InviterEmail>
-          <e350:InviterName i:nil="false">ValueHere</e350:InviterName>
-          <e350:InviterPhone i:nil="false">ValueHere</e350:InviterPhone>
-          <e350:IsBillToClient>ValueHere</e350:IsBillToClient>
-          <e350:StartDate i:nil="false">ValueHere</e350:StartDate>
-          <e350:Status i:nil="false">ValueHere</e350:Status>
-          <e350:SuppressNotification>ValueHere</e350:SuppressNotification>
-          <e350:LastModifiedDateTime>ValueHere</e350:LastModifiedDateTime>
-          <e350:LastModifiedByUserId>ValueHere</e350:LastModifiedByUserId>
-          <e350:Timestamp i:nil="false">ValueHere</e350:Timestamp>
-          <ForwardCompatibilityMap xmlns:e351="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e351:KeyValuePairOfstringstring>
-              <e351:key i:nil="false">ValueHere</e351:key>
-              <e351:value i:nil="false">ValueHere</e351:value>
-            </e351:KeyValuePairOfstringstring>
+    <UpdateClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+      <ClientLinks xmlns:e48="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e48:ClientLink>
+          <e48:ClientAccountId i:nil="false">ValueHere</e48:ClientAccountId>
+          <e48:ClientAccountNumber i:nil="false">ValueHere</e48:ClientAccountNumber>
+          <e48:ManagingCustomerId i:nil="false">ValueHere</e48:ManagingCustomerId>
+          <e48:ManagingCustomerNumber i:nil="false">ValueHere</e48:ManagingCustomerNumber>
+          <e48:Note i:nil="false">ValueHere</e48:Note>
+          <e48:Name i:nil="false">ValueHere</e48:Name>
+          <e48:InviterEmail i:nil="false">ValueHere</e48:InviterEmail>
+          <e48:InviterName i:nil="false">ValueHere</e48:InviterName>
+          <e48:InviterPhone i:nil="false">ValueHere</e48:InviterPhone>
+          <e48:IsBillToClient>ValueHere</e48:IsBillToClient>
+          <e48:StartDate i:nil="false">ValueHere</e48:StartDate>
+          <e48:Status i:nil="false">ValueHere</e48:Status>
+          <e48:SuppressNotification>ValueHere</e48:SuppressNotification>
+          <e48:LastModifiedDateTime>ValueHere</e48:LastModifiedDateTime>
+          <e48:LastModifiedByUserId>ValueHere</e48:LastModifiedByUserId>
+          <e48:Timestamp i:nil="false">ValueHere</e48:Timestamp>
+          <ForwardCompatibilityMap xmlns:e49="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e49:KeyValuePairOfstringstring>
+              <e49:key i:nil="false">ValueHere</e49:key>
+              <e49:value i:nil="false">ValueHere</e49:value>
+            </e49:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-        </e350:ClientLink>
+        </e48:ClientLink>
       </ClientLinks>
     </UpdateClientLinksRequest>
   </s:Body>
@@ -102,26 +106,26 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <UpdateClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <OperationErrors xmlns:e352="https://bingads.microsoft.com/Customer/v11/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e352:OperationError>
-          <e352:Code>ValueHere</e352:Code>
-          <e352:Details d4p1:nil="false">ValueHere</e352:Details>
-          <e352:Message d4p1:nil="false">ValueHere</e352:Message>
-        </e352:OperationError>
+    <UpdateClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <OperationErrors xmlns:e50="https://bingads.microsoft.com/Customer/v12/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e50:OperationError>
+          <e50:Code>ValueHere</e50:Code>
+          <e50:Details d4p1:nil="false">ValueHere</e50:Details>
+          <e50:Message d4p1:nil="false">ValueHere</e50:Message>
+        </e50:OperationError>
       </OperationErrors>
-      <PartialErrors xmlns:e353="https://bingads.microsoft.com/Customer/v11/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e353:ArrayOfOperationError>
-          <e353:OperationError>
-            <e353:Code>ValueHere</e353:Code>
-            <e353:Details d4p1:nil="false">ValueHere</e353:Details>
-            <e353:Message d4p1:nil="false">ValueHere</e353:Message>
-          </e353:OperationError>
-        </e353:ArrayOfOperationError>
+      <PartialErrors xmlns:e51="https://bingads.microsoft.com/Customer/v12/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e51:ArrayOfOperationError>
+          <e51:OperationError>
+            <e51:Code>ValueHere</e51:Code>
+            <e51:Details d4p1:nil="false">ValueHere</e51:Details>
+            <e51:Message d4p1:nil="false">ValueHere</e51:Message>
+          </e51:OperationError>
+        </e51:ArrayOfOperationError>
       </PartialErrors>
     </UpdateClientLinksResponse>
   </s:Body>
@@ -129,7 +133,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<UpdateClientLinksResponse> UpdateClientLinksAsync(
 	IList<ClientLink> clientLinks)
@@ -173,6 +177,6 @@ response=customermanagement_service.UpdateClientLinks(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

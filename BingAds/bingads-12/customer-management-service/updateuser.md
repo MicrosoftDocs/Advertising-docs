@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # UpdateUser Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Updates the details of the specified user.
 
 ## <a name="request"></a>Request Elements
@@ -43,7 +47,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">UpdateUser</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -52,51 +56,50 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <UpdateUserRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <User xmlns:e356="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e356:ContactInfo i:nil="false">
-          <e356:Address i:nil="false">
-            <e356:City i:nil="false">ValueHere</e356:City>
-            <e356:CountryCode i:nil="false">ValueHere</e356:CountryCode>
-            <e356:Id i:nil="false">ValueHere</e356:Id>
-            <e356:Line1 i:nil="false">ValueHere</e356:Line1>
-            <e356:Line2 i:nil="false">ValueHere</e356:Line2>
-            <e356:Line3 i:nil="false">ValueHere</e356:Line3>
-            <e356:Line4 i:nil="false">ValueHere</e356:Line4>
-            <e356:PostalCode i:nil="false">ValueHere</e356:PostalCode>
-            <e356:StateOrProvince i:nil="false">ValueHere</e356:StateOrProvince>
-            <e356:TimeStamp i:nil="false">ValueHere</e356:TimeStamp>
-          </e356:Address>
-          <e356:ContactByPhone i:nil="false">ValueHere</e356:ContactByPhone>
-          <e356:ContactByPostalMail i:nil="false">ValueHere</e356:ContactByPostalMail>
-          <e356:Email i:nil="false">ValueHere</e356:Email>
-          <e356:EmailFormat i:nil="false">ValueHere</e356:EmailFormat>
-          <e356:Fax i:nil="false">ValueHere</e356:Fax>
-          <e356:HomePhone i:nil="false">ValueHere</e356:HomePhone>
-          <e356:Id i:nil="false">ValueHere</e356:Id>
-          <e356:Mobile i:nil="false">ValueHere</e356:Mobile>
-          <e356:Phone1 i:nil="false">ValueHere</e356:Phone1>
-          <e356:Phone2 i:nil="false">ValueHere</e356:Phone2>
-        </e356:ContactInfo>
-        <e356:CustomerAppScope i:nil="false">ValueHere</e356:CustomerAppScope>
-        <e356:CustomerId i:nil="false">ValueHere</e356:CustomerId>
-        <e356:Id i:nil="false">ValueHere</e356:Id>
-        <e356:JobTitle i:nil="false">ValueHere</e356:JobTitle>
-        <e356:LastModifiedByUserId i:nil="false">ValueHere</e356:LastModifiedByUserId>
-        <e356:LastModifiedTime i:nil="false">ValueHere</e356:LastModifiedTime>
-        <e356:Lcid i:nil="false">ValueHere</e356:Lcid>
-        <e356:Name i:nil="false">
-          <e356:FirstName i:nil="false">ValueHere</e356:FirstName>
-          <e356:LastName i:nil="false">ValueHere</e356:LastName>
-          <e356:MiddleInitial i:nil="false">ValueHere</e356:MiddleInitial>
-        </e356:Name>
-        <e356:Password i:nil="false">ValueHere</e356:Password>
-        <e356:SecretAnswer i:nil="false">ValueHere</e356:SecretAnswer>
-        <e356:SecretQuestion>ValueHere</e356:SecretQuestion>
-        <e356:UserLifeCycleStatus i:nil="false">ValueHere</e356:UserLifeCycleStatus>
-        <e356:TimeStamp i:nil="false">ValueHere</e356:TimeStamp>
-        <e356:UserName i:nil="false">ValueHere</e356:UserName>
-        <e356:IsMigratedToMicrosoftAccount>ValueHere</e356:IsMigratedToMicrosoftAccount>
+    <UpdateUserRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+      <User xmlns:e54="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e54:ContactInfo i:nil="false">
+          <e54:Address i:nil="false">
+            <e54:City i:nil="false">ValueHere</e54:City>
+            <e54:CountryCode i:nil="false">ValueHere</e54:CountryCode>
+            <e54:Id i:nil="false">ValueHere</e54:Id>
+            <e54:Line1 i:nil="false">ValueHere</e54:Line1>
+            <e54:Line2 i:nil="false">ValueHere</e54:Line2>
+            <e54:Line3 i:nil="false">ValueHere</e54:Line3>
+            <e54:Line4 i:nil="false">ValueHere</e54:Line4>
+            <e54:PostalCode i:nil="false">ValueHere</e54:PostalCode>
+            <e54:StateOrProvince i:nil="false">ValueHere</e54:StateOrProvince>
+            <e54:TimeStamp i:nil="false">ValueHere</e54:TimeStamp>
+          </e54:Address>
+          <e54:ContactByPhone i:nil="false">ValueHere</e54:ContactByPhone>
+          <e54:ContactByPostalMail i:nil="false">ValueHere</e54:ContactByPostalMail>
+          <e54:Email i:nil="false">ValueHere</e54:Email>
+          <e54:EmailFormat i:nil="false">ValueHere</e54:EmailFormat>
+          <e54:Fax i:nil="false">ValueHere</e54:Fax>
+          <e54:HomePhone i:nil="false">ValueHere</e54:HomePhone>
+          <e54:Id i:nil="false">ValueHere</e54:Id>
+          <e54:Mobile i:nil="false">ValueHere</e54:Mobile>
+          <e54:Phone1 i:nil="false">ValueHere</e54:Phone1>
+          <e54:Phone2 i:nil="false">ValueHere</e54:Phone2>
+        </e54:ContactInfo>
+        <e54:CustomerId i:nil="false">ValueHere</e54:CustomerId>
+        <e54:Id i:nil="false">ValueHere</e54:Id>
+        <e54:JobTitle i:nil="false">ValueHere</e54:JobTitle>
+        <e54:LastModifiedByUserId i:nil="false">ValueHere</e54:LastModifiedByUserId>
+        <e54:LastModifiedTime i:nil="false">ValueHere</e54:LastModifiedTime>
+        <e54:Lcid i:nil="false">ValueHere</e54:Lcid>
+        <e54:Name i:nil="false">
+          <e54:FirstName i:nil="false">ValueHere</e54:FirstName>
+          <e54:LastName i:nil="false">ValueHere</e54:LastName>
+          <e54:MiddleInitial i:nil="false">ValueHere</e54:MiddleInitial>
+        </e54:Name>
+        <e54:Password i:nil="false">ValueHere</e54:Password>
+        <e54:SecretAnswer i:nil="false">ValueHere</e54:SecretAnswer>
+        <e54:SecretQuestion>ValueHere</e54:SecretQuestion>
+        <e54:UserLifeCycleStatus i:nil="false">ValueHere</e54:UserLifeCycleStatus>
+        <e54:TimeStamp i:nil="false">ValueHere</e54:TimeStamp>
+        <e54:UserName i:nil="false">ValueHere</e54:UserName>
+        <e54:IsMigratedToMicrosoftAccount>ValueHere</e54:IsMigratedToMicrosoftAccount>
       </User>
     </UpdateUserRequest>
   </s:Body>
@@ -108,11 +111,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <UpdateUserResponse xmlns="https://bingads.microsoft.com/Customer/v11">
+    <UpdateUserResponse xmlns="https://bingads.microsoft.com/Customer/v12">
       <LastModifiedTime>ValueHere</LastModifiedTime>
     </UpdateUserResponse>
   </s:Body>
@@ -120,7 +123,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<UpdateUserResponse> UpdateUserAsync(
 	User user)
@@ -164,6 +167,6 @@ response=customermanagement_service.UpdateUser(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

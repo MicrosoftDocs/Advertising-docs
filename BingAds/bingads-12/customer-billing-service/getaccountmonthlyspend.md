@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # GetAccountMonthlySpend Service Operation - Customer Billing
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Gets the amount spent by the account in the specified month.
 
 ## <a name="request"></a>Request Elements
@@ -44,7 +48,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v12">
     <Action mustUnderstand="1">GetAccountMonthlySpend</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -53,7 +57,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetAccountMonthlySpendRequest xmlns="https://bingads.microsoft.com/Billing/v11">
+    <GetAccountMonthlySpendRequest xmlns="https://bingads.microsoft.com/Billing/v12">
       <AccountId>ValueHere</AccountId>
       <MonthYear>ValueHere</MonthYear>
     </GetAccountMonthlySpendRequest>
@@ -66,11 +70,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetAccountMonthlySpendResponse xmlns="https://bingads.microsoft.com/Billing/v11">
+    <GetAccountMonthlySpendResponse xmlns="https://bingads.microsoft.com/Billing/v12">
       <Amount>ValueHere</Amount>
     </GetAccountMonthlySpendResponse>
   </s:Body>
@@ -78,7 +82,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetAccountMonthlySpendResponse> GetAccountMonthlySpendAsync(
 	long accountId,
@@ -129,6 +133,6 @@ response=customerbilling_service.GetAccountMonthlySpend(
 ```
 
 ## Requirements
-Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Billing/v11  
+Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Billing/v12  
 

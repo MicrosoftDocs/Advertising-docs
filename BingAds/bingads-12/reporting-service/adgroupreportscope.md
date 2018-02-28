@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines an ad group to include in the report.
 ---
 # AdGroupReportScope Data Object - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines an ad group to include in the report.
 
 ## Syntax
@@ -29,8 +33,8 @@ Defines an ad group to include in the report.
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign that the ad group belongs to.|**long**|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [AccountThroughAdGroupReportScope](accountthroughadgroupreportscope.md)  

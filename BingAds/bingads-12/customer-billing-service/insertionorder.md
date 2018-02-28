@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines an insertion order.
 ---
 # InsertionOrder Data Object - Customer Billing
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines an insertion order.
 
 An account can have multiple active insertion orders, and only one insertion order is spending at a time. The spending insertion order is the one with the earliest end date.
@@ -59,8 +63,8 @@ When updating an *InsertionOrder* object, only the *Status* element can be speci
 |<a name="status"></a>Status|The status of the insertion order.<br/><br/>**Add:** Read-only. Insertion orders that you create are immediately set to Active, Pending, or Declined.<br/>**Update:** Required|[InsertionOrderStatus](insertionorderstatus.md)|
 
 ## Requirements
-Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [AddInsertionOrder](addinsertionorder.md)  

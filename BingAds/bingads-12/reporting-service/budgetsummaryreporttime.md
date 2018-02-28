@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the date range values of a budget summary report request.
 ---
 # BudgetSummaryReportTime Data Object - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the date range values of a budget summary report request.
 
 > [!NOTE]
@@ -32,8 +36,8 @@ Defines the date range values of a budget summary report request.
 |<a name="predefinedtime"></a>PredefinedTime|A predefined date range.<br/><br/>The *PredefinedTime* element and the other date elements are mutually exclusive.|[BudgetSummaryReportTimePeriod](budgetsummaryreporttimeperiod.md)|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [BudgetSummaryReportRequest](budgetsummaryreportrequest.md)  

@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines a calendar date by month, day, and year.
 ---
 # Date Data Object - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines a calendar date by month, day, and year.
 
 ## Syntax
@@ -29,8 +33,8 @@ Defines a calendar date by month, day, and year.
 |<a name="year"></a>Year|Specifies the year.|**int**|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [BudgetSummaryReportTime](budgetsummaryreporttime.md)  

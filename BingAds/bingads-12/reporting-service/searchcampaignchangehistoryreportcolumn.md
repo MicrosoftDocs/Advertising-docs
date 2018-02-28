@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the attribute columns that you can include in the SearchCampaignChangeHistoryReportRequest.
 ---
 # SearchCampaignChangeHistoryReportColumn Value Set - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the attribute columns that you can include in the [SearchCampaignChangeHistoryReportRequest](../reporting-service/searchcampaignchangehistoryreportrequest.md).
 
 For a list of columns that you must include, please see the [Required Columns](#requiredcolumns) section below.
@@ -261,8 +265,8 @@ When the *ItemChanged* field's value is User, change history for the following a
 |Status|Refers to the status of the user.|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [SearchCampaignChangeHistoryReportRequest](searchcampaignchangehistoryreportrequest.md)  

@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the DSASearchQueryPerformanceReportRequest.
 ---
 # DSASearchQueryPerformanceReportColumn Value Set - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the attributes and performance statistics columns that you can include in the [DSASearchQueryPerformanceReportRequest](../reporting-service/dsasearchqueryperformancereportrequest.md).
 
 The report will include data only for search terms that resulted in a significant number of clicks in the last 30 days.
@@ -125,8 +129,8 @@ The report must include the following columns, and one or more of the performanc
 |TimePeriod|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [DSASearchQueryPerformanceReportRequest](dsasearchqueryperformancereportrequest.md)  

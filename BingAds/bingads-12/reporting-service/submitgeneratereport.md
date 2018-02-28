@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # SubmitGenerateReport Service Operation - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Submits a report request.
 
 > [!NOTE]
@@ -46,7 +50,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Reporting/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Reporting/v12">
     <Action mustUnderstand="1">SubmitGenerateReport</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -57,7 +61,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <SubmitGenerateReportRequest xmlns="https://bingads.microsoft.com/Reporting/v11">
+    <SubmitGenerateReportRequest xmlns="https://bingads.microsoft.com/Reporting/v12">
       <ReportRequest i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
         <ExcludeColumnHeaders i:nil="false">ValueHere</ExcludeColumnHeaders>
         <ExcludeReportFooter i:nil="false">ValueHere</ExcludeReportFooter>
@@ -1426,11 +1430,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Reporting/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Reporting/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <SubmitGenerateReportResponse xmlns="https://bingads.microsoft.com/Reporting/v11">
+    <SubmitGenerateReportResponse xmlns="https://bingads.microsoft.com/Reporting/v12">
       <ReportRequestId d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</ReportRequestId>
     </SubmitGenerateReportResponse>
   </s:Body>
@@ -1438,7 +1442,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<SubmitGenerateReportResponse> SubmitGenerateReportAsync(
 	ReportRequest reportRequest)
@@ -1482,6 +1486,6 @@ response=reporting_service.SubmitGenerateReport(
 ```
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 

@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines a customer.
 ---
 # Customer Data Object - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines a customer.
 
 ## Syntax
@@ -51,8 +55,8 @@ Defines a customer.
 |<a name="timestamp"></a>TimeStamp|A time-stamp value that the system uses internally to reconcile updates when you call the [UpdateCustomer](../customer-management-service/updatecustomer.md) and [DeleteCustomer](../customer-management-service/deletecustomer.md) operations.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**base64Binary**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [GetCustomer](getcustomer.md)  

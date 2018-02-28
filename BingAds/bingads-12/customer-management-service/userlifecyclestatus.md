@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the possible status values of a user.
 ---
 # UserLifeCycleStatus Value Set - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the possible status values of a user.
 
 ## Syntax
@@ -31,8 +35,8 @@ Defines the possible status values of a user.
 |<a name="pending"></a>Pending|The user is a new user who has not been activated. The user is sent notification about how to activate the account. After the user activates the account, the status changes to Active.<br/><br/> This status is deprecated and is only applicable for managed user credentials, and not for Microsoft account (MSA) users. |
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 
 ## Used By
 [GetUsersInfo](getusersinfo.md)  

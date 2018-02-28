@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # FindAccounts Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Gets a list of accounts owned by the specified customer that match the specified filter criteria.
 
 ## <a name="request"></a>Request Elements
@@ -22,7 +26,6 @@ The *FindAccountsRequest* object defines the [body](#request-body) and [header](
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountfilter"></a>AccountFilter|The criteria to use to filter the list of accounts. You can specify either an account name or an account number. If your filter value is of the form, X*nnnnn*, where *nnnnn* is a series of digits, the operation filters by account number.<br /><br />The filter value can contain a partial or full account name or number of the accounts that you want to get. The operation includes the account in the result if the name or number of the account begins with the specified filter value.<br /><br />The operation performs a case-insensitive comparison when it compares your filter value to the account name or number. For example, if you specify "t" as the filter value, the list will include accounts whose names begin with "t" or "T".<br /><br />Setting this element to an empty string is the same as calling the [GetAccountsInfo](../customer-management-service/getaccountsinfo.md).|**string**|
-|<a name="applicationscope"></a>ApplicationScope|A value that determines whether to return advertiser accounts or publisher accounts. If you do not specify the scope, the list may include both types of accounts.|[ApplicationType](applicationtype.md)|
 |<a name="customerid"></a>CustomerId|The identifier of the customer whose accounts you want to get.<br /><br />If null, the operation searches for a match among all of the accounts of the customers that the user manages and owns.|**long**|
 |<a name="topn"></a>TopN|A nonzero positive integer that specifies the number of accounts to return in the result. You must specify a value from 1 through 5,000.|**int**|
 
@@ -46,7 +49,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">FindAccounts</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -55,11 +58,10 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <FindAccountsRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+    <FindAccountsRequest xmlns="https://bingads.microsoft.com/Customer/v12">
       <CustomerId i:nil="false">ValueHere</CustomerId>
       <AccountFilter i:nil="false">ValueHere</AccountFilter>
       <TopN>ValueHere</TopN>
-      <ApplicationScope i:nil="false">ValueHere</ApplicationScope>
     </FindAccountsRequest>
   </s:Body>
 </s:Envelope>
@@ -70,19 +72,19 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <FindAccountsResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <AccountsInfo xmlns:e311="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e311:AccountInfo>
-          <e311:Id>ValueHere</e311:Id>
-          <e311:Name d4p1:nil="false">ValueHere</e311:Name>
-          <e311:Number d4p1:nil="false">ValueHere</e311:Number>
-          <e311:AccountLifeCycleStatus>ValueHere</e311:AccountLifeCycleStatus>
-          <e311:PauseReason d4p1:nil="false">ValueHere</e311:PauseReason>
-        </e311:AccountInfo>
+    <FindAccountsResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <AccountsInfo xmlns:e8="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e8:AccountInfo>
+          <e8:Id>ValueHere</e8:Id>
+          <e8:Name d4p1:nil="false">ValueHere</e8:Name>
+          <e8:Number d4p1:nil="false">ValueHere</e8:Number>
+          <e8:AccountLifeCycleStatus>ValueHere</e8:AccountLifeCycleStatus>
+          <e8:PauseReason d4p1:nil="false">ValueHere</e8:PauseReason>
+        </e8:AccountInfo>
       </AccountsInfo>
     </FindAccountsResponse>
   </s:Body>
@@ -90,20 +92,18 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<FindAccountsResponse> FindAccountsAsync(
 	long? customerId,
 	string accountFilter,
-	int topN,
-	ApplicationType? applicationScope)
+	int topN)
 {
 	var request = new FindAccountsRequest
 	{
 		CustomerId = customerId,
 		AccountFilter = accountFilter,
-		TopN = topN,
-		ApplicationScope = applicationScope
+		TopN = topN
 	};
 
 	return (await CustomerManagementService.CallAsync((s, r) => s.FindAccountsAsync(r), request));
@@ -113,15 +113,13 @@ public async Task<FindAccountsResponse> FindAccountsAsync(
 static FindAccountsResponse findAccounts(
 	java.lang.Long customerId,
 	java.lang.String accountFilter,
-	int topN,
-	ApplicationType applicationScope) throws RemoteException, Exception
+	int topN) throws RemoteException, Exception
 {
 	FindAccountsRequest request = new FindAccountsRequest();
 
 	request.setCustomerId(customerId);
 	request.setAccountFilter(accountFilter);
 	request.setTopN(topN);
-	request.setApplicationScope(applicationScope);
 
 	return CustomerManagementService.getService().findAccounts(request);
 }
@@ -130,8 +128,7 @@ static FindAccountsResponse findAccounts(
 static function FindAccounts(
 	$customerId,
 	$accountFilter,
-	$topN,
-	$applicationScope)
+	$topN)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
@@ -141,7 +138,6 @@ static function FindAccounts(
 	$request->CustomerId = $customerId;
 	$request->AccountFilter = $accountFilter;
 	$request->TopN = $topN;
-	$request->ApplicationScope = $applicationScope;
 
 	return $GLOBALS['CustomerManagementProxy']->GetService()->FindAccounts($request);
 }
@@ -150,11 +146,10 @@ static function FindAccounts(
 response=customermanagement_service.FindAccounts(
 	CustomerId=CustomerId,
 	AccountFilter=AccountFilter,
-	TopN=TopN,
-	ApplicationScope=ApplicationScope)
+	TopN=TopN)
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # GetBillingDocuments Service Operation - Customer Billing
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Gets the specified billing documents.
 
 ## <a name="request"></a>Request Elements
@@ -21,6 +25,7 @@ The *GetBillingDocumentsRequest* object defines the [body](#request-body) and [h
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
+|<a name="advertisercustomerids"></a>AdvertiserCustomerIds|Reserved.|**int** array|
 |<a name="documentids"></a>DocumentIds|A list of identifiers of the billing documents to get. To get a list of identifiers, call the [GetBillingDocumentsInfo](../customer-billing-service/getbillingdocumentsinfo.md) operation.|**long** array|
 |<a name="type"></a>Type|The format to use to generate the billing document. For example, you can generate the billing document in PDF or XML format.|[DataType](datatype.md)|
 
@@ -44,7 +49,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v12">
     <Action mustUnderstand="1">GetBillingDocuments</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -53,11 +58,14 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetBillingDocumentsRequest xmlns="https://bingads.microsoft.com/Billing/v11">
+    <GetBillingDocumentsRequest xmlns="https://bingads.microsoft.com/Billing/v12">
       <DocumentIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:long>ValueHere</a1:long>
       </DocumentIds>
       <Type>ValueHere</Type>
+      <AdvertiserCustomerIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:int>ValueHere</a1:int>
+      </AdvertiserCustomerIds>
     </GetBillingDocumentsRequest>
   </s:Body>
 </s:Envelope>
@@ -68,17 +76,17 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetBillingDocumentsResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <BillingDocuments xmlns:e358="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e358:BillingDocument>
-          <e358:Data d4p1:nil="false">ValueHere</e358:Data>
-          <e358:Id>ValueHere</e358:Id>
-          <e358:Type>ValueHere</e358:Type>
-        </e358:BillingDocument>
+    <GetBillingDocumentsResponse xmlns="https://bingads.microsoft.com/Billing/v12">
+      <BillingDocuments xmlns:e56="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e56:BillingDocument>
+          <e56:Data d4p1:nil="false">ValueHere</e56:Data>
+          <e56:Id>ValueHere</e56:Id>
+          <e56:Type>ValueHere</e56:Type>
+        </e56:BillingDocument>
       </BillingDocuments>
     </GetBillingDocumentsResponse>
   </s:Body>
@@ -86,16 +94,18 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetBillingDocumentsResponse> GetBillingDocumentsAsync(
 	IList<long> documentIds,
-	DataType type)
+	DataType type,
+	IList<int> advertiserCustomerIds)
 {
 	var request = new GetBillingDocumentsRequest
 	{
 		DocumentIds = documentIds,
-		Type = type
+		Type = type,
+		AdvertiserCustomerIds = advertiserCustomerIds
 	};
 
 	return (await CustomerBillingService.CallAsync((s, r) => s.GetBillingDocumentsAsync(r), request));
@@ -104,12 +114,14 @@ public async Task<GetBillingDocumentsResponse> GetBillingDocumentsAsync(
 ```java
 static GetBillingDocumentsResponse getBillingDocuments(
 	ArrayOflong documentIds,
-	DataType type) throws RemoteException, Exception
+	DataType type,
+	ArrayOfint advertiserCustomerIds) throws RemoteException, Exception
 {
 	GetBillingDocumentsRequest request = new GetBillingDocumentsRequest();
 
 	request.setDocumentIds(documentIds);
 	request.setType(type);
+	request.setAdvertiserCustomerIds(advertiserCustomerIds);
 
 	return CustomerBillingService.getService().getBillingDocuments(request);
 }
@@ -117,7 +129,8 @@ static GetBillingDocumentsResponse getBillingDocuments(
 ```php
 static function GetBillingDocuments(
 	$documentIds,
-	$type)
+	$type,
+	$advertiserCustomerIds)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CustomerBillingProxy'];
@@ -126,6 +139,7 @@ static function GetBillingDocuments(
 
 	$request->DocumentIds = $documentIds;
 	$request->Type = $type;
+	$request->AdvertiserCustomerIds = $advertiserCustomerIds;
 
 	return $GLOBALS['CustomerBillingProxy']->GetService()->GetBillingDocuments($request);
 }
@@ -133,10 +147,11 @@ static function GetBillingDocuments(
 ```python
 response=customerbilling_service.GetBillingDocuments(
 	DocumentIds=DocumentIds,
-	Type=Type)
+	Type=Type,
+	AdvertiserCustomerIds=AdvertiserCustomerIds)
 ```
 
 ## Requirements
-Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Billing/v11  
+Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Billing/v12  
 

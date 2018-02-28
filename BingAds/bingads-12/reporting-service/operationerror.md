@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines an error object that contains the details that explain why the service operation failed.
 ---
 # OperationError Data Object - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines an error object that contains the details that explain why the service operation failed.
 
 ## Syntax
@@ -31,8 +35,8 @@ Defines an error object that contains the details that explain why the service o
 |<a name="message"></a>Message|A message that describes the error.|**string**|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [ApiFaultDetail](apifaultdetail.md)  

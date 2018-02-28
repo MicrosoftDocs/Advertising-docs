@@ -7,6 +7,10 @@ ms.author: eur
 description: Value sets reference for the CustomerBilling service.
 ---
 # Customer Billing Value Sets
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 The Customer Billing service defines the following value sets.
 
 |Value Set|Description|

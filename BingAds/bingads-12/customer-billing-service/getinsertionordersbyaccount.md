@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # GetInsertionOrdersByAccount Service Operation - Customer Billing
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Gets a list of insertion orders for the specified account.
 
 > [!NOTE]
@@ -47,7 +51,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v12">
     <Action mustUnderstand="1">GetInsertionOrdersByAccount</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -56,7 +60,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetInsertionOrdersByAccountRequest xmlns="https://bingads.microsoft.com/Billing/v11">
+    <GetInsertionOrdersByAccountRequest xmlns="https://bingads.microsoft.com/Billing/v12">
       <AccountId>ValueHere</AccountId>
       <InsertionOrderIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:long>ValueHere</a1:long>
@@ -71,30 +75,30 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetInsertionOrdersByAccountResponse xmlns="https://bingads.microsoft.com/Billing/v11">
-      <InsertionOrders xmlns:e360="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e360:InsertionOrder>
-          <e360:AccountId>ValueHere</e360:AccountId>
-          <e360:BalanceAmount d4p1:nil="false">ValueHere</e360:BalanceAmount>
-          <e360:BookingCountryCode d4p1:nil="false">ValueHere</e360:BookingCountryCode>
-          <e360:Comment d4p1:nil="false">ValueHere</e360:Comment>
-          <e360:EndDate>ValueHere</e360:EndDate>
-          <e360:InsertionOrderId d4p1:nil="false">ValueHere</e360:InsertionOrderId>
-          <e360:LastModifiedByUserId d4p1:nil="false">ValueHere</e360:LastModifiedByUserId>
-          <e360:LastModifiedTime d4p1:nil="false">ValueHere</e360:LastModifiedTime>
-          <e360:NotificationThreshold d4p1:nil="false">ValueHere</e360:NotificationThreshold>
-          <e360:ReferenceId d4p1:nil="false">ValueHere</e360:ReferenceId>
-          <e360:SpendCapAmount>ValueHere</e360:SpendCapAmount>
-          <e360:StartDate>ValueHere</e360:StartDate>
-          <e360:Name d4p1:nil="false">ValueHere</e360:Name>
-          <e360:Status d4p1:nil="false">ValueHere</e360:Status>
-          <e360:PurchaseOrder d4p1:nil="false">ValueHere</e360:PurchaseOrder>
-          <e360:ChangePendingReview d4p1:nil="false">ValueHere</e360:ChangePendingReview>
-        </e360:InsertionOrder>
+    <GetInsertionOrdersByAccountResponse xmlns="https://bingads.microsoft.com/Billing/v12">
+      <InsertionOrders xmlns:e58="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e58:InsertionOrder>
+          <e58:AccountId>ValueHere</e58:AccountId>
+          <e58:BalanceAmount d4p1:nil="false">ValueHere</e58:BalanceAmount>
+          <e58:BookingCountryCode d4p1:nil="false">ValueHere</e58:BookingCountryCode>
+          <e58:Comment d4p1:nil="false">ValueHere</e58:Comment>
+          <e58:EndDate>ValueHere</e58:EndDate>
+          <e58:InsertionOrderId d4p1:nil="false">ValueHere</e58:InsertionOrderId>
+          <e58:LastModifiedByUserId d4p1:nil="false">ValueHere</e58:LastModifiedByUserId>
+          <e58:LastModifiedTime d4p1:nil="false">ValueHere</e58:LastModifiedTime>
+          <e58:NotificationThreshold d4p1:nil="false">ValueHere</e58:NotificationThreshold>
+          <e58:ReferenceId d4p1:nil="false">ValueHere</e58:ReferenceId>
+          <e58:SpendCapAmount>ValueHere</e58:SpendCapAmount>
+          <e58:StartDate>ValueHere</e58:StartDate>
+          <e58:Name d4p1:nil="false">ValueHere</e58:Name>
+          <e58:Status d4p1:nil="false">ValueHere</e58:Status>
+          <e58:PurchaseOrder d4p1:nil="false">ValueHere</e58:PurchaseOrder>
+          <e58:ChangePendingReview d4p1:nil="false">ValueHere</e58:ChangePendingReview>
+        </e58:InsertionOrder>
       </InsertionOrders>
     </GetInsertionOrdersByAccountResponse>
   </s:Body>
@@ -102,7 +106,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetInsertionOrdersByAccountResponse> GetInsertionOrdersByAccountAsync(
 	long accountId,
@@ -153,6 +157,6 @@ response=customerbilling_service.GetInsertionOrdersByAccount(
 ```
 
 ## Requirements
-Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Billing/v11  
+Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Billing/v12  
 

@@ -12,6 +12,10 @@ dev_langs:
   - python
 ---
 # GetAccount Service Operation - Customer Management
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Gets the details of an account.
 
 ## <a name="request"></a>Request Elements
@@ -33,7 +37,7 @@ The *GetAccountResponse* object defines the [body](#response-body) and [header](
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="account"></a>Account|An account object that contains information about the account, such as payment method, account type, and parent customer.|[Account](account.md)|
+|<a name="account"></a>Account|An account object that contains information about the account, such as payment method, account type, and parent customer.|[AdvertiserAccount](advertiseraccount.md)|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -43,7 +47,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">GetAccount</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -52,7 +56,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetAccountRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+    <GetAccountRequest xmlns="https://bingads.microsoft.com/Customer/v12">
       <AccountId>ValueHere</AccountId>
     </GetAccountRequest>
   </s:Body>
@@ -64,65 +68,64 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetAccountResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Account xmlns:e313="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" d4p1:type="-- derived type specified here with the appropriate prefix --" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e313:AccountType>ValueHere</e313:AccountType>
-        <e313:BillToCustomerId d4p1:nil="false">ValueHere</e313:BillToCustomerId>
-        <e313:CountryCode d4p1:nil="false">ValueHere</e313:CountryCode>
-        <e313:CurrencyType d4p1:nil="false">ValueHere</e313:CurrencyType>
-        <e313:AccountFinancialStatus d4p1:nil="false">ValueHere</e313:AccountFinancialStatus>
-        <e313:Id d4p1:nil="false">ValueHere</e313:Id>
-        <e313:Language d4p1:nil="false">ValueHere</e313:Language>
-        <ForwardCompatibilityMap xmlns:e314="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-          <e314:KeyValuePairOfstringstring>
-            <e314:key d4p1:nil="false">ValueHere</e314:key>
-            <e314:value d4p1:nil="false">ValueHere</e314:value>
-          </e314:KeyValuePairOfstringstring>
+    <GetAccountResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <Account xmlns:e10="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e10:BillToCustomerId d4p1:nil="false">ValueHere</e10:BillToCustomerId>
+        <e10:CountryCode d4p1:nil="false">ValueHere</e10:CountryCode>
+        <e10:CurrencyCode d4p1:nil="false">ValueHere</e10:CurrencyCode>
+        <e10:AccountFinancialStatus d4p1:nil="false">ValueHere</e10:AccountFinancialStatus>
+        <e10:Id d4p1:nil="false">ValueHere</e10:Id>
+        <e10:Language d4p1:nil="false">ValueHere</e10:Language>
+        <e10:LastModifiedByUserId d4p1:nil="false">ValueHere</e10:LastModifiedByUserId>
+        <e10:LastModifiedTime d4p1:nil="false">ValueHere</e10:LastModifiedTime>
+        <e10:Name d4p1:nil="false">ValueHere</e10:Name>
+        <e10:Number d4p1:nil="false">ValueHere</e10:Number>
+        <e10:ParentCustomerId>ValueHere</e10:ParentCustomerId>
+        <e10:PaymentMethodId d4p1:nil="false">ValueHere</e10:PaymentMethodId>
+        <e10:PaymentMethodType d4p1:nil="false">ValueHere</e10:PaymentMethodType>
+        <e10:PrimaryUserId d4p1:nil="false">ValueHere</e10:PrimaryUserId>
+        <e10:AccountLifeCycleStatus d4p1:nil="false">ValueHere</e10:AccountLifeCycleStatus>
+        <e10:TimeStamp d4p1:nil="false">ValueHere</e10:TimeStamp>
+        <e10:TimeZone d4p1:nil="false">ValueHere</e10:TimeZone>
+        <e10:PauseReason d4p1:nil="false">ValueHere</e10:PauseReason>
+        <ForwardCompatibilityMap xmlns:e11="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+          <e11:KeyValuePairOfstringstring>
+            <e11:key d4p1:nil="false">ValueHere</e11:key>
+            <e11:value d4p1:nil="false">ValueHere</e11:value>
+          </e11:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e313:LastModifiedByUserId d4p1:nil="false">ValueHere</e313:LastModifiedByUserId>
-        <e313:LastModifiedTime d4p1:nil="false">ValueHere</e313:LastModifiedTime>
-        <e313:Name d4p1:nil="false">ValueHere</e313:Name>
-        <e313:Number d4p1:nil="false">ValueHere</e313:Number>
-        <e313:ParentCustomerId>ValueHere</e313:ParentCustomerId>
-        <e313:PaymentMethodId d4p1:nil="false">ValueHere</e313:PaymentMethodId>
-        <e313:PaymentMethodType d4p1:nil="false">ValueHere</e313:PaymentMethodType>
-        <e313:PrimaryUserId d4p1:nil="false">ValueHere</e313:PrimaryUserId>
-        <e313:AccountLifeCycleStatus d4p1:nil="false">ValueHere</e313:AccountLifeCycleStatus>
-        <e313:TimeStamp d4p1:nil="false">ValueHere</e313:TimeStamp>
-        <e313:TimeZone d4p1:nil="false">ValueHere</e313:TimeZone>
-        <e313:PauseReason d4p1:nil="false">ValueHere</e313:PauseReason>
-        <!--These fields are applicable if the derived type attribute is set to AdvertiserAccount-->
-        <e313:LinkedAgencies d4p1:nil="false">
-          <e313:CustomerInfo>
-            <e313:Id d4p1:nil="false">ValueHere</e313:Id>
-            <e313:Name d4p1:nil="false">ValueHere</e313:Name>
-          </e313:CustomerInfo>
-        </e313:LinkedAgencies>
-        <e313:SalesHouseCustomerId d4p1:nil="false">ValueHere</e313:SalesHouseCustomerId>
-        <TaxInformation xmlns:e315="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-          <e315:KeyValuePairOfstringstring>
-            <e315:key d4p1:nil="false">ValueHere</e315:key>
-            <e315:value d4p1:nil="false">ValueHere</e315:value>
-          </e315:KeyValuePairOfstringstring>
+        <e10:LinkedAgencies d4p1:nil="false">
+          <e10:CustomerInfo>
+            <e10:Id d4p1:nil="false">ValueHere</e10:Id>
+            <e10:Name d4p1:nil="false">ValueHere</e10:Name>
+          </e10:CustomerInfo>
+        </e10:LinkedAgencies>
+        <e10:SalesHouseCustomerId d4p1:nil="false">ValueHere</e10:SalesHouseCustomerId>
+        <TaxInformation xmlns:e12="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+          <e12:KeyValuePairOfstringstring>
+            <e12:key d4p1:nil="false">ValueHere</e12:key>
+            <e12:value d4p1:nil="false">ValueHere</e12:value>
+          </e12:KeyValuePairOfstringstring>
         </TaxInformation>
-        <e313:BackUpPaymentInstrumentId d4p1:nil="false">ValueHere</e313:BackUpPaymentInstrumentId>
-        <e313:BillingThresholdAmount d4p1:nil="false">ValueHere</e313:BillingThresholdAmount>
-        <e313:BusinessAddress d4p1:nil="false">
-          <e313:City d4p1:nil="false">ValueHere</e313:City>
-          <e313:CountryCode d4p1:nil="false">ValueHere</e313:CountryCode>
-          <e313:Id d4p1:nil="false">ValueHere</e313:Id>
-          <e313:Line1 d4p1:nil="false">ValueHere</e313:Line1>
-          <e313:Line2 d4p1:nil="false">ValueHere</e313:Line2>
-          <e313:Line3 d4p1:nil="false">ValueHere</e313:Line3>
-          <e313:Line4 d4p1:nil="false">ValueHere</e313:Line4>
-          <e313:PostalCode d4p1:nil="false">ValueHere</e313:PostalCode>
-          <e313:StateOrProvince d4p1:nil="false">ValueHere</e313:StateOrProvince>
-          <e313:TimeStamp d4p1:nil="false">ValueHere</e313:TimeStamp>
-        </e313:BusinessAddress>
+        <e10:BackUpPaymentInstrumentId d4p1:nil="false">ValueHere</e10:BackUpPaymentInstrumentId>
+        <e10:BillingThresholdAmount d4p1:nil="false">ValueHere</e10:BillingThresholdAmount>
+        <e10:BusinessAddress d4p1:nil="false">
+          <e10:City d4p1:nil="false">ValueHere</e10:City>
+          <e10:CountryCode d4p1:nil="false">ValueHere</e10:CountryCode>
+          <e10:Id d4p1:nil="false">ValueHere</e10:Id>
+          <e10:Line1 d4p1:nil="false">ValueHere</e10:Line1>
+          <e10:Line2 d4p1:nil="false">ValueHere</e10:Line2>
+          <e10:Line3 d4p1:nil="false">ValueHere</e10:Line3>
+          <e10:Line4 d4p1:nil="false">ValueHere</e10:Line4>
+          <e10:PostalCode d4p1:nil="false">ValueHere</e10:PostalCode>
+          <e10:StateOrProvince d4p1:nil="false">ValueHere</e10:StateOrProvince>
+          <e10:TimeStamp d4p1:nil="false">ValueHere</e10:TimeStamp>
+        </e10:BusinessAddress>
+        <e10:AutoTagType d4p1:nil="false">ValueHere</e10:AutoTagType>
       </Account>
     </GetAccountResponse>
   </s:Body>
@@ -130,7 +133,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetAccountResponse> GetAccountAsync(
 	long accountId)
@@ -174,6 +177,6 @@ response=customermanagement_service.GetAccount(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

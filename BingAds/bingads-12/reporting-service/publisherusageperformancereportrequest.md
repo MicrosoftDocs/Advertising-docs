@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines a publisher usage performance report request.
 ---
 # PublisherUsagePerformanceReportRequest Data Object - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines a publisher usage performance report request. Use this report to see if any website URLs aren't performing well enough for your campaign or ad group target settings. For example, if ad impressions at those URLs yield a low click-through rate, then you might decide to exclude those websites from your campaign.
 
 You can request impressions, clicks, spend, and conversions for websites including the Bing Ads and syndicated search partner networks. Once downloaded, this data can be sorted by website URL, account, campaign, and ad group.
@@ -19,7 +23,7 @@ To request a report of this type, pass this object to the [SubmitGenerateReport]
   <xs:complexContent mixed="false">
     <xs:extension base="tns:ReportRequest">
       <xs:sequence>
-        <xs:element name="Aggregation" type="tns:NonHourlyReportAggregation" />
+        <xs:element name="Aggregation" type="tns:ReportAggregation" />
         <xs:element name="Columns" nillable="true" type="tns:ArrayOfPublisherUsagePerformanceReportColumn" />
         <xs:element minOccurs="0" name="Filter" nillable="true" type="tns:PublisherUsagePerformanceReportFilter" />
         <xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
@@ -34,7 +38,7 @@ To request a report of this type, pass this object to the [SubmitGenerateReport]
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="aggregation"></a>Aggregation|The type of aggregation to use to aggregate the report data. For example, you can aggregate the report data by day or week, or request a summary report.<br /><br />The default is Summary.<br /><br />The *Time* element specifies the time period to use for the aggregation.|[NonHourlyReportAggregation](nonhourlyreportaggregation.md)|
+|<a name="aggregation"></a>Aggregation|The type of aggregation to use to aggregate the report data. For example, you can aggregate the report data by day or week, or request a summary report.<br /><br />The default is Summary.<br /><br />The *Time* element specifies the time period to use for the aggregation.|[ReportAggregation](reportaggregation.md)|
 |<a name="columns"></a>Columns|The list of attributes and performance statistics to include in the report. The report will include the columns in the order that you specify them.|[PublisherUsagePerformanceReportColumn](publisherusageperformancereportcolumn.md) array|
 |<a name="filter"></a>Filter|The filter information to use to filter the report data.|[PublisherUsagePerformanceReportFilter](publisherusageperformancereportfilter.md)|
 |<a name="scope"></a>Scope|The scope of the report. Use this element to limit the report to include data for a combination of accounts, ad groups, and campaigns.|[AccountThroughAdGroupReportScope](accountthroughadgroupreportscope.md)|
@@ -58,6 +62,6 @@ The [PublisherUsagePerformanceReportRequest](publisherusageperformancereportrequ
 |<a name="returnonlycompletedata"></a>ReturnOnlyCompleteData|Determines whether you want the service to generate the report only if all the data has been processed and is available.<br /><br />If *True*, the request fails if the system has not finished processing all the data based on the aggregation, scope, and time period values that you specify. However, if *False*, the request succeeds but the report will contain only the data that the system has finished processing at the time of the request (there is no indication as to whether the data is complete). The default is *False*.<br /><br /> When a user clicks an ad, it can take from three to four hours for the system to process the click and make it available for reporting. For more information, see [Determining When the Books Close](../guides/reports.md#booksclose).<br /><br />Because you cannot retrieve complete data for today, you must set this element to *False* if the end date of the custom date range specified in the Time element of the derived report object is set to today, or if you specify one of the following predefined time values:<br />- *Today*<br />- *ThisWeek*<br />- *ThisMonth*<br />- *ThisYear*|**boolean**|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 

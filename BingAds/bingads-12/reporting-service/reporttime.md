@@ -7,6 +7,10 @@ ms.author: eur
 description: Defines the date range values of a report request.
 ---
 # ReportTime Data Object - Reporting
+
+> [!IMPORTANT]
+> This v12 preview documentation is subject to change.
+
 Defines the date range values of a report request.
 
 ## Syntax
@@ -29,8 +33,8 @@ Defines the date range values of a report request.
 |<a name="predefinedtime"></a>PredefinedTime|A predefined date range value. Each report request type specifies the predefined time periods that you can specify for each aggregation type.|[ReportTimePeriod](reporttimeperiod.md)|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [AccountPerformanceReportRequest](accountperformancereportrequest.md)  
