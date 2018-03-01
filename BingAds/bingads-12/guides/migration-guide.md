@@ -165,7 +165,7 @@ The values returned in the *MediaType* and *Type* elements of a [Media](../campa
 #### <a name="campaign-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *AdDistribution* element of an [AdGroup](../campaign-management-service/adgroup.md) is removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. 
 
-Likewise the [CampaignType](../campaign-management-service/campaigntype.md) value is updated from *SearchAndContent* to *Search*. 
+Likewise the [CampaignType](../campaign-management-service/campaigntype.md) value is updated from *SearchAndContent* to *Search*, and the *Content* value is removed from the [MatchType](../campaign-management-service/matchtype.md) value set. 
 
 #### <a name="campaign-sunset-cpm"></a>Cpm Pricing Model
 The CPM pricing model is no longer supported in Bing Ads, and the *PricingModel* element of an [AdGroup](../campaign-management-service/adgroup.md) is removed from version 12. The *PricingModel* element in version 11 was optional, defaulted to *Cpc*, and could only be set to *Cpc*. 
