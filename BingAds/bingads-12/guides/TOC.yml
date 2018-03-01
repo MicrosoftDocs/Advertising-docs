@@ -1408,6 +1408,8 @@
           href: ../customer-management-service/customer.md
         - name: CustomerInfo
           href: ../customer-management-service/customerinfo.md
+        - name: CustomerRole
+          href: ../customer-management-service/customerrole.md
         - name: DateRange
           href: ../customer-management-service/daterange.md
         - name: KeyValuePairOfstringstring
