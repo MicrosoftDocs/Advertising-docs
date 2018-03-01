@@ -54,12 +54,12 @@ The sandbox endpoint is [https://adinsight.api.sandbox.bingads.microsoft.com/Api
 #### <a name="adinsight-currencycode"></a>ISO Currency Codes
 The *Currency* value set is renamed as [CurrencyCode](../ad-insight-service/currencycode.md). The values are updated with ISO codes e.g., *USD* replaces *USDollar*.
 
-The new value set is used with the [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) and [GetEstimatedPositionByKeywordsRequest](../ad-insight-service/getestimatedpositionbykeywords.md) operations. 
+The new value set is used with the [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) and [GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md) operations. 
 
 The new value set is used with the [BidLandscapePoint](../ad-insight-service/bidlandscapepoint.md), [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md), and [EstimatedPositionAndTraffic](../ad-insight-service/estimatedpositionandtraffic.md) objects.
 
 #### <a name="adinsight-locationids"></a>Location Identifiers for Keyword Estimates
-The list of *PublisherCountries* is replaced with a list of *LocationIds* for both the [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) and [GetEstimatedPositionByKeywordsRequest](../ad-insight-service/getestimatedpositionbykeywords.md) operations. This change enables you to get more accurate estimates by refining the requested locations e.g., city or metro area.  
+The list of *PublisherCountries* is replaced with a list of *LocationIds* for both the [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) and [GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md) operations. This change enables you to get more accurate estimates by refining the requested locations e.g., city or metro area.  
 
 #### <a name="adinsight-keywordidea"></a>Keyword Idea Attributes
 In version 12 all attributes within the [KeywordIdea](../ad-insight-service/keywordidea.md) are nillable i.e., AdImpressionShare, Competition, Relevance, Source, and SuggestedBid. If you do not request them, the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation will return nil properties in the returned [KeywordIdea](../ad-insight-service/keywordidea.md). In addition the Competition [KeywordIdeaAttribute](../ad-insight-service/keywordideaattribute.md) is no longer required when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md). 
@@ -214,10 +214,43 @@ The production endpoint is [https://clientcenter.api.bingads.microsoft.com/Api/C
 
 The sandbox endpoint is [https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc](https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc).
 
+#### <a name="customer-userroles"></a>User Roles
+With [multi-user credentials](#authentication-multi-user), one email address can be associated with multiple roles i.e., one role for each customer they can access. Whether or not you have "multi-user" credentials, the Customer Management API maps your credentials via a single [User](../customer-management-service/user.md) object, with some notable changes to the returned user roles. The *Accounts*, *Customers*, and *Roles* elements of the [GetUser](../customer-management-service/getuser.md) response are replaced with a list of [CustomerRole](../customer-management-service/customerrole.md) named *CustomerRoles*. 
+
+In the response message for *GetUser* in version 11, the returned role or roles were applicable for all accounts or customers listed. You will only see the role(s) that the user had before multi-user credentials consolidation. 
+
+```xml
+<Roles d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+  <a1:int>ValueHere</a1:int>
+</Roles>
+<Accounts d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+  <a1:long>ValueHere</a1:long>
+</Accounts>
+<Customers d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+  <a1:long>ValueHere</a1:long>
+</Customers>
+```
+
+In the response message for [GetUser](../customer-management-service/getuser.md) in version 12, each returned role is mapped to a specific customer (and specific accounts if applicable). You can see the roles for all customers that the user can access before and after multi-user credentials consolidation. 
+
+```xml
+<CustomerRoles xmlns:e328="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+  <e328:CustomerRole>
+    <e328:RoleId>ValueHere</e328:RoleId>
+    <e328:CustomerId>ValueHere</e328:CustomerId>
+    <e328:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <a1:long>ValueHere</a1:long>
+    </e328:AccountIds>
+  </e328:CustomerRole>
+</CustomerRoles>
+```
+
+Please also note that the *UserRole* value set is removed to ensure consistent mapping and forward compatibility for potential new user roles. In turn, the *Role* element of the [UserInvitation](../customer-management-service/userinvitation.md) object is replaced with an int value i.e., an element named *RoleId*.
+
 #### <a name="customer-advertiseraccount"></a>Advertiser Account
 The [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object no longer derives from an *Account* base. The *Account* object is removed and its properties are moved directly to the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object. 
 
-Also because only one account type is supported, the *AccountType* and *ApplicationType* value sets are removed. In turn the *AccountType* element is removed from the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object, and the *ApplicationScope* request element is removed from the [SignupCustomer](../customer-management-service/signupcustomer.md) operation.
+Also because only one account type is supported, the *AccountType* and *ApplicationType* value sets are removed. In turn the *AccountType* element is removed from the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object, the *CustomerAppScope* element is removed from the [User](../customer-management-service/user.md) object, and the *ApplicationScope* request element is removed from the [FindAccounts](../customer-management-service/findaccounts.md), [FindAccountsOrCustomersInfo](../customer-management-service/findaccountsorcustomersinfo.md), [GetCustomersInfo](../customer-management-service/getcustomersinfo.md), and [SignupCustomer](../customer-management-service/signupcustomer.md) operations.
 
 #### <a name="customer-advertiseraccount"></a>AutoTag Type
 The *AutoTag* key and value pair is removed from the *ForwardCompatibilityMap* element of the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object. Instead the *AutoTagType* element is added to the [AdvertiserAccount](../customer-management-service/advertiseraccount.md). The new [AutoTagType](../customer-management-service/autotagtype.md) values are *Inactive*, *Preserve*, and *Replace*. If you used values 0, 1, or 2 in the version 11 *AutoTag*, then you can replace them with the version 12 auto tag type as follows.
