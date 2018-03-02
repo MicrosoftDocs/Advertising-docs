@@ -369,7 +369,6 @@ if __name__ == '__main__':
     try:
         # You should authenticate for Bing Ads production services with a Microsoft Account, 
         # instead of providing the Bing Ads username and password set. 
-        # Authentication with a Microsoft Account is currently not supported in Sandbox.
         authenticate_with_oauth()
 
         # Uncomment to run with Bing Ads legacy UserName and Password credentials.
