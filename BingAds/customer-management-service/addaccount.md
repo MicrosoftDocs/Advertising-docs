@@ -5,7 +5,7 @@ ms.topic: article
 author: eric-urban
 ms.author: eur
 description: Creates a new account within an existing customer.
-redirect_url: /customer-management-service/advertiseraccount
+redirect_url: /bingads/customer-management-service/advertiseraccount
 dev_langs: 
   - csharp
   - java
