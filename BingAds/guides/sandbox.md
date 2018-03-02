@@ -7,21 +7,14 @@ ms.author: "eur"
 description: Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment.
 ---
 # Bing Ads Sandbox
-Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served.
-
-Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](../guides/web-service-addresses.md).
+Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served. Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](../guides/web-service-addresses.md).
 
 > [!NOTE]
 > Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. Notifications are posted in the [Bing Ads Developer Blog](https://blogs.msdn.microsoft.com/bing_ads_api/).
 
-## <a name="access"></a>Getting Access
-The sandbox and production environments use separate credentials. To get access to sandbox, go to the sandbox's [Bing Ads](https://secure.sandbox.bingads.microsoft.com/) web application and click **Sign up** to get a sandbox account. You will use the same username and password to call the API.
+## <a name="access"></a>Get Sandbox Access
+The sandbox and production environments use separate credentials. Although in production you need to get your own developer token, all Bing Ads customers can use the following universal developer token in sandbox: **BBD37VB98**
 
-When you sign up for an account, append _sbx to the username that you choose, for example contosoapi_sbx. In addition, do not specify a payment instrument.
-
-All Bing Ads customers may use the following universal developer token in sandbox: **BBD37VB98**
-
-## <a name="authentication"></a>Authenticate your credentials in sandbox
 New customers are required to sign up for Bing Ads with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy Bing Ads credentials may continue to specify the *UserName* and *Password* header elements with Bing Ads API version 11. Starting with Bing Ads API version 12, only OAuth authentication will be supported. Managed credentials i.e., the *UserName* and *Password* header elements will not be supported.
 
 > [!NOTE]
