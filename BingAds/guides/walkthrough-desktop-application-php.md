@@ -39,7 +39,7 @@ You must first [register an application](../guides/authentication-oauth.md#regis
    
    //AuthHelper::AuthenticateWithOAuth();
    
-   // However, authentication with a Microsoft Account is currently not supported in Sandbox,
+   // However, the SDK does not currently supported OAuth in Sandbox (coming soon),
    // so it is recommended that you set the UserName and Password in sandbox for testing.
    
    AuthHelper::AuthenticateWithUserName();

@@ -277,7 +277,7 @@ To use the [Sandbox](../guides/sandbox.md) environment, create a new text file n
 environment=Sandbox
 ```
 
-Sandbox does not support OAuth, so you must use *PasswordAuthentication*. You can remove all code above that refers to oAuthDesktopMobileAuthCodeGrant, and simply add these lines before you create the new ServiceClient for ICustomerManagementService.
+The SDK does not yet support OAuth for sandbox (coming soon), so you must use *PasswordAuthentication*. You can remove all code above that refers to oAuthDesktopMobileAuthCodeGrant, and simply add these lines before you create the new ServiceClient for ICustomerManagementService.
 
 ```java
 authorizationData = new AuthorizationData();
