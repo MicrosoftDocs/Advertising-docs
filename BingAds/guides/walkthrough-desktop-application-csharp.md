@@ -368,7 +368,7 @@ The example desktop application sends authentication requests to the Microsoft a
 ## <a name="sandbox"></a>Configuring Sandbox
 To use sandbox, follow these additional steps.
 
-Replace the try block within MainWindow.xaml.cs with the following snippet. Authentication with Microsoft account credentials is not supported in sandbox.
+Replace the try block within MainWindow.xaml.cs with the following snippet. 
 
 ```csharp
 try

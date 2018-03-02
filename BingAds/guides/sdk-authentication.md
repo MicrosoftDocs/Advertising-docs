@@ -41,8 +41,6 @@ ReportingServiceManager ReportingService = new ReportingServiceManager(authoriza
 ```
 
 ```java
-// Sandbox does not support OAuth, so you must use PasswordAuthentication.
-
 AuthorizationData authorizationData = new AuthorizationData();
 authorizationData.setDeveloperToken("DeveloperTokenGoesHere");
 PasswordAuthentication passwordAuthentication = 
