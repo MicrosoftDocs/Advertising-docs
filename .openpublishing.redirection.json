@@ -19,6 +19,11 @@
             "source_path": "BingAds/shopping-content/code-example-delete-product-offer.md",
             "redirect_url": "code-example-manage-products",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/guides/migrate-bing-ads-api-version-11.md",
+            "redirect_url": "migration-guide",
+            "redirect_document_id": false
         }
     ]
 }
