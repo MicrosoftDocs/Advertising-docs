@@ -23,6 +23,11 @@
         {
             "source_path": "BingAds/guides/migrate-bing-ads-api-version-11.md",
             "redirect_url": "migration-guide",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "BingAds/customer-management-service/addaccount.md",
+            "redirect_url": "advertiseraccount",
             "redirect_document_id": false
         }
     ]
