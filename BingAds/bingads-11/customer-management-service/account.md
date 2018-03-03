@@ -69,7 +69,6 @@ Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.mi
 Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
 
 ## Used By
-[AddAccount](addaccount.md)  
 [GetAccount](getaccount.md)  
 [SearchAccounts](searchaccounts.md)  
 [SignupCustomer](signupcustomer.md)  

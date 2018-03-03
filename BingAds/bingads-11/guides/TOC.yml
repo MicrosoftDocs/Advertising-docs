@@ -1331,8 +1331,6 @@
       - name: Customer Management Service Operations
         href: ../customer-management-service/customer-management-service-operations.md
         items: 
-        - name: AddAccount
-          href: ../customer-management-service/addaccount.md
         - name: AddClientLinks
           href: ../customer-management-service/addclientlinks.md
         - name: DeleteAccount
@@ -1766,4 +1764,5 @@
 - name: Release Notes
   href: ./release-notes.md
 - name: Migrating to Bing Ads API Version 11
-  href: ./migrate-bing-ads-api-version-11.md
+  href: ./migration-guide.md
+
