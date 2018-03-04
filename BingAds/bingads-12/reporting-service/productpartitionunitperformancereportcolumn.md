@@ -6,17 +6,14 @@ author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the ProductPartitionUnitPerformanceReportRequest.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ProductPartitionUnitPerformanceReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [ProductPartitionUnitPerformanceReportRequest](../reporting-service/productpartitionunitperformancereportrequest.md).
 
-The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](../guides/reports.md#columnsdata).
+The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](~/guides/reports.md#columnsdata).
 
 For a list of columns that you must include, please see the [Required Columns](#requiredcolumns) section below.
 
-To see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report, see [Report Data Retention Time Periods](../guides/report-data-retention-time-periods.md).
+To see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report, see [Report Data Retention Time Periods](~/guides/report-data-retention-time-periods.md).
 
 ## Syntax
 ```xml
@@ -84,7 +81,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="adstatus"></a>AdStatus|The ad status.|
 |<a name="assists"></a>Assists|The number of conversions from other ads within the same account that were preceded by one or more clicks from this ad.An ad is considered to have assisted the conversion if it was clicked before the most recently clicked ad that was credited with the conversion. Additionally, the click corresponding to the assist must occur  within the conversion period of the goal.|
 |<a name="averagecpc"></a>AverageCpc|The average cost per click (CPC). The total cost of all clicks on an ad divided by the number of clicks. This is the average amount you're actually charged each time your ad is clicked. For example, if you paid a total of 48.35 for 300 clicks, your average CPC is 0.16.The formula for calculating the average CPC is *(Spend /Clicks)*.|
-|<a name="bidmatchtype"></a>BidMatchType|The keyword bid match type. This can be different from the *DeliveredMatchType* column, for example if you bid on a broad match and the search term was an exact match. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).The possible values are *Broad*, *Exact*, *Phrase*, and *Unknown*.|
+|<a name="bidmatchtype"></a>BidMatchType|The keyword bid match type. This can be different from the *DeliveredMatchType* column, for example if you bid on a broad match and the search term was an exact match. For more information, see [Budget and Bid Strategies](~/guides/budget-bid-strategies.md).The possible values are *Broad*, *Exact*, *Phrase*, and *Unknown*.|
 |<a name="bidstrategytype"></a>BidStrategyType|The bid strategy type. Possible values include *EnhancedCpc* and *ManualCpc*. If the InheritFromParent strategy type is used, the report will include the inherited bid strategy type e.g. one of the supported values listed above.|
 |<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
@@ -95,14 +92,14 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="costperassist"></a>CostPerAssist|The cost per assist. The formula for calculating the cost per assist is *(Spend / Assists)*.|
 |<a name="costperconversion"></a>CostPerConversion|The cost per conversion. The formula for calculating the cost per conversion is *(Spend / Conversions)*.Only ads in campaigns that enable conversion tracking contribute to the conversion number, so unless all campaigns in the account enable conversion tracking, the number will not be accurate.|
 |<a name="ctr"></a>Ctr|The click-through rate (CTR) is the number of times an ad was clicked, divided by the number of times the ad was shown (impressions). For example, if your ads got 50 clicks given 2,348 impressions, your CTR is 2.13 (%).The formula for calculating CTR is *(Clicks / Impressions) x 100*.|
-|<a name="currencycode"></a>CurrencyCode|The account currency type.For possible values, see [Currencies](../guides/currencies.md).|
+|<a name="currencycode"></a>CurrencyCode|The account currency type.For possible values, see [Currencies](~/guides/currencies.md).|
 |<a name="currentmaxcpc"></a>CurrentMaxCpc|The maximum cost per click bid that was in effect at the time the report was generated. It is not a moving historical bid throughout the report time period.|
 |<a name="customparameters"></a>CustomParameters|The current custom parameter set of the criterion.<br/><br/>Each custom parameter is a key and value pair. The list of custom parameters is semicolon-delimited and each key is enclosed by braces and a leading underscore, for example *{_key1}=value1;{_key2}=value2*.|
-|<a name="deliveredmatchtype"></a>DeliveredMatchType|The match type used to deliver an ad. This can be different from the *BidMatchType* column, for example if you bid on a broad match and the search term was an exact match. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).The possible values are *Broad*, *Exact*, *Phrase*, and *Unknown*.|
+|<a name="deliveredmatchtype"></a>DeliveredMatchType|The match type used to deliver an ad. This can be different from the *BidMatchType* column, for example if you bid on a broad match and the search term was an exact match. For more information, see [Budget and Bid Strategies](~/guides/budget-bid-strategies.md).The possible values are *Broad*, *Exact*, *Phrase*, and *Unknown*.|
 |<a name="destinationurl"></a>DestinationUrl|The destination URL attribute of the ad, keyword, or ad group criterion.If the destination URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL after substitution occurs.|
 |<a name="devicetype"></a>DeviceType|The device name attribute of a device OS target bid. The type of device which showed ads.The possible values include *Computer*, *Smartphone*, *Tablet*, and *Unknown*.|
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
-|<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
+|<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](~/guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
 |<a name="localstorecode"></a>LocalStoreCode|An alphanumeric identifier defined by the merchant to uniquely identify each local store. |
 |<a name="network"></a>Network|The current network setting of an ad group. The possible values include AOL search, Bing and Yahoo! search, Content, and Syndicated search partners.|
 |<a name="productgroup"></a>ProductGroup|The forward slash ('/') delimited list of product conditions, reported as Operand = Attribute. For example "Product Type = Home / Product Type = Electronics / Product Type = DVD Player". Also note that in a report the single asterisk (*) refers to a product group that matches everything else besides the other filters for the product group.|
@@ -111,13 +108,13 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="revenueperassist"></a>RevenuePerAssist|The revenue per assist.The formula for calculating the revenue per assist is *(Revenue / Assists)*.|
 |<a name="revenueperconversion"></a>RevenuePerConversion|The revenue per conversion.The formula for calculating the revenue per conversion is *(Revenue / Conversions)*.|
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
-|<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
+|<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](~/guides/reports.md#timeperiod).|
 |<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
 |<a name="trackingtemplate"></a>TrackingTemplate|The current tracking template of the criterion.|
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns
-The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
 
 > [!NOTE]
 > The TimePeriod column is required for all aggregation types except Summary.
@@ -129,8 +126,8 @@ The report must include the following columns, and one or more of the performanc
 |TimePeriod|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [ProductPartitionUnitPerformanceReportRequest](productpartitionunitperformancereportrequest.md)  

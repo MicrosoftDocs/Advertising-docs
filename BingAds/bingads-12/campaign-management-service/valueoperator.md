@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the operators that can be applied to values within a conversion event goal.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ValueOperator Value Set - Campaign Management
 Defines the operators that can be applied to values within a conversion event goal. 
 

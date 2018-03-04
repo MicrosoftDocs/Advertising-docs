@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # UpdateUserRoles Service Operation - Customer Management
 Updates the roles of the specified user.
 
@@ -27,10 +24,10 @@ The *UpdateUserRolesRequest* object defines the [body](#request-body) and [heade
 |<a name="customerid"></a>CustomerId|The identifier of the customer to which the user belongs.|**long**|
 |<a name="deleteaccountids"></a>DeleteAccountIds|An array of identifiers of the accounts to remove from the list of accounts that the user can manage.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long** array|
 |<a name="deletecustomerids"></a>DeleteCustomerIds|An array of identifiers of the customers to remove from the list of customers that the user can manage.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long** array|
-|<a name="deleteroleid"></a>DeleteRoleId|The identifier of the role to which the values specified in the *DeleteAccountIds* or *DeleteCustomerIds* element applies, if set.<br /><br />Possible values include the following:<br />16 - The user has the **Advertiser Campaign Manager** role.<br />33 - The user has the **Aggregator** role.<br />41 - The user has the **Super Admin** role.<br />100 - The user has the **ClientViewer** role.<br />203 - The user has the **Standard** role.<br /><br />For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).<br /><br />**Important**: The list above provides examples of possible return values. Other  values might be returned. Deprecated or internal roles can be included in the response.|**int**|
+|<a name="deleteroleid"></a>DeleteRoleId|The identifier of the role to which the values specified in the *DeleteAccountIds* or *DeleteCustomerIds* element applies, if set.<br /><br />Possible values include the following:<br />16 - The user has the **Advertiser Campaign Manager** role.<br />33 - The user has the **Aggregator** role.<br />41 - The user has the **Super Admin** role.<br />100 - The user has the **ClientViewer** role.<br />203 - The user has the **Standard** role.<br /><br />For more information, see [User Roles and Available Service Operations](~/guides/customer-accounts.md#userroles).<br /><br />**Important**: The list above provides examples of possible return values. Other  values might be returned. Deprecated or internal roles can be included in the response.|**int**|
 |<a name="newaccountids"></a>NewAccountIds|An array of identifiers of the accounts to restrict the user to. The user will be able to manage only these accounts.<br/><br/>If the user is currently restricted to a set of accounts, set this element to the new accounts that you want the user to also manage. For example, if the user currently manages accounts 123 and 456, and you want the user to also manage account 789, set this element to 789.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long** array|
 |<a name="newcustomerids"></a>NewCustomerIds|An array of identifiers of the customers to restrict the user to. The user will be able to manage only these customers.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long** array|
-|<a name="newroleid"></a>NewRoleId|The identifier of the role to which the values specified in the *NewAccountIds* or *NewCustomerIds* element applies to, if set.<br /><br />Possible values include the following:<br />16 - The user has the **Advertiser Campaign Manager** role.<br />33 - The user has the **Aggregator** role.<br />41 - The user has the **Super Admin** role.<br />100 - The user has the **ClientViewer** role.<br />203 - The user has the **Standard** role.<br /><br />For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).<br /><br />**Important**: The list above provides examples of possible return values. Other  values might be returned. Deprecated or internal roles can be included in the response.|**int**|
+|<a name="newroleid"></a>NewRoleId|The identifier of the role to which the values specified in the *NewAccountIds* or *NewCustomerIds* element applies to, if set.<br /><br />Possible values include the following:<br />16 - The user has the **Advertiser Campaign Manager** role.<br />33 - The user has the **Aggregator** role.<br />41 - The user has the **Super Admin** role.<br />100 - The user has the **ClientViewer** role.<br />203 - The user has the **Standard** role.<br /><br />For more information, see [User Roles and Available Service Operations](~/guides/customer-accounts.md#userroles).<br /><br />**Important**: The list above provides examples of possible return values. Other  values might be returned. Deprecated or internal roles can be included in the response.|**int**|
 |<a name="userid"></a>UserId|The identifier of the user whose role you want to update.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -53,7 +50,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">UpdateUserRoles</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -62,7 +59,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <UpdateUserRolesRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+    <UpdateUserRolesRequest xmlns="https://bingads.microsoft.com/Customer/v11">
       <CustomerId>ValueHere</CustomerId>
       <UserId>ValueHere</UserId>
       <NewRoleId i:nil="false">ValueHere</NewRoleId>
@@ -89,11 +86,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <UpdateUserRolesResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+    <UpdateUserRolesResponse xmlns="https://bingads.microsoft.com/Customer/v11">
       <LastModifiedTime>ValueHere</LastModifiedTime>
     </UpdateUserRolesResponse>
   </s:Body>
@@ -220,6 +217,6 @@ Users with account level roles can be restricted to specific accounts. Users wit
 > When attempting to restrict customer level user roles to specific accounts the *UpdateUserRoles* operation will not fail, and the user will retain access for all accounts within the user's customer.
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 

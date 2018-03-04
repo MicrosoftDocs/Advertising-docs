@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a bid.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Bid Data Object - Campaign Management
 Defines a bid.
 
@@ -25,7 +22,7 @@ Defines a bid.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="amount"></a>Amount|The bid value. For details about the valid bid range for your market, see [Currencies](../guides/currencies.md).|**double**|
+|<a name="amount"></a>Amount|The bid value. For details about the valid bid range for your market, see [Currencies](~/guides/currencies.md).|**double**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

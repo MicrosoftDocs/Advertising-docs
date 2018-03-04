@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a calendar date by month, day, and year.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Date Data Object - Reporting
 Defines a calendar date by month, day, and year.
 
@@ -32,8 +29,8 @@ Defines a calendar date by month, day, and year.
 |<a name="year"></a>Year|Specifies the year.|**int**|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [BudgetSummaryReportTime](budgetsummaryreporttime.md)  

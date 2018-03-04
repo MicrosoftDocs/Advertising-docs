@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the types of entities by which you can filter the report data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ChangeEntityReportFilter Value Set - Reporting
 Defines the types of entities by which you can filter the report data.
 
@@ -40,8 +37,8 @@ Defines the types of entities by which you can filter the report data.
 |<a name="keyword"></a>Keyword|The report will include data for keywords that have been added or deleted, or that have had keyword elements updated.|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [SearchCampaignChangeHistoryReportFilter](searchcampaignchangehistoryreportfilter.md)  

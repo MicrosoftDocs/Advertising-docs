@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: This is the base class from which opportunity objects derive.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Opportunity Data Object - Ad Insight
 This is the base class from which opportunity objects derive. The class contains the unique key used to identify the opportunity.
 

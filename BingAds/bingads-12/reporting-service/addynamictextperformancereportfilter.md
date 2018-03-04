@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the ad dynamic text performance report data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AdDynamicTextPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the ad dynamic text performance report data.
 
@@ -39,11 +36,11 @@ Defines the criteria to use to filter the ad dynamic text performance report dat
 |<a name="adtype"></a>AdType|The report will include data for only the specified ad types. For example, the report can include data for product or text ads. You can specify one or more ad types.|[AdTypeReportFilter](adtypereportfilter.md)|
 |<a name="devicetype"></a>DeviceType|The report will include data for only the specified types of devices on which the ad is displayed. For example, you can use the filter to include data for only text ads displayed on smartphones.<br /><br />You can specify one or more device types.|[DeviceTypeReportFilter](devicetypereportfilter.md)|
 |<a name="keywordstatus"></a>KeywordStatus|The report will include data for only the keyword status. For example, you can use the filter to include data for only active keywords.<br /><br />You can specify one or more keyword statuses.|[KeywordStatusReportFilter](keywordstatusreportfilter.md)|
-|<a name="languagecode"></a>LanguageCode|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](../guides/ad-languages.md).|**string** array|
+|<a name="languagecode"></a>LanguageCode|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](~/guides/ad-languages.md).|**string** array|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [AdDynamicTextPerformanceReportRequest](addynamictextperformancereportrequest.md)  

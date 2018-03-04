@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible status values of an account.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AccountLifeCycleStatus Value Set - Customer Management
 Defines the possible status values of an account.
 
@@ -38,10 +35,10 @@ Defines the possible status values of an account.
 |<a name="suspended"></a>Suspended|Your account has been suspended and no ads are eligible for delivery because of potentially fraudulent activity. <br />Please contact [Bing Ads Support](http://go.microsoft.com/fwlink/?LinkId=269631).|
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 
 ## Used By
+[Account](account.md)  
 [AccountInfo](accountinfo.md)  
 [AccountInfoWithCustomerData](accountinfowithcustomerdata.md)  
-[AdvertiserAccount](advertiseraccount.md)  

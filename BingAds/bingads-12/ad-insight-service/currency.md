@@ -6,14 +6,11 @@ author: eric-urban
 ms.author: eur
 description: Defines a selection of currency values.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Currency Value Set - Ad Insight
 Defines a selection of currency values.
 
 > [!NOTE]
-> The value set defines a broad selection of currency types; however, not all currencies are supported. For a list of supported currencies, see [Currencies](../guides/currencies.md).
+> The value set defines a broad selection of currency types; however, not all currencies are supported. For a list of supported currencies, see [Currencies](~/guides/currencies.md).
 
 ## Syntax
 ```xml

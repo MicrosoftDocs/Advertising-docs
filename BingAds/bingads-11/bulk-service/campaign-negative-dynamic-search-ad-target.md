@@ -28,7 +28,7 @@ For a *Campaign Negative Dynamic Search Ad Target* record, the following attribu
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Campaign Negative Dynamic Search Ad Target* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignNegativeDynamicSearchAdTargets* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Campaign Negative Dynamic Search Ad Target* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignNegativeDynamicSearchAdTargets* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new campaign negative dynamic search ad target given a valid campaign ID (*Parent Id*). 
 
@@ -38,7 +38,7 @@ Format Version,,,,,,,,,5,,,,,,,,
 Campaign Negative Dynamic Search Ad Target,Active,,-114,,,ClientIdGoesHere,,,Bulk Campaign Dynamic Search Ad Target,,,Url,Category,PageContent,contoso.com,US/CA/SFO,flowers
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignNegativeDynamicSearchAdTarget* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignNegativeDynamicSearchAdTarget* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -212,7 +212,7 @@ The system generated identifier of the campaign that contains the dynamic ad tar
 
 This bulk field maps to the *Id* field of the [Campaign](../bulk-service/campaign.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new dynamic ad targets to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new dynamic ad targets to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only  
 **Delete:** Read-only  
 

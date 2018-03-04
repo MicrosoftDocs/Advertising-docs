@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the attribute columns that you can include in the SearchCampaignChangeHistoryReportRequest.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SearchCampaignChangeHistoryReportColumn Value Set - Reporting
 Defines the attribute columns that you can include in the [SearchCampaignChangeHistoryReportRequest](../reporting-service/searchcampaignchangehistoryreportrequest.md).
 
@@ -65,7 +62,7 @@ For a list of columns that you must include, please see the [Required Columns](#
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns
-The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
 
 |Column|
 |----------|
@@ -120,7 +117,7 @@ When the *ItemChanged* field's value is Ad, change history for the following att
 |Custom parameters|Refers to the custom parameters of the ad.|
 |Destination URL|Refers to the destination URL of the ad.|
 |Display URL|Refers to the display URL of the ad.|
-|Editorial status|Refers to the editorial status of the ad.<br /><br /> If the ad is pending offline editorial review, then within a downloaded change history report the editorial status is represented as either *Pending - Active* or *Pending - Inactive*. For more information, see [Entities and Delivery Status](../guides/editorial-review-appeals.md#entitydeliverystatus).|
+|Editorial status|Refers to the editorial status of the ad.<br /><br /> If the ad is pending offline editorial review, then within a downloaded change history report the editorial status is represented as either *Pending - Active* or *Pending - Inactive*. For more information, see [Entities and Delivery Status](~/guides/editorial-review-appeals.md#entitydeliverystatus).|
 |Final URL|Refers to the Final URL of the ad.|
 |Mobile URL|Refers to the Final Mobile URL of the ad.|
 |Status|Refers to the delivery status of the ad.<br /><br /> If reporting a deleted ad,  the *ItemChanged* field is Status, the *HowChanged* field is Changed, and the *NewValue* field is Deleted.|
@@ -213,7 +210,7 @@ When the *ItemChanged* field's value is Keyword, change history for the followin
 |Broad match bid|Refers to the broad match bid amount for the keyword.|
 |Content match bid|Refers to the content match bid amount for the keyword.|
 |Custom parameters|Refers to the custom parameters of the keyword.|
-|Editorial status|Refers to the editorial status of the keyword.<br /><br /> If the keyword is pending offline editorial review, then within a downloaded change history report the editorial status is represented as either *Pending - Active* or *Pending - Inactive*. For more information, see [Entities and Delivery Status](../guides/editorial-review-appeals.md#entitydeliverystatus).|
+|Editorial status|Refers to the editorial status of the keyword.<br /><br /> If the keyword is pending offline editorial review, then within a downloaded change history report the editorial status is represented as either *Pending - Active* or *Pending - Inactive*. For more information, see [Entities and Delivery Status](~/guides/editorial-review-appeals.md#entitydeliverystatus).|
 |Exact match bid|Refers to the exact match bid amount for the keyword.|
 |Final URL|Refers to the Final URL of the keyword.|
 |Mobile URL|Refers to the Final Mobile URL of the keyword.|
@@ -264,8 +261,8 @@ When the *ItemChanged* field's value is User, change history for the following a
 |Status|Refers to the status of the user.|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [SearchCampaignChangeHistoryReportRequest](searchcampaignchangehistoryreportrequest.md)  

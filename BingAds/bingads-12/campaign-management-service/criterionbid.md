@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a base class for criterion bids.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # CriterionBid Data Object - Campaign Management
 Defines a base class for criterion bids.
 

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a biddable criterion that you want applied to the specified ad group.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # BiddableAdGroupCriterion Data Object - Campaign Management
 Defines a biddable criterion that you want applied to the specified ad group.
 
@@ -42,7 +39,7 @@ Defines a biddable criterion that you want applied to the specified ad group.
 |<a name="finalappurls"></a>FinalAppUrls|Reserved for future use.|[AppUrl](appurl.md) array|
 |<a name="finalmobileurls"></a>FinalMobileUrls|Reserved for future use.|**string** array|
 |<a name="finalurls"></a>FinalUrls|Reserved for future use.|**string** array|
-|<a name="trackingurltemplate"></a>TrackingUrlTemplate|Tracking templates are where you can specify URL tracking parameters that are used in tandem with your final URL or landing page.<br/><br/> We recommend that you add the tracking template at the account level and then it will be applied to all URLs for lower level entities such as campaigns, ad groups, and ads. To learn more, see the Bing Ads help articles [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).<br/><br/>This element is only used if the *Criterion* property that is [inherited](#inheritedelements) from the [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) object is either a [ProductPartition](../campaign-management-service/productpartition.md) or [Webpage](../campaign-management-service/webpage.md) criterion. For details see [ProductPartition Usage](#productpartition) and [Webpage Usage](#webpage) below.|**string**|
+|<a name="trackingurltemplate"></a>TrackingUrlTemplate|Tracking templates are where you can specify URL tracking parameters that are used in tandem with your final URL or landing page.<br/><br/> We recommend that you add the tracking template at the account level and then it will be applied to all URLs for lower level entities such as campaigns, ad groups, and ads. To learn more, see the Bing Ads help articles [URL Tracking with Upgraded URLs](~/guides/url-tracking-upgraded-urls.md).<br/><br/>This element is only used if the *Criterion* property that is [inherited](#inheritedelements) from the [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) object is either a [ProductPartition](../campaign-management-service/productpartition.md) or [Webpage](../campaign-management-service/webpage.md) criterion. For details see [ProductPartition Usage](#productpartition) and [Webpage Usage](#webpage) below.|**string**|
 |<a name="urlcustomparameters"></a>UrlCustomParameters|Your custom collection of key and value parameters for URL tracking.<br/><br/>This element is only used if the *Criterion* property that is [inherited](#inheritedelements) from the [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) object is either a [ProductPartition](../campaign-management-service/productpartition.md) or [Webpage](../campaign-management-service/webpage.md) criterion. For details see [ProductPartition Usage](#productpartition) and [Webpage Usage](#webpage) below.|[CustomParameters](customparameters.md)|
 
 The [BiddableAdGroupCriterion](biddableadgroupcriterion.md) object has [Inherited Elements](#inheritedelements).
@@ -65,7 +62,7 @@ The [BiddableAdGroupCriterion](biddableadgroupcriterion.md) object derives from 
 If the *Criterion* property that is [inherited](#inheritedelements) from the [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) object is a [ProductPartition](../campaign-management-service/productpartition.md) criterion, please note the following usage of *BiddableAdGroupCriterion* properties.
 
 #### <a name="productpartition_destinationurl"></a>DestinationUrl
-If you are currently using Destination URLs, you must eventually replace them with Tracking Templates. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
+If you are currently using Destination URLs, you must eventually replace them with Tracking Templates. For more information, see [URL Tracking with Upgraded URLs](~/guides/url-tracking-upgraded-urls.md).
 
 The URL can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
 
@@ -79,11 +76,11 @@ The destination URL is used if specified; otherwise, the destination URL is dete
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.  
 
 #### <a name="productpartition_trackingurltemplate"></a>TrackingUrlTemplate
-The tracking templates can be used in tandem with the URL specified in the 'Link' field for the product offer that you submitted via the [Content API](../../bingads/shopping-content/index.md). By combining the feed URL with the tracking template, the landing page URL is assembled where a user is directed after clicking the ad. When you use the *TrackingUrlTemplate* element to update the URL parameters instead of updating them in the feed URL, the feed URL doesn't need to go through editorial review and your ads will continue to serve uninterrupted. For example if your product offer URL in the catalog feed is *http://contoso.com/*, you could specify the following tracking template: *{lpurl}?matchtype={matchtype}&device={device}*.
+The tracking templates can be used in tandem with the URL specified in the 'Link' field for the product offer that you submitted via the [Content API](~/shopping-content/index.md). By combining the feed URL with the tracking template, the landing page URL is assembled where a user is directed after clicking the ad. When you use the *TrackingUrlTemplate* element to update the URL parameters instead of updating them in the feed URL, the feed URL doesn't need to go through editorial review and your ads will continue to serve uninterrupted. For example if your product offer URL in the catalog feed is *http://contoso.com/*, you could specify the following tracking template: *{lpurl}?matchtype={matchtype}&device={device}*.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
+- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](~/guides/entity-hierarchy-limits.md).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 
@@ -114,7 +111,7 @@ For [Webpage](../campaign-management-service/webpage.md) criterion the tracking 
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
+- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](~/guides/entity-hierarchy-limits.md).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 

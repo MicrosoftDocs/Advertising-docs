@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible financial status values of a customer.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # CustomerFinancialStatus Value Set - Customer Management
 Defines the possible financial status values of a customer.
 
@@ -38,8 +35,8 @@ Defines the possible financial status values of a customer.
 |<a name="soldtoonly"></a>SoldToOnly|The customer is considered to be a credit risk. You cannot set the `BillToCustomerId` element of the [Account](../customer-management-service/account.md) for a customer that has this status. This status applies only to premium customers.|
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 
 ## Used By
 [Customer](customer.md)  

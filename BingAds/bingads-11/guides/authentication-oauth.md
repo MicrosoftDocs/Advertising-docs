@@ -7,10 +7,10 @@ ms.author: "eur"
 description: Authenticate for Bing Ads production services with a Microsoft Account.
 ---
 # Authentication with OAuth
-Bing Ads implements the implicit and authorization grant flows of the [OAuth 2.0](http://tools.ietf.org/html/rfc6749) protocol to enable authentication of Microsoft Accounts that are linked to Bing Ads accounts. You should authenticate for Bing Ads production services with a Microsoft Account, instead of providing the Bing Ads username and password set. Authentication with a Microsoft Account is currently not supported in [Sandbox](../guides/sandbox.md).
+Bing Ads implements the implicit and authorization grant flows of the [OAuth 2.0](http://tools.ietf.org/html/rfc6749) protocol to enable authentication of Microsoft Accounts that are linked to Bing Ads accounts. You should authenticate for Bing Ads production services with a Microsoft Account, instead of providing the Bing Ads username and password set. To authenticate with a Microsoft Account in sandbox, please see [Get Sandbox Access](sandbox.md#access).
 
 > [!NOTE]
-> New customers are required to sign up for Bing Ads with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy Bing Ads credentials may continue to specify the *UserName* and *Password* header elements. Starting with Bing Ads API version 12, only OAuth authentication will be supported. Managed credentials i.e., the *UserName* and *Password* header elements will not be supported. More details will be available during Q2 of Calendar Year 2018.  
+> New customers are required to sign up for Bing Ads with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy Bing Ads credentials may continue to specify the *UserName* and *Password* header elements with Bing Ads API version 11. Starting with Bing Ads API version 12, only OAuth authentication will be supported. Managed credentials i.e., the *UserName* and *Password* header elements will not be supported. More details will be available during Q2 of Calendar Year 2018.  
 > 
 > The *DeveloperToken* header element is always required. For information on how to get a *DeveloperToken*, see [Get Started With the Bing Ads API](../guides/get-started.md).
 
@@ -68,7 +68,7 @@ Before you can manage authentication for users of your Bing Ads application, you
 Once you have registered your application you can manage the access token for a Microsoft Account user already linked or registered with Bing Ads. For one time or short term access to manage a user's accounts, see [Implicit Grant Flow](#implicit). The access token is short lived and will expire in minutes or hours as determined by the authentication service. Additionally, the Microsoft Account user may change their password or remove permissions for your application to authenticate on their behalf. For repeat or long term access to manage a user's accounts, see [Authorization Code Grant Flow](#authorizationcode).
 
  > [!TIP]
-> For details about how to get access and refresh tokens using the Bing Ads SDKs, see [Authentication With the SDKs](../guides/sdk-authentication.md#oauth).
+> For details about how to get access and refresh tokens using the Bing Ads SDKs, see [Authentication With the SDKs](~/guides/sdk-authentication.md#oauth).
 
 ### <a name="implicit"></a>Implicit Grant Flow
 For one time or short term authentication, you should follow the implicit grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Implicit Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#section-4.2).
@@ -133,7 +133,7 @@ For repeat or long term authentication, you should follow the authorization code
     client_id=000A1A1A1&code=a1a1861bc-c5a1-c7a1-8ba1-846c6271a1a1&grant_type=authorization_code&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf
     ```
     > [!IMPORTANT]
-    > If you are using one of our SDKs the tokens will be refreshed automatically. Be sure to securely store the received refresh token. For more information see [Authentication With the SDKs](../guides/sdk-authentication.md#oauth).
+    > If you are using one of our SDKs the tokens will be refreshed automatically. Be sure to securely store the received refresh token. For more information see [Authentication With the SDKs](~/guides/sdk-authentication.md#oauth).
 
 5.  Get the *access_token*, *refresh_token*, and *expires_in* values from the JSON response stream.
 

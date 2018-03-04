@@ -11,19 +11,16 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Search User Accounts Code Example
 This example demonstrates how to search for accounts that can be managed by the current authenticated user.
 
-[!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/SearchUserAccounts.cs)]
+[!code-csharp[Main](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/SearchUserAccounts.cs)]
 
-[!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/SearchUserAccounts.java)]
+[!code-java[Main](../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/SearchUserAccounts.java)]
 
-[!code-php[Main](../../../BingAds-PHP-SDK/samples/V11/SearchUserAccounts.php)]
+[!code-php[Main](../../BingAds-PHP-SDK/samples/V11/SearchUserAccounts.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/search_user_accounts.py)]
+[!code-python[Main](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/search_user_accounts.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](../guides/get-started.md)  

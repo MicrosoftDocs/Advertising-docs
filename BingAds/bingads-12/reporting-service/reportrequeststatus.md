@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the status of a report request.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ReportRequestStatus Data Object - Reporting
 Defines the status of a report request.
 
@@ -30,8 +27,8 @@ Defines the status of a report request.
 |<a name="status"></a>Status|The status of a report request.|[ReportRequestStatusType](reportrequeststatustype.md)|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [PollGenerateReport](pollgeneratereport.md)  

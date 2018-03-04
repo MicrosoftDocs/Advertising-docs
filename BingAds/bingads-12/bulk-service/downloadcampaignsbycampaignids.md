@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DownloadCampaignsByCampaignIds Service Operation - Bulk
 Downloads settings and performance data for the specified campaigns. You can request all campaign data or only the data that has changed since the last time you downloaded the campaign.
 
@@ -117,7 +114,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<DownloadCampaignsByCampaignIdsResponse> DownloadCampaignsByCampaignIdsAsync(
 	IList<CampaignScope> campaigns,

@@ -6,14 +6,11 @@ author: "eric-urban"
 ms.author: "eur"
 description: Describes the Keyword Main Line Bid fields in a Bulk file.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Keyword Main Line Bid Record - Bulk
 Defines a keyword's estimated main line bid that can be downloaded in a bulk file.
 
 ## <a name="keywordmainlinebid"></a>Keyword Main Line Bid Record
-For a *Keyword Main Line Bid* record, the following bulk fields are available for download. The keyword main line bid is equivalent to calling the [GetEstimatedBidByKeywordIds](../ad-insight-service/getestimatedbidbykeywordids.md) operation with the Ad Insight service, and specifying *MainLine* as the [TargetAdPosition](../ad-insight-service/targetadposition.md) value.
+For a *Keyword Main Line Bid* record, the following bulk fields are available for download. The keyword main line bid is equivalent to calling the [GetEstimatedBidByKeywordIds](~/ad-insight-service/getestimatedbidbykeywordids.md) operation with the Ad Insight service, and specifying *MainLine* as the [TargetAdPosition](~/ad-insight-service/targetadposition.md) value.
 
 |Column Header|Description|
 |-----------------|---------------|

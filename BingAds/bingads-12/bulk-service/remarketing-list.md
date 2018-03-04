@@ -8,14 +8,11 @@ description: Describes the Remarketing List fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Remarketing List Record - Bulk
 Defines a remarketing list that can be downloaded and uploaded in a bulk file. 
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](~/guides/universal-event-tracking.md) technical guide.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Remarketing List* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
@@ -33,7 +30,7 @@ For a *Remarketing List* record, the following attribute fields are available in
 - [Status](#status)
 - [UET Tag Id](#uettagid)
 
-You can download all fields of the *Remarketing List* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *RemarketingLists* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Remarketing List* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *RemarketingLists* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new remarketing list. 
 
@@ -43,7 +40,7 @@ Format Version,,,,,,5,,,,,,,
 Remarketing List,Active,-10,ParentIdHere,ClientIdGoesHere,,,New list with CustomEventsRule,30,Account,TagIdHere,Remarketing List with CustomEventsRule,,CustomEvents(Action Equals play) and (Category Equals video) and (Label Equals trailer) and (Value Equals 5.00)
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkRemarketingList* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkRemarketingList* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp

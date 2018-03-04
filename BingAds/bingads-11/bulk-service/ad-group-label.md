@@ -22,7 +22,7 @@ For an *Ad Group Label* record, the following attribute fields are available in 
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Ad Group Label* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupLabels* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group Label* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupLabels* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would apply a label to an ad group if the valid *Id* and *Parent Id* are provided. 
 
@@ -32,7 +32,7 @@ Format Version,,,,,,,,5,,,
 Ad Group Label,,-22,-1111,,,ClientIdGoesHere,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupLabel* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupLabel* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -101,7 +101,7 @@ The identifier of the label that is applied or removed from the ad group.
 
 This bulk field maps to the *Id* field of the [Label](../bulk-service/label.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](../bulk-service/label.md) record. This is recommended if you are applying new labels to ad groups in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](../bulk-service/label.md) record. This is recommended if you are applying new labels to ad groups in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -118,7 +118,7 @@ The identifier of the ad group where this label is applied or removed.
 	
 This bulk field maps to the *Id* field of the [Ad Group](../bulk-service/ad-group.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-service/ad-group.md) record. This is recommended if you are applying labels to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-service/ad-group.md) record. This is recommended if you are applying labels to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 > [!NOTE]

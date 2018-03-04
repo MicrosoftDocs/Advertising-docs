@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains the location, network, device, and the percentage of time that a user entered a search query.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # KeywordLocation Data Object - Ad Insight
 Defines an object that contains the location, network, device, and the percentage of time that a user entered a search query.
 

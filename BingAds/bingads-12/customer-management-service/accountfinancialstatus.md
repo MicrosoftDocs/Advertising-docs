@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible financial status values of an account.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AccountFinancialStatus Value Set - Customer Management
 Defines the possible financial status values of an account.
 
@@ -44,8 +41,8 @@ Defines the possible financial status values of an account.
 |<a name="writeoff"></a>WriteOff|The account is past due; however, collection is no longer being pursued. When this status is set, the `Status` element of the [Account](../customer-management-service/account.md) will be set to *Inactive*.|
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 
 ## Used By
-[AdvertiserAccount](advertiseraccount.md)  
+[Account](account.md)  

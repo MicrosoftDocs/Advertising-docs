@@ -8,9 +8,6 @@ description: Describes the Campaign Review Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Campaign Review Ad Extension Record - Bulk
 Defines an association record between a [Campaign](../bulk-service/campaign.md) and an [Review Ad Extension](../bulk-service/review-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or review ad extension, use the [Campaign](../bulk-service/campaign.md) or [Review Ad Extension](../bulk-service/review-ad-extension.md) record.
 	
@@ -29,7 +26,7 @@ For a *Campaign Review Ad Extension* record, the following attribute fields are 
 - [Publisher Countries](#publishercountries)
 - [Status](#status)
 
-You can download all fields of the *Campaign Review Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignReviewAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Campaign Review Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignReviewAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would associate a review ad extension to a campaign if the valid *Id* and *Parent Id* are provided. 
 
@@ -39,7 +36,7 @@ Format Version,,,,,,,,5
 Campaign Review Ad Extension,Active,-11,-1111,,,ClientIdGoesHere,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignReviewAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignReviewAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -99,7 +96,7 @@ The component or property of the ad extension that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Delete:** Read-only  
@@ -107,7 +104,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](~/campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Delete:** Read-only  
@@ -125,7 +122,7 @@ The identifier of the ad extension that is associated or removed from the campai
 
 This bulk field maps to the *Id* field of the [Review Ad Extension](../bulk-service/review-ad-extension.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Review Ad Extension](../bulk-service/review-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Review Ad Extension](../bulk-service/review-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -142,7 +139,7 @@ The identifier of the campaign where this ad extension is associated or removed.
 	
 This bulk field maps to the *Id* field of the [Campaign](../bulk-service/campaign.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are associating ad extensions to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are associating ad extensions to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 > [!NOTE]

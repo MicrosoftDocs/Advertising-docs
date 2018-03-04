@@ -8,11 +8,8 @@ description: Create a desktop application using the Bing Ads Java SDK.
 dev_langs:
   - java
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Walkthrough: Bing Ads Desktop Application in Java
-The example desktop application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID. You'll also need your production [developer token](../guides/get-started.md#get-developer-token). You can create the example step by step as described below, or start with the [provided examples](../guides/code-examples.md).
+The example desktop application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID. You'll also need your production [developer token](~/guides/get-started.md#get-developer-token). You can create the example step by step as described below, or start with the [provided examples](~/guides/code-examples.md).
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
@@ -50,7 +47,7 @@ The example desktop application sends authentication requests to the Microsoft a
 
 6.  In **Project Explorer**, right-click the BingAdsDesktopApp project (or the name of your project if you chose a different artifact identifier in the previous step) and select **New** -&gt; **Class**. Choose a package name, for example *com.microsoft.bingads.examples*. Name the class *OAuthDesktopApplication* and then click **Finish**.
 
-7.  Open the OAuthDesktopApplication.java file and replace its contents with the following code block. You must edit the sample below with the ClientId that was provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](../guides/get-started.md#get-developer-token).
+7.  Open the OAuthDesktopApplication.java file and replace its contents with the following code block. You must edit the sample below with the ClientId that was provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](~/guides/get-started.md#get-developer-token).
 
     > [!NOTE]
     > If you observe any errors related to *javafx* import statements, try removing the *JRE System Library* and adding it back again. In **Project Explorer**, right-click the BingAdsDesktopApp and select **Build Path** -&gt; **Configure Build Path**. In the **Libraries** tab, select JRE System Library and click **Remove**. Remain in the **Libraries** tab and click **Add Library**, select JRE System Library, click **Next**, and then click **Finish**.
@@ -280,7 +277,7 @@ To use the [Sandbox](../guides/sandbox.md) environment, create a new text file n
 environment=Sandbox
 ```
 
-Sandbox does not support OAuth, so you must use *PasswordAuthentication*. You can remove all code above that refers to oAuthDesktopMobileAuthCodeGrant, and simply add these lines before you create the new ServiceClient for ICustomerManagementService.
+The SDK does not yet support OAuth for sandbox (coming soon), so you must use *PasswordAuthentication*. You can remove all code above that refers to oAuthDesktopMobileAuthCodeGrant, and simply add these lines before you create the new ServiceClient for ICustomerManagementService.
 
 ```java
 authorizationData = new AuthorizationData();

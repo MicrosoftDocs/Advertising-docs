@@ -6,13 +6,10 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible status values of a ClientLink.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ClientLinkStatus Value Set - Customer Management
 Defines the possible status values of a [ClientLink](../customer-management-service/clientlink.md).
 
-For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
+For more information about the client link lifecycle, see [Link to Client Accounts](~/guides/management-model-agencies.md#clientlink).
 
 ## Syntax
 ```xml
@@ -61,8 +58,8 @@ For more information about the client link lifecycle, see [Link to Client Accoun
 |<a name="unlinkrequested"></a>UnlinkRequested|The agency should use this value to request an unlink.<br /><br />The previous status was Active.|
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 
 ## Used By
 [ClientLink](clientlink.md)  

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Value sets reference for the Reporting service.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Reporting Value Sets
 The Reporting service defines the following value sets.
 
@@ -51,6 +48,7 @@ The Reporting service defines the following value sets.
 |[KeywordPerformanceReportColumn](keywordperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [KeywordPerformanceReportRequest](../reporting-service/keywordperformancereportrequest.md).|
 |[KeywordStatusReportFilter](keywordstatusreportfilter.md)|Defines the keyword status values that you can use to filter the report data.|
 |[NegativeKeywordConflictReportColumn](negativekeywordconflictreportcolumn.md)|Defines the attributes columns that you can include in the [NegativeKeywordConflictReportRequest](../reporting-service/negativekeywordconflictreportrequest.md).|
+|[NonHourlyReportAggregation](nonhourlyreportaggregation.md)|Defines the aggregation values for reports that cannot specify hourly aggregation.|
 |[ProductDimensionPerformanceReportColumn](productdimensionperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ProductDimensionPerformanceReportRequest](../reporting-service/productdimensionperformancereportrequest.md).|
 |[ProductPartitionPerformanceReportColumn](productpartitionperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ProductPartitionPerformanceReportRequest](../reporting-service/productpartitionperformancereportrequest.md).|
 |[ProductPartitionUnitPerformanceReportColumn](productpartitionunitperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ProductPartitionUnitPerformanceReportRequest](../reporting-service/productpartitionunitperformancereportrequest.md).|
@@ -63,6 +61,7 @@ The Reporting service defines the following value sets.
 |[ReportTimePeriod](reporttimeperiod.md)|Defines the predefined time and date range values for a report request.|
 |[SearchCampaignChangeHistoryReportColumn](searchcampaignchangehistoryreportcolumn.md)|Defines the attribute columns that you can include in the [SearchCampaignChangeHistoryReportRequest](../reporting-service/searchcampaignchangehistoryreportrequest.md).|
 |[SearchQueryPerformanceReportColumn](searchqueryperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [SearchQueryPerformanceReportRequest](../reporting-service/searchqueryperformancereportrequest.md).|
+|[SearchQueryReportAggregation](searchqueryreportaggregation.md)|Defines the aggregation values that you can use in a search query performance report.|
 |[ShareOfVoiceReportColumn](shareofvoicereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ShareOfVoiceReportRequest](../reporting-service/shareofvoicereportrequest.md).|
 |[SortOrder](sortorder.md)|Defines the ascending or descending sort order of values within the specified report column.|
 |[UserLocationPerformanceReportColumn](userlocationperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [UserLocationPerformanceReportRequest](../reporting-service/userlocationperformancereportrequest.md).|

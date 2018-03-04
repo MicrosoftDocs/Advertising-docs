@@ -6,14 +6,11 @@ author: "eric-urban"
 ms.author: "eur"
 description: Describes the Keyword Best Position Bid fields in a Bulk file.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Keyword Best Position Bid Record - Bulk
 Defines a keyword's estimated best position bid that can be downloaded in a bulk file.
 
 ## <a name="keywordbestpositionbid"></a>Keyword Best Position Bid Record
-For a *Keyword Best Position Bid* record, the following bulk fields are available for download. The keyword best position bid is equivalent to calling the [GetEstimatedBidByKeywordIds](../ad-insight-service/getestimatedbidbykeywordids.md) operation with the Ad Insight service, and specifying *MainLine1* as the [TargetAdPosition](../ad-insight-service/targetadposition.md) value.
+For a *Keyword Best Position Bid* record, the following bulk fields are available for download. The keyword best position bid is equivalent to calling the [GetEstimatedBidByKeywordIds](~/ad-insight-service/getestimatedbidbykeywordids.md) operation with the Ad Insight service, and specifying *MainLine1* as the [TargetAdPosition](~/ad-insight-service/targetadposition.md) value.
 
 |Column Header|Description|
 |-----------------|---------------|

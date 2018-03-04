@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetCustomersInfo Service Operation - Customer Management
 Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.
 
@@ -26,6 +23,7 @@ The *GetCustomersInfoRequest* object defines the [body](#request-body) and [head
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
+|<a name="applicationscope"></a>ApplicationScope|A value that determines whether to return results for advertising customers or publishing customers. If you do not specify the scope, the list may include both types of customers.|[ApplicationType](applicationtype.md)|
 |<a name="customernamefilter"></a>CustomerNameFilter|A partial or full name of the customers that you want to get. The operation includes the customer in the result if the customer's name begins with the specified filter name. If you do not want to filter by customer name, set this element to an empty string.<br /><br />The operation performs a case-insensitive comparison when it compares your name filter value to the customer names. For example, if you specify "t" as the filter value, the list will include customers whose names begin with "t" or "T".|**string**|
 |<a name="topn"></a>TopN|A nonzero positive integer that specifies the number of customers to return in the result.|**int**|
 
@@ -49,7 +47,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">GetCustomersInfo</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -58,9 +56,10 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetCustomersInfoRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+    <GetCustomersInfoRequest xmlns="https://bingads.microsoft.com/Customer/v11">
       <CustomerNameFilter i:nil="false">ValueHere</CustomerNameFilter>
       <TopN>ValueHere</TopN>
+      <ApplicationScope>ValueHere</ApplicationScope>
     </GetCustomersInfoRequest>
   </s:Body>
 </s:Envelope>
@@ -71,16 +70,16 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetCustomersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <CustomersInfo xmlns:e326="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e326:CustomerInfo>
-          <e326:Id d4p1:nil="false">ValueHere</e326:Id>
-          <e326:Name d4p1:nil="false">ValueHere</e326:Name>
-        </e326:CustomerInfo>
+    <GetCustomersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
+      <CustomersInfo xmlns:e319="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e319:CustomerInfo>
+          <e319:Id d4p1:nil="false">ValueHere</e319:Id>
+          <e319:Name d4p1:nil="false">ValueHere</e319:Name>
+        </e319:CustomerInfo>
       </CustomersInfo>
     </GetCustomersInfoResponse>
   </s:Body>
@@ -92,12 +91,14 @@ The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md
 ```csharp
 public async Task<GetCustomersInfoResponse> GetCustomersInfoAsync(
 	string customerNameFilter,
-	int topN)
+	int topN,
+	ApplicationType applicationScope)
 {
 	var request = new GetCustomersInfoRequest
 	{
 		CustomerNameFilter = customerNameFilter,
-		TopN = topN
+		TopN = topN,
+		ApplicationScope = applicationScope
 	};
 
 	return (await CustomerManagementService.CallAsync((s, r) => s.GetCustomersInfoAsync(r), request));
@@ -106,12 +107,14 @@ public async Task<GetCustomersInfoResponse> GetCustomersInfoAsync(
 ```java
 static GetCustomersInfoResponse getCustomersInfo(
 	java.lang.String customerNameFilter,
-	int topN) throws RemoteException, Exception
+	int topN,
+	ApplicationType applicationScope) throws RemoteException, Exception
 {
 	GetCustomersInfoRequest request = new GetCustomersInfoRequest();
 
 	request.setCustomerNameFilter(customerNameFilter);
 	request.setTopN(topN);
+	request.setApplicationScope(applicationScope);
 
 	return CustomerManagementService.getService().getCustomersInfo(request);
 }
@@ -119,7 +122,8 @@ static GetCustomersInfoResponse getCustomersInfo(
 ```php
 static function GetCustomersInfo(
 	$customerNameFilter,
-	$topN)
+	$topN,
+	$applicationScope)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
@@ -128,6 +132,7 @@ static function GetCustomersInfo(
 
 	$request->CustomerNameFilter = $customerNameFilter;
 	$request->TopN = $topN;
+	$request->ApplicationScope = $applicationScope;
 
 	return $GLOBALS['CustomerManagementProxy']->GetService()->GetCustomersInfo($request);
 }
@@ -135,10 +140,11 @@ static function GetCustomersInfo(
 ```python
 response=customermanagement_service.GetCustomersInfo(
 	CustomerNameFilter=CustomerNameFilter,
-	TopN=TopN)
+	TopN=TopN,
+	ApplicationScope=ApplicationScope)
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 

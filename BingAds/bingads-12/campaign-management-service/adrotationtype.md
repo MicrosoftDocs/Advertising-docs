@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible ad rotation types that you can apply to an ad group.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AdRotationType Value Set - Campaign Management
 Defines the possible ad rotation types that you can apply to an ad group. For ad groups with more than one ad, these options determine how the ads are rotated into the auction.
 

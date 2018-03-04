@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetUsersInfo Service Operation - Customer Management
 Gets a list of objects that contains user identification information, for example the user name and identifier of the user.
 
@@ -47,7 +44,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">GetUsersInfo</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -56,7 +53,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetUsersInfoRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+    <GetUsersInfoRequest xmlns="https://bingads.microsoft.com/Customer/v11">
       <CustomerId>ValueHere</CustomerId>
       <StatusFilter i:nil="false">ValueHere</StatusFilter>
     </GetUsersInfoRequest>
@@ -69,16 +66,16 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetUsersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <UsersInfo xmlns:e329="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e329:UserInfo>
-          <e329:Id>ValueHere</e329:Id>
-          <e329:UserName d4p1:nil="false">ValueHere</e329:UserName>
-        </e329:UserInfo>
+    <GetUsersInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
+      <UsersInfo xmlns:e321="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e321:UserInfo>
+          <e321:Id>ValueHere</e321:Id>
+          <e321:UserName d4p1:nil="false">ValueHere</e321:UserName>
+        </e321:UserInfo>
       </UsersInfo>
     </GetUsersInfoResponse>
   </s:Body>
@@ -137,6 +134,6 @@ response=customermanagement_service.GetUsersInfo(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 

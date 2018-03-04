@@ -14,12 +14,12 @@ This guide describes how you can download samples from the [GitHub source](https
 > [!IMPORTANT] 
 > Be sure to test in sandbox before running samples in production. Also note that some samples might require additional information e.g. within *ManageClient.php* you'll need to supply a valid $ClientAccountId.
 
-You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID. You'll also need your production [developer token](../guides/get-started.md#get-developer-token).
+You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID. You'll also need your production [developer token](~/guides/get-started.md#get-developer-token).
 
 ## <a name="code"></a>Code Walkthrough
 
 1.  Download the Bing Ads examples or copy snippets as needed from the [GitHub source](https://github.com/BingAds/BingAds-PHP-SDK). For example open a command prompt and type `git clone https://github.com/BingAds/BingAds-PHP-SDK.git`. 
-2.  Navigate to your local project directory e.g. *c:\dev\BingAdsPHP* and [install](../guides/get-started-php.md#installation) the Bing Ads PHP SDK. You should now see the vendor directory which contains both the SDK source and samples. 
+2.  Navigate to your local project directory e.g. *c:\dev\BingAdsPHP* and [install](~/guides/get-started-php.md#installation) the Bing Ads PHP SDK. You should now see the vendor directory which contains both the SDK source and samples. 
 3.  Copy both *AuthHelper.php* and the *V11* directory (with included samples) to your local project directory e.g. copy from *c:\dev\BingAdsPHP\vendor\microsoft\bingads\samples* to *c:\dev\BingAdsPHP*.
 
     ![Sample PHP Project Directory](../guides/media/sample-php-project-directory.png "Sample PHP Project Directory")  
@@ -39,7 +39,7 @@ You must first [register an application](../guides/authentication-oauth.md#regis
    
    //AuthHelper::AuthenticateWithOAuth();
    
-   // However, authentication with a Microsoft Account is currently not supported in Sandbox,
+   // However, the SDK does not currently supported OAuth in Sandbox (coming soon),
    // so it is recommended that you set the UserName and Password in sandbox for testing.
    
    AuthHelper::AuthenticateWithUserName();
@@ -48,7 +48,7 @@ You must first [register an application](../guides/authentication-oauth.md#regis
    
 ## <a name="oauth"></a>OAuth Refresh Token
 To authenticate with OAuth you'll need a refresh token to get started.
-1. Within *AuthHelper.php*, edit the *ClientId* with the ClientId that was provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the *DeveloperToken* value with your production [developer token](../guides/get-started.md#get-developer-token). The *RedirectUri* should be set to *https://login.live.com/oauth20_desktop.srf*.  
+1. Within *AuthHelper.php*, edit the *ClientId* with the ClientId that was provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the *DeveloperToken* value with your production [developer token](~/guides/get-started.md#get-developer-token). The *RedirectUri* should be set to *https://login.live.com/oauth20_desktop.srf*.  
 2. Edit one of the samples e.g. *\V11\SearchUserAccounts.php*. Choose the *AuthenticateWithOAuth* helper function that you will use, and comment out *AuthenticateWithUserName*. 
    ```php
    AuthHelper::AuthenticateWithOAuth();

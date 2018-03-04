@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetBillingDocumentsInfo Service Operation - Customer Billing
 Gets a list of objects that contains billing document identification information, for example the billing document identifier, amount, and account identifier.
 
@@ -48,7 +45,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
     <Action mustUnderstand="1">GetBillingDocumentsInfo</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -57,7 +54,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetBillingDocumentsInfoRequest xmlns="https://bingads.microsoft.com/Billing/v12">
+    <GetBillingDocumentsInfoRequest xmlns="https://bingads.microsoft.com/Billing/v11">
       <AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:long>ValueHere</a1:long>
       </AccountIds>
@@ -73,21 +70,21 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetBillingDocumentsInfoResponse xmlns="https://bingads.microsoft.com/Billing/v12">
-      <BillingDocumentsInfo xmlns:e367="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e367:BillingDocumentInfo>
-          <e367:AccountId>ValueHere</e367:AccountId>
-          <e367:AccountName d4p1:nil="false">ValueHere</e367:AccountName>
-          <e367:AccountNumber d4p1:nil="false">ValueHere</e367:AccountNumber>
-          <e367:Amount>ValueHere</e367:Amount>
-          <e367:CurrencyCode d4p1:nil="false">ValueHere</e367:CurrencyCode>
-          <e367:DocumentDate d4p1:nil="false">ValueHere</e367:DocumentDate>
-          <e367:DocumentId d4p1:nil="false">ValueHere</e367:DocumentId>
-        </e367:BillingDocumentInfo>
+    <GetBillingDocumentsInfoResponse xmlns="https://bingads.microsoft.com/Billing/v11">
+      <BillingDocumentsInfo xmlns:e359="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e359:BillingDocumentInfo>
+          <e359:AccountId>ValueHere</e359:AccountId>
+          <e359:AccountName d4p1:nil="false">ValueHere</e359:AccountName>
+          <e359:AccountNumber d4p1:nil="false">ValueHere</e359:AccountNumber>
+          <e359:Amount>ValueHere</e359:Amount>
+          <e359:CurrencyCode d4p1:nil="false">ValueHere</e359:CurrencyCode>
+          <e359:DocumentDate d4p1:nil="false">ValueHere</e359:DocumentDate>
+          <e359:DocumentId d4p1:nil="false">ValueHere</e359:DocumentId>
+        </e359:BillingDocumentInfo>
       </BillingDocumentsInfo>
     </GetBillingDocumentsInfoResponse>
   </s:Body>
@@ -153,6 +150,6 @@ response=customerbilling_service.GetBillingDocumentsInfo(
 ```
 
 ## Requirements
-Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Billing/v12  
+Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Billing/v11  
 

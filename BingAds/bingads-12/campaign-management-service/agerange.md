@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible age range values that you can use to target ads to People.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AgeRange Value Set - Campaign Management
 Defines the possible age range values that you can use to target ads to People.
 

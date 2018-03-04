@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a fault object that operations return when generic errors occur, such as an authentication error.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AdApiFaultDetail Data Object - Campaign Management
 Defines a fault object that operations return when generic errors occur, such as an authentication error.
 

@@ -6,14 +6,11 @@ author: eric-urban
 ms.author: eur
 description: Defines a selection of locale values.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # LCID Value Set - Customer Management
 Defines a selection of locale values.
 
 > [!NOTE]
-> The value set defines a broad selection of locales; however, not all languages are supported in each market. For a list of supported languages by market country, see [Ad Languages](../guides/ad-languages.md).
+> The value set defines a broad selection of locales; however, not all languages are supported in each market. For a list of supported languages by market country, see [Ad Languages](~/guides/ad-languages.md).
 
 ## Syntax
 ```xml
@@ -445,8 +442,8 @@ Defines a selection of locale values.
 |<a name="swedishsweden"></a>SwedishSweden|Swedish (Sweden)|
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 
 ## Used By
 [User](user.md)  

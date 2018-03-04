@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible formats in which to generate the billing document.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DataType Value Set - Customer Billing
 Defines the possible formats in which to generate the billing document.
 
@@ -42,8 +39,8 @@ Defines the possible formats in which to generate the billing document.
 |<a name="xml"></a>Xml|Use XML format.|
 
 ## Requirements
-Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Billing/v12  
+Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Billing/v11  
 
 ## Used By
 [BillingDocument](billingdocument.md)  

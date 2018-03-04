@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SetAdExtensionsAssociations Service Operation - Campaign Management
 Associates the specified ad extensions with the respective campaigns or ad groups.
 
@@ -115,7 +112,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<SetAdExtensionsAssociationsResponse> SetAdExtensionsAssociationsAsync(
 	long accountId,

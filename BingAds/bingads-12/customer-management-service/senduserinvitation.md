@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SendUserInvitation Service Operation - Customer Management
 Sends an invitation for  a Microsoft account user to manage one or more Bing Ads customer accounts. When the invitation is accepted, the user's Microsoft account is linked to the specified Bing Ads customer accounts.  
 
@@ -23,7 +20,7 @@ Since a recipient can accept the invitation and sign into Bing Ads with a Micros
 
 After the invitation has been accepted, you can call [GetUsersInfo](../customer-management-service/getusersinfo.md) and [GetUser](../customer-management-service/getuser.md) to access the Bing Ads user details. Once again though, since a recipient can accept the invitation and sign into Bing Ads with a Microsoft account different than the invitation email address, you cannot determine with certainty the mapping from [UserInvitation](../customer-management-service/userinvitation.md) to accepted [User](../customer-management-service/user.md). With the user ID returned by [GetUsersInfo](../customer-management-service/getusersinfo.md) or [GetUser](../customer-management-service/getuser.md), you can call [DeleteUser](../customer-management-service/deleteuser.md) to remove the user.
 
-For more information about user authentication, see [Authentication with OAuth](../guides/authentication-oauth.md).
+For more information about user authentication, see [Authentication with OAuth](~/guides/authentication-oauth.md).
 
 ## <a name="request"></a>Request Elements
 The *SendUserInvitationRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -54,7 +51,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">SendUserInvitation</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -63,19 +60,19 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <SendUserInvitationRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <UserInvitation xmlns:e349="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e349:Id>ValueHere</e349:Id>
-        <e349:FirstName i:nil="false">ValueHere</e349:FirstName>
-        <e349:LastName i:nil="false">ValueHere</e349:LastName>
-        <e349:Email i:nil="false">ValueHere</e349:Email>
-        <e349:CustomerId>ValueHere</e349:CustomerId>
-        <e349:RoleId>ValueHere</e349:RoleId>
-        <e349:AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <SendUserInvitationRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+      <UserInvitation xmlns:e341="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e341:Id>ValueHere</e341:Id>
+        <e341:FirstName i:nil="false">ValueHere</e341:FirstName>
+        <e341:LastName i:nil="false">ValueHere</e341:LastName>
+        <e341:Email i:nil="false">ValueHere</e341:Email>
+        <e341:CustomerId>ValueHere</e341:CustomerId>
+        <e341:Role>ValueHere</e341:Role>
+        <e341:AccountIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
           <a1:long>ValueHere</a1:long>
-        </e349:AccountIds>
-        <e349:ExpirationDate>ValueHere</e349:ExpirationDate>
-        <e349:Lcid>ValueHere</e349:Lcid>
+        </e341:AccountIds>
+        <e341:ExpirationDate>ValueHere</e341:ExpirationDate>
+        <e341:Lcid>ValueHere</e341:Lcid>
       </UserInvitation>
     </SendUserInvitationRequest>
   </s:Body>
@@ -87,11 +84,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <SendUserInvitationResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+    <SendUserInvitationResponse xmlns="https://bingads.microsoft.com/Customer/v11">
       <UserInvitationId>ValueHere</UserInvitationId>
     </SendUserInvitationResponse>
   </s:Body>
@@ -143,6 +140,6 @@ response=customermanagement_service.SendUserInvitation(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # StructuredSnippetAdExtension Data Object - Campaign Management
 Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.
 
@@ -36,7 +33,7 @@ You can associate a structured snippet ad extension with the account or with cam
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="header"></a>Header|The header that is appended with a colon (*:*) and precedes the snippet values. <br/><br/>Structured Snippet headers must be specified in the same language that you intend it to be shown. For example, if you want header *Amenities* in English you must specify the header as *Amenities*.  If you want header *Ausstattung* in German you must specify the header as *Ausstattung* (*Amenities* in German). For a list of supported headers per language, please see [Structured Snippet Header Languages](../guides/ad-languages.md#structuredsnippetheaders).<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
+|<a name="header"></a>Header|The header that is appended with a colon (*:*) and precedes the snippet values. <br/><br/>Structured Snippet headers must be specified in the same language that you intend it to be shown. For example, if you want header *Amenities* in English you must specify the header as *Amenities*.  If you want header *Ausstattung* in German you must specify the header as *Ausstattung* (*Amenities* in German). For a list of supported headers per language, please see [Structured Snippet Header Languages](~/guides/ad-languages.md#structuredsnippetheaders).<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
 |<a name="values"></a>Values|The snippet values that follow after the *Header:* component. You can choose the values, and each value can have a maximum length of 25 characters. Note that for Traditional Chinese characters, each value can have a maximum length of 12 characters.<br/><br/>**Add:** Required<br/>**Update:** Required|**string** array|
 
 The [StructuredSnippetAdExtension](structuredsnippetadextension.md) object has [Inherited Elements](#inheritedelements).

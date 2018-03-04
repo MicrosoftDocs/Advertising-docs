@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the ascending or descending sort order of values within the specified report column.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SortOrder Value Set - Reporting
 Defines the ascending or descending sort order of values within the specified report column.
 
@@ -30,8 +27,8 @@ Defines the ascending or descending sort order of values within the specified re
 |<a name="descending"></a>Descending|The results will be sorted descending.|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [KeywordPerformanceReportSort](keywordperformancereportsort.md)  

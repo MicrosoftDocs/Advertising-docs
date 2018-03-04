@@ -8,9 +8,6 @@ description: Describes the Text Ad Label fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Text Ad Label Record - Bulk
 Defines an association record between a [Text Ad](../bulk-service/text-ad.md) and a [Label](../bulk-service/label.md) that can be uploaded and downloaded in a bulk file. To upload or download the text ad or label, use the [Text Ad](../bulk-service/text-ad.md) or [Label](../bulk-service/label.md) record.
 
@@ -23,7 +20,7 @@ For a *Text Ad Label* record, the following attribute fields are available in th
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Text Ad Label* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *TextAdLabels* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Text Ad Label* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *TextAdLabels* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would apply a label to a text ad if the valid *Id* and *Parent Id* are provided. 
 
@@ -33,7 +30,7 @@ Format Version,,,,,,,,5,,,
 Text Ad Label,,-22,-11112,,,ClientIdGoesHere,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkTextAdLabel* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkTextAdLabel* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -84,7 +81,7 @@ The identifier of the label that is applied or removed from the text ad.
 
 This bulk field maps to the *Id* field of the [Label](../bulk-service/label.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](../bulk-service/label.md) record. This is recommended if you are applying new labels to text ads in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](../bulk-service/label.md) record. This is recommended if you are applying new labels to text ads in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -101,7 +98,7 @@ The identifier of the text ad where this label is applied or removed.
 	
 This bulk field maps to the *Id* field of the [Text Ad](../bulk-service/text-ad.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing text ad identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Text Ad](../bulk-service/text-ad.md) record. This is recommended if you are applying labels to a new text ad in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing text ad identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Text Ad](../bulk-service/text-ad.md) record. This is recommended if you are applying labels to a new text ad in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status

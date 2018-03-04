@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AddMedia Service Operation - Campaign Management
 Adds the specified media to an account's media library. Depending on the type of [Media](../campaign-management-service/media.md), you can then add the media to one or more [ImageAdExtension](../campaign-management-service/imageadextension.md) or [LocationAdExtension](../campaign-management-service/locationadextension.md) objects.
 
@@ -93,7 +90,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<AddMediaResponse> AddMediaAsync(
 	long accountId,

@@ -20,7 +20,7 @@ For an *App Install Ad Label* record, the following attribute fields are availab
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *App Install Ad Label* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AppInstallAdLabels* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *App Install Ad Label* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AppInstallAdLabels* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would apply a label to an app install ad if the valid *Id* and *Parent Id* are provided. 
 
@@ -30,7 +30,7 @@ Format Version,,,,,,,,5,,,
 App Install Ad Label,,-22,-11112,,,ClientIdGoesHere,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAppInstallAdLabel* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAppInstallAdLabel* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -81,7 +81,7 @@ The identifier of the label that is applied or removed from the app install ad.
 
 This bulk field maps to the *Id* field of the [Label](../bulk-service/label.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](../bulk-service/label.md) record. This is recommended if you are applying new labels to app install ads in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](../bulk-service/label.md) record. This is recommended if you are applying new labels to app install ads in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -98,7 +98,7 @@ The identifier of the app install ad where this label is applied or removed.
 	
 This bulk field maps to the *Id* field of the [App Install Ad](../bulk-service/app-install-ad.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing app install ad identifier, or specify a negative identifier that is equal to the *Id* field of the parent [App Install Ad](../bulk-service/app-install-ad.md) record. This is recommended if you are applying labels to a new app install ad in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing app install ad identifier, or specify a negative identifier that is equal to the *Id* field of the parent [App Install Ad](../bulk-service/app-install-ad.md) record. This is recommended if you are applying labels to a new app install ad in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status

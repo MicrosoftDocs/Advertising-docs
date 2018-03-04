@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a criterion that you want applied to the specified ad group.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AdGroupCriterion Data Object - Campaign Management
 Defines a criterion that you want applied to the specified ad group.
 

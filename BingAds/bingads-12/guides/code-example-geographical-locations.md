@@ -11,19 +11,16 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Geographical Locations Code Example
 This example demonstrates how to download the comma separated value (CSV) file that contains geographical location information that can be used with Bing Ads location targeting.
 
-[!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/GeographicalLocations.cs)]
+[!code-csharp[Main](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/GeographicalLocations.cs)]
 
-[!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/GeographicalLocations.java)]
+[!code-java[Main](../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/GeographicalLocations.java)]
 
-[!code-php[Main](../../../BingAds-PHP-SDK/samples/V11/GeographicalLocations.php)]
+[!code-php[Main](../../BingAds-PHP-SDK/samples/V11/GeographicalLocations.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/geographical_locations.py)]
+[!code-python[Main](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/geographical_locations.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](../guides/get-started.md)  

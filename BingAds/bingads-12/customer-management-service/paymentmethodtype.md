@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines possible payment methods for a Bing Ads account.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # PaymentMethodType Value Set - Customer Management
 Defines possible payment methods for a Bing Ads account.
 
@@ -101,8 +98,8 @@ Defines possible payment methods for a Bing Ads account.
 |<a name="vba"></a>VBA|Virtual Bank Account is a form of payment used widely in Taiwan. Bing Ads allows customers to use VBA to fund their prepay accounts by giving them the ability to print a payment slip that they can use to make payment at various locations in Taiwan (e.g. Post offices and banks). This payment method is only supported in Taiwan and activity must be billed in TWD currency.|
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 
 ## Used By
-[AdvertiserAccount](advertiseraccount.md)  
+[Account](account.md)  

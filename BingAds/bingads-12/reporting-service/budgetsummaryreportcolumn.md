@@ -6,17 +6,14 @@ author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the BudgetSummaryReportRequest.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # BudgetSummaryReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [BudgetSummaryReportRequest](../reporting-service/budgetsummaryreportrequest.md).
 
-The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](../guides/reports.md#columnsdata).
+The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](~/guides/reports.md#columnsdata).
 
 For a list of columns that you must include, please see the [Required Columns](#requiredcolumns) section below.
 
-To see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report, see [Report Data Retention Time Periods](../guides/report-data-retention-time-periods.md).
+To see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report, see [Report Data Retention Time Periods](~/guides/report-data-retention-time-periods.md).
 
 ## Syntax
 ```xml
@@ -45,7 +42,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
 |<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
-|<a name="currencycode"></a>CurrencyCode|The account currency type.For possible values, see [Currencies](../guides/currencies.md).|
+|<a name="currencycode"></a>CurrencyCode|The account currency type.For possible values, see [Currencies](~/guides/currencies.md).|
 |<a name="dailyspend"></a>DailySpend|The average amount of campaign budget spent per day.|
 |<a name="date"></a>Date|The date for the downloaded report records. The date will be in the time zone of the campaign|
 |<a name="monthlybudget"></a>MonthlyBudget|The average amount of campaign budget spent during a calendar month.|
@@ -53,7 +50,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns
-The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
 
 |Column|
 |----------|
@@ -64,8 +61,8 @@ The report must include the following columns, and one or more of the performanc
 |Date|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [BudgetSummaryReportRequest](budgetsummaryreportrequest.md)  

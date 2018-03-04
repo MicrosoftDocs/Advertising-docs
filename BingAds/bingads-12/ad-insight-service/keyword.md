@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a keyword with match type.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Keyword Data Object - Ad Insight
 Defines a keyword with match type.
 

@@ -50,7 +50,7 @@ For a list of columns that you must include, please see the [Required Columns](#
 |<a name="adgroupid"></a>AdGroupId|The Bing Ads assigned identifier of an ad group.|
 |<a name="adgroupname"></a>AdGroupName|The ad group name.|
 |<a name="adgroupstatus"></a>AdGroupStatus|The current ad group status.|
-|<a name="bidmatchtype"></a>BidMatchType|The keyword bid match type. This can be different from the *DeliveredMatchType* column, for example if you bid on a broad match and the search term was an exact match. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).The possible values are *Broad*, *Exact*, *Phrase*, and *Unknown*.|
+|<a name="bidmatchtype"></a>BidMatchType|The keyword bid match type. This can be different from the *DeliveredMatchType* column, for example if you bid on a broad match and the search term was an exact match. For more information, see [Budget and Bid Strategies](~/guides/budget-bid-strategies.md).The possible values are *Broad*, *Exact*, *Phrase*, and *Unknown*.|
 |<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
 |<a name="campaignstatus"></a>CampaignStatus|The current campaign status.|
@@ -66,7 +66,7 @@ For a list of columns that you must include, please see the [Required Columns](#
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns
-The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
 
 > [!NOTE]
 > The TimePeriod column is required for all aggregation types except Summary.

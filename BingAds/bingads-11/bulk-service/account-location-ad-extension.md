@@ -25,7 +25,7 @@ For a *Account Location Ad Extension* record, the following attribute fields are
 - [Publisher Countries](#publishercountries)
 - [Status](#status)
 
-You can download all fields of the *Account Location Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AccountLocationAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Account Location Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AccountLocationAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would associate a location ad extension to an account if the valid *Id* is provided. 
 
@@ -35,7 +35,7 @@ Format Version,,,,,,5
 Account Location Ad Extension,Active,-11,,ClientIdGoesHere,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAccountLocationAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAccountLocationAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -86,7 +86,7 @@ The component or property of the ad extension that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Delete:** Read-only  
@@ -94,7 +94,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](~/campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Delete:** Read-only  
@@ -112,7 +112,7 @@ The identifier of the ad extension that is associated or removed from the accoun
 
 This bulk field maps to the *Id* field of the [Location Ad Extension](../bulk-service/location-ad-extension.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Location Ad Extension](../bulk-service/location-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Location Ad Extension](../bulk-service/location-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time

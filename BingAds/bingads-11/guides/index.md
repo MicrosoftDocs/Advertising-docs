@@ -16,7 +16,7 @@ You should consider using the Bing Ads API if your business model resembles the 
 -   You are a tools vendor developing advertising management solutions for advertisers or agencies. For more information, see [Management Model for Tool Providers](../guides/management-model-tool-providers.md).  
 -   You are an advertising agency and manage ad campaigns for many clients. For more information, see [Management Model for Agencies](../guides/management-model-agencies.md).  
 -   You are a reseller and want to build Bing Ads applications to manage the campaigns of your advertising clients. For more information, see [Management Model for Resellers](../guides/management-model-resellers.md).  
-For [Customer Accounts](../guides/customer-accounts.md), you should use the [Customer Management](../customer-management-service/customer-management-service-reference.md) service.  
+For [Customer Accounts](../guides/customer-accounts.md), you should use the [Customer Management](~/customer-management-service/customer-management-service-reference.md) service.  
 
 ## <a name="where"></a>Where your ads will appear
 When you advertise using Bing Ads, your search ads can appear on the search results page on websites throughout the world. These sites can include Bing, AOL, and Yahoo owned and operated sites as well as Bing, AOL, and Yahoo syndicated search partner sites. (Syndicated search partner sites are sites that use Bing and Yahoo search results.) For more information, see [About ad distribution](https://help.bingads.microsoft.com/#apex/3/en/50871/0). 
@@ -34,7 +34,7 @@ You can extend the ad layout to be more visually appealing and feature rich usin
 With ad extensions, you can decorate ads with additional information that helps customers find relevant information about your products and services. For example, you can include deep links into your website to quickly direct your customers to relevant promotional or technical information that may help increase conversions. Bing Ads offers the following popular ad extension types. For more information please see [Ad Extensions](../guides/ad-extensions.md) and [Bing Ads Web UI Help - What are ad extensions?](http://help.bingads.microsoft.com/#apex/3/en/51001/1).
 
 ### <a name="bingshoppingcampaigns"></a>Bing Shopping Campaigns
-A Bing Shopping campaign enables you to advertise the products from your Bing Merchant Center store product catalog. Product ads from a Bing Shopping campaign include details about the product, an image, and optional promotional text. After you [create a product catalog](http://help.bingads.microsoft.com/#apex/3/en/51105/1), you can then submit the catalog feed using the [Bing Ads Content API](../../shopping-content/index.md) or [FTP](http://help.bingads.microsoft.com/#apex/3/en/51086/1). For more information, please see [Product Ads](../guides/product-ads.md).
+A Bing Shopping campaign enables you to advertise the products from your Bing Merchant Center store product catalog. Product ads from a Bing Shopping campaign include details about the product, an image, and optional promotional text. After you [create a product catalog](http://help.bingads.microsoft.com/#apex/3/en/51105/1), you can then submit the catalog feed using the [Bing Ads Content API](~/shopping-content/index.md) or [FTP](http://help.bingads.microsoft.com/#apex/3/en/51086/1). For more information, please see [Product Ads](../guides/product-ads.md).
 
 ## <a name="audience"></a>Show ads to your target audience
 Your ads can appear specifically for customers on the go, who use their smartphones and tablets to search and browse the Internet. Or you can create ads that appear on both desktops and smartphones but prioritize where you want the ads to appear more often.
@@ -46,7 +46,7 @@ You can show your ads to customers in specific locations, like cities or countri
 You can also setup your ads to display to users of a certain age group or gender, or to display at a certain day and time of the week. For more information about showing ads to your target audience, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
 
 ## <a name="optimize"></a>Optimize your campaigns
-You will want to optimize your campaign budget and keyword bids for a competitive advantage. The Bing Ads API [Ad Insight](../ad-insight-service/ad-insight-service-reference.md) service uses historical performance, web page data, and demographic data to provide data and bid suggestions that you may find helpful as you optimize your campaigns over time. For more information, see [Budget and Bid Opportunities](../guides/budget-bid-opportunities.md).
+You will want to optimize your campaign budget and keyword bids for a competitive advantage. The Bing Ads API [Ad Insight](~/ad-insight-service/ad-insight-service-reference.md) service uses historical performance, web page data, and demographic data to provide data and bid suggestions that you may find helpful as you optimize your campaigns over time. For more information, see [Budget and Bid Opportunities](../guides/budget-bid-opportunities.md).
 
 Once your campaigns are up and running, you?ll want to monitor their performance using the Bing Ads Reporting service. Bing Ads can generate reports to track ad delivery, budget, and targeting. Each report type aggregates data at a different level and provides different [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md). For example, You would use the account and campaign performance reports to monitor click and spend data to ensure that you are optimizing your budget, and you would use the ad and keyword performance reports to identify ads and keywords that are performing well in terms of click-through rate and conversions. For more information, see [Reports](../guides/reports.md).
 
@@ -64,7 +64,7 @@ If you are not finding the information you need to solve your problem in the dev
 |Topic|Description|
 |---------|---------------|
 |[Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md)|Refer to this guide for a high level view of system limits for Bing Ads entities.|
-|[FAQ](../guides/faq.md)|This article contains answers to some frequently asked questions about the Bing Ads API.|
+|[FAQ](~/guides/faq.md)|This article contains answers to some frequently asked questions about the Bing Ads API.|
 |[Get Started With the Bing Ads API](../guides/get-started.md)|To use the API, you?ll first need a Bing Ads developer token and valid user credentials. Learn how to get developer credentials and how to write your first application for example, in C#, Java, PHP, or Python.|
 |[Sandbox](../guides/sandbox.md)|You may test your application in the Bing Ads sandbox environment before deploying it to the production environment.|
 |[Client Libraries](../guides/client-libraries.md)|You can develop Bing Ads applications with any programming language that supports web services. The Bing Ads Software Development Kits (SDK) enhance the experience of developing Bing Ads applications with .NET, Java, and Python languages.|

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that you can use to determine the component of an ad extension that failed editorial review, and the reason for the failure.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AdExtensionEditorialReason Data Object - Campaign Management
 Defines an object that you can use to determine the component of an ad extension that failed editorial review, and the reason for the failure.
 
@@ -30,7 +27,7 @@ Defines an object that you can use to determine the component of an ad extension
 |-----------|---------------|-------------|
 |<a name="location"></a>Location|The component of the ad extension that failed editorial review.|**string**|
 |<a name="publishercountries"></a>PublisherCountries|The list of publisher countries whose editorial guidelines do not allow the specified term.|**string** array|
-|<a name="reasoncode"></a>ReasonCode|A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md).|**int**|
+|<a name="reasoncode"></a>ReasonCode|A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/guides/editorial-failure-reason-codes.md).|**int**|
 |<a name="term"></a>Term|The term that failed editorial review.<br /><br />This element will not be set if a combination of terms caused the failure or if the failure was based on a policy violation.|**string**|
 
 ## Requirements

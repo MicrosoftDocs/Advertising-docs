@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the DSA auto target performance report data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DSAAutoTargetPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the DSA auto target performance report data.
 
@@ -35,11 +32,11 @@ Defines the criteria to use to filter the DSA auto target performance report dat
 |<a name="bidstrategytype"></a>BidStrategyType|The report will include data for only the specified bid strategy types.|[BidStrategyTypeReportFilter](bidstrategytypereportfilter.md)|
 |<a name="campaignstatus"></a>CampaignStatus|The report will include data for campaigns that have the specified status value. You can specify one or more status values.|[CampaignStatusReportFilter](campaignstatusreportfilter.md)|
 |<a name="dynamicadtargetstatus"></a>DynamicAdTargetStatus|The report will include data for only the dynamic ad targets that have the specified status.|[DynamicAdTargetStatusReportFilter](dynamicadtargetstatusreportfilter.md)|
-|<a name="languagecode"></a>LanguageCode|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](../guides/ad-languages.md).|**string** array|
+|<a name="languagecode"></a>LanguageCode|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](~/guides/ad-languages.md).|**string** array|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [DSAAutoTargetPerformanceReportRequest](dsaautotargetperformancereportrequest.md)  

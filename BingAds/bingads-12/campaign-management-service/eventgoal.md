@@ -6,16 +6,13 @@ author: eric-urban
 ms.author: eur
 description: Defines a custom event conversion goal.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # EventGoal Data Object - Campaign Management
 Defines a custom event conversion goal. Use this type of goal to count every time someone completes a specific action such as, subscribing to newsletter or downloading white paper, as a conversion. 
 
 By default, the UET tag logs user visits to pages on your website that allows Bing Ads to support goal types such as [UrlGoal](../campaign-management-service/urlgoal.md), [DurationGoal](../campaign-management-service/durationgoal.md) and [PagesViewedPerVisitGoal](../campaign-management-service/pagesviewedpervisitgoal.md). However, you may want to track other types of events such as downloading white papers or subscribing to newsletters as conversions. Bing Ads enables this scenario with the *EventGoal*. In addition to creating an *EventGoal*, you must customize your UET tag tracking code to report the values for one or more of the custom event parameters. To learn more, see [How to report custom events with UET](https://help.bingads.microsoft.com/#apex/3/en/56684/2). 
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](~/guides/universal-event-tracking.md) technical guide.
 
 > [!IMPORTANT]
 > Every time you create a new [DurationGoal](../campaign-management-service/durationgoal.md), [EventGoal](../campaign-management-service/eventgoal.md), [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md), [PagesViewedPerVisitGoal](../campaign-management-service/pagesviewedpervisitgoal.md) or [UrlGoal](../campaign-management-service/urlgoal.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](../campaign-management-service/accountproperty.md) is set to *True* automatically. If the Scope of the goal is set to *Customer* level, then the [AccountProperty](../campaign-management-service/accountproperty.md) for all accounts under the Customer will be set. 

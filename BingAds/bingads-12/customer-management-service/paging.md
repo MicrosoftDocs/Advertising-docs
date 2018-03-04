@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a paging object for the list of entities returned using one of the search operations, for example SearchAccounts, SearchClientLinks, or SearchCustomers.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Paging Data Object - Customer Management
 Defines a paging object for the list of entities returned using one of the search operations, for example [SearchAccounts](../customer-management-service/searchaccounts.md), [SearchClientLinks](../customer-management-service/searchclientlinks.md), or [SearchCustomers](../customer-management-service/searchcustomers.md).
 
@@ -30,8 +27,8 @@ Defines a paging object for the list of entities returned using one of the searc
 |<a name="size"></a>Size|The page size and the number of results to return in the specified page. The maximum size is 1,000.|**int**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
 
 ## Used By
 [SearchAccounts](searchaccounts.md)  

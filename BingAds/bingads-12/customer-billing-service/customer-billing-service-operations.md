@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Service operations reference for the CustomerBilling service.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Customer Billing Service Operations
 The Customer Billing service defines the following service operations.
 

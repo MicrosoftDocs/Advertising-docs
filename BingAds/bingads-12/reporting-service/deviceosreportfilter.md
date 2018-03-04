@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the device operating system values that you can use to filter the report data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DeviceOSReportFilter Value Set - Reporting
 Defines the device operating system values that you can use to filter the report data.
 
@@ -40,8 +37,8 @@ Defines the device operating system values that you can use to filter the report
 |<a name="windows"></a>Windows|The report will include ads displayed on Windows device operating systems.|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [AccountPerformanceReportFilter](accountperformancereportfilter.md)  

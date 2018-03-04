@@ -6,14 +6,11 @@ author: "eric-urban"
 ms.author: "eur"
 description: Describes the Keyword First Page Bid fields in a Bulk file.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Keyword First Page Bid Record - Bulk
 Defines a keyword's estimated first page bid that can be downloaded in a bulk file.
 
 ## <a name="keywordfirstpagebid"></a>Keyword First Page Bid Record
-For a *Keyword First Page Bid* record, the following bulk fields are available for download. The keyword first page bid is equivalent to calling the [GetEstimatedBidByKeywordIds](../ad-insight-service/getestimatedbidbykeywordids.md) operation with the Ad Insight service, and specifying *SideBar* as the [TargetAdPosition](../ad-insight-service/targetadposition.md) value.
+For a *Keyword First Page Bid* record, the following bulk fields are available for download. The keyword first page bid is equivalent to calling the [GetEstimatedBidByKeywordIds](~/ad-insight-service/getestimatedbidbykeywordids.md) operation with the Ad Insight service, and specifying *SideBar* as the [TargetAdPosition](~/ad-insight-service/targetadposition.md) value.
 
 |Column Header|Description|
 |-----------------|---------------|

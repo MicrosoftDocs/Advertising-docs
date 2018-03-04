@@ -4,23 +4,20 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Creates a new customer and account that rolls up to your reseller payment method.
+description: Signs up a customer with Bing Ads.
 dev_langs: 
   - csharp
   - java
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SignupCustomer Service Operation - Customer Management
 Creates a new customer and account that rolls up to your reseller payment method.
 
 > [!NOTE]
-> You must be a reseller with aggregator user permissions to call this operation. For more details see [Management Model for Resellers](../guides/management-model-resellers.md).
+> You must be a reseller with aggregator user permissions to call this operation. For more details see [Management Model for Resellers](~/guides/management-model-resellers.md).
 
-Pass both [Customer](../customer-management-service/customer.md) and [Account](../customer-management-service/account.md) objects in the request. The customer object includes the customer's name, the address where the customer is located, the market in which the customer operates, and the industry in which the customer participates. Although it is possible to add multiple customers with the same details, you should use unique customer names so that users can easily distinguish between customers in a user interface.
+Pass both [Customer](~/customer-management-service/customer.md) and [Account](~/customer-management-service/account.md) objects in the request. The customer object includes the customer's name, the address where the customer is located, the market in which the customer operates, and the industry in which the customer participates. Although it is possible to add multiple customers with the same details, you should use unique customer names so that users can easily distinguish between customers in a user interface.
 
 The account object must specify the name of the account; the type of currency to use to settle the account; and the payment method identifier, which must be set to null. The operation generates an invoice account and sets the payment method identifier to the identifier associated with the reseller's invoice. You are invoiced for all charges incurred by the customers that you manage.
 
@@ -33,7 +30,8 @@ The *SignupCustomerRequest* object defines the [body](#request-body) and [header
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="account"></a>Account|An [Account](../customer-management-service/account.md) that specifies the details of the customer's primary account.<br /><br /> Do not instantiate the *Account* data object. Instead, instantiate the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) that derives from the *Account* data object.|[AdvertiserAccount](advertiseraccount.md)|
+|<a name="account"></a>Account|An [Account](../customer-management-service/account.md) that specifies the details of the customer's primary account.<br /><br /> Do not instantiate the *Account* data object. Instead, instantiate the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) that derives from the *Account* data object.|[Account](account.md)|
+|<a name="applicationscope"></a>ApplicationScope|Determines  the type of customer application. The default is Advertiser.<br /><br />The scope of this customer and the scope of the parent customer must be the same; for example, they must both be set to Advertiser.|[ApplicationType](applicationtype.md)|
 |<a name="customer"></a>Customer|A [Customer](../customer-management-service/customer.md) that specifies the details of the customer that you are adding.|[Customer](customer.md)|
 |<a name="parentcustomerid"></a>ParentCustomerId|The customer identifier of the reseller that will manage this customer.|**long**|
 
@@ -61,7 +59,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">SignupCustomer</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -70,94 +68,96 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <SignupCustomerRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <Customer xmlns:e350="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e350:CustomerAddress i:nil="false">
-          <e350:City i:nil="false">ValueHere</e350:City>
-          <e350:CountryCode i:nil="false">ValueHere</e350:CountryCode>
-          <e350:Id i:nil="false">ValueHere</e350:Id>
-          <e350:Line1 i:nil="false">ValueHere</e350:Line1>
-          <e350:Line2 i:nil="false">ValueHere</e350:Line2>
-          <e350:Line3 i:nil="false">ValueHere</e350:Line3>
-          <e350:Line4 i:nil="false">ValueHere</e350:Line4>
-          <e350:PostalCode i:nil="false">ValueHere</e350:PostalCode>
-          <e350:StateOrProvince i:nil="false">ValueHere</e350:StateOrProvince>
-          <e350:TimeStamp i:nil="false">ValueHere</e350:TimeStamp>
-        </e350:CustomerAddress>
-        <e350:CustomerFinancialStatus i:nil="false">ValueHere</e350:CustomerFinancialStatus>
-        <e350:Id i:nil="false">ValueHere</e350:Id>
-        <e350:Industry i:nil="false">ValueHere</e350:Industry>
-        <e350:LastModifiedByUserId i:nil="false">ValueHere</e350:LastModifiedByUserId>
-        <e350:LastModifiedTime i:nil="false">ValueHere</e350:LastModifiedTime>
-        <e350:MarketCountry i:nil="false">ValueHere</e350:MarketCountry>
-        <ForwardCompatibilityMap xmlns:e351="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e351:KeyValuePairOfstringstring>
-            <e351:key i:nil="false">ValueHere</e351:key>
-            <e351:value i:nil="false">ValueHere</e351:value>
-          </e351:KeyValuePairOfstringstring>
+    <SignupCustomerRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+      <Customer xmlns:e342="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
+        <e342:CustomerAddress i:nil="false">
+          <e342:City i:nil="false">ValueHere</e342:City>
+          <e342:CountryCode i:nil="false">ValueHere</e342:CountryCode>
+          <e342:Id i:nil="false">ValueHere</e342:Id>
+          <e342:Line1 i:nil="false">ValueHere</e342:Line1>
+          <e342:Line2 i:nil="false">ValueHere</e342:Line2>
+          <e342:Line3 i:nil="false">ValueHere</e342:Line3>
+          <e342:Line4 i:nil="false">ValueHere</e342:Line4>
+          <e342:PostalCode i:nil="false">ValueHere</e342:PostalCode>
+          <e342:StateOrProvince i:nil="false">ValueHere</e342:StateOrProvince>
+          <e342:TimeStamp i:nil="false">ValueHere</e342:TimeStamp>
+        </e342:CustomerAddress>
+        <e342:CustomerFinancialStatus i:nil="false">ValueHere</e342:CustomerFinancialStatus>
+        <e342:Id i:nil="false">ValueHere</e342:Id>
+        <e342:Industry i:nil="false">ValueHere</e342:Industry>
+        <e342:LastModifiedByUserId i:nil="false">ValueHere</e342:LastModifiedByUserId>
+        <e342:LastModifiedTime i:nil="false">ValueHere</e342:LastModifiedTime>
+        <e342:MarketCountry i:nil="false">ValueHere</e342:MarketCountry>
+        <ForwardCompatibilityMap xmlns:e343="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e343:KeyValuePairOfstringstring>
+            <e343:key i:nil="false">ValueHere</e343:key>
+            <e343:value i:nil="false">ValueHere</e343:value>
+          </e343:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e350:MarketLanguage i:nil="false">ValueHere</e350:MarketLanguage>
-        <e350:Name i:nil="false">ValueHere</e350:Name>
-        <e350:ServiceLevel i:nil="false">ValueHere</e350:ServiceLevel>
-        <e350:CustomerLifeCycleStatus i:nil="false">ValueHere</e350:CustomerLifeCycleStatus>
-        <e350:TimeStamp i:nil="false">ValueHere</e350:TimeStamp>
-        <e350:Number i:nil="false">ValueHere</e350:Number>
+        <e342:MarketLanguage i:nil="false">ValueHere</e342:MarketLanguage>
+        <e342:Name i:nil="false">ValueHere</e342:Name>
+        <e342:ServiceLevel i:nil="false">ValueHere</e342:ServiceLevel>
+        <e342:CustomerLifeCycleStatus i:nil="false">ValueHere</e342:CustomerLifeCycleStatus>
+        <e342:TimeStamp i:nil="false">ValueHere</e342:TimeStamp>
+        <e342:Number i:nil="false">ValueHere</e342:Number>
       </Customer>
-      <Account xmlns:e352="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e352:BillToCustomerId i:nil="false">ValueHere</e352:BillToCustomerId>
-        <e352:CountryCode i:nil="false">ValueHere</e352:CountryCode>
-        <e352:CurrencyCode i:nil="false">ValueHere</e352:CurrencyCode>
-        <e352:AccountFinancialStatus i:nil="false">ValueHere</e352:AccountFinancialStatus>
-        <e352:Id i:nil="false">ValueHere</e352:Id>
-        <e352:Language i:nil="false">ValueHere</e352:Language>
-        <e352:LastModifiedByUserId i:nil="false">ValueHere</e352:LastModifiedByUserId>
-        <e352:LastModifiedTime i:nil="false">ValueHere</e352:LastModifiedTime>
-        <e352:Name i:nil="false">ValueHere</e352:Name>
-        <e352:Number i:nil="false">ValueHere</e352:Number>
-        <e352:ParentCustomerId>ValueHere</e352:ParentCustomerId>
-        <e352:PaymentMethodId i:nil="false">ValueHere</e352:PaymentMethodId>
-        <e352:PaymentMethodType i:nil="false">ValueHere</e352:PaymentMethodType>
-        <e352:PrimaryUserId i:nil="false">ValueHere</e352:PrimaryUserId>
-        <e352:AccountLifeCycleStatus i:nil="false">ValueHere</e352:AccountLifeCycleStatus>
-        <e352:TimeStamp i:nil="false">ValueHere</e352:TimeStamp>
-        <e352:TimeZone i:nil="false">ValueHere</e352:TimeZone>
-        <e352:PauseReason i:nil="false">ValueHere</e352:PauseReason>
-        <ForwardCompatibilityMap xmlns:e353="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e353:KeyValuePairOfstringstring>
-            <e353:key i:nil="false">ValueHere</e353:key>
-            <e353:value i:nil="false">ValueHere</e353:value>
-          </e353:KeyValuePairOfstringstring>
+      <Account xmlns:e344="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
+        <e344:AccountType>ValueHere</e344:AccountType>
+        <e344:BillToCustomerId i:nil="false">ValueHere</e344:BillToCustomerId>
+        <e344:CountryCode i:nil="false">ValueHere</e344:CountryCode>
+        <e344:CurrencyType i:nil="false">ValueHere</e344:CurrencyType>
+        <e344:AccountFinancialStatus i:nil="false">ValueHere</e344:AccountFinancialStatus>
+        <e344:Id i:nil="false">ValueHere</e344:Id>
+        <e344:Language i:nil="false">ValueHere</e344:Language>
+        <ForwardCompatibilityMap xmlns:e345="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e345:KeyValuePairOfstringstring>
+            <e345:key i:nil="false">ValueHere</e345:key>
+            <e345:value i:nil="false">ValueHere</e345:value>
+          </e345:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e352:LinkedAgencies i:nil="false">
-          <e352:CustomerInfo>
-            <e352:Id i:nil="false">ValueHere</e352:Id>
-            <e352:Name i:nil="false">ValueHere</e352:Name>
-          </e352:CustomerInfo>
-        </e352:LinkedAgencies>
-        <e352:SalesHouseCustomerId i:nil="false">ValueHere</e352:SalesHouseCustomerId>
-        <TaxInformation xmlns:e354="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e354:KeyValuePairOfstringstring>
-            <e354:key i:nil="false">ValueHere</e354:key>
-            <e354:value i:nil="false">ValueHere</e354:value>
-          </e354:KeyValuePairOfstringstring>
+        <e344:LastModifiedByUserId i:nil="false">ValueHere</e344:LastModifiedByUserId>
+        <e344:LastModifiedTime i:nil="false">ValueHere</e344:LastModifiedTime>
+        <e344:Name i:nil="false">ValueHere</e344:Name>
+        <e344:Number i:nil="false">ValueHere</e344:Number>
+        <e344:ParentCustomerId>ValueHere</e344:ParentCustomerId>
+        <e344:PaymentMethodId i:nil="false">ValueHere</e344:PaymentMethodId>
+        <e344:PaymentMethodType i:nil="false">ValueHere</e344:PaymentMethodType>
+        <e344:PrimaryUserId i:nil="false">ValueHere</e344:PrimaryUserId>
+        <e344:AccountLifeCycleStatus i:nil="false">ValueHere</e344:AccountLifeCycleStatus>
+        <e344:TimeStamp i:nil="false">ValueHere</e344:TimeStamp>
+        <e344:TimeZone i:nil="false">ValueHere</e344:TimeZone>
+        <e344:PauseReason i:nil="false">ValueHere</e344:PauseReason>
+        <!--These fields are applicable if the derived type attribute is set to AdvertiserAccount-->
+        <e344:LinkedAgencies i:nil="false">
+          <e344:CustomerInfo>
+            <e344:Id i:nil="false">ValueHere</e344:Id>
+            <e344:Name i:nil="false">ValueHere</e344:Name>
+          </e344:CustomerInfo>
+        </e344:LinkedAgencies>
+        <e344:SalesHouseCustomerId i:nil="false">ValueHere</e344:SalesHouseCustomerId>
+        <TaxInformation xmlns:e346="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e346:KeyValuePairOfstringstring>
+            <e346:key i:nil="false">ValueHere</e346:key>
+            <e346:value i:nil="false">ValueHere</e346:value>
+          </e346:KeyValuePairOfstringstring>
         </TaxInformation>
-        <e352:BackUpPaymentInstrumentId i:nil="false">ValueHere</e352:BackUpPaymentInstrumentId>
-        <e352:BillingThresholdAmount i:nil="false">ValueHere</e352:BillingThresholdAmount>
-        <e352:BusinessAddress i:nil="false">
-          <e352:City i:nil="false">ValueHere</e352:City>
-          <e352:CountryCode i:nil="false">ValueHere</e352:CountryCode>
-          <e352:Id i:nil="false">ValueHere</e352:Id>
-          <e352:Line1 i:nil="false">ValueHere</e352:Line1>
-          <e352:Line2 i:nil="false">ValueHere</e352:Line2>
-          <e352:Line3 i:nil="false">ValueHere</e352:Line3>
-          <e352:Line4 i:nil="false">ValueHere</e352:Line4>
-          <e352:PostalCode i:nil="false">ValueHere</e352:PostalCode>
-          <e352:StateOrProvince i:nil="false">ValueHere</e352:StateOrProvince>
-          <e352:TimeStamp i:nil="false">ValueHere</e352:TimeStamp>
-        </e352:BusinessAddress>
-        <e352:AutoTagType i:nil="false">ValueHere</e352:AutoTagType>
+        <e344:BackUpPaymentInstrumentId i:nil="false">ValueHere</e344:BackUpPaymentInstrumentId>
+        <e344:BillingThresholdAmount i:nil="false">ValueHere</e344:BillingThresholdAmount>
+        <e344:BusinessAddress i:nil="false">
+          <e344:City i:nil="false">ValueHere</e344:City>
+          <e344:CountryCode i:nil="false">ValueHere</e344:CountryCode>
+          <e344:Id i:nil="false">ValueHere</e344:Id>
+          <e344:Line1 i:nil="false">ValueHere</e344:Line1>
+          <e344:Line2 i:nil="false">ValueHere</e344:Line2>
+          <e344:Line3 i:nil="false">ValueHere</e344:Line3>
+          <e344:Line4 i:nil="false">ValueHere</e344:Line4>
+          <e344:PostalCode i:nil="false">ValueHere</e344:PostalCode>
+          <e344:StateOrProvince i:nil="false">ValueHere</e344:StateOrProvince>
+          <e344:TimeStamp i:nil="false">ValueHere</e344:TimeStamp>
+        </e344:BusinessAddress>
       </Account>
       <ParentCustomerId i:nil="false">ValueHere</ParentCustomerId>
+      <ApplicationScope>ValueHere</ApplicationScope>
     </SignupCustomerRequest>
   </s:Body>
 </s:Envelope>
@@ -168,11 +168,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <SignupCustomerResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+    <SignupCustomerResponse xmlns="https://bingads.microsoft.com/Customer/v11">
       <CustomerId>ValueHere</CustomerId>
       <CustomerNumber d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</CustomerNumber>
       <AccountId d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</AccountId>
@@ -188,14 +188,16 @@ The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md
 ```csharp
 public async Task<SignupCustomerResponse> SignupCustomerAsync(
 	Customer customer,
-	AdvertiserAccount account,
-	long? parentCustomerId)
+	Account account,
+	long? parentCustomerId,
+	ApplicationType applicationScope)
 {
 	var request = new SignupCustomerRequest
 	{
 		Customer = customer,
 		Account = account,
-		ParentCustomerId = parentCustomerId
+		ParentCustomerId = parentCustomerId,
+		ApplicationScope = applicationScope
 	};
 
 	return (await CustomerManagementService.CallAsync((s, r) => s.SignupCustomerAsync(r), request));
@@ -204,14 +206,16 @@ public async Task<SignupCustomerResponse> SignupCustomerAsync(
 ```java
 static SignupCustomerResponse signupCustomer(
 	Customer customer,
-	AdvertiserAccount account,
-	java.lang.Long parentCustomerId) throws RemoteException, Exception
+	Account account,
+	java.lang.Long parentCustomerId,
+	ApplicationType applicationScope) throws RemoteException, Exception
 {
 	SignupCustomerRequest request = new SignupCustomerRequest();
 
 	request.setCustomer(customer);
 	request.setAccount(account);
 	request.setParentCustomerId(parentCustomerId);
+	request.setApplicationScope(applicationScope);
 
 	return CustomerManagementService.getService().signupCustomer(request);
 }
@@ -220,7 +224,8 @@ static SignupCustomerResponse signupCustomer(
 static function SignupCustomer(
 	$customer,
 	$account,
-	$parentCustomerId)
+	$parentCustomerId,
+	$applicationScope)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CustomerManagementProxy'];
@@ -230,6 +235,7 @@ static function SignupCustomer(
 	$request->Customer = $customer;
 	$request->Account = $account;
 	$request->ParentCustomerId = $parentCustomerId;
+	$request->ApplicationScope = $applicationScope;
 
 	return $GLOBALS['CustomerManagementProxy']->GetService()->SignupCustomer($request);
 }
@@ -238,10 +244,11 @@ static function SignupCustomer(
 response=customermanagement_service.SignupCustomer(
 	Customer=Customer,
 	Account=Account,
-	ParentCustomerId=ParentCustomerId)
+	ParentCustomerId=ParentCustomerId,
+	ApplicationScope=ApplicationScope)
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 

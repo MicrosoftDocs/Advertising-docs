@@ -6,17 +6,14 @@ author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the CallDetailReportRequest.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # CallDetailReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [CallDetailReportRequest](../reporting-service/calldetailreportrequest.md).
 
-The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](../guides/reports.md#columnsdata).
+The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](~/guides/reports.md#columnsdata).
 
 For a list of columns that you must include, please see the [Required Columns](#requiredcolumns) section below.
 
-To see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report, see [Report Data Retention Time Periods](../guides/report-data-retention-time-periods.md).
+To see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report, see [Report Data Retention Time Periods](~/guides/report-data-retention-time-periods.md).
 
 ## Syntax
 ```xml
@@ -67,7 +64,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns
-The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).
 
 > [!NOTE]
 > The TimePeriod column is required for all aggregation types except Summary.
@@ -80,8 +77,8 @@ The report must include the following columns, and one or more of the performanc
 |StartTime|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [CallDetailReportRequest](calldetailreportrequest.md)  

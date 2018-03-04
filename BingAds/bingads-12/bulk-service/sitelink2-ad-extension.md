@@ -8,9 +8,6 @@ description: Describes the Sitelink2 Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Sitelink2 Ad Extension Record - Bulk
 Defines a sitelink2 ad extension that can be downloaded and uploaded in a bulk file.
 
@@ -49,7 +46,7 @@ For a *Sitelink2 Ad Extension* record, the following attribute fields are availa
 - [Use Searcher Time Zone](#usesearchertimezone)
 - [Version](#version)
 
-You can download all fields of the *Sitelink2 Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *Sitelink2AdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Sitelink2 Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *Sitelink2AdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Sitelink2 Ad Extension to the account's shared library. 
 
@@ -59,7 +56,7 @@ Format Version,,,,,,,,,,,5,,,,,,,,,,,
 Sitelink2 Ad Extension,Active,-17,0,,,ClientIdGoesHere,,,12/31/2018,,,(Monday[09:00-21:00]),FALSE,,Women's Shoe Sale 1,,Simple & Transparent.,No Upfront Cost.,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkSitelink2AdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkSitelink2AdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -225,7 +222,7 @@ The component or property of the ad extension that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -234,7 +231,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](~/campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -286,7 +283,7 @@ Also note that  if the *Tracking Template* or *Custom Parameter* fields are set,
 ### <a name="id"></a>Id
 The system generated identifier of the ad extension.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Sitelink2 Ad Extension](../bulk-service/ad-group-sitelink2-ad-extension.md) and [Campaign Sitelink2 Ad Extension](../bulk-service/campaign-sitelink2-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Sitelink2 Ad Extension](../bulk-service/ad-group-sitelink2-ad-extension.md) and [Campaign Sitelink2 Ad Extension](../bulk-service/campaign-sitelink2-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -379,7 +376,7 @@ The URL can contain dynamic parameters such as {MatchType}. For a list of suppor
 The URL can contain a maximum of 1,024 characters. If the URL does not specify a protocol, the system uses the HTTP protocol when a user clicks the ad. If the URL specifies the HTTP protocol when you add an ad, the service will remove the http:// protocol string (the HTTP protocol string does not count against the 1,024 character limit); however, the service will not remove an HTTPS protocol string (https://) from the URL.
 
 > [!IMPORTANT]
-> If you are currently using Destination URLs, you must eventually replace them with Final URLs. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
+> If you are currently using Destination URLs, you must eventually replace them with Final URLs. For more information, see [URL Tracking with Upgraded URLs](~/guides/url-tracking-upgraded-urls.md).
 
 **Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
@@ -420,7 +417,7 @@ The tracking template to use for your sitelink URLs.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
+- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](~/guides/entity-hierarchy-limits.md).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 

@@ -14,9 +14,9 @@ dev_langs:
 # Request and Download a Report
 The following procedure outlines the steps to submit a report request and to download the report.
 
-If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../guides/client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](../reporting-service/submitgeneratereport.md#request) and [PollGenerateReportRequest](../reporting-service/pollgeneratereport.md#request) to download a report, you can use one method with the [Reporting Service Manager](../guides/sdk-reporting-service-manager.md). 
+If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../guides/client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [SubmitGenerateReportRequest](~/reporting-service/submitgeneratereport.md#request) and [PollGenerateReportRequest](~/reporting-service/pollgeneratereport.md#request) to download a report, you can use one method with the [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md). 
 
-For code examples that demonstrate how to download reports, see [Report Requests Code Example](../guides/code-example-report-requests.md).
+For code examples that demonstrate how to download reports, see [Report Requests Code Example](~/guides/code-example-report-requests.md).
 
 ## Request a Report
 
@@ -25,18 +25,18 @@ For code examples that demonstrate how to download reports, see [Report Requests
 2.  Create an instance of the report request object. Some of the elements of the report request are required and some are optional. Set the elements as appropriate for your application. The elements of the report request determine, among others, the scope of data to include in the report, the columns of data to include in the report, and whether to generate the report only if all the data is available.
 
     > [!NOTE]
-    > You must create an instance of one of the objects that derives from the [ReportRequest](../reporting-service/reportrequest.md) data object; if you try to pass the *ReportRequest* object to the *SubmitGenerateReport* operation, the call will fail.
+    > You must create an instance of one of the objects that derives from the [ReportRequest](~/reporting-service/reportrequest.md) data object; if you try to pass the *ReportRequest* object to the *SubmitGenerateReport* operation, the call will fail.
 
-3.  Create an instance of the [SubmitGenerateReportRequest](../reporting-service/submitgeneratereport.md#request) object, and set the *ReportRequest* element to the report request that you selected in the previous step.
+3.  Create an instance of the [SubmitGenerateReportRequest](~/reporting-service/submitgeneratereport.md#request) object, and set the *ReportRequest* element to the report request that you selected in the previous step.
 
-4.  Call the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation to submit the request. The operation is an asynchronous operation that returns before the report is created. The operation returns a *ReportRequestId* that you use in the following steps to determine when the report completes. The report request identifier is valid for two days. If you do not download the report within two days, you must request the report again.
+4.  Call the [SubmitGenerateReport](~/reporting-service/submitgeneratereport.md) operation to submit the request. The operation is an asynchronous operation that returns before the report is created. The operation returns a *ReportRequestId* that you use in the following steps to determine when the report completes. The report request identifier is valid for two days. If you do not download the report within two days, you must request the report again.
 
-5.  Create an instance of the [PollGenerateReportRequest](../reporting-service/pollgeneratereport.md#request) object and set the report request identifier to the identifier returned in the previous step.
+5.  Create an instance of the [PollGenerateReportRequest](~/reporting-service/pollgeneratereport.md#request) object and set the report request identifier to the identifier returned in the previous step.
 
     > [!NOTE]
-    > You must use the same user credentials for the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) and [PollGenerateReport](../reporting-service/pollgeneratereport.md) operations.
+    > You must use the same user credentials for the [SubmitGenerateReport](~/reporting-service/submitgeneratereport.md) and [PollGenerateReport](~/reporting-service/pollgeneratereport.md) operations.
 
-6.  Call the [PollGenerateReport](../reporting-service/pollgeneratereport.md) operation in a loop while the status is *Pending*. The operation sets the status to *Success* when the request completes successfully; a status other than *Pending* or *Success* indicates that the report failed.
+6.  Call the [PollGenerateReport](~/reporting-service/pollgeneratereport.md) operation in a loop while the status is *Pending*. The operation sets the status to *Success* when the request completes successfully; a status other than *Pending* or *Success* indicates that the report failed.
 
     The length of time that it takes a report request to complete depends on a number of variables, such as the type of report that you requested; the aggregation, scope, and time period values that you specified; the number of expected rows; and the number of requests already in the queue. Because of these variables, it is difficult to determine an appropriate polling interval for all cases. Because most reports should complete within minutes, polling at two to 15-minute intervals should be appropriate for most cases. If the overall polling period exceeds 60 minutes, consider saving the report identifier, exiting the loop, and trying again later.
 
@@ -47,7 +47,7 @@ For code examples that demonstrate how to download reports, see [Report Requests
 ## Create a Custom Date Range
 The following procedure shows how to specify a custom date range for a report request. This is optional for the report request workflow described above. If you specify a custom date range, you must not set the *ReportTime.PredefinedTime* element. Also note that the *Aggregation* element of the report request object determines how the data for the specified time period is aggregated. 
 
-1.  Create an instance of the [ReportTime](../reporting-service/reporttime.md) object. Assign the *ReportTime* object to the *Time* element of the [ReportRequest](../reporting-service/reportrequest.md) data object.
+1.  Create an instance of the [ReportTime](~/reporting-service/reporttime.md) object. Assign the *ReportTime* object to the *Time* element of the [ReportRequest](~/reporting-service/reportrequest.md) data object.
 
 2.  Create a *Date* object that specifies the start date of the custom date range. Assign the *Date* object to the *ReportTime.CustomDateRangeStart* element.
 
@@ -121,5 +121,5 @@ report_request.Time=report_time
 ```
 
 ## See Also
-[Reporting Service Reference](../reporting-service/reporting-service-reference.md)  
+[Reporting Service Reference](~/reporting-service/reporting-service-reference.md)  
 

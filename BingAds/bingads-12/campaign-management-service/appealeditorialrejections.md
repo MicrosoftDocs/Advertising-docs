@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AppealEditorialRejections Service Operation - Campaign Management
 Appeals the editorial rejections of one or more ads or keywords that failed editorial review.
 
@@ -112,7 +109,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<AppealEditorialRejectionsResponse> AppealEditorialRejectionsAsync(
 	IList<EntityIdToParentIdAssociation> entityIdToParentIdAssociations,

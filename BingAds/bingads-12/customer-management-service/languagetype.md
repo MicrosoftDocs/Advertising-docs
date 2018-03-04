@@ -6,14 +6,11 @@ author: eric-urban
 ms.author: eur
 description: Defines a selection of language values.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # LanguageType Value Set - Customer Management
 Defines a selection of language values.
 
 > [!NOTE]
-> The value set defines a broad selection of languages; however, not all languages are supported. For a list of supported languages, see [Ad Languages](../guides/ad-languages.md).
+> The value set defines a broad selection of languages; however, not all languages are supported. For a list of supported languages, see [Ad Languages](~/guides/ad-languages.md).
 
 ## Syntax
 ```xml
@@ -65,9 +62,9 @@ Defines a selection of language values.
 |<a name="traditionalchinese"></a>TraditionalChinese|The corresponding language type.|
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 
 ## Used By
-[AdvertiserAccount](advertiseraccount.md)  
+[Account](account.md)  
 [Customer](customer.md)  

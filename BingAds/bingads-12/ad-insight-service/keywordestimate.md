@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: A suggested keyword with minimum and maximum traffic estimates.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # KeywordEstimate Data Object - Ad Insight
 A suggested keyword with minimum and maximum traffic estimates. Traffic estimates include average CPC, average position, clicks, CTR, impressions, and total cost.
 

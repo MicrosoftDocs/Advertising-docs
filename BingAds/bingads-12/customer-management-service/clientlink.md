@@ -6,11 +6,8 @@ author: eric-urban
 ms.author: eur
 description: Defines a client link object.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ClientLink Data Object - Customer Management
-Defines a client link object. Acceptance of a client link invitation enables an agency to  manage the corresponding client accounts. To send an invitation to manage a client account, call the [AddClientLinks](../customer-management-service/addclientlinks.md) operation and specify one client link per account to manage. For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
+Defines a client link object. Acceptance of a client link invitation enables an agency to  manage the corresponding client accounts. To send an invitation to manage a client account, call the [AddClientLinks](../customer-management-service/addclientlinks.md) operation and specify one client link per account to manage. For more information about the client link lifecycle, see [Link to Client Accounts](~/guides/management-model-agencies.md#clientlink).
 
 > [!NOTE]
 > This object does not have a system defined identifier. To uniquely identify a client link, use either the *ClientAccountId* or *ClientAccountNumber* paired with either the *ManagingCustomerId* or *ManagingCustomerNumber*.
@@ -35,7 +32,7 @@ Defines a client link object. Acceptance of a client link invitation enables an 
     <xs:element minOccurs="0" name="LastModifiedDateTime" type="xs:dateTime" />
     <xs:element minOccurs="0" name="LastModifiedByUserId" type="xs:long" />
     <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q6:ArrayOfKeyValuePairOfstringstring" xmlns:q6="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q5:ArrayOfKeyValuePairOfstringstring" xmlns:q5="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -63,8 +60,8 @@ Defines a client link object. Acceptance of a client link invitation enables an 
 |<a name="timestamp"></a>Timestamp|Reserved for future use.|**base64Binary**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
 
 ## Used By
 [AddClientLinks](addclientlinks.md)  

@@ -8,9 +8,6 @@ description: Describes the Ad Group fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Ad Group Record - Bulk
 Defines an ad group that can be uploaded and downloaded in a bulk file.
 
@@ -41,7 +38,7 @@ For an *Ad Group* record, the following attribute fields are available in the [B
 - [Status](#status)
 - [Tracking Template](#trackingtemplate)
 
-You can download all fields of the *Ad Group* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroups* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroups* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new ad group if the correct campaign Id would be provided. 
 
@@ -52,7 +49,7 @@ Ad Group,Active,,-111,ParentCampaignNameGoesHere,Women's Red Shoe Sale,ClientIdG
 ```
 
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroup* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroup* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -197,13 +194,13 @@ Set this field to zero (0) if you do not want any bid adjustment for native ads.
 The bid strategy type for how you want to manage your bids. For ad groups you can use either of the *InheritFromParent* or *ManualCpc* bid strategy types. 
 
 > [!IMPORTANT] 
-> The *MaxClicks*, *MaxConversions*, and *TargetCpa* bid strategy types are available in several markets (For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).)  If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group’s or keyword’s bid strategy to *ManualCpc*.  
+> The *MaxClicks*, *MaxConversions*, and *TargetCpa* bid strategy types are available in several markets (For more details, see [Budget and Bid Strategies](~/guides/budget-bid-strategies.md).)  If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group’s or keyword’s bid strategy to *ManualCpc*.  
 > -  You can continue to set the ad group and keyword bids; however they will not be used by Bing Ads.
 > -  Bing Ads will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Bing Ads may change them at any time using this bid strategy type.
 > -  You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Bing Ads about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
 > -  Whether you chose the *DailyBudgetAccelerated* or *DailyBudgetStandard* budget type, Bing Ads will use the *DailyBudgetStandard* budget type. 
 > 
-> Also note that you must have conversion tracking (a UET tag and a conversion goal) set up for the *EnhancedCpc*, *MaxConversions*, and *TargetCpa* bid strategy types to work. See [Universal Event Tracking](../guides/universal-event-tracking.md) for more information.
+> Also note that you must have conversion tracking (a UET tag and a conversion goal) set up for the *EnhancedCpc*, *MaxConversions*, and *TargetCpa* bid strategy types to work. See [Universal Event Tracking](~/guides/universal-event-tracking.md) for more information.
 > 
 > To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must have at least 15 conversions in the last 30 days. If you try to add or update a campaign to use one of these strategy types, the requested operation will fail if there is not enough conversion history. If an active campaign uses one of these bid strategy types, and then ceases to meet the minimum conversion history requirement at any time, Bing Ads will stop auto bidding but will continue to use the *DailyBudgetStandard* budget type. For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
 
@@ -238,7 +235,7 @@ Used to associate records in the bulk upload file with records in the results fi
 The bid to use when the keywords that the service extracts from the content page and the ad group’s keywords.
     
 > [!NOTE]
-> This feature is no longer supported, and will be removed in a future Bing Ads API version. If you set the content bid it will be saved but not used. If you do not set the content bid, it will be set to the minimum bid depending on the account's currency. For more information, see [Currencies](../guides/currencies.md).
+> This feature is no longer supported, and will be removed in a future Bing Ads API version. If you set the content bid it will be saved but not used. If you do not set the content bid, it will be set to the minimum bid depending on the account's currency. For more information, see [Currencies](~/guides/currencies.md).
 
 **Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -252,7 +249,7 @@ Determines whether the ads within this ad group will be displayed on the content
 
 Set the value *On* for ad distribution on the content network, and otherwise set the value *Off*.
 
-The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](../campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
+The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](~/campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -292,7 +289,7 @@ The end date is inclusive. For example, if you set *End Date* to 12/31/2020, the
 ### <a name="id"></a>Id
 The system generated identifier of the ad group.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad group can then be referenced in the *Parent Id* field of dependent record types such as ads, keywords, or criterion. This is recommended if you are adding new ad groups and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad group can then be referenced in the *Parent Id* field of dependent record types such as ads, keywords, or criterion. This is recommended if you are adding new ad groups and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -306,10 +303,10 @@ The bid strategy type that is inherited from the parent campaign if the ad group
 ### <a name="language"></a>Language
 Your ad language setting determines the language you will use when you write your ads and should be the language of your customers.  
 
-For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage).
+For possible values, see the Language column of [Ad Languages](~/guides/ad-languages.md#adlanguage).
 
 > [!IMPORTANT]
-> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language by setting this field to *delete_value*. The *delete_value* keyword removes the previous setting. If you leave this field nil, then the ad group language will not be updated. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. 
+> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](~/customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language by setting this field to *delete_value*. The *delete_value* keyword removes the previous setting. If you leave this field nil, then the ad group language will not be updated. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. 
 
 **Add:** Optional if the campaign has one or more languages set, and otherwise language is required.  
 **Update:** Optional if the customer is in the *Campaign Languages* pilot, and otherwise update is not allowed. If you are not in the pilot and try to change the language during update, no error will be returned and the setting will not be changed.  
@@ -332,7 +329,7 @@ Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly
 
 You must not set *Network Distribution* if the *Content Network* ad distribution channel is set to *On*, otherwise an error will be returned.
 
-If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](../campaign-management-service/setnegativesitestoadgroups.md) or [SetNegativeSitesToCampaigns](../campaign-management-service/setnegativesitestocampaigns.md) operation to prevent the ads from displaying on specific syndicated search websites.
+If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](~/campaign-management-service/setnegativesitestoadgroups.md) or [SetNegativeSitesToCampaigns](~/campaign-management-service/setnegativesitestocampaigns.md) operation to prevent the ads from displaying on specific syndicated search websites.
 
 **Add:** Optional. The default is *OwnedAndOperatedAndSyndicatedSearch*.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -343,7 +340,7 @@ The system generated identifier of the campaign that contains the ad group.
 
 This bulk field maps to the *Id* field of the [Camnpaign](../bulk-service/campaign.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new ad groups to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new ad groups to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -378,7 +375,7 @@ Set this field to *BidOnly* if you want to show ads to people searching for your
 ### <a name="searchbid"></a>Search Bid
 The default bid to use when the user’s query and the ad group’s keywords match by using either a broad, exact, or phrase match comparison.
 
-The minimum and maximum bid range depends on the account's currency. For more information, see [Currencies](../guides/currencies.md).
+The minimum and maximum bid range depends on the account's currency. For more information, see [Currencies](~/guides/currencies.md).
 
 You can set a search bid if the *Search Network* ad distribution channel is set to *On*.
 
@@ -393,7 +390,7 @@ Determines whether the ads within this ad group will be displayed on the search 
 
 Set the value *On* for ad distribution on the search network, and otherwise set the value *Off*.
 
-The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](../campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
+The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](~/campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -424,7 +421,7 @@ The tracking template to use as a default for all URLs in your ad group.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
+- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](~/guides/entity-hierarchy-limits.md).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 
@@ -458,7 +455,7 @@ If the [DataScope Value Set](../bulk-service/datascope.md) element of the downlo
 
 |Column Header|Description|
 |-----------------|---------------|
-|*Quality Score*|The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Bing Ads using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.<br/><br/>Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for content and syndicated networks do not affect quality score. The value in the report will be blank if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.<br/><br/>If you run the report multiple times in a day, the quality score values could change from report to report based on when you run the report relative to when the scores are calculated.<br/><br/>If you specify a time period that spans multiple days, the quality score is the current and most recently calculated score and will be reported as the same for each day in the time period. Use the historic quality score to find out how quality score may have changed over time. Historical quality score is a daily snapshot of the rolling quality score. For more information on historic quality score, see the *HistoricQualityScore* column in [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).|
+|*Quality Score*|The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Bing Ads using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.<br/><br/>Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for content and syndicated networks do not affect quality score. The value in the report will be blank if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.<br/><br/>If you run the report multiple times in a day, the quality score values could change from report to report based on when you run the report relative to when the scores are calculated.<br/><br/>If you specify a time period that spans multiple days, the quality score is the current and most recently calculated score and will be reported as the same for each day in the time period. Use the historic quality score to find out how quality score may have changed over time. Historical quality score is a daily snapshot of the rolling quality score. For more information on historic quality score, see the *HistoricQualityScore* column in [Report Attributes and Performance Statistics](~/guides/report-attributes-performance-statistics.md).|
 |*Keyword Relevance*|A numeric score that indicates how likely your ads will be clicked and how well your keyword competes against other keywords targeting the same traffic. This score predicts whether your keyword is likely to lead to a click on your ads, taking into account how well your keyword has performed in the past relative to your ad's position.<br/><br/>*Keyword Relevance* is equivalent to the **Expected Click-Through Rate** label used in the Bing Ads web application.<br/><br/>A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.<br/><br/>If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.<br/><br/>Data for this column is typically updated 14-18 hours after the UTC day ends.|
 |*Landing Page Relevance*|A numeric score that indicates how relevant your ad and landing page are to the customer's search query or other input.<br/><br/>*Landing Page Relevance* is equivalent to the **Ad Relevance** label used in the Bing Ads web application.<br/><br/>A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.<br/><br/>If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.<br/><br/>Data for this column is typically updated 14-18 hours after the UTC day ends.|
 |*Landing Page User Experience*|A numeric score that indicates whether your landing page is likely to provide a good experience to customers who click your ad and land on your website.<br/><br/>*Landing Page User Experience* is equivalent to the **Landing Page Experience** label used in the Bing Ads web application.<br/><br/>A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.<br/><br/>If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.<br/><br/>Data for this column is typically updated 14-18 hours after the UTC day ends.|

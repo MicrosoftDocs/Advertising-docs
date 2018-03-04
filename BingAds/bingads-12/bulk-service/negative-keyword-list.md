@@ -8,9 +8,6 @@ description: Describes the Negative Keyword List fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Negative Keyword List Record - Bulk
 Defines a negative keyword list that can be downloaded and uploaded in a bulk file.
 
@@ -23,7 +20,7 @@ For an *Negative Keyword List* record, the following attribute fields are availa
 - [Name](#name)
 - [Status](#status)
 
-You can download all fields of the *Negative Keyword List* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *NegativeKeywordLists* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Negative Keyword List* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *NegativeKeywordLists* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new negative keyword list. 
 
@@ -33,7 +30,7 @@ Format Version,,,,,,,,,,5
 Negative Keyword List,Active,-19,,,,ClientIdGoesHere,,,,My Negative Keyword List
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkNegativeKeywordList* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkNegativeKeywordList* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -84,7 +81,7 @@ Used to associate records in the bulk upload file with records in the results fi
 ### <a name="id"></a>Id
 The system generated identifier of the negative keyword list.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the negative keyword list can then be referenced in the *Id* field of dependent record types such as [Campaign Negative Keyword List Association](../bulk-service/campaign-negative-keyword-list-association.md). This is recommended if you are adding new negative keyword list and associating it with campaigns in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the negative keyword list can then be referenced in the *Id* field of dependent record types such as [Campaign Negative Keyword List Association](../bulk-service/campaign-negative-keyword-list-association.md). This is recommended if you are adding new negative keyword list and associating it with campaigns in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 

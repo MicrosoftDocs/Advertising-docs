@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # UpdateAccount Service Operation - Customer Management
 Updates the details of the specified account.
 
@@ -24,7 +21,7 @@ The *UpdateAccountRequest* object defines the [body](#request-body) and [header]
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="account"></a>Account|An *AdvertiserAccount* object that contains the updated account information.<br /><br />This operation overwrites the existing account data with the contents of the account object that you pass. This operation performs a full update, and not a partial update. The *Account* object must contain the time stamp value from the last time that the *Account* object was written to. To ensure that the time stamp contains the correct value, call the [GetAccount](../customer-management-service/getaccount.md) operation. You can then update the account data as appropriate, and call *UpdateAccount*.|[AdvertiserAccount](advertiseraccount.md)|
+|<a name="account"></a>Account|An *AdvertiserAccount* object that contains the updated account information.<br /><br />This operation overwrites the existing account data with the contents of the account object that you pass. This operation performs a full update, and not a partial update. The *Account* object must contain the time stamp value from the last time that the *Account* object was written to. To ensure that the time stamp contains the correct value, call the [GetAccount](../customer-management-service/getaccount.md) operation. You can then update the account data as appropriate, and call *UpdateAccount*.|[Account](account.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -46,7 +43,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <Action mustUnderstand="1">UpdateAccount</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -55,60 +52,61 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <UpdateAccountRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <Account xmlns:e355="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e355:BillToCustomerId i:nil="false">ValueHere</e355:BillToCustomerId>
-        <e355:CountryCode i:nil="false">ValueHere</e355:CountryCode>
-        <e355:CurrencyCode i:nil="false">ValueHere</e355:CurrencyCode>
-        <e355:AccountFinancialStatus i:nil="false">ValueHere</e355:AccountFinancialStatus>
-        <e355:Id i:nil="false">ValueHere</e355:Id>
-        <e355:Language i:nil="false">ValueHere</e355:Language>
-        <e355:LastModifiedByUserId i:nil="false">ValueHere</e355:LastModifiedByUserId>
-        <e355:LastModifiedTime i:nil="false">ValueHere</e355:LastModifiedTime>
-        <e355:Name i:nil="false">ValueHere</e355:Name>
-        <e355:Number i:nil="false">ValueHere</e355:Number>
-        <e355:ParentCustomerId>ValueHere</e355:ParentCustomerId>
-        <e355:PaymentMethodId i:nil="false">ValueHere</e355:PaymentMethodId>
-        <e355:PaymentMethodType i:nil="false">ValueHere</e355:PaymentMethodType>
-        <e355:PrimaryUserId i:nil="false">ValueHere</e355:PrimaryUserId>
-        <e355:AccountLifeCycleStatus i:nil="false">ValueHere</e355:AccountLifeCycleStatus>
-        <e355:TimeStamp i:nil="false">ValueHere</e355:TimeStamp>
-        <e355:TimeZone i:nil="false">ValueHere</e355:TimeZone>
-        <e355:PauseReason i:nil="false">ValueHere</e355:PauseReason>
-        <ForwardCompatibilityMap xmlns:e356="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e356:KeyValuePairOfstringstring>
-            <e356:key i:nil="false">ValueHere</e356:key>
-            <e356:value i:nil="false">ValueHere</e356:value>
-          </e356:KeyValuePairOfstringstring>
+    <UpdateAccountRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+      <Account xmlns:e347="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
+        <e347:AccountType>ValueHere</e347:AccountType>
+        <e347:BillToCustomerId i:nil="false">ValueHere</e347:BillToCustomerId>
+        <e347:CountryCode i:nil="false">ValueHere</e347:CountryCode>
+        <e347:CurrencyType i:nil="false">ValueHere</e347:CurrencyType>
+        <e347:AccountFinancialStatus i:nil="false">ValueHere</e347:AccountFinancialStatus>
+        <e347:Id i:nil="false">ValueHere</e347:Id>
+        <e347:Language i:nil="false">ValueHere</e347:Language>
+        <ForwardCompatibilityMap xmlns:e348="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e348:KeyValuePairOfstringstring>
+            <e348:key i:nil="false">ValueHere</e348:key>
+            <e348:value i:nil="false">ValueHere</e348:value>
+          </e348:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e355:LinkedAgencies i:nil="false">
-          <e355:CustomerInfo>
-            <e355:Id i:nil="false">ValueHere</e355:Id>
-            <e355:Name i:nil="false">ValueHere</e355:Name>
-          </e355:CustomerInfo>
-        </e355:LinkedAgencies>
-        <e355:SalesHouseCustomerId i:nil="false">ValueHere</e355:SalesHouseCustomerId>
-        <TaxInformation xmlns:e357="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e357:KeyValuePairOfstringstring>
-            <e357:key i:nil="false">ValueHere</e357:key>
-            <e357:value i:nil="false">ValueHere</e357:value>
-          </e357:KeyValuePairOfstringstring>
+        <e347:LastModifiedByUserId i:nil="false">ValueHere</e347:LastModifiedByUserId>
+        <e347:LastModifiedTime i:nil="false">ValueHere</e347:LastModifiedTime>
+        <e347:Name i:nil="false">ValueHere</e347:Name>
+        <e347:Number i:nil="false">ValueHere</e347:Number>
+        <e347:ParentCustomerId>ValueHere</e347:ParentCustomerId>
+        <e347:PaymentMethodId i:nil="false">ValueHere</e347:PaymentMethodId>
+        <e347:PaymentMethodType i:nil="false">ValueHere</e347:PaymentMethodType>
+        <e347:PrimaryUserId i:nil="false">ValueHere</e347:PrimaryUserId>
+        <e347:AccountLifeCycleStatus i:nil="false">ValueHere</e347:AccountLifeCycleStatus>
+        <e347:TimeStamp i:nil="false">ValueHere</e347:TimeStamp>
+        <e347:TimeZone i:nil="false">ValueHere</e347:TimeZone>
+        <e347:PauseReason i:nil="false">ValueHere</e347:PauseReason>
+        <!--These fields are applicable if the derived type attribute is set to AdvertiserAccount-->
+        <e347:LinkedAgencies i:nil="false">
+          <e347:CustomerInfo>
+            <e347:Id i:nil="false">ValueHere</e347:Id>
+            <e347:Name i:nil="false">ValueHere</e347:Name>
+          </e347:CustomerInfo>
+        </e347:LinkedAgencies>
+        <e347:SalesHouseCustomerId i:nil="false">ValueHere</e347:SalesHouseCustomerId>
+        <TaxInformation xmlns:e349="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e349:KeyValuePairOfstringstring>
+            <e349:key i:nil="false">ValueHere</e349:key>
+            <e349:value i:nil="false">ValueHere</e349:value>
+          </e349:KeyValuePairOfstringstring>
         </TaxInformation>
-        <e355:BackUpPaymentInstrumentId i:nil="false">ValueHere</e355:BackUpPaymentInstrumentId>
-        <e355:BillingThresholdAmount i:nil="false">ValueHere</e355:BillingThresholdAmount>
-        <e355:BusinessAddress i:nil="false">
-          <e355:City i:nil="false">ValueHere</e355:City>
-          <e355:CountryCode i:nil="false">ValueHere</e355:CountryCode>
-          <e355:Id i:nil="false">ValueHere</e355:Id>
-          <e355:Line1 i:nil="false">ValueHere</e355:Line1>
-          <e355:Line2 i:nil="false">ValueHere</e355:Line2>
-          <e355:Line3 i:nil="false">ValueHere</e355:Line3>
-          <e355:Line4 i:nil="false">ValueHere</e355:Line4>
-          <e355:PostalCode i:nil="false">ValueHere</e355:PostalCode>
-          <e355:StateOrProvince i:nil="false">ValueHere</e355:StateOrProvince>
-          <e355:TimeStamp i:nil="false">ValueHere</e355:TimeStamp>
-        </e355:BusinessAddress>
-        <e355:AutoTagType i:nil="false">ValueHere</e355:AutoTagType>
+        <e347:BackUpPaymentInstrumentId i:nil="false">ValueHere</e347:BackUpPaymentInstrumentId>
+        <e347:BillingThresholdAmount i:nil="false">ValueHere</e347:BillingThresholdAmount>
+        <e347:BusinessAddress i:nil="false">
+          <e347:City i:nil="false">ValueHere</e347:City>
+          <e347:CountryCode i:nil="false">ValueHere</e347:CountryCode>
+          <e347:Id i:nil="false">ValueHere</e347:Id>
+          <e347:Line1 i:nil="false">ValueHere</e347:Line1>
+          <e347:Line2 i:nil="false">ValueHere</e347:Line2>
+          <e347:Line3 i:nil="false">ValueHere</e347:Line3>
+          <e347:Line4 i:nil="false">ValueHere</e347:Line4>
+          <e347:PostalCode i:nil="false">ValueHere</e347:PostalCode>
+          <e347:StateOrProvince i:nil="false">ValueHere</e347:StateOrProvince>
+          <e347:TimeStamp i:nil="false">ValueHere</e347:TimeStamp>
+        </e347:BusinessAddress>
       </Account>
     </UpdateAccountRequest>
   </s:Body>
@@ -120,11 +118,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <UpdateAccountResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+    <UpdateAccountResponse xmlns="https://bingads.microsoft.com/Customer/v11">
       <LastModifiedTime>ValueHere</LastModifiedTime>
     </UpdateAccountResponse>
   </s:Body>
@@ -135,7 +133,7 @@ The following template shows the order of the [body](#response-body) and [header
 The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<UpdateAccountResponse> UpdateAccountAsync(
-	AdvertiserAccount account)
+	Account account)
 {
 	var request = new UpdateAccountRequest
 	{
@@ -147,7 +145,7 @@ public async Task<UpdateAccountResponse> UpdateAccountAsync(
 ```
 ```java
 static UpdateAccountResponse updateAccount(
-	AdvertiserAccount account) throws RemoteException, Exception
+	Account account) throws RemoteException, Exception
 {
 	UpdateAccountRequest request = new UpdateAccountRequest();
 
@@ -176,6 +174,6 @@ response=customermanagement_service.UpdateAccount(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11  
 

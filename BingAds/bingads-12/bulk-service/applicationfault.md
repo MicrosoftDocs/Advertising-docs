@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the base object from which all fault detail objects derive.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ApplicationFault Data Object - Bulk
 Defines the base object from which all fault detail objects derive.
 

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the entity types that can be associated with an ad extension.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AssociationType Value Set - Campaign Management
 Defines the entity types that can be associated with an ad extension.
 

@@ -21,9 +21,9 @@ Your budget tells Bing Ads how much you want to spend on your campaign. You can 
 With shared budgets you can set a single daily budget that can be used by any campaign within the same account. This enables you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Bing Ads account. 
 
 > [!IMPORTANT]
-> You might need to code for shared budgets in the Bing Ads platform, even if you do not plan to use shared budgets. For more details and to determine whether the campaign uses a shared budget, check the value of the *BudgetId* element ([Campaign](../campaign-management-service/campaign.md) object) or *Budget Id* field (Bulk ([Campaign](../bulk-service/campaign.md) object) record).
+> You might need to code for shared budgets in the Bing Ads platform, even if you do not plan to use shared budgets. For more details and to determine whether the campaign uses a shared budget, check the value of the *BudgetId* element ([Campaign](~/campaign-management-service/campaign.md) object) or *Budget Id* field (Bulk ([Campaign](~/bulk-service/campaign.md) object) record).
 
-The Bing Ads API supports the *DailyBudgetAccelerated* and *DailyBudgetStandard* values as defined in the [BudgetLimitType](../campaign-management-service/budgetlimittype.md) value set.
+The Bing Ads API supports the *DailyBudgetAccelerated* and *DailyBudgetStandard* values as defined in the [BudgetLimitType](~/campaign-management-service/budgetlimittype.md) value set.
 
 ### <a name="dailyaccelerated"></a>DailyBudgetAccelerated
 Show your ads for every relevant search, spending at an accelerated rate until you run out of budget for the day. When the daily budget limit is reached, your ads will stop displaying until the next calendar day.
@@ -54,7 +54,7 @@ The service will update the monthly budget of an existing campaign by using the 
 Your bid strategy setting tells Bing Ads how you want to manage your bids. Whichever bid strategy you use, Bing Ads will always respect your budget limit. 
 
 > [!NOTE]
-> The Bing Ads web application uses the term *Bid strategy*, the Bing Ads Bulk API uses the *Bid Strategy Type* column for upload and download, and the Bing Ads Campaign Management API derives several bid strategy objects from the [BiddingScheme](../campaign-management-service/biddingscheme.md) object.
+> The Bing Ads web application uses the term *Bid strategy*, the Bing Ads Bulk API uses the *Bid Strategy Type* column for upload and download, and the Bing Ads Campaign Management API derives several bid strategy objects from the [BiddingScheme](~/campaign-management-service/biddingscheme.md) object.
 
 The following bid strategy types are available per campaign type. For more information see the [Automatically optimize your campaign with bid strategies](https://help.bingads.microsoft.com/#apex/3/en/56786/1) help article.
 
@@ -164,7 +164,7 @@ The following table shows example keyword bid values for each match type, as wel
 |0.20|No bid|No bid|Exact|0.20|
 |0.20|No bid|No bid|Phrase|None. Would not participate in auction.|
 
-For Search and Content campaigns, take a look at the keywords you've created for your ad group. Are they all closely related? Do you want to add any others? Are you using a mix of match types? Consider using the [Ad Insight Service](../ad-insight-service/ad-insight-service-reference.md) to get ideas for additional keywords you might want to include in this ad group, and for suggested starting bids. For more information, see [Budget and Bid Opportunities](../guides/budget-bid-opportunities.md). You should create a keyword for each match type that you want to bid on. For example, to bid on exact-match and phrase-match for the keyword *car*, you must create two Keyword objects. When you add the keywords, you?ll get a unique keyword ID for each keyword and match-type combination. Keep in mind that you cannot change a keyword's match type from one match-type bid to another match-type bid. For example, you cannot update a keyword from exact match to phrase match. Instead, you must add a new keyword that specifies a bid amount for the new match type. Optionally you may delete the original keyword if you do not want to bid on its match type.
+For Search and Content campaigns, take a look at the keywords you've created for your ad group. Are they all closely related? Do you want to add any others? Are you using a mix of match types? Consider using the [Ad Insight Service](~/ad-insight-service/ad-insight-service-reference.md) to get ideas for additional keywords you might want to include in this ad group, and for suggested starting bids. For more information, see [Budget and Bid Opportunities](../guides/budget-bid-opportunities.md). You should create a keyword for each match type that you want to bid on. For example, to bid on exact-match and phrase-match for the keyword *car*, you must create two Keyword objects. When you add the keywords, you?ll get a unique keyword ID for each keyword and match-type combination. Keep in mind that you cannot change a keyword's match type from one match-type bid to another match-type bid. For example, you cannot update a keyword from exact match to phrase match. Instead, you must add a new keyword that specifies a bid amount for the new match type. Optionally you may delete the original keyword if you do not want to bid on its match type.
 
 You can also use negative keywords to prevent you ads from being served if the user's search query contains one of your negative keywords. For more information about negative keywords, see [Negative Keywords](../guides/negative-keywords.md).
 

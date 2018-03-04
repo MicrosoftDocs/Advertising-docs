@@ -6,14 +6,11 @@ author: eric-urban
 ms.author: eur
 description: Defines a remarketing list.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # RemarketingList Data Object - Campaign Management
 Defines a remarketing list.
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](~/guides/universal-event-tracking.md) technical guide.
 
 ## Syntax
 ```xml

@@ -42,7 +42,7 @@ For a *Structured Snippet Ad Extension* record, the following attribute fields a
 - [Use Searcher Time Zone](#usesearchertimezone)
 - [Version](#version)
 
-You can download all fields of the *Structured Snippet Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *StructuredSnippetAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Structured Snippet Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *StructuredSnippetAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Structured Snippet Ad Extension to the account's shared library. 
 
@@ -52,7 +52,7 @@ Format Version,,,,,,,,,,,5,,,,
 Structured Snippet Ad Extension,Active,-18,0,,,ClientIdGoesHere,,,12/31/2018,,,(Monday[09:00-21:00]),FALSE,Brands,Windows;Xbox;Skype
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkStructuredSnippetAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkStructuredSnippetAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -157,7 +157,7 @@ The component or property of the ad extension that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -166,7 +166,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](~/campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -193,7 +193,7 @@ The end date is inclusive. For example, if you set this field to 3/10/2017, the 
 ### <a name="id"></a>Id
 The system generated identifier of the ad extension.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Structured Snippet Ad Extension](../bulk-service/ad-group-structured-snippet-ad-extension.md) and [Campaign Structured Snippet Ad Extension](../bulk-service/campaign-structured-snippet-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Structured Snippet Ad Extension](../bulk-service/ad-group-structured-snippet-ad-extension.md) and [Campaign Structured Snippet Ad Extension](../bulk-service/campaign-structured-snippet-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -246,7 +246,7 @@ Possible values are *Active* or *Deleted*.
 ### <a name="structuredsnippetheader"></a>Structured Snippet Header
 The header that is appended with a colon (*:*) and precedes the snippet values. 
 
-Structured Snippet headers must be specified in the same language that you intend it to be shown. For example, if you want header *Amenities* in English you must specify the header as *Amenities*.  If you want header *Ausstattung* in German you must specify the header as *Ausstattung* (*Amenities* in German). For a list of supported headers per language, please see [Structured Snippet Header Languages](../guides/ad-languages.md#structuredsnippetheaders).
+Structured Snippet headers must be specified in the same language that you intend it to be shown. For example, if you want header *Amenities* in English you must specify the header as *Amenities*.  If you want header *Ausstattung* in German you must specify the header as *Ausstattung* (*Amenities* in German). For a list of supported headers per language, please see [Structured Snippet Header Languages](~/guides/ad-languages.md#structuredsnippetheaders).
 
 **Add:** Required  
 **Update:** Required    

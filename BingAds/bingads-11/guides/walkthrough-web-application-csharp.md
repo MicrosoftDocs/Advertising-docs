@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 # Walkthrough: Bing Ads Web Application in C# #
-The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](../guides/get-started.md#get-developer-token). 
+The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](~/guides/get-started.md#get-developer-token). 
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
@@ -47,7 +47,7 @@ The example web application sends authentication requests to the Microsoft accou
     <p><b style="color: red">@ViewBag.CampaignErrors</b></p>
     ```
 
-6. Within the **Controllers** folder of the BingAdsWebApp project, open the HomeController.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](../guides/get-started.md#get-developer-token). 
+6. Within the **Controllers** folder of the BingAdsWebApp project, open the HomeController.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](~/guides/get-started.md#get-developer-token). 
 
     ```csharp
     using System;
@@ -386,7 +386,7 @@ The example web application sends authentication requests to the Microsoft accou
 ## <a name="sandbox"></a>Configuring Sandbox
 To use sandbox, follow these additional steps.
 
-Replace the try block within HomeController.cs with the following snippet. Authentication with Microsoft account credentials is not supported in sandbox.
+Replace the try block within HomeController.cs with the following snippet. 
 
 ```csharp
 try

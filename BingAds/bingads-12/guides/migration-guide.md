@@ -214,7 +214,7 @@ The production endpoint is [https://clientcenter.api.bingads.microsoft.com/Api/C
 
 The sandbox endpoint is [https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc](https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc).
 
-#### <a name="customer-userroles"></a>User Roles
+#### <a name="customer-multi-user"></a>Multi User Credentials
 With [multi-user credentials](#authentication-multi-user), one email address can be associated with multiple roles i.e., one role for each customer they can access. Whether or not you have "multi-user" credentials, the Customer Management API maps your credentials via a single [User](../customer-management-service/user.md) object, with some notable changes to the returned user roles. The *Accounts*, *Customers*, and *Roles* elements of the [GetUser](../customer-management-service/getuser.md) response are replaced with a list of [CustomerRole](../customer-management-service/customerrole.md) named *CustomerRoles*. 
 
 In the response message for *GetUser* in version 11, the returned role or roles were applicable for all accounts or customers listed. You will only see the role(s) that the user had before multi-user credentials consolidation. 
@@ -245,7 +245,8 @@ In the response message for [GetUser](../customer-management-service/getuser.md)
 </CustomerRoles>
 ```
 
-Please also note that the *UserRole* value set is removed to ensure consistent mapping and forward compatibility for potential new user roles. In turn, the *Role* element of the [UserInvitation](../customer-management-service/userinvitation.md) object is replaced with an int value i.e., an element named *RoleId*.
+#### <a name="customer-userroles"></a>User Roles
+The *UserRole* value set is removed to ensure consistent mapping and forward compatibility for potential new user roles. In turn, the *Role* element of the [UserInvitation](../customer-management-service/userinvitation.md) object is replaced with an int value i.e., an element named *RoleId*.
 
 #### <a name="customer-advertiseraccount"></a>Advertiser Account
 The [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object no longer derives from an *Account* base. The *Account* object is removed and its properties are moved directly to the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object. 
@@ -271,6 +272,15 @@ The *CurrencyType* value set is renamed as [CurrencyCode](../customer-management
 The following values are updated in the [TimeZoneType](../customer-management-service/timezonetype.md) value set. 
 -  Since Magadan is now permanently in UTC+12 time zone, the value is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
 -  The value of *InternationalDatelineWest* (lowercase 'l' in Dateline) is updated to *InternationalDateLineWest* (uppercase 'L' in DateLine). 
+
+
+#### <a name="customer-searchcustomers-predicates"></a>Search Customers Predicates
+The following [Predicate](../customer-management-service/predicate.md#searchcustomers) field and operator sets are no longer available in version 12. 
+-  PersonName Equals
+-  PersonName Contains
+-  Email Equals
+-  Email Contains
+-  Username Contains
 
 ## <a name="reporting"></a>Reporting
 
@@ -367,6 +377,4 @@ Bing Ads API version 12 now lets you choose a *TimeZone* when you submit a [Repo
 
 #### <a name="reporting-reporttimeperiod"></a>More Flexible Report Time Periods
 Bing Ads API version 12 now lets you choose *LastFourteenDays* and *LastThirtyDays* from the [ReportTimePeriod](../reporting-service/reporttimeperiod.md) value set when you submit a report request. 
- 
-#### <a name="reporting-topvsother"></a>Top Vs Other for Product Dimension Report
-The *TopVsOther* column is added to the [ProductDimensionPerformanceReportColumn](../reporting-service/productdimensionperformancereportcolumn.md). 
+

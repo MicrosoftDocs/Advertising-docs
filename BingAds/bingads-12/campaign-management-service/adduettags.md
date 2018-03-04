@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AddUetTags Service Operation - Campaign Management
 Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Bing Ads to collect actions people take on your website.
 
@@ -22,7 +19,7 @@ After you create a UET tag, the next step is to add the UET tag tracking code to
 You can use one UET tag with all of your conversion goals and remarketing lists. Before you create multiple UET tags, see [Reasons for creating more than one UET tag](https://help.bingads.microsoft.com/#apex/3/en/56685/2).
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](~/guides/universal-event-tracking.md) technical guide.
 
 ## <a name="request"></a>Request Elements
 The *AddUetTagsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -130,7 +127,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<AddUetTagsResponse> AddUetTagsAsync(
 	IList<UetTag> uetTags)

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the field order of insertion orders returned using SearchInsertionOrders.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # OrderByField Value Set - Customer Billing
 Defines the field order of insertion orders returned using [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
 
@@ -34,8 +31,8 @@ Defines the field order of insertion orders returned using [SearchInsertionOrder
 |<a name="number"></a>Number|The order is determined by a predicate number.<br /><br /> This value is reserved for future use.|
 
 ## Requirements
-Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Billing/v12  
+Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Billing/v11  
 
 ## Used By
 [OrderBy](orderby.md)  

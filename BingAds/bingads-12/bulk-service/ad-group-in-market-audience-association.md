@@ -8,9 +8,6 @@ description: Describes the Ad Group In Market Audience Association fields in a B
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Ad Group In Market Audience Association Record - Bulk
 Defines an Ad Group In Market Audience Association that can be uploaded and downloaded in a bulk file. 
 
@@ -31,7 +28,7 @@ For an *Ad Group In Market Audience Association* record, the following attribute
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Ad Group In Market Audience Association* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupInMarketAudienceAssociations* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group In Market Audience Association* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupInMarketAudienceAssociations* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Ad Group In Market Audience Association given a valid ad group ID (*Parent Id*). 
 
@@ -41,7 +38,7 @@ Format Version,,,,,,,,,5,,,
 Ad Group In Market Audience Association,Paused,,-1111,,,ClientIdGoesHere,,10,,InMarketAudienceIdHere,My In Market Audience,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupInMarketAudienceAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupInMarketAudienceAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -112,7 +109,7 @@ The name of the in-market audience.
 
 This bulk field maps to the *Audience* field of the [In Market Audience](../bulk-service/in-market-audience.md) record.
 
-**Add:** Read-only and Required for some use cases. You must either specify the *Audience* or *Audience Id* field. If you are adding new Ad Group In Market Audience Associations with new in-market audiences in the same Bulk file, and if you do not set the *Audience Id* field, then this *Audience* field must be set as a logical key to the same value as the *Audience* field of the [In Market Audience](../bulk-service/in-market-audience.md) record. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required for some use cases. You must either specify the *Audience* or *Audience Id* field. If you are adding new Ad Group In Market Audience Associations with new in-market audiences in the same Bulk file, and if you do not set the *Audience Id* field, then this *Audience* field must be set as a logical key to the same value as the *Audience* field of the [In Market Audience](../bulk-service/in-market-audience.md) record. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only    
 **Delete:** Read-only  
 
@@ -121,7 +118,7 @@ The Bing Ads identifier of the in-market audience associated with the ad group.
 
 This bulk field maps to the *Id* field of the [In Market Audience](../bulk-service/in-market-audience.md) record.
 
-**Add:** Read-only and Required for some use cases. You must either specify the *Audience* or *Audience Id* field. If you set the *Audience Id* field, you must either specify an existing in-market audience identifier or specify a negative identifier that is equal to the *Id* field of the parent [In Market Audience](../bulk-service/in-market-audience.md) record. If the *Audience Id* field is not set, then you must set the *Audience* field as a logical key to the same value as the *Audience* field of the [In Market Audience](../bulk-service/in-market-audience.md) record. Any of these options are recommended if you are adding new Ad Group In Market Audience Associations with new in-market audiences in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required for some use cases. You must either specify the *Audience* or *Audience Id* field. If you set the *Audience Id* field, you must either specify an existing in-market audience identifier or specify a negative identifier that is equal to the *Id* field of the parent [In Market Audience](../bulk-service/in-market-audience.md) record. If the *Audience Id* field is not set, then you must set the *Audience* field as a logical key to the same value as the *Audience* field of the [In Market Audience](../bulk-service/in-market-audience.md) record. Any of these options are recommended if you are adding new Ad Group In Market Audience Associations with new in-market audiences in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only    
 **Delete:** Read-only  
 
@@ -173,7 +170,7 @@ The system generated identifier of the ad group that is associated to the in-mar
 
 This bulk field maps to the *Id* field of the [Ad Group](../bulk-service/ad-group.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-service/ad-group.md) record. This is recommended if you are associating in-market audiences to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-service/ad-group.md) record. This is recommended if you are associating in-market audiences to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only  
 **Delete:** Read-only  
 

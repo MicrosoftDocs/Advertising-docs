@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an error object that contains the details that explain why the service operation failed.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # OperationError Data Object - Customer Management
 Defines an error object that contains the details that explain why the service operation failed.
 
@@ -32,8 +29,8 @@ Defines an error object that contains the details that explain why the service o
 |<a name="message"></a>Message|A message that describes the error.|**string**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12/Exception  
+Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11/Exception  
 
 ## Used By
 [AddClientLinks](addclientlinks.md)  

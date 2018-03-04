@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetAccountMonthlySpend Service Operation - Customer Billing
 Gets the amount spent by the account in the specified month.
 
@@ -47,7 +44,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
     <Action mustUnderstand="1">GetAccountMonthlySpend</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -56,7 +53,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetAccountMonthlySpendRequest xmlns="https://bingads.microsoft.com/Billing/v12">
+    <GetAccountMonthlySpendRequest xmlns="https://bingads.microsoft.com/Billing/v11">
       <AccountId>ValueHere</AccountId>
       <MonthYear>ValueHere</MonthYear>
     </GetAccountMonthlySpendRequest>
@@ -69,11 +66,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Billing/v12">
+  <s:Header xmlns="https://bingads.microsoft.com/Billing/v11">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetAccountMonthlySpendResponse xmlns="https://bingads.microsoft.com/Billing/v12">
+    <GetAccountMonthlySpendResponse xmlns="https://bingads.microsoft.com/Billing/v11">
       <Amount>ValueHere</Amount>
     </GetAccountMonthlySpendResponse>
   </s:Body>
@@ -132,6 +129,6 @@ response=customerbilling_service.GetAccountMonthlySpend(
 ```
 
 ## Requirements
-Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Billing/v12  
+Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Billing/v11  
 

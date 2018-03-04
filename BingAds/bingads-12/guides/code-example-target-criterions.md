@@ -11,19 +11,16 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Target Criterions Code Example
 This example demonstrates how to use target criterions with the Campaign Management API.
 
-[!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/TargetCriterions.cs)]
+[!code-csharp[Main](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/TargetCriterions.cs)]
 
-[!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/TargetCriterions.java)]
+[!code-java[Main](../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/TargetCriterions.java)]
 
-[!code-php[Main](../../../BingAds-PHP-SDK/samples/V11/TargetCriterions.php)]
+[!code-php[Main](../../BingAds-PHP-SDK/samples/V11/TargetCriterions.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/target_criterions.py)]
+[!code-python[Main](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/target_criterions.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](../guides/get-started.md)  

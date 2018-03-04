@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AddConversionGoals Service Operation - Campaign Management
 Adds new conversion goals to the account's shared conversion goal library. 
 
@@ -21,7 +18,7 @@ Adds new conversion goals to the account's shared conversion goal library.
 > Every time you create a new [DurationGoal](../campaign-management-service/durationgoal.md), [EventGoal](../campaign-management-service/eventgoal.md), [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md), [PagesViewedPerVisitGoal](../campaign-management-service/pagesviewedpervisitgoal.md) or [UrlGoal](../campaign-management-service/urlgoal.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](../campaign-management-service/accountproperty.md) is set to *True* automatically. If the Scope of the goal is set to *Customer* level, then the [AccountProperty](../campaign-management-service/accountproperty.md) for all accounts under the Customer will be set. 
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](~/guides/universal-event-tracking.md) technical guide.
 
 ## <a name="request"></a>Request Elements
 The *AddConversionGoalsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -151,7 +148,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<AddConversionGoalsResponse> AddConversionGoalsAsync(
 	IList<ConversionGoal> conversionGoals)

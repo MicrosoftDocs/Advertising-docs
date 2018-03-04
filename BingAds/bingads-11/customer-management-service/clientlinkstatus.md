@@ -9,7 +9,7 @@ description: Defines the possible status values of a ClientLink.
 # ClientLinkStatus Value Set - Customer Management
 Defines the possible status values of a [ClientLink](../customer-management-service/clientlink.md).
 
-For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
+For more information about the client link lifecycle, see [Link to Client Accounts](~/guides/management-model-agencies.md#clientlink).
 
 ## Syntax
 ```xml

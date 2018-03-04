@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the status of a report.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ReportRequestStatusType Value Set - Reporting
 Defines the status of a report.
 
@@ -32,8 +29,8 @@ Defines the status of a report.
 |<a name="success"></a>Success|The report was successfully completed.<br /><br />The report can be downloaded from the URL contained in the *ReportDownloadUrl* element of the [ReportRequestStatus](../reporting-service/reportrequeststatus.md) object.|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [ReportRequestStatus](reportrequeststatus.md)  

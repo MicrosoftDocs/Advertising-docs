@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the account status values that you can use to filter the report data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AccountStatusReportFilter Value Set - Reporting
 Defines the account status values that you can use to filter the report data. These values are also used as column values in reports that include account status, such as the account performance report.
 
@@ -36,8 +33,8 @@ Defines the account status values that you can use to filter the report data. Th
 |<a name="paused"></a>Paused|The report will contain accounts that are paused.|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v12  
+Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v11  
 
 ## Used By
 [AccountPerformanceReportFilter](accountperformancereportfilter.md)  

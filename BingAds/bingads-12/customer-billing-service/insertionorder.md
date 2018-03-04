@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an insertion order.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # InsertionOrder Data Object - Customer Billing
 Defines an insertion order.
 
@@ -46,7 +43,7 @@ When updating an *InsertionOrder* object, only the *Status* element can be speci
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account to which the insertion order applies.<br /><br />You cannot update the account identifier after you create the insertion order.<br/><br/>**Add:** Required<br/>**Update:** Read-only|**long**|
 |<a name="balanceamount"></a>BalanceAmount|The running balance of the insertion order. The running balance value is initially the same as the spending limit, and then decreases each time an ad in the account is served.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**double**|
-|<a name="bookingcountrycode"></a>BookingCountryCode|A code that identifies the country/region in which the account operates. For a list of country code values, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br /><br />You cannot update the country code after the insertion order becomes active.<br/><br/>**Add:** Required<br/>**Update:** Read-only|**string**|
+|<a name="bookingcountrycode"></a>BookingCountryCode|A code that identifies the country/region in which the account operates. For a list of country code values, see [Geographical Location Codes](~/guides/geographical-location-codes.md).<br /><br />You cannot update the country code after the insertion order becomes active.<br/><br/>**Add:** Required<br/>**Update:** Read-only|**string**|
 |<a name="changependingreview"></a>ChangePendingReview|Determines whether or not you need to approve or decline a change made to an existing order by Bing Ads.<br/><br/>The default value (nil) is false. If this element is true then you need to approve or decline a change made to an existing order by Bing Ads.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**boolean**|
 |<a name="comment"></a>Comment|A description of the insertion order. The description is limited to 100 characters.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|**string**|
 |<a name="enddate"></a>EndDate|The date that the insertion order expires. The end date must be later than the start date.<br /><br /> The date is stored in Coordinated Universal Time (UTC). Only the month, day, and year of the specified string are used. If you specify the hour, minutes, and seconds of a date they will be ignored.<br /><br />For information about the format of the date and time, see the **dateTime** entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).<br/><br/>**Add:** Required<br/>**Update:** Read-only|**dateTime**|
@@ -62,8 +59,8 @@ When updating an *InsertionOrder* object, only the *Status* element can be speci
 |<a name="status"></a>Status|The status of the insertion order.<br/><br/>**Add:** Read-only. Insertion orders that you create are immediately set to Active, Pending, or Declined.<br/>**Update:** Required|[InsertionOrderStatus](insertionorderstatus.md)|
 
 ## Requirements
-Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
+Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
 
 ## Used By
 [AddInsertionOrder](addinsertionorder.md)  

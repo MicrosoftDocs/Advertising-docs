@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains a domain category with website coverage.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DomainCategory Data Object - Ad Insight
 Defines an object that contains a domain category with website coverage. 
 

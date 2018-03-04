@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # BusinessGeoCodeStatus Value Set - Campaign Management
 Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.
 

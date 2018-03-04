@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a criterion that can be used to show ads to users during a specific day and time range.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DayTimeCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to users during a specific day and time range.
 

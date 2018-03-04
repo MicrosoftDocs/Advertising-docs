@@ -8,9 +8,6 @@ description: Describes the Image Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Image Ad Extension Record - Bulk
 Defines an image ad extension that can be downloaded and uploaded in a bulk file.
 
@@ -38,7 +35,7 @@ For an *Image Ad Extension* record, the following attribute fields are available
 - [Use Searcher Time Zone](#usesearchertimezone)
 - [Version](#version)
 
-You can download all fields of the *Image Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *ImageAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Image Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *ImageAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Image Ad Extension to the account's shared library. 
 
@@ -48,7 +45,7 @@ Format Version,,,,,,,,,,,5,,,,
 Image Ad Extension,Active,-14,0,,,ClientIdGoesHere,,,,,,,FALSE,ImageAdExtension Alternative Text,ImageMediaIdHere
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkImageAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkImageAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -134,7 +131,7 @@ The component or property of the ad extension that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -143,7 +140,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](~/campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -164,16 +161,16 @@ This field is not supported for image ad extensions. Scheduling is supported for
 ### <a name="id"></a>Id
 The system generated identifier of the ad extension.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Image Ad Extension](../bulk-service/ad-group-image-ad-extension.md) and [Campaign Image Ad Extension](../bulk-service/campaign-image-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Image Ad Extension](../bulk-service/ad-group-image-ad-extension.md) and [Campaign Image Ad Extension](../bulk-service/campaign-image-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
 ### <a name="mediaids"></a>Media Ids
 The identifiers of the images to include in the ad. You may not specify media identifiers for more than one image of the same aspect ratio. In other words each of  the referenced images must have different aspect ratios.
 
-You can specify up to four (4) image media  identifiers. While the minimum required is one image media ID, in order to qualify for all native ad placements you must provide four image media identifiers, where each ID corresponds to an [Image](../campaign-management-service/image.md) of one of the four supported [Media](../campaign-management-service/media.md) types (aspect ratios). The supported aspect ratios for native ads are 16:9, 1.5:1, 4:3, and 1.2:1. For more information see the [Image](../campaign-management-service/image.md) data object reference documentation.
+You can specify up to four (4) image media  identifiers. While the minimum required is one image media ID, in order to qualify for all native ad placements you must provide four image media identifiers, where each ID corresponds to an [Image](~/campaign-management-service/image.md) of one of the four supported [Media](~/campaign-management-service/media.md) types (aspect ratios). The supported aspect ratios for native ads are 16:9, 1.5:1, 4:3, and 1.2:1. For more information see the [Image](~/campaign-management-service/image.md) data object reference documentation.
 
-You can get the identifier of each [Image](../campaign-management-service/image.md) when you add them to the image library by calling the [AddMedia](../campaign-management-service/addmedia.md) operation. Otherwise after the media has been added to your image library you can get the media identifiers with the [GetMediaMetaDataByAccountId](../campaign-management-service/getmediametadatabyaccountid.md) operation.
+You can get the identifier of each [Image](~/campaign-management-service/image.md) when you add them to the image library by calling the [AddMedia](~/campaign-management-service/addmedia.md) operation. Otherwise after the media has been added to your image library you can get the media identifiers with the [GetMediaMetaDataByAccountId](~/campaign-management-service/getmediametadatabyaccountid.md) operation.
 
 In a bulk file, the list of media identifiers are delimited with a semicolon (;).
 

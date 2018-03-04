@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ApplyProductPartitionActions Service Operation - Campaign Management
 Applies an add, update, or delete action to each of the specified [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md), which each contain a [ProductPartition](../campaign-management-service/productpartition.md).
 
@@ -24,7 +21,7 @@ The *ApplyProductPartitionActionsRequest* object defines the [body](#request-bod
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="criterionactions"></a>CriterionActions|A list of up to 5,000 *AdGroupCriterionAction* objects that each contain an *Action* element and either a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md). <br/><br/>All of the ad group criterion actions must be for the same ad group. For more information including validation rules, please see [Create a Bing Shopping Campaign with the Campaign Management Service](../guides/product-ads.md#bingshopping-campaignservice).|[AdGroupCriterionAction](adgroupcriterionaction.md) array|
+|<a name="criterionactions"></a>CriterionActions|A list of up to 5,000 *AdGroupCriterionAction* objects that each contain an *Action* element and either a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md). <br/><br/>All of the ad group criterion actions must be for the same ad group. For more information including validation rules, please see [Create a Bing Shopping Campaign with the Campaign Management Service](~/guides/product-ads.md#bingshopping-campaignservice).|[AdGroupCriterionAction](adgroupcriterionaction.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -210,7 +207,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
 ```csharp
 public async Task<ApplyProductPartitionActionsResponse> ApplyProductPartitionActionsAsync(
 	IList<AdGroupCriterionAction> criterionActions)

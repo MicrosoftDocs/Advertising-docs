@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Reference documentation for service operation error codes.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Operation Error Codes
 Bing Ads service operations may return error codes depending on the context. The list provided below includes error codes across all Bing Ads services. For information about error codes per service operation, see the reference page for each operation.
 
@@ -17,7 +14,7 @@ For more information about error handling and troubleshooting, see [Handling Ser
 ## <a name="error-codes"><a/>Error Codes
 In the list below, the **Numeric Code** and **Symbolic Error Code** headers correspond to the respective *Code* and *ErrorCode* elements of the returned error data object.
 
-The *BatchError* and *OperationError* objects for [Customer Billing](../customer-billing-service/customer-billing-service-reference.md) and [Customer Management](../customer-management-service/customer-management-service-reference.md) services do not contain the *ErrorCode* element. The corresponding **Symbolic Error Code** table entries below are noted as **Not applicable**.
+The *BatchError* and *OperationError* objects for [Customer Billing](~/customer-billing-service/customer-billing-service-reference.md) and [Customer Management](~/customer-management-service/customer-management-service-reference.md) services do not contain the *ErrorCode* element. The corresponding **Symbolic Error Code** table entries below are noted as **Not applicable**.
 
 Some symbolic error codes begin with the strings *BulkService* or *CampaignService*. Error codes beginning with *CampaignService* may be included in error codes for the bulk and campaign service, so you should not make assumptions about the naming convention.
 
@@ -3705,7 +3702,7 @@ Prepaid client accounts are not supported for management by agencies. The client
 Not applicable.
 
 **Description**
-You cannot get, delete, or update an account that is being linked or unlinked. You can determine the client link status with the [SearchClientLinks](../customer-management-service/searchclientlinks.md) operation. If the client link status is *LinkInProgress* or *UnlinkInProgress*, try waiting 5 to 30 minutes and try again. If the issue persists please reach out to [support](https://advertise.bingads.microsoft.com/bing-ads-support). 
+You cannot get, delete, or update an account that is being linked or unlinked. You can determine the client link status with the [SearchClientLinks](~/customer-management-service/searchclientlinks.md) operation. If the client link status is *LinkInProgress* or *UnlinkInProgress*, try waiting 5 to 30 minutes and try again. If the issue persists please reach out to [support](https://advertise.bingads.microsoft.com/bing-ads-support). 
 
 ***
 
@@ -5856,10 +5853,10 @@ The download request ID is not valid.
 CampaignServiceAccountTooBigToDownload
 
 **Description**
-The account has more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) to download the account's campaigns in multiple requests. The Details field contains the campaign identifiers under the account.
+The account has more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) to download the account's campaigns in multiple requests. The Details field contains the campaign identifiers under the account.
 
 > [!NOTE] 
-> Calling the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) operation with an account that contains more than four million keywords will fail.
+> Calling the [DownloadCampaignsByAccountIds](~/bulk-service/downloadcampaignsbyaccountids.md) operation with an account that contains more than four million keywords will fail.
 
 ***
 
@@ -5958,10 +5955,10 @@ The start and end date for performance statistics should be valid and within the
 BulkServiceCampaignsTooBigToDownload
 
 **Description**
-The campaigns included in the download have more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) with fewer campaigns.
+The campaigns included in the download have more keywords than allowed per request. Please call [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) with fewer campaigns.
 
 > [!NOTE] 
-> Calling the [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) operation with an account that contains more than eight million keywords will fail.
+> Calling the [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) operation with an account that contains more than eight million keywords will fail.
 
 ***
 
@@ -7886,7 +7883,7 @@ CampaignServiceMediaTypeInvalid
 The type of media is not valid.
 
 > [!NOTE] 
-> This error may be thrown during a call to the [AddMedia](../campaign-management-service/addmedia.md) operation if either the media *Type* or *MediaType* is invalid.
+> This error may be thrown during a call to the [AddMedia](~/campaign-management-service/addmedia.md) operation if either the media *Type* or *MediaType* is invalid.
 
 ***
 
