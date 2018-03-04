@@ -8,6 +8,9 @@ description: Describes the Label fields in a Bulk file.
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Label Record - Bulk
 Defines a label that can be uploaded and downloaded in a bulk file.
 

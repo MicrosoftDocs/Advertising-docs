@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Reserved.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ProfileCriterion Data Object - Campaign Management
 Reserved.
 

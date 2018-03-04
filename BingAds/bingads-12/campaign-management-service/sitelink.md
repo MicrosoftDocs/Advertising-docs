@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a site link to include in an ad.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SiteLink Data Object - Campaign Management
 Defines a site link to include in an ad. The link should take the user to content in your website that is relevant in the context of the ad.
 

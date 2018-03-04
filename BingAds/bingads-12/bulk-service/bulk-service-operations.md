@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Service operations reference for the Bulk service.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Bulk Service Operations
 The Bulk service defines the following service operations.
 

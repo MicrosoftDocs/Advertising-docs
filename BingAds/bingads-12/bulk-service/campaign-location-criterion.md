@@ -8,6 +8,9 @@ description: Describes the Campaign Location Criterion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Campaign Location Criterion Record - Bulk
 Defines a campaign location criterion that can be uploaded and downloaded in a bulk file.
 

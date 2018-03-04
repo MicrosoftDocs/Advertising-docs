@@ -11,6 +11,9 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AppealEditorialRejections Service Operation - Campaign Management
 Appeals the editorial rejections of one or more ads or keywords that failed editorial review.
 

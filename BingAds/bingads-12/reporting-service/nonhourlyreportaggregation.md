@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the aggregation values for reports that cannot specify hourly aggregation.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # NonHourlyReportAggregation Value Set - Reporting
 Defines the aggregation values for reports that cannot specify hourly aggregation.
 

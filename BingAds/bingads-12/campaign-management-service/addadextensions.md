@@ -11,6 +11,9 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AddAdExtensions Service Operation - Campaign Management
 Adds one or more ad extensions to an account's ad extension library.
 

@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the device type values that you can use to filter the report data.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DeviceTypeReportFilter Value Set - Reporting
 Defines the device type values that you can use to filter the report data. These values are also used as column values in reports that include device type information, such as the ad group performance report.
 

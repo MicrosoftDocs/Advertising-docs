@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the ad extension detail report.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdExtensionDetailReportFilter Data Object - Reporting
 Defines the criteria to use to filter the ad extension detail report.
 

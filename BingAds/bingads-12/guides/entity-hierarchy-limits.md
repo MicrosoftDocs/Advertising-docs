@@ -6,6 +6,9 @@ author: "eric-urban"
 ms.author: "eur"
 description: Learn about the Bing Ads entity hierarchy to plan your campaign setup.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Entity Hierarchy and Limits
 The following figure shows the high level Bing Ads entity object model from the perspective of one customer that has one or more accounts. For information on services available to manage Bing Ads entities, see [Bing Ads API Overview](index.md).
 
@@ -356,7 +359,7 @@ For more information, see the Bing Ads Help article [Understand and use product 
 
 
 ## <a name="targets"></a>Targets
-You can set criteria to show your ads based on age, day and time, device, gender, and location. Starting with Bing Ads API version 11 you must use *Criterion* objects instead of *Target* objects. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*. For more information about managing targets, see the [Show Ads to Your Target Audience](show-ads-target-audience.md) technical guide.
+You can set criteria to show your ads based on age, day and time, device, gender, and location. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*. For more information about managing targets, see the [Show Ads to Your Target Audience](show-ads-target-audience.md) technical guide.
 
 The maximum number of age criterions that you can specify per campaign or ad group is five, i.e. one for each of the supported age ranges *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*.
 

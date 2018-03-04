@@ -8,6 +8,9 @@ description: Create a desktop application using the Bing Ads Java SDK.
 dev_langs:
   - java
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Walkthrough: Bing Ads Desktop Application in Java
 The example desktop application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID. You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below, or start with the [provided examples](code-examples.md).
 

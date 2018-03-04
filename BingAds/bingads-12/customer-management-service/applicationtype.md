@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible application types.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ApplicationType Value Set - Customer Management
 Defines the possible application types.
 

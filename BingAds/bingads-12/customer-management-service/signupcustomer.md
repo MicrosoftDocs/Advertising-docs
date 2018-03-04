@@ -11,6 +11,9 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SignupCustomer Service Operation - Customer Management
 Creates a new customer and account that rolls up to your reseller payment method.
 

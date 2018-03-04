@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the source or seed for the keyword idea.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SourceType Value Set - Ad Insight
 Defines the source or seed for the keyword idea. 
 

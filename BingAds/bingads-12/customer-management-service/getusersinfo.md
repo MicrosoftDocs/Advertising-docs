@@ -11,6 +11,9 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetUsersInfo Service Operation - Customer Management
 Gets a list of objects that contains user identification information, for example the user name and identifier of the user.
 

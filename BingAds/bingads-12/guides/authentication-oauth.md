@@ -6,11 +6,14 @@ author: "eric-urban"
 ms.author: "eur"
 description: Authenticate for Bing Ads production services with a Microsoft Account.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Authentication with OAuth
 Bing Ads implements the implicit and authorization grant flows of the [OAuth 2.0](http://tools.ietf.org/html/rfc6749) protocol to enable authentication of Microsoft Accounts that are linked to Bing Ads accounts. You should authenticate for Bing Ads production services with a Microsoft Account, instead of providing the Bing Ads username and password set. To authenticate with a Microsoft Account in sandbox, please see [Get Sandbox Access](sandbox.md#access).
 
 > [!NOTE]
-> New customers are required to sign up for Bing Ads with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy Bing Ads credentials may continue to specify the *UserName* and *Password* header elements with Bing Ads API version 11. Starting with Bing Ads API version 12, only OAuth authentication will be supported. Managed credentials i.e., the *UserName* and *Password* header elements will not be supported. More details will be available during Q2 of Calendar Year 2018.  
+> New customers are required to sign up for Bing Ads with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy Bing Ads credentials may continue to specify the *UserName* and *Password* header elements with Bing Ads API version 11. Starting with Bing Ads API version 12, only OAuth authentication is supported. Managed credentials i.e., the *UserName* and *Password* header elements are not supported in version 12.  
 > 
 > The *DeveloperToken* header element is always required. For information on how to get a *DeveloperToken*, see [Get Started With the Bing Ads API](get-started.md).
 

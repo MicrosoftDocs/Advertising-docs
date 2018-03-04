@@ -11,6 +11,9 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SearchAccounts Service Operation - Customer Management
 Searches for accounts that match a specified criteria.
 

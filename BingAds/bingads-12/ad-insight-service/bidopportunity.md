@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains the suggested bid with estimated clicks and impressions opportunities.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # BidOpportunity Data Object - Ad Insight
 Defines an object that contains the suggested bid with estimated clicks and impressions opportunities.
 

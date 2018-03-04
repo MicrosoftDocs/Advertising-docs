@@ -6,6 +6,9 @@ author: "eric-urban"
 ms.author: "eur"
 description: Get keyword ideas and traffic estimates.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Keyword Ideas and Traffic Estimates
 Choosing keywords is one of the most important aspects of creating and maintaining a successful advertising campaign. But where to start? How do you identify the many possible keywords that describe your business? How much should you bid on those keywords to be competitive with other advertisers?
 

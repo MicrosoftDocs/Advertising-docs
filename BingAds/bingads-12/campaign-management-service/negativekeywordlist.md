@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a negative keyword list.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # NegativeKeywordList Data Object - Campaign Management
 Defines a negative keyword list. You can add negative keywords to a negative keyword list and associate the list with one or more campaigns.
 

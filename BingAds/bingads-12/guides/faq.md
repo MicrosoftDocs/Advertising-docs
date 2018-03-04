@@ -6,6 +6,9 @@ author: "eric-urban"
 ms.author: "eur"
 description: Find answers to some frequently asked questions about the Bing Ads API.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Frequently Asked Questions
 This article contains answers to some frequently asked questions about the Bing Ads API.
 
@@ -18,7 +21,7 @@ You can develop Bing Ads applications with any programming language that support
 We have heard requests for additional SDKs e.g. Perl and Ruby, although there is no plan to add support in the near term.
 
 ## Q. Which API version should I use?
-You should always use the latest version as soon as we announce support via the [blog](https://blogs.msdn.microsoft.com/bing_ads_api/) or [release notes](release-notes.md). As of May 2017 Version 11 is the highest supported version for Ad Insight, Bulk, Campaign Management API, Customer Billing, Customer Management, and Reporting API. 
+You should always use the latest version as soon as we announce support via the [blog](https://blogs.msdn.microsoft.com/bing_ads_api/) or [release notes](release-notes.md). 
 
 ## Q. Should I use the Bulk or Campaign Management API?
 The [Bulk service](../bulk-service/bulk-service-reference.md) is recommended, especially if you need to add or update ads and keywords across multiple ad groups or campaigns in an account. Some features are not available in Bulk e.g. [AddUetTags](../campaign-management-service/adduettags.md), [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md), [GetGeoLocationsFileUrl](../campaign-management-service/getgeolocationsfileurl.md), and [GetMediaByIds](../campaign-management-service/getmediabyids.md). For these features of course you must use the [Campaign Management service](../campaign-management-service/campaign-management-service-reference.md). 

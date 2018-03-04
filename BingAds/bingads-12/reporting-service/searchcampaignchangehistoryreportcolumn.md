@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the attribute columns that you can include in the SearchCampaignChangeHistoryReportRequest.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SearchCampaignChangeHistoryReportColumn Value Set - Reporting
 Defines the attribute columns that you can include in the [SearchCampaignChangeHistoryReportRequest](searchcampaignchangehistoryreportrequest.md).
 

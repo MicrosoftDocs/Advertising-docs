@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible ad group criterion status values.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdGroupCriterionStatus Value Set - Campaign Management
 Defines the possible ad group criterion status values.
 

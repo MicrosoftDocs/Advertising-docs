@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible status values of an account.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AccountLifeCycleStatus Value Set - Customer Management
 Defines the possible status values of an account.
 

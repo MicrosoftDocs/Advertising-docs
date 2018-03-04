@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the aggregation values that you can use in a search query performance report.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SearchQueryReportAggregation Value Set - Reporting
 Defines the aggregation values that you can use in a search query performance report.
 

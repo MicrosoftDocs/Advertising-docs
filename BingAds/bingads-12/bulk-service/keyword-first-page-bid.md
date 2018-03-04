@@ -6,6 +6,9 @@ author: "eric-urban"
 ms.author: "eur"
 description: Describes the Keyword First Page Bid fields in a Bulk file.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Keyword First Page Bid Record - Bulk
 Defines a keyword's estimated first page bid that can be downloaded in a bulk file.
 

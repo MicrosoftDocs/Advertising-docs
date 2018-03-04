@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains a suggested keyword and bid value.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # KeywordOpportunity Data Object - Ad Insight
 Defines an object that contains a suggested keyword and bid value.
 

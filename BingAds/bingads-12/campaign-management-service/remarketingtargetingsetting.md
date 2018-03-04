@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: The targeting setting that is applicable for all audiences e.g., custom audiences and remarketing lists that are associated with this ad group.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # RemarketingTargetingSetting Value Set - Campaign Management
 The targeting setting that is applicable for all audiences e.g., custom audiences and remarketing lists that are associated with this ad group. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery. 
 

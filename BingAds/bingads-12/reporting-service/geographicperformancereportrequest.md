@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a geographic performance report request.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GeographicPerformanceReportRequest Data Object - Reporting
 Defines a geographic performance report request. Use this report to see where your traffic is coming from: the physical location of the people searching for your ad or the locations people are searching for. You can then validate whether your location targeting strategy is successful and identify opportunities to improve.
 

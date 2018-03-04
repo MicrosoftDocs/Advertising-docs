@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the AdPerformanceReportRequest.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdPerformanceReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [AdPerformanceReportRequest](adperformancereportrequest.md).
 

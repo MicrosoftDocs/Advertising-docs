@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an age and gender demographic report request.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AgeGenderDemographicReportRequest Data Object - Reporting
 Defines an age and gender demographic report request. Use this report to discover how your campaigns and ad groups are resonating with audiences of diverse age and gender.
 

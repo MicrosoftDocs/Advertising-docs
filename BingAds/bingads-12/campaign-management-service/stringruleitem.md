@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a rule expression that depends on the string values of the Url or Referrer Url.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # StringRuleItem Data Object - Campaign Management
 Defines a rule expression that depends on the string values of the Url or Referrer Url.
 

@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible ad extension types.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdExtensionsTypeFilter Value Set - Campaign Management
 Defines the possible ad extension types.
 

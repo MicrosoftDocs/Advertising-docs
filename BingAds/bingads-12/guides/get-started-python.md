@@ -8,6 +8,9 @@ description: Install the Bing Ads Python SDK and discover code examples.
 dev_langs:
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Get Started Using Python with Bing Ads Services
 To get started developing Bing Ads applications with Python, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-python.md) or [Desktop](walkthrough-desktop-application-python.md) application. The examples have been developed with the Bing Ads Python [SDK](client-libraries.md) and run with [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). Your custom configuration may vary.
 

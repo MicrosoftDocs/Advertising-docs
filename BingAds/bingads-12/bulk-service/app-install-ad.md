@@ -8,6 +8,9 @@ description: Describes the App Install Ad fields in a Bulk file.
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # App Install Ad Record - Bulk
 Defines an app install ad that can be downloaded and uploaded in a bulk file. Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create a text ad with app ad extensions.
 

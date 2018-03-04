@@ -6,6 +6,9 @@ author: "eric-urban"
 ms.author: "eur"
 description: Describes the schema for records in a Bulk file.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Bulk File Schema
 The bulk schema defines the contents of the file for download or upload with the Bing Ads Bulk service. For both download and upload, the Bulk service supports the file types and corresponding schemas in the [DownloadEntity](downloadentity.md) value set.
 
@@ -20,20 +23,20 @@ For more information about using the Bulk service to manage your campaigns, see 
 -   [Errors](#errors)
 
 ## <a name="fileschema"></a>File Schema
-You can choose to download either a tab or comma delimited set of records (rows) and fields (columns). The first column  header is named *Type*.  The rest of the column names map to properties within or associated with the corresponding record type.
+You can choose to download either a tab or comma delimited set of records (rows) and fields (columns). The first column header is named *Type*.  The rest of the column names map to properties within or associated with the corresponding record type.
 
 > [!IMPORTANT]
-> New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file. Similarly during upload you may submit the fields in any order. The upload  record order is important when creating new entities, as described below within [Type Hierarchy](#typehierarchy).
+> New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file. Similarly during upload you may submit the fields in any order. The upload record order is important when creating new entities, as described below within [Type Hierarchy](#typehierarchy).
 
 ## <a name="formatversions"></a>Format Versions
-The bulk format version is separate from the Bing Ads API version.  Format version enables a flexible upgrade path to adopt the latest supported features without breaking your application. As a best practice you should always upgrade to the latest format version. Currently  Bing Ads API Version 11 only supports format version 5.0.
+The bulk format version is separate from the Bing Ads API version.  Format version enables a flexible upgrade path to adopt the latest supported features without breaking your application. As a best practice you should always upgrade to the latest format version. Currently Bing Ads API Version 12 only supports format version 6.0.
 
-To specify the file format version using bulk download, set *FormatVersion* to 5.0 in either the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) request.
+To specify the file format version using bulk download, set *FormatVersion* to 6.0 in either the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) request.
 
-To specify the version using bulk upload, set the *Name* field of the [Format Version](format-version.md) record to 5.0.
+To specify the version using bulk upload, set the *Name* field of the [Format Version](format-version.md) record to 6.0.
 
 ## <a name="recordtypes"></a>Record Types
-Records available for upload and download using [Format Version](#formatversions) 5.0 are detailed in the table below. 
+Records available for upload and download using [Format Version](#formatversions) 6.0 are detailed in the table below. 
 
 > [!IMPORTANT]
 > New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file.
@@ -157,7 +160,7 @@ The download file will always include a record for the [Format Version](format-v
 
 -  Use the reserved *delete_value* string to delete or empty the existing value of an optional field. If you use *delete_value* in required fields, please note the following.
 
--  If you use the reserved *delete_value* string in place of a required string value, *delete_value* will be ignored and the results file will show *delete_value* in that field. For example if you set  the *Budget* field of the [Campaign](campaign.md) record to *delete_value*, then the *Budget* field would be set to *delete_value* in the results file. In this example the campaign's budget would not be updated.
+-  If you use the reserved *delete_value* string in place of a required string value, *delete_value* will be ignored and the results file will show *delete_value* in that field. For example if you set the *Budget* field of the [Campaign](campaign.md) record to *delete_value*, then the *Budget* field would be set to *delete_value* in the results file. In this example the campaign's budget would not be updated.
 
 -  If you use the reserved *delete_value* string in place of a required value set, the results file will return the default value. For example if you set the *Network Distribution* field of the [Ad Group](ad-group.md) record to *delete_value*, then the *Network Distribution* field would be set to *OwnedAndOperatedAndSyndicatedSearch* in the results file.  In this example the ad group's network distribution would be set to *OwnedAndOperatedAndSyndicatedSearch*.
 
@@ -169,7 +172,7 @@ The download file will always include a record for the [Format Version](format-v
   > [!NOTE]
   > In most cases you can update the existing record instead of submitting separate delete and add records, for example you can update the *Bid Adjustment* field of an existing [Campaign Gender Criterion](campaign-gender-criterion.md). 
 
--  When deleting a record the *Id* field is required. A reference to the parent entity, whether the value is a Bing Ads assigned system identifier or  a [Reference Keys](#referencekeys) for the parent record, is also required. For example when deleting an ad group, either the *Parent Id* field of the  [Ad Group](ad-group.md) record should match the *Id* field in the [Campaign](campaign.md) record or the *Campaign* field of the  [Ad Group](ad-group.md) record should match the *Campaign* field in the [Campaign](campaign.md) record. If both are provided then the *Parent Id* field of the  [Ad Group](ad-group.md) record ([Reference Keys](#referencekeys)) is ignored.
+-  When deleting a record the *Id* field is required. A reference to the parent entity, whether the value is a Bing Ads assigned system identifier or a [Reference Keys](#referencekeys) for the parent record, is also required. For example when deleting an ad group, either the *Parent Id* field of the [Ad Group](ad-group.md) record should match the *Id* field in the [Campaign](campaign.md) record or the *Campaign* field of the [Ad Group](ad-group.md) record should match the *Campaign* field in the [Campaign](campaign.md) record. If both are provided then the *Parent Id* field of the [Ad Group](ad-group.md) record ([Reference Keys](#referencekeys)) is ignored.
 
 -  With a few exceptions the result file will only include the columns that you uploaded. For example if you upload a new [Ad Group Negative Keyword](ad-group-negative-keyword.md) without the *Id* column header, then the result file will not include the assigned identifier for the new negative keyword. The bulk file should contain the *Id* column; however, you should leave the *Id* empty for each new [Ad Group Negative Keyword](ad-group-negative-keyword.md). The exceptions to this rule are campaigns, ad groups, ads, and keywords in which case the result file will contain all columns regardless of the uploaded columns.  
 
@@ -219,14 +222,14 @@ The bulk download file or the bulk upload results file may contain records where
 > [!NOTE]
 > The upload results file may include multiple error records corresponding to the same uploaded record.
 
-Errors related to new features such as Final URLs will include additional details about where the error occurred in the *Field Path* column. Each field path name corresponds to an element of one of the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md) data objects. For example if the *Tracking Template* field of a [Campaign](campaign.md) record does not begin with http:// or https://, {lpurl}, or {unescapedlpurl}, the value of this *Field Path* value is TrackingTemplate. The  *TrackingUrlTemplate* is an element of the [Campaign](../campaign-management-service/campaign.md) data object available with the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md).
+Errors related to new features such as Final URLs will include additional details about where the error occurred in the *Field Path* column. Each field path name corresponds to an element of one of the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md) data objects. For example if the *Tracking Template* field of a [Campaign](campaign.md) record does not begin with http:// or https://, {lpurl}, or {unescapedlpurl}, the value of this *Field Path* value is TrackingTemplate. The *TrackingUrlTemplate* is an element of the [Campaign](../campaign-management-service/campaign.md) data object available with the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md).
 
 |Type|Tracking Template|Error|Error Number|Field Path|
 |--------|---------------------|---------|----------------|--------------|
 |Campaign Error|tracker.example.com/?season={_season}&amp;promocode={_promocode}&amp;u={lpurl}|InvalidUrlScheme|4600|TrackingTemplate|
 |Campaign Error|tracker.example.com/?season={_season}&amp;promocode={_promocode}&amp;u={lpurl}|CampaignServiceInvalidUrl|2611|TrackingTemplate|
 > [!IMPORTANT]
-> The  *Field Path* value is subject to change, so you should not take a dependency on the current string format.
+> The *Field Path* value is subject to change, so you should not take a dependency on the current string format.
 > The *Field Path* is not supported for all errors. It is supported for *Mobile Final Url*, *Final Url*, *Tracking Template*, and *Custom Parameter* fields of the respective [Campaign](campaign.md), [Ad Group](ad-group.md), [Expanded Text Ad](expanded-text-ad.md), [Product Ad](product-ad.md), [Ad Group Product Partition](ad-group-product-partition.md), [Keyword](keyword.md), and [Sitelink Ad Extension](sitelink-ad-extension.md) records. It is also supported for errors related to all fields of the [Callout Ad Extension](callout-ad-extension.md) and [Review Ad Extension](review-ad-extension.md) records.
 
 If the issue is related to an editorial error, then the *Editorial Location*, *Editorial Term*, *Editorial Reason Code*, and *Publisher Countries* columns may also contain more information about the error.

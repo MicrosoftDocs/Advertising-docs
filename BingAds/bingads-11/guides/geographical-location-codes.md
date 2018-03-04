@@ -24,7 +24,7 @@ The comma separated value (CSV) file contains data organized in the following no
 
 
 ### <a name="version2"></a>File Format Version 2.0
-If you specified *Version* as 2.0 when calling the [GetGeoLocationsFileUrl](../campaign-management-service/getgeolocationsfileurl.md) operation, the following data is available in the downloaded file. Bing Ads API Version 11 only supports file format version 2.0.
+If you specified *Version* as 2.0 when calling the [GetGeoLocationsFileUrl](../campaign-management-service/getgeolocationsfileurl.md) operation, the following data is available in the downloaded file. Bing Ads API currently only supports file format version 2.0.
 
 |Column Name|Description|
 |---------------|---------------|

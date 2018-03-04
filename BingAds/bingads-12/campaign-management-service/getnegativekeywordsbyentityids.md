@@ -11,6 +11,9 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetNegativeKeywordsByEntityIds Service Operation - Campaign Management
 Gets the negative keywords that are only associated with the specified campaigns or ad groups.
 

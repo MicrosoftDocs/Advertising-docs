@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an expanded text ad.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ExpandedTextAd Data Object - Campaign Management
 Defines an expanded text ad.
 

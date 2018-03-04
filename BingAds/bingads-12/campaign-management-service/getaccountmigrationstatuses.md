@@ -11,6 +11,9 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetAccountMigrationStatuses Service Operation - Campaign Management
 Gets the migration status info for the specified accounts.
 

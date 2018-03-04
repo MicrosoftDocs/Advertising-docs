@@ -6,6 +6,9 @@ author: "eric-urban"
 ms.author: "eur"
 description: Setup Dynamic Search ads with the Bing Ads API.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Dynamic Search Ads
 Dynamic Search Ads are coming to Bing Ads. You will be able to create a new type of campaign where the ad copy is automatically generated from the content on your website. 
 

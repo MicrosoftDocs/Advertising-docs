@@ -6,6 +6,9 @@ author: "eric-urban"
 ms.author: "eur"
 description: Learn about error handling and troubleshooting your application.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Handling Service Errors and Exceptions
 This article describes details on error handling and troubleshooting your application.
 
@@ -166,7 +169,7 @@ You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/sp
         <dependency>
           <groupId>com.microsoft.bingads</groupId>
           <artifactId>microsoft.bingads</artifactId>
-          <version>11.5.5</version>
+          <version>11.12.1</version>
         </dependency>
         <dependency>
           <groupId>org.springframework</groupId>
@@ -177,7 +180,7 @@ You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/sp
     </project>
     ```
     > [!NOTE]
-    > Version 11.5.5 of the Bing Ads Java SDK is included as an example. For details about the latest SDK dependency version, please see the [Bing Ads Java SDK GitHub README.md](https://github.com/BingAds/BingAds-Java-SDK).
+    > Version 11.12.1 of the Bing Ads Java SDK is included as an example. For details about the latest SDK dependency version, please see the [Bing Ads Java SDK GitHub README.md](https://github.com/BingAds/BingAds-Java-SDK).
    
 2.  Add cxf.xml to your project, and add the following xml.
     ```xml

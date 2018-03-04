@@ -6,6 +6,9 @@ author: "eric-urban"
 ms.author: "eur"
 description: Setup bid and budget strategies.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Budget and Bid Strategies
 Before your ads can run, you need to set your campaign's budget. You'll also need to choose a bid strategy type, and optionally set keyword level match type bids. Depending on the type of campaign you are running, see the following sections for more details.
 

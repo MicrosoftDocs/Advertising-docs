@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the base object of a conversion goal.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ConversionGoal Data Object - Campaign Management
 Defines the base object of a conversion goal.
 

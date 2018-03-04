@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an account.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Account Data Object - Customer Management
 Defines an account. This is the base object from which the advertising accounts derive.
 

@@ -11,6 +11,9 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DeleteAdExtensionsAssociations Service Operation - Campaign Management
 Removes the specified association from the respective campaigns or ad groups.
 

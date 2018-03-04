@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an app install conversion goal.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AppInstallGoal Data Object - Campaign Management
 Defines an app install conversion goal. Use this type of goal to track every time someone installs your app as a conversion.
 

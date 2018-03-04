@@ -11,6 +11,9 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SearchInsertionOrders Service Operation - Customer Billing
 Searches for insertion orders that match a specified criteria.
 
