@@ -9,13 +9,13 @@ dev_langs:
   - csharp
 ---
 # Ad Group Sitelink2 Ad Extension Record - Bulk
-Defines an association record between an [Ad Group](../bulk-service/ad-group.md) and a [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or sitelink2 ad extension, use the [Ad Group](../bulk-service/ad-group.md) or [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) record. 
+Defines an association record between an [Ad Group](ad-group.md) and a [Sitelink2 Ad Extension](sitelink2-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or sitelink2 ad extension, use the [Ad Group](ad-group.md) or [Sitelink2 Ad Extension](sitelink2-ad-extension.md) record. 
 
 > [!NOTE]
-> During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) records (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions.
+> During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](sitelink2-ad-extension.md) records (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions.
 	
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Ad Group Sitelink2 Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For an *Ad Group Sitelink2 Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Ad Group](#adgroup)
 - [Campaign](#campaign)
@@ -30,7 +30,7 @@ For an *Ad Group Sitelink2 Ad Extension* record, the following attribute fields 
 - [Publisher Countries](#publishercountries)
 - [Status](#status)
 
-You can download all fields of the *Ad Group Sitelink2 Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupSitelink2AdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group Sitelink2 Ad Extension* record by including the [DownloadEntity](downloadentity.md) value of *AdGroupSitelink2AdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would associate a sitelink2 ad extension to an ad group if the valid *Id* and *Parent Id* are provided. 
 
@@ -117,7 +117,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](~/campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Delete:** Read-only  
@@ -133,9 +133,9 @@ This field will not be set if a combination of terms caused the failure or if th
 ### <a name="id"></a>Id
 The identifier of the ad extension that is associated or removed from the ad group.
 
-This bulk field maps to the *Id* field of the [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) record. 
+This bulk field maps to the *Id* field of the [Sitelink2 Ad Extension](sitelink2-ad-extension.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Sitelink2 Ad Extension](sitelink2-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -150,9 +150,9 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The identifier of the ad group where this ad extension is associated or removed.
 	
-This bulk field maps to the *Id* field of the [Ad Group](../bulk-service/ad-group.md) record. 
+This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-service/ad-group.md) record. This is recommended if you are associating ad extensions to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](ad-group.md) record. This is recommended if you are associating ad extensions to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 > [!NOTE]
@@ -175,7 +175,7 @@ Possible values are *Active* and *Deleted*. If the ad extension is associated wi
 **Delete:** Required. The Status must be set to *Deleted*. 
 	
 ## <a name="entityperformancedata"></a>Performance Data Fields in the Bulk File
-If the [DataScope Value Set](../bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
+If the [DataScope Value Set](datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
 
 |Column Header|Description|
 |-----------------|---------------|

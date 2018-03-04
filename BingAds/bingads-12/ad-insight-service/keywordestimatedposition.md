@@ -26,7 +26,7 @@ Defines an object that contains the keyword and the estimated position in the se
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="estimatedpositions"></a>EstimatedPositions|An array of [EstimatedPositionAndTraffic](../ad-insight-service/estimatedpositionandtraffic.md) data objects that contains the position in the search results corresponding to the specified maximum bid.<br /><br />Each object also contains estimates of clicks, average cost per click (CPC), impressions, click-through rate (CTR), and total cost given the specified bid.<br /><br />If there is no data available for a match type, the array will not include estimates for the match type.|[EstimatedPositionAndTraffic](estimatedpositionandtraffic.md) array|
+|<a name="estimatedpositions"></a>EstimatedPositions|An array of [EstimatedPositionAndTraffic](estimatedpositionandtraffic.md) data objects that contains the position in the search results corresponding to the specified maximum bid.<br /><br />Each object also contains estimates of clicks, average cost per click (CPC), impressions, click-through rate (CTR), and total cost given the specified bid.<br /><br />If there is no data available for a match type, the array will not include estimates for the match type.|[EstimatedPositionAndTraffic](estimatedpositionandtraffic.md) array|
 |<a name="keyword"></a>Keyword|The keyword to which the estimates apply.|**string**|
 
 ## Requirements

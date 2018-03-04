@@ -124,7 +124,7 @@ The system generated identifier of the negative keyword list that contains the n
 
 This bulk field maps to the *Id* field of the [Negative Keyword List](negative-keyword-list.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing negative keyword list identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Negative Keyword List](negative-keyword-list.md) record. This is recommended if you are adding new negative keywords to a new negative keyword list in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing negative keyword list identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Negative Keyword List](negative-keyword-list.md) record. This is recommended if you are adding new negative keywords to a new negative keyword list in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.  
 **Delete:** Read-only  
 

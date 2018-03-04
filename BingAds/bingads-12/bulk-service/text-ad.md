@@ -17,7 +17,7 @@ Defines a text ad that can be downloaded and uploaded in a bulk file.
 > It is important to note that all your existing STAs will continue to serve alongside EXTAs for the foreseeable future. While there is no date on when STAs will stop serving, you can expect an update to all of our customers well in advance once we make the decision to sunset serving STAs.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Text Ad* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For a *Text Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Ad Format Preference](#adformatpreference)
 - [Ad Group](#adgroup)
@@ -42,7 +42,7 @@ For a *Text Ad* record, the following attribute fields are available in the [Bul
 - [Title](#title)
 - [Tracking Template](#trackingtemplate)
 
-You can download all fields of the *Text Ad* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *TextAds* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Text Ad* record by including the [DownloadEntity](downloadentity.md) value of *TextAds* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new text ad given a valid ad group ID (*Parent Id*). 
 
@@ -222,7 +222,7 @@ The maximum input length of the URL is 200 characters, and can contain dynamic t
 ### <a name="editorialappealstatus"></a>Editorial Appeal Status
 Determines whether you can appeal the issues found by the editorial review.
 
-Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](~/campaign-management-service/appealstatus.md).
+Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](../campaign-management-service/appealstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -245,7 +245,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdEditorialStatus Value Set](~/campaign-management-service/adeditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdEditorialStatus Value Set](../campaign-management-service/adeditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -334,9 +334,9 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The system generated identifier of the ad group that contains the ad.
 
-This bulk field maps to the *Id* field of the [Ad Group](../bulk-service/ad-group.md) record.
+This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-service/ad-group.md) record. This is recommended if you are adding new ads to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](ad-group.md) record. This is recommended if you are adding new ads to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only  
 **Delete:** Read-only  
 
@@ -408,7 +408,7 @@ The following validation rules apply to tracking templates. For more details abo
 
 
 ## <a name="entityperformancedata"></a>Performance Data Fields in the Bulk File
-If the [DataScope Value Set](../bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
+If the [DataScope Value Set](datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
 
 |Column Header|Description|
 |-----------------|---------------|

@@ -81,7 +81,7 @@ The identifier of the label that is applied or removed from the dynamic search a
 
 This bulk field maps to the *Id* field of the [Label](label.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](label.md) record. This is recommended if you are applying new labels to dynamic search ads in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](label.md) record. This is recommended if you are applying new labels to dynamic search ads in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -98,7 +98,7 @@ The identifier of the dynamic search ad where this label is applied or removed.
 	
 This bulk field maps to the *Id* field of the [Dynamic Search Ad](dynamic-search-ad.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing dynamic search ad identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Dynamic Search Ad](dynamic-search-ad.md) record. This is recommended if you are applying labels to a new dynamic search ad in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing dynamic search ad identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Dynamic Search Ad](dynamic-search-ad.md) record. This is recommended if you are applying labels to a new dynamic search ad in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status

@@ -18,10 +18,10 @@ Each radius criterion defines a radius, latitude, and longitude for the accompan
 The maximum number of radius criterions that you can specify per campaign or ad group is 2,000.
 
 > [!NOTE]
-> You can only have one [Campaign Location Intent Criterion](../bulk-service/campaign-location-intent-criterion.md) record per campaign to determine the location intent option that applies for all of the campaign's [Campaign Location Criterion](../bulk-service/campaign-location-criterion.md) and [Campaign Radius Criterion](../bulk-service/campaign-radius-criterion.md) records. When you create the campaign's first criterion, a [Campaign Location Intent Criterion](../bulk-service/campaign-location-intent-criterion.md) record will also be added automatically with the default *Target* set to *PeopleInOrSearchingForOrViewingPages*. You can add or update a campaign's [Campaign Location Intent Criterion](../bulk-service/campaign-location-intent-criterion.md), whether or not the campaign has any other criterions. You cannot delete a campaign's [Campaign Location Intent Criterion](../bulk-service/campaign-location-intent-criterion.md), although it has no purpose without location or radius criterions. 
+> You can only have one [Campaign Location Intent Criterion](campaign-location-intent-criterion.md) record per campaign to determine the location intent option that applies for all of the campaign's [Campaign Location Criterion](campaign-location-criterion.md) and [Campaign Radius Criterion](campaign-radius-criterion.md) records. When you create the campaign's first criterion, a [Campaign Location Intent Criterion](campaign-location-intent-criterion.md) record will also be added automatically with the default *Target* set to *PeopleInOrSearchingForOrViewingPages*. You can add or update a campaign's [Campaign Location Intent Criterion](campaign-location-intent-criterion.md), whether or not the campaign has any other criterions. You cannot delete a campaign's [Campaign Location Intent Criterion](campaign-location-intent-criterion.md), although it has no purpose without location or radius criterions. 
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Campaign Radius Criterion* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For a *Campaign Radius Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Bid Adjustment](#bidadjustment)
 - [Campaign](#campaign)
@@ -36,7 +36,7 @@ For a *Campaign Radius Criterion* record, the following attribute fields are ava
 - [Status](#status)
 - [Unit](#unit)
 
-You can download all fields of the *Campaign Radius Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Campaign Radius Criterion* record by including the [DownloadEntity](downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new campaign radius criterion if a valid campaign identifier (*Parent Id*) is provided. 
 
@@ -191,9 +191,9 @@ The name can contain a maximum of 50 characters.
 ### <a name="parentid"></a>Parent Id
 The identifier of the campaign where this criterion is applied or removed.
 	
-This bulk field maps to the *Id* field of the [Campaign](../bulk-service/campaign.md) record. 
+This bulk field maps to the *Id* field of the [Campaign](campaign.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new criterions to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](campaign.md) record. This is recommended if you are adding new criterions to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 

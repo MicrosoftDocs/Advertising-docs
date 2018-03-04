@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the AudiencePerformanceReportRequest.
 ---
 # AudiencePerformanceReportColumn Value Set - Reporting
-Defines the attributes and performance statistics columns that you can include in the [AudiencePerformanceReportRequest](../reporting-service/audienceperformancereportrequest.md).
+Defines the attributes and performance statistics columns that you can include in the [AudiencePerformanceReportRequest](audienceperformancereportrequest.md).
 
 The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](../guides/reports.md#columnsdata).
 

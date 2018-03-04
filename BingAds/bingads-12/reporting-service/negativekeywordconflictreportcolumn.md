@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the attributes columns that you can include in the NegativeKeywordConflictReportRequest.
 ---
 # NegativeKeywordConflictReportColumn Value Set - Reporting
-Defines the attributes columns that you can include in the [NegativeKeywordConflictReportRequest](../reporting-service/negativekeywordconflictreportrequest.md).
+Defines the attributes columns that you can include in the [NegativeKeywordConflictReportRequest](negativekeywordconflictreportrequest.md).
 
 For a list of columns that you must include, please see the [Required Columns](#requiredcolumns) section below.
 

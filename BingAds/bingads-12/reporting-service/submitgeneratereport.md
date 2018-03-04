@@ -15,7 +15,7 @@ dev_langs:
 Submits a report request.
 
 > [!NOTE]
-> You must use the same user credentials for the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) and [PollGenerateReport](../reporting-service/pollgeneratereport.md).
+> You must use the same user credentials for the [SubmitGenerateReport](submitgeneratereport.md) and [PollGenerateReport](pollgeneratereport.md).
 
 ## <a name="request"></a>Request Elements
 The *SubmitGenerateReportRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -24,7 +24,7 @@ The *SubmitGenerateReportRequest* object defines the [body](#request-body) and [
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="reportrequest"></a>ReportRequest|The report request. The request must be an object that derives from [ReportRequest](../reporting-service/reportrequest.md). For a list of report request types, see [Report Types](../guides/report-types.md).|[ReportRequest](reportrequest.md)|
+|<a name="reportrequest"></a>ReportRequest|The report request. The request must be an object that derives from [ReportRequest](reportrequest.md). For a list of report request types, see [Report Types](../guides/report-types.md).|[ReportRequest](reportrequest.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -36,7 +36,7 @@ The *SubmitGenerateReportResponse* object defines the [body](#response-body) and
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="reportrequestid"></a>ReportRequestId|The identifier of the report request. Use this identifier when calling the [PollGenerateReport](../reporting-service/pollgeneratereport.md) to determine the status of the report request. Once returned, the identifier is valid for two days.<br /><br />The *string* has a length up to 40 and can contain any character.|**string**|
+|<a name="reportrequestid"></a>ReportRequestId|The identifier of the report request. Use this identifier when calling the [PollGenerateReport](pollgeneratereport.md) to determine the status of the report request. Once returned, the identifier is valid for two days.<br /><br />The *string* has a length up to 40 and can contain any character.|**string**|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

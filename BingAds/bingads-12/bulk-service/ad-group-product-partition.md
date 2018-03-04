@@ -14,7 +14,7 @@ Defines an ad group product partition that can be uploaded and downloaded in a b
 You can upload *Ad Group Product Partition* records for multiple ad groups in the same bulk file, as long as the validation rules are satisfied as described in [Create a Bing Shopping Campaign with the Bulk Service](../guides/product-ads.md#bingshopping-bulkservice). For example if you are creating or modifying the tree structure, parent product partition tree nodes must be ordered ahead of the child product partition tree nodes; however, the order does not matter for non-structural changes such as updating the bid. For example if you want to update the bids without adding, deleting, or updating the tree structure, then you only need to upload the *Id*, *Parent Id*, and *Bid* fields.   
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Ad Group Product Partition* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For an *Ad Group Product Partition* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Ad Group](#adgroup)
 - [Bid](#bid)
@@ -33,7 +33,7 @@ For an *Ad Group Product Partition* record, the following attribute fields are a
 - [Sub Type](#subtype)
 - [Tracking Template](#trackingtemplate)
 
-You can download all fields of the *Ad Group Product Partition* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupProductPartitions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group Product Partition* record by including the [DownloadEntity](downloadentity.md) value of *AdGroupProductPartitions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new ad group product partition given a valid ad group ID (*Parent Id*). 
 
@@ -230,9 +230,9 @@ The criterion identifier of the parent product partition.
 ### <a name="parentid"></a>Parent Id
 The system generated identifier of the ad group that contains the product partition.
 
-This bulk field maps to the *Id* field of the [Ad Group](../bulk-service/ad-group.md) record.
+This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-service/ad-group.md) record. This is recommended if you are adding new product partitions to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](ad-group.md) record. This is recommended if you are adding new product partitions to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -276,7 +276,7 @@ Possible values are *Subdivision* and *Unit*.
 **Delete:** Read-only  
 
 ### <a name="trackingtemplate"></a>Tracking Template
-The tracking templates can be used in tandem with the URL specified in the 'Link' field for the product offer that you submitted via the [Content API](~/shopping-content/index.md). By combining the feed URL with the tracking template, the landing page URL is assembled where a user is directed after clicking the ad. When you use the *Tracking Template* field to update the URL parameters instead of updating them in the feed URL, the feed URL doesn't need to go through editorial review and your ads will continue to serve uninterrupted. For example if your product offer URL in the catalog feed is *http://contoso.com/*, you could specify the following tracking template: *{lpurl}?matchtype={matchtype}&device={device}*.
+The tracking templates can be used in tandem with the URL specified in the 'Link' field for the product offer that you submitted via the [Content API](../../bingads/shopping-content/index.md). By combining the feed URL with the tracking template, the landing page URL is assembled where a user is directed after clicking the ad. When you use the *Tracking Template* field to update the URL parameters instead of updating them in the feed URL, the feed URL doesn't need to go through editorial review and your ads will continue to serve uninterrupted. For example if your product offer URL in the catalog feed is *http://contoso.com/*, you could specify the following tracking template: *{lpurl}?matchtype={matchtype}&device={device}*.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
@@ -294,15 +294,15 @@ The following validation rules apply to tracking templates. For more details abo
 
 
 ## <a name="entityperformancedata"></a>Performance Data Fields in the Bulk File
-If the [DataScope Value Set](../bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
+If the [DataScope Value Set](datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
 
 The tree root *Ad Group Product Partition* record contains performance statistics for the entire tree, the *Ad Group Product Partition* record corresponding to each subdivision contains the performance statistics of all leaf nodes under it, and the *Ad Group Product Partition* record corresponding to each unit contains performance statistics only for that specific node.
 
 > [!NOTE]
-> Performance statistics returned by the Bulk and Reporting services lags behind the performance statistics that you see in the Bing Ads web application  by up to an hour. Please note the following differences between the [Bulk service](../bulk-service/bulk-service-reference.md) and [Reporting service](~/reporting-service/reporting-service-reference.md) with respect to the freshness of the tree structure and performance statistics.
+> Performance statistics returned by the Bulk and Reporting services lags behind the performance statistics that you see in the Bing Ads web application  by up to an hour. Please note the following differences between the [Bulk service](bulk-service-reference.md) and [Reporting service](../reporting-service/reporting-service-reference.md) with respect to the freshness of the tree structure and performance statistics.
 > 
-> -   If you have modified your product partition tree structure within the last hour, the tree structure of your product partitions will always be up to date in the [Bulk](../bulk-service/bulk-service-reference.md) download. However, the [Bulk](../bulk-service/bulk-service-reference.md) download performance statistics may lag behind the performance statistics that you see in the Bing Ads web application by up to an hour. **Note:** If you have modified your product partition tree structure within the last hour, only the *Ad Group Product Partition* record for the tree root node will contain performance statistics fields such as impressions and clicks. 
-> -   If you have modified your product partition tree structure within the last hour, both the performance statistics and the tree structure of your product partitions returned in a report through the [Reporting service](~/reporting-service/reporting-service-reference.md) may lag behind the data that you see in the Bing Ads web application by up to an hour.
+> -   If you have modified your product partition tree structure within the last hour, the tree structure of your product partitions will always be up to date in the [Bulk](bulk-service-reference.md) download. However, the [Bulk](bulk-service-reference.md) download performance statistics may lag behind the performance statistics that you see in the Bing Ads web application by up to an hour. **Note:** If you have modified your product partition tree structure within the last hour, only the *Ad Group Product Partition* record for the tree root node will contain performance statistics fields such as impressions and clicks. 
+> -   If you have modified your product partition tree structure within the last hour, both the performance statistics and the tree structure of your product partitions returned in a report through the [Reporting service](../reporting-service/reporting-service-reference.md) may lag behind the data that you see in the Bing Ads web application by up to an hour.
 
 |Column Header|Description|
 |-----------------|---------------|

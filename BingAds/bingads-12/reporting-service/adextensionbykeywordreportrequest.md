@@ -11,7 +11,7 @@ Defines an ad extension by keyword report request. Use this report to compare ho
 
 You can request impressions, clicks, spend, and average cost per click of your extensions for each keyword. Once downloaded, this data can be sorted by keyword, keyword ID, ad extension type, and ad extension version.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
 > [!NOTE]
 > You should not use this report to get performance data for Bing Shopping campaigns. It is only applicable for other campaign types.

@@ -243,7 +243,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](~/campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -270,7 +270,7 @@ The end date is inclusive. For example, if you set this field to 3/10/2017, the 
 ### <a name="geocodestatus"></a>Geo Code Status
 A status value that indicates whether the business’ latitude and longitude coordinates have been determined.
 
-If you provide the coordinates, the status will be set to *Complete*; otherwise, the status will indicate the progress of determining the coordinates of the specified business’ address. For more details on possible values, see [BusinessGeoCodeStatus Value Set](~/campaign-management-service/businessgeocodestatus.md).
+If you provide the coordinates, the status will be set to *Complete*; otherwise, the status will indicate the progress of determining the coordinates of the specified business’ address. For more details on possible values, see [BusinessGeoCodeStatus Value Set](../campaign-management-service/businessgeocodestatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only    
@@ -279,7 +279,7 @@ If you provide the coordinates, the status will be set to *Complete*; otherwise,
 ### <a name="id"></a>Id
 The system generated identifier of the ad extension.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Campaign Location Ad Extension](campaign-location-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Campaign Location Ad Extension](campaign-location-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -312,7 +312,7 @@ If you specify the known coordinates, the service does not confirm whether the s
 **Delete:** Read-only  
 
 ### <a name="mapicon"></a>Map Icon
-The identifier of an icon used to mark the business’ location on Bing Maps. You can specify the identifier of a predefined icon or a custom icon that you added by calling the [AddMedia](~/campaign-management-service/addmedia.md) Campaign Management service operation. The size of a custom icon can be up to 26x26. For a list of predefined icons, see [LocationAdExtension Remarks](~/campaign-management-service/locationadextension.md#remarks).
+The identifier of an icon used to mark the business’ location on Bing Maps. You can specify the identifier of a predefined icon or a custom icon that you added by calling the [AddMedia](../campaign-management-service/addmedia.md) Campaign Management service operation. The size of a custom icon can be up to 26x26. For a list of predefined icons, see [LocationAdExtension Remarks](../campaign-management-service/locationadextension.md#remarks).
 
 **Add:** Optional. If you do not specify a map icon when you add the location ad extension, the icon will default to the predefined Generic predefined icon identifier (Production=18000000000115318; Sandbox=97000000000006420).    
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    

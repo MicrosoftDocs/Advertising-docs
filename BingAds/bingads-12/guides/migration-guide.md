@@ -11,7 +11,7 @@ description: Get details about migrating to Bing Ads API version 12.
 
 # Migrating to Bing Ads API Version 12
 > [!IMPORTANT]
-> With the availability of Bing Ads API version 12, version 11 is deprecated and will sunset by October 31, 2018. 
+> With the availability of Bing Ads API version 12, [version 11](migration-guide.md?view=bingads-11) is deprecated and will sunset by October 31, 2018. 
 
 The sections below describe changes from version 11 to version 12 of the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md), [Bulk](../bulk-service/bulk-service-reference.md), [Campaign Management](../campaign-management-service/campaign-management-service-reference.md), [Customer Billing](../customer-billing-service/customer-billing-service-reference.md), [Customer Management](../customer-management-service/customer-management-service-reference.md), and [Reporting](../reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services.
 

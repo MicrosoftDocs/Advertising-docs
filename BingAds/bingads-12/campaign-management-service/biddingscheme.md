@@ -10,12 +10,12 @@ description: Defines the base object of a bidding scheme for how you want to man
 Defines the base object of a bidding scheme for how you want to manage your bids. A bidding scheme is known as a *bid strategy type* in the Bing Ads web application.
 
 Do not try to instantiate a *BiddingScheme*. You can create one or more following objects that derive from it.
-- [EnhancedCpcBiddingScheme](../campaign-management-service/enhancedcpcbiddingscheme.md)
-- [InheritFromParentBiddingScheme](../campaign-management-service/inheritfromparentbiddingscheme.md)
-- [ManualCpcBiddingScheme](../campaign-management-service/manualcpcbiddingscheme.md) 
-- [MaxClicksBiddingScheme](../campaign-management-service/maxclicksbiddingscheme.md)
-- [MaxConversionsBiddingScheme](../campaign-management-service/maxconversionsbiddingscheme.md)
-- [TargetCpaBiddingScheme](../campaign-management-service/targetcpabiddingscheme.md) 
+- [EnhancedCpcBiddingScheme](enhancedcpcbiddingscheme.md)
+- [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md)
+- [ManualCpcBiddingScheme](manualcpcbiddingscheme.md) 
+- [MaxClicksBiddingScheme](maxclicksbiddingscheme.md)
+- [MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md)
+- [TargetCpaBiddingScheme](targetcpabiddingscheme.md) 
 
 > [!IMPORTANT]
 > If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).

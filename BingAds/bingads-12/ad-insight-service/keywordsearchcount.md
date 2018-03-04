@@ -24,7 +24,7 @@ Defines an object that contains a list of search counts for each device and netw
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keyword"></a>Keyword|The keyword to which the search count data applies.|**string**|
-|<a name="searchcountsbyattributes"></a>SearchCountsByAttributes|An array of [SearchCountsByAttributes](../ad-insight-service/searchcountsbyattributes.md) objects that contain search counts for each device and network where the keyword was included in a search query.<br /><br />For each requested keyword that has no available data, the [SearchCountsByAttributes](../ad-insight-service/searchcountsbyattributes.md) element will be nil.|[SearchCountsByAttributes](searchcountsbyattributes.md) array|
+|<a name="searchcountsbyattributes"></a>SearchCountsByAttributes|An array of [SearchCountsByAttributes](searchcountsbyattributes.md) objects that contain search counts for each device and network where the keyword was included in a search query.<br /><br />For each requested keyword that has no available data, the [SearchCountsByAttributes](searchcountsbyattributes.md) element will be nil.|[SearchCountsByAttributes](searchcountsbyattributes.md) array|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

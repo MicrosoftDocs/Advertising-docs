@@ -11,7 +11,7 @@ Defines a budget summary report request. Use this report to discover how your ca
 
 You can request your monthly budget, how much you have spent to date, and whether you are on target to spend your monthly budget.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
 ## Syntax
 ```xml

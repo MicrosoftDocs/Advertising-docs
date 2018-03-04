@@ -18,7 +18,7 @@ Each gender criterion defines a gender for the accompanying criterion bid adjust
 The maximum number of gender criterions that you can specify per campaign or ad group is two i.e. one for *Male* and one for *Female*.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Campaign Gender Criterion* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For a *Campaign Gender Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Bid Adjustment](#bidadjustment)
 - [Campaign](#campaign)
@@ -29,7 +29,7 @@ For a *Campaign Gender Criterion* record, the following attribute fields are ava
 - [Status](#status)
 - [Target](#target)
 
-You can download all fields of the *Campaign Gender Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Campaign Gender Criterion* record by including the [DownloadEntity](downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new campaign gender criterion if a valid campaign identifier (*Parent Id*) is provided. 
 
@@ -141,9 +141,9 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The identifier of the campaign where this criterion is applied or removed.
 	
-This bulk field maps to the *Id* field of the [Campaign](../bulk-service/campaign.md) record. 
+This bulk field maps to the *Id* field of the [Campaign](campaign.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](../bulk-service/campaign.md) record. This is recommended if you are adding new criterions to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](campaign.md) record. This is recommended if you are adding new criterions to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 

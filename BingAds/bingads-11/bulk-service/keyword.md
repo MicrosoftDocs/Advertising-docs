@@ -227,7 +227,7 @@ The URL of the webpage to take the user to when they click the ad. The keywordâ€
 ### <a name="editorialappealstatus"></a>Editorial Appeal Status
 Determines whether you can appeal the issues found by the editorial review.
 
-Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](~/campaign-management-service/appealstatus.md).
+Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](../campaign-management-service/appealstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -250,7 +250,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the keyword.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [KeywordEditorialStatus Value Set](~/campaign-management-service/keywordeditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [KeywordEditorialStatus Value Set](../campaign-management-service/keywordeditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -412,7 +412,7 @@ The system generated identifier of the ad group that contains the keyword.
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](ad-group.md) record. This is recommended if you are adding new keywords to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](ad-group.md) record. This is recommended if you are adding new keywords to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only  
 **Delete:** Read-only  
 

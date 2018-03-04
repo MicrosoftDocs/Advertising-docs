@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment.
 ---
 # Bing Ads Sandbox
-Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served. Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](../guides/web-service-addresses.md).
+Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served. Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](web-service-addresses.md).
 
 > [!NOTE]
 > Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. Notifications are posted in the [Bing Ads Developer Blog](https://blogs.msdn.microsoft.com/bing_ads_api/).
@@ -20,9 +20,9 @@ New customers are required to sign up for Bing Ads with a Microsoft Account, and
 > [!NOTE]
 > SDK Support for OAuth in sandbox is coming soon. Please follow the [API blog](https://blogs.msdn.microsoft.com/bing_ads_api/) and [release notes](release-notes.md) for announcements.
 
-To authenticate with a Microsoft Account in sandbox you will follow the same work flow as described in [Authentication with OAuth](../guides/authentication-oauth.md) for production; however, you will use different endpoints.
+To authenticate with a Microsoft Account in sandbox you will follow the same work flow as described in [Authentication with OAuth](authentication-oauth.md) for production; however, you will use different endpoints.
 
-For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](../guides/authentication-oauth.md), substitute them with the sandbox endpoints. 
+For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](authentication-oauth.md), substitute them with the sandbox endpoints. 
 
 |Description|Production|Sandbox|
 |---|---|---|
@@ -30,7 +30,7 @@ For the sandbox environment, the following are the endpoints you must use to get
 |Endpoint for getting a sandbox client ID|apps.dev.microsoft.com/#/appList|apps.dev.microsoft-int.com/#/appList|
 |Endpoint for OAuth requests|login.live.com|login.live-int.com|
 
-Also as mentioned above, supported services in sandbox vary from production. To get the web service addresses for sandbox, see [Bing Ads Web Service Addresses](../guides/web-service-addresses.md).
+Also as mentioned above, supported services in sandbox vary from production. To get the web service addresses for sandbox, see [Bing Ads Web Service Addresses](web-service-addresses.md).
 
 Follow these steps to get a sandbox customer. If you already have a sandbox customer, you can skip to the user invitation steps.
 
@@ -104,26 +104,26 @@ Ad Insight service operations differ from production, and limitations are descri
 
 |Service Operation|Sandbox Limitations|
 |---------------------|-----------------------|
-|[GetBidLandscapeByKeywordIds](~/ad-insight-service/getbidlandscapebykeywordids.md)|Not supported. You can call the operation with existing keyword identifiers, but no data is returned.|
-|[GetEstimatedBidByKeywordIds](~/ad-insight-service/getestimatedbidbykeywordids.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).|
-|[GetEstimatedBidByKeywords](~/ad-insight-service/getestimatedbidbykeywords.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).|
-|[GetEstimatedPositionByKeywordIds](~/ad-insight-service/getestimatedpositionbykeywordids.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
-|[GetEstimatedPositionByKeywords](~/ad-insight-service/getestimatedpositionbykeywords.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
-|[GetHistoricalKeywordPerformance](~/ad-insight-service/gethistoricalkeywordperformance.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *MatchType* and *AdPosition* elements must be set to *Aggregate*.<br /><br />The *Devices* element must be set to *Computers* or left nil.|
-|[GetHistoricalSearchCount](~/ad-insight-service/gethistoricalsearchcount.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *EndMonthAndYear* element must be set to the previous month. For example if today's date is October 10, 2017, the end month should be October 2017.<br /><br />The *Devices* element must be set to *Computers* or left nil.|
-|[GetKeywordCategories](~/ad-insight-service/getkeywordcategories.md)|There should be no difference in sandbox versus production.|
-|[GetKeywordDemographics](~/ad-insight-service/getkeyworddemographics.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *Devices* element must be set to *Computers* or left nil.|
-|[GetKeywordLocations](~/ad-insight-service/getkeywordlocations.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *Devices* element must be set to *Computers* or left nil.|
-|[SuggestKeywordsForUrl](~/ad-insight-service/suggestkeywordsforurl.md)|There should be no difference in sandbox versus production.|
-|[SuggestKeywordsFromExistingKeywords](~/ad-insight-service/suggestkeywordsfromexistingkeywords.md)|If the SuggestionType is set to 1, there should be no difference in behavior compared to production.<br /><br />For suggestion type values 2, 3, and 4, the results are limited to the set of keywords provided in sandbox. For more information, see [Supported Keywords](#supportedkeywords).|
+|[GetBidLandscapeByKeywordIds](../ad-insight-service/getbidlandscapebykeywordids.md)|Not supported. You can call the operation with existing keyword identifiers, but no data is returned.|
+|[GetEstimatedBidByKeywordIds](../ad-insight-service/getestimatedbidbykeywordids.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).|
+|[GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).|
+|[GetEstimatedPositionByKeywordIds](../ad-insight-service/getestimatedpositionbykeywordids.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
+|[GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
+|[GetHistoricalKeywordPerformance](../ad-insight-service/gethistoricalkeywordperformance.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *MatchType* and *AdPosition* elements must be set to *Aggregate*.<br /><br />The *Devices* element must be set to *Computers* or left nil.|
+|[GetHistoricalSearchCount](../ad-insight-service/gethistoricalsearchcount.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *EndMonthAndYear* element must be set to the previous month. For example if today's date is October 10, 2017, the end month should be October 2017.<br /><br />The *Devices* element must be set to *Computers* or left nil.|
+|[GetKeywordCategories](../ad-insight-service/getkeywordcategories.md)|There should be no difference in sandbox versus production.|
+|[GetKeywordDemographics](../ad-insight-service/getkeyworddemographics.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *Devices* element must be set to *Computers* or left nil.|
+|[GetKeywordLocations](../ad-insight-service/getkeywordlocations.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br /><br />The *Devices* element must be set to *Computers* or left nil.|
+|[SuggestKeywordsForUrl](../ad-insight-service/suggestkeywordsforurl.md)|There should be no difference in sandbox versus production.|
+|[SuggestKeywordsFromExistingKeywords](../ad-insight-service/suggestkeywordsfromexistingkeywords.md)|If the SuggestionType is set to 1, there should be no difference in behavior compared to production.<br /><br />For suggestion type values 2, 3, and 4, the results are limited to the set of keywords provided in sandbox. For more information, see [Supported Keywords](#supportedkeywords).|
 
 ## <a name="bulk"></a>Bulk Service
-The file size limit for upload in production is 100MB or 2.5 million rows. For sandbox the limit is 20K rows. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+The file size limit for upload in production is 100MB or 2.5 million rows. For sandbox the limit is 20K rows. For more information, see [Bulk Download and Upload](bulk-download-upload.md).
 
 ## <a name="campaign"></a>Campaign Management Service
 
 ### <a name="editorialsupport"></a>Editorial Support
-Sandbox supports limited editorial reviews and appeals. Sandbox does not support testing of editorial rejections reason operations, for example [GetEditorialReasonsByIds](~/campaign-management-service/geteditorialreasonsbyids.md).
+Sandbox supports limited editorial reviews and appeals. Sandbox does not support testing of editorial rejections reason operations, for example [GetEditorialReasonsByIds](../campaign-management-service/geteditorialreasonsbyids.md).
 
 #### Magic Terms
 If you know of editorial terms that will fail editorial review, you can use them. Otherwise, to test your application's editorial logic, use the following format to construct a *magic* term that determines, by country, whether editorial will approve or reject the ad or keyword, or put it in a pending state. These magic terms are supported in sandbox only.
@@ -181,7 +181,7 @@ Product ads are supported in sandbox in the United States. To be auto-approved y
 The Customer Billing service is not supported in sandbox.
 
 ## <a name="customer"></a>Customer Management Service
-Most customer management service operations are supported in sandbox. Unsupported features include [AddClientLinks](~/customer-management-service/addclientlinks.md) and [UpdateClientLinks](~/customer-management-service/updateclientlinks.md).
+Most customer management service operations are supported in sandbox. Unsupported features include [AddClientLinks](../customer-management-service/addclientlinks.md) and [UpdateClientLinks](../customer-management-service/updateclientlinks.md).
 
 ## <a name="reporting"></a>Reporting Service
 When you create a keyword, test performance data should be generated within a few hours. The data is provided to test generating, retrieving, and parsing reports in the sandbox. You should not use the test data to infer or expect similar performance for your keywords in production. 
@@ -190,13 +190,13 @@ Test data is generated only for the same day when the entity was added or update
 
 The following reports can return performance data in sandbox. All other report types can be submitted successfully, although the sandbox service will not return any example data i.e., the report download URL will be not be set when you poll for results.
 
--   [AccountPerformanceReportRequest](~/reporting-service/accountperformancereportrequest.md)  
--   [AdDynamicTextPerformanceReportRequest](~/reporting-service/addynamictextperformancereportrequest.md)  
--   [AdGroupPerformanceReportRequest](~/reporting-service/adgroupperformancereportrequest.md)  
--   [AdPerformanceReportRequest](~/reporting-service/adperformancereportrequest.md)  
--   [CallDetailReportRequest](~/reporting-service/calldetailreportrequest.md)  
--   [CampaignPerformanceReportRequest](~/reporting-service/campaignperformancereportrequest.md)  
--   [DestinationUrlPerformanceReportRequest](~/reporting-service/destinationurlperformancereportrequest.md)  
--   [KeywordPerformanceReportRequest](~/reporting-service/keywordperformancereportrequest.md)  
--   [UserLocationPerformanceReportRequest](~/reporting-service/userlocationperformancereportrequest.md)  
+-   [AccountPerformanceReportRequest](../reporting-service/accountperformancereportrequest.md)  
+-   [AdDynamicTextPerformanceReportRequest](../reporting-service/addynamictextperformancereportrequest.md)  
+-   [AdGroupPerformanceReportRequest](../reporting-service/adgroupperformancereportrequest.md)  
+-   [AdPerformanceReportRequest](../reporting-service/adperformancereportrequest.md)  
+-   [CallDetailReportRequest](../reporting-service/calldetailreportrequest.md)  
+-   [CampaignPerformanceReportRequest](../reporting-service/campaignperformancereportrequest.md)  
+-   [DestinationUrlPerformanceReportRequest](../reporting-service/destinationurlperformancereportrequest.md)  
+-   [KeywordPerformanceReportRequest](../reporting-service/keywordperformancereportrequest.md)  
+-   [UserLocationPerformanceReportRequest](../reporting-service/userlocationperformancereportrequest.md)  
 

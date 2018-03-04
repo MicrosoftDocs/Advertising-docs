@@ -37,7 +37,7 @@ The *DeleteMediaResponse* object defines the [body](#response-body) and [header]
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any media that were not successfully deleted.<br /><br />The list of errors corresponds directly to the list of media in the request. Items of the list may be returned as null. For each list index where media was successfully deleted, the corresponding error element will be null. Ideally all media are deleted successfully and all elements in this list are null.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any media that were not successfully deleted.<br /><br />The list of errors corresponds directly to the list of media in the request. Items of the list may be returned as null. For each list index where media was successfully deleted, the corresponding error element will be null. Ideally all media are deleted successfully and all elements in this list are null.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

@@ -10,7 +10,7 @@ description: Describes the Account fields in a Bulk file.
 Defines an account that can be uploaded and downloaded in a bulk file.   
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Account* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For an *Account* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Id](#id)
 - [MSCLKID Auto Tagging Enabled](#msclkidautotaggingenabled)
@@ -18,13 +18,13 @@ For an *Account* record, the following attribute fields are available in the [Bu
 - [Sync Time](#synctime)
 - [Tracking Template](#trackingtemplate)
 
-The *Account* record is included in the Bulk download file automatically everytime you call the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. 
+The *Account* record is included in the Bulk download file automatically everytime you call the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. 
 
 ### <a name="id"></a>Id
 The system generated identifier of the account.
 
 > [!IMPORTANT]
-> The Bing Ads Bulk API only supports one account per file. This field is ignored during upload, and effectively set to the account ID that is specified in the [GetBulkUploadUrl](~/bulk-service/getbulkuploadurl.md) service request.
+> The Bing Ads Bulk API only supports one account per file. This field is ignored during upload, and effectively set to the account ID that is specified in the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md) service request.
 
 **Add:** Read-only  
 **Update:** Read-only  

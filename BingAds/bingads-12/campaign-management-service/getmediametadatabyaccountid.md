@@ -15,7 +15,7 @@ dev_langs:
 Gets the media meta data of the specified entity type from an account's media library.
 
 > [!NOTE]
-> This operation does not return media meta data for location ad extensions. For getting location ad extension media, you should use [GetMediaByIds](../campaign-management-service/getmediabyids.md).
+> This operation does not return media meta data for location ad extensions. For getting location ad extension media, you should use [GetMediaByIds](getmediabyids.md).
 
 ## <a name="request"></a>Request Elements
 The *GetMediaMetaDataByAccountIdRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -36,7 +36,7 @@ The *GetMediaMetaDataByAccountIdResponse* object defines the [body](#response-bo
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediametadata"></a>MediaMetaData|The specified media meta data from the library.<br /><br />The meta data includes download Urls for one or more media representations. The number of representations depends on the type of media. For example media for image ad extensions  have multiple height and width representations, and you can access each individually. For more information see [MediaEnabledEntityFilter](../campaign-management-service/mediaenabledentityfilter.md).|[MediaMetaData](mediametadata.md) array|
+|<a name="mediametadata"></a>MediaMetaData|The specified media meta data from the library.<br /><br />The meta data includes download Urls for one or more media representations. The number of representations depends on the type of media. For example media for image ad extensions  have multiple height and width representations, and you can access each individually. For more information see [MediaEnabledEntityFilter](mediaenabledentityfilter.md).|[MediaMetaData](mediametadata.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

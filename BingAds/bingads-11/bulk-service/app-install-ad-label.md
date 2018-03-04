@@ -81,7 +81,7 @@ The identifier of the label that is applied or removed from the app install ad.
 
 This bulk field maps to the *Id* field of the [Label](label.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](label.md) record. This is recommended if you are applying new labels to app install ads in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](label.md) record. This is recommended if you are applying new labels to app install ads in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -98,7 +98,7 @@ The identifier of the app install ad where this label is applied or removed.
 	
 This bulk field maps to the *Id* field of the [App Install Ad](app-install-ad.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing app install ad identifier, or specify a negative identifier that is equal to the *Id* field of the parent [App Install Ad](app-install-ad.md) record. This is recommended if you are applying labels to a new app install ad in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing app install ad identifier, or specify a negative identifier that is equal to the *Id* field of the parent [App Install Ad](app-install-ad.md) record. This is recommended if you are applying labels to a new app install ad in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status

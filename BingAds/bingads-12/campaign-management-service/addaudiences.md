@@ -21,7 +21,7 @@ The *AddAudiencesRequest* object defines the [body](#request-body) and [header](
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="audiences"></a>Audiences|The list of audiences to add.<br/><br/>The maximum size of the list is 100.<br/><br/>You can only add [RemarketingList](../campaign-management-service/remarketinglist.md) objects. You cannot add [CustomAudience](../campaign-management-service/customaudience.md) or [InMarketAudience](../campaign-management-service/inmarketaudience.md) objects. |[Audience](audience.md) array|
+|<a name="audiences"></a>Audiences|The list of audiences to add.<br/><br/>The maximum size of the list is 100.<br/><br/>You can only add [RemarketingList](remarketinglist.md) objects. You cannot add [CustomAudience](customaudience.md) or [InMarketAudience](inmarketaudience.md) objects. |[Audience](audience.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -34,7 +34,7 @@ The *AddAudiencesResponse* object defines the [body](#response-body) and [header
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="audienceids"></a>AudienceIds|A list of unique system identifiers corresponding to the audiences that were added.<br /><br />The list of identifiers corresponds directly to the list of audiences in the request. Items of the list may be returned as null. For each list index where an audience was not added, the corresponding element will be null.|**long** array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

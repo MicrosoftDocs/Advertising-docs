@@ -249,7 +249,7 @@ Determines whether the ads within this ad group will be displayed on the content
 
 Set the value *On* for ad distribution on the content network, and otherwise set the value *Off*.
 
-The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](~/campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
+The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](../campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -289,7 +289,7 @@ The end date is inclusive. For example, if you set *End Date* to 12/31/2020, the
 ### <a name="id"></a>Id
 The system generated identifier of the ad group.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad group can then be referenced in the *Parent Id* field of dependent record types such as ads, keywords, or criterion. This is recommended if you are adding new ad groups and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad group can then be referenced in the *Parent Id* field of dependent record types such as ads, keywords, or criterion. This is recommended if you are adding new ad groups and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -306,7 +306,7 @@ Your ad language setting determines the language you will use when you write you
 For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage).
 
 > [!IMPORTANT]
-> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](~/customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language by setting this field to *delete_value*. The *delete_value* keyword removes the previous setting. If you leave this field nil, then the ad group language will not be updated. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. 
+> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language by setting this field to *delete_value*. The *delete_value* keyword removes the previous setting. If you leave this field nil, then the ad group language will not be updated. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. 
 
 **Add:** Optional if the campaign has one or more languages set, and otherwise language is required.  
 **Update:** Optional if the customer is in the *Campaign Languages* pilot, and otherwise update is not allowed. If you are not in the pilot and try to change the language during update, no error will be returned and the setting will not be changed.  
@@ -329,7 +329,7 @@ Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly
 
 You must not set *Network Distribution* if the *Content Network* ad distribution channel is set to *On*, otherwise an error will be returned.
 
-If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](~/campaign-management-service/setnegativesitestoadgroups.md) or [SetNegativeSitesToCampaigns](~/campaign-management-service/setnegativesitestocampaigns.md) operation to prevent the ads from displaying on specific syndicated search websites.
+If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](../campaign-management-service/setnegativesitestoadgroups.md) or [SetNegativeSitesToCampaigns](../campaign-management-service/setnegativesitestocampaigns.md) operation to prevent the ads from displaying on specific syndicated search websites.
 
 **Add:** Optional. The default is *OwnedAndOperatedAndSyndicatedSearch*.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -340,7 +340,7 @@ The system generated identifier of the campaign that contains the ad group.
 
 This bulk field maps to the *Id* field of the [Camnpaign](campaign.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](campaign.md) record. This is recommended if you are adding new ad groups to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing campaign identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Campaign](campaign.md) record. This is recommended if you are adding new ad groups to a new campaign in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -390,7 +390,7 @@ Determines whether the ads within this ad group will be displayed on the search 
 
 Set the value *On* for ad distribution on the search network, and otherwise set the value *Off*.
 
-The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](~/campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
+The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](../campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    

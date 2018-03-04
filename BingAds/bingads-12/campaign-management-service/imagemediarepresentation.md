@@ -39,7 +39,7 @@ The [ImageMediaRepresentation](imagemediarepresentation.md) object derives from 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="name"></a>Name|The name of the media representation.<br /><br />For [ImageMediaRepresentation](../campaign-management-service/imagemediarepresentation.md), the possible values are *Preview*, *Thumbnail*, and *Original*.|**string**|
+|<a name="name"></a>Name|The name of the media representation.<br /><br />For [ImageMediaRepresentation](imagemediarepresentation.md), the possible values are *Preview*, *Thumbnail*, and *Original*.|**string**|
 |<a name="type"></a>Type|The type of the media representation. This value is *ImageMediaRepresentation* when you retrieve a image media representation. |**string**|
 |<a name="url"></a>Url|The media download URL.|**string**|
 
@@ -50,7 +50,7 @@ Bing Ads stores three representations for each image media of varying height and
 |---------------|---------|----------|
 |Thumbnail|120|68|
 |Preview|160|90|
-|Original size that you uploaded using the [AddMedia](../campaign-management-service/addmedia.md) service operation.|For dimension restrictions, please see [Image](../campaign-management-service/image.md).|For dimension restrictions, please see [Image](../campaign-management-service/image.md).|
+|Original size that you uploaded using the [AddMedia](addmedia.md) service operation.|For dimension restrictions, please see [Image](image.md).|For dimension restrictions, please see [Image](image.md).|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

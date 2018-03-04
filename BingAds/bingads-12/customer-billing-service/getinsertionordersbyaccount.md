@@ -15,7 +15,7 @@ dev_langs:
 Gets a list of insertion orders for the specified account.
 
 > [!NOTE]
-> This operation is deprecated and will be removed in a future API version. To get insertion orders, you should use the [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) operation.
+> This operation is deprecated and will be removed in a future API version. To get insertion orders, you should use the [SearchInsertionOrders](searchinsertionorders.md) operation.
 
 ## <a name="request"></a>Request Elements
 The *GetInsertionOrdersByAccountRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

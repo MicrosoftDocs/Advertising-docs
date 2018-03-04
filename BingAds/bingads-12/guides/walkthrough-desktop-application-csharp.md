@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 # Walkthrough: Bing Ads Desktop Application in C# #
-The example desktop application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](../guides/authentication-oauth.md#registerapplication) and take note of the client ID. You'll also need your production [developer token](../guides/get-started.md#get-developer-token). You can create the example project step by step as described below, or download examples within a Visual Studio solution [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples).
+The example desktop application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID. You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example project step by step as described below, or download examples within a Visual Studio solution [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples).
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
@@ -20,7 +20,7 @@ The example desktop application sends authentication requests to the Microsoft a
 
 2.  Create a new project through **File** -&gt; **New** -&gt; **Project** -&gt; **Templates** -&gt; **Visual Studio C#** -&gt; **WPF Application**. Name the project *BingAdsDesktopApp* and click **OK**.
 
-3.  Within the BingAdsDesktopApp project, install the SDK through NuGet. For more information, see [Installing the SDK](../guides/get-started-csharp.md#installation).
+3.  Within the BingAdsDesktopApp project, install the SDK through NuGet. For more information, see [Installing the SDK](get-started-csharp.md#installation).
 
 4.  Open the MainWindow.xaml file and replace its contents with the following code block. This defines the presentation view that displays results of the service calls that will be written further below.
 
@@ -38,7 +38,7 @@ The example desktop application sends authentication requests to the Microsoft a
     </Window>
     ```
 
-5.  Open the MainWindow.xaml.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above. You must edit the sample below with the ClientId that was provisioned when you [registered your application](../guides/authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](../guides/get-started.md#get-developer-token). 
+5.  Open the MainWindow.xaml.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above. You must edit the sample below with the ClientId that was provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). 
 
     ```csharp
     using System;
@@ -391,7 +391,7 @@ Set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* nod
 Optionally you should remove any unused local variables that had been used for OAuth in production.
 
 ## See Also
-[Sandbox](../guides/sandbox.md)  
-[Bing Ads Code Examples](../guides/code-examples.md)  
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
+[Sandbox](sandbox.md)  
+[Bing Ads Code Examples](code-examples.md)  
+[Bing Ads Web Service Addresses](web-service-addresses.md)  
 

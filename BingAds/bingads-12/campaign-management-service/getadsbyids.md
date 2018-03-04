@@ -35,8 +35,8 @@ The *GetAdsByIdsResponse* object defines the [body](#response-body) and [header]
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="ads"></a>Ads|An array of [Ad](../campaign-management-service/ad.md) objects that corresponds directly to the ad identifiers that you specified in the request. Items of the list may be returned as null. For each list index where an ad was not retrieved, the corresponding element will be null.|[Ad](ad.md) array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="ads"></a>Ads|An array of [Ad](ad.md) objects that corresponds directly to the ad identifiers that you specified in the request. Items of the list may be returned as null. For each list index where an ad was not retrieved, the corresponding element will be null.|[Ad](ad.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

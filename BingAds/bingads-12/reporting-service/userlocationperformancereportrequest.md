@@ -11,7 +11,7 @@ Defines a user location performance report request. Use this report to see where
 
 You can request impressions, clicks, spend, and average cost-per-click for each ad group, organized by city, country, metro area (Nielsen DMA® in the United States), radius, state, and account.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
 ## Syntax
 ```xml

@@ -11,7 +11,7 @@ Defines an age and gender demographic report request. Use this report to discove
 
 You can request impression rate (%) and click-through-rate (%) for each campaign or ad group, organized by gender and age group.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
 ## Syntax
 ```xml

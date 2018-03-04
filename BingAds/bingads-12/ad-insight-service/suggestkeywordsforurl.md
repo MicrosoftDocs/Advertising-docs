@@ -37,7 +37,7 @@ The *SuggestKeywordsForUrlResponse* object defines the [body](#response-body) an
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywords"></a>Keywords|An array of [KeywordAndConfidence](../ad-insight-service/keywordandconfidence.md) objects that contains the possible keywords found in the content of the specified URL. In addition, the object includes a score that indicates the probability that using the keyword would result in the URL being included in the results of a search query.<br /><br />The results are sorted in order from keywords with the highest confidence score to those with the lowest confidence score.|[KeywordAndConfidence](keywordandconfidence.md) array|
+|<a name="keywords"></a>Keywords|An array of [KeywordAndConfidence](keywordandconfidence.md) objects that contains the possible keywords found in the content of the specified URL. In addition, the object includes a score that indicates the probability that using the keyword would result in the URL being included in the results of a search query.<br /><br />The results are sorted in order from keywords with the highest confidence score to those with the lowest confidence score.|[KeywordAndConfidence](keywordandconfidence.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

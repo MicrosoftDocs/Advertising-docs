@@ -13,9 +13,9 @@ You can request impressions, clicks, click-through rate, and average position fo
 
 The report will include only search terms that resulted in a significant number of clicks in the last 30 days.
 
-Since this data might change over time, please use the [KeywordPerformanceReportRequest](../reporting-service/keywordperformancereportrequest.md) to get the performance metrics for your keywords.
+Since this data might change over time, please use the [KeywordPerformanceReportRequest](keywordperformancereportrequest.md) to get the performance metrics for your keywords.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
 ## Syntax
 ```xml

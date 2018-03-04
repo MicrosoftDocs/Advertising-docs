@@ -32,10 +32,10 @@ The [NegativeAdGroupCriterion](negativeadgroupcriterion.md) object derives from 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group to apply the criterion to.<br/><br/>**Add:** Required<br/>**Update:** Required|**long**|
-|<a name="criterion"></a>Criterion|The criterion to apply to the ad group. The criterion helps determine whether ads in the ad group are served.<br/><br/>For a list of available criterion types, see [AdGroupCriterionType](../campaign-management-service/adgroupcriteriontype.md).<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|[Criterion](criterion.md)|
+|<a name="criterion"></a>Criterion|The criterion to apply to the ad group. The criterion helps determine whether ads in the ad group are served.<br/><br/>For a list of available criterion types, see [AdGroupCriterionType](adgroupcriteriontype.md).<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|[Criterion](criterion.md)|
 |<a name="id"></a>Id|The unique Bing Ads identifier for the ad group criterion.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**long**|
 |<a name="status"></a>Status|A status value that determines whether the criterion applies for the ad group.<br/><br/>Currently the only supported status for negative ad group criterions is *Active*.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[AdGroupCriterionStatus](adgroupcriterionstatus.md)|
-|<a name="type"></a>Type|The type of the ad group criterion. This value is *NegativeAdGroupCriterion* when you retrieve a negative ad group criterion. For more information about ad group criterion types, see the [AdGroupCriterion Data Object Remarks](../campaign-management-service/adgroupcriterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
+|<a name="type"></a>Type|The type of the ad group criterion. This value is *NegativeAdGroupCriterion* when you retrieve a negative ad group criterion. For more information about ad group criterion types, see the [AdGroupCriterion Data Object Remarks](adgroupcriterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

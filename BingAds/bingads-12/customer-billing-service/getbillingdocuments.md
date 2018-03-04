@@ -21,7 +21,7 @@ The *GetBillingDocumentsRequest* object defines the [body](#request-body) and [h
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="documentids"></a>DocumentIds|A list of identifiers of the billing documents to get. To get a list of identifiers, call the [GetBillingDocumentsInfo](../customer-billing-service/getbillingdocumentsinfo.md) operation.|**long** array|
+|<a name="documentids"></a>DocumentIds|A list of identifiers of the billing documents to get. To get a list of identifiers, call the [GetBillingDocumentsInfo](getbillingdocumentsinfo.md) operation.|**long** array|
 |<a name="type"></a>Type|The format to use to generate the billing document. For example, you can generate the billing document in PDF or XML format.|[DataType](datatype.md)|
 
 ### <a name="request-header"></a>Request Header Elements

@@ -27,7 +27,7 @@ Defines the possible status values of a keyword.
 |-----------|---------------|
 |<a name="active"></a>Active|The keyword can be used to match user search queries.|
 |<a name="deleted"></a>Deleted|This status is for internal use only. Because all Get operations do not return deleted objects, you will not see an object with this status.|
-|<a name="inactive"></a>Inactive|The keyword is undergoing editorial review or has failed editorial review. To determine the keyword editorial status, see [KeywordEditorialStatus](../campaign-management-service/keywordeditorialstatus.md).|
+|<a name="inactive"></a>Inactive|The keyword is undergoing editorial review or has failed editorial review. To determine the keyword editorial status, see [KeywordEditorialStatus](keywordeditorialstatus.md).|
 |<a name="paused"></a>Paused|The keyword cannot be used to match user search queries until the owner resumes it.|
 
 ## Requirements

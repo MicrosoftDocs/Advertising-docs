@@ -9,7 +9,7 @@ description: The idea text search parameter filter that you can include when req
 # IdeaTextSearchParameter Data Object - Ad Insight
 The idea text search parameter filter that you can include when requesting keyword ideas.
 
-Use these options to refine what keywords are returned when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md). You can limit the keyword ideas to include or exclude specific keywords. 
+Use these options to refine what keywords are returned when calling [GetKeywordIdeas](getkeywordideas.md). You can limit the keyword ideas to include or exclude specific keywords. 
 
 ## Syntax
 ```xml

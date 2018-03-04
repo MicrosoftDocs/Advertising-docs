@@ -43,7 +43,7 @@ The *GetEstimatedPositionByKeywordsResponse* object defines the [body](#response
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordestimatedpositions"></a>KeywordEstimatedPositions|An array of [KeywordEstimatedPosition](../ad-insight-service/keywordestimatedposition.md) data objects. The array contains an item for each keyword specified in the request. If the keyword is not valid, the corresponding item in the array will be null.<br /><br />If data is available for the keyword, the [EstimatedPositionAndTraffic](../ad-insight-service/estimatedpositionandtraffic.md)  will provide the estimated position in the search results where your ads could appear, based on the specified bid value. Otherwise, the *EstimatedPositions* element will be set to null.|[KeywordEstimatedPosition](keywordestimatedposition.md) array|
+|<a name="keywordestimatedpositions"></a>KeywordEstimatedPositions|An array of [KeywordEstimatedPosition](keywordestimatedposition.md) data objects. The array contains an item for each keyword specified in the request. If the keyword is not valid, the corresponding item in the array will be null.<br /><br />If data is available for the keyword, the [EstimatedPositionAndTraffic](estimatedpositionandtraffic.md)  will provide the estimated position in the search results where your ads could appear, based on the specified bid value. Otherwise, the *EstimatedPositions* element will be set to null.|[KeywordEstimatedPosition](keywordestimatedposition.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

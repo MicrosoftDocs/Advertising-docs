@@ -142,7 +142,7 @@ The identifier of the ad group where this criterion is applied or removed.
 	
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](ad-group.md) record. This is recommended if you are adding new criterions to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](ad-group.md) record. This is recommended if you are adding new criterions to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -163,7 +163,7 @@ Possible values are *City*, *Country*, *County*, *MetroArea*, *PostalCode*, and 
 **Delete:** Read-only  
 
 ### <a name="target"></a>Target
-The identifier of the location that you do not want to target. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](../guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md).
+The identifier of the location that you do not want to target. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](../guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](../campaign-management-service/getgeolocationsfileurl.md).
 
 **Add:** Required  
 **Update:** Required  

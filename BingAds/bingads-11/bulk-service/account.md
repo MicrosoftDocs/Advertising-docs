@@ -24,7 +24,7 @@ The *Account* record is included in the Bulk download file automatically everyti
 The system generated identifier of the account.
 
 > [!IMPORTANT]
-> The Bing Ads Bulk API only supports one account per file. This field is ignored during upload, and effectively set to the account ID that is specified in the [GetBulkUploadUrl](~/bulk-service/getbulkuploadurl.md) service request.
+> The Bing Ads Bulk API only supports one account per file. This field is ignored during upload, and effectively set to the account ID that is specified in the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md) service request.
 
 **Add:** Read-only  
 **Update:** Read-only  

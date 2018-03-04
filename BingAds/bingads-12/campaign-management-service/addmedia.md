@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # AddMedia Service Operation - Campaign Management
-Adds the specified media to an account's media library. Depending on the type of [Media](../campaign-management-service/media.md), you can then add the media to one or more [ImageAdExtension](../campaign-management-service/imageadextension.md) or [LocationAdExtension](../campaign-management-service/locationadextension.md) objects.
+Adds the specified media to an account's media library. Depending on the type of [Media](media.md), you can then add the media to one or more [ImageAdExtension](imageadextension.md) or [LocationAdExtension](locationadextension.md) objects.
 
 ## <a name="request"></a>Request Elements
 The *AddMediaRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -34,7 +34,7 @@ The *AddMediaResponse* object defines the [body](#response-body) and [header](#r
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediaids"></a>MediaIds|The identifiers of the media that you added to the library. You use the identifier to set the appropriate media ID field in the [ImageAdExtension](../campaign-management-service/imageadextension.md) or [LocationAdExtension](../campaign-management-service/locationadextension.md) object.<br /><br />You can get the media for image ad extensions with the [GetMediaMetaDataByAccountId](../campaign-management-service/getmediametadatabyaccountid.md) and [GetMediaMetaDataByIds](../campaign-management-service/getmediametadatabyids.md) operations.<br /><br />You can get the media for location ad extensions with the [GetMediaByIds](../campaign-management-service/getmediabyids.md). operation.|**long** array|
+|<a name="mediaids"></a>MediaIds|The identifiers of the media that you added to the library. You use the identifier to set the appropriate media ID field in the [ImageAdExtension](imageadextension.md) or [LocationAdExtension](locationadextension.md) object.<br /><br />You can get the media for image ad extensions with the [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md) and [GetMediaMetaDataByIds](getmediametadatabyids.md) operations.<br /><br />You can get the media for location ad extensions with the [GetMediaByIds](getmediabyids.md). operation.|**long** array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

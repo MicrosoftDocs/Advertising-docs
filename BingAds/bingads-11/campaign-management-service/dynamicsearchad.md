@@ -18,7 +18,7 @@ Next, [create](addadgroups.md) a new [AdGroup](adgroup.md) within the dynamic se
 
 If you want to exclude certain portions of your website, you can add negative [Webpage](webpage.md) criterion at the campaign and ad group level using the respective [AddCampaignCriterions](addcampaigncriterions.md) and [AddAdGroupCriterions](addadgroupcriterions.md) service operations. The negative [Webpage](webpage.md) criterion at the campaign level applies to all ad groups within the campaign; however, if you define ad group level negative [Webpage](webpage.md) criterion, the campaign criterion is ignored for that ad group. 
 
-Whether the criterion is positive or negative, you can choose whether you want the criterion argument to match partial URLs, page content, page title, or categories that Bing thinks applies to your website. To discover the categories that you can use for [Webpage](webpage.md) criterion (positive or negative), use the [GetDomainCategories](~/ad-insight-service/getdomaincategories.md) operation with the Ad Insight service.
+Whether the criterion is positive or negative, you can choose whether you want the criterion argument to match partial URLs, page content, page title, or categories that Bing thinks applies to your website. To discover the categories that you can use for [Webpage](webpage.md) criterion (positive or negative), use the [GetDomainCategories](../ad-insight-service/getdomaincategories.md) operation with the Ad Insight service.
 
 Finally you can [add](addads.md) a [DynamicSearchAd](dynamicsearchad.md) to the ad group. The ad title and display URL are generated automatically based on the website domain and language that you want to target.
 

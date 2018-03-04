@@ -324,7 +324,7 @@ A code that identifies the reason for the failure. For a list of possible reason
 ### <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](~/campaign-management-service/adextensioneditorialstatus.md).
+Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -376,7 +376,7 @@ Also note that  if the *Tracking Template* or *Custom Parameter* fields are set,
 ### <a name="id"></a>Id
 The system generated identifier of the ad extension.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [AdGroup Sitelink Ad Extension](adgroup-sitelink-ad-extension.md) and [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [AdGroup Sitelink Ad Extension](adgroup-sitelink-ad-extension.md) and [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -488,9 +488,9 @@ If you specify *Sitelink Extension Description1* or *Sitelink Extension Descript
 **Delete:** Read-only  
 
 ### <a name="sitelinkextensionorder"></a>Sitelink Extension Order
-This field value represents the order of this record in the comparable list of [SiteLink](~/campaign-management-service/sitelink.md) objects. For example if this row in the bulk file represents the first item in the list, this field's value is 1 (one).
+This field value represents the order of this record in the comparable list of [SiteLink](../campaign-management-service/sitelink.md) objects. For example if this row in the bulk file represents the first item in the list, this field's value is 1 (one).
 
-For the campaign management service, the SiteLinks element of the [SiteLinksAdExtension](~/campaign-management-service/sitelinksadextension.md) object is a list of [SiteLink](~/campaign-management-service/sitelink.md) objects.
+For the campaign management service, the SiteLinks element of the [SiteLinksAdExtension](../campaign-management-service/sitelinksadextension.md) object is a list of [SiteLink](../campaign-management-service/sitelink.md) objects.
 
 **Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    

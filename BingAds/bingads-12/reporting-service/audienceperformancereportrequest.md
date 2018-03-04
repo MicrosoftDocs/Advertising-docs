@@ -11,7 +11,7 @@ Defines an audience performance report request. Use this report to compare deliv
 
 You can request impressions, clicks, spend, and average cost per click. Once downloaded, this data can be sorted by audience, association status, ad group, and targeting setting.
 
-To request a report of this type, pass this object to the [SubmitGenerateReport](../reporting-service/submitgeneratereport.md) operation.
+To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
 ## Syntax
 ```xml

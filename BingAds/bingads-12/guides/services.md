@@ -1,12 +1,14 @@
 ---
-title: "Version 11 Services"
+title: "Version 12 Services"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
 description: Reference documentation for Bing Ads web services.
 ---
-# Version 11 Services
+# Version 12 Services
+> [!IMPORTANT]
+> With the availability of Bing Ads API version 12, [version 11](services.md?view=bingads-11) is deprecated and will sunset by October 31, 2018. 
 
 |Topic|Description|
 |---------|---------------|
@@ -18,6 +20,6 @@ description: Reference documentation for Bing Ads web services.
 |[Reporting Service Reference](../reporting-service/reporting-service-reference.md)|The Reporting service defines programming elements that you can use to request and download reports.|
 
 ## <a name="see-also"></a>See Also
-[Release Notes](../guides/release-notes.md)  
-[Get Started With the Bing Ads API](../guides/get-started.md)  
-[Bing Ads Technical Guides](../guides/technical-guides.md)  
+[Release Notes](release-notes.md)  
+[Get Started With the Bing Ads API](get-started.md)  
+[Bing Ads Technical Guides](technical-guides.md)  
