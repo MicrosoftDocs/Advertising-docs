@@ -21,7 +21,7 @@ The *DeleteAudiencesRequest* object defines the [body](#request-body) and [heade
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="audienceids"></a>AudienceIds|The IDs of the audiences to delete.<br/><br/>You can specify a maximum of 100 IDs.<br/><br/>You can only delete [RemarketingList](../campaign-management-service/remarketinglist.md) objects that correspond to the IDs. You cannot add [CustomAudience](../campaign-management-service/customaudience.md) or [InMarketAudience](../campaign-management-service/inmarketaudience.md) objects.|**long** array|
+|<a name="audienceids"></a>AudienceIds|The IDs of the audiences to delete.<br/><br/>You can specify a maximum of 100 IDs.<br/><br/>You can only delete [RemarketingList](remarketinglist.md) objects that correspond to the IDs. You cannot add [CustomAudience](customaudience.md) or [InMarketAudience](inmarketaudience.md) objects.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -33,7 +33,7 @@ The *DeleteAudiencesResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -102,7 +102,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<DeleteAudiencesResponse> DeleteAudiencesAsync(
 	IList<long> audienceIds)

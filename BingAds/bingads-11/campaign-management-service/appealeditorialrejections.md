@@ -21,7 +21,7 @@ The *AppealEditorialRejectionsRequest* object defines the [body](#request-body) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="entityidtoparentidassociations"></a>EntityIdToParentIdAssociations|A list of unique identifiers of the ads or keywords that failed editorial review. The list can contain a maximum of 1,000 [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) objects.<br /><br />You submit each ad or keyword identifier with their respective ad group parent identifier in a [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) object. The list of [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) must include either ad identifiers or keyword identifiers. The list cannot include a mix ad and keyword entity identifiers.<br /><br />If an entity in the list has already been approved, the entity is ignored. If an entity in the list is not appealable, the call fails. If an entity in the list has an appeal pending, this request supersedes the pending request.|[EntityIdToParentIdAssociation](entityidtoparentidassociation.md) array|
+|<a name="entityidtoparentidassociations"></a>EntityIdToParentIdAssociations|A list of unique identifiers of the ads or keywords that failed editorial review. The list can contain a maximum of 1,000 [EntityIdToParentIdAssociation](entityidtoparentidassociation.md) objects.<br /><br />You submit each ad or keyword identifier with their respective ad group parent identifier in a [EntityIdToParentIdAssociation](entityidtoparentidassociation.md) object. The list of [EntityIdToParentIdAssociation](entityidtoparentidassociation.md) must include either ad identifiers or keyword identifiers. The list cannot include a mix ad and keyword entity identifiers.<br /><br />If an entity in the list has already been approved, the entity is ignored. If an entity in the list is not appealable, the call fails. If an entity in the list has an appeal pending, this request supersedes the pending request.|[EntityIdToParentIdAssociation](entityidtoparentidassociation.md) array|
 |<a name="entitytype"></a>EntityType|The type of entity that the entity to parent list contains. The supported values are *Ad* and *Keyword*.|[EntityType](entitytype.md)|
 |<a name="justificationtext"></a>JustificationText|The justification for the appeal. The string can contain a maximum of 1,000 characters. The justification applies to all of the specified entities.<br /><br /> A useful justification should include reasons why the ad or keyword is compliant with editorial policy for example, *JustificationText = "my ads for paint guns are not firearms, they are painting tools"*.|**string**|
 
@@ -35,7 +35,7 @@ The *AppealEditorialRejectionsResponse* object defines the [body](#response-body
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any appeals that were not successfully submitted.<br /><br />The list of errors corresponds directly to the list of [EntityIdToParentIdAssociation](../campaign-management-service/entityidtoparentidassociation.md) in the request. Items of the list may be returned as null. For each list index where an appeal was successfully submitted, the corresponding error element will be null. Ideally all appeals are submitted successfully and all elements in this list are null.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any appeals that were not successfully submitted.<br /><br />The list of errors corresponds directly to the list of [EntityIdToParentIdAssociation](entityidtoparentidassociation.md) in the request. Items of the list may be returned as null. For each list index where an appeal was successfully submitted, the corresponding error element will be null. Ideally all appeals are submitted successfully and all elements in this list are null.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -109,7 +109,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<AppealEditorialRejectionsResponse> AppealEditorialRejectionsAsync(
 	IList<EntityIdToParentIdAssociation> entityIdToParentIdAssociations,

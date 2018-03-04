@@ -9,7 +9,7 @@ description: The suggested bid search parameter filter that you can include when
 # SuggestedBidSearchParameter Data Object - Ad Insight
 The suggested bid search parameter filter that you can include when requesting keyword ideas.
 
-If you do not include the suggested bid search parameter when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md), then keyword ideas will be returned regardless of suggested bid.
+If you do not include the suggested bid search parameter when calling [GetKeywordIdeas](getkeywordideas.md), then keyword ideas will be returned regardless of suggested bid.
 
 ## Syntax
 ```xml

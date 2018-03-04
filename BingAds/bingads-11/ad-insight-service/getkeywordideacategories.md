@@ -14,7 +14,7 @@ dev_langs:
 # GetKeywordIdeaCategories Service Operation - Ad Insight
 Gets the list of keyword idea categories.
 
-You can use the *CategoryId* element of a [KeywordCategory](../ad-insight-service/keywordcategory.md) as a part of the [CategorySearchParameter](../ad-insight-service/categorysearchparameter.md) when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.
+You can use the *CategoryId* element of a [KeywordCategory](keywordcategory.md) as a part of the [CategorySearchParameter](categorysearchparameter.md) when calling the [GetKeywordIdeas](getkeywordideas.md) operation.
 
 ## <a name="request"></a>Request Elements
 The *GetKeywordIdeaCategoriesRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -80,7 +80,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetKeywordIdeaCategoriesResponse> GetKeywordIdeaCategoriesAsync()
 {

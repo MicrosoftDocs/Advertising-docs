@@ -9,7 +9,7 @@ description: Defines an object that contains a keyword idea category.
 # KeywordIdeaCategory Data Object - Ad Insight
 Defines an object that contains a keyword idea category.
 
-You can use the category identifier in the [CategorySearchParameter](../ad-insight-service/categorysearchparameter.md) when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md).
+You can use the category identifier in the [CategorySearchParameter](categorysearchparameter.md) when calling [GetKeywordIdeas](getkeywordideas.md).
 
 ## Syntax
 ```xml

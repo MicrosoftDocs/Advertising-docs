@@ -9,7 +9,7 @@ description: Defines a media representation base class that includes a  media do
 # MediaRepresentation Data Object - Campaign Management
 Defines a media representation base class that includes a  media download Url.
 
-Do not try to instantiate a *MediaRepresentation*. You can create the [ImageMediaRepresentation](../campaign-management-service/imagemediarepresentation.md) object that derives from it. 
+Do not try to instantiate a *MediaRepresentation*. You can create the [ImageMediaRepresentation](imagemediarepresentation.md) object that derives from it. 
 
 ## Syntax
 ```xml

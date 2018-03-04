@@ -10,12 +10,12 @@ description: Defines a base class for criterion bids.
 Defines a base class for criterion bids.
 
 Do not try to instantiate a *CriterionBid*. You can create the following object that derives from it.
--   [BidMultiplier](../campaign-management-service/bidmultiplier.md)  
--   [FixedBid](../campaign-management-service/fixedbid.md)  
+-   [BidMultiplier](bidmultiplier.md)  
+-   [FixedBid](fixedbid.md)  
 
-For a list of criterion bids that you can use with [BiddableCampaignCriterion](../campaign-management-service/biddablecampaigncriterion.md), see the [CampaignCriterionType](../campaign-management-service/campaigncriteriontype.md) value set.
+For a list of criterion bids that you can use with [BiddableCampaignCriterion](biddablecampaigncriterion.md), see the [CampaignCriterionType](campaigncriteriontype.md) value set.
 
-For a list of criterion bids that you can use with [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md), see the [AdGroupCriterionType](../campaign-management-service/adgroupcriteriontype.md) value set.
+For a list of criterion bids that you can use with [BiddableAdGroupCriterion](biddableadgroupcriterion.md), see the [AdGroupCriterionType](adgroupcriteriontype.md) value set.
 
 ## Syntax
 ```xml

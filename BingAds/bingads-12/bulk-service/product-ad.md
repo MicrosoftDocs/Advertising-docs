@@ -31,7 +31,7 @@ For a *Product Ad* record, the following attribute fields are available in the [
 - [Publisher Countries](#publishercountries)
 - [Status](#status)
 
-You can download all fields of the *Product Ad* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *ProductAds* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
+You can download all fields of the *Product Ad* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *ProductAds* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new product ad given a valid ad group ID (*Parent Id*). 
 
@@ -41,7 +41,7 @@ Format Version,,,,,,,,,,,,,,5,,,,,,,,,,
 Product Ad,Active,,-1112,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,,,,,Find New Customers & Increase Sales!,,,,,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkProductAd* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkProductAd* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -127,7 +127,7 @@ The component or property of the ad that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  

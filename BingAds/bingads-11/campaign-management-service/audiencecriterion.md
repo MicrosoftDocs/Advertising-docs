@@ -9,7 +9,7 @@ description: Defines a criterion that can be used to show ads to a specific audi
 # AudienceCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to a specific audience.
 
-The *AudienceCriterion* criterion can be included within [AdGroupCriterion](../campaign-management-service/adgroupcriterion.md) and [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md) objects. 
+The *AudienceCriterion* criterion can be included within [AdGroupCriterion](adgroupcriterion.md) and [NegativeAdGroupCriterion](negativeadgroupcriterion.md) objects. 
 
 ## Syntax
 ```xml
@@ -29,7 +29,7 @@ The *AudienceCriterion* criterion can be included within [AdGroupCriterion](../c
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="audienceid"></a>AudienceId|The Bing Ads identifier of the [Audience](../campaign-management-service/audience.md).<br/><br/>**Add:** Required<br/>**Update:** Read-only. You must leave this element null or the audience must already be associated with the specified entity. To associate a different audience with the entity, you must add a new audience criterion and optionally delete any existing audience criterions.|**long**|
+|<a name="audienceid"></a>AudienceId|The Bing Ads identifier of the [Audience](audience.md).<br/><br/>**Add:** Required<br/>**Update:** Read-only. You must leave this element null or the audience must already be associated with the specified entity. To associate a different audience with the entity, you must add a new audience criterion and optionally delete any existing audience criterions.|**long**|
 |<a name="audiencetype"></a>AudienceType|The audience type.<br/><br/>**Add:** Required<br/>**Update:** Read-only. |[AudienceType](audiencetype.md)|
 
 The [AudienceCriterion](audiencecriterion.md) object has [Inherited Elements](#inheritedelements).
@@ -41,7 +41,7 @@ The [AudienceCriterion](audiencecriterion.md) object derives from the [Criterion
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|The type of the criterion. This value is *Audience* when you retrieve an audience criterion. For more information about criterion types, see the [Criterion Data Object Remarks](../campaign-management-service/criterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
+|<a name="type"></a>Type|The type of the criterion. This value is *Audience* when you retrieve an audience criterion. For more information about criterion types, see the [Criterion Data Object Remarks](criterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

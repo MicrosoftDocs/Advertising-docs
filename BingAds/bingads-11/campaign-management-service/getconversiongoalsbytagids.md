@@ -15,7 +15,7 @@ dev_langs:
 Gets the conversion goals that use the specified UET tags. 
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](~/guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
 
 ## <a name="request"></a>Request Elements
 The *GetConversionGoalsByTagIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -38,7 +38,7 @@ The *GetConversionGoalsByTagIdsResponse* object defines the [body](#response-bod
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="conversiongoals"></a>ConversionGoals|The list of conversion goals do not correspond directly to the tag identifiers specified in the request because there can be multiple conversion goals that use the same tag identifier specified in the request.|[ConversionGoal](conversiongoal.md) array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -147,7 +147,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetConversionGoalsByTagIdsResponse> GetConversionGoalsByTagIdsAsync(
 	IList<long> tagIds,

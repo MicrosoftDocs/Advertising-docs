@@ -35,8 +35,8 @@ The *GetCampaignsByIdsResponse* object defines the [body](#response-body) and [h
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="campaigns"></a>Campaigns|An array of [Campaign](../campaign-management-service/campaign.md) objects that corresponds directly to the campaign identifiers that you specified in the request. Items of the list may be returned as null. For each list index where a campaign was not retrieved, the corresponding element will be null.|[Campaign](campaign.md) array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any campaigns that were not successfully retrieved.<br /><br />The list of errors corresponds directly to the list of campaigns in the request. Items of the list may be returned as null. For each list index where a campaign was successfully retrieved, the corresponding error element will be null. Ideally all campaigns are retrieved successfully and all elements in this list are null.|[BatchError](batcherror.md) array|
+|<a name="campaigns"></a>Campaigns|An array of [Campaign](campaign.md) objects that corresponds directly to the campaign identifiers that you specified in the request. Items of the list may be returned as null. For each list index where a campaign was not retrieved, the corresponding element will be null.|[Campaign](campaign.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any campaigns that were not successfully retrieved.<br /><br />The list of errors corresponds directly to the list of campaigns in the request. Items of the list may be returned as null. For each list index where a campaign was successfully retrieved, the corresponding error element will be null. Ideally all campaigns are retrieved successfully and all elements in this list are null.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -179,7 +179,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetCampaignsByIdsResponse> GetCampaignsByIdsAsync(
 	long accountId,

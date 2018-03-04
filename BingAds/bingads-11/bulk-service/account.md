@@ -10,7 +10,7 @@ description: Describes the Account fields in a Bulk file.
 Defines an account that can be uploaded and downloaded in a bulk file.   
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Account* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For an *Account* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Id](#id)
 - [MSCLKID Auto Tagging Enabled](#msclkidautotaggingenabled)
@@ -18,7 +18,7 @@ For an *Account* record, the following attribute fields are available in the [Bu
 - [Sync Time](#synctime)
 - [Tracking Template](#trackingtemplate)
 
-The *Account* record is included in the Bulk download file automatically everytime you call the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. 
+The *Account* record is included in the Bulk download file automatically everytime you call the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. 
 
 ### <a name="id"></a>Id
 The system generated identifier of the account.
@@ -65,7 +65,7 @@ The tracking template to use as a default for all URLs in your account.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](~/guides/entity-hierarchy-limits.md).
+- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).
 
 - The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 

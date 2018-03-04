@@ -23,7 +23,7 @@ Defines a condition that determines whether a product is selected from a custome
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="attribute"></a>Attribute|The condition's attribute value.<br /><br />An attribute's value must exactly match the value specified in the customer's Bing Merchant Center catalog file.<br /><br />The available *Attribute* and *Operand* values vary depending on the criterion type.<br /><br />For [ProductScope](../campaign-management-service/productscope.md) and [ProductPartition](../campaign-management-service/productpartition.md) conditions, see [Bing Shopping Product Conditions](~/guides/product-ads.md#conditions).<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|**string**|
+|<a name="attribute"></a>Attribute|The condition's attribute value.<br /><br />An attribute's value must exactly match the value specified in the customer's Bing Merchant Center catalog file.<br /><br />The available *Attribute* and *Operand* values vary depending on the criterion type.<br /><br />For [ProductScope](../campaign-management-service/productscope.md) and [ProductPartition](../campaign-management-service/productpartition.md) conditions, see [Bing Shopping Product Conditions](../guides/product-ads.md#conditions).<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|**string**|
 |<a name="operand"></a>Operand|The condition's operand. The operands implicitly include the equal operator. For example, read Brand as Brand=.<br /><br />**Add or Apply:** Required<br/>**Update:** Optional|**string**|
 
 ## Requirements

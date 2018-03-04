@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the condition of results for insertion orders returned using SearchInsertionOrders.
 ---
 # PredicateOperator Value Set - Customer Billing
-Defines the condition of results for insertion orders returned using [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md).
+Defines the condition of results for insertion orders returned using [SearchInsertionOrders](searchinsertionorders.md).
 
 ## Syntax
 ```xml

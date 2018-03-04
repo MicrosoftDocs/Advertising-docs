@@ -18,7 +18,7 @@ To find ads or keywords that failed the editorial review process, call the respe
 
 To determine the reason why an ad or keyword failed the review and whether it is appealable, call the respective [GetEditorialReasonsByIds](~/campaign-management-service/geteditorialreasonsbyids.md) operation. The operation returns an array of [EditorialReasonCollection](~/campaign-management-service/editorialreasoncollection.md) objects. The rejection is appealable if the *AppealStatus* element of *EditorialReasonCollection* is set to Appealable. For possible status values, see [AppealStatus](~/campaign-management-service/appealstatus.md).
 
-For a list of the possible reason codes for an ad or keyword that failed editorial review, see [Bing Ads Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). The codes can be returned in the *ReasonCode* element of the [EditorialReason](~/campaign-management-service/editorialreason.md) object.
+For a list of the possible reason codes for an ad or keyword that failed editorial review, see [Bing Ads Editorial Failure Reason Codes](editorial-failure-reason-codes.md). The codes can be returned in the *ReasonCode* element of the [EditorialReason](~/campaign-management-service/editorialreason.md) object.
 
 If the failure is appealable, call the [AppealEditorialRejections](~/campaign-management-service/appealeditorialrejections.md) operation to appeal the rejection. You can request a maximum of 2,000 appeals per account per 24-hour rolling window. For example, if you request 2,000 appeals at 10:00 AM PST today, you cannot request new appeals until after 10:00 AM PST tomorrow. The maximum number of appeals that you can have pending for a single account is 10,000.
 
@@ -58,5 +58,5 @@ To find keywords that failed the more in-depth review, call the [GetKeywordsByEd
 
 ## See Also
 [Campaign Management Service Reference](~/campaign-management-service/campaign-management-service-reference.md)
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)
+[Bing Ads Web Service Addresses](web-service-addresses.md)
 

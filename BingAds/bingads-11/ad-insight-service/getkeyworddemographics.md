@@ -23,8 +23,8 @@ The *GetKeywordDemographicsRequest* object defines the [body](#request-body) and
 |-----------|---------------|-------------|
 |<a name="device"></a>Device|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword demographics data for the device types that you specify only, if available.|**string** array|
 |<a name="keywords"></a>Keywords|An array of keywords for which you want to get demographics data. The data is broken out by device type. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string** array|
-|<a name="language"></a>Language|The language in which the keywords are written.<br /><br />For possible values, see [Ad Languages](~/guides/ad-languages.md).|**string**|
-|<a name="publishercountry"></a>PublisherCountry|The country code of the country/region to use as the source of the demographics data.<br /><br />The country/region that you specify must support the language specified in the *Language* element.<br /><br />For possible values, see [Geographical Location Codes](~/guides/ad-languages.md).|**string**|
+|<a name="language"></a>Language|The language in which the keywords are written.<br /><br />For possible values, see [Ad Languages](../guides/ad-languages.md).|**string**|
+|<a name="publishercountry"></a>PublisherCountry|The country code of the country/region to use as the source of the demographics data.<br /><br />The country/region that you specify must support the language specified in the *Language* element.<br /><br />For possible values, see [Geographical Location Codes](../guides/ad-languages.md).|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -36,7 +36,7 @@ The *GetKeywordDemographicsResponse* object defines the [body](#response-body) a
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keyworddemographicresult"></a>KeywordDemographicResult|An array of [KeywordDemographicResult](../ad-insight-service/keyworddemographicresult.md) data objects. The order of the items corresponds directly to the keywords specified in the request. If there is no demographic data available for a keyword, the keyword will be included in the list, but the *KeywordDemographics* element of the corresponding [KeywordDemographicResult](../ad-insight-service/keyworddemographicresult.md) will be null.<br /><br />Each [KeywordDemographicResult](../ad-insight-service/keyworddemographicresult.md)  contains an array of [KeywordDemographic](../ad-insight-service/keyworddemographic.md) data objects.  The array contains an item for each device specified in the request. Each [KeywordDemographic](../ad-insight-service/keyworddemographic.md) contains the percentage of time that users of a certain age and gender searched for the specified keyword.|[KeywordDemographicResult](keyworddemographicresult.md) array|
+|<a name="keyworddemographicresult"></a>KeywordDemographicResult|An array of [KeywordDemographicResult](keyworddemographicresult.md) data objects. The order of the items corresponds directly to the keywords specified in the request. If there is no demographic data available for a keyword, the keyword will be included in the list, but the *KeywordDemographics* element of the corresponding [KeywordDemographicResult](keyworddemographicresult.md) will be null.<br /><br />Each [KeywordDemographicResult](keyworddemographicresult.md)  contains an array of [KeywordDemographic](keyworddemographic.md) data objects.  The array contains an item for each device specified in the request. Each [KeywordDemographic](keyworddemographic.md) contains the percentage of time that users of a certain age and gender searched for the specified keyword.|[KeywordDemographicResult](keyworddemographicresult.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -106,7 +106,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetKeywordDemographicsResponse> GetKeywordDemographicsAsync(
 	IList<string> keywords,

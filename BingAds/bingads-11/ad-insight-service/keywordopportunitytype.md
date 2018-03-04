@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the possible keyword opportunity types you can request when calling GetKeywordOpportunities.
 ---
 # KeywordOpportunityType Value Set - Ad Insight
-Defines the possible keyword opportunity types you can request when calling [GetKeywordOpportunities](../ad-insight-service/getkeywordopportunities.md).
+Defines the possible keyword opportunity types you can request when calling [GetKeywordOpportunities](getkeywordopportunities.md).
 
 ## Syntax
 ```xml

@@ -18,6 +18,6 @@ description: Reference documentation for Bing Ads web services.
 |[Reporting Service Reference](../reporting-service/reporting-service-reference.md)|The Reporting service defines programming elements that you can use to request and download reports.|
 
 ## <a name="see-also"></a>See Also
-[Release Notes](../guides/release-notes.md)  
-[Get Started With the Bing Ads API](../guides/get-started.md)  
-[Bing Ads Technical Guides](../guides/technical-guides.md)  
+[Release Notes](release-notes.md)  
+[Get Started With the Bing Ads API](get-started.md)  
+[Bing Ads Technical Guides](technical-guides.md)  

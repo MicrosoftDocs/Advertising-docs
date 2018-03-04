@@ -13,11 +13,11 @@ dev_langs:
 # Bulk Keywords and Ads Code Example
 This example demonstrates how to setup ads and keywords for a search advertising campaign.
 
-[!code-csharp[Main](../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/BulkKeywordsAds.cs)]
+[!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/BulkKeywordsAds.cs)]
 
-[!code-java[Main](../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/BulkKeywordsAds.java)]
+[!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/BulkKeywordsAds.java)]
 
-[!code-python[Main](../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/bulk_keywords_ads.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v11/bulk_keywords_ads.py)]
 
 ## See Also
-[Get Started with the Bing Ads API](../guides/get-started.md)  
+[Get Started with the Bing Ads API](get-started.md)  

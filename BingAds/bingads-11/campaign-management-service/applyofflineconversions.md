@@ -16,7 +16,7 @@ Applies offline conversions for the account with Microsoft Click Id among other 
 
 Let's say a customer sees your ad, clicks on it, but ends up calling you, leading to a sale that was taken offline. How can you track when your search ad leads to a conversion offline and outside of your website? You can import offline conversions, to better measure what happens after your ad was clicked.
 
-After creating an [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md), you'll need to wait two hours before sending Bing Ads any offline conversions. If you do not wait two hours, then your offline conversion data might not be applied. After you send Bing Ads the offline conversions, it can take up to five hours to view conversion data.
+After creating an [OfflineConversionGoal](offlineconversiongoal.md), you'll need to wait two hours before sending Bing Ads any offline conversions. If you do not wait two hours, then your offline conversion data might not be applied. After you send Bing Ads the offline conversions, it can take up to five hours to view conversion data.
 
 Each offline conversion needs to be associated to a single click ID. A single click ID can, however, be associated with multiple conversion goals and also be associated with the same goal multiple times, as long as the conversion time is different. Also, the same conversion can't be imported more than once. If more than one is attempted, the first instance will be used and the others will be ignored.
 
@@ -43,7 +43,7 @@ The *ApplyOfflineConversionsResponse* object defines the [body](#response-body) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -118,7 +118,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<ApplyOfflineConversionsResponse> ApplyOfflineConversionsAsync(
 	IList<OfflineConversion> offlineConversions)

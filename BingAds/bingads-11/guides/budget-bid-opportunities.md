@@ -71,5 +71,5 @@ For operations that suggest keywords, such as [SuggestKeywordsFromExistingKeywor
 
 ## See Also
 [Ad Insight Service Reference](~/ad-insight-service/ad-insight-service-reference.md)  
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
+[Bing Ads Web Service Addresses](web-service-addresses.md)  
 

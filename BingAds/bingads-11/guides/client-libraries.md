@@ -16,15 +16,15 @@ You can develop Bing Ads applications with any programming language that support
 
 |SDK|Documentation|Source|Distribution|Code Examples|License|
 |-------|-----------------|----------|----------------|-----------------|-----------|
-|Bing Ads .NET SDK|[Get Started](../guides/get-started-csharp.md)|[GitHub](https://github.com/BingAds/BingAds-dotNet-SDK)|[NuGet](https://www.nuget.org/packages/Microsoft.BingAds.SDK/)|[GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples) &#124; [Docs](../guides/code-examples.md)|[Bing Ads .NET SDK License](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/LICENSE.md)|
-|Bing Ads Java SDK|[Get Started](../guides/get-started-java.md) |[GitHub](https://github.com/BingAds/BingAds-Java-SDK)|[Maven](https://github.com/BingAds/BingAds-Java-SDK#Maven-Artifact)|[GitHub](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples) &#124; [Docs](../guides/code-examples.md)|[Bing Ads Java SDK License](https://github.com/BingAds/BingAds-Java-SDK/blob/master/LICENSE)|
-|Bing Ads PHP SDK|[Get Started](../guides/get-started-php.md)|[GitHub](https://github.com/BingAds/BingAds-PHP-SDK)|[Packagist](https://packagist.org/packages/microsoft/bingads)|[GitHub](https://github.com/BingAds/BingAds-PHP-SDK/tree/master/samples) &#124; [Docs](../guides/code-examples.md)|[Bing Ads PHP SDK License](https://github.com/BingAds/BingAds-PHP-SDK/blob/master/LICENSE.md)|
-|Bing Ads Python SDK|[Get Started](../guides/get-started-python.md) |[GitHub](https://github.com/BingAds/BingAds-Python-SDK)|[PyPi](https://pypi.python.org/pypi/bingads)|[GitHub](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples) &#124; [Docs](../guides/code-examples.md)|[Bing Ads Python SDK License](https://github.com/BingAds/BingAds-Python-SDK/blob/master/LICENSE)|
+|Bing Ads .NET SDK|[Get Started](get-started-csharp.md)|[GitHub](https://github.com/BingAds/BingAds-dotNet-SDK)|[NuGet](https://www.nuget.org/packages/Microsoft.BingAds.SDK/)|[GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples) &#124; [Docs](code-examples.md)|[Bing Ads .NET SDK License](https://github.com/BingAds/BingAds-dotNet-SDK/blob/master/LICENSE.md)|
+|Bing Ads Java SDK|[Get Started](get-started-java.md) |[GitHub](https://github.com/BingAds/BingAds-Java-SDK)|[Maven](https://github.com/BingAds/BingAds-Java-SDK#Maven-Artifact)|[GitHub](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples) &#124; [Docs](code-examples.md)|[Bing Ads Java SDK License](https://github.com/BingAds/BingAds-Java-SDK/blob/master/LICENSE)|
+|Bing Ads PHP SDK|[Get Started](get-started-php.md)|[GitHub](https://github.com/BingAds/BingAds-PHP-SDK)|[Packagist](https://packagist.org/packages/microsoft/bingads)|[GitHub](https://github.com/BingAds/BingAds-PHP-SDK/tree/master/samples) &#124; [Docs](code-examples.md)|[Bing Ads PHP SDK License](https://github.com/BingAds/BingAds-PHP-SDK/blob/master/LICENSE.md)|
+|Bing Ads Python SDK|[Get Started](get-started-python.md) |[GitHub](https://github.com/BingAds/BingAds-Python-SDK)|[PyPi](https://pypi.python.org/pypi/bingads)|[GitHub](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples) &#124; [Docs](code-examples.md)|[Bing Ads Python SDK License](https://github.com/BingAds/BingAds-Python-SDK/blob/master/LICENSE)|
 
 ## <a name="namespaces"></a>Namespaces
 
 ### <a name="latestnamespaces"></a>Latest Namespaces
-The SDKs support all active [Bing Ads Web Service Addresses](../guides/web-service-addresses.md) in sandbox and production. 
+The SDKs support all active [Bing Ads Web Service Addresses](web-service-addresses.md) in sandbox and production. 
 
 You should use the following namespaces corresponding to the latest version of each service. These are the supported high level public namespaces. Internal and lower level namespaces are not documented here. You can find out more information about internal namespaces within the GitHub [SDK Repositories](#repositories) for each SDK.
 
@@ -39,5 +39,5 @@ You should use the following namespaces corresponding to the latest version of e
 |*Microsoft.BingAds.V11.Reporting*|Provides proxy classes to the service operations, data objects, and value sets defined for version 11 of the [Reporting](~/reporting-service/reporting-service-reference.md) service.<br />Provides classes to accelerate productivity for downloading reports. For example an instance of the *ReportingServiceManager* class can submit your download request to the reporting service, poll the service until completed, and download the file to the local directory that you specified in the request.|
 
 ## See Also
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
+[Bing Ads Web Service Addresses](web-service-addresses.md)  
 

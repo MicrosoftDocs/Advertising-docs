@@ -9,13 +9,13 @@ dev_langs:
   - csharp
 ---
 # Ad Group Price Ad Extension Record - Bulk
-Defines an association record between an [Ad Group](../bulk-service/ad-group.md) and a [Price Ad Extension](../bulk-service/price-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or Price Ad Extension, use the [Ad Group](../bulk-service/ad-group.md) or [Price Ad Extension](../bulk-service/price-ad-extension.md) record.
+Defines an association record between an [Ad Group](ad-group.md) and a [Price Ad Extension](price-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or Price Ad Extension, use the [Ad Group](ad-group.md) or [Price Ad Extension](price-ad-extension.md) record.
 
 > [!NOTE]
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
 	
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Ad Group Price Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For an *Ad Group Price Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Ad Group](#adgroup)
 - [Campaign](#campaign)
@@ -30,7 +30,7 @@ For an *Ad Group Price Ad Extension* record, the following attribute fields are 
 - [Publisher Countries](#publishercountries)
 - [Status](#status)
 
-You can download all fields of the *Ad Group Price Ad Extension* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupPriceAdExtensions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group Price Ad Extension* record by including the [DownloadEntity](downloadentity.md) value of *AdGroupPriceAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would associate a price ad extension to an ad group if the valid *Id* and *Parent Id* are provided. 
 
@@ -40,7 +40,7 @@ Format Version,,,,,,,,5
 Ad Group Price Ad Extension,Active,-11,-1111,,,ClientIdGoesHere,,
 ```
 
-If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupPriceAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupPriceAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -109,7 +109,7 @@ The component or property of the ad extension that failed editorial review.
 **Delete:** Read-only  
 
 ### <a name="editorialreasoncode"></a>Editorial Reason Code
-A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](~/guides/editorial-failure-reason-codes.md). 
+A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Failure Reason Codes](../guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Delete:** Read-only  
@@ -133,9 +133,9 @@ This field will not be set if a combination of terms caused the failure or if th
 ### <a name="id"></a>Id
 The identifier of the ad extension that is associated or removed from the ad group.
 
-This bulk field maps to the *Id* field of the [Price Ad Extension](../bulk-service/price-ad-extension.md) record. 
+This bulk field maps to the *Id* field of the [Price Ad Extension](price-ad-extension.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Price Ad Extension](../bulk-service/price-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Price Ad Extension](price-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -150,9 +150,9 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ### <a name="parentid"></a>Parent Id
 The identifier of the ad group where this ad extension is associated or removed.
 	
-This bulk field maps to the *Id* field of the [Ad Group](../bulk-service/ad-group.md) record. 
+This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-service/ad-group.md) record. This is recommended if you are associating ad extensions to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](ad-group.md) record. This is recommended if you are associating ad extensions to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 > [!NOTE]
@@ -175,7 +175,7 @@ Possible values are *Active* and *Deleted*. If the ad extension is associated wi
 **Delete:** Required. The Status must be set to *Deleted*. 
 	
 ## <a name="entityperformancedata"></a>Performance Data Fields in the Bulk File
-If the [DataScope Value Set](../bulk-service/datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
+If the [DataScope Value Set](datascope.md) element of the download request includes *EntityPerformanceData*, the download file will also include the following fields in this record.
 
 |Column Header|Description|
 |-----------------|---------------|

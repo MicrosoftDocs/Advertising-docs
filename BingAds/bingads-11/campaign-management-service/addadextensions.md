@@ -35,7 +35,7 @@ The *AddAdExtensionsResponse* object defines the [body](#response-body) and [hea
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adextensionidentities"></a>AdExtensionIdentities|The identities of the extensions that were added. The list corresponds directly to the list of extensions specified in the request.|[AdExtensionIdentity](adextensionidentity.md) array|
-|<a name="nestedpartialerrors"></a>NestedPartialErrors|An array of [BatchErrorCollection](../campaign-management-service/batcherrorcollection.md) objects that contain details for any ad extensions that were not successfully added. The top level error within each [BatchErrorCollection](../campaign-management-service/batcherrorcollection.md) object corresponds to potential ad extension errors. The nested list of [BatchError](../campaign-management-service/batcherror.md) objects would include any errors specific to the list items within an ad extension (if applicable).<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchErrorCollection](batcherrorcollection.md) array|
+|<a name="nestedpartialerrors"></a>NestedPartialErrors|An array of [BatchErrorCollection](batcherrorcollection.md) objects that contain details for any ad extensions that were not successfully added. The top level error within each [BatchErrorCollection](batcherrorcollection.md) object corresponds to potential ad extension errors. The nested list of [BatchError](batcherror.md) objects would include any errors specific to the list items within an ad extension (if applicable).<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchErrorCollection](batcherrorcollection.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -362,7 +362,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<AddAdExtensionsResponse> AddAdExtensionsAsync(
 	long accountId,

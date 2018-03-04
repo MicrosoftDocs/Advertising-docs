@@ -29,55 +29,55 @@ Ad extension types include [App Extensions](#appextensions), [Call Extensions](#
 ### <a name="appextensions"></a>App Extensions
 You can associate app ad extensions with your campaigns and ad groups, and your ads will include a link to install an application.
 
-![App Ad Extension](~/guides/media/overview-appadextension.png "App Ad Extension")
+![App Ad Extension](media/overview-appadextension.png "App Ad Extension")
 
 ### <a name="callextensions"></a>Call Extensions
 With Call Extensions, you can provide a phone number that is not associated with a particular location, but is appropriate for all locations where your ads display. In comparison, you typically use Location Extensions to provide an address and local phone number associated with a local location.
 
 If the campaign is also associated with a [Location Extensions](#locationextensions), the call extension phone number will override the location extension phone number.
 
-![Call Ad Extension](~/guides/media/overview-calladextension.png "Call Ad Extension")
+![Call Ad Extension](media/overview-calladextension.png "Call Ad Extension")
 
 ### <a name="calloutextensions"></a>Callout Extensions
 With Callout Extensions, you can provide an extra snippet of text that highlights your business, products, or services to include in An ad. This extension is not clickable and can appear in addition to your ad's description. Providing additional details about your store can make your ad more relevant to potential customers.
 
 Each account, campaign, or ad group can be associated with between 2 and 20 callout ad extensions. If you associate one or fewer callout extensions with your account, campaign, or ad group, no callout text will serve with your ad. An ad may include between 2 to 4 callouts per impression.
 
-![Callout Ad Extension](~/guides/media/callout-ad-extension.png "Callout Ad Extension")
+![Callout Ad Extension](media/callout-ad-extension.png "Callout Ad Extension")
 
 ### <a name="imageextensions"></a>Image Extensions
 You can associate image ad extensions with your campaigns and ad groups, and your ads may include an image or alternative text.
 
-![Image Ad Extension](~/guides/media/image-ad-extension.png "Image Ad Extension")
+![Image Ad Extension](media/image-ad-extension.png "Image Ad Extension")
 
 ### <a name="locationextensions"></a>Location Extensions
 When you enable Location Extensions, you can choose to show the address of your business location that is closest to the customer and also include a local phone number. Better yet, if the customer is viewing your ad on a smartphone, they can click that number to give you a call.
 
 If the campaign is also associated with a [Call Extensions](#callextensions), the phone number in the call extension will override the location extension phone number.
 
-![Location Ad Extension](~/guides/media/overview-locationadextension.png "Location Ad Extension")
+![Location Ad Extension](media/overview-locationadextension.png "Location Ad Extension")
 
 ### <a name="priceextensions"></a>Price Extensions
 You can use Price Extensions to display your products or services with their corresponding prices to potential customers on mobile devices. Price Extensions only show on ads listed at the top of the results page, helping to increase your clicks. Keep in mind that though Price Extensions are free to add to your ad, they may not always show for every query.
 
-![Price Ad Extension](~/guides/media/price-ad-extension.png "Price Ad Extension")
+![Price Ad Extension](media/price-ad-extension.png "Price Ad Extension")
 
 ### <a name="reviewextensions"></a>Review Extensions
 Potential customers like to know about other customers' experiences when searching for products or services. Share positive reviews from a reputable third-party source about your business, products, or services in your ads with a Review Extension. An ad will only include one review per impression.
 
-![Review Ad Extension](~/guides/media/review-ad-extension.png "Review Ad Extension")
+![Review Ad Extension](media/review-ad-extension.png "Review Ad Extension")
 
 ### <a name="sitelinkextensions"></a>Sitelink Extensions
 Sitelink Extensions are additional links in your ads that take customers to specific pages on your website. This allows you to promote certain products, services, or sections of your website and take potential customers to exactly the information they were searching for. This can increase both click-through-rate and conversions.
 
 You may associate site links ad extensions with your campaigns or ad groups, and your ads will include up to 10 links to relevant web pages within your website. When displaying an ad, Bing Ads determines which links are most relevant to the ad being displayed and includes those with your ad. You can influence which links are included. Links that you specify at the beginning of your list receive higher priority than those toward then end of your list.
 
-![Sitelink Ad Extension](~/guides/media/overview-sitelinkadextension.png "Sitelink Ad Extension")
+![Sitelink Ad Extension](media/overview-sitelinkadextension.png "Sitelink Ad Extension")
 
 ### <a name="structuredsnippetextensions"></a>Structured Snippet Extensions
 Structured Snippet Extensions give potential customers more context on a specific aspect of your products and services. A Structured snippet is made up of a header and a list of 3-10 values which correspond to the header. For example, you might use the header "Brands:" and the values "Windows, Xbox, Skype" to let customers know about what brands are available at your store.
 
-![Structured Snippet Ad Extension](~/guides/media/structured-snippet-ad-extension.png "Structured Snippet Ad Extension")
+![Structured Snippet Ad Extension](media/structured-snippet-ad-extension.png "Structured Snippet Ad Extension")
 
 This extension is not clickable and, similar to other extensions, will appear beneath your ad's description. Structured Snippets have no impact on the other extensions you're already using. Structured Snippets should not duplicate what is already stated in the ad. Our full list of Structured Snippet policies can be found [here](https://advertise.bingads.microsoft.com/resources/policies/ad-extensions-policies).
 
@@ -132,12 +132,12 @@ The following Bulk records are available for managing ad extensions and ad exten
 -   [Ad Group Structured Snippet Ad Extension](~/bulk-service/ad-group-structured-snippet-ad-extension.md)
 -   [Campaign Structured Snippet Ad Extension](~/bulk-service/campaign-structured-snippet-ad-extension.md)
 
-For code examples that show how to set up ad extensions using the Bulk service, see [Bulk Ad Extensions Code Example](~/guides/code-example-bulk-ad-extensions.md).
+For code examples that show how to set up ad extensions using the Bulk service, see [Bulk Ad Extensions Code Example](code-example-bulk-ad-extensions.md).
 
 ## <a name="campaignservice"></a>Managing Ad Extensions with the Campaign Management Service
 You can use the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md) to create, get, update, and delete both ad extensions and ad extension associations. 
 
-For code examples that show how to set up ad extensions using the Campaign Management service, see [Ad Extensions Code Example](~/guides/code-example-ad-extensions.md).
+For code examples that show how to set up ad extensions using the Campaign Management service, see [Ad Extensions Code Example](code-example-ad-extensions.md).
 
 ### Entities
 These are the ad extension entities that can be accessed using the [Campaign Management Service](~/campaign-management-service/campaign-management-service-reference.md). You can create, read, update, and delete these entities.

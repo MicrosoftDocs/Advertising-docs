@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the ascending or descending sort order of results for one of the search operations, for example SearchAccounts, SearchClientLinks, or SearchCustomers.
 ---
 # SortOrder Value Set - Customer Management
-Defines the ascending or descending sort order of results for one of the search operations, for example [SearchAccounts](../customer-management-service/searchaccounts.md), [SearchClientLinks](../customer-management-service/searchclientlinks.md), or [SearchCustomers](../customer-management-service/searchcustomers.md).
+Defines the ascending or descending sort order of results for one of the search operations, for example [SearchAccounts](searchaccounts.md), [SearchClientLinks](searchclientlinks.md), or [SearchCustomers](searchcustomers.md).
 
 ## Syntax
 ```xml

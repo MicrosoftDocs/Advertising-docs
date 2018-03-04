@@ -35,7 +35,7 @@ The *GetKeywordOpportunitiesResponse* object defines the [body](#response-body) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="opportunities"></a>Opportunities|A list of [KeywordOpportunity](../ad-insight-service/keywordopportunity.md) data objects that identifies a suggested keyword and bid value. The list will be empty if there are no suggestions, which may occur if the ad group does not contain existing ads and keywords.<br /><br />Up to 1,000 CampaignContext and up to 500 BroadMatch keyword opportunities will be returned by the service.|[KeywordOpportunity](keywordopportunity.md) array|
+|<a name="opportunities"></a>Opportunities|A list of [KeywordOpportunity](keywordopportunity.md) data objects that identifies a suggested keyword and bid value. The list will be empty if there are no suggestions, which may occur if the ad group does not contain existing ads and keywords.<br /><br />Up to 1,000 CampaignContext and up to 500 BroadMatch keyword opportunities will be returned by the service.|[KeywordOpportunity](keywordopportunity.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -114,7 +114,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetKeywordOpportunitiesResponse> GetKeywordOpportunitiesAsync(
 	long? adGroupId,

@@ -30,7 +30,7 @@ The SDK uses the production environment by default. With the .NET and Java SDKs 
 environment=Sandbox
 ```
 
-You can also set the API environment parameter of individual [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md), [Service Client](#serviceclient), and [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md) instances. Setting the *apiEnvironment* overrides the global setting only for the specified service client instance or instances. Unless otherwise intended, you should be careful not to inadvertently configure a mixed set of environments.    
+You can also set the API environment parameter of individual [Bulk Service Manager](../guides/sdk-bulk-service-manager.md), [Service Client](#serviceclient), and [Reporting Service Manager](../guides/sdk-reporting-service-manager.md) instances. Setting the *apiEnvironment* overrides the global setting only for the specified service client instance or instances. Unless otherwise intended, you should be careful not to inadvertently configure a mixed set of environments.    
 
 ```csharp
 BulkServiceManager BulkService = new BulkServiceManager(authorizationData, ApiEnvironment.Sandbox);
@@ -217,11 +217,11 @@ For repeat or long term authentication, you should follow the authorization code
     access_token = oauth_tokens.access_token
     ```
 
-    If this step succeeded, your application has permissions to manage the user's Bing Ads accounts. To call Bing Ads services, you should initialize either [Service Client](#serviceclient), [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md), or [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md) with [AuthorizationData](#authorization-data) that contains your *OAuthWebAuthCodeGrant* instance.
+    If this step succeeded, your application has permissions to manage the user's Bing Ads accounts. To call Bing Ads services, you should initialize either [Service Client](#serviceclient), [Bulk Service Manager](../guides/sdk-bulk-service-manager.md), or [Reporting Service Manager](../guides/sdk-reporting-service-manager.md) with [AuthorizationData](#authorization-data) that contains your *OAuthWebAuthCodeGrant* instance.
     
     For more information, see [Using AuthorizationData](#authorization-data), [Using Service Client](#serviceclient), [Using BulkServiceManager](sdk-bulk-service-manager.md), and [Using ReportingServiceManager](sdk-reporting-service-manager.md).
 
-4.  When calling Bing Ads services with [Service Client](#serviceclient), [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md), or [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md), it is important to save the most recent refresh token whenever new OAuth tokens are received.  
+4.  When calling Bing Ads services with [Service Client](#serviceclient), [Bulk Service Manager](../guides/sdk-bulk-service-manager.md), or [Reporting Service Manager](../guides/sdk-reporting-service-manager.md), it is important to save the most recent refresh token whenever new OAuth tokens are received.  
 
     ```csharp
     // If you already have a refresh token, use it to request new access and refresh tokens.
@@ -282,7 +282,7 @@ For repeat or long term authentication, you should follow the authorization code
 
 
 ## <a name="authorization-data"></a>Using AuthorizationData
-The [AuthorizationData](#authorization-data) class contains properties that Bing Ads uses to authorize a user. The [Service Client](#serviceclient), [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md) and [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md) classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 
+The [AuthorizationData](#authorization-data) class contains properties that Bing Ads uses to authorize a user. The [Service Client](#serviceclient), [Bulk Service Manager](../guides/sdk-bulk-service-manager.md) and [Reporting Service Manager](../guides/sdk-reporting-service-manager.md) classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 
 
 The following code block shows how to create an instance of [AuthorizationData](#authorization-data) and set its *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties.
 
@@ -318,16 +318,16 @@ authorization_data = AuthorizationData(
 )
 ```
 
-The *Authentication* property must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant*, *OAuthDesktopMobileImplicitGrant*, or *PasswordAuthentication*. If you are [configured](#sandbox) for the [sandbox](~/guides/sandbox.md) environment, then only *PasswordAuthentication* is supported.
+The *Authentication* property must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant*, *OAuthDesktopMobileImplicitGrant*, or *PasswordAuthentication*. If you are [configured](#sandbox) for the [sandbox](../guides/sandbox.md) environment, then only *PasswordAuthentication* is supported.
 
 
 Some services such as Customer Management do not accept *CustomerId* and *CustomerAccountId* headers, so they will be ignored if you specified them in the [AuthorizationData](#authorization-data) object.
 
 ## <a name="serviceclient"></a>Using Service Client
-You can use an instance of the *ServiceClient* class to call any methods of one of the Bing Ads [web services](~/guides/web-service-addresses.md). The *ServiceClient* class handles common request header fields for you, allowing to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 
+You can use an instance of the *ServiceClient* class to call any methods of one of the Bing Ads [web services](../guides/web-service-addresses.md). The *ServiceClient* class handles common request header fields for you, allowing to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 
 
 > [!TIP]
-> If you are using the Bulk or Reporting services, use the [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md) or [Reporting Service Manager](~/guides/sdk-reporting-service-manager.md) instead of *ServiceClient*. For example the [Bulk Service Manager](~/guides/sdk-bulk-service-manager.md) will submit your download request to the bulk service, poll the service until completed, and download the file to the local directory that you specified in the request. You'll save even more time because you don't have to write or parse the upload or results files. 
+> If you are using the Bulk or Reporting services, use the [Bulk Service Manager](../guides/sdk-bulk-service-manager.md) or [Reporting Service Manager](../guides/sdk-reporting-service-manager.md) instead of *ServiceClient*. For example the [Bulk Service Manager](../guides/sdk-bulk-service-manager.md) will submit your download request to the bulk service, poll the service until completed, and download the file to the local directory that you specified in the request. You'll save even more time because you don't have to write or parse the upload or results files. 
 
 ```csharp
 // The primary method of the ServiceClient class is CallAsync. The method parameter is the delegate for the service operation that you want to call. The request parameter of this method must be a request message corresponding to the name of the service operation specified by the first request parameter. The request message must match the service operation that is specified as the delegate in the first request.

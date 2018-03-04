@@ -15,7 +15,7 @@ dev_langs:
 Gets the negative keywords of a negative keyword list.
 
 > [!NOTE]
-> The operation is only used for shared negative keyword lists. To get negative keywords that are exclusively used with one campaign or ad group, see [GetNegativeKeywordsByEntityIds](../campaign-management-service/getnegativekeywordsbyentityids.md). 
+> The operation is only used for shared negative keyword lists. To get negative keywords that are exclusively used with one campaign or ad group, see [GetNegativeKeywordsByEntityIds](getnegativekeywordsbyentityids.md). 
 
 ## <a name="request"></a>Request Elements
 The *GetListItemsBySharedListRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -98,7 +98,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetListItemsBySharedListResponse> GetListItemsBySharedListAsync(
 	SharedList sharedList)

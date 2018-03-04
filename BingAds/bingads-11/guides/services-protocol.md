@@ -10,7 +10,7 @@ description: You can write your Bing Ads application in any language that suppor
 You can write your Bing Ads application in any language that supports web services. A web services description language (WSDL) document is defined for each web service. The WSDL defines the operations that a web service offers and the format of the request and response messages that the client sends to and receives from the operations. The request and response messages define the names and types of the data that the client exchanges with the operation. For more information about WSDLs, see the [W3C WSDL specification](https://www.w3.org/TR/wsdl).
 
 ## SOAP for Bing Ads API
-Bing Ads services support Simple Object Access Protocol (SOAP). Some languages, such as C# and Java, provide tools that generate proxy classes from the WSDL. If your language of choice does not provide a tool to generate proxy classes, you will need to generate your own proxy classes or SOAP envelopes. To generate the proxy classes, you need the web address of the WSDL document of the service that you want to use. The Bing Ads sandbox and production environments each have a unique address. The addresses also include the version number of the WSDL that is specific to a major Bing Ads API release. For production and sandbox service WSDLs of the latest Bing Ads API version, see [Bing Ads Web Service Addresses](../guides/web-service-addresses.md).
+Bing Ads services support Simple Object Access Protocol (SOAP). Some languages, such as C# and Java, provide tools that generate proxy classes from the WSDL. If your language of choice does not provide a tool to generate proxy classes, you will need to generate your own proxy classes or SOAP envelopes. To generate the proxy classes, you need the web address of the WSDL document of the service that you want to use. The Bing Ads sandbox and production environments each have a unique address. The addresses also include the version number of the WSDL that is specific to a major Bing Ads API release. For production and sandbox service WSDLs of the latest Bing Ads API version, see [Bing Ads Web Service Addresses](web-service-addresses.md).
 
 ## <a name="element_order"></a>SOAP XML Element Order
 When you create a SOAP request message, the order of the elements within the SOAP body is critical. The elements must be in the same order as defined in the web services description language (WSDL). If the required elements are out of order, the call will fail. If the optional elements are out of order, the call may fail or the elements will be ignored. The WSDL syntax, which shows the correct order of the elements, is included with each request message, response message, and data object documented in the reference content. In addition, each request and response message shows an example SOAP envelope.
@@ -46,7 +46,7 @@ The following are the overhead costs, in processing time, that are associated wi
 -   Authenticating the user name and password.  
 -   Validating the developer token.  
 
-These costs occur whether you process a single item or a set of items. To minimize overhead, in general, you should try to process as many items in one call as possible. For example, instead of calling [UpdateCampaigns](~/campaign-management-service/updatecampaigns.md) for each campaign that you want to update, call it only once for multiple campaigns that you want to update. To manage large scale data you should use the [Bulk service](~/bulk-service/bulk-service-reference.md). The Bulk service allows you to download data as a TSV or CSV file, modify it as needed, and then upload your changes. For more information about using the Bulk service, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+These costs occur whether you process a single item or a set of items. To minimize overhead, in general, you should try to process as many items in one call as possible. For example, instead of calling [UpdateCampaigns](~/campaign-management-service/updatecampaigns.md) for each campaign that you want to update, call it only once for multiple campaigns that you want to update. To manage large scale data you should use the [Bulk service](~/bulk-service/bulk-service-reference.md). The Bulk service allows you to download data as a TSV or CSV file, modify it as needed, and then upload your changes. For more information about using the Bulk service, see [Bulk Download and Upload](bulk-download-upload.md).
 
 Because of the costs associated with establishing a connection to a web service, you should maintain the connection for as long as it is needed. For example, if you need to request multiple reports, use the same reporting service client object for all reporting service operation calls. Explicitly close the connection when you no longer need the service.
 
@@ -77,9 +77,9 @@ Should you hit the service call limit, you will see the following error:
 
 If you observe this error, you can resubmit your request after waiting up to 15 minutes.
 
-Also note the size limit per file for bulk upload in production is 100MB and up to 4 million rows. For [Sandbox](../guides/sandbox.md) the limit is 20K rows.
+Also note the size limit per file for bulk upload in production is 100MB and up to 4 million rows. For [Sandbox](sandbox.md) the limit is 20K rows.
 
 ## See Also
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)  
-[Bing Ads API Overview](../guides/index.md)  
+[Bing Ads Web Service Addresses](web-service-addresses.md)  
+[Bing Ads API Overview](index.md)  
 

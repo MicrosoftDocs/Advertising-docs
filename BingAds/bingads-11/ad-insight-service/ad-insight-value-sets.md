@@ -13,13 +13,13 @@ The Ad Insight service defines the following value sets.
 |---|---|
 |[AdGroupBidLandscapeType](adgroupbidlandscapetype.md)|Defines the possible values that indicate whether all or a subset of an ad group's existing keywords are used to determine the bid landscape.|
 |[AdPosition](adposition.md)|Defines the possible positions of an ad in the search results or on a content-based webpage.|
-|[BidOpportunityType](bidopportunitytype.md)|Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](../ad-insight-service/getbidopportunities.md).|
+|[BidOpportunityType](bidopportunitytype.md)|Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](getbidopportunities.md).|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible types of campaign budgets.|
 |[BudgetPointType](budgetpointtype.md)|Defines the possible values of a campaign budget point.|
 |[CompetitionLevel](competitionlevel.md)|Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads.|
 |[Currency](currency.md)|Defines a selection of currency values.|
-|[KeywordIdeaAttribute](keywordideaattribute.md)|Determines which properties of the [KeywordIdea](../ad-insight-service/keywordidea.md) object you want returned when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.|
-|[KeywordOpportunityType](keywordopportunitytype.md)|Defines the possible keyword opportunity types you can request when calling [GetKeywordOpportunities](../ad-insight-service/getkeywordopportunities.md).|
+|[KeywordIdeaAttribute](keywordideaattribute.md)|Determines which properties of the [KeywordIdea](keywordidea.md) object you want returned when calling the [GetKeywordIdeas](getkeywordideas.md) operation.|
+|[KeywordOpportunityType](keywordopportunitytype.md)|Defines the possible keyword opportunity types you can request when calling [GetKeywordOpportunities](getkeywordopportunities.md).|
 |[MatchType](matchtype.md)|Defines the possible keyword match type values.|
 |[NetworkType](networktype.md)|Defines the possible search networks on which an ad can display.|
 |[SourceType](sourcetype.md)|Defines the source or seed for the keyword idea.|

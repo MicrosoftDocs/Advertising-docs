@@ -12,7 +12,7 @@ dev_langs:
 Defines an Ad Group Negative Dynamic Search Ad Target that can be uploaded and downloaded in a bulk file.  
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Ad Group Negative Dynamic Search Ad Target* record, the following attribute fields are available in the [Bulk File Schema](../bulk-service/bulk-file-schema.md). 
+For an *Ad Group Negative Dynamic Search Ad Target* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Ad Group](#adgroup)
 - [Campaign](#campaign)
@@ -29,7 +29,7 @@ For an *Ad Group Negative Dynamic Search Ad Target* record, the following attrib
 - [Parent Id](#parentid)
 - [Status](#status)
 
-You can download all fields of the *Ad Group Negative Dynamic Search Ad Target* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupNegativeDynamicSearchAdTargets* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group Negative Dynamic Search Ad Target* record by including the [DownloadEntity](downloadentity.md) value of *AdGroupNegativeDynamicSearchAdTargets* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new ad group negative dynamic search ad target given a valid ad group ID (*Parent Id*). 
 
@@ -39,7 +39,7 @@ Format Version,,,,,,,,,5,,,,,,,,
 Ad Group Negative Dynamic Search Ad Target,Paused,,-1113,,,ClientIdGoesHere,,,Bulk Ad Group Dynamic Search Ad Target,,,Url,Category,PageContent,contoso.com,US/CA/,flowers
 ```
 
-If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupNegativeDynamicSearchAdTarget* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupNegativeDynamicSearchAdTarget* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -220,9 +220,9 @@ The criterion name length must be between 1 to 2048, inclusive.
 ### <a name="parentid"></a>Parent Id
 The system generated identifier of the ad group that contains the dynamic ad target (webpage criterion).
 
-This bulk field maps to the *Id* field of the [Ad Group](../bulk-service/ad-group.md) record.
+This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](../bulk-service/ad-group.md) record. This is recommended if you are adding new dynamic ad targets to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](ad-group.md) record. This is recommended if you are adding new dynamic ad targets to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](~/bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only  
 **Delete:** Read-only  
 

@@ -26,11 +26,11 @@ Defines price qualifiers for price ad extensions.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="average"></a>Average|The price of the [PriceAdExtension](../campaign-management-service/priceadextension.md) is prefixed with price qualifier text *Average*, for example *Average $9.99*.|
-|<a name="from"></a>From|The price of the [PriceAdExtension](../campaign-management-service/priceadextension.md) is prefixed with price qualifier text *From*, for example *From $9.99*.|
-|<a name="none"></a>None|The price of the [PriceAdExtension](../campaign-management-service/priceadextension.md) is not prefixed with price qualifier text.|
+|<a name="average"></a>Average|The price of the [PriceAdExtension](priceadextension.md) is prefixed with price qualifier text *Average*, for example *Average $9.99*.|
+|<a name="from"></a>From|The price of the [PriceAdExtension](priceadextension.md) is prefixed with price qualifier text *From*, for example *From $9.99*.|
+|<a name="none"></a>None|The price of the [PriceAdExtension](priceadextension.md) is not prefixed with price qualifier text.|
 |<a name="unknown"></a>Unknown|Reserved for forward compatibility.|
-|<a name="upto"></a>UpTo|The price of the [PriceAdExtension](../campaign-management-service/priceadextension.md) is prefixed with the price qualifier text *Up to*, for example *Up to $9.99*.|
+|<a name="upto"></a>UpTo|The price of the [PriceAdExtension](priceadextension.md) is prefixed with the price qualifier text *Up to*, for example *Up to $9.99*.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

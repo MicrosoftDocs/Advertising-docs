@@ -22,7 +22,7 @@ The *SetNegativeSitesToCampaignsRequest* object defines the [body](#request-body
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the campaigns.|**long**|
-|<a name="campaignnegativesites"></a>CampaignNegativeSites|An array of [CampaignNegativeSites](../campaign-management-service/campaignnegativesites.md) objects that identify the campaigns to update with the specified negative site URLs.<br /><br />The array can contain a maximum of 5,000 objects.<br /><br />The total number of URLs that you can specify per request for all ad campaigns combined is 30,000. For example, if you specify 2,500 URLs per campaign, the maximum number of [CampaignNegativeSites](../campaign-management-service/campaignnegativesites.md) objects that you should pass is 12.|[CampaignNegativeSites](campaignnegativesites.md) array|
+|<a name="campaignnegativesites"></a>CampaignNegativeSites|An array of [CampaignNegativeSites](campaignnegativesites.md) objects that identify the campaigns to update with the specified negative site URLs.<br /><br />The array can contain a maximum of 5,000 objects.<br /><br />The total number of URLs that you can specify per request for all ad campaigns combined is 30,000. For example, if you specify 2,500 URLs per campaign, the maximum number of [CampaignNegativeSites](campaignnegativesites.md) objects that you should pass is 12.|[CampaignNegativeSites](campaignnegativesites.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -34,7 +34,7 @@ The *SetNegativeSitesToCampaignsResponse* object defines the [body](#response-bo
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](../campaign-management-service/batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -109,7 +109,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<SetNegativeSitesToCampaignsResponse> SetNegativeSitesToCampaignsAsync(
 	long accountId,

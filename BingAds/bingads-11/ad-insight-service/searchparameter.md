@@ -9,21 +9,21 @@ description: This is the base class from which keyword idea search parameter obj
 # SearchParameter Data Object - Ad Insight
 This is the base class from which keyword idea search parameter objects derive. 
 
-Do not try to instantiate a [SearchParameter](../ad-insight-service/searchparameter.md). You can create one or more following objects that derive from it.
-- [CategorySearchParameter](../ad-insight-service/categorysearchparameter.md)  
-- [CompetitionSearchParameter](../ad-insight-service/competitionsearchparameter.md)  
-- [DateRangeSearchParameter](../ad-insight-service/daterangesearchparameter.md)  
-- [DeviceSearchParameter](../ad-insight-service/devicesearchparameter.md)  
-- [ExcludeAccountKeywordsSearchParameter](../ad-insight-service/excludeaccountkeywordssearchparameter.md)  
-- [IdeaTextSearchParameter](../ad-insight-service/ideatextsearchparameter.md)  
-- [ImpressionShareSearchParameter](../ad-insight-service/impressionsharesearchparameter.md)  
-- [LanguageSearchParameter](../ad-insight-service/languagesearchparameter.md)  
-- [LocationSearchParameter](../ad-insight-service/locationsearchparameter.md)  
-- [NetworkSearchParameter](../ad-insight-service/networksearchparameter.md)  
-- [QuerySearchParameter](../ad-insight-service/querysearchparameter.md)  
-- [SearchVolumeSearchParameter](../ad-insight-service/searchvolumesearchparameter.md)  
-- [SuggestedBidSearchParameter](../ad-insight-service/suggestedbidsearchparameter.md)  
-- [UrlSearchParameter](../ad-insight-service/urlsearchparameter.md)  
+Do not try to instantiate a [SearchParameter](searchparameter.md). You can create one or more following objects that derive from it.
+- [CategorySearchParameter](categorysearchparameter.md)  
+- [CompetitionSearchParameter](competitionsearchparameter.md)  
+- [DateRangeSearchParameter](daterangesearchparameter.md)  
+- [DeviceSearchParameter](devicesearchparameter.md)  
+- [ExcludeAccountKeywordsSearchParameter](excludeaccountkeywordssearchparameter.md)  
+- [IdeaTextSearchParameter](ideatextsearchparameter.md)  
+- [ImpressionShareSearchParameter](impressionsharesearchparameter.md)  
+- [LanguageSearchParameter](languagesearchparameter.md)  
+- [LocationSearchParameter](locationsearchparameter.md)  
+- [NetworkSearchParameter](networksearchparameter.md)  
+- [QuerySearchParameter](querysearchparameter.md)  
+- [SearchVolumeSearchParameter](searchvolumesearchparameter.md)  
+- [SuggestedBidSearchParameter](suggestedbidsearchparameter.md)  
+- [UrlSearchParameter](urlsearchparameter.md)  
 
 ## Syntax
 ```xml

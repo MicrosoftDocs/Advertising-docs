@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment.
 ---
 # Bing Ads Sandbox
-Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served. Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](../guides/web-service-addresses.md).
+Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served. Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](web-service-addresses.md).
 
 > [!NOTE]
 > Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. Notifications are posted in the [Bing Ads Developer Blog](https://blogs.msdn.microsoft.com/bing_ads_api/).
@@ -20,9 +20,9 @@ New customers are required to sign up for Bing Ads with a Microsoft Account, and
 > [!NOTE]
 > SDK Support for OAuth in sandbox is coming soon. Please follow the [API blog](https://blogs.msdn.microsoft.com/bing_ads_api/) and [release notes](release-notes.md) for announcements.
 
-To authenticate with a Microsoft Account in sandbox you will follow the same work flow as described in [Authentication with OAuth](../guides/authentication-oauth.md) for production; however, you will use different endpoints.
+To authenticate with a Microsoft Account in sandbox you will follow the same work flow as described in [Authentication with OAuth](authentication-oauth.md) for production; however, you will use different endpoints.
 
-For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](../guides/authentication-oauth.md), substitute them with the sandbox endpoints. 
+For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](authentication-oauth.md), substitute them with the sandbox endpoints. 
 
 |Description|Production|Sandbox|
 |---|---|---|
@@ -30,7 +30,7 @@ For the sandbox environment, the following are the endpoints you must use to get
 |Endpoint for getting a sandbox client ID|apps.dev.microsoft.com/#/appList|apps.dev.microsoft-int.com/#/appList|
 |Endpoint for OAuth requests|login.live.com|login.live-int.com|
 
-Also as mentioned above, supported services in sandbox vary from production. To get the web service addresses for sandbox, see [Bing Ads Web Service Addresses](../guides/web-service-addresses.md).
+Also as mentioned above, supported services in sandbox vary from production. To get the web service addresses for sandbox, see [Bing Ads Web Service Addresses](web-service-addresses.md).
 
 Follow these steps to get a sandbox customer. If you already have a sandbox customer, you can skip to the user invitation steps.
 
@@ -118,7 +118,7 @@ Ad Insight service operations differ from production, and limitations are descri
 |[SuggestKeywordsFromExistingKeywords](~/ad-insight-service/suggestkeywordsfromexistingkeywords.md)|If the SuggestionType is set to 1, there should be no difference in behavior compared to production.<br /><br />For suggestion type values 2, 3, and 4, the results are limited to the set of keywords provided in sandbox. For more information, see [Supported Keywords](#supportedkeywords).|
 
 ## <a name="bulk"></a>Bulk Service
-The file size limit for upload in production is 100MB or 2.5 million rows. For sandbox the limit is 20K rows. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+The file size limit for upload in production is 100MB or 2.5 million rows. For sandbox the limit is 20K rows. For more information, see [Bulk Download and Upload](bulk-download-upload.md).
 
 ## <a name="campaign"></a>Campaign Management Service
 

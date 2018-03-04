@@ -36,7 +36,7 @@ For an *Ad Group Location Criterion* record, the following attribute fields are 
 - [Sub Type](#subtype)
 - [Target](#target)
 
-You can download all fields of the *Ad Group Location Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](~/guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group Location Criterion* record by including the [DownloadEntity](../bulk-service/downloadentity.md) value of *AdGroupTargetCriterions* in the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](../bulk-service/datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new ad group location criterion if a valid ad group identifier (*Parent Id*) is provided. 
 
@@ -46,7 +46,7 @@ Format Version,,,,,,,,,,,5,,,,,,,,,
 Ad Group Location Criterion,Active,,-1111,Country,,,ClientIdGoesHere,,190,20,,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](~/guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupLocationCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupLocationCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -184,7 +184,7 @@ Possible values are *City*, *Country*, *County*, *MetroArea*, *PostalCode*, and 
 **Delete:** Read-only  
 
 ### <a name="target"></a>Target
-The identifier of the location that you want to target with the corresponding *Bid Adjustment*. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](~/guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md).
+The identifier of the location that you want to target with the corresponding *Bid Adjustment*. The location identifier corresponds to the *ID* field of the geographical locations file. For more information, see [Geographical Location Codes](../guides/geographical-location-codes.md) and [GetGeoLocationsFileUrl](~/campaign-management-service/getgeolocationsfileurl.md).
 
 **Add:** Required  
 **Update:** Required  

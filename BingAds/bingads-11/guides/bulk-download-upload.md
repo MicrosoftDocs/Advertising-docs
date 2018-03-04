@@ -12,7 +12,7 @@ With the [bulk service](~/bulk-service/bulk-service-reference.md) you can downlo
 > [!IMPORTANT]
 > New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file.
 
-If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](../guides/client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [DownloadCampaignsByAccountIds](~/bulk-service/downloadcampaignsbyaccountids.md) and [GetBulkDownloadStatus](~/bulk-service/getbulkdownloadstatus.md) to download a file, you can use one method with the *BulkServiceManager* class. For more information about using Bulk download and upload with the SDKs, see [Bulk Service Manager](../guides/sdk-bulk-service-manager.md).
+If you are using a .NET language, Java, or Python, you should use the [Bing Ads Client Libraries](client-libraries.md). The .NET, Java, and Python SDKs abstract the low level details described below. For example instead of calling [DownloadCampaignsByAccountIds](~/bulk-service/downloadcampaignsbyaccountids.md) and [GetBulkDownloadStatus](~/bulk-service/getbulkdownloadstatus.md) to download a file, you can use one method with the *BulkServiceManager* class. For more information about using Bulk download and upload with the SDKs, see [Bulk Service Manager](sdk-bulk-service-manager.md).
 
 ## <a name="bulkdownload"></a>Bulk Download
 To download an account's campaign data, call the [DownloadCampaignsByAccountIds](~/bulk-service/downloadcampaignsbyaccountids.md) operation. To download the data of specific campaigns, call the [DownloadCampaignsByCampaignIds](~/bulk-service/downloadcampaignsbycampaignids.md) operation.
@@ -66,7 +66,7 @@ You may request all of the campaign's data or only the data that has changed sin
 You can submit your bulk upload file with HTTP POST to a Url provided by the bulk service.
 
 > [!NOTE]
-> The file size limit for upload in production is 100MB and up to 4 million rows. For [Sandbox](../guides/sandbox.md) the limit is 20K rows.
+> The file size limit for upload in production is 100MB and up to 4 million rows. For [Sandbox](sandbox.md) the limit is 20K rows.
 
 For information about the schema you should use for the upload file, see [Bulk File Schema](~/bulk-service/bulk-file-schema.md).
 
@@ -82,7 +82,7 @@ The following is an overview of the request settings and upload workflow.
 3.  Use the *UploadUrl* returned with the [GetBulkUploadUrl](~/bulk-service/getbulkuploadurl.md) response to submit your bulk upload file with HTTP POST. The content type must be *multipart/form-data*. UTF-8 files must include the byte order mark (BOM). The ZIP-compressed upload should contain one file formatted as either **Csv** or **Tsv**. The ZIP file must be properly structured, including an end of central directory record.
 
     > [!NOTE]
-    > The HTTP standard Authorization header is not used. To authenticate you must add and set the Bing Ads custom header elements of your HTTP client, including the *DeveloperToken*, *CustomerId*, and *CustomerAccountId* headers. You must also set the user credentials header or headers. For [Authentication with OAuth](../guides/authentication-oauth.md) you must set the *AuthenticationToken* header, otherwise to use the deprecated Bing Ads managed credentials you must set the *UserName* and *Password* headers. For more information, see [Where to Use the API Credentials](../guides/get-started.md#where-to-use).
+    > The HTTP standard Authorization header is not used. To authenticate you must add and set the Bing Ads custom header elements of your HTTP client, including the *DeveloperToken*, *CustomerId*, and *CustomerAccountId* headers. You must also set the user credentials header or headers. For [Authentication with OAuth](authentication-oauth.md) you must set the *AuthenticationToken* header, otherwise to use the deprecated Bing Ads managed credentials you must set the *UserName* and *Password* headers. For more information, see [Where to Use the API Credentials](get-started.md#where-to-use).
     >
     > You must use the same user credentials throughout the [GetBulkUploadUrl](~/bulk-service/getbulkuploadurl.md), HTTP POST, and [GetBulkUploadStatus](~/bulk-service/getbulkuploadstatus.md) workflow.  
 
@@ -97,7 +97,7 @@ The following is an overview of the request settings and upload workflow.
     Content-Type: multipart/form-data;
     ```
 
-4.  Check the HTTP response status code. If the HTTP response status code is 200, then the file was received successfully by Bing Ads. If the HTTP response status code is 401, then authentication failed e.g. *UserName*, *Password*, *AuthenticationToken*, or *DeveloperToken* was invalid.  If the HTTP response status code is 400, then you should also check the response stream for [Bing Ads Operation Error Codes](../guides/operation-error-codes.md) for example, in the range of 3220 - 3227. 
+4.  Check the HTTP response status code. If the HTTP response status code is 200, then the file was received successfully by Bing Ads. If the HTTP response status code is 401, then authentication failed e.g. *UserName*, *Password*, *AuthenticationToken*, or *DeveloperToken* was invalid.  If the HTTP response status code is 400, then you should also check the response stream for [Bing Ads Operation Error Codes](operation-error-codes.md) for example, in the range of 3220 - 3227. 
 
     Here is an example error response message that the URL had already been used to upload a bulk file.
     ```http
@@ -124,7 +124,7 @@ The following is an overview of the request settings and upload workflow.
 ### <a name="uploadbestpractices"></a>Upload Best Practices
 Please consider these tips to maximize Bulk upload performance.
 
--   Large files can degrade the upload performance. It is optional and recommended that the file be compressed for upload. If compressed it must be formatted as ZIP with the corresponding extension. The file size limit for upload in production is 100MB and up to 4 million rows. For [Sandbox](../guides/sandbox.md) the limit is 20K rows. If you can limit concurrent uploads per customer below 5 or 6, then consider splitting the file rather than approaching the file size limit.
+-   Large files can degrade the upload performance. It is optional and recommended that the file be compressed for upload. If compressed it must be formatted as ZIP with the corresponding extension. The file size limit for upload in production is 100MB and up to 4 million rows. For [Sandbox](sandbox.md) the limit is 20K rows. If you can limit concurrent uploads per customer below 5 or 6, then consider splitting the file rather than approaching the file size limit.
 
 -   Limit concurrent uploads to 5 or 6 per customer to upload files in parallel. Wait on each thread until the previous file was processed, and then you can reuse the thread to upload another file. For example, one thread can upload a file and after the upload status is either *Completed*, *CompletedWithErrors*, or *Failed* that thread can upload another file. 
 
@@ -142,5 +142,5 @@ Please consider these tips to maximize Bulk upload performance.
 
 ## See Also
 [Bulk Service Reference](~/bulk-service/bulk-service-reference.md)  
-[Bing Ads Web Service Addresses](../guides/web-service-addresses.md)
+[Bing Ads Web Service Addresses](web-service-addresses.md)
 

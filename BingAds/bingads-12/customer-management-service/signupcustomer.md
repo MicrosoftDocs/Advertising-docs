@@ -15,7 +15,7 @@ dev_langs:
 Creates a new customer and account that rolls up to your reseller payment method.
 
 > [!NOTE]
-> You must be a reseller with aggregator user permissions to call this operation. For more details see [Management Model for Resellers](~/guides/management-model-resellers.md).
+> You must be a reseller with aggregator user permissions to call this operation. For more details see [Management Model for Resellers](../guides/management-model-resellers.md).
 
 Pass both [Customer](~/customer-management-service/customer.md) and [Account](~/customer-management-service/account.md) objects in the request. The customer object includes the customer's name, the address where the customer is located, the market in which the customer operates, and the industry in which the customer participates. Although it is possible to add multiple customers with the same details, you should use unique customer names so that users can easily distinguish between customers in a user interface.
 
@@ -184,7 +184,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<SignupCustomerResponse> SignupCustomerAsync(
 	Customer customer,

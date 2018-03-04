@@ -10,7 +10,7 @@ description: Defines a selection of language values.
 Defines a selection of language values.
 
 > [!NOTE]
-> The value set defines a broad selection of languages; however, not all languages are supported. For a list of supported languages, see [Ad Languages](~/guides/ad-languages.md).
+> The value set defines a broad selection of languages; however, not all languages are supported. For a list of supported languages, see [Ad Languages](../guides/ad-languages.md).
 
 ## Syntax
 ```xml

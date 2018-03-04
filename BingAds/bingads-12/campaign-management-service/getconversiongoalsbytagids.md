@@ -15,7 +15,7 @@ dev_langs:
 Gets the conversion goals that use the specified UET tags. 
 
 > [!TIP]
-> For an implementation overview, see the [Universal Event Tracking](~/guides/universal-event-tracking.md) technical guide.
+> For an implementation overview, see the [Universal Event Tracking](../guides/universal-event-tracking.md) technical guide.
 
 ## <a name="request"></a>Request Elements
 The *GetConversionGoalsByTagIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -147,7 +147,7 @@ The following template shows the order of the [body](#response-body) and [header
 ```
 
 ## <a name="example"></a>Code Syntax
-The example syntax can be used with [Bing Ads SDKs](~/guides/client-libraries.md). See [Bing Ads Code Examples](~/guides/code-examples.md) for more examples.
+The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetConversionGoalsByTagIdsResponse> GetConversionGoalsByTagIdsAsync(
 	IList<long> tagIds,

@@ -7,7 +7,7 @@ ms.author: eur
 description: Determines which properties of the KeywordIdea object you want returned when calling the GetKeywordIdeas operation.
 ---
 # KeywordIdeaAttribute Value Set - Ad Insight
-Determines which properties of the [KeywordIdea](../ad-insight-service/keywordidea.md) object you want returned when calling the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation.
+Determines which properties of the [KeywordIdea](keywordidea.md) object you want returned when calling the [GetKeywordIdeas](getkeywordideas.md) operation.
 
 ## Syntax
 ```xml

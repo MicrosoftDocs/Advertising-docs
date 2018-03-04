@@ -10,7 +10,7 @@ description: Defines the base class of a shared list.
 Defines the base class of a shared list.
 
 Do not try to instantiate a *SharedList*. You can create the following object that derives from it.
--   [NegativeKeywordList](../campaign-management-service/negativekeywordlist.md)
+-   [NegativeKeywordList](negativekeywordlist.md)
 
 ## Syntax
 ```xml
@@ -29,7 +29,7 @@ Do not try to instantiate a *SharedList*. You can create the following object th
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="itemcount"></a>ItemCount|The number of [SharedListItem](../campaign-management-service/sharedlistitem.md) objects that are added to this shared list.<br /><br />**Add:** Read-only<br />**Update:** Read-only|**int**|
+|<a name="itemcount"></a>ItemCount|The number of [SharedListItem](sharedlistitem.md) objects that are added to this shared list.<br /><br />**Add:** Read-only<br />**Update:** Read-only|**int**|
 
 The [SharedList](sharedlist.md) object has [Inherited Elements](#inheritedelements).
 
@@ -40,11 +40,11 @@ The [SharedList](sharedlist.md) object derives from the [SharedEntity](sharedent
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="associationcount"></a>AssociationCount|The number of active associations between this object and an entity such as a campaign.<br /><br />For a [NegativeKeywordList](../campaign-management-service/negativekeywordlist.md), the maximum association count is 20.<br /><br />**Add:** Read-only<br />**Update:** Read-only|**int**|
+|<a name="associationcount"></a>AssociationCount|The number of active associations between this object and an entity such as a campaign.<br /><br />For a [NegativeKeywordList](negativekeywordlist.md), the maximum association count is 20.<br /><br />**Add:** Read-only<br />**Update:** Read-only|**int**|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *SharedEntity* object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The unique Bing Ads identifier of the shared entity.<br /><br />**Add:** Read-only<br />**Update:** Required|**long**|
-|<a name="name"></a>Name|The name of the shared entity.<br /><br />For a [NegativeKeywordList](../campaign-management-service/negativekeywordlist.md), the maximum length is 255.<br /><br />**Add:** Optional<br />**Update:** Optional|**string**|
-|<a name="type"></a>Type|The type of the shared entity. For more information about shared entity types, see [SharedEntity Data Object Remarks](../campaign-management-service/sharedentity.md#remarks).<br /><br />**Add:** Read-only<br />**Update:** Read-only|**string**|
+|<a name="name"></a>Name|The name of the shared entity.<br /><br />For a [NegativeKeywordList](negativekeywordlist.md), the maximum length is 255.<br /><br />**Add:** Optional<br />**Update:** Optional|**string**|
+|<a name="type"></a>Type|The type of the shared entity. For more information about shared entity types, see [SharedEntity Data Object Remarks](sharedentity.md#remarks).<br /><br />**Add:** Read-only<br />**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
