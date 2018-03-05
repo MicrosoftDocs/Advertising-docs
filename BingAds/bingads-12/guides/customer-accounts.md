@@ -134,7 +134,21 @@ It is possible to have multiple pending invitations sent to the same email addre
 Since a recipient can accept the invitation and sign into Bing Ads with a Microsoft account different than the invitation email address, you cannot determine with certainty the mapping from [UserInvitation](../customer-management-service/userinvitation.md) to accepted [User](../customer-management-service/user.md). You can search by the invitation ID (returned by [SendUserInvitation](../customer-management-service/senduserinvitation.md)), only to the extent of finding out whether or not the invitation has been accepted or has expired. The [SearchUserInvitations](../customer-management-service/searchuserinvitations.md) operation returns all pending invitations, whether or not they have expired. Accepted invitations are not included in the [SearchUserInvitations](../customer-management-service/searchuserinvitations.md) response.  
 
 ### Getting Users
-To get a list of the users who belong to a customer, call the [GetUsersInfo](../customer-management-service/getusersinfo.md) operation. The operation returns an array of objects that contains the log in email address and identifier of each user. To get the details of each user in the list, such as their role and account permissions in Bing Ads, call the [GetUser](../customer-management-service/getuser.md) operation. When calling [GetUser](../customer-management-service/getuser.md) if you leave the *UserId* element nil, the response will include details for the current authenticated user as specified by the request header credentials.
+To get a list of the users who can access one or more accounts of a customer, call the [GetUsersInfo](../customer-management-service/getusersinfo.md) operation. The operation returns an array of objects that contains the log in email address and identifier of each user. To get the details of each user in the list, such as their role and account permissions in Bing Ads, call the [GetUser](../customer-management-service/getuser.md) operation. When calling [GetUser](../customer-management-service/getuser.md) if you leave the *UserId* element nil, the response will include details for the current authenticated user as specified by the request header credentials. 
+
+The [GetUser](../customer-management-service/getuser.md) response includes a list of [CustomerRole](../customer-management-service/customerrole.md) objects named *CustomerRoles*. Each returned role is mapped to a specific customer (and specific accounts if applicable).  
+
+```xml
+<CustomerRoles xmlns:e328="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+  <e328:CustomerRole>
+    <e328:RoleId>ValueHere</e328:RoleId>
+    <e328:CustomerId>ValueHere</e328:CustomerId>
+    <e328:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <a1:long>ValueHere</a1:long>
+    </e328:AccountIds>
+  </e328:CustomerRole>
+</CustomerRoles>
+```
 
 ### Updating Users
 Only a super admin or aggregator user can update users. Because the update operation requires the time stamp of the previous write operation that was performed against the user, you must first call the [GetUser](../customer-management-service/getuser.md) operation. The [GetUser](../customer-management-service/getuser.md) operation returns the user's data, which includes the time stamp.

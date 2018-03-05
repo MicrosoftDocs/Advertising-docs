@@ -13,7 +13,7 @@ description: Language options in Bing Ads give you control over your advertising
 Language options in Bing Ads give you control over your advertising campaign and experience. 
  
 ## <a name="adlanguage"></a>Ad Language
-Your ad language setting determines the language you will use when you write your ads and should be the language of your customers. The campaign level languages setting applies to all ad groups in the campaign; However, If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The ad group level language setting applies to all ads in an ad group. 
+Your ad language setting determines the language you will use when you write your ads and should be the language of your customers. The campaign level languages setting applies to all ad groups in the campaign; However, if languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The ad group level language setting applies to all ads in an ad group. 
 
 > [!NOTE] 
 > Not everyone has the Campaign languages feature yet. If you don't, don't worry. It's coming soon.
@@ -35,7 +35,7 @@ The following are the possible languages that you may use to write your ads and 
 |Portuguese|PT<br /><br />This code differs from the ISO standard for Brazilian Portuguese, PTB.|
 |Spanish|ES|
 |Swedish|SV|
-|TraditionalChinese<br /><br />You must use *TraditionalChinese* (without space) when setting the language of a campaign or ad group.<br /><br />You must use *Traditional Chinese* (with space) when setting request elements using the Ad Insight Service.|ZH|
+|TraditionalChinese|ZH|
 		
 ## <a name="productlanguage"></a>Product Language
 Your [customer](../customer-management-service/customer.md) language determines the language of the Bing Ads interface. 

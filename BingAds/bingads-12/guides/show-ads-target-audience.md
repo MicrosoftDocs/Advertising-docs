@@ -128,7 +128,7 @@ Its worth noting that when creating campaigns via the Bing Ads web application, 
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Client Id,Modified Time,Target,Physical Intent,Bid Adjustment,Radius Target Id,Name,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
-Format Version,,,,,,,,,,,,5,,,,,,,,
+Format Version,,,,,,,,,,,,6,,,,,,,,
 Account,,AcccountIdHere,CustomerIdHere,,,,,,,,,,,,,,,,,
 Campaign Location Criterion,Active,101,CampaignIdHere,Country,CampaignNameHere,,41:34.8,32,,0,,Canada,,,,,,,,
 Campaign Location Criterion,Active,102,CampaignIdHere,Country,CampaignNameHere,,41:34.8,190,,0,,United States,,,,,,,,
@@ -139,7 +139,7 @@ If you choose *All available countries/regions* in the Bing Ads web application,
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Client Id,Modified Time,Target,Physical Intent,Bid Adjustment,Radius Target Id,Name,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
-Format Version,,,,,,,,,,,,5,,,,,,,,
+Format Version,,,,,,,,,,,,6,,,,,,,,
 Account,,AcccountIdHere,CustomerIdHere,,,,,,,,,,,,,,,,,
 Campaign Location Intent Criterion,Active,CampaignIdHere,CampaignIdHere,,CampaignNameHere,,41:34.8,PeopleInOrSearchingForOrViewingPages,,,,,,,,,,,,
 ```
@@ -151,11 +151,11 @@ Campaign Location Intent Criterion,Active,CampaignIdHere,CampaignIdHere,,Campaig
 Bing Ads supports other criterion types e.g. product partition and webpage. This guide is limited to criterions that you can use to target your ads by age, day and time, device, gender, and location. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*.  
 
 ### <a name="synccriterions"></a>Sync Criterions
-Sync the new criterions with campaigns and ad groups. For example you can use the Bulk service to download all criterions in the account and discover the mapping between criterions and campaigns and ad groups. Let's download the target criterions using Bing Ads API version 11, Bulk file format 5.0, and we can see that each criterion has its own identifier e.g. 101, 102, 103, and so on. 
+Sync the new criterions with campaigns and ad groups. For example you can use the Bulk service to download all criterions in the account and discover the mapping between criterions and campaigns and ad groups. Let's download the target criterions using Bing Ads API version 12, Bulk file format 6.0, and we can see that each criterion has its own identifier e.g. 101, 102, 103, and so on. 
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Client Id,Modified Time,Target,Physical Intent,Bid Adjustment,Radius Target Id,Name,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
-Format Version,,,,,,,,,,,,5,,,,,,,,
+Format Version,,,,,,,,,,,,6,,,,,,,,
 Account,,AcccountIdHere,CustomerIdHere,,,,,,,,,,,,,,,,,
 Campaign Age Criterion,Active,101,CampaignIdHere,,CampaignNameHere,,41:34.8,EighteenToTwentyFour,,20,,,,,,,,,,
 Campaign Gender Criterion,Active,102,CampaignIdHere,,CampaignNameHere,,41:34.8,Female,,20,,,,,,,,,,
@@ -184,7 +184,7 @@ Add new criterions directly to the campaign or ad group, or use the synced crite
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Client Id,Modified Time,Target,Physical Intent,Bid Adjustment,Radius Target Id,Name,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
-Format Version,,,,,,,,,,,,5,,,,,,,,
+Format Version,,,,,,,,,,,,6,,,,,,,,
 Account,,AcccountIdHere,CustomerIdHere,,,,,,,,,,,,,,,,,
 Campaign Location Criterion,Active,,CampaignIdHere,Country,,,,190,,20,,,,,,,,,,
 Campaign Location Intent Criterion,Deleted,CampaignIdHere,CampaignIdHere,,,,,,,,,,,,,,,,,
@@ -201,7 +201,7 @@ As observed in the example upload results file below:
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Client Id,Modified Time,Target,Physical Intent,Bid Adjustment,Radius Target Id,Name,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude,Error,Error Number
-Format Version,,,,,,,,,,,,5,,,,,,,,,,
+Format Version,,,,,,,,,,,,6,,,,,,,,,,
 Account,,AcccountIdHere,CustomerIdHere,,,,,,,,,,,,,,,,,,,
 Campaign Location Criterion,Active,110,CampaignIdHere,Country,,,,190,,20,,,,,,,,,,,,
 Campaign Location Intent Criterion,Deleted,CampaignIdHere,CampaignIdHere,,,,,,,,,,,,,,,,,,,

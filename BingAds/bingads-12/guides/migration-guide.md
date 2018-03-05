@@ -51,13 +51,6 @@ The production endpoint is [https://adinsight.api.bingads.microsoft.com/Api/Adve
 
 The sandbox endpoint is [https://adinsight.api.sandbox.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc](https://adinsight.api.sandbox.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc).
 
-#### <a name="adinsight-currencycode"></a>ISO Currency Codes
-The *Currency* value set is renamed as [CurrencyCode](../ad-insight-service/currencycode.md). The values are updated with ISO codes e.g., *USD* replaces *USDollar*.
-
-The new value set is used with the [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) and [GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md) operations. 
-
-The new value set is used with the [BidLandscapePoint](../ad-insight-service/bidlandscapepoint.md), [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md), and [EstimatedPositionAndTraffic](../ad-insight-service/estimatedpositionandtraffic.md) objects.
-
 #### <a name="adinsight-locationids"></a>Location Identifiers for Keyword Estimates
 The list of *PublisherCountries* is replaced with a list of *LocationIds* for both the [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) and [GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md) operations. This change enables you to get more accurate estimates by refining the requested locations e.g., city or metro area.  
 
@@ -65,6 +58,27 @@ The list of *PublisherCountries* is replaced with a list of *LocationIds* for bo
 In version 12 all attributes within the [KeywordIdea](../ad-insight-service/keywordidea.md) are nillable i.e., AdImpressionShare, Competition, Relevance, Source, and SuggestedBid. If you do not request them, the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation will return nil properties in the returned [KeywordIdea](../ad-insight-service/keywordidea.md). In addition the Competition [KeywordIdeaAttribute](../ad-insight-service/keywordideaattribute.md) is no longer required when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md). 
 
 In version 11 if you didn't request AdImpressionShare, Relevance, Source, or SuggestedBid the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation returned zero values (AdImpressionShare=0, Relevance=0, Source=Unknown, and SuggestedBid=0), although the values should not have been used. 
+
+#### <a name="adinsight-currencycode"></a>ISO Currency Codes
+The *Currency* value set is renamed as [CurrencyCode](../ad-insight-service/currencycode.md). The values are updated with ISO codes e.g., *USD* replaces *USDollar*.
+
+The new value set is used with the [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) and [GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md) operations. 
+
+The new value set is used with the [BidLandscapePoint](../ad-insight-service/bidlandscapepoint.md), [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md), and [EstimatedPositionAndTraffic](../ad-insight-service/estimatedpositionandtraffic.md) objects.
+
+#### <a name="adinsight-traditionalchinese"></a>Traditional Chinese
+In version 12 to specify Traditional Chinese you must use *TraditionalChinese* (without space) when setting the *Language* element e.g., for the [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) and [GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md) operations. Version 11 only supported *Traditional Chinese* (with space).
+
+#### <a name="adinsight-keyworddemographic"></a>Keyword Demographic
+The age range element names are updated within the [KeywordDemographic](../ad-insight-service/keyworddemographic.md) object.
+
+|Version 11|Version 12|
+|---|---|
+|Age18_24|EighteenToTwentyFour|
+|Age25_34|TwentyFiveToThirtyFour|
+|Age35_49|ThirtyFiveToFourtyNine|
+|Age50_64|FiftyToSixtyFour|
+|Age65Plus|SixtyFiveAndAbove|
 
 #### <a name="adinsight-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *Content* value is removed from the [MatchType](../ad-insight-service/matchtype.md) value set. 
