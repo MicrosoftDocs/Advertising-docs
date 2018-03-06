@@ -114,7 +114,7 @@ In addition to using `Filter`, you can use the `SubaccountId` and `HotelGroupId`
 
 ## Including non-performing hotels in the report
 
-By default, the report contains only hotels that have impressions during the reporting period. To include hotels that did not have impressions during the reporting period, set the [IncludeNonPerformingHotels](reference.md#includenonperforminghotels) field in the report request to **true**.
+By default, the performance report contains only hotels that have impressions during the reporting period. To include hotels that did not have impressions during the reporting period, set the [IncludeNonPerformingHotels](reference.md#includenonperforminghotels) field in the report request to **true**.
 
 ```json
 {
@@ -123,13 +123,15 @@ By default, the report contains only hotels that have impressions during the rep
     "EndDate":"2017-11-13", 
     "Columns":[  
         "HotelId",
-        "PartnerHotelId"
+        "PartnerHotelId",
+        "Clicks",
+        "Impressions"
     ],
     "IncludeNonPerformingHotels" : true
 }
 ```
 
-If you request non-performing hotels in the report, the `columns` property may not include [measure columns](#measurecolumns) or the following [dimension columns](#dimensioncolumns):
+If you request that the report include non-performing hotels, the `columns` property may not include the following [dimension columns](#dimensioncolumns):
 
 - Date
 - DeviceType
@@ -138,7 +140,9 @@ If you request non-performing hotels in the report, the `columns` property may n
 - SlotType
 - UserCountry
 
-If the `columns` property includes measure columns, the report jobs request will fail. However, if the request does not include measure columns but does include one of the above dimension columns, the request succeeds but the report job itself fails.
+If the `columns` property includes any of the above fields, the report jobs request fails.
+
+
 
 ## Performance report columns
 
@@ -222,3 +226,6 @@ Date,Subaccount ID,Hotel group ID,Clicks,CTR,Impr.,Spend,User country
 ```
 
 The first header row contains the report's name and requested reporting period. The second header row contains the report's request ID. If there's a problem with the report, you'd use the ID when you contact support to get help with the issue.
+
+> [!NOTE]
+> IDs such as the hotel ID or ad group ID are enclosed in square brackets (for example, [1234567890]).
