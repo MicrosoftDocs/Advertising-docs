@@ -138,7 +138,7 @@ If you request non-performing hotels in the report, the `columns` property may n
 - SlotType
 - UserCountry
 
-
+If the `columns` property includes measure columns, the report jobs request will fail. However, if the request does not include measure columns but does include one of the above dimension columns, the request succeeds but the report job itself fails.
 
 ## Performance report columns
 
