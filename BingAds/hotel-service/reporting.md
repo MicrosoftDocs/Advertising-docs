@@ -112,6 +112,33 @@ Set `Filter` to an OData [$filter](http://www.odata.org/getting-started/basic-tu
 In addition to using `Filter`, you can use the `SubaccountId` and `HotelGroupId` fields in the [ReportJob](reference.md#reportjob) request object to limit the report to the specified subaccount or hotel group. If you want to limit the scope to a single subaccount or hotel group, using these fields offer better performance than using `Filter`. Also, If you use these request fields, you should not include them in the filter.
 
 
+## Including non-performing hotels in the report
+
+By default, the report contains only hotels that have impressions during the reporting period. To include hotels that did not have impressions during the reporting period, set the [IncludeNonPerformingHotels](reference.md#includenonperforminghotels) field in the report request to **true**.
+
+```json
+{
+    "ReportType":"Performance", 
+    "StartDate":"2017-11-06", 
+    "EndDate":"2017-11-13", 
+    "Columns":[  
+        "HotelId",
+        "PartnerHotelId"
+    ],
+    "IncludeNonPerformingHotels" : true
+}
+```
+
+If you request non-performing hotels in the report, the `columns` property may not include [measure columns](#measurecolumns) or the following [dimension columns](#dimensioncolumns):
+
+- Date
+- DeviceType
+- HotelCountry
+- LengthOfStay
+- SlotType
+- UserCountry
+
+If the `columns` property includes measure columns, the report jobs request will fail. However, if the request does not include measure columns but does include one of the above dimension columns, the request succeeds but the report job itself fails.
 
 ## Performance report columns
 
@@ -147,7 +174,7 @@ And if the request contains SubaccountId, HotelGroupId, and Clicks, the clicks r
 
 The request must include at least one dimension column and one measure column.
 
-
+<a name="dimensioncolumns" />
 ### Dimension columns
 
 |Column name|Report column name|Description
@@ -167,6 +194,7 @@ The request must include at least one dimension column and one measure column.
 |UserCountry|User country|The two-letter ISO 3116 country code of the country where the user is located. For example, US for United States.
 
 
+<a name="measurecolumns" />
 ### Measure columns
 
 |Column name|Report column name|Description

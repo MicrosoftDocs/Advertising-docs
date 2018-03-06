@@ -147,7 +147,10 @@ namespace Content.OAuth
             Application.Run(this);
         }
 
-        // Get the access token by using the refresh token.
+        // Get the access token by using the refresh token. 
+        // If you get an invalid_grant error when using the refresh token, the token is no 
+        // longer valid. If you get this error, you will need to get the user's consent 
+        // and a new refresh token.
 
         public string RefreshAccessToken(string refreshToken)
         {

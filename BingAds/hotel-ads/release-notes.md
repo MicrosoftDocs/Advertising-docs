@@ -12,6 +12,13 @@ ms.author: "scottwhi"
 
 For information about changes that were included with each release, see the following sections.
 
+## March 5, 2018
+
+### Nonbreaking change
+
+- Added the [IncludeNonPerformingHotels](../hotel-service/reference.md#includenonperforminghotels) field to the [ReportJob](../hotel-service/reference.md#reportjob) object. By default, performance reports don't include hotels that have no impressions during the reporting period. To include non-performing hotels in the report, set `IncludeNonPerformingHotels` to **true**. For limitations, see [Including non-performing hotels in the report](../hotel-service/reporting.md#including-non-performing-hotels-in-the-report).
+
+
 
 ## February 22, 2018
 
