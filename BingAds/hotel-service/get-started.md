@@ -42,10 +42,12 @@ If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Examp
 > - Get the access token, refresh token, and access token expiration from the response
 > - Set a timer that expires just before the access token expires
 > - Set the Authorization header to the access token
-> - Store the refresh token in secured storage
+> - Store the new refresh token in secured storage
 > - When the expiration timer expires, repeat the process
 >
 > You should only get a new access token just before the current token expires. Do not get a new access token for each call.
+>
+> If you receive an invalid_grant error, your refresh token is no longer valid. You will need to run your app again to provide consent and get a new refresh token.
 
 ### Authenticating your credentials in sandbox
 
