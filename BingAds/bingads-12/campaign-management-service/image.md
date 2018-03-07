@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an image object that can be added to an account's media library.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Image Data Object - Campaign Management
 Defines an image object that can be added to an account's media library.
 

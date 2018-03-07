@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the base object of media.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Media Data Object - Campaign Management
 Defines the base object of media.
 

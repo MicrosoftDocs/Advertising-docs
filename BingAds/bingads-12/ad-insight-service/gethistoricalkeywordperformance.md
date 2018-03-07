@@ -11,6 +11,9 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetHistoricalKeywordPerformance Service Operation - Ad Insight
 Gets the historical performance of the normalized search term. The results are aggregated by device type.
 

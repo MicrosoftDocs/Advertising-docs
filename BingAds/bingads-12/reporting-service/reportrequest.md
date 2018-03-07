@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the base object for all report requests.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ReportRequest Data Object - Reporting
 Defines the base object for all report requests.
 

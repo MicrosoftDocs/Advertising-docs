@@ -49,9 +49,7 @@ For an account, campaign, or ad group level tracking template, please note the f
 
 -   Additionally you must include at least one of the following landing page URL tags: *{lpurl}*, *{lpurl+2}*, *{lpurl+3}*, *{unescapedlpurl}*, *{escapedlpurl}*.
 
-We recommend adding a default tracking template at the account level so that all the campaigns, ad groups, ads, and Sitelink Extensions use the same URL format. If you add more tracking templates at the campaign, ad group, ad or Sitelink Extension level, they will override the account level settings. You can set the account level tracking template as the value of the *TrackingUrlTemplate* key within the *ForwardCompatibilityMap* element of the [Account Data Object](../customer-management-service/account.md).
-
-**Important:** Only super admin and standard users can update an account.
+We recommend adding a default tracking template at the account level so that all the campaigns, ad groups, ads, and Sitelink Extensions use the same URL format. If you add more tracking templates at the campaign, ad group, ad or Sitelink Extension level, they will override the account level settings. You can set the account level tracking template using the [SetAccountProperties](../campaign-management-service/setaccountproperties.md) operation via the Campaign Management service, or set the *Tracking Template* field of the [Account](../bulk-service/account.md) record via the Bulk service.
 
 ## <a name="finalurlvalidation"></a>Final URLs
 The following validation rules apply to Final URLs and Final Mobile URLs.

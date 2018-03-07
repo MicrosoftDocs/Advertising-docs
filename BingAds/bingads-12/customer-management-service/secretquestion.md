@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible secret questions that users can choose from to help them recall their password.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SecretQuestion Value Set - Customer Management
 Defines the possible secret questions that users can choose from to help them recall their password.
 

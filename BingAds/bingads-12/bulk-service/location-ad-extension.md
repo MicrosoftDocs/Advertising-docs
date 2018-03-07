@@ -8,6 +8,9 @@ description: Describes the Location Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Location Ad Extension Record - Bulk
 Defines a location ad extension that can be downloaded and uploaded in a bulk file.
 

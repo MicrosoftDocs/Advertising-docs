@@ -6,8 +6,14 @@ author: "eric-urban"
 ms.author: "eur"
 description: Describes the Account fields in a Bulk file.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Account Record - Bulk
 Defines an account that can be uploaded and downloaded in a bulk file.   
+
+> [!NOTE]
+> Only super admin and standard users can update an account.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Account* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 

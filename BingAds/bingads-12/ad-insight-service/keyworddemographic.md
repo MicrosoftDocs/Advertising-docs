@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains the device, age and gender of the user who entered the search query, if known.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # KeywordDemographic Data Object - Ad Insight
 Defines an object that contains the device, age and gender of the user who entered the search query, if known.
 

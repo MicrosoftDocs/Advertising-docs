@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Label Data Object - Campaign Management
 Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.
 

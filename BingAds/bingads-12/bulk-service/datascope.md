@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the scope or types of data to download.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DataScope Value Set - Bulk
 Defines the scope or types of data to download.
 

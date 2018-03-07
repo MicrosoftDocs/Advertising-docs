@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines possible payment methods for a Bing Ads account.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # PaymentMethodType Value Set - Customer Management
 Defines possible payment methods for a Bing Ads account.
 

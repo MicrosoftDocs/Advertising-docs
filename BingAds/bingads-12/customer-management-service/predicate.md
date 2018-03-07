@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a predicate for the list of entities requested using one of the search operations, for example SearchAccounts, SearchClientLinks, or SearchCustomers.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Predicate Data Object - Customer Management
 Defines a predicate for the list of entities requested using one of the search operations, for example [SearchAccounts](searchaccounts.md), [SearchClientLinks](searchclientlinks.md), or [SearchCustomers](searchcustomers.md).
 
@@ -36,10 +39,10 @@ For the [SearchAccounts](searchaccounts.md) service operation, the following are
 
 |Field|Operator|Description|
 |---------|------------|---------------|
-|AccountId|Equals<br /><br />In|Use this field to search the Id element of the [Account](account.md).|
-|AccountLifeCycleStatus|Equals|Use this field to search the AccountLifeCycleStatus element of the [Account](account.md).<br /><br />Possible values include any string representation of the [AccountLifeCycleStatus](accountlifecyclestatus.md), for example `Value = AccountLifeCycleStatus.Active.ToString()` or `Value="Active"` .|
-|AccountName|Contains<br /><br />Equals|Use this field to search the Name element of the [Account](account.md).|
-|AccountNumber|Contains<br /><br />Equals<br /><br />In|Use this field to search the Number element of the [Account](account.md).|
+|AccountId|Equals<br /><br />In|Use this field to search the Id element of the [AdvertiserAccount](advertiseraccount.md).|
+|AccountLifeCycleStatus|Equals|Use this field to search the AccountLifeCycleStatus element of the [AdvertiserAccount](advertiseraccount.md).<br /><br />Possible values include any string representation of the [AccountLifeCycleStatus](accountlifecyclestatus.md), for example `Value = AccountLifeCycleStatus.Active.ToString()` or `Value="Active"` .|
+|AccountName|Contains<br /><br />Equals|Use this field to search the Name element of the [AdvertiserAccount](advertiseraccount.md).|
+|AccountNumber|Contains<br /><br />Equals<br /><br />In|Use this field to search the Number element of the [AdvertiserAccount](advertiseraccount.md).|
 |CustomerId|Equals|Use this field to search the Id element of the [Customer](customer.md).|
 |UserId|Equals|Use this field to search the UserId element of the  [User](user.md).|
 
@@ -56,9 +59,9 @@ For the [SearchCustomers](searchcustomers.md) service operation, the following a
 
 |Field|Operator|Description|
 |---------|------------|---------------|
-|AccountId|Equals|Use this field to search the Id element of the [Account](account.md).|
-|AccountName|Contains<br /><br />Equals|Use this field to search the Name element of the [Account](account.md).|
-|AccountNumber|Contains<br /><br />Equals|Use this field to search the Number element of the [Account](account.md).|
+|AccountId|Equals|Use this field to search the Id element of the [AdvertiserAccount](advertiseraccount.md).|
+|AccountName|Contains<br /><br />Equals|Use this field to search the Name element of the [AdvertiserAccount](advertiseraccount.md).|
+|AccountNumber|Contains<br /><br />Equals|Use this field to search the Number element of the [AdvertiserAccount](advertiseraccount.md).|
 |ApplicationScope|Equals|For internal use only.|
 |CreatedDate|GreaterThanEquals<br /><br />LessThanEquals|Use this field to search the date when the customer was created or signed up.<br /><br />The date is stored in Coordinated Universal Time (UTC). Only the month, day, and year of the specified string are used for search. If you specify the hour, minutes, and seconds of a date they will be ignored.<br /><br />For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|
 |CustomerId|Equals<br /><br />In|Use this field to search the Id element of the [Customer](customer.md).|

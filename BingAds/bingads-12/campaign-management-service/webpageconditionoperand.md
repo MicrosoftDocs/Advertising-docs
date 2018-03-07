@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the operands that can be applied to arguments of a webpage condition or criterion for dynamic search ads.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # WebpageConditionOperand Value Set - Campaign Management
 Defines the operands that can be applied to arguments of a webpage condition or criterion for dynamic search ads. 
 

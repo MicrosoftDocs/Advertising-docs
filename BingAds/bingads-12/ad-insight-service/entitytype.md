@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the entity types for retrieving auction insights.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # EntityType Value Set - Ad Insight
 Defines the entity types for retrieving auction insights.
 

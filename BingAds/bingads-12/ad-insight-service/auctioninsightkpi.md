@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an auction insight key performance indicator.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AuctionInsightKpi Data Object - Ad Insight
 Defines an auction insight key performance indicator.
 

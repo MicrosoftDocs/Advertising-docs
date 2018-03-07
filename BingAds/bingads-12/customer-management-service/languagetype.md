@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a selection of language values.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # LanguageType Value Set - Customer Management
 Defines a selection of language values.
 

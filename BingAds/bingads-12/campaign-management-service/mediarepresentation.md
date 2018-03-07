@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a media representation base class that includes a  media download Url.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # MediaRepresentation Data Object - Campaign Management
 Defines a media representation base class that includes a  media download Url.
 

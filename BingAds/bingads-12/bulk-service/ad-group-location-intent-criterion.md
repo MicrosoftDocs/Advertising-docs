@@ -8,6 +8,9 @@ description: Describes the Ad Group Location Intent Criterion fields in a Bulk f
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Ad Group Location Intent Criterion Record - Bulk
 Defines an ad group location criterion that can be uploaded and downloaded in a bulk file.
 

@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a campaign to include in the report.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # CampaignReportScope Data Object - Reporting
 Defines a campaign to include in the report.
 

@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the relationship and editorial status of an ad extension with an account, campaign, or ad group.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AdExtensionAssociation Data Object - Campaign Management
 Defines the relationship and editorial status of an ad extension with an account, campaign, or ad group.
 

@@ -8,6 +8,9 @@ description: Describes the Campaign Review Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Campaign Review Ad Extension Record - Bulk
 Defines an association record between a [Campaign](campaign.md) and an [Review Ad Extension](review-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or review ad extension, use the [Campaign](campaign.md) or [Review Ad Extension](review-ad-extension.md) record.
 	

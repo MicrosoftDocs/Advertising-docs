@@ -27,15 +27,15 @@ Bing Ads API supports partial completions for add, update, and delete operations
 ## Partial Update
 
 ### Campaign Management Partial Update
-Partial update is supported for most, but not all campaign management data objects. For example when updating the *Text* property of an [ExpandedTextAd](../campaign-management-service/expandedtextad.md) you need only specify the *Id* and *Text* elements. Read-only elements such as the ad editorial status must be left nil or empty. The optional elements may be left empty and their existing settings are unchanged. 
+Partial update is supported for most, but not all campaign management data objects. For example when updating the *Text* property of an [ExpandedTextAd](../campaign-management-service/expandedtextad.md) you need only specify the *Id* and *Text* elements. Read-only elements such as the ad editorial status must be left nil or empty. Unless otherwise documented explicitly, the optional elements may be left empty and their existing settings are unchanged. 
 
-Partial update is not supported for targets or ad extensions. Any optional elements which are not sent with the update request will in effect be deleted from the respective target or extension.
+Partial update is not supported for ad extensions. Any optional elements which are not sent with the update request will in effect be deleted from the respective ad extension.
 
 ### Customer Management Partial Update
 The customer management service performs a full update of entities, so in addition to the documented required properties you must provide values for all optional properties that you do not want to be nil or empty.  
 
 > [!NOTE]
-> One exception to this rule is the *ForwardCompatibilityMap* element of any object. For example if you do not provide the *ForwardCompatibilityMap* element of the [Account Data Object](../customer-management-service/account.md), the service will not update or nullify any properties that would otherwise have been represented by key and value pairs.
+> One exception to this rule is the *ForwardCompatibilityMap* element of any object. For example if you do not provide the *ForwardCompatibilityMap* element of the [AdvertiserAccount](../customer-management-service/advertiseraccount.md), the service will not update or nullify any properties that would otherwise have been represented by key and value pairs.
 
 ## <a name="store_locally"></a>Store Your Entity Identifiers Locally
 You should maintain a local store of your account and campaign entities. Specifically, you should locally store the identifiers of your accounts, customers, campaigns, ad groups, and keywords. Most calls require the identifier of the entity. If you store the identifier, you eliminate the call that is required to get the identifier.

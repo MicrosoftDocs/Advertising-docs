@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible budget types that you can specify for a campaign.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # BudgetLimitType Value Set - Campaign Management
 Defines the possible budget types that you can specify for a campaign.
 

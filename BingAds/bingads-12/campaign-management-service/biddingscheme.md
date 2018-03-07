@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the base object of a bidding scheme for how you want to manage your bids.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # BiddingScheme Data Object - Campaign Management
 Defines the base object of a bidding scheme for how you want to manage your bids. A bidding scheme is known as a *bid strategy type* in the Bing Ads web application.
 

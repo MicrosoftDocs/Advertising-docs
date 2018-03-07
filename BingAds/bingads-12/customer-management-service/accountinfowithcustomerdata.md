@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains information that identifies an account and the customer that manages or owns the account.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AccountInfoWithCustomerData Data Object - Customer Management
 Defines an object that contains information that identifies an account and the customer that manages or owns the account.
 

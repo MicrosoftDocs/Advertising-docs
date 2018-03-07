@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the base class of a shared list item.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # SharedListItem Data Object - Campaign Management
 Defines the base class of a shared list item.
 

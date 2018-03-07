@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an ad extension that includes between 3 and 8 price table rows.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # PriceAdExtension Data Object - Campaign Management
 Defines an ad extension that includes between 3 and 8 price table rows.
 

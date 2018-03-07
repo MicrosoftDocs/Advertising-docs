@@ -44,6 +44,50 @@
   href: ./sandbox.md
 - name: Code Examples
   href: ./code-examples.md
+  displayName: .net c# csharp java python php
+  items:
+  - name: Ad Extensions
+    href: ./code-example-ad-extensions.md
+  - name: Bulk Ad Extensions
+    href: ./code-example-bulk-ad-extensions.md
+  - name: Bulk Keywords and Ads
+    href: ./code-example-bulk-keywords-ads.md
+  - name: Bulk Shopping Campaigns
+    href: ./code-example-bulk-shopping-campaigns.md
+  - name: Budget Opportunities
+    href: ./code-example-budget-opportunities.md
+  - name: Conversion Goals
+    href: ./code-example-conversion-goals.md
+  - name: Customer Signup
+    href: ./code-example-customer-signup.md
+  - name: Dynamic Search Campaigns
+    href: ./code-example-dynamic-search-campaigns.md
+  - name: Geographical Locations
+    href: ./code-example-geographical-locations.md
+  - name: Invite User
+    href: ./code-example-invite-user.md
+  - name: Keyword Planner
+    href: ./code-example-keyword-planner.md
+  - name: Keywords and Ads
+    href: ./code-example-keywords-ads.md
+  - name: Labels
+    href: ./code-example-labels.md
+  - name: Manage Client
+    href: ./code-example-manage-client.md
+  - name: Negative Keywords
+    href: ./code-example-negative-keywords.md
+  - name: Offline Conversions
+    href: ./code-example-offline-conversions.md
+  - name: Remarketing Lists
+    href: ./code-example-remarketing-lists.md
+  - name: Report Requests
+    href: ./code-example-report-requests.md
+  - name: Search User Accounts
+    href: ./code-example-search-user-accounts.md
+  - name: Shopping Campaigns
+    href: ./code-example-shopping-campaigns.md
+  - name: Target Criterions
+    href: ./code-example-target-criterions.md
 - name: Client Libraries
   href: ./client-libraries.md
   displayName: sdk .net c# csharp java python php

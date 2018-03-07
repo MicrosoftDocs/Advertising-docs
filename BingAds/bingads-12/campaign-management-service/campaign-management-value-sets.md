@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Value sets reference for the CampaignManagement service.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Campaign Management Value Sets
 The Campaign Management service defines the following value sets.
 

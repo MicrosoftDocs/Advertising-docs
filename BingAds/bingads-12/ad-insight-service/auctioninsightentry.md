@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an auction insight entry.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # AuctionInsightEntry Data Object - Ad Insight
 Defines an auction insight entry.
 

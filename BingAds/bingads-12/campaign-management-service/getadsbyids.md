@@ -11,6 +11,9 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # GetAdsByIds Service Operation - Campaign Management
 Retrieves the specified ads from the specified ad group.
 

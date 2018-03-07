@@ -11,6 +11,9 @@ dev_langs:
   - php
   - python
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DeleteSharedEntities Service Operation - Campaign Management
 Deletes negative keyword lists from the account's library.
 

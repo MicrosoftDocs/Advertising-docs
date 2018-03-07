@@ -8,6 +8,9 @@ description: Describes the Sitelink2 Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Sitelink2 Ad Extension Record - Bulk
 Defines a sitelink2 ad extension that can be downloaded and uploaded in a bulk file.
 

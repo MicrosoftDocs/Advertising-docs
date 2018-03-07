@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # StructuredSnippetAdExtension Data Object - Campaign Management
 Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.
 

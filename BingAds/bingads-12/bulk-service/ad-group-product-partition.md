@@ -8,6 +8,9 @@ description: Describes the Ad Group Product Partition fields in a Bulk file.
 dev_langs:
   - csharp
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # Ad Group Product Partition Record - Bulk
 Defines an ad group product partition that can be uploaded and downloaded in a bulk file.
 

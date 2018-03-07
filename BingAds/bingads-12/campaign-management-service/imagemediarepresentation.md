@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an image media representation with height and width.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ImageMediaRepresentation Data Object - Campaign Management
 Defines an image media representation with height and width.
 

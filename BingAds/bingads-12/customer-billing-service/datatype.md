@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible formats in which to generate the billing document.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # DataType Value Set - Customer Billing
 Defines the possible formats in which to generate the billing document.
 

@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains the locations where users were located when they searched for the specified keyword.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # KeywordLocationResult Data Object - Ad Insight
 Defines an object that contains the locations where users were located when they searched for the specified keyword.
 

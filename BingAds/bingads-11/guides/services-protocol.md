@@ -24,9 +24,9 @@ Bing Ads API supports partial completions for add, update, and delete operations
 ## Partial Update
 
 ### Campaign Management Partial Update
-Partial update is supported for most, but not all campaign management data objects. For example when updating the *Text* property of an [ExpandedTextAd](../campaign-management-service/expandedtextad.md) you need only specify the *Id* and *Text* elements. Read-only elements such as the ad editorial status must be left nil or empty. The optional elements may be left empty and their existing settings are unchanged. 
+Partial update is supported for most, but not all campaign management data objects. For example when updating the *Text* property of an [ExpandedTextAd](../campaign-management-service/expandedtextad.md) you need only specify the *Id* and *Text* elements. Read-only elements such as the ad editorial status must be left nil or empty. Unless otherwise documented explicitly, the optional elements may be left empty and their existing settings are unchanged. 
 
-Partial update is not supported for targets or ad extensions. Any optional elements which are not sent with the update request will in effect be deleted from the respective target or extension.
+Partial update is not supported for ad extensions. Any optional elements which are not sent with the update request will in effect be deleted from the respective ad extension.
 
 ### Customer Management Partial Update
 The customer management service performs a full update of entities, so in addition to the documented required properties you must provide values for all optional properties that you do not want to be nil or empty.  

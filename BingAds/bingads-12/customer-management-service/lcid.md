@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines a selection of locale values.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # LCID Value Set - Customer Management
 Defines a selection of locale values.
 

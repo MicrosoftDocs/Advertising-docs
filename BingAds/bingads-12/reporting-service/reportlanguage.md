@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the language values that you may specify for columns of a downloaded report.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ReportLanguage Value Set - Reporting
 Defines the language values that you may specify for columns of a downloaded report.
 

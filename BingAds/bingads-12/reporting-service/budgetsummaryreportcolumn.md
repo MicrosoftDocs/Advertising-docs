@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the BudgetSummaryReportRequest.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # BudgetSummaryReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [BudgetSummaryReportRequest](budgetsummaryreportrequest.md).
 

@@ -6,6 +6,9 @@ author: eric-urban
 ms.author: eur
 description: Defines the status of a report.
 ---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change.
+
 # ReportRequestStatusType Value Set - Reporting
 Defines the status of a report.
 
