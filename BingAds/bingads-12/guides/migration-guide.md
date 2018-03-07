@@ -11,7 +11,7 @@ description: Get details about migrating to Bing Ads API version 12.
 
 # Migrating to Bing Ads API Version 12
 > [!IMPORTANT]
-> With the availability of Bing Ads API version 12, [version 11](migration-guide.md?view=bingads-11) is deprecated and will sunset by October 31, 2018. 
+> With the availability of Bing Ads API version 12, version 11 is deprecated and will sunset by October 31, 2018. 
 
 The sections below describe changes from version 11 to version 12 of the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md), [Bulk](../bulk-service/bulk-service-reference.md), [Campaign Management](../campaign-management-service/campaign-management-service-reference.md), [Customer Billing](../customer-billing-service/customer-billing-service-reference.md), [Customer Management](../customer-management-service/customer-management-service-reference.md), and [Reporting](../reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services.
 
@@ -233,7 +233,7 @@ The sandbox endpoint is [https://clientcenter.api.sandbox.bingads.microsoft.com/
 #### <a name="customer-multi-user"></a>Multi User Credentials
 With [multi-user credentials](#authentication-multi-user), one email address can be associated with multiple roles i.e., one role for each customer they can access. Whether or not you have "multi-user" credentials, the Customer Management API maps your credentials via a single [User](../customer-management-service/user.md) object, with some notable changes to the returned user roles. 
 
-The *Accounts*, *Customers*, and *Roles* elements of the [GetUser](../customer-management-service/getuser.md) response are replaced with a list of [CustomerRole](../customer-management-service/customerrole.md) named *CustomerRoles*. 
+The *Accounts*, *Customers*, and *Roles* elements of the [GetUser](../customer-management-service/getuser.md) response are replaced with a list of [CustomerRole](../customer-management-service/customerrole.md) objects named *CustomerRoles*. 
 
 In the response message for *GetUser* in version 11, the returned role or roles were applicable for all accounts or customers listed. You will only see the role(s) that the user had before multi-user credentials consolidation. 
 
@@ -274,10 +274,30 @@ Let's consider the following user roles and permissions before multi-user consol
 
 First please note that only one email address per customer can be consolidated, so in this example two@contoso.com and four@contoso.com cannot be consolidated together. Now let's see what happens after the top three users are consolidated under one@contoso.com. 
   * No changes for user four@contoso.com whether via the Bing Ads web application, Bing Ads Editor, or API. 
-  * The *UserName* returned via [GetUser](../customer-management-service/getuser.md) and [GetUsersInfo](../customer-management-service/getusersinfo.md) will differ between version 11 and 12 for two@contoso.com and three@contoso.com. In version 11 the *UserName* will be two@contoso.com and three@contoso.com, whereas in version 12 the *UserName* for each of the corresponding user identifiers will be one@contoso.com. In other words the operations will always return whatever user name can authenticate using the respective API version.
   * The user one@contoso.com can log in via the Bing Ads web application and Bing Ads Editor. The consolidated users i.e., two@contoso.com and three@contoso.com no longer have permissions to sign in via the Bing Ads web application or Bing Ads Editor. While signed in as one@contoso.com, you can switch context to the customer accounts with corresponding user roles that had previously been assigned to two@contoso.com and three@contoso.com. Although you can access multiple customers signed in with one user's credentials (one@contoso.com), you will need to switch from customer to customer to manage the accounts that are linked with unique user roles. Customers and their related accounts remain distinct. For more details see the Bing Ads help topic [Managing your user name to access multiple accounts](https://help.bingads.microsoft.com/#apex/3/en/app54567/1/en-US/#ext:Customers_Management).
   * With Bing Ads API version 11 there is no change to access before versus after multi-user consolidation. Each of the user's access token (see [Authentication with OAuth](authentication-oauth.md)) represents permissions limited to the corresponding user and role. 
   * Starting with Bing Ads API version 12, the access token for user one@contoso.com will represent permissions to the consolidated list (superset) of accounts. The user role in effect will depend on the customer and account identifiers specified in the service request. Access tokens for two@contoso.com and three@contoso.com will no longer be accepted. 
+  * The *UserName* returned via [GetUser](../customer-management-service/getuser.md) and [GetUsersInfo](../customer-management-service/getusersinfo.md) will differ between version 11 and 12 for two@contoso.com and three@contoso.com. In version 11 the *UserName* will be two@contoso.com and three@contoso.com, whereas in version 12 the *UserName* for each of the corresponding user identifiers will be one@contoso.com. In other words the operations will always return whatever user name can authenticate using the respective API version.
+    > [!NOTE]
+    > If the multi-user credentials were provisioned through the user invitation work flow i.e., there was never an "old user name" for access to a customer, a system generated GUID will be returned in the *UserName* element in version 11. In version 12 the multi-user email address will be returned. 
+  
+Also of note is that the *ContactInfo* returned via [GetUser](../customer-management-service/getuser.md) for the same person will be automatically synchronized with any new updates that occur after user consolidation. Keep in mind that multiple user and contact info system identifiers are assigned to the same person (one user and contact info identifier per person per customer). Immediately after consolidation for the person with credentials one@contoso.com, whereas unique user and contact info identifiers are still assigned, you will observe a distinct LastModifiedByUserId and LastModifiedTime (omitted from the table for brevity) within each returned [User](../customer-management-service/user.md) object. 
+
+|User Id|Contact Info Id|Permissions|LastModifiedByUserId|
+|-------------|----------------------|----------------|----------------|
+|123|234|Customer A - All Accounts|123|
+|456|567|Customer B - All Accounts|456|
+|789|890|Customer C - Account A|789|
+
+Now let's say that one@contoso.com is acting in the context of Customer B and updates their contact information. The updated contact information as well as the same LastModifiedByUserId and LastModifiedTime are now syncrhonized across all returned [User](../customer-management-service/user.md) objects.
+
+|User Id|Contact Info Id|Permissions|LastModifiedByUserId|
+|-------------|----------------------|----------------|----------------|
+|123|234|Customer A - All Accounts|456|
+|456|567|Customer B - All Accounts|456|
+|789|890|Customer C - Account A|456|
+
+If the multi-user credentials were provisioned through the user invitation work flow i.e., there was never an "old user name" for access to a customer, the contact info, including LastModifiedByUserId and LastModifiedTime will always be equal for all returned [User](../customer-management-service/user.md) objects assigned to the same person. 
 
 #### <a name="customer-userroles"></a>User Roles
 The *UserRole* value set is removed to ensure consistent mapping and forward compatibility for potential new user roles. In turn, the *Role* element of the [UserInvitation](../customer-management-service/userinvitation.md) object is replaced with an int value i.e., an element named *RoleId*.
@@ -307,14 +327,13 @@ The following values are updated in the [TimeZoneType](../customer-management-se
 -  Since Magadan is now permanently in UTC+12 time zone, the value is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
 -  The value of *InternationalDatelineWest* (lowercase 'l' in Dateline) is updated to *InternationalDateLineWest* (uppercase 'L' in DateLine). 
 
-
 #### <a name="customer-searchcustomers-predicates"></a>Search Customers Predicates
 The following [Predicate](../customer-management-service/predicate.md#searchcustomers) field and operator sets are no longer available in version 12. 
 -  PersonName Equals
 -  PersonName Contains
 -  Email Equals
 -  Email Contains
--  Username Contains
+-  UserName Contains (UserName Equals is still available in version 12)
 
 ## <a name="reporting"></a>Reporting
 

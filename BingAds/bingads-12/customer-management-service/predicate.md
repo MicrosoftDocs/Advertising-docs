@@ -67,11 +67,9 @@ For the [SearchCustomers](searchcustomers.md) service operation, the following a
 |CustomerId|Equals<br /><br />In|Use this field to search the Id element of the [Customer](customer.md).|
 |CustomerName|Contains<br /><br />Equals|Use this field to search the Name element of the [Customer](customer.md).|
 |CustomerNumber|Contains<br /><br />Equals|Use this field to search the Number element of the [Customer](customer.md).|
-|Email|Contains<br /><br />Equals|Use this field to search the Email element of the [ContactInfo](contactinfo.md) within a [User](user.md).|
 |MarketCountry|Equals|Use this field to search the MarketCountry element of the [Customer](customer.md).<br /><br />The MarketCountry and MarketLanguage predicate fields are not required; however, if either is specified then both are required.|
 |MarketLanguage|Equals|Use this field to search the MarketLanguage element of the [Customer](customer.md).<br /><br />The MarketCountry and MarketLanguage predicate fields are not required; however, if either is specified then both are required.|
-|PersonName|Contains<br /><br />Equals|Use this field to search the combined FirstName, MiddleInitial,   and LastName elements of the [PersonName](personname.md) within a [User](user.md).<br /><br />The string value corresponding to elements within PersonName should be separated by spaces in the order of FirstName, MiddleInitial,   and LastName.|
-|UserName|Contains<br /><br />Equals|Use this field to search the UserName element of the  [User](user.md).|
+|UserName|Equals|Use this field to search the UserName element of the [User](user.md).|
 |TaxId|Contains<br /><br />Equals|For internal use only.|
 
 ### <a name="searchuserinvitations"></a>SearchUserInvitations Predicates

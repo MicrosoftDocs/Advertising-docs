@@ -79,7 +79,7 @@ Defines the possible status values of an [InsertionOrder](insertionorder.md).
 |<a name="exhausted"></a>Exhausted|Your balance has been depleted and the order is no longer active.<br/><br/> This status is read-only and only the system can set the status to Exhausted.|
 |<a name="expired"></a>Expired|Your order has reached its end date and is no longer valid.<br/><br/> This status is read-only and only the system can set the status to Expired.|
 |<a name="notstarted"></a>NotStarted|You have an approved order that has not reached its start date yet.<br/><br/>This status is read-only and only the system can set the status to NotStarted.|
-|<a name="pendinguserreview"></a>PendingUserReview|You need to approve or decline an order that Bing Ads created for your account.<br/><br/> This status is read-only and only the system can set the status to PendingUserReview.|
+|<a name="pendinguserreview"></a>PendingUserReview|You need to approve or decline an order that Bing Ads created for your account.<br/><br/> This status is read-only and can only be set by Bing Ads.|
 
 ## Requirements
 Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  

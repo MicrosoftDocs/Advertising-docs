@@ -113,7 +113,7 @@ Multi-user credentials can be provisioned manually i.e., contact support or your
 > [!IMPORTANT]
 > Bing Ads API Version 11 does not support multi-user credentials across multiple customers. If you authenticate with multi-user credentials, then you will only have the permissions originally granted to that user. If there was never a previous user name i.e., you accepted an invitation to manage another customer's accounts with credentials that you already use in Bing Ads, then you will only be able to use Bing Ads API version 11 to manage the original customer assigned to your user name. Starting with Bing Ads API Version 12 the multi-user credentials can access accounts across multiple customers.  
 
-You might prefer to think of "multi-user" credentials to mean "multiple user roles", since from one perspective you only login with one user name to access multipe customers with varying permissions. By design though, the intention is to reflect that one person's credentials can act as multiple distinct users. 
+You might prefer to think of "multi-user" credentials to mean "multiple user roles", since from one perspective you only login with one user name to access multipe customers with varying permissions. By design though, the intention is to reflect that one person's credentials can act as multiple distinct users. In fact one person with multi-user credentials has multiple [User](../customer-management-service/user.md) objects assigned i.e., one [User](../customer-management-service/user.md) object per customer that they can access. 
 
 Let's consider the following user roles and permissions before multi-user consolidation. Each user must log in separately and has different permissions during each logged in session. Likewise via the API each user's access token (see [Authentication with OAuth](authentication-oauth.md)) represents permissions limited to the corresponding user and role. 
 
@@ -126,10 +126,30 @@ Let's consider the following user roles and permissions before multi-user consol
 
 First please note that only one email address per customer can be consolidated, so in this example two@contoso.com and four@contoso.com cannot be consolidated together. Now let's see what happens after the top three users are consolidated under one@contoso.com. 
   * No changes for user four@contoso.com whether via the Bing Ads web application, Bing Ads Editor, or API. 
-  * The *UserName* returned via [GetUser](../customer-management-service/getuser.md) and [GetUsersInfo](../customer-management-service/getusersinfo.md) will differ between version 11 and 12 for two@contoso.com and three@contoso.com. In version 11 the *UserName* will be two@contoso.com and three@contoso.com, whereas in version 12 the *UserName* for each of the corresponding user identifiers will be one@contoso.com. In other words the operations will always return whatever user name can authenticate using the respective API version.
   * The user one@contoso.com can log in via the Bing Ads web application and Bing Ads Editor. The consolidated users i.e., two@contoso.com and three@contoso.com no longer have permissions to sign in via the Bing Ads web application or Bing Ads Editor. While signed in as one@contoso.com, you can switch context to the customer accounts with corresponding user roles that had previously been assigned to two@contoso.com and three@contoso.com. Although you can access multiple customers signed in with one user's credentials (one@contoso.com), you will need to switch from customer to customer to manage the accounts that are linked with unique user roles. Customers and their related accounts remain distinct. For more details see the Bing Ads help topic [Managing your user name to access multiple accounts](https://help.bingads.microsoft.com/#apex/3/en/app54567/1/en-US/#ext:Customers_Management).
   * With Bing Ads API version 11 there is no change to access before versus after multi-user consolidation. Each of the user's access token (see [Authentication with OAuth](authentication-oauth.md)) represents permissions limited to the corresponding user and role. 
   * Starting with Bing Ads API version 12, the access token for user one@contoso.com will represent permissions to the consolidated list (superset) of accounts. The user role in effect will depend on the customer and account identifiers specified in the service request. Access tokens for two@contoso.com and three@contoso.com will no longer be accepted. 
+  * The *UserName* returned via [GetUser](../customer-management-service/getuser.md) and [GetUsersInfo](../customer-management-service/getusersinfo.md) will differ between version 11 and 12 for two@contoso.com and three@contoso.com. In version 11 the *UserName* will be two@contoso.com and three@contoso.com, whereas in version 12 the *UserName* for each of the corresponding user identifiers will be one@contoso.com. In other words the operations will always return whatever user name can authenticate using the respective API version.
+    > [!NOTE]
+    > If the multi-user credentials were provisioned through the user invitation work flow i.e., there was never an "old user name" for access to a customer, a system generated GUID will be returned in the *UserName* element in version 11. In version 12 the multi-user email address will be returned. 
+  
+Also of note is that the *ContactInfo* returned via [GetUser](../customer-management-service/getuser.md) for the same person will be automatically synchronized with any new updates that occur after user consolidation. Keep in mind that multiple user and contact info system identifiers are assigned to the same person (one user and contact info identifier per person per customer). Immediately after consolidation for the person with credentials one@contoso.com, whereas unique user and contact info identifiers are still assigned, you will observe a distinct LastModifiedByUserId and LastModifiedTime (omitted from the table for brevity) within each returned [User](../customer-management-service/user.md) object. 
+
+|User Id|Contact Info Id|Permissions|LastModifiedByUserId|
+|-------------|----------------------|----------------|----------------|
+|123|234|Customer A - All Accounts|123|
+|456|567|Customer B - All Accounts|456|
+|789|890|Customer C - Account A|789|
+
+Now let's say that one@contoso.com is acting in the context of Customer B and updates their contact information. The updated contact information as well as the same LastModifiedByUserId and LastModifiedTime are now syncrhonized across all returned [User](../customer-management-service/user.md) objects.
+
+|User Id|Contact Info Id|Permissions|LastModifiedByUserId|
+|-------------|----------------------|----------------|----------------|
+|123|234|Customer A - All Accounts|456|
+|456|567|Customer B - All Accounts|456|
+|789|890|Customer C - Account A|456|
+
+If the multi-user credentials were provisioned through the user invitation work flow i.e., there was never an "old user name" for access to a customer, the contact info, including LastModifiedByUserId and LastModifiedTime will always be equal for all returned [User](../customer-management-service/user.md) objects assigned to the same person. 
 
 ### Adding Users
 Users cannot be created programmatically. With the [SendUserInvitation](../customer-management-service/senduserinvitation.md) service operation, you can send an invitation for someone to manage one or more Bing Ads customer accounts. When you invite a new user, you can specify the role of the user. The role determines the actions that the user can perform in Bing Ads. For more information, see [User Roles and Available Service Operations](#userroles). Once the invitation is accepted, the user's Microsoft account can manage the Bing Ads customer accounts with the user role that you provisioned. 

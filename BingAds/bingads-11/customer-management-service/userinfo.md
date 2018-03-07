@@ -24,7 +24,7 @@ Defines a user identification object that contains information that identifies a
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The system generated identifier of the user.|**long**|
-|<a name="username"></a>UserName|The logon user name of the user.|**string**|
+|<a name="username"></a>UserName|The logon user name of the user.<br/><br/>If [multi-user credentials](../guides/customer-accounts#multi-user) were provisioned through the user invitation work flow i.e., there was never an "old user name" for access to a customer, a system generated GUID will be returned in the *UserName* element and you cannot authenticate with this use in Bing Ads API version 11. In version 12 the multi-user email address will be returned and can be used to authenticate.|**string**|
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  

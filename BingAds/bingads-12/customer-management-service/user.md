@@ -39,9 +39,9 @@ Defines a user.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="contactinfo"></a>ContactInfo|The user's contact information.<br/><br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|[ContactInfo](contactinfo.md)|
-|<a name="customerid"></a>CustomerId|The identifier of the customer to whom this user belongs.<br/><br/>**Update:** Read-only|**long**|
-|<a name="id"></a>Id|The system generated identifier of the user.<br/><br/>**Update:** Required|**long**|
+|<a name="contactinfo"></a>ContactInfo|The user's contact information.<br/><br/>The *ContactInfo* returned via [GetUser](getuser.md) for the same person will be automatically synchronized with any new updates that occur after user consolidation. Keep in mind that multiple user and contact info system identifiers can be assigned to the same person (one user and contact info identifier per person per customer). For more information see [Multi-User Credentials](../guides/customer-accounts#multi-user).<br/><br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|[ContactInfo](contactinfo.md)|
+|<a name="customerid"></a>CustomerId|The identifier of the customer for this user to access.<br/><br/>**Update:** Read-only|**long**|
+|<a name="id"></a>Id|The Bing Ads identifier of the user.<br/><br/>**Update:** Required|**long**|
 |<a name="ismigratedtomicrosoftaccount"></a>IsMigratedToMicrosoftAccount|If *true*, the user can be authenticated using  a Microsoft Account. For more information, see [Authentication with OAuth](../guides/authentication-oauth.md).<br/><br/>**Update:** Read-only|**boolean**|
 |<a name="jobtitle"></a>JobTitle|The user's job title. The title can contain a maximum of 50 characters.<br/><br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
 |<a name="lastmodifiedbyuserid"></a>LastModifiedByUserId|The identifier of the last user to update the user's information.<br/><br/>**Update:** Read-only|**long**|
@@ -53,7 +53,7 @@ Defines a user.
 |<a name="secretquestion"></a>SecretQuestion|A question from a list of predefined questions that the user selects to use as his or her secret question. The *SecretAnswer* element contains the user's answer to the question. The secret question and answer are used to validate the user in case the user forgets his or her password, and requests it.<br/><br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|[SecretQuestion](secretquestion.md)|
 |<a name="timestamp"></a>TimeStamp|A time-stamp value that the system uses internally to reconcile updates when you call [UpdateUser](updateuser.md) or [DeleteUser](deleteuser.md).<br/><br/>**Update:** Required|**base64Binary**|
 |<a name="userlifecyclestatus"></a>UserLifeCycleStatus|The status of the user.<br/><br/>**Update:** Read-only|[UserLifeCycleStatus](userlifecyclestatus.md)|
-|<a name="username"></a>UserName|If the value of *IsMigratedToMicrosoftAccount* is false, this element contains the user's Bing Ads managed sign-in user name. The name is case-insensitive.<br /><br />If the value of *IsMigratedToMicrosoftAccount* is true, this element contains the email address corresponding to the authenticated Microsoft Account.<br /><br /> The email address of the Microsoft Account may differ from the Email element of the [ContactInfo](contactinfo.md) object.<br/><br/>**Update:** Read-only|**string**|
+|<a name="username"></a>UserName|The logon user name of the user.<br/><br/>If the value of *IsMigratedToMicrosoftAccount* is false, this element contains the user's Bing Ads managed sign-in user name. The name is case-insensitive.<br /><br />If the value of *IsMigratedToMicrosoftAccount* is true, this element contains the email address corresponding to the authenticated Microsoft Account.<br /><br />The email address of the Microsoft Account may differ from the Email element of the [ContactInfo](contactinfo.md) object.<br/><br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
