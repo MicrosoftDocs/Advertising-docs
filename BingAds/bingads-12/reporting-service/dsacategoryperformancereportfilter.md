@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the DSA category performance report data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DSACategoryPerformanceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the DSA category performance report data.
 
@@ -36,8 +33,8 @@ Defines the criteria to use to filter the DSA category performance report data.
 |<a name="languagecode"></a>LanguageCode|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](../guides/ad-languages.md).|**string** array|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [DSACategoryPerformanceReportRequest](dsacategoryperformancereportrequest.md)  

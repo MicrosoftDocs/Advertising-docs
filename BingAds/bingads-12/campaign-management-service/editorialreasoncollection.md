@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a collection of ads or keywords that failed editorial review, and the reason for the failure.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # EditorialReasonCollection Data Object - Campaign Management
 Defines a collection of ads or keywords that failed editorial review, and the reason for the failure.
 

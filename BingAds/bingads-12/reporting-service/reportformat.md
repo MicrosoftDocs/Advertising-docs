@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the file formats that you can use for a report.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ReportFormat Value Set - Reporting
 Defines the file formats that you can use for a report.
 
@@ -32,8 +29,8 @@ Defines the file formats that you can use for a report.
 |<a name="xml"></a>Xml|The report format will be XML (.xml).|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [ReportRequest](reportrequest.md)  

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that you use to specify the start and end dates of a date range.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DayMonthAndYear Data Object - Ad Insight
 Defines an object that you use to specify the start and end dates of a date range.
 
@@ -32,8 +29,8 @@ Defines an object that you use to specify the start and end dates of a date rang
 |<a name="year"></a>Year|The year specified as a four-digit integer value.|**int**|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By
 [AdGroupBidLandscape](adgroupbidlandscape.md)  

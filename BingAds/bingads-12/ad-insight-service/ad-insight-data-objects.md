@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Data objects reference for the AdInsight service.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Ad Insight Data Objects
 The Ad Insight service defines the following data objects.
 
@@ -22,6 +19,10 @@ The Ad Insight service defines the following data objects.
 |[AdGroupEstimator](adgroupestimator.md)|Contains a list of keyword estimators with your keyword level filter criteria for traffic estimates.|
 |[ApiFaultDetail](apifaultdetail.md)|Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.|
 |[ApplicationFault](applicationfault.md)|Defines the base object from which all fault detail objects derive.|
+|[AuctionInsightEntry](auctioninsightentry.md)|Reserved for future use.|
+|[AuctionInsightKpi](auctioninsightkpi.md)|Reserved for future use.|
+|[AuctionInsightResult](auctioninsightresult.md)|Reserved for future use.|
+|[AuctionSegmentSearchParameter](auctionsegmentsearchparameter.md)|Reserved for future use.|
 |[BatchError](batcherror.md)|Defines an error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.|
 |[BidLandscapePoint](bidlandscapepoint.md)|Defines an object that contains estimates of clicks, cost, and impressions  given the suggested bid.|
 |[BidOpportunity](bidopportunity.md)|Defines an object that contains the suggested bid with estimated clicks and impressions opportunities.|

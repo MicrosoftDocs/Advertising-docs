@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a key performance index object for a keyword.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # KeywordKPI Data Object - Ad Insight
 Defines a key performance index object for a keyword. The object contains the historical performance statistics of the keyword for the corresponding match type, ad position, device, and network.
 
@@ -44,8 +41,8 @@ Defines a key performance index object for a keyword. The object contains the hi
 |<a name="totalcost"></a>TotalCost|The cost of using the specified keyword and match type during the specified time interval.<br /><br />The service determines the currency from the account specified in the *CustomerAccountId* header element. If *CustomerAccountId* is not set, the service uses *USDollar*.|**double**|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By
 [KeywordHistoricalPerformance](keywordhistoricalperformance.md)  

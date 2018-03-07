@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetAccountsInfo Service Operation - Customer Management
 Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.
 
@@ -47,7 +44,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">GetAccountsInfo</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -56,7 +53,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetAccountsInfoRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+    <GetAccountsInfoRequest xmlns="https://bingads.microsoft.com/Customer/v12">
       <CustomerId i:nil="false">ValueHere</CustomerId>
       <OnlyParentAccounts>ValueHere</OnlyParentAccounts>
     </GetAccountsInfoRequest>
@@ -69,19 +66,19 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetAccountsInfoResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <AccountsInfo xmlns:e316="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e316:AccountInfo>
-          <e316:Id>ValueHere</e316:Id>
-          <e316:Name d4p1:nil="false">ValueHere</e316:Name>
-          <e316:Number d4p1:nil="false">ValueHere</e316:Number>
-          <e316:AccountLifeCycleStatus>ValueHere</e316:AccountLifeCycleStatus>
-          <e316:PauseReason d4p1:nil="false">ValueHere</e316:PauseReason>
-        </e316:AccountInfo>
+    <GetAccountsInfoResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <AccountsInfo xmlns:e1229="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1229:AccountInfo>
+          <e1229:Id>ValueHere</e1229:Id>
+          <e1229:Name d4p1:nil="false">ValueHere</e1229:Name>
+          <e1229:Number d4p1:nil="false">ValueHere</e1229:Number>
+          <e1229:AccountLifeCycleStatus>ValueHere</e1229:AccountLifeCycleStatus>
+          <e1229:PauseReason d4p1:nil="false">ValueHere</e1229:PauseReason>
+        </e1229:AccountInfo>
       </AccountsInfo>
     </GetAccountsInfoResponse>
   </s:Body>
@@ -140,6 +137,6 @@ response=customermanagement_service.GetAccountsInfo(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

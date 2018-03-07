@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetKeywordIdeaCategories Service Operation - Ad Insight
 Gets the list of keyword idea categories.
 
@@ -45,7 +42,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <Action mustUnderstand="1">GetKeywordIdeaCategories</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -56,7 +53,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetKeywordIdeaCategoriesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11" />
+    <GetKeywordIdeaCategoriesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12" />
   </s:Body>
 </s:Envelope>
 ```
@@ -66,16 +63,16 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetKeywordIdeaCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordIdeaCategories xmlns:e384="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e384:KeywordIdeaCategory>
-          <e384:CategoryId>ValueHere</e384:CategoryId>
-          <e384:CategoryName d4p1:nil="false">ValueHere</e384:CategoryName>
-        </e384:KeywordIdeaCategory>
+    <GetKeywordIdeaCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <KeywordIdeaCategories xmlns:e1308="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1308:KeywordIdeaCategory>
+          <e1308:CategoryId>ValueHere</e1308:CategoryId>
+          <e1308:CategoryName d4p1:nil="false">ValueHere</e1308:CategoryName>
+        </e1308:KeywordIdeaCategory>
       </KeywordIdeaCategories>
     </GetKeywordIdeaCategoriesResponse>
   </s:Body>
@@ -120,6 +117,6 @@ response=adinsight_service.GetKeywordIdeaCategories()
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

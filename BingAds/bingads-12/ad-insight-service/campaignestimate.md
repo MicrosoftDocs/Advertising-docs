@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Contains a nested list of suggested keywords for the campaign's ad groups with minimum and maximum traffic estimates.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # CampaignEstimate Data Object - Ad Insight
 Contains a nested list of suggested keywords for the campaign's ad groups with minimum and maximum traffic estimates. Traffic estimates include average CPC, average position, clicks, CTR, impressions, and total cost.
 
@@ -33,8 +30,8 @@ Contains a nested list of suggested keywords for the campaign's ad groups with m
 |<a name="campaignid"></a>CampaignId|The ad group identifier.|**long**|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By
 [GetKeywordTrafficEstimates](getkeywordtrafficestimates.md)  

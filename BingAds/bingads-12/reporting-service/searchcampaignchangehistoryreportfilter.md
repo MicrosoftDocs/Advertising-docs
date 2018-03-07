@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the criteria to use to filter the campaign change history report data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SearchCampaignChangeHistoryReportFilter Data Object - Reporting
 Defines the criteria to use to filter the campaign change history report data.
 
@@ -32,8 +29,8 @@ Defines the criteria to use to filter the campaign change history report data.
 |<a name="itemchanged"></a>ItemChanged|The report will include data for only the specified type of entity. For example, you can use the filter to include data only for changes to ad groups or campaigns.<br /><br />You may specify only one type of entity.|[ChangeEntityReportFilter](changeentityreportfilter.md)|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [SearchCampaignChangeHistoryReportRequest](searchcampaignchangehistoryreportrequest.md)  

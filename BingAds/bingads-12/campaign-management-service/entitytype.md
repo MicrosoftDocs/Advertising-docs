@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible types of entities.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # EntityType Value Set - Campaign Management
 Defines the possible types of entities.
 

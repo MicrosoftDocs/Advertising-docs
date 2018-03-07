@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: The URL search parameter that you can use as a seed for new keyword ideas.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # UrlSearchParameter Data Object - Ad Insight
 The URL search parameter that you can use as a seed for new keyword ideas.
 
@@ -32,6 +29,6 @@ The URL search parameter that you can use as a seed for new keyword ideas.
 |<a name="url"></a>Url|The URL of your website or a page on your website.<br/><br/> Bing Ads extracts keywords from the HTML code on your website or landing page. If your HTML code contains Javascript, which generates content at runtime, Bing Ads will not extract keywords rendered from the Javascript and you'll see fewer or no keywords.|**string**|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.SearchParameters  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.SearchParameters  
 

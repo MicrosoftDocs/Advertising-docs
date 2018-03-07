@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SuggestKeywordsFromExistingKeywords Service Operation - Ad Insight
 Suggests keywords that could perform better than the specified keywords.
 
@@ -54,7 +51,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <Action mustUnderstand="1">SuggestKeywordsFromExistingKeywords</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -65,7 +62,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <SuggestKeywordsFromExistingKeywordsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <SuggestKeywordsFromExistingKeywordsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
       <Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:string>ValueHere</a1:string>
       </Keywords>
@@ -89,21 +86,21 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <SuggestKeywordsFromExistingKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordSuggestions xmlns:e404="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e404:KeywordSuggestion>
-          <e404:Keyword d4p1:nil="false">ValueHere</e404:Keyword>
-          <e404:SuggestionsAndConfidence d4p1:nil="false">
-            <e404:KeywordAndConfidence>
-              <e404:SuggestedKeyword d4p1:nil="false">ValueHere</e404:SuggestedKeyword>
-              <e404:ConfidenceScore>ValueHere</e404:ConfidenceScore>
-            </e404:KeywordAndConfidence>
-          </e404:SuggestionsAndConfidence>
-        </e404:KeywordSuggestion>
+    <SuggestKeywordsFromExistingKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <KeywordSuggestions xmlns:e1328="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1328:KeywordSuggestion>
+          <e1328:Keyword d4p1:nil="false">ValueHere</e1328:Keyword>
+          <e1328:SuggestionsAndConfidence d4p1:nil="false">
+            <e1328:KeywordAndConfidence>
+              <e1328:SuggestedKeyword d4p1:nil="false">ValueHere</e1328:SuggestedKeyword>
+              <e1328:ConfidenceScore>ValueHere</e1328:ConfidenceScore>
+            </e1328:KeywordAndConfidence>
+          </e1328:SuggestionsAndConfidence>
+        </e1328:KeywordSuggestion>
       </KeywordSuggestions>
     </SuggestKeywordsFromExistingKeywordsResponse>
   </s:Body>
@@ -222,6 +219,6 @@ The following are the possible suggestion providers that you can specify.
 The following are the providers that each country supports.
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

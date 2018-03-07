@@ -8,9 +8,6 @@ description: Describes the Price Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Price Ad Extension Record - Bulk
 Defines an ad extension that includes between 3 and 8 price table rows.
 

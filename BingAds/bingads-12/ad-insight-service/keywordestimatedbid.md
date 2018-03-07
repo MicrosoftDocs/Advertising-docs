@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains the keyword and the estimated bid value for each match type.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # KeywordEstimatedBid Data Object - Ad Insight
 Defines an object that contains the keyword and the estimated bid value for each match type.
 
@@ -33,8 +30,8 @@ Defines an object that contains the keyword and the estimated bid value for each
 |<a name="keyword"></a>Keyword|The keyword to which the estimates apply.|**string**|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By
 [GetEstimatedBidByKeywords](getestimatedbidbykeywords.md)  

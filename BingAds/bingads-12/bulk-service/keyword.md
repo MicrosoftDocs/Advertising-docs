@@ -8,9 +8,6 @@ description: Describes the Keyword fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Keyword Record - Bulk
 Defines a keyword that can be downloaded and uploaded in a bulk file.
 

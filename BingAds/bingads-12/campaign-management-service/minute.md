@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible minute values for ad extension scheduling or day and time criterion.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Minute Value Set - Campaign Management
 Defines the possible minute values for ad extension scheduling or day and time criterion.
 

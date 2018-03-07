@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a list of optional Keyword properties that you can request when calling GetKeywordsByAdGroupId, GetKeywordsByEditorialStatus, and GetKeywordsByIds.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # KeywordAdditionalField Value Set - Campaign Management
 Defines a list of optional [Keyword](keyword.md) properties that you can request when calling [GetKeywordsByAdGroupId](getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](getkeywordsbyids.md). This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding propertys will be included in the [Keyword](keyword.md) object by default.
 

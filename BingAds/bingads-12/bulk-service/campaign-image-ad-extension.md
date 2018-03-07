@@ -8,9 +8,6 @@ description: Describes the Campaign Image Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Campaign Image Ad Extension Record - Bulk
 Defines an association record between a [Campaign](campaign.md) and an [Image Ad Extension](image-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or image ad extension, use the [Campaign](campaign.md) or [Image Ad Extension](image-ad-extension.md) record.
 	

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a list of optional Audience properties that you can request when calling GetAudiencesByIds.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AudienceAdditionalField Value Set - Campaign Management
 Defines a list of optional [Audience](audience.md) properties that you can request when calling [GetAudiencesByIds](getaudiencesbyids.md). This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding propertys will be included in the [Audience](audience.md) object by default.
 

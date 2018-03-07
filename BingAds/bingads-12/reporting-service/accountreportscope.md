@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the set of accounts to include in the report.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AccountReportScope Data Object - Reporting
 Defines the set of accounts to include in the report.
 
@@ -28,8 +25,8 @@ Defines the set of accounts to include in the report.
 |<a name="accountids"></a>AccountIds|An array of a maximum of 1,000 account identifiers that identifies the account data to include in the report.<br /><br />To include every account to which the user has access, including accounts that the user manages, set this element to NULL.|**long** array|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [AccountPerformanceReportRequest](accountperformancereportrequest.md)  

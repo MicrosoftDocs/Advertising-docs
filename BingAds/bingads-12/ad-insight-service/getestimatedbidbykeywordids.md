@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetEstimatedBidByKeywordIds Service Operation - Ad Insight
 Gets the estimated bid value of one or more keywords - specified by keyword identifier - that could have resulted in an ad appearing in the targeted position in the search results in the last  7 days. In addition, the operation provides estimates of clicks, average cost per click (CPC), and impressions that the keywords could have generated with the estimated bid.
 
@@ -50,7 +47,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <Action mustUnderstand="1">GetEstimatedBidByKeywordIds</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -61,7 +58,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetEstimatedBidByKeywordIdsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <GetEstimatedBidByKeywordIdsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
       <KeywordIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:long>ValueHere</a1:long>
       </KeywordIds>
@@ -76,33 +73,33 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetEstimatedBidByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedBids xmlns:e372="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e372:KeywordIdEstimatedBid>
-          <e372:KeywordId>ValueHere</e372:KeywordId>
-          <e372:KeywordEstimatedBid d4p1:nil="false">
-            <e372:Keyword d4p1:nil="false">ValueHere</e372:Keyword>
-            <e372:EstimatedBids d4p1:nil="false">
-              <e372:EstimatedBidAndTraffic>
-                <e372:MinClicksPerWeek d4p1:nil="false">ValueHere</e372:MinClicksPerWeek>
-                <e372:MaxClicksPerWeek d4p1:nil="false">ValueHere</e372:MaxClicksPerWeek>
-                <e372:AverageCPC d4p1:nil="false">ValueHere</e372:AverageCPC>
-                <e372:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e372:MinImpressionsPerWeek>
-                <e372:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e372:MaxImpressionsPerWeek>
-                <e372:CTR d4p1:nil="false">ValueHere</e372:CTR>
-                <e372:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e372:MinTotalCostPerWeek>
-                <e372:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e372:MaxTotalCostPerWeek>
-                <e372:Currency>ValueHere</e372:Currency>
-                <e372:MatchType>ValueHere</e372:MatchType>
-                <e372:EstimatedMinBid>ValueHere</e372:EstimatedMinBid>
-              </e372:EstimatedBidAndTraffic>
-            </e372:EstimatedBids>
-          </e372:KeywordEstimatedBid>
-        </e372:KeywordIdEstimatedBid>
+    <GetEstimatedBidByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <KeywordEstimatedBids xmlns:e1296="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1296:KeywordIdEstimatedBid>
+          <e1296:KeywordId>ValueHere</e1296:KeywordId>
+          <e1296:KeywordEstimatedBid d4p1:nil="false">
+            <e1296:Keyword d4p1:nil="false">ValueHere</e1296:Keyword>
+            <e1296:EstimatedBids d4p1:nil="false">
+              <e1296:EstimatedBidAndTraffic>
+                <e1296:MinClicksPerWeek d4p1:nil="false">ValueHere</e1296:MinClicksPerWeek>
+                <e1296:MaxClicksPerWeek d4p1:nil="false">ValueHere</e1296:MaxClicksPerWeek>
+                <e1296:AverageCPC d4p1:nil="false">ValueHere</e1296:AverageCPC>
+                <e1296:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e1296:MinImpressionsPerWeek>
+                <e1296:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e1296:MaxImpressionsPerWeek>
+                <e1296:CTR d4p1:nil="false">ValueHere</e1296:CTR>
+                <e1296:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e1296:MinTotalCostPerWeek>
+                <e1296:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e1296:MaxTotalCostPerWeek>
+                <e1296:CurrencyCode>ValueHere</e1296:CurrencyCode>
+                <e1296:MatchType>ValueHere</e1296:MatchType>
+                <e1296:EstimatedMinBid>ValueHere</e1296:EstimatedMinBid>
+              </e1296:EstimatedBidAndTraffic>
+            </e1296:EstimatedBids>
+          </e1296:KeywordEstimatedBid>
+        </e1296:KeywordIdEstimatedBid>
       </KeywordEstimatedBids>
     </GetEstimatedBidByKeywordIdsResponse>
   </s:Body>
@@ -161,6 +158,6 @@ response=adinsight_service.GetEstimatedBidByKeywordIds(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

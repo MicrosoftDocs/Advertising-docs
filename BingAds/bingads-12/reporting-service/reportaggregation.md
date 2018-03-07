@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the aggregation values that you can use for a report.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ReportAggregation Value Set - Reporting
 Defines the aggregation values that you can use for a report.
 
@@ -42,20 +39,34 @@ Defines the aggregation values that you can use for a report.
 |<a name="yearly"></a>Yearly|Each row of the report identifies the year when the transaction occurred. The report data will be aggregated by each year. The report will include a column named *Year* that contains the year formatted as *yyyy*.|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [AccountPerformanceReportRequest](accountperformancereportrequest.md)  
+[AdDynamicTextPerformanceReportRequest](addynamictextperformancereportrequest.md)  
 [AdExtensionByAdReportRequest](adextensionbyadreportrequest.md)  
 [AdExtensionByKeywordReportRequest](adextensionbykeywordreportrequest.md)  
 [AdExtensionDetailReportRequest](adextensiondetailreportrequest.md)  
 [AdGroupPerformanceReportRequest](adgroupperformancereportrequest.md)  
+[AdPerformanceReportRequest](adperformancereportrequest.md)  
+[AgeGenderDemographicReportRequest](agegenderdemographicreportrequest.md)  
 [AudiencePerformanceReportRequest](audienceperformancereportrequest.md)  
 [CallDetailReportRequest](calldetailreportrequest.md)  
 [CampaignPerformanceReportRequest](campaignperformancereportrequest.md)  
+[ConversionPerformanceReportRequest](conversionperformancereportrequest.md)  
+[DestinationUrlPerformanceReportRequest](destinationurlperformancereportrequest.md)  
+[DSAAutoTargetPerformanceReportRequest](dsaautotargetperformancereportrequest.md)  
+[DSACategoryPerformanceReportRequest](dsacategoryperformancereportrequest.md)  
+[DSASearchQueryPerformanceReportRequest](dsasearchqueryperformancereportrequest.md)  
+[GeographicPerformanceReportRequest](geographicperformancereportrequest.md)  
+[GoalsAndFunnelsReportRequest](goalsandfunnelsreportrequest.md)  
 [KeywordPerformanceReportRequest](keywordperformancereportrequest.md)  
 [ProductDimensionPerformanceReportRequest](productdimensionperformancereportrequest.md)  
 [ProductPartitionPerformanceReportRequest](productpartitionperformancereportrequest.md)  
 [ProductPartitionUnitPerformanceReportRequest](productpartitionunitperformancereportrequest.md)  
 [ProductSearchQueryPerformanceReportRequest](productsearchqueryperformancereportrequest.md)  
+[PublisherUsagePerformanceReportRequest](publisherusageperformancereportrequest.md)  
+[SearchQueryPerformanceReportRequest](searchqueryperformancereportrequest.md)  
+[ShareOfVoiceReportRequest](shareofvoicereportrequest.md)  
+[UserLocationPerformanceReportRequest](userlocationperformancereportrequest.md)  

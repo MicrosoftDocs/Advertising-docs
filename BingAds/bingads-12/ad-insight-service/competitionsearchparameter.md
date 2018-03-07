@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: The competition search parameter filter that you can include when requesting keyword ideas.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # CompetitionSearchParameter Data Object - Ad Insight
 The competition search parameter filter that you can include when requesting keyword ideas.
 
@@ -20,7 +17,7 @@ If you do not include the competition search parameter when calling [GetKeywordI
   <xs:complexContent mixed="false">
     <xs:extension base="tns:SearchParameter">
       <xs:sequence>
-        <xs:element minOccurs="0" name="CompetitionLevels" nillable="true" type="q8:ArrayOfCompetitionLevel" xmlns:q8="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" />
+        <xs:element minOccurs="0" name="CompetitionLevels" nillable="true" type="q8:ArrayOfCompetitionLevel" xmlns:q8="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -34,6 +31,6 @@ If you do not include the competition search parameter when calling [GetKeywordI
 |<a name="competitionlevels"></a>CompetitionLevels|The competition levels that you want for the returned keyword ideas.<br/><br/>Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads. Possible values are *Low*, *Medium*, and *High*.|[CompetitionLevel](competitionlevel.md) array|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.SearchParameters  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.SearchParameters  
 

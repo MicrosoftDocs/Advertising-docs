@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a billing document.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # BillingDocument Data Object - Customer Billing
 Defines a billing document.
 
@@ -32,8 +29,8 @@ Defines a billing document.
 |<a name="type"></a>Type|The format of the billing document.|[DataType](datatype.md)|
 
 ## Requirements
-Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [GetBillingDocuments](getbillingdocuments.md)  

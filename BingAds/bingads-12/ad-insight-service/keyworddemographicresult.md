@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains the keyword and percentage of users by age and gender (if known) who searched for the specified keyword.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # KeywordDemographicResult Data Object - Ad Insight
 Defines an object that contains the keyword and percentage of users by age and gender (if known) who searched for the specified keyword.
 
@@ -30,8 +27,8 @@ Defines an object that contains the keyword and percentage of users by age and g
 |<a name="keyworddemographics"></a>KeywordDemographics|An array of [KeywordDemographic](keyworddemographic.md) data objects that contains the percentage of users by age and gender (if known) that searched for the keyword on the device.|[KeywordDemographic](keyworddemographic.md) array|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By
 [GetKeywordDemographics](getkeyworddemographics.md)  

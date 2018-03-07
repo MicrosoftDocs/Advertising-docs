@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetSharedEntitiesByAccountId Service Operation - Campaign Management
 Gets the negative keyword lists from the account's library.
 

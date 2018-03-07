@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: The impression share search parameter filter that you can include when requesting keyword ideas.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ImpressionShareSearchParameter Data Object - Ad Insight
 The impression share search parameter filter that you can include when requesting keyword ideas.
 
@@ -36,6 +33,6 @@ If you do not include the impression share search parameter when calling [GetKey
 |<a name="minimum"></a>Minimum|The minimum impression share that you want for keyword ideas.|**double**|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.SearchParameters  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.SearchParameters  
 

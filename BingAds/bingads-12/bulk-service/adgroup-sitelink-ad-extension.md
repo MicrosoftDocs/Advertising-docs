@@ -8,9 +8,6 @@ description: Describes the AdGroup Sitelink Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AdGroup Sitelink Ad Extension Record - Bulk
 Defines an association record between an [Ad Group](ad-group.md) and a [Sitelink Ad Extension](sitelink-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or sitelink ad extension, use the [Ad Group](ad-group.md) or [Sitelink Ad Extension](sitelink-ad-extension.md) record. 
 

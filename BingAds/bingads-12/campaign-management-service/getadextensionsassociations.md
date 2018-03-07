@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetAdExtensionsAssociations Service Operation - Campaign Management
 Gets the respective ad extension associations by the specified campaign and ad group identifiers.
 

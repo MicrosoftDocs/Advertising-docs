@@ -67,18 +67,18 @@ The new value set is used with the [GetEstimatedBidByKeywords](../ad-insight-ser
 The new value set is used with the [BidLandscapePoint](../ad-insight-service/bidlandscapepoint.md), [EstimatedBidAndTraffic](../ad-insight-service/estimatedbidandtraffic.md), and [EstimatedPositionAndTraffic](../ad-insight-service/estimatedpositionandtraffic.md) objects.
 
 #### <a name="adinsight-traditionalchinese"></a>Traditional Chinese
-In version 12 to specify Traditional Chinese you must use *TraditionalChinese* (without space) when setting the *Language* element e.g., for the [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) and [GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md) operations. Version 11 only supported *Traditional Chinese* (with space).
+To specify Traditional Chinese in version 12 you must use *TraditionalChinese* (without space) when setting the *Language* element e.g., for the [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) and [GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md) operations. Version 11 only supported *Traditional Chinese* (with space).
 
 #### <a name="adinsight-keyworddemographic"></a>Keyword Demographic
 The age range element names are updated within the [KeywordDemographic](../ad-insight-service/keyworddemographic.md) object.
 
-|Version 11|Version 12|
-|---|---|
-|Age18_24|EighteenToTwentyFour|
-|Age25_34|TwentyFiveToThirtyFour|
-|Age35_49|ThirtyFiveToFourtyNine|
-|Age50_64|FiftyToSixtyFour|
-|Age65Plus|SixtyFiveAndAbove|
+Version 11|Version 12  
+---------|---------
+Age18_24|EighteenToTwentyFour
+Age25_34|TwentyFiveToThirtyFour
+Age35_49|ThirtyFiveToFourtyNine
+Age50_64|FiftyToSixtyFour
+Age65Plus|SixtyFiveAndAbove
 
 #### <a name="adinsight-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *Content* value is removed from the [MatchType](../ad-insight-service/matchtype.md) value set. 
@@ -214,6 +214,8 @@ The namespace is `https://bingads.microsoft.com/Billing/v12`.
 
 The production endpoint is [https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc).
 
+#### <a name="billing-insertionorderstatus"></a>InsertionOrderStatus
+The Pending and PendingSystemReview values are removed from the [InsertionOrderStatus](../customer-billing-service/insertionorderstatus.md) value set. The NotStarted value replaces Pending.
 
 ## <a name="customer"></a>Customer Management
 
@@ -229,7 +231,9 @@ The production endpoint is [https://clientcenter.api.bingads.microsoft.com/Api/C
 The sandbox endpoint is [https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc](https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc).
 
 #### <a name="customer-multi-user"></a>Multi User Credentials
-With [multi-user credentials](#authentication-multi-user), one email address can be associated with multiple roles i.e., one role for each customer they can access. Whether or not you have "multi-user" credentials, the Customer Management API maps your credentials via a single [User](../customer-management-service/user.md) object, with some notable changes to the returned user roles. The *Accounts*, *Customers*, and *Roles* elements of the [GetUser](../customer-management-service/getuser.md) response are replaced with a list of [CustomerRole](../customer-management-service/customerrole.md) named *CustomerRoles*. 
+With [multi-user credentials](#authentication-multi-user), one email address can be associated with multiple roles i.e., one role for each customer they can access. Whether or not you have "multi-user" credentials, the Customer Management API maps your credentials via a single [User](../customer-management-service/user.md) object, with some notable changes to the returned user roles. 
+
+The *Accounts*, *Customers*, and *Roles* elements of the [GetUser](../customer-management-service/getuser.md) response are replaced with a list of [CustomerRole](../customer-management-service/customerrole.md) named *CustomerRoles*. 
 
 In the response message for *GetUser* in version 11, the returned role or roles were applicable for all accounts or customers listed. You will only see the role(s) that the user had before multi-user credentials consolidation. 
 
@@ -258,6 +262,22 @@ In the response message for [GetUser](../customer-management-service/getuser.md)
   </e328:CustomerRole>
 </CustomerRoles>
 ```
+
+Let's consider the following user roles and permissions before multi-user consolidation. Each user must log in separately and has different permissions during each logged in session. Likewise via the API each user's access token (see [Authentication with OAuth](authentication-oauth.md)) represents permissions limited to the corresponding user and role. 
+
+|User|Role|Permissions|
+|-------------|----------------------|----------------|
+|one@contoso.com|Viewer|Customer A - All Accounts|
+|two@contoso.com|Super Admin|Customer B - All Accounts|
+|three@contoso.com|Viewer|Customer C - Account A|
+|four@contoso.com|Standard User|Customer B - All Accounts|
+
+First please note that only one email address per customer can be consolidated, so in this example two@contoso.com and four@contoso.com cannot be consolidated together. Now let's see what happens after the top three users are consolidated under one@contoso.com. 
+  * No changes for user four@contoso.com whether via the Bing Ads web application, Bing Ads Editor, or API. 
+  * The *UserName* returned via [GetUser](../customer-management-service/getuser.md) and [GetUsersInfo](../customer-management-service/getusersinfo.md) will differ between version 11 and 12 for two@contoso.com and three@contoso.com. In version 11 the *UserName* will be two@contoso.com and three@contoso.com, whereas in version 12 the *UserName* for each of the corresponding user identifiers will be one@contoso.com. In other words the operations will always return whatever user name can authenticate using the respective API version.
+  * The user one@contoso.com can log in via the Bing Ads web application and Bing Ads Editor. The consolidated users i.e., two@contoso.com and three@contoso.com no longer have permissions to sign in via the Bing Ads web application or Bing Ads Editor. While signed in as one@contoso.com, you can switch context to the customer accounts with corresponding user roles that had previously been assigned to two@contoso.com and three@contoso.com. Although you can access multiple customers signed in with one user's credentials (one@contoso.com), you will need to switch from customer to customer to manage the accounts that are linked with unique user roles. Customers and their related accounts remain distinct. For more details see the Bing Ads help topic [Managing your user name to access multiple accounts](https://help.bingads.microsoft.com/#apex/3/en/app54567/1/en-US/#ext:Customers_Management).
+  * With Bing Ads API version 11 there is no change to access before versus after multi-user consolidation. Each of the user's access token (see [Authentication with OAuth](authentication-oauth.md)) represents permissions limited to the corresponding user and role. 
+  * Starting with Bing Ads API version 12, the access token for user one@contoso.com will represent permissions to the consolidated list (superset) of accounts. The user role in effect will depend on the customer and account identifiers specified in the service request. Access tokens for two@contoso.com and three@contoso.com will no longer be accepted. 
 
 #### <a name="customer-userroles"></a>User Roles
 The *UserRole* value set is removed to ensure consistent mapping and forward compatibility for potential new user roles. In turn, the *Role* element of the [UserInvitation](../customer-management-service/userinvitation.md) object is replaced with an int value i.e., an element named *RoleId*.

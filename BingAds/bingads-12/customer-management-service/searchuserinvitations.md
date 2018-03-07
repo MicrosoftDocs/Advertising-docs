@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SearchUserInvitations Service Operation - Customer Management
 Searches for user invitations that match a specified criteria.
 
@@ -48,7 +45,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">SearchUserInvitations</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -57,13 +54,13 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <SearchUserInvitationsRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Predicates xmlns:e339="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e339:Predicate>
-          <e339:Field i:nil="false">ValueHere</e339:Field>
-          <e339:Operator>ValueHere</e339:Operator>
-          <e339:Value i:nil="false">ValueHere</e339:Value>
-        </e339:Predicate>
+    <SearchUserInvitationsRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+      <Predicates xmlns:e1253="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1253:Predicate>
+          <e1253:Field i:nil="false">ValueHere</e1253:Field>
+          <e1253:Operator>ValueHere</e1253:Operator>
+          <e1253:Value i:nil="false">ValueHere</e1253:Value>
+        </e1253:Predicate>
       </Predicates>
     </SearchUserInvitationsRequest>
   </s:Body>
@@ -75,25 +72,25 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <SearchUserInvitationsResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <UserInvitations xmlns:e340="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e340:UserInvitation>
-          <e340:Id>ValueHere</e340:Id>
-          <e340:FirstName d4p1:nil="false">ValueHere</e340:FirstName>
-          <e340:LastName d4p1:nil="false">ValueHere</e340:LastName>
-          <e340:Email d4p1:nil="false">ValueHere</e340:Email>
-          <e340:CustomerId>ValueHere</e340:CustomerId>
-          <e340:Role>ValueHere</e340:Role>
-          <e340:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <SearchUserInvitationsResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <UserInvitations xmlns:e1254="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1254:UserInvitation>
+          <e1254:Id>ValueHere</e1254:Id>
+          <e1254:FirstName d4p1:nil="false">ValueHere</e1254:FirstName>
+          <e1254:LastName d4p1:nil="false">ValueHere</e1254:LastName>
+          <e1254:Email d4p1:nil="false">ValueHere</e1254:Email>
+          <e1254:CustomerId>ValueHere</e1254:CustomerId>
+          <e1254:RoleId>ValueHere</e1254:RoleId>
+          <e1254:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:long>ValueHere</a1:long>
-          </e340:AccountIds>
-          <e340:ExpirationDate>ValueHere</e340:ExpirationDate>
-          <e340:Lcid>ValueHere</e340:Lcid>
-        </e340:UserInvitation>
+          </e1254:AccountIds>
+          <e1254:ExpirationDate>ValueHere</e1254:ExpirationDate>
+          <e1254:Lcid>ValueHere</e1254:Lcid>
+        </e1254:UserInvitation>
       </UserInvitations>
     </SearchUserInvitationsResponse>
   </s:Body>
@@ -145,6 +142,6 @@ response=customermanagement_service.SearchUserInvitations(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

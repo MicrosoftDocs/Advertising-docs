@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: The device search parameter filter that you can include when requesting keyword ideas.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DeviceSearchParameter Data Object - Ad Insight
 The device search parameter filter that you can include when requesting keyword ideas.
 
@@ -20,7 +17,7 @@ If you do not include the device search parameter when calling [GetKeywordIdeas]
   <xs:complexContent mixed="false">
     <xs:extension base="tns:SearchParameter">
       <xs:sequence>
-        <xs:element minOccurs="0" name="Device" nillable="true" type="q6:DeviceCriterion" xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" />
+        <xs:element minOccurs="0" name="Device" nillable="true" type="q6:DeviceCriterion" xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -34,6 +31,6 @@ If you do not include the device search parameter when calling [GetKeywordIdeas]
 |<a name="device"></a>Device|The device criterion for the returned keyword ideas.|[DeviceCriterion](devicecriterion.md)|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.SearchParameters  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.SearchParameters  
 

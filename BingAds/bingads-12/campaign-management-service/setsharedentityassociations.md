@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SetSharedEntityAssociations Service Operation - Campaign Management
 Sets the association between a campaign and a negative keyword list.
 

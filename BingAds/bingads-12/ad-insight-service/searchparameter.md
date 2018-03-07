@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: This is the base class from which keyword idea search parameter objects derive.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SearchParameter Data Object - Ad Insight
 This is the base class from which keyword idea search parameter objects derive. 
 
@@ -28,6 +25,9 @@ Do not try to instantiate a [SearchParameter](searchparameter.md). You can creat
 - [SuggestedBidSearchParameter](suggestedbidsearchparameter.md)  
 - [UrlSearchParameter](urlsearchparameter.md)  
 
+> [!NOTE]
+> The [AuctionSegmentSearchParameter](auctionsegmentsearchparameter.md) is reserved for future use.
+
 ## Syntax
 ```xml
 <xs:complexType name="SearchParameter" xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -38,8 +38,9 @@ Do not try to instantiate a [SearchParameter](searchparameter.md). You can creat
 ## <a name="elements"></a>Elements
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.SearchParameters  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.SearchParameters  
 
 ## Used By
+[GetAuctionInsightData](getauctioninsightdata.md)  
 [GetKeywordIdeas](getkeywordideas.md)  

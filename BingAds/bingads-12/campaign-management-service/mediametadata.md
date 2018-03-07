@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a media meta data object.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # MediaMetaData Data Object - Campaign Management
 Defines a media meta data object. The meta data includes download Urls for one or more media representations.
 

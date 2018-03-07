@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a postal address.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Address Data Object - Campaign Management
 Defines a postal address.
 

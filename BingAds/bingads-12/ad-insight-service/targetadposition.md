@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible positions where you can target an ad to appear in the search results or on a content-based webpage.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # TargetAdPosition Value Set - Ad Insight
 Defines the possible positions where you can target an ad to appear in the search results or on a content-based webpage.
 
@@ -32,8 +29,8 @@ Defines the possible positions where you can target an ad to appear in the searc
 |<a name="sidebar"></a>SideBar|Target any position on the right side of the search results page.|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 
 ## Used By
 [GetEstimatedBidByKeywordIds](getestimatedbidbykeywordids.md)  

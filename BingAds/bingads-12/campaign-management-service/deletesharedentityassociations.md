@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DeleteSharedEntityAssociations Service Operation - Campaign Management
 Removes the association between a negative keyword list and an entity such as a campaign.
 

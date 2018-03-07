@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetBudgetOpportunities Service Operation - Ad Insight
 Gets the campaign budget opportunities of the specified campaign.
 
@@ -46,7 +43,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <Action mustUnderstand="1">GetBudgetOpportunities</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -57,7 +54,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetBudgetOpportunitiesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <GetBudgetOpportunitiesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
       <CampaignId i:nil="false">ValueHere</CampaignId>
     </GetBudgetOpportunitiesRequest>
   </s:Body>
@@ -69,31 +66,31 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetBudgetOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Opportunities xmlns:e370="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e370:BudgetOpportunity>
-          <e370:BudgetPoints d4p1:nil="false">
-            <e370:BudgetPoint>
-              <e370:BudgetAmount>ValueHere</e370:BudgetAmount>
-              <e370:BudgetPointType>ValueHere</e370:BudgetPointType>
-              <e370:EstimatedWeeklyClicks>ValueHere</e370:EstimatedWeeklyClicks>
-              <e370:EstimatedWeeklyCost>ValueHere</e370:EstimatedWeeklyCost>
-              <e370:EstimatedWeeklyImpressions>ValueHere</e370:EstimatedWeeklyImpressions>
-            </e370:BudgetPoint>
-          </e370:BudgetPoints>
-          <e370:BudgetType>ValueHere</e370:BudgetType>
-          <e370:CampaignId>ValueHere</e370:CampaignId>
-          <e370:CurrentBudget>ValueHere</e370:CurrentBudget>
-          <e370:IncreaseInClicks>ValueHere</e370:IncreaseInClicks>
-          <e370:IncreaseInImpressions>ValueHere</e370:IncreaseInImpressions>
-          <e370:PercentageIncreaseInClicks>ValueHere</e370:PercentageIncreaseInClicks>
-          <e370:PercentageIncreaseInImpressions>ValueHere</e370:PercentageIncreaseInImpressions>
-          <e370:RecommendedBudget>ValueHere</e370:RecommendedBudget>
-        </e370:BudgetOpportunity>
+    <GetBudgetOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <Opportunities xmlns:e1294="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1294:BudgetOpportunity>
+          <e1294:BudgetPoints d4p1:nil="false">
+            <e1294:BudgetPoint>
+              <e1294:BudgetAmount>ValueHere</e1294:BudgetAmount>
+              <e1294:BudgetPointType>ValueHere</e1294:BudgetPointType>
+              <e1294:EstimatedWeeklyClicks>ValueHere</e1294:EstimatedWeeklyClicks>
+              <e1294:EstimatedWeeklyCost>ValueHere</e1294:EstimatedWeeklyCost>
+              <e1294:EstimatedWeeklyImpressions>ValueHere</e1294:EstimatedWeeklyImpressions>
+            </e1294:BudgetPoint>
+          </e1294:BudgetPoints>
+          <e1294:BudgetType>ValueHere</e1294:BudgetType>
+          <e1294:CampaignId>ValueHere</e1294:CampaignId>
+          <e1294:CurrentBudget>ValueHere</e1294:CurrentBudget>
+          <e1294:IncreaseInClicks>ValueHere</e1294:IncreaseInClicks>
+          <e1294:IncreaseInImpressions>ValueHere</e1294:IncreaseInImpressions>
+          <e1294:PercentageIncreaseInClicks>ValueHere</e1294:PercentageIncreaseInClicks>
+          <e1294:PercentageIncreaseInImpressions>ValueHere</e1294:PercentageIncreaseInImpressions>
+          <e1294:RecommendedBudget>ValueHere</e1294:RecommendedBudget>
+        </e1294:BudgetOpportunity>
       </Opportunities>
     </GetBudgetOpportunitiesResponse>
   </s:Body>
@@ -145,6 +142,6 @@ response=adinsight_service.GetBudgetOpportunities(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

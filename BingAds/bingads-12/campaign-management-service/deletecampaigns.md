@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DeleteCampaigns Service Operation - Campaign Management
 Deletes one or more campaigns in a specified account.
 

@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetKeywordCategories Service Operation - Ad Insight
 Gets the keyword categories to which the specified keywords belong.
 
@@ -49,7 +46,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <Action mustUnderstand="1">GetKeywordCategories</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -60,7 +57,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetKeywordCategoriesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <GetKeywordCategoriesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
       <Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:string>ValueHere</a1:string>
       </Keywords>
@@ -77,21 +74,21 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetKeywordCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Result xmlns:e382="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e382:KeywordCategoryResult>
-          <e382:Keyword d4p1:nil="false">ValueHere</e382:Keyword>
-          <e382:KeywordCategories d4p1:nil="false">
-            <e382:KeywordCategory>
-              <e382:Category d4p1:nil="false">ValueHere</e382:Category>
-              <e382:ConfidenceScore>ValueHere</e382:ConfidenceScore>
-            </e382:KeywordCategory>
-          </e382:KeywordCategories>
-        </e382:KeywordCategoryResult>
+    <GetKeywordCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <Result xmlns:e1306="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1306:KeywordCategoryResult>
+          <e1306:Keyword d4p1:nil="false">ValueHere</e1306:Keyword>
+          <e1306:KeywordCategories d4p1:nil="false">
+            <e1306:KeywordCategory>
+              <e1306:Category d4p1:nil="false">ValueHere</e1306:Category>
+              <e1306:ConfidenceScore>ValueHere</e1306:ConfidenceScore>
+            </e1306:KeywordCategory>
+          </e1306:KeywordCategories>
+        </e1306:KeywordCategoryResult>
       </Result>
     </GetKeywordCategoriesResponse>
   </s:Body>
@@ -164,6 +161,6 @@ response=adinsight_service.GetKeywordCategories(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

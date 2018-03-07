@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an order for the list of entities returned using one of the search operations, for example SearchAccounts, SearchClientLinks, or SearchCustomers.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # OrderBy Data Object - Customer Management
 Defines an order for the list of entities returned using one of the search operations, for example [SearchAccounts](searchaccounts.md), [SearchClientLinks](searchclientlinks.md), or [SearchCustomers](searchcustomers.md).
 
@@ -30,8 +27,8 @@ Defines an order for the list of entities returned using one of the search opera
 |<a name="order"></a>Order|Determines whether the results are ascending or descending.|[SortOrder](sortorder.md)|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [SearchAccounts](searchaccounts.md)  

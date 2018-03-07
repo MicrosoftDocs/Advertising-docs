@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ApiFaultDetail Data Object - Reporting
 Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 
@@ -45,6 +42,6 @@ The [ApiFaultDetail](apifaultdetail.md) object derives from the [ApplicationFaul
 |<a name="trackingid"></a>TrackingId|The identifier of the log entry that contains the details of the API call.|**string**|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 

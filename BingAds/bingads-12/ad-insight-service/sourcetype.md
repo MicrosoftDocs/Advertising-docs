@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the source or seed for the keyword idea.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SourceType Value Set - Ad Insight
 Defines the source or seed for the keyword idea. 
 
@@ -38,8 +35,8 @@ You can request that the source be returned in the [KeywordIdea](keywordidea.md)
 |<a name="unknown"></a>Unknown|The keyword idea source is unknown.|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 
 ## Used By
 [KeywordIdea](keywordidea.md)  

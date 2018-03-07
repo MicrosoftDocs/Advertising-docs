@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DeleteUser Service Operation - Customer Management
 Deletes a user.
 
@@ -44,7 +41,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">DeleteUser</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -53,7 +50,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <DeleteUserRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+    <DeleteUserRequest xmlns="https://bingads.microsoft.com/Customer/v12">
       <UserId>ValueHere</UserId>
       <TimeStamp i:nil="false">ValueHere</TimeStamp>
     </DeleteUserRequest>
@@ -66,11 +63,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <DeleteUserResponse xmlns="https://bingads.microsoft.com/Customer/v11" />
+    <DeleteUserResponse xmlns="https://bingads.microsoft.com/Customer/v12" />
   </s:Body>
 </s:Envelope>
 ```
@@ -127,6 +124,6 @@ response=customermanagement_service.DeleteUser(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

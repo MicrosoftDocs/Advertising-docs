@@ -8,9 +8,6 @@ description: Describes the Budget fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Budget Record - Bulk
 Defines a budget that can be uploaded and downloaded in a bulk file.
 

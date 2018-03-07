@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: The date range search parameter that you can include when requesting keyword ideas.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DateRangeSearchParameter Data Object - Ad Insight
 The date range search parameter that you can include when requesting keyword ideas.
 
@@ -20,8 +17,8 @@ For more information about the significance of the date range search parameter, 
   <xs:complexContent mixed="false">
     <xs:extension base="tns:SearchParameter">
       <xs:sequence>
-        <xs:element minOccurs="0" name="EndDate" nillable="true" type="q9:DayMonthAndYear" xmlns:q9="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" />
-        <xs:element minOccurs="0" name="StartDate" nillable="true" type="q10:DayMonthAndYear" xmlns:q10="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" />
+        <xs:element minOccurs="0" name="EndDate" nillable="true" type="q9:DayMonthAndYear" xmlns:q9="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" />
+        <xs:element minOccurs="0" name="StartDate" nillable="true" type="q10:DayMonthAndYear" xmlns:q10="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -36,6 +33,6 @@ For more information about the significance of the date range search parameter, 
 |<a name="startdate"></a>StartDate|The start date range of monthly search counts for the returned keyword ideas.|[DayMonthAndYear](daymonthandyear.md)|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.SearchParameters  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.SearchParameters  
 

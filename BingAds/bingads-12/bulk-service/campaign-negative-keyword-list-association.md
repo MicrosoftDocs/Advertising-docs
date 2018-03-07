@@ -8,9 +8,6 @@ description: Describes the Campaign Negative Keyword List Association fields in 
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Campaign Negative Keyword List Association Record - Bulk
 Defines an association record between a [Campaign](campaign.md) and a [Negative Keyword List](negative-keyword-list.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or negative keyword list, use the [Campaign](campaign.md) or [Negative Keyword List](negative-keyword-list.md) record.
 	

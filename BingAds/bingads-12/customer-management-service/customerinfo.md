@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a customer identification object that contains information that identifies a customer.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # CustomerInfo Data Object - Customer Management
 Defines a customer identification object that contains information that identifies a customer.
 
@@ -30,8 +27,8 @@ Defines a customer identification object that contains information that identifi
 |<a name="name"></a>Name|The name of the customer.|**string**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [AdvertiserAccount](advertiseraccount.md)  

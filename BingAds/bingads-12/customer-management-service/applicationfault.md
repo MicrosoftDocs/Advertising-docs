@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the base object from which all fault detail objects derive.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ApplicationFault Data Object - Customer Management
 Defines the base object from which all fault detail objects derive.
 
@@ -28,6 +25,6 @@ Defines the base object from which all fault detail objects derive.
 |<a name="trackingid"></a>TrackingId|The identifier of the log entry that contains the details of the API call.|**string**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
 Namespace: https\://adapi.microsoft.com  
 

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible time zones for the customer management service.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # TimeZoneType Value Set - Customer Management
 Defines the possible time zones for the customer management service.
 
@@ -327,7 +324,7 @@ Defines the possible time zones for the customer management service.
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="InternationalDatelineWest">
+    <xs:enumeration value="InternationalDateLineWest">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">75</EnumerationValue>
@@ -390,7 +387,7 @@ Defines the possible time zones for the customer management service.
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="MagadanSolomonIslandNewCaledonia">
+    <xs:enumeration value="SolomonIslandNewCaledonia">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
@@ -590,7 +587,7 @@ Defines the possible time zones for the customer management service.
 |<a name="helsinkikyivrigasofiatallinnvilnius"></a>HelsinkiKyivRigaSofiaTallinnVilnius|The corresponding time zone type.|
 |<a name="hobart"></a>Hobart|The corresponding time zone type.|
 |<a name="indianaeast"></a>IndianaEast|The corresponding time zone type.|
-|<a name="internationaldatelinewest"></a>InternationalDatelineWest|The corresponding time zone type.|
+|<a name="internationaldatelinewest"></a>InternationalDateLineWest|The corresponding time zone type.|
 |<a name="irkutskulaanbataar"></a>IrkutskUlaanBataar|The corresponding time zone type.|
 |<a name="islamabadkarachitashkent"></a>IslamabadKarachiTashkent|The corresponding time zone type.|
 |<a name="jerusalem"></a>Jerusalem|The corresponding time zone type.|
@@ -599,7 +596,6 @@ Defines the possible time zones for the customer management service.
 |<a name="krasnoyarsk"></a>Krasnoyarsk|The corresponding time zone type.|
 |<a name="kualalumpursingapore"></a>KualaLumpurSingapore|The corresponding time zone type.|
 |<a name="kuwaitriyadh"></a>KuwaitRiyadh|The corresponding time zone type.|
-|<a name="magadansolomonislandnewcaledonia"></a>MagadanSolomonIslandNewCaledonia|The corresponding time zone type.|
 |<a name="midatlantic"></a>MidAtlantic|The corresponding time zone type.|
 |<a name="midwayislandandsamoa"></a>MidwayIslandAndSamoa|The corresponding time zone type.|
 |<a name="moscowstpetersburgvolgograd"></a>MoscowStPetersburgVolgograd|The corresponding time zone type.|
@@ -615,6 +611,7 @@ Defines the possible time zones for the customer management service.
 |<a name="sarajevoskopjewarsawzagreb"></a>SarajevoSkopjeWarsawZagreb|The corresponding time zone type.|
 |<a name="saskatchewan"></a>Saskatchewan|The corresponding time zone type.|
 |<a name="seoul"></a>Seoul|The corresponding time zone type.|
+|<a name="solomonislandnewcaledonia"></a>SolomonIslandNewCaledonia|The corresponding time zone type.|
 |<a name="srijayawardenepura"></a>SriJayawardenepura|The corresponding time zone type.|
 |<a name="taipei"></a>Taipei|The corresponding time zone type.|
 |<a name="tehran"></a>Tehran|The corresponding time zone type.|
@@ -623,8 +620,8 @@ Defines the possible time zones for the customer management service.
 |<a name="yakutsk"></a>Yakutsk|The corresponding time zone type.|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 
 ## Used By
-[Account](account.md)  
+[AdvertiserAccount](advertiseraccount.md)  

@@ -8,9 +8,6 @@ description: Describes the Dynamic Search Ad Label fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Dynamic Search Ad Label Record - Bulk
 Defines an association record between a [Dynamic Search Ad](dynamic-search-ad.md) and a [Label](label.md) that can be uploaded and downloaded in a bulk file. To upload or download the dynamic search ad or label, use the [Dynamic Search Ad](dynamic-search-ad.md) or [Label](label.md) record.
 

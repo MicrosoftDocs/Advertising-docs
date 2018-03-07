@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the GeographicPerformanceReportRequest.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GeographicPerformanceReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [GeographicPerformanceReportRequest](geographicperformancereportrequest.md).
 
@@ -108,7 +105,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
 |<a name="locationid"></a>LocationId|The Bing Ads identifier of the location where the user was physically located when they clicked the ad. For geographical location identifiers, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br/><br/> The *LocationType* column identifies whether the user was located in, searching for, or viewing pages about the location.|
 |<a name="locationtype"></a>LocationType|The location type used to deliver ads. For example to distinguish between people in versus searching for or viewing pages about the corresponding location of interest.The possible location type values are listed below:Physical location - Indicates that the user was physically located in the corresponding City, Country, MetroArea, or State locations.Location of interest - Indicates that the physical location of the user was not used to serve the ad, and the user was searching for or viewing pages about the corresponding City, Country, MetroArea, or State locations.Unknown - Legacy value returned if the physical location was not used or confirmed prior to the release of this report column in May 2014. If the user is searching for the location that they are in, then the location type is Physical location. For example if the search user is in Seattle and searching for Seattle, the location type is Physical location.|
-|<a name="metroarea"></a>MetroArea|The metro area (Nielsen DMAÂ® in the United States) where the user was physically located when they clicked the ad.<br/><br/> The *LocationType* column identifies whether the user was located in, searching for, or viewing pages about the location.|
+|<a name="metroarea"></a>MetroArea|The metro area (Nielsen DMA® in the United States) where the user was physically located when they clicked the ad.<br/><br/> The *LocationType* column identifies whether the user was located in, searching for, or viewing pages about the location.|
 |<a name="mostspecificlocation"></a>MostSpecificLocation|The most specific location used to deliver ads. For example if the city and country are both identified, this column will include the same value as the *City* column. If postal code information is available, then it will be included in the report instead of city or country.|
 |<a name="network"></a>Network|The current network setting of an ad group. The possible values include AOL search, Bing and Yahoo! search, Content, and Syndicated search partners.|
 |<a name="postalcode"></a>PostalCode|The postal code where the user was physically located when they clicked the ad.<br/><br/> The *LocationType* column identifies whether the user was located in, searching for, or viewing pages about the location.|
@@ -136,8 +133,8 @@ The report must include the following columns, and one or more of the performanc
 |TimePeriod|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [GeographicPerformanceReportRequest](geographicperformancereportrequest.md)  

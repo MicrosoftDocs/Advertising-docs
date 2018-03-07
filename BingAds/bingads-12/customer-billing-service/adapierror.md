@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an error object that contains the details that explain why the service operation failed.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AdApiError Data Object - Customer Billing
 Defines an error object that contains the details that explain why the service operation failed.
 
@@ -34,7 +31,7 @@ Defines an error object that contains the details that explain why the service o
 |<a name="message"></a>Message|A message that describes the error.|**string**|
 
 ## Requirements
-Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
+Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
 Namespace: https\://adapi.microsoft.com  
 
 ## Used By

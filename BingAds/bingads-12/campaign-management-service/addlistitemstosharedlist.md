@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AddListItemsToSharedList Service Operation - Campaign Management
 Adds negative keywords to the shared negative keyword list.
 

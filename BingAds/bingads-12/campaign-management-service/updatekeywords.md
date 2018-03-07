@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # UpdateKeywords Service Operation - Campaign Management
 Updates the keywords within a specified ad group.
 

@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetBidLandscapeByAdGroupIds Service Operation - Ad Insight
 Given a list of existing ad groups, this operation returns for each a list of suggested bids and estimated performance statistics. You can use the landscape view of multiple bid points with estimated traffic for the same ad group to help make decisions about how to adjust your ad group level default bid to optimize for clicks, impressions, and cost. For example you might use the resulting data to visualize a clicks to cost curve or a bid to impressions curve.
 
@@ -49,7 +46,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <Action mustUnderstand="1">GetBidLandscapeByAdGroupIds</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -60,12 +57,12 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetBidLandscapeByAdGroupIdsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <AdGroupBidLandscapeInputs xmlns:e366="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" i:nil="false">
-        <e366:AdGroupBidLandscapeInput>
-          <e366:AdGroupBidLandscapeType>ValueHere</e366:AdGroupBidLandscapeType>
-          <e366:AdGroupId>ValueHere</e366:AdGroupId>
-        </e366:AdGroupBidLandscapeInput>
+    <GetBidLandscapeByAdGroupIdsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <AdGroupBidLandscapeInputs xmlns:e1290="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
+        <e1290:AdGroupBidLandscapeInput>
+          <e1290:AdGroupBidLandscapeType>ValueHere</e1290:AdGroupBidLandscapeType>
+          <e1290:AdGroupId>ValueHere</e1290:AdGroupId>
+        </e1290:AdGroupBidLandscapeInput>
       </AdGroupBidLandscapeInputs>
     </GetBidLandscapeByAdGroupIdsRequest>
   </s:Body>
@@ -77,37 +74,37 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetBidLandscapeByAdGroupIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <BidLandscape xmlns:e367="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e367:AdGroupBidLandscape>
-          <e367:AdGroupId>ValueHere</e367:AdGroupId>
-          <e367:AdGroupBidLandscapeType>ValueHere</e367:AdGroupBidLandscapeType>
-          <e367:StartDate d4p1:nil="false">
-            <e367:Day>ValueHere</e367:Day>
-            <e367:Month>ValueHere</e367:Month>
-            <e367:Year>ValueHere</e367:Year>
-          </e367:StartDate>
-          <e367:EndDate d4p1:nil="false">
-            <e367:Day>ValueHere</e367:Day>
-            <e367:Month>ValueHere</e367:Month>
-            <e367:Year>ValueHere</e367:Year>
-          </e367:EndDate>
-          <e367:BidLandscapePoints d4p1:nil="false">
-            <e367:BidLandscapePoint>
-              <e367:Bid>ValueHere</e367:Bid>
-              <e367:Clicks d4p1:nil="false">ValueHere</e367:Clicks>
-              <e367:Impressions>ValueHere</e367:Impressions>
-              <e367:TopImpressions d4p1:nil="false">ValueHere</e367:TopImpressions>
-              <e367:Currency>ValueHere</e367:Currency>
-              <e367:Cost d4p1:nil="false">ValueHere</e367:Cost>
-              <e367:MarginalCPC d4p1:nil="false">ValueHere</e367:MarginalCPC>
-            </e367:BidLandscapePoint>
-          </e367:BidLandscapePoints>
-        </e367:AdGroupBidLandscape>
+    <GetBidLandscapeByAdGroupIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <BidLandscape xmlns:e1291="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1291:AdGroupBidLandscape>
+          <e1291:AdGroupId>ValueHere</e1291:AdGroupId>
+          <e1291:AdGroupBidLandscapeType>ValueHere</e1291:AdGroupBidLandscapeType>
+          <e1291:StartDate d4p1:nil="false">
+            <e1291:Day>ValueHere</e1291:Day>
+            <e1291:Month>ValueHere</e1291:Month>
+            <e1291:Year>ValueHere</e1291:Year>
+          </e1291:StartDate>
+          <e1291:EndDate d4p1:nil="false">
+            <e1291:Day>ValueHere</e1291:Day>
+            <e1291:Month>ValueHere</e1291:Month>
+            <e1291:Year>ValueHere</e1291:Year>
+          </e1291:EndDate>
+          <e1291:BidLandscapePoints d4p1:nil="false">
+            <e1291:BidLandscapePoint>
+              <e1291:Bid>ValueHere</e1291:Bid>
+              <e1291:Clicks d4p1:nil="false">ValueHere</e1291:Clicks>
+              <e1291:Impressions>ValueHere</e1291:Impressions>
+              <e1291:TopImpressions d4p1:nil="false">ValueHere</e1291:TopImpressions>
+              <e1291:CurrencyCode>ValueHere</e1291:CurrencyCode>
+              <e1291:Cost d4p1:nil="false">ValueHere</e1291:Cost>
+              <e1291:MarginalCPC d4p1:nil="false">ValueHere</e1291:MarginalCPC>
+            </e1291:BidLandscapePoint>
+          </e1291:BidLandscapePoints>
+        </e1291:AdGroupBidLandscape>
       </BidLandscape>
     </GetBidLandscapeByAdGroupIdsResponse>
   </s:Body>
@@ -159,6 +156,6 @@ response=adinsight_service.GetBidLandscapeByAdGroupIds(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

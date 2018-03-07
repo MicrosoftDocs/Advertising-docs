@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an account identification object that contains information that identifies an account.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AccountInfo Data Object - Customer Management
 Defines an account identification object that contains information that identifies an account.
 
@@ -36,8 +33,8 @@ Defines an account identification object that contains information that identifi
 |<a name="pausereason"></a>PauseReason|A flag value that indicates who paused the account. The following are the possible values:<br /><br />1 - The user paused the account.<br /><br />2 - The billing service paused the account.<br /><br />4 - The user and billing service paused the account.|**unsignedByte**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [FindAccounts](findaccounts.md)  

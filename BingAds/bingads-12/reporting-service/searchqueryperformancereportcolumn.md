@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the SearchQueryPerformanceReportRequest.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SearchQueryPerformanceReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [SearchQueryPerformanceReportRequest](searchqueryperformancereportrequest.md).
 
@@ -134,8 +131,8 @@ The report must include the following columns, and one or more of the performanc
 |TimePeriod|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [SearchQueryPerformanceReportRequest](searchqueryperformancereportrequest.md)  

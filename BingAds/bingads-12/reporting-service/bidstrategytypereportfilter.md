@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible values that you can use to use to filter the report data by bid strategy type.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # BidStrategyTypeReportFilter Value Set - Reporting
 Defines the possible values that you can use to use to filter the report data by bid strategy type.
 
@@ -40,8 +37,8 @@ Defines the possible values that you can use to use to filter the report data by
 |<a name="manualcpc"></a>ManualCpc|The report will contain data related to keywords, ad groups, or campaigns that use the manual CPC bid strategy.|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [DSAAutoTargetPerformanceReportFilter](dsaautotargetperformancereportfilter.md)  

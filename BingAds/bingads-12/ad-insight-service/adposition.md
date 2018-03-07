@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible positions of an ad in the search results or on a content-based webpage.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AdPosition Value Set - Ad Insight
 Defines the possible positions of an ad in the search results or on a content-based webpage.
 
@@ -58,8 +55,8 @@ Defines the possible positions of an ad in the search results or on a content-ba
 |<a name="sidebar9"></a>SideBar9|The ninth ad to appear on the right side of the first search results page.|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 
 ## Used By
 [GetHistoricalKeywordPerformance](gethistoricalkeywordperformance.md)  

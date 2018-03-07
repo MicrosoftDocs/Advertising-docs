@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ApiFaultDetail Data Object - Ad Insight
 Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.
 
@@ -18,8 +15,8 @@ Defines a fault object that operations return when web service-specific errors o
   <xs:complexContent mixed="false">
     <xs:extension base="q3:ApplicationFault" xmlns:q3="https://adapi.microsoft.com">
       <xs:sequence>
-        <xs:element minOccurs="0" name="BatchErrors" nillable="true" type="q4:ArrayOfBatchError" xmlns:q4="https://bingads.microsoft.com/AdInsight/v11" />
-        <xs:element minOccurs="0" name="OperationErrors" nillable="true" type="q5:ArrayOfOperationError" xmlns:q5="https://bingads.microsoft.com/AdInsight/v11" />
+        <xs:element minOccurs="0" name="BatchErrors" nillable="true" type="q4:ArrayOfBatchError" xmlns:q4="https://bingads.microsoft.com/AdInsight/v12" />
+        <xs:element minOccurs="0" name="OperationErrors" nillable="true" type="q5:ArrayOfOperationError" xmlns:q5="https://bingads.microsoft.com/AdInsight/v12" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -45,6 +42,6 @@ The [ApiFaultDetail](apifaultdetail.md) object derives from the [ApplicationFaul
 |<a name="trackingid"></a>TrackingId|The identifier of the log entry that contains the details of the API call.|**string**|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

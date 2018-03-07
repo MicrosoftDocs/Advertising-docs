@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a paging object that you can use to request labels and label associations in batches.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Paging Data Object - Campaign Management
 Defines a paging object that you can use to request labels and label associations in batches.
 

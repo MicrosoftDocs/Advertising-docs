@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: For internal use only.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ServiceLevel Value Set - Customer Management
 For internal use only.
 
@@ -36,8 +33,8 @@ For internal use only.
 |<a name="selfservetrusted"></a>SelfServeTrusted|For internal use only.|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 
 ## Used By
 [Customer](customer.md)  

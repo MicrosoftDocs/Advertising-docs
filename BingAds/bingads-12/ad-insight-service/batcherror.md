@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # BatchError Data Object - Ad Insight
 Defines an error object that identifies the item within the batch of items in the request message that caused the operation to fail, and describes the reason for the failure.
 
@@ -36,8 +33,8 @@ Defines an error object that identifies the item within the batch of items in th
 |<a name="message"></a>Message|A message that describes the error.|**string**|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: https\://bingads.microsoft.com/AdInsight/v11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: https\://bingads.microsoft.com/AdInsight/v12  
 
 ## Used By
 [ApiFaultDetail](apifaultdetail.md)  

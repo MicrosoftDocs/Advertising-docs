@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetEstimatedBidByKeywords Service Operation - Ad Insight
 Gets the estimated bid value of one or more keywords that could result in an ad appearing in the targeted position in the search results.
 
@@ -29,11 +26,11 @@ The *GetEstimatedBidByKeywordsRequest* object defines the [body](#request-body) 
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group whose performance data is used to help determine how well the keyword might perform in the context of the ad group. Specifying an ad group helps improve the accuracy of the suggested bid.<br /><br />If you specify an ad group, you must specify the campaign that it belongs to.|**long**|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad group specified in *AdGroupId*. If you do not specify an ad group, the campaign's performance data is used to help determine how well the keyword might perform in the context of the campaign.<br /><br /> Specifying a campaign and ad group helps improve the accuracy of the suggested bid. If neither *AdGroupId* or *CampaignId* are specified, the operation uses the specified *CustomerAccountId* header element to help determine how well the keyword might perform in the context of the account.|**long**|
-|<a name="currency"></a>Currency|The monetary unit to use to calculate the cost estimates and suggested bid value.<br /><br />If not set, the service determines the currency from the account specified in the *CustomerAccountId* header element. If neither *Currency* or  *CustomerAccountId* is set, the service uses USDollar.|[Currency](currency.md)|
+|<a name="currencycode"></a>CurrencyCode|Reserved.|[CurrencyCode](currencycode.md)|
 |<a name="entitylevelbid"></a>EntityLevelBid|Determines whether to return estimates for keyword level bids, ad group level bids, or both.<br /><br />- Set *EntityLevelBid* to Keyword to get an array of [KeywordEstimatedBid](keywordestimatedbid.md) corresponding to the specified keywords.<br /><br />- Set *EntityLevelBid* to AdGroup to get one [EstimatedBidAndTraffic](estimatedbidandtraffic.md) for the specified ad group.<br /><br />- Set *EntityLevelBid* to AllEntities to get an array of [KeywordEstimatedBid](keywordestimatedbid.md) for keywords and one [EstimatedBidAndTraffic](estimatedbidandtraffic.md) for an ad group.<br /><br />If you do not set *EntityLevelBid*, the default is to return only an array of [KeywordEstimatedBid](keywordestimatedbid.md), or the equivalent of setting *EntityLevelBid* to Keyword.<br /><br />If you set *EntityLevelBid* to any value other thanKeyword, AdGroup, or AllEntities, the service will return *Code 3501* with *ErrorCode CampaignServiceBidLevelInvalid*.|**string**|
 |<a name="keywords"></a>Keywords|A list of [KeywordAndMatchType](keywordandmatchtype.md) data objects for which you want to get suggested bid values. You may specify a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|[KeywordAndMatchType](keywordandmatchtype.md) array|
 |<a name="language"></a>Language|The language used to help determine  the country to use as the source of data for estimating the bids, if the *PublisherCountries* element is not specified.<br /><br /> The language must be supported in each of the countries in the *PublisherCountries* element.<br /><br />For possible values and information about the relationship between languages and countries, see [Ad Languages](../guides/ad-languages.md).<br /><br />The default value is determined by the *PublisherCountries* element and the location targets associated with the specified *AdGroupId* and *CampaignId*. For more information, see the [Remarks](#remarks) section below.|**string**|
-|<a name="publishercountries"></a>PublisherCountries|The country codes of the countries to use as the source of data for estimating the bids.<br /><br /> All of the countries must support the language specified in the *Language* element.<br /><br />You may specify one or more country codes. For possible values, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br /><br />The default value is determined by the *Language* element and the location targets associated with the specified *AdGroupId* and *CampaignId*. For more information, see the [Remarks](#remarks) section below.|**string** array|
+|<a name="locationids"></a>LocationIds|Reserved.|**long** array|
 |<a name="targetpositionforads"></a>TargetPositionForAds|The position where you want your ads to appear in the search results.<br /><br />The default value is *MainLine1*.|[TargetAdPosition](targetadposition.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -57,7 +54,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <Action mustUnderstand="1">GetEstimatedBidByKeywords</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -68,21 +65,21 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetEstimatedBidByKeywordsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Keywords xmlns:e373="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Message" i:nil="false">
-        <e373:KeywordAndMatchType>
-          <e373:KeywordText i:nil="false">ValueHere</e373:KeywordText>
-          <e373:MatchTypes i:nil="false">
+    <GetEstimatedBidByKeywordsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <Keywords xmlns:e1297="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Message" i:nil="false">
+        <e1297:KeywordAndMatchType>
+          <e1297:KeywordText i:nil="false">ValueHere</e1297:KeywordText>
+          <e1297:MatchTypes i:nil="false">
             <MatchType>ValueHere</MatchType>
-          </e373:MatchTypes>
-        </e373:KeywordAndMatchType>
+          </e1297:MatchTypes>
+        </e1297:KeywordAndMatchType>
       </Keywords>
       <TargetPositionForAds>ValueHere</TargetPositionForAds>
       <Language i:nil="false">ValueHere</Language>
-      <PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        <a1:string>ValueHere</a1:string>
-      </PublisherCountries>
-      <Currency i:nil="false">ValueHere</Currency>
+      <LocationIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <a1:long>ValueHere</a1:long>
+      </LocationIds>
+      <CurrencyCode i:nil="false">ValueHere</CurrencyCode>
       <CampaignId i:nil="false">ValueHere</CampaignId>
       <AdGroupId i:nil="false">ValueHere</AdGroupId>
       <EntityLevelBid i:nil="false">ValueHere</EntityLevelBid>
@@ -96,43 +93,43 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetEstimatedBidByKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordEstimatedBids xmlns:e374="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e374:KeywordEstimatedBid>
-          <e374:Keyword d4p1:nil="false">ValueHere</e374:Keyword>
-          <e374:EstimatedBids d4p1:nil="false">
-            <e374:EstimatedBidAndTraffic>
-              <e374:MinClicksPerWeek d4p1:nil="false">ValueHere</e374:MinClicksPerWeek>
-              <e374:MaxClicksPerWeek d4p1:nil="false">ValueHere</e374:MaxClicksPerWeek>
-              <e374:AverageCPC d4p1:nil="false">ValueHere</e374:AverageCPC>
-              <e374:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e374:MinImpressionsPerWeek>
-              <e374:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e374:MaxImpressionsPerWeek>
-              <e374:CTR d4p1:nil="false">ValueHere</e374:CTR>
-              <e374:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e374:MinTotalCostPerWeek>
-              <e374:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e374:MaxTotalCostPerWeek>
-              <e374:Currency>ValueHere</e374:Currency>
-              <e374:MatchType>ValueHere</e374:MatchType>
-              <e374:EstimatedMinBid>ValueHere</e374:EstimatedMinBid>
-            </e374:EstimatedBidAndTraffic>
-          </e374:EstimatedBids>
-        </e374:KeywordEstimatedBid>
+    <GetEstimatedBidByKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <KeywordEstimatedBids xmlns:e1298="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1298:KeywordEstimatedBid>
+          <e1298:Keyword d4p1:nil="false">ValueHere</e1298:Keyword>
+          <e1298:EstimatedBids d4p1:nil="false">
+            <e1298:EstimatedBidAndTraffic>
+              <e1298:MinClicksPerWeek d4p1:nil="false">ValueHere</e1298:MinClicksPerWeek>
+              <e1298:MaxClicksPerWeek d4p1:nil="false">ValueHere</e1298:MaxClicksPerWeek>
+              <e1298:AverageCPC d4p1:nil="false">ValueHere</e1298:AverageCPC>
+              <e1298:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e1298:MinImpressionsPerWeek>
+              <e1298:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e1298:MaxImpressionsPerWeek>
+              <e1298:CTR d4p1:nil="false">ValueHere</e1298:CTR>
+              <e1298:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e1298:MinTotalCostPerWeek>
+              <e1298:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e1298:MaxTotalCostPerWeek>
+              <e1298:CurrencyCode>ValueHere</e1298:CurrencyCode>
+              <e1298:MatchType>ValueHere</e1298:MatchType>
+              <e1298:EstimatedMinBid>ValueHere</e1298:EstimatedMinBid>
+            </e1298:EstimatedBidAndTraffic>
+          </e1298:EstimatedBids>
+        </e1298:KeywordEstimatedBid>
       </KeywordEstimatedBids>
-      <AdGroupEstimatedBid xmlns:e375="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e375:MinClicksPerWeek d4p1:nil="false">ValueHere</e375:MinClicksPerWeek>
-        <e375:MaxClicksPerWeek d4p1:nil="false">ValueHere</e375:MaxClicksPerWeek>
-        <e375:AverageCPC d4p1:nil="false">ValueHere</e375:AverageCPC>
-        <e375:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e375:MinImpressionsPerWeek>
-        <e375:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e375:MaxImpressionsPerWeek>
-        <e375:CTR d4p1:nil="false">ValueHere</e375:CTR>
-        <e375:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e375:MinTotalCostPerWeek>
-        <e375:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e375:MaxTotalCostPerWeek>
-        <e375:Currency>ValueHere</e375:Currency>
-        <e375:MatchType>ValueHere</e375:MatchType>
-        <e375:EstimatedMinBid>ValueHere</e375:EstimatedMinBid>
+      <AdGroupEstimatedBid xmlns:e1299="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1299:MinClicksPerWeek d4p1:nil="false">ValueHere</e1299:MinClicksPerWeek>
+        <e1299:MaxClicksPerWeek d4p1:nil="false">ValueHere</e1299:MaxClicksPerWeek>
+        <e1299:AverageCPC d4p1:nil="false">ValueHere</e1299:AverageCPC>
+        <e1299:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e1299:MinImpressionsPerWeek>
+        <e1299:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e1299:MaxImpressionsPerWeek>
+        <e1299:CTR d4p1:nil="false">ValueHere</e1299:CTR>
+        <e1299:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e1299:MinTotalCostPerWeek>
+        <e1299:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e1299:MaxTotalCostPerWeek>
+        <e1299:CurrencyCode>ValueHere</e1299:CurrencyCode>
+        <e1299:MatchType>ValueHere</e1299:MatchType>
+        <e1299:EstimatedMinBid>ValueHere</e1299:EstimatedMinBid>
       </AdGroupEstimatedBid>
     </GetEstimatedBidByKeywordsResponse>
   </s:Body>
@@ -146,8 +143,8 @@ public async Task<GetEstimatedBidByKeywordsResponse> GetEstimatedBidByKeywordsAs
 	IList<KeywordAndMatchType> keywords,
 	TargetAdPosition targetPositionForAds,
 	string language,
-	IList<string> publisherCountries,
-	Currency? currency,
+	IList<long> locationIds,
+	CurrencyCode? currencyCode,
 	long? campaignId,
 	long? adGroupId,
 	string entityLevelBid)
@@ -157,8 +154,8 @@ public async Task<GetEstimatedBidByKeywordsResponse> GetEstimatedBidByKeywordsAs
 		Keywords = keywords,
 		TargetPositionForAds = targetPositionForAds,
 		Language = language,
-		PublisherCountries = publisherCountries,
-		Currency = currency,
+		LocationIds = locationIds,
+		CurrencyCode = currencyCode,
 		CampaignId = campaignId,
 		AdGroupId = adGroupId,
 		EntityLevelBid = entityLevelBid
@@ -172,8 +169,8 @@ static GetEstimatedBidByKeywordsResponse getEstimatedBidByKeywords(
 	ArrayOfKeywordAndMatchType keywords,
 	TargetAdPosition targetPositionForAds,
 	java.lang.String language,
-	ArrayOfstring publisherCountries,
-	Currency currency,
+	ArrayOflong locationIds,
+	CurrencyCode currencyCode,
 	java.lang.Long campaignId,
 	java.lang.Long adGroupId,
 	java.lang.String entityLevelBid) throws RemoteException, Exception
@@ -183,8 +180,8 @@ static GetEstimatedBidByKeywordsResponse getEstimatedBidByKeywords(
 	request.setKeywords(keywords);
 	request.setTargetPositionForAds(targetPositionForAds);
 	request.setLanguage(language);
-	request.setPublisherCountries(publisherCountries);
-	request.setCurrency(currency);
+	request.setLocationIds(locationIds);
+	request.setCurrencyCode(currencyCode);
 	request.setCampaignId(campaignId);
 	request.setAdGroupId(adGroupId);
 	request.setEntityLevelBid(entityLevelBid);
@@ -197,8 +194,8 @@ static function GetEstimatedBidByKeywords(
 	$keywords,
 	$targetPositionForAds,
 	$language,
-	$publisherCountries,
-	$currency,
+	$locationIds,
+	$currencyCode,
 	$campaignId,
 	$adGroupId,
 	$entityLevelBid)
@@ -211,8 +208,8 @@ static function GetEstimatedBidByKeywords(
 	$request->Keywords = $keywords;
 	$request->TargetPositionForAds = $targetPositionForAds;
 	$request->Language = $language;
-	$request->PublisherCountries = $publisherCountries;
-	$request->Currency = $currency;
+	$request->LocationIds = $locationIds;
+	$request->CurrencyCode = $currencyCode;
 	$request->CampaignId = $campaignId;
 	$request->AdGroupId = $adGroupId;
 	$request->EntityLevelBid = $entityLevelBid;
@@ -225,8 +222,8 @@ response=adinsight_service.GetEstimatedBidByKeywords(
 	Keywords=Keywords,
 	TargetPositionForAds=TargetPositionForAds,
 	Language=Language,
-	PublisherCountries=PublisherCountries,
-	Currency=Currency,
+	LocationIds=LocationIds,
+	CurrencyCode=CurrencyCode,
 	CampaignId=CampaignId,
 	AdGroupId=AdGroupId,
 	EntityLevelBid=EntityLevelBid)
@@ -252,6 +249,6 @@ As a best practice for the most accurate bid estimates per country, you should s
 Given multiple countries from one of the property sets above, the service will then determine one country with the highest impression count to use as the source of data for estimating the bids. The response will not include details on the final filtered country.
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

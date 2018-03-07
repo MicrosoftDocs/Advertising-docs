@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetBidLandscapeByKeywordIds Service Operation - Ad Insight
 Given a list of existing keywords, this operation returns for each a list of suggested bids and estimated performance statistics from 1 to  7 days. This operation is not based on target position, rather it returns multiple bid options that yield different estimated clicks, impressions, and cost. You can use the landscape view of multiple bid points with estimated traffic for the same keyword to help make decisions about how to adjust your keyword bid to optimize for clicks, impressions, and cost. For example you might use the resulting data to visualize a clicks to cost curve or a bid to impressions curve.
 
@@ -50,7 +47,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <Action mustUnderstand="1">GetBidLandscapeByKeywordIds</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -61,7 +58,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetBidLandscapeByKeywordIdsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <GetBidLandscapeByKeywordIdsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
       <KeywordIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:long>ValueHere</a1:long>
       </KeywordIds>
@@ -76,36 +73,36 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetBidLandscapeByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <BidLandscape xmlns:e368="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e368:KeywordBidLandscape>
-          <e368:KeywordId>ValueHere</e368:KeywordId>
-          <e368:StartDate d4p1:nil="false">
-            <e368:Day>ValueHere</e368:Day>
-            <e368:Month>ValueHere</e368:Month>
-            <e368:Year>ValueHere</e368:Year>
-          </e368:StartDate>
-          <e368:EndDate d4p1:nil="false">
-            <e368:Day>ValueHere</e368:Day>
-            <e368:Month>ValueHere</e368:Month>
-            <e368:Year>ValueHere</e368:Year>
-          </e368:EndDate>
-          <e368:BidLandscapePoints d4p1:nil="false">
-            <e368:BidLandscapePoint>
-              <e368:Bid>ValueHere</e368:Bid>
-              <e368:Clicks d4p1:nil="false">ValueHere</e368:Clicks>
-              <e368:Impressions>ValueHere</e368:Impressions>
-              <e368:TopImpressions d4p1:nil="false">ValueHere</e368:TopImpressions>
-              <e368:Currency>ValueHere</e368:Currency>
-              <e368:Cost d4p1:nil="false">ValueHere</e368:Cost>
-              <e368:MarginalCPC d4p1:nil="false">ValueHere</e368:MarginalCPC>
-            </e368:BidLandscapePoint>
-          </e368:BidLandscapePoints>
-        </e368:KeywordBidLandscape>
+    <GetBidLandscapeByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <BidLandscape xmlns:e1292="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1292:KeywordBidLandscape>
+          <e1292:KeywordId>ValueHere</e1292:KeywordId>
+          <e1292:StartDate d4p1:nil="false">
+            <e1292:Day>ValueHere</e1292:Day>
+            <e1292:Month>ValueHere</e1292:Month>
+            <e1292:Year>ValueHere</e1292:Year>
+          </e1292:StartDate>
+          <e1292:EndDate d4p1:nil="false">
+            <e1292:Day>ValueHere</e1292:Day>
+            <e1292:Month>ValueHere</e1292:Month>
+            <e1292:Year>ValueHere</e1292:Year>
+          </e1292:EndDate>
+          <e1292:BidLandscapePoints d4p1:nil="false">
+            <e1292:BidLandscapePoint>
+              <e1292:Bid>ValueHere</e1292:Bid>
+              <e1292:Clicks d4p1:nil="false">ValueHere</e1292:Clicks>
+              <e1292:Impressions>ValueHere</e1292:Impressions>
+              <e1292:TopImpressions d4p1:nil="false">ValueHere</e1292:TopImpressions>
+              <e1292:CurrencyCode>ValueHere</e1292:CurrencyCode>
+              <e1292:Cost d4p1:nil="false">ValueHere</e1292:Cost>
+              <e1292:MarginalCPC d4p1:nil="false">ValueHere</e1292:MarginalCPC>
+            </e1292:BidLandscapePoint>
+          </e1292:BidLandscapePoints>
+        </e1292:KeywordBidLandscape>
       </BidLandscape>
     </GetBidLandscapeByKeywordIdsResponse>
   </s:Body>
@@ -164,6 +161,6 @@ response=adinsight_service.GetBidLandscapeByKeywordIds(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

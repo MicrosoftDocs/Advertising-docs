@@ -8,9 +8,6 @@ description: Describes the Ad Group Age Criterion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Ad Group Age Criterion Record - Bulk
 Defines an ad group age criterion that can be uploaded and downloaded in a bulk file. 
 

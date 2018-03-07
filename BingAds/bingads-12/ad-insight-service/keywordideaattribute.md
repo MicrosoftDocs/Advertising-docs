@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Determines which properties of the KeywordIdea object you want returned when calling the GetKeywordIdeas operation.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # KeywordIdeaAttribute Value Set - Ad Insight
 Determines which properties of the [KeywordIdea](keywordidea.md) object you want returned when calling the [GetKeywordIdeas](getkeywordideas.md) operation.
 
@@ -44,8 +41,8 @@ Determines which properties of the [KeywordIdea](keywordidea.md) object you want
 |<a name="suggestedbid"></a>SuggestedBid|Include the suggested bid.|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 
 ## Used By
 [GetKeywordIdeas](getkeywordideas.md)  

@@ -8,9 +8,6 @@ description: Describes the Offline Conversion fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Offline Conversion Record - Bulk
 Defines an offline conversion that can be uploaded in a bulk file.
 

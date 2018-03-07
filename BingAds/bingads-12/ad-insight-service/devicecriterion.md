@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: The device criterion that you can include when requesting keyword ideas or traffic estimates.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DeviceCriterion Data Object - Ad Insight
 The device criterion that you can include when requesting keyword ideas or traffic estimates.
 
@@ -32,8 +29,8 @@ The device criterion that you can include when requesting keyword ideas or traff
 |<a name="devicename"></a>DeviceName|The device that you want to target.<br/><br/>Possible case-sensitive values are *All*, *Computers*, *Smartphones*, and *Tablets*.|**string**|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions  
 
 ## Used By
 [DeviceSearchParameter](devicesearchparameter.md)  

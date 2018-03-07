@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # UpdateClientLinks Service Operation - Customer Management
 Updates the status of the specified client links. To update a client link, the *TimeStamp* element is required for validation, so you must first call the [SearchClientLinks](searchclientlinks.md) to get the existing *ClientLink* object. Then modify the *Status* element of the returned *ClientLink*, and include the updated *ClientLink* object  in a subsequent call to the *UpdateClientLinks* operation. For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
 
@@ -59,7 +56,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">UpdateClientLinks</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -68,32 +65,32 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <UpdateClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <ClientLinks xmlns:e350="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e350:ClientLink>
-          <e350:ClientAccountId i:nil="false">ValueHere</e350:ClientAccountId>
-          <e350:ClientAccountNumber i:nil="false">ValueHere</e350:ClientAccountNumber>
-          <e350:ManagingCustomerId i:nil="false">ValueHere</e350:ManagingCustomerId>
-          <e350:ManagingCustomerNumber i:nil="false">ValueHere</e350:ManagingCustomerNumber>
-          <e350:Note i:nil="false">ValueHere</e350:Note>
-          <e350:Name i:nil="false">ValueHere</e350:Name>
-          <e350:InviterEmail i:nil="false">ValueHere</e350:InviterEmail>
-          <e350:InviterName i:nil="false">ValueHere</e350:InviterName>
-          <e350:InviterPhone i:nil="false">ValueHere</e350:InviterPhone>
-          <e350:IsBillToClient>ValueHere</e350:IsBillToClient>
-          <e350:StartDate i:nil="false">ValueHere</e350:StartDate>
-          <e350:Status i:nil="false">ValueHere</e350:Status>
-          <e350:SuppressNotification>ValueHere</e350:SuppressNotification>
-          <e350:LastModifiedDateTime>ValueHere</e350:LastModifiedDateTime>
-          <e350:LastModifiedByUserId>ValueHere</e350:LastModifiedByUserId>
-          <e350:Timestamp i:nil="false">ValueHere</e350:Timestamp>
-          <ForwardCompatibilityMap xmlns:e351="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e351:KeyValuePairOfstringstring>
-              <e351:key i:nil="false">ValueHere</e351:key>
-              <e351:value i:nil="false">ValueHere</e351:value>
-            </e351:KeyValuePairOfstringstring>
+    <UpdateClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+      <ClientLinks xmlns:e1264="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1264:ClientLink>
+          <e1264:ClientAccountId i:nil="false">ValueHere</e1264:ClientAccountId>
+          <e1264:ClientAccountNumber i:nil="false">ValueHere</e1264:ClientAccountNumber>
+          <e1264:ManagingCustomerId i:nil="false">ValueHere</e1264:ManagingCustomerId>
+          <e1264:ManagingCustomerNumber i:nil="false">ValueHere</e1264:ManagingCustomerNumber>
+          <e1264:Note i:nil="false">ValueHere</e1264:Note>
+          <e1264:Name i:nil="false">ValueHere</e1264:Name>
+          <e1264:InviterEmail i:nil="false">ValueHere</e1264:InviterEmail>
+          <e1264:InviterName i:nil="false">ValueHere</e1264:InviterName>
+          <e1264:InviterPhone i:nil="false">ValueHere</e1264:InviterPhone>
+          <e1264:IsBillToClient>ValueHere</e1264:IsBillToClient>
+          <e1264:StartDate i:nil="false">ValueHere</e1264:StartDate>
+          <e1264:Status i:nil="false">ValueHere</e1264:Status>
+          <e1264:SuppressNotification>ValueHere</e1264:SuppressNotification>
+          <e1264:LastModifiedDateTime>ValueHere</e1264:LastModifiedDateTime>
+          <e1264:LastModifiedByUserId>ValueHere</e1264:LastModifiedByUserId>
+          <e1264:Timestamp i:nil="false">ValueHere</e1264:Timestamp>
+          <ForwardCompatibilityMap xmlns:e1265="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e1265:KeyValuePairOfstringstring>
+              <e1265:key i:nil="false">ValueHere</e1265:key>
+              <e1265:value i:nil="false">ValueHere</e1265:value>
+            </e1265:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-        </e350:ClientLink>
+        </e1264:ClientLink>
       </ClientLinks>
     </UpdateClientLinksRequest>
   </s:Body>
@@ -105,26 +102,26 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <UpdateClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <OperationErrors xmlns:e352="https://bingads.microsoft.com/Customer/v11/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e352:OperationError>
-          <e352:Code>ValueHere</e352:Code>
-          <e352:Details d4p1:nil="false">ValueHere</e352:Details>
-          <e352:Message d4p1:nil="false">ValueHere</e352:Message>
-        </e352:OperationError>
+    <UpdateClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <OperationErrors xmlns:e1266="https://bingads.microsoft.com/Customer/v12/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1266:OperationError>
+          <e1266:Code>ValueHere</e1266:Code>
+          <e1266:Details d4p1:nil="false">ValueHere</e1266:Details>
+          <e1266:Message d4p1:nil="false">ValueHere</e1266:Message>
+        </e1266:OperationError>
       </OperationErrors>
-      <PartialErrors xmlns:e353="https://bingads.microsoft.com/Customer/v11/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e353:ArrayOfOperationError>
-          <e353:OperationError>
-            <e353:Code>ValueHere</e353:Code>
-            <e353:Details d4p1:nil="false">ValueHere</e353:Details>
-            <e353:Message d4p1:nil="false">ValueHere</e353:Message>
-          </e353:OperationError>
-        </e353:ArrayOfOperationError>
+      <PartialErrors xmlns:e1267="https://bingads.microsoft.com/Customer/v12/Exception" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1267:ArrayOfOperationError>
+          <e1267:OperationError>
+            <e1267:Code>ValueHere</e1267:Code>
+            <e1267:Details d4p1:nil="false">ValueHere</e1267:Details>
+            <e1267:Message d4p1:nil="false">ValueHere</e1267:Message>
+          </e1267:OperationError>
+        </e1267:ArrayOfOperationError>
       </PartialErrors>
     </UpdateClientLinksResponse>
   </s:Body>
@@ -176,6 +173,6 @@ response=customermanagement_service.UpdateClientLinks(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

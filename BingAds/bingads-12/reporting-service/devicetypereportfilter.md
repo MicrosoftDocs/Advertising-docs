@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the device type values that you can use to filter the report data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DeviceTypeReportFilter Value Set - Reporting
 Defines the device type values that you can use to filter the report data. These values are also used as column values in reports that include device type information, such as the ad group performance report.
 
@@ -38,8 +35,8 @@ Defines the device type values that you can use to filter the report data. These
 |<a name="tablet"></a>Tablet|The report will include text ads displayed on a tablet device.|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [AccountPerformanceReportFilter](accountperformancereportfilter.md)  

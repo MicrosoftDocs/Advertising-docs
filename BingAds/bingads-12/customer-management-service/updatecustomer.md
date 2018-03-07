@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # UpdateCustomer Service Operation - Customer Management
 Updates the details of the specified customer.
 
@@ -46,7 +43,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">UpdateCustomer</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -55,38 +52,38 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <UpdateCustomerRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Customer xmlns:e354="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e354:CustomerAddress i:nil="false">
-          <e354:City i:nil="false">ValueHere</e354:City>
-          <e354:CountryCode i:nil="false">ValueHere</e354:CountryCode>
-          <e354:Id i:nil="false">ValueHere</e354:Id>
-          <e354:Line1 i:nil="false">ValueHere</e354:Line1>
-          <e354:Line2 i:nil="false">ValueHere</e354:Line2>
-          <e354:Line3 i:nil="false">ValueHere</e354:Line3>
-          <e354:Line4 i:nil="false">ValueHere</e354:Line4>
-          <e354:PostalCode i:nil="false">ValueHere</e354:PostalCode>
-          <e354:StateOrProvince i:nil="false">ValueHere</e354:StateOrProvince>
-          <e354:TimeStamp i:nil="false">ValueHere</e354:TimeStamp>
-        </e354:CustomerAddress>
-        <e354:CustomerFinancialStatus i:nil="false">ValueHere</e354:CustomerFinancialStatus>
-        <e354:Id i:nil="false">ValueHere</e354:Id>
-        <e354:Industry i:nil="false">ValueHere</e354:Industry>
-        <e354:LastModifiedByUserId i:nil="false">ValueHere</e354:LastModifiedByUserId>
-        <e354:LastModifiedTime i:nil="false">ValueHere</e354:LastModifiedTime>
-        <e354:MarketCountry i:nil="false">ValueHere</e354:MarketCountry>
-        <ForwardCompatibilityMap xmlns:e355="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e355:KeyValuePairOfstringstring>
-            <e355:key i:nil="false">ValueHere</e355:key>
-            <e355:value i:nil="false">ValueHere</e355:value>
-          </e355:KeyValuePairOfstringstring>
+    <UpdateCustomerRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+      <Customer xmlns:e1268="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1268:CustomerAddress i:nil="false">
+          <e1268:City i:nil="false">ValueHere</e1268:City>
+          <e1268:CountryCode i:nil="false">ValueHere</e1268:CountryCode>
+          <e1268:Id i:nil="false">ValueHere</e1268:Id>
+          <e1268:Line1 i:nil="false">ValueHere</e1268:Line1>
+          <e1268:Line2 i:nil="false">ValueHere</e1268:Line2>
+          <e1268:Line3 i:nil="false">ValueHere</e1268:Line3>
+          <e1268:Line4 i:nil="false">ValueHere</e1268:Line4>
+          <e1268:PostalCode i:nil="false">ValueHere</e1268:PostalCode>
+          <e1268:StateOrProvince i:nil="false">ValueHere</e1268:StateOrProvince>
+          <e1268:TimeStamp i:nil="false">ValueHere</e1268:TimeStamp>
+        </e1268:CustomerAddress>
+        <e1268:CustomerFinancialStatus i:nil="false">ValueHere</e1268:CustomerFinancialStatus>
+        <e1268:Id i:nil="false">ValueHere</e1268:Id>
+        <e1268:Industry i:nil="false">ValueHere</e1268:Industry>
+        <e1268:LastModifiedByUserId i:nil="false">ValueHere</e1268:LastModifiedByUserId>
+        <e1268:LastModifiedTime i:nil="false">ValueHere</e1268:LastModifiedTime>
+        <e1268:MarketCountry i:nil="false">ValueHere</e1268:MarketCountry>
+        <ForwardCompatibilityMap xmlns:e1269="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e1269:KeyValuePairOfstringstring>
+            <e1269:key i:nil="false">ValueHere</e1269:key>
+            <e1269:value i:nil="false">ValueHere</e1269:value>
+          </e1269:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e354:MarketLanguage i:nil="false">ValueHere</e354:MarketLanguage>
-        <e354:Name i:nil="false">ValueHere</e354:Name>
-        <e354:ServiceLevel i:nil="false">ValueHere</e354:ServiceLevel>
-        <e354:CustomerLifeCycleStatus i:nil="false">ValueHere</e354:CustomerLifeCycleStatus>
-        <e354:TimeStamp i:nil="false">ValueHere</e354:TimeStamp>
-        <e354:Number i:nil="false">ValueHere</e354:Number>
+        <e1268:MarketLanguage i:nil="false">ValueHere</e1268:MarketLanguage>
+        <e1268:Name i:nil="false">ValueHere</e1268:Name>
+        <e1268:ServiceLevel i:nil="false">ValueHere</e1268:ServiceLevel>
+        <e1268:CustomerLifeCycleStatus i:nil="false">ValueHere</e1268:CustomerLifeCycleStatus>
+        <e1268:TimeStamp i:nil="false">ValueHere</e1268:TimeStamp>
+        <e1268:Number i:nil="false">ValueHere</e1268:Number>
       </Customer>
     </UpdateCustomerRequest>
   </s:Body>
@@ -98,11 +95,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <UpdateCustomerResponse xmlns="https://bingads.microsoft.com/Customer/v11">
+    <UpdateCustomerResponse xmlns="https://bingads.microsoft.com/Customer/v12">
       <LastModifiedTime>ValueHere</LastModifiedTime>
     </UpdateCustomerResponse>
   </s:Body>
@@ -154,6 +151,6 @@ response=customermanagement_service.UpdateCustomer(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

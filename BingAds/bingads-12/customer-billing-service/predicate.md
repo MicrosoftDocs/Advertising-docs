@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a predicate for the list of insertion orders returned using the SearchInsertionOrders operation.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Predicate Data Object - Customer Billing
 Defines a predicate for the list of insertion orders returned using the [SearchInsertionOrders](searchinsertionorders.md) operation.
 
@@ -45,8 +42,8 @@ For the [SearchInsertionOrders](searchinsertionorders.md) service operation, the
 |StartDate|GreaterThanEquals<br /><br />LessThanEquals|Use this field to search by insertion order start date.<br /><br />The date is stored in Coordinated Universal Time (UTC). Only the month, day, and year of the specified string are used for search. If you specify the hour, minutes, and seconds of a date they will be ignored.<br /><br />For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|
 
 ## Requirements
-Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [SearchInsertionOrders](searchinsertionorders.md)  

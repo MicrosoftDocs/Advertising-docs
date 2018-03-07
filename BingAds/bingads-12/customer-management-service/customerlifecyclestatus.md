@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible status values of a customer.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # CustomerLifeCycleStatus Value Set - Customer Management
 Defines the possible status values of a customer.
 
@@ -30,8 +27,8 @@ Defines the possible status values of a customer.
 |<a name="inactive"></a>Inactive|The customer is inactive, which means that the customer was deleted.|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 
 ## Used By
 [Customer](customer.md)  

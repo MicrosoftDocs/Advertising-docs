@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Contains campaign filter criteria and a nested list of ad group and keyword level filter criteria for traffic estimates.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # CampaignEstimator Data Object - Ad Insight
 Contains campaign filter criteria and a nested list of ad group and keyword level filter criteria for traffic estimates.
 
@@ -18,9 +15,9 @@ Contains campaign filter criteria and a nested list of ad group and keyword leve
   <xs:sequence>
     <xs:element minOccurs="0" name="AdGroupEstimators" nillable="true" type="tns:ArrayOfAdGroupEstimator" />
     <xs:element minOccurs="0" name="CampaignId" nillable="true" type="xs:long" />
-    <xs:element minOccurs="0" name="Criteria" nillable="true" type="q6:ArrayOfCriterion" xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" />
+    <xs:element minOccurs="0" name="Criteria" nillable="true" type="q4:ArrayOfCriterion" xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" />
     <xs:element minOccurs="0" name="DailyBudget" nillable="true" type="xs:double" />
-    <xs:element minOccurs="0" name="NegativeKeywords" nillable="true" type="q7:ArrayOfNegativeKeyword" xmlns:q7="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" />
+    <xs:element minOccurs="0" name="NegativeKeywords" nillable="true" type="q5:ArrayOfNegativeKeyword" xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -36,8 +33,8 @@ Contains campaign filter criteria and a nested list of ad group and keyword leve
 |<a name="negativekeywords"></a>NegativeKeywords|The list of negative keyword filter criteria for all keyword traffic estimates in the campaign.|[NegativeKeyword](negativekeyword.md) array|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By
 [GetKeywordTrafficEstimates](getkeywordtrafficestimates.md)  

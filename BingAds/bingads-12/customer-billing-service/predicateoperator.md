@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the condition of results for insertion orders returned using SearchInsertionOrders.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # PredicateOperator Value Set - Customer Billing
 Defines the condition of results for insertion orders returned using [SearchInsertionOrders](searchinsertionorders.md).
 
@@ -42,8 +39,8 @@ Defines the condition of results for insertion orders returned using [SearchInse
 |<a name="startswith"></a>StartsWith|The field must start with the specified value.<br /><br /> Not currently supported.|
 
 ## Requirements
-Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  
-Namespace: https\://bingads.microsoft.com/Billing/v11  
+Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  
+Namespace: https\://bingads.microsoft.com/Billing/v12  
 
 ## Used By
 [Predicate](predicate.md)  

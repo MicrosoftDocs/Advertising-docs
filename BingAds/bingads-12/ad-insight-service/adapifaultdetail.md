@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a fault object that operations return when generic errors occur, such as an authentication error.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # AdApiFaultDetail Data Object - Ad Insight
 Defines a fault object that operations return when generic errors occur, such as an authentication error.
 
@@ -43,6 +40,6 @@ The [AdApiFaultDetail](adapifaultdetail.md) object derives from the [Application
 |<a name="trackingid"></a>TrackingId|The identifier of the log entry that contains the details of the API call.|**string**|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
 Namespace: https\://adapi.microsoft.com  
 

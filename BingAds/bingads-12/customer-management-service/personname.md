@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the name of a user.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # PersonName Data Object - Customer Management
 Defines the name of a user.
 
@@ -32,8 +29,8 @@ Defines the name of a user.
 |<a name="middleinitial"></a>MiddleInitial|The middle initial of the user. The middle initial is limited to one character.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [User](user.md)  

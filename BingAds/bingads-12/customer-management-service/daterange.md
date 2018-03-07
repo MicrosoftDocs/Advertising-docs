@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a date range object.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DateRange Data Object - Customer Management
 Defines a date range object.
 
@@ -30,8 +27,8 @@ Defines a date range object.
 |<a name="mindate"></a>MinDate|The minimum date.<br /><br /> The date format should be specified as *"yyyyMMdd"*. For example April 3, 2017 should be specified as *"20170403"*.|**string**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [SearchCustomers](searchcustomers.md)  

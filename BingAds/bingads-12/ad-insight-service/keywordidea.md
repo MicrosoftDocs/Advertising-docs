@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains a suggested keyword with historical statistics, like monthly search volume, competition, suggested minimum bid, and ad impression share.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # KeywordIdea Data Object - Ad Insight
 Defines an object that contains a suggested keyword with historical statistics, like monthly search volume, competition, suggested minimum bid, and ad impression share.
 
@@ -18,13 +15,13 @@ Defines an object that contains a suggested keyword with historical statistics, 
   <xs:sequence>
     <xs:element minOccurs="0" name="AdGroupId" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="AdGroupName" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="AdImpressionShare" type="xs:double" />
-    <xs:element minOccurs="0" name="Competition" type="q3:CompetitionLevel" xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" />
+    <xs:element minOccurs="0" name="AdImpressionShare" nillable="true" type="xs:double" />
+    <xs:element minOccurs="0" name="Competition" nillable="true" type="q1:CompetitionLevel" xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
     <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="MonthlySearchCounts" nillable="true" type="q4:ArrayOflong" xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="Relevance" type="xs:double" />
-    <xs:element minOccurs="0" name="Source" type="q5:SourceType" xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" />
-    <xs:element minOccurs="0" name="SuggestedBid" type="xs:double" />
+    <xs:element minOccurs="0" name="MonthlySearchCounts" nillable="true" type="q2:ArrayOflong" xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="Relevance" nillable="true" type="xs:double" />
+    <xs:element minOccurs="0" name="Source" nillable="true" type="q3:SourceType" xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
+    <xs:element minOccurs="0" name="SuggestedBid" nillable="true" type="xs:double" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -44,8 +41,8 @@ Defines an object that contains a suggested keyword with historical statistics, 
 |<a name="suggestedbid"></a>SuggestedBid|The suggested minimum bid for this keyword. We create this suggestion using the location and network criterion you included, along with the average cost-per-click (CPC) advertisers are paying for this keyword. This amount is only an estimate and your actual CPC may vary.|**double**|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By
 [GetKeywordIdeas](getkeywordideas.md)  

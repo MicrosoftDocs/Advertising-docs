@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # KeyValuePairOfstringstring Data Object - Customer Management
 The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.
 
@@ -39,11 +36,10 @@ The list of key and value strings for forward compatibility to avoid otherwise b
 |<a name="value"></a>value|The value of the setting.|**string**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/System.Collections.Generic  
 
 ## Used By
-[Account](account.md)  
 [AdvertiserAccount](advertiseraccount.md)  
 [ClientLink](clientlink.md)  
 [Customer](customer.md)  

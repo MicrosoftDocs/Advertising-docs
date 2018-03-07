@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetHistoricalKeywordPerformance Service Operation - Ad Insight
 Gets the historical performance of the normalized search term. The results are aggregated by device type.
 
@@ -52,7 +49,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <Action mustUnderstand="1">GetHistoricalKeywordPerformance</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -63,7 +60,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetHistoricalKeywordPerformanceRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <GetHistoricalKeywordPerformanceRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
       <Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:string>ValueHere</a1:string>
       </Keywords>
@@ -89,28 +86,28 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetHistoricalKeywordPerformanceResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordHistoricalPerformances xmlns:e378="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e378:KeywordHistoricalPerformance>
-          <e378:Keyword d4p1:nil="false">ValueHere</e378:Keyword>
-          <e378:KeywordKPIs d4p1:nil="false">
-            <e378:KeywordKPI>
-              <e378:Device d4p1:nil="false">ValueHere</e378:Device>
-              <e378:MatchType>ValueHere</e378:MatchType>
-              <e378:AdPosition>ValueHere</e378:AdPosition>
-              <e378:Clicks>ValueHere</e378:Clicks>
-              <e378:Impressions>ValueHere</e378:Impressions>
-              <e378:AverageCPC>ValueHere</e378:AverageCPC>
-              <e378:CTR>ValueHere</e378:CTR>
-              <e378:TotalCost>ValueHere</e378:TotalCost>
-              <e378:AverageBid>ValueHere</e378:AverageBid>
-            </e378:KeywordKPI>
-          </e378:KeywordKPIs>
-        </e378:KeywordHistoricalPerformance>
+    <GetHistoricalKeywordPerformanceResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <KeywordHistoricalPerformances xmlns:e1302="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1302:KeywordHistoricalPerformance>
+          <e1302:Keyword d4p1:nil="false">ValueHere</e1302:Keyword>
+          <e1302:KeywordKPIs d4p1:nil="false">
+            <e1302:KeywordKPI>
+              <e1302:Device d4p1:nil="false">ValueHere</e1302:Device>
+              <e1302:MatchType>ValueHere</e1302:MatchType>
+              <e1302:AdPosition>ValueHere</e1302:AdPosition>
+              <e1302:Clicks>ValueHere</e1302:Clicks>
+              <e1302:Impressions>ValueHere</e1302:Impressions>
+              <e1302:AverageCPC>ValueHere</e1302:AverageCPC>
+              <e1302:CTR>ValueHere</e1302:CTR>
+              <e1302:TotalCost>ValueHere</e1302:TotalCost>
+              <e1302:AverageBid>ValueHere</e1302:AverageBid>
+            </e1302:KeywordKPI>
+          </e1302:KeywordKPIs>
+        </e1302:KeywordHistoricalPerformance>
       </KeywordHistoricalPerformances>
     </GetHistoricalKeywordPerformanceResponse>
   </s:Body>
@@ -204,6 +201,6 @@ response=adinsight_service.GetHistoricalKeywordPerformance(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

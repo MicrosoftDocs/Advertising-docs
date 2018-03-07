@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # CompetitionLevel Value Set - Ad Insight
 Competition levels are defined by the number of advertisers bidding on this keyword, relative to all other keywords across Bing Ads. 
 
@@ -52,8 +49,8 @@ You can specify competition levels when calling the [GetKeywordIdeas](getkeyword
 |<a name="medium"></a>Medium|The competition level is medium.|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 
 ## Used By
 [CompetitionSearchParameter](competitionsearchparameter.md)  

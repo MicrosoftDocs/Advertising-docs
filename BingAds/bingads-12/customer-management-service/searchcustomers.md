@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SearchCustomers Service Operation - Customer Management
 Searches for customers that match a specified criteria.
 
@@ -24,7 +21,6 @@ The *SearchCustomersRequest* object defines the [body](#request-body) and [heade
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="applicationscope"></a>ApplicationScope|A value that determines whether to return results for advertising customers or publishing customers. If you do not specify the scope, the list may include both types of customers.|[ApplicationType](applicationtype.md)|
 |<a name="daterange"></a>DateRange|Determines the minimum and maximum customer creation date range.|[DateRange](daterange.md)|
 |<a name="ordering"></a>Ordering|Determines the order of results by the specified property of a customer.<br /><br /> You should only specify one *OrderBy* element in the array. Additional elements are not supported and will be ignored by the service.<br /><br />For this service operation, the following values are supported in the *Field* element of a *OrderBy* object:<br /><br />*Id* - The order is determined by the *Id*element of the returned [Customer](customer.md).<br /><br />*Name* - The order is determined by the *Name* element of the returned [Customer](customer.md).<br /><br />*Number* - The order is determined by the *Number* element of the returned [Customer](customer.md).|[OrderBy](orderby.md) array|
 |<a name="pageinfo"></a>PageInfo|Determines the index and size of  results per page.|[Paging](paging.md)|
@@ -50,7 +46,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">SearchCustomers</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -59,28 +55,27 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <SearchCustomersRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <ApplicationScope>ValueHere</ApplicationScope>
-      <Predicates xmlns:e333="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e333:Predicate>
-          <e333:Field i:nil="false">ValueHere</e333:Field>
-          <e333:Operator>ValueHere</e333:Operator>
-          <e333:Value i:nil="false">ValueHere</e333:Value>
-        </e333:Predicate>
+    <SearchCustomersRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+      <Predicates xmlns:e1247="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1247:Predicate>
+          <e1247:Field i:nil="false">ValueHere</e1247:Field>
+          <e1247:Operator>ValueHere</e1247:Operator>
+          <e1247:Value i:nil="false">ValueHere</e1247:Value>
+        </e1247:Predicate>
       </Predicates>
-      <DateRange xmlns:e334="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e334:MinDate i:nil="false">ValueHere</e334:MinDate>
-        <e334:MaxDate i:nil="false">ValueHere</e334:MaxDate>
+      <DateRange xmlns:e1248="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1248:MinDate i:nil="false">ValueHere</e1248:MinDate>
+        <e1248:MaxDate i:nil="false">ValueHere</e1248:MaxDate>
       </DateRange>
-      <Ordering xmlns:e335="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e335:OrderBy>
-          <e335:Field>ValueHere</e335:Field>
-          <e335:Order>ValueHere</e335:Order>
-        </e335:OrderBy>
+      <Ordering xmlns:e1249="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1249:OrderBy>
+          <e1249:Field>ValueHere</e1249:Field>
+          <e1249:Order>ValueHere</e1249:Order>
+        </e1249:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e336="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e336:Index>ValueHere</e336:Index>
-        <e336:Size>ValueHere</e336:Size>
+      <PageInfo xmlns:e1250="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1250:Index>ValueHere</e1250:Index>
+        <e1250:Size>ValueHere</e1250:Size>
       </PageInfo>
     </SearchCustomersRequest>
   </s:Body>
@@ -92,44 +87,44 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <SearchCustomersResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Customers xmlns:e337="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e337:Customer>
-          <e337:CustomerAddress d4p1:nil="false">
-            <e337:City d4p1:nil="false">ValueHere</e337:City>
-            <e337:CountryCode d4p1:nil="false">ValueHere</e337:CountryCode>
-            <e337:Id d4p1:nil="false">ValueHere</e337:Id>
-            <e337:Line1 d4p1:nil="false">ValueHere</e337:Line1>
-            <e337:Line2 d4p1:nil="false">ValueHere</e337:Line2>
-            <e337:Line3 d4p1:nil="false">ValueHere</e337:Line3>
-            <e337:Line4 d4p1:nil="false">ValueHere</e337:Line4>
-            <e337:PostalCode d4p1:nil="false">ValueHere</e337:PostalCode>
-            <e337:StateOrProvince d4p1:nil="false">ValueHere</e337:StateOrProvince>
-            <e337:TimeStamp d4p1:nil="false">ValueHere</e337:TimeStamp>
-          </e337:CustomerAddress>
-          <e337:CustomerFinancialStatus d4p1:nil="false">ValueHere</e337:CustomerFinancialStatus>
-          <e337:Id d4p1:nil="false">ValueHere</e337:Id>
-          <e337:Industry d4p1:nil="false">ValueHere</e337:Industry>
-          <e337:LastModifiedByUserId d4p1:nil="false">ValueHere</e337:LastModifiedByUserId>
-          <e337:LastModifiedTime d4p1:nil="false">ValueHere</e337:LastModifiedTime>
-          <e337:MarketCountry d4p1:nil="false">ValueHere</e337:MarketCountry>
-          <ForwardCompatibilityMap xmlns:e338="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e338:KeyValuePairOfstringstring>
-              <e338:key d4p1:nil="false">ValueHere</e338:key>
-              <e338:value d4p1:nil="false">ValueHere</e338:value>
-            </e338:KeyValuePairOfstringstring>
+    <SearchCustomersResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <Customers xmlns:e1251="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1251:Customer>
+          <e1251:CustomerAddress d4p1:nil="false">
+            <e1251:City d4p1:nil="false">ValueHere</e1251:City>
+            <e1251:CountryCode d4p1:nil="false">ValueHere</e1251:CountryCode>
+            <e1251:Id d4p1:nil="false">ValueHere</e1251:Id>
+            <e1251:Line1 d4p1:nil="false">ValueHere</e1251:Line1>
+            <e1251:Line2 d4p1:nil="false">ValueHere</e1251:Line2>
+            <e1251:Line3 d4p1:nil="false">ValueHere</e1251:Line3>
+            <e1251:Line4 d4p1:nil="false">ValueHere</e1251:Line4>
+            <e1251:PostalCode d4p1:nil="false">ValueHere</e1251:PostalCode>
+            <e1251:StateOrProvince d4p1:nil="false">ValueHere</e1251:StateOrProvince>
+            <e1251:TimeStamp d4p1:nil="false">ValueHere</e1251:TimeStamp>
+          </e1251:CustomerAddress>
+          <e1251:CustomerFinancialStatus d4p1:nil="false">ValueHere</e1251:CustomerFinancialStatus>
+          <e1251:Id d4p1:nil="false">ValueHere</e1251:Id>
+          <e1251:Industry d4p1:nil="false">ValueHere</e1251:Industry>
+          <e1251:LastModifiedByUserId d4p1:nil="false">ValueHere</e1251:LastModifiedByUserId>
+          <e1251:LastModifiedTime d4p1:nil="false">ValueHere</e1251:LastModifiedTime>
+          <e1251:MarketCountry d4p1:nil="false">ValueHere</e1251:MarketCountry>
+          <ForwardCompatibilityMap xmlns:e1252="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1252:KeyValuePairOfstringstring>
+              <e1252:key d4p1:nil="false">ValueHere</e1252:key>
+              <e1252:value d4p1:nil="false">ValueHere</e1252:value>
+            </e1252:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <e337:MarketLanguage d4p1:nil="false">ValueHere</e337:MarketLanguage>
-          <e337:Name d4p1:nil="false">ValueHere</e337:Name>
-          <e337:ServiceLevel d4p1:nil="false">ValueHere</e337:ServiceLevel>
-          <e337:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e337:CustomerLifeCycleStatus>
-          <e337:TimeStamp d4p1:nil="false">ValueHere</e337:TimeStamp>
-          <e337:Number d4p1:nil="false">ValueHere</e337:Number>
-        </e337:Customer>
+          <e1251:MarketLanguage d4p1:nil="false">ValueHere</e1251:MarketLanguage>
+          <e1251:Name d4p1:nil="false">ValueHere</e1251:Name>
+          <e1251:ServiceLevel d4p1:nil="false">ValueHere</e1251:ServiceLevel>
+          <e1251:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e1251:CustomerLifeCycleStatus>
+          <e1251:TimeStamp d4p1:nil="false">ValueHere</e1251:TimeStamp>
+          <e1251:Number d4p1:nil="false">ValueHere</e1251:Number>
+        </e1251:Customer>
       </Customers>
     </SearchCustomersResponse>
   </s:Body>
@@ -140,7 +135,6 @@ The following template shows the order of the [body](#response-body) and [header
 The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<SearchCustomersResponse> SearchCustomersAsync(
-	ApplicationType applicationScope,
 	IList<Predicate> predicates,
 	DateRange dateRange,
 	IList<OrderBy> ordering,
@@ -148,7 +142,6 @@ public async Task<SearchCustomersResponse> SearchCustomersAsync(
 {
 	var request = new SearchCustomersRequest
 	{
-		ApplicationScope = applicationScope,
 		Predicates = predicates,
 		DateRange = dateRange,
 		Ordering = ordering,
@@ -160,7 +153,6 @@ public async Task<SearchCustomersResponse> SearchCustomersAsync(
 ```
 ```java
 static SearchCustomersResponse searchCustomers(
-	ApplicationType applicationScope,
 	ArrayOfPredicate predicates,
 	DateRange dateRange,
 	ArrayOfOrderBy ordering,
@@ -168,7 +160,6 @@ static SearchCustomersResponse searchCustomers(
 {
 	SearchCustomersRequest request = new SearchCustomersRequest();
 
-	request.setApplicationScope(applicationScope);
 	request.setPredicates(predicates);
 	request.setDateRange(dateRange);
 	request.setOrdering(ordering);
@@ -179,7 +170,6 @@ static SearchCustomersResponse searchCustomers(
 ```
 ```php
 static function SearchCustomers(
-	$applicationScope,
 	$predicates,
 	$dateRange,
 	$ordering,
@@ -190,7 +180,6 @@ static function SearchCustomers(
 
 	$request = new SearchCustomersRequest();
 
-	$request->ApplicationScope = $applicationScope;
 	$request->Predicates = $predicates;
 	$request->DateRange = $dateRange;
 	$request->Ordering = $ordering;
@@ -201,7 +190,6 @@ static function SearchCustomers(
 ```
 ```python
 response=customermanagement_service.SearchCustomers(
-	ApplicationScope=ApplicationScope,
 	Predicates=Predicates,
 	DateRange=DateRange,
 	Ordering=Ordering,
@@ -209,6 +197,6 @@ response=customermanagement_service.SearchCustomers(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

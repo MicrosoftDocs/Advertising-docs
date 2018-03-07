@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains a list of keyword historical search counts for the corresponding device attribute.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SearchCountsByAttributes Data Object - Ad Insight
 Defines an object that contains a list of keyword historical search counts for the corresponding device attribute. Each search count in the list is aggregated by day, month, and year.
 
@@ -30,8 +27,8 @@ Defines an object that contains a list of keyword historical search counts for t
 |<a name="historicalsearchcounts"></a>HistoricalSearchCounts|An array of [HistoricalSearchCountPeriodic](historicalsearchcountperiodic.md) objects that contain a count of the number of times that the keyword was used in a search query. The array contains an item for each month in the specified date range. The items are ordered by calendar month.<br /><br />For each requested keyword that has no available data, the [HistoricalSearchCountPeriodic](historicalsearchcountperiodic.md) element will be nil.|[HistoricalSearchCountPeriodic](historicalsearchcountperiodic.md) array|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By
 [KeywordSearchCount](keywordsearchcount.md)  

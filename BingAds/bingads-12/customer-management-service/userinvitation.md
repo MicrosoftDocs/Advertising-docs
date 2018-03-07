@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a user invitation.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # UserInvitation Data Object - Customer Management
 Defines a user invitation. When the invitation is accepted, the user's Microsoft account is linked to the specified Bing Ads customer accounts.
 
@@ -29,8 +26,8 @@ For more information about user authentication, see [Authentication with OAuth](
     <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="CustomerId" type="xs:long" />
-    <xs:element minOccurs="0" name="Role" type="tns:UserRole" />
-    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q6:ArrayOflong" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="RoleId" type="xs:int" />
+    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q7:ArrayOflong" xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
     <xs:element minOccurs="0" name="Lcid" type="tns:LCID" />
   </xs:sequence>
@@ -49,11 +46,11 @@ For more information about user authentication, see [Authentication with OAuth](
 |<a name="id"></a>Id|A system generated unique identifier for the user invitation.<br/><br/>**Send:** Read-only|**long**|
 |<a name="lastname"></a>LastName|The last name of the user. The last name is limited to 40 characters.<br/><br/>**Send:** Required|**string**|
 |<a name="lcid"></a>Lcid|The locale to use when sending correspondence to the user by email or postal mail. The default is EnglishUS.<br/><br/>**Send:** Required|[LCID](lcid.md)|
-|<a name="role"></a>Role|The user role, which determines the level of access that the user has to the accounts specified in the AccountIds element.<br/><br/>**Send:** Required|[UserRole](userrole.md)|
+|<a name="roleid"></a>RoleId|The role that the user has for each customer or list of accounts.<br /><br />Possible values include the following:<br />16 - The user has the **Advertiser Campaign Manager** role.<br />33 - The user has the **Aggregator** role.<br />41 - The user has the **Super Admin** role.<br />100 - The user has the **ClientViewer** role.<br />203 - The user has the **Standard** role.<br /><br />For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).|**int**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [SearchUserInvitations](searchuserinvitations.md)  

@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetKeywordLocations Service Operation - Ad Insight
 Gets the geographical locations of users who have searched for the specified keywords.
 
@@ -52,7 +49,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <Action mustUnderstand="1">GetKeywordLocations</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -63,7 +60,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetKeywordLocationsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <GetKeywordLocationsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
       <Keywords i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:string>ValueHere</a1:string>
       </Keywords>
@@ -85,22 +82,22 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetKeywordLocationsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <KeywordLocationResult xmlns:e395="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e395:KeywordLocationResult>
-          <e395:Keyword d4p1:nil="false">ValueHere</e395:Keyword>
-          <e395:KeywordLocations d4p1:nil="false">
-            <e395:KeywordLocation>
-              <e395:Device d4p1:nil="false">ValueHere</e395:Device>
-              <e395:Location d4p1:nil="false">ValueHere</e395:Location>
-              <e395:Percentage>ValueHere</e395:Percentage>
-            </e395:KeywordLocation>
-          </e395:KeywordLocations>
-        </e395:KeywordLocationResult>
+    <GetKeywordLocationsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <KeywordLocationResult xmlns:e1319="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1319:KeywordLocationResult>
+          <e1319:Keyword d4p1:nil="false">ValueHere</e1319:Keyword>
+          <e1319:KeywordLocations d4p1:nil="false">
+            <e1319:KeywordLocation>
+              <e1319:Device d4p1:nil="false">ValueHere</e1319:Device>
+              <e1319:Location d4p1:nil="false">ValueHere</e1319:Location>
+              <e1319:Percentage>ValueHere</e1319:Percentage>
+            </e1319:KeywordLocation>
+          </e1319:KeywordLocations>
+        </e1319:KeywordLocationResult>
       </KeywordLocationResult>
     </GetKeywordLocationsResponse>
   </s:Body>
@@ -194,6 +191,6 @@ response=adinsight_service.GetKeywordLocations(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

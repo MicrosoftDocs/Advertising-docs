@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains the identifier of a keyword and the estimated search results position for the keyword and match type.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # KeywordIdEstimatedPosition Data Object - Ad Insight
 Defines an object that contains the identifier of a keyword and the estimated search results position for the keyword and match type.
 
@@ -33,8 +30,8 @@ Defines an object that contains the identifier of a keyword and the estimated se
 |<a name="keywordid"></a>KeywordId|The identifier of the keyword to which the estimated position applies.|**long**|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By
 [GetEstimatedPositionByKeywordIds](getestimatedpositionbykeywordids.md)  

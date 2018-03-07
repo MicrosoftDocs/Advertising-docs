@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SearchClientLinks Service Operation - Customer Management
 This feature is not supported in sandbox.Searches for the client links for the customer of the current authenticated user, filtered by the search criteria. The operation returns the most recent link for each unique combination of agency customer and client account. For more information about the client link lifecycle, see [Link to Client Accounts](../guides/management-model-agencies.md#clientlink).
 
@@ -52,7 +49,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">SearchClientLinks</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -61,23 +58,23 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <SearchClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Predicates xmlns:e328="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e328:Predicate>
-          <e328:Field i:nil="false">ValueHere</e328:Field>
-          <e328:Operator>ValueHere</e328:Operator>
-          <e328:Value i:nil="false">ValueHere</e328:Value>
-        </e328:Predicate>
+    <SearchClientLinksRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+      <Predicates xmlns:e1242="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1242:Predicate>
+          <e1242:Field i:nil="false">ValueHere</e1242:Field>
+          <e1242:Operator>ValueHere</e1242:Operator>
+          <e1242:Value i:nil="false">ValueHere</e1242:Value>
+        </e1242:Predicate>
       </Predicates>
-      <Ordering xmlns:e329="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e329:OrderBy>
-          <e329:Field>ValueHere</e329:Field>
-          <e329:Order>ValueHere</e329:Order>
-        </e329:OrderBy>
+      <Ordering xmlns:e1243="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1243:OrderBy>
+          <e1243:Field>ValueHere</e1243:Field>
+          <e1243:Order>ValueHere</e1243:Order>
+        </e1243:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e330="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e330:Index>ValueHere</e330:Index>
-        <e330:Size>ValueHere</e330:Size>
+      <PageInfo xmlns:e1244="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1244:Index>ValueHere</e1244:Index>
+        <e1244:Size>ValueHere</e1244:Size>
       </PageInfo>
     </SearchClientLinksRequest>
   </s:Body>
@@ -89,36 +86,36 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <SearchClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <ClientLinks xmlns:e331="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e331:ClientLink>
-          <e331:ClientAccountId d4p1:nil="false">ValueHere</e331:ClientAccountId>
-          <e331:ClientAccountNumber d4p1:nil="false">ValueHere</e331:ClientAccountNumber>
-          <e331:ManagingCustomerId d4p1:nil="false">ValueHere</e331:ManagingCustomerId>
-          <e331:ManagingCustomerNumber d4p1:nil="false">ValueHere</e331:ManagingCustomerNumber>
-          <e331:Note d4p1:nil="false">ValueHere</e331:Note>
-          <e331:Name d4p1:nil="false">ValueHere</e331:Name>
-          <e331:InviterEmail d4p1:nil="false">ValueHere</e331:InviterEmail>
-          <e331:InviterName d4p1:nil="false">ValueHere</e331:InviterName>
-          <e331:InviterPhone d4p1:nil="false">ValueHere</e331:InviterPhone>
-          <e331:IsBillToClient>ValueHere</e331:IsBillToClient>
-          <e331:StartDate d4p1:nil="false">ValueHere</e331:StartDate>
-          <e331:Status d4p1:nil="false">ValueHere</e331:Status>
-          <e331:SuppressNotification>ValueHere</e331:SuppressNotification>
-          <e331:LastModifiedDateTime>ValueHere</e331:LastModifiedDateTime>
-          <e331:LastModifiedByUserId>ValueHere</e331:LastModifiedByUserId>
-          <e331:Timestamp d4p1:nil="false">ValueHere</e331:Timestamp>
-          <ForwardCompatibilityMap xmlns:e332="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e332:KeyValuePairOfstringstring>
-              <e332:key d4p1:nil="false">ValueHere</e332:key>
-              <e332:value d4p1:nil="false">ValueHere</e332:value>
-            </e332:KeyValuePairOfstringstring>
+    <SearchClientLinksResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <ClientLinks xmlns:e1245="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1245:ClientLink>
+          <e1245:ClientAccountId d4p1:nil="false">ValueHere</e1245:ClientAccountId>
+          <e1245:ClientAccountNumber d4p1:nil="false">ValueHere</e1245:ClientAccountNumber>
+          <e1245:ManagingCustomerId d4p1:nil="false">ValueHere</e1245:ManagingCustomerId>
+          <e1245:ManagingCustomerNumber d4p1:nil="false">ValueHere</e1245:ManagingCustomerNumber>
+          <e1245:Note d4p1:nil="false">ValueHere</e1245:Note>
+          <e1245:Name d4p1:nil="false">ValueHere</e1245:Name>
+          <e1245:InviterEmail d4p1:nil="false">ValueHere</e1245:InviterEmail>
+          <e1245:InviterName d4p1:nil="false">ValueHere</e1245:InviterName>
+          <e1245:InviterPhone d4p1:nil="false">ValueHere</e1245:InviterPhone>
+          <e1245:IsBillToClient>ValueHere</e1245:IsBillToClient>
+          <e1245:StartDate d4p1:nil="false">ValueHere</e1245:StartDate>
+          <e1245:Status d4p1:nil="false">ValueHere</e1245:Status>
+          <e1245:SuppressNotification>ValueHere</e1245:SuppressNotification>
+          <e1245:LastModifiedDateTime>ValueHere</e1245:LastModifiedDateTime>
+          <e1245:LastModifiedByUserId>ValueHere</e1245:LastModifiedByUserId>
+          <e1245:Timestamp d4p1:nil="false">ValueHere</e1245:Timestamp>
+          <ForwardCompatibilityMap xmlns:e1246="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1246:KeyValuePairOfstringstring>
+              <e1246:key d4p1:nil="false">ValueHere</e1246:key>
+              <e1246:value d4p1:nil="false">ValueHere</e1246:value>
+            </e1246:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-        </e331:ClientLink>
+        </e1245:ClientLink>
       </ClientLinks>
     </SearchClientLinksResponse>
   </s:Body>
@@ -184,6 +181,6 @@ response=customermanagement_service.SearchClientLinks(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

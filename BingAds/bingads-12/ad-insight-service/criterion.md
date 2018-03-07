@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: This is the base class from which keyword planner criterion objects derive.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Criterion Data Object - Ad Insight
 This is the base class from which keyword planner criterion objects derive. 
 
@@ -28,8 +25,8 @@ Do not try to instantiate a [Criterion](criterion.md). You can create one or mor
 ## <a name="elements"></a>Elements
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions  
 
 ## Used By
 [CampaignEstimator](campaignestimator.md)  

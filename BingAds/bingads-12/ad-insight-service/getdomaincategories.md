@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetDomainCategories Service Operation - Ad Insight
 Gets the list of categories available for the website domain and language.
 
@@ -48,7 +45,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <Action mustUnderstand="1">GetDomainCategories</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -59,7 +56,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetDomainCategoriesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <GetDomainCategoriesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
       <CategoryName i:nil="false">ValueHere</CategoryName>
       <DomainName i:nil="false">ValueHere</DomainName>
       <Language i:nil="false">ValueHere</Language>
@@ -73,17 +70,17 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetDomainCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Categories xmlns:e371="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e371:DomainCategory>
-          <e371:Bid>ValueHere</e371:Bid>
-          <e371:CategoryName d4p1:nil="false">ValueHere</e371:CategoryName>
-          <e371:Coverage>ValueHere</e371:Coverage>
-        </e371:DomainCategory>
+    <GetDomainCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <Categories xmlns:e1295="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1295:DomainCategory>
+          <e1295:Bid>ValueHere</e1295:Bid>
+          <e1295:CategoryName d4p1:nil="false">ValueHere</e1295:CategoryName>
+          <e1295:Coverage>ValueHere</e1295:Coverage>
+        </e1295:DomainCategory>
       </Categories>
     </GetDomainCategoriesResponse>
   </s:Body>
@@ -149,6 +146,6 @@ response=adinsight_service.GetDomainCategories(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

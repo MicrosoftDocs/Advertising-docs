@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a condition that determines whether a product is selected from a customer's Bing Merchant Center catalog file.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ProductCondition Data Object - Campaign Management
 Defines a condition that determines whether a product is selected from a customer's Bing Merchant Center catalog file.
 

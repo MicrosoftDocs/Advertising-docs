@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a customer.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Customer Data Object - Customer Management
 Defines a customer.
 
@@ -54,8 +51,8 @@ Defines a customer.
 |<a name="timestamp"></a>TimeStamp|A time-stamp value that the system uses internally to reconcile updates when you call the [UpdateCustomer](updatecustomer.md) and [DeleteCustomer](deletecustomer.md) operations.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**base64Binary**|
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11/Entities  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
 [GetCustomer](getcustomer.md)  

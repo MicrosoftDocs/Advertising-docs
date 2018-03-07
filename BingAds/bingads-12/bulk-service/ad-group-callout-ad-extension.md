@@ -8,9 +8,6 @@ description: Describes the Ad Group Callout Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Ad Group Callout Ad Extension Record - Bulk
 Defines an association record between an [Ad Group](ad-group.md) and a [Callout Ad Extension](callout-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or callout ad extension, use the [Ad Group](ad-group.md) or [Callout Ad Extension](callout-ad-extension.md) record.
 	

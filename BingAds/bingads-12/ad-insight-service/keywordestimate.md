@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: A suggested keyword with minimum and maximum traffic estimates.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # KeywordEstimate Data Object - Ad Insight
 A suggested keyword with minimum and maximum traffic estimates. Traffic estimates include average CPC, average position, clicks, CTR, impressions, and total cost.
 
@@ -19,7 +16,7 @@ A suggested keyword with minimum and maximum traffic estimates. Traffic estimate
 ```xml
 <xs:complexType name="KeywordEstimate" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element minOccurs="0" name="Keyword" nillable="true" type="q9:Keyword" xmlns:q9="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Common" />
+    <xs:element minOccurs="0" name="Keyword" nillable="true" type="q7:Keyword" xmlns:q7="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
     <xs:element minOccurs="0" name="Maximum" nillable="true" type="tns:TrafficEstimate" />
     <xs:element minOccurs="0" name="Minimum" nillable="true" type="tns:TrafficEstimate" />
   </xs:sequence>
@@ -35,8 +32,8 @@ A suggested keyword with minimum and maximum traffic estimates. Traffic estimate
 |<a name="minimum"></a>Minimum|The minimum traffic estimate.<br/><br/>Traffic estimates include average CPC, average position, clicks, CTR, impressions, and total cost.|[TrafficEstimate](trafficestimate.md)|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By
 [AdGroupEstimate](adgroupestimate.md)  

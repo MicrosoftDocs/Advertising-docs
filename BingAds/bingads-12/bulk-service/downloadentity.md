@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the entities that may be downloaded and uploaded in bulk.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # DownloadEntity Value Set - Bulk
 Defines the entities that may be downloaded and uploaded in bulk.
 

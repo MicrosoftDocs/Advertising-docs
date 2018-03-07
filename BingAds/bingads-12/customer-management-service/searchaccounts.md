@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # SearchAccounts Service Operation - Customer Management
 Searches for accounts that match a specified criteria.
 
@@ -38,7 +35,7 @@ The *SearchAccountsResponse* object defines the [body](#response-body) and [head
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accounts"></a>Accounts|A  list of accounts that meet the specified criteria.|[Account](account.md) array|
+|<a name="accounts"></a>Accounts|A  list of accounts that meet the specified criteria.|[AdvertiserAccount](advertiseraccount.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -48,7 +45,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <Action mustUnderstand="1">SearchAccounts</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -57,23 +54,23 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <SearchAccountsRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Predicates xmlns:e322="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e322:Predicate>
-          <e322:Field i:nil="false">ValueHere</e322:Field>
-          <e322:Operator>ValueHere</e322:Operator>
-          <e322:Value i:nil="false">ValueHere</e322:Value>
-        </e322:Predicate>
+    <SearchAccountsRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+      <Predicates xmlns:e1236="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1236:Predicate>
+          <e1236:Field i:nil="false">ValueHere</e1236:Field>
+          <e1236:Operator>ValueHere</e1236:Operator>
+          <e1236:Value i:nil="false">ValueHere</e1236:Value>
+        </e1236:Predicate>
       </Predicates>
-      <Ordering xmlns:e323="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e323:OrderBy>
-          <e323:Field>ValueHere</e323:Field>
-          <e323:Order>ValueHere</e323:Order>
-        </e323:OrderBy>
+      <Ordering xmlns:e1237="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1237:OrderBy>
+          <e1237:Field>ValueHere</e1237:Field>
+          <e1237:Order>ValueHere</e1237:Order>
+        </e1237:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e324="https://bingads.microsoft.com/Customer/v11/Entities" i:nil="false">
-        <e324:Index>ValueHere</e324:Index>
-        <e324:Size>ValueHere</e324:Size>
+      <PageInfo xmlns:e1238="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e1238:Index>ValueHere</e1238:Index>
+        <e1238:Size>ValueHere</e1238:Size>
       </PageInfo>
     </SearchAccountsRequest>
   </s:Body>
@@ -85,67 +82,66 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/Customer/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/Customer/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <SearchAccountsResponse xmlns="https://bingads.microsoft.com/Customer/v11">
-      <Accounts xmlns:e325="https://bingads.microsoft.com/Customer/v11/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e325:Account d4p1:type="-- derived type specified here with the appropriate prefix --">
-          <e325:AccountType>ValueHere</e325:AccountType>
-          <e325:BillToCustomerId d4p1:nil="false">ValueHere</e325:BillToCustomerId>
-          <e325:CountryCode d4p1:nil="false">ValueHere</e325:CountryCode>
-          <e325:CurrencyType d4p1:nil="false">ValueHere</e325:CurrencyType>
-          <e325:AccountFinancialStatus d4p1:nil="false">ValueHere</e325:AccountFinancialStatus>
-          <e325:Id d4p1:nil="false">ValueHere</e325:Id>
-          <e325:Language d4p1:nil="false">ValueHere</e325:Language>
-          <ForwardCompatibilityMap xmlns:e326="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e326:KeyValuePairOfstringstring>
-              <e326:key d4p1:nil="false">ValueHere</e326:key>
-              <e326:value d4p1:nil="false">ValueHere</e326:value>
-            </e326:KeyValuePairOfstringstring>
+    <SearchAccountsResponse xmlns="https://bingads.microsoft.com/Customer/v12">
+      <Accounts xmlns:e1239="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1239:AdvertiserAccount>
+          <e1239:BillToCustomerId d4p1:nil="false">ValueHere</e1239:BillToCustomerId>
+          <e1239:CountryCode d4p1:nil="false">ValueHere</e1239:CountryCode>
+          <e1239:CurrencyCode d4p1:nil="false">ValueHere</e1239:CurrencyCode>
+          <e1239:AccountFinancialStatus d4p1:nil="false">ValueHere</e1239:AccountFinancialStatus>
+          <e1239:Id d4p1:nil="false">ValueHere</e1239:Id>
+          <e1239:Language d4p1:nil="false">ValueHere</e1239:Language>
+          <e1239:LastModifiedByUserId d4p1:nil="false">ValueHere</e1239:LastModifiedByUserId>
+          <e1239:LastModifiedTime d4p1:nil="false">ValueHere</e1239:LastModifiedTime>
+          <e1239:Name d4p1:nil="false">ValueHere</e1239:Name>
+          <e1239:Number d4p1:nil="false">ValueHere</e1239:Number>
+          <e1239:ParentCustomerId>ValueHere</e1239:ParentCustomerId>
+          <e1239:PaymentMethodId d4p1:nil="false">ValueHere</e1239:PaymentMethodId>
+          <e1239:PaymentMethodType d4p1:nil="false">ValueHere</e1239:PaymentMethodType>
+          <e1239:PrimaryUserId d4p1:nil="false">ValueHere</e1239:PrimaryUserId>
+          <e1239:AccountLifeCycleStatus d4p1:nil="false">ValueHere</e1239:AccountLifeCycleStatus>
+          <e1239:TimeStamp d4p1:nil="false">ValueHere</e1239:TimeStamp>
+          <e1239:TimeZone d4p1:nil="false">ValueHere</e1239:TimeZone>
+          <e1239:PauseReason d4p1:nil="false">ValueHere</e1239:PauseReason>
+          <ForwardCompatibilityMap xmlns:e1240="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1240:KeyValuePairOfstringstring>
+              <e1240:key d4p1:nil="false">ValueHere</e1240:key>
+              <e1240:value d4p1:nil="false">ValueHere</e1240:value>
+            </e1240:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <e325:LastModifiedByUserId d4p1:nil="false">ValueHere</e325:LastModifiedByUserId>
-          <e325:LastModifiedTime d4p1:nil="false">ValueHere</e325:LastModifiedTime>
-          <e325:Name d4p1:nil="false">ValueHere</e325:Name>
-          <e325:Number d4p1:nil="false">ValueHere</e325:Number>
-          <e325:ParentCustomerId>ValueHere</e325:ParentCustomerId>
-          <e325:PaymentMethodId d4p1:nil="false">ValueHere</e325:PaymentMethodId>
-          <e325:PaymentMethodType d4p1:nil="false">ValueHere</e325:PaymentMethodType>
-          <e325:PrimaryUserId d4p1:nil="false">ValueHere</e325:PrimaryUserId>
-          <e325:AccountLifeCycleStatus d4p1:nil="false">ValueHere</e325:AccountLifeCycleStatus>
-          <e325:TimeStamp d4p1:nil="false">ValueHere</e325:TimeStamp>
-          <e325:TimeZone d4p1:nil="false">ValueHere</e325:TimeZone>
-          <e325:PauseReason d4p1:nil="false">ValueHere</e325:PauseReason>
-          <!--These fields are applicable if the derived type attribute is set to AdvertiserAccount-->
-          <e325:LinkedAgencies d4p1:nil="false">
-            <e325:CustomerInfo>
-              <e325:Id d4p1:nil="false">ValueHere</e325:Id>
-              <e325:Name d4p1:nil="false">ValueHere</e325:Name>
-            </e325:CustomerInfo>
-          </e325:LinkedAgencies>
-          <e325:SalesHouseCustomerId d4p1:nil="false">ValueHere</e325:SalesHouseCustomerId>
-          <TaxInformation xmlns:e327="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e327:KeyValuePairOfstringstring>
-              <e327:key d4p1:nil="false">ValueHere</e327:key>
-              <e327:value d4p1:nil="false">ValueHere</e327:value>
-            </e327:KeyValuePairOfstringstring>
+          <e1239:LinkedAgencies d4p1:nil="false">
+            <e1239:CustomerInfo>
+              <e1239:Id d4p1:nil="false">ValueHere</e1239:Id>
+              <e1239:Name d4p1:nil="false">ValueHere</e1239:Name>
+            </e1239:CustomerInfo>
+          </e1239:LinkedAgencies>
+          <e1239:SalesHouseCustomerId d4p1:nil="false">ValueHere</e1239:SalesHouseCustomerId>
+          <TaxInformation xmlns:e1241="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1241:KeyValuePairOfstringstring>
+              <e1241:key d4p1:nil="false">ValueHere</e1241:key>
+              <e1241:value d4p1:nil="false">ValueHere</e1241:value>
+            </e1241:KeyValuePairOfstringstring>
           </TaxInformation>
-          <e325:BackUpPaymentInstrumentId d4p1:nil="false">ValueHere</e325:BackUpPaymentInstrumentId>
-          <e325:BillingThresholdAmount d4p1:nil="false">ValueHere</e325:BillingThresholdAmount>
-          <e325:BusinessAddress d4p1:nil="false">
-            <e325:City d4p1:nil="false">ValueHere</e325:City>
-            <e325:CountryCode d4p1:nil="false">ValueHere</e325:CountryCode>
-            <e325:Id d4p1:nil="false">ValueHere</e325:Id>
-            <e325:Line1 d4p1:nil="false">ValueHere</e325:Line1>
-            <e325:Line2 d4p1:nil="false">ValueHere</e325:Line2>
-            <e325:Line3 d4p1:nil="false">ValueHere</e325:Line3>
-            <e325:Line4 d4p1:nil="false">ValueHere</e325:Line4>
-            <e325:PostalCode d4p1:nil="false">ValueHere</e325:PostalCode>
-            <e325:StateOrProvince d4p1:nil="false">ValueHere</e325:StateOrProvince>
-            <e325:TimeStamp d4p1:nil="false">ValueHere</e325:TimeStamp>
-          </e325:BusinessAddress>
-        </e325:Account>
+          <e1239:BackUpPaymentInstrumentId d4p1:nil="false">ValueHere</e1239:BackUpPaymentInstrumentId>
+          <e1239:BillingThresholdAmount d4p1:nil="false">ValueHere</e1239:BillingThresholdAmount>
+          <e1239:BusinessAddress d4p1:nil="false">
+            <e1239:City d4p1:nil="false">ValueHere</e1239:City>
+            <e1239:CountryCode d4p1:nil="false">ValueHere</e1239:CountryCode>
+            <e1239:Id d4p1:nil="false">ValueHere</e1239:Id>
+            <e1239:Line1 d4p1:nil="false">ValueHere</e1239:Line1>
+            <e1239:Line2 d4p1:nil="false">ValueHere</e1239:Line2>
+            <e1239:Line3 d4p1:nil="false">ValueHere</e1239:Line3>
+            <e1239:Line4 d4p1:nil="false">ValueHere</e1239:Line4>
+            <e1239:PostalCode d4p1:nil="false">ValueHere</e1239:PostalCode>
+            <e1239:StateOrProvince d4p1:nil="false">ValueHere</e1239:StateOrProvince>
+            <e1239:TimeStamp d4p1:nil="false">ValueHere</e1239:TimeStamp>
+          </e1239:BusinessAddress>
+          <e1239:AutoTagType d4p1:nil="false">ValueHere</e1239:AutoTagType>
+        </e1239:AdvertiserAccount>
       </Accounts>
     </SearchAccountsResponse>
   </s:Body>
@@ -211,6 +207,6 @@ response=customermanagement_service.SearchAccounts(
 ```
 
 ## Requirements
-Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/Customer/v11  
+Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/Customer/v12  
 

@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetKeywordOpportunities Service Operation - Ad Insight
 Gets a list of keyword suggestions that are relevant to the specified ad group. The keyword suggestion also includes a suggested bid value.
 
@@ -48,7 +45,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <Action mustUnderstand="1">GetKeywordOpportunities</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -59,7 +56,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetKeywordOpportunitiesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+    <GetKeywordOpportunitiesRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
       <AdGroupId i:nil="false">ValueHere</AdGroupId>
       <CampaignId i:nil="false">ValueHere</CampaignId>
       <OpportunityType>ValueHere</OpportunityType>
@@ -73,43 +70,43 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
+  <s:Header xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetKeywordOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V11">
-      <Opportunities xmlns:e396="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e396:KeywordOpportunity d4p1:type="-- derived type specified here with the appropriate prefix --">
-          <e396:AdGroupId>ValueHere</e396:AdGroupId>
-          <e396:AdGroupName d4p1:nil="false">ValueHere</e396:AdGroupName>
-          <e396:CampaignId>ValueHere</e396:CampaignId>
-          <e396:CampaignName d4p1:nil="false">ValueHere</e396:CampaignName>
-          <e396:Competition>ValueHere</e396:Competition>
-          <e396:EstimatedIncreaseInClicks>ValueHere</e396:EstimatedIncreaseInClicks>
-          <e396:EstimatedIncreaseInCost>ValueHere</e396:EstimatedIncreaseInCost>
-          <e396:EstimatedIncreaseInImpressions>ValueHere</e396:EstimatedIncreaseInImpressions>
-          <e396:MatchType>ValueHere</e396:MatchType>
-          <e396:MonthlySearches>ValueHere</e396:MonthlySearches>
-          <e396:SuggestedBid>ValueHere</e396:SuggestedBid>
-          <e396:SuggestedKeyword d4p1:nil="false">ValueHere</e396:SuggestedKeyword>
+    <GetKeywordOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
+      <Opportunities xmlns:e1320="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1320:KeywordOpportunity d4p1:type="-- derived type specified here with the appropriate prefix --">
+          <e1320:AdGroupId>ValueHere</e1320:AdGroupId>
+          <e1320:AdGroupName d4p1:nil="false">ValueHere</e1320:AdGroupName>
+          <e1320:CampaignId>ValueHere</e1320:CampaignId>
+          <e1320:CampaignName d4p1:nil="false">ValueHere</e1320:CampaignName>
+          <e1320:Competition>ValueHere</e1320:Competition>
+          <e1320:EstimatedIncreaseInClicks>ValueHere</e1320:EstimatedIncreaseInClicks>
+          <e1320:EstimatedIncreaseInCost>ValueHere</e1320:EstimatedIncreaseInCost>
+          <e1320:EstimatedIncreaseInImpressions>ValueHere</e1320:EstimatedIncreaseInImpressions>
+          <e1320:MatchType>ValueHere</e1320:MatchType>
+          <e1320:MonthlySearches>ValueHere</e1320:MonthlySearches>
+          <e1320:SuggestedBid>ValueHere</e1320:SuggestedBid>
+          <e1320:SuggestedKeyword d4p1:nil="false">ValueHere</e1320:SuggestedKeyword>
           <!--These fields are applicable if the derived type attribute is set to BroadMatchKeywordOpportunity-->
-          <e396:AverageCPC>ValueHere</e396:AverageCPC>
-          <e396:AverageCTR>ValueHere</e396:AverageCTR>
-          <e396:ClickShare>ValueHere</e396:ClickShare>
-          <e396:ImpressionShare>ValueHere</e396:ImpressionShare>
-          <e396:ReferenceKeywordBid>ValueHere</e396:ReferenceKeywordBid>
-          <e396:ReferenceKeywordId>ValueHere</e396:ReferenceKeywordId>
-          <e396:ReferenceKeywordMatchType>ValueHere</e396:ReferenceKeywordMatchType>
-          <e396:SearchQueryKPIs d4p1:nil="false">
-            <e396:BroadMatchSearchQueryKPI>
-              <e396:AverageCTR>ValueHere</e396:AverageCTR>
-              <e396:Clicks>ValueHere</e396:Clicks>
-              <e396:Impressions>ValueHere</e396:Impressions>
-              <e396:SRPV>ValueHere</e396:SRPV>
-              <e396:SearchQuery d4p1:nil="false">ValueHere</e396:SearchQuery>
-            </e396:BroadMatchSearchQueryKPI>
-          </e396:SearchQueryKPIs>
-        </e396:KeywordOpportunity>
+          <e1320:AverageCPC>ValueHere</e1320:AverageCPC>
+          <e1320:AverageCTR>ValueHere</e1320:AverageCTR>
+          <e1320:ClickShare>ValueHere</e1320:ClickShare>
+          <e1320:ImpressionShare>ValueHere</e1320:ImpressionShare>
+          <e1320:ReferenceKeywordBid>ValueHere</e1320:ReferenceKeywordBid>
+          <e1320:ReferenceKeywordId>ValueHere</e1320:ReferenceKeywordId>
+          <e1320:ReferenceKeywordMatchType>ValueHere</e1320:ReferenceKeywordMatchType>
+          <e1320:SearchQueryKPIs d4p1:nil="false">
+            <e1320:BroadMatchSearchQueryKPI>
+              <e1320:AverageCTR>ValueHere</e1320:AverageCTR>
+              <e1320:Clicks>ValueHere</e1320:Clicks>
+              <e1320:Impressions>ValueHere</e1320:Impressions>
+              <e1320:SRPV>ValueHere</e1320:SRPV>
+              <e1320:SearchQuery d4p1:nil="false">ValueHere</e1320:SearchQuery>
+            </e1320:BroadMatchSearchQueryKPI>
+          </e1320:SearchQueryKPIs>
+        </e1320:KeywordOpportunity>
       </Opportunities>
     </GetKeywordOpportunitiesResponse>
   </s:Body>
@@ -175,6 +172,6 @@ response=adinsight_service.GetKeywordOpportunities(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

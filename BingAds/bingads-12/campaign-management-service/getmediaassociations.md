@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # GetMediaAssociations Service Operation - Campaign Management
 Gets the media associations of the specified entity type from an account's media library.
 

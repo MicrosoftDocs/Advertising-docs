@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the campaign status values that you can use to filter the report data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # CampaignStatusReportFilter Value Set - Reporting
 Defines the campaign status values that you can use to filter the report data. These values are also used as column values in reports that include campaign status, such as the campaign performance report.
 
@@ -48,8 +45,8 @@ Defines the campaign status values that you can use to filter the report data. T
 |<a name="suspended"></a>Suspended|The report will contain campaigns that have been suspended.|
 
 ## Requirements
-Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
-Namespace: https\://bingads.microsoft.com/Reporting/v11  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
 [AdExtensionByAdReportFilter](adextensionbyadreportfilter.md)  

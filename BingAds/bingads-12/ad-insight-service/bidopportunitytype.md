@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible bid opportunity types you can request when calling GetBidOpportunities.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # BidOpportunityType Value Set - Ad Insight
 Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](getbidopportunities.md).
 
@@ -36,8 +33,8 @@ Defines the possible bid opportunity types you can request when calling [GetBidO
 |<a name="mainline1"></a>MainLine1|The bid opportunity may lead to ads shown in the first mainline position of search results.|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V11  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 
 ## Used By
 [GetBidOpportunities](getbidopportunities.md)  

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: The location search parameter filter that you can include when requesting keyword ideas.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # LocationSearchParameter Data Object - Ad Insight
 The location search parameter filter that you can include when requesting keyword ideas.
 
@@ -20,7 +17,7 @@ If you do not include the location search parameter when calling [GetKeywordIdea
   <xs:complexContent mixed="false">
     <xs:extension base="tns:SearchParameter">
       <xs:sequence>
-        <xs:element minOccurs="0" name="Locations" nillable="true" type="q4:ArrayOfLocationCriterion" xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.Criterions" />
+        <xs:element minOccurs="0" name="Locations" nillable="true" type="q4:ArrayOfLocationCriterion" xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -34,6 +31,6 @@ If you do not include the location search parameter when calling [GetKeywordIdea
 |<a name="locations"></a>Locations|The location criterion list for the returned keyword ideas.|[LocationCriterion](locationcriterion.md) array|
 
 ## Requirements
-Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V11.Entity.SearchParameters  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.SearchParameters  
 

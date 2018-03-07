@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the date range values for the requested performance data in a bulk download.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # ReportTimePeriod Value Set - Bulk
 Defines the date range values for the requested performance data in a bulk download.
 

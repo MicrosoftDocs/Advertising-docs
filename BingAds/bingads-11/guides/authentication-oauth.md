@@ -62,7 +62,7 @@ Before you can manage authentication for users of your Bing Ads application, you
 
     ![Live SDK support](media/live-sdk-support.png "Live SDK support")
 
-6.  Save your changes and take note of your *Application Id*. You will use it as the CLIENT_ID in the OAuth grant flow. Also take note of your client secret and redirect URI if you registered a web application. You will also use these values to manage authentication with OAuth.
+6.  Save your changes and take note of your *Application Id*. You will use it as the CLIENT_ID in the OAuth grant flow. Also take note of your *Password* and redirect URI if you registered a web application. The passsword will be used as the CLIENT_SECRET in the OAuth grant flow. 
 
 ## <a name="managingoauthtokens"></a>Managing OAuth Tokens
 Once you have registered your application you can manage the access token for a Microsoft Account user already linked or registered with Bing Ads. For one time or short term access to manage a user's accounts, see [Implicit Grant Flow](#implicit). The access token is short lived and will expire in minutes or hours as determined by the authentication service. Additionally, the Microsoft Account user may change their password or remove permissions for your application to authenticate on their behalf. For repeat or long term access to manage a user's accounts, see [Authorization Code Grant Flow](#authorizationcode).
