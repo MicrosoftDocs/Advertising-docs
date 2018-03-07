@@ -19,9 +19,9 @@ Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. Th
 <a name="authenticatingcredentials"/> 
 ## Authenticating your credentials
 
-The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Authentication with OAuth](../guides/authentication-oauth.md). 
+The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Authentication with OAuth](/bingads/guides/authentication-oauth). 
 
-You *can* use the [Bing Ads SDK](../guides/client-libraries.md) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](../guides/get-started-csharp.md) | [Java](../guides/get-started-java.md) | [Python](../guides/get-started-python.md). (You should only use the SDK to get the access token if you're using the SDK for Bing Ads campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
+You *can* use the [Bing Ads SDK](../guides/client-libraries) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](../guides/get-started-csharp) | [Java](../guides/get-started-java) | [Python](../guides/get-started-python). (You should only use the SDK to get the access token if you're using the SDK for Bing Ads campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
 
 If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md) for an example OAuth implementation.
 
