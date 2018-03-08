@@ -24,6 +24,7 @@ For an *Expanded Text Ad* record, the following attribute fields are available i
 - [Campaign](#campaign)
 - [Client Id](#clientid)
 - [Custom Parameter](#customparameter)
+- [Display Url](#displayurl)
 - [Editorial Appeal Status](#editorialappealstatus)
 - [Editorial Location](#editoriallocation)
 - [Editorial Reason Code](#editorialreasoncode)
@@ -192,6 +193,17 @@ In a bulk file, the list of custom parameters are formatted as follows.
 **Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
 **Delete:** Read-only  
+
+### <a name="displayurl"></a>Display Url
+The URL that will be displayed instead of the final URL. The final URL will still be used for the landing page URL.
+
+Reserved for limited pilot usage e.g. pharmaceutical customers.
+
+The domain portion of the URL in combination with the path 1 and path 2 strings cannot exceed 67 characters.
+
+**Add:** Optional  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
+**Delete:** Read-only 
 
 ### <a name="editorialappealstatus"></a>Editorial Appeal Status
 Determines whether you can appeal the issues found by the editorial review.

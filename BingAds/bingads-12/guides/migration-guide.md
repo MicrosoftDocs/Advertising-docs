@@ -120,7 +120,7 @@ The *Remarketing Targeting Setting* field of an [Ad Group](../bulk-service/ad-gr
 To determine whether the audience association is bid only or target and bid, use the *TargertSetting* field of an [Ad Group](../bulk-service/ad-group.md). The setting is applicable for all audiences associated with the ad group, including but not limited to remarketing lists. 
 
 #### <a name="bulk-sunset-content"></a>Content Ad Distribution
-The Content ad distribution is no longer supported in Bing Ads, and the *Content Bid*, *Content Network*, and *Search Network* fields of an [Ad Group](../bulk-service/ad-group.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. 
+The Content ad distribution is no longer supported in Bing Ads, and the *Content Bid*, *Content Network*, and *Search Network* fields of an [Ad Group](../bulk-service/ad-group.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. The *Search Bid* field of an [Ad Group](../bulk-service/ad-group.md) is renamed *Cpc Bid*.
 
 Likewise the *Campaign Type* value of the corresponding [Campaign](../bulk-service/campaign.md) is updated from *SearchAndContent* to *Search*. 
 
@@ -177,7 +177,7 @@ The *DisplayUrl* element of an [ExpandedTextAd](../campaign-management-service/e
 The values returned in the *MediaType* and *Type* elements of a [Media](../campaign-management-service/media.md) object are swapped. In version 11 the derived media type of an [Image](../campaign-management-service/image.md) was returned in the *MediaType* element e.g., *Image*, and the aspect ratio was returned in the *Type* element e.g., *Image15x10*. In version 12 the derived media type of an [Image](../campaign-management-service/image.md) is returned in the *Type* element e.g., *Image*, and the aspect ratio is returned in the *MediaType* element e.g., *Image15x10*. Long term this should reduce friction for clients who depend on the derived type in the *Type* element.
 
 #### <a name="campaign-sunset-content"></a>Content Ad Distribution
-The Content ad distribution is no longer supported in Bing Ads, and the *AdDistribution* element of an [AdGroup](../campaign-management-service/adgroup.md) is removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. 
+The Content ad distribution is no longer supported in Bing Ads, and the *AdDistribution* element of an [AdGroup](../campaign-management-service/adgroup.md) is removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. The *SearchBid* element of an [AdGroup](../campaign-management-service/adgroup.md) is renamed *CpcBid*.
 
 Likewise the [CampaignType](../campaign-management-service/campaigntype.md) value is updated from *SearchAndContent* to *Search*, and the *Content* value is removed from the [MatchType](../campaign-management-service/matchtype.md) value set. 
 
