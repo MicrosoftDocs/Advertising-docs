@@ -85,8 +85,8 @@ The above steps create a Bing Ads legacy account. To use Hotel Ads API, you need
 4.	Click **Invite user**
 5.	Enter the email address of the user to invite. The email server must be outlook.com (for example, someone@outlook.com).  
   
-> [!IMPORTANT]  
-> You may send invites to Outlook.com email accounts only. You may not send invites to another email service, even if the account is linked to an Outlook.com email account. If you try to send an invite to another email service, the BingAds UI will show the invite as pending indefinitely (because the invite is never actually sent).  
+  > [!IMPORTANT]  
+  > You may send invites to Outlook.com email accounts only. You may not send invites to another email service, even if the account is linked to an Outlook.com email account. If you try to send an invite to another email service, the BingAds UI will show the invite as pending indefinitely (because the invite is never actually sent).  
   
 6.	Click **Send**
 
