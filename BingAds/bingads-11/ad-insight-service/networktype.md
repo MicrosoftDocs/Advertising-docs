@@ -39,8 +39,8 @@ You can specify a network type when calling the [GetKeywordIdeas](getkeywordidea
 |Value|Description|
 |-----------|---------------|
 |<a name="ownedandoperatedandsyndicatedsearch"></a>OwnedAndOperatedAndSyndicatedSearch|Indicates that you want keyword ideas or traffic estimates for ads on owned and operated networks, as well as syndicated search networks.|
-|<a name="ownedandoperatedonly"></a>OwnedAndOperatedOnly|Indicates that you want keyword ideas or traffic estimates for ads on only owned and operated networks.<br /><br />Owned and operated networks refer to the Bing?, AOL, and Yahoo search networks.|
-|<a name="syndicatedsearchonly"></a>SyndicatedSearchOnly|Indicates that you want keyword ideas or traffic estimates for ads on only syndicated search networks.<br /><br />Syndicated search refers to partner sites that host Bing?, AOL, and Yahoo search.|
+|<a name="ownedandoperatedonly"></a>OwnedAndOperatedOnly|Indicates that you want keyword ideas or traffic estimates for ads on only owned and operated networks.<br /><br />Owned and operated networks refer to the Bing, AOL, and Yahoo search networks.|
+|<a name="syndicatedsearchonly"></a>SyndicatedSearchOnly|Indicates that you want keyword ideas or traffic estimates for ads on only syndicated search networks.<br /><br />Syndicated search refers to partner sites that host Bing, AOL, and Yahoo search.|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

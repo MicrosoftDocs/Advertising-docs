@@ -281,7 +281,11 @@ First please note that only one email address per customer can be consolidated, 
     > [!NOTE]
     > If the multi-user credentials were provisioned through the user invitation work flow i.e., there was never an "old user name" for access to a customer, a system generated GUID will be returned in the *UserName* element in version 11. In version 12 the multi-user email address will be returned. 
   
-Also of note is that the *ContactInfo* returned via [GetUser](../customer-management-service/getuser.md) for the same person will be automatically synchronized with any new updates that occur after user consolidation. Keep in mind that multiple user and contact info system identifiers are assigned to the same person (one user and contact info identifier per person per customer). Immediately after consolidation for the person with credentials one@contoso.com, whereas unique user and contact info identifiers are still assigned, you will observe a distinct LastModifiedByUserId and LastModifiedTime (omitted from the table for brevity) within each returned [User](../customer-management-service/user.md) object. 
+Also of note is that the Name, Lcid, JobTitle, and ContactInfo user settings for the same person will be automatically synchronized with any updates that occur after user consolidation. The LastModifiedByUserId and LastModifiedTime are also in sync across each returned [User](../customer-management-service/user.md) object, unless you had an old username merged and have not updated any user settings since the consolidation. 
+> [!NOTE]
+> The TimeStamp differs from the LastModifiedTime. All TimeStamp values are unique per User and when you call [UpdateUser](../customer-management-service/updateuser.md) you must include the corresponding user's timestamps (including the address timestamp).
+
+For example let's say you haven't updated user information for one@contoso.com since prior to consolidation with two@contoso.com and three@contoso.com. After consolidation and until the user settings are updated post-consolidation, you will continue to observe a distinct LastModifiedByUserId and LastModifiedTime within each returned [User](../customer-management-service/user.md) object.
 
 |User Id|Contact Info Id|Permissions|LastModifiedByUserId|
 |-------------|----------------------|----------------|----------------|
@@ -296,8 +300,6 @@ Now let's say that one@contoso.com is acting in the context of Customer B and up
 |123|234|Customer A - All Accounts|456|
 |456|567|Customer B - All Accounts|456|
 |789|890|Customer C - Account A|456|
-
-If the multi-user credentials were provisioned through the user invitation work flow i.e., there was never an "old user name" for access to a customer, the contact info, including LastModifiedByUserId and LastModifiedTime will always be equal for all returned [User](../customer-management-service/user.md) objects assigned to the same person. 
 
 #### <a name="customer-userroles"></a>User Roles
 The *UserRole* value set is removed to ensure consistent mapping and forward compatibility for potential new user roles. In turn, the *Role* element of the [UserInvitation](../customer-management-service/userinvitation.md) object is replaced with an int value i.e., an element named *RoleId*.
