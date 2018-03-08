@@ -84,8 +84,10 @@ The above steps create a Bing Ads legacy account. To use Hotel Ads API, you need
 3.	Click **Users**
 4.	Click **Invite user**
 5.	Enter the email address of the user to invite. The email server must be outlook.com (for example, someone@outlook.com).  
-> [!IMPORTANT]
+  
+> [!IMPORTANT]  
 > You may send invites to Outlook.com email accounts only. You may not send invites to another email service, even if the account is linked to an Outlook.com email account. If you try to send an invite to another email service, the BingAds UI will show the invite as pending indefinitely (because the invite is never actually sent).  
+  
 6.	Click **Send**
 
 ### Create an MSA to use with Hotel Ads API (**read steps 3 and 5 carefully**)
@@ -97,7 +99,7 @@ Bing Ads sends an email invite to the user. If the invite doesn’t show up in t
 3.	Select **Create a new email address** to create an MSA. You must create a new MSA; you may not use an existing MSA.
 4.	Click **Next**
 5.	Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com).  
-> [!IMPORTANT]
+> [!IMPORTANT]  
 > Sandbox supports MSAs created using an Outlook**-int**.com email account only. You may not use an Outlook.com email account or another email service even if the account is linked to an Outlook.com or Outlook**-int**.com email account.  
 6.	Finish the work flow by specifying the rest of your user information
 7.  Exit Bing Ads after completing the MSA process.
