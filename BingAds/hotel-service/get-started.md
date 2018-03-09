@@ -65,6 +65,8 @@ For the sandbox environment, the following are the endpoints you must use to get
 <a name="getsicredentials"/> 
 ## Getting sandbox credentials
 
+### Get a sanbox account if you don't already have one
+
 You use the sandbox environment to test your application before putting it in production. Use the following steps to get a sandbox account.
 
 1.	Open a browser and navigate to sandbox.bingads.microsoft.com
@@ -73,22 +75,34 @@ You use the sandbox environment to test your application before putting it in pr
 4.	For **Import/Create Campaign**, click **Skip campaign creation**
 5.	For **Go Live**, click **Skip payment information**
 
+### Send an invite so you can create an MSA (**read step 5 carefully**)
+
 The above steps create a Bing Ads legacy account. To use Hotel Ads API, you need a sandbox Microsoft account (MSA). To get an MSA that you can use in sandbox, you need to invite a user to work on your account. The following steps show how to invite a user to work on your account.
 
 1.	In Bing Ads, click your user name (upper right corner)
 2.	Click **Accounts & Billing**
 3.	Click **Users**
 4.	Click **Invite user**
-5.	Enter the email address of the user to invite. The email server must be outlook.com (for example, someone@outlook.com).
+5.	Enter the email address of the user to invite. The email server must be outlook.com (for example, someone@outlook.com).  
+  
+  > [!IMPORTANT]  
+  > You may send invites to Outlook.com email accounts only. You may not send invites to another email service, even if the account is linked to an Outlook.com email account. If you try to send an invite to another email service, the BingAds UI will show the invite as pending indefinitely (because the invite is never actually sent).  
+  
 6.	Click **Send**
+
+### Create an MSA to use with Hotel Ads API (**read steps 3 and 5 carefully**)
 
 Bing Ads sends an email invite to the user. If the invite doesn’t show up in the inbox, check the Junk Email folder. It may take a couple of minutes to receive the invite. The following steps show how to accept the invitation.
 
 1.	Open the email from Bing Ads with subject line, Invitation to Bing Ads
 2.	Click the embedded link
-3.	Select **Create a new email address** to create an MSA
+3.	Select **Create a new email address** to create an MSA. You must create a new MSA; you may not use an existing MSA.
 4.	Click **Next**
-5.	Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com).
+5.	Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com).  
+  
+  > [!IMPORTANT]  
+  > Sandbox supports MSAs created using an Outlook**-int**.com email account only. You may not use an Outlook.com email account or another email service even if the account is linked to an Outlook.com or Outlook**-int**.com email account.  
+  
 6.	Finish the work flow by specifying the rest of your user information
 7.  Exit Bing Ads after completing the MSA process.
 
