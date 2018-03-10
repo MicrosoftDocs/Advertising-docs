@@ -1,5 +1,5 @@
 ---
-title: "Migrating to Bing Ads API Version 12"
+title: "Migrate to Bing Ads API Version 12"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
@@ -9,7 +9,7 @@ description: Get details about migrating to Bing Ads API version 12.
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
 
-# Migrating to Bing Ads API Version 12
+# Migrate to Version 12
 > [!IMPORTANT]
 > With the availability of Bing Ads API version 12, version 11 is deprecated and will sunset by October 31, 2018. 
 
@@ -112,7 +112,7 @@ When you migrate to version 12 remove the '2' suffix from all *Sitelink2* record
 #### <a name="bulk-shoppingsubtype"></a>Shopping Campaign Sub Type
 We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Bing Shopping campaigns. More details about Cooperative campaigns are coming soon, and in the meantime please note the potential required changes in Bing Ads API Version 12 for your application to support existing Bing Shopping campaigns. Whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any shopping campaigns. 
 
-When you download campaigns by including *Campaigns* from the [DownloadEntity](../bulk-service/downloadentity.md) value set, please check the *Campaign Type* and *Shopping Sub Type* fields of each [Campaign](../bulk-service/campaign.md). If the *Campaign Type* field is set to *Shopping* then you must also check the value of the *Shopping Sub Type* field. If the *Shopping Sub Type* field is empty then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign.
+When you download campaigns by including *Campaigns* from the [DownloadEntity](../bulk-service/downloadentity.md) value set, please check the *Campaign Type* and *Sub Type* fields of each [Campaign](../bulk-service/campaign.md). If the *Campaign Type* field is set to *Shopping* then you must also check the value of the *Sub Type* field. If the *Sub Type* field is empty then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign.
 
 #### <a name="bulk-audiencetargetingsetting"></a>Audience Targeting Setting
 The *Remarketing Targeting Setting* field of an [Ad Group](../bulk-service/ad-group.md) is removed.
@@ -132,6 +132,9 @@ The following time zone values are updated for the *Time Zone* field of the [Cam
 -  Since Magadan is now permanently in UTC+12 time zone, the value is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
 -  The value is updated from *Almaty_Novosibirsk* to *AlmatyNovosibirsk*.
 -  The value is updated from *MidwayIslandand_Samoa* to *MidwayIslandAndSamoa*.
+
+#### <a name="bulk-errorcode-inmarketaudiencecouldnotbedeleted"></a>Error Code for InMarketAudienceCouldNotBeDeleted
+In-market audiences cannot be deleted in both version 11 and version 12. Custom audiences can be deleted in both version 11 and 12. The error code CustomAudienceAndInMarketAudienceCouldNotBeDeleted (4860) that is still returned in version 11 is replaced by error code InMarketAudienceCouldNotBeDeleted (4864) in version 12.
 
 ## <a name="campaign"></a>Campaign Management
 
@@ -160,7 +163,7 @@ When you migrate to version 12 remove the '2' suffix from *Sitelink2AdExtension*
 #### <a name="campaign-shoppingsubtype"></a>Shopping Campaign Sub Type
 We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Bing Shopping campaigns. More details about Cooperative campaigns are coming soon, and in the meantime please note the potential required changes in Bing Ads API Version 12 for your application to support existing Bing Shopping campaigns. Whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any shopping campaigns. 
 
-When you call [GetCampaignsByAccountId](../campaign-management-service/getcampaignsbyaccountid.md) or [GetCampaignsByAccountId](../campaign-management-service/getcampaignsbyaccountid.md) and set the [CampaignType](../campaign-management-service/campaigntype.md) to *Shopping*, please check the *ShoppingSubType* of the [ShoppingSetting](../campaign-management-service/shoppingsetting.md) in each [Campaign](../campaign-management-service/campaign.md). If the *ShoppingSubType* is not set then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign.
+When you call [GetCampaignsByAccountId](../campaign-management-service/getcampaignsbyaccountid.md) or [GetCampaignsByAccountId](../campaign-management-service/getcampaignsbyaccountid.md) and the [CampaignType](../campaign-management-service/campaigntype.md) is set to *Shopping*, please check the *SubType* of each [Campaign](../campaign-management-service/campaign.md). If the *SubType* is not set then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign.
 
 #### <a name="campaign-audiencetargetingsetting"></a>Audience Targeting Setting
 The *RemarketingTargetingSetting* element of an [AdGroup](../campaign-management-service/adgroup.md) is removed.
@@ -195,6 +198,9 @@ The Appealable, DisapprovedText, Location, PublisherCountry, and ReasonCode elem
 
 #### <a name="campaign-agerange"></a>Age Range Values
 The *ZeroToSeventeen* and *ThirteenToSeventeen* values are removed from the [AgeRange](../campaign-management-service/agerange.md) value set. These values were not ever supported. 
+
+#### <a name="campaign-errorcode-inmarketaudiencecouldnotbedeleted"></a>Error Code for InMarketAudienceCouldNotBeDeleted
+In-market audiences cannot be deleted in both version 11 and version 12. Custom audiences can be deleted in both version 11 and 12. The error code CustomAudienceAndInMarketAudienceCouldNotBeDeleted (4860) that is still returned in version 11 is replaced by error code InMarketAudienceCouldNotBeDeleted (4864) in version 12.
 
 ### New Features
 

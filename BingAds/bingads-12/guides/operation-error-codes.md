@@ -10698,17 +10698,6 @@ Audience Type is invalid.
 ***
 
 **Numeric Code**
-4860
-
-**Symbolic Error Code**
-CustomAudienceAndInMarketAudienceCouldNotBeDeleted
-
-**Description**
-Could not delete custom audience and in-market audience.
-
-***
-
-**Numeric Code**
 4861
 
 **Symbolic Error Code**
@@ -10716,6 +10705,17 @@ AudienceIdDoNotMatchAudienceType
 
 **Description**
 Audience Id do not match audience type.
+
+***
+
+**Numeric Code**
+4864
+
+**Symbolic Error Code**
+InMarketAudienceCouldNotBeDeleted
+
+**Description**
+In-market audiences cannot be deleted.
 
 ***
 

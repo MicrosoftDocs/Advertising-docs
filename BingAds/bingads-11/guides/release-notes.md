@@ -243,7 +243,7 @@ For information about this month's changes to Bing Ads services, see the followi
 -   [Dynamic Search Ads Reports](#reporting-v11-dsa-may2017)  
 
 ### <a name="v11-ga-may2017"></a>Bing Ads API Version 11 General Availability
-Bing Ads API Version 11 is released to production. For more details, see [Migrating to Bing Ads API Version 11](migration-guide.md) and [Bing Ads API Reference](reference.md).
+Bing Ads API Version 11 is released to production. For more details, see [Migrate to Version 11](migration-guide.md) and [Bing Ads API Reference](reference.md).
 
 ### <a name="sdk-may2017"></a>Bing Ads PHP Software Development Kit (SDK)
 The Bing Ads .NET, Java, and PHP SDKs are updated with support for Bing Ads API Version 11 [web service addresses](web-service-addresses.md). This release enables you to [upgrade](migration-guide.md) existing features from version 9 and 10 to version 11. 
@@ -264,7 +264,7 @@ For information about this month's changes to Bing Ads services, see the followi
 -   [Bing Shopping Product Search Query Performance Report](#productsearchqueryperformancereport-april2017)  
 
 ### <a name="v11-preview-april2017"></a>Bing Ads API Version 11 Preview
-A preview of the Bing Ads API Version 11 is released to sandbox. For more details, see [Migrating to Bing Ads API Version 11](migration-guide.md).
+A preview of the Bing Ads API Version 11 is released to sandbox. For more details, see [Migrate to Version 11](migration-guide.md).
 
 ### <a name="php-sdk-april2017"></a>Bing Ads PHP Software Development Kit (SDK)
 The Bing Ads PHP SDK is now available. 

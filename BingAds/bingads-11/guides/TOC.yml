@@ -1763,6 +1763,6 @@
     href: ./time-zones.md
 - name: Release Notes
   href: ./release-notes.md
-- name: Migrating to Bing Ads API Version 11
+- name: Migrate to Version 11
   href: ./migration-guide.md
 

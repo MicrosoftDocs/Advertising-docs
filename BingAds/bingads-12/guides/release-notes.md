@@ -18,4 +18,4 @@ For information about this month's changes to Bing Ads services, see the followi
 -   [Version 12 Sandbox Beta](#v12-march2018)  
 
 ### <a name="v12-march2018"></a>Version 12 Sandbox Beta
-The sandbox endpoints for Bing Ads API version 12 are available in beta. The interfaces are subject to change prior to general availability. 
+The sandbox endpoints for Bing Ads API version 12 are available in beta. The interfaces are subject to change prior to general availability. For more details, see [Migrate to Version 11](migration-guide.md).

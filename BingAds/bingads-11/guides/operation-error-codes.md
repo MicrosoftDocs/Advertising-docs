@@ -10700,6 +10700,9 @@ Audience Type is invalid.
 **Symbolic Error Code**
 CustomAudienceAndInMarketAudienceCouldNotBeDeleted
 
+> [!NOTE]
+> In version 11 this error code is removed and you must use 4864, InMarketAudienceCouldNotBeDeleted instead. See the version 12 migration guide and error code documentation for more details.
+
 **Description**
 Could not delete custom audience and in-market audience.
 

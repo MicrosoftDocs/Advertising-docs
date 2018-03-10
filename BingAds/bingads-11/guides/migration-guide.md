@@ -1,12 +1,12 @@
 ---
-title: "Migrating to Bing Ads API Version 11"
+title: "Migrate to Bing Ads API Version 11"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
 description: Get details about migrating to Bing Ads API version 11.
 ---
-# Migrating to Bing Ads API Version 11
+# Migrate to Version 11
 All Bing Ads API SOAP web services are available with Version 11.   
 
 > [!IMPORTANT]
