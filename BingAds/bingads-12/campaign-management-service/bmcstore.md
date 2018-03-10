@@ -23,6 +23,7 @@ Elements of this object are defined in the Bing Merchant Center store, and read-
     <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
     <xs:element minOccurs="0" name="IsProductAdsEnabled" type="xs:boolean" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="SubType" nillable="true" type="tns:BMCStoreSubType" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -36,10 +37,11 @@ Elements of this object are defined in the Bing Merchant Center store, and read-
 |<a name="isactive"></a>IsActive|Value will be true if the store is active, and otherwise the value is false.|**boolean**|
 |<a name="isproductadsenabled"></a>IsProductAdsEnabled|Value will be true if the store is enabled for product ads in Bing Ads, and otherwise the value is false.|**boolean**|
 |<a name="name"></a>Name|Defines the name of the store as defined in the Bing Merchant Center.|**string**|
+|<a name="subtype"></a>SubType|Reserved.|[BMCStoreSubType](bmcstoresubtype.md)|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md)  

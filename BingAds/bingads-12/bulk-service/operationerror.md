@@ -34,8 +34,8 @@ Defines an error object that contains the details that explain why the service o
 |<a name="message"></a>Message|A message that describes the error.|**string**|
 
 ## Requirements
-Service: [BulkService.svc v11](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [ApiFaultDetail](apifaultdetail.md)  

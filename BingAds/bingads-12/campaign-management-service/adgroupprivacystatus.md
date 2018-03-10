@@ -34,8 +34,8 @@ Reserved.
 |<a name="unknown"></a>Unknown|Reserved.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [AdGroup](adgroup.md)  

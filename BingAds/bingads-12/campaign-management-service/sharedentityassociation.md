@@ -34,8 +34,8 @@ Defines an object that contains association information for a campaign and share
 |<a name="sharedentitytype"></a>SharedEntityType|The type of the shared entity.<br /><br />Currently the only supported value is NegativeKeywordList.|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [DeleteSharedEntityAssociations](deletesharedentityassociations.md)  

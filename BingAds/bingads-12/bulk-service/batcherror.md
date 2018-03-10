@@ -42,8 +42,8 @@ Defines an error object that identifies the item within the batch of items in th
 |<a name="type"></a>Type|Reserved for future use.|**string**|
 
 ## Requirements
-Service: [BulkService.svc v11](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [ApiFaultDetail](apifaultdetail.md)  

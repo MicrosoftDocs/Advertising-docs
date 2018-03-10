@@ -16,7 +16,7 @@ Defines an object that contains a list of entity identifiers.
 ```xml
 <xs:complexType name="IdCollection" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element minOccurs="0" name="Ids" nillable="true" type="q83:ArrayOfNullableOflong" xmlns:q83="http://schemas.datacontract.org/2004/07/System" />
+    <xs:element minOccurs="0" name="Ids" nillable="true" type="q87:ArrayOfNullableOflong" xmlns:q87="http://schemas.datacontract.org/2004/07/System" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -28,8 +28,8 @@ Defines an object that contains a list of entity identifiers.
 |<a name="ids"></a>Ids|A list of entity identifiers.|**long** array|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [AddNegativeKeywordsToEntities](addnegativekeywordstoentities.md)  

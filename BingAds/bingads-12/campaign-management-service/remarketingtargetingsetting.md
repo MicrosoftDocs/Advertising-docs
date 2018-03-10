@@ -30,8 +30,8 @@ The targeting setting that is applicable for all audiences e.g., custom audience
 |<a name="targetandbid"></a>TargetAndBid|Show ads only to people included in the audience, with the option to change the bid amount. Ads in this ad group will only show to people included in the audience.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [AdGroup](adgroup.md)  

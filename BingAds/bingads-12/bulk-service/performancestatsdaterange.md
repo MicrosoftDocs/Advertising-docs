@@ -32,8 +32,8 @@ Defines the date range values for the requested performance data in a bulk downl
 |<a name="predefinedtime"></a>PredefinedTime|A predefined date range value.|[ReportTimePeriod](reporttimeperiod.md)|
 
 ## Requirements
-Service: [BulkService.svc v11](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md)  

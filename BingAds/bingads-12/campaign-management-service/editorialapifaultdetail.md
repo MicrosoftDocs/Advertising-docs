@@ -16,7 +16,7 @@ Defines a fault object that operations such as [AddAdGroupCriterions](addadgroup
 ```xml
 <xs:complexType name="EditorialApiFaultDetail" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:complexContent mixed="false">
-    <xs:extension base="q25:ApplicationFault" xmlns:q25="https://adapi.microsoft.com">
+    <xs:extension base="q27:ApplicationFault" xmlns:q27="https://adapi.microsoft.com">
       <xs:sequence>
         <xs:element minOccurs="0" name="BatchErrors" nillable="true" type="tns:ArrayOfBatchError" />
         <xs:element minOccurs="0" name="EditorialErrors" nillable="true" type="tns:ArrayOfEditorialError" />
@@ -47,6 +47,6 @@ The [EditorialApiFaultDetail](editorialapifaultdetail.md) object derives from th
 |<a name="trackingid"></a>TrackingId|The identifier of the log entry that contains the details of the API call.|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

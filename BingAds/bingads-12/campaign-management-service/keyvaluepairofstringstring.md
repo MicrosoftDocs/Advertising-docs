@@ -39,7 +39,7 @@ The list of key and value strings for forward compatibility to avoid otherwise b
 |<a name="value"></a>value|The value of the setting.|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/System.Collections.Generic  
 
 ## Used By

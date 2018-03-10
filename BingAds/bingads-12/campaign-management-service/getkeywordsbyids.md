@@ -26,7 +26,6 @@ The *GetKeywordsByIdsRequest* object defines the [body](#request-body) and [head
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group whose keywords you want to get.|**long**|
 |<a name="keywordids"></a>KeywordIds|A maximum of 1,000 identifiers of the keywords to get.|**long** array|
-|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [Keyword](keyword.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[KeywordAdditionalField](keywordadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -49,7 +48,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">GetKeywordsByIds</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -60,12 +59,11 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetKeywordsByIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetKeywordsByIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AdGroupId>ValueHere</AdGroupId>
       <KeywordIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:long>ValueHere</a1:long>
       </KeywordIds>
-      <ReturnAdditionalFields i:nil="false">ValueHere</ReturnAdditionalFields>
     </GetKeywordsByIdsRequest>
   </s:Body>
 </s:Envelope>
@@ -76,11 +74,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetKeywordsByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetKeywordsByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <Keywords d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <Keyword>
           <Bid d4p1:nil="false">
@@ -108,11 +106,11 @@ The following template shows the order of the [body](#response-body) and [header
           </BiddingScheme>
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e241="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e241:AppUrl>
-              <e241:OsType d4p1:nil="false">ValueHere</e241:OsType>
-              <e241:Url d4p1:nil="false">ValueHere</e241:Url>
-            </e241:AppUrl>
+          <FinalAppUrls xmlns:e567="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e567:AppUrl>
+              <e567:OsType d4p1:nil="false">ValueHere</e567:OsType>
+              <e567:Url d4p1:nil="false">ValueHere</e567:Url>
+            </e567:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -120,11 +118,11 @@ The following template shows the order of the [body](#response-body) and [header
           <FinalUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e242="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e242:KeyValuePairOfstringstring>
-              <e242:key d4p1:nil="false">ValueHere</e242:key>
-              <e242:value d4p1:nil="false">ValueHere</e242:value>
-            </e242:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e568="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e568:KeyValuePairOfstringstring>
+              <e568:key d4p1:nil="false">ValueHere</e568:key>
+              <e568:value d4p1:nil="false">ValueHere</e568:value>
+            </e568:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <MatchType d4p1:nil="false">ValueHere</MatchType>
@@ -134,13 +132,13 @@ The following template shows the order of the [body](#response-body) and [header
           <Status d4p1:nil="false">ValueHere</Status>
           <Text d4p1:nil="false">ValueHere</Text>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e243="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e243:Parameters d4p1:nil="false">
-              <e243:CustomParameter>
-                <e243:Key d4p1:nil="false">ValueHere</e243:Key>
-                <e243:Value d4p1:nil="false">ValueHere</e243:Value>
-              </e243:CustomParameter>
-            </e243:Parameters>
+          <UrlCustomParameters xmlns:e569="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e569:Parameters d4p1:nil="false">
+              <e569:CustomParameter>
+                <e569:Key d4p1:nil="false">ValueHere</e569:Key>
+                <e569:Value d4p1:nil="false">ValueHere</e569:Value>
+              </e569:CustomParameter>
+            </e569:Parameters>
           </UrlCustomParameters>
         </Keyword>
       </Keywords>
@@ -150,11 +148,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e244="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e244:KeyValuePairOfstringstring>
-              <e244:key d4p1:nil="false">ValueHere</e244:key>
-              <e244:value d4p1:nil="false">ValueHere</e244:value>
-            </e244:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e570="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e570:KeyValuePairOfstringstring>
+              <e570:key d4p1:nil="false">ValueHere</e570:key>
+              <e570:value d4p1:nil="false">ValueHere</e570:value>
+            </e570:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -177,14 +175,12 @@ The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.m
 ```csharp
 public async Task<GetKeywordsByIdsResponse> GetKeywordsByIdsAsync(
 	long adGroupId,
-	IList<long> keywordIds,
-	KeywordAdditionalField? returnAdditionalFields)
+	IList<long> keywordIds)
 {
 	var request = new GetKeywordsByIdsRequest
 	{
 		AdGroupId = adGroupId,
-		KeywordIds = keywordIds,
-		ReturnAdditionalFields = returnAdditionalFields
+		KeywordIds = keywordIds
 	};
 
 	return (await CampaignManagementService.CallAsync((s, r) => s.GetKeywordsByIdsAsync(r), request));
@@ -193,14 +189,12 @@ public async Task<GetKeywordsByIdsResponse> GetKeywordsByIdsAsync(
 ```java
 static GetKeywordsByIdsResponse getKeywordsByIds(
 	java.lang.Long adGroupId,
-	ArrayOflong keywordIds,
-	ArrayList<KeywordAdditionalField> returnAdditionalFields) throws RemoteException, Exception
+	ArrayOflong keywordIds) throws RemoteException, Exception
 {
 	GetKeywordsByIdsRequest request = new GetKeywordsByIdsRequest();
 
 	request.setAdGroupId(adGroupId);
 	request.setKeywordIds(keywordIds);
-	request.setReturnAdditionalFields(returnAdditionalFields);
 
 	return CampaignManagementService.getService().getKeywordsByIds(request);
 }
@@ -208,8 +202,7 @@ static GetKeywordsByIdsResponse getKeywordsByIds(
 ```php
 static function GetKeywordsByIds(
 	$adGroupId,
-	$keywordIds,
-	$returnAdditionalFields)
+	$keywordIds)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
@@ -218,7 +211,6 @@ static function GetKeywordsByIds(
 
 	$request->AdGroupId = $adGroupId;
 	$request->KeywordIds = $keywordIds;
-	$request->ReturnAdditionalFields = $returnAdditionalFields;
 
 	return $GLOBALS['CampaignManagementProxy']->GetService()->GetKeywordsByIds($request);
 }
@@ -226,11 +218,10 @@ static function GetKeywordsByIds(
 ```python
 response=campaignmanagement_service.GetKeywordsByIds(
 	AdGroupId=AdGroupId,
-	KeywordIds=KeywordIds,
-	ReturnAdditionalFields=ReturnAdditionalFields)
+	KeywordIds=KeywordIds)
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

@@ -22,7 +22,7 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
 <xs:complexType name="Audience" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q100:ArrayOfKeyValuePairOfstringstring" xmlns:q100="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q104:ArrayOfKeyValuePairOfstringstring" xmlns:q104="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="MembershipDuration" nillable="true" type="xs:int" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
@@ -77,8 +77,8 @@ For Java and the .NET languages, do not set the *Type* element because the value
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [AddAudiences](addaudiences.md)  

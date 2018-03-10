@@ -36,8 +36,8 @@ Defines the operands that can be applied to arguments of a webpage condition or 
 |<a name="url"></a>Url|Set a condition that the argument must match any of your site's URLs that are indexed by Bing.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [WebpageCondition](webpagecondition.md)  

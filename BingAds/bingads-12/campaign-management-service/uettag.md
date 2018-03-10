@@ -45,8 +45,8 @@ You can use one UET tag with all of your conversion goals and remarketing lists.
 |<a name="trackingstatus"></a>TrackingStatus|The system-determined status values of a UET tag, for example the system sets the status to *Unverified* if the UET tag has not yet been verified.<br /><br />**Add:** Read-only<br />**Update:** Read-only|[UetTagTrackingStatus](uettagtrackingstatus.md)|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [AddUetTags](adduettags.md)  

@@ -25,7 +25,6 @@ The *GetAdGroupsByCampaignIdRequest* object defines the [body](#request-body) an
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign that contains the ad groups to get.|**long**|
-|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [AdGroup](adgroup.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[AdGroupAdditionalField](adgroupadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -47,7 +46,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">GetAdGroupsByCampaignId</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -58,9 +57,8 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetAdGroupsByCampaignIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetAdGroupsByCampaignIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <CampaignId>ValueHere</CampaignId>
-      <ReturnAdditionalFields i:nil="false">ValueHere</ReturnAdditionalFields>
     </GetAdGroupsByCampaignIdRequest>
   </s:Body>
 </s:Envelope>
@@ -71,11 +69,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetAdGroupsByCampaignIdResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetAdGroupsByCampaignIdResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AdGroups d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <AdGroup>
           <AdDistribution d4p1:nil="false">ValueHere</AdDistribution>
@@ -112,11 +110,11 @@ The following template shows the order of the [body](#response-body) and [header
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e203="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e203:KeyValuePairOfstringstring>
-              <e203:key d4p1:nil="false">ValueHere</e203:key>
-              <e203:value d4p1:nil="false">ValueHere</e203:value>
-            </e203:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e529="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e529:KeyValuePairOfstringstring>
+              <e529:key d4p1:nil="false">ValueHere</e529:key>
+              <e529:value d4p1:nil="false">ValueHere</e529:value>
+            </e529:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Language d4p1:nil="false">ValueHere</Language>
@@ -147,6 +145,10 @@ The following template shows the order of the [body](#response-body) and [header
                   <TargetAll>ValueHere</TargetAll>
                 </TargetSettingDetail>
               </Details>
+              <!--These fields are applicable if the derived type attribute is set to CoOpSetting-->
+              <BidBoostValue d4p1:nil="false">ValueHere</BidBoostValue>
+              <BidMaxValue d4p1:nil="false">ValueHere</BidMaxValue>
+              <BidOption d4p1:nil="false">ValueHere</BidOption>
             </Setting>
           </Settings>
           <StartDate d4p1:nil="false">
@@ -156,13 +158,13 @@ The following template shows the order of the [body](#response-body) and [header
           </StartDate>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e204="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e204:Parameters d4p1:nil="false">
-              <e204:CustomParameter>
-                <e204:Key d4p1:nil="false">ValueHere</e204:Key>
-                <e204:Value d4p1:nil="false">ValueHere</e204:Value>
-              </e204:CustomParameter>
-            </e204:Parameters>
+          <UrlCustomParameters xmlns:e530="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e530:Parameters d4p1:nil="false">
+              <e530:CustomParameter>
+                <e530:Key d4p1:nil="false">ValueHere</e530:Key>
+                <e530:Value d4p1:nil="false">ValueHere</e530:Value>
+              </e530:CustomParameter>
+            </e530:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
@@ -175,13 +177,11 @@ The following template shows the order of the [body](#response-body) and [header
 The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetAdGroupsByCampaignIdResponse> GetAdGroupsByCampaignIdAsync(
-	long campaignId,
-	AdGroupAdditionalField? returnAdditionalFields)
+	long campaignId)
 {
 	var request = new GetAdGroupsByCampaignIdRequest
 	{
-		CampaignId = campaignId,
-		ReturnAdditionalFields = returnAdditionalFields
+		CampaignId = campaignId
 	};
 
 	return (await CampaignManagementService.CallAsync((s, r) => s.GetAdGroupsByCampaignIdAsync(r), request));
@@ -189,21 +189,18 @@ public async Task<GetAdGroupsByCampaignIdResponse> GetAdGroupsByCampaignIdAsync(
 ```
 ```java
 static GetAdGroupsByCampaignIdResponse getAdGroupsByCampaignId(
-	java.lang.Long campaignId,
-	ArrayList<AdGroupAdditionalField> returnAdditionalFields) throws RemoteException, Exception
+	java.lang.Long campaignId) throws RemoteException, Exception
 {
 	GetAdGroupsByCampaignIdRequest request = new GetAdGroupsByCampaignIdRequest();
 
 	request.setCampaignId(campaignId);
-	request.setReturnAdditionalFields(returnAdditionalFields);
 
 	return CampaignManagementService.getService().getAdGroupsByCampaignId(request);
 }
 ```
 ```php
 static function GetAdGroupsByCampaignId(
-	$campaignId,
-	$returnAdditionalFields)
+	$campaignId)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
@@ -211,18 +208,16 @@ static function GetAdGroupsByCampaignId(
 	$request = new GetAdGroupsByCampaignIdRequest();
 
 	$request->CampaignId = $campaignId;
-	$request->ReturnAdditionalFields = $returnAdditionalFields;
 
 	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAdGroupsByCampaignId($request);
 }
 ```
 ```python
 response=campaignmanagement_service.GetAdGroupsByCampaignId(
-	CampaignId=CampaignId,
-	ReturnAdditionalFields=ReturnAdditionalFields)
+	CampaignId=CampaignId)
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

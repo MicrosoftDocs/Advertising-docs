@@ -47,7 +47,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">ApplyProductPartitionActions</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -58,7 +58,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <ApplyProductPartitionActionsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <ApplyProductPartitionActionsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <CriterionActions i:nil="false">
         <AdGroupCriterionAction>
           <Action>ValueHere</Action>
@@ -115,14 +115,14 @@ The following template shows the order of the [body](#request-body) and [header]
               <ProfileId>ValueHere</ProfileId>
               <ProfileType>ValueHere</ProfileType>
               <!--This field is applicable if the derived type attribute is set to Webpage-->
-              <Parameter xmlns:e153="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-                <e153:Conditions i:nil="false">
-                  <e153:WebpageCondition>
-                    <e153:Argument i:nil="false">ValueHere</e153:Argument>
-                    <e153:Operand>ValueHere</e153:Operand>
-                  </e153:WebpageCondition>
-                </e153:Conditions>
-                <e153:CriterionName i:nil="false">ValueHere</e153:CriterionName>
+              <Parameter xmlns:e479="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+                <e479:Conditions i:nil="false">
+                  <e479:WebpageCondition>
+                    <e479:Argument i:nil="false">ValueHere</e479:Argument>
+                    <e479:Operand>ValueHere</e479:Operand>
+                  </e479:WebpageCondition>
+                </e479:Conditions>
+                <e479:CriterionName i:nil="false">ValueHere</e479:CriterionName>
               </Parameter>
             </Criterion>
             <Id i:nil="false">ValueHere</Id>
@@ -138,11 +138,11 @@ The following template shows the order of the [body](#request-body) and [header]
             </CriterionBid>
             <DestinationUrl i:nil="false">ValueHere</DestinationUrl>
             <EditorialStatus i:nil="false">ValueHere</EditorialStatus>
-            <FinalAppUrls xmlns:e154="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-              <e154:AppUrl>
-                <e154:OsType i:nil="false">ValueHere</e154:OsType>
-                <e154:Url i:nil="false">ValueHere</e154:Url>
-              </e154:AppUrl>
+            <FinalAppUrls xmlns:e480="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+              <e480:AppUrl>
+                <e480:OsType i:nil="false">ValueHere</e480:OsType>
+                <e480:Url i:nil="false">ValueHere</e480:Url>
+              </e480:AppUrl>
             </FinalAppUrls>
             <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
               <a1:string>ValueHere</a1:string>
@@ -151,13 +151,13 @@ The following template shows the order of the [body](#request-body) and [header]
               <a1:string>ValueHere</a1:string>
             </FinalUrls>
             <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-            <UrlCustomParameters xmlns:e155="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-              <e155:Parameters i:nil="false">
-                <e155:CustomParameter>
-                  <e155:Key i:nil="false">ValueHere</e155:Key>
-                  <e155:Value i:nil="false">ValueHere</e155:Value>
-                </e155:CustomParameter>
-              </e155:Parameters>
+            <UrlCustomParameters xmlns:e481="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+              <e481:Parameters i:nil="false">
+                <e481:CustomParameter>
+                  <e481:Key i:nil="false">ValueHere</e481:Key>
+                  <e481:Value i:nil="false">ValueHere</e481:Value>
+                </e481:CustomParameter>
+              </e481:Parameters>
             </UrlCustomParameters>
             <!--No additional fields are applicable if the derived type attribute is set to NegativeAdGroupCriterion-->
           </AdGroupCriterion>
@@ -173,11 +173,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <ApplyProductPartitionActionsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <ApplyProductPartitionActionsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AdGroupCriterionIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <a1:long>ValueHere</a1:long>
       </AdGroupCriterionIds>
@@ -187,11 +187,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e156="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e156:KeyValuePairOfstringstring>
-              <e156:key d4p1:nil="false">ValueHere</e156:key>
-              <e156:value d4p1:nil="false">ValueHere</e156:value>
-            </e156:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e482="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e482:KeyValuePairOfstringstring>
+              <e482:key d4p1:nil="false">ValueHere</e482:key>
+              <e482:value d4p1:nil="false">ValueHere</e482:value>
+            </e482:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -254,6 +254,6 @@ response=campaignmanagement_service.ApplyProductPartitionActions(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

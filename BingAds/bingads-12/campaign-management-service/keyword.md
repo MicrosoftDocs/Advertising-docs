@@ -20,10 +20,10 @@ Defines a keyword.
     <xs:element minOccurs="0" name="BiddingScheme" nillable="true" type="tns:BiddingScheme" />
     <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:KeywordEditorialStatus" />
-    <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="q28:ArrayOfAppUrl" xmlns:q28="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" />
-    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q29:ArrayOfstring" xmlns:q29="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q30:ArrayOfstring" xmlns:q30="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q31:ArrayOfKeyValuePairOfstringstring" xmlns:q31="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="q30:ArrayOfAppUrl" xmlns:q30="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
+    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q31:ArrayOfstring" xmlns:q31="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q32:ArrayOfstring" xmlns:q32="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q33:ArrayOfKeyValuePairOfstringstring" xmlns:q33="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="MatchType" nillable="true" type="tns:MatchType" />
     <xs:element minOccurs="0" name="Param1" nillable="true" type="xs:string" />
@@ -32,7 +32,7 @@ Defines a keyword.
     <xs:element minOccurs="0" name="Status" nillable="true" type="tns:KeywordStatus" />
     <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q32:CustomParameters" xmlns:q32="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" />
+    <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q34:CustomParameters" xmlns:q34="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -60,8 +60,8 @@ Defines a keyword.
 |<a name="urlcustomparameters"></a>UrlCustomParameters|Your custom collection of key and value parameters for URL tracking.<br /><br />You may include up to 3 individual [CustomParameter](customparameter.md) objects within the [CustomParameters](customparameters.md) object. Each [CustomParameter](customparameter.md) contains a *Key* and *Value* element.<br /><br />On update, set the *UrlCustomParameters* element to null or empty to retain any existing custom parameters. To remove all custom parameters, set the *Parameters* element of the [CustomParameters](customparameters.md) object to null or empty. To remove a subset of custom parameters, specify the custom parameters that you want to keep in the *Parameters* element of the [CustomParameters](customparameters.md) object.<br /><br />Note that custom parameters for a keyword are allowed, even if the *FinalUrls* element is not specified.<br/><br/>**Add:** Optional<br/>**Update:** Optional|[CustomParameters](customparameters.md)|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [AddKeywords](addkeywords.md)  

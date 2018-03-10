@@ -41,7 +41,7 @@ Defines an ad group.
     <xs:element minOccurs="0" name="StartDate" nillable="true" type="tns:Date" />
     <xs:element minOccurs="0" name="Status" nillable="true" type="tns:AdGroupStatus" />
     <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q18:CustomParameters" xmlns:q18="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" />
+    <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q18:CustomParameters" xmlns:q18="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -72,8 +72,8 @@ Defines an ad group.
 |<a name="urlcustomparameters"></a>UrlCustomParameters|Your custom collection of key and value parameters for URL tracking.<br /><br />You may include up to 3 individual [CustomParameter](customparameter.md) objects within the [CustomParameters](customparameters.md) object. Each [CustomParameter](customparameter.md) contains a *Key* and *Value* element.<br /><br />**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all custom parameters, set the *Parameters* element of the [CustomParameters](customparameters.md) object to null or empty. To remove a subset of custom parameters, specify the custom parameters that you want to keep in the *Parameters* element of the [CustomParameters](customparameters.md) object.|[CustomParameters](customparameters.md)|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [AddAdGroups](addadgroups.md)  

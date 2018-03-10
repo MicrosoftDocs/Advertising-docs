@@ -34,8 +34,8 @@ Defines the ad distribution for the ad group.
 |<a name="search"></a>Search|The search network includes Bing.com, AOL.com, Yahoo.com, other Bing, AOL, or Yahoo owned and operated sites, and syndicated search partner sites that offer search capabilities, as well as on a variety of other syndicated search partner sites. For more information, see the `Network` element of [AdGroup](adgroup.md).<br /><br />With the search network, you can narrow ad distribution if needed: you can display your search ads on all sites in the search network; just Bing, AOL, and Yahoo owned and operated websites; or just the syndicated search partner sites. See [Differences between search ads and content ads](https://help.bingads.microsoft.com/#apex/3/en/52030/0) for more information.<br /><br />You might also be interested in Native Ads. A native ad is an ad whose subject matter and visual design are relevant to the page it is displayed on. More and more advertisers are turning to intent ads for their proven ability to assist in brand building and to drive purchase intent. Both search ads and intent ads are distributed on the search network. [Intent ads](../guides/intent-ads.md) are currently available to only a limited number of customers and will be shown only on select websites such as MSN. If intent ads are available for your campaign, you can manage your use of these ads and their bids using the intent ads bid adjustment on both the campaign and ad group settings pages. For more information, see the [About Bing Native Ads](http://help.bingads.microsoft.com/#apex/3/en/56674/0) article in Bing Ads help.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [AdGroup](adgroup.md)  

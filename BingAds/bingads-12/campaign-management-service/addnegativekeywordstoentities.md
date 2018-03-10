@@ -50,7 +50,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">AddNegativeKeywordsToEntities</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -61,7 +61,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <AddNegativeKeywordsToEntitiesRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <AddNegativeKeywordsToEntitiesRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <EntityNegativeKeywords i:nil="false">
         <EntityNegativeKeyword>
           <EntityId>ValueHere</EntityId>
@@ -85,11 +85,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <AddNegativeKeywordsToEntitiesResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <AddNegativeKeywordsToEntitiesResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <NegativeKeywordIds d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <IdCollection>
           <Ids d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -105,11 +105,11 @@ The following template shows the order of the [body](#response-body) and [header
               <Details d4p1:nil="false">ValueHere</Details>
               <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
               <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-              <ForwardCompatibilityMap xmlns:e144="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-                <e144:KeyValuePairOfstringstring>
-                  <e144:key d4p1:nil="false">ValueHere</e144:key>
-                  <e144:value d4p1:nil="false">ValueHere</e144:value>
-                </e144:KeyValuePairOfstringstring>
+              <ForwardCompatibilityMap xmlns:e470="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+                <e470:KeyValuePairOfstringstring>
+                  <e470:key d4p1:nil="false">ValueHere</e470:key>
+                  <e470:value d4p1:nil="false">ValueHere</e470:value>
+                </e470:KeyValuePairOfstringstring>
               </ForwardCompatibilityMap>
               <Index>ValueHere</Index>
               <Message d4p1:nil="false">ValueHere</Message>
@@ -126,11 +126,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e145="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e145:KeyValuePairOfstringstring>
-              <e145:key d4p1:nil="false">ValueHere</e145:key>
-              <e145:value d4p1:nil="false">ValueHere</e145:value>
-            </e145:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e471="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e471:KeyValuePairOfstringstring>
+              <e471:key d4p1:nil="false">ValueHere</e471:key>
+              <e471:value d4p1:nil="false">ValueHere</e471:value>
+            </e471:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -187,6 +187,6 @@ response=campaignmanagement_service.AddNegativeKeywordsToEntities(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

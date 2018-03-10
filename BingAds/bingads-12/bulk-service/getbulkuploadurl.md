@@ -48,7 +48,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">GetBulkUploadUrl</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -59,7 +59,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetBulkUploadUrlRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetBulkUploadUrlRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <ResponseMode>ValueHere</ResponseMode>
       <AccountId>ValueHere</AccountId>
     </GetBulkUploadUrlRequest>
@@ -72,11 +72,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetBulkUploadUrlResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetBulkUploadUrlResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <RequestId d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</RequestId>
       <UploadUrl d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</UploadUrl>
     </GetBulkUploadUrlResponse>
@@ -136,6 +136,6 @@ response=bulk_service.GetBulkUploadUrl(
 ```
 
 ## Requirements
-Service: [BulkService.svc v11](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

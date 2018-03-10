@@ -50,7 +50,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">GetBulkUploadStatus</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -61,7 +61,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetBulkUploadStatusRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetBulkUploadStatusRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <RequestId i:nil="false">ValueHere</RequestId>
     </GetBulkUploadStatusRequest>
   </s:Body>
@@ -73,11 +73,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetBulkUploadStatusResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetBulkUploadStatusResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <Errors d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <OperationError>
           <Code>ValueHere</Code>
@@ -86,11 +86,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Message d4p1:nil="false">ValueHere</Message>
         </OperationError>
       </Errors>
-      <ForwardCompatibilityMap xmlns:e406="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e406:KeyValuePairOfstringstring>
-          <e406:key d4p1:nil="false">ValueHere</e406:key>
-          <e406:value d4p1:nil="false">ValueHere</e406:value>
-        </e406:KeyValuePairOfstringstring>
+      <ForwardCompatibilityMap xmlns:e426="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e426:KeyValuePairOfstringstring>
+          <e426:key d4p1:nil="false">ValueHere</e426:key>
+          <e426:value d4p1:nil="false">ValueHere</e426:value>
+        </e426:KeyValuePairOfstringstring>
       </ForwardCompatibilityMap>
       <PercentComplete>ValueHere</PercentComplete>
       <RequestStatus d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</RequestStatus>
@@ -145,6 +145,6 @@ response=bulk_service.GetBulkUploadStatus(
 ```
 
 ## Requirements
-Service: [BulkService.svc v11](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

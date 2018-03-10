@@ -49,7 +49,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">GetAdsByIds</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -60,7 +60,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetAdsByIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetAdsByIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AdGroupId>ValueHere</AdGroupId>
       <AdIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:long>ValueHere</a1:long>
@@ -78,21 +78,21 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetAdsByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetAdsByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <Ads d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <Ad d4p1:type="-- derived type specified here with the appropriate prefix --">
           <AdFormatPreference d4p1:nil="false">ValueHere</AdFormatPreference>
           <DevicePreference d4p1:nil="false">ValueHere</DevicePreference>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e214="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e214:AppUrl>
-              <e214:OsType d4p1:nil="false">ValueHere</e214:OsType>
-              <e214:Url d4p1:nil="false">ValueHere</e214:Url>
-            </e214:AppUrl>
+          <FinalAppUrls xmlns:e540="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e540:AppUrl>
+              <e540:OsType d4p1:nil="false">ValueHere</e540:OsType>
+              <e540:Url d4p1:nil="false">ValueHere</e540:Url>
+            </e540:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -100,23 +100,23 @@ The following template shows the order of the [body](#response-body) and [header
           <FinalUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e215="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e215:KeyValuePairOfstringstring>
-              <e215:key d4p1:nil="false">ValueHere</e215:key>
-              <e215:value d4p1:nil="false">ValueHere</e215:value>
-            </e215:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e541="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e541:KeyValuePairOfstringstring>
+              <e541:key d4p1:nil="false">ValueHere</e541:key>
+              <e541:value d4p1:nil="false">ValueHere</e541:value>
+            </e541:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
           <Type d4p1:nil="false">ValueHere</Type>
-          <UrlCustomParameters xmlns:e216="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e216:Parameters d4p1:nil="false">
-              <e216:CustomParameter>
-                <e216:Key d4p1:nil="false">ValueHere</e216:Key>
-                <e216:Value d4p1:nil="false">ValueHere</e216:Value>
-              </e216:CustomParameter>
-            </e216:Parameters>
+          <UrlCustomParameters xmlns:e542="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e542:Parameters d4p1:nil="false">
+              <e542:CustomParameter>
+                <e542:Key d4p1:nil="false">ValueHere</e542:Key>
+                <e542:Value d4p1:nil="false">ValueHere</e542:Value>
+              </e542:CustomParameter>
+            </e542:Parameters>
           </UrlCustomParameters>
           <!--These fields are applicable if the derived type attribute is set to TextAd-->
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
@@ -131,7 +131,7 @@ The following template shows the order of the [body](#response-body) and [header
           <Text d4p1:nil="false">ValueHere</Text>
           <Title d4p1:nil="false">ValueHere</Title>
           <!--These fields are applicable if the derived type attribute is set to ExpandedTextAd-->
-          <DisplayUrl d4p1:nil="false">ValueHere</DisplayUrl>
+          <Domain d4p1:nil="false">ValueHere</Domain>
           <Path1 d4p1:nil="false">ValueHere</Path1>
           <Path2 d4p1:nil="false">ValueHere</Path2>
           <Text d4p1:nil="false">ValueHere</Text>
@@ -159,11 +159,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e217="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e217:KeyValuePairOfstringstring>
-              <e217:key d4p1:nil="false">ValueHere</e217:key>
-              <e217:value d4p1:nil="false">ValueHere</e217:value>
-            </e217:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e543="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e543:KeyValuePairOfstringstring>
+              <e543:key d4p1:nil="false">ValueHere</e543:key>
+              <e543:value d4p1:nil="false">ValueHere</e543:value>
+            </e543:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -240,6 +240,6 @@ response=campaignmanagement_service.GetAdsByIds(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

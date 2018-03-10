@@ -34,8 +34,8 @@ Defines a media meta data object. The meta data includes download Urls for one o
 |<a name="type"></a>Type|The type of media in the library.<br /><br />For an [ImageMediaRepresentation](imagemediarepresentation.md),  the only possible value is *Image*.|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md)  

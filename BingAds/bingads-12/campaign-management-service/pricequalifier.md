@@ -36,8 +36,8 @@ Defines price qualifiers for price ad extensions.
 |<a name="upto"></a>UpTo|The price of the [PriceAdExtension](priceadextension.md) is prefixed with the price qualifier text *Up to*, for example *Up to $9.99*.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [PriceTableRow](pricetablerow.md)  

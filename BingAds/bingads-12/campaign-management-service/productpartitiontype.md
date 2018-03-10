@@ -42,8 +42,8 @@ Defines the possible types of product partitions.
 |<a name="unit"></a>Unit|The [ProductPartition](productpartition.md) is a product group unit. A unit is also referred to as a leaf node in a tree.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [ProductPartition](productpartition.md)  

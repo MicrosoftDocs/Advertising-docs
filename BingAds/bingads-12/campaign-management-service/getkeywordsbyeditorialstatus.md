@@ -26,7 +26,6 @@ The *GetKeywordsByEditorialStatusRequest* object defines the [body](#request-bod
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that contains the keywords to retrieve.|**long**|
 |<a name="editorialstatus"></a>EditorialStatus|The review status of the keywords to retrieve.|[KeywordEditorialStatus](keywordeditorialstatus.md)|
-|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [Keyword](keyword.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[KeywordAdditionalField](keywordadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -48,7 +47,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">GetKeywordsByEditorialStatus</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -59,10 +58,9 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetKeywordsByEditorialStatusRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetKeywordsByEditorialStatusRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AdGroupId>ValueHere</AdGroupId>
       <EditorialStatus>ValueHere</EditorialStatus>
-      <ReturnAdditionalFields i:nil="false">ValueHere</ReturnAdditionalFields>
     </GetKeywordsByEditorialStatusRequest>
   </s:Body>
 </s:Envelope>
@@ -73,11 +71,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetKeywordsByEditorialStatusResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetKeywordsByEditorialStatusResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <Keywords d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <Keyword>
           <Bid d4p1:nil="false">
@@ -105,11 +103,11 @@ The following template shows the order of the [body](#response-body) and [header
           </BiddingScheme>
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e238="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e238:AppUrl>
-              <e238:OsType d4p1:nil="false">ValueHere</e238:OsType>
-              <e238:Url d4p1:nil="false">ValueHere</e238:Url>
-            </e238:AppUrl>
+          <FinalAppUrls xmlns:e564="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e564:AppUrl>
+              <e564:OsType d4p1:nil="false">ValueHere</e564:OsType>
+              <e564:Url d4p1:nil="false">ValueHere</e564:Url>
+            </e564:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -117,11 +115,11 @@ The following template shows the order of the [body](#response-body) and [header
           <FinalUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e239="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e239:KeyValuePairOfstringstring>
-              <e239:key d4p1:nil="false">ValueHere</e239:key>
-              <e239:value d4p1:nil="false">ValueHere</e239:value>
-            </e239:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e565="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e565:KeyValuePairOfstringstring>
+              <e565:key d4p1:nil="false">ValueHere</e565:key>
+              <e565:value d4p1:nil="false">ValueHere</e565:value>
+            </e565:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <MatchType d4p1:nil="false">ValueHere</MatchType>
@@ -131,13 +129,13 @@ The following template shows the order of the [body](#response-body) and [header
           <Status d4p1:nil="false">ValueHere</Status>
           <Text d4p1:nil="false">ValueHere</Text>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e240="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e240:Parameters d4p1:nil="false">
-              <e240:CustomParameter>
-                <e240:Key d4p1:nil="false">ValueHere</e240:Key>
-                <e240:Value d4p1:nil="false">ValueHere</e240:Value>
-              </e240:CustomParameter>
-            </e240:Parameters>
+          <UrlCustomParameters xmlns:e566="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e566:Parameters d4p1:nil="false">
+              <e566:CustomParameter>
+                <e566:Key d4p1:nil="false">ValueHere</e566:Key>
+                <e566:Value d4p1:nil="false">ValueHere</e566:Value>
+              </e566:CustomParameter>
+            </e566:Parameters>
           </UrlCustomParameters>
         </Keyword>
       </Keywords>
@@ -151,14 +149,12 @@ The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.m
 ```csharp
 public async Task<GetKeywordsByEditorialStatusResponse> GetKeywordsByEditorialStatusAsync(
 	long adGroupId,
-	KeywordEditorialStatus editorialStatus,
-	KeywordAdditionalField? returnAdditionalFields)
+	KeywordEditorialStatus editorialStatus)
 {
 	var request = new GetKeywordsByEditorialStatusRequest
 	{
 		AdGroupId = adGroupId,
-		EditorialStatus = editorialStatus,
-		ReturnAdditionalFields = returnAdditionalFields
+		EditorialStatus = editorialStatus
 	};
 
 	return (await CampaignManagementService.CallAsync((s, r) => s.GetKeywordsByEditorialStatusAsync(r), request));
@@ -167,14 +163,12 @@ public async Task<GetKeywordsByEditorialStatusResponse> GetKeywordsByEditorialSt
 ```java
 static GetKeywordsByEditorialStatusResponse getKeywordsByEditorialStatus(
 	java.lang.Long adGroupId,
-	KeywordEditorialStatus editorialStatus,
-	ArrayList<KeywordAdditionalField> returnAdditionalFields) throws RemoteException, Exception
+	KeywordEditorialStatus editorialStatus) throws RemoteException, Exception
 {
 	GetKeywordsByEditorialStatusRequest request = new GetKeywordsByEditorialStatusRequest();
 
 	request.setAdGroupId(adGroupId);
 	request.setEditorialStatus(editorialStatus);
-	request.setReturnAdditionalFields(returnAdditionalFields);
 
 	return CampaignManagementService.getService().getKeywordsByEditorialStatus(request);
 }
@@ -182,8 +176,7 @@ static GetKeywordsByEditorialStatusResponse getKeywordsByEditorialStatus(
 ```php
 static function GetKeywordsByEditorialStatus(
 	$adGroupId,
-	$editorialStatus,
-	$returnAdditionalFields)
+	$editorialStatus)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
@@ -192,7 +185,6 @@ static function GetKeywordsByEditorialStatus(
 
 	$request->AdGroupId = $adGroupId;
 	$request->EditorialStatus = $editorialStatus;
-	$request->ReturnAdditionalFields = $returnAdditionalFields;
 
 	return $GLOBALS['CampaignManagementProxy']->GetService()->GetKeywordsByEditorialStatus($request);
 }
@@ -200,11 +192,10 @@ static function GetKeywordsByEditorialStatus(
 ```python
 response=campaignmanagement_service.GetKeywordsByEditorialStatus(
 	AdGroupId=AdGroupId,
-	EditorialStatus=EditorialStatus,
-	ReturnAdditionalFields=ReturnAdditionalFields)
+	EditorialStatus=EditorialStatus)
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

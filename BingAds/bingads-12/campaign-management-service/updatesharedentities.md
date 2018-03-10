@@ -46,7 +46,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">UpdateSharedEntities</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -57,15 +57,15 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <UpdateSharedEntitiesRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <UpdateSharedEntitiesRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <SharedEntities i:nil="false">
         <SharedEntity i:type="-- derived type specified here with the appropriate prefix --">
           <AssociationCount i:nil="false">ValueHere</AssociationCount>
-          <ForwardCompatibilityMap xmlns:e304="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e304:KeyValuePairOfstringstring>
-              <e304:key i:nil="false">ValueHere</e304:key>
-              <e304:value i:nil="false">ValueHere</e304:value>
-            </e304:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e630="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e630:KeyValuePairOfstringstring>
+              <e630:key i:nil="false">ValueHere</e630:key>
+              <e630:value i:nil="false">ValueHere</e630:value>
+            </e630:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Name i:nil="false">ValueHere</Name>
@@ -84,22 +84,22 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <UpdateSharedEntitiesResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <UpdateSharedEntitiesResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <PartialErrors d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <BatchError d4p1:type="-- derived type specified here with the appropriate prefix --">
           <Code>ValueHere</Code>
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e305="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e305:KeyValuePairOfstringstring>
-              <e305:key d4p1:nil="false">ValueHere</e305:key>
-              <e305:value d4p1:nil="false">ValueHere</e305:value>
-            </e305:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e631="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e631:KeyValuePairOfstringstring>
+              <e631:key d4p1:nil="false">ValueHere</e631:key>
+              <e631:value d4p1:nil="false">ValueHere</e631:value>
+            </e631:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -162,6 +162,6 @@ response=campaignmanagement_service.UpdateSharedEntities(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

@@ -30,8 +30,8 @@ Defines elements to specify whether the bulk service should return upload errors
 |<a name="errorsonly"></a>ErrorsOnly|Return errors only in the bulk upload response file.|
 
 ## Requirements
-Service: [BulkService.svc v11](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [GetBulkUploadUrl](getbulkuploadurl.md)  

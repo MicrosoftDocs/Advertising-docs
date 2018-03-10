@@ -47,7 +47,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">GetBudgetsByIds</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -58,7 +58,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetBudgetsByIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetBudgetsByIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <BudgetIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:long>ValueHere</a1:long>
       </BudgetIds>
@@ -72,11 +72,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetBudgetsByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetBudgetsByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <Budgets d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <Budget>
           <Amount d4p1:nil="false">ValueHere</Amount>
@@ -92,11 +92,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e221="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e221:KeyValuePairOfstringstring>
-              <e221:key d4p1:nil="false">ValueHere</e221:key>
-              <e221:value d4p1:nil="false">ValueHere</e221:value>
-            </e221:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e547="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e547:KeyValuePairOfstringstring>
+              <e547:key d4p1:nil="false">ValueHere</e547:key>
+              <e547:value d4p1:nil="false">ValueHere</e547:value>
+            </e547:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -159,6 +159,6 @@ response=campaignmanagement_service.GetBudgetsByIds(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

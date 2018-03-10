@@ -47,7 +47,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">UpdateCampaigns</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -58,7 +58,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <UpdateCampaignsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <UpdateCampaignsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AccountId>ValueHere</AccountId>
       <Campaigns i:nil="false">
         <Campaign>
@@ -85,25 +85,26 @@ The following template shows the order of the [body](#request-body) and [header]
           <BudgetType i:nil="false">ValueHere</BudgetType>
           <DailyBudget i:nil="false">ValueHere</DailyBudget>
           <Description i:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e295="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e295:KeyValuePairOfstringstring>
-              <e295:key i:nil="false">ValueHere</e295:key>
-              <e295:value i:nil="false">ValueHere</e295:value>
-            </e295:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e621="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e621:KeyValuePairOfstringstring>
+              <e621:key i:nil="false">ValueHere</e621:key>
+              <e621:value i:nil="false">ValueHere</e621:value>
+            </e621:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Name i:nil="false">ValueHere</Name>
           <NativeBidAdjustment i:nil="false">ValueHere</NativeBidAdjustment>
           <Status i:nil="false">ValueHere</Status>
+          <SubType i:nil="false">ValueHere</SubType>
           <TimeZone i:nil="false">ValueHere</TimeZone>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e296="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e296:Parameters i:nil="false">
-              <e296:CustomParameter>
-                <e296:Key i:nil="false">ValueHere</e296:Key>
-                <e296:Value i:nil="false">ValueHere</e296:Value>
-              </e296:CustomParameter>
-            </e296:Parameters>
+          <UrlCustomParameters xmlns:e622="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+            <e622:Parameters i:nil="false">
+              <e622:CustomParameter>
+                <e622:Key i:nil="false">ValueHere</e622:Key>
+                <e622:Value i:nil="false">ValueHere</e622:Value>
+              </e622:CustomParameter>
+            </e622:Parameters>
           </UrlCustomParameters>
           <CampaignType i:nil="false">ValueHere</CampaignType>
           <Settings i:nil="false">
@@ -124,6 +125,10 @@ The following template shows the order of the [body](#request-body) and [header]
                   <TargetAll>ValueHere</TargetAll>
                 </TargetSettingDetail>
               </Details>
+              <!--These fields are applicable if the derived type attribute is set to CoOpSetting-->
+              <BidBoostValue i:nil="false">ValueHere</BidBoostValue>
+              <BidMaxValue i:nil="false">ValueHere</BidMaxValue>
+              <BidOption i:nil="false">ValueHere</BidOption>
             </Setting>
           </Settings>
           <BudgetId i:nil="false">ValueHere</BudgetId>
@@ -142,22 +147,22 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <UpdateCampaignsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <UpdateCampaignsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <PartialErrors d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <BatchError d4p1:type="-- derived type specified here with the appropriate prefix --">
           <Code>ValueHere</Code>
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e297="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e297:KeyValuePairOfstringstring>
-              <e297:key d4p1:nil="false">ValueHere</e297:key>
-              <e297:value d4p1:nil="false">ValueHere</e297:value>
-            </e297:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e623="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e623:KeyValuePairOfstringstring>
+              <e623:key d4p1:nil="false">ValueHere</e623:key>
+              <e623:value d4p1:nil="false">ValueHere</e623:value>
+            </e623:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -227,6 +232,6 @@ response=campaignmanagement_service.UpdateCampaigns(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

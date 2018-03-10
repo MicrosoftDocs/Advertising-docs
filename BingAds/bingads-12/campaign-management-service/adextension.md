@@ -29,7 +29,7 @@ Do not try to instantiate an *AdExtension*. You can create one or more following
 <xs:complexType name="AdExtension" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element minOccurs="0" name="DevicePreference" nillable="true" type="xs:long" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q40:ArrayOfKeyValuePairOfstringstring" xmlns:q40="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q44:ArrayOfKeyValuePairOfstringstring" xmlns:q44="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Scheduling" nillable="true" type="tns:Schedule" />
     <xs:element minOccurs="0" name="Status" nillable="true" type="tns:AdExtensionStatus" />
@@ -63,8 +63,8 @@ If you generate the SOAP manually, use the *type* attribute of the `<AdExtension
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [AddAdExtensions](addadextensions.md)  

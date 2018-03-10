@@ -19,7 +19,7 @@ Defines a rule expression that depends on the string values of the Url or Referr
     <xs:extension base="tns:RuleItem">
       <xs:sequence>
         <xs:element minOccurs="0" name="Operand" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="Operator" type="q3:StringOperator" xmlns:q3="https://bingads.microsoft.com/CampaignManagement/v11" />
+        <xs:element minOccurs="0" name="Operator" type="q3:StringOperator" xmlns:q3="https://bingads.microsoft.com/CampaignManagement/v12" />
         <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:extension>
@@ -47,6 +47,6 @@ The [StringRuleItem](stringruleitem.md) object derives from the [RuleItem](rulei
 |<a name="type"></a>Type|The type of rule item. For more information, see [RuleItem Data Object Remarks](ruleitem.md#remarks).|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12  
 

@@ -21,7 +21,7 @@ Defines a remarketing list.
   <xs:complexContent mixed="false">
     <xs:extension base="tns:Audience">
       <xs:sequence>
-        <xs:element minOccurs="0" name="Rule" nillable="true" type="q101:RemarketingRule" xmlns:q101="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" />
+        <xs:element minOccurs="0" name="Rule" nillable="true" type="q105:RemarketingRule" xmlns:q105="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
         <xs:element minOccurs="0" name="TagId" nillable="true" type="xs:long" />
       </xs:sequence>
     </xs:extension>
@@ -56,6 +56,6 @@ The [RemarketingList](remarketinglist.md) object derives from the [Audience](aud
 |<a name="type"></a>Type|The type of the audience. This value is *RemarketingList* when you retrieve a remarketing list audience. For more information about audience types, see the [Audience Data Object Remarks](audience.md#remarks).<br /><br />**Add:** Read-only<br/>**Update:** Read-only|[AudienceType](audiencetype.md)|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

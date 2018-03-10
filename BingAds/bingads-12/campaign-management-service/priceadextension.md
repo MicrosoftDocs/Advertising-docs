@@ -27,7 +27,7 @@ You can associate a price ad extension with the account or with campaigns and ad
         <xs:element name="PriceExtensionType" type="tns:PriceExtensionType" />
         <xs:element name="TableRows" nillable="true" type="tns:ArrayOfPriceTableRow" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q59:CustomParameters" xmlns:q59="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" />
+        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q63:CustomParameters" xmlns:q63="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -62,6 +62,6 @@ The [PriceAdExtension](priceadextension.md) object derives from the [AdExtension
 |<a name="version"></a>Version|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it's revised.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**int**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

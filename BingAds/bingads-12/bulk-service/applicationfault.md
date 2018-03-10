@@ -28,6 +28,6 @@ Defines the base object from which all fault detail objects derive.
 |<a name="trackingid"></a>TrackingId|The identifier of the log entry that contains the details of the API call.|**string**|
 
 ## Requirements
-Service: [BulkService.svc v11](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
+Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
 Namespace: https\://adapi.microsoft.com  
 

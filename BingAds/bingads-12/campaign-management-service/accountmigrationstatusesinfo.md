@@ -17,7 +17,7 @@ Defines an object that contains migration status for an account.
 <xs:complexType name="AccountMigrationStatusesInfo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element name="AccountId" type="xs:long" />
-    <xs:element minOccurs="0" name="MigrationStatusInfo" nillable="true" type="tns:ArrayOfMigrationStatusInfo" />
+    <xs:element minOccurs="0" name="MigrationStatusInfos" nillable="true" type="tns:ArrayOfMigrationStatusInfo" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -27,11 +27,11 @@ Defines an object that contains migration status for an account.
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The Bing Ads identifier of the account.|**long**|
-|<a name="migrationstatusinfo"></a>MigrationStatusInfo|The list of migration status info for the corresponding account.|[MigrationStatusInfo](migrationstatusinfo.md) array|
+|<a name="migrationstatusinfos"></a>MigrationStatusInfos|Reserved.|[MigrationStatusInfo](migrationstatusinfo.md) array|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [GetAccountMigrationStatuses](getaccountmigrationstatuses.md)  

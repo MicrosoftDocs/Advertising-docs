@@ -26,6 +26,7 @@ The *AddAdGroupsRequest* object defines the [body](#request-body) and [header](#
 |-----------|---------------|-------------|
 |<a name="adgroups"></a>AdGroups|An array of [AdGroup](adgroup.md) objects to add to the specified campaign.<br /><br />You can add a maximum of 1,000 ad groups in a single call. Each campaign can have up to 20,000 ad groups.|[AdGroup](adgroup.md) array|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign to add the ad groups to.|**long**|
+|<a name="returninheritedbidstrategytypes"></a>ReturnInheritedBidStrategyTypes|Reserved.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -38,6 +39,7 @@ The *AddAdGroupsResponse* object defines the [body](#response-body) and [header]
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroupids"></a>AdGroupIds|A list of unique system identifiers corresponding to the ad groups that were added.<br /><br />The list of identifiers corresponds directly to the list of ad groups in the request. Items of the list may be returned as null. For each list index where an ad group was not added, the corresponding element will be null.|**long** array|
+|<a name="inheritedbidstrategytypes"></a>InheritedBidStrategyTypes|Reserved.|**string** array|
 |<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
@@ -48,7 +50,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">AddAdGroups</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -59,7 +61,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <AddAdGroupsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <AddAdGroupsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <CampaignId>ValueHere</CampaignId>
       <AdGroups i:nil="false">
         <AdGroup>
@@ -97,11 +99,11 @@ The following template shows the order of the [body](#request-body) and [header]
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e118="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e118:KeyValuePairOfstringstring>
-              <e118:key i:nil="false">ValueHere</e118:key>
-              <e118:value i:nil="false">ValueHere</e118:value>
-            </e118:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e444="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e444:KeyValuePairOfstringstring>
+              <e444:key i:nil="false">ValueHere</e444:key>
+              <e444:value i:nil="false">ValueHere</e444:value>
+            </e444:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Language i:nil="false">ValueHere</Language>
@@ -132,6 +134,10 @@ The following template shows the order of the [body](#request-body) and [header]
                   <TargetAll>ValueHere</TargetAll>
                 </TargetSettingDetail>
               </Details>
+              <!--These fields are applicable if the derived type attribute is set to CoOpSetting-->
+              <BidBoostValue i:nil="false">ValueHere</BidBoostValue>
+              <BidMaxValue i:nil="false">ValueHere</BidMaxValue>
+              <BidOption i:nil="false">ValueHere</BidOption>
             </Setting>
           </Settings>
           <StartDate i:nil="false">
@@ -141,16 +147,17 @@ The following template shows the order of the [body](#request-body) and [header]
           </StartDate>
           <Status i:nil="false">ValueHere</Status>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e119="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e119:Parameters i:nil="false">
-              <e119:CustomParameter>
-                <e119:Key i:nil="false">ValueHere</e119:Key>
-                <e119:Value i:nil="false">ValueHere</e119:Value>
-              </e119:CustomParameter>
-            </e119:Parameters>
+          <UrlCustomParameters xmlns:e445="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+            <e445:Parameters i:nil="false">
+              <e445:CustomParameter>
+                <e445:Key i:nil="false">ValueHere</e445:Key>
+                <e445:Value i:nil="false">ValueHere</e445:Value>
+              </e445:CustomParameter>
+            </e445:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
+      <ReturnInheritedBidStrategyTypes i:nil="false">ValueHere</ReturnInheritedBidStrategyTypes>
     </AddAdGroupsRequest>
   </s:Body>
 </s:Envelope>
@@ -161,25 +168,28 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <AddAdGroupsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <AddAdGroupsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AdGroupIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <a1:long>ValueHere</a1:long>
       </AdGroupIds>
+      <InheritedBidStrategyTypes d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <a1:string>ValueHere</a1:string>
+      </InheritedBidStrategyTypes>
       <PartialErrors d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <BatchError d4p1:type="-- derived type specified here with the appropriate prefix --">
           <Code>ValueHere</Code>
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e120="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e120:KeyValuePairOfstringstring>
-              <e120:key d4p1:nil="false">ValueHere</e120:key>
-              <e120:value d4p1:nil="false">ValueHere</e120:value>
-            </e120:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e446="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e446:KeyValuePairOfstringstring>
+              <e446:key d4p1:nil="false">ValueHere</e446:key>
+              <e446:value d4p1:nil="false">ValueHere</e446:value>
+            </e446:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -202,12 +212,14 @@ The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.m
 ```csharp
 public async Task<AddAdGroupsResponse> AddAdGroupsAsync(
 	long campaignId,
-	IList<AdGroup> adGroups)
+	IList<AdGroup> adGroups,
+	bool? returnInheritedBidStrategyTypes)
 {
 	var request = new AddAdGroupsRequest
 	{
 		CampaignId = campaignId,
-		AdGroups = adGroups
+		AdGroups = adGroups,
+		ReturnInheritedBidStrategyTypes = returnInheritedBidStrategyTypes
 	};
 
 	return (await CampaignManagementService.CallAsync((s, r) => s.AddAdGroupsAsync(r), request));
@@ -216,12 +228,14 @@ public async Task<AddAdGroupsResponse> AddAdGroupsAsync(
 ```java
 static AddAdGroupsResponse addAdGroups(
 	java.lang.Long campaignId,
-	ArrayOfAdGroup adGroups) throws RemoteException, Exception
+	ArrayOfAdGroup adGroups,
+	boolean returnInheritedBidStrategyTypes) throws RemoteException, Exception
 {
 	AddAdGroupsRequest request = new AddAdGroupsRequest();
 
 	request.setCampaignId(campaignId);
 	request.setAdGroups(adGroups);
+	request.setReturnInheritedBidStrategyTypes(returnInheritedBidStrategyTypes);
 
 	return CampaignManagementService.getService().addAdGroups(request);
 }
@@ -229,7 +243,8 @@ static AddAdGroupsResponse addAdGroups(
 ```php
 static function AddAdGroups(
 	$campaignId,
-	$adGroups)
+	$adGroups,
+	$returnInheritedBidStrategyTypes)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
@@ -238,6 +253,7 @@ static function AddAdGroups(
 
 	$request->CampaignId = $campaignId;
 	$request->AdGroups = $adGroups;
+	$request->ReturnInheritedBidStrategyTypes = $returnInheritedBidStrategyTypes;
 
 	return $GLOBALS['CampaignManagementProxy']->GetService()->AddAdGroups($request);
 }
@@ -245,10 +261,11 @@ static function AddAdGroups(
 ```python
 response=campaignmanagement_service.AddAdGroups(
 	CampaignId=CampaignId,
-	AdGroups=AdGroups)
+	AdGroups=AdGroups,
+	ReturnInheritedBidStrategyTypes=ReturnInheritedBidStrategyTypes)
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

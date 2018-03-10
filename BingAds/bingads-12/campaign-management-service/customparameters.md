@@ -28,8 +28,8 @@ Defines a collection of key and value custom parameters for URL tracking. Used f
 |<a name="parameters"></a>Parameters|The collection of key and value custom parameters for URL tracking.<br /><br />You can have a maximum of 3 [CustomParameter](customparameter.md) key and value pairs.<br/><br/>**Add:** Required<br/>**Update:** Optional|[CustomParameter](customparameter.md) array|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12  
 
 ## Used By
 [Ad](ad.md)  

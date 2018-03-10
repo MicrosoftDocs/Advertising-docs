@@ -57,6 +57,7 @@ The Campaign Management service defines the following data objects.
 |[CampaignNegativeSites](campaignnegativesites.md)|Defines an object that contains the negative site URLs of a campaign.|
 |[ConversionGoal](conversiongoal.md)|Defines the base object of a conversion goal.|
 |[ConversionGoalRevenue](conversiongoalrevenue.md)|Defines properties for revenue that can be tracked by a conversion goal.|
+|[CoOpSetting](coopsetting.md)|Reserved.|
 |[Criterion](criterion.md)|Defines the base object of a criterion.|
 |[CriterionBid](criterionbid.md)|Defines a base class for criterion bids.|
 |[CustomAudience](customaudience.md)|Defines a custom audience.|

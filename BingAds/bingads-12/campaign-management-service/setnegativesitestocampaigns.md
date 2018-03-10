@@ -47,7 +47,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">SetNegativeSitesToCampaigns</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -58,7 +58,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <SetNegativeSitesToCampaignsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <SetNegativeSitesToCampaignsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AccountId>ValueHere</AccountId>
       <CampaignNegativeSites i:nil="false">
         <CampaignNegativeSites>
@@ -78,22 +78,22 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <SetNegativeSitesToCampaignsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <SetNegativeSitesToCampaignsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <PartialErrors d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <BatchError d4p1:type="-- derived type specified here with the appropriate prefix --">
           <Code>ValueHere</Code>
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e261="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e261:KeyValuePairOfstringstring>
-              <e261:key d4p1:nil="false">ValueHere</e261:key>
-              <e261:value d4p1:nil="false">ValueHere</e261:value>
-            </e261:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e587="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e587:KeyValuePairOfstringstring>
+              <e587:key d4p1:nil="false">ValueHere</e587:key>
+              <e587:value d4p1:nil="false">ValueHere</e587:value>
+            </e587:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -163,6 +163,6 @@ response=campaignmanagement_service.SetNegativeSitesToCampaigns(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

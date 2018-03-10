@@ -51,6 +51,6 @@ The [CustomAudience](customaudience.md) object derives from the [Audience](audie
 |<a name="type"></a>Type|The type of the audience. This value is *Custom* when you retrieve a custom audience. For more information about audience types, see the [Audience Data Object Remarks](audience.md#remarks).<br /><br />**Add:** Not supported<br/>**Update:** Read-only|[AudienceType](audiencetype.md)|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

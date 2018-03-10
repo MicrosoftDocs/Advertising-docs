@@ -43,6 +43,6 @@ The [FixedBid](fixedbid.md) object derives from the [CriterionBid](criterionbid.
 |<a name="type"></a>Type|The type of the criterion bid. This value is *FixedBid* when you retrieve a fixed bid criterion. For more information about criterion types, see the [CriterionBid Data Object Remarks](criterionbid.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

@@ -92,8 +92,8 @@ Defines the possible ad extension types.
 |<a name="structuredsnippetadextension"></a>StructuredSnippetAdExtension|An ad extension that contains a header and values that tell customers more about your business. For more information, see [StructuredSnippetAdExtension](structuredsnippetadextension.md).|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [GetAdExtensionIdsByAccountId](getadextensionidsbyaccountid.md)  

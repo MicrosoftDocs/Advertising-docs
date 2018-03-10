@@ -21,7 +21,7 @@ The *Webpage* criterion can be included within [BiddableAdGroupCriterion](biddab
 ```xml
 <xs:complexType name="Webpage" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:complexContent mixed="false">
-    <xs:extension base="q1:Criterion" xmlns:q1="https://bingads.microsoft.com/CampaignManagement/v11">
+    <xs:extension base="q1:Criterion" xmlns:q1="https://bingads.microsoft.com/CampaignManagement/v12">
       <xs:sequence>
         <xs:element minOccurs="0" name="Parameter" nillable="true" type="tns:WebpageParameter" />
       </xs:sequence>
@@ -48,6 +48,6 @@ The [Webpage](webpage.md) object derives from the [Criterion](criterion.md) obje
 |<a name="type"></a>Type|The type of the criterion. This value is *Webpage* when you retrieve a webpage criterion. For more information about criterion types, see the [Criterion Data Object Remarks](criterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12  
 

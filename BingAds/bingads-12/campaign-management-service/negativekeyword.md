@@ -57,8 +57,8 @@ The [NegativeKeyword](negativekeyword.md) object derives from the [SharedListIte
 |<a name="type"></a>Type|The type of the shared list item.  This value is *NegativeKeyword* when you retrieve a negative keyword. For more information about shared list item types, see [SharedListItem Data Object Remarks](sharedlistitem.md#remarks).<br/><br/>**Add:** Read-only|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [EntityNegativeKeyword](entitynegativekeyword.md)  

@@ -1,5 +1,5 @@
 ---
-title: TargetSetting Data Object - Campaign Management
+title: CoOpSetting Data Object - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
@@ -9,16 +9,18 @@ description: Reserved.
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
 
-# TargetSetting Data Object - Campaign Management
+# CoOpSetting Data Object - Campaign Management
 Reserved.
 
 ## Syntax
 ```xml
-<xs:complexType name="TargetSetting" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:complexType name="CoOpSetting" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:complexContent mixed="false">
     <xs:extension base="tns:Setting">
       <xs:sequence>
-        <xs:element minOccurs="0" name="Details" nillable="true" type="tns:ArrayOfTargetSettingDetail" />
+        <xs:element minOccurs="0" name="BidBoostValue" nillable="true" type="xs:double" />
+        <xs:element minOccurs="0" name="BidMaxValue" nillable="true" type="xs:double" />
+        <xs:element minOccurs="0" name="BidOption" nillable="true" type="tns:BidOption" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -29,14 +31,16 @@ Reserved.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="details"></a>Details|Reserved.|[TargetSettingDetail](targetsettingdetail.md) array|
+|<a name="bidboostvalue"></a>BidBoostValue|Reserved.|**double**|
+|<a name="bidmaxvalue"></a>BidMaxValue|Reserved.|**double**|
+|<a name="bidoption"></a>BidOption|Reserved.|[BidOption](bidoption.md)|
 
-The [TargetSetting](targetsetting.md) object has [Inherited Elements](#inheritedelements).
+The [CoOpSetting](coopsetting.md) object has [Inherited Elements](#inheritedelements).
 
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementssetting"></a>Inherited Elements from Setting
-The [TargetSetting](targetsetting.md) object derives from the [Setting](setting.md) object, and inherits the following elements. The descriptions below are specific to [TargetSetting](targetsetting.md), and might not apply to other objects that inherit the same elements from the [Setting](setting.md) object.  
+The [CoOpSetting](coopsetting.md) object derives from the [Setting](setting.md) object, and inherits the following elements. The descriptions below are specific to [CoOpSetting](coopsetting.md), and might not apply to other objects that inherit the same elements from the [Setting](setting.md) object.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|

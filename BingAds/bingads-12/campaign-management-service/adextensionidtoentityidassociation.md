@@ -30,8 +30,8 @@ Defines an object that associates an ad extension to a supported entity, for exa
 |<a name="entityid"></a>EntityId|The identifier of an entity associated with the ad extension.|**long**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [DeleteAdExtensionsAssociations](deleteadextensionsassociations.md)  

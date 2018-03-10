@@ -26,6 +26,7 @@ The *AddKeywordsRequest* object defines the [body](#request-body) and [header](#
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group to add the keywords to.|**long**|
 |<a name="keywords"></a>Keywords|The list of keywords to add to the ad group.<br /><br />You can add a maximum of 1,000 keywords to an ad group per service request.|[Keyword](keyword.md) array|
+|<a name="returninheritedbidstrategytypes"></a>ReturnInheritedBidStrategyTypes|Reserved.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -37,6 +38,7 @@ The *AddKeywordsResponse* object defines the [body](#response-body) and [header]
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
+|<a name="inheritedbidstrategytypes"></a>InheritedBidStrategyTypes|Reserved.|**string** array|
 |<a name="keywordids"></a>KeywordIds|A list of unique system identifiers corresponding to the keywords that were added.<br /><br />The list of identifiers corresponds directly to the list of keywords in the request. Items of the list may be returned as null. For each list index where a keyword was not added, the corresponding element will be null.|**long** array|
 |<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
@@ -48,7 +50,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">AddKeywords</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -59,7 +61,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <AddKeywordsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <AddKeywordsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AdGroupId>ValueHere</AdGroupId>
       <Keywords i:nil="false">
         <Keyword>
@@ -88,11 +90,11 @@ The following template shows the order of the [body](#request-body) and [header]
           </BiddingScheme>
           <DestinationUrl i:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus i:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e137="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e137:AppUrl>
-              <e137:OsType i:nil="false">ValueHere</e137:OsType>
-              <e137:Url i:nil="false">ValueHere</e137:Url>
-            </e137:AppUrl>
+          <FinalAppUrls xmlns:e463="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+            <e463:AppUrl>
+              <e463:OsType i:nil="false">ValueHere</e463:OsType>
+              <e463:Url i:nil="false">ValueHere</e463:Url>
+            </e463:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -100,11 +102,11 @@ The following template shows the order of the [body](#request-body) and [header]
           <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e138="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e138:KeyValuePairOfstringstring>
-              <e138:key i:nil="false">ValueHere</e138:key>
-              <e138:value i:nil="false">ValueHere</e138:value>
-            </e138:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e464="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e464:KeyValuePairOfstringstring>
+              <e464:key i:nil="false">ValueHere</e464:key>
+              <e464:value i:nil="false">ValueHere</e464:value>
+            </e464:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <MatchType i:nil="false">ValueHere</MatchType>
@@ -114,16 +116,17 @@ The following template shows the order of the [body](#request-body) and [header]
           <Status i:nil="false">ValueHere</Status>
           <Text i:nil="false">ValueHere</Text>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e139="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e139:Parameters i:nil="false">
-              <e139:CustomParameter>
-                <e139:Key i:nil="false">ValueHere</e139:Key>
-                <e139:Value i:nil="false">ValueHere</e139:Value>
-              </e139:CustomParameter>
-            </e139:Parameters>
+          <UrlCustomParameters xmlns:e465="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+            <e465:Parameters i:nil="false">
+              <e465:CustomParameter>
+                <e465:Key i:nil="false">ValueHere</e465:Key>
+                <e465:Value i:nil="false">ValueHere</e465:Value>
+              </e465:CustomParameter>
+            </e465:Parameters>
           </UrlCustomParameters>
         </Keyword>
       </Keywords>
+      <ReturnInheritedBidStrategyTypes i:nil="false">ValueHere</ReturnInheritedBidStrategyTypes>
     </AddKeywordsRequest>
   </s:Body>
 </s:Envelope>
@@ -134,11 +137,14 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <AddKeywordsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <AddKeywordsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
+      <InheritedBidStrategyTypes d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <a1:string>ValueHere</a1:string>
+      </InheritedBidStrategyTypes>
       <KeywordIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <a1:long>ValueHere</a1:long>
       </KeywordIds>
@@ -148,11 +154,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e140="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e140:KeyValuePairOfstringstring>
-              <e140:key d4p1:nil="false">ValueHere</e140:key>
-              <e140:value d4p1:nil="false">ValueHere</e140:value>
-            </e140:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e466="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e466:KeyValuePairOfstringstring>
+              <e466:key d4p1:nil="false">ValueHere</e466:key>
+              <e466:value d4p1:nil="false">ValueHere</e466:value>
+            </e466:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -175,12 +181,14 @@ The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.m
 ```csharp
 public async Task<AddKeywordsResponse> AddKeywordsAsync(
 	long adGroupId,
-	IList<Keyword> keywords)
+	IList<Keyword> keywords,
+	bool? returnInheritedBidStrategyTypes)
 {
 	var request = new AddKeywordsRequest
 	{
 		AdGroupId = adGroupId,
-		Keywords = keywords
+		Keywords = keywords,
+		ReturnInheritedBidStrategyTypes = returnInheritedBidStrategyTypes
 	};
 
 	return (await CampaignManagementService.CallAsync((s, r) => s.AddKeywordsAsync(r), request));
@@ -189,12 +197,14 @@ public async Task<AddKeywordsResponse> AddKeywordsAsync(
 ```java
 static AddKeywordsResponse addKeywords(
 	java.lang.Long adGroupId,
-	ArrayOfKeyword keywords) throws RemoteException, Exception
+	ArrayOfKeyword keywords,
+	boolean returnInheritedBidStrategyTypes) throws RemoteException, Exception
 {
 	AddKeywordsRequest request = new AddKeywordsRequest();
 
 	request.setAdGroupId(adGroupId);
 	request.setKeywords(keywords);
+	request.setReturnInheritedBidStrategyTypes(returnInheritedBidStrategyTypes);
 
 	return CampaignManagementService.getService().addKeywords(request);
 }
@@ -202,7 +212,8 @@ static AddKeywordsResponse addKeywords(
 ```php
 static function AddKeywords(
 	$adGroupId,
-	$keywords)
+	$keywords,
+	$returnInheritedBidStrategyTypes)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
@@ -211,6 +222,7 @@ static function AddKeywords(
 
 	$request->AdGroupId = $adGroupId;
 	$request->Keywords = $keywords;
+	$request->ReturnInheritedBidStrategyTypes = $returnInheritedBidStrategyTypes;
 
 	return $GLOBALS['CampaignManagementProxy']->GetService()->AddKeywords($request);
 }
@@ -218,10 +230,11 @@ static function AddKeywords(
 ```python
 response=campaignmanagement_service.AddKeywords(
 	AdGroupId=AdGroupId,
-	Keywords=Keywords)
+	Keywords=Keywords,
+	ReturnInheritedBidStrategyTypes=ReturnInheritedBidStrategyTypes)
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

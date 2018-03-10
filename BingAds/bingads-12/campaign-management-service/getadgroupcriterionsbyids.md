@@ -49,7 +49,7 @@ The following template shows the order of the [body](#request-body) and [header]
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">GetAdGroupCriterionsByIds</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -60,7 +60,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetAdGroupCriterionsByIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetAdGroupCriterionsByIdsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AdGroupCriterionIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:long>ValueHere</a1:long>
       </AdGroupCriterionIds>
@@ -77,11 +77,11 @@ The following template shows the order of the [body](#response-body) and [header
 
 ```xml
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <TrackingId d3p1:nil="false" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</TrackingId>
   </s:Header>
   <s:Body>
-    <GetAdGroupCriterionsByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetAdGroupCriterionsByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AdGroupCriterions d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <AdGroupCriterion d4p1:type="-- derived type specified here with the appropriate prefix --">
           <AdGroupId>ValueHere</AdGroupId>
@@ -136,14 +136,14 @@ The following template shows the order of the [body](#response-body) and [header
             <ProfileId>ValueHere</ProfileId>
             <ProfileType>ValueHere</ProfileType>
             <!--This field is applicable if the derived type attribute is set to Webpage-->
-            <Parameter xmlns:e200="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-              <e200:Conditions d4p1:nil="false">
-                <e200:WebpageCondition>
-                  <e200:Argument d4p1:nil="false">ValueHere</e200:Argument>
-                  <e200:Operand>ValueHere</e200:Operand>
-                </e200:WebpageCondition>
-              </e200:Conditions>
-              <e200:CriterionName d4p1:nil="false">ValueHere</e200:CriterionName>
+            <Parameter xmlns:e526="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+              <e526:Conditions d4p1:nil="false">
+                <e526:WebpageCondition>
+                  <e526:Argument d4p1:nil="false">ValueHere</e526:Argument>
+                  <e526:Operand>ValueHere</e526:Operand>
+                </e526:WebpageCondition>
+              </e526:Conditions>
+              <e526:CriterionName d4p1:nil="false">ValueHere</e526:CriterionName>
             </Parameter>
           </Criterion>
           <Id d4p1:nil="false">ValueHere</Id>
@@ -159,11 +159,11 @@ The following template shows the order of the [body](#response-body) and [header
           </CriterionBid>
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e201="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e201:AppUrl>
-              <e201:OsType d4p1:nil="false">ValueHere</e201:OsType>
-              <e201:Url d4p1:nil="false">ValueHere</e201:Url>
-            </e201:AppUrl>
+          <FinalAppUrls xmlns:e527="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e527:AppUrl>
+              <e527:OsType d4p1:nil="false">ValueHere</e527:OsType>
+              <e527:Url d4p1:nil="false">ValueHere</e527:Url>
+            </e527:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -172,13 +172,13 @@ The following template shows the order of the [body](#response-body) and [header
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e202="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e202:Parameters d4p1:nil="false">
-              <e202:CustomParameter>
-                <e202:Key d4p1:nil="false">ValueHere</e202:Key>
-                <e202:Value d4p1:nil="false">ValueHere</e202:Value>
-              </e202:CustomParameter>
-            </e202:Parameters>
+          <UrlCustomParameters xmlns:e528="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e528:Parameters d4p1:nil="false">
+              <e528:CustomParameter>
+                <e528:Key d4p1:nil="false">ValueHere</e528:Key>
+                <e528:Value d4p1:nil="false">ValueHere</e528:Value>
+              </e528:CustomParameter>
+            </e528:Parameters>
           </UrlCustomParameters>
           <!--No additional fields are applicable if the derived type attribute is set to NegativeAdGroupCriterion-->
         </AdGroupCriterion>
@@ -254,6 +254,6 @@ response=campaignmanagement_service.GetAdGroupCriterionsByIds(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

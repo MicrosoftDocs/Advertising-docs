@@ -23,13 +23,13 @@ For a detailed example, see the [Remarks](#Remarks) section below.
     <xs:extension base="tns:RemarketingRule">
       <xs:sequence>
         <xs:element minOccurs="0" name="Action" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="ActionOperator" type="q4:StringOperator" xmlns:q4="https://bingads.microsoft.com/CampaignManagement/v11" />
+        <xs:element minOccurs="0" name="ActionOperator" type="q4:StringOperator" xmlns:q4="https://bingads.microsoft.com/CampaignManagement/v12" />
         <xs:element minOccurs="0" name="Category" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="CategoryOperator" type="q5:StringOperator" xmlns:q5="https://bingads.microsoft.com/CampaignManagement/v11" />
+        <xs:element minOccurs="0" name="CategoryOperator" type="q5:StringOperator" xmlns:q5="https://bingads.microsoft.com/CampaignManagement/v12" />
         <xs:element minOccurs="0" name="Label" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="LabelOperator" type="q6:StringOperator" xmlns:q6="https://bingads.microsoft.com/CampaignManagement/v11" />
+        <xs:element minOccurs="0" name="LabelOperator" type="q6:StringOperator" xmlns:q6="https://bingads.microsoft.com/CampaignManagement/v12" />
         <xs:element minOccurs="0" name="Value" nillable="true" type="xs:decimal" />
-        <xs:element minOccurs="0" name="ValueOperator" type="q7:NumberOperator" xmlns:q7="https://bingads.microsoft.com/CampaignManagement/v11" />
+        <xs:element minOccurs="0" name="ValueOperator" type="q7:NumberOperator" xmlns:q7="https://bingads.microsoft.com/CampaignManagement/v12" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -86,6 +86,6 @@ The above definition is translated to the following logical expression:
 Evaluation of the logical expression determines who will be added to the remarketing list.
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12  
 

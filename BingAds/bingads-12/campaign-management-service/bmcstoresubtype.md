@@ -1,24 +1,28 @@
 ---
-title: GenderType Value Set - Campaign Management
+title: BMCStoreSubType Value Set - Campaign Management
 ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the genders that are available for gender criterion.
+description: Reserved.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
 
-# GenderType Value Set - Campaign Management
-Defines the genders that are available for gender criterion.
+# BMCStoreSubType Value Set - Campaign Management
+Reserved.
 
 ## Syntax
 ```xml
-<xs:simpleType name="GenderType" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:simpleType name="BMCStoreSubType" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:restriction base="xs:string">
-    <xs:enumeration value="Unknown" />
-    <xs:enumeration value="Male" />
-    <xs:enumeration value="Female" />
+    <xs:enumeration value="CoOp">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -27,13 +31,11 @@ Defines the genders that are available for gender criterion.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="female"></a>Female|The gender is female.|
-|<a name="male"></a>Male|The gender is male.|
-|<a name="unknown"></a>Unknown|Reserved.|
+|<a name="coop"></a>CoOp|Reserved.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
-[GenderCriterion](gendercriterion.md)  
+[BMCStore](bmcstore.md)  

@@ -27,11 +27,11 @@ You can associate a sitelink2 ad extension with the account or with campaigns an
         <xs:element minOccurs="0" name="Description2" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="DisplayText" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="q54:ArrayOfAppUrl" xmlns:q54="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" />
-        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q55:ArrayOfstring" xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q56:ArrayOfstring" xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="q58:ArrayOfAppUrl" xmlns:q58="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
+        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q59:ArrayOfstring" xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q60:ArrayOfstring" xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q57:CustomParameters" xmlns:q57="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" />
+        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q61:CustomParameters" xmlns:q61="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -70,6 +70,6 @@ The [Sitelink2AdExtension](sitelink2adextension.md) object derives from the [AdE
 |<a name="version"></a>Version|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it's revised.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**int**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
-Namespace: https\://bingads.microsoft.com/CampaignManagement/v11  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
