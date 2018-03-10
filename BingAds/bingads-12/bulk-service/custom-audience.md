@@ -15,7 +15,7 @@ dev_langs:
 Defines a custom audience that can be downloaded and uploaded in a bulk file. 
 
 > [!NOTE]
-> Only update of the *Audience* (audience name) and *Description* fields are supported for upload. You cannot add or delete a custom audience using the Bing Ads API. Having said that, you can add and delete ad group custom audience associations and exclusions.
+> Only update of the *Audience* (audience name) and *Description* fields are supported for upload. You can delete but cannot add a custom audience using the Bing Ads API. Having said that, you can add and delete ad group custom audience associations and exclusions.
 
 > [!NOTE]
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
@@ -99,7 +99,7 @@ The name can contain a maximum of 128 characters
 
 **Add:** Not supported  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
-**Delete:** Not supported  
+**Delete:** Read-only  
 
 ### <a name="audiencesearchsize"></a>Audience Search Size
 The total number of people who belong to this audience. This gives you an idea of how many search users you can target.
@@ -117,7 +117,7 @@ Used to associate records in the bulk upload file with records in the results fi
 
 **Add:** Not supported  
 **Update:** Optional    
-**Delete:** Not supported  
+**Delete:** Read-only  
 
 ### <a name="description"></a>Description
 The description of the custom audience. Use a description to help you remember what audience you are targeting with this custom audience.
@@ -126,14 +126,14 @@ The description can contain a maximum of 1,024 characters.
 
 **Add:** Not supported  
 **Update:** Optional    
-**Delete:** Not supported  
+**Delete:** Read-only  
 
 ### <a name="id"></a>Id
 The system generated identifier of the custom audience.
 
 **Add:** Not supported  
 **Update:** Required  
-**Delete:** Not supported  
+**Delete:** Read-only and Required  
 
 ### <a name="membershipduration"></a>Membership Duration
 The membership duration determines how far back in time Bing Ads should look for actions that match your custom audience definition in order to add people to your list. For a custom audience the membership duration is not set in the Bing Ads web application, and Bing Ads defers to your custom audience provider settings.
@@ -142,7 +142,7 @@ When you request the custom audience via Bing Ads API, the returned membership d
 
 **Add:** Not supported  
 **Update:** Not supported  
-**Delete:** Not supported  
+**Delete:** Read-only  
 
 ### <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
@@ -152,21 +152,21 @@ The date and time that the entity was last updated. The value is in Coordinated 
 
 **Add:** Not supported  
 **Update:** Read-only  
-**Delete:** Not supported  
+**Delete:** Read-only  
 
 ### <a name="parentid"></a>Parent Id
 The Bing Ads identifier of the customer that contains the custom audience.
 
 **Add:** Not supported  
 **Update:** Required  
-**Delete:** Not supported  
+**Delete:** Read-only  
 
 ### <a name="scope"></a>Scope
 Scope defines what accounts can use this custom audience. For an custom audience the only supported scope is *Customer*, and the custom audience can be associated with any ad groups across all of the customer's accounts.
 
 **Add:** Not supported  
 **Update:** Read-only    
-**Delete:** Not supported  
+**Delete:** Read-only  
 
 ### <a name="status"></a>Status
 The custom audience status.
@@ -175,5 +175,5 @@ Possible values are *Active* or *Deleted*.
 
 **Add:** Not supported  
 **Update:** Read-only    
-**Delete:** Not supported
+**Delete:** Required. The Status must be set to *Deleted*.  
 

@@ -9,6 +9,18 @@ description: Get information about the changes to the Bing Ads services for each
 # Bing Ads API Release Notes
 For information about the changes to the Bing Ads services for each month, see the following sections.  
 
+## <a name="march2018"></a>March 2018
+For information about this month's changes to Bing Ads services, see the following sections.
+
+-   [Bing Ads Software Development Kit (SDK) Updates](#sdk-march2018)  
+-   [Custom Audience Delete](#customaudiencedelete-march2018)  
+
+### <a name="sdk-march2018"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, PHP, and Python SDKs are updated to support [Microsoft Account authentication in sandbox](sandbox.md#access). 
+
+### <a name="customaudiencedelete-march2018"></a>Custom Audience Delete
+Bing Ads API now supports deletion of custom audiences via the [Custom Audience](../bulk-service/custom-audience.md) (Bulk API) and [CustomAudience](../campaign-management-service/customaudience.md) (Campaign Management API).
+
 ## <a name="january2018"></a>January 2018
 For information about this month's changes to Bing Ads services, see the following sections.
 
