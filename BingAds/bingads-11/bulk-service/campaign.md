@@ -461,7 +461,7 @@ The time zone where the campaign operates.
 
 The time zone is used for reporting and applying the start and end date of an ad group.
 
-For possible values, see [Common Market Values](http://go.microsoft.com/fwlink/?LinkId=691345).
+For possible values, see [Time Zones](../guides/time-zones.md).
 
 **Add:** Required.   
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. You may not update the time zone if the campaign contains or has ever contained ad groups in the *Active* or *Paused* state.    

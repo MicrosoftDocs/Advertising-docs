@@ -20,4 +20,4 @@ description: Reference documentation for Bing Ads web services.
 ## <a name="see-also"></a>See Also
 [Release Notes](release-notes.md)  
 [Get Started With the Bing Ads API](get-started.md)  
-[Bing Ads Technical Guides](technical-guides.md)  
+[Technical Guides](technical-guides.md)  
