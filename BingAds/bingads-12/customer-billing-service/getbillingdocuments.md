@@ -24,8 +24,7 @@ The *GetBillingDocumentsRequest* object defines the [body](#request-body) and [h
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="advertisercustomerids"></a>AdvertiserCustomerIds|Reserved.|**int** array|
-|<a name="documentids"></a>DocumentIds|A list of identifiers of the billing documents to get. To get a list of identifiers, call the [GetBillingDocumentsInfo](getbillingdocumentsinfo.md) operation.|**long** array|
+|<a name="billingdocumentsinfo"></a>BillingDocumentsInfo|Identifies the list of billing documents that you want to get.<br/><br/>Each [BillingDocumentInfo](billingdocumentinfo.md) object in the list must contain the CustomerId and DocumentId. The other properties are ignored.<br/><br/>You can include up to 25 items in the list.|[BillingDocumentInfo](billingdocumentinfo.md) array|
 |<a name="type"></a>Type|The format to use to generate the billing document. For example, you can generate the billing document in PDF or XML format.|[DataType](datatype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -58,13 +57,19 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <GetBillingDocumentsRequest xmlns="https://bingads.microsoft.com/Billing/v12">
-      <DocumentIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        <a1:long>ValueHere</a1:long>
-      </DocumentIds>
+      <BillingDocumentsInfo xmlns:e367="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e367:BillingDocumentInfo>
+          <e367:AccountId>ValueHere</e367:AccountId>
+          <e367:AccountName i:nil="false">ValueHere</e367:AccountName>
+          <e367:AccountNumber i:nil="false">ValueHere</e367:AccountNumber>
+          <e367:Amount>ValueHere</e367:Amount>
+          <e367:CurrencyCode i:nil="false">ValueHere</e367:CurrencyCode>
+          <e367:DocumentDate i:nil="false">ValueHere</e367:DocumentDate>
+          <e367:DocumentId i:nil="false">ValueHere</e367:DocumentId>
+          <e367:CustomerId i:nil="false">ValueHere</e367:CustomerId>
+        </e367:BillingDocumentInfo>
+      </BillingDocumentsInfo>
       <Type>ValueHere</Type>
-      <AdvertiserCustomerIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-        <a1:int>ValueHere</a1:int>
-      </AdvertiserCustomerIds>
     </GetBillingDocumentsRequest>
   </s:Body>
 </s:Envelope>
@@ -80,12 +85,12 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBillingDocumentsResponse xmlns="https://bingads.microsoft.com/Billing/v12">
-      <BillingDocuments xmlns:e1272="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1272:BillingDocument>
-          <e1272:Data d4p1:nil="false">ValueHere</e1272:Data>
-          <e1272:Id>ValueHere</e1272:Id>
-          <e1272:Type>ValueHere</e1272:Type>
-        </e1272:BillingDocument>
+      <BillingDocuments xmlns:e368="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e368:BillingDocument>
+          <e368:Data d4p1:nil="false">ValueHere</e368:Data>
+          <e368:Id>ValueHere</e368:Id>
+          <e368:Type>ValueHere</e368:Type>
+        </e368:BillingDocument>
       </BillingDocuments>
     </GetBillingDocumentsResponse>
   </s:Body>
@@ -96,15 +101,13 @@ The following template shows the order of the [body](#response-body) and [header
 The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
 public async Task<GetBillingDocumentsResponse> GetBillingDocumentsAsync(
-	IList<long> documentIds,
-	DataType type,
-	IList<int> advertiserCustomerIds)
+	IList<BillingDocumentInfo> billingDocumentsInfo,
+	DataType type)
 {
 	var request = new GetBillingDocumentsRequest
 	{
-		DocumentIds = documentIds,
-		Type = type,
-		AdvertiserCustomerIds = advertiserCustomerIds
+		BillingDocumentsInfo = billingDocumentsInfo,
+		Type = type
 	};
 
 	return (await CustomerBillingService.CallAsync((s, r) => s.GetBillingDocumentsAsync(r), request));
@@ -112,42 +115,37 @@ public async Task<GetBillingDocumentsResponse> GetBillingDocumentsAsync(
 ```
 ```java
 static GetBillingDocumentsResponse getBillingDocuments(
-	ArrayOflong documentIds,
-	DataType type,
-	ArrayOfint advertiserCustomerIds) throws RemoteException, Exception
+	ArrayOfBillingDocumentInfo billingDocumentsInfo,
+	DataType type) throws RemoteException, Exception
 {
 	GetBillingDocumentsRequest request = new GetBillingDocumentsRequest();
 
-	request.setDocumentIds(documentIds);
+	request.setBillingDocumentsInfo(billingDocumentsInfo);
 	request.setType(type);
-	request.setAdvertiserCustomerIds(advertiserCustomerIds);
 
 	return CustomerBillingService.getService().getBillingDocuments(request);
 }
 ```
 ```php
 static function GetBillingDocuments(
-	$documentIds,
-	$type,
-	$advertiserCustomerIds)
+	$billingDocumentsInfo,
+	$type)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CustomerBillingProxy'];
 
 	$request = new GetBillingDocumentsRequest();
 
-	$request->DocumentIds = $documentIds;
+	$request->BillingDocumentsInfo = $billingDocumentsInfo;
 	$request->Type = $type;
-	$request->AdvertiserCustomerIds = $advertiserCustomerIds;
 
 	return $GLOBALS['CustomerBillingProxy']->GetService()->GetBillingDocuments($request);
 }
 ```
 ```python
 response=customerbilling_service.GetBillingDocuments(
-	DocumentIds=DocumentIds,
-	Type=Type,
-	AdvertiserCustomerIds=AdvertiserCustomerIds)
+	BillingDocumentsInfo=BillingDocumentsInfo,
+	Type=Type)
 ```
 
 ## Requirements

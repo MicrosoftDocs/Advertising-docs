@@ -232,6 +232,9 @@ The namespace is `https://bingads.microsoft.com/Billing/v12`.
 
 The production endpoint is [https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc).
 
+#### <a name="billing-billingdocumentinfo"></a>GetBillingDocuments by BillingDocumentInfo
+In version 12 a structured list of [BillingDocumentInfo](../customer-billing-service/billingdocumentinfo.md) replaces the *DocumentIds* element in the [GetBillingDocuments](../customer-billing-service/getbillingdocuments.md) request. Now you can first call [GetBillingDocumentsInfo](../customer-billing-service/getbillingdocumentsinfo.md) and pass the results (up to 25 items) in the [GetBillingDocuments](../customer-billing-service/getbillingdocuments.md) request.  
+
 #### <a name="billing-insertionorderstatus"></a>InsertionOrderStatus
 The Pending and PendingSystemReview values are removed from the [InsertionOrderStatus](../customer-billing-service/insertionorderstatus.md) value set. The NotStarted value replaces Pending.
 

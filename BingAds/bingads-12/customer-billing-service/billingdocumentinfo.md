@@ -23,6 +23,7 @@ Defines a billing document identification object that contains information about
     <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="DocumentDate" nillable="true" type="xs:dateTime" />
     <xs:element minOccurs="0" name="DocumentId" nillable="true" type="xs:long" />
+    <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:int" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -36,6 +37,7 @@ Defines a billing document identification object that contains information about
 |<a name="accountnumber"></a>AccountNumber|The account number.|**string**|
 |<a name="amount"></a>Amount|The amount of the billing document.|**double**|
 |<a name="currencycode"></a>CurrencyCode|The currency of the billing document. For possible values, see [Currencies](../guides/currencies.md).|**string**|
+|<a name="customerid"></a>CustomerId|The identifier of the customer for which the billing document was generated.|**int**|
 |<a name="documentdate"></a>DocumentDate|The date of the billing document.|**dateTime**|
 |<a name="documentid"></a>DocumentId|An identifier of the billing document.|**long**|
 
@@ -44,4 +46,5 @@ Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.micro
 Namespace: https\://bingads.microsoft.com/Customer/v12/Entities  
 
 ## Used By
+[GetBillingDocuments](getbillingdocuments.md)  
 [GetBillingDocumentsInfo](getbillingdocumentsinfo.md)  
