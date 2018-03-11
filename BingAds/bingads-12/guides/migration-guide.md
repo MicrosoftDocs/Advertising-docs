@@ -133,6 +133,12 @@ The following time zone values are updated for the *Time Zone* field of the [Cam
 -  The value is updated from *Almaty_Novosibirsk* to *AlmatyNovosibirsk*.
 -  The value is updated from *MidwayIslandand_Samoa* to *MidwayIslandAndSamoa*.
 
+#### <a name="bulk-inmarketaudience-supportedcampaigntypes"></a>In-Market Audiences Supported for Audience Campaigns
+In version 12 the AudienceNetworkInMarketAudiences and AudienceNetworkAudiences values are removed from the [DownloadEntity](../bulk-service/downloadentity.md) value set. In version 12 when you request in-market audiences via the InMarketAudiences or Audiences [DownloadEntity](../bulk-service/downloadentity.md) values, all of them will be returned. In version 11 the in-market audiences that are supported for Audience campaigns were not returned unless you included AudienceNetworkInMarketAudiences or AudienceNetworkAudiences in the download request. 
+
+> [!NOTE]
+> In both version 11 and 12 the *Supported Campaign Types* column is available with each [Custom Audience](../bulk-service/custom-audience.md), [In Market Audience](../bulk-service/in-market-audience.md), and [Remarketing List](../bulk-service/remarketing-list.md) record. You should first veryify that the audience is supported for your campaign type before using it. 
+
 #### <a name="bulk-errorcode-inmarketaudiencecouldnotbedeleted"></a>Error Code for InMarketAudienceCouldNotBeDeleted
 In-market audiences cannot be deleted in both version 11 and version 12. Custom audiences can be deleted in both version 11 and 12. The error code CustomAudienceAndInMarketAudienceCouldNotBeDeleted (4860) that is still returned in version 11 is replaced by error code InMarketAudienceCouldNotBeDeleted (4864) in version 12.
 
@@ -198,6 +204,12 @@ The Appealable, DisapprovedText, Location, PublisherCountry, and ReasonCode elem
 
 #### <a name="campaign-agerange"></a>Age Range Values
 The *ZeroToSeventeen* and *ThirteenToSeventeen* values are removed from the [AgeRange](../campaign-management-service/agerange.md) value set. These values were not ever supported. 
+
+#### <a name="campaign-inmarketaudience-supportedcampaigntypes"></a>In-Market Audiences Supported for Audience Campaigns
+In version 12 the ReturnSupportedCampaignTypes request element is removed from [GetAudiencesByIds](../campaign-management-service/getaudiencesbyids.md). Now when you request in-market audiences, all of them will be returned and will include the SupportedCampaignTypes element in each [Audience](../campaign-management-service/audience.md) object by default. In version 11 the in-market audiences that are supported for Audience campaigns were not returned unless you set ReturnSupportedCampaignTypes true. Effectively the ReturnSupportedCampaignTypes element in [GetAudiencesByIds](../campaign-management-service/getaudiencesbyids.md) version 11 gated both the SupportedCampaignTypes element for all audience types, as well as the in-market audiences that are supported for Audience campaigns. 
+
+> [!NOTE]
+> In both version 11 and 12 the *SupportedCampaignTypes* field is available with each [CustomAudience](../campaign-management-service/customaudience.md), [InMarketAudience](../campaign-management-service/inmarketaudience.md), and [RemarketingList](../campaign-management-service/remarketinglist.md) object. You should first veryify that the audience is supported for your campaign type before using it. 
 
 #### <a name="campaign-errorcode-inmarketaudiencecouldnotbedeleted"></a>Error Code for InMarketAudienceCouldNotBeDeleted
 In-market audiences cannot be deleted in both version 11 and version 12. Custom audiences can be deleted in both version 11 and 12. The error code CustomAudienceAndInMarketAudienceCouldNotBeDeleted (4860) that is still returned in version 11 is replaced by error code InMarketAudienceCouldNotBeDeleted (4864) in version 12.
