@@ -913,7 +913,7 @@ class ProductsEx {
 
     // Maps the product's availability strings to enum values.
     
-	public static Map\<ProductAvailability, String> Availability = new HashMap\<ProductAvailability, String>();
+	public static Map<ProductAvailability, String> Availability = new HashMap<ProductAvailability, String>();
 	static {
 		Availability.put(ProductAvailability.InStock, "in stock");
 		Availability.put(ProductAvailability.OutOfStock, "out of stock");
@@ -966,7 +966,7 @@ class ProductsEx {
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
 
 		try {
-			Map\<String, String> headers = getCredentialHeaders();
+			Map<String, String> headers = getCredentialHeaders();
 
             String url = String.format(BatchUri + queryString, merchantId);
             
@@ -998,11 +998,11 @@ class ProductsEx {
 
 	// Get tokens for the authentication headers.
 
-    private static Map\<String, String> getCredentialHeaders()
+    private static Map<String, String> getCredentialHeaders()
     {
         // TODO: Add logic to get the user's access token.
 
-        Map\<String, String> headers = new HashMap\<String, String>();
+        Map<String, String> headers = new HashMap<String, String>();
         headers.put("AuthenticationToken", accessToken);
         headers.put("DeveloperToken", devToken);
 
@@ -1013,7 +1013,7 @@ class ProductsEx {
     // This example compresses the data sent in the request. You must
     // use GZIP compression.
     
-    private static BatchCollection batchRequest(String uri, Map\<String, String> headers, BatchCollection batch) throws IOException, CapiException 
+    private static BatchCollection batchRequest(String uri, Map<String, String> headers, BatchCollection batch) throws IOException, CapiException 
     {
     	HttpURLConnection connection = null;
     	URL url;
@@ -1118,7 +1118,7 @@ class ProductsEx {
     // Add 5 products to the catalog. Save the IDs to use in BatchGet
     // and BatchDelete.
 
-    private static void batchInsert(String url, Map\<String, String> headers) throws IOException, CapiException
+    private static void batchInsert(String url, Map<String, String> headers) throws IOException, CapiException
     {
     	BatchCollection batchCollection = new BatchCollection();
     	batchCollection.setEntries(new ArrayList<BatchEntry>());
@@ -1155,7 +1155,7 @@ class ProductsEx {
 
     // Use GET operation on the products inserted by BatchInsert.
 
-    private static void batchGet(String url, Map\<String, String> headers) throws IOException, CapiException
+    private static void batchGet(String url, Map<String, String> headers) throws IOException, CapiException
     {
     	BatchCollection batchCollection = new BatchCollection();
     	batchCollection.setEntries(new ArrayList<BatchEntry>());
@@ -1196,7 +1196,7 @@ class ProductsEx {
 
     // Use DELETE operation on the products inserted by BatchInsert.
 
-    private static void batchDelete(String url, Map\<String, String> headers) throws IOException, CapiException
+    private static void batchDelete(String url, Map<String, String> headers) throws IOException, CapiException
     {
     	BatchCollection batchCollection = new BatchCollection();
     	batchCollection.setEntries(new ArrayList<BatchEntry>());
