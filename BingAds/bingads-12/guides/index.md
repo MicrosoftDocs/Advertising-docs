@@ -68,7 +68,7 @@ If you are not finding the information you need to solve your problem in the dev
 |---------|---------------|
 |[Entity Hierarchy and Limits](entity-hierarchy-limits.md)|Refer to this guide for a high level view of system limits for Bing Ads entities.|
 |[FAQ](faq.md)|This article contains answers to some frequently asked questions about the Bing Ads API.|
-|[Get Started With the Bing Ads API](get-started.md)|To use the API, you?ll first need a Bing Ads developer token and valid user credentials. Learn how to get developer credentials and how to write your first application for example, in C#, Java, PHP, or Python.|
+|[Get Started With the Bing Ads API](get-started.md)|To use the API, you will first need a Bing Ads developer token and valid user credentials. Learn how to get developer credentials and how to write your first application for example, in C#, Java, PHP, or Python.|
 |[Sandbox](sandbox.md)|You may test your application in the Bing Ads sandbox environment before deploying it to the production environment.|
 |[Client Libraries](client-libraries.md)|You can develop Bing Ads applications with any programming language that supports web services. The Bing Ads Software Development Kits (SDK) enhance the experience of developing Bing Ads applications with .NET, Java, and Python languages.|
 |[Code Examples](code-examples.md)|Jump start your development by viewing or using the examples provided in C#, Java, PHP, and Python.|

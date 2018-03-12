@@ -6446,7 +6446,7 @@ The list of ad extension IDs contains duplicates.
 CampaignServiceCannotAssignMoreThanOneAdExtensionTypeToAnEntity
 
 **Description**
-The entity to which you?re trying to associate the ad extension already has an ad extension of the same type associated with it.
+The entity to which you are trying to associate the ad extension already has an ad extension of the same type associated with it.
 
 ***
 
@@ -6833,7 +6833,7 @@ An icon with the specified ID was not found in the account's media library.
 CampaignServiceAdExtensionIconTooLarge
 
 **Description**
-The width and height of the icon that you?re adding to the location extension is greater than the maximum allowed.
+The width and height of the icon that you are adding to the location extension is greater than the maximum allowed.
 
 ***
 
@@ -6855,7 +6855,7 @@ An image with the specified ID was not found in the account's media library.
 CampaignServiceAdExtensionImageTooLarge
 
 **Description**
-The width and height of the image that you?re adding to the location extension is greater than the maximum allowed.
+The width and height of the image that you are adding to the location extension is greater than the maximum allowed.
 
 ***
 
