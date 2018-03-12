@@ -367,12 +367,12 @@ def output_bulk_errors(errors):
 if __name__ == '__main__':
 
     try:
-        # You should authenticate for Bing Ads production services with a Microsoft Account, 
+        # You should authenticate for Bing Ads services with a Microsoft Account, 
         # instead of providing the Bing Ads username and password set. 
         authenticate_with_oauth()
 
-        # Uncomment to run with Bing Ads legacy UserName and Password credentials.
-        # For example you would use this method to authenticate in sandbox.
+        # Bing Ads API Version 11 is the last version to support UserName and Password authentication,
+        # so this function is deprecated.
         #authenticate_with_username()
         
         # Set to an empty user identifier to get the current authenticated Bing Ads user,

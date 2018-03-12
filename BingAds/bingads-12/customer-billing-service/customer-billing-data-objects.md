@@ -23,6 +23,7 @@ The Customer Billing service defines the following data objects.
 |[BillingDocument](billingdocument.md)|Defines a billing document.|
 |[BillingDocumentInfo](billingdocumentinfo.md)|Defines a billing document identification object that contains information about a billing document, such as the billing document identifier, billing document amount, and account identifier.|
 |[InsertionOrder](insertionorder.md)|Defines an insertion order.|
+|[InsertionOrderPendingChanges](insertionorderpendingchanges.md)|Defines an object that can be used to manage changes for an approved insertion order.|
 |[OperationError](operationerror.md)|Defines an error object that contains the details that explain why the service operation failed.|
 |[OrderBy](orderby.md)|Defines an order for the list of insertion orders returned using the [SearchInsertionOrders](searchinsertionorders.md) operation.|
 |[Paging](paging.md)|Defines a paging object for the list of insertion orders returned using the [SearchInsertionOrders](searchinsertionorders.md) operation.|

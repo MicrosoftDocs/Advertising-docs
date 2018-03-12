@@ -51,8 +51,6 @@ If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Examp
 
 ### Authenticating your credentials in sandbox
 
-You cannot use the Bing Ads SDK in the sandbox environment to get the access token. For sandbox, you can either clone the SDK Git repository and update the endpoints accordingly, or write your own AOuth implementation.
-
 For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](/bingads/guides/authentication-oauth), substitute them with the following SI endpoints.
 
  - partner.api.sandbox.bingads.microsoft.com&mdash;Endpoint for Bing Ads sandbox

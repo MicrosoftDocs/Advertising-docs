@@ -39,7 +39,7 @@ The example desktop application sends authentication requests to the Microsoft a
         <dependency>
           <groupId>com.microsoft.bingads</groupId>
           <artifactId>microsoft.bingads</artifactId>
-          <version>11.5.1</version>
+          <version>11.5.9</version>
         </dependency>
       </dependencies>
     </project>
@@ -277,19 +277,19 @@ To use the [Sandbox](sandbox.md) environment, create a new text file named *bing
 environment=Sandbox
 ```
 
-The SDK does not yet support OAuth for sandbox (coming soon), so you must use *PasswordAuthentication*. You can remove all code above that refers to oAuthDesktopMobileAuthCodeGrant, and simply add these lines before you create the new ServiceClient for ICustomerManagementService.
+You can also set the environment for each ServiceClient individually as follows.
 
 ```java
-authorizationData = new AuthorizationData();
-authorizationData.setDeveloperToken("DeveloperTokenGoesHere");
-PasswordAuthentication passwordAuthentication = 
-    new PasswordAuthentication("UserNameGoesHere", "PasswordGoesHere");
-authorizationData.setAuthentication(passwordAuthentication);
-
-// This snippet is already provided in the sample above.
 CustomerService = new ServiceClient<ICustomerManagementService>(
-    authorizationData, 
+    authorizationData,
+    ApiEnvironment.SANDBOX,
     ICustomerManagementService.class);
+```
+
+Whether you set the ServiceClient environment globally or individually, separately you'll also need to set the OAuth environment to sandbox.
+
+```java
+final OAuthDesktopMobileAuthCodeGrant oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(ClientId, ApiEnvironment.SANDBOX);
 ```
 
 ## See Also

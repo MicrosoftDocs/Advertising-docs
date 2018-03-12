@@ -34,15 +34,14 @@ You must first [register an application](authentication-oauth.md#registerapplica
 
 5. Edit one of the samples e.g. *\V11\SearchUserAccounts.php*. Choose the authentication helper function that you will use, and comment out the other. 
    ```php
-   // You should authenticate for Bing Ads production services with a Microsoft Account, 
+   // You should authenticate for Bing Ads services with a Microsoft Account, 
    // instead of providing the Bing Ads username and password set. 
-   
-   //AuthHelper::AuthenticateWithOAuth();
-   
-   // However, the SDK does not currently supported OAuth in Sandbox (coming soon),
-   // so it is recommended that you set the UserName and Password in sandbox for testing.
-   
-   AuthHelper::AuthenticateWithUserName();
+    
+   AuthHelper::AuthenticateWithOAuth();
+
+   // Bing Ads API Version 11 is the last version to support UserName and Password authentication,
+   // so this function is deprecated.
+   //AuthHelper::AuthenticateWithUserName();
    ```
 6. At the console command prompt run the sample e.g. at *c:\dev\BingAdsPHP* type `php .\V11\SearchUserAccounts.php`. 
    

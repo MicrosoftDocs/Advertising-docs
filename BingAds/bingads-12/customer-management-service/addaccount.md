@@ -63,59 +63,59 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <AddAccountRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <Account xmlns:e1217="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e1217:BillToCustomerId i:nil="false">ValueHere</e1217:BillToCustomerId>
-        <e1217:CountryCode i:nil="false">ValueHere</e1217:CountryCode>
-        <e1217:CurrencyCode i:nil="false">ValueHere</e1217:CurrencyCode>
-        <e1217:AccountFinancialStatus i:nil="false">ValueHere</e1217:AccountFinancialStatus>
-        <e1217:Id i:nil="false">ValueHere</e1217:Id>
-        <e1217:Language i:nil="false">ValueHere</e1217:Language>
-        <e1217:LastModifiedByUserId i:nil="false">ValueHere</e1217:LastModifiedByUserId>
-        <e1217:LastModifiedTime i:nil="false">ValueHere</e1217:LastModifiedTime>
-        <e1217:Name i:nil="false">ValueHere</e1217:Name>
-        <e1217:Number i:nil="false">ValueHere</e1217:Number>
-        <e1217:ParentCustomerId>ValueHere</e1217:ParentCustomerId>
-        <e1217:PaymentMethodId i:nil="false">ValueHere</e1217:PaymentMethodId>
-        <e1217:PaymentMethodType i:nil="false">ValueHere</e1217:PaymentMethodType>
-        <e1217:PrimaryUserId i:nil="false">ValueHere</e1217:PrimaryUserId>
-        <e1217:AccountLifeCycleStatus i:nil="false">ValueHere</e1217:AccountLifeCycleStatus>
-        <e1217:TimeStamp i:nil="false">ValueHere</e1217:TimeStamp>
-        <e1217:TimeZone i:nil="false">ValueHere</e1217:TimeZone>
-        <e1217:PauseReason i:nil="false">ValueHere</e1217:PauseReason>
-        <ForwardCompatibilityMap xmlns:e1218="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e1218:KeyValuePairOfstringstring>
-            <e1218:key i:nil="false">ValueHere</e1218:key>
-            <e1218:value i:nil="false">ValueHere</e1218:value>
-          </e1218:KeyValuePairOfstringstring>
+      <Account xmlns:e312="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e312:BillToCustomerId i:nil="false">ValueHere</e312:BillToCustomerId>
+        <e312:CurrencyCode i:nil="false">ValueHere</e312:CurrencyCode>
+        <e312:AccountFinancialStatus i:nil="false">ValueHere</e312:AccountFinancialStatus>
+        <e312:Id i:nil="false">ValueHere</e312:Id>
+        <e312:Language i:nil="false">ValueHere</e312:Language>
+        <e312:LastModifiedByUserId i:nil="false">ValueHere</e312:LastModifiedByUserId>
+        <e312:LastModifiedTime i:nil="false">ValueHere</e312:LastModifiedTime>
+        <e312:Name i:nil="false">ValueHere</e312:Name>
+        <e312:Number i:nil="false">ValueHere</e312:Number>
+        <e312:ParentCustomerId>ValueHere</e312:ParentCustomerId>
+        <e312:PaymentMethodId i:nil="false">ValueHere</e312:PaymentMethodId>
+        <e312:PaymentMethodType i:nil="false">ValueHere</e312:PaymentMethodType>
+        <e312:PrimaryUserId i:nil="false">ValueHere</e312:PrimaryUserId>
+        <e312:AccountLifeCycleStatus i:nil="false">ValueHere</e312:AccountLifeCycleStatus>
+        <e312:TimeStamp i:nil="false">ValueHere</e312:TimeStamp>
+        <e312:TimeZone i:nil="false">ValueHere</e312:TimeZone>
+        <e312:PauseReason i:nil="false">ValueHere</e312:PauseReason>
+        <ForwardCompatibilityMap xmlns:e313="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e313:KeyValuePairOfstringstring>
+            <e313:key i:nil="false">ValueHere</e313:key>
+            <e313:value i:nil="false">ValueHere</e313:value>
+          </e313:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e1217:LinkedAgencies i:nil="false">
-          <e1217:CustomerInfo>
-            <e1217:Id i:nil="false">ValueHere</e1217:Id>
-            <e1217:Name i:nil="false">ValueHere</e1217:Name>
-          </e1217:CustomerInfo>
-        </e1217:LinkedAgencies>
-        <e1217:SalesHouseCustomerId i:nil="false">ValueHere</e1217:SalesHouseCustomerId>
-        <TaxInformation xmlns:e1219="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e1219:KeyValuePairOfstringstring>
-            <e1219:key i:nil="false">ValueHere</e1219:key>
-            <e1219:value i:nil="false">ValueHere</e1219:value>
-          </e1219:KeyValuePairOfstringstring>
+        <e312:LinkedAgencies i:nil="false">
+          <e312:CustomerInfo>
+            <e312:Id i:nil="false">ValueHere</e312:Id>
+            <e312:Name i:nil="false">ValueHere</e312:Name>
+          </e312:CustomerInfo>
+        </e312:LinkedAgencies>
+        <e312:SalesHouseCustomerId i:nil="false">ValueHere</e312:SalesHouseCustomerId>
+        <TaxInformation xmlns:e314="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e314:KeyValuePairOfstringstring>
+            <e314:key i:nil="false">ValueHere</e314:key>
+            <e314:value i:nil="false">ValueHere</e314:value>
+          </e314:KeyValuePairOfstringstring>
         </TaxInformation>
-        <e1217:BackUpPaymentInstrumentId i:nil="false">ValueHere</e1217:BackUpPaymentInstrumentId>
-        <e1217:BillingThresholdAmount i:nil="false">ValueHere</e1217:BillingThresholdAmount>
-        <e1217:BusinessAddress i:nil="false">
-          <e1217:City i:nil="false">ValueHere</e1217:City>
-          <e1217:CountryCode i:nil="false">ValueHere</e1217:CountryCode>
-          <e1217:Id i:nil="false">ValueHere</e1217:Id>
-          <e1217:Line1 i:nil="false">ValueHere</e1217:Line1>
-          <e1217:Line2 i:nil="false">ValueHere</e1217:Line2>
-          <e1217:Line3 i:nil="false">ValueHere</e1217:Line3>
-          <e1217:Line4 i:nil="false">ValueHere</e1217:Line4>
-          <e1217:PostalCode i:nil="false">ValueHere</e1217:PostalCode>
-          <e1217:StateOrProvince i:nil="false">ValueHere</e1217:StateOrProvince>
-          <e1217:TimeStamp i:nil="false">ValueHere</e1217:TimeStamp>
-        </e1217:BusinessAddress>
-        <e1217:AutoTagType i:nil="false">ValueHere</e1217:AutoTagType>
+        <e312:BackUpPaymentInstrumentId i:nil="false">ValueHere</e312:BackUpPaymentInstrumentId>
+        <e312:BillingThresholdAmount i:nil="false">ValueHere</e312:BillingThresholdAmount>
+        <e312:BusinessAddress i:nil="false">
+          <e312:City i:nil="false">ValueHere</e312:City>
+          <e312:CountryCode i:nil="false">ValueHere</e312:CountryCode>
+          <e312:Id i:nil="false">ValueHere</e312:Id>
+          <e312:Line1 i:nil="false">ValueHere</e312:Line1>
+          <e312:Line2 i:nil="false">ValueHere</e312:Line2>
+          <e312:Line3 i:nil="false">ValueHere</e312:Line3>
+          <e312:Line4 i:nil="false">ValueHere</e312:Line4>
+          <e312:PostalCode i:nil="false">ValueHere</e312:PostalCode>
+          <e312:StateOrProvince i:nil="false">ValueHere</e312:StateOrProvince>
+          <e312:TimeStamp i:nil="false">ValueHere</e312:TimeStamp>
+          <e312:BusinessName i:nil="false">ValueHere</e312:BusinessName>
+        </e312:BusinessAddress>
+        <e312:AutoTagType i:nil="false">ValueHere</e312:AutoTagType>
       </Account>
     </AddAccountRequest>
   </s:Body>

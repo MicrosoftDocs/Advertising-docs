@@ -26,6 +26,7 @@ Defines a postal address.
     <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="StateOrProvince" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
+    <xs:element minOccurs="0" name="BusinessName" nillable="true" type="xs:string" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -34,6 +35,7 @@ Defines a postal address.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
+|<a name="businessname"></a>BusinessName|The legal business name, which can contain a maximum of 100 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
 |<a name="city"></a>City|The city, which can contain a maximum of 35 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
 |<a name="countrycode"></a>CountryCode|The country/region code. For possible values, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
 |<a name="id"></a>Id|The system generated identifier of the address object.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**long**|
@@ -42,7 +44,7 @@ Defines a postal address.
 |<a name="line3"></a>Line3|The third line of the address, which can contain a maximum of 35 characters.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
 |<a name="line4"></a>Line4|The fourth line of the address, which can contain a maximum of 35 characters.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
 |<a name="postalcode"></a>PostalCode|The Postal or ZIP Code, which can contain a maximum of 10 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
-|<a name="stateorprovince"></a>StateOrProvince|The state or province. This element is required for countries that define sub geographies, but should be set to null for countries that do not define sub geographies, such as Singapore.<br /><br />For possible values, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br /><br /> You must use the state or province code without country prefix. For example given US-WA, you should use only the WA suffix for Washington state.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
+|<a name="stateorprovince"></a>StateOrProvince|The state or province.<br /><br />For possible values, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br /><br /> You must use the state or province code without country prefix. For example given US-WA, you should use only the WA suffix for Washington state.<br/><br/>**Add:** Required for countries that define sub geographies, but should be set to null for countries that do not define sub geographies, such as Singapore.<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
 |<a name="timestamp"></a>TimeStamp|The date and time that the address was last updated. The value is in Coordinated Universal Time (UTC).<br/><br/> The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|**base64Binary**|
 
 ## Requirements
@@ -52,4 +54,3 @@ Namespace: https\://bingads.microsoft.com/Customer/v12/Entities
 ## Used By
 [AdvertiserAccount](advertiseraccount.md)  
 [ContactInfo](contactinfo.md)  
-[Customer](customer.md)  

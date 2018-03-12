@@ -56,37 +56,25 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <UpdateCustomerRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <Customer xmlns:e1268="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e1268:CustomerAddress i:nil="false">
-          <e1268:City i:nil="false">ValueHere</e1268:City>
-          <e1268:CountryCode i:nil="false">ValueHere</e1268:CountryCode>
-          <e1268:Id i:nil="false">ValueHere</e1268:Id>
-          <e1268:Line1 i:nil="false">ValueHere</e1268:Line1>
-          <e1268:Line2 i:nil="false">ValueHere</e1268:Line2>
-          <e1268:Line3 i:nil="false">ValueHere</e1268:Line3>
-          <e1268:Line4 i:nil="false">ValueHere</e1268:Line4>
-          <e1268:PostalCode i:nil="false">ValueHere</e1268:PostalCode>
-          <e1268:StateOrProvince i:nil="false">ValueHere</e1268:StateOrProvince>
-          <e1268:TimeStamp i:nil="false">ValueHere</e1268:TimeStamp>
-        </e1268:CustomerAddress>
-        <e1268:CustomerFinancialStatus i:nil="false">ValueHere</e1268:CustomerFinancialStatus>
-        <e1268:Id i:nil="false">ValueHere</e1268:Id>
-        <e1268:Industry i:nil="false">ValueHere</e1268:Industry>
-        <e1268:LastModifiedByUserId i:nil="false">ValueHere</e1268:LastModifiedByUserId>
-        <e1268:LastModifiedTime i:nil="false">ValueHere</e1268:LastModifiedTime>
-        <e1268:MarketCountry i:nil="false">ValueHere</e1268:MarketCountry>
-        <ForwardCompatibilityMap xmlns:e1269="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e1269:KeyValuePairOfstringstring>
-            <e1269:key i:nil="false">ValueHere</e1269:key>
-            <e1269:value i:nil="false">ValueHere</e1269:value>
-          </e1269:KeyValuePairOfstringstring>
+      <Customer xmlns:e363="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e363:CustomerFinancialStatus i:nil="false">ValueHere</e363:CustomerFinancialStatus>
+        <e363:Id i:nil="false">ValueHere</e363:Id>
+        <e363:Industry i:nil="false">ValueHere</e363:Industry>
+        <e363:LastModifiedByUserId i:nil="false">ValueHere</e363:LastModifiedByUserId>
+        <e363:LastModifiedTime i:nil="false">ValueHere</e363:LastModifiedTime>
+        <e363:MarketCountry i:nil="false">ValueHere</e363:MarketCountry>
+        <ForwardCompatibilityMap xmlns:e364="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e364:KeyValuePairOfstringstring>
+            <e364:key i:nil="false">ValueHere</e364:key>
+            <e364:value i:nil="false">ValueHere</e364:value>
+          </e364:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e1268:MarketLanguage i:nil="false">ValueHere</e1268:MarketLanguage>
-        <e1268:Name i:nil="false">ValueHere</e1268:Name>
-        <e1268:ServiceLevel i:nil="false">ValueHere</e1268:ServiceLevel>
-        <e1268:CustomerLifeCycleStatus i:nil="false">ValueHere</e1268:CustomerLifeCycleStatus>
-        <e1268:TimeStamp i:nil="false">ValueHere</e1268:TimeStamp>
-        <e1268:Number i:nil="false">ValueHere</e1268:Number>
+        <e363:MarketLanguage i:nil="false">ValueHere</e363:MarketLanguage>
+        <e363:Name i:nil="false">ValueHere</e363:Name>
+        <e363:ServiceLevel i:nil="false">ValueHere</e363:ServiceLevel>
+        <e363:CustomerLifeCycleStatus i:nil="false">ValueHere</e363:CustomerLifeCycleStatus>
+        <e363:TimeStamp i:nil="false">ValueHere</e363:TimeStamp>
+        <e363:Number i:nil="false">ValueHere</e363:Number>
       </Customer>
     </UpdateCustomerRequest>
   </s:Body>

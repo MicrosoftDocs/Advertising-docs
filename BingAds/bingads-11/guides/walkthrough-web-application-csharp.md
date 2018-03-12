@@ -384,29 +384,23 @@ The example web application sends authentication requests to the Microsoft accou
 7. Click **Build** -&gt; **Build BingAdsWebApp**, and then publish the application. For example you can publish a [Web App](http://azure.microsoft.com/en-us/services/app-service/web/) using the [Azure App Service](http://azure.microsoft.com/services/app-service/). When you start the application you will be prompted by default for Microsoft account credentials to authenticate in production.
 
 ## <a name="sandbox"></a>Configuring Sandbox
-To use sandbox, follow these additional steps.
-
-Replace the try block within HomeController.cs with the following snippet. 
-
-```csharp
-try
-{
-    // Prepare legacy Bing Ads UserName and Password authentication object
-    var authorization = new PasswordAuthentication("<UserNameGoesHere>", "<PasswordGoesHere>");
-
-    var userData = await GetUserData(authorization);
-
-    return await AddCampaignInBulk(userData);
-}
-```
-
-Set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *Web.config* file.
+To use sandbox, set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *Web.config* file.
 
 ```xml
 <add key="BingAdsEnvironment" value ="Sandbox"/>
 ```
 
-Optionally you should remove any unused local variables that had been used for OAuth in production.
+You can also set the environment for each ServiceClient individually as follows.
+
+```csharp
+_customerService = new ServiceClient<ICustomerManagementService>(_authorizationData, ApiEnvironment.Sandbox);
+```
+
+Whether you set the ServiceClient environment globally or individually, separately you'll also need to set the OAuth environment to sandbox.
+
+```csharp
+var oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(ClientId, ClientSecret, new Uri(RedirectionUri), ApiEnvironment.Sandbox);
+```
 
 ## See Also
 [Sandbox](sandbox.md)  

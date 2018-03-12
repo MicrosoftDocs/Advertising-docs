@@ -56,49 +56,50 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <UpdateUserRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <User xmlns:e1270="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e1270:ContactInfo i:nil="false">
-          <e1270:Address i:nil="false">
-            <e1270:City i:nil="false">ValueHere</e1270:City>
-            <e1270:CountryCode i:nil="false">ValueHere</e1270:CountryCode>
-            <e1270:Id i:nil="false">ValueHere</e1270:Id>
-            <e1270:Line1 i:nil="false">ValueHere</e1270:Line1>
-            <e1270:Line2 i:nil="false">ValueHere</e1270:Line2>
-            <e1270:Line3 i:nil="false">ValueHere</e1270:Line3>
-            <e1270:Line4 i:nil="false">ValueHere</e1270:Line4>
-            <e1270:PostalCode i:nil="false">ValueHere</e1270:PostalCode>
-            <e1270:StateOrProvince i:nil="false">ValueHere</e1270:StateOrProvince>
-            <e1270:TimeStamp i:nil="false">ValueHere</e1270:TimeStamp>
-          </e1270:Address>
-          <e1270:ContactByPhone i:nil="false">ValueHere</e1270:ContactByPhone>
-          <e1270:ContactByPostalMail i:nil="false">ValueHere</e1270:ContactByPostalMail>
-          <e1270:Email i:nil="false">ValueHere</e1270:Email>
-          <e1270:EmailFormat i:nil="false">ValueHere</e1270:EmailFormat>
-          <e1270:Fax i:nil="false">ValueHere</e1270:Fax>
-          <e1270:HomePhone i:nil="false">ValueHere</e1270:HomePhone>
-          <e1270:Id i:nil="false">ValueHere</e1270:Id>
-          <e1270:Mobile i:nil="false">ValueHere</e1270:Mobile>
-          <e1270:Phone1 i:nil="false">ValueHere</e1270:Phone1>
-          <e1270:Phone2 i:nil="false">ValueHere</e1270:Phone2>
-        </e1270:ContactInfo>
-        <e1270:CustomerId i:nil="false">ValueHere</e1270:CustomerId>
-        <e1270:Id i:nil="false">ValueHere</e1270:Id>
-        <e1270:JobTitle i:nil="false">ValueHere</e1270:JobTitle>
-        <e1270:LastModifiedByUserId i:nil="false">ValueHere</e1270:LastModifiedByUserId>
-        <e1270:LastModifiedTime i:nil="false">ValueHere</e1270:LastModifiedTime>
-        <e1270:Lcid i:nil="false">ValueHere</e1270:Lcid>
-        <e1270:Name i:nil="false">
-          <e1270:FirstName i:nil="false">ValueHere</e1270:FirstName>
-          <e1270:LastName i:nil="false">ValueHere</e1270:LastName>
-          <e1270:MiddleInitial i:nil="false">ValueHere</e1270:MiddleInitial>
-        </e1270:Name>
-        <e1270:Password i:nil="false">ValueHere</e1270:Password>
-        <e1270:SecretAnswer i:nil="false">ValueHere</e1270:SecretAnswer>
-        <e1270:SecretQuestion>ValueHere</e1270:SecretQuestion>
-        <e1270:UserLifeCycleStatus i:nil="false">ValueHere</e1270:UserLifeCycleStatus>
-        <e1270:TimeStamp i:nil="false">ValueHere</e1270:TimeStamp>
-        <e1270:UserName i:nil="false">ValueHere</e1270:UserName>
-        <e1270:IsMigratedToMicrosoftAccount>ValueHere</e1270:IsMigratedToMicrosoftAccount>
+      <User xmlns:e365="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e365:ContactInfo i:nil="false">
+          <e365:Address i:nil="false">
+            <e365:City i:nil="false">ValueHere</e365:City>
+            <e365:CountryCode i:nil="false">ValueHere</e365:CountryCode>
+            <e365:Id i:nil="false">ValueHere</e365:Id>
+            <e365:Line1 i:nil="false">ValueHere</e365:Line1>
+            <e365:Line2 i:nil="false">ValueHere</e365:Line2>
+            <e365:Line3 i:nil="false">ValueHere</e365:Line3>
+            <e365:Line4 i:nil="false">ValueHere</e365:Line4>
+            <e365:PostalCode i:nil="false">ValueHere</e365:PostalCode>
+            <e365:StateOrProvince i:nil="false">ValueHere</e365:StateOrProvince>
+            <e365:TimeStamp i:nil="false">ValueHere</e365:TimeStamp>
+            <e365:BusinessName i:nil="false">ValueHere</e365:BusinessName>
+          </e365:Address>
+          <e365:ContactByPhone i:nil="false">ValueHere</e365:ContactByPhone>
+          <e365:ContactByPostalMail i:nil="false">ValueHere</e365:ContactByPostalMail>
+          <e365:Email i:nil="false">ValueHere</e365:Email>
+          <e365:EmailFormat i:nil="false">ValueHere</e365:EmailFormat>
+          <e365:Fax i:nil="false">ValueHere</e365:Fax>
+          <e365:HomePhone i:nil="false">ValueHere</e365:HomePhone>
+          <e365:Id i:nil="false">ValueHere</e365:Id>
+          <e365:Mobile i:nil="false">ValueHere</e365:Mobile>
+          <e365:Phone1 i:nil="false">ValueHere</e365:Phone1>
+          <e365:Phone2 i:nil="false">ValueHere</e365:Phone2>
+        </e365:ContactInfo>
+        <e365:CustomerId i:nil="false">ValueHere</e365:CustomerId>
+        <e365:Id i:nil="false">ValueHere</e365:Id>
+        <e365:JobTitle i:nil="false">ValueHere</e365:JobTitle>
+        <e365:LastModifiedByUserId i:nil="false">ValueHere</e365:LastModifiedByUserId>
+        <e365:LastModifiedTime i:nil="false">ValueHere</e365:LastModifiedTime>
+        <e365:Lcid i:nil="false">ValueHere</e365:Lcid>
+        <e365:Name i:nil="false">
+          <e365:FirstName i:nil="false">ValueHere</e365:FirstName>
+          <e365:LastName i:nil="false">ValueHere</e365:LastName>
+          <e365:MiddleInitial i:nil="false">ValueHere</e365:MiddleInitial>
+        </e365:Name>
+        <e365:Password i:nil="false">ValueHere</e365:Password>
+        <e365:SecretAnswer i:nil="false">ValueHere</e365:SecretAnswer>
+        <e365:SecretQuestion>ValueHere</e365:SecretQuestion>
+        <e365:UserLifeCycleStatus i:nil="false">ValueHere</e365:UserLifeCycleStatus>
+        <e365:TimeStamp i:nil="false">ValueHere</e365:TimeStamp>
+        <e365:UserName i:nil="false">ValueHere</e365:UserName>
+        <e365:IsMigratedToMicrosoftAccount>ValueHere</e365:IsMigratedToMicrosoftAccount>
       </User>
     </UpdateUserRequest>
   </s:Body>

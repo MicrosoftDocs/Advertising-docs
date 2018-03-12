@@ -1315,6 +1315,8 @@
           href: ../customer-billing-service/billingdocumentinfo.md
         - name: InsertionOrder
           href: ../customer-billing-service/insertionorder.md
+        - name: InsertionOrderPendingChanges
+          href: ../customer-billing-service/insertionorderpendingchanges.md
         - name: OperationError
           href: ../customer-billing-service/operationerror.md
         - name: OrderBy
@@ -1330,6 +1332,8 @@
           href: ../customer-billing-service/datatype.md
         - name: InsertionOrderStatus
           href: ../customer-billing-service/insertionorderstatus.md
+        - name: InsertionOrderPendingChangesStatus
+          href: ../customer-billing-service/insertionorderpendingchangesstatus.md
         - name: OrderByField
           href: ../customer-billing-service/orderbyfield.md
         - name: PredicateOperator

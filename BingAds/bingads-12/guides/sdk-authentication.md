@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
-
 # Authentication With the SDKs
 This article covers authentication and basic service calls with the Bing Ads SDKs. 
 
@@ -74,43 +71,40 @@ bulk_service_manager = BulkServiceManager(
     authorization_data=authorization_data, 
     poll_interval_in_milliseconds = 5000, 
     environment = 'sandbox',
-    version = 11,
+    version = 12,
 )
 
 customer_service = ServiceClient(
     'CustomerManagementService', 
     authorization_data=authorization_data, 
     environment = 'sandbox',
-    version = 11,
+    version = 12,
 )
 
 reporting_service_manager = ReportingServiceManager(
     authorization_data=authorization_data, 
     poll_interval_in_milliseconds = 5000, 
     environment = 'sandbox',
-    version = 11,
+    version = 12,
 )
 ```
 
 ## <a name="oauth"></a>Using OAuth
 Bing Ads SDKs support the standard OAuth 2.0 flow as defined in detail in the [The OAuth 2.0 Authorization Framework](http://tools.ietf.org/html/rfc6749).The OAuth classes in the SDK abstract the low level user authorization details such as formatting the authorization and redirect URIs, setting the request headers, and parsing the redirect traffic and response stream. To use OAuth with the Bing Ads .NET SDK, the *Authentication* property of your [AuthorizationData](#authorization-data) object must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant* or *OAuthDesktopMobileImplicitGrant*. 
 
-> [!NOTE]
-> Currently OAuth is only supported in production. 
-
 For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. The steps below follow the authorization code grant flow. For more information both about authorization code and implicit grant flows, see the [Authentication with OAuth](authentication-oauth.md) guide.
 
 1.  Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace client ID, client secret, and redirection URI with the values configured in [Registering Your Application](authentication-oauth.md#registerapplication).
 
     ```csharp
-    var oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(ClientId, ClientSecret, new Uri(RedirectionUri));
+    var oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(ClientId, ClientSecret, new Uri(RedirectionUri), ApiEnvironment);
     
     // It is recommended that you specify a non guessable 'state' request parameter to help prevent
     // cross site request forgery (CSRF). 
     oAuthWebAuthCodeGrant.State = "ClientStateGoesHere";
     ```
     ```java
-    OAuthWebAuthCodeGrant oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(ClientId, ClientSecret, new URL(RedirectionUri));
+    OAuthWebAuthCodeGrant oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(ClientId, ClientSecret, new URL(RedirectionUri), ApiEnvironment);
     
     // It is recommended that you specify a non guessable 'state' request parameter to help prevent
     // cross site request forgery (CSRF). 
@@ -123,6 +117,7 @@ For repeat or long term authentication, you should follow the authorization code
     $authentication = (new OAuthWebAuthCodeGrant())
         ->withClientId(ClientId)
         ->withClientSecret(ClientSecret)
+        ->withEnvironment(ApiEnvironment)
         ->withRedirectUri('https://' . $_SERVER['HTTP_HOST'] . RedirectUri)
         ->withState(rand(0,999999999)); 
     
@@ -138,6 +133,7 @@ For repeat or long term authentication, you should follow the authorization code
     oauth_web_auth_code_grant = OAuthWebAuthCodeGrant(
         client_id=CLIENT_ID,
         client_secret=CLIENT_SECRET,
+        env=ENVIRONMENT,
         redirection_uri=REDIRECTION_URI
     )
     
@@ -321,8 +317,7 @@ authorization_data = AuthorizationData(
 )
 ```
 
-The *Authentication* property must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant*, *OAuthDesktopMobileImplicitGrant*, or *PasswordAuthentication*. If you are [configured](#sandbox) for the [sandbox](sandbox.md) environment, then only *PasswordAuthentication* is supported.
-
+The *Authentication* property must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant*, *OAuthDesktopMobileImplicitGrant*, or *PasswordAuthentication*. 
 
 Some services such as Customer Management do not accept *CustomerId* and *CustomerAccountId* headers, so they will be ignored if you specified them in the [AuthorizationData](#authorization-data) object.
 

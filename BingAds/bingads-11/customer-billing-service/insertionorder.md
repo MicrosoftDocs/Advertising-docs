@@ -9,9 +9,9 @@ description: Defines an insertion order.
 # InsertionOrder Data Object - Customer Billing
 Defines an insertion order.
 
-An account can have multiple active insertion orders, and only one insertion order is spending at a time. The spending insertion order is the one with the earliest end date.
+An insertion order is a contract in which you agree to spend up to a certain amount (not exceeding your credit line) over a time period. Advertisers use insertion orders to manage spend and budgets within their monthly invoice accounts. An account can have multiple active insertion orders, and only one insertion order is spending at a time. The spending insertion order is the one with the earliest end date.
 
-When updating an *InsertionOrder* object, only the *Status* element can be specified, for example to approve, decline, or cancel an insertion order.
+When updating this object, only the [Status](#status) element can be set if you want to approve, decline, or cancel an insertion order before it becomes approved. Bing Ads API version 11 does not support updates for approved insertion orders. To update an approved insertion order you must upgrade to Bing Ads API version 12. 
 
 ## Syntax
 ```xml

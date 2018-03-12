@@ -72,37 +72,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetCustomerResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <Customer xmlns:e1230="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1230:CustomerAddress d4p1:nil="false">
-          <e1230:City d4p1:nil="false">ValueHere</e1230:City>
-          <e1230:CountryCode d4p1:nil="false">ValueHere</e1230:CountryCode>
-          <e1230:Id d4p1:nil="false">ValueHere</e1230:Id>
-          <e1230:Line1 d4p1:nil="false">ValueHere</e1230:Line1>
-          <e1230:Line2 d4p1:nil="false">ValueHere</e1230:Line2>
-          <e1230:Line3 d4p1:nil="false">ValueHere</e1230:Line3>
-          <e1230:Line4 d4p1:nil="false">ValueHere</e1230:Line4>
-          <e1230:PostalCode d4p1:nil="false">ValueHere</e1230:PostalCode>
-          <e1230:StateOrProvince d4p1:nil="false">ValueHere</e1230:StateOrProvince>
-          <e1230:TimeStamp d4p1:nil="false">ValueHere</e1230:TimeStamp>
-        </e1230:CustomerAddress>
-        <e1230:CustomerFinancialStatus d4p1:nil="false">ValueHere</e1230:CustomerFinancialStatus>
-        <e1230:Id d4p1:nil="false">ValueHere</e1230:Id>
-        <e1230:Industry d4p1:nil="false">ValueHere</e1230:Industry>
-        <e1230:LastModifiedByUserId d4p1:nil="false">ValueHere</e1230:LastModifiedByUserId>
-        <e1230:LastModifiedTime d4p1:nil="false">ValueHere</e1230:LastModifiedTime>
-        <e1230:MarketCountry d4p1:nil="false">ValueHere</e1230:MarketCountry>
-        <ForwardCompatibilityMap xmlns:e1231="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-          <e1231:KeyValuePairOfstringstring>
-            <e1231:key d4p1:nil="false">ValueHere</e1231:key>
-            <e1231:value d4p1:nil="false">ValueHere</e1231:value>
-          </e1231:KeyValuePairOfstringstring>
+      <Customer xmlns:e325="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e325:CustomerFinancialStatus d4p1:nil="false">ValueHere</e325:CustomerFinancialStatus>
+        <e325:Id d4p1:nil="false">ValueHere</e325:Id>
+        <e325:Industry d4p1:nil="false">ValueHere</e325:Industry>
+        <e325:LastModifiedByUserId d4p1:nil="false">ValueHere</e325:LastModifiedByUserId>
+        <e325:LastModifiedTime d4p1:nil="false">ValueHere</e325:LastModifiedTime>
+        <e325:MarketCountry d4p1:nil="false">ValueHere</e325:MarketCountry>
+        <ForwardCompatibilityMap xmlns:e326="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+          <e326:KeyValuePairOfstringstring>
+            <e326:key d4p1:nil="false">ValueHere</e326:key>
+            <e326:value d4p1:nil="false">ValueHere</e326:value>
+          </e326:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e1230:MarketLanguage d4p1:nil="false">ValueHere</e1230:MarketLanguage>
-        <e1230:Name d4p1:nil="false">ValueHere</e1230:Name>
-        <e1230:ServiceLevel d4p1:nil="false">ValueHere</e1230:ServiceLevel>
-        <e1230:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e1230:CustomerLifeCycleStatus>
-        <e1230:TimeStamp d4p1:nil="false">ValueHere</e1230:TimeStamp>
-        <e1230:Number d4p1:nil="false">ValueHere</e1230:Number>
+        <e325:MarketLanguage d4p1:nil="false">ValueHere</e325:MarketLanguage>
+        <e325:Name d4p1:nil="false">ValueHere</e325:Name>
+        <e325:ServiceLevel d4p1:nil="false">ValueHere</e325:ServiceLevel>
+        <e325:CustomerLifeCycleStatus d4p1:nil="false">ValueHere</e325:CustomerLifeCycleStatus>
+        <e325:TimeStamp d4p1:nil="false">ValueHere</e325:TimeStamp>
+        <e325:Number d4p1:nil="false">ValueHere</e325:Number>
       </Customer>
     </GetCustomerResponse>
   </s:Body>

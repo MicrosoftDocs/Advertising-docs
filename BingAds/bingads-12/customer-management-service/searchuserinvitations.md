@@ -58,12 +58,12 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SearchUserInvitationsRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <Predicates xmlns:e1253="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e1253:Predicate>
-          <e1253:Field i:nil="false">ValueHere</e1253:Field>
-          <e1253:Operator>ValueHere</e1253:Operator>
-          <e1253:Value i:nil="false">ValueHere</e1253:Value>
-        </e1253:Predicate>
+      <Predicates xmlns:e348="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e348:Predicate>
+          <e348:Field i:nil="false">ValueHere</e348:Field>
+          <e348:Operator>ValueHere</e348:Operator>
+          <e348:Value i:nil="false">ValueHere</e348:Value>
+        </e348:Predicate>
       </Predicates>
     </SearchUserInvitationsRequest>
   </s:Body>
@@ -80,20 +80,20 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SearchUserInvitationsResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <UserInvitations xmlns:e1254="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1254:UserInvitation>
-          <e1254:Id>ValueHere</e1254:Id>
-          <e1254:FirstName d4p1:nil="false">ValueHere</e1254:FirstName>
-          <e1254:LastName d4p1:nil="false">ValueHere</e1254:LastName>
-          <e1254:Email d4p1:nil="false">ValueHere</e1254:Email>
-          <e1254:CustomerId>ValueHere</e1254:CustomerId>
-          <e1254:RoleId>ValueHere</e1254:RoleId>
-          <e1254:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <UserInvitations xmlns:e349="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e349:UserInvitation>
+          <e349:Id>ValueHere</e349:Id>
+          <e349:FirstName d4p1:nil="false">ValueHere</e349:FirstName>
+          <e349:LastName d4p1:nil="false">ValueHere</e349:LastName>
+          <e349:Email d4p1:nil="false">ValueHere</e349:Email>
+          <e349:CustomerId>ValueHere</e349:CustomerId>
+          <e349:RoleId>ValueHere</e349:RoleId>
+          <e349:AccountIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:long>ValueHere</a1:long>
-          </e1254:AccountIds>
-          <e1254:ExpirationDate>ValueHere</e1254:ExpirationDate>
-          <e1254:Lcid>ValueHere</e1254:Lcid>
-        </e1254:UserInvitation>
+          </e349:AccountIds>
+          <e349:ExpirationDate>ValueHere</e349:ExpirationDate>
+          <e349:Lcid>ValueHere</e349:Lcid>
+        </e349:UserInvitation>
       </UserInvitations>
     </SearchUserInvitationsResponse>
   </s:Body>

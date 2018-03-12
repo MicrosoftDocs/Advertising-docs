@@ -76,6 +76,7 @@ This example web application demonstrates OAuth authentication in production. Th
             $authentication = (new OAuthWebAuthCodeGrant())
                 ->withClientId(WebAuthHelper::ClientId)
                 ->withClientSecret(WebAuthHelper::ClientSecret)
+                ->withEnvironment(ApiEnvironment)
                 ->withRedirectUri('https://' . $_SERVER['HTTP_HOST'] . WebAuthHelper::RedirectUri)
                 ->withState(rand(0,999999999)); 
     

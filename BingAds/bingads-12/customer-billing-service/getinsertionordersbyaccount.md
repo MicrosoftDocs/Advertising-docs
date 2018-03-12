@@ -79,25 +79,38 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetInsertionOrdersByAccountResponse xmlns="https://bingads.microsoft.com/Billing/v12">
-      <InsertionOrders xmlns:e1274="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1274:InsertionOrder>
-          <e1274:AccountId>ValueHere</e1274:AccountId>
-          <e1274:BalanceAmount d4p1:nil="false">ValueHere</e1274:BalanceAmount>
-          <e1274:BookingCountryCode d4p1:nil="false">ValueHere</e1274:BookingCountryCode>
-          <e1274:Comment d4p1:nil="false">ValueHere</e1274:Comment>
-          <e1274:EndDate>ValueHere</e1274:EndDate>
-          <e1274:InsertionOrderId d4p1:nil="false">ValueHere</e1274:InsertionOrderId>
-          <e1274:LastModifiedByUserId d4p1:nil="false">ValueHere</e1274:LastModifiedByUserId>
-          <e1274:LastModifiedTime d4p1:nil="false">ValueHere</e1274:LastModifiedTime>
-          <e1274:NotificationThreshold d4p1:nil="false">ValueHere</e1274:NotificationThreshold>
-          <e1274:ReferenceId d4p1:nil="false">ValueHere</e1274:ReferenceId>
-          <e1274:SpendCapAmount>ValueHere</e1274:SpendCapAmount>
-          <e1274:StartDate>ValueHere</e1274:StartDate>
-          <e1274:Name d4p1:nil="false">ValueHere</e1274:Name>
-          <e1274:Status d4p1:nil="false">ValueHere</e1274:Status>
-          <e1274:PurchaseOrder d4p1:nil="false">ValueHere</e1274:PurchaseOrder>
-          <e1274:ChangePendingReview d4p1:nil="false">ValueHere</e1274:ChangePendingReview>
-        </e1274:InsertionOrder>
+      <InsertionOrders xmlns:e370="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e370:InsertionOrder>
+          <e370:AccountId>ValueHere</e370:AccountId>
+          <e370:BalanceAmount d4p1:nil="false">ValueHere</e370:BalanceAmount>
+          <e370:BookingCountryCode d4p1:nil="false">ValueHere</e370:BookingCountryCode>
+          <e370:Comment d4p1:nil="false">ValueHere</e370:Comment>
+          <e370:EndDate d4p1:nil="false">ValueHere</e370:EndDate>
+          <e370:InsertionOrderId d4p1:nil="false">ValueHere</e370:InsertionOrderId>
+          <e370:LastModifiedByUserId d4p1:nil="false">ValueHere</e370:LastModifiedByUserId>
+          <e370:LastModifiedTime d4p1:nil="false">ValueHere</e370:LastModifiedTime>
+          <e370:NotificationThreshold d4p1:nil="false">ValueHere</e370:NotificationThreshold>
+          <e370:ReferenceId d4p1:nil="false">ValueHere</e370:ReferenceId>
+          <e370:SpendCapAmount>ValueHere</e370:SpendCapAmount>
+          <e370:StartDate d4p1:nil="false">ValueHere</e370:StartDate>
+          <e370:Name d4p1:nil="false">ValueHere</e370:Name>
+          <e370:Status d4p1:nil="false">ValueHere</e370:Status>
+          <e370:PurchaseOrder d4p1:nil="false">ValueHere</e370:PurchaseOrder>
+          <e370:ChangePendingReview d4p1:nil="false">ValueHere</e370:ChangePendingReview>
+          <e370:PendingChanges d4p1:nil="false">
+            <e370:Comment d4p1:nil="false">ValueHere</e370:Comment>
+            <e370:EndDate d4p1:nil="false">ValueHere</e370:EndDate>
+            <e370:RequestedByUserId d4p1:nil="false">ValueHere</e370:RequestedByUserId>
+            <e370:ModifiedDateTime d4p1:nil="false">ValueHere</e370:ModifiedDateTime>
+            <e370:NotificationThreshold d4p1:nil="false">ValueHere</e370:NotificationThreshold>
+            <e370:ReferenceId d4p1:nil="false">ValueHere</e370:ReferenceId>
+            <e370:SpendCapAmount>ValueHere</e370:SpendCapAmount>
+            <e370:StartDate d4p1:nil="false">ValueHere</e370:StartDate>
+            <e370:Name d4p1:nil="false">ValueHere</e370:Name>
+            <e370:PurchaseOrder d4p1:nil="false">ValueHere</e370:PurchaseOrder>
+            <e370:ChangeStatus d4p1:nil="false">ValueHere</e370:ChangeStatus>
+          </e370:PendingChanges>
+        </e370:InsertionOrder>
       </InsertionOrders>
     </GetInsertionOrdersByAccountResponse>
   </s:Body>

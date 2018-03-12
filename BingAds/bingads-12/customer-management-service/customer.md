@@ -10,13 +10,12 @@ description: Defines a customer.
 > This Bing Ads API Version 12 preview documentation is subject to change.
 
 # Customer Data Object - Customer Management
-Defines a customer.
+Defines a customer object that contains one or more Bing Ads accounts.
 
 ## Syntax
 ```xml
 <xs:complexType name="Customer" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element minOccurs="0" name="CustomerAddress" nillable="true" type="tns:Address" />
     <xs:element minOccurs="0" name="CustomerFinancialStatus" nillable="true" type="tns:CustomerFinancialStatus" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Industry" nillable="true" type="tns:Industry" />
@@ -38,7 +37,6 @@ Defines a customer.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customeraddress"></a>CustomerAddress|The customer's business address.<br/><br/>**Add:** Required<br/>**Update:** Required|[Address](address.md)|
 |<a name="customerfinancialstatus"></a>CustomerFinancialStatus|The financial status of the customer. For example, the status indicates whether the customer is in good standing or one or more of the accounts are past due.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[CustomerFinancialStatus](customerfinancialstatus.md)|
 |<a name="customerlifecyclestatus"></a>CustomerLifeCycleStatus|The status of the customer. When you create the customer, the status is set to *Active*. You cannot change the status.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[CustomerLifeCycleStatus](customerlifecyclestatus.md)|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *Customer* object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|

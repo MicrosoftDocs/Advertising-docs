@@ -366,29 +366,23 @@ The example desktop application sends authentication requests to the Microsoft a
 6.  Click **Build** -&gt; **Build BingAdsDesktopApp**, and then run the application. When you start the application you will be prompted by default for Microsoft account credentials to authenticate in production.
 
 ## <a name="sandbox"></a>Configuring Sandbox
-To use sandbox, follow these additional steps.
-
-Replace the try block within MainWindow.xaml.cs with the following snippet. 
-
-```csharp
-try
-{
-    // Prepare legacy Bing Ads UserName and Password authentication object
-    var authorization = new PasswordAuthentication("<UserNameGoesHere>", "<PasswordGoesHere>");
-
-    var userData = await GetUserData(authorization);
-
-    return await AddCampaignInBulk(userData);
-}
-```
-
-Set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *App.config* file.
+To use sandbox, set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *App.config* file.
 
 ```xml
 <add key="BingAdsEnvironment" value ="Sandbox"/>
 ```
 
-Optionally you should remove any unused local variables that had been used for OAuth in production.
+You can also set the environment for each ServiceClient individually as follows.
+
+```csharp
+_customerService = new ServiceClient<ICustomerManagementService>(_authorizationData, ApiEnvironment.Sandbox);
+```
+
+Whether you set the ServiceClient environment globally or individually, separately you'll also need to set the OAuth environment to sandbox.
+
+```csharp
+var oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(ClientId, ApiEnvironment.Sandbox);
+```
 
 ## See Also
 [Sandbox](sandbox.md)  

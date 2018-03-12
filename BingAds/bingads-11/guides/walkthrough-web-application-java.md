@@ -57,7 +57,7 @@ The example web application sends authentication requests to the Microsoft accou
         <dependency>
           <groupId>com.microsoft.bingads</groupId>
           <artifactId>microsoft.bingads</artifactId>
-          <version>11.5.5</version>
+          <version>11.5.9</version>
         </dependency>
       </dependencies>
       <build>
@@ -68,7 +68,7 @@ The example web application sends authentication requests to the Microsoft accou
 
 10. In **Project Explorer**, right-click the Web Content folder of your BingAdsWebApp project and select **New** -&gt; **JSP File**. Name the file *index.jsp* and then click **Finish**.
 
-11. Open the Index.jsp file and replace its contents with the following code block. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). If you are using sandbox, you should instead follow the steps below in [Configuring Sandbox](#sandbox).
+11. Open the Index.jsp file and replace its contents with the following code block. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). If you are using sandbox, you need to follow the steps below in [Configuring Sandbox](#sandbox).
 
     ```java
     <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
@@ -251,20 +251,23 @@ To use the [Sandbox](sandbox.md) environment, create a new text file named *bing
 ```no-highlight
 environment=Sandbox
 ```
-
-The SDK does not yet support OAuth in sandbox (coming soon), so you must use *PasswordAuthentication*. You can remove all code above that refers to oAuthWebAuthCodeGrant, and simply add these lines before you create the new ServiceClient for ICustomerManagementService.
+You can also set the environment for each ServiceClient individually as follows.
 
 ```java
-authorizationData = new AuthorizationData();
-authorizationData.setDeveloperToken("DeveloperTokenGoesHere");
-PasswordAuthentication passwordAuthentication = 
-    new PasswordAuthentication("UserNameGoesHere", "PasswordGoesHere");
-authorizationData.setAuthentication(passwordAuthentication);
-
-// This snippet is already provided in the sample above.
 CustomerService = new ServiceClient<ICustomerManagementService>(
-    authorizationData, 
+    authorizationData,
+    ApiEnvironment.SANDBOX,
     ICustomerManagementService.class);
+```
+
+Whether you set the ServiceClient environment globally or individually, separately you'll also need to set the OAuth environment to sandbox.
+
+```java
+OAuthWebAuthCodeGrant oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(
+        ClientId, 
+        ClientSecret, 
+        new URL(RedirectUri),
+        ApiEnvironment.SANDBOX);
 ```
 
 ## <a name="deploy"></a>Deploying a Web Application
