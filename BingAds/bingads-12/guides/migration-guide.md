@@ -246,7 +246,7 @@ The Pending and PendingSystemReview values are removed from the [InsertionOrderS
 ### <a name="billing-newfeatures"></a>New Features
 
 #### <a name="billing-insertionorderpendingchanges"></a>Insertion Order Pending Changes
-In version 12 you can update an approved insertion order via the [InsertionOrderPendingChanges](../customer-billing-service/insertionorderpendingchanges.md) object. Previously in version 11 you could not update an approved and active insertion order. You can discover pending changes via [SearchInsertionOrders](../customer-billing-service/searchinsertionorder.md), and then call [UpdateInsertionOrder](../customer-billing-service/updateinsertionorder.md) to change the status or update the insertion order settings. 
+In version 12 you can update an approved insertion order via the [InsertionOrderPendingChanges](../customer-billing-service/insertionorderpendingchanges.md) object. Previously in version 11 you could not update an approved and active insertion order. You can discover pending changes via [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md), and then call [UpdateInsertionOrder](../customer-billing-service/updateinsertionorder.md) to change the status or update the insertion order settings. 
 
 ## <a name="customer"></a>Customer Management
 
