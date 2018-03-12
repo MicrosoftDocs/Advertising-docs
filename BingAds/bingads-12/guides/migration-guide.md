@@ -13,11 +13,14 @@ description: Get details about migrating to Bing Ads API version 12.
 > [!IMPORTANT]
 > With the availability of Bing Ads API version 12, version 11 is deprecated and will sunset by October 31, 2018. 
 
-The sections below describe changes from version 11 to version 12 of the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md), [Bulk](../bulk-service/bulk-service-reference.md), [Campaign Management](../campaign-management-service/campaign-management-service-reference.md), [Customer Billing](../customer-billing-service/customer-billing-service-reference.md), [Customer Management](../customer-management-service/customer-management-service-reference.md), and [Reporting](../reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services.
+The sections below describe changes from version 11 to version 12 of the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md), [Bulk](../bulk-service/bulk-service-reference.md), [Campaign Management](../campaign-management-service/campaign-management-service-reference.md), [Customer Billing](../customer-billing-service/customer-billing-service-reference.md), [Customer Management](../customer-management-service/customer-management-service-reference.md), and [Reporting](../reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services. 
+
+> [!NOTE]
+> The features described below at times differ from the version 12 WSDL and reference documentation, as the latter are works in progress. You can take this guide as an overview of the changes either completed or planned to ship by the time version 12 is generally available. 
 
 ## <a name="authentication"></a>Authentication for All Services
 
-### Breaking Changes
+### <a name="authentication-breakingchanges"></a>Breaking Changes
 
 #### <a name="authentication-oauth-required"></a>Microsoft Account Authentication via OAuth is Required
 Starting with Bing Ads API version 12, only OAuth authentication will be supported. Managed credentials i.e., the *UserName* and *Password* header elements are not supported. 
@@ -39,7 +42,7 @@ The merged credentials that could authenticate via Bing Ads API Version 11 will 
 
 ## <a name="adinsight"></a>Ad Insight
 
-### Breaking Changes
+### <a name="adinsight-breakingchanges"></a>Breaking Changes
 
 #### <a name="adinsight-proxy-client"></a>Proxy Client
 
@@ -85,7 +88,7 @@ The Content ad distribution is no longer supported in Bing Ads, and the *Content
 
 ## <a name="bulk"></a>Bulk
 
-### Breaking Changes
+### <a name="bulk-breakingchanges"></a>Breaking Changes
 
 #### <a name="bulk-proxy-client"></a>Proxy Client
 
@@ -144,7 +147,7 @@ In-market audiences cannot be deleted in both version 11 and version 12. Custom 
 
 ## <a name="campaign"></a>Campaign Management
 
-### Breaking Changes
+### <a name="campaign-breakingchanges"></a>Breaking Changes
 
 #### <a name="campaign-proxy-client"></a>Proxy Client
 Update your proxy client to use the new endpoint address and namespace.
@@ -214,7 +217,7 @@ In version 12 the ReturnSupportedCampaignTypes request element is removed from [
 #### <a name="campaign-errorcode-inmarketaudiencecouldnotbedeleted"></a>Error Code for InMarketAudienceCouldNotBeDeleted
 In-market audiences cannot be deleted in both version 11 and version 12. Custom audiences can be deleted in both version 11 and 12. The error code CustomAudienceAndInMarketAudienceCouldNotBeDeleted (4860) that is still returned in version 11 is replaced by error code InMarketAudienceCouldNotBeDeleted (4864) in version 12.
 
-### New Features
+### <a name="campaign-newfeatures"></a>New Features
 
 #### <a name="campaign-inheritedbidstrategytypes"></a>Inherited Bid Strategy Types
 The *InheritedBidStrategyTypes* element is added to the response message of the [AddAdGroups](../campaign-management-service/addadgroups.md), [AddKeywords](../campaign-management-service/addkeywords.md), [UpdateAdGroups](../campaign-management-service/updateadgroups.md), and [UpdateKeywords](../campaign-management-service/updatekeywords.md) operations.
@@ -223,7 +226,7 @@ Each string in the list is returned in the same order and corresponds to the ad 
 
 ## <a name="billing"></a>Customer Billing
 
-### Breaking Changes
+### <a name="billing-breakingchanges"></a>Breaking Changes
 
 #### <a name="billing-proxy-client"></a>Proxy Client
 Update your proxy client to use the new endpoint address and namespace.
@@ -238,11 +241,17 @@ In version 12 a structured list of [BillingDocumentInfo](../customer-billing-ser
 The *CustomerId* element is added to the [BillingDocumentInfo](../customer-billing-service/billingdocumentinfo.md) object. When you call the [GetBillingDocuments](../customer-billing-service/getbillingdocuments.md) operation, both the *CustomerId* and *DocumentId* are required. 
 
 #### <a name="billing-insertionorderstatus"></a>InsertionOrderStatus
-The Pending and PendingSystemReview values are removed from the [InsertionOrderStatus](../customer-billing-service/insertionorderstatus.md) value set. The NotStarted value replaces Pending.
+The Pending and PendingSystemReview values are removed from the [InsertionOrderStatus](../customer-billing-service/insertionorderstatus.md) value set. The NotStarted value replaces Pending. 
+
+### <a name="billing-newfeatures"></a>New Features
+
+#### <a name="billing-insertionorderpendingchanges"></a>Insertion Order Pending Changes
+In version 12 you can approve, decline, or cancel an insertion order via the [InsertionOrderPendingChanges](../customer-billing-service/insertionorderpendingchanges.md) object. 
+
 
 ## <a name="customer"></a>Customer Management
 
-### Breaking Changes
+### <a name="customer-breakingchanges"></a>Breaking Changes
 
 #### <a name="customer-proxy-client"></a>Proxy Client
 Update your proxy client to use the new endpoint address and namespace.
@@ -330,7 +339,12 @@ The *UserRole* value set is removed to ensure consistent mapping and forward com
 #### <a name="customer-advertiseraccount"></a>Advertiser Account
 The [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object no longer derives from an *Account* base. The *Account* object is removed and its properties are moved directly to the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object. 
 
-Also because only one account type is supported, the *AccountType* and *ApplicationType* value sets are removed. In turn the *AccountType* element is removed from the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object, the *CustomerAppScope* element is removed from the [User](../customer-management-service/user.md) object, and the *ApplicationScope* request element is removed from the [FindAccounts](../customer-management-service/findaccounts.md), [FindAccountsOrCustomersInfo](../customer-management-service/findaccountsorcustomersinfo.md), [GetCustomersInfo](../customer-management-service/getcustomersinfo.md), and [SignupCustomer](../customer-management-service/signupcustomer.md) operations.
+Also because only one account type is supported, the *AccountType* and *ApplicationType* value sets are removed. In turn the *AccountType* element is removed from the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object, the *CustomerAppScope* element is removed from the [User](../customer-management-service/user.md) object, and the *ApplicationScope* request element is removed from the [FindAccounts](../customer-management-service/findaccounts.md), [FindAccountsOrCustomersInfo](../customer-management-service/findaccountsorcustomersinfo.md), [GetCustomersInfo](../customer-management-service/getcustomersinfo.md), and [SignupCustomer](../customer-management-service/signupcustomer.md) operations. 
+
+#### <a name="customer-businessaddress"></a>Business Address
+The *CustomerAddress* element is removed from the [Customer](../customer-management-service/customer.md) object. Instead, the *BusinessAddress* of each [AdvertiserAccount](../customer-management-service/advertiseraccount.md) will be required. 
+
+The *BusinessName* element is added to the [Address](../customer-management-service/address.md) object. It is required for *BusinessAddress* of each [AdvertiserAccount](../customer-management-service/advertiseraccount.md), and ignored if you set it with the [User](../customer-management-service/user.md) address. 
 
 #### <a name="customer-advertiseraccount"></a>AutoTag Type
 The *AutoTag* key and value pair is removed from the *ForwardCompatibilityMap* element of the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object. Instead the *AutoTagType* element is added to the [AdvertiserAccount](../customer-management-service/advertiseraccount.md). The new [AutoTagType](../customer-management-service/autotagtype.md) values are *Inactive*, *Preserve*, and *Replace*. If you used values 0, 1, or 2 in the version 11 *AutoTag*, then you can replace them with the version 12 auto tag type as follows.
@@ -362,7 +376,7 @@ The following [Predicate](../customer-management-service/predicate.md#searchcust
 
 ## <a name="reporting"></a>Reporting
 
-### Breaking Changes
+### <a name="reporting-breakingchanges"></a>Breaking Changes
 
 #### <a name="reporting-proxy-client"></a>Proxy Client
 Update your proxy client to use the new endpoint address and namespace.
@@ -448,7 +462,7 @@ When submitting the following report requests, you must use the [ReportAggregati
 #### <a name="reporting-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *Content* value is removed from the [AdDistributionReportFilter](../reporting-service/addistributionreportfilter.md), [BidMatchTypeReportFilter](../reporting-service/bidmatchtypereportfilter.md), and [DeliveredMatchTypeReportFilter](../reporting-service/deliveredmatchtypereportfilter.md) value sets. 
 
-### New Features
+### <a name="reporting-newfeatures"></a>New Features
 
 #### <a name="reporting-reporttimeperiod"></a>More Flexible Report Time Periods
 Bing Ads API version 12 now lets you choose a *TimeZone* when you submit a [ReportRequest](../reporting-service/reportrequest.md). The time zone can help you accurately scope data for the selected date range. 
