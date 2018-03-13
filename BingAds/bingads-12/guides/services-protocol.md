@@ -56,8 +56,8 @@ Because of the costs associated with establishing a connection to a web service,
 ## <a name="throttling"></a>Handle Throttling
 Throttling extremely high-volume usage maintains fair usage for all Bing Ads clients.
 
-### Ad Insight and Campaign Management
-For Ad Insight and Campaign services, throttling limits the number of calls to the API that any one user can make in a minute's time.
+### <a name="throttling-adinsight"></a>Ad Insight API
+For the Ad Insight service, throttling limits the number of calls to the API that any one user can make in a minute's time.
 
 At the customer level, the number of calls a customer can make to the customer data is restricted using a sliding protocol with a 60 second window.
 
@@ -69,7 +69,7 @@ Should you hit the service call limit, you will see the following error:
 
 When you observe this error, you can resubmit the request under the limit after waiting 60 seconds.
 
-### Bulk
+### <a name="throttling-bulk"></a>Bulk API
 The Bulk service limits the number of requests that you can make to [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md), [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md), and [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md). The details of the service limits are internal and subject to change.
 
 Should you hit the service call limit, you will see the following error:
@@ -81,6 +81,19 @@ Should you hit the service call limit, you will see the following error:
 If you observe this error, you can resubmit your request after waiting up to 15 minutes.
 
 Also note the size limit per file for bulk upload in production is 100MB and up to 4 million rows. For [Sandbox](sandbox.md) the limit is 20K rows.
+
+### <a name="throttling-campaign"></a>Campaign Management API
+For the Campaign Management service, throttling limits the number of calls to the API that any one user can make in a minute's time.
+
+At the customer level, the number of calls a customer can make to the customer data is restricted using a sliding protocol with a 60 second window.
+
+Should you hit the service call limit, you will see the following error:
+
+-   Numeric Error Code: *117*  
+-   Symbolic Error Code: *CallRateExceeded*  
+-   Message: *You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.*  
+
+When you observe this error, you can resubmit the request under the limit after waiting 60 seconds.
 
 ## See Also
 [Bing Ads Web Service Addresses](web-service-addresses.md)  

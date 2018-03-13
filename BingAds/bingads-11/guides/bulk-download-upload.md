@@ -19,6 +19,7 @@ To download an account's campaign data, call the [DownloadCampaignsByAccountIds]
 
 ### Downloading a Bulk File
 You may request all of the campaign's data or only the data that has changed since the last time you downloaded the campaign's data. For either download operation, the following is an overview of the request settings and download workflow.
+
   > [!IMPORTANT]
   > You must use the same user credentials for the download request operation (either [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md)) and the [GetBulkDownloadStatus](../bulk-service/getbulkdownloadstatus.md) polling operation.
    
@@ -47,12 +48,13 @@ You may request all of the campaign's data or only the data that has changed sin
 
 8.  The download file is compressed in zip format, so you must unzip the file to access the data. For information about the schema used for the download file, see [Bulk File Schema](../bulk-service/bulk-file-schema.md).
 
-### Download Best Practices
+### <a name="downloadbestpractices"></a>Download Best Practices
+Please adhere to the best practices to ensure fair usage for yourself and all Bing Ads clients.
 
--   Request only those bulk download entities that you require.
+> [!IMPORTANT]
+> Whereas exact concurrent download and upload limits are subject to change, the number of pending requests that you have submitted is limited. If you observe the 4204 BulkServiceNoMoreCallsPermittedForTheTimePeriod error, you can resubmit your request after waiting up to 15 minutes depending on the frequency and size of the requests that you submitted. For more information see [Bulk API Throttling](services-protocol.md#throttling-bulk).
 
-    > [!IMPORTANT]
-    > New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file.
+-   Request only those bulk download entities that you require. New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file.
 
 -   Perform a full download one time only. Thereafter, perform delta downloads. Set the *LastSyncTimeInUTC* to the time stamp of the last download. The download file contains the time stamp of the download in the *SyncTime* column of the *Account* record. There is no advantage to performing a full download every time and it decreases everyone's performance including yours.
 
@@ -122,7 +124,10 @@ The following is an overview of the request settings and upload workflow.
     > The format of the upload result file will be either **Csv** or **Tsv**, and will match the format of the file that you submitted for upload.
 
 ### <a name="uploadbestpractices"></a>Upload Best Practices
-Please consider these tips to maximize Bulk upload performance.
+Please adhere to the best practices to ensure fair usage for yourself and all Bing Ads clients.
+
+> [!IMPORTANT]
+> Whereas exact concurrent download and upload limits are subject to change, the number of pending requests that you have submitted is limited. If you observe the 4204 BulkServiceNoMoreCallsPermittedForTheTimePeriod error, you can resubmit your request after waiting up to 15 minutes depending on the frequency and size of the requests that you submitted. For more information see [Bulk API Throttling](services-protocol.md#throttling-bulk).
 
 -   Large files can degrade the upload performance. It is optional and recommended that the file be compressed for upload. If compressed it must be formatted as ZIP with the corresponding extension. The file size limit for upload in production is 100MB and up to 4 million rows. For [Sandbox](sandbox.md) the limit is 20K rows. If you can limit concurrent uploads per customer below 5 or 6, then consider splitting the file rather than approaching the file size limit.
 
@@ -143,4 +148,3 @@ Please consider these tips to maximize Bulk upload performance.
 ## See Also
 [Bulk Service Reference](../bulk-service/bulk-service-reference.md)  
 [Bing Ads Web Service Addresses](web-service-addresses.md)
-

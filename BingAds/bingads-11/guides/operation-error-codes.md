@@ -8752,7 +8752,7 @@ The Type column of the row was not recognized and could not be inferred from the
 BulkServiceNoMoreCallsPermittedForTheTimePeriod
 
 **Description**
-No more bulk upload or download calls will be permitted for this account for the current time period. If you have reached your bulk upload limit, the bulk download operations may still be available, or vice versa.
+No more bulk upload or download calls will be permitted for this account for the current time period. If you have reached your bulk upload limit, the bulk download operations may still be available, or vice versa. If you observe this error, you can resubmit your request after waiting up to 15 minutes. For more information see [Bulk Download and Upload](bulk-download-upload.md) and [Bulk API Throttling](services-protocol.md#throttling-bulk). 
 
 ***
 
