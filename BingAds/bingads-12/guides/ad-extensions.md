@@ -152,7 +152,7 @@ These are the ad extension entities that can be accessed using the [Campaign Man
 -   [LocationAdExtension](../campaign-management-service/locationadextension.md)
 -   [PriceAdExtension](../campaign-management-service/priceadextension.md)
 -   [ReviewAdExtension](../campaign-management-service/reviewadextension.md)
--   [SitelinkAdExtension](../campaign-management-service/sitelinkadextension.md)
+-   [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md)
 -   [StructuredSnippetAdExtension](../campaign-management-service/structuredsnippetadextension.md)
 
 > [!NOTE]
