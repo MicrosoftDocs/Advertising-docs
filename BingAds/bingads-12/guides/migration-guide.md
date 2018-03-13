@@ -201,6 +201,7 @@ The following time zone values are updated for the *TimeZone* element of the [Ca
 -  Since Magadan is now permanently in UTC+12 time zone, the value is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
 -  The value is updated from *Almaty_Novosibirsk* to *AlmatyNovosibirsk*.
 -  The value is updated from *MidwayIslandand_Samoa* to *MidwayIslandAndSamoa*.
+-  The value is updated from *MountainTime_US_Canada* to *MountainTimeUSCanada*.
 
 #### <a name="campaign-batcherrorcollectioneditorial"></a>Batch Error Collection Editorial Errors
 The Appealable, DisapprovedText, Location, PublisherCountry, and ReasonCode elements are added to the [BatchErrorCollection](../campaign-management-service/batcherrorcollection.md) object. 

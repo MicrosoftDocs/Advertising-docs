@@ -19,7 +19,7 @@ The following table describes the possible campaign time zone values.
 |AbuDhabiMuscat|Abu Dhabi and Muscat time zone.|UTC+4|
 |Adelaide|Adelaide, Australia time zone.|UTC+9.5|
 |Alaska|Alaska time zone.|UTC-9|
-|Almaty_Novosibirsk<br /><br />**Note:** Use *AlmatyNovosibirsk* for the [Customer Management service](../customer-management-service/customer-management-service-reference.md).|Almaty and Novosibirsk time zone.|UTC+6|
+|AlmatyNovosibirsk|Almaty and Novosibirsk time zone.|UTC+6|
 |AmsterdamBerlinBernRomeStockholmVienna|Amsterdam, Berlin, Bern, Rome, Stockholm, and Vienna time zone.|UTC+1|
 |Arizona|Arizona time zone.|UTC-7|
 |AstanaDhaka|Astana and Dhaka time zone.|UTC+6|
@@ -60,7 +60,7 @@ The following table describes the possible campaign time zone values.
 |HelsinkiKyivRigaSofiaTallinnVilnius|Helsinki, Kyiv, Riga, Sofia, Tallinn, and Vilnius time zone.|UTC+2|
 |Hobart|Hobart time zone.|UTC+10|
 |IndianaEast|Indiana (East) time zone.|UTC-5|
-|InternationalDateLineWest<br /><br />**Note:** Use *InternationalDatelineWest* for the [Customer Management service](../customer-management-service/customer-management-service-reference.md).|International Date Line (West) time zone.|UTC-12|
+|InternationalDateLineWest|International Date Line (West) time zone.|UTC-12|
 |IrkutskUlaanBataar|Irkutsk and Ulaanbaatar time zone.|UTC+8|
 |IslandamabadKarachiTashkent|Islamabad, Karachi, and Tashkent time zone.|UTC+5|
 |Jerusalem|Jerusalem time zone.|UTC+2|
@@ -69,11 +69,10 @@ The following table describes the possible campaign time zone values.
 |Krasnoyarsk|Krasnoyarsk time zone.|UTC+7|
 |KualaLumpurSingapore|Kuala Lumpur and Singapore time zone.|UTC+8|
 |KuwaitRiyadh|Kuwait and Riyadh time zone.|UTC+3|
-|MagadanSolomonIslandNewCaledonia|Magadan, Solomon Islands, and New Caledonia time zone.|UTC+11|
 |MidAtlantic|Mid-Atlantic time zone.|UTC-2|
-|MidwayIslandand_Samoa<br /><br />**Note:** Use *MidwayIslandAndSamoa* for the [Customer Management service](../customer-management-service/customer-management-service-reference.md).|Midway Island and Samoa time zone.|UTC-11|
+|MidwayIslandAndSamoa|Midway Island and Samoa time zone.|UTC-11|
 |MoscowStPetersburgVolgograd|Moscow, St Petersburg, and Volgograd time zone.|UTC+3|
-|MountainTime_US_Canada<br /><br />**Note:** Use *MountainTimeUSCanada* for the [Customer Management service](../customer-management-service/customer-management-service-reference.md).|Mountain Time U.S. and Canada time zone.|UTC-7|
+|MountainTimeUSCanada|Mountain Time U.S. and Canada time zone.|UTC-7|
 |Nairobi|Nairobi time zone.|UTC+3|
 |Newfoundland|Newfoundland time zone.|UTC-3.5|
 |Nukualofa|Nuku'alofa time zone.|UTC+13|
@@ -85,6 +84,7 @@ The following table describes the possible campaign time zone values.
 |SarajevoSkopjeWarsawZagreb|Sarajevo, Skopie, Warsaw, and Zagreb time zone.|UTC+1|
 |Saskatchewan|Saskatchewan time zone.|UTC-6|
 |Seoul|Seoul time zone.|UTC+9|
+|SolomonIslandNewCaledonia|Magadan, Solomon Islands, and New Caledonia time zone.|UTC+11|
 |SriJayawardenepura|Sri Jayawardenepura time zone.|UTC+5.5|
 |Taipei|Taipei time zone.|UTC+8|
 |Tehran|Tehran time zone.|UTC+3.5|
