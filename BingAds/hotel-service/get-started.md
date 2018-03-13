@@ -19,16 +19,16 @@ Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. Th
 <a name="authenticatingcredentials"/> 
 ## Authenticating your credentials
 
-The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Managing User Authentication with OAuth](../guides/authentication-oauth.md). 
+The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Authentication with OAuth](/bingads/guides/authentication-oauth). 
 
-You *can* use the [Bing Ads SDK](../guides/client-libraries.md) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](../guides/get-started-csharp.md) | [Java](../guides/get-started-java.md) | [Python](../guides/get-started-python.md). (You should only use the SDK to get the access token if you're using the SDK for Bing Ads campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
+You *can* use the [Bing Ads SDK](/bingads/guides/client-libraries) for .NET, Java, or Python to authenticate Microsoft account credentials. For details about using the SDK to get the access token, see [C#](/bingads/guides/get-started-csharp) | [Java](/bingads/guides/get-started-java) | [Python](/bingads/guides/get-started-python). (You should only use the SDK to get the access token if you're using the SDK for Bing Ads campaigns, too. Otherwise, it may not be worth the overhead of installing the SDK.)
 
 If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md) for an example OAuth implementation.
 
 > [!NOTE]
 > If you use the API from a service, you must write a simple app to get the refresh token for a user that has permissions to access the hotel data. You will call the app you write once just to get the refresh token. After getting the refresh token, store it in secure storage that's accessible by your service. 
 >
-> Follow the steps outlined in [Managing User Authentication with OAuth](../guides/authentication-oauth.md) for getting the client ID for your app and for implementing the code grant flow. For an example of a simple console app that you use to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md).
+> Follow the steps outlined in [Authentication with OAuth](/bingads/guides/authentication-oauth) for getting the client ID for your app and for implementing the code grant flow. For an example of a simple console app that you use to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md).
 >
 > After getting the initial refresh token, the following shows the basic calling sequence that you'll make to get the access token that you set the Authorization header to.
 >
@@ -42,16 +42,16 @@ If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Examp
 > - Get the access token, refresh token, and access token expiration from the response
 > - Set a timer that expires just before the access token expires
 > - Set the Authorization header to the access token
-> - Store the refresh token in secured storage
+> - Store the new refresh token in secured storage
 > - When the expiration timer expires, repeat the process
 >
 > You should only get a new access token just before the current token expires. Do not get a new access token for each call.
+>
+> If you receive an invalid_grant error, your refresh token is no longer valid. You will need to run your app again to provide consent and get a new refresh token.
 
 ### Authenticating your credentials in sandbox
 
-You cannot use the Bing Ads SDK in the sandbox environment to get the access token. For sandbox, you can either clone the SDK Git repository and update the endpoints accordingly, or write your own AOuth implementation.
-
-For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Managing User Authentication with OAuth](../guides/authentication-oauth.md), substitute them with the following SI endpoints.
+For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](/bingads/guides/authentication-oauth), substitute them with the following SI endpoints.
 
  - partner.api.sandbox.bingads.microsoft.com&mdash;Endpoint for Bing Ads sandbox
  - account.microsoft-int.com&mdash;Endpoint for getting a sandbox Microsoft account 
@@ -63,6 +63,8 @@ For the sandbox environment, the following are the endpoints you must use to get
 <a name="getsicredentials"/> 
 ## Getting sandbox credentials
 
+### Get a sanbox account if you don't already have one
+
 You use the sandbox environment to test your application before putting it in production. Use the following steps to get a sandbox account.
 
 1.	Open a browser and navigate to sandbox.bingads.microsoft.com
@@ -71,22 +73,34 @@ You use the sandbox environment to test your application before putting it in pr
 4.	For **Import/Create Campaign**, click **Skip campaign creation**
 5.	For **Go Live**, click **Skip payment information**
 
+### Send an invite so you can create an MSA (**read step 5 carefully**)
+
 The above steps create a Bing Ads legacy account. To use Hotel Ads API, you need a sandbox Microsoft account (MSA). To get an MSA that you can use in sandbox, you need to invite a user to work on your account. The following steps show how to invite a user to work on your account.
 
 1.	In Bing Ads, click your user name (upper right corner)
 2.	Click **Accounts & Billing**
 3.	Click **Users**
 4.	Click **Invite user**
-5.	Enter the email address of the user to invite. The email server must be outlook.com (for example, someone@outlook.com).
+5.	Enter the email address of the user to invite. The email address must use @outlook.com (for example, someone@outlook.com).  
+  
+  > [!IMPORTANT]  
+  > You may send invites to @outlook.com email accounts only. You may not send invites to any other domain, even if the account is linked to an @outlook.com email account. If you try to send an invite to another domain (for example, someone@gmail.com), the BingAds UI will show the invite as pending indefinitely (the invite is never sent).  
+  
 6.	Click **Send**
+
+### Create an MSA to use with Hotel Ads API (**read steps 3 and 5 carefully**)
 
 Bing Ads sends an email invite to the user. If the invite doesn’t show up in the inbox, check the Junk Email folder. It may take a couple of minutes to receive the invite. The following steps show how to accept the invitation.
 
 1.	Open the email from Bing Ads with subject line, Invitation to Bing Ads
 2.	Click the embedded link
-3.	Select **Create a new email address** to create an MSA
+3.	Select **Create a new email address** to create an MSA. You must create a new MSA; you may not use an existing MSA.
 4.	Click **Next**
-5.	Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com).
+5.	Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com).  
+  
+  > [!IMPORTANT]  
+  > Sandbox supports MSAs created using an @outlook**-int**.com email account only. You may not use an @outlook.com email account. Also, you may not use an email account from another email service (for example, @gmail.com) even if the account is linked to an @outlook.com or @outlook**-int**.com email account.  
+  
 6.	Finish the work flow by specifying the rest of your user information
 7.  Exit Bing Ads after completing the MSA process.
 
