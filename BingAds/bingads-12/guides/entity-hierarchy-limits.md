@@ -31,7 +31,7 @@ The following table defines limits for [AdvertiserAccount](../customer-managemen
 ## <a name="adextensions"></a>Ad Extensions
 Ad extensions let you decorate expanded text ads with additional information that helps customers find relevant information about your products and services. Ad extensions are stored in a shared library at the account level. After adding the extension to your shared library, you must also explicitly associate it with the account or one or more campaigns or ad groups within the account for the extension to become eligible for delivery. For more information, see [Ad Extensions](ad-extensions.md).
 
-An account can contain up to 200,000 sitelink2 ad extensions. Outside of that limit, each account can contain up to 150,000 ad extensions of all other types combined.  
+An account can contain up to 200,000 sitelink ad extensions. Outside of that limit, each account can contain up to 150,000 ad extensions of all other types combined.  
 
 The entity (account, campaign, or ad group) to ad extension association limit varies by ad extension type. 
 
@@ -53,7 +53,7 @@ The entity (account, campaign, or ad group) to ad extension association limit va
 |[Location Ad Extension](#locationadextension)|Up to the total number of location ad extensions in your account|
 |[Price Ad Extension](#priceadextension)|20|
 |[Review Ad Extension](#reviewadextension)|20|
-|[Sitelink2 Ad Extension](#sitelinkadextension)|20|
+|[Sitelink Ad Extension](#sitelinkadextension)|20|
 |[Structured Snippet Ad Extension](#structuredsnippetadextension)|20|
 
 ### <a name="appadextension"></a>App Ad Extension
@@ -125,10 +125,7 @@ The following table defines limits for review ad extension properties.
 |Url|The string can contain a maximum of 255 characters.|
 
 ### <a name="sitelinkadextension"></a>Sitelink Ad Extension
-You can manage sitelink ad extensions using the Bulk service ([Sitelink Ad Extension Record](../bulk-service/sitelink-ad-extension.md) or [Sitelink2 Ad Extension Record](../bulk-service/sitelink2-ad-extension.md)) or Campaign Management service ([SiteLink2AdExtension](../campaign-management-service/sitelinksadextension.md) or [SiteLinksAdExtension](../campaign-management-service/sitelink2adextension.md)).
-
-> [!NOTE]
-> At the end of September 2017, Bing Ads upgraded all sitelinks ad extensions (contains multiple sitelinks per ad extension) to sitelink2 ad extensions (contains one sitelink per ad extension).
+You can manage sitelink ad extensions using the Bulk service ([Sitelink Ad Extension Record](../bulk-service/sitelink-ad-extension.md)) or Campaign Management service ([SiteLink2AdExtension](../campaign-management-service/sitelinksadextension.md) or [SiteLinksAdExtension](../campaign-management-service/sitelink2adextension.md)).
 
 The following table defines limits for sitelink ad extension properties.
 

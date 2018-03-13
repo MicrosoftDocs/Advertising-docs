@@ -30,7 +30,7 @@ The following Bulk CSV example would apply a label to a campaign if the valid *I
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Name,Description,Label,Color
-Format Version,,,,,,,,5,,,
+Format Version,,,,,,,,6,,,
 Campaign Label,,-22,-111,,,ClientIdGoesHere,,,,,
 ```
 

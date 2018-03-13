@@ -36,7 +36,7 @@ The following Bulk CSV example would add a new Ad Group Negative Custom Audience
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience,Remarketing Targeting Setting
-Format Version,,,,,,,,,5,,,
+Format Version,,,,,,,,,6,,,
 Ad Group Negative Custom Audience Association,Paused,,-1111,,,ClientIdGoesHere,,,,CustomAudienceIdHere,My Custom Audience,
 ```
 

@@ -38,7 +38,7 @@ The following Bulk CSV example would add a new campaign age criterion if a valid
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Client Id,Modified Time,Target,Bid Adjustment,Name,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
-Format Version,,,,,,,,,,5,,,,,,,,
+Format Version,,,,,,,,,,6,,,,,,,,
 Campaign Age Criterion,Active,,-111,,,ClientIdGoesHere,,EighteenToTwentyFour,20,,,,,,,,,
 ```
 

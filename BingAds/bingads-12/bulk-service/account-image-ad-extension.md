@@ -34,7 +34,7 @@ The following Bulk CSV example would associate an image ad extension to an accou
 
 ```csv
 Type,Status,Id,Parent Id,Client Id,Modified Time,Name
-Format Version,,,,,,5
+Format Version,,,,,,6
 Account Image Ad Extension,Active,-11,,ClientIdGoesHere,,
 ```
 

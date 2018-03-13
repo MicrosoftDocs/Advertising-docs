@@ -37,7 +37,7 @@ The following Bulk CSV example would add a new campaign negative dynamic search 
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid,Name,Tracking Template,Custom Parameter,Dynamic Ad Target Condition 1,Dynamic Ad Target Condition 2,Dynamic Ad Target Condition 3,Dynamic Ad Target Value 1,Dynamic Ad Target Value 2,Dynamic Ad Target Value 3
-Format Version,,,,,,,,,5,,,,,,,,
+Format Version,,,,,,,,,6,,,,,,,,
 Campaign Negative Dynamic Search Ad Target,Active,,-114,,,ClientIdGoesHere,,,Bulk Campaign Dynamic Search Ad Target,,,Url,Category,PageContent,contoso.com,US/CA/SFO,flowers
 ```
 

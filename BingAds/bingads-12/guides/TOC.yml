@@ -490,8 +490,8 @@
           href: ../bulk-service/account-price-ad-extension.md
         - name: Account Review Ad Extension
           href: ../bulk-service/account-review-ad-extension.md
-        - name: Account Sitelink2 Ad Extension
-          href: ../bulk-service/account-sitelink2-ad-extension.md
+        - name: Account Sitelink Ad Extension
+          href: ../bulk-service/account-sitelink-ad-extension.md
         - name: Account Structured Snippet Ad Extension
           href: ../bulk-service/account-structured-snippet-ad-extension.md
         - name: Ad Group
@@ -546,10 +546,8 @@
           href: ../bulk-service/ad-group-remarketing-list-association.md
         - name: Ad Group Review Ad Extension
           href: ../bulk-service/ad-group-review-ad-extension.md
-        - name: AdGroup Sitelink Ad Extension
-          href: ../bulk-service/adgroup-sitelink-ad-extension.md
-        - name: Ad Group Sitelink2 Ad Extension
-          href: ../bulk-service/ad-group-sitelink2-ad-extension.md
+        - name: Ad Group Sitelink Ad Extension
+          href: ../bulk-service/ad-group-sitelink-ad-extension.md
         - name: Ad Group Structured Snippet Ad Extension
           href: ../bulk-service/ad-group-structured-snippet-ad-extension.md
         - name: App Ad Extension
@@ -610,8 +608,6 @@
           href: ../bulk-service/campaign-review-ad-extension.md
         - name: Campaign Sitelink Ad Extension
           href: ../bulk-service/campaign-sitelink-ad-extension.md
-        - name: Campaign Sitelink2 Ad Extension
-          href: ../bulk-service/campaign-sitelink2-ad-extension.md
         - name: Campaign Structured Snippet Ad Extension
           href: ../bulk-service/campaign-structured-snippet-ad-extension.md
         - name: Custom Audience
@@ -660,8 +656,6 @@
           href: ../bulk-service/review-ad-extension.md
         - name: Sitelink Ad Extension
           href: ../bulk-service/sitelink-ad-extension.md
-        - name: Sitelink2 Ad Extension
-          href: ../bulk-service/sitelink2-ad-extension.md
         - name: Shared Negative Keyword
           href: ../bulk-service/shared-negative-keyword.md
         - name: Structured Snippet Ad Extension

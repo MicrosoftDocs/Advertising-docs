@@ -46,7 +46,7 @@ The following Bulk CSV example would add a new Call Ad Extension to the account'
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Phone Number,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Country Code,Call Only,Call Tracking Enabled,Toll Free
-Format Version,,,,,,,,,,,,5,,,,,,
+Format Version,,,,,,,,,,,,6,,,,,,
 Call Ad Extension,Active,-12,0,,,ClientIdGoesHere,,,12/31/2018,2065550100,,,(Monday[09:00-21:00]),FALSE,US,TRUE,TRUE,FALSE
 ```
 

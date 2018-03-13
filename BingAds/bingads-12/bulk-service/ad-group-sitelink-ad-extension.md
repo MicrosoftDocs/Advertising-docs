@@ -1,24 +1,21 @@
 ---
-title: "Ad Group Sitelink2 Ad Extension Record - Bulk"
+title: "Ad Group Sitelink Ad Extension Record - Bulk"
 ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Describes the Ad Group Sitelink2 Ad Extension fields in a Bulk file.
+description: Describes the Ad Group Sitelink Ad Extension fields in a Bulk file.
 dev_langs:
   - csharp
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change.
 
-# Ad Group Sitelink2 Ad Extension Record - Bulk
-Defines an association record between an [Ad Group](ad-group.md) and a [Sitelink2 Ad Extension](sitelink2-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or sitelink2 ad extension, use the [Ad Group](ad-group.md) or [Sitelink2 Ad Extension](sitelink2-ad-extension.md) record. 
-
-> [!NOTE]
-> During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](sitelink2-ad-extension.md) records (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions.
+# Ad Group Sitelink Ad Extension Record - Bulk
+Defines an association record between an [Ad Group](ad-group.md) and a [Sitelink Ad Extension](sitelink-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or sitelink ad extension, use the [Ad Group](ad-group.md) or [Sitelink Ad Extension](sitelink-ad-extension.md) record. 
 	
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Ad Group Sitelink2 Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+For an *Ad Group Sitelink Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Ad Group](#adgroup)
 - [Campaign](#campaign)
@@ -33,30 +30,30 @@ For an *Ad Group Sitelink2 Ad Extension* record, the following attribute fields 
 - [Publisher Countries](#publishercountries)
 - [Status](#status)
 
-You can download all fields of the *Ad Group Sitelink2 Ad Extension* record by including the [DownloadEntity](downloadentity.md) value of *AdGroupSitelink2AdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Ad Group Sitelink Ad Extension* record by including the [DownloadEntity](downloadentity.md) value of *AdGroupSitelinkAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
-The following Bulk CSV example would associate a sitelink2 ad extension to an ad group if the valid *Id* and *Parent Id* are provided. 
+The following Bulk CSV example would associate a sitelink ad extension to an ad group if the valid *Id* and *Parent Id* are provided. 
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Name
-Format Version,,,,,,,,5
-Ad Group Sitelink2 Ad Extension,Active,-11,-1111,,,ClientIdGoesHere,,
+Format Version,,,,,,,,6
+Ad Group Sitelink Ad Extension,Active,-11,-1111,,,ClientIdGoesHere,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupSitelink2AdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupSitelinkAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
 
-// Map properties in the Bulk file to the BulkAdGroupSitelink2AdExtension
-var bulkAdGroupSitelink2AdExtension = new BulkAdGroupSitelink2AdExtension
+// Map properties in the Bulk file to the BulkAdGroupSitelinkAdExtension
+var bulkAdGroupSitelinkAdExtension = new BulkAdGroupSitelinkAdExtension
 {
     // Map properties in the Bulk file to the 
     // AdExtensionIdToEntityIdAssociation object of the Campaign Management service.
     AdExtensionIdToEntityIdAssociation = new AdExtensionIdToEntityIdAssociation
     {
         // 'Id' column header in the Bulk file
-        AdExtensionId = sitelink2AdExtensionIdKey,
+        AdExtensionId = sitelinkAdExtensionIdKey,
         // 'Parent Id' column header in the Bulk file
         EntityId = adGroupIdKey,
     },
@@ -67,7 +64,7 @@ var bulkAdGroupSitelink2AdExtension = new BulkAdGroupSitelink2AdExtension
     Status = Status.Active,
 };
 
-uploadEntities.Add(bulkAdGroupSitelink2AdExtension);
+uploadEntities.Add(bulkAdGroupSitelinkAdExtension);
 
 var entityUploadParameters = new EntityUploadParameters
 {
@@ -136,9 +133,9 @@ This field will not be set if a combination of terms caused the failure or if th
 ### <a name="id"></a>Id
 The identifier of the ad extension that is associated or removed from the ad group.
 
-This bulk field maps to the *Id* field of the [Sitelink2 Ad Extension](sitelink2-ad-extension.md) record. 
+This bulk field maps to the *Id* field of the [Sitelink Ad Extension](sitelink-ad-extension.md) record. 
 
-**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Sitelink2 Ad Extension](sitelink2-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Sitelink Ad Extension](sitelink-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
 ### <a name="modifiedtime"></a>Modified Time

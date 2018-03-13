@@ -34,7 +34,7 @@ The following Bulk CSV example would associate a structured snippet ad extension
 
 ```csv
 Type,Status,Id,Parent Id,Client Id,Modified Time,Name
-Format Version,,,,,,5
+Format Version,,,,,,6
 Account Structured Snippet Ad Extension,Active,-11,,ClientIdGoesHere,,
 ```
 

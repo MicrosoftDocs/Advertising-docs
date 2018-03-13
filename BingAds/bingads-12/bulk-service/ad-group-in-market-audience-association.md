@@ -37,7 +37,7 @@ The following Bulk CSV example would add a new Ad Group In Market Audience Assoc
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience,Remarketing Targeting Setting
-Format Version,,,,,,,,,5,,,
+Format Version,,,,,,,,,6,,,
 Ad Group In Market Audience Association,Paused,,-1111,,,ClientIdGoesHere,,10,,InMarketAudienceIdHere,My In Market Audience,
 ```
 

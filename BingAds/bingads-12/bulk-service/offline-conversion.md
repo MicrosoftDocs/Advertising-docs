@@ -35,7 +35,7 @@ The following Bulk CSV example would add a new offline conversion.
 
 ```csv
 Type,Status,Id,Parent Id,Client Id,Name,Conversion Currency Code,Conversion Name,Conversion Time,Conversion Value,Microsoft Click Id
-Format Version,,,,,5,,,,,
+Format Version,,,,,6,,,,,
 Offline Conversion,,,,ClientIdGoesHere,,USD,My Goal Name,7/27/2017 6:50:54 PM,10,f894f652ea334e739002f7167ab8f8e3
 ```
 

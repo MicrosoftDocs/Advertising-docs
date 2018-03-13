@@ -36,7 +36,7 @@ The following Bulk CSV example would add a new Ad Group Negative Remarketing Lis
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience,Remarketing Targeting Setting
-Format Version,,,,,,,,,5,,,
+Format Version,,,,,,,,,6,,,
 Ad Group Negative Remarketing List Association,Paused,,-1111,,,ClientIdGoesHere,,,,RemarketingListIdHere,My Remarketing List,
 ```
 

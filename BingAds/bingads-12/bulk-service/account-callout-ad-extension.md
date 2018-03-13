@@ -34,7 +34,7 @@ The following Bulk CSV example would associate a callout ad extension to an acco
 
 ```csv
 Type,Status,Id,Parent Id,Client Id,Modified Time,Name
-Format Version,,,,,,5
+Format Version,,,,,,6
 Account Callout Ad Extension,Active,-11,,ClientIdGoesHere,,
 ```
 

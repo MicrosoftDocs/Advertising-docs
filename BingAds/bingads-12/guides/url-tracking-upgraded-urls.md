@@ -98,7 +98,6 @@ These are the Bing Ads entities with properties for managing URLs that can be ac
 -   [Text Ad](../bulk-service/text-ad.md)
 -   [Keyword](../bulk-service/keyword.md)
 -   [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md)
--   [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md)
 
 ## <a name="campaignservice"></a>URL Tracking with the Campaign Management Service
 These are the Bing Ads entities with properties for managing URLs that can be accessed using the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
@@ -108,7 +107,6 @@ These are the Bing Ads entities with properties for managing URLs that can be ac
 -  [DynamicSearchAd](../campaign-management-service/dynamicsearchad.md)  
 -  [ExpandedTextAd](../campaign-management-service/expandedtextad.md)  
 -  [Keyword](../campaign-management-service/keyword.md)  
--  [SiteLink](../campaign-management-service/sitelink.md)  
 -  [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md)  
 -  [TextAd](../campaign-management-service/textad.md)  
 

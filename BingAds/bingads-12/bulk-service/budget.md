@@ -36,7 +36,7 @@ The following Bulk CSV example would add a new budget.
 
 ```csv
 Type,Status,Id,Parent Id,Client Id,Modified Time,Budget Id,Budget Name,Budget,Budget Type,Name
-Format Version,,,,,,,,,,5
+Format Version,,,,,,,,,,6
 Budget,Active,-20,0,ClientIdGoesHere,,,My Shared Budget,50,DailyBudgetAccelerated,
 ```
 

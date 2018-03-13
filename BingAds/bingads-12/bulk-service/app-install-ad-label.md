@@ -29,7 +29,7 @@ The following Bulk CSV example would apply a label to an app install ad if the v
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Name,Description,Label,Color
-Format Version,,,,,,,,5,,,
+Format Version,,,,,,,,6,,,
 App Install Ad Label,,-22,-11112,,,ClientIdGoesHere,,,,,
 ```
 

@@ -35,7 +35,7 @@ The following Bulk CSV example would associate a location ad extension to a camp
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Name
-Format Version,,,,,,,,5
+Format Version,,,,,,,,6
 Campaign Location Ad Extension,Active,-11,-1111,,,ClientIdGoesHere,,
 ```
 

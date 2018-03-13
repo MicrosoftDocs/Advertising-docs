@@ -44,7 +44,7 @@ The following Bulk CSV example would add a new Callout Ad Extension to the accou
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Callout Text
-Format Version,,,,,,,,,,,5,,,
+Format Version,,,,,,,,,,,6,,,
 Callout Ad Extension,Active,-13,0,,,ClientIdGoesHere,,,12/31/2018,,,(Monday[09:00-21:00]),FALSE,Callout Text
 ```
 

@@ -47,7 +47,7 @@ The following Bulk CSV example would add a new ad group if the correct campaign 
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Network Distribution,Pricing Model,Ad Rotation,Search Network,Search Bid,Content Network,Content Bid,Language,Bid Adjustment,Name,Tracking Template,Custom Parameter,Bid Strategy Type,Remarketing Targeting Setting
-Format Version,,,,,,,,,,,,,,,,,,,5,,,,
+Format Version,,,,,,,,,,,,,,,,,,,6,,,,
 Ad Group,Active,,-111,ParentCampaignNameGoesHere,Women's Red Shoe Sale,ClientIdGoesHere,,11/5/2017,12/31/2018,OwnedAndOperatedAndSyndicatedSearch,,RotateAdsEvenly,On,0.1,Off,,English,10,,http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl},{_promoCode}=PROMO1; {_season}=summer,ManualCpc,TargetAndBid
 ```
 

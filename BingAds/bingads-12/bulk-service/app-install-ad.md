@@ -52,7 +52,7 @@ The following Bulk CSV example would add a new app install ad given a valid ad g
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Display Url,Destination Url,Promotion,Device Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Title Part 1,Title Part 2,Path 1,Path 2
-Format Version,,,,,,,,,,,,,,5,,,,,,,,,,
+Format Version,,,,,,,,,,,,,,6,,,,,,,,,,
 App Install Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,Contoso Quick Setup,Find New Customers & Increase Sales!,,,,All,,Android,AppStoreIdGoesHere,FinalUrlGoesHere,,,{_promoCode}=PROMO1; {_season}=summer,,,,
 ```
 

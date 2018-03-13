@@ -46,7 +46,7 @@ The following Bulk CSV example would add a new ad group radius criterion if a va
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Target,Bid Adjustment,Name,OS Names,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
-Format Version,,,,,,,,,,,5,,,,,,,,,
+Format Version,,,,,,,,,,,6,,,,,,,,,
 Ad Group Radius Criterion,Active,,-1111,,,,ClientIdGoesHere,,RadiusName,20,,,10,Kilometers,,,,,10.5,40.5
 ```
 

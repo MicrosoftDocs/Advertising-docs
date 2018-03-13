@@ -125,10 +125,10 @@ The following Bulk records are available for managing ad extensions and ad exten
 -   [Ad Group Review Ad Extension](../bulk-service/ad-group-review-ad-extension.md)
 -   [Campaign Review Ad Extension](../bulk-service/campaign-review-ad-extension.md)
 
-### Sitelink2 Ad Extensions
--   [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md)
--   [Ad Group Sitelink2 Ad Extension](../bulk-service/ad-group-sitelink2-ad-extension.md)
--   [Campaign Sitelink2 Ad Extension](../bulk-service/campaign-sitelink2-ad-extension.md)
+### Sitelink Ad Extensions
+-   [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md)
+-   [Ad Group Sitelink Ad Extension](../bulk-service/ad-group-sitelink-ad-extension.md)
+-   [Campaign Sitelink Ad Extension](../bulk-service/campaign-sitelink-ad-extension.md)
 
 ### Structured Snippet Ad Extensions
 -   [Structured Snippet Ad Extension](../bulk-service/structured-snippet-ad-extension.md)
@@ -152,7 +152,7 @@ These are the ad extension entities that can be accessed using the [Campaign Man
 -   [LocationAdExtension](../campaign-management-service/locationadextension.md)
 -   [PriceAdExtension](../campaign-management-service/priceadextension.md)
 -   [ReviewAdExtension](../campaign-management-service/reviewadextension.md)
--   [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md)
+-   [SitelinkAdExtension](../campaign-management-service/sitelinkadextension.md)
 -   [StructuredSnippetAdExtension](../campaign-management-service/structuredsnippetadextension.md)
 
 > [!NOTE]

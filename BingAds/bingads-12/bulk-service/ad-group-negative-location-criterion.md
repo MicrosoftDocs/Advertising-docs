@@ -39,7 +39,7 @@ The following Bulk CSV example would add a new ad group negative location criter
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Target,Bid Adjustment,Name,OS Names,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
-Format Version,,,,,,,,,,,5,,,,,,,,,
+Format Version,,,,,,,,,,,6,,,,,,,,,
 Ad Group Negative Location Criterion,Active,,-1111,PostalCode,,,ClientIdGoesHere,,79381,,,,,,,,,,,
 ```
 

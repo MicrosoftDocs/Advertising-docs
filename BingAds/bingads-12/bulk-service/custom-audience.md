@@ -40,7 +40,7 @@ The following Bulk CSV example would update the description and membership durat
 
 ```csv
 Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Membership Duration,Scope,Audience,Remarketing Targeting Setting,
-Format Version,,,,,,5,,,,,
+Format Version,,,,,,6,,,,,
 Custom Audience,Active,IdHere,ParentIdHere,ClientIdGoesHere,,,Updated Custom Audience Description,30,Account,Custom Audience,,
 ```
 

@@ -39,7 +39,7 @@ The following Bulk CSV example would add a new remarketing list.
 
 ```csv
 Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Membership Duration,Scope,UET Tag Id,Audience,Remarketing Targeting Setting,Remarketing Rule
-Format Version,,,,,,5,,,,,,,
+Format Version,,,,,,6,,,,,,,
 Remarketing List,Active,-10,ParentIdHere,ClientIdGoesHere,,,New list with CustomEventsRule,30,Account,TagIdHere,Remarketing List with CustomEventsRule,,CustomEvents(Action Equals play) and (Category Equals video) and (Label Equals trailer) and (Value Equals 5.00)
 ```
 

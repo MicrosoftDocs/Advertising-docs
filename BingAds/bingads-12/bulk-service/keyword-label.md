@@ -29,7 +29,7 @@ The following Bulk CSV example would apply a label to a keyword if the valid *Id
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Name,Description,Label,Color
-Format Version,,,,,,,,5,,,
+Format Version,,,,,,,,6,,,
 Keyword Label,,-22,-11113,,,ClientIdGoesHere,,,,,
 ```
 

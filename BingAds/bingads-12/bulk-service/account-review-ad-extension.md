@@ -34,7 +34,7 @@ The following Bulk CSV example would associate a review ad extension to an accou
 
 ```csv
 Type,Status,Id,Parent Id,Client Id,Modified Time,Name
-Format Version,,,,,,5
+Format Version,,,,,,6
 Account Review Ad Extension,Active,-11,,ClientIdGoesHere,,
 ```
 

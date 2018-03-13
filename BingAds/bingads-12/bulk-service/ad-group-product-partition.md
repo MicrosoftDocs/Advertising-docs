@@ -42,7 +42,7 @@ The following Bulk CSV example would add a new ad group product partition given 
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Bid,Name,Product Condition 1,Product Value 1,Is Excluded,Parent Criterion Id,Tracking Template,Custom Parameter
-Format Version,,,,,,,,,,5,,,,,,
+Format Version,,,,,,,,,,6,,,,,,
 Ad Group Product Partition,Paused,,-1112,,,,ClientIdGoesHere,,0.5,,All,,FALSE,,,{_promoCode}=PROMO1; {_season}=summer
 ```
 

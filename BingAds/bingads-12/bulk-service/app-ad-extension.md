@@ -46,7 +46,7 @@ The following Bulk CSV example would add a new app ad extension to the account's
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Text,Destination Url,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,App Platform,App Id
-Format Version,,,,,,,,,,,,,5,,,,
+Format Version,,,,,,,,,,,,,6,,,,
 App Ad Extension,Active,-11,0,,,ClientIdGoesHere,,,12/31/2018,Contoso,DestinationUrlGoesHere,,,(Monday[09:00-21:00]),FALSE,Windows,AppStoreIdGoesHere
 ```
 

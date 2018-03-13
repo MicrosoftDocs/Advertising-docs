@@ -51,7 +51,7 @@ The following Bulk CSV example would add a new text ad given a valid ad group ID
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Display Url,Destination Url,Promotion,Device Preference,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Title Part 1,Title Part 2,Path 1,Path 2
-Format Version,,,,,,,,,,,,,,5,,,,,,,,,,
+Format Version,,,,,,,,,,,,,,6,,,,,,,,,,
 Text Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,Contoso Quick Setup,Find New Customers & Increase Sales!,contoso.com,,,All,False,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,,,,
 ```
 

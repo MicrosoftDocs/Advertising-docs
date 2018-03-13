@@ -50,7 +50,7 @@ The following Bulk CSV example would add one campaign of each type i.e. Search a
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Website,Client Id,Modified Time,Time Zone,Budget Id,Budget Name,Budget,Budget Type,Bid Adjustment,Name,Country Code,Store Id,Campaign Type,Priority,Tracking Template,Custom Parameter,Bid Strategy Type,Domain Language
-Format Version,,,,,,,,,,,,,,5,,,,,,,,
+Format Version,,,,,,,,,,,,,,6,,,,,,,,
 Campaign,Active,-111,0,SearchAndContent 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,SearchAndContent,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,
 Campaign,Active,-111,0,Shopping 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,US,39807,Shopping,0,,{_promoCode}=PROMO1; {_season}=summer,,
 Campaign,Active,-111,0,DynamicSearchAds 2/6/2017 4:11:11 PM,contoso.com,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,DynamicSearchAds,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,EN

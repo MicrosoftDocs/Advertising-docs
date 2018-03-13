@@ -38,7 +38,7 @@ The following Bulk CSV example would add a new ad group negative keyword given a
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Keyword,Match Type,Name
-Format Version,,,,,,,,,,5
+Format Version,,,,,,,,,,6
 Ad Group Negative Keyword,Active,,-1111,,,ClientIdGoesHere,,shoes,Exact,
 ```
 

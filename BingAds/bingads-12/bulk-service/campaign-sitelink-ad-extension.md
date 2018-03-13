@@ -13,9 +13,6 @@ dev_langs:
 
 # Campaign Sitelink Ad Extension Record - Bulk
 Defines an association record between a [Campaign](campaign.md) and an [Sitelink Ad Extension](sitelink-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the campaign or sitelink ad extension, use the [Campaign](campaign.md) or [Sitelink Ad Extension](sitelink-ad-extension.md) record.
-
-> [!NOTE]
-> During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](sitelink2-ad-extension.md) records (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions. 
 	
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Campaign Sitelink Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
@@ -32,23 +29,23 @@ For a *Campaign Sitelink Ad Extension* record, the following attribute fields ar
 - [Publisher Countries](#publishercountries)
 - [Status](#status)
 
-You can download all fields of the *Campaign Sitelink Ad Extension* record by including the [DownloadEntity](downloadentity.md) value of *CampaignSiteLinksAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Campaign Sitelink Ad Extension* record by including the [DownloadEntity](downloadentity.md) value of *CampaignSitelinkAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would associate a sitelink ad extension to a campaign if the valid *Id* and *Parent Id* are provided. 
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Name
-Format Version,,,,,,,,5
+Format Version,,,,,,,,6
 Campaign Sitelink Ad Extension,Active,-11,-1111,,,ClientIdGoesHere,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignSiteLinkAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignSitelinkAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
 
-// Map properties in the Bulk file to the BulkCampaignSiteLinkAdExtension
-var bulkCampaignSiteLinkAdExtension = new BulkCampaignSiteLinkAdExtension
+// Map properties in the Bulk file to the BulkCampaignSitelinkAdExtension
+var bulkCampaignSitelinkAdExtension = new BulkCampaignSitelinkAdExtension
 {
     // Map properties in the Bulk file to the 
     // AdExtensionIdToEntityIdAssociation object of the Campaign Management service.
@@ -66,7 +63,7 @@ var bulkCampaignSiteLinkAdExtension = new BulkCampaignSiteLinkAdExtension
     Status = Status.Active,
 };
 
-uploadEntities.Add(bulkCampaignSiteLinkAdExtension);
+uploadEntities.Add(bulkCampaignSitelinkAdExtension);
 
 var entityUploadParameters = new EntityUploadParameters
 {

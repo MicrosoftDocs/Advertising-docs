@@ -40,7 +40,7 @@ The following is a Bulk CSV example download for in-market audience.
 
 ```csv
 Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Membership Duration,Scope,Audience,Remarketing Targeting Setting,
-Format Version,,,,,,5,,,,,
+Format Version,,,,,,6,,,,,
 In Market Audience,Active,IdHere,ParentIdHere,ClientIdGoesHere,,,In Market Audience Description,30,Account,In Market Audience,,
 ```
 

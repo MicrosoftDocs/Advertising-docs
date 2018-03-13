@@ -29,7 +29,7 @@ The following Bulk CSV example would add a new negative keyword list.
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Keyword,Match Type,Name
-Format Version,,,,,,,,,,5
+Format Version,,,,,,,,,,6
 Negative Keyword List,Active,-19,,,,ClientIdGoesHere,,,,My Negative Keyword List
 ```
 

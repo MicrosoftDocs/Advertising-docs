@@ -40,7 +40,7 @@ The following Bulk CSV example would add a new product ad given a valid ad group
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Display Url,Destination Url,Promotion,Device Preference,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Title Part 1,Title Part 2,Path 1,Path 2
-Format Version,,,,,,,,,,,,,,5,,,,,,,,,,
+Format Version,,,,,,,,,,,,,,6,,,,,,,,,,
 Product Ad,Active,,-1112,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,,,,,Find New Customers & Increase Sales!,,,,,,,,,,,,,
 ```
 

@@ -54,7 +54,7 @@ The following Bulk CSV example would add a new Location Ad Extension to the acco
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Business Name,Phone Number,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Address Line 1,Address Line 2,Postal Code,City,State Or Province Code,Province Name,Latitude,Longitude,Country Code
-Format Version,,,,,,,,,,,,,5,,,,,,,,,,,
+Format Version,,,,,,,,,,,,,6,,,,,,,,,,,
 Location Ad Extension,Active,-15,0,,,ClientIdGoesHere,,,12/31/2018,Contoso Shoes,206-555-0100,,,(Monday[09:00-21:00]),FALSE,1234 Washington Place,Suite 1210,98608,Woodinville,,WA,0,0,US
 ```
 

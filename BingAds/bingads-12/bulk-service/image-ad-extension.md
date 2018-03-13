@@ -44,7 +44,7 @@ The following Bulk CSV example would add a new Image Ad Extension to the account
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Alternative Text,Media Ids
-Format Version,,,,,,,,,,,5,,,,
+Format Version,,,,,,,,,,,6,,,,
 Image Ad Extension,Active,-14,0,,,ClientIdGoesHere,,,,,,,FALSE,ImageAdExtension Alternative Text,ImageMediaIdHere
 ```
 

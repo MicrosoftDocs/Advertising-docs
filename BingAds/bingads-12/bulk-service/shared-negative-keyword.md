@@ -31,7 +31,7 @@ The following Bulk CSV example would add a new negative keyword to a negative ke
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Keyword,Match Type,Name
-Format Version,,,,,,,,,,5
+Format Version,,,,,,,,,,6
 Shared Negative Keyword,Active,,-19,,,ClientIdGoesHere,,shoes,Exact,
 ```
 

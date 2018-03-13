@@ -29,14 +29,14 @@ You can choose to download either a tab or comma delimited set of records (rows)
 > New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file. Similarly during upload you may submit the fields in any order. The upload record order is important when creating new entities, as described below within [Type Hierarchy](#typehierarchy).
 
 ## <a name="formatversions"></a>Format Versions
-The bulk format version is separate from the Bing Ads API version.  Format version enables a flexible upgrade path to adopt the latest supported features without breaking your application. As a best practice you should always upgrade to the latest format version. Currently Bing Ads API Version 11 only supports format version 5.0.
+The bulk format version is separate from the Bing Ads API version.  Format version enables a flexible upgrade path to adopt the latest supported features without breaking your application. As a best practice you should always upgrade to the latest format version. Currently Bing Ads API Version 11 only supports format version 6.0.
 
-To specify the file format version using bulk download, set *FormatVersion* to 5.0 in either the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) request.
+To specify the file format version using bulk download, set *FormatVersion* to 6.0 in either the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) request.
 
-To specify the version using bulk upload, set the *Name* field of the [Format Version](format-version.md) record to 5.0.
+To specify the version using bulk upload, set the *Name* field of the [Format Version](format-version.md) record to 6.0.
 
 ## <a name="recordtypes"></a>Record Types
-Records available for upload and download using [Format Version](#formatversions) 5.0 are detailed in the table below. 
+Records available for upload and download using [Format Version](#formatversions) 6.0 are detailed in the table below. 
 
 > [!IMPORTANT]
 > New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file.
@@ -49,7 +49,7 @@ Record Type  |Supported Campaign Types
 [Account Image Ad Extension](account-image-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Account Location Ad Extension](account-location-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Account Price Ad Extension](account-price-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
-|[Account Sitelink2 Ad Extension](account-sitelink2-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
+[Account Sitelink Ad Extension](account-sitelink-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Ad Group App Ad Extension](ad-group-app-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Ad Group](ad-group.md)     |All         
@@ -78,8 +78,7 @@ Record Type  |Supported Campaign Types
 [Ad Group Radius Criterion](ad-group-radius-criterion.md)     |All         
 [Ad Group Remarketing List Association](ad-group-remarketing-list-association.md)     |All         
 [Ad Group Review Ad Extension](ad-group-review-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
-[AdGroup Sitelink Ad Extension](adgroup-sitelink-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
-[Ad Group Sitelink2 Ad Extension](ad-group-sitelink2-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
+[Ad Group Sitelink Ad Extension](ad-group-sitelink-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Ad Group Structured Snippet Ad Extension](ad-group-structured-snippet-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [App Ad Extension](app-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [App Install Ad](app-install-ad.md)     |SearchAndContent         
@@ -109,7 +108,6 @@ Record Type  |Supported Campaign Types
 [Campaign Radius Criterion](campaign-radius-criterion.md)     |All         
 [Campaign Review Ad Extension](campaign-review-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
-[Campaign Sitelink2 Ad Extension](campaign-sitelink2-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Custom Audience](custom-audience.md)<br /><br />Only update is supported for upload. You cannot add or delete a custom audience using the Bing Ads API.     |All         
 [Dynamic Search Ad](dynamic-search-ad.md)     |DynamicSearchAds         
@@ -135,7 +133,6 @@ Record Type  |Supported Campaign Types
 [Review Ad Extension](review-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Shared Negative Keyword](shared-negative-keyword.md)     |All         
 [Sitelink Ad Extension](sitelink-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
-[Sitelink2 Ad Extension](sitelink2-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Structured Snippet Ad Extension](structured-snippet-ad-extension.md)     |SearchAndContent<br/>DynamicSearchAds         
 [Text Ad](text-ad.md)     |SearchAndContent         
 [Text Ad Label](text-ad-label.md)     |SearchAndContent         

@@ -44,7 +44,7 @@ The following Bulk CSV example would add a new campaign product scope given a va
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Bid,Name,Product Condition 1,Product Value 1,Product Condition 2,Product Value 2,Product Condition 3,Product Value 3,Product Condition 4,Product Value 4,Product Condition 5,Product Value 5,Product Condition 6,Product Value 6,Product Condition 7,Product Value 7,Is Excluded,Parent Criterion Id,Tracking Template,Custom Parameter
-Format Version,,,,,,,,,,5,,,,,,,,,,,,,,,,,,
+Format Version,,,,,,,,,,6,,,,,,,,,,,,,,,,,,
 Campaign Product Scope,Active,,-113,,,,ClientIdGoesHere,,,,Condition,New,CustomLabel0,MerchantDefinedCustomLabel,,,,,,,,,,,,,,
 ```
 

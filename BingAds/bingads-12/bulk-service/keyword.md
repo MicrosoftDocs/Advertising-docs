@@ -50,7 +50,7 @@ The following Bulk CSV example would add a new keyword given a valid ad group ID
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Keyword,Match Type,Bid,Param1,Param2,Param3,Name,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Bid Strategy Type
-Format Version,,,,,,,,,,,,,,5,,,,,
+Format Version,,,,,,,,,,,,,,6,,,,,
 Keyword,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,red shoes,Broad,0.5,,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,ManualCpc
 ```
 

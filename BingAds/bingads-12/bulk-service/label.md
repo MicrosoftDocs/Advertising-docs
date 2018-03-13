@@ -33,7 +33,7 @@ The following Bulk CSV example would add a new label.
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Name,Description,Label,Color
-Format Version,,,,,,,,5,,,
+Format Version,,,,,,,,6,,,
 Label,,-22,,,,ClientIdGoesHere,,,Label Description,Label Name,#FFFFFF
 ```
 

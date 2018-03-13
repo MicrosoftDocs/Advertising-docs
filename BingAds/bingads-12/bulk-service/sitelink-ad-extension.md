@@ -14,10 +14,9 @@ dev_langs:
 # Sitelink Ad Extension Record - Bulk
 Defines a sitelink ad extension that can be downloaded and uploaded in a bulk file.
 
-The *Sitelink Ad Extension* record adheres to the nested sitelink data model, where each sitelink ad extension has *multiple* sitelinks. Each sitelink is represented as a single *Sitelink Ad Extension* record in the bulk file. In other words, to represent multiple sitelinks for one sitelink ad extension, you must read and write multiple rows in the bulk file. Ad extension level properties such as *Id* and *Parent Id* columns will be the same for all sitelinks, while the sitelink level properties such as *Sitelink Extension Order* and *Sitelink Extension Link Text* will differ for each record.
+The *Sitelink Ad Extension* record adheres to the single sitelink data model, where each Sitelink Ad Extension has *one* sitelink. The entire Sitelink Ad Extension is represented as a single *Sitelink Ad Extension* record in the bulk file.
 
-> [!NOTE]
-> During calendar year 2017, Bing Ads upgraded all [Sitelink Ad Extension](sitelink-ad-extension.md) records (contains multiple sitelinks per ad extension) to [Sitelink2 Ad Extension](sitelink2-ad-extension.md) records (contains one sitelink per ad extension). In a future version of the API the deprecated sitelink programming interface will be consolidated and the '2' suffix will be removed from the new sitelink ad extensions.
+You can associate a sitelink ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 sitelink ad extensions. Use the [Account Sitelink Ad Extension](account-sitelink-ad-extension.md), [Ad Group Sitelink Ad Extension](ad-group-sitelink-ad-extension.md), and [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md) records to manage sitelink ad extension associations.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Sitelink Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
@@ -41,132 +40,42 @@ For a *Sitelink Ad Extension* record, the following attribute fields are availab
 - [Sitelink Extension Description2](#sitelinkextensiondescription2)
 - [Sitelink Extension Destination Url](#sitelinkextensiondestinationurl)
 - [Sitelink Extension Link Text](#sitelinkextensionlinktext)
-- [Sitelink Extension Order](#sitelinkextensionorder)
 - [Start Date](#startdate)
 - [Status](#status)
 - [Tracking Template](#trackingtemplate)
 - [Use Searcher Time Zone](#usesearchertimezone)
 - [Version](#version)
 
-You can download all fields of the *Sitelink Ad Extension* record by including the [DownloadEntity](downloadentity.md) value of *SiteLinksAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all fields of the *Sitelink Ad Extension* record by including the [DownloadEntity](downloadentity.md) value of *SitelinkAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Sitelink Ad Extension to the account's shared library. 
 
 ```csv
-Type,Status,Id,Parent Id,Client Id,Modified Time,Start Date,End Date,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Sitelink Extension Order,Sitelink Extension Link Text,Sitelink Extension Destination Url,Sitelink Extension Description1,Sitelink Extension Description2,Final Url,Mobile Final Url,Tracking Template,Custom Parameter
-Format Version,,,,,,,,,5,,,,,,,,,,,
-Sitelink Ad Extension,,-17,0,,,,12/31/2018,,,(Monday[09:00-21:00]),FALSE,1,Women's Shoe Sale,,Simple & Transparent.,No Upfront Cost.,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Sitelink Extension Order,Sitelink Extension Link Text,Sitelink Extension Destination Url,Sitelink Extension Description1,Sitelink Extension Description2,Final Url,Mobile Final Url,Tracking Template,Custom Parameter
+Format Version,,,,,,,,,,,6,,,,,,,,,,,
+Sitelink Ad Extension,Active,-17,0,,,ClientIdGoesHere,,,12/31/2018,,,(Monday[09:00-21:00]),FALSE,,Women's Shoe Sale 1,,Simple & Transparent.,No Upfront Cost.,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkSiteLinkAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkSitelinkAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
 
-// Map properties in the Bulk file to the BulkSiteLinkAdExtension
-var bulkSiteLinkAdExtension = new BulkSiteLinkAdExtension
+// Map properties in the Bulk file to the BulkSitelinkAdExtension
+var bulkSitelinkAdExtension = new BulkSitelinkAdExtension
 {
     // 'Parent Id' column header in the Bulk file
     AccountId = 0,
-                
-    // Map properties in the Bulk file to the 
-    // SiteLinksAdExtension object of the Campaign Management service.
-    SiteLinksAdExtension = new SiteLinksAdExtension
-    {
-        // 'Id' column header in the Bulk file
-        Id = siteLinksAdExtensionIdKey,
-        SiteLinks = new []
-        {
-            // Map properties in the Bulk file to the 
-            // SiteLink object of the Campaign Management service.
-            new SiteLink
-            {
-                // 'Sitelink Extension Description1' column header in the Bulk file
-                Description1 = "Simple & Transparent.",
-                // 'Sitelink Extension Description2' column header in the Bulk file
-                Description2 = "No Upfront Cost.",
-                // 'Text' column header in the Bulk file
-                DisplayText = "Women's Shoe Sale",
-                // 'Destination Url' column header in the Bulk file
-                DestinationUrl = "",
-                // 'Final Url' column header in the Bulk file
-                FinalUrls = new[] {
-                    // Each Url is delimited by a semicolon (;) in the Bulk file
-                    "http://www.contoso.com/womenshoesale"
-                },
-                // 'Mobile Final Url' column header in the Bulk file
-                FinalMobileUrls = new[] {
-                    // Each Url is delimited by a semicolon (;) in the Bulk file
-                    "http://mobile.contoso.com/womenshoesale"
-                },
-                // 'Ad Schedule' column header in the Bulk file
-                Scheduling = new Schedule
-                {
-                    // Each day and time range is delimited by a semicolon (;) in the Bulk file
-                    DayTimeRanges = new[]
-                    {
-                        // Within each day and time range the format is Day[StartHour:StartMinue-EndHour:EndMinute].
-                        new DayTime
-                        {
-                            Day = Day.Monday,
-                            StartHour = 9,
-                            StartMinute = Minute.Zero,
-                            EndHour = 21,
-                            EndMinute = Minute.Zero,
-                        },
-                    },
-                    // 'End Date' column header in the Bulk file
-                    EndDate = new Microsoft.BingAds.V10.CampaignManagement.Date
-                    {
-                        Month = 12,
-                        Day = 31,
-                        Year = DateTime.UtcNow.Year + 1
-                    },
-                    // 'Start Date' column header in the Bulk file
-                    StartDate = null,
-                    // 'Use Searcher Time Zone' column header in the Bulk file
-                    UseSearcherTimeZone = false,
-                },
-                // 'Tracking Template' column header in the Bulk file
-                TrackingUrlTemplate = null,
-                // 'Custom Parameter' column header in the Bulk file
-                UrlCustomParameters = new CustomParameters
-                {
-                    // Each custom parameter is delimited by a semicolon (;) in the Bulk file
-                    Parameters = new[] {
-                        new CustomParameter(){
-                            Key = "promoCode",
-                            Value = "PROMO1"
-                        },
-                        new CustomParameter(){
-                            Key = "season",
-                            Value = "summer"
-                        },
-                    }
-                },
-            }
-        },
-                    
-        // 'Status' column header in the Bulk file
-        Status = AdExtensionStatus.Active,
-    },
-};
-
-// Map properties in the Bulk file to the BulkSiteLink
-var bulkSiteLink = new BulkSiteLink
-{
-    // 'Parent Id' column header in the Bulk file
-    AccountId = 0,
-    // 'Id' column header in the Bulk file
-    AdExtensionId = siteLinksAdExtensionIdKey,
     // 'Client Id' column header in the Bulk file
     ClientId = "ClientIdGoesHere",
-
+                
     // Map properties in the Bulk file to the 
-    // SiteLink object of the Campaign Management service.
-    SiteLink = new SiteLink
+    // SitelinkAdExtension object of the Campaign Management service.
+    SitelinkAdExtension = new SitelinkAdExtension
     {
+        // 'Id' column header in the Bulk file
+        Id = sitelinkAdExtensionIdKey,
         // 'Sitelink Extension Description1' column header in the Bulk file
         Description1 = "Simple & Transparent.",
         // 'Sitelink Extension Description2' column header in the Bulk file
@@ -185,6 +94,24 @@ var bulkSiteLink = new BulkSiteLink
             // Each Url is delimited by a semicolon (;) in the Bulk file
             "http://mobile.contoso.com/womenshoesale"
         },
+        // 'Tracking Template' column header in the Bulk file
+        TrackingUrlTemplate = null,
+        // 'Custom Parameter' column header in the Bulk file
+        UrlCustomParameters = new CustomParameters
+        {
+            // Each custom parameter is delimited by a semicolon (;) in the Bulk file
+            Parameters = new[] {
+                new CustomParameter(){
+                    Key = "promoCode",
+                    Value = "PROMO1"
+                },
+                new CustomParameter(){
+                    Key = "season",
+                    Value = "summer"
+                },
+            }
+        },
+
         // 'Ad Schedule' column header in the Bulk file
         Scheduling = new Schedule
         {
@@ -213,36 +140,13 @@ var bulkSiteLink = new BulkSiteLink
             // 'Use Searcher Time Zone' column header in the Bulk file
             UseSearcherTimeZone = false,
         },
-        // 'Tracking Template' column header in the Bulk file
-        TrackingUrlTemplate = null,
-        // 'Custom Parameter' column header in the Bulk file
-        UrlCustomParameters = new CustomParameters
-        {
-            // Each custom parameter is delimited by a semicolon (;) in the Bulk file
-            Parameters = new[] {
-                new CustomParameter(){
-                    Key = "promoCode",
-                    Value = "PROMO1"
-                },
-                new CustomParameter(){
-                    Key = "season",
-                    Value = "summer"
-                },
-            }
-        },
+
+        // 'Status' column header in the Bulk file
+        Status = AdExtensionStatus.Active,
     },
-                
-    // 'Status' column header in the Bulk file
-    Status = AdExtensionStatus.Active,
 };
 
-// BulkSiteLinkAdExtension does not support 'Client Id' and
-// replaces all sitelinks for the ad extension, whereas BulkSiteLink
-// enables you to add, update, or delete one sitelink at a time.
-// Since we are adding sitelinks for the first time, this example uses
-// BulkSiteLinkAdExtension. 
-
-uploadEntities.Add(bulkSiteLinkAdExtension);
+uploadEntities.Add(bulkSitelinkAdExtension);
 
 var entityUploadParameters = new EntityUploadParameters
 {
@@ -257,7 +161,7 @@ var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadPa
 ```
 
 ### <a name="adschedule"></a>Ad Schedule
-The list of day and time ranges that you want the sitelink to be displayed with your ads. Each day and time range includes the scheduled day of week, start/end hour, and start/end minute. Each day and time range is enclosed by left and right parentheses, and separated from other day and time ranges with a semicolon (;) delimiter. Within each day and time range the format is *Day[StartHour:StartMinue-EndHour:EndMinute]*.
+The list of day and time ranges that you want the ad extension to be displayed with your ads. Each day and time range includes the scheduled day of week, start/end hour, and start/end minute. Each day and time range is enclosed by left and right parentheses, and separated from other day and time ranges with a semicolon (;) delimiter. Within each day and time range the format is *Day[StartHour:StartMinue-EndHour:EndMinute]*.
 
 The possible values of *StartHour* range from 00 to 23, where *00* is equivalent to 12:00AM and *12* is 12:00PM.
 
@@ -267,7 +171,7 @@ The possible values of *StartMinute* and *EndMinute* range from 00 to 60.
 
 The following example demonstrates day and time ranges during weekdays from 9:00AM through 9:00PM: *(Monday[09:00-21:00]);(Tuesday[09:00-21:00]);(Wednesday[09:00-21:00]);(Thursday[09:00-21:00]);(Friday[09:00-21:00])*
 
-**Add:** Optional. If you do not set this field, then sitelink will be eligible for scheduling anytime during the calendar start and end dates.  
+**Add:** Optional. If you do not set this field, then ad extensions will be eligible for scheduling anytime during the calendar start and end dates.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The individual day and time ranges cannot be updated. You can effectively update the day and time ranges by sending a new set that should replace the prior set. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing all existing day and time ranges.    
 **Delete:** Read-only  
 
@@ -343,12 +247,12 @@ This field will not be set if a combination of terms caused the failure or if th
 **Delete:** Read-only  
 
 ### <a name="enddate"></a>End Date
-The sitelink scheduled end date string formatted as *MM/DD/YYYY*.
+The ad extension scheduled end date string formatted as *MM/DD/YYYY*.
 
-The end date is inclusive. For example, if you set this field to 3/10/2017, the sitelink will stop being shown at 11:59 PM on 3/10/2017.
+The end date is inclusive. For example, if you set this field to 3/10/2017, the ad extensions will stop being shown at 11:59 PM on 3/10/2017.
 
-**Add:** Optional. If you do not specify an end date, the sitelink will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the end date and the sitelink will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.    
+**Add:** Optional. If you do not specify an end date, the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the end date and the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.    
 **Delete:** Read-only  
 
 ### <a name="finalurl"></a>Final Url
@@ -379,7 +283,7 @@ Also note that  if the *Tracking Template* or *Custom Parameter* fields are set,
 ### <a name="id"></a>Id
 The system generated identifier of the ad extension.
 
-**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [AdGroup Sitelink Ad Extension](adgroup-sitelink-ad-extension.md) and [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Sitelink Ad Extension](ad-group-sitelink-ad-extension.md) and [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -403,7 +307,7 @@ The following validation rules apply to Final URLs and Final Mobile URLs.
 Also note that you may not specify *Mobile Final Url* if the *Device Preference* is set to *Mobile*.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.   
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
 **Delete:** Read-only  
 
 ### <a name="modifiedtime"></a>Modified Time
@@ -435,7 +339,7 @@ In a bulk file, the list of publisher countries are delimited with a semicolon (
 **Delete:** Read-only  
 
 ### <a name="sitelinkextensiondescription1"></a>Sitelink Extension Description1
-The sitelink description line 1.
+The site link description line 1.
 
 The maximum input length is 35 characters. If any Traditional Chinese characters are included, the limit is 15 characters.
 
@@ -450,7 +354,7 @@ The maximum input length is 35 characters. If any Traditional Chinese characters
 **Delete:** Read-only  
 
 ### <a name="sitelinkextensiondescription2"></a>Sitelink Extension Description2
-The sitelink description line 2.
+The site link description line 2.
 
 The maximum input length is 35 characters. If any Traditional Chinese characters are included, the limit is 15 characters.
 
@@ -465,7 +369,7 @@ The maximum input length is 35 characters. If any Traditional Chinese characters
 **Delete:** Read-only  
 
 ### <a name="sitelinkextensiondestinationurl"></a>Sitelink Extension Destination Url
-The URL of the webpage that users are taken to when they click the sitelink.
+The URL of the webpage that users are taken to when they click the site link.
 
 The URL can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Available parameters section within the Bing Ads help article [How do I set up destination URL tracking?](https://help.bingads.microsoft.com/#apex/3/en/51091/2).
 
@@ -490,22 +394,13 @@ If you specify *Sitelink Extension Description1* or *Sitelink Extension Descript
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
-### <a name="sitelinkextensionorder"></a>Sitelink Extension Order
-This field value represents the order of this record in the comparable list of [SiteLink](../campaign-management-service/sitelink.md) objects. For example if this row in the bulk file represents the first item in the list, this field's value is 1 (one).
-
-For the campaign management service, the SiteLinks element of the [SiteLinksAdExtension](../campaign-management-service/sitelinksadextension.md) object is a list of [SiteLink](../campaign-management-service/sitelink.md) objects.
-
-**Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
-**Delete:** Read-only  
-
 ### <a name="startdate"></a>Start Date
-The sitelink scheduled start date string formatted as *MM/DD/YYYY*.
+The ad extension scheduled start date string formatted as *MM/DD/YYYY*.
 
-The start date is inclusive. For example, if you set *StartDate* to 3/5/2017, the sitelink will start being shown at 12:00 AM on 3/5/2017.
+The start date is inclusive. For example, if you set *StartDate* to 3/5/2017, the ad extensions will start being shown at 12:00 AM on 3/5/2017.
 
-**Add:** Optional. If you do not specify a start date, the sitelink is immediately eligible to be scheduled during the day and time ranges.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the start date and the sitelink is immediately eligible to be scheduled during the day and time ranges.    
+**Add:** Optional. If you do not specify a start date, the ad extensions are immediately eligible to be scheduled during the day and time ranges.  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the start date and the ad extensions are immediately eligible to be scheduled during the day and time ranges.    
 **Delete:** Read-only  
 
 ### <a name="status"></a>Status
@@ -531,13 +426,13 @@ The following validation rules apply to tracking templates. For more details abo
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example if your tracking template is for example *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
 ### <a name="usesearchertimezone"></a>Use Searcher Time Zone
 Determines whether to use the account time zone or the time zone of the search user where the ads could be delivered.
 
-Set this property to *TRUE* if you want the sitelink to be shown in the search user's time zone, and otherwise set it to *FALSE*.
+Set this property to *TRUE* if you want the ad extensions to be shown in the search user's time zone, and otherwise set it to *FALSE*.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set and the account time zone will be used.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
@@ -549,5 +444,3 @@ The number of times the contents of the ad extension has been updated. The versi
 **Add:** Read-only  
 **Update:** Read-only    
 **Delete:** Read-only  
-
-

@@ -51,7 +51,7 @@ The following Bulk CSV example would add a new Structured Snippet Ad Extension t
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Structured Snippet Header,Structured Snippet Values
-Format Version,,,,,,,,,,,5,,,,
+Format Version,,,,,,,,,,,6,,,,
 Structured Snippet Ad Extension,Active,-18,0,,,ClientIdGoesHere,,,12/31/2018,,,(Monday[09:00-21:00]),FALSE,Brands,Windows;Xbox;Skype
 ```
 

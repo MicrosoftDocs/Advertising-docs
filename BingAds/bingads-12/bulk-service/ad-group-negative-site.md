@@ -37,7 +37,7 @@ The following Bulk CSV example would add a new ad group negative site given a va
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Website,Client Id,Modified Time,Name
-Format Version,,,,,,,,,5
+Format Version,,,,,,,,,6
 Ad Group Negative Site,Active,,-1111,,,contoso.com,ClientIdGoesHere,,
 ```
 

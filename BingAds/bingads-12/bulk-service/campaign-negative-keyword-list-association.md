@@ -29,7 +29,7 @@ The following Bulk CSV example would associate a negative keyword list to a camp
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Keyword,Match Type,Name
-Format Version,,,,,,,,,,5
+Format Version,,,,,,,,,,6
 Campaign Negative Keyword List Association,Active,-19,-112,,,ClientIdGoesHere,,,,
 ```
 
