@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Keyword Label Record - Bulk
 Defines an association record between a [Keyword](keyword.md) and a [Label](label.md) that can be uploaded and downloaded in a bulk file. To upload or download the keyword or label, use the [Keyword](keyword.md) or [Label](label.md) record.

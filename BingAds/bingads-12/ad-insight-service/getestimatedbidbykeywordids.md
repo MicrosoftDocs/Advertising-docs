@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # GetEstimatedBidByKeywordIds Service Operation - Ad Insight
 Gets the estimated bid value of one or more keywords - specified by keyword identifier - that could have resulted in an ad appearing in the targeted position in the search results in the last  7 days. In addition, the operation provides estimates of clicks, average cost per click (CPC), and impressions that the keywords could have generated with the estimated bid.

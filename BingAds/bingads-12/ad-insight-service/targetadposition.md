@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the possible positions where you can target an ad to appear in the search results or on a content-based webpage.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # TargetAdPosition Value Set - Ad Insight
 Defines the possible positions where you can target an ad to appear in the search results or on a content-based webpage.

@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the operating system platform and URL of the app store download webpage.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # AppUrl Data Object - Campaign Management
 Defines the operating system platform and URL of the app store download webpage.

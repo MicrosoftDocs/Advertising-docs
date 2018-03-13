@@ -11,7 +11,7 @@ dev_langs:
   - python
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Reporting Service Manager
 The SDK provides proxy classes to the service operations, data objects, and value sets defined for the [Reporting](../reporting-service/reporting-service-reference.md) service.

@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a duration conversion goal.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # DurationGoal Data Object - Campaign Management
 Defines a duration conversion goal. Use this type of goal to count every time someone stays on a website for longer than a certain amount of time as a conversion. For example you can count a conversion if someone spent 10 minutes or longer on a blog or playing a game on the webpage.  

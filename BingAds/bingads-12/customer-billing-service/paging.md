@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a paging object for the list of insertion orders returned using the SearchInsertionOrders operation.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Paging Data Object - Customer Billing
 Defines a paging object for the list of insertion orders returned using the [SearchInsertionOrders](searchinsertionorders.md) operation.

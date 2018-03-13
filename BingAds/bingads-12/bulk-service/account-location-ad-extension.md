@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Account Location Ad Extension Record - Bulk
 Defines an association record between an [Account](account.md) and a [Location Ad Extension](location-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the account or location ad extension, use the [Account](account.md) or [Location Ad Extension](location-ad-extension.md) record.

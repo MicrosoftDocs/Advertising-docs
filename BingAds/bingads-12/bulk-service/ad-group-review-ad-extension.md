@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Ad Group Review Ad Extension Record - Bulk
 Defines an association record between an [Ad Group](ad-group.md) and a [Review Ad Extension](review-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or review ad extension, use the [Ad Group](ad-group.md) or [Review Ad Extension](review-ad-extension.md) record.

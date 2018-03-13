@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a keyword performance report request.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # KeywordPerformanceReportRequest Data Object - Reporting
 Defines a keyword performance report request. Use this report to find out which keywords are performing well and those that are not. 

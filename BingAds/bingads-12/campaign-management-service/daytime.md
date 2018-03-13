@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a day of the week and time range for ad extension scheduling.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # DayTime Data Object - Campaign Management
 Defines a day of the week and time range for ad extension scheduling. 

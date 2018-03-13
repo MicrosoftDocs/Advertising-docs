@@ -7,7 +7,7 @@ ms.author: eur
 description: The query search parameter that you can use as a seed for new keyword ideas.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # QuerySearchParameter Data Object - Ad Insight
 The query search parameter that you can use as a seed for new keyword ideas.

@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a share of voice (SOV) report request.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # ShareOfVoiceReportRequest Data Object - Reporting
 Defines a share of voice (SOV) report request. Use this report to view impression share (%) of successful bids for each keyword, and identify opportunities to increase impression share.

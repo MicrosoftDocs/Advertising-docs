@@ -7,7 +7,7 @@ ms.author: "eur"
 description: You can write your Bing Ads application in any language that supports web services.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Bing Ads Services Protocol
 You can write your Bing Ads application in any language that supports web services. A web services description language (WSDL) document is defined for each web service. The WSDL defines the operations that a web service offers and the format of the request and response messages that the client sends to and receives from the operations. The request and response messages define the names and types of the data that the client exchanges with the operation. For more information about WSDLs, see the [W3C WSDL specification](https://www.w3.org/TR/wsdl).

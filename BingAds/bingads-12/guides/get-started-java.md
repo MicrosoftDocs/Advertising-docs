@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Install the Bing Ads Java SDK and discover code examples.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Get Started Using Java with Bing Ads Services
 To get started developing Bing Ads applications with Java, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-java.md) or [Desktop](walkthrough-desktop-application-java.md) application. The examples have been developed with the Bing Ads Java [SDK](client-libraries.md) and run with the Eclipse Java EE IDE for Web Developers, Luna Service Release 1 (4.4.1). For Eclipse downloads, see [http://www.eclipse.org/downloads/](http://www.eclipse.org/downloads/). Your custom configuration may vary.

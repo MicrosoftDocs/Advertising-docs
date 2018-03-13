@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the dynamic ad target status values that you can use to filter the report data.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # DynamicAdTargetStatusReportFilter Value Set - Reporting
 Defines the dynamic ad target status values that you can use to filter the report data. These values are also used as column values in reports that include dynamic ad targets status, such as the DSA auto target performance report.

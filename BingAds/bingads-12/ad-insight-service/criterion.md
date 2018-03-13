@@ -7,7 +7,7 @@ ms.author: eur
 description: This is the base class from which keyword planner criterion objects derive.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Criterion Data Object - Ad Insight
 This is the base class from which keyword planner criterion objects derive. 

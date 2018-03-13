@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Refer to the list of Bing Ads web service addresses.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Bing Ads Web Service Addresses
 You can use the following web service addresses to access the Bing Ads web service operations.

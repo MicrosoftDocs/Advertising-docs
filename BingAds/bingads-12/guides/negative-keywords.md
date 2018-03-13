@@ -7,7 +7,7 @@ ms.author: "eur"
 description: You can use negative keywords to prevent your ad from being displayed if the user's search query contains one of your negative keywords.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Negative Keywords
 A *negative keyword* is a specific word or phrase that helps to prevent your ad from being displayed to customers who are unlikely to click your ad. You can use negative keywords to prevent your ad from being displayed if the user's search query contains one of your negative keywords. The following types of comparisons are used to determine whether a negative keyword applies to the search query.

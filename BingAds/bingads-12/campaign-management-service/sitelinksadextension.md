@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines an object with *multiple* sitelinks per ad extension.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # SiteLinksAdExtension Data Object - Campaign Management
 Defines an object with *multiple* sitelinks per ad extension. You can use the sitelinks to promote certain products, services, or sections of your website and take potential customers to exactly the information they were searching for. This can increase both click-through-rate and conversions.

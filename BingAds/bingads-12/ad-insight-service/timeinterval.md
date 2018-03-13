@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the possible time periods that determine the pool of data that the service uses to get the performance statistics of a keyword.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # TimeInterval Value Set - Ad Insight
 Defines the possible time periods that determine the pool of data that the service uses to get the performance statistics of a keyword.

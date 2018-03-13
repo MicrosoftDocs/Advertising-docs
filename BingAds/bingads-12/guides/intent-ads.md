@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Setup Intent ads with the Bing Ads API.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Intent Ads
 Bing Intent ads are an extension of search network, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Intent ads are created automatically by Bing Ads leveraging all of your Bing Ads creative elements including ad title, text, URL, and ad extensions including image extensions.  

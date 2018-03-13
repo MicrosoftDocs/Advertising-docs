@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Definitions for the report attributes and performance statistics columns.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Report Attributes and Performance Statistics
 Each of the [Report Types](report-types.md) contains a subset of attributes and performance statistics. When submitting a report request, you must include [Attributes](#attributes) and [Performance Statistics](#performancestatistics) columns. The downloaded report will then include renamed columns (fields) corresponding to each column that you included in the report request. For information about required and optional columns, see the corresponding report column value set within [Reporting Value Sets](../reporting-service/reporting-value-sets.md). For example to determine which columns are required and optional for a [KeywordPerformanceReportRequest](../reporting-service/keywordperformancereportrequest.md), see [KeywordPerformanceReportColumn Value Set](../reporting-service/keywordperformancereportcolumn.md). 

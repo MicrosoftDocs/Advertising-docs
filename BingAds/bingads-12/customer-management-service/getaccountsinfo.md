@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # GetAccountsInfo Service Operation - Customer Management
 Gets a list of objects that contains account identification information, for example the name and identifier of the account, for the specified customer.

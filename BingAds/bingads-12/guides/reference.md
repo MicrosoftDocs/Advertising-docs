@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Bing Ads web service and common market values reference documentation.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Bing Ads API Reference
 For Bing Ads reference content, see the following sections.

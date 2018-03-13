@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the AdExtensionByKeywordReportRequest.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # AdExtensionByKeywordReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [AdExtensionByKeywordReportRequest](adextensionbykeywordreportrequest.md).

@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Install the Bing Ads .NET SDK and discover code examples.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Get Started Using C# with Bing Ads Services
 To get started developing Bing Ads applications with a .NET language, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-csharp.md) or [Desktop](walkthrough-desktop-application-csharp.md) application. The examples have been developed with the Bing Ads .NET [SDK](client-libraries.md) and [Visual Studio Community](https://www.visualstudio.com/vs/community/). Your custom configuration may vary.

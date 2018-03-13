@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Product Ad Label Record - Bulk
 Defines an association record between a [Product Ad](product-ad.md) and a [Label](label.md) that can be uploaded and downloaded in a bulk file. To upload or download the product ad or label, use the [Product Ad](product-ad.md) or [Label](label.md) record.

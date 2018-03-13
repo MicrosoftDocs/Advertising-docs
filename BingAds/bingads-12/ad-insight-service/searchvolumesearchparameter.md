@@ -7,7 +7,7 @@ ms.author: eur
 description: The search volume search parameter filter that you can include when requesting keyword ideas.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # SearchVolumeSearchParameter Data Object - Ad Insight
 The search volume search parameter filter that you can include when requesting keyword ideas.

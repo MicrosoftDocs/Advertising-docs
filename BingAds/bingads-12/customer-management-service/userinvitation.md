@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a user invitation.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # UserInvitation Data Object - Customer Management
 Defines a user invitation. When the invitation is accepted, the user's Microsoft account is linked to the specified Bing Ads customer accounts.

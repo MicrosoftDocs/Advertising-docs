@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines an ad extension that specifies a business address and phone number to include in a text ad.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # LocationAdExtension Data Object - Campaign Management
 Defines an ad extension that specifies a business address and phone number to include in a text ad.

@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Learn about the Bing Ads entity hierarchy to plan your campaign setup.
 ---
 > [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change.
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Entity Hierarchy and Limits
 The following figure shows the high level Bing Ads entity object model from the perspective of one customer that has one or more accounts. For information on services available to manage Bing Ads entities, see [Bing Ads API Overview](index.md).
