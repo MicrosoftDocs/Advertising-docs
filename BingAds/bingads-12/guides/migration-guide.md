@@ -115,7 +115,10 @@ When you migrate to version 12 remove the '2' suffix from all *Sitelink2* record
 #### <a name="bulk-shoppingsubtype"></a>Shopping Campaign Sub Type
 We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Bing Shopping campaigns. More details about Cooperative campaigns are coming soon, and in the meantime please note the potential required changes in Bing Ads API Version 12 for your application to support existing Bing Shopping campaigns. Whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any shopping campaigns. 
 
-When you download campaigns by including *Campaigns* from the [DownloadEntity](../bulk-service/downloadentity.md) value set, please check the *Campaign Type* and *Sub Type* fields of each [Campaign](../bulk-service/campaign.md). If the *Campaign Type* field is set to *Shopping* then you must also check the value of the *Sub Type* field. If the *Sub Type* field is empty then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign.
+When you download campaigns by including *Campaigns* from the [DownloadEntity](../bulk-service/downloadentity.md) value set, please check the *Campaign Type* and *Sub Type* fields of each [Campaign](../bulk-service/campaign.md). If the *Campaign Type* field is set to *Shopping* then you must also check the value of the *Sub Type* field. If the *Sub Type* field is empty then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign. 
+
+#### <a name="bulk-entityperformancedata"></a>Entity Performance Data
+Bulk download of performance data is no longer supported. The EntityPerformanceData value of the [DataScope](../bulk-service/datascope.md) value set is no longer supported in Bing Ads API Version 12, and will be removed from the service contract in a future version. If you want data aggregated by day, week, or month, you can use the Bing Ads Reporting API. For more details see [Reports](reports.md).
 
 #### <a name="bulk-audiencetargetingsetting"></a>Audience Targeting Setting
 The *Remarketing Targeting Setting* field of an [Ad Group](../bulk-service/ad-group.md) is removed.
