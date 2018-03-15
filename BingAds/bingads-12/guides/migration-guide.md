@@ -123,7 +123,7 @@ Bulk download of performance data is no longer supported. The EntityPerformanceD
 #### <a name="bulk-audiencetargetingsetting"></a>Audience Targeting Setting
 The *Remarketing Targeting Setting* field of an [Ad Group](../bulk-service/ad-group.md) is removed.
 
-To determine whether the audience association is bid only or target and bid, use the *TargertSetting* field of an [Ad Group](../bulk-service/ad-group.md). The setting is applicable for all audiences associated with the ad group, including but not limited to remarketing lists. 
+To determine whether the audience association is bid only or target and bid, use the *TargetSetting* field of an [Ad Group](../bulk-service/ad-group.md). The setting is applicable for all audiences associated with the ad group, including but not limited to remarketing lists. 
 
 #### <a name="bulk-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *Content Bid*, *Content Network*, and *Search Network* fields of an [Ad Group](../bulk-service/ad-group.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. The *Search Bid* field of an [Ad Group](../bulk-service/ad-group.md) is renamed *Cpc Bid*.
@@ -225,9 +225,9 @@ In-market audiences cannot be deleted in both version 11 and version 12. Custom 
 ### <a name="campaign-newfeatures"></a>New Features
 
 #### <a name="campaign-inheritedbidstrategytypes"></a>Inherited Bid Strategy Types
-The *InheritedBidStrategyTypes* element is added to the response message of the [AddAdGroups](../campaign-management-service/addadgroups.md), [AddKeywords](../campaign-management-service/addkeywords.md), [UpdateAdGroups](../campaign-management-service/updateadgroups.md), and [UpdateKeywords](../campaign-management-service/updatekeywords.md) operations.
+The *InheritedBidStrategyTypes* element is added to the response message of the [AddKeywords](../campaign-management-service/addkeywords.md) and [UpdateKeywords](../campaign-management-service/updatekeywords.md) operations.
 
-Each string in the list is returned in the same order and corresponds to the ad groups or keywords in the request message. The value of each string represents the type of bidding scheme (a.k.a. bid strategy type) that is inherited from the parent campaign or ad group. This element is not returned by default. You must set *ReturnInheritedBidStrategyTypes* true in the request.
+Each string in the list is returned in the same order and corresponds to the keywords in the request message. The value of each string represents the type of bidding scheme (a.k.a. bid strategy type) that is inherited from the parent campaign or ad group. This element is not returned by default. You must set *ReturnInheritedBidStrategyTypes* true in the request.
 
 ## <a name="billing"></a>Customer Billing
 
@@ -431,6 +431,19 @@ SecondLevelCategory|Category2
 Status|CampaignStatus
 TopLevelCategory|Category0
 
+In addition when you include the TimePeriod column in version 12 the name of the column in the downloaded report will likewise be TimePeriod. In version 11 the column name varied by aggregation as follows.
+
+|Aggregation|Version 11 Column Name|
+|---------------|---------------|
+|Daily|GregorianDate|
+|DayOfWeek|DayOfWeek|
+|Hourly|Hour, GregorianDate|
+|HourOfDay|HourOfDay|
+|Monthly|MonthStartDate|
+|Weekly|WeekStartDate|
+|Yearly|Year|
+
+Whereas in version 11 the time period for Hourly aggregation was split across two columns, in version 12 it will be formatted in the TimePeriod column with the date and hour (int value) delimited by a semicolon e.g., *yyyy-mm-dd;hour*. For more details see [ReportAggregation](../reporting-service/reportaggregtion.md) and [TimePeriod Column](reports.md#timeperiod).
 
 #### <a name="reporting-columnrestrictions"></a>Column Restrictions
 For some reports you cannot include constrained attributes in the same report request. For example when submitting the [AccountPerformanceReportRequest](../reporting-service/accountperformancereportrequest.md) and [AdGroupPerformanceReportRequest](../reporting-service/adgroupperformancereportrequest.md) if you include any of the impression share performance statistics columns, then you must exclude the *BidMatchType*, *DeviceOS*, and *TopVsOther* attribute columns. Likewise, if you include any of these attribute columns, then you must exclude all of the impression share performance statistics columns.
