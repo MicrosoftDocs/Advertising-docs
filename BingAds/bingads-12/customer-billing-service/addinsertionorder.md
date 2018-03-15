@@ -63,7 +63,7 @@ The following template shows the order of the [body](#request-body) and [header]
         <e366:BookingCountryCode i:nil="false">ValueHere</e366:BookingCountryCode>
         <e366:Comment i:nil="false">ValueHere</e366:Comment>
         <e366:EndDate i:nil="false">ValueHere</e366:EndDate>
-        <e366:InsertionOrderId i:nil="false">ValueHere</e366:InsertionOrderId>
+        <e366:Id i:nil="false">ValueHere</e366:Id>
         <e366:LastModifiedByUserId i:nil="false">ValueHere</e366:LastModifiedByUserId>
         <e366:LastModifiedTime i:nil="false">ValueHere</e366:LastModifiedTime>
         <e366:NotificationThreshold i:nil="false">ValueHere</e366:NotificationThreshold>
