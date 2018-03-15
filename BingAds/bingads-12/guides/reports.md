@@ -101,10 +101,7 @@ For more information about each type of available columns, see [Report Attribute
 The *TimePeriod* attribute is required for most reports, so you should also consider that specifying a more granular aggregation period, for example monthly in the report request's *Aggregation* element, would further break down the click data by month. For example, the report would then contain a row for each unique combination of keyword, device, and month. The row is included only for months that contain clicks.
 
 ## <a name="columnrestrictions"></a>Column Restrictions
-For reports that include impression share performance statistics columns you cannot include constrained attributes in the same report request. If you include any of the impression share performance statistics columns, then you must exclude all of the below attribute columns. Likewise, if you include any of these attribute columns, then you must exclude all of the impression share performance statistics columns.
-
-> [!IMPORTANT]
-> In the Bing Ads web application, users are not allowed to select the restricted column combinations. Using the Bing Ads API the report submission will not fail, for example if you include BidMatchType and ImpressionLostToBidPercent; however, the fields returned in the downloaded report will be 0 (zero) in place of any meaningful data.
+For reports that include impression share performance statistics columns you cannot include constrained attributes in the same report request. If you include any of the impression share performance statistics columns, then you must exclude all of the below attribute columns. Likewise, if you include any of the below attribute columns, then you must exclude all of the impression share performance statistics columns.
 
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [AccountPerformanceReportRequest](../reporting-service/accountperformancereportrequest.md) and [AdGroupPerformanceReportRequest](../reporting-service/adgroupperformancereportrequest.md).
 
