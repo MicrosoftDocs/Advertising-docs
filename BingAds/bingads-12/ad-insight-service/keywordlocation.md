@@ -32,7 +32,7 @@ Defines an object that contains the location, network, device, and the percentag
 |<a name="percentage"></a>Percentage|The percentage of time that users searched for the keyword from the location. The value is specified in the range 0.0 through 100.0.|**double**|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By

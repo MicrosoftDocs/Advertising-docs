@@ -30,7 +30,7 @@ Defines the relationship between a label and campaign, ad group, ad, or keyword 
 |<a name="labelid"></a>LabelId|The identifier of the label.<br/><br/>**Set:** Required<br/>**Delete:** Required|**long**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

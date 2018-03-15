@@ -18,8 +18,8 @@ Defines pricing information by currency and unit that you can use with price ad 
   <xs:sequence>
     <xs:element name="CurrencyCode" nillable="true" type="xs:string" />
     <xs:element name="Description" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q64:ArrayOfstring" xmlns:q64="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element name="FinalUrls" nillable="true" type="q65:ArrayOfstring" xmlns:q65="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q60:ArrayOfstring" xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element name="FinalUrls" nillable="true" type="q61:ArrayOfstring" xmlns:q61="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element name="Header" nillable="true" type="xs:string" />
     <xs:element name="Price" type="xs:double" />
     <xs:element name="PriceQualifier" type="tns:PriceQualifier" />
@@ -46,7 +46,7 @@ Defines pricing information by currency and unit that you can use with price ad 
 |<a name="termsandconditionsurl"></a>TermsAndConditionsUrl|Reserved for future use.|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

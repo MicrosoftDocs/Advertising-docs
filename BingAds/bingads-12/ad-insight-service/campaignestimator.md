@@ -36,7 +36,7 @@ Contains campaign filter criteria and a nested list of ad group and keyword leve
 |<a name="negativekeywords"></a>NegativeKeywords|The list of negative keyword filter criteria for all keyword traffic estimates in the campaign.|[NegativeKeyword](negativekeyword.md) array|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By

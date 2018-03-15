@@ -81,28 +81,28 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedPositionByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordEstimatedPositions xmlns:e1300="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1300:KeywordIdEstimatedPosition>
-          <e1300:KeywordId>ValueHere</e1300:KeywordId>
-          <e1300:KeywordEstimatedPosition d4p1:nil="false">
-            <e1300:Keyword d4p1:nil="false">ValueHere</e1300:Keyword>
-            <e1300:EstimatedPositions d4p1:nil="false">
-              <e1300:EstimatedPositionAndTraffic>
-                <e1300:MatchType>ValueHere</e1300:MatchType>
-                <e1300:MinClicksPerWeek>ValueHere</e1300:MinClicksPerWeek>
-                <e1300:MaxClicksPerWeek>ValueHere</e1300:MaxClicksPerWeek>
-                <e1300:AverageCPC>ValueHere</e1300:AverageCPC>
-                <e1300:MinImpressionsPerWeek>ValueHere</e1300:MinImpressionsPerWeek>
-                <e1300:MaxImpressionsPerWeek>ValueHere</e1300:MaxImpressionsPerWeek>
-                <e1300:CTR>ValueHere</e1300:CTR>
-                <e1300:MinTotalCostPerWeek>ValueHere</e1300:MinTotalCostPerWeek>
-                <e1300:MaxTotalCostPerWeek>ValueHere</e1300:MaxTotalCostPerWeek>
-                <e1300:CurrencyCode>ValueHere</e1300:CurrencyCode>
-                <e1300:EstimatedAdPosition>ValueHere</e1300:EstimatedAdPosition>
-              </e1300:EstimatedPositionAndTraffic>
-            </e1300:EstimatedPositions>
-          </e1300:KeywordEstimatedPosition>
-        </e1300:KeywordIdEstimatedPosition>
+      <KeywordEstimatedPositions xmlns:e1652="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1652:KeywordIdEstimatedPosition>
+          <e1652:KeywordId>ValueHere</e1652:KeywordId>
+          <e1652:KeywordEstimatedPosition d4p1:nil="false">
+            <e1652:Keyword d4p1:nil="false">ValueHere</e1652:Keyword>
+            <e1652:EstimatedPositions d4p1:nil="false">
+              <e1652:EstimatedPositionAndTraffic>
+                <e1652:MatchType>ValueHere</e1652:MatchType>
+                <e1652:MinClicksPerWeek>ValueHere</e1652:MinClicksPerWeek>
+                <e1652:MaxClicksPerWeek>ValueHere</e1652:MaxClicksPerWeek>
+                <e1652:AverageCPC>ValueHere</e1652:AverageCPC>
+                <e1652:MinImpressionsPerWeek>ValueHere</e1652:MinImpressionsPerWeek>
+                <e1652:MaxImpressionsPerWeek>ValueHere</e1652:MaxImpressionsPerWeek>
+                <e1652:CTR>ValueHere</e1652:CTR>
+                <e1652:MinTotalCostPerWeek>ValueHere</e1652:MinTotalCostPerWeek>
+                <e1652:MaxTotalCostPerWeek>ValueHere</e1652:MaxTotalCostPerWeek>
+                <e1652:CurrencyCode>ValueHere</e1652:CurrencyCode>
+                <e1652:EstimatedAdPosition>ValueHere</e1652:EstimatedAdPosition>
+              </e1652:EstimatedPositionAndTraffic>
+            </e1652:EstimatedPositions>
+          </e1652:KeywordEstimatedPosition>
+        </e1652:KeywordIdEstimatedPosition>
       </KeywordEstimatedPositions>
     </GetEstimatedPositionByKeywordIdsResponse>
   </s:Body>
@@ -161,6 +161,6 @@ response=adinsight_service.GetEstimatedPositionByKeywordIds(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

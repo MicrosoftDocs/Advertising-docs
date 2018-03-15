@@ -30,7 +30,7 @@ Defines an object that contains the key performance index data for the specified
 |<a name="keywordkpis"></a>KeywordKPIs|An array of [KeywordKPI](keywordkpi.md) objects that contains the performance data.<br /><br />For each requested keyword that has no available data, the [KeywordKPI](keywordkpi.md) element will be nil.<br /><br />If the request specified a specific target position, the array will contain only one item per requested keyword. If the request specified All for the target position, then for each requested keyword the array will contain an item for each possible position in the search results.|[KeywordKPI](keywordkpi.md) array|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By

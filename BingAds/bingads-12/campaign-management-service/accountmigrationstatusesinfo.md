@@ -27,10 +27,10 @@ Defines an object that contains migration status for an account.
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The Bing Ads identifier of the account.|**long**|
-|<a name="migrationstatusinfos"></a>MigrationStatusInfos|Reserved.|[MigrationStatusInfo](migrationstatusinfo.md) array|
+|<a name="migrationstatusinfos"></a>MigrationStatusInfos|The list of migration status info for the corresponding account.|[MigrationStatusInfo](migrationstatusinfo.md) array|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

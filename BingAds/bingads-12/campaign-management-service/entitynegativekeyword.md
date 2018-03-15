@@ -32,7 +32,7 @@ Defines an object that contains a set of negative keywords that are only associa
 |<a name="negativekeywords"></a>NegativeKeywords|An array of negative keywords that are associated with the corresponding campaign or ad group.|[NegativeKeyword](negativekeyword.md) array|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

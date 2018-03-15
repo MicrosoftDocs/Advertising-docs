@@ -94,23 +94,23 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetHistoricalKeywordPerformanceResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordHistoricalPerformances xmlns:e1302="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1302:KeywordHistoricalPerformance>
-          <e1302:Keyword d4p1:nil="false">ValueHere</e1302:Keyword>
-          <e1302:KeywordKPIs d4p1:nil="false">
-            <e1302:KeywordKPI>
-              <e1302:Device d4p1:nil="false">ValueHere</e1302:Device>
-              <e1302:MatchType>ValueHere</e1302:MatchType>
-              <e1302:AdPosition>ValueHere</e1302:AdPosition>
-              <e1302:Clicks>ValueHere</e1302:Clicks>
-              <e1302:Impressions>ValueHere</e1302:Impressions>
-              <e1302:AverageCPC>ValueHere</e1302:AverageCPC>
-              <e1302:CTR>ValueHere</e1302:CTR>
-              <e1302:TotalCost>ValueHere</e1302:TotalCost>
-              <e1302:AverageBid>ValueHere</e1302:AverageBid>
-            </e1302:KeywordKPI>
-          </e1302:KeywordKPIs>
-        </e1302:KeywordHistoricalPerformance>
+      <KeywordHistoricalPerformances xmlns:e1654="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1654:KeywordHistoricalPerformance>
+          <e1654:Keyword d4p1:nil="false">ValueHere</e1654:Keyword>
+          <e1654:KeywordKPIs d4p1:nil="false">
+            <e1654:KeywordKPI>
+              <e1654:Device d4p1:nil="false">ValueHere</e1654:Device>
+              <e1654:MatchType>ValueHere</e1654:MatchType>
+              <e1654:AdPosition>ValueHere</e1654:AdPosition>
+              <e1654:Clicks>ValueHere</e1654:Clicks>
+              <e1654:Impressions>ValueHere</e1654:Impressions>
+              <e1654:AverageCPC>ValueHere</e1654:AverageCPC>
+              <e1654:CTR>ValueHere</e1654:CTR>
+              <e1654:TotalCost>ValueHere</e1654:TotalCost>
+              <e1654:AverageBid>ValueHere</e1654:AverageBid>
+            </e1654:KeywordKPI>
+          </e1654:KeywordKPIs>
+        </e1654:KeywordHistoricalPerformance>
       </KeywordHistoricalPerformances>
     </GetHistoricalKeywordPerformanceResponse>
   </s:Body>
@@ -204,6 +204,6 @@ response=adinsight_service.GetHistoricalKeywordPerformance(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

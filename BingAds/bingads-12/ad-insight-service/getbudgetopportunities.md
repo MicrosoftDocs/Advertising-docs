@@ -74,26 +74,26 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBudgetOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <Opportunities xmlns:e1294="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1294:BudgetOpportunity>
-          <e1294:BudgetPoints d4p1:nil="false">
-            <e1294:BudgetPoint>
-              <e1294:BudgetAmount>ValueHere</e1294:BudgetAmount>
-              <e1294:BudgetPointType>ValueHere</e1294:BudgetPointType>
-              <e1294:EstimatedWeeklyClicks>ValueHere</e1294:EstimatedWeeklyClicks>
-              <e1294:EstimatedWeeklyCost>ValueHere</e1294:EstimatedWeeklyCost>
-              <e1294:EstimatedWeeklyImpressions>ValueHere</e1294:EstimatedWeeklyImpressions>
-            </e1294:BudgetPoint>
-          </e1294:BudgetPoints>
-          <e1294:BudgetType>ValueHere</e1294:BudgetType>
-          <e1294:CampaignId>ValueHere</e1294:CampaignId>
-          <e1294:CurrentBudget>ValueHere</e1294:CurrentBudget>
-          <e1294:IncreaseInClicks>ValueHere</e1294:IncreaseInClicks>
-          <e1294:IncreaseInImpressions>ValueHere</e1294:IncreaseInImpressions>
-          <e1294:PercentageIncreaseInClicks>ValueHere</e1294:PercentageIncreaseInClicks>
-          <e1294:PercentageIncreaseInImpressions>ValueHere</e1294:PercentageIncreaseInImpressions>
-          <e1294:RecommendedBudget>ValueHere</e1294:RecommendedBudget>
-        </e1294:BudgetOpportunity>
+      <Opportunities xmlns:e1646="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1646:BudgetOpportunity>
+          <e1646:BudgetPoints d4p1:nil="false">
+            <e1646:BudgetPoint>
+              <e1646:BudgetAmount>ValueHere</e1646:BudgetAmount>
+              <e1646:BudgetPointType>ValueHere</e1646:BudgetPointType>
+              <e1646:EstimatedWeeklyClicks>ValueHere</e1646:EstimatedWeeklyClicks>
+              <e1646:EstimatedWeeklyCost>ValueHere</e1646:EstimatedWeeklyCost>
+              <e1646:EstimatedWeeklyImpressions>ValueHere</e1646:EstimatedWeeklyImpressions>
+            </e1646:BudgetPoint>
+          </e1646:BudgetPoints>
+          <e1646:BudgetType>ValueHere</e1646:BudgetType>
+          <e1646:CampaignId>ValueHere</e1646:CampaignId>
+          <e1646:CurrentBudget>ValueHere</e1646:CurrentBudget>
+          <e1646:IncreaseInClicks>ValueHere</e1646:IncreaseInClicks>
+          <e1646:IncreaseInImpressions>ValueHere</e1646:IncreaseInImpressions>
+          <e1646:PercentageIncreaseInClicks>ValueHere</e1646:PercentageIncreaseInClicks>
+          <e1646:PercentageIncreaseInImpressions>ValueHere</e1646:PercentageIncreaseInImpressions>
+          <e1646:RecommendedBudget>ValueHere</e1646:RecommendedBudget>
+        </e1646:BudgetOpportunity>
       </Opportunities>
     </GetBudgetOpportunitiesResponse>
   </s:Body>
@@ -145,6 +145,6 @@ response=adinsight_service.GetBudgetOpportunities(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

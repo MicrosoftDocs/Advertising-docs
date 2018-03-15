@@ -1117,12 +1117,8 @@
           href: ../campaign-management-service/sharedlistitem.md
         - name: ShoppingSetting
           href: ../campaign-management-service/shoppingsetting.md
-        - name: SiteLink
-          href: ../campaign-management-service/sitelink.md
-        - name: Sitelink2AdExtension
-          href: ../campaign-management-service/sitelink2adextension.md
-        - name: SiteLinksAdExtension
-          href: ../campaign-management-service/sitelinksadextension.md
+        - name: SitelinkAdExtension
+          href: ../campaign-management-service/sitelinkadextension.md
         - name: StringRuleItem
           href: ../campaign-management-service/stringruleitem.md
         - name: StructuredSnippetAdExtension

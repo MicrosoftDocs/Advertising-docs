@@ -78,12 +78,12 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetDomainCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <Categories xmlns:e1295="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1295:DomainCategory>
-          <e1295:Bid>ValueHere</e1295:Bid>
-          <e1295:CategoryName d4p1:nil="false">ValueHere</e1295:CategoryName>
-          <e1295:Coverage>ValueHere</e1295:Coverage>
-        </e1295:DomainCategory>
+      <Categories xmlns:e1647="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1647:DomainCategory>
+          <e1647:Bid>ValueHere</e1647:Bid>
+          <e1647:CategoryName d4p1:nil="false">ValueHere</e1647:CategoryName>
+          <e1647:Coverage>ValueHere</e1647:Coverage>
+        </e1647:DomainCategory>
       </Categories>
     </GetDomainCategoriesResponse>
   </s:Body>
@@ -149,6 +149,6 @@ response=adinsight_service.GetDomainCategories(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

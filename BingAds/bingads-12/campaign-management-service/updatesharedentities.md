@@ -61,11 +61,11 @@ The following template shows the order of the [body](#request-body) and [header]
       <SharedEntities i:nil="false">
         <SharedEntity i:type="-- derived type specified here with the appropriate prefix --">
           <AssociationCount i:nil="false">ValueHere</AssociationCount>
-          <ForwardCompatibilityMap xmlns:e630="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e630:KeyValuePairOfstringstring>
-              <e630:key i:nil="false">ValueHere</e630:key>
-              <e630:value i:nil="false">ValueHere</e630:value>
-            </e630:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1878="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e1878:KeyValuePairOfstringstring>
+              <e1878:key i:nil="false">ValueHere</e1878:key>
+              <e1878:value i:nil="false">ValueHere</e1878:value>
+            </e1878:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Name i:nil="false">ValueHere</Name>
@@ -95,11 +95,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e631="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e631:KeyValuePairOfstringstring>
-              <e631:key d4p1:nil="false">ValueHere</e631:key>
-              <e631:value d4p1:nil="false">ValueHere</e631:value>
-            </e631:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1879="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1879:KeyValuePairOfstringstring>
+              <e1879:key d4p1:nil="false">ValueHere</e1879:key>
+              <e1879:value d4p1:nil="false">ValueHere</e1879:value>
+            </e1879:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -162,6 +162,6 @@ response=campaignmanagement_service.UpdateSharedEntities(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

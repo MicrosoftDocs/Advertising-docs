@@ -65,11 +65,11 @@ The following template shows the order of the [body](#request-body) and [header]
     <AddListItemsToSharedListRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <ListItems i:nil="false">
         <SharedListItem i:type="-- derived type specified here with the appropriate prefix --">
-          <ForwardCompatibilityMap xmlns:e468="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e468:KeyValuePairOfstringstring>
-              <e468:key i:nil="false">ValueHere</e468:key>
-              <e468:value i:nil="false">ValueHere</e468:value>
-            </e468:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1722="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e1722:KeyValuePairOfstringstring>
+              <e1722:key i:nil="false">ValueHere</e1722:key>
+              <e1722:value i:nil="false">ValueHere</e1722:value>
+            </e1722:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Type i:nil="false">ValueHere</Type>
           <!--These fields are applicable if the derived type attribute is set to NegativeKeyword-->
@@ -106,11 +106,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e469="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e469:KeyValuePairOfstringstring>
-              <e469:key d4p1:nil="false">ValueHere</e469:key>
-              <e469:value d4p1:nil="false">ValueHere</e469:value>
-            </e469:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1723="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1723:KeyValuePairOfstringstring>
+              <e1723:key d4p1:nil="false">ValueHere</e1723:key>
+              <e1723:value d4p1:nil="false">ValueHere</e1723:value>
+            </e1723:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -180,6 +180,6 @@ response=campaignmanagement_service.AddListItemsToSharedList(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

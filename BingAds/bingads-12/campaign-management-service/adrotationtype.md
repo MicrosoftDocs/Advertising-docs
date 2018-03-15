@@ -30,7 +30,7 @@ Defines the possible ad rotation types that you can apply to an ad group. For ad
 |<a name="rotateadsevenly"></a>RotateAdsEvenly|Rotate ads evenly into the auction.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

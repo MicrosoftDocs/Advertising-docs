@@ -71,11 +71,11 @@ The following template shows the order of the [body](#request-body) and [header]
           <AdFormatPreference i:nil="false">ValueHere</AdFormatPreference>
           <DevicePreference i:nil="false">ValueHere</DevicePreference>
           <EditorialStatus i:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e447="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
-            <e447:AppUrl>
-              <e447:OsType i:nil="false">ValueHere</e447:OsType>
-              <e447:Url i:nil="false">ValueHere</e447:Url>
-            </e447:AppUrl>
+          <FinalAppUrls xmlns:e1701="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+            <e1701:AppUrl>
+              <e1701:OsType i:nil="false">ValueHere</e1701:OsType>
+              <e1701:Url i:nil="false">ValueHere</e1701:Url>
+            </e1701:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -83,23 +83,23 @@ The following template shows the order of the [body](#request-body) and [header]
           <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e448="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e448:KeyValuePairOfstringstring>
-              <e448:key i:nil="false">ValueHere</e448:key>
-              <e448:value i:nil="false">ValueHere</e448:value>
-            </e448:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1702="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e1702:KeyValuePairOfstringstring>
+              <e1702:key i:nil="false">ValueHere</e1702:key>
+              <e1702:value i:nil="false">ValueHere</e1702:value>
+            </e1702:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Status i:nil="false">ValueHere</Status>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
           <Type i:nil="false">ValueHere</Type>
-          <UrlCustomParameters xmlns:e449="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
-            <e449:Parameters i:nil="false">
-              <e449:CustomParameter>
-                <e449:Key i:nil="false">ValueHere</e449:Key>
-                <e449:Value i:nil="false">ValueHere</e449:Value>
-              </e449:CustomParameter>
-            </e449:Parameters>
+          <UrlCustomParameters xmlns:e1703="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+            <e1703:Parameters i:nil="false">
+              <e1703:CustomParameter>
+                <e1703:Key i:nil="false">ValueHere</e1703:Key>
+                <e1703:Value i:nil="false">ValueHere</e1703:Value>
+              </e1703:CustomParameter>
+            </e1703:Parameters>
           </UrlCustomParameters>
           <!--These fields are applicable if the derived type attribute is set to TextAd-->
           <DestinationUrl i:nil="false">ValueHere</DestinationUrl>
@@ -160,11 +160,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e450="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e450:KeyValuePairOfstringstring>
-              <e450:key d4p1:nil="false">ValueHere</e450:key>
-              <e450:value d4p1:nil="false">ValueHere</e450:value>
-            </e450:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1704="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1704:KeyValuePairOfstringstring>
+              <e1704:key d4p1:nil="false">ValueHere</e1704:key>
+              <e1704:value d4p1:nil="false">ValueHere</e1704:value>
+            </e1704:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -234,6 +234,6 @@ response=campaignmanagement_service.AddAds(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

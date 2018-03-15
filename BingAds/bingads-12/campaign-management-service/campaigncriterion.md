@@ -22,7 +22,7 @@ Do not try to instantiate a *CampaignCriterion*. You can create one or more foll
   <xs:sequence>
     <xs:element name="CampaignId" type="xs:long" />
     <xs:element minOccurs="0" name="Criterion" nillable="true" type="tns:Criterion" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q96:ArrayOfKeyValuePairOfstringstring" xmlns:q96="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q92:ArrayOfKeyValuePairOfstringstring" xmlns:q92="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Status" nillable="true" type="tns:CampaignCriterionStatus" />
     <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
@@ -55,7 +55,7 @@ If you generate the SOAP manually, use the *type* attribute of the `<CampaignCri
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

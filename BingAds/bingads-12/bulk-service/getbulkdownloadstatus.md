@@ -89,11 +89,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Message d4p1:nil="false">ValueHere</Message>
         </OperationError>
       </Errors>
-      <ForwardCompatibilityMap xmlns:e425="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e425:KeyValuePairOfstringstring>
-          <e425:key d4p1:nil="false">ValueHere</e425:key>
-          <e425:value d4p1:nil="false">ValueHere</e425:value>
-        </e425:KeyValuePairOfstringstring>
+      <ForwardCompatibilityMap xmlns:e1681="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1681:KeyValuePairOfstringstring>
+          <e1681:key d4p1:nil="false">ValueHere</e1681:key>
+          <e1681:value d4p1:nil="false">ValueHere</e1681:value>
+        </e1681:KeyValuePairOfstringstring>
       </ForwardCompatibilityMap>
       <PercentComplete>ValueHere</PercentComplete>
       <RequestStatus d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</RequestStatus>
@@ -148,6 +148,6 @@ response=bulk_service.GetBulkDownloadStatus(
 ```
 
 ## Requirements
-Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
+Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/BulkService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

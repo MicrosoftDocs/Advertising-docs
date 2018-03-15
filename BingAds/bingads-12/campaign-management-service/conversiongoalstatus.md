@@ -32,7 +32,7 @@ Defines the possible user-determined status values of a conversion goal. These a
 |<a name="paused"></a>Paused|The conversion goal is paused. While a conversion goal is paused, conversions will not be tracked for the corresponding goal.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

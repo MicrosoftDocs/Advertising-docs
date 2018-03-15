@@ -30,7 +30,7 @@ Defines the possible values that indicate whether all or a subset of an ad group
 |<a name="uniform"></a>Uniform|All of an ad group's existing keywords are used to determine the bid landscape.|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 
 ## Used By

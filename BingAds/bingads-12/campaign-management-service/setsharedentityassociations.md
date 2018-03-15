@@ -87,11 +87,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e588="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e588:KeyValuePairOfstringstring>
-              <e588:key d4p1:nil="false">ValueHere</e588:key>
-              <e588:value d4p1:nil="false">ValueHere</e588:value>
-            </e588:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1838="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1838:KeyValuePairOfstringstring>
+              <e1838:key d4p1:nil="false">ValueHere</e1838:key>
+              <e1838:value d4p1:nil="false">ValueHere</e1838:value>
+            </e1838:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -154,6 +154,6 @@ response=campaignmanagement_service.SetSharedEntityAssociations(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
