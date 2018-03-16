@@ -32,7 +32,7 @@ Defines the criteria to use to filter the campaign change history report data.
 |<a name="itemchanged"></a>ItemChanged|The report will include data for only the specified type of entity. For example, you can use the filter to include data only for changes to ad groups or campaigns.<br /><br />You may specify only one type of entity.|[ChangeEntityReportFilter](changeentityreportfilter.md)|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
 Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By

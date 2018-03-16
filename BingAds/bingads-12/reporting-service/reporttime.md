@@ -19,6 +19,7 @@ Defines the date range values of a report request.
     <xs:element minOccurs="0" name="CustomDateRangeEnd" nillable="true" type="tns:Date" />
     <xs:element minOccurs="0" name="CustomDateRangeStart" nillable="true" type="tns:Date" />
     <xs:element minOccurs="0" name="PredefinedTime" nillable="true" type="tns:ReportTimePeriod" />
+    <xs:element minOccurs="0" name="ReportTimeZone" nillable="true" type="tns:ReportTimeZone" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -30,9 +31,10 @@ Defines the date range values of a report request.
 |<a name="customdaterangeend"></a>CustomDateRangeEnd|The end date of the custom date range. The end date cannot be later than today's date.|[Date](date.md)|
 |<a name="customdaterangestart"></a>CustomDateRangeStart|The start date of the custom date range. The start date must be earlier than or the same as the end date.|[Date](date.md)|
 |<a name="predefinedtime"></a>PredefinedTime|A predefined date range value. Each report request type specifies the predefined time periods that you can specify for each aggregation type.|[ReportTimePeriod](reporttimeperiod.md)|
+|<a name="reporttimezone"></a>ReportTimeZone|Determines the time zone that you want the Reporting service to use for the selected date range.<br/><br/>The time zone helps you accurately scope data for the selected date range.<br/><br/>If you do not choose a time zone, the Reporting service uses PacificTimeUSCanadaTijuana by default.|[ReportTimeZone](reporttimezone.md)|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
 Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By

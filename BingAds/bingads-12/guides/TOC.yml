@@ -1738,6 +1738,8 @@
           href: ../reporting-service/reportrequeststatustype.md
         - name: ReportTimePeriod
           href: ../reporting-service/reporttimeperiod.md
+        - name: ReportTimeZone
+          href: ../reporting-service/reporttimezone.md
         - name: SearchCampaignChangeHistoryReportColumn
           href: ../reporting-service/searchcampaignchangehistoryreportcolumn.md
         - name: SearchQueryPerformanceReportColumn

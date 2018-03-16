@@ -97,6 +97,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to CampaignPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -133,6 +134,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to AdDynamicTextPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -181,6 +183,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to AdGroupPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -228,6 +231,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to AdPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -276,6 +280,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to KeywordPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -349,6 +354,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to DestinationUrlPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -396,6 +402,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to BudgetSummaryReportRequest-->
         <Columns i:nil="false">
@@ -424,6 +431,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to AgeGenderDemographicReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -469,6 +477,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to UserLocationPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -514,6 +523,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to PublisherUsagePerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -559,6 +569,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to SearchQueryPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -611,6 +622,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to ConversionPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -658,6 +670,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to GoalsAndFunnelsReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -706,6 +719,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to NegativeKeywordConflictReportRequest-->
         <Columns i:nil="false">
@@ -774,6 +788,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to AdExtensionByAdReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -818,6 +833,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to AdExtensionByKeywordReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -862,6 +878,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to AudiencePerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -903,6 +920,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to AdExtensionDetailReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -947,6 +965,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to ShareOfVoiceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -1000,6 +1019,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to ProductDimensionPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -1046,6 +1066,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to ProductPartitionPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -1092,6 +1113,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to ProductPartitionUnitPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -1138,6 +1160,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to ProductSearchQueryPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -1188,6 +1211,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to CallDetailReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -1229,6 +1253,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to GeographicPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -1277,6 +1302,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to DSASearchQueryPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -1326,6 +1352,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to DSAAutoTargetPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -1372,6 +1399,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
         <!--These fields are applicable if the derived type attribute is set to DSACategoryPerformanceReportRequest-->
         <Aggregation>ValueHere</Aggregation>
@@ -1417,6 +1445,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <Year>ValueHere</Year>
           </CustomDateRangeStart>
           <PredefinedTime i:nil="false">ValueHere</PredefinedTime>
+          <ReportTimeZone i:nil="false">ValueHere</ReportTimeZone>
         </Time>
       </ReportRequest>
     </SubmitGenerateReportRequest>
@@ -1485,6 +1514,6 @@ response=reporting_service.SubmitGenerateReport(
 ```
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
 Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
