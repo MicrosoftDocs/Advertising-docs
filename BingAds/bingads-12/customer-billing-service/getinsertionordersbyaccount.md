@@ -86,7 +86,7 @@ The following template shows the order of the [body](#response-body) and [header
           <e370:BookingCountryCode d4p1:nil="false">ValueHere</e370:BookingCountryCode>
           <e370:Comment d4p1:nil="false">ValueHere</e370:Comment>
           <e370:EndDate d4p1:nil="false">ValueHere</e370:EndDate>
-          <e370:InsertionOrderId d4p1:nil="false">ValueHere</e370:InsertionOrderId>
+          <e370:Id d4p1:nil="false">ValueHere</e370:Id>
           <e370:LastModifiedByUserId d4p1:nil="false">ValueHere</e370:LastModifiedByUserId>
           <e370:LastModifiedTime d4p1:nil="false">ValueHere</e370:LastModifiedTime>
           <e370:NotificationThreshold d4p1:nil="false">ValueHere</e370:NotificationThreshold>

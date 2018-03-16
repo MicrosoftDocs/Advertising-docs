@@ -89,11 +89,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e587="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e587:KeyValuePairOfstringstring>
-              <e587:key d4p1:nil="false">ValueHere</e587:key>
-              <e587:value d4p1:nil="false">ValueHere</e587:value>
-            </e587:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1837="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1837:KeyValuePairOfstringstring>
+              <e1837:key d4p1:nil="false">ValueHere</e1837:key>
+              <e1837:value d4p1:nil="false">ValueHere</e1837:value>
+            </e1837:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -163,6 +163,6 @@ response=campaignmanagement_service.SetNegativeSitesToCampaigns(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

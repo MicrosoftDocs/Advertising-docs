@@ -104,7 +104,7 @@ Defines the possible types of campaign criterions.
 |<a name="webpage"></a>Webpage|The campaign criterion is a webpage criterion.<br/><br/>The *Criterion* element of a [NegativeCampaignCriterion](negativecampaigncriterion.md) can be an instance of [Webpage](webpage.md), but webpage criterion are not supported with [CampaignCriterion](campaigncriterion.md).<br/><br/>This criterion type is only used with Dynamic Search Ads campaigns.<br/><br/>The *CriterionBid* element of a [BiddableCampaignCriterion](biddablecampaigncriterion.md) must be an instance of [FixedBid](fixedbid.md) when paired with this criterion type.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

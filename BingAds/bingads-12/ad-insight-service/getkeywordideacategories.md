@@ -71,11 +71,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordIdeaCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordIdeaCategories xmlns:e1308="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1308:KeywordIdeaCategory>
-          <e1308:CategoryId>ValueHere</e1308:CategoryId>
-          <e1308:CategoryName d4p1:nil="false">ValueHere</e1308:CategoryName>
-        </e1308:KeywordIdeaCategory>
+      <KeywordIdeaCategories xmlns:e1660="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1660:KeywordIdeaCategory>
+          <e1660:CategoryId>ValueHere</e1660:CategoryId>
+          <e1660:CategoryName d4p1:nil="false">ValueHere</e1660:CategoryName>
+        </e1660:KeywordIdeaCategory>
       </KeywordIdeaCategories>
     </GetKeywordIdeaCategoriesResponse>
   </s:Body>
@@ -120,6 +120,6 @@ response=adinsight_service.GetKeywordIdeaCategories()
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

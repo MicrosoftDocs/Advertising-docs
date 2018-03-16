@@ -90,17 +90,17 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordLocationsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordLocationResult xmlns:e1319="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1319:KeywordLocationResult>
-          <e1319:Keyword d4p1:nil="false">ValueHere</e1319:Keyword>
-          <e1319:KeywordLocations d4p1:nil="false">
-            <e1319:KeywordLocation>
-              <e1319:Device d4p1:nil="false">ValueHere</e1319:Device>
-              <e1319:Location d4p1:nil="false">ValueHere</e1319:Location>
-              <e1319:Percentage>ValueHere</e1319:Percentage>
-            </e1319:KeywordLocation>
-          </e1319:KeywordLocations>
-        </e1319:KeywordLocationResult>
+      <KeywordLocationResult xmlns:e1671="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1671:KeywordLocationResult>
+          <e1671:Keyword d4p1:nil="false">ValueHere</e1671:Keyword>
+          <e1671:KeywordLocations d4p1:nil="false">
+            <e1671:KeywordLocation>
+              <e1671:Device d4p1:nil="false">ValueHere</e1671:Device>
+              <e1671:Location d4p1:nil="false">ValueHere</e1671:Location>
+              <e1671:Percentage>ValueHere</e1671:Percentage>
+            </e1671:KeywordLocation>
+          </e1671:KeywordLocations>
+        </e1671:KeywordLocationResult>
       </KeywordLocationResult>
     </GetKeywordLocationsResponse>
   </s:Body>
@@ -194,6 +194,6 @@ response=adinsight_service.GetKeywordLocations(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

@@ -36,7 +36,7 @@ Defines an error object that identifies the item within the batch of items in th
 |<a name="message"></a>Message|A message that describes the error.|**string**|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: https\://bingads.microsoft.com/AdInsight/v12  
 
 ## Used By

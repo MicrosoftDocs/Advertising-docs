@@ -107,7 +107,7 @@ These are the Bing Ads entities with properties for managing URLs that can be ac
 -  [DynamicSearchAd](../campaign-management-service/dynamicsearchad.md)  
 -  [ExpandedTextAd](../campaign-management-service/expandedtextad.md)  
 -  [Keyword](../campaign-management-service/keyword.md)  
--  [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md)  
+-  [SitelinkAdExtension](../campaign-management-service/sitelinkadextension.md)  
 -  [TextAd](../campaign-management-service/textad.md)  
 
 ## <a name="reportingservice"></a>URL Tracking with the Reporting Service

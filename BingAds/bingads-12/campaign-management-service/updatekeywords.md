@@ -26,7 +26,7 @@ The *UpdateKeywordsRequest* object defines the [body](#request-body) and [header
 |-----------|---------------|-------------|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group whose keywords will be updated.|**long**|
 |<a name="keywords"></a>Keywords|An array of [Keyword](keyword.md) objects that contains the updated keyword information. The *Id* element of each of these objects identifies the keyword to update.<br /><br />This array can contain a maximum of 1,000 elements.|[Keyword](keyword.md) array|
-|<a name="returninheritedbidstrategytypes"></a>ReturnInheritedBidStrategyTypes|Reserved.|**boolean**|
+|<a name="returninheritedbidstrategytypes"></a>ReturnInheritedBidStrategyTypes|Determines whether or not the service should return the bid strategy type that is inherited from the parent campaign or ad group.<br/><br/>The default value is false, and the [InheritedBidStrategyTypes](#inheritedbidstrategytypes) element will only be returned if you set this element true.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -38,7 +38,7 @@ The *UpdateKeywordsResponse* object defines the [body](#response-body) and [head
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="inheritedbidstrategytypes"></a>InheritedBidStrategyTypes|Reserved.|**string** array|
+|<a name="inheritedbidstrategytypes"></a>InheritedBidStrategyTypes|The value of each string represents the type of bidding scheme or bid strategy type that is inherited from the parent campaign or ad group.<br/><br/>Each string in the list is returned in the same order and corresponds to the keywords in the request message. If a keyword does not inherit from the ad group or campaign, the corresponding item in the list will be nil.<br/><br/>This element is not returned by default. You must set *ReturnInheritedBidStrategyTypes* true in the request.|**string** array|
 |<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
@@ -89,11 +89,11 @@ The following template shows the order of the [body](#request-body) and [header]
           </BiddingScheme>
           <DestinationUrl i:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus i:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e625="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
-            <e625:AppUrl>
-              <e625:OsType i:nil="false">ValueHere</e625:OsType>
-              <e625:Url i:nil="false">ValueHere</e625:Url>
-            </e625:AppUrl>
+          <FinalAppUrls xmlns:e1873="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+            <e1873:AppUrl>
+              <e1873:OsType i:nil="false">ValueHere</e1873:OsType>
+              <e1873:Url i:nil="false">ValueHere</e1873:Url>
+            </e1873:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -101,11 +101,11 @@ The following template shows the order of the [body](#request-body) and [header]
           <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e626="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e626:KeyValuePairOfstringstring>
-              <e626:key i:nil="false">ValueHere</e626:key>
-              <e626:value i:nil="false">ValueHere</e626:value>
-            </e626:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1874="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e1874:KeyValuePairOfstringstring>
+              <e1874:key i:nil="false">ValueHere</e1874:key>
+              <e1874:value i:nil="false">ValueHere</e1874:value>
+            </e1874:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <MatchType i:nil="false">ValueHere</MatchType>
@@ -115,13 +115,13 @@ The following template shows the order of the [body](#request-body) and [header]
           <Status i:nil="false">ValueHere</Status>
           <Text i:nil="false">ValueHere</Text>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e627="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
-            <e627:Parameters i:nil="false">
-              <e627:CustomParameter>
-                <e627:Key i:nil="false">ValueHere</e627:Key>
-                <e627:Value i:nil="false">ValueHere</e627:Value>
-              </e627:CustomParameter>
-            </e627:Parameters>
+          <UrlCustomParameters xmlns:e1875="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+            <e1875:Parameters i:nil="false">
+              <e1875:CustomParameter>
+                <e1875:Key i:nil="false">ValueHere</e1875:Key>
+                <e1875:Value i:nil="false">ValueHere</e1875:Value>
+              </e1875:CustomParameter>
+            </e1875:Parameters>
           </UrlCustomParameters>
         </Keyword>
       </Keywords>
@@ -150,11 +150,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e628="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e628:KeyValuePairOfstringstring>
-              <e628:key d4p1:nil="false">ValueHere</e628:key>
-              <e628:value d4p1:nil="false">ValueHere</e628:value>
-            </e628:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1876="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1876:KeyValuePairOfstringstring>
+              <e1876:key d4p1:nil="false">ValueHere</e1876:key>
+              <e1876:value d4p1:nil="false">ValueHere</e1876:value>
+            </e1876:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -231,6 +231,6 @@ response=campaignmanagement_service.UpdateKeywords(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

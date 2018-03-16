@@ -81,31 +81,31 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBidLandscapeByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <BidLandscape xmlns:e1292="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1292:KeywordBidLandscape>
-          <e1292:KeywordId>ValueHere</e1292:KeywordId>
-          <e1292:StartDate d4p1:nil="false">
-            <e1292:Day>ValueHere</e1292:Day>
-            <e1292:Month>ValueHere</e1292:Month>
-            <e1292:Year>ValueHere</e1292:Year>
-          </e1292:StartDate>
-          <e1292:EndDate d4p1:nil="false">
-            <e1292:Day>ValueHere</e1292:Day>
-            <e1292:Month>ValueHere</e1292:Month>
-            <e1292:Year>ValueHere</e1292:Year>
-          </e1292:EndDate>
-          <e1292:BidLandscapePoints d4p1:nil="false">
-            <e1292:BidLandscapePoint>
-              <e1292:Bid>ValueHere</e1292:Bid>
-              <e1292:Clicks d4p1:nil="false">ValueHere</e1292:Clicks>
-              <e1292:Impressions>ValueHere</e1292:Impressions>
-              <e1292:TopImpressions d4p1:nil="false">ValueHere</e1292:TopImpressions>
-              <e1292:CurrencyCode>ValueHere</e1292:CurrencyCode>
-              <e1292:Cost d4p1:nil="false">ValueHere</e1292:Cost>
-              <e1292:MarginalCPC d4p1:nil="false">ValueHere</e1292:MarginalCPC>
-            </e1292:BidLandscapePoint>
-          </e1292:BidLandscapePoints>
-        </e1292:KeywordBidLandscape>
+      <BidLandscape xmlns:e1644="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1644:KeywordBidLandscape>
+          <e1644:KeywordId>ValueHere</e1644:KeywordId>
+          <e1644:StartDate d4p1:nil="false">
+            <e1644:Day>ValueHere</e1644:Day>
+            <e1644:Month>ValueHere</e1644:Month>
+            <e1644:Year>ValueHere</e1644:Year>
+          </e1644:StartDate>
+          <e1644:EndDate d4p1:nil="false">
+            <e1644:Day>ValueHere</e1644:Day>
+            <e1644:Month>ValueHere</e1644:Month>
+            <e1644:Year>ValueHere</e1644:Year>
+          </e1644:EndDate>
+          <e1644:BidLandscapePoints d4p1:nil="false">
+            <e1644:BidLandscapePoint>
+              <e1644:Bid>ValueHere</e1644:Bid>
+              <e1644:Clicks d4p1:nil="false">ValueHere</e1644:Clicks>
+              <e1644:Impressions>ValueHere</e1644:Impressions>
+              <e1644:TopImpressions d4p1:nil="false">ValueHere</e1644:TopImpressions>
+              <e1644:CurrencyCode>ValueHere</e1644:CurrencyCode>
+              <e1644:Cost d4p1:nil="false">ValueHere</e1644:Cost>
+              <e1644:MarginalCPC d4p1:nil="false">ValueHere</e1644:MarginalCPC>
+            </e1644:BidLandscapePoint>
+          </e1644:BidLandscapePoints>
+        </e1644:KeywordBidLandscape>
       </BidLandscape>
     </GetBidLandscapeByKeywordIdsResponse>
   </s:Body>
@@ -164,6 +164,6 @@ response=adinsight_service.GetBidLandscapeByKeywordIds(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

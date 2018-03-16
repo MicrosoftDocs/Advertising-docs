@@ -81,28 +81,28 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedBidByKeywordIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordEstimatedBids xmlns:e1296="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1296:KeywordIdEstimatedBid>
-          <e1296:KeywordId>ValueHere</e1296:KeywordId>
-          <e1296:KeywordEstimatedBid d4p1:nil="false">
-            <e1296:Keyword d4p1:nil="false">ValueHere</e1296:Keyword>
-            <e1296:EstimatedBids d4p1:nil="false">
-              <e1296:EstimatedBidAndTraffic>
-                <e1296:MinClicksPerWeek d4p1:nil="false">ValueHere</e1296:MinClicksPerWeek>
-                <e1296:MaxClicksPerWeek d4p1:nil="false">ValueHere</e1296:MaxClicksPerWeek>
-                <e1296:AverageCPC d4p1:nil="false">ValueHere</e1296:AverageCPC>
-                <e1296:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e1296:MinImpressionsPerWeek>
-                <e1296:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e1296:MaxImpressionsPerWeek>
-                <e1296:CTR d4p1:nil="false">ValueHere</e1296:CTR>
-                <e1296:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e1296:MinTotalCostPerWeek>
-                <e1296:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e1296:MaxTotalCostPerWeek>
-                <e1296:CurrencyCode>ValueHere</e1296:CurrencyCode>
-                <e1296:MatchType>ValueHere</e1296:MatchType>
-                <e1296:EstimatedMinBid>ValueHere</e1296:EstimatedMinBid>
-              </e1296:EstimatedBidAndTraffic>
-            </e1296:EstimatedBids>
-          </e1296:KeywordEstimatedBid>
-        </e1296:KeywordIdEstimatedBid>
+      <KeywordEstimatedBids xmlns:e1648="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1648:KeywordIdEstimatedBid>
+          <e1648:KeywordId>ValueHere</e1648:KeywordId>
+          <e1648:KeywordEstimatedBid d4p1:nil="false">
+            <e1648:Keyword d4p1:nil="false">ValueHere</e1648:Keyword>
+            <e1648:EstimatedBids d4p1:nil="false">
+              <e1648:EstimatedBidAndTraffic>
+                <e1648:MinClicksPerWeek d4p1:nil="false">ValueHere</e1648:MinClicksPerWeek>
+                <e1648:MaxClicksPerWeek d4p1:nil="false">ValueHere</e1648:MaxClicksPerWeek>
+                <e1648:AverageCPC d4p1:nil="false">ValueHere</e1648:AverageCPC>
+                <e1648:MinImpressionsPerWeek d4p1:nil="false">ValueHere</e1648:MinImpressionsPerWeek>
+                <e1648:MaxImpressionsPerWeek d4p1:nil="false">ValueHere</e1648:MaxImpressionsPerWeek>
+                <e1648:CTR d4p1:nil="false">ValueHere</e1648:CTR>
+                <e1648:MinTotalCostPerWeek d4p1:nil="false">ValueHere</e1648:MinTotalCostPerWeek>
+                <e1648:MaxTotalCostPerWeek d4p1:nil="false">ValueHere</e1648:MaxTotalCostPerWeek>
+                <e1648:CurrencyCode>ValueHere</e1648:CurrencyCode>
+                <e1648:MatchType>ValueHere</e1648:MatchType>
+                <e1648:EstimatedMinBid>ValueHere</e1648:EstimatedMinBid>
+              </e1648:EstimatedBidAndTraffic>
+            </e1648:EstimatedBids>
+          </e1648:KeywordEstimatedBid>
+        </e1648:KeywordIdEstimatedBid>
       </KeywordEstimatedBids>
     </GetEstimatedBidByKeywordIdsResponse>
   </s:Body>
@@ -161,6 +161,6 @@ response=adinsight_service.GetEstimatedBidByKeywordIds(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

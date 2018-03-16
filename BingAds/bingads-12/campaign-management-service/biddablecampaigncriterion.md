@@ -48,6 +48,6 @@ The [BiddableCampaignCriterion](biddablecampaigncriterion.md) object derives fro
 |<a name="type"></a>Type|The type of the campaign criterion. This value is *BiddableCampaignCriterion* when you retrieve a biddable campaign criterion. For more information about campaign criterion types, see the [CampaignCriterion Data Object Remarks](campaigncriterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

@@ -34,7 +34,7 @@ Defines an object that you can use to determine the component of an ad or keywor
 |<a name="term"></a>Term|The term that failed editorial review.<br /><br />This element cannot be set if a combination of terms caused the failure or if the failure was based on a policy violation.|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

@@ -82,16 +82,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <Result xmlns:e1306="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1306:KeywordCategoryResult>
-          <e1306:Keyword d4p1:nil="false">ValueHere</e1306:Keyword>
-          <e1306:KeywordCategories d4p1:nil="false">
-            <e1306:KeywordCategory>
-              <e1306:Category d4p1:nil="false">ValueHere</e1306:Category>
-              <e1306:ConfidenceScore>ValueHere</e1306:ConfidenceScore>
-            </e1306:KeywordCategory>
-          </e1306:KeywordCategories>
-        </e1306:KeywordCategoryResult>
+      <Result xmlns:e1658="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1658:KeywordCategoryResult>
+          <e1658:Keyword d4p1:nil="false">ValueHere</e1658:Keyword>
+          <e1658:KeywordCategories d4p1:nil="false">
+            <e1658:KeywordCategory>
+              <e1658:Category d4p1:nil="false">ValueHere</e1658:Category>
+              <e1658:ConfidenceScore>ValueHere</e1658:ConfidenceScore>
+            </e1658:KeywordCategory>
+          </e1658:KeywordCategories>
+        </e1658:KeywordCategoryResult>
       </Result>
     </GetKeywordCategoriesResponse>
   </s:Body>
@@ -164,6 +164,6 @@ response=adinsight_service.GetKeywordCategories(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

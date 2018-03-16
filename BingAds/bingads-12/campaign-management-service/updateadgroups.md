@@ -26,7 +26,7 @@ The *UpdateAdGroupsRequest* object defines the [body](#request-body) and [header
 |-----------|---------------|-------------|
 |<a name="adgroups"></a>AdGroups|An array that can contain a maximum of 1,000 [AdGroup](adgroup.md) objects to update.|[AdGroup](adgroup.md) array|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad groups to update.|**long**|
-|<a name="returninheritedbidstrategytypes"></a>ReturnInheritedBidStrategyTypes|Reserved.|**boolean**|
+|<a name="returninheritedbidstrategytypes"></a>ReturnInheritedBidStrategyTypes|Reserved for future use.|**boolean**|
 |<a name="updatenativebidadjustment"></a>UpdateNativeBidAdjustment|Determines whether or not the service should use the *NativeBidAdjustment* element of each specified [AdGroup](adgroup.md) during update.  If set to True, the *NativeBidAdjustment* will be used, and otherwise it will be ignored and your existing native bid adjustment setting will be retained during update.<br /><br />The default value is False if  this element is not set.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -39,7 +39,7 @@ The *UpdateAdGroupsResponse* object defines the [body](#response-body) and [head
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="inheritedbidstrategytypes"></a>InheritedBidStrategyTypes|Reserved.|**string** array|
+|<a name="inheritedbidstrategytypes"></a>InheritedBidStrategyTypes|Reserved for future use.|**string** array|
 |<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
@@ -99,11 +99,11 @@ The following template shows the order of the [body](#request-body) and [header]
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e606="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e606:KeyValuePairOfstringstring>
-              <e606:key i:nil="false">ValueHere</e606:key>
-              <e606:value i:nil="false">ValueHere</e606:value>
-            </e606:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1854="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e1854:KeyValuePairOfstringstring>
+              <e1854:key i:nil="false">ValueHere</e1854:key>
+              <e1854:value i:nil="false">ValueHere</e1854:value>
+            </e1854:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Language i:nil="false">ValueHere</Language>
@@ -147,13 +147,13 @@ The following template shows the order of the [body](#request-body) and [header]
           </StartDate>
           <Status i:nil="false">ValueHere</Status>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e607="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
-            <e607:Parameters i:nil="false">
-              <e607:CustomParameter>
-                <e607:Key i:nil="false">ValueHere</e607:Key>
-                <e607:Value i:nil="false">ValueHere</e607:Value>
-              </e607:CustomParameter>
-            </e607:Parameters>
+          <UrlCustomParameters xmlns:e1855="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+            <e1855:Parameters i:nil="false">
+              <e1855:CustomParameter>
+                <e1855:Key i:nil="false">ValueHere</e1855:Key>
+                <e1855:Value i:nil="false">ValueHere</e1855:Value>
+              </e1855:CustomParameter>
+            </e1855:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
@@ -183,11 +183,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e608="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e608:KeyValuePairOfstringstring>
-              <e608:key d4p1:nil="false">ValueHere</e608:key>
-              <e608:value d4p1:nil="false">ValueHere</e608:value>
-            </e608:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1856="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1856:KeyValuePairOfstringstring>
+              <e1856:key d4p1:nil="false">ValueHere</e1856:key>
+              <e1856:value d4p1:nil="false">ValueHere</e1856:value>
+            </e1856:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -271,6 +271,6 @@ response=campaignmanagement_service.UpdateAdGroups(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

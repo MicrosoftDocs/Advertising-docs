@@ -17,6 +17,8 @@ dev_langs:
 # GetAccountMigrationStatuses Service Operation - Campaign Management
 Gets the migration status info for the specified accounts.
 
+Currently there are no applicable migrations in progress and this operation is reserved for future use.
+
 ## <a name="request"></a>Request Elements
 The *GetAccountMigrationStatusesRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
@@ -25,7 +27,7 @@ The *GetAccountMigrationStatusesRequest* object defines the [body](#request-body
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountids"></a>AccountIds|The identifiers of each account to request migration status.<br/><br/>**Required**: Yes|**long** array|
-|<a name="migrationtype"></a>MigrationType|Filters the returned migration status by migration type.<br/><br/>Currently the only supported migration type is *SiteLinkAdExtension*. During calendar year 2017, Bing Ads upgraded all [SiteLinksAdExtension](sitelinksadextension.md) objects (contains multiple sitelinks per ad extension) to [Sitelink2AdExtension](sitelink2adextension.md) objects (contains one sitelink per ad extension).<br/><br/>**Required**: Yes|**string**|
+|<a name="migrationtype"></a>MigrationType|Filters the returned migration status by migration type.<br/><br/>Currently there are no applicable migrations in progress and this element is reserved for future use.<br/><br/>**Required**: Yes|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -147,6 +149,6 @@ response=campaignmanagement_service.GetAccountMigrationStatuses(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

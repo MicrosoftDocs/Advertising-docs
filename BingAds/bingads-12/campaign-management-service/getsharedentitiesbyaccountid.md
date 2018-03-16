@@ -77,11 +77,11 @@ The following template shows the order of the [body](#response-body) and [header
       <SharedEntities d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <SharedEntity d4p1:type="-- derived type specified here with the appropriate prefix --">
           <AssociationCount d4p1:nil="false">ValueHere</AssociationCount>
-          <ForwardCompatibilityMap xmlns:e580="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e580:KeyValuePairOfstringstring>
-              <e580:key d4p1:nil="false">ValueHere</e580:key>
-              <e580:value d4p1:nil="false">ValueHere</e580:value>
-            </e580:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1830="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1830:KeyValuePairOfstringstring>
+              <e1830:key d4p1:nil="false">ValueHere</e1830:key>
+              <e1830:value d4p1:nil="false">ValueHere</e1830:value>
+            </e1830:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
@@ -140,6 +140,6 @@ response=campaignmanagement_service.GetSharedEntitiesByAccountId(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

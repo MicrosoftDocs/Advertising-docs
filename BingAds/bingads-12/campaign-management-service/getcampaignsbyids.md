@@ -106,11 +106,11 @@ The following template shows the order of the [body](#response-body) and [header
           <BudgetType d4p1:nil="false">ValueHere</BudgetType>
           <DailyBudget d4p1:nil="false">ValueHere</DailyBudget>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e554="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e554:KeyValuePairOfstringstring>
-              <e554:key d4p1:nil="false">ValueHere</e554:key>
-              <e554:value d4p1:nil="false">ValueHere</e554:value>
-            </e554:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1804="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1804:KeyValuePairOfstringstring>
+              <e1804:key d4p1:nil="false">ValueHere</e1804:key>
+              <e1804:value d4p1:nil="false">ValueHere</e1804:value>
+            </e1804:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
@@ -119,13 +119,13 @@ The following template shows the order of the [body](#response-body) and [header
           <SubType d4p1:nil="false">ValueHere</SubType>
           <TimeZone d4p1:nil="false">ValueHere</TimeZone>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e555="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e555:Parameters d4p1:nil="false">
-              <e555:CustomParameter>
-                <e555:Key d4p1:nil="false">ValueHere</e555:Key>
-                <e555:Value d4p1:nil="false">ValueHere</e555:Value>
-              </e555:CustomParameter>
-            </e555:Parameters>
+          <UrlCustomParameters xmlns:e1805="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e1805:Parameters d4p1:nil="false">
+              <e1805:CustomParameter>
+                <e1805:Key d4p1:nil="false">ValueHere</e1805:Key>
+                <e1805:Value d4p1:nil="false">ValueHere</e1805:Value>
+              </e1805:CustomParameter>
+            </e1805:Parameters>
           </UrlCustomParameters>
           <CampaignType d4p1:nil="false">ValueHere</CampaignType>
           <Settings d4p1:nil="false">
@@ -164,11 +164,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e556="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e556:KeyValuePairOfstringstring>
-              <e556:key d4p1:nil="false">ValueHere</e556:key>
-              <e556:value d4p1:nil="false">ValueHere</e556:value>
-            </e556:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1806="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1806:KeyValuePairOfstringstring>
+              <e1806:key d4p1:nil="false">ValueHere</e1806:key>
+              <e1806:value d4p1:nil="false">ValueHere</e1806:value>
+            </e1806:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -245,6 +245,6 @@ response=campaignmanagement_service.GetCampaignsByIds(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

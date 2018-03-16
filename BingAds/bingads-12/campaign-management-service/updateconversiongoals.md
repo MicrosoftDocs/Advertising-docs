@@ -121,11 +121,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e624="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e624:KeyValuePairOfstringstring>
-              <e624:key d4p1:nil="false">ValueHere</e624:key>
-              <e624:value d4p1:nil="false">ValueHere</e624:value>
-            </e624:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1872="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1872:KeyValuePairOfstringstring>
+              <e1872:key d4p1:nil="false">ValueHere</e1872:key>
+              <e1872:value d4p1:nil="false">ValueHere</e1872:value>
+            </e1872:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -188,6 +188,6 @@ response=campaignmanagement_service.UpdateConversionGoals(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

@@ -30,7 +30,7 @@ Defines a condition or criterion that helps determine whether you want to show d
 |<a name="operand"></a>Operand|The webpage condition operand.<br/><br/>**Add:** Required<br/>**Update:** Not applicable. You cannot update the webpage conditions. To update the conditions you must delete the criterion and add a new criterion.|[WebpageConditionOperand](webpageconditionoperand.md)|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12  
 
 ## Used By

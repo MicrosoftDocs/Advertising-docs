@@ -21,11 +21,11 @@ Defines a biddable criterion that you want applied to the specified ad group.
         <xs:element minOccurs="0" name="CriterionBid" nillable="true" type="tns:CriterionBid" />
         <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:AdGroupCriterionEditorialStatus" />
-        <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="q79:ArrayOfAppUrl" xmlns:q79="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
-        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q80:ArrayOfstring" xmlns:q80="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q81:ArrayOfstring" xmlns:q81="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="q75:ArrayOfAppUrl" xmlns:q75="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
+        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q76:ArrayOfstring" xmlns:q76="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q77:ArrayOfstring" xmlns:q77="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q82:CustomParameters" xmlns:q82="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
+        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q78:CustomParameters" xmlns:q78="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -134,6 +134,6 @@ On update, set the *UrlCustomParameters* element to null or empty to retain any 
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    .
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
