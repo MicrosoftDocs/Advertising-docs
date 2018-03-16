@@ -48,7 +48,7 @@ To request a report of this type, pass this object to the [SubmitGenerateReport]
 |<a name="maxrows"></a>MaxRows|The top number of data rows to return in the report.|**int**|
 |<a name="scope"></a>Scope|The scope of the report. Use this element to limit the report to include data for a combination of accounts, ad groups, and campaigns.|[AccountThroughAdGroupReportScope](accountthroughadgroupreportscope.md)|
 |<a name="sort"></a>Sort|A list of the columns to sort, and the corresponding sort order.|[KeywordPerformanceReportSort](keywordperformancereportsort.md) array|
-|<a name="time"></a>Time|The time period to use for the report. You can specify a custom date range or select a predefined date range, for example, Today or ThisWeek.<br /><br />For a list of the time periods that you can specify for each aggregation type, see [Aggregation and Time](../guides/reports.md#aggregation-time).|[ReportTime](reporttime.md)|
+|<a name="time"></a>Time|The time period to use for the report. You can specify a custom date range or select a predefined date range, for example, Today or ThisWeek.<br /><br />For a list of the time periods that you can specify for each aggregation type, see [Aggregation and Time](../guides/reports.md#aggregation-time).<br/><br/>You can set the time zone within the [ReportTime](reporttime.md) object, which helps you accurately scope data for the requested time period.<br/><br/>If you do not choose a time zone, the Reporting service uses PacificTimeUSCanadaTijuana by default.|[ReportTime](reporttime.md)|
 
 The [KeywordPerformanceReportRequest](keywordperformancereportrequest.md) object has [Inherited Elements](#inheritedelements).
 

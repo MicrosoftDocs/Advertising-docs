@@ -486,7 +486,7 @@ The Content ad distribution is no longer supported in Bing Ads, and the *Content
 ### <a name="reporting-newfeatures"></a>New Features
 
 #### <a name="reporting-reporttimezone"></a>Report Time Zone
-Bing Ads API version 12 now lets you choose a *TimeZone* when you submit a [ReportRequest](../reporting-service/reportrequest.md). The time zone can help you accurately scope data for the selected date range. 
+Bing Ads API version 12 now lets you choose a [ReportTimeZone](../reporting-service/reporttimezone.md) when you submit a [ReportRequest](../reporting-service/reportrequest.md) via the [BudgetSummaryReportTime](../reporting-service/budgetsummaryreporttime.md) or [ReportTime](../reporting-service/reporttime.md) objects. The time zone can help you accurately scope data for the selected date range. 
 
 #### <a name="reporting-reporttimeperiod"></a>More Flexible Report Time Periods
 Bing Ads API version 12 now lets you choose *LastFourteenDays* and *LastThirtyDays* from the [ReportTimePeriod](../reporting-service/reporttimeperiod.md) value set when you submit a report request. 
