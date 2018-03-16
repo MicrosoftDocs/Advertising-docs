@@ -445,7 +445,7 @@ In addition when you include the TimePeriod column in version 12 the name of the
 |Weekly|WeekStartDate|
 |Yearly|Year|
 
-Whereas in version 11 the time period for Hourly aggregation was split across two columns, in version 12 it will be formatted in the TimePeriod column with the date and hour (int value) delimited by a semicolon e.g., *yyyy-mm-dd;hour*. For more details see [ReportAggregation](../reporting-service/reportaggregtion.md) and [TimePeriod Column](reports.md#timeperiod).
+Whereas in version 11 the time period for Hourly aggregation was split across two columns, in version 12 it will be formatted in the TimePeriod column with the date and hour (int value) delimited by a semicolon e.g., *yyyy-mm-dd;hour*. For more details see [ReportAggregation](../reporting-service/reportaggregation.md) and [TimePeriod Column](reports.md#timeperiod).
 
 #### <a name="reporting-columnrestrictions"></a>Column Restrictions
 For some reports you cannot include constrained attributes in the same report request. For example when submitting the [AccountPerformanceReportRequest](../reporting-service/accountperformancereportrequest.md) and [AdGroupPerformanceReportRequest](../reporting-service/adgroupperformancereportrequest.md) if you include any of the impression share performance statistics columns, then you must exclude the *BidMatchType*, *DeviceOS*, and *TopVsOther* attribute columns. Likewise, if you include any of these attribute columns, then you must exclude all of the impression share performance statistics columns.
