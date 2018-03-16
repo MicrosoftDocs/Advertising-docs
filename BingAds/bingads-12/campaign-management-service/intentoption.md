@@ -37,7 +37,7 @@ Defines the possible intent options for location criterion, for example to targe
 |<a name="peoplesearchingfororviewingpages"></a>PeopleSearchingForOrViewingPages|Show ads to people searching for or viewing pages about your targeted location.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

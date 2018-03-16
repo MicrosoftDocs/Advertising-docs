@@ -44,7 +44,7 @@ Defines a key performance index object for a keyword. The object contains the hi
 |<a name="totalcost"></a>TotalCost|The cost of using the specified keyword and match type during the specified time interval.<br /><br />The service determines the currency from the account specified in the *CustomerAccountId* header element. If *CustomerAccountId* is not set, the service uses *USDollar*.|**double**|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By

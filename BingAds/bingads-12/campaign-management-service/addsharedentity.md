@@ -63,11 +63,11 @@ The following template shows the order of the [body](#request-body) and [header]
     <AddSharedEntityRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <SharedEntity i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
         <AssociationCount i:nil="false">ValueHere</AssociationCount>
-        <ForwardCompatibilityMap xmlns:e472="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e472:KeyValuePairOfstringstring>
-            <e472:key i:nil="false">ValueHere</e472:key>
-            <e472:value i:nil="false">ValueHere</e472:value>
-          </e472:KeyValuePairOfstringstring>
+        <ForwardCompatibilityMap xmlns:e1726="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e1726:KeyValuePairOfstringstring>
+            <e1726:key i:nil="false">ValueHere</e1726:key>
+            <e1726:value i:nil="false">ValueHere</e1726:value>
+          </e1726:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
         <Id i:nil="false">ValueHere</Id>
         <Name i:nil="false">ValueHere</Name>
@@ -77,11 +77,11 @@ The following template shows the order of the [body](#request-body) and [header]
       </SharedEntity>
       <ListItems i:nil="false">
         <SharedListItem i:type="-- derived type specified here with the appropriate prefix --">
-          <ForwardCompatibilityMap xmlns:e473="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e473:KeyValuePairOfstringstring>
-              <e473:key i:nil="false">ValueHere</e473:key>
-              <e473:value i:nil="false">ValueHere</e473:value>
-            </e473:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1727="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e1727:KeyValuePairOfstringstring>
+              <e1727:key i:nil="false">ValueHere</e1727:key>
+              <e1727:value i:nil="false">ValueHere</e1727:value>
+            </e1727:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Type i:nil="false">ValueHere</Type>
           <!--These fields are applicable if the derived type attribute is set to NegativeKeyword-->
@@ -114,11 +114,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e474="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e474:KeyValuePairOfstringstring>
-              <e474:key d4p1:nil="false">ValueHere</e474:key>
-              <e474:value d4p1:nil="false">ValueHere</e474:value>
-            </e474:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1728="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1728:KeyValuePairOfstringstring>
+              <e1728:key d4p1:nil="false">ValueHere</e1728:key>
+              <e1728:value d4p1:nil="false">ValueHere</e1728:value>
+            </e1728:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -189,6 +189,6 @@ response=campaignmanagement_service.AddSharedEntity(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

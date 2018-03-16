@@ -32,7 +32,7 @@ Defines an object that specifies the type of ad rotation to apply to the ad grou
 |<a name="type"></a>Type|The type of ad rotation to apply to the ad group.<br /><br />Possible values are *OptimizeForClicks* and *RotateAdsEvenly*.<br/><br/>**Add:** Optional. If not specified, the default value is *OptimizeForClicks*.<br/>**Update:** Optional|[AdRotationType](adrotationtype.md)|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

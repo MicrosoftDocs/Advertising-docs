@@ -55,7 +55,7 @@ If the [Status](insertionorder.md#status) element of the [InsertionOrder](insert
 |Value|Description|
 |-----------|---------------|
 |<a name="approvechanges"></a>ApproveChanges|Approve the pending changes.|
-|<a name="cancelchanges"></a>CancelChanges|Cancel the pending changes.|
+|<a name="cancelchanges"></a>CancelChanges|Cancel the pending changes.<br/><br/>This status is read-only and only the system can set the status to CancelChanges.|
 |<a name="declinechanges"></a>DeclineChanges|Decline the pending changes.<br/><br/>You can only use this value on update if the [ChangeStatus](insertionorderpendingchanges.md#changestatus) element of the [InsertionOrderPendingChanges](insertionorderpendingchanges.md) object is currently set to PendingUserReview.|
 |<a name="pendinguserreview"></a>PendingUserReview|The changes are pending user review.<br/><br/>|
 

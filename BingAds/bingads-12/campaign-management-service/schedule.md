@@ -36,9 +36,8 @@ Use the *StartDate* and *EndDate* elements for calendar level scheduling, and th
 |<a name="usesearchertimezone"></a>UseSearcherTimeZone|Determines whether to use the account time zone or the time zone of the search user where the ads could be delivered. Set this property to *true* if you want the ad extensions to be shown in the search user's time zone, and otherwise set it to *false*. <br/><br/>**Add:** Optional. If you do not specify this element or leave it null, the default value of *false* will be set and the account time zone will be used. <br/>**Update:** When you update a schedule the existing settings are replaced with the new setting. Thus if you update a schedule and leave this element null, then you are effectively resetting to the default value of *false*. |**boolean**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [AdExtension](adextension.md)  
-[SiteLink](sitelink.md)  

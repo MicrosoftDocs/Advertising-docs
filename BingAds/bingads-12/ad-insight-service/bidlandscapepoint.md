@@ -43,7 +43,7 @@ Defines an object that contains estimates of clicks, cost, and impressions  give
 |<a name="topimpressions"></a>TopImpressions|The estimated number of impressions in the top or mainline ad results.<br /><br /> This element will be nil if there is no estimate available.|**long**|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By

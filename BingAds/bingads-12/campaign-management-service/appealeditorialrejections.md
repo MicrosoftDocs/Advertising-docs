@@ -60,11 +60,11 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <AppealEditorialRejectionsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
-      <EntityIdToParentIdAssociations xmlns:e476="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
-        <e476:EntityIdToParentIdAssociation>
-          <e476:EntityId>ValueHere</e476:EntityId>
-          <e476:ParentId>ValueHere</e476:ParentId>
-        </e476:EntityIdToParentIdAssociation>
+      <EntityIdToParentIdAssociations xmlns:e1730="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+        <e1730:EntityIdToParentIdAssociation>
+          <e1730:EntityId>ValueHere</e1730:EntityId>
+          <e1730:ParentId>ValueHere</e1730:ParentId>
+        </e1730:EntityIdToParentIdAssociation>
       </EntityIdToParentIdAssociations>
       <EntityType>ValueHere</EntityType>
       <JustificationText i:nil="false">ValueHere</JustificationText>
@@ -89,11 +89,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e477="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e477:KeyValuePairOfstringstring>
-              <e477:key d4p1:nil="false">ValueHere</e477:key>
-              <e477:value d4p1:nil="false">ValueHere</e477:value>
-            </e477:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1731="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1731:KeyValuePairOfstringstring>
+              <e1731:key d4p1:nil="false">ValueHere</e1731:key>
+              <e1731:value d4p1:nil="false">ValueHere</e1731:value>
+            </e1731:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -170,6 +170,6 @@ response=campaignmanagement_service.AppealEditorialRejections(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

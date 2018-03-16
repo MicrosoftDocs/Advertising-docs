@@ -150,7 +150,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="sellername"></a>SellerName|The report will include a column that contains the merchant or store name that offers the product.|
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
 |<a name="storeid"></a>StoreId|The unique identifier for the Bing Merchant Center store.|
-|<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
+|<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
 |<a name="title"></a>Title|The product item name. For example the title of a book, DVD, or game.|
 |<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
 |<a name="totalclicksonadelements"></a>TotalClicksOnAdElements|The number of clicks when this ad element was present in the ad copy, whether this or another ad element was clicked on.|

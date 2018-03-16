@@ -84,24 +84,24 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordDemographicsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordDemographicResult xmlns:e1307="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1307:KeywordDemographicResult>
-          <e1307:Keyword d4p1:nil="false">ValueHere</e1307:Keyword>
-          <e1307:KeywordDemographics d4p1:nil="false">
-            <e1307:KeywordDemographic>
-              <e1307:Device d4p1:nil="false">ValueHere</e1307:Device>
-              <e1307:EighteenToTwentyFour>ValueHere</e1307:EighteenToTwentyFour>
-              <e1307:TwentyFiveToThirtyFour>ValueHere</e1307:TwentyFiveToThirtyFour>
-              <e1307:ThirtyFiveToFourtyNine>ValueHere</e1307:ThirtyFiveToFourtyNine>
-              <e1307:FiftyToSixtyFour>ValueHere</e1307:FiftyToSixtyFour>
-              <e1307:SixtyFiveAndAbove>ValueHere</e1307:SixtyFiveAndAbove>
-              <e1307:AgeUnknown>ValueHere</e1307:AgeUnknown>
-              <e1307:Female>ValueHere</e1307:Female>
-              <e1307:Male>ValueHere</e1307:Male>
-              <e1307:GenderUnknown>ValueHere</e1307:GenderUnknown>
-            </e1307:KeywordDemographic>
-          </e1307:KeywordDemographics>
-        </e1307:KeywordDemographicResult>
+      <KeywordDemographicResult xmlns:e1659="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1659:KeywordDemographicResult>
+          <e1659:Keyword d4p1:nil="false">ValueHere</e1659:Keyword>
+          <e1659:KeywordDemographics d4p1:nil="false">
+            <e1659:KeywordDemographic>
+              <e1659:Device d4p1:nil="false">ValueHere</e1659:Device>
+              <e1659:EighteenToTwentyFour>ValueHere</e1659:EighteenToTwentyFour>
+              <e1659:TwentyFiveToThirtyFour>ValueHere</e1659:TwentyFiveToThirtyFour>
+              <e1659:ThirtyFiveToFourtyNine>ValueHere</e1659:ThirtyFiveToFourtyNine>
+              <e1659:FiftyToSixtyFour>ValueHere</e1659:FiftyToSixtyFour>
+              <e1659:SixtyFiveAndAbove>ValueHere</e1659:SixtyFiveAndAbove>
+              <e1659:AgeUnknown>ValueHere</e1659:AgeUnknown>
+              <e1659:Female>ValueHere</e1659:Female>
+              <e1659:Male>ValueHere</e1659:Male>
+              <e1659:GenderUnknown>ValueHere</e1659:GenderUnknown>
+            </e1659:KeywordDemographic>
+          </e1659:KeywordDemographics>
+        </e1659:KeywordDemographicResult>
       </KeywordDemographicResult>
     </GetKeywordDemographicsResponse>
   </s:Body>
@@ -174,6 +174,6 @@ response=adinsight_service.GetKeywordDemographics(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

@@ -4,13 +4,13 @@ ms.service: bing-ads-bulk-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the date range values for the requested performance data in a bulk download.
+description: This value set is not supported in Bing Ads API Version 12, and will be removed in a future version.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # ReportTimePeriod Value Set - Bulk
-Defines the date range values for the requested performance data in a bulk download.
+This value set is not supported in Bing Ads API Version 12, and will be removed in a future version. If you want data aggregated by day, week, or month, you can use the Bing Ads Reporting API. For more details see [Reports](../guides/reports.md).
 
 ## Syntax
 ```xml
@@ -50,7 +50,7 @@ Defines the date range values for the requested performance data in a bulk downl
 |<a name="yesterday"></a>Yesterday|Performance data for the previous day.|
 
 ## Requirements
-Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
+Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/BulkService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

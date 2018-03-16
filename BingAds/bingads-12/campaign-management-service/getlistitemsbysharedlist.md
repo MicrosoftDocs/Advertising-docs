@@ -82,11 +82,11 @@ The following template shows the order of the [body](#response-body) and [header
     <GetListItemsBySharedListResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <ListItems d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <SharedListItem d4p1:type="-- derived type specified here with the appropriate prefix --">
-          <ForwardCompatibilityMap xmlns:e574="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e574:KeyValuePairOfstringstring>
-              <e574:key d4p1:nil="false">ValueHere</e574:key>
-              <e574:value d4p1:nil="false">ValueHere</e574:value>
-            </e574:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1824="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1824:KeyValuePairOfstringstring>
+              <e1824:key d4p1:nil="false">ValueHere</e1824:key>
+              <e1824:value d4p1:nil="false">ValueHere</e1824:value>
+            </e1824:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Type d4p1:nil="false">ValueHere</Type>
           <!--These fields are applicable if the derived type attribute is set to NegativeKeyword-->
@@ -145,6 +145,6 @@ response=campaignmanagement_service.GetListItemsBySharedList(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

@@ -36,7 +36,7 @@ Defines a day of the week and time range for ad extension scheduling.
 |<a name="startminute"></a>StartMinute|The scheduled start minute.<br /><br />The possible values range from 0 to 60.<br/><br/>**Add:** Required.<br/>**Update:** The *DayTime* object cannot be updated. |[Minute](minute.md)|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

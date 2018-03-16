@@ -30,7 +30,7 @@ Contains a keyword estimators with your keyword level filter criteria for traffi
 |<a name="maxcpc"></a>MaxCpc|The maximum cost per click filter criteria for the keyword.<br/><br/>You can set the default maximum CPC for all of the ad group's keywords using the *MaxCpc* element of the [AdGroupEstimator](adgroupestimator.md) object. Use the keyword estimator if you want to override the max CPC for a specific keyword.|**double**|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By

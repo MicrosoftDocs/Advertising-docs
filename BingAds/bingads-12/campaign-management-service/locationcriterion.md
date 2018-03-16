@@ -14,7 +14,7 @@ Defines a criterion that can be used to show ads to users in a specific location
 
 With location criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about:
 *  All available countries/regions
-*  Selected cities, postal codes, metro areas (Nielsen DMA® in the United States), counties, states/provinces, and countries/regions
+*  Selected cities, postal codes, metro areas (Nielsen DMA? in the United States), counties, states/provinces, and countries/regions
 
 Each location criterion defines a location code for the accompanying criterion bid adjustment. 
 
@@ -34,7 +34,7 @@ Also note that you must consider the location, negative location, and radius cri
     <xs:extension base="tns:Criterion">
       <xs:sequence>
         <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="EnclosedLocationIds" nillable="true" type="q78:ArrayOflong" xmlns:q78="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="EnclosedLocationIds" nillable="true" type="q74:ArrayOflong" xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="LocationId" nillable="true" type="xs:long" />
         <xs:element minOccurs="0" name="LocationType" nillable="true" type="xs:string" />
       </xs:sequence>
@@ -64,6 +64,6 @@ The [LocationCriterion](locationcriterion.md) object derives from the [Criterion
 |<a name="type"></a>Type|The type of the criterion. This value is *Location* when you retrieve a location criterion. For more information about criterion types, see the [Criterion Data Object Remarks](criterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

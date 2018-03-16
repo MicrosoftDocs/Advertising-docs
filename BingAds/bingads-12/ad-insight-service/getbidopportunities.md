@@ -81,18 +81,18 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBidOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <Opportunities xmlns:e1293="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1293:BidOpportunity>
-          <e1293:AdGroupId>ValueHere</e1293:AdGroupId>
-          <e1293:CampaignId>ValueHere</e1293:CampaignId>
-          <e1293:CurrentBid>ValueHere</e1293:CurrentBid>
-          <e1293:EstimatedIncreaseInClicks>ValueHere</e1293:EstimatedIncreaseInClicks>
-          <e1293:EstimatedIncreaseInCost>ValueHere</e1293:EstimatedIncreaseInCost>
-          <e1293:EstimatedIncreaseInImpressions>ValueHere</e1293:EstimatedIncreaseInImpressions>
-          <e1293:KeywordId>ValueHere</e1293:KeywordId>
-          <e1293:MatchType d4p1:nil="false">ValueHere</e1293:MatchType>
-          <e1293:SuggestedBid>ValueHere</e1293:SuggestedBid>
-        </e1293:BidOpportunity>
+      <Opportunities xmlns:e1645="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1645:BidOpportunity>
+          <e1645:AdGroupId>ValueHere</e1645:AdGroupId>
+          <e1645:CampaignId>ValueHere</e1645:CampaignId>
+          <e1645:CurrentBid>ValueHere</e1645:CurrentBid>
+          <e1645:EstimatedIncreaseInClicks>ValueHere</e1645:EstimatedIncreaseInClicks>
+          <e1645:EstimatedIncreaseInCost>ValueHere</e1645:EstimatedIncreaseInCost>
+          <e1645:EstimatedIncreaseInImpressions>ValueHere</e1645:EstimatedIncreaseInImpressions>
+          <e1645:KeywordId>ValueHere</e1645:KeywordId>
+          <e1645:MatchType d4p1:nil="false">ValueHere</e1645:MatchType>
+          <e1645:SuggestedBid>ValueHere</e1645:SuggestedBid>
+        </e1645:BidOpportunity>
       </Opportunities>
     </GetBidOpportunitiesResponse>
   </s:Body>
@@ -158,6 +158,6 @@ response=adinsight_service.GetBidOpportunities(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

@@ -30,7 +30,7 @@ Defines an object that contains a keyword category and a confidence score. The c
 |<a name="confidencescore"></a>ConfidenceScore|A score from 0.0 to 1.0 that indicates the likelihood that the keyword belongs to the category.|**double**|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By

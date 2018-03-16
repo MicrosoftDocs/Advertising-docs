@@ -34,7 +34,7 @@ Defines an error object that contains the details that explain why the service o
 |<a name="message"></a>Message|A message that describes the error.|**string**|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: https\://bingads.microsoft.com/AdInsight/v12  
 
 ## Used By

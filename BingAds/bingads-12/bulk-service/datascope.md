@@ -34,11 +34,11 @@ Defines the scope or types of data to download.
 |-----------|---------------|
 |<a name="bidsuggestionsdata"></a>BidSuggestionsData|Download the bid suggestions records.|
 |<a name="entitydata"></a>EntityData|Download the entity attributes records.|
-|<a name="entityperformancedata"></a>EntityPerformanceData|Download the performance data fields for the corresponding entity records. The performance data is a summary aggregation per downloaded entity. If you want data aggregated by day, week, or month, you can use the Bing Ads Reporting API.|
+|<a name="entityperformancedata"></a>EntityPerformanceData|This value is not supported in Bing Ads API Version 12, and will be removed in a future version. If you want data aggregated by day, week, or month, you can use the Bing Ads Reporting API. For more details see [Reports](../guides/reports.md).|
 |<a name="qualityscoredata"></a>QualityScoreData|Download the quality score fields for the corresponding entity records.|
 
 ## Requirements
-Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
+Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/BulkService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

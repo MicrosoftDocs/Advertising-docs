@@ -85,11 +85,11 @@ The following template shows the order of the [body](#request-body) and [header]
           <BudgetType i:nil="false">ValueHere</BudgetType>
           <DailyBudget i:nil="false">ValueHere</DailyBudget>
           <Description i:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e621="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e621:KeyValuePairOfstringstring>
-              <e621:key i:nil="false">ValueHere</e621:key>
-              <e621:value i:nil="false">ValueHere</e621:value>
-            </e621:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1869="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e1869:KeyValuePairOfstringstring>
+              <e1869:key i:nil="false">ValueHere</e1869:key>
+              <e1869:value i:nil="false">ValueHere</e1869:value>
+            </e1869:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Name i:nil="false">ValueHere</Name>
@@ -98,13 +98,13 @@ The following template shows the order of the [body](#request-body) and [header]
           <SubType i:nil="false">ValueHere</SubType>
           <TimeZone i:nil="false">ValueHere</TimeZone>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e622="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
-            <e622:Parameters i:nil="false">
-              <e622:CustomParameter>
-                <e622:Key i:nil="false">ValueHere</e622:Key>
-                <e622:Value i:nil="false">ValueHere</e622:Value>
-              </e622:CustomParameter>
-            </e622:Parameters>
+          <UrlCustomParameters xmlns:e1870="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+            <e1870:Parameters i:nil="false">
+              <e1870:CustomParameter>
+                <e1870:Key i:nil="false">ValueHere</e1870:Key>
+                <e1870:Value i:nil="false">ValueHere</e1870:Value>
+              </e1870:CustomParameter>
+            </e1870:Parameters>
           </UrlCustomParameters>
           <CampaignType i:nil="false">ValueHere</CampaignType>
           <Settings i:nil="false">
@@ -158,11 +158,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e623="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e623:KeyValuePairOfstringstring>
-              <e623:key d4p1:nil="false">ValueHere</e623:key>
-              <e623:value d4p1:nil="false">ValueHere</e623:value>
-            </e623:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1871="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1871:KeyValuePairOfstringstring>
+              <e1871:key d4p1:nil="false">ValueHere</e1871:key>
+              <e1871:value d4p1:nil="false">ValueHere</e1871:value>
+            </e1871:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -232,6 +232,6 @@ response=campaignmanagement_service.UpdateCampaigns(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

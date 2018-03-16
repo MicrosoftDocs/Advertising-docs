@@ -91,11 +91,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e467="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e467:KeyValuePairOfstringstring>
-              <e467:key d4p1:nil="false">ValueHere</e467:key>
-              <e467:value d4p1:nil="false">ValueHere</e467:value>
-            </e467:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1721="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1721:KeyValuePairOfstringstring>
+              <e1721:key d4p1:nil="false">ValueHere</e1721:key>
+              <e1721:value d4p1:nil="false">ValueHere</e1721:value>
+            </e1721:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -158,6 +158,6 @@ response=campaignmanagement_service.AddLabels(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

@@ -18,8 +18,6 @@ For information about this month's changes to Bing Ads services, see the followi
 ### <a name="sdk-march2018"></a>Bing Ads Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, PHP, and Python SDKs are updated to support [Microsoft Account authentication in sandbox](sandbox.md#access). Starting with Bing Ads API version 12, only OAuth authentication will be supported. Managed credentials i.e., the *UserName* and *Password* header elements are not supported. 
 
-The Bing Ads .NET SDK is updated to support .NET Standard 2.0. This will enable you to choose from a variety of platforms e.g., .NET Core or .NET Framework 4.6.1. For more information on .NET Standard and how it relates to other .NET frameworks, refer to this article on [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard).
-
 The Bing Ads Java SDK is updated to Java 1.7. As [announced previously](https://blogs.msdn.microsoft.com/bing_ads_api/2018/02/02/mandatory-upgrade-required-to-tls1-2/) at the end of March, we will disable TLS1.0/1.1 across all Bing Ads interfaces, and leave support for TLS1.2 only. You must upgrade at minimum to Java 1.7 e.g., update 131. 
 
 ### <a name="customaudiencedelete-march2018"></a>Custom Audience Delete

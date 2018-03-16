@@ -94,16 +94,16 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SuggestKeywordsFromExistingKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordSuggestions xmlns:e1328="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1328:KeywordSuggestion>
-          <e1328:Keyword d4p1:nil="false">ValueHere</e1328:Keyword>
-          <e1328:SuggestionsAndConfidence d4p1:nil="false">
-            <e1328:KeywordAndConfidence>
-              <e1328:SuggestedKeyword d4p1:nil="false">ValueHere</e1328:SuggestedKeyword>
-              <e1328:ConfidenceScore>ValueHere</e1328:ConfidenceScore>
-            </e1328:KeywordAndConfidence>
-          </e1328:SuggestionsAndConfidence>
-        </e1328:KeywordSuggestion>
+      <KeywordSuggestions xmlns:e1680="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1680:KeywordSuggestion>
+          <e1680:Keyword d4p1:nil="false">ValueHere</e1680:Keyword>
+          <e1680:SuggestionsAndConfidence d4p1:nil="false">
+            <e1680:KeywordAndConfidence>
+              <e1680:SuggestedKeyword d4p1:nil="false">ValueHere</e1680:SuggestedKeyword>
+              <e1680:ConfidenceScore>ValueHere</e1680:ConfidenceScore>
+            </e1680:KeywordAndConfidence>
+          </e1680:SuggestionsAndConfidence>
+        </e1680:KeywordSuggestion>
       </KeywordSuggestions>
     </SuggestKeywordsFromExistingKeywordsResponse>
   </s:Body>
@@ -222,6 +222,6 @@ The following are the possible suggestion providers that you can specify.
 The following are the providers that each country supports.
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

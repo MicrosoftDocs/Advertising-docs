@@ -17,7 +17,7 @@ Defines an object that you can use to determine the component of an ad extension
 <xs:complexType name="AdExtensionEditorialReason" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element minOccurs="0" name="Location" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="PublisherCountries" nillable="true" type="q69:ArrayOfstring" xmlns:q69="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="PublisherCountries" nillable="true" type="q65:ArrayOfstring" xmlns:q65="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="ReasonCode" type="xs:int" />
     <xs:element minOccurs="0" name="Term" nillable="true" type="xs:string" />
   </xs:sequence>
@@ -34,7 +34,7 @@ Defines an object that you can use to determine the component of an ad extension
 |<a name="term"></a>Term|The term that failed editorial review.<br /><br />This element will not be set if a combination of terms caused the failure or if the failure was based on a policy violation.|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
