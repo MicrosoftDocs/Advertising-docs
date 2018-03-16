@@ -14,6 +14,8 @@ dev_langs:
 # Budget Opportunities Code Example
 This example demonstrates how to get the budget opportunities for each campaign in the current authenticated account.
 
+[!INCLUDE[code-example-requirements](./includes/code-example-requirements.md)]
+
 [!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/BudgetOpportunities.cs)]
 
 [!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/BudgetOpportunities.java)]

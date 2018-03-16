@@ -14,6 +14,27 @@ dev_langs:
 # Ad Extensions Code Example
 This example shows how to add, get, and delete extensions for an account's ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial reviews.
 
+```csharp
+// Supporting files for examples are available at GitHub. 
+// https://github.com/BingAds/BingAds-dotNET-SDK
+// You can close the repository or repurpose snippets as needed.
+```
+```java
+// Supporting files for examples are available at GitHub. 
+// https://github.com/BingAds/BingAds-Java-SDK
+// You can close the repository or repurpose snippets as needed.
+```
+```php
+// Supporting files for examples are available at GitHub. 
+// https://github.com/BingAds/BingAds-PHP-SDK
+// You can close the repository or repurpose snippets as needed.
+```
+```python
+# Supporting files for examples are available at GitHub. 
+# https://github.com/BingAds/BingAds-Python-SDK
+# You can close the repository or repurpose snippets as needed.
+```
+
 [!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v11/AdExtensions.cs)]
 
 [!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v11/AdExtensions.java)]
