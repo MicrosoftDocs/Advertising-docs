@@ -30,7 +30,7 @@ Defines an object that contains the keyword and percentage of users by age and g
 |<a name="keyworddemographics"></a>KeywordDemographics|An array of [KeywordDemographic](keyworddemographic.md) data objects that contains the percentage of users by age and gender (if known) that searched for the keyword on the device.|[KeywordDemographic](keyworddemographic.md) array|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By

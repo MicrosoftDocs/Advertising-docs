@@ -30,7 +30,7 @@ Defines values that you can use to determine whether the remarketing list can on
 |<a name="customer"></a>Customer|The remarketing list can be associated with any ad groups across all of the customer's accounts.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

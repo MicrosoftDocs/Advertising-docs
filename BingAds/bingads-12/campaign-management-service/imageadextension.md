@@ -23,12 +23,12 @@ You can associate an image ad extension with the account or with campaigns and a
         <xs:element name="AlternativeText" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="q49:ArrayOfAppUrl" xmlns:q49="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
-        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q50:ArrayOfstring" xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q51:ArrayOfstring" xmlns:q51="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <xs:element name="ImageMediaIds" nillable="true" type="q52:ArrayOflong" xmlns:q52="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="q45:ArrayOfAppUrl" xmlns:q45="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
+        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q46:ArrayOfstring" xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q47:ArrayOfstring" xmlns:q47="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element name="ImageMediaIds" nillable="true" type="q48:ArrayOflong" xmlns:q48="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q53:CustomParameters" xmlns:q53="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
+        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q49:CustomParameters" xmlns:q49="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -67,6 +67,6 @@ The [ImageAdExtension](imageadextension.md) object derives from the [AdExtension
 |<a name="version"></a>Version|The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it's revised.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**int**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

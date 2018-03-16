@@ -40,7 +40,7 @@ Defines a postal address.
 |<a name="streetaddress2"></a>StreetAddress2|The second line of the address. The second line can contain a maximum of 80 characters.<br/><br/>**Add:** Optional<br/>**Update:** Optional|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

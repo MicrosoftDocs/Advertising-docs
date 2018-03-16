@@ -24,4 +24,4 @@ The Bulk service defines the following data objects.
 |[EditorialError](editorialerror.md)|Defines an error object that identifies the entity with the batch of entities that failed editorial review.|
 |[KeyValuePairOfstringstring](keyvaluepairofstringstring.md)|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.|
 |[OperationError](operationerror.md)|Defines an error object that contains the details that explain why the service operation failed.|
-|[PerformanceStatsDateRange](performancestatsdaterange.md)|Defines the date range values for the requested performance data in a bulk download.|
+|[PerformanceStatsDateRange](performancestatsdaterange.md)|This data object is not supported in Bing Ads API Version 12, and will be removed in a future version.|

@@ -44,7 +44,7 @@ Defines the operators that can be applied to remarketing list rule item string v
 |<a name="notequals"></a>NotEquals|Does not equal the corresponding string value.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

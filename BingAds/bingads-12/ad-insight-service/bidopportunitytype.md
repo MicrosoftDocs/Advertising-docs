@@ -36,7 +36,7 @@ Defines the possible bid opportunity types you can request when calling [GetBidO
 |<a name="mainline1"></a>MainLine1|The bid opportunity may lead to ads shown in the first mainline position of search results.|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 
 ## Used By

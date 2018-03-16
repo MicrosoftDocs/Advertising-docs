@@ -48,6 +48,6 @@ The [ProductScope](productscope.md) object derives from the [Criterion](criterio
 |<a name="type"></a>Type|The type of the criterion. This value is *ProductScope* when you retrieve a product scope criterion. For more information about criterion types, see the [Criterion Data Object Remarks](criterion.md#remarks).<br /><br />**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

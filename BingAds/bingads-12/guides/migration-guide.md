@@ -115,12 +115,15 @@ When you migrate to version 12 remove the '2' suffix from all *Sitelink2* record
 #### <a name="bulk-shoppingsubtype"></a>Shopping Campaign Sub Type
 We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Bing Shopping campaigns. More details about Cooperative campaigns are coming soon, and in the meantime please note the potential required changes in Bing Ads API Version 12 for your application to support existing Bing Shopping campaigns. Whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any shopping campaigns. 
 
-When you download campaigns by including *Campaigns* from the [DownloadEntity](../bulk-service/downloadentity.md) value set, please check the *Campaign Type* and *Sub Type* fields of each [Campaign](../bulk-service/campaign.md). If the *Campaign Type* field is set to *Shopping* then you must also check the value of the *Sub Type* field. If the *Sub Type* field is empty then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign.
+When you download campaigns by including *Campaigns* from the [DownloadEntity](../bulk-service/downloadentity.md) value set, please check the *Campaign Type* and *Sub Type* fields of each [Campaign](../bulk-service/campaign.md). If the *Campaign Type* field is set to *Shopping* then you must also check the value of the *Sub Type* field. If the *Sub Type* field is empty then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign. 
+
+#### <a name="bulk-entityperformancedata"></a>Entity Performance Data
+Bulk download of performance data is no longer supported. The EntityPerformanceData value of the [DataScope](../bulk-service/datascope.md) value set is no longer supported in Bing Ads API Version 12, and will be removed from the service contract in a future version. If you want data aggregated by day, week, or month, you can use the Bing Ads Reporting API. For more details see [Reports](reports.md).
 
 #### <a name="bulk-audiencetargetingsetting"></a>Audience Targeting Setting
 The *Remarketing Targeting Setting* field of an [Ad Group](../bulk-service/ad-group.md) is removed.
 
-To determine whether the audience association is bid only or target and bid, use the *TargertSetting* field of an [Ad Group](../bulk-service/ad-group.md). The setting is applicable for all audiences associated with the ad group, including but not limited to remarketing lists. 
+To determine whether the audience association is bid only or target and bid, use the *TargetSetting* field of an [Ad Group](../bulk-service/ad-group.md). The setting is applicable for all audiences associated with the ad group, including but not limited to remarketing lists. 
 
 #### <a name="bulk-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *Content Bid*, *Content Network*, and *Search Network* fields of an [Ad Group](../bulk-service/ad-group.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. The *Search Bid* field of an [Ad Group](../bulk-service/ad-group.md) is renamed *Cpc Bid*.
@@ -166,9 +169,9 @@ The *ReturnAdditionalFields* element is removed from the [GetAdGroupsByCampaignI
 #### <a name="campaign-sitelinkadextensions"></a>Sitelink Ad Extensions
 During calendar year 2017, Bing Ads upgraded all version 11 *SiteLinksAdExtension* objects (contains multiple sitelinks per ad extension) to *Sitelink2AdExtension* objects (contains one sitelink per ad extension). 
 
-In Bing Ads API Version 12 the *SiteLinksAdExtension* and *SiteLink* objects are removed. The *Sitelink2AdExtension* object is renamed [SitelinkAdExtension](../campaign-management-service/sitelink2adextension.md). Likewise, the *SiteLinksAdExtension* value is removed from [AdExtensionsTypeFilter](../campaign-management-service/adextensionstypefilter.md) value set, and the *Sitelink2AdExtension* value is renamed *Sitelink2AdExtension* (sans '2' suffix).
+In Bing Ads API Version 12 the *SiteLinksAdExtension* and *SiteLink* objects are removed. The *Sitelink2AdExtension* object is renamed [SitelinkAdExtension](../campaign-management-service/sitelinkadextension.md). Likewise, the *SiteLinksAdExtension* value is removed from [AdExtensionsTypeFilter](../campaign-management-service/adextensionstypefilter.md) value set, and the *Sitelink2AdExtension* value is renamed *Sitelink2AdExtension* (sans '2' suffix).
 
-When you migrate to version 12 remove the '2' suffix from *Sitelink2AdExtension*, and otherwise the version 12 [SitelinkAdExtension](../campaign-management-service/sitelink2adextension.md) interface is identical to the version 11 *Sitelink2AdExtension* object. Likewise the ad extension [Type](../campaign-management-service/sitelink2adextension.md#type) value is *SitelinkAdExtension* when you retrieve a sitelink ad extension in version 12.
+When you migrate to version 12 remove the '2' suffix from *Sitelink2AdExtension*, and otherwise the version 12 [SitelinkAdExtension](../campaign-management-service/sitelinkadextension.md) interface is identical to the version 11 *Sitelink2AdExtension* object. Likewise the ad extension [Type](../campaign-management-service/sitelinkadextension.md#type) value is *SitelinkAdExtension* when you retrieve a sitelink ad extension in version 12.
 
 #### <a name="campaign-shoppingsubtype"></a>Shopping Campaign Sub Type
 We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Bing Shopping campaigns. More details about Cooperative campaigns are coming soon, and in the meantime please note the potential required changes in Bing Ads API Version 12 for your application to support existing Bing Shopping campaigns. Whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any shopping campaigns. 
@@ -222,9 +225,9 @@ In-market audiences cannot be deleted in both version 11 and version 12. Custom 
 ### <a name="campaign-newfeatures"></a>New Features
 
 #### <a name="campaign-inheritedbidstrategytypes"></a>Inherited Bid Strategy Types
-The *InheritedBidStrategyTypes* element is added to the response message of the [AddAdGroups](../campaign-management-service/addadgroups.md), [AddKeywords](../campaign-management-service/addkeywords.md), [UpdateAdGroups](../campaign-management-service/updateadgroups.md), and [UpdateKeywords](../campaign-management-service/updatekeywords.md) operations.
+The *InheritedBidStrategyTypes* element is added to the response message of the [AddKeywords](../campaign-management-service/addkeywords.md) and [UpdateKeywords](../campaign-management-service/updatekeywords.md) operations.
 
-Each string in the list is returned in the same order and corresponds to the ad groups or keywords in the request message. The value of each string represents the type of bidding scheme (a.k.a. bid strategy type) that is inherited from the parent campaign or ad group. This element is not returned by default. You must set *ReturnInheritedBidStrategyTypes* true in the request.
+Each string in the list is returned in the same order and corresponds to the keywords in the request message. The value of each string represents the type of bidding scheme (a.k.a. bid strategy type) that is inherited from the parent campaign or ad group. This element is not returned by default. You must set *ReturnInheritedBidStrategyTypes* true in the request.
 
 ## <a name="billing"></a>Customer Billing
 
@@ -248,7 +251,9 @@ The Pending and PendingSystemReview values are removed from the [InsertionOrderS
 ### <a name="billing-newfeatures"></a>New Features
 
 #### <a name="billing-insertionorderpendingchanges"></a>Insertion Order Pending Changes
-In version 12 you can update an approved insertion order via the [InsertionOrderPendingChanges](../customer-billing-service/insertionorderpendingchanges.md) object. Previously in version 11 you could not update an approved and active insertion order. You can discover pending changes via [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md), and then call [UpdateInsertionOrder](../customer-billing-service/updateinsertionorder.md) to change the status or update the insertion order settings. 
+In version 12 you can update you can update the comment, end date, name, notification threshold, purchase order, spend cap amount, and start date of insertion orders. Previously in version 11 you could only update the status of an [InsertionOrder](../customer-billing-service/insertionorder.md) to approve or decline an insertion order that was not yet approved and active.  
+
+Before the insertion order becomes approved i.e., if the [InsertionOrder](../customer-billing-service/insertionorder.md) status is set to PendingUserReview, you can make updates via the [InsertionOrder](../customer-billing-service/insertionorder.md) object. Once the [InsertionOrder](../customer-billing-service/insertionorder.md) status is Active, Exhausted, Expired, or NotStarted, then you can either make new changes or approve or decline the current pending changes via the [InsertionOrderPendingChanges](../customer-billing-service/insertionorderpendingchanges.md) object. You can discover pending changes via [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md), and then call [UpdateInsertionOrder](../customer-billing-service/updateinsertionorder.md) to change the status or update the insertion order settings. If the [InsertionOrder](../customer-billing-service/insertionorder.md) status is Canceled or Declined then you cannot update the insertion order. 
 
 ## <a name="customer"></a>Customer Management
 
@@ -428,6 +433,19 @@ SecondLevelCategory|Category2
 Status|CampaignStatus
 TopLevelCategory|Category0
 
+In addition when you include the TimePeriod column in version 12 the name of the column in the downloaded report will likewise be TimePeriod. In version 11 the column name varied by aggregation as follows.
+
+|Aggregation|Version 11 Column Name|
+|---------------|---------------|
+|Daily|GregorianDate|
+|DayOfWeek|DayOfWeek|
+|Hourly|Hour, GregorianDate|
+|HourOfDay|HourOfDay|
+|Monthly|MonthStartDate|
+|Weekly|WeekStartDate|
+|Yearly|Year|
+
+Whereas in version 11 the time period for Hourly aggregation was split across two columns, in version 12 it will be formatted in the TimePeriod column with the date and hour (int value) delimited by a semicolon e.g., *yyyy-mm-dd;hour*. For more details see [ReportAggregation](../reporting-service/reportaggregation.md) and [TimePeriod Column](reports.md#timeperiod).
 
 #### <a name="reporting-columnrestrictions"></a>Column Restrictions
 For some reports you cannot include constrained attributes in the same report request. For example when submitting the [AccountPerformanceReportRequest](../reporting-service/accountperformancereportrequest.md) and [AdGroupPerformanceReportRequest](../reporting-service/adgroupperformancereportrequest.md) if you include any of the impression share performance statistics columns, then you must exclude the *BidMatchType*, *DeviceOS*, and *TopVsOther* attribute columns. Likewise, if you include any of these attribute columns, then you must exclude all of the impression share performance statistics columns.

@@ -44,7 +44,7 @@ Determines which properties of the [KeywordIdea](keywordidea.md) object you want
 |<a name="suggestedbid"></a>SuggestedBid|Include the suggested bid.|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 
 ## Used By

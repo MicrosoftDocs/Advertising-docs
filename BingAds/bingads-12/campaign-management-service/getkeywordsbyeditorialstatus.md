@@ -103,11 +103,11 @@ The following template shows the order of the [body](#response-body) and [header
           </BiddingScheme>
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e564="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e564:AppUrl>
-              <e564:OsType d4p1:nil="false">ValueHere</e564:OsType>
-              <e564:Url d4p1:nil="false">ValueHere</e564:Url>
-            </e564:AppUrl>
+          <FinalAppUrls xmlns:e1814="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e1814:AppUrl>
+              <e1814:OsType d4p1:nil="false">ValueHere</e1814:OsType>
+              <e1814:Url d4p1:nil="false">ValueHere</e1814:Url>
+            </e1814:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -115,11 +115,11 @@ The following template shows the order of the [body](#response-body) and [header
           <FinalUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e565="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e565:KeyValuePairOfstringstring>
-              <e565:key d4p1:nil="false">ValueHere</e565:key>
-              <e565:value d4p1:nil="false">ValueHere</e565:value>
-            </e565:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1815="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1815:KeyValuePairOfstringstring>
+              <e1815:key d4p1:nil="false">ValueHere</e1815:key>
+              <e1815:value d4p1:nil="false">ValueHere</e1815:value>
+            </e1815:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <MatchType d4p1:nil="false">ValueHere</MatchType>
@@ -129,13 +129,13 @@ The following template shows the order of the [body](#response-body) and [header
           <Status d4p1:nil="false">ValueHere</Status>
           <Text d4p1:nil="false">ValueHere</Text>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e566="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e566:Parameters d4p1:nil="false">
-              <e566:CustomParameter>
-                <e566:Key d4p1:nil="false">ValueHere</e566:Key>
-                <e566:Value d4p1:nil="false">ValueHere</e566:Value>
-              </e566:CustomParameter>
-            </e566:Parameters>
+          <UrlCustomParameters xmlns:e1816="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e1816:Parameters d4p1:nil="false">
+              <e1816:CustomParameter>
+                <e1816:Key d4p1:nil="false">ValueHere</e1816:Key>
+                <e1816:Value d4p1:nil="false">ValueHere</e1816:Value>
+              </e1816:CustomParameter>
+            </e1816:Parameters>
           </UrlCustomParameters>
         </Keyword>
       </Keywords>
@@ -196,6 +196,6 @@ response=campaignmanagement_service.GetKeywordsByEditorialStatus(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

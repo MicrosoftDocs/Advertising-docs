@@ -32,7 +32,7 @@ Defines the possible time periods that determine the pool of data that the servi
 |<a name="lastweek"></a>LastWeek|Use data from last week, Sunday through Saturday. The data is refreshed every Sunday. Note that it can take up to 72 hours for the previous week's data to be available. For example, if you request data on the 4th Monday of the month, and data for the 3rd Sunday through 3rd Saturday is not ready, the response will be based on data for the 2nd Sunday through 2nd Saturday.|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 
 ## Used By

@@ -45,6 +45,6 @@ The [ApiFaultDetail](apifaultdetail.md) object derives from the [ApplicationFaul
 |<a name="trackingid"></a>TrackingId|The identifier of the log entry that contains the details of the API call.|**string**|
 
 ## Requirements
-Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
+Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/BulkService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

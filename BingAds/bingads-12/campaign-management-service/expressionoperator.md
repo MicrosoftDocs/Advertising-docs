@@ -34,7 +34,7 @@ Defines the operators that can be applied to expressions within a conversion goa
 |<a name="regularexpression"></a>RegularExpression|The property should match the corresponding regular expression.|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By

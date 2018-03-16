@@ -30,7 +30,7 @@ Defines an object that contains a keyword and corresponding match types.
 |<a name="matchtypes"></a>MatchTypes|The corresponding match types for the keyword.|[MatchType](matchtype.md) array|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Message  
 
 ## Used By

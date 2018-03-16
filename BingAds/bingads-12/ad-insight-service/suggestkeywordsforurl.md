@@ -82,11 +82,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SuggestKeywordsForUrlResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <Keywords xmlns:e1327="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1327:KeywordAndConfidence>
-          <e1327:SuggestedKeyword d4p1:nil="false">ValueHere</e1327:SuggestedKeyword>
-          <e1327:ConfidenceScore>ValueHere</e1327:ConfidenceScore>
-        </e1327:KeywordAndConfidence>
+      <Keywords xmlns:e1679="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1679:KeywordAndConfidence>
+          <e1679:SuggestedKeyword d4p1:nil="false">ValueHere</e1679:SuggestedKeyword>
+          <e1679:ConfidenceScore>ValueHere</e1679:ConfidenceScore>
+        </e1679:KeywordAndConfidence>
       </Keywords>
     </SuggestKeywordsForUrlResponse>
   </s:Body>
@@ -166,6 +166,6 @@ response=adinsight_service.SuggestKeywordsForUrl(
 ```
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

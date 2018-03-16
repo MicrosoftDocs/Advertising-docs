@@ -33,7 +33,7 @@ Defines the operating system platform and URL of the app store download webpage.
 |<a name="url"></a>Url|Reserved for future use.|**string**|
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12  
 
 ## Used By
@@ -42,5 +42,4 @@ Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertise
 [BiddableAdGroupCriterion](biddableadgroupcriterion.md)  
 [ImageAdExtension](imageadextension.md)  
 [Keyword](keyword.md)  
-[SiteLink](sitelink.md)  
-[Sitelink2AdExtension](sitelink2adextension.md)  
+[SitelinkAdExtension](sitelinkadextension.md)  

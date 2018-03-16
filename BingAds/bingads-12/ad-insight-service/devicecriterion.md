@@ -32,7 +32,7 @@ The device criterion that you can include when requesting keyword ideas or traff
 |<a name="devicename"></a>DeviceName|The device that you want to target.<br/><br/>Possible case-sensitive values are *All*, *Computers*, *Smartphones*, and *Tablets*.|**string**|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions  
 
 ## Used By

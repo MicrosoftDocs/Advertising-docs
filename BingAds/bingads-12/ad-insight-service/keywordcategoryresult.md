@@ -30,7 +30,7 @@ Defines an object that contains the keyword and a list of keyword categories tha
 |<a name="keywordcategories"></a>KeywordCategories|An array of [KeywordCategory](keywordcategory.md) objects that contains a keyword category and a score that indicates the confidence that the keyword belongs to that keyword category.|[KeywordCategory](keywordcategory.md) array|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By

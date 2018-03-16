@@ -110,11 +110,11 @@ The following template shows the order of the [body](#response-body) and [header
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e529="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e529:KeyValuePairOfstringstring>
-              <e529:key d4p1:nil="false">ValueHere</e529:key>
-              <e529:value d4p1:nil="false">ValueHere</e529:value>
-            </e529:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1779="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1779:KeyValuePairOfstringstring>
+              <e1779:key d4p1:nil="false">ValueHere</e1779:key>
+              <e1779:value d4p1:nil="false">ValueHere</e1779:value>
+            </e1779:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Language d4p1:nil="false">ValueHere</Language>
@@ -158,13 +158,13 @@ The following template shows the order of the [body](#response-body) and [header
           </StartDate>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e530="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e530:Parameters d4p1:nil="false">
-              <e530:CustomParameter>
-                <e530:Key d4p1:nil="false">ValueHere</e530:Key>
-                <e530:Value d4p1:nil="false">ValueHere</e530:Value>
-              </e530:CustomParameter>
-            </e530:Parameters>
+          <UrlCustomParameters xmlns:e1780="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e1780:Parameters d4p1:nil="false">
+              <e1780:CustomParameter>
+                <e1780:Key d4p1:nil="false">ValueHere</e1780:Key>
+                <e1780:Value d4p1:nil="false">ValueHere</e1780:Value>
+              </e1780:CustomParameter>
+            </e1780:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
@@ -218,6 +218,6 @@ response=campaignmanagement_service.GetAdGroupsByCampaignId(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

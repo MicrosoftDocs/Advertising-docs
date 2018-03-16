@@ -83,11 +83,11 @@ The following template shows the order of the [body](#response-body) and [header
           <AdFormatPreference d4p1:nil="false">ValueHere</AdFormatPreference>
           <DevicePreference d4p1:nil="false">ValueHere</DevicePreference>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e534="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e534:AppUrl>
-              <e534:OsType d4p1:nil="false">ValueHere</e534:OsType>
-              <e534:Url d4p1:nil="false">ValueHere</e534:Url>
-            </e534:AppUrl>
+          <FinalAppUrls xmlns:e1784="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e1784:AppUrl>
+              <e1784:OsType d4p1:nil="false">ValueHere</e1784:OsType>
+              <e1784:Url d4p1:nil="false">ValueHere</e1784:Url>
+            </e1784:AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -95,23 +95,23 @@ The following template shows the order of the [body](#response-body) and [header
           <FinalUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e535="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e535:KeyValuePairOfstringstring>
-              <e535:key d4p1:nil="false">ValueHere</e535:key>
-              <e535:value d4p1:nil="false">ValueHere</e535:value>
-            </e535:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1785="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1785:KeyValuePairOfstringstring>
+              <e1785:key d4p1:nil="false">ValueHere</e1785:key>
+              <e1785:value d4p1:nil="false">ValueHere</e1785:value>
+            </e1785:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
           <Type d4p1:nil="false">ValueHere</Type>
-          <UrlCustomParameters xmlns:e536="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e536:Parameters d4p1:nil="false">
-              <e536:CustomParameter>
-                <e536:Key d4p1:nil="false">ValueHere</e536:Key>
-                <e536:Value d4p1:nil="false">ValueHere</e536:Value>
-              </e536:CustomParameter>
-            </e536:Parameters>
+          <UrlCustomParameters xmlns:e1786="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e1786:Parameters d4p1:nil="false">
+              <e1786:CustomParameter>
+                <e1786:Key d4p1:nil="false">ValueHere</e1786:Key>
+                <e1786:Value d4p1:nil="false">ValueHere</e1786:Value>
+              </e1786:CustomParameter>
+            </e1786:Parameters>
           </UrlCustomParameters>
           <!--These fields are applicable if the derived type attribute is set to TextAd-->
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
@@ -205,6 +205,6 @@ response=campaignmanagement_service.GetAdsByAdGroupId(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

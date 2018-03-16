@@ -125,7 +125,7 @@ The following table defines limits for review ad extension properties.
 |Url|The string can contain a maximum of 255 characters.|
 
 ### <a name="sitelinkadextension"></a>Sitelink Ad Extension
-You can manage sitelink ad extensions using the Bulk service ([Sitelink Ad Extension Record](../bulk-service/sitelink-ad-extension.md)) or Campaign Management service ([SiteLink2AdExtension](../campaign-management-service/sitelinksadextension.md) or [SiteLinksAdExtension](../campaign-management-service/sitelink2adextension.md)).
+You can manage sitelink ad extensions using the Bulk service ([Sitelink Ad Extension Record](../bulk-service/sitelink-ad-extension.md)) or Campaign Management service ([SiteLinkAdExtension](../campaign-management-service/sitelinkadextension.md)).
 
 The following table defines limits for sitelink ad extension properties.
 

@@ -88,11 +88,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e490="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e490:KeyValuePairOfstringstring>
-              <e490:key d4p1:nil="false">ValueHere</e490:key>
-              <e490:value d4p1:nil="false">ValueHere</e490:value>
-            </e490:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1744="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1744:KeyValuePairOfstringstring>
+              <e1744:key d4p1:nil="false">ValueHere</e1744:key>
+              <e1744:value d4p1:nil="false">ValueHere</e1744:value>
+            </e1744:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -169,6 +169,6 @@ response=campaignmanagement_service.DeleteCampaignCriterions(
 ```
 
 ## Requirements
-Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  
+Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

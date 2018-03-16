@@ -39,7 +39,7 @@ Defines an object that contains a budget amount and an estimate of weekly impres
 |<a name="estimatedweeklyimpressions"></a>EstimatedWeeklyImpressions|The estimated weekly impressions for the given budget amount.|**double**|
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity  
 
 ## Used By

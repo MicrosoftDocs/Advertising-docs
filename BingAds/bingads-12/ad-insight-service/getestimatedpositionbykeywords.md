@@ -97,25 +97,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetEstimatedPositionByKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordEstimatedPositions xmlns:e1301="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1301:KeywordEstimatedPosition>
-          <e1301:Keyword d4p1:nil="false">ValueHere</e1301:Keyword>
-          <e1301:EstimatedPositions d4p1:nil="false">
-            <e1301:EstimatedPositionAndTraffic>
-              <e1301:MatchType>ValueHere</e1301:MatchType>
-              <e1301:MinClicksPerWeek>ValueHere</e1301:MinClicksPerWeek>
-              <e1301:MaxClicksPerWeek>ValueHere</e1301:MaxClicksPerWeek>
-              <e1301:AverageCPC>ValueHere</e1301:AverageCPC>
-              <e1301:MinImpressionsPerWeek>ValueHere</e1301:MinImpressionsPerWeek>
-              <e1301:MaxImpressionsPerWeek>ValueHere</e1301:MaxImpressionsPerWeek>
-              <e1301:CTR>ValueHere</e1301:CTR>
-              <e1301:MinTotalCostPerWeek>ValueHere</e1301:MinTotalCostPerWeek>
-              <e1301:MaxTotalCostPerWeek>ValueHere</e1301:MaxTotalCostPerWeek>
-              <e1301:CurrencyCode>ValueHere</e1301:CurrencyCode>
-              <e1301:EstimatedAdPosition>ValueHere</e1301:EstimatedAdPosition>
-            </e1301:EstimatedPositionAndTraffic>
-          </e1301:EstimatedPositions>
-        </e1301:KeywordEstimatedPosition>
+      <KeywordEstimatedPositions xmlns:e1653="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e1653:KeywordEstimatedPosition>
+          <e1653:Keyword d4p1:nil="false">ValueHere</e1653:Keyword>
+          <e1653:EstimatedPositions d4p1:nil="false">
+            <e1653:EstimatedPositionAndTraffic>
+              <e1653:MatchType>ValueHere</e1653:MatchType>
+              <e1653:MinClicksPerWeek>ValueHere</e1653:MinClicksPerWeek>
+              <e1653:MaxClicksPerWeek>ValueHere</e1653:MaxClicksPerWeek>
+              <e1653:AverageCPC>ValueHere</e1653:AverageCPC>
+              <e1653:MinImpressionsPerWeek>ValueHere</e1653:MinImpressionsPerWeek>
+              <e1653:MaxImpressionsPerWeek>ValueHere</e1653:MaxImpressionsPerWeek>
+              <e1653:CTR>ValueHere</e1653:CTR>
+              <e1653:MinTotalCostPerWeek>ValueHere</e1653:MinTotalCostPerWeek>
+              <e1653:MaxTotalCostPerWeek>ValueHere</e1653:MaxTotalCostPerWeek>
+              <e1653:CurrencyCode>ValueHere</e1653:CurrencyCode>
+              <e1653:EstimatedAdPosition>ValueHere</e1653:EstimatedAdPosition>
+            </e1653:EstimatedPositionAndTraffic>
+          </e1653:EstimatedPositions>
+        </e1653:KeywordEstimatedPosition>
       </KeywordEstimatedPositions>
     </GetEstimatedPositionByKeywordsResponse>
   </s:Body>
@@ -235,6 +235,6 @@ As a best practice for the most accurate bid estimates per country, you should s
 Given multiple countries from one of the property sets above, the service will then determine one country with the highest impression count to use as the source of data for estimating the bids. The response will not include details on the final filtered country.
 
 ## Requirements
-Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  
+Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
 Namespace: Microsoft.Advertiser.AdInsight.Api.Service.V12  
 

@@ -58,6 +58,6 @@ The [EditorialError](editorialerror.md) object derives from the [BatchError](bat
 |<a name="type"></a>Type|Reserved for future use.|**string**|
 
 ## Requirements
-Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/BulkService.svc)  
+Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/BulkService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
