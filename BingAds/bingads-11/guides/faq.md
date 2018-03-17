@@ -37,7 +37,7 @@ The access token typically expires after one hour, although you should always ch
 ## Q. How can I view documentation and code examples for different versions of the API?
 To navigate between versions, use the version selector near the table of contents at the top and left side of the page. 
 
-![API Docs Version Selector](media/docs-version-selector.png "API Docs Version Selector")  
+![API Docs Version Selector](media/api-docs-version-selector.png "API Docs Version Selector")  
 
 The ```view``` query string parameter will be updated and appended to the URL e.g., ```?view=bingads-11```. By default when you navigate to a page without any ```view``` query string parameter, the content for the latest generally available version will be shown even when a higher API version is available for preview. 
 
