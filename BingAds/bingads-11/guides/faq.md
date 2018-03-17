@@ -34,3 +34,12 @@ To programatically manage a Bing Ads account, you must provide consent at least 
 ## Q. When do the access and refresh tokens expire?
 The access token typically expires after one hour, although you should always check the expiration time each time you request a new token. The refresh token does not have a published duration or expiration time, although you can expect it to last up to 1 year. As a best practice you should always securely store the latest refresh token each time you request new access and refresh tokens. 
 
+## Q. How can I view documentation and code examples for different versions of the API?
+To navigate between versions, use the version selector near the table of contents at the top and left side of the page. 
+
+![API Docs Version Selector](media/docs-version-selector.png "API Docs Version Selector")  
+
+The ```view``` query string parameter will be updated and appended to the URL e.g., ```?view=bingads-11```. By default when you navigate to a page without any ```view``` query string parameter, the content for the latest generally available version will be shown even when a higher API version is available for preview. 
+
+## Q. How can I view code samples for different programming languages?
+In addition to the [Code Examples](code-examples.md) and services [Reference](reference.md) sections, you'll find code snippets in many of the technical guides e.g., the [Get Started](get-started.md) guide. You can use the language selector at the top or right of those pages to view examples in CSharp, Java, Php, or Python. When you choose a language, the setting is retained as you navigate other pages. The language selector will only include languages that have samples for that specific page, and will default to C# if the language you had previously set is not available for the page that you navigated to. 
