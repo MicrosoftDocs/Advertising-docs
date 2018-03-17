@@ -142,15 +142,21 @@ The following shows a `Result` element that includes the optional child elements
 Use `ExpirationTimestamp` to specify an expiry date for the itinerary. For example, in Case 1, the itinerary is served.
 
 Case 1:
+
 Today = 3/16/2018
+
 CheckInDate =  4/1/2018
+
 ExpirationTimestamp = 3/20/2018
 
 But in Case 2, the itinerary is not served.
 
 Case 2:
+
 Today = 3/21/2018
+
 CheckInDate =  4/1/2018
+
 ExpirationTime = 3/20/2018
 
 
