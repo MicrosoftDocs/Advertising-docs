@@ -24,7 +24,6 @@ The following are the differences between Google's Transaction Message implement
   
 - Bing does not support (and will ignore) the following `Result` elements:
   
-  - `ExpirationTime`
   - `RoomID`
   - `Rates`
   - `RoomBundle`

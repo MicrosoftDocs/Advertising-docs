@@ -124,11 +124,12 @@ The following shows a `Result` element that includes the optional child elements
 ```xml
   <Result>
     <Property>13579</Property>
-    <Checkin>2017-06-10</Checkin>
+    <Checkin>2017-05-26</Checkin>
     <Nights>2</Nights>
     <Baserate currency="USD">159.99</Baserate>
     <Tax currency="USD">20.00</Tax>
     <OtherFees currency="USD">4.00</OtherFees>
+    <ExpirationTimestamp>2017-05-28T09:00:34Z</ExpirationTimestamp>
     <ChargeCurrency>deposit</ChargeCurrency>
     <Custom1>summer2017</Custom1>
     <AllowablePointsOfSale>
@@ -138,9 +139,24 @@ The following shows a `Result` element that includes the optional child elements
   </Result>
 ```
 
+Use `ExpirationTimestamp` to specify an expiry date for the itinerary. For example, in Case 1, the itinerary is served.
+
+Case 1:
+Today = 3/16/2018
+CheckInDate =  4/1/2018
+ExpirationTimestamp = 3/20/2018
+
+But in Case 2, the itinerary is not served.
+
+Case 2:
+Today = 3/21/2018
+CheckInDate =  4/1/2018
+ExpirationTime = 3/20/2018
+
+
 Use the `ChargeCurrency` element to specify when the user is charged for the booking. By default, the user pays when they book (this is the Web option). This example uses Deposit, which asks the user to pay a portion at booking and the remainder later (for example, when they check out).
 
-Use one or more of the five `Custom` elements to provide substitution values for dynamic parameters in a point of sale (POS) URL. For example, if the POS URL is https://www.partnerdomain.com?promo=(CUSTOM1) and `Custom1` is set to summer2017, the POS URL that Bing uses is https://www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../pos-feed/create-pos-feed.md#using-dynamic-query-parameters).
+Use one or more of the five `Custom` elements to provide substitution values for dynamic parameters in a point of sale (POS) URL. For example, if the POS URL is https:\/\/www.partnerdomain.com?promo=(CUSTOM1) and `Custom1` is set to summer2017, the POS URL that Bing uses is https:\/\/www.partnerdomain.com?promo=summer2017. For more information, see [Using Dynamic Query Parameters](../pos-feed/create-pos-feed.md#using-dynamic-query-parameters).
 
 Use the `AllowablePointsOfSale` element to specify specific POS URLs that user's can use for booking. By default, the user may use any POS in the partner's points of sale feed file. The `id` attribute must match a POS in the feed file.
 
