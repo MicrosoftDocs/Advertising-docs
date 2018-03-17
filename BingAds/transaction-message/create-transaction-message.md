@@ -143,20 +143,16 @@ Use `ExpirationTimestamp` to specify an expiry date for the itinerary. For examp
 
 Case 1:
 
-Today = 3/16/2018
-
-CheckInDate =  4/1/2018
-
+Today = 3/16/2018<br />
+CheckInDate =  4/1/2018<br />
 ExpirationTimestamp = 3/20/2018
 
 But in Case 2, the itinerary is not served.
 
 Case 2:
 
-Today = 3/21/2018
-
-CheckInDate =  4/1/2018
-
+Today = 3/21/2018<br />
+CheckInDate =  4/1/2018<br />
 ExpirationTime = 3/20/2018
 
 
