@@ -189,7 +189,7 @@ Defines the amount to adjust the base bid by if the user checks in on one of the
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|DaysOfWeek|A list of weekdays. Apply the multiplier if the user is checking on one of the specified days. The following are the case-sensitive possible values.<br /><br /><ul><li>Monday</li><li>Tuesday</li><li>Wednesday</li><li>Thursday</li><li>Friday</li><li>Saturday</li><li>Sunday</li></ul>|String[]|Required|Optional
+|DaysOfWeek|A list of weekdays. Apply the multiplier if the user is checking on one of the specified days. The following are the possible case-sensitive values.<br /><br /><ul><li>Monday</li><li>Tuesday</li><li>Wednesday</li><li>Thursday</li><li>Friday</li><li>Saturday</li><li>Sunday</li></ul>|String[]|Required|Optional
 |Factor|The percentage amount to adjust the base bid by. The valid range is 0.0 through 10.0, with a precision of two decimal places. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.CheckinDayOfWeekMultiplier".|String|Required|Required
 
@@ -210,7 +210,7 @@ Defines the amount to adjust the base bid by if the user searched for hotels usi
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|DateType|The type of date used in the search. The following are the case-sensitive possible values.<br /><br /><ul><li>Default&mdash;The user didn't search for hotels using specific dates</li><li>Selected&mdash;The user searched for hotels using specific dates.</li></ul>|String[]|Required|Optional
+|DateType|The type of date used in the search. The following are the possible case-sensitive values.<br /><br /><ul><li>Default&mdash;The user didn't search for hotels using specific dates</li><li>Selected&mdash;The user searched for hotels using specific dates.</li></ul>|String[]|Required|Optional
 |Factor|The percentage amount to adjust the base bid by. The valid range is 0.0 through 10.0, with a precision of two decimal places. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.DateTypeMultiplier".|String|Required|Required
 
@@ -221,7 +221,7 @@ Defines the amount to adjust the base bid by if the user is using one of the spe
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|DeviceTypes|A list of device types. Apply the multiplier if the user is using one of the device types to search for hotels. The following are the case-sensitive possible values.<br /><br /><ul><li>Desktop</li><li>Mobile</li><li>Tablet</li></ul>|String[]|Required|Optional
+|DeviceTypes|A list of device types. Apply the multiplier if the user is using one of the device types to search for hotels. The following are the possible case-sensitive values.<br /><br /><ul><li>Desktop</li><li>Mobile</li><li>Tablet</li></ul>|String[]|Required|Optional
 |Factor|The percentage amount to adjust the base bid by. The valid range is 0.0 through 10.0, with a precision of two decimal places. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.DeviceMultiplier".|String|Required|Required
 
@@ -344,7 +344,7 @@ Defines the amount to adjust the base bid by if the user is searching for hotels
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
 |Factor|The percentage amount to adjust the base bid by. The valid range is 0.0 through 10.0, with a precision of two decimal places. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
-|Sites|A list of sites. Apply the multiplier if the user is using one of the sites to search for hotels. The following are the case-sensitive possible values.<br /><br /><ul><li>LocalUniversal&mdash;The user is searching for hotels on Bing.com or a partner site.</li><li>MapResults&mdash;The user is searching for hotels on Bing.com/maps.</li></ul>|String[]|Required|Optional
+|Sites|A list of sites. Apply the multiplier if the user is using one of the sites to search for hotels. The following are the possible case-sensitive values.<br /><br /><ul><li>LocalUniversal&mdash;The user is searching for hotels on Bing.com or a partner site.</li><li>MapResults&mdash;The user is searching for hotels on Bing.com/maps.</li></ul>|String[]|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.SiteMultiplier".|String|Required|Required
 
 -->
@@ -371,7 +371,7 @@ Defines the amount to adjust the base bid by if the user accesses one of the Bin
 
 |Name|Value|Type|Add|Update
 |-|-|-|-|-
-|Countries|A list of two-letter ISO 3116 county codes. For a list of possible country codes, see [Bing Ads country codes](https://help.bingads.microsoft.com/apex/index/3/en-us/50873#!).<br /><br />Apply the multiplier if the user accesses the Bing domain with the specified country code. For example, if the list includes US and DE, Bing uses the multiplier if the user uses Bing.com with the *us* or *de* country code (i.e., bing.com?cc=de).|String[]|Required|Optional
+|Countries|A list of two-letter ISO 3116 county codes. For a list of possible country codes, see [Bing Ads country codes](https://help.bingads.microsoft.com/apex/index/3/en-us/50873#!).<br /><br />Apply the multiplier if the user accesses the Bing domain with the specified country code. For example, if the list includes US and DE, Bing uses the multiplier if the user uses Bing.com with the *us* or *de* country code (for example, bing.com?cc=de).|String[]|Required|Optional
 |Factor|The percentage amount to adjust the base bid by. The valid range is 0.0 through 10.0, with a precision of two decimal places. For example, if the fixed bid is $5 and the multiplier is 5, the final bid is $25. Using the same multiplier, if the percentage bid is 5% and the room rate is $100, the final bid is $25.|Double|Required|Optional
 |@odata.type|The object's type. This field is set to "#Model.UserCountryMultiplier".|String|Required|Required
 
