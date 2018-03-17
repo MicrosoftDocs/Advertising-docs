@@ -21,7 +21,6 @@ Defines the delivered match type values that you can use to filter the report da
         <xs:enumeration value="Exact" />
         <xs:enumeration value="Phrase" />
         <xs:enumeration value="Broad" />
-        <xs:enumeration value="Content" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -33,12 +32,11 @@ Defines the delivered match type values that you can use to filter the report da
 |Value|Description|
 |-----------|---------------|
 |<a name="broad"></a>Broad|The report will contain ads that were delivered using a broad match comparison.|
-|<a name="content"></a>Content|The report will contain ads that were delivered by using a content match comparison.|
 |<a name="exact"></a>Exact|The report will contain ads that were delivered by using an exact match comparison.|
 |<a name="phrase"></a>Phrase|The report will contain ads that were delivered by using a phrase match comparison.|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
 Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By

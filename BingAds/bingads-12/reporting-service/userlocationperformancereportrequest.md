@@ -12,7 +12,7 @@ description: Defines a user location performance report request.
 # UserLocationPerformanceReportRequest Data Object - Reporting
 Defines a user location performance report request. Use this report to see where your traffic is coming from broken out by the physical location and the location people are searching for. You can then validate whether your location targeting strategy is successful, and identify opportunities to improve.
 
-You can request impressions, clicks, spend, and average cost-per-click for each ad group, organized by city, country, metro area (Nielsen DMA® in the United States), radius, state, and account.
+You can request impressions, clicks, spend, and average cost-per-click for each ad group, organized by city, country, metro area (Nielsen DMA? in the United States), radius, state, and account.
 
 To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
@@ -41,7 +41,7 @@ To request a report of this type, pass this object to the [SubmitGenerateReport]
 |<a name="columns"></a>Columns|The list of attributes and performance statistics to include in the report. The report will include the columns in the order that you specify them.|[UserLocationPerformanceReportColumn](userlocationperformancereportcolumn.md) array|
 |<a name="filter"></a>Filter|The filter information to use to filter the report data.|[UserLocationPerformanceReportFilter](userlocationperformancereportfilter.md)|
 |<a name="scope"></a>Scope|The scope of the report. Use this element to limit the report to include data for a combination of accounts, ad groups, and campaigns.|[AccountThroughAdGroupReportScope](accountthroughadgroupreportscope.md)|
-|<a name="time"></a>Time|The time period to use for the report. You can specify a custom date range or select a predefined date range, for example, Today or ThisWeek.<br /><br />For a list of the time periods that you can specify for each aggregation type, see [Aggregation and Time](../guides/reports.md#aggregation-time).|[ReportTime](reporttime.md)|
+|<a name="time"></a>Time|The time period to use for the report. You can specify a custom date range or select a predefined date range, for example, Today or ThisWeek.<br /><br />For a list of the time periods that you can specify for each aggregation type, see [Aggregation and Time](../guides/reports.md#aggregation-time).<br/><br/>You can set the time zone within the [ReportTime](reporttime.md) object, which helps you accurately scope data for the requested time period.<br/><br/>If you do not choose a time zone, the Reporting service uses PacificTimeUSCanadaTijuana by default.|[ReportTime](reporttime.md)|
 
 The [UserLocationPerformanceReportRequest](userlocationperformancereportrequest.md) object has [Inherited Elements](#inheritedelements).
 
@@ -61,6 +61,6 @@ The [UserLocationPerformanceReportRequest](userlocationperformancereportrequest.
 |<a name="returnonlycompletedata"></a>ReturnOnlyCompleteData|Determines whether you want the service to generate the report only if all the data has been processed and is available.<br /><br />If *True*, the request fails if the system has not finished processing all the data based on the aggregation, scope, and time period values that you specify. However, if *False*, the request succeeds but the report will contain only the data that the system has finished processing at the time of the request (there is no indication as to whether the data is complete). The default is *False*.<br /><br /> When a user clicks an ad, it can take from three to four hours for the system to process the click and make it available for reporting. For more information, see [Determining When the Books Close](../guides/reports.md#booksclose).<br /><br />Because you cannot retrieve complete data for today, you must set this element to *False* if the end date of the custom date range specified in the Time element of the derived report object is set to today, or if you specify one of the following predefined time values:<br />- *Today*<br />- *ThisWeek*<br />- *ThisMonth*<br />- *ThisYear*|**boolean**|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
 Namespace: https\://bingads.microsoft.com/Reporting/v12  
 

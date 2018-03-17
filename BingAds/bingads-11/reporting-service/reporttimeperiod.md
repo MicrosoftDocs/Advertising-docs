@@ -35,7 +35,7 @@ Defines the predefined time and date range values for a report request.
 |-----------|---------------|
 |<a name="lastfourweeks"></a>LastFourWeeks|A cumulative report for the four calendar weeks prior to today.<br /><br /> A calendar week runs from Sunday to Saturday.|
 |<a name="lastmonth"></a>LastMonth|A cumulative report for the previous calendar month.|
-|<a name="lastsevendays"></a>LastSevenDays|A report for the previous seven days, one row for each day.|
+|<a name="lastsevendays"></a>LastSevenDays|A cumulative report for the previous seven days.|
 |<a name="lastsixmonths"></a>LastSixMonths|A cumulative report for the previous six calendar months.|
 |<a name="lastthreemonths"></a>LastThreeMonths|A cumulative report for the previous three calendar months.|
 |<a name="lastweek"></a>LastWeek|A cumulative report for the previous calendar week.<br /><br /> A calendar week runs from Sunday to Saturday.|

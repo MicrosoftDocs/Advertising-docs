@@ -61,6 +61,7 @@ The Reporting service defines the following value sets.
 |[ReportLanguage](reportlanguage.md)|Defines the language values that you may specify for columns of a downloaded report.|
 |[ReportRequestStatusType](reportrequeststatustype.md)|Defines the status of a report.|
 |[ReportTimePeriod](reporttimeperiod.md)|Defines the predefined time and date range values for a report request.|
+|[ReportTimeZone](reporttimezone.md)|Defines possible values for the time zone that you want the Reporting service to use for the selected date range.|
 |[SearchCampaignChangeHistoryReportColumn](searchcampaignchangehistoryreportcolumn.md)|Defines the attribute columns that you can include in the [SearchCampaignChangeHistoryReportRequest](searchcampaignchangehistoryreportrequest.md).|
 |[SearchQueryPerformanceReportColumn](searchqueryperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [SearchQueryPerformanceReportRequest](searchqueryperformancereportrequest.md).|
 |[ShareOfVoiceReportColumn](shareofvoicereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ShareOfVoiceReportRequest](shareofvoicereportrequest.md).|

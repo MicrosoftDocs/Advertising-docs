@@ -81,7 +81,7 @@ The Reporting service defines the following data objects.
 |[PublisherUsagePerformanceReportRequest](publisherusageperformancereportrequest.md)|Defines a publisher usage performance report request.|
 |[ReportRequest](reportrequest.md)|Defines the base object for all report requests.|
 |[ReportRequestStatus](reportrequeststatus.md)|Defines the status of a report request.|
-|[ReportTime](reporttime.md)|Defines the date range values of a report request.|
+<br/><br/>You can set the time zone within the [ReportTime](reporttime.md) object, which helps you accurately scope data for the requested time period.<br/><br/>If you do not choose a time zone, the Reporting service uses PacificTimeUSCanadaTijuana by default.|[ReportTime](reporttime.md)|Defines the date range values of a report request.|
 |[SearchCampaignChangeHistoryReportFilter](searchcampaignchangehistoryreportfilter.md)|Defines the criteria to use to filter the campaign change history report data.|
 |[SearchCampaignChangeHistoryReportRequest](searchcampaignchangehistoryreportrequest.md)|Defines a change history report request.|
 |[SearchQueryPerformanceReportFilter](searchqueryperformancereportfilter.md)|Defines the criteria to use to filter the search query performance report data.|

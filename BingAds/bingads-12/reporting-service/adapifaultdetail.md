@@ -43,6 +43,6 @@ The [AdApiFaultDetail](adapifaultdetail.md) object derives from the [Application
 |<a name="trackingid"></a>TrackingId|The identifier of the log entry that contains the details of the API call.|**string**|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
 Namespace: https\://adapi.microsoft.com  
 
