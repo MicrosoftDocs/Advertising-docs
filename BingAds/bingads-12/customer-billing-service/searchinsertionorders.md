@@ -58,22 +58,22 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SearchInsertionOrdersRequest xmlns="https://bingads.microsoft.com/Billing/v12">
-      <Predicates xmlns:e371="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e371:Predicate>
-          <e371:Field i:nil="false">ValueHere</e371:Field>
-          <e371:Operator>ValueHere</e371:Operator>
-          <e371:Value i:nil="false">ValueHere</e371:Value>
-        </e371:Predicate>
+      <Predicates xmlns:e2251="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e2251:Predicate>
+          <e2251:Field i:nil="false">ValueHere</e2251:Field>
+          <e2251:Operator>ValueHere</e2251:Operator>
+          <e2251:Value i:nil="false">ValueHere</e2251:Value>
+        </e2251:Predicate>
       </Predicates>
-      <Ordering xmlns:e372="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e372:OrderBy>
-          <e372:Field>ValueHere</e372:Field>
-          <e372:Order>ValueHere</e372:Order>
-        </e372:OrderBy>
+      <Ordering xmlns:e2252="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e2252:OrderBy>
+          <e2252:Field>ValueHere</e2252:Field>
+          <e2252:Order>ValueHere</e2252:Order>
+        </e2252:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e373="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e373:Index>ValueHere</e373:Index>
-        <e373:Size>ValueHere</e373:Size>
+      <PageInfo xmlns:e2253="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e2253:Index>ValueHere</e2253:Index>
+        <e2253:Size>ValueHere</e2253:Size>
       </PageInfo>
     </SearchInsertionOrdersRequest>
   </s:Body>
@@ -90,38 +90,37 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SearchInsertionOrdersResponse xmlns="https://bingads.microsoft.com/Billing/v12">
-      <InsertionOrders xmlns:e374="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e374:InsertionOrder>
-          <e374:AccountId>ValueHere</e374:AccountId>
-          <e374:BalanceAmount d4p1:nil="false">ValueHere</e374:BalanceAmount>
-          <e374:BookingCountryCode d4p1:nil="false">ValueHere</e374:BookingCountryCode>
-          <e374:Comment d4p1:nil="false">ValueHere</e374:Comment>
-          <e374:EndDate d4p1:nil="false">ValueHere</e374:EndDate>
-          <e374:InsertionOrderId d4p1:nil="false">ValueHere</e374:InsertionOrderId>
-          <e374:LastModifiedByUserId d4p1:nil="false">ValueHere</e374:LastModifiedByUserId>
-          <e374:LastModifiedTime d4p1:nil="false">ValueHere</e374:LastModifiedTime>
-          <e374:NotificationThreshold d4p1:nil="false">ValueHere</e374:NotificationThreshold>
-          <e374:ReferenceId d4p1:nil="false">ValueHere</e374:ReferenceId>
-          <e374:SpendCapAmount>ValueHere</e374:SpendCapAmount>
-          <e374:StartDate d4p1:nil="false">ValueHere</e374:StartDate>
-          <e374:Name d4p1:nil="false">ValueHere</e374:Name>
-          <e374:Status d4p1:nil="false">ValueHere</e374:Status>
-          <e374:PurchaseOrder d4p1:nil="false">ValueHere</e374:PurchaseOrder>
-          <e374:ChangePendingReview d4p1:nil="false">ValueHere</e374:ChangePendingReview>
-          <e374:PendingChanges d4p1:nil="false">
-            <e374:Comment d4p1:nil="false">ValueHere</e374:Comment>
-            <e374:EndDate d4p1:nil="false">ValueHere</e374:EndDate>
-            <e374:RequestedByUserId d4p1:nil="false">ValueHere</e374:RequestedByUserId>
-            <e374:ModifiedDateTime d4p1:nil="false">ValueHere</e374:ModifiedDateTime>
-            <e374:NotificationThreshold d4p1:nil="false">ValueHere</e374:NotificationThreshold>
-            <e374:ReferenceId d4p1:nil="false">ValueHere</e374:ReferenceId>
-            <e374:SpendCapAmount>ValueHere</e374:SpendCapAmount>
-            <e374:StartDate d4p1:nil="false">ValueHere</e374:StartDate>
-            <e374:Name d4p1:nil="false">ValueHere</e374:Name>
-            <e374:PurchaseOrder d4p1:nil="false">ValueHere</e374:PurchaseOrder>
-            <e374:ChangeStatus d4p1:nil="false">ValueHere</e374:ChangeStatus>
-          </e374:PendingChanges>
-        </e374:InsertionOrder>
+      <InsertionOrders xmlns:e2254="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e2254:InsertionOrder>
+          <e2254:AccountId>ValueHere</e2254:AccountId>
+          <e2254:BalanceAmount d4p1:nil="false">ValueHere</e2254:BalanceAmount>
+          <e2254:BookingCountryCode d4p1:nil="false">ValueHere</e2254:BookingCountryCode>
+          <e2254:Comment d4p1:nil="false">ValueHere</e2254:Comment>
+          <e2254:EndDate d4p1:nil="false">ValueHere</e2254:EndDate>
+          <e2254:Id d4p1:nil="false">ValueHere</e2254:Id>
+          <e2254:LastModifiedByUserId d4p1:nil="false">ValueHere</e2254:LastModifiedByUserId>
+          <e2254:LastModifiedTime d4p1:nil="false">ValueHere</e2254:LastModifiedTime>
+          <e2254:NotificationThreshold d4p1:nil="false">ValueHere</e2254:NotificationThreshold>
+          <e2254:ReferenceId d4p1:nil="false">ValueHere</e2254:ReferenceId>
+          <e2254:SpendCapAmount>ValueHere</e2254:SpendCapAmount>
+          <e2254:StartDate d4p1:nil="false">ValueHere</e2254:StartDate>
+          <e2254:Name d4p1:nil="false">ValueHere</e2254:Name>
+          <e2254:Status d4p1:nil="false">ValueHere</e2254:Status>
+          <e2254:PurchaseOrder d4p1:nil="false">ValueHere</e2254:PurchaseOrder>
+          <e2254:PendingChanges d4p1:nil="false">
+            <e2254:Comment d4p1:nil="false">ValueHere</e2254:Comment>
+            <e2254:EndDate d4p1:nil="false">ValueHere</e2254:EndDate>
+            <e2254:RequestedByUserId d4p1:nil="false">ValueHere</e2254:RequestedByUserId>
+            <e2254:ModifiedDateTime d4p1:nil="false">ValueHere</e2254:ModifiedDateTime>
+            <e2254:NotificationThreshold d4p1:nil="false">ValueHere</e2254:NotificationThreshold>
+            <e2254:ReferenceId d4p1:nil="false">ValueHere</e2254:ReferenceId>
+            <e2254:SpendCapAmount>ValueHere</e2254:SpendCapAmount>
+            <e2254:StartDate d4p1:nil="false">ValueHere</e2254:StartDate>
+            <e2254:Name d4p1:nil="false">ValueHere</e2254:Name>
+            <e2254:PurchaseOrder d4p1:nil="false">ValueHere</e2254:PurchaseOrder>
+            <e2254:ChangeStatus d4p1:nil="false">ValueHere</e2254:ChangeStatus>
+          </e2254:PendingChanges>
+        </e2254:InsertionOrder>
       </InsertionOrders>
     </SearchInsertionOrdersResponse>
   </s:Body>

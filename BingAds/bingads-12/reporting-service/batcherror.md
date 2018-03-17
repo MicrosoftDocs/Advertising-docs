@@ -36,7 +36,7 @@ Defines an error object that identifies the item within the batch of items in th
 |<a name="message"></a>Message|A message that describes the error.|**string**|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
 Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By

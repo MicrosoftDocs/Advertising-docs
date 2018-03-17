@@ -38,7 +38,7 @@ Defines the device type values that you can use to filter the report data. These
 |<a name="tablet"></a>Tablet|The report will include text ads displayed on a tablet device.|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
 Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By

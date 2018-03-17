@@ -264,7 +264,7 @@ When the *ItemChanged* field's value is User, change history for the following a
 |Status|Refers to the status of the user.|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
 Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By

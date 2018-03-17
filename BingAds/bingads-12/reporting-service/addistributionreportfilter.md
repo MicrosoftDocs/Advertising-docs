@@ -19,7 +19,6 @@ Defines the ad distribution medium values that you can use to filter the report 
     <xs:simpleType>
       <xs:restriction base="xs:string">
         <xs:enumeration value="Search" />
-        <xs:enumeration value="Content" />
         <xs:enumeration value="Native">
           <xs:annotation>
             <xs:appinfo>
@@ -37,12 +36,11 @@ Defines the ad distribution medium values that you can use to filter the report 
 
 |Value|Description|
 |-----------|---------------|
-|<a name="content"></a>Content|The report will contain content ads.|
 |<a name="native"></a>Native|The report will contain intent ads.|
 |<a name="search"></a>Search|The report will contain search ads.|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
 Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
