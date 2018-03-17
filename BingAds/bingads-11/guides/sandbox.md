@@ -49,7 +49,7 @@ The above steps create a Bing Ads legacy user name that is not supported from Bi
 5.	Enter the email address of the user to invite. The email server must be outlook.com (for example, someone@outlook.com). 
 
     > [!IMPORTANT]
-    > You may send invites to @outlook.com email accounts only. You may not send invites to any other domain, even if the account is linked to an @outlook.com email account. If you try to send an invite to another domain (for example, someone@gmail.com), the BingAds UI will show the invite as pending indefinitely (the invite is never sent).
+    > You may send invites to @outlook.com email accounts only. You may not send invites to any other domain, even if the account is linked to an @outlook.com email account. If you try to send an invite to another domain (for example, someone@contoso.com), the BingAds UI will show the invite as pending indefinitely (the invite is never sent).
 
 6.	Click **Send**
 
@@ -62,7 +62,7 @@ Bing Ads sends an email invite to the user. If the invite doesn’t show up in t
 5.	Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com). 
 
     > [!IMPORTANT]
-    > Sandbox supports MSAs created using an @outlook**-int**.com email account only. You may not use an @outlook.com email account. Also, you may not use an email account from another email service (for example, @gmail.com) even if the account is linked to an @outlook.com or @outlook**-int**.com email account.  
+    > Sandbox supports MSAs created using an @outlook**-int**.com email account only. You may not use an @outlook.com email account. Also, you may not use an email account from another email service (for example, @contoso.com) even if the account is linked to an @outlook.com or @outlook**-int**.com email account.  
 
 6.	Finish the work flow by specifying the rest of your user information
 7.  Exit Bing Ads after completing the MSA process.

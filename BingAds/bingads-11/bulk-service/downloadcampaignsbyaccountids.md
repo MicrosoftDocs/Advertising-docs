@@ -14,8 +14,10 @@ dev_langs:
 # DownloadCampaignsByAccountIds Service Operation - Bulk
 Downloads settings and performance data for all of the account's campaigns. You can request all campaign data or only the data that has changed since the last time you downloaded the account.
 
-> [!NOTE]
-> You must use the same user credentials for the download request operation (either [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md)) and  the [GetBulkDownloadStatus](getbulkdownloadstatus.md) polling operation.
+You must use the same user credentials for the download request operation (either [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md)) and the [GetBulkDownloadStatus](getbulkdownloadstatus.md) polling operation.
+
+> [!TIP]
+> The [Bulk File Schema](bulk-file-schema.md) provides details about records that you can download and upload. Please adhere to the best practices to ensure fair usage for yourself and all Bing Ads clients. For details please see [Bulk Download Best Practices](../guides/bulk-download-upload.md#downloadbestpractices) and [Bulk Upload Best Practices](../guides/bulk-download-upload.md#uploadbestpractices).
 
 ## <a name="request"></a>Request Elements
 The *DownloadCampaignsByAccountIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

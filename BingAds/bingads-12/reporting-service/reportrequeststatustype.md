@@ -32,7 +32,7 @@ Defines the status of a report.
 |<a name="success"></a>Success|The report was successfully completed.<br /><br />The report can be downloaded from the URL contained in the *ReportDownloadUrl* element of the [ReportRequestStatus](reportrequeststatus.md) object.|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
 Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By

@@ -40,7 +40,7 @@ Defines the possible values that you can use to use to filter the report data by
 |<a name="manualcpc"></a>ManualCpc|The report will contain data related to keywords, ad groups, or campaigns that use the manual CPC bid strategy.|
 
 ## Requirements
-Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
 Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By

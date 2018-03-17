@@ -75,7 +75,7 @@ Should you hit the service call limit, you will see the following error:
 -   Symbolic Error Code: *BulkServiceNoMoreCallsPermittedForTheTimePeriod*  
 -   Message: *No more bulk upload or download calls will be permitted for this account for the current time period. If you have reached your bulk upload limit, the bulk download operations may still be available, or vice versa.*  
 
-If you observe this error, you can resubmit your request after waiting up to 15 minutes.
+If you observe this error, you can resubmit your request after waiting up to 15 minutes. For more details please see [Bulk Download Best Practices](bulk-download-upload.md#downloadbestpractices) and [Bulk Upload Best Practices](bulk-download-upload.md#uploadbestpractices).
 
 Also note the size limit per file for bulk upload in production is 100MB and up to 4 million rows. For [Sandbox](sandbox.md) the limit is 20K rows.
 
