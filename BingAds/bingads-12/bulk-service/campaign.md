@@ -20,8 +20,8 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |Column Header|Supported Campaign Types|
 |-----------------|---------------|
 |[Bid Adjustment](#bidadjustment)|All|
-|[Bid Strategy MaxCpc](#bidstrategymaxcpc)|SearchAndContent<br>DynamicSearchAds|
-|[Bid Strategy TargetCpa](#bidstrategytargetcpa)|SearchAndContent<br>DynamicSearchAds|
+|[Bid Strategy MaxCpc](#bidstrategymaxcpc)|Search<br>DynamicSearchAds|
+|[Bid Strategy TargetCpa](#bidstrategytargetcpa)|Search<br>DynamicSearchAds|
 |[Bid Strategy Type](#bidstrategytype)|All|
 |[Budget](#budget)|All|
 |[Budget Id](#budgetid)|All|
@@ -40,6 +40,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Priority](#priority)|Shopping|
 |[Status](#status)|All|
 |[Store Id](#storeid)|Shopping|
+|[Sub Type](#subtype)|Shopping|
 |[Time Zone](#timezone)|All|
 |[Tracking Template](#trackingtemplate)|All|
 |[Website](#website)|DynamicSearchAds|
@@ -51,8 +52,8 @@ The following Bulk CSV example would add one campaign of each type i.e. Search a
 ```csv
 Type,Status,Id,Parent Id,Campaign,Website,Client Id,Modified Time,Time Zone,Budget Id,Budget Name,Budget,Budget Type,Bid Adjustment,Name,Country Code,Store Id,Campaign Type,Priority,Tracking Template,Custom Parameter,Bid Strategy Type,Domain Language
 Format Version,,,,,,,,,,,,,,6,,,,,,,,
-Campaign,Active,-111,0,SearchAndContent 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,SearchAndContent,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,
-Campaign,Active,-111,0,Shopping 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,US,39807,Shopping,0,,{_promoCode}=PROMO1; {_season}=summer,,
+Campaign,Active,-111,0,Search 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,Search,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,
+Campaign,Active,-111,0,Shopping 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,US,StoreIdHere,Shopping,0,,{_promoCode}=PROMO1; {_season}=summer,,
 Campaign,Active,-111,0,DynamicSearchAds 2/6/2017 4:11:11 PM,contoso.com,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,DynamicSearchAds,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,EN
 ```
 
@@ -98,10 +99,12 @@ for(int i = 0; i < 3; i++)
             Name = "Women's Shoes " + DateTime.UtcNow,
             // 'Bid Adjustment' column header in the Bulk file
             NativeBidAdjustment = 10,
-            // 'Settings are not applicable for the SearchAndContent campaign type
+            // 'Settings are not applicable for the Search campaign type
             Settings = null,
             // 'Status' column header in the Bulk file
             Status = CampaignStatus.Active,
+            // 'Sub Type' column header in the Bulk file
+            SubType = null,
             // 'Time Zone' column header in the Bulk file
             TimeZone = "PacificTimeUSCanadaTijuana",
             // 'Tracking Template' column header in the Bulk file
@@ -127,9 +130,9 @@ for(int i = 0; i < 3; i++)
     uploadEntities.Add(bulkCampaign);
 }
 
-// Set properties specific to the SearchAndContent campaign type
-((BulkCampaign)uploadEntities[0]).Campaign.Name = "SearchAndContent " + DateTime.UtcNow;
-((BulkCampaign)uploadEntities[0]).Campaign.CampaignType = CampaignType.SearchAndContent;
+// Set properties specific to the Search campaign type
+((BulkCampaign)uploadEntities[0]).Campaign.Name = "Search " + DateTime.UtcNow;
+((BulkCampaign)uploadEntities[0]).Campaign.CampaignType = CampaignType.Search;
 
 // Set properties specific to the Shopping campaign type
 ((BulkCampaign)uploadEntities[1]).Campaign.Name = "Shopping " + DateTime.UtcNow;
@@ -144,7 +147,7 @@ for(int i = 0; i < 3; i++)
         // 'Country Code' column header in the Bulk file
         SalesCountryCode = "US",
         // 'Store Id' column header in the Bulk file
-        StoreId = 39807 // TBD
+        StoreId = StoreIdHere
     }
 };
             
@@ -317,9 +320,9 @@ The name of the campaign.
 ### <a name="campaigntype"></a>Campaign Type
 The type of the campaign.
 
-The campaign type determines whether the campaign is a Bing Shopping campaign, Dynamic Search Ads campaign, or Search &amp; Content campaign. Possible values include *Shopping*, *DynamicSearchAds*, and *SearchAndContent*.
+The campaign type determines whether the campaign is a Bing Shopping campaign, Dynamic Search Ads campaign, or Search &amp; Content campaign. Possible values include *Shopping*, *DynamicSearchAds*, and *Search*.
 
-**Add:** Optional. If not specified, then default value of *SearchAndContent* is used and you cannot set Bing Shopping or Dynamic Search Ads campaign settings.  If the campaign type is *Shopping* then you must also include the *Country Code*, *Priority*, and *Store Id* fields. If the campaign type is *DynamicSearchAds* then you must also include the *Domain Language* and *Website* fields.  
+**Add:** Optional. If not specified, then default value of *Search* is used and you cannot set Bing Shopping or Dynamic Search Ads campaign settings.  If the campaign type is *Shopping* then you must also include the *Country Code*, *Priority*, and *Store Id* fields. If the campaign type is *DynamicSearchAds* then you must also include the *Domain Language* and *Website* fields.  
 **Update:** Read-only  
 **Delete:** Read-only  
 
@@ -456,6 +459,17 @@ The unique identifier for the Bing Merchant Center store that your product catal
 To get your store identifiers, call the [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) operation.
 
 **Add:** Required if the *Campaign Type* field is set to *Shopping*. You cannot include this column for other campaign types.  
+**Update:** Read-only  
+**Delete:** Read-only  
+
+### <a name="subtype"></a>Sub Type
+The campaign sub type.
+
+We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Bing Shopping campaigns. More details about Cooperative campaigns are coming soon, and whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any Bing Shopping campaigns.
+
+When you download campaigns and the *Campaign Type* field is set to *Shopping*, please check the *SubType* of each campaign. If the *SubType* is not set then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign with different requirements.  
+
+**Add:** Optional and not applicable for most campaign types. For Cooperative campaigns you must set the sub type to *CoOp*.  
 **Update:** Read-only  
 **Delete:** Read-only  
 
