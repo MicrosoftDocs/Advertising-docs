@@ -1,12 +1,12 @@
 ---
-title: "Editorial Failure Reason Codes"
+title: "Editorial Reason Codes"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
 description: Reference documentation for editorial failure reason codes. 
 ---
-# Editorial Failure Reason Codes
+# Editorial Reason Codes
 The following are the possible reason codes for an ad or keyword that failed editorial review. 
 
 ## <a name="editorial-codes"></a>Editorial Codes

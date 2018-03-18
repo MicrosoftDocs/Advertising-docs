@@ -76,8 +76,6 @@ var bulkAdGroup = new BulkAdGroup
         {
             Type = AdRotationType.RotateAdsEvenly
         },
-        // The AdGroup.BiddingModel property is not supported in the Bulk file.
-        BiddingModel = BiddingModel.Keyword,
         // 'Bid Strategy Type' column header in the Bulk file
         BiddingScheme = new ManualCpcBiddingScheme { },
         // 'Content Bid' column header in the Bulk file

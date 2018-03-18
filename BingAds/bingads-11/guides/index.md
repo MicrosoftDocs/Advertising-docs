@@ -51,13 +51,11 @@ You will want to optimize your campaign budget and keyword bids for a competitiv
 Once your campaigns are up and running, you?ll want to monitor their performance using the Bing Ads Reporting service. Bing Ads can generate reports to track ad delivery, budget, and targeting. Each report type aggregates data at a different level and provides different [Report Attributes and Performance Statistics](report-attributes-performance-statistics.md). For example, You would use the account and campaign performance reports to monitor click and spend data to ensure that you are optimizing your budget, and you would use the ad and keyword performance reports to identify ads and keywords that are performing well in terms of click-through rate and conversions. For more information, see [Reports](reports.md).
 
 ## <a name="developercommunity"></a>Join the developer community
-The [Bing Ads Developer Center](https://developers.bingads.microsoft.com) aggregates valuable resources for the Bing Ads developer community, including links to getting started, account management, service health dashboard, code samples, support, and feature announcements.
-
-The [blog](https://blogs.msdn.microsoft.com/bing_ads_api/) contains technical information about upcoming features not currently in the API documentation; issues that API customers are facing and clarification and/or a solution to those issues; updates about Sandbox availability; and information about when a version of the service is going to sunset.
-
 The [forum](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) provides a way for the developer community to ask and answer questions about developing solutions with Bing Ads APIs, to showcase innovations, and to generate and maintain content through community participation. Microsoft monitors the forums and replies to questions that the community has not yet answered.
 
 If you are not finding the information you need to solve your problem in the developer forum, please contact [Bing Ads Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support). To resolve the issue efficiently, please provide support with the details requested in [Engaging Support](handle-service-errors-exceptions.md#contact-support).
+
+You can sign up for the monthly newsletter via the [News](https://developers.bingads.microsoft.com/News) tab of the Developer Portal, and that's also where the latest [blog](https://blogs.msdn.microsoft.com/bing_ads_api/) announcments are aggregated. 
 
 ## <a name="navigatecontent"></a>Next steps and navigating the content
 

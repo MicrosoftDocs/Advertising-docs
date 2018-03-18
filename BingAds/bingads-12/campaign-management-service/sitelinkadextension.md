@@ -37,7 +37,6 @@ You can associate a sitelink ad extension with the account or with campaigns and
 
 ## <a name="elements"></a>Elements
 
-
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="description1"></a>Description1|The site link description line 1.<br /><br />The maximum input length is 35 characters. If any Traditional Chinese characters are included, the limit is 15 characters.<br/><br/> Starting the week of September 18th, the limit will be relaxed such that only the Traditional Chinese characters will be counted double against the character limit. Each Traditional Chinese character will count as two and each English character will count only as one character.<br /><br /> If you specify *Description1* then *Description2* is required.<br/><br/>**Add:** Optional<br/>**Update:** Optional|**string**|

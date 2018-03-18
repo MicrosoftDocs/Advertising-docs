@@ -18,7 +18,7 @@ Defines the possible campaign types.
   <xs:list>
     <xs:simpleType>
       <xs:restriction base="xs:string">
-        <xs:enumeration value="SearchAndContent" />
+        <xs:enumeration value="Search" />
         <xs:enumeration value="Shopping" />
         <xs:enumeration value="DynamicSearchAds" />
         <xs:enumeration value="Audience" />
@@ -34,8 +34,8 @@ Defines the possible campaign types.
 |-----------|---------------|
 |<a name="audience"></a>Audience|Reserved.|
 |<a name="dynamicsearchads"></a>DynamicSearchAds|The campaign is a Dynamic Search Ads campaign.|
-|<a name="searchandcontent"></a>SearchAndContent|The campaign is a Search and Content campaign.|
-|<a name="shopping"></a>Shopping|The campaign is a Bing Shopping campaign.|
+|<a name="search"></a>Search|The campaign is a Search campaign.|
+|<a name="shopping"></a>Shopping|The campaign is a Bing Shopping campaign.<br/><br/>You should also check the campaign [SubType](campaign.md#subtype) to determine whether it is a Cooperative campaign.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

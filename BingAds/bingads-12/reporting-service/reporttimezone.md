@@ -16,7 +16,6 @@ Defines possible values for the time zone that you want the Reporting service to
 ```xml
 <xs:simpleType name="ReportTimeZone" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:restriction base="xs:string">
-    <xs:enumeration value="None" />
     <xs:enumeration value="Nukualofa" />
     <xs:enumeration value="FijiKamchatkaMarshallIsland" />
     <xs:enumeration value="AucklandWellington" />
@@ -92,13 +91,6 @@ Defines possible values for the time zone that you want the Reporting service to
     <xs:enumeration value="Hawaii" />
     <xs:enumeration value="MidwayIslandandSamoa" />
     <xs:enumeration value="InternationalDateLineWest" />
-    <xs:enumeration value="PositiveTooBig">
-      <xs:annotation>
-        <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">110</EnumerationValue>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:enumeration>
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -167,12 +159,10 @@ Defines possible values for the time zone that you want the Reporting service to
 |<a name="mountaintimeuscanada"></a>MountainTimeUSCanada|The corresponding report time zone.|
 |<a name="nairobi"></a>Nairobi|The corresponding report time zone.|
 |<a name="newfoundland"></a>Newfoundland|The corresponding report time zone.|
-|<a name="none"></a>None|Reserved.|
 |<a name="nukualofa"></a>Nukualofa|The corresponding report time zone.|
 |<a name="osakasapporotokyo"></a>OsakaSapporoTokyo|The corresponding report time zone.|
 |<a name="pacifictimeuscanadatijuana"></a>PacificTimeUSCanadaTijuana|The corresponding report time zone.|
 |<a name="perth"></a>Perth|The corresponding report time zone.|
-|<a name="positivetoobig"></a>PositiveTooBig|Reserved.|
 |<a name="rangoon"></a>Rangoon|The corresponding report time zone.|
 |<a name="santiago"></a>Santiago|The corresponding report time zone.|
 |<a name="sarajevoskopjewarsawzagreb"></a>SarajevoSkopjeWarsawZagreb|The corresponding report time zone.|

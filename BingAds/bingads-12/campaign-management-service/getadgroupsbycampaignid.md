@@ -76,7 +76,6 @@ The following template shows the order of the [body](#response-body) and [header
     <GetAdGroupsByCampaignIdResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AdGroups d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <AdGroup>
-          <AdDistribution d4p1:nil="false">ValueHere</AdDistribution>
           <AdRotation d4p1:nil="false">
             <EndDate d4p1:nil="false">ValueHere</EndDate>
             <StartDate d4p1:nil="false">ValueHere</StartDate>
@@ -102,31 +101,27 @@ The following template shows the order of the [body](#response-body) and [header
             <!--This field is applicable if the derived type attribute is set to InheritFromParentBiddingScheme-->
             <InheritedBidStrategyType d4p1:nil="false">ValueHere</InheritedBidStrategyType>
           </BiddingScheme>
-          <ContentMatchBid d4p1:nil="false">
+          <CpcBid d4p1:nil="false">
             <Amount d4p1:nil="false">ValueHere</Amount>
-          </ContentMatchBid>
+          </CpcBid>
           <EndDate d4p1:nil="false">
             <Day>ValueHere</Day>
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e1779="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1779:KeyValuePairOfstringstring>
-              <e1779:key d4p1:nil="false">ValueHere</e1779:key>
-              <e1779:value d4p1:nil="false">ValueHere</e1779:value>
-            </e1779:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1147="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1147:KeyValuePairOfstringstring>
+              <e1147:key d4p1:nil="false">ValueHere</e1147:key>
+              <e1147:value d4p1:nil="false">ValueHere</e1147:value>
+            </e1147:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Language d4p1:nil="false">ValueHere</Language>
           <Name d4p1:nil="false">ValueHere</Name>
           <NativeBidAdjustment d4p1:nil="false">ValueHere</NativeBidAdjustment>
           <Network d4p1:nil="false">ValueHere</Network>
-          <PricingModel d4p1:nil="false">ValueHere</PricingModel>
           <PrivacyStatus d4p1:nil="false">ValueHere</PrivacyStatus>
           <RemarketingTargetingSetting d4p1:nil="false">ValueHere</RemarketingTargetingSetting>
-          <SearchBid d4p1:nil="false">
-            <Amount d4p1:nil="false">ValueHere</Amount>
-          </SearchBid>
           <Settings d4p1:nil="false">
             <Setting d4p1:type="-- derived type specified here with the appropriate prefix --">
               <Type d4p1:nil="false">ValueHere</Type>
@@ -158,13 +153,13 @@ The following template shows the order of the [body](#response-body) and [header
           </StartDate>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e1780="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e1780:Parameters d4p1:nil="false">
-              <e1780:CustomParameter>
-                <e1780:Key d4p1:nil="false">ValueHere</e1780:Key>
-                <e1780:Value d4p1:nil="false">ValueHere</e1780:Value>
-              </e1780:CustomParameter>
-            </e1780:Parameters>
+          <UrlCustomParameters xmlns:e1148="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e1148:Parameters d4p1:nil="false">
+              <e1148:CustomParameter>
+                <e1148:Key d4p1:nil="false">ValueHere</e1148:Key>
+                <e1148:Value d4p1:nil="false">ValueHere</e1148:Value>
+              </e1148:CustomParameter>
+            </e1148:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
