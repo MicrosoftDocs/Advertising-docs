@@ -24,7 +24,6 @@ Defines the possible match types for a keyword or negative keyword.
     <xs:enumeration value="Exact" />
     <xs:enumeration value="Phrase" />
     <xs:enumeration value="Broad" />
-    <xs:enumeration value="Content" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -34,7 +33,6 @@ Defines the possible match types for a keyword or negative keyword.
 |Value|Description|
 |-----------|---------------|
 |<a name="broad"></a>Broad|The match type is Broad.|
-|<a name="content"></a>Content|The match type is Content.|
 |<a name="exact"></a>Exact|The match type is Exact.|
 |<a name="phrase"></a>Phrase|The match type is Phrase.|
 

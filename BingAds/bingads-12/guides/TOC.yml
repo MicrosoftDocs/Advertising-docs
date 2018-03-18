@@ -987,6 +987,8 @@
           href: ../campaign-management-service/editorialapifaultdetail.md
         - name: EditorialError
           href: ../campaign-management-service/editorialerror.md
+        - name: EditorialErrorCollection
+          href: ../campaign-management-service/editorialerrorcollection.md
         - name: EditorialReason
           href: ../campaign-management-service/editorialreason.md
         - name: EditorialReasonCollection
@@ -1146,8 +1148,6 @@
         items: 
         - name: AccountPropertyName
           href: ../campaign-management-service/accountpropertyname.md
-        - name: AdDistribution
-          href: ../campaign-management-service/addistribution.md
         - name: AdEditorialStatus
           href: ../campaign-management-service/adeditorialstatus.md
         - name: AdExtensionEditorialStatus
@@ -1248,8 +1248,6 @@
           href: ../campaign-management-service/pricequalifier.md
         - name: PriceUnit
           href: ../campaign-management-service/priceunit.md
-        - name: PricingModel
-          href: ../campaign-management-service/pricingmodel.md
         - name: ProductPartitionType
           href: ../campaign-management-service/productpartitiontype.md
         - name: ProfileType

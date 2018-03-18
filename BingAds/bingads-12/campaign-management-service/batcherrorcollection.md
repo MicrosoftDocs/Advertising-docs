@@ -10,7 +10,9 @@ description: Defines an error object that contains batch error details for the t
 > This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # BatchErrorCollection Data Object - Campaign Management
-Defines an error object that contains batch error details for the top level list index and a list of batch errors corresponding to the  nested list index. For example in the *NestedPartialErrors* response element for [AddNegativeKeywordsToEntities](addnegativekeywordstoentities.md), the top level error details correspond to the campaign or ad group in the service request. The nested list of batch errors would include any errors specific to the negative keywords that you attempted to add to the campaign or ad group.
+Defines an error object that contains batch error details for the top level list index and a list of batch errors corresponding to the  nested list index.
+
+For example in the *NestedPartialErrors* response element for [AddNegativeKeywordsToEntities](addnegativekeywordstoentities.md), the top level error details correspond to the campaign or ad group in the service request. The nested list of batch errors would include any errors specific to the negative keywords that you attempted to add to the campaign or ad group.
 
 ## Syntax
 ```xml
@@ -37,7 +39,7 @@ Defines an error object that contains batch error details for the top level list
 |<a name="code"></a>Code|A numeric error code that identifies the error for the top level list index.|**int**|
 |<a name="details"></a>Details|A message that provides additional details about the batch error for the top level list index. This string can be empty.|**string**|
 |<a name="errorcode"></a>ErrorCode|A symbolic string constant that identifies the error for the top level list index.|**string**|
-|<a name="fieldpath"></a>FieldPath|Reserved for future use.|**string**|
+|<a name="fieldpath"></a>FieldPath|The name of the data object's element where the error occurred.<br /><br />This value is subject to change, so you should not take a dependency on the current string format.<br /><br />This element is not supported for all errors.|**string**|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this data object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="index"></a>Index|The zero-based top level list index in the request message that failed.|**int**|
 |<a name="message"></a>Message|A message that describes the error for the top level list index.|**string**|

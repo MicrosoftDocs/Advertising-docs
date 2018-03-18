@@ -44,23 +44,23 @@ Records available for upload and download using [Format Version](#formatversions
 Record Type  |Supported Campaign Types  
 ---------|---------
 [Account](account.md)|All         
-[Account App Ad Extension](account-app-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Account Callout Ad Extension](account-callout-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Account Image Ad Extension](account-image-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Account Location Ad Extension](account-location-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Account Price Ad Extension](account-price-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Account Sitelink Ad Extension](account-sitelink-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Account App Ad Extension](account-app-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Account Callout Ad Extension](account-callout-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Account Image Ad Extension](account-image-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Account Location Ad Extension](account-location-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Account Price Ad Extension](account-price-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Account Sitelink Ad Extension](account-sitelink-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md)|Search<br/>DynamicSearchAds         
 [Ad Group](ad-group.md)|All         
 [Ad Group Age Criterion](ad-group-age-criterion.md)|All         
-[Ad Group App Ad Extension](ad-group-app-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Ad Group Callout Ad Extension](ad-group-callout-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Ad Group App Ad Extension](ad-group-app-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Ad Group Callout Ad Extension](ad-group-callout-ad-extension.md)|Search<br/>DynamicSearchAds         
 [Ad Group Custom Audience Association](ad-group-custom-audience-association.md)|All         
 [Ad Group DayTime Criterion](ad-group-daytime-criterion.md)|All         
 [Ad Group DeviceOS Criterion](ad-group-deviceos-criterion.md)|All         
 [Ad Group Dynamic Search Ad Target](ad-group-dynamic-search-ad-target.md)|DynamicSearchAds         
 [Ad Group Gender Criterion](ad-group-gender-criterion.md)|All         
-[Ad Group Image Ad Extension](ad-group-image-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Ad Group Image Ad Extension](ad-group-image-ad-extension.md)|Search<br/>DynamicSearchAds         
 [Ad Group In Market Audience Association](ad-group-in-market-audience-association.md)|All         
 [Ad Group Label](ad-group-label.md)|All         
 [Ad Group Location Criterion](ad-group-location-criterion.md)|All         
@@ -72,29 +72,29 @@ Record Type  |Supported Campaign Types
 [Ad Group Negative Location Criterion](ad-group-negative-location-criterion.md)|All         
 [Ad Group Negative Remarketing List Association](ad-group-negative-remarketing-list-association.md)|All         
 [Ad Group Negative Site](ad-group-negative-site.md)|All         
-[Ad Group Price Ad Extension](ad-group-price-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Ad Group Price Ad Extension](ad-group-price-ad-extension.md)|Search<br/>DynamicSearchAds         
 [Ad Group Product Partition](ad-group-product-partition.md)|Shopping         
 [Ad Group Radius Criterion](ad-group-radius-criterion.md)|All         
 [Ad Group Remarketing List Association](ad-group-remarketing-list-association.md)|All         
-[Ad Group Review Ad Extension](ad-group-review-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Ad Group Sitelink Ad Extension](ad-group-sitelink-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Ad Group Structured Snippet Ad Extension](ad-group-structured-snippet-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[App Ad Extension](app-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[App Install Ad](app-install-ad.md)|SearchAndContent         
-[App Install Ad Label](app-install-ad-label.md)|SearchAndContent         
+[Ad Group Review Ad Extension](ad-group-review-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Ad Group Sitelink Ad Extension](ad-group-sitelink-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Ad Group Structured Snippet Ad Extension](ad-group-structured-snippet-ad-extension.md)|Search<br/>DynamicSearchAds         
+[App Ad Extension](app-ad-extension.md)|Search<br/>DynamicSearchAds         
+[App Install Ad](app-install-ad.md)|Search         
+[App Install Ad Label](app-install-ad-label.md)|Search         
 [Budget](budget.md)|All         
-[Call Ad Extension](call-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Callout Ad Extension](callout-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Call Ad Extension](call-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Callout Ad Extension](callout-ad-extension.md)|Search<br/>DynamicSearchAds         
 [Campaign](campaign.md)|All         
 [Campaign Age Criterion](campaign-age-criterion.md)|All         
-[Campaign App Ad Extension](campaign-app-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Campaign Call Ad Extension](campaign-call-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Campaign Callout Ad Extension](campaign-callout-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Campaign App Ad Extension](campaign-app-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Campaign Call Ad Extension](campaign-call-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Campaign Callout Ad Extension](campaign-callout-ad-extension.md)|Search<br/>DynamicSearchAds         
 [Campaign DayTime Criterion](campaign-daytime-criterion.md)|All         
 [Campaign DeviceOS Criterion](campaign-deviceos-criterion.md)|All         
 [Campaign Gender Criterion](campaign-gender-criterion.md)|All         
 [Campaign Label](campaign-label.md)|All         
-[Campaign Location Ad Extension](campaign-location-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Campaign Location Ad Extension](campaign-location-ad-extension.md)|Search<br/>DynamicSearchAds         
 [Campaign Location Criterion](campaign-location-criterion.md)|All         
 [Campaign Location Intent Criterion](campaign-location-intent-criterion.md)|All         
 [Campaign Negative Dynamic Search Ad Target](campaign-negative-dynamic-search-ad-target.md)|DynamicSearchAds         
@@ -102,39 +102,39 @@ Record Type  |Supported Campaign Types
 [Campaign Negative Keyword List Association](campaign-negative-keyword-list-association.md)|All         
 [Campaign Negative Location Criterion](campaign-negative-location-criterion.md)|All         
 [Campaign Negative Site](campaign-negative-site.md)|All         
-[Campaign Price Ad Extension](campaign-price-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Campaign Price Ad Extension](campaign-price-ad-extension.md)|Search<br/>DynamicSearchAds         
 [Campaign Product Scope](campaign-product-scope.md)|Shopping         
 [Campaign Radius Criterion](campaign-radius-criterion.md)|All         
-[Campaign Review Ad Extension](campaign-review-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Campaign Review Ad Extension](campaign-review-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md)|Search<br/>DynamicSearchAds         
 [Custom Audience](custom-audience.md)<br /><br />Only update is supported for upload. You cannot add or delete a custom audience using the Bing Ads API.|All         
 [Dynamic Search Ad](dynamic-search-ad.md)|DynamicSearchAds         
 [Dynamic Search Ad Label](dynamic-search-ad-label.md)|DynamicSearchAds         
-[Expanded Text Ad](expanded-text-ad.md)|SearchAndContent         
-[Expanded Text Ad Label](expanded-text-ad-label.md)|SearchAndContent         
+[Expanded Text Ad](expanded-text-ad.md)|Search         
+[Expanded Text Ad Label](expanded-text-ad-label.md)|Search         
 [Format Version](format-version.md)|All         
-[Image Ad Extension](image-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Image Ad Extension](image-ad-extension.md)|Search<br/>DynamicSearchAds         
 [In Market Audience](in-market-audience.md)<br /><br />Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API.|All         
-[Keyword](keyword.md)|SearchAndContent         
-[Keyword Label](keyword-label.md)|SearchAndContent         
-[Keyword Best Position Bid](keyword-best-position-bid.md)|SearchAndContent         
-[Keyword First Page Bid](keyword-first-page-bid.md)|SearchAndContent         
-[Keyword Main Line Bid](keyword-main-line-bid.md)|SearchAndContent         
+[Keyword](keyword.md)|Search         
+[Keyword Label](keyword-label.md)|Search         
+[Keyword Best Position Bid](keyword-best-position-bid.md)|Search         
+[Keyword First Page Bid](keyword-first-page-bid.md)|Search         
+[Keyword Main Line Bid](keyword-main-line-bid.md)|Search         
 [Label](label.md)|All         
-[Location Ad Extension](location-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Location Ad Extension](location-ad-extension.md)|Search<br/>DynamicSearchAds         
 [Negative Keyword List](negative-keyword-list.md)|All         
 [Offline Conversion](offline-conversion.md)<br /><br />Bulk upload only supports adding new offline conversion data. Bulk download, bulk upload update, and bulk upload delete  operations are not supported. |All         
-[Price Ad Extension](price-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Price Ad Extension](price-ad-extension.md)|Search<br/>DynamicSearchAds         
 [Product Ad](product-ad.md)|Shopping         
 [Product Ad Label](product-ad-label.md)|Shopping         
 [Remarketing List](remarketing-list.md)|All         
-[Review Ad Extension](review-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Review Ad Extension](review-ad-extension.md)|Search<br/>DynamicSearchAds         
 [Shared Negative Keyword](shared-negative-keyword.md)|All         
-[Sitelink Ad Extension](sitelink-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Structured Snippet Ad Extension](structured-snippet-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Text Ad](text-ad.md)|SearchAndContent         
-[Text Ad Label](text-ad-label.md)|SearchAndContent         
+[Sitelink Ad Extension](sitelink-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Structured Snippet Ad Extension](structured-snippet-ad-extension.md)|Search<br/>DynamicSearchAds         
+[Text Ad](text-ad.md)|Search         
+[Text Ad Label](text-ad-label.md)|Search         
 
 ## <a name="typehierarchy"></a>Type Hierarchy
 The download file will always include a record for the [Format Version](format-version.md) and [Account](account.md) record types. For upload, the [Format Version](format-version.md) is required and must precede all other record types in the bulk file.  

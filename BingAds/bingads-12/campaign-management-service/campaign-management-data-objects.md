@@ -72,7 +72,8 @@ The Campaign Management service defines the following data objects.
 |[DynamicSearchAd](dynamicsearchad.md)|Defines a dynamic search ad.|
 |[DynamicSearchAdsSetting](dynamicsearchadssetting.md)|Defines the campaign level settings for a Dynamic Search Ads campaign.|
 |[EditorialApiFaultDetail](editorialapifaultdetail.md)|Defines a fault object that operations such as [AddAdGroupCriterions](addadgroupcriterions.md), [UpdateAdGroupCriterions](updateadgroupcriterions.md), [SetAdExtensionsAssociations](setadextensionsassociations.md), and [UpdateAdExtensions](updateadextensions.md) return when one or more criterion or ad extensions in your request message fail editorial review.|
-|[EditorialError](editorialerror.md)|Defines an error object that identifies the entity with the batch of entities that failed editorial review.|
+|[EditorialError](editorialerror.md)|Defines an error object that identifies one of potentially many reasons why an entity failed editorial review.|
+|[EditorialErrorCollection](editorialerrorcollection.md)|Defines a nested list of error object that identifies one of potentially many reasons why an entity failed editorial review.|
 |[EditorialReason](editorialreason.md)|Defines an object that you can use to determine the component of an ad or keyword that failed editorial review, and the reason for the failure.|
 |[EditorialReasonCollection](editorialreasoncollection.md)|Defines a collection of ads or keywords that failed editorial review, and the reason for the failure.|
 |[EnhancedCpcBiddingScheme](enhancedcpcbiddingscheme.md)|Defines an object that represents the enhanced CPC bid strategy type.|
