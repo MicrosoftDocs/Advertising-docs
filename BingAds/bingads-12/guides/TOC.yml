@@ -177,9 +177,18 @@
 - name: API Reference
   href: ./reference.md
   items:
-  - name: Web Service Addresses
-    href: ./web-service-addresses.md
-    displayName: wsdl endpoint soap
+  - name: Ad Languages
+    href: ./ad-languages.md
+  - name: Currencies
+    href: ./currencies.md
+  - name: Editorial Reason Codes
+    href: ./editorial-failure-reason-codes.md
+  - name: Geographical Location Codes
+    href: ./geographical-location-codes.md
+  - name: Operation Error Codes
+    href: ./operation-error-codes.md
+  - name: Time Zones
+    href: ./time-zones.md
   - name: Version 12 Services
     href: ./services.md
     items:
@@ -987,6 +996,8 @@
           href: ../campaign-management-service/editorialapifaultdetail.md
         - name: EditorialError
           href: ../campaign-management-service/editorialerror.md
+        - name: EditorialErrorCollection
+          href: ../campaign-management-service/editorialerrorcollection.md
         - name: EditorialReason
           href: ../campaign-management-service/editorialreason.md
         - name: EditorialReasonCollection
@@ -1146,8 +1157,6 @@
         items: 
         - name: AccountPropertyName
           href: ../campaign-management-service/accountpropertyname.md
-        - name: AdDistribution
-          href: ../campaign-management-service/addistribution.md
         - name: AdEditorialStatus
           href: ../campaign-management-service/adeditorialstatus.md
         - name: AdExtensionEditorialStatus
@@ -1248,8 +1257,6 @@
           href: ../campaign-management-service/pricequalifier.md
         - name: PriceUnit
           href: ../campaign-management-service/priceunit.md
-        - name: PricingModel
-          href: ../campaign-management-service/pricingmodel.md
         - name: ProductPartitionType
           href: ../campaign-management-service/productpartitiontype.md
         - name: ProfileType
@@ -1750,18 +1757,9 @@
           href: ../reporting-service/sortorder.md
         - name: UserLocationPerformanceReportColumn
           href: ../reporting-service/userlocationperformancereportcolumn.md
-  - name: Operation Error Codes
-    href: ./operation-error-codes.md
-  - name: Editorial Failure Reason Codes
-    href: ./editorial-failure-reason-codes.md
-  - name: Ad Languages
-    href: ./ad-languages.md
-  - name: Currencies
-    href: ./currencies.md
-  - name: Geographical Location Codes
-    href: ./geographical-location-codes.md
-  - name: Time Zones
-    href: ./time-zones.md
+  - name: Web Service Addresses
+    href: ./web-service-addresses.md
+    displayName: wsdl endpoint soap
 - name: Release Notes
   href: ./release-notes.md
 - name: Migrate to Version 12

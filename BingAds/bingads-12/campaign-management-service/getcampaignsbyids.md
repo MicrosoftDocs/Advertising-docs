@@ -26,7 +26,7 @@ The *GetCampaignsByIdsRequest* object defines the [body](#request-body) and [hea
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the campaigns to get.|**long**|
 |<a name="campaignids"></a>CampaignIds|A maximum of 100 identifiers of the campaigns to get from the specified account.<br /><br />The identifiers must correspond to campaigns of the specified *CampaignType* or types, and otherwise the service will return error code *EntityIdFilterMismatch* (Code 516).|**long** array|
-|<a name="campaigntype"></a>CampaignType|The type of campaigns to get, for example *SearchAndContent*, *Shopping*, or *DynamicSearchAds*. You can specify one or more types.|[CampaignType](campaigntype.md)|
+|<a name="campaigntype"></a>CampaignType|The type of campaigns to get, for example *Search*, *Shopping*, or *DynamicSearchAds*. You can specify one or more types.|[CampaignType](campaigntype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -106,11 +106,11 @@ The following template shows the order of the [body](#response-body) and [header
           <BudgetType d4p1:nil="false">ValueHere</BudgetType>
           <DailyBudget d4p1:nil="false">ValueHere</DailyBudget>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e1804="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1804:KeyValuePairOfstringstring>
-              <e1804:key d4p1:nil="false">ValueHere</e1804:key>
-              <e1804:value d4p1:nil="false">ValueHere</e1804:value>
-            </e1804:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1172="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1172:KeyValuePairOfstringstring>
+              <e1172:key d4p1:nil="false">ValueHere</e1172:key>
+              <e1172:value d4p1:nil="false">ValueHere</e1172:value>
+            </e1172:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
@@ -119,13 +119,13 @@ The following template shows the order of the [body](#response-body) and [header
           <SubType d4p1:nil="false">ValueHere</SubType>
           <TimeZone d4p1:nil="false">ValueHere</TimeZone>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e1805="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e1805:Parameters d4p1:nil="false">
-              <e1805:CustomParameter>
-                <e1805:Key d4p1:nil="false">ValueHere</e1805:Key>
-                <e1805:Value d4p1:nil="false">ValueHere</e1805:Value>
-              </e1805:CustomParameter>
-            </e1805:Parameters>
+          <UrlCustomParameters xmlns:e1173="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e1173:Parameters d4p1:nil="false">
+              <e1173:CustomParameter>
+                <e1173:Key d4p1:nil="false">ValueHere</e1173:Key>
+                <e1173:Value d4p1:nil="false">ValueHere</e1173:Value>
+              </e1173:CustomParameter>
+            </e1173:Parameters>
           </UrlCustomParameters>
           <CampaignType d4p1:nil="false">ValueHere</CampaignType>
           <Settings d4p1:nil="false">
@@ -164,11 +164,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1806="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1806:KeyValuePairOfstringstring>
-              <e1806:key d4p1:nil="false">ValueHere</e1806:key>
-              <e1806:value d4p1:nil="false">ValueHere</e1806:value>
-            </e1806:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1174="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1174:KeyValuePairOfstringstring>
+              <e1174:key d4p1:nil="false">ValueHere</e1174:key>
+              <e1174:value d4p1:nil="false">ValueHere</e1174:value>
+            </e1174:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

@@ -176,7 +176,7 @@ When you migrate to version 12 remove the '2' suffix from *Sitelink2AdExtension*
 #### <a name="campaign-shoppingsubtype"></a>Shopping Campaign Sub Type
 We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Bing Shopping campaigns. More details about Cooperative campaigns are coming soon, and in the meantime please note the potential required changes in Bing Ads API Version 12 for your application to support existing Bing Shopping campaigns. Whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any shopping campaigns. 
 
-When you call [GetCampaignsByAccountId](../campaign-management-service/getcampaignsbyaccountid.md) or [GetCampaignsByAccountId](../campaign-management-service/getcampaignsbyaccountid.md) and the [CampaignType](../campaign-management-service/campaigntype.md) is set to *Shopping*, please check the *SubType* of each [Campaign](../campaign-management-service/campaign.md). If the *SubType* is not set then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign.
+When you call [GetCampaignsByAccountId](../campaign-management-service/getcampaignsbyaccountid.md) or [GetCampaignsByIds](../campaign-management-service/getcampaignsbyids.md) and the [CampaignType](../campaign-management-service/campaigntype.md) is set to *Shopping*, please check the *SubType* of each [Campaign](../campaign-management-service/campaign.md). If the *SubType* is not set then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign.
 
 #### <a name="campaign-audiencetargetingsetting"></a>Audience Targeting Setting
 The *RemarketingTargetingSetting* element of an [AdGroup](../campaign-management-service/adgroup.md) is removed.
@@ -208,7 +208,7 @@ The following time zone values are updated for the *TimeZone* element of the [Ca
 -  The value is updated from *MountainTime_US_Canada* to *MountainTimeUSCanada*.
 
 #### <a name="campaign-batcherrorcollectioneditorial"></a>Batch Error Collection Editorial Errors
-The Appealable, DisapprovedText, Location, PublisherCountry, and ReasonCode elements are added to the [BatchErrorCollection](../campaign-management-service/batcherrorcollection.md) object. 
+The Appealable, DisapprovedText, Location, PublisherCountry, and ReasonCode elements are removed from the the *ForwardCompatibilityMap* of the [BatchErrorCollection](../campaign-management-service/batcherrorcollection.md) object, and added to the new [EditorialErrorCollection](../campaign-management-service/editorialerrorcollection.md) object. 
 
 #### <a name="campaign-agerange"></a>Age Range Values
 The *ZeroToSeventeen* and *ThirteenToSeventeen* values are removed from the [AgeRange](../campaign-management-service/agerange.md) value set. These values were not ever supported. 

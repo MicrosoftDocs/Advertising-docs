@@ -65,7 +65,6 @@ The following template shows the order of the [body](#request-body) and [header]
       <CampaignId>ValueHere</CampaignId>
       <AdGroups i:nil="false">
         <AdGroup>
-          <AdDistribution i:nil="false">ValueHere</AdDistribution>
           <AdRotation i:nil="false">
             <EndDate i:nil="false">ValueHere</EndDate>
             <StartDate i:nil="false">ValueHere</StartDate>
@@ -91,31 +90,27 @@ The following template shows the order of the [body](#request-body) and [header]
             <!--This field is applicable if the derived type attribute is set to InheritFromParentBiddingScheme-->
             <InheritedBidStrategyType i:nil="false">ValueHere</InheritedBidStrategyType>
           </BiddingScheme>
-          <ContentMatchBid i:nil="false">
+          <CpcBid i:nil="false">
             <Amount i:nil="false">ValueHere</Amount>
-          </ContentMatchBid>
+          </CpcBid>
           <EndDate i:nil="false">
             <Day>ValueHere</Day>
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e1698="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e1698:KeyValuePairOfstringstring>
-              <e1698:key i:nil="false">ValueHere</e1698:key>
-              <e1698:value i:nil="false">ValueHere</e1698:value>
-            </e1698:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1066="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e1066:KeyValuePairOfstringstring>
+              <e1066:key i:nil="false">ValueHere</e1066:key>
+              <e1066:value i:nil="false">ValueHere</e1066:value>
+            </e1066:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Language i:nil="false">ValueHere</Language>
           <Name i:nil="false">ValueHere</Name>
           <NativeBidAdjustment i:nil="false">ValueHere</NativeBidAdjustment>
           <Network i:nil="false">ValueHere</Network>
-          <PricingModel i:nil="false">ValueHere</PricingModel>
           <PrivacyStatus i:nil="false">ValueHere</PrivacyStatus>
           <RemarketingTargetingSetting i:nil="false">ValueHere</RemarketingTargetingSetting>
-          <SearchBid i:nil="false">
-            <Amount i:nil="false">ValueHere</Amount>
-          </SearchBid>
           <Settings i:nil="false">
             <Setting i:type="-- derived type specified here with the appropriate prefix --">
               <Type i:nil="false">ValueHere</Type>
@@ -147,13 +142,13 @@ The following template shows the order of the [body](#request-body) and [header]
           </StartDate>
           <Status i:nil="false">ValueHere</Status>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e1699="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
-            <e1699:Parameters i:nil="false">
-              <e1699:CustomParameter>
-                <e1699:Key i:nil="false">ValueHere</e1699:Key>
-                <e1699:Value i:nil="false">ValueHere</e1699:Value>
-              </e1699:CustomParameter>
-            </e1699:Parameters>
+          <UrlCustomParameters xmlns:e1067="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
+            <e1067:Parameters i:nil="false">
+              <e1067:CustomParameter>
+                <e1067:Key i:nil="false">ValueHere</e1067:Key>
+                <e1067:Value i:nil="false">ValueHere</e1067:Value>
+              </e1067:CustomParameter>
+            </e1067:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
@@ -185,11 +180,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1700="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1700:KeyValuePairOfstringstring>
-              <e1700:key d4p1:nil="false">ValueHere</e1700:key>
-              <e1700:value d4p1:nil="false">ValueHere</e1700:value>
-            </e1700:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1068="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1068:KeyValuePairOfstringstring>
+              <e1068:key d4p1:nil="false">ValueHere</e1068:key>
+              <e1068:value d4p1:nil="false">ValueHere</e1068:value>
+            </e1068:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

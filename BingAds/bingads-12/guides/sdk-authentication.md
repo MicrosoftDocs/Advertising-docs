@@ -17,9 +17,6 @@ dev_langs:
 # Authentication With the SDKs
 This article covers authentication and basic service calls with the Bing Ads SDKs. 
 
-> [!TIP]
-> You can use the language selector at the top or right of this page to view examples in CSharp, Java, Php, or Python. 
-
 ## <a name="sandbox"></a>Configuring Sandbox
 The SDK uses the production environment by default. With the .NET and Java SDKs you can change it to sandbox with a global configuration. Whereas the global configuration is not available with PHP and Python SDKs you could create a global configuration or other custom solution.
 

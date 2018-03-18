@@ -23,8 +23,7 @@ For an *Ad Group* record, the following attribute fields are available in the [B
 - [Bid Strategy Type](#bidstrategytype)
 - [Campaign](#campaign)
 - [Client Id](#clientid)
-- [Content Bid](#contentbid)
-- [Content Network](#contentnetwork)
+- [Cpc Bid](#cpcbid)
 - [Custom Parameter](#customparameter)
 - [End Date](#enddate)
 - [Id](#id)
@@ -33,9 +32,7 @@ For an *Ad Group* record, the following attribute fields are available in the [B
 - [Modified Time](#modifiedtime)
 - [Network Distribution](#networkdistribution)
 - [Parent Id](#parentid)
-- [Pricing Model](#pricingmodel)
 - [Remarketing Targeting Setting](#remarketingtargetingsetting)
-- [Search Bid](#searchbid)
 - [Search Network](#searchnetwork)
 - [Start Date](#startdate)
 - [Status](#status)
@@ -72,19 +69,13 @@ var bulkAdGroup = new BulkAdGroup
     // AdGroup object of the Campaign Management service.
     AdGroup = new AdGroup
     {
-        // 'Search Network' or 'Content Network' column header in the Bulk file
-        AdDistribution = AdDistribution.Search,
         // 'Ad Rotation' column header in the Bulk file
         AdRotation = new AdRotation
         {
             Type = AdRotationType.RotateAdsEvenly
         },
-        // The AdGroup.BiddingModel property is not supported in the Bulk file.
-        BiddingModel = BiddingModel.Keyword,
         // 'Bid Strategy Type' column header in the Bulk file
         BiddingScheme = new ManualCpcBiddingScheme { },
-        // 'Content Bid' column header in the Bulk file
-        ContentMatchBid = null,
         // 'End Date' column header in the Bulk file
         EndDate = new Microsoft.BingAds.V11.CampaignManagement.Date
         {
@@ -102,8 +93,6 @@ var bulkAdGroup = new BulkAdGroup
         NativeBidAdjustment = 10,
         // 'Network Distribution' column header in the Bulk file
         Network = Network.OwnedAndOperatedAndSyndicatedSearch,
-        // 'Pricing Model' column header in the Bulk file
-        PricingModel = null,
         // 'Remarketing Targeting Setting' column header in the Bulk file
         RemarketingTargetingSetting = RemarketingTargetingSetting.TargetAndBid,
         // 'Search Bid' column header in the Bulk file
@@ -234,27 +223,16 @@ Used to associate records in the bulk upload file with records in the results fi
 **Update:** Optional    
 **Delete:** Read-only  
 
-### <a name="contentbid"></a>Content Bid
-The bid to use when the keywords that the service extracts from the content page and the ad group’s keywords.
-    
-> [!NOTE]
-> This feature is no longer supported, and will be removed in a future Bing Ads API version. If you set the content bid it will be saved but not used. If you do not set the content bid, it will be set to the minimum bid depending on the account's currency. For more information, see [Currencies](../guides/currencies.md).
+### <a name="cpcbid"></a>Cpc Bid
+The default bid to use when the user’s query and the ad group’s keywords match by using either a broad, exact, or phrase match comparison.
 
-**Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
-**Delete:** Read-only  
+The minimum and maximum bid range depends on the account's currency. For more information, see [Currencies](../guides/currencies.md).
 
-### <a name="contentnetwork"></a>Content Network
-Determines whether the ads within this ad group will be displayed on the content distribution channel.
+You can set a search bid if the *Search Network* ad distribution channel is set to *On*.
 
-> [!IMPORTANT]
-> Bing Ads no longer serves ads on the content network. Starting July 30th, 2017 you cannot set the Content ad distribution either. If you try to add or update an ad group with ad distribution set only to Content, the *CampaignServiceAdGroupMediumNotAllowedForDistributionChannel* error will be returned.  If you try to add or update an ad group with ad distribution set to both Search and Content, the operation will succeed, however the ad distribution will be stored as Search only. By end of calendar year 2017, Bing Ads will migrate the remaining Search and Content ad groups to Search only. Then when you retrieve the ad groups which were previously set to Search and Content, the ad distribution will be Search only. By end of calendar year 2017, Bing Ads will also delete Content-only ad groups.  
+Specifying a broad, exact, or phrase match bid at the keyword level overrides the ad group’s search bid value for the corresponding match type.
 
-Set the value *On* for ad distribution on the content network, and otherwise set the value *Off*.
-
-The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](../campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
-
-**Add:** Required  
+**Add:** Optional. If you do not set a bid, it will be set to the minimum depending on your account's currency.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
@@ -372,30 +350,6 @@ Set this field to *TargetAndBid* if you want to show ads only to people included
 Set this field to *BidOnly* if you want to show ads to people searching for your ad, with the option to change the bid amount for people included in the audience. Ads in this ad group can show to everyone but the bid adjustment will apply to people included in the audience.
 
 **Add:** Optional. The default value is *BidOnly*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
-**Delete:** Read-only  
-
-### <a name="searchbid"></a>Search Bid
-The default bid to use when the user’s query and the ad group’s keywords match by using either a broad, exact, or phrase match comparison.
-
-The minimum and maximum bid range depends on the account's currency. For more information, see [Currencies](../guides/currencies.md).
-
-You can set a search bid if the *Search Network* ad distribution channel is set to *On*.
-
-Specifying a broad, exact, or phrase match bid at the keyword level overrides the ad group’s search bid value for the corresponding match type.
-
-**Add:** Optional. If you do not set a bid, it will be set to the minimum depending on your account's currency.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
-**Delete:** Read-only  
-
-### <a name="searchnetwork"></a>Search Network
-Determines whether the ads within this ad group will be displayed on the search distribution channel.
-
-Set the value *On* for ad distribution on the search network, and otherwise set the value *Off*.
-
-The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](../campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
-
-**Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
