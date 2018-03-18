@@ -45,7 +45,7 @@ To navigate between versions, use the version selector near the table of content
 
 ![API Docs Version Selector](media/api-docs-version-selector.png "API Docs Version Selector")  
 
-The ```view``` query string parameter will be updated and appended to the URL e.g., ```?view=bingads-11```. By default when you navigate to a page without any ```view``` query string parameter, the content for the latest generally available version will be shown even when a higher API version is available for preview. 
+The ```view``` query string parameter will be updated and appended to the URL e.g., ```?view=bingads-12```. By default when you navigate to a page without any ```view``` query string parameter, the content for the latest generally available version will be shown even when a higher API version is available for preview. 
 
 ## Feature Availability
 
