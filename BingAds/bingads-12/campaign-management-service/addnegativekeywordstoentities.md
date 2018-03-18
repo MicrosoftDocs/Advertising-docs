@@ -98,18 +98,18 @@ The following template shows the order of the [body](#response-body) and [header
         </IdCollection>
       </NegativeKeywordIds>
       <NestedPartialErrors d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <BatchErrorCollection>
+        <BatchErrorCollection d4p1:type="-- derived type specified here with the appropriate prefix --">
           <BatchErrors d4p1:nil="false">
             <BatchError d4p1:type="-- derived type specified here with the appropriate prefix --">
               <Code>ValueHere</Code>
               <Details d4p1:nil="false">ValueHere</Details>
               <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
               <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-              <ForwardCompatibilityMap xmlns:e1724="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-                <e1724:KeyValuePairOfstringstring>
-                  <e1724:key d4p1:nil="false">ValueHere</e1724:key>
-                  <e1724:value d4p1:nil="false">ValueHere</e1724:value>
-                </e1724:KeyValuePairOfstringstring>
+              <ForwardCompatibilityMap xmlns:e1092="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+                <e1092:KeyValuePairOfstringstring>
+                  <e1092:key d4p1:nil="false">ValueHere</e1092:key>
+                  <e1092:value d4p1:nil="false">ValueHere</e1092:value>
+                </e1092:KeyValuePairOfstringstring>
               </ForwardCompatibilityMap>
               <Index>ValueHere</Index>
               <Message d4p1:nil="false">ValueHere</Message>
@@ -126,15 +126,21 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1725="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1725:KeyValuePairOfstringstring>
-              <e1725:key d4p1:nil="false">ValueHere</e1725:key>
-              <e1725:value d4p1:nil="false">ValueHere</e1725:value>
-            </e1725:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1093="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1093:KeyValuePairOfstringstring>
+              <e1093:key d4p1:nil="false">ValueHere</e1093:key>
+              <e1093:value d4p1:nil="false">ValueHere</e1093:value>
+            </e1093:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
           <Type d4p1:nil="false">ValueHere</Type>
+          <!--These fields are applicable if the derived type attribute is set to EditorialErrorCollection-->
+          <Appealable d4p1:nil="false">ValueHere</Appealable>
+          <DisapprovedText d4p1:nil="false">ValueHere</DisapprovedText>
+          <Location d4p1:nil="false">ValueHere</Location>
+          <PublisherCountry d4p1:nil="false">ValueHere</PublisherCountry>
+          <ReasonCode>ValueHere</ReasonCode>
         </BatchErrorCollection>
       </NestedPartialErrors>
     </AddNegativeKeywordsToEntitiesResponse>

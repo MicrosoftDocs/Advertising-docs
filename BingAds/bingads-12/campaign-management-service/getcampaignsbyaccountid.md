@@ -25,7 +25,7 @@ The *GetCampaignsByAccountIdRequest* object defines the [body](#request-body) an
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the campaigns to get.|**long**|
-|<a name="campaigntype"></a>CampaignType|The type of campaign to get, for example *SearchAndContent*, *Shopping*, or *DynamicSearchAds*. You can specify one or more types.|[CampaignType](campaigntype.md)|
+|<a name="campaigntype"></a>CampaignType|The type of campaign to get, for example *Search*, *Shopping*, or *DynamicSearchAds*. You can specify one or more types.|[CampaignType](campaigntype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -101,11 +101,11 @@ The following template shows the order of the [body](#response-body) and [header
           <BudgetType d4p1:nil="false">ValueHere</BudgetType>
           <DailyBudget d4p1:nil="false">ValueHere</DailyBudget>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e1802="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1802:KeyValuePairOfstringstring>
-              <e1802:key d4p1:nil="false">ValueHere</e1802:key>
-              <e1802:value d4p1:nil="false">ValueHere</e1802:value>
-            </e1802:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1170="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1170:KeyValuePairOfstringstring>
+              <e1170:key d4p1:nil="false">ValueHere</e1170:key>
+              <e1170:value d4p1:nil="false">ValueHere</e1170:value>
+            </e1170:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
@@ -114,13 +114,13 @@ The following template shows the order of the [body](#response-body) and [header
           <SubType d4p1:nil="false">ValueHere</SubType>
           <TimeZone d4p1:nil="false">ValueHere</TimeZone>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e1803="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e1803:Parameters d4p1:nil="false">
-              <e1803:CustomParameter>
-                <e1803:Key d4p1:nil="false">ValueHere</e1803:Key>
-                <e1803:Value d4p1:nil="false">ValueHere</e1803:Value>
-              </e1803:CustomParameter>
-            </e1803:Parameters>
+          <UrlCustomParameters xmlns:e1171="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
+            <e1171:Parameters d4p1:nil="false">
+              <e1171:CustomParameter>
+                <e1171:Key d4p1:nil="false">ValueHere</e1171:Key>
+                <e1171:Value d4p1:nil="false">ValueHere</e1171:Value>
+              </e1171:CustomParameter>
+            </e1171:Parameters>
           </UrlCustomParameters>
           <CampaignType d4p1:nil="false">ValueHere</CampaignType>
           <Settings d4p1:nil="false">

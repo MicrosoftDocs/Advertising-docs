@@ -15,7 +15,6 @@ The Campaign Management service defines the following value sets.
 |Value Set|Description|
 |---|---|
 |[AccountPropertyName](accountpropertyname.md)|Defines the name of account level properties.|
-|[AdDistribution](addistribution.md)|Defines the ad distribution for the ad group.|
 |[AdEditorialStatus](adeditorialstatus.md)|Defines the editorial review status values of an ad.|
 |[AdExtensionEditorialStatus](adextensioneditorialstatus.md)|Defines the editorial review status values of an ad extension.|
 |[AdExtensionStatus](adextensionstatus.md)|Defines the possible status values of an ad extension.|
@@ -66,7 +65,6 @@ The Campaign Management service defines the following value sets.
 |[PriceExtensionType](priceextensiontype.md)|Defines the possible types of price ad extensions.|
 |[PriceQualifier](pricequalifier.md)|Defines price qualifiers for price ad extensions.|
 |[PriceUnit](priceunit.md)|Defines price units for price ad extensions.|
-|[PricingModel](pricingmodel.md)|Defines the pricing model for an ad group.|
 |[ProductPartitionType](productpartitiontype.md)|Defines the possible types of product partitions.|
 |[ProfileType](profiletype.md)|Reserved.|
 |[RemarketingTargetingSetting](remarketingtargetingsetting.md)|The targeting setting that is applicable for all audiences e.g., custom audiences and remarketing lists that are associated with this ad group.|

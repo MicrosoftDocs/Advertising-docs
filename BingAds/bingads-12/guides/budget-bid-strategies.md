@@ -16,7 +16,7 @@ Before your ads can run, you need to set your campaign's budget. You'll also nee
 |-------------------------|--------------------------|
 |[Budget Types](#budgettypes)|All|
 |[Bid Strategy Types](#bidstrategytypes)|All|
-|[Keyword Match Types](#keywordmatchtypes)|SearchAndContent|
+|[Keyword Match Types](#keywordmatchtypes)|Search|
 
 ## <a name="budgettypes"></a>Budget Types
 Your budget tells Bing Ads how much you want to spend on your campaign. You can set a daily budget for each campaign and when you reach your budget, Bing Ads will stop displaying your ads until the next day or month. Keep your advertising costs under control by keeping track of your budget. 
@@ -64,10 +64,10 @@ The following bid strategy types are available per campaign type. For more infor
 |Bid Strategy Type|Campaign Types|
 |-------------------------|--------------------------|
 |[ManualCpc](#manualcpc)|All|
-|[MaxClicks](#maxclicks)|SearchAndContent<br/>DynamicSearchAds|
-|[MaxConversions](#maxconversions)|SearchAndContent<br/>DynamicSearchAds|
+|[MaxClicks](#maxclicks)|Search<br/>DynamicSearchAds|
+|[MaxConversions](#maxconversions)|Search<br/>DynamicSearchAds|
 |[EnhancedCpc](#enhancedcpc)|All<br/><br/>For campaigns of type *Shopping* only the *EnhancedCpc* bid strategy can be used, and you must be in the Bing Shopping Enhanced CPC pilot. The pilot ID is 340.|
-|[TargetCpa](#targetcpa)|SearchAndContent<br/>DynamicSearchAds|
+|[TargetCpa](#targetcpa)|Search<br/>DynamicSearchAds|
 
 > [!IMPORTANT] 
 > If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
