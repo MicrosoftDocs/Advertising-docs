@@ -26,7 +26,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-introduction.svg" alt="Introduction to Bing Ads API" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-introduction.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -45,7 +45,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-get-started.svg" alt="Get started" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-get-started.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -64,7 +64,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-authentication.svg" alt="Authentication with OAuth" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-authentication.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -83,7 +83,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-manage-customer-accounts.svg" alt="Manage customer accounts" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-manage-customer-accounts.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -102,7 +102,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-setup-campaigns.svg" alt="Setup Campaigns" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-setup-campaigns.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -121,7 +121,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-reports.svg" alt="Get reports" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-reports.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -140,7 +140,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-sandbox.svg" alt="Test your Code in Sandbox" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-ads-api-sandbox.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -159,7 +159,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-code-examples.svg" alt="SDKs and Code Examples" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-code-examples.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -178,7 +178,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-reference.svg" alt="Reference" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-reference.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -202,7 +202,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-introduction.svg" alt="Introduction to the Content API" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-introduction.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -221,7 +221,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-get-started.svg" alt="Get started" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-get-started.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -240,7 +240,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-manage-products.svg" alt="Manage your Products" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-manage-products.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -259,7 +259,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-manage-catalogs.svg" alt="Manage your Catalogs" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-manage-catalogs.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -278,7 +278,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-code-examples.svg" alt="Code Examples" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-code-examples.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -297,7 +297,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-reference.svg" alt="Reference" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-reference.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -321,7 +321,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-hotel-introduction.svg" alt="Introduction to the Hotel API" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-hotel-introduction.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -340,7 +340,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-get-started.svg" alt="Get started" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-get-started.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -359,7 +359,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-hotel-manage-campaigns.svg" alt="Manage hotel ad campaigns" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-hotel-manage-campaigns.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -378,7 +378,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-hotel-transaction-message.svg" alt="Transaction Message overview" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-hotel-transaction-message.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -397,7 +397,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-hotel-feed-overview.svg" alt="Hotel Feed overview" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-hotel-feed-overview.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -416,7 +416,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-hotel-pos-feed.svg" alt="Points of Sale Feed overview" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-hotel-pos-feed.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -435,7 +435,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-code-examples.svg" alt="Code Examples" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-code-examples.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
@@ -454,7 +454,7 @@ description: Bing Ads API documentation home.
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage">
-                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-reference.svg" alt="Reference" />
+                                                <img src="https://docs.microsoft.com/media/hubs/bingads/bing-ads-content-reference.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
