@@ -4,7 +4,7 @@ hide_bc: true
 author: "eric-urban"
 ms.author: "eur"
 ms.service: "bing-ads"
-ms.topic: "article"
+ms.topic: hub-page
 title: Bing Ads Documentation
 description: Bing Ads API documentation home.
 ---
