@@ -59,10 +59,6 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="ImpressionLostToBidPercent" />
     <xs:enumeration value="ImpressionLostToAdRelevancePercent" />
     <xs:enumeration value="ImpressionLostToExpectedCtrPercent" />
-    <xs:enumeration value="BusinessListingId" />
-    <xs:enumeration value="BusinessListingName" />
-    <xs:enumeration value="BusinessCategoryId" />
-    <xs:enumeration value="BusinessCategoryName" />
     <xs:enumeration value="PhoneImpressions" />
     <xs:enumeration value="PhoneCalls" />
     <xs:enumeration value="ManualCalls" />
@@ -107,10 +103,6 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="averagecpp"></a>AverageCpp|The average cost per phone call (CPP). This column is applicable solely for manual calls, and does not include clicks-to-call data.|
 |<a name="averageposition"></a>AveragePosition|The average position of the ad on a webpage.|
 |<a name="bidmatchtype"></a>BidMatchType|The keyword bid match type. This can be different from the *DeliveredMatchType* column, for example if you bid on a broad match and the search term was an exact match. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).The possible values are *Broad*, *Exact*, *Phrase*, and *Unknown*.|
-|<a name="businesscategoryid"></a>BusinessCategoryId|Reserved for internal use.|
-|<a name="businesscategoryname"></a>BusinessCategoryName|Reserved for internal use.|
-|<a name="businesslistingid"></a>BusinessListingId|Reserved for internal use.|
-|<a name="businesslistingname"></a>BusinessListingName|Reserved for internal use.|
 |<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
 |<a name="campaignstatus"></a>CampaignStatus|The campaign status.|

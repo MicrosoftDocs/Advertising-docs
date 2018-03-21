@@ -95,13 +95,13 @@
   items:
   - name: Authentication
     href: ./sdk-authentication.md
-    displayName: sdk .net c# csharp java python php
+    displayName: sdk .net c# csharp java python php authorizationdata serviceclient oauthwebauthcodegrant oauthdesktopmobileauthcodegrant oauthdesktopmobileimplicitgrant
   - name: Bulk Service Manager
     href: ./sdk-bulk-service-manager.md
-    displayName: sdk .net c# csharp java python
+    displayName: sdk .net c# csharp java python bulkservicemanager
   - name: Reporting Service Manager
     href: ./sdk-reporting-service-manager.md
-    displayName: sdk .net c# csharp java python
+    displayName: sdk .net c# csharp java python reportingservicemanager
 - name: Technical Guides
   href: ./technical-guides.md
   items:
@@ -487,192 +487,285 @@
         items: 
         - name: Account
           href: ../bulk-service/account.md
+          displayName: BulkAccount
         - name: Account App Ad Extension
           href: ../bulk-service/account-app-ad-extension.md
+          displayName: BulkAccountAppAdExtension
         - name: Account Callout Ad Extension
           href: ../bulk-service/account-callout-ad-extension.md
+          displayName: BulkAccountCalloutAdExtension
         - name: Account Image Ad Extension
           href: ../bulk-service/account-image-ad-extension.md
+          displayName: BulkAccountImageAdExtension
         - name: Account Location Ad Extension
           href: ../bulk-service/account-location-ad-extension.md
+          displayName: BulkAccountLocationAdExtension
         - name: Account Price Ad Extension
           href: ../bulk-service/account-price-ad-extension.md
+          displayName: BulkAccountPriceAdExtension
         - name: Account Review Ad Extension
           href: ../bulk-service/account-review-ad-extension.md
+          displayName: BulkAccountReviewAdExtension
         - name: Account Sitelink Ad Extension
           href: ../bulk-service/account-sitelink-ad-extension.md
+          displayName: BulkAccountSitelinkAdExtension
         - name: Account Structured Snippet Ad Extension
           href: ../bulk-service/account-structured-snippet-ad-extension.md
+          displayName: BulkAccountStructuredSnippetAdExtension
         - name: Ad Group
           href: ../bulk-service/ad-group.md
+          displayName: BulkAdGroup
         - name: Ad Group Age Criterion
           href: ../bulk-service/ad-group-age-criterion.md
+          displayName: BulkAdGroupAgeCriterion
         - name: Ad Group App Ad Extension
           href: ../bulk-service/ad-group-app-ad-extension.md
+          displayName: BulkAdGroupAppAdExtension
         - name: Ad Group Callout Ad Extension
           href: ../bulk-service/ad-group-callout-ad-extension.md
+          displayName: BulkAdGroupCalloutAdExtension
         - name: Ad Group Custom Audience Association
           href: ../bulk-service/ad-group-custom-audience-association.md
+          displayName: BulkAdGroupCustomAudienceAssociation
         - name: Ad Group DayTime Criterion
           href: ../bulk-service/ad-group-daytime-criterion.md
+          displayName: BulkAdGroupDayTimeCriterion
         - name: Ad Group DeviceOS Criterion
           href: ../bulk-service/ad-group-deviceos-criterion.md
+          displayName: BulkAdGroupDeviceCriterion
         - name: Ad Group Dynamic Search Ad Target
           href: ../bulk-service/ad-group-dynamic-search-ad-target.md
+          displayName: BulkAdGroupDynamicSearchAdTarget
         - name: Ad Group Gender Criterion
           href: ../bulk-service/ad-group-gender-criterion.md
+          displayName: BulkAdGroupGenderCriterion
         - name: Ad Group Image Ad Extension
           href: ../bulk-service/ad-group-image-ad-extension.md
+          displayName: BulkAdGroupImageAdExtension
         - name: Ad Group In Market Audience Association
           href: ../bulk-service/ad-group-in-market-audience-association.md
+          displayName: BulkAdGroupInMarketAudienceAssociation
         - name: Ad Group Label
           href: ../bulk-service/ad-group-label.md
+          displayName: BulkAdGroupLabel
         - name: Ad Group Location Criterion
           href: ../bulk-service/ad-group-location-criterion.md
+          displayName: BulkAdGroupLocationCriterion
         - name: Ad Group Location Intent Criterion
           href: ../bulk-service/ad-group-location-intent-criterion.md
+          displayName: BulkAdGroupLocationIntentCriterion
         - name: Ad Group Negative Custom Audience Association
           href: ../bulk-service/ad-group-negative-custom-audience-association.md
+          displayName: BulkAdGroupNegativeCustomAudienceAssociation
         - name: Ad Group Negative Dynamic Search Ad Target
           href: ../bulk-service/ad-group-negative-dynamic-search-ad-target.md
+          displayName: BulkAdGroupNegativeDynamicSearchAdTarget
         - name: Ad Group Negative In Market Audience Association
           href: ../bulk-service/ad-group-negative-in-market-audience-association.md
+          displayName: BulkAdGroupNegativeInMarketAudienceAssociation
         - name: Ad Group Negative Location Criterion
           href: ../bulk-service/ad-group-negative-location-criterion.md
+          displayName: BulkAdGroupNegativeLocationCriterion
         - name: Ad Group Negative Keyword
           href: ../bulk-service/ad-group-negative-keyword.md
+          displayName: BulkAdGroupNegativeKeyword
         - name: Ad Group Negative Site
           href: ../bulk-service/ad-group-negative-site.md
+          displayName: BulkAdGroupNegativeSite
         - name: Ad Group Negative Remarketing List Association
           href: ../bulk-service/ad-group-negative-remarketing-list-association.md
+          displayName: BulkAdGroupNegativeRemarketingListAssociation
         - name: Ad Group Price Ad Extension
           href: ../bulk-service/ad-group-price-ad-extension.md
+          displayName: BulkAdGroupPriceAdExtension
         - name: Ad Group Product Partition
           href: ../bulk-service/ad-group-product-partition.md
+          displayName: BulkAdGroupProductPartition
         - name: Ad Group Radius Criterion
           href: ../bulk-service/ad-group-radius-criterion.md
+          displayName: BulkAdGroupRadiusCriterion
         - name: Ad Group Remarketing List Association
           href: ../bulk-service/ad-group-remarketing-list-association.md
+          displayName: BulkAdGroupRemarketingListAssociation
         - name: Ad Group Review Ad Extension
           href: ../bulk-service/ad-group-review-ad-extension.md
+          displayName: BulkAdGroupReviewAdExtension
         - name: Ad Group Sitelink Ad Extension
           href: ../bulk-service/ad-group-sitelink-ad-extension.md
+          displayName: BulkAdGroupSitelinkAdExtension
         - name: Ad Group Structured Snippet Ad Extension
           href: ../bulk-service/ad-group-structured-snippet-ad-extension.md
+          displayName: BulkAdGroupStructuredSnippetAdExtension
         - name: App Ad Extension
           href: ../bulk-service/app-ad-extension.md
+          displayName: BulkAppAdExtension
         - name: App Install Ad
           href: ../bulk-service/app-install-ad.md
+          displayName: BulkAppInstallAd
         - name: App Install Ad Label
           href: ../bulk-service/app-install-ad-label.md
+          displayName: BulkAppInstallAdLabel
         - name: Budget
           href: ../bulk-service/budget.md
+          displayName: BulkBudget
         - name: Call Ad Extension
           href: ../bulk-service/call-ad-extension.md
+          displayName: BulkCallAdExtension
         - name: Callout Ad Extension
           href: ../bulk-service/callout-ad-extension.md
+          displayName: BulkCalloutAdExtension
         - name: Campaign
           href: ../bulk-service/campaign.md
+          displayName: BulkCampaign
         - name: Campaign Age Criterion
           href: ../bulk-service/campaign-age-criterion.md
+          displayName: BulkCampaignAgeCriterion
         - name: Campaign App Ad Extension
           href: ../bulk-service/campaign-app-ad-extension.md
+          displayName: BulkCampaignAppAdExtension
         - name: Campaign Call Ad Extension
           href: ../bulk-service/campaign-call-ad-extension.md
+          displayName: BulkCampaignCallAdExtension
         - name: Campaign Callout Ad Extension
           href: ../bulk-service/campaign-callout-ad-extension.md
+          displayName: BulkCampaignCalloutAdExtension
         - name: Campaign DayTime Criterion
           href: ../bulk-service/campaign-daytime-criterion.md
+          displayName: BulkCampaignDayTimeCriterion
         - name: Campaign DeviceOS Criterion
           href: ../bulk-service/campaign-deviceos-criterion.md
+          displayName: BulkCampaignDeviceCriterion
         - name: Campaign Image Ad Extension
           href: ../bulk-service/campaign-image-ad-extension.md
+          displayName: BulkCampaignImageAdExtension
         - name: Campaign Gender Criterion
           href: ../bulk-service/campaign-gender-criterion.md
+          displayName: BulkCampaignGenderCriterion
         - name: Campaign Label
           href: ../bulk-service/campaign-label.md
+          displayName: BulkCampaignLabel
         - name: Campaign Location Ad Extension
           href: ../bulk-service/campaign-location-ad-extension.md
+          displayName: BulkCampaignLocationAdExtension
         - name: Campaign Location Criterion
           href: ../bulk-service/campaign-location-criterion.md
+          displayName: BulkCampaignLocationCriterion
         - name: Campaign Location Intent Criterion
           href: ../bulk-service/campaign-location-intent-criterion.md
+          displayName: BulkCampaignLocationIntentCriterion
         - name: Campaign Negative Dynamic Search Ad Target
           href: ../bulk-service/campaign-negative-dynamic-search-ad-target.md
+          displayName: BulkCampaignNegativeDynamicSearchAdTarget
         - name: Campaign Negative Keyword
           href: ../bulk-service/campaign-negative-keyword.md
+          displayName: BulkCampaignNegativeKeyword
         - name: Campaign Negative Keyword List Association
           href: ../bulk-service/campaign-negative-keyword-list-association.md
+          displayName: BulkCampaignNegativeKeywordList
         - name: Campaign Negative Location Criterion
           href: ../bulk-service/campaign-negative-location-criterion.md
+          displayName: BulkCampaignNegativeLocationCriterion
         - name: Campaign Negative Site
           href: ../bulk-service/campaign-negative-site.md
+          displayName: BulkCampaignNegativeSite
         - name: Campaign Price Ad Extension
           href: ../bulk-service/campaign-price-ad-extension.md
+          displayName: BulkCampaignPriceAdExtension
         - name: Campaign Product Scope
           href: ../bulk-service/campaign-product-scope.md
+          displayName: BulkCampaignProductScope
         - name: Campaign Radius Criterion
           href: ../bulk-service/campaign-radius-criterion.md
+          displayName: BulkCampaignRadiusCriterion
         - name: Campaign Review Ad Extension
           href: ../bulk-service/campaign-review-ad-extension.md
+          displayName: BulkCampaignReviewAdExtension
         - name: Campaign Sitelink Ad Extension
           href: ../bulk-service/campaign-sitelink-ad-extension.md
+          displayName: BulkCampaignSitelinkAdExtension
         - name: Campaign Structured Snippet Ad Extension
           href: ../bulk-service/campaign-structured-snippet-ad-extension.md
+          displayName: BulkCampaignStructuredSnippetAdExtension
         - name: Custom Audience
           href: ../bulk-service/custom-audience.md
+          displayName: BulkCustomAudience
         - name: Dynamic Search Ad
           href: ../bulk-service/dynamic-search-ad.md
+          displayName: BulkDynamicSearchAd
         - name: Dynamic Search Ad Label
           href: ../bulk-service/dynamic-search-ad-label.md
+          displayName: BulkDynamicSearchAdLabel
         - name: Expanded Text Ad
           href: ../bulk-service/expanded-text-ad.md
+          displayName: BulkExpandedTextAd
         - name: Expanded Text Ad Label
           href: ../bulk-service/expanded-text-ad-label.md
+          displayName: BulkExpandedTextAdLabel
         - name: Format Version
           href: ../bulk-service/format-version.md
         - name: Image Ad Extension
           href: ../bulk-service/image-ad-extension.md
+          displayName: BulkImageAdExtension
         - name: In Market Audience
           href: ../bulk-service/in-market-audience.md
+          displayName: BulkInMarketAudience
         - name: Keyword
           href: ../bulk-service/keyword.md
+          displayName: BulkKeyword
         - name: Keyword Best Position Bid
           href: ../bulk-service/keyword-best-position-bid.md
+          displayName: BulkKeyword
         - name: Keyword First Page Bid
           href: ../bulk-service/keyword-first-page-bid.md
+          displayName: BulkKeyword
         - name: Keyword Label
           href: ../bulk-service/keyword-label.md
+          displayName: BulkKeyword
         - name: Keyword Main Line Bid
           href: ../bulk-service/keyword-main-line-bid.md
+          displayName: BulkKeyword
         - name: Label
           href: ../bulk-service/label.md
+          displayName: BulkLabel
         - name: Location Ad Extension
           href: ../bulk-service/location-ad-extension.md
+          displayName: BulkLocationAdExtension
         - name: Negative Keyword List
           href: ../bulk-service/negative-keyword-list.md
+          displayName: BulkNegativeKeywordList
         - name: Offline Conversion
           href: ../bulk-service/offline-conversion.md
+          displayName: BulkOfflineConversion
         - name: Price Ad Extension
           href: ../bulk-service/price-ad-extension.md
+          displayName: BulkPriceAdExtension
         - name: Product Ad
           href: ../bulk-service/product-ad.md
+          displayName: BulkProductAd
         - name: Product Ad Label
           href: ../bulk-service/product-ad-label.md
+          displayName: BulkProductAdLabel
         - name: Remarketing List
           href: ../bulk-service/remarketing-list.md
+          displayName: BulkRemarketingList
         - name: Review Ad Extension
           href: ../bulk-service/review-ad-extension.md
+          displayName: BulkReviewAdExtension
         - name: Sitelink Ad Extension
           href: ../bulk-service/sitelink-ad-extension.md
+          displayName: BulkSitelinkAdExtension
         - name: Shared Negative Keyword
           href: ../bulk-service/shared-negative-keyword.md
+          displayName: BulkSharedNegativeKeyword
         - name: Structured Snippet Ad Extension
           href: ../bulk-service/structured-snippet-ad-extension.md
+          displayName: BulkStructuredSnippetAdExtension
         - name: Text Ad
           href: ../bulk-service/text-ad.md
+          displayName: BulkTextAd
         - name: Text Ad Label
           href: ../bulk-service/text-ad-label.md
+          displayName: BulkTextAdLabel
     - name: Campaign Management Service Reference
       href: ../campaign-management-service/campaign-management-service-reference.md
       items: 
