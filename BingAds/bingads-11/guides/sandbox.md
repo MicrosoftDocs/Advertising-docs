@@ -17,9 +17,6 @@ The sandbox and production environments use separate credentials. Although in pr
 
 New customers are required to sign up for Bing Ads with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy Bing Ads credentials may continue to specify the *UserName* and *Password* header elements with Bing Ads API version 11. Starting with Bing Ads API version 12, only OAuth authentication is supported. Managed credentials i.e., the *UserName* and *Password* header elements are not supported in version 12.
 
-> [!NOTE]
-> SDK Support for OAuth in sandbox is coming soon. Please follow the [API blog](https://blogs.msdn.microsoft.com/bing_ads_api/) and [release notes](release-notes.md) for announcements.
-
 To authenticate with a Microsoft Account in sandbox you will follow the same work flow as described in [Authentication with OAuth](authentication-oauth.md) for production; however, you will use different endpoints.
 
 For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](authentication-oauth.md), substitute them with the sandbox endpoints. 

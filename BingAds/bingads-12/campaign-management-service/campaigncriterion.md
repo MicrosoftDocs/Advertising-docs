@@ -36,7 +36,7 @@ Do not try to instantiate a *CampaignCriterion*. You can create one or more foll
 |-----------|---------------|-------------|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign to apply the criterion to.|**long**|
 |<a name="criterion"></a>Criterion|The criterion to apply to the campaign. The criterion helps determine whether ads in the campaign are served.<br/><br/>For a list of available criterion types, see [CampaignCriterionType](campaigncriteriontype.md).|[Criterion](criterion.md)|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The unique Bing Ads identifier for the campaign criterion.|**long**|
 |<a name="status"></a>Status|A status value that determines whether to apply the criterion to the campaign.|[CampaignCriterionStatus](campaigncriterionstatus.md)|
 |<a name="type"></a>Type|The type of campaign criterion. For more information, see [Remarks](#remarks).|**string**|

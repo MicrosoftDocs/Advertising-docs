@@ -35,7 +35,7 @@ A [NegativeKeywordList](negativekeywordlist.md) is derived from the [SharedList]
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="associationcount"></a>AssociationCount|The number of active associations between this object and an entity such as a campaign.|**int**|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *SharedEntity* object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The unique Bing Ads identifier of the shared entity.|**long**|
 |<a name="name"></a>Name|The name of the shared entity.|**string**|
 |<a name="type"></a>Type|The type of the shared entity. For more information about shared entity types, see [SharedEntity Data Object Remarks](sharedentity.md#remarks).|**string**|
