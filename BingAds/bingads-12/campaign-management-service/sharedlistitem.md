@@ -29,7 +29,7 @@ Do not try to instantiate a *SharedListItem*. You can create the following objec
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *SharedListItem* object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="type"></a>Type|The type of the shared list item. For more information about shared list item types, see [Remarks](#remarks).<br /><br />**Add:** Read-only<br />**Update:** Read-only|**string**|
 
 ## <a name="remarks"></a>Remarks
