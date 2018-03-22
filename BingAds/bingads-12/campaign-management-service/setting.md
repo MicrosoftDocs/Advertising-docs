@@ -13,8 +13,12 @@ description: Defines the base class of a setting.
 Defines the base class of a setting.
 
 Do not try to instantiate a *Setting*. You can create one or more following objects that derive from it.
-- [DynamicSearchAdsSetting](dynamicsearchadssetting.md)  
-- [ShoppingSetting](shoppingsetting.md)  
+
+|Setting|Supported Entity|
+|-----|-----|
+|[DynamicSearchAdsSetting](dynamicsearchadssetting.md)|[Campaign](campaign.md)|
+|[ShoppingSetting](shoppingsetting.md)|[Campaign](campaign.md)|
+|[TargetSetting](targetsetting.md)|[AdGroup](adgroup.md)| 
 
 ## Syntax
 ```xml
@@ -32,7 +36,7 @@ Do not try to instantiate a *Setting*. You can create one or more following obje
 |<a name="type"></a>Type|The type of setting. For more information, see [Remarks](#remarks).|**string**|
 
 ## <a name="remarks"></a>Remarks
-For Java and the .NET languages, do not set the *Type* element because the value is determined by whether you instantiate a [DynamicSearchAdsSetting](dynamicsearchadssetting.md) or [ShoppingSetting](shoppingsetting.md).
+For Java and the .NET languages, do not set the *Type* element because the value is determined by the type of setting you instantiate.
 
 If you generate the SOAP manually, use the *type* attribute of the `<Setting>` node as shown in the following example, to specify that the setting is a shopping setting.
 

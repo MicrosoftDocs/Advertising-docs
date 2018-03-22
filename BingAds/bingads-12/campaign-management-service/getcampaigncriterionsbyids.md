@@ -100,6 +100,16 @@ The following template shows the order of the [body](#response-body) and [header
                 <Operand d4p1:nil="false">ValueHere</Operand>
               </ProductCondition>
             </Conditions>
+            <!--This field is applicable if the derived type attribute is set to Webpage-->
+            <Parameter d4p1:nil="false">
+              <Conditions d4p1:nil="false">
+                <WebpageCondition>
+                  <Argument d4p1:nil="false">ValueHere</Argument>
+                  <Operand>ValueHere</Operand>
+                </WebpageCondition>
+              </Conditions>
+              <CriterionName d4p1:nil="false">ValueHere</CriterionName>
+            </Parameter>
             <!--This field is applicable if the derived type attribute is set to AgeCriterion-->
             <AgeRange d4p1:nil="false">ValueHere</AgeRange>
             <!--These fields are applicable if the derived type attribute is set to DeviceCriterion-->
@@ -134,22 +144,12 @@ The following template shows the order of the [body](#response-body) and [header
             <!--These fields are applicable if the derived type attribute is set to ProfileCriterion-->
             <ProfileId>ValueHere</ProfileId>
             <ProfileType>ValueHere</ProfileType>
-            <!--This field is applicable if the derived type attribute is set to Webpage-->
-            <Parameter xmlns:e1166="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-              <e1166:Conditions d4p1:nil="false">
-                <e1166:WebpageCondition>
-                  <e1166:Argument d4p1:nil="false">ValueHere</e1166:Argument>
-                  <e1166:Operand>ValueHere</e1166:Operand>
-                </e1166:WebpageCondition>
-              </e1166:Conditions>
-              <e1166:CriterionName d4p1:nil="false">ValueHere</e1166:CriterionName>
-            </Parameter>
           </Criterion>
-          <ForwardCompatibilityMap xmlns:e1167="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1167:KeyValuePairOfstringstring>
-              <e1167:key d4p1:nil="false">ValueHere</e1167:key>
-              <e1167:value d4p1:nil="false">ValueHere</e1167:value>
-            </e1167:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1118="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1118:KeyValuePairOfstringstring>
+              <e1118:key d4p1:nil="false">ValueHere</e1118:key>
+              <e1118:value d4p1:nil="false">ValueHere</e1118:value>
+            </e1118:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Status d4p1:nil="false">ValueHere</Status>
@@ -171,11 +171,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1168="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1168:KeyValuePairOfstringstring>
-              <e1168:key d4p1:nil="false">ValueHere</e1168:key>
-              <e1168:value d4p1:nil="false">ValueHere</e1168:value>
-            </e1168:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1119="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1119:KeyValuePairOfstringstring>
+              <e1119:key d4p1:nil="false">ValueHere</e1119:key>
+              <e1119:value d4p1:nil="false">ValueHere</e1119:value>
+            </e1119:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

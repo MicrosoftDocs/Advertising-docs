@@ -109,11 +109,11 @@ The following template shows the order of the [body](#response-body) and [header
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e1147="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1147:KeyValuePairOfstringstring>
-              <e1147:key d4p1:nil="false">ValueHere</e1147:key>
-              <e1147:value d4p1:nil="false">ValueHere</e1147:value>
-            </e1147:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1108="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1108:KeyValuePairOfstringstring>
+              <e1108:key d4p1:nil="false">ValueHere</e1108:key>
+              <e1108:value d4p1:nil="false">ValueHere</e1108:value>
+            </e1108:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Language d4p1:nil="false">ValueHere</Language>
@@ -153,13 +153,13 @@ The following template shows the order of the [body](#response-body) and [header
           </StartDate>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e1148="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e1148:Parameters d4p1:nil="false">
-              <e1148:CustomParameter>
-                <e1148:Key d4p1:nil="false">ValueHere</e1148:Key>
-                <e1148:Value d4p1:nil="false">ValueHere</e1148:Value>
-              </e1148:CustomParameter>
-            </e1148:Parameters>
+          <UrlCustomParameters d4p1:nil="false">
+            <Parameters d4p1:nil="false">
+              <CustomParameter>
+                <Key d4p1:nil="false">ValueHere</Key>
+                <Value d4p1:nil="false">ValueHere</Value>
+              </CustomParameter>
+            </Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>

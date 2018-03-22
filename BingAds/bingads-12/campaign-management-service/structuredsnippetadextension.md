@@ -25,7 +25,7 @@ You can associate a structured snippet ad extension with the account or with cam
     <xs:extension base="tns:AdExtension">
       <xs:sequence>
         <xs:element name="Header" nillable="true" type="xs:string" />
-        <xs:element name="Values" nillable="true" type="q58:ArrayOfstring" xmlns:q58="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element name="Values" nillable="true" type="q44:ArrayOfstring" xmlns:q44="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

@@ -115,7 +115,7 @@ When you migrate to version 12 remove the '2' suffix from all *Sitelink2* record
 #### <a name="bulk-shoppingsubtype"></a>Shopping Campaign Sub Type
 We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Bing Shopping campaigns. More details about Cooperative campaigns are coming soon, and in the meantime please note the potential required changes in Bing Ads API Version 12 for your application to support existing Bing Shopping campaigns. Whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any shopping campaigns. 
 
-When you download campaigns by including *Campaigns* from the [DownloadEntity](../bulk-service/downloadentity.md) value set, please check the *Campaign Type* and *Sub Type* fields of each [Campaign](../bulk-service/campaign.md). If the *Campaign Type* field is set to *Shopping* then you must also check the value of the *Sub Type* field. If the *Sub Type* field is empty then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign. 
+When you download campaigns by including *Campaigns* from the [DownloadEntity](../bulk-service/downloadentity.md) value set, please check the *Campaign Type* and *Sub Type* fields of each [Campaign](../bulk-service/campaign.md). If the *Campaign Type* field is set to *Shopping* then you must also check the value of the *Sub Type* field. If the *Sub Type* field is empty then it is a standard Bing Shopping campaign. If the value is set to *ShoppingCoOperative*, the campaign is a Cooperative campaign. 
 
 #### <a name="bulk-entityperformancedata"></a>Entity Performance Data
 Bulk download of performance data is no longer supported. The EntityPerformanceData value of the [DataScope](../bulk-service/datascope.md) value set is no longer supported in Bing Ads API Version 12, and will be removed from the service contract in a future version. If you want data aggregated by day, week, or month, you can use the Bing Ads Reporting API. For more details see [Reports](reports.md).
@@ -123,7 +123,11 @@ Bulk download of performance data is no longer supported. The EntityPerformanceD
 #### <a name="bulk-audiencetargetingsetting"></a>Audience Targeting Setting
 The *Remarketing Targeting Setting* field of an [Ad Group](../bulk-service/ad-group.md) is removed.
 
-To determine whether the audience association is bid only or target and bid, use the *TargetSetting* field of an [Ad Group](../bulk-service/ad-group.md). The setting is applicable for all audiences associated with the ad group, including but not limited to remarketing lists. 
+To determine whether the audience association is bid only or target and bid, use the [Target Setting](../bulk-service/ad-group.md#targetsetting) field of an [Ad Group](../bulk-service/ad-group.md). The setting is applicable for all audiences associated with the ad group, including but not limited to remarketing lists. 
+
+In version 11 to set the "target and bid" option you would have set the *Remarketing Targeting Setting* field to *TargetAndBid*. To set the "target and bid" option in version 12, include the *Audience* value in the new [Target Setting](../bulk-service/ad-group.md#targetsetting) field. 
+
+In version 11 to set the "bid only" option you would have set the *Remarketing Targeting Setting* field to *BidOnly*. To set the "bid only" option in version 12, exclude the *Audience* value from the new [Target Setting](../bulk-service/ad-group.md#targetsetting) field. To update from "target and bid" to "bid only" you'll need to explicitly remove the "target and bid" option e.g., set the [Target Setting](../bulk-service/ad-group.md#targetsetting) field to "delete_value". For more details please see [Target Setting](../bulk-service/ad-group.md#targetsetting). 
 
 #### <a name="bulk-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *Content Bid*, *Content Network*, and *Search Network* fields of an [Ad Group](../bulk-service/ad-group.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. The *Search Bid* field of an [Ad Group](../bulk-service/ad-group.md) is renamed *Cpc Bid*.
@@ -162,6 +166,8 @@ The production endpoint is [https://campaign.api.bingads.microsoft.com/Api/Adver
 
 The sandbox endpoint is [https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc](https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc).
 
+#### <a name="campaign-datacontractnamespace"></a>Data Contract Namespace
+The data contract namespace in version 11 referenced the AdCenter namespace. For clients who encode the SOAP envelope e.g. PHP clients who encode a `SoapVar` for [Webpage](../campaign-management-service/webpage.md), you'll need to update from `http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11` to the Campaign Management Version 12 target namespace i.e., `https://bingads.microsoft.com/CampaignManagement/v12`. 
 
 #### <a name="campaign-returnadditionalfields"></a>Return Additional Fields
 The *ReturnAdditionalFields* element is removed from the [GetAdGroupsByCampaignId](../campaign-management-service/getadgroupsbycampaignid.md),[GetAdGroupsByIds](../campaign-management-service/getadgroupsbyids.md), [GetAudiencesByIds](../campaign-management-service/getaudiencesbyids.md), [GetKeywordsByAdGroupId](../campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](../campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](../campaign-management-service/getkeywordsbyids.md) request messages, and the corresponding elements of each [AdGroup](../campaign-management-service/adgroup.md), [Audience](../campaign-management-service/audience.md), and [Keyword](../campaign-management-service/keyword.md) are returned by default.

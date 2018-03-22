@@ -24,11 +24,11 @@ You can associate a sitelink ad extension with the account or with campaigns and
         <xs:element minOccurs="0" name="Description2" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="DisplayText" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="q54:ArrayOfAppUrl" xmlns:q54="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
-        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q55:ArrayOfstring" xmlns:q55="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q56:ArrayOfstring" xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="tns:ArrayOfAppUrl" />
+        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q42:ArrayOfstring" xmlns:q42="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q43:ArrayOfstring" xmlns:q43="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q57:CustomParameters" xmlns:q57="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
+        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="tns:CustomParameters" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

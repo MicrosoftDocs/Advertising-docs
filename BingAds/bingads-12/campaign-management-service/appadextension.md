@@ -24,11 +24,11 @@ You can associate an app ad extension with the account or with campaigns and ad 
         <xs:element name="AppStoreId" nillable="true" type="xs:string" />
         <xs:element name="DestinationUrl" nillable="true" type="xs:string" />
         <xs:element name="DisplayText" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="q50:ArrayOfAppUrl" xmlns:q50="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
-        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q51:ArrayOfstring" xmlns:q51="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q52:ArrayOfstring" xmlns:q52="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="tns:ArrayOfAppUrl" />
+        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q40:ArrayOfstring" xmlns:q40="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q41:ArrayOfstring" xmlns:q41="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q53:CustomParameters" xmlns:q53="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
+        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="tns:CustomParameters" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

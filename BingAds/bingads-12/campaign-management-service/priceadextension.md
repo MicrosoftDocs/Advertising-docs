@@ -27,7 +27,7 @@ You can associate a price ad extension with the account or with campaigns and ad
         <xs:element name="PriceExtensionType" type="tns:PriceExtensionType" />
         <xs:element name="TableRows" nillable="true" type="tns:ArrayOfPriceTableRow" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q59:CustomParameters" xmlns:q59="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
+        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="tns:CustomParameters" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

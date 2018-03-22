@@ -17,7 +17,7 @@ Defines a condition or criterion that helps determine whether you want to show d
 <xs:complexType name="WebpageCondition" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element minOccurs="0" name="Argument" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="Operand" type="q2:WebpageConditionOperand" xmlns:q2="https://bingads.microsoft.com/CampaignManagement/v12" />
+    <xs:element minOccurs="0" name="Operand" type="tns:WebpageConditionOperand" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -31,7 +31,7 @@ Defines a condition or criterion that helps determine whether you want to show d
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [WebpageParameter](webpageparameter.md)  

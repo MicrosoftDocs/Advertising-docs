@@ -192,7 +192,7 @@ Support for Offline Conversion Import is added. Use offline conversions to track
 
 To set up offine conversion tracking, create an offline conversion goal with the [Campaign Management](#campaign-v11-offline-conversions-july2017) service or via the Bing Ads web application, wait two hours, and then send Bing Ads the offline conversion data with either the [Campaign Management](#campaign-v11-offline-conversions-july2017) service or [Bulk](#bulk-v11-offline-conversions-july2017) service.
 
-You must also enable MSCLKID Auto Tagging. Every time you create a new [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) via either the Bing Ads web application or Campaign Management API, the MSCLKID Auto Tagging is enabled automatically. You can enable or disable auto tagging using either the [Campaign Management](#campaign-v11-offline-conversions-july2017) service or [Bulk](#bulk-v11-offline-conversions-july2017) service. 
+You must also enable MSCLKID Auto Tagging. Every time you add or update a new [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) via either the Bing Ads web application or Campaign Management API, the MSCLKID Auto Tagging is enabled automatically. You can enable or disable auto tagging using either the [Campaign Management](#campaign-v11-offline-conversions-july2017) service or [Bulk](#bulk-v11-offline-conversions-july2017) service. 
 
 For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking-Load).
 

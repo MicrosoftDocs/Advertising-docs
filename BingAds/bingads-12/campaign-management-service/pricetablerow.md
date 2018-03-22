@@ -18,8 +18,8 @@ Defines pricing information by currency and unit that you can use with price ad 
   <xs:sequence>
     <xs:element name="CurrencyCode" nillable="true" type="xs:string" />
     <xs:element name="Description" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q60:ArrayOfstring" xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element name="FinalUrls" nillable="true" type="q61:ArrayOfstring" xmlns:q61="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q45:ArrayOfstring" xmlns:q45="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element name="FinalUrls" nillable="true" type="q46:ArrayOfstring" xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element name="Header" nillable="true" type="xs:string" />
     <xs:element name="Price" type="xs:double" />
     <xs:element name="PriceQualifier" type="tns:PriceQualifier" />

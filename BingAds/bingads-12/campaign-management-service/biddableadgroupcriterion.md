@@ -21,11 +21,11 @@ Defines a biddable criterion that you want applied to the specified ad group.
         <xs:element minOccurs="0" name="CriterionBid" nillable="true" type="tns:CriterionBid" />
         <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:AdGroupCriterionEditorialStatus" />
-        <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="q75:ArrayOfAppUrl" xmlns:q75="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
-        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q76:ArrayOfstring" xmlns:q76="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q77:ArrayOfstring" xmlns:q77="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="tns:ArrayOfAppUrl" />
+        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q60:ArrayOfstring" xmlns:q60="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q61:ArrayOfstring" xmlns:q61="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q78:CustomParameters" xmlns:q78="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
+        <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="tns:CustomParameters" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

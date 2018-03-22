@@ -25,11 +25,11 @@ Defines a collection of key and value custom parameters for URL tracking. Used f
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="parameters"></a>Parameters|The collection of key and value custom parameters for URL tracking.<br /><br />You can have a maximum of 3 [CustomParameter](customparameter.md) key and value pairs.<br/><br/>**Add:** Required<br/>**Update:** Optional|[CustomParameter](customparameter.md) array|
+|<a name="parameters"></a>Parameters|The collection of key and value custom parameters for URL tracking.<br /><br />You can have a maximum of 3 [CustomParameter](customparameter.md) key and value pairs.<br/><br/>**Add:** Required<br/>**Update:** Optional. Once you create this CustomParameters object, the existing custom parameters will be removed or replaced. To remove all existing custom parameters create this CustomParameters object and set the Parameters element to nil. To replace or append to the list of custom parameters, create this CustomParameters object and assign to the Parameters element a new list of [CustomParameter](customparameter.md) objects, including any previous custom parameters that you want to retain. To retain all of the existing custom parameters, set the element that uses this CustomParameters object to nil. For example set the [UrlCustomParameters](expandedtextad.md#urlcustomparameters) element of an [ExpandedTextAd](expandedtextad.md) to nil if you do not want to update any of the custom parameters.[CustomParameter](customparameter.md) array|[CustomParameter](customparameter.md) array|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
 [Ad](ad.md)  

@@ -31,8 +31,8 @@ The *GetEstimatedPositionByKeywordsRequest* object defines the [body](#request-b
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad group specified in *AdGroupId*. If you do not specify an ad group, the campaign's performance data is used to help determine how well the keyword might perform in the context of the campaign.<br /><br /> Specifying a campaign and ad group helps improve the accuracy of the suggested position. If neither *AdGroupId* or *CampaignId* are specified, the operation uses the specified *CustomerAccountId* header element to help determine how well the keyword might perform in the context of the account.|**long**|
 |<a name="currencycode"></a>CurrencyCode|The ISO code for the monetary unit to use to calculate the cost estimates and suggested bid value.<br /><br />If not set, the service determines the currency from the account specified in the *CustomerAccountId* header element. If neither *Currency* or *CustomerAccountId* is set, the service uses USD.|[CurrencyCode](currencycode.md)|
 |<a name="keywords"></a>Keywords|An array of keywords for which you want to get the estimated position in the search results, based on the specified bid value. You may specify a maximum of 1,000 keywords and each keyword can contains a maximum of 100 characters.|**string** array|
-|<a name="language"></a>Language|The language used to help determine  the country to use as the source of data for estimating the bids, if the *PublisherCountries* element is not specified.<br /><br /> The language must be supported in each of the countries in the *PublisherCountries* element.<br /><br />For possible values and information about the relationship between languages and countries, see [Ad Languages](../guides/ad-languages.md).<br /><br />The default value is determined by the *PublisherCountries* element and the location targets associated with the specified *AdGroupId* and *CampaignId*. For more information, see the [Remarks](#remarks) section below.|**string**|
-|<a name="locationids"></a>LocationIds|Reserved.|**long** array|
+|<a name="language"></a>Language|The language used in parallel with location identifiers for estimating the position.<br /><br /> The language must be supported in each of the locations that you specify in [LocationIds](#locationids).<br /><br />For possible language values, see [Ad Languages](../guides/ad-languages.md).<br /><br />If you do not specify the language, the service operation uses the language of the specified [AdGroupId](#adgroupid) or [CampaignId](#campaignid). If none of these properties are set, then *EN* (English) is used by default.|**string**|
+|<a name="locationids"></a>LocationIds|The identifier or identifiers of the geographical locations to use for estimating the position.<br /><br />All of the locations must support the language specified in the [Language](#language) element. Although you can specify multiple location identifiers, as a best practice for the most accurate position estimates per location, you should specify only one location per service call.<br /><br />For possible location identifiers, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br /><br />If you do not specify any locations, the service operation uses the location criterions of the specified [AdGroupId](#adgroupid) or [CampaignId](#campaignid). If none of these properties are set, then *190* (United States) is used by default.|**long** array|
 |<a name="matchtypes"></a>MatchTypes|An array of unique match types for which you want to get estimates.<br /><br />You may not specify the Content match type.|[MatchType](matchtype.md) array|
 |<a name="maxbid"></a>MaxBid|The maximum bid value to use to determine the estimated position in the search results.|**double**|
 
@@ -214,25 +214,6 @@ response=adinsight_service.GetEstimatedPositionByKeywords(
 	CampaignId=CampaignId,
 	AdGroupId=AdGroupId)
 ```
-
-## <a name="remarks"></a>Remarks
-As a best practice for the most accurate bid estimates per country, you should specify only one country per service call. If no countries are specified or if multiple *PublisherCountries* are specified, then the service will use the first available set of the following properties to determine  the country to use as the source of data for estimating the bids.
-
--   Multiple countries corresponding to this operation's specified *PublisherCountries* element.
-
--   The service will use the set of all supported countries for the specified *Language*, and join with common supported countries in the location target associated with the specified *AdGroupId*.
-
-    > [!NOTE]
-    > If the target countries conflict with the specified *Language*, then the service will disregard the target countries and only use the set of all supported countries for the specified *Language*.
-
--   The service will use the set of all supported countries for the specified *Language*, and join with common supported countries in the location target associated with the specified *CampaignId*.
-
-    > [!NOTE]
-    > If the target countries conflict with the specified *Language*, then the service will disregard the target countries and only use the set of all supported countries for the specified *Language*.
-
--   *Language* element of the ad group corresponding to this operation's specified *AdGroupId* element. The service will use the set of all supported countries for this language.
-
-Given multiple countries from one of the property sets above, the service will then determine one country with the highest impression count to use as the source of data for estimating the bids. The response will not include details on the final filtered country.
 
 ## Requirements
 Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  

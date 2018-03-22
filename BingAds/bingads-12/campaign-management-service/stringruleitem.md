@@ -19,7 +19,7 @@ Defines a rule expression that depends on the string values of the Url or Referr
     <xs:extension base="tns:RuleItem">
       <xs:sequence>
         <xs:element minOccurs="0" name="Operand" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="Operator" type="q3:StringOperator" xmlns:q3="https://bingads.microsoft.com/CampaignManagement/v12" />
+        <xs:element minOccurs="0" name="Operator" type="tns:StringOperator" />
         <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:extension>
@@ -48,5 +48,5 @@ The [StringRuleItem](stringruleitem.md) object derives from the [RuleItem](rulei
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

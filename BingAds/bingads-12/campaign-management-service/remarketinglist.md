@@ -21,7 +21,7 @@ Defines a remarketing list.
   <xs:complexContent mixed="false">
     <xs:extension base="tns:Audience">
       <xs:sequence>
-        <xs:element minOccurs="0" name="Rule" nillable="true" type="q101:RemarketingRule" xmlns:q101="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
+        <xs:element minOccurs="0" name="Rule" nillable="true" type="tns:RemarketingRule" />
         <xs:element minOccurs="0" name="TagId" nillable="true" type="xs:long" />
       </xs:sequence>
     </xs:extension>

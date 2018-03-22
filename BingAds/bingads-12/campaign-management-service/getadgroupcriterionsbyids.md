@@ -101,6 +101,16 @@ The following template shows the order of the [body](#response-body) and [header
                 <Operand d4p1:nil="false">ValueHere</Operand>
               </ProductCondition>
             </Conditions>
+            <!--This field is applicable if the derived type attribute is set to Webpage-->
+            <Parameter d4p1:nil="false">
+              <Conditions d4p1:nil="false">
+                <WebpageCondition>
+                  <Argument d4p1:nil="false">ValueHere</Argument>
+                  <Operand>ValueHere</Operand>
+                </WebpageCondition>
+              </Conditions>
+              <CriterionName d4p1:nil="false">ValueHere</CriterionName>
+            </Parameter>
             <!--This field is applicable if the derived type attribute is set to AgeCriterion-->
             <AgeRange d4p1:nil="false">ValueHere</AgeRange>
             <!--These fields are applicable if the derived type attribute is set to DeviceCriterion-->
@@ -135,16 +145,6 @@ The following template shows the order of the [body](#response-body) and [header
             <!--These fields are applicable if the derived type attribute is set to ProfileCriterion-->
             <ProfileId>ValueHere</ProfileId>
             <ProfileType>ValueHere</ProfileType>
-            <!--This field is applicable if the derived type attribute is set to Webpage-->
-            <Parameter xmlns:e1144="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-              <e1144:Conditions d4p1:nil="false">
-                <e1144:WebpageCondition>
-                  <e1144:Argument d4p1:nil="false">ValueHere</e1144:Argument>
-                  <e1144:Operand>ValueHere</e1144:Operand>
-                </e1144:WebpageCondition>
-              </e1144:Conditions>
-              <e1144:CriterionName d4p1:nil="false">ValueHere</e1144:CriterionName>
-            </Parameter>
           </Criterion>
           <Id d4p1:nil="false">ValueHere</Id>
           <Status d4p1:nil="false">ValueHere</Status>
@@ -159,11 +159,11 @@ The following template shows the order of the [body](#response-body) and [header
           </CriterionBid>
           <DestinationUrl d4p1:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus d4p1:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e1145="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e1145:AppUrl>
-              <e1145:OsType d4p1:nil="false">ValueHere</e1145:OsType>
-              <e1145:Url d4p1:nil="false">ValueHere</e1145:Url>
-            </e1145:AppUrl>
+          <FinalAppUrls d4p1:nil="false">
+            <AppUrl>
+              <OsType d4p1:nil="false">ValueHere</OsType>
+              <Url d4p1:nil="false">ValueHere</Url>
+            </AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -172,13 +172,13 @@ The following template shows the order of the [body](#response-body) and [header
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e1146="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e1146:Parameters d4p1:nil="false">
-              <e1146:CustomParameter>
-                <e1146:Key d4p1:nil="false">ValueHere</e1146:Key>
-                <e1146:Value d4p1:nil="false">ValueHere</e1146:Value>
-              </e1146:CustomParameter>
-            </e1146:Parameters>
+          <UrlCustomParameters d4p1:nil="false">
+            <Parameters d4p1:nil="false">
+              <CustomParameter>
+                <Key d4p1:nil="false">ValueHere</Key>
+                <Value d4p1:nil="false">ValueHere</Value>
+              </CustomParameter>
+            </Parameters>
           </UrlCustomParameters>
           <!--No additional fields are applicable if the derived type attribute is set to NegativeAdGroupCriterion-->
         </AdGroupCriterion>

@@ -52,8 +52,9 @@ For Java and the .NET languages, do not set the *Type* element because the value
 If you generate the SOAP manually, use the *type* attribute of the `<BiddingScheme>` node as shown in the following example.
 
 ```xml
-<BiddingScheme xmlns:e12="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false" i:type="EnhancedCpcBiddingScheme">
-</BiddingScheme>
+<ns1:BiddingScheme xsi:type="ns1:ManualCpcBiddingScheme">
+    <ns1:Type xsi:nil="true"/>
+</ns1:BiddingScheme>
 ```
 
 ## Requirements
