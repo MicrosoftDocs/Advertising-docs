@@ -66,74 +66,74 @@ In other words the visitor will be added to your remarketing list if any of the 
 For example let's say that the following rule item groups are set.
 
 ```xml
-<Rule i:type="a:PageVisitorsWhoVisitedAnotherPageRule" xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11">
-  <a:Type>PageVisitorsWhoVisitedAnotherPage</a:Type>
-  <a:AnotherRuleItemGroups>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>Url</a:Operand>
-          <a:Operator>BeginsWith</a:Operator>
-          <a:Value>A</a:Value>
-        </a:RuleItem>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>ReferrerUrl</a:Operand>
-          <a:Operator>BeginsWith</a:Operator>
-          <a:Value>B</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>Url</a:Operand>
-          <a:Operator>Contains</a:Operator>
-          <a:Value>C</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-  </a:AnotherRuleItemGroups>
-  <a:RuleItemGroups>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>Url</a:Operand>
-          <a:Operator>Contains</a:Operator>
-          <a:Value>X</a:Value>
-        </a:RuleItem>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>ReferrerUrl</a:Operand>
-          <a:Operator>NotEquals</a:Operator>
-          <a:Value>Z</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>Url</a:Operand>
-          <a:Operator>DoesNotBeginWith</a:Operator>
-          <a:Value>Y</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-    <a:RuleItemGroup>
-      <a:Items>
-        <a:RuleItem i:type="a:StringRuleItem">
-          <a:Type>String</a:Type>
-          <a:Operand>ReferrerUrl</a:Operand>
-          <a:Operator>Equals</a:Operator>
-          <a:Value>Z</a:Value>
-        </a:RuleItem>
-      </a:Items>
-    </a:RuleItemGroup>
-  </a:RuleItemGroups>
+<Rule i:type="PageVisitorsWhoVisitedAnotherPageRule">
+  <Type i:nil="true" />
+  <AnotherRuleItemGroups>
+    <RuleItemGroup>
+      <Items>
+        <RuleItem i:type="StringRuleItem">
+          <Type i:nil="true" />
+          <Operand>Url</Operand>
+          <Operator>BeginsWith</Operator>
+          <Value>A</Value>
+        </RuleItem>
+        <RuleItem i:type="StringRuleItem">
+          <Type i:nil="true" />
+          <Operand>ReferrerUrl</Operand>
+          <Operator>BeginsWith</Operator>
+          <Value>B</Value>
+        </RuleItem>
+      </Items>
+    </RuleItemGroup>
+    <RuleItemGroup>
+      <Items>
+        <RuleItem i:type="StringRuleItem">
+          <Type i:nil="true" />
+          <Operand>Url</Operand>
+          <Operator>Contains</Operator>
+          <Value>C</Value>
+        </RuleItem>
+      </Items>
+    </RuleItemGroup>
+  </AnotherRuleItemGroups>
+  <RuleItemGroups>
+    <RuleItemGroup>
+      <Items>
+        <RuleItem i:type="StringRuleItem">
+          <Type i:nil="true" />
+          <Operand>Url</Operand>
+          <Operator>Contains</Operator>
+          <Value>X</Value>
+        </RuleItem>
+        <RuleItem i:type="StringRuleItem">
+          <Type i:nil="true" />
+          <Operand>ReferrerUrl</Operand>
+          <Operator>DoesNotContain</Operator>
+          <Value>Z</Value>
+        </RuleItem>
+      </Items>
+    </RuleItemGroup>
+    <RuleItemGroup>
+      <Items>
+        <RuleItem i:type="StringRuleItem">
+          <Type i:nil="true" />
+          <Operand>Url</Operand>
+          <Operator>DoesNotBeginWith</Operator>
+          <Value>Y</Value>
+        </RuleItem>
+      </Items>
+    </RuleItemGroup>
+    <RuleItemGroup>
+      <Items>
+        <RuleItem i:type="StringRuleItem">
+          <Type i:nil="true" />
+          <Operand>ReferrerUrl</Operand>
+          <Operator>Equals</Operator>
+          <Value>Z</Value>
+        </RuleItem>
+      </Items>
+    </RuleItemGroup>
+  </RuleItemGroups>
 </Rule>
 ```
 
@@ -151,5 +151,5 @@ Evaluation of the logical expression determines which of the following example u
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

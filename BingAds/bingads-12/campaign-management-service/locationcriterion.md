@@ -34,7 +34,7 @@ Also note that you must consider the location, negative location, and radius cri
     <xs:extension base="tns:Criterion">
       <xs:sequence>
         <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="EnclosedLocationIds" nillable="true" type="q74:ArrayOflong" xmlns:q74="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="EnclosedLocationIds" nillable="true" type="q59:ArrayOflong" xmlns:q59="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="LocationId" nillable="true" type="xs:long" />
         <xs:element minOccurs="0" name="LocationType" nillable="true" type="xs:string" />
       </xs:sequence>

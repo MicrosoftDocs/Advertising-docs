@@ -32,10 +32,10 @@ For an *Ad Group* record, the following attribute fields are available in the [B
 - [Modified Time](#modifiedtime)
 - [Network Distribution](#networkdistribution)
 - [Parent Id](#parentid)
-- [Remarketing Targeting Setting](#remarketingtargetingsetting)
 - [Search Network](#searchnetwork)
 - [Start Date](#startdate)
 - [Status](#status)
+- [Target Setting](#targetsetting)
 - [Tracking Template](#trackingtemplate)
 
 You can download all fields of the *Ad Group* record by including the [DownloadEntity](downloadentity.md) value of *AdGroups* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
@@ -43,14 +43,12 @@ You can download all fields of the *Ad Group* record by including the [DownloadE
 The following Bulk CSV example would add a new ad group if the correct campaign Id would be provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Network Distribution,Pricing Model,Ad Rotation,Search Network,Search Bid,Content Network,Content Bid,Language,Bid Adjustment,Name,Tracking Template,Custom Parameter,Bid Strategy Type,Remarketing Targeting Setting
-Format Version,,,,,,,,,,,,,,,,,,,6,,,,
-Ad Group,Active,,-111,ParentCampaignNameGoesHere,Women's Red Shoe Sale,ClientIdGoesHere,,11/5/2017,12/31/2018,OwnedAndOperatedAndSyndicatedSearch,,RotateAdsEvenly,On,0.1,Off,,English,10,,http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl},{_promoCode}=PROMO1; {_season}=summer,ManualCpc,TargetAndBid
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Network Distribution,Ad Rotation,Cpc Bid,Language,Bid Adjustment,Name,Tracking Template,Custom Parameter,Bid Strategy Type,Target Setting
+Format Version,,,,,,,,,,,,,,,6,,,,
+Ad Group,Active,,-111,ParentCampaignNameGoesHere,Women's Red Shoe Sale,ClientIdGoesHere,,11/5/2017,12/31/2018,OwnedAndOperatedAndSyndicatedSearch,RotateAdsEvenly,0.1,English,10,,http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl},{_promoCode}=PROMO1; {_season}=summer,ManualCpc,Audience
 ```
 
-
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroup* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
-
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -76,8 +74,13 @@ var bulkAdGroup = new BulkAdGroup
         },
         // 'Bid Strategy Type' column header in the Bulk file
         BiddingScheme = new ManualCpcBiddingScheme { },
+        // 'Cpc Bid' column header in the Bulk file
+        CpcBid = new Bid
+        {
+            Amount = 0.10
+        },
         // 'End Date' column header in the Bulk file
-        EndDate = new Microsoft.BingAds.V11.CampaignManagement.Date
+        EndDate = new Microsoft.BingAds.V12.CampaignManagement.Date
         {
             Month = 12,
             Day = 31,
@@ -93,15 +96,24 @@ var bulkAdGroup = new BulkAdGroup
         NativeBidAdjustment = 10,
         // 'Network Distribution' column header in the Bulk file
         Network = Network.OwnedAndOperatedAndSyndicatedSearch,
-        // 'Remarketing Targeting Setting' column header in the Bulk file
-        RemarketingTargetingSetting = RemarketingTargetingSetting.TargetAndBid,
-        // 'Search Bid' column header in the Bulk file
-        SearchBid = new Bid
+        // 'Target Setting' column header in the Bulk file
+        Settings = new []
         {
-            Amount = 0.10
+            new TargetSetting
+            {
+                // Each target setting detail is delimited by a semicolon (;) in the Bulk file
+                Details = new []
+                {
+                    new TargetSettingDetail
+                    {
+                        CriterionTypeGroup = CriterionTypeGroup.Audience,
+                        TargetAll = true
+                    }
+                }
+            }
         },
         // 'Start Date' column header in the Bulk file
-        StartDate = new Microsoft.BingAds.V11.CampaignManagement.Date
+        StartDate = new Microsoft.BingAds.V12.CampaignManagement.Date
         {
             Month = DateTime.UtcNow.Month,
             Day = DateTime.UtcNow.Day,
@@ -308,8 +320,6 @@ The search networks where you want your ads to display.
 
 Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly*, and *SyndicatedSearchOnly*. The default is *OwnedAndOperatedAndSyndicatedSearch*. For more information about networks and ad distribution, see the [About Ad Distribution](http://help.bingads.microsoft.com/#apex/3/en/50871/0) help article.
 
-You must not set *Network Distribution* if the *Content Network* ad distribution channel is set to *On*, otherwise an error will be returned.
-
 If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](../campaign-management-service/setnegativesitestoadgroups.md) or [SetNegativeSitesToCampaigns](../campaign-management-service/setnegativesitestocampaigns.md) operation to prevent the ads from displaying on specific syndicated search websites.
 
 **Add:** Optional. The default is *OwnedAndOperatedAndSyndicatedSearch*.  
@@ -328,29 +338,33 @@ This bulk field maps to the *Id* field of the [Camnpaign](campaign.md) record.
 > [!NOTE]
 > For add, update, and delete, you must specify either the *Parent Id* or *Campaign* field.
   
-### <a name="pricingmodel"></a>Pricing Model
-The only supported pricing model in Bing Ads is based on cost per click (CPC).
+### <a name="targetsetting"></a>Target Setting
+The target settings that are applicable for criterion types e.g., audiences that are associated with this ad group. 
 
-With *CPC*, each time the user clicks your ad, the service charges your account based on your bid. The actual charge is based on the auction results and may be less than your bid value.
+Include the criterion type group name in this field if you want the "target and bid" option. In this case we will only deliver ads to people who meet at least one of your criteria, while letting you make bid adjustments for specific criteria. 
+
+Exclude the criterion type group name from this field if you want the "bid only" option. In this case we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for specific criteria.
+
+If the [Campaign Type](campaign.md#campaigntype) is set to Audience, the supported values for this field are Age, Audience, CompanyName, Gender, Industry, and JobFunction. Otherwise the only value currently supported for other campaign types e.g., Search is Audience. New values may be supported in the future so you should not depend on a fixed set of values. Having said that, any possible values for this field should also be defined in the [CriterionTypeGroup](../campaign-management-service/criteriontypegroup.md) value set of the Campaign Management API. 
 
 > [!NOTE]
-> This field is deprecated and will be removed in a future version of the Bing Ads API.
+> Do not confuse the Audience campaign type with the Audience criterion type group name. 
 
-**Add:** Optional. The pricing model will be set to *CPC* by default.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.  
-**Delete:** Read-only  
+|Criterion Type Group|Supported Campaigns|Description|
+|-----------------|---------------|---------------|
+|Age|Audience|If you include the Age criterion type group name in this field, we will only deliver ads to people who meet at least one of your age criteria, while letting you make bid adjustments for specific age ranges. This setting ensures that the people seeing your ads meet your age criteria.<br/><br/>If you exclude the Age criterion type group name from this field, we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for specific age ranges. This setting lets you bid more (or less) aggressively for the people who meet specific age criteria, without restricting your ads to those people.|
+|Audience|All|Include the Audience criterion type group name in this field if you want to show ads only to people included in the audience, with the option to change the bid amount. Ads in this ad group will only show to people included in the audience.<br/><br/>Exclude the Audience criterion type group name from this field if you want to show ads to people searching for your ad, with the option to change the bid amount for people included in the audience. Ads in this ad group can show to everyone but the bid adjustment will apply to people included in the audience.|
+|CompanyName|Audience|If you include the CompanyName criterion type group name in this field, we will only deliver ads to people who meet at least one of your company criteria, while letting you make bid adjustments for specific companies. This setting ensures that the people seeing your ads meet your company criteria.<br/><br/>If you exclude the CompanyName criterion type group name from this field, we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for specific companies. This setting lets you bid more (or less) aggressively for the people who meet specific company criteria, without restricting your ads to those people.|
+|Gender|Audience|If you include the Gender criterion type group name in this field, we will only deliver ads to people who meet your gender criteria, while letting you make bid adjustments for a specific gender. This setting ensures that the people seeing your ads meet your gender criteria.<br/><br/>If you exclude the Gender criterion type group name from this field, we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for a specific gender. This setting lets you bid more (or less) aggressively for the people who meet specific gender criteria, without restricting your ads to those people.|
+|Industry|Audience|If you include the Industry criterion type group name in this field, we will only deliver ads to people who meet at least one of your industry criteria, while letting you make bid adjustments for specific industries. This setting ensures that the people seeing your ads meet your industry criteria.<br/><br/>If you exclude the Industry criterion type group name from this field, we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for specific industries. This setting lets you bid more (or less) aggressively for the people who meet specific industry criteria, without restricting your ads to those people.|
+|JobFunction|Audience|If you include the JobFunction criterion type group name in this field, we will only deliver ads to people who meet at least one of your job function criteria, while letting you make bid adjustments for specific job functions. This setting ensures that the people seeing your ads meet your job function criteria.<br/><br/>If you exclude the JobFunction criterion type group name from this field, we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for specific job functions. This setting lets you bid more (or less) aggressively for the people who meet specific job function criteria, without restricting your ads to those people.|
 
-### <a name="remarketingtargetingsetting"></a>Remarketing Targeting Setting
-The targeting setting that is applicable for all audiences e.g., custom audiences and remarketing lists that are associated with this ad group. Each audience can be associated with multiple ad groups, and each ad group's remarketing targeting setting is applied independently for delivery.
+Each criterion type group name is delimited in the Bulk file by a semicolon (";"), for example *Age;Audience;CompanyName;Gender;Industry;JobFunction*.
 
-Possible values are *TargetAndBid* and *BidOnly*. 
+An entity such as a remarketing list can be associated with multiple ad groups, and each ad group's target settings (e.g., the Audience criterion group name for remarketing lists) are applied independently for delivery. For example the same remarketing list can be associated with Ad Group A and Ad Group B. The Target Setting field for each ad group are set independently, and therefore the same remarketing list might be associated via the "target and bid" option for Ad Group A while associated via the "bid only" option for Ad Group B. 
 
-Set this field to *TargetAndBid* if you want to show ads only to people included in the audience, with the option to change the bid amount. Ads in this ad group will only show to people included in the audience.
-
-Set this field to *BidOnly* if you want to show ads to people searching for your ad, with the option to change the bid amount for people included in the audience. Ads in this ad group can show to everyone but the bid adjustment will apply to people included in the audience.
-
-**Add:** Optional. The default value is *BidOnly*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Add:** Optional. If the criterion type group name is excluded from this field, then the default setting is effectively "bid only".  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all criterion type group names, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of criterion type group names, specify the criterion type group names that you want to keep and omit any that you do not want to keep. The new set of criterion type group names will replace any previous criterion groups that were set for the ad group.    
 **Delete:** Read-only  
 
 ### <a name="startdate"></a>Start Date
@@ -395,7 +409,7 @@ If the [DataScope Value Set](datascope.md) element of the download request inclu
 
 |Column Header|Description|
 |-----------------|---------------|
-|*Quality Score*|The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Bing Ads using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.<br/><br/>Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for content and syndicated networks do not affect quality score. The value in the report will be blank if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.<br/><br/>If you run the report multiple times in a day, the quality score values could change from report to report based on when you run the report relative to when the scores are calculated.<br/><br/>If you specify a time period that spans multiple days, the quality score is the current and most recently calculated score and will be reported as the same for each day in the time period. Use the historic quality score to find out how quality score may have changed over time. Historical quality score is a daily snapshot of the rolling quality score. For more information on historic quality score, see the *HistoricQualityScore* column in [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).|
+|*Quality Score*|The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Bing Ads using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.<br/><br/>Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for syndicated networks do not affect quality score. The value in the report will be blank if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.<br/><br/>If you run the report multiple times in a day, the quality score values could change from report to report based on when you run the report relative to when the scores are calculated.<br/><br/>If you specify a time period that spans multiple days, the quality score is the current and most recently calculated score and will be reported as the same for each day in the time period. Use the historic quality score to find out how quality score may have changed over time. Historical quality score is a daily snapshot of the rolling quality score. For more information on historic quality score, see the *HistoricQualityScore* column in [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).|
 |*Keyword Relevance*|A numeric score that indicates how likely your ads will be clicked and how well your keyword competes against other keywords targeting the same traffic. This score predicts whether your keyword is likely to lead to a click on your ads, taking into account how well your keyword has performed in the past relative to your ad's position.<br/><br/>*Keyword Relevance* is equivalent to the **Expected Click-Through Rate** label used in the Bing Ads web application.<br/><br/>A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.<br/><br/>If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.<br/><br/>Data for this column is typically updated 14-18 hours after the UTC day ends.|
 |*Landing Page Relevance*|A numeric score that indicates how relevant your ad and landing page are to the customer's search query or other input.<br/><br/>*Landing Page Relevance* is equivalent to the **Ad Relevance** label used in the Bing Ads web application.<br/><br/>A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.<br/><br/>If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.<br/><br/>Data for this column is typically updated 14-18 hours after the UTC day ends.|
 |*Landing Page User Experience*|A numeric score that indicates whether your landing page is likely to provide a good experience to customers who click your ad and land on your website.<br/><br/>*Landing Page User Experience* is equivalent to the **Landing Page Experience** label used in the Bing Ads web application.<br/><br/>A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.<br/><br/>If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.<br/><br/>Data for this column is typically updated 14-18 hours after the UTC day ends.|

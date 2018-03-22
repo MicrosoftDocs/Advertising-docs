@@ -101,11 +101,11 @@ The following template shows the order of the [body](#response-body) and [header
           <BudgetType d4p1:nil="false">ValueHere</BudgetType>
           <DailyBudget d4p1:nil="false">ValueHere</DailyBudget>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e1170="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1170:KeyValuePairOfstringstring>
-              <e1170:key d4p1:nil="false">ValueHere</e1170:key>
-              <e1170:value d4p1:nil="false">ValueHere</e1170:value>
-            </e1170:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1121="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1121:KeyValuePairOfstringstring>
+              <e1121:key d4p1:nil="false">ValueHere</e1121:key>
+              <e1121:value d4p1:nil="false">ValueHere</e1121:value>
+            </e1121:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
@@ -114,13 +114,13 @@ The following template shows the order of the [body](#response-body) and [header
           <SubType d4p1:nil="false">ValueHere</SubType>
           <TimeZone d4p1:nil="false">ValueHere</TimeZone>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e1171="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" d4p1:nil="false">
-            <e1171:Parameters d4p1:nil="false">
-              <e1171:CustomParameter>
-                <e1171:Key d4p1:nil="false">ValueHere</e1171:Key>
-                <e1171:Value d4p1:nil="false">ValueHere</e1171:Value>
-              </e1171:CustomParameter>
-            </e1171:Parameters>
+          <UrlCustomParameters d4p1:nil="false">
+            <Parameters d4p1:nil="false">
+              <CustomParameter>
+                <Key d4p1:nil="false">ValueHere</Key>
+                <Value d4p1:nil="false">ValueHere</Value>
+              </CustomParameter>
+            </Parameters>
           </UrlCustomParameters>
           <CampaignType d4p1:nil="false">ValueHere</CampaignType>
           <Settings d4p1:nil="false">

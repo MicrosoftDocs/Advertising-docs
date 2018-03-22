@@ -26,15 +26,15 @@ Do not try to instantiate an *Ad*. You can create one or more following objects 
     <xs:element minOccurs="0" name="AdFormatPreference" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="DevicePreference" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:AdEditorialStatus" />
-    <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="q1:ArrayOfAppUrl" xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
-    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q2:ArrayOfstring" xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q3:ArrayOfstring" xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q4:ArrayOfKeyValuePairOfstringstring" xmlns:q4="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="tns:ArrayOfAppUrl" />
+    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q1:ArrayOfstring" xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q2:ArrayOfstring" xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q3:ArrayOfKeyValuePairOfstringstring" xmlns:q3="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Status" nillable="true" type="tns:AdStatus" />
     <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Type" nillable="true" type="tns:AdType" />
-    <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="q5:CustomParameters" xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" />
+    <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="tns:CustomParameters" />
   </xs:sequence>
 </xs:complexType>
 ```

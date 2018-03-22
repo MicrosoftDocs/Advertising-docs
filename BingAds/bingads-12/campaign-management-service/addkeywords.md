@@ -90,11 +90,11 @@ The following template shows the order of the [body](#request-body) and [header]
           </BiddingScheme>
           <DestinationUrl i:nil="false">ValueHere</DestinationUrl>
           <EditorialStatus i:nil="false">ValueHere</EditorialStatus>
-          <FinalAppUrls xmlns:e1085="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
-            <e1085:AppUrl>
-              <e1085:OsType i:nil="false">ValueHere</e1085:OsType>
-              <e1085:Url i:nil="false">ValueHere</e1085:Url>
-            </e1085:AppUrl>
+          <FinalAppUrls i:nil="false">
+            <AppUrl>
+              <OsType i:nil="false">ValueHere</OsType>
+              <Url i:nil="false">ValueHere</Url>
+            </AppUrl>
           </FinalAppUrls>
           <FinalMobileUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
@@ -102,11 +102,11 @@ The following template shows the order of the [body](#request-body) and [header]
           <FinalUrls i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e1086="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e1086:KeyValuePairOfstringstring>
-              <e1086:key i:nil="false">ValueHere</e1086:key>
-              <e1086:value i:nil="false">ValueHere</e1086:value>
-            </e1086:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1069="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e1069:KeyValuePairOfstringstring>
+              <e1069:key i:nil="false">ValueHere</e1069:key>
+              <e1069:value i:nil="false">ValueHere</e1069:value>
+            </e1069:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <MatchType i:nil="false">ValueHere</MatchType>
@@ -116,13 +116,13 @@ The following template shows the order of the [body](#request-body) and [header]
           <Status i:nil="false">ValueHere</Status>
           <Text i:nil="false">ValueHere</Text>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e1087="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
-            <e1087:Parameters i:nil="false">
-              <e1087:CustomParameter>
-                <e1087:Key i:nil="false">ValueHere</e1087:Key>
-                <e1087:Value i:nil="false">ValueHere</e1087:Value>
-              </e1087:CustomParameter>
-            </e1087:Parameters>
+          <UrlCustomParameters i:nil="false">
+            <Parameters i:nil="false">
+              <CustomParameter>
+                <Key i:nil="false">ValueHere</Key>
+                <Value i:nil="false">ValueHere</Value>
+              </CustomParameter>
+            </Parameters>
           </UrlCustomParameters>
         </Keyword>
       </Keywords>
@@ -154,11 +154,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1088="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1088:KeyValuePairOfstringstring>
-              <e1088:key d4p1:nil="false">ValueHere</e1088:key>
-              <e1088:value d4p1:nil="false">ValueHere</e1088:value>
-            </e1088:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1070="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1070:KeyValuePairOfstringstring>
+              <e1070:key d4p1:nil="false">ValueHere</e1070:key>
+              <e1070:value d4p1:nil="false">ValueHere</e1070:value>
+            </e1070:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

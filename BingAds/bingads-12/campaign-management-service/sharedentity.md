@@ -22,7 +22,7 @@ A [NegativeKeywordList](negativekeywordlist.md) is derived from the [SharedList]
 <xs:complexType name="SharedEntity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element name="AssociationCount" nillable="true" type="xs:int" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q85:ArrayOfKeyValuePairOfstringstring" xmlns:q85="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q68:ArrayOfKeyValuePairOfstringstring" xmlns:q68="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element name="Name" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
