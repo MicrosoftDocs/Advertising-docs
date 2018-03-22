@@ -12,9 +12,20 @@ ms.author: "scottwhi"
 
 For information about changes that were included with each release, see the following sections.
 
+
+
+## March 21, 2018
+
+### Nonbreaking change
+
+- Added [SiteMultiplier](../hotel-service/reference.md#sitemultiplier), which you use to adjust the base bid if the user is searching for hotels on one of the specified Bing sites.
+
+
 ## March 16, 2018
 
 - Added the \<ExpirationTimestamp\> element to the [Transaction](../transaction-message/reference.md#resulttype) message. You use this element to specify an expiry date for the itinerary. When the expiry date passes, Bing stops serving the itinerary. 
+
+
 
 ## March 5, 2018
 
