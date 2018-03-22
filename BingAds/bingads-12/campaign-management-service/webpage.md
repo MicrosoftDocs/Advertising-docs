@@ -21,7 +21,7 @@ The *Webpage* criterion can be included within [BiddableAdGroupCriterion](biddab
 ```xml
 <xs:complexType name="Webpage" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:complexContent mixed="false">
-    <xs:extension base="q1:Criterion" xmlns:q1="https://bingads.microsoft.com/CampaignManagement/v12">
+    <xs:extension base="tns:Criterion">
       <xs:sequence>
         <xs:element minOccurs="0" name="Parameter" nillable="true" type="tns:WebpageParameter" />
       </xs:sequence>
@@ -49,5 +49,5 @@ The [Webpage](webpage.md) object derives from the [Criterion](criterion.md) obje
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
-Namespace: http\://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12  
+Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 

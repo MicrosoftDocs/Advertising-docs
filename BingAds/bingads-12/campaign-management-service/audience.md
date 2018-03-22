@@ -22,7 +22,7 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
 <xs:complexType name="Audience" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q100:ArrayOfKeyValuePairOfstringstring" xmlns:q100="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q83:ArrayOfKeyValuePairOfstringstring" xmlns:q83="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="MembershipDuration" nillable="true" type="xs:int" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />

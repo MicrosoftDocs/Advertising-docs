@@ -60,11 +60,11 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <AppealEditorialRejectionsRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
-      <EntityIdToParentIdAssociations xmlns:e1098="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V12" i:nil="false">
-        <e1098:EntityIdToParentIdAssociation>
-          <e1098:EntityId>ValueHere</e1098:EntityId>
-          <e1098:ParentId>ValueHere</e1098:ParentId>
-        </e1098:EntityIdToParentIdAssociation>
+      <EntityIdToParentIdAssociations i:nil="false">
+        <EntityIdToParentIdAssociation>
+          <EntityId>ValueHere</EntityId>
+          <ParentId>ValueHere</ParentId>
+        </EntityIdToParentIdAssociation>
       </EntityIdToParentIdAssociations>
       <EntityType>ValueHere</EntityType>
       <JustificationText i:nil="false">ValueHere</JustificationText>
@@ -89,11 +89,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1099="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1099:KeyValuePairOfstringstring>
-              <e1099:key d4p1:nil="false">ValueHere</e1099:key>
-              <e1099:value d4p1:nil="false">ValueHere</e1099:value>
-            </e1099:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1080="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1080:KeyValuePairOfstringstring>
+              <e1080:key d4p1:nil="false">ValueHere</e1080:key>
+              <e1080:value d4p1:nil="false">ValueHere</e1080:value>
+            </e1080:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
