@@ -752,10 +752,10 @@ Host: <host>
 
 ## Batch processing
 
-To send multiple requests in a single HTTP request, use the /$batch template. You may send a maximum of 500 requests in a single HTTP POST.
+To send multiple requests in a single HTTP request, use the /$batch template. You may send a maximum of 500 requests in a single batch request.
 
 > [!NOTE]
-> Batch processing is supported only for hotel updates such as pricing changes.
+> Batch processing is supported only for hotel updates such as price changes.
 
 ### The request
 
@@ -769,9 +769,9 @@ Host: <host>
 Content-Length: 1371
 ```
 
-The Content-Type header must be set to multipart/mixed and include the boundary ID. The boundary ID delimits each individual request in the batch request. The ID is of the form, batch_\<unique string\>. This example uses a GUID as the unique string.
+The Content-Type header must be set to multipart/mixed and include the boundary ID. The boundary ID delimits each request in the batch request. The ID is of the form, batch_\<unique string\>. This example uses a GUID as the unique string.
 
-The body of the batch request contains one or more individual requests delimited by the boundary ID. The following shows an example of the body of a batch request. Terminate each line in the body of the batch request with CRLF (carriage return and line feed).
+The body of the batch request contains multiple individual requests delimited by the boundary ID. The following shows an example of the body of a batch request. Be sure to terminate each line in the body of the batch request with CRLF (carriage return and line feed).
 
 
 ```
@@ -808,10 +808,10 @@ Host: partner.api.sandbox.bingads.microsoft.com
 --batch_086fe0de-9b26-4d4a-a206-6df2013a2816--
 ```
 
-Note that each boundary ID is prepended with a double dash (for example, *--*batch_086fe0de-9b26-4d4a-a206-6df2013a2816).
-And the terminating boundary ID that goes after the last request in the batch is enclosed with double dashes (for example, *--*batch_086fe0de-9b26-4d4a-a206-6df2013a2816*--*).
+Note that each boundary ID is prepended with a double dash (for example, **--**batch_086fe0de-9b26-4d4a-a206-6df2013a2816).
+And the terminating boundary ID that goes after the last request in the batch is enclosed with double dashes (for example, **--**batch_086fe0de-9b26-4d4a-a206-6df2013a2816**--**).
 
-The boundary ID delimiter must be followed by the Content-Type and Content-Transfer-Encoding headers as shown. Because you may only update hotels, use the HTTP PATCH verb and use the hotel template to identify the hotel to update. The request must include the Content-Type header and it must be set to application/json; odata.metadata=minimal. The body of the request is a [Hotel](reference.md#hotel) object. The object must include the hotel's ID and should include only the fields you're updating.
+The boundary ID delimiter must be followed by the Content-Type and Content-Transfer-Encoding headers as shown. Because you may only update hotels, the request must use the HTTP PATCH verb and use the hotel template to identify the hotel to update. The request must include the Content-Type header and it must be set to application/json; odata.metadata=minimal. The body of the request is a [Hotel](reference.md#hotel) object. The object must include the hotel's ID and should include only the fields you're updating.
 
 
 ### The response
@@ -853,7 +853,9 @@ HTTP/1.1 204 No Content
 --batchresponse_d33d1715-3dd3-45aa-80a9-854493c8764e--
 ```
 
-Each response item contains an HTTP status. For updates, if the update succeeds, the status is 204. If the update failed (for example, the hotel was not found, a value is not valid, or the hotel object is malformed), the status is 400 and the body contains a list of errors. (A request may fail with other status codes.) The following shows a response item that contains an error. If an error occurs, the body contains an [CollectionResponse](reference.md#collectionresponse) object and each item in the `value` array is an [AdsApiError](reference.md#adsapierror) object.
+Each response item contains an HTTP status. For updates, if the update succeeds, the status is 204. If the update fails (for example, the hotel was not found, a value is not valid, or the hotel object is malformed), the status is 400 and the body contains a list of errors. (A request may fail with other status codes.) 
+
+The following shows a response item that contains an error. If an error occurs, the body contains a [CollectionResponse](reference.md#collectionresponse) object and each item in the `value` array is an [AdsApiError](reference.md#adsapierror) object.
 
 ```
 --batchresponse_d0048f4c-8a3f-40aa-9392-718943ecc5f3
