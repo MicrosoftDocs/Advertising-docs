@@ -28,7 +28,7 @@ Defines an error object that contains the details that explain why the service o
 |<a name="code"></a>Code|A numeric error code that identifies the error.|**int**|
 |<a name="detail"></a>Detail|A message that contains additional details about the error. This string can be empty.|**string**|
 |<a name="errorcode"></a>ErrorCode|A symbolic string constant that identifies the error. For example, *UserIsNotAuthorized*.|**string**|
-|<a name="message"></a>Message|A message that describes the error.|**string**|
+|<a name="message"></a>Message|A message that describes the error.<br/><br/>For more information about troubleshooting and error handling, see [Handling Service Errors and Exceptions](../guides/handle-service-errors-exceptions.md) and [Operation Error Codes](../guides/operation-error-codes.md).|**string**|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

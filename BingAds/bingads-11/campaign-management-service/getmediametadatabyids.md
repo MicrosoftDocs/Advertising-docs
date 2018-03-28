@@ -14,9 +14,6 @@ dev_langs:
 # GetMediaMetaDataByIds Service Operation - Campaign Management
 Gets the specified media meta data from an account's media library.
 
-> [!NOTE]
-> This operation does not return media meta data for location ad extensions. For getting location ad extension media, you should use [GetMediaByIds](getmediabyids.md).
-
 ## <a name="request"></a>Request Elements
 The *GetMediaMetaDataByIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
@@ -100,11 +97,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e250="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e250:KeyValuePairOfstringstring>
-              <e250:key d4p1:nil="false">ValueHere</e250:key>
-              <e250:value d4p1:nil="false">ValueHere</e250:value>
-            </e250:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1351="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1351:KeyValuePairOfstringstring>
+              <e1351:key d4p1:nil="false">ValueHere</e1351:key>
+              <e1351:value d4p1:nil="false">ValueHere</e1351:value>
+            </e1351:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

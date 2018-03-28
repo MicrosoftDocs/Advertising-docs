@@ -39,6 +39,7 @@ Namespace: https\://bingads.microsoft.com/Reporting/v11
 ## Used By
 [AdDynamicTextPerformanceReportRequest](addynamictextperformancereportrequest.md)  
 [AdPerformanceReportRequest](adperformancereportrequest.md)  
+[AgeGenderAudienceReportRequest](agegenderaudiencereportrequest.md)  
 [AgeGenderDemographicReportRequest](agegenderdemographicreportrequest.md)  
 [ConversionPerformanceReportRequest](conversionperformancereportrequest.md)  
 [DestinationUrlPerformanceReportRequest](destinationurlperformancereportrequest.md)  
@@ -46,6 +47,7 @@ Namespace: https\://bingads.microsoft.com/Reporting/v11
 [DSACategoryPerformanceReportRequest](dsacategoryperformancereportrequest.md)  
 [GeographicPerformanceReportRequest](geographicperformancereportrequest.md)  
 [GoalsAndFunnelsReportRequest](goalsandfunnelsreportrequest.md)  
+[ProfessionalDemographicsAudienceReportRequest](professionaldemographicsaudiencereportrequest.md)  
 [PublisherUsagePerformanceReportRequest](publisherusageperformancereportrequest.md)  
 [ShareOfVoiceReportRequest](shareofvoicereportrequest.md)  
 [UserLocationPerformanceReportRequest](userlocationperformancereportrequest.md)  

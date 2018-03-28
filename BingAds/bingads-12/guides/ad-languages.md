@@ -43,7 +43,7 @@ Your [customer](../customer-management-service/customer.md) language determines 
 The following country codes are supported per customer language e.g. [resellers](management-model-resellers.md) can use these languages and countries in the [Customer](../customer-management-service/customer.md) object when calling the [SignupCustomer](../customer-management-service/signupcustomer.md) operation.
 
 > [!NOTE]
-> In New Zealand, Bing Ads is available only on the Bing network. For other countries listed below, Bing Ads is available on the Yahoo Bing Network.
+> In New Zealand, Bing Ads is available only on the Bing network. 
 
 |Language|Country Code|
 |------------|------------------|

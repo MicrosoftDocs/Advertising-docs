@@ -14,9 +14,6 @@ dev_langs:
 # GetMediaMetaDataByAccountId Service Operation - Campaign Management
 Gets the media meta data of the specified entity type from an account's media library.
 
-> [!NOTE]
-> This operation does not return media meta data for location ad extensions. For getting location ad extension media, you should use [GetMediaByIds](getmediabyids.md).
-
 ## <a name="request"></a>Request Elements
 The *GetMediaMetaDataByAccountIdRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
@@ -24,7 +21,7 @@ The *GetMediaMetaDataByAccountIdRequest* object defines the [body](#request-body
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediaenabledentities"></a>MediaEnabledEntities|Determines the type of media enabled entity to get meta data. Currently only ImageAdExtension is supported.|[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|
+|<a name="mediaenabledentities"></a>MediaEnabledEntities|Determines the type of media enabled entity to get meta data.|[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

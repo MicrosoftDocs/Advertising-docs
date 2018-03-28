@@ -77,11 +77,11 @@ The following template shows the order of the [body](#response-body) and [header
       <SharedEntities d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <SharedEntity d4p1:type="-- derived type specified here with the appropriate prefix --">
           <AssociationCount d4p1:nil="false">ValueHere</AssociationCount>
-          <ForwardCompatibilityMap xmlns:e1140="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1140:KeyValuePairOfstringstring>
-              <e1140:key d4p1:nil="false">ValueHere</e1140:key>
-              <e1140:value d4p1:nil="false">ValueHere</e1140:value>
-            </e1140:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2378="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e2378:KeyValuePairOfstringstring>
+              <e2378:key d4p1:nil="false">ValueHere</e2378:key>
+              <e2378:value d4p1:nil="false">ValueHere</e2378:value>
+            </e2378:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>

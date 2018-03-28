@@ -31,6 +31,8 @@ The Campaign Management service defines the following value sets.
 |[AssociationType](associationtype.md)|Defines the entity types that can be associated with an ad extension.|
 |[AudienceAdditionalField](audienceadditionalfield.md)|Defines a list of optional [Audience](audience.md) properties that you can request when calling [GetAudiencesByIds](getaudiencesbyids.md).|
 |[AudienceType](audiencetype.md)|Defines the possible audience types.|
+|[BidOption](bidoption.md)|Reserved.|
+|[BMCStoreSubType](bmcstoresubtype.md)|Reserved.|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible budget types that you can specify for a campaign.|
 |[BusinessGeoCodeStatus](businessgeocodestatus.md)|Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.|
 |[CallToAction](calltoaction.md)|Reserved.|
@@ -65,6 +67,7 @@ The Campaign Management service defines the following value sets.
 |[PriceQualifier](pricequalifier.md)|Defines price qualifiers for price ad extensions.|
 |[PriceUnit](priceunit.md)|Defines price units for price ad extensions.|
 |[PricingModel](pricingmodel.md)|Defines the pricing model for an ad group.|
+|[ProductAudienceType](productaudiencetype.md)|Reserved.|
 |[ProductPartitionType](productpartitiontype.md)|Defines the possible types of product partitions.|
 |[ProfileType](profiletype.md)|Reserved.|
 |[RemarketingTargetingSetting](remarketingtargetingsetting.md)|The targeting setting that is applicable for all audiences e.g., custom audiences and remarketing lists that are associated with this ad group.|

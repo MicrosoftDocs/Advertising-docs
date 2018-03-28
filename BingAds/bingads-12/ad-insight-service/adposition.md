@@ -4,13 +4,13 @@ ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the possible positions of an ad in the search results or on a content-based webpage.
+description: Defines the possible positions of an ad in the search results.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # AdPosition Value Set - Ad Insight
-Defines the possible positions of an ad in the search results or on a content-based webpage.
+Defines the possible positions of an ad in the search results.
 
 ## Syntax
 ```xml
@@ -21,16 +21,16 @@ Defines the possible positions of an ad in the search results or on a content-ba
     <xs:enumeration value="MainLine2" />
     <xs:enumeration value="MainLine3" />
     <xs:enumeration value="MainLine4" />
-    <xs:enumeration value="SideBar1" />
-    <xs:enumeration value="SideBar2" />
-    <xs:enumeration value="SideBar3" />
-    <xs:enumeration value="SideBar4" />
-    <xs:enumeration value="SideBar5" />
-    <xs:enumeration value="SideBar6" />
-    <xs:enumeration value="SideBar7" />
-    <xs:enumeration value="SideBar8" />
-    <xs:enumeration value="SideBar9" />
-    <xs:enumeration value="SideBar10" />
+    <xs:enumeration value="FirstPage1" />
+    <xs:enumeration value="FirstPage2" />
+    <xs:enumeration value="FirstPage3" />
+    <xs:enumeration value="FirstPage4" />
+    <xs:enumeration value="FirstPage5" />
+    <xs:enumeration value="FirstPage6" />
+    <xs:enumeration value="FirstPage7" />
+    <xs:enumeration value="FirstPage8" />
+    <xs:enumeration value="FirstPage9" />
+    <xs:enumeration value="FirstPage10" />
     <xs:enumeration value="Aggregate" />
   </xs:restriction>
 </xs:simpleType>
@@ -46,16 +46,16 @@ Defines the possible positions of an ad in the search results or on a content-ba
 |<a name="mainline2"></a>MainLine2|The second ad to appear at the top of the search results page.|
 |<a name="mainline3"></a>MainLine3|The third ad to appear at the top of the search results page.|
 |<a name="mainline4"></a>MainLine4|The fourth ad to appear at the top of the search results page.|
-|<a name="sidebar1"></a>SideBar1|The first ad to appear on the right side of the first search results page.|
-|<a name="sidebar10"></a>SideBar10|The tenth ad to appear on the right side of the first search results page.|
-|<a name="sidebar2"></a>SideBar2|The second ad to appear on the right side of the first search results page.|
-|<a name="sidebar3"></a>SideBar3|The third ad to appear on the right side of the first search results page.|
-|<a name="sidebar4"></a>SideBar4|The fourth ad to appear on the right side of the first search results page.|
-|<a name="sidebar5"></a>SideBar5|The fifth ad to appear on the right side of the first search results page.|
-|<a name="sidebar6"></a>SideBar6|The sixth ad to appear on the right side of the first search results page.|
-|<a name="sidebar7"></a>SideBar7|The seventh ad to appear on the right side of the first search results page.|
-|<a name="sidebar8"></a>SideBar8|The eighth ad to appear on the right side of the first search results page.|
-|<a name="sidebar9"></a>SideBar9|The ninth ad to appear on the right side of the first search results page.|
+|<a name="firstpage1"></a>FirstPage1|The first ad to appear on the right side of the first search results page.|
+|<a name="firstpage10"></a>FirstPage10|The tenth ad to appear on the right side of the first search results page.|
+|<a name="firstpage2"></a>FirstPage2|The second ad to appear on the right side of the first search results page.|
+|<a name="firstpage3"></a>FirstPage3|The third ad to appear on the right side of the first search results page.|
+|<a name="firstpage4"></a>FirstPage4|The fourth ad to appear on the right side of the first search results page.|
+|<a name="firstpage5"></a>FirstPage5|The fifth ad to appear on the right side of the first search results page.|
+|<a name="firstpage6"></a>FirstPage6|The sixth ad to appear on the right side of the first search results page.|
+|<a name="firstpage7"></a>FirstPage7|The seventh ad to appear on the right side of the first search results page.|
+|<a name="firstpage8"></a>FirstPage8|The eighth ad to appear on the right side of the first search results page.|
+|<a name="firstpage9"></a>FirstPage9|The ninth ad to appear on the right side of the first search results page.|
 
 ## Requirements
 Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  

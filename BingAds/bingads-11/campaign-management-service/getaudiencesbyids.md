@@ -23,6 +23,7 @@ The *GetAudiencesByIdsRequest* object defines the [body](#request-body) and [hea
 |-----------|---------------|-------------|
 |<a name="audienceids"></a>AudienceIds|A maximum of 100 identifiers of the requested audiences.<br/><br/>If this element is null or empty, then you are effectively requesting all customer and account scoped audiences for the specified account.<br/><br/> If the audience identifiers do not match the requested audience types, then the operation will return a batch error for each requested audience ID.|**long** array|
 |<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [Audience](audience.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[AudienceAdditionalField](audienceadditionalfield.md)|
+|<a name="returnsupportedcampaigntypes"></a>ReturnSupportedCampaignTypes|Determines whether or not to return the list of campaign types that support this audience.<br/><br/>The in-market audience objects that are supported for Audience campaigns are not returned at all unless you set ReturnSupportedCampaignTypes true. Additionally the SupportedCampaignTypes element for all audience types is not returned unless you set ReturnSupportedCampaignTypes true.|**boolean**|
 |<a name="type"></a>Type|One or more types of audiences to return.|[AudienceType](audiencetype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -63,6 +64,7 @@ The following template shows the order of the [body](#request-body) and [header]
       </AudienceIds>
       <Type>ValueHere</Type>
       <ReturnAdditionalFields i:nil="false">ValueHere</ReturnAdditionalFields>
+      <ReturnSupportedCampaignTypes i:nil="false">ValueHere</ReturnSupportedCampaignTypes>
     </GetAudiencesByIdsRequest>
   </s:Body>
 </s:Envelope>
@@ -80,12 +82,13 @@ The following template shows the order of the [body](#response-body) and [header
     <GetAudiencesByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <Audiences d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <Audience d4p1:type="-- derived type specified here with the appropriate prefix --">
+          <AudienceNetworkSize d4p1:nil="false">ValueHere</AudienceNetworkSize>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e218="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e218:KeyValuePairOfstringstring>
-              <e218:key d4p1:nil="false">ValueHere</e218:key>
-              <e218:value d4p1:nil="false">ValueHere</e218:value>
-            </e218:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1319="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1319:KeyValuePairOfstringstring>
+              <e1319:key d4p1:nil="false">ValueHere</e1319:key>
+              <e1319:value d4p1:nil="false">ValueHere</e1319:value>
+            </e1319:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <MembershipDuration d4p1:nil="false">ValueHere</MembershipDuration>
@@ -93,91 +96,97 @@ The following template shows the order of the [body](#response-body) and [header
           <ParentId d4p1:nil="false">ValueHere</ParentId>
           <Scope d4p1:nil="false">ValueHere</Scope>
           <SearchSize d4p1:nil="false">ValueHere</SearchSize>
+          <SupportedCampaignTypes d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <a1:string>ValueHere</a1:string>
+          </SupportedCampaignTypes>
           <Type>ValueHere</Type>
           <!--These fields are applicable if the derived type attribute is set to RemarketingList-->
-          <Rule xmlns:e219="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false" d4p1:type="-- derived type specified here with the appropriate prefix --">
-            <e219:Type d4p1:nil="false">ValueHere</e219:Type>
+          <Rule xmlns:e1320="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false" d4p1:type="-- derived type specified here with the appropriate prefix --">
+            <e1320:Type d4p1:nil="false">ValueHere</e1320:Type>
             <!--This field is applicable if the derived type attribute is set to PageVisitorsRule-->
-            <e219:RuleItemGroups d4p1:nil="false">
-              <e219:RuleItemGroup>
-                <e219:Items d4p1:nil="false">
-                  <e219:RuleItem d4p1:type="-- derived type specified here with the appropriate prefix --">
-                    <e219:Type d4p1:nil="false">ValueHere</e219:Type>
+            <e1320:RuleItemGroups d4p1:nil="false">
+              <e1320:RuleItemGroup>
+                <e1320:Items d4p1:nil="false">
+                  <e1320:RuleItem d4p1:type="-- derived type specified here with the appropriate prefix --">
+                    <e1320:Type d4p1:nil="false">ValueHere</e1320:Type>
                     <!--These fields are applicable if the derived type attribute is set to StringRuleItem-->
-                    <e219:Operand d4p1:nil="false">ValueHere</e219:Operand>
-                    <e219:Operator>ValueHere</e219:Operator>
-                    <e219:Value d4p1:nil="false">ValueHere</e219:Value>
-                  </e219:RuleItem>
-                </e219:Items>
-              </e219:RuleItemGroup>
-            </e219:RuleItemGroups>
+                    <e1320:Operand d4p1:nil="false">ValueHere</e1320:Operand>
+                    <e1320:Operator>ValueHere</e1320:Operator>
+                    <e1320:Value d4p1:nil="false">ValueHere</e1320:Value>
+                  </e1320:RuleItem>
+                </e1320:Items>
+              </e1320:RuleItemGroup>
+            </e1320:RuleItemGroups>
             <!--These fields are applicable if the derived type attribute is set to PageVisitorsWhoVisitedAnotherPageRule-->
-            <e219:AnotherRuleItemGroups d4p1:nil="false">
-              <e219:RuleItemGroup>
-                <e219:Items d4p1:nil="false">
-                  <e219:RuleItem d4p1:type="-- derived type specified here with the appropriate prefix --">
-                    <e219:Type d4p1:nil="false">ValueHere</e219:Type>
+            <e1320:AnotherRuleItemGroups d4p1:nil="false">
+              <e1320:RuleItemGroup>
+                <e1320:Items d4p1:nil="false">
+                  <e1320:RuleItem d4p1:type="-- derived type specified here with the appropriate prefix --">
+                    <e1320:Type d4p1:nil="false">ValueHere</e1320:Type>
                     <!--These fields are applicable if the derived type attribute is set to StringRuleItem-->
-                    <e219:Operand d4p1:nil="false">ValueHere</e219:Operand>
-                    <e219:Operator>ValueHere</e219:Operator>
-                    <e219:Value d4p1:nil="false">ValueHere</e219:Value>
-                  </e219:RuleItem>
-                </e219:Items>
-              </e219:RuleItemGroup>
-            </e219:AnotherRuleItemGroups>
-            <e219:RuleItemGroups d4p1:nil="false">
-              <e219:RuleItemGroup>
-                <e219:Items d4p1:nil="false">
-                  <e219:RuleItem d4p1:type="-- derived type specified here with the appropriate prefix --">
-                    <e219:Type d4p1:nil="false">ValueHere</e219:Type>
+                    <e1320:Operand d4p1:nil="false">ValueHere</e1320:Operand>
+                    <e1320:Operator>ValueHere</e1320:Operator>
+                    <e1320:Value d4p1:nil="false">ValueHere</e1320:Value>
+                  </e1320:RuleItem>
+                </e1320:Items>
+              </e1320:RuleItemGroup>
+            </e1320:AnotherRuleItemGroups>
+            <e1320:RuleItemGroups d4p1:nil="false">
+              <e1320:RuleItemGroup>
+                <e1320:Items d4p1:nil="false">
+                  <e1320:RuleItem d4p1:type="-- derived type specified here with the appropriate prefix --">
+                    <e1320:Type d4p1:nil="false">ValueHere</e1320:Type>
                     <!--These fields are applicable if the derived type attribute is set to StringRuleItem-->
-                    <e219:Operand d4p1:nil="false">ValueHere</e219:Operand>
-                    <e219:Operator>ValueHere</e219:Operator>
-                    <e219:Value d4p1:nil="false">ValueHere</e219:Value>
-                  </e219:RuleItem>
-                </e219:Items>
-              </e219:RuleItemGroup>
-            </e219:RuleItemGroups>
+                    <e1320:Operand d4p1:nil="false">ValueHere</e1320:Operand>
+                    <e1320:Operator>ValueHere</e1320:Operator>
+                    <e1320:Value d4p1:nil="false">ValueHere</e1320:Value>
+                  </e1320:RuleItem>
+                </e1320:Items>
+              </e1320:RuleItemGroup>
+            </e1320:RuleItemGroups>
             <!--These fields are applicable if the derived type attribute is set to PageVisitorsWhoDidNotVisitAnotherPageRule-->
-            <e219:ExcludeRuleItemGroups d4p1:nil="false">
-              <e219:RuleItemGroup>
-                <e219:Items d4p1:nil="false">
-                  <e219:RuleItem d4p1:type="-- derived type specified here with the appropriate prefix --">
-                    <e219:Type d4p1:nil="false">ValueHere</e219:Type>
+            <e1320:ExcludeRuleItemGroups d4p1:nil="false">
+              <e1320:RuleItemGroup>
+                <e1320:Items d4p1:nil="false">
+                  <e1320:RuleItem d4p1:type="-- derived type specified here with the appropriate prefix --">
+                    <e1320:Type d4p1:nil="false">ValueHere</e1320:Type>
                     <!--These fields are applicable if the derived type attribute is set to StringRuleItem-->
-                    <e219:Operand d4p1:nil="false">ValueHere</e219:Operand>
-                    <e219:Operator>ValueHere</e219:Operator>
-                    <e219:Value d4p1:nil="false">ValueHere</e219:Value>
-                  </e219:RuleItem>
-                </e219:Items>
-              </e219:RuleItemGroup>
-            </e219:ExcludeRuleItemGroups>
-            <e219:IncludeRuleItemGroups d4p1:nil="false">
-              <e219:RuleItemGroup>
-                <e219:Items d4p1:nil="false">
-                  <e219:RuleItem d4p1:type="-- derived type specified here with the appropriate prefix --">
-                    <e219:Type d4p1:nil="false">ValueHere</e219:Type>
+                    <e1320:Operand d4p1:nil="false">ValueHere</e1320:Operand>
+                    <e1320:Operator>ValueHere</e1320:Operator>
+                    <e1320:Value d4p1:nil="false">ValueHere</e1320:Value>
+                  </e1320:RuleItem>
+                </e1320:Items>
+              </e1320:RuleItemGroup>
+            </e1320:ExcludeRuleItemGroups>
+            <e1320:IncludeRuleItemGroups d4p1:nil="false">
+              <e1320:RuleItemGroup>
+                <e1320:Items d4p1:nil="false">
+                  <e1320:RuleItem d4p1:type="-- derived type specified here with the appropriate prefix --">
+                    <e1320:Type d4p1:nil="false">ValueHere</e1320:Type>
                     <!--These fields are applicable if the derived type attribute is set to StringRuleItem-->
-                    <e219:Operand d4p1:nil="false">ValueHere</e219:Operand>
-                    <e219:Operator>ValueHere</e219:Operator>
-                    <e219:Value d4p1:nil="false">ValueHere</e219:Value>
-                  </e219:RuleItem>
-                </e219:Items>
-              </e219:RuleItemGroup>
-            </e219:IncludeRuleItemGroups>
+                    <e1320:Operand d4p1:nil="false">ValueHere</e1320:Operand>
+                    <e1320:Operator>ValueHere</e1320:Operator>
+                    <e1320:Value d4p1:nil="false">ValueHere</e1320:Value>
+                  </e1320:RuleItem>
+                </e1320:Items>
+              </e1320:RuleItemGroup>
+            </e1320:IncludeRuleItemGroups>
             <!--These fields are applicable if the derived type attribute is set to CustomEventsRule-->
-            <e219:Action d4p1:nil="false">ValueHere</e219:Action>
-            <e219:ActionOperator>ValueHere</e219:ActionOperator>
-            <e219:Category d4p1:nil="false">ValueHere</e219:Category>
-            <e219:CategoryOperator>ValueHere</e219:CategoryOperator>
-            <e219:Label d4p1:nil="false">ValueHere</e219:Label>
-            <e219:LabelOperator>ValueHere</e219:LabelOperator>
-            <e219:Value d4p1:nil="false">ValueHere</e219:Value>
-            <e219:ValueOperator>ValueHere</e219:ValueOperator>
+            <e1320:Action d4p1:nil="false">ValueHere</e1320:Action>
+            <e1320:ActionOperator>ValueHere</e1320:ActionOperator>
+            <e1320:Category d4p1:nil="false">ValueHere</e1320:Category>
+            <e1320:CategoryOperator>ValueHere</e1320:CategoryOperator>
+            <e1320:Label d4p1:nil="false">ValueHere</e1320:Label>
+            <e1320:LabelOperator>ValueHere</e1320:LabelOperator>
+            <e1320:Value d4p1:nil="false">ValueHere</e1320:Value>
+            <e1320:ValueOperator>ValueHere</e1320:ValueOperator>
           </Rule>
           <TagId d4p1:nil="false">ValueHere</TagId>
           <!--No additional fields are applicable if the derived type attribute is set to CustomAudience-->
           <!--No additional fields are applicable if the derived type attribute is set to InMarketAudience-->
+          <!--These fields are applicable if the derived type attribute is set to ProductAudience-->
+          <ProductAudienceType d4p1:nil="false">ValueHere</ProductAudienceType>
+          <TagId d4p1:nil="false">ValueHere</TagId>
         </Audience>
       </Audiences>
       <PartialErrors d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
@@ -186,11 +195,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e220="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e220:KeyValuePairOfstringstring>
-              <e220:key d4p1:nil="false">ValueHere</e220:key>
-              <e220:value d4p1:nil="false">ValueHere</e220:value>
-            </e220:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1321="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1321:KeyValuePairOfstringstring>
+              <e1321:key d4p1:nil="false">ValueHere</e1321:key>
+              <e1321:value d4p1:nil="false">ValueHere</e1321:value>
+            </e1321:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
@@ -214,13 +223,15 @@ The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.m
 public async Task<GetAudiencesByIdsResponse> GetAudiencesByIdsAsync(
 	IList<long> audienceIds,
 	AudienceType type,
-	AudienceAdditionalField? returnAdditionalFields)
+	AudienceAdditionalField? returnAdditionalFields,
+	bool? returnSupportedCampaignTypes)
 {
 	var request = new GetAudiencesByIdsRequest
 	{
 		AudienceIds = audienceIds,
 		Type = type,
-		ReturnAdditionalFields = returnAdditionalFields
+		ReturnAdditionalFields = returnAdditionalFields,
+		ReturnSupportedCampaignTypes = returnSupportedCampaignTypes
 	};
 
 	return (await CampaignManagementService.CallAsync((s, r) => s.GetAudiencesByIdsAsync(r), request));
@@ -230,13 +241,15 @@ public async Task<GetAudiencesByIdsResponse> GetAudiencesByIdsAsync(
 static GetAudiencesByIdsResponse getAudiencesByIds(
 	ArrayOflong audienceIds,
 	ArrayList<AudienceType> type,
-	ArrayList<AudienceAdditionalField> returnAdditionalFields) throws RemoteException, Exception
+	ArrayList<AudienceAdditionalField> returnAdditionalFields,
+	boolean returnSupportedCampaignTypes) throws RemoteException, Exception
 {
 	GetAudiencesByIdsRequest request = new GetAudiencesByIdsRequest();
 
 	request.setAudienceIds(audienceIds);
 	request.setType(type);
 	request.setReturnAdditionalFields(returnAdditionalFields);
+	request.setReturnSupportedCampaignTypes(returnSupportedCampaignTypes);
 
 	return CampaignManagementService.getService().getAudiencesByIds(request);
 }
@@ -245,7 +258,8 @@ static GetAudiencesByIdsResponse getAudiencesByIds(
 static function GetAudiencesByIds(
 	$audienceIds,
 	$type,
-	$returnAdditionalFields)
+	$returnAdditionalFields,
+	$returnSupportedCampaignTypes)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
@@ -255,6 +269,7 @@ static function GetAudiencesByIds(
 	$request->AudienceIds = $audienceIds;
 	$request->Type = $type;
 	$request->ReturnAdditionalFields = $returnAdditionalFields;
+	$request->ReturnSupportedCampaignTypes = $returnSupportedCampaignTypes;
 
 	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAudiencesByIds($request);
 }
@@ -263,7 +278,8 @@ static function GetAudiencesByIds(
 response=campaignmanagement_service.GetAudiencesByIds(
 	AudienceIds=AudienceIds,
 	Type=Type,
-	ReturnAdditionalFields=ReturnAdditionalFields)
+	ReturnAdditionalFields=ReturnAdditionalFields,
+	ReturnSupportedCampaignTypes=ReturnSupportedCampaignTypes)
 ```
 
 ## Requirements

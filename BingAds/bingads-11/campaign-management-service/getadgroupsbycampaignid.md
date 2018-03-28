@@ -109,11 +109,11 @@ The following template shows the order of the [body](#response-body) and [header
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e203="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e203:KeyValuePairOfstringstring>
-              <e203:key d4p1:nil="false">ValueHere</e203:key>
-              <e203:value d4p1:nil="false">ValueHere</e203:value>
-            </e203:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1304="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1304:KeyValuePairOfstringstring>
+              <e1304:key d4p1:nil="false">ValueHere</e1304:key>
+              <e1304:value d4p1:nil="false">ValueHere</e1304:value>
+            </e1304:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Language d4p1:nil="false">ValueHere</Language>
@@ -153,13 +153,13 @@ The following template shows the order of the [body](#response-body) and [header
           </StartDate>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e204="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e204:Parameters d4p1:nil="false">
-              <e204:CustomParameter>
-                <e204:Key d4p1:nil="false">ValueHere</e204:Key>
-                <e204:Value d4p1:nil="false">ValueHere</e204:Value>
-              </e204:CustomParameter>
-            </e204:Parameters>
+          <UrlCustomParameters xmlns:e1305="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e1305:Parameters d4p1:nil="false">
+              <e1305:CustomParameter>
+                <e1305:Key d4p1:nil="false">ValueHere</e1305:Key>
+                <e1305:Value d4p1:nil="false">ValueHere</e1305:Value>
+              </e1305:CustomParameter>
+            </e1305:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>

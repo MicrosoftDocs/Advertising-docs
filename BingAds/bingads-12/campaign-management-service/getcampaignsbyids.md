@@ -106,11 +106,11 @@ The following template shows the order of the [body](#response-body) and [header
           <BudgetType d4p1:nil="false">ValueHere</BudgetType>
           <DailyBudget d4p1:nil="false">ValueHere</DailyBudget>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e1122="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1122:KeyValuePairOfstringstring>
-              <e1122:key d4p1:nil="false">ValueHere</e1122:key>
-              <e1122:value d4p1:nil="false">ValueHere</e1122:value>
-            </e1122:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2360="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e2360:KeyValuePairOfstringstring>
+              <e2360:key d4p1:nil="false">ValueHere</e2360:key>
+              <e2360:value d4p1:nil="false">ValueHere</e2360:value>
+            </e2360:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
@@ -143,7 +143,7 @@ The following template shows the order of the [body](#response-body) and [header
               <Details d4p1:nil="false">
                 <TargetSettingDetail>
                   <CriterionTypeGroup>ValueHere</CriterionTypeGroup>
-                  <TargetAll>ValueHere</TargetAll>
+                  <TargetAndBid>ValueHere</TargetAndBid>
                 </TargetSettingDetail>
               </Details>
               <!--These fields are applicable if the derived type attribute is set to CoOpSetting-->
@@ -164,11 +164,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1123="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1123:KeyValuePairOfstringstring>
-              <e1123:key d4p1:nil="false">ValueHere</e1123:key>
-              <e1123:value d4p1:nil="false">ValueHere</e1123:value>
-            </e1123:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2361="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e2361:KeyValuePairOfstringstring>
+              <e2361:key d4p1:nil="false">ValueHere</e2361:key>
+              <e2361:value d4p1:nil="false">ValueHere</e2361:value>
+            </e2361:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

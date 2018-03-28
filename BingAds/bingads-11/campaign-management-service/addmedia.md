@@ -34,7 +34,7 @@ The *AddMediaResponse* object defines the [body](#response-body) and [header](#r
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediaids"></a>MediaIds|The identifiers of the media that you added to the library. You use the identifier to set the appropriate media ID field in the [ImageAdExtension](imageadextension.md) or [LocationAdExtension](locationadextension.md) object.<br /><br />You can get the media for image ad extensions with the [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md) and [GetMediaMetaDataByIds](getmediametadatabyids.md) operations.<br /><br />You can get the media for location ad extensions with the [GetMediaByIds](getmediabyids.md). operation.|**long** array|
+|<a name="mediaids"></a>MediaIds|The identifiers of the media that you added to the library. You use the identifier to set the appropriate media ID field in the [ImageAdExtension](imageadextension.md) or [ResponsiveAd](responsivead.md) object.<br /><br />You can get the media indentifiers for image ad extensions and responsive ads with the [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md) and [GetMediaMetaDataByIds](getmediametadatabyids.md) operations.|**long** array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

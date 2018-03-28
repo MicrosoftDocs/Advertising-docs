@@ -36,6 +36,13 @@ Defines the possible audience types.
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
+        <xs:enumeration value="Product">
+          <xs:annotation>
+            <xs:appinfo>
+              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:enumeration>
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -48,6 +55,7 @@ Defines the possible audience types.
 |-----------|---------------|
 |<a name="custom"></a>Custom|The audience is a custom audience.|
 |<a name="inmarket"></a>InMarket|The audience is an in-market audience.|
+|<a name="product"></a>Product|Reserved.|
 |<a name="remarketinglist"></a>RemarketingList|The audience is a remarketing list.|
 
 ## Requirements

@@ -83,6 +83,9 @@ Age35_49|ThirtyFiveToFourtyNine
 Age50_64|FiftyToSixtyFour
 Age65Plus|SixtyFiveAndAbove
 
+#### <a name="adinsight-firstpage"></a>First Page Ad Position
+In the [AdPosition](../ad-insight-service/adposition.md) and [TargetAdPosition](../ad-insight-service/targetadposition.md) value sets, *SideBar* is replaced with *FirstPage*. 
+
 #### <a name="adinsight-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *Content* value is removed from the [MatchType](../ad-insight-service/matchtype.md) value set. 
 
@@ -129,10 +132,13 @@ In version 11 to set the "target and bid" option you would have set the *Remarke
 
 In version 11 to set the "bid only" option you would have set the *Remarketing Targeting Setting* field to *BidOnly*. To set the "bid only" option in version 12, exclude the *Audience* value from the new [Target Setting](../bulk-service/ad-group.md#targetsetting) field. To update from "target and bid" to "bid only" you'll need to explicitly remove the "target and bid" option e.g., set the [Target Setting](../bulk-service/ad-group.md#targetsetting) field to "delete_value". For more details please see [Target Setting](../bulk-service/ad-group.md#targetsetting). 
 
+#### <a name="bulk-expandedtextaddomain"></a>Expanded Text Ad Domain
+The *Display Url* field of an [Expanded Text Ad](../bulk-service/expanded-text-ad.md) record is renamed as *Domain*.  
+
 #### <a name="bulk-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *Content Bid*, *Content Network*, and *Search Network* fields of an [Ad Group](../bulk-service/ad-group.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. The *Search Bid* field of an [Ad Group](../bulk-service/ad-group.md) is renamed *Cpc Bid*.
 
-Likewise the *Campaign Type* value of the corresponding [Campaign](../bulk-service/campaign.md) is updated from *SearchAndContent* to *Search*. 
+The *Campaign Type* value of the corresponding [Campaign](../bulk-service/campaign.md) is updated from *SearchAndContent* to *Search*. Likewise instead of *SearchAndContent* use *Search* in the *Supported Campaign Types* column of the [Custom Audience](../bulk-service/custom-audience.md), [In Market Audience](../bulk-service/in-market-audience.md), and [Remarketing List](../bulk-service/remarketing-list.md) records.
 
 #### <a name="bulk-sunset-cpm"></a>Cpm Pricing Model
 The CPM pricing model is no longer supported in Bing Ads, and the *Pricing Model* field of an [Ad Group](../bulk-service/ad-group.md) is removed from version 12. The *Pricing Model* field in version 11 was optional, defaulted to *Cpc*, and could only be set to *Cpc*. 
@@ -167,7 +173,7 @@ The production endpoint is [https://campaign.api.bingads.microsoft.com/Api/Adver
 The sandbox endpoint is [https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc](https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc).
 
 #### <a name="campaign-datacontractnamespace"></a>Data Contract Namespace
-The data contract namespace in version 11 referenced the AdCenter namespace. For clients who encode the SOAP envelope e.g. PHP clients who encode a `SoapVar` for [Webpage](../campaign-management-service/webpage.md), you'll need to update from `http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11` to the Campaign Management Version 12 target namespace i.e., `https://bingads.microsoft.com/CampaignManagement/v12`. 
+The data contract namespace in version 11 referenced the AdCenter namespace. For clients who encode the SOAP envelope in version 12 e.g. PHP clients who encode a `SoapVar` for [Webpage](../campaign-management-service/webpage.md), you'll need to update from `http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11` to the Campaign Management Version 12 target namespace i.e., `https://bingads.microsoft.com/CampaignManagement/v12`. 
 
 #### <a name="campaign-returnadditionalfields"></a>Return Additional Fields
 The *ReturnAdditionalFields* element is removed from the [GetAdGroupsByCampaignId](../campaign-management-service/getadgroupsbycampaignid.md),[GetAdGroupsByIds](../campaign-management-service/getadgroupsbyids.md), [GetAudiencesByIds](../campaign-management-service/getaudiencesbyids.md), [GetKeywordsByAdGroupId](../campaign-management-service/getkeywordsbyadgroupid.md), [GetKeywordsByEditorialStatus](../campaign-management-service/getkeywordsbyeditorialstatus.md), and [GetKeywordsByIds](../campaign-management-service/getkeywordsbyids.md) request messages, and the corresponding elements of each [AdGroup](../campaign-management-service/adgroup.md), [Audience](../campaign-management-service/audience.md), and [Keyword](../campaign-management-service/keyword.md) are returned by default.
@@ -182,7 +188,7 @@ When you migrate to version 12 remove the '2' suffix from *Sitelink2AdExtension*
 #### <a name="campaign-shoppingsubtype"></a>Shopping Campaign Sub Type
 We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Bing Shopping campaigns. More details about Cooperative campaigns are coming soon, and in the meantime please note the potential required changes in Bing Ads API Version 12 for your application to support existing Bing Shopping campaigns. Whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any shopping campaigns. 
 
-When you call [GetCampaignsByAccountId](../campaign-management-service/getcampaignsbyaccountid.md) or [GetCampaignsByIds](../campaign-management-service/getcampaignsbyids.md) and the [CampaignType](../campaign-management-service/campaigntype.md) is set to *Shopping*, please check the *SubType* of each [Campaign](../campaign-management-service/campaign.md). If the *SubType* is not set then it is a standard Bing Shopping campaign. If the value is set to *CoOp*, the campaign is a Cooperative campaign.
+When you call [GetCampaignsByAccountId](../campaign-management-service/getcampaignsbyaccountid.md) or [GetCampaignsByIds](../campaign-management-service/getcampaignsbyids.md) and the [CampaignType](../campaign-management-service/campaigntype.md) is set to *Shopping*, please check the *SubType* of each [Campaign](../campaign-management-service/campaign.md). If the *SubType* is not set then it is a standard Bing Shopping campaign. If the value is set to *ShoppingCoOperative*, the campaign is a Cooperative campaign.
 
 #### <a name="campaign-audiencetargetingsetting"></a>Audience Targeting Setting
 The *RemarketingTargetingSetting* element of an [AdGroup](../campaign-management-service/adgroup.md) is removed.
@@ -196,12 +202,17 @@ The *MigrationStatusInfo* (singular) element of an [AccountMigrationStatusesInfo
 The *DisplayUrl* element of an [ExpandedTextAd](../campaign-management-service/expandedtextad.md) object is renamed as *Domain*.  
 
 #### <a name="campaign-mediatype"></a>Media Type
-The values returned in the *MediaType* and *Type* elements of a [Media](../campaign-management-service/media.md) object are swapped. In version 11 the derived media type of an [Image](../campaign-management-service/image.md) was returned in the *MediaType* element e.g., *Image*, and the aspect ratio was returned in the *Type* element e.g., *Image15x10*. In version 12 the derived media type of an [Image](../campaign-management-service/image.md) is returned in the *Type* element e.g., *Image*, and the aspect ratio is returned in the *MediaType* element e.g., *Image15x10*. Long term this should reduce friction for clients who depend on the derived type in the *Type* element.
+The name, values, and business rules of the *MediaType* and *Type* elements of a [Media](../campaign-management-service/media.md) object are swapped. In version 11 the derived media type of an [Image](../campaign-management-service/image.md) was returned in the *MediaType* element e.g., *Image*, and the aspect ratio was returned in the *Type* element e.g., *Image15x10*. In version 12 the derived media type of an [Image](../campaign-management-service/image.md) is returned in the *Type* element e.g., *Image*, and the aspect ratio is returned in the *MediaType* element e.g., *Image15x10*. Long term this should reduce friction for clients who depend on the derived type in the *Type* element.
+
+Likewise the name, values, and business rules of the *MediaType* and *Type* elements of a [MediaMetaData](../campaign-management-service/mediametadata.md) object are swapped. 
+
+#### <a name="campaign-locationadextension-media"></a>Location Ad Extension Media
+Icons and images for location ad extensions were reserved for internal use in version 11. In version 12, the *IconMediaId* and *ImageMediaId* elements are removed from the [LocationAdExtension](../campaign-management-service/locationadextension.md) object, and the *GetMediaByIds* operation is removed. 
 
 #### <a name="campaign-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, so the *AdDistribution* and *ContentBid* elements of an [AdGroup](../campaign-management-service/adgroup.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. The *SearchBid* element of an [AdGroup](../campaign-management-service/adgroup.md) is renamed *CpcBid*.
 
-Likewise the [CampaignType](../campaign-management-service/campaigntype.md) value is updated from *SearchAndContent* to *Search*, and the *Content* value is removed from the [MatchType](../campaign-management-service/matchtype.md) value set. 
+The [CampaignType](../campaign-management-service/campaigntype.md) value is updated from *SearchAndContent* to *Search*, and the *Content* value is removed from the [MatchType](../campaign-management-service/matchtype.md) value set. Likewise instead of *SearchAndContent* use *Search* in the *SupportedCampaignTypes* element of the [CustomAudience](../campaign-management-service/customaudience.md), [InMarketAudience](../campaign-management-service/inmarketaudience.md), and [RemarketingList](../campaign-management-service/remarketinglist.md) objects.
 
 #### <a name="campaign-sunset-cpm"></a>Cpm Pricing Model
 The CPM pricing model is no longer supported in Bing Ads, and the *PricingModel* element of an [AdGroup](../campaign-management-service/adgroup.md) is removed from version 12. The *PricingModel* element in version 11 was optional, defaulted to *Cpc*, and could only be set to *Cpc*. 
@@ -227,6 +238,11 @@ In version 12 the ReturnSupportedCampaignTypes request element is removed from [
 
 #### <a name="campaign-errorcode-inmarketaudiencecouldnotbedeleted"></a>Error Code for InMarketAudienceCouldNotBeDeleted
 In-market audiences cannot be deleted in both version 11 and version 12. Custom audiences can be deleted in both version 11 and 12. The error code CustomAudienceAndInMarketAudienceCouldNotBeDeleted (4860) that is still returned in version 11 is replaced by error code InMarketAudienceCouldNotBeDeleted (4864) in version 12.
+
+#### <a name="campaign-errorcode-entitysettings"></a>Error Codes for Entity Settings
+The error code string for code 1149 is updated from CampaignServiceDuplicateSettingsInCampaign to CampaignServiceDuplicateSettingsInEntity. The same error code can be returned whether the duplicate settings are at campaign or ad group level. For example if you attempt to set duplicate [ShoppingSetting](../campaign-management-service/shoppingsetting.md) objects in a campaign or duplicate [TargetSetting](../campaign-management-service/targetsetting.md) objects in an ad group.
+
+The error code string for code 1151 is updated from CampaignServiceCampaignSettingsNotAllowed to CampaignServiceInvalidSettingForCampaignType. The same error code can be returned whether the settings are at campaign or ad group level. For example if you attempt to apply a shopping setting in a Dynamic Search Ads campaign.
 
 ### <a name="campaign-newfeatures"></a>New Features
 
@@ -488,6 +504,18 @@ When submitting the following report requests, you must use the [ReportAggregati
 
 #### <a name="reporting-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *Content* value is removed from the [AdDistributionReportFilter](../reporting-service/addistributionreportfilter.md), [BidMatchTypeReportFilter](../reporting-service/bidmatchtypereportfilter.md), and [DeliveredMatchTypeReportFilter](../reporting-service/deliveredmatchtypereportfilter.md) value sets. 
+
+#### <a name="reporting-historical-columns"></a>Historical Columns
+The [AdGroupPerformanceReportColumn ](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn ](../reporting-service/campaignperformancereportcolumn.md), and [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) values are renamed from Historic to Historical.
+
+Version 11|Version 12  
+---------|---------
+HistoricQualityScore|HistoricalQualityScore
+HistoricExpectedCtr|HistoricalExpectedCtr
+HistoricAdRelevance|HistoricalAdRelevance
+HistoricLandingPageExperience|HistoricalLandingPageExperience 
+
+In addition, the 2054 error code is renamed from InvalidGrainForHistoricQualityScoreColumns to InvalidGrainForHistoricalQualityScoreColumns.
 
 ### <a name="reporting-newfeatures"></a>New Features
 

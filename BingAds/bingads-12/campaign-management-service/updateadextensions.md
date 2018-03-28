@@ -63,11 +63,11 @@ The following template shows the order of the [body](#request-body) and [header]
       <AdExtensions i:nil="false">
         <AdExtension i:type="-- derived type specified here with the appropriate prefix --">
           <DevicePreference i:nil="false">ValueHere</DevicePreference>
-          <ForwardCompatibilityMap xmlns:e1149="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e1149:KeyValuePairOfstringstring>
-              <e1149:key i:nil="false">ValueHere</e1149:key>
-              <e1149:value i:nil="false">ValueHere</e1149:value>
-            </e1149:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2387="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e2387:KeyValuePairOfstringstring>
+              <e2387:key i:nil="false">ValueHere</e2387:key>
+              <e2387:value i:nil="false">ValueHere</e2387:value>
+            </e2387:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Scheduling i:nil="false">
@@ -111,8 +111,6 @@ The following template shows the order of the [body](#request-body) and [header]
             <LatitudeInMicroDegrees>ValueHere</LatitudeInMicroDegrees>
             <LongitudeInMicroDegrees>ValueHere</LongitudeInMicroDegrees>
           </GeoPoint>
-          <IconMediaId i:nil="false">ValueHere</IconMediaId>
-          <ImageMediaId i:nil="false">ValueHere</ImageMediaId>
           <PhoneNumber i:nil="false">ValueHere</PhoneNumber>
           <!--These fields are applicable if the derived type attribute is set to CallAdExtension-->
           <CountryCode i:nil="false">ValueHere</CountryCode>
@@ -267,11 +265,11 @@ The following template shows the order of the [body](#response-body) and [header
               <Details d4p1:nil="false">ValueHere</Details>
               <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
               <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-              <ForwardCompatibilityMap xmlns:e1150="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-                <e1150:KeyValuePairOfstringstring>
-                  <e1150:key d4p1:nil="false">ValueHere</e1150:key>
-                  <e1150:value d4p1:nil="false">ValueHere</e1150:value>
-                </e1150:KeyValuePairOfstringstring>
+              <ForwardCompatibilityMap xmlns:e2388="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+                <e2388:KeyValuePairOfstringstring>
+                  <e2388:key d4p1:nil="false">ValueHere</e2388:key>
+                  <e2388:value d4p1:nil="false">ValueHere</e2388:value>
+                </e2388:KeyValuePairOfstringstring>
               </ForwardCompatibilityMap>
               <Index>ValueHere</Index>
               <Message d4p1:nil="false">ValueHere</Message>
@@ -288,11 +286,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1151="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1151:KeyValuePairOfstringstring>
-              <e1151:key d4p1:nil="false">ValueHere</e1151:key>
-              <e1151:value d4p1:nil="false">ValueHere</e1151:value>
-            </e1151:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2389="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e2389:KeyValuePairOfstringstring>
+              <e2389:key d4p1:nil="false">ValueHere</e2389:key>
+              <e2389:value d4p1:nil="false">ValueHere</e2389:value>
+            </e2389:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

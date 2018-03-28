@@ -1546,10 +1546,12 @@ The PAN number is required.
 1149
 
 **Symbolic Error Code**
-CampaignServiceDuplicateSettingsInCampaign
+CampaignServiceDuplicateSettingsInEntity
 
 **Description**
-You may not specify duplicate settings for a campaign.
+You may not specify duplicate settings for an entity.
+
+The same error code can be returned whether the duplicate settings are at campaign or ad group level. For example if you attempt to set duplicate [ShoppingSetting](../campaign-management-service/shoppingsetting.md) objects in a campaign or duplicate [TargetSetting](../campaign-management-service/targetsetting.md) objects in an ad group.
 
 ***
 
@@ -1568,10 +1570,12 @@ The required campaign settings were not specified.
 1151
 
 **Symbolic Error Code**
-CampaignServiceCampaignSettingsNotAllowed
+CampaignServiceInvalidSettingForCampaignType
 
 **Description**
 One or more settings are not supported for the campaign type.
+
+The same error code can be returned whether the settings are at campaign or ad group level. For example if you attempt to apply a shopping setting in a Dynamic Search Ads campaign. 
 
 ***
 
@@ -1895,17 +1899,6 @@ The ad group start date cannot be prior to the date that the ad group was submit
 ***
 
 **Numeric Code**
-1228
-
-**Symbolic Error Code**
-CampaignServiceCannotSetPricingModelOnAdGroup
-
-**Description**
-The ad group pricing model is not supported and must be null.
-
-***
-
-**Numeric Code**
 1229
 
 **Symbolic Error Code**
@@ -1961,17 +1954,6 @@ The end date specified in the ad group is not valid.
 ***
 
 **Numeric Code**
-1234
-
-**Symbolic Error Code**
-CampaignServiceAdGroupPricingModelCpmRequiresContentMedium
-
-**Description**
-The cost-per-thousand-impressions (CPM) pricing model is not supported.
-
-***
-
-**Numeric Code**
 1235
 
 **Symbolic Error Code**
@@ -1979,28 +1961,6 @@ CampaignServiceAdGroupInvalidMediumForCustomer
 
 **Description**
 The customer account is not allowed to create ad groups in the specified ad distribution medium.
-
-***
-
-**Numeric Code**
-1236
-
-**Symbolic Error Code**
-CampaignServiceAdGroupPricingModelCpmIsNotEnabledForCustomer
-
-**Description**
-The customer account is not allowed to create ad groups in the specified pricing model.
-
-***
-
-**Numeric Code**
-1237
-
-**Symbolic Error Code**
-CampaignServiceAdGroupPricingModelIsNull
-
-**Description**
-This error code is no longer in use. The pricing model is optional and will be set to Cpc by default.
 
 ***
 
@@ -2023,17 +1983,6 @@ CampaignServiceCannotUpdateBiddingModel
 
 **Description**
 The bidding model of an ad group cannot be changed.
-
-***
-
-**Numeric Code**
-1242
-
-**Symbolic Error Code**
-CampaignServiceCannotUpdateAdDistributionForThisType
-
-**Description**
-The ad distribution cannot be changed for this type of ad group.
 
 ***
 
@@ -4941,10 +4890,10 @@ The ImpressionSharePercent, ImpressionLostToBudgetPercent, ImpressionLostToRankP
 2054
 
 **Symbolic Error Code**
-InvalidGrainForHistoricQualityScoreColumns
+InvalidGrainForHistoricalQualityScoreColumns
 
 **Description**
-The HistoricQualityScore, HistoricKeywordRelevance, HistoricLandingPageRelevance and HistoricLandingPageUserExperience columns are available only with daily report aggregation.
+The HistoricalQualityScore, HistoricalExpectedCtr HistoricalAdRelevance, HistoricalLandingPageExperience columns are available only with daily report aggregation.
 
 ***
 

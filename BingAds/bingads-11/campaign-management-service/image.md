@@ -41,7 +41,7 @@ The [Image](image.md) object derives from the [Media](media.md) object, and inhe
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The unique Bing Ads identifier of the media.<br/><br/>**Add:** Read-only|**long**|
 |<a name="mediatype"></a>MediaType|The media type. For more information about media types, see the [Media Data Object Remarks](media.md#remarks).<br/><br/>**Add:** Read-only|**string**|
-|<a name="type"></a>Type|The type of media to add to the library.<br /><br />For media that will be used with a [LocationAdExtension](locationadextension.md), the supported values are *Icon* and *Image*.<br /><br />For media that will be used with an [ImageAdExtension](imageadextension.md), the supported values are *Image16x9*, *Image15x10*, *Image4x3*, and *Image12x10*.<br /><br />For more information about supported aspect ratios, see the [Remarks](#remarks) section below.<br/><br/>**Add:** Required|**string**|
+|<a name="type"></a>Type|The type of media to add to the library.<br /><br />For media that will be used with an [ImageAdExtension](imageadextension.md), the supported values are *Image16x9*, *Image15x10*, *Image4x3*, and *Image12x10*.<br /><br />For media that will be used with a [ResponsiveAd](responsivead.md), the supported values are *Image1x1*, *Image191x100*, and *Image4x1*.<br /><br />For more information about supported aspect ratios, see the [Remarks](#remarks) section below.<br/><br/>**Add:** Required|**string**|
 
 ## <a name="remarks"></a>Remarks
 The following MIME types are supported for the *Data* element of the *Image* data object.
@@ -51,14 +51,10 @@ The following MIME types are supported for the *Data* element of the *Image* dat
 
 Images with animation are not supported.
 
-The following restrictions apply to [Media](media.md) that will be used with a [LocationAdExtension](locationadextension.md).
-
--   If the value of the *Type* element is *Icon*, the maximum supported icon size is 26X26.  
--   If the value of the *Type* element is *Image*, the maximum supported image size is 125X125.  
-
+### <a name="imageadextension"></a>Image Ad Extension Image Media
 The following restrictions apply to [Media](media.md) types (aspect ratios) that will be used with an [ImageAdExtension](imageadextension.md).
 
-|Type|Aspect Ratio|Minimum Dimension|Maximum Dimension|
+|MediaType|Aspect Ratio|Minimum Dimension|Maximum Dimension|
 |--------|----------------|---------------------|---------------------|
 |*Image16x9*|16:9|640 width x 360 height, in pixels|1778 width x 1000 height, in pixels|
 |*Image15x10*|1.5:1|300 width x 200 height, in pixels|1500 width x 1000 height, in pixels|
@@ -67,6 +63,19 @@ The following restrictions apply to [Media](media.md) types (aspect ratios) that
 
 > [!NOTE]
 > The maximum file size is 5 MB, but the recommended maximum file size is 1MB.
+
+### <a name="responsivead"></a>Responsive Ad Image Media
+The following restrictions apply to [Media](media.md) types (aspect ratios) that will be used with a [ResponsiveAd](responsivead.md).
+
+|Responsive Ad Property|Media Type|Dimensions in pixels|
+|--------|--------|--------|--------|
+|[LandscapeImageMediaId](responsivead.md#landscapeimagemediaid)|*Image191x100*|**Minimum:** 600 width x 314 height<br/>**Maximum:** Aspect radio 1.91:1 up to the maximum file size of 1MB.<br/>**Recommended:** 1200 width x 628 height|
+|[LandscapeLogoMediaId](responsivead.md#landscapelogomediaid)|*Image4x1*|**Minimum:** 512 width x 128 height<br/>**Maximum:** Aspect radio 4:1 up to the maximum file size of 1MB.<br/>**Recommended:** 1200 width x 300 height|
+|[SquareImageMediaId](responsivead.md#squareimagemediaid)|*Image1x1*|**Minimum:** 300 width x 300 height<br/>**Maximum:** Aspect radio 1:1 up to the maximum file size of 1MB.<br/>**Recommended:** 1200 width x 1200 height|
+|[SquareLogoMediaId](responsivead.md#squarelogomediaid)|*Image1x1*|**Minimum:** 128 width x 128 height<br/>**Maximum:** Aspect radio 1:1 up to the maximum file size of 1MB.<br/>**Recommended:** 1200 width x 1200 height|
+
+> [!NOTE]
+> The maximum file size is 5 MB. The maximum width and height in pixels are 2592 and 2048 independently, and you must still maintain one of the supported aspect ratios. For example if the image for your [LandscapeImageMediaId](#landscapeimagemediaid) is 2592 in width, then the height must be 1357.
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

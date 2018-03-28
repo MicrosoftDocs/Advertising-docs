@@ -101,11 +101,11 @@ The following template shows the order of the [body](#response-body) and [header
           <BudgetType d4p1:nil="false">ValueHere</BudgetType>
           <DailyBudget d4p1:nil="false">ValueHere</DailyBudget>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e1121="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1121:KeyValuePairOfstringstring>
-              <e1121:key d4p1:nil="false">ValueHere</e1121:key>
-              <e1121:value d4p1:nil="false">ValueHere</e1121:value>
-            </e1121:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2359="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e2359:KeyValuePairOfstringstring>
+              <e2359:key d4p1:nil="false">ValueHere</e2359:key>
+              <e2359:value d4p1:nil="false">ValueHere</e2359:value>
+            </e2359:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
@@ -138,7 +138,7 @@ The following template shows the order of the [body](#response-body) and [header
               <Details d4p1:nil="false">
                 <TargetSettingDetail>
                   <CriterionTypeGroup>ValueHere</CriterionTypeGroup>
-                  <TargetAll>ValueHere</TargetAll>
+                  <TargetAndBid>ValueHere</TargetAndBid>
                 </TargetSettingDetail>
               </Details>
               <!--These fields are applicable if the derived type attribute is set to CoOpSetting-->
