@@ -755,7 +755,7 @@ Host: <host>
 To send multiple requests in a single HTTP request, use the /$batch template. You may send a maximum of 500 requests in a single batch request.
 
 > [!NOTE]
-> Batch processing is supported only for hotel updates such as price changes.
+> Batch processing is supported only for hotel updates such as bid changes.
 
 ### The request
 
@@ -869,7 +869,8 @@ Content-Type: application/json; odata.metadata=minimal; odata.streaming=true
 OData-Version: 4.0
 
 {
-  "@odata.context":"http://apidomain/ODataApi/Travel/v1/$metadata#Collection(Model.AdsApiError)","@odata.count":1,"value":[
+  "@odata.count":1,
+  "value":[
     {
       "Code":"EntityDoesNotExist","Property":null,"Message":null
     }
