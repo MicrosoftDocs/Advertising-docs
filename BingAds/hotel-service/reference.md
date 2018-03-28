@@ -57,6 +57,8 @@ Next, append a template from the following table to add, get, and update hotel r
 |<a name="associate" />SubAccounts('{subAccountId}')/Associate|POST|Adds a list of hotel and hotel group associations to the subaccount.<br /><br />**Request body**: Contains an [AssociationCollection](#associationcollection) object. The `HotelAssociation` field contains a list with a maximum of 500 [HotelAssociation](#hotelassociation) objects. Each object associates a hotel with a hotel group. You can associate a hotel with only one hotel group.<br /><br />**Response body**: Contains a [CollectionResponse](#collectionresponse) object. The `value` field contains a list of [HotelAssociation](#hotelassociation) objects. The list contains only those associations that failed validation. The list is empty if there are no errors. The association's `Errors` field contains the list of reasons why the association failed.<br /><br />**Resource parameters**:<ul><li>`{subAccountId}`&mdash;Set to the ID of the subaccount to add the associations to.
 |<a name="addreportjob" />ReportJobs|POST|Adds a report request to the report queue. <br /><br />**Request body**: Contains the [ReportJob](#reportjob) object that defines the report request that you're adding to the queue.<br /><br />**Response body**: If the report request is successfully added to the queue, the body is an [AddResponse](#addreponse) object that contains the ID of the report job. Use the ID in subsequent GET requests to get the status of the report job (see the [ReportJobs('{jobId}')](#getreportjob) template).
 |<a name="getreportjob" />ReportJobs('{jobId}')|GET|Gets the status of the specified report job.<br /><br />**Response body**: Contains a [ReportJob](#reportjob) object. Use the `Status` field to determine when the job finishes. When the job is complete, use the URL in the `Url` field to download the report.<br /><br />**Resource parameters**:<ul><li>`{jobId}`&mdash;The ID of the report job to get the status of. Set to the ID of the report job that your POST request returned.</li></ul>
+|<a name="batch" />$batch|POST|Sends a batch request that may contain a maximum of 500 requests. [Read more](manage-hotel-campaigns.md#batch-processing)<br /><br />**Request body**: Contains a string of the individual requests.<br /><br />**Response body**: Contains a string of the corresponding responses.
+
 
 
 ## Query Parameters
@@ -116,6 +118,10 @@ The following are the resource objects used by the API.
 |[SiteMultiplier](#sitemultiplier)|Defines the amount to adjust the base bid by if the user is searching for hotels on one of the specified Bing sites.
 |[SubAccount](#subaccount)|Defines the top-level hotel ads grouping. You can think of this logically as a hotel campaign.
 |[UserCountryMultiplier](#usercountrymultiplier)|Defines the amount to adjust the base bid by if the user accesses one of the Bing domains.
+
+
+> [!NOTE]
+> The response objects include a context field. Because this field may be suppressed in the future or the model may change you should not take a dependency on it. Taking a dependency on this field may break your code in the future.
 
 
 ### AddResponse

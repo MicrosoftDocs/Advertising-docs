@@ -13,6 +13,12 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
+## March 28, 2018
+
+### Nonbreaking change
+
+- Added the /$batch template, which you use to send multiple requests in a single batch request. Currently, batch processing supports only hotel updates such as bid changes. [Read more](../hotel-service/manage-hotel-campaigns.md#batch-processing).
+
 
 ## March 21, 2018
 

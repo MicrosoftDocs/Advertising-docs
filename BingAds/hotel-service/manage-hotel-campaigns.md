@@ -747,3 +747,142 @@ Authorization: Bearer <accesstokengoeshere>
 Accept: application/json
 Host: <host>
 ```
+
+
+
+## Batch processing
+
+To send multiple requests in a single HTTP request, use the /$batch template. You may send a maximum of 500 requests in a single batch request.
+
+> [!NOTE]
+> Batch processing is supported only for hotel updates such as bid changes.
+
+### The request
+
+The following shows an example request.
+
+```
+POST https://<host>/Travel/V1/$batch HTTP/1.1
+Authorization: Bearer <accesstokengoeshere>
+Content-Type: multipart/mixed; boundary=batch_086fe0de-9b26-4d4a-a206-6df2013a2816
+Host: <host>
+Content-Length: 1371
+```
+
+The Content-Type header must be set to multipart/mixed and include the boundary ID. The boundary ID delimits each request in the batch request. The ID is of the form, batch_\<unique string\>. This example uses a GUID as the unique string.
+
+The body of the batch request contains multiple individual requests delimited by the boundary ID. The following shows an example of the body of a batch request. Be sure to terminate each line in the body of the batch request with CRLF (carriage return and line feed).
+
+
+```
+--batch_086fe0de-9b26-4d4a-a206-6df2013a2816
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+PATCH Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups('<groupid>')/Hotels('<hotelid>') HTTP/1.1
+Content-Type: application/json; odata.metadata=minimal
+Host: partner.api.sandbox.bingads.microsoft.com
+
+{"Id":"<hotelid>","Bid":{"Amount":1.75,"@odata.type":"#Model.FixedBid"}}
+
+--batch_086fe0de-9b26-4d4a-a206-6df2013a2816
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+PATCH Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups('groupid>')/Hotels('<hotelid>') HTTP/1.1
+Content-Type: application/json; odata.metadata=minimal
+Host: partner.api.sandbox.bingads.microsoft.com
+
+{"Id":"<hotelid>","Bid":{"Amount":1.75,"@odata.type":"#Model.FixedBid"}}
+
+--batch_086fe0de-9b26-4d4a-a206-6df2013a2816
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+PATCH Customers(<customerid>)/Accounts(<accountid>)/SubAccounts('<subaccountid>')/HotelGroups('groupid>')/Hotels('<hotelid>') HTTP/1.1
+Content-Type: application/json; odata.metadata=minimal
+Host: partner.api.sandbox.bingads.microsoft.com
+
+{"Id":"<hotelid>","Bid":{"Amount":1.75,"@odata.type":"#Model.FixedBid"}}
+
+--batch_086fe0de-9b26-4d4a-a206-6df2013a2816--
+```
+
+Note that each boundary ID is prepended with a double dash (for example, **--**batch_086fe0de-9b26-4d4a-a206-6df2013a2816).
+And the terminating boundary ID that goes after the last request in the batch is enclosed with double dashes (for example, **--**batch_086fe0de-9b26-4d4a-a206-6df2013a2816**--**).
+
+The boundary ID delimiter must be followed by the Content-Type and Content-Transfer-Encoding headers as shown. Because you may only update hotels, the request must use the HTTP PATCH verb and use the hotel template to identify the hotel to update. The request must include the Content-Type header and it must be set to application/json; odata.metadata=minimal. The body of the request is a [Hotel](reference.md#hotel) object. The object must include the hotel's ID and should include only the fields you're updating.
+
+
+### The response
+
+The response is similarly delimited and each item in the response corresponds directly to each item in the request. The response's Content-Type header contains the boundary ID. Get the ID and use it to parse each response item.
+
+
+The following shows the response to the above request.
+
+```
+HTTP/1.1 200 OK
+Content-Type: multipart/mixed; boundary=batchresponse_d33d1715-3dd3-45aa-80a9-854493c8764e
+x-ms-requestid: c0fb9b49-2af0-4b41-bf57-0e4a0f8b55b9
+x-ms-trackingid: 8b652a73-1bef-488d-b7d5-f371a31867a4
+Date: Tue, 27 Mar 2018 20:30:19 GMT
+Content-Length: 512
+
+--batchresponse_d33d1715-3dd3-45aa-80a9-854493c8764e
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 204 No Content
+
+
+--batchresponse_d33d1715-3dd3-45aa-80a9-854493c8764e
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 204 No Content
+
+
+--batchresponse_d33d1715-3dd3-45aa-80a9-854493c8764e
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 204 No Content
+
+
+--batchresponse_d33d1715-3dd3-45aa-80a9-854493c8764e--
+```
+
+Each response item contains an HTTP status. For updates, if the update succeeds, the status is 204. If the update fails (for example, the hotel was not found, a value is not valid, or the hotel object is malformed), the status is 400 and the body contains a list of errors. (A request may fail with other status codes.) 
+
+The following shows a response item that contains an error. If an error occurs, the body contains a [CollectionResponse](reference.md#collectionresponse) object and each item in the `value` array is an [AdsApiError](reference.md#adsapierror) object.
+
+```
+--batchresponse_d0048f4c-8a3f-40aa-9392-718943ecc5f3
+Content-Type: application/http
+Content-Transfer-Encoding: binary
+
+HTTP/1.1 400 Bad Request
+x-ms-requestid: 00b551c2-b552-4cca-9e1b-04e0e5ffb4b7
+x-ms-trackingid: ad383e45-4174-43d7-95bc-cca2ac6176e8
+Content-Type: application/json; odata.metadata=minimal; odata.streaming=true
+OData-Version: 4.0
+
+{
+  "@odata.count":1,
+  "value":[
+    {
+      "Code":"EntityDoesNotExist","Property":null,"Message":null
+    }
+  ]
+}
+--batchresponse_d0048f4c-8a3f-40aa-9392-718943ecc5f3--
+```
+
+### Example code for processing batch requests
+
+For example code that updates hotel pricing in a batch request, see [Batch processing example](code-example-batch.md).
+
+
+
+
