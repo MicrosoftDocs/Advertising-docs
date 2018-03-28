@@ -13,6 +13,12 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
+## March 28, 2018
+
+### Nonbreaking change
+
+- Added the /$batch template to support batch processing. You can now send a maximum of 500 actions in a single request. Currently, batch processing is limited to hotel updates such as pricing changes. [Read more](../hotel-service/manage-hotel-campaigns.md#batch-processing).
+
 
 ## March 21, 2018
 
