@@ -25,8 +25,8 @@ Defines the criteria to use to filter the share of voice report data.
     <xs:element minOccurs="0" name="DeliveredMatchType" nillable="true" type="tns:DeliveredMatchTypeReportFilter" />
     <xs:element minOccurs="0" name="DeviceType" nillable="true" type="tns:DeviceTypeReportFilter" />
     <xs:element minOccurs="0" name="KeywordStatus" nillable="true" type="tns:KeywordStatusReportFilter" />
-    <xs:element minOccurs="0" name="Keywords" nillable="true" type="q22:ArrayOfstring" xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q23:ArrayOfstring" xmlns:q23="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="Keywords" nillable="true" type="q24:ArrayOfstring" xmlns:q24="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q25:ArrayOfstring" xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </xs:sequence>
 </xs:complexType>
 ```

@@ -17,8 +17,8 @@ Defines the criteria to use to filter the geographic performance report data.
     <xs:element minOccurs="0" name="AdDistribution" nillable="true" type="tns:AdDistributionReportFilter" />
     <xs:element minOccurs="0" name="AdGroupStatus" nillable="true" type="tns:AdGroupStatusReportFilter" />
     <xs:element minOccurs="0" name="CampaignStatus" nillable="true" type="tns:CampaignStatusReportFilter" />
-    <xs:element minOccurs="0" name="CountryCode" nillable="true" type="q29:ArrayOfstring" xmlns:q29="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q30:ArrayOfstring" xmlns:q30="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="CountryCode" nillable="true" type="q31:ArrayOfstring" xmlns:q31="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q32:ArrayOfstring" xmlns:q32="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </xs:sequence>
 </xs:complexType>
 ```

@@ -15,7 +15,7 @@ The Ad Insight service defines the following value sets.
 |Value Set|Description|
 |---|---|
 |[AdGroupBidLandscapeType](adgroupbidlandscapetype.md)|Defines the possible values that indicate whether all or a subset of an ad group's existing keywords are used to determine the bid landscape.|
-|[AdPosition](adposition.md)|Defines the possible positions of an ad in the search results or on a content-based webpage.|
+|[AdPosition](adposition.md)|Defines the possible positions of an ad in the search results.|
 |[AuctionSegment](auctionsegment.md)|Defines the possible auction segment values.|
 |[BidOpportunityType](bidopportunitytype.md)|Defines the possible bid opportunity types you can request when calling [GetBidOpportunities](getbidopportunities.md).|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible types of campaign budgets.|
@@ -28,5 +28,5 @@ The Ad Insight service defines the following value sets.
 |[MatchType](matchtype.md)|Defines the possible keyword match type values.|
 |[NetworkType](networktype.md)|Defines the possible search networks on which an ad can display.|
 |[SourceType](sourcetype.md)|Defines the source or seed for the keyword idea.|
-|[TargetAdPosition](targetadposition.md)|Defines the possible positions where you can target an ad to appear in the search results or on a content-based webpage.|
+|[TargetAdPosition](targetadposition.md)|Defines the possible positions where you can target an ad to appear in the search results.|
 |[TimeInterval](timeinterval.md)|Defines the possible time periods that determine the pool of data that the service uses to get the performance statistics of a keyword.|

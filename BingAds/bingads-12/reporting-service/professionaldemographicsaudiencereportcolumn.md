@@ -1,0 +1,99 @@
+---
+title: ProfessionalDemographicsAudienceReportColumn Value Set - Reporting
+ms.service: bing-ads-reporting-service
+ms.topic: article
+author: eric-urban
+ms.author: eur
+description: Defines the attributes and performance statistics columns that you can include in the ProfessionalDemographicsAudienceReportRequest.
+---
+> [!IMPORTANT]
+> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
+
+# ProfessionalDemographicsAudienceReportColumn Value Set - Reporting
+Defines the attributes and performance statistics columns that you can include in the [ProfessionalDemographicsAudienceReportRequest](professionaldemographicsaudiencereportrequest.md).
+
+The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](../guides/reports.md#columnsdata).
+
+For a list of columns that you must include, please see the [Required Columns](#requiredcolumns) section below.
+
+To see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report, see [Report Data Retention Time Periods](../guides/report-data-retention-time-periods.md).
+
+## Syntax
+```xml
+<xs:simpleType name="ProfessionalDemographicsAudienceReportColumn" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="AccountName" />
+    <xs:enumeration value="AccountNumber" />
+    <xs:enumeration value="AccountId" />
+    <xs:enumeration value="TimePeriod" />
+    <xs:enumeration value="CampaignName" />
+    <xs:enumeration value="CampaignId" />
+    <xs:enumeration value="AdGroupName" />
+    <xs:enumeration value="AdGroupId" />
+    <xs:enumeration value="CompanyName" />
+    <xs:enumeration value="IndustryName" />
+    <xs:enumeration value="JobFunctionName" />
+    <xs:enumeration value="AdDistribution" />
+    <xs:enumeration value="Impressions" />
+    <xs:enumeration value="Clicks" />
+    <xs:enumeration value="Spend" />
+    <xs:enumeration value="Conversions" />
+    <xs:enumeration value="Language" />
+    <xs:enumeration value="Assists" />
+    <xs:enumeration value="Revenue" />
+    <xs:enumeration value="AccountStatus" />
+    <xs:enumeration value="CampaignStatus" />
+    <xs:enumeration value="AdGroupStatus" />
+  </xs:restriction>
+</xs:simpleType>
+```
+
+## <a name="values"></a>Values
+
+|Value|Description|
+|-----------|---------------|
+|<a name="accountid"></a>AccountId|The Bing Ads assigned identifier of an account.|
+|<a name="accountname"></a>AccountName|The account name.|
+|<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
+|<a name="accountstatus"></a>AccountStatus|The account status.|
+|<a name="addistribution"></a>AdDistribution|The ad distribution attribute of an ad group.|
+|<a name="adgroupid"></a>AdGroupId|The Bing Ads assigned identifier of an ad group.|
+|<a name="adgroupname"></a>AdGroupName|The ad group name.|
+|<a name="adgroupstatus"></a>AdGroupStatus|The ad group status.|
+|<a name="assists"></a>Assists|The number of times an entity (an account, campaign, ad group, or keyword, for example) contributed to a conversion that is associated with a different entity.<br/>A report on this data shows you how often one keyword assists a conversion on another keyword. This helps you identify which campaigns are dependent on assists for their conversion value.|
+|<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
+|<a name="campaignname"></a>CampaignName|The campaign name.|
+|<a name="campaignstatus"></a>CampaignStatus|The campaign status.|
+|<a name="clicks"></a>Clicks|Clicks are what you pay for.<br/>Clicks typically include a customer clicking an ad on a search results page or on a website on the search network. Clicks can also come from other sources (for example, spiders, robots, and test servers).<br/>You pay for clicks on standard-quality clicks, not on low-quality or invalid clicks.|
+|<a name="companyname"></a>CompanyName|With company targeting, you can show your ads only to people who work at specific companies (according to LinkedIn). You can also exclude people who work for specific companies from seeing your ads.|
+|<a name="conversions"></a>Conversions|A conversion is a click that results in a sale or another measure of success. Conversions are measured by adding a small bit of code to your website pages so that a visitor's progress through your site can be tracked.<br/>Knowing how people interact with your website can give you valuable feedback on improving your website's organization and content.|
+|<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages or other sites on the Audience Network.<br/>Regardless of whether you are driving customers to your website, tracking conversions, or just trying to get your message out, you want to track the number of times your ad is shown.<br/>Run the share of voice report to get an estimate of how many more impressions you could be getting.|
+|<a name="industryname"></a>IndustryName|With industry targeting, you can show your ads only to people who work in specific industries (according to LinkedIn). You can also exclude people who work in specific industries from seeing your ads.|
+|<a name="jobfunctionname"></a>JobFunctionName|With job function targeting, you can show your ads only to people who have specific kinds of jobs (according to LinkedIn). You can also exclude people who have specific kinds of jobs from seeing your ads.|
+|<a name="language"></a>Language|This is the language of the country the ad is served in.|
+|<a name="revenue"></a>Revenue|A value that you can collect using universal event tracking. Based on conversions, revenue can be a constant value per conversion or a variable amount, such as a sales total.<br/>You can track how much money you make for each conversion.<br/>You�ll need to use universal event tracking for the revenue column to show data.|
+|<a name="spend"></a>Spend|The sum of your cost-per-click (CPC) charges for your ads and keywords.<br/>Spend helps you keep track of your budget.|
+|<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
+
+## <a name="remarks"></a>Remarks
+### <a name="requiredcolumns"></a>Required Columns
+The report must include the following columns, and one or more of the performance statistics columns. For more information, see [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).
+
+> [!NOTE]
+> The TimePeriod column is required for all aggregation types except Summary.
+
+|Column|
+|----------|
+|AccountName|
+|AdGroupName|
+|CompanyName|
+|IndustryName|
+|JobFunctionName|
+|TimePeriod|
+
+## Requirements
+Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
+Namespace: https\://bingads.microsoft.com/Reporting/v12  
+
+## Used By
+[ProfessionalDemographicsAudienceReportRequest](professionaldemographicsaudiencereportrequest.md)  

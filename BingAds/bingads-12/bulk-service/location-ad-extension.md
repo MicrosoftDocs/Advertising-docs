@@ -35,7 +35,6 @@ For a *Location Ad Extension* record, the following attribute fields are availab
 - [Id](#id)
 - [Latitude](#latitude)
 - [Longitude](#longitude)
-- [Map Icon](#mapicon)
 - [Modified Time](#modifiedtime)
 - [Parent Id](#parentid)
 - [Phone Number](#phonenumber)
@@ -104,12 +103,8 @@ var bulkLocationAdExtension = new BulkLocationAdExtension
             // 'Longitude' column header in the Bulk file
             LongitudeInMicroDegrees = 0,
         },
-        // 'Map Icon' column header in the Bulk file
-        IconMediaId = null,
         // 'Id' column header in the Bulk file
         Id = locationAdExtensionIdKey,
-        // 'Media Ids' column header in the Bulk file
-        ImageMediaId = imageMediaId, 
         // 'Phone Number' column header in the Bulk file
         PhoneNumber = "206-555-0100",
 
@@ -130,7 +125,7 @@ var bulkLocationAdExtension = new BulkLocationAdExtension
                 },
             },
             // 'End Date' column header in the Bulk file
-            EndDate = new Microsoft.BingAds.V10.CampaignManagement.Date
+            EndDate = new Microsoft.BingAds.V12.CampaignManagement.Date
             {
                 Month = 12,
                 Day = 31,
@@ -311,13 +306,6 @@ If you specify the known coordinates, the service does not confirm whether the s
 > When adding more than 10 location ad extensions, the service resolves coordinates offline, and otherwise resolves coordinates up front during execution of the service operation. The location will not be used in an ad until the coordinates are determined, which can take from seconds to minutes depending on the number of location ad extensions being added and the current demand.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
-**Delete:** Read-only  
-
-### <a name="mapicon"></a>Map Icon
-The identifier of an icon used to mark the business’ location on Bing Maps. You can specify the identifier of a predefined icon or a custom icon that you added by calling the [AddMedia](../campaign-management-service/addmedia.md) Campaign Management service operation. The size of a custom icon can be up to 26x26. For a list of predefined icons, see [LocationAdExtension Remarks](../campaign-management-service/locationadextension.md#remarks).
-
-**Add:** Optional. If you do not specify a map icon when you add the location ad extension, the icon will default to the predefined Generic predefined icon identifier (Production=18000000000115318; Sandbox=97000000000006420).    
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 

@@ -45,7 +45,7 @@ The Campaign Management service defines the following value sets.
 |[ConversionGoalStatus](conversiongoalstatus.md)|Defines the possible user-determined status values of a conversion goal.|
 |[ConversionGoalTrackingStatus](conversiongoaltrackingstatus.md)|Defines the possible system-determined status values of a conversion goal.|
 |[ConversionGoalType](conversiongoaltype.md)|Defines the current possible types of conversion goals.|
-|[CriterionTypeGroup](criteriontypegroup.md)|Reserved.|
+|[CriterionTypeGroup](criteriontypegroup.md)|The type used to group criterions.|
 |[Day](day.md)|Defines the day values that you can specify for day and time criterion.|
 |[DistanceUnit](distanceunit.md)|Defines the possible distance units of a geographical location.|
 |[EntityScope](entityscope.md)|Defines values that you can use to determine whether the remarketing list can only be associated with ad groups within one specified account, or can be associated with any ad groups across all of the customer's accounts.|
@@ -65,9 +65,9 @@ The Campaign Management service defines the following value sets.
 |[PriceExtensionType](priceextensiontype.md)|Defines the possible types of price ad extensions.|
 |[PriceQualifier](pricequalifier.md)|Defines price qualifiers for price ad extensions.|
 |[PriceUnit](priceunit.md)|Defines price units for price ad extensions.|
+|[ProductAudienceType](productaudiencetype.md)|Reserved.|
 |[ProductPartitionType](productpartitiontype.md)|Defines the possible types of product partitions.|
 |[ProfileType](profiletype.md)|Reserved.|
-|[RemarketingTargetingSetting](remarketingtargetingsetting.md)|The targeting setting that is applicable for all audiences e.g., custom audiences and remarketing lists that are associated with this ad group.|
 |[StringOperator](stringoperator.md)|Defines the operators that can be applied to remarketing list rule item string values.|
 |[UetTagTrackingStatus](uettagtrackingstatus.md)|Defines the possible system-determined status values of a UET tag.|
 |[ValueOperator](valueoperator.md)|Defines the operators that can be applied to values within a conversion event goal.|

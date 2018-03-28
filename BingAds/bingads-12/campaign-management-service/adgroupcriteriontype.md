@@ -137,6 +137,13 @@ Defines the possible types of ad group criterions.
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
+        <xs:enumeration value="ProductAudience">
+          <xs:annotation>
+            <xs:appinfo>
+              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">262144</EnumerationValue>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:enumeration>
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -159,6 +166,7 @@ Defines the possible types of ad group criterions.
 |<a name="jobfunction"></a>JobFunction|Reserved.|
 |<a name="location"></a>Location|The ad group criterion is a location criterion.<br/><br/>The *Criterion* element of either an [BiddableAdGroupCriterion](biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](negativeadgroupcriterion.md) can be an instance of [LocationCriterion](locationcriterion.md). In other words you can include some locations, and exclude other locations.<br/><br/>The *CriterionBid* element of a [BiddableAdGroupCriterion](biddableadgroupcriterion.md) must be an instance of [BidMultiplier](bidmultiplier.md) when paired with this criterion type.|
 |<a name="locationintent"></a>LocationIntent|The ad group criterion is a location intent criterion.<br/><br/>The *Criterion* element of a [BiddableAdGroupCriterion](biddableadgroupcriterion.md) can be an instance of [LocationIntentCriterion](locationintentcriterion.md), but location intent criterion are not supported with [NegativeAdGroupCriterion](negativeadgroupcriterion.md).<br/><br/>The *CriterionBid* element of a [BiddableAdGroupCriterion](biddableadgroupcriterion.md) must be nil or empty when paired with this criterion type.|
+|<a name="productaudience"></a>ProductAudience|Reserved.|
 |<a name="productpartition"></a>ProductPartition|The ad group criterion is a product partition criterion.<br/><br/>The *Criterion* element of either an [BiddableAdGroupCriterion](biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](negativeadgroupcriterion.md) can be an instance of [ProductPartition](productpartition.md). In other words you can include some product partitions, and exclude other product partitions.<br/><br/>This criterion type is only used with Bing Shopping campaigns.<br/><br/>The *CriterionBid* element of a [BiddableAdGroupCriterion](biddableadgroupcriterion.md) must be an instance of [FixedBid](fixedbid.md) when paired with this criterion type.|
 |<a name="radius"></a>Radius|The ad group criterion is a radius criterion.<br/><br/>The *Criterion* element of a [BiddableAdGroupCriterion](biddableadgroupcriterion.md) can be an instance of [RadiusCriterion](radiuscriterion.md), but radius criterion are not supported with [NegativeAdGroupCriterion](negativeadgroupcriterion.md).<br/><br/>The *CriterionBid* element of a [BiddableAdGroupCriterion](biddableadgroupcriterion.md) must be an instance of [BidMultiplier](bidmultiplier.md) when paired with this criterion type.|
 |<a name="remarketinglist"></a>RemarketingList|The ad group criterion is a remarketing list association.<br/><br/>This criterion type value is only used by the [GetAdGroupCriterionsByIds](getadgroupcriterionsbyids.md) operation to request the remarketing list associations represented by the [AudienceCriterion](audiencecriterion.md) objects. To manage the remarketing list, see [RemarketingList](remarketinglist.md).|

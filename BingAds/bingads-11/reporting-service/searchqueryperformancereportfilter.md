@@ -21,8 +21,8 @@ Defines the criteria to use to filter the search query performance report data.
     <xs:element minOccurs="0" name="DeliveredMatchType" nillable="true" type="tns:DeliveredMatchTypeReportFilter" />
     <xs:element minOccurs="0" name="ExcludeZeroClicks" type="xs:boolean" />
     <xs:element minOccurs="0" name="KeywordStatus" nillable="true" type="tns:KeywordStatusReportFilter" />
-    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q18:ArrayOfstring" xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="SearchQueries" nillable="true" type="q19:ArrayOfstring" xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q20:ArrayOfstring" xmlns:q20="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="SearchQueries" nillable="true" type="q21:ArrayOfstring" xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </xs:sequence>
 </xs:complexType>
 ```

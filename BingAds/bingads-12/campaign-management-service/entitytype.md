@@ -30,38 +30,17 @@ Defines the possible types of entities.
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="Target">
+    <xs:enumeration value="Ad">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="Ad">
-      <xs:annotation>
-        <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:enumeration>
     <xs:enumeration value="Keyword">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:enumeration>
-    <xs:enumeration value="AdExtension">
-      <xs:annotation>
-        <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">6</EnumerationValue>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:enumeration>
-    <xs:enumeration value="AdGroupCriterion">
-      <xs:annotation>
-        <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">7</EnumerationValue>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
@@ -74,12 +53,9 @@ Defines the possible types of entities.
 |Value|Description|
 |-----------|---------------|
 |<a name="ad"></a>Ad|Request editorial appeal or status for ads.|
-|<a name="adextension"></a>AdExtension|Reserved for future use.|
 |<a name="adgroup"></a>AdGroup|Reserved for future use.|
-|<a name="adgroupcriterion"></a>AdGroupCriterion|Reserved for future use.|
 |<a name="campaign"></a>Campaign|Reserved for future use.|
 |<a name="keyword"></a>Keyword|Request editorial appeal or status for keywords.|
-|<a name="target"></a>Target|Reserved for future use.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

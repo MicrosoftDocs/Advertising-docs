@@ -16,6 +16,7 @@ Defines a list of optional [Audience](audience.md) properties that you can reque
     <xs:simpleType>
       <xs:restriction base="xs:string">
         <xs:enumeration value="SearchSize" />
+        <xs:enumeration value="AudienceNetworkSize" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -26,6 +27,7 @@ Defines a list of optional [Audience](audience.md) properties that you can reque
 
 |Value|Description|
 |-----------|---------------|
+|<a name="audiencenetworksize"></a>AudienceNetworkSize|Request that the *AudienceNetworkSize* element be included within each returned [Audience](audience.md) object.|
 |<a name="searchsize"></a>SearchSize|Request that the *SearchSize* element be included within each returned [Audience](audience.md) object.|
 
 ## Requirements

@@ -908,8 +908,6 @@
           href: ../campaign-management-service/getlistitemsbysharedlist.md
         - name: GetMediaAssociations
           href: ../campaign-management-service/getmediaassociations.md
-        - name: GetMediaByIds
-          href: ../campaign-management-service/getmediabyids.md
         - name: GetMediaMetaDataByAccountId
           href: ../campaign-management-service/getmediametadatabyaccountid.md
         - name: GetMediaMetaDataByIds
@@ -1185,6 +1183,8 @@
           href: ../campaign-management-service/pricetablerow.md
         - name: ProductAd
           href: ../campaign-management-service/productad.md
+        - name: ProductAudience
+          href: ../campaign-management-service/productaudience.md
         - name: ProductCondition
           href: ../campaign-management-service/productcondition.md
         - name: ProductPartition
@@ -1350,12 +1350,12 @@
           href: ../campaign-management-service/pricequalifier.md
         - name: PriceUnit
           href: ../campaign-management-service/priceunit.md
+        - name: ProductAudienceType
+          href: ../campaign-management-service/productaudiencetype.md
         - name: ProductPartitionType
           href: ../campaign-management-service/productpartitiontype.md
         - name: ProfileType
           href: ../campaign-management-service/profiletype.md
-        - name: RemarketingTargetingSetting
-          href: ../campaign-management-service/remarketingtargetingsetting.md
         - name: StringOperator
           href: ../campaign-management-service/stringoperator.md
         - name: UetTagTrackingStatus
@@ -1629,6 +1629,10 @@
           href: ../reporting-service/adperformancereportfilter.md
         - name: AdPerformanceReportRequest
           href: ../reporting-service/adperformancereportrequest.md
+        - name: AgeGenderAudienceReportFilter
+          href: ../reporting-service/agegenderaudiencereportfilter.md
+        - name: AgeGenderAudienceReportRequest
+          href: ../reporting-service/agegenderaudiencereportrequest.md
         - name: AgeGenderDemographicReportFilter
           href: ../reporting-service/agegenderdemographicreportfilter.md
         - name: AgeGenderDemographicReportRequest
@@ -1715,6 +1719,10 @@
           href: ../reporting-service/productsearchqueryperformancereportfilter.md
         - name: ProductSearchQueryPerformanceReportRequest
           href: ../reporting-service/productsearchqueryperformancereportrequest.md
+        - name: ProfessionalDemographicsAudienceReportFilter
+          href: ../reporting-service/professionaldemographicsaudiencereportfilter.md
+        - name: ProfessionalDemographicsAudienceReportRequest
+          href: ../reporting-service/professionaldemographicsaudiencereportrequest.md
         - name: PublisherUsagePerformanceReportFilter
           href: ../reporting-service/publisherusageperformancereportfilter.md
         - name: PublisherUsagePerformanceReportRequest
@@ -1768,6 +1776,8 @@
           href: ../reporting-service/adstatusreportfilter.md
         - name: AdTypeReportFilter
           href: ../reporting-service/adtypereportfilter.md
+        - name: AgeGenderAudienceReportColumn
+          href: ../reporting-service/agegenderaudiencereportcolumn.md
         - name: AgeGenderDemographicReportColumn
           href: ../reporting-service/agegenderdemographicreportcolumn.md
         - name: AudiencePerformanceReportColumn
@@ -1826,6 +1836,8 @@
           href: ../reporting-service/productpartitionunitperformancereportcolumn.md
         - name: ProductSearchQueryPerformanceReportColumn
           href: ../reporting-service/productsearchqueryperformancereportcolumn.md
+        - name: ProfessionalDemographicsAudienceReportColumn
+          href: ../reporting-service/professionaldemographicsaudiencereportcolumn.md
         - name: PublisherUsagePerformanceReportColumn
           href: ../reporting-service/publisherusageperformancereportcolumn.md
         - name: ReportAggregation

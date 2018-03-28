@@ -23,6 +23,7 @@ The Reporting service defines the following value sets.
 |[AdPerformanceReportColumn](adperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [AdPerformanceReportRequest](adperformancereportrequest.md).|
 |[AdStatusReportFilter](adstatusreportfilter.md)|Defines the ad status values that you can use to filter the report data.|
 |[AdTypeReportFilter](adtypereportfilter.md)|Defines the ad type values that you can use to filter the report data.|
+|[AgeGenderAudienceReportColumn](agegenderaudiencereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [AgeGenderAudienceReportRequest](agegenderaudiencereportrequest.md).|
 |[AgeGenderDemographicReportColumn](agegenderdemographicreportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [AgeGenderDemographicReportRequest](agegenderdemographicreportrequest.md).|
 |[AudiencePerformanceReportColumn](audienceperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [AudiencePerformanceReportRequest](audienceperformancereportrequest.md).|
 |[BidMatchTypeReportFilter](bidmatchtypereportfilter.md)|Defines the bid match type values that you can use to filter the report data.|
@@ -53,6 +54,7 @@ The Reporting service defines the following value sets.
 |[ProductPartitionPerformanceReportColumn](productpartitionperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ProductPartitionPerformanceReportRequest](productpartitionperformancereportrequest.md).|
 |[ProductPartitionUnitPerformanceReportColumn](productpartitionunitperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ProductPartitionUnitPerformanceReportRequest](productpartitionunitperformancereportrequest.md).|
 |[ProductSearchQueryPerformanceReportColumn](productsearchqueryperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ProductSearchQueryPerformanceReportRequest](productsearchqueryperformancereportrequest.md).|
+|[ProfessionalDemographicsAudienceReportColumn](professionaldemographicsaudiencereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ProfessionalDemographicsAudienceReportRequest](professionaldemographicsaudiencereportrequest.md).|
 |[PublisherUsagePerformanceReportColumn](publisherusageperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [PublisherUsagePerformanceReportRequest](publisherusageperformancereportrequest.md).|
 |[ReportAggregation](reportaggregation.md)|Defines the aggregation values that you can use for a report.|
 |[ReportFormat](reportformat.md)|Defines the file formats that you can use for a report.|

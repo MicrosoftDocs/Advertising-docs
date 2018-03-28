@@ -18,8 +18,8 @@ Defines the criteria to use to filter the DSA search query performance report da
     <xs:element minOccurs="0" name="AdStatus" nillable="true" type="tns:AdStatusReportFilter" />
     <xs:element minOccurs="0" name="CampaignStatus" nillable="true" type="tns:CampaignStatusReportFilter" />
     <xs:element minOccurs="0" name="ExcludeZeroClicks" type="xs:boolean" />
-    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q31:ArrayOfstring" xmlns:q31="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="SearchQueries" nillable="true" type="q32:ArrayOfstring" xmlns:q32="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q33:ArrayOfstring" xmlns:q33="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="SearchQueries" nillable="true" type="q34:ArrayOfstring" xmlns:q34="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </xs:sequence>
 </xs:complexType>
 ```

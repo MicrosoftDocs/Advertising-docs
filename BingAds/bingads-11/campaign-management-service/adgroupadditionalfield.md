@@ -29,8 +29,8 @@ Defines a list of optional [AdGroup](adgroup.md) properties that you can request
 |Value|Description|
 |-----------|---------------|
 |<a name="inheritedbidstrategytype"></a>InheritedBidStrategyType|Request that the *InheritedBidStrategyType* element be included within each returned [InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md) object (nested within the *BiddingScheme* element of an [AdGroup](adgroup.md)).|
-|<a name="privacystatus"></a>PrivacyStatus|Reserved.|
-|<a name="targetsetting"></a>TargetSetting|Reserved.|
+|<a name="privacystatus"></a>PrivacyStatus|Request that the *PrivacyStatus* element be included within each returned [AdGroup](adgroup.md) object.|
+|<a name="targetsetting"></a>TargetSetting|Request that the *TargetSetting* element be included within each returned [AdGroup](adgroup.md) object.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

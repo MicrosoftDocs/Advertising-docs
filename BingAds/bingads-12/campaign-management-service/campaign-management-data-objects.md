@@ -121,6 +121,7 @@ The Campaign Management service defines the following data objects.
 |[PriceAdExtension](priceadextension.md)|Defines an ad extension that includes between 3 and 8 price table rows.|
 |[PriceTableRow](pricetablerow.md)|Defines pricing information by currency and unit that you can use with price ad extensions.|
 |[ProductAd](productad.md)|Defines a product ad.|
+|[ProductAudience](productaudience.md)|Reserved.|
 |[ProductCondition](productcondition.md)|Defines a condition that determines whether a product is selected from a customer's Bing Merchant Center catalog file.|
 |[ProductPartition](productpartition.md)|Defines an ad group level product partition with one condition that helps determine whether a product from the Bing Merchant Center store gets served as a product ad.|
 |[ProductScope](productscope.md)|Defines a campaign level product scope with list of conditions that help determine whether a product from the Bing Merchant Center store gets served as a product ad.|

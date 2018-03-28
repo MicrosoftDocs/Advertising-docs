@@ -15,7 +15,7 @@ dev_langs:
 Gets the specified media from an account's media library.
 
 > [!NOTE]
-> This operation only supports media identifiers for location ad extensions. For getting image ad extension media, you should use [GetMediaMetaDataByIds](getmediametadatabyids.md).
+> This operation is reserved for internal use. To get information about media for [ImageAdExtension](imageadextension.md) and [ResponsiveAd](responsivead.md), you should use [GetMediaMetaDataByIds](getmediametadatabyids.md).
 
 ## <a name="request"></a>Request Elements
 The *GetMediaByIdsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -25,7 +25,7 @@ The *GetMediaByIdsRequest* object defines the [body](#request-body) and [header]
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that owns the media library.|**long**|
-|<a name="mediaids"></a>MediaIds|The identifiers of the media to get.<br /><br />You can specify a maximum of 10 media identifiers in a single call.|**long** array|
+|<a name="mediaids"></a>MediaIds|The identifiers of the media to get.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

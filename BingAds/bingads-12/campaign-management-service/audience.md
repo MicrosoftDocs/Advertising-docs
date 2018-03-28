@@ -21,20 +21,16 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
 ```xml
 <xs:complexType name="Audience" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
+    <xs:element minOccurs="0" name="AudienceNetworkSize" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q83:ArrayOfKeyValuePairOfstringstring" xmlns:q83="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q82:ArrayOfKeyValuePairOfstringstring" xmlns:q82="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="MembershipDuration" nillable="true" type="xs:int" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="ParentId" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Scope" nillable="true" type="tns:EntityScope" />
-    <xs:element minOccurs="0" name="SearchSize" nillable="true" type="xs:long">
-      <xs:annotation>
-        <xs:appinfo>
-          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:element>
+    <xs:element minOccurs="0" name="SearchSize" nillable="true" type="xs:long" />
+    <xs:element minOccurs="0" name="SupportedCampaignTypes" nillable="true" type="q83:ArrayOfstring" xmlns:q83="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="Type" type="tns:AudienceType" />
   </xs:sequence>
 </xs:complexType>
@@ -44,6 +40,7 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
+|<a name="audiencenetworksize"></a>AudienceNetworkSize|Reserved.|**long**|
 |<a name="description"></a>Description|The description of the audience. Use a description to help you remember what audience you are targeting.<br/><br/>The description can contain a maximum of 1,024 characters.|**string**|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The Bing Ads identifier of the audience.|**long**|
@@ -51,7 +48,8 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
 |<a name="name"></a>Name|The name of the audience. The name can contain a maximum of 128 characters.|**string**|
 |<a name="parentid"></a>ParentId|The Bing Ads identifier of the account or customer. <br/><br/>If the *Scope* is set to *Account*, this is the account ID, and otherwise it is the customer ID.|**long**|
 |<a name="scope"></a>Scope|Scope defines what accounts can use this audience.<br/><br/> If scope is set to *Account*, the audience can only be associated with ad groups within one specified account (*ParentId*). If scope is set to *Customer*, the audience can be associated with any ad groups across all of the customer's accounts.|[EntityScope](entityscope.md)|
-|<a name="searchsize"></a>SearchSize|The total number of people who belong to this audience. This gives you an idea of how many search users you can target.<br/><br/>This property will be nil or empty if the search audience size is less than 1,000. The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.<br/><br/>This property will be nil or empty for up to 24 hours while the audience is being built, for example if you add or update the remarketing list membership duration, rule, or tag identifier. Likewise if you have imported new custom audiences from DMP, it takes 24 hours to build the audience, and in the meantime this property will be nil or empty.<br/><br/>This property will be nil or empty if the UET tag associated with the remarketing list has a status of Unverified or Inactive, because the remarketing list can't receive the customer information from your website that it needs to build the list.|**long**|
+|<a name="searchsize"></a>SearchSize|The total number of people who belong to this audience. This gives you an idea of how many search users you can target.<br/><br/>The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.<br/><br/>This property will be nil or empty for up to 24 hours while the audience is being built, for example if you add or update the remarketing list membership duration, rule, or tag identifier. Likewise if you have imported new custom audiences from DMP, it takes 24 hours to build the audience, and in the meantime this property will be nil or empty.<br/><br/>This property will be nil or empty if the UET tag associated with the remarketing list has a status of Unverified or Inactive, because the remarketing list can't receive the customer information from your website that it needs to build the list.|**long**|
+|<a name="supportedcampaigntypes"></a>SupportedCampaignTypes|The list of campaign types that support this audience.<br/><br/>Supported value are Audience, DynamicSearchAds, Search, and Shopping. New campaign types might be added in the future, so you should not take any dependency on a fixed set of values.|**string** array|
 |<a name="type"></a>Type|The type of the audience. For more information about audience types, see the [Remarks](#remarks).|[AudienceType](audiencetype.md)|
 
 ## <a name="remarks"></a>Remarks

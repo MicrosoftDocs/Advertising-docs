@@ -57,7 +57,7 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
         service='CampaignManagementService', 
         authorization_data=authorization_data, 
         environment = ENVIRONMENT,
-        version = 11,
+        version = 12,
     )
     print campaign_service.soap_client
     ```
@@ -76,7 +76,7 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
                         'Month': '12',
                         'Year': strftime("%Y", gmtime())
                     },
-                    'SearchBid': {
+                    'CpcBid': {
                         'Amount': 0.09
                     },
                     'Language': 'English'

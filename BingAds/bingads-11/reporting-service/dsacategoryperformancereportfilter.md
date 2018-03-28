@@ -17,7 +17,7 @@ Defines the criteria to use to filter the DSA category performance report data.
     <xs:element minOccurs="0" name="AdGroupStatus" nillable="true" type="tns:AdGroupStatusReportFilter" />
     <xs:element minOccurs="0" name="AdStatus" nillable="true" type="tns:AdStatusReportFilter" />
     <xs:element minOccurs="0" name="CampaignStatus" nillable="true" type="tns:CampaignStatusReportFilter" />
-    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q34:ArrayOfstring" xmlns:q34="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q36:ArrayOfstring" xmlns:q36="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </xs:sequence>
 </xs:complexType>
 ```

@@ -82,7 +82,6 @@ The Campaign Management service defines the following service operations.
 |[GetLabelsByIds](getlabelsbyids.md)|Gets labels by label identifiers.|1,000 *LabelIds*|
 |[GetListItemsBySharedList](getlistitemsbysharedlist.md)|Gets the negative keywords of a negative keyword list.|1 *SharedList*|
 |[GetMediaAssociations](getmediaassociations.md)|Gets the media associations of the specified entity type from an account's media library.|1 *AccountId*<br /><br />10 *MediaIds*|
-|[GetMediaByIds](getmediabyids.md)|Gets the specified media from an account's media library.|1 *AccountId*<br /><br />10 *MediaIds*|
 |[GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md)|Gets the media meta data of the specified entity type from an account's media library.|Not applicable.|
 |[GetMediaMetaDataByIds](getmediametadatabyids.md)|Gets the specified media meta data from an account's media library.|100 *MediaIds*|
 |[GetNegativeKeywordsByEntityIds](getnegativekeywordsbyentityids.md)|Gets the negative keywords that are only associated with the specified campaigns or ad groups.|1 *ParentEntityId*<br /><br />1 *EntityIds*|

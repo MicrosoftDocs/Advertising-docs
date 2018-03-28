@@ -19,8 +19,8 @@ Defines the criteria to use to filter the Bing Shopping product search query per
     <xs:element minOccurs="0" name="AdType" nillable="true" type="tns:AdTypeReportFilter" />
     <xs:element minOccurs="0" name="CampaignStatus" nillable="true" type="tns:CampaignStatusReportFilter" />
     <xs:element minOccurs="0" name="ExcludeZeroClicks" type="xs:boolean" />
-    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q27:ArrayOfstring" xmlns:q27="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="SearchQueries" nillable="true" type="q28:ArrayOfstring" xmlns:q28="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q29:ArrayOfstring" xmlns:q29="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="SearchQueries" nillable="true" type="q30:ArrayOfstring" xmlns:q30="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </xs:sequence>
 </xs:complexType>
 ```
