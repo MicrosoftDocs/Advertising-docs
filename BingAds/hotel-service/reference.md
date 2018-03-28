@@ -121,7 +121,7 @@ The following are the resource objects used by the API.
 
 
 > [!NOTE]
-> The response objects include a context field. Because this field may be supressed in the future or the model may change you should not take a dependency on it. Taking a dependency on this field may break your code in the future.
+> The response objects include a context field. Because this field may be suppressed in the future or the model may change you should not take a dependency on it. Taking a dependency on this field may break your code in the future.
 
 
 ### AddResponse
