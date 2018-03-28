@@ -17,9 +17,6 @@ dev_langs:
 # DeleteMedia Service Operation - Campaign Management
 Deletes the specified media from an account's media library.
 
-> [!NOTE]
-> This service operation is not yet supported.
-
 ## <a name="request"></a>Request Elements
 The *DeleteMediaRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
@@ -28,7 +25,7 @@ The *DeleteMediaRequest* object defines the [body](#request-body) and [header](#
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that owns the media library.|**long**|
-|<a name="mediaids"></a>MediaIds|A maximum of 100 media identifiers to delete from the account's media library.|**long** array|
+|<a name="mediaids"></a>MediaIds|A maximum of 100 media identifiers to delete from the account's media library.<br/><br/>You cannot delete media that is associated or assigned to an [ImageAdExtension](imageadextension.md) or [ResponsiveAd](responsivead.md) object. Otherwise this operation will return the 4024 CampaignServiceMediaIsAssociated error.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -87,11 +84,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1096="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1096:KeyValuePairOfstringstring>
-              <e1096:key d4p1:nil="false">ValueHere</e1096:key>
-              <e1096:value d4p1:nil="false">ValueHere</e1096:value>
-            </e1096:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2334="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e2334:KeyValuePairOfstringstring>
+              <e2334:key d4p1:nil="false">ValueHere</e2334:key>
+              <e2334:value d4p1:nil="false">ValueHere</e2334:value>
+            </e2334:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

@@ -25,14 +25,14 @@ You must first set up an [AdvertiserAccount](../customer-management-service/adve
 Using the [Campaign Management](../campaign-management-service/campaign-management-service-reference.md) service, you can set the following properties within the supported value ranges described in the table below. 
 - The *Amount* element of a [Budget](../campaign-management-service/budget.md) object
 - The *DailyBudget* element of a [Campaign](../campaign-management-service/campaign.md) object
-- The *SearchBid* and *ContentMatchBid* element of an [AdGroup](../campaign-management-service/adgroup.md) object
+- The *CpcBid* element of an [AdGroup](../campaign-management-service/adgroup.md) object
 - The *Bid* element of a [Keyword](../campaign-management-service/keyword.md) object
 - The *CriterionBid* element of a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) object
 
 Using the [Bulk](../bulk-service/bulk-service-reference.md) service, you can set the following properties within the supported value ranges described in the table below. 
 - The *Budget* field of a [Budget](../bulk-service/budget.md) record
 - The *Budget* field of a [Campaign](../bulk-service/campaign.md) record
-- The *Search Bid* and *Content Bid* field of an [AdGroup](../bulk-service/ad-group.md) record
+- The *Cpc Bid* field of an [AdGroup](../bulk-service/ad-group.md) record
 - The *Bid* field of a [Keyword](../bulk-service/keyword.md) record
 - The *Bid* field of an [Ad Group Product Partition](../bulk-service/campaign.md) record
 
@@ -97,7 +97,7 @@ The following currency codes are supported for conversion goals by setting the *
 |CLP|Chilean Peso|
 |CNY|Chinese Yuan|
 |COP|Colombian Peso|
-|CRC|Costa Rican Col?n|
+|CRC|Costa Rican Colon|
 |CZK|Czech Republic Koruna|
 |DKK|Danish Krone|
 |DOP|Dominican Peso|
@@ -118,7 +118,7 @@ The following currency codes are supported for conversion goals by setting the *
 |ILS|Israeli New Shekel|
 |INR|Indian Rupee|
 |IQD|Iraqi Dinar|
-|ISK|Icelandic Kr?na|
+|ISK|Icelandic Krona|
 |JMD|Jamaican Dollar|
 |JOD|Jordanian Dinar|
 |JPY|Japanese Yen|
@@ -140,7 +140,7 @@ The following currency codes are supported for conversion goals by setting the *
 |MXN|Mexican Peso|
 |MYR|Malaysian Ringgit|
 |NGN|Nigerian Naira|
-|NIO|Nicaraguan C?rdoba|
+|NIO|Nicaraguan Cordoba|
 |NOK|Norwegian Krone|
 |NZD|New Zealand Dollar|
 |OMR|Omani Rial|

@@ -18,7 +18,7 @@ Defines the criteria to use to filter the DSA auto target performance report dat
     <xs:element minOccurs="0" name="BidStrategyType" nillable="true" type="tns:BidStrategyTypeReportFilter" />
     <xs:element minOccurs="0" name="CampaignStatus" nillable="true" type="tns:CampaignStatusReportFilter" />
     <xs:element minOccurs="0" name="DynamicAdTargetStatus" nillable="true" type="tns:DynamicAdTargetStatusReportFilter" />
-    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q33:ArrayOfstring" xmlns:q33="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q35:ArrayOfstring" xmlns:q35="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </xs:sequence>
 </xs:complexType>
 ```

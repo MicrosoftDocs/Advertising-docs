@@ -86,7 +86,7 @@ The name can contain a maximum of 128 characters
 ### <a name="audiencesearchsize"></a>Audience Search Size
 The total number of people who belong to this audience. This gives you an idea of how many search users you can target.
 
-This property will be empty if the search audience size is less than 1,000. The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
+The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
 
 **Add:** Read-only  
 **Update:** Read-only    

@@ -54,7 +54,7 @@ The [EditorialError](editorialerror.md) object derives from the [BatchError](bat
 |<a name="fieldpath"></a>FieldPath|Reserved for future use.|**string**|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="index"></a>Index|The zero-based index of the item in the batch of items in the request message that failed.	|**int**|
-|<a name="message"></a>Message|A message that describes the error.|**string**|
+|<a name="message"></a>Message|A message that describes the error.<br/><br/>For more information about troubleshooting and error handling, see [Handling Service Errors and Exceptions](../guides/handle-service-errors-exceptions.md) and [Operation Error Codes](../guides/operation-error-codes.md).|**string**|
 |<a name="type"></a>Type|Reserved for future use.|**string**|
 
 ## Requirements

@@ -109,11 +109,11 @@ The following template shows the order of the [body](#response-body) and [header
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e1108="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1108:KeyValuePairOfstringstring>
-              <e1108:key d4p1:nil="false">ValueHere</e1108:key>
-              <e1108:value d4p1:nil="false">ValueHere</e1108:value>
-            </e1108:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2346="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e2346:KeyValuePairOfstringstring>
+              <e2346:key d4p1:nil="false">ValueHere</e2346:key>
+              <e2346:value d4p1:nil="false">ValueHere</e2346:value>
+            </e2346:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Language d4p1:nil="false">ValueHere</Language>
@@ -121,7 +121,6 @@ The following template shows the order of the [body](#response-body) and [header
           <NativeBidAdjustment d4p1:nil="false">ValueHere</NativeBidAdjustment>
           <Network d4p1:nil="false">ValueHere</Network>
           <PrivacyStatus d4p1:nil="false">ValueHere</PrivacyStatus>
-          <RemarketingTargetingSetting d4p1:nil="false">ValueHere</RemarketingTargetingSetting>
           <Settings d4p1:nil="false">
             <Setting d4p1:type="-- derived type specified here with the appropriate prefix --">
               <Type d4p1:nil="false">ValueHere</Type>
@@ -137,7 +136,7 @@ The following template shows the order of the [body](#response-body) and [header
               <Details d4p1:nil="false">
                 <TargetSettingDetail>
                   <CriterionTypeGroup>ValueHere</CriterionTypeGroup>
-                  <TargetAll>ValueHere</TargetAll>
+                  <TargetAndBid>ValueHere</TargetAndBid>
                 </TargetSettingDetail>
               </Details>
               <!--These fields are applicable if the derived type attribute is set to CoOpSetting-->

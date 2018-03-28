@@ -89,11 +89,11 @@ The following template shows the order of the [body](#response-body) and [header
             <AdExtensionAssociation>
               <AdExtension d4p1:nil="false" d4p1:type="-- derived type specified here with the appropriate prefix --">
                 <DevicePreference d4p1:nil="false">ValueHere</DevicePreference>
-                <ForwardCompatibilityMap xmlns:e1103="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-                  <e1103:KeyValuePairOfstringstring>
-                    <e1103:key d4p1:nil="false">ValueHere</e1103:key>
-                    <e1103:value d4p1:nil="false">ValueHere</e1103:value>
-                  </e1103:KeyValuePairOfstringstring>
+                <ForwardCompatibilityMap xmlns:e2341="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+                  <e2341:KeyValuePairOfstringstring>
+                    <e2341:key d4p1:nil="false">ValueHere</e2341:key>
+                    <e2341:value d4p1:nil="false">ValueHere</e2341:value>
+                  </e2341:KeyValuePairOfstringstring>
                 </ForwardCompatibilityMap>
                 <Id d4p1:nil="false">ValueHere</Id>
                 <Scheduling d4p1:nil="false">
@@ -137,8 +137,6 @@ The following template shows the order of the [body](#response-body) and [header
                   <LatitudeInMicroDegrees>ValueHere</LatitudeInMicroDegrees>
                   <LongitudeInMicroDegrees>ValueHere</LongitudeInMicroDegrees>
                 </GeoPoint>
-                <IconMediaId d4p1:nil="false">ValueHere</IconMediaId>
-                <ImageMediaId d4p1:nil="false">ValueHere</ImageMediaId>
                 <PhoneNumber d4p1:nil="false">ValueHere</PhoneNumber>
                 <!--These fields are applicable if the derived type attribute is set to CallAdExtension-->
                 <CountryCode d4p1:nil="false">ValueHere</CountryCode>
@@ -282,11 +280,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1104="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1104:KeyValuePairOfstringstring>
-              <e1104:key d4p1:nil="false">ValueHere</e1104:key>
-              <e1104:value d4p1:nil="false">ValueHere</e1104:value>
-            </e1104:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2342="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e2342:KeyValuePairOfstringstring>
+              <e2342:key d4p1:nil="false">ValueHere</e2342:key>
+              <e2342:value d4p1:nil="false">ValueHere</e2342:value>
+            </e2342:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

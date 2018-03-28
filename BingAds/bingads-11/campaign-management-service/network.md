@@ -18,6 +18,7 @@ For more information about networks and ad distribution, see the [About Ad Distr
     <xs:enumeration value="OwnedAndOperatedAndSyndicatedSearch" />
     <xs:enumeration value="OwnedAndOperatedOnly" />
     <xs:enumeration value="SyndicatedSearchOnly" />
+    <xs:enumeration value="InHousePromotion" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -26,6 +27,7 @@ For more information about networks and ad distribution, see the [About Ad Distr
 
 |Value|Description|
 |-----------|---------------|
+|<a name="inhousepromotion"></a>InHousePromotion|Reserved.|
 |<a name="ownedandoperatedandsyndicatedsearch"></a>OwnedAndOperatedAndSyndicatedSearch|Display ads on owned and operated networks, as well as syndicated search networks.|
 |<a name="ownedandoperatedonly"></a>OwnedAndOperatedOnly|Display ads on only owned and operated networks.<br /><br />Owned and operated networks refer to the Bing, AOL, and Yahoo search networks.|
 |<a name="syndicatedsearchonly"></a>SyndicatedSearchOnly|Display ads on only syndicated search networks.<br /><br />Syndicated search refers to partner sites that host Bing, AOL, and Yahoo search.|

@@ -98,11 +98,11 @@ The following template shows the order of the [body](#request-body) and [header]
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e1154="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e1154:KeyValuePairOfstringstring>
-              <e1154:key i:nil="false">ValueHere</e1154:key>
-              <e1154:value i:nil="false">ValueHere</e1154:value>
-            </e1154:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2392="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e2392:KeyValuePairOfstringstring>
+              <e2392:key i:nil="false">ValueHere</e2392:key>
+              <e2392:value i:nil="false">ValueHere</e2392:value>
+            </e2392:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Language i:nil="false">ValueHere</Language>
@@ -110,7 +110,6 @@ The following template shows the order of the [body](#request-body) and [header]
           <NativeBidAdjustment i:nil="false">ValueHere</NativeBidAdjustment>
           <Network i:nil="false">ValueHere</Network>
           <PrivacyStatus i:nil="false">ValueHere</PrivacyStatus>
-          <RemarketingTargetingSetting i:nil="false">ValueHere</RemarketingTargetingSetting>
           <Settings i:nil="false">
             <Setting i:type="-- derived type specified here with the appropriate prefix --">
               <Type i:nil="false">ValueHere</Type>
@@ -126,7 +125,7 @@ The following template shows the order of the [body](#request-body) and [header]
               <Details i:nil="false">
                 <TargetSettingDetail>
                   <CriterionTypeGroup>ValueHere</CriterionTypeGroup>
-                  <TargetAll>ValueHere</TargetAll>
+                  <TargetAndBid>ValueHere</TargetAndBid>
                 </TargetSettingDetail>
               </Details>
               <!--These fields are applicable if the derived type attribute is set to CoOpSetting-->
@@ -178,11 +177,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1155="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1155:KeyValuePairOfstringstring>
-              <e1155:key d4p1:nil="false">ValueHere</e1155:key>
-              <e1155:value d4p1:nil="false">ValueHere</e1155:value>
-            </e1155:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2393="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e2393:KeyValuePairOfstringstring>
+              <e2393:key d4p1:nil="false">ValueHere</e2393:key>
+              <e2393:value d4p1:nil="false">ValueHere</e2393:value>
+            </e2393:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

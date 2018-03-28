@@ -4,13 +4,13 @@ ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the possible positions where you can target an ad to appear in the search results or on a content-based webpage.
+description: Defines the possible positions where you can target an ad to appear in the search results.
 ---
 > [!IMPORTANT]
 > This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
 
 # TargetAdPosition Value Set - Ad Insight
-Defines the possible positions where you can target an ad to appear in the search results or on a content-based webpage.
+Defines the possible positions where you can target an ad to appear in the search results.
 
 ## Syntax
 ```xml
@@ -18,7 +18,7 @@ Defines the possible positions where you can target an ad to appear in the searc
   <xs:restriction base="xs:string">
     <xs:enumeration value="MainLine1" />
     <xs:enumeration value="MainLine" />
-    <xs:enumeration value="SideBar" />
+    <xs:enumeration value="FirstPage" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -29,7 +29,7 @@ Defines the possible positions where you can target an ad to appear in the searc
 |-----------|---------------|
 |<a name="mainline"></a>MainLine|Target the second, third, and fourth positions at the top of the search results page.|
 |<a name="mainline1"></a>MainLine1|Target the first position at the top of the search results page.|
-|<a name="sidebar"></a>SideBar|Target any position on the right side of the search results page.|
+|<a name="firstpage"></a>FirstPage|Target any position on the right side of the search results page.|
 
 ## Requirements
 Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  

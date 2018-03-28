@@ -29,7 +29,7 @@ Defines the possible campaign types.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="audience"></a>Audience|Reserved.|
+|<a name="audience"></a>Audience|The campaign is an Audience campaign.|
 |<a name="dynamicsearchads"></a>DynamicSearchAds|The campaign is a Dynamic Search Ads campaign.|
 |<a name="searchandcontent"></a>SearchAndContent|The campaign is a Search and Content campaign.|
 |<a name="shopping"></a>Shopping|The campaign is a Bing Shopping campaign.|

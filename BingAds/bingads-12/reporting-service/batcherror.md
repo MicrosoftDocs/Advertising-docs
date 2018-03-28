@@ -33,7 +33,7 @@ Defines an error object that identifies the item within the batch of items in th
 |<a name="details"></a>Details|A message that provides additional details about the batch error. This string can be empty.|**string**|
 |<a name="errorcode"></a>ErrorCode|A symbolic string constant that identifies the error. For example, *UserIsNotAuthorized*.|**string**|
 |<a name="index"></a>Index|The zero-based index of the item in the batch of items in the request message that failed.|**int**|
-|<a name="message"></a>Message|A message that describes the error.|**string**|
+|<a name="message"></a>Message|A message that describes the error.<br/><br/>For more information about troubleshooting and error handling, see [Handling Service Errors and Exceptions](../guides/handle-service-errors-exceptions.md) and [Operation Error Codes](../guides/operation-error-codes.md).|**string**|
 
 ## Requirements
 Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  

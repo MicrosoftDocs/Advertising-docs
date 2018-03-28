@@ -125,11 +125,11 @@ The following template shows the order of the [body](#request-body) and [header]
             <ProfileId>ValueHere</ProfileId>
             <ProfileType>ValueHere</ProfileType>
           </Criterion>
-          <ForwardCompatibilityMap xmlns:e1063="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e1063:KeyValuePairOfstringstring>
-              <e1063:key i:nil="false">ValueHere</e1063:key>
-              <e1063:value i:nil="false">ValueHere</e1063:value>
-            </e1063:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2301="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e2301:KeyValuePairOfstringstring>
+              <e2301:key i:nil="false">ValueHere</e2301:key>
+              <e2301:value i:nil="false">ValueHere</e2301:value>
+            </e2301:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Status i:nil="false">ValueHere</Status>
@@ -173,11 +173,11 @@ The following template shows the order of the [body](#response-body) and [header
               <Details d4p1:nil="false">ValueHere</Details>
               <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
               <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-              <ForwardCompatibilityMap xmlns:e1064="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-                <e1064:KeyValuePairOfstringstring>
-                  <e1064:key d4p1:nil="false">ValueHere</e1064:key>
-                  <e1064:value d4p1:nil="false">ValueHere</e1064:value>
-                </e1064:KeyValuePairOfstringstring>
+              <ForwardCompatibilityMap xmlns:e2302="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+                <e2302:KeyValuePairOfstringstring>
+                  <e2302:key d4p1:nil="false">ValueHere</e2302:key>
+                  <e2302:value d4p1:nil="false">ValueHere</e2302:value>
+                </e2302:KeyValuePairOfstringstring>
               </ForwardCompatibilityMap>
               <Index>ValueHere</Index>
               <Message d4p1:nil="false">ValueHere</Message>
@@ -194,11 +194,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1065="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1065:KeyValuePairOfstringstring>
-              <e1065:key d4p1:nil="false">ValueHere</e1065:key>
-              <e1065:value d4p1:nil="false">ValueHere</e1065:value>
-            </e1065:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2303="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e2303:KeyValuePairOfstringstring>
+              <e2303:key d4p1:nil="false">ValueHere</e2303:key>
+              <e2303:value d4p1:nil="false">ValueHere</e2303:value>
+            </e2303:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

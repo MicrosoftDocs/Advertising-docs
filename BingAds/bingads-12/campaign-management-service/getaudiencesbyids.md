@@ -81,12 +81,13 @@ The following template shows the order of the [body](#response-body) and [header
     <GetAudiencesByIdsResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <Audiences d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <Audience d4p1:type="-- derived type specified here with the appropriate prefix --">
+          <AudienceNetworkSize d4p1:nil="false">ValueHere</AudienceNetworkSize>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e1115="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1115:KeyValuePairOfstringstring>
-              <e1115:key d4p1:nil="false">ValueHere</e1115:key>
-              <e1115:value d4p1:nil="false">ValueHere</e1115:value>
-            </e1115:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2353="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e2353:KeyValuePairOfstringstring>
+              <e2353:key d4p1:nil="false">ValueHere</e2353:key>
+              <e2353:value d4p1:nil="false">ValueHere</e2353:value>
+            </e2353:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <MembershipDuration d4p1:nil="false">ValueHere</MembershipDuration>
@@ -94,6 +95,9 @@ The following template shows the order of the [body](#response-body) and [header
           <ParentId d4p1:nil="false">ValueHere</ParentId>
           <Scope d4p1:nil="false">ValueHere</Scope>
           <SearchSize d4p1:nil="false">ValueHere</SearchSize>
+          <SupportedCampaignTypes d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <a1:string>ValueHere</a1:string>
+          </SupportedCampaignTypes>
           <Type>ValueHere</Type>
           <!--These fields are applicable if the derived type attribute is set to RemarketingList-->
           <Rule d4p1:nil="false" d4p1:type="-- derived type specified here with the appropriate prefix --">
@@ -179,6 +183,9 @@ The following template shows the order of the [body](#response-body) and [header
           <TagId d4p1:nil="false">ValueHere</TagId>
           <!--No additional fields are applicable if the derived type attribute is set to CustomAudience-->
           <!--No additional fields are applicable if the derived type attribute is set to InMarketAudience-->
+          <!--These fields are applicable if the derived type attribute is set to ProductAudience-->
+          <ProductAudienceType d4p1:nil="false">ValueHere</ProductAudienceType>
+          <TagId d4p1:nil="false">ValueHere</TagId>
         </Audience>
       </Audiences>
       <PartialErrors d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
@@ -187,11 +194,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1116="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1116:KeyValuePairOfstringstring>
-              <e1116:key d4p1:nil="false">ValueHere</e1116:key>
-              <e1116:value d4p1:nil="false">ValueHere</e1116:value>
-            </e1116:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e2354="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e2354:KeyValuePairOfstringstring>
+              <e2354:key d4p1:nil="false">ValueHere</e2354:key>
+              <e2354:value d4p1:nil="false">ValueHere</e2354:value>
+            </e2354:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

@@ -28,7 +28,7 @@ Defines an error object that identifies the item within the batch of items in th
 |<a name="code"></a>Code|A numeric error code that identifies the error.|**int**|
 |<a name="details"></a>Details|A message that provides additional details about the batch error. This string can be empty.|**string**|
 |<a name="index"></a>Index|The zero-based index of the item in the batch of items in the request message that failed.|**int**|
-|<a name="message"></a>Message|A message that describes the error.|**string**|
+|<a name="message"></a>Message|A message that describes the error.<br/><br/>For more information about troubleshooting and error handling, see [Handling Service Errors and Exceptions](../guides/handle-service-errors-exceptions.md) and [Operation Error Codes](../guides/operation-error-codes.md).|**string**|
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  

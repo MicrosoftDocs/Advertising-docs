@@ -18,6 +18,7 @@ Do not try to instantiate an *Ad*. You can create one or more following objects 
 - [ExpandedTextAd](expandedtextad.md)
 - [TextAd](textad.md)
 - [ProductAd](productad.md) 
+- [ResponsiveAd](responsivead.md) 
 
 ## Syntax
 ```xml
