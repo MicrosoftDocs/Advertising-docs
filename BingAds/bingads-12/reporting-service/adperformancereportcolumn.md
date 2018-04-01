@@ -71,6 +71,9 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AdGroupStatus" />
     <xs:enumeration value="TitlePart1" />
     <xs:enumeration value="TitlePart2" />
+    <xs:enumeration value="Headline" />
+    <xs:enumeration value="LongHeadline" />
+    <xs:enumeration value="BusinessName" />
     <xs:enumeration value="Path1" />
     <xs:enumeration value="Path2" />
     <xs:enumeration value="AdLabels" />
@@ -100,6 +103,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="averagecpc"></a>AverageCpc|The average cost per click (CPC). The total cost of all clicks on an ad divided by the number of clicks. This is the average amount you're actually charged each time your ad is clicked. For example, if you paid a total of 48.35 for 300 clicks, your average CPC is 0.16.The formula for calculating the average CPC is *(Spend /Clicks)*.|
 |<a name="averageposition"></a>AveragePosition|The average position of the ad on a webpage.|
 |<a name="bidmatchtype"></a>BidMatchType|The keyword bid match type. This can be different from the *DeliveredMatchType* column, for example if you bid on a broad match and the search term was an exact match. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).The possible values are *Broad*, *Exact*, *Phrase*, and *Unknown*.|
+|<a name="businessname"></a>BusinessName|Depending on your responsive ad's placement, your business's name may appear in your ad.<br/><br/>This column only applies to Audience campaigns.|
 |<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
 |<a name="campaignstatus"></a>CampaignStatus|The campaign status.|
@@ -119,8 +123,10 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="finalappurl"></a>FinalAppURL|Reserved for future use.|
 |<a name="finalmobileurl"></a>FinalMobileURL|The Final Mobile URL of the ad, keyword, or criterion.<br /><br />Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
 |<a name="finalurl"></a>FinalURL|The Final URL of the ad, keyword, or criterion.<br /><br />Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
+|<a name="headline"></a>Headline|The shorter of two possible responsive ad headlines for Audience campaigns.|
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
+|<a name="longheadline"></a>LongHeadline|The longer of two possible responsive ad headlines for Audience campaigns.|
 |<a name="network"></a>Network|The current network setting of an ad group. The possible values include AOL search, Bing and Yahoo! search, Content, and Syndicated search partners.|
 |<a name="path1"></a>Path1|The path 1 attribute of an ad.|
 |<a name="path2"></a>Path2|The path 2 attribute of an ad.|

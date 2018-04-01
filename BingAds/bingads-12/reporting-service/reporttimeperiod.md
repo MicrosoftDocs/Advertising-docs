@@ -58,4 +58,5 @@ Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/
 Namespace: https\://bingads.microsoft.com/Reporting/v12  
 
 ## Used By
+[BudgetSummaryReportTime](budgetsummaryreporttime.md)  
 [ReportTime](reporttime.md)  

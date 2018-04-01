@@ -107,7 +107,7 @@ var bulkAdGroup = new BulkAdGroup
                     new TargetSettingDetail
                     {
                         CriterionTypeGroup = CriterionTypeGroup.Audience,
-                        TargetAll = true
+                        TargetAndBid = true
                     }
                 }
             }

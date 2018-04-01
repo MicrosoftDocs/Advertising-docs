@@ -21,6 +21,13 @@ Ad extension reports give you a closer look at how each ad extension is performi
 |[AdExtensionDetailReportRequest](../reporting-service/adextensiondetailreportrequest.md)|Use this report to discover the effectiveness of individual ad extension items, for example each link of a sitelink extension.<br /><br />You can request impressions, clicks, spend, and average cost per click of individual extension items. Once downloaded, this data can be sorted by the individual ad extension display name, ad extension ID, and ad extension type.|
 |[CallDetailReportRequest](../reporting-service/calldetailreportrequest.md)|Use this report to discover which accounts, campaigns, or ad groups are driving the most completed phone calls.<br /><br />You can request duration and phone spend for each forwarded call that originated from a call ad extension.|
 
+## <a name="audiencenetwork"></a>Audience Network
+
+|Report|Description|
+|----------|---------------|
+|[AgeGenderAudienceReportRequest](../reporting-service/agegenderaudiencereportrequest.md)|To discover how your campaigns and ad groups are resonating with different age groups and genders.<br /><br />You can request impressions, clicks, spend, and average cost-per-click for each ad group, organized by gender and age group. Please note that this report only reflects your Audience Campaign data.|
+|[ProfessionalDemographicsAudienceReportRequest](../reporting-service/professionaldemographicsaudiencereportrequest.md)|Use this report to discover how your campaigns and ad groups are resonating with different companies, industries, and job functions.<br /><br />You can request impressions, clicks, spend, and average cost-per-click for each ad group, organized by company, industry, and job function. Please note that this report only reflects your Audience Campaign data.|
+
 ## <a name="budget"></a>Billing and Budget
 
 |Report|Description|
@@ -69,6 +76,7 @@ Product ad reports give you a closer look at how your Bing Shopping Campaigns ar
 |Report|Description|
 |----------|---------------|
 |[ProductDimensionPerformanceReportRequest](../reporting-service/productdimensionperformancereportrequest.md)|Use this report to find out which product dimensions are performing well and those that are not.<br /><br />You can request impressions, clicks, spend, and average cost per click for your landing pages. Once downloaded, this data can be sorted by product category, custom label, title, and type.|
+|[ProductMatchCountReportRequest](../reporting-service/productmatchcountreportrequest.md)|Use this report to see if you are covering and bidding across your Bing shopping campaigns inventory. Note that this only provides the matched data for your current Product Group level, and you cannot obtain historical views.<br /><br />You can include details in the report such as impressions, clicks, and spend.|
 |[ProductPartitionPerformanceReportRequest](../reporting-service/productpartitionperformancereportrequest.md)|Use this report to find out which product partitions are performing well and those that are not.<br /><br />You can request impressions, clicks, spend, and average cost per click for your landing pages. Once downloaded, this data can be sorted by product group and product partition type.|
 |[ProductPartitionUnitPerformanceReportRequest](../reporting-service/productpartitionunitperformancereportrequest.md)|Use this report to find out which product partition units are performing well and those that are not.<br /><br />You can include details in the report such as impressions, clicks, and spend that you can use to identify whether or not the product partitions are performing well. Once downloaded, this data can be sorted by product group.|
 |[ProductSearchQueryPerformanceReportRequest](../reporting-service/productsearchqueryperformancereportrequest.md)|Use this report to get insight into what your audience is searching for when your ads are shown as well as ensure that your product titles are relevant to search queries.<br /><br />You can request impressions, clicks, and click-through rate based on the search terms that have triggered your ads. Once downloaded, this data can be sorted by product, account, campaign, and ad group.|

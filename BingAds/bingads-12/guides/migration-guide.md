@@ -457,7 +457,7 @@ SecondLevelCategory|Category2
 Status|CampaignStatus
 TopLevelCategory|Category0
 
-In addition when you include the TimePeriod column in version 12 the name of the column in the downloaded report will likewise be TimePeriod. In version 11 the column name varied by aggregation as follows.
+Likewise when you include the TimePeriod column in version 12 the name of the column in the downloaded report will be TimePeriod. In version 11 the column name varied by aggregation as follows.
 
 |Aggregation|Version 11 Column Name|
 |---------------|---------------|
@@ -469,7 +469,7 @@ In addition when you include the TimePeriod column in version 12 the name of the
 |Weekly|WeekStartDate|
 |Yearly|Year|
 
-Whereas in version 11 the time period for Hourly aggregation was split across two columns, in version 12 it will be formatted in the TimePeriod column with the date and hour (int value) delimited by a semicolon e.g., *yyyy-mm-dd;hour*. For more details see [ReportAggregation](../reporting-service/reportaggregation.md) and [TimePeriod Column](reports.md#timeperiod).
+Whereas in version 11 the time period for Hourly aggregation was split across two columns, in version 12 it will be formatted in the TimePeriod column with the date and hour (int value) delimited by a single pipe i.e., "mm/dd/yyyy hh:mm:ss&#124;hour" where hh:mm:ss is always 12:00:00 and can be ignored. For example, if the click occurred March 15, 2018 between 07:00 and 08:00, then the field in the downloaded report would be "3/15/2018 12:00:00 AM&#124;8". For more details see [ReportAggregation](../reporting-service/reportaggregation.md) and [TimePeriod Column](reports.md#timeperiod).
 
 #### <a name="reporting-columnrestrictions"></a>Column Restrictions
 For some reports you cannot include constrained attributes in the same report request. For example when submitting the [AccountPerformanceReportRequest](../reporting-service/accountperformancereportrequest.md) and [AdGroupPerformanceReportRequest](../reporting-service/adgroupperformancereportrequest.md) if you include any of the impression share performance statistics columns, then you must exclude the *BidMatchType*, *DeviceOS*, and *TopVsOther* attribute columns. Likewise, if you include any of these attribute columns, then you must exclude all of the impression share performance statistics columns.
@@ -501,6 +501,11 @@ Report Request|Aggregation Periods Added in Version 12
 When submitting the following report requests, you must use the [ReportAggregation](../reporting-service/reportaggregation.md) data type instead of *SearchQueryReportAggregation* within the *ReportAggregation* element.
 -  [DSASearchQueryPerformanceReportRequest](../reporting-service/dsasearchqueryperformancereportrequest.md)
 -  [SearchQueryPerformanceReportRequest](../reporting-service/searchqueryperformancereportrequest.md)
+
+#### <a name="reporting-budgetsummaryreporttime"></a>Budget Summary Report Time
+For parity with the predefined time options (e.g., 'Yesterday') for the budget summary report in the Bing Ads web application, Bing Ads API Version 12 enables comparable predefined time options that previously were not supported via Bing Ads API Version 11. In version 11 only Today, Yesterday, LastSevenDays, ThisMonth, and LastMonth were supported for the budget summary report. Version 12 now supports Last14Days, Last30Days, LastFourWeeks, LastMonth, LastSevenDays, LastSixMonths, LastThreeMonths, LastWeek, LastYear, ThisMonth, ThisWeek, ThisYear, Today, and Yesterday. 
+
+The *BudgetSummaryReportTimePeriod* object is removed in version 12. When submitting a budget summary report request, you must use the [ReportTimePeriod](../reporting-service/reporttimeperiod.md) data type instead of *BudgetSummaryReportTimePeriod* within the *PredefinedTime* element of the [BudgetSummaryReportTime](../reporting-service/budgetsummaryreporttime.md) object.
 
 #### <a name="reporting-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *Content* value is removed from the [AdDistributionReportFilter](../reporting-service/addistributionreportfilter.md), [BidMatchTypeReportFilter](../reporting-service/bidmatchtypereportfilter.md), and [DeliveredMatchTypeReportFilter](../reporting-service/deliveredmatchtypereportfilter.md) value sets. 
