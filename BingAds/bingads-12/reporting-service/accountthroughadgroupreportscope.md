@@ -56,6 +56,7 @@ Namespace: https\://bingads.microsoft.com/Reporting/v12
 [KeywordPerformanceReportRequest](keywordperformancereportrequest.md)  
 [NegativeKeywordConflictReportRequest](negativekeywordconflictreportrequest.md)  
 [ProductDimensionPerformanceReportRequest](productdimensionperformancereportrequest.md)  
+[ProductMatchCountReportRequest](productmatchcountreportrequest.md)  
 [ProductPartitionPerformanceReportRequest](productpartitionperformancereportrequest.md)  
 [ProductPartitionUnitPerformanceReportRequest](productpartitionunitperformancereportrequest.md)  
 [ProductSearchQueryPerformanceReportRequest](productsearchqueryperformancereportrequest.md)  

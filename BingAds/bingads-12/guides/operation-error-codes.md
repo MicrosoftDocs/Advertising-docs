@@ -864,18 +864,7 @@ The entity status is not valid.
 CampaignServiceInvalidSearchBids
 
 **Description**
-One or more of the specified search bids are not valid.
-
-***
-
-**Numeric Code**
-1018
-
-**Symbolic Error Code**
-CampaignServiceInvalidContentBid
-
-**Description**
-The specified content bid is not valid.
+One or more of the specified Cpc bids are not valid.
 
 ***
 
@@ -1905,18 +1894,7 @@ The ad group start date cannot be prior to the date that the ad group was submit
 CampaignServiceCannotSetSearchBidOnAdGroup
 
 **Description**
-Search bids are not currently supported for the ad group.
-
-***
-
-**Numeric Code**
-1230
-
-**Symbolic Error Code**
-CampaignServiceCannotSetContentBidOnAdGroup
-
-**Description**
-Content bids are not currently supported for the ad group.
+Cpc bids are not currently supported for the ad group.
 
 ***
 
@@ -11139,7 +11117,7 @@ The domain of the Final URL is too long.
 CampaignServiceExpandedTextAdDisplayUrlDomainTooLong
 
 **Description**
-The domain of the Display URL is too long.
+The expanded text ad domain is too long.
 ***
 
 **Numeric Code**
@@ -11149,7 +11127,7 @@ The domain of the Display URL is too long.
 CampaignServiceExpandedTextAdFinalUrlDomainInvalid
 
 **Description**
-The domain of the Display URL is invalid.
+The expanded text ad domain is invalid.
 
 ***
 
@@ -11160,7 +11138,7 @@ The domain of the Display URL is invalid.
 CampaignServiceExpandedTextAdDisplayUrlMissing
 
 **Description**
-The domain of the Display URL is required.
+The expanded text ad domain is missing.
 
 ***
 

@@ -1621,6 +1621,8 @@
           href: ../reporting-service/productdimensionperformancereportfilter.md
         - name: ProductDimensionPerformanceReportRequest
           href: ../reporting-service/productdimensionperformancereportrequest.md
+        - name: ProductMatchCountReportRequest
+          href: ../reporting-service/productmatchcountreportrequest.md
         - name: ProductPartitionPerformanceReportFilter
           href: ../reporting-service/productpartitionperformancereportfilter.md
         - name: ProductPartitionPerformanceReportRequest
@@ -1746,6 +1748,8 @@
           href: ../reporting-service/nonhourlyreportaggregation.md
         - name: ProductDimensionPerformanceReportColumn
           href: ../reporting-service/productdimensionperformancereportcolumn.md
+        - name: ProductMatchCountReportColumn
+          href: ../reporting-service/productmatchcountreportcolumn.md
         - name: ProductPartitionPerformanceReportColumn
           href: ../reporting-service/productpartitionperformancereportcolumn.md
         - name: ProductPartitionUnitPerformanceReportColumn

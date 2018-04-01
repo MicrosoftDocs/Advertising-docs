@@ -21,7 +21,7 @@ Defines the date range values of a budget summary report request.
   <xs:sequence>
     <xs:element minOccurs="0" name="CustomDateRangeEnd" nillable="true" type="tns:Date" />
     <xs:element minOccurs="0" name="CustomDateRangeStart" nillable="true" type="tns:Date" />
-    <xs:element minOccurs="0" name="PredefinedTime" nillable="true" type="tns:BudgetSummaryReportTimePeriod" />
+    <xs:element minOccurs="0" name="PredefinedTime" nillable="true" type="tns:ReportTimePeriod" />
     <xs:element minOccurs="0" name="ReportTimeZone" nillable="true" type="tns:ReportTimeZone" />
   </xs:sequence>
 </xs:complexType>
@@ -33,7 +33,7 @@ Defines the date range values of a budget summary report request.
 |-----------|---------------|-------------|
 |<a name="customdaterangeend"></a>CustomDateRangeEnd|The end date of a date range.<br/><br/>The end date must be greater than or equal to the start date.<br/><br/>|[Date](date.md)|
 |<a name="customdaterangestart"></a>CustomDateRangeStart|The start date of a date range.<br/><br/>|[Date](date.md)|
-|<a name="predefinedtime"></a>PredefinedTime|A predefined date range.<br/><br/>The *PredefinedTime* element and the other date elements are mutually exclusive.|[BudgetSummaryReportTimePeriod](budgetsummaryreporttimeperiod.md)|
+|<a name="predefinedtime"></a>PredefinedTime|A predefined date range.<br/><br/>The *PredefinedTime* element and the other date elements are mutually exclusive.|[ReportTimePeriod](reporttimeperiod.md)|
 |<a name="reporttimezone"></a>ReportTimeZone|Determines the time zone that you want the Reporting service to use for the requested time period.<br/><br/>The time zone helps you accurately scope data for the requested time period.<br/><br/>If you do not choose a time zone, the Reporting service uses PacificTimeUSCanadaTijuana by default.|[ReportTimeZone](reporttimezone.md)|
 
 ## Requirements

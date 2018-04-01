@@ -54,6 +54,7 @@ Namespace: https\://bingads.microsoft.com/Reporting/v11
 [GoalsAndFunnelsReportRequest](goalsandfunnelsreportrequest.md)  
 [KeywordPerformanceReportRequest](keywordperformancereportrequest.md)  
 [ProductDimensionPerformanceReportRequest](productdimensionperformancereportrequest.md)  
+[ProductMatchCountReportRequest](productmatchcountreportrequest.md)  
 [ProductPartitionPerformanceReportRequest](productpartitionperformancereportrequest.md)  
 [ProductPartitionUnitPerformanceReportRequest](productpartitionunitperformancereportrequest.md)  
 [ProductSearchQueryPerformanceReportRequest](productsearchqueryperformancereportrequest.md)  

@@ -1,27 +1,29 @@
 ---
-title: UserLocationPerformanceReportRequest Data Object - Reporting
+title: ProductMatchCountReportRequest Data Object - Reporting
 ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a user location performance report request.
+description: Defines a product match count report request that aggregates the performance data by product group for a specified time period.
 ---
-# UserLocationPerformanceReportRequest Data Object - Reporting
-Defines a user location performance report request. Use this report to see where your traffic is coming from broken out by the physical location and the location people are searching for. You can then validate whether your location targeting strategy is successful, and identify opportunities to improve.
+# ProductMatchCountReportRequest Data Object - Reporting
+Defines a product match count report request that aggregates the performance data by product group for a specified time period. 
 
-You can request impressions, clicks, spend, and average cost-per-click for each ad group, organized by city, country, metro area (Nielsen DMA? in the United States), radius, state, and account.
+You can include details in the report such as impressions, clicks, and spend that you can use to see if you are covering and bidding across your Bing shopping campaigns inventory. Note that this only provides the matched data for your current Product Group level, and you cannot obtain historical views.
 
 To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
+> [!NOTE]
+> You should only use this report to get performance data for Bing Shopping campaigns. It is not applicable for other campaign types. 
+
 ## Syntax
 ```xml
-<xs:complexType name="UserLocationPerformanceReportRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:complexType name="ProductMatchCountReportRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:complexContent mixed="false">
     <xs:extension base="tns:ReportRequest">
       <xs:sequence>
-        <xs:element name="Aggregation" type="tns:NonHourlyReportAggregation" />
-        <xs:element name="Columns" nillable="true" type="tns:ArrayOfUserLocationPerformanceReportColumn" />
-        <xs:element minOccurs="0" name="Filter" nillable="true" type="tns:UserLocationPerformanceReportFilter" />
+        <xs:element name="Aggregation" type="tns:ReportAggregation" />
+        <xs:element name="Columns" nillable="true" type="tns:ArrayOfProductMatchCountReportColumn" />
         <xs:element name="Scope" nillable="true" type="tns:AccountThroughAdGroupReportScope" />
         <xs:element name="Time" nillable="true" type="tns:ReportTime" />
       </xs:sequence>
@@ -34,19 +36,20 @@ To request a report of this type, pass this object to the [SubmitGenerateReport]
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="aggregation"></a>Aggregation|The type of aggregation to use to aggregate the report data. For example, you can aggregate the report data by day or week, or request a summary report.<br /><br />The default is Summary.<br /><br />The *Time* element specifies the time period to use for the aggregation.|[NonHourlyReportAggregation](nonhourlyreportaggregation.md)|
-|<a name="columns"></a>Columns|The list of attributes and performance statistics to include in the report. The report will include the columns in the order that you specify them.|[UserLocationPerformanceReportColumn](userlocationperformancereportcolumn.md) array|
-|<a name="filter"></a>Filter|The filter information to use to filter the report data.|[UserLocationPerformanceReportFilter](userlocationperformancereportfilter.md)|
+|<a name="aggregation"></a>Aggregation|The type of aggregation to use to aggregate the report data. For example, you can aggregate the report data by day or week, or request a summary report.<br /><br />The default is Summary.<br /><br />The *Time* element specifies the time period to use for the aggregation.|[ReportAggregation](reportaggregation.md)|
+|<a name="columns"></a>Columns|The list of attributes and performance statistics to include in the report. The report will include the columns in the order that you specify them.|[ProductMatchCountReportColumn](productmatchcountreportcolumn.md) array|
 |<a name="scope"></a>Scope|The scope of the report. Use this element to limit the report to include data for a combination of accounts, ad groups, and campaigns.|[AccountThroughAdGroupReportScope](accountthroughadgroupreportscope.md)|
 |<a name="time"></a>Time|The time period to use for the report. You can specify a custom date range or select a predefined date range, for example, Today or ThisWeek.<br /><br />For a list of the time periods that you can specify for each aggregation type, see [Aggregation and Time](../guides/reports.md#aggregation-time).|[ReportTime](reporttime.md)|
 
-The [UserLocationPerformanceReportRequest](userlocationperformancereportrequest.md) object has [Inherited Elements](#inheritedelements).
+The [ProductMatchCountReportRequest](productmatchcountreportrequest.md) object has [Inherited Elements](#inheritedelements).
 
 ## <a name="inheritedelements"></a>Inherited Elements
 
 ### <a name="inheritedelementsreportrequest"></a>Inherited Elements from ReportRequest
-The [UserLocationPerformanceReportRequest](userlocationperformancereportrequest.md) object derives from the [ReportRequest](reportrequest.md) object, and inherits the following elements. The descriptions below are specific to [UserLocationPerformanceReportRequest](userlocationperformancereportrequest.md), and might not apply to other objects that inherit the same elements from the [ReportRequest](reportrequest.md) object.  
+The [ProductMatchCountReportRequest](productmatchcountreportrequest.md) object derives from the [ReportRequest](reportrequest.md) object, and inherits the following elements. The descriptions below are specific to [ProductMatchCountReportRequest](productmatchcountreportrequest.md), and might not apply to other objects that inherit the same elements from the [ReportRequest](reportrequest.md) object.  
 
+|Element|Description|Data Type|
+|-----------|---------------|-------------|
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="excludecolumnheaders"></a>ExcludeColumnHeaders|Determines whether or not the downloaded report should contain header descriptions for each column. The report column header matches the requested column name e.g. *Impressions* and *Clicks*.<br/><br/>Set this property *true* if you want the report column headers excluded from the downloaded report. The default value is *false*.|**boolean**|
