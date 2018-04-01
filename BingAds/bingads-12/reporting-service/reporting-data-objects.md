@@ -34,7 +34,7 @@ The Reporting service defines the following data objects.
 |[AdGroupReportScope](adgroupreportscope.md)|Defines an ad group to include in the report.|
 |[AdPerformanceReportFilter](adperformancereportfilter.md)|Defines the criteria to use to filter the ad performance report request data.|
 |[AdPerformanceReportRequest](adperformancereportrequest.md)|Defines an ad performance report request.|
-|[AgeGenderAudienceReportFilter](agegenderaudiencereportfilter.md)|Defines the criteria to use to filter the age gender audience report data for Audience campaigns.|
+|[AgeGenderAudienceReportFilter](agegenderaudiencereportfilter.md)|Defines the criteria to use to filter the age and gender audience report data.|
 |[AgeGenderAudienceReportRequest](agegenderaudiencereportrequest.md)|Defines an age and gender audience report request for Audience campaigns.|
 |[AgeGenderDemographicReportFilter](agegenderdemographicreportfilter.md)|Defines the criteria to use to filter the age and gender demographic report data.|
 |[AgeGenderDemographicReportRequest](agegenderdemographicreportrequest.md)|Defines an age and gender demographic report request.|
@@ -73,6 +73,7 @@ The Reporting service defines the following data objects.
 |[OperationError](operationerror.md)|Defines an error object that contains the details that explain why the service operation failed.|
 |[ProductDimensionPerformanceReportFilter](productdimensionperformancereportfilter.md)|Defines the criteria to use to filter the product dimension performance report data.|
 |[ProductDimensionPerformanceReportRequest](productdimensionperformancereportrequest.md)|Defines a product dimension performance report request that aggregates the performance data by product category, custom label, title, and type for a specified time period.|
+|[ProductMatchCountReportRequest](productmatchcountreportrequest.md)|Defines a product match count report request that aggregates the performance data by product group for a specified time period.|
 |[ProductPartitionPerformanceReportFilter](productpartitionperformancereportfilter.md)|Defines the criteria to use to filter the product partition performance report data.|
 |[ProductPartitionPerformanceReportRequest](productpartitionperformancereportrequest.md)|Defines a product partition performance report request that aggregates the performance data by product group and product partition type for a specified time period.|
 |[ProductPartitionUnitPerformanceReportFilter](productpartitionunitperformancereportfilter.md)|Defines the criteria to use to filter the product partition  performance report data.|

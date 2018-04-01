@@ -32,7 +32,6 @@ The Reporting service defines the following value sets.
 |[BidMatchTypeReportFilter](bidmatchtypereportfilter.md)|Defines the bid match type values that you can use to filter the report data.|
 |[BidStrategyTypeReportFilter](bidstrategytypereportfilter.md)|Defines the possible values that you can use to use to filter the report data by bid strategy type.|
 |[BudgetSummaryReportColumn](budgetsummaryreportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [BudgetSummaryReportRequest](budgetsummaryreportrequest.md).|
-|[BudgetSummaryReportTimePeriod](budgetsummaryreporttimeperiod.md)|Defines the predefined time and date range values for a budget summary report request.|
 |[CallDetailReportColumn](calldetailreportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [CallDetailReportRequest](calldetailreportrequest.md).|
 |[CampaignPerformanceReportColumn](campaignperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [CampaignPerformanceReportRequest](campaignperformancereportrequest.md).|
 |[CampaignStatusReportFilter](campaignstatusreportfilter.md)|Defines the campaign status values that you can use to filter the report data.|
@@ -53,6 +52,7 @@ The Reporting service defines the following value sets.
 |[KeywordStatusReportFilter](keywordstatusreportfilter.md)|Defines the keyword status values that you can use to filter the report data.|
 |[NegativeKeywordConflictReportColumn](negativekeywordconflictreportcolumn.md)|Defines the attributes columns that you can include in the [NegativeKeywordConflictReportRequest](negativekeywordconflictreportrequest.md).|
 |[ProductDimensionPerformanceReportColumn](productdimensionperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ProductDimensionPerformanceReportRequest](productdimensionperformancereportrequest.md).|
+|[ProductMatchCountReportColumn](productmatchcountreportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ProductMatchCountReportRequest](productmatchcountreportrequest.md).|
 |[ProductPartitionPerformanceReportColumn](productpartitionperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ProductPartitionPerformanceReportRequest](productpartitionperformancereportrequest.md).|
 |[ProductPartitionUnitPerformanceReportColumn](productpartitionunitperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ProductPartitionUnitPerformanceReportRequest](productpartitionunitperformancereportrequest.md).|
 |[ProductSearchQueryPerformanceReportColumn](productsearchqueryperformancereportcolumn.md)|Defines the attributes and performance statistics columns that you can include in the [ProductSearchQueryPerformanceReportRequest](productsearchqueryperformancereportrequest.md).|

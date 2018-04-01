@@ -76,6 +76,8 @@ var bulkExpandedTextAd = new BulkExpandedTextAd
     // ExpandedTextAd object of the Campaign Management service.
     ExpandedTextAd = new ExpandedTextAd
     {
+        // 'Ad Format Preference' column header in the Bulk file
+        AdFormatPreference = "All",
         // 'Mobile Final Url' column header in the Bulk file
         FinalMobileUrls = new[] {
             // Each Url is delimited by a semicolon (;) in the Bulk file
@@ -85,11 +87,6 @@ var bulkExpandedTextAd = new BulkExpandedTextAd
         FinalUrls = new[] {
             // Each Url is delimited by a semicolon (;) in the Bulk file
             "http://www.contoso.com/womenshoesale"
-        },
-        ForwardCompatibilityMap = new []
-        {
-            // 'Ad Format Preference' column header in the Bulk file
-            new KeyValuePair\<string,string>("NativePreference", "False")
         },
         // 'Id' column header in the Bulk file
         Id = null,

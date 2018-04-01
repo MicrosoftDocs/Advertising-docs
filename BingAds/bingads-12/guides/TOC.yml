@@ -1707,6 +1707,8 @@
           href: ../reporting-service/productdimensionperformancereportfilter.md
         - name: ProductDimensionPerformanceReportRequest
           href: ../reporting-service/productdimensionperformancereportrequest.md
+        - name: ProductMatchCountReportRequest
+          href: ../reporting-service/productmatchcountreportrequest.md
         - name: ProductPartitionPerformanceReportFilter
           href: ../reporting-service/productpartitionperformancereportfilter.md
         - name: ProductPartitionPerformanceReportRequest
@@ -1788,8 +1790,6 @@
           href: ../reporting-service/bidstrategytypereportfilter.md
         - name: BudgetSummaryReportColumn
           href: ../reporting-service/budgetsummaryreportcolumn.md
-        - name: BudgetSummaryReportTimePeriod
-          href: ../reporting-service/budgetsummaryreporttimeperiod.md
         - name: CallDetailReportColumn
           href: ../reporting-service/calldetailreportcolumn.md
         - name: CampaignPerformanceReportColumn
@@ -1830,6 +1830,8 @@
           href: ../reporting-service/negativekeywordconflictreportcolumn.md
         - name: ProductDimensionPerformanceReportColumn
           href: ../reporting-service/productdimensionperformancereportcolumn.md
+        - name: ProductMatchCountReportColumn
+          href: ../reporting-service/productmatchcountreportcolumn.md
         - name: ProductPartitionPerformanceReportColumn
           href: ../reporting-service/productpartitionperformancereportcolumn.md
         - name: ProductPartitionUnitPerformanceReportColumn

@@ -46,6 +46,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="DeviceType" />
     <xs:enumeration value="Language" />
     <xs:enumeration value="DisplayUrl" />
+    <xs:enumeration value="BusinessName" />
     <xs:enumeration value="BusinessListingId" />
     <xs:enumeration value="BusinessListingName" />
     <xs:enumeration value="BusinessCategoryId" />
@@ -72,6 +73,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AdGroupStatus" />
     <xs:enumeration value="TitlePart1" />
     <xs:enumeration value="TitlePart2" />
+    <xs:enumeration value="Headline" />
+    <xs:enumeration value="LongHeadline" />
     <xs:enumeration value="Path1" />
     <xs:enumeration value="Path2" />
     <xs:enumeration value="AdLabels" />
@@ -105,6 +108,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="businesscategoryname"></a>BusinessCategoryName|Reserved for internal use.|
 |<a name="businesslistingid"></a>BusinessListingId|Reserved for internal use.|
 |<a name="businesslistingname"></a>BusinessListingName|Reserved for internal use.|
+|<a name="businessname"></a>BusinessName|Depending on your responsive ad's placement, your business's name may appear in your ad.<br/><br/>This column only applies to Audience campaigns.|
 |<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
 |<a name="campaignstatus"></a>CampaignStatus|The campaign status.|
@@ -124,8 +128,10 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="finalappurl"></a>FinalAppURL|Reserved for future use.|
 |<a name="finalmobileurl"></a>FinalMobileURL|The Final Mobile URL of the ad, keyword, or criterion.<br /><br />Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
 |<a name="finalurl"></a>FinalURL|The Final URL of the ad, keyword, or criterion.<br /><br />Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
+|<a name="headline"></a>Headline|The shorter of two possible responsive ad headlines for Audience campaigns.|
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
+|<a name="longheadline"></a>LongHeadline|The longer of two possible responsive ad headlines for Audience campaigns.|
 |<a name="network"></a>Network|The current network setting of an ad group. The possible values include AOL search, Bing and Yahoo! search, Content, and Syndicated search partners.|
 |<a name="path1"></a>Path1|The path 1 attribute of an ad.|
 |<a name="path2"></a>Path2|The path 2 attribute of an ad.|
