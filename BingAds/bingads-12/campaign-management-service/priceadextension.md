@@ -13,7 +13,7 @@ description: Defines an ad extension that includes between 3 and 8 price table r
 Defines an ad extension that includes between 3 and 8 price table rows.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
+> Available in the United States, United Kingdom, Canada, France, Germany, and Australia on PC and mobile devices.
 
 You can associate a price ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 price ad extensions.
 
@@ -23,9 +23,9 @@ You can associate a price ad extension with the account or with campaigns and ad
   <xs:complexContent mixed="false">
     <xs:extension base="tns:AdExtension">
       <xs:sequence>
-        <xs:element name="Language" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
         <xs:element name="PriceExtensionType" type="tns:PriceExtensionType" />
-        <xs:element name="TableRows" nillable="true" type="tns:ArrayOfPriceTableRow" />
+        <xs:element minOccurs="0" name="TableRows" nillable="true" type="tns:ArrayOfPriceTableRow" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="tns:CustomParameters" />
       </xs:sequence>

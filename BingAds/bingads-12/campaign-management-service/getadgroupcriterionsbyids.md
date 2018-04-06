@@ -27,7 +27,6 @@ The *GetAdGroupCriterionsByIdsRequest* object defines the [body](#request-body) 
 |<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of unique identifiers that identify the criterions to get.<br/><br/>You can include up to 1,000 ad group criterion identifiers per request. <br /><br />If this element is null, all criterions for the specified *AdGroupId* will be retrieved.|**long** array|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that owns the criterions to get.|**long**|
 |<a name="criteriontype"></a>CriterionType|The type of criterion to get, for example *Webpage*. You can specify only one type. The *Targets* and *Audience* values are not allowed for this operation.|[AdGroupCriterionType](adgroupcriteriontype.md)|
-|<a name="returnagegenderunknownvalue"></a>ReturnAgeGenderUnknownValue|Reserved.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -64,7 +63,6 @@ The following template shows the order of the [body](#request-body) and [header]
       <AdGroupCriterionIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:long>ValueHere</a1:long>
       </AdGroupCriterionIds>
-      <ReturnAgeGenderUnknownValue i:nil="false">ValueHere</ReturnAgeGenderUnknownValue>
       <AdGroupId>ValueHere</AdGroupId>
       <CriterionType>ValueHere</CriterionType>
     </GetAdGroupCriterionsByIdsRequest>
@@ -193,14 +191,12 @@ The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.m
 ```csharp
 public async Task<GetAdGroupCriterionsByIdsResponse> GetAdGroupCriterionsByIdsAsync(
 	IList<long> adGroupCriterionIds,
-	bool? returnAgeGenderUnknownValue,
 	long adGroupId,
 	AdGroupCriterionType criterionType)
 {
 	var request = new GetAdGroupCriterionsByIdsRequest
 	{
 		AdGroupCriterionIds = adGroupCriterionIds,
-		ReturnAgeGenderUnknownValue = returnAgeGenderUnknownValue,
 		AdGroupId = adGroupId,
 		CriterionType = criterionType
 	};
@@ -211,14 +207,12 @@ public async Task<GetAdGroupCriterionsByIdsResponse> GetAdGroupCriterionsByIdsAs
 ```java
 static GetAdGroupCriterionsByIdsResponse getAdGroupCriterionsByIds(
 	ArrayOflong adGroupCriterionIds,
-	boolean returnAgeGenderUnknownValue,
 	java.lang.Long adGroupId,
 	ArrayList<AdGroupCriterionType> criterionType) throws RemoteException, Exception
 {
 	GetAdGroupCriterionsByIdsRequest request = new GetAdGroupCriterionsByIdsRequest();
 
 	request.setAdGroupCriterionIds(adGroupCriterionIds);
-	request.setReturnAgeGenderUnknownValue(returnAgeGenderUnknownValue);
 	request.setAdGroupId(adGroupId);
 	request.setCriterionType(criterionType);
 
@@ -228,7 +222,6 @@ static GetAdGroupCriterionsByIdsResponse getAdGroupCriterionsByIds(
 ```php
 static function GetAdGroupCriterionsByIds(
 	$adGroupCriterionIds,
-	$returnAgeGenderUnknownValue,
 	$adGroupId,
 	$criterionType)
 {
@@ -238,7 +231,6 @@ static function GetAdGroupCriterionsByIds(
 	$request = new GetAdGroupCriterionsByIdsRequest();
 
 	$request->AdGroupCriterionIds = $adGroupCriterionIds;
-	$request->ReturnAgeGenderUnknownValue = $returnAgeGenderUnknownValue;
 	$request->AdGroupId = $adGroupId;
 	$request->CriterionType = $criterionType;
 
@@ -248,7 +240,6 @@ static function GetAdGroupCriterionsByIds(
 ```python
 response=campaignmanagement_service.GetAdGroupCriterionsByIds(
 	AdGroupCriterionIds=AdGroupCriterionIds,
-	ReturnAgeGenderUnknownValue=ReturnAgeGenderUnknownValue,
 	AdGroupId=AdGroupId,
 	CriterionType=CriterionType)
 ```

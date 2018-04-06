@@ -16,7 +16,7 @@ Defines a collection of key and value custom parameters for URL tracking. Used f
 ```xml
 <xs:complexType name="CustomParameters" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element name="Parameters" nillable="true" type="tns:ArrayOfCustomParameter" />
+    <xs:element minOccurs="0" name="Parameters" nillable="true" type="tns:ArrayOfCustomParameter" />
   </xs:sequence>
 </xs:complexType>
 ```

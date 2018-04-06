@@ -23,8 +23,8 @@ The *ProductPartition* criterion can be included within [BiddableAdGroupCriterio
   <xs:complexContent mixed="false">
     <xs:extension base="tns:Criterion">
       <xs:sequence>
-        <xs:element name="Condition" nillable="true" type="tns:ProductCondition" />
-        <xs:element name="ParentCriterionId" nillable="true" type="xs:long" />
+        <xs:element minOccurs="0" name="Condition" nillable="true" type="tns:ProductCondition" />
+        <xs:element minOccurs="0" name="ParentCriterionId" nillable="true" type="xs:long" />
         <xs:element name="PartitionType" type="tns:ProductPartitionType" />
       </xs:sequence>
     </xs:extension>

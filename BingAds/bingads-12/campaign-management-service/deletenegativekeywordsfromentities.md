@@ -39,7 +39,7 @@ The *DeleteNegativeKeywordsFromEntitiesResponse* object defines the [body](#resp
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="nestedpartialerrors"></a>NestedPartialErrors|An array of [BatchErrorCollection](batcherrorcollection.md) objects that contain details for any criterion that were not successfully deleted. The top level error within each [BatchErrorCollection](batcherrorcollection.md) object corresponds to potential campaign or ad group errors. The nested list of [BatchError](batcherror.md) objects would include any errors specific to the negative keywords that you attempted to delete from the campaign or ad group.<br /><br />>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchErrorCollection](batcherrorcollection.md) array|
+|<a name="nestedpartialerrors"></a>NestedPartialErrors|An array of [BatchErrorCollection](batcherrorcollection.md) objects that contain details for any criterion that were not successfully deleted. The top level error within each [BatchErrorCollection](batcherrorcollection.md) object corresponds to potential campaign or ad group errors. The nested list of [BatchError](batcherror.md) objects would include any errors specific to the negative keywords that you attempted to delete from the campaign or ad group.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchErrorCollection](batcherrorcollection.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -97,11 +97,11 @@ The following template shows the order of the [body](#response-body) and [header
               <Details d4p1:nil="false">ValueHere</Details>
               <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
               <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-              <ForwardCompatibilityMap xmlns:e2335="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-                <e2335:KeyValuePairOfstringstring>
-                  <e2335:key d4p1:nil="false">ValueHere</e2335:key>
-                  <e2335:value d4p1:nil="false">ValueHere</e2335:value>
-                </e2335:KeyValuePairOfstringstring>
+              <ForwardCompatibilityMap xmlns:e1023="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+                <e1023:KeyValuePairOfstringstring>
+                  <e1023:key d4p1:nil="false">ValueHere</e1023:key>
+                  <e1023:value d4p1:nil="false">ValueHere</e1023:value>
+                </e1023:KeyValuePairOfstringstring>
               </ForwardCompatibilityMap>
               <Index>ValueHere</Index>
               <Message d4p1:nil="false">ValueHere</Message>
@@ -118,11 +118,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e2336="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e2336:KeyValuePairOfstringstring>
-              <e2336:key d4p1:nil="false">ValueHere</e2336:key>
-              <e2336:value d4p1:nil="false">ValueHere</e2336:value>
-            </e2336:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1024="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1024:KeyValuePairOfstringstring>
+              <e1024:key d4p1:nil="false">ValueHere</e1024:key>
+              <e1024:value d4p1:nil="false">ValueHere</e1024:value>
+            </e1024:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

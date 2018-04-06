@@ -33,7 +33,7 @@ Finally you can [add](addads.md) a [DynamicSearchAd](dynamicsearchad.md) to the 
       <xs:sequence>
         <xs:element minOccurs="0" name="Path1" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Path2" nillable="true" type="xs:string" />
-        <xs:element name="Text" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

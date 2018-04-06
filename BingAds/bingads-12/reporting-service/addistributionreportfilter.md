@@ -19,13 +19,7 @@ Defines the ad distribution medium values that you can use to filter the report 
     <xs:simpleType>
       <xs:restriction base="xs:string">
         <xs:enumeration value="Search" />
-        <xs:enumeration value="Native">
-          <xs:annotation>
-            <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:enumeration>
+        <xs:enumeration value="Audience" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -36,7 +30,7 @@ Defines the ad distribution medium values that you can use to filter the report 
 
 |Value|Description|
 |-----------|---------------|
-|<a name="native"></a>Native|The report will contain intent ads.|
+|<a name="audience"></a>Audience|The report will contain intent ads.|
 |<a name="search"></a>Search|The report will contain search ads.|
 
 ## Requirements

@@ -16,7 +16,7 @@ Defines an object that contains the migration type and status for an account.
 ```xml
 <xs:complexType name="MigrationStatusInfo" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element name="MigrationType" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="MigrationType" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="StartTimeInUtc" nillable="true" type="xs:dateTime" />
     <xs:element name="Status" type="tns:MigrationStatus" />
   </xs:sequence>

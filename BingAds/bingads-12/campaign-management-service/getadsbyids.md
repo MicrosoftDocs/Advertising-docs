@@ -100,11 +100,11 @@ The following template shows the order of the [body](#response-body) and [header
           <FinalUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e2351="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e2351:KeyValuePairOfstringstring>
-              <e2351:key d4p1:nil="false">ValueHere</e2351:key>
-              <e2351:value d4p1:nil="false">ValueHere</e2351:value>
-            </e2351:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1039="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1039:KeyValuePairOfstringstring>
+              <e1039:key d4p1:nil="false">ValueHere</e1039:key>
+              <e1039:value d4p1:nil="false">ValueHere</e1039:value>
+            </e1039:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Status d4p1:nil="false">ValueHere</Status>
@@ -159,11 +159,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e2352="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e2352:KeyValuePairOfstringstring>
-              <e2352:key d4p1:nil="false">ValueHere</e2352:key>
-              <e2352:value d4p1:nil="false">ValueHere</e2352:value>
-            </e2352:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1040="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1040:KeyValuePairOfstringstring>
+              <e1040:key d4p1:nil="false">ValueHere</e1040:key>
+              <e1040:value d4p1:nil="false">ValueHere</e1040:value>
+            </e1040:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

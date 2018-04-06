@@ -16,7 +16,7 @@ Defines an array of objects that associate an ad extension and its editorial sta
 ```xml
 <xs:complexType name="AdExtensionAssociationCollection" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element name="AdExtensionAssociations" nillable="true" type="tns:ArrayOfAdExtensionAssociation" />
+    <xs:element minOccurs="0" name="AdExtensionAssociations" nillable="true" type="tns:ArrayOfAdExtensionAssociation" />
   </xs:sequence>
 </xs:complexType>
 ```

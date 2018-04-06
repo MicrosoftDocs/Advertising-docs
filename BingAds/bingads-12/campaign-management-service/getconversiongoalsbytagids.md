@@ -127,11 +127,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e2363="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e2363:KeyValuePairOfstringstring>
-              <e2363:key d4p1:nil="false">ValueHere</e2363:key>
-              <e2363:value d4p1:nil="false">ValueHere</e2363:value>
-            </e2363:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1051="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1051:KeyValuePairOfstringstring>
+              <e1051:key d4p1:nil="false">ValueHere</e1051:key>
+              <e1051:value d4p1:nil="false">ValueHere</e1051:value>
+            </e1051:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

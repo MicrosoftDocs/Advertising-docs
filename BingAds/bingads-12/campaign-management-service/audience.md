@@ -23,14 +23,14 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
   <xs:sequence>
     <xs:element minOccurs="0" name="AudienceNetworkSize" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q82:ArrayOfKeyValuePairOfstringstring" xmlns:q82="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q83:ArrayOfKeyValuePairOfstringstring" xmlns:q83="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="MembershipDuration" nillable="true" type="xs:int" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="ParentId" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Scope" nillable="true" type="tns:EntityScope" />
     <xs:element minOccurs="0" name="SearchSize" nillable="true" type="xs:long" />
-    <xs:element minOccurs="0" name="SupportedCampaignTypes" nillable="true" type="q83:ArrayOfstring" xmlns:q83="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="SupportedCampaignTypes" nillable="true" type="q84:ArrayOfstring" xmlns:q84="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="Type" type="tns:AudienceType" />
   </xs:sequence>
 </xs:complexType>

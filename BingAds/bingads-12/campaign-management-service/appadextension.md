@@ -20,13 +20,13 @@ You can associate an app ad extension with the account or with campaigns and ad 
   <xs:complexContent mixed="false">
     <xs:extension base="tns:AdExtension">
       <xs:sequence>
-        <xs:element name="AppPlatform" nillable="true" type="xs:string" />
-        <xs:element name="AppStoreId" nillable="true" type="xs:string" />
-        <xs:element name="DestinationUrl" nillable="true" type="xs:string" />
-        <xs:element name="DisplayText" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AppPlatform" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AppStoreId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DisplayText" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="tns:ArrayOfAppUrl" />
-        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q40:ArrayOfstring" xmlns:q40="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q41:ArrayOfstring" xmlns:q41="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q41:ArrayOfstring" xmlns:q41="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q42:ArrayOfstring" xmlns:q42="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="tns:CustomParameters" />
       </xs:sequence>

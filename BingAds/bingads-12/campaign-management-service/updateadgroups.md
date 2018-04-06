@@ -27,7 +27,7 @@ The *UpdateAdGroupsRequest* object defines the [body](#request-body) and [header
 |<a name="adgroups"></a>AdGroups|An array that can contain a maximum of 1,000 [AdGroup](adgroup.md) objects to update.|[AdGroup](adgroup.md) array|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad groups to update.|**long**|
 |<a name="returninheritedbidstrategytypes"></a>ReturnInheritedBidStrategyTypes|Reserved for future use.|**boolean**|
-|<a name="updatenativebidadjustment"></a>UpdateNativeBidAdjustment|Determines whether or not the service should use the *NativeBidAdjustment* element of each specified [AdGroup](adgroup.md) during update.  If set to True, the *NativeBidAdjustment* will be used, and otherwise it will be ignored and your existing native bid adjustment setting will be retained during update.<br /><br />The default value is False if  this element is not set.|**boolean**|
+|<a name="updatenativebidadjustment"></a>UpdateNativeBidAdjustment|Reserved.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -70,6 +70,7 @@ The following template shows the order of the [body](#request-body) and [header]
             <StartDate i:nil="false">ValueHere</StartDate>
             <Type i:nil="false">ValueHere</Type>
           </AdRotation>
+          <AudienceAdsBidAdjustment i:nil="false">ValueHere</AudienceAdsBidAdjustment>
           <BiddingScheme i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
             <Type i:nil="false">ValueHere</Type>
             <!--This field is applicable if the derived type attribute is set to MaxClicksBiddingScheme-->
@@ -98,16 +99,15 @@ The following template shows the order of the [body](#request-body) and [header]
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e2392="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e2392:KeyValuePairOfstringstring>
-              <e2392:key i:nil="false">ValueHere</e2392:key>
-              <e2392:value i:nil="false">ValueHere</e2392:value>
-            </e2392:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1080="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e1080:KeyValuePairOfstringstring>
+              <e1080:key i:nil="false">ValueHere</e1080:key>
+              <e1080:value i:nil="false">ValueHere</e1080:value>
+            </e1080:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Language i:nil="false">ValueHere</Language>
           <Name i:nil="false">ValueHere</Name>
-          <NativeBidAdjustment i:nil="false">ValueHere</NativeBidAdjustment>
           <Network i:nil="false">ValueHere</Network>
           <PrivacyStatus i:nil="false">ValueHere</PrivacyStatus>
           <Settings i:nil="false">
@@ -121,6 +121,10 @@ The following template shows the order of the [body](#request-body) and [header]
               <!--These fields are applicable if the derived type attribute is set to DynamicSearchAdsSetting-->
               <DomainName i:nil="false">ValueHere</DomainName>
               <Language i:nil="false">ValueHere</Language>
+              <PageFeedIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                <a1:long>ValueHere</a1:long>
+              </PageFeedIds>
+              <Source>ValueHere</Source>
               <!--This field is applicable if the derived type attribute is set to TargetSetting-->
               <Details i:nil="false">
                 <TargetSettingDetail>
@@ -151,7 +155,7 @@ The following template shows the order of the [body](#request-body) and [header]
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
-      <UpdateNativeBidAdjustment>ValueHere</UpdateNativeBidAdjustment>
+      <UpdateAudienceAdsBidAdjustment>ValueHere</UpdateAudienceAdsBidAdjustment>
       <ReturnInheritedBidStrategyTypes i:nil="false">ValueHere</ReturnInheritedBidStrategyTypes>
     </UpdateAdGroupsRequest>
   </s:Body>
@@ -177,11 +181,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e2393="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e2393:KeyValuePairOfstringstring>
-              <e2393:key d4p1:nil="false">ValueHere</e2393:key>
-              <e2393:value d4p1:nil="false">ValueHere</e2393:value>
-            </e2393:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1081="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1081:KeyValuePairOfstringstring>
+              <e1081:key d4p1:nil="false">ValueHere</e1081:key>
+              <e1081:value d4p1:nil="false">ValueHere</e1081:value>
+            </e1081:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

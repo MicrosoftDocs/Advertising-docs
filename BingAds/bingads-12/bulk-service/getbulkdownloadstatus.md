@@ -89,11 +89,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Message d4p1:nil="false">ValueHere</Message>
         </OperationError>
       </Errors>
-      <ForwardCompatibilityMap xmlns:e1681="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1681:KeyValuePairOfstringstring>
-          <e1681:key d4p1:nil="false">ValueHere</e1681:key>
-          <e1681:value d4p1:nil="false">ValueHere</e1681:value>
-        </e1681:KeyValuePairOfstringstring>
+      <ForwardCompatibilityMap xmlns:e975="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e975:KeyValuePairOfstringstring>
+          <e975:key d4p1:nil="false">ValueHere</e975:key>
+          <e975:value d4p1:nil="false">ValueHere</e975:value>
+        </e975:KeyValuePairOfstringstring>
       </ForwardCompatibilityMap>
       <PercentComplete>ValueHere</PercentComplete>
       <RequestStatus d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</RequestStatus>

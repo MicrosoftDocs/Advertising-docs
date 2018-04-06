@@ -16,7 +16,7 @@ Defines the relationship and editorial status of an ad extension with an account
 ```xml
 <xs:complexType name="AdExtensionAssociation" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element name="AdExtension" nillable="true" type="tns:AdExtension" />
+    <xs:element minOccurs="0" name="AdExtension" nillable="true" type="tns:AdExtension" />
     <xs:element name="AssociationType" type="tns:AssociationType" />
     <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:AdExtensionEditorialStatus" />
     <xs:element name="EntityId" type="xs:long" />
