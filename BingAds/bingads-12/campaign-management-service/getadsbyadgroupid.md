@@ -95,11 +95,11 @@ The following template shows the order of the [body](#response-body) and [header
           <FinalUrls d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
           </FinalUrls>
-          <ForwardCompatibilityMap xmlns:e2349="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e2349:KeyValuePairOfstringstring>
-              <e2349:key d4p1:nil="false">ValueHere</e2349:key>
-              <e2349:value d4p1:nil="false">ValueHere</e2349:value>
-            </e2349:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1037="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1037:KeyValuePairOfstringstring>
+              <e1037:key d4p1:nil="false">ValueHere</e1037:key>
+              <e1037:value d4p1:nil="false">ValueHere</e1037:value>
+            </e1037:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Status d4p1:nil="false">ValueHere</Status>

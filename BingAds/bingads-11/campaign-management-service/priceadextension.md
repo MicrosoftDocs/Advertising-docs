@@ -10,7 +10,7 @@ description: Defines an ad extension that includes between 3 and 8 price table r
 Defines an ad extension that includes between 3 and 8 price table rows.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
+> Available in the United States, United Kingdom, Canada, France, Germany, and Australia on PC and mobile devices.
 
 You can associate a price ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 price ad extensions.
 

@@ -81,6 +81,7 @@ The following template shows the order of the [body](#response-body) and [header
             <StartDate d4p1:nil="false">ValueHere</StartDate>
             <Type d4p1:nil="false">ValueHere</Type>
           </AdRotation>
+          <AudienceAdsBidAdjustment d4p1:nil="false">ValueHere</AudienceAdsBidAdjustment>
           <BiddingScheme d4p1:nil="false" d4p1:type="-- derived type specified here with the appropriate prefix --">
             <Type d4p1:nil="false">ValueHere</Type>
             <!--This field is applicable if the derived type attribute is set to MaxClicksBiddingScheme-->
@@ -109,16 +110,15 @@ The following template shows the order of the [body](#response-body) and [header
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e2346="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e2346:KeyValuePairOfstringstring>
-              <e2346:key d4p1:nil="false">ValueHere</e2346:key>
-              <e2346:value d4p1:nil="false">ValueHere</e2346:value>
-            </e2346:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1034="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1034:KeyValuePairOfstringstring>
+              <e1034:key d4p1:nil="false">ValueHere</e1034:key>
+              <e1034:value d4p1:nil="false">ValueHere</e1034:value>
+            </e1034:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Language d4p1:nil="false">ValueHere</Language>
           <Name d4p1:nil="false">ValueHere</Name>
-          <NativeBidAdjustment d4p1:nil="false">ValueHere</NativeBidAdjustment>
           <Network d4p1:nil="false">ValueHere</Network>
           <PrivacyStatus d4p1:nil="false">ValueHere</PrivacyStatus>
           <Settings d4p1:nil="false">
@@ -132,6 +132,10 @@ The following template shows the order of the [body](#response-body) and [header
               <!--These fields are applicable if the derived type attribute is set to DynamicSearchAdsSetting-->
               <DomainName d4p1:nil="false">ValueHere</DomainName>
               <Language d4p1:nil="false">ValueHere</Language>
+              <PageFeedIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                <a1:long>ValueHere</a1:long>
+              </PageFeedIds>
+              <Source>ValueHere</Source>
               <!--This field is applicable if the derived type attribute is set to TargetSetting-->
               <Details d4p1:nil="false">
                 <TargetSettingDetail>

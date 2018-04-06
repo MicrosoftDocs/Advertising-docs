@@ -20,10 +20,10 @@ You can associate a call ad extension with campaigns in the account. Each entity
   <xs:complexContent mixed="false">
     <xs:extension base="tns:AdExtension">
       <xs:sequence>
-        <xs:element name="CountryCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="IsCallOnly" nillable="true" type="xs:boolean" />
         <xs:element minOccurs="0" name="IsCallTrackingEnabled" nillable="true" type="xs:boolean" />
-        <xs:element name="PhoneNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="RequireTollFreeTrackingNumber" nillable="true" type="xs:boolean" />
       </xs:sequence>
     </xs:extension>

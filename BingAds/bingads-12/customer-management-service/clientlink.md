@@ -35,7 +35,7 @@ Defines a client link object. Acceptance of a client link invitation enables an 
     <xs:element minOccurs="0" name="LastModifiedDateTime" type="xs:dateTime" />
     <xs:element minOccurs="0" name="LastModifiedByUserId" type="xs:long" />
     <xs:element minOccurs="0" name="Timestamp" nillable="true" type="xs:base64Binary" />
-    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q6:ArrayOfKeyValuePairOfstringstring" xmlns:q6="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q7:ArrayOfKeyValuePairOfstringstring" xmlns:q7="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
   </xs:sequence>
 </xs:complexType>
 ```

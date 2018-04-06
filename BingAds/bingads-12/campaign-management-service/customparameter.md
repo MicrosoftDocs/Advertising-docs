@@ -16,8 +16,8 @@ Defines a key and value custom parameter for URL tracking. Used for campaign, ad
 ```xml
 <xs:complexType name="CustomParameter" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element name="Key" nillable="true" type="xs:string" />
-    <xs:element name="Value" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="Key" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
   </xs:sequence>
 </xs:complexType>
 ```

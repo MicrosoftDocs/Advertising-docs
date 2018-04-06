@@ -22,7 +22,7 @@ Ad extensions that are associated at the ad group level will override ad extensi
   <xs:complexContent mixed="false">
     <xs:extension base="tns:AdExtension">
       <xs:sequence>
-        <xs:element name="Text" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

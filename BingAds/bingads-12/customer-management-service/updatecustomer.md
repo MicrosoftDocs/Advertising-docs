@@ -56,25 +56,25 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <UpdateCustomerRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <Customer xmlns:e363="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e363:CustomerFinancialStatus i:nil="false">ValueHere</e363:CustomerFinancialStatus>
-        <e363:Id i:nil="false">ValueHere</e363:Id>
-        <e363:Industry i:nil="false">ValueHere</e363:Industry>
-        <e363:LastModifiedByUserId i:nil="false">ValueHere</e363:LastModifiedByUserId>
-        <e363:LastModifiedTime i:nil="false">ValueHere</e363:LastModifiedTime>
-        <e363:MarketCountry i:nil="false">ValueHere</e363:MarketCountry>
-        <ForwardCompatibilityMap xmlns:e364="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-          <e364:KeyValuePairOfstringstring>
-            <e364:key i:nil="false">ValueHere</e364:key>
-            <e364:value i:nil="false">ValueHere</e364:value>
-          </e364:KeyValuePairOfstringstring>
+      <Customer xmlns:e912="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e912:CustomerFinancialStatus i:nil="false">ValueHere</e912:CustomerFinancialStatus>
+        <e912:Id i:nil="false">ValueHere</e912:Id>
+        <e912:Industry i:nil="false">ValueHere</e912:Industry>
+        <e912:LastModifiedByUserId i:nil="false">ValueHere</e912:LastModifiedByUserId>
+        <e912:LastModifiedTime i:nil="false">ValueHere</e912:LastModifiedTime>
+        <e912:MarketCountry i:nil="false">ValueHere</e912:MarketCountry>
+        <ForwardCompatibilityMap xmlns:e913="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e913:KeyValuePairOfstringstring>
+            <e913:key i:nil="false">ValueHere</e913:key>
+            <e913:value i:nil="false">ValueHere</e913:value>
+          </e913:KeyValuePairOfstringstring>
         </ForwardCompatibilityMap>
-        <e363:MarketLanguage i:nil="false">ValueHere</e363:MarketLanguage>
-        <e363:Name i:nil="false">ValueHere</e363:Name>
-        <e363:ServiceLevel i:nil="false">ValueHere</e363:ServiceLevel>
-        <e363:CustomerLifeCycleStatus i:nil="false">ValueHere</e363:CustomerLifeCycleStatus>
-        <e363:TimeStamp i:nil="false">ValueHere</e363:TimeStamp>
-        <e363:Number i:nil="false">ValueHere</e363:Number>
+        <e912:MarketLanguage i:nil="false">ValueHere</e912:MarketLanguage>
+        <e912:Name i:nil="false">ValueHere</e912:Name>
+        <e912:ServiceLevel i:nil="false">ValueHere</e912:ServiceLevel>
+        <e912:CustomerLifeCycleStatus i:nil="false">ValueHere</e912:CustomerLifeCycleStatus>
+        <e912:TimeStamp i:nil="false">ValueHere</e912:TimeStamp>
+        <e912:Number i:nil="false">ValueHere</e912:Number>
       </Customer>
     </UpdateCustomerRequest>
   </s:Body>

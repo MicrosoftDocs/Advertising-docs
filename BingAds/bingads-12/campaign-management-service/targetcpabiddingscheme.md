@@ -37,7 +37,7 @@ To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must
     <xs:extension base="tns:BiddingScheme">
       <xs:sequence>
         <xs:element minOccurs="0" name="MaxCpc" nillable="true" type="tns:Bid" />
-        <xs:element name="TargetCpa" nillable="true" type="xs:double" />
+        <xs:element minOccurs="0" name="TargetCpa" nillable="true" type="xs:double" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

@@ -58,22 +58,22 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <SearchAccountsRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <Predicates xmlns:e331="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e331:Predicate>
-          <e331:Field i:nil="false">ValueHere</e331:Field>
-          <e331:Operator>ValueHere</e331:Operator>
-          <e331:Value i:nil="false">ValueHere</e331:Value>
-        </e331:Predicate>
+      <Predicates xmlns:e880="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e880:Predicate>
+          <e880:Field i:nil="false">ValueHere</e880:Field>
+          <e880:Operator>ValueHere</e880:Operator>
+          <e880:Value i:nil="false">ValueHere</e880:Value>
+        </e880:Predicate>
       </Predicates>
-      <Ordering xmlns:e332="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e332:OrderBy>
-          <e332:Field>ValueHere</e332:Field>
-          <e332:Order>ValueHere</e332:Order>
-        </e332:OrderBy>
+      <Ordering xmlns:e881="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e881:OrderBy>
+          <e881:Field>ValueHere</e881:Field>
+          <e881:Order>ValueHere</e881:Order>
+        </e881:OrderBy>
       </Ordering>
-      <PageInfo xmlns:e333="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e333:Index>ValueHere</e333:Index>
-        <e333:Size>ValueHere</e333:Size>
+      <PageInfo xmlns:e882="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e882:Index>ValueHere</e882:Index>
+        <e882:Size>ValueHere</e882:Size>
       </PageInfo>
     </SearchAccountsRequest>
   </s:Body>
@@ -90,61 +90,62 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SearchAccountsResponse xmlns="https://bingads.microsoft.com/Customer/v12">
-      <Accounts xmlns:e334="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e334:AdvertiserAccount>
-          <e334:BillToCustomerId d4p1:nil="false">ValueHere</e334:BillToCustomerId>
-          <e334:CurrencyCode d4p1:nil="false">ValueHere</e334:CurrencyCode>
-          <e334:AccountFinancialStatus d4p1:nil="false">ValueHere</e334:AccountFinancialStatus>
-          <e334:Id d4p1:nil="false">ValueHere</e334:Id>
-          <e334:Language d4p1:nil="false">ValueHere</e334:Language>
-          <e334:LastModifiedByUserId d4p1:nil="false">ValueHere</e334:LastModifiedByUserId>
-          <e334:LastModifiedTime d4p1:nil="false">ValueHere</e334:LastModifiedTime>
-          <e334:Name d4p1:nil="false">ValueHere</e334:Name>
-          <e334:Number d4p1:nil="false">ValueHere</e334:Number>
-          <e334:ParentCustomerId>ValueHere</e334:ParentCustomerId>
-          <e334:PaymentMethodId d4p1:nil="false">ValueHere</e334:PaymentMethodId>
-          <e334:PaymentMethodType d4p1:nil="false">ValueHere</e334:PaymentMethodType>
-          <e334:PrimaryUserId d4p1:nil="false">ValueHere</e334:PrimaryUserId>
-          <e334:AccountLifeCycleStatus d4p1:nil="false">ValueHere</e334:AccountLifeCycleStatus>
-          <e334:TimeStamp d4p1:nil="false">ValueHere</e334:TimeStamp>
-          <e334:TimeZone d4p1:nil="false">ValueHere</e334:TimeZone>
-          <e334:PauseReason d4p1:nil="false">ValueHere</e334:PauseReason>
-          <ForwardCompatibilityMap xmlns:e335="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e335:KeyValuePairOfstringstring>
-              <e335:key d4p1:nil="false">ValueHere</e335:key>
-              <e335:value d4p1:nil="false">ValueHere</e335:value>
-            </e335:KeyValuePairOfstringstring>
+      <Accounts xmlns:e883="https://bingads.microsoft.com/Customer/v12/Entities" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e883:AdvertiserAccount>
+          <e883:BillToCustomerId d4p1:nil="false">ValueHere</e883:BillToCustomerId>
+          <e883:CurrencyCode d4p1:nil="false">ValueHere</e883:CurrencyCode>
+          <e883:AccountFinancialStatus d4p1:nil="false">ValueHere</e883:AccountFinancialStatus>
+          <e883:Id d4p1:nil="false">ValueHere</e883:Id>
+          <e883:Language d4p1:nil="false">ValueHere</e883:Language>
+          <e883:LastModifiedByUserId d4p1:nil="false">ValueHere</e883:LastModifiedByUserId>
+          <e883:LastModifiedTime d4p1:nil="false">ValueHere</e883:LastModifiedTime>
+          <e883:Name d4p1:nil="false">ValueHere</e883:Name>
+          <e883:Number d4p1:nil="false">ValueHere</e883:Number>
+          <e883:ParentCustomerId>ValueHere</e883:ParentCustomerId>
+          <e883:PaymentMethodId d4p1:nil="false">ValueHere</e883:PaymentMethodId>
+          <e883:PaymentMethodType d4p1:nil="false">ValueHere</e883:PaymentMethodType>
+          <e883:PrimaryUserId d4p1:nil="false">ValueHere</e883:PrimaryUserId>
+          <e883:AccountLifeCycleStatus d4p1:nil="false">ValueHere</e883:AccountLifeCycleStatus>
+          <e883:TimeStamp d4p1:nil="false">ValueHere</e883:TimeStamp>
+          <e883:TimeZone d4p1:nil="false">ValueHere</e883:TimeZone>
+          <e883:PauseReason d4p1:nil="false">ValueHere</e883:PauseReason>
+          <ForwardCompatibilityMap xmlns:e884="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e884:KeyValuePairOfstringstring>
+              <e884:key d4p1:nil="false">ValueHere</e884:key>
+              <e884:value d4p1:nil="false">ValueHere</e884:value>
+            </e884:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
-          <e334:LinkedAgencies d4p1:nil="false">
-            <e334:CustomerInfo>
-              <e334:Id d4p1:nil="false">ValueHere</e334:Id>
-              <e334:Name d4p1:nil="false">ValueHere</e334:Name>
-            </e334:CustomerInfo>
-          </e334:LinkedAgencies>
-          <e334:SalesHouseCustomerId d4p1:nil="false">ValueHere</e334:SalesHouseCustomerId>
-          <TaxInformation xmlns:e336="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e336:KeyValuePairOfstringstring>
-              <e336:key d4p1:nil="false">ValueHere</e336:key>
-              <e336:value d4p1:nil="false">ValueHere</e336:value>
-            </e336:KeyValuePairOfstringstring>
+          <e883:LinkedAgencies d4p1:nil="false">
+            <e883:CustomerInfo>
+              <e883:Id d4p1:nil="false">ValueHere</e883:Id>
+              <e883:Name d4p1:nil="false">ValueHere</e883:Name>
+            </e883:CustomerInfo>
+          </e883:LinkedAgencies>
+          <e883:SalesHouseCustomerId d4p1:nil="false">ValueHere</e883:SalesHouseCustomerId>
+          <TaxInformation xmlns:e885="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e885:KeyValuePairOfstringstring>
+              <e885:key d4p1:nil="false">ValueHere</e885:key>
+              <e885:value d4p1:nil="false">ValueHere</e885:value>
+            </e885:KeyValuePairOfstringstring>
           </TaxInformation>
-          <e334:BackUpPaymentInstrumentId d4p1:nil="false">ValueHere</e334:BackUpPaymentInstrumentId>
-          <e334:BillingThresholdAmount d4p1:nil="false">ValueHere</e334:BillingThresholdAmount>
-          <e334:BusinessAddress d4p1:nil="false">
-            <e334:City d4p1:nil="false">ValueHere</e334:City>
-            <e334:CountryCode d4p1:nil="false">ValueHere</e334:CountryCode>
-            <e334:Id d4p1:nil="false">ValueHere</e334:Id>
-            <e334:Line1 d4p1:nil="false">ValueHere</e334:Line1>
-            <e334:Line2 d4p1:nil="false">ValueHere</e334:Line2>
-            <e334:Line3 d4p1:nil="false">ValueHere</e334:Line3>
-            <e334:Line4 d4p1:nil="false">ValueHere</e334:Line4>
-            <e334:PostalCode d4p1:nil="false">ValueHere</e334:PostalCode>
-            <e334:StateOrProvince d4p1:nil="false">ValueHere</e334:StateOrProvince>
-            <e334:TimeStamp d4p1:nil="false">ValueHere</e334:TimeStamp>
-            <e334:BusinessName d4p1:nil="false">ValueHere</e334:BusinessName>
-          </e334:BusinessAddress>
-          <e334:AutoTagType d4p1:nil="false">ValueHere</e334:AutoTagType>
-        </e334:AdvertiserAccount>
+          <e883:BackUpPaymentInstrumentId d4p1:nil="false">ValueHere</e883:BackUpPaymentInstrumentId>
+          <e883:BillingThresholdAmount d4p1:nil="false">ValueHere</e883:BillingThresholdAmount>
+          <e883:BusinessAddress d4p1:nil="false">
+            <e883:City d4p1:nil="false">ValueHere</e883:City>
+            <e883:CountryCode d4p1:nil="false">ValueHere</e883:CountryCode>
+            <e883:Id d4p1:nil="false">ValueHere</e883:Id>
+            <e883:Line1 d4p1:nil="false">ValueHere</e883:Line1>
+            <e883:Line2 d4p1:nil="false">ValueHere</e883:Line2>
+            <e883:Line3 d4p1:nil="false">ValueHere</e883:Line3>
+            <e883:Line4 d4p1:nil="false">ValueHere</e883:Line4>
+            <e883:PostalCode d4p1:nil="false">ValueHere</e883:PostalCode>
+            <e883:StateOrProvince d4p1:nil="false">ValueHere</e883:StateOrProvince>
+            <e883:TimeStamp d4p1:nil="false">ValueHere</e883:TimeStamp>
+            <e883:BusinessName d4p1:nil="false">ValueHere</e883:BusinessName>
+          </e883:BusinessAddress>
+          <e883:AutoTagType d4p1:nil="false">ValueHere</e883:AutoTagType>
+          <e883:SoldToPaymentInstrumentId d4p1:nil="false">ValueHere</e883:SoldToPaymentInstrumentId>
+        </e883:AdvertiserAccount>
       </Accounts>
     </SearchAccountsResponse>
   </s:Body>

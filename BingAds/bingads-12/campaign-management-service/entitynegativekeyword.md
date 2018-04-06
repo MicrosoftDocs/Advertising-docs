@@ -17,8 +17,8 @@ Defines an object that contains a set of negative keywords that are only associa
 <xs:complexType name="EntityNegativeKeyword" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element name="EntityId" type="xs:long" />
-    <xs:element name="EntityType" nillable="true" type="xs:string" />
-    <xs:element name="NegativeKeywords" nillable="true" type="tns:ArrayOfNegativeKeyword" />
+    <xs:element minOccurs="0" name="EntityType" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="NegativeKeywords" nillable="true" type="tns:ArrayOfNegativeKeyword" />
   </xs:sequence>
 </xs:complexType>
 ```

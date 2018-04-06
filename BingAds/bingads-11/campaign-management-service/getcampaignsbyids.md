@@ -103,11 +103,11 @@ The following template shows the order of the [body](#response-body) and [header
           <BudgetType d4p1:nil="false">ValueHere</BudgetType>
           <DailyBudget d4p1:nil="false">ValueHere</DailyBudget>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e1329="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1329:KeyValuePairOfstringstring>
-              <e1329:key d4p1:nil="false">ValueHere</e1329:key>
-              <e1329:value d4p1:nil="false">ValueHere</e1329:value>
-            </e1329:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e781="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e781:KeyValuePairOfstringstring>
+              <e781:key d4p1:nil="false">ValueHere</e781:key>
+              <e781:value d4p1:nil="false">ValueHere</e781:value>
+            </e781:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
@@ -115,13 +115,13 @@ The following template shows the order of the [body](#response-body) and [header
           <Status d4p1:nil="false">ValueHere</Status>
           <TimeZone d4p1:nil="false">ValueHere</TimeZone>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e1330="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e1330:Parameters d4p1:nil="false">
-              <e1330:CustomParameter>
-                <e1330:Key d4p1:nil="false">ValueHere</e1330:Key>
-                <e1330:Value d4p1:nil="false">ValueHere</e1330:Value>
-              </e1330:CustomParameter>
-            </e1330:Parameters>
+          <UrlCustomParameters xmlns:e782="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e782:Parameters d4p1:nil="false">
+              <e782:CustomParameter>
+                <e782:Key d4p1:nil="false">ValueHere</e782:Key>
+                <e782:Value d4p1:nil="false">ValueHere</e782:Value>
+              </e782:CustomParameter>
+            </e782:Parameters>
           </UrlCustomParameters>
           <CampaignType d4p1:nil="false">ValueHere</CampaignType>
           <Settings d4p1:nil="false">
@@ -139,7 +139,7 @@ The following template shows the order of the [body](#response-body) and [header
               <Details d4p1:nil="false">
                 <TargetSettingDetail>
                   <CriterionTypeGroup>ValueHere</CriterionTypeGroup>
-                  <TargetAll>ValueHere</TargetAll>
+                  <TargetAndBid>ValueHere</TargetAndBid>
                 </TargetSettingDetail>
               </Details>
             </Setting>
@@ -156,11 +156,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e1331="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e1331:KeyValuePairOfstringstring>
-              <e1331:key d4p1:nil="false">ValueHere</e1331:key>
-              <e1331:value d4p1:nil="false">ValueHere</e1331:value>
-            </e1331:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e783="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e783:KeyValuePairOfstringstring>
+              <e783:key d4p1:nil="false">ValueHere</e783:key>
+              <e783:value d4p1:nil="false">ValueHere</e783:value>
+            </e783:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

@@ -88,570 +88,542 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignSiteLinksAdExtensions">
+    <xs:enumeration value="CampaignLocationAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">11</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignLocationAdExtensions">
+    <xs:enumeration value="CampaignCallAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">12</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignCallAdExtensions">
+    <xs:enumeration value="LocationAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">13</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupSiteLinksAdExtensions">
+    <xs:enumeration value="CallAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">14</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="LocationAdExtensions">
+    <xs:enumeration value="NegativeKeywordLists">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">15</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CallAdExtensions">
+    <xs:enumeration value="SharedNegativeKeywords">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="SiteLinksAdExtensions">
+    <xs:enumeration value="CampaignNegativeKeywordListAssociations">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">17</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="NegativeKeywordLists">
+    <xs:enumeration value="ImageAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">18</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="SharedNegativeKeywords">
+    <xs:enumeration value="CampaignImageAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">19</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignNegativeKeywordListAssociations">
+    <xs:enumeration value="AdGroupImageAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">20</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="ImageAdExtensions">
+    <xs:enumeration value="AppAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">21</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignImageAdExtensions">
+    <xs:enumeration value="AdGroupAppAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">22</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupImageAdExtensions">
+    <xs:enumeration value="CampaignAppAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">23</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AppAdExtensions">
+    <xs:enumeration value="PriceAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">24</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupAppAdExtensions">
+    <xs:enumeration value="ReviewAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">25</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignAppAdExtensions">
+    <xs:enumeration value="CampaignNegativeDynamicSearchAdTargets">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">26</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="PriceAdExtensions">
+    <xs:enumeration value="AdGroupProductPartitions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">27</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="ReviewAdExtensions">
+    <xs:enumeration value="CampaignProductScopes">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">28</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignNegativeDynamicSearchAdTargets">
+    <xs:enumeration value="CampaignReviewAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">29</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupProductPartitions">
+    <xs:enumeration value="AdGroupReviewAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">30</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignProductScopes">
+    <xs:enumeration value="CalloutAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">31</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignReviewAdExtensions">
+    <xs:enumeration value="CampaignCalloutAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">32</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupReviewAdExtensions">
+    <xs:enumeration value="AdGroupCalloutAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">33</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CalloutAdExtensions">
+    <xs:enumeration value="SitelinkAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">34</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignCalloutAdExtensions">
+    <xs:enumeration value="CampaignSitelinkAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">35</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupCalloutAdExtensions">
+    <xs:enumeration value="AdGroupSitelinkAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">36</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="Sitelink2AdExtensions">
+    <xs:enumeration value="ActionLinkAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">37</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignSitelink2AdExtensions">
+    <xs:enumeration value="CampaignActionLinkAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">38</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupSitelink2AdExtensions">
+    <xs:enumeration value="AdGroupActionLinkAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">39</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="ActionLinkAdExtensions">
+    <xs:enumeration value="StructuredSnippetAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">40</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignActionLinkAdExtensions">
+    <xs:enumeration value="CampaignStructuredSnippetAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">41</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupActionLinkAdExtensions">
+    <xs:enumeration value="AdGroupStructuredSnippetAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">42</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="StructuredSnippetAdExtensions">
+    <xs:enumeration value="RemarketingLists">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">43</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignStructuredSnippetAdExtensions">
+    <xs:enumeration value="AdGroupRemarketingListAssociations">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">44</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupStructuredSnippetAdExtensions">
+    <xs:enumeration value="Budgets">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">45</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="RemarketingLists">
+    <xs:enumeration value="TextAds">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">46</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupRemarketingListAssociations">
+    <xs:enumeration value="ProductAds">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">47</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="Budgets">
+    <xs:enumeration value="AppInstallAds">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">48</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="TextAds">
+    <xs:enumeration value="ExpandedTextAds">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">49</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="ProductAds">
+    <xs:enumeration value="DynamicSearchAds">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">50</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AppInstallAds">
+    <xs:enumeration value="AdGroupDynamicSearchAdTargets">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">51</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="ExpandedTextAds">
+    <xs:enumeration value="AdGroupNegativeDynamicSearchAdTargets">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">52</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="DynamicSearchAds">
+    <xs:enumeration value="CampaignPriceAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">53</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupDynamicSearchAdTargets">
+    <xs:enumeration value="AdGroupPriceAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">54</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupNegativeDynamicSearchAdTargets">
+    <xs:enumeration value="Labels">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">55</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignPriceAdExtensions">
+    <xs:enumeration value="CampaignLabels">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">56</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupPriceAdExtensions">
+    <xs:enumeration value="AdGroupLabels">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">57</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="Labels">
+    <xs:enumeration value="TextAdLabels">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">58</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CampaignLabels">
+    <xs:enumeration value="KeywordLabels">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">59</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupLabels">
+    <xs:enumeration value="AdGroupNegativeRemarketingListAssociations">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">60</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="TextAdLabels">
+    <xs:enumeration value="CustomAudiences">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">61</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="KeywordLabels">
+    <xs:enumeration value="AdGroupCustomAudienceAssociations">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">62</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupNegativeRemarketingListAssociations">
+    <xs:enumeration value="AdGroupNegativeCustomAudienceAssociations">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">63</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CustomAudiences">
+    <xs:enumeration value="InMarketAudiences">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">64</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupCustomAudienceAssociations">
+    <xs:enumeration value="AdGroupInMarketAudienceAssociations">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">65</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupNegativeCustomAudienceAssociations">
+    <xs:enumeration value="AdGroupNegativeInMarketAudienceAssociations">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">66</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="InMarketAudiences">
+    <xs:enumeration value="Audiences">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">67</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupInMarketAudienceAssociations">
+    <xs:enumeration value="AdGroupAudienceAssociations">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">68</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupNegativeInMarketAudienceAssociations">
+    <xs:enumeration value="AdGroupNegativeAudienceAssociations">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">69</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="Audiences">
+    <xs:enumeration value="ProductAdLabels">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">70</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupAudienceAssociations">
+    <xs:enumeration value="AppInstallAdLabels">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">71</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AdGroupNegativeAudienceAssociations">
+    <xs:enumeration value="ExpandedTextAdLabels">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">72</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="ProductAdLabels">
+    <xs:enumeration value="DynamicSearchAdLabels">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">73</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AppInstallAdLabels">
+    <xs:enumeration value="AccountLocationAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">74</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="ExpandedTextAdLabels">
+    <xs:enumeration value="AccountImageAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">75</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="DynamicSearchAdLabels">
+    <xs:enumeration value="AccountAppAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">76</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AccountLocationAdExtensions">
+    <xs:enumeration value="AccountPriceAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">77</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AccountImageAdExtensions">
+    <xs:enumeration value="AccountReviewAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">78</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AccountAppAdExtensions">
+    <xs:enumeration value="AccountCalloutAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">79</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AccountPriceAdExtensions">
+    <xs:enumeration value="AccountSitelinkAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">80</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AccountReviewAdExtensions">
+    <xs:enumeration value="AccountActionLinkAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">81</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AccountCalloutAdExtensions">
+    <xs:enumeration value="AccountStructuredSnippetAdExtensions">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">82</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AccountSitelink2AdExtensions">
+    <xs:enumeration value="ResponsiveAds">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">83</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AccountActionLinkAdExtensions">
+    <xs:enumeration value="ResponsiveAdLabels">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">84</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="AccountStructuredSnippetAdExtensions">
+    <xs:enumeration value="ProductAudiences">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">85</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="CoOpCampaigns">
+    <xs:enumeration value="AdGroupProductAudienceAssociations">
       <xs:annotation>
         <xs:appinfo>
           <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">86</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
-    <xs:enumeration value="ResponsiveAds">
-      <xs:annotation>
-        <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">87</EnumerationValue>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:enumeration>
-    <xs:enumeration value="ResponsiveAdLabels">
-      <xs:annotation>
-        <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">88</EnumerationValue>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:enumeration>
-    <xs:enumeration value="ProductAudiences">
-      <xs:annotation>
-        <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">89</EnumerationValue>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:enumeration>
-    <xs:enumeration value="AdGroupProductAudienceAssociations">
-      <xs:annotation>
-        <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">90</EnumerationValue>
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:enumeration>
     <xs:enumeration value="AdGroupNegativeProductAudienceAssociations">
       <xs:annotation>
         <xs:appinfo>
-          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">91</EnumerationValue>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">87</EnumerationValue>
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
@@ -670,7 +642,7 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="accountlocationadextensions"></a>AccountLocationAdExtensions|Include [Account Location Ad Extension](account-location-ad-extension.md) records in the download that represents the association relationship between an account and a location ad extension. For [Location Ad Extension](location-ad-extension.md) records, you should include the LocationAdExtensions value in the download request.|
 |<a name="accountpriceadextensions"></a>AccountPriceAdExtensions|Include [Account Price Ad Extension](account-price-ad-extension.md) records in the download that represents the association relationship between an account and a price ad extension. For [Price Ad Extension](price-ad-extension.md) records, you should include the PriceAdExtensions value in the download request.|
 |<a name="accountreviewadextensions"></a>AccountReviewAdExtensions|Include [Account Review Ad Extension](account-review-ad-extension.md) records in the download that each represent the association relationship between an account and a review ad extension. For [Review Ad Extension](review-ad-extension.md) records, you should include the ReviewAdExtensions value in the download request.|
-|<a name="accountsitelink2adextensions"></a>AccountSitelink2AdExtensions|Reserved.|
+|<a name="accountsitelinkadextensions"></a>AccountSitelinkAdExtensions|Reserved.|
 |<a name="accountstructuredsnippetadextensions"></a>AccountStructuredSnippetAdExtensions|Include [Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md) records in the download that represents the association relationship between an account and a structured snippet ad extension. For [Structured Snippet Ad Extension](structured-snippet-ad-extension.md) records, you should include the StructuredSnippetAdExtensions value in the download request.|
 |<a name="actionlinkadextensions"></a>ActionLinkAdExtensions|Reserved for future use.|
 |<a name="adgroupactionlinkadextensions"></a>AdGroupActionLinkAdExtensions|Reserved for future use.|
@@ -696,8 +668,7 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="adgroupremarketinglistassociations"></a>AdGroupRemarketingListAssociations|Include [Ad Group Remarketing List Association](ad-group-remarketing-list-association.md) records in the download that each represent the association relationship between an ad group and a remarketing list. For [Remarketing List](remarketing-list.md) records, you should include the RemarketingLists value in the download request.|
 |<a name="adgroupreviewadextensions"></a>AdGroupReviewAdExtensions|Include [Ad Group Review Ad Extension](ad-group-review-ad-extension.md) records in the download that each represent the association relationship between an ad group and a review ad extension. For [Review Ad Extension](review-ad-extension.md) records, you should include the ReviewAdExtensions value in the download request.|
 |<a name="adgroups"></a>AdGroups|Include [Ad Group](ad-group.md) records in the download data.|
-|<a name="adgroupsitelink2adextensions"></a>AdGroupSitelink2AdExtensions|Reserved.|
-|<a name="adgroupsitelinksadextensions"></a>AdGroupSiteLinksAdExtensions|Reserved.|
+|<a name="adgroupsitelinkadextensions"></a>AdGroupSitelinkAdExtensions|Reserved.|
 |<a name="adgroupstructuredsnippetadextensions"></a>AdGroupStructuredSnippetAdExtensions|Include [Ad Group Structured Snippet Ad Extension](ad-group-structured-snippet-ad-extension.md) records in the download that each represent the association relationship between an ad group and a structured snippet ad extension. For [Structured Snippet Ad Extension](structured-snippet-ad-extension.md) records, you should include the StructuredSnippetAdExtensions value in the download request.|
 |<a name="adgrouptargetcriterions"></a>AdGroupTargetCriterions|Include [Ad Group Age Criterion](ad-group-age-criterion.md), [Ad Group DayTime Criterion](ad-group-daytime-criterion.md), [Ad Group DeviceOS Criterion](ad-group-deviceos-criterion.md), [Ad Group Gender Criterion](ad-group-gender-criterion.md), [Ad Group Location Criterion](ad-group-location-criterion.md), [Ad Group Location Intent Criterion](ad-group-location-intent-criterion.md), [Ad Group Negative Location Criterion](ad-group-negative-location-criterion.md), and [Ad Group Radius Criterion](ad-group-radius-criterion.md) records in the download data.|
 |<a name="ads"></a>Ads|Include [App Install Ad](app-install-ad.md), [Dynamic Search Ad](dynamic-search-ad.md), [Expanded Text Ad](expanded-text-ad.md), [Product Ad](product-ad.md), and [Text Ad](text-ad.md) records in the download data.<br/><br/> To get ads by type instead of requesting all types of ads, you can include one or more of the AppInstallAds, DynamicSearchAds, ExpandedTextAds, ProductAds, and TextAds values in the download request.|
@@ -723,11 +694,9 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="campaignproductscopes"></a>CampaignProductScopes|Include [Campaign Product Scope](campaign-product-scope.md) records in the download data.|
 |<a name="campaignreviewadextensions"></a>CampaignReviewAdExtensions|Include [Campaign Review Ad Extension](campaign-review-ad-extension.md) records in the download that each represent the association relationship between a campaign and a review ad extension. For [Review Ad Extension](review-ad-extension.md) records, you should include the ReviewAdExtensions value in the download request.|
 |<a name="campaigns"></a>Campaigns|Include [Campaign](campaign.md) records in the download data.|
-|<a name="campaignsitelink2adextensions"></a>CampaignSitelink2AdExtensions|Reserved.|
-|<a name="campaignsitelinksadextensions"></a>CampaignSiteLinksAdExtensions|Reserved.|
+|<a name="campaignsitelinkadextensions"></a>CampaignSitelinkAdExtensions|Reserved.|
 |<a name="campaignstructuredsnippetadextensions"></a>CampaignStructuredSnippetAdExtensions|Include [Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md) records in the download that represents the association relationship between a campaign and a structured snippet ad extension. For [Structured Snippet Ad Extension](structured-snippet-ad-extension.md) records, you should include the StructuredSnippetAdExtensions value in the download request.|
 |<a name="campaigntargetcriterions"></a>CampaignTargetCriterions|Include [Campaign Age Criterion](campaign-age-criterion.md), [Campaign DayTime Criterion](campaign-daytime-criterion.md), [Campaign DeviceOS Criterion](campaign-deviceos-criterion.md), [Campaign Gender Criterion](campaign-gender-criterion.md), [Campaign Location Criterion](campaign-location-criterion.md), [Campaign Location Intent Criterion](campaign-location-intent-criterion.md), [Campaign Negative Location Criterion](campaign-negative-location-criterion.md), and [Campaign Radius Criterion](campaign-radius-criterion.md) records in the download data.|
-|<a name="coopcampaigns"></a>CoOpCampaigns|Reserved.|
 |<a name="customaudiences"></a>CustomAudiences|Include [Custom Audience](custom-audience.md) records in the download data.<br/><br/> The [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operations return the same set of custom audiences for the current authenticated user. All custom audiences that have Scope set to Customer are included. The custom audiences that have Scope set to Account are also included if the user has access to view or manage those accounts. In other words, if a custom audience is in account scope for an account that the user cannot access, then it is excluded from the download results.|
 |<a name="dynamicsearchadlabels"></a>DynamicSearchAdLabels|Include [Dynamic Search Ad Label](dynamic-search-ad-label.md) records in the download that each represent a label applied to a dynamic search ad. For [Label](label.md) records, you should include the Labels value in the download request.|
 |<a name="dynamicsearchads"></a>DynamicSearchAds|Include [Dynamic Search Ad](dynamic-search-ad.md) records in the download data.<br/><br/> To get all types of ads instead of requesting ads by type, you can include the Ads value in the download request.|
@@ -749,8 +718,7 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="responsiveads"></a>ResponsiveAds|Reserved.|
 |<a name="reviewadextensions"></a>ReviewAdExtensions|Include [Review Ad Extension](review-ad-extension.md) records in the download data.<br/><br/> To get all review ad extensions from your account's extension library, use the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) operation. To get only the review ad extensions that are associated with entities within the specified campaigns, use the [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operation.|
 |<a name="sharednegativekeywords"></a>SharedNegativeKeywords|Include [Shared Negative Keyword](shared-negative-keyword.md) records in the download data. Shared negative keywords belong to a negative keyword list. For [Negative Keyword List](negative-keyword-list.md) records, you should include the NegativeKeywordLists value in the download request.|
-|<a name="sitelink2adextensions"></a>Sitelink2AdExtensions|Reserved.|
-|<a name="sitelinksadextensions"></a>SiteLinksAdExtensions|Reserved.|
+|<a name="sitelinkadextensions"></a>SitelinkAdExtensions|Reserved.|
 |<a name="structuredsnippetadextensions"></a>StructuredSnippetAdExtensions|Include [Structured Snippet Ad Extension](structured-snippet-ad-extension.md) records in the download data.<br/><br/> To get all structured snippet ad extensions from your account's extension library, use the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) operation. To get only the structured snippet ad extensions that are associated with entities within the specified campaigns, use the [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operation.|
 |<a name="textadlabels"></a>TextAdLabels|Include [Text Ad Label](text-ad-label.md) records in the download that each represent a label applied to a text ad. For [Label](label.md) records, you should include the Labels value in the download request.|
 |<a name="textads"></a>TextAds|Include [Text Ad](text-ad.md) records in the download data.<br/><br/> To get all types of ads instead of requesting ads by type, you can include the Ads value in the download request.|

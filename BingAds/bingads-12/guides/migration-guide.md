@@ -239,6 +239,9 @@ In version 12 the ReturnSupportedCampaignTypes request element is removed from [
 #### <a name="campaign-errorcode-inmarketaudiencecouldnotbedeleted"></a>Error Code for InMarketAudienceCouldNotBeDeleted
 In-market audiences cannot be deleted in both version 11 and version 12. Custom audiences can be deleted in both version 11 and 12. The error code CustomAudienceAndInMarketAudienceCouldNotBeDeleted (4860) that is still returned in version 11 is replaced by error code InMarketAudienceCouldNotBeDeleted (4864) in version 12.
 
+#### <a name="campaign-errorcode-maxaudiences"></a>Error Codes for Maximum Audiences
+The maximum audience limits for customer and account level apply to all audience types i.e., not only remarketing lists. Therefore MaxRemarketingListsPerCustomerLimitReached (4833) is replaced by MaxAudiencesPerCustomerLimitReached (4866). MaxAudiencesPerAccountLimitReached (4865) is available in both version 11 and 12 for the account level audience limit.
+
 #### <a name="campaign-errorcode-entitysettings"></a>Error Codes for Entity Settings
 The error code string for code 1149 is updated from CampaignServiceDuplicateSettingsInCampaign to CampaignServiceDuplicateSettingsInEntity. The same error code can be returned whether the duplicate settings are at campaign or ad group level. For example if you attempt to set duplicate [ShoppingSetting](../campaign-management-service/shoppingsetting.md) objects in a campaign or duplicate [TargetSetting](../campaign-management-service/targetsetting.md) objects in an ad group.
 
@@ -366,6 +369,9 @@ Now let's say that one@contoso.com is acting in the context of Customer B and up
 #### <a name="customer-userroles"></a>User Roles
 The *UserRole* value set is removed to ensure consistent mapping and forward compatibility for potential new user roles. In turn, the *Role* element of the [UserInvitation](../customer-management-service/userinvitation.md) object is replaced with an int value i.e., an element named *RoleId*.
 
+#### <a name="customer-user"></a>MSA Migration Status for a User
+The *IsMigratedToMicrosoftAccount* element is removed from the [User](../customer-management-service/user.md) object, since version 12 only supports Microsoft Acccount [Authentication with OAuth](authentication-oauth.md). 
+
 #### <a name="customer-advertiseraccount"></a>Advertiser Account
 The [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object no longer derives from an *Account* base. The *Account* object is removed and its properties are moved directly to the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object. 
 
@@ -442,9 +448,9 @@ ClickTypeID|ClickTypeId
 CountryOrRegion|Country
 Device type|DeviceType
 DSAFinalURL|FinalUrl
-FinalAppUrl|FinalAppURL
-FinalMobileUrl|FinalMobileURL
-FinalUrl|FinalURL
+FinalAppURL|FinalAppUrl
+FinalMobileURL|FinalMobileUrl
+FinalURL|FinalUrl
 FirstLevelCategory|Category1
 Localstorecode|LocalStoreCode
 NegativeKeywordListName|NegativeKeywordList
@@ -459,15 +465,15 @@ TopLevelCategory|Category0
 
 Likewise when you include the TimePeriod column in version 12 the name of the column in the downloaded report will be TimePeriod. In version 11 the column name varied by aggregation as follows.
 
-|Aggregation|Version 11 Column Name|
-|---------------|---------------|
-|Daily|GregorianDate|
-|DayOfWeek|DayOfWeek|
-|Hourly|Hour, GregorianDate|
-|HourOfDay|HourOfDay|
-|Monthly|MonthStartDate|
-|Weekly|WeekStartDate|
-|Yearly|Year|
+|Aggregation|Version 11 Column Name|Version 12 Column Name|
+|---------------|---------------|---------------|
+|Daily|GregorianDate|TimePeriod|
+|DayOfWeek|DayOfWeek|TimePeriod|
+|Hourly|Hour, GregorianDate|TimePeriod|
+|HourOfDay|HourOfDay|TimePeriod|
+|Monthly|MonthStartDate|TimePeriod|
+|Weekly|WeekStartDate|TimePeriod|
+|Yearly|Year|TimePeriod|
 
 Whereas in version 11 the time period for Hourly aggregation was split across two columns, in version 12 it will be formatted in the TimePeriod column with the date and hour (int value) delimited by a single pipe i.e., "mm/dd/yyyy hh:mm:ss&#124;hour" where hh:mm:ss is always 12:00:00 and can be ignored. For example, if the click occurred March 15, 2018 between 07:00 and 08:00, then the field in the downloaded report would be "3/15/2018 12:00:00 AM&#124;8". For more details see [ReportAggregation](../reporting-service/reportaggregation.md) and [TimePeriod Column](reports.md#timeperiod).
 
@@ -507,8 +513,14 @@ For parity with the predefined time options (e.g., 'Yesterday') for the budget s
 
 The *BudgetSummaryReportTimePeriod* object is removed in version 12. When submitting a budget summary report request, you must use the [ReportTimePeriod](../reporting-service/reporttimeperiod.md) data type instead of *BudgetSummaryReportTimePeriod* within the *PredefinedTime* element of the [BudgetSummaryReportTime](../reporting-service/budgetsummaryreporttime.md) object.
 
+#### <a name="reporting-firstpage"></a>First Page Ad Position
+In the [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) value set *SidebarBid* is replaced with *FirstPageBid*. Based on your campaign performance and marketplace dynamics, this estimate is the bid amount that Bing Ads calculates for your ad to be placed on the first page in the search results. The first page bid estimate is automatically generated by Bing Ads as a reference, and is not a guarantee of ad position.
+
 #### <a name="reporting-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *Content* value is removed from the [AdDistributionReportFilter](../reporting-service/addistributionreportfilter.md), [BidMatchTypeReportFilter](../reporting-service/bidmatchtypereportfilter.md), and [DeliveredMatchTypeReportFilter](../reporting-service/deliveredmatchtypereportfilter.md) value sets. 
+
+#### <a name="reporting-audience-distribution"></a>Audience Ads Distribution
+The Native value is renamed Audience in the [AdDistributionReportFilter](../reporting-service/addistributionreportfilter.md) value set. 
 
 #### <a name="reporting-historical-columns"></a>Historical Columns
 The [AdGroupPerformanceReportColumn ](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn ](../reporting-service/campaignperformancereportcolumn.md), and [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) values are renamed from Historic to Historical.

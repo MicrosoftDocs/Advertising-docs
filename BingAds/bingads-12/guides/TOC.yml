@@ -1316,6 +1316,8 @@
           href: ../campaign-management-service/day.md
         - name: DistanceUnit
           href: ../campaign-management-service/distanceunit.md
+        - name: DynamicSearchAdsSource
+          href: ../campaign-management-service/dynamicsearchadssource.md
         - name: EntityScope
           href: ../campaign-management-service/entityscope.md
         - name: EntityType

@@ -46,3 +46,4 @@ Namespace: http\://schemas.datacontract.org/2004/07/System.Collections.Generic
 [AdvertiserAccount](advertiseraccount.md)  
 [ClientLink](clientlink.md)  
 [Customer](customer.md)  
+[User](user.md)  

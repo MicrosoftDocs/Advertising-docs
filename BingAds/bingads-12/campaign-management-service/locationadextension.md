@@ -20,8 +20,8 @@ You can associate a location ad extension with the account or with campaigns in 
   <xs:complexContent mixed="false">
     <xs:extension base="tns:AdExtension">
       <xs:sequence>
-        <xs:element name="Address" nillable="true" type="tns:Address" />
-        <xs:element name="CompanyName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Address" nillable="true" type="tns:Address" />
+        <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="GeoCodeStatus" nillable="true" type="tns:BusinessGeoCodeStatus" />
         <xs:element minOccurs="0" name="GeoPoint" nillable="true" type="tns:GeoPoint" />
         <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />

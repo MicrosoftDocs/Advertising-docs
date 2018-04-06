@@ -145,7 +145,7 @@ The *Ad Format Preference* field is used to indicate whether or not you prefer t
 > [!IMPORTANT]
 > You must define at least one expanded text ad per ad group that is not native preferred, otherwise the ad copy of all expanded text ads will be eligible for both search and native ads.
 
-Possible values are *Native* and *All*. If set to *All*, the ad will be eligible for both search and native ad formats. If set to *Native*, the ad will only be eligible for the native ad format.
+Possible values are *Audience Ad* and *All*. If set to *All*, the ad will be eligible for both search and native ad formats. If set to *Audience Ad*, the ad will only be eligible for the native ad format.
 
 **Add:** Optional. If you do not set this field when creating an expanded text ad, by default the ad format preference will be set to *All*.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value* when updating an expanded text ad, the ad format preference will be set to the default value i.e. *All*.    
