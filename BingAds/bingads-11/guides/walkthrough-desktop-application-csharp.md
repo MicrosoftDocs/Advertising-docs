@@ -48,12 +48,13 @@ The example desktop application sends authentication requests to the Microsoft a
     using System.ServiceModel;
     using System.Threading.Tasks;
     using System.Windows;
+    using System.Net.Http;
     using Microsoft.BingAds;
     using Microsoft.BingAds.V11.Bulk;
     using Microsoft.BingAds.V11.Bulk.Entities;
     using Microsoft.BingAds.V11.CampaignManagement;
     using Microsoft.BingAds.V11.CustomerManagement;
-
+    
     namespace BingAdsDesktopApp
     {
         /// <summary>
@@ -64,20 +65,20 @@ The example desktop application sends authentication requests to the Microsoft a
             private const string ClientId = "ClientIdGoesHere";
             private const string DeveloperToken = "DeveloperTokenGoesHere";
             private static string ClientState = "ClientStateGoesHere";
-
+    
             private Authentication _auth;
             private static AuthorizationData _authorizationData;
             private readonly string _refreshTokenFilePath = Path.Combine(Path.GetTempPath(), "refreshToken.txt");
-
+    
             private static long?[,] _accountCustomerIds;
             private static ServiceClient<ICustomerManagementService> _customerService;
             private static BulkServiceManager _bulkService;
-
+    
             public MainWindow()
             {
                 InitializeComponent();
             }
-
+    
             private async void CallServicesButton_OnClick(object sender, RoutedEventArgs e)
             {
                 try
@@ -139,14 +140,14 @@ The example desktop application sends authentication requests to the Microsoft a
                                     "Error when requesting OAuth tokens", MessageBoxButton.OK, MessageBoxImage.Error
                                 );
                             }
-                            catch (FaultException<Microsoft.BingAds.CustomerManagement.AdApiFaultDetail> ex)
+                            catch (FaultException<Microsoft.BingAds.V11.CustomerManagement.AdApiFaultDetail> ex)
                             {
                                 MessageBox.Show(
                                     string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))),
                                     "Error when calling the Customer Management service", MessageBoxButton.OK, MessageBoxImage.Error
                                 );
                             }
-                            catch (FaultException<Microsoft.BingAds.Bulk.AdApiFaultDetail> ex)
+                            catch (FaultException<Microsoft.BingAds.V11.Bulk.AdApiFaultDetail> ex)
                             {
                                 MessageBox.Show(
                                     string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))),
@@ -174,14 +175,14 @@ The example desktop application sends authentication requests to the Microsoft a
                         "Error when requesting OAuth tokens", MessageBoxButton.OK, MessageBoxImage.Error
                     );
                 }
-                catch (FaultException<Microsoft.BingAds.CustomerManagement.AdApiFaultDetail> ex)
+                catch (FaultException<Microsoft.BingAds.V11.CustomerManagement.AdApiFaultDetail> ex)
                 {
                     MessageBox.Show(
                         string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))),
                         "Error when calling the Customer Management service", MessageBoxButton.OK, MessageBoxImage.Error
                     );
                 }
-                catch (FaultException<Microsoft.BingAds.Bulk.AdApiFaultDetail> ex)
+                catch (FaultException<Microsoft.BingAds.V11.Bulk.AdApiFaultDetail> ex)
                 {
                     MessageBox.Show(
                         string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))),
@@ -196,7 +197,7 @@ The example desktop application sends authentication requests to the Microsoft a
                     );
                 }
             }
-
+    
             /// <summary>
             /// Adds a campaign to an account of the current authenticated user. 
             /// </summary>
@@ -205,14 +206,14 @@ The example desktop application sends authentication requests to the Microsoft a
                 // Uses the first account in a list of accounts that the current authenticated user may access. 
                 // If you want to use a specific account identifier, you can set _authorizationData to the value directly
                 // instead of calling GetUserDataAsync. 
-
+    
                 _authorizationData = await GetUserDataAsync(authentication);
                 var campaignId = await AddCampaignInBulkAsync(_authorizationData);
-
+    
                 MessageBox.Show(string.Format("Added new campaign:\n\nCustomerId: {0}\nAccountId: {1}\nCampaignId: {2}",
                     _authorizationData.CustomerId, _authorizationData.AccountId, campaignId));
             }
-
+    
             /// <summary>
             /// Uses the BulkServiceManager class to add a campaign. 
             /// </summary>
@@ -220,7 +221,7 @@ The example desktop application sends authentication requests to the Microsoft a
             {
                 _bulkService = new BulkServiceManager(authorizationData);
                 _bulkService.StatusPollIntervalInMilliseconds = 1000;
-
+    
                 // Note that UploadEntities writes a temporary file for upload.
                 // You can get and set the BulkServiceManager.WorkingDirectory property.
                 var uploadResults = await _bulkService.UploadEntitiesAsync(new EntityUploadParameters
@@ -232,6 +233,9 @@ The example desktop application sends authentication requests to the Microsoft a
                             AccountId = authorizationData.AccountId,
                             Campaign = new Campaign
                             {
+                                // You can set your campaign's bid strategy to EnhancedCpc, MaxClicks, MaxConversions, or TargetCpa 
+                                // and then, at any time, set an individual ad group's or keyword's bid strategy to ManualCpc.
+                                BiddingScheme = new EnhancedCpcBiddingScheme { },
                                 Name = "Campaign " + DateTime.UtcNow.ToString(CultureInfo.InvariantCulture),
                                 BudgetType = BudgetLimitType.DailyBudgetAccelerated,
                                 DailyBudget = 10,
@@ -241,9 +245,9 @@ The example desktop application sends authentication requests to the Microsoft a
                     },
                     ResponseMode = ResponseMode.ErrorsAndResults
                 });
-
+    
                 var campaign = uploadResults.OfType<BulkCampaign>().Single();
-
+    
                 if (campaign.HasErrors)
                 {
                     MessageBox.Show(
@@ -251,10 +255,10 @@ The example desktop application sends authentication requests to the Microsoft a
                         "Upload had errors", MessageBoxButton.OK, MessageBoxImage.Error
                     );
                 }
-
+    
                 return campaign.Campaign.Id;
             }
-
+    
             /// <summary>
             /// Get customer and account identifiers for the current authenticated user. 
             /// </summary>
@@ -267,35 +271,35 @@ The example desktop application sends authentication requests to the Microsoft a
                     Authentication = authentication,
                     DeveloperToken = DeveloperToken
                 };
-
+    
                 _customerService = new ServiceClient<ICustomerManagementService>(_authorizationData);
-
+    
                 // Get the Bing Ads user identifier for the current authenticated user.
                 var user = await GetUserAsync(null);
-
+    
                 var accounts = await SearchAccountsByUserIdAsync(user.Id);
-
+    
                 if (accounts.Length > 0 && accounts[0].Id != null)
                 {
                     _authorizationData.AccountId = (long)(accounts[0].Id);
                     _authorizationData.CustomerId = accounts[0].ParentCustomerId;
                 }
-
+    
                 // Store the parent customer identifier in the second array dimension
-
+    
                 _accountCustomerIds = new long?[accounts.Length, 2];
-
+    
                 for (var i = 0; i < accounts.Length; i++)
                 {
                     _accountCustomerIds[i, 0] = accounts[i].Id;
                     _accountCustomerIds[i, 1] = accounts[i].ParentCustomerId;
                 }
-
+    
                 SetUserDataByAccountIndex(0);
-
+    
                 return _authorizationData;
             }
-
+    
             /// <summary>
             /// Gets a User object by the specified UserId.
             /// </summary>
@@ -307,10 +311,10 @@ The example desktop application sends authentication requests to the Microsoft a
                 {
                     UserId = userId
                 };
-
+    
                 return (await _customerService.CallAsync((s, r) => s.GetUserAsync(r), request)).User;
             }
-
+    
             /// <summary>
             /// Search for account details by UserId.
             /// </summary>
@@ -324,23 +328,23 @@ The example desktop application sends authentication requests to the Microsoft a
                     Operator = PredicateOperator.Equals,
                     Value = userId.ToString()
                 };
-
-                var paging = new Paging
+    
+                var paging = new Microsoft.BingAds.V11.CustomerManagement.Paging
                 {
                     Index = 0,
                     Size = 10
                 };
-
+    
                 var request = new SearchAccountsRequest
                 {
                     Ordering = null,
                     PageInfo = paging,
                     Predicates = new[] { predicate }
                 };
-
+    
                 return (await _customerService.CallAsync((s, r) => s.SearchAccountsAsync(r), request)).Accounts.ToArray();
             }
-
+    
             /// <summary>
             /// Utility method for setting the customer and account identifiers within the global 
             /// <see cref="_authorizationData"/> instance. 
@@ -350,12 +354,12 @@ The example desktop application sends authentication requests to the Microsoft a
             private void SetUserDataByAccountIndex(int accountIndex)
             {
                 if (accountIndex < 0 || accountIndex > _accountCustomerIds.Length) return;
-
+    
                 var accountId = _accountCustomerIds[accountIndex, 0];
                 var customerId = _accountCustomerIds[accountIndex, 1];
-
+    
                 if (accountId == null || customerId == null) return;
-
+    
                 _authorizationData.AccountId = (long)accountId;
                 _authorizationData.CustomerId = (int)customerId;
             }

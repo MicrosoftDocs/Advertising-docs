@@ -48,6 +48,7 @@ The Campaign Management service defines the following value sets.
 |[CriterionTypeGroup](criteriontypegroup.md)|The type used to group criterions.|
 |[Day](day.md)|Defines the day values that you can specify for day and time criterion.|
 |[DistanceUnit](distanceunit.md)|Defines the possible distance units of a geographical location.|
+|[DynamicSearchAdsSource](dynamicsearchadssource.md)|Reserved.|
 |[EntityScope](entityscope.md)|Defines values that you can use to determine whether the remarketing list can only be associated with ad groups within one specified account, or can be associated with any ad groups across all of the customer's accounts.|
 |[EntityType](entitytype.md)|Defines the possible types of entities.|
 |[ExpressionOperator](expressionoperator.md)|Defines the operators that can be applied to expressions within a conversion goal.|

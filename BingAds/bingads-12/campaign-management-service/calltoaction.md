@@ -34,7 +34,7 @@ Reserved.
     <xs:enumeration value="SeeMore" />
     <xs:enumeration value="ShopNow" />
     <xs:enumeration value="SignUp" />
-    <xs:enumeration value="Subscrib" />
+    <xs:enumeration value="Subscribe" />
     <xs:enumeration value="Unknown" />
     <xs:enumeration value="VisitSite" />
   </xs:restriction>
@@ -63,7 +63,7 @@ Reserved.
 |<a name="seemore"></a>SeeMore|Reserved.|
 |<a name="shopnow"></a>ShopNow|Reserved.|
 |<a name="signup"></a>SignUp|Reserved.|
-|<a name="subscrib"></a>Subscrib|Reserved.|
+|<a name="subscribe"></a>Subscribe|Reserved.|
 |<a name="unknown"></a>Unknown|Reserved.|
 |<a name="visitsite"></a>VisitSite|Reserved.|
 

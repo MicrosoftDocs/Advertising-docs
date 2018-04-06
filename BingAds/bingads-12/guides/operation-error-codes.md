@@ -128,6 +128,17 @@ You have exceeded the number of calls that you are allowed to make in a minute. 
 ***
 
 **Numeric Code**
+200
+
+**Symbolic Error Code**
+Not applicable.
+
+**Description**
+The Address City property is invalid.
+
+***
+
+**Numeric Code**
 201
 
 **Symbolic Error Code**
@@ -183,6 +194,17 @@ The specified version is not valid.
 ***
 
 **Numeric Code**
+205
+
+**Symbolic Error Code**
+Not applicable.
+
+**Description**
+The Address Line1 property is invalid.
+
+***
+
+**Numeric Code**
 206
 
 **Symbolic Error Code**
@@ -223,6 +245,17 @@ TimestampNotMatch
 
 **Description**
 The time stamp does not match.
+
+***
+
+**Numeric Code**
+209
+
+**Symbolic Error Code**
+Not applicable.
+
+**Description**
+The Address PostalCode property is invalid.
 
 ***
 
@@ -1092,17 +1125,6 @@ The campaign description is not valid.
 ***
 
 **Numeric Code**
-1105
-
-**Symbolic Error Code**
-CampaignServiceInvalidMonthlyBudget
-
-**Description**
-This error code is no longer in use. Monthly budgets was last used with Bing Ads API version 10.
-
-***
-
-**Numeric Code**
 1106
 
 **Symbolic Error Code**
@@ -1143,17 +1165,6 @@ CampaignServiceTimeZoneNotEnabled
 
 **Description**
 The campaign timezone is required.
-
-***
-
-**Numeric Code**
-1110
-
-**Symbolic Error Code**
-CampaignServiceDaylightSavingNotEnabled
-
-**Description**
-This error code is no longer in use. The daylight saving setting was last used with Bing Ads API version 10.
 
 ***
 
@@ -1939,17 +1950,6 @@ CampaignServiceAdGroupInvalidMediumForCustomer
 
 **Description**
 The customer account is not allowed to create ad groups in the specified ad distribution medium.
-
-***
-
-**Numeric Code**
-1240
-
-**Symbolic Error Code**
-CampaignServiceTypeCanBeSitePlacementOnlyForContentAdGroups
-
-**Description**
-This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
 
 ***
 
@@ -5016,94 +5016,6 @@ Billing of the balance amount in the account failed.
 ***
 
 **Numeric Code**
-2600
-
-**Symbolic Error Code**
-CampaignServiceNullSitePlacement
-
-**Description**
-This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
-
-***
-
-**Numeric Code**
-2601
-
-**Symbolic Error Code**
-CampaignServiceInvalidSitePlacementId
-
-**Description**
-This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
-
-***
-
-**Numeric Code**
-2602
-
-**Symbolic Error Code**
-CampaignServiceDuplicateInSitePlacementIds
-
-**Description**
-This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
-
-***
-
-**Numeric Code**
-2603
-
-**Symbolic Error Code**
-CampaignServiceSitePlacementsArrayShouldNotBeNullOrEmpty
-
-**Description**
-This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
-
-***
-
-**Numeric Code**
-2604
-
-**Symbolic Error Code**
-CampaignServiceSitePlacementsArrayExceedsLimit
-
-**Description**
-This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
-
-***
-
-**Numeric Code**
-2605
-
-**Symbolic Error Code**
-CampaignServiceSitePlacementOperationNotAllowedForPilot
-
-**Description**
-This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
-
-***
-
-**Numeric Code**
-2606
-
-**Symbolic Error Code**
-CampaignServiceSitePlacementIdsArrayShouldNotBeNullOrEmpty
-
-**Description**
-This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
-
-***
-
-**Numeric Code**
-2607
-
-**Symbolic Error Code**
-CampaignServiceSitePlacementIdsArrayExceedsLimit
-
-**Description**
-This error code is no longer in use. Site placements were last used with Bing Ads API version 10.
-
-***
-
-**Numeric Code**
 2608
 
 **Symbolic Error Code**
@@ -5254,17 +5166,6 @@ CampaignServiceTargetInvalidForCustomer
 
 **Description**
 The customer is not allowed to use the specified target type.
-
-***
-
-**Numeric Code**
-2909
-
-**Symbolic Error Code**
-CampaignServiceIsLibraryTargetNotNull
-
-**Description**
-This error code is no longer in use. Library targets were last used with Bing Ads API version 10.
 
 ***
 
@@ -6010,6 +5911,19 @@ BulkServiceTooManyRequests
 
 **Description**
 Too many requests.
+
+***
+
+**Numeric Code**
+3228
+
+**Symbolic Error Code**
+BulkServiceDataScopeInvalid
+
+**Description**
+The specified DataScope value is either invalid or no longer supported.
+
+Bulk download of performance data is not supported after Bing Ads API Version 11. The EntityPerformanceData value of the [DataScope](../bulk-service/datascope.md) value set is no longer supported in Bing Ads API Version 12, and will be removed from the service contract in a future version.
 
 ***
 
@@ -9932,17 +9846,6 @@ TargetCpa is required for this bidding scheme.
 ***
 
 **Numeric Code**
-4703
-
-**Symbolic Error Code**
-MaxCpcExceedsMonthlyBudget
-
-**Description**
-This error code is no longer in use. Monthly budgets was last used with Bing Ads API version 10.
-
-***
-
-**Numeric Code**
 4704
 
 **Symbolic Error Code**
@@ -10328,17 +10231,6 @@ Remarketing list cannot be deleted due to existing association.
 ***
 
 **Numeric Code**
-4833
-
-**Symbolic Error Code**
-MaxRemarketingListsPerCustomerLimitReached
-
-**Description**
-Max remarketing lists per customer limit is reached.
-
-***
-
-**Numeric Code**
 4834
 
 **Symbolic Error Code**
@@ -10636,6 +10528,28 @@ Audience Id do not match audience type.
 ***
 
 **Numeric Code**
+4862
+
+**Symbolic Error Code**
+MaxAudienceCriterionsPerAccountLimitReached
+
+**Description**
+Max audience criterions per account limit is reached.
+
+***
+
+**Numeric Code**
+4863
+
+**Symbolic Error Code**
+MaxRemarketingListAssociationsPerAccountLimitReached
+
+**Description**
+Max remarketing list associations per account limit is reached.
+
+***
+
+**Numeric Code**
 4864
 
 **Symbolic Error Code**
@@ -10643,6 +10557,28 @@ InMarketAudienceCouldNotBeDeleted
 
 **Description**
 In-market audiences cannot be deleted.
+
+***
+
+**Numeric Code**
+4865
+
+**Symbolic Error Code**
+MaxAudiencesPerAccountLimitReached
+
+**Description**
+Max audiences per account limit is reached.
+
+***
+
+**Numeric Code**
+4866
+
+**Symbolic Error Code**
+MaxAudiencesPerCustomerLimitReached
+
+**Description**
+Max audiences per customer limit is reached.
 
 ***
 
@@ -10746,17 +10682,6 @@ The budget type must be specified.
 ***
 
 **Numeric Code**
-4909
-
-**Symbolic Error Code**
-CampaignServiceMonthlyBudgetNotAllowed
-
-**Description**
-This error code is no longer in use. Monthly budgets was last used with Bing Ads API version 10.
-
-***
-
-**Numeric Code**
 4910
 
 **Symbolic Error Code**
@@ -10830,17 +10755,6 @@ CampaignServiceBudgetIdInvalid
 
 **Description**
 The budget id is invalid.
-
-***
-
-**Numeric Code**
-4917
-
-**Symbolic Error Code**
-CampaignServiceCannotUpdateSharedDailyBudgetToUnsharedMonthlyBudget
-
-**Description**
-This error code is no longer in use. Monthly budgets was last used with Bing Ads API version 10.
 
 ***
 
@@ -11130,18 +11044,6 @@ CampaignServiceExpandedTextAdFinalUrlDomainInvalid
 The expanded text ad domain is invalid.
 
 ***
-
-**Numeric Code**
-5027
-
-**Symbolic Error Code**
-CampaignServiceExpandedTextAdDisplayUrlMissing
-
-**Description**
-The expanded text ad domain is missing.
-
-***
-
 
 **Numeric Code**
 5028

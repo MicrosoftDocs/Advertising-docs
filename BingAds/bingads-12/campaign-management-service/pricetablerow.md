@@ -16,11 +16,11 @@ Defines pricing information by currency and unit that you can use with price ad 
 ```xml
 <xs:complexType name="PriceTableRow" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element name="CurrencyCode" nillable="true" type="xs:string" />
-    <xs:element name="Description" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q45:ArrayOfstring" xmlns:q45="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element name="FinalUrls" nillable="true" type="q46:ArrayOfstring" xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element name="Header" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q46:ArrayOfstring" xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q47:ArrayOfstring" xmlns:q47="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="Header" nillable="true" type="xs:string" />
     <xs:element name="Price" type="xs:double" />
     <xs:element name="PriceQualifier" type="tns:PriceQualifier" />
     <xs:element name="PriceUnit" type="tns:PriceUnit" />

@@ -18,15 +18,15 @@ Reserved.
   <xs:complexContent mixed="false">
     <xs:extension base="tns:Ad">
       <xs:sequence>
-        <xs:element name="BusinessName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="BusinessName" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="CallToAction" nillable="true" type="tns:CallToAction" />
-        <xs:element name="Headline" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Headline" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="LandscapeImageMediaId" nillable="true" type="xs:long" />
         <xs:element minOccurs="0" name="LandscapeLogoMediaId" nillable="true" type="xs:long" />
-        <xs:element name="LongHeadline" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LongHeadline" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="SquareImageMediaId" nillable="true" type="xs:long" />
         <xs:element minOccurs="0" name="SquareLogoMediaId" nillable="true" type="xs:long" />
-        <xs:element name="Text" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

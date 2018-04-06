@@ -29,7 +29,7 @@ For more information about managing negative keywords and negative keyword lists
       <xs:sequence>
         <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
         <xs:element name="MatchType" type="tns:MatchType" />
-        <xs:element name="Text" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

@@ -36,7 +36,7 @@ For more information see [Multi-User Credentials](../guides/customer-accounts.md
     <xs:element minOccurs="0" name="UserLifeCycleStatus" nillable="true" type="tns:UserLifeCycleStatus" />
     <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
     <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="IsMigratedToMicrosoftAccount" type="xs:boolean" />
+    <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q4:ArrayOfKeyValuePairOfstringstring" xmlns:q4="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -47,8 +47,8 @@ For more information see [Multi-User Credentials](../guides/customer-accounts.md
 |-----------|---------------|-------------|
 |<a name="contactinfo"></a>ContactInfo|The user's contact information.<br/><br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|[ContactInfo](contactinfo.md)|
 |<a name="customerid"></a>CustomerId|The identifier of the customer for this user to access.<br/><br/>**Update:** Read-only|**long**|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The Bing Ads identifier of the user.<br/><br/>**Update:** Required|**long**|
-|<a name="ismigratedtomicrosoftaccount"></a>IsMigratedToMicrosoftAccount|Determines whether the user name was migrated from a Bing Ads managed sign-in user name to a Microsoft account email address.<br/><br/>If the value of *IsMigratedToMicrosoftAccount* is true, the user name was migrated from a Bing Ads managed sign-in user name to a Microsoft account email address.<br /><br />If the value of *IsMigratedToMicrosoftAccount* is false, the user name could be either a Bing Ads managed sign-in user name or a Microsoft account email address. For more information, see [Authentication with OAuth](../guides/authentication-oauth.md).<br/><br/>**Update:** Read-only|**boolean**|
 |<a name="jobtitle"></a>JobTitle|The user's job title. The title can contain a maximum of 50 characters.<br/><br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
 |<a name="lastmodifiedbyuserid"></a>LastModifiedByUserId|The identifier of the last user to update the user's information.<br/><br/>**Update:** Read-only|**long**|
 |<a name="lastmodifiedtime"></a>LastModifiedTime|The date and time that that the user information was last updated. The value is in Coordinated Universal Time (UTC).<br /><br />The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).<br/><br/>**Update:** Read-only|**dateTime**|

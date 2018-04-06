@@ -18,34 +18,10 @@ Defines the possible audience types.
   <xs:list>
     <xs:simpleType>
       <xs:restriction base="xs:string">
-        <xs:enumeration value="RemarketingList">
-          <xs:annotation>
-            <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:enumeration>
-        <xs:enumeration value="Custom">
-          <xs:annotation>
-            <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:enumeration>
-        <xs:enumeration value="InMarket">
-          <xs:annotation>
-            <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:enumeration>
-        <xs:enumeration value="Product">
-          <xs:annotation>
-            <xs:appinfo>
-              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
-            </xs:appinfo>
-          </xs:annotation>
-        </xs:enumeration>
+        <xs:enumeration value="RemarketingList" />
+        <xs:enumeration value="Custom" />
+        <xs:enumeration value="InMarket" />
+        <xs:enumeration value="Product" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>

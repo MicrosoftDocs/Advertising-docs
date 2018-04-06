@@ -20,7 +20,7 @@ The *Image* object derives from the *Media* object. For a list of the inherited 
   <xs:complexContent mixed="false">
     <xs:extension base="tns:Media">
       <xs:sequence>
-        <xs:element name="Data" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

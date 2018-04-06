@@ -30,7 +30,7 @@ For more information about user authentication, see [Authentication with OAuth](
     <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="CustomerId" type="xs:long" />
     <xs:element minOccurs="0" name="RoleId" type="xs:int" />
-    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q7:ArrayOflong" xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q8:ArrayOflong" xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="ExpirationDate" type="xs:dateTime" />
     <xs:element minOccurs="0" name="Lcid" type="tns:LCID" />
   </xs:sequence>

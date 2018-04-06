@@ -125,6 +125,17 @@ You have exceeded the number of calls that you are allowed to make in a minute. 
 ***
 
 **Numeric Code**
+200
+
+**Symbolic Error Code**
+Not applicable.
+
+**Description**
+The Address City property is invalid.
+
+***
+
+**Numeric Code**
 201
 
 **Symbolic Error Code**
@@ -180,6 +191,17 @@ The specified version is not valid.
 ***
 
 **Numeric Code**
+205
+
+**Symbolic Error Code**
+Not applicable.
+
+**Description**
+The Address Line1 property is invalid.
+
+***
+
+**Numeric Code**
 206
 
 **Symbolic Error Code**
@@ -220,6 +242,17 @@ TimestampNotMatch
 
 **Description**
 The time stamp does not match.
+
+***
+
+**Numeric Code**
+209
+
+**Symbolic Error Code**
+Not applicable.
+
+**Description**
+The Address PostalCode property is invalid.
 
 ***
 
@@ -10404,7 +10437,7 @@ Remarketing list cannot be deleted due to existing association.
 MaxRemarketingListsPerCustomerLimitReached
 
 **Description**
-Max remarketing lists per customer limit is reached.
+Max audiences per customer limit is reached.
 
 ***
 
@@ -10716,6 +10749,39 @@ AudienceIdDoNotMatchAudienceType
 
 **Description**
 Audience Id do not match audience type.
+
+***
+
+**Numeric Code**
+4862
+
+**Symbolic Error Code**
+MaxAudienceCriterionsPerAccountLimitReached
+
+**Description**
+Max audience criterions per account limit is reached.
+
+***
+
+**Numeric Code**
+4863
+
+**Symbolic Error Code**
+MaxRemarketingListAssociationsPerAccountLimitReached
+
+**Description**
+Max remarketing list associations per account limit is reached.
+
+***
+
+**Numeric Code**
+4865
+
+**Symbolic Error Code**
+MaxAudiencesPerAccountLimitReached
+
+**Description**
+Max audiences per account limit is reached.
 
 ***
 

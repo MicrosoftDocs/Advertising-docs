@@ -63,6 +63,7 @@ The following template shows the order of the [body](#request-body) and [header]
       <AccountId>ValueHere</AccountId>
       <Campaigns i:nil="false">
         <Campaign>
+          <AudienceAdsBidAdjustment i:nil="false">ValueHere</AudienceAdsBidAdjustment>
           <BiddingScheme i:nil="false" i:type="-- derived type specified here with the appropriate prefix --">
             <Type i:nil="false">ValueHere</Type>
             <!--This field is applicable if the derived type attribute is set to MaxClicksBiddingScheme-->
@@ -86,15 +87,14 @@ The following template shows the order of the [body](#request-body) and [header]
           <BudgetType i:nil="false">ValueHere</BudgetType>
           <DailyBudget i:nil="false">ValueHere</DailyBudget>
           <Description i:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e2304="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e2304:KeyValuePairOfstringstring>
-              <e2304:key i:nil="false">ValueHere</e2304:key>
-              <e2304:value i:nil="false">ValueHere</e2304:value>
-            </e2304:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e992="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e992:KeyValuePairOfstringstring>
+              <e992:key i:nil="false">ValueHere</e992:key>
+              <e992:value i:nil="false">ValueHere</e992:value>
+            </e992:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Name i:nil="false">ValueHere</Name>
-          <NativeBidAdjustment i:nil="false">ValueHere</NativeBidAdjustment>
           <Status i:nil="false">ValueHere</Status>
           <SubType i:nil="false">ValueHere</SubType>
           <TimeZone i:nil="false">ValueHere</TimeZone>
@@ -119,6 +119,10 @@ The following template shows the order of the [body](#request-body) and [header]
               <!--These fields are applicable if the derived type attribute is set to DynamicSearchAdsSetting-->
               <DomainName i:nil="false">ValueHere</DomainName>
               <Language i:nil="false">ValueHere</Language>
+              <PageFeedIds i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                <a1:long>ValueHere</a1:long>
+              </PageFeedIds>
+              <Source>ValueHere</Source>
               <!--This field is applicable if the derived type attribute is set to TargetSetting-->
               <Details i:nil="false">
                 <TargetSettingDetail>
@@ -162,11 +166,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e2305="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e2305:KeyValuePairOfstringstring>
-              <e2305:key d4p1:nil="false">ValueHere</e2305:key>
-              <e2305:value d4p1:nil="false">ValueHere</e2305:value>
-            </e2305:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e993="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e993:KeyValuePairOfstringstring>
+              <e993:key d4p1:nil="false">ValueHere</e993:key>
+              <e993:value d4p1:nil="false">ValueHere</e993:value>
+            </e993:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>

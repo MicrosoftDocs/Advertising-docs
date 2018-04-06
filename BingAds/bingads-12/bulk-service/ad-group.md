@@ -93,7 +93,7 @@ var bulkAdGroup = new BulkAdGroup
         // 'Ad Group' column header in the Bulk file
         Name = "Women's Red Shoe Sale",
         // 'Bid Adjustment' column header in the Bulk file
-        NativeBidAdjustment = 10,
+        AudienceAdsBidAdjustment = 10,
         // 'Network Distribution' column header in the Bulk file
         Network = Network.OwnedAndOperatedAndSyndicatedSearch,
         // 'Target Setting' column header in the Bulk file

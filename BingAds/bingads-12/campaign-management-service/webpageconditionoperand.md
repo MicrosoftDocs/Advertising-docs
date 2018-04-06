@@ -21,6 +21,7 @@ Defines the operands that can be applied to arguments of a webpage condition or 
     <xs:enumeration value="Category" />
     <xs:enumeration value="PageTitle" />
     <xs:enumeration value="PageContent" />
+    <xs:enumeration value="CustomLabel" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -30,6 +31,7 @@ Defines the operands that can be applied to arguments of a webpage condition or 
 |Value|Description|
 |-----------|---------------|
 |<a name="category"></a>Category|Set a condition that the argument must match one of the categories that Bing thinks is applicable for your site.|
+|<a name="customlabel"></a>CustomLabel|Reserved.|
 |<a name="pagecontent"></a>PageContent|Set a condition that the argument must match any of your site's content that is indexed by Bing.|
 |<a name="pagetitle"></a>PageTitle|Set a condition that the argument must match any of your site's page titles that are indexed by Bing.|
 |<a name="unknown"></a>Unknown|Reserved for future use.|

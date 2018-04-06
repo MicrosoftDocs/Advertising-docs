@@ -23,6 +23,8 @@ Defines the campaign level settings for a Dynamic Search Ads campaign.
       <xs:sequence>
         <xs:element minOccurs="0" name="DomainName" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PageFeedIds" nillable="true" type="q6:ArrayOflong" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="Source" type="tns:DynamicSearchAdsSource" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>
@@ -35,6 +37,8 @@ Defines the campaign level settings for a Dynamic Search Ads campaign.
 |-----------|---------------|-------------|
 |<a name="domainname"></a>DomainName|The domain name of the website that you want to target for dynamic search ads.<br/><br/>The length of the string is limited to 2,048 characters. If the domain name includes *www* it will be trimmed and not used.<br/><br/>**Add:** Required<br/>**Update:** Read-only. You cannot update the domain name.|**string**|
 |<a name="language"></a>Language|The language of the website pages that you want to target for dynamic search ads. Currently the only supported language code is 'en'.<br/><br/>**Add:** Required<br/>**Update:** Read-only. You cannot update the language.|**string**|
+|<a name="pagefeedids"></a>PageFeedIds|Reserved.|**long** array|
+|<a name="source"></a>Source|Reserved.|[DynamicSearchAdsSource](dynamicsearchadssource.md)|
 
 The [DynamicSearchAdsSetting](dynamicsearchadssetting.md) object has [Inherited Elements](#inheritedelements).
 

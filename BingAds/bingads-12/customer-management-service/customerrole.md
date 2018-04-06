@@ -18,7 +18,7 @@ Defines the role a user has for each customer or list of accounts.
   <xs:sequence>
     <xs:element minOccurs="0" name="RoleId" type="xs:int" />
     <xs:element minOccurs="0" name="CustomerId" type="xs:long" />
-    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q4:ArrayOflong" xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q5:ArrayOflong" xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </xs:sequence>
 </xs:complexType>
 ```

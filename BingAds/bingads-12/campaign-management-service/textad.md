@@ -24,9 +24,9 @@ Defines a text ad.
     <xs:extension base="tns:Ad">
       <xs:sequence>
         <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
-        <xs:element name="DisplayUrl" nillable="true" type="xs:string" />
-        <xs:element name="Text" nillable="true" type="xs:string" />
-        <xs:element name="Title" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DisplayUrl" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
       </xs:sequence>
     </xs:extension>
   </xs:complexContent>

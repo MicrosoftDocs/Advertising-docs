@@ -98,7 +98,7 @@ for(int i = 0; i < 3; i++)
             // 'Campaign' column header in the Bulk file
             Name = "Women's Shoes " + DateTime.UtcNow,
             // 'Bid Adjustment' column header in the Bulk file
-            NativeBidAdjustment = 10,
+            AudienceAdsBidAdjustment = 10,
             // 'Settings are not applicable for the Search campaign type
             Settings = null,
             // 'Status' column header in the Bulk file

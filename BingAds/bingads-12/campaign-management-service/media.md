@@ -21,7 +21,7 @@ Do not try to instantiate a *Media*. You can create the following object that de
   <xs:sequence>
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="MediaType" nillable="true" type="xs:string" />
-    <xs:element name="Type" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
   </xs:sequence>
 </xs:complexType>
 ```

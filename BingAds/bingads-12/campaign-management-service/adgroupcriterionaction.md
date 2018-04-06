@@ -17,7 +17,7 @@ Defines the action to apply to a [BiddableAdGroupCriterion](biddableadgroupcrite
 <xs:complexType name="AdGroupCriterionAction" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element name="Action" type="tns:ItemAction" />
-    <xs:element name="AdGroupCriterion" nillable="true" type="tns:AdGroupCriterion" />
+    <xs:element minOccurs="0" name="AdGroupCriterion" nillable="true" type="tns:AdGroupCriterion" />
   </xs:sequence>
 </xs:complexType>
 ```

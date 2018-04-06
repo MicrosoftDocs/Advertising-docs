@@ -58,9 +58,9 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="RevenuePerAssist" />
     <xs:enumeration value="TrackingTemplate" />
     <xs:enumeration value="CustomParameters" />
-    <xs:enumeration value="FinalURL" />
-    <xs:enumeration value="FinalMobileURL" />
-    <xs:enumeration value="FinalAppURL" />
+    <xs:enumeration value="FinalUrl" />
+    <xs:enumeration value="FinalMobileUrl" />
+    <xs:enumeration value="FinalAppUrl" />
     <xs:enumeration value="AccountStatus" />
     <xs:enumeration value="CampaignStatus" />
     <xs:enumeration value="AdGroupStatus" />
@@ -102,9 +102,9 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="destinationurl"></a>DestinationUrl|The destination URL attribute of the ad, keyword, or ad group criterion.If the destination URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL after substitution occurs.|
 |<a name="deviceos"></a>DeviceOS|The operating system of the device reported in the *DeviceType* column.The possible values include *Android*, *Blackberry*, *iOS*, *Other*, *Unknown*, and *Windows*.If the operating system of the device cannot be determined or is not one of the operating systems that you can target, the value in this column will be *Unknown*.|
 |<a name="devicetype"></a>DeviceType|The device name attribute of a device OS target bid. The type of device which showed ads.The possible values include *Computer*, *Smartphone*, *Tablet*, and *Unknown*.|
-|<a name="finalappurl"></a>FinalAppURL|Reserved for future use.|
-|<a name="finalmobileurl"></a>FinalMobileURL|The Final Mobile URL of the ad, keyword, or criterion.<br /><br />Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
-|<a name="finalurl"></a>FinalURL|The Final URL of the ad, keyword, or criterion.<br /><br />Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
+|<a name="finalappurl"></a>FinalAppUrl|Reserved for future use.|
+|<a name="finalmobileurl"></a>FinalMobileUrl|The Final Mobile URL of the ad, keyword, or criterion.<br /><br />Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
+|<a name="finalurl"></a>FinalUrl|The Final URL of the ad, keyword, or criterion.<br /><br />Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
 |<a name="network"></a>Network|The current network setting of an ad group. The possible values include AOL search, Bing and Yahoo! search, Content, and Syndicated search partners.|

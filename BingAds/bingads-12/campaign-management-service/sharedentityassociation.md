@@ -17,9 +17,9 @@ Defines an object that contains association information for a campaign and share
 <xs:complexType name="SharedEntityAssociation" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element name="EntityId" type="xs:long" />
-    <xs:element name="EntityType" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="EntityType" nillable="true" type="xs:string" />
     <xs:element name="SharedEntityId" type="xs:long" />
-    <xs:element name="SharedEntityType" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="SharedEntityType" nillable="true" type="xs:string" />
   </xs:sequence>
 </xs:complexType>
 ```

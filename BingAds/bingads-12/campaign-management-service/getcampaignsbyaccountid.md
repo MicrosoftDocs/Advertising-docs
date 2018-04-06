@@ -78,6 +78,7 @@ The following template shows the order of the [body](#response-body) and [header
     <GetCampaignsByAccountIdResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <Campaigns d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <Campaign>
+          <AudienceAdsBidAdjustment d4p1:nil="false">ValueHere</AudienceAdsBidAdjustment>
           <BiddingScheme d4p1:nil="false" d4p1:type="-- derived type specified here with the appropriate prefix --">
             <Type d4p1:nil="false">ValueHere</Type>
             <!--This field is applicable if the derived type attribute is set to MaxClicksBiddingScheme-->
@@ -101,15 +102,14 @@ The following template shows the order of the [body](#response-body) and [header
           <BudgetType d4p1:nil="false">ValueHere</BudgetType>
           <DailyBudget d4p1:nil="false">ValueHere</DailyBudget>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e2359="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e2359:KeyValuePairOfstringstring>
-              <e2359:key d4p1:nil="false">ValueHere</e2359:key>
-              <e2359:value d4p1:nil="false">ValueHere</e2359:value>
-            </e2359:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e1047="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e1047:KeyValuePairOfstringstring>
+              <e1047:key d4p1:nil="false">ValueHere</e1047:key>
+              <e1047:value d4p1:nil="false">ValueHere</e1047:value>
+            </e1047:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
-          <NativeBidAdjustment d4p1:nil="false">ValueHere</NativeBidAdjustment>
           <Status d4p1:nil="false">ValueHere</Status>
           <SubType d4p1:nil="false">ValueHere</SubType>
           <TimeZone d4p1:nil="false">ValueHere</TimeZone>
@@ -134,6 +134,10 @@ The following template shows the order of the [body](#response-body) and [header
               <!--These fields are applicable if the derived type attribute is set to DynamicSearchAdsSetting-->
               <DomainName d4p1:nil="false">ValueHere</DomainName>
               <Language d4p1:nil="false">ValueHere</Language>
+              <PageFeedIds d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                <a1:long>ValueHere</a1:long>
+              </PageFeedIds>
+              <Source>ValueHere</Source>
               <!--This field is applicable if the derived type attribute is set to TargetSetting-->
               <Details d4p1:nil="false">
                 <TargetSettingDetail>

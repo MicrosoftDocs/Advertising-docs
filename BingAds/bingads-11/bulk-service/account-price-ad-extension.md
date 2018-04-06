@@ -10,6 +10,9 @@ dev_langs:
 ---
 # Account Price Ad Extension Record - Bulk
 Defines an association record between an [Account](account.md) and a [Price Ad Extension](price-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the account or price ad extension, use the [Account](account.md) or [Price Ad Extension](price-ad-extension.md) record.
+
+> [!NOTE]
+> Available in the United States, United Kingdom, Canada, France, Germany, and Australia on PC and mobile devices.
 	
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Account Price Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 

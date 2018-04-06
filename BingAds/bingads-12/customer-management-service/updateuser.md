@@ -56,50 +56,55 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <UpdateUserRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-      <User xmlns:e365="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
-        <e365:ContactInfo i:nil="false">
-          <e365:Address i:nil="false">
-            <e365:City i:nil="false">ValueHere</e365:City>
-            <e365:CountryCode i:nil="false">ValueHere</e365:CountryCode>
-            <e365:Id i:nil="false">ValueHere</e365:Id>
-            <e365:Line1 i:nil="false">ValueHere</e365:Line1>
-            <e365:Line2 i:nil="false">ValueHere</e365:Line2>
-            <e365:Line3 i:nil="false">ValueHere</e365:Line3>
-            <e365:Line4 i:nil="false">ValueHere</e365:Line4>
-            <e365:PostalCode i:nil="false">ValueHere</e365:PostalCode>
-            <e365:StateOrProvince i:nil="false">ValueHere</e365:StateOrProvince>
-            <e365:TimeStamp i:nil="false">ValueHere</e365:TimeStamp>
-            <e365:BusinessName i:nil="false">ValueHere</e365:BusinessName>
-          </e365:Address>
-          <e365:ContactByPhone i:nil="false">ValueHere</e365:ContactByPhone>
-          <e365:ContactByPostalMail i:nil="false">ValueHere</e365:ContactByPostalMail>
-          <e365:Email i:nil="false">ValueHere</e365:Email>
-          <e365:EmailFormat i:nil="false">ValueHere</e365:EmailFormat>
-          <e365:Fax i:nil="false">ValueHere</e365:Fax>
-          <e365:HomePhone i:nil="false">ValueHere</e365:HomePhone>
-          <e365:Id i:nil="false">ValueHere</e365:Id>
-          <e365:Mobile i:nil="false">ValueHere</e365:Mobile>
-          <e365:Phone1 i:nil="false">ValueHere</e365:Phone1>
-          <e365:Phone2 i:nil="false">ValueHere</e365:Phone2>
-        </e365:ContactInfo>
-        <e365:CustomerId i:nil="false">ValueHere</e365:CustomerId>
-        <e365:Id i:nil="false">ValueHere</e365:Id>
-        <e365:JobTitle i:nil="false">ValueHere</e365:JobTitle>
-        <e365:LastModifiedByUserId i:nil="false">ValueHere</e365:LastModifiedByUserId>
-        <e365:LastModifiedTime i:nil="false">ValueHere</e365:LastModifiedTime>
-        <e365:Lcid i:nil="false">ValueHere</e365:Lcid>
-        <e365:Name i:nil="false">
-          <e365:FirstName i:nil="false">ValueHere</e365:FirstName>
-          <e365:LastName i:nil="false">ValueHere</e365:LastName>
-          <e365:MiddleInitial i:nil="false">ValueHere</e365:MiddleInitial>
-        </e365:Name>
-        <e365:Password i:nil="false">ValueHere</e365:Password>
-        <e365:SecretAnswer i:nil="false">ValueHere</e365:SecretAnswer>
-        <e365:SecretQuestion>ValueHere</e365:SecretQuestion>
-        <e365:UserLifeCycleStatus i:nil="false">ValueHere</e365:UserLifeCycleStatus>
-        <e365:TimeStamp i:nil="false">ValueHere</e365:TimeStamp>
-        <e365:UserName i:nil="false">ValueHere</e365:UserName>
-        <e365:IsMigratedToMicrosoftAccount>ValueHere</e365:IsMigratedToMicrosoftAccount>
+      <User xmlns:e914="https://bingads.microsoft.com/Customer/v12/Entities" i:nil="false">
+        <e914:ContactInfo i:nil="false">
+          <e914:Address i:nil="false">
+            <e914:City i:nil="false">ValueHere</e914:City>
+            <e914:CountryCode i:nil="false">ValueHere</e914:CountryCode>
+            <e914:Id i:nil="false">ValueHere</e914:Id>
+            <e914:Line1 i:nil="false">ValueHere</e914:Line1>
+            <e914:Line2 i:nil="false">ValueHere</e914:Line2>
+            <e914:Line3 i:nil="false">ValueHere</e914:Line3>
+            <e914:Line4 i:nil="false">ValueHere</e914:Line4>
+            <e914:PostalCode i:nil="false">ValueHere</e914:PostalCode>
+            <e914:StateOrProvince i:nil="false">ValueHere</e914:StateOrProvince>
+            <e914:TimeStamp i:nil="false">ValueHere</e914:TimeStamp>
+            <e914:BusinessName i:nil="false">ValueHere</e914:BusinessName>
+          </e914:Address>
+          <e914:ContactByPhone i:nil="false">ValueHere</e914:ContactByPhone>
+          <e914:ContactByPostalMail i:nil="false">ValueHere</e914:ContactByPostalMail>
+          <e914:Email i:nil="false">ValueHere</e914:Email>
+          <e914:EmailFormat i:nil="false">ValueHere</e914:EmailFormat>
+          <e914:Fax i:nil="false">ValueHere</e914:Fax>
+          <e914:HomePhone i:nil="false">ValueHere</e914:HomePhone>
+          <e914:Id i:nil="false">ValueHere</e914:Id>
+          <e914:Mobile i:nil="false">ValueHere</e914:Mobile>
+          <e914:Phone1 i:nil="false">ValueHere</e914:Phone1>
+          <e914:Phone2 i:nil="false">ValueHere</e914:Phone2>
+        </e914:ContactInfo>
+        <e914:CustomerId i:nil="false">ValueHere</e914:CustomerId>
+        <e914:Id i:nil="false">ValueHere</e914:Id>
+        <e914:JobTitle i:nil="false">ValueHere</e914:JobTitle>
+        <e914:LastModifiedByUserId i:nil="false">ValueHere</e914:LastModifiedByUserId>
+        <e914:LastModifiedTime i:nil="false">ValueHere</e914:LastModifiedTime>
+        <e914:Lcid i:nil="false">ValueHere</e914:Lcid>
+        <e914:Name i:nil="false">
+          <e914:FirstName i:nil="false">ValueHere</e914:FirstName>
+          <e914:LastName i:nil="false">ValueHere</e914:LastName>
+          <e914:MiddleInitial i:nil="false">ValueHere</e914:MiddleInitial>
+        </e914:Name>
+        <e914:Password i:nil="false">ValueHere</e914:Password>
+        <e914:SecretAnswer i:nil="false">ValueHere</e914:SecretAnswer>
+        <e914:SecretQuestion>ValueHere</e914:SecretQuestion>
+        <e914:UserLifeCycleStatus i:nil="false">ValueHere</e914:UserLifeCycleStatus>
+        <e914:TimeStamp i:nil="false">ValueHere</e914:TimeStamp>
+        <e914:UserName i:nil="false">ValueHere</e914:UserName>
+        <ForwardCompatibilityMap xmlns:e915="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+          <e915:KeyValuePairOfstringstring>
+            <e915:key i:nil="false">ValueHere</e915:key>
+            <e915:value i:nil="false">ValueHere</e915:value>
+          </e915:KeyValuePairOfstringstring>
+        </ForwardCompatibilityMap>
       </User>
     </UpdateUserRequest>
   </s:Body>
