@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a criterion that can be used to show ads on specific devices.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # DeviceCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads on specific devices.
 

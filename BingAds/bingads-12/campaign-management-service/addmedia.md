@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # AddMedia Service Operation - Campaign Management
 Adds the specified media to an account's media library. Depending on the type of [Media](media.md), you can then add the media to one or more [ImageAdExtension](imageadextension.md) or [LocationAdExtension](locationadextension.md) objects.
 

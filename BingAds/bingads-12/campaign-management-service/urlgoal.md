@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a URL conversion goal.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # UrlGoal Data Object - Campaign Management
 Defines a URL conversion goal. Use this type of goal to count every time someone visits a web page as a conversion. For example you can count a conversion if someone visits the purchase confirmation page.  
 

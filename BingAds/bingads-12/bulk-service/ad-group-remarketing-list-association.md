@@ -8,9 +8,6 @@ description: Describes the fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Ad Group Remarketing List Association Record - Bulk
 Defines an Ad Group Remarketing List Association that can be uploaded and downloaded in a bulk file. 
 

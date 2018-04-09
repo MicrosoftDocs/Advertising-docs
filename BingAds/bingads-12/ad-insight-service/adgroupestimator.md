@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Contains a list of keyword estimators with your keyword level filter criteria for traffic estimates.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # AdGroupEstimator Data Object - Ad Insight
 Contains a list of keyword estimators with your keyword level filter criteria for traffic estimates.
 

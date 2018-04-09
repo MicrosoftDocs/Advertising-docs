@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: For internal use only.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # ServiceLevel Value Set - Customer Management
 For internal use only.
 

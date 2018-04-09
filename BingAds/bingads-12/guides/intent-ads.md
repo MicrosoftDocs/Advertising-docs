@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Setup Intent ads with the Bing Ads API.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Intent Ads
 Bing Intent ads are an extension of search network, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Intent ads are created automatically by Bing Ads leveraging all of your Bing Ads creative elements including ad title, text, URL, and ad extensions including image extensions.  
 
@@ -68,20 +65,18 @@ Bing Intent ads can be accessed using the [Campaign Management Service](../campa
 
 3.  Associate your [ImageAdExtension](../campaign-management-service/imageadextension.md) to one or more [Campaign](../campaign-management-service/campaign.md) or [AdGroup](../campaign-management-service/adgroup.md) objects with the [SetAdExtensionsAssociations](../campaign-management-service/setadextensionsassociations.md) operation.
 
-4.  Optionally use the *NativeBidAdjustment* property of the [Campaign](../campaign-management-service/campaign.md) and [AdGroup](../campaign-management-service/adgroup.md) to get and set the native ads bid adjustment.
+4.  Optionally use the *AudienceAdsAdjustment* property of the [Campaign](../campaign-management-service/campaign.md) and [AdGroup](../campaign-management-service/adgroup.md) to get and set the native ads bid adjustment.
 
-## <a name="reporting"></a>Getting Performance Reports for Native Ads
-For Intent ads reporting and analysis you can use the Native ad distribution value in the following ways.
+## <a name="reporting"></a>Getting Performance Reports for Intent Ads
+For Intent ads reporting and analysis you can use the Audience ad distribution value in the following ways.
 
--   You can optionally set the [AdDistributionReportFilter](../reporting-service/addistributionreportfilter.md) to Native if you only want native ads data.
+-   You can optionally set the [AdDistributionReportFilter](../reporting-service/addistributionreportfilter.md) to Audience if you only want native ads data.
 
--   You can include the *AdDistribution* column value that is available in most performance reports. The possible values are Search, Content, and Native, so you can quickly discover performance data specific to Intent ads.
+-   You can include the *AdDistribution* column value that is available in most performance reports. The possible values are Search and Audience, so you can quickly discover performance data specific to Intent ads.
 
-Performance data for native ads will be included in existing reports by default, with a few exceptions. The *SearchQueryPerformanceReport* ([Request](../reporting-service/searchqueryperformancereportrequest.md) | [Filter](../reporting-service/searchqueryperformancereportfilter.md) | [Column](../reporting-service/searchqueryperformancereportcolumn.md)) and *ShareOfVoiceReport* ([Request](../reporting-service/shareofvoicereportrequest.md) | [Filter](../reporting-service/shareofvoicereportfilter.md) | [Column](../reporting-service/shareofvoicereportcolumn.md)) reports will not have Native performance metrics even when ad distribution is an included column or included filter.
+Performance data for native ads will be included in existing reports by default, with a few exceptions. The *SearchQueryPerformanceReport* ([Request](../reporting-service/searchqueryperformancereportrequest.md) | [Filter](../reporting-service/searchqueryperformancereportfilter.md) | [Column](../reporting-service/searchqueryperformancereportcolumn.md)) and *ShareOfVoiceReport* ([Request](../reporting-service/shareofvoicereportrequest.md) | [Filter](../reporting-service/shareofvoicereportfilter.md) | [Column](../reporting-service/shareofvoicereportcolumn.md)) reports will not have Intent ads performance metrics even when ad distribution is an included column or included filter.
 
 For more information about reporting, see [Reports](reports.md) and [Request and Download a Report](request-download-report.md).
-
-You can also get performance data for Intent ads using the [Bulk Service](../bulk-service/bulk-service-reference.md). You can get performance data for Intent ads when downloading the [Campaign](../bulk-service/campaign.md), [Ad Group](../bulk-service/ad-group.md), and [Keyword](../bulk-service/keyword.md) records.
 
 ## See Also
 [Bing Ads Web Service Addresses](web-service-addresses.md)  

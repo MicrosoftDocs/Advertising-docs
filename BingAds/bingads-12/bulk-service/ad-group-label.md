@@ -8,9 +8,6 @@ description: Describes the Ad Group Label fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Ad Group Label Record - Bulk
 Defines an association record between an [Ad Group](ad-group.md) and a [Label](label.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or label, use the [Ad Group](ad-group.md) or [Label](label.md) record.
 

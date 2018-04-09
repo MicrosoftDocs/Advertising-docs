@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Determine whether the ad, ad extensions, or keyword passed or failed the editorial review.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Editorial Review and Appeals
 For an ad to be eligible to be served, it must meet the editorial guidelines of the market that it serves. The same is true for ad extensions and keywords. 
 

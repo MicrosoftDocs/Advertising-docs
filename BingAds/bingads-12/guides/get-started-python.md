@@ -8,9 +8,6 @@ description: Install the Bing Ads Python SDK and discover code examples.
 dev_langs:
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Get Started Using Python with Bing Ads Services
 To get started developing Bing Ads applications with Python, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-python.md) or [Desktop](walkthrough-desktop-application-python.md) application. The examples have been developed with the Bing Ads Python [SDK](client-libraries.md) and run with [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). Your custom configuration may vary.
 
@@ -48,7 +45,7 @@ The Bing Ads Python SDK uses the *suds-jurko* SOAP SDK to instantiate programmin
 
 Please keep in mind the following rules, suggestions, and tips related to Suds in the Bing Ads Python SDK.
 
--   One of the most common exceptions we hear about is *ERROR:suds.resolver:(ClassGoesHere) not-found*. Usually this can be resolved by using the namespace prefix for the Suds object e.g. `ns4:ArrayOfstring`. 
+-   One of the most common exceptions we hear about is *ERROR:suds.resolver:(ClassGoesHere) not-found*. Usually this can be resolved by using the namespace prefix for the Suds object e.g. `ns3:ArrayOfstring`. 
     > [!TIP]
     > To discover all SOAP objects with namespace prefix that are available for each service, you can print the soap client. For example, the following statements will return Campaign, AdGroup, ExpandedTextAd, and Keyword, among others.
     
@@ -101,32 +98,24 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
 
     # With FinalUrls you can separate the tracking template, custom parameters, and 
     # landing page URLs.
-    final_urls=campaign_service.factory.create('ns4:ArrayOfstring')
+    final_urls=campaign_service.factory.create('ns3:ArrayOfstring')
     final_urls.string.append('http://www.contoso.com/womenshoesale')
     expanded_text_ad.FinalUrls=final_urls
 
     # Final Mobile URLs can also be used if you want to direct the user to a different page 
     # for mobile devices.
-    final_mobile_urls=campaign_service.factory.create('ns4:ArrayOfstring')
+    final_mobile_urls=campaign_service.factory.create('ns3:ArrayOfstring')
     final_mobile_urls.string.append('http://mobile.contoso.com/womenshoesale')
     expanded_text_ad.FinalMobileUrls=final_mobile_urls
 
-    # You could use a tracking template which would override the campaign level
-    # tracking template. Tracking templates defined for lower level entities 
-    # override those set for higher level entities.
-    # In this example we are using the campaign level tracking template.
-    expanded_text_ad.TrackingUrlTemplate=None,
-
-    # Set custom parameters that are specific to this ad, 
-    # and can be used by the ad, ad group, campaign, or account level tracking template. 
-    # In this example we are using the campaign level tracking template.
-    url_custom_parameters=campaign_service.factory.create('ns0:CustomParameters')
-    parameters=campaign_service.factory.create('ns0:ArrayOfCustomParameter')
-    custom_parameter1=campaign_service.factory.create('ns0:CustomParameter')
+    # Set custom parameters that are specific to this ad.
+    url_custom_parameters=campaign_service.factory.create('CustomParameters')
+    parameters=campaign_service.factory.create('ArrayOfCustomParameter')
+    custom_parameter1=campaign_service.factory.create('CustomParameter')
     custom_parameter1.Key='promoCode'
     custom_parameter1.Value='PROMO' + str(index)
     parameters.CustomParameter.append(custom_parameter1)
-    custom_parameter2=campaign_service.factory.create('ns0:CustomParameter')
+    custom_parameter2=campaign_service.factory.create('CustomParameter')
     custom_parameter2.Key='season'
     custom_parameter2.Value='summer'
     parameters.CustomParameter.append(custom_parameter2)

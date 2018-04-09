@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # UpdateAdGroups Service Operation - Campaign Management
 Updates the specified ad groups in a campaign.
 
@@ -27,7 +24,7 @@ The *UpdateAdGroupsRequest* object defines the [body](#request-body) and [header
 |<a name="adgroups"></a>AdGroups|An array that can contain a maximum of 1,000 [AdGroup](adgroup.md) objects to update.|[AdGroup](adgroup.md) array|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad groups to update.|**long**|
 |<a name="returninheritedbidstrategytypes"></a>ReturnInheritedBidStrategyTypes|Reserved for future use.|**boolean**|
-|<a name="updatenativebidadjustment"></a>UpdateNativeBidAdjustment|Reserved.|**boolean**|
+|<a name="updateaudienceadsbidadjustment"></a>UpdateAudienceAdsAdjustment|Determines whether or not the service should use the *AudienceAdsBidAdjustment* element of each specified [AdGroup](adgroup.md) during update.  If set to True, the *AudienceAdsBidAdjustment* will be used, and otherwise it will be ignored and your existing native bid adjustment setting will be retained during update.<br /><br />The default value is False if  this element is not set.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -209,14 +206,14 @@ The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.m
 public async Task<UpdateAdGroupsResponse> UpdateAdGroupsAsync(
 	long campaignId,
 	IList<AdGroup> adGroups,
-	bool updateNativeBidAdjustment,
+	bool updateAudienceAdsBidAdjustment,
 	bool? returnInheritedBidStrategyTypes)
 {
 	var request = new UpdateAdGroupsRequest
 	{
 		CampaignId = campaignId,
 		AdGroups = adGroups,
-		UpdateNativeBidAdjustment = updateNativeBidAdjustment,
+		UpdateAudienceAdsBidAdjustment = updateAudienceAdsBidAdjustment,
 		ReturnInheritedBidStrategyTypes = returnInheritedBidStrategyTypes
 	};
 
@@ -227,14 +224,14 @@ public async Task<UpdateAdGroupsResponse> UpdateAdGroupsAsync(
 static UpdateAdGroupsResponse updateAdGroups(
 	java.lang.Long campaignId,
 	ArrayOfAdGroup adGroups,
-	boolean updateNativeBidAdjustment,
+	boolean updateAudienceAdsBidAdjustment,
 	boolean returnInheritedBidStrategyTypes) throws RemoteException, Exception
 {
 	UpdateAdGroupsRequest request = new UpdateAdGroupsRequest();
 
 	request.setCampaignId(campaignId);
 	request.setAdGroups(adGroups);
-	request.setUpdateNativeBidAdjustment(updateNativeBidAdjustment);
+	request.setUpdateAudienceAdsBidAdjustment(updateAudienceAdsBidAdjustment);
 	request.setReturnInheritedBidStrategyTypes(returnInheritedBidStrategyTypes);
 
 	return CampaignManagementService.getService().updateAdGroups(request);
@@ -244,7 +241,7 @@ static UpdateAdGroupsResponse updateAdGroups(
 static function UpdateAdGroups(
 	$campaignId,
 	$adGroups,
-	$updateNativeBidAdjustment,
+	$updateAudienceAdsBidAdjustment,
 	$returnInheritedBidStrategyTypes)
 {
 
@@ -254,7 +251,7 @@ static function UpdateAdGroups(
 
 	$request->CampaignId = $campaignId;
 	$request->AdGroups = $adGroups;
-	$request->UpdateNativeBidAdjustment = $updateNativeBidAdjustment;
+	$request->UpdateAudienceAdsBidAdjustment = $updateAudienceAdsBidAdjustment;
 	$request->ReturnInheritedBidStrategyTypes = $returnInheritedBidStrategyTypes;
 
 	return $GLOBALS['CampaignManagementProxy']->GetService()->UpdateAdGroups($request);
@@ -264,7 +261,7 @@ static function UpdateAdGroups(
 response=campaignmanagement_service.UpdateAdGroups(
 	CampaignId=CampaignId,
 	AdGroups=AdGroups,
-	UpdateNativeBidAdjustment=UpdateNativeBidAdjustment,
+	UpdateAudienceAdsBidAdjustment=UpdateAudienceAdsBidAdjustment,
 	ReturnInheritedBidStrategyTypes=ReturnInheritedBidStrategyTypes)
 ```
 

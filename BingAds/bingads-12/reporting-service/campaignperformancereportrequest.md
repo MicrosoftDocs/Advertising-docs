@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a campaign performance report request.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # CampaignPerformanceReportRequest Data Object - Reporting
 Defines a campaign performance report request. Use this report to view high-level performance statistics and quality attributes for each campaign or account. This is also a quick way to flag any major campaign or account problems.
 

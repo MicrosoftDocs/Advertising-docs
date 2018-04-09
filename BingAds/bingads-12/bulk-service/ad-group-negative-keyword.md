@@ -8,9 +8,6 @@ description: Describes the Ad Group Negative Keyword fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Ad Group Negative Keyword Record - Bulk
 Defines a negative keyword assigned to an ad group that can be uploaded and downloaded in a bulk file.
 

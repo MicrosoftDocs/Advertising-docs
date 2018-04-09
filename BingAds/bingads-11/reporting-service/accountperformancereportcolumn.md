@@ -80,7 +80,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
 |<a name="accountstatus"></a>AccountStatus|The account status.|
-|<a name="addistribution"></a>AdDistribution|The ad distribution attribute of an ad group.|
+|<a name="addistribution"></a>AdDistribution|The network where you want your ads to show.|
 |<a name="assists"></a>Assists|The number of conversions from other ads within the same account that were preceded by one or more clicks from this ad.An ad is considered to have assisted the conversion if it was clicked before the most recently clicked ad that was credited with the conversion. Additionally, the click corresponding to the assist must occur  within the conversion period of the goal.|
 |<a name="averagecpc"></a>AverageCpc|The average cost per click (CPC). The total cost of all clicks on an ad divided by the number of clicks. This is the average amount you're actually charged each time your ad is clicked. For example, if you paid a total of 48.35 for 300 clicks, your average CPC is 0.16. The formula for calculating the average CPC is *(Spend /Clicks)*.|
 |<a name="averagecpp"></a>AverageCpp|The average cost per phone call (CPP). This column is applicable solely for manual calls, and does not include clicks-to-call data.|

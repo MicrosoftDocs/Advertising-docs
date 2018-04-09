@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: A reseller can programmatically create new customer accounts and gets billed by invoice for all advertising costs incurred by their customers.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Management Model for Resellers
 The reseller role is offered to a limited set of partners that offer search-marketing tools and services to a large number of advertisers. The reseller role allows partners to programmatically create new customer accounts. The reseller is billed by invoice for all advertising costs incurred by their customers. The advertiser does not sign up for Bing Ads credentials, and may pay a fee to the reseller. The following sections describe the entity model and credentials for resellers.
 

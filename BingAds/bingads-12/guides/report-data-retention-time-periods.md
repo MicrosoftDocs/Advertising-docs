@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Reference the data retention time periods for Bing Ads performance data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Reporting Data Retention Time Periods
 Reporting data is kept for specified periods of time. This topic provides the data retention time periods for Bing Ads performance data. Use this information to see how far back hourly, daily, weekly, monthly, yearly and summary aggregated data can be retrieved for a report.
 

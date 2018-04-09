@@ -108,15 +108,7 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
     final_mobile_urls.string.append('http://mobile.contoso.com/womenshoesale')
     expanded_text_ad.FinalMobileUrls=final_mobile_urls
 
-    # You could use a tracking template which would override the campaign level
-    # tracking template. Tracking templates defined for lower level entities 
-    # override those set for higher level entities.
-    # In this example we are using the campaign level tracking template.
-    expanded_text_ad.TrackingUrlTemplate=None,
-
-    # Set custom parameters that are specific to this ad, 
-    # and can be used by the ad, ad group, campaign, or account level tracking template. 
-    # In this example we are using the campaign level tracking template.
+    # Set custom parameters that are specific to this ad.
     url_custom_parameters=campaign_service.factory.create('ns0:CustomParameters')
     parameters=campaign_service.factory.create('ns0:ArrayOfCustomParameter')
     custom_parameter1=campaign_service.factory.create('ns0:CustomParameter')

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains a list of keyword historical search counts for the corresponding device attribute.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # SearchCountsByAttributes Data Object - Ad Insight
 Defines an object that contains a list of keyword historical search counts for the corresponding device attribute. Each search count in the list is aggregated by day, month, and year.
 
