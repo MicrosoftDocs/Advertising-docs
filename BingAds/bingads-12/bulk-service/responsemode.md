@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines elements to specify whether the bulk service should return upload errors with their corresponding data.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # ResponseMode Value Set - Bulk
 Defines elements to specify whether the bulk service should return upload errors with their corresponding data.
 

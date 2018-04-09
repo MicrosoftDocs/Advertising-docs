@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Reference documentation for Bing Ads web services.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Version 12 Services
 > [!IMPORTANT]
 > With the availability of Bing Ads API version 12, version 11 is deprecated and will sunset by October 31, 2018. 

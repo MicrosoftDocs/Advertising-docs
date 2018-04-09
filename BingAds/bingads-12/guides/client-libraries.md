@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: The Bing Ads Software Development Kits enhance the experience of developing Bing Ads applications with .NET, Java, PHP, and Python languages.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Bing Ads Client Libraries
 You can develop Bing Ads applications with any programming language that supports web services. The Bing Ads Software Development Kits (SDK) enhance the experience of developing Bing Ads applications with .NET, Java, PHP, and Python languages. Each SDK includes a proxy to all Bing Ads API web services and abstracts low level details of authentication with OAuth. You can use the high level *BulkServiceManager* and *ReportingServiceManager* interfaces to abstract and execute operations in the low level Bulk and Reporting services. For example instead of calling *SubmitGenerateReport* and *PollGenerateReport* to download a report, you download a report using one method with the *ReportingServiceManager* class.
 

@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Reference documentation for editorial failure reason codes. 
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Editorial Reason Codes
 The following are the possible reason codes for an ad or keyword that failed editorial review. 
 

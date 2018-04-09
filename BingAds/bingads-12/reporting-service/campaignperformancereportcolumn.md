@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the CampaignPerformanceReportRequest.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # CampaignPerformanceReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [CampaignPerformanceReportRequest](campaignperformancereportrequest.md).
 
@@ -26,7 +23,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AccountNumber" />
     <xs:enumeration value="AccountId" />
     <xs:enumeration value="TimePeriod" />
-    <xs:enumeration value="Status" />
+    <xs:enumeration value="CampaignStatus" />
     <xs:enumeration value="CampaignName" />
     <xs:enumeration value="CampaignId" />
     <xs:enumeration value="CurrencyCode" />
@@ -100,7 +97,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
 |<a name="accountstatus"></a>AccountStatus|The account status.|
-|<a name="addistribution"></a>AdDistribution|The ad distribution attribute of an ad group.|
+|<a name="addistribution"></a>AdDistribution|The network where you want your ads to show.|
 |<a name="adrelevance"></a>AdRelevance|How closely related your ads is to the customer's search query or other input. It tells you how relevant your ad and landing page are to potential customers.A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score. Data for this column is typically updated 14-18 hours after the UTC day ends.|
 |<a name="assists"></a>Assists|The number of conversions from other ads within the same account that were preceded by one or more clicks from this ad.An ad is considered to have assisted the conversion if it was clicked before the most recently clicked ad that was credited with the conversion. Additionally, the click corresponding to the assist must occur  within the conversion period of the goal.|
 |<a name="averagecpc"></a>AverageCpc|The average cost per click (CPC). The total cost of all clicks on an ad divided by the number of clicks. This is the average amount you're actually charged each time your ad is clicked. For example, if you paid a total of 48.35 for 300 clicks, your average CPC is 0.16.The formula for calculating the average CPC is *(Spend /Clicks)*.|
@@ -113,6 +110,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
 |<a name="campaignlabels"></a>CampaignLabels|The labels applied to the campaign.<br/><br/>Labels are delimited by a semicolon (;) in the report download.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
+|<a name="campaignstatus"></a>CampaignStatus|The campaign status.|
 |<a name="clickcalls"></a>ClickCalls|The number of phone calls initiated by clicks.|
 |<a name="clicks"></a>Clicks|Clicks are what you pay for. Clicks typically include a customer clicking an ad on a search results page or on a website on the search network. Clicks can also come from other sources (for example, spiders, robots, and test servers). For more information, see [Bing Ads click measurement: description of methodology](https://advertise.bingads.microsoft.com/resources/policies/bing-ads-click-measurement-description-of-methodology).|
 |<a name="conversionrate"></a>ConversionRate|The conversion rate as a percentage. The number of conversions, divided by the total number of clicks. For example, if the ads in your campaign got 300 clicks and four conversions, the conversion rate is 1.33 (%).The formula for calculating the conversion rate is *(Conversions / Clicks) x 100*.|
@@ -158,7 +156,6 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="revenueperassist"></a>RevenuePerAssist|The revenue per assist.The formula for calculating the revenue per assist is *(Revenue / Assists)*.|
 |<a name="revenueperconversion"></a>RevenuePerConversion|The revenue per conversion.The formula for calculating the revenue per conversion is *(Revenue / Conversions)*.|
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
-|<a name="status"></a>Status|The current entity  status.|
 |<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
 |<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
 |<a name="trackingtemplate"></a>TrackingTemplate|The current tracking template for the campaign.|

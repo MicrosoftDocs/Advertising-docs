@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Setup App Install ads with the Bing Ads API.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # App Install Ads
 App Install Ads are similar to expanded text ads but provide direct links to your apps with a button, sending customers directly to the applicable store to download the application. This is an ideal solution for advertisers wanting to manage and drive downloads of their apps, rather than website traffic.
 

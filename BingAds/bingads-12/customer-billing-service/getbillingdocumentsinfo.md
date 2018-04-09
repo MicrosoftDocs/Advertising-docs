@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # GetBillingDocumentsInfo Service Operation - Customer Billing
 Gets a list of objects that contains billing document identification information, for example the billing document identifier, amount, and account identifier.
 

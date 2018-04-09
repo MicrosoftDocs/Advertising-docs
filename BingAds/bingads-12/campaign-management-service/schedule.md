@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the start and end date ranges for ad extension scheduling.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Schedule Data Object - Campaign Management
 Defines the start and end date ranges for ad extension scheduling. 
 

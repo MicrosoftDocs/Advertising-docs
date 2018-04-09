@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the possible distance units of a geographical location.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # DistanceUnit Value Set - Campaign Management
 Defines the possible distance units of a geographical location.
 

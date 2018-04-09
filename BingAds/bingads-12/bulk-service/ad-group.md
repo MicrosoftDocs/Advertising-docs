@@ -8,9 +8,6 @@ description: Describes the Ad Group fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Ad Group Record - Bulk
 Defines an ad group that can be uploaded and downloaded in a bulk file.
 
