@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Track finances and measure ad performance to optimize your budget or campaign settings.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Reports
 The Reporting service contains the operations that you use to submit report requests and poll for their status. The reports provide detailed statistics about Bing Ads accounts, campaigns, and ad groups. The information can help you track finances, measure ad performance, and adjust settings to optimize your budget or campaign. For example, you can use the keyword performance report to see which keywords are performing well and those that are not.
 

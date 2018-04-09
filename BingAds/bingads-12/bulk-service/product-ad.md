@@ -8,9 +8,6 @@ description: Describes the Product Ad fields in a Bulk file.
 dev_langs:
   - csharp
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Product Ad Record - Bulk
 Defines a product ad that can be downloaded and uploaded in a bulk file.
 

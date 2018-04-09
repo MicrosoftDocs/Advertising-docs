@@ -20,7 +20,7 @@ For Bing Ads reference content, see the following sections.
 |[Geographical Location Codes](geographical-location-codes.md)|Contains information about the country/region, state/province/territory, metro area (Nielsen DMA® in the United States), and city codes.|
 |[Operation Error Codes](operation-error-codes.md)|Defines the *Code* and *ErrorCode* elements that may be returned in an error data object.|
 |[Time Zones](time-zones.md)|Lists the possible time zone values.|
-|[Version 12 Services](services.md)|The web service reference documentation for Bing Ads API Version 11.|
+|[Version 11 Services](services.md)|The web service reference documentation for Bing Ads API Version 11.|
 |[Web Service Addresses](web-service-addresses.md)|The web service addresses for Bing Ads API Version 11.|
 
 ## <a name="see-also"></a>See Also

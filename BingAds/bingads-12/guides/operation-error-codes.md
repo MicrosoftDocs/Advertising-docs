@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Reference documentation for service operation error codes.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Operation Error Codes
 Bing Ads service operations may return error codes depending on the context. The list provided below includes error codes across all Bing Ads services. For information about error codes per service operation, see the reference page for each operation.
 
@@ -9297,10 +9294,10 @@ Customer is not enabled for the Native Ads pilot.
 4409
 
 **Symbolic Error Code**
-InvalidNativeBidAdjustmentValue
+InvalidAudienceAdsBidAdjustmentValue
 
 **Description**
-NativeBidAdjustment value or flag is invalid.
+The audience ads bid adjustment is invalid.
 
 ***
 ## 4500

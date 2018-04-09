@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains a budget amount and an estimate of weekly impressions, clicks, and cost for this budget amount.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # BudgetPoint Data Object - Ad Insight
 Defines an object that contains a budget amount and an estimate of weekly impressions, clicks, and cost for this budget amount.
 

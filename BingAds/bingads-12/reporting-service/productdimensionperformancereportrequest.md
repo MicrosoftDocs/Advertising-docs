@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines a product dimension performance report request that aggregates the performance data by product category, custom label, title, and type for a specified time period.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # ProductDimensionPerformanceReportRequest Data Object - Reporting
 Defines a product dimension performance report request that aggregates the performance data by product category, custom label, title, and type for a specified time period. You can include details in the report such as impressions, clicks, and spend that you can use to identify whether or not the product dimensions are performing well.
 

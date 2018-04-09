@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: Definitions for the report attributes and performance statistics columns.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Report Attributes and Performance Statistics
 Each of the [Report Types](report-types.md) contains a subset of attributes and performance statistics. When submitting a report request, you must include [Attributes](#attributes) and [Performance Statistics](#performancestatistics) columns. The downloaded report will then include renamed columns (fields) corresponding to each column that you included in the report request. For information about required and optional columns, see the corresponding report column value set within [Reporting Value Sets](../reporting-service/reporting-value-sets.md). For example to determine which columns are required and optional for a [KeywordPerformanceReportRequest](../reporting-service/keywordperformancereportrequest.md), see [KeywordPerformanceReportColumn Value Set](../reporting-service/keywordperformancereportcolumn.md). 
 
@@ -22,7 +19,7 @@ Attributes are set either by the advertiser or Bing Ads.
 |AccountNumber|The Bing Ads assigned number of an account.|This attribute is available in multiple reports, for example see [AccountPerformanceReportColumn value set](../reporting-service/accountperformancereportcolumn.md).|
 |AccountStatus|The account status.|This attribute is available in multiple reports, for example see [AccountPerformanceReportColumn value set](../reporting-service/accountperformancereportcolumn.md).|
 |AdDescription|The text attribute of an ad.|This attribute is available in multiple reports, for example see [AdPerformanceReportColumn value set](../reporting-service/adperformancereportcolumn.md).|
-|AdDistribution|The ad distribution attribute of an ad group.|This attribute is available in multiple reports, for example see [AdGroupPerformanceReportColumn value set](../reporting-service/adgroupperformancereportcolumn.md).|
+|AdDistribution|The network where you want your ads to show.|This attribute is available in multiple reports, for example see [AdGroupPerformanceReportColumn value set](../reporting-service/adgroupperformancereportcolumn.md).|
 |AdExtensionId|The Bing Ads assigned identifier of an ad extension.|This attribute is available in multiple reports, for example see [AdExtensionDetailReportColumn value set](../reporting-service/adextensiondetailreportcolumn.md).|
 |AdExtensionType|The type name that corresponds to the *AdExtensionTypeId* column.<br/><br/>If the *AdExtensionTypeId* is 10, this *AdExtensionType* name is Sitelink Extension.<br/><br/>If the *AdExtensionTypeId* is 11, this *AdExtensionType* name is Location Extension.<br/><br/>If the *AdExtensionTypeId* is 12, this *AdExtensionType* name is Call Extension and the *IsCallTrackingEnabled* property of the *CallAdExtension* is set to False.<br/><br/>If the *AdExtensionTypeId* is 14, this *AdExtensionType* name is Call Extension and the *IsCallTrackingEnabled* property of the *CallAdExtension* is set to True.|This attribute is available in multiple reports, for example see [AdExtensionDetailReportColumn value set](../reporting-service/adextensiondetailreportcolumn.md).|
 |AdExtensionTypeId|The system identifier that corresponds to the *AdExtensionType* column. The supported identifiers are 10, 11, and 12.|This attribute is available only with the [AdExtensionDetailReportColumn value set](../reporting-service/adextensiondetailreportcolumn.md).|

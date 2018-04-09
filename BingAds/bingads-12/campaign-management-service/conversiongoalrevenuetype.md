@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines conversion goal revenue models that you can use to track how much each conversion is worth to your business.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # ConversionGoalRevenueType Value Set - Campaign Management
 Defines conversion goal revenue models that you can use to track how much each conversion is worth to your business.   
 

@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines the attributes and performance statistics columns that you can include in the UserLocationPerformanceReportRequest.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # UserLocationPerformanceReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [UserLocationPerformanceReportRequest](userlocationperformancereportrequest.md).
 
@@ -81,7 +78,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="accountid"></a>AccountId|The Bing Ads assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
-|<a name="addistribution"></a>AdDistribution|The ad distribution attribute of an ad group.|
+|<a name="addistribution"></a>AdDistribution|The network where you want your ads to show.|
 |<a name="adgroupid"></a>AdGroupId|The Bing Ads assigned identifier of an ad group.|
 |<a name="adgroupname"></a>AdGroupName|The ad group name.|
 |<a name="assists"></a>Assists|The number of conversions from other ads within the same account that were preceded by one or more clicks from this ad.An ad is considered to have assisted the conversion if it was clicked before the most recently clicked ad that was credited with the conversion. Additionally, the click corresponding to the assist must occur  within the conversion period of the goal.|

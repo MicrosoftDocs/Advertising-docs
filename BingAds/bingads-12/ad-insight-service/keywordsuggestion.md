@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines an object that contains a list of suggested keywords that may perform better than the specified keyword.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # KeywordSuggestion Data Object - Ad Insight
 Defines an object that contains a list of suggested keywords that may perform better than the specified keyword.
 

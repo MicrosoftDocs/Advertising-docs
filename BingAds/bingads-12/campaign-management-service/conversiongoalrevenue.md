@@ -6,9 +6,6 @@ author: eric-urban
 ms.author: eur
 description: Defines properties for revenue that can be tracked by a conversion goal.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # ConversionGoalRevenue Data Object - Campaign Management
 Defines properties for revenue that can be tracked by a conversion goal.
 

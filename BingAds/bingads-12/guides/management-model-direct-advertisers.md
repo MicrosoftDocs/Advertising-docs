@@ -6,9 +6,6 @@ author: "eric-urban"
 ms.author: "eur"
 description: A direct advertiser builds a Bing Ads application for its own advertising campaigns and is billed directly by Bing Ads for valid ad clicks.
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # Management Model for Direct Advertisers
 A direct advertiser builds a Bing Ads application for its own advertising campaigns and is billed directly by Bing Ads for valid ad clicks. The following sections describe the entity model and credentials for direct advertisers.
 

@@ -11,9 +11,6 @@ dev_langs:
   - php
   - python
 ---
-> [!IMPORTANT]
-> This Bing Ads API Version 12 preview documentation is subject to change. To return to version 11 content, use the version selector near the table of contents at the top and left side of the page.
-
 # GetBulkUploadUrl Service Operation - Bulk
 Submits a request for a URL where a bulk upload file may be posted.
 
