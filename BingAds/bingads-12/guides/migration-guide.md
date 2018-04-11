@@ -12,9 +12,6 @@ description: Get details about migrating to Bing Ads API version 12.
 
 The sections below describe changes from version 11 to version 12 of the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md), [Bulk](../bulk-service/bulk-service-reference.md), [Campaign Management](../campaign-management-service/campaign-management-service-reference.md), [Customer Billing](../customer-billing-service/customer-billing-service-reference.md), [Customer Management](../customer-management-service/customer-management-service-reference.md), and [Reporting](../reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services. 
 
-> [!NOTE]
-> The features described below at times differ from the version 12 WSDL and reference documentation, as the latter are works in progress. You can take this guide as an overview of the changes either completed or planned to ship by the time version 12 is generally available. 
-
 ## <a name="authentication"></a>Authentication for All Services
 
 ### <a name="authentication-breakingchanges"></a>Breaking Changes
