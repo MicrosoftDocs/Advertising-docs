@@ -160,7 +160,7 @@ The following are the possible dynamic variable names that you may specify in th
 |CHECKINDAY-OF-WEEK|The day of the week that the check-in takes place. Bing uses digits 0 through 6 to represent Monday through Sunday. For example, 1 is Tuesday.
 |CHECKINMONTH|The two-digit month specified in the `Checkin` element of the Transaction Message. For example, 06.
 |CHECKINYEAR|The four-digit year specified in the `Checkin` element of the Transaction Message. For example, 2017.
-|CHECKOUTDAY|The two-digit day that the user checks out. Bing use the `Nights` and `Checkin` elements of the TransactionMessage to calculated the day. For example, 23.
+|CHECKOUTDAY|The two-digit day that the user checks out. Bing uses the `Nights` and `Checkin` elements of the TransactionMessage to calculate the day. For example, 23.
 |CHECKOUTMONTH|The two-digit month that the user checks out. Bing uses the `Nights` and `Checkin` elements of the Transaction Message to calculate the month. For example, 07.
 |CHECKOUTYEAR|The four-digit year that the user checks out. Bing uses the `Nights` and `Checkin` elements of the Transaction Message to calculate the year. For example, 2017.
 |CLICK-TYPE|Indicates whether the user clicked on a hotel ad or a room bundle ad. The following are the possible values.<ul><li>hotel&mdash;The user clicked on a hotel ad.</li><li>room&mdash;The user clicked on a room bundle ad.</li></ul> **NOTE:** Bing does not support the room option.
@@ -266,7 +266,7 @@ http://partner.com?hotelID=123&checkinDay=23&checkinMonth=07&checkinYear=2017&ni
   
 - Elements must be in the order specified in the PointsOfSale XSD.
   
-- If your data includes special characters such as apostrophies or quotes, escape them or use CDATA sections. If you escape them, you may use entity codes or character codes. For example, you can escape Paul's as Paul\&apos;s or Paul\&#39;s.
+- If your data includes special characters such as apostrophes or quotes, escape them or use CDATA sections. If you escape them, you may use entity codes or character codes. For example, you can escape Paul's as Paul\&apos;s or Paul\&#39;s.
   
 - Do not include elements that do not contain data. For example, if you do not provide a display name for a hotel, do not include an empty \<DisplayNames/\> element.
     
