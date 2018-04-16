@@ -168,7 +168,7 @@ Create an app install ad if your intention is to drive app downloads, and not ne
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
-You can manage dynamic search ads using the Bulk service ([App Install Ad Record](../bulk-service/app-install-ad.md)) or Campaign Management service ([AppInstallAd](../campaign-management-service/appinstallad.md)).
+You can manage dynamic search ads using the Bulk service ([App Install Ad Record](../bulk-service/app-install-ad.md)) or Campaign Management service ([AppInstallAd](../campaign-management-service/appinstallad.md)). The combination of the App Platform, App Store Id, Text, and Title elements make the app install ad unique.
 
 The following table defines limits for app install ad properties.
 
@@ -183,7 +183,7 @@ With a dynamic search ads campaign, the ad title and display URL are generated a
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
-You can manage dynamic search ads using the Bulk service ([Dynamic Search Ad Record](../bulk-service/dynamic-search-ad.md)) or Campaign Management service ([DynamicSearchAd](../campaign-management-service/dynamicsearchad.md)).
+You can manage dynamic search ads using the Bulk service ([Dynamic Search Ad Record](../bulk-service/dynamic-search-ad.md)) or Campaign Management service ([DynamicSearchAd](../campaign-management-service/dynamicsearchad.md)). The combination of the Path 1, Path 2, and Text elements make the dynamic search ad unique.
 
 The following table defines limits for dynamic search ad properties.
 
@@ -195,9 +195,9 @@ The following table defines limits for dynamic search ad properties.
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
 ### <a name="expandedtextad"></a>Expanded Text Ad
-An expanded text ad specifies the creative, such as the titles and text of the ad.
+An expanded text ad specifies the creative, such as the titles and text of the ad. 
 
-You can manage expanded text ads using the Bulk service ([Expanded Text Ad Record](../bulk-service/expanded-text-ad.md)) or Campaign Management service ([ExpandedTextAd](../campaign-management-service/expandedtextad.md)).
+You can manage expanded text ads using the Bulk service ([Expanded Text Ad Record](../bulk-service/expanded-text-ad.md)) or Campaign Management service ([ExpandedTextAd](../campaign-management-service/expandedtextad.md)). The combination of the Final Urls, Path 1, Path 2, Text, Title Part 1 and Title Part 2 elements make the expanded text ad unique. 
 
 The following table defines limits for expanded text ad properties.
 

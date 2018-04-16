@@ -17,7 +17,8 @@ This ad format works seamlessly on mobile, tablet and desktop devices so you can
 > Before you can use expanded text ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Expanded Text Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+For an *Expanded Text Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). The combination of the Final Urls, Path 1, Path2, Text, Title Part 1 and Title Part 2 elements make the expanded text ad unique.
+
 
 - [Ad Format Preference](#adformatpreference)
 - [Ad Group](#adgroup)

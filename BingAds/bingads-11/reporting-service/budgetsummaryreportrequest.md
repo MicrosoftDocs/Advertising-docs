@@ -33,7 +33,7 @@ To request a report of this type, pass this object to the [SubmitGenerateReport]
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="columns"></a>Columns|The list of attributes and performance statistics to include in the report. The report will include the columns in the order that you specify them.|[BudgetSummaryReportColumn](budgetsummaryreportcolumn.md) array|
-|<a name="scope"></a>Scope|The scope of the report. Use this element to limit the report to include data for a combination of accounts and campaigns.|[AccountThroughCampaignReportScope](accountthroughcampaignreportscope.md)|
+|<a name="scope"></a>Scope|The entity scope of the report.<br/><br/>Use this element to limit the report data to specific accounts or campaigns.|[AccountThroughCampaignReportScope](accountthroughcampaignreportscope.md)|
 |<a name="time"></a>Time|The time period to use for the report. You can specify a custom date range or select a predefined date range, for example, Today or ThisMonth.|[BudgetSummaryReportTime](budgetsummaryreporttime.md)|
 
 The [BudgetSummaryReportRequest](budgetsummaryreportrequest.md) object has [Inherited Elements](#inheritedelements).
