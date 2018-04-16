@@ -25,7 +25,7 @@ For the sandbox environment, the following are the endpoints you must use to get
 |---|---|---|
 |Domain for email used when getting a Microsoft account|Any email address|outlook-int.com|
 |Endpoint for getting a client ID|[apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList)|[apps.dev.microsoft-int.com/#/appList](https://apps.dev.microsoft-int.com/#/appList)|
-|Endpoint for OAuth requests via [Authentication with OAuth](authentication.md)|login.live.com|login.live-int.com|
+|Endpoint for OAuth requests via [Authentication with OAuth](authentication-oauth.md)|login.live.com|login.live-int.com|
 
 Also as mentioned above, supported services in sandbox vary from production. To get the web service addresses for sandbox, see [Bing Ads Web Service Addresses](web-service-addresses.md).
 
