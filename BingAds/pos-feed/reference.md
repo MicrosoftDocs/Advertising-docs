@@ -15,7 +15,7 @@ ms.author: "scottwhi"
 
 If you create hotel ads in Bing, you must use a Points of Sale feed to provide Bing the point of sale URLs to include in ads. You must define and import your points of sale feed prior to sending Bing [Transaction Messages](../transaction-message/transaction-message.md). 
 
-For information about creating a points of sale feed, see [Creating a Poinsts of Sale Feed](../pos-feed/create-pos-feed.md).
+For information about creating a points of sale feed, see [Creating a Points of Sale Feed](../pos-feed/create-pos-feed.md).
 
 > [!NOTE]
 > The elements must be specified in the order defined by the [PointsOfSale XSD](https://bhacstatic.blob.core.windows.net/schemas/point_of_sale.xsd) (and as listed in this topic).

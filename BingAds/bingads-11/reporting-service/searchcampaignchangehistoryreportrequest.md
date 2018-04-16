@@ -38,7 +38,7 @@ To request a report of this type, pass this object to the [SubmitGenerateReport]
 |-----------|---------------|-------------|
 |<a name="columns"></a>Columns|The list of attributes and performance statistics to include in the report. The report will include the columns in the order that you specify them.|[SearchCampaignChangeHistoryReportColumn](searchcampaignchangehistoryreportcolumn.md) array|
 |<a name="filter"></a>Filter|The filter information to use to filter the report data.|[SearchCampaignChangeHistoryReportFilter](searchcampaignchangehistoryreportfilter.md)|
-|<a name="scope"></a>Scope|The scope of the report. Use this element to limit the report to include data for a combination of accounts, ad groups, and campaigns.<br /><br /> For this report you may only specify one account identifier in the *AccountIds* element of the  *AccountThroughAdGroupReportScope* object.|[AccountThroughAdGroupReportScope](accountthroughadgroupreportscope.md)|
+|<a name="scope"></a>Scope|The entity scope of the report.<br/><br/>Use this element to limit the report data to specific accounts, ad groups, or campaigns.<br /><br /> For this report you may only specify one account identifier in the *AccountIds* element of the  *AccountThroughAdGroupReportScope* object.|[AccountThroughAdGroupReportScope](accountthroughadgroupreportscope.md)|
 |<a name="time"></a>Time|The time period to use for the report. You can specify a custom date range or select one of the following predefined date ranges:<br /><br />LastSevenDays<br /><br />LastMonth<br /><br />LastThreeMonths|[ReportTime](reporttime.md)|
 
 The [SearchCampaignChangeHistoryReportRequest](searchcampaignchangehistoryreportrequest.md) object has [Inherited Elements](#inheritedelements).

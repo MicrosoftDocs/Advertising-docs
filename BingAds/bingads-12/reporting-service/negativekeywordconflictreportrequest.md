@@ -34,7 +34,7 @@ To request a report of this type, pass this object to the [SubmitGenerateReport]
 |-----------|---------------|-------------|
 |<a name="columns"></a>Columns|The list of attributes and performance statistics to include in the report. The report will include the columns in the order that you specify them.|[NegativeKeywordConflictReportColumn](negativekeywordconflictreportcolumn.md) array|
 |<a name="filter"></a>Filter|The filter information to use to filter the report data.|[NegativeKeywordConflictReportFilter](negativekeywordconflictreportfilter.md)|
-|<a name="scope"></a>Scope|The scope of the report. Use this element to limit the report to include data for a combination of accounts, ad groups, and campaigns.|[AccountThroughAdGroupReportScope](accountthroughadgroupreportscope.md)|
+|<a name="scope"></a>Scope|The entity scope of the report.<br/><br/>Use this element to limit the report data to specific accounts, ad groups, or campaigns.|[AccountThroughAdGroupReportScope](accountthroughadgroupreportscope.md)|
 
 The [NegativeKeywordConflictReportRequest](negativekeywordconflictreportrequest.md) object has [Inherited Elements](#inheritedelements).
 

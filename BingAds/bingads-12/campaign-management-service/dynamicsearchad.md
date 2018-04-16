@@ -7,7 +7,7 @@ ms.author: eur
 description: Defines a dynamic search ad.
 ---
 # DynamicSearchAd Data Object - Campaign Management
-Defines a dynamic search ad. With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target.
+Defines a dynamic search ad. With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target. The combination of the Path1, Path2, and Text elements make the dynamic search ad unique.
 
 > [!NOTE]
 > This feature is currently available in the United States and the United Kingdom.  

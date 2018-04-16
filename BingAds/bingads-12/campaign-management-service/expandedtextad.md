@@ -11,6 +11,8 @@ Defines an expanded text ad.
 
 This ad format works seamlessly on mobile, tablet and desktop devices so you can focus more on crafting your longer ad copy and optimizing your ad text to better engage your customers before they click your ad.
 
+The combination of the FinalUrls, Path1, Path2, Text, TitlePart1 and TitlePart2 elements make the expanded text ad unique.
+
 > [!NOTE]
 > Before you can use expanded text ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
 

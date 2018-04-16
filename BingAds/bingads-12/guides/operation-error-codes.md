@@ -3840,7 +3840,7 @@ The bid amount of a keyword, ad group, or product group is less than the minimum
 CampaignServiceBidAmountsGreaterThanCeilingPrice
 
 **Description**
-One or more of the bid values exceeds the budget that you specified for the campaign. Please verify that the bid values do not exceed the daily budget. 
+One or more of the bid values exceeds the budget that you specified for the campaign. Please verify that the bid values do not exceed the daily budget and does not exceed the calculated monthly budget. 
 
 ***
 

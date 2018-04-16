@@ -7,7 +7,9 @@ ms.author: eur
 description: Defines an app install ad.
 ---
 # AppInstallAd Data Object - Campaign Management
-Defines an app install ad. Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create a text ad with app ad extensions.
+Defines an app install ad. Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create a text ad with app ad extensions. 
+
+The combination of the AppPlatform, AppStoreId, Text, and Title elements make the app install ad unique.
 
 > [!NOTE]
 > Before you can use app install ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
