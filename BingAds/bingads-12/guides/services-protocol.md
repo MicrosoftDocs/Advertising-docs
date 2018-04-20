@@ -58,7 +58,7 @@ For the Ad Insight service, throttling limits the number of calls to the API tha
 
 At the customer level, the number of calls a customer can make to the customer data is restricted using a sliding protocol with a 60 second window.
 
-Should you hit the service call limit, you will see the following error:
+Should you exceed the service call limit, you will see the following error:
 
 -   Numeric Error Code: *117*  
 -   Symbolic Error Code: *CallRateExceeded*  
