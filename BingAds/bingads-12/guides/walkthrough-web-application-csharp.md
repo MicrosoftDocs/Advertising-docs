@@ -21,11 +21,7 @@ The example web application sends authentication requests to the Microsoft accou
 
 3.  You can deploy any type of ASP.NET web app to Azure. For this quickstart, select the **MVC** template, make sure authentication is set to **No Authentication**, and click **OK**. 
 
-4. Install the SDK through NuGet for the BingAdsWebApp. For more information about dependencies, see [Installing the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type:
-    a. `Install-Package Microsoft.BingAds.SDK`. 
-    b. `Install-Package System.ServiceModel.Primitives -Version 4.4.1`
-    c. `Install-Package System.ServiceModel.Http -Version 4.4.1`
-    d. `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`
+4. Install the SDK through NuGet for the BingAdsWebApp. For more information about dependencies, see [Installing the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type these commands to install the packages one at a time: `Install-Package Microsoft.BingAds.SDK`, `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`. 
 
 5. Open the Web.config file and replace its contents with the following code block. Edit the *BingAdsEnvironment* to move from sandbox to production and set the production [developer token](get-started.md#get-developer-token) as needed. You must edit the *ClientId*, *ClientSecret*, and *RedirectionUri* with the corresponding *Application Id*, *Application Secret*, and *Redirect URL* values that were provisioned when you [registered your application](authentication-oauth.md#registerapplication). 
   
@@ -121,7 +117,8 @@ The example web application sends authentication requests to the Microsoft accou
       </applicationSettings>
     </configuration>
     ```
-1. Create a settings file. In project view for the BingAdsWebApp right click **Properties** and click **Open**. Click on **Settings**, and then click the text *The project does not contain a default settings file. Click here to create one*. New values from Web.config will be automatically added. 
+
+6. Create a settings file. In project view for the BingAdsWebApp right click **Properties** and click **Open**. Click on **Settings**, and then click the text *The project does not contain a default settings file. Click here to create one*. New values from Web.config will be automatically added. 
 
 7. Within the **Views** -&gt; **Home** folder of the BingAdsWebApp project, open the Index.cshtml file and replace its contents with the following code block. This defines the web page view that displays results of the service calls that will be written further below.
 

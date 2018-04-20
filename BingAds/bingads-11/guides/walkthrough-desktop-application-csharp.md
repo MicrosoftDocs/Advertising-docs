@@ -14,14 +14,15 @@ The example desktop application sends authentication requests to the Microsoft a
 ## <a name="code"></a>Code Walkthrough
 
 1. Open the [Visual Studio Community 2017](https://www.visualstudio.com/vs/community/) development environment.
+
 2. Create a new project through **File** -&gt; **New** -&gt; **Project**
+
 3. In the **New Project** window choose **.NET Framework 4.7.1** in the drop down, and then click on the **Console App (.NET Framework)** template. Name the project *BingAdsConsoleApp* and click **OK**.
-4. Install the SDK through NuGet for the BingAdsConsoleApp. For more information about dependencies, see [Installing the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type:
-    a. `Install-Package Microsoft.BingAds.SDK`. 
-    b. `Install-Package System.ServiceModel.Primitives -Version 4.4.1`
-    c. `Install-Package System.ServiceModel.Http -Version 4.4.1`
-    d. `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`
+
+4. Install the SDK through NuGet for the BingAdsConsoleApp. For more information about dependencies, see [Installing the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type these commands to install the packages one at a time: `Install-Package Microsoft.BingAds.SDK`, `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`. 
+
 5. Open the App.config file and replace its contents with the following code block. Edit the *BingAdsEnvironment* to move from sandbox to production. You must edit the *ClientId* and *RedirectionUri* with the corresponding *Application Id* and *Redirect URL* values that were provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the example with your [developer token](get-started.md#get-developer-token).  
+
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>
     <configuration>
@@ -50,6 +51,7 @@ The example desktop application sends authentication requests to the Microsoft a
         </userSettings>
     </configuration>
     ```
+
 6. Create a settings file. In project view for the BingAdsConsoleApp right click **Properties** and click **Open**. Click on **Settings**, and then click the text *The project does not contain a default settings file. Click here to create one*. New values from app.config will be automatically added. 
 7. Open the Program.cs file and replace its contents with the following code block. 
 
