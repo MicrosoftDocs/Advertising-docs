@@ -14,31 +14,16 @@ You will need user credentials with access to Bing Ads either in [production](ht
 To authenticate with a [Microsoft Account](https://account.microsoft.com/account) (email address username) in production, you must also must [register](authentication-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Authentication With the SDKs](sdk-authentication.md#oauth).
 
 ## <a name="installation"></a>Install the SDK
-To use the Bing Ads .NET SDK, you must first install and use .NET Framework 4.5 or later. In [Visual Studio Community](https://www.visualstudio.com/vs/community/) go to the project **Properties** -&gt; **Application** -&gt; **Target framework** and make sure that **.NET Framework 4.5** is selected.
-
-Install the Bing Ads .NET SDK through [NuGet](https://www.nuget.org/packages/Microsoft.BingAds.SDK/), either through the [Manage NuGet Packages](#manage-nuget) user interface, or through the [Package Manager Console](#package-manager). For information about installing NuGet, see [http://docs.nuget.org](http://docs.nuget.org/docs/start-here/installing-nuget).
+Install the Bing Ads .NET SDK through [NuGet](https://www.nuget.org/packages/Microsoft.BingAds.SDK/), either through the Manage NuGet Packages user interface, or through the [Package Manager Console](#package-manager). For information about installing NuGet, see [http://docs.nuget.org](http://docs.nuget.org/docs/start-here/installing-nuget).
 
 > [!NOTE]
-> The NuGet installation includes the following required libraries.
-> 
-> -   *Microsoft.BingAds.dll* - The Bing Ads .NET [SDK](client-libraries.md)
-> -   *System.Runtime.Serialization.dll*
-> -   *System.ServiceModel.dll*
-
-### <a name="manage-nuget"></a>Manage NuGet Packages
-
-1. Right-click on your Visual Studio project and select **Manage NuGet Packages**.
-
-2. Browse online for *Microsoft.BingAds.SDK* e.g., try searching for *bingads*..
-   ![Install .NET SDK](media/net-sdk-install.png "Install .NET SDK")  
-
-3. Select the project or projects where you want the SDK installed, and click the **Install** button*.
+> The Bing Ads .NET SDK supports .NET Standard 2.0. You can choose from a variety of platforms e.g., .NET Core or .NET Framework 4.6.1. The Bing Ads API examples are developed via [Visual Studio Community 2017](https://www.visualstudio.com/vs/community/) and target .NET Framework 4.7.1. The .NET Standard 2.0 and Bing Ads .NET SDK do not support .NET Framework versions lower than 4.6.1. For more information on .NET Standard and how it relates to other .NET frameworks, refer to this article on [.NET Standard](https://docs.microsoft.com/en-us/dotnet/standard/net-standard). 
 
 ### <a name="package-manager"></a>NuGet Package Manager Console
 
 1. Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**.
-
 2. Choose the default project where you want the SDK installed, and then within the console command line, type `Install-Package Microsoft.BingAds.SDK`. 
+3. If you do not already have references to *System.ServiceModel.Primitives 4.4.1*, *System.ServiceModel.Http 4.4.1*, and *System.ServiceModel.ConfigurationManager 4.4.1*, type `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`.
 
 ## <a name="walkthrough"></a>Walkthroughs
 Once you have the Bing Ads .NET SDK installed, you can either browse the [Bing Ads Code Examples](code-examples.md) in C# or follow one of the application walkthroughs for a [Web](walkthrough-web-application-csharp.md) or [Desktop](walkthrough-desktop-application-csharp.md) application.

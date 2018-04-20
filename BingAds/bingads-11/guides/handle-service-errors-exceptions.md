@@ -9,6 +9,49 @@ description: Learn about error handling and troubleshooting your application.
 # Handling Service Errors and Exceptions
 This article describes details on error handling and troubleshooting your application.
 
+## <a name="commonerrors"></a>Common Errors
+Here are some tips to handle common errors that you may encounter.
+
+### Code 105
+Typically indicates usage of an incorrect access token (AuthenticationToken) or developer token for the target environment. For example your credentials may be valid in productio; however, when targeting sandbox you would observe code *105*.
+
+### Code 106
+Typically indicates that while the credentials are correct for the target environment, the user does not have access to one of the entities specified in the request. For example you would observe this error calling *SubmitGenerateReport* where the specified user does not have permissions to the specified account.
+
+### Code 117
+Should you exceed the service call limit, you will see the following error:
+
+-   Numeric Error Code: *117*  
+-   Symbolic Error Code: *CallRateExceeded*  
+-   Message: *You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.*  
+
+When you observe this error, you can resubmit the request under the limit after waiting 60 seconds.
+
+### HTTP 500
+All Bing Ads services adhere to the Simple Object Access Protocol (SOAP) 1.1 specification whereby errors are returned with a HTTP 500 code. For example, see the following.
+
+```http
+HTTP/1.1 500 Internal Server Error
+```
+This is not in and of itself representative of an actionable code, and you should inspect the fault details for more information on the specific error.
+
+### Cannot create an abstract class
+You cannot create an instance of a base class such as [Ad](../campaign-management-service/ad.md). You must instantiate one of the derived classes e.g., [ExpandedTextAd](../campaign-management-service/expandedtextad.md).
+
+### Why am I getting an empty URL from the Reporting API call? 
+Even when the report [Status](../reporting-service/reportrequeststatus.md#status) is set to Success, the [ReportDownloadUrl](../reporting-service/reportrequeststatus.md#reportdownloadurl) element can be nil if no data is available for the submitted report parameters. If you see performance data in the Bing Ads web application for the same date range and filter criteria, please [contact support](#contact-support) with details.
+
+## <a name="contact-support"></a>Contact Support
+To get help with issues that you cannot resolve, consider posting in the [API Developer](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) forum where an active Bing Ads product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Bing Ads Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support).
+
+> [!TIP]
+> To resolve the issue efficiently, please provide support with the following information up front.
+> **Reproduction Steps**: Include all header and body elements of the SOAP request, except for the *AuthenticationToken* or *Password* header elements.
+> **Issue or Error**: Include the complete SOAP response with tracking ID, and please also note the date and time when the error occurred.
+> **Historical Performance**: Indicate whether the same request had worked for you in the past.
+> **Frequency**: Indicate whether you can now reproduce the issue every time or intermittently.
+> **Environment**: Indicate whether the issue occurs in the production or sandbox environment.
+
 ## <a name="faultoverview"></a>Fault Model Overview
 When a Bing Ads service operation fails, it will return a service fault e.g., the Customer Management service can return [ApiFault](../customer-management-service/apifault.md). The fault exceptions include one or more error objects. The error objects contain the details of why the service operation failed and a code that uniquely identifies the error. For a list of error codes, see [Bing Ads Operation Error Codes](operation-error-codes.md).
 
@@ -37,23 +80,6 @@ For most entities, partial success is supported when calling [Campaign Managemen
 
 > [!NOTE]
 > The [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md) operation includes *PartialErrors* in the response; however, partial success is not supported. Either the entire set of requested actions succeed and the *AdGroupCriterionIds* response list is fully populated, or all of them fail and the *PartialErrors* response list is fully populated. 
-
-## <a name="commonerrors"></a>Common Errors
-Runtime errors may be caught and handled. Documentation is available for potential error codes which may be observed. The following are some common errors that you may encounter.
-
-### Code 105
-Typically indicates usage of an incorrect username, password, or developer token for the target environment. For example your credentials may be valid in production, and when targeting sandbox you would observe code *105*.
-
-### Code 106
-Typically indicates that while the credentials are correct for the target environment, the user does not have access to one of the entities specified in the request. For example, calling *SubmitGenerateReport* where the specified user does not have permissions to the specified account identifier.
-
-### HTTP 500
-All Bing Ads services adhere to the Simple Object Access Protocol (SOAP) 1.1 specification whereby errors are returned with a HTTP 500 code. For example, see the following.
-
-```http
-HTTP/1.1 500 Internal Server Error
-```
-This is not in and of itself representative of an actionable code, and you should inspect the fault details for more information on the specific error.
 
 ## <a name="net-exceptions"><a/>.NET Exceptions
 If you use the Bing Ads .NET [SDK](client-libraries.md), your application should be prepared to handle Bing Ads API [service level exceptions](#faultoverview), [WCF exceptions](#net-wcf-exceptions), and [Bing Ads .NET SDK](#net-sdk-exceptions) exceptions described below. 
@@ -257,17 +283,6 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logging.getLogger('suds.client').setLevel(logging.DEBUG)
 ```
-    
-## <a name="contact-support"></a>Contact Support
-To get help with issues that you cannot resolve, consider posting in the [API Developer](https://social.msdn.microsoft.com/forums/en-us/home?forum=BingAds) forum where an active Bing Ads product team or member of the developer community will try and help. If you do not find timely information via the developer forum, or if the investigation involves sensitive account or personal details, please contact [Bing Ads Support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support).
-
-> [!TIP]
-> To resolve the issue efficiently, please provide support with the following information up front.
-> - **Reproduction Steps**: Include all header and body elements of the SOAP request, except for the *AuthenticationToken* or *Password* header elements.
-> - **Issue or Error**: Include the complete SOAP response with tracking ID, and please also note the date and time when the error occurred.
-> - **Historical Performance**: Indicate whether the same request had worked for you in the past.
-> - **Frequency**: Indicate whether you can now reproduce the issue every time or intermittently.
-> - **Environment**: Indicate whether the issue occurs in the production or sandbox environment.
 
 ## See Also
 [Bing Ads Operation Error Codes](operation-error-codes.md)  

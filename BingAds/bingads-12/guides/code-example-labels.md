@@ -9,7 +9,15 @@ dev_langs:
   - csharp
 ---
 # Labels Code Example
-Code examples for Bing Ads API version 12 are coming soon. In the meantime, please see version 11 examples.
+This example demonstrates how to add labels and associate them with campaigns, ad groups, keywords, and ads.
+
+```csharp
+// Supporting files such as ExampleBase.cs are available at GitHub. 
+// https://github.com/BingAds/BingAds-dotNET-SDK
+// You can close the repository or repurpose snippets as needed.
+```
+
+[!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/Labels.cs)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  

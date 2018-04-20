@@ -11,363 +11,448 @@ dev_langs:
 # Walkthrough: Bing Ads Desktop Application in C# #
 The example desktop application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID. You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example project step by step as described below, or download examples within a Visual Studio solution [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples).
 
-> [!NOTE]
-> This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
-
 ## <a name="code"></a>Code Walkthrough
 
-1.  Open the [Visual Studio Community](https://www.visualstudio.com/vs/community/) development environment.
+1. Open the [Visual Studio Community 2017](https://www.visualstudio.com/vs/community/) development environment.
 
-2.  Create a new project through **File** -&gt; **New** -&gt; **Project** -&gt; **Templates** -&gt; **Visual Studio C#** -&gt; **WPF Application**. Name the project *BingAdsDesktopApp* and click **OK**.
+2. Create a new project through **File** -&gt; **New** -&gt; **Project**
 
-3.  Within the BingAdsDesktopApp project, install the SDK through NuGet. For more information, see [Installing the SDK](get-started-csharp.md#installation).
+3. In the **New Project** window choose **.NET Framework 4.7.1** in the drop down, and then click on the **Console App (.NET Framework)** template. Name the project *BingAdsConsoleApp* and click **OK**.
 
-4.  Open the MainWindow.xaml file and replace its contents with the following code block. This defines the presentation view that displays results of the service calls that will be written further below.
+4. Install the SDK through NuGet for the BingAdsConsoleApp. For more information about dependencies, see [Installing the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type these commands to install the packages one at a time: `Install-Package Microsoft.BingAds.SDK`, `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`. 
 
-    ```xaml
-    <Window x:Class="BingAdsDesktopApp.MainWindow"
-            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-            Title="MainWindow" SizeToContent="Height" Width="525">
-        <Grid>
-            <StackPanel>
-                <Button Name="CallServicesButton" Click="CallServicesButton_OnClick" Width="150" Height="25">Call Bing Ads Services</Button>
-                <WebBrowser Name="WebBrowser" Height="525"></WebBrowser>
-            </StackPanel>
-        </Grid>
-    </Window>
+5. Open the App.config file and replace its contents with the following code block. Edit the *BingAdsEnvironment* to move from sandbox to production. You must edit the *ClientId* and *RedirectionUri* with the corresponding *Application Id* and *Redirect URL* values that were provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the example with your [developer token](get-started.md#get-developer-token).  
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8" ?>
+    <configuration>
+        <configSections>
+            <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+                <section name="BingAdsConsoleApp.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+            </sectionGroup>
+        </configSections>
+        <startup> 
+            <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.1" />
+        </startup>
+        <appSettings>
+          <!-- To use the production environment, set this value to "Production". -->
+          <add key="BingAdsEnvironment" value="Sandbox"/>
+          <add key="ClientSettingsProvider.ServiceUri" value=""/>
+        </appSettings>
+        <userSettings>
+            <BingAdsConsoleApp.Properties.Settings>
+                <setting name="DeveloperToken" serializeAs="String">
+                    <value>BBD37VB98</value>
+                </setting>
+                <setting name="ClientId" serializeAs="String">
+                    <value>ClientIdGoesHere</value>
+                </setting>
+            </BingAdsConsoleApp.Properties.Settings>
+        </userSettings>
+    </configuration>
     ```
 
-5.  Open the MainWindow.xaml.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above. You must edit the sample below with the ClientId that was provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). 
+6. Create a settings file. In project view for the BingAdsConsoleApp right click **Properties** and click **Open**. Click on **Settings**, and then click the text *The project does not contain a default settings file. Click here to create one*. New values from app.config will be automatically added. 
+7. Open the Program.cs file and replace its contents with the following code block. 
 
     ```csharp
     using System;
-    using System.Globalization;
-    using System.IO;
     using System.Linq;
-    using System.ServiceModel;
-    using System.Threading.Tasks;
-    using System.Windows;
+    using System.Configuration;
     using System.Net.Http;
+    using System.ServiceModel;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
     using Microsoft.BingAds;
-    using Microsoft.BingAds.V11.Bulk;
-    using Microsoft.BingAds.V11.Bulk.Entities;
-    using Microsoft.BingAds.V11.CampaignManagement;
     using Microsoft.BingAds.V11.CustomerManagement;
+    using BingAdsConsoleApp.Properties;
+    using System.IO;
     
-    namespace BingAdsDesktopApp
+    namespace BingAdsConsoleApp
     {
-        /// <summary>
-        /// Interaction logic for MainWindow.xaml
-        /// </summary>
-        public partial class MainWindow
+        class Program
         {
-            private const string ClientId = "ClientIdGoesHere";
-            private const string DeveloperToken = "DeveloperTokenGoesHere";
+            private static AuthorizationData _authorizationData;
+            private static ServiceClient<ICustomerManagementService> _customerManagementService;
             private static string ClientState = "ClientStateGoesHere";
     
-            private Authentication _auth;
-            private static AuthorizationData _authorizationData;
-            private readonly string _refreshTokenFilePath = Path.Combine(Path.GetTempPath(), "refreshToken.txt");
-    
-            private static long?[,] _accountCustomerIds;
-            private static ServiceClient<ICustomerManagementService> _customerService;
-            private static BulkServiceManager _bulkService;
-    
-            public MainWindow()
-            {
-                InitializeComponent();
-            }
-    
-            private async void CallServicesButton_OnClick(object sender, RoutedEventArgs e)
+            static void Main(string[] args)
             {
                 try
                 {
-                    // If there is already an authenticated Microsoft account during the current application runtime, 
-                    // go ahead and call Bing Ads service operations. 
-                    if (_auth != null)
-                    {
-                        await CallBingAdsServices(_auth);
-                        return;
-                    }
+                    Authentication authentication = AuthenticateWithOAuth();
     
-                    // Prepare the OAuth object for use with the authorization code grant flow. 
-                    var oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(ClientId);
+                    // Most Bing Ads service operations require account and customer ID. 
+                    // This utiltiy operation sets the global authorization data instance 
+                    // to the first account that the current authenticated user can access. 
+                    SetAuthorizationDataAsync(authentication).Wait();
     
-                    // It is recommended that you specify a non guessable 'state' request parameter to help prevent
-                    // cross site request forgery (CSRF). 
-                    oAuthDesktopMobileAuthCodeGrant.State = ClientState;
-    
-                    // Save the refresh token to a file whenever new OAuth tokens are received. 
-                    oAuthDesktopMobileAuthCodeGrant.NewOAuthTokensReceived +=
-                            (s, args) => File.WriteAllText(_refreshTokenFilePath, args.NewRefreshToken);
-    
-                    // If a refresh token is alreaedy present, use it to request new access and refresh tokens.
-                    if (File.Exists(_refreshTokenFilePath)) // If there is an existing refresh token
-                    {
-                        await oAuthDesktopMobileAuthCodeGrant.RequestAccessAndRefreshTokensAsync(File.ReadAllText(_refreshTokenFilePath));
-    
-                        // Save the authorization objects in a session for future requests.
-                        _auth = oAuthDesktopMobileAuthCodeGrant;
-    
-                        await CallBingAdsServices(_auth);
-                        return;
-                    }
-    
-                    // Navigate the web browser to the Microsoft Account authorization page.
-                    WebBrowser.Navigated += async (s, args) =>
-                    {
-                        // If the current request is a callback from the Microsoft Account authorization server,
-                        // use the current request url containing authorization code to request new access and refresh tokens
-                        if (args.Uri.AbsolutePath == oAuthDesktopMobileAuthCodeGrant.RedirectionUri.AbsolutePath)
-                        {
-                            try
-                            {
-                                if (oAuthDesktopMobileAuthCodeGrant.State != ClientState)
-                                    throw new HttpRequestException("The OAuth response state does not match the client request state.");
-    
-                                await oAuthDesktopMobileAuthCodeGrant.RequestAccessAndRefreshTokensAsync(args.Uri);
-    
-                                // Save the authorization object in a session for future requests. 
-                                _auth = oAuthDesktopMobileAuthCodeGrant;
-    
-                                await CallBingAdsServices(_auth);
-                            }
-                            catch (OAuthTokenRequestException ex)
-                            {
-                                MessageBox.Show(
-                                    string.Format("Couldn't get OAuth tokens. Error: {0}. Description: {1}", ex.Details.Error, ex.Details.Description),
-                                    "Error when requesting OAuth tokens", MessageBoxButton.OK, MessageBoxImage.Error
-                                );
-                            }
-                            catch (FaultException<Microsoft.BingAds.V11.CustomerManagement.AdApiFaultDetail> ex)
-                            {
-                                MessageBox.Show(
-                                    string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))),
-                                    "Error when calling the Customer Management service", MessageBoxButton.OK, MessageBoxImage.Error
-                                );
-                            }
-                            catch (FaultException<Microsoft.BingAds.V11.Bulk.AdApiFaultDetail> ex)
-                            {
-                                MessageBox.Show(
-                                    string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))),
-                                    "Error when calling the Bulk service", MessageBoxButton.OK, MessageBoxImage.Error
-                                );
-                            }
-                            catch (Exception ex)
-                            {
-                                MessageBox.Show(
-                                    ex.Message,
-                                    "Error", MessageBoxButton.OK, MessageBoxImage.Error
-                                );
-                            }
-                        }
-                    };
-    
-                    // If there is no refresh token saved and no callback from the authorization server, 
-                    // then connect to the authorization server and request user consent. 
-                    WebBrowser.Navigate(oAuthDesktopMobileAuthCodeGrant.GetAuthorizationEndpoint());
+                    // You can extend the console app with the examples library at:
+                    // https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples
                 }
+                // Catch authentication exceptions
                 catch (OAuthTokenRequestException ex)
                 {
-                    MessageBox.Show(
-                        string.Format("Couldn't get OAuth tokens. Error: {0}. Description: {1}", ex.Details.Error, ex.Details.Description),
-                        "Error when requesting OAuth tokens", MessageBoxButton.OK, MessageBoxImage.Error
-                    );
-                }
-                catch (FaultException<Microsoft.BingAds.V11.CustomerManagement.AdApiFaultDetail> ex)
-                {
-                    MessageBox.Show(
-                        string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))),
-                        "Error when calling the Customer Management service", MessageBoxButton.OK, MessageBoxImage.Error
-                    );
-                }
-                catch (FaultException<Microsoft.BingAds.V11.Bulk.AdApiFaultDetail> ex)
-                {
-                    MessageBox.Show(
-                        string.Join("; ", ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))),
-                        "Error when calling the Bulk service", MessageBoxButton.OK, MessageBoxImage.Error
-                    );
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(
-                        ex.Message,
-                        "Error", MessageBoxButton.OK, MessageBoxImage.Error
-                    );
-                }
-            }
-    
-            /// <summary>
-            /// Adds a campaign to an account of the current authenticated user. 
-            /// </summary>
-            private async Task CallBingAdsServices(Authentication authentication)
-            {
-                // Uses the first account in a list of accounts that the current authenticated user may access. 
-                // If you want to use a specific account identifier, you can set _authorizationData to the value directly
-                // instead of calling GetUserDataAsync. 
-    
-                _authorizationData = await GetUserDataAsync(authentication);
-                var campaignId = await AddCampaignInBulkAsync(_authorizationData);
-    
-                MessageBox.Show(string.Format("Added new campaign:\n\nCustomerId: {0}\nAccountId: {1}\nCampaignId: {2}",
-                    _authorizationData.CustomerId, _authorizationData.AccountId, campaignId));
-            }
-    
-            /// <summary>
-            /// Uses the BulkServiceManager class to add a campaign. 
-            /// </summary>
-            private async Task<long?> AddCampaignInBulkAsync(AuthorizationData authorizationData)
-            {
-                _bulkService = new BulkServiceManager(authorizationData);
-                _bulkService.StatusPollIntervalInMilliseconds = 1000;
-    
-                // Note that UploadEntities writes a temporary file for upload.
-                // You can get and set the BulkServiceManager.WorkingDirectory property.
-                var uploadResults = await _bulkService.UploadEntitiesAsync(new EntityUploadParameters
-                {
-                    Entities = new BulkEntity[]
+                    OutputStatusMessage(string.Format("OAuthTokenRequestException Message:\n{0}", ex.Message));
+                    if (ex.Details != null)
                     {
-                        new BulkCampaign
-                        {
-                            AccountId = authorizationData.AccountId,
-                            Campaign = new Campaign
-                            {
-                                // You can set your campaign's bid strategy to EnhancedCpc, MaxClicks, MaxConversions, or TargetCpa 
-                                // and then, at any time, set an individual ad group's or keyword's bid strategy to ManualCpc.
-                                BiddingScheme = new EnhancedCpcBiddingScheme { },
-                                Name = "Campaign " + DateTime.UtcNow.ToString(CultureInfo.InvariantCulture),
-                                BudgetType = BudgetLimitType.DailyBudgetAccelerated,
-                                DailyBudget = 10,
-                                TimeZone = "PacificTimeUSCanadaTijuana"
-                            }
-                        }
-                    },
-                    ResponseMode = ResponseMode.ErrorsAndResults
-                });
-    
-                var campaign = uploadResults.OfType<BulkCampaign>().Single();
-    
-                if (campaign.HasErrors)
-                {
-                    MessageBox.Show(
-                        string.Join("; ", campaign.Errors.Select(error => string.Format("{0}: {1}", error.Number, error.Error))),
-                        "Upload had errors", MessageBoxButton.OK, MessageBoxImage.Error
-                    );
+                        OutputStatusMessage(string.Format("OAuthTokenRequestException Details:\nError: {0}\nDescription: {1}",
+                        ex.Details.Error, ex.Details.Description));
+                    }
                 }
-    
-                return campaign.Campaign.Id;
+                // Catch Customer Management service exceptions
+                catch (FaultException<AdApiFaultDetail> ex)
+                {
+                    OutputStatusMessage(string.Join("; ", ex.Detail.Errors.Select(error =>
+                    {
+                        if ((error.Code == 105) || (error.Code == 106))
+                        {
+                            return "Authorization data is missing or incomplete for the specified environment.\n" +
+                                   "To run the examples switch users or contact support for help with the following error.\n";
+                        }
+                        return string.Format("{0}: {1}", error.Code, error.Message);
+                    })));
+                    OutputStatusMessage(string.Join("; ",
+                        ex.Detail.Errors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
+                }
+                catch (FaultException<Microsoft.BingAds.V11.CustomerManagement.ApiFault> ex)
+                {
+                    OutputStatusMessage(string.Join("; ",
+                        ex.Detail.OperationErrors.Select(error => string.Format("{0}: {1}", error.Code, error.Message))));
+                }
+                catch (HttpRequestException ex)
+                {
+                    OutputStatusMessage(ex.Message);
+                }
             }
-    
+            
             /// <summary>
-            /// Get customer and account identifiers for the current authenticated user. 
+            /// Utility method for setting the customer and account identifiers within the global 
+            /// <see cref="_authorizationData"/> instance. 
             /// </summary>
-            private async Task<AuthorizationData> GetUserDataAsync(Authentication authentication)
+            /// <param name="authentication">The OAuth authentication credentials.</param>
+            /// <returns></returns>
+            private static async Task SetAuthorizationDataAsync(Authentication authentication)
             {
-                // Some service operations only need Authentication and DeveloperToken elements. 
-                // Use these credentials at minimum to get customer and account identifiers before managing campaigns. 
                 _authorizationData = new AuthorizationData
                 {
                     Authentication = authentication,
-                    DeveloperToken = DeveloperToken
+                    DeveloperToken = Settings.Default["DeveloperToken"].ToString()
                 };
     
-                _customerService = new ServiceClient<ICustomerManagementService>(_authorizationData);
+                _customerManagementService = new ServiceClient<ICustomerManagementService>(_authorizationData);
     
-                // Get the Bing Ads user identifier for the current authenticated user.
-                var user = await GetUserAsync(null);
-    
-                var accounts = await SearchAccountsByUserIdAsync(user.Id);
-    
-                if (accounts.Length > 0 && accounts[0].Id != null)
+                var getUserRequest = new GetUserRequest
                 {
-                    _authorizationData.AccountId = (long)(accounts[0].Id);
-                    _authorizationData.CustomerId = accounts[0].ParentCustomerId;
-                }
-    
-                // Store the parent customer identifier in the second array dimension
-    
-                _accountCustomerIds = new long?[accounts.Length, 2];
-    
-                for (var i = 0; i < accounts.Length; i++)
-                {
-                    _accountCustomerIds[i, 0] = accounts[i].Id;
-                    _accountCustomerIds[i, 1] = accounts[i].ParentCustomerId;
-                }
-    
-                SetUserDataByAccountIndex(0);
-    
-                return _authorizationData;
-            }
-    
-            /// <summary>
-            /// Gets a User object by the specified UserId.
-            /// </summary>
-            /// <param name="userId">The Bing Ads user identifier.</param>
-            /// <returns>The Bing Ads user.</returns>
-            private async Task<User> GetUserAsync(long? userId)
-            {
-                var request = new GetUserRequest
-                {
-                    UserId = userId
+                    UserId = null
                 };
     
-                return (await _customerService.CallAsync((s, r) => s.GetUserAsync(r), request)).User;
-            }
+                var getUserResponse = (await _customerManagementService.CallAsync((s, r) => s.GetUserAsync(r), getUserRequest));
+                var user = getUserResponse.User;
     
-            /// <summary>
-            /// Search for account details by UserId.
-            /// </summary>
-            /// <param name="userId">The Bing Ads user identifier.</param>
-            /// <returns>List of accounts that the user can manage.</returns>
-            private async Task<Account[]> SearchAccountsByUserIdAsync(long? userId)
-            {
                 var predicate = new Predicate
                 {
                     Field = "UserId",
                     Operator = PredicateOperator.Equals,
-                    Value = userId.ToString()
+                    Value = user.Id.ToString()
                 };
     
-                var paging = new Microsoft.BingAds.V11.CustomerManagement.Paging
+                var paging = new Paging
                 {
                     Index = 0,
                     Size = 10
                 };
     
-                var request = new SearchAccountsRequest
+                var searchAccountsRequest = new SearchAccountsRequest
                 {
                     Ordering = null,
                     PageInfo = paging,
                     Predicates = new[] { predicate }
                 };
     
-                return (await _customerService.CallAsync((s, r) => s.SearchAccountsAsync(r), request)).Accounts.ToArray();
+                var searchAccountsResponse =
+                    (await _customerManagementService.CallAsync((s, r) => s.SearchAccountsAsync(r), searchAccountsRequest));
+    
+                var accounts = searchAccountsResponse.Accounts.ToArray();
+                if (accounts.Length <= 0) return;
+    
+                _authorizationData.AccountId = (long)accounts[0].Id;
+                _authorizationData.CustomerId = (int)accounts[0].ParentCustomerId;
+    
+                OutputArrayOfAccount(accounts);
+                
+                return;
             }
     
             /// <summary>
-            /// Utility method for setting the customer and account identifiers within the global 
-            /// <see cref="_authorizationData"/> instance. 
+            /// Authenticates the current user via OAuth.
             /// </summary>
-            /// <param name="accountIndex">The index of the account within the <see cref="_accountCustomerIds"/>
-            /// multi-dimensional array.</param>
-            private void SetUserDataByAccountIndex(int accountIndex)
+            /// <returns>The OAuth authentication instance for a user.</returns>
+            private static Authentication AuthenticateWithOAuth()
             {
-                if (accountIndex < 0 || accountIndex > _accountCustomerIds.Length) return;
+                var apiEnvironment = 
+                    ConfigurationManager.AppSettings["BingAdsEnvironment"] == ApiEnvironment.Sandbox.ToString() ?
+                    ApiEnvironment.Sandbox : ApiEnvironment.Production;
+                var oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(
+                    Settings.Default["ClientId"].ToString(),
+                    apiEnvironment);
     
-                var accountId = _accountCustomerIds[accountIndex, 0];
-                var customerId = _accountCustomerIds[accountIndex, 1];
+                // It is recommended that you specify a non guessable 'state' request parameter to help prevent
+                // cross site request forgery (CSRF). 
+                oAuthDesktopMobileAuthCodeGrant.State = ClientState;
     
-                if (accountId == null || customerId == null) return;
+                string refreshToken;
     
-                _authorizationData.AccountId = (long)accountId;
-                _authorizationData.CustomerId = (int)customerId;
+                // If you have previously securely stored a refresh token, try to use it.
+                if (GetRefreshToken(out refreshToken))
+                {
+                    AuthorizeWithRefreshTokenAsync(oAuthDesktopMobileAuthCodeGrant, refreshToken).Wait();
+                }
+                else
+                {
+                    // You must request user consent at least once through a web browser control. 
+                    // Call the GetAuthorizationEndpoint method of the OAuthDesktopMobileAuthCodeGrant instance that you created above.
+                    Console.WriteLine(string.Format(
+                        "The Bing Ads user must provide consent for your application to access their Bing Ads accounts.\n" +
+                        "Open a new web browser and navigate to {0}.\n\n" +
+                        "After the user has granted consent in the web browser for the application to access " +
+                        "their Bing Ads accounts, please enter the response URI that includes " +
+                        "the authorization 'code' parameter: \n", oAuthDesktopMobileAuthCodeGrant.GetAuthorizationEndpoint()));
+    
+                    // Request access and refresh tokens using the URI that you provided manually during program execution.
+                    var responseUri = new Uri(Console.ReadLine());
+    
+                    if (oAuthDesktopMobileAuthCodeGrant.State != ClientState)
+                        throw new HttpRequestException("The OAuth response state does not match the client request state.");
+    
+                    oAuthDesktopMobileAuthCodeGrant.RequestAccessAndRefreshTokensAsync(responseUri).Wait();
+                    SaveRefreshToken(oAuthDesktopMobileAuthCodeGrant.OAuthTokens.RefreshToken);
+                }
+    
+                // It is important to save the most recent refresh token whenever new OAuth tokens are received. 
+                // You will want to subscribe to the NewOAuthTokensReceived event handler. 
+                // When calling Bing Ads services with ServiceClient<TService>, BulkServiceManager, or ReportingServiceManager, 
+                // each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. 
+                oAuthDesktopMobileAuthCodeGrant.NewOAuthTokensReceived +=
+                        (sender, tokens) => SaveRefreshToken(tokens.NewRefreshToken);
+    
+                return oAuthDesktopMobileAuthCodeGrant;
             }
+                    
+            /// <summary>
+            /// Requests new access and refresh tokens given an existing refresh token.
+            /// </summary>
+            /// <param name="authentication">The OAuth authentication instance for a user.</param>
+            /// <param name="refreshToken">The previous refresh token.</param>
+            /// <returns></returns>
+            private static Task<OAuthTokens> AuthorizeWithRefreshTokenAsync(
+                OAuthDesktopMobileAuthCodeGrant authentication, 
+                string refreshToken)
+            {
+                return authentication.RequestAccessAndRefreshTokensAsync(refreshToken);
+            }
+    
+            /// <summary>
+            /// This method is not recommended in production. 
+            /// You should store the refresh token securely.
+            /// </summary>
+            /// <param name="newRefreshtoken">The refresh token to save.</param>
+            private static void SaveRefreshToken(string newRefreshtoken)
+            {
+                if (newRefreshtoken != null)
+                {
+                    using (StreamWriter outputFile = new StreamWriter(
+                    Environment.CurrentDirectory + @"\refreshtoken.txt",
+                    false))
+                    {
+                        outputFile.WriteLine(newRefreshtoken);
+                    }
+                }
+            }
+    
+            /// <summary>
+            /// Returns the prior refresh token if available.
+            /// </summary>
+            /// <param name="refreshToken"></param>
+            /// <returns>The latest stored refresh token.</returns>
+            private static bool GetRefreshToken(out string refreshToken)
+            {
+                var filePath = Environment.CurrentDirectory + @"\refreshtoken.txt";
+                if (!File.Exists(filePath))
+                {
+                    refreshToken = null;
+                    return false;
+                }
+    
+                String fileContents;
+                using (StreamReader sr = new StreamReader(filePath))
+                {
+                    fileContents = sr.ReadToEnd();
+                }
+    
+                if (string.IsNullOrEmpty(fileContents))
+                {
+                    refreshToken = null;
+                    return false;
+                }
+    
+                try
+                {
+                    refreshToken = fileContents;
+                    return true;
+                }
+                catch (FormatException)
+                {
+                    refreshToken = null;
+                    return false;
+                }
+            }
+    
+            #region OutputHelpers
+    
+            /**
+             * You can extend the console app with the example helpers at:
+             * https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples
+             **/
+    
+            private static void OutputArrayOfAccount(IList<Account> dataObjects)
+            {
+                if (null != dataObjects)
+                {
+                    foreach (var dataObject in dataObjects)
+                    {
+                        OutputAccount(dataObject);
+                        OutputStatusMessage("\n");
+                    }
+                }
+            }
+    
+            private static void OutputAccount(Account dataObject)
+            {
+                if (null != dataObject)
+                {
+                    OutputStatusMessage(string.Format("AccountType: {0}", dataObject.AccountType));
+                    OutputStatusMessage(string.Format("BillToCustomerId: {0}", dataObject.BillToCustomerId));
+                    OutputStatusMessage(string.Format("CountryCode: {0}", dataObject.CountryCode));
+                    OutputStatusMessage(string.Format("CurrencyType: {0}", dataObject.CurrencyType));
+                    OutputStatusMessage(string.Format("AccountFinancialStatus: {0}", dataObject.AccountFinancialStatus));
+                    OutputStatusMessage(string.Format("Id: {0}", dataObject.Id));
+                    OutputStatusMessage(string.Format("Language: {0}", dataObject.Language));
+                    OutputArrayOfKeyValuePairOfstringstring(dataObject.ForwardCompatibilityMap);
+                    OutputStatusMessage(string.Format("LastModifiedByUserId: {0}", dataObject.LastModifiedByUserId));
+                    OutputStatusMessage(string.Format("LastModifiedTime: {0}", dataObject.LastModifiedTime));
+                    OutputStatusMessage(string.Format("Name: {0}", dataObject.Name));
+                    OutputStatusMessage(string.Format("Number: {0}", dataObject.Number));
+                    OutputStatusMessage(string.Format("ParentCustomerId: {0}", dataObject.ParentCustomerId));
+                    OutputStatusMessage(string.Format("PaymentMethodId: {0}", dataObject.PaymentMethodId));
+                    OutputStatusMessage(string.Format("PaymentMethodType: {0}", dataObject.PaymentMethodType));
+                    OutputStatusMessage(string.Format("PrimaryUserId: {0}", dataObject.PrimaryUserId));
+                    OutputStatusMessage(string.Format("AccountLifeCycleStatus: {0}", dataObject.AccountLifeCycleStatus));
+                    OutputStatusMessage(string.Format("TimeStamp: {0}", dataObject.TimeStamp));
+                    OutputStatusMessage(string.Format("TimeZone: {0}", dataObject.TimeZone));
+                    OutputStatusMessage(string.Format("PauseReason: {0}", dataObject.PauseReason));
+                    var advertiseraccount = dataObject as AdvertiserAccount;
+                    if (advertiseraccount != null)
+                    {
+                        OutputAdvertiserAccount((AdvertiserAccount)dataObject);
+                    }
+                }
+            }
+    
+            private static void OutputAdvertiserAccount(AdvertiserAccount dataObject)
+            {
+                if (null != dataObject)
+                {
+                    OutputArrayOfCustomerInfo(dataObject.LinkedAgencies);
+                    OutputStatusMessage(string.Format("SalesHouseCustomerId: {0}", dataObject.SalesHouseCustomerId));
+                    OutputArrayOfKeyValuePairOfstringstring(dataObject.TaxInformation);
+                    OutputStatusMessage(string.Format("BackUpPaymentInstrumentId: {0}", dataObject.BackUpPaymentInstrumentId));
+                    OutputStatusMessage(string.Format("BillingThresholdAmount: {0}", dataObject.BillingThresholdAmount));
+                    OutputAddress(dataObject.BusinessAddress);
+                }
+            }
+    
+            private static void OutputArrayOfAdvertiserAccount(IList<AdvertiserAccount> dataObjects)
+            {
+                if (null != dataObjects)
+                {
+                    foreach (var dataObject in dataObjects)
+                    {
+                        OutputAdvertiserAccount(dataObject);
+                        OutputStatusMessage("\n");
+                    }
+                }
+            }
+    
+            private static void OutputAddress(Address dataObject)
+            {
+                if (null != dataObject)
+                {
+                    OutputStatusMessage(string.Format("City: {0}", dataObject.City));
+                    OutputStatusMessage(string.Format("CountryCode: {0}", dataObject.CountryCode));
+                    OutputStatusMessage(string.Format("Id: {0}", dataObject.Id));
+                    OutputStatusMessage(string.Format("Line1: {0}", dataObject.Line1));
+                    OutputStatusMessage(string.Format("Line2: {0}", dataObject.Line2));
+                    OutputStatusMessage(string.Format("Line3: {0}", dataObject.Line3));
+                    OutputStatusMessage(string.Format("Line4: {0}", dataObject.Line4));
+                    OutputStatusMessage(string.Format("PostalCode: {0}", dataObject.PostalCode));
+                    OutputStatusMessage(string.Format("StateOrProvince: {0}", dataObject.StateOrProvince));
+                    OutputStatusMessage(string.Format("TimeStamp: {0}", dataObject.TimeStamp));
+                }
+            }
+    
+            private static void OutputArrayOfKeyValuePairOfstringstring(IList<KeyValuePair<string, string>> dataObjects)
+            {
+                if (null != dataObjects)
+                {
+                    foreach (var dataObject in dataObjects)
+                    {
+                        OutputKeyValuePairOfstringstring(dataObject);
+                    }
+                }
+            }
+    
+            private static void OutputKeyValuePairOfstringstring(KeyValuePair<string, string> dataObject)
+            {
+                if (null != dataObject.Key)
+                {
+                    OutputStatusMessage(string.Format("key: {0}", dataObject.Key));
+                    OutputStatusMessage(string.Format("value: {0}", dataObject.Value));
+                }
+            }
+    
+            private static void OutputCustomerInfo(CustomerInfo dataObject)
+            {
+                if (null != dataObject)
+                {
+                    OutputStatusMessage(string.Format("Id: {0}", dataObject.Id));
+                    OutputStatusMessage(string.Format("Name: {0}", dataObject.Name));
+                }
+            }
+    
+            private static void OutputArrayOfCustomerInfo(IList<CustomerInfo> dataObjects)
+            {
+                if (null != dataObjects)
+                {
+                    foreach (var dataObject in dataObjects)
+                    {
+                        OutputCustomerInfo(dataObject);
+                        OutputStatusMessage("\n");
+                    }
+                }
+            }
+            
+            private static void OutputStatusMessage(String msg)
+            {
+                Console.WriteLine(msg);
+            }
+    
+            #endregion OutputHelpers
         }
     }
     ```
 
-6.  Click **Build** -&gt; **Build BingAdsDesktopApp**, and then run the application. When you start the application you will be prompted by default for Microsoft account credentials to authenticate in production.
+8. Click **Build** -&gt; **Build BingAdsConsoleApp**, and then run the application. When you start the application you will be prompted by default for Microsoft account credentials to authenticate in production.
 
 ## <a name="sandbox"></a>Configuring Sandbox
 To use sandbox, set the *BingAdsEnvironment* key to Sandbox within the *&lt;appSettings&gt;* node of your project root's *App.config* file.
@@ -379,7 +464,7 @@ To use sandbox, set the *BingAdsEnvironment* key to Sandbox within the *&lt;appS
 You can also set the environment for each ServiceClient individually as follows.
 
 ```csharp
-_customerService = new ServiceClient<ICustomerManagementService>(_authorizationData, ApiEnvironment.Sandbox);
+_customerManagementService = new ServiceClient<ICustomerManagementService>(_authorizationData, ApiEnvironment.Sandbox);
 ```
 
 Whether you set the ServiceClient environment globally or individually, separately you'll also need to set the OAuth environment to sandbox.
