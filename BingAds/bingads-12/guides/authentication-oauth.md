@@ -154,10 +154,8 @@ For repeat or long term authentication, you should follow the authorization code
 
     client_id=000A1A1A1&grant_type=refresh_token&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf&refresh_token=dsa987gfs890d89g8e89we...
     ```
-    > [!NOTE]
-    > Whereas the refresh token parameter does not have a defined expiration period, you should expect it to last several months. As a best practice the refresh token should be set to the value of the most recent refresh token retrieved.
     
-7.  You should expect to start again from Step 1 and request user consent if, for example you [signed the user out](#userlogout), the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf. In that case, the authorization service would return an invalid grant error as shown in the following example.
+7.  A refresh token can last up to 90 days. Regardless, you should expect to start again from Step 1 and request user consent if, for example you [signed the user out](#userlogout), the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf. In that case, the authorization service would return an invalid grant error as shown in the following example.
 
     ```json
     {"error":"invalid_grant","error_description":"The user could not be authenticated or the grant is expired. The user must first sign in and if needed grant the client application access to the requested scope."}

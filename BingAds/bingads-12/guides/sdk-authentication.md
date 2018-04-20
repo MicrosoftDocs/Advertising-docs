@@ -38,12 +38,6 @@ ReportingServiceManager ReportingService = new ReportingServiceManager(authoriza
 ```
 
 ```java
-AuthorizationData authorizationData = new AuthorizationData();
-authorizationData.setDeveloperToken("DeveloperTokenGoesHere");
-PasswordAuthentication passwordAuthentication = 
-    new PasswordAuthentication("UserNameGoesHere", "PasswordGoesHere");
-authorizationData.setAuthentication(passwordAuthentication);
-
 BulkServiceManager BulkService = new BulkServiceManager(authorizationData, ApiEnvironment.SANDBOX);
 
 ServiceClient<ICustomerManagementService> CustomerService = 
@@ -56,7 +50,7 @@ ServiceClient<ICustomerManagementService> CustomerService =
 ReportingServiceManager ReportingService = new ReportingServiceManager(authorizationData, ApiEnvironment.SANDBOX);
 ```
 ```php
-$customerProxy = new ServiceClient(ServiceClientType::CustomerManagementVersion11, $authorizationData, ApiEnvironment::Sandbox);
+$customerProxy = new ServiceClient(ServiceClientType::CustomerManagementVersion12, $authorizationData, ApiEnvironment::Sandbox);
 ```
 ```python
 # Set the environment property of each ServiceClient instance to 'sandbox' (not case sensitive). 
@@ -66,23 +60,23 @@ $customerProxy = new ServiceClient(ServiceClientType::CustomerManagementVersion1
 
 bulk_service_manager = BulkServiceManager(
     authorization_data=authorization_data, 
+    version = 12,
     poll_interval_in_milliseconds = 5000, 
     environment = 'sandbox',
-    version = 12,
 )
 
 customer_service = ServiceClient(
     'CustomerManagementService', 
+    version = 12,
     authorization_data=authorization_data, 
     environment = 'sandbox',
-    version = 12,
 )
 
 reporting_service_manager = ReportingServiceManager(
     authorization_data=authorization_data, 
+    version = 12,
     poll_interval_in_milliseconds = 5000, 
     environment = 'sandbox',
-    version = 12,
 )
 ```
 
@@ -269,12 +263,9 @@ For repeat or long term authentication, you should follow the authorization code
     if refresh_token is not None:
         oauth_web_auth_code_grant.request_oauth_tokens_by_refresh_token(refresh_token)
     ```
-  
-    > [!NOTE] 
-    > Whereas the refresh token parameter does not have a defined expiration period, you should expect it to last several months. 
     
     > [!IMPORTANT]
-    > You should expect to start again from Step 1 and request user consent if, for example the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf.
+    > A refresh token can last up to 90 days. Regardless, you should expect to start again from Step 1 and request user consent if, for example the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf.
 
 
 ## <a name="authorization-data"></a>Using AuthorizationData
@@ -314,7 +305,7 @@ authorization_data = AuthorizationData(
 )
 ```
 
-The *Authentication* property must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant*, *OAuthDesktopMobileImplicitGrant*, or *PasswordAuthentication*. 
+The *Authentication* property must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant*, or *OAuthDesktopMobileImplicitGrant*. 
 
 Some services such as Customer Management do not accept *CustomerId* and *CustomerAccountId* headers, so they will be ignored if you specified them in the [AuthorizationData](#authorization-data) object.
 
@@ -329,8 +320,6 @@ You can use an instance of the *ServiceClient* class to call any methods of one 
 
 public async Task<TResponse> CallAsync<TRequest, TResponse>(
     Func<TService, TRequest, Task<TResponse>> method, TRequest request)
-
-// The header elements that the CallAsync method sets will differ depending on the type of authentication specified in AuthorizationData object and the requirements of the service. For example if you use one of the OAuth classes such as OAuthWebAuthCodeGrant, the AuthenticationToken will be set by CallAsync, whereas the UserName and Password headers will remain empty. If you use PasswordAuthentication, the UserName and Password headers will be set by CallAsync instead of AuthenticationToken.
 
 // In the following sample, the method delegate is (s, r) => s.GetUserAsync(r) which takes a GetUserRequest message as the request parameter (TRequest) and returns a GetUserResponse message (TResponse).
 
@@ -358,18 +347,17 @@ getUserRequest.setUserId(userId);
 User user = CustomerService.getService().getUser(getUserRequest).getUser();
 ```
 ```php
-// You can use a single instance of the ServiceClient class to call any methods in the service, for example you can set the CustomerManagementVersion11 service client type as follows.
+// You can use a single instance of the ServiceClient class to call any methods in the service, for example you can set the CustomerManagementVersion12 service client type as follows.
 
-$customerProxy = new ServiceClient(ServiceClientType::CustomerManagementVersion11, $authorizationData, ApiEnvironment::Production);
+$customerProxy = new ServiceClient(ServiceClientType::CustomerManagementVersion12, $authorizationData, ApiEnvironment::Production);
 )
-
-// Depending on the Authentication type specified in AuthorizationData, the corresponding Service Request Header fields are set when you create a new ServiceClient. For example if you use the OAuthWebAuthCodeGrant authentication type, the AuthenticationToken service request header will be set. If you use PasswordAuthentication, the UserName and Password headers will be set instead of AuthenticationToken.
 ```
 ```python
 # You can use the Customer Management service to get the current authenticated user.
 
 customer_service = ServiceClient(
     'CustomerManagementService', 
+    version = 12,
     authorization_data=authorization_data, 
     environment = ENVIRONMENT,
 )
@@ -378,7 +366,7 @@ user = customer_service.GetUser(UserId = None).User
 ```
 
 > [!IMPORTANT]
-> If you set the *AuthenticationToken*, *CustomerId*, *AccountId*, *DeveloperToken*, *UserName*, or *Password* header elements in the request parameter e.g., *GetUserRequest*, they will be ignored. [Service Client](#serviceclient) always uses the [AuthorizationData](#authorization-data) provided with its initialization.
+> If you set the *AuthenticationToken*, *CustomerId*, *AccountId*, or *DeveloperToken* header elements in the request parameter e.g., *GetUserRequest*, they will be ignored. [Service Client](#serviceclient) always uses the [AuthorizationData](#authorization-data) provided with its initialization.
 
 
 ## See Also

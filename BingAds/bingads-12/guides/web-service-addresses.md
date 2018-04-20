@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Refer to the list of Bing Ads web service addresses.
 ---
 # Bing Ads Web Service Addresses
-You can use the following web service addresses to access the Bing Ads web service operations.
+You can use the following web service addresses to access the Bing Ads web service operations. 
 > [!IMPORTANT]
 > With the availability of Bing Ads API version 12, version 11 is deprecated and will sunset by October 31, 2018. 
 

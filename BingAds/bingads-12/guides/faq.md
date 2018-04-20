@@ -19,7 +19,7 @@ If you are not finding the information you need to solve your problem in the dev
 ### Q. How can I find out about changes?
 The [Release Notes](release-notes.md) and [Migration Guide](migration-guide.md) are great resources to start with. 
 
-You can sign up for the monthly newsletter via the [News](https://developers.bingads.microsoft.com/News) tab of the Developer Portal, and that's also where the latest [blog](https://blogs.msdn.microsoft.com/bing_ads_api/) announcments are aggregated.  
+You can sign up for the monthly newsletter via the [News](https://developers.bingads.microsoft.com/News) tab of the Developer Portal, and that's also where the latest [blog](https://blogs.msdn.microsoft.com/bing_ads_api/) announcements are aggregated.  
 
 ## Get Started
 
@@ -60,4 +60,4 @@ When a user clicks an ad, it can take up to two hours for the system to process 
 To programatically manage a Bing Ads account, you must provide consent at least once through the web application consent flow. For repeat or long term authentication, you should follow the [authorization code grant flow](authentication-oauth.md#authorizationcode) for obtaining an access token and refresh token. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. You may need to request user consent again for example, if the Microsoft Account password was changed or the Microsoft Account owner removed permissions for your application to authenticate on their behalf. 
 
 ### Q. When do the access and refresh tokens expire?
-The access token typically expires after one hour, although you should always check the expiration time each time you request a new token. The refresh token does not have a published duration or expiration time, although you can expect it to last up to 1 year. As a best practice you should always securely store the latest refresh token each time you request new access and refresh tokens. 
+The access token typically expires after one hour, although you should always check the expiration time each time you request a new token. The refresh token does not have a published duration or expiration time, although you can expect it to last 90 days. As a best practice you should always securely store the latest refresh token each time you request new access and refresh tokens. 

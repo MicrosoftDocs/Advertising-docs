@@ -23,15 +23,15 @@ For the sandbox environment, the following are the endpoints you must use to get
 
 |Description|Production|Sandbox|
 |---|---|---|
-|Endpoint for sandbox email used when getting a sandbox Microsoft account|Any email address|outlook-int.com|
-|Endpoint for getting a sandbox client ID|apps.dev.microsoft.com/#/appList|apps.dev.microsoft-int.com/#/appList|
-|Endpoint for OAuth requests|login.live.com|login.live-int.com|
+|Domain for email used when getting a Microsoft account|Any email address|outlook-int.com|
+|Endpoint for getting a client ID|[apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList)|[apps.dev.microsoft-int.com/#/appList](https://apps.dev.microsoft-int.com/#/appList)|
+|Endpoint for OAuth requests via [Authentication with OAuth](authentication-oauth.md)|login.live.com|login.live-int.com|
 
 Also as mentioned above, supported services in sandbox vary from production. To get the web service addresses for sandbox, see [Bing Ads Web Service Addresses](web-service-addresses.md).
 
 Follow these steps to get a sandbox customer. If you already have a sandbox customer, you can skip to the user invitation steps.
 
-1.	Open a browser and navigate to sandbox.bingads.microsoft.com
+1.	Open a browser and navigate to [sandbox.bingads.microsoft.com](https://secure.sandbox.bingads.microsoft.com/)
 2.	Click **Sign up for Bing Ads** or **Sign up now**
 3.	Fill out the **Create Account** form
 4.	For **Import/Create Campaign**, click **Skip campaign creation**
@@ -64,10 +64,10 @@ Bing Ads sends an email invite to the user. If the invite doesn’t show up in t
 6.	Finish the work flow by specifying the rest of your user information
 7.  Exit Bing Ads after completing the MSA process.
 
-After Bing creates the account, you may use the MSA in sandbox.
+After Bing creates the account, you may use the @outlook**-int**.com credentials in sandbox and during [app registration](https://apps.dev.microsoft-int.com/#/appList).
 
 > [!NOTE]
-> The MSA signup process returns you to the SI Bing Ads user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface and then sign in using your new MSA email address at [https://ui.sandbox.bingads.microsoft.com](https://ui.sandbox.bingads.microsoft.com).
+> The MSA signup process returns you to the SI Bing Ads user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface and then sign in using your new MSA email address at [https://secure.sandbox.bingads.microsoft.com/](https://secure.sandbox.bingads.microsoft.com/).
 
 ## <a name="bestpractices"></a>Sandbox Best Practices
 Sandbox should not be used in the same capacity as production.
