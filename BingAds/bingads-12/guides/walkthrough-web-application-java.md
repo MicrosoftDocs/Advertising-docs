@@ -83,7 +83,7 @@ The example web application sends authentication requests to the Microsoft accou
     	private static java.lang.String DeveloperToken = "<DeveloperTokenGoesHere>";
     	private static java.lang.String ClientId = "<ClientIdGoesHere>";
     	private static java.lang.String ClientSecret = "<ClientSecretGoesHere>";
-    private static java.lang.String RedirectUri = "<RedirectUriGoesHere>";
+        private static java.lang.String RedirectUri = "<RedirectUriGoesHere>";
 
     	static long accountsCount = 0;
      %>
@@ -102,7 +102,7 @@ The example web application sends authentication requests to the Microsoft accou
 
     	 // Searches by UserId for accounts that the user can manage.
 
-    	 static ArrayOfAccount searchAccountsByUserId(java.lang.Long userId) throws AdApiFaultDetail_Exception, ApiFault_Exception{       
+    	 static ArrayOfAdvertiserAccount searchAccountsByUserId(java.lang.Long userId) throws AdApiFaultDetail_Exception, ApiFault_Exception{       
 
     	     ArrayOfPredicate predicates = new ArrayOfPredicate();
     	     Predicate predicate = new Predicate();
@@ -124,7 +124,7 @@ The example web application sends authentication requests to the Microsoft accou
 
     	 // Outputs the account and parent customer identifiers for the specified accounts.
 
-    	 static void printAccounts(ArrayOfAccount accounts) throws Exception
+    	 static void printAccounts(ArrayOfAdvertiserAccount accounts) throws Exception
     	 {
     	     for (Account account : accounts.getAccounts())
     	     {
@@ -182,7 +182,7 @@ The example web application sends authentication requests to the Microsoft accou
 
           // Search for the accounts that the user can access.
 
-          ArrayOfAccount accounts = searchAccountsByUserId(user.getId());
+          ArrayOfAdvertiserAccount accounts = searchAccountsByUserId(user.getId());
           accountsCount = accounts.getAccounts().size();
 
           System.out.println("The user can access the following Bing Ads accounts: \n");
