@@ -178,10 +178,14 @@ The example web application sends authentication requests to the Microsoft accou
     
                     // Prepare the OAuth object for use with the authorization code grant flow. 
     
+                    var apiEnvironment =
+                        ConfigurationManager.AppSettings["BingAdsEnvironment"] == ApiEnvironment.Sandbox.ToString() ?
+                        ApiEnvironment.Sandbox : ApiEnvironment.Production;
                     var oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(
                         Settings.Default["ClientId"].ToString(),
                         Settings.Default["ClientSecret"].ToString(), 
-                        new Uri(Settings.Default["RedirectionUri"].ToString()));
+                        new Uri(Settings.Default["RedirectionUri"].ToString()),
+                        apiEnvironment);
     
                     // It is recommended that you specify a non guessable 'state' request parameter to help prevent
                     // cross site request forgery (CSRF). 

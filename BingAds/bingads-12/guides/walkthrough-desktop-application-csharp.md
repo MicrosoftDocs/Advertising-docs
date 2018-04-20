@@ -188,9 +188,12 @@ The example desktop application sends authentication requests to the Microsoft a
             /// <returns>The OAuth authentication instance for a user.</returns>
             private static Authentication AuthenticateWithOAuth()
             {
+                var apiEnvironment = 
+                    ConfigurationManager.AppSettings["BingAdsEnvironment"] == ApiEnvironment.Sandbox.ToString() ?
+                    ApiEnvironment.Sandbox : ApiEnvironment.Production;
                 var oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(
-                    Settings.Default["ClientId"].ToString(), 
-                    ConfigurationManager.AppSettings["BingAdsEnvironment"].ToString());
+                    Settings.Default["ClientId"].ToString(),
+                    apiEnvironment);
     
                 // It is recommended that you specify a non guessable 'state' request parameter to help prevent
                 // cross site request forgery (CSRF). 
