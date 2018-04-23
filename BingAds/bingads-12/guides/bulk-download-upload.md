@@ -84,7 +84,7 @@ The following is an overview of the request settings and upload workflow.
 3.  Use the *UploadUrl* returned with the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md) response to submit your bulk upload file with HTTP POST. The content type must be *multipart/form-data*. UTF-8 files must include the byte order mark (BOM). The ZIP-compressed upload should contain one file formatted as either **Csv** or **Tsv**. The ZIP file must be properly structured, including an end of central directory record.
 
     > [!NOTE]
-    > The HTTP standard Authorization header is not used. To authenticate you must add and set the Bing Ads custom header elements of your HTTP client, including the *DeveloperToken*, *CustomerId*, and *CustomerAccountId* headers. You must also set the user credentials header or headers. For [Authentication with OAuth](authentication-oauth.md) you must set the *AuthenticationToken* header, otherwise to use the deprecated Bing Ads managed credentials you must set the *UserName* and *Password* headers. For more information, see [Where to Use the API Credentials](get-started.md#where-to-use).
+    > The HTTP standard Authorization header is not used. To authenticate you must add and set the Bing Ads custom header elements of your HTTP client, including the *DeveloperToken*, *CustomerId*, and *CustomerAccountId* headers. You must also set the user credentials via the *AuthenticationToken* header element. For more information, see [Authentication with OAuth](authentication-oauth.md) and [Where to Use the API Credentials](get-started.md#where-to-use).
     >
     > You must use the same user credentials throughout the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md), HTTP POST, and [GetBulkUploadStatus](../bulk-service/getbulkuploadstatus.md) workflow.  
 
@@ -99,7 +99,7 @@ The following is an overview of the request settings and upload workflow.
     Content-Type: multipart/form-data;
     ```
 
-4.  Check the HTTP response status code. If the HTTP response status code is 200, then the file was received successfully by Bing Ads. If the HTTP response status code is 401, then authentication failed e.g. *UserName*, *Password*, *AuthenticationToken*, or *DeveloperToken* was invalid.  If the HTTP response status code is 400, then you should also check the response stream for [Bing Ads Operation Error Codes](operation-error-codes.md) for example, in the range of 3220 - 3227. 
+4.  Check the HTTP response status code. If the HTTP response status code is 200, then the file was received successfully by Bing Ads. If the HTTP response status code is 401, then authentication failed e.g. *AuthenticationToken* or *DeveloperToken* was invalid.  If the HTTP response status code is 400, then you should also check the response stream for [Bing Ads Operation Error Codes](operation-error-codes.md) for example, in the range of 3220 - 3227. 
 
     Here is an example error response message that the URL had already been used to upload a bulk file.
     ```http

@@ -17,7 +17,7 @@ By the end of this tutorial you will have a web application running on Azure tha
 ![Enable Bing Ads access](media/pythonsdk-examplewebapp-enablebingadsaccess.png "Enable Bing Ads access")
 
 ## <a name="requirements"></a>Prerequisites
-To complete this tutorial, you need an Azure account. (You can [sign up for a free trial](http://azure.microsoft.com/pricing/free-trial/)). You can complete this tutorial and deploy locally without an Azure website, and the application will work with the deprecated *UserName* and *Password* credentials. To authenticate a Microsoft account for a web application using OAuth, you must deploy to a server with a publicly accessible DNS, for example an Azure website.
+To complete this tutorial, you need an Azure account. (You can [sign up for a free trial](http://azure.microsoft.com/pricing/free-trial/)). To authenticate a Microsoft account for a web application using OAuth, you must deploy to a server with a publicly accessible DNS, for example an Azure website.
 
 If you want to get started with [Azure App Service](http://azure.microsoft.com/services/app-service/) before signing up for an account, go to [https://tryappservice.azure.com/](https://tryappservice.azure.com/), where you can immediately create a short-lived starter site for free. Before kicking off the short-lived starter site, to maximize your time experiencing Azure you should first complete the tutorial steps to deploy on your local machine.
 
@@ -29,9 +29,9 @@ You will need to [install](get-started-python.md#installation) the [Bing Ads Pyt
 
 You will need the [Django web framework](https://www.djangoproject.com/) installed to deploy the application locally, and this tutorial will walk you through the installation.
 
-You will need at least one user with Bing Ads credentials including either a Microsoft account (recommended) or the Bing Ads legacy *UserName* and *Password* set, and a [developer token](get-started.md#get-developer-token). 
+You will need at least one user with Bing Ads credentials and a [developer token](get-started.md#get-developer-token). 
 
-To use the OAuth 2.0 features of this web application, you will need to [register an application](authentication-oauth.md#registerapplication) and take note of the client ID and client secret. You'll need to register a web app (not native) for this example. You will be asked to register one or more redirect URLs. To deploy your application on Azure, choose a website name and corresponding URL that includes *azurewebsites.net*. This tutorial uses the */callback* URL relative to the website root, so to follow along you will want to register a redirect URL as follows: *https://YourAzureSiteNameGoesHere.azurewebsites.net/callback*.
+You will need to [register an application](authentication-oauth.md#registerapplication) and take note of the client ID and client secret. You'll need to register a web app (not native) for this example. You will be asked to register one or more redirect URLs. To deploy your application on Azure, choose a website name and corresponding URL that includes *azurewebsites.net*. This tutorial uses the */callback* URL relative to the website root, so to follow along you will want to register a redirect URL as follows: *https://YourAzureSiteNameGoesHere.azurewebsites.net/callback*.
 
 ## Website Creation on Azure Portal
 Create a Django website from the Azure Websites gallery. Login to the [Microsoft Azure Portal](https://manage.windowsazure.com/) and click the **NEW** button in the bottom left corner. A window will appear. Click **COMPUTE**, **WEB SITE**, then **FROM GALLERY**.
@@ -47,7 +47,7 @@ In the next page, enter a *URL* and a *WEBSCALEGROUP* for your site, and press t
 The site will be quickly set up. You can click the **BROWSE** button from the bottom toolbar, and your browser will open the default Django application that Azure provides out of the box.
 
 ## Integrate Source Control
-Click on **Reset your deployment credentials**. Choose a username and password that you will use to deploy and sync updates with your site.
+Click on **Reset your deployment credentials**. Choose a user name and password that you will use to deploy and sync updates with your site.
 
 Next, you will add support for publishing via Git. This can be done by choosing **Set up deployment from source control**. From the **Set up deployment** dialog, scroll down and select the **Local Git repository** option. Click the right arrow to continue. After setting up Git publishing, you will momentarily see a page informing you the repository is being created. When it is ready, you will see instructions on how to connect.
 
@@ -72,7 +72,7 @@ Here is an abridged overview of the files used by this web application. If you h
 
 -   */DjangoWebProject/urls.py* - Defines which view and template context to invoke per URL.
 
--   */app/forms.py* - The BootstrapAuthenticationForm is used to validate web application user credentials against the backend database. The BingAdsPasswordAuthenticationForm is used to validate Bing Ads legacy *UserName* and *Password* credentials.
+-   */app/forms.py* - The BootstrapAuthenticationForm is used to validate web application user credentials against the backend database. 
 
 -   */app/models.py* - We defined the BingAdsUser model to extend the default Django user authentication model. One web application user (Django.contrib.auth.User) can be associated with up to one refresh token. For more information about how you can customize the authentication model, see the Django documentation.
 
@@ -102,7 +102,7 @@ The default sqlite3 database included with the project does not have any superus
 Right click the project and select **Python** -&gt; **Django Sync DB**. When asked to create a superuser, type 'yes' and follow the remaining prompts to create a superuser.
 
 ## <a name="localdeploy"></a>Deploy locally
-You can now deploy locally without an Azure website, and the application will work with Bing Ads legacy *UserName* and *Password* credentials. To authenticate a Microsoft account for Bing Ads access using OAuth, you'll want to [Deploy to Azure](#azuredeploy).
+You can now deploy locally without an Azure website. To authenticate a Microsoft account for Bing Ads access using OAuth, you'll want to [Deploy to Azure](#azuredeploy).
 
 Go ahead and Press F5 to start debugging, and you can view the Django web application running locally in your default web browser.
 
