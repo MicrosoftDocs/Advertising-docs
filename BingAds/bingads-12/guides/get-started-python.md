@@ -52,9 +52,9 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
     ```python
     campaign_service = ServiceClient(
         service='CampaignManagementService', 
+        version = 12,
         authorization_data=authorization_data, 
         environment = ENVIRONMENT,
-        version = 12,
     )
     print campaign_service.soap_client
     ```
