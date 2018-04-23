@@ -67,7 +67,6 @@ For the [SearchCustomers](searchcustomers.md) service operation, the following a
 |MarketCountry|Equals|Use this field to search the MarketCountry element of the [Customer](customer.md).<br /><br />The MarketCountry and MarketLanguage predicate fields are not required; however, if either is specified then both are required.|
 |MarketLanguage|Equals|Use this field to search the MarketLanguage element of the [Customer](customer.md).<br /><br />The MarketCountry and MarketLanguage predicate fields are not required; however, if either is specified then both are required.|
 |UserName|Equals|Use this field to search the UserName element of the [User](user.md).|
-|TaxId|Contains<br /><br />Equals|For internal use only.|
 
 ### <a name="searchuserinvitations"></a>SearchUserInvitations Predicates
 For the [SearchUserInvitations](searchuserinvitations.md) service operation, the following are supported Field element and Operator elements of a Predicate object.
