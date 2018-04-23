@@ -254,14 +254,8 @@ For repeat or long term authentication, you should follow the authorization code
     $_SESSION['AuthorizationData']->Authentication->RequestOAuthTokensByRefreshToken($refreshToken);
     ```
     ```python
-    oauth_web_auth_code_grant.token_refreshed_callback=save_refresh_token
-    ```
-        
-    You can also get the *AccessToken*, *RefreshToken*, and *ExpiresIn* values from the *OAuthTokens* property of your *OAuthWebAuthCodeGrant* instance by calling *request_oauth_tokens_by_refresh_token*.
-    
-    ```python
     # When calling Bing Ads services with Service Client, Bulk Service Manager, or Reporting Service Manager, each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. It is important to save the most recent refresh token whenever new OAuth tokens are received. You will want to register a callback function to automatically save the refresh token anytime it is refreshed. For example if you defined have a save_refresh_token() method that securely stores your refresh token, set the authentication token_refreshed_callback property of each OAuthWebAuthCodeGrant instance.
-
+    
     oauth_web_auth_code_grant.token_refreshed_callback=save_refresh_token
 
     # If you already have a refresh token, use it to request new access and refresh tokens.
@@ -270,12 +264,8 @@ For repeat or long term authentication, you should follow the authorization code
         oauth_web_auth_code_grant.request_oauth_tokens_by_refresh_token(refresh_token)
     ```
   
-    > [!NOTE] 
-    > Whereas the refresh token parameter does not have a defined expiration period, you should expect it to last several months. 
-    
     > [!IMPORTANT]
-    > You should expect to start again from Step 1 and request user consent if, for example the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf.
-
+    > A refresh token can last up to 90 days. Regardless, you should expect to start again from Step 1 and request user consent if, for example the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf.
 
 ## <a name="authorization-data"></a>Using AuthorizationData
 The [AuthorizationData](#authorization-data) class contains properties that Bing Ads uses to authorize a user. The [Service Client](#serviceclient), [Bulk Service Manager](sdk-bulk-service-manager.md) and [Reporting Service Manager](sdk-reporting-service-manager.md) classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 

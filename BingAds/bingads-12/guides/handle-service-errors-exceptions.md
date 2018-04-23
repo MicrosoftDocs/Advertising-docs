@@ -7,10 +7,13 @@ ms.author: "eur"
 description: Learn about error handling and troubleshooting your application.
 ---
 # Handling Service Errors and Exceptions
-This article describes details on error handling and troubleshooting your application.
+This article describes details on error handling and troubleshooting your application. 
+
+> [!TIP]
+> When you create a SOAP request message, make sure that the elements are in the same order as defined in the web services description language (WSDL). If the required elements are out of order, the call will fail. If the optional elements are out of order, the call may fail or the elements will be ignored. For more details, see [SOAP XML Element Order](services-protocol.md#element-order). 
 
 ## <a name="commonerrors"></a>Common Errors
-Here are some tips to handle common errors that you may encounter.
+Here are some tips to handle common errors that you may encounter. 
 
 ### Code 105
 Typically indicates usage of an incorrect access token (AuthenticationToken) or developer token for the target environment. For example your credentials may be valid in productio; however, when targeting sandbox you would observe code *105*.

@@ -12,7 +12,7 @@ You can write your Bing Ads application in any language that supports web servic
 ## SOAP for Bing Ads API
 Bing Ads services support Simple Object Access Protocol (SOAP). Some languages, such as C# and Java, provide tools that generate proxy classes from the WSDL. If your language of choice does not provide a tool to generate proxy classes, you will need to generate your own proxy classes or SOAP envelopes. To generate the proxy classes, you need the web address of the WSDL document of the service that you want to use. The Bing Ads sandbox and production environments each have a unique address. The addresses also include the version number of the WSDL that is specific to a major Bing Ads API release. For production and sandbox service WSDLs of the latest Bing Ads API version, see [Bing Ads Web Service Addresses](web-service-addresses.md).
 
-## <a name="element_order"></a>SOAP XML Element Order
+## <a name="element-order"></a>SOAP XML Element Order
 When you create a SOAP request message, the order of the elements within the SOAP body is critical. The elements must be in the same order as defined in the web services description language (WSDL). If the required elements are out of order, the call will fail. If the optional elements are out of order, the call may fail or the elements will be ignored. The WSDL syntax, which shows the correct order of the elements, is included with each request message, response message, and data object documented in the reference content. In addition, each request and response message shows an example SOAP envelope.
 
 > [!NOTE]
@@ -34,12 +34,12 @@ The customer management service performs a full update of entities, so in additi
 > [!NOTE]
 > One exception to this rule is the *ForwardCompatibilityMap* element of any object. For example if you do not provide the *ForwardCompatibilityMap* element of the [Account Data Object](../customer-management-service/account.md), the service will not update or nullify any properties that would otherwise have been represented by key and value pairs.
 
-## <a name="store_locally"></a>Store Your Entity Identifiers Locally
+## <a name="store-locally"></a>Store Your Entity Identifiers Locally
 You should maintain a local store of your account and campaign entities. Specifically, you should locally store the identifiers of your accounts, customers, campaigns, ad groups, and keywords. Most calls require the identifier of the entity. If you store the identifier, you eliminate the call that is required to get the identifier.
 
 For example, many of the campaign management calls require an account identifier. To get the account identifier, you can use the customer management service. However, instead of calling the service repeatedly, store the account identifier locally, so that you can use it in subsequent calls.
 
-## <a name="manage_overhead"></a>Manage the Overhead Associated with Making Web Service Calls
+## <a name="manage-overhead"></a>Manage the Overhead Associated with Making Web Service Calls
 The following are the overhead costs, in processing time, that are associated with each web service call.
 
 -   Establishing an HTTPS connection to the web service.  
