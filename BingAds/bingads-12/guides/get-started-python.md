@@ -13,7 +13,7 @@ To get started developing Bing Ads applications with Python, you can start with 
 
 You will need user credentials with access to Bing Ads either in [production](https://secure.bingads.microsoft.com/) or [sandbox](https://secure.sandbox.bingads.microsoft.com/Auth?EnvContext=Sandbox). For the production environment you will need a [production developer token](get-started.md#get-developer-token). All sandbox clients can use the universal sandbox developer token i.e., **BBD37VB98**. For more information, please see [Get Started With the Bing Ads API](get-started.md) and [Sandbox](sandbox.md).
 
-To authenticate with a [Microsoft Account](https://account.microsoft.com/account) (email address username) in production, you must also must [register](authentication-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Authentication With the SDKs](sdk-authentication.md#oauth).
+To authenticate with a [Microsoft Account](https://account.microsoft.com/account) (email address user name) in production, you must also must [register](authentication-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Authentication With the SDKs](sdk-authentication.md#oauth).
 
 ## <a name="dependencies"></a> Dependencies
 The Bing Ads Python SDK uses the [suds-jurko-0.6](https://bitbucket.org/jurko/suds) library as a proxy for all of Bing Ads web services. For more information about using Suds with Bing Ads, see [Using Suds](#suds).

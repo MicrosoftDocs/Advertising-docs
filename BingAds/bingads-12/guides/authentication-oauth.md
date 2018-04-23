@@ -10,7 +10,7 @@ description: Authenticate for Bing Ads production services with a Microsoft Acco
 Bing Ads implements the implicit and authorization grant flows of the [OAuth 2.0](http://tools.ietf.org/html/rfc6749) protocol to enable authentication of Microsoft Accounts that are linked to Bing Ads accounts. You should authenticate for Bing Ads production services with a Microsoft Account, instead of providing the Bing Ads username and password set. To authenticate with a Microsoft Account in sandbox, please see [Get Sandbox Access](sandbox.md#access).
 
 > [!NOTE]
-> New customers are required to sign up for Bing Ads with a Microsoft Account, and to manage those accounts you must use OAuth. Existing users with legacy Bing Ads credentials may continue to specify the *UserName* and *Password* header elements with Bing Ads API version 11. Starting with Bing Ads API version 12, only OAuth authentication is supported. Managed credentials i.e., the *UserName* and *Password* header elements are not supported in version 12.  
+> Existing users with deprecated Bing Ads managed credentials may continue to specify them via the *UserName* and *Password* header elements with Bing Ads API version 11. Starting with Bing Ads API version 12, only OAuth authentication via the *AuthenticationToken* header element is supported. Managed credentials i.e., the *UserName* and *Password* header elements are not supported in version 12.  
 > 
 > The *DeveloperToken* header element is always required. For information on how to get a *DeveloperToken*, see [Get Started With the Bing Ads API](get-started.md).
 
@@ -32,7 +32,7 @@ At a high level you should complete the following steps to authenticate a Micros
 
 3.  Complete either the [Implicit Grant Flow](#implicit) or [Authorization Code Grant Flow](#authorizationcode) to obtain an access token that can be used to authenticate with Bing Ads services.
 
-4.  For each API call to Bing Ads, use the returned access token as the *AuthenticationToken* element within the Bing Ads service [Service Request Header](#serviceheaders). For more information, see [Managing OAuth Tokens](#managingoauthtokens).
+4.  For each API call to Bing Ads, use the returned access token as the *AuthenticationToken* element within the Bing Ads service [Service Request Header](get-started.md#where-to-use). For more information, see [Managing OAuth Tokens](#managingoauthtokens).
 
 ## <a name="registerapplication"></a>Registering Your Application
 Before you can manage authentication for users of your Bing Ads application, you must register your application and get the corresponding client ID and client secret.
@@ -95,7 +95,7 @@ For one time or short term authentication, you should follow the implicit grant 
     > [!NOTE]
     > If the user denied your application permissions to manage their Bing Ads accounts, the callback URI includes an error and error description field as follows: *https://login.live.com/oauth20_desktop.srf'vv=1550&lc=1033#error=ERROR&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
 
-4.  Use the returned access token as the *AuthenticationToken* element within Bing Ads service [Service Request Header](#serviceheaders).
+4.  Use the returned access token as the *AuthenticationToken* element within Bing Ads service [Service Request Header](get-started.md#where-to-use).
 
 ### <a name="authorizationcode"></a>Authorization Code Grant Flow
 For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Authorization Code Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#section-4.1).
@@ -137,7 +137,7 @@ For repeat or long term authentication, you should follow the authorization code
 
 5.  Get the *access_token*, *refresh_token*, and *expires_in* values from the JSON response stream.
 
-    -   Use the returned access token as the *AuthenticationToken* element within Bing Ads service [Service Request Header](#serviceheaders).
+    -   Use the returned access token as the *AuthenticationToken* element within Bing Ads service [Service Request Header](get-started.md#where-to-use).
 
     -   The value of *expires_in* represents the maximum time in seconds, until the access token will expire. Before the access token expires, you should request a new access token as discussed in the next step.
 
@@ -171,17 +171,17 @@ To sign a user out, perform the following steps:
     GET https://login.live.com/oauth20_logout.srf?client_id={client_id}&redirect_uri={redirect_uri}
     ```
     
-    This call will remove any cookies that enable single sign-on to occur and ensure that next time your app launches the sign in experience, the user will be requested to enter a username and password to continue.
+    This call will remove any cookies that enable single sign-on to occur and ensures that next time your app launches the sign in experience, the user will be prompted for their consent.
  
 
 ## <a name="oauthparameters"></a>OAuth Authorization Parameters
-The following sections list the request and response parameters that are available when calling the [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) authorization service as described in the [Implicit Grant Flow](#implicit) and [Authorization Code Grant Flow](#authorizationcode) walkthroughs above.
+The following sections list the request and response parameters that are available when calling the [Live Connect](https://msdn.microsoft.com/en-us/library/hh243647.aspx) authorization service as described in the [Implicit Grant Flow](#implicit) and [Authorization Code Grant Flow](#authorizationcode) walkthroughs above.
 
 > [!NOTE]
 > The Bing Ads SDKs do not directly expose the *authentication_token*, *display*, *error*, *error_description*, *grant_type*, *locale*, *response_type*, or *scope*, parameters. The Bing Ads SDKs do expose the *client_id*, *client_secret*, *redirect_uri*, and *state*  parameters. 
 
 ### <a name="oauthrequestparameters"></a>OAuth Request Authorization Parameters
-The following table lists the request parameters that are available when calling the [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) authorization service. 
+The following table lists the request parameters that are available when calling the [Live Connect](https://msdn.microsoft.com/en-us/library/hh243647.aspx) authorization service. 
 
 Parameter  |Description  
 ---------|---------
@@ -196,7 +196,7 @@ Parameter  |Description
 *display*     |The display type to be used for the authorization page. Valid values are "popup", "touch", "page", or "none".       
 
 ### <a name="oauthresponseparameters"></a>OAuth Response Authorization Parameters
-The following table lists the response parameters that are available when calling the [Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code) authorization service. 
+The following table lists the response parameters that are available when calling the [Live Connect](https://msdn.microsoft.com/en-us/library/hh243647.aspx) authorization service. 
 
 Parameter  |Description  
 ---------|---------
@@ -211,25 +211,6 @@ Parameter  |Description
 *scope*     |Equivalent to the *scope* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.4).
 *state*     |Equivalent to the *state* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.5). When you request an authorization code this value is passed through from the *state* request parameter, and you should receive the same value unchanged in the response.
 *token_type*     |The type of data to be returned in the response from the authorization server. 
-
-## <a name="serviceheaders"></a>Service Request Header
-When making a Bing Ads service call, you still have the option of specifying the *UserName* and *Password* header elements along with your *DeveloperToken* as follows. In this case the UserName cannot be a Microsoft account (email address), and the OAuth flows described above are not applicable. 
-
-```xml
-<DeveloperToken i:nil="false"></DeveloperToken>
-<Password i:nil="false"></Password>
-<UserName i:nil="false"></UserName>
-```
-
-You may specify the *AuthenticationToken* instead of the *UserName* and *Password* for a given user. Set the *AuthenticationToken* element to the value of the access token returned via OAuth, as described in the sections above. The *DeveloperToken* is still required as follows.
-> [!NOTE]
-> If you specify *UserName*, *Password*, and *AuthenticationToken*, the *UserName* and *Password* are not validated. Authentication would succeed or fail based solely on the value of the *AuthenticationToken*, even if the *UserName* and *Password* represent valid credentials.
-
-```xml
-<AuthenticationToken i:nil="false"></AuthenticationToken>
-<DeveloperToken i:nil="false"></DeveloperToken>
-```
-
 
 ## See Also
 [Bing Ads Web Service Addresses](web-service-addresses.md)
