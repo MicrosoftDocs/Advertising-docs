@@ -18,9 +18,9 @@ You will need to install either Python 2.7 or 3.4 in your development environmen
 
 You will need to [install](get-started-python.md#installation) the [Bing Ads Python SDK](client-libraries.md), and this tutorial will walk you through the installation.
 
-You will need at least one user with Bing Ads credentials including either a Microsoft account (recommended) or the Bing Ads legacy *UserName* and *Password* set, and a [developer token](get-started.md#get-developer-token). 
+You will need at least one user with Bing Ads [credentials](get-started.md) and a [developer token](get-started.md#get-developer-token). 
 
-To use the OAuth 2.0 features of this web application, you will need to [register an application](authentication-oauth.md#registerapplication) and take note of the client ID. You'll need to register a native app (not web) for this example.
+You will need to [register an application](authentication-oauth.md#registerapplication) and take note of the client ID. You'll need to register a native app (not web) for this example.
 
 ## Create new Python Application
 After you have installed [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/), go to **File** -&gt; **New** -&gt; **Project** -&gt; **Templates** -&gt; **Other Languages** -&gt; **Python**, and select **Python Application** from the list of Python templates.

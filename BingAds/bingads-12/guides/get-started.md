@@ -146,15 +146,12 @@ Each SOAP request must include the following SOAP headers, which contain the use
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |ApplicationToken|This header element is not used and should be ignored.|**string**|
-|AuthenticationToken|The OAuth access token that represents a Microsoft Account user who has permissions to Bing Ads accounts.|**string**|
+|AuthenticationToken|The OAuth access token that represents a Microsoft Account user who has permissions to Bing Ads accounts. For more information, see [Authentication with OAuth](authentication-oauth.md).|**string**|
 |CustomerAccountId|The identifier of the account that owns the entities in the request. This header element must have the same value as the AccountId body element when both are required.|**string**|
 |CustomerId|The identifier of the customer that contains and owns the account. If you manage an account of another customer, you should use that customer ID instead of your own customer ID.|**string**|
 |DeveloperToken|The developer token used to access the Bing Ads API.|**string**|
-|Password|The Bing Ads managed user's sign-in password.|**string**|
-|UserName|The Bing Ads managed user's sign-in name. You must not set this element to a Microsoft account or email address.|**string**|
-
-> [!IMPORTANT]
-> The UserName and Password header elements are deprecated. In future versions of the API, Bing Ads will transition exclusively to Microsoft Account (email address) authentication. For more information, see [Authentication with OAuth](authentication-oauth.md). UserName and Password are still required for Bing Ads managed credentials, but they are not applicable for Microsoft account authentication. To authenticate a Microsoft account, use the AuthenticationToken] header instead of UserName and Password.  
+|Password|This element is reserved for internal use and will be removed from a future version of the API. You must use the AuthenticationToken element to set user credentials. |**string**|
+|UserName|This element is reserved for internal use and will be removed from a future version of the API. You must use the AuthenticationToken element to set user credentials.|**string**|
 
 > [!TIP]
 > Do not mistake the account number for the account identifier. The account number is the system generated account number that is used to identify the account in the Bing Ads web application. The account number has the form xxxxxxxx, where xxxxxxxx is a series of any eight alphanumeric characters. The API service requests only use the account identifier, and never use the account number.
