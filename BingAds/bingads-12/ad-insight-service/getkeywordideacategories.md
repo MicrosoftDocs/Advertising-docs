@@ -68,11 +68,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordIdeaCategoriesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordIdeaCategories xmlns:e1660="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1660:KeywordIdeaCategory>
-          <e1660:CategoryId>ValueHere</e1660:CategoryId>
-          <e1660:CategoryName d4p1:nil="false">ValueHere</e1660:CategoryName>
-        </e1660:KeywordIdeaCategory>
+      <KeywordIdeaCategories xmlns:e956="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e956:KeywordIdeaCategory>
+          <e956:CategoryId>ValueHere</e956:CategoryId>
+          <e956:CategoryName d4p1:nil="false">ValueHere</e956:CategoryName>
+        </e956:KeywordIdeaCategory>
       </KeywordIdeaCategories>
     </GetKeywordIdeaCategoriesResponse>
   </s:Body>

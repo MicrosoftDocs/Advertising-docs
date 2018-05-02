@@ -71,26 +71,26 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBudgetOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <Opportunities xmlns:e1646="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1646:BudgetOpportunity>
-          <e1646:BudgetPoints d4p1:nil="false">
-            <e1646:BudgetPoint>
-              <e1646:BudgetAmount>ValueHere</e1646:BudgetAmount>
-              <e1646:BudgetPointType>ValueHere</e1646:BudgetPointType>
-              <e1646:EstimatedWeeklyClicks>ValueHere</e1646:EstimatedWeeklyClicks>
-              <e1646:EstimatedWeeklyCost>ValueHere</e1646:EstimatedWeeklyCost>
-              <e1646:EstimatedWeeklyImpressions>ValueHere</e1646:EstimatedWeeklyImpressions>
-            </e1646:BudgetPoint>
-          </e1646:BudgetPoints>
-          <e1646:BudgetType>ValueHere</e1646:BudgetType>
-          <e1646:CampaignId>ValueHere</e1646:CampaignId>
-          <e1646:CurrentBudget>ValueHere</e1646:CurrentBudget>
-          <e1646:IncreaseInClicks>ValueHere</e1646:IncreaseInClicks>
-          <e1646:IncreaseInImpressions>ValueHere</e1646:IncreaseInImpressions>
-          <e1646:PercentageIncreaseInClicks>ValueHere</e1646:PercentageIncreaseInClicks>
-          <e1646:PercentageIncreaseInImpressions>ValueHere</e1646:PercentageIncreaseInImpressions>
-          <e1646:RecommendedBudget>ValueHere</e1646:RecommendedBudget>
-        </e1646:BudgetOpportunity>
+      <Opportunities xmlns:e942="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e942:BudgetOpportunity>
+          <e942:BudgetPoints d4p1:nil="false">
+            <e942:BudgetPoint>
+              <e942:BudgetAmount>ValueHere</e942:BudgetAmount>
+              <e942:BudgetPointType>ValueHere</e942:BudgetPointType>
+              <e942:EstimatedWeeklyClicks>ValueHere</e942:EstimatedWeeklyClicks>
+              <e942:EstimatedWeeklyCost>ValueHere</e942:EstimatedWeeklyCost>
+              <e942:EstimatedWeeklyImpressions>ValueHere</e942:EstimatedWeeklyImpressions>
+            </e942:BudgetPoint>
+          </e942:BudgetPoints>
+          <e942:BudgetType>ValueHere</e942:BudgetType>
+          <e942:CampaignId>ValueHere</e942:CampaignId>
+          <e942:CurrentBudget>ValueHere</e942:CurrentBudget>
+          <e942:IncreaseInClicks>ValueHere</e942:IncreaseInClicks>
+          <e942:IncreaseInImpressions>ValueHere</e942:IncreaseInImpressions>
+          <e942:PercentageIncreaseInClicks>ValueHere</e942:PercentageIncreaseInClicks>
+          <e942:PercentageIncreaseInImpressions>ValueHere</e942:PercentageIncreaseInImpressions>
+          <e942:RecommendedBudget>ValueHere</e942:RecommendedBudget>
+        </e942:BudgetOpportunity>
       </Opportunities>
     </GetBudgetOpportunitiesResponse>
   </s:Body>

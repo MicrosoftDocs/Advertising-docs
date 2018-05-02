@@ -9,6 +9,9 @@ description: Defines the possible values representing entities that are enabled 
 # MediaEnabledEntityFilter Value Set - Campaign Management
 Defines the possible values representing entities that are enabled for media such as images.
 
+> [!NOTE]
+> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
+
 ## Syntax
 ```xml
 <xs:simpleType name="MediaEnabledEntityFilter" xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -28,7 +31,7 @@ Defines the possible values representing entities that are enabled for media suc
 |Value|Description|
 |-----------|---------------|
 |<a name="imageadextension"></a>ImageAdExtension|The media enabled entity is an [ImageAdExtension](imageadextension.md).<br /><br />When you call [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md) or [GetMediaMetaDataByIds](getmediametadatabyids.md), the service will return exactly three [ImageMediaRepresentation](imagemediarepresentation.md) objects with varying height and width properties.|
-|<a name="responsivead"></a>ResponsiveAd|Reserved.|
+|<a name="responsivead"></a>ResponsiveAd|The media enabled entity is an [ResponsiveAd](responsivead.md).<br /><br />When you call [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md) or [GetMediaMetaDataByIds](getmediametadatabyids.md), the service will return exactly one [ImageMediaRepresentation](imagemediarepresentation.md) object.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

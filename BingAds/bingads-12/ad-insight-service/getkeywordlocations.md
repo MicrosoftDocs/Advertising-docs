@@ -87,17 +87,17 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordLocationsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordLocationResult xmlns:e1671="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1671:KeywordLocationResult>
-          <e1671:Keyword d4p1:nil="false">ValueHere</e1671:Keyword>
-          <e1671:KeywordLocations d4p1:nil="false">
-            <e1671:KeywordLocation>
-              <e1671:Device d4p1:nil="false">ValueHere</e1671:Device>
-              <e1671:Location d4p1:nil="false">ValueHere</e1671:Location>
-              <e1671:Percentage>ValueHere</e1671:Percentage>
-            </e1671:KeywordLocation>
-          </e1671:KeywordLocations>
-        </e1671:KeywordLocationResult>
+      <KeywordLocationResult xmlns:e967="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e967:KeywordLocationResult>
+          <e967:Keyword d4p1:nil="false">ValueHere</e967:Keyword>
+          <e967:KeywordLocations d4p1:nil="false">
+            <e967:KeywordLocation>
+              <e967:Device d4p1:nil="false">ValueHere</e967:Device>
+              <e967:Location d4p1:nil="false">ValueHere</e967:Location>
+              <e967:Percentage>ValueHere</e967:Percentage>
+            </e967:KeywordLocation>
+          </e967:KeywordLocations>
+        </e967:KeywordLocationResult>
       </KeywordLocationResult>
     </GetKeywordLocationsResponse>
   </s:Body>

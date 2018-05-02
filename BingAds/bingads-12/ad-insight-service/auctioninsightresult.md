@@ -16,7 +16,7 @@ Defines an auction insight result.
 ```xml
 <xs:complexType name="AuctionInsightResult" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element minOccurs="0" name="Segment" nillable="true" type="tns:AuctionSegment" />
+    <xs:element minOccurs="0" name="Segments" nillable="true" type="tns:ArrayOfAuctionSegment" />
     <xs:element minOccurs="0" name="Entries" nillable="true" type="tns:ArrayOfAuctionInsightEntry" />
     <xs:element minOccurs="0" name="UsedImpressions" type="xs:double" />
     <xs:element minOccurs="0" name="UsedKeywords" type="xs:double" />
@@ -29,7 +29,7 @@ Defines an auction insight result.
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="entries"></a>Entries|Reserved.|[AuctionInsightEntry](auctioninsightentry.md) array|
-|<a name="segment"></a>Segment|Reserved.|[AuctionSegment](auctionsegment.md)|
+|<a name="segments"></a>Segments|Reserved.|[AuctionSegment](auctionsegment.md) array|
 |<a name="usedimpressions"></a>UsedImpressions|Reserved.|**double**|
 |<a name="usedkeywords"></a>UsedKeywords|Reserved.|**double**|
 

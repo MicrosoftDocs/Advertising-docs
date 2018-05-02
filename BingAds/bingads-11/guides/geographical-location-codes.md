@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Find out about geographical location codes supported with the Bing Ads API.
 ---
 # Geographical Location Codes
-Geographical locations data can be used to for [Location Targeting](show-ads-target-audience.md#locationcriterion) e.g. show ads to people in a specific country/region, state/province, county, metro area (Nielsen DMA® in the United States), postal code, or city. You can call the [GetGeoLocationsFileUrl](../campaign-management-service/getgeolocationsfileurl.md) operation to get a temporary file URL that can be used to download the latest geographical locations data. You can also get the data from the [Bing Ads Developer Portal](https://developers.azure.bingads.microsoft.com/Account). You must be signed in to the developer portal with a Microsoft account user who has Bing Ads credentials. 
+Geographical locations data can be used for [Location Targeting](show-ads-target-audience.md#locationcriterion) e.g. show ads to people in a specific country/region, state/province, county, metro area (Nielsen DMA® in the United States), postal code, or city. You can call the [GetGeoLocationsFileUrl](../campaign-management-service/getgeolocationsfileurl.md) operation to get a temporary file URL that can be used to download the latest geographical locations data. You can also get the data from the [Bing Ads Developer Portal](https://developers.azure.bingads.microsoft.com/Account). You must be signed in to the developer portal with a Microsoft account user who has Bing Ads credentials. 
 
 > [!NOTE]
 > As a best practice you should download the file instead of opening it directly through an application such as Microsoft Excel. If you view the locations data in a text editor, be sure to use UTF-8 encoding instead of ANSI, otherwise some characters will not be displayed accurately.
@@ -15,7 +15,7 @@ Geographical locations data can be used to for [Location Targeting](show-ads-tar
 For code examples that demonstrate how to download the geographical locations codes, see [Geographical Locations Code Example](code-example-geographical-locations.md).
 
 ## <a name="fileformat"></a>Location Codes File Format
-The comma separated value (CSV) file contains data organized in the following non-localized column headings. Only the Display Name and Descriptor columns are localized depending on the file URL used above.
+The comma separated value (CSV) file contains data organized in the following non-localized column headings. Only the Bing Display Name is localized depending on the file URL used above.
 
 > [!IMPORTANT]
 > New columns may be added at any time, so your implementation must ignore unknown columns.

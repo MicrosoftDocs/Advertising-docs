@@ -166,9 +166,6 @@ Supported values are *Zero*, *Fifteen*, *Thirty*, and *FortyFive*.
 ### <a name="id"></a>Id
 The Bing Ads unique identifier of the criterion.
 
-> [!NOTE] 
-> Previously with Campaign Management API version 10 it was possible to associate one target identifier with multiple campaigns and ad groups using the AddTargetsToLibrary, SetTargetToCampaign, and SetTargetToAdGroup operations. After a campaign or ad group had been disassociated from the shared target, the criterion identifier would be set to *0* (zero) in the Bulk download or Bulk upload result file. 
-
 **Add:** Read-only  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
@@ -193,7 +190,7 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status
-Represents the association status between the ad group and the criterion bid. If the criterion bid is set for the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
+Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
 
 **Add:** Read-only  
 **Update:** Optional  

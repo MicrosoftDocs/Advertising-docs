@@ -58,9 +58,9 @@ var bulkAdGroupNegativeLocationCriterion = new BulkAdGroupNegativeLocationCriter
     ClientId = "ClientIdGoesHere",
 
     // Map properties in the Bulk file to the 
-    // BiddableAdGroupCriterion object of the Campaign Management service.
+    // NegativeAdGroupCriterion object of the Campaign Management service.
 
-    AdGroupCriterion = new NegativeAdGroupCriterion
+    NegativeAdGroupCriterion = new NegativeAdGroupCriterion
     {
         // 'Parent Id' column header in the Bulk file
         AdGroupId = adGroupIdKey,
@@ -147,7 +147,7 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status
-Represents the association status between the ad group and the criterion bid. If the criterion bid is set for the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
+Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
 
 **Add:** Read-only  
 **Update:** Optional  
