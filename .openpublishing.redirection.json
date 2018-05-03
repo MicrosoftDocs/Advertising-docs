@@ -26,8 +26,8 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "BingAds/customer-management-service/addaccount.md",
-            "redirect_url": "advertiseraccount",
+            "source_path": "BingAds/guides/intent-ads.md",
+            "redirect_url": "audience-ads",
             "redirect_document_id": false
         }
     ]

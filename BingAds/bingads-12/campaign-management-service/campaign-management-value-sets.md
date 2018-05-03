@@ -19,7 +19,7 @@ The Campaign Management service defines the following value sets.
 |[AdGroupCriterionEditorialStatus](adgroupcriterioneditorialstatus.md)|Defines the editorial review status values of an ad group criterion.|
 |[AdGroupCriterionStatus](adgroupcriterionstatus.md)|Defines the possible ad group criterion status values.|
 |[AdGroupCriterionType](adgroupcriteriontype.md)|Defines the possible types of ad group criterions.|
-|[AdGroupPrivacyStatus](adgroupprivacystatus.md)|Reserved.|
+|[AdGroupPrivacyStatus](adgroupprivacystatus.md)|Defines possible values for ad group privacy status in Audience campaigns.|
 |[AdGroupStatus](adgroupstatus.md)|Defines the possible status values of an ad group.|
 |[AdRotationType](adrotationtype.md)|Defines the possible ad rotation types that you can apply to an ad group.|
 |[AdStatus](adstatus.md)|Defines the possible status values of an ad.|
@@ -32,7 +32,7 @@ The Campaign Management service defines the following value sets.
 |[BMCStoreSubType](bmcstoresubtype.md)|Reserved.|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible budget types that you can specify for a campaign.|
 |[BusinessGeoCodeStatus](businessgeocodestatus.md)|Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.|
-|[CallToAction](calltoaction.md)|Reserved.|
+|[CallToAction](calltoaction.md)|Defines the possible values for a brief, punchy reason for customers to click your ad right now.|
 |[CampaignCriterionStatus](campaigncriterionstatus.md)|Defines the possible campaign criterion status values.|
 |[CampaignCriterionType](campaigncriteriontype.md)|Defines the possible types of campaign criterions.|
 |[CampaignStatus](campaignstatus.md)|Defines the possible status values of a campaign.|
@@ -63,9 +63,9 @@ The Campaign Management service defines the following value sets.
 |[PriceExtensionType](priceextensiontype.md)|Defines the possible types of price ad extensions.|
 |[PriceQualifier](pricequalifier.md)|Defines price qualifiers for price ad extensions.|
 |[PriceUnit](priceunit.md)|Defines price units for price ad extensions.|
-|[ProductAudienceType](productaudiencetype.md)|Reserved.|
+|[ProductAudienceType](productaudiencetype.md)|Defines the possible types of product audiences.|
 |[ProductPartitionType](productpartitiontype.md)|Defines the possible types of product partitions.|
-|[ProfileType](profiletype.md)|Reserved.|
+|[ProfileType](profiletype.md)|Defines the possible types of profile criterions.|
 |[StringOperator](stringoperator.md)|Defines the operators that can be applied to remarketing list rule item string values.|
 |[UetTagTrackingStatus](uettagtrackingstatus.md)|Defines the possible system-determined status values of a UET tag.|
 |[ValueOperator](valueoperator.md)|Defines the operators that can be applied to values within a conversion event goal.|

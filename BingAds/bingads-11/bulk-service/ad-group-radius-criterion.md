@@ -223,7 +223,7 @@ If the *Radius Unit* field is set to *Kilometers*, then positive integer values 
 **Delete:** Read-only    
 
 ### <a name="status"></a>Status
-Represents the association status between the ad group and the criterion bid. If the criterion bid is set for the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
+Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
 
 **Add:** Read-only  
 **Update:** Optional  

@@ -24,7 +24,7 @@ The *GetAdGroupCriterionsByIdsRequest* object defines the [body](#request-body) 
 |<a name="adgroupcriterionids"></a>AdGroupCriterionIds|A list of unique identifiers that identify the criterions to get.<br/><br/>You can include up to 1,000 ad group criterion identifiers per request. <br /><br />If this element is null, all criterions for the specified *AdGroupId* will be retrieved.|**long** array|
 |<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that owns the criterions to get.|**long**|
 |<a name="criteriontype"></a>CriterionType|The type of criterion to get, for example *Webpage*. You can specify only one type. The *Targets* and *Audience* values are not allowed for this operation.|[AdGroupCriterionType](adgroupcriteriontype.md)|
-|<a name="returnagegenderunknownvalue"></a>ReturnAgeGenderUnknownValue|Reserved.|**boolean**|
+|<a name="returnagegenderunknownvalue"></a>ReturnAgeGenderUnknownValue|Determines whether or not to return ad group criterions where the [AgeRange](agerange.md) or [GenderType](gendertype.md) values are *Unknown*.<br/><br/>This element is deprecated and starting in Bing Ads API Version 12, the ad group criterions with unknown age and gender will be returned by default.<br/><br/>The unknown values are only applicable for ad groups in Audience campaigns.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

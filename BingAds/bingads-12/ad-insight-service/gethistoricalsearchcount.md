@@ -68,15 +68,15 @@ The following template shows the order of the [body](#request-body) and [header]
       <PublisherCountries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
         <a1:string>ValueHere</a1:string>
       </PublisherCountries>
-      <StartDate xmlns:e1655="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
-        <e1655:Day>ValueHere</e1655:Day>
-        <e1655:Month>ValueHere</e1655:Month>
-        <e1655:Year>ValueHere</e1655:Year>
+      <StartDate xmlns:e951="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
+        <e951:Day>ValueHere</e951:Day>
+        <e951:Month>ValueHere</e951:Month>
+        <e951:Year>ValueHere</e951:Year>
       </StartDate>
-      <EndDate xmlns:e1656="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
-        <e1656:Day>ValueHere</e1656:Day>
-        <e1656:Month>ValueHere</e1656:Month>
-        <e1656:Year>ValueHere</e1656:Year>
+      <EndDate xmlns:e952="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
+        <e952:Day>ValueHere</e952:Day>
+        <e952:Month>ValueHere</e952:Month>
+        <e952:Year>ValueHere</e952:Year>
       </EndDate>
       <TimePeriodRollup i:nil="false">ValueHere</TimePeriodRollup>
       <Devices i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
@@ -97,25 +97,25 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetHistoricalSearchCountResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordSearchCounts xmlns:e1657="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1657:KeywordSearchCount>
-          <e1657:Keyword d4p1:nil="false">ValueHere</e1657:Keyword>
-          <e1657:SearchCountsByAttributes d4p1:nil="false">
-            <e1657:SearchCountsByAttributes>
-              <e1657:Device d4p1:nil="false">ValueHere</e1657:Device>
-              <e1657:HistoricalSearchCounts d4p1:nil="false">
-                <e1657:HistoricalSearchCountPeriodic>
-                  <e1657:SearchCount>ValueHere</e1657:SearchCount>
-                  <e1657:DayMonthAndYear d4p1:nil="false">
-                    <e1657:Day>ValueHere</e1657:Day>
-                    <e1657:Month>ValueHere</e1657:Month>
-                    <e1657:Year>ValueHere</e1657:Year>
-                  </e1657:DayMonthAndYear>
-                </e1657:HistoricalSearchCountPeriodic>
-              </e1657:HistoricalSearchCounts>
-            </e1657:SearchCountsByAttributes>
-          </e1657:SearchCountsByAttributes>
-        </e1657:KeywordSearchCount>
+      <KeywordSearchCounts xmlns:e953="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e953:KeywordSearchCount>
+          <e953:Keyword d4p1:nil="false">ValueHere</e953:Keyword>
+          <e953:SearchCountsByAttributes d4p1:nil="false">
+            <e953:SearchCountsByAttributes>
+              <e953:Device d4p1:nil="false">ValueHere</e953:Device>
+              <e953:HistoricalSearchCounts d4p1:nil="false">
+                <e953:HistoricalSearchCountPeriodic>
+                  <e953:SearchCount>ValueHere</e953:SearchCount>
+                  <e953:DayMonthAndYear d4p1:nil="false">
+                    <e953:Day>ValueHere</e953:Day>
+                    <e953:Month>ValueHere</e953:Month>
+                    <e953:Year>ValueHere</e953:Year>
+                  </e953:DayMonthAndYear>
+                </e953:HistoricalSearchCountPeriodic>
+              </e953:HistoricalSearchCounts>
+            </e953:SearchCountsByAttributes>
+          </e953:SearchCountsByAttributes>
+        </e953:KeywordSearchCount>
       </KeywordSearchCounts>
     </GetHistoricalSearchCountResponse>
   </s:Body>

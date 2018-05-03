@@ -21,7 +21,7 @@ The *GetMediaMetaDataByAccountIdRequest* object defines the [body](#request-body
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediaenabledentities"></a>MediaEnabledEntities|Determines the type of media enabled entity to get meta data.|[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|
+|<a name="mediaenabledentities"></a>MediaEnabledEntities|Determines the type of media enabled entity to get meta data.<br /><br />Supported values are ImageAdExtension and ResponsiveAd.|[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

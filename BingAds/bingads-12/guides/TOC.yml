@@ -153,14 +153,14 @@
       href: ./ad-extensions.md
     - name: App Install Ads
       href: ./app-install-ads.md
+    - name: Audience Ads
+      href: ./audience-ads.md
     - name: Dynamic Search Ads
       href: ./dynamic-search-ads.md
     - name: Editorial Review and Appeals
       href: ./editorial-review-appeals.md
     - name: Expanded Text Ads
       href: ./expanded-text-ads.md
-    - name: Intent Ads
-      href: ./intent-ads.md
     - name: Product Ads
       href: ./product-ads.md
   - name: Reports
@@ -187,6 +187,8 @@
     href: ./geographical-location-codes.md
   - name: Operation Error Codes
     href: ./operation-error-codes.md
+  - name: Profile Data Files
+    href: ./profile-data-files.md
   - name: Time Zones
     href: ./time-zones.md
   - name: Version 12 Services
@@ -524,6 +526,9 @@
         - name: Ad Group Callout Ad Extension
           href: ../bulk-service/ad-group-callout-ad-extension.md
           displayName: BulkAdGroupCalloutAdExtension
+        - name: Ad Group Company Name Criterion
+          href: ../bulk-service/ad-group-company-name-criterion.md
+          displayName: BulkAdGroupCompanyNameCriterion
         - name: Ad Group Custom Audience Association
           href: ../bulk-service/ad-group-custom-audience-association.md
           displayName: BulkAdGroupCustomAudienceAssociation
@@ -542,9 +547,15 @@
         - name: Ad Group Image Ad Extension
           href: ../bulk-service/ad-group-image-ad-extension.md
           displayName: BulkAdGroupImageAdExtension
+        - name: Ad Group Industry Criterion
+          href: ../bulk-service/ad-group-industry-criterion.md
+          displayName: BulkAdGroupIndustryCriterion
         - name: Ad Group In Market Audience Association
           href: ../bulk-service/ad-group-in-market-audience-association.md
           displayName: BulkAdGroupInMarketAudienceAssociation
+        - name: Ad Group Job Function Criterion
+          href: ../bulk-service/ad-group-job-function-criterion.md
+          displayName: BulkAdGroupJobFunctionCriterion
         - name: Ad Group Label
           href: ../bulk-service/ad-group-label.md
           displayName: BulkAdGroupLabel
@@ -554,21 +565,39 @@
         - name: Ad Group Location Intent Criterion
           href: ../bulk-service/ad-group-location-intent-criterion.md
           displayName: BulkAdGroupLocationIntentCriterion
+        - name: Ad Group Negative Age Criterion
+          href: ../bulk-service/ad-group-negative-age-criterion.md
+          displayName: BulkAdGroupNegativeAgeCriterion
+        - name: Ad Group Negative Company Name Criterion
+          href: ../bulk-service/ad-group-negative-company-name-criterion.md
+          displayName: BulkAdGroupNegativeCompanyNameCriterion
+        - name: Ad Group Negative Gender Criterion
+          href: ../bulk-service/ad-group-negative-gender-criterion.md
+          displayName: BulkAdGroupNegativeGenderCriterion
         - name: Ad Group Negative Custom Audience Association
           href: ../bulk-service/ad-group-negative-custom-audience-association.md
           displayName: BulkAdGroupNegativeCustomAudienceAssociation
         - name: Ad Group Negative Dynamic Search Ad Target
           href: ../bulk-service/ad-group-negative-dynamic-search-ad-target.md
           displayName: BulkAdGroupNegativeDynamicSearchAdTarget
+        - name: Ad Group Negative Industry Criterion
+          href: ../bulk-service/ad-group-negative-industry-criterion.md
+          displayName: BulkAdGroupNegativeIndustryCriterion
         - name: Ad Group Negative In Market Audience Association
           href: ../bulk-service/ad-group-negative-in-market-audience-association.md
           displayName: BulkAdGroupNegativeInMarketAudienceAssociation
+        - name: Ad Group Negative Job Function Criterion
+          href: ../bulk-service/ad-group-negative-job-function-criterion.md
+          displayName: BulkAdGroupNegativeJobFunctionCriterion
         - name: Ad Group Negative Location Criterion
           href: ../bulk-service/ad-group-negative-location-criterion.md
           displayName: BulkAdGroupNegativeLocationCriterion
         - name: Ad Group Negative Keyword
           href: ../bulk-service/ad-group-negative-keyword.md
           displayName: BulkAdGroupNegativeKeyword
+        - name: Ad Group Negative Product Audience Association
+          href: ../bulk-service/ad-group-negative-product-audience-association.md
+          displayName: BulkAdGroupNegativeProductAudienceAssociation
         - name: Ad Group Negative Site
           href: ../bulk-service/ad-group-negative-site.md
           displayName: BulkAdGroupNegativeSite
@@ -578,6 +607,9 @@
         - name: Ad Group Price Ad Extension
           href: ../bulk-service/ad-group-price-ad-extension.md
           displayName: BulkAdGroupPriceAdExtension
+        - name: Ad Group Product Audience Association
+          href: ../bulk-service/ad-group-product-audience-association.md
+          displayName: BulkAdGroupProductAudienceAssociation
         - name: Ad Group Product Partition
           href: ../bulk-service/ad-group-product-partition.md
           displayName: BulkAdGroupProductPartition
@@ -745,9 +777,18 @@
         - name: Product Ad Label
           href: ../bulk-service/product-ad-label.md
           displayName: BulkProductAdLabel
+        - name: Product Audience
+          href: ../bulk-service/product-audience.md
+          displayName: BulkProductAudience
         - name: Remarketing List
           href: ../bulk-service/remarketing-list.md
           displayName: BulkRemarketingList
+        - name: Responsive Ad
+          href: ../bulk-service/responsive-ad.md
+          displayName: BulkResponsiveAd
+        - name: Responsive Ad Label
+          href: ../bulk-service/responsive-ad-label.md
+          displayName: BulkResponsiveAdLabel
         - name: Review Ad Extension
           href: ../bulk-service/review-ad-extension.md
           displayName: BulkReviewAdExtension

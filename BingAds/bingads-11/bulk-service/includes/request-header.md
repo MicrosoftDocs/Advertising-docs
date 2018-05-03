@@ -8,7 +8,7 @@
 |UserName|The Bing Ads managed user's sign-in name. You must not set this element to a Microsoft account or email address.|**string**|
 
 > [!IMPORTANT]
-> The UserName and Password header elements are deprecated. In future versions of the API, Bing Ads will transition exclusively to Microsoft Account (email address) authentication. For more information, see [Authentication with OAuth](../../guides/authentication-oauth.md). UserName and Password are still required for Bing Ads managed credentials, but they are not applicable for Microsoft account authentication. To authenticate a Microsoft account, use the AuthenticationToken] header instead of UserName and Password.  
+> The UserName and Password header elements are deprecated in favor of the AuthenticationToken header i.e., [Authentication with OAuth](../../guides/authentication-oauth.md). As of August 1st, 2018, all Bing Ads API Version 11 service calls with managed UserName and Password credentials will return an error. Bing Ads API Version 12 already does not accept the managed user credentials. In a future version of the API, the UserName and Password header elements will be removed from the service definitions.
 
 > [!NOTE]
 > The CustomerAccountId and CustomerId are required for most service operations, and as a best practice you should always specify them in the request.  
