@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines possible values for ad group privacy status in Audience campaigns.
 ---
 # AdGroupPrivacyStatus Value Set - Campaign Management
-Reserved.
+Defines possible values for ad group privacy status in Audience campaigns.
 
 ## Syntax
 ```xml
@@ -25,10 +25,10 @@ Reserved.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="active"></a>Active|Reserved.|
-|<a name="pending"></a>Pending|Reserved.|
-|<a name="targetingtoonarrow"></a>TargetingTooNarrow|Reserved.|
-|<a name="unknown"></a>Unknown|Reserved.|
+|<a name="active"></a>Active|The ad group is eligible to serve.|
+|<a name="pending"></a>Pending|The privacy evaluation is still in progress, and the ad group is not yet eligible to serve.|
+|<a name="targetingtoonarrow"></a>TargetingTooNarrow|The ad group is not eligible to serve because your ad group target criteria e.g., [ProfileCriterion](profilecriterion.md) are too narrowly defined. Update your target criteria or remarketing lists to broaden your audience and increase estimated unique users.|
+|<a name="unknown"></a>Unknown|Reserved for future use.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

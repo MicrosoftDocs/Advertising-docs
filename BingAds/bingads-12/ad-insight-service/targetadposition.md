@@ -24,9 +24,9 @@ Defines the possible positions where you can target an ad to appear in the searc
 
 |Value|Description|
 |-----------|---------------|
+|<a name="firstpage"></a>FirstPage|Target any position on the right side of the search results page.|
 |<a name="mainline"></a>MainLine|Target the second, third, and fourth positions at the top of the search results page.|
 |<a name="mainline1"></a>MainLine1|Target the first position at the top of the search results page.|
-|<a name="firstpage"></a>FirstPage|Target any position on the right side of the search results page.|
 
 ## Requirements
 Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  

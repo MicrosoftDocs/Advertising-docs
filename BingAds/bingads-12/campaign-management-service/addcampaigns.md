@@ -14,6 +14,9 @@ dev_langs:
 # AddCampaigns Service Operation - Campaign Management
 Adds one or more campaigns to the specified account.
 
+> [!NOTE]
+> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
+
 ## <a name="request"></a>Request Elements
 The *AddCampaignsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 

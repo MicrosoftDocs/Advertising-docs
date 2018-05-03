@@ -31,7 +31,7 @@ Elements of this object are defined in the Bing Merchant Center store, and read-
 |<a name="hascatalog"></a>HasCatalog|Value will be true if the store has a catalog of items, and otherwise the value is false.|**boolean**|
 |<a name="id"></a>Id|The unique identifier for the  Bing Merchant Center store.|**long**|
 |<a name="isactive"></a>IsActive|Value will be true if the store is active, and otherwise the value is false.|**boolean**|
-|<a name="isproductadsenabled"></a>IsProductAdsEnabled|Value will be true if the store is enabled for product ads in Bing Ads, and otherwise the value is false.|**boolean**|
+|<a name="isproductadsenabled"></a>IsProductAdsEnabled|Reserved for internal use.|**boolean**|
 |<a name="name"></a>Name|Defines the name of the store as defined in the Bing Merchant Center.|**string**|
 
 ## Requirements

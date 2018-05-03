@@ -16,11 +16,11 @@ Defines an object that contains a suggested keyword with historical statistics, 
     <xs:element minOccurs="0" name="AdGroupId" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="AdGroupName" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="AdImpressionShare" nillable="true" type="xs:double" />
-    <xs:element minOccurs="0" name="Competition" nillable="true" type="q1:CompetitionLevel" xmlns:q1="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
+    <xs:element minOccurs="0" name="Competition" nillable="true" type="q2:CompetitionLevel" xmlns:q2="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
     <xs:element minOccurs="0" name="Keyword" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="MonthlySearchCounts" nillable="true" type="q2:ArrayOflong" xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="MonthlySearchCounts" nillable="true" type="q3:ArrayOflong" xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="Relevance" nillable="true" type="xs:double" />
-    <xs:element minOccurs="0" name="Source" nillable="true" type="q3:SourceType" xmlns:q3="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
+    <xs:element minOccurs="0" name="Source" nillable="true" type="q4:SourceType" xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
     <xs:element minOccurs="0" name="SuggestedBid" nillable="true" type="xs:double" />
   </xs:sequence>
 </xs:complexType>

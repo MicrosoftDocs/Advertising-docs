@@ -29,6 +29,7 @@ For an *Ad Group* record, the following attribute fields are available in the [B
 - [Modified Time](#modifiedtime)
 - [Network Distribution](#networkdistribution)
 - [Parent Id](#parentid)
+- [Privacy Status](#privacystatus)
 - [Search Network](#searchnetwork)
 - [Start Date](#startdate)
 - [Status](#status)
@@ -69,6 +70,8 @@ var bulkAdGroup = new BulkAdGroup
         {
             Type = AdRotationType.RotateAdsEvenly
         },
+        // 'Bid Adjustment' column header in the Bulk file
+        AudienceAdsBidAdjustment = 10,
         // 'Bid Strategy Type' column header in the Bulk file
         BiddingScheme = new ManualCpcBiddingScheme { },
         // 'Cpc Bid' column header in the Bulk file
@@ -89,10 +92,10 @@ var bulkAdGroup = new BulkAdGroup
         Language = "English",
         // 'Ad Group' column header in the Bulk file
         Name = "Women's Red Shoe Sale",
-        // 'Bid Adjustment' column header in the Bulk file
-        AudienceAdsBidAdjustment = 10,
         // 'Network Distribution' column header in the Bulk file
         Network = Network.OwnedAndOperatedAndSyndicatedSearch,
+        // 'Privacy Status' column header in the Bulk file
+        PrivacyStatus = null,
         // 'Target Setting' column header in the Bulk file
         Settings = new []
         {
@@ -295,10 +298,14 @@ Your ad language setting determines the language you will use when you write you
 
 For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage).
 
+For ad groups in Dynamic Search Ads campaigns, only *English* is supported.
+
+For ad groups in Audience campaigns, ad group level language is not supported, and you must set the [Language](campaign.md#language) field of the ad group's [Campaign](#campaign.md) to *All*.
+
 > [!IMPORTANT]
 > Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language by setting this field to *delete_value*. The *delete_value* keyword removes the previous setting. If you leave this field nil, then the ad group language will not be updated. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. 
 
-**Add:** Optional if the campaign has one or more languages set, and otherwise language is required.  
+**Add:** Optional if the campaign has one or more languages set, and otherwise the language is required for most campaign types. You are not allowed to set this element for ad groups in Audience campaigns.  
 **Update:** Optional if the customer is in the *Campaign Languages* pilot, and otherwise update is not allowed. If you are not in the pilot and try to change the language during update, no error will be returned and the setting will not be changed.  
 **Delete:** Read-only  
 
@@ -317,6 +324,8 @@ The search networks where you want your ads to display.
 
 Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly*, and *SyndicatedSearchOnly*. The default is *OwnedAndOperatedAndSyndicatedSearch*. For more information about networks and ad distribution, see the [About Ad Distribution](http://help.bingads.microsoft.com/#apex/3/en/50871/0) help article.
 
+For ad groups in Audience campaigns, ad group level network is not supported and this field will be empty. The ad groups are in the Microsoft Audience Network.
+
 If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](../campaign-management-service/setnegativesitestoadgroups.md) or [SetNegativeSitesToCampaigns](../campaign-management-service/setnegativesitestocampaigns.md) operation to prevent the ads from displaying on specific syndicated search websites.
 
 **Add:** Optional. The default is *OwnedAndOperatedAndSyndicatedSearch*.  
@@ -334,7 +343,20 @@ This bulk field maps to the *Id* field of the [Camnpaign](campaign.md) record.
 
 > [!NOTE]
 > For add, update, and delete, you must specify either the *Parent Id* or *Campaign* field.
-  
+
+### <a name="privacystatus"></a>Privacy Status
+Indicates whether or not your ad group target criteria are too narrow for ad groups in Audience campaigns.
+
+|Status|Description|
+|-----|-----|
+|<a name="active"></a>Active|The ad group is eligible to serve.|
+|<a name="pending"></a>Pending|The privacy evaluation is still in progress, and the ad group is not yet eligible to serve.|
+|<a name="targetingtoonarrow"></a>TargetingTooNarrow|The ad group is not eligible to serve because your ad group target criteria e.g., [Ad Group Company Name Criterion](ad-group-company-name-criterion.md) are too narrowly defined. Update your target criteria or remarketing lists to broaden your audience and increase estimated unique users.|
+
+**Add:** Read-only  
+**Update:** Read-only  
+**Delete:** Read-only  
+
 ### <a name="targetsetting"></a>Target Setting
 The target settings that are applicable for criterion types e.g., audiences that are associated with this ad group. 
 

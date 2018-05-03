@@ -17,10 +17,14 @@ Defines a custom audience that can be downloaded and uploaded in a bulk file.
 > [!NOTE]
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
 
+> [!TIP]
+> For an overview of custom audiences see the [What are custom audiences and how do I set it up?](https://help.bingads.microsoft.com/#apex/3/en/56849/-1) help topic.
+
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Custom Audience* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Audience](#audience)
+- [Audience Network Size](#audiencenetworksize)
 - [Audience Search Size](#audiencesearchsize)
 - [Client Id](#clientid)
 - [Description](#description)
@@ -30,15 +34,16 @@ For a *Custom Audience* record, the following attribute fields are available in 
 - [Parent Id](#parentid)
 - [Scope](#scope)
 - [Status](#status)
+- [Supported Campaign Types](#supportedcampaigntypes)
 
 You can download all fields of the *Custom Audience* record by including the [DownloadEntity](downloadentity.md) value of *CustomAudiences* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would update the description and membership duration of a custom audience. 
 
 ```csv
-Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Membership Duration,Scope,Audience,Remarketing Targeting Setting,
-Format Version,,,,,,5,,,,,
-Custom Audience,Active,IdHere,ParentIdHere,ClientIdGoesHere,,,Updated Custom Audience Description,30,Account,Custom Audience,,
+Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Membership Duration,Scope,Audience,
+Format Version,,,,,,5,,,,
+Custom Audience,Active,IdHere,ParentIdHere,ClientIdGoesHere,,,Updated Custom Audience Description,30,Account,Custom Audience,
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCustomAudience* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -57,6 +62,8 @@ var bulkCustomAudience = new BulkCustomAudience
     // CustomAudience object of the Campaign Management service.
     CustomAudience = new CustomAudience
     {
+        // 'Audience Network Size' column header in the Bulk file
+        AudienceNetworkSize = null,
         // 'Description' column header in the Bulk file
         Description = "Updated Custom Audience Description",
         // 'Id' column header in the Bulk file
@@ -69,6 +76,10 @@ var bulkCustomAudience = new BulkCustomAudience
         ParentId = accountIdKey,
         // 'Scope' column header in the Bulk file
         Scope = null,
+        // 'Audience Search Size' column header in the Bulk file
+        SearchSize = null,
+        // 'Supported Campaign Types' column header in the Bulk file
+        SupportedCampaignTypes = null,
     },
                 
     // 'Status' column header in the Bulk file
@@ -98,14 +109,23 @@ The name can contain a maximum of 128 characters
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
+### <a name="audiencenetworksize"></a>Audience Network Size
+The total number of people who belong to this audience in the Audience network i.e., via Audience campaigns. This gives you an idea of how many Audience network users you can target.
+
+The audience needs to have at least 300 people before Bing Ads will use it for optimizations.
+
+**Add:** Not supported  
+**Update:** Read-only    
+**Delete:** Read-only  
+
 ### <a name="audiencesearchsize"></a>Audience Search Size
-The total number of people who belong to this audience. This gives you an idea of how many search users you can target.
+The total number of people who belong to this audience in the Search network. This gives you an idea of how many search users you can target.
 
 The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
 
 This property will be empty for up to 24 hours while the audience is being built, for example if you have imported new custom audiences from DMP, it takes 24 hours to build the audience, and in the meantime this property will be empty.
 
-**Add:** Read-only  
+**Add:** Not supported  
 **Update:** Read-only    
 **Delete:** Read-only  
 
@@ -174,3 +194,11 @@ Possible values are *Active* or *Deleted*.
 **Update:** Read-only    
 **Delete:** Required. The Status must be set to *Deleted*.  
 
+### <a name="supportedcampaigntypes"></a>Supported Campaign Types
+The semicolon delimited list of campaign types that support this custom audience.
+
+Supported values are Audience, DynamicSearchAds, Search, and Shopping. New campaign types might be added in the future, so you should not take any dependency on a fixed set of values.
+
+**Add:** Not supported  
+**Update:** Read-only    
+**Delete:** Read-only

@@ -9300,6 +9300,61 @@ InvalidAudienceAdsBidAdjustmentValue
 The audience ads bid adjustment is invalid.
 
 ***
+
+**Numeric Code**
+4410
+
+**Symbolic Error Code**
+InvalidHeader
+
+**Description**
+Header is invalid.
+
+***
+
+**Numeric Code**
+4411
+
+**Symbolic Error Code**
+InvalidStructuredSnippetCharacter
+
+**Description**
+Structured Snippet values do not support commas or semicolons.
+
+***
+
+**Numeric Code**
+4412
+
+**Symbolic Error Code**
+TooManyStructuredSnippetText
+
+**Description**
+Too many structured snippet texts.
+
+***
+
+**Numeric Code**
+4413
+
+**Symbolic Error Code**
+TooFewStructuredSnippetText
+
+**Description**
+Too few structured snippet text.
+
+***
+
+**Numeric Code**
+4415
+
+**Symbolic Error Code**
+ValueImmutable
+
+**Description**
+Value cannot be updated.
+
+***
 ## 4500
 ***
 

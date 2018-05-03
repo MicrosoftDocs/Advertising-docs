@@ -78,18 +78,18 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBidOpportunitiesResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <Opportunities xmlns:e1645="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1645:BidOpportunity>
-          <e1645:AdGroupId>ValueHere</e1645:AdGroupId>
-          <e1645:CampaignId>ValueHere</e1645:CampaignId>
-          <e1645:CurrentBid>ValueHere</e1645:CurrentBid>
-          <e1645:EstimatedIncreaseInClicks>ValueHere</e1645:EstimatedIncreaseInClicks>
-          <e1645:EstimatedIncreaseInCost>ValueHere</e1645:EstimatedIncreaseInCost>
-          <e1645:EstimatedIncreaseInImpressions>ValueHere</e1645:EstimatedIncreaseInImpressions>
-          <e1645:KeywordId>ValueHere</e1645:KeywordId>
-          <e1645:MatchType d4p1:nil="false">ValueHere</e1645:MatchType>
-          <e1645:SuggestedBid>ValueHere</e1645:SuggestedBid>
-        </e1645:BidOpportunity>
+      <Opportunities xmlns:e941="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e941:BidOpportunity>
+          <e941:AdGroupId>ValueHere</e941:AdGroupId>
+          <e941:CampaignId>ValueHere</e941:CampaignId>
+          <e941:CurrentBid>ValueHere</e941:CurrentBid>
+          <e941:EstimatedIncreaseInClicks>ValueHere</e941:EstimatedIncreaseInClicks>
+          <e941:EstimatedIncreaseInCost>ValueHere</e941:EstimatedIncreaseInCost>
+          <e941:EstimatedIncreaseInImpressions>ValueHere</e941:EstimatedIncreaseInImpressions>
+          <e941:KeywordId>ValueHere</e941:KeywordId>
+          <e941:MatchType d4p1:nil="false">ValueHere</e941:MatchType>
+          <e941:SuggestedBid>ValueHere</e941:SuggestedBid>
+        </e941:BidOpportunity>
       </Opportunities>
     </GetBidOpportunitiesResponse>
   </s:Body>

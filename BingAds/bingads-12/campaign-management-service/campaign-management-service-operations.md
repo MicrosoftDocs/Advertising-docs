@@ -70,7 +70,7 @@ The Campaign Management service defines the following service operations.
 |[GetConversionGoalsByIds](getconversiongoalsbyids.md)|Gets the specified conversion goals.|100 *ConversionGoalIds*|
 |[GetConversionGoalsByTagIds](getconversiongoalsbytagids.md)|Gets the conversion goals that use the specified UET tags.|100 *TagIds*|
 |[GetEditorialReasonsByIds](geteditorialreasonsbyids.md)|Gets the reasons why the specified entities failed editorial review and whether the rejection is appealable.|1 *AccountId*<br /><br />1,000 *EntityIdToParentIdAssociations*|
-|[GetGeoLocationsFileUrl](getgeolocationsfileurl.md)|Gets a temporary URL that you can use to download a file that contains the supported geographical location targeting codes.|Not applicable.|
+|[GetGeoLocationsFileUrl](getgeolocationsfileurl.md)|Gets a temporary URL that you can use to download a file that contains identifiers for the geographical locations that you can target or exclude.|Not applicable.|
 |[GetKeywordsByAdGroupId](getkeywordsbyadgroupid.md)|Gets the keywords within an ad group.|1 *AdGroupId*|
 |[GetKeywordsByEditorialStatus](getkeywordsbyeditorialstatus.md)|Retrieves the keywords with the specified editorial review status.|1 *AdGroupId*|
 |[GetKeywordsByIds](getkeywordsbyids.md)|Retrieves the specified keywords.|1 *AdGroupId*<br /><br />1,000 *KeywordIds*|
@@ -84,7 +84,7 @@ The Campaign Management service defines the following service operations.
 |[GetNegativeKeywordsByEntityIds](getnegativekeywordsbyentityids.md)|Gets the negative keywords that are only associated with the specified campaigns or ad groups.|1 *ParentEntityId*<br /><br />1 *EntityIds*|
 |[GetNegativeSitesByAdGroupIds](getnegativesitesbyadgroupids.md)|Gets the negative site URLs of the specified ad groups.|15 *AdGroupIds*<br /><br />1 *CampaignId*|
 |[GetNegativeSitesByCampaignIds](getnegativesitesbycampaignids.md)|Gets the negative site URLs of the specified campaigns.|1 *AccountId*<br /><br />15 *CampaignIds*|
-|[GetProfileDataFileUrl](getprofiledatafileurl.md)|Reserved.|Not applicable.|
+|[GetProfileDataFileUrl](getprofiledatafileurl.md)|Gets a temporary URL that you can use to download company name, industry, or job function profile data.|Not applicable.|
 |[GetSharedEntitiesByAccountId](getsharedentitiesbyaccountid.md)|Gets the negative keyword lists from the account's library.|Not applicable.|
 |[GetSharedEntityAssociationsByEntityIds](getsharedentityassociationsbyentityids.md)|Gets negative keyword list associations for the specified campaigns.|100 *EntityIds*|
 |[GetSharedEntityAssociationsBySharedEntityIds](getsharedentityassociationsbysharedentityids.md)|Gets shared entity associations for the specified negative keyword lists.|1 *SharedEntityIds*|

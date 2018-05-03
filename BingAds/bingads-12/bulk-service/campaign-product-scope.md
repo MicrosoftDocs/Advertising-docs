@@ -187,7 +187,7 @@ The condition’s attribute value.
 
 An attribute’s value must exactly match the value specified in the customer’s Bing Merchant Center catalog file.
 
-For available condition and value settings, see [Bing Shopping Product Conditions](../guides/product-ads.md#conditions).
+For available condition and values in Bing Shopping campaigns, see [Product Conditions for Bing Shopping Campaigns](../guides/product-ads.md#productconditions). For supported attribute and operand values in Audience campaigns, see [Product Conditions for Audience Campaigns](../guides/audience-ads.md#productconditions).
 
 **Add:** Required  
 **Update:** Read-only. You cannot update the condition or value fields. To update the conditions you must delete the product scope and add a new one.    

@@ -21,7 +21,7 @@ The Campaign Management service defines the following value sets.
 |[AdGroupCriterionEditorialStatus](adgroupcriterioneditorialstatus.md)|Defines the editorial review status values of an ad group criterion.|
 |[AdGroupCriterionStatus](adgroupcriterionstatus.md)|Defines the possible ad group criterion status values.|
 |[AdGroupCriterionType](adgroupcriteriontype.md)|Defines the possible types of ad group criterions.|
-|[AdGroupPrivacyStatus](adgroupprivacystatus.md)|Reserved.|
+|[AdGroupPrivacyStatus](adgroupprivacystatus.md)|Defines possible values for ad group privacy status in Audience campaigns.|
 |[AdGroupStatus](adgroupstatus.md)|Defines the possible status values of an ad group.|
 |[AdRotationType](adrotationtype.md)|Defines the possible ad rotation types that you can apply to an ad group.|
 |[AdStatus](adstatus.md)|Defines the possible status values of an ad.|
@@ -35,7 +35,7 @@ The Campaign Management service defines the following value sets.
 |[BMCStoreSubType](bmcstoresubtype.md)|Reserved.|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible budget types that you can specify for a campaign.|
 |[BusinessGeoCodeStatus](businessgeocodestatus.md)|Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.|
-|[CallToAction](calltoaction.md)|Reserved.|
+|[CallToAction](calltoaction.md)|Defines the possible values for a brief, punchy reason for customers to click your ad right now.|
 |[CampaignCriterionStatus](campaigncriterionstatus.md)|Defines the possible campaign criterion status values.|
 |[CampaignCriterionType](campaigncriteriontype.md)|Defines the possible types of campaign criterions.|
 |[CampaignStatus](campaignstatus.md)|Defines the possible status values of a campaign.|
@@ -45,7 +45,7 @@ The Campaign Management service defines the following value sets.
 |[ConversionGoalStatus](conversiongoalstatus.md)|Defines the possible user-determined status values of a conversion goal.|
 |[ConversionGoalTrackingStatus](conversiongoaltrackingstatus.md)|Defines the possible system-determined status values of a conversion goal.|
 |[ConversionGoalType](conversiongoaltype.md)|Defines the current possible types of conversion goals.|
-|[CriterionTypeGroup](criteriontypegroup.md)|Reserved.|
+|[CriterionTypeGroup](criteriontypegroup.md)|The type used to group criterions.|
 |[Day](day.md)|Defines the day values that you can specify for day and time criterion.|
 |[DistanceUnit](distanceunit.md)|Defines the possible distance units of a geographical location.|
 |[EntityScope](entityscope.md)|Defines values that you can use to determine whether the remarketing list can only be associated with ad groups within one specified account, or can be associated with any ad groups across all of the customer's accounts.|
@@ -67,9 +67,9 @@ The Campaign Management service defines the following value sets.
 |[PriceQualifier](pricequalifier.md)|Defines price qualifiers for price ad extensions.|
 |[PriceUnit](priceunit.md)|Defines price units for price ad extensions.|
 |[PricingModel](pricingmodel.md)|Defines the pricing model for an ad group.|
-|[ProductAudienceType](productaudiencetype.md)|Reserved.|
+|[ProductAudienceType](productaudiencetype.md)|Defines the possible types of product audiences.|
 |[ProductPartitionType](productpartitiontype.md)|Defines the possible types of product partitions.|
-|[ProfileType](profiletype.md)|Reserved.|
+|[ProfileType](profiletype.md)|Defines the possible types of profile criterions.|
 |[RemarketingTargetingSetting](remarketingtargetingsetting.md)|The targeting setting that is applicable for all audiences e.g., custom audiences and remarketing lists that are associated with this ad group.|
 |[StringOperator](stringoperator.md)|Defines the operators that can be applied to remarketing list rule item string values.|
 |[UetTagTrackingStatus](uettagtrackingstatus.md)|Defines the possible system-determined status values of a UET tag.|

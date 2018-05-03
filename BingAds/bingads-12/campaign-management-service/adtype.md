@@ -33,7 +33,7 @@ Defines the type of ad.
 |<a name="expandedtext"></a>ExpandedText|Refers to an [ExpandedTextAd](expandedtextad.md).|
 |<a name="image"></a>Image|Reserved for future use.|
 |<a name="product"></a>Product|Refers to a [ProductAd](productad.md).|
-|<a name="responsivead"></a>ResponsiveAd|Reserved.|
+|<a name="responsivead"></a>ResponsiveAd|Refers to a [ResponsiveAd](responsivead.md).|
 |<a name="text"></a>Text|Refers to a [TextAd](textad.md).|
 
 ## Requirements

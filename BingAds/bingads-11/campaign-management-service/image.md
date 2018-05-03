@@ -67,6 +67,9 @@ The following restrictions apply to [Media](media.md) types (aspect ratios) that
 ### <a name="responsivead"></a>Responsive Ad Image Media
 The following restrictions apply to [Media](media.md) types (aspect ratios) that will be used with a [ResponsiveAd](responsivead.md).
 
+> [!NOTE]
+> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
+
 |Responsive Ad Property|Media Type|Dimensions in pixels|
 |--------|--------|--------|--------|
 |[LandscapeImageMediaId](responsivead.md#landscapeimagemediaid)|*Image191x100*|**Minimum:** 600 width x 314 height<br/>**Maximum:** Aspect radio 1.91:1 up to the maximum file size of 1MB.<br/>**Recommended:** 1200 width x 628 height|

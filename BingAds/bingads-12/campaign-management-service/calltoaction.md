@@ -4,10 +4,12 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the possible values for a brief, punchy reason for customers to click your ad right now.
 ---
 # CallToAction Value Set - Campaign Management
-Reserved.
+Defines the possible values for a brief, punchy reason for customers to click your ad right now.
+
+Each of the values correspond to a friendly and readable call to action in a responsive ad. 
 
 ## Syntax
 ```xml
@@ -42,27 +44,27 @@ Reserved.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="addtocart"></a>AddToCart|Reserved.|
-|<a name="applynow"></a>ApplyNow|Reserved.|
-|<a name="booknow"></a>BookNow|Reserved.|
-|<a name="booktravel"></a>BookTravel|Reserved.|
-|<a name="buy"></a>Buy|Reserved.|
-|<a name="buynow"></a>BuyNow|Reserved.|
-|<a name="contactus"></a>ContactUs|Reserved.|
-|<a name="download"></a>Download|Reserved.|
-|<a name="getquote"></a>GetQuote|Reserved.|
-|<a name="install"></a>Install|Reserved.|
-|<a name="learnmore"></a>LearnMore|Reserved.|
-|<a name="nobutton"></a>NoButton|Reserved.|
-|<a name="openlink"></a>OpenLink|Reserved.|
-|<a name="ordernow"></a>OrderNow|Reserved.|
-|<a name="registernow"></a>RegisterNow|Reserved.|
-|<a name="seemore"></a>SeeMore|Reserved.|
-|<a name="shopnow"></a>ShopNow|Reserved.|
-|<a name="signup"></a>SignUp|Reserved.|
-|<a name="subscribe"></a>Subscribe|Reserved.|
-|<a name="unknown"></a>Unknown|Reserved.|
-|<a name="visitsite"></a>VisitSite|Reserved.|
+|<a name="addtocart"></a>AddToCart|The corresponding call to action in the ad.|
+|<a name="applynow"></a>ApplyNow|The corresponding call to action in the ad.|
+|<a name="booknow"></a>BookNow|The corresponding call to action in the ad.|
+|<a name="booktravel"></a>BookTravel|The corresponding call to action in the ad.|
+|<a name="buy"></a>Buy|The corresponding call to action in the ad.|
+|<a name="buynow"></a>BuyNow|The corresponding call to action in the ad.|
+|<a name="contactus"></a>ContactUs|The corresponding call to action in the ad.|
+|<a name="download"></a>Download|The corresponding call to action in the ad.|
+|<a name="getquote"></a>GetQuote|The corresponding call to action in the ad.|
+|<a name="install"></a>Install|The corresponding call to action in the ad.|
+|<a name="learnmore"></a>LearnMore|The corresponding call to action in the ad.|
+|<a name="nobutton"></a>NoButton|The corresponding call to action in the ad.|
+|<a name="openlink"></a>OpenLink|The corresponding call to action in the ad.|
+|<a name="ordernow"></a>OrderNow|The corresponding call to action in the ad.|
+|<a name="registernow"></a>RegisterNow|The corresponding call to action in the ad.|
+|<a name="seemore"></a>SeeMore|The corresponding call to action in the ad.|
+|<a name="shopnow"></a>ShopNow|The corresponding call to action in the ad.|
+|<a name="signup"></a>SignUp|The corresponding call to action in the ad.|
+|<a name="subscribe"></a>Subscribe|The corresponding call to action in the ad.|
+|<a name="unknown"></a>Unknown|The corresponding call to action in the ad.|
+|<a name="visitsite"></a>VisitSite|The corresponding call to action in the ad.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
