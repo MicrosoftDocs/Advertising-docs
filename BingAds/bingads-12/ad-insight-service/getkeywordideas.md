@@ -63,80 +63,80 @@ The following template shows the order of the [body](#request-body) and [header]
       <IdeaAttributes i:nil="false">
         <KeywordIdeaAttribute>ValueHere</KeywordIdeaAttribute>
       </IdeaAttributes>
-      <SearchParameters xmlns:e1661="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.SearchParameters" i:nil="false">
-        <e1661:SearchParameter i:type="-- derived type specified here with the appropriate prefix --">
+      <SearchParameters xmlns:e957="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.SearchParameters" i:nil="false">
+        <e957:SearchParameter i:type="-- derived type specified here with the appropriate prefix --">
           <!--This field is applicable if the derived type attribute is set to QuerySearchParameter-->
-          <e1661:Queries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <e957:Queries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
-          </e1661:Queries>
+          </e957:Queries>
           <!--This field is applicable if the derived type attribute is set to UrlSearchParameter-->
-          <e1661:Url i:nil="false">ValueHere</e1661:Url>
+          <e957:Url i:nil="false">ValueHere</e957:Url>
           <!--This field is applicable if the derived type attribute is set to CategorySearchParameter-->
-          <e1661:CategoryId>ValueHere</e1661:CategoryId>
+          <e957:CategoryId>ValueHere</e957:CategoryId>
           <!--These fields are applicable if the derived type attribute is set to SearchVolumeSearchParameter-->
-          <e1661:Maximum i:nil="false">ValueHere</e1661:Maximum>
-          <e1661:Minimum i:nil="false">ValueHere</e1661:Minimum>
+          <e957:Maximum i:nil="false">ValueHere</e957:Maximum>
+          <e957:Minimum i:nil="false">ValueHere</e957:Minimum>
           <!--These fields are applicable if the derived type attribute is set to SuggestedBidSearchParameter-->
-          <e1661:Maximum i:nil="false">ValueHere</e1661:Maximum>
-          <e1661:Minimum i:nil="false">ValueHere</e1661:Minimum>
+          <e957:Maximum i:nil="false">ValueHere</e957:Maximum>
+          <e957:Minimum i:nil="false">ValueHere</e957:Minimum>
           <!--These fields are applicable if the derived type attribute is set to IdeaTextSearchParameter-->
-          <Excluded xmlns:e1662="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" i:nil="false">
-            <e1662:Keyword>
-              <e1662:Id i:nil="false">ValueHere</e1662:Id>
-              <e1662:MatchType>ValueHere</e1662:MatchType>
-              <e1662:Text i:nil="false">ValueHere</e1662:Text>
-            </e1662:Keyword>
+          <Excluded xmlns:e958="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" i:nil="false">
+            <e958:Keyword>
+              <e958:Id i:nil="false">ValueHere</e958:Id>
+              <e958:MatchType>ValueHere</e958:MatchType>
+              <e958:Text i:nil="false">ValueHere</e958:Text>
+            </e958:Keyword>
           </Excluded>
-          <Included xmlns:e1663="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" i:nil="false">
-            <e1663:Keyword>
-              <e1663:Id i:nil="false">ValueHere</e1663:Id>
-              <e1663:MatchType>ValueHere</e1663:MatchType>
-              <e1663:Text i:nil="false">ValueHere</e1663:Text>
-            </e1663:Keyword>
+          <Included xmlns:e959="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" i:nil="false">
+            <e959:Keyword>
+              <e959:Id i:nil="false">ValueHere</e959:Id>
+              <e959:MatchType>ValueHere</e959:MatchType>
+              <e959:Text i:nil="false">ValueHere</e959:Text>
+            </e959:Keyword>
           </Included>
           <!--This field is applicable if the derived type attribute is set to ExcludeAccountKeywordsSearchParameter-->
-          <e1661:ExcludeAccountKeywords>ValueHere</e1661:ExcludeAccountKeywords>
+          <e957:ExcludeAccountKeywords>ValueHere</e957:ExcludeAccountKeywords>
           <!--These fields are applicable if the derived type attribute is set to ImpressionShareSearchParameter-->
-          <e1661:Maximum i:nil="false">ValueHere</e1661:Maximum>
-          <e1661:Minimum i:nil="false">ValueHere</e1661:Minimum>
+          <e957:Maximum i:nil="false">ValueHere</e957:Maximum>
+          <e957:Minimum i:nil="false">ValueHere</e957:Minimum>
           <!--This field is applicable if the derived type attribute is set to LocationSearchParameter-->
-          <Locations xmlns:e1664="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
-            <e1664:LocationCriterion>
-              <e1664:LocationId>ValueHere</e1664:LocationId>
-            </e1664:LocationCriterion>
+          <Locations xmlns:e960="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
+            <e960:LocationCriterion>
+              <e960:LocationId>ValueHere</e960:LocationId>
+            </e960:LocationCriterion>
           </Locations>
           <!--This field is applicable if the derived type attribute is set to NetworkSearchParameter-->
-          <Network xmlns:e1665="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
-            <e1665:Network>ValueHere</e1665:Network>
+          <Network xmlns:e961="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
+            <e961:Network>ValueHere</e961:Network>
           </Network>
           <!--This field is applicable if the derived type attribute is set to DeviceSearchParameter-->
-          <Device xmlns:e1666="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
-            <e1666:DeviceName i:nil="false">ValueHere</e1666:DeviceName>
+          <Device xmlns:e962="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
+            <e962:DeviceName i:nil="false">ValueHere</e962:DeviceName>
           </Device>
           <!--This field is applicable if the derived type attribute is set to LanguageSearchParameter-->
-          <Languages xmlns:e1667="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
-            <e1667:LanguageCriterion>
-              <e1667:Language i:nil="false">ValueHere</e1667:Language>
-            </e1667:LanguageCriterion>
+          <Languages xmlns:e963="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
+            <e963:LanguageCriterion>
+              <e963:Language i:nil="false">ValueHere</e963:Language>
+            </e963:LanguageCriterion>
           </Languages>
           <!--This field is applicable if the derived type attribute is set to CompetitionSearchParameter-->
-          <e1661:CompetitionLevels i:nil="false">
+          <e957:CompetitionLevels i:nil="false">
             <CompetitionLevel>ValueHere</CompetitionLevel>
-          </e1661:CompetitionLevels>
+          </e957:CompetitionLevels>
           <!--These fields are applicable if the derived type attribute is set to DateRangeSearchParameter-->
-          <EndDate xmlns:e1668="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
-            <e1668:Day>ValueHere</e1668:Day>
-            <e1668:Month>ValueHere</e1668:Month>
-            <e1668:Year>ValueHere</e1668:Year>
+          <EndDate xmlns:e964="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
+            <e964:Day>ValueHere</e964:Day>
+            <e964:Month>ValueHere</e964:Month>
+            <e964:Year>ValueHere</e964:Year>
           </EndDate>
-          <StartDate xmlns:e1669="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
-            <e1669:Day>ValueHere</e1669:Day>
-            <e1669:Month>ValueHere</e1669:Month>
-            <e1669:Year>ValueHere</e1669:Year>
+          <StartDate xmlns:e965="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
+            <e965:Day>ValueHere</e965:Day>
+            <e965:Month>ValueHere</e965:Month>
+            <e965:Year>ValueHere</e965:Year>
           </StartDate>
           <!--This field is applicable if the derived type attribute is set to AuctionSegmentSearchParameter-->
-          <e1661:Segment>ValueHere</e1661:Segment>
-        </e1661:SearchParameter>
+          <e957:Segment>ValueHere</e957:Segment>
+        </e957:SearchParameter>
       </SearchParameters>
     </GetKeywordIdeasRequest>
   </s:Body>
@@ -153,20 +153,20 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordIdeasResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordIdeas xmlns:e1670="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1670:KeywordIdea>
-          <e1670:AdGroupId d4p1:nil="false">ValueHere</e1670:AdGroupId>
-          <e1670:AdGroupName d4p1:nil="false">ValueHere</e1670:AdGroupName>
-          <e1670:AdImpressionShare d4p1:nil="false">ValueHere</e1670:AdImpressionShare>
-          <e1670:Competition d4p1:nil="false">ValueHere</e1670:Competition>
-          <e1670:Keyword d4p1:nil="false">ValueHere</e1670:Keyword>
-          <e1670:MonthlySearchCounts d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <KeywordIdeas xmlns:e966="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e966:KeywordIdea>
+          <e966:AdGroupId d4p1:nil="false">ValueHere</e966:AdGroupId>
+          <e966:AdGroupName d4p1:nil="false">ValueHere</e966:AdGroupName>
+          <e966:AdImpressionShare d4p1:nil="false">ValueHere</e966:AdImpressionShare>
+          <e966:Competition d4p1:nil="false">ValueHere</e966:Competition>
+          <e966:Keyword d4p1:nil="false">ValueHere</e966:Keyword>
+          <e966:MonthlySearchCounts d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:long>ValueHere</a1:long>
-          </e1670:MonthlySearchCounts>
-          <e1670:Relevance d4p1:nil="false">ValueHere</e1670:Relevance>
-          <e1670:Source d4p1:nil="false">ValueHere</e1670:Source>
-          <e1670:SuggestedBid d4p1:nil="false">ValueHere</e1670:SuggestedBid>
-        </e1670:KeywordIdea>
+          </e966:MonthlySearchCounts>
+          <e966:Relevance d4p1:nil="false">ValueHere</e966:Relevance>
+          <e966:Source d4p1:nil="false">ValueHere</e966:Source>
+          <e966:SuggestedBid d4p1:nil="false">ValueHere</e966:SuggestedBid>
+        </e966:KeywordIdea>
       </KeywordIdeas>
     </GetKeywordIdeasResponse>
   </s:Body>

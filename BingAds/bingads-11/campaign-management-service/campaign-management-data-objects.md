@@ -116,15 +116,15 @@ The Campaign Management service defines the following data objects.
 |[PriceAdExtension](priceadextension.md)|Defines an ad extension that includes between 3 and 8 price table rows.|
 |[PriceTableRow](pricetablerow.md)|Defines pricing information by currency and unit that you can use with price ad extensions.|
 |[ProductAd](productad.md)|Defines a product ad.|
-|[ProductAudience](productaudience.md)|Reserved.|
+|[ProductAudience](productaudience.md)|Defines a product audience that you can use to remarket products from your Bing Merchant Center store.|
 |[ProductCondition](productcondition.md)|Defines a condition that determines whether a product is selected from a customer's Bing Merchant Center catalog file.|
 |[ProductPartition](productpartition.md)|Defines an ad group level product partition with one condition that helps determine whether a product from the Bing Merchant Center store gets served as a product ad.|
 |[ProductScope](productscope.md)|Defines a campaign level product scope with list of conditions that help determine whether a product from the Bing Merchant Center store gets served as a product ad.|
-|[ProfileCriterion](profilecriterion.md)|Reserved.|
+|[ProfileCriterion](profilecriterion.md)|Defines a criterion that can be used to show ads to users in a specific company, industry, or job function.|
 |[RadiusCriterion](radiuscriterion.md)|Defines a criterion that can be used to show ads to users within the radius of a specific geographical location.|
 |[RemarketingList](remarketinglist.md)|Defines a remarketing list.|
 |[RemarketingRule](remarketingrule.md)|Defines the base object of a remarketing rule.|
-|[ResponsiveAd](responsivead.md)|Reserved.|
+|[ResponsiveAd](responsivead.md)|A responsive ad format for Audience ads in the Microsoft Audience Network.|
 |[ReviewAdExtension](reviewadextension.md)|Defines an object that specifies third-party reviews (exact or paraphrased) about your business, products, or services to include in an expanded text ad.|
 |[RuleItem](ruleitem.md)|Defines the base class of a remarketing list rule item.|
 |[RuleItemGroup](ruleitemgroup.md)|Defines an object that contains a list of remarketing list rule items that apply to the same visited page.|
@@ -134,15 +134,15 @@ The Campaign Management service defines the following data objects.
 |[SharedEntityAssociation](sharedentityassociation.md)|Defines an object that contains association information for a campaign and shared entity such as a negative keyword list.|
 |[SharedList](sharedlist.md)|Defines the base class of a shared list.|
 |[SharedListItem](sharedlistitem.md)|Defines the base class of a shared list item.|
-|[ShoppingSetting](shoppingsetting.md)|Defines the campaign level settings for a Bing Shopping Campaign.|
+|[ShoppingSetting](shoppingsetting.md)|Defines the campaign level settings for feed-based audience or shopping campaigns.|
 |[SiteLink](sitelink.md)|Defines a site link to include in an ad.|
 |[Sitelink2AdExtension](sitelink2adextension.md)|Defines an object with *one* sitelink per ad extension.|
 |[SiteLinksAdExtension](sitelinksadextension.md)|Defines an object with *multiple* sitelinks per ad extension.|
 |[StringRuleItem](stringruleitem.md)|Defines a rule expression that depends on the string values of the Url or Referrer Url.|
 |[StructuredSnippetAdExtension](structuredsnippetadextension.md)|Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.|
 |[TargetCpaBiddingScheme](targetcpabiddingscheme.md)|Defines an object that represents the target CPA bid strategy type.|
-|[TargetSetting](targetsetting.md)|Reserved.|
-|[TargetSettingDetail](targetsettingdetail.md)|Reserved.|
+|[TargetSetting](targetsetting.md)|The target settings that determines whether the Age, CompanyName, Gender, Industry, and JobFunction criterion type groups use the "target and bid" option or the "bid only" target option.|
+|[TargetSettingDetail](targetsettingdetail.md)|Determines whether you want to use the "target and bid" option or the "bid only" target option for the criterion type group.|
 |[TextAd](textad.md)|Defines a text ad.|
 |[UetTag](uettag.md)|Defines a Universal Event Tracking (UET) tag that you can add to your website to allow Bing Ads to collect actions people take on your website.|
 |[UrlGoal](urlgoal.md)|Defines a URL conversion goal.|

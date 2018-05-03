@@ -12,7 +12,9 @@ dev_langs:
   - python
 ---
 # AddMedia Service Operation - Campaign Management
-Adds the specified media to an account's media library. Depending on the type of [Media](media.md), you can then add the media to one or more [ImageAdExtension](imageadextension.md) or [LocationAdExtension](locationadextension.md) objects.
+Adds the specified media to an account's media library. 
+
+Depending on the type of [Media](media.md), you can then add the media to one or more [ImageAdExtension](imageadextension.md) or [ResponsiveAd](responsivead.md) objects.
 
 ## <a name="request"></a>Request Elements
 The *AddMediaRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

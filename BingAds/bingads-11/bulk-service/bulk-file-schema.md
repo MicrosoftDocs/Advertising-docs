@@ -51,25 +51,35 @@ Record Type  |Supported Campaign Types
 [Ad Group](ad-group.md)|All         
 [Ad Group Age Criterion](ad-group-age-criterion.md)|All         
 [Ad Group App Ad Extension](ad-group-app-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Ad Group Company Name Criterion](ad-group-company-name-criterion.md)|Audience  
 [Ad Group Callout Ad Extension](ad-group-callout-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
 [Ad Group Custom Audience Association](ad-group-custom-audience-association.md)|All         
 [Ad Group DayTime Criterion](ad-group-daytime-criterion.md)|All         
 [Ad Group DeviceOS Criterion](ad-group-deviceos-criterion.md)|All         
 [Ad Group Dynamic Search Ad Target](ad-group-dynamic-search-ad-target.md)|DynamicSearchAds         
 [Ad Group Gender Criterion](ad-group-gender-criterion.md)|All         
-[Ad Group Image Ad Extension](ad-group-image-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Ad Group Image Ad Extension](ad-group-image-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds     
+[Ad Group Industry Criterion](ad-group-industry-criterion.md)|Audience      
 [Ad Group In Market Audience Association](ad-group-in-market-audience-association.md)|All         
+[Ad Group Job Function Criterion](ad-group-job-function-criterion.md)|Audience  
 [Ad Group Label](ad-group-label.md)|All         
 [Ad Group Location Criterion](ad-group-location-criterion.md)|All         
-[Ad Group Location Intent Criterion](ad-group-location-intent-criterion.md)|All         
+[Ad Group Location Intent Criterion](ad-group-location-intent-criterion.md)|All       
+[Ad Group Negative Age Name Criterion](ad-group-negative-age-criterion.md)|Audience  
+[Ad Group Negative Company Name Criterion](ad-group-negative-company-name-criterion.md)|Audience  
+[Ad Group Negative Gender Name Criterion](ad-group-negative-gender-criterion.md)|Audience  
 [Ad Group Negative Custom Audience Association](ad-group-negative-custom-audience-association.md)|All         
 [Ad Group Negative Dynamic Search Ad Target](ad-group-negative-dynamic-search-ad-target.md)|DynamicSearchAds         
+[Ad Group Negative Industry Criterion](ad-group-negative-industry-criterion.md)|Audience  
 [Ad Group Negative In Market Audience Association](ad-group-negative-in-market-audience-association.md)|All         
+[Ad Group Negative Job Function Criterion](ad-group-negative-job-function-criterion.md)|Audience  
 [Ad Group Negative Keyword](ad-group-negative-keyword.md)|All         
 [Ad Group Negative Location Criterion](ad-group-negative-location-criterion.md)|All         
+[Ad Group Negative Product Audience Association](ad-group-negative-product-audience-association.md)|Audience         
 [Ad Group Negative Remarketing List Association](ad-group-negative-remarketing-list-association.md)|All         
 [Ad Group Negative Site](ad-group-negative-site.md)|All         
-[Ad Group Price Ad Extension](ad-group-price-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
+[Ad Group Price Ad Extension](ad-group-price-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds     
+[Ad Group Product Audience Association](ad-group-product-audience-association.md)|Audience          
 [Ad Group Product Partition](ad-group-product-partition.md)|Shopping         
 [Ad Group Radius Criterion](ad-group-radius-criterion.md)|All         
 [Ad Group Remarketing List Association](ad-group-remarketing-list-association.md)|All         
@@ -127,7 +137,10 @@ Record Type  |Supported Campaign Types
 [Price Ad Extension](price-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
 [Product Ad](product-ad.md)|Shopping         
 [Product Ad Label](product-ad-label.md)|Shopping         
+[Product Audience](product-audience.md)|Audience         
 [Remarketing List](remarketing-list.md)|All         
+[Responsive Ad](responsive-ad.md)|Audience         
+[Responsive Ad Label](responsive-ad-label.md)|Audience         
 [Review Ad Extension](review-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
 [Shared Negative Keyword](shared-negative-keyword.md)|All         
 [Sitelink Ad Extension](sitelink-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         

@@ -154,7 +154,7 @@ Each SOAP request must include the following SOAP headers, which contain the use
 |UserName|The Bing Ads managed user's sign-in name. You must not set this element to a Microsoft account or email address.|**string**|
 
 > [!IMPORTANT]
-> The UserName and Password header elements are deprecated. In future versions of the API, Bing Ads will transition exclusively to Microsoft Account (email address) authentication. For more information, see [Authentication with OAuth](authentication-oauth.md). UserName and Password are still required for Bing Ads managed credentials, but they are not applicable for Microsoft account authentication. To authenticate a Microsoft account, use the AuthenticationToken] header instead of UserName and Password.  
+> The UserName and Password header elements are deprecated in favor of the AuthenticationToken header i.e., [Authentication with OAuth](authentication-oauth.md). As of August 1st, 2018, all Bing Ads API Version 11 service calls with managed UserName and Password credentials will return an error. Bing Ads API Version 12 already does not accept the managed user credentials. In a future version of the API, the UserName and Password header elements will be removed from the service definitions.
 
 > [!TIP]
 > Do not mistake the account number for the account identifier. The account number is the system generated account number that is used to identify the account in the Bing Ads web application. The account number has the form xxxxxxxx, where xxxxxxxx is a series of any eight alphanumeric characters. The API service requests only use the account identifier, and never use the account number.

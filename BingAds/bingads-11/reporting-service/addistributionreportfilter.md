@@ -34,8 +34,8 @@ Defines the ad distribution medium values that you can use to filter the report 
 
 |Value|Description|
 |-----------|---------------|
-|<a name="content"></a>Content|The report will contain content ads.|
-|<a name="native"></a>Native|The report will contain intent ads.|
+|<a name="content"></a>Content|The report will contain data for content ads.<br/><br/>This value is deprecated and will be removed in Bing Ads API Version 12.|
+|<a name="native"></a>Native|The report will contain data for audience ads.<br/><br/>This value is renamed from *Native* to *Audience* in Bing Ads API Version 12.|
 |<a name="search"></a>Search|The report will contain search ads.|
 
 ## Requirements

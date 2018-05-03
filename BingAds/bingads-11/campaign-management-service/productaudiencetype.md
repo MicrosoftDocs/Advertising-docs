@@ -4,10 +4,13 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the possible types of product audiences.
 ---
 # ProductAudienceType Value Set - Campaign Management
-Reserved.
+Defines the possible types of product audiences.
+
+> [!NOTE]
+> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
 
 ## Syntax
 ```xml
@@ -30,11 +33,11 @@ Reserved.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="generalvisitors"></a>GeneralVisitors|Reserved.|
-|<a name="pastbuyers"></a>PastBuyers|Reserved.|
-|<a name="productsearchers"></a>ProductSearchers|Reserved.|
-|<a name="productviewers"></a>ProductViewers|Reserved.|
-|<a name="shoppingcartabandoners"></a>ShoppingCartAbandoners|Reserved.|
+|<a name="generalvisitors"></a>GeneralVisitors|The audience includes general visitors.|
+|<a name="pastbuyers"></a>PastBuyers|The audience includes past buyers.|
+|<a name="productsearchers"></a>ProductSearchers|The audience includes product searchers.|
+|<a name="productviewers"></a>ProductViewers|The audience includes product viewers.|
+|<a name="shoppingcartabandoners"></a>ShoppingCartAbandoners|The audience includes shopping cart abandoners.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

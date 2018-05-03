@@ -157,7 +157,7 @@ This bulk field maps to the *Id* field of the [Campaign](campaign.md) record.
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status
-Represents the association status between the a campaign and the criterion bid. If the criterion bid is set for the a campaign, this field's value is *Active*, and otherwise the value is *Deleted*.
+Represents the association status between the campaign and the criterion. If the criterion is applied to the campaign, this field's value is *Active*, and otherwise the value is *Deleted*.
 
 **Add:** Read-only  
 **Update:** Optional  

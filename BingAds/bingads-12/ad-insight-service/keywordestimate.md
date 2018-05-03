@@ -16,7 +16,7 @@ A suggested keyword with minimum and maximum traffic estimates. Traffic estimate
 ```xml
 <xs:complexType name="KeywordEstimate" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element minOccurs="0" name="Keyword" nillable="true" type="q7:Keyword" xmlns:q7="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
+    <xs:element minOccurs="0" name="Keyword" nillable="true" type="q8:Keyword" xmlns:q8="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
     <xs:element minOccurs="0" name="Maximum" nillable="true" type="tns:TrafficEstimate" />
     <xs:element minOccurs="0" name="Minimum" nillable="true" type="tns:TrafficEstimate" />
   </xs:sequence>

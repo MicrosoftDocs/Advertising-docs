@@ -18,7 +18,7 @@ To create a Bing Shopping campaign, follow these steps.
 
 2.  [Create a product catalog](https://help.bingads.microsoft.com/#apex/3/en/51105/1-500), and then submit the catalog feed via [FTP](https://help.bingads.microsoft.com/#apex/3/en/51086/1-500) or the [Bing Ads Content API](/bingads/shopping-content/index).
 
-3.  Get your Bing Merchant Center store unique system identifier. Call [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) and get the *StoreId* from of one of the returned [BMCStore]((../campaign-management-service/bmcstore.md) objects, or in the Bing Ads web application, click **Tools** &gt; **Bing Merchant Center** to access your store details.
+3.  Get your Bing Merchant Center store unique system identifier. Call [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) and get the *StoreId* from of one of the returned [BMCStore](../campaign-management-service/bmcstore.md) objects, or in the Bing Ads web application, click **Tools** &gt; **Bing Merchant Center** to access your store details.
 
 After you complete these steps, you can follow the steps to [Create a Bing Shopping Campaign with the Campaign Management Service](#bingshopping-campaignservice).
 
@@ -97,7 +97,7 @@ To create a Bing Shopping campaign, follow these steps.
 
     -   If you delete a parent product partition, all of its children and descendants will also be deleted.
 
-    -   You may not specify duplicate product conditions in a branch. For more information, see [Product Conditions](#conditions).
+    -   You may not specify duplicate product conditions in a branch. For more information, see [Product Conditions](#productconditions).
 
 5.  Upload a product ad. You must add at least one [Product Ad](../bulk-service/product-ad.md) to the corresponding ad group. A [Product Ad](../bulk-service/product-ad.md) is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Bing Merchant Center store's product catalog. The primary purpose of the [Product Ad](../bulk-service/product-ad.md) object is to provide promotional text that the delivery engine adds to the product ads that it generates. For example, if the promotional text is set to "Free shipping on $99 purchases", the delivery engine will set the product ad's description to "Free shipping on $99 purchases."
 
@@ -168,7 +168,7 @@ To create a Bing Shopping campaign with the Campaign Management API, follow thes
 
     -   If you delete a parent product partition, all of its children and descendants will also be deleted.
 
-    -   You may not specify duplicate product conditions in a branch. For more information, see [Product Conditions](#conditions).
+    -   You may not specify duplicate product conditions in a branch. For more information, see [Product Conditions](#productconditions).
 
 5.  Create a product ad. You must add at least one [ProductAd](../campaign-management-service/productad.md) to the corresponding ad group. A *ProductAd* is not used directly for delivered ad copy. Instead, the delivery engine generates product ads from the product details that it finds in your Bing Merchant Center store's product catalog. The primary purpose of the *ProductAd* object is to provide promotional text that the delivery engine adds to the product ads that it generates. For example, if the promotional text is set to "Free shipping on $99 purchases", the delivery engine will set the product ad's description to "Free shipping on $99 purchases."
 
@@ -176,7 +176,7 @@ To create a Bing Shopping campaign with the Campaign Management API, follow thes
 
 After you complete these steps, the delivery engine can begin serving product ads for the products that it finds in the customer's Bing Merchant Center store. If the user's search query has product intent, the delivery engine searches the customer's Bing Merchant Center store for products that matches the query. If it finds a product, and the product meets the conditions of the product filters specified in the product scope and product partitions, the delivery engine generates a product ad using the product details from the store.
 
-## <a name="conditions"></a>Product Conditions
+## <a name="productconditions"></a>Product Conditions
 Multiple product conditions can be specified for each campaign and ad group. Each condition is met if the product's attribute value equals the operand's attribute value. For example, if *Operand* is set to Brand and *Attribute* is set to Contoso, the condition is met if the value of the product catalog's Brand attribute is equal to Contoso.
 
 The following table maps the operand names to the corresponding attribute string restrictions for campaign product scope and ad group product partition.

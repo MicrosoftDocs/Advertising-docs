@@ -4,10 +4,13 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the possible types of profile criterions.
 ---
 # ProfileType Value Set - Campaign Management
-Reserved.
+Defines the possible types of profile criterions.
+
+> [!NOTE]
+> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
 
 ## Syntax
 ```xml
@@ -46,9 +49,9 @@ Reserved.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="companyname"></a>CompanyName|Reserved.|
-|<a name="industry"></a>Industry|Reserved.|
-|<a name="jobfunction"></a>JobFunction|Reserved.|
+|<a name="companyname"></a>CompanyName|Target people at a specific company according to LinkedIn.|
+|<a name="industry"></a>Industry|Target people in a specific industry according to LinkedIn.|
+|<a name="jobfunction"></a>JobFunction|Target people in a specific job function according to LinkedIn.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

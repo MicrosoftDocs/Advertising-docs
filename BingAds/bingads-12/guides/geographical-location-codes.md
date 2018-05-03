@@ -15,13 +15,12 @@ Geographical locations data can be used to for [Location Targeting](show-ads-tar
 For code examples that demonstrate how to download the geographical locations codes, see [Geographical Locations Code Example](code-example-geographical-locations.md).
 
 ## <a name="fileformat"></a>Location Codes File Format
-The comma separated value (CSV) file contains data organized in the following non-localized column headings. Only the Display Name and Descriptor columns are localized depending on the file URL used above.
+The comma separated value (CSV) file contains data organized in the following non-localized column headings. Only the Bing Display Name is localized depending on the file URL used above.
 
 > [!IMPORTANT]
 > New columns may be added at any time, so your implementation must ignore unknown columns.
 > 
 > The order of locations is not guaranteed, so you should not take dependencies on any perceived column sort order or hierarchy.
-
 
 ### <a name="version2"></a>File Format Version 2.0
 If you specified *Version* as 2.0 when calling the [GetGeoLocationsFileUrl](../campaign-management-service/getgeolocationsfileurl.md) operation, the following data is available in the downloaded file. Bing Ads API currently only supports file format version 2.0.
