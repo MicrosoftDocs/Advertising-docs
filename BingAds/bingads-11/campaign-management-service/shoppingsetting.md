@@ -4,10 +4,14 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the campaign level settings for a Bing Shopping Campaign.
+description: Defines the campaign level settings for feed-based audience or shopping campaigns.
 ---
 # ShoppingSetting Data Object - Campaign Management
-Defines the campaign level settings for a Bing Shopping Campaign.
+Defines the campaign level settings for feed-based audience or shopping campaigns.
+
+Supported shopping settings vary by campaign type.
+- Audience campaigns only support the StoreId element. 
+- Shopping campaigns support all shopping settings.
 
 ## Syntax
 ```xml
@@ -31,7 +35,7 @@ Defines the campaign level settings for a Bing Shopping Campaign.
 |-----------|---------------|-------------|
 |<a name="localinventoryadsenabled"></a>LocalInventoryAdsEnabled|Determines whether local inventory ads are enabled for the Bing Merchant Center store.<br/><br/> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.<br/><br/>Set this property to *true* if you want to enable local inventory ads, and otherwise set it to *false*.<br/><br/>**Add:** Optional. If you do not specify this field or leave it empty, the default value of *false* will be set and local inventory ads will not be enabled.<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**boolean**|
 |<a name="priority"></a>Priority|Helps determine which Bing Shopping campaign  serves ads, in the event that two or more campaigns use the product catalog feed from the same Bing Merchant Center store.<br /><br />You must specify one of the supported values: 0, 1, or 2. The higher numbers are given higher priority.<br /><br />If two shopping campaigns use the product catalog feed from same Bing Merchant Center store, then  ads will be delivered for the [BiddableAdGroupCriterion](biddableadgroupcriterion.md) with the highest bid.<br /><br /> In the Bing Ads web application, the default priority selected is "Low" which is the equivalent of '0'.<br/><br/>**Add:** Required<br/>**Update:** Optional|**int**|
-|<a name="salescountrycode"></a>SalesCountryCode|The country code for the Bing Merchant Center store. To get the list of supported country codes use the [GetBSCCountries](getbsccountries.md) operation.<br/><br/>**Add:** Required<br/>**Update:** Read-only|**string**|
+|<a name="salescountrycode"></a>SalesCountryCode|The country code for the Bing Merchant Center store.<br/><br/>The Bing Merchant Center store catalog will be filtered to only include products for the specified country.<br/><br/>To get the list of supported country codes use the [GetBSCCountries](getbsccountries.md) operation.<br/><br/>**Add:** Required<br/>**Update:** Read-only|**string**|
 |<a name="storeid"></a>StoreId|The unique identifier for the Bing Merchant Center store that your product catalog feed belongs to.<br /><br />To get the *StoreId*, call the [GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md) operation. The *Id* element of a [BMCStore](bmcstore.md) corresponds to this *StoreId*.<br/><br/>**Add:** Required<br/>**Update:** Read-only|**long**|
 
 The [ShoppingSetting](shoppingsetting.md) object has [Inherited Elements](#inheritedelements).

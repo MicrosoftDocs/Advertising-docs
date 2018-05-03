@@ -31,11 +31,13 @@ For an *Ad Group* record, the following attribute fields are available in the [B
 - [Network Distribution](#networkdistribution)
 - [Parent Id](#parentid)
 - [Pricing Model](#pricingmodel)
+- [Privacy Status](#privacystatus)
 - [Remarketing Targeting Setting](#remarketingtargetingsetting)
 - [Search Bid](#searchbid)
 - [Search Network](#searchnetwork)
 - [Start Date](#startdate)
 - [Status](#status)
+- [Target Setting](#targetsetting)
 - [Tracking Template](#trackingtemplate)
 
 You can download all fields of the *Ad Group* record by including the [DownloadEntity](downloadentity.md) value of *AdGroups* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
@@ -99,6 +101,8 @@ var bulkAdGroup = new BulkAdGroup
         Network = Network.OwnedAndOperatedAndSyndicatedSearch,
         // 'Pricing Model' column header in the Bulk file
         PricingModel = null,
+        // 'Privacy Status' column header in the Bulk file
+        PrivacyStatus = null,
         // 'Remarketing Targeting Setting' column header in the Bulk file
         RemarketingTargetingSetting = RemarketingTargetingSetting.TargetAndBid,
         // 'Search Bid' column header in the Bulk file
@@ -249,6 +253,8 @@ Set the value *On* for ad distribution on the content network, and otherwise set
 
 The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](../campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
 
+For ad groups in Audience campaigns, ad group level network is not supported and this field will be empty. The ad groups are in the Microsoft Audience Network.
+
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
@@ -303,10 +309,14 @@ Your ad language setting determines the language you will use when you write you
 
 For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage).
 
+For ad groups in Dynamic Search Ads campaigns, only *English* is supported.
+
+For ad groups in Audience campaigns, ad group level language is not supported, and you must set the [Language](campaign.md#language) field of the ad group's [Campaign](#campaign.md) to *All*.
+
 > [!IMPORTANT]
 > Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language by setting this field to *delete_value*. The *delete_value* keyword removes the previous setting. If you leave this field nil, then the ad group language will not be updated. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. 
 
-**Add:** Optional if the campaign has one or more languages set, and otherwise language is required.  
+**Add:** Optional if the campaign has one or more languages set, and otherwise the language is required for most campaign types. You are not allowed to set this element for ad groups in Audience campaigns.  
 **Update:** Optional if the customer is in the *Campaign Languages* pilot, and otherwise update is not allowed. If you are not in the pilot and try to change the language during update, no error will be returned and the setting will not be changed.  
 **Delete:** Read-only  
 
@@ -325,7 +335,9 @@ The search networks where you want your ads to display.
 
 Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly*, and *SyndicatedSearchOnly*. The default is *OwnedAndOperatedAndSyndicatedSearch*. For more information about networks and ad distribution, see the [About Ad Distribution](http://help.bingads.microsoft.com/#apex/3/en/50871/0) help article.
 
-You must not set *Network Distribution* if the *Content Network* ad distribution channel is set to *On*, otherwise an error will be returned.
+You must not set *Network Distribution* if the *Content Network* ad distribution channel is set to *On*, otherwise an error will be returned. 
+
+For ad groups in Audience campaigns, ad group level network is not supported and this field will be empty. The ad groups are in the Microsoft Audience Network.
 
 If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](../campaign-management-service/setnegativesitestoadgroups.md) or [SetNegativeSitesToCampaigns](../campaign-management-service/setnegativesitestocampaigns.md) operation to prevent the ads from displaying on specific syndicated search websites.
 
@@ -355,6 +367,19 @@ With *CPC*, each time the user clicks your ad, the service charges your account 
 
 **Add:** Optional. The pricing model will be set to *CPC* by default.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.  
+**Delete:** Read-only  
+
+### <a name="privacystatus"></a>Privacy Status
+Indicates whether or not your ad group target criteria are too narrow for ad groups in Audience campaigns.
+
+|Status|Description|
+|-----|-----|
+|<a name="active"></a>Active|The ad group is eligible to serve.|
+|<a name="pending"></a>Pending|The privacy evaluation is still in progress, and the ad group is not yet eligible to serve.|
+|<a name="targetingtoonarrow"></a>TargetingTooNarrow|The ad group is not eligible to serve because your ad group target criteria e.g., [Ad Group Company Name Criterion](ad-group-company-name-criterion.md) are too narrowly defined. Update your target criteria or remarketing lists to broaden your audience and increase estimated unique users.|
+
+**Add:** Read-only  
+**Update:** Read-only  
 **Delete:** Read-only  
 
 ### <a name="remarketingtargetingsetting"></a>Remarketing Targeting Setting
@@ -388,7 +413,9 @@ Determines whether the ads within this ad group will be displayed on the search 
 
 Set the value *On* for ad distribution on the search network, and otherwise set the value *Off*.
 
-The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](../campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network.
+The *Content Network* and *Search Network* fields each partially map to the *AdDistribution* element of the [AdGroup](../campaign-management-service/adgroup.md) object. The *AdDistribution* element can contain one or both network values, whereas in the Bulk file schema there are two seperate fields for determining the network. 
+
+For ad groups in Audience campaigns, ad group level network is not supported and this field will be empty. The ad groups are in the Microsoft Audience Network.
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -413,6 +440,36 @@ Possible values are *Active*, *Deleted*, *Expired*, and *Paused*. The *Expired* 
 **Add:** Optional. The default value is *Paused*.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Required. The Status must be set to Deleted.
+
+
+### <a name="targetsetting"></a>Target Setting
+The target settings that are applicable for criterion types e.g., locations that are associated with this ad group. 
+
+Include the criterion type group name in this field if you want the "target and bid" option. In this case we will only deliver ads to people who meet at least one of your criteria, while letting you make bid adjustments for specific criteria. 
+
+Exclude the criterion type group name from this field if you want the "bid only" option. In this case we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for specific criteria.
+
+Each criterion type group name is delimited in the Bulk file by a semicolon (";"), for example *Age;CompanyName;Gender;Industry;JobFunction*. When you download the Bulk file, only the types that are setup to use the "target and bid" option will be included in this field.
+
+If the [Campaign Type](campaign.md#campaigntype) is set to Audience, the supported values for this field are Age, CompanyName, Gender, Industry, and JobFunction. New values may be supported in the future so you should not depend on a fixed set of values. Having said that, any possible values for this field should also be defined in the [CriterionTypeGroup](../campaign-management-service/criteriontypegroup.md) value set of the Campaign Management API. 
+
+> [!NOTE]
+> Do not confuse the Audience campaign type with the Audience criterion type group name. 
+
+|Criterion Type Group|Supported Campaigns|Description|
+|-----------------|---------------|---------------|
+|Age|Audience|If you include the Age criterion type group name in this field, we will only deliver ads to people who meet at least one of your age criteria, while letting you make bid adjustments for specific age ranges. This setting ensures that the people seeing your ads meet your age criteria.<br/><br/>If you exclude the Age criterion type group name from this field, we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for specific age ranges. This setting lets you bid more (or less) aggressively for the people who meet specific age criteria, without restricting your ads to those people.|
+|Audience|Not supported|<br/><br/>In Bing Ads API Version 12, you can use the criterion type group name of *Audience*. In Bing Ads API Version 11 you must use the [Remarketing Targeting Setting](#remarketingtargetingsetting) field instead.|
+|CompanyName|Audience|If you include the CompanyName criterion type group name in this field, we will only deliver ads to people who meet at least one of your company criteria, while letting you make bid adjustments for specific companies. This setting ensures that the people seeing your ads meet your company criteria.<br/><br/>If you exclude the CompanyName criterion type group name from this field, we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for specific companies. This setting lets you bid more (or less) aggressively for the people who meet specific company criteria, without restricting your ads to those people.|
+|Gender|Audience|If you include the Gender criterion type group name in this field, we will only deliver ads to people who meet your gender criteria, while letting you make bid adjustments for a specific gender. This setting ensures that the people seeing your ads meet your gender criteria.<br/><br/>If you exclude the Gender criterion type group name from this field, we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for a specific gender. This setting lets you bid more (or less) aggressively for the people who meet specific gender criteria, without restricting your ads to those people.|
+|Industry|Audience|If you include the Industry criterion type group name in this field, we will only deliver ads to people who meet at least one of your industry criteria, while letting you make bid adjustments for specific industries. This setting ensures that the people seeing your ads meet your industry criteria.<br/><br/>If you exclude the Industry criterion type group name from this field, we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for specific industries. This setting lets you bid more (or less) aggressively for the people who meet specific industry criteria, without restricting your ads to those people.|
+|JobFunction|Audience|If you include the JobFunction criterion type group name in this field, we will only deliver ads to people who meet at least one of your job function criteria, while letting you make bid adjustments for specific job functions. This setting ensures that the people seeing your ads meet your job function criteria.<br/><br/>If you exclude the JobFunction criterion type group name from this field, we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for specific job functions. This setting lets you bid more (or less) aggressively for the people who meet specific job function criteria, without restricting your ads to those people.|
+
+An entity such as a remarketing list can be associated with multiple ad groups, and each ad group's target settings (e.g., the Audience criterion group name for remarketing lists) are applied independently for delivery. For example the same remarketing list can be associated with Ad Group A and Ad Group B. The Target Setting field for each ad group are set independently, and therefore the same remarketing list might be associated via the "target and bid" option for Ad Group A while associated via the "bid only" option for Ad Group B. 
+
+**Add:** Optional. If the criterion type group name is excluded from this field, then the default setting is effectively "bid only".  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all criterion type group names, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of criterion type group names, specify the criterion type group names that you want to keep and omit any that you do not want to keep. The new set of criterion type group names will replace any previous criterion groups that were set for the ad group.    
+**Delete:** Read-only  
 
 ### <a name="trackingtemplate"></a>Tracking Template
 The tracking template to use as a default for all URLs in your ad group.

@@ -81,24 +81,24 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetKeywordDemographicsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordDemographicResult xmlns:e1659="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1659:KeywordDemographicResult>
-          <e1659:Keyword d4p1:nil="false">ValueHere</e1659:Keyword>
-          <e1659:KeywordDemographics d4p1:nil="false">
-            <e1659:KeywordDemographic>
-              <e1659:Device d4p1:nil="false">ValueHere</e1659:Device>
-              <e1659:EighteenToTwentyFour>ValueHere</e1659:EighteenToTwentyFour>
-              <e1659:TwentyFiveToThirtyFour>ValueHere</e1659:TwentyFiveToThirtyFour>
-              <e1659:ThirtyFiveToFourtyNine>ValueHere</e1659:ThirtyFiveToFourtyNine>
-              <e1659:FiftyToSixtyFour>ValueHere</e1659:FiftyToSixtyFour>
-              <e1659:SixtyFiveAndAbove>ValueHere</e1659:SixtyFiveAndAbove>
-              <e1659:AgeUnknown>ValueHere</e1659:AgeUnknown>
-              <e1659:Female>ValueHere</e1659:Female>
-              <e1659:Male>ValueHere</e1659:Male>
-              <e1659:GenderUnknown>ValueHere</e1659:GenderUnknown>
-            </e1659:KeywordDemographic>
-          </e1659:KeywordDemographics>
-        </e1659:KeywordDemographicResult>
+      <KeywordDemographicResult xmlns:e955="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e955:KeywordDemographicResult>
+          <e955:Keyword d4p1:nil="false">ValueHere</e955:Keyword>
+          <e955:KeywordDemographics d4p1:nil="false">
+            <e955:KeywordDemographic>
+              <e955:Device d4p1:nil="false">ValueHere</e955:Device>
+              <e955:EighteenToTwentyFour>ValueHere</e955:EighteenToTwentyFour>
+              <e955:TwentyFiveToThirtyFour>ValueHere</e955:TwentyFiveToThirtyFour>
+              <e955:ThirtyFiveToFourtyNine>ValueHere</e955:ThirtyFiveToFourtyNine>
+              <e955:FiftyToSixtyFour>ValueHere</e955:FiftyToSixtyFour>
+              <e955:SixtyFiveAndAbove>ValueHere</e955:SixtyFiveAndAbove>
+              <e955:AgeUnknown>ValueHere</e955:AgeUnknown>
+              <e955:Female>ValueHere</e955:Female>
+              <e955:Male>ValueHere</e955:Male>
+              <e955:GenderUnknown>ValueHere</e955:GenderUnknown>
+            </e955:KeywordDemographic>
+          </e955:KeywordDemographics>
+        </e955:KeywordDemographicResult>
       </KeywordDemographicResult>
     </GetKeywordDemographicsResponse>
   </s:Body>

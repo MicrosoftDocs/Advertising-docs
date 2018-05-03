@@ -15,8 +15,6 @@ You can target customers by age so that your ads are displayed more frequently t
 
 Each age criterion defines an age range for the accompanying criterion bid adjustment. 
 
-The maximum number of age criterions that you can specify per campaign or ad group is five, i.e. one for each of the supported age ranges *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*.
-
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Ad Group Age Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
@@ -163,7 +161,7 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status
-Represents the association status between the ad group and the criterion bid. If the criterion bid is set for the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
+Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
 
 **Add:** Read-only  
 **Update:** Optional  
@@ -172,12 +170,10 @@ Represents the association status between the ad group and the criterion bid. If
 ### <a name="target"></a>Target
 The age range that you want to target with the corresponding *Bid Adjustment*. 
 
-Supported values are *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*. 
+Supported values are *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*. With Audience campaigns you can also target *Unknown* i.e., people whose age is not known.
 
 > [!NOTE]
 > In many countries, online advertisers are not supposed to target any users less than 18 years old. Bing Ads does not deliver interest-based advertising to children whose birthdate in their Microsoft account identifies them as under 13 years of age. For more information see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
-> 
-> Currently people ages 13 to 17 can see your ads, although you cannot adjust the bid for that age range. Soon in Bing Ads you will be enabled to specifically exclude ages 13 to 17. The target value of *ThirteenToSeventeen* will be supported with negative bid adjustments between -100 and 0. We will announce more specific dates within the next few months.
 
 **Add:** Required  
 **Update:** Required  

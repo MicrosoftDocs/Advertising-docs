@@ -9,6 +9,9 @@ description: Determines whether you want to use the "target and bid" option or t
 # TargetSettingDetail Data Object - Campaign Management
 Determines whether you want to use the "target and bid" option or the "bid only" target option for the criterion type group.
 
+> [!NOTE]
+> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
+
 ## Syntax
 ```xml
 <xs:complexType name="TargetSettingDetail" xmlns:xs="http://www.w3.org/2001/XMLSchema">

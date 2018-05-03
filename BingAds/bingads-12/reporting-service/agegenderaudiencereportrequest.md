@@ -13,6 +13,9 @@ You can request the impressions, clicks, spend, and average cost-per-click for e
 
 To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
+> [!NOTE]
+> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
+
 ## Syntax
 ```xml
 <xs:complexType name="AgeGenderAudienceReportRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema">

@@ -15,8 +15,6 @@ You can target customers by gender so that your ads are displayed more frequentl
 
 Each gender criterion defines a gender for the accompanying criterion bid adjustment. 
 
-The maximum number of gender criterions that you can specify per campaign or ad group is two i.e. one for *Male* and one for *Female*.
-
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Ad Group Gender Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
@@ -159,7 +157,7 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status
-Represents the association status between the ad group and the criterion bid. If the criterion bid is set for the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
+Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
 
 **Add:** Read-only  
 **Update:** Optional  
@@ -168,7 +166,7 @@ Represents the association status between the ad group and the criterion bid. If
 ### <a name="target"></a>Target
 The gender that you want to target with the corresponding *Bid Adjustment*. 
 
-Supported values are *Female* and *Male*. 
+Supported values are *Female* and *Male*. With Audience campaigns you can also target *Unknown* i.e., people whose gender is not known.
 
 **Add:** Required  
 **Update:** Required  

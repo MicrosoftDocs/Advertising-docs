@@ -15,9 +15,9 @@ Contains campaign filter criteria and a nested list of ad group and keyword leve
   <xs:sequence>
     <xs:element minOccurs="0" name="AdGroupEstimators" nillable="true" type="tns:ArrayOfAdGroupEstimator" />
     <xs:element minOccurs="0" name="CampaignId" nillable="true" type="xs:long" />
-    <xs:element minOccurs="0" name="Criteria" nillable="true" type="q4:ArrayOfCriterion" xmlns:q4="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" />
+    <xs:element minOccurs="0" name="Criteria" nillable="true" type="q5:ArrayOfCriterion" xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" />
     <xs:element minOccurs="0" name="DailyBudget" nillable="true" type="xs:double" />
-    <xs:element minOccurs="0" name="NegativeKeywords" nillable="true" type="q5:ArrayOfNegativeKeyword" xmlns:q5="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
+    <xs:element minOccurs="0" name="NegativeKeywords" nillable="true" type="q6:ArrayOfNegativeKeyword" xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
   </xs:sequence>
 </xs:complexType>
 ```

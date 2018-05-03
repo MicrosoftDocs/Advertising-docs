@@ -79,11 +79,11 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <SuggestKeywordsForUrlResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <Keywords xmlns:e1679="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1679:KeywordAndConfidence>
-          <e1679:SuggestedKeyword d4p1:nil="false">ValueHere</e1679:SuggestedKeyword>
-          <e1679:ConfidenceScore>ValueHere</e1679:ConfidenceScore>
-        </e1679:KeywordAndConfidence>
+      <Keywords xmlns:e975="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e975:KeywordAndConfidence>
+          <e975:SuggestedKeyword d4p1:nil="false">ValueHere</e975:SuggestedKeyword>
+          <e975:ConfidenceScore>ValueHere</e975:ConfidenceScore>
+        </e975:KeywordAndConfidence>
       </Keywords>
     </SuggestKeywordsForUrlResponse>
   </s:Body>

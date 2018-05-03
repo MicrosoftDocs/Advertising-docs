@@ -13,7 +13,7 @@ Contains a keyword estimators with your keyword level filter criteria for traffi
 ```xml
 <xs:complexType name="KeywordEstimator" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
-    <xs:element minOccurs="0" name="Keyword" nillable="true" type="q6:Keyword" xmlns:q6="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
+    <xs:element minOccurs="0" name="Keyword" nillable="true" type="q7:Keyword" xmlns:q7="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" />
     <xs:element minOccurs="0" name="MaxCpc" nillable="true" type="xs:double" />
   </xs:sequence>
 </xs:complexType>

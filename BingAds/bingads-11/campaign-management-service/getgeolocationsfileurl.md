@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets a temporary URL that you can use to download a file that contains the supported geographical location targeting codes.
+description: Gets a temporary URL that you can use to download a file that contains identifiers for the geographical locations that you can target or exclude.
 dev_langs: 
   - csharp
   - java
@@ -12,7 +12,9 @@ dev_langs:
   - python
 ---
 # GetGeoLocationsFileUrl Service Operation - Campaign Management
-Gets a temporary URL that you can use to download a file that contains the supported geographical location targeting codes.
+Gets a temporary URL that you can use to download a file that contains identifiers for the geographical locations that you can target or exclude.
+
+For details about the file contents, see [Geographical Location Codes](../guides/geographical-location-codes.md).
 
 > [!NOTE]
 > You must specify the account identifier in the *CustomerAccountId* header element.
@@ -24,8 +26,8 @@ The *GetGeoLocationsFileUrlRequest* object defines the [body](#request-body) and
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="languagelocale"></a>LanguageLocale|The language and locale of the geographical location code descriptions. The supported language locale values are *zh-Hant* (Traditional Chinese), *en* (English), *fr* (French), *de* (German), *it* (Italian), *pt-BR* (Brazilian Portuguese), and *es* (Spanish).|**string**|
-|<a name="version"></a>Version|The version of the location file that you want to download.<br/><br/>Currently the only supported version is 2.0. You must set this value to *2.0*. |**string**|
+|<a name="languagelocale"></a>LanguageLocale|The language and locale of the geographical location code descriptions. The supported language locale values are *zh-Hant* (Traditional Chinese), *en* (English), *fr* (French), *de* (German), *it* (Italian), *pt-BR* (Brazilian Portuguese), and *es* (Spanish).<br/><br/>This request element is required.|**string**|
+|<a name="version"></a>Version|The version of the location file that you want to download.<br/><br/>Currently the only supported version is 2.0.<br/><br/>This request element is required.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -37,9 +39,9 @@ The *GetGeoLocationsFileUrlResponse* object defines the [body](#response-body) a
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="fileurl"></a>FileUrl|The file URL that you can use to download the geographical location targeting codes for the version, language, and locale that you requested.<br/><br/>Before you download the file, check whether the date and time of the *LastModifiedTimeUtc* element is later than the date and time of your previous download. You should only download the file if necessary.|**string**|
+|<a name="fileurl"></a>FileUrl|The file URL that you can use to download the geographical location data for the version, language, and locale that you requested.<br/><br/>Before you download the file, check whether the date and time of the *LastModifiedTimeUtc* element is later than the date and time of your previous download. You should only download the file if necessary.|**string**|
 |<a name="fileurlexpirytimeutc"></a>FileUrlExpiryTimeUtc|The date and time that the provided file URL will expire.<br/><br/>If you do not download the file prior to the expiration time, then you can call the operation again to request a new file URL. You might observe that the URL is set to expire 15 minutes from the time this operation completes; however, you should not depend on a fixed duration. Future calls to this operation might result in a shorter or longer expiration time. <br/><br/>The value is in Coordinated Universal Time (UTC). The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|**dateTime**|
-|<a name="lastmodifiedtimeutc"></a>LastModifiedTimeUtc|The date and time that the geographical locations file for the specified version, language, and locale was last updated.<br/><br/>As a best practice you should store this date and time, and going forward only download the file if this value is updated to a later date and time.<br/><br/>The value is in Coordinated Universal Time (UTC). The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|**dateTime**|
+|<a name="lastmodifiedtimeutc"></a>LastModifiedTimeUtc|The date and time that the geographical location data for the specified version, language, and locale was last updated.<br/><br/>As a best practice you should store this date and time, and going forward only download the file if this value is updated to a later date and time.<br/><br/>The value is in Coordinated Universal Time (UTC). The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|**dateTime**|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

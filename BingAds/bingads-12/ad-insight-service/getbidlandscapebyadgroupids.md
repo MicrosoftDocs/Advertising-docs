@@ -58,11 +58,11 @@ The following template shows the order of the [body](#request-body) and [header]
   </s:Header>
   <s:Body>
     <GetBidLandscapeByAdGroupIdsRequest xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <AdGroupBidLandscapeInputs xmlns:e1642="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
-        <e1642:AdGroupBidLandscapeInput>
-          <e1642:AdGroupBidLandscapeType>ValueHere</e1642:AdGroupBidLandscapeType>
-          <e1642:AdGroupId>ValueHere</e1642:AdGroupId>
-        </e1642:AdGroupBidLandscapeInput>
+      <AdGroupBidLandscapeInputs xmlns:e938="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
+        <e938:AdGroupBidLandscapeInput>
+          <e938:AdGroupBidLandscapeType>ValueHere</e938:AdGroupBidLandscapeType>
+          <e938:AdGroupId>ValueHere</e938:AdGroupId>
+        </e938:AdGroupBidLandscapeInput>
       </AdGroupBidLandscapeInputs>
     </GetBidLandscapeByAdGroupIdsRequest>
   </s:Body>
@@ -79,32 +79,32 @@ The following template shows the order of the [body](#response-body) and [header
   </s:Header>
   <s:Body>
     <GetBidLandscapeByAdGroupIdsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <BidLandscape xmlns:e1643="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e1643:AdGroupBidLandscape>
-          <e1643:AdGroupId>ValueHere</e1643:AdGroupId>
-          <e1643:AdGroupBidLandscapeType>ValueHere</e1643:AdGroupBidLandscapeType>
-          <e1643:StartDate d4p1:nil="false">
-            <e1643:Day>ValueHere</e1643:Day>
-            <e1643:Month>ValueHere</e1643:Month>
-            <e1643:Year>ValueHere</e1643:Year>
-          </e1643:StartDate>
-          <e1643:EndDate d4p1:nil="false">
-            <e1643:Day>ValueHere</e1643:Day>
-            <e1643:Month>ValueHere</e1643:Month>
-            <e1643:Year>ValueHere</e1643:Year>
-          </e1643:EndDate>
-          <e1643:BidLandscapePoints d4p1:nil="false">
-            <e1643:BidLandscapePoint>
-              <e1643:Bid>ValueHere</e1643:Bid>
-              <e1643:Clicks d4p1:nil="false">ValueHere</e1643:Clicks>
-              <e1643:Impressions>ValueHere</e1643:Impressions>
-              <e1643:TopImpressions d4p1:nil="false">ValueHere</e1643:TopImpressions>
-              <e1643:CurrencyCode>ValueHere</e1643:CurrencyCode>
-              <e1643:Cost d4p1:nil="false">ValueHere</e1643:Cost>
-              <e1643:MarginalCPC d4p1:nil="false">ValueHere</e1643:MarginalCPC>
-            </e1643:BidLandscapePoint>
-          </e1643:BidLandscapePoints>
-        </e1643:AdGroupBidLandscape>
+      <BidLandscape xmlns:e939="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e939:AdGroupBidLandscape>
+          <e939:AdGroupId>ValueHere</e939:AdGroupId>
+          <e939:AdGroupBidLandscapeType>ValueHere</e939:AdGroupBidLandscapeType>
+          <e939:StartDate d4p1:nil="false">
+            <e939:Day>ValueHere</e939:Day>
+            <e939:Month>ValueHere</e939:Month>
+            <e939:Year>ValueHere</e939:Year>
+          </e939:StartDate>
+          <e939:EndDate d4p1:nil="false">
+            <e939:Day>ValueHere</e939:Day>
+            <e939:Month>ValueHere</e939:Month>
+            <e939:Year>ValueHere</e939:Year>
+          </e939:EndDate>
+          <e939:BidLandscapePoints d4p1:nil="false">
+            <e939:BidLandscapePoint>
+              <e939:Bid>ValueHere</e939:Bid>
+              <e939:Clicks d4p1:nil="false">ValueHere</e939:Clicks>
+              <e939:Impressions>ValueHere</e939:Impressions>
+              <e939:TopImpressions d4p1:nil="false">ValueHere</e939:TopImpressions>
+              <e939:CurrencyCode>ValueHere</e939:CurrencyCode>
+              <e939:Cost d4p1:nil="false">ValueHere</e939:Cost>
+              <e939:MarginalCPC d4p1:nil="false">ValueHere</e939:MarginalCPC>
+            </e939:BidLandscapePoint>
+          </e939:BidLandscapePoints>
+        </e939:AdGroupBidLandscape>
       </BidLandscape>
     </GetBidLandscapeByAdGroupIdsResponse>
   </s:Body>

@@ -115,7 +115,7 @@ The report must include the following columns, and one or more of the performanc
 
 |Column|
 |----------|
-|DynamicAdTargetId|
+|DynamicAdTarget|
 |TimePeriod|
 
 ## Requirements
