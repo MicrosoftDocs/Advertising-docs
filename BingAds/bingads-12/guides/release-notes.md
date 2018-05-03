@@ -15,11 +15,7 @@ For information about this month's changes to Bing Ads services, see the followi
 -   [Microsoft Audience Network Preview](#audiencenetwork-may2018)  
 
 ### <a name="audiencenetwork-may2018"></a>Microsoft Audience Network Preview
-Support is added for the Microsoft Audience Network in preview. For differences between version 11 and 12, see [Migrate to Version 12](migration-guide.md). 
-
-Available audiences e.g., in-market audiences differ between Audience campaigns and other campaign types. To determine which audiences are available and supported for a given campaign type, check the [SupportedCampaignTypes](../campaign-management-service/audience.md#supportedcampaigntypes) element of each [Audience](../campaign-management-service/audience.md) i.e., [CustomAudience](../campaign-management-service/customaudience.md#supportedcampaigntypes), [InMarketAudience](../campaign-management-service/inmarketaudience.md#supportedcampaigntypes), and [RemarketingList](../campaign-management-service/remarketinglist.md#supportedcampaigntypes). 
-
-The audience list sizes between the Search and Audience network can vary. To determine the audience list size for the Microsoft Audience Network, check the [AudienceNetworkSize](../campaign-management-service/audience.md#audiencenetworksize) element of each [Audience](../campaign-management-service/audience.md) i.e., [CustomAudience](../campaign-management-service/customaudience.md#audiencenetworksize), [InMarketAudience](../campaign-management-service/inmarketaudience.md#audiencenetworksize), and [RemarketingList](../campaign-management-service/remarketinglist.md#audiencenetworksize). 
+Support is added for the Microsoft Audience Network in preview. For details see [Audience Ads](audience-ads.md). For differences between version 11 and 12, see [Migrate to Version 12](migration-guide.md). 
 
 ## <a name="april2018"></a>April 2018
 For information about this month's changes to Bing Ads services, see the following sections.

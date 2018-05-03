@@ -9,6 +9,14 @@ description: Get information about the changes to the Bing Ads services for each
 # Bing Ads API Release Notes
 For information about the changes to the Bing Ads services for each month, see the following sections.  
 
+## <a name="may2018"></a>May 2018
+For information about this month's changes to Bing Ads services, see the following sections.
+
+-   [Microsoft Audience Network Preview](#audiencenetwork-may2018)  
+
+### <a name="audiencenetwork-may2018"></a>Microsoft Audience Network Preview
+Support is added for the Microsoft Audience Network in preview. For details see [Audience Ads](audience-ads.md). For differences between version 11 and 12, see [Migrate to Version 12](migration-guide.md). 
+
 ## <a name="april2018"></a>April 2018
 For information about this month's changes to Bing Ads services, see the following sections.
 
