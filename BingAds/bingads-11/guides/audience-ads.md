@@ -21,6 +21,10 @@ Intent data from search can be used outside of search to create a powerful match
 
 Our advertising offers, including audience marketing solutions, are anchored in the consumer audience understanding provided by the Microsoft Graph. The Microsoft Graph data sets include search and web activity, LinkedIn profile data, demographic and customer data. 
 
+There are two great ways to run Microsoft Audience Ads:
+1.	For convenience, you can extend existing Search campaigns with image ad extensions and audience ads bid adjustments. 
+2.  With Audience campaigns you will have control to separate your budgets, ads, and bids from Search campaigns.
+
 ![Bing Ads Buying Platform](media/bing-ads-buying-platform.png "Bing Ads Buying Platform")  
 
 The Microsoft Audience Network supports three ad formats: image-based ads, text ads and feed-based ads. For convenience, you can extend existing [Search campaigns](#search-campaigns) with image ad extensions and audience ads bid adjustments. With [Audience campaigns](#audience-campaigns) you will have control to separate your budgets, ads, and bids from search campaigns.
