@@ -23,6 +23,7 @@ The *GetCampaignsByAccountIdRequest* object defines the [body](#request-body) an
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the campaigns to get.|**long**|
 |<a name="campaigntype"></a>CampaignType|The type of campaign to get, for example *SearchAndContent*, *Shopping*, or *DynamicSearchAds*. You can specify one or more types.|[CampaignType](campaigntype.md)|
+|<a name="returncoopcampaigns"></a>ReturnCoOpCampaigns|The Bing Shopping campaigns with [SubType](campaign.md#subtype) set to *ShoppingCoOperative* are not returned at all unless you set ReturnCoOpCampaigns true. Additionally the [SubType](campaign.md#subtype) element for all campaign types is not returned unless you set ReturnCoOpCampaigns true. In any case the sub type is not currently applicable for any other campaign types.<br/><br/>This element is deprecated and removed in Bing Ads API Version 12.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -58,6 +59,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <GetCampaignsByAccountIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <AccountId>ValueHere</AccountId>
       <CampaignType>ValueHere</CampaignType>
+      <ReturnCoOpCampaigns i:nil="false">ValueHere</ReturnCoOpCampaigns>
     </GetCampaignsByAccountIdRequest>
   </s:Body>
 </s:Envelope>
@@ -98,25 +100,26 @@ The following template shows the order of the [body](#response-body) and [header
           <BudgetType d4p1:nil="false">ValueHere</BudgetType>
           <DailyBudget d4p1:nil="false">ValueHere</DailyBudget>
           <Description d4p1:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e779="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e779:KeyValuePairOfstringstring>
-              <e779:key d4p1:nil="false">ValueHere</e779:key>
-              <e779:value d4p1:nil="false">ValueHere</e779:value>
-            </e779:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e231="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e231:KeyValuePairOfstringstring>
+              <e231:key d4p1:nil="false">ValueHere</e231:key>
+              <e231:value d4p1:nil="false">ValueHere</e231:value>
+            </e231:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Name d4p1:nil="false">ValueHere</Name>
           <NativeBidAdjustment d4p1:nil="false">ValueHere</NativeBidAdjustment>
           <Status d4p1:nil="false">ValueHere</Status>
+          <SubType d4p1:nil="false">ValueHere</SubType>
           <TimeZone d4p1:nil="false">ValueHere</TimeZone>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e780="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e780:Parameters d4p1:nil="false">
-              <e780:CustomParameter>
-                <e780:Key d4p1:nil="false">ValueHere</e780:Key>
-                <e780:Value d4p1:nil="false">ValueHere</e780:Value>
-              </e780:CustomParameter>
-            </e780:Parameters>
+          <UrlCustomParameters xmlns:e232="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e232:Parameters d4p1:nil="false">
+              <e232:CustomParameter>
+                <e232:Key d4p1:nil="false">ValueHere</e232:Key>
+                <e232:Value d4p1:nil="false">ValueHere</e232:Value>
+              </e232:CustomParameter>
+            </e232:Parameters>
           </UrlCustomParameters>
           <CampaignType d4p1:nil="false">ValueHere</CampaignType>
           <Settings d4p1:nil="false">
@@ -137,6 +140,10 @@ The following template shows the order of the [body](#response-body) and [header
                   <TargetAndBid>ValueHere</TargetAndBid>
                 </TargetSettingDetail>
               </Details>
+              <!--These fields are applicable if the derived type attribute is set to CoOpSetting-->
+              <BidBoostValue d4p1:nil="false">ValueHere</BidBoostValue>
+              <BidMaxValue d4p1:nil="false">ValueHere</BidMaxValue>
+              <BidOption d4p1:nil="false">ValueHere</BidOption>
             </Setting>
           </Settings>
           <BudgetId d4p1:nil="false">ValueHere</BudgetId>
@@ -155,12 +162,14 @@ The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.m
 ```csharp
 public async Task<GetCampaignsByAccountIdResponse> GetCampaignsByAccountIdAsync(
 	long accountId,
-	CampaignType campaignType)
+	CampaignType campaignType,
+	bool? returnCoOpCampaigns)
 {
 	var request = new GetCampaignsByAccountIdRequest
 	{
 		AccountId = accountId,
-		CampaignType = campaignType
+		CampaignType = campaignType,
+		ReturnCoOpCampaigns = returnCoOpCampaigns
 	};
 
 	return (await CampaignManagementService.CallAsync((s, r) => s.GetCampaignsByAccountIdAsync(r), request));
@@ -169,12 +178,14 @@ public async Task<GetCampaignsByAccountIdResponse> GetCampaignsByAccountIdAsync(
 ```java
 static GetCampaignsByAccountIdResponse getCampaignsByAccountId(
 	java.lang.Long accountId,
-	ArrayList<CampaignType> campaignType) throws RemoteException, Exception
+	ArrayList<CampaignType> campaignType,
+	boolean returnCoOpCampaigns) throws RemoteException, Exception
 {
 	GetCampaignsByAccountIdRequest request = new GetCampaignsByAccountIdRequest();
 
 	request.setAccountId(accountId);
 	request.setCampaignType(campaignType);
+	request.setReturnCoOpCampaigns(returnCoOpCampaigns);
 
 	return CampaignManagementService.getService().getCampaignsByAccountId(request);
 }
@@ -182,7 +193,8 @@ static GetCampaignsByAccountIdResponse getCampaignsByAccountId(
 ```php
 static function GetCampaignsByAccountId(
 	$accountId,
-	$campaignType)
+	$campaignType,
+	$returnCoOpCampaigns)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
@@ -191,6 +203,7 @@ static function GetCampaignsByAccountId(
 
 	$request->AccountId = $accountId;
 	$request->CampaignType = $campaignType;
+	$request->ReturnCoOpCampaigns = $returnCoOpCampaigns;
 
 	return $GLOBALS['CampaignManagementProxy']->GetService()->GetCampaignsByAccountId($request);
 }
@@ -198,7 +211,8 @@ static function GetCampaignsByAccountId(
 ```python
 response=campaignmanagement_service.GetCampaignsByAccountId(
 	AccountId=AccountId,
-	CampaignType=CampaignType)
+	CampaignType=CampaignType,
+	ReturnCoOpCampaigns=ReturnCoOpCampaigns)
 ```
 
 ## Requirements

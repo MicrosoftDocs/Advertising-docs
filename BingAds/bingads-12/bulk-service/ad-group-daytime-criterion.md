@@ -208,7 +208,7 @@ Supported values are *Sunday*, *Monday*, *Tuesday*, *Wednesday*, *Thursday*, *Fr
 ### <a name="tohour"></a>To Hour
 The ending hour to target.
 
-Supported values range from 0 to 23.
+Supported values range from 0 to 24. If the [To Hour](#tohour) is set to 24, the [To Minute](#tominute) must be *Zero*.
 
 **Add:** Required  
 **Update:** Required  

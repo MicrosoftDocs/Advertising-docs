@@ -11,8 +11,17 @@ dev_langs:
 # Product Audience Record - Bulk
 Defines a product audience that can be downloaded and uploaded in a bulk file. 
 
+Using Product Audiences, you can remarket to customers based on the specific products they viewed or added to their cart. Feed-based ads promote those same products to customers (known as dynamic remarketing).
+
 > [!NOTE]
 > Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
+
+> [!IMPORTANT]
+> Be sure to edit the script corresponding to the [UET Tag Id](#uettagid) on your website to include the `prodid` and `pagetype` parameters.
+  ```javascript
+  window.uetq = window.uetq || [];
+  window.uetq.push({'prodid': 'PRODUCT_ID', 'pagetype': 'PAGE_TYPE'});
+  ```
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Product Audience* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 

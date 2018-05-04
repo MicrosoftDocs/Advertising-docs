@@ -23,6 +23,7 @@ The *GetAdGroupsByCampaignIdRequest* object defines the [body](#request-body) an
 |-----------|---------------|-------------|
 |<a name="campaignid"></a>CampaignId|The identifier of the campaign that contains the ad groups to get.|**long**|
 |<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [AdGroup](adgroup.md) object. This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[AdGroupAdditionalField](adgroupadditionalfield.md)|
+|<a name="returncoopadgroups"></a>ReturnCoOpAdGroups|The ad groups within Bing Shopping campaigns with [SubType](campaign.md#subtype) set to *ShoppingCoOperative* are not returned at all unless you set ReturnCoOpAdGroups true.<br/><br/>This element is deprecated and removed in Bing Ads API Version 12.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -58,6 +59,7 @@ The following template shows the order of the [body](#request-body) and [header]
     <GetAdGroupsByCampaignIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <CampaignId>ValueHere</CampaignId>
       <ReturnAdditionalFields i:nil="false">ValueHere</ReturnAdditionalFields>
+      <ReturnCoOpAdGroups i:nil="false">ValueHere</ReturnCoOpAdGroups>
     </GetAdGroupsByCampaignIdRequest>
   </s:Body>
 </s:Envelope>
@@ -109,11 +111,11 @@ The following template shows the order of the [body](#response-body) and [header
             <Month>ValueHere</Month>
             <Year>ValueHere</Year>
           </EndDate>
-          <ForwardCompatibilityMap xmlns:e756="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e756:KeyValuePairOfstringstring>
-              <e756:key d4p1:nil="false">ValueHere</e756:key>
-              <e756:value d4p1:nil="false">ValueHere</e756:value>
-            </e756:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e208="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e208:KeyValuePairOfstringstring>
+              <e208:key d4p1:nil="false">ValueHere</e208:key>
+              <e208:value d4p1:nil="false">ValueHere</e208:value>
+            </e208:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id d4p1:nil="false">ValueHere</Id>
           <Language d4p1:nil="false">ValueHere</Language>
@@ -144,6 +146,10 @@ The following template shows the order of the [body](#response-body) and [header
                   <TargetAndBid>ValueHere</TargetAndBid>
                 </TargetSettingDetail>
               </Details>
+              <!--These fields are applicable if the derived type attribute is set to CoOpSetting-->
+              <BidBoostValue d4p1:nil="false">ValueHere</BidBoostValue>
+              <BidMaxValue d4p1:nil="false">ValueHere</BidMaxValue>
+              <BidOption d4p1:nil="false">ValueHere</BidOption>
             </Setting>
           </Settings>
           <StartDate d4p1:nil="false">
@@ -153,13 +159,13 @@ The following template shows the order of the [body](#response-body) and [header
           </StartDate>
           <Status d4p1:nil="false">ValueHere</Status>
           <TrackingUrlTemplate d4p1:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e757="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
-            <e757:Parameters d4p1:nil="false">
-              <e757:CustomParameter>
-                <e757:Key d4p1:nil="false">ValueHere</e757:Key>
-                <e757:Value d4p1:nil="false">ValueHere</e757:Value>
-              </e757:CustomParameter>
-            </e757:Parameters>
+          <UrlCustomParameters xmlns:e209="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" d4p1:nil="false">
+            <e209:Parameters d4p1:nil="false">
+              <e209:CustomParameter>
+                <e209:Key d4p1:nil="false">ValueHere</e209:Key>
+                <e209:Value d4p1:nil="false">ValueHere</e209:Value>
+              </e209:CustomParameter>
+            </e209:Parameters>
           </UrlCustomParameters>
         </AdGroup>
       </AdGroups>
@@ -173,12 +179,14 @@ The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.m
 ```csharp
 public async Task<GetAdGroupsByCampaignIdResponse> GetAdGroupsByCampaignIdAsync(
 	long campaignId,
-	AdGroupAdditionalField? returnAdditionalFields)
+	AdGroupAdditionalField? returnAdditionalFields,
+	bool? returnCoOpAdGroups)
 {
 	var request = new GetAdGroupsByCampaignIdRequest
 	{
 		CampaignId = campaignId,
-		ReturnAdditionalFields = returnAdditionalFields
+		ReturnAdditionalFields = returnAdditionalFields,
+		ReturnCoOpAdGroups = returnCoOpAdGroups
 	};
 
 	return (await CampaignManagementService.CallAsync((s, r) => s.GetAdGroupsByCampaignIdAsync(r), request));
@@ -187,12 +195,14 @@ public async Task<GetAdGroupsByCampaignIdResponse> GetAdGroupsByCampaignIdAsync(
 ```java
 static GetAdGroupsByCampaignIdResponse getAdGroupsByCampaignId(
 	java.lang.Long campaignId,
-	ArrayList<AdGroupAdditionalField> returnAdditionalFields) throws RemoteException, Exception
+	ArrayList<AdGroupAdditionalField> returnAdditionalFields,
+	boolean returnCoOpAdGroups) throws RemoteException, Exception
 {
 	GetAdGroupsByCampaignIdRequest request = new GetAdGroupsByCampaignIdRequest();
 
 	request.setCampaignId(campaignId);
 	request.setReturnAdditionalFields(returnAdditionalFields);
+	request.setReturnCoOpAdGroups(returnCoOpAdGroups);
 
 	return CampaignManagementService.getService().getAdGroupsByCampaignId(request);
 }
@@ -200,7 +210,8 @@ static GetAdGroupsByCampaignIdResponse getAdGroupsByCampaignId(
 ```php
 static function GetAdGroupsByCampaignId(
 	$campaignId,
-	$returnAdditionalFields)
+	$returnAdditionalFields,
+	$returnCoOpAdGroups)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
@@ -209,6 +220,7 @@ static function GetAdGroupsByCampaignId(
 
 	$request->CampaignId = $campaignId;
 	$request->ReturnAdditionalFields = $returnAdditionalFields;
+	$request->ReturnCoOpAdGroups = $returnCoOpAdGroups;
 
 	return $GLOBALS['CampaignManagementProxy']->GetService()->GetAdGroupsByCampaignId($request);
 }
@@ -216,7 +228,8 @@ static function GetAdGroupsByCampaignId(
 ```python
 response=campaignmanagement_service.GetAdGroupsByCampaignId(
 	CampaignId=CampaignId,
-	ReturnAdditionalFields=ReturnAdditionalFields)
+	ReturnAdditionalFields=ReturnAdditionalFields,
+	ReturnCoOpAdGroups=ReturnCoOpAdGroups)
 ```
 
 ## Requirements

@@ -13,6 +13,9 @@ To set up offine conversion tracking, create an [OfflineConversionGoal](offlinec
 
 After the [OfflineConversionGoal](offlineconversiongoal.md) is set up, wait two hours and then send Bing Ads the [OfflineConversion](offlineconversion.md) data via the [ApplyOfflineConversions](applyofflineconversions.md) operation. It can take up to five hours to view conversion data in the Bing Ads reporting.
 
+> [!NOTE]
+> Although you can upload offline conversions in sandbox for functional testing, the offline conversion data will not be attributed in sandbox performance reporting data.
+
 ## Syntax
 ```xml
 <xs:complexType name="OfflineConversion" xmlns:xs="http://www.w3.org/2001/XMLSchema">

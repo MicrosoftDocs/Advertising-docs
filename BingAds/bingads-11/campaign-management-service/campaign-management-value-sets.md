@@ -32,7 +32,7 @@ The Campaign Management service defines the following value sets.
 |[AudienceAdditionalField](audienceadditionalfield.md)|Defines a list of optional [Audience](audience.md) properties that you can request when calling [GetAudiencesByIds](getaudiencesbyids.md).|
 |[AudienceType](audiencetype.md)|Defines the possible audience types.|
 |[BidOption](bidoption.md)|Reserved.|
-|[BMCStoreSubType](bmcstoresubtype.md)|Reserved.|
+|[BMCStoreSubType](bmcstoresubtype.md)|Defines the possible values for Bing Merchant Center store sub types.|
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible budget types that you can specify for a campaign.|
 |[BusinessGeoCodeStatus](businessgeocodestatus.md)|Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.|
 |[CallToAction](calltoaction.md)|Defines the possible values for a brief, punchy reason for customers to click your ad right now.|
