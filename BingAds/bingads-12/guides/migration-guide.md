@@ -192,7 +192,7 @@ In Bing Ads API Version 11 with the [GetCampaignsByAccountId](../campaign-manage
 
 In Bing Ads API Version 11 with the [GetAdGroupsByCampaignId](../campaign-management-service/getadgroupsbycampaignid.md) and [GetAdGroupsByIds](../campaign-management-service/getadgroupsbyids.md) operations you were required to set the *ReturnCoOpAdGroups* request element to retrieve ad groups of Cooperative campaigns. In Bing Ads API Version 12 the request element is removed and all campaigns are returned by default. 
 
-In Bing Ads API Version 11 with the [GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md) operation you were required to set the *ReturnCoOpStores* request element to retrieve [BMCStore](../campaign-management-service/bmcstore.md) objects that support Cooperative campaigns. In Bing Ads API Version 12 the request element is removed and all [BMCStore](../campaign-management-service/bmcstore.md) objects are returned by default. 
+In Bing Ads API Version 11 with the [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) operation you were required to set the *ReturnCoOpStores* request element to retrieve [BMCStore](../campaign-management-service/bmcstore.md) objects that support Cooperative campaigns. In Bing Ads API Version 12 the request element is removed and all [BMCStore](../campaign-management-service/bmcstore.md) objects are returned by default. 
 
 #### <a name="campaign-audiencetargetingsetting"></a>Audience Targeting Setting
 The *RemarketingTargetingSetting* element of an [AdGroup](../campaign-management-service/adgroup.md) is removed.
