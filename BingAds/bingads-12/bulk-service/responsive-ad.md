@@ -11,6 +11,8 @@ dev_langs:
 # Responsive Ad Record - Bulk
 Defines a responsive ad that can be downloaded and uploaded in a bulk file.
 
+Responsive ads automatically adjust to accommodate the sizes and shapes of native ad formats.
+
 > [!NOTE]
 > Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
 

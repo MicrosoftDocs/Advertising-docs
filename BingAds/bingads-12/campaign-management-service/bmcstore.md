@@ -34,7 +34,7 @@ Elements of this object are defined in the Bing Merchant Center store, and read-
 |<a name="isactive"></a>IsActive|Value will be true if the store is active, and otherwise the value is false.|**boolean**|
 |<a name="isproductadsenabled"></a>IsProductAdsEnabled|Reserved for internal use.|**boolean**|
 |<a name="name"></a>Name|Defines the name of the store as defined in the Bing Merchant Center.|**string**|
-|<a name="subtype"></a>SubType|Reserved.|[BMCStoreSubType](bmcstoresubtype.md)|
+|<a name="subtype"></a>SubType|The Bing Merchant Center store sub type.<br/><br/>This element is only applicable for Bing Merchant Center stores of subtype *CoOp*, and will be nil for all other stores.|[BMCStoreSubType](bmcstoresubtype.md)|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

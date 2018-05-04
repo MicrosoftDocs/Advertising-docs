@@ -20,6 +20,13 @@ Elements of this object are defined in the Bing Merchant Center store, and read-
     <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
     <xs:element minOccurs="0" name="IsProductAdsEnabled" type="xs:boolean" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="SubType" nillable="true" type="tns:BMCStoreSubType">
+      <xs:annotation>
+        <xs:appinfo>
+          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:element>
   </xs:sequence>
 </xs:complexType>
 ```
@@ -33,6 +40,7 @@ Elements of this object are defined in the Bing Merchant Center store, and read-
 |<a name="isactive"></a>IsActive|Value will be true if the store is active, and otherwise the value is false.|**boolean**|
 |<a name="isproductadsenabled"></a>IsProductAdsEnabled|Reserved for internal use.|**boolean**|
 |<a name="name"></a>Name|Defines the name of the store as defined in the Bing Merchant Center.|**string**|
+|<a name="subtype"></a>SubType|The Bing Merchant Center store sub type.<br/><br/>This element is only applicable for Bing Merchant Center stores of subtype *CoOp*, and will be nil for all other stores.<br /><br />This element is not returned in the *BMCStore* object by default. You must set the *ReturnCoOpStores* request element to *True* when calling [GetBMCStoresByCustomerId](getbmcstoresbycustomerid.md).|[BMCStoreSubType](bmcstoresubtype.md)|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

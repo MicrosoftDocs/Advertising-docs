@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Setup Audience ads with the Bing Ads API.
 ---
 # Audience Ads
-Microsoft Audience Ads are high-quality native placements. The ad placements are cross-device and include premium sites that are brand-safe like MSN, Microsoft Outlook, Microsoft Edge and other partners (U.S. only), with more to come. High quality native ad formats naturally blend into the core user experience.  
+Microsoft Audience Ads are high-quality native placements in the [Microsoft Audience Network](http://www.microsoftaudiencenetwork.com/). The ad placements are cross-device and include premium sites that are brand-safe like MSN, Microsoft Outlook, Microsoft Edge and other partners (U.S. only), with more to come. High quality native ad formats naturally blend into the core user experience.  
 
 > [!NOTE]
 > Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 

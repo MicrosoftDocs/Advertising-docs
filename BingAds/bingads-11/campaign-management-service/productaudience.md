@@ -7,7 +7,9 @@ ms.author: eur
 description: Defines a product audience that you can use to remarket products from your Bing Merchant Center store.
 ---
 # ProductAudience Data Object - Campaign Management
-Defines a product audience that you can use to remarket products from your Bing Merchant Center store.
+Defines a product audience that you can use to remarket products from your Bing Merchant Center store. 
+
+Using Product Audiences, you can remarket to customers based on the specific products they viewed or added to their cart. Feed-based ads promote those same products to customers (known as dynamic remarketing).
 
 > [!NOTE]
 > Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 

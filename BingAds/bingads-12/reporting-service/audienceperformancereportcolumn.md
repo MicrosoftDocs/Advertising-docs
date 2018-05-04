@@ -47,6 +47,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AccountStatus" />
     <xs:enumeration value="CampaignStatus" />
     <xs:enumeration value="AdGroupStatus" />
+    <xs:enumeration value="AudienceType" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -64,7 +65,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="adgroupstatus"></a>AdGroupStatus|The ad group status.|
 |<a name="associationstatus"></a>AssociationStatus|The status of the association between the ad group and remarketing list, which indicates whether ads are eligible to display. The possible values are Active, Paused, and Deleted.|
 |<a name="audienceid"></a>AudienceId|The Bing Ads assigned identifier of the audience, for example the remarketing list ID.|
-|<a name="audiencename"></a>AudienceName|The audienc name.|
+|<a name="audiencename"></a>AudienceName|The audience name.|
+|<a name="audiencetype"></a>AudienceType|The audience type.|
 |<a name="averagecpc"></a>AverageCpc|The average cost per click (CPC). The total cost of all clicks on an ad divided by the number of clicks. This is the average amount you're actually charged each time your ad is clicked. For example, if you paid a total of 48.35 for 300 clicks, your average CPC is 0.16.The formula for calculating the average CPC is *(Spend /Clicks)*.|
 |<a name="averageposition"></a>AveragePosition|The average position of the ad on a webpage.|
 |<a name="bidadjustment"></a>BidAdjustment|This attribute reflects the current value of your ad group's audience bid adjustment, even if a different bid adjustment value was used when the ad was shown. This value is the requested percentage to increase or decrease the bid amount for the remarketing list.|
