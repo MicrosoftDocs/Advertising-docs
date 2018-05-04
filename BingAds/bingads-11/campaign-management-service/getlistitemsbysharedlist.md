@@ -79,11 +79,11 @@ The following template shows the order of the [body](#response-body) and [header
     <GetListItemsBySharedListResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
       <ListItems d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
         <SharedListItem d4p1:type="-- derived type specified here with the appropriate prefix --">
-          <ForwardCompatibilityMap xmlns:e801="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e801:KeyValuePairOfstringstring>
-              <e801:key d4p1:nil="false">ValueHere</e801:key>
-              <e801:value d4p1:nil="false">ValueHere</e801:value>
-            </e801:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e253="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e253:KeyValuePairOfstringstring>
+              <e253:key d4p1:nil="false">ValueHere</e253:key>
+              <e253:value d4p1:nil="false">ValueHere</e253:value>
+            </e253:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Type d4p1:nil="false">ValueHere</Type>
           <!--These fields are applicable if the derived type attribute is set to NegativeKeyword-->

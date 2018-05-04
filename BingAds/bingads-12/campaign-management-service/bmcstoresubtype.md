@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the possible values for Bing Merchant Center store sub types.
 ---
 # BMCStoreSubType Value Set - Campaign Management
-Reserved.
+Defines the possible values for Bing Merchant Center store sub types.
 
 ## Syntax
 ```xml
@@ -28,7 +28,7 @@ Reserved.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="coop"></a>CoOp|Reserved.|
+|<a name="coop"></a>CoOp|The Bing Merchant Center store supports Cooperative campaigns.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

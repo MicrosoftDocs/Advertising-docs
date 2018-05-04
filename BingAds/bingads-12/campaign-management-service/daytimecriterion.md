@@ -35,7 +35,7 @@ The *DayTimeCriterion* criterion can be included within [AdGroupCriterion](adgro
 |<a name="day"></a>Day|The day of the week to target. For example, you can target the ads to run only on Friday or Saturday.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting. |[Day](day.md)|
 |<a name="fromhour"></a>FromHour|The starting hour range to target.<br/><br/>The possible values range from 0 to 23.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting. |**int**|
 |<a name="fromminute"></a>FromMinute|The starting minute of the hour to target.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting. |[Minute](minute.md)|
-|<a name="tohour"></a>ToHour|The ending hour range to target.<br/><br/>The possible values range from 0 to 23.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting. |**int**|
+|<a name="tohour"></a>ToHour|The ending hour range to target.<br/><br/>Supported values range from 0 to 24. If the [ToHour](#tohour) is set to 24, the [ToMinute](#tominute) must be *Zero*.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting. |**int**|
 |<a name="tominute"></a>ToMinute|The ending minute of the hour to target.<br/><br/>**Add:** Required<br/>**Update:** Not allowed. If you specify this element it must match the existing setting. |[Minute](minute.md)|
 
 The [DayTimeCriterion](daytimecriterion.md) object has [Inherited Elements](#inheritedelements).

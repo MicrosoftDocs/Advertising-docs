@@ -11,12 +11,15 @@ dev_langs:
 # Offline Conversion Record - Bulk
 Defines an offline conversion that can be uploaded in a bulk file.
 
+> [!NOTE]
+> Bulk download is not supported. You cannot get, update, or delete an offline conversion.
+
 To set up offine conversion tracking, create an [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md). If you set the *CountType* of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) to *All*, then all offline conversions for the same *MicrosoftClickId* with different conversion times will be added cumulatively. If you set the *CountType* of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) to *Unique*, then only the first conversion that happens after an ad click will be counted. Duplicate offline conversions with the same *MicrosoftClickId* and *ConversionTime* will be ignored. In other words only the first offline conversion for a given *MicrosoftClickId* and *ConversionTime* will be counted.
 
 After the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) is set up, wait two hours and then send Bing Ads the offline conversion data. It can take up to five hours to view conversion data in the Bing Ads reporting. For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
 
 > [!NOTE]
-> Bulk download is not supported. You cannot get, update, or delete an offline conversion.
+> Although you can upload offline conversions in sandbox for functional testing, the offline conversion data will not be attributed in sandbox performance reporting data.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Offline Conversion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
@@ -102,6 +105,9 @@ This name must match an existing conversion goal name, otherwise the offline con
 The date and time when the offline conversion occurred. 
 
 The date and time must be within the last 90 days, otherwise the operation will fail when you attempt to send Bing Ads the offline conversion data.
+
+> [!IMPORTANT]
+> The value must be in Coordinated Universal Time (UTC). This differs from the time zone options when you upload offline conversions in the Bing Ads web application. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).
 
 To be counted by Bing Ads as an offline conversion after successful upload, the following additional requirements must be met:
 -  The date and time of the conversion must be set later than the date and time of the recorded click.  

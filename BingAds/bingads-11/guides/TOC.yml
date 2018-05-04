@@ -1000,6 +1000,8 @@
           href: ../campaign-management-service/conversiongoal.md
         - name: ConversionGoalRevenue
           href: ../campaign-management-service/conversiongoalrevenue.md
+        - name: CoOpSetting
+          href: ../campaign-management-service/coopsetting.md
         - name: Criterion
           href: ../campaign-management-service/criterion.md
         - name: CriterionBid

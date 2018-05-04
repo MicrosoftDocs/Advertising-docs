@@ -18,7 +18,10 @@ Gets the Bing Merchant Center stores for the specified customer.
 The *GetBMCStoresByCustomerIdRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
 ### <a name="request-body"></a>Request Body Elements
-There are not any elements in the operation's request body.
+
+|Element|Description|Data Type|
+|-----------|---------------|-------------|
+|<a name="returncoopstores"></a>ReturnCoOpStores|The Bing Merchant Center stores with [SubType](campaign.md#subtype) set to *CoOp* are not returned at all unless you set ReturnCoOpStores true.<br/><br/>This element is deprecated and removed in Bing Ads API Version 12.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -51,7 +54,9 @@ The following template shows the order of the [body](#request-body) and [header]
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetBMCStoresByCustomerIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11" />
+    <GetBMCStoresByCustomerIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+      <ReturnCoOpStores i:nil="false">ValueHere</ReturnCoOpStores>
+    </GetBMCStoresByCustomerIdRequest>
   </s:Body>
 </s:Envelope>
 ```
@@ -73,6 +78,7 @@ The following template shows the order of the [body](#response-body) and [header
           <IsActive>ValueHere</IsActive>
           <IsProductAdsEnabled>ValueHere</IsProductAdsEnabled>
           <Name d4p1:nil="false">ValueHere</Name>
+          <SubType d4p1:nil="false">ValueHere</SubType>
         </BMCStore>
       </BMCStores>
     </GetBMCStoresByCustomerIdResponse>
@@ -83,38 +89,45 @@ The following template shows the order of the [body](#response-body) and [header
 ## <a name="example"></a>Code Syntax
 The example syntax can be used with [Bing Ads SDKs](../guides/client-libraries.md). See [Bing Ads Code Examples](../guides/code-examples.md) for more examples.
 ```csharp
-public async Task<GetBMCStoresByCustomerIdResponse> GetBMCStoresByCustomerIdAsync()
+public async Task<GetBMCStoresByCustomerIdResponse> GetBMCStoresByCustomerIdAsync(
+	bool? returnCoOpStores)
 {
 	var request = new GetBMCStoresByCustomerIdRequest
 	{
+		ReturnCoOpStores = returnCoOpStores
 	};
 
 	return (await CampaignManagementService.CallAsync((s, r) => s.GetBMCStoresByCustomerIdAsync(r), request));
 }
 ```
 ```java
-static GetBMCStoresByCustomerIdResponse getBMCStoresByCustomerId() throws RemoteException, Exception
+static GetBMCStoresByCustomerIdResponse getBMCStoresByCustomerId(
+	boolean returnCoOpStores) throws RemoteException, Exception
 {
 	GetBMCStoresByCustomerIdRequest request = new GetBMCStoresByCustomerIdRequest();
 
+	request.setReturnCoOpStores(returnCoOpStores);
 
 	return CampaignManagementService.getService().getBMCStoresByCustomerId(request);
 }
 ```
 ```php
-static function GetBMCStoresByCustomerId()
+static function GetBMCStoresByCustomerId(
+	$returnCoOpStores)
 {
 
 	$GLOBALS['Proxy'] = $GLOBALS['CampaignManagementProxy'];
 
 	$request = new GetBMCStoresByCustomerIdRequest();
 
+	$request->ReturnCoOpStores = $returnCoOpStores;
 
 	return $GLOBALS['CampaignManagementProxy']->GetService()->GetBMCStoresByCustomerId($request);
 }
 ```
 ```python
-response=campaignmanagement_service.GetBMCStoresByCustomerId()
+response=campaignmanagement_service.GetBMCStoresByCustomerId(
+	ReturnCoOpStores=ReturnCoOpStores)
 ```
 
 ## Requirements

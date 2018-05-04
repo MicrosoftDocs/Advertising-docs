@@ -11,7 +11,10 @@ Defines an offline conversion that you send to Bing Ads.
 
 To set up offine conversion tracking, create an [OfflineConversionGoal](offlineconversiongoal.md). If you set the *CountType* of the [OfflineConversionGoal](offlineconversiongoal.md) to *All*, then all offline conversions for the same *MicrosoftClickId* with different conversion times will be added cumulatively. If you set the *CountType* of the [OfflineConversionGoal](offlineconversiongoal.md) to *Unique*, then only the first conversion that happens after an ad click will be counted. Duplicate offline conversions with the same *MicrosoftClickId* and *ConversionTime* will be ignored. In other words only the first offline conversion for a given *MicrosoftClickId* and *ConversionTime* will be counted.
 
-After the [OfflineConversionGoal](offlineconversiongoal.md) is set up, wait two hours and then send Bing Ads the [OfflineConversion](offlineconversion.md) data via the [ApplyOfflineConversions](applyofflineconversions.md) operation. It can take up to five hours to view conversion data in the Bing Ads reporting.
+After the [OfflineConversionGoal](offlineconversiongoal.md) is set up, wait two hours and then send Bing Ads the [OfflineConversion](offlineconversion.md) data via the [ApplyOfflineConversions](applyofflineconversions.md) operation. It can take up to five hours to view conversion data in the Bing Ads reporting. 
+
+> [!NOTE]
+> Although you can upload offline conversions in sandbox for functional testing, the offline conversion data will not be attributed in sandbox performance reporting data.
 
 ## Syntax
 ```xml

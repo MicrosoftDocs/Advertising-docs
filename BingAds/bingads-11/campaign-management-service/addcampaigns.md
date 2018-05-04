@@ -86,25 +86,26 @@ The following template shows the order of the [body](#request-body) and [header]
           <BudgetType i:nil="false">ValueHere</BudgetType>
           <DailyBudget i:nil="false">ValueHere</DailyBudget>
           <Description i:nil="false">ValueHere</Description>
-          <ForwardCompatibilityMap xmlns:e686="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
-            <e686:KeyValuePairOfstringstring>
-              <e686:key i:nil="false">ValueHere</e686:key>
-              <e686:value i:nil="false">ValueHere</e686:value>
-            </e686:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e138="http://schemas.datacontract.org/2004/07/System.Collections.Generic" i:nil="false">
+            <e138:KeyValuePairOfstringstring>
+              <e138:key i:nil="false">ValueHere</e138:key>
+              <e138:value i:nil="false">ValueHere</e138:value>
+            </e138:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Id i:nil="false">ValueHere</Id>
           <Name i:nil="false">ValueHere</Name>
           <NativeBidAdjustment i:nil="false">ValueHere</NativeBidAdjustment>
           <Status i:nil="false">ValueHere</Status>
+          <SubType i:nil="false">ValueHere</SubType>
           <TimeZone i:nil="false">ValueHere</TimeZone>
           <TrackingUrlTemplate i:nil="false">ValueHere</TrackingUrlTemplate>
-          <UrlCustomParameters xmlns:e687="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
-            <e687:Parameters i:nil="false">
-              <e687:CustomParameter>
-                <e687:Key i:nil="false">ValueHere</e687:Key>
-                <e687:Value i:nil="false">ValueHere</e687:Value>
-              </e687:CustomParameter>
-            </e687:Parameters>
+          <UrlCustomParameters xmlns:e139="http://schemas.datacontract.org/2004/07/Microsoft.AdCenter.Advertiser.CampaignManagement.Api.DataContracts.V11" i:nil="false">
+            <e139:Parameters i:nil="false">
+              <e139:CustomParameter>
+                <e139:Key i:nil="false">ValueHere</e139:Key>
+                <e139:Value i:nil="false">ValueHere</e139:Value>
+              </e139:CustomParameter>
+            </e139:Parameters>
           </UrlCustomParameters>
           <CampaignType i:nil="false">ValueHere</CampaignType>
           <Settings i:nil="false">
@@ -125,6 +126,10 @@ The following template shows the order of the [body](#request-body) and [header]
                   <TargetAndBid>ValueHere</TargetAndBid>
                 </TargetSettingDetail>
               </Details>
+              <!--These fields are applicable if the derived type attribute is set to CoOpSetting-->
+              <BidBoostValue i:nil="false">ValueHere</BidBoostValue>
+              <BidMaxValue i:nil="false">ValueHere</BidMaxValue>
+              <BidOption i:nil="false">ValueHere</BidOption>
             </Setting>
           </Settings>
           <BudgetId i:nil="false">ValueHere</BudgetId>
@@ -157,11 +162,11 @@ The following template shows the order of the [body](#response-body) and [header
           <Details d4p1:nil="false">ValueHere</Details>
           <ErrorCode d4p1:nil="false">ValueHere</ErrorCode>
           <FieldPath d4p1:nil="false">ValueHere</FieldPath>
-          <ForwardCompatibilityMap xmlns:e688="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
-            <e688:KeyValuePairOfstringstring>
-              <e688:key d4p1:nil="false">ValueHere</e688:key>
-              <e688:value d4p1:nil="false">ValueHere</e688:value>
-            </e688:KeyValuePairOfstringstring>
+          <ForwardCompatibilityMap xmlns:e140="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false">
+            <e140:KeyValuePairOfstringstring>
+              <e140:key d4p1:nil="false">ValueHere</e140:key>
+              <e140:value d4p1:nil="false">ValueHere</e140:value>
+            </e140:KeyValuePairOfstringstring>
           </ForwardCompatibilityMap>
           <Index>ValueHere</Index>
           <Message d4p1:nil="false">ValueHere</Message>
