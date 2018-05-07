@@ -31,12 +31,11 @@ For information about changes that were included with each release, see the foll
     - ClickShare
     - EligibleImpressions
     - ImpressionShare
-    - ImpressionsLost
-    - ImpressionsLostToAllInclusiveBaseRate
-    - ImpressionsLostToBid
-    - ImpressionsLostToBudget
-    - ImpressionsLostToNoBid
-    - ImpressionsLostToOther
+    - MissedImpressions
+    - MissedImpressionsInsufficientBid
+    - MissedImpressionsNoTax
+    - MissedImpressionsOther
+    - MissedImpressionsSpendingCapReached
   
 - Added the [Best practices](../hotel-service/best-practices.md) topic to reinforce guidance for specific usage scenarios. 
 

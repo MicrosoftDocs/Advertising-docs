@@ -232,7 +232,6 @@ If you include share of voice (SOV) columns, your request must include at least 
 - ImpressionShare
 - MissedImpressions
 - MissedImpressionsInsufficientBid
-- MissedImpressionsNoBid
 - MissedImpressionsNoTax
 - MissedImpressionsOther
 - MissedImpressionsSpendingCapReached
