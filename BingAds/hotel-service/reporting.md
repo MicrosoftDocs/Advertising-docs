@@ -183,10 +183,10 @@ The request must include at least one dimension column and one measure column.
 
 |Column name|Report column name|Description
 |-|-|-
-|AdvancedBookingWindow|Adv. booking window|The number of days before the check-in date that the user is asking to book the hotel room. For example, if today is 3 May and the user is asking to book a room for 8 May, the column's value is 5.
-|CheckinDay|Checkin day|The day of the week (for example, Wednesday) the user is asking to check into the hotel.
+<!--|AdvancedBookingWindow|Adv. booking window|The number of days before the check-in date that the user is asking to book the hotel room. For example, if today is 3 May and the user is asking to book a room for 8 May, the column's value is 5. -->
+<!--|CheckinDay|Checkin day|The day of the week (for example, Wednesday) the user is asking to check into the hotel. -->
 |Date|Date|A date within the reporting period. This column is automatically added to the report if not specified. The format is YYYY-MM-dd (for example, 2017-11-16).
-|DateType|Date type|Indicates whether the user searched for hotels using specific dates. The following are the possible values.<ul><li>DefaultDate&mdash;The user didn't search for hotels using specific dates</li><li>SelectedDate&mdash;The user searched for hotels using specific dates</li>
+<!--|DateType|Date type|Indicates whether the user searched for hotels using specific dates. The following are the possible values.<ul><li>DefaultDate&mdash;The user didn't search for hotels using specific dates</li><li>SelectedDate&mdash;The user searched for hotels using specific dates</li> -->
 |DeviceType|Device type|The type of device that the ads were displayed on. The following are the possible values.<ul><li>Desktop</li><li>Mobile</li><li>Tablet</li></ul>
 |HotelCountry|Hotel country|The two-letter ISO 3116 country code of the country where the hotel is located. For example, US for United States.
 |HotelGroupId|Hotel group ID|The ID that uniquely identifies the hotel group.
@@ -196,7 +196,7 @@ The request must include at least one dimension column and one measure column.
 |LengthOfStay|Length of stay|The itinerary's length of stay.
 |PartnerHotelId|Partner hotel ID|The ID that the partner uses to uniquely identify the hotel.
 |SlotType|Slot type|The placement of the ads on the results page. The following are the possible values.<ul><li>A&mdash;The priority slot where ads are shown on the results page when it loads.</li><li>M&mdash;The secondary slot where ads are shown only after the user clicks *More rates*.</li></ul>
-|SiteType|Site type|The Bing site that users used to search for hotels. The following are the possible values.<ul><li>LocalUniversal&mdash;The user used Bing.com to search for hotels</li><li>MapResults&mdash;The user used Bing.com/maps to search for hotels</li>
+<!--|SiteType|Site type|The Bing site that users used to search for hotels. The following are the possible values.<ul><li>LocalUniversal&mdash;The user used Bing.com to search for hotels</li><li>MapResults&mdash;The user used Bing.com/maps to search for hotels</li> -->
 |SubAccountId|Subaccount ID|The ID that uniquely identifies the subaccount (hotel campaign).
 |SubAccountName|Subaccount name|The subaccount's display name.
 |UserCountry|User country|The two-letter ISO 3116 country code of the country where the user is located. For example, US for United States.

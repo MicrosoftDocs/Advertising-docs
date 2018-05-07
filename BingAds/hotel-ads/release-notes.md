@@ -18,14 +18,14 @@ For information about changes that were included with each release, see the foll
 ### Nonbreaking change
 
 - Added the following columns to the Performance report. For more information, see [Performance report columns](../hotel-service/reporting.md#performance-report-columns).  
-  
+<!--  
   - [Dimension columns](../hotel-service/reporting.md#dimensioncolumns)  
     
-    - AdvancedBookingWindow
+    - AdvancedBookingWindow  
     - CheckinDay
-    - DateType
+    - DateType  
     - SiteType  
-
+-->
   - [Measure columns](../hotel-service/reporting.md#measurecolumns)  
     
     - ClickShare
