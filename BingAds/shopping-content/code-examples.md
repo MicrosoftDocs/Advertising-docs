@@ -16,18 +16,18 @@ This section provides code examples that show how to use the resources available
 
 ## Products resource code examples
 
-### <a name="batch"></a>
+<a name="batch"></a>
 [Creating a Batch Request](../shopping-content/code-example-create-batch-request.md)  
 
-### <a name="products"></a>
+<a name="products"></a>
 [Managing Products](../shopping-content/code-example-manage-products.md)
 
 ## Catalog status resource code examples
 
-### <a name="status"></a>
+<a name="status"></a>
 [Downloading the Catalog Status Report](../shopping-content/code-example-download-catalog-status-report.md)   
 
 ## Catalogs resource code examples
 
-### <a name="catalog"></a>
+<a name="catalog"></a>
 [Managing Catalogs](../shopping-content/code-example-manage-catalogs.md)  
