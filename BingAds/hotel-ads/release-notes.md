@@ -43,7 +43,7 @@ For information about changes that were included with each release, see the foll
 
 ### Breaking change
 
-- In the near future, the API will impose throttling of some API calls used to retrieve hotels. More to come as details emerge. For information about the best way to retrieve hotels, see [Best practices](best-practices.md).
+- In the near future, the API will impose throttling of some API calls used to retrieve hotels. More to come as details emerge. For information about the best way to retrieve hotels, see [Best practices](../hotel-service/best-practices.md).
 
 
 ## March 28, 2018
