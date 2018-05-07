@@ -8,7 +8,9 @@ ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.author: "scottwhi"
 ---
+
 # API Best Practices
+
 The following are the recommended best practices.
 
 ## Products Resource

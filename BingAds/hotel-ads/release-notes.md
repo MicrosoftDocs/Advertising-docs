@@ -13,6 +13,38 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
+## May 3, 2018
+
+### Nonbreaking change
+
+- Added the following columns to the Performance report. For more information, see [Performance report columns](../hotel-service/reporting.md#performance-report-columns).  
+<!--  
+  - [Dimension columns](../hotel-service/reporting.md#dimensioncolumns)  
+    
+    - AdvancedBookingWindow  
+    - CheckinDay
+    - DateType  
+    - SiteType  
+-->
+  - [Measure columns](../hotel-service/reporting.md#measurecolumns)  
+    
+    - ClickShare
+    - EligibleImpressions
+    - ImpressionShare
+    - MissedImpressions
+    - MissedImpressionsInsufficientBid
+    - MissedImpressionsNoTax
+    - MissedImpressionsOther
+    - MissedImpressionsSpendingCapReached
+  
+- Added the [Best practices](../hotel-service/best-practices.md) topic to reinforce guidance for specific usage scenarios. 
+
+
+### Breaking change
+
+- In the near future, the API will impose throttling of some API calls used to retrieve hotels. More to come as details emerge. For information about the best way to retrieve hotels, see [Best practices](../hotel-service/best-practices.md).
+
+
 ## March 28, 2018
 
 ### Nonbreaking change

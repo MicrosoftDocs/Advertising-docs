@@ -8,7 +8,13 @@ ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.author: "scottwhi"
 ---
+
 # Get Started with the Content API
+
+> [!IMPORTANT]
+> The Bing Ads APIs, including Content API, will stop supporting managed user credentials (username and password) beginning August 1, 2018. At your earliest convenience, please migrate your account to use Microsoft accounts. For information, see [We're changing the way you sign in](https://help.bingads.microsoft.com/#apex/3/en/ext50875/-1/en-us). You will also need to change your code to use OAuth for authentication. For details about using OAuth, see [Authentication with OAuth](https://docs.microsoft.com/en-us/bingads/guides/authentication-oauth?view=bingads-12).
+
+
 ## <a name="credentials"/> Do you have your Bing Ads credentials and developer token?
 To use the Content API, you must have a Bing Ads account and credentials. New users to Bing Ads must use a Microsoft account to access Bing Ads. Current users that haven't transitioned to a Microsoft account may use their Bing Ads user name. 
 

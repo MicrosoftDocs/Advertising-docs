@@ -8,7 +8,9 @@ ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.author: "scottwhi"
 ---
+
 # Products Resource
+
 The Products resource lets you manage product offerings in your Bing Merchant Center store (BMC). For information about using the Products resources, see [Managing your Products](../shopping-content/manage-products.md). For examples that show how to add, delete, and get products, see [Code Examples](../shopping-content/code-examples.md).
 
 ## Base URI
@@ -44,6 +46,10 @@ The endpoints may include the following query parameters.
 |<a name="starttoken"/>start-token|Optional. Use to page through a store's list of products. The token identifies the next page of products to return in a List request. Do not specify this parameter in the first List request. If the catalog contains more than the requested number of products (see the **max-results** query parameter), the response will include the `nextPageToken` field (see [Products](#products)), which contains the token value that you use in the next List request.
 
 ## <a name="headers"/> Headers
+
+> [!IMPORTANT]
+> The Bing Ads APIs, including Content API, will stop supporting managed user credentials (username and password) beginning August 1, 2018. At your earliest convenience, please migrate your account to use Microsoft accounts. For information, see [We're changing the way you sign in](https://help.bingads.microsoft.com/#apex/3/en/ext50875/-1/en-us). You will also need to change your code to use OAuth for authentication. For details about using OAuth, see [Authentication with OAuth](https://docs.microsoft.com/en-us/bingads/guides/authentication-oauth?view=bingads-12).
+
 
 The following are the request and response headers.
  
