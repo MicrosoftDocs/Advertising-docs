@@ -183,7 +183,10 @@ The request must include at least one dimension column and one measure column.
 
 |Column name|Report column name|Description
 |-|-|-
+|AdvancedBookingWindow|Adv. booking window|The number of days before the check-in date that the user is asking to book the hotel room. For example, if today is 3 May and the user is asking to book a room for 8 May, the column's value is 5.
+|CheckinDay|Checkin day|The day of the week (for example, Wednesday) the user is asking to check into the hotel.
 |Date|Date|A date within the reporting period. This column is automatically added to the report if not specified. The format is YYYY-MM-dd (for example, 2017-11-16).
+|DateType|Date type|Indicates whether the user searched for hotels using specific dates. The following are the possible values.<ul><li>DefaultDate&mdash;The user didn't search for hotels using specific dates</li><li>SelectedDate&mdash;The user searched for hotels using specific dates</li>
 |DeviceType|Device type|The type of device that the ads were displayed on. The following are the possible values.<ul><li>Desktop</li><li>Mobile</li><li>Tablet</li></ul>
 |HotelCountry|Hotel country|The two-letter ISO 3116 country code of the country where the hotel is located. For example, US for United States.
 |HotelGroupId|Hotel group ID|The ID that uniquely identifies the hotel group.
@@ -193,6 +196,7 @@ The request must include at least one dimension column and one measure column.
 |LengthOfStay|Length of stay|The itinerary's length of stay.
 |PartnerHotelId|Partner hotel ID|The ID that the partner uses to uniquely identify the hotel.
 |SlotType|Slot type|The placement of the ads on the results page. The following are the possible values.<ul><li>A&mdash;The priority slot where ads are shown on the results page when it loads.</li><li>M&mdash;The secondary slot where ads are shown only after the user clicks *More rates*.</li></ul>
+|SiteType|Site type|The Bing site that users used to search for hotels. The following are the possible values.<ul><li>LocalUniversal&mdash;The user used Bing.com to search for hotels</li><li>MapResults&mdash;The user used Bing.com/maps to search for hotels</li>
 |SubAccountId|Subaccount ID|The ID that uniquely identifies the subaccount (hotel campaign).
 |SubAccountName|Subaccount name|The subaccount's display name.
 |UserCountry|User country|The two-letter ISO 3116 country code of the country where the user is located. For example, US for United States.
@@ -203,16 +207,46 @@ The request must include at least one dimension column and one measure column.
 
 |Column name|Report column name|Description
 |-|-|-
-|AverageCPC|Avg. CPC|The average cost per click, which is calculated by dividing the total cost of all clicks by the number of clicks. The cost is in the account's currency.  Data is available starting from 12/06/2017.
+|AverageCPC|Avg. CPC|The average cost per click, which is calculated by dividing the total cost of all clicks by the number of clicks. The cost is in the account's currency.  Data is available starting from December 6, 2017.
 |AverageCPCUSD|Avg. CPC USD|The average cost per click, which is calculated by dividing the total cost of all clicks by the number of clicks. The cost is in US dollars.
 |AveragePosition|Avg. pos.|The average position of ads on the results page. Position refers to the order of the ad on the page relative to all other ads across all slots.
 |AverageSlotPosition|Avg. slot pos.|The average position of ads in the slot type. If you include this metric, you should also include the SlotType dimension column.
 |Clicks|Clicks|The number of time ads were clicked.
+|ClickShare|Click share|The percentage of clicks that went to your ads, out of the total number of clicks in the market you were targeting. For example, out of the estimated 1,000 clicks that occurred on this day in your targeted market, you had about 230, or 23%. The value is in the range 0.0 through 1.0. 
 |CTR|CTR|The click-through-rate of the ads. CTR is calculated by dividing the number of times the ads were clicked by the number of impressions.
+|EligibleImpressions|Eligible impr.|The total number of realized and unrealized impressions (impressions plus missed impressions).
 |Impressions|Impr.|The number of times ads were shown.
-|Spend|Spend|The total cost of all clicks. The cost is in the account's currency.  Data is available starting from 12/06/2017.
+|ImpressionShare|Impr. share|The percentage of impressions, out of the total available impressions in the market you were targeting. For example, out of an estimated 59,000 impressions that occurred on this day in your targeted market, you received 2,300, or 3%. The value is in the range 0.0 through 1.0.
+|MissedImpressions|Missed impr.|The total number of impressions lost. This is the sum of the following columms:<ul><li>MissedImpressionsInsufficientBid</li><li>MissedImpressionsNoTax</li><li>MissedImpressionsOther</li><li>MissedImpressionsSpendingCapReached</li></ul>
+|MissedImpressionsInsufficientBid|Missed impr. insufficient bid|The number of impressions lost because your bids were low and not competing well in the auction marketplace. 
+|MissedImpressionsNoTax|Missed impr. no tax|The number of impressions lost because the hotel didn't specify taxes.
+|MissedImpressionsOther|Missed impr. other|The number of impressions lost for all other reasons. Typically, low ranking or your rate was available in the **More rates** section, but the user did not expand the section to view your rate.
+|MissedImpressionsSpendingCapReached|Missed impr. spending cap reached|The number of impressions lost because you reached your daily spending limit.
+|Spend|Spend|The total cost of all clicks. The cost is in the account's currency.  Data is available starting from December 6, 2017.
 |SpendUSD|Spend USD|The total cost of all clicks. The cost is in US dollars.
 
+> [!NOTE]
+> If you include share of voice (SOV) columns, you must include at least one of the ID dimension columns. For example, if you include one or more of these columns:
+>
+> - ClickShare
+> - EligibleImpressions
+> - ImpressionShare
+> - MissedImpressions
+> - MissedImpressionsInsufficientBid
+> - MissedImpressionsNoBid
+> - MissedImpressionsNoTax
+> - MissedImpressionsOther
+> - MissedImpressionsSpendingCapReached
+>
+> You must include one or more of these columns or the report request will fail:
+>
+> - HotelGroupId
+> - HotelId
+> - PartnerHotelId
+> - SubAccountId
+
+> [!NOTE]
+> SOV data is available beginning May 1, 2018. If you specify a reporting period that includes dates prior to May 1, 2018, the SOV fields will contain zero (0) for dates prior to 1 May.
 
 ## Sample Performance report
 
