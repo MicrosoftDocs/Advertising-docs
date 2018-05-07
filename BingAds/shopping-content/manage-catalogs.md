@@ -18,6 +18,11 @@ The following are the base URIs that you may use to call the Content API. You ma
 
 Each HTTP request must include the user's credentials and your developer token. To specify the user's credentials, set either the [AuthenticationToken](../shopping-content/catalogs-resource.md#authtoken) header or the [UserName](../shopping-content/catalogs-resource.md#username) and [Password](../shopping-content/catalogs-resource.md#password) headers, but not both. 
 
+> [!IMPORTANT]
+> The Bing Ads APIs, including Content API, will stop supporting managed user credentials (username and password) beginning August 1, 2018. At your earliest convenience, please migrate your account to use Microsoft accounts. For information, see [We're changing the way you sign in](https://help.bingads.microsoft.com/#apex/3/en/ext50875/-1/en-us). You will also need to change your code to use OAuth for authentication. For details about using OAuth, see [Authentication with OAuth](https://docs.microsoft.com/en-us/bingads/guides/authentication-oauth?view=bingads-12).
+
+
+
 To specify your developer token, set the [DeveloperToken](../shopping-content/catalogs-resource.md#devtoken) header.
 
 If you manage catalogs on behalf of other customers, you must set the [CustomerId](../shopping-content/catalogs-resource.md#customerid) header to the customer ID of the customer whose store you're managing, and the [CustomerAccountId](../shopping-content/catalogs-resource.md#customeraccountid) header to the account ID of any of the customer's accounts that you manage (it doesn't matter which managed account).
