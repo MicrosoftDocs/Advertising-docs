@@ -225,28 +225,27 @@ The request must include at least one dimension column and one measure column.
 |Spend|Spend|The total cost of all clicks. The cost is in the account's currency.  Data is available starting from December 6, 2017.
 |SpendUSD|Spend USD|The total cost of all clicks. The cost is in US dollars.
 
-> [!NOTE]
-> If you include share of voice (SOV) columns, you must include at least one of the ID dimension columns. For example, if you include one or more of these columns:
->
-> - ClickShare
-> - EligibleImpressions
-> - ImpressionShare
-> - MissedImpressions
-> - MissedImpressionsInsufficientBid
-> - MissedImpressionsNoBid
-> - MissedImpressionsNoTax
-> - MissedImpressionsOther
-> - MissedImpressionsSpendingCapReached
->
-> You must include one or more of these columns or the report request will fail:
->
-> - HotelGroupId
-> - HotelId
-> - PartnerHotelId
-> - SubAccountId
+If you include share of voice (SOV) columns, your request must include at least one ID dimension column. For example, if you include one or more of these SOV columns:
+
+- ClickShare
+- EligibleImpressions
+- ImpressionShare
+- MissedImpressions
+- MissedImpressionsInsufficientBid
+- MissedImpressionsNoBid
+- MissedImpressionsNoTax
+- MissedImpressionsOther
+- MissedImpressionsSpendingCapReached
+
+You must include one or more of these ID columns or the report request fails:
+
+- HotelGroupId
+- HotelId
+- PartnerHotelId
+- SubAccountId
 
 > [!NOTE]
-> SOV data is available beginning May 1, 2018. If you specify a reporting period that includes dates prior to May 1, 2018, the SOV fields will contain zero (0) for dates prior to 1 May.
+> SOV data is available beginning May 1, 2018. If you specify a reporting period that includes dates prior to May 1, 2018, the SOV fields will contain a zero (0) value for dates prior to 1 May.
 
 ## Sample Performance report
 
