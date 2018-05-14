@@ -52,10 +52,10 @@ Defines the entity types for retrieving auction insights.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="account"></a>Account|Reserved.|
-|<a name="adgroup"></a>AdGroup|Reserved.|
-|<a name="campaign"></a>Campaign|Reserved.|
-|<a name="keyword"></a>Keyword|Reserved.|
+|<a name="account"></a>Account|Request account level auction insight data.|
+|<a name="adgroup"></a>AdGroup||Request ad group level auction insight data.|
+|<a name="campaign"></a>Campaign||Request campaign level auction insight data.|
+|<a name="keyword"></a>Keyword||Request keyword level auction insight data.|
 
 ## Requirements
 Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  

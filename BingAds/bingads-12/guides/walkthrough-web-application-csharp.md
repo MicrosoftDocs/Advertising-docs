@@ -140,6 +140,7 @@ The example web application sends authentication requests to the Microsoft accou
     ```csharp
     using System;
     using System.Collections.Generic;
+    using System.Configuration;
     using System.Linq;
     using System.Net.Http;
     using System.ServiceModel;

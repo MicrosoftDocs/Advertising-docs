@@ -26,7 +26,7 @@ When you call a service operation such as [GetCampaignsByAccountId](../campaign-
 
 ```xml
 <s:Envelope xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+  <s:Header xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
     <Action mustUnderstand="1">GetCampaignsByAccountId</Action>
     <ApplicationToken i:nil="false">ValueHere</ApplicationToken>
     <AuthenticationToken i:nil="false">ValueHere</AuthenticationToken>
@@ -37,7 +37,7 @@ When you call a service operation such as [GetCampaignsByAccountId](../campaign-
     <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
-    <GetCampaignsByAccountIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v11">
+    <GetCampaignsByAccountIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
       <AccountId>ValueHere</AccountId>
       <CampaignType>ValueHere</CampaignType>
     </GetCampaignsByAccountIdRequest>
@@ -90,14 +90,14 @@ Call [GetUser](../customer-management-service/getuser.md) with your Bing Ads cre
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
     <s:Header>
-    <h:ApplicationToken i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v11" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
-    <h:AuthenticationToken xmlns:h="https://bingads.microsoft.com/Customer/v11">OAuthAccessTokenGoesHere</h:AuthenticationToken>
-    <h:DeveloperToken xmlns:h="https://bingads.microsoft.com/Customer/v11">DeveloperTokenGoesHere</h:DeveloperToken>
-    <h:Password i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v11" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
-    <h:UserName i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v11" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    <h:ApplicationToken i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v12" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    <h:AuthenticationToken xmlns:h="https://bingads.microsoft.com/Customer/v12">OAuthAccessTokenGoesHere</h:AuthenticationToken>
+    <h:DeveloperToken xmlns:h="https://bingads.microsoft.com/Customer/v12">DeveloperTokenGoesHere</h:DeveloperToken>
+    <h:Password i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v12" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    <h:UserName i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v12" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
     </s:Header>
     <s:Body>
-    <GetUserRequest xmlns="https://bingads.microsoft.com/Customer/v11">
+    <GetUserRequest xmlns="https://bingads.microsoft.com/Customer/v12">
         <UserId i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
     </GetUserRequest>
     </s:Body>
@@ -110,23 +110,23 @@ Then call [SearchAccounts](../customer-management-service/getuser.md) with the U
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
     <s:Header>
-    <h:ApplicationToken i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v11" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
-    <h:AuthenticationToken xmlns:h="https://bingads.microsoft.com/Customer/v11">OAuthAccessTokenGoesHere</h:AuthenticationToken>
-    <h:DeveloperToken xmlns:h="https://bingads.microsoft.com/Customer/v11">DeveloperTokenGoesHere</h:DeveloperToken>
-    <h:Password i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v11" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
-    <h:UserName i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v11" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    <h:ApplicationToken i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v12" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    <h:AuthenticationToken xmlns:h="https://bingads.microsoft.com/Customer/v12">OAuthAccessTokenGoesHere</h:AuthenticationToken>
+    <h:DeveloperToken xmlns:h="https://bingads.microsoft.com/Customer/v12">DeveloperTokenGoesHere</h:DeveloperToken>
+    <h:Password i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v12" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+    <h:UserName i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v12" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
     </s:Header>
     <s:Body>
-    <SearchAccountsRequest xmlns="https://bingads.microsoft.com/Customer/v11">
-        <Predicates xmlns:a="https://bingads.microsoft.com/Customer/v11/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <SearchAccountsRequest xmlns="https://bingads.microsoft.com/Customer/v12">
+        <Predicates xmlns:a="https://bingads.microsoft.com/Customer/v12/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <a:Predicate>
             <a:Field>UserId</a:Field>
             <a:Operator>Equals</a:Operator>
             <a:Value>UserIdGoesHere</a:Value>
         </a:Predicate>
         </Predicates>
-        <Ordering i:nil="true" xmlns:a="https://bingads.microsoft.com/Customer/v11/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
-        <PageInfo xmlns:a="https://bingads.microsoft.com/Customer/v11/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <Ordering i:nil="true" xmlns:a="https://bingads.microsoft.com/Customer/v12/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+        <PageInfo xmlns:a="https://bingads.microsoft.com/Customer/v12/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <a:Index>0</a:Index>
         <a:Size>10</a:Size>
         </PageInfo>
