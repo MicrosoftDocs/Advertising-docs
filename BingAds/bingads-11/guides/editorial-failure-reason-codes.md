@@ -50,7 +50,7 @@ The following are the possible reason codes for an ad or keyword that failed edi
 |50|Editorial Guidelines: Bing Ads requires the ad title and ad text to be punctuated correctly and not excessively.|
 |51|Quality Guidelines: Your website does not contain the offer indicated in the ad text.|
 |52|Editorial Guidelines: The phone number in your ad text is not valid.|
-|53|Non-specific calls-to-action (e.g. ?click here?) are not allowed.|
+|53|Non-specific calls-to-action (e.g. "click here") are not allowed.|
 |54|Editorial Guidelines: Bing Ads requires the ad title and ad text to be spelled correctly.|
 |55|Editorial Guidelines: Your website exhibits behavior that is not allowed on Bing Ads.|
 |56|Pop-up/pop-under ads are not allowed on landing page.|

@@ -100,7 +100,7 @@ var bulkPriceAdExtension = new BulkPriceAdExtension
                 },
             },
             // 'End Date' column header in the Bulk file
-            EndDate = new Microsoft.BingAds.V11.CampaignManagement.Date
+            EndDate = new Microsoft.BingAds.V12.CampaignManagement.Date
             {
                 Month = 12,
                 Day = 31,

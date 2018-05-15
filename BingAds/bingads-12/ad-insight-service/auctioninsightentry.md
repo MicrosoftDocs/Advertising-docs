@@ -4,13 +4,10 @@ ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines an auction insight entry.
+description: Defines an auction insight entry for a domain.
 ---
 # AuctionInsightEntry Data Object - Ad Insight
-Defines an auction insight entry.
-
-> [!NOTE]
-> Reserved for future use.
+Defines an auction insight entry for a domain.
 
 ## Syntax
 ```xml
@@ -27,9 +24,9 @@ Defines an auction insight entry.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="aggregatedkpi"></a>AggregatedKpi|Reserved.|[AuctionInsightKpi](auctioninsightkpi.md)|
-|<a name="displaydomain"></a>DisplayDomain|Reserved.|**string**|
-|<a name="segmentedkpis"></a>SegmentedKpis|Reserved.|[AuctionInsightKpi](auctioninsightkpi.md) array|
+|<a name="aggregatedkpi"></a>AggregatedKpi|The auction insight key performance indicators across all segments for the display domain.<br/><br/>The aggregated data is available whether or not you also requested [SegmentedKpis](#segmentedkpis).|[AuctionInsightKpi](auctioninsightkpi.md)|
+|<a name="displaydomain"></a>DisplayDomain|The display URL of another advertiser who participates in the same auctions as you.<br/><br/>The competing websites listed in your auction insights data are those who enter the same auctions as you, and are eligible for the same impressions that you are. Competitors aren't necessarily determined on how similar their keywords, match types, or other targeting settings are to your own, and auction insights doesn't provide a full report on these metrics for other advertisers.|**string**|
+|<a name="segmentedkpis"></a>SegmentedKpis|The list of auction insight key performance indicators for each unique combination of the requested segments.<br/><br/>The segmented data is only available when you include an [AuctionSegmentSearchParameter](auctionsegmentsearchparameter.md) object in the [GetAuctionInsightData](getauctioninsightdata.md) request.|[AuctionInsightKpi](auctioninsightkpi.md) array|
 
 ## Requirements
 Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
