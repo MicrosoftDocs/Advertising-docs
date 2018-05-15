@@ -26,7 +26,7 @@ At a high level you should complete the following steps to authenticate a Micros
 2.  Request user consent for your application to manage their Bing Ads accounts, by initiating either the [Implicit Grant Flow](#implicit) or [Authorization Code Grant Flow](#authorizationcode).
 
     > [!IMPORTANT]
-    > You must provide consent at least once through the web application consent flow. For repeat or long term authentication, you should follow the [authorization code grant flow](#authorizationcode) for obtaining an access token and refresh token. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. You should expect to request user consent again for example, if the Microsoft Account password was changed or the Microsoft Account owner removed permissions for your application to authenticate on their behalf. 
+    > You must provide consent at least once through the web application consent flow. For repeat or long term authentication, you should follow the [authorization code grant flow](#authorizationcode) for obtaining an access token and refresh token. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. You should expect to request user consent again for example, if the Microsoft Account owner went through account recovery, changed their password, or otherwise removed permissions for your application to authenticate on their behalf. 
     > 
     > Users can revoke your application's access to their accounts at [https://account.live.com/consent/Manage](https://account.live.com/consent/Manage).
 
@@ -56,7 +56,7 @@ Before you can manage authentication for users of your Bing Ads application, you
 
     ![Add platform](media/register-add-platform.PNG "Add platform")
     
-    If you register a native app you should ignore the provided redirect URI and instead use *https://login.live.com/oauth20_desktop.srf* as the redirect URI. If you register a web app, then you must also provide your exact redirect URI (including for example the *https* prefix).
+    If you register a native app you should ignore the provided redirect URI and instead use *https://login.live.com/oauth20_desktop.srf* as the redirect URI. If you register a web app, then you must also provide your exact redirect URI (including for example the *https* prefix). Clients running apps on services that span regions and devices such as Microsoft Azure should register a Web app with client secret.
 
 5.  Under **Advanced Options**, check the box for **Live SDK support**.
 
@@ -155,10 +155,16 @@ For repeat or long term authentication, you should follow the authorization code
     client_id=000A1A1A1&grant_type=refresh_token&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf&refresh_token=dsa987gfs890d89g8e89we...
     ```
     
-7.  A refresh token can last up to 90 days. Regardless, you should expect to start again from Step 1 and request user consent if, for example you [signed the user out](#userlogout), the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf. In that case, the authorization service would return an invalid grant error as shown in the following example.
+7.  Refresh tokens are, and always will be, completely opaque to your application. They are long-lived e.g., 90 days for public clients, but the app should not be written to expect that a refresh token will last for any period of time. Refresh tokens can be invalidated at any moment, and the only way for an app to know if a refresh token is valid is to attempt to redeem it by making a token request. Even if you continuously refresh the token on the same device with the most recent refresh token, you should expect to start again from Step 1 and request user consent if, for example you [signed the user out](#userlogout), the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf. At any time without prior warning Microsoft may determine that user consent should again be granted. In that case, the authorization service would return an invalid grant error as shown in the following example.
 
     ```json
     {"error":"invalid_grant","error_description":"The user could not be authenticated or the grant is expired. The user must first sign in and if needed grant the client application access to the requested scope."}
+    ```
+
+    Please keep in mind that public refresh tokens are only bound to the granted device. For example if you registered a Native app and use https://login.live.com/oauth20_desktop.srf as the redirect URI, we only guarantee that it can be refreshed on the same device. Clients running apps on services that span regions and devices such as Microsoft Azure should register a Web app with client secret. The redirect URI can be localhost but cannot be https://login.live.com/oauth20_desktop.srf. If you use https://login.live.com/oauth20_desktop.srf with a client secret the following error would be returned.
+
+    ```json
+    {"error":"invalid_request","error_description":"Public clients can't send a client secret."} Likewise for Web apps please note that refresh tokens can be invalidated at any moment.
     ```
 
 ## <a name="userlogout"></a>Sign the user out

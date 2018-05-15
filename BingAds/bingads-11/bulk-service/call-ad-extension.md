@@ -170,7 +170,7 @@ Used to associate records in the bulk upload file with records in the results fi
 **Delete:** Read-only  
 
 ### <a name="countrycode"></a>Country Code
-The country code where the phone number is registered. The country code must contain a 2 character country code. For a list of country code values, see [Geographical Location Codes](../guides/geographical-location-codes.md).
+The country code where the phone number is registered. The country code must contain a 2 character country code. The supported country code values include AU, GB, ID, IE, IN, MY, NZ, PH, SG, TH, US, and VN.
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    

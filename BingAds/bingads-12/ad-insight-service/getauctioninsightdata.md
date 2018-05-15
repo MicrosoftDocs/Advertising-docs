@@ -4,7 +4,7 @@ ms.service: bing-ads-ad-insight-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets auction insight data.
+description: Gets auction insight data for an account, campaigns, ad groups, or keywords.
 dev_langs: 
   - csharp
   - java
@@ -12,10 +12,16 @@ dev_langs:
   - python
 ---
 # GetAuctionInsightData Service Operation - Ad Insight
-Gets auction insight data.
+Gets auction insight data for an account, campaigns, ad groups, or keywords.
+
+By showing you where you are succeeding and where you might be missing opportunities for improved performance, the auction insight data can help you make strategic optimization decisions.
+
+If this is a new campaign or if you have too few impressions, the auction insight data will not be generated.
+
+The data retention period is 180 days.
 
 > [!NOTE]
-> Reserved for future use.
+> You must specify the account identifier in the *CustomerAccountId* header element.
 
 ## <a name="request"></a>Request Elements
 The *GetAuctionInsightDataRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -24,9 +30,9 @@ The *GetAuctionInsightDataRequest* object defines the [body](#request-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="entityids"></a>EntityIds|Reserved.|**long** array|
-|<a name="entitytype"></a>EntityType|Reserved.|[EntityType](entitytype.md)|
-|<a name="searchparameters"></a>SearchParameters|Reserved.|[SearchParameter](searchparameter.md) array|
+|<a name="entityids"></a>EntityIds|The Bing Ads identifiers for up to 200 campaigns, ad groups, or keywords.<br/><br/>This element is required for the campaign, ad group, and keyword entity types. If the [EntityType](#entitytype) is Account, this element is optional and will override the value set in the CustomerAccountId header.|**long** array|
+|<a name="entitytype"></a>EntityType|The entity level that you want to request auction insight data.<br/><br/>The supported values are Account, Campaign, AdGroup, and Keyword.<br/><br/>This element is required.|[EntityType](entitytype.md)|
+|<a name="searchparameters"></a>SearchParameters|The search parameters define your criteria and filters for the auction insight data.<br/><br/>You must include exactly one [DateRangeSearchParameter](daterangesearchparameter.md). In addition you can optionally include up to three different [AuctionSegmentSearchParameter](auctionsegmentsearchparameter.md) objects e.g., for Day, DayOfWeek, and Device.|[SearchParameter](searchparameter.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -38,7 +44,7 @@ The *GetAuctionInsightDataResponse* object defines the [body](#response-body) an
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="result"></a>Result|Reserved.|[AuctionInsightResult](auctioninsightresult.md)|
+|<a name="result"></a>Result|Includes the auction insight entries for the requested entity, date range, and segment search parameters.|[AuctionInsightResult](auctioninsightresult.md)|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

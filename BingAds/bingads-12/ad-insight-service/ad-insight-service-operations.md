@@ -11,7 +11,7 @@ The Ad Insight service defines the following service operations.
 
 |Service Operation|Description|Request Limits|
 |---|---|---|
-|[GetAuctionInsightData](getauctioninsightdata.md)|Gets auction insight data.|Not applicable.|
+|[GetAuctionInsightData](getauctioninsightdata.md)|Gets auction insight data for an account, campaigns, ad groups, or keywords.|200 *EntityIds*|
 |[GetBidLandscapeByAdGroupIds](getbidlandscapebyadgroupids.md)|Given a list of existing ad groups, this operation returns for each a list of suggested bids and estimated performance statistics.|1,000 *AdGroupBidLandscapeInput*|
 |[GetBidLandscapeByKeywordIds](getbidlandscapebykeywordids.md)|Given a list of existing keywords, this operation returns for each a list of suggested bids and estimated performance statistics from 1 to  7 days.|1,000 *KeywordIds*|
 |[GetBidOpportunities](getbidopportunities.md)|Gets the keyword bid opportunities of the specified ad group.|1 *AdGroupId*<br />1 *CampaignId*|

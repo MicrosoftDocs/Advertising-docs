@@ -9,9 +9,6 @@ description: Defines the possible auction segment values.
 # AuctionSegment Value Set - Ad Insight
 Defines the possible auction segment values.
 
-> [!NOTE]
-> Reserved for future use.
-
 ## Syntax
 ```xml
 <xs:simpleType name="AuctionSegment" xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -66,12 +63,12 @@ Defines the possible auction segment values.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="day"></a>Day|Reserved.|
-|<a name="dayofweek"></a>DayOfWeek|Reserved.|
-|<a name="device"></a>Device|Reserved.|
-|<a name="month"></a>Month|Reserved.|
-|<a name="quarter"></a>Quarter|Reserved.|
-|<a name="week"></a>Week|Reserved.|
+|<a name="day"></a>Day|The auction insight data is segmented by day.|
+|<a name="dayofweek"></a>DayOfWeek|The auction insight data is segmented by day of week.|
+|<a name="device"></a>Device|The auction insight data is segmented by device.|
+|<a name="month"></a>Month|The auction insight data is segmented by month.|
+|<a name="quarter"></a>Quarter|The auction insight data is segmented by quarter.|
+|<a name="week"></a>Week|The auction insight data is segmented by week.|
 
 ## Requirements
 Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
