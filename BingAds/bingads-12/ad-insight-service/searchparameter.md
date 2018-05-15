@@ -10,6 +10,7 @@ description: This is the base class from which keyword idea search parameter obj
 This is the base class from which keyword idea search parameter objects derive. 
 
 Do not try to instantiate a [SearchParameter](searchparameter.md). You can create one or more following objects that derive from it.
+- [AuctionSegmentSearchParameter](auctionsegmentsearchparameter.md)
 - [CategorySearchParameter](categorysearchparameter.md)  
 - [CompetitionSearchParameter](competitionsearchparameter.md)  
 - [DateRangeSearchParameter](daterangesearchparameter.md)  
@@ -24,9 +25,6 @@ Do not try to instantiate a [SearchParameter](searchparameter.md). You can creat
 - [SearchVolumeSearchParameter](searchvolumesearchparameter.md)  
 - [SuggestedBidSearchParameter](suggestedbidsearchparameter.md)  
 - [UrlSearchParameter](urlsearchparameter.md)  
-
-> [!NOTE]
-> The [AuctionSegmentSearchParameter](auctionsegmentsearchparameter.md) is reserved for future use.
 
 ## Syntax
 ```xml

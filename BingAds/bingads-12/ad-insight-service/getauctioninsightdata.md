@@ -30,7 +30,7 @@ The *GetAuctionInsightDataRequest* object defines the [body](#request-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="entityids"></a>EntityIds|The Bing Ads identifiers for up to 200 campaigns, ad groups, or keywords.<br/><br/>This element is not applicable if the [EntityType](#entitytype) is Account, and otherwise entity identifiers are required.|**long** array|
+|<a name="entityids"></a>EntityIds|The Bing Ads identifiers for up to 200 campaigns, ad groups, or keywords.<br/><br/>This element is required for the campaign, ad group, and keyword entity types. If the [EntityType](#entitytype) is Account, this element is optional and will override the value set in the CustomerAccountId header.|**long** array|
 |<a name="entitytype"></a>EntityType|The entity level that you want to request auction insight data.<br/><br/>The supported values are Account, Campaign, AdGroup, and Keyword.<br/><br/>This element is required.|[EntityType](entitytype.md)|
 |<a name="searchparameters"></a>SearchParameters|The search parameters define your criteria and filters for the auction insight data.<br/><br/>You must include exactly one [DateRangeSearchParameter](daterangesearchparameter.md). In addition you can optionally include up to three different [AuctionSegmentSearchParameter](auctionsegmentsearchparameter.md) objects e.g., for Day, DayOfWeek, and Device.|[SearchParameter](searchparameter.md) array|
 

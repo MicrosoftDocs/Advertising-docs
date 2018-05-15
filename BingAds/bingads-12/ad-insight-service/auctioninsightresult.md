@@ -26,7 +26,7 @@ Defines the auction insight results from calling the [GetAuctionInsightData](get
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="entries"></a>Entries|One or more auction insight entries i.e., one result per domain that you competed with in the auction.|[AuctionInsightEntry](auctioninsightentry.md) array|
-|<a name="segments"></a>Segments|The segments if any were specified via one or more [AuctionSegmentSearchParameter](auctionsegmentsearchparameter.md) in the [GetAuctionInsightData](getauctioninsightdata.md) request.|[AuctionSegment](auctionsegment.md) array|
+|<a name="segments"></a>Segments|The segments if any were specified via one or more [AuctionSegmentSearchParameter](auctionsegmentsearchparameter.md) in the [GetAuctionInsightData](getauctioninsightdata.md) request.<br/><br/>The list of auction segments is in the same order as the [AuctionSegment](auctionsegment.md) value set i.e., Day, Week, Month, Quarter, DayOfWeek, and then Device. For example if you requested the Day, Device, and Quarter segments for May 1, 2018, this element will contain a list of three auction segments in the following order: Day, Quarter, and Device.|[AuctionSegment](auctionsegment.md) array|
 |<a name="usedimpressions"></a>UsedImpressions|The percent of impressions that were used to generate the auction insight entries.<br/><br/>The value can range from 0 to 1.0, for example 0.8 indicates that 80 percent of impressions were used.|**double**|
 |<a name="usedkeywords"></a>UsedKeywords|The number of keywords that were used to generate the auction insight entries.|**double**|
 
