@@ -4,10 +4,15 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Defines the ad group level settings for feed-based cooperative bidding campaigns.
 ---
 # CoOpSetting Data Object - Campaign Management
-Reserved.
+Defines the ad group level settings for feed-based cooperative bidding campaigns.
+
+This setting is only applicable for ad groups in Bing Shopping campaigns.
+
+> [!NOTE]
+> Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon. 
 
 ## Syntax
 ```xml
@@ -28,9 +33,9 @@ Reserved.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="bidboostvalue"></a>BidBoostValue|Reserved.|**double**|
-|<a name="bidmaxvalue"></a>BidMaxValue|Reserved.|**double**|
-|<a name="bidoption"></a>BidOption|Reserved.|[BidOption](bidoption.md)|
+|<a name="bidboostvalue"></a>BidBoostValue|The percentage that allows your cooperative bid to flex.<br/><br/>For example, let's say your partner bids $5 USD on a keyword. If your bid boost set to 20 percent and your maximum value is 50 cents, your share would be 50 cents and not $1 USD.|**double**|
+|<a name="bidmaxvalue"></a>BidMaxValue|The flat amount of your cooperative bid.|**double**|
+|<a name="bidoption"></a>BidOption|Determines whether or not to amplify your partner's bid.<br/><br/>A bid value ad group allows you to bid on products that your merchandising partner doesn't target. A bid boost allows you to amplify your partner's bid.|[BidOption](bidoption.md)|
 
 The [CoOpSetting](coopsetting.md) object has [Inherited Elements](#inheritedelements).
 
@@ -41,7 +46,7 @@ The [CoOpSetting](coopsetting.md) object derives from the [Setting](setting.md) 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|Reserved.|**string**|
+|<a name="type"></a>Type|The type of the setting. This value is *CoOp* when you retrieve a cooperative setting. For more information about setting types, see the [Setting Data Object Remarks](setting.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

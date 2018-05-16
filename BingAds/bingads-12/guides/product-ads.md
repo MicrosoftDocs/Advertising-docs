@@ -12,7 +12,7 @@ A Bing Shopping campaign enables you to advertise the products from your Bing Me
 You can manage Bing Shopping settings with either the [Bulk Service](../bulk-service/bulk-service-reference.md) or [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](../bulk-service/bulk-service-reference.md) if you need to upload or download a high volume of entity settings. For example you can update all ad groups for your entire account in a single upload. In comparison, with the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md) you can only update 100 ad groups per call and those ad groups must be in the same campaign. For details see the following sections. 
 
 ## <a name="setup"></a>Setup Bing Merchant Center
-To create a Bing Shopping campaign, follow these steps.
+To set up your own Bing Merchant Center store with a catalog that can be used with Bing Shopping campaigns, follow these steps.
 
 1.  Set up the customer's Bing Merchant Center store. In the Bing Ads web application, click **Tools** &gt; **Bing Merchant Center**. Click on **Create store** and provide the requested store details. For information about setting up your store catalog, see [Create a Bing Merchant Center store](https://help.bingads.microsoft.com/#apex/3/en/51085/1-500) and [How is the feed file organized](https://help.bingads.microsoft.com/#apex/3/en/51084/1).
 
@@ -20,7 +20,7 @@ To create a Bing Shopping campaign, follow these steps.
 
 3.  Get your Bing Merchant Center store unique system identifier. Call [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) and get the *StoreId* from of one of the returned [BMCStore](../campaign-management-service/bmcstore.md) objects, or in the Bing Ads web application, click **Tools** &gt; **Bing Merchant Center** to access your store details.
 
-After you complete these steps, you can follow the steps to [Create a Bing Shopping Campaign with the Campaign Management Service](#bingshopping-campaignservice).
+After you complete these steps, you can follow the steps to Create a Bing Shopping Campaign with the [Bulk Service](#bingshopping-bulkservice) or [Campaign Management Service](#bingshopping-campaignservice).
 
 ## <a name="bingshopping-bulkservice"></a>Create a Bing Shopping Campaign with the Bulk Service
 The [Bulk Service](../bulk-service/bulk-service-reference.md) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema]((../bulk-service/bulk-file-schema.md) and [Bulk Download and Upload](bulk-download-upload.md).

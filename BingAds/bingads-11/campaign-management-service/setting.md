@@ -10,8 +10,13 @@ description: Defines the base class of a setting.
 Defines the base class of a setting.
 
 Do not try to instantiate a *Setting*. You can create one or more following objects that derive from it.
-- [DynamicSearchAdsSetting](dynamicsearchadssetting.md)  
-- [ShoppingSetting](shoppingsetting.md)  
+
+|Setting|Supported Entity|
+|-----|-----|
+|[CoOpSetting](coopsetting.md)|[AdGroup](adgroup.md)| 
+|[DynamicSearchAdsSetting](dynamicsearchadssetting.md)|[Campaign](campaign.md)|
+|[ShoppingSetting](shoppingsetting.md)|[Campaign](campaign.md)|
+|[TargetSetting](targetsetting.md)|[AdGroup](adgroup.md)| 
 
 ## Syntax
 ```xml

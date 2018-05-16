@@ -458,7 +458,9 @@ Possible values are *Active*, *Paused*, and *Deleted*.
 **Delete:** Required. The Status must be set to Deleted.
 
 ### <a name="storeid"></a>Store Id
-The unique identifier for the Bing Merchant Center store that your product catalog feed belongs to.
+The unique identifier for the Bing Merchant Center store that contains a product catalog feed that you want to use for the campaign.
+
+Once you choose a store for a campaign, you can't change it. If at some point you want to use a different store, you would need to create a new shopping campaign with a new shopping setting.
 
 To get your store identifiers, call the [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) operation.
 
