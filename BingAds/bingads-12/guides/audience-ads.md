@@ -9,6 +9,8 @@ description: Setup Audience ads with the Bing Ads API.
 # Audience Ads
 Microsoft Audience Ads are high-quality native placements in the [Microsoft Audience Network](http://www.microsoftaudiencenetwork.com/). The ad placements are cross-device and include premium sites that are brand-safe like MSN, Microsoft Outlook, Microsoft Edge and other partners (U.S. only), with more to come. High quality native ad formats naturally blend into the core user experience.  
 
+![Audience Ads](media/audience-ads.png "Audience Ads")  
+
 > [!NOTE]
 > Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
 
@@ -22,8 +24,6 @@ Microsoft Audience Ads are high-quality native placements in the [Microsoft Audi
 >   Get up and running with Remarketing, In-Market Audiences (in pilot) and Custom Audiences (in pilot). That way an audience targeting strategy will be ready to go with separate audience campaigns if they choose to run them later.  
 > - Implement and update your UET tag. 
 >   This makes sure you're ready to use the Product Audiences targeting dimension with new parameters – available as part of the audience campaigns pilot.  
-
-![Audience Ads](media/audience-ads.png "Audience Ads")  
 
 Intent data from search can be used outside of search to create a powerful match between the user's intent and your offering.
 - User intent targeting e.g., Remarketing in paid search, In-market​ audiences​, Custom audiences, and Product audiences (Coming soon with [Audience campaigns](#audience-campaigns)).
