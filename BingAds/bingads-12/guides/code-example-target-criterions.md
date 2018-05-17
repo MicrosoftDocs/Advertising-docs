@@ -14,26 +14,8 @@ dev_langs:
 # Target Criterions Code Example
 This example demonstrates how to use target criterions with the Campaign Management API.
 
-```csharp
-// Supporting files such as ExampleBase.cs are available at GitHub. 
-// https://github.com/BingAds/BingAds-dotNET-SDK
-// You can close the repository or repurpose snippets as needed.
-```
-```java
-// Supporting files such as ExampleBase.java are available at GitHub. 
-// https://github.com/BingAds/BingAds-Java-SDK
-// You can close the repository or repurpose snippets as needed.
-```
-```php
-// Supporting files such as AuthHelper.php are available at GitHub. 
-// https://github.com/BingAds/BingAds-PHP-SDK
-// You can close the repository or repurpose snippets as needed.
-```
-```python
-# Supporting files such as auth_helper.py are available at GitHub. 
-# https://github.com/BingAds/BingAds-Python-SDK
-# You can close the repository or repurpose snippets as needed.
-```
+> [!NOTE]
+> Supporting files for [C#](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples), [Java](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples/BingAdsDesktopApp), [Php](https://github.com/BingAds/BingAds-PHP-SDK/tree/master/samples), and [Python](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples/BingAdsPythonConsoleExamples) examples are available at GitHub. You can clone the repository or repurpose snippets as needed.
 
 [!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/TargetCriterions.cs)]
 
