@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Determines whether or not to amplify your partner's bid.
 ---
 # BidOption Value Set - Campaign Management
-Reserved.
+Determines whether or not to amplify your partner's bid.
 
 ## Syntax
 ```xml
@@ -23,8 +23,8 @@ Reserved.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="bidboost"></a>BidBoost|Reserved.|
-|<a name="bidvalue"></a>BidValue|Reserved.|
+|<a name="bidboost"></a>BidBoost|A bid boost allows you to amplify your partner's bid.|
+|<a name="bidvalue"></a>BidValue|A bid value ad group allows you to bid on products that your merchandising partner doesn't target.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

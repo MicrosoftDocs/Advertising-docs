@@ -33,14 +33,14 @@ Defines an object that contains the device, age and gender of the user who enter
 |-----------|---------------|-------------|
 |<a name="ageunknown"></a>AgeUnknown|Not used.|**double**|
 |<a name="device"></a>Device|The device of the user who entered the search query.|**string**|
-|<a name="eighteentotwentyfour"></a>EighteenToTwentyFour|Reserved.|**double**|
+|<a name="eighteentotwentyfour"></a>EighteenToTwentyFour|The percentage of time that users 18 through 24 years of age searched for the keyword. The value is specified in the range 0.0 through 1.0.|**double**|
 |<a name="female"></a>Female|The percentage of time that female users searched for the keyword. The value is specified in the range 0.0 through 1.0.|**double**|
-|<a name="fiftytosixtyfour"></a>FiftyToSixtyFour|Reserved.|**double**|
+|<a name="fiftytosixtyfour"></a>FiftyToSixtyFour|The percentage of time that users 50 through 64 years of age searched for the keyword. The value is specified in the range 0.0 through 1.0.|**double**|
 |<a name="genderunknown"></a>GenderUnknown|Not Used.|**double**|
 |<a name="male"></a>Male|The percentage of time that male users searched for the keyword. The value is specified in the range 0.0 through 1.0.|**double**|
-|<a name="sixtyfiveandabove"></a>SixtyFiveAndAbove|Reserved.|**double**|
-|<a name="thirtyfivetofourtynine"></a>ThirtyFiveToFourtyNine|Reserved.|**double**|
-|<a name="twentyfivetothirtyfour"></a>TwentyFiveToThirtyFour|Reserved.|**double**|
+|<a name="sixtyfiveandabove"></a>SixtyFiveAndAbove|The percentage of time that users 65 years of age or older searched for the keyword. The value is specified in the range 0.0 through 1.0.|**double**|
+|<a name="thirtyfivetofourtynine"></a>ThirtyFiveToFourtyNine|The percentage of time that users 35 through 49 years of age searched for the keyword. The value is specified in the range 0.0 through 1.0.|**double**|
+|<a name="twentyfivetothirtyfour"></a>TwentyFiveToThirtyFour|The percentage of time that users 25 through 34 years of age searched for the keyword. The value is specified in the range 0.0 through 1.0.|**double**|
 
 ## Requirements
 Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  
