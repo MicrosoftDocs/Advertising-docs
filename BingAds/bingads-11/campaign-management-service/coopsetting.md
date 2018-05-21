@@ -9,10 +9,8 @@ description: Defines the ad group level settings for feed-based cooperative bidd
 # CoOpSetting Data Object - Campaign Management
 Defines the ad group level settings for feed-based cooperative bidding campaigns.
 
-This setting is only applicable for ad groups in Bing Shopping campaigns.
-
 > [!NOTE]
-> Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon. 
+> This setting is only applicable for ad groups in Bing Shopping campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
 
 ## Syntax
 ```xml
@@ -33,9 +31,9 @@ This setting is only applicable for ad groups in Bing Shopping campaigns.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="bidboostvalue"></a>BidBoostValue|The percentage that allows your cooperative bid to flex.<br/><br/>For example, let's say your partner bids $5 USD on a keyword. If your bid boost set to 20 percent and your maximum value is 50 cents, your share would be 50 cents and not $1 USD.|**double**|
-|<a name="bidmaxvalue"></a>BidMaxValue|The flat amount of your cooperative bid.|**double**|
-|<a name="bidoption"></a>BidOption|Determines whether or not to amplify your partner's bid.<br/><br/>A bid value ad group allows you to bid on products that your merchandising partner doesn't target. A bid boost allows you to amplify your partner's bid.|[BidOption](bidoption.md)|
+|<a name="bidboostvalue"></a>BidBoostValue|The percentage (greater than zero) that allows your cooperative bid to flex.<br/><br/>For example, let's say your partner bids $5 USD on a keyword. If your bid boost set to 20 percent and your maximum value is 50 cents, your share would be 50 cents and not $1 USD.<br/><br/>**Add:** Required if the bid option is set to BidBoost, and otherwise you may not set this element.<br/>**Update:** Required if the bid option is set to BidBoost, and otherwise you may not set this element.|**double**|
+|<a name="bidmaxvalue"></a>BidMaxValue|The flat amount of your cooperative bid.<br/><br/>**Add:** Required if the bid option is set to BidBoost, and otherwise you may not set this element.<br/>**Update:** Optional if the bid option is set to BidBoost, and otherwise you may not set this element.|**double**|
+|<a name="bidoption"></a>BidOption|Determines whether or not to amplify your partner's bid.<br/><br/>A bid value ad group allows you to bid on products that your merchandising partner doesn't target. A bid boost allows you to amplify your partner's bid.<br/><br/>**Add:** If this element is not set, the default Cooperative bidding option for the ad group is "bid value" i.e., the auction will use the fixed bid that you set for each [BiddableAdGroupCriterion](biddableadgroupcriterion.md).<br/>**Update:** Read-only. If you attempt to change the previous bid option an error will be returned.|[BidOption](bidoption.md)|
 
 The [CoOpSetting](coopsetting.md) object has [Inherited Elements](#inheritedelements).
 

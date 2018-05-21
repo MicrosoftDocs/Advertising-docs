@@ -160,7 +160,11 @@ The following table defines limits for ad group properties.
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
 ## <a name="ads"></a>Ads
-Each ad group can contain between one and 100 ads combined, whether the type of ad is app install, dynamic search, expanded text, or product ad.
+Each ad group can contain between one and 100 ads combined, whether the type of ad is app install, dynamic search, expanded text, product, or responsive ad. 
+
+Each account can have up to 4 million ads.
+
+Each customer can have up to 20 million ads.
 
 ### <a name="appinstallad"></a>App Install Ad
 Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create an expanded text ad with app ad extensions.
@@ -219,8 +223,6 @@ The following table defines limits for expanded text ad properties.
 ### <a name="productad"></a>Product Ad
 A product ad specifies the creative, such as the promotional text of the ad.
 
-Each ad group can contain between one and 100 ads combined, whether the type of ad is dynamic search, expanded text, or product ad.
-
 You can manage product ads using the Bulk service ([Product Ad Record](../bulk-service/product-ad.md)) or Campaign Management service ([ProductAd](../campaign-management-service/productad.md)).
 
 The following table defines limits for product ad properties.
@@ -228,6 +230,20 @@ The following table defines limits for product ad properties.
 |Property|Limit|
 |------------|---------|
 |Promotional Text|The string can contain a maximum of 45 characters.|
+
+### <a name="responsivead"></a>Responsive Ad
+A responsive ad format for Audience ads in the Microsoft Audience Network. Responsive ads automatically adjust to accommodate the sizes and shapes of native ad formats.
+
+You can manage responsive ads using the Bulk service ([Responsive Ad Record](../bulk-service/responsive-ad.md)) or Campaign Management service ([ResponsiveAd](../campaign-management-service/responsivead.md)).
+
+The following table defines limits for responsive ad properties.
+
+|Property|Limit|
+|------------|---------|
+|Business Name|The string can contain a maximum of 25 characters.|
+|Headline|The string can contain a maximum of 25 characters.|
+|LongHeadline|The string can contain a maximum of 90 characters.|
+|Text|The string can contain a maximum of 90 characters.|
 
 ## <a name="audiences"></a>Audiences
 The following table defines limits for audience properties.
