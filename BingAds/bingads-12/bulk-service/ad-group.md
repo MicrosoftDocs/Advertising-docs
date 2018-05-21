@@ -17,6 +17,8 @@ For an *Ad Group* record, the following attribute fields are available in the [B
 - [Ad Group](#adgroup)
 - [Ad Rotation](#adrotation)
 - [Bid Adjustment](#bidadjustment)
+- [Bid Boost Value](#bidboostvalue)
+- [Bid Option](#bidoption)
 - [Bid Strategy Type](#bidstrategytype)
 - [Campaign](#campaign)
 - [Client Id](#clientid)
@@ -26,6 +28,7 @@ For an *Ad Group* record, the following attribute fields are available in the [B
 - [Id](#id)
 - [Inherited Bid Strategy Type](#inheritedbidstrategytype)
 - [Language](#language)
+- [Maximum Bid](#maximumbid)
 - [Modified Time](#modifiedtime)
 - [Network Distribution](#networkdistribution)
 - [Parent Id](#parentid)
@@ -181,17 +184,41 @@ If set to *RotateAdsEvenly*, Bing Ads will rotate between your ads on an equal b
 **Delete:** Read-only  
 
 ### <a name="bidadjustment"></a>Bid Adjustment
-The percent amount by which to adjust your bid for native ads above or below the base ad group or keyword bid.
+The percent amount by which to adjust your bid for audience ads above or below the base ad group or keyword bid.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon.
 
-Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent native ads from showing for this ad group.
+Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent audience ads from showing for this ad group.
 
-Set this field to zero (0) if you do not want any bid adjustment for native ads. If this field is empty you will inherit the *Bid Adjustment* setting of the ad group's [Campaign](campaign.md).
+Set this field to zero (0) if you do not want any bid adjustment for audience ads. If this field is empty you will inherit the *Bid Adjustment* setting of the ad group's [Campaign](campaign.md).
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If the ad group already has a native bid adjustment, and you want to remove it to effectively inherit the *Bid Adjustment* setting of the ad group's [Campaign](campaign.md), set this field to *delete_value*. The *delete_value* keyword removes the previous setting.   
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If the ad group already has an audience ads bid adjustment, and you want to remove it to effectively inherit the *Bid Adjustment* setting of the ad group's [Campaign](campaign.md), set this field to *delete_value*. The *delete_value* keyword removes the previous setting.   
+**Delete:** Read-only  
+
+### <a name="bidboostvalue"></a>Bid Boost Value
+The percentage (greater than zero) that allows your cooperative bid to flex.
+
+For example, let's say your partner bids $5 USD on a keyword. If your bid boost set to 20 percent and your maximum value is 50 cents, your share would be 50 cents and not $1 USD.
+
+> [!NOTE]
+> This setting is only applicable for ad groups in Bing Shopping campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
+
+**Add:** Required if the bid option is set to BidBoost, and otherwise you may not set this field.  
+**Update:** Optional if the bid option is set to BidBoost, and otherwise you may not set this field.       
+**Delete:** Read-only  
+
+### <a name="bidoption"></a>Bid Option
+Determines whether or not to amplify your partner's bid.
+
+Supported values are BidBoost and BidValue. A bid value ad group allows you to bid on products that your merchandising partner doesn't target. A bid boost allows you to amplify your partner's bid via the [Bid Boost Value](#bidboostvalue) and [Maximum Bid](#maximumbid) fields.
+
+> [!NOTE]
+> This setting is only applicable for ad groups in Bing Shopping campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
+
+**Add:** Optional. If this field is not set, the default Cooperative bidding option for the ad group is "bid value" i.e., the auction will use the fixed bid that you set for each [Ad Group Product Partition](ad-group-product-partition.md).  
+**Update:** Read-only. If you attempt to change the previous bid option an error will be returned.     
 **Delete:** Read-only  
 
 ### <a name="bidstrategytype"></a>Bid Strategy Type
@@ -307,6 +334,16 @@ For ad groups in Audience campaigns, ad group level language is not supported, a
 
 **Add:** Optional if the campaign has one or more languages set, and otherwise the language is required for most campaign types. You are not allowed to set this element for ad groups in Audience campaigns.  
 **Update:** Optional if the customer is in the *Campaign Languages* pilot, and otherwise update is not allowed. If you are not in the pilot and try to change the language during update, no error will be returned and the setting will not be changed.  
+**Delete:** Read-only  
+
+### <a name="maximumbid"></a>Maximum Bid
+The flat amount of your cooperative bid.
+
+> [!NOTE]
+> This setting is only applicable for ad groups in Bing Shopping campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
+
+**Add:** Required if the bid option is set to BidBoost, and otherwise you may not set this field.  
+**Update:** Optional if the bid option is set to BidBoost, and otherwise you may not set this field.       
 **Delete:** Read-only  
 
 ### <a name="modifiedtime"></a>Modified Time

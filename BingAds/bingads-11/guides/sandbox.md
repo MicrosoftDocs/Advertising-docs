@@ -38,9 +38,9 @@ Follow these steps to get a sandbox customer. If you already have a sandbox cust
 4.	For **Import/Create Campaign**, click **Skip campaign creation**
 5.	For **Go Live**, click **Skip payment information**
 
-The above steps create a Bing Ads legacy user name that is not supported from Bing Ads API version 12 onwards. To use OAuth in sandbox, you need a sandbox Microsoft account (MSA). To get an MSA that you can use in sandbox, you need to invite a user to work on your account. The following steps show how to invite a user to work on your account.
+The above steps create a Bing Ads legacy user name that is not supported from Bing Ads API version 12 onwards. To use OAuth in sandbox, you need a sandbox Microsoft account (MSA). To get an MSA that you can use in sandbox, you need to invite a user to work on your [sandbox](https://secure.sandbox.bingads.microsoft.com/) account via the following steps.
 
-1.	In Bing Ads, click your user name (upper right corner)
+1.	In Bing Ads [sandbox](https://secure.sandbox.bingads.microsoft.com/), click your user name (upper right corner)
 2.	Click **Accounts & Billing**
 3.	Click **Users**
 4.	Click **Invite user**
