@@ -228,6 +228,9 @@ The request must include at least one dimension column and one measure column.
 |Spend|Spend|The total cost of all clicks. The cost is in the account's currency.  Data is available starting from December 6, 2017.
 |SpendUSD|Spend USD|The total cost of all clicks. The cost is in US dollars.
 
+<a name="sov" />
+### Share of voice
+
 If you include share of voice (SOV) columns in your request, you must include at least one of the following dimension columns. 
 
 - HotelGroupId
