@@ -256,7 +256,7 @@ The following are the SOV columns:
 > - SlotType  
 > - Usercountry  
 >  
-> If you specify any of these dimension column, the request succeeds but the report's data includes duplicate SOV data. For example, in the following report, the 50% impression share is overall for the Hotel not for each slot type.  
+> If you specify any of these dimension column, the request succeeds but the report's data includes duplicate SOV data. For example, in the following report, the 50% impression share is overall for the hotel and not for each slot type.  
 >
 > |Date|Hotel ID|Clicks|Impr.|Slot type|Eligible impr.|Impr. share  
 > |-|-|-|-|-|-|-  
