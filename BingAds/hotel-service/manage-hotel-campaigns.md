@@ -752,7 +752,7 @@ Host: <host>
 
 ## Batch processing
 
-To send multiple requests in a single HTTP request, use the /$batch template. You may send a maximum of 500 requests in a single batch request.
+To send multiple requests in a single HTTP request, use the [/$batch](reference.md#batch) template. You may send a maximum of 500 requests in a single batch request.
 
 > [!NOTE]
 > Batch processing is supported only for hotel updates such as bid changes.
@@ -769,7 +769,7 @@ Host: <host>
 Content-Length: 1371
 ```
 
-The Content-Type header must be set to multipart/mixed and include the boundary ID. The boundary ID delimits each request in the batch request. The ID is of the form, batch_\<unique string\>. This example uses a GUID as the unique string.
+The Content-Type header must be set to multipart/mixed and include the boundary ID. The boundary ID is opaque and delimits each sub request in the batch request. The ID may be any unique string. This example uses, batch_\<unique string\>, where \<unique string\> is a GUID.
 
 The body of the batch request contains multiple individual requests delimited by the boundary ID. The following shows an example of the body of a batch request. Be sure to terminate each line in the body of the batch request with CRLF (carriage return and line feed).
 
@@ -811,7 +811,7 @@ Host: partner.api.sandbox.bingads.microsoft.com
 Note that each boundary ID is prepended with a double dash (for example, **--**batch_086fe0de-9b26-4d4a-a206-6df2013a2816).
 And the terminating boundary ID that goes after the last request in the batch is enclosed with double dashes (for example, **--**batch_086fe0de-9b26-4d4a-a206-6df2013a2816**--**).
 
-The boundary ID delimiter must be followed by the Content-Type and Content-Transfer-Encoding headers as shown. Because you may only update hotels, the request must use the HTTP PATCH verb and use the hotel template to identify the hotel to update. The request must include the Content-Type header and it must be set to application/json; odata.metadata=minimal. The body of the request is a [Hotel](reference.md#hotel) object. The object must include the hotel's ID and should include only the fields you're updating.
+The boundary ID delimiter must be followed by the Content-Type and Content-Transfer-Encoding headers as shown. Because you may only update hotels, the request must use the HTTP PATCH verb and use the [hotel](reference.md#updatehotel) template to identify the hotel to update. The request must include the Content-Type header and it must be set to application/json; odata.metadata=minimal. The body of the request is a [Hotel](reference.md#hotel) object. The object must include the hotel's ID and should include only the fields you're updating.
 
 
 ### The response
