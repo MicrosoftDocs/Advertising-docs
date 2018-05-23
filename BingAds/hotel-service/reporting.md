@@ -147,9 +147,9 @@ If the `columns` property includes any of the above fields, the report jobs requ
 ## Performance report columns
 
 
-Reports contain [dimension](#dimension-columns) columns and [measure](#measure-columns) columns (metrics). The metric data rolls up to the lowest-level dimension in the dimension hierarchy that you specify in your report request.
+Reports contain [dimension](#dimension-columns) columns and [measure](#measure-columns) columns (metrics). The metric data is segmented by the dimension columns. This means that the metric data rolls up to the lowest-level dimension in the dimension hierarchy that you specify in your report request.
 
-The following is the hierarchy for Performance Report.
+The following is the dimension hierarchy for Performance Report.
 
 1. Date
 1. SubaccountId/Name
@@ -228,7 +228,17 @@ The request must include at least one dimension column and one measure column.
 |Spend|Spend|The total cost of all clicks. The cost is in the account's currency.  Data is available starting from December 6, 2017.
 |SpendUSD|Spend USD|The total cost of all clicks. The cost is in US dollars.
 
-If you include share of voice (SOV) columns, your request must include at least one ID dimension column. For example, if you include one or more of these SOV columns:
+<a name="sov" />
+### Share of voice
+
+In addition to the rule that requests must include at least one dimension column and one measure column, any report that includes share of voice (SOV) columns must include at least one of the following dimension columns.
+
+- HotelGroupId
+- HotelId
+- PartnerHotelId
+- SubAccountId
+
+The following are the SOV columns:
 
 - ClickShare
 - EligibleImpressions
@@ -239,12 +249,21 @@ If you include share of voice (SOV) columns, your request must include at least 
 - MissedImpressionsOther
 - MissedImpressionsSpendingCapReached
 
-You must include one or more of these ID columns or the report request fails:
 
-- HotelGroupId
-- HotelId
-- PartnerHotelId
-- SubAccountId
+> [!IMPORTANT]
+> Do not include the following dimension columns if your request includes SOV columns.  
+> - LengthOfStay  
+> - SlotType  
+> - Usercountry  
+>  
+> If you specify any of these dimension column, the request succeeds but the report's data includes duplicate SOV data. For example, in the following report, the 50% impression share is overall for the hotel and not for each slot type.  
+>
+> |Date|Hotel ID|Clicks|Impr.|Slot type|Eligible impr.|Impr. share  
+> |-|-|-|-|-|-|-  
+> |5/22/2018|1|10|20|A|100|50  
+> |5/22/2018|1|9|10|A|100|50  
+> |5/22/2018|1|5|10|M|100|50  
+
 
 > [!NOTE]
 > SOV data is available beginning May 1, 2018. If you specify a reporting period that includes dates prior to May 1, 2018, the SOV fields will contain a zero (0) value for dates prior to 1 May.
