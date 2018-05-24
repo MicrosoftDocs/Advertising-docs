@@ -12,7 +12,13 @@ For information about the changes to the Bing Ads services for each month, see t
 ## <a name="may2018"></a>May 2018
 For information about this month's changes to Bing Ads services, see the following sections.
 
+-   [Bing Ads Software Development Kit (SDK) Updates](#sdk-may2018)   
 -   [Microsoft Audience Network Preview](#audiencenetwork-may2018)  
+
+### <a name="sdk-may2018"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, PHP, and Python SDKs are updated to extend support for [Audience Ads](audience-ads.md). New bulk objects are added to the SDK for reading and writing Bulk file records e.g., BulkResponsiveAd and BulkResponsiveAdLabel. 
+
+The Bing Ads .NET, Java, and Python SDKs are updated with retries for the 117 throttling error if encountered while polling for the status of a bulk or reporting operation. 
 
 ### <a name="audiencenetwork-may2018"></a>Microsoft Audience Network Preview
 Support is added for the Microsoft Audience Network in preview. For details see [Audience Ads](audience-ads.md). For differences between version 11 and 12, see [Migrate to Version 12](migration-guide.md). 

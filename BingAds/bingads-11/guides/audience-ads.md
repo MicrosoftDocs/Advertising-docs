@@ -16,14 +16,10 @@ Microsoft Audience Ads are high-quality native placements in the [Microsoft Audi
 
 > [!TIP]
 > You can prepare for the Microsoft Audience Network pilot now by:
-> - Add images via Image Extensions. 
->   By adding high-quality images, you can gain access to more volume outside of the SERP, and more high-quality clicks and conversions in brand-safe placements. All the while, you get to manage their Microsoft Audience Ads in the familiar, easy-to-use Bing Ads platform.  
-> - Optimize Microsoft Audience Ads. 
->   You can optimize Microsoft Audience Ads by extending search campaigns and ad groups by adjusting bids and creating separate ads.  
-> - Refine your audience targeting strategy on search. 
->   Get up and running with Remarketing, In-Market Audiences (in pilot) and Custom Audiences (in pilot). That way an audience targeting strategy will be ready to go with separate audience campaigns if they choose to run them later.  
-> - Implement and update your UET tag. 
->   This makes sure you're ready to use the Product Audiences targeting dimension with new parameters – available as part of the audience campaigns pilot.  
+> - Add images via Image Extensions. By adding high-quality images, you can gain access to more volume outside of the SERP, and more high-quality clicks and conversions in brand-safe placements. All the while, you get to manage Microsoft Audience Ads in the familiar, easy-to-use Bing Ads platform.  
+> - Optimize Microsoft Audience Ads. You can optimize Microsoft Audience Ads by extending search campaigns and ad groups with audience ads bid adjustments.  
+> - Refine your audience targeting strategy on search. Get up and running with Remarketing, In-Market Audiences (in pilot) and Custom Audiences (in pilot). That way an audience targeting strategy will be ready to go with separate audience campaigns if you choose to run them later.  
+> - Implement and update your UET tag. Ensure you're ready to use the Product Audiences targeting dimension with new parameters – available as part of the audience campaigns pilot.  
 
 Intent data from search can be used outside of search to create a powerful match between the user's intent and your offering.
 - User intent targeting e.g., Remarketing in paid search, In-market​ audiences​, Custom audiences, and Product audiences (Coming soon with [Audience campaigns](#audience-campaigns)).
