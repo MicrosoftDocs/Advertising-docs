@@ -132,17 +132,6 @@ First please note that only one email address per customer can be consolidated, 
     > [!NOTE]
     > If the multi-user credentials were provisioned through the user invitation work flow i.e., there was never an "old user name" for access to a customer, a system generated GUID will be returned in the *UserName* element in version 11. In version 12 the multi-user email address will be returned. 
 
-#### <a name="multi-user-person"></a>Person and User Object Model
-A person with multi-user credentials is represented by multiple [User](../customer-management-service/user.md) objects and corresponding user identifiers in Bing Ads API Version 12. The [GetUser](../customer-management-service/getuser.md) response can vary depending on who makes the call, even with the same user identifier. Let's say for example, that prior to consolidation the identifiers for one@contoso.com, two@contoso.com, and three@contoso.com were 123, 456, and 789 respectively. Each user identifier effectively maps a person to a specific customer e.g., identifier 123 maps one@contoso.com to the original customer that the person could access. In this example we refer to 123 as the original user identifier. 
-
-  > [!TIP]
-  > To determine which customers and accounts the current user can access, call [GetUser](../customer-management-service/getuser.md) and set the UserId element nil. The [GetUser](../customer-management-service/getuser.md) response includes a list of [CustomerRole](../customer-management-service/customerrole.md) objects named *CustomerRoles*. Each returned role is mapped to a specific customer (and a subset of accounts if applicable). 
-  > 
-  > Other operations such as [FindAccountsOrCustomersInfo ](../customer-management-service/findaccountsorcustomersinfo.md) will return all the accounts that you can access, although please note the customer identifiers of returned objects may differ from the identifiers of customers that you can directly access as defined by each [CustomerRole](../customer-management-service/customerrole.md). This could occur for example, if you have access to an agency customer that linked to an account in a different customer via the client link setup i.e., not via multi-user credentials consolidation. 
-
-- If the access token for one@contoso.com is used to call [GetUser](../customer-management-service/getuser.md), and the UserId is nil or UserId is set to the original user identifier (e.g., 123), the operation will return [CustomerRole](../customer-management-service/customerrole.md) objects for all customers that the user can access.  
-- If the access token for one@contoso.com is used to call [GetUser](../customer-management-service/getuser.md), and the UserId is set to either 456 or 789, the operation will only return one [CustomerRole](../customer-management-service/customerrole.md) object that maps this person to a specific customer. 
-
 #### <a name="multi-user-contactinfo"></a>User Contact Info
 The Name, Lcid, JobTitle, and ContactInfo user settings for the same person will be automatically synchronized with any updates that occur after multi-user consolidation. The LastModifiedByUserId and LastModifiedTime are also in sync across each returned [User](../customer-management-service/user.md) object, unless you had an old username merged and have not updated any user settings since the consolidation. 
 > [!NOTE]
