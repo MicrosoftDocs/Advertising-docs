@@ -7,6 +7,7 @@ ms.author: "eur"
 description: Upload offline conversions in C# and Python.
 dev_langs:
   - csharp
+  - php
   - python
 ---
 # Offline Conversions Code Example
@@ -16,6 +17,8 @@ This example demonstrates how to send Bing Ads your offline conversions using th
 > Supporting files for [C#](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples) and [Python](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples/BingAdsPythonConsoleExamples) examples are available at GitHub. You can clone the repository or repurpose snippets as needed.
 
 [!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/OfflineConversions.cs)]
+
+[!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/OfflineConversions.php)]
 
 [!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v12/offline_conversions.py)]
 

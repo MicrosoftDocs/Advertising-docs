@@ -29,6 +29,9 @@ environment=Sandbox
 
 You can also set the API environment parameter of individual [Bulk Service Manager](sdk-bulk-service-manager.md), [Service Client](#serviceclient), and [Reporting Service Manager](sdk-reporting-service-manager.md) instances. Setting the *apiEnvironment* overrides the global setting only for the specified service client instance or instances. Unless otherwise intended, you should be careful not to inadvertently configure a mixed set of environments.    
 
+> [!NOTE]
+> The *BulkServiceManager* and *ReportingServiceManager* are available with the .NET, Java, and Python SDKs.
+
 ```csharp
 BulkServiceManager BulkService = new BulkServiceManager(authorizationData, ApiEnvironment.Sandbox);
 
@@ -211,6 +214,9 @@ For repeat or long term authentication, you should follow the authorization code
     
     For more information, see [Using AuthorizationData](#authorization-data), [Using Service Client](#serviceclient), [Using BulkServiceManager](sdk-bulk-service-manager.md), and [Using ReportingServiceManager](sdk-reporting-service-manager.md).
 
+    > [!NOTE]
+    > The *BulkServiceManager* and *ReportingServiceManager* are available with the .NET, Java, and Python SDKs.
+
 4.  When calling Bing Ads services with [Service Client](#serviceclient), [Bulk Service Manager](sdk-bulk-service-manager.md), or [Reporting Service Manager](sdk-reporting-service-manager.md), it is important to save the most recent refresh token whenever new OAuth tokens are received.  
 
     ```csharp
@@ -263,9 +269,12 @@ For repeat or long term authentication, you should follow the authorization code
 
 
 ## <a name="authorization-data"></a>Using AuthorizationData
-The [AuthorizationData](#authorization-data) class contains properties that Bing Ads uses to authorize a user. The [Service Client](#serviceclient), [Bulk Service Manager](sdk-bulk-service-manager.md) and [Reporting Service Manager](sdk-reporting-service-manager.md) classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 
+The *AuthorizationData* class contains properties that Bing Ads uses to authorize a user. The [Service Client](#serviceclient), [Bulk Service Manager](sdk-bulk-service-manager.md) and [Reporting Service Manager](sdk-reporting-service-manager.md) classes handle common request header fields for you, allowing you to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the [AuthorizationData](#authorization-data) object once for each service. 
 
-The following code block shows how to create an instance of [AuthorizationData](#authorization-data) and set its *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties.
+> [!NOTE]
+> The *BulkServiceManager* and *ReportingServiceManager* are available with the .NET, Java, and Python SDKs.
+
+The following code block shows how to create an instance of *AuthorizationData* and set its *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties.
 
 ```csharp
 var authorizationData = new AuthorizationData
