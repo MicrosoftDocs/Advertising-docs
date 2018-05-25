@@ -13,7 +13,7 @@ dev_langs:
 This example demonstrates how to add labels and associate them with campaigns, ad groups, keywords, and ads.
 
 > [!NOTE]
-> Supporting files for [C#](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples) examples are available at GitHub. You can clone the repository or repurpose snippets as needed.
+> Supporting files for [C#](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples) and [Php](https://github.com/BingAds/BingAds-PHP-SDK/tree/master/samples) examples are available at GitHub. You can clone the repository or repurpose snippets as needed.
 
 [!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/Labels.cs)]
 
