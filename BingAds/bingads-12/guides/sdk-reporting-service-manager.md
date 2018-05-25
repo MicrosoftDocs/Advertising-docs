@@ -11,9 +11,10 @@ dev_langs:
   - python
 ---
 # Reporting Service Manager
-The SDK provides proxy classes to the service operations, data objects, and value sets defined for the [Reporting](../reporting-service/reporting-service-reference.md) service.
+The SDK provides proxy classes to the service operations, data objects, and value sets defined for the [Reporting](../reporting-service/reporting-service-reference.md) service. It also provides classes to accelerate productivity for downloading reports. For example an instance of the *ReportingServiceManager* class can submit your download request to the reporting service, poll the service until completed, and download the file to the local directory that you specified in the request.
 
-It also provides classes to accelerate productivity for downloading reports. For example an instance of the *ReportingServiceManager* class can submit your download request to the reporting service, poll the service until completed, and download the file to the local directory that you specified in the request.
+> [!NOTE]
+> The *ReportingServiceManager* is available with the .NET, Java, and Python SDKs.
 
 The *ReportingServiceManager* class handles common request header fields for you, allowing to specify the *Authentication*, *CustomerId*, *AccountId*, and *DeveloperToken* properties in the *AuthorizationData* object once for each service. For more information, see [Using AuthorizationData](sdk-authentication.md#authorization-data).
 
