@@ -13,7 +13,7 @@ Defines an in-market audience.
 > You cannot add, update, or delete an in-market audience using the Bing Ads API. Having said that, you can add and delete ad group in-market audience associations and exclusions.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+> This feature is available only in the United States.
 
 > [!TIP]
 > For an overview of in-market audiences see the [About in-market audiences](https://help.bingads.microsoft.com/#apex/3/en/56851/-1) help topic.
