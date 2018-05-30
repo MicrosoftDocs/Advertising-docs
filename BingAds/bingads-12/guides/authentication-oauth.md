@@ -42,11 +42,11 @@ Before you can manage authentication for users of your Bing Ads application, you
     > [!NOTE]
     > You may use any of your Microsoft accounts to manage authentication for your application. Using a Microsoft Account which is linked to your Bing Ads user credentials is optional for managing your application.
 
-2.  Under **Converged applications**, click **Add an app**.
+2.  Within **My applications**, click **Add an app**.
 
     ![Add an app](media/register-add-app.png "Add an app")
     
-    If you have previously registered Live SDK applications, then you will also see an option to add another Live SDK application. We recommend adding all new apps under **Converged applications**.  At this time you are not required to migrate app registrations. If migration away from **Live SDK applications** is required in the future, we will announce it well in advance.
+    If you have previously registered Live SDK applications, then you will also see an option to add another Live SDK application. In that case we recommend adding all new apps under **Converged applications**.  At this time you are not required to migrate app registrations. When migration away from **Live SDK applications** is required in the future, we will announce it well in advance.
 
 3.  Provide the application name and click **Create application**.
 

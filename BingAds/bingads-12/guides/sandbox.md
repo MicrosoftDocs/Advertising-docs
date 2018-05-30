@@ -25,20 +25,31 @@ For the sandbox environment, the following are the endpoints you must use to get
 |Description|Production|Sandbox|
 |---|---|---|
 |Domain for email used when getting a Microsoft account|Any email address|outlook-int.com|
+|Endpoint to change the Microsoft account password|[account.live.com/password/change](https://account.live.com/password/change)|[account.live-int.com/password/change](https://account.live-int.com/password/change)|
 |Endpoint for getting a client ID|[apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList)|[apps.dev.microsoft-int.com/#/appList](https://apps.dev.microsoft-int.com/#/appList)|
 |Endpoint for OAuth requests via [Authentication with OAuth](authentication-oauth.md)|login.live.com|login.live-int.com|
 
 Also as mentioned above, supported services in sandbox vary from production. To get the web service addresses for sandbox, see [Bing Ads Web Service Addresses](web-service-addresses.md).
 
-Follow these steps to get a sandbox customer. If you already have a sandbox customer, you can skip to the user invitation steps.
+### <a name="initial-sign-up"></a>Initial Customer Sign Up
+Follow these steps to get a new sandbox customer. If you already have a sandbox customer and want to add a new user e.g., with Microsoft account credentials, you can skip to the [user invitation](#invite-user) steps.
 
 1.	Open a browser and navigate to [sandbox.bingads.microsoft.com](https://secure.sandbox.bingads.microsoft.com/)
 2.	Click **Sign up for Bing Ads** or **Sign up now**
-3.	Fill out the **Create Account** form
-4.	For **Import/Create Campaign**, click **Skip campaign creation**
-5.	For **Go Live**, click **Skip payment information**
+3.	Select **Create a new email address** to create an MSA. Do not use an existing email address. 
+4.	Click **Next**
+5.	Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com). 
 
-The above steps create a Bing Ads legacy user name that is not supported from Bing Ads API version 12 onwards. To use OAuth in sandbox, you need a sandbox Microsoft account (MSA). To get an MSA that you can use in sandbox, you need to invite a user to work on your [sandbox](https://secure.sandbox.bingads.microsoft.com/) account via the following steps.
+    > [!IMPORTANT]
+    > Sandbox supports MSAs created using an @outlook**-int**.com email account only. You may not use an @outlook.com email account. Also, you may not use an email account from another email service (for example, @contoso.com) even if the account is linked to an @outlook.com or @outlook**-int**.com email account.  
+
+6.	Finish the MSA work flow by specifying the rest of your user and security information. You will then be redirected to Bing Ads to continue the sandbox customer and account sign up. 
+7.	Fill out the **Create Account** form
+8.	For **Import/Create Campaign**, click **Skip campaign creation**
+9.	For **Go Live**, click **Skip payment information**
+
+### <a name="invite-user"></a>Invite More Users
+To use OAuth in sandbox, you need a sandbox Microsoft account (MSA). If your sandbox customer does not yet have user credentials via a Microsoft account, you need to invite a user to work on your [sandbox](https://secure.sandbox.bingads.microsoft.com/) account via the following steps.
 
 1.	In Bing Ads [sandbox](https://secure.sandbox.bingads.microsoft.com/), click your user name (upper right corner)
 2.	Click **Accounts & Billing**
@@ -55,7 +66,7 @@ Bing Ads sends an email invite to the user. If the invite doesn’t show up in t
 
 1.	Open the email from Bing Ads with subject line, Invitation to Bing Ads
 2.	Click the embedded link
-3.	Select **Create a new email address** to create an MSA
+3.	Select **Create a new email address** to create an MSA. Do not use an existing email address. 
 4.	Click **Next**
 5.	Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com). 
 
