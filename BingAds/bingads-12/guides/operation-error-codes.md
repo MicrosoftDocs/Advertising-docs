@@ -125,6 +125,19 @@ You have exceeded the number of calls that you are allowed to make in a minute. 
 ***
 
 **Numeric Code**
+120
+
+**Symbolic Error Code**
+UserLoginAccessDenied
+
+**Description**
+The credentials are not valid for the person who attempted to login. Please login with the primary login credentials for this person.
+
+The user credentials would have authenticated with versions prior to Bing Ads API Version 12. After [multi-user consolidation](customer-accounts.md#multi-user) credentials that have been merged into the primary login credentials can no longer be used to authenticate in Bing Ads. 
+
+***
+
+**Numeric Code**
 200
 
 **Symbolic Error Code**
