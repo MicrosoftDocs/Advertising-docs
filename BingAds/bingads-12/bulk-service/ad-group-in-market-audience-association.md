@@ -12,7 +12,7 @@ dev_langs:
 Defines an Ad Group In Market Audience Association that can be uploaded and downloaded in a bulk file. 
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+> This feature is available only in the United States.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Ad Group In Market Audience Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
