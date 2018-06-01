@@ -1,104 +1,104 @@
 - name: Overview
-  href: /bingads/scripts/index.md
+  href: /bingads/scripts/index
 - name: Get started
-  href: /bingads/scripts/get-started.md
+  href: /bingads/scripts/get-started 
 - name: Concepts
   items:
     - name: Authorization
-      href: /bingads/scripts/concepts/authorization.md
+      href: /bingads/scripts/concepts/authorization 
     - name: Bid strategies
-      href: /bingads/scripts/concepts/bid-strategies.md
+      href: /bingads/scripts/concepts/bid-strategies 
     - name: IDs
-      href: /bingads/scripts/concepts/ids.md
+      href: /bingads/scripts/concepts/ids 
     - name: Main function
-      href: /bingads/scripts/concepts/main-function.md
+      href: /bingads/scripts/concepts/main-function 
     - name: Selectors
-      href: /bingads/scripts/concepts/selectors.md      
+      href: /bingads/scripts/concepts/selectors       
     - name: Iterators
-      href: /bingads/scripts/concepts/iterators.md
+      href: /bingads/scripts/concepts/iterators 
     - name: Builders
-      href: /bingads/scripts/concepts/builders.md
+      href: /bingads/scripts/concepts/builders 
     - name: Errors and warnings
-      href: /bingads/scripts/concepts/errors-and-warnings.md
+      href: /bingads/scripts/concepts/errors-and-warnings 
     - name: Change and text logs
-      href: /bingads/scripts/concepts/change-and-text-logs.md
+      href: /bingads/scripts/concepts/change-and-text-logs 
     - name: Preview mode
-      href: /bingads/scripts/concepts/preview-mode.md
+      href: /bingads/scripts/concepts/preview-mode 
 - name: Code examples
-  href: /bingads/scripts/examples/index.md
+  href: /bingads/scripts/examples/index 
   items:
     - name: Ad Groups
-      href: /bingads/scripts/examples/adgroups.md
+      href: /bingads/scripts/examples/adgroups 
     - name: Campaigns
-      href: /bingads/scripts/examples/campaigns.md
+      href: /bingads/scripts/examples/campaigns 
     - name: Keywords
-      href: /bingads/scripts/examples/keywords.md
+      href: /bingads/scripts/examples/keywords 
 - name: API Reference
-  href: /bingads/scripts/reference-overview.md
+  href: /bingads/scripts/reference-overview 
   items:    
     - name: Single account  
-      href: ./reference/BingAdsApp.md
+      href: ./reference/BingAdsApp 
       items:
         - name: AdGroup
-          href: ./reference/AdGroup.md
+          href: ./reference/AdGroup 
         - name: AdGroupBuilder
-          href: ./reference/AdGroupBuilder.md
+          href: ./reference/AdGroupBuilder 
         - name: AdGroupIterator
-          href: ./reference/AdGroupIterator.md
+          href: ./reference/AdGroupIterator 
         - name: AdGroupOperation
-          href: ./reference/AdGroupOperation.md
+          href: ./reference/AdGroupOperation 
         - name: AdGroupSelector
-          href: ./reference/AdGroupSelector.md
+          href: ./reference/AdGroupSelector 
         - name: AdGroupUrls
-          href: ./reference/AdGroupUrls.md
+          href: ./reference/AdGroupUrls 
         - name: AdParam
-          href: ./reference/AdParam.md
+          href: ./reference/AdParam 
         - name: AdParamIterator
-          href: ./reference/AdParamIterator.md
+          href: ./reference/AdParamIterator 
         - name: AdParamSelector
-          href: ./reference/AdParamSelector.md
+          href: ./reference/AdParamSelector 
         - name: BingAdsApp
-          href: ./reference/BingAdsApp.md
+          href: ./reference/BingAdsApp 
         - name: BingAdsDate
-          href: ./reference/BingAdsDate.md
+          href: ./reference/BingAdsDate 
         - name: Budget
-          href: ./reference/Budget.md
+          href: ./reference/Budget 
         - name: Campaign
-          href: ./reference/Campaign.md
+          href: ./reference/Campaign 
         - name: CampaignIterator
-          href: ./reference/CampaignIterator.md
+          href: ./reference/CampaignIterator 
         - name: CampaignSelector
-          href: ./reference/CampaignSelector.md
+          href: ./reference/CampaignSelector 
         - name: CampaignUrls
-          href: ./reference/CampaignUrls.md
+          href: ./reference/CampaignUrls 
         - name: Keyword
-          href: ./reference/Keyword.md
+          href: ./reference/Keyword 
         - name: KeywordBidding
-          href: ./reference/KeywordBidding.md
+          href: ./reference/KeywordBidding 
         - name: KeywordBuilder
-          href: ./reference/KeywordBuilder.md
+          href: ./reference/KeywordBuilder 
         - name: KeywordIterator
-          href: ./reference/KeywordIterator.md
+          href: ./reference/KeywordIterator 
         - name: KeywordOperation
-          href: ./reference/KeywordOperation.md
+          href: ./reference/KeywordOperation 
         - name: KeywordSelector
-          href: ./reference/KeywordSelector.md
+          href: ./reference/KeywordSelector 
         - name: KeywordUrls
-          href: ./reference/KeywordUrls.md
+          href: ./reference/KeywordUrls 
         - name: Logger
-          href: ./reference/Logger.md
+          href: ./reference/Logger 
         - name: NegativeKeywordList
-          href: ./reference/NegativeKeywordList.md
+          href: ./reference/NegativeKeywordList 
         - name: NegativeKeywordListBuilder
-          href: ./reference/NegativeKeywordListBuilder.md
+          href: ./reference/NegativeKeywordListBuilder 
         - name: NegativeKeywordListIterator
-          href: ./reference/NegativeKeywordListIterator.md
+          href: ./reference/NegativeKeywordListIterator 
         - name: NegativeKeywordListOperation
-          href: ./reference/NegativeKeywordListOperation.md
+          href: ./reference/NegativeKeywordListOperation 
         - name: NegativeKeywordListSelector
-          href: ./reference/NegativeKeywordListSelector.md
+          href: ./reference/NegativeKeywordListSelector 
         - name: Stats
-          href: ./reference/Stats.md
+          href: ./reference/Stats 
 #    - name: Multiple Accounts
 #      href: ./reference/AccountsApp
 #      items:
