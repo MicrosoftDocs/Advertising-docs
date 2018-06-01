@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # KeywordSelector
 
-Contains the methods for filtering the list of keywords to return. For information about Selectors, see [Selectors](../concepts/selectors).
+Contains the methods for filtering the list of keywords to return. For information about Selectors, see [Selectors](../concepts/selectors.md).
 
 ## Methods
 |Method Name|Return Type|Description|

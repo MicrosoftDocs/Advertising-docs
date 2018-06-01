@@ -37,4 +37,4 @@ function main() {
 }
 ```
 
-You should carefully review all messages logged to the [Change logs and Text logs](./changes-and-text-logs.md).
+You should carefully review all messages logged to the [Change logs and Text logs](./change-and-text-logs.md).

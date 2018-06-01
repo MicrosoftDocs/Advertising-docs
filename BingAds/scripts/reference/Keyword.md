@@ -20,7 +20,7 @@ Contains the methods for managing a keyword. For information about keywords, see
 [bidding](#bidding)|[KeywordBidding](./KeywordBidding.md)|Returns an object that contains the methods used to manage the keyword's bid values.
 [clearDestinationUrl](#cleardestinationurl)|void|Clears the keyword's destination URL.
 [enable](#enable)|void|Enables this keyword.
-[getAdGroup](#getadgroup)|[AdGroup](AdGroup/md)|Returns the ad group this keyword belongs to.
+[getAdGroup](#getadgroup)|[AdGroup](AdGroup.md)|Returns the ad group this keyword belongs to.
 [getApprovalStatus](#getapprovalstatus)|string|Returns the keyword's editorial approval status.
 [getCampaign](#getcampaign)|[Campaign](./Campaign.md)|Returns the campaign this keyword belongs to.
 [getEntityType](#getentitytype)|string|Returns the entity's type.
@@ -52,7 +52,7 @@ Returns an object that contains the methods used to manage the keyword's bid val
 ### Returns
 |Type|Description|
 |-|-
-[KeywordBidding](./KeywordBidding)|An object that contains the methods used to manage the keyword's bid values.
+[KeywordBidding](./KeywordBidding.md)|An object that contains the methods used to manage the keyword's bid values.
 
 ## <a name="cleardestinationurl"></a>clearDestinationUrl
 Clears the keyword's destination URL.

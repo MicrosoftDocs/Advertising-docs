@@ -39,7 +39,7 @@ Accessing your Bing Ads data with Bing Ads Scripts is easy. Just follow these in
     }
     ```
 
-6. To execute the script in [preview mode](guides/preview-mode.md) (recommended), click **Preview**.
+6. To execute the script in [preview mode](concepts/preview-mode.md) (recommended), click **Preview**.
 7. To see the output, click **Logs**.
 
 The difference between **Preview** and **Run script now** is that Preview gives you the chance to see how the script would affect your data without actually committing the changes. If the script modifies data, you should run it in preview mode.

@@ -10,7 +10,7 @@ ms.topic: "article"
 ---
 
 # KeywordIterator
-Contains the methods for iterating through a list of keywords. For information about Iterators, see [Iterators](../concepts/iterators).
+Contains the methods for iterating through a list of keywords. For information about Iterators, see [Iterators](../concepts/iterators.md).
 
 Example usage:
 ```javascript
@@ -26,7 +26,7 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|Boolean|Returns a Boolean value that indicates whether this iterator has more elements.
-[next](#next)|[Keyword](./Keyword)|Advances the iterator and returns the next keyword.
+[next](#next)|[Keyword](./Keyword.md)|Advances the iterator and returns the next keyword.
 [totalNumEntities](#totalnumentities)|int|Returns the number of keywords that matched the selector's selection criteria.
 
 ## <a name="hasnext"></a>hasNext

@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # NegativeKeywordListIterator
 
-Contains the methods for iterating through a list of negative keyword lists. For information about Iterators, see [Iterators](../concepts/iterators).
+Contains the methods for iterating through a list of negative keyword lists. For information about Iterators, see [Iterators](../concepts/iterators.md).
 
 Example usage:
 ```javascript
@@ -26,7 +26,7 @@ while (negativeKeywordListIterator.hasNext()) {
 |Method Name|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|Boolean|Returns a Boolean value that indicates whether this iterator has more elements.
-[next](#next)|[AdGroup](./AdGroup)|Advances the iterator and returns the next negative keyword list.
+[next](#next)|[AdGroup](./AdGroup.md)|Advances the iterator and returns the next negative keyword list.
 [totalNumEntities](#totalnumentities)|int|Returns the number of negative keywords lists that matched selector's selection criteria.
 
 ## <a name="hasnext"></a>hasNext

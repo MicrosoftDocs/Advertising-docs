@@ -16,7 +16,7 @@ Contains the methods used to manage the [ad group](/bingads/guides/entity-hierar
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[bidding](#bidding)|[AdGroupBidding](AdGroupBidding)|Returns an object that contains the methods used to manage the ad group's bid values.
+[bidding](#bidding)|[AdGroupBidding](AdGroupBidding.md)|Returns an object that contains the methods used to manage the ad group's bid values.
 [enable](#enable)|void|Enables this ad group.
 [getEndDate](#getenddate)|[BingAdsDate](BingAdsDate.md)|Returns date when ads in the ad group stop serving.
 [getEntityType](#getentitytype)|string|Returns the entity's type.
@@ -47,7 +47,7 @@ Returns an object that contains the methods used to manage the ad group's bid va
 ### Returns:
 |Type|Description|
 |-|-
-[AdGroupBidding](AdGroupBidding)|Contains the methods used to manage the ad group's bid values.
+[AdGroupBidding](AdGroupBidding.md)|Contains the methods used to manage the ad group's bid values.
 
 
 ## <a name="enable"></a>enable
@@ -246,4 +246,4 @@ Returns this ad group's URLs.
 ## See also
 
 - [AdGroupIterator.next()](AdGroupIterator.md#next)
-- [AdGroupOperator.getResult()](AdGroupOperator.md#getresult)
+- [AdGroupOperation.getResult()](AdGroupOperation.md#getresult)

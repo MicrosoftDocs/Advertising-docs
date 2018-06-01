@@ -98,4 +98,4 @@ The following are the possible builders.
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Learn about preview mode](../guides/preview-mode.md)
+> [Learn about preview mode](../concepts/preview-mode.md)

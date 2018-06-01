@@ -20,7 +20,7 @@ The negative keyword list is added only after calling any of this object's metho
 |Method Name|Return Type|Description|
 |-|-|-
 [getErrors](#geterrors)|string[]|Returns an empty array if the negative keywords list is successfully created; otherwise, it contains the list of errors.
-[getResult](#getresult)|[NegativeKeywordList](./NegativeKeywordList)|Returns the newly created negative keywords list if the operation succeeded; otherwise, null.
+[getResult](#getresult)|[NegativeKeywordList](./NegativeKeywordList.md)|Returns the newly created negative keywords list if the operation succeeded; otherwise, null.
 [isSuccessful](#issuccessful)|Boolean|Returns a Boolean value that indicates whether this operation succeeded.
 
 ## <a name="geterrors"></a>getErrors

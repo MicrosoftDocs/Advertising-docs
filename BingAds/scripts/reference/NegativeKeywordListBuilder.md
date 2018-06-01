@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # NegativeKeywordListBuilder
 
-Contains the methods for defining a negative keyword list. For information about Builders, see [Builders](../concepts/builders).
+Contains the methods for defining a negative keyword list. For information about Builders, see [Builders](../concepts/builders.md).
 
 Example usage:
 ```javascript

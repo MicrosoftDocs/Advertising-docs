@@ -37,7 +37,7 @@ Returns a [selector](../concepts/selectors.md) of all ad groups in this account.
 
 |Type|Description|
 |-|-
-[AdGroupSelector](./AdGroupSelector)|Selector of all ad groups in the current account. By default, the selector returns all ad groups in this account. You can also use the selector's methods to return a filtered list of ad groups.
+[AdGroupSelector](./AdGroupSelector.md)|Selector of all ad groups in the current account. By default, the selector returns all ad groups in this account. You can also use the selector's methods to return a filtered list of ad groups.
 
 <!--
 ## <a name="ads"></a>ads
@@ -58,7 +58,7 @@ Returns a [selector](../concepts/selectors.md) of all campaigns in this account.
 
 |Type|Description|
 |-|-
-[CampaignSelector](./CampaignSelector)|Selector of all campaigns in this account. By default, the selector returns all campaigns in this account. You can also use the selector's methods to return a filtered list of campaigns.
+[CampaignSelector](./CampaignSelector.md)|Selector of all campaigns in this account. By default, the selector returns all campaigns in this account. You can also use the selector's methods to return a filtered list of campaigns.
 
 <!--
 ## <a name="getexecutioninfo"></a>getExecutionInfo
@@ -78,7 +78,7 @@ Returns a [selector](../concepts/selectors.md) of all keywords in this account.
 
 |Type|Description|
 |-|-
-[KeywordSelector](./KeywordSelector)|Selector of all keywords in this account. By default, the selector returns all keywords in this account. You can also use the selector's methods to return a filtered list of keywords.
+[KeywordSelector](./KeywordSelector.md)|Selector of all keywords in this account. By default, the selector returns all keywords in this account. You can also use the selector's methods to return a filtered list of keywords.
 
 ## <a name="negativekeywordlists"></a>negativeKeywordLists
 
@@ -88,7 +88,7 @@ Returns a [selector](../concepts/selectors.md) of all negative keyword lists in 
 
 |Type|Description|
 |-|-
-[NegativeKeywordListSelector](./NegativeKeywordListSelector)|Selector of all negative keyword lists in this account. By default, the selector returns all negative keyword lists in this account. You can also use the selector's methods to return a filtered list of negative keyword lists.
+[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Selector of all negative keyword lists in this account. By default, the selector returns all negative keyword lists in this account. You can also use the selector's methods to return a filtered list of negative keyword lists.
 
 ## <a name="newnegativekeywordlistbuilder"></a>newNegativeKeywordListBuilder
 
@@ -98,5 +98,5 @@ Returns a negative keyword list [builder](../concepts/builders.md) for this acco
 
 |Type|Description|
 |-|-
-[NegativeKeywordListBuilder](./NegativeKeywordListBuilder)|Negative keyword list builder for this account. Use the builder to add a negative keyword list to this account.
+[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Negative keyword list builder for this account. Use the builder to add a negative keyword list to this account.
 

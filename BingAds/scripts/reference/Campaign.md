@@ -27,11 +27,11 @@ Contains the methods used to manage the [campaign](/bingads/guides/entity-hierar
 [isEnabled](#isenabled)|boolean|Returns a Boolean value that determines whether this campaign is enabled.
 [isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates whether this campaign is paused.
 [isRemoved](#isremoved)|Boolean|Returns a Boolean value that indicates whether this campaign is removed (deleted).
-[newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder)|Returns an ad group builder that you use to add ad groups to this campaign.
+[newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder.md)|Returns an ad group builder that you use to add ad groups to this campaign.
 [pause](#pause)|void|Pauses this campaign.
 [remove](#remove)|void|Removes this campaign.
 [setName(String name)](#setname~string-name~)|void|Sets the name of this campaign.
-[urls](#urls)|[CampaignUrls](./CampaignUrls)|Returns this campaign's URLs.
+[urls](#urls)|[CampaignUrls](./CampaignUrls.md)|Returns this campaign's URLs.
 
 ## <a name="addnegativekeywordlist~negativekeywordlist-negativekeywordlist~"></a>addNegativeKeywordList(NegativeKeywordList negativeKeywordList)
 Adds a negative keyword list to this campaign. 

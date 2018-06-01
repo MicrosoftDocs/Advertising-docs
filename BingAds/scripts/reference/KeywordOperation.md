@@ -19,7 +19,7 @@ The keyword is added only after calling any of this object's methods or after th
 |Method Name|Return Type|Description|
 |-|-|-
 [getErrors](#geterrors)|string[]|Returns an empty array if the keyword is successfully created; otherwise, it contains the list of errors.
-[getResult](#getresult)|[Keyword](./Keyword)|Returns the newly added keyword if the operation succeeded; otherwise, null.
+[getResult](#getresult)|[Keyword](./Keyword.md)|Returns the newly added keyword if the operation succeeded; otherwise, null.
 [isSuccessful](#issuccessful)|boolean|Returns a Boolean value that indicates whether this operation succeeded.
 
 ## <a name="geterrors"></a>getErrors

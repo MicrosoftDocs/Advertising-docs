@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # KeywordBuilder
 
-Contains the methods for defining a keyword. For information about Builders, see [Builders](../concepts/builders).
+Contains the methods for defining a keyword. For information about Builders, see [Builders](../concepts/builders.md).
 
 Example usage:
 ```javascript

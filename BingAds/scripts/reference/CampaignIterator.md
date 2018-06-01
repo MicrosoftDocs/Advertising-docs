@@ -26,7 +26,7 @@ while (campaignIterator.hasNext()) {
 |Method Name|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|Boolean|Returns a Boolean value that indicates whether the iterator has more elements.
-[next](#next)|[Campaign](./Campaign)|Advances the iterator and returns the next campaign.
+[next](#next)|[Campaign](./Campaign.md)|Advances the iterator and returns the next campaign.
 [totalNumEntities](#totalnumentities)|int|Returns the number of campaigns that matched the selector's selection criteria.
 
 ## <a name="hasnext"></a>hasNext
