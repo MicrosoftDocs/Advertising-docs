@@ -7,34 +7,34 @@
     - name: Authorization
       href: concepts/authorization.md 
     - name: Bid strategies
-      href: /bingads/scripts/concepts/bid-strategies.md 
+      href: concepts/bid-strategies.md 
     - name: IDs
-      href: /bingads/scripts/concepts/ids.md 
+      href: concepts/ids.md 
     - name: Main function
-      href: /bingads/scripts/concepts/main-function.md 
+      href: concepts/main-function.md 
     - name: Selectors
-      href: /bingads/scripts/concepts/selectors.md       
+      href: concepts/selectors.md       
     - name: Iterators
-      href: /bingads/scripts/concepts/iterators.md 
+      href: concepts/iterators.md 
     - name: Builders
-      href: /bingads/scripts/concepts/builders.md 
+      href: concepts/builders.md 
     - name: Errors and warnings
-      href: /bingads/scripts/concepts/errors-and-warnings.md 
+      href: concepts/errors-and-warnings.md 
     - name: Change and text logs
-      href: /bingads/scripts/concepts/change-and-text-logs.md 
+      href: concepts/change-and-text-logs.md 
     - name: Preview mode
-      href: /bingads/scripts/concepts/preview-mode.md 
+      href: concepts/preview-mode.md 
 - name: Code examples
-  href: /bingads/scripts/examples/index.md 
+  href: examples/index.md 
   items:
     - name: Ad Groups
-      href: /bingads/scripts/examples/adgroups.md 
+      href: examples/adgroups.md 
     - name: Campaigns
-      href: /bingads/scripts/examples/campaigns.md 
+      href: examples/campaigns.md 
     - name: Keywords
-      href: /bingads/scripts/examples/keywords.md 
+      href: examples/keywords.md 
 - name: API Reference
-  href: /bingads/scripts/reference-overview.md 
+  href: reference-overview.md 
   items:    
     - name: Single account  
       href: ./reference/BingAdsApp.md 
