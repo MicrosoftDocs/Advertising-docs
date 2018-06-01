@@ -91,7 +91,6 @@ for (var i = 0; i < operations.length; i++) {
 The following are the possible builders.
 
 - [AdGroupBuilder](../reference/AdGroupBuilder.md)
-- [ExpandedTextAdBuilder](../reference/ExpandedTextAdBuilder.md)
 - [KeywordBuilder](../reference/KeywordBuilder.md)
 - [NegativeKeywordListBuilder](../reference/NegativeKeywordListBuilder.md)
 
