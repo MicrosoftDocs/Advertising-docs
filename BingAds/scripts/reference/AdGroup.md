@@ -29,10 +29,10 @@ Contains the methods used to manage the [ad group](/bingads/guides/entity-hierar
 [isRemoved](#isremoved)|Boolean|Returns a Boolean value that indicates whether this ad group is removed.
 [newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Returns a builder that you use to add keywords to this ad group.
 [pause](#pause)|void|Pauses this ad group.
-[setEndDate(string endDate)](#setenddate~string-endDate~)|void|Sets the date when ads in the ad group stop serving.
+[setEndDate(string endDate)](#setenddate~string-enddate~)|void|Sets the date when ads in the ad group stop serving.
 [setEndDate(Object endDate)](#setenddate~object-enddate~)|void|Sets the date when ads in the ad group stop serving.
 [setName(String name)](#setname-string-name)|void|Sets the ad group's name.
-[setStartDate(string startDate)](#setstartdate~string-startDate~)|void|Sets the date when ads in the ad group begin serving.
+[setStartDate(string startDate)](#setstartdate~string-startdate~)|void|Sets the date when ads in the ad group begin serving.
 [setStartDate(Object startDate)](#setstartdate~object-startdate~)|void|Sets the date when ads in the ad group begin serving.
 [urls](#urls)|[AdGroupUrls](./AdGroupUrls.md)|Returns this ad group's URLs.
 
@@ -180,7 +180,7 @@ Sets the date when you want ads in the ad group to stop serving. Set an end date
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|Object|The date when you want ads in the ad group to stop serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul><br />For example: `var date = {year: 2018, month: 5, day: 13};`
+endDate|Object|The date when you want ads in the ad group to stop serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul>For example: `var date = {year: 2018, month: 5, day: 13};`
 
 ### Returns
 |Type|Description|
@@ -224,7 +224,7 @@ Sets the date when you want ads in the ad group to start serving. Set a start da
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|Object|The date when you want ads in the ad group to start serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul><br />For example: `var date = {year: 2018, month: 5, day: 13};`
+endDate|Object|The date when you want ads in the ad group to start serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul>For example: `var date = {year: 2018, month: 5, day: 13};`
 
 ### Returns
 |Type|Description|

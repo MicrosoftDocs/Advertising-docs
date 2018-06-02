@@ -37,11 +37,11 @@ while(campaignIterator.hasNext()) {
 [withBiddingStrategy(string biddingStrategy)](#withbiddingstrategy~string-biddingstrategy~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's bidding strategy.
 [withCpc(double cpc)](#withcpc~double-cpc~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's maximum CPC bid.
 [withCustomParameters(Object customParameters)](#withcustomparameters~object-customparameters~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's custom parameters.
-[withEndDate(string endDate)](#withenddate~string-endDate~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group stop serving.
+[withEndDate(string endDate)](#withenddate~string-enddate~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group stop serving.
 [withEndDate(Object endDate)](#withenddate~object-enddate~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group stop serving.
 [withLanguage(string language)](#withlanguage~string-language~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the language used by this ad group.
 [withName(string name)](#withname~string-name~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's name.
-[withStartDate(string startDate)](#withstartdate~string-startDate~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group start serving.
+[withStartDate(string startDate)](#withstartdate~string-startdate~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group start serving.
 [withStartDate(Object startDate)](#withstartdate~object-startdate~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group start serving.
 [withStatus(string status)](#withstatus~string-status~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's status.
 [withTrackingTemplate(string trackingTemplate)](#withtrackingtemplate~string-trackingtemplate~)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the tracking template used with this ad group.

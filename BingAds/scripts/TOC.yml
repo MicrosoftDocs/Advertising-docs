@@ -33,7 +33,7 @@
       href: examples/campaigns.md 
     - name: Keywords
       href: examples/keywords.md 
-- name: API Reference
+- name: Script reference
   href: reference-overview.md 
   items:    
     - name: Single account  
