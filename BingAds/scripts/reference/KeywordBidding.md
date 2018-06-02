@@ -16,12 +16,12 @@ Contains the methods for specifying the keyword's bid values.
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[clearCpc](#clearcpc)|void|Clears the CPC bid for the keyword.
-[getCpc](#getcpc)|double|Returns the CPC bid for the keyword.
+[clearCpc](#clearcpc)|void|Removes the keyword's CPC bid.
+[getCpc](#getcpc)|double|Returns the keyword's CPC bid.
 [setCpc(double cpc)](#setcpc~double-cpc~)|void|Sets the maximum CPC bid for the keyword.
 
 ## <a name="clearcpc"></a>clearCpc
-Clears the CPC bid for the keyword. 
+Removes the keyword's CPC bid. 
 
 ### Returns
 |Type|Description|
@@ -29,12 +29,12 @@ Clears the CPC bid for the keyword.
 void|Returns nothing.
 
 ## <a name="getcpc"></a>getCpc
-Returns the CPC bid for the keyword. 
+Returns the keyword's CPC bid. 
 
 ### Returns
 |Type|Description|
 |-|-
-double|The CPC bid for the keyword.
+double|The keyword's CPC bid.
 
 ## <a name="setcpc~double-cpc~"></a>setCpc(double cpc)
 Sets the maximum CPC bid for the keyword. 

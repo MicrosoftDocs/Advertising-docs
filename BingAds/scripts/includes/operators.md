@@ -1,5 +1,5 @@
 ### Operators
-The operator that you use in a condition call depends on the column's type. Operators are case-sensitive. For example, "starts\_with" won't work (you must use STARTS_WITH). 
+The operator that you use depends on the column's type. Operators are case-sensitive. For example, "starts\_with" doesn't work (you must use STARTS_WITH). 
 
 For Integer and Long columns: 
 

@@ -18,22 +18,22 @@ Contains the methods used to manage the [ad group](/bingads/guides/entity-hierar
 |-|-|-
 [bidding](#bidding)|[AdGroupBidding](AdGroupBidding.md)|Returns an object that contains the methods used to manage the ad group's bid values.
 [enable](#enable)|void|Enables this ad group.
-[getEndDate](#getenddate)|[BingAdsDate](BingAdsDate.md)|Returns date when ads in the ad group stop serving.
-[getEntityType](#getentitytype)|string|Returns the entity's type.
+[getEndDate](#getenddate)|[BingAdsDate](BingAdsDate.md)|Returns the date when ads in the ad group stop serving.
+[getEntityType](#getentitytype)|string|Returns this entity's type.
 [getId](#getid)|string|Returns the ID that uniquely identifies this ad group.
 [getName](#getname)|string|Returns the name of this ad group.
-[getStartDate](#getstartdate)|[BingAdsDate](BingAdsDate.md)|Returns date when ads in the ad group start serving.
-[getStats](#getstats)|Stats.md|Returns the performance data for this ad group.
+[getStartDate](#getstartdate)|[BingAdsDate](BingAdsDate.md)|Returns the date when ads in the ad group start serving.
+[getStats](#getstats)|[Stats](Stats.md)|Returns the performance data for this ad group.
 [isEnabled](#isenabled)|Boolean|Returns a Boolean value that indicates whether this ad group is enabled.
 [isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates whether this ad group is paused.
 [isRemoved](#isremoved)|Boolean|Returns a Boolean value that indicates whether this ad group is removed.
-[newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Returns a keyword builder that you use to add keywords to this ad group.
+[newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Returns a builder that you use to add keywords to this ad group.
 [pause](#pause)|void|Pauses this ad group.
-[setEndDate(string endDate)](#setenddate~string-endDate~)]void|Sets the date when ads in the ad group will stop serving.
-[setEndDate(Object endDate)](#setenddate~object-enddate~)]|void|Sets the date when ads in the ad group will stop serving.
+[setEndDate(string endDate)](#setenddate~string-endDate~)|void|Sets the date when ads in the ad group stop serving.
+[setEndDate(Object endDate)](#setenddate~object-enddate~)|void|Sets the date when ads in the ad group stop serving.
 [setName(String name)](#setname-string-name)|void|Sets the ad group's name.
-[setStartDate(string startDate)](#setstartdate~string-startDate~)]|void|Sets the date when ads in the ad group will begin serving.
-[setStartDate(Object startDate)](#setstartdate~object-startdate~)]|void|Sets the date when ads in the ad group will begin serving.
+[setStartDate(string startDate)](#setstartdate~string-startDate~)|void|Sets the date when ads in the ad group begin serving.
+[setStartDate(Object startDate)](#setstartdate~object-startdate~)|void|Sets the date when ads in the ad group begin serving.
 [urls](#urls)|[AdGroupUrls](./AdGroupUrls.md)|Returns this ad group's URLs.
 
 <!--
@@ -72,7 +72,7 @@ Returns this entity's type.
 ### Returns
 |Type|Description|
 |-|-
-string|This entity's type, which is AdGroup.
+string|This entity's type (its type is AdGroup).
 
 ## <a name="getid"></a>getId
 Returns the ID that uniquely identifies this ad group.
@@ -144,12 +144,12 @@ Returns a new ad builder space associated with this ad group, which is used to c
 -->
 
 ## <a name="newkeywordbuilder"></a>newKeywordBuilder
-Returns a keyword builder that you use to add keywords to this ad group.
+Returns a [builder](../concepts/builders.md) that you use to add keywords to this ad group.
 
 ### Returns
 |Type|Description|
 |-|-
-[KeywordBuilder](KeywordBuilder.md)|The keyword builder that you use to add keywords to this ad group.
+[KeywordBuilder](KeywordBuilder.md)|The builder that you use to add keywords to this ad group.
 
 ## <a name="pause"></a>pause
 Pauses this ad group.
@@ -180,7 +180,7 @@ Sets the date when you want ads in the ad group to stop serving. Set an end date
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|Object|The date when you want ads in the ad group to stop serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li><br />For example:<br /><br /><code>var date = `{year: 2018, month: 5, day: 13}`;</code>
+endDate|Object|The date when you want ads in the ad group to stop serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul><br />For example: `var date = {year: 2018, month: 5, day: 13};`
 
 ### Returns
 |Type|Description|
@@ -206,7 +206,7 @@ void|Returns nothing.
 
 
 ## <a name="setstartdate~string-startdate~"></a>setStartDate(string startDate)
-Sets the date when you want ads in the ad group to start serving. Set a start date only if you want ads in the group to start serving on a specific date; otherwise, they may begin serving immediately.
+Sets the date when you want ads in the ad group to start serving. Set a start date only if you want ads in the group to start serving on a specific date; otherwise, they start serving immediately.
 
 ### Arguments
 |Name|Type|Description|
@@ -219,19 +219,17 @@ endDate|string|The date when you want ads in the ad group to start serving. Spec
 void|Returns nothing.
 
 ## <a name="setstartdate~object-startdate~"></a>setStartDate(Object startDate)
-Sets the date when you want ads in the ad group will start serving. Set a start date only if you want ads in the group to start serving on a specific date; otherwise, they may begin serving immediately.
+Sets the date when you want ads in the ad group to start serving. Set a start date only if you want ads in the group to start serving on a specific date; otherwise, they start serving immediately.
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|Object|The date when you want ads in the ad group to start serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li><br />For example:<br /><br /><code>var date = `{year: 2018, month: 5, day: 13}`;</code>
+endDate|Object|The date when you want ads in the ad group to start serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul><br />For example: `var date = {year: 2018, month: 5, day: 13};`
 
 ### Returns
 |Type|Description|
 |-|-
 void|Returns nothing.
-
-
 
 
 ## <a name="urls"></a>urls
@@ -240,7 +238,7 @@ Returns this ad group's URLs.
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupUrls](AdGroupUrls.md)|This ad group's urls.
+[AdGroupUrls](AdGroupUrls.md)|This ad group's URLs.
 
 
 ## See also

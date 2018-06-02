@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # CampaignIterator
 
-Contains the methods for iterating through a list of campaigns. For information about Iterators, see [Iterators](../concepts/iterators.md).
+Contains the methods for iterating through a list of campaigns. For information about iterators, see [Iterators](../concepts/iterators.md).
 
 Example usage:
 ```javascript

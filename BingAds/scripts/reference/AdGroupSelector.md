@@ -32,9 +32,9 @@ var adGroupSelector = BingAdsApp.adGroups()
 |-|-|-
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the start and end dates applied.
 [forDateRange(string dateRange)](#fordaterange~string-daterange~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the predefined date range applied.
-[get](#get)|[AdGroupIterator](./AdGroupIterator.md)|Returns an ad group iterator based on the selector's selection criteria.
+[get](#get)|[AdGroupIterator](./AdGroupIterator.md)|Returns an iterator that you use to iterate through the list of ad groups.
 [orderBy(string orderBy)](#orderby~string-orderby~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the specified ordering applied.
-[withCondition(string condition)](#withcondition~string-condition~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector that limits the ad groups it returns to those that match the filter criteria.
+[withCondition(string condition)](#withcondition~string-condition~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector that limits the ad groups to those that match the filter criteria.
 [withIds(string[] ids)](#withids~string-ids~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector that returns only ad groups with the specified IDs.
 [withLimit(int limit)](#withlimit~int-limit~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the top *n* ad groups that match the selection criteria.
 
@@ -64,7 +64,7 @@ Returns a selector with the predefined date range applied. The date range specif
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-dateRange|String|Date range that specifies the performance data to include in the selector.
+dateRange|String|The predefined date range string that specifies the performance data to include in the selector.
 
 ### Returns
 |Type|Description|
@@ -72,12 +72,12 @@ dateRange|String|Date range that specifies the performance data to include in th
 [AdGroupSelector](./AdGroupSelector.md)|Selector with date range applied.
 
 ## <a name="get"></a>get
-Returns an ad group [iterator](../concepts/iterators.md) based on the selector's selection criteria.
+Returns an [iterator](../concepts/iterators.md) based on the selector's selection criteria.
 
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupIterator](./AdGroupIterator.md)|Iterator that you use to iterate through the ad groups that were selected based on the selector's selection criteria.
+[AdGroupIterator](./AdGroupIterator.md)|An iterator that you use to iterate through the selected ad groups.
 
 ## <a name="orderby~string-orderby~"></a>orderBy(String orderBy)
 Returns a selector with the specified ordering applied. 
@@ -85,7 +85,7 @@ Returns a selector with the specified ordering applied.
 Specify the `orderBy` parameter in the form, "columnName orderDirection" where:
 
 - *columnName* is one of the [supported columns](#supported-ad-group-columns)
-- *orderDirection* is the direction to order the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.
+- *orderDirection* is the order to sort the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.
 
 For example, the following call returns ad groups in ascending order by AverageCpc.
 
@@ -134,11 +134,11 @@ Ctr|double|`withCondition("Ctr > 0.01")`<br /> The CTR is in the range 0..1, so 
 Impressions|long|`withCondition("Impressions != 0")`
 &nbsp;|&nbsp;|&nbsp;
 <strong>Ad group attributes</strong>|
-Status|string|`withCondition("Status = PAUSED")`<br /><br />Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>
+Status|enumeration|`withCondition("Status = PAUSED")`<br /><br />Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>
 Name|string|`withCondition("Name CONTAINS_IGNORE_CASE 'shoes'")`
 CampaignName|string|`withCondition("CampaignName CONTAINS_IGNORE_CASE 'promotion'")`
 KeywordMaxCpc|double|`withCondition("KeywordMaxCpc > 10.0")`<br /> The value is in the currency of the account.
-CampaignStatus|string|`withCondition("CampaignStatus = ENABLED")`<br /><br />Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul><br />Use to return ad groups from only ENABLED campaigns.
+CampaignStatus|enumeration|`withCondition("CampaignStatus = ENABLED")`<br /><br />Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>Use to return ad groups from only ENABLED campaigns.
 
 ### Arguments
 |Name|Type|Description|
@@ -165,7 +165,7 @@ BingAdsApp.adGroups()
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-ids|string[]|An array of ad group IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get` method fails with a runtime error.
+ids|string[]|An array of ad group IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get()` method fails with a runtime error.
 
 ### Returns
 |Type|Description|

@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # NegativeKeywordListBuilder
 
-Contains the methods for defining a negative keyword list. For information about Builders, see [Builders](../concepts/builders.md).
+Contains the methods for defining and building a negative keyword list. For information about builders, see [Builders](../concepts/builders.md).
 
 Example usage:
 ```javascript
@@ -24,19 +24,19 @@ Example usage:
 ```
 
 
-# Methods
+## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[build](#build)|[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|Returns an operation object, which represents the negative keyword list to create. You must call the operation object's methods to add the negative keyword list to the account.
+[build](#build)|[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|Returns an operation object that you use to add the negative keyword list to the account.
 [withName(string name)](#withname~string-name~)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Sets the name of the negative keyword list.
 
 ## <a name="build"></a>build
-Returns an operation object, which represents the negative keyword list to create. You must call the operation object's methods to add the negative keyword list to the account.
+Returns an operation object that you use to add the negative keyword list to the account.
 
 ### Returns
 |Type|Description|
 |-|-
-[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|An operation object, which you use to add the negative keyword list to the account.
+[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|An operation object that you use to add the negative keyword list to the account.
 
 ## <a name="withname~string-name~"></a>withName(string name)
 Sets the name of the negative keyword list.
@@ -49,5 +49,5 @@ name|string|The name of the negative keyword list.
 ### Returns
 |Type|Description|
 |-|-
-[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Negative keyword list builder with the name applied.
+[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|The negative keyword list builder with the name applied.
 

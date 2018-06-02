@@ -14,7 +14,7 @@ ms.topic: "article"
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
 
-See the following topics for examples that demonstrate how to use the core features and functionality of the BingAds scripting environment.
+See the following topics for examples that demonstrate how to use the core features and functionality of Bing Ads scripting.
 
 - [Ad Groups](./adgroups.md)
 - [Campaigns](./campaigns.md)

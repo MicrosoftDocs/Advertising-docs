@@ -28,7 +28,7 @@ function main() {
 }
 ```
 
-Other errors such as runtime errors or entity retrieval failures cause script execution to stop. When this happens, the error message is written to the [Text Log](./change-and-text-logs.md#text-log). The following code attempts to call the `doSomething` function but because the function is not defined the script terminates execution. 
+Other errors such as runtime errors or entity retrieval failures cause script execution to stop. When this happens, the error message is written to the [Text Log](./change-and-text-logs.md#text-log). The following code attempts to call the `doSomething()` function but because the function is not defined the script terminates execution. 
 
 ```javascript
 function main() {
@@ -37,4 +37,4 @@ function main() {
 }
 ```
 
-You should carefully review all messages logged to the [Change logs and Text logs](./change-and-text-logs.md).
+You should carefully review all messages logged to the change logs and Text logs.

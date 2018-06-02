@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # NegativeKeywordListIterator
 
-Contains the methods for iterating through a list of negative keyword lists. For information about Iterators, see [Iterators](../concepts/iterators.md).
+Contains the methods for iterating through a list of negative keyword lists. For information about iterators, see [Iterators](../concepts/iterators.md).
 
 Example usage:
 ```javascript

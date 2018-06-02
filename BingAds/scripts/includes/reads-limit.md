@@ -1,1 +1,1 @@
-When you reach your entity limit for reads, the `hasNext` method returns false and the `next` method throws an exception, even if the selector matched more entities.
+When you reach your entity limit for reads, the `hasNext()` method returns false and the `next()` method throws an exception, even if the selector matched more entities.

@@ -29,7 +29,7 @@ Example usage:
 [getAverageCpc](#getaveragecpc)|double|Returns the average cost per click.
 [getAverageCpm](#getaveragecpm)|double|Returns the average cost per thousand impressions.
 [getAveragePosition](#getaverageposition)|double|Returns the average position.
-[getClickConversionRate](#getclickconversionrate)|double|Returns the conversion rate for clicks within the range 0..1.
+[getClickConversionRate](#getclickconversionrate)|double|Returns the conversion rate for clicks in the range 0..1.
 [getClicks](#getclicks)|long|Returns the number of clicks.
 [getConvertedClicks](#getconvertedclicks)|long|Returns the number of clicks that converted.
 [getCost](#getcost)|double|Returns the cost (spend) in the currency of the current account.
@@ -53,7 +53,7 @@ Returns the average cost per thousand impressions.
 double|The average cost per thousand impressions.
 
 ## <a name="getaverageposition"></a>getAveragePosition
-Returns the average position ads were placed.
+Returns the average position where ads were placed.
 
 ### Returns
 |Type|Description|
@@ -61,12 +61,12 @@ Returns the average position ads were placed.
 double|The average position ads were placed.
 
 ## <a name="getclickconversionrate"></a>getClickConversionRate
-Returns the conversion rate for clicks within the range 0..1.
+Returns the conversion rate for clicks in the range 0..1.
 
 ### Returns
 |Type|Description|
 |-|-
-double|The conversion rate for clicks within the range 0..1.
+double|The conversion rate for clicks in the range 0..1.
 
 ## <a name="getclicks"></a>getClicks
 Returns the number of clicks.

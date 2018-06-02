@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # NegativeKeywordListSelector
 
-Contains the methods for filtering the list of negative keyword lists to return. For information about Selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods for filtering the negative keyword lists. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 Example usage:
 ```javascript
@@ -28,14 +28,14 @@ var negativeKeywordListSelector = BingAdsApp.negativeKeywordLists()
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[get](#get)|[NegativeKeywordListIterator](./NegativeKeywordListIterator.md)|Returns a negative keywords list iterator based on the selector's selection criteria.
+[get](#get)|[NegativeKeywordListIterator](./NegativeKeywordListIterator.md)|Returns an iterator that you use to iterate through the list of negative keyword lists.
 [orderBy(string orderBy)](#orderby~string-orderby~)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector with the specified ordering applied.
-[withCondition(string condition)](#withcondition~string-condition~)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector that limits the negative keyword lists it returns to those that match the filter criteria.
+[withCondition(string condition)](#withcondition~string-condition~)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector that limits the negative keyword lists to those that match the filter criteria.
 [withIds(string[] ids)](#withids~string-ids~)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector that returns only negative keyword lists with the specified IDs.
 [withLimit(int limit)](#withlimit~int-limit~)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector with the top *n* negative keyword lists that match the selection criteria.
 
 ## <a name="get"></a>get
-Returns a negative keywords list [iterator](../concepts/iterators.md) based on the selector's selection criteria.
+Returns an [iterator](../concepts/iterators.md) that you use to iterate through the list of negative keyword lists.
 
 ### Returns
 |Type|Description|
@@ -47,8 +47,8 @@ Returns a selector with the specified ordering applied.
 
 Specify the `orderBy` parameter in the form, "columnName orderDirection" where:
 
-- *columnName* is a supported column, see [Supported Columns](#supported-negative-keyword-list-columns)
-- *orderDirection* is the direction to order the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.
+- *columnName* is one of the [supported columns](#supported-negative-keyword-list-columns)
+- *orderDirection* is the order to sort the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.
 
 For example, the following call returns negative keyword lists in ascending order by MemberCount.
 
@@ -67,7 +67,7 @@ orderBy|string|The ordering to apply.
 [NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Selector with ordering applied.
 
 ## <a name="withcondition~string-condition~"></a>withCondition(string condition)
-Returns a selector that limits the negative keyword lists it returns to those that match the filter criteria. 
+Returns a selector that limits the negative keyword lists to those that match the filter criteria. 
 
 Specify the condition parameter in the form, "columnName operator value" where: 
 
@@ -86,7 +86,7 @@ MemberCount|int|`withCondition("MemberCount > 5")`
 Name|string|`withCondition("Name = 'negative keyword list'")`
 ReferenceCount|int|`withCondition("ReferenceCount > 5")`
 SharedSetId|double|`withCondition("SharedSetId > 5")`
-Status|string|`withCondition("Status = ACTIVE")`<br /><br />Possible status values are: <ul><li>ACTIVE</li><li>DELETED</li></ul>
+Status|enumeration|`withCondition("Status = ACTIVE")`<br /><br />Possible status values are: <ul><li>ACTIVE</li><li>DELETED</li></ul>
 
 
 ### Arguments
@@ -116,7 +116,7 @@ BingAdsApp.negativeKeywordLists()
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-ids|string[]|An array of negative keyword lists IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get` method fails with a runtime error.
+ids|string[]|An array of negative keyword lists IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get()` method fails with a runtime error.
 
 ### Returns
 |Type|Description|
@@ -129,7 +129,7 @@ Returns a selector with the top *n* negative keyword lists that match the select
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-limit|int|The number of negative keyword lists to return.
+limit|int|The number of negative keyword lists to return. The actual number may be less.
 
 ### Returns
 |Type|Description|

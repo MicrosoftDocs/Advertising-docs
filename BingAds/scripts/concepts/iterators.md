@@ -16,7 +16,7 @@ ms.topic: "article"
 Iterators enumerate items that a [selector](selectors.md) returns. Iterators are similar to arrays except you can't use an index to directly access an item. Iterators also help reduce memory pressure by loading only a single item at a time rather than the entire set of items. The following are the iterator methods.
 
 - **boolean hasNext()** &mdash; Returns true if the current position is not the last item in the list
-- **Object next()** &mdash; Advances the current position and returns the object at the new position in the list
+- **Object next()** &mdash; Advances the current position and returns the object at the new position
 - **totalNumEntities()** &mdash; Returns the number of items available in the iterator.
 
 The following code shows how to use an iterator to iterate over all campaigns in your account.
@@ -32,7 +32,7 @@ while (campaignIterator.hasNext()) {
 }
 ```
 
-The following are the possible iterators.
+The following is the list of iterators.
 
 - [AdGroupIterator](../reference/AdGroupIterator.md)
 - [CampaignIterator](../reference/CampaignIterator.md)

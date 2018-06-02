@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # CampaignSelector
 
-Contains the methods for filtering the list of ad groups. For information about selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods for filtering the list of campaigns. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 Example usage:
 ```javascript
@@ -32,9 +32,9 @@ Example usage:
 |-|-|-
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[CampaignSelector](CampaignSelector.md)|Returns a selector with the start and end dates applied.
 [forDateRange(string dateRange)](#fordaterange~string-daterange~)|[CampaignSelector](./CampaignSelector.md)|Returns a selector with the predefined date range applied.
-[get](#get)|[CampaignIterator](./CampaignIterator.md)|Returns a campaign iterator based on the selector's selection criteria.
+[get](#get)|[CampaignIterator](./CampaignIterator.md)|Returns an iterator that you use to iterate through the list of campaigns.
 [orderBy(string orderBy)](#orderby~string-orderby~)|[CampaignSelector](./CampaignSelector.md)|Returns a selector with the specified ordering applied.
-[withCondition(string condition)](#withcondition~string-condition~)|[CampaignSelector](./CampaignSelector.md)|Returns a selector that limits the campaigns it returns to those that match the filter criteria.
+[withCondition(string condition)](#withcondition~string-condition~)|[CampaignSelector](./CampaignSelector.md)|Returns a selector that limits the campaigns to those that match the filter criteria.
 [withIds(string[] ids)](#withids~string-ids~)|[CampaignSelector](./CampaignSelector.md)|Returns a selector that returns only campaigns with the specified IDs.
 [withLimit(int limit)](#withlimit~int-limit~)|[CampaignSelector](./CampaignSelector.md)|Returns a selector with the top *n* campaigns that match the selection criteria.
 
@@ -64,7 +64,7 @@ Returns a selector with the predefined date range applied. The date range specif
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-dateRange|String|Date range that specifies the performance data to include in the selector.
+dateRange|String|The predefined date range string that specifies the performance data to include in the selector.
 
 ### Returns
 |Type|Description|
@@ -72,20 +72,20 @@ dateRange|String|Date range that specifies the performance data to include in th
 [CampaignSelector](./CampaignSelector.md)|Selector with date range applied.
 
 ## <a name="get"></a>get
-Returns a campaign [iterator](../concepts/iterators.md) based on the selector's selection criteria.
+Returns an  [iterator](../concepts/iterators.md) based on the selector's selection criteria.
 
 ### Returns
 |Type|Description|
 |-|-
-[CampaignIterator](./CampaignIterator.md)|Iterator that you use to iterate through the campaigns that were selected based on the selector's selection criteria.
+[CampaignIterator](./CampaignIterator.md)|An iterator that you use to iterate through the selected campaigns.
 
 ## <a name="orderby~string-orderby~"></a>orderBy(string orderBy)
 Returns a selector with the specified ordering applied. 
 
 Specify the `orderBy` parameter in the form, "columnName orderDirection" where:
 
-- *columnName* is a supported column, see [Supported Columns](#supported-campaign-columns)
-- *orderDirection* is the direction to order the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.
+- *columnName* is one of the [supported columns](#supported-campaign-columns)
+- *orderDirection* is the order to sort the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.
 
 For example, the following call returns campaigns in ascending order by AverageCpc.
 
@@ -108,7 +108,7 @@ Returns a selector that limits the campaigns it returns to those that match the 
 
 Specify the condition parameter in the form, "columnName operator value" where: 
 
-- *columnName* is one of the [supported columns](#supported-ad-group-columns). If you set *columName* to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange~string-daterange~) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~).
+- *columnName* is one of the [supported columns](#supported-campaign-columns). If you set *columName* to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange~string-daterange~) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~).
 - *operator* is one of the supported [operators](#operators).
 
 [!INCLUDE[operators](../includes/operators.md)]
@@ -132,12 +132,12 @@ Ctr|double|`withCondition("Ctr > 0.01")`<br /> The CTR is returned in the range 
 Impressions|long|`withCondition("Impressions != 0")`
 &nbsp;|&nbsp;|&nbsp;
 <strong>Campaign attributes</strong>|
-Status|string|`withCondition("Status = PAUSED")`<br /><br />Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li><li>BUDGET_PAUSED</li><li>BUDGET_AND_USER_PAUSED</li></ul>
+Status|enumeration|`withCondition("Status = PAUSED")`<br /><br />Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li><li>BUDGET_PAUSED</li><li>BUDGET_AND_USER_PAUSED</li></ul>
 Name|string|`withCondition("Name CONTAINS_IGNORE_CASE 'promotion'")`
 Budget|double|`withCondition("Budget > 10.0")`
-Type|string|`withCondition("Type = 'SEARCH_AND_CONTENT'")`<br /><br />Possible status values are: <ul><li>SEARCH_AND_CONTENT</li><li>SHOPPING</li><li>DYNAMIC_SEARCH_ADS</li></ul>
-BudgetType|string|`withCondition("BudgetType = 'ACCELERATED'")`<br /><br />Possible status values are: <ul><li>STANDARD</li><li>ACCELERATED</li></ul>
-DeliveryStatus|string|`withCondition("DeliveryStatus NOT IN ['LIMITED_BY_BUDGET', 'HOLD', 'CAMPAIGN_OUT_OF_BUDGET']")`<br /><br />Possible status values are: <ul><li>ELIGIBLE</li><li>LIMITED_BY_BUDGET</li><li>HOLD</li><li>CAMPAIGN_OUT_OF_BUDGET</li><li>CAMPAIGN_SUSPENDED</li><li>CAMPAIGN_PAUSED</li></ul>
+Type|enumeration|`withCondition("Type = 'SEARCH_AND_CONTENT'")`<br /><br />Possible type values are: <ul><li>SEARCH_AND_CONTENT</li><li>SHOPPING</li><li>DYNAMIC_SEARCH_ADS</li></ul>
+BudgetType|enumeration|`withCondition("BudgetType = 'ACCELERATED'")`<br /><br />Possible type values are: <ul><li>STANDARD</li><li>ACCELERATED</li></ul>
+DeliveryStatus|enumeration|`withCondition("DeliveryStatus NOT IN ['LIMITED_BY_BUDGET', 'HOLD', 'CAMPAIGN_OUT_OF_BUDGET']")`<br /><br />Possible status values are: <ul><li>ELIGIBLE</li><li>LIMITED_BY_BUDGET</li><li>HOLD</li><li>CAMPAIGN_OUT_OF_BUDGET</li><li>CAMPAIGN_SUSPENDED</li><li>CAMPAIGN_PAUSED</li></ul>
 
 
 
@@ -162,13 +162,10 @@ BingAdsApp.campaigns()
     .withIds([33333, 44444, 55555])
 ```
 
-[!INCLUDE[maximum-number-of-ids](../includes/maximum-number-of-ids.md)] 
-
-
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-ids|string[]|An array of campaign IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get` method fails with a runtime error.
+ids|string[]|An array of campaign IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get()` method fails with a runtime error.
 
 ### Returns
 |Type|Description|

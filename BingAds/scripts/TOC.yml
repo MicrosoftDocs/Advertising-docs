@@ -41,6 +41,8 @@
       items:
         - name: AdGroup
           href: ./reference/AdGroup.md 
+        - name: AdGroupBidding
+          href: ./reference/AdGroupBidding.md 
         - name: AdGroupBuilder
           href: ./reference/AdGroupBuilder.md 
         - name: AdGroupIterator

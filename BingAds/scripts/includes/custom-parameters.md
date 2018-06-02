@@ -1,1 +1,1 @@
-Custom parameters are helpful with sharing dynamic information across multiple URLs. For more information about its usage, see [Custom Parameters](/bingads/guides/url-tracking-upgraded-urls.md#customparametersvalidation).
+Custom parameters are helpful with sharing dynamic information across multiple URLs. For more information about its usage, see [Custom Parameters](/bingads/guides/url-tracking-upgraded-urls#customparametersvalidation).

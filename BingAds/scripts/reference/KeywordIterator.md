@@ -10,7 +10,7 @@ ms.topic: "article"
 ---
 
 # KeywordIterator
-Contains the methods for iterating through a list of keywords. For information about Iterators, see [Iterators](../concepts/iterators.md).
+Contains the methods for iterating through a list of keywords. For information about iterators, see [Iterators](../concepts/iterators.md).
 
 Example usage:
 ```javascript

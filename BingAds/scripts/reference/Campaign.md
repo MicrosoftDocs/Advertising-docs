@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # Campaign
 
-Contains the methods used to manage the [campaign](/bingads/guides/entity-hierarchy-limits#campaign).
+Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarchy-limits#campaign).
 
 ## Methods
 |Method Name|Return Type|Description|
@@ -20,14 +20,14 @@ Contains the methods used to manage the [campaign](/bingads/guides/entity-hierar
 [enable](#enable)|void|Enables this campaign.
 [getBiddingStrategyType](#getbiddingstrategytype)|string|Returns the campaign's bidding strategy.
 [getBudget](#getbudget)|[Budget](Budget.md)|Returns the campaign's budget.
-[getEntityType](#getentitytype)|string|Returns this object's entity type.
+[getEntityType](#getentitytype)|string|Returns this entity's type.
 [getId](#getid)|string|Returns the ID that uniquely identifies this campaign.
 [getName](#getname)|string|Returns the campaign's name.
 [getStats](#getstats)|[Stats](Stats.md)|Returns the performance data for this campaign.
 [isEnabled](#isenabled)|boolean|Returns a Boolean value that determines whether this campaign is enabled.
 [isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates whether this campaign is paused.
 [isRemoved](#isremoved)|Boolean|Returns a Boolean value that indicates whether this campaign is removed (deleted).
-[newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder.md)|Returns an ad group builder that you use to add ad groups to this campaign.
+[newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder.md)|Returns a builder that you use to add an ad group to this campaign.
 [pause](#pause)|void|Pauses this campaign.
 [remove](#remove)|void|Removes this campaign.
 [setName(String name)](#setname~string-name~)|void|Sets the name of this campaign.
@@ -60,8 +60,7 @@ Returns the campaign's bidding strategy.
 ### Returns
 |Type|Description|
 |-|-
-string|The campaign's bidding strategy. Possible values are:<br /><ul><li>MANUAL_CPC</li><li>TARGET_SPEND</li><li>MAXIMIZE_CONVERSIONS</li><li>ENHANCED_CPC</li><li>TARGET_CPA</li></ul>
-For more information, see [Bid Strategies](../concepts/bid-strategies.md).
+string|The campaign's bidding strategy. Possible values are:<br /><ul><li>MANUAL_CPC</li><li>TARGET_SPEND</li><li>MAXIMIZE_CONVERSIONS</li><li>ENHANCED_CPC</li><li>TARGET_CPA</li></ul>For more information, see [Bid Strategies](../concepts/bid-strategies.md).
 
 ## <a name="getbudget"></a>getBudget
 Returns the budget for this campaign.
@@ -72,12 +71,12 @@ Returns the budget for this campaign.
 [Budget](Budget.md)|The budget for this campaign.
 
 ## <a name="getentitytype"></a>getEntityType
-Returns the entity's type.
+Returns this entity's type.
 
 ### Returns
 |Type|Description|
 |-|-
-string|This entity's type, which is Campaign.
+string|This entity's type (is set to Campaign).
 
 ## <a name="getid"></a>getId
 Returns the ID that uniquely identifies this campaign.
@@ -104,7 +103,7 @@ Returns the performance data for the campaign.
 [Stats](Stats.md)|The campaign's performance data.
 
 ## <a name="isenabled"></a>isEnabled
-Returns a Boolean value that determines whether this campaign is enabled.
+Returns a Boolean value that indicates whether this campaign is enabled.
 
 ### Returns
 |Type|Description|
@@ -128,12 +127,12 @@ Returns a Boolean value that indicates whether this campaign is removed (deleted
 Boolean|Returns **true** if this campaign is removed; otherwise, **false**.
 
 ## <a name="newadgroupbuilder"></a>newAdGroupBuilder
-Returns an ad group builder that you use to add an ad group to this campaign.
+Returns a [builder](../concepts/builders.md) that you use to add an ad group to this campaign.
 
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupBuilder](AdGroupBuilder.md)|The ad group builder that you use to add an ad group to this campaign.
+[AdGroupBuilder](AdGroupBuilder.md)|The builder that you use to add an ad group to this campaign.
 
 ## <a name="pause"></a>pause
 Pauses this campaign.

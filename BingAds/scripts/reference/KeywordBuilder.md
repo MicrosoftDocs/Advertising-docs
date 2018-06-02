@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # KeywordBuilder
 
-Contains the methods for defining a keyword. For information about Builders, see [Builders](../concepts/builders.md).
+Contains the methods for defining and building a keyword. For information about builders, see [Builders](../concepts/builders.md).
 
 Example usage:
 ```javascript
@@ -26,8 +26,8 @@ Example usage:
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[build](#build)|[KeywordOperation](./KeywordOperation.md)|Returns an operation object, which represents the keyword to create. You must call the operation object's methods to add the keyword.
-[withCpc(double cpc)](#withcpc~double-cpc~)|[KeywordBuilder](./KeywordBuilder.md)|Sets the maximum CPC bid to use for this new keyword.
+[build](#build)|[KeywordOperation](./KeywordOperation.md)|Returns an operation object that you use to add the keyword to the ad group.
+[withCpc(double cpc)](#withcpc~double-cpc~)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's maximum CPC bid.
 [withCustomParameters(Object customParameters)](#withcustomparameters~object-customparameters~)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's custom parameters.
 [withFinalUrl(string finalUrl)](#withfinalurl~string-finalurl~)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's final URL.
 [withMobileFinalUrl(string mobileFinalUrl)](#withmobilefinalurl~string-mobilefinalurl~)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's final URL for mobile devices.
@@ -36,15 +36,15 @@ Example usage:
 
 
 ## <a name="build"></a>build
-Returns an operation object, which represents the keyword to create. You must call the operation object's methods to add the keyword.
+Returns an operation object that you use to add the keyword to the ad group.
 
 ### Returns
 |Type|Description|
 |-|-
-[KeywordOperation](./KeywordOperation.md)|An operation object, which you use to add the keyword.
+[KeywordOperation](./KeywordOperation.md)|An operation object that you use to add the keyword.
 
 ## <a name="withcpc~double-cpc~"></a>withCpc(double cpc)
-Sets the maximum CPC bid to use for this new keyword.
+Sets the keyword's maximum CPC bid.
 
 ### Arguments
 |Name|Type|Description|
@@ -64,7 +64,7 @@ Sets the keyword's custom parameters.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|The custom parameters to apply to the ad group. Specify the parameters as a dictionary of key-value pairs. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value.
+customParameters|Object|The custom parameters to apply to the keyword. Specify the parameters as a dictionary of key-value pairs.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value.
 
 ### Returns
 |Type|Description|
@@ -89,10 +89,9 @@ finalUrl|string|The final URL for the keyword.
 ## <a name="withmobilefinalurl~string-mobilefinalurl~"></a>withMobileFinalUrl(string mobileFinalUrl)
 Sets the keyword's final URL for mobile devices.
 
+The final URL must be the URL of the page that the user ends up on after clicking your ad (after all redirects have taken place).
 
-The final URL is the actual landing page for your ad on a mobile device. The final URL must be the URL of the page that the user ends up on after clicking your ad on a mobile device and after all the redirects have taken place.
-
-Mobile final URLs follow the same override rules as destination URLs. For example, a mobile final URL at the keyword level overrides a mobile final URL at an ad level.
+Final URLs follow the same override rules as destination URLs. For example, a mobile final URL at the keyword level overrides a mobile final URL at the ad level.
 
 ### Arguments
 |Name|Type|Description|

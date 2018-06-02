@@ -63,7 +63,7 @@ function getAdGroupByName() {
 }
 ```
 
-## Get an ad group's stats
+## Get an ad group's performance data
 ```javascript
 function getAdGroupStats() {
   var adGroupName = 'YOUR AD GROUP NAME';

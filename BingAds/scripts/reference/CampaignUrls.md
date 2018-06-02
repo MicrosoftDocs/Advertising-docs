@@ -16,14 +16,14 @@ Contains the methods for managing the campaign's URLs. For more information, see
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[clearTrackingTemplate](#cleartrackingtemplate)|void|Clears the tracking template from this campaign.
+[clearTrackingTemplate](#cleartrackingtemplate)|void|Removes the tracking template from this campaign.
 [getCustomParameters](#getcustomparameters)|Object|Returns the campaign's custom parameters.
 [getTrackingTemplate](#gettrackingtemplate)|string|Returns the campaign's tracking template.
 [setCustomParameters(Object customParameters)](#setcustomparameters~object-customparameters~)|void|Sets the campaign's custom parameters.
 [setTrackingTemplate(String trackingTemplate)](#settrackingtemplate~string-trackingtemplate~)|void|Sets the campaign's tracking template.
 
 ## <a name="cleartrackingtemplate"></a>clearTrackingTemplate
-Clears the tracking template from this. For information about tracking templates, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
+Removes the tracking template from this campaign. For information about tracking templates, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
 
 ### Returns
 |Type|Description|
@@ -38,7 +38,7 @@ Returns the campaign's custom parameters.
 ### Returns
 |Type|Description|
 |-|-
-Object|A map of the campaign's custom parameters. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.
+Object|A map of the campaign's custom parameters.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.
 
 ## <a name="gettrackingtemplate"></a>getTrackingTemplate
 Returns the campaign's tracking template. 
@@ -62,7 +62,7 @@ To clear the custom parameters from the campaign, pass an empty object (for exam
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|A map of custom parameters to use in the campaign. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.
+customParameters|Object|A map of custom parameters to use in the campaign.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.
 
 ### Returns
 |Type|Description|

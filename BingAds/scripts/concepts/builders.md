@@ -13,18 +13,12 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-Adding an entity is a multi-step process and a builder is one component used in the process. You use builders to define the entity you want to add. The following shows the process for adding an entity. 
+Adding an entity is a multi-step process and a builder is one component of that process. You use builders to define the entity you want to add. The following shows the process for adding an entity. 
 
 1. Get a builder object and use it to specify the entity’s properties. 
-2. Call the `build` method to create an operation object. (The builder simply creates the entity’s definition.) 
-3. Call any of the operation’s methods to create the entity. Typically, you call the `getResult` method but calling any of the methods creates the entity.
+2. Call the `build()` method to create an operation object. (The builder simply creates the entity’s definition.) 
+3. Call any of the operation’s methods to create the entity. Typically, you call the `getResult()` method but calling any of the methods creates the entity.
 
-
-The following are the available builders.
-
-- [AdGroupBuilder](../reference/AdGroupBuilder.md)
-- [KeywordBuilder](../reference/KeywordBuilder.md)
-- [NegativeKeywordListBuilder](../reference/NegativeKeywordListBuilder.md)
 
 The following example demonstrates how to create a keyword using the builder and operation objects.
 
@@ -94,6 +88,13 @@ for (var i = 0; i < operations.length; i++) {
   newKeyword.applyLabel("New keywords");
 }
 ```
+
+
+The following is the list of builders.
+
+- [AdGroupBuilder](../reference/AdGroupBuilder.md)
+- [KeywordBuilder](../reference/KeywordBuilder.md)
+- [NegativeKeywordListBuilder](../reference/NegativeKeywordListBuilder.md)
 
 ## Next steps
 

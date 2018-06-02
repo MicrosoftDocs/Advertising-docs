@@ -11,16 +11,16 @@ ms.topic: "article"
 
 # KeywordSelector
 
-Contains the methods for filtering the list of keywords to return. For information about Selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods for filtering the list of keywords. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[KeywordSelector](./KeywordSelector.md)|Returns a selector with the start and end dates applied.
 [forDateRange(string dateRange)](#fordaterange~string-daterange~)|[KeywordSelector](./KeywordSelector.md)|Returns a selector with the predefined date range applied.
-[get](#get)|[KeywordIterator](./KeywordIterator.md)|Returns a keyword iterator based on the selector's selection criteria.
+[get](#get)|[KeywordIterator](./KeywordIterator.md)|Returns an iterator that you use to iterate through the list of keywords.
 [orderBy(string orderBy)](#orderby~string-orderby~)|[KeywordSelector](./KeywordSelector.md)|Returns a selector with the specified ordering applied.
-[withCondition(string condition)](#withcondition~string-condition~)|[KeywordSelector](./KeywordSelector.md)|Returns a selector that limits the keywords it returns to those that match the filter criteria.
+[withCondition(string condition)](#withcondition~string-condition~)|[KeywordSelector](./KeywordSelector.md)|Returns a selector that limits the keywords to those that match the filter criteria.
 [withIds(string[] ids)](#withids~string-ids~)|[KeywordSelector](./KeywordSelector.md)|Returns a selector that returns only keywords with the specified IDs.
 [withLimit(int limit)](#withlimit~int-limit~)|[KeywordSelector](./KeywordSelector.md)|Returns a selector with the top *n* keywords that match the selection criteria.
 
@@ -58,20 +58,20 @@ dateRange|String|Date range that specifies the performance data to include in th
 [KeywordSelector](./KeywordSelector.md)|Selector with date range applied.
 
 ## <a name="get"></a>get
-Returns a keyword [iterator](../concepts/iterators.md) based on the selector's selection criteria.
+Returns an [iterator](../concepts/iterators.md) that you use to iterate through the list of keywords.
 
 ### Returns
 |Type|Description|
 |-|-
-[KeywordIterator](./KeywordIterator.md)|Iterator that you use to iterate through the keywords that were selected based on the selector's selection criteria.
+[KeywordIterator](./KeywordIterator.md)|An iterator that you use to iterate through the keywords that were selected based on the selector's selection criteria.
 
 ## <a name="orderby~string-orderby~"></a>orderBy(string orderBy)
 Returns a selector with the specified ordering applied. 
 
 Specify the `orderBy` parameter in the form, "columnName orderDirection" where:
 
-- *columnName* is one of the [supported Columns](#supported-keyword-columns).
-- *orderDirection* is the direction to order the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.
+- *columnName* is one of the [supported columns](#supported-keyword-columns).
+- *orderDirection* is the order to sort the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.
 
 For example, the following call returns results in ascending order by AverageCpc.
 
@@ -94,7 +94,7 @@ Returns a selector that limits the keywords it returns to those that match the f
 
 Specify the condition parameter in the form, "columnName operator value" where: 
 
-- *columnName* is one of the [supported Columns](#supported-ad-group-columns). If you set *columName* to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange~string-daterange~) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~).
+- *columnName* is one of the [supported columns](#supported-keyword-columns). If you set *columName* to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange~string-daterange~) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~).
 - *operator* is one of the supported [operators](#operators).
 
 [!INCLUDE[operators](../includes/operators.md)]
@@ -113,20 +113,20 @@ BounceRate|double|`withCondition("BounceRate < 0.5")`|
 ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`|Conv. Rate
 Clicks|long|`withCondition("Clicks >= 21")`|Clicks
 ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`|Conv.
-Cost|double|`withCondition("Cost > 4.48").`<br /><br />The cost is in the currency of the account.|Spend
-Ctr|double|`withCondition("Ctr > 0.01").`<br /><br />The CTR is in the range 0..1, so a 5% CTR is represented as 0.05.`|CTR
+Cost|double|`withCondition("Cost > 4.48").`<br />The cost is in the currency of the account.|Spend
+Ctr|double|`withCondition("Ctr > 0.01").`<br />The CTR is in the range 0..1, so a 5% CTR is represented as 0.05.`|CTR
 Impressions|long|`withCondition("Impressions != 0")`|Impr.
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 <strong>Keyword</strong>|
-Status|string|`withCondition("Status = PAUSED")`<br /><br />Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>DISABLED</li></ul>|Status
+Status|enumeration|`withCondition("Status = PAUSED")`<br /><br />Possible values are: <ul><li>ENABLED</li><li>PAUSED</li><li>DISABLED</li></ul>|Status
 Text|string|`withCondition("Text STARTS_WITH 'books'")`|Keyword Text
-KeywordMatchType|string|`withCondition("KeywordMatchType = EXACT")`<br /><br />Possible status values are: <ul><li>BROAD</li><li>EXACT</li><li>PHRASE</li><li>CONTENT</li></ul>|Match type
-MaxCpc|double|`withCondition("MaxCpc > 0.40")`<br /><br />The CPC is in the currency of the current account.|Bid
+KeywordMatchType|enumeration|`withCondition("KeywordMatchType = EXACT")`<br /><br />Possible values are: <ul><li>BROAD</li><li>EXACT</li><li>PHRASE</li><li>CONTENT</li></ul>|Match type
+MaxCpc|double|`withCondition("MaxCpc > 0.40")`<br />The CPC is in the currency of the current account.|Bid
 DestinationUrl|string|`withCondition("DestinationUrl STARTS_WITH 'http://www.example.com'")`|Destination URL
 FinalUrls|string|`withCondition("FinalUrls CONTAINS 'http://www.example.com'")`|
 QualityScore|int|`withCondition("QualityScore > 5")`|Qual. score
-FirstPageCpc|double|`withCondition("FirstPageCpc > 6.00")`<br /><br />The CPC is in the currency of the current account.|Est. first page bid
-TopOfPageCpc|double|`withCondition("TopOfPageCpc > 8.00")`<br /><br />The value specified is in the currency of the current account.|Est. mainline bid
+FirstPageCpc|double|`withCondition("FirstPageCpc > 6.00")`<br />The CPC is in the currency of the current account.|Est. first page bid
+TopOfPageCpc|double|`withCondition("TopOfPageCpc > 8.00")`<br />The value specified is in the currency of the current account.|Est. mainline bid
 
 
 ### Arguments
@@ -155,7 +155,7 @@ BingAdsApp.keywords()
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-ids|string[]|An array of keyword IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get` method fails with a runtime error.
+ids|string[]|An array of keyword IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get()` method fails with a runtime error.
 
 ### Returns
 |Type|Description|

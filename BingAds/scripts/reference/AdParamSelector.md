@@ -29,7 +29,7 @@ Returns an [iterator](../concepts/iterators.md) based on the selector's selectio
 ### Returns
 |Type|Description|
 |-|-
-[AdParamIterator](AdParamIterator.md)|Iterator that you use to iterate through the substitution parameters that were selected based on the selector's selection criteria.
+[AdParamIterator](AdParamIterator.md)|An iterator that you use to iterate through the selected substitution parameters.
 
 
 ## See also

@@ -23,7 +23,7 @@ Contains the methods for managing a keyword. For information about keywords, see
 [getAdGroup](#getadgroup)|[AdGroup](AdGroup.md)|Returns the ad group this keyword belongs to.
 [getApprovalStatus](#getapprovalstatus)|string|Returns the keyword's editorial approval status.
 [getCampaign](#getcampaign)|[Campaign](./Campaign.md)|Returns the campaign this keyword belongs to.
-[getEntityType](#getentitytype)|string|Returns the entity's type.
+[getEntityType](#getentitytype)|string|Returns this entity's type.
 [getId](#getid)|string|Returns the ID that uniquely identifies this keyword.
 [getMatchType](#getmatchtype)|String|Returns the keyword's match type.
 [getStats](#getstats)|[Stats](./Stats.md)|Returns the performance data for this keyword.
@@ -32,7 +32,7 @@ Contains the methods for managing a keyword. For information about keywords, see
 [isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates whether this keyword is paused.
 [pause](#pause)|void|Pauses this keyword.
 [remove](#remove)|void|Removes this keyword.
-[setAdParam(int index, string insertionText)](#setadparam~int-index~string-insertiontext~)|void|Sets the ad substitution value for the specified substitution parameter.
+[setAdParam(int index, string insertionText)](#setadparam~int-index~string-insertiontext~)|void|Sets the substitution value for the specified substitution parameter.
 [urls](#urls)|[KeywordUrls](./KeywordUrls.md)|Returns the keyword's URL fields.
 
 
@@ -84,7 +84,7 @@ Returns the keyword's editorial approval status.
 ### Returns
 |Type|Description|
 |-|-
-string|The keyword's editorial approval status, which indicates whether the keyword is pending review, is approved, or is not allowed. Possible values are:<br /><ul><li>APPROVED</li><li>DISAPPROVED</li><li>PENDING_REVIEW</li><li>UNDER_REVIEW</li></ul>
+string|The keyword's editorial approval status. The status indicates whether the keyword is pending review, is approved, or is not allowed. Possible values are:<br /><ul><li>APPROVED</li><li>DISAPPROVED</li><li>PENDING_REVIEW</li><li>UNDER_REVIEW</li></ul>
 
 ## <a name="getcampaign"></a>getCampaign
 Returns the campaign this keyword belongs to.
@@ -100,7 +100,7 @@ Returns this entity's type.
 ### Returns
 |Type|Description|
 |-|-
-string|This entity's type, which is Keyword.
+string|This entity's type (is set to Keyword).
 
 ## <a name="getid"></a>getId
 Returns the ID that uniquely identifies this keyword.
@@ -146,7 +146,7 @@ Returns a Boolean value that indicates whether this keyword is enabled.
 ### Returns
 |Type|Description|
 |-|-
-Boolean|Returns **true*8 if this keyword is enabled; otherwise, **false**.
+Boolean|Returns **true** if this keyword is enabled; otherwise, **false**.
 
 ## <a name="ispaused"></a>isPaused
 Returns a Boolean value that indicates whether this keyword is paused.
@@ -189,7 +189,7 @@ Removes this keyword.
 void|Returns nothing.
 
 ## <a name="urls"></a>urls
-Returns the Keyword's URL fields.
+Returns the keyword's URL fields.
 
 ### Returns
 |Type|Description|

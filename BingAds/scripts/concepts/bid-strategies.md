@@ -23,5 +23,5 @@ MaxConversions|MAXIMIZE_CONVERSIONS
 TargetCpa|TARGET_CPA
 EnhancedCpc|ENHANCED_CPC
 
-For information about these bid strategies, see [Bid Strategy Types](/bingads/guides/budget-bid-strategies.md#bidstrategytypes).
+For information about these bid strategies, see [Bid Strategy Types](/bingads/guides/budget-bid-strategies#bidstrategytypes).
 

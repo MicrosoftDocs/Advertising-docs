@@ -78,7 +78,7 @@ function formatKeyword(keyword) {
 }
 ```
 
-## Get stats for all keywords in an ad group
+## Get performance data for all keywords in an ad group
 ```javascript
 function getKeywordStats() {
   var adGroupName = 'YOUR AD GROUP NAME';

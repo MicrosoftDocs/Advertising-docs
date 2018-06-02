@@ -11,15 +11,15 @@ ms.topic: "article"
 
 # AdParam
 
-Contains the methods used to manage the substitution parameter.
+Contains the methods used to manage the substitution parameters used in the keyword.
 
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[getEntityType](#getentitytype)|string|Returns the entity's type.
+[getEntityType](#getentitytype)|string|Returns this entity's type.
 [getIndex](#getindex)|int|Returns the index that identifies this substitution parameter.
 [getInsertionText](#getinsertiontext)|string|Returns the substitution parameter's text.
-[getKeyword](#getkeywor)|[Keyword](Keyword.md|Returns the keyword that the substitution parameter applies to.
+[getKeyword](#getkeyword)|[Keyword](Keyword.md)|Returns the keyword that the substitution parameter applies to.
 [remove](#remove)|void|Removes the substitution parameter from the keyword.
 [setInsertionText(string insertionText)](#setinsertiontext~string-insertiontext~)|void|Sets the substitution parameter's text.
 
@@ -30,7 +30,7 @@ Returns this entity's type.
 ### Returns
 |Type|Description|
 |-|-
-string|This entity's type, which is AdParam.
+string|This entity's type (is set to AdParam).
 
 
 ## <a name="getindex"></a>getIndex
@@ -39,10 +39,10 @@ Returns the index that identifies this substitution parameter.
 ### Returns
 |Type|Description|
 |-|-
-int|The index that identifies this substitution parameter
+int|The index that identifies this substitution parameter.
 
 
-## <a name="getinsertiontextd"></a>getInsertionText
+## <a name="getinsertiontext"></a>getInsertionText
 Returns the substitution parameter's text.
 
 ### Returns

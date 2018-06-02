@@ -15,7 +15,7 @@ Contains the methods for managing the keyword's URLs. For information, see [URL 
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[clearTrackingTemplate](#cleartrackingtemplate)|void|Clears the tracking template of this keyword.
+[clearTrackingTemplate](#cleartrackingtemplate)|void|Removes the keyword's tracking template.
 [getCustomParameters](#getcustomparameters)|Object|Returns the keyword's custom parameters.
 [getFinalUrl](#getfinalurl)|string|Returns the keyword's final URL.
 [getTrackingTemplate](#gettrackingtemplate)|string|Returns the keyword's tracking template.
@@ -24,7 +24,7 @@ Contains the methods for managing the keyword's URLs. For information, see [URL 
 [setTrackingTemplate(String trackingTemplate)](#settrackingtemplate~string-trackingtemplate~)|void|Sets the keyword's tracking template.
 
 ## <a name="cleartrackingtemplate"></a>clearTrackingTemplate
-Clears the keyword's tracking template. For information about tracking templates, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
+Removes the keyword's tracking template. For information about tracking templates, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
 
 ### Returns
 |Type|Description|
@@ -39,17 +39,17 @@ Returns the keyword's custom parameters.
 ### Returns
 |Type|Description|
 |-|-
-Object|A map of the keyword's custom parameters. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.
+Object|A map of the keyword's custom parameters.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.
 
 ## <a name="getfinalurl"></a>getFinalUrl
-Returns the keyword's final URL of this keyword. The final URL represents the actual landing page for your ad. 
+Returns the keyword's final URL. The final URL represents the actual landing page for your ad. 
 
-Final URLs follow the same override rules as destination URLs. For example, a final URL at the keyword level overrides a final URL at the ad level.
+Final URLs follow the same override rules as destination URLs. For example, a final URL at the keyword level overrides the final URL at the ad level.
 
 ### Returns
 |Type|Description|
 |-|-
-string|The final URL of the keyword.
+string|The keyword's final URL.
 
 ## <a name="gettrackingtemplate"></a>getTrackingTemplate
 Returns the keyword's tracking template. 
@@ -66,15 +66,15 @@ Sets the keyword's custom parameters.
 
 [!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
 
-This method replaces the keyword's existing custom parameters.
+This method replaces all custom parameters already specified in the keyword.
 
-To clear the keyword's custom parameters, pass an empty object (for example, `setCustomParamters({})`).  
+To clear the custom parameters from the keyword, pass an empty object (for example, `setCustomParameters({})`). If you clear the keywords's custom parameters, the keyword inherits the URLs from its parent ad group (if the ad group specifies URLs). To completely clear custom parameters, you must clear them at all levels in the hierarchy.
 
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|A map of custom parameters to use in the keyword. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.
+customParameters|Object|A map of custom parameters to use in the keyword.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.
 
 ### Returns
 |Type|Description|
@@ -82,15 +82,14 @@ customParameters|Object|A map of custom parameters to use in the keyword. For ex
 void|Returns nothing.
 
 ## <a name="setfinalurl~string-finalurl~"></a>setFinalUrl(String finalUrl)
-Sets the keyword's final URL. The final URL represents the actual landing page for your ad. The final URL must be the URL of the page that the user ends up on after clicking on your ad and after all the redirects have taken place.
+Sets the keyword's final URL. 
 
-Final URLs follow the same override rules as destination URLs. For example, a final URL at the keyword level overrides a final URL at an ad level.
-
+[!INCLUDE[final-url](../includes/final-url.md)]
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-finalUrl|string|The final URL of the keyword.
+finalUrl|string|The keyword's final URL.
 
 ### Returns
 |Type|Description|

@@ -17,7 +17,7 @@ Bing Ads Scripts lets you access and manage your Bing Ads data using JavaScript 
 
 This section provides information about the JavaScript objects that you use in your scripts.
 
-For information about Bing Ads entities and the limits that apply to each entity, see [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits.md).
+For information about Bing Ads entities and the limits that apply to each entity, see [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits).
 
 The following is the top-level object that you use to access your Bing Ads entities.
 

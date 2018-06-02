@@ -45,7 +45,7 @@ function getCampaignsByName() {
 }
 ```
 
-## Get a campaign's stats
+## Get a campaign's performance data
 ```javascript
 function getCampaignStats() {
   var campaignName = 'YOUR CAMPAIGN NAME';
@@ -75,6 +75,7 @@ function pauseCampaign() {
 }
 ```
 
+<!--
 ## Get a campaign's device bid modifiers
 ```javascript
 function getCampaignBidModifiers() {
@@ -94,3 +95,4 @@ function getCampaignBidModifiers() {
     }
   }
 ```
+-->

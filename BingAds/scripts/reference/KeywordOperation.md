@@ -10,25 +10,25 @@ ms.topic: "article"
 ---
 
 # KeywordOperation
-Contains the methods for adding the keyword. Use the [KeywordBuilder](KeywordBuilder.md) object to define the keyword and create this operation object.
+Contains the methods for adding the keyword that you defined using the [KeywordBuilder](KeywordBuilder.md).
 
-The keyword is added only after calling any of this object's methods or after the script finishes execution, whichever comes first. To improve performance, store the operation objects in an array and only invoke its methods when all operations have been constructed. For more information about the builder and operation objects' usage, see [What are builders?](../concepts/builders.md)
+The keyword is added to the ad group when you call this object's methods or after the script finishes execution, whichever comes first. To improve performance, store the operation objects in an array and only invoke its methods when all operations have been constructed. For more information about the builder and operation objects' usage, see [What are builders?](../concepts/builders.md)
 
 
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[getErrors](#geterrors)|string[]|Returns an empty array if the keyword is successfully created; otherwise, it contains the list of errors.
+[getErrors](#geterrors)|string[]|Returns an empty array if the keyword is successfully created; otherwise, a list of errors.
 [getResult](#getresult)|[Keyword](./Keyword.md)|Returns the newly added keyword if the operation succeeded; otherwise, null.
 [isSuccessful](#issuccessful)|boolean|Returns a Boolean value that indicates whether this operation succeeded.
 
 ## <a name="geterrors"></a>getErrors
-Returns an empty array if the keyword is successfully created; otherwise, it contains the list of errors.
+Returns an empty array if the keyword is successfully created; otherwise, a list of errors.
 
 ### Returns
 |Type|Description|
 |-|-
-string[]|An empty array if the keyword is successfully created; otherwise, it contains the list of errors.
+string[]|An empty array if the keyword is successfully created; otherwise, a list of errors.
 
 ## <a name="getresult"></a>getResult
 Returns the newly added keyword if the operation succeeded; otherwise, null.
