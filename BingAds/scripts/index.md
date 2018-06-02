@@ -17,9 +17,9 @@ Want to quickly and easily integrate with Bing Ads without the need for a signif
 
 This content assumes you're familiar with Bing Ads and JavaScript. For a Bing Ads refresher, please see:
 
-- [Bing Ads API Overview](../bingads/guides/index.md)
-- [Entity Hierarchy and Limits](../bingads/guides/entity-hierarchy-limits.md) 
-- [Account management models](../bingads/guides/customer-accounts.md)
+- [Bing Ads API Overview](/bingads/guides/index.md)
+- [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits) 
+- [Account management models](/bingads/guides/customer-accounts.md)
 
 ### Next steps
 
