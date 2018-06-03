@@ -25,7 +25,7 @@
     - name: Defining IDs
       href: concepts/ids.md 
     - name: JavaScript features
-      href: concepts/support-js-features.md 
+      href: concepts/supported-js-features.md 
 - name: Code examples
   href: examples/index.md 
   items:
