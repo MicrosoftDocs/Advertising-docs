@@ -13,7 +13,7 @@ ms.topic: "article"
 Contains the methods for managing a keyword. For information about keywords, see [Keyword](/bingads/guides/entity-hierarchy-limits#keyword).
 
 
-# Methods
+## Methods
 |Method Name|Return Type|Description|
 |-|-|-
 [adParams](#adparams)|[AdParamSelector](AdParamSelector.md)|Returns a selector of all substitution parameters used in the ad for this keyword.

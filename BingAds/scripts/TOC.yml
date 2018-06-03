@@ -6,10 +6,6 @@
   items:
     - name: Authorization
       href: concepts/authorization.md 
-    - name: Bid strategies
-      href: concepts/bid-strategies.md 
-    - name: IDs
-      href: concepts/ids.md 
     - name: Main function
       href: concepts/main-function.md 
     - name: Selectors
@@ -18,12 +14,18 @@
       href: concepts/iterators.md 
     - name: Builders
       href: concepts/builders.md 
+    - name: Preview mode
+      href: concepts/preview-mode.md 
     - name: Errors and warnings
       href: concepts/errors-and-warnings.md 
     - name: Change and text logs
       href: concepts/change-and-text-logs.md 
-    - name: Preview mode
-      href: concepts/preview-mode.md 
+    - name: Bid strategies
+      href: concepts/bid-strategies.md 
+    - name: Defining IDs
+      href: concepts/ids.md 
+    - name: JavaScript features
+      href: concepts/support-js-features.md 
 - name: Code examples
   href: examples/index.md 
   items:

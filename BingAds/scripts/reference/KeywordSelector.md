@@ -127,6 +127,8 @@ FinalUrls|string|`withCondition("FinalUrls CONTAINS 'http://www.example.com'")`|
 QualityScore|int|`withCondition("QualityScore > 5")`|Qual. score
 FirstPageCpc|double|`withCondition("FirstPageCpc > 6.00")`<br />The CPC is in the currency of the current account.|Est. first page bid
 TopOfPageCpc|double|`withCondition("TopOfPageCpc > 8.00")`<br />The value specified is in the currency of the current account.|Est. mainline bid
+AdGroupName|string|`withCondition("AdGroupName = 'foo'")`|
+CampaignName|string|`withCondition("CampaignName = 'bar'")`|
 
 
 ### Arguments
