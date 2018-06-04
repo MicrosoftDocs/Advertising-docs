@@ -510,7 +510,7 @@ description: Bing Ads API documentation home.
                             </a>
                         </li>
                         <li>
-                            <a href="/bingads/scripts/concepts/">
+                            <a href="/bingads/scripts/concepts/authorization">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
