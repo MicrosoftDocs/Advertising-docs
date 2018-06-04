@@ -1,0 +1,126 @@
+- name: Overview
+  href: index.md
+- name: Get started
+  href: get-started.md 
+- name: Concepts
+  items:
+    - name: Authorization
+      href: concepts/authorization.md 
+    - name: Main function
+      href: concepts/main-function.md 
+    - name: Selectors
+      href: concepts/selectors.md       
+    - name: Iterators
+      href: concepts/iterators.md 
+    - name: Builders
+      href: concepts/builders.md 
+    - name: Preview mode
+      href: concepts/preview-mode.md 
+    - name: Errors and warnings
+      href: concepts/errors-and-warnings.md 
+    - name: Change and text logs
+      href: concepts/change-and-text-logs.md 
+    - name: Bid strategies
+      href: concepts/bid-strategies.md 
+    - name: Defining IDs
+      href: concepts/ids.md 
+    - name: JavaScript features
+      href: concepts/supported-js-features.md 
+- name: Code examples
+  href: examples/index.md 
+  items:
+    - name: Ad Groups
+      href: examples/adgroups.md 
+    - name: Campaigns
+      href: examples/campaigns.md 
+    - name: Keywords
+      href: examples/keywords.md 
+- name: Script reference
+  href: reference-overview.md 
+  items:    
+    - name: Single account  
+      href: ./reference/BingAdsApp.md 
+      items:
+        - name: AdGroup
+          href: ./reference/AdGroup.md 
+        - name: AdGroupBidding
+          href: ./reference/AdGroupBidding.md 
+        - name: AdGroupBuilder
+          href: ./reference/AdGroupBuilder.md 
+        - name: AdGroupIterator
+          href: ./reference/AdGroupIterator.md 
+        - name: AdGroupOperation
+          href: ./reference/AdGroupOperation.md 
+        - name: AdGroupSelector
+          href: ./reference/AdGroupSelector.md 
+        - name: AdGroupUrls
+          href: ./reference/AdGroupUrls.md 
+        - name: AdParam
+          href: ./reference/AdParam.md 
+        - name: AdParamIterator
+          href: ./reference/AdParamIterator.md 
+        - name: AdParamSelector
+          href: ./reference/AdParamSelector.md 
+        - name: BingAdsApp
+          href: ./reference/BingAdsApp.md 
+        - name: BingAdsDate
+          href: ./reference/BingAdsDate.md 
+        - name: Budget
+          href: ./reference/Budget.md 
+        - name: Campaign
+          href: ./reference/Campaign.md 
+        - name: CampaignIterator
+          href: ./reference/CampaignIterator.md 
+        - name: CampaignSelector
+          href: ./reference/CampaignSelector.md 
+        - name: CampaignUrls
+          href: ./reference/CampaignUrls.md 
+        - name: Keyword
+          href: ./reference/Keyword.md 
+        - name: KeywordBidding
+          href: ./reference/KeywordBidding.md 
+        - name: KeywordBuilder
+          href: ./reference/KeywordBuilder.md 
+        - name: KeywordIterator
+          href: ./reference/KeywordIterator.md 
+        - name: KeywordOperation
+          href: ./reference/KeywordOperation.md 
+        - name: KeywordSelector
+          href: ./reference/KeywordSelector.md 
+        - name: KeywordUrls
+          href: ./reference/KeywordUrls.md 
+        - name: Logger
+          href: ./reference/Logger.md 
+        - name: NegativeKeywordList
+          href: ./reference/NegativeKeywordList.md 
+        - name: NegativeKeywordListBuilder
+          href: ./reference/NegativeKeywordListBuilder.md 
+        - name: NegativeKeywordListIterator
+          href: ./reference/NegativeKeywordListIterator.md 
+        - name: NegativeKeywordListOperation
+          href: ./reference/NegativeKeywordListOperation.md 
+        - name: NegativeKeywordListSelector
+          href: ./reference/NegativeKeywordListSelector.md 
+        - name: Stats
+          href: ./reference/Stats.md 
+#    - name: Multiple Accounts
+#      href: ./reference/AccountsApp
+#      items:
+#        - name: AccountsApp
+#          href: ./reference/AccountsApp
+#        - name: BingAdsAccount
+#        - name: BingAdsAccountIterator
+#          href: ./reference/BingAdsAccountIterator
+#        - name: BingAdsAccountSelector
+#          href: ./reference/BingAdsAccountSelector
+#    - name: Spreadsheets
+#      href: ./reference/SpreadsheetApp
+#      items:
+#        - name: Range
+#          href: ./reference/Range
+#        - name: Sheet
+#          href: ./reference/Sheet
+#        - name: Spreadsheet
+#          href: ./reference/Spreadsheet
+#        - name: SpreadsheetApp
+#          href: ./reference/SpreadsheetApp      

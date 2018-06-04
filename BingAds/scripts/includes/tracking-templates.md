@@ -1,0 +1,1 @@
+Use tracking templates to specify additional tracking parameters or redirects. Bing Ads uses the template to assemble the actual destination URL to associate with the ad. For more information, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
