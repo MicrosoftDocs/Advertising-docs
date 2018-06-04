@@ -13,7 +13,7 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](./includes/preview-note.md)]
 
-Want to quickly and easily integrate with Bing Ads without the need for a significant up front financial investment? Want to automate common data workflow interactions and manage repetitive tasks more easily? Then Bing Ads Scripts is for you. Scripts lets you access and manage your Bing Ads data using JavaScript in Bing Ads' browser-based script editor.
+Want to quickly and easily integrate with Bing Ads without the need for a significant up front financial investment? Want to automate common data workflow interactions and manage repetitive tasks more easily? Then try out Bing Ads Scripts. It lets you access and manage your Bing Ads data using JavaScript in Bing Ads' browser-based script editor.
 
 This content assumes you're familiar with Bing Ads and JavaScript. For a Bing Ads refresher, please see:
 
