@@ -29,7 +29,7 @@ In cooperative bidding, two partners share the cost of advertising as they work 
 Let's say you manufacture widgets, and Contoso is one of your many authorized dealers. Contoso wants to feature your widgets during their upcoming sale. They've approached you to partner on a marketing blitz of targeted ads designed to drive widget sales and conversions on their website. In partnership, you both agree to share the cost of clicks on a promoted product through your own ad group and your partner's own ad group.
 
 > [!NOTE]
-> This setting is only applicable for ad groups in Bing Shopping campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
+> Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
 
 Both the manufacturer and the retailer have key roles in setting up cooperative bidding. Manufactures must upload a product list with Brand, GTIN, and MPN only. Retailers must grant their partners access to their Bing Merchant Center store, which is the gateway to a sales channel. Both manufacturers and retailers are then able to bid on the shared list of goods in the product feed through ad groups.
 To set up Cooperative bidding for your partner's Bing Merchant Center store with Bing Shopping campaigns, follow these steps.
