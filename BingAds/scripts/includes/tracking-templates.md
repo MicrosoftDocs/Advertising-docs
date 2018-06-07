@@ -1,1 +1,1 @@
-Use tracking templates to specify additional tracking parameters or redirects. Bing Ads uses the template to assemble the actual destination URL to associate with the ad. For more information, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
+Tracking templates are used in tandem with FinalUrl to assemble the actual destination URL used with the ad. For more information, see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
