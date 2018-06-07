@@ -23,12 +23,13 @@ The keyword is added to the ad group when you call this object's methods or afte
 [isSuccessful](#issuccessful)|boolean|Returns a Boolean value that indicates whether this operation succeeded.
 
 ## <a name="geterrors"></a>getErrors
-Returns an empty array if the keyword is successfully created; otherwise, a list of errors.
+Returns an empty array if the keyword is successfully created; otherwise, a list of error codes.
 
 ### Returns
 |Type|Description|
 |-|-
-string[]|An empty array if the keyword is successfully created; otherwise, a list of errors.
+string[]|An empty array if the keyword is successfully created; otherwise, a list of symbolic error codes. For example, if you specify an invalid bid amount, the call returns CampaignServiceInvalidSearchBids. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
+
 
 ## <a name="getresult"></a>getResult
 Returns the newly added keyword if the operation succeeded; otherwise, null.

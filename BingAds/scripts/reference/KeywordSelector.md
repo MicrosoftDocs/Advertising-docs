@@ -119,14 +119,14 @@ Impressions|long|`withCondition("Impressions != 0")`|Impr.
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 <strong>Keyword</strong>|
 Status|enumeration|`withCondition("Status = PAUSED")`<br /><br />Possible values are: <ul><li>ENABLED</li><li>PAUSED</li><li>DISABLED</li></ul>|Status
-Text|string|`withCondition("Text STARTS_WITH 'books'")`|Keyword Text
-KeywordMatchType|enumeration|`withCondition("KeywordMatchType = EXACT")`<br /><br />Possible values are: <ul><li>BROAD</li><li>EXACT</li><li>PHRASE</li><li>CONTENT</li></ul>|Match type
+Text|string|`withCondition("Text STARTS_WITH 'books'")`<br />Include only the keyword's text. Don't include the keyword's match type in the text. For example, if you added an exact match keyword such as [books], use *books* not *[books]*.|Keyword Text
+KeywordMatchType|enumeration|`withCondition("KeywordMatchType = EXACT")`<br /><br />Possible values are: <ul><li>BROAD</li><li>EXACT</li><li>PHRASE</li></ul>|Match type
 MaxCpc|double|`withCondition("MaxCpc > 0.40")`<br />The CPC is in the currency of the current account.|Bid
 DestinationUrl|string|`withCondition("DestinationUrl STARTS_WITH 'http://www.example.com'")`|Destination URL
 FinalUrls|string|`withCondition("FinalUrls CONTAINS 'http://www.example.com'")`|
 QualityScore|int|`withCondition("QualityScore > 5")`|Qual. score
-FirstPageCpc|double|`withCondition("FirstPageCpc > 6.00")`<br />The CPC is in the currency of the current account.|Est. first page bid
-TopOfPageCpc|double|`withCondition("TopOfPageCpc > 8.00")`<br />The value specified is in the currency of the current account.|Est. mainline bid
+FirstPageCpc|double|`withCondition("FirstPageCpc > 6.00")`<br /><br />This is the average amount an advertiser is charged each time their ad is clicked when it shows up on the sidebar. For example, if an advertiser paid a total of $48.35 for 300 clicks, the advertiser's average CPC is $0.16. You use this information to help decide whether to increase your keyword bid to improve the chance that your ad shows up on the sidebar.<br /><br />The CPC is in the currency of the current account.|Est. first page bid
+TopOfPageCpc|double|`withCondition("TopOfPageCpc > 8.00")`<br /><br />This is the average amount an advertiser is charged each time their ad is clicked when it shows up above the organic search results. For example, if an advertiser paid a total of $48.35 for 300 clicks, the advertiser's average CPC is $0.16. You use this information to help decide whether to increase your keyword bid to improve the chance that your ad shows up above the organic search results.<br /><br />The CPC is in the currency of the current account.|Est. mainline bid
 AdGroupName|string|`withCondition("AdGroupName = 'foo'")`|
 CampaignName|string|`withCondition("CampaignName = 'bar'")`|
 

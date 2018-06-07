@@ -24,12 +24,12 @@ The negative keyword list is added when you call this object's methods or after 
 [isSuccessful](#issuccessful)|Boolean|Returns a Boolean value that indicates whether this operation succeeded.
 
 ## <a name="geterrors"></a>getErrors
-Returns an empty array if the negative keywords list is successfully created; otherwise, a list of errors.
+Returns an empty array if the negative keywords list is successfully created; otherwise, a list of error codes.
 
 ### Returns
 |Type|Description|
 |-|-
-string[]|An empty array if the negative keywords list is successfully created; otherwise, a list of errors.
+string[]|An empty array if the keyword is successfully created; otherwise, a list of symbolic error codes. For example, if you specify a negative keyword that matches a search keyword, the call returns CampaignServiceNegativeKeywordMatchesKeyword. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
 
 ## <a name="getresult"></a>getResult
 Returns the newly created negative keywords list if the operation succeeded; otherwise, null.

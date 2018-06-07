@@ -13,7 +13,26 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-If you try to update an entity’s properties and the update fails, Bing Ads writes a warning message to the [Change Log](./change-and-text-logs.md#change-log). Because Bing Ads does not throw exceptions in this case, you should test each set operation to ensure the update succeeded. For example, the following example attempts to set the campaign’s budget. Because the amount is not valid, the call fails and a warning message is written to the change log.
+The only time Bing Ads returns errors is when you add an entity with invalid values. For example, if you try to add a keyword entity with a bid amount that's not valid, the build operation fails and returns one or more errors.
+
+```javascript
+        var operation = adGroup.newKeywordBuilder()
+            .withText(keywordText)
+            .withCpc(-5)
+            .build();
+
+        if (operation.isSuccessful()) {
+            var keyword = operation.getResult();
+            Logger.log(`Added keyword, ${keyword.getText()}.`);
+        }
+        else {
+            for (var error of operation.getErrors()) {
+                Logger.log(error);
+            }
+        }
+``` 
+
+However, if you try to update an entity’s properties with an invalid value, Bing Ads does not throw an error. Instead, Bing Ads writes an error message to the [Change Log](./change-and-text-logs.md#change-log) and your code will continue executing. Because Bing Ads does not throw exceptions in this case, you should test each set operation to ensure the update succeeded. For example, the following example attempts to set the campaign’s budget. Because the amount is not valid, the call silently fails, the script continues executing, and an error message is written to the change log.
 
 ```javascript
 function main() {
@@ -37,4 +56,4 @@ function main() {
 }
 ```
 
-You should carefully review all messages logged to the change logs and Text logs.
+You should carefully review all messages logged to the change log and text log.

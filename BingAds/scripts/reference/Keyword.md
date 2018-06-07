@@ -38,7 +38,9 @@ Contains the methods for managing a keyword. For information about keywords, see
 
 
 ## <a name="adparams"></a>adParams
-Returns a selector of all substitution parameters used in the ad for this keyword.
+Returns a selector of all substitution parameters used in ads for this keyword.
+
+The substitution values are used in an ad if the ad's title, text, display URL, or destination URL contains the {Param1}, {Param2}, or {Param3} dynamic substitution string.
 
 ### Returns
 |Type|Description|
@@ -116,7 +118,7 @@ Returns the keyword's match type.
 ### Returns
 |Type|Description|
 |-|-
-string|The keyword's match type. Possible values are:<br /><ul><li>BROAD</li><li>PHRASE</li><li>EXACT</li></ul>
+string|The keyword's match type. Possible values are:<br /><ul><li>BROAD</li><li>PHRASE</li><li>EXACT</li></ul>For information about these types, see [What are keyword match types, and how do I use them?](https://help.bingads.microsoft.com/apex/index/3/en-us/50822#!)
 
 
 ## <a name="getstats"></a>getStats
@@ -125,15 +127,16 @@ Returns performance data for this keyword.
 ### Returns
 |Type|Description|
 |-|-
-[Stats](./Stats.md)|The performance data for the keyword.
+[Stats](./Stats.md)|The keyword's performance data. For example, clicks and impressions.
 
 ## <a name="gettext"></a>getText
-Returns the keyword's text. The text is returned in one of the following formats based on the keyword's match type:
+Returns the keyword's text. The text includes the keyword's match type syntax, if any. For example:
 
-- books - broad match
-- "books" - phrase match
-- [hardcover books] - exact match
+- The keyword is *books* if the match type is **broad**, or *+books* if you use broad type modifier 
+- The keyword is *"books"* if the match type is **phrase**
+- The keyword is *[hardcover books]* if the match type is **exact**
 
+For information about these types, see [What are keyword match types, and how do I use them?](https://help.bingads.microsoft.com/apex/index/3/en-us/50822#!)
 
 ### Returns
 |Type|Description|
@@ -158,12 +161,14 @@ Boolean|Returns **true** if this keyword is paused; otherwise, **false**.
 
 
 ## <a name="setadparam~int-index~string-insertiontext~"></a>setAdParam(int index, string insertionText)
-Sets the ad substitution value for the specified substitution parameter.
+Sets the ad substitution value for the specified substitution parameter. 
+
+The substitution values are used in an ad if the ad's title, text, display URL, or destination URL contains the {Param1}, {Param2}, or {Param3} dynamic substitution strings. For restrictions and information about using these parameters, see [Param1](/bingads/campaign-management-service/keyword#param1), [Param2](/bingads/campaign-management-service/keyword#param2), and [Param3](/bingads/campaign-management-service/keyword#param3). 
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-index|int|The index of the substitution parameter that you're setting the substitution value to. The valid index values are 1 through 3, inclusive.
+index|int|The index of the substitution parameter that you're setting the substitution value to. The valid index values are 1 through 3, inclusive. Use 1 for Param1, 2 for Param2, and 3 for Param3.
 insertionText|string|The text to set the substitution parameter to.
 
 ### Returns
@@ -194,7 +199,7 @@ Returns the keyword's URL fields.
 ### Returns
 |Type|Description|
 |-|-
-[KeywordUrls](./KeywordUrls.md)|The keyword's URL fields.
+[KeywordUrls](./KeywordUrls.md)|The object that contains the keyword's final URLs, tracking template, and custom parameters.
 
 
 
