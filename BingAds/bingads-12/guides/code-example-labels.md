@@ -8,6 +8,7 @@ description: Setup labels in C#.
 dev_langs:
   - csharp
   - php
+  - python
 ---
 # Labels Code Example
 This example demonstrates how to add labels and associate them with campaigns, ad groups, keywords, and ads.
@@ -18,6 +19,8 @@ This example demonstrates how to add labels and associate them with campaigns, a
 [!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/Labels.cs)]
 
 [!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/Labels.php)]
+
+[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v12/labels.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  
