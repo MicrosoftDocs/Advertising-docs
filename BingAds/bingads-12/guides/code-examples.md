@@ -28,7 +28,7 @@ Get started developing Bing Ads applications in any programming language which s
 |[Invite User](./code-example-invite-user.md)|This example demonstrates how to invite a user to manage Bing Ads accounts.|C#, Java, Php, Python|
 |[Keyword Planner](./code-example-keyword-planner.md)|This example demonstrates how to get keyword ideas and traffic estimates for search advertising campaigns.|C#, Java, Php, Python|
 |[Keywords and Ads](./code-example-keywords-ads.md)|This example demonstrates how to setup ads and keywords for a search advertising campaign.|C#, Java, Php, Python|
-|[Labels](./code-example-labels.md)|This example demonstrates how to add labels and associate them with campaigns, ad groups, keywords, and ads.|C#, Php|
+|[Labels](./code-example-labels.md)|This example demonstrates how to add labels and associate them with campaigns, ad groups, keywords, and ads.|C#, Php, Python|
 |[Manage Client](./code-example-manage-client.md)|This example demonstrates how to use agency credentials to invite a client, and use client credentials to accept the invitation. Run this sample multiple times alternating between agency and client credentials to update and observe the status change, for example from LinkPending to LinkAccepted to Active.|C#, Java, Php, Python|
 |[Negative Keywords](./code-example-negative-keywords.md)|This example demonstrates how to associate negative keywords and negative keyword lists with a campaign.|C#, Java, Php, Python|
 |[Offline Conversions](./code-example-offline-conversions.md)|This example demonstrates how to send Bing Ads your offline conversions using the Campaign Management service.|C#, Php, Python|
