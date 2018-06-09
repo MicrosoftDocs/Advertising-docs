@@ -8292,7 +8292,7 @@ The product condition cannot be null.
 CampaignServiceInvalidAdGroupCriterionCriterionTypeFilter
 
 **Description**
-The criterion's type is not valid.
+The criterion's type is not valid for this operation.
 
 ***
 
