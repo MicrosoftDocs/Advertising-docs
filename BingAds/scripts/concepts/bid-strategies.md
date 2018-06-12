@@ -9,7 +9,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# Bid strategies
+# Mapping bid strategies
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 

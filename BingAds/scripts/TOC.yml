@@ -20,10 +20,12 @@
       href: concepts/errors-and-warnings.md 
     - name: Change and text logs
       href: concepts/change-and-text-logs.md 
-    - name: Bid strategies
-      href: concepts/bid-strategies.md 
     - name: Defining IDs
       href: concepts/ids.md 
+    - name: Mapping bid strategies
+      href: concepts/bid-strategies.md 
+    - name: Mapping editorial approval
+      href: concepts/editorial-approval.md 
     - name: JavaScript features
       href: concepts/supported-js-features.md 
 - name: Code examples
@@ -124,3 +126,5 @@
 #          href: ./reference/Spreadsheet
 #        - name: SpreadsheetApp
 #          href: ./reference/SpreadsheetApp      
+- name: Release notes
+  href: release-notes.md 
