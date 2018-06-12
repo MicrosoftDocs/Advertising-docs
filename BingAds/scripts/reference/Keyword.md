@@ -86,7 +86,7 @@ Returns the keyword's editorial approval status.
 ### Returns
 |Type|Description|
 |-|-
-string|The keyword's editorial approval status. The status indicates whether the keyword is pending review, is approved, or is not allowed. Possible values are:<br /><ul><li>APPROVED</li><li>DISAPPROVED</li><li>PENDING_REVIEW</li><li>UNDER_REVIEW</li></ul>
+string|The keyword's editorial approval status. The status indicates whether the keyword is under review, is approved, or is not allowed. Possible values are:<br /><ul><li>APPROVED</li><li>APPROVED_LIMITED</li><li>DISAPPROVED</li><li>UNDER_REVIEW</li></ul>For information about how these status values map to Bing Ads API, see [Mapping editorial approval status values](../concepts/editorial-approval.md).
 
 ## <a name="getcampaign"></a>getCampaign
 Returns the campaign this keyword belongs to.
