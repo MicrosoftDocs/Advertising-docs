@@ -129,16 +129,16 @@ BounceRate|double|`withCondition("BounceRate < 0.5")`
 ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`
 Clicks|long|`withCondition("Clicks >= 21")`
 ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`
-Cost|double|`withCondition("Cost > 4.48")`<br /> The cost is in the currency of the account.
-Ctr|double|`withCondition("Ctr > 0.01")`<br /> The CTR is in the range 0..1, so a 5% CTR is represented as 0.05.
+Cost|double|`withCondition("Cost > 4.48")`<br /><br />The cost is in the currency of the account.
+Ctr|double|`withCondition("Ctr > 0.01")`<br /><br />The CTR is in the range 0..1, so a 5% CTR is represented as 0.05.
 Impressions|long|`withCondition("Impressions != 0")`
 &nbsp;|&nbsp;|&nbsp;
 <strong>Ad group attributes</strong>|
 Status|enumeration|`withCondition("Status = PAUSED")`<br /><br />Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>
 Name|string|`withCondition("Name CONTAINS_IGNORE_CASE 'shoes'")`
 CampaignName|string|`withCondition("CampaignName CONTAINS_IGNORE_CASE 'promotion'")`
-KeywordMaxCpc|double|`withCondition("KeywordMaxCpc > 10.0")`<br /> The value is in the currency of the account.
-CampaignStatus|enumeration|`withCondition("CampaignStatus = ENABLED")`<br /><br />Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>Use to return ad groups from only ENABLED campaigns.
+KeywordMaxCpc|double|`withCondition("KeywordMaxCpc > 10.0")`<br /><br />The value is in the currency of the account.
+CampaignStatus|enumeration|`withCondition("CampaignStatus = ENABLED")`<br /><br />This example returns ad groups from only ENABLED campaigns. Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>
 
 ### Arguments
 |Name|Type|Description|

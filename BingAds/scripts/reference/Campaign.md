@@ -156,7 +156,7 @@ Sets the name of this campaign.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-name|string|The name of the campaign.
+name|string|The name of the campaign. The name may contain a maximum of 128 characters and must be unique within the account.
 
 ### Returns
 |Type|Description|
@@ -164,12 +164,12 @@ name|string|The name of the campaign.
 void|Returns nothing.
 
 ## <a name="urls"></a>urls
-Returns this campaign's URLs.
+Returns this campaign's final URLs, tracking template, and custom parameters.
 
 ### Returns
 |Type|Description|
 |-|-
-[CampaignUrls](CampaignUrls.md)|This campaign's URLs.
+[CampaignUrls](CampaignUrls.md)|The object used to manage the campaign's final URLs, tracking template, and custom parameters.
 
 
 

@@ -199,7 +199,7 @@ Returns the keyword's URL fields.
 ### Returns
 |Type|Description|
 |-|-
-[KeywordUrls](./KeywordUrls.md)|The object that contains the keyword's final URLs, tracking template, and custom parameters.
+[KeywordUrls](./KeywordUrls.md)|The object used to manage the keyword's final URLs, tracking template, and custom parameters.
 
 
 

@@ -56,7 +56,7 @@ For more information about bid amounts, see [Bid](/bingads/campaign-management-s
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-cpc|double|The maximum CPC bid to apply to the keyword.
+cpc|double|The CPC bid to apply to the keyword. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
 
 ### Returns
 |Type|Description|
@@ -72,7 +72,7 @@ Sets the keyword's custom parameters.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|The custom parameters to apply to the keyword's final URL. These are the query parameters you want to add to the final URL. You can specify a maximum of three custom parameters. Specify the parameters as a dictionary of key-value pairs.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value.
+customParameters|Object|The custom parameters to apply to the keyword's final URL. These are the query parameters you want to add to the final URL. You can specify a maximum of three custom parameters. Specify the parameters as a map of key-value pairs.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value.
 
 ### Returns
 |Type|Description|
