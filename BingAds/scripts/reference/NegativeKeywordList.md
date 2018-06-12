@@ -24,18 +24,20 @@ Contains the methods for adding keywords to a negative keywords list. For inform
 [setName(String name)](#setname~string-name~)|void|Sets the name of this negative keyword list.
 
 ## <a name="addnegativekeyword~string-keywordtext~"></a>addNegativeKeyword(string keywordText)
-Adds a keyword to the negative keyword list. To specify the match type for negative keywords:
+Adds a keyword to the negative keyword list. For information about negative keyword limits, see [Negative keywords](/bingads/guides/entity-hierarchy-limits#negativekeywords). 
 
-- Use no syntax around keyword for **broad match**. For example, `negativeKeywordList.addNegativeKeyword("shoes")`.  
+To specify the match type for negative keywords:
+
+- Use quotes around the keyword for **phrase match**. For example, `negativeKeywordList.addNegativeKeyword("\"shoes\"")`.  
   
-- Use quotes around keyword for **phrase match**. For example, `negativeKeywordList.addNegativeKeyword("\"shoes\"")`.  
-  
-- Use square brackets around keyword for **exact match**. For example, `negativeKeywordList.addNegativeKeyword("[leather shoes]")`.
+- Use square brackets around the keyword for **exact match**. For example, `negativeKeywordList.addNegativeKeyword("[leather shoes]")`.
+
+
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-keywordText|String|The negative keyword's text.
+keywordText|String|The negative keyword's text. Negative keywords may containa maximum of 100 characters. 
 
 ### Returns
 |Type|Description|
@@ -43,18 +45,19 @@ keywordText|String|The negative keyword's text.
 void|Returns nothing.
 
 ## <a name="addnegativekeywords~string-keywordtexts~"></a>addNegativeKeywords(string[] keywordTexts)
-Adds a list of keywords to the negative keyword list. To specify the match type for negative keywords:
+Adds a list of keywords to the negative keyword list. For information about negative keyword limits, see [Negative keywords](/bingads/guides/entity-hierarchy-limits#negativekeywords).
 
-- Use no syntax around keyword for **broad match**. For example, `negativeKeywordsList.addNegativeKeywords(["planes", "trains"])`.  
+To specify the match type for negative keywords:
+
+- Use quotes around the keyword for **phrase match**. For example, `negativeKeywordsList.addNegativeKeywords(["\"planes\"", "\"trains\""])`.  
   
-- Use quotes around keyword for **phrase match**. For example, `negativeKeywordsList.addNegativeKeywords(["\"planes\"", "\"trains\""])`.  
-  
-- Use square brackets around keyword for **exact match**. For example, `negativeKeywordsList.addNegativeKeywords(["[model planes]", "[toy trains]"])`.
+- Use square brackets around the keyword for **exact match**. For example, `negativeKeywordsList.addNegativeKeywords(["[model planes]", "[toy trains]"])`.
+
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-keywordTexts|string[]|An array of keyword strings.
+keywordTexts|string[]|An array of keyword strings. The array may contain a maximum of 5,000 keywords and each keyword may contain a maximum of 100 characters.
 
 ### Returns
 |Type|Description|
@@ -91,7 +94,7 @@ Sets the name of this negative keyword list.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-name|string|The name for this negative keyword list.
+name|string|The name for this negative keyword list. The name may contain a maximum of 255 characters.
 
 ### Returns
 |Type|Description|

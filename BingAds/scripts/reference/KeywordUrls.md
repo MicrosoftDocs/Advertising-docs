@@ -89,7 +89,7 @@ To clear the custom parameters from the keyword, pass an empty object (for examp
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|A map of custom parameters to use in the keyword.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.
+customParameters|Object|A map of custom parameters to use in the keyword.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.<br /><br />The key and value may not exceed 60 and 200 bytes, respectively.
 
 ### Returns
 |Type|Description|
