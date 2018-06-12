@@ -32,6 +32,13 @@ while (campaignIterator.hasNext()) {
 }
 ```
 
+> [!NOTE]
+> The iterators don't support the **for-of** loop construct. For example:
+>  
+> ```javascript
+>     for (var campaign of BingAdsApp.campaigns().get())
+> ```
+
 The following is the list of iterators.
 
 - [AdGroupIterator](../reference/AdGroupIterator.md)
