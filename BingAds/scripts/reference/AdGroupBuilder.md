@@ -68,12 +68,15 @@ biddingStrategy|string|The bidding strategy to apply to the ad group. Possible v
 [AdGroupBuilder](./AdGroupBuilder.md)|Ad group builder with the bidding strategy applied.
 
 ## <a name="withcpc~double-cpc~"></a>withCpc(double cpc)
-Sets the ad group's maximum CPC bid. 
+Sets the ad group's CPC bid. 
+
+Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is ManualCpc or EnhancedCpc. This bid is used if a lower-level entity such as keyword does not override it.
+
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-cpc|double|The maximum CPC bid to apply to the ad group. The default bid is 0.30 cents (USD).
+cpc|double|The CPC bid to apply to the ad group. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
 
 ### Returns
 |Type|Description|
@@ -88,7 +91,7 @@ Sets the ad group's custom parameters.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|The custom parameters to apply to the ad group. Specify the parameters as a dictionary of key-value pairs.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value.
+customParameters|Object|The custom parameters to apply to the ad group. Specify the parameters as a map of key-value pairs.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value.<br /><br />The key and value may not exceed 60 and 200 bytes, respectively.
 
 ### Returns
 |Type|Description|
@@ -124,13 +127,15 @@ endDate|Object|The date when you want ads in the ad group to stop serving. Speci
 
 
 ## <a name="withlanguage~string-language~"></a>withLanguage(string language)
-Sets the language used by this ad group. By default, the ad group inherits the language from its parent campaign. Specify a language at the ad group level if you want to override the language specified at the campaign level or if the campaign did not specify a language (language must be specified at the campaign and/or ad group level). 
+Sets the language used by ads in this ad group. 
+
+By default, the ad group inherits the language from its parent campaign. Specify a language at the ad group level if you want to override the language specified at the campaign level or if the campaign doesn't specify a language (language must be specified at the campaign and/or ad group level). 
 
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-language|string|Ad group's language.
+language|string|The language used by ads in the ad group. For example, English. The string is case insensitive. Do not use the two-character language code. For a list of supported languages, see [Ad Languages](/bingads/guides/ad-languages#adlanguage).
 
 ### Returns
 |Type|Description|
@@ -179,9 +184,6 @@ endDate|Object|The date when you want ads in the ad group to start serving. Spec
 [AdGroupBuilder](./AdGroupBuilder.md)|Ad group builder with the start date applied.
 
 
-
-
-
 ## <a name="withstatus~string-status~"></a>withStatus(string status)
 Sets the ad group's status. 
 
@@ -194,6 +196,7 @@ status|String|The ad group's status. The following are the possible values: <br/
 |Type|Description|
 |-|-
 [AdGroupBuilder](./AdGroupBuilder.md)|Ad group builder with the status applied.
+
 
 ## <a name="withtrackingtemplate~string-trackingtemplate~"></a>withTrackingTemplate(string trackingTemplate)
 Sets the tracking template used by this ad group. 

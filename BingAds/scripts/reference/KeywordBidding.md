@@ -37,7 +37,7 @@ Returns the keyword's CPC bid.
 double|The keyword's CPC bid.
 
 ## <a name="setcpc~double-cpc~"></a>setCpc(double cpc)
-Sets the maximum CPC bid for the keyword. 
+Sets the CPC bid for the keyword. 
 
 Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is ManualCpc or EnhancedCpc.
 
@@ -50,7 +50,7 @@ If you specify a property value that's not valid, the call silently fails. To co
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-cpc|double|The maximum CPC bid for the keyword.
+cpc|double|The CPC bid for the keyword. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
 
 ### Returns
 |Type|Description|

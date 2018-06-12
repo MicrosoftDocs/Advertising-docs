@@ -34,7 +34,7 @@ Contains the methods used to manage the [ad group](/bingads/guides/entity-hierar
 [setName(String name)](#setname-string-name)|void|Sets the ad group's name.
 [setStartDate(string startDate)](#setstartdate~string-startdate~)|void|Sets the date when ads in the ad group begin serving.
 [setStartDate(Object startDate)](#setstartdate~object-startdate~)|void|Sets the date when ads in the ad group begin serving.
-[urls](#urls)|[AdGroupUrls](./AdGroupUrls.md)|Returns this ad group's URLs.
+[urls](#urls)|[AdGroupUrls](./AdGroupUrls.md)|Returns this ad group's final URLs, tracking template, and custom parameters.
 
 <!--
 [newAd](#newad)|[AdBuilderSpace](./AdBuilderSpace)|Returns a new ad builder space associated with this ad group, which is used to construct a new ad.
@@ -233,12 +233,12 @@ void|Returns nothing.
 
 
 ## <a name="urls"></a>urls
-Returns this ad group's URLs.
+Returns this ad group's final URLs, tracking template, and custom parameters.
 
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupUrls](AdGroupUrls.md)|This ad group's URLs.
+[AdGroupUrls](AdGroupUrls.md)|The object used to manage the ad group's final URLs, tracking template, and custom parameters.
 
 
 ## See also

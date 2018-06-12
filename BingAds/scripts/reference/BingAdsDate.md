@@ -21,6 +21,6 @@ Do not use this object to specify a date when calling one of the `forDateRange()
 |Property Name|Description|
 |-|-
 |day|The day of the month. For example, 30.
-|month|The numeric calendar month. For example, 5.
+|month|The numeric calendar month, where 1 is January and 12 is December.
 |year|The four-digit calendar year. For example, 2018.
 
