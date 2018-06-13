@@ -15,7 +15,7 @@ If you want to access a single user account, everything starts with the [BingAds
 
 ## How do I access the entities in my account?
 
-You use BingAdsApp to access all entities in the account. The object contains a selector method for each entity that returns all of that entity's objects. For example, to get all the ad groups in the account, you call the `adGroups()` method.
+You use BingAdsApp to access all entities in the account. The object contains a selector method for each type of entity (for example, campaigns, ad groups, and keywords). The selector method returns all of that entity type's objects. For example, to get all the ad groups in the account, you call the `adGroups()` method.
 
 ```javascript
     var selector = BingAdsApp.adGroups();
@@ -25,7 +25,7 @@ You use BingAdsApp to access all entities in the account. The object contains a 
 
 The selector provides different ways to filter the list of entities. You can use the selector’s `withIds()` method to get specific entities by IDs or you can use `withCondition()` to specify the selection criteria for selecting the entities. The selectors for all entity types, except for negative keyword lists, provide the ability to filter the list of entities you want returned.
 
-Use dot notation to string multiple filters together. If you specify multiple filters, they're treated as an AND operation where all filters must return true. 
+Use dot notation to string multiple filters together. If you specify multiple filters, they're treated as an AND operation &mdash; the selector returns only those entities that match all the conditions. 
 
 To get all ad groups in a campaign, use the `withCondition()` method to specify the campaign's name.
 
@@ -35,7 +35,7 @@ To get all ad groups in a campaign, use the `withCondition()` method to specify 
         .withCondition('CampaignName = "' + campaignName + '"');
 ```
 
-For a list of conditions and operators that you can use to filter the entities list, see the entity's `withCondition()` method. For example, for a list of ad group conditions, see the ad group selector's [withCondition](../reference/AdGroupSelector.md#withcondition~string-condition~) method.
+For a list of conditions and operators that you can use to filter the list of entities, see the selector's `withCondition()` method. For example, for a list of ad group conditions, see the ad group selector's [withCondition](../reference/AdGroupSelector.md#withcondition~string-condition~) method.
 
 To get an ad group by ID, use the `withIds()` method to specify the ad group to get.
 
@@ -55,10 +55,10 @@ Or, you can get the ad group by name.
         .withCondition('Name = "' + adGroupName + '"');
 ```
 
-For more information about selectors, see [What are selectors?](../concepts/selectors.md).
+For more information about selectors, see [What are selectors?](../concepts/selectors.md)
 
 
-### How do I use the selector to iterate through the filtered lits of entities?
+### How do I use the selector to iterate through the filtered list of entities?
 
 You don't. The selector just defines the entities you want to get. To actually get the entities, you use an iterator. To get the iterator, you call the selector's `get()` method.
 
@@ -79,12 +79,12 @@ Use a simple **while** loop to iterate over the list of entities.
     }
 ```
 
-For more information about iterators, see [What are iterators?](../concepts/iterators.md).
+For more information about iterators, see [What are iterators?](../concepts/iterators.md)
 
 
 ### How do I get performance data for an entity?
 
-Most entities let you request performance data, if available. But first you need to specify a date range for the performance data you want when you get the selector. You can specify a date range using a predefined literal, such as YESTERDAY or LAST_MONTH, or using dates. For more information, see [withDateRange(string dateRange)](../reference/AdGroupSelector.md#fordaterange~string-daterange~) and [forDateRange(Object dateFrom, Object dateTo)](../reference/AdGroupSelector.md#fordaterange~object-datefrom_-object-dateto~).
+Most entities let you request performance data, if available. But first you need to specify a date range for the performance data you want when you get the selector. You can specify a date range using a predefined literal, such as YESTERDAY or LAST_MONTH, or using a start and end date. For more information, see [withDateRange(string dateRange)](../reference/AdGroupSelector.md#fordaterange~string-daterange~) and [forDateRange(Object dateFrom, Object dateTo)](../reference/AdGroupSelector.md#fordaterange~object-datefrom_-object-dateto~).
 
 ```javascript
     var campaignName = 'My Campaign';
@@ -120,7 +120,7 @@ You also need to specify a date range if you specify a performance data column i
 
 ## How do I add an entity?
 
-Adding entities is a multi-step process where you first use a builder object to define the entity and then use an operation object to actually add the entity. To get a builder object, you call the **new\*** method on the parent object that you're adding children to. For example, to add ad groups to a campaign, you call the campaign's `newAdGroupBuilder()` method.
+Adding entities is a multi-step process where you first use a builder object to define the entity and then use an operation object to actually add the entity. To get a builder object, you call the **new*** method on the parent object that you're adding children to. For example, to add ad groups to a campaign, you call the campaign's `newAdGroupBuilder()` method.
 
 The builder object contains methods for setting all of the object's properties that you're allowed to specify. It also includes a `build()` method that you use to get the operation object. The following shows how to build an ad group and get its operation object.
 
@@ -157,7 +157,7 @@ Now that you have the operation object you can call any of its methods to add th
 
 ## How do I update an entity?
 
-After using a builder and operation object to add an entity, you use the entity's method to update its properties. The following example updates the ad group's CPC bid amount.
+After using a builder and operation object to add an entity, you use the entity's methods to update its properties. The following example updates the ad group's CPC bid amount.
 
 ```javascript
     var ids = ["123456789"];
@@ -176,11 +176,38 @@ After using a builder and operation object to add an entity, you use the entity'
 If you try to update a property with an invalid value, Scripts writes an error to the Change log but it doesn't throw an exception, so your script continues executing. The only way to know whether a property update succeeded is to get the entity again and check its property value.
 
 ```javascript
+function main() {
+    var id = "123456789";
+    var bidAmount = -1.5;
+    var keyword = getKeyword(id); 
+
+    if (keyword != null) {
+        keyword.bidding().setCpc(bidAmount);
+
+        if (getKeyword(id).bidding().getCpc() != bidAmount) {
+            Logger.log(`Failed to update bid amount for keyword, ${keyword.getText()} (${keyword.getId()})`);
+        }
+    }
+
+}
+
+function getKeyword(id) {
+    var keywords = BingAdsApp.keywords()
+        .withIds([id])
+        .get();
+
+    if (keywords.hasNext()) {
+        return keywords.next();
+    }
+    else {
+        return null;
+    }    
+}
 ```
 
 ## Writing to the log file
 
-Scripts does provide a log file for you to write tracing and debug information to. For information, see [Change logs and text logs](../concepts/change-and-text-logs.md).
+Scripts provides a log file for you to write tracing and debug information to. For information, see [Change logs and text logs](../concepts/change-and-text-logs.md).
 
 
 ## Next steps
