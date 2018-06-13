@@ -45,7 +45,7 @@ Accessing your Bing Ads data with Bing Ads Scripts is easy. Just follow these in
 The difference between **Preview** and **Run script now** is that Preview gives you the chance to see how the script would affect your data without actually committing the changes. If the script modifies data, you should run it in preview mode first.
 
 
-### Next steps
+## Next steps
 
 > [!div class="nextstepaction"]
-> [Learn about selectors](./concepts/selectors.md)
+> [Single account access](./guides/single-account-access.md)

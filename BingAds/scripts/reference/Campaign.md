@@ -39,7 +39,7 @@ Adds a negative keyword list to this campaign.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-negativeKeywordList|[NegativeKeywordList](NegativeKeywordList.md)|The negative keyword list to add to the campaign.
+negativeKeywordList|[NegativeKeywordList](NegativeKeywordList.md)|The negative keyword list to add to the campaign. You can add a maximum of 20 lists.
 
 ### Returns
 |Type|Description|

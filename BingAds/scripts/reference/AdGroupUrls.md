@@ -63,7 +63,7 @@ Returns the ad group's tracking template.
 string|The ad group's tracking template.
 
 ## <a name="setcustomparameters~object-customparameters~"></a>setCustomParameters(Object customParameters)
-Sets the custom parameters for this ad group. 
+Sets the custom parameters for this ad group. Use this method if you include custom substitution strings in your final URL or tracking template.
 
 [!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
 

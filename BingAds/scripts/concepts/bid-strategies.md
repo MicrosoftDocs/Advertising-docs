@@ -15,13 +15,18 @@ ms.topic: "article"
 
 The following table maps the bid strategy names in Bing Ads Scripts to their corresponding strategy name in Bing Ads API.
 
-|Bing Ads|Bing Ads Scripts|
+Bing Ads Scripts|Bing Ads
 |-|-
-ManualCpc|MANUAL_CPC
-MaxClicks|TARGET_SPEND
-MaxConversions|MAXIMIZE_CONVERSIONS
-TargetCpa|TARGET_CPA
-EnhancedCpc|ENHANCED_CPC
+MANUAL_CPC|ManualCpc
+
+<!--
+TARGET_SPEND|MaxClicks
+MAXIMIZE_CONVERSIONS|MaxConversions
+TARGET_CPA|TargetCpa
+ENHANCED_CPC|EnhancedCpc
+-->
 
 For information about these bid strategies, see [Bid Strategy Types](/bingads/guides/budget-bid-strategies#bidstrategytypes).
 
+> [!NOTE]
+> Scripts supports only MANUAL_CPC.
