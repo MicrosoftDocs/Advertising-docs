@@ -55,7 +55,7 @@ Sets the delivery method for this budget.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-method|string|The delivery method of the budget. Possible values are:<ul><li>STANDARD</li><li>ACCELERATED</li></ul>For more information, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1)
+method|string|The delivery method of the budget. Possible case-sensitive values are:<ul><li>STANDARD</li><li>ACCELERATED</li></ul>For more information, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1)
 
 ### Returns
 |Type|Description|

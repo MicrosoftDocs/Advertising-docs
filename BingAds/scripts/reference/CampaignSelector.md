@@ -64,7 +64,7 @@ Returns a selector with the predefined date range applied. The date range specif
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-dateRange|String|The predefined date range string that specifies the performance data to include in the selector.
+dateRange|String|The predefined date range string that specifies the performance data to include in the selector. The predefined date range string is case sensitive.
 
 ### Returns
 |Type|Description|
@@ -114,7 +114,7 @@ Specify the condition parameter in the form, "columnName operator value" where:
 [!INCLUDE[operators](../includes/operators.md)]
 
 <a name="supported-campaign-columns"></a>
-Supported columns for campaign filtering. 
+Supported columns for campaign filtering. The column names are case sensitive.
 
 |Column|Type|Example|
 |-|-|-
@@ -127,17 +127,17 @@ BounceRate|double|`withCondition("BounceRate < 0.5")`
 ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`
 Clicks|long|`withCondition("Clicks >= 21")`
 ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`
-Cost|double|`withCondition("Cost > 4.48")`<br /> The cost is in the currency of the account.
-Ctr|double|`withCondition("Ctr > 0.01")`<br /> The CTR is returned in the range 0..1, so a 5% CTR is represented as 0.05.
+Cost|double|`withCondition("Cost > 4.48")`<br /><br />The cost is in the currency of the account.
+Ctr|double|`withCondition("Ctr > 0.01")`<br /><br />The CTR is returned in the range 0..1, so a 5% CTR is represented as 0.05.
 Impressions|long|`withCondition("Impressions != 0")`
 &nbsp;|&nbsp;|&nbsp;
 <strong>Campaign attributes</strong>|
-Status|enumeration|`withCondition("Status = PAUSED")`<br /><br />Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li><li>BUDGET_PAUSED</li><li>BUDGET_AND_USER_PAUSED</li></ul>
+Status|enumeration|`withCondition("Status = PAUSED")`<br /><br />Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li><li>BUDGET_PAUSED</li><li>BUDGET_AND_USER_PAUSED</li></ul>
 Name|string|`withCondition("Name CONTAINS_IGNORE_CASE 'promotion'")`
 Budget|double|`withCondition("Budget > 10.0")`
-Type|enumeration|`withCondition("Type = 'SEARCH_AND_CONTENT'")`<br /><br />Possible type values are: <ul><li>SEARCH_AND_CONTENT</li><li>SHOPPING</li><li>DYNAMIC_SEARCH_ADS</li></ul>
-BudgetType|enumeration|`withCondition("BudgetType = 'ACCELERATED'")`<br /><br />Possible type values are: <ul><li>STANDARD</li><li>ACCELERATED</li></ul>
-DeliveryStatus|enumeration|`withCondition("DeliveryStatus NOT IN ['LIMITED_BY_BUDGET', 'HOLD', 'CAMPAIGN_OUT_OF_BUDGET']")`<br /><br />Possible status values are: <ul><li>ELIGIBLE</li><li>LIMITED_BY_BUDGET</li><li>HOLD</li><li>CAMPAIGN_OUT_OF_BUDGET</li><li>CAMPAIGN_SUSPENDED</li><li>CAMPAIGN_PAUSED</li></ul>
+Type|enumeration|`withCondition("Type = 'SEARCH_AND_CONTENT'")`<br /><br />Possible case-sensitive values are: <ul><li>SEARCH_AND_CONTENT</li><li>SHOPPING</li><li>DYNAMIC_SEARCH_ADS</li></ul>
+BudgetType|enumeration|`withCondition("BudgetType = 'ACCELERATED'")`<br /><br />Possible case-sensitive values are: <ul><li>STANDARD</li><li>ACCELERATED</li></ul>
+DeliveryStatus|enumeration|`withCondition("DeliveryStatus NOT IN ['LIMITED_BY_BUDGET', 'HOLD', 'CAMPAIGN_OUT_OF_BUDGET']")`<br /><br />Possible case-sensitive values are: <ul><li>ELIGIBLE</li><li>LIMITED_BY_BUDGET</li><li>HOLD</li><li>CAMPAIGN_OUT_OF_BUDGET</li><li>CAMPAIGN_SUSPENDED</li><li>CAMPAIGN_PAUSED</li></ul>
 
 
 

@@ -64,7 +64,7 @@ Returns a selector with the predefined date range applied. The date range specif
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-dateRange|String|The predefined date range string that specifies the performance data to include in the selector.
+dateRange|String|The predefined date range string that specifies the performance data to include in the selector. The predefined date range string is case sensitive.
 
 ### Returns
 |Type|Description|
@@ -84,7 +84,7 @@ Returns a selector with the specified ordering applied.
 
 Specify the `orderBy` parameter in the form, "columnName orderDirection" where:
 
-- *columnName* is one of the [supported columns](#supported-ad-group-columns)
+- *columnName* is one of the [supported columns](#supported-ad-group-columns). 
 - *orderDirection* is the order to sort the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.
 
 For example, the following call returns ad groups in ascending order by AverageCpc.
@@ -116,7 +116,7 @@ Specify the condition parameter in the form, "columnName operator value" where:
 <a name="supported-ad-group-columns"></a>
 ### Supported Columns
 
-Supported columns for ad group filtering. 
+Supported columns for ad group filtering. The names are case sensitive.
 
 |Column|Type|Example|
 |-|-|-
@@ -134,11 +134,11 @@ Ctr|double|`withCondition("Ctr > 0.01")`<br /><br />The CTR is in the range 0..1
 Impressions|long|`withCondition("Impressions != 0")`
 &nbsp;|&nbsp;|&nbsp;
 <strong>Ad group attributes</strong>|
-Status|enumeration|`withCondition("Status = PAUSED")`<br /><br />Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>
+Status|enumeration|`withCondition("Status = PAUSED")`<br /><br />Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>
 Name|string|`withCondition("Name CONTAINS_IGNORE_CASE 'shoes'")`
 CampaignName|string|`withCondition("CampaignName CONTAINS_IGNORE_CASE 'promotion'")`
 KeywordMaxCpc|double|`withCondition("KeywordMaxCpc > 10.0")`<br /><br />The value is in the currency of the account.
-CampaignStatus|enumeration|`withCondition("CampaignStatus = ENABLED")`<br /><br />This example returns ad groups from only ENABLED campaigns. Possible status values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>
+CampaignStatus|enumeration|`withCondition("CampaignStatus = ENABLED")`<br /><br />This example returns ad groups from only ENABLED campaigns. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>
 
 ### Arguments
 |Name|Type|Description|
