@@ -77,7 +77,7 @@ Specify the condition parameter in the form, "columnName operator value" where:
 [!INCLUDE[operators](../includes/operators.md)]
 
 <a name="supported-negative-keyword-list-columns"></a>
-### Supported Columns
+Supported Columns. The column names are case sensitive.
 
 |Column|Type|Example|
 |-|-|-|-
@@ -86,7 +86,7 @@ MemberCount|int|`withCondition("MemberCount > 5")`
 Name|string|`withCondition("Name = 'negative keyword list'")`
 ReferenceCount|int|`withCondition("ReferenceCount > 5")`
 SharedSetId|double|`withCondition("SharedSetId > 5")`
-Status|enumeration|`withCondition("Status = ACTIVE")`<br /><br />Possible status values are: <ul><li>ACTIVE</li><li>DELETED</li></ul>
+Status|enumeration|`withCondition("Status = ACTIVE")`<br /><br />Possible case-sensitive values are: <ul><li>ACTIVE</li><li>DELETED</li></ul>
 
 
 ### Arguments

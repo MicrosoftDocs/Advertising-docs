@@ -15,6 +15,8 @@ Contains the methods for managing the keyword's URLs, tracking template, and cus
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
+[clearFinalUrl](#clearfinalurl)|void|Removes the keyword's final URL.
+[clearMobileFinalUrl](#clearmobilefinalurl)|void|Removes the keyword's final URL for mobile devices.
 [clearTrackingTemplate](#cleartrackingtemplate)|void|Removes the keyword's tracking template.
 [getCustomParameters](#getcustomparameters)|Object|Returns the keyword's custom parameters.
 [getFinalUrl](#getfinalurl)|string|Returns the keyword's final URL.
@@ -25,13 +27,32 @@ Contains the methods for managing the keyword's URLs, tracking template, and cus
 [setMobileFinalUrl(String finalUrl)](#setmobilefinalurl~string-finalurl~)|void|Sets the keyword's final URL for mobile.
 [setTrackingTemplate(String trackingTemplate)](#settrackingtemplate~string-trackingtemplate~)|void|Sets the keyword's tracking template.
 
-## <a name="cleartrackingtemplate"></a>clearTrackingTemplate
-Removes the keyword's tracking template. For information about tracking templates, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
+## <a name="clearfinalurl"></a>clearFinalUrl
+Removes the keyword's final URL.
 
 ### Returns
 |Type|Description|
 |-|-
 void|Returns nothing.
+
+
+## <a name="clearmobilefinalurl"></a>clearMobileFinalUrl
+Removes the keyword's final URL for mobile devices.
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
+
+
+## <a name="cleartrackingtemplate"></a>clearTrackingTemplate
+Removes the keyword's tracking template. 
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
+
 
 ## <a name="getcustomparameters"></a>getCustomParameters
 Returns the keyword's custom parameters. 
@@ -77,7 +98,7 @@ Returns the keyword's tracking template.
 string|The keyword's tracking template.
 
 ## <a name="setcustomparameters~object-customparameters~"></a>setCustomParameters(Object customParameters)
-Sets the keyword's custom parameters. 
+Sets the keyword's custom parameters. Use this method if you include custom substitution strings in your final URL or tracking template.
 
 [!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
 
