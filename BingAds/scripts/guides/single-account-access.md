@@ -173,18 +173,18 @@ After using a builder and operation object to add an entity, you use the entity'
 
 ### But how do I know that the update worked?
 
-If you try to update a property with an invalid value, Scripts writes an error to the Change log but it doesn't throw an exception, so your script continues executing. The only way to know whether a property update succeeded is to get the entity again and check its property value.
+If you try to update a property with an invalid value, Scripts writes an error to the Change log but it doesn't throw an exception, so your script continues executing. The only way to know whether a property update succeeds is to check if the property contains the new value.
 
 ```javascript
 function main() {
     var id = "123456789";
-    var bidAmount = -1.5;
+    var bidAmount = -1.5;  
     var keyword = getKeyword(id); 
 
     if (keyword != null) {
-        keyword.bidding().setCpc(bidAmount);
+        keyword.bidding().setCpc(bidAmount);  // Fails because bid amount is not valid
 
-        if (getKeyword(id).bidding().getCpc() != bidAmount) {
+        if (keyword.bidding().getCpc() != bidAmount) {
             Logger.log(`Failed to update bid amount for keyword, ${keyword.getText()} (${keyword.getId()})`);
         }
     }
