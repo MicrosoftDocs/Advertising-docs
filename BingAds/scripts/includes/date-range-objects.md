@@ -16,4 +16,6 @@ For example:
 var date = {year: 2018, month: 5, day: 13};
 ```
 
+The month is one-based where 1 is January and 12 is December.
+
 The date range is inclusive. If you specify multiple date ranges, only the last date range is used.

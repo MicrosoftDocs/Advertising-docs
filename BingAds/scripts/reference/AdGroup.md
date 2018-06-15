@@ -180,7 +180,7 @@ Sets the date when you want ads in the ad group to stop serving. Set an end date
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|Object|The date when you want ads in the ad group to stop serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul>For example: `var date = {year: 2018, month: 5, day: 13};`
+endDate|Object|The date when you want ads in the ad group to stop serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul>For example: `var date = {year: 2018, month: 5, day: 13};`<br /><br />The month is one-based where 1 is January and 12 is December.
 
 ### Returns
 |Type|Description|
@@ -224,7 +224,7 @@ Sets the date when you want ads in the ad group to start serving. Set a start da
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|Object|The date when you want ads in the ad group to start serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul>For example: `var date = {year: 2018, month: 5, day: 13};`
+endDate|Object|The date when you want ads in the ad group to start serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul>For example: `var date = {year: 2018, month: 5, day: 13};`<br /><br />The month is one-based where 1 is January and 12 is December.
 
 ### Returns
 |Type|Description|
