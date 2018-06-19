@@ -88,9 +88,9 @@ reporting_service_manager=ReportingServiceManager(
 
 reporting_service=ServiceClient(
     'ReportingService', 
+    version=12,
     authorization_data=authorization_data, 
     environment=ENVIRONMENT,
-    version=11,
 )
 
 report_request=get_keyword_report_request()
@@ -203,9 +203,9 @@ reporting_service_manager=ReportingServiceManager(
 
 reporting_service=ServiceClient(
     'ReportingService', 
+    version=12,
     authorization_data=authorization_data, 
     environment=ENVIRONMENT,
-    version=11,
 )
 
 report_request=get_keyword_report_request()
