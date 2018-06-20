@@ -27,7 +27,7 @@ Most elements of this object can only be set before the insertion order becomes 
     <xs:element minOccurs="0" name="LastModifiedTime" nillable="true" type="xs:dateTime" />
     <xs:element minOccurs="0" name="NotificationThreshold" nillable="true" type="xs:double" />
     <xs:element minOccurs="0" name="ReferenceId" nillable="true" type="xs:long" />
-    <xs:element minOccurs="0" name="SpendCapAmount" type="xs:double" />
+    <xs:element minOccurs="0" name="SpendCapAmount" nillable="true" type="xs:double" />
     <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Status" nillable="true" type="tns:InsertionOrderStatus" />

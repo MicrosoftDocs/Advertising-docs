@@ -21,7 +21,7 @@ If the [Status](insertionorder.md#status) element of the [InsertionOrder](insert
     <xs:element minOccurs="0" name="ModifiedDateTime" nillable="true" type="xs:dateTime" />
     <xs:element minOccurs="0" name="NotificationThreshold" nillable="true" type="xs:double" />
     <xs:element minOccurs="0" name="ReferenceId" nillable="true" type="xs:long" />
-    <xs:element minOccurs="0" name="SpendCapAmount" type="xs:double" />
+    <xs:element minOccurs="0" name="SpendCapAmount" nillable="true" type="xs:double" />
     <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="PurchaseOrder" nillable="true" type="xs:string" />

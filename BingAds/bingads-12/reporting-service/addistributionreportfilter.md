@@ -16,7 +16,13 @@ Defines the ad distribution medium values that you can use to filter the report 
     <xs:simpleType>
       <xs:restriction base="xs:string">
         <xs:enumeration value="Search" />
-        <xs:enumeration value="Audience" />
+        <xs:enumeration value="Audience">
+          <xs:annotation>
+            <xs:appinfo>
+              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">16</EnumerationValue>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:enumeration>
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
