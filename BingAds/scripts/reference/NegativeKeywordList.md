@@ -36,7 +36,7 @@ To specify the match type for negative keywords:
   
   `negativeKeywordList.addNegativeKeyword("[leather shoes]")`
 
-If the keyword does not include match-type syntax, phrase match type is assumed.
+If the keyword does not include match-type syntax, phrase match type is assumed (broad match type is not supported).
 
 ### Arguments
 |Name|Type|Description|
@@ -61,7 +61,7 @@ To specify the match type for negative keywords:
   
   `negativeKeywordsList.addNegativeKeywords(["[model planes]", "[toy trains]"])`.
 
-If the keyword does not include match-type syntax, phrase match type is assumed.
+If the keyword does not include match-type syntax, phrase match type is assumed (broad match type is not supported).
 
 
 ### Arguments
