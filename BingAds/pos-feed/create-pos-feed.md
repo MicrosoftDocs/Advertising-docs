@@ -156,6 +156,7 @@ The following are the possible dynamic variable names that you may specify in th
 |Name|Description
 |-|-
 |ADVANCE‑BOOKING‑WINDOW|The number of days in advance of the check-in date that the booking took place. For example, 36.
+|BING-SITE|The Bing property that originated the ad request. The following are the possible values.<ul><li>localuniversal&mdash;The ad originated from a search results page.</li><li>mapresults&mdash;The ad originated from a maps site.</li><li>unknown&mdash;The ad originated from an undetermined source.</li><li>verification&mdash;Bing uses this value when performing data quality tests on your site. You are not billed for these queries. Bing Analytics uses this parameter and its value for identifying Hotel Ads verification traffic.</li></ul>
 |CHECKINDAY|The two-digit day specified in the `Checkin` element of the Transaction Message. For example, 20.
 |CHECKINDAY-OF-WEEK|The day of the week that the check-in takes place. Bing uses digits 0 through 6 to represent Monday through Sunday. For example, 1 is Tuesday.
 |CHECKINMONTH|The two-digit month specified in the `Checkin` element of the Transaction Message. For example, 06.
@@ -166,7 +167,6 @@ The following are the possible dynamic variable names that you may specify in th
 |CLICK-TYPE|Indicates whether the user clicked on a hotel ad or a room bundle ad. The following are the possible values.<ul><li>hotel&mdash;The user clicked on a hotel ad.</li><li>room&mdash;The user clicked on a room bundle ad.</li></ul> **NOTE:** Bing does not support the room option.
 |CUSTOM[1-5]|The values of the custom fields (for example, Custom1) specified in the `Result` element of the Transaction message.
 |DATE-TYPE|Indicates whether the user specified check-in and check-out dates. The following are the possible values.<ul><li>default&mdash;The user clicked on a hotel ad that used default dates.</li><li>selected&mdash;The user clicked on a hotel ad with specific check-in and check-out dates.</li></ul>
-|BING-SITE|The Bing property that originated the ad request. The following are the possible values.<ul><li>localuniversal&mdash;The ad originated from a search results page.</li><li>mapresults&mdash;The ad originated from a maps site.</li><li>unknown&mdash;The ad originated from an undetermined source.</li></ul>
 |HOTELGROUP_ID|The ID of the hotel group that the hotel ad belongs to.
 |LENGTH|The length of stay specified in the `Nights` element of the Transaction Message. For example, 3.
 |NUM-ADULTS|The number of adults occupying the room. The default value is 2.
