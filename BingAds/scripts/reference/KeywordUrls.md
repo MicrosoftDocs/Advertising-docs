@@ -100,17 +100,19 @@ string|The keyword's tracking template.
 ## <a name="setcustomparameters~object-customparameters~"></a>setCustomParameters(Object customParameters)
 Sets the keyword's custom parameters. Use this method if you include custom substitution strings in your final URL or tracking template.
 
-[!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
+To use a customer parameter name in the final URL or tracking template, you must enclose the name in curly braces and prepend an underscore (_) to the name. For example, if the parameter name is foo, use {_foo} in the tracking template or final URL. Do not add a leading underscore to the parameter name when you define the object. 
 
-This method replaces all custom parameters already specified in the keyword.
+Calling this method replaces the keywords's existing custom parameters.
 
 To clear the custom parameters from the keyword, pass an empty object (for example, `setCustomParameters({})`). If you clear the keywords's custom parameters, the keyword inherits the URLs from its parent ad group (if the ad group specifies URLs). To completely clear custom parameters, you must clear them at all levels in the hierarchy.
+
+[!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
 
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|A map of custom parameters to use in the keyword.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.<br /><br />The key and value may not exceed 60 and 200 bytes, respectively.
+customParameters|Object|A map of custom parameters to use in the keyword.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value. The parameter's name may contain only alphanumeric characters and the parameter's value may not contain white space. The name and value may not exceed 60 and 200 bytes, respectively.
 
 ### Returns
 |Type|Description|

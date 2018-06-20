@@ -53,16 +53,19 @@ string|The campaign's tracking template.
 ## <a name="setcustomparameters~object-customparameters~"></a>setCustomParameters(Object customParameters)
 Sets the custom parameters for this campaign. Use this method if you include custom substitution strings in your final URL or tracking template.
 
+To use a customer parameter name in the final URL or tracking template, you must enclose the name in curly braces and prepend an underscore (_) to the name. For example, if the parameter name is foo, use {_foo} in the tracking template or final URL. Do not add a leading underscore to the parameter name when you define the object. 
+
+Calling this method replaces the campaign's existing custom parameters.
+
+To clear the custom parameters from the campaign, pass an empty object (for example, `setCustomParameters({})`). To completely clear custom parameters, you must clear them at all levels.
+
 [!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
 
-This method replaces the campaign's existing custom parameters.
-
-To clear the custom parameters from the campaign, pass an empty object (for example, `setCustomParameters({})`).
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|A map of custom parameters to use in the campaign.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.
+customParameters|Object|A map of custom parameters to use in the campaign.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value. The parameter's name may contain only alphanumeric characters and the parameter's value may not contain white space. The name and value may not exceed 60 and 200 bytes, respectively.
 
 ### Returns
 |Type|Description|

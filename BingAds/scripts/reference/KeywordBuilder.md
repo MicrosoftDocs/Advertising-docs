@@ -46,7 +46,7 @@ Returns an operation object that you use to add the keyword to the ad group.
 ## <a name="withcpc~double-cpc~"></a>withCpc(double cpc)
 Sets the keyword's maximum CPC bid.
 
-Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is ManualCpc or EnhancedCpc.
+Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is MANUAL_CPC.
 
 To use the bid amount specified at the ad group level, do not call this method.
 
