@@ -21,18 +21,22 @@ Contains the methods for adding keywords to a negative keywords list. For inform
 [getEntityType](#getentitytype)|String|Returns this entity's type.
 [getId](#getid)|string|Returns the ID that uniquely identifies this negative keyword list.
 [getName](#getname)|String|Returns the name of this negative keyword list.
-[setName(String name)](#setname~string-name~)|void|Sets the name of this negative keyword list.
+[setName(string name)](#setname~string-name~)|void|Sets the name of this negative keyword list.
 
 ## <a name="addnegativekeyword~string-keywordtext~"></a>addNegativeKeyword(string keywordText)
 Adds a keyword to the negative keyword list. For information about negative keyword limits, see [Negative keywords](/bingads/guides/entity-hierarchy-limits#negativekeywords). 
 
 To specify the match type for negative keywords:
 
-- Use quotes around the keyword for **phrase match**. For example, `negativeKeywordList.addNegativeKeyword("\"shoes\"")`.  
+- Use quotes around the keyword for **phrase match**. For example:  
   
-- Use square brackets around the keyword for **exact match**. For example, `negativeKeywordList.addNegativeKeyword("[leather shoes]")`.
+  `negativeKeywordList.addNegativeKeyword("\"shoes\"")`  
+  
+- Use square brackets around the keyword for **exact match**. For example:  
+  
+  `negativeKeywordList.addNegativeKeyword("[leather shoes]")`
 
-
+If the keyword does not include match-type syntax, phrase match type is assumed (broad match type is not supported).
 
 ### Arguments
 |Name|Type|Description|
@@ -49,9 +53,15 @@ Adds a list of keywords to the negative keyword list. For information about nega
 
 To specify the match type for negative keywords:
 
-- Use quotes around the keyword for **phrase match**. For example, `negativeKeywordsList.addNegativeKeywords(["\"planes\"", "\"trains\""])`.  
+- Use quotes around the keyword for **phrase match**. For example:  
   
-- Use square brackets around the keyword for **exact match**. For example, `negativeKeywordsList.addNegativeKeywords(["[model planes]", "[toy trains]"])`.
+  `negativeKeywordsList.addNegativeKeywords(["\"planes\"", "\"trains\""])`.  
+  
+- Use square brackets around the keyword for **exact match**. For example:  
+  
+  `negativeKeywordsList.addNegativeKeywords(["[model planes]", "[toy trains]"])`.
+
+If the keyword does not include match-type syntax, phrase match type is assumed (broad match type is not supported).
 
 
 ### Arguments

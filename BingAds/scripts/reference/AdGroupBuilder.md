@@ -70,7 +70,7 @@ biddingStrategy|string|The bidding strategy to apply to the ad group. The follow
 ## <a name="withcpc~double-cpc~"></a>withCpc(double cpc)
 Sets the ad group's CPC bid. 
 
-Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is ManualCpc or EnhancedCpc. This bid is used if a lower-level entity such as keyword does not override it.
+Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is MANUAL_CPC. This bid is used if a lower-level entity such as keyword does not override it.
 
 
 ### Arguments
@@ -84,7 +84,7 @@ cpc|double|The CPC bid to apply to the ad group. The account's currency determin
 [AdGroupBuilder](./AdGroupBuilder.md)|Ad group builder with the CPC bid applied.
 
 ## <a name="withcustomparameters~object-customparameters~"></a>withCustomParameters(Object customParameters)
-Sets the ad group's custom parameters. 
+Sets the ad group's custom parameters to use in final URLs or tracking templates. 
 
 [!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
 
@@ -148,7 +148,7 @@ Sets the ad group's name.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-name|string|The Ad group's name. The name can contain a maximum of 256 characters and must be unique amongst all active ad groups within the campaign.
+name|string|The Ad group's name. The name is required, may contain a maximum of 256 characters, and must be unique amongst all active ad groups within the campaign.
 
 ### Returns
 |Type|Description|
