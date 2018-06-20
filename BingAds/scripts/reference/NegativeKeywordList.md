@@ -30,9 +30,11 @@ To specify the match type for negative keywords:
 
 - Use quotes around the keyword for **phrase match**. For example:  
   
-  , `negativeKeywordList.addNegativeKeyword("\"shoes\"")`  
+  `negativeKeywordList.addNegativeKeyword("\"shoes\"")`  
   
-- Use square brackets around the keyword for **exact match**. For example:<br /><br /><br /> `negativeKeywordList.addNegativeKeyword("[leather shoes]")`
+- Use square brackets around the keyword for **exact match**. For example:  
+  
+  `negativeKeywordList.addNegativeKeyword("[leather shoes]")`
 
 If the keyword does not include match-type syntax, phrase match type is assumed.
 
@@ -51,9 +53,13 @@ Adds a list of keywords to the negative keyword list. For information about nega
 
 To specify the match type for negative keywords:
 
-- Use quotes around the keyword for **phrase match**. For example, `negativeKeywordsList.addNegativeKeywords(["\"planes\"", "\"trains\""])`.  
+- Use quotes around the keyword for **phrase match**. For example:  
   
-- Use square brackets around the keyword for **exact match**. For example, `negativeKeywordsList.addNegativeKeywords(["[model planes]", "[toy trains]"])`.
+  `negativeKeywordsList.addNegativeKeywords(["\"planes\"", "\"trains\""])`.  
+  
+- Use square brackets around the keyword for **exact match**. For example:  
+  
+  `negativeKeywordsList.addNegativeKeywords(["[model planes]", "[toy trains]"])`.
 
 If the keyword does not include match-type syntax, phrase match type is assumed.
 
