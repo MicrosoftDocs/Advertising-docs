@@ -34,7 +34,7 @@ Returns the keyword's CPC bid.
 ### Returns
 |Type|Description|
 |-|-
-double|The keyword's CPC bid.
+double|The keyword's CPC bid. If the keyword doesn't specify a bid, this field contains the bid inherited from the ad group.
 
 ## <a name="setcpc~double-cpc~"></a>setCpc(double cpc)
 Sets the CPC bid for the keyword. 
