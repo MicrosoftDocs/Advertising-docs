@@ -91,7 +91,9 @@ For example, the following call returns ad groups in ascending order by AverageC
 
 `adGroupSelector = adGroupSelector.orderBy("AverageCpc");`
 
-The selector may specify only one order-by column.
+
+[!INCLUDE[order-by-limit](../includes/order-by-limit.md)]
+
 
 ### Arguments
 |Name|Type|Description|
@@ -123,9 +125,7 @@ Supported columns for ad group filtering. The names are case sensitive.
 <strong>Stats</strong>|
 AverageCpc|double|`withCondition("AverageCpc < 1.45")`
 AverageCpm|double|`withCondition("AverageCpm > 0.48")`
-AveragePageviews|double|`withCondition("AveragePageviews > 0")`
 AveragePosition|double|`withCondition("AveragePosition > 7.5")`
-BounceRate|double|`withCondition("BounceRate < 0.5")`
 ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`
 Clicks|long|`withCondition("Clicks >= 21")`
 ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`

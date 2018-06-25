@@ -107,9 +107,7 @@ Supported columns for keyword filtering. The column names are case sensitive.
 <strong>Stats</strong>|
 AverageCpc|double|`withCondition("AverageCpc < 1.45")`|Avg. CPC
 AverageCpm|double|`withCondition("AverageCpm > 0.48")`|Avg. CPM
-AveragePageviews|double|`withCondition("AveragePageviews > 0")`|
 AveragePosition|double|`withCondition("AveragePosition > 7.5")`|Avg. pos.
-BounceRate|double|`withCondition("BounceRate < 0.5")`|
 ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`|Conv. Rate
 Clicks|long|`withCondition("Clicks >= 21")`|Clicks
 ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`|Conv.
