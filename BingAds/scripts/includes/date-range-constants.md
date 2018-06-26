@@ -2,6 +2,8 @@ Supported date range values:
 
 - TODAY
 - YESTERDAY
+- LAST_WEEK
+- LAST_BUSINESS_WEEK
 - LAST_7_DAYS
 - THIS_WEEK_SUN_TODAY
 - LAST_14_DAYS

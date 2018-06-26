@@ -32,7 +32,7 @@ The only time Bing Ads returns errors is when you add an entity with invalid val
         }
 ``` 
 
-However, if you try to update an entity’s properties with an invalid value, Bing Ads does not throw an error. Instead, Bing Ads writes an error message to the [Change Log](./change-and-text-logs.md#change-log) and your code will continue executing. Because Bing Ads does not throw exceptions in this case, you should test each set operation to ensure the update succeeded. For example, the following example attempts to set the campaign’s budget. Because the amount is not valid, the call silently fails, the script continues executing, and an error message is written to the change log.
+However, if you try to update an entity’s properties with an invalid value, Bing Ads does not return an error. Instead, Bing Ads writes an error message to the [Change Log](./change-and-text-logs.md#change-log) and your code will continue executing. Because Bing Ads does not return errors in this case, you should test each set operation to ensure the update succeeded. For example, the following example attempts to set the campaign’s budget. Because the amount is not valid, the call silently fails, the script continues executing, and an error message is written to the change log.
 
 ```javascript
 function main() {
@@ -57,3 +57,15 @@ function main() {
 ```
 
 You should carefully review all messages logged to the change log and text log.
+
+## What does Internal Error mean?
+
+If you receive a runtime error and the text log lists Internal Error, the following are the reasons why you might be getting it.
+
+|Reason|Remedy
+|-|
+|An enumeration value you specified is not valid.|Enumeration values are case sensitive, so make sure that all enumeration values are valid and use the correct casing.
+|An operator you specified in the `.withCondition()` method is not valid.|Operators are case sensitive, so make sure that all operators are valid and use the correct casing.
+|A column you specified in the `.withCondition()` or `.orderBy()` method is not valid.|Column names are case sensitive, so make sure that all column names are valid and use the correct casing.
+|You specified too may IDs in the `.withIds()` method.|Reduce the number of IDs to the allowed maximum (see documentation for the method).
+|The date range specified in the .forDateRange() method is not valid.|Make sure that the start and end dates are valid and that the end date is not earlier than the start date.

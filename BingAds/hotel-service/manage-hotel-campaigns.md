@@ -15,7 +15,12 @@ ms.author: "scottwhi"
 >
 > The API and documentation are subject to change.
 
-The Hotel API lets you manage your hotel ad campaigns and bidding.
+The Hotel API lets you manage your hotel ad campaigns and bidding. A subaccount provides the top-level logical organization of your hotel ads. You can think of it as a hotel campaign. Currently, you can have only one subaccount, and all hotels from the feed belong to it.
+
+A subaccount specifies the campaign's daily budget, maximum bid allowed, and default bid and bid multipliers for ads that don't specify bids or multipliers.
+
+> [!NOTE]
+> Hotel ad campaigns refered to here have no relationship to campaigns in Bing Ads.
 
 If you haven't already done so, familiarize yourself with the following topics:
 
@@ -440,7 +445,7 @@ x-ms-trackingid: e5eba818-2ef7-4fe6-9225-9e2325414e3b
 <a name="workingwithhotels" />
 ## Working with hotels
 
-Hotels represent the hotels in your hotel feed. The API lets you list, get, and update hotels. You cannot use the API to add hotels; to add hotels, use the [Hotel feed](../hotel-feed/hotel-feed.md).
+Hotels represent the hotels in your hotel feed. The API lets you list, get, and update hotels. You cannot use the API to add hotels; to add hotels, use the [Hotel feed](../hotel-feed/hotel-feed.md). Hotels are unique per subaccount &mdash; more than one subaccount may not contain the same hotel.
 
 The following are the REST templates that you use to manage hotels.
 
@@ -630,7 +635,7 @@ x-ms-trackingid: ceb70eb3-36ca-4b99-a5f7-b1a04de1e4ae
 <a name="associatinghotels" />
 ## Associating a hotel with a hotel group
 
-When you import your hotel feed file, the hotels go in the default Ungrouped hotel group. If you create new hotel groups to logically organize your hotels, you'll need to move them from the Ungrouped hotel group to one of the groups you created.
+When you import your hotel feed file, the hotels are placed in the *Ungrouped* hotel group. The Ungrouped hotel group is the default hotel group. If you create new hotel groups to logically organize your hotels, you'll need to move them from the Ungrouped hotel group to one of the groups you created.
 
 To move a hotel from one group to another, send the following request. The body of the request is an [AssociationCollection](../hotel-service/reference.md#associationcollection) object. The collection may contain a maximum of 500 [HotelAssociation](../hotel-service/reference.md#hotelassociation) objects.
 
