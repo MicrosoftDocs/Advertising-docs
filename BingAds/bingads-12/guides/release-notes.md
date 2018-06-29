@@ -9,6 +9,14 @@ description: Get information about the changes to the Bing Ads services for each
 # Bing Ads API Release Notes
 For information about the changes to the Bing Ads Version 12 services for each month, see the following sections. 
 
+## <a name="june2018"></a>June 2018
+For information about this month's changes to Bing Ads services, see the following sections.
+
+-   [Bing Ads Software Development Kit (SDK) Updates](#sdk-june2018)   
+
+### <a name="sdk-june2018"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, and Python SDKs are updated to extend support for [Cooperative Bidding](product-ads.md#setup-cooperative) i.e., the BulkAdGroup now supports the coop setting. 
+
 ## <a name="may2018"></a>May 2018
 For information about this month's changes to Bing Ads services, see the following sections.
 
