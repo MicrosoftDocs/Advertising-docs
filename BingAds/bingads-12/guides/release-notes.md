@@ -9,6 +9,21 @@ description: Get information about the changes to the Bing Ads services for each
 # Bing Ads API Release Notes
 For information about the changes to the Bing Ads Version 12 services for each month, see the following sections. 
 
+## <a name="june2018"></a>June 2018
+For information about this month's changes to Bing Ads services, see the following sections.
+
+-   [Bing Ads Software Development Kit (SDK) Updates](#sdk-june2018)   
+-   [Linked Account Ids per Customer Role](#linkedaccountids-june2018)
+
+### <a name="sdk-june2018"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, and Python SDKs are updated to extend support for [Cooperative Bidding](product-ads.md#setup-cooperative) i.e., the BulkAdGroup now supports the coop setting. 
+
+### <a name="linkedaccountids-june2018"></a>Linked Account Ids per Customer Role
+The [LinkedAccountIds](../customer-management-service/customerrole.md#linkedaccountids) element is added to the [CustomerRole](../customer-management-service/customerrole.md) object. For agency users the element contains a list of linked accounts that the user can access as an agency on behalf of another customer. 
+
+> [!IMPORTANT]
+> The [CustomerRole](../customer-management-service/customerrole.md) objects that represent the user's permissions for agency-linked accounts will not be returned by default when you call the [GetUser](../customer-management-service/getuser.md) service operation. In other words by default the [GetUser](../customer-management-service/getuser.md) operation will only return *CustomerRole* objects for customers that the user can directly access without agency linking. To retrieve [CustomerRole](../customer-management-service/customerrole.md) objects that represent the user's permissions for agency-linked accounts you must set the optional [IncludeLinkedAccountIds](../customer-management-service/getuser.md#includelinkedaccountids) element to *True* when calling the [GetUser](../customer-management-service/getuser.md) operation.
+
 ## <a name="may2018"></a>May 2018
 For information about this month's changes to Bing Ads services, see the following sections.
 

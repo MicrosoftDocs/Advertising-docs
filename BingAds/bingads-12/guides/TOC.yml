@@ -48,6 +48,8 @@
   items:
   - name: Ad Extensions
     href: ./code-example-ad-extensions.md
+  - name: Audience Campaigns
+    href: ./code-example-audience-campaigns.md
   - name: Bulk Ad Extensions
     href: ./code-example-bulk-ad-extensions.md
   - name: Bulk Keywords and Ads
@@ -64,6 +66,8 @@
     href: ./code-example-dynamic-search-campaigns.md
   - name: Geographical Locations
     href: ./code-example-geographical-locations.md
+  - name: Image Media
+    href: ./code-example-image-media.md
   - name: Invite User
     href: ./code-example-invite-user.md
   - name: Keyword Planner
@@ -78,6 +82,8 @@
     href: ./code-example-negative-keywords.md
   - name: Offline Conversions
     href: ./code-example-offline-conversions.md
+  - name: Profile Data
+    href: ./code-example-profile-data.md
   - name: Remarketing Lists
     href: ./code-example-remarketing-lists.md
   - name: Report Requests

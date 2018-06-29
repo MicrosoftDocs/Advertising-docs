@@ -26,7 +26,7 @@ Defines a product ad. A product ad is not used directly for delivered ad copy.  
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="promotionaltext"></a>PromotionalText|The promotional text to display in a product ad. If you do not want to add promotional text to the product ads, set *PromotionalText* to null or an empty string.<br /><br />The text can contain a maximum of 45 characters. The promotional text of product ads within an ad group must be unique.<br /><br />**Add:** Optional<br/>**Update:** Optional|**string**|
+|<a name="promotionaltext"></a>PromotionalText|This property is reserved for internal use and will be removed from a future version of the API.<br /><br />You can use [Merchant Promotions](https://help.bingads.microsoft.com/#apex/3/en/56805/0) if you want tags to appear at the bottom of your product ad as "special offer" links, helping to increase customer engagement.<br /><br />**Add:** Optional<br/>**Update:** Optional|**string**|
 
 The [ProductAd](productad.md) object has [Inherited Elements](#inheritedelements).
 

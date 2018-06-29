@@ -139,7 +139,7 @@ The CPM pricing model is no longer supported in Bing Ads, and the *Pricing Model
 
 #### <a name="bulk-timezone"></a>Time Zone Updates
 The following time zone values are updated for the *Time Zone* field of the [Campaign](../bulk-service/campaign.md) record. 
--  Since Magadan is now permanently in UTC+12 time zone, the value is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
+-  The value for the UTC+12 time zone is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
 -  The value is updated from *Almaty_Novosibirsk* to *AlmatyNovosibirsk*.
 -  The value is updated from *MidwayIslandand_Samoa* to *MidwayIslandAndSamoa*.
 -  The value is updated from *MountainTime_US_Canada* to *MountainTimeUSCanada*.
@@ -223,7 +223,7 @@ The CPM pricing model is no longer supported in Bing Ads, and the *PricingModel*
 
 #### <a name="campaign-timezone"></a>Time Zone Updates
 The following time zone values are updated for the *TimeZone* element of the [Campaign](../campaign-management-service/campaign.md) object. 
--  Since Magadan is now permanently in UTC+12 time zone, the value is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
+-  The value for the UTC+12 time zone is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
 -  The value is updated from *Almaty_Novosibirsk* to *AlmatyNovosibirsk*.
 -  The value is updated from *MidwayIslandand_Samoa* to *MidwayIslandAndSamoa*.
 -  The value is updated from *MountainTime_US_Canada* to *MountainTimeUSCanada*.
@@ -403,7 +403,7 @@ The *CurrencyType* value set is renamed as [CurrencyCode](../customer-management
 
 #### <a name="customer-timezone"></a>Time Zone Updates
 The following values are updated in the [TimeZoneType](../customer-management-service/timezonetype.md) value set. 
--  Since Magadan is now permanently in UTC+12 time zone, the value is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
+-  The value for the UTC+12 time zone is updated from *MagadanSolomonIslandNewCaledonia* to *SolomonIslandNewCaledonia*.
 -  The value of *InternationalDatelineWest* (lowercase 'l' in Dateline) is updated to *InternationalDateLineWest* (uppercase 'L' in DateLine). 
 
 #### <a name="customer-searchcustomers-predicates"></a>Search Customers Predicates
