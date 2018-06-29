@@ -27,7 +27,6 @@ For a *Product Ad* record, the following attribute fields are available in the [
 - [Id](#id)
 - [Modified Time](#modifiedtime)
 - [Parent Id](#parentid)
-- [Promotion](#promotion)
 - [Publisher Countries](#publishercountries)
 - [Status](#status)
 
@@ -65,8 +64,6 @@ var bulkProductAd = new BulkProductAd
     {
         // 'Id' column header in the Bulk file
         Id = null,
-        // 'Promotion' column header in the Bulk file
-        PromotionalText = "Find New Customers & Increase Sales!",
         // 'Status' column header in the Bulk file
         Status = AdStatus.Active,
     },
@@ -179,15 +176,6 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 
 > [!NOTE]
 > For add, update, and delete, you must specify either the *Parent Id* or *Ad Group* field.
-
-### <a name="promotion"></a>Promotion
-The promotional text to display in a product ad. 
-
-The text can contain a maximum of 45 characters. The promotional text of product ads within an ad group must be unique.
-
-**Add:** Optional. If you do not want to add promotional text to the product ads, do not set this field.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value* when updating a product ad, the promotional text will be deleted.   
-**Delete:** Read-only  
 
 ### <a name="publishercountries"></a>Publisher Countries
 The list of publisher countries whose editorial guidelines do not allow the specified [term](#editorialterm).
