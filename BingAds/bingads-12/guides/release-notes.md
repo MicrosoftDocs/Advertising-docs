@@ -19,10 +19,10 @@ For information about this month's changes to Bing Ads services, see the followi
 The Bing Ads .NET, Java, and Python SDKs are updated to extend support for [Cooperative Bidding](product-ads.md#setup-cooperative) i.e., the BulkAdGroup now supports the coop setting. 
 
 ### <a name="linkedaccountids-june2018"></a>Linked Account Ids per Customer Role
-The [LinkedAccountIds](customerrole.md#linkedaccountids) element is added to the [CustomerRole](customerrole.md) object. For agency users the element contains a list of linked accounts that the user can access as an agency on behalf of another customer. 
+The [LinkedAccountIds](../customer-management-service/customerrole.md#linkedaccountids) element is added to the [CustomerRole](../customer-management-service/customerrole.md) object. For agency users the element contains a list of linked accounts that the user can access as an agency on behalf of another customer. 
 
 > [!IMPORTANT]
-> The [CustomerRole](customerrole.md) objects that represent the user's permissions for agency-linked accounts will not be returned by default when you call the [GetUser](getuser.md) service operation. In other words by default the [GetUser](getuser.md) operation will only return *CustomerRole* objects for customers that the user can directly access without agency linking. To retrieve [CustomerRole](customerrole.md) objects that represent the user's permissions for agency-linked accounts you must set the optional [IncludeLinkedAccountIds](getuser.md#includelinkedaccountids) element to *True* when calling the [GetUser](getuser.md) operation.
+> The [CustomerRole](../customer-management-service/customerrole.md) objects that represent the user's permissions for agency-linked accounts will not be returned by default when you call the [GetUser](../customer-management-service/getuser.md) service operation. In other words by default the [GetUser](../customer-management-service/getuser.md) operation will only return *CustomerRole* objects for customers that the user can directly access without agency linking. To retrieve [CustomerRole](../customer-management-service/customerrole.md) objects that represent the user's permissions for agency-linked accounts you must set the optional [IncludeLinkedAccountIds](../customer-management-service/getuser.md#includelinkedaccountids) element to *True* when calling the [GetUser](../customer-management-service/getuser.md) operation.
 
 ## <a name="may2018"></a>May 2018
 For information about this month's changes to Bing Ads services, see the following sections.
