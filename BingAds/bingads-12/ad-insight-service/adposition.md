@@ -9,6 +9,9 @@ description: Defines the possible positions of an ad in the search results.
 # AdPosition Value Set - Ad Insight
 Defines the possible positions of an ad in the search results.
 
+> [!NOTE]
+> Sidebar ads no longer serve on Bing owned and operated sites in the United States. If you only request first page data e.g., FirstPage1 for the United States (US), then the [KeywordKPIs](keywordhistoricalperformance.md#keywordkpis) element in the result will be nil/empty. If you include additional countries/regions e.g., US and CA in the same request, then any first page results are only attributed to countries/regions outside the United States.
+
 ## Syntax
 ```xml
 <xs:simpleType name="AdPosition" xmlns:xs="http://www.w3.org/2001/XMLSchema">
