@@ -63,7 +63,7 @@ You should carefully review all messages logged to the change log and text log.
 If you receive a runtime error and the text log lists Internal Error, the following are the reasons why you might be getting it.
 
 |Reason|Remedy
-|-|
+|-|-
 |An enumeration value you specified is not valid.|Enumeration values are case sensitive, so make sure that all enumeration values are valid and use the correct casing.
 |An operator you specified in the `.withCondition()` method is not valid.|Operators are case sensitive, so make sure that all operators are valid and use the correct casing.
 |A column you specified in the `.withCondition()` or `.orderBy()` method is not valid.|Column names are case sensitive, so make sure that all column names are valid and use the correct casing.
