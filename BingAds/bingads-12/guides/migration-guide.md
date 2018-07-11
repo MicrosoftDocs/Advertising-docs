@@ -251,6 +251,9 @@ The error code string for code 1149 is updated from CampaignServiceDuplicateSett
 
 The error code string for code 1151 is updated from CampaignServiceCampaignSettingsNotAllowed to CampaignServiceInvalidSettingForCampaignType. The same error code can be returned whether the settings are at campaign or ad group level. For example if you attempt to apply a shopping setting in a Dynamic Search Ads campaign.
 
+#### <a name="campaign-audienceadsbidadjustment"></a>Audience Ads Bid Adjustment
+The NativeBidAdjustment property is renamed as AudienceAdsBidAdjustment in the [AdGroup](../campaign-management-service/adgroup.md) and [Campaign](../campaign-management-service/campaign.md) objects. 
+
 ### <a name="campaign-newfeatures"></a>New Features
 
 #### <a name="campaign-inheritedbidstrategytypes"></a>Inherited Bid Strategy Types

@@ -449,9 +449,18 @@ If two shopping campaigns use the product catalog feed from same Bing Merchant C
 ### <a name="status"></a>Status
 The status of the campaign.
 
-Possible values are *Active*, *Paused*, and *Deleted*. 
+Possible values for download and upload are Active, Paused, and Deleted. In addition, the values BudgetAndManualPaused, BudgetPaused, and Suspended are read-only via bulk download.
 
-**Add:** Optional. The default value is *Active*.  
+|Value|Description|
+|-----------|---------------|
+|Active|The campaign is active, which indicates that the campaign's ads can be served.|
+|BudgetAndManualPaused|The campaign is paused, which indicates that the campaign's ads will not serve. This status results when a user sets the campaign status to paused after the service pauses the campaign because the budget is depleted.|
+|BudgetPaused|The campaign is paused, which indicates that the campaign's ads will not serve. The service sets this status when the budget is depleted. The service will set the status back to Active when the budget is restored.|
+|Deleted|The campaign is deleted. This status is for internal use only. Because all Get operations do not return deleted objects, you will not see an object with this status.|
+|Paused|The campaign is paused, which indicates that the campaign's ads will not serve.|
+|Suspended|Your campaign has been suspended and no ads are eligible for delivery because of potentially fraudulent activity. <br />Please contact [Bing Ads Support](http://go.microsoft.com/fwlink/?LinkId=269631).|
+
+**Add:** Optional. The default value is Active.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Required. The Status must be set to Deleted.
 
