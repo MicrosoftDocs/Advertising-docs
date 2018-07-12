@@ -77,7 +77,7 @@ For information about changes that were included with each release, see the foll
 
 ### Nonbreaking change
 
-- Changed the sandbox URL that you use to get your initial sandbox account from si.bingads.microsoft.com to sandbox.bingads.microsoft.com (see [Getting sandbox credentials](../hotel-service/get-started.md#getting-sandbox-credentials)). 
+- Changed the sandbox URL that you use to get your initial sandbox account from si.bingads.microsoft.com to sandbox.bingads.microsoft.com (see [Getting sandbox credentials](../hotel-service/get-started.md#getsicredentials)). 
 
 
 ## February 1, 2018
@@ -134,15 +134,15 @@ For information about changes that were included with each release, see the foll
 
 ### Nonbreaking changes
 
-- Added [SpendUSD](../hotel-service/reporting.md#measure-columns) Performance Report column.
+- Added [SpendUSD](../hotel-service/reporting.md#measurecolumns) Performance Report column.
 
-- Added [AverageCPCUSD](../hotel-service/reporting.md#measure-columns) Performance Report column.
+- Added [AverageCPCUSD](../hotel-service/reporting.md#measurecolumns) Performance Report column.
 
 ## December 1, 2017
 
 ### Breaking changes
 
-- Renamed the SpendUSD Performance Report column to [Spend](../hotel-service/reporting.md#measure-columns).  
+- Renamed the SpendUSD Performance Report column to [Spend](../hotel-service/reporting.md#measurecolumns).  
   
 - Changed the length of time that the download URL is valid. The URL now expires in seven days instead of five minutes.
   
