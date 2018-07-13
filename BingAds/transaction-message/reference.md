@@ -29,7 +29,9 @@ For information about sending a transaction message, see [Pusing a Transaction M
 
  
 <a name="transaction" /> 
+
 ## Transaction
+
 Defines the top-level element of a transaction message.
 
 |Element|Description|Children
@@ -38,7 +40,9 @@ Defines the top-level element of a transaction message.
 
  
 <a name="transactiontype" /> 
+
 ## Transaction Type
+
 Defines the transaction message.
 
 |Element|Description|Children
@@ -48,7 +52,9 @@ Defines the transaction message.
 
  
 <a name="resulttype" /> 
+
 ## Result Type
+
 Defines the itinerary.
 
 |Element|Description|Children
@@ -71,7 +77,9 @@ Defines the itinerary.
 
  
 <a name="allowablepointsofsaletype" /> 
+
 ## allowablePointsOfSaleType
+
 Defines a point of sale (POS) where a user may book the room.
 
 |Element|Description|Children

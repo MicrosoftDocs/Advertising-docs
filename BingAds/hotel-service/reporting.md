@@ -63,7 +63,7 @@ The response to the POST contains a report job ID (see [AddResponse](reference.m
 
 After getting the ID, use it to get the status of the report job. To get the status, send an HTTP GET request to:
 
-https://partner.api.bingads.microsoft.com/Travel/v1/Customers({customerId})/Accounts({accountId})/ReportJobs('{jobId}')
+`https://partner.api.bingads.microsoft.com/Travel/v1/Customers({customerId})/Accounts({accountId})/ReportJobs('{jobId}')`
 
 The report job is valid for an undertermined amount of time after it completes but typically for at least seven days. After seven days, you should submit a new report request.
 
@@ -179,6 +179,7 @@ And if the request contains SubaccountId, HotelGroupId, and Clicks, the clicks r
 The request must include at least one dimension column and one measure column.
 
 <a name="dimensioncolumns" />
+
 ### Dimension columns
 
 |Column name|Report column name|Description
@@ -206,6 +207,7 @@ The request must include at least one dimension column and one measure column.
 
 
 <a name="measurecolumns" />
+
 ### Measure columns
 
 |Column name|Report column name|Description
@@ -229,6 +231,7 @@ The request must include at least one dimension column and one measure column.
 |SpendUSD|Spend USD|The total cost of all clicks. The cost is in US dollars.
 
 <a name="sov" />
+
 ### Share of voice
 
 In addition to the rule that requests must include at least one dimension column and one measure column, any report that includes share of voice (SOV) columns must include at least one of the following dimension columns.

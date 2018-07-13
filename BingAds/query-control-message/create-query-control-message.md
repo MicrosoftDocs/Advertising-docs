@@ -111,6 +111,7 @@ You can also disable requests for specific hotels. For example, to prevent Bing 
 If you decide later to enable the hotels, remove the property override. If the override includes default values that you want to retain, remove the `State` element in the next message.
 
 <a name="pullrequestexample" />
+
 ## Examples of pull requests based on Query Control settings
 
 This example is based on the following QueryControl message:

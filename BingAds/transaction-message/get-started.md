@@ -70,7 +70,7 @@ You may specify up to 180 days advanced booking with stays of up to 14 nights. F
 
 The document must use UTF-8 encoding.
 
-[Read more](../transaction-message/create-transaction-message.md).
+[Read more](../transaction-message/create-transaction-message.md)
 
 
 ## Validate the message before sending it

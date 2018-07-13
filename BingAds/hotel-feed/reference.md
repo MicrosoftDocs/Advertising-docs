@@ -24,7 +24,9 @@ For information about creating a hotel feed, see [Creating a Hotel Feed](../hote
 
  
 <a name="listings" /> 
+
 ## Listings
+
 Defines the top-level element of a hotel feed.
 
 |Element|Description|Children
@@ -33,7 +35,9 @@ Defines the top-level element of a hotel feed.
 
  
 <a name="listingstype" /> 
+
 ## Listings Type
+
 Defines a list of hotels in the feed.
 
 |Element|Description|Children
@@ -44,7 +48,9 @@ Defines a list of hotels in the feed.
 
  
 <a name="listingtype" /> 
+
 ## Listing Type
+
 Defines a hotel.
 
 |Element|Description|Children
@@ -59,7 +65,9 @@ Defines a hotel.
 
  
 <a name="componenttype" /> 
+
 ## Component Type
+
 Defines a component of a street address.
 
 |Element|Description|Children

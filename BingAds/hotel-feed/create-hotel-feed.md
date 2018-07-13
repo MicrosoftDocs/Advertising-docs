@@ -127,7 +127,7 @@ If you remove a hotel and add it back in a later feed with the same property val
   
 - If your data includes special characters such as apostrophies or quotes, escape them or use CDATA sections. If you escape them, you may use entity codes or character codes. For example, you can escape Paul's as Paul\&apos;s or Paul\&#39;s.
   
-- Do not include elements that do not contain data. For example, if you do not provide the geographical coordinates for a hotel, do not include empty \<latitude/\> and \<longitude/\> elements.
+- Do not include elements that do not contain data. For example, if you do not provide the geographical coordinates for a hotel, do not include empty \<latitude\> and \<longitude\> elements.
     
 - Do not use HTML in your XML elements.
   

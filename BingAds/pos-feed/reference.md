@@ -27,7 +27,9 @@ For information about creating a points of sale feed, see [Creating a Points of 
 
  
 <a name="pointsofsale" /> 
+
 ## PointsOfSale
+
 Defines the top-level element of a points of sale feed.
 
 |Element|Description|Children
@@ -36,7 +38,9 @@ Defines the top-level element of a points of sale feed.
 
  
 <a name="pointsofsaletype" /> 
+
 ## PointsOfSale Type
+
 Defines a list of points of sale.
 
 |Element|Description|Children
@@ -46,7 +50,9 @@ Defines a list of points of sale.
 
  
 <a name="pointofsaletype" /> 
+
 ## PointOfSale Type
+
 Defines a point of sale.
 
 |Element|Description|Children
