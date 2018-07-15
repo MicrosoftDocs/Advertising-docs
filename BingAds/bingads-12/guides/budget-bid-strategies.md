@@ -68,10 +68,10 @@ The following bid strategy types are available per campaign type. For more infor
 
 > [!IMPORTANT] 
 > If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
-> -  You can continue to set the ad group and keyword bids; however they will not be used by Bing Ads.
-> -  Bing Ads will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Bing Ads may change them at any time using this bid strategy type.
-> -  You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Bing Ads about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
-> -  Whether you chose the *DailyBudgetAccelerated* or *DailyBudgetStandard* budget type, Bing Ads will use the *DailyBudgetStandard* budget type. 
+> - You can continue to set the ad group and keyword bids; however they will not be used by Bing Ads.
+> - Bing Ads will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Bing Ads may change them at any time using this bid strategy type.
+> - You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Bing Ads about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
+> - Whether you chose the *DailyBudgetAccelerated* or *DailyBudgetStandard* budget type, Bing Ads will use the *DailyBudgetStandard* budget type. 
 > 
 > Also note that you must have conversion tracking (a UET tag and a conversion goal) set up for the *EnhancedCpc*, *MaxConversions*, and *TargetCpa* bid strategy types to work. See [Universal Event Tracking](universal-event-tracking.md) for more information.
 > 
@@ -143,9 +143,9 @@ If you include the broad match modifier on a keyword that specifies a phrase or 
 
 ### <a name="deliveredmatchtypes"></a>Bid and Delivered Match Types
 You should set the ad group *Search Bid* that will be used as the default bid for *Exact*, *Phrase*, and *Broad* match types. You can then override the default by setting individual keyword level match types. Generally, the more precise you require the match to be, the higher conversion rates tend to be while impressions tend to decrease. Finding the right balance between conversions and impressions can help maximize the return on investment (ROI) of your campaign. If you're not sure which match type to use, we suggest starting with broad match. You can then use keyword performance reports over time to see which keywords lead to ad clicks and optimize your keyword list.
--   If a majority of the keywords in the report are not related to your ad, you might want to use one of the more precise match types.  
--   For keywords that you want to continue leading to clicks, add them to your keyword list with a more specific match type such as Phrase or Exact.  
--   For keywords that you don't want leading to clicks, add them to your keyword list as negative keywords. For more information, see [Negative Keywords](negative-keywords.md).  
+- If a majority of the keywords in the report are not related to your ad, you might want to use one of the more precise match types.  
+- For keywords that you want to continue leading to clicks, add them to your keyword list with a more specific match type such as Phrase or Exact.  
+- For keywords that you don't want leading to clicks, add them to your keyword list as negative keywords. For more information, see [Negative Keywords](negative-keywords.md).  
 
 Exact match is the most restrictive and broad match is the least restrictive match type. If the keyword matches by using the more restrictive match type, it will also match using the less restrictive match types. If the exact match comparison succeeds, the exact-match bid value is used if it exists; otherwise, it gets the bid value from the first less-restrictive match type that has a bid value (set at the keyword or ad group level).
 
@@ -176,9 +176,9 @@ For example, let's say you add *bike-repair* as one of your keywords, and then a
 For a detailed list of normalized characters, see the Bing Ads help topic [About duplicate keywords](http://help.bingads.microsoft.com/#apex/3/en/normalization).
 
 Please also note the following validation rules.
--   Normalization is not case sensitive; *bike repair* and *Bike Repair* are treated as the same phrase. You'll see that if you enter a keyword with a capital letter, the capital letter is simply changed to lower-case.  
--   Normalization does not treat singular and plural forms of words as duplicates. For example, *bike* and *bikes* would be separate keywords. If you want to use both the plural and singular form of a keyword, bid on each separately. Similarly, normalization does not impact spaces within or between words, or apostrophes that are a part of a name. For example, *bikerepair* is not a duplicate of *bike repair*.  
--   As you create your keywords, also be aware of the rules they must follow. Here's some more information: [Bing Ads policies](http://help.bingads.microsoft.com/#apex/3/en/52023/1).  
+- Normalization is not case sensitive; *bike repair* and *Bike Repair* are treated as the same phrase. You'll see that if you enter a keyword with a capital letter, the capital letter is simply changed to lower-case.  
+- Normalization does not treat singular and plural forms of words as duplicates. For example, *bike* and *bikes* would be separate keywords. If you want to use both the plural and singular form of a keyword, bid on each separately. Similarly, normalization does not impact spaces within or between words, or apostrophes that are a part of a name. For example, *bikerepair* is not a duplicate of *bike repair*.  
+- As you create your keywords, also be aware of the rules they must follow. Here's some more information: [Bing Ads policies](http://help.bingads.microsoft.com/#apex/3/en/52023/1).  
 
 ## See Also
 [Bing Ads Web Service Addresses](web-service-addresses.md)

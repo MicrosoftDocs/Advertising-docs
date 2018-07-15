@@ -41,7 +41,7 @@ Follow these steps to get a new sandbox customer. If you already have a sandbox 
 5.	Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com). 
 
     > [!IMPORTANT]
-    > Sandbox supports MSAs created using an @outlook**-int**.com email account only. You may not use an @outlook.com email account. Also, you may not use an email account from another email service (for example, @contoso.com) even if the account is linked to an @outlook.com or @outlook**-int**.com email account.  
+    > Sandbox supports MSAs created using an outlook**-int**.com email account only. You may not use an outlook.com email account. Also, you may not use an email account from another email service (for example, @contoso.com) even if the account is linked to an outlook.com or outlook**-int**.com email account.  
 
 6.	Finish the MSA work flow by specifying the rest of your user and security information. You will then be redirected to Bing Ads to continue the sandbox customer and account sign up. 
 7.	Fill out the **Create Account** form
@@ -58,7 +58,7 @@ To use OAuth in sandbox, you need a sandbox Microsoft account (MSA). If your san
 5.	Enter the email address of the user to invite. The email server must be outlook.com (for example, someone@outlook.com). 
 
     > [!IMPORTANT]
-    > You may send invites to @outlook.com email accounts only. You may not send invites to any other domain, even if the account is linked to an @outlook.com email account. If you try to send an invite to another domain (for example, someone@contoso.com), the BingAds UI will show the invite as pending indefinitely (the invite is never sent).
+    > You may send invites to outlook.com email accounts only. You may not send invites to any other domain, even if the account is linked to an outlook.com email account. If you try to send an invite to another domain (for example, someone@contoso.com), the BingAds UI will show the invite as pending indefinitely (the invite is never sent).
 
 6.	Click **Send**
 
@@ -71,12 +71,12 @@ Bing Ads sends an email invite to the user. If the invite doesn’t show up in t
 5.	Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com). 
 
     > [!IMPORTANT]
-    > Sandbox supports MSAs created using an @outlook**-int**.com email account only. You may not use an @outlook.com email account. Also, you may not use an email account from another email service (for example, @contoso.com) even if the account is linked to an @outlook.com or @outlook**-int**.com email account.  
+    > Sandbox supports MSAs created using an outlook**-int**.com email account only. You may not use an outlook.com email account. Also, you may not use an email account from another email service (for example, @contoso.com) even if the account is linked to an outlook.com or outlook**-int**.com email account.  
 
 6.	Finish the work flow by specifying the rest of your user information
 7.  Exit Bing Ads after completing the MSA process.
 
-After Bing creates the account, you may use the @outlook**-int**.com credentials in sandbox and during [app registration](https://apps.dev.microsoft-int.com/#/appList).
+After Bing creates the account, you may use the outlook**-int**.com credentials in sandbox and during [app registration](https://apps.dev.microsoft-int.com/#/appList).
 
 > [!NOTE]
 > The MSA signup process returns you to the SI Bing Ads user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface and then sign in using your new MSA email address at [https://secure.sandbox.bingads.microsoft.com/](https://secure.sandbox.bingads.microsoft.com/).
