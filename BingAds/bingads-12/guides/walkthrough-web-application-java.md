@@ -210,8 +210,8 @@ The example web application sends authentication requests to the Microsoft accou
         } catch (Exception ex) {
             // Ignore fault exceptions that we already caught.
 
-            if ( ex.getCause() instanceof AdApiFaultDetail_Exception ||
-                 ex.getCause() instanceof ApiFault_Exception )
+            if (ex.getCause() instanceof AdApiFaultDetail_Exception ||
+                ex.getCause() instanceof ApiFault_Exception )
             {
                 ;
             }
