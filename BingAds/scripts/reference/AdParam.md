@@ -21,7 +21,7 @@ Contains the methods used to manage the substitution parameters used in the keyw
 [getInsertionText](#getinsertiontext)|string|Returns the substitution parameter's text.
 [getKeyword](#getkeyword)|[Keyword](Keyword.md)|Returns the keyword that the substitution parameter applies to.
 [remove](#remove)|void|Removes the substitution parameter from the keyword.
-[setInsertionText(string insertionText)](#setinsertiontext~string-insertiontext~)|void|Sets the substitution parameter's text.
+[setInsertionText(string insertionText)](#setinsertiontext-string-insertiontext-)|void|Sets the substitution parameter's text.
 
 
 ## <a name="getentitytype"></a>getEntityType
@@ -68,7 +68,7 @@ Removes the substitution parameter from the keyword.
 |-|-
 void|Returns nothing.
 
-## <a name="setinsertiontext~string-insertiontext~"></a>setInsertionText(string insertionText)
+## <a name="setinsertiontext-string-insertiontext-"></a>setInsertionText(string insertionText)
 Sets the substitution parameter's text.
 
 ### Arguments

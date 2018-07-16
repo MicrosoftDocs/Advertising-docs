@@ -35,7 +35,7 @@ To get all ad groups in a campaign, use the `withCondition()` method to specify 
         .withCondition('CampaignName = "' + campaignName + '"');
 ```
 
-For a list of conditions and operators that you can use to filter the list of entities, see the selector's `withCondition()` method. For example, for a list of ad group conditions, see the ad group selector's [withCondition](../reference/AdGroupSelector.md#withcondition~string-condition~) method.
+For a list of conditions and operators that you can use to filter the list of entities, see the selector's `withCondition()` method. For example, for a list of ad group conditions, see the ad group selector's [withCondition](../reference/AdGroupSelector.md#withcondition-string-condition-) method.
 
 To get an ad group by ID, use the `withIds()` method to specify the ad group to get.
 
@@ -84,7 +84,7 @@ For more information about iterators, see [What are iterators?](../concepts/iter
 
 ### How do I get performance data for an entity?
 
-Most entities let you request performance data, if available. But first you need to specify a date range for the performance data you want when you get the selector. You can specify a date range using a predefined literal, such as YESTERDAY or LAST_MONTH, or using a start and end date. For more information, see [withDateRange(string dateRange)](../reference/AdGroupSelector.md#fordaterange~string-daterange~) and [forDateRange(Object dateFrom, Object dateTo)](../reference/AdGroupSelector.md#fordaterange~object-datefrom_-object-dateto~).
+Most entities let you request performance data, if available. But first you need to specify a date range for the performance data you want when you get the selector. You can specify a date range using a predefined literal, such as YESTERDAY or LAST_MONTH, or using a start and end date. For more information, see [withDateRange(string dateRange)](../reference/AdGroupSelector.md#fordaterange-string-daterange-) and [forDateRange(Object dateFrom, Object dateTo)](../reference/AdGroupSelector.md#fordaterange-object-datefrom-object-dateto-).
 
 ```javascript
     var campaignName = 'My Campaign';

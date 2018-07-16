@@ -19,8 +19,8 @@ Contains the methods for managing the campaign's URLs. For more information, see
 [clearTrackingTemplate](#cleartrackingtemplate)|void|Removes the tracking template from this campaign.
 [getCustomParameters](#getcustomparameters)|Object|Returns the campaign's custom parameters.
 [getTrackingTemplate](#gettrackingtemplate)|string|Returns the campaign's tracking template.
-[setCustomParameters(Object customParameters)](#setcustomparameters~object-customparameters~)|void|Sets the campaign's custom parameters.
-[setTrackingTemplate(String trackingTemplate)](#settrackingtemplate~string-trackingtemplate~)|void|Sets the campaign's tracking template.
+[setCustomParameters(Object customParameters)](#setcustomparameters-object-customparameters-)|void|Sets the campaign's custom parameters.
+[setTrackingTemplate(String trackingTemplate)](#settrackingtemplate-string-trackingtemplate-)|void|Sets the campaign's tracking template.
 
 ## <a name="cleartrackingtemplate"></a>clearTrackingTemplate
 Removes the tracking template from this campaign. For information about tracking templates, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
@@ -50,7 +50,7 @@ Returns the campaign's tracking template.
 |-|-
 string|The campaign's tracking template.
 
-## <a name="setcustomparameters~object-customparameters~"></a>setCustomParameters(Object customParameters)
+## <a name="setcustomparameters-object-customparameters-"></a>setCustomParameters(Object customParameters)
 Sets the custom parameters for this campaign. Use this method if you include custom substitution strings in your final URL or tracking template.
 
 To use a customer parameter name in the final URL or tracking template, you must enclose the name in curly braces and prepend an underscore (_) to the name. For example, if the parameter name is foo, use {_foo} in the tracking template or final URL. Do not add a leading underscore to the parameter name when you define the object. 
@@ -72,7 +72,7 @@ customParameters|Object|A map of custom parameters to use in the campaign.<br />
 |-|-
 void|Returns nothing.
 
-## <a name="settrackingtemplate~string-trackingtemplate~"></a>setTrackingTemplate(string trackingTemplate)
+## <a name="settrackingtemplate-string-trackingtemplate-"></a>setTrackingTemplate(string trackingTemplate)
 Sets the tracking template to use with this campaign. 
 
 [!INCLUDE[tracking-templates](../includes/tracking-templates.md)]
