@@ -13,7 +13,7 @@ ms.topic: "article"
 
 Contains properties that define a date.
 
-Do not use this object to specify a date when calling one of the `forDateRange()` methods such as [AdGroupSelect.forDateRange()](AdGroupSelector.md#fordaterange~object-datefrom_-object-dateto~). Instead, you use this object to receive a date from methods such as [AdGroup.getStartDate()](AdGroup.md#getstartdate).
+Do not use this object to specify a date when calling one of the `forDateRange()` methods such as [AdGroupSelect.forDateRange()](AdGroupSelector#fordaterange~object-datefrom_-object-dateto~). Instead, you use this object to receive a date from methods such as [AdGroup.getStartDate()](AdGroup.md#getstartdate).
 
 
 ## Properties
