@@ -32,7 +32,7 @@ Set {customerId} to the customer's CustomerId and {accountId} to the customer's 
 
 Next, append a template from the following table to add, get, and update hotel resources. For example, to get or add a hotel group, use the following endpoint:
 
-`https://partner.api.sandbox.bingads.microsoft.com/Travel/V1/Customers({customerId})/Accounts({accountId})/SubAccounts('{subAccountId}')/HotelGroups`.  
+`https://partner.api.sandbox.bingads.microsoft.com/Travel/V1/Customers({customerId})/Accounts({accountId})/SubAccounts('{subAccountId}')/HotelGroups`  
 
 > [!NOTE]
 > The IDs for SubAccounts, HotelGroups, Hotels, and ReportJobs are strings and must be enclosed in single quotes. For example, SubAccounts('12345')/HotelGroups. This applies to SubAccounts, HotelGroups, Hotels, and ReportJobs only; do not use single quotes for Customers and Accounts.

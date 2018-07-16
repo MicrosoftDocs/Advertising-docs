@@ -30,15 +30,15 @@ var adGroupSelector = BingAdsApp.adGroups()
 
 |Method Name|Return Type|Description|
 |-|-|-
-[forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the start and end dates applied.
-[forDateRange(string dateRange)](#fordaterange~string-daterange~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the predefined date range applied.
+[forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the start and end dates applied.
+[forDateRange(string dateRange)](#fordaterange-string-daterange-)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the predefined date range applied.
 [get](#get)|[AdGroupIterator](./AdGroupIterator.md)|Returns an iterator that you use to iterate through the list of ad groups.
-[orderBy(string orderBy)](#orderby~string-orderby~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the specified ordering applied.
-[withCondition(string condition)](#withcondition~string-condition~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector that limits the ad groups to those that match the filter criteria.
-[withIds(string[] ids)](#withids~string-ids~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector that returns only ad groups with the specified IDs.
-[withLimit(int limit)](#withlimit~int-limit~)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the top *n* ad groups that match the selection criteria.
+[orderBy(string orderBy)](#orderby-string-orderby-)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the specified ordering applied.
+[withCondition(string condition)](#withcondition-string-condition-)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector that limits the ad groups to those that match the filter criteria.
+[withIds(string[] ids)](#withids-string-ids-)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector that returns only ad groups with the specified IDs.
+[withLimit(int limit)](#withlimit-int-limit-)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the top *n* ad groups that match the selection criteria.
 
-## <a name="fordaterange~object-datefrom_-object-dateto~"></a>forDateRange(Object dateFrom, Object dateTo)
+## <a name="fordaterange-object-datefrom-object-dateto-"></a>forDateRange(Object dateFrom, Object dateTo)
 Returns a selector with the start and end dates applied. The date range specifies the performance data to include with the selector.
 
 [!INCLUDE[date-range-objects](../includes/date-range-objects.md)]
@@ -54,7 +54,7 @@ dateTo|Object|End date of the date range that specifies the performance data to 
 |-|-
 [AdGroupSelector](./AdGroupSelector.md)|Selector with date range applied.
 
-## <a name="fordaterange~string-daterange~"></a>forDateRange(String dateRange)
+## <a name="fordaterange-string-daterange-"></a>forDateRange(String dateRange)
 Returns a selector with the predefined date range applied. The date range specifies the performance data to include with the selector.
 
 [!INCLUDE[date-range-conditions-message](../includes/date-range-conditions-message.md)]
@@ -79,7 +79,7 @@ Returns an [iterator](../concepts/iterators.md) based on the selector's selectio
 |-|-
 [AdGroupIterator](./AdGroupIterator.md)|An iterator that you use to iterate through the selected ad groups.
 
-## <a name="orderby~string-orderby~"></a>orderBy(String orderBy)
+## <a name="orderby-string-orderby-"></a>orderBy(String orderBy)
 Returns a selector with the specified ordering applied. 
 
 Specify the `orderBy` parameter in the form, "columnName orderDirection" where:
@@ -105,12 +105,12 @@ orderBy|string|The ordering to apply.
 |-|-
 [AdGroupSelector](./AdGroupSelector.md)|Selector with ordering applied.
 
-## <a name="withcondition~string-condition~"></a>withCondition(String condition)
+## <a name="withcondition-string-condition-"></a>withCondition(String condition)
 Returns a selector that limits the ad groups it returns to those that match the filter criteria. 
 
 Specify the condition parameter in the form, "columnName operator value" where: 
 
-- *columnName* is one of the [supported Columns](#supported-ad-group-columns). If you set *columName* to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange~string-daterange~) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange~object-datefrom_-object-dateto~).
+- *columnName* is one of the [supported Columns](#supported-ad-group-columns). If you set *columName* to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-).
 - *operator* is one of the supported [operators](#operators).
 
 [!INCLUDE[operators](../includes/operators.md)]
@@ -150,7 +150,7 @@ condition|string|The condition to add to the selector.
 |-|-
 [AdGroupSelector](./AdGroupSelector.md)|Selector with the condition applied.
 
-## <a name="withids~string-ids~"></a>withIds(string[] ids)
+## <a name="withids-string-ids-"></a>withIds(string[] ids)
 Returns a selector that contains only ad groups with the specified IDs. 
 
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only ad group 33333.
@@ -172,7 +172,7 @@ ids|string[]|An array of ad group IDs. The maximum number of IDs that you may sp
 |-|-
 [AdGroupSelector](./AdGroupSelector.md)|Selector restricted to the given IDs.
 
-## <a name="withlimit~int-limit~"></a>withLimit(int limit)
+## <a name="withlimit-int-limit-"></a>withLimit(int limit)
 Returns a selector with the top *n* ad groups that match the selection criteria.
 
 ### Arguments

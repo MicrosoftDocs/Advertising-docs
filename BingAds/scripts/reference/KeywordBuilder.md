@@ -27,12 +27,12 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [build](#build)|[KeywordOperation](./KeywordOperation.md)|Returns an operation object that you use to add the keyword to the ad group.
-[withCpc(double cpc)](#withcpc~double-cpc~)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's maximum CPC bid.
-[withCustomParameters(Object customParameters)](#withcustomparameters~object-customparameters~)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's custom parameters.
-[withFinalUrl(string finalUrl)](#withfinalurl~string-finalurl~)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's final URL.
-[withMobileFinalUrl(string mobileFinalUrl)](#withmobilefinalurl~string-mobilefinalurl~)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's final URL for mobile devices.
-[withText(string text)](#withtext~string-text~)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's text.
-[withTrackingTemplate(string trackingTemplate)](#withtrackingtemplate~string-trackingtemplate~)|[KeywordBuilder](./KeywordBuilder.md)|Sets the tracking template used with this keyword.
+[withCpc(double cpc)](#withcpc-double-cpc-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's maximum CPC bid.
+[withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's custom parameters.
+[withFinalUrl(string finalUrl)](#withfinalurl-string-finalurl-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's final URL.
+[withMobileFinalUrl(string mobileFinalUrl)](#withmobilefinalurl-string-mobilefinalurl-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's final URL for mobile devices.
+[withText(string text)](#withtext-string-text-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's text.
+[withTrackingTemplate(string trackingTemplate)](#withtrackingtemplate-string-trackingtemplate-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the tracking template used with this keyword.
 
 
 ## <a name="build"></a>build
@@ -43,7 +43,7 @@ Returns an operation object that you use to add the keyword to the ad group.
 |-|-
 [KeywordOperation](./KeywordOperation.md)|An operation object that you use to add the keyword.
 
-## <a name="withcpc~double-cpc~"></a>withCpc(double cpc)
+## <a name="withcpc-double-cpc-"></a>withCpc(double cpc)
 Sets the keyword's maximum CPC bid.
 
 Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is MANUAL_CPC.
@@ -64,7 +64,7 @@ cpc|double|The CPC bid to apply to the keyword. The account's currency determine
 [KeywordBuilder](./KeywordBuilder.md)|Keyword builder with the CPC bid applied.
 
 
-## <a name="withcustomparameters~object-customparameters~"></a>withCustomParameters(Object customParameters)
+## <a name="withcustomparameters-object-customparameters-"></a>withCustomParameters(Object customParameters)
 Sets the keyword's custom parameters. 
 
 [!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
@@ -80,7 +80,7 @@ customParameters|Object|The custom parameters to apply to the keyword's final UR
 [KeywordBuilder](./KeywordBuilder.md)|Keyword builder with the custom parameters applied.
 
 
-## <a name="withfinalurl~string-finalurl~"></a>withFinalUrl(string finalUrl)
+## <a name="withfinalurl-string-finalurl-"></a>withFinalUrl(string finalUrl)
 Sets the keyword's final URL.  
 
 [!INCLUDE[final-url](../includes/final-url.md)]
@@ -97,7 +97,7 @@ finalUrl|string|The final URL for the keyword.
 
 
 
-## <a name="withmobilefinalurl~string-mobilefinalurl~"></a>withMobileFinalUrl(string mobileFinalUrl)
+## <a name="withmobilefinalurl-string-mobilefinalurl-"></a>withMobileFinalUrl(string mobileFinalUrl)
 Sets the keyword's final URL for mobile devices.
 
 The final URL must be the URL of the page that the user ends up on after clicking your ad (and after all redirects have taken place).
@@ -116,7 +116,7 @@ mobileFinalUrl|string|The final URL for mobile devices.
 |-|-
 [KeywordBuilder](./KeywordBuilder.md)|Keyword builder with the mobile final URL applied.
 
-## <a name="withtext~string-text~"></a>withText(string text)
+## <a name="withtext-string-text-"></a>withText(string text)
 Sets the keyword's text. 
 
 To specify the keyword's match type, use the following syntax:
@@ -137,7 +137,7 @@ text|string|The keyword's text. The text may contain a maximum of 100 characters
 |-|-
 [KeywordBuilder](./KeywordBuilder.md)|Keyword builder with the keyword text applied.
 
-## <a name="withtrackingtemplate~string-trackingtemplate~"></a>withTrackingTemplate(string trackingTemplate)
+## <a name="withtrackingtemplate-string-trackingtemplate-"></a>withTrackingTemplate(string trackingTemplate)
 Sets the tracking template to use with the keyword. 
 
 [!INCLUDE[tracking-templates](../includes/tracking-templates.md)]

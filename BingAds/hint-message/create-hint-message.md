@@ -26,6 +26,7 @@ The `LastFetchTime` element identifies the UTC date and time of the last success
 - [Expanded check-in date ranges](#expandedcheckindateranges)
 
 <a name="exactitineraries" />
+
 ## Exact itineraries
 
 Your hint message can identify the individual itineraries using the check-in date and length of stay. The following example shows a hint message that specifies a single itinerary for a single hotel.
@@ -44,7 +45,7 @@ Your hint message can identify the individual itineraries using the check-in dat
 
 Each \<Item\> represents an individual itinerary. You may specify an \<Item\> objects for each itinerary that you want to update, and each itinerary may specify one or more properties. 
 
-When Bing receives the above hint, it sends the following [Query](../query-message/query-message.md] message to you:
+When Bing receives the above hint, it sends the following [Query](../query-message/query-message.md) message to you:
 
 ```xml
 <Query>
@@ -70,6 +71,7 @@ When you get the Query message, your response should contain a [Transaction](../
 If the above hint specfied two properties, the transaction message would contain two \<Result\> elements (one for each property).
 
 <a name="checkindateranges" />
+
 ## Check-in date ranges
 
 Your hint message can identify a range of itineraries. To specify the range, set the `FirstDate` element to the starting check-in date and the `LastDate` to the last check-in date. The following example shows a hint message that uses a date range to specify six check-in dates for a single property.
@@ -87,7 +89,7 @@ Your hint message can identify a range of itineraries. To specify the range, set
 
 Each \<Item\> represents a single range of check-in dates. You may specify an \<Item\> object for each check-in date range that identifies the itineraries you want to update, and each one may specify one or more properties. 
 
-When Bing receives the above hint, it sends the following [Query](../query-message/query-message.md] message to you. The `MaxLengthOfStay` setting in your [QueryControl](../query-control-message/query-control-message.md) message determines the value for \<Nights\> (this example assumes it's set to 3).
+When Bing receives the above hint, it sends the following [Query](../query-message/query-message.md) message to you. The `MaxLengthOfStay` setting in your [QueryControl](../query-control-message/query-control-message.md) message determines the value for \<Nights\> (this example assumes it's set to 3).
 
 ```xml
 <Query>
@@ -148,6 +150,7 @@ For this example, the maximum number of results that the transaction message sho
 
 
 <a name="expandedcheckindateranges" />
+
 ## Expanded check-in date ranges
 
 The expanded check-in date range hint is similar to the check-in date range hint except it asks that you include all itineraries that intersect the itineraries in the date range. So your transaction message should include any itinary whose check-out date falls within the date range.
@@ -170,7 +173,7 @@ The \<StaysIncludingRange\> identifies the hint as an expanded check-in date ran
 Each \<Item\> represents a single range of itineraries. You may specify an \<Item\> object for each check-in date range that identifies the itineraries you want to update, and each one may specify one or more properties.   
 
 
-When Bing receives the above hint, it sends the following [Query](../query-message/query-message.md] message to you. The `MaxLengthOfStay` setting in your [QueryControl](../query-control-message/query-control-message.md) message determines the value for \<AffectedNights\> (this example assumes it's set to 3).
+When Bing receives the above hint, it sends the following [Query](../query-message/query-message.md) message to you. The `MaxLengthOfStay` setting in your [QueryControl](../query-control-message/query-control-message.md) message determines the value for \<AffectedNights\> (this example assumes it's set to 3).
 
 ```xml
 <Query>

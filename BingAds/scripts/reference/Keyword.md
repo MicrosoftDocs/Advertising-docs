@@ -32,7 +32,7 @@ Contains the methods for managing a keyword. For information about keywords, see
 [isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates whether this keyword is paused.
 [pause](#pause)|void|Pauses this keyword.
 [remove](#remove)|void|Removes this keyword.
-[setAdParam(int index, string insertionText)](#setadparam~int-index~string-insertiontext~)|void|Creates the substitution parameter and sets its value to the specified text.
+[setAdParam(int index, string insertionText)](#setadparam-int-index-string-insertiontext-)|void|Creates the substitution parameter and sets its value to the specified text.
 [urls](#urls)|[KeywordUrls](./KeywordUrls.md)|Returns the keyword's URL fields.
 
 
@@ -160,7 +160,7 @@ Returns a Boolean value that indicates whether this keyword is paused.
 Boolean|Returns **true** if this keyword is paused; otherwise, **false**.
 
 
-## <a name="setadparam~int-index~string-insertiontext~"></a>setAdParam(int index, string insertionText)
+## <a name="setadparam-int-index-string-insertiontext-"></a>setAdParam(int index, string insertionText)
 Creates the substitution parameter and sets its value to the specified text. 
 
 The substitution values are used in an ad if the ad's title, text, display URL, or final URL contains the {Param1}, {Param2}, or {Param3} dynamic substitution strings. For restrictions and information about using these parameters, see [Param1](/bingads/campaign-management-service/keyword#param1), [Param2](/bingads/campaign-management-service/keyword#param2), and [Param3](/bingads/campaign-management-service/keyword#param3).

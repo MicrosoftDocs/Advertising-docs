@@ -17,8 +17,8 @@ Contains the methods for managing the campaign's budget. For more information, s
 |-|-|-
 [getAmount](#getamount)|double|Returns the campaign's budget amount.
 [getDeliveryMethod](#getdeliverymethod)|string|Returns the delivery method (budget type) for this budget.
-[setAmount(double amount)](#setamount~double-amount~)|void|Sets the campaign's budget to the specified value.
-[setDeliveryMethod(String method)](#setdeliverymethod~string-method~)|void|Sets the delivery method for this budget.
+[setAmount(double amount)](#setamount-double-amount-)|void|Sets the campaign's budget to the specified value.
+[setDeliveryMethod(String method)](#setdeliverymethod-string-method-)|void|Sets the delivery method for this budget.
 
 ## <a name="getamount"></a>getAmount
 Returns the campaign's budget amount.
@@ -36,7 +36,7 @@ Returns the delivery method (budget type) for this budget.
 |-|-
 string|The budget's delivery method. Possible values are:<br /><ul><li>STANDARD</li><li>ACCELERATED</li></ul>For more information, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1)
 
-## <a name="setamount~double-amount~"></a>setAmount(double amount)
+## <a name="setamount-double-amount-"></a>setAmount(double amount)
 Sets the campaign's budget to the specified value.
 
 ### Arguments
@@ -49,7 +49,7 @@ amount|double|The campaign's budget. The amount is in the currency of parent acc
 |-|-
 void|Returns nothing.
 
-## <a name="setdeliverymethod~string-method~"></a>setDeliveryMethod(string method)
+## <a name="setdeliverymethod-string-method-"></a>setDeliveryMethod(string method)
 Sets the delivery method for this budget. 
 
 ### Arguments

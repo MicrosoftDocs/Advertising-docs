@@ -10,13 +10,16 @@ ms.author: "scottwhi"
 
 # Get started with the Hotel API
 
-<a name="doyouhavecredentials"/> 
+<a name="doyouhavecredentials"/>
+
 ## Do you have your Bing Ads credentials?
-To use the Hotel API, you must have a Bing Ads account and a Microsoft account. To get a Bing Ads account, go to [http://bingads.microsoft.com](http://bingads.microsoft.com). If you're not signed in to your Microsoft account, you'll be redirected to sign in to your Microsoft account or sign up for a Microsoft account. After signing in, you'll have the option to **Sign up for a new Bing Ads account**. Select the sign-up option and continue with the sign-up process.
+
+To use the Hotel API, you must have a Bing Ads account and a Microsoft account. To get a Bing Ads account, go to <a href="http://bingads.microsoft.com" data-raw-source="[http://bingads.microsoft.com](http://bingads.microsoft.com)">http://bingads.microsoft.com</a>. If you're not signed in to your Microsoft account, you'll be redirected to sign in to your Microsoft account or sign up for a Microsoft account. After signing in, you'll have the option to **Sign up for a new Bing Ads account**. Select the sign-up option and continue with the sign-up process.
 
 Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. The API ignores it if you include it.
 
-<a name="authenticatingcredentials"/> 
+<a name="authenticatingcredentials"/>
+
 ## Authenticating your credentials
 
 The Hotel API uses the OAuth authentication scheme. For details about authenticating Microsoft account credentials using OAuth, see [Authentication with OAuth](/bingads/guides/authentication-oauth). 
@@ -60,10 +63,11 @@ For the sandbox environment, the following are the endpoints you must use to get
  - login.live-int.com&mdash;Endpoint for OAuth requests
 
 
-<a name="getsicredentials"/> 
+<a name="getsicredentials"/>
+
 ## Getting sandbox credentials
 
-### Get a sanbox account if you don't already have one
+### Get a sandbox account if you don't already have one
 
 You use the sandbox environment to test your application before putting it in production. Use the following steps to get a sandbox account.
 
@@ -96,10 +100,10 @@ Bing Ads sends an email invite to the user. If the invite doesn’t show up in t
 2.	Click the embedded link
 3.	Select **Create a new email address** to create an MSA. You must create a new MSA; you may not use an existing MSA.
 4.	Click **Next**
-5.	Enter an MSA email address. The email server must be outlook**-int**.com (for example, someone@outlook-int.com).  
+5.	Enter an MSA email address. The email server must be outlook<strong>-int</strong>.com (for example, someone@outlook-int.com).  
   
   > [!IMPORTANT]  
-  > Sandbox supports MSAs created using an @outlook**-int**.com email account only. You may not use an @outlook.com email account. Also, you may not use an email account from another email service (for example, @gmail.com) even if the account is linked to an @outlook.com or @outlook**-int**.com email account.  
+  > Sandbox supports MSAs created using an @outlook<strong>-int</strong>.com email account only. You may not use an @outlook.com email account. Also, you may not use an email account from another email service (for example, @gmail.com) even if the account is linked to an @outlook.com or @outlook<strong>-int</strong>.com email account.  
   
 6.	Finish the work flow by specifying the rest of your user information
 7.  Exit Bing Ads after completing the MSA process.
@@ -108,11 +112,12 @@ Bing Ads sends an email invite to the user. If the invite doesn’t show up in t
 After Bing creates the account, you may use the MSA with the Hotel Ads API to create hotel ad campaigns.
 
 > [!NOTE]
-> The MSA signup process returns you to the SI Bing Ads user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface. To access your Hotel Ads Campaigns using the Bing Ads user interface in sandbox, go to [https://ui.sandbox.bingads.microsoft.com](https://ui.sandbox.bingads.microsoft.com) and sign in using your new MSA email address.
+> The MSA signup process returns you to the SI Bing Ads user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface. To access your Hotel Ads Campaigns using the Bing Ads user interface in sandbox, go to <a href="https://ui.sandbox.bingads.microsoft.com" data-raw-source="[https://ui.sandbox.bingads.microsoft.com](https://ui.sandbox.bingads.microsoft.com)">https://ui.sandbox.bingads.microsoft.com</a> and sign in using your new MSA email address.
 
 
 
-<a name="wheretousecredentials"/> 
+<a name="wheretousecredentials"/>
+
 ## Where do you use your credentials?
 
 After getting the user's OAuth access token, set the Authorization header to it.
@@ -128,6 +133,7 @@ For information about the Authorization header and other headers that the reques
 > The Hotel API uses the standard Authorization header. If you use the Bing Ads SDK to get the OAuth tokens, you'll use the SDK to get the tokens and then set the Authorization header.
 
 <a name="feeds"/>
+
 ## Do you have your hotel feed set up?
 
 Before using the Hotel API, you should have your hotel feeds set up. For details, see:

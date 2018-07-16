@@ -18,6 +18,7 @@ ms.author: "scottwhi"
 The Hotel API lets you manage your hotel ad campaigns and bidding.
 
 <a name="thebasics"/>
+
 ## The basics...
 
 When you get access to Hotel Ads, Bing sets up a default subaccount and hotel group that contains the hotels from your hotel feed. The subaccount provides the top-level logical organization of your hotel ads. You can think of it as a hotel campaign. Currently, you can have only one subaccount, and all hotels from the feed belong to it.

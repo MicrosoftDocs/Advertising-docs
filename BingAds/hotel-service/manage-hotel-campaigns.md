@@ -33,6 +33,7 @@ For Hotel API endpoints, see [Endpoints](../hotel-service/reference.md#endpoints
 For information about reporting, see [Hotel Ads Reporting API](reporting.md).
 
 <a name="workingwithsubaccounts" />
+
 ## Working with subaccounts
 
 Subaccounts are the top-level organization of Hotel Ads. Bing creates the default subaccount for you when you sign up for Hotel Ads. The API lets you list subaccounts, get a specific subaccount, and update a subaccount.
@@ -48,6 +49,7 @@ The following are the REST templates that you use to manage subaccounts.
 For an example that gets and updates subaccounts, see [code examples](../hotel-service/code-example-subaccounts.md). (Use the Language selector in the right pane to see the example in different languages.)
 
 <a name="listingsubaccounts" />
+
 ### Listing subaccounts
 
 To get the list of subaccounts, send the following request.
@@ -90,6 +92,7 @@ x-ms-trackingid: 7cd2710c-821a-48e8-99af-efdc05aebe86
 ```
 
 <a name="updatingasubaccount" />
+
 ### Updating a subaccount
 
 The subaccount specifies the default bid and bid multipliers to use for hotel groups and hotels that don't specify a bid or multipliers. The subaccount also specifies the budget that's spread throughout the day, and the maximum bid that you want all bids not to exceed.
@@ -152,6 +155,7 @@ Content-Length: 682
 ```
 
 <a name="gettingsubaccounts" />
+
 ### Getting a subaccount
 
 To get a specific subaccount, send the following request. The subaccount ID must be wrapped in single quotes as shown.
@@ -226,6 +230,7 @@ x-ms-trackingid: 5345bf4f-e64a-47a6-8d1e-43cc0231dc1b
 ```
 
 <a name="workingwithhotelgroups" />
+
 ## Working with hotel groups
 
 Hotel groups are the second level of organization that you use to group hotels. When you create a subaccount, Bing creates a default hotel group under the subaccount named, Ungrouped. The API lets you list, get, update, and add hotel groups.
@@ -238,6 +243,7 @@ The following are the REST templates that you use to manage hotel groups.
 For an example that gets, adds, and updates hotel groups, see [code examples](../hotel-service/code-example-hotel-groups.md). (Use the Language selector in the right pane to see the example in different languages.)
 
 <a name="listinghotelgroups" />
+
 ### Listing hotel groups
 
 By default, when you request a list of hotel groups under a subaccount, the API returns a maximum of 1,000 groups. To determine the total number of groups in the subaccount, use the [$count](./reference.md#count-param) query paramater. To specify the number of groups to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of groups that you can request in single call is 5,000. If the subaccount contains more than 5,000 groups, use the $top and [$skip](./reference.md#skip-param) query parameters to page through all groups.
@@ -294,6 +300,7 @@ x-ms-trackingid: 21fafae0-4053-46e0-8271-87bc5fce6312
 ```
 
 <a name="addingahotelgroup" />
+
 ### Adding a hotel group
 
 You would create a new hotel group if you want to create a new logical grouping of hotels. To specify the hotel group, use the [HotelGroup](../hotel-service/reference.md#hotelgroup) object. The only required field is `Name`. Use a descriptive name that indicates the grouping. The `Bid` and `BidMultipliers` fields are optional. If you don't specify them, the group uses the bid and bid multipliers from the subaccount. Specify them if you want to override the subaccount values. You can specify the bid, multipliers, or both.
@@ -329,6 +336,7 @@ x-ms-trackingid: e86fcdbd-613e-44a9-b5fc-528cfa87297a
 After adding a hotel group, use the [associate](../hotel-service/reference.md#associate) template to add hotels to the group. For information, see [Associating a hotel with a hotel group](#associatinghotels).
 
 <a name="updatingahotelgroup" />
+
 ### Updating a hotel group
 
 The hotel group specifies the default bid and bid multipliers to use for hotels in the group. The group either explicitly specifies them or inherits them from the subaccount it belongs to. You can use the API to update the bid and bid multipliers to use for hotels that do not specify a bid or multipliers.
@@ -385,6 +393,7 @@ Host: <host>
 ```
 
 <a name="gettingahotelgroup" />
+
 ### Getting a hotel group
 
 To get a specific hotel group, send the following request. The hotel group ID must be wrapped in single quotes as shown.
@@ -443,6 +452,7 @@ x-ms-trackingid: e5eba818-2ef7-4fe6-9225-9e2325414e3b
 
 
 <a name="workingwithhotels" />
+
 ## Working with hotels
 
 Hotels represent the hotels in your hotel feed. The API lets you list, get, and update hotels. You cannot use the API to add hotels; to add hotels, use the [Hotel feed](../hotel-feed/hotel-feed.md). Hotels are unique per subaccount &mdash; more than one subaccount may not contain the same hotel.
@@ -457,6 +467,7 @@ For an example that gets and updates hotels, see [hotel examples](../hotel-servi
 
 
 <a name="listinghotels" />
+
 ### Listing hotels
 
 By default, when you request a list of hotels in a hotel group, the API returns a maximum of 1,000 hotels. To determine the total number of hotels in the hotel group, use the [$count](./reference.md#count-param) query paramater. To specify the number of hotels to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of hotels that you can request in single call is 5,000. If your hotel group contains more than 5,000 hotels, use the $top and [$skip](./reference.md#skip-param) query parameters to page through all hotels.
@@ -550,6 +561,7 @@ x-ms-trackingid: 3787a393-eca3-4ad0-be3d-dd4c7ae08906
 ```
 
 <a name="updatingahotel" />
+
 ### Updating a hotel
 
 The hotel specifies the bid and bid multipliers to use for hotel ads. The hotel either explicitly specifies them or inherits them from the hotel group or subaccount, in that order. You can use the API to update the bid and bid multipliers to use for the hotel's ad.
@@ -585,6 +597,7 @@ To update a hotel, send a PATCH request. The body of the request is a [Hotel](..
 ```
 
 <a name="gettingahotel" />
+
 ### Getting a hotel
 
 To get a specific hotel, send the following request. The hotel ID must be wrapped in single quotes as shown.
@@ -633,6 +646,7 @@ x-ms-trackingid: ceb70eb3-36ca-4b99-a5f7-b1a04de1e4ae
 ```
 
 <a name="associatinghotels" />
+
 ## Associating a hotel with a hotel group
 
 When you import your hotel feed file, the hotels are placed in the *Ungrouped* hotel group. The Ungrouped hotel group is the default hotel group. If you create new hotel groups to logically organize your hotels, you'll need to move them from the Ungrouped hotel group to one of the groups you created.
@@ -740,6 +754,7 @@ x-ms-trackingid: 4fa56e03-7e86-4f44-b671-8e00a67c2eed
 
 
 <a name="filterassociations" />
+
 ### Filtering hotel associations
 
 To return a subset of associations, use the OData $filter query parameter. You may filter associations by `HotelId` or `PartnerHotelId` only. The maximum URL length (2,048) determines the number of IDs that you can specify. If the URL exceeds 2,048 characters, the request returns 404.
@@ -816,7 +831,7 @@ Host: partner.api.sandbox.bingads.microsoft.com
 Note that each boundary ID is prepended with a double dash (for example, **--**batch_086fe0de-9b26-4d4a-a206-6df2013a2816).
 And the terminating boundary ID that goes after the last request in the batch is enclosed with double dashes (for example, **--**batch_086fe0de-9b26-4d4a-a206-6df2013a2816**--**).
 
-The boundary ID delimiter must be followed by the Content-Type and Content-Transfer-Encoding headers as shown. Because you may only update hotels, the request must use the HTTP PATCH verb and use the [hotel](reference.md#updatehotel) template to identify the hotel to update. The request must include the Content-Type header and it must be set to application/json; odata.metadata=minimal. The body of the request is a [Hotel](reference.md#hotel) object. The object must include the hotel's ID and should include only the fields you're updating.
+The boundary ID delimiter must be followed by the Content-Type and Content-Transfer-Encoding headers as shown. Because you may only update hotels, the request must use the HTTP PATCH verb and use the [hotel](reference.md#updatehotel) template to identify the hotel to update. The request must include the Content-Type header and it must be set to *application/json; odata.metadata=minimal*. The body of the request is a [Hotel](reference.md#hotel) object. The object must include the hotel's ID and should include only the fields you're updating.
 
 
 ### The response
