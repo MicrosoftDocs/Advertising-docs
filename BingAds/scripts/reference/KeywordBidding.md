@@ -18,7 +18,7 @@ Contains the methods for specifying the keyword's bid values.
 |-|-|-
 [clearCpc](#clearcpc)|void|Removes the keyword's CPC bid.
 [getCpc](#getcpc)|double|Returns the keyword's CPC bid.
-[setCpc(double cpc)](#setcpc~double-cpc~)|void|Sets the maximum CPC bid for the keyword.
+[setCpc(double cpc)](#setcpc-double-cpc-)|void|Sets the maximum CPC bid for the keyword.
 
 ## <a name="clearcpc"></a>clearCpc
 Removes the keyword's CPC bid. 
@@ -36,7 +36,7 @@ Returns the keyword's CPC bid.
 |-|-
 double|The keyword's CPC bid. If the keyword doesn't specify a bid, this field contains the bid inherited from the ad group.
 
-## <a name="setcpc~double-cpc~"></a>setCpc(double cpc)
+## <a name="setcpc-double-cpc-"></a>setCpc(double cpc)
 Sets the CPC bid for the keyword. 
 
 Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is ManualCpc or EnhancedCpc.

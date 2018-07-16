@@ -84,9 +84,7 @@ The ID in the `id` element is user-defined and must be unique within the feed.
 
 The address in the `address` element is the hotel's street address. The address must be a street address and not a post office box. You can specify the hotel's address using the `component` element seen in the above example or by using a free-form string seen in the below example. The preference is to use `component` elements.
 
-```
-    <address>1234 Porter Road, Goldendale, WA, 98234</address>
-```
+`    <address>1234 Porter Road, Goldendale, WA, 98234</address>`
 
 The `latitude` and `longitude` element specify the hotel's geographical coordinates. Use a geocoding API such as [Location API](https://msdn.microsoft.com/library/ff701715.aspx) to generate the coordinates from a street address.
 
@@ -127,7 +125,7 @@ If you remove a hotel and add it back in a later feed with the same property val
   
 - If your data includes special characters such as apostrophies or quotes, escape them or use CDATA sections. If you escape them, you may use entity codes or character codes. For example, you can escape Paul's as Paul\&apos;s or Paul\&#39;s.
   
-- Do not include elements that do not contain data. For example, if you do not provide the geographical coordinates for a hotel, do not include empty \<latitude/\> and \<longitude/\> elements.
+- Do not include elements that do not contain data. For example, if you do not provide the geographical coordinates for a hotel, do not include empty \<latitude\> and \<longitude\> elements.
     
 - Do not use HTML in your XML elements.
   

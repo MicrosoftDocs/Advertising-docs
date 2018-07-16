@@ -29,10 +29,10 @@ var negativeKeywordListSelector = BingAdsApp.negativeKeywordLists()
 |Method Name|Return Type|Description|
 |-|-|-
 [get](#get)|[NegativeKeywordListIterator](./NegativeKeywordListIterator.md)|Returns an iterator that you use to iterate through the list of negative keyword lists.
-[orderBy(string orderBy)](#orderby~string-orderby~)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector with the specified ordering applied.
-[withCondition(string condition)](#withcondition~string-condition~)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector that limits the negative keyword lists to those that match the filter criteria.
-[withIds(string[] ids)](#withids~string-ids~)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector that returns only negative keyword lists with the specified IDs.
-[withLimit(int limit)](#withlimit~int-limit~)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector with the top *n* negative keyword lists that match the selection criteria.
+[orderBy(string orderBy)](#orderby-string-orderby-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector with the specified ordering applied.
+[withCondition(string condition)](#withcondition-string-condition-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector that limits the negative keyword lists to those that match the filter criteria.
+[withIds(string[] ids)](#withids-string-ids-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector that returns only negative keyword lists with the specified IDs.
+[withLimit(int limit)](#withlimit-int-limit-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector with the top *n* negative keyword lists that match the selection criteria.
 
 ## <a name="get"></a>get
 Returns an [iterator](../concepts/iterators.md) that you use to iterate through the list of negative keyword lists.
@@ -42,7 +42,7 @@ Returns an [iterator](../concepts/iterators.md) that you use to iterate through 
 |-|-
 [NegativeKeywordListIterator](./NegativeKeywordListIterator.md)|An iterator that you use to iterate through the negative keywords lists that were selected based on the selector's selection criteria.
 
-## <a name="orderby~string-orderby~"></a>orderBy(string orderBy)
+## <a name="orderby-string-orderby-"></a>orderBy(string orderBy)
 Returns a selector with the specified ordering applied. 
 
 Specify the `orderBy` parameter in the form, "columnName orderDirection" where:
@@ -66,7 +66,7 @@ orderBy|string|The ordering to apply.
 |-|-
 [NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Selector with ordering applied.
 
-## <a name="withcondition~string-condition~"></a>withCondition(string condition)
+## <a name="withcondition-string-condition-"></a>withCondition(string condition)
 Returns a selector that limits the negative keyword lists to those that match the filter criteria. 
 
 Specify the condition parameter in the form, "columnName operator value" where: 
@@ -99,7 +99,7 @@ condition|string|The condition to add to the selector.
 |-|-
 [NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Selector with the condition applied.
 
-## <a name="withids~string-ids~"></a>withIds(string[] ids)
+## <a name="withids-string-ids-"></a>withIds(string[] ids)
 Returns a selector that contains only negative keyword lists with the specified IDs. 
 
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only negative keywords list 33333.
@@ -123,7 +123,7 @@ ids|string[]|An array of negative keyword lists IDs. The maximum number of IDs t
 |-|-
 [NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Selector restricted to the given IDs.
 
-## <a name="withlimit~int-limit~"></a>withLimit(int limit)
+## <a name="withlimit-int-limit-"></a>withLimit(int limit)
 Returns a selector with the top *n* negative keyword lists that match the selection criteria.
 
 ### Arguments

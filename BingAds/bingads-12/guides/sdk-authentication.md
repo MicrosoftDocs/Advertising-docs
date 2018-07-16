@@ -164,47 +164,24 @@ For repeat or long term authentication, you should follow the authorization code
     ```csharp
     if (Request["code"] != null)
     {
-        // If you set the client state in step #1 above, verify that the authorization
-        // server returns the same value before proceeding.
-        if (oAuthWebAuthCodeGrant.State != "ClientStateGoesHere")
-            throw new HttpRequestException("The OAuth response state does not match the client request state.");
-       
         await oAuthWebAuthCodeGrant.RequestAccessAndRefreshTokensAsync(Request.Url);
     }
     ```
     ```java
     if (request.getParameter("code") != null)
     {
-        // If you set the client state in step #1 above, verify that the authorization
-        // server returns the same value before proceeding.
-        if (oAuthWebAuthCodeGrant.getState() != ClientState)
-            throw new Exception("The OAuth response state does not match the client request state.");
-                           
         oAuthWebAuthCodeGrant.requestAccessAndRefreshTokens(new URL(request.getRequestURL() + "?" + request.getQueryString()));
     }
     ```
     ```php
     if($_GET['code'] != null)
     {   
-        // Verify whether the 'state' value is the same random value we created
-        // when the authorization request was initiated.
-        if ($_GET['state'] != $_SESSION['state'])
-        {
-            throw new Exception(sprintf(
-                "The OAuth response state (%s) does not match the client request state (%s)", 
-                $_GET['state'], 
-                $_SESSION['state']));
-        }   
-        
         $_SESSION['AuthorizationData']->Authentication->RequestOAuthTokensByResponseUri($_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
                 
         header('Location: '. '/CallBingAdsServices.php');
     }
     ```
     ```python
-    if oauth_web_auth_code_grant.state != "ClientStateGoesHere":
-       raise Exception("The OAuth response state does not match the client request state.")
-
     oauth_web_auth_code_grant.request_oauth_tokens_by_response_uri(RESPONSE_URI)
     oauth_tokens = oauth_web_auth_code_grant.oauth_tokens
     access_token = oauth_tokens.access_token

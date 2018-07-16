@@ -47,18 +47,18 @@ For image-based or feed-based ads in the Microsoft Audience Network, you'll need
 For image-based Audience Ads in the Microsoft Audience Network you'll create an Audience campaign with responsive ads. Note that Microsoft Audience Ads refers to the ad placement, while "responsive ad" refers to the data type that is used via the Bing Ads API for specific scenarios.
 
 1. Create the [Campaign](../campaign-management-service/campaign.md)
-    - The CampaignType must be set to Audience.
-    - The Languages list must include All.
+   - The CampaignType must be set to Audience.
+   - The Languages list must include All.
 2. Create the [AdGroup](../campaign-management-service/adgroup.md)
-    - The Language and Network are not applicable for ad groups in Audience campaigns and cannot be set.
-    - Include a [TargetSetting](../campaign-management-service/targetsetting.md) with one [TargetSettingDetail](../campaign-management-service/targetsettingdetail.md) for each [CriterionTypeGroup](../campaign-management-service/criteriontypegroup.md) that you will use. Your target criteria might change over time, so you can always go back to add or update the ad group setting later.
+   - The Language and Network are not applicable for ad groups in Audience campaigns and cannot be set.
+   - Include a [TargetSetting](../campaign-management-service/targetsetting.md) with one [TargetSettingDetail](../campaign-management-service/targetsettingdetail.md) for each [CriterionTypeGroup](../campaign-management-service/criteriontypegroup.md) that you will use. Your target criteria might change over time, so you can always go back to add or update the ad group setting later.
 3. Add images via [AddMedia](../campaign-management-service/addmedia.md) that will be used later with your ad. Bing Ads supports the same aspect ratios and image specifications as the Google Display Network's responsive display ads and Facebook Audience Network's image ads. Use the AddMedia operation to add images with the required dimensions and aspect ratios. For more information, see [Image Data Object Remarks](../campaign-management-service/image.md#remarks).
-    - One landscape (wide) image with aspect ratio 1.91:1 and one square image with aspect ratio 1:1 are required. 
-    - One landscape (wide) logo with aspect ratio 4:1 and one square logo with aspect ratio 1:1 are optional. 
+   - One landscape (wide) image with aspect ratio 1.91:1 and one square image with aspect ratio 1:1 are required. 
+   - One landscape (wide) logo with aspect ratio 4:1 and one square logo with aspect ratio 1:1 are optional. 
 4. Create the [ResponsiveAd](../campaign-management-service/responsivead.md)
-    - Set the LandscapeImageMediaId and SquareImageMediaId  using the identifiers of the required media that you added in the previous step.
-    - Optionally set the LandscapeLogoMediaId and SquareLogoMediaId using the identifiers of the optional media that you added in the previous step. 
-    - Set the required BusinessName, FinalUrls, Headline, LongHeadline and Text elements.
+   - Set the LandscapeImageMediaId and SquareImageMediaId  using the identifiers of the required media that you added in the previous step.
+   - Optionally set the LandscapeLogoMediaId and SquareLogoMediaId using the identifiers of the optional media that you added in the previous step. 
+   - Set the required BusinessName, FinalUrls, Headline, LongHeadline and Text elements.
 5. Add age, company name, gender, industry, job function, location, or radius criteria for the ad group e.g., via [AddAdGroupCriterions](../campaign-management-service/addadgroupcriterions.md). 
 6. Retrieve the [AdGroup](../campaign-management-service/adgroup.md) e.g., via [GetAdGroupsByIds](../campaign-management-service/getadgroupsbyids.md) and make sure the PrivacyStatus is Active. If your targeting is too narrow then you'll need to include more targeting dimensions e.g., a broader set of industries or locations. 
 
@@ -72,12 +72,12 @@ For feed-based Audience Ads in the Microsoft Audience Network you'll create an A
 2. Create a [product catalog](https://help.bingads.microsoft.com/#apex/3/en/51105/1-500), and then submit the catalog feed via [FTP](https://help.bingads.microsoft.com/#apex/3/en/51086/1-500) or the [Bing Ads Content API](/bingads/shopping-content/index).
 3. Get your Bing Merchant Center store unique system identifier. Call [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) and get the *StoreId* from of one of the returned [BMCStore](../campaign-management-service/bmcstore.md) objects, or in the Bing Ads web application, click **Tools** &gt; **Bing Merchant Center** to access your store details.
 4. Create the Campaign
-    - The CampaignType must be set to Audience.
-    - The Languages list must include All.
-    - Include a [ShoppingSetting](../campaign-management-service/shoppingsetting.md) and set its *StoreId* element.
+   - The CampaignType must be set to Audience.
+   - The Languages list must include All.
+   - Include a [ShoppingSetting](../campaign-management-service/shoppingsetting.md) and set its *StoreId* element.
 5. Create the [AdGroup](../campaign-management-service/adgroup.md)
-    - The Language and Network are not applicable for ad groups in Audience campaigns and cannot be set.
-    - Include a TargetSetting with one TargetSettingDetail for each CriterionTypeGroup that you will use. Your target criteria might change over time, so you can always go back to add or update the ad group setting later. 
+   - The Language and Network are not applicable for ad groups in Audience campaigns and cannot be set.
+   - Include a TargetSetting with one TargetSettingDetail for each CriterionTypeGroup that you will use. Your target criteria might change over time, so you can always go back to add or update the ad group setting later. 
 6. Optionally, you can create a [ProductScope](../campaign-management-service/productscope.md) criterion via [AddCampaignCriterions](../campaign-management-service/addcampaigncriterions.md) that will be associated with your Bing Shopping campaign. Use the product scope criterion to include a subset of your product catalog, for example a specific brand or product type. A campaign can only be associated with one [ProductScope](../campaign-management-service/productscope.md), which contains a list of up to 7 [ProductCondition](../campaign-management-service/productcondition.md). For supported product conditions, see [Product Conditions for Feed-Based Audience Ads](#productconditions) below.
 7. Add age, audience, company name, gender, industry, job function, location, or radius criteria for the ad group e.g., via [AddAdGroupCriterions](../campaign-management-service/addadgroupcriterions.md). 
 8. Retrieve the [AdGroup](../campaign-management-service/adgroup.md) e.g., via [GetAdGroupsByIds](../campaign-management-service/getadgroupsbyids.md) and make sure the PrivacyStatus is Active. If your targeting is too narrow then you'll need to include more targeting dimensions e.g., a broader set of industries or locations. 
@@ -107,11 +107,11 @@ The [Bulk Service](../bulk-service/bulk-service-reference.md) service create, up
 
 These are the Bing Ads entities with properties for managing Audience ads that can be accessed using the [Bulk Service](../bulk-service/bulk-service-reference.md). Use the *Bid Adjustment* column of the following records to get and set the Audience Ads bid adjustment.
 
--   [Campaign](../bulk-service/campaign.md)  
--   [Ad Group](../bulk-service/ad-group.md)  
--   [Image Ad Extension](../bulk-service/image-ad-extension.md)  
--   [Campaign Image Ad Extension](../bulk-service/campaign-image-ad-extension.md)  
--   [Ad Group Image Ad Extension](../bulk-service/ad-group-image-ad-extension.md)  
+- [Campaign](../bulk-service/campaign.md)  
+- [Ad Group](../bulk-service/ad-group.md)  
+- [Image Ad Extension](../bulk-service/image-ad-extension.md)  
+- [Campaign Image Ad Extension](../bulk-service/campaign-image-ad-extension.md)  
+- [Ad Group Image Ad Extension](../bulk-service/ad-group-image-ad-extension.md)  
 
 For example you can follow these steps to set up an image ad extension for audience ads.
 
@@ -119,8 +119,8 @@ For example you can follow these steps to set up an image ad extension for audie
 > You can use the [Bulk Service](../bulk-service/bulk-service-reference.md) for most steps, but you will still need to use the [Campaign Management Service](#campaignservice) to add media to your account's media library.
 
 1. Add one to six [Image](../campaign-management-service/image.md) items to your account's media library with the [AddMedia](../campaign-management-service/addmedia.md) operation. 
-    - The images must be one of the supported [Media](../campaign-management-service/media.md) types (aspect ratios) for an [Image Ad Extension](../bulk-service/image-ad-extension.md).
-    - While the minimum required for an image ad extension is one image, in order to qualify for all audience ad placements you must provide four images, where each [Image](../campaign-management-service/image.md) corresponds to one of the four supported [Media](../campaign-management-service/media.md) types (aspect ratios). The supported aspect ratios for audience ads are 16:9, 1.5:1, 4:3, and 1.2:1.
+   - The images must be one of the supported [Media](../campaign-management-service/media.md) types (aspect ratios) for an [Image Ad Extension](../bulk-service/image-ad-extension.md).
+   - While the minimum required for an image ad extension is one image, in order to qualify for all audience ad placements you must provide four images, where each [Image](../campaign-management-service/image.md) corresponds to one of the four supported [Media](../campaign-management-service/media.md) types (aspect ratios). The supported aspect ratios for audience ads are 16:9, 1.5:1, 4:3, and 1.2:1.
 2. Upload an [Image Ad Extension](../bulk-service/image-ad-extension.md) record to your account's ad extension library. You will set the *Media Ids* field of the [Image Ad Extension](../bulk-service/image-ad-extension.md) record with the media identifiers returned from [AddMedia](../campaign-management-service/addmedia.md) in the previous step. This will link the images from your media library to a specific image ad extension.
 3. Associate your [Image Ad Extension](../bulk-service/image-ad-extension.md) record to one or more [Campaign](../bulk-service/campaign.md) or [Ad Group](../bulk-service/ad-group.md) records by uploading the corresponding [Campaign Image Ad Extension](../bulk-service/campaign-image-ad-extension.md) or [Ad Group Image Ad Extension](../bulk-service/ad-group-image-ad-extension.md) records.
 4. Optionally use the *Bid Adjustment* column of the [Campaign](../bulk-service/campaign.md) and [Ad Group](../bulk-service/ad-group.md) records to get and set the audience ads bid adjustment.
@@ -129,8 +129,8 @@ For example you can follow these steps to set up an image ad extension for audie
 Bing Audience ads can be accessed using the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
 
 1. Add one to six [Image](../campaign-management-service/image.md) items to your account's media library with the [AddMedia](../campaign-management-service/addmedia.md) operation. 
-    - The images must be one of the supported [Media](../campaign-management-service/media.md) types (aspect ratios) for an [ImageAdExtension](../campaign-management-service/imageadextension.md).
-    - While the minimum required for an image ad extension is one image, in order to qualify for all audience ad placements you must provide four images, where each [Image](../campaign-management-service/image.md) corresponds to one of the four supported [Media](../campaign-management-service/media.md) types (aspect ratios). The supported aspect ratios for audience ads are 16:9, 1.5:1, 4:3, and 1.2:1.
+   - The images must be one of the supported [Media](../campaign-management-service/media.md) types (aspect ratios) for an [ImageAdExtension](../campaign-management-service/imageadextension.md).
+   - While the minimum required for an image ad extension is one image, in order to qualify for all audience ad placements you must provide four images, where each [Image](../campaign-management-service/image.md) corresponds to one of the four supported [Media](../campaign-management-service/media.md) types (aspect ratios). The supported aspect ratios for audience ads are 16:9, 1.5:1, 4:3, and 1.2:1.
 2. Add an [ImageAdExtension](../campaign-management-service/imageadextension.md) to your account's ad extension library with the [AddAdExtensions](../campaign-management-service/addadextensions.md) operation. You will set the *ImageMediaIds* element of the [ImageAdExtension](../campaign-management-service/imageadextension.md) with the media identifiers returned from [AddMedia](../campaign-management-service/addmedia.md) in the previous step. This will link the images from your media library to a specific image ad extension. 
 3. Associate your [ImageAdExtension](../campaign-management-service/imageadextension.md) to one or more [Campaign](../campaign-management-service/campaign.md) or [AdGroup](../campaign-management-service/adgroup.md) objects with the [SetAdExtensionsAssociations](../campaign-management-service/setadextensionsassociations.md) operation.
 4. Optionally use the *AudienceAdsBidAdjustment* property of the [Campaign](../campaign-management-service/campaign.md) and [AdGroup](../campaign-management-service/adgroup.md) to get and set the audience ads bid adjustment.

@@ -29,11 +29,11 @@ Contains the methods used to manage the [ad group](/bingads/guides/entity-hierar
 [isRemoved](#isremoved)|Boolean|Returns a Boolean value that indicates whether this ad group is removed.
 [newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Returns a builder that you use to add keywords to this ad group.
 [pause](#pause)|void|Pauses this ad group.
-[setEndDate(string endDate)](#setenddate~string-enddate~)|void|Sets the date when ads in the ad group stop serving.
-[setEndDate(Object endDate)](#setenddate~object-enddate~)|void|Sets the date when ads in the ad group stop serving.
+[setEndDate(string endDate)](#setenddate-string-enddate-)|void|Sets the date when ads in the ad group stop serving.
+[setEndDate(Object endDate)](#setenddate-object-enddate-)|void|Sets the date when ads in the ad group stop serving.
 [setName(String name)](#setname-string-name)|void|Sets the ad group's name.
-[setStartDate(string startDate)](#setstartdate~string-startdate~)|void|Sets the date when ads in the ad group begin serving.
-[setStartDate(Object startDate)](#setstartdate~object-startdate~)|void|Sets the date when ads in the ad group begin serving.
+[setStartDate(string startDate)](#setstartdate-string-startdate-)|void|Sets the date when ads in the ad group begin serving.
+[setStartDate(Object startDate)](#setstartdate-object-startdate-)|void|Sets the date when ads in the ad group begin serving.
 [urls](#urls)|[AdGroupUrls](./AdGroupUrls.md)|Returns this ad group's final URLs, tracking template, and custom parameters.
 
 <!--
@@ -161,7 +161,7 @@ void|Returns nothing.
 
 
 
-## <a name="setenddate~string-enddate~"></a>setEndDate(string endDate)
+## <a name="setenddate-string-enddate-"></a>setEndDate(string endDate)
 Sets the date when you want ads in the ad group to stop serving. Set an end date only if you want ads in the group to stop serving on a specific date.
 
 ### Arguments
@@ -174,7 +174,7 @@ endDate|string|The date when you want ads in the ad group to stop serving. Speci
 |-|-
 void|Returns nothing.
 
-## <a name="setenddate~object-enddate~"></a>setEndDate(Object endDate)
+## <a name="setenddate-object-enddate-"></a>setEndDate(Object endDate)
 Sets the date when you want ads in the ad group to stop serving. Set an end date only if you want ads in the group to stop serving on a specific date.
 
 ### Arguments
@@ -205,7 +205,7 @@ void|Returns nothing.
 
 
 
-## <a name="setstartdate~string-startdate~"></a>setStartDate(string startDate)
+## <a name="setstartdate-string-startdate-"></a>setStartDate(string startDate)
 Sets the date when you want ads in the ad group to start serving. Set a start date only if you want ads in the group to start serving on a specific date; otherwise, they start serving immediately.
 
 ### Arguments
@@ -218,7 +218,7 @@ endDate|string|The date when you want ads in the ad group to start serving. Spec
 |-|-
 void|Returns nothing.
 
-## <a name="setstartdate~object-startdate~"></a>setStartDate(Object startDate)
+## <a name="setstartdate-object-startdate-"></a>setStartDate(Object startDate)
 Sets the date when you want ads in the ad group to start serving. Set a start date only if you want ads in the group to start serving on a specific date; otherwise, they start serving immediately.
 
 ### Arguments

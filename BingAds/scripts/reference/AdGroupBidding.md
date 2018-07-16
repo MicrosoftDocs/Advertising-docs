@@ -18,7 +18,7 @@ Contains the methods used to manage the ad group's bid values.
 |-|-|-
 [clearCpc](#clearcpc)|void|Clears the ad group's CPC bid.
 [getCpc](#getcpc)|double|Returns the ad group's CPC bid.
-[setCpc(double cpc)](#setcpc~double-cpc~)|void|Sets the maximum CPC bid for the ad group.
+[setCpc(double cpc)](#setcpc-double-cpc-)|void|Sets the maximum CPC bid for the ad group.
 
 ## <a name="clearcpc"></a>clearCpc
 Clears the ad group's CPC bid. 
@@ -36,7 +36,7 @@ Returns the ad group's CPC bid.
 |-|-
 double|The ad group's maximum CPC bid.
 
-## <a name="setcpc~double-cpc~"></a>setCpc(double cpc)
+## <a name="setcpc-double-cpc-"></a>setCpc(double cpc)
 Sets the CPC bid for the ad group. 
 
 Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is ManualCpc or EnhancedCpc. This bid is used if a lower-level entity such as keyword does not override it.

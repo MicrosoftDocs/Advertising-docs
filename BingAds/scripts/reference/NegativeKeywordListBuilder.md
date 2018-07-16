@@ -28,7 +28,7 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [build](#build)|[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|Returns an operation object that you use to add the negative keyword list to the account.
-[withName(string name)](#withname~string-name~)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Sets the name of the negative keyword list.
+[withName(string name)](#withname-string-name-)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Sets the name of the negative keyword list.
 
 ## <a name="build"></a>build
 Returns an operation object that you use to add the negative keyword list to the account.
@@ -38,7 +38,7 @@ Returns an operation object that you use to add the negative keyword list to the
 |-|-
 [NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|An operation object that you use to add the negative keyword list to the account.
 
-## <a name="withname~string-name~"></a>withName(string name)
+## <a name="withname-string-name-"></a>withName(string name)
 Sets the name of the negative keyword list.
 
 ### Arguments

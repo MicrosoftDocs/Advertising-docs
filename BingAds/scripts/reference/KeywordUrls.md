@@ -22,10 +22,10 @@ Contains the methods for managing the keyword's URLs, tracking template, and cus
 [getFinalUrl](#getfinalurl)|string|Returns the keyword's final URL.
 [getMobileFinalUrl](#getmobilefinalurl)|string|Returns the keyword's final URL for mobile devices.
 [getTrackingTemplate](#gettrackingtemplate)|string|Returns the keyword's tracking template.
-[setCustomParameters(Object customParameters)](#setcustomparameters~object-customparameters~)|void|Sets the keyword's custom parameters.
-[setFinalUrl(String finalUrl)](#setfinalurl~string-finalurl~)|void|Sets the keyword's final URL.
-[setMobileFinalUrl(String finalUrl)](#setmobilefinalurl~string-finalurl~)|void|Sets the keyword's final URL for mobile.
-[setTrackingTemplate(String trackingTemplate)](#settrackingtemplate~string-trackingtemplate~)|void|Sets the keyword's tracking template.
+[setCustomParameters(Object customParameters)](#setcustomparameters-object-customparameters-)|void|Sets the keyword's custom parameters.
+[setFinalUrl(String finalUrl)](#setfinalurl-string-finalurl-)|void|Sets the keyword's final URL.
+[setMobileFinalUrl(String finalUrl)](#setmobilefinalurl-string-finalurl-)|void|Sets the keyword's final URL for mobile.
+[setTrackingTemplate(String trackingTemplate)](#settrackingtemplate-string-trackingtemplate-)|void|Sets the keyword's tracking template.
 
 ## <a name="clearfinalurl"></a>clearFinalUrl
 Removes the keyword's final URL.
@@ -97,7 +97,7 @@ Returns the keyword's tracking template.
 |-|-
 string|The keyword's tracking template.
 
-## <a name="setcustomparameters~object-customparameters~"></a>setCustomParameters(Object customParameters)
+## <a name="setcustomparameters-object-customparameters-"></a>setCustomParameters(Object customParameters)
 Sets the keyword's custom parameters. Use this method if you include custom substitution strings in your final URL or tracking template.
 
 To use a customer parameter name in the final URL or tracking template, you must enclose the name in curly braces and prepend an underscore (_) to the name. For example, if the parameter name is foo, use {_foo} in the tracking template or final URL. Do not add a leading underscore to the parameter name when you define the object. 
@@ -120,7 +120,7 @@ customParameters|Object|A map of custom parameters to use in the keyword.<br /><
 void|Returns nothing.
 
 
-## <a name="setfinalurl~string-finalurl~"></a>setFinalUrl(String finalUrl)
+## <a name="setfinalurl-string-finalurl-"></a>setFinalUrl(String finalUrl)
 Sets the keyword's final URL. 
 
 [!INCLUDE[final-url](../includes/final-url.md)]
@@ -138,7 +138,7 @@ finalUrl|string|The keyword's final URL.
 void|Returns nothing.
 
 
-## <a name="setmobilefinalurl~string-finalurl~"></a>setMobileFinalUrl(String finalUrl)
+## <a name="setmobilefinalurl-string-finalurl-"></a>setMobileFinalUrl(String finalUrl)
 Sets the keyword's final URL for mobile devices. 
 
 The final URL must be the URL of the page that the user ends up on after clicking your ad (and after all redirects have taken place).
@@ -160,7 +160,7 @@ finalUrl|string|The keyword's final URL mobile devices.
 void|Returns nothing.
 
 
-## <a name="settrackingtemplate~string-trackingtemplate~"></a>setTrackingTemplate(String trackingTemplate)
+## <a name="settrackingtemplate-string-trackingtemplate-"></a>setTrackingTemplate(String trackingTemplate)
 Sets the keyword's tracking template. 
 
 [!INCLUDE[tracking-templates](../includes/tracking-templates.md)]

@@ -16,14 +16,14 @@ Contains the methods for adding keywords to a negative keywords list. For inform
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[addNegativeKeyword(string keywordText)](#addnegativekeyword~string-keywordtext~)|void|Adds a keyword to the negative keywords list.
-[addNegativeKeywords(string[] keywordTexts)](#addnegativekeywords~string-keywordtexts~)|void|Adds a list of keywords to the negative keywords list.
+[addNegativeKeyword(string keywordText)](#addnegativekeyword-string-keywordtext-)|void|Adds a keyword to the negative keywords list.
+[addNegativeKeywords(string[] keywordTexts)](#addnegativekeywords-string-keywordtexts-)|void|Adds a list of keywords to the negative keywords list.
 [getEntityType](#getentitytype)|String|Returns this entity's type.
 [getId](#getid)|string|Returns the ID that uniquely identifies this negative keyword list.
 [getName](#getname)|String|Returns the name of this negative keyword list.
-[setName(string name)](#setname~string-name~)|void|Sets the name of this negative keyword list.
+[setName(string name)](#setname-string-name-)|void|Sets the name of this negative keyword list.
 
-## <a name="addnegativekeyword~string-keywordtext~"></a>addNegativeKeyword(string keywordText)
+## <a name="addnegativekeyword-string-keywordtext-"></a>addNegativeKeyword(string keywordText)
 Adds a keyword to the negative keyword list. For information about negative keyword limits, see [Negative keywords](/bingads/guides/entity-hierarchy-limits#negativekeywords). 
 
 To specify the match type for negative keywords:
@@ -48,7 +48,7 @@ keywordText|String|The negative keyword's text. Negative keywords may containa m
 |-|-
 void|Returns nothing.
 
-## <a name="addnegativekeywords~string-keywordtexts~"></a>addNegativeKeywords(string[] keywordTexts)
+## <a name="addnegativekeywords-string-keywordtexts-"></a>addNegativeKeywords(string[] keywordTexts)
 Adds a list of keywords to the negative keyword list. For information about negative keyword limits, see [Negative keywords](/bingads/guides/entity-hierarchy-limits#negativekeywords).
 
 To specify the match type for negative keywords:
@@ -98,7 +98,7 @@ Returns the name of this negative keyword list.
 |-|-
 string|The name of this negative keyword list.
 
-## <a name="setname~string-name~"></a>setName(string name)
+## <a name="setname-string-name-"></a>setName(string name)
 Sets the name of this negative keyword list.
 
 ### Arguments

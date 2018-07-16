@@ -29,7 +29,9 @@ For information about creating a Hint response message, see [Creating a Hint Mes
 
  
 <a name="hint" /> 
+
 ## Hint
+
 Defines the root element of a Hint response message.
 
 |Element|Description|Children
@@ -38,7 +40,9 @@ Defines the root element of a Hint response message.
 
 
 <a name="hinttype" /> 
+
 ## Hint Type
+
 Defines a Hint response message. 
 
 |Element|Description|Children
@@ -48,7 +52,9 @@ Defines a Hint response message.
 
 
 <a name="itemtype" /> 
+
 ## Item Type
+
 Defines a hint. 
 
 |Element|Description|Children
@@ -60,7 +66,9 @@ Defines a hint.
 
 
 <a name="itemmodechoicegroup" /> 
+
 ## itemmodechoicegroup
+
 Defines the options for specifying the dates that Bing should request data for. 
 
 |Element|Description|Children
@@ -72,7 +80,9 @@ Defines the options for specifying the dates that Bing should request data for.
 
 
 <a name="checkindategroup" /> 
+
 ## checkindategroup
+
 Defines the first and last date of a date range. 
 
 |Element|Description|Children
@@ -83,7 +93,9 @@ Defines the first and last date of a date range.
 
 
 <a name="staysincludingrangetype" /> 
+
 ## staysincludingrangetype
+
 Defines the first and last date of an affected date range. 
 
 |Element|Description|Children
@@ -94,7 +106,9 @@ Defines the first and last date of an affected date range.
 
 
 <a name="staytype" /> 
+
 ## staytype
+
 Defines a stay. 
 
 |Element|Description|Children

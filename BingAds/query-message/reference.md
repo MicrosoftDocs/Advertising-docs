@@ -26,7 +26,9 @@ For information about processing Query messages, see [Processing a Query Message
 
  
 <a name="query" /> 
+
 ## Query
+
 Defines the root element of a Query message.
 
 |Element|Description|Children
@@ -36,7 +38,9 @@ Defines the root element of a Query message.
 
 
 <a name="querytype" /> 
+
 ## Query Type
+
 Defines a Query message. 
 
 |Element|Description|Children
@@ -49,7 +53,9 @@ Defines a Query message.
 
 
 <a name="combinedquerygroup" /> 
+
 ## combinedQueryGroup
+
 Defines the list of properties that Bing wants data for, and the options for the way it specifies the dates in request. 
 
 |Element|Description|Children
@@ -61,7 +67,9 @@ Defines the list of properties that Bing wants data for, and the options for the
 
 
 <a name="pointquerygroup" /> 
+
 ## pointQueryGroup
+
 Defines a check-in date query. 
 
 |Element|Description|Children
@@ -72,7 +80,9 @@ Defines a check-in date query.
 
 
 <a name="rangequerygroup" /> 
+
 ## rangeQueryGroup
+
 Defines a date range query. 
 
 |Element|Description|Children
@@ -85,7 +95,9 @@ Defines a date range query.
 
 
 <a name="propertylisttype" /> 
+
 ## PropertyListType
+
 Defines a list of hotels. 
 
 |Element|Description|Children

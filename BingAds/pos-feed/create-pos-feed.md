@@ -147,9 +147,7 @@ A point of sale (POS) contains a `URL` element that identifies the site where us
 
 The following shows the syntax that you use to specify dynamic query parameters in your POS URL.
 
-```
-http://domain.com/path?param-name=(dynamic-variable-name)
-```
+`http://domain.com/path?param-name=(dynamic-variable-name)`
 
 The following are the possible dynamic variable names that you may specify in the URL.
 
@@ -195,9 +193,7 @@ The following shows an example URL that contains dynamic query parameters and en
 
 Before Bing uses the URL in the ad, it substitutes values for the dynamic variable names. For example, if the user books a room for 6 nights starting on 6/7/2017 for hotel #42, Bing renders the URL as:
 
-```
-http://www.partnerdomain.com?hotelID=42&checkinDay=07&checkinMonth=06&checkinYear=2016&nights=6
-```
+`http://www.partnerdomain.com?hotelID=42&checkinDay=07&checkinMonth=06&checkinYear=2016&nights=6`
 
 Bing gets values for the dynamic parameters from your Transaction Message and Hotel Feed, as well as user-specific settings. For example, the value of the LENGTH variable comes from the `Nights` element in the Transaction Message, and the value of the PARTNER-HOTEL-ID variable comes from the `id` element in the Hotel Feed.
 
@@ -268,7 +264,7 @@ http://partner.com?hotelID=123&checkinDay=23&checkinMonth=07&checkinYear=2017&ni
   
 - If your data includes special characters such as apostrophes or quotes, escape them or use CDATA sections. If you escape them, you may use entity codes or character codes. For example, you can escape Paul's as Paul\&apos;s or Paul\&#39;s.
   
-- Do not include elements that do not contain data. For example, if you do not provide a display name for a hotel, do not include an empty \<DisplayNames/\> element.
+- Do not include elements that do not contain data. For example, if you do not provide a display name for a hotel, do not include an empty \<DisplayNames\> element.
     
 - Do not use HTML in your XML elements.
   

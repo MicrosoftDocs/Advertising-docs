@@ -31,8 +31,8 @@ var adGroupSelector = BingAdsApp.adGroups();
 [clearTrackingTemplate](#cleartrackingtemplate)|void|Removes the tracking template from this ad group.
 [getCustomParameters](#getcustomparameters)|Object|Returns the ad group's custom parameters.
 [getTrackingTemplate](#gettrackingtemplate)|string|Returns the ad group's tracking template.
-[setCustomParameters(Object customParameters)](#setcustomparameters~object-customparameters~)|void|Sets the ad group's custom parameters.
-[setTrackingTemplate(string trackingTemplate)](#settrackingtemplate~string-trackingtemplate~)|void|Sets the ad group's tracking template.
+[setCustomParameters(Object customParameters)](#setcustomparameters-object-customparameters-)|void|Sets the ad group's custom parameters.
+[setTrackingTemplate(string trackingTemplate)](#settrackingtemplate-string-trackingtemplate-)|void|Sets the ad group's tracking template.
 
 ## <a name="cleartrackingtemplate"></a>clearTrackingTemplate
 Removes the tracking template from this ad group. For information about tracking templates, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
@@ -62,7 +62,7 @@ Returns the ad group's tracking template.
 |-|-
 string|The ad group's tracking template.
 
-## <a name="setcustomparameters~object-customparameters~"></a>setCustomParameters(Object customParameters)
+## <a name="setcustomparameters-object-customparameters-"></a>setCustomParameters(Object customParameters)
 Sets the custom parameters for this ad group. Use this method if you include custom substitution strings in your final URL or tracking template.
 
 To use a customer parameter name in the final URL or tracking template, you must enclose the name in curly braces and prepend an underscore (_) to the name. For example, if the parameter name is foo, use {_foo} in the tracking template or final URL. Do not add a leading underscore to the parameter name when you define the object. 
@@ -84,7 +84,7 @@ customParameters|Object|A map of custom parameters to use in the ad group.<br />
 |-|-
 void|Returns nothing.
 
-## <a name="settrackingtemplate~string-trackingtemplate~"></a>setTrackingTemplate(string trackingTemplate)
+## <a name="settrackingtemplate-string-trackingtemplate-"></a>setTrackingTemplate(string trackingTemplate)
 Sets the tracking template to use with this ad group. 
 
 [!INCLUDE[tracking-templates](../includes/tracking-templates.md)]

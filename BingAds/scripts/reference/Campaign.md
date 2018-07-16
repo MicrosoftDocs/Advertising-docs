@@ -16,7 +16,7 @@ Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarch
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[addNegativeKeywordList(NegativeKeywordList negativeKeywordList)](#addnegativekeywordlist~negativekeywordlist-negativekeywordlist~)|void|Adds a negative keyword list to this campaign.
+[addNegativeKeywordList(NegativeKeywordList negativeKeywordList)](#addnegativekeywordlist-negativekeywordlist-negativekeywordlist-)|void|Adds a negative keyword list to this campaign.
 [enable](#enable)|void|Enables this campaign.
 [getBiddingStrategyType](#getbiddingstrategytype)|string|Returns the campaign's bidding strategy.
 [getBudget](#getbudget)|[Budget](Budget.md)|Returns the campaign's budget.
@@ -30,10 +30,10 @@ Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarch
 [newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder.md)|Returns a builder that you use to add an ad group to this campaign.
 [pause](#pause)|void|Pauses this campaign.
 [remove](#remove)|void|Removes this campaign.
-[setName(String name)](#setname~string-name~)|void|Sets the name of this campaign.
+[setName(String name)](#setname-string-name-)|void|Sets the name of this campaign.
 [urls](#urls)|[CampaignUrls](./CampaignUrls.md)|Returns this campaign's URLs.
 
-## <a name="addnegativekeywordlist~negativekeywordlist-negativekeywordlist~"></a>addNegativeKeywordList(NegativeKeywordList negativeKeywordList)
+## <a name="addnegativekeywordlist-negativekeywordlist-negativekeywordlist-"></a>addNegativeKeywordList(NegativeKeywordList negativeKeywordList)
 Adds a negative keyword list to this campaign. 
 
 ### Arguments
@@ -150,7 +150,7 @@ Removes this campaign.
 |-|-
 void|Returns nothing.
 
-## <a name="setname~string-name~"></a>setName(string name)
+## <a name="setname-string-name-"></a>setName(string name)
 Sets the name of this campaign.
 
 ### Arguments
