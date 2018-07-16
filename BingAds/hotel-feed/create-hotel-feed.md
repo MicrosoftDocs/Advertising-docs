@@ -84,9 +84,7 @@ The ID in the `id` element is user-defined and must be unique within the feed.
 
 The address in the `address` element is the hotel's street address. The address must be a street address and not a post office box. You can specify the hotel's address using the `component` element seen in the above example or by using a free-form string seen in the below example. The preference is to use `component` elements.
 
-```
-    <address>1234 Porter Road, Goldendale, WA, 98234</address>
-```
+`    <address>1234 Porter Road, Goldendale, WA, 98234</address>`
 
 The `latitude` and `longitude` element specify the hotel's geographical coordinates. Use a geocoding API such as [Location API](https://msdn.microsoft.com/library/ff701715.aspx) to generate the coordinates from a street address.
 
