@@ -60,7 +60,7 @@ var campaigns = BingAdsApp.campaigns()
     .withCondition("Clicks > 10")
     .withCondition("Impressions > 100")
     .orderBy("Impressions DESC")
-    .forDateRange("YESTERDAY");
+    .forDateRange("YESTERDAY")
     .get();
 ```
 
