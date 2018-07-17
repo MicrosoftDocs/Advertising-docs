@@ -112,9 +112,7 @@ ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`|Conv. Ra
 Clicks|long|`withCondition("Clicks >= 21")`|Clicks
 ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`|Conv.
 Cost|double|`withCondition("Cost > 4.48")`<br /><br />The cost is in the currency of the account.|Spend
-Ctr|double|`withCondition("Ctr > 0.01")`<br /><br />The CTR is in the range 0..1, so a 5% CTR is represented as 0.05.`|CTR
-
-<!--
+Ctr|double|`withCondition("Ctr > 0.01")`<br /><br />The CTR is in the range 0..1, so a 5% CTR is represented as 0.05.|CTR
 Impressions|long|`withCondition("Impressions != 0")`|Impr.
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 <strong>Keyword</strong>|
@@ -123,13 +121,13 @@ Text|string|`withCondition("Text STARTS_WITH 'books'")`<br /><br />Include only 
 KeywordMatchType|enumeration|`withCondition("KeywordMatchType = EXACT")`<br /><br />Possible case-sensitive values are: <ul><li>BROAD</li><li>EXACT</li><li>PHRASE</li></ul>|Match type
 MaxCpc|double|`withCondition("MaxCpc > 0.40")`<br /><br />The CPC is in the currency of the current account.|Bid
 DestinationUrl|string|`withCondition("DestinationUrl STARTS_WITH 'http://www.example.com'")`|Destination URL
-FinalUrls|string|`withCondition("FinalUrls CONTAINS 'http://www.example.com'")`|scott
+FinalUrls|string|`withCondition("FinalUrls CONTAINS 'http://www.example.com'")`|
 QualityScore|int|`withCondition("QualityScore > 5")`|Qual. score
 FirstPageCpc|double|`withCondition("FirstPageCpc > 6.00")`<br /><br />This is the average amount an advertiser is charged each time their ad is clicked when it shows up on the sidebar. For example, if an advertiser paid a total of $48.35 for 300 clicks, the advertiser's average CPC is $0.16. You use this information to help decide whether to increase your keyword bid to improve the chance that your ad shows up on the sidebar.<br /><br />The CPC is in the currency of the current account.|Est. first page bid
 TopOfPageCpc|double|`withCondition("TopOfPageCpc > 8.00")`<br /><br />This is the average amount an advertiser is charged each time their ad is clicked when it shows up above the organic search results. For example, if an advertiser paid a total of $48.35 for 300 clicks, the advertiser's average CPC is $0.16. You use this information to help decide whether to increase your keyword bid to improve the chance that your ad shows up above the organic search results.<br /><br />The CPC is in the currency of the current account.|Est. mainline bid
-AdGroupName|string|`withCondition("AdGroupName = 'foo'")`|scott
-CampaignName|string|`withCondition("CampaignName = 'bar'")`|scott
--->
+AdGroupName|string|`withCondition("AdGroupName = 'foo'")`|
+CampaignName|string|`withCondition("CampaignName = 'bar'")`|
+
 
 ### Arguments
 |Name|Type|Description|
