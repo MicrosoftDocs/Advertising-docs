@@ -58,9 +58,10 @@ function main() {
 
 You should carefully review all messages logged to the change log and text log.
 
+<!--
 ## What does Internal Error mean?
 
-If you receive a runtime error and the text log lists Internal Error, the following are the reasons why you might be getting it.
+If you receive a runtime error and the text log lists InternalError, the following are the reasons why you might be getting it.
 
 |Reason|Remedy
 |-|-
@@ -69,3 +70,5 @@ If you receive a runtime error and the text log lists Internal Error, the follow
 |A column you specified in the `.withCondition()` or `.orderBy()` method is not valid.|Column names are case sensitive, so make sure that all column names are valid and use the correct casing.
 |You specified too may IDs in the `.withIds()` method.|Reduce the number of IDs to the allowed maximum (see documentation for the method).
 |The date range specified in the `.forDateRange()` method is not valid.|Make sure that the start and end dates are valid and that the end date is not earlier than the start date.
+
+-->
