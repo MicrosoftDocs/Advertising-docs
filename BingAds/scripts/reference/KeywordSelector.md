@@ -102,7 +102,7 @@ Specify the condition parameter in the form, "columnName operator value" where:
 <a name="supported-keyword-columns"></a>
 Supported columns for keyword filtering. The column names are case sensitive.
 
-|Column|Type|Example|Bing Web UI filter|
+|Column|Type|Example|Bing Web UI filter
 |-|-|-|-
 <strong>Stats</strong>|
 AverageCpc|double|`withCondition("AverageCpc < 1.45")`|Avg. CPC
@@ -111,15 +111,15 @@ AveragePosition|double|`withCondition("AveragePosition > 7.5")`|Avg. pos.
 ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`|Conv. Rate
 Clicks|long|`withCondition("Clicks >= 21")`|Clicks
 ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`|Conv.
-Cost|double|`withCondition("Cost > 4.48").`<br /><br />The cost is in the currency of the account.|Spend
-Ctr|double|`withCondition("Ctr > 0.01").`<br /><br />The CTR is in the range 0..1, so a 5% CTR is represented as 0.05.`|CTR
+Cost|double|`withCondition("Cost > 4.48")`<br /><br />The cost is in the currency of the account.|Spend
+Ctr|double|`withCondition("Ctr > 0.01")`<br /><br />The CTR is in the range 0..1, so a 5% CTR is represented as 0.05.|CTR
 Impressions|long|`withCondition("Impressions != 0")`|Impr.
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 <strong>Keyword</strong>|
 Status|enumeration|`withCondition("Status = PAUSED")`<br /><br />Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>DISABLED</li></ul>|Status
 Text|string|`withCondition("Text STARTS_WITH 'books'")`<br /><br />Include only the keyword's text. Don't include the keyword's match type in the text. For example, if you added an exact match keyword such as [books], use *books* not *[books]*.|Keyword Text
 KeywordMatchType|enumeration|`withCondition("KeywordMatchType = EXACT")`<br /><br />Possible case-sensitive values are: <ul><li>BROAD</li><li>EXACT</li><li>PHRASE</li></ul>|Match type
-MaxCpc|double|`withCondition("MaxCpc > 0.40")`<br /><br /><br />The CPC is in the currency of the current account.|Bid
+MaxCpc|double|`withCondition("MaxCpc > 0.40")`<br /><br />The CPC is in the currency of the current account.|Bid
 DestinationUrl|string|`withCondition("DestinationUrl STARTS_WITH 'http://www.example.com'")`|Destination URL
 FinalUrls|string|`withCondition("FinalUrls CONTAINS 'http://www.example.com'")`|
 QualityScore|int|`withCondition("QualityScore > 5")`|Qual. score

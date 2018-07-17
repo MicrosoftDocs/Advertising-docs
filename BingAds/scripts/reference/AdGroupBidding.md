@@ -16,17 +16,9 @@ Contains the methods used to manage the ad group's bid values.
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[clearCpc](#clearcpc)|void|Clears the ad group's CPC bid.
 [getCpc](#getcpc)|double|Returns the ad group's CPC bid.
 [setCpc(double cpc)](#setcpc-double-cpc-)|void|Sets the maximum CPC bid for the ad group.
 
-## <a name="clearcpc"></a>clearCpc
-Clears the ad group's CPC bid. 
-
-### Returns
-|Type|Description|
-|-|-
-void|Returns nothing.
 
 ## <a name="getcpc"></a>getCpc
 Returns the ad group's CPC bid. 
