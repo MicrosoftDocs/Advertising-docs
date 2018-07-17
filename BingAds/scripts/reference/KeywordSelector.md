@@ -106,6 +106,8 @@ Supported columns for keyword filtering. The column names are case sensitive.
 |-|-|-|-
 <strong>Stats</strong>|
 AverageCpc|double|`withCondition("AverageCpc < 1.45")`|Avg. CPC
+
+<!--
 AverageCpm|double|`withCondition("AverageCpm > 0.48")`|Avg. CPM
 AveragePosition|double|`withCondition("AveragePosition > 7.5")`|Avg. pos.
 ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`|Conv. Rate
@@ -127,7 +129,7 @@ FirstPageCpc|double|`withCondition("FirstPageCpc > 6.00")`<br /><br />This is th
 TopOfPageCpc|double|`withCondition("TopOfPageCpc > 8.00")`<br /><br />This is the average amount an advertiser is charged each time their ad is clicked when it shows up above the organic search results. For example, if an advertiser paid a total of $48.35 for 300 clicks, the advertiser's average CPC is $0.16. You use this information to help decide whether to increase your keyword bid to improve the chance that your ad shows up above the organic search results.<br /><br />The CPC is in the currency of the current account.|Est. mainline bid
 AdGroupName|string|`withCondition("AdGroupName = 'foo'")`|scott
 CampaignName|string|`withCondition("CampaignName = 'bar'")`|scott
-
+-->
 
 ### Arguments
 |Name|Type|Description|
