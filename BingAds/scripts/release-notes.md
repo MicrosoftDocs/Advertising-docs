@@ -13,6 +13,16 @@ ms.topic: "article"
 
 For information about changes that were included with each release, see the following sections.
 
+## July 17, 2018
+
+Added the following methods and objects to support Ads.
+
+- Added the `newAd` method to [AdGroup](../reference/AdGroup.md). This is the starting point for adding ads. The method returns an [AdBuilderSpace](../reference/AdBuilderSpace.md) object.
+  
+- Added [AdBuilderSpace](../reference/AdBuilderSpace.md) object. The object contains the `expandedTextAdBuilder` method that returns an [ExpandedTextAdBuilder](../reference/ExpandedTextAdBuilder.md) object used to build an ad.
+
+
+
 
 ## June 15, 2018
 
