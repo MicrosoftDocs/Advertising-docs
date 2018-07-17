@@ -111,11 +111,11 @@ AveragePosition|double|`withCondition("AveragePosition > 7.5")`|Avg. pos.
 ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`|Conv. Rate
 Clicks|long|`withCondition("Clicks >= 21")`|Clicks
 ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`|Conv.
+
+<!--
 Cost|double|`withCondition("Cost > 4.48")`<br /><br />The cost is in the currency of the account.|Spend
 Ctr|double|`withCondition("Ctr > 0.01")`<br /><br />The CTR is in the range 0..1, so a 5% CTR is represented as 0.05.`|CTR
 Impressions|long|`withCondition("Impressions != 0")`|Impr.
-
-<!--
 &nbsp;|&nbsp;|&nbsp;|&nbsp;
 <strong>Keyword</strong>|
 Status|enumeration|`withCondition("Status = PAUSED")`<br /><br />Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>DISABLED</li></ul>|Status
