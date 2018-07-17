@@ -121,12 +121,12 @@ Text|string|`withCondition("Text STARTS_WITH 'books'")`<br /><br />Include only 
 KeywordMatchType|enumeration|`withCondition("KeywordMatchType = EXACT")`<br /><br />Possible case-sensitive values are: <ul><li>BROAD</li><li>EXACT</li><li>PHRASE</li></ul>|Match type
 MaxCpc|double|`withCondition("MaxCpc > 0.40")`<br /><br />The CPC is in the currency of the current account.|Bid
 DestinationUrl|string|`withCondition("DestinationUrl STARTS_WITH 'http://www.example.com'")`|Destination URL
-FinalUrls|string|`withCondition("FinalUrls CONTAINS 'http://www.example.com'")`|
+FinalUrls|string|`withCondition("FinalUrls CONTAINS 'http://www.example.com'")`|scott
 QualityScore|int|`withCondition("QualityScore > 5")`|Qual. score
 FirstPageCpc|double|`withCondition("FirstPageCpc > 6.00")`<br /><br />This is the average amount an advertiser is charged each time their ad is clicked when it shows up on the sidebar. For example, if an advertiser paid a total of $48.35 for 300 clicks, the advertiser's average CPC is $0.16. You use this information to help decide whether to increase your keyword bid to improve the chance that your ad shows up on the sidebar.<br /><br />The CPC is in the currency of the current account.|Est. first page bid
 TopOfPageCpc|double|`withCondition("TopOfPageCpc > 8.00")`<br /><br />This is the average amount an advertiser is charged each time their ad is clicked when it shows up above the organic search results. For example, if an advertiser paid a total of $48.35 for 300 clicks, the advertiser's average CPC is $0.16. You use this information to help decide whether to increase your keyword bid to improve the chance that your ad shows up above the organic search results.<br /><br />The CPC is in the currency of the current account.|Est. mainline bid
-AdGroupName|string|`withCondition("AdGroupName = 'foo'")`|
-CampaignName|string|`withCondition("CampaignName = 'bar'")`|
+AdGroupName|string|`withCondition("AdGroupName = 'foo'")`|scott
+CampaignName|string|`withCondition("CampaignName = 'bar'")`|scott
 
 
 ### Arguments
