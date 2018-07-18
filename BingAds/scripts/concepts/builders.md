@@ -13,80 +13,82 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-Adding an entity is a multi-step process and a builder is one component of that process. You use builders to define the entity you want to add. The following shows the process for adding an entity. 
+You use builders to define and create the entity you want to add. Each parent object, such as [Campaign](../reference/Campaign.md), includes methods for getting builder objects that you use to add child entities. For example, to add an ad group to a campaign, you'd call the `Campaign` object's `newAdGroupBuilder` method. 
 
-1. Get a builder object and use it to specify the entity’s properties. 
-2. Call the `build()` method to create an operation object. (The builder simply creates the entity’s definition.) 
-3. Call any of the operation’s methods to create the entity. Typically, you call the `getResult()` method but calling any of the methods creates the entity.
+The builder object includes methods that you use to set the entity's property values. For example, to specify a keyword's CPC, you'd use the `withCpc` method. After setting all the entity's property values, you'd call the `build` method to create the entity. The build process is an asynchronous process where the request is queued with other build requests and processed in a batch. The batched requests will complete before the script terminates.
 
+To determine whether the build requests succeeded, you can look at the logs or you can use the operation object that the `build` method returns. For example, [AdGroupBuilder](../reference/AdGroupBuilder.md) returns [AdGroupOperation](../reference/AdGroupOperation.md). You can call any of the operation object's methods (`isSuccessful`, `getResult`, or `getErrors`) to determine whether Bing successfully created the entity. But there are performance considerations when calling these methods (see [Performance considerations](#performance-considerations)).
 
-The following example demonstrates how to create a keyword using the builder and operation objects.
+The following conceptually shows how to create a keyword using the builder and operation objects. You should probably use this flow only if you're creating a single entity (or maybe a few).
+
 
 ```javascript
-// Retrieve an ad group.
-var adGroup = BingAdsApp.adGroups().get().next();
+    // Retrieve an ad group.
+    var adGroup = BingAdsApp.adGroups().get().next();
 
-// Use the 'with' methods to specify the keyword's property values.
-var keywordBuilder = adGroup.newKeywordBuilder()
-    .withCpc(1.2)
-    .withText("shirts")
-    .withFinalUrl("https://www.contoso.com/shirts");
+    // Use the 'with' methods to specify the keyword's property values.
+    // The .build() method adds the build request to the build queue.
+    var keywordOperation = adGroup.newKeywordBuilder()
+        .withCpc(1.2)
+        .withText("shirts")
+        .withFinalUrl("https://www.contoso.com/shirts")
+        .build();
 
-// Get the operation object that you use to add the keyword.
-var keywordOperation = keywordBuilder.build();
-
-// The call to isSuccessful() performs the add operation
-// and blocks until the operation completes.
-if (keywordOperation.isSuccessful()) {
-  // Get the result.
-  var keyword = keywordOperation.getResult();
-} else {
-  // Handle the errors.
-  var errors = keywordOperation.getErrors();
-}
+    // Call isSuccessful() to determine if the build succeeded.
+    // Calling any of the operation object's method processes the
+    // build request immediately. 
+    if (keywordOperation.isSuccessful()) {
+        // You only need to call getResult if you need to access
+        // the new keyword entity.
+        var keyword = keywordOperation.getResult();
+    } else {
+        // Handle the errors.
+        for (var error of keywordOperation.getErrors()) {
+            Logger.log(`${error}\n`);
+        }
+    }
 ```
 
 ## Performance considerations
 
-If you're creating more than one entity, do not execute the operation in the same loop that you use to create the operation object. Instead, create an array to hold the operations and then iterate through that array to retrieve the results.  
+In order to improve performance, Bing processes build requests in batches. If you call a build request's operation method, it forces Bing to process the build request immediately, negating any performance gains. If you're creating more than one entity, you should not execute the operation methods in the same loop that you use to build the entity. Instead, create an array to hold the operations and then iterate through that array to retrieve the results.  
 
-### Poor Performance
+### Poor performance
+
 ``` javascript
-for (var i = 0; i < keywords.length; i++)
-  var keywordOperation = BingAdsApp.adGroups().get().next()
-    .newKeywordBuilder()
-    .withText(keywords[i])
-    .build();
+    for (var i = 0; i < keywords.length; i++)
+        var keywordOperation = BingAdsApp.adGroups().get().next()
+          .newKeywordBuilder()
+          .withText(keywords[i])
+          .build();
 
-  // Retrieving the result in the same
-  // loop that creates the operation
-  // leads to poor performance.
-  var newKeyword =
-      keywordOperation.getResult();
-  newKeyword.applyLabel("New keywords");
-}
+        // Retrieving the result in the same
+        // loop that creates the operation
+        // leads to poor performance.
+        var newKeyword = keywordOperation.getResult();
+    }
 ```
 
-### Good Performance
+### Good performance
+
 ``` javascript
-// Create an array to hold the operations.
-var operations = [];
+    // Create an array to hold the operations.
+    var operations = [];
 
-for (var i = 0; i < keywords.length; i++) {
-  var keywordOperation = BingAdsApp.adGroups().get().next()
-    .newKeywordBuilder()
-    .withText(keywords[i])
-    .build();
-  operations.push(keywordOperation);
-}
+    for (var i = 0; i < keywords.length; i++) {
+        var keywordOperation = BingAdsApp.adGroups().get().next()
+          .newKeywordBuilder()
+          .withText(keywords[i])
+          .build();
+        operations.push(keywordOperation);
+    }
 
-// Process the operations separately. This allows
-// Bing Ads Scripts to group operations into
-// batches.
-for (var i = 0; i < operations.length; i++) {
-  var newKeyword = operations[i].getResult();
-  newKeyword.applyLabel("New keywords");
-}
+    // Process the operations separately. This gives
+    // Bing time to process the build requests in
+    // batches.
+    for (var i = 0; i < operations.length; i++) {
+        var newKeyword = operations[i].getResult();
+    }
 ```
 
 

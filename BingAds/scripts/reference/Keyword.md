@@ -20,9 +20,7 @@ Contains the methods for managing a keyword. For information about keywords, see
 [bidding](#bidding)|[KeywordBidding](./KeywordBidding.md)|Returns an object that contains the methods used to manage the keyword's bid values.
 [clearDestinationUrl](#cleardestinationurl)|void|Clears the keyword's destination URL.
 [enable](#enable)|void|Enables this keyword.
-[getAdGroup](#getadgroup)|[AdGroup](AdGroup.md)|Returns the ad group this keyword belongs to.
 [getApprovalStatus](#getapprovalstatus)|string|Returns the keyword's editorial approval status.
-[getCampaign](#getcampaign)|[Campaign](./Campaign.md)|Returns the campaign this keyword belongs to.
 [getEntityType](#getentitytype)|string|Returns this entity's type.
 [getId](#getid)|string|Returns the ID that uniquely identifies this keyword.
 [getMatchType](#getmatchtype)|String|Returns the keyword's match type.
@@ -35,7 +33,10 @@ Contains the methods for managing a keyword. For information about keywords, see
 [setAdParam(int index, string insertionText)](#setadparam-int-index-string-insertiontext-)|void|Creates the substitution parameter and sets its value to the specified text.
 [urls](#urls)|[KeywordUrls](./KeywordUrls.md)|Returns the keyword's URL fields.
 
-
+<!--
+[getAdGroup](#getadgroup)|[AdGroup](AdGroup.md)|Returns the ad group this keyword belongs to.
+[getCampaign](#getcampaign)|[Campaign](./Campaign.md)|Returns the campaign this keyword belongs to.
+-->
 
 ## <a name="adparams"></a>adParams
 Returns a selector of all substitution parameters used in ads for this keyword.
@@ -72,6 +73,7 @@ Enables this keyword.
 |-|-
 void|Returns nothing.
 
+<!--
 ## <a name="getadgroup"></a>getAdGroup
 Returns the ad group this keyword belongs to.
 
@@ -79,6 +81,7 @@ Returns the ad group this keyword belongs to.
 |Type|Description|
 |-|-
 [AdGroup](AdGroup.md)|The ad group this keyword belongs to.
+-->
 
 ## <a name="getapprovalstatus"></a>getApprovalStatus
 Returns the keyword's editorial approval status.
@@ -88,6 +91,7 @@ Returns the keyword's editorial approval status.
 |-|-
 string|The keyword's editorial approval status. The status indicates whether the keyword is under review, is approved, or is not allowed. Possible values are:<br /><ul><li>APPROVED</li><li>APPROVED_LIMITED</li><li>DISAPPROVED</li><li>UNDER_REVIEW</li></ul>For information about how these status values map to Bing Ads API, see [Mapping editorial approval status values](../concepts/editorial-approval.md).
 
+<!--
 ## <a name="getcampaign"></a>getCampaign
 Returns the campaign this keyword belongs to.
 
@@ -95,6 +99,7 @@ Returns the campaign this keyword belongs to.
 |Type|Description|
 |-|-
 [Campaign](./Campaign.md)|The campaign this keyword belongs to.
+-->
 
 ## <a name="getentitytype"></a>getEntityType
 Returns this entity's type.

@@ -15,25 +15,32 @@ Contains the methods for defining and building an ad group. For information abou
 
 Example usage:
 ```javascript
-var campaignSelector = BingAdsApp.campaigns();
-var campaignIterator = campaignSelector.get();
+    var campaignSelector = BingAdsApp.campaigns();
+    var campaignIterator = campaignSelector.get();
 
-while(campaignIterator.hasNext()) {
-    var campaign = campaignIterator.next();
-    var adGroupBuilder = campaign.newAdGroupBuilder();
-    var adGroupOperation = adGroupBuilder
-        .withName("<AD_GROUP_NAME_GOES_HERE>")
-        .withStatus("PAUSED")
-        .build();
+    while(campaignIterator.hasNext()) {
+        var campaign = campaignIterator.next();
+        var adGroupBuilder = campaign.newAdGroupBuilder();
+        var adGroupOperation = adGroupBuilder
+            .withName("<AD_GROUP_NAME_GOES_HERE>")
+            .withStatus("PAUSED")
+            .build();
     
-    var adGroup = adGroupOperation.getResult();
-}
+        // See the Builders topic for performance considerations
+        // when using the operation object's methods
+        if (!adGroupOperation.isSuccessful()) {
+            for (var error of adGroupOperation.getErrors()) {
+                Logger.log(`${error}\n`);
+            }
+        }
+    }
 ```
 
 ## Methods
+
 |Method Name|Return Type|Description|
 |-|-|-
-[build](#build)|[AdGroupOperation](./AdGroupOperation.md)|Returns an operation object that you use to add the ad group to the campaign.
+[build](#build)|[AdGroupOperation](./AdGroupOperation.md)|Creates the ad group and returns an operation object that you can use to check whether the ad group was successfully added.
 [withBiddingStrategy(string biddingStrategy)](#withbiddingstrategy-string-biddingstrategy-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's bidding strategy.
 [withCpc(double cpc)](#withcpc-double-cpc-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's maximum CPC bid.
 [withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's custom parameters.
@@ -47,12 +54,12 @@ while(campaignIterator.hasNext()) {
 [withTrackingTemplate(string trackingTemplate)](#withtrackingtemplate-string-trackingtemplate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the tracking template used with this ad group.
 
 ## <a name="build"></a>build
-Returns an operation object that you use to add the ad group to the campaign.
+Creates the ad group and returns an operation object that you can use to check whether the ad group was successfully added.
 
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupOperation](./AdGroupOperation.md)|An operation object that you use to add the ad group to the campaign.
+[AdGroupOperation](./AdGroupOperation.md)|An operation object that you use to check whether the ad group was successfully added.
 
 ## <a name="withbiddingstrategy-string-biddingstrategy-"></a>withBiddingStrategy(string biddingStrategy)
 Sets the ad group's bidding strategy. 
