@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # NegativeKeywordListBuilder
 
-Contains the methods for defining and building a negative keyword list. For information about builders, see [Builders](../concepts/builders.md).
+Contains the methods for defining and creating a negative keyword list. For information about builders, see [Builders](../concepts/builders.md).
 
 Example usage:
 ```javascript
@@ -27,16 +27,16 @@ Example usage:
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[build](#build)|[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|Returns an operation object that you use to add the negative keyword list to the account.
+[build](#build)|[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|Creates the negative keyword list and returns an operation object that you can use to check whether the list was successfully added.
 [withName(string name)](#withname-string-name-)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Sets the name of the negative keyword list.
 
 ## <a name="build"></a>build
-Returns an operation object that you use to add the negative keyword list to the account.
+Creates the negative keyword list and returns an operation object that you can use to check whether the list was successfully added.
 
 ### Returns
 |Type|Description|
 |-|-
-[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|An operation object that you use to add the negative keyword list to the account.
+[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|An operation object that you use to check whether the list was successfully added.
 
 ## <a name="withname-string-name-"></a>withName(string name)
 Sets the name of the negative keyword list.

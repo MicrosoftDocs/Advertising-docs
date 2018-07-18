@@ -1,6 +1,6 @@
 ---
 title: "NegativeKeywordListOperation object"
-description: "Contains the methods for creating the negative keyword list."
+description: "Contains the methods for determining whether the negative keyword list was successfully added."
 author: "brapel"
 manager: ehansen
 
@@ -11,12 +11,11 @@ ms.topic: "article"
 
 # NegativeKeywordListOperation
 
-Contains the methods for creating the negative keyword list that you defined using the [NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md).
-
-The negative keyword list is added when you call this object's methods or after the script finishes execution, whichever comes first. To improve performance, store the operation objects in an array and only invoke its methods when all operations have been constructed. For more information about the builder and operation objects' usage, see [What are builders?](../concepts/builders.md)
+Contains the methods for determining whether the keyword was successfully added. For information about builders, operation objects, and performance considerations, see [What are builders?](../concepts/builders.md)
 
 
 ## Methods
+
 |Method Name|Return Type|Description|
 |-|-|-
 [getErrors](#geterrors)|string[]|Returns an empty array if the negative keywords list is successfully created; otherwise, a list of errors.
@@ -24,25 +23,31 @@ The negative keyword list is added when you call this object's methods or after 
 [isSuccessful](#issuccessful)|Boolean|Returns a Boolean value that indicates whether this operation succeeded.
 
 ## <a name="geterrors"></a>getErrors
+
 Returns an empty array if the negative keywords list is successfully created; otherwise, a list of error codes.
 
 ### Returns
+
 |Type|Description|
 |-|-
 string[]|An empty array if the keyword is successfully created; otherwise, a list of symbolic error codes. For example, if you specify a negative keyword that matches a search keyword, the call returns CampaignServiceNegativeKeywordMatchesKeyword. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
 
 ## <a name="getresult"></a>getResult
+
 Returns the newly created negative keywords list if the operation succeeded; otherwise, null.
 
 ### Returns
+
 |Type|Description|
 |-|-
 [NegativeKeywordList](./NegativeKeywordList.md)|The newly created negative keywords list if the operation succeeded; otherwise, null.
 
 ## <a name="issuccessful"></a>isSuccessful
+
 Returns a Boolean value that indicates whether this operation succeeded.
 
 ### Returns
+
 |Type|Description|
 |-|-
 Boolean|Returns **true** if this operation succeeded; otherwise, **false**.

@@ -1,6 +1,6 @@
 ---
 title: "AdGroupOperation object"
-description: "Contains the methods for creating the ad group."
+description: "Contains the methods for determining whether the ad group was successfully added."
 author: "brapel"
 manager: ehansen
 
@@ -11,9 +11,8 @@ ms.topic: "article"
 
 # AdGroupOperation
 
-Contains the methods for adding the ad group that you defined using the [AdGroupBuilder](./AdGroupBuilder.md) object.
+Contains the methods for determining whether the ad group was successfully added. For information about builders, operation objects, and performance considerations, see [What are builders?](../concepts/builders.md)
 
-The ad group is added to the campaign when you call this object's methods or after the script finishes execution, whichever comes first. To improve performance, store the operation objects in an array and only invoke its methods after constructing all operations. For more information about the builder and operation objects' usage, see [What are builders?](../concepts/builders.md)
 
 ## Methods
 |Method Name|Return Type|Description|

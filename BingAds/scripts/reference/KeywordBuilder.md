@@ -11,22 +11,29 @@ ms.topic: "article"
 
 # KeywordBuilder
 
-Contains the methods for defining and building a keyword. For information about builders, see [Builders](../concepts/builders.md).
+Contains the methods for defining and creating a keyword. For information about builders, see [Builders](../concepts/builders.md).
 
 Example usage:
 ```javascript
- var keywordOperation = adGroup.newKeywordBuilder()
-    .withText("text")
-    .withCpc(1.5)
-    .withFinalUrl("http://www.example.com")
-    .build();
- var keyword = keywordOperation.getResult();
+    var keywordOperation = adGroup.newKeywordBuilder()
+        .withText("text")
+        .withCpc(1.5)
+        .withFinalUrl("http://www.example.com")
+        .build();
+
+    // See the Builders topic for performance considerations
+    // when using the operation object's methods
+    if (!keywordOperation.isSuccessful()) {
+        for (var error of keywordOperation.getErrors()) {
+            Logger.log(`${error}\n`);
+        }
+    }
 ```
 
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[build](#build)|[KeywordOperation](./KeywordOperation.md)|Returns an operation object that you use to add the keyword to the ad group.
+[build](#build)|[KeywordOperation](./KeywordOperation.md)|Creates the keyword and returns an operation object that you can use to check whether the keyword was successfully added.
 [withCpc(double cpc)](#withcpc-double-cpc-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's maximum CPC bid.
 [withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's custom parameters.
 [withFinalUrl(string finalUrl)](#withfinalurl-string-finalurl-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's final URL.
@@ -36,12 +43,12 @@ Example usage:
 
 
 ## <a name="build"></a>build
-Returns an operation object that you use to add the keyword to the ad group.
+Creates the keyword and returns an operation object that you can use to check whether the keyword was successfully added.
 
 ### Returns
 |Type|Description|
 |-|-
-[KeywordOperation](./KeywordOperation.md)|An operation object that you use to add the keyword.
+[KeywordOperation](./KeywordOperation.md)|An operation object that you use to check whether the keyword was successfully added.
 
 ## <a name="withcpc-double-cpc-"></a>withCpc(double cpc)
 Sets the keyword's maximum CPC bid.

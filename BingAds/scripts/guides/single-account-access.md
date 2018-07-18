@@ -15,7 +15,7 @@ If you want to access a single user account, everything starts with the [BingAds
 
 ## How do I access the entities in my account?
 
-You use BingAdsApp to access all entities in the account. The object contains a selector method for each type of entity (for example, campaigns, ad groups, and keywords). The selector method returns all of that entity type's objects. For example, to get all the ad groups in the account, you call the `adGroups()` method.
+Use `BingAdsApp` to access all entities in the account. The object contains a selector method for each type of entity (for example, campaigns, ad groups, and keywords). The selector method returns all of that entity type's objects. For example, to get all the ad groups in the account, you call the `adGroups()` method.
 
 ```javascript
     var selector = BingAdsApp.adGroups();
@@ -120,9 +120,9 @@ You also need to specify a date range if you specify a performance data column i
 
 ## How do I add an entity?
 
-Adding entities is a multi-step process where you first use a builder object to define the entity and then use an operation object to actually add the entity. To get a builder object, you call the **new*** method on the parent object that you're adding children to. For example, to add ad groups to a campaign, you call the campaign's `newAdGroupBuilder()` method.
+To add an entity, you use a builder object. To get a builder object, call the **new*** method on the parent object that you're adding children to. For example, to add ad groups to a campaign, you call the campaign's `newAdGroupBuilder()` method.
 
-The builder object contains methods for setting all of the object's properties that you're allowed to specify. It also includes a `build()` method that you use to get the operation object. The following shows how to build an ad group and get its operation object.
+The builder object contains methods for setting all the object's properties that you're allowed to specify. It also includes a `build()` method that you use to create the entity. The following shows how to build an ad group.
 
 ```javascript
         var adGroupName = "My ad group";
@@ -140,7 +140,7 @@ The builder object contains methods for setting all of the object's properties t
             .build();
 ```
 
-Now that you have the operation object you can call any of its methods to add the object. The following shows the typical calling pattern.
+The `build` method returns an operation object, which you can use to check whether Bing successfully created the entity. The following shows the typical calling pattern. You only need to call the `getResult` method if you want to access the new entity's properties.
 
 ```javascript
     if (adGroupOperation.isSuccessful()) {
@@ -155,9 +155,11 @@ Now that you have the operation object you can call any of its methods to add th
     }
 ```
 
+For more details about builders and performance considerations when calling the operation methods, see [What are builders?](../concepts/builders.md)
+
 ## How do I update an entity?
 
-After using a builder and operation object to add an entity, you use the entity's methods to update its properties. The following example updates the ad group's CPC bid amount.
+After using a builder object to add an entity, you use the entity's methods to update its properties. The following example updates the ad group's CPC bid amount.
 
 ```javascript
     var ids = ["123456789"];
