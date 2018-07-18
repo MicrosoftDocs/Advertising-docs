@@ -92,9 +92,9 @@ function formatKeyword(keyword) {
 ## Get performance data for all keywords in an ad group
 ```javascript
 function getKeywordStats() {
-    var campaignName = 'Big & Tall Men';
-    var adGroupName = 'Tops > Shirt';
-    var keywordText = 'formal business';
+    var campaignName = 'YOUR CAMPAIGN NAME';
+    var adGroupName = 'YOUR AD GROUP NAME';
+    var keywordText = 'YOUR KEYWORD TEXT';
 
     var keywordIterator = BingAdsApp.keywords()
         .withCondition('Text = "' + keywordText + '"')
