@@ -35,7 +35,11 @@ function addAdGroup() {
             .withLanguage("English")
             .build();
 
-        var adGroup = adGroupOperation.getResult();
+        if (!adGroupOperation.isSuccessful()) {
+            for (var error of adGroupOperation.getErrors()) {
+                Logger.log(`${error}\n`);
+            }
+        }
     }
 }
 ```

@@ -35,12 +35,10 @@ function addKeyword() {
             .withFinalUrl('http://www.contoso.com') // Optional
             .build();
 
-        if (operation.isSuccessful()) {
-            var keyword = operation.getResult();
-            Logger.log(`Added keyword, ${keyword.getText()}.`);
-        }
-        else {
-            var errors = operation.getErrors();
+        if (!operation.isSuccessful()) {
+            for (var error of operation.getErrors()) {
+                Logger.log(`${error}\n`);
+            }
         }
     }
 }
