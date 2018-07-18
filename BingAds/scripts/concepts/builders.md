@@ -13,9 +13,7 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-You use builders to define and create the entity you want to add. The following shows the process for adding an entity. 
-
-Each parent object such as [Campaign](../reference/Campaign.md) includes methods for getting builder objects that you use to add child entities. For example, to add an ad group to a campaign, you'd call the `Campaign` object's `newAdGroupBuilder` method. 
+You use builders to define and create the entity you want to add. Each parent object, such as [Campaign](../reference/Campaign.md), includes methods for getting builder objects that you use to add child entities. For example, to add an ad group to a campaign, you'd call the `Campaign` object's `newAdGroupBuilder` method. 
 
 The builder object includes methods that you use to set the entity's property values. For example, to specify a keyword's CPC, you'd use the `withCpc` method. After setting all the entity's property values, you'd call the `build` method to create the entity. The build process is an asynchronous process where the request is queued with other build requests and processed in a batch. The batched requests will complete before the script terminates.
 
