@@ -19,7 +19,7 @@ The builder object includes methods that you use to set the entity's property va
 
 To determine whether the build requests succeeded, you can look at the logs or you can use the operation object that the `build` method returns. For example, [AdGroupBuilder](../reference/AdGroupBuilder.md) returns [AdGroupOperation](../reference/AdGroupOperation.md). You can call any of the operation object's methods (`isSuccessful`, `getResult`, or `getErrors`) to determine whether Bing successfully created the entity. But there are performance considerations when calling these methods (see [Performance considerations](#performance-considerations)).
 
-The following conceptually shows how to create a keyword using the builder and operation objects. You should probably only use this flow if you're creating a single entity (or maybe a few).
+The following conceptually shows how to create a keyword using the builder and operation objects. You should probably use this flow only if you're creating a single entity (or maybe a few).
 
 
 ```javascript
@@ -51,9 +51,10 @@ The following conceptually shows how to create a keyword using the builder and o
 
 ## Performance considerations
 
-In order to improve performance, Scripts processes build requests in batches. If you call a build request's operation method, it forces Bing to process the build request immediately, negating any performance gains. If you're creating more than one entity, you should not execute the operation methods in the same loop that you use to build the entity. Instead, create an array to hold the operations and then iterate through that array to retrieve the results.  
+In order to improve performance, Bing processes build requests in batches. If you call a build request's operation method, it forces Bing to process the build request immediately, negating any performance gains. If you're creating more than one entity, you should not execute the operation methods in the same loop that you use to build the entity. Instead, create an array to hold the operations and then iterate through that array to retrieve the results.  
 
-### Poor Performance
+### Poor performance
+
 ``` javascript
     for (var i = 0; i < keywords.length; i++)
         var keywordOperation = BingAdsApp.adGroups().get().next()
@@ -68,7 +69,8 @@ In order to improve performance, Scripts processes build requests in batches. If
     }
 ```
 
-### Good Performance
+### Good performance
+
 ``` javascript
     // Create an array to hold the operations.
     var operations = [];

@@ -26,15 +26,18 @@ Example usage:
             .withStatus("PAUSED")
             .build();
     
+        // See the Builders topic for performance considerations
+        // when using the operation object's methods
         if (!adGroupOperation.isSuccessful()) {
             for (var error of adGroupOperation.getErrors()) {
                 Logger.log(`${error}\n`);
             }
         }
-}
+    }
 ```
 
 ## Methods
+
 |Method Name|Return Type|Description|
 |-|-|-
 [build](#build)|[AdGroupOperation](./AdGroupOperation.md)|Creates the ad group and returns an operation object that you can use to check whether the ad group was successfully added.

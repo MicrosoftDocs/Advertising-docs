@@ -21,6 +21,8 @@ Example usage:
         .withFinalUrl("http://www.example.com")
         .build();
 
+    // See the Builders topic for performance considerations
+    // when using the operation object's methods
     if (!keywordOperation.isSuccessful()) {
         for (var error of keywordOperation.getErrors()) {
             Logger.log(`${error}\n`);
