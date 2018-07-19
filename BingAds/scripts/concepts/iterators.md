@@ -13,22 +13,22 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-Iterators enumerate items that a [selector](selectors.md) returns. Iterators are similar to arrays except you can't use an index to directly access an item. Iterators also help reduce memory pressure by loading only a single item at a time rather than the entire set of items. The following are the iterator methods.
+Iterators enumerate items that a [selector](selectors.md) returns. Iterators are similar to arrays except you can't use an index to directly access an item. Iterators also help reduce memory pressure by loading only a single item at a time rather than the entire set of items. Iterators include the following methods.
 
 - **boolean hasNext()** &mdash; Returns true if the current position is not the last item in the list
 - **Object next()** &mdash; Advances the current position and returns the object at the new position
 - **totalNumEntities()** &mdash; Returns the number of items available in the iterator.
 
-The following code shows how to use an iterator to iterate over all campaigns in your account.
+The following code shows how to use an iterator to iterate over all ad groups in your account.
 
 ```javascript
-var campaignIterator = BingAdsApp.campaigns().get();
+var iterator = BingAdsApp.adGroups().get();
 
-while (campaignIterator.hasNext()) {
-  var campaign = campaignIterator.next();
-  Logger.log(campaign.getName() +
-      "; active? " + campaign.isEnabled() +
-      "; budget=" + campaign.getBudget().getAmount());
+while (iterator.hasNext()) {
+  var adGroup = iterator.next();
+  Logger.log(adGroup.getName() +
+      "; active? " + adGroup.isEnabled() +
+      "; bid=" + campaign.bidding().getCpc());
 }
 ```
 
