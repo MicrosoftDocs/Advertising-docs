@@ -12,11 +12,9 @@ dev_langs:
 Defines an app install ad that can be downloaded and uploaded in a bulk file. Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create a text ad with app ad extensions.
 
 > [!NOTE]
+> App Install Ads are available in the United States, Australia, Canada, Germany, France, India, United Kingdom, and on iOS and Android only. For Android apps, Bing Ads only supports apps available in the United States Google Play store.
+> 
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
->
-> Before you can use app install ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
->
-> Bing Ads only supports *EN-US* apps.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *App Install Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 

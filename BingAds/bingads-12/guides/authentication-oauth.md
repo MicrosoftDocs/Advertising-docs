@@ -128,9 +128,9 @@ For repeat or long term authentication, you should follow the authorization code
     Accept: application/json
     Content-Type: application/x-www-form-urlencoded
     Host: login.live.com
-    Content-Length: 167
+    Content-Length: ContentLengthGoesHere
 
-    client_id=ClientIdGoesHere&code=CodeGoesHere&grant_type=authorization_code&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf
+    client_id=ClientIdGoesHere&scope=bingads.manage&code=CodeGoesHere&grant_type=authorization_code&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf
     ```
     > [!IMPORTANT]
     > If you are using one of our SDKs the tokens will be refreshed automatically. Be sure to securely store the received refresh token. For more information see [Authentication With the SDKs](sdk-authentication.md#oauth).
@@ -150,9 +150,9 @@ For repeat or long term authentication, you should follow the authorization code
    Accept: application/json
    Content-Type: application/x-www-form-urlencoded
    Host: login.live.com
-   Content-Length: 167
+   Content-Length: ContentLengthGoesHere
 
-   client_id=ClientIdGoesHere&grant_type=refresh_token&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf&refresh_token=RefreshTokenGoesHere
+   client_id=ClientIdGoesHere&scope=bingads.manage&grant_type=refresh_token&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf&refresh_token=RefreshTokenGoesHere
    ```
     
 7. Refresh tokens are, and always will be, completely opaque to your application. They are long-lived e.g., 90 days for public clients, but the app should not be written to expect that a refresh token will last for any period of time. Refresh tokens can be invalidated at any moment, and the only way for an app to know if a refresh token is valid is to attempt to redeem it by making a token request. Even if you continuously refresh the token on the same device with the most recent refresh token, you should expect to start again from Step 1 and request user consent if, for example you [signed the user out](#userlogout), the Microsoft Account user changed their password, removed a device from their list of trusted devices, or removed permissions for your application to authenticate on their behalf. At any time without prior warning Microsoft may determine that user consent should again be granted. In that case, the authorization service would return an invalid grant error as shown in the following example.

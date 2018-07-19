@@ -22,7 +22,7 @@ Each offline conversion needs to be associated to a single click ID. A single cl
 
 The value of the conversion can be included in the import file along with a custom currency. If no currency is stated, the conversion goal's default will be used.
 
-For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/help:app54554/1/en-US/#ext:ConversionTracking_Load).
+For more information, see [Tracking offline conversions](https://help.bingads.microsoft.com/#apex/3/en/56852/2).
 
 ## <a name="request"></a>Request Elements
 The *ApplyOfflineConversionsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

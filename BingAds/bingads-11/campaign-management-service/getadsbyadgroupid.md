@@ -21,8 +21,8 @@ The *GetAdsByAdGroupIdRequest* object defines the [body](#request-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group to retrieve the ads from.|**long**|
-|<a name="adtypes"></a>AdTypes|One or more ad types to retrieve.|[AdType](adtype.md) array|
+|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group to retrieve the ads from.<br/><br/>This request element is required.|**long**|
+|<a name="adtypes"></a>AdTypes|One or more ad types to retrieve.<br/><br/>This request element is required.|[AdType](adtype.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
