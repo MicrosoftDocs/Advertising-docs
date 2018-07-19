@@ -15,15 +15,15 @@ If you want to access a single user account, everything starts with the [BingAds
 
 ## How do I access the entities in my account?
 
-Use `BingAdsApp` to access all entities in the account. The object contains a selector method for each type of entity (for example, campaigns, ad groups, and keywords). The selector method returns all of that entity type's objects. For example, to get all the ad groups in the account, you call the `adGroups()` method.
+Use `BingAdsApp` to access all entities in the account. The object contains a selector method for each type of entity (for example, campaigns, ad groups, and keywords). The selector method returns all entities for that entity type. For example, to get all the ad groups in the account, call the `adGroups()` method.
 
 ```javascript
-    var selector = BingAdsApp.adGroups();
+    var iterator = BingAdsApp.adGroups().get();
 ```
 
 ### But what if I want a specific entity or subset of entities?
 
-The selector provides different ways to filter the list of entities. You can use the selector’s `withIds()` method to get specific entities by IDs or you can use `withCondition()` to specify the selection criteria for selecting the entities. The selectors for all entity types, except for negative keyword lists, provide the ability to filter the list of entities you want returned.
+The selector provides different ways to filter the list of entities. You can use the selector’s `withIds()` method to get specific entities by IDs or you can use `withCondition()` to specify the selection criteria for selecting the entities. The selectors for all entity types, except for negative keyword lists, provide the ability to filter the list of entities.
 
 Use dot notation to string multiple filters together. If you specify multiple filters, they're treated as an AND operation &mdash; the selector returns only those entities that match all the conditions. 
 
@@ -31,8 +31,9 @@ To get all ad groups in a campaign, use the `withCondition()` method to specify 
 
 ```javascript
     var campaignName = 'My Campaign';
-    var selector = BingAdsApp.adGroups()
-        .withCondition('CampaignName = "' + campaignName + '"');
+    var iterator = BingAdsApp.adGroups()
+        .withCondition('CampaignName = "' + campaignName + '"')
+        .get();
 ```
 
 For a list of conditions and operators that you can use to filter the list of entities, see the selector's `withCondition()` method. For example, for a list of ad group conditions, see the ad group selector's [withCondition](../reference/AdGroupSelector.md#withcondition-string-condition-) method.
@@ -41,8 +42,9 @@ To get an ad group by ID, use the `withIds()` method to specify the ad group to 
 
 ```javascript
     var ids = ["123456789"];
-    var selector = BingAdsApp.adGroups()
-        .withIds(ids);
+    var iterator = BingAdsApp.adGroups()
+        .withIds(ids)
+        .get();
 ```
 
 Or, you can get the ad group by name.
@@ -50,9 +52,10 @@ Or, you can get the ad group by name.
 ```javascript
     var campaignName = 'My Campaign';
     var adGroupName = 'My AdGroup';
-    var selector = BingAdsApp.adGroups()
+    var iterator = BingAdsApp.adGroups()
         .withCondition('CampaignName = "' + campaignName + '"')
-        .withCondition('Name = "' + adGroupName + '"');
+        .withCondition('Name = "' + adGroupName + '"')
+        .get();
 ```
 
 For more information about selectors, see [What are selectors?](../concepts/selectors.md)
@@ -84,7 +87,7 @@ For more information about iterators, see [What are iterators?](../concepts/iter
 
 ### How do I get performance data for an entity?
 
-Most entities let you request performance data, if available. But first you need to specify a date range for the performance data you want when you get the selector. You can specify a date range using a predefined literal, such as YESTERDAY or LAST_MONTH, or using a start and end date. For more information, see [withDateRange(string dateRange)](../reference/AdGroupSelector.md#fordaterange-string-daterange-) and [forDateRange(Object dateFrom, Object dateTo)](../reference/AdGroupSelector.md#fordaterange-object-datefrom-object-dateto-).
+Most entities let you request performance data, if available. But first you need to tell Bing the date range for the performance data when you specify the selector. To specify a date range, use a predefined literal, such as YESTERDAY or LAST_MONTH, or use a start and end date. For more information, see [withDateRange(string dateRange)](../reference/AdGroupSelector.md#fordaterange-string-daterange-) and [forDateRange(Object dateFrom, Object dateTo)](../reference/AdGroupSelector.md#fordaterange-object-datefrom-object-dateto-).
 
 ```javascript
     var campaignName = 'My Campaign';
@@ -120,7 +123,7 @@ You also need to specify a date range if you specify a performance data column i
 
 ## How do I add an entity?
 
-To add an entity, you use a builder object. To get a builder object, call the **new*** method on the parent object that you're adding children to. For example, to add ad groups to a campaign, you call the campaign's `newAdGroupBuilder()` method.
+To add an entity, you use a builder object. To get a builder object, call the **new*** method on the parent object that you're adding children to. For example, to add ad groups to a campaign, call the campaign's `newAdGroupBuilder()` method.
 
 The builder object contains methods for setting all the object's properties that you're allowed to specify. It also includes a `build()` method that you use to create the entity. The following shows how to build an ad group.
 
@@ -140,7 +143,7 @@ The builder object contains methods for setting all the object's properties that
             .build();
 ```
 
-The `build` method returns an operation object, which you can use to check whether Bing successfully created the entity. The following shows the typical calling pattern. You only need to call the `getResult` method if you want to access the new entity's properties.
+The `build` method returns an operation object, which you can use to check whether Bing successfully created the entity. The following shows the typical calling pattern. You need to call the `getResult` method only if you want to access the new entity's properties.
 
 ```javascript
     if (adGroupOperation.isSuccessful()) {

@@ -15,7 +15,9 @@ ms.topic: "article"
 
 Preview mode lets you test your script without actually making changes to the data. Instead, you’re shown the results as if the script were executed. This can reduce the amount of time spent setting up test cases. When you're satisfied with the script's output, you can run the script or schedule it to run later.
 
+<!--
 Preview mode is specific to Bing Ads components only. Calls to other services execute as normal. For example, if the script sends an email, the email is sent. The same is true for spreadsheet updates. 
+-->
 
 <!--
 To programmitcally determine if a script is executing in preview mode, see [ExecutionInfo](../reference/ExecutionInfo.md).
@@ -24,18 +26,41 @@ To programmitcally determine if a script is executing in preview mode, see [Exec
 Because objects are not created, deleted, or modified in preview mode not all code will execute the same as if it were run live. The following code shows a simple example when the code behaves differently in preview mode versus live mode.
 
 ```javascript
-// Assume the adgroup has no keywords.
-var adGroup = findAnEmptyAdGroup();
+/function main() {
 
-// Create a keyword.
-adGroup.createKeyword("test");
+    // Get an ad group that does not have keywords.
+    var adGroup = BingAdsApp.adGroups()
+        .withIds(["123456789"])
+        .get()
+        .next();
 
-// Retrieve all keywords in the ad group.
-var keywords = adGroup.keywords().get();
+    // Add a keyword to the ad group
+    var operation = adGroup.newKeywordBuilder()
+        .withText('mykeyword')
+        .build();
 
-// This will log "false" in preview mode because the keyword was not actually created.
-// This will log "true" when the script is run live.
-Logger.log("Does the ad group have keywords? " + keywords.hasNext());
+    // In preview mode, the keyword is not created, so getId() returns -1.
+    if (operation.isSuccessful()) {
+        var keyword = operation.getResult();
+        Logger.log(`added keyword, ${keyword.getText()} (${keyword.getId()})`);
+    }
+    else {
+        for (var error in operation.getErrors()) {
+            Logger.log(`Error adding keyword, ${error}.`);
+        }
+    }
+
+    // Get the ad group's keywords. In preview mode, the
+    // keywords were not created, so no keywords are logged.
+    var keywords = BingAdsApp.keywords()
+        .withCondition(`AdGroupName CONTAINS '${adGroup.getName()}'`)
+        .get();
+
+    while (keywords.hasNext()) {
+        var keyword = keywords.next();
+        Logger.log(`added keyword, ${keyword.getText()} (${keyword.getId()})`);
+    }
+}
 ```
 
 ## Next steps
