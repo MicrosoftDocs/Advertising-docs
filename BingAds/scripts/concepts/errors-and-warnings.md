@@ -26,6 +26,7 @@ The only time Bing Ads returns errors is when you add an entity with invalid val
             Logger.log(`Added keyword, ${keyword.getText()}.`);
         }
         else {
+            // The bid amount is not valid, so this path executes
             for (var error of operation.getErrors()) {
                 Logger.log(error);
             }
@@ -36,13 +37,12 @@ However, if you try to update an entity’s properties with an invalid value, Bi
 
 ```javascript
 function main() {
-    var campaign = BingAdsApp.campaigns().get().next();
-    campaign.getBudget().setAmount(-5);
+    var adGroup = BingAdsApp.adGroups().get().next();
+    adGroup.bidding().setCpc(-5);
     
-    if (campaign.getBudget() != -5) {
-        // The budget amount doesn't match what we 
-        // attempted to set it to, so the change must 
-        // have failed.
+    if (adGroup.bidding().getCpc() != -5) {
+        // The bid amount doesn't match the updated value,
+        // so the update failed.
     }
 }
 ```
@@ -51,12 +51,12 @@ Other errors such as runtime errors or entity retrieval failures cause script ex
 
 ```javascript
 function main() {
-    doSomething(); // ReferenceError: 'doSomething' is undefined
-    Logger.log('Will not reach this line');
+    doSomething(); // Generates a reference error because 'doSomething' is undefined
+    Logger.log('This line is never logged!');
 }
 ```
 
-You should carefully review all messages logged to the change log and text log.
+You should always review all messages logged to the change log and text log.
 
 <!--
 ## What does Internal Error mean?

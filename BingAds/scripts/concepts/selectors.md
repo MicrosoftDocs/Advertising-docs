@@ -13,7 +13,7 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-Selectors let you apply filter and sort criteria when retrieving Bing Ads entities such as keywords and campaigns.  Selectors provide functionality roughly equivalent to SQL `WHERE` and `ORDER BY` clauses. The selector class supports the following methods:
+Selectors let you apply filter and sort criteria when retrieving Bing Ads entities such as keywords and campaigns.  Selectors provide functionality roughly equivalent to SQL `WHERE` and `ORDER BY` clauses. Selectors include the following methods:
 
 - **withCondition()** &mdash; Use to specify conditions that entities must meet to be selected. This is equivalent to a SQL `WHERE` clause.  
   
@@ -25,7 +25,7 @@ Selectors let you apply filter and sort criteria when retrieving Bing Ads entiti
   
   Example: `withIds(["1","2","3","4"])`  
 
-- **forDateRange()** &mdash; Use to return entities with performance data matching a specified date range. If a condition specifies a metric column, you must include `forDateRange` in the selector's chain.  
+- **forDateRange()** &mdash; Use to return entities with performance data that match the specified date range. If a condition specifies a metric column, you must include `forDateRange` in the selector's chain.  
   
   Example: `forDateRange("LAST_14_DAYS")`  
 
