@@ -32,7 +32,7 @@ To get all ad groups in a campaign, use the `withCondition()` method to specify 
 ```javascript
     var campaignName = 'My Campaign';
     var iterator = BingAdsApp.adGroups()
-        .withCondition('CampaignName = "' + campaignName + '"')
+        .withCondition(`CampaignName = '${campaignName}'`)
         .get();
 ```
 
@@ -53,8 +53,8 @@ Or, you can get the ad group by name.
     var campaignName = 'My Campaign';
     var adGroupName = 'My AdGroup';
     var iterator = BingAdsApp.adGroups()
-        .withCondition('CampaignName = "' + campaignName + '"')
-        .withCondition('Name = "' + adGroupName + '"')
+        .withCondition(`CampaignName = '${campaignName}'`)
+        .withCondition(`Name = '${adGroupName}'`)
         .get();
 ```
 
@@ -94,8 +94,8 @@ Most entities let you request performance data, if available. But first you need
     var adGroupName = 'My AdGroup';
     var iterator = BingAdsApp.adGroups()
         .withDateRange('LAST_30_DAYS')
-        .withCondition('CampaignName = "' + campaignName + '"')
-        .withCondition('Name = "' + adGroupName + '"')
+        .withCondition(`CampaignName = '${campaignName}'`)
+        .withCondition(`Name = '${adGroupName}'`)
         .get();
 
     while (iterator.hasNext()) {
@@ -108,7 +108,7 @@ Most entities let you request performance data, if available. But first you need
 ```
 
 
-You also need to specify a date range if you specify a performance data column in a selector's `withCondition()` method. For example, if you want only ad groups that have a CTR of greater than .12 percent, you need to specify a date range.
+You also need to specify a date range if you specify a performance data column in a selector's `withCondition()` method. For example, if you want only ad groups that have a CTR of greater than .22 percent, you need to specify a date range.
 
 ```javascript
     var startDate = {year: 2018, month: 6, day: 3};
@@ -116,7 +116,7 @@ You also need to specify a date range if you specify a performance data column i
 
     var iterator = BingAdsApp.adGroups()
         .withDateRange(startDate, endDate)
-        .withCondition("Ctr > 0.12")
+        .withCondition("Ctr > 0.22")
         .get();
 ```
 
@@ -172,7 +172,7 @@ After using a builder object to add an entity, you use the entity's methods to u
 
     if (adGroups.hasNext()) {
         var adGroup = adGroups.next();
-        adGroup.bidding().setCpc(1.5);
+        adGroup.bidding().setCpc(2.5);
     }
 ```
 
@@ -183,11 +183,11 @@ If you try to update a property with an invalid value, Scripts writes an error t
 ```javascript
 function main() {
     var id = "123456789";
-    var bidAmount = -1.5;  
+    var bidAmount = -2.5;  
     var keyword = getKeyword(id); 
 
     if (keyword != null) {
-        keyword.bidding().setCpc(bidAmount);  // Fails because bid amount is not valid
+        keyword.bidding().setCpc(bidAmount);  // Bid is not set because bid amount is not valid
 
         if (keyword.bidding().getCpc() != bidAmount) {
             Logger.log(`Failed to update bid amount for keyword, ${keyword.getText()} (${keyword.getId()})`);
