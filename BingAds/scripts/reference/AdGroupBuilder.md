@@ -1,6 +1,6 @@
 ---
 title: "AdGroupBuilder object"
-description: "Contains the methods for defining an ad group."
+description: "Contains the methods for creating an ad group."
 author: "brapel"
 manager: ehansen
 

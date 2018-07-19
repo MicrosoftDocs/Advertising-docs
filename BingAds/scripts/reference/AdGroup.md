@@ -18,6 +18,7 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 |-|-|-
 [bidding](#bidding)|[AdGroupBidding](AdGroupBidding.md)|Gets the methods used to manage this ad group's bid amount.
 [enable](#enable)|void|Enables this ad group.
+<<<<<<< HEAD
 [getEndDate](#getenddate)|[BingAdsDate](BingAdsDate.md)|Gets the date when ads in this ad group stop serving.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getId](#getid)|string|Gets the ID that uniquely identifies this ad group.
@@ -28,6 +29,19 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this ad group is paused.
 [isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this ad group is removed.
 [newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Gets a builder that you use to add a keyword to this ad group.
+=======
+[getEndDate](#getenddate)|[BingAdsDate](BingAdsDate.md)|Returns the date when ads in the ad group stop serving.
+[getEntityType](#getentitytype)|string|Returns this entity's type.
+[getId](#getid)|string|Returns the ID that uniquely identifies this ad group.
+[getName](#getname)|string|Returns the name of this ad group.
+[getStartDate](#getstartdate)|[BingAdsDate](BingAdsDate.md)|Returns the date when ads in the ad group start serving.
+[getStats](#getstats)|[Stats](Stats.md)|Returns the performance data for this ad group.
+[isEnabled](#isenabled)|Boolean|Returns a Boolean value that indicates whether this ad group is enabled.
+[isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates whether this ad group is paused.
+[isRemoved](#isremoved)|Boolean|Returns a Boolean value that indicates whether this ad group is removed.
+[newAd](#newad)|[AdBuilderSpace](../reference/AdBuilderSpace.md)|Returns an object that contains methods for getting ad builders.
+[newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Returns a builder that you use to add keywords to this ad group.
+>>>>>>> adding expandedtestadbuilder
 [pause](#pause)|void|Pauses this ad group.
 [setEndDate(string endDate)](#setenddate-string-enddate-)|void|Sets the date when ads in this ad group stop serving.
 [setEndDate(Object endDate)](#setenddate-object-enddate-)|void|Sets the date when ads in this ad group stop serving.
@@ -133,15 +147,14 @@ Gets a Boolean value that indicates whether this ad group is removed (deleted).
 |-|-
 Boolean|Is **true** if this ad group is removed; otherwise, **false**.
 
-<!--
 ## <a name="newad"></a>newAd
-Gets a [builder](../concepts/builders.md) that you use to add an ad to this ad group.
+Gets an object that contains methods for getting ad builders.
 
-### Returns:
+### Returns
+
 |Type|Description|
 |-|-
-[AdBuilderSpace](./AdBuilderSpace)|The builder that you use to add an ad to this ad group.
--->
+[AdBuilderSpace](./AdBuilderSpace)|An object that contains methods for getting ad builders. For example, if you want to build an expanded text ad, you'd call the `expandedTextAdBuilder` method to get the [ExpandedTextAdBuilder](../reference/ExpandedTextAdBuilder.md) object.
 
 ## <a name="newkeywordbuilder"></a>newKeywordBuilder
 Gets a [builder](../concepts/builders.md) that you use to add a keyword to this ad group.
