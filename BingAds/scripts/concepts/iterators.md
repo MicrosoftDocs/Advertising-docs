@@ -26,9 +26,7 @@ var iterator = BingAdsApp.adGroups().get();
 
 while (iterator.hasNext()) {
   var adGroup = iterator.next();
-  Logger.log(adGroup.getName() +
-      "; active? " + adGroup.isEnabled() +
-      "; bid=" + campaign.bidding().getCpc());
+  Logger.log(`${adGroup.getName()} has a CPC bid of ${adGroup.bidding().getCpc()}`);
 }
 ```
 

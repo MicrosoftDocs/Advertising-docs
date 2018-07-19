@@ -40,27 +40,27 @@ Selectors let you apply filter and sort criteria when retrieving Bing Ads entiti
 Because each method returns the selector with the filter criteria applied, you may chain together (using dot notation) multiple conditions to refine the filter criteria. For example:
 
 ```javascript
-var campaignSelector = BingAdsApp.campaigns()
-    .withCondition("Clicks > 10")
-    .withCondition("Impressions > 100")
-    .orderBy("Impressions DESC")
-    .forDateRange("YESTERDAY");
+var selector = BingAdsApp.campaigns()
+    .withCondition("ClickConversionRate > 0.5")
+    .withCondition("Cost > 4.0")
+    .forDateRange("LAST_WEEK")
+    .withLimit(10);
 ```
 
 To improve script performance, use specific filter conditions to ensure that you retrieve only the entities you want. After getting the selector, call the `get()` method to retrieve an iterator that you use to iterate through the list of entities.
 
 ```javascript
-var campaigns = campaignSelector.get();
+var campaigns = selector.get();
 ```
 
 Or 
 
 ```javascript
 var campaigns = BingAdsApp.campaigns()
-    .withCondition("Clicks > 10")
-    .withCondition("Impressions > 100")
-    .orderBy("Impressions DESC")
-    .forDateRange("YESTERDAY")
+    .withCondition("ClickConversionRate > 0.5")
+    .withCondition("Cost > 4.0")
+    .forDateRange("LAST_WEEK")
+    .withLimit(10);
     .get();
 ```
 
