@@ -51,7 +51,7 @@ Because objects are not created, deleted, or modified in preview mode not all co
     }
 
     // Get the ad group's keywords. In preview mode, the
-    // keywords were not created, so no keywords are logged.
+    // keyword is not created, so no keywords are logged.
     var keywords = BingAdsApp.keywords()
         .withCondition(`AdGroupName CONTAINS '${adGroup.getName()}'`)
         .get();

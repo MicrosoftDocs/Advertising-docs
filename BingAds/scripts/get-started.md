@@ -20,21 +20,21 @@ Accessing your Bing Ads data with Bing Ads Scripts is easy. Just follow these in
 3. Click **Create and manage scripts**.
 4. Click **Create script**.
 5. Replace "Untitled script" with your script's name.
-6. Copy and paste the following code into the code editor. This script gets the 10 keywords that generated the most impressions yesterday. This script won't make any changes to your campaign data.
+6. Copy and paste the following code into the code editor. This script gets the 15 keywords that generated the least impressions over the last week. This script won't make any changes to your campaign data.
 
     ```javascript
     function main() {
-        var keywords = BingAdsApp.keywords()
-            .orderBy("Impressions DESC")
-            .forDateRange("YESTERDAY")
-            .withLimit(10)  // up to 10
+        var iterator = BingAdsApp.keywords()
+            .orderBy("Impressions ASC")
+            .forDateRange("LAST_WEEK")
+            .withLimit(15)  // up to 15
             .get();
     
-        Logger.log("10 keywords with the most impressions yesterday");
-        while (keywords.hasNext()) {
-            var keyword = keywords.next();
-            Logger.log(keyword.getText() + ": " +
-                keyword.getStats.getImpressions());  //gets the number of impressions
+        Logger.log("15 keywords with the least impressions over the last week");
+        while (iterator.hasNext()) {
+            var keyword = iterator.next();
+            Logger.log(`${keyword.getText()}: 
+                ${keyword.getStats.getImpressions()} impressions`);  //gets the number of impressions
         }
     }
     ```
