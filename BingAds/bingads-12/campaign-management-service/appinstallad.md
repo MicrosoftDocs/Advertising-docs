@@ -12,9 +12,9 @@ Defines an app install ad. Create an app install ad if your intention is to driv
 The combination of the AppPlatform, AppStoreId, Text, and Title elements make the app install ad unique.
 
 > [!NOTE]
-> Before you can use app install ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
->
-> Bing Ads only supports *EN-US* apps.
+> App Install Ads are available in the United States, Australia, Canada, Germany, France, India, United Kingdom, and on iOS and Android only. For Android apps, Bing Ads only supports apps available in the United States Google Play store.
+> 
+> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
 
 ## Syntax
 ```xml
