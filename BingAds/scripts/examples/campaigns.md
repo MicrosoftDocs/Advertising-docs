@@ -17,66 +17,112 @@ The following sections show examples of scripts that perform various actions aga
 
 
 ## Get all campaigns
+
+To get all campaigns in an account, first call [BingAdsApp](../reference/BingAdsApp.md)'s `campaigns` method to get the campaigns' [selector](../reference/CampaignSelector.md). Then, call the selector's `get` method get an [iterator](../reference/CampaignIterator.md) that you use to iterate through the list of campaigns. Since you don't specify any filters, the selector returns all campaigns in the account. To determine the number of campaigns in the iterator, call the iterator's `totalNumEntities` method.
+
+
 ```javascript
-function getAllCampaigns() {
-    var campaignIterator = BingAdsApp.campaigns().get();
+function main() {
+    // Gets all ad groups in the account.
+    var iterator = BingAdsApp.campaigns().get();
 
-    Logger.log(`Total campaigns found : ${campaignIterator.totalNumEntities()}`);
-
-    while (campaignIterator.hasNext()) {
-        var campaign = campaignIterator.next();
-        Logger.log(campaign.getName());
+    // Iterates through the list of campaigns and log 
+    // each campaign's name.
+    while (iterator.hasNext()) {
+        var campaign = iterator.next();
+        Logger.log(`Campaign name:  ${campaign.getName()}`);
     }
 }
 ```
 
 ## Get a campaign by name
-```javascript
-function getCampaignsByName() {
-    var campaignName = 'YOUR CAMPAIGN NAME';
-    var campaignIterator = BingAdsApp.campaigns()
-        .withCondition('Name = "' + campaignName + '"')
-        .get();
-    if (campaignIterator.hasNext()) {
-        var campaign = campaignIterator.next();
 
-        Logger.log(`Campaign Name: ${campaign.getName()}`);
-        Logger.log(`Enabled: ${campaign.isEnabled()}`);
-        Logger.log(`Bidding strategy: ${campaign.getBiddingStrategyType()}`);
+To get a campaign by name, first call [BingAdsApp](../reference/BingAdsApp.md)'s `campaigns` method to get the campaigns' [selector](../reference/CampaignSelector.md). The selector contains a number of filter methods that you use to filter the list of campaigns. Use the `withCondition` method to filter the campaigns for a specific campaign name. Note that the operands and opertors are case sensitive.
+
+Next, call the selector's `get` method to get the campaigns' [iterator](../reference/AdGroupIterator.md). Campaign names are unique, so you'll get back only one, if it exists. 
+
+
+```javascript
+function main() {
+    var campaignName = 'CAMPAIGN NAME GOES HERE';
+
+    var iterator = BingAdsApp.campaigns()
+        .withCondition(`Name = '${campaignName}'`)
+        .get();
+
+    if (iterator.hasNext()) {
+        var campaign = iterator.next();
+        Logger.log(`Campaign name: ${campaign.getName()}`);
     }
 }
 ```
 
-## Get a campaign's performance data
+### Get campaign by ID
+
+If you have access to the campaign's ID, use it instead. Using IDs to get entities provides better performance. Instead of using the `withCondition` filter method, you'd use the `withIds` method. For example, `withIds(['12345'])`.
+
+
 ```javascript
-function getCampaignStats() {
-    var campaignName = 'YOUR CAMPAIGN NAME';
-    var campaignIterator = BingAdsApp.campaigns()
-        .withCondition('Name = "' + campaignName + '"')
-        .forDateRange('LAST_MONTH')
+function main() {
+    var campaignId = '12345';
+
+    var iterator = BingAdsApp.campaigns()
+        .withIds([campaignId])
         .get();
 
-    if (campaignIterator.hasNext()) {
-        var campaign = campaignIterator.next();
-        var stats = campaign.getStats();
+    if (iterator.hasNext()) {
+        var campaign = iterator.next();
+        Logger.log(`Campaign name: ${campaign.getName()}`);
+    }
+}
+```
 
-        Logger.log(campaign.getName() + ', ' + stats.getClicks() + ' clicks, ' +
-            stats.getImpressions() + ' impressions');
+
+## Get a campaign's performance data
+
+To get a campaign's performance metrics, call the campaign's [getStats](../reference/Campaign.md#getstats) method. When you get the campaign, you need to specify the date range of the metrics data you want. You can specify the date range using a predefined literal, such as LAST_MONTH or TODAY, or a start and end date. To specify the date range you use one of the `forDateRange` methods when you select the campaign (see [CampaignSelector](../reference/CampaignSelector.md)). 
+
+For a list of metrics you can access, see the [Stats](../reference/Stats.md) object.
+
+
+```javascript
+function main() {
+    var campaignId = '12345';
+
+    // Get the campaign. You need to specify the date range of the
+    // performance data you want to get.
+    var iterator = BingAdsApp.campaigns()
+        .withIds([campaignId])
+        .forDateRange('LAST_WEEK')
+        .get();
+
+    // If the campaign is found, log some metrics.
+    if (iterator.hasNext()) {
+        var campaign = iterator.next();
+        var metrics = campaign.getStats(); // Gets the performance metrics.
+        Logger.log(`${campaign.getName()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getClickConversionRate()})`);
     }
 }
 ```
 
 ## Pause a campaign
+
+To pause a campaign, call the ad group's `pause` method. To enable it again, call the campaign's `enable` method. To determine the status of the campaign, call the campaign's `isEnabled`, `isPaused`, and `isRemoved` methods.
+
+
 ```javascript
-function pauseCampaign() {
-    var campaignName = 'YOUR CAMPAIGN NAME';
-    var campaignIterator = BingAdsApp.campaigns()
-        .withCondition('Name = "' + campaignName + '"')
+function main() {
+    var campaignId = '12345';
+
+    var iterator = BingAdsApp.campaigns()
+        .withIds([campaignId])
         .get();
-        
-    if (campaignIterator.hasNext()) {
-        var campaign = campaignIterator.next();
+
+    // If the campaign is found, pause it.
+    if (iterator.hasNext()) {
+        var campaign = iterator.next();
         campaign.pause();
+        Logger.log(`Paused campaign: ${campaign.getName()}`);
     }
 }
 ```
