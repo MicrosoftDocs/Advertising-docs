@@ -1,1 +1,1 @@
-Tracking templates are used with the keyword's FinalUrl to assemble the actual destination URL used with the ad. For more information, see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
+Tracking templates are used with the keyword's FinalUrl to create the destination URL used by the ad. For more information, see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)

@@ -14,23 +14,12 @@ ms.topic: "article"
 Contains the methods for managing the ad group's URLs. For more information, see [URL Tracking with Upgraded URLs](/bingads/guides/url-tracking-upgraded-urls).
 
 
-Example usage:
-```javascript
-var adGroupSelector = BingAdsApp.adGroups();
- var adGroupIterator = adGroupSelector.get();
- while (adGroupIterator.hasNext()) {
-   var adGroup = adGroupIterator.next();
-
-   var adGroupUrls = adGroup.urls();
- }
-```
-
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
 [clearTrackingTemplate](#cleartrackingtemplate)|void|Removes the tracking template from this ad group.
-[getCustomParameters](#getcustomparameters)|Object|Returns the ad group's custom parameters.
-[getTrackingTemplate](#gettrackingtemplate)|string|Returns the ad group's tracking template.
+[getCustomParameters](#getcustomparameters)|Object|Gets the ad group's custom parameters.
+[getTrackingTemplate](#gettrackingtemplate)|string|Gets the ad group's tracking template.
 [setCustomParameters(Object customParameters)](#setcustomparameters-object-customparameters-)|void|Sets the ad group's custom parameters.
 [setTrackingTemplate(string trackingTemplate)](#settrackingtemplate-string-trackingtemplate-)|void|Sets the ad group's tracking template.
 
@@ -43,7 +32,7 @@ Removes the tracking template from this ad group. For information about tracking
 void|Returns nothing.
 
 ## <a name="getcustomparameters"></a>getCustomParameters
-Returns the ad group's custom parameters. 
+Gets the ad group's custom parameters. 
 
 [!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
 
@@ -53,7 +42,7 @@ Returns the ad group's custom parameters.
 Object|A map of the ad group's custom parameters.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.
 
 ## <a name="gettrackingtemplate"></a>getTrackingTemplate
-Returns the ad group's tracking template.
+Gets the ad group's tracking template.
 
 [!INCLUDE[tracking-templates](../includes/tracking-templates.md)]
 
@@ -63,9 +52,9 @@ Returns the ad group's tracking template.
 string|The ad group's tracking template.
 
 ## <a name="setcustomparameters-object-customparameters-"></a>setCustomParameters(Object customParameters)
-Sets the custom parameters for this ad group. Use this method if you include custom substitution strings in your final URL or tracking template.
+Sets the ad group's custom parameters. Use this method if you include custom substitution strings in your final URL or tracking template.
 
-To use a customer parameter name in the final URL or tracking template, you must enclose the name in curly braces and prepend an underscore (_) to the name. For example, if the parameter name is foo, use {_foo} in the tracking template or final URL. Do not add a leading underscore to the parameter name when you define the object. 
+To use a customer parameter name in the final URL or tracking template, you must enclose the name in curly braces and add a leading underscore (\_) to the name. For example, if the parameter name is foo, use {_foo} in the tracking template or final URL. Do not add a leading underscore to the parameter name when you define the custom parameters object. 
 
 Calling this method replaces the ad group's existing custom parameters.
 
