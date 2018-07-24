@@ -13,12 +13,12 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-The following sections show examples of scripts that perform various ad group actions.
+The following sections show examples of scripts that perform various actions against ad groups.
 
 
 ## Add ad groups
 
-To add an ad group, you need to first get the campaign to add the ad group to. Use the [CampaignSelector](../reference/CampaignSelector.md) object to select the campaign. Using the `withIds` selector method provides better performance than passing the campaign's name in a `withCondition` call.
+To add an ad group, first get the campaign to add the ad group to. Use the [CampaignSelector](../reference/CampaignSelector.md) object to select the campaign. Using the `withIds` method provides better performance than passing the campaign's name in the `withCondition` method.
 
 Next, call the campaign's [newAdGroupBuilder](../reference/Campaign.md#newadgroupbuilder) method to get a builder that you use to specify the ad group's properties. The only required property is the ad group's name (see the `withName` method), which must be unique within the campaign. If you don't specify a CPC value, it defaults to the minimum bid amount for your account's currency. You only need to specify language if the campaign doesn't specify it; otherwise, it inherits the campaign's language value. By default, the ad group's status is paused.
 

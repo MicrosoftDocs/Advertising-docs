@@ -107,7 +107,7 @@ function main() {
 
 ## Pause a campaign
 
-To pause a campaign, call the ad group's `pause` method. To enable it again, call the campaign's `enable` method. To determine the status of the campaign, call the campaign's `isEnabled`, `isPaused`, and `isRemoved` methods.
+To pause a campaign, call the campaign's `pause` method. To enable it again, call the campaign's `enable` method. To determine the status of the campaign, call the campaign's `isEnabled`, `isPaused`, and `isRemoved` methods.
 
 
 ```javascript
