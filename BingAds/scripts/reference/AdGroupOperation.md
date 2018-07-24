@@ -13,35 +13,37 @@ ms.topic: "article"
 
 Contains the methods for determining whether the ad group was successfully added. For information about builders, operation objects, and performance considerations, see [What are builders?](../concepts/builders.md)
 
+Because calling any of this object's methods forces Bing to flush the build queue, be sure to read performance considerations carefully.
+
 
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[getErrors](#geterrors)|string[]|Returns an empty array if the ad group is successfully created; otherwise, a list of errors.
-[getResult](#getresult)|[AdGroup](./AdGroup.md)|Returns the newly added ad group if the operation succeeded; otherwise, null.
-[isSuccessful](#issuccessful)|Boolean|Returns a Boolean value that indicates whether this operation succeeded.
+[getErrors](#geterrors)|string[]|Gets the errors that occured when you added the ad group.
+[getResult](#getresult)|[AdGroup](./AdGroup.md)|Gets the ad group that you added.
+[isSuccessful](#issuccessful)|Boolean|Gets a Boolean value that indicates whether the add operation succeeded.
 
 ## <a name="geterrors"></a>getErrors
-Returns an empty array if the ad group is successfully created; otherwise, a list of error codes.
+Gets the errors that occured when you added the ad group.
 
 ### Returns
 |Type|Description|
 |-|-
-string[]|An empty array if the keyword is successfully created; otherwise, a list of symbolic error codes. For example, if you specify an invalid bid amount, the call returns CampaignServiceInvalidSearchBids. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
+string[]|An array of symbolic error codes if the add operation failed; otherwise, an empty array. For example, if you specify an invalid bid amount, the call returns CampaignServiceInvalidSearchBids. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
 
 ## <a name="getresult"></a>getResult
-Returns the newly created ad group if the operation succeeded; otherwise, null.
+Gets the ad group that you added.
 
 ### Returns
 |Type|Description|
 |-|-
-[AdGroup](./AdGroup.md)|The newly created ad group if the operation succeeded; otherwise, null.
+[AdGroup](./AdGroup.md)|The ad group that you created if the operation succeeded; otherwise, null.
 
 ## <a name="issuccessful"></a>isSuccessful
-Returns a Boolean value that indicates whether this operation succeeded.
+Gets a Boolean value that indicates whether the add operation succeeded.
 
 ### Returns:
 |Type|Description|
 |-|-
-Boolean|Returns **true** if the operation succeeded; otherwise, **false**.
+Boolean|Is **true** if the operation succeeded; otherwise, **false**.
 

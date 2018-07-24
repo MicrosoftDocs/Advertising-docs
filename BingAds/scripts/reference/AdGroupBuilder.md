@@ -11,25 +11,28 @@ ms.topic: "article"
 
 # AdGroupBuilder
 
-Contains the methods for defining and building an ad group. For information about builders, see [Builders](../concepts/builders.md).
+Contains the methods used to define and add an ad group. For information about builders, see [Builders](../concepts/builders.md).
 
 Example usage:
 ```javascript
-    var campaignSelector = BingAdsApp.campaigns();
-    var campaignIterator = campaignSelector.get();
+    // Get campaign to ad ad group to.
+    var iterator = BingAdsApp.campaigns()
+        .withIds(['CAMPAIGN ID GOES HERE'])
+        .get();
 
-    while(campaignIterator.hasNext()) {
-        var campaign = campaignIterator.next();
-        var adGroupBuilder = campaign.newAdGroupBuilder();
-        var adGroupOperation = adGroupBuilder
-            .withName("<AD_GROUP_NAME_GOES_HERE>")
-            .withStatus("PAUSED")
+    if (iterator.hasNext()) {
+        var campaign = iterator.next();
+
+        // Get the campaign's ad group builder and adds an ad group.
+        var operation = campaign.newAdGroupBuilder();
+            .withName("AD GROUP NAME GOES HERE")
+            .withStatus("ENABLED")
             .build();
     
         // See the Builders topic for performance considerations
-        // when using the operation object's methods
-        if (!adGroupOperation.isSuccessful()) {
-            for (var error of adGroupOperation.getErrors()) {
+        // when using the operation object's methods.
+        if (!operation.isSuccessful()) {
+            for (var error of operation.getErrors()) {
                 Logger.log(`${error}\n`);
             }
         }
@@ -51,7 +54,7 @@ Example usage:
 [withStartDate(string startDate)](#withstartdate-string-startdate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group start serving.
 [withStartDate(Object startDate)](#withstartdate-object-startdate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group start serving.
 [withStatus(string status)](#withstatus-string-status-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's status.
-[withTrackingTemplate(string trackingTemplate)](#withtrackingtemplate-string-trackingtemplate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the tracking template used with this ad group.
+[withTrackingTemplate(string trackingTemplate)](#withtrackingtemplate-string-trackingtemplate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the tracking template used by the ad group.
 
 ## <a name="build"></a>build
 Creates the ad group and returns an operation object that you can use to check whether the ad group was successfully added.
@@ -83,7 +86,7 @@ Specifies the bid amount to use when the keyword matches the user's search term 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-cpc|double|The CPC bid to apply to the ad group. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
+cpc|double|The ad group's maximum CPC bid. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
 
 ### Returns
 |Type|Description|
@@ -155,7 +158,7 @@ Sets the ad group's name.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-name|string|The Ad group's name. The name is required, may contain a maximum of 256 characters, and must be unique amongst all active ad groups within the campaign.
+name|string|The ad group's name. The name is required. The name may contain a maximum of 256 characters and must be unique amongst all active ad groups in the campaign.
 
 ### Returns
 |Type|Description|
@@ -213,7 +216,7 @@ Sets the tracking template used by this ad group.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-trackingTemplate|string|Tracking template to use with the ad group.
+trackingTemplate|string|The tracking template to use with the ad group.
 
 ### Returns
 |Type|Description|
