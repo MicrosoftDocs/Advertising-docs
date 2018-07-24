@@ -140,11 +140,11 @@ The following are the entity properties you may specify.
 
 |Column|Type|Example|
 |-|-|-
-Status|enumeration|`withCondition("Status = ENABLED")`<br /><br />The ad group's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only enabled ad groups.
-Name|string|`withCondition("Name CONTAINS_IGNORE_CASE 'sport'")`<br /><br />The ad group's name.
-CampaignName|string|`withCondition("CampaignName CONTAINS_IGNORE_CASE 'truck'")`<br /><br />The campaign's name.
-KeywordMaxCpc|double|`withCondition("KeywordMaxCpc > 5.0")`<br /><br />The ad group's CPC bid. The bid is in the account's currency.
-CampaignStatus|enumeration|`withCondition("CampaignStatus = PAUSED")`<br /><br />The campaign's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only ad groups whose parent campaign is paused.
+Status|enumeration|The ad group's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only enabled ad groups.<br /><br />`withCondition("Status = ENABLED")`
+Name|string|The ad group's name.<br /><br />`withCondition("Name CONTAINS_IGNORE_CASE 'sport'")`
+CampaignName|string|The campaign's name.<br /><br />`withCondition("CampaignName CONTAINS_IGNORE_CASE 'truck'")`
+KeywordMaxCpc|double|The ad group's CPC bid. The bid is in the account's currency.<br /><br />`withCondition("KeywordMaxCpc > 5.0")`
+CampaignStatus|enumeration|The campaign's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only ad groups whose parent campaign is paused.<br /><br />`withCondition("CampaignStatus = PAUSED")`
 
 ### Arguments
 |Name|Type|Description|
