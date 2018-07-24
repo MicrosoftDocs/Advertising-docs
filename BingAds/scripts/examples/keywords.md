@@ -18,13 +18,13 @@ The following sections show examples of scripts that perform various actions aga
 
 ## Add keywords
 
-To add a keyword, you need to first get the ad group to add the keyword to. Use the [AdGroupSelector](../reference/AdGroupSelector.md) object to select the ad group. Using the `withIds` selector method provides better performance than using the `withCondition` method and passing the ad group's and campaign's name.
+To add a keyword, you need to first get the ad group to add the keyword to. Use the [AdGroupSelector](../reference/AdGroupSelector.md) object to select the ad group. Using the `withIds` selector method provides better performance than passing the campaign's name in a `withCondition` call.
 
-Next, call the ad group's [newKeywordBuilder](../reference/AdGroup.md#newkeywordbuilder) method to define and create the keyword. The builder contains the methods used to specify the keyword's properties. The only property you must specify to create the keyword is its text. To specify the keyword's text, use the `withText` method. The text should include the match type (quotes for phrase match type, square brackets for exact match type, nothing for broad match type). 
+Next, call the ad group's [newKeywordBuilder](../reference/AdGroup.md#newkeywordbuilder) method to get a builder that you use to specify the keyword's properties. The only property you must specify is the keyword's text. To specify the keyword's text, use the `withText` method. The text should include the match type (quotes for phrase match type, square brackets for exact match type, nothing for broad match type). 
 
 If you don't specify a CPC value, it defaults to the ad group's CPC value. By default, the keyword's status is enabled.
 
-Calling the builder's `build` method creates the method asynchronously at somepoint before the script terminates or if you call one of the build operation's methods. For information about this process, see [What is a builder?](../concepts/builders.md)
+Calling the builder's `build` method creates the method asynchronously; Bing adds the keyword at some point before the script terminates or if you call one of the build operation's methods. For information about this process, see [What is a builder?](../concepts/builders.md)
 
 
 
@@ -99,7 +99,7 @@ function checkBuildStatus(operations, keywords) {
     for (var i = 0; i < operations.length; i++) {
         if (!operations[i].isSuccessful()) {
             for (var error of operations[i].getErrors()) {
-                Logger.log(`Failed to add, ${keywords[i].text}. Error: ${error}`);
+                Logger.log(`Failed to add, ${keywords[i].getText()}. Error: ${error}`);
             }
         }
     }
@@ -133,7 +133,7 @@ function main() {
 
 ## Get all keywords in an ad group
 
-To get all keywords in an ad group, first call [BingAdsApp](../reference/BingAdsApp.md)'s `keywords` method to get the keywords' [selector](../reference/KeywordSelector.md). You'll need to use the `withCondition` method to specify the ad group and campaign. Then, call the selector's `get` method get an [iterator](../reference/KeywordIterator.md) that you use to iterate through the list of keywords. To determine the number of keywords in the iterator, call the iterator's `totalNumEntities` method.
+To get all keywords in an ad group, first call the [BingAdsApp](../reference/BingAdsApp.md) object's `keywords` method to get the [selector](../reference/KeywordSelector.md). Use the `withCondition` method to specify the ad group and campaign. Then, call the selector's `get` method to get an [iterator](../reference/KeywordIterator.md) that you use to iterate through the list of keywords. To determine the number of keywords in the iterator, call the iterator's `totalNumEntities` method.
 
 If you have access to the keyword IDs, use them instead. Using IDs to get entities provides better performance. Instead of using the `withCondition` filter method, you'd use the `withIds` method. For example, `withIds(['12345'])`. There are limits on the number of entities you can retrieve using IDs. 
 
@@ -162,7 +162,7 @@ function main() {
 
 ## Get a keyword's performance data
 
-To get a keyword's performance metrics, call the keyword's [getStats](../reference/Keyword.md#getstats) method. When you get the keyword, you need to specify the date range of the metrics data you want. You can specify the date range using a predefined literal, such as LAST_MONTH or TODAY, or a start and end date. To specify the date range you use one of the `forDateRange` methods when you select the keyword (see [KeywordSelector](../reference/KeywordSelector.md)). 
+To get a keyword's performance metrics, call the keyword's [getStats](../reference/Keyword.md#getstats) method. When you get the keyword, you need to specify the date range of the metrics data you want. You can specify the date range using a predefined literal, such as LAST_MONTH or TODAY, or a start and end date. To specify the date range, use one of the `forDateRange` methods when you select the keyword (see [KeywordSelector](../reference/KeywordSelector.md)). 
 
 For a list of metrics you can access, see the [Stats](../reference/Stats.md) object.
 
@@ -186,7 +186,7 @@ function main() {
     if (iterator.hasNext()) {
         var keyword = iterator.next();
         var metrics = keyword.getStats(); // Gets the performance metrics.
-        Logger.log(`${keyword.getName()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getClickConversionRate()})`);
+        Logger.log(`${keyword.getText()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getClickConversionRate()})`);
     }
 }
 ```
