@@ -15,27 +15,32 @@ Contains the methods for iterating through a list of negative keyword lists. For
 
 Example usage:
 ```javascript
-var negativeKeywordListSelector = BingAdsApp.negativeKeywordLists();
-var negativeKeywordListIterator = negativeKeywordListSelector.get();
-while (negativeKeywordListIterator.hasNext()) {
-  var negativeKeywordList = negativeKeywordListIterator.next();
+    // Gets the iterator that iterates all negative keyword
+    // lists in the account.
+    var iterator = BingAdsApp.negativeKeywordLists().get();
+
+    // Loops through all lists in the account.
+    while (iterator.hasNext()) {
+        var nkwList = iterator.next();
+        Logger.log(`${nkwList.getName()}`);
+    }
 }
 ```
 
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[hasNext](#hasnext)|Boolean|Returns a Boolean value that indicates whether this iterator has more elements.
+[hasNext](#hasnext)|Boolean|Gets a Boolean value that indicates whether this iterator has more elements.
 [next](#next)|[AdGroup](./AdGroup.md)|Advances the iterator and returns the next negative keyword list.
-[totalNumEntities](#totalnumentities)|int|Returns the number of negative keywords lists that matched selector's selection criteria.
+[totalNumEntities](#totalnumentities)|int|Gets the number of negative keywords lists that matched selector's selection criteria.
 
 ## <a name="hasnext"></a>hasNext
-Returns a Boolean value that indicates whether this iterator has more elements.
+Gets a Boolean value that indicates whether this iterator has more elements.
 
 ### Returns
 |Type|Description|
 |-|-
-Boolean|Returns **true** if this iterator has more elements; otherwise, **false**.
+Boolean|Is **true** if this iterator has more elements; otherwise, **false**.
 
 ## <a name="next"></a>next
 Advances the iterator and returns the next negative keyword list.
@@ -46,9 +51,11 @@ Advances the iterator and returns the next negative keyword list.
 [NegativeKeywordList](NegativeKeywordList.md)|The next negative keywords list in the iterator.
 
 ## <a name="totalnumentities"></a>totalNumEntities
-Returns the number of negative keywords lists that matched the selector's selection criteria. 
+Gets the number of negative keywords lists that matched the selector's selection criteria. 
 
+<!--
 [!INCLUDE[reads-limit](../includes/reads-limit.md)]
+-->
 
 ### Returns
 |Type|Description|

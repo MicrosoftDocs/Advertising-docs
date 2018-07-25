@@ -11,48 +11,49 @@ ms.topic: "article"
 
 # NegativeKeywordListSelector
 
-Contains the methods for filtering the negative keyword lists. For information about selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods for filtering and ordering the negative keywords lists. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 Example usage:
 ```javascript
-var negativeKeywordListSelector = BingAdsApp.negativeKeywordLists()
-     .withCondition("MemberCount > 5")
-     .orderBy("Name");
+    var iterator = BingAdsApp.negativeKeywordLists()
+        .withCondition("MemberCount > 10")
+        .orderBy("Name")
+        .get();
 
- var negativeKeywordListIterator = negativeKeywordListSelector.get();
- while (negativeKeywordListIterator.hasNext()) {
-   var negativeKeywordList = negativeKeywordListIterator.next();
- }
+    while (iterator.hasNext()) {
+        var nkwList = iterator.next();
+        Logger.log(`${nkwList.getName()}`);
+    }
 ```
 
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[get](#get)|[NegativeKeywordListIterator](./NegativeKeywordListIterator.md)|Returns an iterator that you use to iterate through the list of negative keyword lists.
-[orderBy(string orderBy)](#orderby-string-orderby-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector with the specified ordering applied.
-[withCondition(string condition)](#withcondition-string-condition-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector that limits the negative keyword lists to those that match the filter criteria.
-[withIds(string[] ids)](#withids-string-ids-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector that returns only negative keyword lists with the specified IDs.
-[withLimit(int limit)](#withlimit-int-limit-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Returns a selector with the top *n* negative keyword lists that match the selection criteria.
+[get](#get)|[NegativeKeywordListIterator](./NegativeKeywordListIterator.md)|Gets an iterator that you use to iterate through the list of negative keywords lists.
+[orderBy(string orderBy)](#orderby-string-orderby-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Applies the specified ordering to the selected negative keywords lists.
+[withCondition(string condition)](#withcondition-string-condition-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Applies filter criteria to the negative keywords lists.
+[withIds(string[] ids)](#withids-string-ids-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets negative keywords lists with the specified IDs.
+[withLimit(int limit)](#withlimit-int-limit-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets the top *n* negative keywords lists that match the selection criteria.
 
 ## <a name="get"></a>get
-Returns an [iterator](../concepts/iterators.md) that you use to iterate through the list of negative keyword lists.
+Gets an [iterator](../concepts/iterators.md) that you use to iterate through the list of negative keywords lists.
 
 ### Returns
 |Type|Description|
 |-|-
-[NegativeKeywordListIterator](./NegativeKeywordListIterator.md)|An iterator that you use to iterate through the negative keywords lists that were selected based on the selector's selection criteria.
+[NegativeKeywordListIterator](./NegativeKeywordListIterator.md)|An iterator that you use to iterate through the negative keywords lists.
 
 ## <a name="orderby-string-orderby-"></a>orderBy(string orderBy)
-Returns a selector with the specified ordering applied. 
+Applies the specified ordering to the selected negative keywords lists. 
 
-Specify the `orderBy` parameter in the form, "columnName orderDirection" where:
+Specify the *orderBy* parameter in the form, "columnName orderDirection" where:
 
 - *columnName* is one of the [supported columns](#supported-negative-keyword-list-columns)
 - *orderDirection* is the order to sort the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.
 
-For example, the following call returns negative keyword lists in ascending order by MemberCount.
+For example, the following call returns negative keywords lists in ascending order by MemberCount.
 
-`negativeKeywordListSelector = negativeKeywordListSelector.orderBy("MemberCount");`
+`selector = selector.orderBy("MemberCount");`
 
 [!INCLUDE[order-by-limit](../includes/order-by-limit.md)]
 
@@ -67,9 +68,9 @@ orderBy|string|The ordering to apply.
 [NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Selector with ordering applied.
 
 ## <a name="withcondition-string-condition-"></a>withCondition(string condition)
-Returns a selector that limits the negative keyword lists to those that match the filter criteria. 
+Applies filter criteria to the negative keywords lists. 
 
-Specify the condition parameter in the form, "columnName operator value" where: 
+Specify the *condition* parameter in the form, "columnName operator value" where: 
 
 - *columnName* is one of the [supported columns](#supported-negative-keyword-list-columns).
 - *operator* is one of the supported [operators](#operators).
@@ -81,12 +82,11 @@ Supported Columns. The column names are case sensitive.
 
 |Column|Type|Example|
 |-|-|-|-
-<strong>Shared Set Attributes</strong>|
-MemberCount|int|`withCondition("MemberCount > 5")`
-Name|string|`withCondition("Name = 'negative keyword list'")`
-ReferenceCount|int|`withCondition("ReferenceCount > 5")`
-SharedSetId|double|`withCondition("SharedSetId > 5")`
-Status|enumeration|`withCondition("Status = ACTIVE")`<br /><br />Possible case-sensitive values are: <ul><li>ACTIVE</li><li>DELETED</li></ul>
+MemberCount|int|The number of negative keywords in the list.<br /><br />`withCondition("MemberCount > 10")`
+Name|string|The negative keywords list's name.<br /><br />`withCondition("Name = 'LIST NAME GOES HERE'")`
+ReferenceCount|int|The number of campaigns the list is associated with.<br /><br />`withCondition("ReferenceCount > 10")`
+SharedSetId|double|`withCondition("SharedSetId > 10")`
+Status|enumeration|Possible case-sensitive values are: <ul><li>ACTIVE</li><li>DELETED</li></ul>`withCondition("Status = ACTIVE")`
 
 
 ### Arguments
@@ -100,7 +100,7 @@ condition|string|The condition to add to the selector.
 [NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Selector with the condition applied.
 
 ## <a name="withids-string-ids-"></a>withIds(string[] ids)
-Returns a selector that contains only negative keyword lists with the specified IDs. 
+Gets negative keywords lists with the specified IDs.
 
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only negative keywords list 33333.
 
@@ -121,15 +121,15 @@ ids|string[]|An array of negative keyword lists IDs. The maximum number of IDs t
 ### Returns
 |Type|Description|
 |-|-
-[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Selector restricted to the given IDs.
+[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Selector with the IDs applied.
 
 ## <a name="withlimit-int-limit-"></a>withLimit(int limit)
-Returns a selector with the top *n* negative keyword lists that match the selection criteria.
+Gets the top *n* negative keywords lists that match the selection criteria.
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-limit|int|The number of negative keyword lists to return. The actual number may be less.
+limit|int|The number of negative keywords lists to return. The actual number may be less.
 
 ### Returns
 |Type|Description|
