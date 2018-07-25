@@ -11,43 +11,45 @@ ms.topic: "article"
 
 # AdGroupSelector
 
-Contains the methods for filtering the list of ad groups. For information about selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods for filtering and sorting the list of ad groups. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 Example usage:
 ```javascript
-var adGroupSelector = BingAdsApp.adGroups()
-     .withCondition("Impressions > 100")
-     .forDateRange("LAST_MONTH")
-     .orderBy("Clicks DESC");
+    var iterator = BingAdsApp.adGroups()
+        .withCondition("ClickConversionRate > 0.3")
+        .forDateRange("LAST_WEEK")
+        .orderBy("Clicks DESC")
+        .get();
 
- var adGroupIterator = adGroupSelector.get();
- while (adGroupIterator.hasNext()) {
-   var adGroup = adGroupIterator.next();
- }
+    while (iterator.hasNext()) {
+        var adGroup = iterator.next();
+        var metrics = adGroup.getStats();
+        Logger.log(`${adGroup.getName()} | clicks: ${metrics.getClick()} | conversion rate: ${metrics.getClickConversionRate()}`);
+    }
 ```
 
 ## Methods
 
 |Method Name|Return Type|Description|
 |-|-|-
-[forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the start and end dates applied.
-[forDateRange(string dateRange)](#fordaterange-string-daterange-)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the predefined date range applied.
-[get](#get)|[AdGroupIterator](./AdGroupIterator.md)|Returns an iterator that you use to iterate through the list of ad groups.
-[orderBy(string orderBy)](#orderby-string-orderby-)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the specified ordering applied.
-[withCondition(string condition)](#withcondition-string-condition-)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector that limits the ad groups to those that match the filter criteria.
-[withIds(string[] ids)](#withids-string-ids-)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector that returns only ad groups with the specified IDs.
-[withLimit(int limit)](#withlimit-int-limit-)|[AdGroupSelector](./AdGroupSelector.md)|Returns a selector with the top *n* ad groups that match the selection criteria.
+[forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-)|[AdGroupSelector](./AdGroupSelector.md)|Applies the start and end dates for selecting performance metrics.
+[forDateRange(string dateRange)](#fordaterange-string-daterange-)|[AdGroupSelector](./AdGroupSelector.md)|Applies the predefined date range for selecting performance metrics.
+[get](#get)|[AdGroupIterator](./AdGroupIterator.md)|Gets an iterator that you use to iterate through the list of ad groups.
+[orderBy(string orderBy)](#orderby-string-orderby-)|[AdGroupSelector](./AdGroupSelector.md)|Applies the specified ordering to the selected ad groups.
+[withCondition(string condition)](#withcondition-string-condition-)|[AdGroupSelector](./AdGroupSelector.md)|Applies filter criteria to the ad groups.
+[withIds(string[] ids)](#withids-string-ids-)|[AdGroupSelector](./AdGroupSelector.md)|Gets ad groups with the specified IDs.
+[withLimit(int limit)](#withlimit-int-limit-)|[AdGroupSelector](./AdGroupSelector.md)|Gets the top *n* ad groups that match the selection criteria.
 
 ## <a name="fordaterange-object-datefrom-object-dateto-"></a>forDateRange(Object dateFrom, Object dateTo)
-Returns a selector with the start and end dates applied. The date range specifies the performance data to include with the selector.
+Applies the start and end dates for selecting performance metrics.
 
 [!INCLUDE[date-range-objects](../includes/date-range-objects.md)]
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-dateFrom|Object|Start date of the date range that specifies the performance data to include in the selector.
-dateTo|Object|End date of the date range that specifies the performance data to include in the selector.
+dateFrom|Object|The start date of the date range that specifies the performance data to include in the selector.
+dateTo|Object|The end date of the date range that specifies the performance data to include in the selector.
 
 ### Returns
 |Type|Description|
@@ -55,7 +57,7 @@ dateTo|Object|End date of the date range that specifies the performance data to 
 [AdGroupSelector](./AdGroupSelector.md)|Selector with date range applied.
 
 ## <a name="fordaterange-string-daterange-"></a>forDateRange(String dateRange)
-Returns a selector with the predefined date range applied. The date range specifies the performance data to include with the selector.
+Applies the predefined date range for selecting performance metrics.
 
 [!INCLUDE[date-range-conditions-message](../includes/date-range-conditions-message.md)]
 
@@ -64,7 +66,7 @@ Returns a selector with the predefined date range applied. The date range specif
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-dateRange|String|The predefined date range string that specifies the performance data to include in the selector. The predefined date range string is case sensitive.
+dateRange|String|The predefined date range string that specifies the performance data to include in the selector. The predefined date-range string is case sensitive.
 
 ### Returns
 |Type|Description|
@@ -72,7 +74,7 @@ dateRange|String|The predefined date range string that specifies the performance
 [AdGroupSelector](./AdGroupSelector.md)|Selector with date range applied.
 
 ## <a name="get"></a>get
-Returns an [iterator](../concepts/iterators.md) based on the selector's selection criteria.
+Gets an [iterator](../concepts/iterators.md) based on the selector's selection criteria.
 
 ### Returns
 |Type|Description|
@@ -80,7 +82,7 @@ Returns an [iterator](../concepts/iterators.md) based on the selector's selectio
 [AdGroupIterator](./AdGroupIterator.md)|An iterator that you use to iterate through the selected ad groups.
 
 ## <a name="orderby-string-orderby-"></a>orderBy(String orderBy)
-Returns a selector with the specified ordering applied. 
+Applies the specified ordering to the selected ad groups. 
 
 Specify the `orderBy` parameter in the form, "columnName orderDirection" where:
 
@@ -89,7 +91,7 @@ Specify the `orderBy` parameter in the form, "columnName orderDirection" where:
 
 For example, the following call returns ad groups in ascending order by AverageCpc.
 
-`adGroupSelector = adGroupSelector.orderBy("AverageCpc");`
+`selector = selector.orderBy("AverageCpc");`
 
 
 [!INCLUDE[order-by-limit](../includes/order-by-limit.md)]
@@ -106,9 +108,9 @@ orderBy|string|The ordering to apply.
 [AdGroupSelector](./AdGroupSelector.md)|Selector with ordering applied.
 
 ## <a name="withcondition-string-condition-"></a>withCondition(String condition)
-Returns a selector that limits the ad groups it returns to those that match the filter criteria. 
+Applies filter criteria to the ad groups.
 
-Specify the condition parameter in the form, "columnName operator value" where: 
+Specify the *condition* parameter in the form, "columnName operator value" where: 
 
 - *columnName* is one of the [supported Columns](#supported-ad-group-columns). If you set *columName* to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-).
 - *operator* is one of the supported [operators](#operators).
@@ -118,32 +120,36 @@ Specify the condition parameter in the form, "columnName operator value" where:
 <a name="supported-ad-group-columns"></a>
 ### Supported Columns
 
-Supported columns for ad group filtering. The names are case sensitive.
+Supported columns for ad group filtering. The names are case sensitive. 
+
+The following are the performance metrics columns you may specify.
 
 |Column|Type|Example|
 |-|-|-
-<strong>Stats</strong>|
-AverageCpc|double|`withCondition("AverageCpc < 1.45")`
-AverageCpm|double|`withCondition("AverageCpm > 0.48")`
-AveragePosition|double|`withCondition("AveragePosition > 7.5")`
-ClickConversionRate|double|`withCondition("ClickConversionRate > 0.1")`
-Clicks|long|`withCondition("Clicks >= 21")`
-ConvertedClicks|long|`withCondition("ConvertedClicks <= 4")`
-Cost|double|`withCondition("Cost > 4.48")`<br /><br />The cost is in the currency of the account.
-Ctr|double|`withCondition("Ctr > 0.01")`<br /><br />The CTR is in the range 0..1, so a 5% CTR is represented as 0.05.
-Impressions|long|`withCondition("Impressions != 0")`
-&nbsp;|&nbsp;|&nbsp;
-<strong>Ad group attributes</strong>|
-Status|enumeration|`withCondition("Status = PAUSED")`<br /><br />Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>
-Name|string|`withCondition("Name CONTAINS_IGNORE_CASE 'shoes'")`
-CampaignName|string|`withCondition("CampaignName CONTAINS_IGNORE_CASE 'promotion'")`
-KeywordMaxCpc|double|`withCondition("KeywordMaxCpc > 10.0")`<br /><br />The value is in the currency of the account.
-CampaignStatus|enumeration|`withCondition("CampaignStatus = ENABLED")`<br /><br />This example returns ad groups from only ENABLED campaigns. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>
+AverageCpc|double|`withCondition("AverageCpc < 2.75")`
+AverageCpm|double|`withCondition("AverageCpm > 0.65")`
+AveragePosition|double|`withCondition("AveragePosition > 4")`
+ClickConversionRate|double|`withCondition("ClickConversionRate > 0.25")`
+Clicks|long|`withCondition("Clicks >= 33")`
+ConvertedClicks|long|`withCondition("ConvertedClicks >= 10")`
+Cost|double|`withCondition("Cost > 3.25")`<br /><br />The cost is in the account's currency.
+Ctr|double|`withCondition("Ctr > 0.05")`<br /><br />The CTR is in the range 0..1, so use 0.05 for a 5% CTR.
+Impressions|long|`withCondition("Impressions > 10")`
+
+The following are the entity properties you may specify.
+
+|Column|Type|Example|
+|-|-|-
+Status|enumeration|The ad group's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only enabled ad groups.<br /><br />`withCondition("Status = ENABLED")`
+Name|string|The ad group's name.<br /><br />`withCondition("Name CONTAINS_IGNORE_CASE 'sport'")`
+CampaignName|string|The campaign's name.<br /><br />`withCondition("CampaignName CONTAINS_IGNORE_CASE 'truck'")`
+KeywordMaxCpc|double|The ad group's CPC bid. The bid is in the account's currency.<br /><br />`withCondition("KeywordMaxCpc > 5.0")`
+CampaignStatus|enumeration|The campaign's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only ad groups whose parent campaign is paused.<br /><br />`withCondition("CampaignStatus = PAUSED")`
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-condition|string|The condition to add to the selector.
+condition|string|The condition to apply to the selector.
 
 ### Returns
 |Type|Description|
@@ -151,14 +157,14 @@ condition|string|The condition to add to the selector.
 [AdGroupSelector](./AdGroupSelector.md)|Selector with the condition applied.
 
 ## <a name="withids-string-ids-"></a>withIds(string[] ids)
-Returns a selector that contains only ad groups with the specified IDs. 
+Gets ad groups with the specified IDs. 
 
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only ad group 33333.
 
 ```javascript
-BingAdsApp.adGroups()
+var selector = BingAdsApp.adGroups()
     .withIds([11111, 22222, 33333])
-    .withIds([33333, 44444, 55555])
+    .withIds([33333, 44444, 55555]);
 ```
 
 
@@ -170,10 +176,10 @@ ids|string[]|An array of ad group IDs. The maximum number of IDs that you may sp
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupSelector](./AdGroupSelector.md)|Selector restricted to the given IDs.
+[AdGroupSelector](./AdGroupSelector.md)|Selector with the IDs applied.
 
 ## <a name="withlimit-int-limit-"></a>withLimit(int limit)
-Returns a selector with the top *n* ad groups that match the selection criteria.
+Gets the top *n* ad groups that match the selection criteria.
 
 ### Arguments
 |Name|Type|Description|

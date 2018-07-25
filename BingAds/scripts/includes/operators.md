@@ -1,28 +1,43 @@
 ### Operators
-The operator that you use depends on the column's type. Operators are case-sensitive. For example, "starts\_with" doesn't work (you must use STARTS_WITH). 
+The operator that you use depends on the column's type. Operators are case-sensitive. For example, you must use STARTS_WITH instead of starts\_with. 
 
-For Integer and Long columns: 
-
-```
-<  <=  >  >=  =  !=
-```
-
-For Double columns: 
+Operators for columns that contain integers and long values: 
 
 ```
-<  >
+<
+<=
+>
+>=
+=
+!=
 ```
 
-For String columns: 
+Operators for columns that contain double values: 
 
 ```
-=  !=  STARTS_WITH  STARTS_WITH_IGNORE_CASE  CONTAINS
- CONTAINS_IGNORE_CASE  DOES_NOT_CONTAIN  DOES_NOT_CONTAIN_IGNORE_CASE
+<
+>
 ```
 
-For Enumeration columns: 
+Operators for columns that contain string values: 
 
 ```
-=  !=  IN []  NOT_IN []
+=
+!=
+STARTS_WITH
+STARTS_WITH_IGNORE_CASE
+CONTAINS
+CONTAINS_IGNORE_CASE
+DOES_NOT_CONTAIN
+DOES_NOT_CONTAIN_IGNORE_CASE
+```
+
+Operators for columns that contain enumeration values: 
+
+```
+=
+!=
+IN []
+NOT_IN []
 ```
 
