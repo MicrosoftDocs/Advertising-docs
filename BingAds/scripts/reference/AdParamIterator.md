@@ -11,23 +11,23 @@ ms.topic: "article"
 
 # AdParamIterator
 
-Contains the methods for iterating through a list of substitution parameters. For information about Iterators, see [Iterators](../concepts/iterators.md).
+Contains the methods for iterating through a list of substitution parameters. For information about iterators, see [Iterators](../concepts/iterators.md).
 
 
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[hasNext](#hasnext)|Boolean|Returns a Boolean value that indicates whether the iterator has more elements.
+[hasNext](#hasnext)|Boolean|Gets a Boolean value that indicates whether the iterator has more elements.
 [next](#next)|[AdParam](AdParam.md)|Advances the iterator and returns the next substitution parameter.
-[totalNumEntities](#totalnumentities)|int|Returns the number of substitution parameters that matched the selector's selection criteria.
+[totalNumEntities](#totalnumentities)|int|Gets the number of substitution parameters that matched the selector's selection criteria.
 
 ## <a name="hasnext"></a>hasNext
-Returns a Boolean value that indicates whether the iterator has more elements.
+Gets a Boolean value that indicates whether the iterator has more elements.
 
 ### Returns
 |Type|Description|
 |-|-
-Boolean|Returns **true** if the iterator has more elements; otherwise, **false**.
+Boolean|Is **true** if the iterator has more elements; otherwise, **false**.
 
 ## <a name="next"></a>next
 Advances the iterator and returns the next substitution parameter.
@@ -38,7 +38,7 @@ Advances the iterator and returns the next substitution parameter.
 [AdParam](AdParam.md)|The next substitution parameter in the iterator.
 
 ## <a name="totalnumentities"></a>totalNumEntities
-Returns the number of substitution parameters that matched the selector's selection criteria. 
+Gets the number of substitution parameters that matched the selector's selection criteria. 
 
 [!INCLUDE[reads-limit](../includes/reads-limit.md)]
 

@@ -19,7 +19,7 @@ Contains the methods for writing text messages to the log.
 [log(string message)](#log-string-message-)|void|Writes a text string to the log.
 
 ## <a name="log-string-message-"></a>log(string message)
-Write a text string to the log. 
+Writes a text string to the log. 
 
 If you run the script in live mode, the log is found on the main Scripts page. If you run the script in preview mode, the log is found in the preview pane.
 
