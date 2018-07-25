@@ -55,11 +55,11 @@ To specify the match type for negative keywords:
 
 - For phrase match, use quotes around the keyword. For example:  
   
-  `nkwList.addNegativeKeywords(["\"planes\"", "\"trains\""])`.  
+  `nkwList.addNegativeKeywords(["\"trucks\"", "\"cars\""])`.  
   
 - For exact match, use square brackets around the keyword. For example:  
   
-  `nkwList.addNegativeKeywords(["[model planes]", "[toy trains]"])`.
+  `nkwList.addNegativeKeywords(["[offroad trucks]", "[sport cars]"])`.
 
 If the keyword does not include match-type syntax, phrase match type is assumed (broad match type is not supported).
 
