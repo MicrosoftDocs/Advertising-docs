@@ -84,7 +84,7 @@ Gets an [iterator](../concepts/iterators.md) based on the selector's selection c
 ## <a name="orderby-string-orderby-"></a>orderBy(String orderBy)
 Applies the specified ordering to the selected ad groups. 
 
-Specify the `orderBy` parameter in the form, "columnName orderDirection" where:
+Specify the *orderBy* parameter in the form, "columnName orderDirection" where:
 
 - *columnName* is one of the [supported columns](#supported-ad-group-columns). 
 - *orderDirection* is the order to sort the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.

@@ -18,10 +18,10 @@ Contains the methods for managing the keyword's URLs, tracking template, and cus
 [clearFinalUrl](#clearfinalurl)|void|Removes the keyword's final URL.
 [clearMobileFinalUrl](#clearmobilefinalurl)|void|Removes the keyword's final URL for mobile devices.
 [clearTrackingTemplate](#cleartrackingtemplate)|void|Removes the keyword's tracking template.
-[getCustomParameters](#getcustomparameters)|Object|Returns the keyword's custom parameters.
-[getFinalUrl](#getfinalurl)|string|Returns the keyword's final URL.
-[getMobileFinalUrl](#getmobilefinalurl)|string|Returns the keyword's final URL for mobile devices.
-[getTrackingTemplate](#gettrackingtemplate)|string|Returns the keyword's tracking template.
+[getCustomParameters](#getcustomparameters)|Object|Gets the keyword's custom parameters.
+[getFinalUrl](#getfinalurl)|string|Gets the keyword's final URL.
+[getMobileFinalUrl](#getmobilefinalurl)|string|Gets the keyword's final URL for mobile devices.
+[getTrackingTemplate](#gettrackingtemplate)|string|Gets the keyword's tracking template.
 [setCustomParameters(Object customParameters)](#setcustomparameters-object-customparameters-)|void|Sets the keyword's custom parameters.
 [setFinalUrl(String finalUrl)](#setfinalurl-string-finalurl-)|void|Sets the keyword's final URL.
 [setMobileFinalUrl(String finalUrl)](#setmobilefinalurl-string-finalurl-)|void|Sets the keyword's final URL for mobile.
@@ -55,7 +55,7 @@ void|Returns nothing.
 
 
 ## <a name="getcustomparameters"></a>getCustomParameters
-Returns the keyword's custom parameters. 
+Gets the keyword's custom parameters. 
 
 [!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
 
@@ -66,9 +66,9 @@ Object|A map of the keyword's custom parameters.<br /><br />For example, `{key1:
 
 
 ## <a name="getfinalurl"></a>getFinalUrl
-Returns the keyword's final URL. The final URL represents the actual landing page for your ad. 
+Gets the keyword's final URL. This is the URL of the webpage that the user is taken to when they click your ad. 
 
-Final URLs follow the same override rules as destination URLs. For example, a final URL at the keyword level overrides the final URL at the ad level.
+The same override rules apply as elsewhere. For example, specifying a keyword's final URL overrides the ad's final URL.
 
 ### Returns
 |Type|Description|
@@ -77,9 +77,9 @@ string|The keyword's final URL.
 
 
 ## <a name="getmobilefinalurl"></a>getMobileFinalUrl
-Returns the keyword's final URL for mobile devices. The final URL represents the actual landing page for your ad. 
+Gets the keyword's final URL for mobile devices. This is the URL of the mobile webpage that the user is taken to when they click your ad. 
 
-Final URLs follow the same override rules as destination URLs. For example, a final URL at the keyword level overrides the final URL at the ad level.
+The same override rules apply as elsewhere. For example, specifying a keyword's mobile final URL overrides the ad's mobile final URL.
 
 ### Returns
 |Type|Description|
@@ -88,7 +88,7 @@ string|The keyword's final URL for mobile devices.
 
 
 ## <a name="gettrackingtemplate"></a>getTrackingTemplate
-Returns the keyword's tracking template. 
+Gets the keyword's tracking template. 
 
 [!INCLUDE[tracking-templates](../includes/tracking-templates.md)]
 
@@ -100,7 +100,7 @@ string|The keyword's tracking template.
 ## <a name="setcustomparameters-object-customparameters-"></a>setCustomParameters(Object customParameters)
 Sets the keyword's custom parameters. Use this method if you include custom substitution strings in your final URL or tracking template.
 
-To use a customer parameter name in the final URL or tracking template, you must enclose the name in curly braces and prepend an underscore (_) to the name. For example, if the parameter name is foo, use {_foo} in the tracking template or final URL. Do not add a leading underscore to the parameter name when you define the object. 
+To use a customer parameter name in the final URL or tracking template, you must enclose the name in curly braces and prepend an underscore (\_) to the name. For example, if the parameter name is foo, use {_foo} in the tracking template or final URL. Do not add a leading underscore to the parameter name when you define the custom parameters object. 
 
 Calling this method replaces the keywords's existing custom parameters.
 
@@ -112,7 +112,7 @@ To clear the custom parameters from the keyword, pass an empty object (for examp
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|A map of custom parameters to use in the keyword.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value. The parameter's name may contain only alphanumeric characters and the parameter's value may not contain white space. The name and value may not exceed 60 and 200 bytes, respectively.
+customParameters|Object|A map of custom parameters to use in the keyword.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value. The parameter's name may contain only alphanumeric characters and the parameter's value may not contain white space. The name may contain a maximum of 60 bytes and the value may contain a maximum of 200 bytes.
 
 ### Returns
 |Type|Description|
@@ -141,9 +141,9 @@ void|Returns nothing.
 ## <a name="setmobilefinalurl-string-finalurl-"></a>setMobileFinalUrl(String finalUrl)
 Sets the keyword's final URL for mobile devices. 
 
-The final URL must be the URL of the page that the user ends up on after clicking your ad (and after all redirects have taken place).
+The final URL identifies the webpage that the user is taken to when they click your ad. If not specified, the entity inherits the final URL from its parent entity. For example, the keyword entity inherits the ad's final URL. Specify the keyword's final URL if you want to override the ad's final URL.
 
-If not specified, the entity inherits the mobile final URL from its parent entity. For example, the keyword entity inherits the ad's mobile final URL. You specify the keyword's mobile final URL if you want to override the ad's mobile final URL.
+For more information, see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
 To specify a final URL for mobil devices, you must first specify a final URL for non-mobile devices (see `setFinalUrl()`).
 

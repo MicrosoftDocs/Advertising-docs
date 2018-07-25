@@ -15,7 +15,7 @@ Contains the methods used to define and add an ad group. For information about b
 
 Example usage:
 ```javascript
-    // Get campaign to ad ad group to.
+    // Get a campaign to add the ad group to.
     var iterator = BingAdsApp.campaigns()
         .withIds(['CAMPAIGN ID GOES HERE'])
         .get();
@@ -23,7 +23,7 @@ Example usage:
     if (iterator.hasNext()) {
         var campaign = iterator.next();
 
-        // Get the campaign's ad group builder and adds an ad group.
+        // Get the campaign's ad group builder and add an ad group.
         var operation = campaign.newAdGroupBuilder();
             .withName("AD GROUP NAME GOES HERE")
             .withStatus("ENABLED")
