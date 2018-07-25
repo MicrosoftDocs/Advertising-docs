@@ -13,42 +13,45 @@ ms.topic: "article"
 
 Contains the methods for determining whether the keyword was successfully added. For information about builders, operation objects, and performance considerations, see [What are builders?](../concepts/builders.md)
 
+Because calling any of this object's methods forces Bing to flush the build queue, be sure to read the performance considerations carefully.
+
+
 ## Methods
 
 |Method Name|Return Type|Description|
 |-|-|-
-[getErrors](#geterrors)|string[]|Returns an empty array if the keyword is successfully created; otherwise, a list of errors.
-[getResult](#getresult)|[Keyword](./Keyword.md)|Returns the newly added keyword if the operation succeeded; otherwise, null.
-[isSuccessful](#issuccessful)|boolean|Returns a Boolean value that indicates whether this operation succeeded.
+[getErrors](#geterrors)|string[]|Gets the errors that occured when you added the keyword.
+[getResult](#getresult)|[Keyword](./Keyword.md)|Gets the keyword that you added.
+[isSuccessful](#issuccessful)|boolean|Gets a Boolean value that indicates whether the add operation succeeded.
 
 ## <a name="geterrors"></a>getErrors
 
-Returns an empty array if the keyword is successfully created; otherwise, a list of error codes.
+Gets the errors that occured when you added the ad group.
 
 ### Returns
 
 |Type|Description|
 |-|-
-string[]|An empty array if the keyword is successfully created; otherwise, a list of symbolic error codes. For example, if you specify an invalid bid amount, the call returns CampaignServiceInvalidSearchBids. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
+string[]|An array of symbolic error codes if the add operation failed; otherwise, an empty array. For example, if you specify an invalid bid amount, the call returns CampaignServiceInvalidSearchBids. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
 
 
 ## <a name="getresult"></a>getResult
 
-Returns the newly added keyword if the operation succeeded; otherwise, null.
+Gets the keyword that you added.
 
 ### Returns
 
 |Type|Description|
 |-|-
-[Keyword](./Keyword.md)|The newly added keyword; otherwise, null.
+[Keyword](./Keyword.md)|The keyword that you added if the operation succeeded; otherwise, null.
 
 ## <a name="issuccessful"></a>isSuccessful
 
-Returns a Boolean value that indicates whether this operation succeeded.
+Gets a Boolean value that indicates whether this operation succeeded.
 
 ### Returns
 
 |Type|Description|
 |-|-
-Boolean|Returns **true** if this operation succeeded; otherwise, **false**.
+Boolean|Is **true** if this operation succeeded; otherwise, **false**.
 

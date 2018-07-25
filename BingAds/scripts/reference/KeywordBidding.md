@@ -17,8 +17,8 @@ Contains the methods for specifying the keyword's bid values.
 |Method Name|Return Type|Description|
 |-|-|-
 [clearCpc](#clearcpc)|void|Removes the keyword's CPC bid.
-[getCpc](#getcpc)|double|Returns the keyword's CPC bid.
-[setCpc(double cpc)](#setcpc-double-cpc-)|void|Sets the maximum CPC bid for the keyword.
+[getCpc](#getcpc)|double|Gets the keyword's CPC bid.
+[setCpc(double cpc)](#setcpc-double-cpc-)|void|Sets the keyword's maximum CPC bid.
 
 ## <a name="clearcpc"></a>clearCpc
 Removes the keyword's CPC bid. 
@@ -29,7 +29,7 @@ Removes the keyword's CPC bid.
 void|Returns nothing.
 
 ## <a name="getcpc"></a>getCpc
-Returns the keyword's CPC bid. 
+Gets the keyword's CPC bid. 
 
 ### Returns
 |Type|Description|
@@ -37,9 +37,9 @@ Returns the keyword's CPC bid.
 double|The keyword's CPC bid. If the keyword doesn't specify a bid, this field contains the bid inherited from the ad group.
 
 ## <a name="setcpc-double-cpc-"></a>setCpc(double cpc)
-Sets the CPC bid for the keyword. 
+Sets the keyword's maximum CPC bid. 
 
-Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is ManualCpc or EnhancedCpc.
+Specifies the bid amount to use when the keyword matches the user's search term. Applies only if the ad group's bidding strategy is set to MANUAL_CPC.
 
 To use the bid amount specified at the ad group level, call the `clearCpc()` method.
 
@@ -50,7 +50,7 @@ If you specify a property value that's not valid, the call silently fails. To co
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-cpc|double|The CPC bid for the keyword. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
+cpc|double|The keyword's maximum CPC bid. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
 
 ### Returns
 |Type|Description|

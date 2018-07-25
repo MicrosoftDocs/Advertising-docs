@@ -16,14 +16,14 @@ Contains the methods for managing the campaign's URLs. For more information, see
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[clearTrackingTemplate](#cleartrackingtemplate)|void|Removes the tracking template from this campaign.
-[getCustomParameters](#getcustomparameters)|Object|Returns the campaign's custom parameters.
-[getTrackingTemplate](#gettrackingtemplate)|string|Returns the campaign's tracking template.
+[clearTrackingTemplate](#cleartrackingtemplate)|void|Removes the campaign's tracking template.
+[getCustomParameters](#getcustomparameters)|Object|Gets the campaign's custom parameters.
+[getTrackingTemplate](#gettrackingtemplate)|string|Gets the campaign's tracking template.
 [setCustomParameters(Object customParameters)](#setcustomparameters-object-customparameters-)|void|Sets the campaign's custom parameters.
 [setTrackingTemplate(String trackingTemplate)](#settrackingtemplate-string-trackingtemplate-)|void|Sets the campaign's tracking template.
 
 ## <a name="cleartrackingtemplate"></a>clearTrackingTemplate
-Removes the tracking template from this campaign. For information about tracking templates, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
+Removes the campaign's tracking template. For information about tracking templates, see [Tracking Templates](/bingads/guides/url-tracking-upgraded-urls#trackingtemplatevalidation).
 
 ### Returns
 |Type|Description|
@@ -31,7 +31,7 @@ Removes the tracking template from this campaign. For information about tracking
 void|Returns nothing.
 
 ## <a name="getcustomparameters"></a>getCustomParameters
-Returns the campaign's custom parameters.  
+Gets the campaign's custom parameters.  
 
 [!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
 
@@ -41,7 +41,7 @@ Returns the campaign's custom parameters.
 Object|A map of the campaign's custom parameters.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value.
 
 ## <a name="gettrackingtemplate"></a>getTrackingTemplate
-Returns the campaign's tracking template. 
+Gets the campaign's tracking template. 
 
 [!INCLUDE[tracking-templates](../includes/tracking-templates.md)]
 
@@ -51,9 +51,9 @@ Returns the campaign's tracking template.
 string|The campaign's tracking template.
 
 ## <a name="setcustomparameters-object-customparameters-"></a>setCustomParameters(Object customParameters)
-Sets the custom parameters for this campaign. Use this method if you include custom substitution strings in your final URL or tracking template.
+Sets the campaign's custom parameters. Use this method if you include custom substitution strings in your final URL or tracking template.
 
-To use a customer parameter name in the final URL or tracking template, you must enclose the name in curly braces and prepend an underscore (_) to the name. For example, if the parameter name is foo, use {_foo} in the tracking template or final URL. Do not add a leading underscore to the parameter name when you define the object. 
+To use a customer parameter name in the final URL or tracking template, you must enclose the name in curly braces and prepend an underscore (\_) to the name. For example, if the parameter name is foo, use {_foo} in the tracking template or final URL. Do not add a leading underscore to the parameter name when you define the custom parameters object. 
 
 Calling this method replaces the campaign's existing custom parameters.
 
@@ -65,7 +65,7 @@ To clear the custom parameters from the campaign, pass an empty object (for exam
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|A map of custom parameters to use in the campaign.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value. The parameter's name may contain only alphanumeric characters and the parameter's value may not contain white space. The name and value may not exceed 60 and 200 bytes, respectively.
+customParameters|Object|A map of custom parameters to use in the campaign.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value. The parameter's name may contain only alphanumeric characters and the parameter's value may not contain white space. The name may contain a maximum of 60 bytes and the value may contain a maximum of 200 bytes.
 
 ### Returns
 |Type|Description|
@@ -73,7 +73,7 @@ customParameters|Object|A map of custom parameters to use in the campaign.<br />
 void|Returns nothing.
 
 ## <a name="settrackingtemplate-string-trackingtemplate-"></a>setTrackingTemplate(string trackingTemplate)
-Sets the tracking template to use with this campaign. 
+Sets the campaign's tracking template. 
 
 [!INCLUDE[tracking-templates](../includes/tracking-templates.md)]
 
