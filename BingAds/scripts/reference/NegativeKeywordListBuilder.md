@@ -15,12 +15,17 @@ Contains the methods for defining and creating a negative keyword list. For info
 
 Example usage:
 ```javascript
- var negativeKeywordListBuilder = BingAdsApp.newNegativeKeywordListBuilder()
-         .withName("NegativeKeywordList");
+     var operation = BingAdsApp.newNegativeKeywordListBuilder()
+        .withName("NKW NAME GOES HERE")
+        .build();
 
- var negativeKeywordListOperation = negativeKeywordListBuilder.build();
-
- var negativeKeywordList = negativeKeywordListOperation.getResult();
+    // See the Builders topic for performance considerations
+    // when using the operation object's methods.
+    if (!operation.isSuccessful()) {
+        for (var error of operation.getErrors()) {
+            Logger.log(`${error}\n`);
+        }
+    }
 ```
 
 
@@ -28,7 +33,7 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [build](#build)|[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|Creates the negative keyword list and returns an operation object that you can use to check whether the list was successfully added.
-[withName(string name)](#withname-string-name-)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Sets the name of the negative keyword list.
+[withName(string name)](#withname-string-name-)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Sets this negative keyword list's name.
 
 ## <a name="build"></a>build
 Creates the negative keyword list and returns an operation object that you can use to check whether the list was successfully added.
@@ -39,7 +44,7 @@ Creates the negative keyword list and returns an operation object that you can u
 [NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|An operation object that you use to check whether the list was successfully added.
 
 ## <a name="withname-string-name-"></a>withName(string name)
-Sets the name of the negative keyword list.
+Sets this negative keyword list's name.
 
 ### Arguments
 |Name|Type|Description|
