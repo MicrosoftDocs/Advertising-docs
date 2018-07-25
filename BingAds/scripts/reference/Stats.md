@@ -11,33 +11,33 @@ ms.topic: "article"
 
 # Stats
 
-Contains the methods for accessing the entity's performance data.
+Contains the methods for accessing an entity's performance data.
 
 
 Example usage:
 ```javascript
- var campaign = BingAdsApp.campaigns().get().next();
- var stats = campaign.getStats("LAST_MONTH");
- var impressions = stats.getImpressions();
- var clicks = stats.getClicks();
- // etc.
+    var campaign = BingAdsApp.campaigns().get().next();
+    var stats = campaign.getStats("LAST_WEEK");
+    var conversionRate = stats.getClickConversionRate();
+    var convertedClicks = stats.getConvertedClicks();
+    // etc.
 ```
 
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[getAverageCpc](#getaveragecpc)|double|Returns the average cost per click.
-[getAverageCpm](#getaveragecpm)|double|Returns the average cost per thousand impressions.
-[getAveragePosition](#getaverageposition)|double|Returns the average position.
-[getClickConversionRate](#getclickconversionrate)|double|Returns the conversion rate for clicks in the range 0..1.
-[getClicks](#getclicks)|long|Returns the number of clicks.
-[getConvertedClicks](#getconvertedclicks)|long|Returns the number of clicks that converted.
-[getCost](#getcost)|double|Returns the cost (spend) in the currency of the current account.
-[getCtr](#getctr)|double|Returns the click through rate in the range 0..1.
-[getImpressions](#getimpressions)|long|Returns the number of impressions.
+[getAverageCpc](#getaveragecpc)|double|Gets the average cost per click.
+[getAverageCpm](#getaveragecpm)|double|Gets the average cost per thousand impressions.
+[getAveragePosition](#getaverageposition)|double|Gets the average position.
+[getClickConversionRate](#getclickconversionrate)|double|Gets the conversion rate for clicks.
+[getClicks](#getclicks)|long|Gets the number of clicks.
+[getConvertedClicks](#getconvertedclicks)|long|Gets the number of clicks that converted.
+[getCost](#getcost)|double|Gets the cost (spend) in the account's currency.
+[getCtr](#getctr)|double|Gets the click through rate.
+[getImpressions](#getimpressions)|long|Gets the number of impressions.
 
 ## <a name="getaveragecpc"></a>getAverageCpc
-Returns the average cost per click.
+Gets the average cost per click.
 
 ### Returns
 |Type|Description|
@@ -45,7 +45,7 @@ Returns the average cost per click.
 double|The average cost per click.
 
 ## <a name="getaveragecpm"></a>getAverageCpm
-Returns the average cost per thousand impressions.
+Gets the average cost per thousand impressions.
 
 ### Returns
 |Type|Description|
@@ -53,23 +53,23 @@ Returns the average cost per thousand impressions.
 double|The average cost per thousand impressions.
 
 ## <a name="getaverageposition"></a>getAveragePosition
-Returns the average position where ads were placed.
+Gets the average position where ads were placed.
 
 ### Returns
 |Type|Description|
 |-|-
-double|The average position ads were placed.
+double|The average position where ads were placed.
 
 ## <a name="getclickconversionrate"></a>getClickConversionRate
-Returns the conversion rate for clicks in the range 0..1.
+Gets the conversion rate for clicks.
 
 ### Returns
 |Type|Description|
 |-|-
-double|The conversion rate for clicks in the range 0..1.
+double|The conversion rate for clicks, in the range 0..1.
 
 ## <a name="getclicks"></a>getClicks
-Returns the number of clicks.
+Gets the number of clicks.
 
 ### Returns
 |Type|Description|
@@ -77,7 +77,7 @@ Returns the number of clicks.
 long|The number of clicks.
 
 ## <a name="getconvertedclicks"></a>getConvertedClicks
-Returns the number of clicks that converted.
+Gets the number of clicks that converted.
 
 ### Returns
 |Type|Description|
@@ -85,23 +85,23 @@ Returns the number of clicks that converted.
 long|The number of clicks that converted.
 
 ## <a name="getcost"></a>getCost
-Returns the cost (spend) in the currency of the current account.
+Gets the cost (spend) in the account's currency.
 
 ### Returns
 |Type|Description|
 |-|-
-double|The cost in the currency of the account.
+double|The cost in the account's currency.
 
 ## <a name="getctr"></a>getCtr
-Returns the click through rate in the range 0..1.
+Gets the click through rate.
 
 ### Returns
 |Type|Description|
 |-|-
-double|The click through rate.
+double|The click through rate, in the range 0..1.
 
 ## <a name="getimpressions"></a>getImpressions
-Returns the number of impressions.
+Gets the number of impressions.
 
 ### Returns
 |Type|Description|
