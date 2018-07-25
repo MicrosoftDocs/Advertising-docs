@@ -16,22 +16,22 @@ Contains the methods for managing a keyword. For information about keywords, see
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[adParams](#adparams)|[AdParamSelector](AdParamSelector.md)|Returns a selector of all substitution parameters used in the ad for this keyword.
-[bidding](#bidding)|[KeywordBidding](./KeywordBidding.md)|Returns an object that contains the methods used to manage the keyword's bid values.
-[clearDestinationUrl](#cleardestinationurl)|void|Clears the keyword's destination URL.
+[adParams](#adparams)|[AdParamSelector](AdParamSelector.md)|Gets a selector of all substitution parameters used in the ad for this keyword.
+[bidding](#bidding)|[KeywordBidding](./KeywordBidding.md)|Gets this keyword's bid amount.
+[clearDestinationUrl](#cleardestinationurl)|void|Removes this keyword's destination URL.
 [enable](#enable)|void|Enables this keyword.
-[getApprovalStatus](#getapprovalstatus)|string|Returns the keyword's editorial approval status.
-[getEntityType](#getentitytype)|string|Returns this entity's type.
-[getId](#getid)|string|Returns the ID that uniquely identifies this keyword.
-[getMatchType](#getmatchtype)|String|Returns the keyword's match type.
-[getStats](#getstats)|[Stats](./Stats.md)|Returns the performance data for this keyword.
-[getText](#gettext)|string|Returns the keyword's text.
-[isEnabled](#isenabled)|Boolean|Returns a Boolean value that indicates whether this keyword is enabled.
-[isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates whether this keyword is paused.
+[getApprovalStatus](#getapprovalstatus)|string|Gets this keyword's editorial approval status.
+[getEntityType](#getentitytype)|string|Gets this entity's type.
+[getId](#getid)|string|Gets the ID that uniquely identifies this keyword.
+[getMatchType](#getmatchtype)|String|Gets this keyword's match type.
+[getStats](#getstats)|[Stats](./Stats.md)|Gets this keyword's performance data.
+[getText](#gettext)|string|Gets the keyword's text.
+[isEnabled](#isenabled)|Boolean|Gets a Boolean value that indicates whether this keyword is enabled.
+[isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this keyword is paused.
 [pause](#pause)|void|Pauses this keyword.
 [remove](#remove)|void|Removes this keyword.
-[setAdParam(int index, string insertionText)](#setadparam-int-index-string-insertiontext-)|void|Creates the substitution parameter and sets its value to the specified text.
-[urls](#urls)|[KeywordUrls](./KeywordUrls.md)|Returns the keyword's URL fields.
+[setAdParam(int index, string insertionText)](#setadparam-int-index-string-insertiontext-)|void|Adds the substitution parameter and sets its value to the specified text.
+[urls](#urls)|[KeywordUrls](./KeywordUrls.md)|Contains the methods for managing this keywords's final URLs, tracking template, and custom parameters.
 
 <!--
 [getAdGroup](#getadgroup)|[AdGroup](AdGroup.md)|Returns the ad group this keyword belongs to.
@@ -39,7 +39,7 @@ Contains the methods for managing a keyword. For information about keywords, see
 -->
 
 ## <a name="adparams"></a>adParams
-Returns a selector of all substitution parameters used in ads for this keyword.
+Gets a selector of all substitution parameters used in ads for this keyword.
 
 The substitution values are used in an ad if the ad's title, text, display URL, or destination URL contains the {Param1}, {Param2}, or {Param3} dynamic substitution string.
 
@@ -50,15 +50,15 @@ The substitution values are used in an ad if the ad's title, text, display URL, 
 
 
 ## <a name="bidding"></a>bidding
-Returns an object that contains the methods used to manage the keyword's bid values.
+Gets this keyword's bid amount.
 
 ### Returns
 |Type|Description|
 |-|-
-[KeywordBidding](./KeywordBidding.md)|An object that contains the methods used to manage the keyword's bid values.
+[KeywordBidding](./KeywordBidding.md)|Contains the methods for managing this keyword's bid amount.
 
 ## <a name="cleardestinationurl"></a>clearDestinationUrl
-Clears the keyword's destination URL.
+Removes this keyword's destination URL.
 
 ### Returns
 |Type|Description|
@@ -84,7 +84,7 @@ Returns the ad group this keyword belongs to.
 -->
 
 ## <a name="getapprovalstatus"></a>getApprovalStatus
-Returns the keyword's editorial approval status.
+Gets this keyword's editorial approval status.
 
 ### Returns
 |Type|Description|
@@ -107,10 +107,10 @@ Returns this entity's type.
 ### Returns
 |Type|Description|
 |-|-
-string|This entity's type (is set to Keyword).
+string|This entity's type, which is *Keyword*.
 
 ## <a name="getid"></a>getId
-Returns the ID that uniquely identifies this keyword.
+Gets the ID that uniquely identifies this keyword.
 
 ### Returns
 |Type|Description|
@@ -118,7 +118,7 @@ Returns the ID that uniquely identifies this keyword.
 string|The ID that uniquely identifies this keyword.
 
 ## <a name="getmatchtype"></a>getMatchType
-Returns the keyword's match type. 
+Gets this keyword's match type. 
 
 ### Returns
 |Type|Description|
@@ -127,7 +127,7 @@ string|The keyword's match type. Possible values are:<br /><ul><li>BROAD</li><li
 
 
 ## <a name="getstats"></a>getStats
-Returns performance data for this keyword. 
+Gets this keywords performance data. 
 
 ### Returns
 |Type|Description|
@@ -135,9 +135,9 @@ Returns performance data for this keyword.
 [Stats](./Stats.md)|The keyword's performance data. For example, clicks and impressions.
 
 ## <a name="gettext"></a>getText
-Returns the keyword's text. The text includes the keyword's match type syntax, if any. For example:
+Gets the keyword's text. The text includes the keyword's match type syntax, if any. For example:
 
-- The keyword is *books* if the match type is **broad**, or *+books* if you use broad type modifier 
+- The keyword is *books* if the match type is **broad**, or *+books* if the keyword uses the broad type modifier 
 - The keyword is *"books"* if the match type is **phrase**
 - The keyword is *[hardcover books]* if the match type is **exact**
 
@@ -149,24 +149,24 @@ For information about these types, see [What are keyword match types, and how do
 string|The keyword's text.
 
 ## <a name="isenabled"></a>isEnabled
-Returns a Boolean value that indicates whether this keyword is enabled.
+Gets a Boolean value that indicates whether this keyword is enabled.
 
 ### Returns
 |Type|Description|
 |-|-
-Boolean|Returns **true** if this keyword is enabled; otherwise, **false**.
+Boolean|Is **true** if this keyword is enabled; otherwise, **false**.
 
 ## <a name="ispaused"></a>isPaused
-Returns a Boolean value that indicates whether this keyword is paused.
+Gets a Boolean value that indicates whether this keyword is paused.
 
 ### Returns
 |Type|Description|
 |-|-
-Boolean|Returns **true** if this keyword is paused; otherwise, **false**.
+Boolean|Is **true** if this keyword is paused; otherwise, **false**.
 
 
 ## <a name="setadparam-int-index-string-insertiontext-"></a>setAdParam(int index, string insertionText)
-Creates the substitution parameter and sets its value to the specified text. 
+Adds the substitution parameter and sets its value to the specified text. If the substitution parameter exists, it's text is overwritten.
 
 The substitution values are used in an ad if the ad's title, text, display URL, or final URL contains the {Param1}, {Param2}, or {Param3} dynamic substitution strings. For restrictions and information about using these parameters, see [Param1](/bingads/campaign-management-service/keyword#param1), [Param2](/bingads/campaign-management-service/keyword#param2), and [Param3](/bingads/campaign-management-service/keyword#param3).
 
@@ -201,12 +201,12 @@ Removes this keyword.
 void|Returns nothing.
 
 ## <a name="urls"></a>urls
-Returns the keyword's URL fields.
+Contains the methods for managing this keywords's final URLs, tracking template, and custom parameters.
 
 ### Returns
 |Type|Description|
 |-|-
-[KeywordUrls](./KeywordUrls.md)|The object used to manage the keyword's final URLs, tracking template, and custom parameters.
+[KeywordUrls](./KeywordUrls.md)|Contains the methods for managing the keyword's final URLs, tracking template, and custom parameters.
 
 
 

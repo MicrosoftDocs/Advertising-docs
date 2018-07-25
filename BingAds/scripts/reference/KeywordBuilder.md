@@ -15,16 +15,16 @@ Contains the methods for defining and creating a keyword. For information about 
 
 Example usage:
 ```javascript
-    var keywordOperation = adGroup.newKeywordBuilder()
-        .withText("text")
-        .withCpc(1.5)
-        .withFinalUrl("http://www.example.com")
+    var operation = adGroup.newKeywordBuilder()
+        .withText("KEYWORD TEXT GOES HERE")
+        .withCpc(0.5)
+        .withFinalUrl("http://www.contoso.com")
         .build();
 
     // See the Builders topic for performance considerations
-    // when using the operation object's methods
-    if (!keywordOperation.isSuccessful()) {
-        for (var error of keywordOperation.getErrors()) {
+    // when using the operation object's methods.
+    if (!operation.isSuccessful()) {
+        for (var error of operation.getErrors()) {
             Logger.log(`${error}\n`);
         }
     }
@@ -39,7 +39,7 @@ Example usage:
 [withFinalUrl(string finalUrl)](#withfinalurl-string-finalurl-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's final URL.
 [withMobileFinalUrl(string mobileFinalUrl)](#withmobilefinalurl-string-mobilefinalurl-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's final URL for mobile devices.
 [withText(string text)](#withtext-string-text-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's text.
-[withTrackingTemplate(string trackingTemplate)](#withtrackingtemplate-string-trackingtemplate-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the tracking template used with this keyword.
+[withTrackingTemplate(string trackingTemplate)](#withtrackingtemplate-string-trackingtemplate-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's tracking template.
 
 
 ## <a name="build"></a>build
@@ -53,7 +53,7 @@ Creates the keyword and returns an operation object that you can use to check wh
 ## <a name="withcpc-double-cpc-"></a>withCpc(double cpc)
 Sets the keyword's maximum CPC bid.
 
-Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is MANUAL_CPC.
+Specifies the bid amount to use when the keyword matches the user's search term. Applies only if the ad group's bidding strategy is set to MANUAL_CPC.
 
 To use the bid amount specified at the ad group level, do not call this method.
 
@@ -63,7 +63,7 @@ For more information about bid amounts, see [Bid](/bingads/campaign-management-s
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-cpc|double|The CPC bid to apply to the keyword. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
+cpc|double|The maximum CPC bid to apply to the keyword. The account's currency determines the minimum and maximum bid values. For more information, see [Bid and budget currencies](/bingads/guides/currencies#bidandbudget).
 
 ### Returns
 |Type|Description|
@@ -107,11 +107,12 @@ finalUrl|string|The final URL for the keyword.
 ## <a name="withmobilefinalurl-string-mobilefinalurl-"></a>withMobileFinalUrl(string mobileFinalUrl)
 Sets the keyword's final URL for mobile devices.
 
-The final URL must be the URL of the page that the user ends up on after clicking your ad (and after all redirects have taken place).
+The final URL identifies the webpage that the user is taken to when they click your ad. If not specified, the entity inherits the final URL from its parent entity. For example, the keyword entity inherits the ad's final URL. Specify the keyword's final URL if you want to override the ad's final URL.
 
-Final URLs follow the same override rules as destination URLs. For example, a mobile final URL at the keyword level overrides a mobile final URL at the ad level.
+For more information, see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-If you specify a mobile final URL you must also specify FinalUrl.
+To specify a final URL for mobil devices, you must first specify a final URL for non-mobile devices (see `withFinalUrl()`).
+
 
 ### Arguments
 |Name|Type|Description|
@@ -137,7 +138,7 @@ To specify the keyword's match type, use the following syntax:
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-text|string|The keyword's text. The text may contain a maximum of 100 characters. Specify the keyword in the locale of the ad group's language value.
+text|string|The keyword's text. The keyword's text is required. The text may contain a maximum of 100 characters. Specify the text in the locale of the ad group's language value.
 
 ### Returns
 |Type|Description|
@@ -145,7 +146,7 @@ text|string|The keyword's text. The text may contain a maximum of 100 characters
 [KeywordBuilder](./KeywordBuilder.md)|Keyword builder with the keyword text applied.
 
 ## <a name="withtrackingtemplate-string-trackingtemplate-"></a>withTrackingTemplate(string trackingTemplate)
-Sets the tracking template to use with the keyword. 
+Sets the keyword's tracking template. 
 
 [!INCLUDE[tracking-templates](../includes/tracking-templates.md)]
 

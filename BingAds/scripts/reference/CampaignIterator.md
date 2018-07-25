@@ -15,27 +15,31 @@ Contains the methods for iterating through a list of campaigns. For information 
 
 Example usage:
 ```javascript
-var campaignSelector = BingAdsApp.campaigns();
-var campaignIterator = campaignSelector.get();
-while (campaignIterator.hasNext()) {
-  var campaign = campaignIterator.next();
-}
+    // Gets the iterator that iterates all campaigns
+    // in the account.
+    var iterator = BingAdsApp.campaigns().get();
+
+    // Loops through all campaigns in the account.
+    while (iterator.hasNext()) {
+        var campaign = iterator.next();
+        Logger.log(`${campaign.getName()}`);
+    }
 ```
 
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[hasNext](#hasnext)|Boolean|Returns a Boolean value that indicates whether the iterator has more elements.
+[hasNext](#hasnext)|Boolean|Gets a Boolean value that indicates whether the iterator has more elements.
 [next](#next)|[Campaign](./Campaign.md)|Advances the iterator and returns the next campaign.
-[totalNumEntities](#totalnumentities)|int|Returns the number of campaigns that matched the selector's selection criteria.
+[totalNumEntities](#totalnumentities)|int|Gets the number of campaigns that matched the selector's selection criteria.
 
 ## <a name="hasnext"></a>hasNext
-Returns a Boolean value that indicates whether the iterator has more elements.
+Gets a Boolean value that indicates whether the iterator has more elements.
 
 ### Returns
 |Type|Description|
 |-|-
-Boolean|Returns **true** if the iterator has more elements; otherwise, **false**.
+Boolean|Is **true** if the iterator has more elements; otherwise, **false**.
 
 ## <a name="next"></a>next
 Advances the iterator and returns the next campaign.
@@ -46,9 +50,11 @@ Advances the iterator and returns the next campaign.
 [Campaign](Campaign.md)|The next campaign in the iterator.
 
 ## <a name="totalnumentities"></a>totalNumEntities
-Returns the number of campaigns that matched the selector's selection criteria. 
+Gets the number of campaigns that matched the selector's selection criteria. 
 
+<!--
 [!INCLUDE[reads-limit](../includes/reads-limit.md)]
+-->
 
 ### Returns:
 |Type|Description|

@@ -18,20 +18,20 @@ Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarch
 |-|-|-
 [addNegativeKeywordList(NegativeKeywordList negativeKeywordList)](#addnegativekeywordlist-negativekeywordlist-negativekeywordlist-)|void|Adds a negative keyword list to this campaign.
 [enable](#enable)|void|Enables this campaign.
-[getBiddingStrategyType](#getbiddingstrategytype)|string|Returns the campaign's bidding strategy.
-[getBudget](#getbudget)|[Budget](Budget.md)|Returns the campaign's budget.
-[getEntityType](#getentitytype)|string|Returns this entity's type.
-[getId](#getid)|string|Returns the ID that uniquely identifies this campaign.
-[getName](#getname)|string|Returns the campaign's name.
-[getStats](#getstats)|[Stats](Stats.md)|Returns the performance data for this campaign.
-[isEnabled](#isenabled)|boolean|Returns a Boolean value that determines whether this campaign is enabled.
-[isPaused](#ispaused)|Boolean|Returns a Boolean value that indicates whether this campaign is paused.
-[isRemoved](#isremoved)|Boolean|Returns a Boolean value that indicates whether this campaign is removed (deleted).
-[newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder.md)|Returns a builder that you use to add an ad group to this campaign.
+[getBiddingStrategyType](#getbiddingstrategytype)|string|Gets this campaign's bidding strategy.
+[getBudget](#getbudget)|[Budget](Budget.md)|Gets this campaign's budget.
+[getEntityType](#getentitytype)|string|Gets this entity's type.
+[getId](#getid)|string|Gets the ID that uniquely identifies this campaign.
+[getName](#getname)|string|Gets this campaign's name.
+[getStats](#getstats)|[Stats](Stats.md)|Gets the performance data for this campaign.
+[isEnabled](#isenabled)|boolean|Gets a Boolean value that indicates whether this campaign is enabled.
+[isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this campaign is paused.
+[isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this campaign is removed (deleted).
+[newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder.md)|Gets a builder that you use to add an ad group to this campaign.
 [pause](#pause)|void|Pauses this campaign.
 [remove](#remove)|void|Removes this campaign.
-[setName(String name)](#setname-string-name-)|void|Sets the name of this campaign.
-[urls](#urls)|[CampaignUrls](./CampaignUrls.md)|Returns this campaign's URLs.
+[setName(String name)](#setname-string-name-)|void|Sets this campaign's name.
+[urls](#urls)|[CampaignUrls](./CampaignUrls.md)|Contains the methods for managing this campaign's tracking template and custom parameters.
 
 ## <a name="addnegativekeywordlist-negativekeywordlist-negativekeywordlist-"></a>addNegativeKeywordList(NegativeKeywordList negativeKeywordList)
 Adds a negative keyword list to this campaign. 
@@ -39,7 +39,7 @@ Adds a negative keyword list to this campaign.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-negativeKeywordList|[NegativeKeywordList](NegativeKeywordList.md)|The negative keyword list to add to the campaign. You can add a maximum of 20 lists.
+negativeKeywordList|[NegativeKeywordList](NegativeKeywordList.md)|The negative keyword list to add to this campaign. You may add a maximum of 20 lists.
 
 ### Returns
 |Type|Description|
@@ -55,31 +55,32 @@ Enables this campaign.
 void|Returns nothing.
 
 ## <a name="getbiddingstrategytype"></a>getBiddingStrategyType
-Returns the campaign's bidding strategy. 
+Gets this campaign's bidding strategy. 
 
 ### Returns
 |Type|Description|
 |-|-
-string|The campaign's bidding strategy. Possible values are:<br /><ul><li>MANUAL_CPC</li><li>TARGET_SPEND</li><li>MAXIMIZE_CONVERSIONS</li><li>ENHANCED_CPC</li><li>TARGET_CPA</li></ul>For more information, see [Bid Strategies](../concepts/bid-strategies.md).
+string|The campaign's bidding strategy. Possible values are:<br /><ul><li>MANUAL\_CPC</li><li>TARGET\_SPEND</li><li>MAXIMIZE\_CONVERSIONS</li><li>ENHANCED\_CPC</li><li>TARGET\_CPA</li></ul>For more information, see [Bid Strategies](../concepts/bid-strategies.md).
+
 
 ## <a name="getbudget"></a>getBudget
-Returns the budget for this campaign.
+Gets this campaign's budget.
 
 ### Returns
 |Type|Description|
 |-|-
-[Budget](Budget.md)|The budget for this campaign.
+[Budget](Budget.md)|Contains the methods for managing this campaign's budget.
 
 ## <a name="getentitytype"></a>getEntityType
-Returns this entity's type.
+Gets this entity's type.
 
 ### Returns
 |Type|Description|
 |-|-
-string|This entity's type (is set to Campaign).
+string|This entity's type, which is *Campaign*.
 
 ## <a name="getid"></a>getId
-Returns the ID that uniquely identifies this campaign.
+Gets the ID that uniquely identifies this campaign.
 
 ### Returns
 |Type|Description|
@@ -87,15 +88,15 @@ Returns the ID that uniquely identifies this campaign.
 string|The ID that uniquely identifies this campaign.
 
 ## <a name="getname"></a>getName
-Returns the name of this campaign.
+Gets this campaign's name.
 
 ### Returns:
 |Type|Description|
 |-|-
-string|The name of this campaign.
+string|The campaign's name.
 
 ## <a name="getstats"></a>getStats
-Returns the performance data for the campaign. 
+Gets this campaign's performance data. 
 
 ### Returns
 |Type|Description|
@@ -103,31 +104,31 @@ Returns the performance data for the campaign.
 [Stats](Stats.md)|The campaign's performance data.
 
 ## <a name="isenabled"></a>isEnabled
-Returns a Boolean value that indicates whether this campaign is enabled.
+Gets a Boolean value that indicates whether this campaign is enabled.
 
 ### Returns
 |Type|Description|
 |-|-
-boolean|Returns **true** if this campaign is enabled; otherwise, **false**.
+boolean|Is **true** if this campaign is enabled; otherwise, **false**.
 
 ## <a name="ispaused"></a>isPaused
-Returns a Boolean value that indicates whether this campaign is paused.
+Gets a Boolean value that indicates whether this campaign is paused.
 
 ### Returns
 |Type|Description|
 |-|-
-Boolean|Returns **true** if this campaign is paused; otherwise, **false**.
+Boolean|Is **true** if this campaign is paused; otherwise, **false**.
 
 ## <a name="isremoved"></a>isRemoved
-Returns a Boolean value that indicates whether this campaign is removed (deleted).
+Gets a Boolean value that indicates whether this campaign is removed (deleted).
 
 ### Returns
 |Type|Description|
 |-|-
-Boolean|Returns **true** if this campaign is removed; otherwise, **false**.
+Boolean|Is **true** if this campaign is removed; otherwise, **false**.
 
 ## <a name="newadgroupbuilder"></a>newAdGroupBuilder
-Returns a [builder](../concepts/builders.md) that you use to add an ad group to this campaign.
+Gets a [builder](../concepts/builders.md) that you use to add an ad group to this campaign.
 
 ### Returns
 |Type|Description|
@@ -151,12 +152,12 @@ Removes this campaign.
 void|Returns nothing.
 
 ## <a name="setname-string-name-"></a>setName(string name)
-Sets the name of this campaign.
+Sets the campaign's name.
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-name|string|The name of the campaign. The name may contain a maximum of 128 characters and must be unique within the account.
+name|string|The campaign's name. The name may contain a maximum of 128 characters and must be unique within the account.
 
 ### Returns
 |Type|Description|
@@ -164,12 +165,12 @@ name|string|The name of the campaign. The name may contain a maximum of 128 char
 void|Returns nothing.
 
 ## <a name="urls"></a>urls
-Returns this campaign's final URLs, tracking template, and custom parameters.
+Contains the methods for managing this campaign's tracking template and custom parameters.
 
 ### Returns
 |Type|Description|
 |-|-
-[CampaignUrls](CampaignUrls.md)|The object used to manage the campaign's final URLs, tracking template, and custom parameters.
+[CampaignUrls](CampaignUrls.md)|Contains the methods for managing this campaign's tracking template and custom parameters.
 
 
 
