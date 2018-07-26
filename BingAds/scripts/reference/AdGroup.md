@@ -16,7 +16,7 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[bidding](#bidding)|[AdGroupBidding](AdGroupBidding.md)|Gets this ad group's bid amount.
+[bidding](#bidding)|[AdGroupBidding](AdGroupBidding.md)|Gets the methods used to manage this ad group's bid amount.
 [enable](#enable)|void|Enables this ad group.
 [getEndDate](#getenddate)|[BingAdsDate](BingAdsDate.md)|Gets the date when ads in this ad group stop serving.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
@@ -27,14 +27,14 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 [isEnabled](#isenabled)|Boolean|Gets a Boolean value that indicates whether this ad group is enabled.
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this ad group is paused.
 [isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this ad group is removed.
-[newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Gets a builder that you use to add keywords to this ad group.
+[newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Gets a builder that you use to add a keyword to this ad group.
 [pause](#pause)|void|Pauses this ad group.
 [setEndDate(string endDate)](#setenddate-string-enddate-)|void|Sets the date when ads in this ad group stop serving.
 [setEndDate(Object endDate)](#setenddate-object-enddate-)|void|Sets the date when ads in this ad group stop serving.
 [setName(String name)](#setname-string-name)|void|Sets the ad group's name.
 [setStartDate(string startDate)](#setstartdate-string-startdate-)|void|Sets the date when ads in this ad group begin serving.
 [setStartDate(Object startDate)](#setstartdate-object-startdate-)|void|Sets the date when ads in this ad group begin serving.
-[urls](#urls)|[AdGroupUrls](./AdGroupUrls.md)|Contains the methods for managing this ad group's final URLs, tracking template, and custom parameters.
+[urls](#urls)|[AdGroupUrls](./AdGroupUrls.md)|Contains the methods used to manage this ad group's final URLs, tracking template, and custom parameters.
 
 <!--
 [newAd](#newad)|[AdBuilderSpace](./AdBuilderSpace)|Returns a new ad builder space associated with this ad group, which is used to construct a new ad.
@@ -42,7 +42,7 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 
 
 ## <a name="bidding"></a>bidding
-Gets this ad group's bid amount. 
+Gets the methods used to manage this ad group's bid amount.
 
 ### Returns:
 |Type|Description|
@@ -135,21 +135,21 @@ Boolean|Is **true** if this ad group is removed; otherwise, **false**.
 
 <!--
 ## <a name="newad"></a>newAd
-Returns a new ad builder space associated with this ad group, which is used to construct a new ad.
+Gets a [builder](../concepts/builders.md) that you use to add an ad to this ad group.
 
 ### Returns:
 |Type|Description|
 |-|-
-[AdBuilderSpace](./AdBuilderSpace)|A new ad builder space associated with this ad group.
+[AdBuilderSpace](./AdBuilderSpace)|The builder that you use to add an ad to this ad group.
 -->
 
 ## <a name="newkeywordbuilder"></a>newKeywordBuilder
-Gets a [builder](../concepts/builders.md) that you use to add keywords to this ad group.
+Gets a [builder](../concepts/builders.md) that you use to add a keyword to this ad group.
 
 ### Returns
 |Type|Description|
 |-|-
-[KeywordBuilder](KeywordBuilder.md)|The builder that you use to add keywords to this ad group.
+[KeywordBuilder](KeywordBuilder.md)|The builder that you use to add a keyword to this ad group.
 
 ## <a name="pause"></a>pause
 Pauses this ad group.
@@ -233,7 +233,7 @@ void|Returns nothing.
 
 
 ## <a name="urls"></a>urls
-Contains the methods for managing this ad group's final URLs, tracking template, and custom parameters.
+Contains the methods used to manage this ad group's final URLs, tracking template, and custom parameters.
 
 ### Returns
 |Type|Description|

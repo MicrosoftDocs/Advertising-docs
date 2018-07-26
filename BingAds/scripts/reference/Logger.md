@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # Logger
 
-Contains the methods for writing text messages to the log.
+Contains the methods for writing text messages to the console log.
 
 ## Methods
 |Method Name|Return Type|Description|
