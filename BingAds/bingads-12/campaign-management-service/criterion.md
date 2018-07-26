@@ -19,6 +19,7 @@ Do not try to instantiate a *Criterion*. You can create one or more following ob
 -  [LocationIntentCriterion](locationintentcriterion.md)  
 -  [ProductScope](productscope.md)  
 -  [ProductPartition](productpartition.md)  
+-  [ProfileCriterion](profilecriterion.md)  
 -  [RadiusCriterion](radiuscriterion.md)  
 -  [Webpage](webpage.md)  
 

@@ -167,6 +167,8 @@ For repeat or long term authentication, you should follow the authorization code
    {"error":"invalid_request","error_description":"Public clients can't send a client secret."} Likewise for Web apps please note that refresh tokens can be invalidated at any moment.
    ```
 
+    You will encounter the same error if you try to request new access and refresh tokens using a refresh token that was provisioned without a client secret.  
+
 ## <a name="userlogout"></a>Sign the user out
 To sign a user out, perform the following steps:
 1. Delete any cached access_token or refresh_token values you've previously received from the OAuth flow.
@@ -181,13 +183,13 @@ To sign a user out, perform the following steps:
  
 
 ## <a name="oauthparameters"></a>OAuth Authorization Parameters
-The following sections list the request and response parameters that are available when calling the [Live Connect](https://msdn.microsoft.com/en-us/library/hh243647.aspx) authorization service as described in the [Implicit Grant Flow](#implicit) and [Authorization Code Grant Flow](#authorizationcode) walkthroughs above.
+The following sections list the request and response parameters that are available when calling the Microsoft account authorization service as described in the [Implicit Grant Flow](#implicit) and [Authorization Code Grant Flow](#authorizationcode) walkthroughs above.
 
 > [!NOTE]
 > The Bing Ads SDKs do not directly expose the *authentication_token*, *display*, *error*, *error_description*, *grant_type*, *locale*, *response_type*, or *scope*, parameters. The Bing Ads SDKs do expose the *client_id*, *client_secret*, *redirect_uri*, and *state*  parameters. 
 
 ### <a name="oauthrequestparameters"></a>OAuth Request Authorization Parameters
-The following table lists the request parameters that are available when calling the [Live Connect](https://msdn.microsoft.com/en-us/library/hh243647.aspx) authorization service. 
+The following table lists the request parameters that are available when calling the Microsoft account authorization service. 
 
 Parameter  |Description  
 ---------|---------
@@ -202,7 +204,7 @@ Parameter  |Description
 *display*     |The display type to be used for the authorization page. Valid values are "popup", "touch", "page", or "none".      
 
 ### <a name="oauthresponseparameters"></a>OAuth Response Authorization Parameters
-The following table lists the response parameters that are available when calling the [Live Connect](https://msdn.microsoft.com/en-us/library/hh243647.aspx) authorization service. 
+The following table lists the response parameters that are available when calling the Microsoft account authorization service. 
 
 Parameter  |Description  
 ---------|---------
