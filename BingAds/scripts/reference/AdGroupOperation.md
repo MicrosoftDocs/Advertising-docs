@@ -19,17 +19,17 @@ Because calling any of this object's methods forces Bing to flush the build queu
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[getErrors](#geterrors)|string[]|Gets the errors that occured when you added the ad group.
+[getErrors](#geterrors)|string[]|Gets any errors that occured when you added the ad group.
 [getResult](#getresult)|[AdGroup](./AdGroup.md)|Gets the ad group that you added.
 [isSuccessful](#issuccessful)|Boolean|Gets a Boolean value that indicates whether the add operation succeeded.
 
 ## <a name="geterrors"></a>getErrors
-Gets the errors that occured when you added the ad group.
+Gets any errors that occured when you added the ad group.
 
 ### Returns
 |Type|Description|
 |-|-
-string[]|An array of symbolic error codes if the add operation failed; otherwise, an empty array. For example, if you specify an invalid bid amount, the call returns CampaignServiceInvalidSearchBids. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
+string[]|An array of error codes if the operation failed; otherwise, an empty array. For example, if you specify an invalid bid amount, the call returns CampaignServiceInvalidSearchBids. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
 
 ## <a name="getresult"></a>getResult
 Gets the ad group that you added.

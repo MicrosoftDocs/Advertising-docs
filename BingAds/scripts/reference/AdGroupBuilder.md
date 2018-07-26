@@ -43,7 +43,7 @@ Example usage:
 
 |Method Name|Return Type|Description|
 |-|-|-
-[build](#build)|[AdGroupOperation](./AdGroupOperation.md)|Creates the ad group and returns an operation object that you can use to check whether the ad group was successfully added.
+[build](#build)|[AdGroupOperation](./AdGroupOperation.md)|Creates the ad group and returns an operation object that you use to check whether the ad group was successfully added.
 [withBiddingStrategy(string biddingStrategy)](#withbiddingstrategy-string-biddingstrategy-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's bidding strategy.
 [withCpc(double cpc)](#withcpc-double-cpc-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's maximum CPC bid.
 [withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's custom parameters.
@@ -54,10 +54,10 @@ Example usage:
 [withStartDate(string startDate)](#withstartdate-string-startdate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group start serving.
 [withStartDate(Object startDate)](#withstartdate-object-startdate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the date when ads in the ad group start serving.
 [withStatus(string status)](#withstatus-string-status-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's status.
-[withTrackingTemplate(string trackingTemplate)](#withtrackingtemplate-string-trackingtemplate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the tracking template used by the ad group.
+[withTrackingTemplate(string trackingTemplate)](#withtrackingtemplate-string-trackingtemplate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's tracking template.
 
 ## <a name="build"></a>build
-Creates the ad group and returns an operation object that you can use to check whether the ad group was successfully added.
+Creates the ad group and returns an operation object that you use to check whether the ad group was successfully added.
 
 ### Returns
 |Type|Description|
@@ -101,7 +101,7 @@ Sets the ad group's custom parameters to use in final URLs or tracking templates
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|The custom parameters to apply to the ad group. Specify the parameters as a map of key-value pairs.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value.<br /><br />The key and value may not exceed 60 and 200 bytes, respectively.
+customParameters|Object|A map of up to three custom parameters to apply to the ad group. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value. The name may contain a maximum of 60 bytes and the value may contain a maximum of 200 bytes.
 
 ### Returns
 |Type|Description|
@@ -115,7 +115,7 @@ Sets the date when you want ads in the ad group to stop serving. Call this metho
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|string|The date when you want ads in the ad group to stop serving. Specify the date in the form, YYYYMMDD.
+endDate|string|The date to stop serving ads. Specify the date in the form, YYYYMMDD.
 
 ### Returns
 |Type|Description|
@@ -128,7 +128,7 @@ Sets the date when you want ads in the ad group to stop serving. Call this metho
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|Object|The date when you want ads in the ad group to stop serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul><br />For example: `var date = {year: 2018, month: 5, day: 13};`<br /><br />The month is one-based where 1 is January and 12 is December.
+endDate|Object|The date to stop serving ads. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul><br />For example: `var date = {year: 2018, month: 5, day: 13};`<br /><br />The month is one-based where 1 is January and 12 is December.
 
 ### Returns
 |Type|Description|
@@ -173,7 +173,7 @@ Sets the date when you want ads in the ad group to start serving. Call this meth
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|string|The date when you want ads in the ad group to start serving. Specify the date in the form, YYYYMMDD.
+endDate|string|The date to start serving ads. Specify the date in the form, YYYYMMDD.
 
 ### Returns
 |Type|Description|
@@ -186,7 +186,7 @@ Sets the date when you want ads in the ad group to start serving. Call this meth
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|Object|The date when you want ads in the ad group to start serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul><br />For example: `var date = {year: 2018, month: 5, day: 13};`<br /><br />The month is one-based where 1 is January and 12 is December.
+endDate|Object|The date to start serving ads. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul><br />For example: `var date = {year: 2018, month: 5, day: 13};`<br /><br />The month is one-based where 1 is January and 12 is December.
 
 ### Returns
 |Type|Description|
@@ -209,7 +209,7 @@ status|String|The ad group's status. The following are the possible case-sensiti
 
 
 ## <a name="withtrackingtemplate-string-trackingtemplate-"></a>withTrackingTemplate(string trackingTemplate)
-Sets the tracking template used by this ad group. 
+Sets the ad group's tracking template. 
 
 [!INCLUDE[tracking-templates](../includes/tracking-templates.md)]
 

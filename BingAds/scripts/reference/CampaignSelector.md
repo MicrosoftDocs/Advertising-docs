@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # CampaignSelector
 
-Contains the methods for filtering and sorting the list of campaigns. For information about selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods for filtering and sorting the list of campaigns to get. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 Example usage:
 ```javascript
@@ -36,7 +36,7 @@ Example usage:
 [forDateRange(string dateRange)](#fordaterange-string-daterange-)|[CampaignSelector](./CampaignSelector.md)|Applies the predefined date range for selecting performance metrics.
 [get](#get)|[CampaignIterator](./CampaignIterator.md)|Gets an iterator that you use to iterate through the list of campaigns.
 [orderBy(string orderBy)](#orderby-string-orderby-)|[CampaignSelector](./CampaignSelector.md)|Applies the specified ordering to the selected campaigns.
-[withCondition(string condition)](#withcondition-string-condition-)|[CampaignSelector](./CampaignSelector.md)|Applies filter criteria to the campaigns.
+[withCondition(string condition)](#withcondition-string-condition-)|[CampaignSelector](./CampaignSelector.md)|Applies the filter to the list of campaigns.
 [withIds(string[] ids)](#withids-string-ids-)|[CampaignSelector](./CampaignSelector.md)|Gets campaigns with the specified IDs.
 [withLimit(int limit)](#withlimit-int-limit-)|[CampaignSelector](./CampaignSelector.md)|Gets the top *n* campaigns that match the selection criteria.
 
@@ -108,7 +108,7 @@ orderBy|string|The ordering to apply.
 [CampaignSelector](./CampaignSelector.md)|Selector with ordering applied.
 
 ## <a name="withcondition-string-condition-"></a>withCondition(string condition)
-Applies filter criteria to the campaigns. 
+Applies the filter to the list of campaigns campaigns. 
 
 Specify the *condition* parameter in the form, "columnName operator value" where: 
 
