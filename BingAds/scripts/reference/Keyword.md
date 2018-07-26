@@ -17,7 +17,7 @@ Contains the methods for managing a keyword. For information about keywords, see
 |Method Name|Return Type|Description|
 |-|-|-
 [adParams](#adparams)|[AdParamSelector](AdParamSelector.md)|Gets a selector of all substitution parameters used in the ad for this keyword.
-[bidding](#bidding)|[KeywordBidding](./KeywordBidding.md)|Gets this keyword's bid amount.
+[bidding](#bidding)|[KeywordBidding](./KeywordBidding.md)|Gets the methods used to manage this keyword's bid amount.
 [clearDestinationUrl](#cleardestinationurl)|void|Removes this keyword's destination URL.
 [enable](#enable)|void|Enables this keyword.
 [getApprovalStatus](#getapprovalstatus)|string|Gets this keyword's editorial approval status.
@@ -31,7 +31,7 @@ Contains the methods for managing a keyword. For information about keywords, see
 [pause](#pause)|void|Pauses this keyword.
 [remove](#remove)|void|Removes this keyword.
 [setAdParam(int index, string insertionText)](#setadparam-int-index-string-insertiontext-)|void|Adds the substitution parameter and sets its value to the specified text.
-[urls](#urls)|[KeywordUrls](./KeywordUrls.md)|Contains the methods for managing this keywords's final URLs, tracking template, and custom parameters.
+[urls](#urls)|[KeywordUrls](./KeywordUrls.md)|Gets the methods used to manage this keywords's final URLs, tracking template, and custom parameters.
 
 <!--
 [getAdGroup](#getadgroup)|[AdGroup](AdGroup.md)|Returns the ad group this keyword belongs to.
@@ -50,12 +50,12 @@ The substitution values are used in an ad if the ad's title, text, display URL, 
 
 
 ## <a name="bidding"></a>bidding
-Gets this keyword's bid amount.
+Gets the methods used to manage this keyword's bid amount.
 
 ### Returns
 |Type|Description|
 |-|-
-[KeywordBidding](./KeywordBidding.md)|Contains the methods for managing this keyword's bid amount.
+[KeywordBidding](./KeywordBidding.md)|Contains the methods used to manage this keyword's bid amount.
 
 ## <a name="cleardestinationurl"></a>clearDestinationUrl
 Removes this keyword's destination URL.
@@ -175,7 +175,7 @@ The substitution values are also used in the tracking template if the template s
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-index|int|The index of the substitution parameter that you're setting the substitution value to. The valid index values are 1 through 3, inclusive. Use 1 for Param1, 2 for Param2, and 3 for Param3.
+index|int|The index of the substitution parameter to set. Valid index values are 1 through 3, inclusive. Use 1 for Param1, 2 for Param2, and 3 for Param3.
 insertionText|string|The text to set the substitution parameter to.
 
 ### Returns
@@ -201,12 +201,12 @@ Removes this keyword.
 void|Returns nothing.
 
 ## <a name="urls"></a>urls
-Contains the methods for managing this keywords's final URLs, tracking template, and custom parameters.
+Gets the methods used to manage this keywords's final URLs, tracking template, and custom parameters.
 
 ### Returns
 |Type|Description|
 |-|-
-[KeywordUrls](./KeywordUrls.md)|Contains the methods for managing the keyword's final URLs, tracking template, and custom parameters.
+[KeywordUrls](./KeywordUrls.md)|Contains the methods used the keyword's final URLs, tracking template, and custom parameters.
 
 
 

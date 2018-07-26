@@ -74,7 +74,7 @@ dateRange|String|The predefined date range string that specifies the performance
 [AdGroupSelector](./AdGroupSelector.md)|Selector with date range applied.
 
 ## <a name="get"></a>get
-Gets an [iterator](../concepts/iterators.md) based on the selector's selection criteria.
+Gets an [iterator](../concepts/iterators.md) that you use to iterate through the list of ad groups.
 
 ### Returns
 |Type|Description|

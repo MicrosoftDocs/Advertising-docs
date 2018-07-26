@@ -21,15 +21,15 @@ Contains the methods used to manage an ad group's bid values.
 
 
 ## <a name="getcpc"></a>getCpc
-Gets the ad group's CPC bid. 
+Gets the ad group's CPC bid amount. 
 
 ### Returns
 |Type|Description|
 |-|-
-double|The ad group's maximum CPC bid.
+double|The ad group's maximum CPC bid amount.
 
 ## <a name="setcpc-double-cpc-"></a>setCpc(double cpc)
-Sets the ad group's CPC bid. 
+Sets the ad group's CPC bid amount. 
 
 Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is MANUAL_CPC. Bing uses this bid if a lower-level entity such as keyword does not override it.
 

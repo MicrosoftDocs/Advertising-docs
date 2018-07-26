@@ -104,7 +104,7 @@ Sets this negative keyword list's name.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-name|string|The name for this negative keyword list. The name may contain a maximum of 255 characters.
+name|string|The list's name. The name may contain a maximum of 255 characters.
 
 ### Returns
 |Type|Description|

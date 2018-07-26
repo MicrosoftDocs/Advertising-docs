@@ -33,7 +33,7 @@ Example usage:
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[build](#build)|[KeywordOperation](./KeywordOperation.md)|Creates the keyword and returns an operation object that you can use to check whether the keyword was successfully added.
+[build](#build)|[KeywordOperation](./KeywordOperation.md)|Creates the keyword and returns an operation object that you use to check whether the keyword was successfully added.
 [withCpc(double cpc)](#withcpc-double-cpc-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's maximum CPC bid.
 [withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's custom parameters.
 [withFinalUrl(string finalUrl)](#withfinalurl-string-finalurl-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's final URL.
@@ -43,7 +43,7 @@ Example usage:
 
 
 ## <a name="build"></a>build
-Creates the keyword and returns an operation object that you can use to check whether the keyword was successfully added.
+Creates the keyword and returns an operation object that you use to check whether the keyword was successfully added.
 
 ### Returns
 |Type|Description|
@@ -79,7 +79,7 @@ Sets the keyword's custom parameters.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|The custom parameters to apply to the keyword's final URL. These are the query parameters you want to add to the final URL. You can specify a maximum of three custom parameters. Specify the parameters as a map of key-value pairs.<br /><br />For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value.
+customParameters|Object|A map of up to custom parameters to apply to the keyword's final URL. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value. The name may contain a maximum of 60 bytes and the value may contain a maximum of 200 bytes.
 
 ### Returns
 |Type|Description|
@@ -95,7 +95,7 @@ Sets the keyword's final URL.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-finalUrl|string|The final URL for the keyword.
+finalUrl|string|The final URL that identifies the webpage the user is taken to when they click the ad.
 
 ### Returns
 |Type|Description|

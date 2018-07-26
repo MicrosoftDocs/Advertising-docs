@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # BingAdsApp
 
-This is the top-level object of Bing Ads Scripts, which you use to navigate all entities in a single user account.
+This is the top-level object of Bing Ads Scripts. Use it to navigate all entities in a single user account.
 
 ## Methods
 
@@ -21,7 +21,7 @@ This is the top-level object of Bing Ads Scripts, which you use to navigate all 
 [campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector that returns all campaigns in this account.
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a selector that returns all keywords in this account.
 [negativeKeywordLists](#negativekeywordlists)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets a selector that returns  all negative keyword lists in this account.
-[newNegativeKeywordListBuilder](#newnegativekeywordlistbuilder)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Returns a builder that you use to add a negative keyword list to this account.
+[newNegativeKeywordListBuilder](#newnegativekeywordlistbuilder)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Gets a builder that you use to add a negative keyword list to this account.
 
 <!--
 [ads](#ads)|[AdSelector](./AdSelector)|Returns a selector of all ads in this account.<br />
