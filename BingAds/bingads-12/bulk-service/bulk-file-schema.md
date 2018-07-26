@@ -26,7 +26,7 @@ You can choose to download either a tab or comma delimited set of records (rows)
 > New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file. Similarly during upload you may submit the fields in any order. The upload record order is important when creating new entities, as described below within [Type Hierarchy](#typehierarchy).
 
 ## <a name="formatversions"></a>Format Versions
-The bulk format version is separate from the Bing Ads API version.  Format version enables a flexible upgrade path to adopt the latest supported features without breaking your application. As a best practice you should always upgrade to the latest format version. Currently Bing Ads API Version 11 only supports format version 6.0.
+The bulk format version is separate from the Bing Ads API version.  Format version enables a flexible upgrade path to adopt the latest supported features without breaking your application. As a best practice you should always upgrade to the latest format version. Currently Bing Ads API Version 12 only supports format version 6.0.
 
 To specify the file format version using bulk download, set *FormatVersion* to 6.0 in either the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) request.
 

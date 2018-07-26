@@ -21,12 +21,12 @@ Contains the methods for managing the campaign's budget. For more information, s
 [setDeliveryMethod(String method)](#setdeliverymethod-string-method-)|void|Sets the delivery method for this budget.
 
 ## <a name="getamount"></a>getAmount
-Gets the campaign's budget amount.
+Gets the campaign's budget.
 
 ### Returns
 |Type|Description|
 |-|-
-double|The campaign's budget amount in the account's currency.
+double|The budget amount, in the account's currency.
 
 ## <a name="getdeliverymethod"></a>getDeliveryMethod
 Gets the budget's delivery method (budget type). 
@@ -37,12 +37,12 @@ Gets the budget's delivery method (budget type).
 string|The budget's delivery method. Possible values are:<br /><ul><li>STANDARD</li><li>ACCELERATED</li></ul>For more information, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1)
 
 ## <a name="setamount-double-amount-"></a>setAmount(double amount)
-Sets the campaign's budget to the specified amount.
+Sets the campaign's budget.
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-amount|double|The campaign's budget amount in the account's currency.
+amount|double|The budget amount, in the account's currency.
 
 ### Returns
 |Type|Description|

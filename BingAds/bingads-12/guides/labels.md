@@ -38,7 +38,7 @@ For example, the following Bulk CSV example would apply a label to the campaign,
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Name,Description,Label,Color
-Format Version,,,,,,,,5,,,
+Format Version,,,,,,,,6,,,
 Label,Active,-22,,,,ClientIdGoesHere,,,Label Description,Label Name 7/27/2017 6:50:54 PM,#FFFFFF
 Campaign Label,Active,-22,-111,,,ClientIdGoesHere,,,,,
 Ad Group Label,Active,-22,-1111,,,ClientIdGoesHere,,,,,

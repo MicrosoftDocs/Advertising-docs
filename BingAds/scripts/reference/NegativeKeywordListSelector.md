@@ -86,7 +86,6 @@ MemberCount|int|The number of negative keywords in the list.<br /><br />`withCon
 Name|string|The negative keywords list's name.<br /><br />`withCondition("Name = 'LIST NAME GOES HERE'")`
 ReferenceCount|int|The number of campaigns the list is associated with.<br /><br />`withCondition("ReferenceCount > 10")`
 SharedSetId|double|`withCondition("SharedSetId > 10")`
-Status|enumeration|Possible case-sensitive values are: <ul><li>ACTIVE</li><li>DELETED</li></ul>`withCondition("Status = ACTIVE")`
 
 
 ### Arguments
