@@ -33,8 +33,6 @@ When you call a service operation such as [GetCampaignsByAccountId](../campaign-
     <CustomerAccountId i:nil="false">ValueHere</CustomerAccountId>
     <CustomerId i:nil="false">ValueHere</CustomerId>
     <DeveloperToken i:nil="false">ValueHere</DeveloperToken>
-    <Password i:nil="false">ValueHere</Password>
-    <UserName i:nil="false">ValueHere</UserName>
   </s:Header>
   <s:Body>
     <GetCampaignsByAccountIdRequest xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
@@ -89,18 +87,16 @@ Call [GetUser](../customer-management-service/getuser.md) with your Bing Ads cre
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-    <s:Header>
+  <s:Header>
     <h:ApplicationToken i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v12" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
     <h:AuthenticationToken xmlns:h="https://bingads.microsoft.com/Customer/v12">OAuthAccessTokenGoesHere</h:AuthenticationToken>
     <h:DeveloperToken xmlns:h="https://bingads.microsoft.com/Customer/v12">DeveloperTokenGoesHere</h:DeveloperToken>
-    <h:Password i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v12" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
-    <h:UserName i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v12" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
-    </s:Header>
-    <s:Body>
+  </s:Header>
+  <s:Body>
     <GetUserRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-        <UserId i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+      <UserId i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
     </GetUserRequest>
-    </s:Body>
+  </s:Body>
 </s:Envelope>
 ```
 
@@ -109,29 +105,27 @@ Then call [SearchAccounts](../customer-management-service/getuser.md) with the U
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
-    <s:Header>
+  <s:Header>
     <h:ApplicationToken i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v12" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
     <h:AuthenticationToken xmlns:h="https://bingads.microsoft.com/Customer/v12">OAuthAccessTokenGoesHere</h:AuthenticationToken>
     <h:DeveloperToken xmlns:h="https://bingads.microsoft.com/Customer/v12">DeveloperTokenGoesHere</h:DeveloperToken>
-    <h:Password i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v12" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
-    <h:UserName i:nil="true" xmlns:h="https://bingads.microsoft.com/Customer/v12" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
-    </s:Header>
-    <s:Body>
+  </s:Header>
+  <s:Body>
     <SearchAccountsRequest xmlns="https://bingads.microsoft.com/Customer/v12">
-        <Predicates xmlns:a="https://bingads.microsoft.com/Customer/v12/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+      <Predicates xmlns:a="https://bingads.microsoft.com/Customer/v12/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <a:Predicate>
-            <a:Field>UserId</a:Field>
-            <a:Operator>Equals</a:Operator>
-            <a:Value>UserIdGoesHere</a:Value>
+          <a:Field>UserId</a:Field>
+          <a:Operator>Equals</a:Operator>
+          <a:Value>UserIdGoesHere</a:Value>
         </a:Predicate>
-        </Predicates>
-        <Ordering i:nil="true" xmlns:a="https://bingads.microsoft.com/Customer/v12/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
-        <PageInfo xmlns:a="https://bingads.microsoft.com/Customer/v12/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+      </Predicates>
+      <Ordering i:nil="true" xmlns:a="https://bingads.microsoft.com/Customer/v12/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" />
+      <PageInfo xmlns:a="https://bingads.microsoft.com/Customer/v12/Entities" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
         <a:Index>0</a:Index>
         <a:Size>10</a:Size>
-        </PageInfo>
+      </PageInfo>
     </SearchAccountsRequest>
-    </s:Body>
+  </s:Body>
 </s:Envelope>
 ```
 
