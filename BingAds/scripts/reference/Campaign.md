@@ -23,7 +23,7 @@ Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarch
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getId](#getid)|string|Gets the ID that uniquely identifies this campaign.
 [getName](#getname)|string|Gets this campaign's name.
-[getStats](#getstats)|[Stats](Stats.md)|Gets the performance data for this campaign.
+[getStats](#getstats)|[Stats](Stats.md)|Gets this campaign's performance data.
 [isEnabled](#isenabled)|boolean|Gets a Boolean value that indicates whether this campaign is enabled.
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this campaign is paused.
 [isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this campaign is removed (deleted).
@@ -31,7 +31,7 @@ Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarch
 [pause](#pause)|void|Pauses this campaign.
 [remove](#remove)|void|Removes this campaign.
 [setName(String name)](#setname-string-name-)|void|Sets this campaign's name.
-[urls](#urls)|[CampaignUrls](./CampaignUrls.md)|Contains the methods for managing this campaign's tracking template and custom parameters.
+[urls](#urls)|[CampaignUrls](./CampaignUrls.md)|Gets the methods for managing this campaign's tracking template and custom parameters.
 
 ## <a name="addnegativekeywordlist-negativekeywordlist-negativekeywordlist-"></a>addNegativeKeywordList(NegativeKeywordList negativeKeywordList)
 Adds a negative keyword list to this campaign. 
@@ -39,7 +39,7 @@ Adds a negative keyword list to this campaign.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-negativeKeywordList|[NegativeKeywordList](NegativeKeywordList.md)|The negative keyword list to add to this campaign. You may add a maximum of 20 lists.
+negativeKeywordList|[NegativeKeywordList](NegativeKeywordList.md)|The negative keyword list to add to this campaign. A campaign may contain a maximum of 20 lists.
 
 ### Returns
 |Type|Description|
@@ -165,7 +165,7 @@ name|string|The campaign's name. The name may contain a maximum of 128 character
 void|Returns nothing.
 
 ## <a name="urls"></a>urls
-Contains the methods for managing this campaign's tracking template and custom parameters.
+Gets the methods for managing this campaign's tracking template and custom parameters.
 
 ### Returns
 |Type|Description|

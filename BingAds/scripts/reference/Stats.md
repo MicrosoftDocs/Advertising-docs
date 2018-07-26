@@ -50,7 +50,7 @@ Gets the average cost per thousand impressions.
 ### Returns
 |Type|Description|
 |-|-
-double|The average cost per thousand impressions.
+double|The average cost per one-thousand impressions.
 
 ## <a name="getaverageposition"></a>getAveragePosition
 Gets the average position where ads were placed.
@@ -93,12 +93,12 @@ Gets the cost (spend) in the account's currency.
 double|The cost in the account's currency.
 
 ## <a name="getctr"></a>getCtr
-Gets the click through rate.
+Gets the click-through rate.
 
 ### Returns
 |Type|Description|
 |-|-
-double|The click through rate, in the range 0..1.
+double|The click-through rate, in the range 0..1.
 
 ## <a name="getimpressions"></a>getImpressions
 Gets the number of impressions.
