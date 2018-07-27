@@ -15,7 +15,13 @@ ms.author: "scottwhi"
 >
 > The API and documentation are subject to change.
 
-Reporting is an asynchronous process where you send a request with report parameters to the reporting service and it puts the request in a queue. You then poll the service for status of the report job. When the status is Completed, you use the URL that the service provides to download the report.
+Reporting is an asynchronous process. The following is the general flow for requesting a report.
+
+- Create a request with the report parameters
+- Send a request to the reporting service
+- The service queues the request until it's able to process it
+- You poll the service periodically to get the status of the report job
+- When the status is Completed, use the URL that the service provides to download the report.
 
 For an example that shows how to request and download a report, see [Reporting code example](code-example-reporting.md).
 
@@ -25,7 +31,7 @@ To request a report, send an HTTP POST request to the following endpoint (for th
 
 `https://partner.api.bingads.microsoft.com/Travel/v1/Customers({customerId})/Accounts({accountId})/ReportJobs`
 
-The body of the request is a [ReportJob](reference.md#reportjob) object. The following are the fields that you must specify in the request.
+The body of the request is a [ReportJob](reference.md#reportjob) object. You must specify the following fields in the request:
 
 - StartDate&mdash;The start of the reporting period
 - EndDate&mdash;The end of the reporting period
@@ -48,7 +54,7 @@ The following example shows a `ReportJob` request for a performance report.
 }
 ```
 
-The above request asks to generate a performance report. By default, the service generates reports in uncompressed CSV format. To compress the report and improve download performance, specify the [Compression](reference.md#compression) field and set it to ZIP.
+By default, the service generates reports in uncompressed CSV format. To compress the report and improve download performance, include the [Compression](reference.md#compression) field and set it to ZIP.
 
 The response to the POST contains a report job ID (see [AddResponse](reference.md#addresponse)). For example:
 
@@ -65,7 +71,7 @@ After getting the ID, use it to get the status of the report job. To get the sta
 
 `https://partner.api.bingads.microsoft.com/Travel/v1/Customers({customerId})/Accounts({accountId})/ReportJobs('{jobId}')`
 
-The report job is valid for an undertermined amount of time after it completes but typically for at least seven days. After seven days, you should submit a new report request.
+The report job is valid for an undetermined amount of time after it completes but typically for at least seven days. After seven days, you should submit a new report request.
 
 The body of the response is a [ReportJob](reference.md#reportjob) object. To determine the job's status, access the `Status` field. When the job finishes, `Status` is set to Completed and the `Url` field contains the URL that you use to download the report. The URL is valid for seven days. If the URL expires, you must submit a new job request. 
 
@@ -75,26 +81,30 @@ How long it takes for report jobs to finish is undetermined and is based on seve
 
 ## Downloading the report
 
-When the report job's status is Completed, the job will contain the URL that you use to download the report in the job's `Url` field. To download the report, send an HTTP GET request to the specified URL.
+When the report job's status is Completed, the job's `Url` field contains the URL that you use to download the report. To download the report, send an HTTP GET request to the specified URL.
 
 For uncompressed reports, the GET response's Content-Type header contains text/csv. For compressed reports, the header contains application/zip.
 
-If you asked the service to compress the report data (see the report job's `Compression` field), the service places the file in a folder and uses ZIP compression to compress the report. Remember to uncompress the folder before accessing and reading the report. The name of the report file is auto-generated and has the form, performance-\<request ID\>.
+If you asked the service to compress the report's data (see the report job's `Compression` field), the service places the file in a folder and uses ZIP compression to compress the report. Remember to uncompress the folder before accessing and reading the report. The name of the report file is auto-generated and has the form, performance-\<request ID\>.
 
 
 
 ## Filtering report data
 
-To filter the data in the report, use the `Filter` field in the [ReportJob](reference.md#reportjob) request object. You may filter the report on the following dimension columns and any [measure column](#measure-columns). The column names are case sensitive.
+To filter the data in the report, use the[ReportJob](reference.md#reportjob) object's `Filter` field. You may filter the report on the following dimension columns and any [measure column](#measure-columns). The column names are case sensitive.
 
-- SubaccountId/Name
-- HotelGroupId/Name
-- HotelId/Name, PartnerHotelId
+- SubaccountId
+- SubaccountName
+- HotelGroupId
+- HotelGroupName
+- HotelId
+- HotelName
+- PartnerHotelId
 - DeviceType
 
-Using filters is an AND operation. For example, if you filter on HotelPartnerId equal to 123 and DeviceType equal to Mobile, the report will contain data only where the partner's hotel ID is 123 AND the device type is mobile.
+Using filters is an AND operation. For example, if you filter on HotelPartnerId equal to 123 and DeviceType equal to Mobile, the report contains data only where the partner's hotel ID is 123 AND the device type is mobile.
 
-Set `Filter` to an OData [$filter](http://www.odata.org/getting-started/basic-tutorial/#queryData) string. The following example shows how to filter the report for ads shown on desktops and tablets. The enumeration values that you use in the filter are case sensitive. For example, use Desktop instead of desktop.
+To filter a report's data, set `Filter` to an OData [$filter](http://www.odata.org/getting-started/basic-tutorial/#queryData) string. The following example shows how to filter the report for ads shown on desktops and tablets. The enumeration values that you use in the filter are case sensitive. For example, use Desktop instead of desktop.
 
 ```json
 {
@@ -109,7 +119,7 @@ Set `Filter` to an OData [$filter](http://www.odata.org/getting-started/basic-tu
 }
 ```
 
-In addition to using `Filter`, you can use the `SubaccountId` and `HotelGroupId` fields in the [ReportJob](reference.md#reportjob) request object to limit the report to the specified subaccount or hotel group. If you want to limit the scope to a single subaccount or hotel group, using these fields offer better performance than using `Filter`. Also, If you use these request fields, you should not include them in the filter.
+In addition to using the `Filter` field, you can use the `SubaccountId` and `HotelGroupId` fields to limit the report to a specific subaccount or hotel group. Using these fields to limit the scope to a single subaccount or hotel group provides better performance than using `Filter`. If you use `SubaccountId` and `HotelGroupId`, don't also specify them in the filter.
 
 
 ## Including non-performing hotels in the report
@@ -131,7 +141,7 @@ By default, the performance report contains only hotels that have impressions du
 }
 ```
 
-If you request that the report include non-performing hotels, the `columns` property may not include the following [dimension columns](#dimensioncolumns):
+If you request non-performing hotels in the report, the `columns` property must not include the following [dimension columns](#dimensioncolumns):
 
 - Date
 - DeviceType
@@ -142,6 +152,13 @@ If you request that the report include non-performing hotels, the `columns` prop
 
 If the `columns` property includes any of the above fields, the report jobs request fails.
 
+
+## Books closed
+
+For information about when books close, see [Determining when books close](/bingads/guides/reports#booksclose). Determining when books close for Hotel Ads is the same as for Bing Ads with the following exceptions:
+
+- Hotel Ads' reporting service uses the account's time zone.
+- Hotel Ads' reporting service doesn't support ReturnOnlyCompleteData.
 
 
 ## Performance report columns
@@ -222,7 +239,7 @@ The request must include at least one dimension column and one measure column.
 |EligibleImpressions|Eligible impr.|The total number of realized and unrealized impressions (impressions plus missed impressions).
 |Impressions|Impr.|The number of times ads were shown.
 |ImpressionShare|Impr. share|The percentage of impressions, out of the total available impressions in the market you were targeting. For example, out of an estimated 59,000 impressions that occurred on this day in your targeted market, you received 2,300, or 3%. The value is in the range 0.0 through 1.0.
-|MissedImpressions|Missed impr.|The total number of impressions lost. This is the sum of the following columms:<ul><li>MissedImpressionsInsufficientBid</li><li>MissedImpressionsNoTax</li><li>MissedImpressionsOther</li><li>MissedImpressionsSpendingCapReached</li></ul>
+|MissedImpressions|Missed impr.|The total number of impressions lost. This is the sum of the following columns:<ul><li>MissedImpressionsInsufficientBid</li><li>MissedImpressionsNoTax</li><li>MissedImpressionsOther</li><li>MissedImpressionsSpendingCapReached</li></ul>
 |MissedImpressionsInsufficientBid|Missed impr. insufficient bid|The number of impressions lost because your bids were low and not competing well in the auction marketplace. 
 |MissedImpressionsNoTax|Missed impr. no tax|The number of impressions lost because the hotel didn't specify taxes.
 |MissedImpressionsOther|Missed impr. other|The number of impressions lost for all other reasons. Typically, low ranking or your rate was available in the **More rates** section, but the user did not expand the section to view your rate.
@@ -259,7 +276,7 @@ The following are the SOV columns:
 > - SlotType  
 > - Usercountry  
 >  
-> If you specify any of these dimension column, the request succeeds but the report's data includes duplicate SOV data. For example, in the following report, the 50% impression share is overall for the hotel and not for each slot type.  
+> If you specify any of these dimension column, the request succeeds but the report's data includes duplicate SOV data. For example, in the following report, the 50% impression share is overall share for the hotel, not for each slot type.  
 >
 > |Date|Hotel ID|Clicks|Impr.|Slot type|Eligible impr.|Impr. share  
 > |-|-|-|-|-|-|-  
