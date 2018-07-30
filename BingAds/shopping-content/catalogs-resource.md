@@ -38,30 +38,22 @@ The endpoints may include the following query parameters.
 
 |Parameter|Description|
 |---------|-----------|
-|<a name="alt"/>alt|Optional. Use to specify the type of content that's used in the request and response. The possible values are ```json``` and ```xml```. The default is ```json```.
+|<a name="alt"/>alt|Optional. Use to specify the type of content that's used in the request and response. The possible values are `json` and `xml`. The default is `json`.
 
 
 ## <a name="headers"/> Headers
-
-> [!IMPORTANT]
-> The Bing Ads APIs, including Content API, will stop supporting managed user credentials (username and password) beginning August 1, 2018. At your earliest convenience, please migrate your account to use Microsoft accounts. For information, see [We're changing the way you sign in](https://help.bingads.microsoft.com/#apex/3/en/ext50875/-1/en-us). You will also need to change your code to use OAuth for authentication. For details about using OAuth, see [Authentication with OAuth](https://docs.microsoft.com/en-us/bingads/guides/authentication-oauth?view=bingads-12).
-
 
 The following are the request and response headers.
  
 |Header|Description|
 |---------|---------------|
-|<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth authentication token. For information about getting a token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).<br/><br/>This header and the UserName header are mutually exclusive.
-|Content-Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request. 
-|<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any of the accounts that you manage on behalf of the customer specified in the `CustomerId` header; it doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
+|<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth authentication token. For information about getting a token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).
+|Content-Location|Response header.<br/><br/>A URL that identifies the store that the catalog was inserted into. This header is included in the response of an Insert request. 
+|<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any of the accounts that you manage on behalf of the customer specified in the `CustomerId` header. It doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
 |<a name="customerid"/> CustomerId|Request header.<br/><br/>The customer ID of the customer whose store you manage. Specify this header only if you manage the store on behalf of the customer. If you set this header, you must also set the `CustomerAccountId` header.  
-|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Bing Ads credentials and developer token?](../shopping-content/get-started.md#credentials).
-|Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request. 
-|<a name="password"/>Password|Request header.<br/><br/>A Bing Ads user's sign-in password. Specify this header only if you use the UserName header; do not specify this header with the AuthenticationToken header.
-|<a name="username"/>UserName|Request header.<br/><br/>A Bing Ads user's sign-in user name. You may not set this element to a Microsoft account or email address. This header and the AuthenticationToken header are mutually exclusive.
-|WebRequestActivityId|Response header.<br/><br/>The ID of the log entry that contains the details of the request. You should always capture this ID if an error occurs. If you are not able to determine and resolve the issue, include this ID along with the other information that you provide the Support team.
-
-For user authentication, specify either the AuthenticationToken header or the UserName and Password headers. New customers are required to use a Microsoft account when they sign up for Bing Ads, which uses OAuth to authenticate the user. Existing users with legacy Bing Ads credentials may continue to specify the UserName and Password headers. In future versions of the API, Bing Ads will transition exclusively to using Microsoft accounts. 
+|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Bing Ads credentials and developer token?](../shopping-content/get-started.md#credentials)
+|Location|Response header.<br/><br/>A URL that identifies the store that the catalog was inserted into. This header is included in the response of an Insert request. 
+|WebRequestActivityId|Response header.<br/><br/>The ID of the log entry that contains details about the request. You should always capture this ID if an error occurs. If you are not able to determine and resolve the issue, include this ID along with the other information that you provide the Support team.
 
 
 ## <a name="objects"/> Request and response objects
@@ -84,8 +76,8 @@ Defines a catalog.
 |----|-----|----|--------
 |<a name="id"/>id|An ID that uniquely identifies the catalog in the store.<br/><br/>This field is read-only; do not set this field.|Unsigned Long|\<id\> 
 |<a name="isdefault"/>isDefault|A Boolean value that determines whether the catalog is the store's default catalog. Is **true** if the catalog is the store's default catalog; otherwise, **false**.<br/><br/>When you create a store, you get a default catalog that products are written to if you do not specify another catalog.<br/><br/>This field is read-only; do not set this field.|Boolean|\<is_default\> 
-|<a name="ispublishingenabled"/>isPublishingEnabled|A Boolean value that determines whether Bing may publish products from the catalog. Set to **true** if Bing may publish products from the catalog; otherwise, set it to **false**.<br/><br/>You may update this field.<br/><br/>You also use this field to test your application before deploying it to production. By setting this field to **false**, you may make [Products Resource](../shopping-content/products-resource.md) calls without changing or publishing your production data.|Boolean|\<is_publishing_enabled\>
-|<a name="market"/>market|The market where products in the catalog are published to. The following are the possible markets that you may specify.<br/><br/>- de-DE (German-Germany)<br/>- en-AU (English-Australia)<br/>- en-GB (English-Great Britain)<br/>- en-US (English-United States)<br/>- fr-FR (French-France)<br/><br/>All products that you add to the catalog must specify the same market (see [contentLanguage](../shopping-content/products-resource.md#contentlanguage) and [targetCountry](../shopping-content/products-resource.md#targetcountry)).<br/><br/>You may not update this field after the catalog is added to the store.<br/><br/>In the above list, de-DE is the market value that you specify; do not include (German-Germany) in your market string.|String|\<market\>
+|<a name="ispublishingenabled"/>isPublishingEnabled|A Boolean value that determines whether Bing may publish products from the catalog. Set to **true** if Bing may publish products from the catalog; otherwise, set it to **false**.<br/><br/>You may update this field.<br/><br/>You can also use this field to test your application before deploying it to production. By setting this field to **false**, you may make [Products Resource](../shopping-content/products-resource.md) calls without changing or publishing your production data.|Boolean|\<is_publishing_enabled\>
+|<a name="market"/>market|The market where products in the catalog are published to. The following are the possible markets that you may specify.<ul><li>de-DE (German-Germany)</li><li>en-AU (English-Australia)</li><li>en-GB (English-Great Britain)</li><li>en-US (English-United States)</li><li>fr-FR (French-France)</li></ul>All products that you add to the catalog must specify the same market (see [contentLanguage](../shopping-content/products-resource.md#contentlanguage) and [targetCountry](../shopping-content/products-resource.md#targetcountry)).<br/><br/>You may not update this field after adding the catalog to the store.<br/><br/>In the above list, de-DE is the market value that you specify; do not include (German-Germany) in your market string.|String|\<market\>
 |<a name="name"/>name|The name of the store. The name may contain a maximum of 70 characters.<br/><br/>You may update this field.|String|\<name\> 
 
 
