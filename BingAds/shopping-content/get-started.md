@@ -11,10 +11,7 @@ ms.author: "scottwhi"
 
 # Get Started with the Content API
 
-<!--
-## <a name="credentials"/> Do you have your Bing Ads credentials and developer token?
--->
-
+<a name="credentials"/>
 To use the Content API, you must have a Bing Ads account and use a Microsoft account to access Bing Ads. 
 
 To get a Bing Ads account, go to [http://bingads.microsoft.com](http://bingads.microsoft.com). If you're not signed in to your Microsoft account, you'll be redirected to sign in to your Microsoft account or sign up for a Microsoft account. After signing in, you'll have the option to **Sign up for a new Bing Ads account**. Select the sign up option and **Continue** with the sign up process.
