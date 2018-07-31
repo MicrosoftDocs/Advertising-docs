@@ -50,10 +50,6 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 [setStartDate(Object startDate)](#setstartdate-object-startdate-)|void|Sets the date when ads in this ad group begin serving.
 [urls](#urls)|[AdGroupUrls](./AdGroupUrls.md)|Contains the methods used to manage this ad group's final URLs, tracking template, and custom parameters.
 
-<!--
-[newAd](#newad)|[AdBuilderSpace](./AdBuilderSpace)|Returns a new ad builder space associated with this ad group, which is used to construct a new ad.
--->
-
 
 ## <a name="bidding"></a>bidding
 Gets the methods used to manage this ad group's bid amount.
@@ -154,7 +150,7 @@ Gets an object that contains methods for getting ad builders.
 
 |Type|Description|
 |-|-
-[AdBuilderSpace](./AdBuilderSpace)|An object that contains methods for getting ad builders. For example, if you want to build an expanded text ad, you'd call the `expandedTextAdBuilder` method to get the [ExpandedTextAdBuilder](../reference/ExpandedTextAdBuilder.md) object.
+[AdBuilderSpace](./AdBuilderSpace)|An object that contains methods for getting ad builders. For example, if you want to build an expanded text ad, you'd call the object's `expandedTextAdBuilder` method to get the [ExpandedTextAdBuilder](ExpandedTextAdBuilder.md) object.
 
 ## <a name="newkeywordbuilder"></a>newKeywordBuilder
 Gets a [builder](../concepts/builders.md) that you use to add a keyword to this ad group.
