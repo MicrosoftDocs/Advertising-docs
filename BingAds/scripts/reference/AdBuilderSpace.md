@@ -13,6 +13,14 @@ ms.topic: "article"
 
 Contains the methods used to get ad builders.
 
+
+
+Example usage:
+```javascript
+    var builder = adGroup.newAd().expandedTextAdBuilder();
+```
+
+
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
@@ -28,3 +36,7 @@ Gets a [builder](../concepts/builders.md) that you use to add an expaned text ad
 |-|-
 [ExpandedTextAdBuilder](ExpandedTextAdBuilder.md)|The builder that you use to add expanded text ads to this ad group.
 
+
+## SeeAlso
+
+- []

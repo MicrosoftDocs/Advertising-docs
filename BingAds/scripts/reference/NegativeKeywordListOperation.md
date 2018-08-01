@@ -18,13 +18,13 @@ Contains the methods for determining whether the negative keywords list was succ
 
 |Method Name|Return Type|Description|
 |-|-|-
-[getErrors](#geterrors)|string[]|Gets the errors that occured when you added the negative keywords list.
+[getErrors](#geterrors)|string[]|Gets the errors that occurred when you added the negative keywords list.
 [getResult](#getresult)|[NegativeKeywordList](./NegativeKeywordList.md)|Gets the negative keywords list that you added.
 [isSuccessful](#issuccessful)|Boolean|Gets a Boolean value that indicates whether this operation succeeded.
 
 ## <a name="geterrors"></a>getErrors
 
-Gets the errors that occured when you added the negative keywords list.
+Gets the errors that occurred when you added the negative keywords list.
 
 ### Returns
 
