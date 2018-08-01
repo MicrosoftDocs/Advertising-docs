@@ -19,12 +19,12 @@ Because calling any of this object's methods forces Bing to flush the build queu
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[getErrors](#geterrors)|string[]|Gets any errors that occured when you added the ad group.
+[getErrors](#geterrors)|string[]|Gets any errors that occurred when you added the ad group.
 [getResult](#getresult)|[AdGroup](./AdGroup.md)|Gets the ad group that you added.
 [isSuccessful](#issuccessful)|Boolean|Gets a Boolean value that indicates whether the add operation succeeded.
 
 ## <a name="geterrors"></a>getErrors
-Gets any errors that occured when you added the ad group.
+Gets any errors that occurred when you added the ad group.
 
 ### Returns
 |Type|Description|
