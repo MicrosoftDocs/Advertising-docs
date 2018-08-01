@@ -10,6 +10,14 @@ ms.author: "scottwhi"
 # Release Notes
 This topic describes recent changes made to Version 9.1 of the Content API.
 
+
+## August 1 2018
+
+This release includes the following changes:
+
+- Removed support for legacy credentials; you can no longer use username and password to access Content API. You must now use OAuth to access Content API. If you have not already done so, please migrate your account to use Microsoft accounts. For information, see [We're changing the way you sign in](https://help.bingads.microsoft.com/#apex/3/en/ext50875/-1/en-us). For details about using OAuth, see [Get Started with the Content API](get-started.md).
+
+
 ## July 2017
 
 This release includes the following changes:

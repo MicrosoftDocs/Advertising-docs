@@ -8,7 +8,9 @@ ms.service: "shopping-content-api"
 ms.topic: "article"
 ms.author: "scottwhi"
 ---
+
 # Status Resource
+
 The Status resource lets you get the status of product offers that you uploaded to the specified catalog. After you upload offers to the catalog, they go through a validation and editorial review process. This process can take up to a 36 hours. The offer is included in the report only after it completes the review process.
 
 For an overview of how the process works, see [How Do I Get the Status of Product Offers?](../shopping-content/how-get-status-product-offers.md)
@@ -25,7 +27,7 @@ You may use the above Base URI or the Tenant URL shown under **Store settings** 
 
 ## <a name="templates"/>Templates
 
-To create the endpoints that you use to get the status of product offerings in a catalog, append the appropriate template to the base URI.
+To create the endpoints used to get the status of product offerings in a catalog, append the appropriate template to the base URI.
 
 |Template|HTTP Verb|Description|Resource
 |--------|---------|-----------|--------
@@ -43,32 +45,25 @@ The endpoints may include the following query parameters.
 
 ## <a name="headers"/> Headers
 
-> [!IMPORTANT]
-> The Bing Ads APIs, including Content API, will stop supporting managed user credentials (username and password) beginning August 1, 2018. At your earliest convenience, please migrate your account to use Microsoft accounts. For information, see [We're changing the way you sign in](https://help.bingads.microsoft.com/#apex/3/en/ext50875/-1/en-us). You will also need to change your code to use OAuth for authentication. For details about using OAuth, see [Authentication with OAuth](https://docs.microsoft.com/en-us/bingads/guides/authentication-oauth?view=bingads-12).
-
-
 The following are the request and response headers.
  
 |Header|Description|
 |---------|---------------|
 |Accept|Request header.\<p>Include this header when you download the report. You must set this header to `application/x-zip-compressed`. 
-|<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth authentication token. For information about getting a token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).<br/><br/>This header and the UserName header are mutually exclusive.
+|<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth authentication token. For information about getting a token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).
 |Content-Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request. 
-|<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any of the accounts that you manage on behalf of the customer specified in the `CustomerId` header; it doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
+|<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any of the accounts that you manage on behalf of the customer specified in the `CustomerId` header. It doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
 |<a name="customerid"/> CustomerId|Request header.<br/><br/>The customer ID of the customer whose store you manage. Specify this header only if you manage the store on behalf of the customer. If you set this header, you must also set the `CustomerAccountId`  header.  
-|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Bing Ads credentials and developer token?](../shopping-content/get-started.md#credentials).
+|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Bing Ads credentials and developer token?](../shopping-content/get-started.md#credentials)
 |Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request. 
-|<a name="password"/>Password|Request header.<br/><br/>A Bing Ads user's sign-in password. Specify this header only if you use the UserName header; do not specify this header with the AuthenticationToken header.
-|<a name="username"/>UserName|Request header.<br/><br/>A Bing Ads user's sign-in user name. You may not set this element to a Microsoft account or email address. This header and the AuthenticationToken header are mutually exclusive.
-|WebRequestActivityId|Response header.<br/><br/>The ID of the log entry that contains the details of the request. You should always capture this ID if an error occurs. If you are not able to determine and resolve the issue, include this ID along with the other information that you provide the Support team.
+|WebRequestActivityId|Response header.<br/><br/>The ID of the log entry that contains the details about the request. You should always capture this ID if an error occurs. If you are not able to determine and resolve the issue, include this ID along with the other information that you provide the Support team.
 
-For user authentication, specify either the AuthenticationToken header or the UserName and Password headers. New customers are required to use a Microsoft account when they sign up for Bing Ads, which uses OAuth to authenticate the user. Existing users with legacy Bing Ads credentials may continue to specify the UserName and Password headers. In future versions of the API, Bing Ads will transition exclusively to using Microsoft accounts. 
 
 ## <a name="objects"/> Request and response objects
 
 The following are the request and response objects used by the API.
  
-Each object defines the JSON key name and XML element name that you use depending on the content type that you specify for the request. 
+Each object defines the JSON key name and XML element name that you use depending on the content type that you specified for the request. 
 
 
 |Object|Description
@@ -77,8 +72,7 @@ Each object defines the JSON key name and XML element name that you use dependin
 
 ### <a name="status"/>Status
 
-Defines the status of the product offerings that were uploaded to the catalog.
-XML object name: \<catalogStatus\>
+Defines the status of the product offerings that were uploaded to the catalog. The object's XML name is \<catalogStatus\>.
 
 |Name|Value|Type|XML element name
 |----|-----|----|--------
@@ -115,6 +109,7 @@ The report is broken out into a header section and report body section. The firs
 |Upload Time|Do not use. If this field exists, ignore it. 
 
 The second row contains the header data.
+
 The third row is blank.
 
 The fourth row contains the following column names for the report body, which starts on the fifth row. 

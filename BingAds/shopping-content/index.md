@@ -11,13 +11,10 @@ ms.author: "scottwhi"
 
 # Content API Overview
 
-> [!IMPORTANT]
-> The Bing Ads APIs, including Content API, will stop supporting managed user credentials (username and password) beginning August 1, 2018. At your earliest convenience, please migrate your account to use Microsoft accounts. For information, see [We're changing the way you sign in](https://help.bingads.microsoft.com/#apex/3/en/ext50875/-1/en-us). You will also need to change your code to use OAuth for authentication. For details about using OAuth, see [Authentication with OAuth](https://docs.microsoft.com/en-us/bingads/guides/authentication-oauth?view=bingads-12).
+Bing Ads Content API is a RESTful API that lets advertisers programmatically 
+manage their [Bing Merchant Center](http://help.bingads.microsoft.com/#apex/3/en/51083/1) catalogs. Content API is an alternative to managing your catalog using the Bing Merchant Center web page or by using FTP. Content API has the following advantages:
 
-Bing Ads Content API is a RESTful API that allows advertisers to programmatically 
-manage their [Bing Merchant Center](http://help.bingads.microsoft.com/#apex/3/en/51083/1) catalogs. The Content API is an alternative to managing your catalog using the Bing Merchant Center web page or by using FTP. The Content API has the following advantages:
-
--   Provides the ability to update product offers incrementally rather than uploading the entire data feed. Being able to update  a subset of your products is more efficient than having to upload the entire feed by using FTP.
+-   Provides the ability to update product offers incrementally rather than uploading the entire data feed. Being able to update a subset of your products is more efficient than having to upload the entire feed by using FTP.
 
 -   Provides the ability to make changes to product pricing and availability to reflect close to real-time market conditions. For example, if your product goes out of stock, you can quickly update its Availability field using the Content API.
 
@@ -29,6 +26,7 @@ manage their [Bing Merchant Center](http://help.bingads.microsoft.com/#apex/3/en
 
 
 ## Who Should Use the API?
+
 You should consider using the Content API if:
 
 -   You are currently using the Google Content API. 
