@@ -137,7 +137,7 @@ Gets an object that contains methods for getting ad builders.
 
 |Type|Description|
 |-|-
-[AdBuilderSpace](./AdBuilderSpace)|An object that contains methods for getting ad builders. For example, if you want to build an expanded text ad, you'd call the object's `expandedTextAdBuilder` method to get the [ExpandedTextAdBuilder](ExpandedTextAdBuilder.md) object.
+[AdBuilderSpace](./AdBuilderSpace.md)|An object that contains methods for getting ad builders. For example, if you want to build an expanded text ad, you'd call the object's `expandedTextAdBuilder` method to get the [ExpandedTextAdBuilder](ExpandedTextAdBuilder.md) object.
 
 ## <a name="newkeywordbuilder"></a>newKeywordBuilder
 Gets a [builder](../concepts/builders.md) that you use to add a keyword to this ad group.
