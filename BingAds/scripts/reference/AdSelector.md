@@ -128,7 +128,6 @@ The following are the entity properties you may specify.
 |-|-|-
 Status|enumeration|The ad's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only enabled ads.<br /><br />`withCondition("Status = ENABLED")`
 Type|enumeration|The ad's derived type. Possible case-sensitive values are: <ul><li>EXPANDED_TEXT_AD</li></ul>This example returns only enabled ads.<br /><br />`withCondition("Type = EXPANDED_TEXT_AD")`
-Headline|string|The ad's title.<br /><br />`withCondition("Headline CONTAINS_IGNORE_CASE 'sport'")`
 CreativeFinalUrls|string|The ad's final URL.<br /><br />`withCondition("CreativeFinalUrls CONTAINS_IGNORE_CASE 'contoso.com'")`
 AdGroupName|string|The name of the ad group that the ads belong to.<br /><br />`withCondition("AdGroupName CONTAINS_IGNORE_CASE 'truck'")`
 AdGroupStatus|enumeration|The status of the ad group that the ads belong to. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only ads whose parent ad group is paused.<br /><br />`withCondition("CampaignStatus = PAUSED")`
@@ -181,9 +180,9 @@ limit|int|The number of ads to return. The actual number may be less.
 [AdGroupSelector](./AdGroupSelector.md)|Selector with limit applied.
 
 
-
+<!--
 ## See also
 
 [BingAdsApp.ads()](BingAdsApp.md#ads)
 [AdGroup.ads()](AdGroup.md#ads)
-
+-->
