@@ -24,9 +24,9 @@ Typically indicates that while the credentials are correct for the target enviro
 ### Code 117
 Should you exceed the service call limit, you will see the following error:
 
--   Numeric Error Code: *117*  
--   Symbolic Error Code: *CallRateExceeded*  
--   Message: *You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.*  
+- Numeric Error Code: *117*  
+- Symbolic Error Code: *CallRateExceeded*  
+- Message: *You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.*  
 
 When you observe this error, you can resubmit the request under the limit after waiting 60 seconds.
 
@@ -64,8 +64,8 @@ Available fault and data objects vary per service. This table describes the faul
 |-----------|---------------|
 |Ad Insight|All ad insight operations may throw [AdApiFaultDetail](../ad-insight-service/adapifaultdetail.md) and [ApiFaultDetail](../ad-insight-service/apifaultdetail.md).|
 |Bulk|All bulk operations may throw [AdApiFaultDetail](../bulk-service/adapifaultdetail.md) and [ApiFaultDetail](../bulk-service/apifaultdetail.md).|
-|Campaign Management|All campaign management operations may throw [AdApiFaultDetail](../campaign-management-service/adapifaultdetail.md).<br /><br />Some campaign management operations may also throw [ApiFaultDetail](../campaign-management-service/apifaultdetail.md) or [EditorialApiFaultDetail](../campaign-management-service/editorialapifaultdetail.md).<br /><br />For more information, see [Campaign Management Data Objects](../campaign-management-service/campaign-management-data-objects.md).|
-|Customer Billing|All customer billing operations may throw [AdApiFaultDetail](../customer-billing-service/adapifaultdetail.md) and [ApiFault](../customer-billing-service/apifault.md).<br /><br />Some customer billing operations may also throw [ApiBatchFault](../customer-billing-service/apibatchfault.md).|
+|Campaign Management|All campaign management operations may throw [AdApiFaultDetail](../campaign-management-service/adapifaultdetail.md).<br/><br/>Some campaign management operations may also throw [ApiFaultDetail](../campaign-management-service/apifaultdetail.md) or [EditorialApiFaultDetail](../campaign-management-service/editorialapifaultdetail.md).<br/><br/>For more information, see [Campaign Management Data Objects](../campaign-management-service/campaign-management-data-objects.md).|
+|Customer Billing|All customer billing operations may throw [AdApiFaultDetail](../customer-billing-service/adapifaultdetail.md) and [ApiFault](../customer-billing-service/apifault.md).<br/><br/>Some customer billing operations may also throw [ApiBatchFault](../customer-billing-service/apibatchfault.md).|
 |Customer Management|All customer management operations may throw [AdApiFaultDetail](../customer-management-service/adapifaultdetail.md) and [ApiFault](../customer-management-service/apifault.md).|
 |Reporting|All reporting operations may throw *AdApiFaultDetail* and *ApiFaultDetail*.|
 
@@ -100,7 +100,7 @@ For the same reason, the use of the **using** statement is not recommended. For 
 The Bing Ads .NET SDK exceptions abstract some of the service level exceptions. To work around most of the exceptions you can try again, and feel free to contact support if the issue persists after multiple retry attempts.
 
 Exception  |Namespaces  |Description  
----------|---------|---------     
+---------|---------|---------   
 CouldNotDownloadResultFileException     |Microsoft.BingAds         |This exception is thrown by the internal SDK HttpService after a failed attempt to download a bulk or reporting result file. 
 CouldNotUploadFileException     |Microsoft.BingAds        |This exception is thrown by the internal SDK HttpService after a failed attempt to upload a bulk file.     
 OAuthTokenRequestException     |Microsoft.BingAds         |This exception is thrown if an error was returned from the Microsft Account authorization server. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example you might have specified an invalid client ID. 
@@ -135,7 +135,7 @@ For troubleshooting Java applications, see [Java SDK Troubleshooting](#java-trou
 The Bing Ads Java SDK exceptions abstract some of the service level exceptions. To work around most of the exceptions you can try again, and feel free to contact support if the issue persists after multiple retry attempts.
 
 Exception  |Namespaces  |Description  
----------|---------|---------     
+---------|---------|---------   
 CouldNotDownloadResultFileException     |com.microsoft.bingads         |This exception is thrown by the internal SDK HttpService after a failed attempt to download a bulk or reporting result file. 
 CouldNotUploadFileException     |com.microsoft.bingads        |This exception is thrown by the internal SDK HttpService after a failed attempt to upload a bulk file.     
 OAuthTokenRequestException     |com.microsoft.bingads         |This exception is thrown if an error was returned from the Microsft Account authorization server. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example you might have specified an invalid client ID. 
@@ -261,7 +261,7 @@ For troubleshooting Python applications, see [Python SDK Troubleshooting](#pytho
 The Bing Ads Python SDK exceptions abstract some of the service level exceptions. To work around most of the exceptions you can try again, and feel free to contact support if the issue persists after multiple retry attempts.
 
 Exception  |Namespaces  |Description  
----------|---------|---------     
+---------|---------|---------   
 BulkException     |BingAds.V11.Bulk         |This exception is thrown if an attempt was made to poll for a completed bulk results file and the bulk service returns a failed status.
 BulkDownloadException     |BingAds.V11.Bulk         |This exception is thrown if timeout occurs while attempting to download a bulk file.
 BulkUploadException     |BingAds.V11.Bulk         |This exception is thrown if timeout occurs while attempting to download a bulk upload results file.

@@ -24,9 +24,9 @@ The *GetBidOpportunitiesRequest* object defines the [body](#request-body) and [h
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group for which you want to determine keyword bid opportunities.<br /><br />If this element is nil or empty, the operation will return all bid opportunities for the specified campaign.|**long**|
-|<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad group specified in the *AdGroupId* element.<br /><br />If this element is nil or empty, then the *AdGroupId* must also be nil or empty, and the operation will return all bid opportunities for the account.|**long**|
-|<a name="opportunitytype"></a>OpportunityType|Determines the type or types of bid opportunities corresponding to your ad position goals.<br /><br /> The operation will only return opportunities if there's a suggested increase within 100% of your current bid that will help you achieve the specified goal.|[BidOpportunityType](bidopportunitytype.md)|
+|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group for which you want to determine keyword bid opportunities.<br/><br/>If this element is nil or empty, the operation will return all bid opportunities for the specified campaign.|**long**|
+|<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad group specified in the *AdGroupId* element.<br/><br/>If this element is nil or empty, then the *AdGroupId* must also be nil or empty, and the operation will return all bid opportunities for the account.|**long**|
+|<a name="opportunitytype"></a>OpportunityType|Determines the type or types of bid opportunities corresponding to your ad position goals.<br/><br/>The operation will only return opportunities if there's a suggested increase within 100% of your current bid that will help you achieve the specified goal.|[BidOpportunityType](bidopportunitytype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -38,7 +38,7 @@ The *GetBidOpportunitiesResponse* object defines the [body](#response-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="opportunities"></a>Opportunities|An array of *BidOpportunity* objects that identifies the keywords whose clicks and impressions may increase if you were to apply the suggested match-type bid value.<br /><br />Up to 500 opportunities of each *OpportunityType* will be returned for the account.|[BidOpportunity](bidopportunity.md) array|
+|<a name="opportunities"></a>Opportunities|An array of *BidOpportunity* objects that identifies the keywords whose clicks and impressions may increase if you were to apply the suggested match-type bid value.<br/><br/>Up to 500 opportunities of each *OpportunityType* will be returned for the account.|[BidOpportunity](bidopportunity.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

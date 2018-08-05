@@ -54,15 +54,15 @@ Please adhere to the best practices to ensure fair usage for yourself and all Bi
 > [!IMPORTANT]
 > Whereas exact concurrent download and upload limits are subject to change, the number of pending requests that you have submitted is limited. If you observe the 4204 BulkServiceNoMoreCallsPermittedForTheTimePeriod error, you can resubmit your request after waiting up to 15 minutes depending on the frequency and size of the requests that you submitted. For more information see [Bulk API Throttling](services-protocol.md#throttling-bulk).
 
--   Request only those bulk download entities that you require. New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file.
+- Request only those bulk download entities that you require. New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file.
 
--   Perform a full download one time only. Thereafter, perform delta downloads. Set the *LastSyncTimeInUTC* to the time stamp of the last download. The download file contains the time stamp of the download in the *SyncTime* column of the *Account* record. There is no advantage to performing a full download every time and it decreases everyone's performance including yours.
+- Perform a full download one time only. Thereafter, perform delta downloads. Set the *LastSyncTimeInUTC* to the time stamp of the last download. The download file contains the time stamp of the download in the *SyncTime* column of the *Account* record. There is no advantage to performing a full download every time and it decreases everyone's performance including yours.
 
--   Poll for downloads at reasonable intervals. You know your data better than anyone. If you download an account that is well less than one million keywords, consider polling at 15 to 20 second intervals. If the account contains about one million keywords, consider polling at one minute intervals after waiting five minutes. For accounts with about four million keywords, consider polling at one minute intervals after waiting 10 minutes.
+- Poll for downloads at reasonable intervals. You know your data better than anyone. If you download an account that is well less than one million keywords, consider polling at 15 to 20 second intervals. If the account contains about one million keywords, consider polling at one minute intervals after waiting five minutes. For accounts with about four million keywords, consider polling at one minute intervals after waiting 10 minutes.
 
--   Call the [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) operation if the account contains more than four million keywords. Calling the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) operation with an account that contains more than four million keywords will fail.
+- Call the [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) operation if the account contains more than four million keywords. Calling the [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) operation with an account that contains more than four million keywords will fail.
 
--   You may want to include fewer campaigns in your [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) request. Calling the [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) operation with an account that contains more than eight million keywords will fail. Requests that specify fewer campaigns per call typically complete sooner than calls that specify the maximum number allowed.
+- You may want to include fewer campaigns in your [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) request. Calling the [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md) operation with an account that contains more than eight million keywords will fail. Requests that specify fewer campaigns per call typically complete sooner than calls that specify the maximum number allowed.
 
 ## <a name="bulkupload"></a>Bulk Upload
 You can submit your bulk upload file with HTTP POST to a Url provided by the bulk service.
@@ -129,21 +129,21 @@ Please adhere to the best practices to ensure fair usage for yourself and all Bi
 > [!IMPORTANT]
 > Whereas exact concurrent download and upload limits are subject to change, the number of pending requests that you have submitted is limited. If you observe the 4204 BulkServiceNoMoreCallsPermittedForTheTimePeriod error, you can resubmit your request after waiting up to 15 minutes depending on the frequency and size of the requests that you submitted. For more information see [Bulk API Throttling](services-protocol.md#throttling-bulk).
 
--   Large files can degrade the upload performance. It is optional and recommended that the file be compressed for upload. If compressed it must be formatted as ZIP with the corresponding extension. The file size limit for upload in production is 100MB and up to 4 million rows. For [Sandbox](sandbox.md) the limit is 20K rows. If you can limit concurrent uploads per customer below 5 or 6, then consider splitting the file rather than approaching the file size limit.
+- Large files can degrade the upload performance. It is optional and recommended that the file be compressed for upload. If compressed it must be formatted as ZIP with the corresponding extension. The file size limit for upload in production is 100MB and up to 4 million rows. For [Sandbox](sandbox.md) the limit is 20K rows. If you can limit concurrent uploads per customer below 5 or 6, then consider splitting the file rather than approaching the file size limit.
 
--   Limit concurrent uploads to 5 or 6 per customer to upload files in parallel. Wait on each thread until the previous file was processed, and then you can reuse the thread to upload another file. For example, one thread can upload a file and after the upload status is either *Completed*, *CompletedWithErrors*, or *Failed* that thread can upload another file. 
+- Limit concurrent uploads to 5 or 6 per customer to upload files in parallel. Wait on each thread until the previous file was processed, and then you can reuse the thread to upload another file. For example, one thread can upload a file and after the upload status is either *Completed*, *CompletedWithErrors*, or *Failed* that thread can upload another file. 
 
--   Upload only the entities and fields that you are adding or updating. If supplied, read-only fields such as performance data will be ignored. 
+- Upload only the entities and fields that you are adding or updating. If supplied, read-only fields such as performance data will be ignored. 
 
--   Upload one entity type e.g. Keyword per file. You can upload more than one entity per file; however this is a recommended best practice to maximize performance. 
+- Upload one entity type e.g. Keyword per file. You can upload more than one entity per file; however this is a recommended best practice to maximize performance. 
 
--   Consider whether you need to request errors and results (*ResponseMode = ErrorsAndResults*) in the upload results file, or whether errors only (*ResponseMode = ErrorsOnly*) will suffice. Consider whether or not you should synchronize the results with your local data. For example if you are updating entities you might only need to know whether any errors occurred, and in that case you can specify *ResponseMode = ErrorsOnly* in the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md) request. If you are adding new entities then you can specify *ResponseMode = ErrorsAndResults* in the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md) request to receive the resulting entity identifiers.
+- Consider whether you need to request errors and results (*ResponseMode = ErrorsAndResults*) in the upload results file, or whether errors only (*ResponseMode = ErrorsOnly*) will suffice. Consider whether or not you should synchronize the results with your local data. For example if you are updating entities you might only need to know whether any errors occurred, and in that case you can specify *ResponseMode = ErrorsOnly* in the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md) request. If you are adding new entities then you can specify *ResponseMode = ErrorsAndResults* in the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md) request to receive the resulting entity identifiers.
 
--   For partial retry attempts, do not upload the entire file if only a subset of the records resulted in errors. Only upload the records that you want to retry. 
+- For partial retry attempts, do not upload the entire file if only a subset of the records resulted in errors. Only upload the records that you want to retry. 
 
--   Do not retry until the upload status is either *Completed*, *CompletedWithErrors*, or *Failed*. If by chance performance does not meet expectations, please wait for the result anyways. 
+- Do not retry until the upload status is either *Completed*, *CompletedWithErrors*, or *Failed*. If by chance performance does not meet expectations, please wait for the result anyways. 
 
--   Poll for upload results at reasonable intervals. Initially you should wait one minute for every 10K rows uploaded. After the initial wait time, consider polling in one minute intervals.
+- Poll for upload results at reasonable intervals. Initially you should wait one minute for every 10K rows uploaded. After the initial wait time, consider polling in one minute intervals.
 
 ## See Also
 [Bulk Service Reference](../bulk-service/bulk-service-reference.md)  

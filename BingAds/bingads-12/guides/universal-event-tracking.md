@@ -17,9 +17,9 @@ There are a few steps to get this set up. You will need to:
 * Depending on what you want to do, either set up [conversion tracking](#conversiongoals) or [remarketing in paid search](#remarketing).
 
 For details please see these API overview sections below:
--   [Universal Event Tracking APIs](#uet)
--   [Conversion Goal APIs](#conversiongoals)
--   [Remarketing APIs](#remarketing)
+- [Universal Event Tracking APIs](#uet)
+- [Conversion Goal APIs](#conversiongoals)
+- [Remarketing APIs](#remarketing)
 
 ## <a name="uet"></a>Universal Event Tracking APIs
 

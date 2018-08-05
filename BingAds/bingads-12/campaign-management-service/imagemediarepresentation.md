@@ -27,8 +27,8 @@ Defines an image media representation with height and width.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="height"></a>Height|The height of the image in pixels.<br /><br />For more information, see [Remarks](#remarks) below.|**int**|
-|<a name="width"></a>Width|The width of the image in pixels.<br /><br />For more information, see [Remarks](#remarks) below.|**int**|
+|<a name="height"></a>Height|The height of the image in pixels.<br/><br/>For more information, see [Remarks](#remarks) below.|**int**|
+|<a name="width"></a>Width|The width of the image in pixels.<br/><br/>For more information, see [Remarks](#remarks) below.|**int**|
 
 The [ImageMediaRepresentation](imagemediarepresentation.md) object has [Inherited Elements](#inheritedelements).
 
@@ -39,8 +39,8 @@ The [ImageMediaRepresentation](imagemediarepresentation.md) object derives from 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="name"></a>Name|The name of the media representation.<br /><br />For [ImageAdExtension](imageadextension.md) media representations, the possible values are *Preview*, *Thumbnail*, and *Original*. For [ResponsiveAd](responsivead.md) media representations, the only possible value is *Original*.|**string**|
-|<a name="type"></a>Type|The type of the media representation.<br /><br />This value is *ImageMediaRepresentation* when you retrieve an image media representation. |**string**|
+|<a name="name"></a>Name|The name of the media representation.<br/><br/>For [ImageAdExtension](imageadextension.md) media representations, the possible values are *Preview*, *Thumbnail*, and *Original*. For [ResponsiveAd](responsivead.md) media representations, the only possible value is *Original*.|**string**|
+|<a name="type"></a>Type|The type of the media representation.<br/><br/>This value is *ImageMediaRepresentation* when you retrieve an image media representation. |**string**|
 |<a name="url"></a>Url|The media download URL.|**string**|
 
 ## <a name="remarks"></a>Remarks

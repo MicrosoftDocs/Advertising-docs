@@ -66,7 +66,7 @@ With the exception of the Indonesian Rupiah (IDR), bid estimates are supported b
 |SwedishKrona|The Swedish Krona (SEK).|0.07|7,000.00|0.07|2.00|213,500,000.00|
 |SwissFranc|The Swiss Franc (CHF).|0.05|1,500.00|0.05|5.00|8,931,900.00|
 |UKPound|The Pound Sterling (GBP).|0.05|1,000.00|0.05|5.00|3,938,700.00|
-|USDollar|The U.S. Dollar (USD).|Keyword and Cpc: 0.05<br /><br />Product Ad Fixed Bid: 0.01|1,000.00|0.05|5.00|30,000,000.00|
+|USDollar|The U.S. Dollar (USD).|Keyword and Cpc: 0.05<br/><br/>Product Ad Fixed Bid: 0.01|1,000.00|0.05|5.00|30,000,000.00|
 
 
 ## <a name="conversiongoalrevenue"></a>Conversion Goal Revenue Currencies

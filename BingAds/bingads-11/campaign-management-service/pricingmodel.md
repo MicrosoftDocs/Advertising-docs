@@ -24,7 +24,7 @@ Defines the pricing model for an ad group.
 |Value|Description|
 |-----------|---------------|
 |<a name="cpc"></a>Cpc|The pricing model is cost-per-click (CPC).|
-|<a name="cpm"></a>Cpm|The pricing model is cost per thousand-impressions (CPM).<br /><br /> Available for members of the CPM pilot program.|
+|<a name="cpm"></a>Cpm|The pricing model is cost per thousand-impressions (CPM).<br/><br/>Available for members of the CPM pilot program.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

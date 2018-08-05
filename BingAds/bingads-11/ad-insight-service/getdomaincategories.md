@@ -22,7 +22,7 @@ The *GetDomainCategoriesRequest* object defines the [body](#request-body) and [h
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="categoryname"></a>CategoryName|The category name filter.<br/><br/>If you already know one or more of the categories, then you can optionally filter the list of results by sub-category. Up to three category levels can be specified, and must be separated by a forward slash ("/"). For example you can format the filter as *CategoryL1 / CategoryL2 / CategoryL3*.<br/><br/>If you do not include any category name, then all categories for the domain and language will be returned. |**string**|
-|<a name="domainname"></a>DomainName|The website name corresponding to the pages you want your ads to target.<br /><br />The maximum length of the domain is 2,048 characters. You do not need to include the *http*, *https*, or *www* prefix.|**string**|
+|<a name="domainname"></a>DomainName|The website name corresponding to the pages you want your ads to target.<br/><br/>The maximum length of the domain is 2,048 characters. You do not need to include the *http*, *https*, or *www* prefix.|**string**|
 |<a name="language"></a>Language|The language of the website domain. Currently only English is supported, so you must set this element to *EN*.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements

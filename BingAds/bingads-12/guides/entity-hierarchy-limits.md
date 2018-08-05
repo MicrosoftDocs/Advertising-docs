@@ -128,10 +128,10 @@ The following table defines limits for sitelink ad extension properties.
 
 |Property|Limit|
 |------------|---------|
-|Description 1|If Traditional Chinese characters are included, the string can contain a maximum of 15 characters.<br /><br />For English and all other languages, the limit is 35 characters.|
-|Description 2|If Traditional Chinese characters are included, the string can contain a maximum of 15 characters.<br /><br />For English and all other languages, the limit is 35 characters.|
+|Description 1|If Traditional Chinese characters are included, the string can contain a maximum of 15 characters.<br/><br/>For English and all other languages, the limit is 35 characters.|
+|Description 2|If Traditional Chinese characters are included, the string can contain a maximum of 15 characters.<br/><br/>For English and all other languages, the limit is 35 characters.|
 |Destination Url|The URL can contain a maximum of 1,024 characters.|
-|Display Text|For Traditional Chinese, if you specify Description1 or Description2 then the string can contain a maximum of 11 characters; otherwise, the string can contain a maximum of 15 characters.<br /><br />For English and all other languages, if you specify Description1 or Description2 then the string can contain a maximum of 25 characters; otherwise, the string can contain a maximum of 35 characters.|
+|Display Text|For Traditional Chinese, if you specify Description1 or Description2 then the string can contain a maximum of 11 characters; otherwise, the string can contain a maximum of 15 characters.<br/><br/>For English and all other languages, if you specify Description1 or Description2 then the string can contain a maximum of 25 characters; otherwise, the string can contain a maximum of 35 characters.|
 |Final Url|The string can contain a maximum of 2,048 characters.|
 |Final Mobile Url|The string can contain a maximum of 2,048 characters.|
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
@@ -311,9 +311,9 @@ The following table defines limits for keyword properties.
 |Destination Url|The string can contain a maximum of 1,024 characters.|
 |Final Url|The string can contain a maximum of 2,048 characters.|
 |Final Mobile Url|The string can contain a maximum of 2,048 characters.|
-|Param1|The string can contain a maximum of 1,022 characters.<br /><br />The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
-|Param2|The string can contain a maximum of 70 characters.<br /><br />The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
-|Param3|The string can contain a maximum of 70 characters.<br /><br />The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
+|Param1|The string can contain a maximum of 1,022 characters.<br/><br/>The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
+|Param2|The string can contain a maximum of 70 characters.<br/><br/>The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
+|Param3|The string can contain a maximum of 70 characters.<br/><br/>The actual limit depends on the length of the element that references the substitution string. For example, the length of a text ad's title can contain a maximum of 25 characters.|
 |Text|The string can contain a maximum of 100 characters.|
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 

@@ -30,7 +30,7 @@ Defines an account identification object that contains information that identifi
 |<a name="id"></a>Id|The system generated identifier of the account.|**long**|
 |<a name="name"></a>Name|The name of the account.|**string**|
 |<a name="number"></a>Number|The account number.|**string**|
-|<a name="pausereason"></a>PauseReason|A flag value that indicates who paused the account. The following are the possible values:<br /><br />1 - The user paused the account.<br /><br />2 - The billing service paused the account.<br /><br />4 - The user and billing service paused the account.|**unsignedByte**|
+|<a name="pausereason"></a>PauseReason|A flag value that indicates who paused the account. The following are the possible values:<br/><br/>1 - The user paused the account.<br/><br/>2 - The billing service paused the account.<br/><br/>4 - The user and billing service paused the account.|**unsignedByte**|
 
 ## Requirements
 Service: [CustomerManagementService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v11/CustomerManagementService.svc)  

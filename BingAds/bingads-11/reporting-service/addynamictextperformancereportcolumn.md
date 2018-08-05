@@ -92,8 +92,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="destinationurl"></a>DestinationUrl|The destination URL attribute of the ad, keyword, or ad group criterion.If the destination URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL after substitution occurs.|
 |<a name="devicetype"></a>DeviceType|The device name attribute of a device OS target bid. The type of device which showed ads.The possible values include *Computer*, *Smartphone*, *Tablet*, and *Unknown*.|
 |<a name="finalappurl"></a>FinalAppURL|Reserved for future use.|
-|<a name="finalmobileurl"></a>FinalMobileURL|The Final Mobile URL of the ad, keyword, or criterion.<br /><br />Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
-|<a name="finalurl"></a>FinalURL|The Final URL of the ad, keyword, or criterion.<br /><br />Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
+|<a name="finalmobileurl"></a>FinalMobileURL|The Final Mobile URL of the ad, keyword, or criterion.<br/><br/>Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
+|<a name="finalurl"></a>FinalURL|The Final URL of the ad, keyword, or criterion.<br/><br/>Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |<a name="keyword"></a>Keyword|The keyword text.|
 |<a name="keywordstatus"></a>KeywordStatus|The keyword status.|

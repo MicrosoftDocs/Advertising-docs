@@ -18,11 +18,13 @@ This article covers authentication and basic service calls with the Bing Ads SDK
 The SDK uses the production environment by default. With the .NET and Java SDKs you can change it to sandbox with a global configuration. Whereas the global configuration is not available with PHP and Python SDKs you could create a global configuration or other custom solution.
 
 ```csharp
-// Set the BingAdsEnvironment key to Sandbox within the <appSettings> node of your project root's Web.config file (for web apps) or App.config file (for native apps).
+// Set the BingAdsEnvironment key to Sandbox within the <appSettings> node 
+// of your project root's Web.config file (for web apps) or App.config file (for native apps).
 <add key="BingAdsEnvironment" value ="Sandbox"/>
 ```
 ```java
-// Create a new text file named bingads.properties within your project source root directory e.g. **ProjectName\src\bingads.properties** and add only the following text. 
+// Create a new text file named bingads.properties within your project source root directory 
+// e.g. **ProjectName\src\bingads.properties** and add only the following text. 
 // If the sandbox environment setting is malformed or missing, the default environment is production.
 environment=Sandbox
 ```
@@ -204,7 +206,10 @@ For repeat or long term authentication, you should follow the authorization code
         oAuthWebAuthCodeGrant.RequestAccessAndRefreshTokensAsync(refreshToken);
     }
 
-    // When calling Bing Ads services with Service Client, Bulk Service Manager, or Reporting Service Manager, each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. It is important to save the most recent refresh token whenever new OAuth tokens are received. You will want to subscribe to the NewOAuthTokensReceived event handler.
+    // When calling Bing Ads services with Service Client, Bulk Service Manager, or Reporting Service Manager, 
+    // each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. 
+    // It is important to save the most recent refresh token whenever new OAuth tokens are received. 
+    // You will want to subscribe to the NewOAuthTokensReceived event handler.
 
     oAuthWebAuthCodeGrant.NewOAuthTokensReceived += 
         (sender, args) => SaveRefreshToken(args.NewRefreshToken);
@@ -217,7 +222,10 @@ For repeat or long term authentication, you should follow the authorization code
         oAuthWebAuthCodeGrant.requestAccessAndRefreshTokens(refreshToken);
     }
 
-    // When calling Bing Ads services with Service Client, Bulk Service Manager, or Reporting Service Manager, each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. It is important to save the most recent refresh token whenever new OAuth tokens are received. You will want to implement event handling using the NewOAuthTokensReceivedListener.
+    // When calling Bing Ads services with Service Client, Bulk Service Manager, or Reporting Service Manager, 
+    // each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. 
+    // It is important to save the most recent refresh token whenever new OAuth tokens are received. 
+    // You will want to implement event handling using the NewOAuthTokensReceivedListener.
 
     oAuthWebAuthCodeGrant.setNewTokensListener(new NewOAuthTokensReceivedListener() {
         @Override
@@ -231,7 +239,12 @@ For repeat or long term authentication, you should follow the authorization code
     $_SESSION['AuthorizationData']->Authentication->RequestOAuthTokensByRefreshToken($refreshToken);
     ```
     ```python
-    # When calling Bing Ads services with Service Client, Bulk Service Manager, or Reporting Service Manager, each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. It is important to save the most recent refresh token whenever new OAuth tokens are received. You will want to register a callback function to automatically save the refresh token anytime it is refreshed. For example if you defined have a save_refresh_token() method that securely stores your refresh token, set the authentication token_refreshed_callback property of each OAuthWebAuthCodeGrant instance.
+    # When calling Bing Ads services with Service Client, Bulk Service Manager, or Reporting Service Manager, 
+    # each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. 
+    # It is important to save the most recent refresh token whenever new OAuth tokens are received. 
+    # You will want to register a callback function to automatically save the refresh token anytime it is refreshed. 
+    # For example if you defined have a save_refresh_token() method that securely stores your refresh token, 
+    # set the authentication token_refreshed_callback property of each OAuthWebAuthCodeGrant instance.
     
     oauth_web_auth_code_grant.token_refreshed_callback=save_refresh_token
 
@@ -296,12 +309,16 @@ You can use an instance of the *ServiceClient* class to call any methods of one 
 > If you are using the Bulk or Reporting services, use the [Bulk Service Manager](sdk-bulk-service-manager.md) or [Reporting Service Manager](sdk-reporting-service-manager.md) instead of *ServiceClient*. For example the [Bulk Service Manager](sdk-bulk-service-manager.md) will submit your download request to the bulk service, poll the service until completed, and download the file to the local directory that you specified in the request. You'll save even more time because you don't have to write or parse the upload or results files. 
 
 ```csharp
-// The primary method of the ServiceClient class is CallAsync. The method parameter is the delegate for the service operation that you want to call. The request parameter of this method must be a request message corresponding to the name of the service operation specified by the first request parameter. The request message must match the service operation that is specified as the delegate in the first request.
+// The primary method of the ServiceClient class is CallAsync. The method parameter is the delegate 
+// for the service operation that you want to call. The request parameter of this method must be a 
+// request message corresponding to the name of the service operation specified by the first request parameter. 
+// The request message must match the service operation that is specified as the delegate in the first request.
 
 public async Task<TResponse> CallAsync<TRequest, TResponse>(
     Func<TService, TRequest, Task<TResponse>> method, TRequest request)
 
-// In the following sample, the method delegate is (s, r) => s.GetUserAsync(r) which takes a GetUserRequest message as the request parameter (TRequest) and returns a GetUserResponse message (TResponse).
+// In the following sample, the method delegate is (s, r) => s.GetUserAsync(r) which takes a GetUserRequest 
+// message as the request parameter (TRequest) and returns a GetUserResponse message (TResponse).
 
 private async Task<User> GetUserAsync(long? userId)
 {
@@ -324,10 +341,14 @@ java.lang.Long userId = null;
 final GetUserRequest getUserRequest = new GetUserRequest();
 getUserRequest.setUserId(userId);
 
+// If you updated the authorization data such as account ID or you want to call a new operation, 
+// you must call getService to set the latest request headers. 
+// As a best practice you should use getService when calling any service operation.
 User user = CustomerService.getService().getUser(getUserRequest).getUser();
 ```
 ```php
-// You can use a single instance of the ServiceClient class to call any methods in the service, for example you can set the CustomerManagementVersion12 service client type as follows.
+// You can use a single instance of the ServiceClient class to call any methods in the service, 
+// for example you can set the CustomerManagementVersion12 service client type as follows.
 
 $customerProxy = new ServiceClient(ServiceClientType::CustomerManagementVersion12, $authorizationData, ApiEnvironment::Production);
 )

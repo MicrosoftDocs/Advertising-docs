@@ -24,8 +24,8 @@ The *GetMediaAssociationsRequest* object defines the [body](#request-body) and [
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediaenabledentities"></a>MediaEnabledEntities|Filters the results to only return media associations with the specified type of media enabled entity.<br /><br />Supported values are ImageAdExtension and ResponsiveAd.|[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|
-|<a name="mediaids"></a>MediaIds|The identifiers of the media to get corresponding entity associations.<br /><br />You can specify a maximum of 10 media identifiers in a single call.|**long** array|
+|<a name="mediaenabledentities"></a>MediaEnabledEntities|Filters the results to only return media associations with the specified type of media enabled entity.<br/><br/>Supported values are ImageAdExtension and ResponsiveAd.|[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|
+|<a name="mediaids"></a>MediaIds|The identifiers of the media to get corresponding entity associations.<br/><br/>You can specify a maximum of 10 media identifiers in a single call.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -38,7 +38,7 @@ The *GetMediaAssociationsResponse* object defines the [body](#response-body) and
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="mediaassociations"></a>MediaAssociations|An array of [MediaAssociation](mediaassociation.md) objects that corresponds directly to the media identifiers that you specified in the request. Items of the list may be returned as null. For each list index where media associations were not retrieved, the corresponding element will be null.|[MediaAssociation](mediaassociation.md) array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

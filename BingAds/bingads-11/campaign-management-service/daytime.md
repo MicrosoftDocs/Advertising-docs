@@ -28,9 +28,9 @@ Defines a day of the week and time range for ad extension scheduling.
 |-----------|---------------|-------------|
 |<a name="day"></a>Day|The scheduled day of week.<br/><br/>**Add:** Required.<br/>**Update:** The *DayTime* object cannot be updated. |[Day](day.md)|
 |<a name="endhour"></a>EndHour|The scheduled end hour.<br/><br/>The possible values range from 0 to 24, where *0* is equivalent to 12:00AM and *12* is 12:00PM.<br/><br/>**Add:** Required. <br/>**Update:** The *DayTime* object cannot be updated. |**int**|
-|<a name="endminute"></a>EndMinute|The scheduled end minute.<br /><br />The possible values range from 0 to 60.<br/><br/>**Add:** Required.<br/>**Update:** The *DayTime* object cannot be updated. |[Minute](minute.md)|
+|<a name="endminute"></a>EndMinute|The scheduled end minute.<br/><br/>The possible values range from 0 to 60.<br/><br/>**Add:** Required.<br/>**Update:** The *DayTime* object cannot be updated. |[Minute](minute.md)|
 |<a name="starthour"></a>StartHour|The scheduled start hour.<br/><br/>The possible values range from 0 to 23, where *0* is equivalent to 12:00AM and *12* is 12:00PM.<br/><br/>**Add:** Required.<br/>**Update:** The *DayTime* object cannot be updated. |**int**|
-|<a name="startminute"></a>StartMinute|The scheduled start minute.<br /><br />The possible values range from 0 to 60.<br/><br/>**Add:** Required.<br/>**Update:** The *DayTime* object cannot be updated. |[Minute](minute.md)|
+|<a name="startminute"></a>StartMinute|The scheduled start minute.<br/><br/>The possible values range from 0 to 60.<br/><br/>**Add:** Required.<br/>**Update:** The *DayTime* object cannot be updated. |[Minute](minute.md)|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

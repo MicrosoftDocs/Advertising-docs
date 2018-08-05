@@ -21,7 +21,7 @@ The *GetSharedEntitiesByAccountIdRequest* object defines the [body](#request-bod
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="sharedentitytype"></a>SharedEntityType|The type of shared entity to get from the account's library.<br /><br />Currently the only supported value is NegativeKeywordList.|**string**|
+|<a name="sharedentitytype"></a>SharedEntityType|The type of shared entity to get from the account's library.<br/><br/>Currently the only supported value is NegativeKeywordList.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

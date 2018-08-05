@@ -23,7 +23,7 @@ Defines an object that contains a keyword category and a confidence score. The c
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="category"></a>Category|The keyword category that the keyword might belong to.<br /><br />If the category is undetermined, this element is set to Unknown Category and the ConfidenceScore element is set to 0.0.|**string**|
+|<a name="category"></a>Category|The keyword category that the keyword might belong to.<br/><br/>If the category is undetermined, this element is set to Unknown Category and the ConfidenceScore element is set to 0.0.|**string**|
 |<a name="confidencescore"></a>ConfidenceScore|A score from 0.0 to 1.0 that indicates the likelihood that the keyword belongs to the category.|**double**|
 
 ## Requirements

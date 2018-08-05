@@ -13,8 +13,8 @@ Defines an ad group negative company name criterion that can be uploaded and dow
 
 You can exclude people at a specific company according to LinkedIn by setting the [Profile Id](#profileid). 
 
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
+> [!TIP]
+> For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Ad Group Negative Company Name Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
@@ -39,7 +39,7 @@ Format Version,,,,,,,,,6,,
 Ad Group Negative Company Name Criterion,Active,,-1111,,,,ClientIdGoesHere,,,ProfileIdGoesHere,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupNegativeCompanyNameCriterion* class (coming soon), instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupNegativeCompanyNameCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -164,9 +164,9 @@ To download profile identifiers call the [GetProfileDataFileUrl](../campaign-man
 **Delete:** Required  
 
 ### <a name="status"></a>Status
-Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
+Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*. To delete the criterion, set the status to *Deleted*.
 
-**Add:** Read-only  
+**Add:** Read-only. The status will always be set to *Active* when you add criterions. If you upload another value e.g., *Foo* the result file will contain the same value although the criterion is active.  
 **Update:** Optional  
 **Delete:** Required. The Status must be set to *Deleted*. To delete a specific company name criterion, you must upload the *Status*, *Id*, and *Parent Id*.
 

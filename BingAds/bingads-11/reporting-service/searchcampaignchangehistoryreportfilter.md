@@ -24,9 +24,9 @@ Defines the criteria to use to filter the campaign change history report data.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="addistribution"></a>AdDistribution|The report will include data for only the specified distribution medium. For example, you can use the filter to include data for only search ads.<br /><br />You can specify one or more distribution mediums.|[AdDistributionReportFilter](addistributionreportfilter.md)|
-|<a name="howchanged"></a>HowChanged|The report will include data for only the specified type of change. For example, you can use the filter to include data only for updates or deletions.<br /><br />You may specify only one type of change.|[ChangeTypeReportFilter](changetypereportfilter.md)|
-|<a name="itemchanged"></a>ItemChanged|The report will include data for only the specified type of entity. For example, you can use the filter to include data only for changes to ad groups or campaigns.<br /><br />You may specify only one type of entity.|[ChangeEntityReportFilter](changeentityreportfilter.md)|
+|<a name="addistribution"></a>AdDistribution|The report will include data for only the specified distribution medium. For example, you can use the filter to include data for only search ads.<br/><br/>You can specify one or more distribution mediums.|[AdDistributionReportFilter](addistributionreportfilter.md)|
+|<a name="howchanged"></a>HowChanged|The report will include data for only the specified type of change. For example, you can use the filter to include data only for updates or deletions.<br/><br/>You may specify only one type of change.|[ChangeTypeReportFilter](changetypereportfilter.md)|
+|<a name="itemchanged"></a>ItemChanged|The report will include data for only the specified type of entity. For example, you can use the filter to include data only for changes to ad groups or campaigns.<br/><br/>You may specify only one type of entity.|[ChangeEntityReportFilter](changeentityreportfilter.md)|
 
 ## Requirements
 Service: [ReportingService.svc v11](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v11/ReportingService.svc)  

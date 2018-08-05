@@ -48,7 +48,7 @@ Before you can manage authentication for users of your Bing Ads application, you
     
     If you have previously registered Live SDK applications, then you will also see an option to add another Live SDK application. In that case we recommend adding all new apps under **Converged applications**.  At this time you are not required to migrate app registrations. When migration away from **Live SDK applications** is required in the future, we will announce it well in advance.
 
-3.  Provide the application name and click **Create application**.
+3.  Provide the application name and click **Create**. Do not check the box for "Guided Setup".
 
     ![Create application](media/create-application.png "Create application")
 
@@ -137,9 +137,9 @@ For repeat or long term authentication, you should follow the authorization code
 
 5.  Get the *access_token*, *refresh_token*, and *expires_in* values from the JSON response stream.
 
-    -   Use the returned access token as the *AuthenticationToken* element within Bing Ads service [Service Request Header](get-started.md#where-to-use).
+    - Use the returned access token as the *AuthenticationToken* element within Bing Ads service [Service Request Header](get-started.md#where-to-use).
 
-    -   The value of *expires_in* represents the maximum time in seconds, until the access token will expire. Before the access token expires, you should request a new access token as discussed in the next step.
+    - The value of *expires_in* represents the maximum time in seconds, until the access token will expire. Before the access token expires, you should request a new access token as discussed in the next step.
 
 6.  Use the refresh token to get a new access token and new refresh token. You should request a new token before the current access token expires, or catch the *AuthenticationTokenExpired* error code (109) and then request a refresh token. 
 

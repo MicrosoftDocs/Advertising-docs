@@ -31,7 +31,7 @@ The *ProductScope* criterion can only be included within [BiddableCampaignCriter
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="conditions"></a>Conditions|A list of up to 7 product conditions that helps determine whether a product from the Bing Merchant Center store gets served as an ad.<br /><br /> Conditions may be returned by Bing Ads services in a different order from the order that you submitted.<br /><br />**Add:** Required<br/>**Update:** Required|[ProductCondition](productcondition.md) array|
+|<a name="conditions"></a>Conditions|A list of up to 7 product conditions that helps determine whether a product from the Bing Merchant Center store gets served as an ad.<br/><br/>Conditions may be returned by Bing Ads services in a different order from the order that you submitted.<br/><br/>**Add:** Required<br/>**Update:** Required|[ProductCondition](productcondition.md) array|
 
 The [ProductScope](productscope.md) object has [Inherited Elements](#inheritedelements).
 
@@ -42,7 +42,7 @@ The [ProductScope](productscope.md) object derives from the [Criterion](criterio
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="type"></a>Type|The type of the criterion. This value is *ProductScope* when you retrieve a product scope criterion. For more information about criterion types, see the [Criterion Data Object Remarks](criterion.md#remarks).<br /><br />**Add:** Read-only<br/>**Update:** Read-only|**string**|
+|<a name="type"></a>Type|The type of the criterion. This value is *ProductScope* when you retrieve a product scope criterion. For more information about criterion types, see the [Criterion Data Object Remarks](criterion.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

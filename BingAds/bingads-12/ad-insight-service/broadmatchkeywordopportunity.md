@@ -39,7 +39,7 @@ Defines an object that contains the marketplace impact statistics of including b
 |<a name="impressionshare"></a>ImpressionShare|Broad match impression share in the marketplace.|**double**|
 |<a name="referencekeywordbid"></a>ReferenceKeywordBid|The bid of an existing reference keyword used by the service to offer the keyword opportunity.|**double**|
 |<a name="referencekeywordid"></a>ReferenceKeywordId|The identifier of an existing reference keyword used by the service to offer the keyword opportunity.|**long**|
-|<a name="referencekeywordmatchtype"></a>ReferenceKeywordMatchType|The match type of an existing reference keyword used by the service to offer the keyword opportunity.<br /><br />The following are the possible match-type values:<br /><br />1 - Exact match<br /><br />2 - Phrase match|**int**|
+|<a name="referencekeywordmatchtype"></a>ReferenceKeywordMatchType|The match type of an existing reference keyword used by the service to offer the keyword opportunity.<br/><br/>The following are the possible match-type values:<br/><br/>1 - Exact match<br/><br/>2 - Phrase match|**int**|
 |<a name="searchquerykpis"></a>SearchQueryKPIs|A list of up to three broad match search query KPI objects. Each item contains search query statistics of including broad match type keyword bids|[BroadMatchSearchQueryKPI](broadmatchsearchquerykpi.md) array|
 
 The [BroadMatchKeywordOpportunity](broadmatchkeywordopportunity.md) object has [Inherited Elements](#inheritedelements).
@@ -59,7 +59,7 @@ The [BroadMatchKeywordOpportunity](broadmatchkeywordopportunity.md) object deriv
 |<a name="estimatedincreaseinclicks"></a>EstimatedIncreaseInClicks|Estimated increase in clicks if the opportunity is applied.|**double**|
 |<a name="estimatedincreaseincost"></a>EstimatedIncreaseInCost|Estimated increase in cost if the opportunity is applied.|**double**|
 |<a name="estimatedincreaseinimpressions"></a>EstimatedIncreaseInImpressions|Estimated increase in impressions if the opportunity is applied.|**long**|
-|<a name="matchtype"></a>MatchType|The match type that the suggested bid applies to. The following are the possible match-type values:<br /><br />1 - Exact match<br /><br />2 - Phrase match<br /><br />3 - Broad match|**int**|
+|<a name="matchtype"></a>MatchType|The match type that the suggested bid applies to. The following are the possible match-type values:<br/><br/>1 - Exact match<br/><br/>2 - Phrase match<br/><br/>3 - Broad match|**int**|
 |<a name="monthlysearches"></a>MonthlySearches|The estimated monthly volume of user search queries that may match the suggested keyword for the corresponding *MatchType* element.|**long**|
 |<a name="suggestedbid"></a>SuggestedBid|The suggested bid that may result in your ads serving on the first page of the search query results.|**double**|
 |<a name="suggestedkeyword"></a>SuggestedKeyword|The suggested keyword.|**string**|

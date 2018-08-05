@@ -21,7 +21,7 @@ The *AddSharedEntityRequest* object defines the [body](#request-body) and [heade
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="listitems"></a>ListItems|The negative keywords to add to the negative keyword list.<br /><br />The list can contain a maximum of 5,000 items.<br /><br /> You cannot add existing negative keywords with assigned identifiers. You can add the same negative keyword and match type to a negative keyword list, and it will be assigned a new identifier.|[SharedListItem](sharedlistitem.md) array|
+|<a name="listitems"></a>ListItems|The negative keywords to add to the negative keyword list.<br/><br/>The list can contain a maximum of 5,000 items.<br/><br/>You cannot add existing negative keywords with assigned identifiers. You can add the same negative keyword and match type to a negative keyword list, and it will be assigned a new identifier.|[SharedListItem](sharedlistitem.md) array|
 |<a name="sharedentity"></a>SharedEntity|The negative keyword list to add to the account's shared library.|[SharedEntity](sharedentity.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -34,8 +34,8 @@ The *AddSharedEntityResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="listitemids"></a>ListItemIds|A list of *long* values that represents the identifiers for the list items that were added.<br /><br />Items of the list may be returned as null. For each list index where a list item was not added, the corresponding element will be null.|**long** array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="listitemids"></a>ListItemIds|A list of *long* values that represents the identifiers for the list items that were added.<br/><br/>Items of the list may be returned as null. For each list index where a list item was not added, the corresponding element will be null.|**long** array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 |<a name="sharedentityid"></a>SharedEntityId|The identifier for the shared entity that was added.|**long**|
 
 ### <a name="response-header"></a>Response Header Elements

@@ -36,7 +36,7 @@ The *GetAccountMigrationStatusesResponse* object defines the [body](#response-bo
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="migrationstatuses"></a>MigrationStatuses|An array of account migration statuses.<br /><br />For each account identifier specified in the request, an *AccountMigrationStatusesInfo* object is returned.|[AccountMigrationStatusesInfo](accountmigrationstatusesinfo.md) array|
+|<a name="migrationstatuses"></a>MigrationStatuses|An array of account migration statuses.<br/><br/>For each account identifier specified in the request, an *AccountMigrationStatusesInfo* object is returned.|[AccountMigrationStatusesInfo](accountmigrationstatusesinfo.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

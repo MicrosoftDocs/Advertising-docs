@@ -12,10 +12,10 @@ Bing Ads is a pay-per-click (PPC) advertising platform used to display ads based
 ## <a name="who"></a>Who should use the Bing Ads API?
 You should consider using the Bing Ads API if your business model resembles the following:
 
--   You are a direct advertiser managing your own ad spend and you want to integrate our PPC marketing with your internal inventory management or conversion tracking systems. For more information, see [Management Model for Direct Advertisers](management-model-direct-advertisers.md).  
--   You are a tools vendor developing advertising management solutions for advertisers or agencies. For more information, see [Management Model for Tool Providers](management-model-tool-providers.md).  
--   You are an advertising agency and manage ad campaigns for many clients. For more information, see [Management Model for Agencies](management-model-agencies.md).  
--   You are a reseller and want to build Bing Ads applications to manage the campaigns of your advertising clients. For more information, see [Management Model for Resellers](management-model-resellers.md).  
+- You are a direct advertiser managing your own ad spend and you want to integrate our PPC marketing with your internal inventory management or conversion tracking systems. For more information, see [Management Model for Direct Advertisers](management-model-direct-advertisers.md).  
+- You are a tools vendor developing advertising management solutions for advertisers or agencies. For more information, see [Management Model for Tool Providers](management-model-tool-providers.md).  
+- You are an advertising agency and manage ad campaigns for many clients. For more information, see [Management Model for Agencies](management-model-agencies.md).  
+- You are a reseller and want to build Bing Ads applications to manage the campaigns of your advertising clients. For more information, see [Management Model for Resellers](management-model-resellers.md).  
 For [Customer Accounts](customer-accounts.md), you should use the [Customer Management](../customer-management-service/customer-management-service-reference.md) service.  
 
 ## <a name="where"></a>Where your ads will appear

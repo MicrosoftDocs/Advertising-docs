@@ -24,13 +24,13 @@ The *BulkServiceManager* will automatically retry upload, download, and polling 
 
 The *BulkServiceManager* supports the following workflows.
 
--   You can submit a download or upload request and the *BulkServiceManager* will automatically return results. The *BulkServiceManager* abstracts the details of checking for result file completion, and you don't have to write any code for results polling. For more information, see [Background Completion with BulkServiceManager](#backgroundcompletion).  
+- You can submit a download or upload request and the *BulkServiceManager* will automatically return results. The *BulkServiceManager* abstracts the details of checking for result file completion, and you don't have to write any code for results polling. For more information, see [Background Completion with BulkServiceManager](#backgroundcompletion).  
 
--   You can submit a download or upload request and then poll until the result file is ready to download. For more information, see [Submit and Download with BulkServiceManager](#submitdownload).
+- You can submit a download or upload request and then poll until the result file is ready to download. For more information, see [Submit and Download with BulkServiceManager](#submitdownload).
 
--   If for any reason you have to resume from a previous application state, you can use an existing download or upload request identifier and use it to download the result file. For more information, see [Download Results with BulkServiceManager](#downloadresults).
+- If for any reason you have to resume from a previous application state, you can use an existing download or upload request identifier and use it to download the result file. For more information, see [Download Results with BulkServiceManager](#downloadresults).
 
--   If you are migrating from a deprecated bulk file format version, you can use an *IBulkService* instance of *ServiceClient* to upload and download campaigns using any format version [Bulk File Schema](../bulk-service/bulk-file-schema.md). The low level approach requires that you submit your download or upload, poll until the results are available, and then download the results file. For more information, see [Using ServiceClient&lt;TService&gt;](sdk-authentication.md##serviceclient) and [Bulk Download and Upload](bulk-download-upload.md).
+- If you are migrating from a deprecated bulk file format version, you can use an *IBulkService* instance of *ServiceClient* to upload and download campaigns using any format version [Bulk File Schema](../bulk-service/bulk-file-schema.md). The low level approach requires that you submit your download or upload, poll until the results are available, and then download the results file. For more information, see [Using ServiceClient&lt;TService&gt;](sdk-authentication.md##serviceclient) and [Bulk Download and Upload](bulk-download-upload.md).
     
 > [!NOTE]
 > If you are using a hosted service such as Microsoft Azure you'll want to ensure you do not exceed the file or directory limits. You can specify a different working directory for each *BulkServiceManager* instance. For details see [Working Directory and BulkServiceManager](#workingdirectory).

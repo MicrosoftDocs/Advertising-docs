@@ -30,8 +30,8 @@ Defines the possible values representing entities that are enabled for media suc
 
 |Value|Description|
 |-----------|---------------|
-|<a name="imageadextension"></a>ImageAdExtension|The media enabled entity is an [ImageAdExtension](imageadextension.md).<br /><br />When you call [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md) or [GetMediaMetaDataByIds](getmediametadatabyids.md), the service will return exactly three [ImageMediaRepresentation](imagemediarepresentation.md) objects with varying height and width properties.|
-|<a name="responsivead"></a>ResponsiveAd|The media enabled entity is an [ResponsiveAd](responsivead.md).<br /><br />When you call [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md) or [GetMediaMetaDataByIds](getmediametadatabyids.md), the service will return exactly one [ImageMediaRepresentation](imagemediarepresentation.md) object.|
+|<a name="imageadextension"></a>ImageAdExtension|The media enabled entity is an [ImageAdExtension](imageadextension.md).<br/><br/>When you call [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md) or [GetMediaMetaDataByIds](getmediametadatabyids.md), the service will return exactly three [ImageMediaRepresentation](imagemediarepresentation.md) objects with varying height and width properties.|
+|<a name="responsivead"></a>ResponsiveAd|The media enabled entity is an [ResponsiveAd](responsivead.md).<br/><br/>When you call [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md) or [GetMediaMetaDataByIds](getmediametadatabyids.md), the service will return exactly one [ImageMediaRepresentation](imagemediarepresentation.md) object.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

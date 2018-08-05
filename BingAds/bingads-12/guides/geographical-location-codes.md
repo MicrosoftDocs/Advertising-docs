@@ -32,7 +32,7 @@ If you specified *Version* as 2.0 when calling the [GetGeoLocationsFileUrl](../c
 |Location Type|Determines the location sub type (e.g., City, County, Country, MetroArea, PostalCode, or State) that corresponds to the Location Id column.|
 |Replaces|Reserved for future use to indicate which location or locations are replaced by the location in this row.|
 |Status|Reserved for future use to indicate whether the location in this row is active or deprecated. Currently there are no deprecated locations provided in the CSV file.|
-|AdWords Location Id|The Google Ads location ID that matches closest to the Bing Ads geographical location ID. You can use this for mapping Bing Ads locations to the estimated Google Ads locations.<br /><br />This value is a heuristic estimate that can be used for mapping Google Ads and Bing Ads geographical locations.|
+|AdWords Location Id|The Google Ads location ID that matches closest to the Bing Ads geographical location ID. You can use this for mapping Bing Ads locations to the estimated Google Ads locations.<br/><br/>This value is a heuristic estimate that can be used for mapping Google Ads and Bing Ads geographical locations.|
 
 ## See Also
 [Show Ads to Your Target Audience](show-ads-target-audience.md)  

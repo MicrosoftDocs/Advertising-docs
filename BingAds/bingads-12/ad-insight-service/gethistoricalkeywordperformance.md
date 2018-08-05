@@ -21,13 +21,13 @@ The *GetHistoricalKeywordPerformanceRequest* object defines the [body](#request-
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="devices"></a>Devices|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes keyword performance data for the device types that you specify only, if available.<br />Used to determine a keyword's performance on the specified device types.|**string** array|
+|<a name="devices"></a>Devices|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br/><br/>The response includes keyword performance data for the device types that you specify only, if available.<br/>Used to determine a keyword's performance on the specified device types.|**string** array|
 |<a name="keywords"></a>Keywords|An array of keywords for which you want to get historical performance statistics. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string** array|
-|<a name="language"></a>Language|The language in which the keywords are written.<br /><br />The countries/regions that you specify in the [PublisherCountries](#publishercountries) element must support the specified language.<br /><br />Possible values include Danish, Dutch, English, Finnish, French, German, Italian, Norwegian, Portuguese, Spanish, Swedish, and TraditionalChinese.|**string**|
-|<a name="matchtypes"></a>MatchTypes|The match types for which you want to get historical data.<br /><br />You may not specify the Content match type.|[MatchType](matchtype.md) array|
-|<a name="publishercountries"></a>PublisherCountries|The country codes of the countries/regions to use as the source of the historical data.<br /><br />You can specify one or more country codes. Each country/region that you specify must support the language specified in the [Language](#language) element.<br/><br/>The following language and country/region combinations are supported:<br/>Danish: DK<br/>Dutch: NL<br/>English: AU, CA, GB, ID, IN, MY, PH, SG, TH, US, VN<br/>Finnish: FI<br/>French: CA, FR<br/>German: AT, CH, DE<br/>Italian: IT<br/>Norwegian: NO<br/>Portuguese: BR<br/>Spanish: AR, CL, CO, ES, MX, PE, VE<br/>Swedish: SE<br/>TraditionalChinese: HK, TW<br/><br/>If this element is null, then by default the service includes all countries/regions that support the specified language.|**string** array|
-|<a name="targetadposition"></a>TargetAdPosition|The position of the search results for which you want to get performance data.<br /><br />For example, to get performance data when ads appeared in the first position of the mainline by using the keyword and match type, set this element to MainLine1. To get performance data when ads appeared in any position of the search results by using the keyword and match type, set this element to All.<br /><br />The default value is *All*.<br /><br /> If you specify *All* for this element, the service will return multiple results per keyword for each supported ad position. If you specify Aggregate, the service will return one aggregated result.<br/><br/>Sidebar ads no longer serve on Bing owned and operated sites in the United States. If you only request first page data e.g., FirstPage1 for the United States (US), then the [KeywordKPIs](keywordhistoricalperformance.md#keywordkpis) element in the result will be nil/empty. If you include additional countries/regions e.g., US and CA in the same request, then any first page results are only attributed to countries/regions outside the United States.|[AdPosition](adposition.md)|
-|<a name="timeinterval"></a>TimeInterval|The time period that identifies the data to use to determine the key performance index of the specified keywords. For example, use data from the previous seven days or previous 30 days to determine the keyword performance.<br /><br />The default value is *LastDay*.|[TimeInterval](timeinterval.md)|
+|<a name="language"></a>Language|The language in which the keywords are written.<br/><br/>The countries/regions that you specify in the [PublisherCountries](#publishercountries) element must support the specified language.<br/><br/>Possible values include Danish, Dutch, English, Finnish, French, German, Italian, Norwegian, Portuguese, Spanish, Swedish, and TraditionalChinese.|**string**|
+|<a name="matchtypes"></a>MatchTypes|The match types for which you want to get historical data.<br/><br/>You may not specify the Content match type.|[MatchType](matchtype.md) array|
+|<a name="publishercountries"></a>PublisherCountries|The country codes of the countries/regions to use as the source of the historical data.<br/><br/>You can specify one or more country codes. Each country/region that you specify must support the language specified in the [Language](#language) element.<br/><br/>The following language and country/region combinations are supported:<br/>Danish: DK<br/>Dutch: NL<br/>English: AU, CA, GB, ID, IN, MY, PH, SG, TH, US, VN<br/>Finnish: FI<br/>French: CA, FR<br/>German: AT, CH, DE<br/>Italian: IT<br/>Norwegian: NO<br/>Portuguese: BR<br/>Spanish: AR, CL, CO, ES, MX, PE, VE<br/>Swedish: SE<br/>TraditionalChinese: HK, TW<br/><br/>If this element is null, then by default the service includes all countries/regions that support the specified language.|**string** array|
+|<a name="targetadposition"></a>TargetAdPosition|The position of the search results for which you want to get performance data.<br/><br/>For example, to get performance data when ads appeared in the first position of the mainline by using the keyword and match type, set this element to MainLine1. To get performance data when ads appeared in any position of the search results by using the keyword and match type, set this element to All.<br/><br/>The default value is *All*.<br/><br/>If you specify *All* for this element, the service will return multiple results per keyword for each supported ad position. If you specify Aggregate, the service will return one aggregated result.<br/><br/>Sidebar ads no longer serve on Bing owned and operated sites in the United States. If you only request first page data e.g., FirstPage1 for the United States (US), then the [KeywordKPIs](keywordhistoricalperformance.md#keywordkpis) element in the result will be nil/empty. If you include additional countries/regions e.g., US and CA in the same request, then any first page results are only attributed to countries/regions outside the United States.|[AdPosition](adposition.md)|
+|<a name="timeinterval"></a>TimeInterval|The time period that identifies the data to use to determine the key performance index of the specified keywords. For example, use data from the previous seven days or previous 30 days to determine the keyword performance.<br/><br/>The default value is *LastDay*.|[TimeInterval](timeinterval.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -88,23 +88,23 @@ This template was generated by a tool to show the order of the [body](#response-
   </s:Header>
   <s:Body>
     <GetHistoricalKeywordPerformanceResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordHistoricalPerformances xmlns:e89="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e89:KeywordHistoricalPerformance>
-          <e89:Keyword d4p1:nil="false">ValueHere</e89:Keyword>
-          <e89:KeywordKPIs d4p1:nil="false">
-            <e89:KeywordKPI>
-              <e89:Device d4p1:nil="false">ValueHere</e89:Device>
-              <e89:MatchType>ValueHere</e89:MatchType>
-              <e89:AdPosition>ValueHere</e89:AdPosition>
-              <e89:Clicks>ValueHere</e89:Clicks>
-              <e89:Impressions>ValueHere</e89:Impressions>
-              <e89:AverageCPC>ValueHere</e89:AverageCPC>
-              <e89:CTR>ValueHere</e89:CTR>
-              <e89:TotalCost>ValueHere</e89:TotalCost>
-              <e89:AverageBid>ValueHere</e89:AverageBid>
-            </e89:KeywordKPI>
-          </e89:KeywordKPIs>
-        </e89:KeywordHistoricalPerformance>
+      <KeywordHistoricalPerformances xmlns:e92="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e92:KeywordHistoricalPerformance>
+          <e92:Keyword d4p1:nil="false">ValueHere</e92:Keyword>
+          <e92:KeywordKPIs d4p1:nil="false">
+            <e92:KeywordKPI>
+              <e92:Device d4p1:nil="false">ValueHere</e92:Device>
+              <e92:MatchType>ValueHere</e92:MatchType>
+              <e92:AdPosition>ValueHere</e92:AdPosition>
+              <e92:Clicks>ValueHere</e92:Clicks>
+              <e92:Impressions>ValueHere</e92:Impressions>
+              <e92:AverageCPC>ValueHere</e92:AverageCPC>
+              <e92:CTR>ValueHere</e92:CTR>
+              <e92:TotalCost>ValueHere</e92:TotalCost>
+              <e92:AverageBid>ValueHere</e92:AverageBid>
+            </e92:KeywordKPI>
+          </e92:KeywordKPIs>
+        </e92:KeywordHistoricalPerformance>
       </KeywordHistoricalPerformances>
     </GetHistoricalKeywordPerformanceResponse>
   </s:Body>

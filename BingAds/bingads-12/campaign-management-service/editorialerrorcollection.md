@@ -31,7 +31,7 @@ Defines a nested list of error object that identifies one of potentially many re
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="appealable"></a>Appealable|Reserved for future use.|**boolean**|
-|<a name="disapprovedtext"></a>DisapprovedText|The text that caused the entity to be disapproved.<br /><br />For text length violations, this element specifies the number of characters by which the specified text exceeds the maximum.|**string**|
+|<a name="disapprovedtext"></a>DisapprovedText|The text that caused the entity to be disapproved.<br/><br/>For text length violations, this element specifies the number of characters by which the specified text exceeds the maximum.|**string**|
 |<a name="location"></a>Location|The element or property of the entity that caused the entity to be disapproved.|**string**|
 |<a name="publishercountry"></a>PublisherCountry|The corresponding country or region for the flagged editorial issue.|**string**|
 |<a name="reasoncode"></a>ReasonCode|A numeric code that identifies the error. For more information, see [Editorial Reason Codes](../guides/editorial-failure-reason-codes.md).|**int**|
@@ -49,8 +49,8 @@ The [EditorialErrorCollection](editorialerrorcollection.md) object derives from 
 |<a name="code"></a>Code|A numeric error code that identifies the error for the top level list index.|**int**|
 |<a name="details"></a>Details|A message that provides additional details about the batch error for the top level list index. This string can be empty.|**string**|
 |<a name="errorcode"></a>ErrorCode|A symbolic string constant that identifies the error for the top level list index.|**string**|
-|<a name="fieldpath"></a>FieldPath|The name of the data object's element where the error occurred.<br /><br />This value is subject to change, so you should not take a dependency on the current string format.<br /><br />This element is not supported for all errors.|**string**|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this data object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="fieldpath"></a>FieldPath|The name of the data object's element where the error occurred.<br/><br/>This value is subject to change, so you should not take a dependency on the current string format.<br/><br/>This element is not supported for all errors.|**string**|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br/><br/>Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this data object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="index"></a>Index|The zero-based top level list index in the request message that failed.|**int**|
 |<a name="message"></a>Message|A message that describes the error for the top level list index.|**string**|
 |<a name="type"></a>Type|Reserved for internal use.|**string**|

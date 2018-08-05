@@ -13,11 +13,8 @@ Defines an Ad Group Negative Gender Criterion that can be uploaded and downloade
 
 You can exclude customers by gender so that your ads are displayed more frequently to people who will be interested in them. 
 
-> [!NOTE]
-> Age and gender exclusions are only supported with Audience campaigns.
-
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
+> [!TIP]
+> For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Ad Group Negative Gender Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
@@ -145,9 +142,9 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status
-Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
+Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*. To delete the criterion, set the status to *Deleted*.
 
-**Add:** Read-only  
+**Add:** Read-only. The status will always be set to *Active* when you add criterions. If you upload another value e.g., *Foo* the result file will contain the same value although the criterion is active.  
 **Update:** Optional  
 **Delete:** Required. The Status must be set to *Deleted*. To delete a specific gender criterion, you must upload the *Status*, *Id*, and *Parent Id*.
 

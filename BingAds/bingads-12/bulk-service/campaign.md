@@ -222,7 +222,7 @@ The target cost per acquisition (CPA) that you want used by Bing Ads to maximize
 **Delete:** Read-only  
 
 ### <a name="bidstrategytype"></a>Bid Strategy Type
-The bid strategy type for how you want to manage your bids. 
+The bid strategy type for how you want to manage your bids. For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
 A bid strategy type set at the [Ad Group](ad-group.md) or [Keyword](keyword.md) level will take precedence over the campaign level bid strategy type. 
 
@@ -235,8 +235,6 @@ If you are signed up to pilot one or more of the auto bid strategy types, then y
 *  *MaxClicks* - Defines an automated bidding strategy to maximize clicks given your maximum allowed budget.  
 *  *MaxConversions* - Defines an automated bidding strategy to maximize conversions given your maximum allowed budget.    
 *  *TargetCpa* - Defines an automated bidding strategy to maximize conversions at the target cost per acquisition (CPA). If you use this strategy type then you must also include the *Bid Strategy TargetCpa* field.    
-
-For campaigns of type *Shopping* only the *EnhancedCpc* or *ManualCpc* bid strategy values can be used, and you must be in the Bing Shopping Enhanced CPC pilot. The pilot ID is 340.
 
 > [!IMPORTANT] 
 > The *MaxClicks*, *MaxConversions*, and *TargetCpa* bid strategy types are available in several markets (For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).)  If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group’s or keyword’s bid strategy to *ManualCpc*.  
@@ -356,13 +354,13 @@ Your custom collection of key and value parameters for URL tracking.
 
 In a bulk file, the list of custom parameters are formatted as follows.
 
--   Format each custom parameter pair as Key=Value, for example {_promoCode}=PROMO1.
+- Format each custom parameter pair as Key=Value, for example {_promoCode}=PROMO1.
 
--   You may include up to 3 custom parameter key and value pairs. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
+- You may include up to 3 custom parameter key and value pairs. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
 
--   A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
+- A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
 
--   The Key cannot exceed 16 UTF-8 bytes, and the Value cannot exceed 200 UTF-8 bytes. The maximum size of the Key does not include the braces and underscore i.e., '{', '_', and '}'. 
+- The Key cannot exceed 16 UTF-8 bytes, and the Value cannot exceed 200 UTF-8 bytes. The maximum size of the Key does not include the braces and underscore i.e., '{', '_', and '}'. 
 
     > [!NOTE] 
     > With the Bulk service the Key must be formatted with surrounding braces and a leading underscore, for example if the Key is promoCode, it must be formatted as {_promoCode}. With the Campaign Management service you cannot specify the surrounding braces and underscore.
@@ -461,7 +459,7 @@ Possible values for download and upload are Active, Paused, and Deleted. In addi
 |BudgetPaused|The campaign is paused, which indicates that the campaign's ads will not serve. The service sets this status when the budget is depleted. The service will set the status back to Active when the budget is restored.|
 |Deleted|The campaign is deleted. This status is for internal use only. Because all Get operations do not return deleted objects, you will not see an object with this status.|
 |Paused|The campaign is paused, which indicates that the campaign's ads will not serve.|
-|Suspended|Your campaign has been suspended and no ads are eligible for delivery because of potentially fraudulent activity. <br />Please contact [Bing Ads Support](http://go.microsoft.com/fwlink/?LinkId=269631).|
+|Suspended|Your campaign has been suspended and no ads are eligible for delivery because of potentially fraudulent activity. <br/>Please contact [Bing Ads Support](http://go.microsoft.com/fwlink/?LinkId=269631).|
 
 **Add:** Optional. The default value is Active.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    

@@ -24,7 +24,7 @@ The *AddMediaRequest* object defines the [body](#request-body) and [header](#req
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that owns the media library.|**long**|
-|<a name="media"></a>Media|An array of *Media* to add to the account's media library.<br /><br />You can add a maximum of 10 media in a single call.|[Media](media.md) array|
+|<a name="media"></a>Media|An array of *Media* to add to the account's media library.<br/><br/>You can add a maximum of 10 media in a single call.|[Media](media.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -36,7 +36,7 @@ The *AddMediaResponse* object defines the [body](#response-body) and [header](#r
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediaids"></a>MediaIds|The identifiers of the media that you added to the library. You use the identifier to set the appropriate media ID field in the [ImageAdExtension](imageadextension.md) or [ResponsiveAd](responsivead.md) object.<br /><br />You can get the media indentifiers for image ad extensions and responsive ads with the [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md) and [GetMediaMetaDataByIds](getmediametadatabyids.md) operations.|**long** array|
+|<a name="mediaids"></a>MediaIds|The identifiers of the media that you added to the library. You use the identifier to set the appropriate media ID field in the [ImageAdExtension](imageadextension.md) or [ResponsiveAd](responsivead.md) object.<br/><br/>You can get the media indentifiers for image ad extensions and responsive ads with the [GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md) and [GetMediaMetaDataByIds](getmediametadatabyids.md) operations.|**long** array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

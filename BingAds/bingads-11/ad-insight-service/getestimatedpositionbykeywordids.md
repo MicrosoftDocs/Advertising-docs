@@ -25,7 +25,7 @@ The *GetEstimatedPositionByKeywordIdsRequest* object defines the [body](#request
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keywordids"></a>KeywordIds|An array of identifiers of the keywords for which you want to get the estimated position in the search results, based on the specified bid value. You may specify a maximum of 1,000 keyword identifiers.|**long** array|
-|<a name="maxbid"></a>MaxBid|The maximum bid value to use to determine the estimated position in the search results.<br /><br />You must specify the bid value in the currency of the account.|**double**|
+|<a name="maxbid"></a>MaxBid|The maximum bid value to use to determine the estimated position in the search results.<br/><br/>You must specify the bid value in the currency of the account.|**double**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -37,7 +37,7 @@ The *GetEstimatedPositionByKeywordIdsResponse* object defines the [body](#respon
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordestimatedpositions"></a>KeywordEstimatedPositions|A list of [KeywordIdEstimatedPosition](keywordidestimatedposition.md) data objects. The array contains an item for each keyword specified in the request. If the keyword ID is not valid, the corresponding item in the array will be null.<br /><br />Each [KeywordIdEstimatedPosition](keywordidestimatedposition.md) contains a keyword identifier and a  [KeywordEstimatedPosition](keywordestimatedposition.md). If data is available for the keyword, the [EstimatedPositionAndTraffic](estimatedpositionandtraffic.md) will provide the estimated position in the search results, based on the specified bid value. Otherwise, the *EstimatedPositions* element will be set to null.|[KeywordIdEstimatedPosition](keywordidestimatedposition.md) array|
+|<a name="keywordestimatedpositions"></a>KeywordEstimatedPositions|A list of [KeywordIdEstimatedPosition](keywordidestimatedposition.md) data objects. The array contains an item for each keyword specified in the request. If the keyword ID is not valid, the corresponding item in the array will be null.<br/><br/>Each [KeywordIdEstimatedPosition](keywordidestimatedposition.md) contains a keyword identifier and a  [KeywordEstimatedPosition](keywordestimatedposition.md). If data is available for the keyword, the [EstimatedPositionAndTraffic](estimatedpositionandtraffic.md) will provide the estimated position in the search results, based on the specified bid value. Otherwise, the *EstimatedPositions* element will be set to null.|[KeywordIdEstimatedPosition](keywordidestimatedposition.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

@@ -322,6 +322,9 @@ java.lang.Long userId = null;
 final GetUserRequest getUserRequest = new GetUserRequest();
 getUserRequest.setUserId(userId);
 
+// If you updated the authorization data such as account ID or you want to call a new operation, 
+// you must call getService to set the latest request headers. 
+// As a best practice you should use getService when calling any service operation.
 User user = CustomerService.getService().getUser(getUserRequest).getUser();
 ```
 ```php

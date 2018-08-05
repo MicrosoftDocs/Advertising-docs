@@ -24,7 +24,7 @@ Defines an object that contains a list of keyword historical search counts for t
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="device"></a>Device|The device of the user who entered the search query.|**string**|
-|<a name="historicalsearchcounts"></a>HistoricalSearchCounts|An array of [HistoricalSearchCountPeriodic](historicalsearchcountperiodic.md) objects that contain a count of the number of times that the keyword was used in a search query. The array contains an item for each month in the specified date range. The items are ordered by calendar month.<br /><br />For each requested keyword that has no available data, the [HistoricalSearchCountPeriodic](historicalsearchcountperiodic.md) element will be nil.|[HistoricalSearchCountPeriodic](historicalsearchcountperiodic.md) array|
+|<a name="historicalsearchcounts"></a>HistoricalSearchCounts|An array of [HistoricalSearchCountPeriodic](historicalsearchcountperiodic.md) objects that contain a count of the number of times that the keyword was used in a search query. The array contains an item for each month in the specified date range. The items are ordered by calendar month.<br/><br/>For each requested keyword that has no available data, the [HistoricalSearchCountPeriodic](historicalsearchcountperiodic.md) element will be nil.|[HistoricalSearchCountPeriodic](historicalsearchcountperiodic.md) array|
 
 ## Requirements
 Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  

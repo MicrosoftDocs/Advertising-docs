@@ -23,7 +23,7 @@ Defines the possible ad rotation types that you can apply to an ad group. For ad
 
 |Value|Description|
 |-----------|---------------|
-|<a name="optimizeforclicks"></a>OptimizeForClicks|Favor the best performing ads.<br /><br />This is the default.|
+|<a name="optimizeforclicks"></a>OptimizeForClicks|Favor the best performing ads.<br/><br/>This is the default.|
 |<a name="rotateadsevenly"></a>RotateAdsEvenly|Rotate ads evenly into the auction.|
 
 ## Requirements

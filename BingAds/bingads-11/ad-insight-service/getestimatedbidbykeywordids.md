@@ -25,7 +25,7 @@ The *GetEstimatedBidByKeywordIdsRequest* object defines the [body](#request-body
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="keywordids"></a>KeywordIds|An array of identifiers of the keywords for which you want to get the suggested bid values that could have resulted in your ad appearing in the targeted position in the search results. You may specify a maximum of 1,000 keywords.|**long** array|
-|<a name="targetpositionforads"></a>TargetPositionForAds|The position in which you want your ads to appear in the search results.<br /><br />The default value is MainLine1.|[TargetAdPosition](targetadposition.md)|
+|<a name="targetpositionforads"></a>TargetPositionForAds|The position in which you want your ads to appear in the search results.<br/><br/>The default value is MainLine1.|[TargetAdPosition](targetadposition.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -37,7 +37,7 @@ The *GetEstimatedBidByKeywordIdsResponse* object defines the [body](#response-bo
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordestimatedbids"></a>KeywordEstimatedBids|An array of [KeywordIdEstimatedBid](keywordidestimatedbid.md) data objects. The array contains a corresponding item for each keyword specified in the request. If the keyword ID is not valid, the corresponding item in the array will be null.<br /><br />Each [KeywordIdEstimatedBid](keywordidestimatedbid.md) contains a keyword identifier and a  [KeywordEstimatedBid](keywordestimatedbid.md). If there is data available for the keyword, the [KeywordEstimatedBid](keywordestimatedbid.md) will provide a suggested bid value that could have resulted in an ad appearing in the targeted position of the search results. Otherwise, the [KeywordEstimatedBid](keywordestimatedbid.md) element will be set to null.|[KeywordIdEstimatedBid](keywordidestimatedbid.md) array|
+|<a name="keywordestimatedbids"></a>KeywordEstimatedBids|An array of [KeywordIdEstimatedBid](keywordidestimatedbid.md) data objects. The array contains a corresponding item for each keyword specified in the request. If the keyword ID is not valid, the corresponding item in the array will be null.<br/><br/>Each [KeywordIdEstimatedBid](keywordidestimatedbid.md) contains a keyword identifier and a  [KeywordEstimatedBid](keywordestimatedbid.md). If there is data available for the keyword, the [KeywordEstimatedBid](keywordestimatedbid.md) will provide a suggested bid value that could have resulted in an ad appearing in the targeted position of the search results. Otherwise, the [KeywordEstimatedBid](keywordestimatedbid.md) element will be set to null.|[KeywordIdEstimatedBid](keywordidestimatedbid.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

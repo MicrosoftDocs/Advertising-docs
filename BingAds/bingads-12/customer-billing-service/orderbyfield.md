@@ -26,9 +26,9 @@ Defines the field order of insertion orders returned using [SearchInsertionOrder
 |Value|Description|
 |-----------|---------------|
 |<a name="id"></a>Id|The order is determined by a predicate identifier.|
-|<a name="lifecyclestatus"></a>LifeCycleStatus|The order is determined by a predicate life cycle status.<br /><br /> This value is reserved for future use.|
+|<a name="lifecyclestatus"></a>LifeCycleStatus|The order is determined by a predicate life cycle status.<br/><br/>This value is reserved for future use.|
 |<a name="name"></a>Name|The order is determined by a predicate name.|
-|<a name="number"></a>Number|The order is determined by a predicate number.<br /><br /> This value is reserved for future use.|
+|<a name="number"></a>Number|The order is determined by a predicate number.<br/><br/>This value is reserved for future use.|
 
 ## Requirements
 Service: [CustomerBillingService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc)  

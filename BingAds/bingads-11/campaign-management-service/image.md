@@ -28,7 +28,7 @@ The *Image* object derives from the *Media* object. For a list of the inherited 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="data"></a>Data|A base64 string that represents the image or icon to add to the library. The base64 string can contain a maximum of 102,400 characters.<br /><br />For information about restrictions and supported data types, see [Remarks](#remarks) below.|**string**|
+|<a name="data"></a>Data|A base64 string that represents the image or icon to add to the library. The base64 string can contain a maximum of 102,400 characters.<br/><br/>For information about restrictions and supported data types, see [Remarks](#remarks) below.|**string**|
 
 The [Image](image.md) object has [Inherited Elements](#inheritedelements).
 
@@ -41,13 +41,13 @@ The [Image](image.md) object derives from the [Media](media.md) object, and inhe
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The unique Bing Ads identifier of the media.<br/><br/>**Add:** Read-only|**long**|
 |<a name="mediatype"></a>MediaType|The media type. For more information about media types, see the [Media Data Object Remarks](media.md#remarks).<br/><br/>**Add:** Read-only|**string**|
-|<a name="type"></a>Type|The type of media to add to the library.<br /><br />For media that will be used with an [ImageAdExtension](imageadextension.md), the supported values are *Image16x9*, *Image15x10*, *Image4x3*, and *Image12x10*.<br /><br />For media that will be used with a [ResponsiveAd](responsivead.md), the supported values are *Image1x1*, *Image191x100*, and *Image4x1*.<br /><br />For more information about supported aspect ratios, see the [Remarks](#remarks) section below.<br/><br/>**Add:** Required|**string**|
+|<a name="type"></a>Type|The type of media to add to the library.<br/><br/>For media that will be used with an [ImageAdExtension](imageadextension.md), the supported values are *Image16x9*, *Image15x10*, *Image4x3*, and *Image12x10*.<br/><br/>For media that will be used with a [ResponsiveAd](responsivead.md), the supported values are *Image1x1*, *Image191x100*, and *Image4x1*.<br/><br/>For more information about supported aspect ratios, see the [Remarks](#remarks) section below.<br/><br/>**Add:** Required|**string**|
 
 ## <a name="remarks"></a>Remarks
 The following MIME types are supported for the *Data* element of the *Image* data object.
--   GIF  
--   JPEG  
--   PNG  
+- GIF  
+- JPEG  
+- PNG  
 
 Images with animation are not supported.
 

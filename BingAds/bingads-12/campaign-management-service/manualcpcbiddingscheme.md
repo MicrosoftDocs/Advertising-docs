@@ -9,7 +9,7 @@ description: Defines an object that represents the manual CPC bid strategy type.
 # ManualCpcBiddingScheme Data Object - Campaign Management
 Defines an object that represents the manual CPC bid strategy type. 
 
-This is the default bid strategy type for your campaigns. Use the manual CPC bid strategy type if you will set your ad group and keyword bids, and Bing Ads will use these bids every time. 
+This is the default bid strategy type for your campaigns. Use the manual CPC bid strategy type if you will set your ad group and keyword bids, and Bing Ads will use these bids every time. This is every campaign's default bid strategy via Bing Ads API unless you chose a different strategy when creating your campaign. 
 
 > [!TIP]
 > You can set your campaign's bid strategy to [EnhancedCpcBiddingScheme](enhancedcpcbiddingscheme.md), [MaxClicksBiddingScheme](maxclicksbiddingscheme.md), [MaxConversionsBiddingScheme](maxconversionsbiddingscheme.md), or [TargetCpaBiddingScheme](targetcpabiddingscheme.md) and then, at any time, set an individual ad group's or keyword's bid strategy to Manual CPC.

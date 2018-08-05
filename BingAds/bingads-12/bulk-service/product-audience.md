@@ -51,7 +51,7 @@ Format Version,,,,,,6,,,,,,
 Product Audience,Active,-10,ParentIdHere,ClientIdGoesHere,,,New product audience,30,Account,TagIdHere,My Product Audience,GeneralVisitors
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkProductAudience* class (coming soon), instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkProductAudience* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -119,7 +119,7 @@ The name can contain a maximum of 128 characters
 **Delete:** Read-only  
 
 ### <a name="audiencenetworksize"></a>Audience Network Size
-The total number of people who belong to this audience in the Audience network i.e., via Audience campaigns. This gives you an idea of how many Audience network users you can target.
+The total number of people who are active members of this audience in the Audience network. This gives you an idea of how many Audience network users you can target.
 
 The audience needs to have at least 300 people before Bing Ads will use it for optimizations.
 
@@ -128,7 +128,7 @@ The audience needs to have at least 300 people before Bing Ads will use it for o
 **Delete:** Read-only  
 
 ### <a name="audiencesearchsize"></a>Audience Search Size
-The total number of people who belong to this audience in the Search network. This gives you an idea of how many search users you can target.
+The total number of people who are active members of this audience in the Search network. This gives you an idea of how many search users you can target.
 
 The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
 
