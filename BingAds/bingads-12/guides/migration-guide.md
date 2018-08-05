@@ -385,8 +385,6 @@ The [AdvertiserAccount](../customer-management-service/advertiseraccount.md) obj
 Also because only one account type is supported, the *AccountType* and *ApplicationType* value sets are removed. In turn the *AccountType* element is removed from the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object, the *CustomerAppScope* element is removed from the [User](../customer-management-service/user.md) object, and the *ApplicationScope* request element is removed from the [FindAccounts](../customer-management-service/findaccounts.md), [FindAccountsOrCustomersInfo](../customer-management-service/findaccountsorcustomersinfo.md), [GetCustomersInfo](../customer-management-service/getcustomersinfo.md), and [SignupCustomer](../customer-management-service/signupcustomer.md) operations. 
 
 #### <a name="customer-businessaddress"></a>Business Address
-The *CustomerAddress* element is removed from the [Customer](../customer-management-service/customer.md) object. Instead, the *BusinessAddress* of each [AdvertiserAccount](../customer-management-service/advertiseraccount.md) will be required. 
-
 The *BusinessName* element is added to the [Address](../customer-management-service/address.md) object. It is required for *BusinessAddress* of each [AdvertiserAccount](../customer-management-service/advertiseraccount.md), and ignored if you set it with the [User](../customer-management-service/user.md) address. 
 
 #### <a name="customer-advertiseraccount"></a>AutoTag Type
@@ -512,8 +510,8 @@ Report Request|Aggregation Periods Added in Version 12
 [UserLocationPerformanceReportRequest](../reporting-service/userlocationperformancereportrequest.md)|DayOfWeek, Hourly, HourOfDay
 
 When submitting the following report requests, you must use the [ReportAggregation](../reporting-service/reportaggregation.md) data type instead of *SearchQueryReportAggregation* within the *ReportAggregation* element.
--  [DSASearchQueryPerformanceReportRequest](../reporting-service/dsasearchqueryperformancereportrequest.md)
--  [SearchQueryPerformanceReportRequest](../reporting-service/searchqueryperformancereportrequest.md)
+- [DSASearchQueryPerformanceReportRequest](../reporting-service/dsasearchqueryperformancereportrequest.md)
+- [SearchQueryPerformanceReportRequest](../reporting-service/searchqueryperformancereportrequest.md)
 
 #### <a name="reporting-budgetsummaryreporttime"></a>Budget Summary Report Time
 For parity with the predefined time options (e.g., 'Yesterday') for the budget summary report in the Bing Ads web application, Bing Ads API Version 12 enables comparable predefined time options that previously were not supported via Bing Ads API Version 11. In version 11 only Today, Yesterday, LastSevenDays, ThisMonth, and LastMonth were supported for the budget summary report. Version 12 now supports Last14Days, Last30Days, LastFourWeeks, LastMonth, LastSevenDays, LastSixMonths, LastThreeMonths, LastWeek, LastYear, ThisMonth, ThisWeek, ThisYear, Today, and Yesterday. 

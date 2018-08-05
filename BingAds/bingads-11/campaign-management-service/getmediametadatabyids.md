@@ -21,7 +21,7 @@ The *GetMediaMetaDataByIdsRequest* object defines the [body](#request-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediaids"></a>MediaIds|The identifiers of the media to get.<br /><br />You can specify a maximum of 100 media identifiers in a single call.|**long** array|
+|<a name="mediaids"></a>MediaIds|The identifiers of the media to get.<br/><br/>You can specify a maximum of 100 media identifiers in a single call.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -33,8 +33,8 @@ The *GetMediaMetaDataByIdsResponse* object defines the [body](#response-body) an
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediametadata"></a>MediaMetaData|An array of [MediaMetaData](mediametadata.md) objects that corresponds directly to the media identifiers that you specified in the request. Items of the list may be returned as null. For each list index where media meta data was not retrieved, the corresponding element will be null.<br /><br />The meta data includes download Urls for one or more media representations. The number of representations depends on the type of media. For example media for image ad extensions  have multiple height and width representations, and you can access each individually. For more information see [MediaEnabledEntityFilter](mediaenabledentityfilter.md).|[MediaMetaData](mediametadata.md) array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="mediametadata"></a>MediaMetaData|An array of [MediaMetaData](mediametadata.md) objects that corresponds directly to the media identifiers that you specified in the request. Items of the list may be returned as null. For each list index where media meta data was not retrieved, the corresponding element will be null.<br/><br/>The meta data includes download Urls for one or more media representations. The number of representations depends on the type of media. For example media for image ad extensions  have multiple height and width representations, and you can access each individually. For more information see [MediaEnabledEntityFilter](mediaenabledentityfilter.md).|[MediaMetaData](mediametadata.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

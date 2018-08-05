@@ -34,8 +34,8 @@ The *GetBulkUploadUrlResponse* object defines the [body](#response-body) and [he
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="requestid"></a>RequestId|The identifier of the upload request.<br /><br />The identifier is valid for a maximum of two days. If you have not successfully uploaded the file within this period, you will need to get a new request identifier and upload URL. .|**string**|
-|<a name="uploadurl"></a>UploadUrl|The URL where you may submit your bulk upload file with  HTTP POST.<br /><br />The upload URL is valid for a maximum of two days. If you have not successfully uploaded the file within this period, you will need to get a new request identifier and upload URL.|**string**|
+|<a name="requestid"></a>RequestId|The identifier of the upload request.<br/><br/>The identifier is valid for a maximum of two days. If you have not successfully uploaded the file within this period, you will need to get a new request identifier and upload URL. .|**string**|
+|<a name="uploadurl"></a>UploadUrl|The URL where you may submit your bulk upload file with  HTTP POST.<br/><br/>The upload URL is valid for a maximum of two days. If you have not successfully uploaded the file within this period, you will need to get a new request identifier and upload URL.|**string**|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

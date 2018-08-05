@@ -21,7 +21,7 @@ The *AddBudgetsRequest* object defines the [body](#request-body) and [header](#r
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="budgets"></a>Budgets|An array of [Budget](budget.md) objects to add to the account's shared budget library.<br /><br />You can add a maximum of 100 budgets in a single call. Each account's shared budget library can have up to 11,000 shared budgets.<br/><br/>The account is determined by the required *CustomerAccountId* header element.|[Budget](budget.md) array|
+|<a name="budgets"></a>Budgets|An array of [Budget](budget.md) objects to add to the account's shared budget library.<br/><br/>You can add a maximum of 100 budgets in a single call. Each account's shared budget library can have up to 11,000 shared budgets.<br/><br/>The account is determined by the required *CustomerAccountId* header element.|[Budget](budget.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -33,8 +33,8 @@ The *AddBudgetsResponse* object defines the [body](#response-body) and [header](
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="budgetids"></a>BudgetIds|A list of unique system identifiers corresponding to the budgets that were added.<br /><br />The list of identifiers corresponds directly to the list of budgets in the request. Items of the list may be returned as null. For each list index where a budget was not added, the corresponding element will be null.|**long** array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="budgetids"></a>BudgetIds|A list of unique system identifiers corresponding to the budgets that were added.<br/><br/>The list of identifiers corresponds directly to the list of budgets in the request. Items of the list may be returned as null. For each list index where a budget was not added, the corresponding element will be null.|**long** array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

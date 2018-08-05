@@ -21,13 +21,13 @@ The *SuggestKeywordsFromExistingKeywordsRequest* object defines the [body](#requ
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group for suggested keywords.<br /><br /> This element is not yet supported and may be used to influence keyword suggestions in a future release|**long**|
-|<a name="campaignid"></a>CampaignId|The identifier of the campaign for suggested keywords.<br /><br /> This element is not yet supported and may be used to influence keyword suggestions in a future release|**long**|
+|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group for suggested keywords.<br/><br/>This element is not yet supported and may be used to influence keyword suggestions in a future release|**long**|
+|<a name="campaignid"></a>CampaignId|The identifier of the campaign for suggested keywords.<br/><br/>This element is not yet supported and may be used to influence keyword suggestions in a future release|**long**|
 |<a name="excludebrand"></a>ExcludeBrand|A value that determines whether the results exclude brand keywords. To exclude brand keywords in the result, set to true. The default is false.|**boolean**|
 |<a name="keywords"></a>Keywords|An array of keywords for which you want to get suggested keywords that could perform better. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string** array|
-|<a name="language"></a>Language|The language in which the keyword is written.<br /><br />For possible values, see [Ad Languages](../guides/ad-languages.md). See the [Remarks](#remarks) section below for a list of providers that are supported for each language.<br /><br />The default is English.|**string**|
-|<a name="maxsuggestionsperkeyword"></a>MaxSuggestionsPerKeyword|The maximum number of keyword suggestions to return per specified keyword. If *SuggestionType* is set to 4, you can request a maximum of 200 suggestions per keyword; otherwise the maximum suggestions that you can request is 100.<br /><br />The default is 50.|**int**|
-|<a name="publishercountries"></a>PublisherCountries|The country codes of the countries/regions to use as the source of data for determining the suggested keywords.<br /><br />You can specify one or more country codes. Each country that you specify must support the language that you specified in the *Language* element.<br /><br />For supported values, see the [Remarks](#remarks) section below.<br /><br />The default is all countries/regions that support the specified language.|**string** array|
+|<a name="language"></a>Language|The language in which the keyword is written.<br/><br/>For possible values, see [Ad Languages](../guides/ad-languages.md). See the [Remarks](#remarks) section below for a list of providers that are supported for each language.<br/><br/>The default is English.|**string**|
+|<a name="maxsuggestionsperkeyword"></a>MaxSuggestionsPerKeyword|The maximum number of keyword suggestions to return per specified keyword. If *SuggestionType* is set to 4, you can request a maximum of 200 suggestions per keyword; otherwise the maximum suggestions that you can request is 100.<br/><br/>The default is 50.|**int**|
+|<a name="publishercountries"></a>PublisherCountries|The country codes of the countries/regions to use as the source of data for determining the suggested keywords.<br/><br/>You can specify one or more country codes. Each country that you specify must support the language that you specified in the *Language* element.<br/><br/>For supported values, see the [Remarks](#remarks) section below.<br/><br/>The default is all countries/regions that support the specified language.|**string** array|
 |<a name="removeduplicates"></a>RemoveDuplicates|A Boolean value that determines whether to remove duplicate keywords from the list of suggested keywords. To remove duplicates, set to true. The default is false.|**boolean**|
 |<a name="suggestiontype"></a>SuggestionType|The provider to use to generate the keyword suggestions. For a list of possible providers, the language and country restrictions of each provider, and the default provider by country, see the [Remarks](#remarks) section below.|**int**|
 
@@ -41,7 +41,7 @@ The *SuggestKeywordsFromExistingKeywordsResponse* object defines the [body](#res
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordsuggestions"></a>KeywordSuggestions|An array of [KeywordSuggestion](keywordsuggestion.md) data objects. The array contains an item for each keyword specified in the request. The object contains a list of suggested keywords that may perform better than the specified keyword.<br /><br />For each suggested keyword, the object includes a score that indicates the probability that using the keyword would result in an ad being included in the results of a search query. If there are no suggestions for a keyword, the *SuggestionsAndConfidence* element will be null.|[KeywordSuggestion](keywordsuggestion.md) array|
+|<a name="keywordsuggestions"></a>KeywordSuggestions|An array of [KeywordSuggestion](keywordsuggestion.md) data objects. The array contains an item for each keyword specified in the request. The object contains a list of suggested keywords that may perform better than the specified keyword.<br/><br/>For each suggested keyword, the object includes a score that indicates the probability that using the keyword would result in an ad being included in the results of a search query. If there are no suggestions for a keyword, the *SuggestionsAndConfidence* element will be null.|[KeywordSuggestion](keywordsuggestion.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -88,16 +88,16 @@ This template was generated by a tool to show the order of the [body](#response-
   </s:Header>
   <s:Body>
     <SuggestKeywordsFromExistingKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordSuggestions xmlns:e115="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e115:KeywordSuggestion>
-          <e115:Keyword d4p1:nil="false">ValueHere</e115:Keyword>
-          <e115:SuggestionsAndConfidence d4p1:nil="false">
-            <e115:KeywordAndConfidence>
-              <e115:SuggestedKeyword d4p1:nil="false">ValueHere</e115:SuggestedKeyword>
-              <e115:ConfidenceScore>ValueHere</e115:ConfidenceScore>
-            </e115:KeywordAndConfidence>
-          </e115:SuggestionsAndConfidence>
-        </e115:KeywordSuggestion>
+      <KeywordSuggestions xmlns:e118="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e118:KeywordSuggestion>
+          <e118:Keyword d4p1:nil="false">ValueHere</e118:Keyword>
+          <e118:SuggestionsAndConfidence d4p1:nil="false">
+            <e118:KeywordAndConfidence>
+              <e118:SuggestedKeyword d4p1:nil="false">ValueHere</e118:SuggestedKeyword>
+              <e118:ConfidenceScore>ValueHere</e118:ConfidenceScore>
+            </e118:KeywordAndConfidence>
+          </e118:SuggestionsAndConfidence>
+        </e118:KeywordSuggestion>
       </KeywordSuggestions>
     </SuggestKeywordsFromExistingKeywordsResponse>
   </s:Body>

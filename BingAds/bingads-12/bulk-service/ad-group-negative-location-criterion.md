@@ -17,6 +17,9 @@ Each negative location criterion defines a location code where you do not want y
 
 The maximum number of combined location and negative location criterions that you can specify per campaign or ad group is 10,000. 
 
+> [!TIP]
+> For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
+
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Ad Group Negative Location Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
@@ -144,9 +147,9 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status
-Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
+Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*. To delete the criterion, set the status to *Deleted*.
 
-**Add:** Read-only  
+**Add:** Read-only. The status will always be set to *Active* when you add criterions. If you upload another value e.g., *Foo* the result file will contain the same value although the criterion is active.  
 **Update:** Optional  
 **Delete:** Required. The Status must be set to *Deleted*. To delete a specific negative location criterion, you must upload the *Status*, *Id*, and *Parent Id*. 
 

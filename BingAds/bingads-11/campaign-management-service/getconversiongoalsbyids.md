@@ -24,7 +24,7 @@ The *GetConversionGoalsByIdsRequest* object defines the [body](#request-body) an
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="conversiongoalids"></a>ConversionGoalIds|A maximum of 100 identifiers of the conversion goals that you want to get. <br /><br />If *ConversionGoalIds* is null or empty, then you are effectively requesting all conversion goals of the specified types for the account. |**long** array|
+|<a name="conversiongoalids"></a>ConversionGoalIds|A maximum of 100 identifiers of the conversion goals that you want to get. <br/><br/>If *ConversionGoalIds* is null or empty, then you are effectively requesting all conversion goals of the specified types for the account. |**long** array|
 |<a name="conversiongoaltypes"></a>ConversionGoalTypes|One or more types of conversion goals to return. |[ConversionGoalType](conversiongoaltype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -38,7 +38,7 @@ The *GetConversionGoalsByIdsResponse* object defines the [body](#response-body) 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="conversiongoals"></a>ConversionGoals|An array of [ConversionGoal](conversiongoal.md) objects that corresponds directly to the conversion goal identifiers that you specified in the request. Items of the array may be returned as null. For each array index where a conversion goal was not retrieved, the corresponding element will be null.|[ConversionGoal](conversiongoal.md) array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

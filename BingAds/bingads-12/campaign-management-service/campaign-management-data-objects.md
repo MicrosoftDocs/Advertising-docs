@@ -137,6 +137,7 @@ The Campaign Management service defines the following data objects.
 |[SharedList](sharedlist.md)|Defines the base class of a shared list.|
 |[SharedListItem](sharedlistitem.md)|Defines the base class of a shared list item.|
 |[ShoppingSetting](shoppingsetting.md)|Defines the campaign level settings for feed-based audience or shopping campaigns.|
+|[SimilarRemarketingList](similarremarketinglist.md)|Defines an audience that is similar to one of your remarketing lists.|
 |[SitelinkAdExtension](sitelinkadextension.md)|Defines an object with one sitelink per ad extension.|
 |[StringRuleItem](stringruleitem.md)|Defines a rule expression that depends on the string values of the Url or Referrer Url.|
 |[StructuredSnippetAdExtension](structuredsnippetadextension.md)|Defines an object that pairs one header with between 3 and 10 snippet values that tell customers more about your business.|

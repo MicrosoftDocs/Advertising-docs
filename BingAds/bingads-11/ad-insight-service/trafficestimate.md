@@ -27,10 +27,10 @@ Defines an object that contains traffic estimates based on the campaign, ad grou
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="averagecpc"></a>AverageCpc|The estimated average CPC.<br /><br />The formula used to calculate the average CPC is (total cost / clicks).|**double**|
-|<a name="averageposition"></a>AveragePosition|The estimated average CPC.<br /><br />The formula used to calculate the average CPC is (total cost / clicks).|**double**|
+|<a name="averagecpc"></a>AverageCpc|The estimated average CPC.<br/><br/>The formula used to calculate the average CPC is (total cost / clicks).|**double**|
+|<a name="averageposition"></a>AveragePosition|The estimated average CPC.<br/><br/>The formula used to calculate the average CPC is (total cost / clicks).|**double**|
 |<a name="clicks"></a>Clicks|The estimated number of clicks per week.|**double**|
-|<a name="ctr"></a>Ctr|The estimated CTR.<br /><br />The formula used to calculate the CTR is (clicks / impressions) &#42; 100.|**double**|
+|<a name="ctr"></a>Ctr|The estimated CTR.<br/><br/>The formula used to calculate the CTR is (clicks / impressions) &#42; 100.|**double**|
 |<a name="impressions"></a>Impressions|The estimated number of impressions per week.|**double**|
 |<a name="totalcost"></a>TotalCost|The estimated total cost per week.|**double**|
 

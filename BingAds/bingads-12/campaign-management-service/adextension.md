@@ -10,15 +10,15 @@ description: Defines the base object of an ad extension.
 Defines the base object of an ad extension.
 
 Do not try to instantiate an *AdExtension*. You can create one or more following objects that derive from it.
--   [AppAdExtension](appadextension.md)
--   [CallAdExtension](calladextension.md)
--   [CalloutAdExtension](calloutadextension.md)
--   [ImageAdExtension](imageadextension.md)
--   [LocationAdExtension](locationadextension.md)
--   [PriceAdExtension](priceadextension.md)
--   [ReviewAdExtension](reviewadextension.md)
--   [SitelinkAdExtension](sitelinkadextension.md)
--   [StructuredSnippetAdExtension](structuredsnippetadextension.md)
+- [AppAdExtension](appadextension.md)
+- [CallAdExtension](calladextension.md)
+- [CalloutAdExtension](calloutadextension.md)
+- [ImageAdExtension](imageadextension.md)
+- [LocationAdExtension](locationadextension.md)
+- [PriceAdExtension](priceadextension.md)
+- [ReviewAdExtension](reviewadextension.md)
+- [SitelinkAdExtension](sitelinkadextension.md)
+- [StructuredSnippetAdExtension](structuredsnippetadextension.md)
 
 ## Syntax
 ```xml
@@ -39,8 +39,8 @@ Do not try to instantiate an *AdExtension*. You can create one or more following
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="devicepreference"></a>DevicePreference|This element determines whether the preference is for the ad extension to be displayed on mobile devices or all devices.<br /><br />To specify a preference for mobile devices, set this element to *30001*.<br /><br />To specify all devices, set this element to *0* (zero) or leave the element nil. By default, this element will be nil.<br/><br/> This element is only applicable for the [AppAdExtension](appadextension.md) and [SitelinkAdExtension](sitelinkadextension.md) types.|**long**|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="devicepreference"></a>DevicePreference|This element determines whether the preference is for the ad extension to be displayed on mobile devices or all devices.<br/><br/>To specify a preference for mobile devices, set this element to *30001*.<br/><br/>To specify all devices, set this element to *0* (zero) or leave the element nil. By default, this element will be nil.<br/><br/>This element is only applicable for the [AppAdExtension](appadextension.md) and [SitelinkAdExtension](sitelinkadextension.md) types.|**long**|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br/><br/>Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The unique Bing Ads identifier of the ad extension.|**long**|
 |<a name="scheduling"></a>Scheduling|Determines the calendar day and time ranges when the ad extension is eligible to be shown in ads.|[Schedule](schedule.md)|
 |<a name="status"></a>Status|The status of the ad extension. The value will always be *Active* because the Campaign Management service does not return deleted ad extensions.|[AdExtensionStatus](adextensionstatus.md)|

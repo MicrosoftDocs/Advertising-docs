@@ -10,7 +10,7 @@ description: Get your ads in front of the right people.
 Getting your ad in front of the right people; that's what targeting is all about. With targeting, Bing Ads can help you focus a campaign or ad group on potential customers who meet specific criteria, so you can increase the chance that they see your ads. You may target your ads to display to users of a certain age group, display at a certain day and time of the week, or display to users in a particular geographical location.
 
 > [!NOTE] 
-> Bing Ads supports other criterion types e.g. product partition and webpage. This guide is limited to criterions that you can use to target your ads by age, day and time, device, gender, and location. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*.  
+> Bing Ads supports other criterion types e.g. product partition and webpage. This guide covers criterions that you can use to target your ads by age, day and time, device, gender, location, and profile. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*.  
 
 Here are a few tips to keep in mind before you begin:
 *  When you first create a campaign or ad group using the Bing Ads API, it will not have any criterions. Effectively the brand new campaign and ad group target all ages, days, hours, devices, genders, and locations. You should specify your minimum target criterions at the campaign level and then use ad group level criterions to narrow or refine your targeting requirements. As a best practice you should consider at minimum adding a campaign location criterion corresponding to the customer market country. Its worth noting that when creating campaigns via the Bing Ads web application, the recommended [default criterions](#defaultcriterions) are added. 
@@ -26,40 +26,50 @@ Here are a few tips to keep in mind before you begin:
 
 ## <a name="criteriontypes"></a>Target Criterion Types
 The following criterion types are supported for targeting.
-*  [Age Criterion](#agecriterion)
-*  [DayTime Criterion](#daytimecriterion)
-*  [DeviceOS Criterion](#deviceoscriterion)
-*  [Gender Criterion](#gendercriterion)
-*  [Location Criterion](#locationcriterion)
-*  [Location Intent Criterion](#locationintentcriterion)
-*  [Negative Location Criterion](#negativelocationcriterion)
-*  [Radius Criterion](#radiuscriterion)
+* [Age Criterion](#agecriterion)
+* [DayTime Criterion](#daytimecriterion)
+* [DeviceOS Criterion](#deviceoscriterion)
+* [Gender Criterion](#gendercriterion)
+* [Location Criterion](#locationcriterion)
+* [Location Intent Criterion](#locationintentcriterion)
+* [Profile Criterion](#profilecriterion)
+* [Radius Criterion](#radiuscriterion)
+
+You can apply the criteria at the ad group or campaign level. 
+
+Use a biddable criterion to target a criterion with or without a bid adjustment. When you use the Bulk service the record type of an age criterion applied to an ad group is [Ad Group Age Criterion](../bulk-service/ad-group-age-criterion.md), whereas with the Campaign Management service you would use a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) and set its [Criterion](../campaign-management-service/biddableadgroupcriterion.md#criterion) element to an instance of [AgeCriterion](../campaign-management-service/agecriterion.md). 
+
+Use a "Negative" criterion to exclude a target criterion. When you use the Bulk service the record type of a negative age criterion applied to an ad group is [Ad Group Negative Age Criterion](../bulk-service/ad-group-negative-age-criterion.md), whereas with the Campaign Management service you would use a [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md) and set its [Criterion](../campaign-management-service/negativeadgroupcriterion.md#criterion) element to an instance of [AgeCriterion](../campaign-management-service/agecriterion.md). 
 
 ### <a name="agecriterion"></a>Age Criterion
 You can target customers by age so that your ads are displayed more frequently to people who will be interested in them. 
 
-Each age criterion defines an age range for the accompanying criterion bid adjustment. If you are using the Campaign Management service, add the *AgeCriterion* to either the *BiddableCampaignCriterion* or *BiddableAdGroupCriterion* objects. If you are using the Bulk service, use either the [Campaign Age Criterion](../bulk-service/campaign-age-criterion.md) or [Ad Group Age Criterion](../bulk-service/ad-group-age-criterion.md) records. 
+Each age criterion defines an age range for the accompanying criterion bid adjustment. 
+
+With campaigns for [Audience Ads](audience-ads.md) you can specify age groups that you want to exclude from seeing your ads. Excluded ages are also known as negative age criterions. Each negative age criterion defines an age group you do not want to see your ads. 
 
 The maximum number of age criterions that you can specify per campaign or ad group is five, i.e. one for each of the supported age ranges *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*.
 
 ### <a name="daytimecriterion"></a>DayTime Criterion
 As your campaign progresses, you may find that your click-through rate and conversion rate are highest during certain times, for example, weeknights. This might be a perfect opportunity to use bid adjustments to improve your chances of displaying your ad Monday through Friday from 6:00 P.M. to 11:00 P.M.. When targeting by time, you are targeting the searcher's local time zone. For example, if you increase your bid by 10% for 6:00 P.M. to 11:00 P.M., that bid adjustment will be effective from 6:00 P.M. to 11:00 P.M. Eastern Time for searchers in New York, then be effective 6:00 P.M. to 11:00 P.M. Pacific Time for searchers in Seattle. Now you are showing your ads when your potential customers are online!
 
-Each day and time criterion defines the day, from hour, from minute, to hour, and to minute requirements for the accompanying criterion bid adjustment. If you are using the Campaign Management service, add the *DayTimeCriterion* to either the *BiddableCampaignCriterion* or *BiddableAdGroupCriterion* objects. If you are using the Bulk service, use either the [Campaign DayTime Criterion](../bulk-service/campaign-daytime-criterion.md) or [Ad Group DayTime Criterion](../bulk-service/ad-group-daytime-criterion.md) records. 
+Each day and time criterion defines the day, from hour, from minute, to hour, and to minute requirements for the accompanying criterion bid adjustment. 
 
 The maximum number of day and time criterions that you can specify per campaign or ad group is 49. You may not specify any overlapping day and time ranges, for example Monday from 3:00AM to 5:00AM and Monday 4:00AM to 6:00AM are not allowed for the same campaign or ad group. Also for a given campaign or ad group, the maximum number of day and time criterions per day that you can specify is seven. For example you can specify up to 7 day and time criterions where the *Day* is set to Monday. 
 
 ### <a name="deviceoscriterion"></a>DeviceOS Criterion
 When you target by device, you choose to show ads to potential customers when they're using desktops and tablets or smartphones. 
 
-Each device criterion defines a device name for the accompanying criterion bid adjustment. If you are using the Campaign Management service, add the *DeviceCriterion* to either the *BiddableCampaignCriterion* or *BiddableAdGroupCriterion* objects. If you are using the Bulk service, use either the [Campaign DeviceOS Criterion](../bulk-service/campaign-deviceos-criterion.md) or [Ad Group DeviceOS Criterion](../bulk-service/ad-group-deviceos-criterion.md) records. 
+Each device criterion defines a device name for the accompanying criterion bid adjustment. 
 
 The maximum number of device criterions that you can specify per campaign or ad group is three. You must either have three separate criterions for *Computers*, *Smartphones*, and *Tablets*, otherwise no device criterions can exist for the campaign or ad group.
 
 ### <a name="gendercriterion"></a>Gender Criterion
 You can target customers by gender so that your ads are displayed more frequently to people who will be interested in them. 
 
-Each gender criterion defines a gender for the accompanying criterion bid adjustment. If you are using the Campaign Management service, add the *GenderCriterion* to either the *BiddableCampaignCriterion* or *BiddableAdGroupCriterion* objects. If you are using the Bulk service, use either the [Campaign Gender Criterion](../bulk-service/campaign-gender-criterion.md) or [Ad Group Gender Criterion](../bulk-service/ad-group-gender-criterion.md) records. 
+Each gender criterion defines a gender for the accompanying criterion bid adjustment. 
+
+With campaigns for [Audience Ads](audience-ads.md) you can specify a gender that you want to exclude from seeing your ads. Excluded genders are also known as negative gender criterions. Each negative gender criterion defines a gender you do not want to see your ads. 
 
 The maximum number of gender criterions that you can specify per campaign or ad group is two i.e. one for *Male* and one for *Female*.
 
@@ -68,12 +78,13 @@ With location criterions, you can choose to show ads to potential customers in, 
 *  All available countries/regions
 *  Selected cities, zip codes, metro areas (Nielsen DMA® in the United States), states/provinces, and countries/regions
 
-Each location criterion defines a location code for the accompanying criterion bid adjustment. If you are using the Campaign Management service, add the *LocationCriterion* to either the *BiddableCampaignCriterion* or *BiddableAdGroupCriterion* objects. If you are using the Bulk service, use either the [Campaign Location Criterion](../bulk-service/campaign-location-criterion.md) or [Ad Group Location Criterion](../bulk-service/ad-group-location-criterion.md) records. 
+Each location criterion defines a location code for the accompanying criterion bid adjustment. 
 
-The maximum number of combined location and negative location criterions that you can specify per campaign or ad group is 10,000.  
+Although location criterions are most often used to designate the specific locations where you want to show your ads, Bing Ads also lets you specify locations you want to exclude from seeing your ads. Excluded locations are also known as negative location criterions.
 
-> [!NOTE]
-> Although location criterions are most often used to designate the specific locations where you want to show your ads, Bing Ads also lets you specify locations you want to exclude from seeing your ads. To exclude a location, see [Negative Location Criterion](#negativelocationcriterion).
+Each negative location criterion defines a location code where you do not want your ads to show. 
+
+The maximum number of combined location and negative location criterions that you can specify per campaign or ad group is 10,000. 
 
 ### <a name="locationintentcriterion"></a>Location Intent Criterion
 Set the location intent criterion to *PeopleInOrSearchingForOrViewingPages* if you want to show ads to people in, searching for, or viewing pages about your targeted location. For example if the [Location Criterion](#locationcriterion) includes London and the location intent criterion is *PeopleInOrSearchingForOrViewingPages*, then someone physically located in Florida searching for London hotels will see the ad.
@@ -85,26 +96,30 @@ Set the location intent criterion to *PeopleIn* if you only want to show ads to 
 
 Set the location intent criterion to *PeopleSearchingForOrViewingPages* if you want to show ads to people searching for or viewing pages about your targeted location. For example if the [Location Criterion](#locationcriterion) includes London and the location intent criterion is *PeopleSearchingForOrViewingPages*, then someone physically located in Florida searching for London hotels will see the ad. Someone located in London who searches for your keywords, but does not search for or about the targeted location will not see the ads.
 
-Each location intent criterion defines the intent option for all location and radius criterions of the campaign or ad group. There isn't any accompanying criterion bid adjustment. If you are using the Campaign Management service, add the *LocationIntentCriterion* to either the *BiddableCampaignCriterion* or *BiddableAdGroupCriterion* objects. If you are using the Bulk service, use either the [Campaign Location Intent Criterion](../bulk-service/campaign-location-intent-criterion.md) or [Ad Group Location Intent Criterion](../bulk-service/ad-group-location-intent-criterion.md) records. 
+Each location intent criterion defines the intent option for all location and radius criterions of the campaign or ad group. There isn't any accompanying criterion bid adjustment. 
 
 The maximum number of location intent criterions that you can specify per campaign or ad group is one.
 
 For more information and examples, please see [How can I get my ads in front of my customers?](https://help.bingads.microsoft.com/#apex/3/en/51029/0).
 
-### <a name="negativelocationcriterion"></a>Negative Location Criterion
-Although location criterions are most often used to designate the specific locations where you want to show your ads, Bing Ads also lets you specify locations you want to exclude from seeing your ads.
+### <a name="profilecriterion"></a>Profile Criterion
+You can target customers by company, industry, or job function profiles so that your ads are displayed more frequently to people who will be interested in them. 
 
-Each negative location criterion defines a location code where you do not want your ads to show. If you are using the Campaign Management service, add the *LocationCriterion* to either the *NegativeCampaignCriterion* or *NegativeAdGroupCriterion* objects. If you are using the Bulk service, use either the [Campaign Negative Location Criterion](../bulk-service/campaign-negative-location-criterion.md) or [Ad Group Negative Location Criterion](../bulk-service/ad-group-negative-location-criterion.md) records. 
+Each profile criterion defines a company, industry, or job function for the accompanying criterion bid adjustment. 
 
-The maximum number of combined location and negative location criterions that you can specify per campaign or ad group is 10,000. 
+You can also specify profiles of people according to LinkedIn that you want to exclude from seeing your ads. Excluded profiles are also known as negative profile criterions. Each negative profile criterion defines the company, industry, or job function of people who you do not want to see your ads. 
 
 > [!NOTE]
-> To designate the specific locations where you want to show your ads, see [Location Criterion](#locationcriterion).
+> Profile criteria are only available for pilot participants. 
+> 
+> Campaign profile criteria are only available for pilot participants running Dynamic Search Ads, Search, or Shopping campaigns.
+> 
+> Ad group negative profile criteria are only available for pilot participants running Audience campaigns.
 
 ### <a name="radiuscriterion"></a>Radius Criterion
 With radius criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about a specified radius around a zip code, coordinates, landmark, or area.
 
-Each radius criterion defines a radius, latitude, and longitude for the accompanying criterion bid adjustment. If you are using the Campaign Management service, add the *RadiusCriterion* to either the *BiddableCampaignCriterion* or *BiddableAdGroupCriterion* objects. If you are using the Bulk service, use either the [Campaign Radius Criterion](../bulk-service/campaign-radius-criterion.md) or [Ad Group Radius Criterion](../bulk-service/ad-group-radius-criterion.md) records. 
+Each radius criterion defines a radius, latitude, and longitude for the accompanying criterion bid adjustment. 
 
 The maximum number of radius criterions that you can specify per campaign or ad group is 2,000.
 
@@ -120,7 +135,7 @@ The base bid is adjusted by multipliers of the bid adjustment percentage values 
 > 
 > Multiple bid adjustments across location criterions are not combined. If you specify geographically-related combinations of country/region, state/province, metropolitan area, or city criterions, the bid adjustment of the most refined criterion would apply.
 > 
-> For example, if the search user is located in Redmond and country is set to `US` with a 10% bid adjustment, state is set to *US-WA* with a 20% bid adjustment, metro area (Nielsen DMA® in the United States) is set to *Seattle-Tacoma, WA, WA US* with a 30% bid adjustment, and city is set to *Redmond, Seattle-Tacoma, WA WA US* with a 40% bid adjustment, then the bid would be adjusted by 40%. If the user is located elsewhere within the Seattle-Tacoma metropolitan area, for example in Bellevue, the bid would be increased by 30%.
+> For example, if the search user is located in Redmond and country is set to *US* with a 10% bid adjustment, state is set to *US-WA* with a 20% bid adjustment, metro area (Nielsen DMA® in the United States) is set to *Seattle-Tacoma, WA, WA US* with a 30% bid adjustment, and city is set to *Redmond, Seattle-Tacoma, WA WA US* with a 40% bid adjustment, then the bid would be adjusted by 40%. If the user is located elsewhere within the Seattle-Tacoma metropolitan area, for example in Bellevue, the bid would be increased by 30%.
 
 ## <a name="defaultcriterions"></a>Default Criterion Settings
 When you first create a campaign or ad group using the Bing Ads API, it will not have any criterions. Effectively the brand new campaign and ad group target all ages, days, hours, devices, genders, and locations. You should specify your minimum target criterions at the campaign level and then use ad group level criterions to narrow or refine your targeting requirements. As a best practice you should consider at minimum adding a campaign location criterion corresponding to the customer market country. 
@@ -149,7 +164,7 @@ Campaign Location Intent Criterion,Active,CampaignIdHere,CampaignIdHere,,Campaig
 > The above examples assume that you did not change any other defaults such as demographic or device settings. 
 
 ## <a name="usingcriterions"></a>Using Target Criterions
-Bing Ads supports other criterion types e.g. product partition and webpage. This guide is limited to criterions that you can use to target your ads by age, day and time, device, gender, and location. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*.  
+Bing Ads supports other criterion types e.g. product partition and webpage. This guide covers criterions that you can use to target your ads by age, day and time, device, gender, location, and profile. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*.  
 
 ### <a name="synccriterions"></a>Sync Criterions
 Sync the new criterions with campaigns and ad groups. For example you can use the Bulk service to download all criterions in the account and discover the mapping between criterions and campaigns and ad groups. Let's download the target criterions using Bing Ads API version 12, Bulk file format 6.0, and we can see that each criterion has its own identifier e.g. 101, 102, 103, and so on. 

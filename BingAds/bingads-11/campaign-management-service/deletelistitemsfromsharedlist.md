@@ -24,7 +24,7 @@ The *DeleteListItemsFromSharedListRequest* object defines the [body](#request-bo
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="listitemids"></a>ListItemIds|The list of identifiers of negative keywords to delete from the negative keyword list.<br /><br />This array can contain a maximum of 5,000 elements.|**long** array|
+|<a name="listitemids"></a>ListItemIds|The list of identifiers of negative keywords to delete from the negative keyword list.<br/><br/>This array can contain a maximum of 5,000 elements.|**long** array|
 |<a name="sharedlist"></a>SharedList|The negative keyword list within the account's shared library, from which to delete the specified negative keywords.|[SharedList](sharedlist.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -37,7 +37,7 @@ The *DeleteListItemsFromSharedListResponse* object defines the [body](#response-
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

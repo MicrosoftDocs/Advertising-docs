@@ -21,7 +21,7 @@ The *GetMediaMetaDataByAccountIdRequest* object defines the [body](#request-body
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediaenabledentities"></a>MediaEnabledEntities|Determines the type of media enabled entity to get meta data.<br /><br />Supported values are ImageAdExtension and ResponsiveAd.|[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|
+|<a name="mediaenabledentities"></a>MediaEnabledEntities|Determines the type of media enabled entity to get meta data.<br/><br/>Supported values are ImageAdExtension and ResponsiveAd.|[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -33,7 +33,7 @@ The *GetMediaMetaDataByAccountIdResponse* object defines the [body](#response-bo
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="mediametadata"></a>MediaMetaData|The specified media meta data from the library.<br /><br />The meta data includes download Urls for one or more media representations. The number of representations depends on the type of media. For example media for image ad extensions  have multiple height and width representations, and you can access each individually. For more information see [MediaEnabledEntityFilter](mediaenabledentityfilter.md).|[MediaMetaData](mediametadata.md) array|
+|<a name="mediametadata"></a>MediaMetaData|The specified media meta data from the library.<br/><br/>The meta data includes download Urls for one or more media representations. The number of representations depends on the type of media. For example media for image ad extensions  have multiple height and width representations, and you can access each individually. For more information see [MediaEnabledEntityFilter](mediaenabledentityfilter.md).|[MediaMetaData](mediametadata.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

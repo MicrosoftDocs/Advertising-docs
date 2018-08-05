@@ -45,7 +45,7 @@ The Bing Ads Python SDK uses the *suds-jurko* SOAP SDK to instantiate programmin
 
 Please keep in mind the following rules, suggestions, and tips related to Suds in the Bing Ads Python SDK.
 
--   One of the most common exceptions we hear about is *ERROR:suds.resolver:(ClassGoesHere) not-found*. Usually this can be resolved by using the namespace prefix for the Suds object e.g. `ns4:ArrayOfstring`. 
+- One of the most common exceptions we hear about is *ERROR:suds.resolver:(ClassGoesHere) not-found*. Usually this can be resolved by using the namespace prefix for the Suds object e.g. `ns4:ArrayOfstring`. 
     > [!TIP]
     > To discover all SOAP objects with namespace prefix that are available for each service, you can print the soap client. For example, the following statements will return Campaign, AdGroup, ExpandedTextAd, and Keyword, among others.
     
@@ -59,7 +59,7 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
     print campaign_service.soap_client
     ```
 
--   For many objects passed to the campaign management service via Suds you can create dictionary objects. From a performance perspective, the dictionary approach is faster than the alternative *service.factory.create* method.
+- For many objects passed to the campaign management service via Suds you can create dictionary objects. From a performance perspective, the dictionary approach is faster than the alternative *service.factory.create* method.
 
     ```python
     ad_groups = {
@@ -82,7 +82,7 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
         }
     ```
 
--   For derived types such as [ExpandedTextAd](../campaign-management-service/expandedtextad.md), [NegativeKeyword](../campaign-management-service/negativekeyword.md), and [NegativeKeywordList](../campaign-management-service/negativekeywordlist.md), the Suds library requires that you use factory.create.
+- For derived types such as [ExpandedTextAd](../campaign-management-service/expandedtextad.md), [NegativeKeyword](../campaign-management-service/negativekeyword.md), and [NegativeKeywordList](../campaign-management-service/negativekeywordlist.md), the Suds library requires that you use factory.create.
 
     ```python
     ads = campaign_service.factory.create('ArrayOfAd')
@@ -125,9 +125,9 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
     ads.Ad.append(expanded_text_ad)
     ```
 
--   Any non-primitive elements must be specified for the Suds client e.g. *EditorialStatus* of type [AdEditorialStatus](../campaign-management-service/adeditorialstatus.md), even though the Bing Ads services do not require such elements.
+- Any non-primitive elements must be specified for the Suds client e.g. *EditorialStatus* of type [AdEditorialStatus](../campaign-management-service/adeditorialstatus.md), even though the Bing Ads services do not require such elements.
 
--   Bing Ads Campaign Management service operations require that if you specify a non-primitives, it must be one of the values defined by the service i.e. it cannot be a nil element. Since Suds requires non-primitives and Bing Ads won't accept nil elements in place of an enum value, you must either set the non-primitives or they must be set to None. Also note that if the element is ready only you must set it to *None*. For example set *expanded_text_ad.EditorialStatus=None*. 
+- Bing Ads Campaign Management service operations require that if you specify a non-primitives, it must be one of the values defined by the service i.e. it cannot be a nil element. Since Suds requires non-primitives and Bing Ads won't accept nil elements in place of an enum value, you must either set the non-primitives or they must be set to None. Also note that if the element is ready only you must set it to *None*. For example set *expanded_text_ad.EditorialStatus=None*. 
 
 To call the corresponding methods of a Bing Ads service, you can use an instance of the *ServiceClient* class and pass the Suds factory object. For more information, see [Authentication With the SDKs](sdk-authentication.md#oauth).
 

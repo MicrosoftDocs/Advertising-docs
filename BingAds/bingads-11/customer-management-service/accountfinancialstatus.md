@@ -32,7 +32,7 @@ Defines the possible financial status values of an account.
 |-----------|---------------|
 |<a name="clearfinancialstatus"></a>ClearFinancialStatus|The account is in good standing.|
 |<a name="creditwarning"></a>CreditWarning|Not used.|
-|<a name="hold"></a>Hold|For an advertiser account, this status indicates that the account is past due. The service will not deliver the account's ads until the account is settled. For a credit card account, this status indicates that the card has been declined three times.<br /><br />For a publisher account, this status indicates that the payout to the publisher is placed on hold by the customer service organization. The service continues to deliver the account's ads.|
+|<a name="hold"></a>Hold|For an advertiser account, this status indicates that the account is past due. The service will not deliver the account's ads until the account is settled. For a credit card account, this status indicates that the card has been declined three times.<br/><br/>For a publisher account, this status indicates that the payout to the publisher is placed on hold by the customer service organization. The service continues to deliver the account's ads.|
 |<a name="pendingcreditcheck"></a>PendingCreditCheck|Not used.|
 |<a name="proposed"></a>Proposed|For an advertiser account, this status indicates that the customer can add campaigns to the account; however, the service will not deliver the account's ads.|
 |<a name="soldtoonly"></a>SoldToOnly|Not used.|

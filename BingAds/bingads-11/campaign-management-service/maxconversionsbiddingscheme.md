@@ -7,9 +7,11 @@ ms.author: eur
 description: Defines an object that represents the maximum conversions bid strategy type.
 ---
 # MaxConversionsBiddingScheme Data Object - Campaign Management
-Defines an object that represents the maximum conversions bid strategy type.
+With the *MaxConversions* bid strategy, you don't need to set ad group or keyword bids. Bing Ads automatically sets your bids in real time to get as many conversions as possible within your budget.
 
-Use this bid strategy to maximize the number of conversions given your maximum allowed budget.
+Bing Ads will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Conversions, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Bing Ads never pays more than a certain amount for each individual click.
+
+You need to have conversion tracking (a UET tag and a conversion goal) set up — and have had at least 15 conversions in the last 30 days — in order to use the Maximize Conversions bid strategy. If your campaign falls below 15 conversions over any 30-day period, Maximize Conversions will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
 > [!IMPORTANT]
 > If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
@@ -23,9 +25,9 @@ Also note that you must have conversion tracking (a UET tag and a conversion goa
 To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must have at least 15 conversions in the last 30 days. If you try to add or update a campaign to use one of these strategy types, the requested operation will fail if there is not enough conversion history. If an active campaign uses one of these bid strategy types, and then ceases to meet the minimum conversion history requirement at any time, Bing Ads will stop auto bidding but will continue to use the *DailyBudgetStandard* budget type. For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
+> The *MaxConversions* bid strategy is available only for Search campaigns. 
 > 
-> The *MaxConversions* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
+> The *MaxConversions* bid strategy is available only to advertisers targeting the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 
 ## Syntax
 ```xml

@@ -36,7 +36,7 @@ Defines the possible age range values that you can use to target ads to People.
 |<a name="thirtyfivetofourtynine"></a>ThirtyFiveToFourtyNine|People from the ages of 35 through 49 years.|
 |<a name="twentyfivetothirtyfour"></a>TwentyFiveToThirtyFour|People from the ages of 25 through 34 years.|
 |<a name="unknown"></a>Unknown|People with unknown ages.<br/><br/>This option is only available for ad groups in Audience campaigns.|
-|<a name="zerotoseventeen"></a>ZeroToSeventeen|People 17 years of age and younger.<br/><br/> Reserved for internal use. This value will be removed in a future version of the API.|
+|<a name="zerotoseventeen"></a>ZeroToSeventeen|People 17 years of age and younger.<br/><br/>Reserved for internal use. This value will be removed in a future version of the API.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

@@ -48,7 +48,7 @@ Before you can manage authentication for users of your Bing Ads application, you
     
    If you have previously registered Live SDK applications, then you will also see an option to add another Live SDK application. In that case we recommend adding all new apps under **Converged applications**. At this time you are not required to migrate app registrations. When migration away from **Live SDK applications** is required in the future, we will announce it well in advance.
 
-3. Provide the application name and click **Create application**.
+3. Provide the application name and click **Create**. Do not check the box for "Guided Setup".
 
    ![Create application](media/create-application.png "Create application")
 

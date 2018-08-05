@@ -16,6 +16,13 @@ Defines the name of account level properties.
     <xs:enumeration value="None" />
     <xs:enumeration value="TrackingUrlTemplate" />
     <xs:enumeration value="MSCLKIDAutoTaggingEnabled" />
+    <xs:enumeration value="AdClickParallelTracking">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -24,6 +31,7 @@ Defines the name of account level properties.
 
 |Value|Description|
 |-----------|---------------|
+|<a name="adclickparalleltracking"></a>AdClickParallelTracking|Reserved.|
 |<a name="msclkidautotaggingenabled"></a>MSCLKIDAutoTaggingEnabled|Used to get or set the property that determines whether MSCLKID auto-tagging is enabled for the account.|
 |<a name="none"></a>None|Reserved for internal use.|
 |<a name="trackingurltemplate"></a>TrackingUrlTemplate|Used to get or set the account's tracking template.|

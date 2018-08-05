@@ -19,6 +19,7 @@ Defines the possible audience types.
         <xs:enumeration value="Custom" />
         <xs:enumeration value="InMarket" />
         <xs:enumeration value="Product" />
+        <xs:enumeration value="SimilarRemarketingList" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -33,6 +34,7 @@ Defines the possible audience types.
 |<a name="inmarket"></a>InMarket|The audience is an in-market audience.|
 |<a name="product"></a>Product|The audience is a product audience.|
 |<a name="remarketinglist"></a>RemarketingList|The audience is a remarketing list.|
+|<a name="similarremarketinglist"></a>SimilarRemarketingList|The audience is a similar remarketing list.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

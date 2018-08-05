@@ -66,28 +66,28 @@ Open */DjangoWebProject/settings.py* and edit these settings with your own crede
 ## Repository Contents
 Here is an abridged overview of the files used by this web application. If you have been following steps above in this tutorial, this section is informational and no action is required. If you already have a Django project and don't want to replace it completely with the Bing Ads web example project, you can copy the required contents of these files manually to your project.
 
--   */requirements.txt* - Lists the packages required by the example web application. Django and the Bing Ads Python SDK packages are included in the example requirements.txt file, and will be installed when you create a virtual environment.
+- */requirements.txt* - Lists the packages required by the example web application. Django and the Bing Ads Python SDK packages are included in the example requirements.txt file, and will be installed when you create a virtual environment.
 
--   */DjangoWebProject/settings.py* - The project settings are defined here. You must edit *settings.py* with your own *CLIENT_ID*, *CLIENT_SECRET*, and *REDIRECTION_URI* that were provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the *DEVELOPER_TOKEN* with your own production [developer token](get-started.md#get-developer-token).
+- */DjangoWebProject/settings.py* - The project settings are defined here. You must edit *settings.py* with your own *CLIENT_ID*, *CLIENT_SECRET*, and *REDIRECTION_URI* that were provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the *DEVELOPER_TOKEN* with your own production [developer token](get-started.md#get-developer-token).
 
--   */DjangoWebProject/urls.py* - Defines which view and template context to invoke per URL.
+- */DjangoWebProject/urls.py* - Defines which view and template context to invoke per URL.
 
--   */app/forms.py* - The BootstrapAuthenticationForm is used to validate web application user credentials against the backend database. 
+- */app/forms.py* - The BootstrapAuthenticationForm is used to validate web application user credentials against the backend database. 
 
--   */app/models.py* - We defined the BingAdsUser model to extend the default Django user authentication model. One web application user (Django.contrib.auth.User) can be associated with up to one refresh token. For more information about how you can customize the authentication model, see the Django documentation.
+- */app/models.py* - We defined the BingAdsUser model to extend the default Django user authentication model. One web application user (Django.contrib.auth.User) can be associated with up to one refresh token. For more information about how you can customize the authentication model, see the Django documentation.
 
--   */app/views.py* - The core application logic is defined here. Determines the template and context that is displayed for each URL or action.
+- */app/views.py* - The core application logic is defined here. Determines the template and context that is displayed for each URL or action.
 
--   */app/templates/app/*.html* - Defines the html structure for your web application.
+- */app/templates/app/*.html* - Defines the html structure for your web application.
 
 ## Create virtual environment
 We'll create a virtual environment for local development. In your project right-click on **Python Environments** and select **Add Virtual Environment**.
 
--   Make sure the name of the environment is **env**.
+- Make sure the name of the environment is **env**.
 
--   Select the base Python interpreter e.g. **Python 2.7**
+- Select the base Python interpreter e.g. **Python 2.7**
 
--   Make sure the option to **Download and install packages** is checked.
+- Make sure the option to **Download and install packages** is checked.
 
 Django and the Bing Ads Python SDK packages are included in the example *requirements.txt* file, and will be installed in your virtual environment.
 
@@ -130,7 +130,7 @@ That's all there is to it! Go ahead and customize the application to meet your r
 ## Create more users (Optional)
 Currently the web application only supports a single user, and only one refresh token can be stored for your superuser. To create more web application users who can manage their own Bing Ads credentials separately, you can enable the admin console by editing these files and redeploying your application (locally or on Azure). Then you can browse to your sites admin URL e.g. *http://contoso.azurewebsites.net/admin*, login as superuser, and create more users.
 
--   */DjangoWebProject/urls.py*
+- */DjangoWebProject/urls.py*
 
     ```python
     # Uncomment the next lines to enable the admin:
@@ -148,7 +148,7 @@ Currently the web application only supports a single user, and only one refresh 
     url(r'^admin/', include(admin.site.urls)),
     ```
 
--   */DjangoWebProject/settings.py*
+- */DjangoWebProject/settings.py*
 
     ```python
     # Uncomment the next line to enable the admin:

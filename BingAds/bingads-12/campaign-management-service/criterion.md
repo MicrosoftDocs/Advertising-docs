@@ -10,18 +10,18 @@ description: Defines the base object of a criterion.
 Defines the base object of a criterion.
 
 Do not try to instantiate a *Criterion*. You can create one or more following objects that derive from it.
--  [AgeCriterion](agecriterion.md)  
--  [AudienceCriterion](audiencecriterion.md)  
--  [DayTimeCriterion](daytimecriterion.md)  
--  [DeviceCriterion](devicecriterion.md)  
--  [GenderCriterion](gendercriterion.md)  
--  [LocationCriterion](locationcriterion.md)  
--  [LocationIntentCriterion](locationintentcriterion.md)  
--  [ProductScope](productscope.md)  
--  [ProductPartition](productpartition.md)  
--  [ProfileCriterion](profilecriterion.md)  
--  [RadiusCriterion](radiuscriterion.md)  
--  [Webpage](webpage.md)  
+- [AgeCriterion](agecriterion.md)  
+- [AudienceCriterion](audiencecriterion.md)  
+- [DayTimeCriterion](daytimecriterion.md)  
+- [DeviceCriterion](devicecriterion.md)  
+- [GenderCriterion](gendercriterion.md)  
+- [LocationCriterion](locationcriterion.md)  
+- [LocationIntentCriterion](locationintentcriterion.md)  
+- [ProductScope](productscope.md)  
+- [ProductPartition](productpartition.md)  
+- [ProfileCriterion](profilecriterion.md)  
+- [RadiusCriterion](radiuscriterion.md)  
+- [Webpage](webpage.md)  
 
 For a list of criterion types that you can use with [CampaignCriterion](campaigncriterion.md), see the [CampaignCriterionType](campaigncriteriontype.md) value set.
 

@@ -37,7 +37,7 @@ The *GetAdGroupsByIdsResponse* object defines the [body](#response-body) and [he
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="adgroups"></a>AdGroups|The list of ad groups that correspond directly to the ad group identifiers that you specified in the request. Items of the list may be returned as null. For each list index where an ad group was not retrieved, the corresponding element will be null.|[AdGroup](adgroup.md) array|
-|<a name="partialerrors"></a>PartialErrors|The list of batch errors that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|The list of batch errors that contain details for any request items that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

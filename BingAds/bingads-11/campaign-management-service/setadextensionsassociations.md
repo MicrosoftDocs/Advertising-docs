@@ -25,7 +25,7 @@ The *SetAdExtensionsAssociationsRequest* object defines the [body](#request-body
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that owns the extensions.|**long**|
-|<a name="adextensionidtoentityidassociations"></a>AdExtensionIdToEntityIdAssociations|The list of ad extensions with associated account, campaign, or ad group. You can only associate ad extensions with one type of entity per service call. Specify the entity type with the *AssociationType* element.<br /><br /> Call and Location ad extensions cannot be associated with an ad group. Call ad extensions cannot be associated with an account.<br /><br />You may set a maximum of 100 associations per service call.|[AdExtensionIdToEntityIdAssociation](adextensionidtoentityidassociation.md) array|
+|<a name="adextensionidtoentityidassociations"></a>AdExtensionIdToEntityIdAssociations|The list of ad extensions with associated account, campaign, or ad group. You can only associate ad extensions with one type of entity per service call. Specify the entity type with the *AssociationType* element.<br/><br/>Call and Location ad extensions cannot be associated with an ad group. Call ad extensions cannot be associated with an account.<br/><br/>You may set a maximum of 100 associations per service call.|[AdExtensionIdToEntityIdAssociation](adextensionidtoentityidassociation.md) array|
 |<a name="associationtype"></a>AssociationType|The type of all entities specified in the *AdExtensionIdToEntityIdAssociations* list.|[AssociationType](associationtype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -38,7 +38,7 @@ The *SetAdExtensionsAssociationsResponse* object defines the [body](#response-bo
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

@@ -38,7 +38,7 @@ Defines a key performance index object for a keyword. The object contains the hi
 |<a name="device"></a>Device|The device where the ad appeared.|**string**|
 |<a name="impressions"></a>Impressions|The number of impressions that the keyword and match type generated during the specified time interval.|**long**|
 |<a name="matchtype"></a>MatchType|The match type that you specified in the request.|[MatchType](matchtype.md)|
-|<a name="totalcost"></a>TotalCost|The cost of using the specified keyword and match type during the specified time interval.<br /><br />The service determines the currency from the account specified in the *CustomerAccountId* header element. If *CustomerAccountId* is not set, the service uses *USDollar*.|**double**|
+|<a name="totalcost"></a>TotalCost|The cost of using the specified keyword and match type during the specified time interval.<br/><br/>The service determines the currency from the account specified in the *CustomerAccountId* header element. If *CustomerAccountId* is not set, the service uses *USDollar*.|**double**|
 
 ## Requirements
 Service: [AdInsightService.svc v11](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v11/AdInsightService.svc)  

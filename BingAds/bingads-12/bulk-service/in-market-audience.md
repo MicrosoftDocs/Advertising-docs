@@ -95,7 +95,7 @@ The name can contain a maximum of 128 characters
 **Delete:** Not supported  
 
 ### <a name="audiencenetworksize"></a>Audience Network Size
-The total number of people who belong to this audience in the Audience network i.e., via Audience campaigns. This gives you an idea of how many Audience network users you can target.
+The total number of people who are active members of this audience in the Audience network. This gives you an idea of how many Audience network users you can target.
 
 The audience needs to have at least 300 people before Bing Ads will use it for optimizations.
 
@@ -104,7 +104,7 @@ The audience needs to have at least 300 people before Bing Ads will use it for o
 **Delete:** Not supported  
 
 ### <a name="audiencesearchsize"></a>Audience Search Size
-The total number of people who belong to this audience in the Search network. This gives you an idea of how many search users you can target.
+The total number of people who are active members of this audience in the Search network. This gives you an idea of how many search users you can target.
 
 The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
 

@@ -29,7 +29,7 @@ Defines an object that contains a budget amount and an estimate of weekly impres
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="budgetamount"></a>BudgetAmount|A potential new budget.<br /><br /> This budget amount is your current campaign budget if the *BudgetPointType* value is *Current*.|**double**|
+|<a name="budgetamount"></a>BudgetAmount|A potential new budget.<br/><br/>This budget amount is your current campaign budget if the *BudgetPointType* value is *Current*.|**double**|
 |<a name="budgetpointtype"></a>BudgetPointType|The type of budget relative to a list of budget points. For example, if the budget point type is *Current* then this object's *BudgetAmount* element would be equal to the corresponding campaign's daily budget.|[BudgetPointType](budgetpointtype.md)|
 |<a name="estimatedweeklyclicks"></a>EstimatedWeeklyClicks|The estimated weekly  clicks for the given budget amount.|**double**|
 |<a name="estimatedweeklycost"></a>EstimatedWeeklyCost|The estimated weekly cost for the given budget amount.|**double**|

@@ -113,8 +113,8 @@ This bulk field maps to the *Id* field of the [Campaign](campaign.md) record.
 > For add and delete, you must specify either the *Parent Id* or *Campaign*.
 
 ### <a name="status"></a>Status
-Represents the association status between the campaign and the negative keyword list. If the negative keyword list is not associated with the campaign, this field's value is *Active*, and otherwise the value is *Deleted*.
+Represents the association status between the campaign and the negative keyword list. If the negative keyword list is not associated with the campaign, this field's value is *Active*. To delete the criterion, set the status to *Deleted*.
 
-**Add:** Read-only  
+**Add:** Read-only. The status will always be set to *Active* when you add criterions. If you upload another value e.g., *Foo* the result file will contain the same value although the criterion is active.  
 **Delete:** Required. The Status must be set to *Deleted*. 
 	

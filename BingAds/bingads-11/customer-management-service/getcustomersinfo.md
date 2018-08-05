@@ -24,7 +24,7 @@ The *GetCustomersInfoRequest* object defines the [body](#request-body) and [head
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="applicationscope"></a>ApplicationScope|A value that determines whether to return results for advertising customers or publishing customers. If you do not specify the scope, the list may include both types of customers.|[ApplicationType](applicationtype.md)|
-|<a name="customernamefilter"></a>CustomerNameFilter|A partial or full name of the customers that you want to get. The operation includes the customer in the result if the customer's name begins with the specified filter name. If you do not want to filter by customer name, set this element to an empty string.<br /><br />The operation performs a case-insensitive comparison when it compares your name filter value to the customer names. For example, if you specify "t" as the filter value, the list will include customers whose names begin with "t" or "T".|**string**|
+|<a name="customernamefilter"></a>CustomerNameFilter|A partial or full name of the customers that you want to get. The operation includes the customer in the result if the customer's name begins with the specified filter name. If you do not want to filter by customer name, set this element to an empty string.<br/><br/>The operation performs a case-insensitive comparison when it compares your name filter value to the customer names. For example, if you specify "t" as the filter value, the list will include customers whose names begin with "t" or "T".|**string**|
 |<a name="topn"></a>TopN|A nonzero positive integer that specifies the number of customers to return in the result.|**int**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -37,7 +37,7 @@ The *GetCustomersInfoResponse* object defines the [body](#response-body) and [he
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="customersinfo"></a>CustomersInfo|An array of *CustomerInfo* objects that identifies the list of customers that meet the filter criteria.<br /><br />To get the customer data for a customer in the list, access the *Id* element of the *CustomerInfo* object and use it to call [GetCustomer](getcustomer.md).|[CustomerInfo](customerinfo.md) array|
+|<a name="customersinfo"></a>CustomersInfo|An array of *CustomerInfo* objects that identifies the list of customers that meet the filter criteria.<br/><br/>To get the customer data for a customer in the list, access the *Id* element of the *CustomerInfo* object and use it to call [GetCustomer](getcustomer.md).|[CustomerInfo](customerinfo.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

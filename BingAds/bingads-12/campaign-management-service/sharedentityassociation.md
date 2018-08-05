@@ -26,9 +26,9 @@ Defines an object that contains association information for a campaign and share
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="entityid"></a>EntityId|The system-generated identifier of the campaign that is associated with the shared entity.|**long**|
-|<a name="entitytype"></a>EntityType|The type of entity.<br /><br />Currently the only supported value is Campaign.|**string**|
+|<a name="entitytype"></a>EntityType|The type of entity.<br/><br/>Currently the only supported value is Campaign.|**string**|
 |<a name="sharedentityid"></a>SharedEntityId|The system-generated identifier of the shared entity.|**long**|
-|<a name="sharedentitytype"></a>SharedEntityType|The type of the shared entity.<br /><br />Currently the only supported value is NegativeKeywordList.|**string**|
+|<a name="sharedentitytype"></a>SharedEntityType|The type of the shared entity.<br/><br/>Currently the only supported value is NegativeKeywordList.|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

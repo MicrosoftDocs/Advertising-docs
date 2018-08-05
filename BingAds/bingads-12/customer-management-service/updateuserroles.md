@@ -24,10 +24,10 @@ The *UpdateUserRolesRequest* object defines the [body](#request-body) and [heade
 |<a name="customerid"></a>CustomerId|The identifier of the customer to which the user belongs.|**long**|
 |<a name="deleteaccountids"></a>DeleteAccountIds|An array of identifiers of the accounts to remove from the list of accounts that the user can manage.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long** array|
 |<a name="deletecustomerids"></a>DeleteCustomerIds|An array of identifiers of the customers to remove from the list of customers that the user can manage.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long** array|
-|<a name="deleteroleid"></a>DeleteRoleId|The identifier of the role to which the values specified in the *DeleteAccountIds* or *DeleteCustomerIds* element applies, if set.<br /><br />Possible values include the following:<br />16 - The user has the **Advertiser Campaign Manager** role.<br />33 - The user has the **Aggregator** role.<br />41 - The user has the **Super Admin** role.<br />100 - The user has the **ClientViewer** role.<br />203 - The user has the **Standard** role.<br /><br />For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).<br /><br />**Important**: The list above provides examples of possible return values. Other  values might be returned. Deprecated or internal roles can be included in the response.|**int**|
+|<a name="deleteroleid"></a>DeleteRoleId|The identifier of the role to which the values specified in the *DeleteAccountIds* or *DeleteCustomerIds* element applies, if set.<br/><br/>Possible values include the following:<br/>16 - The user has the **Advertiser Campaign Manager** role.<br/>33 - The user has the **Aggregator** role.<br/>41 - The user has the **Super Admin** role.<br/>100 - The user has the **ClientViewer** role.<br/>203 - The user has the **Standard** role.<br/><br/>For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).<br/><br/>**Important**: The list above provides examples of possible return values. Other  values might be returned. Deprecated or internal roles can be included in the response.|**int**|
 |<a name="newaccountids"></a>NewAccountIds|An array of identifiers of the accounts to restrict the user to. The user will be able to manage only these accounts.<br/><br/>If the user is currently restricted to a set of accounts, set this element to the new accounts that you want the user to also manage. For example, if the user currently manages accounts 123 and 456, and you want the user to also manage account 789, set this element to 789.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long** array|
 |<a name="newcustomerids"></a>NewCustomerIds|An array of identifiers of the customers to restrict the user to. The user will be able to manage only these customers.<br/><br/>For usage, see the [Remarks](#remarks) section below.|**long** array|
-|<a name="newroleid"></a>NewRoleId|The identifier of the role to which the values specified in the *NewAccountIds* or *NewCustomerIds* element applies to, if set.<br /><br />Possible values include the following:<br />16 - The user has the **Advertiser Campaign Manager** role.<br />33 - The user has the **Aggregator** role.<br />41 - The user has the **Super Admin** role.<br />100 - The user has the **ClientViewer** role.<br />203 - The user has the **Standard** role.<br /><br />For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).<br /><br />**Important**: The list above provides examples of possible return values. Other  values might be returned. Deprecated or internal roles can be included in the response.|**int**|
+|<a name="newroleid"></a>NewRoleId|The identifier of the role to which the values specified in the *NewAccountIds* or *NewCustomerIds* element applies to, if set.<br/><br/>Possible values include the following:<br/>16 - The user has the **Advertiser Campaign Manager** role.<br/>33 - The user has the **Aggregator** role.<br/>41 - The user has the **Super Admin** role.<br/>100 - The user has the **ClientViewer** role.<br/>203 - The user has the **Standard** role.<br/><br/>For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).<br/><br/>**Important**: The list above provides examples of possible return values. Other  values might be returned. Deprecated or internal roles can be included in the response.|**int**|
 |<a name="userid"></a>UserId|The identifier of the user whose role you want to update.|**long**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -40,7 +40,7 @@ The *UpdateUserRolesResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="lastmodifiedtime"></a>LastModifiedTime|The date and time that the user roles were last updated. The value is in Coordinated Universal Time (UTC).<br/><br/> The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|**dateTime**|
+|<a name="lastmodifiedtime"></a>LastModifiedTime|The date and time that the user roles were last updated. The value is in Coordinated Universal Time (UTC).<br/><br/>The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).|**dateTime**|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -190,23 +190,23 @@ response=customermanagement_service.UpdateUserRoles(
 ## <a name="remarks"></a>Remarks
 As an example use case if an advertiser campaign manager is limited to managing accounts 123, 456, and 789, and you no longer want the user to manage 456, set the following elements accordingly:
 
--   Set the *NewRoleId* element to 16 (advertiser campaign manager role).
+- Set the *NewRoleId* element to 16 (advertiser campaign manager role).
 
--   Set the *NewAccountIds* element to an array that contains 123 and 789.
+- Set the *NewAccountIds* element to an array that contains 123 and 789.
 
--   Set the *DeleteRoleId* element to 16 (advertiser campaign manager role).
+- Set the *DeleteRoleId* element to 16 (advertiser campaign manager role).
 
--   Set the *DeleteAccountIds* element to an array that contains 456.
+- Set the *DeleteAccountIds* element to an array that contains 456.
 
 If an advertiser campaign manager is limited to managing accounts 123 and 789, and you now want the user to manage all accounts, set the following elements accordingly:
 
--   Set the *NewRoleId* element to 16 (advertiser campaign manager role).
+- Set the *NewRoleId* element to 16 (advertiser campaign manager role).
 
--   Set the *NewAccountIds* element to NULL.
+- Set the *NewAccountIds* element to NULL.
 
--   Set the *DeleteRoleId* element to 16 (advertiser campaign manager role).
+- Set the *DeleteRoleId* element to 16 (advertiser campaign manager role).
 
--   Set the *DeleteAccountIds* element to an array that contains 123, 456, and 789.
+- Set the *DeleteAccountIds* element to an array that contains 123, 456, and 789.
 
 Users with account level roles can be restricted to specific accounts. Users with customer level roles can access all accounts within the user's customer, and their access cannot be restricted to specific accounts.
 

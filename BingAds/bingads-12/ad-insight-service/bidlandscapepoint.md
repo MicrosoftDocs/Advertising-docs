@@ -32,12 +32,12 @@ Defines an object that contains estimates of clicks, cost, and impressions  give
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="bid"></a>Bid|The suggested bid value.|**double**|
-|<a name="clicks"></a>Clicks|The estimated number of clicks.<br /><br /> This element will be nil if there is no estimate available.|**double**|
-|<a name="cost"></a>Cost|The estimated cost.<br /><br /> This element will be nil if there is no estimate available.|**double**|
+|<a name="clicks"></a>Clicks|The estimated number of clicks.<br/><br/>This element will be nil if there is no estimate available.|**double**|
+|<a name="cost"></a>Cost|The estimated cost.<br/><br/>This element will be nil if there is no estimate available.|**double**|
 |<a name="currencycode"></a>CurrencyCode|The ISO code for the monetary unit of the suggested bid value and estimated performance statistics.|[CurrencyCode](currencycode.md)|
 |<a name="impressions"></a>Impressions|The estimated number of impressions.|**long**|
 |<a name="marginalcpc"></a>MarginalCPC|Reserved for future use.|**double**|
-|<a name="topimpressions"></a>TopImpressions|The estimated number of impressions in the top or mainline ad results.<br /><br /> This element will be nil if there is no estimate available.|**long**|
+|<a name="topimpressions"></a>TopImpressions|The estimated number of impressions in the top or mainline ad results.<br/><br/>This element will be nil if there is no estimate available.|**long**|
 
 ## Requirements
 Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  

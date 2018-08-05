@@ -11,13 +11,13 @@ The bulk schema defines the contents of the file for download or upload with the
 
 For more information about using the Bulk service to manage your campaigns, see [Bulk Download and Upload](../guides/bulk-download-upload.md). For more information about understanding the data file contents, see the sections below.
 
--   [File Schema](#fileschema)  
--   [Format Versions](#formatversions)  
--   [Record Types](#recordtypes)  
--   [Type Hierarchy](#typehierarchy)  
--   [Reference Keys](#referencekeys)  
--   [Client Identifiers](#clientid)  
--   [Errors](#errors)
+- [File Schema](#fileschema)  
+- [Format Versions](#formatversions)  
+- [Record Types](#recordtypes)  
+- [Type Hierarchy](#typehierarchy)  
+- [Reference Keys](#referencekeys)  
+- [Client Identifiers](#clientid)  
+- [Errors](#errors)
 
 ## <a name="fileschema"></a>File Schema
 You can choose to download either a tab or comma delimited set of records (rows) and fields (columns). The first column header is named *Type*.  The rest of the column names map to properties within or associated with the corresponding record type.
@@ -117,14 +117,14 @@ Record Type  |Supported Campaign Types
 [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
 [Campaign Sitelink2 Ad Extension](campaign-sitelink2-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
 [Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[Custom Audience](custom-audience.md)<br /><br />Only update is supported for upload. You cannot add or delete a custom audience using the Bing Ads API.|All         
+[Custom Audience](custom-audience.md)<br/><br/>Only update is supported for upload. You cannot add or delete a custom audience using the Bing Ads API.|All         
 [Dynamic Search Ad](dynamic-search-ad.md)|DynamicSearchAds         
 [Dynamic Search Ad Label](dynamic-search-ad-label.md)|DynamicSearchAds         
 [Expanded Text Ad](expanded-text-ad.md)|SearchAndContent         
 [Expanded Text Ad Label](expanded-text-ad-label.md)|SearchAndContent         
 [Format Version](format-version.md)|All         
 [Image Ad Extension](image-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
-[In Market Audience](in-market-audience.md)<br /><br />Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API.|All         
+[In Market Audience](in-market-audience.md)<br/><br/>Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API.|All         
 [Keyword](keyword.md)|SearchAndContent         
 [Keyword Label](keyword-label.md)|SearchAndContent         
 [Keyword Best Position Bid](keyword-best-position-bid.md)|SearchAndContent         
@@ -133,7 +133,7 @@ Record Type  |Supported Campaign Types
 [Label](label.md)|All         
 [Location Ad Extension](location-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
 [Negative Keyword List](negative-keyword-list.md)|All         
-[Offline Conversion](offline-conversion.md)<br /><br />Bulk upload only supports adding new offline conversion data. Bulk download, bulk upload update, and bulk upload delete  operations are not supported. |All         
+[Offline Conversion](offline-conversion.md)<br/><br/>Bulk upload only supports adding new offline conversion data. Bulk download, bulk upload update, and bulk upload delete  operations are not supported. |All         
 [Price Ad Extension](price-ad-extension.md)|SearchAndContent<br/>DynamicSearchAds         
 [Product Ad](product-ad.md)|Shopping         
 [Product Ad Label](product-ad-label.md)|Shopping         

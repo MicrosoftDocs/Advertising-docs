@@ -35,8 +35,8 @@ Defines an object that contains estimates of clicks, average cost per click (CPC
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="averagecpc"></a>AverageCPC|The estimated average CPC.<br /><br />The formula used to calculate the average CPC is (maximum total cost / maximum number of clicks).|**double**|
-|<a name="ctr"></a>CTR|The estimated CTR.<br /><br />The formula used to calculate the CTR is (maximum number of clicks / maximum number of impressions) &#42; 100.|**double**|
+|<a name="averagecpc"></a>AverageCPC|The estimated average CPC.<br/><br/>The formula used to calculate the average CPC is (maximum total cost / maximum number of clicks).|**double**|
+|<a name="ctr"></a>CTR|The estimated CTR.<br/><br/>The formula used to calculate the CTR is (maximum number of clicks / maximum number of impressions) &#42; 100.|**double**|
 |<a name="currencycode"></a>CurrencyCode|The ISO code for the monetary unit of the cost estimates and suggested bid value.|[CurrencyCode](currencycode.md)|
 |<a name="estimatedminbid"></a>EstimatedMinBid|The suggested bid value.|**double**|
 |<a name="matchtype"></a>MatchType|The match type used to determine the estimates.|[MatchType](matchtype.md)|

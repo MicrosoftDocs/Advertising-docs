@@ -90,47 +90,47 @@ You can use the [Bulk Service](../bulk-service/bulk-service-reference.md) i.e., 
 The following Bulk records are available for managing ad extensions and ad extension associations. 
 
 ### App Extensions
--   [App Ad Extension](../bulk-service/app-ad-extension.md)
--   [Ad Group App Ad Extension](../bulk-service/ad-group-app-ad-extension.md)
--   [Campaign App Ad Extension](../bulk-service/campaign-app-ad-extension.md)
+- [App Ad Extension](../bulk-service/app-ad-extension.md)
+- [Ad Group App Ad Extension](../bulk-service/ad-group-app-ad-extension.md)
+- [Campaign App Ad Extension](../bulk-service/campaign-app-ad-extension.md)
 
 ### Call Ad Extensions
--   [Call Ad Extension](../bulk-service/call-ad-extension.md)
--   [Campaign Call Ad Extension](../bulk-service/campaign-call-ad-extension.md)
+- [Call Ad Extension](../bulk-service/call-ad-extension.md)
+- [Campaign Call Ad Extension](../bulk-service/campaign-call-ad-extension.md)
 
 ### Callout Ad Extensions
--   [Callout Ad Extension](../bulk-service/callout-ad-extension.md)
--   [Ad Group Callout Ad Extension](../bulk-service/ad-group-callout-ad-extension.md)
--   [Campaign Callout Ad Extension](../bulk-service/campaign-callout-ad-extension.md)
+- [Callout Ad Extension](../bulk-service/callout-ad-extension.md)
+- [Ad Group Callout Ad Extension](../bulk-service/ad-group-callout-ad-extension.md)
+- [Campaign Callout Ad Extension](../bulk-service/campaign-callout-ad-extension.md)
 
 ### Image Ad Extensions
--   [Image Ad Extension](../bulk-service/image-ad-extension.md)
--   [Ad Group Image Ad Extension](../bulk-service/ad-group-image-ad-extension.md)
--   [Campaign Image Ad Extension](../bulk-service/campaign-image-ad-extension.md)
+- [Image Ad Extension](../bulk-service/image-ad-extension.md)
+- [Ad Group Image Ad Extension](../bulk-service/ad-group-image-ad-extension.md)
+- [Campaign Image Ad Extension](../bulk-service/campaign-image-ad-extension.md)
 
 ### Location Ad Extensions
--   [Location Ad Extension](../bulk-service/location-ad-extension.md)
--   [Campaign Location Ad Extension](../bulk-service/campaign-location-ad-extension.md)
+- [Location Ad Extension](../bulk-service/location-ad-extension.md)
+- [Campaign Location Ad Extension](../bulk-service/campaign-location-ad-extension.md)
 
 ### Price Ad Extensions
--   [Price Ad Extension](../bulk-service/price-ad-extension.md)
--   [Ad Group Price Ad Extension](../bulk-service/ad-group-price-ad-extension.md)
--   [Campaign Price Ad Extension](../bulk-service/campaign-price-ad-extension.md)
+- [Price Ad Extension](../bulk-service/price-ad-extension.md)
+- [Ad Group Price Ad Extension](../bulk-service/ad-group-price-ad-extension.md)
+- [Campaign Price Ad Extension](../bulk-service/campaign-price-ad-extension.md)
 
 ### Review Ad Extensions
--   [Review Ad Extension](../bulk-service/review-ad-extension.md)
--   [Ad Group Review Ad Extension](../bulk-service/ad-group-review-ad-extension.md)
--   [Campaign Review Ad Extension](../bulk-service/campaign-review-ad-extension.md)
+- [Review Ad Extension](../bulk-service/review-ad-extension.md)
+- [Ad Group Review Ad Extension](../bulk-service/ad-group-review-ad-extension.md)
+- [Campaign Review Ad Extension](../bulk-service/campaign-review-ad-extension.md)
 
 ### Sitelink2 Ad Extensions
--   [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md)
--   [Ad Group Sitelink2 Ad Extension](../bulk-service/ad-group-sitelink2-ad-extension.md)
--   [Campaign Sitelink2 Ad Extension](../bulk-service/campaign-sitelink2-ad-extension.md)
+- [Sitelink2 Ad Extension](../bulk-service/sitelink2-ad-extension.md)
+- [Ad Group Sitelink2 Ad Extension](../bulk-service/ad-group-sitelink2-ad-extension.md)
+- [Campaign Sitelink2 Ad Extension](../bulk-service/campaign-sitelink2-ad-extension.md)
 
 ### Structured Snippet Ad Extensions
--   [Structured Snippet Ad Extension](../bulk-service/structured-snippet-ad-extension.md)
--   [Ad Group Structured Snippet Ad Extension](../bulk-service/ad-group-structured-snippet-ad-extension.md)
--   [Campaign Structured Snippet Ad Extension](../bulk-service/campaign-structured-snippet-ad-extension.md)
+- [Structured Snippet Ad Extension](../bulk-service/structured-snippet-ad-extension.md)
+- [Ad Group Structured Snippet Ad Extension](../bulk-service/ad-group-structured-snippet-ad-extension.md)
+- [Campaign Structured Snippet Ad Extension](../bulk-service/campaign-structured-snippet-ad-extension.md)
 
 For code examples that show how to set up ad extensions using the Bulk service, see [Bulk Ad Extensions Code Example](code-example-bulk-ad-extensions.md).
 
@@ -142,15 +142,15 @@ For code examples that show how to set up ad extensions using the Campaign Manag
 ### Entities
 These are the ad extension entities that can be accessed using the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
 
--   [AppAdExtension](../campaign-management-service/appadextension.md)
--   [CallAdExtension](../campaign-management-service/calladextension.md)
--   [CalloutAdExtension](../campaign-management-service/calloutadextension.md)
--   [ImageAdExtension](../campaign-management-service/imageadextension.md)
--   [LocationAdExtension](../campaign-management-service/locationadextension.md)
--   [PriceAdExtension](../campaign-management-service/priceadextension.md)
--   [ReviewAdExtension](../campaign-management-service/reviewadextension.md)
--   [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md)
--   [StructuredSnippetAdExtension](../campaign-management-service/structuredsnippetadextension.md)
+- [AppAdExtension](../campaign-management-service/appadextension.md)
+- [CallAdExtension](../campaign-management-service/calladextension.md)
+- [CalloutAdExtension](../campaign-management-service/calloutadextension.md)
+- [ImageAdExtension](../campaign-management-service/imageadextension.md)
+- [LocationAdExtension](../campaign-management-service/locationadextension.md)
+- [PriceAdExtension](../campaign-management-service/priceadextension.md)
+- [ReviewAdExtension](../campaign-management-service/reviewadextension.md)
+- [Sitelink2AdExtension](../campaign-management-service/sitelink2adextension.md)
+- [StructuredSnippetAdExtension](../campaign-management-service/structuredsnippetadextension.md)
 
 > [!NOTE]
 > The [AdExtension](../campaign-management-service/adextension.md) object is the base class from which all ad extensions are derived.
@@ -158,14 +158,14 @@ These are the ad extension entities that can be accessed using the [Campaign Man
 ### Service Operations
 These are the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md) service operations that can be used to add, get, update, and delete ad extensions.
 
--   [AddAdExtensions](../campaign-management-service/addadextensions.md)  
--   [SetAdExtensionsAssociations](../campaign-management-service/setadextensionsassociations.md)  
--   [GetAdExtensionsByIds](../campaign-management-service/getadextensionsbyids.md)  
--   [GetAdExtensionIdsByAccountId](../campaign-management-service/getadextensionidsbyaccountid.md)  
--   [GetAdExtensionsAssociations](../campaign-management-service/getadextensionsassociations.md)  
--   [UpdateAdExtensions](../campaign-management-service/updateadextensions.md)
--   [DeleteAdExtensions](../campaign-management-service/deleteadextensions.md)  
--   [DeleteAdExtensionsAssociations](../campaign-management-service/deleteadextensionsassociations.md)
+- [AddAdExtensions](../campaign-management-service/addadextensions.md)  
+- [SetAdExtensionsAssociations](../campaign-management-service/setadextensionsassociations.md)  
+- [GetAdExtensionsByIds](../campaign-management-service/getadextensionsbyids.md)  
+- [GetAdExtensionIdsByAccountId](../campaign-management-service/getadextensionidsbyaccountid.md)  
+- [GetAdExtensionsAssociations](../campaign-management-service/getadextensionsassociations.md)  
+- [UpdateAdExtensions](../campaign-management-service/updateadextensions.md)
+- [DeleteAdExtensions](../campaign-management-service/deleteadextensions.md)  
+- [DeleteAdExtensionsAssociations](../campaign-management-service/deleteadextensionsassociations.md)
 
 > [!NOTE]
 > Partial update is not supported for ad extensions. Any optional elements which are not sent with the [UpdateAdExtensions](../campaign-management-service/updateadextensions.md) request will in effect be deleted from the extension.
@@ -180,11 +180,11 @@ When you associate an ad extension with a campaign or ad group, the extension go
 ## <a name="reporting"></a>Reporting
 You can use the following reports to get statistics about the effectiveness of the ad extensions that you've included in your ads.
 
--   [AdExtensionByAdReportRequest](../reporting-service/adextensionbyadreportrequest.md) - Aggregates performance data by ad for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
+- [AdExtensionByAdReportRequest](../reporting-service/adextensionbyadreportrequest.md) - Aggregates performance data by ad for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
 
--   [AdExtensionByKeywordReportRequest](../reporting-service/adextensionbykeywordreportrequest.md) - Aggregates performance data by keyword for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
+- [AdExtensionByKeywordReportRequest](../reporting-service/adextensionbykeywordreportrequest.md) - Aggregates performance data by keyword for a specified time period. By including performance details, such as clicks, conversion, and spend, you can identify ad extensions that are performing well, and those that may need to be adjusted to optimize the monthly budget.
 
--   [AdExtensionDetailReportRequest](../reporting-service/adextensiondetailreportrequest.md) - Lists all versions of an ad extension by account. You can use this information along with the performance data from the other two reports to determine which version performed better.
+- [AdExtensionDetailReportRequest](../reporting-service/adextensiondetailreportrequest.md) - Lists all versions of an ad extension by account. You can use this information along with the performance data from the other two reports to determine which version performed better.
 
 For more information about reporting, see [Reports](reports.md) and [Request and Download a Report](request-download-report.md).
 

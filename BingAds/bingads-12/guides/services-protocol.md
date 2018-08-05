@@ -42,9 +42,9 @@ For example, many of the campaign management calls require an account identifier
 ## <a name="manage-overhead"></a>Manage the Overhead Associated with Making Web Service Calls
 The following are the overhead costs, in processing time, that are associated with each web service call.
 
--   Establishing an HTTPS connection to the web service.  
--   Authenticating the user name and password.  
--   Validating the developer token.  
+- Establishing an HTTPS connection to the web service.  
+- Authenticating the user name and password.  
+- Validating the developer token.  
 
 These costs occur whether you process a single item or a set of items. To minimize overhead, in general, you should try to process as many items in one call as possible. For example, instead of calling [UpdateCampaigns](../campaign-management-service/updatecampaigns.md) for each campaign that you want to update, call it only once for multiple campaigns that you want to update. To manage large scale data you should use the [Bulk service](../bulk-service/bulk-service-reference.md). The Bulk service allows you to download data as a TSV or CSV file, modify it as needed, and then upload your changes. For more information about using the Bulk service, see [Bulk Download and Upload](bulk-download-upload.md).
 
@@ -60,9 +60,9 @@ At the customer level, the number of calls a customer can make to the customer d
 
 Should you exceed the service call limit, you will see the following error:
 
--   Numeric Error Code: *117*  
--   Symbolic Error Code: *CallRateExceeded*  
--   Message: *You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.*  
+- Numeric Error Code: *117*  
+- Symbolic Error Code: *CallRateExceeded*  
+- Message: *You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.*  
 
 When you observe this error, you can resubmit the request under the limit after waiting 60 seconds.
 
@@ -71,9 +71,9 @@ The Bulk service limits the number of requests that you can make to [DownloadCam
 
 Should you hit the service call limit, you will see the following error:
 
--   Numeric Error Code: *4204*  
--   Symbolic Error Code: *BulkServiceNoMoreCallsPermittedForTheTimePeriod*  
--   Message: *No more bulk upload or download calls will be permitted for this account for the current time period. If you have reached your bulk upload limit, the bulk download operations may still be available, or vice versa.*  
+- Numeric Error Code: *4204*  
+- Symbolic Error Code: *BulkServiceNoMoreCallsPermittedForTheTimePeriod*  
+- Message: *No more bulk upload or download calls will be permitted for this account for the current time period. If you have reached your bulk upload limit, the bulk download operations may still be available, or vice versa.*  
 
 If you observe this error, you can resubmit your request after waiting up to 15 minutes. For more details please see [Bulk Download Best Practices](bulk-download-upload.md#downloadbestpractices) and [Bulk Upload Best Practices](bulk-download-upload.md#uploadbestpractices).
 
@@ -86,9 +86,9 @@ At the customer level, the number of calls a customer can make to the customer d
 
 Should you hit the service call limit, you will see the following error:
 
--   Numeric Error Code: *117*  
--   Symbolic Error Code: *CallRateExceeded*  
--   Message: *You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.*  
+- Numeric Error Code: *117*  
+- Symbolic Error Code: *CallRateExceeded*  
+- Message: *You have exceeded the number of calls that you are allowed to make in a minute. Please reduce the number of calls that you make per minute.*  
 
 When you observe this error, you can resubmit the request under the limit after waiting 60 seconds.
 
