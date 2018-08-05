@@ -104,25 +104,25 @@ The following attribute and impression share performance statistics columns are 
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|BidMatchType<br /><br />DeviceOS<br /><br />TopVsOther|ExactMatchImpressionSharePercent<br /><br />ImpressionLostToAdRelevancePercent<br /><br />ImpressionLostToBidPercent<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToExpectedCtrPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
+|BidMatchType<br/><br/>DeviceOS<br/><br/>TopVsOther|ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToAdRelevancePercent<br/><br/>ImpressionLostToBidPercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToExpectedCtrPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
 
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [CampaignPerformanceReportRequest](../reporting-service/campaignperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|BidMatchType<br /><br />BudgetAssociationStatus<br /><br />BudgetName<br /><br />BudgetStatus<br /><br />DeviceOS<br /><br />TopVsOther|ExactMatchImpressionSharePercent<br /><br />ImpressionLostToAdRelevancePercent<br /><br />ImpressionLostToBidPercent<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToExpectedCtrPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
+|BidMatchType<br/><br/>BudgetAssociationStatus<br/><br/>BudgetName<br/><br/>BudgetStatus<br/><br/>DeviceOS<br/><br/>TopVsOther|ExactMatchImpressionSharePercent<br/><br/>ImpressionLostToAdRelevancePercent<br/><br/>ImpressionLostToBidPercent<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToExpectedCtrPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
 
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductDimensionPerformanceReportRequest](../reporting-service/productdimensionperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|AdDistribution<br /><br />AdId<br /><br />AdStatus<br /><br />ClickType<br /><br />Language<br /><br />LocalStoreCode<br /><br />Network<br /><br />TopVsOther|BenchmarkBid<br /><br />BenchmarkCtr<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
+|AdDistribution<br/><br/>AdId<br/><br/>AdStatus<br/><br/>ClickType<br/><br/>Language<br/><br/>LocalStoreCode<br/><br/>Network<br/><br/>TopVsOther|BenchmarkBid<br/><br/>BenchmarkCtr<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
 	
 The following attribute and impression share performance statistics columns are mutually exclusive when submitting the [ProductPartitionPerformanceReportRequest](../reporting-service/productpartitionperformancereportrequest.md).
 
 |Attributes|Impression Share Performance Statistics|
 |--------------|-------------------------------------------|
-|AdDistribution<br /><br />AdId<br /><br />AdStatus<br /><br />BidMatchType<br /><br />ClickType<br /><br />DeliveredMatchType<br /><br />Language<br /><br />LocalStoreCode<br /><br />Network<br /><br />TopVsOther|BenchmarkBid<br /><br />BenchmarkCtr<br /><br />ImpressionLostToBudgetPercent<br /><br />ImpressionLostToRankPercent<br /><br />ImpressionSharePercent|
+|AdDistribution<br/><br/>AdId<br/><br/>AdStatus<br/><br/>BidMatchType<br/><br/>ClickType<br/><br/>DeliveredMatchType<br/><br/>Language<br/><br/>LocalStoreCode<br/><br/>Network<br/><br/>TopVsOther|BenchmarkBid<br/><br/>BenchmarkCtr<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
 
 ## <a name="timeperiod"></a>TimePeriod Column
 If you include the *TimePeriod* column, then the format of the values in the downloaded report will vary depending on the aggregation level that you specify in the report request. For example, if the aggregation level is Daily, each field in TimePeriod column will contain the day formatted as *yyyy-mm-dd*.
@@ -142,14 +142,14 @@ For most report requests you must set the *Aggregation* and *Time* elements. The
 
 |Aggregation Value|Time Periods|
 |---------------------|----------------|
-|Daily|Today<br /><br />Yesterday<br /><br />LastSevenDays<br /><br />ThisMonth<br /><br />LastMonth<br /><br />Custom date range|
-|DayOfWeek|Today<br /><br />Yesterday<br /><br />LastSevenDays<br /><br />ThisMonth<br /><br />LastMonth<br /><br />LastThreeMonths<br /><br />LastSixMonths|
-|Hourly|Today<br /><br />Yesterday<br /><br />Custom date range|
-|HourOfDay|Today<br /><br />Yesterday<br /><br />LastSevenDays<br /><br />ThisMonth<br /><br />LastMonth<br /><br />LastThreeMonths<br /><br />LastSixMonths|
-|Monthly|ThisMonth<br /><br />LastMonth<br /><br />LastThreeMonths<br /><br />LastSixMonths<br /><br />ThisYear<br /><br />LastYear<br /><br />Custom date range|
-|Summary|Today<br /><br />Yesterday<br /><br />LastSevenDays<br /><br />ThisMonth<br /><br />LastMonth<br /><br />Custom date range|
-|Weekly|ThisWeek<br /><br />LastWeek<br /><br />LastFourWeeks<br /><br />ThisMonth<br /><br />LastMonth<br /><br />ThisYear<br /><br />LastYear<br /><br />Custom date range|
-|Yearly|ThisYear<br /><br />LastYear<br /><br />Custom date range|
+|Daily|Today<br/><br/>Yesterday<br/><br/>LastSevenDays<br/><br/>ThisMonth<br/><br/>LastMonth<br/><br/>Custom date range|
+|DayOfWeek|Today<br/><br/>Yesterday<br/><br/>LastSevenDays<br/><br/>ThisMonth<br/><br/>LastMonth<br/><br/>LastThreeMonths<br/><br/>LastSixMonths|
+|Hourly|Today<br/><br/>Yesterday<br/><br/>Custom date range|
+|HourOfDay|Today<br/><br/>Yesterday<br/><br/>LastSevenDays<br/><br/>ThisMonth<br/><br/>LastMonth<br/><br/>LastThreeMonths<br/><br/>LastSixMonths|
+|Monthly|ThisMonth<br/><br/>LastMonth<br/><br/>LastThreeMonths<br/><br/>LastSixMonths<br/><br/>ThisYear<br/><br/>LastYear<br/><br/>Custom date range|
+|Summary|Today<br/><br/>Yesterday<br/><br/>LastSevenDays<br/><br/>ThisMonth<br/><br/>LastMonth<br/><br/>Custom date range|
+|Weekly|ThisWeek<br/><br/>LastWeek<br/><br/>LastFourWeeks<br/><br/>ThisMonth<br/><br/>LastMonth<br/><br/>ThisYear<br/><br/>LastYear<br/><br/>Custom date range|
+|Yearly|ThisYear<br/><br/>LastYear<br/><br/>Custom date range|
 
 ## <a name="zeroimpressions"></a>Zero Impressions
 The report data can include rows with zero impressions if the impression occurred before the requested time period and then a subsequent action such as click, conversion, or phone call occurs during the requested time period. Likewise even within the requested time period if you download a daily report for performance last week, it is possible that all of the impressions occurred on Sunday and then clicks or other performance occurred e.g. Monday or Tuesday. The report data for Monday or Tuesday might have clicks with zero impressions. You can use the [Bulk Service](../bulk-service/bulk-service-reference.md) or [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md) to get all entities in your account, regardless of whether or not they have any associated performance data.

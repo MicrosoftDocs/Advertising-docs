@@ -24,7 +24,7 @@ The *DeleteNegativeKeywordsFromEntitiesRequest* object defines the [body](#reque
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="entitynegativekeywords"></a>EntityNegativeKeywords|An array of negative keyword with associated entity such as a campaign or ad group.<br /><br /> The *EntityType* specified within each *EntityNegativeKeyword* must be set to the same value.<br /><br />This array can contain a maximum of 1 *EntityNegativeKeyword* element, which contains up to 20,000 negative keywords.|[EntityNegativeKeyword](entitynegativekeyword.md) array|
+|<a name="entitynegativekeywords"></a>EntityNegativeKeywords|An array of negative keyword with associated entity such as a campaign or ad group.<br/><br/>The *EntityType* specified within each *EntityNegativeKeyword* must be set to the same value.<br/><br/>This array can contain a maximum of 1 *EntityNegativeKeyword* element, which contains up to 20,000 negative keywords.|[EntityNegativeKeyword](entitynegativekeyword.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -36,7 +36,7 @@ The *DeleteNegativeKeywordsFromEntitiesResponse* object defines the [body](#resp
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="nestedpartialerrors"></a>NestedPartialErrors|An array of [BatchErrorCollection](batcherrorcollection.md) objects that contain details for any criterion that were not successfully deleted. The top level error within each [BatchErrorCollection](batcherrorcollection.md) object corresponds to potential campaign or ad group errors. The nested list of [BatchError](batcherror.md) objects would include any errors specific to the negative keywords that you attempted to delete from the campaign or ad group.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchErrorCollection](batcherrorcollection.md) array|
+|<a name="nestedpartialerrors"></a>NestedPartialErrors|An array of [BatchErrorCollection](batcherrorcollection.md) objects that contain details for any criterion that were not successfully deleted. The top level error within each [BatchErrorCollection](batcherrorcollection.md) object corresponds to potential campaign or ad group errors. The nested list of [BatchError](batcherror.md) objects would include any errors specific to the negative keywords that you attempted to delete from the campaign or ad group.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchErrorCollection](batcherrorcollection.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

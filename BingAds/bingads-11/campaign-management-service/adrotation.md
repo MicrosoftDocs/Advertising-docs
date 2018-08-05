@@ -26,7 +26,7 @@ Defines an object that specifies the type of ad rotation to apply to the ad grou
 |-----------|---------------|-------------|
 |<a name="enddate"></a>EndDate|Reserved for future use only. Must be null.|**dateTime**|
 |<a name="startdate"></a>StartDate|Reserved for future use only. Must be null.|**dateTime**|
-|<a name="type"></a>Type|The type of ad rotation to apply to the ad group.<br /><br />Possible values are *OptimizeForClicks* and *RotateAdsEvenly*.<br/><br/>**Add:** Optional. If not specified, the default value is *OptimizeForClicks*.<br/>**Update:** Optional|[AdRotationType](adrotationtype.md)|
+|<a name="type"></a>Type|The type of ad rotation to apply to the ad group.<br/><br/>Possible values are *OptimizeForClicks* and *RotateAdsEvenly*.<br/><br/>**Add:** Optional. If not specified, the default value is *OptimizeForClicks*.<br/>**Update:** Optional|[AdRotationType](adrotationtype.md)|
 
 ## Requirements
 Service: [CampaignManagementService.svc v11](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v11/CampaignManagementService.svc)  

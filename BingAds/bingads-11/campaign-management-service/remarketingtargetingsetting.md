@@ -23,7 +23,7 @@ The targeting setting that is applicable for all audiences e.g., custom audience
 
 |Value|Description|
 |-----------|---------------|
-|<a name="bidonly"></a>BidOnly|Show ads to people searching for your ad, with the option to change the bid amount for people included in the audience. Ads in this ad group can show to everyone but the bid adjustment will apply to people included in the audience.<br/><br/> Bing Ads won't apply any bid boosts until the associated audience has at least 1000 users.|
+|<a name="bidonly"></a>BidOnly|Show ads to people searching for your ad, with the option to change the bid amount for people included in the audience. Ads in this ad group can show to everyone but the bid adjustment will apply to people included in the audience.<br/><br/>Bing Ads won't apply any bid boosts until the associated audience has at least 1000 users.|
 |<a name="targetandbid"></a>TargetAndBid|Show ads only to people included in the audience, with the option to change the bid amount. Ads in this ad group will only show to people included in the audience.|
 
 ## Requirements

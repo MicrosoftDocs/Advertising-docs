@@ -667,6 +667,9 @@
         - name: Campaign Callout Ad Extension
           href: ../bulk-service/campaign-callout-ad-extension.md
           displayName: BulkCampaignCalloutAdExtension
+        - name: Campaign Company Name Criterion
+          href: ../bulk-service/campaign-company-name-criterion.md
+          displayName: BulkCampaignCompanyNameCriterion
         - name: Campaign DayTime Criterion
           href: ../bulk-service/campaign-daytime-criterion.md
           displayName: BulkCampaignDayTimeCriterion
@@ -679,6 +682,12 @@
         - name: Campaign Gender Criterion
           href: ../bulk-service/campaign-gender-criterion.md
           displayName: BulkCampaignGenderCriterion
+        - name: Campaign Industry Criterion
+          href: ../bulk-service/campaign-industry-criterion.md
+          displayName: BulkCampaignIndustryCriterion
+        - name: Campaign Job Function Criterion
+          href: ../bulk-service/campaign-job-function-criterion.md
+          displayName: BulkCampaignJobFunctionCriterion
         - name: Campaign Label
           href: ../bulk-service/campaign-label.md
           displayName: BulkCampaignLabel
@@ -1268,6 +1277,8 @@
           href: ../campaign-management-service/sharedlistitem.md
         - name: ShoppingSetting
           href: ../campaign-management-service/shoppingsetting.md
+        - name: SimilarRemarketingList
+          href: ../campaign-management-service/similarremarketinglist.md
         - name: SitelinkAdExtension
           href: ../campaign-management-service/sitelinkadextension.md
         - name: StringRuleItem
@@ -1535,6 +1546,8 @@
           href: ../customer-management-service/updateuser.md
         - name: UpdateUserRoles
           href: ../customer-management-service/updateuserroles.md
+        - name: ValidateAddress
+          href: ../customer-management-service/validateaddress.md
       - name: Customer Management Data Objects
         href: ../customer-management-service/customer-management-data-objects.md
         items: 

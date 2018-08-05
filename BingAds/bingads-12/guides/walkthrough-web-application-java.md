@@ -234,7 +234,7 @@ The example web application sends authentication requests to the Microsoft accou
     <body>
         <div id="content" class="container">
         	<div>
-        		<br/>    		    		
+        		<br/>   		    		
         		<b>You have <%= accountsCount %> accounts</b>    		
 
         	</div> 
@@ -273,11 +273,11 @@ OAuthWebAuthCodeGrant oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(
 ## <a name="deploy"></a>Deploying a Web Application
 If you are using Microsoft Azure to deploy your web application, the following are required.
 
--   A distribution of a Java-based web server or application server, such as Apache Tomcat, GlassFish, JBoss Application Server, Jetty, or IBM® WebSphere® Application Server Liberty Core.
+- A distribution of a Java-based web server or application server, such as Apache Tomcat, GlassFish, JBoss Application Server, Jetty, or IBM® WebSphere® Application Server Liberty Core.
 
--   An Azure subscription, which can be acquired from [http://azure.microsoft.com/pricing/purchase-options/](http://azure.microsoft.com/pricing/purchase-options/).
+- An Azure subscription, which can be acquired from [http://azure.microsoft.com/pricing/purchase-options/](http://azure.microsoft.com/pricing/purchase-options/).
 
--   Optionally you can install the Azure Toolkit for Eclipse (by Microsoft Open Technologies) and deploy your web application using Azure cloud services. For more information, see [Installing the Azure Toolkit for Eclipse (by Microsoft Open Technologies)](https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse-installation).
+- Optionally you can install the Azure Toolkit for Eclipse (by Microsoft Open Technologies) and deploy your web application using Azure cloud services. For more information, see [Installing the Azure Toolkit for Eclipse (by Microsoft Open Technologies)](https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse-installation).
 
 ## See Also
 [Sandbox](sandbox.md)  

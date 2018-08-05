@@ -21,13 +21,13 @@ The *GetHistoricalSearchCountRequest* object defines the [body](#request-body) a
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="devices"></a>Devices|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br /><br />The response includes search counts for the device types that you specify only, if available.|**string** array|
-|<a name="enddate"></a>EndDate|The end date of the date range that identifies the data that you want to use to determine the historical search count.<br /><br />The date cannot be later than today's date, and must be later than or the same as the specified start date.<br /><br />The effective end date may be adjusted if the specified [TimePeriodRollup](#timeperiodrollup) is Weekly or Monthly.|[DayMonthAndYear](daymonthandyear.md)|
+|<a name="devices"></a>Devices|A list of one or more of the following device types: Computers, NonSmartphones, Smartphones, Tablets. The default is Computers.<br/><br/>The response includes search counts for the device types that you specify only, if available.|**string** array|
+|<a name="enddate"></a>EndDate|The end date of the date range that identifies the data that you want to use to determine the historical search count.<br/><br/>The date cannot be later than today's date, and must be later than or the same as the specified start date.<br/><br/>The effective end date may be adjusted if the specified [TimePeriodRollup](#timeperiodrollup) is Weekly or Monthly.|[DayMonthAndYear](daymonthandyear.md)|
 |<a name="keywords"></a>Keywords|An array of keywords for which you want to determine the number of times that the keyword was used in a search query. The array can contain a maximum of 1,000 keywords, and each keyword can contain a maximum of 100 characters.|**string** array|
-|<a name="language"></a>Language|The language in which the keywords are written.<br /><br />The countries/regions that you specify in the *PublisherCountries* element must support the specified language.<br /><br />For possible values, see [Ad Languages](../guides/ad-languages.md).|**string**|
-|<a name="publishercountries"></a>PublisherCountries|The country codes of the countries/regions to use as the source of the historical data.<br /><br />You can specify one or more country codes. Each country/region that you specify must support the language specified in the *Language* element.<br /><br />For possible values, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br /><br />If Null, the default is all countries/regions that support the specified language.|**string** array|
-|<a name="startdate"></a>StartDate|The start date of the date range that identifies the data that you want to use to determine the historical search count.<br /><br />This date must be earlier than or the same as the specified end date. The date should be later than the maximum available historical data range corresponding to the specified [TimePeriodRollup](#timeperiodrollup) element.<br /><br />The effective start date may be adjusted if the specified [TimePeriodRollup](#timeperiodrollup) is Weekly or Monthly.|[DayMonthAndYear](daymonthandyear.md)|
-|<a name="timeperiodrollup"></a>TimePeriodRollup|You may specify whether to return data aggregated daily, weekly, or monthly.<br /><br />For a list of supported values, see the [Remarks](#remarks) section below.|**string**|
+|<a name="language"></a>Language|The language in which the keywords are written.<br/><br/>The countries/regions that you specify in the *PublisherCountries* element must support the specified language.<br/><br/>For possible values, see [Ad Languages](../guides/ad-languages.md).|**string**|
+|<a name="publishercountries"></a>PublisherCountries|The country codes of the countries/regions to use as the source of the historical data.<br/><br/>You can specify one or more country codes. Each country/region that you specify must support the language specified in the *Language* element.<br/><br/>For possible values, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br/><br/>If Null, the default is all countries/regions that support the specified language.|**string** array|
+|<a name="startdate"></a>StartDate|The start date of the date range that identifies the data that you want to use to determine the historical search count.<br/><br/>This date must be earlier than or the same as the specified end date. The date should be later than the maximum available historical data range corresponding to the specified [TimePeriodRollup](#timeperiodrollup) element.<br/><br/>The effective start date may be adjusted if the specified [TimePeriodRollup](#timeperiodrollup) is Weekly or Monthly.|[DayMonthAndYear](daymonthandyear.md)|
+|<a name="timeperiodrollup"></a>TimePeriodRollup|You may specify whether to return data aggregated daily, weekly, or monthly.<br/><br/>For a list of supported values, see the [Remarks](#remarks) section below.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -39,7 +39,7 @@ The *GetHistoricalSearchCountResponse* object defines the [body](#response-body)
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordsearchcounts"></a>KeywordSearchCounts|An array of [KeywordSearchCount](keywordsearchcount.md) data objects. The array contains an item for each keyword specified in the request. If the keyword is not valid, the corresponding item in the array will be null.<br /><br />Each [KeywordSearchCount](keywordsearchcount.md) contains an array of [SearchCountsByAttributes](searchcountsbyattributes.md).  The array contains an item for each unique device specified in the request.|[KeywordSearchCount](keywordsearchcount.md) array|
+|<a name="keywordsearchcounts"></a>KeywordSearchCounts|An array of [KeywordSearchCount](keywordsearchcount.md) data objects. The array contains an item for each keyword specified in the request. If the keyword is not valid, the corresponding item in the array will be null.<br/><br/>Each [KeywordSearchCount](keywordsearchcount.md) contains an array of [SearchCountsByAttributes](searchcountsbyattributes.md).  The array contains an item for each unique device specified in the request.|[KeywordSearchCount](keywordsearchcount.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -214,8 +214,8 @@ The following case-sensitive values may be specified, and data will be returned 
 |TimePeriodRollup|Available Historical Data|
 |--------------------|-----------------------------|
 |Daily|Up to 45 days prior to the most recent completed day.|
-|Weekly|Up to 15 weeks prior to the most recent completed week.<br /><br />The specified [StartDate](#startdate) is adjusted back to the nearest Sunday, and the [EndDate](#enddate) is adjusted forward to the nearest Saturday.|
-|Monthly|Up to 24 months prior to the most recent completed month.<br /><br />The specified [StartDate](#startdate) is adjusted back to the beginning of the month, and the [EndDate](#enddate) is adjusted forward to the end of the month.|
+|Weekly|Up to 15 weeks prior to the most recent completed week.<br/><br/>The specified [StartDate](#startdate) is adjusted back to the nearest Sunday, and the [EndDate](#enddate) is adjusted forward to the nearest Saturday.|
+|Monthly|Up to 24 months prior to the most recent completed month.<br/><br/>The specified [StartDate](#startdate) is adjusted back to the beginning of the month, and the [EndDate](#enddate) is adjusted forward to the end of the month.|
 
 
 ## Requirements

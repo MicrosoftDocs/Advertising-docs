@@ -24,13 +24,13 @@ The *GetEstimatedPositionByKeywordsRequest* object defines the [body](#request-b
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group whose performance data is used to help determine how well the keyword might perform in the context of the ad group. Specifying an ad group helps improve the accuracy of the suggested position.<br /><br />If you specify an ad group, you must specify the campaign that it belongs to.|**long**|
-|<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad group specified in *AdGroupId*. If you do not specify an ad group, the campaign's performance data is used to help determine how well the keyword might perform in the context of the campaign.<br /><br /> Specifying a campaign and ad group helps improve the accuracy of the suggested position. If neither *AdGroupId* or *CampaignId* are specified, the operation uses the specified *CustomerAccountId* header element to help determine how well the keyword might perform in the context of the account.|**long**|
-|<a name="currencycode"></a>CurrencyCode|The ISO code for the monetary unit to use to calculate the cost estimates and suggested bid value.<br /><br />If not set, the service determines the currency from the account specified in the *CustomerAccountId* header element. If neither *Currency* or *CustomerAccountId* is set, the service uses USD.|[CurrencyCode](currencycode.md)|
+|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group whose performance data is used to help determine how well the keyword might perform in the context of the ad group. Specifying an ad group helps improve the accuracy of the suggested position.<br/><br/>If you specify an ad group, you must specify the campaign that it belongs to.|**long**|
+|<a name="campaignid"></a>CampaignId|The identifier of the campaign that owns the ad group specified in *AdGroupId*. If you do not specify an ad group, the campaign's performance data is used to help determine how well the keyword might perform in the context of the campaign.<br/><br/>Specifying a campaign and ad group helps improve the accuracy of the suggested position. If neither *AdGroupId* or *CampaignId* are specified, the operation uses the specified *CustomerAccountId* header element to help determine how well the keyword might perform in the context of the account.|**long**|
+|<a name="currencycode"></a>CurrencyCode|The ISO code for the monetary unit to use to calculate the cost estimates and suggested bid value.<br/><br/>If not set, the service determines the currency from the account specified in the *CustomerAccountId* header element. If neither *Currency* or *CustomerAccountId* is set, the service uses USD.|[CurrencyCode](currencycode.md)|
 |<a name="keywords"></a>Keywords|An array of keywords for which you want to get the estimated position in the search results, based on the specified bid value. You may specify a maximum of 1,000 keywords and each keyword can contains a maximum of 100 characters.|**string** array|
-|<a name="language"></a>Language|The language used in parallel with location identifiers for estimating the position.<br /><br /> The language must be supported in each of the locations that you specify in [LocationIds](#locationids).<br /><br />For possible language values, see [Ad Languages](../guides/ad-languages.md).<br /><br />If you do not specify the language, the service operation uses the language of the specified [AdGroupId](#adgroupid) or [CampaignId](#campaignid). If none of these properties are set, then *EN* (English) is used by default.|**string**|
-|<a name="locationids"></a>LocationIds|The identifier or identifiers of the geographical locations to use for estimating the position.<br /><br />All of the locations must support the language specified in the [Language](#language) element. Although you can specify multiple location identifiers, as a best practice for the most accurate position estimates per location, you should specify only one location per service call.<br /><br />For possible location identifiers, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br /><br />If you do not specify any locations, the service operation uses the location criterions of the specified [AdGroupId](#adgroupid) or [CampaignId](#campaignid). If none of these properties are set, then *190* (United States) is used by default.|**long** array|
-|<a name="matchtypes"></a>MatchTypes|An array of unique match types for which you want to get estimates.<br /><br />You may not specify the Content match type.|[MatchType](matchtype.md) array|
+|<a name="language"></a>Language|The language used in parallel with location identifiers for estimating the position.<br/><br/>The language must be supported in each of the locations that you specify in [LocationIds](#locationids).<br/><br/>For possible language values, see [Ad Languages](../guides/ad-languages.md).<br/><br/>If you do not specify the language, the service operation uses the language of the specified [AdGroupId](#adgroupid) or [CampaignId](#campaignid). If none of these properties are set, then *EN* (English) is used by default.|**string**|
+|<a name="locationids"></a>LocationIds|The identifier or identifiers of the geographical locations to use for estimating the position.<br/><br/>All of the locations must support the language specified in the [Language](#language) element. Although you can specify multiple location identifiers, as a best practice for the most accurate position estimates per location, you should specify only one location per service call.<br/><br/>For possible location identifiers, see [Geographical Location Codes](../guides/geographical-location-codes.md).<br/><br/>If you do not specify any locations, the service operation uses the location criterions of the specified [AdGroupId](#adgroupid) or [CampaignId](#campaignid). If none of these properties are set, then *190* (United States) is used by default.|**long** array|
+|<a name="matchtypes"></a>MatchTypes|An array of unique match types for which you want to get estimates.<br/><br/>You may not specify the Content match type.|[MatchType](matchtype.md) array|
 |<a name="maxbid"></a>MaxBid|The maximum bid value to use to determine the estimated position in the search results.|**double**|
 
 ### <a name="request-header"></a>Request Header Elements
@@ -43,7 +43,7 @@ The *GetEstimatedPositionByKeywordsResponse* object defines the [body](#response
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="keywordestimatedpositions"></a>KeywordEstimatedPositions|An array of [KeywordEstimatedPosition](keywordestimatedposition.md) data objects. The array contains an item for each keyword specified in the request. If the keyword is not valid, the corresponding item in the array will be null.<br /><br />If data is available for the keyword, the [EstimatedPositionAndTraffic](estimatedpositionandtraffic.md)  will provide the estimated position in the search results where your ads could appear, based on the specified bid value. Otherwise, the *EstimatedPositions* element will be set to null.|[KeywordEstimatedPosition](keywordestimatedposition.md) array|
+|<a name="keywordestimatedpositions"></a>KeywordEstimatedPositions|An array of [KeywordEstimatedPosition](keywordestimatedposition.md) data objects. The array contains an item for each keyword specified in the request. If the keyword is not valid, the corresponding item in the array will be null.<br/><br/>If data is available for the keyword, the [EstimatedPositionAndTraffic](estimatedpositionandtraffic.md)  will provide the estimated position in the search results where your ads could appear, based on the specified bid value. Otherwise, the *EstimatedPositions* element will be set to null.|[KeywordEstimatedPosition](keywordestimatedposition.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -91,25 +91,25 @@ This template was generated by a tool to show the order of the [body](#response-
   </s:Header>
   <s:Body>
     <GetEstimatedPositionByKeywordsResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordEstimatedPositions xmlns:e88="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e88:KeywordEstimatedPosition>
-          <e88:Keyword d4p1:nil="false">ValueHere</e88:Keyword>
-          <e88:EstimatedPositions d4p1:nil="false">
-            <e88:EstimatedPositionAndTraffic>
-              <e88:MatchType>ValueHere</e88:MatchType>
-              <e88:MinClicksPerWeek>ValueHere</e88:MinClicksPerWeek>
-              <e88:MaxClicksPerWeek>ValueHere</e88:MaxClicksPerWeek>
-              <e88:AverageCPC>ValueHere</e88:AverageCPC>
-              <e88:MinImpressionsPerWeek>ValueHere</e88:MinImpressionsPerWeek>
-              <e88:MaxImpressionsPerWeek>ValueHere</e88:MaxImpressionsPerWeek>
-              <e88:CTR>ValueHere</e88:CTR>
-              <e88:MinTotalCostPerWeek>ValueHere</e88:MinTotalCostPerWeek>
-              <e88:MaxTotalCostPerWeek>ValueHere</e88:MaxTotalCostPerWeek>
-              <e88:CurrencyCode>ValueHere</e88:CurrencyCode>
-              <e88:EstimatedAdPosition>ValueHere</e88:EstimatedAdPosition>
-            </e88:EstimatedPositionAndTraffic>
-          </e88:EstimatedPositions>
-        </e88:KeywordEstimatedPosition>
+      <KeywordEstimatedPositions xmlns:e91="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e91:KeywordEstimatedPosition>
+          <e91:Keyword d4p1:nil="false">ValueHere</e91:Keyword>
+          <e91:EstimatedPositions d4p1:nil="false">
+            <e91:EstimatedPositionAndTraffic>
+              <e91:MatchType>ValueHere</e91:MatchType>
+              <e91:MinClicksPerWeek>ValueHere</e91:MinClicksPerWeek>
+              <e91:MaxClicksPerWeek>ValueHere</e91:MaxClicksPerWeek>
+              <e91:AverageCPC>ValueHere</e91:AverageCPC>
+              <e91:MinImpressionsPerWeek>ValueHere</e91:MinImpressionsPerWeek>
+              <e91:MaxImpressionsPerWeek>ValueHere</e91:MaxImpressionsPerWeek>
+              <e91:CTR>ValueHere</e91:CTR>
+              <e91:MinTotalCostPerWeek>ValueHere</e91:MinTotalCostPerWeek>
+              <e91:MaxTotalCostPerWeek>ValueHere</e91:MaxTotalCostPerWeek>
+              <e91:CurrencyCode>ValueHere</e91:CurrencyCode>
+              <e91:EstimatedAdPosition>ValueHere</e91:EstimatedAdPosition>
+            </e91:EstimatedPositionAndTraffic>
+          </e91:EstimatedPositions>
+        </e91:KeywordEstimatedPosition>
       </KeywordEstimatedPositions>
     </GetEstimatedPositionByKeywordsResponse>
   </s:Body>

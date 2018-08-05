@@ -15,6 +15,9 @@ You can target customers by age so that your ads are displayed more frequently t
 
 Each age criterion defines an age range for the accompanying criterion bid adjustment. 
 
+> [!TIP]
+> For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
+
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For an *Ad Group Age Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
@@ -161,9 +164,9 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status
-Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*, and otherwise the value is *Deleted*.
+Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*. To delete the criterion, set the status to *Deleted*.
 
-**Add:** Read-only  
+**Add:** Read-only. The status will always be set to *Active* when you add criterions. If you upload another value e.g., *Foo* the result file will contain the same value although the criterion is active.  
 **Update:** Optional  
 **Delete:** Required. The Status must be set to *Deleted*. To delete a specific age criterion bid, you must upload the *Status*, *Id*, and *Parent Id*.
 

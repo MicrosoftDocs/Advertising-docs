@@ -23,7 +23,7 @@ Defines an object that contains the requested bid landscape type for the corresp
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupbidlandscapetype"></a>AdGroupBidLandscapeType|Determines whether all or a subset of an ad group's existing keywords should be used to determine the bid landscape.<br /><br />If not specified in a request, the default value is Uniform.|[AdGroupBidLandscapeType](adgroupbidlandscapetype.md)|
+|<a name="adgroupbidlandscapetype"></a>AdGroupBidLandscapeType|Determines whether all or a subset of an ad group's existing keywords should be used to determine the bid landscape.<br/><br/>If not specified in a request, the default value is Uniform.|[AdGroupBidLandscapeType](adgroupbidlandscapetype.md)|
 |<a name="adgroupid"></a>AdGroupId|The ad group identifier.|**long**|
 
 ## Requirements

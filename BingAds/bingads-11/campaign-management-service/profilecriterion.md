@@ -32,8 +32,8 @@ The *ProfileCriterion* criterion can be included within an [AdGroupCriterion](ad
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="profileid"></a>ProfileId|The identifier of the audience profile that you want to target.<br/><br/>To download profile identifiers by [ProfileType](#profiletype) call the [GetProfileDataFileUrl](getprofiledatafileurl.md) operation via the Campaign Management API.<br /><br />**Add:** Required<br/>**Update:** Required|**long**|
-|<a name="profiletype"></a>ProfileType|Determines whether the profile criterion corresponds to a company name, industry, or job function.<br /><br />**Add:** Required<br/>**Update:** Required|[ProfileType](profiletype.md)|
+|<a name="profileid"></a>ProfileId|The identifier of the audience profile that you want to target.<br/><br/>To download profile identifiers by [ProfileType](#profiletype) call the [GetProfileDataFileUrl](getprofiledatafileurl.md) operation via the Campaign Management API.<br/><br/>**Add:** Required<br/>**Update:** Required|**long**|
+|<a name="profiletype"></a>ProfileType|Determines whether the profile criterion corresponds to a company name, industry, or job function.<br/><br/>**Add:** Required<br/>**Update:** Required|[ProfileType](profiletype.md)|
 
 The [ProfileCriterion](profilecriterion.md) object has [Inherited Elements](#inheritedelements).
 

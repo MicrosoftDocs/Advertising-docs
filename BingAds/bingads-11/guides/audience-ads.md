@@ -89,10 +89,10 @@ Multiple product conditions can be specified for each Audience campaign. Each co
 
 |Operand Name|Attribute Description|ProductScope Rules|
 |----------------|-------------------------|----------------------|
-|Brand|The product's manufacturer, brand, or publisher.<br /><br />A maximum of 1,000 characters.|The *Brand* operand may only be specified once per campaign product scope filter.|
-|Condition|The condition of the product.<br /><br />If *Operand* is set to Condition, the supported attribute values that you can specify are *New*, *Used*, and *Refurbished*.|The *Condition* operand may only be specified once per campaign product scope filter.|
-|ProductType1-5<br /><br />Five product type operand values are available i.e. ProductType1, ProductType2, ProductType3, ProductType4, and ProductType5.|A product type or category defined by the merchant.<br /><br />ProductType1 is the highest level product type, and ProductType5 is the lowest level or most granular product type.<br /><br />A maximum of 100 characters.|Each of the product type operands may be used once per campaign product scope filter.<br /><br />If you specify a product condition with *Operand* set to a product type from 1 through 5,<br />they must be specified in ascending order. For example you can specify *Operand="ProductType2"*, *Attribute="Pet Supplies"*, if a preceding product condition has the *Operand="ProductType1"*, *Attribute="Animals & Pet Supplies"* condition.|
-|CustomLabel0-4<br /><br />Five custom label operand values are available i.e. CustomLabel0, CustomLabel1, CustomLabel2, CustomLabel3, and CustomLabel4.|A custom label defined by the merchant.<br /><br />Custom labels e.g. CustomLabel0 and CustomLabel4 are not validated based on any hierarchy.<br /><br />A maximum of 100 characters.|Each of the *CustomLabel* operands may be used once per campaign product scope filter.|
+|Brand|The product's manufacturer, brand, or publisher.<br/><br/>A maximum of 1,000 characters.|The *Brand* operand may only be specified once per campaign product scope filter.|
+|Condition|The condition of the product.<br/><br/>If *Operand* is set to Condition, the supported attribute values that you can specify are *New*, *Used*, and *Refurbished*.|The *Condition* operand may only be specified once per campaign product scope filter.|
+|ProductType1-5<br/><br/>Five product type operand values are available i.e. ProductType1, ProductType2, ProductType3, ProductType4, and ProductType5.|A product type or category defined by the merchant.<br/><br/>ProductType1 is the highest level product type, and ProductType5 is the lowest level or most granular product type.<br/><br/>A maximum of 100 characters.|Each of the product type operands may be used once per campaign product scope filter.<br/><br/>If you specify a product condition with *Operand* set to a product type from 1 through 5,<br/>they must be specified in ascending order. For example you can specify *Operand="ProductType2"*, *Attribute="Pet Supplies"*, if a preceding product condition has the *Operand="ProductType1"*, *Attribute="Animals & Pet Supplies"* condition.|
+|CustomLabel0-4<br/><br/>Five custom label operand values are available i.e. CustomLabel0, CustomLabel1, CustomLabel2, CustomLabel3, and CustomLabel4.|A custom label defined by the merchant.<br/><br/>Custom labels e.g. CustomLabel0 and CustomLabel4 are not validated based on any hierarchy.<br/><br/>A maximum of 100 characters.|Each of the *CustomLabel* operands may be used once per campaign product scope filter.|
 
 ## <a name="search-campaigns"></a>Search Campaigns
 For convenience, Audience ads are also available as an extension of search network via image ad extensions, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Audience ads on the search network are created automatically by Bing Ads leveraging all of your Bing Ads creative elements including ad title, text, URL, and ad extensions including image extensions. The ads created using the search creative assets are then displayed to the user in native placements depending upon the surface area e.g. if a user is reading an email in Outlook then the placement will be native to the inbox environment versus if the user is clicking through a slideshow on MSN, then the ad will match the slideshow look and feel. This kind of native placement enhances user experience and delivers better engagement with the campaign. 
@@ -109,11 +109,11 @@ The [Bulk Service](../bulk-service/bulk-service-reference.md) service create, up
 
 These are the Bing Ads entities with properties for managing Audience ads that can be accessed using the [Bulk Service](../bulk-service/bulk-service-reference.md). Use the *Bid Adjustment* column of the following records to get and set the Audience Ads bid adjustment.
 
--   [Campaign](../bulk-service/campaign.md)  
--   [Ad Group](../bulk-service/ad-group.md)  
--   [Image Ad Extension](../bulk-service/image-ad-extension.md)  
--   [Campaign Image Ad Extension](../bulk-service/campaign-image-ad-extension.md)  
--   [Ad Group Image Ad Extension](../bulk-service/ad-group-image-ad-extension.md)  
+- [Campaign](../bulk-service/campaign.md)  
+- [Ad Group](../bulk-service/ad-group.md)  
+- [Image Ad Extension](../bulk-service/image-ad-extension.md)  
+- [Campaign Image Ad Extension](../bulk-service/campaign-image-ad-extension.md)  
+- [Ad Group Image Ad Extension](../bulk-service/ad-group-image-ad-extension.md)  
 
 For example you can follow these steps to set up an image ad extension for audience ads.
 

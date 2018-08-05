@@ -24,7 +24,7 @@ Defines a paging object for the list of insertion orders returned using the [Sea
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="index"></a>Index|The zero-based results page index. For example to request the first page of results, set this value to 0 (zero).|**int**|
-|<a name="size"></a>Size|The page size and the number of results to return in the specified page.<br /><br />The maximum size is 1,000.|**int**|
+|<a name="size"></a>Size|The page size and the number of results to return in the specified page.<br/><br/>The maximum size is 1,000.|**int**|
 
 ## Requirements
 Service: [CustomerBillingService.svc v11](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v11/CustomerBillingService.svc)  

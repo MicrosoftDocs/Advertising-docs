@@ -21,7 +21,7 @@ The *GetCampaignCriterionsByIdsRequest* object defines the [body](#request-body)
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="campaigncriterionids"></a>CampaignCriterionIds|A list of unique identifiers that identify the campaign criterions to get.<br/><br/>You can include up to 100 campaign criterion identifiers per request.<br /><br />If this element is null, all criterions for the specified *CampaignId* will be retrieved.|**long** array|
+|<a name="campaigncriterionids"></a>CampaignCriterionIds|A list of unique identifiers that identify the campaign criterions to get.<br/><br/>You can include up to 100 campaign criterion identifiers per request.<br/><br/>If this element is null, all criterions for the specified *CampaignId* will be retrieved.|**long** array|
 |<a name="campaignid"></a>CampaignId|The unique identifier of the campaign whose criterions you want to get.|**long**|
 |<a name="criteriontype"></a>CriterionType|The type of criterion to get, for example *Webpage*. You can specify only one type. The *Targets* value is not allowed for this operation.|[CampaignCriterionType](campaigncriteriontype.md)|
 
@@ -36,7 +36,7 @@ The *GetCampaignCriterionsByIdsResponse* object defines the [body](#response-bod
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="campaigncriterions"></a>CampaignCriterions|The list of campaign criterions that correspond directly to the identifiers specified in the request. Items of the list may be returned as null. For each list index where a criterion was not retrieved, the corresponding element will be null.|[CampaignCriterion](campaigncriterion.md) array|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br /><br />The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any request items that were not successful.<br/><br/>The list of errors do not correspond directly to the list of items in the request. The list can be empty if there were no errors, or can include one or more error objects corresponding to each unsuccessful list item in the request.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

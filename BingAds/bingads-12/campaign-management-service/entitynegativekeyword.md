@@ -25,7 +25,7 @@ Defines an object that contains a set of negative keywords that are only associa
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="entityid"></a>EntityId|The system-generated identifier of a campaign or ad group that is associated with the negative keywords.|**long**|
-|<a name="entitytype"></a>EntityType|The type of entity such as a campaign that is associated with the negative keywords.<br /><br />The possible values are *AdGroup* and *Campaign*.|**string**|
+|<a name="entitytype"></a>EntityType|The type of entity such as a campaign that is associated with the negative keywords.<br/><br/>The possible values are *AdGroup* and *Campaign*.|**string**|
 |<a name="negativekeywords"></a>NegativeKeywords|An array of negative keywords that are associated with the corresponding campaign or ad group.|[NegativeKeyword](negativekeyword.md) array|
 
 ## Requirements

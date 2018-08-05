@@ -17,6 +17,9 @@ Each day and time criterion defines the day, from hour, from minute, to hour, an
 
 The maximum number of day and time criterions that you can specify per campaign or ad group is 49. You may not specify any overlapping day and time ranges, for example Monday from 3:00AM to 5:00AM and Monday 4:00AM to 6:00AM are not allowed for the same campaign or ad group. Also for a given campaign or ad group, the maximum number of day and time criterions per day that you can specify is seven. For example you can specify up to 7 day and time criterions where the *Day* is set to Monday.
 
+> [!TIP]
+> For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
+
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Campaign DayTime Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
@@ -182,9 +185,9 @@ This bulk field maps to the *Id* field of the [Campaign](campaign.md) record.
 **Delete:** Read-only and Required  
 
 ### <a name="status"></a>Status
-Represents the association status between the campaign and the criterion. If the criterion is applied to the campaign, this field's value is *Active*, and otherwise the value is *Deleted*.
+Represents the association status between the campaign and the criterion. If the criterion is applied to the campaign, this field's value is *Active*. To delete the criterion, set the status to *Deleted*.
 
-**Add:** Read-only  
+**Add:** Read-only. The status will always be set to *Active* when you add criterions. If you upload another value e.g., *Foo* the result file will contain the same value although the criterion is active.  
 **Update:** Optional  
 **Delete:** Required. The Status must be set to *Deleted*. To delete a specific day and time criterion bid, you must upload the *Status*, *Id*, and *Parent Id*.
 

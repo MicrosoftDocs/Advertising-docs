@@ -40,7 +40,7 @@ Defines the possible positions of an ad in the search results.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="aggregate"></a>Aggregate|Aggregates the data for all supported positions.<br /><br />The following are examples of how the data is aggregated: Average bid would be the average bid of all the keywords in all the ad positions; Impressions is the sum of the number of impressions in all the ad positions; Clicks is the sum of the number of clicks in all the ad positions; Total cost is the sum of the cost of using the keywords in all the ad positions; AverageCTR is calculated by dividing the number of clicks by the number of impressions and multiplying the result by 100; AverageCPC is calculated by dividing the cost of all clicks by the number of clicks.|
+|<a name="aggregate"></a>Aggregate|Aggregates the data for all supported positions.<br/><br/>The following are examples of how the data is aggregated: Average bid would be the average bid of all the keywords in all the ad positions; Impressions is the sum of the number of impressions in all the ad positions; Clicks is the sum of the number of clicks in all the ad positions; Total cost is the sum of the cost of using the keywords in all the ad positions; AverageCTR is calculated by dividing the number of clicks by the number of impressions and multiplying the result by 100; AverageCPC is calculated by dividing the cost of all clicks by the number of clicks.|
 |<a name="all"></a>All|Indicates all search result positions.|
 |<a name="firstpage1"></a>FirstPage1|The first ad to appear on the right side of the first search results page.|
 |<a name="firstpage10"></a>FirstPage10|The tenth ad to appear on the right side of the first search results page.|

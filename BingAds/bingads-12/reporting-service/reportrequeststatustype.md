@@ -26,7 +26,7 @@ Defines the status of a report.
 |-----------|---------------|
 |<a name="error"></a>Error|An error occurred while generating the report. You will need to submit your report request again. If the request continues to fail, consider getting the tracking identifier from the response message and contacting support.|
 |<a name="pending"></a>Pending|The report is not yet complete.|
-|<a name="success"></a>Success|The report was successfully completed.<br /><br />The report can be downloaded from the URL contained in the *ReportDownloadUrl* element of the [ReportRequestStatus](reportrequeststatus.md) object.|
+|<a name="success"></a>Success|The report was successfully completed.<br/><br/>The report can be downloaded from the URL contained in the *ReportDownloadUrl* element of the [ReportRequestStatus](reportrequeststatus.md) object.|
 
 ## Requirements
 Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  

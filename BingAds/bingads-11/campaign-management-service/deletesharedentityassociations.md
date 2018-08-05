@@ -21,7 +21,7 @@ The *DeleteSharedEntityAssociationsRequest* object defines the [body](#request-b
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="associations"></a>Associations|An array of objects that associate a negative keyword list and an entity such as a campaign.<br /><br />This array can contain a maximum of 10,000 elements.|[SharedEntityAssociation](sharedentityassociation.md) array|
+|<a name="associations"></a>Associations|An array of objects that associate a negative keyword list and an entity such as a campaign.<br/><br/>This array can contain a maximum of 10,000 elements.|[SharedEntityAssociation](sharedentityassociation.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -33,7 +33,7 @@ The *DeleteSharedEntityAssociationsResponse* object defines the [body](#response
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any associations that were not successfully deleted.<br /><br />The list of errors corresponds directly to the list of associations in the request. Items of the list may be returned as null. For each list index where an association was successfully deleted, the corresponding error element will be null. Ideally all associations are deleted successfully and all elements in this list are null.|[BatchError](batcherror.md) array|
+|<a name="partialerrors"></a>PartialErrors|An array of [BatchError](batcherror.md) objects that contain details for any associations that were not successfully deleted.<br/><br/>The list of errors corresponds directly to the list of associations in the request. Items of the list may be returned as null. For each list index where an association was successfully deleted, the corresponding error element will be null. Ideally all associations are deleted successfully and all elements in this list are null.|[BatchError](batcherror.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

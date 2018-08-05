@@ -29,10 +29,10 @@ The following are the possible languages that you may use to write your ads and 
 |German|DE|
 |Italian|IT|
 |Norwegian|NO|
-|Portuguese|PT<br /><br />This code differs from the ISO standard for Brazilian Portuguese, PTB.|
+|Portuguese|PT<br/><br/>This code differs from the ISO standard for Brazilian Portuguese, PTB.|
 |Spanish|ES|
 |Swedish|SV|
-|TraditionalChinese<br /><br />You must use *TraditionalChinese* (without space) when setting the language of a campaign or ad group.<br /><br />You must use *Traditional Chinese* (with space) when setting request elements using the Ad Insight Service.|ZH|
+|TraditionalChinese<br/><br/>You must use *TraditionalChinese* (without space) when setting the language of a campaign or ad group.<br/><br/>You must use *Traditional Chinese* (with space) when setting request elements using the Ad Insight Service.|ZH|
 		
 ## <a name="productlanguage"></a>Product Language
 Your [customer](../customer-management-service/customer.md) language determines the language of the Bing Ads interface. 

@@ -28,7 +28,7 @@ Defines the possible status values of a user.
 |<a name="active"></a>Active|The user is active.|
 |<a name="deleted"></a>Deleted|Reserved for internal use. The user was deleted.|
 |<a name="inactive"></a>Inactive|Reserved for internal use. The user was disabled by the system.|
-|<a name="pending"></a>Pending|The user is a new user who has not been activated. The user is sent notification about how to activate the account. After the user activates the account, the status changes to Active.<br/><br/> This status is deprecated and is only applicable for managed user credentials, and not for Microsoft account (MSA) users. |
+|<a name="pending"></a>Pending|The user is a new user who has not been activated. The user is sent notification about how to activate the account. After the user activates the account, the status changes to Active.<br/><br/>This status is deprecated and is only applicable for managed user credentials, and not for Microsoft account (MSA) users. |
 
 ## Requirements
 Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  

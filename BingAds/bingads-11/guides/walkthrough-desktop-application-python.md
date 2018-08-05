@@ -30,11 +30,11 @@ Name your application **ConsoleGettingStarted** and click **OK**.
 ## Create virtual environment
 We'll create a virtual environment for local development. In your project right-click on **Python Environments** and select **Add Virtual Environment**.
 
--   Make sure the name of the environment is **env**.
+- Make sure the name of the environment is **env**.
 
--   Select the base Python interpreter e.g. **Python 2.7**
+- Select the base Python interpreter e.g. **Python 2.7**
 
--   Make sure the option to **Download and install packages** is checked.
+- Make sure the option to **Download and install packages** is checked.
 
 ![Add virtual env](media/pythonsdk-ptvs-addvirtualenv.png "Add virtual env")
 

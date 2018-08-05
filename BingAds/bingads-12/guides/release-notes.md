@@ -9,6 +9,35 @@ description: Get information about the changes to the Bing Ads services for each
 # Bing Ads API Release Notes
 For information about the changes to the Bing Ads Version 12 services for each month, see the following sections. 
 
+## <a name="august2018"></a>August 2018
+For information about this month's changes to Bing Ads services, see the following sections.
+ 
+- [Customer Address](#customeraddress-august2018)  
+- [Entity Attributes for the Change History Report](#changehistoryreportentity-august2018)  
+- [Profile Criteria for Campaigns](#campaignprofilecriteria-august2018)  
+- [Similar Audiences for Remarketing Lists](#similaraudiences-august2018)  
+
+### <a name="customeraddress-august2018"></a>Customer Address
+The [CustomerAddress](../customer-management-service/customer.md#customeraddress) element is added back to the [Customer](../customer-management-service/customer.md) object. This element had been removed during the transition from Bing Ads API Version 11 to Version 12. Although you must set the account [BusinessAddress](../customer-management-service/advertiseraccount.md#businessaddress), the customer address is optional if your application has a dependency on it. Bing Ads does not use the customer address, and instead uses the account business address. 
+
+### <a name="changehistoryreportentity-august2018"></a>Entity Attributes for the Change History Report
+The [EntityId](../reporting-service/searchcampaignchangehistoryreportcolumn.md#entityid) and [EntityName](../reporting-service/searchcampaignchangehistoryreportcolumn.md#entityname) elements are added to the [SearchCampaignChangeHistoryReportColumn](../reporting-service/searchcampaignchangehistoryreportcolumn.md) value set. 
+
+### <a name="campaignprofilecriteria-august2018"></a>Profile Criteria for Campaigns
+Professional profile targeting via LinkedIn is coming soon to Dynamic Search Ads, Search, and Shopping campaigns. 
+
+The Campaign Management service is updated to support the new campaign level profile criterion types i.e., the [CompanyName](../campaign-management-service/campaigncriteriontype.md#companyname), [Industry](../campaign-management-service/campaigncriteriontype.md#industry), and [JobFunction](../campaign-management-service/campaigncriteriontype.md#jobfunction) values are added to the [CampaignCriterionType](../campaign-management-service/campaigncriteriontype.md) value set. Use the existing [BiddableCampaignCriterion](../campaign-management-service/biddablecampaigncriterion.md) object with the corresponding operations e.g., [AddCampaignCriterions](../campaign-management-service/addcampaigncriterions.md) to manage campaign level criterions. The Campaign Management service already includes definitions for ad group level profile criterion types via the [AdGroupCriterionType](../campaign-management-service/adgroupcriteriontype.md) value set. Use the existing [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) object with the corresponding operations e.g., [AddAdGroupCriterions](../campaign-management-service/addadgroupcriterions.md) to manage ad group level criterions. 
+
+The Bulk service is updated to support the new profile criterion types i.e., upload and download the [Campaign Company Name Criterion](../bulk-service/campaign-company-name-criterion.md), [Campaign Industry Criterion](../bulk-service/campaign-industry-criterion.md), and [Campaign Job Function Criterion](../bulk-service/campaign-job-function-criterion.md) records in a Bulk file. Use the existing [CampaignTargetCriterions](../bulk-service/downloadentity.md#campaigntargetcriterions) value flag for Bulk download. The Bulk service already includes definitions for ad group level profile criterion types via the [Ad Group Company Name Criterion](../bulk-service/ad-group-company-name-criterion.md), [Ad Group Industry Criterion](../bulk-service/ad-group-industry-criterion.md), and [Ad Group Job Function Criterion](../bulk-service/ad-group-job-function-criterion.md) records in a Bulk file. Use the existing [AdGroupTargetCriterions](../bulk-service/downloadentity.md#adgrouptargetcriterions) value flag for Bulk download.  
+
+### <a name="similaraudiences-august2018"></a>Similar Audiences for Remarketing Lists
+Similar audiences for remarketing lists is coming soon. Bing Ads will automatically generate similar audiences for remarketing lists for pilot participants. You cannot create or edit the similar audiences for remarketing lists. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with an ad group, then you cannot delete the source remarketing list.
+
+The Campaign Management service is updated to support similar audiences for remarketing i.e., the [SimilarRemarketingList](../campaign-management-service/similarremarketinglist.md) object. Use the existing [GetAudiencesByIds](../campaign-management-service/getaudiencesbyids.md) operation to retrieve the similar audiences. Use the existing [AddAdGroupCriterions](../campaign-management-service/addadgroupcriterions.md), [DeleteAdGroupCriterions](../campaign-management-service/deleteadgroupcriterions.md), [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md), and [UpdateAdGroupCriterions](../campaign-management-service/updateadgroupcriterions.md) operations to manage ad group level associations for the similar audiences. 
+
+> [!NOTE]
+> Bulk service support for similar audiences for remarketing lists is coming soon. 
+
 ## <a name="july2018"></a>July 2018
 For information about this month's changes to Bing Ads services, see the following sections.
 

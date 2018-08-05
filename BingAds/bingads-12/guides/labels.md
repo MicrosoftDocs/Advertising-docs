@@ -24,15 +24,15 @@ You can use the [Bulk Service](../bulk-service/bulk-service-reference.md) i.e., 
 
 The following Bulk records are available for managing labels and label associations. 
 
--   [Label](../bulk-service/label.md)  
--   [Campaign Label](../bulk-service/campaign-label.md)  
--   [Ad Group Label](../bulk-service/ad-group-label.md)  
--   [Keyword Label](../bulk-service/keyword-label.md)  
--   [App Install Ad Label](../bulk-service/app-install-ad-label.md)  
--   [Dynamic Search Ad Label](../bulk-service/dynamic-search-ad-label.md)  
--   [Expanded Text Ad Label](../bulk-service/expanded-text-ad-label.md)  
--   [Product Ad Label](../bulk-service/product-ad-label.md)  
--   [Text Ad Label](../bulk-service/text-ad-label.md)  
+- [Label](../bulk-service/label.md)  
+- [Campaign Label](../bulk-service/campaign-label.md)  
+- [Ad Group Label](../bulk-service/ad-group-label.md)  
+- [Keyword Label](../bulk-service/keyword-label.md)  
+- [App Install Ad Label](../bulk-service/app-install-ad-label.md)  
+- [Dynamic Search Ad Label](../bulk-service/dynamic-search-ad-label.md)  
+- [Expanded Text Ad Label](../bulk-service/expanded-text-ad-label.md)  
+- [Product Ad Label](../bulk-service/product-ad-label.md)  
+- [Text Ad Label](../bulk-service/text-ad-label.md)  
 
 For example, the following Bulk CSV example would apply a label to the campaign, ad group, keyword, and expanded text ad if the valid *Id* and *Parent Id* are provided. 
 
@@ -50,16 +50,16 @@ Keyword Label,Active,-22,-11113,,,ClientIdGoesHere,,,,,
 You can use the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md) to create, get, update, and delete both labels and label associations. 
 
 You can add, delete, get, and update labels ([Label](../campaign-management-service/label.md) objects) with the corresponding operations.
--  [AddLabels](../campaign-management-service/addlabels.md)  
--  [DeleteLabels](../campaign-management-service/deletelabels.md)  
--  [GetLabelsByIds](../campaign-management-service/getlabelsbyids.md)  
--  [UpdateLabels](../campaign-management-service/updatelabels.md)  
+- [AddLabels](../campaign-management-service/addlabels.md)  
+- [DeleteLabels](../campaign-management-service/deletelabels.md)  
+- [GetLabelsByIds](../campaign-management-service/getlabelsbyids.md)  
+- [UpdateLabels](../campaign-management-service/updatelabels.md)  
 
 You can set, get, and delete label associations ([LabelAssociation](../campaign-management-service/labelassociation.md) objects) with the corresponding operations.
--  [DeleteLabelAssociations](../campaign-management-service/deletelabelassociations.md)  
--  [GetLabelAssociationsByEntityIds](../campaign-management-service/getlabelassociationsbyentityids.md)  
--  [GetLabelAssociationsByLabelIds](../campaign-management-service/getlabelassociationsbylabelids.md)  
--  [SetLabelAssociations](../campaign-management-service/setlabelassociations.md)  
+- [DeleteLabelAssociations](../campaign-management-service/deletelabelassociations.md)  
+- [GetLabelAssociationsByEntityIds](../campaign-management-service/getlabelassociationsbyentityids.md)  
+- [GetLabelAssociationsByLabelIds](../campaign-management-service/getlabelassociationsbylabelids.md)  
+- [SetLabelAssociations](../campaign-management-service/setlabelassociations.md)  
 
 
 

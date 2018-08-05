@@ -29,7 +29,7 @@ The following are the possible languages that you may use to write your ads and 
 |German|DE|
 |Italian|IT|
 |Norwegian|NO|
-|Portuguese|PT<br /><br />This code differs from the ISO standard for Brazilian Portuguese, PTB.|
+|Portuguese|PT<br/><br/>This code differs from the ISO standard for Brazilian Portuguese, PTB.|
 |Spanish|ES|
 |Swedish|SV|
 |TraditionalChinese|ZH|
@@ -73,8 +73,8 @@ Countdown customizers let you easily add a countdown (by day, hour, and then min
 |ES|Spanish|8|
 |ES-419|Spanish|8|
 |SV|Swedish|8|
-|zh-HK|Traditional Chinese|7|
-|zh-TW|Traditional Chinese|7|
+|zh-HK|TraditionalChinese|7|
+|zh-TW|TraditionalChinese|7|
 
 
 ## <a name="structuredsnippetheaders"></a>Structured Snippet Headers

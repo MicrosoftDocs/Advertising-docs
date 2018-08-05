@@ -26,7 +26,7 @@ The URL search parameter that you can use as a seed for new keyword ideas.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="url"></a>Url|The URL of your website or a page on your website.<br/><br/> Bing Ads extracts keywords from the HTML code on your website or landing page. If your HTML code contains Javascript, which generates content at runtime, Bing Ads will not extract keywords rendered from the Javascript and you'll see fewer or no keywords.|**string**|
+|<a name="url"></a>Url|The URL of your website or a page on your website.<br/><br/>Bing Ads extracts keywords from the HTML code on your website or landing page. If your HTML code contains Javascript, which generates content at runtime, Bing Ads will not extract keywords rendered from the Javascript and you'll see fewer or no keywords.|**string**|
 
 ## Requirements
 Service: [AdInsightService.svc v12](https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc)  

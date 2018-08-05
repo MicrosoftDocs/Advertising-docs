@@ -26,6 +26,13 @@ Defines a customer object that contains one or more Bing Ads accounts.
     <xs:element minOccurs="0" name="CustomerLifeCycleStatus" nillable="true" type="tns:CustomerLifeCycleStatus" />
     <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
     <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+    <xs:element minOccurs="0" name="CustomerAddress" nillable="true" type="tns:Address">
+      <xs:annotation>
+        <xs:appinfo>
+          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:element>
   </xs:sequence>
 </xs:complexType>
 ```
@@ -34,13 +41,14 @@ Defines a customer object that contains one or more Bing Ads accounts.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
+|<a name="customeraddress"></a>CustomerAddress|The customer's business address.<br/><br/>This property is not used by Bing Ads, and you must set the account business address instead.<br/><br/>This element is not returned by default (not even a nil element in the response message). To retrieve this element you must set the optional *IncludeCustomerAddress* element to *True* when calling the [GetCustomer](getcustomer.md) and [SearchCustomers](searchcustomers.md) operations.<br/><br/>**Add:** Optional<br/>**Update:** Optional|[Address](address.md)|
 |<a name="customerfinancialstatus"></a>CustomerFinancialStatus|The financial status of the customer. For example, the status indicates whether the customer is in good standing or one or more of the accounts are past due.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[CustomerFinancialStatus](customerfinancialstatus.md)|
 |<a name="customerlifecyclestatus"></a>CustomerLifeCycleStatus|The status of the customer. When you create the customer, the status is set to *Active*. You cannot change the status.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[CustomerLifeCycleStatus](customerlifecyclestatus.md)|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br />Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
-|<a name="id"></a>Id|The system generated customer identifier.<br /><br />Use this identifier with operation requests that require a *CustomerId* SOAP header element.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**long**|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br/><br/>Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="id"></a>Id|The system generated customer identifier.<br/><br/>Use this identifier with operation requests that require a *CustomerId* SOAP header element.<br/><br/>**Add:** Read-only<br/>**Update:** Required|**long**|
 |<a name="industry"></a>Industry|The primary business segment of the customer, for example, automotive, food, or entertainment.<br/><br/>**Add:** Required<br/>**Update:** Required|[Industry](industry.md)|
 |<a name="lastmodifiedbyuserid"></a>LastModifiedByUserId|The identifier of the last user to update the customer's information.<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**long**|
-|<a name="lastmodifiedtime"></a>LastModifiedTime|The date and time that the customer information was last updated. The value is in Coordinated Universal Time (UTC).<br /><br />The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the **dateTime** entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**dateTime**|
+|<a name="lastmodifiedtime"></a>LastModifiedTime|The date and time that the customer information was last updated. The value is in Coordinated Universal Time (UTC).<br/><br/>The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the **dateTime** entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**dateTime**|
 |<a name="marketcountry"></a>MarketCountry|The primary country where the customer operates. For a list of customer market country code values, see [Product Language](../guides/ad-languages.md#productlanguage).<br/><br/>**Add:** Required<br/>**Update:** Read-only|**string**|
 |<a name="marketlanguage"></a>MarketLanguage|The primary language that the customer uses. Your customer market language determines the language of the Bing Ads interface. For a list of customer market language code values, see [Product Language](../guides/ad-languages.md#productlanguage).<br/><br/>**Add:** Required<br/>**Update:** Read-only|[LanguageType](languagetype.md)|
 |<a name="name"></a>Name|The name of the customer. The name can contain a maximum of 90 characters.<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|

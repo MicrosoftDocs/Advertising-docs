@@ -30,7 +30,7 @@ Defines the types of entities by which you can filter the report data.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="account"></a>Account|The report will include data for accounts that have been added or deleted, or that have had account elements updated.<br /><br /> The report will include all entity types not represented by other filter values, for example ad extensions.|
+|<a name="account"></a>Account|The report will include data for accounts that have been added or deleted, or that have had account elements updated.<br/><br/>The report will include all entity types not represented by other filter values, for example ad extensions.|
 |<a name="ad"></a>Ad|The report will include data for ads that have been added or deleted, or that have had ad elements updated.|
 |<a name="adgroup"></a>AdGroup|The report will include data for ad groups that have been added or deleted, or that have had ad group elements updated.|
 |<a name="campaign"></a>Campaign|The report will include data for campaigns that have been added or deleted, or that have had campaign elements updated.|

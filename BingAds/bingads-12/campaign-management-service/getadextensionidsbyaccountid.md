@@ -23,7 +23,7 @@ The *GetAdExtensionIdsByAccountIdRequest* object defines the [body](#request-bod
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the ad extensions to get.|**long**|
 |<a name="adextensiontype"></a>AdExtensionType|The types of ad extensions to get from the account. You can specify one or more types. For possible values, see [AdExtensionsTypeFilter](adextensionstypefilter.md).|[AdExtensionsTypeFilter](adextensionstypefilter.md)|
-|<a name="associationtype"></a>AssociationType|A value that filters the extensions based on whether they?re associated with a specific entity type. For possible values, see [AssociationType](associationtype.md).<br /><br /> To get all extensions including those not associated with any entity, set this element to NULL.|[AssociationType](associationtype.md)|
+|<a name="associationtype"></a>AssociationType|A value that filters the extensions based on whether they?re associated with a specific entity type. For possible values, see [AssociationType](associationtype.md).<br/><br/>To get all extensions including those not associated with any entity, set this element to NULL.|[AssociationType](associationtype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

@@ -38,7 +38,7 @@ For more information about managing negative keywords and negative keyword lists
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="id"></a>Id|The unique Bing Ads identifier of the negative keyword.<br/><br/>**Add:** Read-only|**long**|
-|<a name="matchtype"></a>MatchType|The type of match to compare the negative keyword and the user's search term.<br /><br />The supported values for a negative keyword are Exact and Phrase.<br/><br/>**Add:** Required|[MatchType](matchtype.md)|
+|<a name="matchtype"></a>MatchType|The type of match to compare the negative keyword and the user's search term.<br/><br/>The supported values for a negative keyword are Exact and Phrase.<br/><br/>**Add:** Required|[MatchType](matchtype.md)|
 |<a name="text"></a>Text|The negative keyword text. The text can contain a maximum of 100 characters.<br/><br/>**Add:** Required|**string**|
 
 The [NegativeKeyword](negativekeyword.md) object has [Inherited Elements](#inheritedelements).
@@ -50,7 +50,7 @@ The [NegativeKeyword](negativekeyword.md) object derives from the [SharedListIte
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *SharedListItem* object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br/><br/>Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *SharedListItem* object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="type"></a>Type|The type of the shared list item.  This value is *NegativeKeyword* when you retrieve a negative keyword. For more information about shared list item types, see [SharedListItem Data Object Remarks](sharedlistitem.md#remarks).<br/><br/>**Add:** Read-only|**string**|
 
 ## Requirements

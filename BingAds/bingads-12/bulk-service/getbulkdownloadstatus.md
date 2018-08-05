@@ -24,7 +24,7 @@ The *GetBulkDownloadStatusRequest* object defines the [body](#request-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="requestid"></a>RequestId|The identifier of the download request.<br /><br />The [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operations return this element as the *DownloadRequestId*.|**string**|
+|<a name="requestid"></a>RequestId|The identifier of the download request.<br/><br/>The [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operations return this element as the *DownloadRequestId*.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -37,10 +37,10 @@ The *GetBulkDownloadStatusResponse* object defines the [body](#response-body) an
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="errors"></a>Errors|An array of *OperationError* objects corresponding to errors encountered during the system processing of the bulk file after your download request was submitted.|[OperationError](operationerror.md) array|
-|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br /><br /> Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *GetBulkDownloadStatusResponse* message object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
+|<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br/><br/>Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for the *GetBulkDownloadStatusResponse* message object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="percentcomplete"></a>PercentComplete|The progress completion percentage for system processing of the bulk download file.|**int**|
-|<a name="requeststatus"></a>RequestStatus|The status of the download. The possible values are as follows.<br /><br />Completed - The download completed successfully.<br /><br />InProgress - The download is in progress.<br /><br />Failed - The download failed. You may submit a new download with fewer entities, without quality score and bid suggestions data, or try again to submit the same download later.<br /><br />FailedFullSyncRequired - The request's *LastSyncTimeInUTC* element must be set to null, for example if the specified account was included in a data migration. After requesting a full download, you may begin requesting delta downloads again.|**string**|
-|<a name="resultfileurl"></a>ResultFileUrl|The URL that contains the download data. This element contains the URL when the *Status* element is *Success*.<br /><br /> You have five minutes from the time that *GetBulkDownloadStatus* returns success to start downloading the file. If you do not start the download within this time period, you will need to call *GetBulkDownloadStatus* again to get a new URL.<br /><br />The download file is compressed (in zip format), so you must unzip the file to access the data.<br /><br />For information about the bulk file format, see [Bulk File Schema](bulk-file-schema.md).|**string**|
+|<a name="requeststatus"></a>RequestStatus|The status of the download. The possible values are as follows.<br/><br/>Completed - The download completed successfully.<br/><br/>InProgress - The download is in progress.<br/><br/>Failed - The download failed. You may submit a new download with fewer entities, without quality score and bid suggestions data, or try again to submit the same download later.<br/><br/>FailedFullSyncRequired - The request's *LastSyncTimeInUTC* element must be set to null, for example if the specified account was included in a data migration. After requesting a full download, you may begin requesting delta downloads again.|**string**|
+|<a name="resultfileurl"></a>ResultFileUrl|The URL that contains the download data. This element contains the URL when the *Status* element is *Success*.<br/><br/>You have five minutes from the time that *GetBulkDownloadStatus* returns success to start downloading the file. If you do not start the download within this time period, you will need to call *GetBulkDownloadStatus* again to get a new URL.<br/><br/>The download file is compressed (in zip format), so you must unzip the file to access the data.<br/><br/>For information about the bulk file format, see [Bulk File Schema](bulk-file-schema.md).|**string**|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]
@@ -83,11 +83,11 @@ This template was generated by a tool to show the order of the [body](#response-
           <Message d4p1:nil="false">ValueHere</Message>
         </OperationError>
       </Errors>
-      <ForwardCompatibilityMap xmlns:e116="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e116:KeyValuePairOfstringstring>
-          <e116:key d4p1:nil="false">ValueHere</e116:key>
-          <e116:value d4p1:nil="false">ValueHere</e116:value>
-        </e116:KeyValuePairOfstringstring>
+      <ForwardCompatibilityMap xmlns:e119="http://schemas.datacontract.org/2004/07/System.Collections.Generic" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e119:KeyValuePairOfstringstring>
+          <e119:key d4p1:nil="false">ValueHere</e119:key>
+          <e119:value d4p1:nil="false">ValueHere</e119:value>
+        </e119:KeyValuePairOfstringstring>
       </ForwardCompatibilityMap>
       <PercentComplete>ValueHere</PercentComplete>
       <RequestStatus d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">ValueHere</RequestStatus>

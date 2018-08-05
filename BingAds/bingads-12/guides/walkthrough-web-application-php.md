@@ -195,7 +195,7 @@ This example web application demonstrates OAuth authentication in production. Th
     ?>
     ```
 
-5. The application is ready to be deployed to a server. For example you can publish a [Web App](http://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](http://azure.microsoft.com/services/app-service/). 
+5. The application is ready to be deployed to a server with the [installed](get-started-php.md#installation) PHP client libraries. For example you can publish a [Web App](http://azure.microsoft.com/services/app-service/web/) using the [Azure App Service](http://azure.microsoft.com/services/app-service/). For more details see [Configure PHP in Azure App Service Web Apps](https://docs.microsoft.com/en-us/azure/app-service/web-sites-php-configure). 
 
 ## See Also
 [Bing Ads Code Examples](code-examples.md)  
