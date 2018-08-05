@@ -22,7 +22,7 @@ The *GetCustomerRequest* object defines the [body](#request-body) and [header](#
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="customerid"></a>CustomerId|The identifier of the customer whose information you want to get.|**long**|
-|<a name="includecustomeraddress"></a>IncludeCustomerAddress|Determines whether or not to return the [Address](customer.md#address) element in the returned [Customer](customer.md) object.<br/><br/>If this element is set *True* then the address will be returned, and otherwise it will not be included in the response (not even a nil Address element).|**boolean**|
+|<a name="includecustomeraddress"></a>IncludeCustomerAddress|Determines whether or not to return the [Address](customer.md#customeraddress) element in the returned [Customer](customer.md) object.<br/><br/>If this element is set *True* then the address will be returned, and otherwise it will not be included in the response (not even a nil Address element).|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
