@@ -101,7 +101,7 @@ Sets the ad group's custom parameters to use in final URLs or tracking templates
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|A map of up to three custom parameters to apply to the ad group. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value. The name may contain a maximum of 60 bytes and the value may contain a maximum of 200 bytes.
+customParameters|Object|A map of up to three custom parameters to apply to the ad group. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value. The name may contain a maximum of 16 8-byte characters and the value may contain a maximum of 200 8-byte characters.
 
 ### Returns
 |Type|Description|

@@ -66,7 +66,7 @@ To clear the custom parameters from the ad group, pass an empty object (for exam
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|A map of up to three custom parameters to use in the ad group. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value. The parameter's name may contain only alphanumeric characters and the parameter's value may not contain white space. The name may contain a maximum of 60 bytes and the value may contain a maximum of 200 bytes.
+customParameters|Object|A map of up to three custom parameters to use in the ad group. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value. The parameter's name may contain only alphanumeric characters and the parameter's value may not contain white space. The name may contain a maximum of 16 8-byte characters and the value may contain a maximum of 200 8-byte characters.
 
 ### Returns
 |Type|Description|
