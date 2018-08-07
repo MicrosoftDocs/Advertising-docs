@@ -69,8 +69,8 @@
           href: ./reference/AdGroupUrls.md 
         - name: AdIterator
           href: ./reference/AdIterator.md 
-        - name: AdOperator
-          href: ./reference/AdOperator.md 
+        - name: AdOperation
+          href: ./reference/AdOperation.md 
         - name: AdParam
           href: ./reference/AdParam.md 
         - name: AdParamIterator
