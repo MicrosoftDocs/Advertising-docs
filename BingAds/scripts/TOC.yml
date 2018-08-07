@@ -39,6 +39,8 @@
   items:
     - name: Ad Groups
       href: examples/adgroups.md 
+    - name: Ads
+      href: examples/ads.md 
     - name: Campaigns
       href: examples/campaigns.md 
     - name: Keywords
@@ -49,6 +51,10 @@
     - name: Single account  
       href: ./reference/BingAdsApp.md 
       items:
+        - name: Ad
+          href: ./reference/Ad.md 
+        - name: AdBuilderSpace
+          href: ./reference/AdBuilderSpace.md 
         - name: AdGroup
           href: ./reference/AdGroup.md 
         - name: AdGroupBidding
@@ -63,12 +69,24 @@
           href: ./reference/AdGroupSelector.md 
         - name: AdGroupUrls
           href: ./reference/AdGroupUrls.md 
+        - name: AdIterator
+          href: ./reference/AdIterator.md 
+        - name: AdOperator
+          href: ./reference/AdOperator.md 
         - name: AdParam
           href: ./reference/AdParam.md 
         - name: AdParamIterator
           href: ./reference/AdParamIterator.md 
         - name: AdParamSelector
           href: ./reference/AdParamSelector.md 
+        - name: AdSelector
+          href: ./reference/AdSelector.md 
+        - name: AdTypeSpace
+          href: ./reference/AdTypeSpace.md 
+        - name: AdUrls
+          href: ./reference/AdUrls.md 
+        - name: AdViewSpace
+          href: ./reference/AdViewSpace.md 
         - name: BingAdsApp
           href: ./reference/BingAdsApp.md 
         - name: BingAdsDate
@@ -83,6 +101,10 @@
           href: ./reference/CampaignSelector.md 
         - name: CampaignUrls
           href: ./reference/CampaignUrls.md 
+        - name: ExpandedTextAd
+          href: ./reference/ExpandedTextAd.md 
+        - name: ExpandedTextAdBuilder
+          href: ./reference/ExpandedTextAdBuilder.md 
         - name: Keyword
           href: ./reference/Keyword.md 
         - name: KeywordBidding

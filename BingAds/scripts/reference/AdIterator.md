@@ -10,9 +10,9 @@ ms.topic: "article"
 ---
 
 
-# AdGroupIterator
+# AdIterator
 
-Contains the methods for iterating through a list of ad. For information about iterators, see [Iterators](../concepts/iterators.md).
+Contains the methods for iterating through a list of ads. For information about iterators, see [Iterators](../concepts/iterators.md).
 
 
 
@@ -20,7 +20,7 @@ Contains the methods for iterating through a list of ad. For information about i
 |Method Name|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|Boolean|Gets a Boolean value that indicates whether the iterator has more elements.
-[next](#next)|[AdGroup](./AdGroup.md)|Advances the iterator and returns the next ad.
+[next](#next)|[Ad](./Ad.md)|Advances the iterator and returns the next ad.
 [totalNumEntities](#totalnumentities)|int|Gets the number of ads that matched the selector's selection criteria.
 
 ## <a name="hasnext"></a>hasNext
