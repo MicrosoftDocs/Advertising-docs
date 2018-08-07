@@ -13,9 +13,10 @@ ms.topic: "article"
 
 For information about changes that were included with each release, see the following sections.
 
+
 ## August 7, 2018
 
-Added the following methods and objects to support Ads.
+Added support for ads.
 
 - Added the `newAd` method to [AdGroup](reference/AdGroup.md). The method returns an [AdBuilderSpace](reference/AdBuilderSpace.md) object, which you use to get an ad builder.
   
@@ -45,3 +46,10 @@ Added the following methods and objects to support Ads.
 ## June 15, 2018
 
 Closed beta release. This release of Bing Ads Scripts is available to select participants only. For information about participating in the preview release program, please contact your account manager. The Scripts classes and documentation are subject to change.
+
+This initial release includes the following capabilities:
+
+- Core campaign management (campaigns, ad groups, keywords)
+- Performance data at entity-level (campaigns, ad groups, keywords)
+- Shared Negative Keyword Lists
+

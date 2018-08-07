@@ -10,7 +10,7 @@ ms.topic: "article"
 ---
 
 
-# AdGroupSelector
+# AdSelector
 
 Contains the methods for filtering and sorting the list of ads. For information about selectors, see [Selectors](../concepts/selectors.md).
 
@@ -18,13 +18,13 @@ Contains the methods for filtering and sorting the list of ads. For information 
 
 |Method Name|Return Type|Description|
 |-|-|-
-[forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-)|[AdGroupSelector](./AdGroupSelector.md)|Applies the start and end dates for selecting performance metrics.
-[forDateRange(string dateRange)](#fordaterange-string-daterange-)|[AdGroupSelector](./AdGroupSelector.md)|Applies the predefined date range for selecting performance metrics.
-[get](#get)|[AdGroupIterator](./AdGroupIterator.md)|Gets an iterator that you use to iterate through the list of ads.
-[orderBy(string orderBy)](#orderby-string-orderby-)|[AdGroupSelector](./AdGroupSelector.md)|Applies the specified ordering to the selected ads.
-[withCondition(string condition)](#withcondition-string-condition-)|[AdGroupSelector](./AdGroupSelector.md)|Applies filter criteria to the ads.
-[withIds(string[] ids)](#withids-string-ids-)|[AdGroupSelector](./AdGroupSelector.md)|Gets ads with the specified IDs.
-[withLimit(int limit)](#withlimit-int-limit-)|[AdGroupSelector](./AdGroupSelector.md)|Gets the top *n* ads that match the selection criteria.
+[forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-)|[AdSelector](./AdSelector.md)|Applies the start and end dates for selecting performance metrics.
+[forDateRange(string dateRange)](#fordaterange-string-daterange-)|[AdSelector](./AdSelector.md)|Applies the predefined date range for selecting performance metrics.
+[get](#get)|[AdIterator](./AdIterator.md)|Gets an iterator that you use to iterate through the list of ads.
+[orderBy(string orderBy)](#orderby-string-orderby-)|[AdSelector](./AdSelector.md)|Applies the specified ordering to the selected ads.
+[withCondition(string condition)](#withcondition-string-condition-)|[AdSelector](./AdSelector.md)|Applies filter criteria to the ads.
+[withIds(string[] ids)](#withids-string-ids-)|[AdSelector](./AdSelector.md)|Gets ads with the specified IDs.
+[withLimit(int limit)](#withlimit-int-limit-)|[AdSelector](./AdSelector.md)|Gets the top *n* ads that match the selection criteria.
 
 ## <a name="fordaterange-object-datefrom-object-dateto-"></a>forDateRange(Object dateFrom, Object dateTo)
 Applies the start and end dates for selecting performance metrics.
@@ -40,7 +40,7 @@ dateTo|Object|The end date of the date range that specifies the performance data
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupSelector](./AdGroupSelector.md)|Selector with date range applied.
+[AdSelector](./AdSelector.md)|Selector with date range applied.
 
 ## <a name="fordaterange-string-daterange-"></a>forDateRange(String dateRange)
 Applies the predefined date range for selecting performance metrics.
@@ -57,7 +57,7 @@ dateRange|String|The predefined date range string that specifies the performance
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupSelector](./AdGroupSelector.md)|Selector with date range applied.
+[AdSelector](./AdSelector.md)|Selector with date range applied.
 
 ## <a name="get"></a>get
 Gets an [iterator](../concepts/iterators.md) that you use to iterate through the list of ads.
@@ -65,7 +65,7 @@ Gets an [iterator](../concepts/iterators.md) that you use to iterate through the
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupIterator](./AdGroupIterator.md)|An iterator that you use to iterate through the selected ads.
+[AdIterator](./AdIterator.md)|An iterator that you use to iterate through the selected ads.
 
 ## <a name="orderby-string-orderby-"></a>orderBy(String orderBy)
 Applies the specified ordering to the selected ads. 
@@ -75,7 +75,7 @@ Specify the *orderBy* parameter in the form, "columnName orderDirection" where:
 - *columnName* is one of the [supported columns](#supported-ad-columns). 
 - *orderDirection* is the order to sort the results in. Set to ASC to order the results in ascending order or DESC to order the results in descending order. The default is ASC.
 
-For example, the following call returns ad groups in ascending order by AverageCpc.
+For example, the following call returns ads in ascending order by AverageCpc.
 
 `selector = selector.orderBy("AverageCpc");`
 
@@ -91,7 +91,7 @@ orderBy|string|The ordering to apply.
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupSelector](./AdGroupSelector.md)|Selector with ordering applied.
+[AdSelector](./AdSelector.md)|Selector with ordering applied.
 
 ## <a name="withcondition-string-condition-"></a>withCondition(String condition)
 Applies filter criteria to the ads.
@@ -106,7 +106,7 @@ Specify the *condition* parameter in the form, "columnName operator value" where
 <a name="supported-ad-columns"></a>
 ### Supported Columns
 
-Supported columns for ad filtering. The names are case sensitive. 
+Supported columns for filtering ads. The column names are case sensitive. 
 
 The following are the performance metrics columns you may specify.
 
@@ -127,10 +127,10 @@ The following are the entity properties you may specify.
 |Column|Type|Example|
 |-|-|-
 Status|enumeration|The ad's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only enabled ads.<br /><br />`withCondition("Status = ENABLED")`
-Type|enumeration|The ad's derived type. Possible case-sensitive values are: <ul><li>EXPANDED_TEXT_AD</li></ul>This example returns only enabled ads.<br /><br />`withCondition("Type = EXPANDED_TEXT_AD")`
+Type|enumeration|The ad's derived type. Possible case-sensitive values are: <ul><li>EXPANDED_TEXT_AD</li></ul>This example returns only expanded text ads.<br /><br />`withCondition("Type = EXPANDED_TEXT_AD")`
 CreativeFinalUrls|string|The ad's final URL.<br /><br />`withCondition("CreativeFinalUrls CONTAINS_IGNORE_CASE 'contoso.com'")`
 AdGroupName|string|The name of the ad group that the ads belong to.<br /><br />`withCondition("AdGroupName CONTAINS_IGNORE_CASE 'truck'")`
-AdGroupStatus|enumeration|The status of the ad group that the ads belong to. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only ads whose parent ad group is paused.<br /><br />`withCondition("CampaignStatus = PAUSED")`
+AdGroupStatus|enumeration|The status of the ad group that the ads belong to. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only ads whose parent ad group is paused.<br /><br />`withCondition("AdGroupStatus = PAUSED")`
 CampaignName|string|The name of the campaign that the ads belong to.<br /><br />`withCondition("CampaignName CONTAINS_IGNORE_CASE 'truck'")`
 CampaignStatus|enumeration|The status of the campaign that the ads belong to. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only ads whose parent campaign is paused.<br /><br />`withCondition("CampaignStatus = PAUSED")`
 
@@ -142,7 +142,7 @@ condition|string|The condition to apply to the selector.
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupSelector](./AdGroupSelector.md)|Selector with the condition applied.
+[AdSelector](./AdSelector.md)|Selector with the condition applied.
 
 ## <a name="withids-string-ids-"></a>withIds(string[] ids)
 Gets ads with the specified IDs. 
@@ -164,7 +164,7 @@ ids|string[]|An array of ad IDs. The maximum number of IDs that you may specify 
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupSelector](./AdGroupSelector.md)|Selector with the IDs applied.
+[AdSelector](./AdSelector.md)|Selector with the IDs applied.
 
 ## <a name="withlimit-int-limit-"></a>withLimit(int limit)
 Gets the top *n* ads that match the selection criteria.
@@ -177,12 +177,14 @@ limit|int|The number of ads to return. The actual number may be less.
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupSelector](./AdGroupSelector.md)|Selector with limit applied.
+[AdSelector](./AdSelector.md)|Selector with limit applied.
 
 
-<!--
+
 ## See also
 
 [BingAdsApp.ads()](BingAdsApp.md#ads)
+
+<!--
 [AdGroup.ads()](AdGroup.md#ads)
 -->

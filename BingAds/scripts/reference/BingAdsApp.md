@@ -18,13 +18,13 @@ This is the top-level object of Bing Ads Scripts. Use it to navigate all entitie
 |Method Name|Return Type|Description|
 |-|-|-
 [adGroups](#adgroups)|[AdGroupSelector](./AdGroupSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all ad groups in this account.
+[ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all ads in this account.
 [campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector that returns all campaigns in this account.
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a selector that returns all keywords in this account.
 [negativeKeywordLists](#negativekeywordlists)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets a selector that returns  all negative keyword lists in this account.
 [newNegativeKeywordListBuilder](#newnegativekeywordlistbuilder)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Gets a builder that you use to add a negative keyword list to this account.
 
 <!--
-[ads](#ads)|[AdSelector](./AdSelector)|Returns a selector of all ads in this account.<br />
 [getExecutionInfo](#getexecutioninfo)|[ExecutionInfo](./ExecutionInfo)|Returns information about the environment in which the script is currently executing.
 -->
 
@@ -39,16 +39,17 @@ Gets a [selector](../concepts/selectors.md) that returns all ad groups in this a
 |-|-
 [AdGroupSelector](./AdGroupSelector.md)|A selector that returns all ad groups in the current account. Use the selector's methods to filter the list of ad groups.
 
-<!--
+
 ## <a name="ads"></a>ads
-Returns a selector of all ads in this account.
 
+Gets a [selector](../concepts/selectors.md) that returns all ads in this account. 
 
-### Returns:
+### Returns
+
 |Type|Description|
 |-|-
-[AdSelector](./AdSelector)|Selector of all ads in this account.
--->
+[AdSelector](./AdSelector.md)|A selector that returns all ads in the current account. Use the selector's methods to filter the list of ads.
+
 
 ## <a name="campaigns"></a>campaigns
 
