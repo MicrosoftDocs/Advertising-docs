@@ -13,19 +13,27 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
-## May 3, 2018
+## August 7 2018
 
 ### Nonbreaking change
 
 - Added the following columns to the Performance report. For more information, see [Performance report columns](../hotel-service/reporting.md#performance-report-columns).  
-<!--  
+  
   - [Dimension columns](../hotel-service/reporting.md#dimensioncolumns)  
     
     - AdvancedBookingWindow  
     - CheckinDay
     - DateType  
     - SiteType  
--->
+
+- Changed the UserCountry dimension to reflect the country where the user is located instead of the publisher's country. Prior to August 2, 2018, UserCountry contains the publisher's country. After August 2, 2018, UserCountry contains the user’s country.
+
+## May 3, 2018
+
+### Nonbreaking change
+
+- Added the following columns to the Performance report. For more information, see [Performance report columns](../hotel-service/reporting.md#performance-report-columns).  
+  
   - [Measure columns](../hotel-service/reporting.md#measurecolumns)  
     
     - ClickShare
