@@ -30,11 +30,11 @@ Example usage:
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[expandedTextAd](#expandedtextad)|[ExpandedTextAd](ExpandedTextAd.md)|Cast this ad to an expanded text ad.
+[expandedTextAd](#expandedtextad)|[ExpandedTextAd](ExpandedTextAd.md)|Casts this ad to an expanded text ad.
 
 
 ## <a name="expandedtextad"></a>expandedTextAd
-Cast this ad to an expanded text ad.
+Casts this ad to an expanded text ad.
 
 ### Returns
 |Type|Description|

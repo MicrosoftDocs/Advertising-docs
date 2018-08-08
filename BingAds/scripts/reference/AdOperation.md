@@ -33,7 +33,7 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [getErrors](#geterrors)|string[]|Gets any errors that occurred when you added the ad.
-[getResult](#getresult)|[AdGroup](./AdGroup.md)|Gets the ad that you added.
+[getResult](#getresult)|[Ad](./Ad.md)|Gets the ad that you added.
 [isSuccessful](#issuccessful)|Boolean|Gets a Boolean value that indicates whether the add operation succeeded.
 
 ## <a name="geterrors"></a>getErrors
