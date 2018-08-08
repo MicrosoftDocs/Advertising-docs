@@ -6,6 +6,8 @@
   items:
     - name: Single account access
       href: guides/single-account-access.md 
+    - name: Porting Google Ads Scripts
+      href: guides/porting-google-scripts.md 
 - name: Concepts
   items:
     - name: Authorization
