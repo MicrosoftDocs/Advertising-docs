@@ -78,8 +78,8 @@ You use the sandbox environment to test your application before putting it in pr
   - Choose the **Create a new email address** option.
   - Enter an MSA email address. The email server must be outlook<strong>-int</strong>.com (for example, someone@outlook-int.com).  
   
-  > [!IMPORTANT]  
-  > Sandbox supports MSAs created using an @outlook<strong>-int</strong>.com email account only. You may not use an @outlook.com email account. Also, you may not use an email account from another email service (for example, @gmail.com) even if the account is linked to an @outlook.com or @outlook<strong>-int</strong>.com email account.  
+    > [!IMPORTANT]  
+    > Sandbox supports MSAs created using an @outlook<strong>-int</strong>.com email account only. You may not use an @outlook.com email account. Also, you may not use an email account from another email service (for example, @gmail.com) even if the account is linked to an @outlook.com or @outlook<strong>-int</strong>.com email account.  
   
   - Finish the work flow by specifying the rest of your user information.  
 

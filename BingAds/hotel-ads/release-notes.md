@@ -16,7 +16,7 @@ For information about changes that were included with each release, see the foll
 
 ## August 10, 2018
 
-- Updated [Getting sandbox credentials](../hotel-service/get-started.md#getsicredentials) to reflect the current process. Previously, when you signed up for a sandbox account, the process created legacy credentials (username and password). However, the Hotel API requires using a Microsoft account (MSA) for OAuth authentication. This meant you needed to invite a user to work on your account, so you could create an MSA account to use with the Hotel API. This process is no longer required since sandbox now supports only MSA&mdash;you may create a sandbox account using only an MSA and you must sign in using only an MSA.
+- Updated [Getting sandbox credentials](../hotel-service/get-started.md#getsicredentials) to reflect the current process. Previously, when you signed up for a sandbox account, the process created legacy credentials (username and password). However, the Hotel Ads API requires using a Microsoft account (MSA) for OAuth authentication. This meant you needed to invite a user to work on your account, so you could create an MSA account to use with the Hotel Ads API. This process is no longer required since sandbox now supports only MSA&mdash;you may create a sandbox account using only an MSA and you must sign in using only an MSA.
 
 
 ## August 7, 2018
