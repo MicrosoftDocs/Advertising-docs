@@ -19,9 +19,9 @@ This example web application demonstrates OAuth authentication in production. Th
     <?php
     namespace Microsoft\BingAds\Samples;
         
-    require_once "./vendor/autoload.php";
+    require_once __DIR__ . "./vendor/autoload.php";
     
-    include "WebAuthHelper.php";
+    include __DIR__ . "WebAuthHelper.php";
     
     // Specify the Microsoft\BingAds\Samples classes that will be used.
     use Microsoft\BingAds\Samples\WebAuthHelper;
@@ -52,9 +52,9 @@ This example web application demonstrates OAuth authentication in production. Th
     <?php
     namespace Microsoft\BingAds\Samples;
         
-    require_once "./vendor/autoload.php";
+    require_once __DIR__ . "./vendor/autoload.php";
     
-    include "WebAuthHelper.php";
+    include __DIR__ . "WebAuthHelper.php";
     
     // Specify the Microsoft\BingAds\Auth classes that will be used.
     use Microsoft\BingAds\Auth\AuthorizationData;
@@ -131,9 +131,9 @@ This example web application demonstrates OAuth authentication in production. Th
     <?php
     namespace Microsoft\BingAds\Samples;
         
-    require_once "./vendor/autoload.php";
+    require_once __DIR__ . "./vendor/autoload.php";
     
-    include "WebAuthHelper.php";
+    include __DIR__ . "WebAuthHelper.php";
     
     // Specify the Microsoft\BingAds\Auth classes that will be used.
     use Microsoft\BingAds\Auth\AuthorizationData;

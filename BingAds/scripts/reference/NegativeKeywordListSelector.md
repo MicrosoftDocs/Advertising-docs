@@ -85,7 +85,7 @@ Supported Columns. The column names are case sensitive.
 MemberCount|int|The number of negative keywords in the list.<br /><br />`withCondition("MemberCount > 10")`
 Name|string|The negative keyword list's name.<br /><br />`withCondition("Name = 'LIST NAME GOES HERE'")`
 ReferenceCount|int|The number of campaigns the list is associated with.<br /><br />`withCondition("ReferenceCount > 10")`
-SharedSetId|double|The ID of a negative keyword list. Consider using the `withIds` method instead.<br /><br />`withCondition("SharedSetId = '123456789'")`
+SharedSetId|double|The ID of a negative keyword list. If you simply use this for equality comparison, consider using the `withIds` method instead.<br /><br />`withCondition("SharedSetId = 123456789")`
 
 
 ### Arguments

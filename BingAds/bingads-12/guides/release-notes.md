@@ -12,10 +12,15 @@ For information about the changes to the Bing Ads Version 12 services for each m
 ## <a name="august2018"></a>August 2018
 For information about this month's changes to Bing Ads services, see the following sections.
  
+- [Bing Ads Software Development Kit (SDK) Updates](#sdk-august2018)   
 - [Customer Address](#customeraddress-august2018)  
 - [Entity Attributes for the Change History Report](#changehistoryreportentity-august2018)  
 - [Profile Criteria for Campaigns](#campaignprofilecriteria-august2018)  
 - [Similar Audiences for Remarketing Lists](#similaraudiences-august2018)  
+
+### <a name="sdk-august2018"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated.
+- Updated service proxies to support customer address, campaign level profile criteria, similar audiences for remarketing lists, and new change history report columns.  
 
 ### <a name="customeraddress-august2018"></a>Customer Address
 The [CustomerAddress](../customer-management-service/customer.md#customeraddress) element is added back to the [Customer](../customer-management-service/customer.md) object. This element had been removed during the transition from Bing Ads API Version 11 to Version 12. Although you must set the account [BusinessAddress](../customer-management-service/advertiseraccount.md#businessaddress), the customer address is optional if your application has a dependency on it. Bing Ads does not use the customer address, and instead uses the account business address. 
