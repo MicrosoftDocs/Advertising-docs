@@ -54,7 +54,7 @@ If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Examp
 
 ### Authenticating your credentials in sandbox
 
-For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](/bingads/guides/authentication-oauth), substitute them with the following SI endpoints.
+For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](/bingads/guides/authentication-oauth), substitute them with the following sandbox endpoints.
 
  - partner.api.sandbox.bingads.microsoft.com&mdash;Endpoint for Bing Ads sandbox
  - account.microsoft-int.com&mdash;Endpoint for getting a sandbox Microsoft account 
@@ -71,11 +71,30 @@ For the sandbox environment, the following are the endpoints you must use to get
 
 You use the sandbox environment to test your application before putting it in production. Use the following steps to get a sandbox account.
 
-1.	Open a browser and navigate to sandbox.bingads.microsoft.com
-2.	Click **Sign up for Bing Ads** or **Sign up now**
-3.	Fill out the **Create Account** form
+1.	Open a browser and navigate to https:\//sandbox.bingads.microsoft.com.
+2.	Click **Sign up for Bing Ads** or **Sign up now**.
+3.	Fill out the **Create Account** form.  
+  
+  - Choose the **Create a new email address** option.
+  - Enter an MSA email address. The email server must be outlook<strong>-int</strong>.com (for example, someone@outlook-int.com).  
+  
+  > [!IMPORTANT]  
+  > Sandbox supports MSAs created using an @outlook<strong>-int</strong>.com email account only. You may not use an @outlook.com email account. Also, you may not use an email account from another email service (for example, @gmail.com) even if the account is linked to an @outlook.com or @outlook<strong>-int</strong>.com email account.  
+  
+  - Finish the work flow by specifying the rest of your user information.  
+
 4.	For **Import/Create Campaign**, click **Skip campaign creation**
 5.	For **Go Live**, click **Skip payment information**
+
+
+After Bing creates the account, you may use the MSA with the Hotel Ads API.
+
+> [!NOTE]
+> The MSA signup process returns you to the SI Bing Ads user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface. To access Hotel Ads using the Bing Ads user interface in sandbox, go to <a href="https://ui.sandbox.bingads.microsoft.com" data-raw-source="[https://ui.sandbox.bingads.microsoft.com](https://ui.sandbox.bingads.microsoft.com)">https://ui.sandbox.bingads.microsoft.com</a> and sign in using your new MSA email address.
+
+
+<!--
+THIS IS THE PROCESS REQUIRED BEFORE MSA
 
 ### Send an invite so you can create an MSA (**read step 5 carefully**)
 
@@ -114,7 +133,7 @@ After Bing creates the account, you may use the MSA with the Hotel Ads API to cr
 > [!NOTE]
 > The MSA signup process returns you to the SI Bing Ads user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface. To access your Hotel Ads Campaigns using the Bing Ads user interface in sandbox, go to <a href="https://ui.sandbox.bingads.microsoft.com" data-raw-source="[https://ui.sandbox.bingads.microsoft.com](https://ui.sandbox.bingads.microsoft.com)">https://ui.sandbox.bingads.microsoft.com</a> and sign in using your new MSA email address.
 
-
+-->
 
 <a name="wheretousecredentials"/>
 
