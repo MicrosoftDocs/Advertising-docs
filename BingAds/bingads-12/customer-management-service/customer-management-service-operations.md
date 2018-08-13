@@ -36,4 +36,4 @@ The Customer Management service defines the following service operations.
 |[UpdateCustomer](updatecustomer.md)|Updates the details of the specified customer.|1 *Customer*|
 |[UpdateUser](updateuser.md)|Updates the details of the specified user.|1 *User*|
 |[UpdateUserRoles](updateuserroles.md)|Updates the roles of the specified user.|1 *NewRoleId*<br/><br/>1 *UserId*|
-|[ValidateAddress](validateaddress.md)|Reserved.|1 *Address*|
+|[ValidateAddress](validateaddress.md)|Determines whether or not the submitted address is valid for Bing Ads accounts.|1 *Address*|

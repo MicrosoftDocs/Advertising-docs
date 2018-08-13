@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Determines whether or not the submitted address is valid for Bing Ads accounts.
 dev_langs: 
   - csharp
   - java
@@ -12,7 +12,11 @@ dev_langs:
   - python
 ---
 # ValidateAddress Service Operation - Customer Management
-Reserved.
+Determines whether or not the submitted address is valid for Bing Ads accounts. 
+
+If the address is valid you can use it as the account [BusinessAddress](advertiseraccount.md#businessaddress). 
+
+For Australia (AU), Canada (CA), and The United States (US), the operation validates whether or not you could ship something to the address. For all other countries basic address verification (AVS) is completed. 
 
 ## <a name="request"></a>Request Elements
 The *ValidateAddressRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
@@ -21,7 +25,7 @@ The *ValidateAddressRequest* object defines the [body](#request-body) and [heade
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="address"></a>Address|Reserved.|[Address](address.md)|
+|<a name="address"></a>Address|The address to validate.|[Address](address.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -33,9 +37,9 @@ The *ValidateAddressResponse* object defines the [body](#response-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="originaladdress"></a>OriginalAddress|Reserved.|[Address](address.md)|
-|<a name="status"></a>Status|Reserved.|**string**|
-|<a name="suggestedaddresses"></a>SuggestedAddresses|Reserved.|[Address](address.md) array|
+|<a name="originaladdress"></a>OriginalAddress|The address that was submitted for validation.<br/><br/>The submitted [Address](#address) is always passed back here in the response, so this element is always set.|[Address](address.md)|
+|<a name="status"></a>Status|Determines whether or not the submitted address is valid for Bing Ads accounts, and whether or not any address suggestions are available via the [SuggestedAddresses](#suggestedaddresses) response element.<br/><br/>Possible string values are *AddressValidWithoutSuggestions*, *AddressValidWithSuggestions*, *AddressInvalidWithoutSuggestions*, and *AddressInvalidWithSuggestions*.|**string**|
+|<a name="suggestedaddresses"></a>SuggestedAddresses|One or more suggested addresses if the [Status](#status) is either *AddressValidWithSuggestions* or *AddressInvalidWithSuggestions*.<br/><br/>This element will be nil if the [Status](#status) is either *AddressValidWithoutSuggestions* or *AddressInvalidWithoutSuggestions*.|[Address](address.md) array|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

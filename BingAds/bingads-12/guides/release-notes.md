@@ -14,6 +14,7 @@ For information about this month's changes to Bing Ads services, see the followi
  
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-august2018)   
 - [Customer Address](#customeraddress-august2018)  
+- [Validate Address](#validateaddress-august2018)  
 - [Entity Attributes for the Change History Report](#changehistoryreportentity-august2018)  
 - [Profile Criteria for Campaigns](#campaignprofilecriteria-august2018)  
 - [Similar Audiences for Remarketing Lists](#similaraudiences-august2018)  
@@ -24,6 +25,9 @@ The Bing Ads .NET, Java, Php, and Python SDKs are updated.
 
 ### <a name="customeraddress-august2018"></a>Customer Address
 The [CustomerAddress](../customer-management-service/customer.md#customeraddress) element is added back to the [Customer](../customer-management-service/customer.md) object. This element had been removed during the transition from Bing Ads API Version 11 to Version 12. Although you must set the account [BusinessAddress](../customer-management-service/advertiseraccount.md#businessaddress), the customer address is optional if your application has a dependency on it. Bing Ads does not use the customer address, and instead uses the account business address. 
+
+### <a name="validateaddress-august2018"></a>Validate Address
+The [ValidateAddress](../customer-management-service/validateaddress.md) operation is added. The operation determines whether or not the submitted address is valid for Bing Ads accounts. For Australia (AU), Canada (CA), and The United States (US), the operation validates whether or not you could ship something to the address. For all other countries basic address verification (AVS) is completed. 
 
 ### <a name="changehistoryreportentity-august2018"></a>Entity Attributes for the Change History Report
 The [EntityId](../reporting-service/searchcampaignchangehistoryreportcolumn.md#entityid) and [EntityName](../reporting-service/searchcampaignchangehistoryreportcolumn.md#entityname) elements are added to the [SearchCampaignChangeHistoryReportColumn](../reporting-service/searchcampaignchangehistoryreportcolumn.md) value set. 

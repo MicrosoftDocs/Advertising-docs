@@ -455,12 +455,12 @@ Possible values include: *Brands*, *Events*, *Locations*, *Neighborhoods*, *Prod
 **Update:** Read-only   
 **Delete:** Read-only  
 
-### <a name="priceunit"></a>Price Unit (1-8)
-The price unit.
+### <a name="pricequalifier"></a>Price Qualifier (1-8)
+The price qualifier for a given product or service e.g., starting from a specific price and up to a maximum price.
 
 Possible values include: *Average*, *From*, *UpTo*, *None*, and *Unknown*. (Unknown is reserved for future use and cannot be set.)
 
-The bulk file includes up to 8 price unit columns, i.e., one for each price table item in the ad extension. The bulk file column headers are *Price Unit 1*, *Price Unit 2*, *Price Unit 3*, *Price Unit 4*, *Price Unit 5*, *Price Unit 6*, *Price Unit 7*, and *Price Unit 8*. 
+The bulk file includes up to 8 price qualifier columns, i.e., one for each price table item in the ad extension. The bulk file column headers are *Price Qualifier 1*, *Price Qualifier 2*, *Price Qualifier 3*, *Price Qualifier 4*, *Price Qualifier 5*, *Price Qualifier 6*, *Price Qualifier 7*, and *Price Qualifier 8*. 
 
 You must have between 3 and 8 price table items per price ad extension. The order you create them in is the expected order in the ad but the order is not guaranteed. All price table items for a price ad extension must be in the same bulk file record. Each price table item is mapped to the same index of [Currency Code](#currencycode), [Final Mobile Url](#finalmobileurl), [Final Url](#finalurl), [Header](#header), [Price](#price), [Price Description](#pricedescription), [Price Unit](#priceunit), and [Price Qualifier](#pricequalifier) columns. For example the first price table item is mapped to the *Currency Code 1*, *Final Mobile Url 1*, *Final Url 1*, *Header 1*, *Price 1*, *Price Description 1*, *Price Unit 1*, and *Price Qualifier 1* columns.
 
@@ -468,12 +468,12 @@ You must have between 3 and 8 price table items per price ad extension. The orde
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
-### <a name="pricequalifier"></a>Price Qualifier (1-8)
-The price qualifier.
+### <a name="priceunit"></a>Price Unit (1-8)
+The price unit allows you to specify the cost in terms of hour, day, week, etc.
 
 Possible values include: *PerDay*, *PerHour*, *PerMonth*, *PerNight*, *PerWeek*, *PerYear*, *None*, and *Unknown*. (Unknown is reserved for future use and cannot be set.)
 
-The bulk file includes up to 8 price unit columns, i.e., one for each price table item in the ad extension. The bulk file column headers are *Price Qualifier 1*, *Price Qualifier 2*, *Price Qualifier 3*, *Price Qualifier 4*, *Price Qualifier 5*, *Price Qualifier 6*, *Price Qualifier 7*, and *Price Qualifier 8*. 
+The bulk file includes up to 8 price unit columns, i.e., one for each price table item in the ad extension. The bulk file column headers are *Price Unit 1*, *Price Unit 2*, *Price Unit 3*, *Price Unit 4*, *Price Unit 5*, *Price Unit 6*, *Price Unit 7*, and *Price Unit 8*.
 
 You must have between 3 and 8 price table items per price ad extension. The order you create them in is the expected order in the ad but the order is not guaranteed. All price table items for a price ad extension must be in the same bulk file record. Each price table item is mapped to the same index of [Currency Code](#currencycode), [Final Mobile Url](#finalmobileurl), [Final Url](#finalurl), [Header](#header), [Price](#price), [Price Description](#pricedescription), [Price Unit](#priceunit), and [Price Qualifier](#pricequalifier) columns. For example the first price table item is mapped to the *Currency Code 1*, *Final Mobile Url 1*, *Final Url 1*, *Header 1*, *Price 1*, *Price Description 1*, *Price Unit 1*, and *Price Qualifier 1* columns.
 
