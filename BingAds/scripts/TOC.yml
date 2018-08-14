@@ -39,6 +39,8 @@
   items:
     - name: Ad Groups
       href: examples/adgroups.md 
+    - name: Budgets
+      href: examples/budgets.md 
     - name: Campaigns
       href: examples/campaigns.md 
     - name: Keywords
@@ -75,6 +77,10 @@
           href: ./reference/BingAdsDate.md 
         - name: Budget
           href: ./reference/Budget.md 
+        - name: BudgetIterator
+          href: ./reference/BudgetIterator.md 
+        - name: BudgetSelector
+          href: ./reference/BudgetSelector.md 
         - name: Campaign
           href: ./reference/Campaign.md 
         - name: CampaignIterator
