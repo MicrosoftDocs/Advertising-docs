@@ -13,7 +13,11 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
+<<<<<<< HEAD
 The following sections show examples of scripts that perform various actions against [shared budgets](../concepts/shared-budgets.md).
+=======
+The following sections show examples of scripts that perform various actions against shared budgets.
+>>>>>>> stubbing shared budgets content
 
 
 ## Add shared budgets
@@ -97,6 +101,7 @@ function main() {
 ```
 
 
+<<<<<<< HEAD
 ## Get all campaigns that share the budget
 
 To get all the campaigns that share the budget, call budget's [campaigns](../reference/Budget.md#campaigns) method. You can call this method only from a [Budget](../reference/Budget.md) object that you get from [BudgetSelector](../reference/BudgetSelector.md); you cannot call it if the source of the budget is the campaign's [getBudget](../reference/Campaign.md#getbudget) method.
@@ -127,6 +132,8 @@ function main() {
 
 
 
+=======
+>>>>>>> stubbing shared budgets content
 ## Get a shared budget's performance data
 
 To get a shared budget's performance metrics, call the budget's [getStats](../reference/Budget.md#getstats) method. When you get the list of share budgets, you need to specify the date range of the metrics data you want. You can specify the date range using a predefined literal, such as LAST_MONTH or TODAY, or a start and end date. To specify the date range, use one of the `forDateRange` methods when you select the budgets (see [BudgetSelector](../reference/BudgetSelector.md)). 
