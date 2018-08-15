@@ -144,6 +144,7 @@ The following are the entity properties you may specify.
 Amount|double|The shared budget's amount.<br /><br />`withCondition("Amount >= 130")`
 BudgetName|string|The shared budget's name.<br /><br />`withCondition("BudgetName CONTAINS_IGNORE_CASE 'sport'")`
 BudgetReferenceCount|integer|The number of campaigns that are associated with the shared budget.<br /><br />`withCondition("BudgetReferenceCount > 5")`
+IsBudgetExplicitlyShared|Boolean|Because the selector returns only shared budgets, setting this condition to **true** is redundant. If you set this condition to **false**, the selector never returns budgets.
 
 ### Arguments
 |Name|Type|Description|
