@@ -16,6 +16,7 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
+[ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all ads in this ad group.
 [bidding](#bidding)|[AdGroupBidding](AdGroupBidding.md)|Gets the methods used to manage this ad group's bid amount.
 [enable](#enable)|void|Enables this ad group.
 [getEndDate](#getenddate)|[BingAdsDate](BingAdsDate.md)|Gets the date when ads in this ad group stop serving.
@@ -38,6 +39,17 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 [urls](#urls)|[AdGroupUrls](./AdGroupUrls.md)|Contains the methods used to manage this ad group's final URLs, tracking template, and custom parameters.
 
 
+## <a name="ads"></a>ads
+
+Gets a [selector](../concepts/selectors.md) that returns all ads in this ad group. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[AdSelector](./AdSelector.md)|A selector that returns all ads in this ad group. Use the selector's methods to filter the list of ads.
+
+
 ## <a name="bidding"></a>bidding
 Gets the methods used to manage this ad group's bid amount.
 
@@ -54,6 +66,7 @@ Enables this ad group.
 |Type|Description|
 |-|-
 void|Returns nothing.
+
 
 ## <a name="getenddate"></a>getEndDate
 Gets the date when ads in this ad group stop serving.

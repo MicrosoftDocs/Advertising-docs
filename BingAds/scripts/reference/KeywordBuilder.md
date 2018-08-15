@@ -111,7 +111,7 @@ The final URL identifies the webpage that the user is taken to when they click y
 
 For more information, see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-To specify a final URL for mobil devices, you must first specify a final URL for non-mobile devices (see `withFinalUrl()`).
+To specify a final URL for mobile devices, you must first specify a final URL for non-mobile devices (see `withFinalUrl()`).
 
 
 ### Arguments
