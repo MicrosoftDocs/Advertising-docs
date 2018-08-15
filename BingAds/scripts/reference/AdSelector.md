@@ -128,6 +128,7 @@ The following are the entity properties you may specify.
 |-|-|-
 Status|enumeration|The ad's status. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only enabled ads.<br /><br />`withCondition("Status = ENABLED")`
 Type|enumeration|The ad's derived type. Possible case-sensitive values are: <ul><li>EXPANDED_TEXT_AD</li></ul>This example returns only expanded text ads.<br /><br />`withCondition("Type = EXPANDED_TEXT_AD")`
+CombinedApprovalStatus|string|The ad's approval status. Possible case-sensitive values are: <ul><li>APPROVED</li><li>APPROVED_LIMITED</li><li>UNDER_REVIEW</li><li>DISAPPROVED</li></ul>For information about these values, see [Editorial approval status values](../concepts/editorial-approval.md).<br /><br />This example returns ads that need attention.<br /><br />`withCondition("CombinedApprovalStatus IN ['APPROVED_LIMITED', 'DISAPPROVED']")`
 CreativeFinalUrls|string|The ad's final URL.<br /><br />`withCondition("CreativeFinalUrls CONTAINS_IGNORE_CASE 'contoso.com'")`
 AdGroupName|string|The name of the ad group that the ads belong to.<br /><br />`withCondition("AdGroupName CONTAINS_IGNORE_CASE 'truck'")`
 AdGroupStatus|enumeration|The status of the ad group that the ads belong to. Possible case-sensitive values are: <ul><li>ENABLED</li><li>PAUSED</li><li>REMOVED</li></ul>This example returns only ads whose parent ad group is paused.<br /><br />`withCondition("AdGroupStatus = PAUSED")`

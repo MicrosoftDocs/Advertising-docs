@@ -17,6 +17,7 @@ Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarch
 |Method Name|Return Type|Description|
 |-|-|-
 [addNegativeKeywordList(NegativeKeywordList negativeKeywordList)](#addnegativekeywordlist-negativekeywordlist-negativekeywordlist-)|void|Adds a negative keyword list to this campaign.
+[ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all ads in this campaign.
 [enable](#enable)|void|Enables this campaign.
 [getBiddingStrategyType](#getbiddingstrategytype)|string|Gets this campaign's bidding strategy.
 [getBudget](#getbudget)|[Budget](Budget.md)|Gets this campaign's budget.
@@ -33,6 +34,7 @@ Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarch
 [setName(String name)](#setname-string-name-)|void|Sets this campaign's name.
 [urls](#urls)|[CampaignUrls](./CampaignUrls.md)|Gets the methods for managing this campaign's tracking template and custom parameters.
 
+
 ## <a name="addnegativekeywordlist-negativekeywordlist-negativekeywordlist-"></a>addNegativeKeywordList(NegativeKeywordList negativeKeywordList)
 Adds a negative keyword list to this campaign. 
 
@@ -46,6 +48,18 @@ negativeKeywordList|[NegativeKeywordList](NegativeKeywordList.md)|The negative k
 |-|-
 void|Returns nothing.
 
+
+## <a name="ads"></a>ads
+
+Gets a [selector](../concepts/selectors.md) that returns all ads in this campaign. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[AdSelector](./AdSelector.md)|A selector that returns all ads in this campaign. Use the selector's methods to filter the list of ads.
+
+
 ## <a name="enable"></a>enable
 Enables this campaign.
 
@@ -53,6 +67,7 @@ Enables this campaign.
 |Type|Description|
 |-|-
 void|Returns nothing.
+
 
 ## <a name="getbiddingstrategytype"></a>getBiddingStrategyType
 Gets this campaign's bidding strategy. 
@@ -71,6 +86,7 @@ Gets this campaign's budget.
 |-|-
 [Budget](Budget.md)|Contains the methods for managing this campaign's budget.
 
+
 ## <a name="getentitytype"></a>getEntityType
 Gets this entity's type.
 
@@ -78,6 +94,7 @@ Gets this entity's type.
 |Type|Description|
 |-|-
 string|This entity's type, which is *Campaign*.
+
 
 ## <a name="getid"></a>getId
 Gets the ID that uniquely identifies this campaign.
@@ -87,6 +104,7 @@ Gets the ID that uniquely identifies this campaign.
 |-|-
 string|The ID that uniquely identifies this campaign.
 
+
 ## <a name="getname"></a>getName
 Gets this campaign's name.
 
@@ -94,6 +112,7 @@ Gets this campaign's name.
 |Type|Description|
 |-|-
 string|The campaign's name.
+
 
 ## <a name="getstats"></a>getStats
 Gets this campaign's performance data. 
@@ -103,6 +122,7 @@ Gets this campaign's performance data.
 |-|-
 [Stats](Stats.md)|The campaign's performance data.
 
+
 ## <a name="isenabled"></a>isEnabled
 Gets a Boolean value that indicates whether this campaign is enabled.
 
@@ -110,6 +130,7 @@ Gets a Boolean value that indicates whether this campaign is enabled.
 |Type|Description|
 |-|-
 boolean|Is **true** if this campaign is enabled; otherwise, **false**.
+
 
 ## <a name="ispaused"></a>isPaused
 Gets a Boolean value that indicates whether this campaign is paused.
@@ -119,6 +140,7 @@ Gets a Boolean value that indicates whether this campaign is paused.
 |-|-
 Boolean|Is **true** if this campaign is paused; otherwise, **false**.
 
+
 ## <a name="isremoved"></a>isRemoved
 Gets a Boolean value that indicates whether this campaign is removed (deleted).
 
@@ -126,6 +148,7 @@ Gets a Boolean value that indicates whether this campaign is removed (deleted).
 |Type|Description|
 |-|-
 Boolean|Is **true** if this campaign is removed; otherwise, **false**.
+
 
 ## <a name="newadgroupbuilder"></a>newAdGroupBuilder
 Gets a [builder](../concepts/builders.md) that you use to add an ad group to this campaign.
@@ -135,6 +158,7 @@ Gets a [builder](../concepts/builders.md) that you use to add an ad group to thi
 |-|-
 [AdGroupBuilder](AdGroupBuilder.md)|The builder that you use to add an ad group to this campaign.
 
+
 ## <a name="pause"></a>pause
 Pauses this campaign.
 
@@ -143,6 +167,7 @@ Pauses this campaign.
 |-|-
 void|Returns nothing.
 
+
 ## <a name="remove"></a>remove
 Removes this campaign.
 
@@ -150,6 +175,7 @@ Removes this campaign.
 |Type|Description|
 |-|-
 void|Returns nothing.
+
 
 ## <a name="setname-string-name-"></a>setName(string name)
 Sets the campaign's name.
@@ -163,6 +189,7 @@ name|string|The campaign's name. The name may contain a maximum of 128 character
 |Type|Description|
 |-|-
 void|Returns nothing.
+
 
 ## <a name="urls"></a>urls
 Gets the methods for managing this campaign's tracking template and custom parameters.

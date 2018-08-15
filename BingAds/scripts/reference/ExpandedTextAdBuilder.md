@@ -35,10 +35,15 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [build](#build)|[AdOperation](./AdOperation.md)|Creates the ad and returns an operation object that you can use to check whether Bing successfully added the ad.
+[withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's custom parameters.
 [withDescription(string description)](#withdescription-string-description-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's copy.
 [withFinalUrl(string finalUrl)](#withfinalurl-string-finalurl-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's landing page URL.
 [withHeadlinePart1(string headlinePart1)](#withheadlinepart1-string-headlinepart1-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the first part of the ad's title.
 [withHeadlinePart2(string headlinePart2)](#withheadlinepart2-string-headlinepart2-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the second part of the ad's title.
+[withMobileFinalUrl(string mobileFinalUrl)](#withmobilefinalurl-string-mobilefinalurl-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's final URL for mobile devices.
+[withPath1(string urlPath1)](#withpath1-string-urlpath1-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the first optional path to append to the ad's display URL.
+[withPath2(string urlPath2)](#withpath2-string-urlpath2-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the second optional path to append to the ad's display URL.
+[withTrackingTemplate(string trackingTemplate)](#withtrackingtemplate-string-trackingtemplate-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's tracking template.
 
 
 ## <a name="build"></a>build
@@ -50,6 +55,22 @@ For limits on the number of ads you can add to ad group, see [Entity hierarch li
 |Type|Description|
 |-|-
 [AdOperation](./AdOperation.md)|An operation object that you use to check whether Bing successfully added the ad.
+
+
+## <a name="withcustomparameters-object-customparameters-"></a>withCustomParameters(Object customParameters)
+Sets the ad's custom parameters. 
+
+[!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+customParameters|Object|A map of up to custom parameters to apply to the ad's final URL. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the custom parameter's name and value is the parameter's value. The name may contain a maximum of 16 8-byte characters and the value may contain a maximum of 200 8-byte characters.
+
+### Returns
+|Type|Description|
+|-|-
+[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with the custom parameters applied.
 
 
 ## <a name="withdescription-string-description-"></a>withDescription(string description)
@@ -106,3 +127,66 @@ headlinePart2|string|The second part of the ad's title. When Bing generates the 
 |Type|Description|
 |-|-
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with part 1 of the ad's title applied.
+
+
+## <a name="withmobilefinalurl-string-mobilefinalurl-"></a>withMobileFinalUrl(string mobileFinalUrl)
+Sets the ad's final URL for mobile devices. 
+
+The final URL identifies the webpage that the user is taken to when they click your ad. To specify a final URL for mobile devices, you must first specify a final URL for non-mobile devices (see `withFinalUrl()`).
+
+For more information, see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
+
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+mobileFinalUrl|string|The final URL for mobile devices.
+
+### Returns
+|Type|Description|
+|-|-
+[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with the mobile final URL applied.
+
+
+## <a name="withpath1-string-urlpath1-"></a>withPath1(string urlPath1)
+Sets the first optional path to append to the ad's display URL.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+mobileFinalUrl|string|The first optional path to append to the ad's display URL. Bing uses the domain specified in `withFinalUrl` as your display URL. If your final URL's domain is *contoso.com* and your path is *shoes*, the ad's display URL is *contoso.com/shoes*. For usage and limits, see [Path1](/bingads/campaign-management-service/expandedtextad#path1).
+
+### Returns
+|Type|Description|
+|-|-
+[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with the path applied.
+
+
+## <a name="withpath2-string-urlpath2-"></a>withPath2(string urlPath2)
+Sets the second optional path to append to the ad's display URL.
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+mobileFinalUrl|string|The second optional path to append to the ad's display URL. To specify the second path, you must first specify the first path (see `withPath1`). Bing uses the domain specified in `withFinalUrl` as your display URL. If your final URL's domain is *contoso.com*, your first path is *shoes*, and your second path is *ladies*, the ad's display URL is *contoso.com/shoes/ladies*. For usage and limits, see [Path2](/bingads/campaign-management-service/expandedtextad#path2).
+
+### Returns
+|Type|Description|
+|-|-
+[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with the path applied.
+
+
+## <a name="withtrackingtemplate-string-trackingtemplate-"></a>withTrackingTemplate(string trackingTemplate)
+Sets the ad's tracking template. 
+
+[!INCLUDE[tracking-templates](../includes/tracking-templates.md)]
+
+### Arguments
+|Name|Type|Description|
+|-|-|-
+trackingTemplate|string|The tracking template to use with this ad.
+
+### Returns
+|Type|Description|
+|-|-
+[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with the tracking template applied.
