@@ -40,7 +40,7 @@ Gets a [selector](../concepts/selectors.md) that returns all ad groups in this a
 
 Gets a [selector](../concepts/selectors.md) that returns all shared budgets in this account. 
 
-This method returns only shared budgets. To get unshared (individual campaign) budgets, call the specific campaign's [getBudget](Campaign.md#getbudget) method. 
+This method returns only shared budgets. To get unshared (individual campaign) budgets, call the specific campaign's [getBudget](Campaign.md#getbudget) method. The campaign's budget is not shared if the if the `isExplicitlyShared` method returns **false**.
 
 ### Returns
 

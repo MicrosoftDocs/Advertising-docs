@@ -15,6 +15,7 @@ Contains the methods for managing a budget. For more information, see [Budget](/
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
+[campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector that returns all campaigns that share this budget.
 [getAmount](#getamount)|double|Gets the budget's amount.
 [getDeliveryMethod](#getdeliverymethod)|string|Gets the delivery method (budget type) for this budget.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
@@ -24,6 +25,18 @@ Contains the methods for managing a budget. For more information, see [Budget](/
 [isExplicitlyShared](#isexplicitlyshared)|Boolean|Gets a Boolean value that indicates whether this budget is a shared budget.
 [setAmount(double amount)](#setamount-double-amount-)|void|Sets the budget to the specified amount.
 [setDeliveryMethod(String method)](#setdeliverymethod-string-method-)|void|Sets the delivery method for this budget.
+
+
+## <a name="campaigns"></a>campaigns
+
+Gets a [selector](../concepts/selectors.md) that returns all campaigns that share this budget. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[CampaignSelector](./CampaignSelector.md)|A selector that returns all campaigns that share this budget. Use the selector's methods to filter the list of campaigns.
+
 
 ## <a name="getamount"></a>getAmount
 Gets the budget's amount.
