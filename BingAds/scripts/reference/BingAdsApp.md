@@ -58,10 +58,14 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of ads in th
 Gets a [selector](../concepts/selectors.md) used to filter the list of shared budgets in this account. 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This method returns only shared budgets. To get unshared (individual campaign) budgets, call the specific campaign's [getBudget](Campaign.md#getbudget) method. The campaign's budget is not shared if the if the `isExplicitlyShared` method returns **false**.
 =======
 This method returns only shared budgets. To get unshared (individual campaign) budgets, call the specific campaign's [getBudget](Campaign.md#getbudget) method. 
 >>>>>>> stubbing shared budgets content
+=======
+This method returns only shared budgets. To get unshared (individual campaign) budgets, call the specific campaign's [getBudget](Campaign.md#getbudget) method. The campaign's budget is not shared if the if the `isExplicitlyShared` method returns **false**.
+>>>>>>> added remaining budget properties; cleanup
 
 ### Returns
 
