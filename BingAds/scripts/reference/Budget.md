@@ -93,6 +93,8 @@ Performance data is available for shared budgets only. To call this method, you 
 ## <a name="isexplicitlyshared"></a>isExplicitlyShared
 Gets a Boolean value that indicates whether this budget is a shared budget.
 
+Shared budgets let you set a single daily budget that's used by any campaign within the same account that you designate. Without a shared budget your campaigns may not fully utilize their budgets. For example, without a shared budget, if you set campaign A's budget to $10 and campaign B's budget to $10, it's possible that campaign A may spend only $8 of its budget. But because campaign B is performing well, it spent all of its budget and could have spent more. With a shared budget, campaign B would automatically take the remaining $2, increasing the chance that more traffic is sent your way.
+
 ### Returns:
 |Type|Description|
 |-|-
