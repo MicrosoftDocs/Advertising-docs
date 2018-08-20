@@ -14,10 +14,11 @@ For information about changes that were included with each release, see the foll
 
 
 
-## August 10, 2018
+## August 20, 2018
 
 - Updated [Getting sandbox credentials](../hotel-service/get-started.md#getsicredentials) to reflect the current process. Previously, when you signed up for a sandbox account, the process created legacy credentials (username and password). However, the Hotel Ads API requires using a Microsoft account (MSA) for OAuth authentication. This meant you needed to invite a user to work on your account, so you could create an MSA account to use with the Hotel Ads API. This process is no longer required since sandbox now supports only MSA&mdash;you may create a sandbox account using only an MSA and you must sign in using only an MSA.
 
+- Updated information about how to pause hotels. Previously, the documentation said that to pause all hotels in a subaccount, you'd set the subaccount's budget or bid amount to zero (0). Or, to pause all hotels in a hotel group, you'd set the group's bid amount to zero. Same for pausing individual hotels. Instead, to pause hotels, at any level, you must specify a percentage bid and set the percentage bid amount to 0. If you currently specify a fixed bid, you must change it to a percentage bid and set its bid amount to zero.
 
 ## August 7, 2018
 

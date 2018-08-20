@@ -94,7 +94,7 @@ After Bing creates the account, you may use the MSA with the Hotel Ads API.
 
 
 <!--
-THIS IS THE PROCESS REQUIRED BEFORE MSA
+THIS IS THE PROCESS REQUIRED BEFORE MSA - BACK WHEN THERE WERE LEGACY CREDS
 
 ### Send an invite so you can create an MSA (**read step 5 carefully**)
 
