@@ -337,10 +337,9 @@ The path can contain a countdown function. For more details see [Countdown Funct
 
 The path can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
 
-The maximum input length of the path is 50 characters with dynamic text strings. However, the ad will fail to display if the path exceeds 15 characters after dynamic text substitution occurs. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of the path is 25 characters, and the path is limited to 7 characters after substitution.
+The maximum input length is 50 characters including dynamic text strings, and of those 50 no more than 15 final characters are allowed. The ad will fail to display if the length exceeds 15 characters after dynamic text substitution occurs. 
 
-> [!IMPORTANT]
-> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
+For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed. The ad will fail to display if the length exceeds 7 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 
 The path cannot contain the forward slash (/) or newline (\n) characters.
 
@@ -359,10 +358,9 @@ The path can contain a countdown function. For more details see [Countdown Funct
 	
 The path can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
 
-The maximum input length of the path is 50 characters with dynamic text strings. However, the ad will fail to display if the path exceeds 15 characters after dynamic text substitution occurs. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of the path is 25 characters, and the path is limited to 7 characters after substitution.
+The maximum input length is 50 characters including dynamic text strings, and of those 50 no more than 15 final characters are allowed. The ad will fail to display if the length exceeds 15 characters after dynamic text substitution occurs. 
 
-> [!IMPORTANT]
-> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
+For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed. The ad will fail to display if the length exceeds 7 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 
 The path cannot contain the forward slash (/) or newline (\n) characters.
 	
@@ -399,10 +397,9 @@ The text can contain a countdown function. For more details see [Countdown Funct
 
 The text can contain dynamic text strings such as {keyword}. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](http://help.bingads.microsoft.com/#apex/3/en/50811/1).
 
-The maximum input length of the copy is 300 characters, and can contain dynamic text strings. However, the ad will fail to display if the copy exceeds 80 characters after dynamic text substitution occurs. Note that for ad groups that use Traditional Chinese the maximum input length of the copy is 150 characters, and the text is limited to 40 characters after substitution.
+The maximum input length is 300 characters including dynamic text strings, and of those 300 no more than 80 final characters are allowed. The ad will fail to display if the length exceeds 80 characters after dynamic text substitution occurs.
 
-> [!IMPORTANT]
-> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
+For languages with double-width characters e.g. Traditional Chinese the maximum input length is 150 characters including dynamic text strings, and of those 150 no more than 40 final characters are allowed. The ad will fail to display if the length exceeds 40 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 
 The text cannot contain the newline (\n) character.
 
@@ -417,10 +414,9 @@ The title can contain a countdown function. For more details see [Countdown Func
 
 The title can contain dynamic text strings such as {keyword}. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](http://help.bingads.microsoft.com/#apex/3/en/50811/1).
 
-The maximum input length of each title part is 30 characters without dynamic text. If dynamic text strings are used, the maximum input length of *Title Part 1* and *Title Part 2* combined is 77 characters. However, the ad will fail to display if either *Title Part 1* or *Title Part 2* exceeds 30 characters after dynamic text substitution occurs. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of each title part is 15 characters without dynamic text. If dynamic text strings are used, the maximum input length of *Title Part 1* and *Title Part 2* combined is 37 characters. However, the ad will fail to display if either *Title Part 1* or *Title Part 2* exceeds 15 characters after dynamic text substitution occurs.
+The maximum input length of each title part is 30 characters without dynamic text. The maximum input length of *Title Part 1* and *Title Part 2* combined is 77 characters including dynamic text strings, and of those 77 no more than 30 final characters are allowed in each title part. The ad will fail to display if either *Title Part 1* or *Title Part 2* exceeds 30 characters after dynamic text substitution occurs.
 
-> [!IMPORTANT]
-> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
+For languages with double-width characters e.g. Traditional Chinese the maximum input length of each title part is 15 characters without dynamic text. The maximum input length of *Title Part 1* and *Title Part 2* combined is 37 characters including dynamic text strings, and of those 37 no more than 15 final characters are allowed in each title part. The ad will fail to display if either *Title Part 1* or *Title Part 2* exceeds 15 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 
 The title cannot contain the newline (\n) character.
 
@@ -435,10 +431,9 @@ The title can contain a countdown function. For more details see [Countdown Func
 
 The title can contain dynamic text strings such as {keyword}. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](http://help.bingads.microsoft.com/#apex/3/en/50811/1).
     
-The maximum input length of each title part is 30 characters without dynamic text. If dynamic text strings are used, the maximum input length of *Title Part 1* and *Title Part 2* combined is 77 characters. However, the ad will fail to display if either *Title Part 1* or *Title Part 2* exceeds 30 characters after dynamic text substitution occurs. Note that for languages with double-width characters e.g. Traditional Chinese the maximum input length of each title part is 15 characters without dynamic text. If dynamic text strings are used, the maximum input length of *Title Part 1* and *Title Part 2* combined is 37 characters. However, the ad will fail to display if either *Title Part 1* or *Title Part 2* exceeds 15 characters after dynamic text substitution occurs.
+The maximum input length of each title part is 30 characters without dynamic text. The maximum input length of *Title Part 1* and *Title Part 2* combined is 77 characters including dynamic text strings, and of those 77 no more than 30 final characters are allowed in each title part. The ad will fail to display if either *Title Part 1* or *Title Part 2* exceeds 30 characters after dynamic text substitution occurs.
 
-> [!IMPORTANT]
-> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
+For languages with double-width characters e.g. Traditional Chinese the maximum input length of each title part is 15 characters without dynamic text. The maximum input length of *Title Part 1* and *Title Part 2* combined is 37 characters including dynamic text strings, and of those 37 no more than 15 final characters are allowed in each title part. The ad will fail to display if either *Title Part 1* or *Title Part 2* exceeds 15 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 
 The title cannot contain the newline (\n) character.
 

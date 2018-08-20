@@ -11232,6 +11232,50 @@ When using the *{Keyword}* dynamic text parameter, default text is required. For
 ***
 
 **Numeric Code**
+5039
+
+**Symbolic Error Code**
+CampaignServiceMaxAdsReachedForCustomer
+
+**Description**
+Cannot add any more Ads to this customer.
+
+***
+
+**Numeric Code**
+5040
+
+**Symbolic Error Code**
+CampaignServiceMaxAdsReachedForAccount
+
+**Description**
+Cannot add any more Ads to this account.
+
+***
+
+**Numeric Code**
+5041
+
+**Symbolic Error Code**
+CampaignServiceExpandedTextAdDomainTooLong
+
+**Description**
+The expanded text ad domain is too long.
+
+***
+
+**Numeric Code**
+5042
+
+**Symbolic Error Code**
+CampaignServiceExpandedTextAdDomainInvalid
+
+**Description**
+The expanded text ad domain is invalid.
+
+***
+
+**Numeric Code**
 5100
 
 **Symbolic Error Code**
@@ -12638,3 +12682,202 @@ ClickIdDateTimeOutsideGoalConversionWindow
 **Description**
 The date and time for the click ID is outside the conversion window for this goal.
 
+***
+
+**Numeric Code**
+5700
+
+**Symbolic Error Code**
+CustomerNotEligibleForAudienceCampaign
+
+**Description**
+Customer Not Eligible For Audience Campaign.
+
+***
+
+**Numeric Code**
+5701
+
+**Symbolic Error Code**
+CampaignLanguageShouldIncludeAll
+
+**Description**
+Campaign Languages should include All.
+
+***
+
+**Numeric Code**
+5702
+
+**Symbolic Error Code**
+AdGroupInvalidTargetSetting
+
+**Description**
+The ad group target setting is invalid.
+
+***
+
+**Numeric Code**
+5703
+
+**Symbolic Error Code**
+NotSupportedForThisCampaignType
+
+**Description**
+Not Supported For This Campaign Type.
+
+***
+
+**Numeric Code**
+5704
+
+**Symbolic Error Code**
+AdGroupLanguageNotSupported
+
+**Description**
+Language for each ad group is not supported. You can set campaign languages.
+
+***
+
+**Numeric Code**
+5705
+
+**Symbolic Error Code**
+InvalidFunctionFormat
+
+**Description**
+The syntax of your function contains invalid formatting, likely caused by a missing }.
+
+***
+
+**Numeric Code**
+5706
+
+**Symbolic Error Code**
+UnknownFunction
+
+**Description**
+One or more functions are invalid or not supported.
+
+***
+
+**Numeric Code**
+5707
+
+**Symbolic Error Code**
+MissingDelimiterBetweenFunctions
+
+**Description**
+You need to have at least one character between any two functions.
+
+***
+
+**Numeric Code**
+5708
+
+**Symbolic Error Code**
+CountDownInvalidDateTime
+
+**Description**
+Your countdown function contains an invalid date and/or time.
+
+***
+
+**Numeric Code**
+5709
+
+**Symbolic Error Code**
+CountDownInvalidDaysBefore
+
+**Description**
+Your countdown function contains an invalid days-before value.
+
+***
+
+**Numeric Code**
+5710
+
+**Symbolic Error Code**
+CountDownDaysBeforeOutOfRange
+
+**Description**
+The days-before value in your countdown function is out of range.
+
+***
+
+**Numeric Code**
+5711
+
+**Symbolic Error Code**
+CountDownPastDateTime
+
+**Description**
+Your countdown function contains a date and/or time in the past.
+
+***
+
+**Numeric Code**
+5712
+
+**Symbolic Error Code**
+CountDownInvalidDefaultText
+
+**Description**
+Default value is not allowed in countdown function.
+
+***
+
+**Numeric Code**
+5713
+
+**Symbolic Error Code**
+CountDownInvalidLanguageCode
+
+**Description**
+Your countdown function contains an invalid language code.
+
+***
+
+**Numeric Code**
+5714
+
+**Symbolic Error Code**
+CountDownInvalidParameters
+
+**Description**
+A countdown function must have at least one parameter and no more than three.
+
+***
+
+**Numeric Code**
+5715
+
+**Symbolic Error Code**
+InvalidCallToAction
+
+**Description**
+The call to action is invalid.
+
+***
+
+**Numeric Code**
+5716
+
+**Symbolic Error Code**
+AdDisplayUrlDomainExtractionFailed
+
+**Description**
+Extracting display url domain from final urls failed.
+
+***
+
+**Numeric Code**
+5717
+
+**Symbolic Error Code**
+AdModificationNotAllowedOnThisCampaign
+
+**Description**
+Ad modification is not allowed on this campaign.
+
+For example you cannot add, update, or delete responsive ads in feed-based Audience campaigns.

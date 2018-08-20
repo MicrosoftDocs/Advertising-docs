@@ -28,6 +28,18 @@ Maps an account level property name to a string value.
 
 ## <a name="remarks"></a>Remarks
 ### <a name="accountpropertyvalues"></a>Account Property Values
+#### <a name="adclickparalleltracking"></a>AdClickParallelTracking
+Determines whether parallel tracking is enabled. Parallel tracking lets you send users directly to your final URL while click measurement runs in the background.
+
+Parallel tracking reduces the time it takes for your landing page to load, increasing customer satisfaction with your ad and website (making conversions more likely!).
+
+You need to have {lpurl] or one of its variants in your URL's tracking template for parallel tracking to work. For more information see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2-500).
+
+If the [Name](#name) element is set to *AdClickParallelTracking*, then the [Value](#value) can be set to either *true* or *false*. If the value is *true*, then parallel tracking is enabled.
+
+> [!IMPORTANT]
+> Starting in Q4 calendar year 2018 parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and all other customers are opted out. By the end of calendar year 2018 we plan to require parallel tracking for all customers i.e., all customers will be opted in. At that time the option to turn off parallel tracking will not be available. 
+
 #### <a name="msclkidautotaggingenabled"></a>MSCLKIDAutoTaggingEnabled
 Determines whether auto-tagging of the MSCLKID query string parameter is enabled. The MSCLKID is a 32-character GUID that is unique for each ad click.
 

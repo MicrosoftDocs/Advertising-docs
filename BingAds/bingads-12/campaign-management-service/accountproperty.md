@@ -28,16 +28,28 @@ Maps an account level property name to a string value.
 
 ## <a name="remarks"></a>Remarks
 ### <a name="accountpropertyvalues"></a>Account Property Values
+#### <a name="adclickparalleltracking"></a>AdClickParallelTracking
+Determines whether parallel tracking is enabled. Parallel tracking lets you send users directly to your final URL while click measurement runs in the background.
+
+Parallel tracking reduces the time it takes for your landing page to load, increasing customer satisfaction with your ad and website (making conversions more likely!).
+
+You need to have {lpurl] or one of its variants in your URL's tracking template for parallel tracking to work. For more information see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2-500).
+
+If the [Name](#name) element is set to *AdClickParallelTracking*, then the [Value](#value) can be set to either *true* or *false*. If the value is *true*, then parallel tracking is enabled.
+
+> [!IMPORTANT]
+> Starting in Q4 calendar year 2018 parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and all other customers are opted out. By the end of calendar year 2018 we plan to require parallel tracking for all customers i.e., all customers will be opted in. At that time the option to turn off parallel tracking will not be available. 
+
 #### <a name="msclkidautotaggingenabled"></a>MSCLKIDAutoTaggingEnabled
 Determines whether auto-tagging of the MSCLKID query string parameter is enabled. The MSCLKID is a 32-character GUID that is unique for each ad click.
 
-If the *Name* element is set to *MSCLKIDAutoTaggingEnabled*, then the value can be set to either *True* or *False*. If the value is *True*, then the MSCLKID auto tagging feature is enabled. You might want to enable auto-tagging of MSCLKID for tracking leads via offline conversion goals. If auto-tagging of MSCLKID is enabled, the MSCLKID is automatically appended to the landing page URL when a customer clicks on your ad. For example, *www.contoso.com/?msclkid={msclkid}*. The click ID is unique for each ad click and multiple clicks on the same ad from the same user will result in multiple click IDs.
+If the [Name](#name) element is set to *MSCLKIDAutoTaggingEnabled*, then the [Value](#value) can be set to either *true* or *false*. If the value is *true*, then the MSCLKID auto tagging feature is enabled. You might want to enable auto-tagging of MSCLKID for tracking leads via offline conversion goals. If auto-tagging of MSCLKID is enabled, the MSCLKID is automatically appended to the landing page URL when a customer clicks on your ad. For example, *www.contoso.com/?msclkid={msclkid}*. The click ID is unique for each ad click and multiple clicks on the same ad from the same user will result in multiple click IDs.
 
 > [!IMPORTANT]
-> Every time you add or update a new [DurationGoal](durationgoal.md), [EventGoal](eventgoal.md), [OfflineConversionGoal](offlineconversiongoal.md), [PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md) or [UrlGoal](urlgoal.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](accountproperty.md) is set to *True* automatically. If the Scope of the goal is set to *Customer* level, then the [AccountProperty](accountproperty.md) for all accounts under the Customer will be set. 
+> Every time you add or update a new [DurationGoal](durationgoal.md), [EventGoal](eventgoal.md), [OfflineConversionGoal](offlineconversiongoal.md), [PagesViewedPerVisitGoal](pagesviewedpervisitgoal.md) or [UrlGoal](urlgoal.md) via either the Bing Ads web application or Campaign Management API, the *MSCLKIDAutoTaggingEnabled* value of the corresponding [AccountProperty](accountproperty.md) is set to *true* automatically. If the Scope of the goal is set to *Customer* level, then the [AccountProperty](accountproperty.md) for all accounts under the Customer will be set. 
 
 #### <a name="trackingurltemplate"></a>TrackingUrlTemplate
-If the *Name* element is set to *TrackingUrlTemplate*, then the value represents your account's tracking template to use as a default for all URLs in your account. The value of the *TrackingUrlTemplate* key can be set to any valid string as described below.
+If the [Name](#name) element is set to *TrackingUrlTemplate*, then the [Value](#value) represents your account's tracking template to use as a default for all URLs in your account. The value of the *TrackingUrlTemplate* key can be set to any valid string as described below.
 
 - Tracking templates defined for lower level entities e.g. keyword override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](http://go.microsoft.com/fwlink/?LinkID=627130).
 
@@ -50,7 +62,7 @@ If the *Name* element is set to *TrackingUrlTemplate*, then the value represents
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the final URL will include the key and value placeholders of your custom parameters without substitution. For example if your tracking template is  for example *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither {_season} or {_promocode}  are defined at the campaign, ad group, keyword, or ad level, then the final URL will be the same.
 
 > [!NOTE]
-> To delete the account's tracking template set the *Name* to *TrackingUrlTemplate* and the *Value* to *""* (empty string).
+> To delete the account's tracking template set the [Name](#name) to *TrackingUrlTemplate* and the *Value* to *""* (empty string).
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
