@@ -99,7 +99,7 @@ The subaccount specifies the default bid and bid multipliers to use for hotel gr
 
 For details about the valid bid range and budget for your market, see the Currency Value table in the [Currencies](/bingads/guides/currencies) topic.
 
-To pause all hotels in the subaccount, set the subaccount's `Bid` property to a [PercentageBid](../hotel-service/reference.md#PercentageBid) object and the percentage bid amount to zero (0.0). 
+To pause all hotels in the subaccount, set the subaccount's `Bid` property to a [PercentageBid](../hotel-service/reference.md#percentagebid) object and the percentage bid amount to zero (0.0). 
 
 If the subaccount specifies bid multipliers and you want to remove them, set `BidMultipliers` to an empty array (for example, "BidMultipliers":[]).
 
@@ -345,7 +345,7 @@ For details about the valid bid range and budget for your market, see the Curren
 
 If the subaccount specifies a maximum bid, the hotel group's bid must be less than the subaccount's maximum bid.
 
-To pause all hotels in the hotel group, set the group's `Bid` property to a [PercentageBid](../hotel-service/reference.md#PercentageBid) object and the percentage bid amount to zero (0.0). 
+To pause all hotels in the hotel group, set the group's `Bid` property to a [PercentageBid](../hotel-service/reference.md#percentagebid) object and the percentage bid amount to zero (0.0). 
 
 If the group specifies a bid greater than zero but the group's hotels are not serving, it may be because the subaccount's bid is zero. 
 
@@ -572,7 +572,7 @@ For details about the valid bid range for your market, see the Currency Value ta
 
 If the subaccount specifies a maximum bid, the hotel's bid must be less than the subaccount's maximum bid.
 
-To pause a hotel, set its `Bid` property to a [PercentageBid](../hotel-service/reference.md#PercentageBid) object and the percentage bid amount to zero (0.0). 
+To pause a hotel, set its `Bid` property to a [PercentageBid](../hotel-service/reference.md#percentagebid) object and the percentage bid amount to zero (0.0). 
 
 If the hotel specifies a bid greater than zero but it's not serving, it may be because the bid of the hotel group or subaccount it belongs to is zero. 
 
