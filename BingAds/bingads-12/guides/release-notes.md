@@ -12,12 +12,27 @@ For information about the changes to the Bing Ads Version 12 services for each m
 ## <a name="august2018"></a>August 2018
 For information about this month's changes to Bing Ads services, see the following sections.
  
+- [Ad Click Parallel Tracking](#adclickparalleltracking-august2018)   
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-august2018)   
 - [Customer Address](#customeraddress-august2018)  
 - [Validate Address](#validateaddress-august2018)  
 - [Entity Attributes for the Change History Report](#changehistoryreportentity-august2018)  
 - [Profile Criteria for Campaigns](#campaignprofilecriteria-august2018)  
 - [Similar Audiences for Remarketing Lists](#similaraudiences-august2018)  
+
+### <a name="adclickparalleltracking-august2018"></a>Ad Click Parallel Tracking
+Support for ad click parallel tracking is enabled for pilot customers. 
+
+> [!IMPORTANT]
+> Starting in Q4 calendar year 2018 parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and all other customers are opted out. By the end of calendar year 2018 we plan to require parallel tracking for all customers i.e., all customers will be opted in. At that time the option to turn off parallel tracking will not be available. 
+
+Parallel tracking lets you send users directly to your final URL while click measurement runs in the background.
+
+Parallel tracking reduces the time it takes for your landing page to load, increasing customer satisfaction with your ad and website (making conversions more likely!).
+
+You need to have {lpurl] or one of its variants in your URL's tracking template for parallel tracking to work. For more information see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2-500).
+
+You can manage parallel tracking via the [GetAccountProperties](../campaign-management-service/getaccountproperties.md) and [SetAccountProperties](../campaign-management-service/setaccountproperties.md) service operations. If the account property [Name](../campaign-management-service/accountproperty.md#name) element is set to [AdClickParallelTracking](../campaign-management-service/accountproperty.md#adclickparalleltracking), then the [Value](../campaign-management-service/accountproperty.md#value) can be set to either *true* or *false*. If the value is *true*, then parallel tracking is enabled.
 
 ### <a name="sdk-august2018"></a>Bing Ads Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated.
