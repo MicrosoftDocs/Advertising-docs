@@ -99,7 +99,7 @@ The subaccount specifies the default bid and bid multipliers to use for hotel gr
 
 For details about the valid bid range and budget for your market, see the Currency Value table in the [Currencies](/bingads/guides/currencies) topic.
 
-To prevent hotels in the subaccount from serving, set the `Bid` or `Budget` property to zero (0.0). 
+To pause all hotels in the subaccount, set the subaccount's `Bid` property to a [PercentageBid](../hotel-service/reference.md#percentagebid) object and the percentage bid amount to zero (0.0). 
 
 If the subaccount specifies bid multipliers and you want to remove them, set `BidMultipliers` to an empty array (for example, "BidMultipliers":[]).
 
@@ -246,7 +246,7 @@ For an example that gets, adds, and updates hotel groups, see [code examples](..
 
 ### Listing hotel groups
 
-By default, when you request a list of hotel groups under a subaccount, the API returns a maximum of 1,000 groups. To determine the total number of groups in the subaccount, use the [$count](./reference.md#count-param) query paramater. To specify the number of groups to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of groups that you can request in single call is 5,000. If the subaccount contains more than 5,000 groups, use the $top and [$skip](./reference.md#skip-param) query parameters to page through all groups.
+By default, when you request a list of hotel groups under a subaccount, the API returns a maximum of 1,000 groups. To determine the total number of groups in the subaccount, use the [$count](./reference.md#count-param) query parameter. To specify the number of groups to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of groups that you can request in single call is 5,000. If the subaccount contains more than 5,000 groups, use the $top and [$skip](./reference.md#skip-param) query parameters to page through all groups.
 
 To get a list of the first 1,000 hotel groups under a subaccount, send the following request.
 
@@ -345,9 +345,11 @@ For details about the valid bid range and budget for your market, see the Curren
 
 If the subaccount specifies a maximum bid, the hotel group's bid must be less than the subaccount's maximum bid.
 
-To prevent hotels in a hotel group from serving, set the `Bid` property to zero (0.0). If the `Bid` property is greater than zero but the hotels in the group are not serving, it may be because the `Bid` or `Budget` property of the subaccount that the group belongs to is zero. 
+To pause all hotels in the hotel group, set the group's `Bid` property to a [PercentageBid](../hotel-service/reference.md#percentagebid) object and the percentage bid amount to zero (0.0). 
 
-If the hotel group specifies a bid and you want to remove it, set `Bid` to null (for example, "Bid":null).
+If the group specifies a bid greater than zero but the group's hotels are not serving, it may be because the subaccount's bid is zero. 
+
+To remove the hotel group's bid, set `Bid` to null (for example, "Bid":null).
 
 If the hotel group specifies bid multipliers and you want to remove them, set `BidMultipliers` to an empty array (for example, "BidMultipliers":[]).
 
@@ -470,7 +472,7 @@ For an example that gets and updates hotels, see [hotel examples](../hotel-servi
 
 ### Listing hotels
 
-By default, when you request a list of hotels in a hotel group, the API returns a maximum of 1,000 hotels. To determine the total number of hotels in the hotel group, use the [$count](./reference.md#count-param) query paramater. To specify the number of hotels to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of hotels that you can request in single call is 5,000. If your hotel group contains more than 5,000 hotels, use the $top and [$skip](./reference.md#skip-param) query parameters to page through all hotels.
+By default, when you request a list of hotels in a hotel group, the API returns a maximum of 1,000 hotels. To determine the total number of hotels in the hotel group, use the [$count](./reference.md#count-param) query parameter. To specify the number of hotels to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of hotels that you can request in single call is 5,000. If your hotel group contains more than 5,000 hotels, use the $top and [$skip](./reference.md#skip-param) query parameters to page through all hotels.
 
 To get the first 1,000 hotels in a hotel group, send the following request.
 
@@ -570,9 +572,11 @@ For details about the valid bid range for your market, see the Currency Value ta
 
 If the subaccount specifies a maximum bid, the hotel's bid must be less than the subaccount's maximum bid.
 
-To prevent a hotel from serving, set the `Bid` property to zero (0.0). If the `Bid` property is greater than zero but the hotel is not serving, it may be because the `Bid` property of the hotel group or subaccount that it belongs to is zero. 
+To pause a hotel, set its `Bid` property to a [PercentageBid](../hotel-service/reference.md#percentagebid) object and the percentage bid amount to zero (0.0). 
 
-If the hotel specifies a bid and you want to remove it, set `Bid` to null (for example, "Bid":null).
+If the hotel specifies a bid greater than zero but it's not serving, it may be because the bid of the hotel group or subaccount it belongs to is zero. 
+
+To remove a hotel's bid, set its `Bid` to null (for example, "Bid":null).
 
 If the hotel specifies bid multipliers and you want to remove them, set `BidMultipliers` to an empty array (for example, "BidMultipliers":[]).
 
@@ -674,9 +678,9 @@ Content-Length: 169
 }
 ``` 
 
-The Associate method should always return success. If one or more of the associations fail, the response will contain the input association of the failed associations, and the reason for the failure. 
+The Associate method should always return success. If one or more of the associations fail, the response contains the input association of the failed associations, and the reason for the failure. 
 
-The response contains a [CollectionResponse](../hotel-service/reference.md#collectionresponse) object. If the all associations succeeded, the `value` array is empty. Otherwise, `value` contains a [HotelAssociation](../hotel-service/reference.md#hotelassociation) object for each association that failed. The association's `Errors` field contains the reasons for the failure.
+The response contains a [CollectionResponse](../hotel-service/reference.md#collectionresponse) object. If all associations succeeded, the `value` array is empty. Otherwise, `value` contains a [HotelAssociation](../hotel-service/reference.md#hotelassociation) object for each association that failed. The association's `Errors` field contains the reasons for the failure.
 
 ```
 HTTP/1.1 200 OK
@@ -707,7 +711,7 @@ x-ms-trackingid: a5f2510e-709a-4370-876e-bfb05ef2b8df
 ### Getting hotel associations
 
 
-By default, when you request a list of associations in a subaccount, the API returns a maximum of 1,000 associations. To determine the total number of associations, use the [$count](./reference.md#count-param) query paramater. To specify the number of associations to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of associations that you can request in single call is 5,000. If your subaccount contains more than 5,000 associations, use the $top and [$skip](./reference.md#skip-param) query parameters to page through all associations.
+By default, when you request a list of associations in a subaccount, the API returns a maximum of 1,000 associations. To determine the total number of associations, use the [$count](./reference.md#count-param) query parameter. To specify the number of associations to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of associations that you can request in single call is 5,000. If your subaccount contains more than 5,000 associations, use the $top and [$skip](./reference.md#skip-param) query parameters to page through all associations.
 
 
 To get  the first 1,000 hotel and hotel group associations for a subaccount, send the following request:
