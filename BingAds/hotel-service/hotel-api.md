@@ -40,7 +40,7 @@ For information about moving the hotel to a different hotel group, see [Associat
 
 You'll need credentials and your hotel feeds set up. For information, see [Getting Started](../hotel-service/get-started.md).
 
-Your account manager also needs to enable your account to use Hotel Ads in both the production and sandbox environment.
+Your account manager also needs to enable your account to use Hotel Ads in both the production and sandbox environments.
 
 
 ## How do I manage my resources?
