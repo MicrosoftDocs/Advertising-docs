@@ -104,6 +104,8 @@ Boolean|Is **true** if the budget is meant to be shared by multiple campaigns; o
 ## <a name="setamount-double-amount-"></a>setAmount(double amount)
 Sets the budget's amount.
 
+To update a shared budget, you must get the budget using [BudgetSelector](./BudgetSelector.md) and [BudgetIterator](./BudgetIterator.md). Setting the budget's amount fails if you get the budget using the [Campaign](./Campaign.md) entity's `getBudget` method.
+
 ### Arguments
 |Name|Type|Description|
 |-|-|-
