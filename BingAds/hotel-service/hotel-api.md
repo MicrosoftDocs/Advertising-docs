@@ -36,9 +36,11 @@ Hotels belong to a single hotel group. Hotels specify the bid and bid multiplier
 For information about moving the hotel to a different hotel group, see [Associating hotels with hotel groups](../hotel-service/manage-hotel-campaigns.md#associatinghotels).
 
 
-## What needs in place before I start?
+## What needs to be in place before I start?
 
-You'll need credentials and your hotel feeds set up. For information, see [Getting Started](../hotel-service/get-started.md)
+You'll need credentials and your hotel feeds set up. For information, see [Getting Started](../hotel-service/get-started.md).
+
+Your account manager also needs to enable your account to use Hotel Ads in both the production and sandbox environment.
 
 
 ## How do I manage my resources?
