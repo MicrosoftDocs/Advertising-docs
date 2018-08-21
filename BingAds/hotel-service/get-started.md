@@ -20,7 +20,7 @@ Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. Th
 
 ## Enable your account for Hotel Ads
 
-Your account manager needs to enable your account before your can use Hotel Ads or the API. Please confirm with your account manager that your account is enabled in both the production and sandbox environments.
+Your account manager needs to enable your account before you can use Hotel Ads or the API. Please confirm with your account manager that your account is enabled in both the production and sandbox environments.
 
 
 <a name="authenticatingcredentials"/>
