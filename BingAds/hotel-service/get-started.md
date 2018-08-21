@@ -18,6 +18,11 @@ To use the Hotel API, you must have a Bing Ads account and a Microsoft account. 
 
 Unlike the other Bing Ads APIs, the Hotel API does not use a developer token. The API ignores it if you include it.
 
+## Enable your account for Hotel Ads
+
+Your account manager needs to enable your account before your can use Hotel Ads or the API. Please confirm with your account manager that your account is enabled in both the production and sandbox environment.
+
+
 <a name="authenticatingcredentials"/>
 
 ## Authenticating your credentials
@@ -87,7 +92,7 @@ You use the sandbox environment to test your application before putting it in pr
 5.	For **Go Live**, click **Skip payment information**
 
 
-After Bing creates the account, you may use the MSA with the Hotel Ads API.
+After creating your sandbox account and getting your MSA, let your account manager know so they can enable it for Hotel Ads. You won't be able to use Hotel Ads or the API in sandbox until it's enabled.
 
 > [!NOTE]
 > The MSA signup process returns you to the SI Bing Ads user interface (ui.si.bingads.microsoft.com). After completing the MSA process, sign out of the SI interface. To access Hotel Ads using the Bing Ads user interface in sandbox, go to <a href="https://ui.sandbox.bingads.microsoft.com" data-raw-source="[https://ui.sandbox.bingads.microsoft.com](https://ui.sandbox.bingads.microsoft.com)">https://ui.sandbox.bingads.microsoft.com</a> and sign in using your new MSA email address.
