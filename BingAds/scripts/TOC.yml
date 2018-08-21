@@ -30,6 +30,8 @@
       href: concepts/ids.md 
     - name: Mapping bid strategies
       href: concepts/bid-strategies.md 
+    - name: Shared budgets
+      href: concepts/shared-budgets.md 
     - name: Mapping editorial approval
       href: concepts/editorial-approval.md 
     - name: Mapping time zones
