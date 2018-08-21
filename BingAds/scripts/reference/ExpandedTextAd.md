@@ -25,7 +25,6 @@ Contains the methods used to manage an expanded text ad. This object derives fro
 [getHeadlinePart2](#getheadlinepart2)|string|Gets the second part of this ad's title.
 [getPath1](#getpath1)|string|Gets the optional first path that's appended to this ad's display URL.
 [getPath2](#getpath2)|string|Gets the optional second path that's appended to this ad's display URL.
-[getPolicyApprovalStatus](#getpolicyapprovalstatus)|string|Gets this ad's editorial approval status.
 [getStats](#getstats)|[Stats](Stats.md)|Gets this ad's performance data.
 [isEnabled](#isenabled)|boolean|Gets a Boolean value that indicates whether this ad is enabled.
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this ad is paused.
@@ -103,15 +102,6 @@ Gets the optional second path that's appended to this ad's display URL.
 |Type|Description|
 |-|-
 string|The second path that's appended to this ad's display URL.
-
-
-## <a name="getpolicyapprovalstatus"></a>getPolicyApprovalStatus
-Gets this ad's editorial approval status.
-
-### Returns
-|Type|Description|
-|-|-
-string|The ad's editorial approval status. The following are the possible values.<ul><li>APPROVED</li><li>APPROVED_LIMITED</li><li>UNDER_REVIEW</li><li>DISAPPROVED</li></ul>
 
 
 ## <a name="getstats"></a>getStats
