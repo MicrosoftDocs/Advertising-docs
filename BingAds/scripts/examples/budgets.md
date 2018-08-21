@@ -13,7 +13,7 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-The following sections show examples of scripts that perform various actions against shared budgets.
+The following sections show examples of scripts that perform various actions against [shared budgets](../concepts/shared-budgets.md).
 
 
 ## Add shared budgets
