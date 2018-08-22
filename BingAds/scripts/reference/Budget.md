@@ -31,6 +31,8 @@ Contains the methods for managing a budget. For more information, see [Budget](/
 
 Gets a [selector](../concepts/selectors.md) that returns all campaigns that share this budget. 
 
+You can call this method only from a budget object that you get from [BudgetSelector](BudgetSelector.md); you cannot call it if the source of the budget is the campaign's [getBudget](Campaign.md#getbudget) method.
+
 ### Returns
 
 |Type|Description|
@@ -46,6 +48,7 @@ Gets the budget's amount.
 |-|-
 double|The budget, in the account's currency.
 
+
 ## <a name="getdeliverymethod"></a>getDeliveryMethod
 Gets the budget's delivery method (budget type). 
 
@@ -53,6 +56,7 @@ Gets the budget's delivery method (budget type).
 |Type|Description|
 |-|-
 string|The budget's delivery method. Possible values are:<br /><ul><li>STANDARD</li><li>ACCELERATED</li></ul>For more information, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1)
+
 
 ## <a name="getentitytype"></a>getEntityType
 Gets this entity's type.
@@ -62,6 +66,7 @@ Gets this entity's type.
 |-|-
 string|This entity's type, which is *Budget*.
 
+
 ## <a name="getid"></a>getId
 Gets the ID that uniquely identifies this shared budget.
 
@@ -69,6 +74,7 @@ Gets the ID that uniquely identifies this shared budget.
 |Type|Description|
 |-|-
 string|The ID that uniquely identifies this shared budget. Returns null if the budget is not a shared budget.
+
 
 ## <a name="getname"></a>getName
 Gets this shared budget's name.
@@ -82,7 +88,7 @@ string|The shared budget's name. Returns null if the budget is not a shared budg
 ## <a name="getstats"></a>getStats
 Gets the performance data for for campaigns that share this budget. 
 
-Performance data is available for shared budgets only. To call this method, you must have called the selector's [forDateRange(String dateRange)](BudgetSelector.md#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](BudgetSelector.md#fordaterange-object-datefrom-object-dateto-) method. 
+Performance data is available for shared budgets only. To call this method, you must have called the budget selector's [forDateRange(String dateRange)](BudgetSelector.md#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](BudgetSelector.md#fordaterange-object-datefrom-object-dateto-) method. 
 
 ### Returns:
 |Type|Description|
@@ -93,7 +99,7 @@ Performance data is available for shared budgets only. To call this method, you 
 ## <a name="isexplicitlyshared"></a>isExplicitlyShared
 Gets a Boolean value that indicates whether this budget is a shared budget.
 
-Shared budgets let you set a single daily budget that's used by any campaign within the same account that you designate. Without a shared budget your campaigns may not fully utilize their budgets. For example, without a shared budget, if you set campaign A's budget to $10 and campaign B's budget to $10, it's possible that campaign A may spend only $8 of its budget. But because campaign B is performing well, it spent all of its budget and could have spent more. With a shared budget, campaign B would automatically take the remaining $2, increasing the chance that more traffic is sent your way.
+With shared budgets, you identify the campaigns within the same account that you want to share the budget. Sharing a budget can help you fully utilize the budget. For example, if campaign A had its own $10 budget and campaign B had its own $10 budget, it's possible that campaign A may spend only $8 of its budget. But because campaign B is performing well, it spent all of its budget and could have spent more. If the campaigns shared a budget, campaign B would automatically use the $2 that campaign A didn't use, increasing the chance that more traffic is sent your way.
 
 ### Returns:
 |Type|Description|
@@ -116,6 +122,7 @@ amount|double|The budget, in the account's currency.
 |-|-
 void|Returns nothing.
 
+
 ## <a name="setdeliverymethod-string-method-"></a>setDeliveryMethod(string method)
 Sets the budget's delivery method. 
 
@@ -133,3 +140,4 @@ void|Returns nothing.
 ## See also
 
 [Campaign.getBudget()](Campaign.md#getbudget)
+[BudgetIterator.next()](BudgetIterator.md#next)
