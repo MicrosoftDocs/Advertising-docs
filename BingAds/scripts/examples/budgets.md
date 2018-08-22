@@ -97,6 +97,36 @@ function main() {
 ```
 
 
+## Get all campaigns that share the budget
+
+To get all the campaigns that share the budget, call budget's [campaigns](../reference/Budget.md#campaigns) method. You can call this method only from a [Budget](../reference/Budget.md) object that you get from [BudgetSelector](../reference/BudgetSelector.md); you cannot call it if the source of the budget is the campaign's [getBudget](../reference/Campaign.md#getbudget) method.
+
+
+
+```javascript
+function main() {
+    var sharedBudgetId = '12345';
+
+    var budgets = BingAdsApp.budgets()
+        .withIds([sharedBudgetId])
+        .get();
+
+    if (budgets.hasNext()) {
+        var budget = budgets.next();
+        Logger.log(`${budget.getName()} (${budget.getAmount()}) shared by campaigns:\n\n`);
+
+        var campaigns = budget.campaigns().get();
+
+        while (campaigns.hasNext()) {
+            var campaign = campaigns.next();
+            Logger.log(`${campaign.getName()} (${campaign.getId()})`);
+        }
+    }
+}
+```
+
+
+
 ## Get a shared budget's performance data
 
 To get a shared budget's performance metrics, call the budget's [getStats](../reference/Budget.md#getstats) method. When you get the list of share budgets, you need to specify the date range of the metrics data you want. You can specify the date range using a predefined literal, such as LAST_MONTH or TODAY, or a start and end date. To specify the date range, use one of the `forDateRange` methods when you select the budgets (see [BudgetSelector](../reference/BudgetSelector.md)). 
