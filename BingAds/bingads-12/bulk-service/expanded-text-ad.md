@@ -408,7 +408,7 @@ The text cannot contain the newline (\n) character.
 **Delete:** Read-only  
 
 ### <a name="titlepart1"></a>Title Part 1
-The first part of the ad title. The *Title Part 1* and *Title Part 2* values will be automatically separated by a space, dash, and space (" - ") when the ad is shown, and you may not specify the dash in either of the title parts. Each part of the title must contain at least one word. 
+The first part of the ad title. The *Title Part 1* and *Title Part 2* values will be automatically separated by a space, vertical bar, and space (" | ") when the ad is shown. Each part of the title must contain at least one word. 
 
 The title can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
 
@@ -425,7 +425,7 @@ The title cannot contain the newline (\n) character.
 **Delete:** Read-only  
 
 ### <a name="titlepart2"></a>Title Part 2
-The second part of the ad title. The *Title Part 1* and *Title Part 2* values will be automatically separated by a space, dash, and space (" - ") when the ad is shown, and you may not specify the dash in either of the title parts. Each part of the title must contain at least one word.
+The second part of the ad title. The *Title Part 1* and *Title Part 2* values will be automatically separated by a space, vertical bar, and space (" | ") when the ad is shown. Each part of the title must contain at least one word.
 
 The title can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
 
