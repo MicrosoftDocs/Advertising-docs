@@ -26,9 +26,9 @@ For information about creating a feed file using an XML document, see [Creating 
 
 ## Getting the data right
 
-Because Bing attempts to match properties in your hotel feed to businesses in Bing Maps, it is import that the data you provide about the hotel is accurate and complete.
+Because Bing attempts to match properties in your hotel feed to businesses in Bing Maps, it is important that the data you provide about the hotel is accurate and complete.
 
-If your property has missing or incorrect information, Bing may not be able to match it. If Bing cannot match the property, Bing will not advertise it. When your TAM imports your hotel feed file, they will let you know the hotels that Bing could not match.
+If your property has missing or incorrect information, Bing may not be able to match it. If Bing cannot match the property, Bing will not advertise it. After your TAM imports your hotel feed file, they'll send you a report that indicates which hotels Bing matched or didn't match. If Bing didn't match the hotel, the report includes the message, *Unable to match this hotel to a property in Bing*. For help improving your match rate, work with your TAM.
 
 
 

@@ -31,9 +31,9 @@ For information about creating a feed file using CSV or TSV file format, see [Cr
 
 ## Getting the data right
 
-Because Bing attempts to match properties in your hotel feed to businesses in Bing Maps, it is import that the data you provide about the hotel is accurate and complete.
+Because Bing attempts to match properties in your hotel feed to businesses in Bing Maps, it is important that the data you provide about the hotel is accurate and complete.
 
-If your property has missing or incorrect information, Bing may not be able to match it. If Bing cannot match the property, Bing will not advertise it. When your TAM imports your hotel feed file, they will let you know the hotels that Bing could not match.
+If your property has missing or incorrect information, Bing may not be able to match it. If Bing cannot match the property, Bing will not advertise it. After your TAM imports your hotel feed file, they'll send you a report that indicates which hotels Bing matched or didn't match. If Bing didn't match the hotel, the report includes the message, *Unable to match this hotel to a property in Bing*. For help improving your match rate, work with your TAM.
 
 
 ## The top-level element in your feed
@@ -123,7 +123,7 @@ If you remove a hotel and add it back in a later feed with the same property val
   
 - Elements must be in the order specified in the Hotel XSD.
   
-- If your data includes special characters such as apostrophies or quotes, escape them or use CDATA sections. If you escape them, you may use entity codes or character codes. For example, you can escape Paul's as Paul\&apos;s or Paul\&#39;s.
+- If your data includes special characters such as apostrophes or quotes, escape them or use CDATA sections. If you escape them, you may use entity codes or character codes. For example, you can escape Paul's as Paul\&apos;s or Paul\&#39;s.
   
 - Do not include elements that do not contain data. For example, if you do not provide the geographical coordinates for a hotel, do not include empty \<latitude\> and \<longitude\> elements.
     
