@@ -127,7 +127,7 @@ The following attribute and impression share performance statistics columns are 
 |--------------|-------------------------------------------|
 |AdDistribution<br/><br/>AdId<br/><br/>AdStatus<br/><br/>BidMatchType<br/><br/>ClickType<br/><br/>DeliveredMatchType<br/><br/>Language<br/><br/>LocalStoreCode<br/><br/>Network<br/><br/>TopVsOther|BenchmarkBid<br/><br/>BenchmarkCtr<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
 
-## <a name="timeperiod"></a>TimePeriod Column
+## <a name="timeperiod"></a>Time Period Column
 If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For example, if the aggregation level is Daily, the report uses GregorianDate as the column label. The following are the column labels that the report uses based on the specified aggregation level.
 
 |Aggregation|Downloaded Column Label|Description|
