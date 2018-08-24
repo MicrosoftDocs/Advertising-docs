@@ -124,7 +124,7 @@ The following attribute and impression share performance statistics columns are 
 |--------------|-------------------------------------------|
 |AdDistribution<br/><br/>AdId<br/><br/>AdStatus<br/><br/>BidMatchType<br/><br/>ClickType<br/><br/>DeliveredMatchType<br/><br/>Language<br/><br/>LocalStoreCode<br/><br/>Network<br/><br/>TopVsOther|BenchmarkBid<br/><br/>BenchmarkCtr<br/><br/>ImpressionLostToBudgetPercent<br/><br/>ImpressionLostToRankPercent<br/><br/>ImpressionSharePercent|
 
-## <a name="timeperiod"></a>TimePeriod Column
+## <a name="timeperiod"></a>Time Period Column
 If you include the *TimePeriod* column, then the format of the values in the downloaded report will vary depending on the aggregation level that you specify in the report request. For example, if the aggregation level is Daily, each field in TimePeriod column will contain the day formatted as *yyyy-mm-dd*.
 
 |Aggregation|Description|
