@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # BudgetSelector
 
-Contains the methods for filtering and sorting the list of shared. For information about selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods for filtering and sorting the list of shared budgets. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 Example usage:
 ```javascript
