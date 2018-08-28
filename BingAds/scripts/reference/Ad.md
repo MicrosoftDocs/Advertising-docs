@@ -18,11 +18,17 @@ The base object that ads such as expanded text ads derive from.
 |Method Name|Return Type|Description|
 |-|-|-
 [asType](#astype)|[AdViewSpace](AdViewSpace.md)|Contains the methods used to cast this ad to a specific ad type.
+[enable](#enable)|void|Enables this ad.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getId](#getid)|string|Gets the ID that uniquely identifies this ad.
 [getPolicyApprovalStatus](#getpolicyapprovalstatus)|string|Gets this ad's editorial approval status.
+[getStats](#getstats)|[Stats](Stats.md)|Gets this ad's performance data.
 [getType](#gettype)|string|Gets this ad's derived type.
+[isEnabled](#isenabled)|boolean|Gets a Boolean value that indicates whether this ad is enabled.
+[isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this ad is paused.
 [isType](#istype)|[AdTypeSpace](AdTypeSpace.md)|Contains the methods used to test if an ad is of the specified type..
+[pause](#pause)|void|Pauses this ad.
+[remove](#remove)|void|Removes this ad.
 [urls](#urls)|[AdUrls](AdUrls.md)|Contains the methods used to get this ad's final URLs, tracking template, and custom parameters.
 
 ## <a name="astype"></a>asType
@@ -32,6 +38,16 @@ Contains the methods used to cast this ad to a specific ad type.
 |Type|Description|
 |-|-
 [AdViewSpace](AdViewSpace.md)|Contains the methods used to cast this ad to a specific ad type.
+[getStats](#getstats)|[Stats](Stats.md)|Gets this ad's performance data.
+
+
+## <a name="enable"></a>enable
+Enables this ad.
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
 
 
 ## <a name="getentitytype"></a>getEntityType
@@ -61,6 +77,15 @@ Gets this ad's editorial approval status.
 string|The ad's editorial approval status. The following are the possible values.<ul><li>APPROVED</li><li>APPROVED_LIMITED</li><li>UNDER_REVIEW</li><li>DISAPPROVED</li></ul>
 
 
+## <a name="getstats"></a>getStats
+Gets this ad's performance data. 
+
+### Returns
+|Type|Description|
+|-|-
+[Stats](Stats.md)|The ad's performance data.
+
+
 ## <a name="gettype"></a>getType
 Gets this ad's derived type.
 
@@ -70,6 +95,24 @@ Gets this ad's derived type.
 string|This ad's derived type. The following are the possible types.<ul><li>EXPANDED_TEXT_AD</li></ul>.
 
 
+## <a name="isenabled"></a>isEnabled
+Gets a Boolean value that indicates whether this ad is enabled.
+
+### Returns
+|Type|Description|
+|-|-
+boolean|Is **true** if this ad is enabled; otherwise, **false**.
+
+
+## <a name="ispaused"></a>isPaused
+Gets a Boolean value that indicates whether this ad is paused.
+
+### Returns
+|Type|Description|
+|-|-
+Boolean|Is **true** if this ad is paused; otherwise, **false**.
+
+
 ## <a name="istype"></a>isType
 Contains the methods used to test if an ad is of the specified type.
 
@@ -77,6 +120,24 @@ Contains the methods used to test if an ad is of the specified type.
 |Type|Description|
 |-|-
 [AdTypeSpace](AdTypeSpace.md)|Contains the methods used to test if an ad is of the specified type.
+
+
+## <a name="pause"></a>pause
+Pauses this ad.
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
+
+
+## <a name="remove"></a>remove
+Removes this ad.
+
+### Returns
+|Type|Description|
+|-|-
+void|Returns nothing.
 
 
 ## <a name="urls"></a>urls

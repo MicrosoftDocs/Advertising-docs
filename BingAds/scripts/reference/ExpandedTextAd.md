@@ -17,7 +17,6 @@ Contains the methods used to manage an expanded text ad. This object derives fro
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[enable](#enable)|void|Enables this ad.
 [getAdGroup](#getadgroup)|[AdGroup](Adgroup.md)|Gets the ad group that this ad belongs to.
 [getCampaign](#getcampaign)|[Campaign](Campaign.md)|Gets the campaign that this ad belongs to.
 [getDescription](#getdescription)|string|Gets this ad's copy text.
@@ -26,19 +25,7 @@ Contains the methods used to manage an expanded text ad. This object derives fro
 [getPath1](#getpath1)|string|Gets the optional first path that's appended to this ad's display URL.
 [getPath2](#getpath2)|string|Gets the optional second path that's appended to this ad's display URL.
 [getStats](#getstats)|[Stats](Stats.md)|Gets this ad's performance data.
-[isEnabled](#isenabled)|boolean|Gets a Boolean value that indicates whether this ad is enabled.
-[isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this ad is paused.
-[pause](#pause)|void|Pauses this ad.
-[remove](#remove)|void|Removes this ad.
-
-
-## <a name="enable"></a>enable
-Enables this ad.
-
-### Returns
-|Type|Description|
-|-|-
-void|Returns nothing.
+[urls](#urls)|[AdUrls](AdUrls.md)|Contains the methods used to get this ad's final URLs, tracking template, and custom parameters.
 
 
 ## <a name="getadgroup"></a>getAdGroup
@@ -113,37 +100,10 @@ Gets this ad's performance data.
 [Stats](Stats.md)|The ad's performance data.
 
 
-## <a name="isenabled"></a>isEnabled
-Gets a Boolean value that indicates whether this ad is enabled.
+## <a name="urls"></a>urls
+Contains the methods used to get this ad's final URLs, tracking template, and custom parameters.
 
 ### Returns
 |Type|Description|
 |-|-
-boolean|Is **true** if this ad is enabled; otherwise, **false**.
-
-
-## <a name="ispaused"></a>isPaused
-Gets a Boolean value that indicates whether this ad is paused.
-
-### Returns
-|Type|Description|
-|-|-
-Boolean|Is **true** if this ad is paused; otherwise, **false**.
-
-
-## <a name="pause"></a>pause
-Pauses this ad.
-
-### Returns
-|Type|Description|
-|-|-
-void|Returns nothing.
-
-
-## <a name="remove"></a>remove
-Removes this ad.
-
-### Returns
-|Type|Description|
-|-|-
-void|Returns nothing.
+[AdUrls](AdUrls.md)|The object used to get this ad's final URLs, tracking template, and custom parameters.
