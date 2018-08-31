@@ -200,7 +200,7 @@ function main() {
 
 ### Get all ads in the account
 
-To get all the ads in an account, call the `ads` method on the [BingAdsApp](../reference/BingAdsApp) object. You can use the ad selector's methods to filter the list of ads to campaigns, ad groups, or based on ad performance. This example gets all ads from the account.
+To get all the ads in an account, call the `ads` method on the [BingAdsApp](../reference/BingAdsApp.md) object. You can use the ad selector's methods to filter the list of ads to campaigns, ad groups, or based on ad performance. This example gets all ads from the account.
 
 ```javascript
 function main() {
