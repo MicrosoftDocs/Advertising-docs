@@ -18,15 +18,11 @@ This is the top-level object of Bing Ads Scripts. Use it to navigate all entitie
 |Method Name|Return Type|Description|
 |-|-|-
 [adGroups](#adgroups)|[AdGroupSelector](./AdGroupSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all ad groups in this account.
+[budgets](#budgets)|[BudgetSelector](./BudgetSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all shared budgets in this account.
 [campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector that returns all campaigns in this account.
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a selector that returns all keywords in this account.
 [negativeKeywordLists](#negativekeywordlists)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets a selector that returns  all negative keyword lists in this account.
 [newNegativeKeywordListBuilder](#newnegativekeywordlistbuilder)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Gets a builder that you use to add a negative keyword list to this account.
-
-<!--
-[ads](#ads)|[AdSelector](./AdSelector)|Returns a selector of all ads in this account.<br />
-[getExecutionInfo](#getexecutioninfo)|[ExecutionInfo](./ExecutionInfo)|Returns information about the environment in which the script is currently executing.
--->
 
 
 ## <a name="adgroups"></a>adGroups
@@ -39,16 +35,19 @@ Gets a [selector](../concepts/selectors.md) that returns all ad groups in this a
 |-|-
 [AdGroupSelector](./AdGroupSelector.md)|A selector that returns all ad groups in the current account. Use the selector's methods to filter the list of ad groups.
 
-<!--
-## <a name="ads"></a>ads
-Returns a selector of all ads in this account.
 
+## <a name="budgets"></a>budgets
 
-### Returns:
+Gets a [selector](../concepts/selectors.md) that returns all shared budgets in this account. 
+
+This method returns only shared budgets. To get unshared (individual campaign) budgets, call the specific campaign's [getBudget](Campaign.md#getbudget) method. The campaign's budget is not shared if the if the `isExplicitlyShared` method returns **false**.
+
+### Returns
+
 |Type|Description|
 |-|-
-[AdSelector](./AdSelector)|Selector of all ads in this account.
--->
+[BudgetSelector](./BudgetSelector.md)|A selector that returns all shared budgets in the current account. Use the selector's methods to filter the list of budgets.
+
 
 ## <a name="campaigns"></a>campaigns
 
