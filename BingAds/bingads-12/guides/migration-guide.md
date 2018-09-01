@@ -17,7 +17,7 @@ The sections below describe changes from version 11 to version 12 of the [Ad Ins
 ### <a name="authentication-breakingchanges"></a>Breaking Changes
 
 #### <a name="authentication-oauth-required"></a>Microsoft Account Authentication via OAuth is Required
-Starting with Bing Ads API version 12, only OAuth authentication will be supported. Managed credentials i.e., the *UserName* and *Password* header elements are not supported. 
+Starting with Bing Ads API version 12, only OAuth authentication is supported via the *AuthenticationToken* header element. Managed credentials i.e., the *UserName* and *Password* header elements are not supported. 
 
 For more information on how to use OAuth with Bing Ads, see [Authentication with OAuth](authentication-oauth.md) and [Authentication With the SDKs](sdk-authentication.md).
 
@@ -153,6 +153,9 @@ In version 12 the AudienceNetworkInMarketAudiences and AudienceNetworkAudiences 
 #### <a name="bulk-errorcode-inmarketaudiencecouldnotbedeleted"></a>Error Code for InMarketAudienceCouldNotBeDeleted
 In-market audiences cannot be deleted in both version 11 and version 12. Custom audiences can be deleted in both version 11 and 12. The error code CustomAudienceAndInMarketAudienceCouldNotBeDeleted (4860) that is still returned in version 11 is replaced by error code InMarketAudienceCouldNotBeDeleted (4864) in version 12.
 
+#### <a name="bulk-audienceadsbidadjustment"></a>Audience Ads Bid Adjustment
+Instead of setting the [Ad Format Preference](../bulk-service/expanded-text-ad.md#adformatpreference) of an expanded text ad to *Native*, you must set it to *Audience Ad*.
+
 ## <a name="campaign"></a>Campaign Management
 
 ### <a name="campaign-breakingchanges"></a>Breaking Changes
@@ -253,6 +256,8 @@ The error code string for code 1151 is updated from CampaignServiceCampaignSetti
 
 #### <a name="campaign-audienceadsbidadjustment"></a>Audience Ads Bid Adjustment
 The NativeBidAdjustment property is renamed as AudienceAdsBidAdjustment in the [AdGroup](../campaign-management-service/adgroup.md) and [Campaign](../campaign-management-service/campaign.md) objects. 
+
+Instead of setting the [AdFormatPreference](../campaign-management-service/expandedtextad.md#adformatpreference) of an expanded text ad to *Native*, you must set it to *AudienceAd*.
 
 ### <a name="campaign-newfeatures"></a>New Features
 
@@ -480,7 +485,7 @@ Likewise when you include the TimePeriod column in version 12 the name of the co
 |Weekly|WeekStartDate|TimePeriod|
 |Yearly|Year|TimePeriod|
 
-Whereas in version 11 the time period for Hourly aggregation was split across two columns, in version 12 it will be formatted in the TimePeriod column with the date and hour (int value) delimited by a single pipe i.e., "mm/dd/yyyy hh:mm:ss&#124;hour" where hh:mm:ss is always 12:00:00 and can be ignored. For example, if the click occurred March 15, 2018 between 07:00 and 08:00, then the field in the downloaded report would be "3/15/2018 12:00:00 AM&#124;8". For more details see [ReportAggregation](../reporting-service/reportaggregation.md) and [TimePeriod Column](reports.md#timeperiod).
+Whereas in version 11 the time period for Hourly aggregation was split across two columns, in version 12 it will be formatted in the TimePeriod column with the date and hour (int value) delimited by a single pipe i.e., "mm/dd/yyyy 12:00:00 AM&#124;hour" where 12:00:00 AM can be ignored. For example, if the click occurred March 15, 2018 between 07:00 and 08:00, then the field in the downloaded report would be "3/15/2018 12:00:00 AM&#124;7". For more details see [ReportAggregation](../reporting-service/reportaggregation.md) and [TimePeriod Column](reports.md#timeperiod).
 
 #### <a name="reporting-columnrestrictions"></a>Column Restrictions
 For some reports you cannot include constrained attributes in the same report request. For example when submitting the [AccountPerformanceReportRequest](../reporting-service/accountperformancereportrequest.md) and [AdGroupPerformanceReportRequest](../reporting-service/adgroupperformancereportrequest.md) if you include any of the impression share performance statistics columns, then you must exclude the *BidMatchType*, *DeviceOS*, and *TopVsOther* attribute columns. Likewise, if you include any of these attribute columns, then you must exclude all of the impression share performance statistics columns.

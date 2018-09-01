@@ -52,7 +52,7 @@ The [Bulk service](../bulk-service/bulk-service-reference.md) is recommended, es
 ### Q. Which API performance reports are available and when will my data be available?
 The Reporting service supports most of the same [report types](report-types.md) that you can find in the Bing Ads web application. Be sure to check out the [Report Attributes and Performance Statistics](report-attributes-performance-statistics.md) and [Reporting Data Retention Time Periods](report-data-retention-time-periods.md) guides for availability details.
 
-When a user clicks an ad, it can take up to two hours for the system to process the click (3 hours for conversions) and make it available for reporting. When all data for the previous day have been processed and made available for reporting, this state is referred to as Books Closed. For more information about when the books are closed for reporting, see [Determining When the Books Close](reports.md#booksclose).
+When a user clicks an ad, it can take up to two hours for the system to process the click (3 hours for conversions) and make it available for reporting. When all data for the previous day have been processed and made available for reporting, this state is referred to as Books Closed. For more information about when the books are closed for reporting, see [Time Zones in Reporting](reports.md#reptimezones).
 
 ## OAuth 
 

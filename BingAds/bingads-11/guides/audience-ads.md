@@ -7,7 +7,9 @@ ms.author: "eur"
 description: Setup Audience ads with the Bing Ads API.
 ---
 # Audience Ads
-Microsoft Audience Ads are high-quality native placements in the [Microsoft Audience Network](http://www.microsoftaudiencenetwork.com/). The ad placements are cross-device and include premium sites that are brand-safe like MSN, Microsoft Outlook, Microsoft Edge and other partners (U.S. only), with more to come. High quality native ad formats naturally blend into the core user experience.  
+Microsoft Audience Ads appear on the [Microsoft Audience Network](http://www.microsoftaudiencenetwork.com/). These ad placements are cross-device and include premium sites like MSN, Microsoft Outlook, Microsoft Edge, and other partners (with more to come). Clicks on these ads will take users to the landing page you specified when you created your ads.
+
+Microsoft Audience Ads is a native advertising solution optimized for search advertisers. This feature enables advertisers to get additional high-quality traffic from non-search placements. Microsoft Audience Ads experiences, such as ads placed within articles, are engaging for users, integrate naturally into page content, and deliver visually rich ads for advertisers. Microsoft Audience Ads campaigns are easy to set up, maintain, and optimize because they are fully integrated with existing Bing Ads workflows.
 
 ![Audience Ads](media/audience-ads.png "Audience Ads")  
 

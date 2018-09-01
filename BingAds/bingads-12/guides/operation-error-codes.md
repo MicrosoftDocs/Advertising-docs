@@ -54,7 +54,9 @@ The request message is null.
 InvalidCredentials
 
 **Description**
-The provided user name and password could not be validated.
+Authentication failed. Either supplied credentials are invalid or the account is inactive.
+
+Typically indicates usage of an incorrect access token (AuthenticationToken header element) or developer token for the target environment. For example your credentials may be valid in production; however, when targeting sandbox you would observe code 105.
 
 ***
 
@@ -65,7 +67,9 @@ The provided user name and password could not be validated.
 UserIsNotAuthorized
 
 **Description**
-The specified user is not authorized to use the API.
+The user is not authorized to perform this action.
+
+Typically indicates that while the credentials are correct for the target environment, the user does not have access to one of the entities specified in the request. For example you would observe this error calling [SubmitGenerateReportRequest](../reporting-service/submitgeneratereport.md) if the user does not have permissions to the specified account.
 
 ***
 
