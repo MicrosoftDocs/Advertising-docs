@@ -176,14 +176,14 @@ var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadPa
 ```
 
 ### <a name="bidadjustment"></a>Bid Adjustment
-The percent amount by which to adjust your bid for native ads above or below the base ad group or keyword bid.
+The percent amount by which to adjust your bid for audience ads above or below the base ad group or keyword bid.
 
 > [!NOTE]
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
 
-Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent native ads from showing for this campaign.
+Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent audience ads from showing for this campaign.
 
-Set this field to zero (0) if you do not want any bid adjustment for native ads.
+Set this field to zero (0) if you do not want any bid adjustment for audience ads.
 
 **Add:** Optional. If you do not set this field the system default bid adjustment will be used. The system default bid adjustment is currently zero (0), and is subject to change.   
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value* the system default bid adjustment will be used. The *delete_value* keyword removes the previous setting. The system default bid adjustment is currently zero (0), and is subject to change. If you do not specify any value this field will be ignored.    
