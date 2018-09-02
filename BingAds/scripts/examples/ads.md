@@ -222,7 +222,7 @@ function main() {
 ```
 
 
-### Pause an ad
+## Pause an ad
 
 To pause an ad, call the ad's `pause` method. Because the `pause` method is on the base [Ad](../reference/Ad.md) object, you don't need to get the derived object first.
 
