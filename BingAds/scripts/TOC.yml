@@ -51,6 +51,8 @@
     - name: Single account  
       href: ./reference/BingAdsApp.md 
       items:
+        - name: Account
+          href: ./reference/Account.md 
         - name: Ad
           href: ./reference/Ad.md 
         - name: AdBuilderSpace
