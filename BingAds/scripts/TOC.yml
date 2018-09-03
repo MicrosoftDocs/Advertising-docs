@@ -139,13 +139,13 @@
       href: ./reference/MccApp.md
       items:
         - name: ManagedAccount
-          href: ./reference/ManagedAccount
+          href: ./reference/ManagedAccount.md
         - name: ManagedAccountIterator
-          href: ./reference/ManagedAccountIterator
+          href: ./reference/ManagedAccountIterator.md
         - name: BingAdsAccountSelector
-          href: ./reference/ManagedAccountSelector
+          href: ./reference/ManagedAccountSelector.md
         - name: ManagedAccountStats
-          href: ./reference/ManagedAccountStats
+          href: ./reference/ManagedAccountStats.md
         - name: MccApp
           href: ./reference/MccApp.md
 #    - name: Spreadsheets
