@@ -55,6 +55,8 @@
           href: ./reference/Ad.md 
         - name: AdBuilderSpace
           href: ./reference/AdBuilderSpace.md 
+        - name: Account
+          href: ./reference/Account.md 
         - name: AdGroup
           href: ./reference/AdGroup.md 
         - name: AdGroupBidding
@@ -133,16 +135,19 @@
           href: ./reference/NegativeKeywordListSelector.md 
         - name: Stats
           href: ./reference/Stats.md 
-#    - name: Multiple Accounts
-#      href: ./reference/AccountsApp
-#      items:
-#        - name: AccountsApp
-#          href: ./reference/AccountsApp
-#        - name: BingAdsAccount
-#        - name: BingAdsAccountIterator
-#          href: ./reference/BingAdsAccountIterator
-#        - name: BingAdsAccountSelector
-#          href: ./reference/BingAdsAccountSelector
+    - name: Managed Accounts
+      href: ./reference/MccApp.md
+      items:
+        - name: ManagedAccount
+          href: ./reference/ManagedAccount
+        - name: ManagedAccountIterator
+          href: ./reference/ManagedAccountIterator
+        - name: BingAdsAccountSelector
+          href: ./reference/ManagedAccountSelector
+        - name: ManagedAccountStats
+          href: ./reference/ManagedAccountStats
+        - name: MccApp
+          href: ./reference/MccApp.md
 #    - name: Spreadsheets
 #      href: ./reference/SpreadsheetApp
 #      items:
