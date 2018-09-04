@@ -16,6 +16,8 @@ For information about changes that were included with each release, see the foll
 
 ## September 21, 2018
 
+Added the following objects and methods to support multi-accounts.
+
 - Added the `currentAccount` method to [BingAdsApp](reference/BingAdsApp.md). Use this method to get the [Account](reference/Account.md) object, which contains information about the current account that the script is processing.  
   
 - Added the [MccApp](reference/MccApp.md) object. This is the top-level object that you use if you're managing accounts for others. Use it to get the list of accounts you have access to and to select the account to manage.  
