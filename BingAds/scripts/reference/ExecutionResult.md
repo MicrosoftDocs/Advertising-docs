@@ -18,7 +18,7 @@ Contains the methods used to get information about the execution result of the `
 |Method Name|Return Type|Description|
 |-|-|-
 [getCustomerId](#getcustomerid)|String|Gets the customer ID of the owner of the account.
-[getError](#geterror)|String|Gets the error that was encountered when Bing tried running the executeInParallel function.
+[getError](#geterror)|String|Gets the error that occurred when Bing ran the executeInParallel function.
 [getReturnValue](#getreturnvalue)|String|Gets the return value that the executeInParallel function returned.
 [getStatus](#getstatus)|String|Gets the status that indicates whether the function succeeded.
 
@@ -33,12 +33,12 @@ String|The customer ID of the owner of the account.
 
 
 ## <a name="geterror"></a>getError
-Gets the error that was encountered when Bing tried running the executeInParallel function.
+Gets the error that occurred when Bing ran the executeInParallel function.
 
 ### Returns
 |Type|Description|
 |-|-
-String|The error that was encountered when Bing tried running the executeInParallel function. Returns null if there was no error.
+String|The error that occurred when Bing ran the executeInParallel function. Returns null if there was no error.
 
 
 ## <a name="getreturnvalue"></a>getReturnValue
