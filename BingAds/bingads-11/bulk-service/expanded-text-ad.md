@@ -137,12 +137,12 @@ var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadPa
 ```
 
 ### <a name="adformatpreference"></a>Ad Format Preference
-The *Ad Format Preference* field is used to indicate whether or not you prefer the ad copy to be shown to users as a search or native ad. Search ads tend to be written as a call to action, whereas native ads should be written in more of an informational style. By defining at least one ad that should be used as native, the search ads will only be shown in search results.
+The *Ad Format Preference* field is used to indicate whether or not you prefer the ad copy to be shown to users as a search or audience ad. Search ads tend to be written as a call to action, whereas audience ads should be written in more of an informational style. While you have the option to use search expanded text ads as audience ads, designating an ad as Audience ads preferred format allows you to optimize its messaging for native delivery. 
 
 > [!IMPORTANT]
-> You must define at least one expanded text ad per ad group that is not native preferred, otherwise the ad copy of all expanded text ads will be eligible for both search and native ads.
+> You must define at least one expanded text ad per ad group that does not prefer audience ads, otherwise the ad copy of all expanded text ads will be eligible for both search and audience ads. 
 
-Possible values are *Native* and *All*. If set to *All*, the ad will be eligible for both search and native ad formats. If set to *Native*, the ad will only be eligible for the native ad format.
+Possible values are *Native* and *All*. If set to *All*, the ad will be eligible for both search and audience ad formats. If set to *Native*, the ad will only be eligible for the audience ad format.
 
 **Add:** Optional. If you do not set this field when creating an expanded text ad, by default the ad format preference will be set to *All*.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value* when updating an expanded text ad, the ad format preference will be set to the default value i.e. *All*.    

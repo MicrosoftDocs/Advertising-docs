@@ -12,6 +12,7 @@ For information about the changes to the Bing Ads Version 12 services for each m
 ## <a name="august2018"></a>August 2018
 For information about this month's changes to Bing Ads services, see the following sections.
  
+- [Conflict Type for the Negative Keyword Conflict Report](#negativekeywordconflicttype-august2018)  
 - [Ad Click Parallel Tracking](#adclickparalleltracking-august2018)   
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-august2018)   
 - [Customer Address](#customeraddress-august2018)  
@@ -19,6 +20,11 @@ For information about this month's changes to Bing Ads services, see the followi
 - [Entity Attributes for the Change History Report](#changehistoryreportentity-august2018)  
 - [Profile Criteria for Campaigns](#campaignprofilecriteria-august2018)  
 - [Similar Audiences for Remarketing Lists](#similaraudiences-august2018)  
+
+### <a name="negativekeywordconflicttype-august2018"></a>Conflict Type for the Negative Keyword Conflict Report
+The [ConflictType](../reporting-service/negativekeywordconflictreportcolumn.md#conflicttype) element is added to the [NegativeKeywordConflictReportColumn](../reporting-service/negativekeywordconflictreportcolumn.md) value set. 
+
+The ConflictType column is added to the []() value set. Data in this download column represent the type of negative keyword conflict encountered. Some advertisers intentionally create negative keyword conflicts to block a portion of match type traffic. For example, if your phrase match keywords are "stereo plug," you might also choose "stereo plug" as an exact match negative keyword text to match only with this phrase. In this scenario, customers that are searching for specific items like "3.5mm stereo plug" or "gold stereo plug" would see ads for the "stereo plug" phrase match keyword, but customers searching for "stereo plug" wouldn’t see ads for the exact match keyword. If you are an advertiser who intentionally blocks a portion of match type traffic, you can use this column to filter out intentional negative keyword conflicts. If you're not, you should investigate and fix both types of conflicts.
 
 ### <a name="adclickparalleltracking-august2018"></a>Ad Click Parallel Tracking
 Support for ad click parallel tracking is enabled for pilot customers. 
