@@ -39,7 +39,7 @@ Gets the customer ID of the owner that owns this account.
 ### Returns
 |Type|Description|
 |-|-
-string|The ID of the owner that owns this account.
+string|The customer ID of the owner that owns this account.
 
 
 ## <a name="getentitytype"></a>getEntityType
