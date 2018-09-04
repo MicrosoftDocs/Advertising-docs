@@ -36,6 +36,27 @@ Gets a [selector](../concepts/selectors.md) that returns all accounts that the u
 ## <a name="select-managedaccount-account-"></a>select(ManagedAccount account)
 Selects the account to manage in the script.
 
+The following example shows how to change the current account that the script is processing with another account.
+
+```javascript
+    // Get the account that the script is currently processing.
+    var oldAccount = BingAdsApp.currentAccount();
+
+    // Get another account that the user manages.
+    var newAccount = MccApp.accounts()
+        .withIds(["123456789"])
+        .get()
+        .next();
+
+    // Make the new account the current account that the script processes.
+    MccpApp.select(newAccount);
+
+    // Do something with the new account
+
+    // Change the current account back to the old account
+    MccpApp.select(oldAccount);
+```
+
 ### Arguments
 |Name|Type|Description|
 |-|-|-
