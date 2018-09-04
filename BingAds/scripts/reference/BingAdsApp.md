@@ -17,11 +17,19 @@ This is the top-level object of Bing Ads Scripts. Use it to navigate all entitie
 
 |Method Name|Return Type|Description|
 |-|-|-
+<<<<<<< HEAD
 [adGroups](#adgroups)|[AdGroupSelector](./AdGroupSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ad groups in this account.
 [ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ads in this account.
 [campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector used to filter the list of campaigns in this account.
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a selector used to filter the list of keywords in this account.
 [negativeKeywordLists](#negativekeywordlists)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets a selector used to filter the list of negative keyword lists in this account.
+=======
+[adGroups](#adgroups)|[AdGroupSelector](./AdGroupSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all ad groups in this account.
+[campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector that returns all campaigns in this account.
+[currentAccount](#currentaccount)|[Account](./Account.md)|Gets the account that the script is currently processing.
+[keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a selector that returns all keywords in this account.
+[negativeKeywordLists](#negativekeywordlists)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets a selector that returns  all negative keyword lists in this account.
+>>>>>>> added current account
 [newNegativeKeywordListBuilder](#newnegativekeywordlistbuilder)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Gets a builder that you use to add a negative keyword list to this account.
 
 <!--
@@ -61,6 +69,18 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns
 |-|-
 [CampaignSelector](./CampaignSelector.md)|A selector used to filter the list of campaigns in the current account.
 
+
+## <a name="currentaccount"></a>currentAccount
+
+Gets the account that the script is currently processing.
+
+### Returns
+
+|Type|Description|
+|-|-
+[Account](./Account.md)|The account that the script is currently processing.
+
+
 <!--
 ## <a name="getexecutioninfo"></a>getExecutionInfo
 Returns information about the environment in which the script is currently executing.
@@ -83,6 +103,7 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of keywords 
 [KeywordSelector](./KeywordSelector.md)|A selector used to filter the list of keywords in the current account.
 
 
+
 ## <a name="negativekeywordlists"></a>negativeKeywordLists
 
 Gets a [selector](../concepts/selectors.md) used to filter the list of negative keyword lists in this account. 
@@ -92,6 +113,7 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of negative 
 |Type|Description|
 |-|-
 [NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|A selector used to filter the list of negative keyword lists in the current account.
+
 
 
 ## <a name="newnegativekeywordlistbuilder"></a>newNegativeKeywordListBuilder
