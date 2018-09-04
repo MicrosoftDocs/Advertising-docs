@@ -1,5 +1,5 @@
 ---
-title: "ManagedAccount object"
+title: "Account object"
 description: "Contains the methods used to get account information such as name, customer ID, and account-level performance data."
 author: "swhite-msft"
 manager: ehansen
@@ -9,7 +9,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# ManagedAccount
+# Account
 
 Contains the methods used to get account information such as name, customer ID, and account-level performance data.
 
@@ -48,24 +48,24 @@ Gets this entity's type.
 ### Returns
 |Type|Description|
 |-|-
-string|This entity's type, which is *ManagedAccount*.
+string|This entity's type, which is *Account*.
 
 
 ## <a name="getname"></a>getName
-Gets this managed account's name.
+Gets this account's name.
 
 ### Returns
 |Type|Description|
 |-|-
-string|The name of this managed account.
+string|The name of this account.
 
 
 ## <a name="getstats"></a>getStats
-Gets the performance data for this managed account. 
+Gets the performance data for this account. 
 
 ### Returns:
 |Type|Description|
 |-|-
-[ManagedAccountStats](ManagedAccountStats.md)|The performance data for this managed account.
+[Stats](Stats.md)|The performance data for this account.
 
 

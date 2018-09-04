@@ -49,8 +49,8 @@
     - name: Single account  
       href: ./reference/BingAdsApp.md 
       items:
-#        - name: Account
-#          href: ./reference/Account.md 
+        - name: Account
+          href: ./reference/Account.md 
         - name: AdGroup
           href: ./reference/AdGroup.md 
         - name: AdGroupBidding
