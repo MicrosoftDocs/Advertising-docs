@@ -36,7 +36,7 @@ Object|A map of the ad's custom parameters.<br /><br />For example, `{key1: 'val
 ## <a name="getfinalurl"></a>getFinalUrl
 Gets the ad's final URL. This is the URL of the webpage that the user is taken to when they click your ad. 
 
-The same override rules apply as elsewhere. For example, specifying an keyword's final URL overrides the ad's final URL.
+The same override rules apply as elsewhere. For example, specifying a keyword's final URL overrides the ad's final URL.
 
 ### Returns
 |Type|Description|

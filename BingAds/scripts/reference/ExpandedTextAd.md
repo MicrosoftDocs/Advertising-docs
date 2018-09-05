@@ -13,7 +13,7 @@ ms.topic: "article"
 
 Contains the methods used to manage an expanded text ad. 
 
-This object derives from the [Ad](Ad.md) object. The list of methdods includes all applicable inherited methods. 
+This object derives from the [Ad](Ad.md) object. The list of methods includes all applicable inherited methods. 
 
 
 ## Methods
