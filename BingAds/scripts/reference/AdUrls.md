@@ -1,6 +1,6 @@
 ---
 title: "AdUrls object"
-description: "Contains the methods for managing the ad's URLs."
+description: "Contains the methods used to get the ad's URLs, tracking template, and custom parameters."
 author: "swhite-msft"
 manager: ehansen
 
@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # AdUrls
 
-Contains the methods for managing the ad's URLs, tracking template, and custom parameters. For information, see [URL Tracking with Upgraded URLs](/bingads/guides/url-tracking-upgraded-urls).
+Contains the methods used to get the ad's URLs, tracking template, and custom parameters. For information, see [URL Tracking with Upgraded URLs](/bingads/guides/url-tracking-upgraded-urls).
 
 ## Methods
 |Method Name|Return Type|Description|
