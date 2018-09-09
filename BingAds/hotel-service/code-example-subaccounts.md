@@ -307,7 +307,11 @@ namespace ListSubAccounts
             Console.WriteLine("Campaign ID: " + subaccount.Id);
             Console.WriteLine("Campaign status: " + subaccount.Status);
             Console.WriteLine("Daily budget: " + subaccount.DailyBudget.Amount);
-            Console.WriteLine("Maximum bid: " + subaccount.MaximumBid.Amount);
+
+            if (subaccount.MaximumBid != null)
+            {
+                Console.WriteLine("Maximum bid: " + subaccount.MaximumBid.Amount);
+            }
 
             var b = ((JObject)subaccount.Bid).ToObject<Bid>();
             Console.WriteLine("{0}: {1}", (b.GetBidType() == "FixedBid") ? "Fixed bid" : "Percentage bid", b.Amount);
@@ -384,8 +388,6 @@ namespace ListSubAccounts
                             }
                         default: break;
                     }
-
-                    Console.WriteLine();
                 }
 
             }
