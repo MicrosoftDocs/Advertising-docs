@@ -29,6 +29,7 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 [isEnabled](#isenabled)|Boolean|Gets a Boolean value that indicates whether this ad group is enabled.
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this ad group is paused.
 [isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this ad group is removed.
+[keywords](#keywrods)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all keywords in this ad group.
 [newAd](#newad)|[AdBuilderSpace](./AdBuilderSpace.md)|Gets an object that contains methods for getting ad builders.
 [newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Gets a builder that you use to add a keyword to this ad group.
 [pause](#pause)|void|Pauses this ad group.
@@ -68,6 +69,7 @@ Enables this ad group.
 |-|-
 void|Returns nothing.
 
+
 ## <a name="getcampaign"></a>getCampaign
 Gets the campaign that this ad group belongs to.
 
@@ -75,6 +77,7 @@ Gets the campaign that this ad group belongs to.
 |Type|Description|
 |-|-
 [Campaign](Campaign.md)|The campaign that this ad group belongs to.
+
 
 ## <a name="getenddate"></a>getEndDate
 Gets the date when ads in this ad group stop serving.
@@ -84,6 +87,7 @@ Gets the date when ads in this ad group stop serving.
 |-|-
 [BingAdsDate](BingAdsDate.md)|The date when ads in this ad group stop serving.
 
+
 ## <a name="getentitytype"></a>getEntityType
 Gets this entity's type.
 
@@ -92,6 +96,7 @@ Gets this entity's type.
 |-|-
 string|This entity's type, which is *AdGroup*.
 
+
 ## <a name="getid"></a>getId
 Gets the ID that uniquely identifies this ad group.
 
@@ -99,6 +104,7 @@ Gets the ID that uniquely identifies this ad group.
 |Type|Description|
 |-|-
 string|The ID that uniquely identifies this ad group.
+
 
 ## <a name="getname"></a>getName
 Gets this ad group's name.
@@ -135,6 +141,7 @@ Gets a Boolean value that indicates whether this ad group is enabled.
 |-|-
 Boolean|Is **true** if this ad group is enabled; otherwise, **false**.
 
+
 ## <a name="ispaused"></a>isPaused
 Gets a Boolean value that indicates whether this ad group is paused.
 
@@ -143,6 +150,7 @@ Gets a Boolean value that indicates whether this ad group is paused.
 |-|-
 Boolean|Is **true** if this ad group is paused; otherwise, **false**.
 
+
 ## <a name="isremoved"></a>isRemoved
 Gets a Boolean value that indicates whether this ad group is removed (deleted).
 
@@ -150,6 +158,18 @@ Gets a Boolean value that indicates whether this ad group is removed (deleted).
 |Type|Description|
 |-|-
 Boolean|Is **true** if this ad group is removed; otherwise, **false**.
+
+
+## <a name="keywords"></a>keywords
+
+Gets a [selector](../concepts/selectors.md) that returns all keywords in this ad group. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[KeywordSelector](./KeywordSelector.md)|A selector that returns all keywords in this ad group. Use the selector's methods to filter the list of keywords.
+
 
 ## <a name="newad"></a>newAd
 Gets an object that contains methods for getting ad builders.
@@ -160,6 +180,7 @@ Gets an object that contains methods for getting ad builders.
 |-|-
 [AdBuilderSpace](./AdBuilderSpace.md)|An object that contains methods for getting ad builders. For example, if you want to build an expanded text ad, you'd call the object's `expandedTextAdBuilder` method to get the [ExpandedTextAdBuilder](ExpandedTextAdBuilder.md) object.
 
+
 ## <a name="newkeywordbuilder"></a>newKeywordBuilder
 Gets a [builder](../concepts/builders.md) that you use to add a keyword to this ad group.
 
@@ -168,6 +189,7 @@ Gets a [builder](../concepts/builders.md) that you use to add a keyword to this 
 |-|-
 [KeywordBuilder](KeywordBuilder.md)|The builder that you use to add a keyword to this ad group.
 
+
 ## <a name="pause"></a>pause
 Pauses this ad group.
 
@@ -175,7 +197,6 @@ Pauses this ad group.
 |Type|Description|
 |-|-
 void|Returns nothing.
-
 
 
 ## <a name="setenddate-string-enddate-"></a>setEndDate(string endDate)
@@ -190,6 +211,7 @@ endDate|string|The date when you want ads in the ad group to stop serving. Speci
 |Type|Description|
 |-|-
 void|Returns nothing.
+
 
 ## <a name="setenddate-object-enddate-"></a>setEndDate(Object endDate)
 Sets the date when you want ads in this ad group to stop serving. Set an end date only if you want ads in the group to stop serving on a specific date.
