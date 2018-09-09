@@ -14,7 +14,7 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
-## August 7, 2018
+## September 9, 2018
 
 Added support for ads.
 
@@ -28,13 +28,13 @@ Added support for ads.
   
 - Added the [AdViewSpace](reference/AdViewSpace.md) object, which contains the methods used to cast an ad to a specific type. For example, cast the base ad object to an expanded text ad.
   
-- Added the [AdTypeSpace](reference/AdTypeSpace.md) object, which contains the methods used to test if an ad is of the specified type. For example, to test whether the ad is an expanded text ad.
+- Added the [AdTypeSpace](reference/AdTypeSpace.md) object, which contains the methods used to test whether an ad is of the specified type. For example, to test whether the ad is an expanded text ad.
   
-- Added the [Ad](reference/Ad.md) object, which is the base ad type.
+- Added the [Ad](reference/Ad.md) object, which is the base ad type. It also defines a text ad. 
   
-- Added the [AdUrls](reference/AdUrls.md) object, which contains the methods for managing the ad's URLs.
+- Added the [AdUrls](reference/AdUrls.md) object, which contains the methods for getting the ad's URLs, tracking template, and custom parameters.
   
-- Added the [ExpandedTextAd](reference/ExpandedTextAd.md) object, which contains the ad's properties.
+- Added the [ExpandedTextAd](reference/ExpandedTextAd.md) object, which defines an expanded text ad.
   
 - Added the [AdSelector](reference/AdSelector.md) object, which you use to specify the filter criteria for selecting ads.
   
