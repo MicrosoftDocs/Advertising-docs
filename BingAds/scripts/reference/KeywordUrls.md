@@ -10,6 +10,7 @@ ms.topic: "article"
 ---
 
 # KeywordUrls
+
 Contains the methods for managing the keyword's URLs, tracking template, and custom parameters. For information, see [URL Tracking with Upgraded URLs](/bingads/guides/url-tracking-upgraded-urls).
 
 ## Methods
@@ -102,9 +103,9 @@ Sets the keyword's custom parameters. Use this method if you include custom subs
 
 To use a customer parameter name in the final URL or tracking template, you must enclose the name in curly braces and prepend an underscore (\_) to the name. For example, if the parameter name is foo, use {_foo} in the tracking template or final URL. Do not add a leading underscore to the parameter name when you define the custom parameters object. 
 
-Calling this method replaces the keywords's existing custom parameters.
+Calling this method replaces the keyword's existing custom parameters.
 
-To clear the custom parameters from the keyword, pass an empty object (for example, `setCustomParameters({})`). If you clear the keywords's custom parameters, the keyword inherits the URLs from its parent ad group (if the ad group specifies URLs). To completely clear custom parameters, you must clear them at all levels in the hierarchy.
+To clear the custom parameters from the keyword, pass an empty object (for example, `setCustomParameters({})`). If you clear the keyword's custom parameters, the keyword inherits the URLs from its parent ad group (if the ad group specifies URLs). To completely clear custom parameters, you must clear them at all levels in the hierarchy.
 
 [!INCLUDE[custom-parameters](../includes/custom-parameters.md)]
 
@@ -112,7 +113,7 @@ To clear the custom parameters from the keyword, pass an empty object (for examp
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-customParameters|Object|A map of up to three custom parameters to use in the keyword. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value. The parameter's name may contain only alphanumeric characters and the parameter's value may not contain white space. The name may contain a maximum of 60 bytes and the value may contain a maximum of 200 bytes.
+customParameters|Object|A map of up to three custom parameters to use in the keyword. For example, `{key1: 'value1', key2: 'value2', key3: 'value3'}`, where key is the name of the custom parameter and value is the parameter's value. The parameter's name may contain only alphanumeric characters and the parameter's value may not contain white space. The name may contain a maximum of 16 8-byte characters and the value may contain a maximum of 200 8-byte characters.
 
 ### Returns
 |Type|Description|
@@ -145,7 +146,7 @@ The final URL identifies the webpage that the user is taken to when they click y
 
 For more information, see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-To specify a final URL for mobil devices, you must first specify a final URL for non-mobile devices (see `setFinalUrl()`).
+To specify a final URL for mobile devices, you must first specify a final URL for non-mobile devices (see `setFinalUrl()`).
 
 If you specify a property value that's not valid, the call silently fails. To confirm whether the property was actually updated, you must get the object again and test whether the property's value equals the new value. For information, see [Handling errors and warnings](../concepts/errors-and-warnings.md).
 
