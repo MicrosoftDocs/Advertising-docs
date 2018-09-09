@@ -46,8 +46,9 @@ Added support for ads.
   
 - Added the `ads` method to [Campaign](reference/Campaign.md). The method returns the [AdSelector](reference/AdSelector.md) object, which you use to specify the filter criteria for selecting ads in the campaign.
 ## August 20, 2018
+## September 10, 2018
 
-Added support for getting an entity's parent entity. Added the following methods:
+Added the following methods for getting an entity's parent and child entities.
 
 - [AdGroup](reference/AdGroup.md).getCampaign &mdash; Gets the campaign that the ad group belongs to.
 - [Keyword](reference/Keyword.md).getCampaign &mdash; Gets the campaign that the keyword belongs to.
