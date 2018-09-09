@@ -20,13 +20,13 @@ Because calling any of this object's methods forces Bing to flush the build queu
 
 |Method Name|Return Type|Description|
 |-|-|-
-[getErrors](#geterrors)|string[]|Gets the errors that occured when you added the keyword.
+[getErrors](#geterrors)|string[]|Gets the errors that occurred when you added the keyword.
 [getResult](#getresult)|[Keyword](./Keyword.md)|Gets the keyword that you added.
 [isSuccessful](#issuccessful)|boolean|Gets a Boolean value that indicates whether the add operation succeeded.
 
 ## <a name="geterrors"></a>getErrors
 
-Gets the errors that occured when you added the ad group.
+Gets the errors that occurred when you added the ad group.
 
 ### Returns
 
