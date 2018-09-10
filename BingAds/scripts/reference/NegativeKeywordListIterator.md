@@ -31,7 +31,7 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|Boolean|Gets a Boolean value that indicates whether this iterator has more elements.
-[next](#next)|[AdGroup](./AdGroup.md)|Advances the iterator and returns the next negative keyword list.
+[next](#next)|[NegativeKeywordList](./NegativeKeywordList.md)|Advances the iterator and returns the next negative keyword list.
 [totalNumEntities](#totalnumentities)|int|Gets the number of negative keywords lists that matched selector's selection criteria.
 
 ## <a name="hasnext"></a>hasNext
