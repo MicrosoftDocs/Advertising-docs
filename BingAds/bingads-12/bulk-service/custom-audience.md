@@ -41,9 +41,9 @@ You can download all fields of the *Custom Audience* record by including the [Do
 The following Bulk CSV example would update the description and membership duration of a custom audience. 
 
 ```csv
-Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Membership Duration,Scope,Audience,
-Format Version,,,,,,6,,,,
-Custom Audience,Active,IdHere,ParentIdHere,ClientIdGoesHere,,,Updated Custom Audience Description,30,Account,Custom Audience,
+Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Membership Duration,Scope,Audience,Supported Campaign Types
+Format Version,,,,,,6,,,,,
+Custom Audience,Active,IdHere,ParentIdHere,ClientIdGoesHere,,,Updated Custom Audience Description,30,Account,Custom Audience,Search;DynamicSearchAds;Shopping;Audience
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCustomAudience* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 

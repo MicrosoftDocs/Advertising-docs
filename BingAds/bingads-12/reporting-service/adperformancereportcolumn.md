@@ -74,6 +74,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="Path1" />
     <xs:enumeration value="Path2" />
     <xs:enumeration value="AdLabels" />
+    <xs:enumeration value="CustomerId" />
+    <xs:enumeration value="CustomerName" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -111,6 +113,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="costperconversion"></a>CostPerConversion|The cost per conversion. The formula for calculating the cost per conversion is *(Spend / Conversions)*.Only ads in campaigns that enable conversion tracking contribute to the conversion number, so unless all campaigns in the account enable conversion tracking, the number will not be accurate.|
 |<a name="ctr"></a>Ctr|The click-through rate (CTR) is the number of times an ad was clicked, divided by the number of times the ad was shown (impressions). For example, if your ads got 50 clicks given 2,348 impressions, your CTR is 2.13 (%). The formula for calculating CTR is *(Clicks / Impressions) x 100*.|
 |<a name="currencycode"></a>CurrencyCode|The account currency type.For possible values, see [Currencies](../guides/currencies.md).|
+|<a name="customerid"></a>CustomerId|The Bing Ads assigned identifier of a customer.|
+|<a name="customername"></a>CustomerName|The customer name.|
 |<a name="customparameters"></a>CustomParameters|The current custom parameters set of the ad, keyword, or criterion.<br/><br/>Each custom parameter is a key and value pair. The list of custom parameters is semicolon-delimited and each key is enclosed by braces and a leading underscore, for example `{_key1}=value1;{_key2}=value2`.|
 |<a name="deliveredmatchtype"></a>DeliveredMatchType|The match type used to deliver an ad. This can be different from the *BidMatchType* column, for example if you bid on a broad match and the search term was an exact match. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md). The possible values are *Broad*, *Exact*, *Phrase*, and *Unknown*.|
 |<a name="destinationurl"></a>DestinationUrl|The destination URL attribute of the ad, keyword, or ad group criterion.If the destination URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL after substitution occurs.|

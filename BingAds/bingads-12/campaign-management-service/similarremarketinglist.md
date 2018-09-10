@@ -10,7 +10,7 @@ description: Defines an audience that is similar to one of your remarketing list
 Defines an audience that is similar to one of your remarketing lists.
 
 > [!NOTE]
-> Bing Ads will automatically generate similar audiences for remarketing lists for pilot participants. You cannot create or edit the similar audiences for remarketing lists. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with an ad group, then you cannot delete the source remarketing list. 
+> Bing Ads will automatically generate similar audiences for remarketing lists for pilot participants. You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete ad group similar remarketing list associations and exclusions via [AddAdGroupCriterions](addadgroupcriterions.md) and [DeleteAdGroupCriterions](deleteadgroupcriterions.md). If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with an ad group, then you cannot delete the source remarketing list. 
 
 ## Syntax
 ```xml
@@ -29,7 +29,7 @@ Defines an audience that is similar to one of your remarketing lists.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="sourceid"></a>SourceId|The Bing Ads identifier of the remarketing list that Bing Ads used to generate this similar audience.|**long**|
+|<a name="sourceid"></a>SourceId|The Bing Ads identifier of the remarketing list that Bing Ads used to generate this similar audience.<br/><br/>**Add:** Not supported<br/>**Update:** Not supported|**long**|
 
 The [SimilarRemarketingList](similarremarketinglist.md) object has [Inherited Elements](#inheritedelements).
 

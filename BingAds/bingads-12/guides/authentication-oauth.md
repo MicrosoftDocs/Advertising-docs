@@ -34,10 +34,11 @@ At a high level you should complete the following steps to authenticate a Micros
 
 4. For each API call to Bing Ads, use the returned access token as the *AuthenticationToken* element within the Bing Ads service [Service Request Header](get-started.md#where-to-use). For more information, see [Managing OAuth Tokens](#managingoauthtokens).
 
+
 ## <a name="registerapplication"></a>Registering Your Application
 Before you can manage authentication for users of your Bing Ads application, you must register your application and get the corresponding client ID and client secret.
 
-1. Go to [https://apps.dev.microsoft.com/](https://apps.dev.microsoft.com/), and login with your Microsoft Account credentials when prompted.
+1. Go to [https://apps.dev.microsoft.com/](https://apps.dev.microsoft.com/) (or [apps.dev.microsoft-int.com/#/appList](https://apps.dev.microsoft-int.com/#/appList) for apps that target the [sandbox](sandbox.md) environment), and login with your Microsoft Account credentials when prompted.
 
    > [!NOTE]
    > You may use any of your Microsoft accounts to manage authentication for your application. Using a Microsoft Account which is linked to your Bing Ads user credentials is optional for managing your application.
@@ -66,6 +67,9 @@ Before you can manage authentication for users of your Bing Ads application, you
 
 ## <a name="managingoauthtokens"></a>Managing OAuth Tokens
 Once you have registered your application you can manage the access token for a Microsoft Account user already linked or registered with Bing Ads. For one time or short term access to manage a user's accounts, see [Implicit Grant Flow](#implicit). The access token is short lived and will expire in minutes or hours as determined by the authentication service. Additionally, the Microsoft Account user may change their password or remove permissions for your application to authenticate on their behalf. For repeat or long term access to manage a user's accounts, see [Authorization Code Grant Flow](#authorizationcode).
+
+> [!IMPORTANT]
+> For apps that target the [sandbox](sandbox.md) environment, use *login.live-int.com* instead of *login.live.com*.
 
 > [!TIP]
 > For details about how to get access and refresh tokens using the Bing Ads SDKs, see [Authentication With the SDKs](sdk-authentication.md#oauth).
@@ -193,13 +197,13 @@ The following table lists the request parameters that are available when calling
 
 Parameter  |Description  
 ---------|---------
-*client_id*     |The registered application's client ID. 
-*client_secret*     |The registered application's client secret.
+*client_id*     |The registered application ID. 
+*client_secret*     |The registered application's password or client secret.
 *grant_type*     |The authorization type that the server returns. Valid values are "authorization_code" or "refresh_token".
 *locale*     |A market string that determines how the consent UI is localized. If the value of this parameter is missing or is not valid, a market value is determined by using an internal algorithm.
 *redirect_uri*     |Equivalent to the *redirect_uri* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.6). The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their Bing Ads accounts.
 *response_type*     |The type of data to be returned in the response from the authorization server. Valid values are "code" or "token".
-*scope*     |Equivalent to the *scope* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.4).
+*scope*     |Equivalent to the *scope* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.4). To get access tokens for Bing Ads authentication the scope must always be set to *bingads.manage*. 
 *state*     |Equivalent to the *state* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.5). This value is passed through, and you should receive the same value unchanged in the *state* response parameter. It is recommended that you limit this string to 100 characters. The working limit is currently higher, although it is subject to change.  
 *display*     |The display type to be used for the authorization page. Valid values are "popup", "touch", "page", or "none".      
 
@@ -208,14 +212,14 @@ The following table lists the response parameters that are available when callin
 
 Parameter  |Description  
 ---------|---------
-*access_token*     |Equivalent to the *access_token* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.12).
+*access_token*     |Equivalent to the *access_token* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.12). To authenticate with Bing Ads API you will send the access token via the AuthenticationToken header element. 
 *authentication_token*     |The registered application's authentication token.
 *code*     |Equivalent to the *code* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.11).
 *error*     |Error code identifying the error that occurred.
 *error_description*     |A description of the error.
 *expires_in*     |Equivalent to the *expires_in* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.14).
 *id_token*     |An unsigned JSON Web Token (JWT). The app can base64Url decode the segments of this token to request information about the user who signed in. The app can cache the values and display them, but it should not rely on them for any authorization or security boundaries.   
-*refresh_token*     |Equivalent to the *refresh_token* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.17).
+*refresh_token*     |Equivalent to the *refresh_token* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.17).  
 *scope*     |Equivalent to the *scope* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.4).
 *state*     |Equivalent to the *state* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.5). When you request an authorization code this value is passed through from the *state* request parameter, and you should receive the same value unchanged in the response.
 *token_type*     |The type of data to be returned in the response from the authorization server. 

@@ -134,7 +134,7 @@ The following table defines limits for sitelink ad extension properties.
 |Description 1|If Traditional Chinese characters are included, the string can contain a maximum of 15 characters.<br/><br/>For English and all other languages, the limit is 35 characters.|
 |Description 2|If Traditional Chinese characters are included, the string can contain a maximum of 15 characters.<br/><br/>For English and all other languages, the limit is 35 characters.|
 |Destination Url|The URL can contain a maximum of 1,024 characters.|
-|Display Text|For Traditional Chinese, if you specify Description1 or Description2 then the string can contain a maximum of 11 characters; otherwise, the string can contain a maximum of 15 characters.<br/><br/>For English and all other languages, if you specify Description1 or Description2 then the string can contain a maximum of 25 characters; otherwise, the string can contain a maximum of 35 characters.|
+|Display Text|For Traditional Chinese, if you set Description1 or Description2 then the string can contain a maximum of 11 characters; otherwise, the string can contain a maximum of 15 characters.<br/><br/>For English and all other languages, if you set Description1 or Description2 then the string can contain a maximum of 25 characters; otherwise, the string can contain a maximum of 35 characters.|
 |Final Url|The string can contain a maximum of 2,048 characters.|
 |Final Mobile Url|The string can contain a maximum of 2,048 characters.|
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
@@ -275,7 +275,7 @@ The following table defines limits for budget properties.
 |Name|The name must be unique among all budgets within the account. The name can contain a maximum of 255 characters.|
 
 ## <a name="campaign"></a>Campaign
-The campaign object is the top level object of an advertising campaign and is where you specify the campaign's budget. Each account can have up to 10,000 campaigns.
+The campaign object is the top level object of an advertising campaign and is where you set the campaign's budget. Each account can have up to 10,000 campaigns.
 
 You can manage campaigns using the Bulk service ([Campaign Record](../bulk-service/campaign.md)) or Campaign Management service ([Campaign](../campaign-management-service/campaign.md)).
 
@@ -336,7 +336,7 @@ You can manage labels using the Bulk service ([Label Record](../bulk-service/lab
 |Name|The case-sensitive label name can be between 1 to 80 characters in length, and must be unique across all labels in the account.|
 
 ## <a name="negativekeywords"></a>Negative Keywords
-To explicitly opt out of bidding for keyword match types, you can specify negative keywords at the campaign and ad group level.
+To explicitly opt out of bidding for keyword match types, you can set negative keywords at the campaign and ad group level.
 
 Each ad group or campaign can contain up to 20,000 negative keywords, and each negative keyword can contain a maximum of 100 characters.
 
@@ -348,19 +348,19 @@ Additionally a campaign can be associated with any or all negative keyword lists
 > [!NOTE]
 > The maximum number associations between campaigns and negative keyword lists is 50,000 per account. For example if you have five negative keyword lists and associate all of them with each of your 10,000 campaigns, then you are not allowed to associate a sixth negative keyword list with any campaign.
 
-If you specify negative keywords at both levels, both lists will be used in comparison to the user's query. Thus an ad group could effectively have 140,000 negative keywords applied via the sum of the 20,000 negative keywords exclusively set for that ad group, the 20,000 negative keywords exclusively set for the ad group's parent campaign, and the 100,000 negative keywords in lists shared with the ad group's parent campaign.
+If you set negative keywords at both levels, both lists will be used in comparison to the user's query. Thus an ad group could effectively have 140,000 negative keywords applied via the sum of the 20,000 negative keywords exclusively set for that ad group, the 20,000 negative keywords exclusively set for the ad group's parent campaign, and the 100,000 negative keywords in lists shared with the ad group's parent campaign.
 
 For more information about managing negative keywords and negative keyword lists, please see the technical guide about [Negative Keywords](negative-keywords.md).
 
 ## <a name="negativesites"></a>Negative Site Placements
-To prevent your ad from appearing on specific web sites within the search network you can configure website exclusions, also known as negative site placements. To explicitly opt out from having your search ads displayed on partner websites sites, you can specify negative sites at the campaign and ad group level. For search ads, you can specify only syndicated search websites. Ad-group-level website exclusions override campaign-level website exclusions.
+To prevent your ad from appearing on specific web sites within the search network you can configure website exclusions, also known as negative site placements. To explicitly opt out from having your search ads displayed on partner websites sites, you can set negative sites at the campaign and ad group level. For search ads, you can set only syndicated search websites. Ad-group-level website exclusions override campaign-level website exclusions.
 
 You can manage negative site placements using the Campaign Management service ([AdGroupNegativeSites](../campaign-management-service/adgroupnegativesites.md)) and ([CampaignNegativeSites](../campaign-management-service/campaignnegativesites.md)).
 
 Each ad group or campaign can contain up to 2,500 negative site placements. Each URL must specify the domain name e.g., *contoso.com* which can include up to three subdomains and two subdirectories. The subdomain count includes the *www* prefix. For example *one.two.three.contoso.com/1/2*, *www.two.three.contoso.com/1/2*, and *one.two.contoso.co.uk/1/2* are valid URLs, whereas *one.two.three.contoso.co.uk/1/2* (too many subdomains) and *one.two.three.contoso.com/1/2/3* (too many subdirectories) are not.
 
 ## <a name="productgroup"></a>Product Group
-Product groups are used to specify which products from your Bing Merchant Center catalog should be included in a particular ad group. In order to understand product groups, first make sure you are familiar with [Product Ads](product-ads.md).
+Product groups are used to determine which products from your Bing Merchant Center catalog should be included in a particular ad group. In order to understand product groups, first make sure you are familiar with [Product Ads](product-ads.md).
 
 After you create a shopping campaign, Bing Ads creates a default ad group. That ad group includes a product group containing all of the products in your Bing Merchant Center catalog feed. However, you don't typically want an ad group to contain all products. Instead, you likely want each ad group to contain only very closely related products in order more effectively manage which ads show, and when. With product groups you can narrow down that default group to a customized list of specific products.
 
@@ -374,23 +374,32 @@ For more information, see the Bing Ads Help article [Understand and use product 
 ## <a name="targets"></a>Targets
 You can set criteria to show your ads based on age, day and time, device, gender, and location. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*. For more information about managing targets, see the [Show Ads to Your Target Audience](show-ads-target-audience.md) technical guide.
 
-The maximum number of age criterions that you can specify per campaign or ad group is five, i.e. one for each of the supported age ranges *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*.
+### <a name="agecriterions"></a>Age Criterions
+The maximum number of age criterions that you can set per campaign or ad group is five, i.e. one for each of the supported age ranges *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*.
 
-The maximum number of day and time criterions that you can specify per campaign or ad group is 49. You may not specify any overlapping day and time ranges, for example Monday from 3:00AM to 5:00AM and Monday 4:00AM to 6:00AM are not allowed for the same campaign or ad group. Also for a given campaign or ad group, the maximum number of day and time criterions per day that you can specify is seven. For example you can specify up to 7 day and time criterions where the *Day* is set to Monday. 
+### <a name="companynamecriterions"></a>Company Name Criterions
+The maximum number of company name criterions that you can set per ad group is 1,000.
 
-The maximum number of device criterions that you can specify per campaign or ad group is three. You must either have three separate criterions for *Computers*, *Smartphones*, and *Tablets*, otherwise no device criterions can exist for the campaign or ad group.
+### <a name="daytimecriterions"></a>Day and Time Criterions
+The maximum number of day and time criterions that you can set per campaign or ad group is 49. You may not set any overlapping day and time ranges, for example Monday from 3:00AM to 5:00AM and Monday 4:00AM to 6:00AM are not allowed for the same campaign or ad group. Also for a given campaign or ad group, the maximum number of day and time criterions per day that you can set is seven. For example you can set up to 7 day and time criterions where the *Day* is set to Monday. 
 
-The maximum number of gender criterions that you can specify per campaign or ad group is two i.e. one for *Male* and one for *Female*.
+### <a name="devicecriterions"></a>Device Criterions
+The maximum number of device criterions that you can set per campaign or ad group is three. You must either have three separate criterions for *Computers*, *Smartphones*, and *Tablets*, otherwise no device criterions can exist for the campaign or ad group.
 
-The maximum number of combined location and negative location criterions that you can specify per campaign or ad group is 10,000. For example, you may specify a maximum of 10,000 city location criteria or 1,000 state location criteria and 9,000 city location criteria. 
+### <a name="gendercriterions"></a>Gender Criterions
+The maximum number of gender criterions that you can set per campaign or ad group is two i.e. one for *Male* and one for *Female*.
 
-The maximum number of location intent criterions that you can specify per campaign or ad group is one.
+### <a name="locationcriterions"></a>Location Criterions
+The maximum number of combined location and negative location criterions that you can set per campaign or ad group is 10,000. For example, you can set a maximum of 10,000 city location criteria or 1,000 state location criteria and 9,000 city location criteria. 
 
-The maximum number of radius criterions that you can specify per campaign or ad group is 2,000. 
+### <a name="locationintentcriterions"></a>Location Intent Criterions
+The maximum number of location intent criterions that you can set per campaign or ad group is one.
+
+### <a name="radiuscriterions"></a>Radius Criterions
+The maximum number of radius criterions that you can set per campaign or ad group is 2,000. 
 
 > [!NOTE] 
 > Each of these limits are independent of one another e.g., the radius criterions limit stands regardless of whether or not any location criterions exist for the campaign or ad group.
-
 
 ## See Also
 [Bing Ads API Overview](index.md)  

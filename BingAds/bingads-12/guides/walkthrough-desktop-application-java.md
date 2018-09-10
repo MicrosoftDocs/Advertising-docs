@@ -9,10 +9,7 @@ dev_langs:
   - java
 ---
 # Walkthrough: Bing Ads Desktop Application in Java
-The example desktop application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID. You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below, or start with the [provided examples](code-examples.md).
-
-> [!NOTE]
-> This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
+The example desktop application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the Application Id that will be used as the *ClientId* in the walkthrough below. If you are targeting the production environment, then you'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below, or start with the [provided examples](code-examples.md).
 
 ## <a name="code"></a>Code Walkthrough
 
@@ -39,7 +36,7 @@ The example desktop application sends authentication requests to the Microsoft a
         <dependency>
           <groupId>com.microsoft.bingads</groupId>
           <artifactId>microsoft.bingads</artifactId>
-          <version>11.12.1</version>
+          <version>11.12.5</version>
         </dependency>
       </dependencies>
     </project>
@@ -47,7 +44,7 @@ The example desktop application sends authentication requests to the Microsoft a
 
 6.  In **Project Explorer**, right-click the BingAdsDesktopApp project (or the name of your project if you chose a different artifact identifier in the previous step) and select **New** -&gt; **Class**. Choose a package name, for example *com.microsoft.bingads.examples*. Name the class *OAuthDesktopApplication* and then click **Finish**.
 
-7.  Open the OAuthDesktopApplication.java file and replace its contents with the following code block. You must edit the sample below with the ClientId that was provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token).
+7.  Open the OAuthDesktopApplication.java file and replace its contents with the following code block. You must edit the *ClientId* below with the Application Id that was provisioned when you [registered your application](authentication-oauth.md#registerapplication). If you are targeting the production environment, then you'll also need to edit the example with your production [developer token](get-started.md#get-developer-token).
 
     > [!NOTE]
     > If you observe any errors related to *javafx* import statements, try removing the *JRE System Library* and adding it back again. In **Project Explorer**, right-click the BingAdsDesktopApp and select **Build Path** -&gt; **Configure Build Path**. In the **Libraries** tab, select JRE System Library and click **Remove**. Remain in the **Libraries** tab and click **Add Library**, select JRE System Library, click **Next**, and then click **Finish**.
@@ -76,8 +73,8 @@ The example desktop application sends authentication requests to the Microsoft a
         static AuthorizationData authorizationData;
         static ServiceClient<ICustomerManagementService> CustomerService; 
 
-        //private static java.lang.String DeveloperToken = "<DeveloperTokenGoesHere>";
-        //private static java.lang.String ClientId = "<ClientIdGoesHere>";
+        private static java.lang.String DeveloperToken = "BBD37VB98"; // Universal token for sandbox
+        private static java.lang.String ClientId = "ClientIdGoesHere";
 
         @Override
         public void start(Stage primaryStage) {
@@ -140,6 +137,7 @@ The example desktop application sends authentication requests to the Microsoft a
 
                                 CustomerService = new ServiceClient<ICustomerManagementService>(
                                         authorizationData, 
+                                        ApiEnvironment.SANDBOX,
                                         ICustomerManagementService.class);
 
                                 User user = getUser(null);
