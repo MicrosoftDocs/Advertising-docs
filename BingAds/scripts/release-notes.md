@@ -20,11 +20,11 @@ Added the following objects and methods for selecting negative keywords from neg
 
 - Added the `negativeKeywords` method to the [NegativeKeywordList](reference/NegativeKeywordList.md) object. Use this method to get a selector used to filter the list of negative keywords.  
   
-- Added the [SharedNegativeKeywordSelector](reference/SharedNegativeKeywordSelector) object, which you use to specify the filter criteria for selecting negative keywords from a negative keyword list.  
+- Added the [SharedNegativeKeywordSelector](reference/SharedNegativeKeywordSelector.md) object, which you use to specify the filter criteria for selecting negative keywords from a negative keyword list.  
   
-- Added the [SharedNegativeKeywordIterator](reference/SharedNegativeKeywordIterator) object, which you use to iterate through the filtered list of negative keywords.  
+- Added the [SharedNegativeKeywordIterator](reference/SharedNegativeKeywordIterator.md) object, which you use to iterate through the filtered list of negative keywords.  
   
-- Added the [SharedNegativeKeyword](reference/SharedNegativeKeywordSelector) object, which defines a negative keyword.  
+- Added the [SharedNegativeKeyword](reference/SharedNegativeKeyword.md) object, which defines a negative keyword.  
 
 
 ## September 9, 2018
