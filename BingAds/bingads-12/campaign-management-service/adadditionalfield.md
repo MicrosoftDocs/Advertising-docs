@@ -30,8 +30,8 @@ Defines a list of optional [Ad](ad.md) properties that you can request when call
 
 |Value|Description|
 |-----------|---------------|
-|<a name="textpart2"></a>TextPart2|Request that the *TextPart2* element be included within each returned [ExpandedTextAd](expandedtext.md) object.|
-|<a name="titlepart3"></a>TitlePart3|Request that the *TitlePart3* element be included within each returned [ExpandedTextAd](expandedtext.md) object.|
+|<a name="textpart2"></a>TextPart2|Request that the *TextPart2* element be included within each returned [ExpandedTextAd](expandedtextad.md) object.|
+|<a name="titlepart3"></a>TitlePart3|Request that the *TitlePart3* element be included within each returned [ExpandedTextAd](expandedtextad.md) object.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
