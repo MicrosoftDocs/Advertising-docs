@@ -12,7 +12,7 @@ dev_langs:
 Defines an in-market audience that can be downloaded in a bulk file. 
 
 > [!NOTE]
-> Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API. Having said that, you can add and delete ad group in-market audience associations and exclusions.
+> Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API. Having said that, you can add and delete ad group in-market audience associations and exclusions via [Ad Group In Market Audience Association](ad-group-in-market-audience-association.md) and [Ad Group Negative In Market Audience Association](ad-group-negative-in-market-audience-association.md).
 
 > [!NOTE]
 > This feature is available only in the United States.
@@ -26,7 +26,6 @@ For a *In Market Audience* record, the following attribute fields are available 
 - [Audience](#audience)
 - [Audience Network Size](#audiencenetworksize)
 - [Audience Search Size](#audiencesearchsize)
-- [Client Id](#clientid)
 - [Description](#description)
 - [Id](#id)
 - [Membership Duration](#membershipduration)
@@ -41,9 +40,9 @@ You can download all fields of the *In Market Audience* record by including the 
 The following is a Bulk CSV example download for in-market audience. 
 
 ```csv
-Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Membership Duration,Scope,Audience,
-Format Version,,,,,,6,,,,
-In Market Audience,Active,IdHere,ParentIdHere,ClientIdGoesHere,,,In Market Audience Description,30,Account,In Market Audience,
+Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Membership Duration,Scope,Audience,Supported Campaign Types
+Format Version,,,,,,6,,,,,
+In Market Audience,Active,IdHere,ParentIdHere,ClientIdGoesHere,,,In Market Audience Description,30,Account,In Market Audience,Search;DynamicSearchAds;Shopping;Audience
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to download the *BulkInMarketAudience* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -53,9 +52,6 @@ If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Ja
 // Map properties in the Bulk file to the BulkInMarketAudience
 var bulkInMarketAudience = new BulkInMarketAudience
 {
-    // 'Client Id' column header in the Bulk file
-    ClientId = "ClientIdGoesHere",
-
     // Map properties in the Bulk file to the 
     // InMarketAudience object of the Campaign Management service.
     InMarketAudience = new InMarketAudience
@@ -110,13 +106,6 @@ The audience needs to have at least 1,000 people before Bing Ads will use it for
 
 **Add:** Not supported  
 **Update:** Not supported   
-**Delete:** Not supported  
-
-### <a name="clientid"></a>Client Id
-Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
-
-**Add:** Not supported  
-**Update:** Not supported    
 **Delete:** Not supported  
 
 ### <a name="description"></a>Description

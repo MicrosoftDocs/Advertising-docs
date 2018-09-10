@@ -57,6 +57,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="CostPerConversion" />
     <xs:enumeration value="RevenuePerConversion" />
     <xs:enumeration value="RevenuePerAssist" />
+    <xs:enumeration value="CustomerId" />
+    <xs:enumeration value="CustomerName" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -84,6 +86,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="costperassist"></a>CostPerAssist|The cost per assist. The formula for calculating the cost per assist is *(Spend / Assists)*.|
 |<a name="costperconversion"></a>CostPerConversion|The cost per conversion. The formula for calculating the cost per conversion is *(Spend / Conversions)*.Only ads in campaigns that enable conversion tracking contribute to the conversion number, so unless all campaigns in the account enable conversion tracking, the number will not be accurate.|
 |<a name="ctr"></a>Ctr|The click-through rate (CTR) is the number of times an ad was clicked, divided by the number of times the ad was shown (impressions). For example, if your ads got 50 clicks given 2,348 impressions, your CTR is 2.13 (%). The formula for calculating CTR is *(Clicks / Impressions) x 100*.|
+|<a name="customerid"></a>CustomerId|The Bing Ads assigned identifier of a customer.|
+|<a name="customername"></a>CustomerName|The customer name.|
 |<a name="destinationurl"></a>DestinationUrl|The destination URL attribute of the ad, keyword, or ad group criterion.If the destination URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL after substitution occurs.|
 |<a name="deviceos"></a>DeviceOS|The operating system of the device reported in the *DeviceType* column. The possible values include *Android*, *Blackberry*, *iOS*, *Other*, *Unknown*, and *Windows*.If the operating system of the device cannot be determined or is not one of the operating systems that you can target, the value in this column will be *Unknown*.|
 |<a name="devicetype"></a>DeviceType|The device name attribute of a device OS target bid. The type of device which showed ads. The possible values include *Computer*, *Smartphone*, *Tablet*, and *Unknown*.|

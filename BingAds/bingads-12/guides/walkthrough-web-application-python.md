@@ -31,7 +31,7 @@ You will need the [Django web framework](https://www.djangoproject.com/) install
 
 You will need at least one user with Bing Ads credentials and a [developer token](get-started.md#get-developer-token). 
 
-You will need to [register an application](authentication-oauth.md#registerapplication) and take note of the client ID and client secret. You'll need to register a web app (not native) for this example. You will be asked to register one or more redirect URLs. To deploy your application on Azure, choose a website name and corresponding URL that includes *azurewebsites.net*. This tutorial uses the */callback* URL relative to the website root, so to follow along you will want to register a redirect URL as follows: *https://YourAzureSiteNameGoesHere.azurewebsites.net/callback*.
+You will need to [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID) and client secret (registered password). You'll need to register a web app (not native) for this example. You will be asked to register one or more redirect URLs. To deploy your application on Azure, choose a website name and corresponding URL that includes *azurewebsites.net*. This tutorial uses the */callback* URL relative to the website root, so to follow along you will want to register a redirect URL as follows: *https://YourAzureSiteNameGoesHere.azurewebsites.net/callback*.
 
 ## Website Creation on Azure Portal
 Create a Django website from the Azure Websites gallery. Login to the [Microsoft Azure Portal](https://manage.windowsazure.com/) and click the **NEW** button in the bottom left corner. A window will appear. Click **COMPUTE**, **WEB SITE**, then **FROM GALLERY**.

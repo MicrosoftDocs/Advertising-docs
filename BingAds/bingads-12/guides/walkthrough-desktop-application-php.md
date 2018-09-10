@@ -14,7 +14,7 @@ This guide describes how you can download samples from the [GitHub source](https
 > [!IMPORTANT] 
 > Be sure to test in sandbox before running samples in production. Also note that some samples might require additional information e.g. within *ManageClient.php* you'll need to supply a valid $ClientAccountId.
 
-You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID. You'll also need your production [developer token](get-started.md#get-developer-token).
+You must first [register an application](authentication-oauth.md#registerapplication) and take note of the Application Id that will be used as the *ClientId* in the walkthrough below. If you are targeting the production environment, then you'll also need your production [developer token](get-started.md#get-developer-token).
 
 ## <a name="code"></a>Code Walkthrough
 
