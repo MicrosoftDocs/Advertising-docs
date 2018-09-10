@@ -21,7 +21,9 @@ Contains the methods for adding keywords to a negative keywords list. For inform
 [getEntityType](#getentitytype)|String|Gets this entity's type.
 [getId](#getid)|string|Gets the ID that uniquely identifies this negative keyword list.
 [getName](#getname)|String|Gets this negative keyword list's name.
+[negativeKeywords](#negativekeywords)|[SharedNegativeKeywordSelector](./SharedNegativeKeywordSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all negative keywords in this negative keyword list.
 [setName(string name)](#setname-string-name-)|void|Sets this negative keyword list's name.
+
 
 ## <a name="addnegativekeyword-string-keywordtext-"></a>addNegativeKeyword(string keywordText)
 Adds a keyword to this negative keyword list. For information about negative keyword limits, see [Negative keywords](/bingads/guides/entity-hierarchy-limits#negativekeywords). 
@@ -48,6 +50,7 @@ keywordText|String|The negative keyword's text. Negative keywords may contain a 
 |-|-
 void|Returns nothing.
 
+
 ## <a name="addnegativekeywords-string-keywordtexts-"></a>addNegativeKeywords(string[] keywordTexts)
 Adds a list of keywords to this negative keyword list. For information about negative keyword limits, see [Negative keywords](/bingads/guides/entity-hierarchy-limits#negativekeywords).
 
@@ -63,7 +66,6 @@ To specify the match type for negative keywords:
 
 If the keyword does not include match-type syntax, phrase match type is assumed (broad match type is not supported).
 
-
 ### Arguments
 |Name|Type|Description|
 |-|-|-
@@ -74,6 +76,7 @@ keywordTexts|string[]|An array of keyword strings. The array may contain a maxim
 |-|-
 void|Returns nothing.
 
+
 ## <a name="getentitytype"></a>getEntityType
 Returns this entity's type. 
 
@@ -81,6 +84,7 @@ Returns this entity's type.
 |Type|Description|
 |-|-
 string|This entity's type, which is *NegativeKeywordList*.
+
 
 ## <a name="getid"></a>getId
 Gets the ID that uniquely identifies this negative keyword list.
@@ -90,6 +94,7 @@ Gets the ID that uniquely identifies this negative keyword list.
 |-|-
 string|The ID that uniquely identifies this negative keyword list.
 
+
 ## <a name="getname"></a>getName
 Gets this negative keyword list's name.
 
@@ -97,6 +102,18 @@ Gets this negative keyword list's name.
 |Type|Description|
 |-|-
 string|The name of this negative keyword list.
+
+
+## <a name="negativekeywords"></a>negativeKeywords
+
+Gets a [selector](../concepts/selectors.md) that returns all negative keywords in this negative keyword list. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[SharedNegativeKeywordSelector](./SharedNegativeKeywordSelector.md)|A selector that returns all negative keywords in this negative keyword list. Use the selector's methods to filter the list of negative keywords.
+
 
 ## <a name="setname-string-name-"></a>setName(string name)
 Sets this negative keyword list's name.
