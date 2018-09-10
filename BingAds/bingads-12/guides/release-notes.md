@@ -9,8 +9,26 @@ description: Get information about the changes to the Bing Ads services for each
 # Bing Ads API Release Notes
 For information about the changes to the Bing Ads Version 12 services for each month, see the following sections. 
 
+## <a name="september2018"></a>September 2018
+See below for Bing Ads service updates during this calendar month. 
+ 
+- [Customer Id and Customer Name Report Columns](#customeridcustomername-september2018)  
+
+### <a name="customeridcustomername-september2018"></a>Customer Id and Name Report Columns
+The *CustomerId* and *CustomerName* columns are added to the following reports.  
+- [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md) 
+- [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md) 
+- [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md) 
+- [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md) 
+- [DestinationUrlPerformanceReportColumn](../reporting-service/destinationurlperformancereportcolumn.md) 
+- [DSASearchQueryPerformanceReportColumn](../reporting-service/dsasearchqueryperformancereportcolumn.md) 
+- [ProductSearchQueryPerformanceReportColumn](../reporting-service/productsearchqueryperformancereportcolumn.md) 
+- [SearchQueryPerformanceReportColumn](../reporting-service/searchqueryperformancereportcolumn.md) 
+
+The *CustomerId* and *CustomerName* columns had already been available via the [ProductMatchCountReportColumn](../reporting-service/productmatchcountreportcolumn.md) prior this this month's release. 
+
 ## <a name="august2018"></a>August 2018
-For information about this month's changes to Bing Ads services, see the following sections.
+See below for Bing Ads service updates during this calendar month. 
  
 - [Conflict Type for the Negative Keyword Conflict Report](#negativekeywordconflicttype-august2018)  
 - [Ad Click Parallel Tracking](#adclickparalleltracking-august2018)   
@@ -24,7 +42,7 @@ For information about this month's changes to Bing Ads services, see the followi
 ### <a name="negativekeywordconflicttype-august2018"></a>Conflict Type for the Negative Keyword Conflict Report
 The [ConflictType](../reporting-service/negativekeywordconflictreportcolumn.md#conflicttype) element is added to the [NegativeKeywordConflictReportColumn](../reporting-service/negativekeywordconflictreportcolumn.md) value set. 
 
-The ConflictType column is added to the []() value set. Data in this download column represent the type of negative keyword conflict encountered. Some advertisers intentionally create negative keyword conflicts to block a portion of match type traffic. For example, if your phrase match keywords are "stereo plug," you might also choose "stereo plug" as an exact match negative keyword text to match only with this phrase. In this scenario, customers that are searching for specific items like "3.5mm stereo plug" or "gold stereo plug" would see ads for the "stereo plug" phrase match keyword, but customers searching for "stereo plug" wouldn’t see ads for the exact match keyword. If you are an advertiser who intentionally blocks a portion of match type traffic, you can use this column to filter out intentional negative keyword conflicts. If you're not, you should investigate and fix both types of conflicts.
+Data in this download column represent the type of negative keyword conflict encountered. Some advertisers intentionally create negative keyword conflicts to block a portion of match type traffic. For example, if your phrase match keywords are "stereo plug," you might also choose "stereo plug" as an exact match negative keyword text to match only with this phrase. In this scenario, customers that are searching for specific items like "3.5mm stereo plug" or "gold stereo plug" would see ads for the "stereo plug" phrase match keyword, but customers searching for "stereo plug" wouldn’t see ads for the exact match keyword. If you are an advertiser who intentionally blocks a portion of match type traffic, you can use this column to filter out intentional negative keyword conflicts. If you're not, you should investigate and fix both types of conflicts.
 
 ### <a name="adclickparalleltracking-august2018"></a>Ad Click Parallel Tracking
 Support for ad click parallel tracking is enabled for pilot customers. 
@@ -69,7 +87,7 @@ The Campaign Management service is updated to support similar audiences for rema
 > Bulk service support for similar audiences for remarketing lists is coming soon. 
 
 ## <a name="july2018"></a>July 2018
-For information about this month's changes to Bing Ads services, see the following sections.
+See below for Bing Ads service updates during this calendar month. 
 
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-july2018)   
 
@@ -79,7 +97,7 @@ The Bing Ads .NET, Java, Php, and Python SDKs are updated.
 - Updated the Customer Management proxies to support [LinkedAccountIds](#linkedaccountids-june2018) for agencies. For agency users the customer role can contain a list of linked accounts that the user can access as an agency on behalf of another customer.
 
 ## <a name="june2018"></a>June 2018
-For information about this month's changes to Bing Ads services, see the following sections.
+See below for Bing Ads service updates during this calendar month. 
 
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-june2018)   
 - [Linked Account Ids per Customer Role](#linkedaccountids-june2018)
@@ -94,7 +112,7 @@ The [LinkedAccountIds](../customer-management-service/customerrole.md#linkedacco
 > The [CustomerRole](../customer-management-service/customerrole.md) objects that represent the user's permissions for agency-linked accounts will not be returned by default when you call the [GetUser](../customer-management-service/getuser.md) service operation. In other words by default the [GetUser](../customer-management-service/getuser.md) operation will only return *CustomerRole* objects for customers that the user can directly access without agency linking. To retrieve [CustomerRole](../customer-management-service/customerrole.md) objects that represent the user's permissions for agency-linked accounts you must set the optional [IncludeLinkedAccountIds](../customer-management-service/getuser.md#includelinkedaccountids) element to *True* when calling the [GetUser](../customer-management-service/getuser.md) operation.
 
 ## <a name="may2018"></a>May 2018
-For information about this month's changes to Bing Ads services, see the following sections.
+See below for Bing Ads service updates during this calendar month. 
 
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-may2018)   
 - [Microsoft Audience Network Preview](#audiencenetwork-may2018)  
@@ -108,7 +126,7 @@ The Bing Ads .NET, Java, and Python SDKs are updated with retries for the 117 th
 Support is added for the Microsoft Audience Network in preview. For details see [Audience Ads](audience-ads.md). For differences between version 11 and 12, see [Migrate to Version 12](migration-guide.md). 
 
 ## <a name="april2018"></a>April 2018
-For information about this month's changes to Bing Ads services, see the following sections.
+See below for Bing Ads service updates during this calendar month. 
 
 - [Version 12 General Availability](#v12-april2018)  
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-april2018)   
@@ -132,7 +150,7 @@ The file_type parameter now defaults to 'Csv' as an *str* datatype instead of th
 The [ProductMatchCountReportRequest](../reporting-service/productmatchcountreportrequest.md) is added for Bing Shopping campaigns. You can include details in the report such as impressions, clicks, and spend that you can use to see if you are covering and bidding across your Bing shopping campaigns inventory. Note that this only provides the matched data for your current Product Group level, and you cannot obtain historical views.
 
 ## <a name="march2018"></a>March 2018
-For information about this month's changes to Bing Ads services, see the following sections.
+See below for Bing Ads service updates during this calendar month. 
 
 - [Version 12 Sandbox Beta](#v12-march2018)  
 

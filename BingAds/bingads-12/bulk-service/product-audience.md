@@ -46,9 +46,9 @@ You can download all fields of the *Product Audience* record by including the [D
 The following Bulk CSV example would add a new product audience. 
 
 ```csv
-Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Membership Duration,Scope,UET Tag Id,Audience,Product Audience Type
-Format Version,,,,,,6,,,,,,
-Product Audience,Active,-10,ParentIdHere,ClientIdGoesHere,,,New product audience,30,Account,TagIdHere,My Product Audience,GeneralVisitors
+Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Membership Duration,Scope,UET Tag Id,Audience,Product Audience Type,Supported Campaign Types
+Format Version,,,,,,6,,,,,,,
+Product Audience,Active,-10,ParentIdHere,ClientIdGoesHere,,,New product audience,30,Account,TagIdHere,My Product Audience,GeneralVisitors,Search;DynamicSearchAds;Shopping;Audience
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkProductAudience* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -183,7 +183,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ### <a name="parentid"></a>Parent Id
-The system generated identifier of the account or customer. If the *Scope* is set to *Account*, this is the account ID, and otherwise it is the customer ID.
+The system generated identifier of the account or customer. If the [Scope](#scope) is set to *Account*, this is the account ID, and otherwise it is the customer ID.
 
 **Add:** Optional  
 **Update:** Read-only. You cannot change the parent ID.  

@@ -90,7 +90,7 @@ Bing Ads SDKs support the standard OAuth 2.0 flow as defined in detail in the [T
 
 For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. The steps below follow the authorization code grant flow. For more information both about authorization code and implicit grant flows, see the [Authentication with OAuth](authentication-oauth.md) guide.
 
-1.  Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace client ID, client secret, and redirection URI with the values configured in [Registering Your Application](authentication-oauth.md#registerapplication).
+1.  Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace client ID (registered application ID), client secret (registered password), and redirection URI with the values configured in [Registering Your Application](authentication-oauth.md#registerapplication).
 
     ```csharp
     var oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(ClientId, ClientSecret, new Uri(RedirectionUri), ApiEnvironment);

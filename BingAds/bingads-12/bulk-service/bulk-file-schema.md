@@ -77,6 +77,7 @@ Record Type  |Supported Campaign Types
 [Ad Group Negative Location Criterion](ad-group-negative-location-criterion.md)|All         
 [Ad Group Negative Product Audience Association](ad-group-negative-product-audience-association.md)|Audience         
 [Ad Group Negative Remarketing List Association](ad-group-negative-remarketing-list-association.md)|All         
+[Ad Group Negative Similar Remarketing List Association](ad-group-negative-similar-remarketing-list-association.md)|All         
 [Ad Group Negative Site](ad-group-negative-site.md)|All         
 [Ad Group Price Ad Extension](ad-group-price-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group Product Audience Association](ad-group-product-audience-association.md)|Audience         
@@ -84,6 +85,7 @@ Record Type  |Supported Campaign Types
 [Ad Group Radius Criterion](ad-group-radius-criterion.md)|All         
 [Ad Group Remarketing List Association](ad-group-remarketing-list-association.md)|All         
 [Ad Group Review Ad Extension](ad-group-review-ad-extension.md)|DynamicSearchAds<br/>Search         
+[Ad Group Similar Remarketing List Association](ad-group-similar-remarketing-list-association.md)|All         
 [Ad Group Sitelink Ad Extension](ad-group-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group Structured Snippet Ad Extension](ad-group-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
 [App Ad Extension](app-ad-extension.md)|DynamicSearchAds<br/>Search         
@@ -144,6 +146,7 @@ Record Type  |Supported Campaign Types
 [Responsive Ad Label](responsive-ad-label.md)|Audience        
 [Review Ad Extension](review-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Shared Negative Keyword](shared-negative-keyword.md)|All         
+[Similar Remarketing List](similar-remarketing-list.md)|All         
 [Sitelink Ad Extension](sitelink-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Structured Snippet Ad Extension](structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Text Ad](text-ad.md)|Search         

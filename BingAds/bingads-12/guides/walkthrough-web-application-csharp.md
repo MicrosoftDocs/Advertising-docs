@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 # Walkthrough: Bing Ads Web Application in C# #
-The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID, client secret, and redirection URI. You'll also need your production [developer token](get-started.md#get-developer-token). 
+The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. You'll also need your production [developer token](get-started.md#get-developer-token). 
 
 > [!TIP]
 > This example references steps from [Create an ASP.NET Framework web app in Azure](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-dotnet-framework). For more details about deploying web apps to Azure, you can refer to the Azure documentation. 

@@ -187,7 +187,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Delete:** Read-only  
 
 ### <a name="parentid"></a>Parent Id
-The system generated identifier of the account or customer. If the *Scope* is set to *Account*, this is the account ID, and otherwise it is the customer ID.
+The system generated identifier of the account or customer. If the [Scope](#scope) is set to *Account*, this is the account ID, and otherwise it is the customer ID.
 
 **Add:** Optional  
 **Update:** Read-only. You cannot change the parent ID.  

@@ -20,7 +20,7 @@ You will need to [install](get-started-python.md#installation) the [Bing Ads Pyt
 
 You will need at least one user with Bing Ads [credentials](get-started.md) and a [developer token](get-started.md#get-developer-token). 
 
-You will need to [register an application](authentication-oauth.md#registerapplication) and take note of the client ID. You'll need to register a native app (not web) for this example.
+You must first [register an application](authentication-oauth.md#registerapplication) and take note of the Application Id that will be used as the *CLIENT_ID* in the walkthrough below. If you are targeting the production environment, then you'll also need your production [developer token](get-started.md#get-developer-token). You'll need to register a native app (not web) for this example.
 
 ## Create new Python Application
 After you have installed [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/), go to **File** -&gt; **New** -&gt; **Project** -&gt; **Templates** -&gt; **Other Languages** -&gt; **Python**, and select **Python Application** from the list of Python templates.
@@ -45,7 +45,7 @@ We'll create a virtual environment for local development. In your project right-
 Under **Python Environments** right-click your virtual environment, for example **Python 2.7** and select **Install Python Package**. Using **pip**, specify **bingads** as the name of the package to install, and then click **OK**.
 
 ## Add example code
-Edit the Python file that was provided when you created the project, for example **ConsoleGettingStarted.py**. Replace its contents with the following example. You must edit the sample below with the ClientId that was provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). For more information, see [Prerequisites](#requirements).
+Edit the Python file that was provided when you created the project, for example **ConsoleGettingStarted.py**. Replace its contents with the following example. You must edit the *CLIENT_ID* below with the Application Id that was provisioned when you [registered your application](authentication-oauth.md#registerapplication). If you are targeting the production environment, then you'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). For more information, see [Prerequisites](#requirements).
 
 ```python
 from bingads.service_client import ServiceClient
@@ -67,9 +67,9 @@ if __name__ == '__main__':
     print("Python loads the web service proxies at runtime, so you will observe " \
           "a performance delay between program launch and main execution...\n")
 
-    ENVIRONMENT = 'production'
+    ENVIRONMENT = 'sandbox'
     CLIENT_ID = 'ClientIdGoesHere'
-    DEVELOPER_TOKEN = 'DeveloperTokenGoesHere' # Use 'BBD37VB98' for the Sandbox environment
+    DEVELOPER_TOKEN = 'BBD37VB98' # Universal token for sandbox
 
     authorization_data=AuthorizationData(
         account_id=None,
