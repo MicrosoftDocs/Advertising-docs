@@ -70,5 +70,5 @@ int|The number of negative keywords that matched the selector's selection criter
 
 - [SharedNegativeKeywordSelector.get()](./SharedNegativeKeywordSelector.md#get)
 - [SharedNegativeKeyword](./SharedNegativeKeyword.md)
-- [NegativeKeywordList](./NegativeKeywordList.md#get)
+- [NegativeKeywordList](./NegativeKeywordList.md)
 
