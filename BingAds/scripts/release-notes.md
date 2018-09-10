@@ -14,6 +14,13 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## September 14, 2018
+
+Added the following objects and methods for selecting negative keywords from negative keyword lists.
+
+- 
+
+
 ## September 12, 2018
 
 Added the following methods for getting an entity's parent and child entities. 
