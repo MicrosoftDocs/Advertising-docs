@@ -301,7 +301,7 @@ Each account can contain 5,000,000 dynamic search ad targets.
 
 For more information, see the Bing Ads Help article [Target searches automatically with dynamic search ads](https://help.bingads.microsoft.com/#apex/3/en/56794/0).
 
-## <a name="customer"></a>Images
+## <a name="images"></a>Images
 Defines an image that can be uploaded to your account's image library. Each account can have up to 5,000 images.
 
 ## <a name="keyword"></a>Keywords
