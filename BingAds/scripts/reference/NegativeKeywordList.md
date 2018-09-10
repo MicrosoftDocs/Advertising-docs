@@ -22,6 +22,7 @@ Contains the methods for adding keywords to a negative keywords list. For inform
 [getEntityType](#getentitytype)|String|Gets this entity's type.
 [getId](#getid)|string|Gets the ID that uniquely identifies this negative keyword list.
 [getName](#getname)|String|Gets this negative keyword list's name.
+[negativeKeywords](#negativekeywords)|[SharedNegativeKeywordSelector](./SharedNegativeKeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of negative keywords in this negative keyword list.
 [setName(string name)](#setname-string-name-)|void|Sets this negative keyword list's name.
 
 
@@ -113,6 +114,17 @@ Gets this negative keyword list's name.
 |Type|Description|
 |-|-
 string|The name of this negative keyword list.
+
+
+## <a name="negativekeywords"></a>negativeKeywords
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of negative keywords in this negative keyword list. 
+
+### Returns
+
+|Type|Description|
+|-|-
+[SharedNegativeKeywordSelector](./SharedNegativeKeywordSelector.md)|A selector used to filter the list of negative keywords in this negative keyword list. Use the selector's methods to filter the list of negative keywords.
 
 
 ## <a name="setname-string-name-"></a>setName(string name)
