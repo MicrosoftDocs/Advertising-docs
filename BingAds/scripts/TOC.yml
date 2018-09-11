@@ -30,6 +30,8 @@
       href: concepts/ids.md 
     - name: Mapping bid strategies
       href: concepts/bid-strategies.md 
+    - name: Shared budgets
+      href: concepts/shared-budgets.md 
     - name: Mapping editorial approval
       href: concepts/editorial-approval.md 
     - name: JavaScript features
@@ -41,6 +43,8 @@
       href: examples/adgroups.md 
     - name: Ads
       href: examples/ads.md 
+    - name: Budgets
+      href: examples/budgets.md 
     - name: Campaigns
       href: examples/campaigns.md 
     - name: Keywords
@@ -93,6 +97,10 @@
           href: ./reference/BingAdsDate.md 
         - name: Budget
           href: ./reference/Budget.md 
+        - name: BudgetIterator
+          href: ./reference/BudgetIterator.md 
+        - name: BudgetSelector
+          href: ./reference/BudgetSelector.md 
         - name: Campaign
           href: ./reference/Campaign.md 
         - name: CampaignIterator
