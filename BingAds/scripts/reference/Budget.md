@@ -22,6 +22,7 @@ Contains the methods for managing a budget. For more information, see [Budget](/
 [getId](#getid)|string|Gets the ID that uniquely identifies this shared budget.
 [getName](#getname)|string|Gets this shared budget's name.
 [getStats](#getstats)|[Stats](Stats.md)|Gets the performance data for the campaigns that share this budget.
+[getType](#gettype)|string|Gets this budget's type.
 [isExplicitlyShared](#isexplicitlyshared)|Boolean|Gets a Boolean value that indicates whether this budget is a shared budget.
 [setAmount(double amount)](#setamount-double-amount-)|void|Sets the budget to the specified amount.
 [setDeliveryMethod(String method)](#setdeliverymethod-string-method-)|void|Sets the delivery method for this budget.
@@ -83,6 +84,15 @@ Gets this shared budget's name.
 |Type|Description|
 |-|-
 string|The shared budget's name. Returns null if the budget is not a shared budget.
+
+
+## <a name="gettype"></a>getType
+Gets this budget's type.
+
+### Returns:
+|Type|Description|
+|-|-
+string|The budget's type. The following are the possible types.<ul><li>DAILY</li></ul>
 
 
 ## <a name="getstats"></a>getStats
