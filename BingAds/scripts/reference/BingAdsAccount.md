@@ -1,5 +1,5 @@
 ---
-title: "ManagedAccount object"
+title: "BingAdsAccount object"
 description: "Contains the methods used to get account information such as name, customer ID, and account-level performance data."
 author: "swhite-msft"
 manager: ehansen
@@ -9,7 +9,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# ManagedAccount
+# BingAdsAccount
 
 Contains the methods used to get account information such as name, customer ID, and account-level performance data.
 
@@ -21,7 +21,7 @@ Contains the methods used to get account information such as name, customer ID, 
 [getCustomerId](#getcustomerid)|string|Gets the customer ID of the owner that owns this account.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getName](#getname)|string|Gets this managed account's name.
-[getStats](#getstats)|[ManagedAccountStats](ManagedAccountStats.md)|Gets the performance data for this managed account.
+[getStats](#getstats)|[BingAdsAccountStats](BingAdsAccountStats.md)|Gets the performance data for this managed account.
 
 
 ## <a name="getcurrencycode"></a>getCurrencyCode
@@ -66,6 +66,6 @@ Gets the performance data for this managed account.
 ### Returns:
 |Type|Description|
 |-|-
-[ManagedAccountStats](ManagedAccountStats.md)|The performance data for this managed account.
+[BingAdsAccountStats](BingAdsAccountStats.md)|The performance data for this managed account.
 
 

@@ -1,5 +1,5 @@
 ---
-title: "ManagedAccountIterator object"
+title: "BingAdsAccountIterator object"
 description: "Contains the methods for iterating through a list of managed accounts."
 author: "swhite-msft"
 manager: ehansen
@@ -9,7 +9,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# ManagedAccountIterator
+# BingAdsAccountIterator
 
 Contains the methods for iterating through a list of managed accounts. For information about iterators, see [Iterators](../concepts/iterators.md).
 
@@ -17,7 +17,7 @@ Example usage:
 ```javascript
     // Gets the iterator that iterates all managed
     // accounts you have access to.
-    var accounts = MccApp.accounts().get();
+    var accounts = AccountsApp.accounts().get();
 
     // Loops through the list of accounts.
     while (accounts.hasNext()) {
@@ -31,7 +31,7 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|Boolean|Gets a Boolean value that indicates whether this iterator has more elements.
-[next](#next)|[ManagedAccount](./ManagedAccount.md)|Advances the iterator and returns the next managed account.
+[next](#next)|[BingAdsAccount](./BingAdsAccount.md)|Advances the iterator and returns the next managed account.
 [totalNumEntities](#totalnumentities)|int|Gets the number of managed accounts that matched the selector's selection criteria.
 
 ## <a name="hasnext"></a>hasNext
@@ -48,7 +48,7 @@ Advances the iterator and returns the next managed account.
 ### Returns
 |Type|Description|
 |-|-
-[ManagedAccount](./ManagedAccount.md)|The next account in the iterator.
+[BingAdsAccount](./BingAdsAccount.md)|The next account in the iterator.
 
 ## <a name="totalnumentities"></a>totalNumEntities
 Gets the number of managed accounts that matched the selector's selection criteria.
@@ -65,6 +65,6 @@ int|The number of managed accounts that matched the selector's selection criteri
 
 ## See also
 
-- [ManagedAccountSelector.get()](./ManagedAccountSelector.md#get)
-- [ManagedAccount](./ManagedAccount.md)
-- [MccApp](./MccApp.md)
+- [BingAdsAccountSelector.get()](./BingAdsAccountSelector.md#get)
+- [BingAdsAccount](./BingAdsAccount.md)
+- [MccApp](./AccountsApp.md)

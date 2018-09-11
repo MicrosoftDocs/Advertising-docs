@@ -1,5 +1,5 @@
 ---
-title: "ManagedAccountStats object"
+title: "BingAdsAccountStats object"
 description: "Contains the methods for accessing a managed account's performance data."
 author: "swhite-msft"
 manager: ehansen
@@ -9,14 +9,14 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# ManagedAccountStats
+# BingAdsAccountStats
 
 Contains the methods for accessing a managed account's performance data.
 
 
 Example usage:
 ```javascript
-    var account = MccApp.accounts()
+    var account = AccountsApp.accounts()
         .get()
         .forDateRange("LAST_WEEK")
         .next();
