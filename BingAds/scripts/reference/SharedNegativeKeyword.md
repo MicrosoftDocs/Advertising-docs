@@ -30,7 +30,7 @@ Returns this entity's type.
 ### Returns
 |Type|Description|
 |-|-
-string|This entity's type, which is *NegativeKeyword*.
+string|This entity's type, which is *SharedNegativeKeyword*.
 
 
 ## <a name="getmatchtype"></a>getMatchType
