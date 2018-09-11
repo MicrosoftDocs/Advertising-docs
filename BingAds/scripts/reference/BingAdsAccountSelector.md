@@ -40,12 +40,12 @@ Example usage:
 
 
 ## <a name="executeinparallel-string-functionname-string-optionalcallbackfunctionname-"></a>executeInParallel(string functionName, string optionalCallbackFunctionName)
-Executes the function for each account that the selector returns. After the function is executed for all selected accounts, Bing calls the optional callback function.
+Executes the function for each account that the selector returns. After the function executes for all selected accounts, Bing calls the optional callback function.
 
 > [!NOTE]
-> To use this method, the selector must return no more than 50 accounts. If the selector returns more than 50 accounts, Bing does not execute the function for any of the accounts. However, the iterator will continue working; you can get the entire list of accounts. You can use the `withLimit` method to limit the number of accounts the selector returns.
+> To use this method, the selector must return no more than 50 accounts. If the selector returns more than 50 accounts, Bing does not execute the function for any of the accounts. You can use the `withLimit` method to limit the number of accounts the selector returns.
 
-The *functionName* function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. If your function returns a value, you must specify a callback function to capture the return values. The following shows the callback function's signature. The returns values are passed as an array of [ExecutionResult](./ExecutionResult.md) objects.
+The functionName function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. If your function returns a value, you must specify a callback function to capture the return values. The following shows the callback function's signature. The returns values are passed as an array of [ExecutionResult](./ExecutionResult.md) objects.
 
 ```javascript
 function myCallback(ExecutionResult[] results)
@@ -65,7 +65,7 @@ function myCallback(results) {
 |Name|Type|Description|
 |-|-|-
 functionName|string|The name of the function to execute for each account that the selector returns.
-optionalCallbackFunctionName|string|Optional. The name of the function to execute after all accounts finish executing the *functionName* function. This function executes only one time. 
+optionalCallbackFunctionName|string|Optional. The name of the function to execute after all accounts finish executing the functionName function. This function executes only one time. 
 
 ### Returns
 |Type|Description|
@@ -77,9 +77,9 @@ void|Returns nothing.
 Executes the function for each account that the selector returns. After the function executes for all selected accounts, Bing calls the optional callback function.
 
 > [!NOTE]
-> To use this method, the selector must return no more than 50 accounts. If the selector returns more than 50 accounts, Bing does not execute the function for any of the accounts. However, the iterator will continue working; you can get the entire list of accounts. You can use the `withLimit` method to limit the number of accounts the selector returns.
+> To use this method, the selector must return no more than 50 accounts. If the selector returns more than 50 accounts, Bing does not execute the function for any of the accounts. You can use the `withLimit` method to limit the number of accounts the selector returns.
 
-The *functionName* function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. If your function returns a value, you must specify a callback function to capture the return values. The following shows the callback function's signature. The returns values are passed as an array of [ExecutionResult](./ExecutionResult.md) objects.
+The functionName function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. If your function returns a value, you must specify a callback function to capture the return values. The following shows the callback function's signature. The returns values are passed as an array of [ExecutionResult](./ExecutionResult.md) objects.
 
 ```javascript
 function myCallback(ExecutionResult[] results)
@@ -95,7 +95,7 @@ function myCallback(results) {
 }
 ```
 
-If you pass the optional input parameter, the following shows the signature of the *functionName* function.
+If you pass the optional input parameter, the following shows the signature of the functionName function.
 
 ```javascript
 function myFunction(string optionalInput)
@@ -105,8 +105,8 @@ function myFunction(string optionalInput)
 |Name|Type|Description|
 |-|-|-
 functionName|string|The name of the function to execute for each account that the selector returns.
-optionalCallbackFunctionName|string|Optional. The name of the function to execute after all accounts finish executing the *functionName* function. This function executes only one time.
-optionalInput|string|Optional. Input to pass to the *functionName* function.
+optionalCallbackFunctionName|string|Optional. The name of the function to execute after all accounts finish executing the functionName function. This function executes only one time.
+optionalInput|string|Optional. Input to pass to the functionName function.
 
 ### Returns
 |Type|Description|
