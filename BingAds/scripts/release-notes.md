@@ -16,13 +16,13 @@ For information about changes that were included with each release, see the foll
 
 ## Octoboer 2, 2018
 
-Added the following objects and methods to support managed accounts.
+Added the following objects and methods to support multi-accounts.
 
 - Added the `currentAccount` method to [BingAdsApp](reference/BingAdsApp.md). Use this method to get the [Account](reference/Account.md) object, which contains information about the account that the script is currently processing.  
   
 - Added the [AccountsApp](reference/AccountsApp.md) object. This is the top-level object that you use if you're managing accounts for others. Use it to get the list of accounts you have access to and to select the account to manage.  
   
-- Added the [BingAdsAccount](reference/BingAdsAccount.md) object. Use it to get account information such as name, customer ID, and account-level performance data.
+- Added the [BingAdsAccount](reference/BingAdsAccount.md) object. Use it to get account information for a managed account such as name, customer ID, and account-level performance data.
   
 - Added the [BingAdsAccountIterator](reference/BingAdsAccountIterator.md) object. Use it to iterate through the list of managed accounts that you selected.
   
@@ -31,7 +31,6 @@ Added the following objects and methods to support managed accounts.
 - Added the [BingAdsAccountStats](reference/BingAdsAccountStats.md) object. Use it to access the managed account's performance data.  
   
 - Added the [ExecutionResult](reference/ExecutionResult.md) object. Use it to get the results and return value of the function you specify in the `executeInParallel` selector method (see [BingAdsAccountSelector](reference/BingAdsAccountSelector.md)). 
-
 
 
 ## October 1, 2018

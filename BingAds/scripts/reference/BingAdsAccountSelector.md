@@ -1,5 +1,5 @@
 ---
-title: "ManagedAccountSelector object"
+title: "BingAdsAccountSelector object"
 description: "Contains the methods for filtering the list of managed accounts that you have access to."
 author: "swhite-msft"
 manager: ehansen
@@ -9,13 +9,13 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# ManagedAccountSelector
+# BingAdsAccountSelector
 
 Contains the methods for filtering and ordering the list of managed accounts that you have access to. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 Example usage:
 ```javascript
-    var accounts = MccApp.accounts()
+    var accounts = AccountsApp.accounts()
         .withCondition("Name CONTAINS_IGNORE_CASE 'PARTIAL ACCOUNT NAME GOES HERE'")
         .get();
 
@@ -30,13 +30,13 @@ Example usage:
 |-|-|-
 [executeInParallel(string functionName, string optionalCallbackFunctionName)](#executeinparallel-string-functionname-string-optionalcallbackfunctionname-)|void|Executes the function for each account that the selector returns.
 [executeInParallel(string functionName, string optionalCallbackFunctionName, string optionalInput)](#executeinparallel-string-functionname-string-optionalcallbackfunctionname-string-optionalinput-)|void|Executes the function for each account that the selector returns.
-[forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-)|[ManagedAccountSelector](./ManagedAccountSelector.md)|Applies the start and end dates for selecting performance metrics.
-[forDateRange(string dateRange)](#fordaterange-string-daterange-)|[ManagedAccountSelector](./ManagedAccountSelector.md)|Applies the predefined date range for selecting performance metrics.
-[get](#get)|[ManagedAccountIterator](./ManagedAccountIterator.md)|Gets an iterator that you use to iterate through the list of managed accounts.
-[orderBy(string orderBy)](#orderby-string-orderby-)|[ManagedAccountSelector](./ManagedAccountSelector.md)|Applies the specified ordering to the selected managed accounts.
-[withCondition(string condition)](#withcondition-string-condition-)|[ManagedAccountSelector](./ManagedAccountSelector.md)|Applies filter criteria to the managed accounts.
-[withIds(string[] ids)](#withids-string-ids-)|[ManagedAccountSelector](./ManagedAccountSelector.md)|Gets managed accounts with the specified IDs.
-[withLimit(int limit)](#withlimit-int-limit-)|[ManagedAccountSelector](./ManagedAccountSelector.md)|Gets the top *n* managed accounts that match the selection criteria.
+[forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies the start and end dates for selecting performance metrics.
+[forDateRange(string dateRange)](#fordaterange-string-daterange-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies the predefined date range for selecting performance metrics.
+[get](#get)|[BingAdsAccountIterator](./BingAdsAccountIterator.md)|Gets an iterator that you use to iterate through the list of managed accounts.
+[orderBy(string orderBy)](#orderby-string-orderby-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies the specified ordering to the selected managed accounts.
+[withCondition(string condition)](#withcondition-string-condition-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies filter criteria to the managed accounts.
+[withIds(string[] ids)](#withids-string-ids-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Gets managed accounts with the specified IDs.
+[withLimit(int limit)](#withlimit-int-limit-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Gets the top *n* managed accounts that match the selection criteria.
 
 
 ## <a name="executeinparallel-string-functionname-string-optionalcallbackfunctionname-"></a>executeInParallel(string functionName, string optionalCallbackFunctionName)
@@ -128,7 +128,7 @@ dateTo|Object|The end date of the date range that specifies the performance data
 ### Returns
 |Type|Description|
 |-|-
-[ManagedAccountSelector](./ManagedAccountSelector.md)|Selector with date range applied.
+[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Selector with date range applied.
 
 
 ## <a name="fordaterange-string-daterange-"></a>forDateRange(String dateRange)
@@ -146,7 +146,7 @@ dateRange|String|The predefined date range string that specifies the performance
 ### Returns
 |Type|Description|
 |-|-
-[ManagedAccountSelector](./ManagedAccountSelector.md)|Selector with date range applied.
+[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Selector with date range applied.
 
 
 ## <a name="get"></a>get
@@ -155,7 +155,7 @@ Gets an [iterator](../concepts/iterators.md) that you use to iterate through the
 ### Returns
 |Type|Description|
 |-|-
-[ManagedAccount](./ManagedAccount.md)|An iterator that you use to iterate through the selected accounts.
+[BingAdsAccount](./BingAdsAccount.md)|An iterator that you use to iterate through the selected accounts.
 
 
 ## <a name="orderby-string-orderby-"></a>orderBy(string orderBy)
@@ -180,7 +180,7 @@ orderBy|string|The ordering to apply.
 ### Returns
 |Type|Description|
 |-|-
-[ManagedAccountSelector](./ManagedAccountSelector.md)|Selector with ordering applied.
+[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Selector with ordering applied.
 
 
 ## <a name="withcondition-string-condition-"></a>withCondition(String condition)
@@ -223,7 +223,7 @@ condition|string|The condition to add to the selector.
 ### Returns
 |Type|Description|
 |-|-
-[ManagedAccountSelector](./ManagedAccountSelector.md)|Selector with the condition applied.
+[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Selector with the condition applied.
 
 
 ## <a name="withids-string-ids-"></a>withIds(string[] ids)
@@ -248,7 +248,7 @@ ids|string[]|An array of managed account IDs. The maximum number of IDs that you
 ### Returns
 |Type|Description|
 |-|-
-[ManagedAccountSelector](./ManagedAccountSelector.md)|Selector with the IDs applied.
+[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Selector with the IDs applied.
 
 
 ## <a name="withlimit-int-limit-"></a>withLimit(int limit)
@@ -262,12 +262,12 @@ limit|int|The number of managed accounts to return. The actual number may be les
 ### Returns
 |Type|Description|
 |-|-
-[ManagedAccountSelector](./ManagedAccountSelector.md)|Selector with limit applied.
+[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Selector with limit applied.
 
 
 
 ## See also
 
-- [MccApp.accounts()](MccApp.md)
-- [ManagedAccountIterator](./ManagedAccountIterator.md)
+- [AccountsApp.accounts()](AccountsApp.md)
+- [BingAdsAccountIterator](./BingAdsAccountIterator.md)
 
