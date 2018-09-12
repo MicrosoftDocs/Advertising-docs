@@ -38,7 +38,7 @@ Gets the error that occurred when Bing ran the executeInParallel function.
 ### Returns
 |Type|Description|
 |-|-
-String|The error that occurred when Bing ran the executeInParallel function. Returns null if there was no error.
+String|The error that occurred when Bing ran the executeInParallel function. The error is set if the `getStatus` method returns ERROR. This method returns null if there was no error.
 
 
 ## <a name="getreturnvalue"></a>getReturnValue
