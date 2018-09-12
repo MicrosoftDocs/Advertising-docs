@@ -54,7 +54,7 @@ public async Task RunAsync(AuthorizationData authorizationData)
     tokenSource.CancelAfter(3600000);
 
     var resultFilePath = await ReportingService.DownloadFileAsync(reportingDownloadParameters, tokenSource.Token);
-    Console.WriteLine(String.Format("Download result file: {0}\n", resultFilePath));
+    Console.WriteLine(string.Format("Download result file: {0}\n", resultFilePath));
 }
 ```
 ```java
@@ -151,7 +151,7 @@ public async Task RunAsync(AuthorizationData authorizationData)
         decompress: true,
         overwrite: true);   // Set this value true if you want to overwrite the same file.
 
-    Console.WriteLine(String.Format("Download result file: {0}\n", resultFilePath));
+    Console.WriteLine(string.Format("Download result file: {0}\n", resultFilePath));
 }
 ```
 ```java
@@ -260,9 +260,9 @@ public async Task RunAsync(AuthorizationData authorizationData)
         decompress: true,
         overwrite: true);   // Set this value true if you want to overwrite the same file.
 
-    Console.WriteLine(String.Format("Download result file: {0}", resultFilePath));
-    Console.WriteLine(String.Format("Status: {0}", reportingOperationStatus.Status));
-    Console.WriteLine(String.Format("TrackingId: {0}\n", reportingOperationStatus.TrackingId));
+    Console.WriteLine(string.Format("Download result file: {0}", resultFilePath));
+    Console.WriteLine(string.Format("Status: {0}", reportingOperationStatus.Status));
+    Console.WriteLine(string.Format("TrackingId: {0}\n", reportingOperationStatus.TrackingId));
 }
 ```
 ```java
@@ -313,6 +313,77 @@ result_file_path = reporting_download_operation.download_result_file(
 
 print("Download result file: {0}".format(result_file_path))
 print("Status: {0}\n".format(reporting_operation_status.status))
+```
+
+## <a name="reportcontainer"></a>In-Memory Report Container
+The *Report* is an in-memory container that abstracts the contents of a downloaded report file, including header metadata, column names, and report records. With these updates you are free to focus more on the business requirements of your application instead of parsing the report file.
+You can access the Report container in-memory via the *ReportingServiceManager* by submitting a new download request, or by using the *ReportFileReader* to read from a report file that you already downloaded. 
+
+For example you can get a Report object by submitting a new download request via ReportingServiceManager. Although in this case you won’t work directly with the file, under the covers a request is submitted to the Reporting service and the report file is downloaded to a local directory. 
+
+> [!NOTE]
+> Code samples for Report and ReportFileReader using the Java and Python SDKs are coming soon.
+
+```csharp
+Report reportContainer = (await ReportingServiceManager.DownloadReportAsync(
+    reportingDownloadParameters,
+    CancellationToken.None));
+```
+
+Otherwise if you already have a report file that was downloaded via the API, you can get a Report object via the ReportFileReader. 
+
+```csharp
+ReportFileReader reader = new ReportFileReader(
+    "c:\\reports\\result.csv",
+    ReportFormat.Csv);
+Report reportContainer = reader.GetReport();
+```
+
+Once you have a Report object via either workflow above, you can access the metadata and report records. 
+
+```csharp
+// Output the report metadata
+
+long recordCount = reportContainer.ReportRecordCount;
+Console.WriteLine(string.Format("ReportName: {0}", reportContainer.ReportName));
+Console.WriteLine(string.Format("ReportTimeStart: {0}", reportContainer.ReportTimeStart));
+Console.WriteLine(string.Format("ReportTimeEnd: {0}", reportContainer.ReportTimeEnd));
+Console.WriteLine(string.Format("LastCompletedAvailableDate: {0}", reportContainer.LastCompletedAvailableDate.ToString()));
+Console.WriteLine(string.Format("ReportAggregation: {0}", reportContainer.ReportAggregation.ToString()));
+Console.WriteLine(string.Format("ReportColumns: {0}", string.Join("; ", reportContainer.ReportColumns)));
+Console.WriteLine(string.Format("ReportRecordCount: {0}", recordCount));
+
+// Analyze and output performance statistics
+
+IEnumerable<IReportRecord> reportRecordIterable = reportContainer.GetReportRecords();
+            
+int totalImpressions = 0;
+int totalClicks = 0;
+HashSet<string> distinctDevices = new HashSet<string>();
+HashSet<string> distinctNetworks = new HashSet<string>();
+foreach (IReportRecord record in reportContainer.GetReportRecords())
+{
+    totalImpressions += record.GetIntegerValue("Impressions");
+    totalClicks += record.GetIntegerValue("Clicks");
+    distinctDevices.Add(record.GetStringValue("DeviceType"));
+    distinctNetworks.Add(record.GetStringValue("Network"));
+}
+
+Console.WriteLine(string.Format("Total Impressions: {0}", totalImpressions));
+Console.WriteLine(string.Format("Total Clicks: {0}", totalClicks));
+Console.WriteLine(string.Format("Average Impressions: {0}", totalImpressions * 1.0 / recordCount));
+Console.WriteLine(string.Format("Average Clicks: {0}", totalClicks * 1.0 / recordCount));
+Console.WriteLine(string.Format("Distinct Devices: {0}", string.Join("; ", distinctDevices)));
+Console.WriteLine(string.Format("Distinct Networks: {0}", string.Join("; ", distinctNetworks)));
+
+// Be sure to close the report before you attempt to clean up files within the working directory.
+
+reportContainer.Dispose();
+
+// The CleanupTempFiles method removes all files (not sub-directories) within the working directory, 
+// whether or not the files were created by this ReportingServiceManager instance. 
+
+ReportingServiceManager.CleanupTempFiles();
 ```
 
 ## See Also
