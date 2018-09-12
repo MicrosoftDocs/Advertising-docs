@@ -14,7 +14,7 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
-## September 10, 2018
+## September 12, 2018
 
 Added the following methods for getting an entity's parent and child entities. 
 
