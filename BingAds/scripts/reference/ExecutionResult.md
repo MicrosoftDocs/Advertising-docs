@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # ExecutionResult
 
-Contains the methods used to get information about the execution result of the `executeInParallel` function (see [ManagedAccountSelector](./ManagedAccountSelector.md)).
+Contains the methods used to get information about the execution result of the `executeInParallel` function (see [BingAdsAccountSelector](./BingAdsAccountSelector.md)).
 
 
 ## Methods
@@ -42,7 +42,7 @@ String|The error that occurred when Bing ran the executeInParallel function. Ret
 
 
 ## <a name="getreturnvalue"></a>getReturnValue
-Gets the return value that the executeInParallel function returned. For details, see [ManagedAccountSelector](./ManagedAccountSelector.md).
+Gets the return value that the executeInParallel function returned. For details, see [BingAdsAccountSelector](./BingAdsAccountSelector.md).
 
 ### Returns
 |Type|Description|
