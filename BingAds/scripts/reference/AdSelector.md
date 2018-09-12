@@ -12,7 +12,7 @@ ms.topic: "article"
 
 # AdSelector
 
-Contains the methods for filtering and sorting the list of ads. For information about selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods for filtering and sorting a list of ads. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 ## Methods
 

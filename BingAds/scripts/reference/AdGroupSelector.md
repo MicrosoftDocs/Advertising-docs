@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # AdGroupSelector
 
-Contains the methods for filtering and sorting the list of ad groups. For information about selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods for filtering and sorting a list of ad groups. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 Example usage:
 ```javascript
