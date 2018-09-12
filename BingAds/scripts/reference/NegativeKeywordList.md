@@ -18,7 +18,7 @@ Contains the methods for adding keywords to a negative keywords list. For inform
 |-|-|-
 [addNegativeKeyword(string keywordText)](#addnegativekeyword-string-keywordtext-)|void|Adds a keyword to this negative keywords list.
 [addNegativeKeywords(string[] keywordTexts)](#addnegativekeywords-string-keywordtexts-)|void|Adds a list of keywords to this negative keywords list.
-[campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all campaigns that are associated with this negative keywords list.
+[campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns that the negative keyword list is associated with.
 [getEntityType](#getentitytype)|String|Gets this entity's type.
 [getId](#getid)|string|Gets the ID that uniquely identifies this negative keyword list.
 [getName](#getname)|String|Gets this negative keyword list's name.
@@ -79,13 +79,13 @@ void|Returns nothing.
 
 ## <a name="campaigns"></a>campaigns
 
-Gets a [selector](../concepts/selectors.md) that returns all campaigns associated with this negative keywords list. 
+Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns that the negative keyword list is associated with. 
 
 ### Returns
 
 |Type|Description|
 |-|-
-[CampaignSelector](./CampaignSelector.md)|A selector that returns all campaigns associated with this negative keywords list. Use the selector's methods to filter the list of campaigns.
+[CampaignSelector](./CampaignSelector.md)|A selector used to filter the list of campaigns that the negative keyword list is associated with.
 
 
 ## <a name="getentitytype"></a>getEntityType

@@ -17,8 +17,8 @@ Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarch
 |Method Name|Return Type|Description|
 |-|-|-
 [addNegativeKeywordList(NegativeKeywordList negativeKeywordList)](#addnegativekeywordlist-negativekeywordlist-negativekeywordlist-)|void|Adds a negative keyword list to this campaign.
-[adgroups](#adgroups)|[AdGroupSelector](./AdGroupSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all ad groups in this campaign.
-[ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all ads in this campaign.
+[adgroups](#adgroups)|[AdGroupSelector](./AdGroupSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ad groups in this campaign.
+[ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ads in this campaign.
 [enable](#enable)|void|Enables this campaign.
 [getBiddingStrategyType](#getbiddingstrategytype)|string|Gets this campaign's bidding strategy.
 [getBudget](#getbudget)|[Budget](Budget.md)|Gets this campaign's budget.
@@ -29,7 +29,7 @@ Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarch
 [isEnabled](#isenabled)|boolean|Gets a Boolean value that indicates whether this campaign is enabled.
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this campaign is paused.
 [isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this campaign is removed (deleted).
-[keywords](#keywrods)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all keywords in this campaign.
+[keywords](#keywrods)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of keywords in this campaign.
 [newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder.md)|Gets a builder that you use to add an ad group to this campaign.
 [pause](#pause)|void|Pauses this campaign.
 [remove](#remove)|void|Removes this campaign.
@@ -53,24 +53,24 @@ void|Returns nothing.
 
 ## <a name="adgroups"></a>adGroups
 
-Gets a [selector](../concepts/selectors.md) that returns all ad groups in this campaign. 
+Gets a [selector](../concepts/selectors.md) used to filter the list of ad groups in this campaign. 
 
 ### Returns
 
 |Type|Description|
 |-|-
-[AdGroupSelector](./AdGroupSelector.md)|A selector that returns all ad groups in this campaign. Use the selector's methods to filter the list of ad groups.
+[AdGroupSelector](./AdGroupSelector.md)|A selector used to filter the list of ad groups in this campaign.
 
 
 ## <a name="ads"></a>ads
 
-Gets a [selector](../concepts/selectors.md) that returns all ads in this campaign. 
+Gets a [selector](../concepts/selectors.md) used to filter the list of ads in this campaign. 
 
 ### Returns
 
 |Type|Description|
 |-|-
-[AdSelector](./AdSelector.md)|A selector that returns all ads in this campaign. Use the selector's methods to filter the list of ads.
+[AdSelector](./AdSelector.md)|A selector used to filter the list of ads in this campaign.
 
 
 ## <a name="enable"></a>enable
@@ -165,13 +165,13 @@ Boolean|Is **true** if this campaign is removed; otherwise, **false**.
 
 ## <a name="keywords"></a>keywords
 
-Gets a [selector](../concepts/selectors.md) that returns all keywords in this campaign. 
+Gets a [selector](../concepts/selectors.md) used to filter the list of keywords in this campaign. 
 
 ### Returns
 
 |Type|Description|
 |-|-
-[KeywordSelector](./KeywordSelector.md)|A selector that returns all keywords in this campaign. Use the selector's methods to filter the list of keywords.
+[KeywordSelector](./KeywordSelector.md)|A selector used to filter the list of keywords in this campaign. 
 
 
 ## <a name="newadgroupbuilder"></a>newAdGroupBuilder

@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # CampaignSelector
 
-Contains the methods for filtering and sorting the list of campaigns to get. For information about selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods for filtering and sorting a list of campaigns. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 Example usage:
 ```javascript

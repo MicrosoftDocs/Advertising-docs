@@ -19,14 +19,14 @@ For information about changes that were included with each release, see the foll
 Added the following methods for getting an entity's parent and child entities. 
 
 - [AdGroup.getCampaign](reference/AdGroup.md#getcampaign) &mdash; Gets the campaign that the ad group belongs to.
-- [AdGroup.keywords](reference/AdGroup.md#keywords) &mdash; Gets the list of keywords that belong to the ad group.
-- [AdParam.getAdGroup](reference/AdParam.md#getadgroup) &mdash; Gets the ad group that the keyword associated with this ad parameter belongs to.
+- [AdGroup.keywords](reference/AdGroup.md#keywords) &mdash; Gets a selector used to filter the ad group's list of keywords.
+- [AdParam.getAdGroup](reference/AdParam.md#getadgroup) &mdash; Gets the ad group that the keyword associated with this substitution parameter belongs to.
 - [AdParam.getKeyword](reference/AdParam.md#getkeyword) &mdash; Gets the keyword that the substitution parameter applies to.
-- [Campaign.adGroups](reference/Campaign.md#adgroups) &mdash; Gets the list of ad groups that belong to the campaign.
-- [Campaign.keywords](reference/Campaign.md#keywords) &mdash; Gets the list of keywords that belong to the campaign.
+- [Campaign.adGroups](reference/Campaign.md#adgroups) &mdash; Gets a selector used to filter the campaign's list of ad groups.
+- [Campaign.keywords](reference/Campaign.md#keywords) &mdash; Gets a selector used to filter the campaign's list of keywords.
 - [Keyword.getCampaign](reference/Keyword.md#getcampaign) &mdash; Gets the campaign that the keyword belongs to.
 - [Keyword.getAdGroup](reference/Keyword.md#getadgroup) &mdash; Gets the ad group that the keyword belongs to.
-- [NegativeKeywordList.campaigns](reference/Campaign.md#adgroups) &mdash; Gets the list of campaigns that the negative keyword list is associated with.
+- [NegativeKeywordList.campaigns](reference/Campaign.md#adgroups) &mdash; Gets a selector used to filter the list of campaigns that the negative keyword list is associated with.
 
 
 ## September 9, 2018

@@ -16,7 +16,7 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all ads in this ad group.
+[ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ads in this ad group.
 [bidding](#bidding)|[AdGroupBidding](AdGroupBidding.md)|Gets the methods used to manage this ad group's bid amount.
 [enable](#enable)|void|Enables this ad group.
 [getCampaign](#getcampaign)|[Campaign](Campaign.md)|Gets the campaign that this ad group belongs to.
@@ -29,7 +29,7 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 [isEnabled](#isenabled)|Boolean|Gets a Boolean value that indicates whether this ad group is enabled.
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this ad group is paused.
 [isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this ad group is removed.
-[keywords](#keywrods)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) that returns all keywords in this ad group.
+[keywords](#keywrods)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of keywords in this ad group.
 [newAd](#newad)|[AdBuilderSpace](./AdBuilderSpace.md)|Gets an object that contains methods for getting ad builders.
 [newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Gets a builder that you use to add a keyword to this ad group.
 [pause](#pause)|void|Pauses this ad group.
@@ -43,13 +43,13 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 
 ## <a name="ads"></a>ads
 
-Gets a [selector](../concepts/selectors.md) that returns all ads in this ad group. 
+Gets a [selector](../concepts/selectors.md) used to filter the list of ads in this ad group. 
 
 ### Returns
 
 |Type|Description|
 |-|-
-[AdSelector](./AdSelector.md)|A selector that returns all ads in this ad group. Use the selector's methods to filter the list of ads.
+[AdSelector](./AdSelector.md)|A selector used to filter the list of ads in this ad group.
 
 
 ## <a name="bidding"></a>bidding
@@ -162,13 +162,13 @@ Boolean|Is **true** if this ad group is removed; otherwise, **false**.
 
 ## <a name="keywords"></a>keywords
 
-Gets a [selector](../concepts/selectors.md) that returns all keywords in this ad group. 
+Gets a [selector](../concepts/selectors.md) used to filter the list of keywords in this ad group. 
 
 ### Returns
 
 |Type|Description|
 |-|-
-[KeywordSelector](./KeywordSelector.md)|A selector that returns all keywords in this ad group. Use the selector's methods to filter the list of keywords.
+[KeywordSelector](./KeywordSelector.md)|A selector used to filter the list of keywords in this ad group.
 
 
 ## <a name="newad"></a>newAd
