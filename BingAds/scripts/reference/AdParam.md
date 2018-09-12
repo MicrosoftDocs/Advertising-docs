@@ -16,6 +16,7 @@ Contains the methods used to manage the substitution parameters used in the keyw
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
+[getAdGroup](#getadgroup)|[AdGroup](AdGroup.md)|Gets the ad group that the keyword associated with this substitution parameter belongs to.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getIndex](#getindex)|int|Gets the index that identifies this substitution parameter.
 [getInsertionText](#getinsertiontext)|string|Gets the substitution parameter's text.
@@ -24,8 +25,17 @@ Contains the methods used to manage the substitution parameters used in the keyw
 [setInsertionText(string insertionText)](#setinsertiontext-string-insertiontext-)|void|Sets the substitution parameter's text.
 
 
+## <a name="getadgroup"></a>getAdGroup
+Gets the ad group that the keyword associated with this substitution parameter belongs to.
+
+### Returns
+|Type|Description|
+|-|-
+[AdGroup](AdGroup.md)|The ad group that the keyword associated with this substitution parameter belongs to.
+
+
 ## <a name="getentitytype"></a>getEntityType
-Returns this entity's type.
+Gets this entity's type.
 
 ### Returns
 |Type|Description|

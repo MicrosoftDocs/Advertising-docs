@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # NegativeKeywordListSelector
 
-Contains the methods for filtering and ordering the negative keywords lists. For information about selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods for filtering and ordering negative keywords lists. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 Example usage:
 ```javascript
