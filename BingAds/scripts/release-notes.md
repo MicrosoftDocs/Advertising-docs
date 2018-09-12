@@ -30,7 +30,7 @@ Added the following objects and methods to support multi-accounts.
   
 - Added the [BingAdsAccountStats](reference/BingAdsAccountStats.md) object. Use it to access the managed account's performance data.  
   
-- Added the [ExecutionResult](reference/ExecutionResult.md) object. Use it to get the results and return value of the function you specify in the `executeInParallel` selector method (see [ManagedAccountSelector](reference/ManagedAccountSelector.md)). 
+- Added the [ExecutionResult](reference/ExecutionResult.md) object. Use it to get the results and return value of the function you specify in the `executeInParallel` selector method (see [BingAdsAccountSelector](reference/BingAdsAccountSelector.md)). 
 
 
 ## June 15, 2018
