@@ -381,7 +381,10 @@ print("Status: {0}\n".format(bulk_operation_status.status))
 ```
 
 ## <a name="workingdirectory"></a>Working Directory and BulkServiceManager
-When uploading and downloading entities (not a named file) with the .NET and Java SDKs, you can work with the result entities in memory i.e., without reading from a result file. That said, the *BulkServiceManager* downloads the result file by default to the system temp directory. If you are using a hosted service such as Microsoft Azure you'll want to ensure you do not exceed the temp directory limits. There may be other reasons to use a custom working directory. You can specify a different working directory for each *BulkServiceManager* instance by setting the *WorkingDirectory* property and then cleaning up the files after enumerating over the resulting entities in memory. You are also responsible for creating and removing any directories. 
+With the .NET and Java SDKs, you can set the working directory where *BulkServiceManager* should store temporary bulk files. For example, when you call *DownloadEntitiesAsync* with the Bing Ads .NET SDK, although you will only directly work with *BulkEntity* objects a bulk file is downloaded to a temporary directory. Likewise via *UploadEntitiesAsync* a temporary file is written to the working directory, and then uploaded to the Bulk service. The system temp directory will be used if another working directory is not specified. If you are using a hosted service such as Microsoft Azure you'll want to ensure you do not exceed the temp directory limits. There may be other reasons to use a custom working directory. You can specify a different working directory for each *BulkServiceManager* instance by setting the *WorkingDirectory* property. You are also responsible for creating and removing any directories. After you have iterated over the bulk entities you can clean up the files from the working directory.
+
+> [!IMPORTANT] 
+> The *CleanupTempFiles* method removes all files (but not sub-directories) within the working directory, whether or not the files were created by the current BulkServiceManager instance. 
 
 ```csharp
 public async Task RunAsync(AuthorizationData authorizationData)
@@ -414,7 +417,7 @@ public async Task RunAsync(AuthorizationData authorizationData)
 
     var resultEntities = (await BulkService.DownloadEntitiesAsync(downloadParameters)).ToList();
 
-    // The CleanupTempFiles method removes all files (not sub-directories) within the working directory, 
+    // The CleanupTempFiles method removes all files (but not sub-directories) within the working directory, 
     // whether or not the files were created by this BulkServiceManager instance. 
 
     BulkService.CleanupTempFiles();

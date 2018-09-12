@@ -12,7 +12,11 @@ For information about the changes to the Bing Ads Version 12 services for each m
 ## <a name="september2018"></a>September 2018
 See below for Bing Ads service updates during this calendar month. 
  
+- [Bing Ads Software Development Kit (SDK) Updates](#sdk-september2018)   
 - [Customer Id and Customer Name Report Columns](#customeridcustomername-september2018)  
+
+### <a name="sdk-august2018"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v11.12.6), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v11.12.6), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.11.12.6), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v11.12.6) SDK version 11.12.6. 
 
 ### <a name="customeridcustomername-september2018"></a>Customer Id and Name Report Columns
 The *CustomerId* and *CustomerName* columns are added to the following reports.  
