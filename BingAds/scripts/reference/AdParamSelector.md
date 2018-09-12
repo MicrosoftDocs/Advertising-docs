@@ -12,7 +12,7 @@ ms.topic: "article"
 # AdParamSelector
 
 
-Contains the methods for filtering a list of substitution parameters. For information about selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods used to get a list of substitution parameters. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 
 ## Methods
