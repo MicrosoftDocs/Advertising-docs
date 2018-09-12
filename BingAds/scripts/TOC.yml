@@ -142,12 +142,12 @@
           href: ./reference/AccountsApp.md
         - name: BingAdsAccount
           href: ./reference/BingAdsAccount.md
-        - name: ManagedAccountIterator
-          href: ./reference/ManagedAccountIterator.md
+        - name: BingAdsAccountIterator
+          href: ./reference/BingAdsAccountIterator.md
         - name: BingAdsAccountSelector
-          href: ./reference/ManagedAccountSelector.md
-        - name: ManagedAccountStats
-          href: ./reference/ManagedAccountStats.md
+          href: ./reference/BingAdsAccountSelector.md
+        - name: BingAdsAccountStats
+          href: ./reference/BingAdsAccountStats.md
 #    - name: Spreadsheets
 #      href: ./reference/SpreadsheetApp
 #      items:
