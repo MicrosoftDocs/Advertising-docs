@@ -21,7 +21,7 @@ Contains the methods used to get account information such as name, customer ID, 
 [getCustomerId](#getcustomerid)|string|Gets the customer ID of the owner that owns this account.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getName](#getname)|string|Gets this managed account's name.
-[getStats](#getstats)|[ManagedAccountStats](ManagedAccountStats.md)|Gets the performance data for this managed account.
+[getStats](#getstats)|[Stats](Stats.md)|Gets the performance data for this managed account.
 
 
 ## <a name="getcurrencycode"></a>getCurrencyCode
