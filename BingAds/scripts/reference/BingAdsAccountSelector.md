@@ -43,7 +43,7 @@ Example usage:
 Executes the function for each account that the selector returns. After the function is executed for all selected accounts, Bing calls the optional callback function.
 
 > [!NOTE]
-> To use this method, the selector must return no more than 5 accounts. If the selector returns more than 5 accounts, Bing does not execute the function for any of the accounts. You can use the `withLimit` method to limit the number of accounts the selector returns.
+> To use this method, the selector must return no more than 50 accounts. If the selector returns more than 50 accounts, Bing does not execute the function for any of the accounts. However, the iterator will continue working; you can get the entire list of accounts. You can use the `withLimit` method to limit the number of accounts the selector returns.
 
 The *functionName* function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. If your function returns a value, you must specify a callback function to capture the return values. The following shows the callback function's signature. The returns values are passed as an array of [ExecutionResult](./ExecutionResult.md) objects.
 
@@ -77,7 +77,7 @@ void|Returns nothing.
 Executes the function for each account that the selector returns. After the function executes for all selected accounts, Bing calls the optional callback function.
 
 > [!NOTE]
-> To use this method, the selector must return no more than 5 accounts. If the selector returns more than 5 accounts, Bing does not execute the function for any of the accounts. You can use the `withLimit` method to limit the number of accounts the selector returns.
+> To use this method, the selector must return no more than 50 accounts. If the selector returns more than 50 accounts, Bing does not execute the function for any of the accounts. However, the iterator will continue working; you can get the entire list of accounts. You can use the `withLimit` method to limit the number of accounts the selector returns.
 
 The *functionName* function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. If your function returns a value, you must specify a callback function to capture the return values. The following shows the callback function's signature. The returns values are passed as an array of [ExecutionResult](./ExecutionResult.md) objects.
 
