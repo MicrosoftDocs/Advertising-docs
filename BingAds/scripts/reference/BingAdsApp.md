@@ -1,6 +1,6 @@
 ---
 title: "BingAdsApp object"
-description: "The top-level object that you use to navigate all entities in a single user account."
+description: "The top-level object that you use to navigate all entities in a single account."
 author: "brapel"
 manager: ehansen
 
@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # BingAdsApp
 
-This is the top-level object of Bing Ads Scripts. Use it to navigate all entities in a single user account.
+This is the top-level object used to access and manage a single account.
 
 ## Methods
 

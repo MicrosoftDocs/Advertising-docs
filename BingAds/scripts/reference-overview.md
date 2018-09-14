@@ -19,8 +19,11 @@ This section provides information about the JavaScript objects that you use in y
 
 For information about Bing Ads entities and the limits that apply to each entity, see [Entity Hierarchy and Limits](/bingads/guides/entity-hierarchy-limits).
 
-The following is the top-level object that you use to access your Bing Ads entities.
+The following are the top-level objects that you use to access your Bing Ads entities.
 
 |Object|Description|
 |-|-
-[BingAdsApp](./reference/BingAdsApp.md)|Provides the methods used to access and manage entities, such as campaigns and keywords, in a single Bing Ads account.
+[BingAdsApp](./reference/BingAdsApp.md)|This is the top-level object used to access and manage single-account entities, such as campaigns and keywords.
+[AccountsApp](./reference/AccountsApp.md)|This is the top-level object that you use if you're managing accounts for others. Use it to get the list of accounts you have access to, and to select the account to manage.
+
+
