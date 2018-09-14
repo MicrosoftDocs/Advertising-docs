@@ -18,5 +18,6 @@ See the following topics for examples that demonstrate how to use the core featu
 
 - [Ad Groups](./adgroups.md)
 - [Ads](./ads.md)
+- [Budgets](./budgets.md)
 - [Campaigns](./campaigns.md)
 - [Keywords](./keywords.md)
