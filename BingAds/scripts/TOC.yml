@@ -150,6 +150,8 @@
           href: ./reference/BingAdsAccountSelector.md
         - name: BingAdsAccountStats
           href: ./reference/BingAdsAccountStats.md
+        - name: ExecutionResult
+          href: ./reference/ExecutionResult.md
 #    - name: Spreadsheets
 #      href: ./reference/SpreadsheetApp
 #      items:
