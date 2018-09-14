@@ -15,7 +15,7 @@ Contains the methods for managing a budget. For more information, see [Budget](/
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector that returns all campaigns that share this budget.
+[campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector used to filter the list of campaigns that share this budget.
 [getAmount](#getamount)|double|Gets the budget's amount.
 [getDeliveryMethod](#getdeliverymethod)|string|Gets the delivery method (budget type) for this budget.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
@@ -30,7 +30,7 @@ Contains the methods for managing a budget. For more information, see [Budget](/
 
 ## <a name="campaigns"></a>campaigns
 
-Gets a [selector](../concepts/selectors.md) that returns all campaigns that share this budget. 
+Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns that share this budget. 
 
 You can call this method only from a budget object that you get from [BudgetSelector](BudgetSelector.md); you cannot call it if the source of the budget is the campaign's [getBudget](Campaign.md#getbudget) method.
 
@@ -38,7 +38,7 @@ You can call this method only from a budget object that you get from [BudgetSele
 
 |Type|Description|
 |-|-
-[CampaignSelector](./CampaignSelector.md)|A selector that returns all campaigns that share this budget. Use the selector's methods to filter the list of campaigns.
+[CampaignSelector](./CampaignSelector.md)|A selector used to filter the list of campaigns that share this budget. 
 
 
 ## <a name="getamount"></a>getAmount

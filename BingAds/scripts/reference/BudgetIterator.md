@@ -30,7 +30,7 @@ Example usage:
 |Method Name|Return Type|Description|
 |-|-|-
 [hasNext](#hasnext)|Boolean|Gets a Boolean value that indicates whether the iterator has more elements.
-[next](#next)|[AdGroup](./AdGroup.md)|Advances the iterator and returns the next shared budget.
+[next](#next)|[Budget](./Budget.md)|Advances the iterator and returns the next shared budget.
 [totalNumEntities](#totalnumentities)|int|Gets the number of shared budgets that matched the selector's selection criteria.
 
 ## <a name="hasnext"></a>hasNext
