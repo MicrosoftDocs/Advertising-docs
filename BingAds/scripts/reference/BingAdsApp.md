@@ -65,6 +65,19 @@ This method returns only shared budgets. To get unshared (individual campaign) b
 [BudgetSelector](./BudgetSelector.md)|A selector used to filter the list of shared budgets in the current account. 
 
 
+## <a name="budgets"></a>budgets
+
+Gets a [selector](../concepts/selectors.md) that returns all shared budgets in this account. 
+
+This method returns only shared budgets. To get unshared (individual campaign) budgets, call the specific campaign's [getBudget](Campaign.md#getbudget) method. The campaign's budget is not shared if the if the `isExplicitlyShared` method returns **false**.
+
+### Returns
+
+|Type|Description|
+|-|-
+[BudgetSelector](./BudgetSelector.md)|A selector that returns all shared budgets in the current account. Use the selector's methods to filter the list of budgets.
+
+
 ## <a name="campaigns"></a>campaigns
 
 Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns in this account. 
