@@ -27,7 +27,6 @@ Added the following objects and methods for selecting negative keywords from neg
 - Added the [SharedNegativeKeyword](reference/SharedNegativeKeyword.md) object, which defines a negative keyword.  
 
 
-<<<<<<< HEAD
 ## September 12, 2018
 
 Added the following methods for getting an entity's parent and child entities. 
@@ -43,8 +42,6 @@ Added the following methods for getting an entity's parent and child entities.
 - [NegativeKeywordList.campaigns](reference/Campaign.md#adgroups) &mdash; Gets a selector used to filter the list of campaigns that the negative keyword list is associated with.
 
 
-=======
->>>>>>> 2091d1b82ef383ba0b51b7ebc6346a1acee731c3
 ## September 9, 2018
 
 Added support for ads.
