@@ -17,5 +17,6 @@ ms.topic: "article"
 See the following topics for examples that demonstrate how to use the core features and functionality of Bing Ads Scripts.
 
 - [Ad Groups](./adgroups.md)
+- [Ads](./ads.md)
 - [Campaigns](./campaigns.md)
 - [Keywords](./keywords.md)
