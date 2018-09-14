@@ -81,6 +81,18 @@ Gets the account that the script is currently processing.
 [Account](./Account.md)|The account that the script is currently processing.
 
 
+
+## <a name="currentaccount"></a>currentAccount
+
+Gets the account that the script is currently processing.
+
+### Returns
+
+|Type|Description|
+|-|-
+[Account](./Account.md)|The account that the script is currently processing.
+
+
 <!--
 ## <a name="getexecutioninfo"></a>getExecutionInfo
 Returns information about the environment in which the script is currently executing.
@@ -104,6 +116,7 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of keywords 
 
 
 
+
 ## <a name="negativekeywordlists"></a>negativeKeywordLists
 
 Gets a [selector](../concepts/selectors.md) used to filter the list of negative keyword lists in this account. 
@@ -113,6 +126,7 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of negative 
 |Type|Description|
 |-|-
 [NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|A selector used to filter the list of negative keyword lists in the current account.
+
 
 
 
