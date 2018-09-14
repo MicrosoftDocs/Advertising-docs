@@ -124,7 +124,7 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of negative 
 
 |Type|Description|
 |-|-
-[SharedNegativeKeywordSelector](./SharedNegativeKeywordSelector.md)|A selector used to filter the list of negative keywords in this negative keyword list. Use the selector's methods to filter the list of negative keywords.
+[SharedNegativeKeywordSelector](./SharedNegativeKeywordSelector.md)|A selector used to filter the list of negative keywords in this negative keyword list. 
 
 
 ## <a name="setname-string-name-"></a>setName(string name)
