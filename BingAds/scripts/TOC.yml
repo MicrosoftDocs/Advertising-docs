@@ -131,6 +131,12 @@
           href: ./reference/NegativeKeywordListOperation.md 
         - name: NegativeKeywordListSelector
           href: ./reference/NegativeKeywordListSelector.md 
+        - name: SharedNegativeKeyword
+          href: ./reference/SharedNegativeKeyword.md 
+        - name: SharedNegativeKeywordIterator
+          href: ./reference/SharedNegativeKeywordIterator.md 
+        - name: SharedNegativeKeywordSelector
+          href: ./reference/SharedNegativeKeywordSelector.md 
         - name: Stats
           href: ./reference/Stats.md 
 #    - name: Multiple Accounts
