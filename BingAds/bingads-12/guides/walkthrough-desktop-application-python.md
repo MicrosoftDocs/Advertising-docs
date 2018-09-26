@@ -59,9 +59,10 @@ from suds import WebFault
 
 # Optionally you can include logging to output traffic, for example the SOAP request and response.
 
-#import logging
-#logging.basicConfig(level=logging.INFO)
-#logging.getLogger('suds.client').setLevel(logging.DEBUG)
+# import logging
+# logging.basicConfig(level=logging.INFO)
+# logging.getLogger('suds.client').setLevel(logging.DEBUG)
+# logging.getLogger('suds.transport.http').setLevel(logging.DEBUG)
 
 if __name__ == '__main__':
     print("Python loads the web service proxies at runtime, so you will observe " \
@@ -83,7 +84,7 @@ if __name__ == '__main__':
     CLIENT_STATE="ClientStateGoesHere"
 
     # The directory for the bulk files.
-    FILE_DIRECTORY='c:/bulk-service/'
+    FILE_DIRECTORY='c:/bulk/'
 
     # The name of the bulk upload result file.
     RESULT_FILE_NAME='result.csv'
@@ -118,6 +119,7 @@ def authenticate_with_oauth():
     # then you can construct OAuthDesktopMobileAuthCodeGrant with OAuthTokens.
     authentication=OAuthDesktopMobileAuthCodeGrant(
         client_id=CLIENT_ID,
+        env=ENVIRONMENT,
         oauth_tokens=OAuthTokens(access_token=None,access_token_expires_in_seconds=0,refresh_token=None)
     )
 
@@ -200,7 +202,7 @@ def search_accounts_by_user_id(user_id):
     :param user_id: The Bing Ads user identifier.
     :type user_id: long
     :return: List of accounts that the user can manage.
-    :rtype: ArrayOfAccount
+    :rtype: ArrayOfAdvertiserAccount
     '''
     global customer_service
    
@@ -360,8 +362,8 @@ if __name__ == '__main__':
         accounts=search_accounts_by_user_id(user.Id)
 
         # For this example we'll use the first account.
-        authorization_data.account_id=accounts['Account'][0].Id
-        authorization_data.customer_id=accounts['Account'][0].ParentCustomerId
+        authorization_data.account_id=accounts['AdvertiserAccount'][0].Id
+        authorization_data.customer_id=accounts['AdvertiserAccount'][0].ParentCustomerId
     
         
         #To discover all SOAP elements accessible for each service, you can print the soap client.

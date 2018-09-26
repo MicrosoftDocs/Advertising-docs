@@ -1347,6 +1347,8 @@
           href: ../campaign-management-service/agerange.md
         - name: AppealStatus
           href: ../campaign-management-service/appealstatus.md
+        - name: AssetLinkEditorialStatus
+          href: ../campaign-management-service/assetlinkeditorialstatus.md
         - name: AssociationType
           href: ../campaign-management-service/associationtype.md
         - name: AudienceType
