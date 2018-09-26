@@ -57,7 +57,7 @@ The example web application sends authentication requests to the Microsoft accou
         <dependency>
           <groupId>com.microsoft.bingads</groupId>
           <artifactId>microsoft.bingads</artifactId>
-          <version>11.12.1</version>
+          <version>11.12.6</version>
         </dependency>
       </dependencies>
       <build>

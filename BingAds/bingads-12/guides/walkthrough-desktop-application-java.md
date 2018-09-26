@@ -36,7 +36,7 @@ The example desktop application sends authentication requests to the Microsoft a
         <dependency>
           <groupId>com.microsoft.bingads</groupId>
           <artifactId>microsoft.bingads</artifactId>
-          <version>11.12.5</version>
+          <version>11.12.6</version>
         </dependency>
       </dependencies>
     </project>

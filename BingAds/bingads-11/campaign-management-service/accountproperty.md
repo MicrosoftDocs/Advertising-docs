@@ -38,7 +38,7 @@ You need to have {lpurl] or one of its variants in your URL's tracking template 
 If the [Name](#name) element is set to *AdClickParallelTracking*, then the [Value](#value) can be set to either *true* or *false*. If the value is *true*, then parallel tracking is enabled.
 
 > [!IMPORTANT]
-> Starting in Q4 calendar year 2018 parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and all other customers are opted out. By the end of calendar year 2018 we plan to require parallel tracking for all customers i.e., all customers will be opted in. At that time the option to turn off parallel tracking will not be available. 
+> Starting in Q4 calendar year 2018 parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and all other customers are opted out.  
 
 #### <a name="msclkidautotaggingenabled"></a>MSCLKIDAutoTaggingEnabled
 Determines whether auto-tagging of the MSCLKID query string parameter is enabled. The MSCLKID is a 32-character GUID that is unique for each ad click.

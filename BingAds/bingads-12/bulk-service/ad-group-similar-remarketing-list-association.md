@@ -38,7 +38,7 @@ Format Version,,,,,,,,,6,,,
 Ad Group Similar Remarketing List Association,Paused,,-1111,,,ClientIdGoesHere,,10,,SimilarRemarketingListIdHere,My Similar Remarketing List,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupSimilarRemarketingListAssociation* class (coming soon), instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupSimilarRemarketingListAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
