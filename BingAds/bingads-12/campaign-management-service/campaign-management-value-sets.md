@@ -27,6 +27,7 @@ The Campaign Management service defines the following value sets.
 |[AdType](adtype.md)|Defines the type of ad.|
 |[AgeRange](agerange.md)|Defines the possible age range values that you can use to target ads to People.|
 |[AppealStatus](appealstatus.md)|Defines the values that you use to determine whether an editorial rejection is appealable.|
+|[AssetLinkEditorialStatus](assetlinkeditorialstatus.md)|Reserved.|
 |[AssociationType](associationtype.md)|Defines the entity types that can be associated with an ad extension.|
 |[AudienceType](audiencetype.md)|Defines the possible audience types.|
 |[BidOption](bidoption.md)|Determines whether or not to amplify your partner's bid.|

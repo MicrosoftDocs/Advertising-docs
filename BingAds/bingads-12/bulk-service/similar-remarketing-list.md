@@ -43,7 +43,7 @@ Format Version,,,,,,6,,,,
 Similar Remarketing List,Active,IdHere,ParentIdHere,ClientIdGoesHere,,,Account,Similar Remarketing List,Search;DynamicSearchAds;Shopping;Audience,SourceRemarketingListIdHere
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to download the *BulkSimilarRemarketingList* class (coming soon), instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to download the *BulkSimilarRemarketingList* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp

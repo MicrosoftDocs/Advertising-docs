@@ -35,8 +35,3 @@ Gets a [builder](../concepts/builders.md) that you use to add an expaned text ad
 |Type|Description|
 |-|-
 [ExpandedTextAdBuilder](ExpandedTextAdBuilder.md)|The builder that you use to add expanded text ads to this ad group.
-
-
-## SeeAlso
-
-- []
