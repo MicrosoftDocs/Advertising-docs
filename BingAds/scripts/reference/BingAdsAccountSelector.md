@@ -232,7 +232,7 @@ Gets managed accounts with the specified IDs.
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only account 33333.
 
 ```javascript
-MccApp.accounts()
+AccountsApp.accounts()
     .withIds([11111, 22222, 33333])
     .withIds([33333, 44444, 55555])
     .get();
