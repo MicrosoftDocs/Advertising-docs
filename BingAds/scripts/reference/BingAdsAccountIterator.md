@@ -67,4 +67,4 @@ int|The number of managed accounts that matched the selector's selection criteri
 
 - [BingAdsAccountSelector.get()](./BingAdsAccountSelector.md#get)
 - [BingAdsAccount](./BingAdsAccount.md)
-- [MccApp](./AccountsApp.md)
+- [AccountsApp](./AccountsApp.md)
