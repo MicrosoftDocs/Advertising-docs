@@ -25,8 +25,8 @@ Contains the methods for managing a keyword. For information about keywords, see
 [getCampaign](#getcampaign)|[Campaign](./Campaign.md)|Gets the campaign that this keyword belongs to.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getId](#getid)|string|Gets the ID that uniquely identifies this keyword.
-[getMatchType](#getmatchtype)|String|Gets this keyword's match type.
-[getQualityScore](#getqualityscore)|Integer|Gets this keyword's quality score.
+[getMatchType](#getmatchtype)|string|Gets this keyword's match type.
+[getQualityScore](#getqualityscore)|integer|Gets this keyword's quality score.
 [getStats](#getstats)|[Stats](./Stats.md)|Gets this keyword's performance data.
 [getText](#gettext)|string|Gets the keyword's text.
 [isEnabled](#isenabled)|Boolean|Gets a Boolean value that indicates whether this keyword is enabled.
@@ -135,7 +135,7 @@ Gets this keyword's quality score.
 ### Returns
 |Type|Description|
 |-|-
-Integer|The keyword's quality score. The score is in the range 1 through 10 (highest). If the keyword's quality score cannot be computed, this method returns NULL.<br/><br/>The score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. For more information, see [Keyword Performance Report](/bingads/reporting-service/keywordperformancereportcolumn#qualityscore). 
+integer|The keyword's quality score. The score is in the range 1 through 10 (highest). If the keyword's quality score cannot be computed, this method returns NULL.<br/><br/>The score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. For more information, see [Keyword Performance Report](/bingads/reporting-service/keywordperformancereportcolumn#qualityscore). 
 
 
 ## <a name="getstats"></a>getStats
