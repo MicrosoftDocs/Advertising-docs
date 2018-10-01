@@ -23,9 +23,11 @@ Contains the methods used to get account information such as name, customer ID, 
 [getCustomerId](#getcustomerid)|string|Gets the customer ID of the owner that owns this account.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getName](#getname)|string|Gets this managed account's name.
-[getStats](#getstats)|[Stats](Stats.md)|Gets the performance data for this managed account.
 [getTimeZone](#gettimezone)|string|Gets this account's time zone.
 
+<!--
+[getStats](#getstats)|[Stats](Stats.md)|Gets the performance data for this managed account.
+-->
 
 ## <a name="getaccountid"></a>getAccountId
 Gets this account's ID.
@@ -80,7 +82,7 @@ Gets this account's name.
 |-|-
 string|The name of this account.
 
-
+<!--
 ## <a name="getstats"></a>getStats
 Gets the performance data for this account. 
 
@@ -88,7 +90,7 @@ Gets the performance data for this account.
 |Type|Description|
 |-|-
 [Stats](Stats.md)|The performance data for this account.
-
+-->
 
 ## <a name="gettimezone"></a>getTimeZone
 Gets this account's time zone.
@@ -96,6 +98,9 @@ Gets this account's time zone.
 ### Returns
 |Type|Description|
 |-|-
-string|The preferred time zone to use for campaigns in this account. For a list of time zones, see [Account time zones](../concepts/timezone-mapping.md).
+string|The preferred time zone to use for campaigns in this account. 
 
+<!--
+For a list of time zones, see [Account time zones](../concepts/timezone-mapping.md).
+-->
 
