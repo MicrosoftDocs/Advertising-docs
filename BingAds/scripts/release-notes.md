@@ -14,6 +14,13 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## October 1, 2018
+
+Added the following method to the [Keyword](reference/Keyword.md) object.
+
+- [getQualityScore](reference/Keyword.md#getqualityscore) &mdash; Gets the keyword's quality score. The score is in the range 1 through 10 (highest). The score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. 
+
+
 ## September 12, 2018
 
 Added the following methods for getting an entity's parent and child entities. 
