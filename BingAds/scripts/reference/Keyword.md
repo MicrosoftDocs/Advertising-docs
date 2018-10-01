@@ -25,7 +25,8 @@ Contains the methods for managing a keyword. For information about keywords, see
 [getCampaign](#getcampaign)|[Campaign](./Campaign.md)|Gets the campaign that this keyword belongs to.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
 [getId](#getid)|string|Gets the ID that uniquely identifies this keyword.
-[getMatchType](#getmatchtype)|String|Gets this keyword's match type.
+[getMatchType](#getmatchtype)|string|Gets this keyword's match type.
+[getQualityScore](#getqualityscore)|integer|Gets this keyword's quality score.
 [getStats](#getstats)|[Stats](./Stats.md)|Gets this keyword's performance data.
 [getText](#gettext)|string|Gets the keyword's text.
 [isEnabled](#isenabled)|Boolean|Gets a Boolean value that indicates whether this keyword is enabled.
@@ -55,6 +56,7 @@ Gets the methods used to manage this keyword's bid amount.
 |-|-
 [KeywordBidding](./KeywordBidding.md)|Contains the methods used to manage this keyword's bid amount.
 
+
 ## <a name="cleardestinationurl"></a>clearDestinationUrl
 Removes this keyword's destination URL.
 
@@ -62,6 +64,7 @@ Removes this keyword's destination URL.
 |Type|Description|
 |-|-
 void|Returns nothing.
+
 
 ## <a name="enable"></a>enable
 Enables this keyword.
@@ -71,6 +74,7 @@ Enables this keyword.
 |-|-
 void|Returns nothing.
 
+
 ## <a name="getadgroup"></a>getAdGroup
 Gets the ad group that this keyword belongs to.
 
@@ -79,6 +83,7 @@ Gets the ad group that this keyword belongs to.
 |-|-
 [AdGroup](AdGroup.md)|The ad group that this keyword belongs to.
 
+
 ## <a name="getapprovalstatus"></a>getApprovalStatus
 Gets this keyword's editorial approval status.
 
@@ -86,6 +91,7 @@ Gets this keyword's editorial approval status.
 |Type|Description|
 |-|-
 string|The keyword's editorial approval status. The status indicates whether the keyword is under review, is approved, or is not allowed. Possible values are:<br /><ul><li>APPROVED</li><li>APPROVED_LIMITED</li><li>DISAPPROVED</li><li>UNDER_REVIEW</li></ul>For information about how these status values map to Bing Ads API, see [Mapping editorial approval status values](../concepts/editorial-approval.md).
+
 
 ## <a name="getcampaign"></a>getCampaign
 Gets the campaign that this keyword belongs to.
@@ -104,6 +110,7 @@ Returns this entity's type.
 |-|-
 string|This entity's type, which is *Keyword*.
 
+
 ## <a name="getid"></a>getId
 Gets the ID that uniquely identifies this keyword.
 
@@ -111,6 +118,7 @@ Gets the ID that uniquely identifies this keyword.
 |Type|Description|
 |-|-
 string|The ID that uniquely identifies this keyword.
+
 
 ## <a name="getmatchtype"></a>getMatchType
 Gets this keyword's match type. 
@@ -121,6 +129,15 @@ Gets this keyword's match type.
 string|The keyword's match type. Possible values are:<br /><ul><li>BROAD</li><li>PHRASE</li><li>EXACT</li></ul>For information about these types, see [What are keyword match types, and how do I use them?](https://help.bingads.microsoft.com/apex/index/3/en-us/50822#!)
 
 
+## <a name="getqualityscore"></a>getQualityScore
+Gets this keyword's quality score. 
+
+### Returns
+|Type|Description|
+|-|-
+integer|The keyword's quality score. The score is in the range 1 through 10 (highest). If the keyword's quality score cannot be computed, this method returns NULL.<br/><br/>The score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. For more information, see [Keyword Performance Report](/bingads/reporting-service/keywordperformancereportcolumn#qualityscore). 
+
+
 ## <a name="getstats"></a>getStats
 Gets this keywords performance data. 
 
@@ -128,6 +145,7 @@ Gets this keywords performance data.
 |Type|Description|
 |-|-
 [Stats](./Stats.md)|The keyword's performance data. For example, clicks and impressions.
+
 
 ## <a name="gettext"></a>getText
 Gets the keyword's text. The text includes the keyword's match type syntax, if any. For example:
@@ -143,6 +161,7 @@ For information about these types, see [What are keyword match types, and how do
 |-|-
 string|The keyword's text.
 
+
 ## <a name="isenabled"></a>isEnabled
 Gets a Boolean value that indicates whether this keyword is enabled.
 
@@ -150,6 +169,7 @@ Gets a Boolean value that indicates whether this keyword is enabled.
 |Type|Description|
 |-|-
 Boolean|Is **true** if this keyword is enabled; otherwise, **false**.
+
 
 ## <a name="ispaused"></a>isPaused
 Gets a Boolean value that indicates whether this keyword is paused.
@@ -187,6 +207,7 @@ Pauses this keyword.
 |-|-
 void|Returns nothing.
 
+
 ## <a name="remove"></a>remove
 Removes this keyword.
 
@@ -194,6 +215,7 @@ Removes this keyword.
 |Type|Description|
 |-|-
 void|Returns nothing.
+
 
 ## <a name="urls"></a>urls
 Gets the methods used to manage this keywords's final URLs, tracking template, and custom parameters.
