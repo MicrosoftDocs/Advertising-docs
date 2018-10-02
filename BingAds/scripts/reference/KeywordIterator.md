@@ -1,5 +1,5 @@
 ---
-title: "AdGroupIterator object"
+title: "KeywordIterator object"
 description: "Contains the methods for iterating through a list of keywords."
 author: "brapel"
 manager: ehansen

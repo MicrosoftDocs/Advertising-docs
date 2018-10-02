@@ -30,8 +30,12 @@
       href: concepts/ids.md 
     - name: Mapping bid strategies
       href: concepts/bid-strategies.md 
+    - name: Shared budgets
+      href: concepts/shared-budgets.md 
     - name: Mapping editorial approval
       href: concepts/editorial-approval.md 
+    - name: Mapping time zones
+      href: concepts/timezone-mapping.md 
     - name: JavaScript features
       href: concepts/supported-js-features.md 
 - name: Code examples
@@ -41,6 +45,8 @@
       href: examples/adgroups.md 
     - name: Ads
       href: examples/ads.md 
+    - name: Budgets
+      href: examples/budgets.md 
     - name: Campaigns
       href: examples/campaigns.md 
     - name: Keywords
@@ -51,6 +57,8 @@
     - name: Single account  
       href: ./reference/BingAdsApp.md 
       items:
+        - name: Account
+          href: ./reference/Account.md 
         - name: Ad
           href: ./reference/Ad.md 
         - name: AdBuilderSpace
@@ -93,6 +101,10 @@
           href: ./reference/BingAdsDate.md 
         - name: Budget
           href: ./reference/Budget.md 
+        - name: BudgetIterator
+          href: ./reference/BudgetIterator.md 
+        - name: BudgetSelector
+          href: ./reference/BudgetSelector.md 
         - name: Campaign
           href: ./reference/Campaign.md 
         - name: CampaignIterator
@@ -133,16 +145,21 @@
           href: ./reference/NegativeKeywordListSelector.md 
         - name: Stats
           href: ./reference/Stats.md 
-#    - name: Multiple Accounts
-#      href: ./reference/AccountsApp
-#      items:
-#        - name: AccountsApp
-#          href: ./reference/AccountsApp
-#        - name: BingAdsAccount
-#        - name: BingAdsAccountIterator
-#          href: ./reference/BingAdsAccountIterator
-#        - name: BingAdsAccountSelector
-#          href: ./reference/BingAdsAccountSelector
+    - name: Multi-accounts
+      href: ./reference/AccountsApp.md
+      items:
+        - name: AccountsApp
+          href: ./reference/AccountsApp.md
+        - name: BingAdsAccount
+          href: ./reference/BingAdsAccount.md
+        - name: BingAdsAccountIterator
+          href: ./reference/BingAdsAccountIterator.md
+        - name: BingAdsAccountSelector
+          href: ./reference/BingAdsAccountSelector.md
+        - name: BingAdsAccountStats
+          href: ./reference/BingAdsAccountStats.md
+        - name: ExecutionResult
+          href: ./reference/ExecutionResult.md
 #    - name: Spreadsheets
 #      href: ./reference/SpreadsheetApp
 #      items:

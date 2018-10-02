@@ -14,6 +14,50 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## Octoboer 2, 2018
+
+Added the following objects and methods to support multi-accounts.
+
+- Added the `currentAccount` method to [BingAdsApp](reference/BingAdsApp.md). Use this method to get the [Account](reference/Account.md) object, which contains information about the account that the script is currently processing.  
+  
+- Added the [AccountsApp](reference/AccountsApp.md) object. This is the top-level object that you use if you're managing accounts for others. Use it to get the list of accounts you have access to and to select the account to manage.  
+  
+- Added the [BingAdsAccount](reference/BingAdsAccount.md) object. Use it to get account information for a managed account such as name, customer ID, and account-level performance data.
+  
+- Added the [BingAdsAccountIterator](reference/BingAdsAccountIterator.md) object. Use it to iterate through the list of managed accounts that you selected.
+  
+- Added the [BingAdsAccountSelector](reference/BingAdsAccountSelector.md) object. Use it to select the the list of managed accounts that you want to get.
+  
+- Added the [BingAdsAccountStats](reference/BingAdsAccountStats.md) object. Use it to access the managed account's performance data.  
+  
+- Added the [ExecutionResult](reference/ExecutionResult.md) object. Use it to get the results and return value of the function you specify in the `executeInParallel` selector method (see [BingAdsAccountSelector](reference/BingAdsAccountSelector.md)). 
+
+
+Added the following fields to the [Budget](reference/Budget.md) object to support shared budgets.
+
+- campaigns &mdash; Gets a selector that returns all campaigns that share this budget.
+- getEntityType &mdash; Gets the object's type.
+- getId &mdash; Gets the ID that uniquely identifies the shared budget.
+- getName &mdash; Gets the shared budget's name.
+- getStats &mdash; Gets the performance data for the campaigns that share this budget.
+- getType &mdash; Get the budget's type (for example, DAILY).
+- isExplicitlyShared &mdash; Gets a Boolean value that indicates whether this budget is a shared budget.
+
+The `getId`, `getName`, and `getStats` methods return data for only shared budgets; the `getId` and `getName` methods return null for unshared (individual campaign) budgets.
+
+Added the following field to the [BingAdsApp](reference/BingAdsApp.md) object.
+
+- budgets &mdash; Gets all shared budgets in the account. Use the selector to filter the list of shared budgets.
+
+Added the following objects that you use to filter and loop through a list of shared budgets. 
+
+- [BudgetSelector](reference/BudgetSelector.md) &mdash; Contains the methods for filtering and ordering the list of shared budgets.  
+  
+- [BudgetIterator](reference/BudgetIterator.md) &mdash; Contains the methods for looping through the list of shared budgets. The selector's `get` method returns the iterator.
+
+The selector returns only shared budgets, it does not include unshared (individual campaign) budgets. To determine if a campaign uses an individual budget, get the budget by calling the campaign's `getBudget` method. Then, call the budget's `isExplicitlyShared` method to determine if the budget is shared. The budget is shared if `isExplicitlyShared` returns **true**.
+
+
 ## October 1, 2018
 
 Added the following method to the [Keyword](reference/Keyword.md) object.
