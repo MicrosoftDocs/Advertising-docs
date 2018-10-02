@@ -11,7 +11,9 @@ ms.topic: "article"
 
 # AccountsApp
 
-This is the top-level object that you use if you're managing accounts for others. Use it to get the list of accounts you have access to, and to select the account to manage.
+This is the top-level object that you use if you're managing accounts for others. You use this object in multi-account scripts to get the list of accounts you have access to, and to select the account to manage. After getting the managed account, use the [BingAdsApp](reference/BingAdsApp.md) object to access its entities.
+
+This object is available for scripts run from the Scripts editor accessed from **Accounts Summary** in the Bing Ads web application.
 
 
 ## Methods

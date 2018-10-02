@@ -96,9 +96,5 @@ Gets this account's time zone.
 ### Returns
 |Type|Description|
 |-|-
-string|The preferred time zone to use for campaigns in this account. 
-
-<!--
-For a list of time zones, see [Account time zones](../concepts/timezone-mapping.md).
--->
+string|The preferred time zone to use for campaigns in this account. For a list of time zones, see [Account time zones](../concepts/timezone-mapping.md).
 

@@ -16,7 +16,7 @@ ms.topic: "article"
 Accessing your Bing Ads data with Bing Ads Scripts is easy. Just follow these instructions and you'll be accessing your data in no time.
 
 1. Sign in to [Bing Ads](https://secure.bingads.microsoft.com/) or [Bing Ads Sandbox](https://sandbox.bingads.microsoft.com/).
-2. From the Campaigns tab click **Bulk Operations** (in the left navigation panel).
+2. From the **Campaigns** tab click **Bulk Operations** (in the left navigation panel).
 3. Click **Create and manage scripts**.
 4. Click **Create script**.
 5. Replace "Untitled script" with your script's name.
@@ -43,6 +43,8 @@ Accessing your Bing Ads data with Bing Ads Scripts is easy. Just follow these in
 8. To see the output, click **Logs**.
 
 The difference between **Preview** and **Run script now** is that Preview gives you the chance to see how the script would affect your data without actually committing the changes. If the script modifies data, you should run it in preview mode first. For limitations of Preview mode, see [Running scripts in Preview mode](concepts/preview-mode.md).
+
+For multi-account scripts, you access the Scripts editor from **Accounts Summary** instead of **Campaigns**. To get an account that you manage, use the [AccountsApp](reference/AccountsApp.md) object. After getting the managed account, use the [BingAdsApp](reference/BingAdsApp.md) object to access its entities.
 
 
 ## Next steps

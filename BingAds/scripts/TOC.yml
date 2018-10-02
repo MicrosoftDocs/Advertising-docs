@@ -32,8 +32,8 @@
       href: concepts/bid-strategies.md 
     - name: Mapping editorial approval
       href: concepts/editorial-approval.md 
-#    - name: Mapping time zones
-#      href: concepts/timezone-mapping.md 
+    - name: Mapping time zones
+      href: concepts/timezone-mapping.md 
     - name: JavaScript features
       href: concepts/supported-js-features.md 
 - name: Code examples
