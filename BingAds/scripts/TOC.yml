@@ -59,8 +59,6 @@
           href: ./reference/Ad.md 
         - name: AdBuilderSpace
           href: ./reference/AdBuilderSpace.md 
-        - name: Account
-          href: ./reference/Account.md 
         - name: AdGroup
           href: ./reference/AdGroup.md 
         - name: AdGroupBidding

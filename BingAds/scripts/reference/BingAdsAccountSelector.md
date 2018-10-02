@@ -190,7 +190,7 @@ Gets managed accounts with the specified account numbers.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-ids|string[]|An array of account numbers. The maximum number of accounts that you may specify is 1,000. If you specify more than 1,000 accounts, calling the `get()` method fails with a runtime error.
+accountNumbers|string[]|An array of account numbers. The maximum number of accounts that you may specify is 1,000. If you specify more than 1,000 accounts, calling the `get()` method fails with a runtime error.
 
 ### Returns
 |Type|Description|
