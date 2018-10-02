@@ -40,6 +40,7 @@ Added the following fields to the [Budget](reference/Budget.md) object to suppor
 - getId &mdash; Gets the ID that uniquely identifies the shared budget.
 - getName &mdash; Gets the shared budget's name.
 - getStats &mdash; Gets the performance data for the campaigns that share this budget.
+- getType &mdash; Get the budget's type (for example, DAILY).
 - isExplicitlyShared &mdash; Gets a Boolean value that indicates whether this budget is a shared budget.
 
 The `getId`, `getName`, and `getStats` methods return data for only shared budgets; the `getId` and `getName` methods return null for unshared (individual campaign) budgets.
