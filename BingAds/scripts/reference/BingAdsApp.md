@@ -96,7 +96,6 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of keywords 
 [KeywordSelector](./KeywordSelector.md)|A selector used to filter the list of keywords in the current account.
 
 
-
 ## <a name="negativekeywordlists"></a>negativeKeywordLists
 
 Gets a [selector](../concepts/selectors.md) used to filter the list of negative keyword lists in this account. 
@@ -106,7 +105,6 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of negative 
 |Type|Description|
 |-|-
 [NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|A selector used to filter the list of negative keyword lists in the current account.
-
 
 
 ## <a name="newnegativekeywordlistbuilder"></a>newNegativeKeywordListBuilder

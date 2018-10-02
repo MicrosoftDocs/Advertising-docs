@@ -34,9 +34,8 @@ Example usage:
 [forDateRange(string dateRange)](#fordaterange-string-daterange-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies the predefined date range for selecting performance metrics.
 [get](#get)|[BingAdsAccountIterator](./BingAdsAccountIterator.md)|Gets an iterator that you use to iterate through the list of managed accounts.
 [orderBy(string orderBy)](#orderby-string-orderby-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies the specified ordering to the selected managed accounts.
-[withAccountNumbers(string[] ids)](#withaccountnumbers-string-ids-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Gets managed accounts with the specified account numbers.
-[withCondition(string condition)](#withcondition-string-condition-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies filter criteria to the managed accounts.
 [withAccountNumbers(string[] accountNumbers)](#withaccountnumbers-string-accountnumbers-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Gets managed accounts with the specified account numbers.
+[withCondition(string condition)](#withcondition-string-condition-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies filter criteria to the managed accounts.
 [withIds(string[] ids)](#withids-string-ids-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Gets managed accounts with the specified IDs.
 [withLimit(int limit)](#withlimit-int-limit-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Gets the top *n* managed accounts that match the selection criteria.
 
@@ -185,7 +184,7 @@ orderBy|string|The ordering to apply.
 [BingAdsAccountSelector](./BingAdsAccountSelector.md)|Selector with ordering applied.
 
 
-## <a name="withaccountnumbers-string-ids-"></a>withAccountNumbers(string[] ids)
+## <a name="withaccountnumbers-string-accountnumbers-"></a>withAccountNumbers(string[] accountNumbers)
 Gets managed accounts with the specified account numbers.
 
 ### Arguments
@@ -240,20 +239,6 @@ condition|string|The condition to add to the selector.
 |Type|Description|
 |-|-
 [BingAdsAccountSelector](./BingAdsAccountSelector.md)|Selector with the condition applied.
-
-
-## <a name="withaccountnumbers-string-accountnumbers-"></a>withAccountNumbers(string[] accountNumbers)
-Gets managed accounts with the specified account numbers.
-
-### Arguments
-|Name|Type|Description|
-|-|-|-
-ids|string[]|An array of account numbers. The maximum number of accounts that you may specify is 1,000. If you specify more than 1,000 accounts, calling the `get()` method fails with a runtime error.
-
-### Returns
-|Type|Description|
-|-|-
-[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Selector with the account numbers applied.
 
 
 ## <a name="withids-string-ids-"></a>withIds(string[] ids)
