@@ -71,7 +71,7 @@ Gets the account that the script is currently processing.
 
 |Type|Description|
 |-|-
-[Account](./Account.md)|The account that the script is currently processing. To see how you might use this in a multi-account scenario, see the [select](AccountsApp.md#select-bingadsaccount-account-) method of [AccountsApp](AccountsApp).
+[Account](./Account.md)|The account that the script is currently processing. To see how you might use this in a multi-account scenario, see the [select](AccountsApp.md#select-bingadsaccount-account-) method of [AccountsApp](AccountsApp.md).
 
 
 <!--
