@@ -20,6 +20,6 @@ To get a campaign’s budget, call the campaign’s [getBudget](../reference/Cam
 
 You cannot update a shared budget when you access it from a [Campaign](../reference/Campaign.md) object. For example, if you called the campaign’s `getBudget` method, you cannot update the budget if it’s shared. The only budgets you can update from a campaign object, are campaign-specific budgets.
 
-To update a shared budget, you must get the `Budget` object from the budget selector (see [BudgetSelector](../reference/ BudgetSelector.md)). The selector returns only shared budget; the selector will not include campaign-specific budgets.
+To update a shared budget, you must get the `Budget` object from the budget selector (see [BudgetSelector](../reference/BudgetSelector.md)). The selector returns only shared budget; the selector will not include campaign-specific budgets.
 
 For examples that show how to get and update shared budgets, see [Managing shared budgets](../examples/budgets.md).
