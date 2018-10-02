@@ -1,37 +1,35 @@
 ---
-title: "Stats object"
-description: "Contains the methods for accessing the entity's performance data."
-author: "brapel"
+title: "BingAdsAccountStats object"
+description: "Contains the methods for accessing a managed account's performance data."
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# Stats
+# BingAdsAccountStats
 
-Contains the methods for accessing an entity's performance data.
+Contains the methods for accessing a managed account's performance data.
 
 
 Example usage:
 ```javascript
-    var campaign = BingAdsApp.campaigns()
-        forDateRange("LAST_WEEK")
+    var account = AccountsApp.accounts()
         .get()
+        .forDateRange("LAST_WEEK")
         .next();
-    var stats = campaign.getStats();
+    var stats = account.getStats();
     var conversionRate = stats.getClickConversionRate();
     var convertedClicks = stats.getConvertedClicks();
     // etc.
 ```
 
+
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[getAverageCpc](#getaveragecpc)|double|Gets the average cost per click.
-[getAverageCpm](#getaveragecpm)|double|Gets the average cost per thousand impressions.
-[getAveragePosition](#getaverageposition)|double|Gets the average position.
 [getClickConversionRate](#getclickconversionrate)|double|Gets the conversion rate for clicks.
 [getClicks](#getclicks)|long|Gets the number of clicks.
 [getConvertedClicks](#getconvertedclicks)|long|Gets the number of clicks that converted.
@@ -39,29 +37,6 @@ Example usage:
 [getCtr](#getctr)|double|Gets the click through rate.
 [getImpressions](#getimpressions)|long|Gets the number of impressions.
 
-## <a name="getaveragecpc"></a>getAverageCpc
-Gets the average cost per click.
-
-### Returns
-|Type|Description|
-|-|-
-double|The average cost per click.
-
-## <a name="getaveragecpm"></a>getAverageCpm
-Gets the average cost per thousand impressions.
-
-### Returns
-|Type|Description|
-|-|-
-double|The average cost per one-thousand impressions.
-
-## <a name="getaverageposition"></a>getAveragePosition
-Gets the average position where ads were placed.
-
-### Returns
-|Type|Description|
-|-|-
-double|The average position where ads were placed.
 
 ## <a name="getclickconversionrate"></a>getClickConversionRate
 Gets the conversion rate for clicks.
@@ -71,6 +46,7 @@ Gets the conversion rate for clicks.
 |-|-
 double|The conversion rate for clicks, in the range 0..1.
 
+
 ## <a name="getclicks"></a>getClicks
 Gets the number of clicks.
 
@@ -78,6 +54,7 @@ Gets the number of clicks.
 |Type|Description|
 |-|-
 long|The number of clicks.
+
 
 ## <a name="getconvertedclicks"></a>getConvertedClicks
 Gets the number of clicks that converted.
@@ -87,6 +64,7 @@ Gets the number of clicks that converted.
 |-|-
 long|The number of clicks that converted.
 
+
 ## <a name="getcost"></a>getCost
 Gets the cost (spend) in the account's currency.
 
@@ -95,6 +73,7 @@ Gets the cost (spend) in the account's currency.
 |-|-
 double|The cost in the account's currency.
 
+
 ## <a name="getctr"></a>getCtr
 Gets the click-through rate.
 
@@ -102,6 +81,7 @@ Gets the click-through rate.
 |Type|Description|
 |-|-
 double|The click-through rate, in the range 0..1.
+
 
 ## <a name="getimpressions"></a>getImpressions
 Gets the number of impressions.

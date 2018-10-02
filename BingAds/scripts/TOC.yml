@@ -32,6 +32,8 @@
       href: concepts/bid-strategies.md 
     - name: Mapping editorial approval
       href: concepts/editorial-approval.md 
+    - name: Mapping time zones
+      href: concepts/timezone-mapping.md 
     - name: JavaScript features
       href: concepts/supported-js-features.md 
 - name: Code examples
@@ -51,6 +53,8 @@
     - name: Single account  
       href: ./reference/BingAdsApp.md 
       items:
+        - name: Account
+          href: ./reference/Account.md 
         - name: Ad
           href: ./reference/Ad.md 
         - name: AdBuilderSpace
@@ -133,16 +137,21 @@
           href: ./reference/NegativeKeywordListSelector.md 
         - name: Stats
           href: ./reference/Stats.md 
-#    - name: Multiple Accounts
-#      href: ./reference/AccountsApp
-#      items:
-#        - name: AccountsApp
-#          href: ./reference/AccountsApp
-#        - name: BingAdsAccount
-#        - name: BingAdsAccountIterator
-#          href: ./reference/BingAdsAccountIterator
-#        - name: BingAdsAccountSelector
-#          href: ./reference/BingAdsAccountSelector
+    - name: Multi-accounts
+      href: ./reference/AccountsApp.md
+      items:
+        - name: AccountsApp
+          href: ./reference/AccountsApp.md
+        - name: BingAdsAccount
+          href: ./reference/BingAdsAccount.md
+        - name: BingAdsAccountIterator
+          href: ./reference/BingAdsAccountIterator.md
+        - name: BingAdsAccountSelector
+          href: ./reference/BingAdsAccountSelector.md
+        - name: BingAdsAccountStats
+          href: ./reference/BingAdsAccountStats.md
+        - name: ExecutionResult
+          href: ./reference/ExecutionResult.md
 #    - name: Spreadsheets
 #      href: ./reference/SpreadsheetApp
 #      items:
