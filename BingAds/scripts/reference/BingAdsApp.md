@@ -19,6 +19,7 @@ This is the top-level object used to access and manage a single account.
 |-|-|-
 [adGroups](#adgroups)|[AdGroupSelector](./AdGroupSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ad groups in this account.
 [ads](#ads)|[AdSelector](./AdSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of ads in this account.
+[budgets](#budgets)|[BudgetSelector](./BudgetSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of shared budgets in this account.
 [campaigns](#campaigns)|[CampaignSelector](./CampaignSelector.md)|Gets a selector used to filter the list of campaigns in this account.
 [currentAccount](#currentaccount)|[Account](./Account.md)|Gets the account that the script is currently processing.
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a selector used to filter the list of keywords in this account.
@@ -50,6 +51,19 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of ads in th
 |Type|Description|
 |-|-
 [AdSelector](./AdSelector.md)|A selector used to filter the list of ads in the current account.
+
+
+## <a name="budgets"></a>budgets
+
+Gets a [selector](../concepts/selectors.md) used to filter the list of shared budgets in this account. 
+
+This method returns only shared budgets. To get unshared (individual campaign) budgets, call the specific campaign's [getBudget](Campaign.md#getbudget) method. The campaign's budget is not shared if the `isExplicitlyShared` method returns **false**.
+
+### Returns
+
+|Type|Description|
+|-|-
+[BudgetSelector](./BudgetSelector.md)|A selector used to filter the list of shared budgets in the current account.
 
 
 ## <a name="campaigns"></a>campaigns
