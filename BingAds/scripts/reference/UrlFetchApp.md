@@ -71,7 +71,7 @@ url|string|The URL of the web resource to get. Supports HTTP and HTTPS requests.
 ### Returns
 |Type|Description|
 |-|-
-[HTTPResponse](HTTPResponse)|Contains the methods used to access the response from your fetch request.
+[HTTPResponse](HTTPResponse.md)|Contains the methods used to access the response from your fetch request.
 
 
 ## <a name="fetch-string-url-object-params-"></a>fetch(string url, object params)
@@ -88,7 +88,7 @@ params|object|A form-data object that contains request headers, the request payl
 ### Returns
 |Type|Description|
 |-|-
-[HTTPResponse](HTTPResponse)|Contains the methods used to access the response from your fetch request.
+[HTTPResponse](HTTPResponse.md)|Contains the methods used to access the response from your fetch request.
 
 
 ## See also
