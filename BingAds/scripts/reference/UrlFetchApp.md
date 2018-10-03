@@ -71,7 +71,7 @@ url|string|The URL of the web resource to get. Supports HTTP and HTTPS requests.
 ### Returns
 |Type|Description|
 |-|-
-[HTTPResponse](HTTPResponse.md)|Contains the methods used to access the response from your fetch request.
+[HTTPResponse](HTTPResponse.md)|Contains the methods used to access the contents of response of your fetch request.
 
 
 ## <a name="fetch-string-url-object-params-"></a>fetch(string url, object params)
@@ -83,12 +83,12 @@ You can use this method to get, post, put, patch or delete a resource on the web
 |Name|Type|Description|
 |-|-|-
 url|string|The URL of the web resource.
-params|object|A form-data object that contains request headers, the request payload, and more. The form data is an object that contains one or more of the following name-value pairs:<ul><li>contentType &mdash; A string that contains the media type of data in the request's payload. The default is, application/x-www-form-urlencoded.</li><li>headers &mdash; An object that contains a key-value pair for each request header you want to specify.</li><li>method &mdash; A string that contains the HTTP verb to use in the request. Possible values are: GET, POST, PUT, PATCH, and DELETE. The default is GET.</li><li>payload &mdash; The payload for a POST, PUT, or PATCH request. The payload can be a string or an object. If the payload is an object, it may contain one or more name-value pairs.</li><li>muteHttpExceptions &mdash; A Boolean value that determines whether to prevent this method from throwing an exception if the response's status code is a failure code. Set to **true** to mute the HTTP failure code. The default is **false**.</li></ul>
+params|object|A form-data object that contains one or more of the following name-value pairs:<ul><li>contentType &mdash; A string that contains the media type of data in the request's payload. The default is, application/x-www-form-urlencoded.</li><li>headers &mdash; An object that contains a key-value pair for each request header you want to specify.</li><li>method &mdash; A string that contains the HTTP verb to use in the request. Possible values are: GET, POST, PUT, PATCH, and DELETE. The default is GET.</li><li>payload &mdash; The payload for a POST, PUT, or PATCH request. The payload can be a string or an object. If the payload is an object, it may contain one or more name-value pairs.</li><li>muteHttpExceptions &mdash; A Boolean value that determines whether to prevent this method from throwing an exception if the response's status code is a failure code. Set to **true** to mute HTTP failure codes. The default is **false**.</li></ul>
 
 ### Returns
 |Type|Description|
 |-|-
-[HTTPResponse](HTTPResponse.md)|Contains the methods used to access the response from your fetch request.
+[HTTPResponse](HTTPResponse.md)|Contains the methods used to access the contents of the response of your fetch request.
 
 
 ## See also

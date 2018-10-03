@@ -30,7 +30,7 @@ function main() {
 |-|-|-
 [getContent()](#getcontent)|byte[]|Gets the response's payload as a byte array.
 [getContentText()](#getcontenttext)|string|Gets the response's payload as a string.
-[getResponseCode()](#getresponsecode)|integer|The HTTP status code that indicates the request's success or failure.
+[getResponseCode()](#getresponsecode)|integer|Gets the response's HTTP status code.
 
 
 ## <a name="getcontent"></a>getContent
@@ -57,11 +57,11 @@ string|The response's payload as a string. If the payload is a JSON object, use 
 
 ## <a name="getresponsecode"></a>getResponseCode
 
-The HTTP status code that indicates the request's success or failure.
+Gets the response's HTTP status code.
 
 ### Returns
 
 |Type|Description|
 |-|-
-integer|The response's HTTP status code. For example, 200 if the GET request succeeded.
+integer|The response's HTTP status code, which indicates the request's success or failure. For example, 200 if the GET request succeeded.
 

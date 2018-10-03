@@ -15,7 +15,7 @@ If you use [UrlFetchApp](../reference/UrlFetchApp.md) to fetch resources from th
 
 - The maximum request size is 10 MB.
 - The maximum response size is 10 MB.
-- The maximum size of all headers (header name and content) is 8 KB.
-- The maximum number of headers in the request or response is 100.
+- The maximum size of all headers (header names and content) is 8 KB.
+- The maximum number of headers you can include in the request or response is 100.
 - The maximum number of `fetch()` calls you may make per day is 20,000.
 - The maximum amount of time the request may take is 30 seconds. 
