@@ -319,15 +319,18 @@ print("Status: {0}\n".format(reporting_operation_status.status))
 The *Report* is an in-memory container that abstracts the contents of a downloaded report file, including header metadata, column names, and report records. With these updates you are free to focus more on the business requirements of your application instead of parsing the report file.
 You can access the Report container in-memory via the *ReportingServiceManager* by submitting a new download request, or by using the *ReportFileReader* to read from a report file that you already downloaded. 
 
-For example you can get a Report object by submitting a new download request via ReportingServiceManager. Although in this case you won’t work directly with the file, under the covers a request is submitted to the Reporting service and the report file is downloaded to a local directory. 
-
-> [!NOTE]
-> Code samples for Report and ReportFileReader using the Java and Python SDKs are coming soon.
+For example you can get a Report object by submitting a new download request via ReportingServiceManager. Although in this case you won’t work directly with the file, under the covers a request is submitted to the Reporting service and the report file is downloaded to a local directory. The reporting download parameters include the requested report type, scope, time period, and the local download file path. 
 
 ```csharp
 Report reportContainer = (await ReportingServiceManager.DownloadReportAsync(
     reportingDownloadParameters,
     CancellationToken.None));
+```
+```java
+Report reportContainer = ReportingServiceManager.downloadReportAsync(reportingDownloadParameters, null).get(); 
+```
+```python
+report_container = reporting_service_manager.download_report(reporting_download_parameters)
 ```
 
 Otherwise if you already have a report file that was downloaded via the API, you can get a Report object via the ReportFileReader. 
@@ -337,6 +340,18 @@ ReportFileReader reader = new ReportFileReader(
     "c:\\reports\\result.csv",
     ReportFormat.Csv);
 Report reportContainer = reader.GetReport();
+```
+```java
+ReportFileReader reader = new ReportFileReader(
+        reportingDownloadParameters.getResultFileDirectory() + "\\" + reportingDownloadParameters.getResultFileName(), 
+        reportingDownloadParameters.getReportRequest().getFormat());
+Report reportContainer = reader.getReport();
+```
+```python
+report_file_reader = ReportFileReader(
+    file_path = reporting_download_parameters.result_file_directory + reporting_download_parameters.result_file_name, 
+    format = reporting_download_parameters.report_request.Format)
+report_container = report_file_reader.get_report()
 ```
 
 Once you have a Report object via either workflow above, you can access the metadata and report records. 
@@ -384,6 +399,95 @@ reportContainer.Dispose();
 // whether or not the files were created by this ReportingServiceManager instance. 
 
 ReportingServiceManager.CleanupTempFiles();
+```
+```java
+// Output the reportRequest metadata
+
+java.lang.Long recordCount = reportContainer.getReportRecordCount();
+outputStatusMessage(String.format("ReportName: %s", reportContainer.getReportName()));
+outputStatusMessage(String.format("ReportTimeStart: %s", reportContainer.getReportTimeStart()));
+outputStatusMessage(String.format("ReportTimeEnd: %s", reportContainer.getReportTimeEnd()));
+outputStatusMessage(String.format("LastCompletedAvailableDate: %s", reportContainer.getLastCompletedAvailableDate().toString()));
+outputStatusMessage(String.format("ReportAggregation: %s", enumCaseToPascalCase(reportContainer.getReportAggregation().toString())));
+outputStatusMessage(String.format("ReportColumns: %s", String.join("; ", reportContainer.getReportColumns())));
+outputStatusMessage(String.format("ReportRecordCount: %s", recordCount));
+
+// Analyze and output performance statistics
+
+if(Arrays.asList(reportContainer.getReportColumns()).contains("Impressions")){
+    Iterable<ReportRecord> reportRecordIterable = reportContainer.getReportRecords();
+
+    int totalImpressions = 0;
+    int totalClicks = 0;
+    HashSet<String> distinctDevices = new HashSet<>();
+    HashSet<String> distinctNetworks = new HashSet<>();
+    for (ReportRecord record : reportRecordIterable)
+    {
+        totalImpressions += record.getIntegerValue("Impressions");
+        totalClicks += record.getIntegerValue("Clicks");
+        distinctDevices.add(record.getStringValue("DeviceType"));
+        distinctNetworks.add(record.getStringValue("Network"));
+    }
+
+    outputStatusMessage(String.format("Total Impressions: %s", totalImpressions));
+    outputStatusMessage(String.format("Total Clicks: %s", totalClicks));
+    outputStatusMessage(String.format("Average Impressions: %s", totalImpressions * 1.0 / recordCount));
+    outputStatusMessage(String.format("Average Clicks: %s", totalClicks * 1.0 / recordCount));
+    outputStatusMessage(String.format("Distinct Devices: %s", String.join("; ", distinctDevices)));
+    outputStatusMessage(String.format("Distinct Networks: %s", String.join("; ", distinctNetworks)));
+}       
+
+// Be sure to close the reportRequest before you attempt to clean up files within the working directory.
+
+reportContainer.close();
+
+// The cleanupTempFiles method removes all files (not sub-directories) within the working
+// directory, whether or not the files were created by this ReportingServiceManager instance. 
+// If you are using a cloud service such as Microsoft Azure you'll want to ensure you do not
+// exceed the file or directory limits. 
+
+ReportingServiceManager.cleanupTempFiles();
+```
+```python
+# Output the reportRequest metadata
+record_count = report_container.record_count
+output_status_message("ReportName: {0}".format(report_container.report_name))
+output_status_message("ReportTimeStart: {0}".format(report_container.report_time_start))
+output_status_message("ReportTimeEnd: {0}".format(report_container.report_time_end))
+output_status_message("LastCompletedAvailableDate: {0}".format(report_container.last_completed_available_date))
+output_status_message("ReportAggregation: {0}".format(report_container.report_aggregation))
+output_status_message("ReportColumns: {0}".format("; ".join(str(column) for column in report_container.report_columns)))
+output_status_message("ReportRecordCount: {0}".format(record_count))
+
+#Analyze and output performance statistics
+
+if "Impressions" in report_container.report_columns and \
+    "Clicks" in report_container.report_columns and \
+    "DeviceType" in report_container.report_columns and \
+    "Network" in report_container.report_columns:
+
+    report_record_iterable = report_container.report_records
+
+    total_impressions = 0
+    total_clicks = 0
+    distinct_devices = set()
+    distinct_networks = set()
+    for record in report_record_iterable:
+        total_impressions += record.int_value("Impressions")
+        total_clicks += record.int_value("Clicks")
+        distinct_devices.add(record.value("DeviceType"))
+        distinct_networks.add(record.value("Network"))
+
+    output_status_message("Total Impressions: {0}".format(total_impressions))
+    output_status_message("Total Clicks: {0}".format(total_clicks))
+    output_status_message("Average Impressions: {0}".format(total_impressions * 1.0 / record_count))
+    output_status_message("Average Clicks: {0}".format(total_clicks * 1.0 / record_count))
+    output_status_message("Distinct Devices: {0}".format("; ".join(str(device) for device in distinct_devices)))
+    output_status_message("Distinct Networks: {0}".format("; ".join(str(network) for network in distinct_networks)))
+
+#Be sure to close the report.
+
+report_container.close()
 ```
 
 ## See Also
