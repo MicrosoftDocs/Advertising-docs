@@ -88,7 +88,7 @@ function bump() {
     // a complex object, use JSON.stringify(object) to return the 
     // object as a string.
 
-    return account.getAccountId().toString();
+    return account.getAccountId();
 }
 
 // Handles all return values from the bump() function after the 
