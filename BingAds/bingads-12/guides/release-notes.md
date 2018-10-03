@@ -17,11 +17,11 @@ See below for Bing Ads service updates during this calendar month.
 ### <a name="responsiveadfilter-october2018"></a>Responsive Ad Type Filter for Reporting
 The *ResponsiveAd* value is added to the [AdTypeReportFilter](../reporting-service/adtypereportfilter.md) value set. You can filter by ad type within the following report filters. 
 
-- [AdDynamicTextPerformanceReportFilter](addynamictextperformancereportfilter.md)  
-- [AdPerformanceReportFilter](adperformancereportfilter.md)  
-- [KeywordPerformanceReportFilter](keywordperformancereportfilter.md)  
-- [ProductSearchQueryPerformanceReportFilter](productsearchqueryperformancereportfilter.md)  
-- [SearchQueryPerformanceReportFilter](searchqueryperformancereportfilter.md)  
+- [AdDynamicTextPerformanceReportFilter](../reporting-service/addynamictextperformancereportfilter.md)  
+- [AdPerformanceReportFilter](../reporting-service/adperformancereportfilter.md)  
+- [KeywordPerformanceReportFilter](../reporting-service/keywordperformancereportfilter.md)  
+- [ProductSearchQueryPerformanceReportFilter](../reporting-service/productsearchqueryperformancereportfilter.md)  
+- [SearchQueryPerformanceReportFilter](../reporting-service/searchqueryperformancereportfilter.md)  
 
 ## <a name="september2018"></a>September 2018
 See below for Bing Ads service updates during this calendar month. 
