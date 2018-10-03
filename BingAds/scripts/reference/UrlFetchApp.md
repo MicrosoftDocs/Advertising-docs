@@ -17,10 +17,13 @@ This is the top-level object that you use to fetch resources from the web.
 Example usage:
 ```javascript
 function main() {
-    // Simple GET request to fetch a web resource.
-    var response = UrlFetchApp.fetch('http://microsoft.com');
-    Logger.log("payload as a string: " + response.getContentText());
-    Logger.log("\nstatus code: " + response.getResponseCode());    
+    // Simple GET request to fetch a stock quote.
+    var response = UrlFetchApp.fetch('https://api.iextrading.com/1.0/stock/msft/quote');
+    var stock = JSON.parse(response.getContentText());
+    Logger.log(`stock symbol: ${stock["symbol"]}`);
+    Logger.log(`company: ${stock["companyName"]}`);
+    Logger.log(`close price: ${stock["close"]}`);
+    Logger.log("\nstatus code: " + response.getResponseCode());
 }
 ```
 
