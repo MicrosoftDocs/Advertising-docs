@@ -81,6 +81,9 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns
 
 Gets the account that the script is currently processing.
 
+> [!NOTE]
+> To use this method in a multi-account scenario, you must first select an account to manage. If you call this method before selecting an account, the call returns null.
+
 ### Returns
 
 |Type|Description|

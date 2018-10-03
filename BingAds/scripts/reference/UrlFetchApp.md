@@ -29,9 +29,8 @@ function main() {
 
 ```javascript
     // Sends a GET request to a resource that requires an OAuth access token
-    // and returns a JSON object in the response. (This is simply for illustrative 
-    // purposes; you should never include an OAuth token in your script.)
-    var token = "<get the oauth token from secured storage>";
+    // and returns a JSON object in the response.
+    var token = "<the oauth token goes here>";
     var response = UrlFetchApp.fetch('https://contoso.com', { headers: { Authorization: `Bearer ${token}` } });    
     var jsonObject = JSON.parse(response.getContentText());    
 ```
