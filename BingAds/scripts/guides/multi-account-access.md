@@ -11,19 +11,19 @@ ms.topic: "article"
 
 # Multi-account access
 
-If you have multiple accounts or manage accounts for others, everything starts with the [AccountsApp](../reference/AccountsApp.md) object. AccountsApp is the top-level object that you use to get the list of accounts you have access to, and to select the account to manage. After getting the account, you switch to using the [BingAdsApp](../reference/BingAdsApp.md) object to access the account's entities.
+If you have multiple accounts or manage accounts for others, everything starts with the [AccountsApp](../reference/AccountsApp.md) object. AccountsApp is the top-level object that you use to get the list of accounts you have access to, and to select the account to manage. After getting and selecting the account, you switch to using the [BingAdsApp](../reference/BingAdsApp.md) object to access the account's entities.
 
 > [!NOTE]
-> For multi-account scripts, use the Scripts editor accessed from **Accounts Summary** in the Bing Ads web application. If you don't see **Acounts Summary** in the UI, you don't have multiple accounts or are not managing accounts for others.
+> For multi-account scripts, use the Scripts editor accessed from **Accounts Summary** in the Bing Ads web application. If you don't see **Accounts Summary** in the UI, you won't use the multi-accounts Scripts editor.
 >
 > To access the Scripts editor from **Accounts Summary**, click **Bulk Operations** in the left pane. Then, under **Scripts** click **Create and manage scripts**.
 
 
 ## Listing the accounts you have access to
 
-To list all the accounts that you have access to, call the [AccountsApp](../reference/AccountsApp.md) object's `accounts()` method. The `accounts()` method returns a [BingAdsAccountSelector](../reference/BingAdsAccountSelector.md) object that you can use to filter the list of accounts. For information about using `BingAdsAccountSelector` to filter the list, see [Using selectors](../concepts/selectors.md).
+To list all the accounts that you have access to, call the [accounts](../reference/AccountsApp.md#accounts) method. The method returns a [BingAdsAccountSelector](../reference/BingAdsAccountSelector.md) object that you can use to filter the list of accounts. For information about using selectors to filter lists, see [Using selectors](../concepts/selectors.md).
 
-The following example doesn't filter the list and returns all the accounts you have access to.
+The following example returns all the accounts you have access to.
 
 ```javascript
 function main() {
@@ -64,7 +64,7 @@ To perform work on multiple accounts in parallel, you call the [selector's](../r
 
 You must limit the number of accounts to 50, otherwise, the call fails if the selector returns more than 50. To limit the number of accounts, you can use the `withLimit()`, `withIds()`, and `withAccountNumbers()` methods.
 
-The following example shows a simple example that executes a function for each account that had a click-through rate less that 5% last week. The example uses the `withLimit()` method to ensure the call doesn't exceed the 50 account limit.
+The following example shows a simple example that executes a function for each account that had a click-through rate less that 5% last week. The example uses the `withLimit()` method to ensure the call doesn't exceed the 50 accounts limit.
 
 ```javascript
 function main() {
@@ -111,7 +111,7 @@ Until you select an account to process, you cannot call any of the [BingAdsApp](
 
 But first you need to call the [accounts](../reference/AccountsApp.md#accounts) method to select the accounts you want to process. For information about using `accounts()` to filter the list of accounts, see [Listing the accounts you have access to](#listing-the-accounts-you-have-access-to).
 
-After getting an account call the `select()` method to make the account the current account. The following example shows this process.
+After getting an account, call the `select()` method to make the account the current account. The following example shows this process.
 
 ```javascript
 function main() {
