@@ -334,17 +334,17 @@ The bid strategy type that is inherited from the parent campaign if the ad group
 ### <a name="language"></a>Language
 Your ad language setting determines the language you will use when you write your ads and should be the language of your customers.  
 
+> [!IMPORTANT]
+> If languages are set at both the ad group and campaign level, the ad group level language will override the campaign level language. 
+
 For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage).
 
 For ad groups in Dynamic Search Ads campaigns, only *English* is supported.
 
 For ad groups in Audience campaigns, ad group level language is not supported, and you must set the [Language](campaign.md#language) field of the ad group's [Campaign](#campaign.md) to *All*.
 
-> [!IMPORTANT]
-> Support for multiple languages at the campaign level is in pilot. If languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The customer is enabled for the pilot if the [GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) response includes pilot number *310*. Pilot participants will be able to set multiple languages at the campaign level, and will be able to delete the ad group level language by setting this field to *delete_value*. The *delete_value* keyword removes the previous setting. If you leave this field nil, then the ad group language will not be updated. If your application depends on ad group language being set, then you must prepare for the possibility that ad group language will be nil. 
-
 **Add:** Optional if the campaign has one or more languages set, and otherwise the language is required for most campaign types. You are not allowed to set this element for ad groups in Audience campaigns.  
-**Update:** Optional if the customer is in the *Campaign Languages* pilot, and otherwise update is not allowed. If you are not in the pilot and try to change the language during update, no error will be returned and the setting will not be changed.  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove the language and defer to the campaign level languages, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.   
 **Delete:** Read-only  
 
 ### <a name="maximumbid"></a>Maximum Bid
