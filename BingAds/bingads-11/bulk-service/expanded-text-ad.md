@@ -396,9 +396,12 @@ The text can contain a countdown function. For more details see [Countdown Funct
 
 The text can contain dynamic text strings such as {keyword}. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](http://help.bingads.microsoft.com/#apex/3/en/50811/1).
 
-The maximum input length is 300 characters including dynamic text strings, and of those 300 no more than 80 final characters are allowed after substitution. The ad will fail to display if the length exceeds 80 characters after dynamic text substitution occurs.
+The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 80 final characters are allowed after substitution. The ad will fail to display if the length exceeds 80 characters after dynamic text substitution occurs.
 
-For languages with double-width characters e.g. Traditional Chinese the maximum input length is 150 characters including dynamic text strings, and of those 150 no more than 40 final characters are allowed after substitution. The ad will fail to display if the length exceeds 40 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
+For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 40 final characters are allowed after substitution. The ad will fail to display if the length exceeds 40 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
+
+> [!NOTE] 
+> For customers in [pilot 510](../customer-management-service/getcustomerpilotfeatures.md#featurepilotflags), the maximum length is increased from 80 to 90, or from 40 to 45 for double-width characters.
 
 The text cannot contain the newline (\n) character.
 

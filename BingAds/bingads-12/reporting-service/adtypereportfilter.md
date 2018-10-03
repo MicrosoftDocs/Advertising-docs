@@ -51,6 +51,13 @@ Defines the ad type values that you can use to filter the report data. These val
             </xs:appinfo>
           </xs:annotation>
         </xs:enumeration>
+        <xs:enumeration value="ResponsiveAd">
+          <xs:annotation>
+            <xs:appinfo>
+              <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4096</EnumerationValue>
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:enumeration>
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -66,6 +73,7 @@ Defines the ad type values that you can use to filter the report data. These val
 |<a name="expandedtext"></a>ExpandedText|The report will include expanded text ads.|
 |<a name="local"></a>Local|Not supported.|
 |<a name="product"></a>Product|The report will include product ads.|
+|<a name="responsivead"></a>ResponsiveAd|The report will include responsive ads.|
 |<a name="text"></a>Text|The report will include text ads.|
 
 ## Requirements
