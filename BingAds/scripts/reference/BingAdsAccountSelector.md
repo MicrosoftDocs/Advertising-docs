@@ -68,7 +68,7 @@ Because this method does not return a [BingAdsAccountSelector](./BingAdsAccountS
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-functionName|string|The name of the function to execute for each account that the selector returns. The [currentAccount](BingAdsAccount.md#currentaccount) method identifies the account the function is processing.
+functionName|string|The name of the function to execute for each account that the selector returns. The [currentAccount](BingAdsApp.md#currentaccount) method identifies the account the function is processing.
 optionalCallbackFunctionName|string|Optional. The name of the function to execute after all accounts finish executing the *functionName* function. This function executes only one time. 
 
 ### Returns
@@ -110,7 +110,7 @@ Because this method does not return a [BingAdsAccountSelector](./BingAdsAccountS
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-functionName|string|The name of the function to execute for each account that the selector returns. The [currentAccount](BingAdsAccount.md#currentaccount) method identifies the account the function is processing.
+functionName|string|The name of the function to execute for each account that the selector returns. The [currentAccount](BingAdsApp.md#currentaccount) method identifies the account the function is processing.
 optionalCallbackFunctionName|string|Optional. The name of the function to execute after all accounts finish executing the *functionName* function. This function executes only one time.
 optionalInput|string|Optional. Input to pass to the *functionName* function.
 
