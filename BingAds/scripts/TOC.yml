@@ -28,10 +28,12 @@
       href: concepts/change-and-text-logs.md 
     - name: Defining IDs
       href: concepts/ids.md 
-    - name: Mapping bid strategies
-      href: concepts/bid-strategies.md 
     - name: Shared budgets
       href: concepts/shared-budgets.md 
+    - name: UrlFetch limits
+      href: concepts/urlfetch-limits.md 
+    - name: Mapping bid strategies
+      href: concepts/bid-strategies.md 
     - name: Mapping editorial approval
       href: concepts/editorial-approval.md 
     - name: Mapping time zones
@@ -160,6 +162,13 @@
           href: ./reference/BingAdsAccountStats.md
         - name: ExecutionResult
           href: ./reference/ExecutionResult.md
+    - name: UrlFetch
+      href: ./reference/UrlFetchApp.md
+      items:
+        - name: HTTPResponse
+          href: ./reference/HTTPResponse.md
+        - name: UrlFetchApp
+          href: ./reference/UrlFetchApp.md
 #    - name: Spreadsheets
 #      href: ./reference/SpreadsheetApp
 #      items:
