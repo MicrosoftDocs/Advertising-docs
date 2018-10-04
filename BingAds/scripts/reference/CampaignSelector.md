@@ -171,7 +171,7 @@ BingAdsApp.campaigns()
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-ids|string[]|An array of campaign IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get()` method fails with a runtime error.
+ids|string[]|An array of campaign IDs. For limits, see [Script execution limits](../concepts/execution-limits.md).
 
 ### Returns
 |Type|Description|
