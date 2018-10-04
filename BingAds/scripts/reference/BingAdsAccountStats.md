@@ -91,3 +91,8 @@ Gets the number of impressions.
 |-|-
 long|The number of impressions.
 
+
+## See also
+
+- [BingAdsAccount.getStats()](BingAdsAccount.md#getstats)
+- [Multi-account access](../guides/multi-account-access.md)
