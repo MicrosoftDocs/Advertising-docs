@@ -80,7 +80,7 @@ In order to improve performance, Bing processes build requests in batches. If yo
 ### Don't do this
 
 ``` javascript
-    for (var i = 0; i < keywords.length; i++)
+    for (var i = 0; i < keywords.length; i++) {
         var keywordOperation = BingAdsApp.adGroups().get().next()
           .newKeywordBuilder()
           .withText(keywords[i])
@@ -98,6 +98,7 @@ In order to improve performance, Bing processes build requests in batches. If yo
 The following is the list of builders.
 
 - [AdGroupBuilder](../reference/AdGroupBuilder.md)
+- [ExpandedTextAdBuilder](../reference/ExpandedTextAdBuilder.md)
 - [KeywordBuilder](../reference/KeywordBuilder.md)
 - [NegativeKeywordListBuilder](../reference/NegativeKeywordListBuilder.md)
 

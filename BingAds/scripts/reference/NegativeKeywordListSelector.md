@@ -109,13 +109,10 @@ BingAdsApp.negativeKeywordLists()
     .withIds([33333, 44444, 55555])
 ```
 
-[!INCLUDE[maximum-number-of-ids](../includes/maximum-number-of-ids.md)] 
-
-
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-ids|string[]|An array of negative keyword lists IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get()` method fails with a runtime error.
+ids|string[]|An array of negative keyword lists IDs. For limits, see [Script execution limits](../concepts/execution-limits.md).
 
 ### Returns
 |Type|Description|

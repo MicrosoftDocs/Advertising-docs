@@ -22,6 +22,10 @@
       href: concepts/iterators.md 
     - name: Builders
       href: concepts/builders.md 
+    - name: Best practices
+      href: concepts/best-practices.md 
+    - name: Execution limits
+      href: concepts/execution-limits.md 
     - name: Preview mode
       href: concepts/preview-mode.md 
     - name: Errors and warnings
@@ -34,6 +38,8 @@
       href: concepts/shared-budgets.md 
     - name: UrlFetch limits
       href: concepts/urlfetch-limits.md 
+    - name: Scripts policies
+      href: concepts/scripts-policies.md 
     - name: Mapping bid strategies
       href: concepts/bid-strategies.md 
     - name: Mapping editorial approval

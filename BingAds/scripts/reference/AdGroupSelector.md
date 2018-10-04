@@ -167,11 +167,10 @@ var selector = BingAdsApp.adGroups()
     .withIds([33333, 44444, 55555]);
 ```
 
-
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-ids|string[]|An array of ad group IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get()` method fails with a runtime error.
+ids|string[]|An array of ad group IDs. For limits, see [Script execution limits](../concepts/execution-limits.md).
 
 ### Returns
 |Type|Description|

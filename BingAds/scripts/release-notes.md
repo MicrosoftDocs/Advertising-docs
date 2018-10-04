@@ -24,6 +24,12 @@ Added the following objects to support URL fetch.
   
 - Added the [UrlFetch limits](concepts/urlfetch-limits.md) topic, which lists limits for fetching resources from the web.
 
+Add the following topics:
+
+- [Policies](concepts/scripts-policies.md)
+- [Limits](concepts/execution-limits.md)
+- [Best practices](concepts/best-practices.md)
+
 
 ## Octoboer 2, 2018
 
