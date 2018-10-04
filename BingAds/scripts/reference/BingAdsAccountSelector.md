@@ -195,7 +195,7 @@ Gets managed accounts with the specified account numbers.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-accountNumbers|string[]|An array of account numbers. The maximum number of accounts that you may specify is 1,000. If you specify more than 1,000 accounts, calling the `get()` method fails with a runtime error.
+accountNumbers|string[]|An array of account numbers. For limits, see [Script execution limits](../concepts/execution-limits.md).
 
 ### Returns
 |Type|Description|
@@ -258,12 +258,10 @@ AccountsApp.accounts()
     .get();
 ```
 
-[!INCLUDE[maximum-number-of-ids](../includes/maximum-number-of-ids.md)] 
-
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-ids|string[]|An array of managed account IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get()` method fails with a runtime error.
+ids|string[]|An array of managed account IDs. For limits, see [Script execution limits](../concepts/execution-limits.md).
 
 ### Returns
 |Type|Description|
