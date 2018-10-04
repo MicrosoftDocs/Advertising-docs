@@ -16,6 +16,8 @@ For information about changes that were included with each release, see the foll
 
 ## October 4, 2018
 
+This is the Beta release of Scripts. For information about participating in the program, please contact your account manager. The Scripts classes and documentation are subject to change.
+
 Added the following objects to support URL fetch.
 
 - Added the [UrlFetchApp](reference/UrlFetchApp.md) object, which is the top-level object that you use to fetch resources from the web.  
