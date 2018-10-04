@@ -11,15 +11,11 @@ ms.topic: "article"
 
 # Script execution limits
 
-- Scripts limits script execution to 30 minutes. If the script's execution time exceeds 30 minutes, it's canceled. Any entities that were added or updated before the script was canceled are saved.  
+- Script execution is limited to 30 minutes. If the script's execution time exceeds 30 minutes, it's canceled. Any entities that were added or updated before the script was canceled are saved.  
   
 - There is no limit on the number of times you can run a script.  
   
 - The number of scripts you may have per account is limited to 100.
-
-<!--
-Need execution limit for MCC if executeInParallel is used. See https://developers.google.com/adwords/scripts/docs/limits#mcc_scripts.
--->
 
 
 ## Single account limits
@@ -36,23 +32,22 @@ These single account limits are the per script (they are not the aggregation of 
   
 - A script can write a maximum 100 KB of output to the console log. When you exceed the limit, Scripts logs a warning.
 
-<!--
-Link to ExecutionInfo.getRemainingCreateQuota and .getRemainingGetQuota and .getRemainingTime.
--->
 
-<!--
 ## Multi-account limits
 
-- The single account limits listed above apply to each account that the MCC script processes.  
-  
+- The single account limits listed above apply to each account that a multi-account script processes.  
+
+  The exception is for scripts that call the `executeInParallel` method. If your script calls `executeInParallel`, the script must also complete with within 30 minutes unless you specify a callback function. If you specify a callback function, the callback may take an additional 30 minutes to complete. This means that your script (including the function you execute for each account) has 30 minutes to complete and your callback has 30 minutes to complete. If either takes longer than 30 minutes, the script is canceled and any entities that were added or updated before the script was canceled are saved.  
+
 - The `executeInParallel` method lets your script process up to 50 accounts at the same time.  
-  
-- The processAccount method from executeInParallel can return up to 10MB of data.
+    
+- The function that `executeInParallel` specifies may return a maximum of 10 MB of data.
 
--->
 
-<!-- i don't see executeInParallel. and the third bullet doesn't make any sense: how can processAccount come from executeInParallel since it is itself a method?
--->
+## UrlFetch limits
+
+See [UrlFetch limits](urlfetch-limits.md).
+
 
 ## Bing Ads entity limits
 
