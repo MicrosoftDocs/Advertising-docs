@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # Multi-account access
 
-[!INCLUDE[preview-note](./includes/preview-note.md)]
+[!INCLUDE[preview-note](../includes/preview-note.md)]
 
 If you have multiple accounts or manage accounts for others, everything starts with the [AccountsApp](../reference/AccountsApp.md) object. AccountsApp is the top-level object that you use to get the list of accounts you have access to, and to select the account to manage. After getting and selecting the account, you switch to using the [BingAdsApp](../reference/BingAdsApp.md) object to access the account's entities.
 
