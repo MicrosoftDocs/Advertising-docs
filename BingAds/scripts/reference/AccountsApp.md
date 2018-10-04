@@ -69,3 +69,7 @@ account|[BingAdsAccount](./BingAdsAccount.md)|The account to process in the scri
 |-|-
 void|Returns nothing.
 
+
+## See also
+
+[Multi-account access](../guides/multi-account-access.md)

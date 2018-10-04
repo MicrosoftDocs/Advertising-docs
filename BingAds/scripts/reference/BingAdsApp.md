@@ -81,6 +81,9 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns
 
 Gets the account that the script is currently processing.
 
+> [!NOTE]
+> To use this method in a multi-account scenario, you must first select an account to manage. If you call this method before selecting an account, the call returns null.
+
 ### Returns
 
 |Type|Description|
@@ -131,3 +134,7 @@ Gets a [builder](../concepts/builders.md) that you use to add a negative keyword
 |-|-
 [NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|A builder that you use to add a negative keyword list to the current account.
 
+
+## See also
+
+[Single account access](../guides/single-account-access.md)

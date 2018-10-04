@@ -14,6 +14,17 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## October 4, 2018
+
+Added the following objects to support URL fetch.
+
+- Added the [UrlFetchApp](reference/UrlFetchApp.md) object, which is the top-level object that you use to fetch resources from the web.  
+  
+- Added the [HTTPResponse](reference/HTTPResponse.md), which contains the methods for accessing the contents of the fetched resource.  
+  
+- Added the [UrlFetch limits](concepts/urlfetch-limits.md) topic, which lists limits for fetching resources from the web.
+
+
 ## Octoboer 2, 2018
 
 Added the following objects and methods to support multi-accounts.

@@ -98,3 +98,8 @@ Gets this account's time zone.
 |-|-
 string|The preferred time zone to use for campaigns in this account. For a list of time zones, see [Account time zones](../concepts/timezone-mapping.md).
 
+
+## See also
+
+- [Multi-account access](../guides/multi-account-access.md)
+- [BingAdsAccountIterator.next()](BingAdsAccountIterator.md#next)
