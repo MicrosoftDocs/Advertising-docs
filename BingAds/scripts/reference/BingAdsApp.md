@@ -134,3 +134,7 @@ Gets a [builder](../concepts/builders.md) that you use to add a negative keyword
 |-|-
 [NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|A builder that you use to add a negative keyword list to the current account.
 
+
+## See also
+
+[Single account access](../guides/single-account-access.md)

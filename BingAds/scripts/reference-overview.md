@@ -23,8 +23,8 @@ The following are the top-level objects that you use to access your Bing Ads ent
 
 |Object|Description|
 |-|-
-[AccountsApp](./reference/AccountsApp.md)|This is the top-level object that you use if you're managing accounts for others. Use it to get the list of accounts you have access to, and to select the account to manage.<br/><br/>This object is available for scripts run from the Scripts editor accessed from **Accounts Summary** in the Bing Ads web application.
-[BingAdsApp](./reference/BingAdsApp.md)|This is the top-level object used to access and manage single-account entities, such as campaigns and keywords.
+[AccountsApp](./reference/AccountsApp.md)|This is the top-level object that you use if you're managing accounts for others. Use it to get the list of accounts you have access to, and to select the account to manage. [Read more](./guides/multi-account-access.md).
+[BingAdsApp](./reference/BingAdsApp.md)|This is the top-level object used to access and manage single-account entities, such as campaigns and keywords. [Read more](./guides/single-account-access.md).
 [UrlFetchApp](./reference/UrlFetchApp.md)|This is the top-level object used to fetch resources from the web.
 
 

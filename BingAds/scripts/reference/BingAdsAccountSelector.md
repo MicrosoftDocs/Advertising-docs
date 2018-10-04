@@ -290,4 +290,4 @@ limit|int|The number of managed accounts to return. The actual number may be les
 
 - [AccountsApp.accounts()](AccountsApp.md)
 - [BingAdsAccountIterator](./BingAdsAccountIterator.md)
-
+- [Multi-account access](../guides/multi-account-access.md)
