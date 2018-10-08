@@ -41,8 +41,10 @@ For an *Expanded Text Ad* record, the following attribute fields are available i
 - [Publisher Countries](#publishercountries)
 - [Status](#status)
 - [Text](#text)
+- [Text Part 2](#textpart2)
 - [Title Part 1](#titlepart1)
 - [Title Part 2](#titlepart2)
+- [Title Part 3](#titlepart3)
 - [Tracking Template](#trackingtemplate)
 
 You can download all fields of the *Expanded Text Ad* record by including the [DownloadEntity](downloadentity.md) value of *ExpandedTextAds* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
@@ -50,9 +52,9 @@ You can download all fields of the *Expanded Text Ad* record by including the [D
 The following Bulk CSV example would add a new expanded text ad given a valid ad group ID (*Parent Id*). 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Display Url,Destination Url,Promotion,Device Preference,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Title Part 1,Title Part 2,Path 1,Path 2
-Format Version,,,,,,,,,,,,,,6,,,,,,,,,,
-Expanded Text Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,,,,,False,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,Contoso,Quick & Easy Setup,seattle,shoe sale
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Text Part 2,Display Url,Destination Url,Promotion,Device Preference,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Title Part 1,Title Part 2,Title Part 3,Path 1,Path 2
+Format Version,,,,,,,,,,,,,,,6,,,,,,,,,,,
+Expanded Text Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,,Find New Customers & Increase Sales!,Start Advertising on Contoso Today.,,,,,False,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,Contoso,Quick & Easy Setup,Seemless Integration,seattle,shoe sale
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkExpandedTextAd* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -98,11 +100,15 @@ var bulkExpandedTextAd = new BulkExpandedTextAd
         // 'Status' column header in the Bulk file
         Status = AdStatus.Active,
         // 'Text' column header in the Bulk file
-        Text = "Find New Customers & Increase Sales! Start Advertising on Contoso Today.",
+        Text = "Find New Customers & Increase Sales!",
+        // 'Text Part 2' column header in the Bulk file
+        TextPart2 = "Start Advertising on Contoso Today.",
         // 'Title Part 1' column header in the Bulk file
         TitlePart1 = "Contoso",
         // 'Title Part 2' column header in the Bulk file
         TitlePart2 = "Quick & Easy Setup",
+        // 'Title Part 3' column header in the Bulk file
+        TitlePart3 = "Seemless Integration",
         // 'Tracking Template' column header in the Bulk file
         TrackingUrlTemplate = null,
         // 'Custom Parameter' column header in the Bulk file
@@ -389,7 +395,7 @@ Possible values are *Active*, *Paused*, or *Deleted*.
 **Delete:** Required. The Status must be set to *Deleted*.
 
 ### <a name="text"></a>Text
-The ad copy.
+The first part of the ad description.
 
 The text must contain at least one word.
 
@@ -406,12 +412,31 @@ For languages with double-width characters e.g. Traditional Chinese the maximum 
 
 The text cannot contain the newline (\n) character.
 
+**Add:** Required  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Delete:** Read-only  
+
+### <a name="textpart2"></a>Text Part 2
+The second part of the ad description.
+
+The text must contain at least one word.
+
+The text can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
+
+The text can contain dynamic text strings such as {keyword}. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](http://help.bingads.microsoft.com/#apex/3/en/50811/1).
+
+The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 90 final characters are allowed after substitution. The ad will fail to display if the length exceeds 90 characters after dynamic text substitution occurs.
+
+For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 45 final characters are allowed after substitution. The ad will fail to display if the length exceeds 45 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
+
+The text cannot contain the newline (\n) character.
+
 **Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
 ### <a name="titlepart1"></a>Title Part 1
-The first part of the ad title. The *Title Part 1* and *Title Part 2* values will be automatically separated by a space, vertical bar, and space (" &#124; ") when the ad is shown. Each part of the title must contain at least one word. 
+The first part of the ad title. The three title parts will be automatically separated by a space, vertical bar, and space (" &#124; ") when the ad is shown. Each part of the title must contain at least one word. 
 
 The title can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
 
@@ -428,7 +453,24 @@ The title cannot contain the newline (\n) character.
 **Delete:** Read-only  
 
 ### <a name="titlepart2"></a>Title Part 2
-The second part of the ad title. The *Title Part 1* and *Title Part 2* values will be automatically separated by a space, vertical bar, and space (" &#124; ") when the ad is shown. Each part of the title must contain at least one word.
+The second part of the ad title. The three title parts will be automatically separated by a space, vertical bar, and space (" &#124; ") when the ad is shown. Each part of the title must contain at least one word.
+
+The title can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
+
+The title can contain dynamic text strings such as {keyword}. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](http://help.bingads.microsoft.com/#apex/3/en/50811/1).
+    
+The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 30 final characters are allowed after substitution. The ad will fail to display if the length exceeds 30 characters after dynamic text substitution occurs. 
+
+For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 15 final characters are allowed after substitution. The ad will fail to display if the length exceeds 15 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
+
+The title cannot contain the newline (\n) character.
+
+**Add:** Required  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Delete:** Read-only  
+
+### <a name="titlepart3"></a>Title Part 3
+The third part of the ad title. The three title parts will be automatically separated by a space, vertical bar, and space (" &#124; ") when the ad is shown. Each part of the title must contain at least one word.
 
 The title can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
 
