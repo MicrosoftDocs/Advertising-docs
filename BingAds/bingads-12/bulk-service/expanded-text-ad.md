@@ -419,6 +419,9 @@ The text cannot contain the newline (\n) character.
 ### <a name="textpart2"></a>Text Part 2
 The second part of the ad description.
 
+> [!NOTE]
+> This field is only available for customers in [pilot 511](../customer-management-service/getcustomerpilotfeatures.md#featurepilotflags).
+
 The text must contain at least one word.
 
 The text can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
@@ -471,6 +474,9 @@ The title cannot contain the newline (\n) character.
 
 ### <a name="titlepart3"></a>Title Part 3
 The third part of the ad title. The three title parts will be automatically separated by a space, vertical bar, and space (" &#124; ") when the ad is shown. Each part of the title must contain at least one word.
+
+> [!NOTE]
+> This field is only available for customers in [pilot 511](../customer-management-service/getcustomerpilotfeatures.md#featurepilotflags).
 
 The title can contain a countdown function. For more details see [Countdown Functions](../guides/expanded-text-ads.md#countdown). 
 
