@@ -354,7 +354,7 @@ report_file_reader = ReportFileReader(
 report_container = report_file_reader.get_report()
 ```
 
-Once you have a Report object via either workflow above, you can access the metadata and report records. 
+Once you have a Report object via either workflow above, you can access the metadata and report records. If there was no report data for the campaigns and dates that you submitted, then the download result will be null or empty. 
 
 ```csharp
 // Output the report metadata
