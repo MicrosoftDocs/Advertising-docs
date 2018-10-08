@@ -12878,3 +12878,13 @@ ClickIdDateTimeOutsideGoalConversionWindow
 **Description**
 The date and time for the click ID is outside the conversion window for this goal.
 
+***
+
+**Numeric Code**
+5813
+
+**Symbolic Error Code**
+CampaignServiceAdGroupLanguageCannotBeRemovedUntilCampaignLanguagesAreProcessed
+
+**Description**
+The ad group language cannot be removed until campaign language updates have been processed. Please try again in 12 hours.

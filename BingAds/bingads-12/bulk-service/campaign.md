@@ -11,9 +11,6 @@ dev_langs:
 # Campaign Record - Bulk
 Defines a campaign that can be uploaded and downloaded in a bulk file. 
 
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
-
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
 For a *Campaign* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
