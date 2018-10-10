@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # HTTPResponse
 
-Contains the methods for accessing the content you fetched from the web.
+Contains the methods for getting the response's payload and status code.
 
 
 Example usage:

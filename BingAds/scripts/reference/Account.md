@@ -17,13 +17,13 @@ Contains the methods used to get account information such as name, customer ID, 
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[getAccountId](#getaccountid)|string|Gets this account's ID.
-[getAccountNumber](#getaccountnumber)|string|Gets this account's account number.
-[getCurrencyCode](#getcurrencycode)|string|Gets the currency code of the currency used by the account.
-[getCustomerId](#getcustomerid)|string|Gets the customer ID of the owner that owns this account.
+[getAccountId](#getaccountid)|string|Gets the ID that uniquely identifies this account.
+[getAccountNumber](#getaccountnumber)|string|Gets the account number used to identify the account in the Bing Ads web application.
+[getCurrencyCode](#getcurrencycode)|string|Gets the currency that this account uses.
+[getCustomerId](#getcustomerid)|string|Gets the ID of the customer that owns this account.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
-[getName](#getname)|string|Gets this managed account's name.
-[getTimeZone](#gettimezone)|string|Gets this account's time zone.
+[getName](#getname)|string|Gets this account's name.
+[getTimeZone](#gettimezone)|string|Gets the preferred time zone to use for campaigns in this account.
 
 <!--
 [getStats](#getstats)|[Stats](Stats.md)|Gets the performance data for this managed account.
@@ -44,7 +44,7 @@ Gets this account's account number.
 ### Returns
 |Type|Description|
 |-|-
-string|The account's account number used to identify the account in the Bing Ads web application.
+string|The account number used to identify the account in the Bing Ads web application.
 
 
 ## <a name="getcurrencycode"></a>getCurrencyCode
@@ -53,7 +53,7 @@ Gets this account's currency code.
 ### Returns
 |Type|Description|
 |-|-
-string|The currency currency that this account uses. For example, USD for United States dollar.
+string|The currency that this account uses. For example, USD for United States dollar.
 
 
 ## <a name="getcustomerid"></a>getCustomerId
