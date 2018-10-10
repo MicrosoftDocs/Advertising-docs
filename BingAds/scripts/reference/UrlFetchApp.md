@@ -57,7 +57,7 @@ function main() {
 |Method Name|Return Type|Description|
 |-|-|-
 [fetch(url)](#fetch-string-url-)|[HTTPResponse](./HTTPResponse.md)|Gets a resource from the web.
-[fetch(url, params)](#fetch-string-url-object-params-)|[HTTPResponse](./HTTPResponse.md)|Lets you manage a resource on the web.
+[fetch(url, params)](#fetch-string-url-object-params-)|[HTTPResponse](./HTTPResponse.md)|Lets you manage a web resource.
 
 
 ## <a name="fetch-string-url-"></a>fetch(string url)
@@ -73,13 +73,13 @@ url|string|The URL of the web resource to get. Supports HTTP and HTTPS requests.
 ### Returns
 |Type|Description|
 |-|-
-[HTTPResponse](HTTPResponse.md)|Contains the methods used to access the contents of response of your fetch request.
+[HTTPResponse](HTTPResponse.md)|Contains the methods for getting the response's payload and status code.
 
 
 ## <a name="fetch-string-url-object-params-"></a>fetch(string url, object params)
-Lets you manage a resource on the web.
+Lets you manage a web resource.
 
-You can use this method to get, post, put, patch or delete a resource on the web. This method waits until the request completes.
+You can use this method to get, post, put, patch or delete a web resource. This method waits until the request completes.
 
 ### Arguments
 |Name|Type|Description|
@@ -90,7 +90,7 @@ params|object|A form-data object that contains one or more of the following name
 ### Returns
 |Type|Description|
 |-|-
-[HTTPResponse](HTTPResponse.md)|Contains the methods used to access the contents of the response of your fetch request.
+[HTTPResponse](HTTPResponse.md)|Contains the methods for getting the response's payload and status code.
 
 
 ## See also
