@@ -18,29 +18,29 @@ Contains the methods for determining whether the negative keywords list was succ
 
 |Method Name|Return Type|Description|
 |-|-|-
-[getErrors](#geterrors)|string[]|Gets the errors that occurred when you added the negative keywords list.
-[getResult](#getresult)|[NegativeKeywordList](./NegativeKeywordList.md)|Gets the negative keywords list that you added.
+[getErrors](#geterrors)|string[]|Gets the errors that occurred when adding the negative keywords list.
+[getResult](#getresult)|[NegativeKeywordList](./NegativeKeywordList.md)|Gets the negative keywords list that was added.
 [isSuccessful](#issuccessful)|Boolean|Gets a Boolean value that indicates whether this operation succeeded.
 
 ## <a name="geterrors"></a>getErrors
 
-Gets the errors that occurred when you added the negative keywords list.
+Gets the errors that occurred when adding the negative keywords list.
 
 ### Returns
 
 |Type|Description|
 |-|-
-string[]|An array of symbolic error codes if the add operation failed; otherwise, an empty array. For example, if you specify a negative keyword that matches a search keyword, the call returns CampaignServiceNegativeKeywordMatchesKeyword. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
+string[]|An array of symbolic error codes if the add operation failed; otherwise, an empty array. For example, if one of the negative keywords matches a search keyword, the call returns CampaignServiceNegativeKeywordMatchesKeyword. For a description of these codes, see [Operation error codes](/bingads/guides/operation-error-codes).
 
 ## <a name="getresult"></a>getResult
 
-Gets the negative keywords list that you added.
+Gets the negative keywords list that was added.
 
 ### Returns
 
 |Type|Description|
 |-|-
-[NegativeKeywordList](./NegativeKeywordList.md)|The negative keywords list that you added if the operation succeeded; otherwise, null.
+[NegativeKeywordList](./NegativeKeywordList.md)|The negative keywords list that was added if the operation succeeded; otherwise, null.
 
 ## <a name="issuccessful"></a>isSuccessful
 

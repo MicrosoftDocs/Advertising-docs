@@ -19,17 +19,17 @@ Contains the methods used to get a list of substitution parameters. For informat
 
 |Method Name|Return Type|Description|
 |-|-|-
-[get](#get)|[AdParamIterator](AdParamIterator.md)|Gets an iterator that you use to iterate through the list of substitution parameters.
+[get](#get)|[AdParamIterator](AdParamIterator.md)|Gets an iterator used to iterate through the list of substitution parameters.
 
 
 
 ## <a name="get"></a>get
-Gets an [iterator](../concepts/iterators.md) that you use to iterate through the list of substitution parameters.
+Gets an [iterator](../concepts/iterators.md) used to iterate through the list of substitution parameters.
 
 ### Returns
 |Type|Description|
 |-|-
-[AdParamIterator](AdParamIterator.md)|An iterator that you use to iterate through the substitution parameters.
+[AdParamIterator](AdParamIterator.md)|An iterator used to iterate through the substitution parameters.
 
 
 ## See also

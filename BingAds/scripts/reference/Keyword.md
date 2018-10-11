@@ -24,13 +24,13 @@ Contains the methods for managing a keyword. For information about keywords, see
 [getApprovalStatus](#getapprovalstatus)|string|Gets this keyword's editorial approval status.
 [getCampaign](#getcampaign)|[Campaign](./Campaign.md)|Gets the campaign that this keyword belongs to.
 [getEntityType](#getentitytype)|string|Gets this entity's type.
-[getFirstPageCpc](#getfirstpagecpc)|double|Gets the estimated bid you'd need to specify to end up on the first page of the search results.
+[getFirstPageCpc](#getfirstpagecpc)|double|Gets the estimated bid needed to be on the first page of the search results.
 [getId](#getid)|string|Gets the ID that uniquely identifies this keyword.
 [getMatchType](#getmatchtype)|string|Gets this keyword's match type.
 [getQualityScore](#getqualityscore)|integer|Gets this keyword's quality score.
 [getStats](#getstats)|[Stats](./Stats.md)|Gets this keyword's performance data.
 [getText](#gettext)|string|Gets the keyword's text.
-[getTopOfPageCpc](#gettopofpagecpc)|double|Gets the estimated bid you'd need to specify to end up at the top of the search results.
+[getTopOfPageCpc](#gettopofpagecpc)|double|Gets the estimated bid needed to be at the top of the search results.
 [isEnabled](#isenabled)|Boolean|Gets a Boolean value that indicates whether this keyword is enabled.
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this keyword is paused.
 [pause](#pause)|void|Pauses this keyword.
@@ -123,12 +123,12 @@ string|The ID that uniquely identifies this keyword.
 
 
 ## <a name="getfirstpagecpc"></a>getFirstPageCpc
-Gets the estimated bid you'd need to specify to end up on the first page of the search results.
+Gets the estimated bid needed for the ad to show up on the sidebar.
 
 ### Returns
 |Type|Description|
 |-|-
-double|The estimated bid you'd need to specify to end up on the first page of the search results.
+double|The estimated bid needed for the ad to show up on the sidebar.
 
 
 ## <a name="getmatchtype"></a>getMatchType
@@ -174,12 +174,12 @@ string|The keyword's text.
 
 
 ## <a name="gettopofpagecpc"></a>getTopOfPageCpc
-Gets the estimated bid you'd need to specify to end up at the top of the search results.
+Gets the estimated bid needed for the ad to show up above the organic search results.
 
 ### Returns
 |Type|Description|
 |-|-
-double|The estimated bid you'd need to specify to end up at the top of the search results.
+double|The estimated bid needed for the ad to show up above the organic search results.
 
 
 ## <a name="isenabled"></a>isEnabled

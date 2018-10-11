@@ -34,7 +34,7 @@ Example usage:
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[build](#build)|[AdOperation](./AdOperation.md)|Creates the ad and returns an operation object that you can use to check whether Bing successfully added the ad.
+[build](#build)|[AdOperation](./AdOperation.md)|Creates the ad and returns an operation object used to check whether Bing successfully added the ad.
 [withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's custom parameters.
 [withDescription(string description)](#withdescription-string-description-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's copy.
 [withFinalUrl(string finalUrl)](#withfinalurl-string-finalurl-)|[ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Sets the ad's landing page URL.
@@ -47,14 +47,14 @@ Example usage:
 
 
 ## <a name="build"></a>build
-Creates the ad and returns an operation object that you can use to check whether Bing successfully added the ad.
+Creates the ad and returns an operation object used to check whether Bing successfully added the ad.
 
-For limits on the number of ads you can add to ad group, see [Entity hierarch limits](/bingads/guides/entity-hierarchy-limits#ads).
+For limits on the number of ads you can add to an ad group, see [Entity hierarch limits](/bingads/guides/entity-hierarchy-limits#ads).
 
 ### Returns
 |Type|Description|
 |-|-
-[AdOperation](./AdOperation.md)|An operation object that you use to check whether Bing successfully added the ad.
+[AdOperation](./AdOperation.md)|An operation object used to check whether Bing successfully added the ad.
 
 
 ## <a name="withcustomparameters-object-customparameters-"></a>withCustomParameters(Object customParameters)
@@ -107,7 +107,7 @@ Sets the first part of the ad's title.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-headlinePart1|string|The first part of the ad's title. When Bing generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". You may not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/bingads/campaign-management-service/expandedtextad#titlepart1). 
+headlinePart1|string|The first part of the ad's title. When Bing generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". Do not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/bingads/campaign-management-service/expandedtextad#titlepart1). 
 
 ### Returns
 |Type|Description|
@@ -121,7 +121,7 @@ Sets the second part of the ad's title.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-headlinePart2|string|The second part of the ad's title. When Bing generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". You may not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/bingads/campaign-management-service/expandedtextad#titlepart1). 
+headlinePart2|string|The second part of the ad's title. When Bing generates the ad's title using part 1 and part 2 of the title, it concatenates the parts using " - ". Do not specify the dash in either parts of the title. Each part of the title must contain at least one word. For information about additional title limits and including dynamic text strings in the title, see [Bing Ads API](/bingads/campaign-management-service/expandedtextad#titlepart1). 
 
 ### Returns
 |Type|Description|
@@ -132,7 +132,7 @@ headlinePart2|string|The second part of the ad's title. When Bing generates the 
 ## <a name="withmobilefinalurl-string-mobilefinalurl-"></a>withMobileFinalUrl(string mobileFinalUrl)
 Sets the ad's final URL for mobile devices. 
 
-The final URL identifies the webpage that the user is taken to when they click your ad. To specify a final URL for mobile devices, you must first specify a final URL for non-mobile devices (see `withFinalUrl()`).
+The final URL identifies the webpage that the user is taken to when they click the ad. To specify a final URL for mobile devices, first specify a final URL for non-mobile devices (see `withFinalUrl()`).
 
 For more information, see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
@@ -154,7 +154,7 @@ Sets the first optional path to append to the ad's display URL.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-mobileFinalUrl|string|The first optional path to append to the ad's display URL. Bing uses the domain specified in `withFinalUrl` as your display URL. If your final URL's domain is *contoso.com* and your path is *shoes*, the ad's display URL is *contoso.com/shoes*. For usage and limits, see [Path1](/bingads/campaign-management-service/expandedtextad#path1).
+mobileFinalUrl|string|The first optional path to append to the ad's display URL. Bing uses the domain specified in `withFinalUrl` as the display URL. If the final URL's domain is *contoso.com* and the path is *shoes*, the ad's display URL is *contoso.com/shoes*. For usage and limits, see [Path1](/bingads/campaign-management-service/expandedtextad#path1).
 
 ### Returns
 |Type|Description|
@@ -168,7 +168,7 @@ Sets the second optional path to append to the ad's display URL.
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-mobileFinalUrl|string|The second optional path to append to the ad's display URL. To specify the second path, you must first specify the first path (see `withPath1`). Bing uses the domain specified in `withFinalUrl` as your display URL. If your final URL's domain is *contoso.com*, your first path is *shoes*, and your second path is *ladies*, the ad's display URL is *contoso.com/shoes/ladies*. For usage and limits, see [Path2](/bingads/campaign-management-service/expandedtextad#path2).
+mobileFinalUrl|string|The second optional path to append to the ad's display URL. To specify the second path, first specify the first path (see `withPath1`). Bing uses the domain specified in `withFinalUrl` as the display URL. If the final URL's domain is *contoso.com*, the first path is *shoes*, and the second path is *ladies*, the ad's display URL is *contoso.com/shoes/ladies*. For usage and limits, see [Path2](/bingads/campaign-management-service/expandedtextad#path2).
 
 ### Returns
 |Type|Description|

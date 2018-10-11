@@ -1,6 +1,6 @@
 ---
 title: "BingAdsApp object"
-description: "The top-level object that you use to navigate all entities in a single account."
+description: "The top-level object used to navigate all entities in a single account."
 author: "brapel"
 manager: ehansen
 
@@ -24,7 +24,7 @@ This is the top-level object used to access and manage a single account.
 [currentAccount](#currentaccount)|[Account](./Account.md)|Gets the account that the script is currently processing.
 [keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a selector used to filter the list of keywords in this account.
 [negativeKeywordLists](#negativekeywordlists)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets a selector used to filter the list of negative keyword lists in this account.
-[newNegativeKeywordListBuilder](#newnegativekeywordlistbuilder)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Gets a builder that you use to add a negative keyword list to this account.
+[newNegativeKeywordListBuilder](#newnegativekeywordlistbuilder)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Gets a builder used to add a negative keyword list to this account.
 
 <!--
 [getExecutionInfo](#getexecutioninfo)|[ExecutionInfo](./ExecutionInfo)|Returns information about the environment in which the script is currently executing.
@@ -82,13 +82,13 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns
 Gets the account that the script is currently processing.
 
 > [!NOTE]
-> To use this method in a multi-account scenario, you must first select an account to manage. If you call this method before selecting an account, the call returns null.
+> To use this method in a multi-account scenario, first select an account to manage. If you call this method before selecting an account, the call returns null.
 
 ### Returns
 
 |Type|Description|
 |-|-
-[Account](./Account.md)|The account that the script is currently processing. To see how you might use this in a multi-account scenario, see the [select](AccountsApp.md#select-bingadsaccount-account-) method of [AccountsApp](AccountsApp.md).
+[Account](./Account.md)|The account that the script is currently processing. To see how to use this in a multi-account scenario, see the [select](AccountsApp.md#select-bingadsaccount-account-) method of [AccountsApp](AccountsApp.md).
 
 
 <!--
@@ -126,13 +126,13 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of negative 
 
 ## <a name="newnegativekeywordlistbuilder"></a>newNegativeKeywordListBuilder
 
-Gets a [builder](../concepts/builders.md) that you use to add a negative keyword list to this account. 
+Gets a [builder](../concepts/builders.md) used to add a negative keyword list to this account. 
 
 ### Returns
 
 |Type|Description|
 |-|-
-[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|A builder that you use to add a negative keyword list to the current account.
+[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|A builder used to add a negative keyword list to the current account.
 
 
 ## See also

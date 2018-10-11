@@ -29,19 +29,21 @@ Example usage:
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[get](#get)|[NegativeKeywordListIterator](./NegativeKeywordListIterator.md)|Gets an iterator that you use to iterate through the list of negative keywords lists.
+[get](#get)|[NegativeKeywordListIterator](./NegativeKeywordListIterator.md)|Gets an iterator used to iterate through the list of negative keywords lists.
 [orderBy(string orderBy)](#orderby-string-orderby-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Applies the specified ordering to the selected negative keywords lists.
 [withCondition(string condition)](#withcondition-string-condition-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Applies filter criteria to the negative keywords lists.
 [withIds(string[] ids)](#withids-string-ids-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets negative keywords lists with the specified IDs.
 [withLimit(int limit)](#withlimit-int-limit-)|[NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Gets the top *n* negative keywords lists that match the selection criteria.
 
+
 ## <a name="get"></a>get
-Gets an [iterator](../concepts/iterators.md) that you use to iterate through the list of negative keywords lists.
+Gets an [iterator](../concepts/iterators.md) uses to iterate through the list of negative keywords lists.
 
 ### Returns
 |Type|Description|
 |-|-
-[NegativeKeywordListIterator](./NegativeKeywordListIterator.md)|An iterator that you use to iterate through the negative keywords lists.
+[NegativeKeywordListIterator](./NegativeKeywordListIterator.md)|An iterator used to iterate through the negative keywords lists.
+
 
 ## <a name="orderby-string-orderby-"></a>orderBy(string orderBy)
 Applies the specified ordering to the selected negative keywords lists. 
@@ -67,6 +69,7 @@ orderBy|string|The ordering to apply.
 |-|-
 [NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Selector with ordering applied.
 
+
 ## <a name="withcondition-string-condition-"></a>withCondition(string condition)
 Applies filter criteria to the negative keywords lists. 
 
@@ -87,7 +90,6 @@ Name|string|The negative keyword list's name.<br /><br />`withCondition("Name = 
 ReferenceCount|int|The number of campaigns the list is associated with.<br /><br />`withCondition("ReferenceCount > 10")`
 SharedSetId|double|The ID of a negative keyword list. If you simply use this for equality comparison, consider using the `withIds` method instead.<br /><br />`withCondition("SharedSetId = 123456789")`
 
-
 ### Arguments
 |Name|Type|Description|
 |-|-|-
@@ -97,6 +99,7 @@ condition|string|The condition to add to the selector.
 |Type|Description|
 |-|-
 [NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Selector with the condition applied.
+
 
 ## <a name="withids-string-ids-"></a>withIds(string[] ids)
 Gets negative keywords lists with the specified IDs.
@@ -118,6 +121,7 @@ ids|string[]|An array of negative keyword lists IDs. For limits, see [Script exe
 |Type|Description|
 |-|-
 [NegativeKeywordListSelector](./NegativeKeywordListSelector.md)|Selector with the IDs applied.
+
 
 ## <a name="withlimit-int-limit-"></a>withLimit(int limit)
 Gets the top *n* negative keywords lists that match the selection criteria.
