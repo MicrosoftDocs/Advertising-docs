@@ -32,16 +32,16 @@ Example usage:
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[build](#build)|[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|Creates the negative keyword list and returns an operation object that you use to check whether the list was successfully added.
+[build](#build)|[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|Creates the negative keyword list and returns an operation object used to check whether the list was successfully added.
 [withName(string name)](#withname-string-name-)|[NegativeKeywordListBuilder](./NegativeKeywordListBuilder.md)|Sets this negative keyword list's name.
 
 ## <a name="build"></a>build
-Creates the negative keyword list and returns an operation object that you use to check whether the list was successfully added.
+Creates the negative keyword list and returns an operation object used to check whether the list was successfully added.
 
 ### Returns
 |Type|Description|
 |-|-
-[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|An operation object that you use to check whether the list was successfully added.
+[NegativeKeywordListOperation](./NegativeKeywordListOperation.md)|An operation object used to check whether the list was successfully added.
 
 ## <a name="withname-string-name-"></a>withName(string name)
 Sets this negative keyword list's name.

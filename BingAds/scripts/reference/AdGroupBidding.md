@@ -33,7 +33,7 @@ Sets the ad group's CPC bid amount.
 
 Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is MANUAL_CPC. Bing uses this bid if a lower-level entity such as keyword does not override it.
 
-If you specify a bid value that's not valid, the call silently fails. To confirm whether the bid was updated, you must get the object again and test whether the property's value equals the new value. For information, see [Handling errors and warnings](../concepts/errors-and-warnings.md).
+If the bid value is not valid, the call silently fails. To confirm whether the bid was updated, get the object again and test whether the property's value equals the new value. For information, see [Handling errors and warnings](../concepts/errors-and-warnings.md).
 
 ### Arguments
 |Name|Type|Description|

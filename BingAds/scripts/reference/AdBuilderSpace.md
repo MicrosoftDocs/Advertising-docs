@@ -28,10 +28,10 @@ Example usage:
 
 
 ## <a name="expandedTextAdBuilder"></a>expandedTextAdBuilder
-Gets a [builder](../concepts/builders.md) that you use to add an expaned text ad to this ad group.
+Gets a [builder](../concepts/builders.md) used to add an expaned text ad to this ad group.
 
 ### Returns
 
 |Type|Description|
 |-|-
-[ExpandedTextAdBuilder](ExpandedTextAdBuilder.md)|The builder that you use to add expanded text ads to this ad group.
+[ExpandedTextAdBuilder](ExpandedTextAdBuilder.md)|The builder used to add expanded text ads to this ad group.

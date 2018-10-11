@@ -34,7 +34,7 @@ Example usage:
 |-|-|-
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-)|[AdGroupSelector](./AdGroupSelector.md)|Applies the start and end dates for selecting performance metrics.
 [forDateRange(string dateRange)](#fordaterange-string-daterange-)|[AdGroupSelector](./AdGroupSelector.md)|Applies the predefined date range for selecting performance metrics.
-[get](#get)|[AdGroupIterator](./AdGroupIterator.md)|Gets an iterator that you use to iterate through the list of ad groups.
+[get](#get)|[AdGroupIterator](./AdGroupIterator.md)|Gets an iterator used to iterate through the list of ad groups.
 [orderBy(string orderBy)](#orderby-string-orderby-)|[AdGroupSelector](./AdGroupSelector.md)|Applies the specified ordering to the selected ad groups.
 [withCondition(string condition)](#withcondition-string-condition-)|[AdGroupSelector](./AdGroupSelector.md)|Applies filter criteria to the ad groups.
 [withIds(string[] ids)](#withids-string-ids-)|[AdGroupSelector](./AdGroupSelector.md)|Gets ad groups with the specified IDs.
@@ -74,12 +74,12 @@ dateRange|String|The predefined date range string that specifies the performance
 [AdGroupSelector](./AdGroupSelector.md)|Selector with date range applied.
 
 ## <a name="get"></a>get
-Gets an [iterator](../concepts/iterators.md) that you use to iterate through the list of ad groups.
+Gets an [iterator](../concepts/iterators.md) used to iterate through the list of ad groups.
 
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupIterator](./AdGroupIterator.md)|An iterator that you use to iterate through the selected ad groups.
+[AdGroupIterator](./AdGroupIterator.md)|An iterator used to iterate through the selected ad groups.
 
 ## <a name="orderby-string-orderby-"></a>orderBy(String orderBy)
 Applies the specified ordering to the selected ad groups. 
@@ -112,7 +112,7 @@ Applies filter criteria to the ad groups.
 
 Specify the *condition* parameter in the form, "columnName operator value" where: 
 
-- *columnName* is one of the [supported Columns](#supported-ad-group-columns). If you set *columName* to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-).
+- *columnName* is one of the [supported Columns](#supported-ad-group-columns). If *columName* is set to a performance metric column name, you must specify a date range using [forDateRange(String dateRange)](#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-).
 - *operator* is one of the supported [operators](#operators).
 
 [!INCLUDE[operators](../includes/operators.md)]

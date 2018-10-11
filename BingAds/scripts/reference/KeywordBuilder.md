@@ -33,7 +33,7 @@ Example usage:
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[build](#build)|[KeywordOperation](./KeywordOperation.md)|Creates the keyword and returns an operation object that you use to check whether the keyword was successfully added.
+[build](#build)|[KeywordOperation](./KeywordOperation.md)|Creates the keyword and returns an operation object used to check whether the keyword was successfully added.
 [withCpc(double cpc)](#withcpc-double-cpc-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's maximum CPC bid.
 [withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's custom parameters.
 [withFinalUrl(string finalUrl)](#withfinalurl-string-finalurl-)|[KeywordBuilder](./KeywordBuilder.md)|Sets the keyword's final URL.
@@ -43,12 +43,12 @@ Example usage:
 
 
 ## <a name="build"></a>build
-Creates the keyword and returns an operation object that you use to check whether the keyword was successfully added.
+Creates the keyword and returns an operation object used to check whether the keyword was successfully added.
 
 ### Returns
 |Type|Description|
 |-|-
-[KeywordOperation](./KeywordOperation.md)|An operation object that you use to check whether the keyword was successfully added.
+[KeywordOperation](./KeywordOperation.md)|An operation object used to check whether the keyword was successfully added.
 
 ## <a name="withcpc-double-cpc-"></a>withCpc(double cpc)
 Sets the keyword's maximum CPC bid.
@@ -103,16 +103,14 @@ finalUrl|string|The final URL that identifies the webpage the user is taken to w
 [KeywordBuilder](./KeywordBuilder.md)|Keyword builder with the final URL applied.
 
 
-
 ## <a name="withmobilefinalurl-string-mobilefinalurl-"></a>withMobileFinalUrl(string mobileFinalUrl)
 Sets the keyword's final URL for mobile devices.
 
-The final URL identifies the webpage that the user is taken to when they click your ad. If not specified, the entity inherits the final URL from its parent entity. For example, the keyword entity inherits the ad's final URL. Specify the keyword's final URL if you want to override the ad's final URL.
+The final URL identifies the webpage that the user is taken to when they click the ad. If not specified, the entity inherits the final URL from its parent entity. For example, the keyword entity inherits the ad's final URL. Specify the keyword's final URL if you want to override the ad's final URL.
 
 For more information, see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
 
-To specify a final URL for mobile devices, you must first specify a final URL for non-mobile devices (see `withFinalUrl()`).
-
+To specify a final URL for mobile devices, first specify a final URL for non-mobile devices (see `withFinalUrl()`).
 
 ### Arguments
 |Name|Type|Description|

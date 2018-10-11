@@ -32,7 +32,7 @@ Contains the methods for managing a budget. For more information, see [Budget](/
 
 Gets a [selector](../concepts/selectors.md) used to filter the list of campaigns that share this budget. 
 
-You can call this method only from a budget object that you get from [BudgetSelector](BudgetSelector.md); you cannot call it if the source of the budget is the campaign's [getBudget](Campaign.md#getbudget) method.
+Call this method only from a budget object retrieved using [BudgetSelector](BudgetSelector.md); you may not call it if you retrieved the budget using the campaign's [getBudget](Campaign.md#getbudget) method.
 
 ### Returns
 
@@ -109,7 +109,7 @@ Performance data is available for shared budgets only. To call this method, you 
 ## <a name="isexplicitlyshared"></a>isExplicitlyShared
 Gets a Boolean value that indicates whether this budget is a shared budget.
 
-With shared budgets, you identify the campaigns within the same account that you want to share the budget. Sharing a budget can help you fully utilize the budget. For example, if campaign A had its own $10 budget and campaign B had its own $10 budget, it's possible that campaign A may spend only $8 of its budget. But because campaign B is performing well, it spent all of its budget and could have spent more. If the campaigns shared a budget, campaign B would automatically use the $2 that campaign A didn't use, increasing the chance that more traffic is sent your way.
+The campaigns and the budget they share must be in the same account. Sharing a budget can help fully utilize the budget. For example, if campaign A had its own $10 budget and campaign B had its own $10 budget, it's possible that campaign A may spend only $8 of its budget. But because campaign B is performing well, it spent all of its budget and could have spent more. If the campaigns shared a budget, campaign B would automatically use the $2 that campaign A didn't use, increasing the chance that more traffic is sent your way.
 
 ### Returns:
 |Type|Description|

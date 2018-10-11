@@ -34,7 +34,7 @@ Example usage:
 |-|-|-
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-)|[CampaignSelector](CampaignSelector.md)|Applies the start and end dates for selecting performance metrics.
 [forDateRange(string dateRange)](#fordaterange-string-daterange-)|[CampaignSelector](./CampaignSelector.md)|Applies the predefined date range for selecting performance metrics.
-[get](#get)|[CampaignIterator](./CampaignIterator.md)|Gets an iterator that you use to iterate through the list of campaigns.
+[get](#get)|[CampaignIterator](./CampaignIterator.md)|Gets an iterator used to iterate through the list of campaigns.
 [orderBy(string orderBy)](#orderby-string-orderby-)|[CampaignSelector](./CampaignSelector.md)|Applies the specified ordering to the selected campaigns.
 [withCondition(string condition)](#withcondition-string-condition-)|[CampaignSelector](./CampaignSelector.md)|Applies the filter to the list of campaigns.
 [withIds(string[] ids)](#withids-string-ids-)|[CampaignSelector](./CampaignSelector.md)|Gets campaigns with the specified IDs.
@@ -74,12 +74,12 @@ dateRange|String|The predefined date range string that specifies the performance
 [CampaignSelector](./CampaignSelector.md)|Selector with date range applied.
 
 ## <a name="get"></a>get
-Gets an  [iterator](../concepts/iterators.md) that you use to iterate through the list of campaigns.
+Gets an  [iterator](../concepts/iterators.md) used to iterate through the list of campaigns.
 
 ### Returns
 |Type|Description|
 |-|-
-[CampaignIterator](./CampaignIterator.md)|An iterator that you use to iterate through the selected campaigns.
+[CampaignIterator](./CampaignIterator.md)|An iterator used to iterate through the selected campaigns.
 
 ## <a name="orderby-string-orderby-"></a>orderBy(string orderBy)
 Applies the specified ordering to the selected campaigns. 
@@ -112,7 +112,7 @@ Applies the filter to the list of campaigns campaigns.
 
 Specify the *condition* parameter in the form, "columnName operator value" where: 
 
-- *columnName* is one of the [supported columns](#supported-campaign-columns). If you set *columName* to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-).
+- *columnName* is one of the [supported columns](#supported-campaign-columns). If *columName* is set to a performance metric column name, you must specify a date range using [forDateRange(String dateRange)](#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-).
 - *operator* is one of the supported [operators](#operators).
 
 [!INCLUDE[operators](../includes/operators.md)]

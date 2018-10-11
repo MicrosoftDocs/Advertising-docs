@@ -43,7 +43,7 @@ Example usage:
 
 |Method Name|Return Type|Description|
 |-|-|-
-[build](#build)|[AdGroupOperation](./AdGroupOperation.md)|Creates the ad group and returns an operation object that you use to check whether the ad group was successfully added.
+[build](#build)|[AdGroupOperation](./AdGroupOperation.md)|Creates the ad group and returns an operation object used to check whether the ad group was successfully added.
 [withBiddingStrategy(string biddingStrategy)](#withbiddingstrategy-string-biddingstrategy-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's bidding strategy.
 [withCpc(double cpc)](#withcpc-double-cpc-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's maximum CPC bid.
 [withCustomParameters(Object customParameters)](#withcustomparameters-object-customparameters-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's custom parameters.
@@ -57,12 +57,12 @@ Example usage:
 [withTrackingTemplate(string trackingTemplate)](#withtrackingtemplate-string-trackingtemplate-)|[AdGroupBuilder](./AdGroupBuilder.md)|Sets the ad group's tracking template.
 
 ## <a name="build"></a>build
-Creates the ad group and returns an operation object that you use to check whether the ad group was successfully added.
+Creates the ad group and returns an operation object used to check whether the ad group was successfully added.
 
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupOperation](./AdGroupOperation.md)|An operation object that you use to check whether the ad group was successfully added.
+[AdGroupOperation](./AdGroupOperation.md)|An operation object used to check whether the ad group was successfully added.
 
 ## <a name="withbiddingstrategy-string-biddingstrategy-"></a>withBiddingStrategy(string biddingStrategy)
 Sets the ad group's bidding strategy. 
@@ -110,7 +110,7 @@ customParameters|Object|A map of up to three custom parameters to apply to the a
 
 
 ## <a name="withenddate-string-enddate-"></a>withEndDate(string endDate)
-Sets the date when you want ads in the ad group to stop serving. Call this method only if you want ads in the group to stop serving on a specific date.
+Sets the date when ads in the ad group stop serving. Call this method only if you want ads in the group to stop serving on a specific date.
 
 ### Arguments
 |Name|Type|Description|
@@ -123,7 +123,7 @@ endDate|string|The date to stop serving ads. Specify the date in the form, YYYYM
 [AdGroupBuilder](./AdGroupBuilder.md)|Ad group builder with the end date applied.
 
 ## <a name="withenddate-object-enddate-"></a>withEndDate(Object endDate)
-Sets the date when you want ads in the ad group to stop serving. Call this method only if you want ads in the group to stop serving on a specific date.
+Sets the date when ads in the ad group stop serving. Call this method only if you want ads in the group to stop serving on a specific date.
 
 ### Arguments
 |Name|Type|Description|
@@ -139,7 +139,7 @@ endDate|Object|The date to stop serving ads. Specify the date using an object wi
 ## <a name="withlanguage-string-language-"></a>withLanguage(string language)
 Sets the language used by ads in this ad group. 
 
-By default, the ad group inherits the language from its parent campaign. Specify a language at the ad group level if you want to override the language specified at the campaign level or if the campaign doesn't specify a language (language must be specified at the campaign and/or ad group level). 
+By default, the ad group inherits the language from its parent campaign. Specify a language at the ad group level to override the language specified at the campaign level or if the campaign doesn't specify a language (language must be specified at the campaign and/or ad group level). 
 
 
 ### Arguments
@@ -168,7 +168,7 @@ name|string|The ad group's name. The name is required. The name may contain a ma
 
 
 ## <a name="withstartdate-string-startdate-"></a>withStartDate(string startDate)
-Sets the date when you want ads in the ad group to start serving. Call this method only if you want ads in the group to start serving on a specific date; otherwise, ads start serving immediately.
+Sets the date when ads in the ad group start serving. Call this method only if you want ads in the group to start serving on a specific date; otherwise, ads start serving immediately.
 
 ### Arguments
 |Name|Type|Description|
@@ -181,7 +181,7 @@ endDate|string|The date to start serving ads. Specify the date in the form, YYYY
 [AdGroupBuilder](./AdGroupBuilder.md)|Ad group builder with the start date applied.
 
 ## <a name="withstartdate-object-startdate-"></a>withStartDate(Object startDate)
-Sets the date when you want ads in the ad group to start serving. Call this method only if you want ads in the group to start serving on a specific date; otherwise, ads start serving immediately.
+Sets the date when ads in the ad group start serving. Call this method only if you want ads in the group to start serving on a specific date; otherwise, ads start serving immediately.
 
 ### Arguments
 |Name|Type|Description|

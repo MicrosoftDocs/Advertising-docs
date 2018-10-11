@@ -15,8 +15,8 @@ Contains the methods for iterating through a list of managed accounts. For infor
 
 Example usage:
 ```javascript
-    // Gets the iterator that iterates all managed
-    // accounts you have access to.
+    // Gets the iterator that iterates all accounts
+    // the user has access to.
     var accounts = AccountsApp.accounts().get();
 
     // Loops through the list of accounts.

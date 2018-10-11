@@ -20,7 +20,7 @@ Contains the methods for filtering and sorting a list of ads. For information ab
 |-|-|-
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-)|[AdSelector](./AdSelector.md)|Applies the start and end dates for selecting performance metrics.
 [forDateRange(string dateRange)](#fordaterange-string-daterange-)|[AdSelector](./AdSelector.md)|Applies the predefined date range for selecting performance metrics.
-[get](#get)|[AdIterator](./AdIterator.md)|Gets an iterator that you use to iterate through the list of ads.
+[get](#get)|[AdIterator](./AdIterator.md)|Gets an iterator used to iterate through the list of ads.
 [orderBy(string orderBy)](#orderby-string-orderby-)|[AdSelector](./AdSelector.md)|Applies the specified ordering to the selected ads.
 [withCondition(string condition)](#withcondition-string-condition-)|[AdSelector](./AdSelector.md)|Applies filter criteria to the ads.
 [withIds(string[] ids)](#withids-string-ids-)|[AdSelector](./AdSelector.md)|Gets ads with the specified IDs.
@@ -60,12 +60,12 @@ dateRange|String|The predefined date range string that specifies the performance
 [AdSelector](./AdSelector.md)|Selector with date range applied.
 
 ## <a name="get"></a>get
-Gets an [iterator](../concepts/iterators.md) that you use to iterate through the list of ads.
+Gets an [iterator](../concepts/iterators.md) used to iterate through the list of ads.
 
 ### Returns
 |Type|Description|
 |-|-
-[AdIterator](./AdIterator.md)|An iterator that you use to iterate through the selected ads.
+[AdIterator](./AdIterator.md)|An iterator used to iterate through the selected ads.
 
 ## <a name="orderby-string-orderby-"></a>orderBy(String orderBy)
 Applies the specified ordering to the selected ads. 
@@ -98,7 +98,7 @@ Applies filter criteria to the ads.
 
 Specify the *condition* parameter in the form, "columnName operator value" where: 
 
-- *columnName* is one of the [supported Columns](#supported-ad-columns). If you set *columName* to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-).
+- *columnName* is one of the [supported Columns](#supported-ad-columns). If *columName* is set to a performance metric column name, you must specify a date range using [forDateRange(String dateRange)](#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-).
 - *operator* is one of the supported [operators](#operators).
 
 [!INCLUDE[operators](../includes/operators.md)]
@@ -156,11 +156,10 @@ var selector = BingAdsApp.ads()
     .withIds([33333, 44444, 55555]);
 ```
 
-
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-ids|string[]|An array of ad IDs. The maximum number of IDs that you may specify is 1,000. If you specify more than 1,000 IDs, calling the `get()` method fails with a runtime error.
+ids|string[]|An array of ad IDs. For limits, see [Script execution limits](../concepts/execution-limits.md).
 
 ### Returns
 |Type|Description|

@@ -177,6 +177,8 @@
           href: ./reference/HTTPResponse.md
         - name: UrlFetchApp
           href: ./reference/UrlFetchApp.md
+        - name: UrlFetchParams
+          href: ./reference/UrlFetchParams.md
 #    - name: Spreadsheets
 #      href: ./reference/SpreadsheetApp
 #      items:

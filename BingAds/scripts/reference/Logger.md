@@ -21,7 +21,7 @@ Contains the methods for writing text messages to the console log.
 ## <a name="log-string-message-"></a>log(string message)
 Writes a text string to the log. 
 
-If you run the script in live mode, the log is found on the main Scripts page. If you run the script in preview mode, the log is found in the preview pane.
+If the script is run in live mode, the log is found on the main Scripts page. If the script is run in preview mode, the log is found in the preview pane.
 
 ### Arguments
 |Name|Type|Description|
