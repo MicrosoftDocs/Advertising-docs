@@ -13,14 +13,14 @@ ms.topic: "article"
 
 Contains properties that define a date.
 
-Do not use this object to specify a date when calling one of the `forDateRange()` methods such as [AdGroupSelector.forDateRange()](AdGroupSelector.md#fordaterange-object-datefrom-object-dateto-). Instead, you use this object to receive a date from methods such as [AdGroup.getStartDate()](AdGroup.md#getstartdate).
+Do not use this object to specify a date when calling one of the `forDateRange()` methods such as [AdGroupSelector.forDateRange()](AdGroupSelector.md#fordaterange-object-datefrom-object-dateto-). Instead, use this object to receive a date from methods such as [AdGroup.getStartDate()](AdGroup.md#getstartdate).
 
 
 ## Properties
 
-|Property Name|Description|
+|Property|Type|Description|
 |-|-
-|day|The day of the month. For example, 30.
-|month|The numeric calendar month, where 1 is January and 12 is December.
-|year|The four-digit calendar year. For example, 2018.
+|day|integer|The day of the month. For example, 30.
+|month|integer|The numeric calendar month, where 1 is January and 12 is December.
+|year|integer|The four-digit calendar year. For example, 2018.
 

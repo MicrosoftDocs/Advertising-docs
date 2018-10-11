@@ -31,7 +31,7 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 [isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this ad group is removed.
 [keywords](#keywrods)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of keywords in this ad group.
 [newAd](#newad)|[AdBuilderSpace](./AdBuilderSpace.md)|Gets an object that contains methods for getting ad builders.
-[newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Gets a builder that you use to add a keyword to this ad group.
+[newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Gets a builder used to add a keyword to this ad group.
 [pause](#pause)|void|Pauses this ad group.
 [setEndDate(string endDate)](#setenddate-string-enddate-)|void|Sets the date when ads in this ad group stop serving.
 [setEndDate(Object endDate)](#setenddate-object-enddate-)|void|Sets the date when ads in this ad group stop serving.
@@ -178,16 +178,16 @@ Gets an object that contains methods for getting ad builders.
 
 |Type|Description|
 |-|-
-[AdBuilderSpace](./AdBuilderSpace.md)|An object that contains methods for getting ad builders. For example, if you want to build an expanded text ad, you'd call the object's `expandedTextAdBuilder` method to get the [ExpandedTextAdBuilder](ExpandedTextAdBuilder.md) object.
+[AdBuilderSpace](./AdBuilderSpace.md)|An object that contains methods for getting ad builders. For example, to build an expanded text ad, call the object's `expandedTextAdBuilder` method to get the [ExpandedTextAdBuilder](ExpandedTextAdBuilder.md) object.
 
 
 ## <a name="newkeywordbuilder"></a>newKeywordBuilder
-Gets a [builder](../concepts/builders.md) that you use to add a keyword to this ad group.
+Gets a [builder](../concepts/builders.md) used to add a keyword to this ad group.
 
 ### Returns
 |Type|Description|
 |-|-
-[KeywordBuilder](KeywordBuilder.md)|The builder that you use to add a keyword to this ad group.
+[KeywordBuilder](KeywordBuilder.md)|The builder used to add a keyword to this ad group.
 
 
 ## <a name="pause"></a>pause
@@ -200,12 +200,12 @@ void|Returns nothing.
 
 
 ## <a name="setenddate-string-enddate-"></a>setEndDate(string endDate)
-Sets the date when you want ads in this ad group to stop serving. Set an end date only if you want ads in the group to stop serving on a specific date.
+Sets the date when ads in this ad group stop serving. Set an end date only if you want ads in the group to stop serving on a specific date.
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|string|The date when you want ads in the ad group to stop serving. Specify the date in the form, YYYYMMDD.
+endDate|string|The date when ads in the ad group stop serving. Specify the date in the form, YYYYMMDD.
 
 ### Returns
 |Type|Description|
@@ -214,19 +214,17 @@ void|Returns nothing.
 
 
 ## <a name="setenddate-object-enddate-"></a>setEndDate(Object endDate)
-Sets the date when you want ads in this ad group to stop serving. Set an end date only if you want ads in the group to stop serving on a specific date.
+Sets the date when ads in this ad group stop serving. Set an end date only if you want ads in the group to stop serving on a specific date.
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|Object|The date when you want ads in this ad group to stop serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul>For example: `var date = {year: 2018, month: 5, day: 13};`<br /><br />The month is one-based where 1 is January and 12 is December.
+endDate|Object|The date when ads in this ad group stop serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul>For example: `var date = {year: 2018, month: 5, day: 13};`<br /><br />The month is one-based where 1 is January and 12 is December.
 
 ### Returns
 |Type|Description|
 |-|-
 void|Returns nothing.
-
-
 
 
 ## <a name="setname-string-name"></a>setName(string name)
@@ -243,14 +241,13 @@ name|string|The name of this ad group. The name may contain a maximum of 256 cha
 void|Returns nothing.
 
 
-
 ## <a name="setstartdate-string-startdate-"></a>setStartDate(string startDate)
-Sets the date when you want ads in this ad group to start serving. Set a start date only if you want ads in the group to start serving on a specific date; otherwise, they start serving immediately.
+Sets the date when ads in this ad group start serving. Set a start date only if you want ads in the group to start serving on a specific date; otherwise, they start serving immediately.
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|string|The date when you want ads in this ad group to start serving. Specify the date in the form, YYYYMMDD.
+endDate|string|The date when ads in this ad group start serving. Specify the date in the form, YYYYMMDD.
 
 ### Returns
 |Type|Description|
@@ -258,12 +255,12 @@ endDate|string|The date when you want ads in this ad group to start serving. Spe
 void|Returns nothing.
 
 ## <a name="setstartdate-object-startdate-"></a>setStartDate(Object startDate)
-Sets the date when you want ads in this ad group to start serving. Set a start date only if you want ads in the group to start serving on a specific date; otherwise, they start serving immediately.
+Sets the date when ads in this ad group start serving. Set a start date only if you want ads in the group to start serving on a specific date; otherwise, they start serving immediately.
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-endDate|Object|The date when you want ads in this ad group to start serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul>For example: `var date = {year: 2018, month: 5, day: 13};`<br /><br />The month is one-based where 1 is January and 12 is December.
+endDate|Object|The date when ads in this ad group start serving. Specify the date using an object with the following fields:<br /><ul><li>year</li><li>month</li><li>day</li></ul>For example: `var date = {year: 2018, month: 5, day: 13};`<br /><br />The month is one-based where 1 is January and 12 is December.
 
 ### Returns
 |Type|Description|

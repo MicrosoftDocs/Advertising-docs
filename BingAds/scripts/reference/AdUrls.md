@@ -34,7 +34,7 @@ Object|A map of the ad's custom parameters.<br /><br />For example, `{key1: 'val
 
 
 ## <a name="getfinalurl"></a>getFinalUrl
-Gets the ad's final URL. This is the URL of the webpage that the user is taken to when they click your ad. 
+Gets the ad's final URL. This is the URL of the webpage that the user is taken to when they click the ad. 
 
 The same override rules apply as elsewhere. For example, specifying a keyword's final URL overrides the ad's final URL.
 
@@ -45,7 +45,7 @@ string|The ad's final URL.
 
 
 ## <a name="getmobilefinalurl"></a>getMobileFinalUrl
-Gets the ad's final URL for mobile devices. This is the URL of the mobile webpage that the user is taken to when they click your ad. 
+Gets the ad's final URL for mobile devices. This is the URL of the mobile webpage that the user is taken to when they click the ad. 
 
 The same override rules apply as elsewhere. For example, specifying a keyword's mobile final URL overrides the ad's mobile final URL.
 

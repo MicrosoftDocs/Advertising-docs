@@ -1,6 +1,6 @@
 ---
 title: "HTTPResponse object"
-description: "Contains the methods for accessing the content you fetched from the web."
+description: "Contains the methods for getting the response's payload and status code."
 author: "swhite-msft"
 manager: ehansen
 

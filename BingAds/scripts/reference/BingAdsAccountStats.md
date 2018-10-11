@@ -1,6 +1,6 @@
 ---
 title: "BingAdsAccountStats object"
-description: "Contains the methods for accessing a managed account's performance data."
+description: "Contains the methods for accessing an account's performance data."
 author: "swhite-msft"
 manager: ehansen
 
@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # BingAdsAccountStats
 
-Contains the methods for accessing a managed account's performance data.
+Contains the methods for accessing an account's performance data.
 
 
 Example usage:

@@ -1,6 +1,6 @@
 ---
 title: "BingAdsAccountSelector object"
-description: "Contains the methods for filtering the list of managed accounts that you have access to."
+description: "Contains the methods for filtering the list of accounts that you have access to."
 author: "swhite-msft"
 manager: ehansen
 
@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # BingAdsAccountSelector
 
-Contains the methods for filtering and ordering the list of managed accounts that you have access to. For information about selectors, see [Selectors](../concepts/selectors.md).
+Contains the methods for filtering and ordering the list of accounts the user has access to. For information about selectors, see [Selectors](../concepts/selectors.md).
 
 Example usage:
 ```javascript
@@ -32,12 +32,12 @@ Example usage:
 [executeInParallel(string functionName, string optionalCallbackFunctionName, string optionalInput)](#executeinparallel-string-functionname-string-optionalcallbackfunctionname-string-optionalinput-)|void|Executes the function for each account that the selector returns.
 [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies the start and end dates for selecting performance metrics.
 [forDateRange(string dateRange)](#fordaterange-string-daterange-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies the predefined date range for selecting performance metrics.
-[get](#get)|[BingAdsAccountIterator](./BingAdsAccountIterator.md)|Gets an iterator that you use to iterate through the list of managed accounts.
-[orderBy(string orderBy)](#orderby-string-orderby-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies the specified ordering to the selected managed accounts.
-[withAccountNumbers(string[] accountNumbers)](#withaccountnumbers-string-accountnumbers-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Gets managed accounts with the specified account numbers.
-[withCondition(string condition)](#withcondition-string-condition-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies filter criteria to the managed accounts.
-[withIds(string[] ids)](#withids-string-ids-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Gets managed accounts with the specified IDs.
-[withLimit(int limit)](#withlimit-int-limit-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Gets the top *n* managed accounts that match the selection criteria.
+[get](#get)|[BingAdsAccountIterator](./BingAdsAccountIterator.md)|Gets an iterator used to iterate through the list of accounts.
+[orderBy(string orderBy)](#orderby-string-orderby-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies the specified ordering to the selected accounts.
+[withAccountNumbers(string[] accountNumbers)](#withaccountnumbers-string-accountnumbers-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Gets accounts with the specified account numbers.
+[withCondition(string condition)](#withcondition-string-condition-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Applies filter criteria to the accounts.
+[withIds(string[] ids)](#withids-string-ids-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Gets accounts with the specified IDs.
+[withLimit(int limit)](#withlimit-int-limit-)|[BingAdsAccountSelector](./BingAdsAccountSelector.md)|Gets the top *n* accounts that match the selection criteria.
 
 
 ## <a name="executeinparallel-string-functionname-string-optionalcallbackfunctionname-"></a>executeInParallel(string functionName, string optionalCallbackFunctionName)
@@ -45,7 +45,7 @@ Example usage:
 Executes the function for each account that the selector returns. After the function is executed for all selected accounts, Bing calls the optional callback function.
 
 > [!NOTE]
-> To use this method, the selector must return no more than 50 accounts. If the selector returns more than 50 accounts, Bing does not execute the function for any of the accounts. You can use the `withLimit` method to limit the number of accounts the selector returns.
+> To use this method, the selector must return no more than 50 accounts. If the selector returns more than 50 accounts, Bing does not execute the function for any of the accounts. To limit the number of accounts the selector returns, consider using the `withLimit` method .
 
 The *functionName* function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. If your function returns a value, you must specify a callback function to capture the return values. The following shows the callback function's signature. The returned values are passed as an array of [ExecutionResult](./ExecutionResult.md) objects.
 
@@ -63,7 +63,7 @@ function myCallback(results) {
 }
 ```
 
-Because this method does not return a [BingAdsAccountSelector](./BingAdsAccountSelector.md) object, you must make sure this method is the last selector method that you include in the chain.
+Because this method does not return a [BingAdsAccountSelector](./BingAdsAccountSelector.md) object, make sure this method is the last selector method in the call chain.
 
 ### Arguments
 |Name|Type|Description|
@@ -81,7 +81,7 @@ void|Returns nothing.
 Executes the function for each account that the selector returns. After the function executes for all selected accounts, Bing calls the optional callback function.
 
 > [!NOTE]
-> To use this method, the selector must return no more than 50 accounts. If the selector returns more than 50 accounts, Bing does not execute the function for any of the accounts. You can use the `withLimit` method to limit the number of accounts the selector returns.
+> To use this method, the selector must return no more than 50 accounts. If the selector returns more than 50 accounts, Bing does not execute the function for any of the accounts. To limit the number of accounts the selector returns, consider using the `withLimit` method.
 
 The *functionName* function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. If your function returns a value, you must specify a callback function to capture the return values. The following shows the callback function's signature. The returned values are passed as an array of [ExecutionResult](./ExecutionResult.md) objects.
 
@@ -105,7 +105,7 @@ If you pass the optional input parameter, the following shows the signature of t
 function myFunction(string optionalInput)
 ```
 
-Because this method does not return a [BingAdsAccountSelector](./BingAdsAccountSelector.md) object, you must make sure this method is the last selector method that you include in the chain.
+Because this method does not return a [BingAdsAccountSelector](./BingAdsAccountSelector.md) object, make sure this method is the last selector method in the call chain.
 
 ### Arguments
 |Name|Type|Description|
@@ -156,12 +156,12 @@ dateRange|String|The predefined date range string that specifies the performance
 
 
 ## <a name="get"></a>get
-Gets an [iterator](../concepts/iterators.md) that you use to iterate through the list of managed accounts.
+Gets an [iterator](../concepts/iterators.md) used to iterate through the list of accounts.
 
 ### Returns
 |Type|Description|
 |-|-
-[BingAdsAccount](./BingAdsAccount.md)|An iterator that you use to iterate through the selected accounts.
+[BingAdsAccount](./BingAdsAccount.md)|An iterator used to iterate through the selected accounts.
 
 
 ## <a name="orderby-string-orderby-"></a>orderBy(string orderBy)
@@ -190,7 +190,7 @@ orderBy|string|The ordering to apply.
 
 
 ## <a name="withaccountnumbers-string-accountnumbers-"></a>withAccountNumbers(string[] accountNumbers)
-Gets managed accounts with the specified account numbers.
+Gets accounts with the specified account numbers.
 
 ### Arguments
 |Name|Type|Description|
@@ -204,11 +204,11 @@ accountNumbers|string[]|An array of account numbers. For limits, see [Script exe
 
 
 ## <a name="withcondition-string-condition-"></a>withCondition(String condition)
-Applies filter criteria to the managed accounts. 
+Applies filter criteria to the accounts. 
 
 Specify the *condition* parameter in the form, "columnName operator value" where: 
 
-- *columnName* is one of the [supported columns](#supported-account-columns). If you set *columName* to a performance metric column name, you must also specify a date range using [forDateRange(String dateRange)](#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-).
+- *columnName* is one of the [supported columns](#supported-account-columns). If *columName* is set to a performance metric column name, you must specify a date range using [forDateRange(String dateRange)](#fordaterange-string-daterange-) or [forDateRange(Object dateFrom, Object dateTo)](#fordaterange-object-datefrom-object-dateto-).
 - *operator* is one of the supported [operators](#operators).
 
 [!INCLUDE[operators](../includes/operators.md)]
@@ -247,7 +247,7 @@ condition|string|The condition to add to the selector.
 
 
 ## <a name="withids-string-ids-"></a>withIds(string[] ids)
-Gets managed accounts with the specified IDs.
+Gets accounts with the specified IDs.
 
 [!INCLUDE[with-ids-chaining](../includes/with-ids-chaining.md)] For example, the following call selects only account 33333.
 
@@ -261,7 +261,7 @@ AccountsApp.accounts()
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-ids|string[]|An array of managed account IDs. For limits, see [Script execution limits](../concepts/execution-limits.md).
+ids|string[]|An array of account IDs. For limits, see [Script execution limits](../concepts/execution-limits.md).
 
 ### Returns
 |Type|Description|
@@ -270,12 +270,12 @@ ids|string[]|An array of managed account IDs. For limits, see [Script execution 
 
 
 ## <a name="withlimit-int-limit-"></a>withLimit(int limit)
-Gets the top *n* managed accounts that match the selection criteria.
+Gets the top *n* accounts that match the selection criteria.
 
 ### Arguments
 |Name|Type|Description|
 |-|-|-
-limit|int|The number of managed accounts to return. The actual number may be less.
+limit|int|The number of accounts to return. The actual number may be less.
 
 ### Returns
 |Type|Description|

@@ -30,7 +30,7 @@ Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarch
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this campaign is paused.
 [isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this campaign is removed (deleted).
 [keywords](#keywrods)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of keywords in this campaign.
-[newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder.md)|Gets a builder that you use to add an ad group to this campaign.
+[newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder.md)|Gets a builder used to add an ad group to this campaign.
 [pause](#pause)|void|Pauses this campaign.
 [remove](#remove)|void|Removes this campaign.
 [setName(String name)](#setname-string-name-)|void|Sets this campaign's name.
@@ -175,12 +175,12 @@ Gets a [selector](../concepts/selectors.md) used to filter the list of keywords 
 
 
 ## <a name="newadgroupbuilder"></a>newAdGroupBuilder
-Gets a [builder](../concepts/builders.md) that you use to add an ad group to this campaign.
+Gets a [builder](../concepts/builders.md) used to add an ad group to this campaign.
 
 ### Returns
 |Type|Description|
 |-|-
-[AdGroupBuilder](AdGroupBuilder.md)|The builder that you use to add an ad group to this campaign.
+[AdGroupBuilder](AdGroupBuilder.md)|The builder used to add an ad group to this campaign.
 
 
 ## <a name="pause"></a>pause
