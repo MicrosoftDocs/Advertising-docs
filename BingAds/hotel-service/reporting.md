@@ -152,6 +152,38 @@ If you request non-performing hotels in the report, the `columns` property must 
 
 If the `columns` property includes any of the above fields, the report jobs request fails.
 
+### How does IncludeNonPerformingHotels affect reporting for hotels that moved groups?
+
+By default, the report includes hotel performance data for the hotel no matter whether you segment the report by hotel, hotel group, or subaccount. Moving the hotel from one group to another does not impact the default reporting behavior. For example, if the report includes the hotel column, the report includes all performance data for the hotel during the specified time period. 
+
+```
+Date        Hotel ID   Clicks
+1-1-2018    5678       12
+```
+
+If you include the hotel column and hotel group column, the report includes hotel performance data that occurred for each hotel group during the specified time period.
+
+```
+Date       Hotel group ID   Hotel ID   Clicks
+1-1-2018   1234             5678       2
+2-1-2018   9876             5678       10
+```
+
+But things change if you include the IncludeNonPerformingHotels request property. If true, the report includes performance data for only active hotel and hotel group associations. This means that the hotels report example above changes to:
+
+```
+Date        Hotel ID   Clicks
+1-1-2018    5678       10
+```
+
+And the hotel group example changes to:
+
+```
+Date       Hotel group ID   Hotel ID   Clicks
+2-1-2018   9876             5678       10
+```
+
+
 
 ## Books closed
 
