@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a paging object that you can use to request labels and label associations in batches.
+description: Defines a paging object that you can use to request objects in batches.
 ---
 # Paging Data Object - Campaign Management
-Defines a paging object that you can use to request labels and label associations in batches.
+Defines a paging object that you can use to request objects in batches.
 
 ## Syntax
 ```xml
@@ -33,3 +33,4 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v12
 ## Used By
 [GetLabelAssociationsByLabelIds](getlabelassociationsbylabelids.md)  
 [GetLabelsByIds](getlabelsbyids.md)  
+[GetMediaMetaDataByAccountId](getmediametadatabyaccountid.md)  

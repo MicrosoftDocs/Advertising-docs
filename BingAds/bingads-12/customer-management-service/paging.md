@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a paging object for the list of entities returned using one of the search operations, for example SearchAccounts, SearchClientLinks, or SearchCustomers.
+description: Defines a paging object that you can use to request objects in batches.
 ---
 # Paging Data Object - Customer Management
-Defines a paging object for the list of entities returned using one of the search operations, for example [SearchAccounts](searchaccounts.md), [SearchClientLinks](searchclientlinks.md), or [SearchCustomers](searchcustomers.md).
+Defines a paging object that you can use to request objects in batches.
 
 ## Syntax
 ```xml

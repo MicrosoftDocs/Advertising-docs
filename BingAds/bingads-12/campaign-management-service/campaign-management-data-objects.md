@@ -114,7 +114,7 @@ The Campaign Management service defines the following data objects.
 |[PageVisitorsRule](pagevisitorsrule.md)|Defines a page visitors remarketing rule.|
 |[PageVisitorsWhoDidNotVisitAnotherPageRule](pagevisitorswhodidnotvisitanotherpagerule.md)|Defines a page visitors who did not visit another page remarketing rule.|
 |[PageVisitorsWhoVisitedAnotherPageRule](pagevisitorswhovisitedanotherpagerule.md)|Defines a page visitors who visited another page remarketing rule.|
-|[Paging](paging.md)|Defines a paging object that you can use to request labels and label associations in batches.|
+|[Paging](paging.md)|Defines a paging object that you can use to request objects in batches.|
 |[PriceAdExtension](priceadextension.md)|Defines an ad extension that includes between 3 and 8 price table rows.|
 |[PriceTableRow](pricetablerow.md)|Defines pricing information by currency and unit that you can use with price ad extensions.|
 |[ProductAd](productad.md)|Defines a product ad.|

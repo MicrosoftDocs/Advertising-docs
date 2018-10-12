@@ -140,7 +140,7 @@ Used to associate records in the bulk upload file with records in the results fi
 ### <a name="dynamicadtargetcondition1"></a>Dynamic Ad Target Condition 1
 The first of up to 3 webpage condition operands. The condition is met if the webpage property that is referenced by this field contains or equals the *Dynamic Ad Target Value 1* value.
 
-Possible values include *Category*, *PageContent*, *PageTitle*, and *Url*.
+Possible values include *Category*, *CustomLabel*, *PageContent*, *PageTitle*, and *Url*.
 
 **Add:** Optional. If you do not set any of the dynamic ad target condition or value fields, then you are effectively targeting all webpages. You can only have one dynamic ad target per ad group for all webpages.  
 **Update:** Not allowed. You cannot update the dynamic ad target condition or value fields. To update the webpage conditions you must delete the dynamic ad target and add a new one.    
@@ -149,7 +149,7 @@ Possible values include *Category*, *PageContent*, *PageTitle*, and *Url*.
 ### <a name="dynamicadtargetcondition2"></a>Dynamic Ad Target Condition 2
 The second of up to 3 webpage condition operands. The condition is met if the webpage property that is referenced by this field contains or equals the *Dynamic Ad Target Value 2* value.
 
-Possible values include *Category*, *PageContent*, *PageTitle*, and *Url*.
+Possible values include *Category*, *CustomLabel*, *PageContent*, *PageTitle*, and *Url*.
 
 **Add:** Optional. If you do not set any of the dynamic ad target condition or value fields, then you are effectively targeting all webpages. You can only have one dynamic ad target per ad group for all webpages.  
 **Update:** Not allowed. You cannot update the dynamic ad target condition or value fields. To update the webpage conditions you must delete the dynamic ad target and add a new one.    
@@ -158,7 +158,7 @@ Possible values include *Category*, *PageContent*, *PageTitle*, and *Url*.
 ### <a name="dynamicadtargetcondition3"></a>Dynamic Ad Target Condition 3
 The third of up to 3 webpage condition operands. The condition is met if the webpage property that is referenced by this field contains or equals the *Dynamic Ad Target Value 1* value.
 
-Possible values include *Category*, *PageContent*, *PageTitle*, and *Url*.
+Possible values include *Category*, *CustomLabel*, *PageContent*, *PageTitle*, and *Url*.
 
 **Add:** Optional. If you do not set any of the dynamic ad target condition or value fields, then you are effectively targeting all webpages. You can only have one dynamic ad target per ad group for all webpages.  
 **Update:** Not allowed. You cannot update the dynamic ad target condition or value fields. To update the webpage conditions you must delete the dynamic ad target and add a new one.    

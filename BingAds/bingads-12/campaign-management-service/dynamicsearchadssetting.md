@@ -9,9 +9,6 @@ description: Defines the campaign level settings for a Dynamic Search Ads campai
 # DynamicSearchAdsSetting Data Object - Campaign Management
 Defines the campaign level settings for a Dynamic Search Ads campaign.
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
-
 ## Syntax
 ```xml
 <xs:complexType name="DynamicSearchAdsSetting" xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -34,8 +31,8 @@ Defines the campaign level settings for a Dynamic Search Ads campaign.
 |-----------|---------------|-------------|
 |<a name="domainname"></a>DomainName|The domain name of the website that you want to target for dynamic search ads.<br/><br/>The length of the string is limited to 2,048 characters. If the domain name includes *www* it will be trimmed and not used.<br/><br/>**Add:** Required<br/>**Update:** Read-only. You cannot update the domain name.|**string**|
 |<a name="language"></a>Language|The language of the website pages that you want to target for dynamic search ads. Currently the only supported language code is 'en'.<br/><br/>**Add:** Required<br/>**Update:** Read-only. You cannot update the language.|**string**|
-|<a name="pagefeedids"></a>PageFeedIds|Reserved.|**long** array|
-|<a name="source"></a>Source|Reserved.|[DynamicSearchAdsSource](dynamicsearchadssource.md)|
+|<a name="pagefeedids"></a>PageFeedIds|Reserved for future use.|**long** array|
+|<a name="source"></a>Source|Determines whether to use Bing's index, advertiser supplied URLs, or both.<br/><br/>By default only Bing's index is used. Note that you must also set *IncludeDynamicSearchAdsSource* when calling [AddCampaigns](addcampaigns.md#includedynamicsearchadssource) and [UpdateCampaigns](updatecampaigns.md#includedynamicsearchadssource), otherwise this element will be ignored and only Bing's index is used.<br/><br/>Although you can manage the page feeds source and custom labels via Bing Ads API, page feeds upload is only supported through the Bing Ads web application. For more details about uploading page feeds, see the [About dynamic search ads page feeds](https://help.bingads.microsoft.com/#apex/3/en/60010/0) help article.<br/><br/>**Add:** Optional<br/>**Update:** Optional|[DynamicSearchAdsSource](dynamicsearchadssource.md)|
 
 The [DynamicSearchAdsSetting](dynamicsearchadssetting.md) object has [Inherited Elements](#inheritedelements).
 

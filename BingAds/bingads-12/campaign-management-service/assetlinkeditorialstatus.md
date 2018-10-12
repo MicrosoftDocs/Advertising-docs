@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the editorial review status values of an asset link.
+description: Reserved for future use.
 ---
 # AssetLinkEditorialStatus Value Set - Campaign Management
 Reserved for future use.

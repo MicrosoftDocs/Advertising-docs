@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the operands that can be applied to arguments of a webpage condition or criterion for dynamic search ads.
+description: Defines the possible operand values that can be applied to the argument of a webpage condition for dynamic search ads.
 ---
 # WebpageConditionOperand Value Set - Campaign Management
-Defines the operands that can be applied to arguments of a webpage condition or criterion for dynamic search ads. 
+Defines the possible operand values that can be applied to the argument of a webpage condition for dynamic search ads. 
 
 ## Syntax
 ```xml
@@ -27,12 +27,12 @@ Defines the operands that can be applied to arguments of a webpage condition or 
 
 |Value|Description|
 |-----------|---------------|
-|<a name="category"></a>Category|Set a condition that the argument must match one of the categories that Bing thinks is applicable for your site.|
-|<a name="customlabel"></a>CustomLabel|Reserved.|
-|<a name="pagecontent"></a>PageContent|Set a condition that the argument must match any of your site's content that is indexed by Bing.|
-|<a name="pagetitle"></a>PageTitle|Set a condition that the argument must match any of your site's page titles that are indexed by Bing.|
+|<a name="category"></a>Category|Set a condition that the [argument](webpagecondition.md#argument) must match one of the categories that Bing thinks is applicable for your site.|
+|<a name="customlabel"></a>CustomLabel|Set a condition that the [argument](webpagecondition.md#argument) must match any of your page feed custom labels.<br/><br/>Although you can manage the page feeds source and custom labels via Bing Ads API, page feeds upload is only supported through the Bing Ads web application. For more details about uploading page feeds, see the [About dynamic search ads page feeds](https://help.bingads.microsoft.com/#apex/3/en/60010/0) help article.|
+|<a name="pagecontent"></a>PageContent|Set a condition that the [argument](webpagecondition.md#argument) must match any of your site's content that is indexed by Bing.|
+|<a name="pagetitle"></a>PageTitle|Set a condition that the [argument](webpagecondition.md#argument) must match any of your site's page titles that are indexed by Bing.|
 |<a name="unknown"></a>Unknown|Reserved for future use.|
-|<a name="url"></a>Url|Set a condition that the argument must match any of your site's URLs that are indexed by Bing.|
+|<a name="url"></a>Url|Set a condition that the [argument](webpagecondition.md#argument) must match any of your site's URLs that are indexed by Bing.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
