@@ -35,6 +35,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Modified Time](#modifiedtime)|All|
 |[Parent Id](#parentid)|All|
 |[Priority](#priority)|Shopping|
+|[Source](#source)|DynamicSearchAds|
 |[Status](#status)|All|
 |[Store Id](#storeid)|Audience<br>Shopping|
 |[Sub Type](#subtype)|Shopping|
@@ -47,11 +48,11 @@ You can download all fields of the *Campaign* record by including the [DownloadE
 The following Bulk CSV example would add one campaign of each type i.e. Search, Shopping, and Dynamic Search Ads campaign. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Website,Client Id,Modified Time,Time Zone,Budget Id,Budget Name,Budget,Budget Type,Bid Adjustment,Name,Country Code,Store Id,Campaign Type,Priority,Tracking Template,Custom Parameter,Bid Strategy Type,Domain Language
-Format Version,,,,,,,,,,,,,,6,,,,,,,,
-Campaign,Active,-111,0,Search 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,Search,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,
-Campaign,Active,-111,0,Shopping 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,US,StoreIdHere,Shopping,0,,{_promoCode}=PROMO1; {_season}=summer,,
-Campaign,Active,-111,0,DynamicSearchAds 2/6/2017 4:11:11 PM,contoso.com,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,DynamicSearchAds,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,EN
+Type,Status,Id,Parent Id,Campaign,Website,Client Id,Modified Time,Time Zone,Budget Id,Budget Name,Budget,Budget Type,Bid Adjustment,Name,Country Code,Store Id,Campaign Type,Priority,Tracking Template,Custom Parameter,Bid Strategy Type,Domain Language,Source
+Format Version,,,,,,,,,,,,,,6,,,,,,,,,
+Campaign,Active,-111,0,Search 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,Search,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,,
+Campaign,Active,-111,0,Shopping 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,US,StoreIdHere,Shopping,0,,{_promoCode}=PROMO1; {_season}=summer,,,
+Campaign,Active,-111,0,DynamicSearchAds 2/6/2017 4:11:11 PM,contoso.com,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,DynamicSearchAds,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,EN,SystemIndex
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaign* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -156,7 +157,9 @@ for(int i = 0; i < 3; i++)
         // 'Website' column header in the Bulk file
         DomainName = "contoso.com",
         // 'Domain Language' column header in the Bulk file
-        Language = "EN"
+        Language = "EN",
+        // 'Source' column header in the Bulk file
+        Source = "SystemIndex"
     }
 };
 
@@ -442,6 +445,23 @@ If two shopping campaigns use the product catalog feed from same Bing Merchant C
 **Add:** Required if the *Campaign Type* field is set to *Shopping*. You cannot include this column for other campaign types.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.  
 **Delete:** Read-only  
+
+
+### <a name="source"></a>Source
+Determines whether to use Bing's index, advertiser supplied URLs, or both for dynamic search ads.
+
+Possible values are in the table below.
+
+|Value|Description|
+|-----------|---------------|
+|AdvertiserSuppliedUrls|Use URLs from my page feed only. Only URLs specified in the feed file will be served from this campaign. We recommend using this option for highly specific campaigns with tailored ad copy.|
+|All|Use URLs from both Bing's index of my website and my page feed. Pages from both sources will be used but URLs within the feed file will be given priority.|
+|SystemIndex|Use Bing's index of my website. This is the default behavior of dynamic search ad campaigns on Bing.|
+
+**Add:** Optional if the *Campaign Type* field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. By default only Bing's index is used i.e., an empty value is effectively the same as specifying *SystemIndex*. 
+**Update:** Optional if the *Campaign Type* field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. If no value is specified on update, this Bing Ads setting is not changed.      
+**Delete:** Read-only  
+
 
 ### <a name="status"></a>Status
 The status of the campaign.

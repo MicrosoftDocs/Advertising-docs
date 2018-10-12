@@ -27,7 +27,7 @@ The Campaign Management service defines the following value sets.
 |[AdType](adtype.md)|Defines the type of ad.|
 |[AgeRange](agerange.md)|Defines the possible age range values that you can use to target ads to People.|
 |[AppealStatus](appealstatus.md)|Defines the values that you use to determine whether an editorial rejection is appealable.|
-|[AssetLinkEditorialStatus](assetlinkeditorialstatus.md)|Reserved.|
+|[AssetLinkEditorialStatus](assetlinkeditorialstatus.md)|Reserved for future use.|
 |[AssociationType](associationtype.md)|Defines the entity types that can be associated with an ad extension.|
 |[AudienceType](audiencetype.md)|Defines the possible audience types.|
 |[BidOption](bidoption.md)|Determines whether or not to amplify your partner's bid.|
@@ -47,7 +47,7 @@ The Campaign Management service defines the following value sets.
 |[CriterionTypeGroup](criteriontypegroup.md)|The type used to group criterions.|
 |[Day](day.md)|Defines the day values that you can specify for day and time criterion.|
 |[DistanceUnit](distanceunit.md)|Defines the possible distance units of a geographical location.|
-|[DynamicSearchAdsSource](dynamicsearchadssource.md)|Reserved.|
+|[DynamicSearchAdsSource](dynamicsearchadssource.md)|Defines the possible targeting source values for dynamic search ads campaigns.|
 |[EntityScope](entityscope.md)|Defines values that you can use to determine whether the remarketing list can only be associated with ad groups within one specified account, or can be associated with any ad groups across all of the customer's accounts.|
 |[EntityType](entitytype.md)|Defines the possible types of entities.|
 |[ExpressionOperator](expressionoperator.md)|Defines the operators that can be applied to expressions within a conversion goal.|
@@ -71,4 +71,4 @@ The Campaign Management service defines the following value sets.
 |[StringOperator](stringoperator.md)|Defines the operators that can be applied to remarketing list rule item string values.|
 |[UetTagTrackingStatus](uettagtrackingstatus.md)|Defines the possible system-determined status values of a UET tag.|
 |[ValueOperator](valueoperator.md)|Defines the operators that can be applied to values within a conversion event goal.|
-|[WebpageConditionOperand](webpageconditionoperand.md)|Defines the operands that can be applied to arguments of a webpage condition or criterion for dynamic search ads.|
+|[WebpageConditionOperand](webpageconditionoperand.md)|Defines the possible operand values that can be applied to the argument of a webpage condition for dynamic search ads.|

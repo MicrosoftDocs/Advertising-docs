@@ -27,7 +27,7 @@ You can get this object by calling [GetMediaAssociations](getmediaassociations.m
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="entityid"></a>EntityId|The system identifier of the media enabled entity, for example the identifier of an ImageAdExtension.|**long**|
-|<a name="mediaenabledentity"></a>MediaEnabledEntity|Determines the type of media to get. Currently only ImageAdExtension is supported.|[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|
+|<a name="mediaenabledentity"></a>MediaEnabledEntity|Determines the type of media to get.<br/><br/>Currently only ImageAdExtension is supported.|[MediaEnabledEntityFilter](mediaenabledentityfilter.md)|
 |<a name="mediaid"></a>MediaId|The system identifier of the media.|**long**|
 
 ## Requirements

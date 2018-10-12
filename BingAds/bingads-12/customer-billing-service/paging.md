@@ -4,10 +4,10 @@ ms.service: bing-ads-customer-billing-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a paging object for the list of insertion orders returned using the SearchInsertionOrders operation.
+description: Defines a paging object that you can use to request objects in batches.
 ---
 # Paging Data Object - Customer Billing
-Defines a paging object for the list of insertion orders returned using the [SearchInsertionOrders](searchinsertionorders.md) operation.
+Defines a paging object that you can use to request objects in batches.
 
 ## Syntax
 ```xml

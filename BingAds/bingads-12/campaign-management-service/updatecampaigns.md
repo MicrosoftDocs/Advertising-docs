@@ -23,7 +23,7 @@ The *UpdateCampaignsRequest* object defines the [body](#request-body) and [heade
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account that contains the campaign to update.|**long**|
 |<a name="campaigns"></a>Campaigns|An array that can contain a maximum of 100 [Campaign](campaign.md) objects to update.|[Campaign](campaign.md) array|
-|<a name="includedynamicsearchadssource"></a>IncludeDynamicSearchAdsSource|Reserved.|**boolean**|
+|<a name="includedynamicsearchadssource"></a>IncludeDynamicSearchAdsSource|Determines whether or not to apply the target [Source](DynamicSearchAdsSetting.md#source) for Dynamic Search Ads campaign settings. By default the [Source](DynamicSearchAdsSetting.md#source) is ignored and only Bing's index is used. If you set this element to *True*, the [Source](DynamicSearchAdsSetting.md#source) that you set will be honored. This element will be removed in a future version of the API and by default the [Source](DynamicSearchAdsSetting.md#source) will be honored.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

@@ -12,7 +12,25 @@ For information about the changes to the Bing Ads Version 12 services for each m
 ## <a name="october2018"></a>October 2018
 See below for Bing Ads service updates during this calendar month. 
  
+- [Paging for Media Meta Data](#mediametadatapaging-october2018)  
+- [Dynamic Search Ads Source and Custom Label](#dsasource-october2018)  
 - [Responsive Ad Type Filter for Reporting](#responsiveadfilter-october2018)  
+
+### <a name="mediametadatapaging-october2018"></a>Paging for Media Meta Data
+The [PageInfo](../campaign-management-service/getmediametadatabyaccountid.md#pageinfo) element is added to the [GetMediaMetaDataByAccountId](../campaign-management-service/getmediametadatabyaccountid.md) operation. This optional request element determines the index and size of media meta data results per page. By default if this element is not specified, all media meta data in the account will be returned.
+
+> [!TIP]
+> As a best practice you should implement paging where results are limited to 1,000 per page. In a future version of the API if this element is not specified, the defaut page Index will be 0 and the default Size will be 1,000.
+
+### <a name="dsasource-october2018"></a>Dynamic Search Ads Source and Custom Label
+Dynamic Search Ads customers in the United States and the United Kingdom can now manage the page feeds targeting source and custom labels via Bing Ads API. 
+
+You can set the page feeds targeting source with the Campaign Management service via the [DynamicSearchAdsSetting](../campaign-management-service/dynamicsearchadssetting.md) or with the Bulk service via the [Source](../bulk-service/campaign.md#source) field of a [Campaign](../bulk-service/campaign.md) record. 
+
+You can set the page feeds custom label auto targets with the Campaign Management service via the [WebpageCondition](../campaign-management-service/webpagecondition.md) i.e., set the operand to [CustomLabel](../campaign-management-service/webpageconditionoperand.md#customlabel). You can set the page feeds custom label auto targets with the Bulk service via the the dynamic ad target condition and value fields of a [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md), [Ad Group Negative Dynamic Search Ad Target](../bulk-service/ad-group-negative-dynamic-search-ad-target.md), or [Campaign Negative Dynamic Search Ad Target](../bulk-service/campaign-negative-dynamic-search-ad-target.md) record. 
+
+> [!NOTE]
+> Although you can manage the page feeds source and custom labels via Bing Ads API, page feeds upload is only supported through the Bing Ads web application. For more details about uploading page feeds, see the [About dynamic search ads page feeds](https://help.bingads.microsoft.com/#apex/3/en/60010/0) help article.
 
 ### <a name="responsiveadfilter-october2018"></a>Responsive Ad Type Filter for Reporting
 The *ResponsiveAd* value is added to the [AdTypeReportFilter](../reporting-service/adtypereportfilter.md) value set. You can filter by ad type within the following report filters. 
