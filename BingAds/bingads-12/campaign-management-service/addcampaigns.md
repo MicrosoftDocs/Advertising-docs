@@ -23,7 +23,7 @@ The *AddCampaignsRequest* object defines the [body](#request-body) and [header](
 |-----------|---------------|-------------|
 |<a name="accountid"></a>AccountId|The identifier of the account to add the campaigns to.|**long**|
 |<a name="campaigns"></a>Campaigns|The list of campaigns to add to the specified account.<br/><br/>You can add 100 campaigns per service request.|[Campaign](campaign.md) array|
-|<a name="includedynamicsearchadssource"></a>IncludeDynamicSearchAdsSource|Reserved.|**boolean**|
+|<a name="includedynamicsearchadssource"></a>IncludeDynamicSearchAdsSource|Determines whether or not to apply the target [Source](DynamicSearchAdsSetting.md#source) for Dynamic Search Ads campaign settings. By default the [Source](DynamicSearchAdsSetting.md#source) is ignored and only Bing's index is used. If you set this element to *True*, the [Source](DynamicSearchAdsSetting.md#source) that you set will be honored. This element will be removed in a future version of the API and by default the [Source](DynamicSearchAdsSetting.md#source) will be honored.|**boolean**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

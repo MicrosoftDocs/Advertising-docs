@@ -241,6 +241,11 @@ def search_accounts_by_user_id(user_id):
         'AdvertiserAccount': accounts
     }
 
+def set_elements_to_none(suds_object):
+    for (element) in suds_object:
+        suds_object.__setitem__(element[0], None)
+    return suds_object
+
 def output_status_message(message):
     print(message)
 
