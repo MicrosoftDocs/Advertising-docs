@@ -20,7 +20,7 @@ Reporting is an asynchronous process. The following is the general flow for requ
 - Create a request with the report parameters
 - Send a request to the reporting service
 - The service queues the request until it's able to process it
-- You poll the service periodically to get the status of the report job
+- Poll the service periodically to get the status of the report job
 - When the status is Completed, use the URL that the service provides to download the report.
 
 For an example that shows how to request and download a report, see [Reporting code example](code-example-reporting.md).

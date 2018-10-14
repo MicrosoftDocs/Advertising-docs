@@ -472,7 +472,14 @@ For an example that gets and updates hotels, see [hotel examples](../hotel-servi
 
 ### Listing hotels
 
-By default, when you request a list of hotels in a hotel group, the API returns a maximum of 1,000 hotels. To determine the total number of hotels in the hotel group, use the [$count](./reference.md#count-param) query parameter. To specify the number of hotels to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of hotels that you can request in single call is 5,000. If your hotel group contains more than 5,000 hotels, use the $top and [$skip](./reference.md#skip-param) query parameters to page through all hotels.
+By default, when you request a list of hotels in a hotel group, the API returns a maximum of 1,000 hotels. To determine the total number of hotels in the hotel group, use the [$count](./reference.md#count-param) query parameter. To specify the number of hotels to return, use the [$top](./reference.md#top-param) query parameter. The maximum number of hotels that you can request in single call is 5,000. If your hotel group contains more than 5,000 hotels, use the $top and [$skip](./reference.md#skip-param) query parameters to page through the hotels.
+
+> [!NOTE] 
+> You should use the $top and $skip query parameters to page through hotels in a UI experience only. To get all of your hotels, use the [Reporting](reporting.md) feature to download your hotels.
+>
+> - /SubAccounts('{subAccountId}')/Hotels  
+> - /SubAccounts('<subaccountid>')/HotelGroups('<hotelgroupid>')/Hotels  
+> - SubAccounts('{subAccountId}')/Ungrouped
 
 To get the first 1,000 hotels in a hotel group, send the following request.
 
