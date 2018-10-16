@@ -17,7 +17,7 @@ With a dynamic search ads campaign, the ad title and display URL are generated a
 > This feature is currently available in the United States and the United Kingdom.  
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Dynamic Search Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). The combination of the Path 1, Path 2, and Text elements make the dynamic search ad unique.
+For a *Dynamic Search Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). The combination of the Path 1, Path 2, and Text fields make the dynamic search ad unique.
 
 - [Ad Group](#adgroup)
 - [Campaign](#campaign)

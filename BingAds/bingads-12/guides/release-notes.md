@@ -12,9 +12,22 @@ For information about the changes to the Bing Ads Version 12 services for each m
 ## <a name="october2018"></a>October 2018
 See below for Bing Ads service updates during this calendar month. 
  
+- [Bing Ads Software Development Kit (SDK) Updates](#sdk-october)  
+- [Longer Expanded Text Ads](#expandedtextads-october2018)  
 - [Paging for Media Meta Data](#mediametadatapaging-october2018)  
 - [Dynamic Search Ads Source and Custom Label](#dsasource-october2018)  
 - [Responsive Ad Type Filter for Reporting](#responsiveadfilter-october2018)  
+
+### <a name="sdk-october2018"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v11.12.7), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v11.12.7), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.11.12.7), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v11.12.7) SDK version 11.12.7. 
+
+### <a name="expandedtextads-october2018"></a>Longer Expanded Text Ads
+For customers in pilot 510, the maximum length of the Expanded Text Ad Text field is increased from 80 to 90, or from 40 to 45 for double-width characters. 
+
+Customers in pilot 511 can use the new TextPart2 and TitlePart3 fields. 
+
+For more details see [Expanded Text Ad](../bulk-service/expanded-text-ad.md) (Bulk service) and [ExpandedTextAd](../campaign-management-service/expandedtextad.md) (Campaign Management service).
+
 
 ### <a name="mediametadatapaging-october2018"></a>Paging for Media Meta Data
 The [PageInfo](../campaign-management-service/getmediametadatabyaccountid.md#pageinfo) element is added to the [GetMediaMetaDataByAccountId](../campaign-management-service/getmediametadatabyaccountid.md) operation. This optional request element determines the index and size of media meta data results per page. By default if this element is not specified, all media meta data in the account will be returned.
