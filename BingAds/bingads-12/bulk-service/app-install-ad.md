@@ -17,7 +17,7 @@ Defines an app install ad that can be downloaded and uploaded in a bulk file. Cr
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *App Install Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). The combination of the App Id, App Platform, Text, and Title elements make the app install ad unique.
+For an *App Install Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). The combination of the App Id, App Platform, Text, and Title fields make the app install ad unique.
 
 - [Ad Group](#adgroup)
 - [App Id](#appid)

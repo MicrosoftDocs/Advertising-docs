@@ -17,7 +17,7 @@ This ad format works seamlessly on mobile, tablet and desktop devices so you can
 > Before you can use expanded text ads, you must upgrade to Final Urls. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
 
 ## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Expanded Text Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). The combination of the Final Urls, Path 1, Path2, Text, Title Part 1 and Title Part 2 elements make the expanded text ad unique.
+For an *Expanded Text Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). The combination of the Final Urls, Path 1, Path2, Text, Text Part 2, Title Part 1, Title Part 2, and Title Part 3 fields make the expanded text ad unique.
 
 
 - [Ad Format Preference](#adformatpreference)
@@ -488,7 +488,7 @@ For languages with double-width characters e.g. Traditional Chinese the maximum 
 
 The title cannot contain the newline (\n) character.
 
-**Add:** Required  
+**Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
