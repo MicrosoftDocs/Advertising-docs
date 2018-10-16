@@ -488,7 +488,7 @@ For languages with double-width characters e.g. Traditional Chinese the maximum 
 
 The title cannot contain the newline (\n) character.
 
-**Add:** Required  
+**Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
