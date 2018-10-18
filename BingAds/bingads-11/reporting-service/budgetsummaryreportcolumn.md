@@ -42,7 +42,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
 |<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|
-|<a name="currencycode"></a>CurrencyCode|The account currency type.For possible values, see [Currencies](../guides/currencies.md).|
+|<a name="currencycode"></a>CurrencyCode|The account currency type. For possible values, see [Currencies](../guides/currencies.md).|
 |<a name="dailyspend"></a>DailySpend|The average amount of campaign budget spent per day.|
 |<a name="date"></a>Date|The date for the downloaded report records. The date will be in the time zone of the campaign|
 |<a name="monthlybudget"></a>MonthlyBudget|The average amount of campaign budget spent during a calendar month.|
