@@ -29,7 +29,7 @@ The *GetProfileDataFileUrlRequest* object defines the [body](#request-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="languagelocale"></a>LanguageLocale|The language and locale of the profile display names.<br/><br/>Currently the only supported language is *en* (English).<br/><br/>This request element is required.|**string**|
+|<a name="languagelocale"></a>LanguageLocale|The language and locale of the profile display names.<br/><br/>The supported language locale values are *zh-Hant* (Traditional Chinese), *en* (English), *fr* (French), *de* (German), *it* (Italian), *pt-BR* (Brazilian Portuguese), and *es* (Spanish). Please note if LinkedIn does not provide the localized profile name, then it will default to the universal name (usually defined in English).<br/><br/>This request element is required.|**string**|
 |<a name="profiletype"></a>ProfileType|Determines whether you want company name, industry, or job function profile data.<br/><br/>This request element is required.|[ProfileType](profiletype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
