@@ -18,7 +18,7 @@ To authenticate with a [Microsoft Account](https://account.microsoft.com/account
 ## <a name="dependencies"></a> Dependencies
 The Bing Ads Python SDK uses the [suds-jurko-0.6](https://bitbucket.org/jurko/suds) library as a proxy for all of Bing Ads web services. For more information about using Suds with Bing Ads, see [Using Suds](#suds).
 
-The Bing Ads Python [SDK](client-libraries.md) supports Python 2.6, 2.7, 3.3, and 3.4. You should install and run one of the supported versions.
+The Bing Ads Python [SDK](client-libraries.md) supports Python 2.6, 2.7, and 3.3 or higher. You should install and run one of the supported versions.
 
 ## <a name="installation"></a>Install the SDK
 To install the Bing Ads Python [SDK](client-libraries.md) for the first time, run the following either from your IDE or command line prompt.
