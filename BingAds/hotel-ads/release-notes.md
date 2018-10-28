@@ -13,6 +13,13 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
+## October 28, 2018
+
+- Added the following dimension columns that you must not specify if your report request includes share of voice (SOV) columns. See [Share of voice](./hotel-service/reporting.md#sov).
+  - AdvancedBookingWindow
+  - DateType 
+  - SiteType
+
 
 ## August 20, 2018
 
