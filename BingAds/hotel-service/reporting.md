@@ -300,8 +300,11 @@ The following are the SOV columns:
 
 
 > [!IMPORTANT]
-> Do not include the following dimension columns if your request includes SOV columns.  
+> Do not include the following dimension columns if your request includes SOV columns. 
+> - AdvancedBookingWindow
+> - DateType 
 > - LengthOfStay  
+> - SiteType
 > - SlotType  
 > - Usercountry  
 >  
