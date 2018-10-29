@@ -20,7 +20,7 @@ The Hotel API lets you manage your hotel ad campaigns and bidding. A subaccount 
 A subaccount specifies the campaign's daily budget, maximum bid allowed, and default bid and bid multipliers for ads that don't specify bids or multipliers.
 
 > [!NOTE]
-> Hotel ad campaigns refered to here have no relationship to campaigns in Bing Ads.
+> Hotel ad campaigns referred to here have no relationship to campaigns in Bing Ads.
 
 If you haven't already done so, familiarize yourself with the following topics:
 
