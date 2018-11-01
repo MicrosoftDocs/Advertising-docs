@@ -21,7 +21,7 @@ The example desktop application sends authentication requests to the Microsoft a
 
 4. Install the SDK through NuGet for the BingAdsConsoleApp. For more information about dependencies, see [Installing the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type these commands to install the packages one at a time: `Install-Package Microsoft.BingAds.SDK`, `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`. 
 
-5. Open the App.config file and replace its contents with the following code block. Edit the *BingAdsEnvironment* to move from sandbox to production. You must edit the *ClientId* with the *Application Id* that was provisioned when you [registered your application](authentication-oauth.md#registerapplication). If you are targeting the production environment, then you'll also need to edit the example with your [developer token](get-started.md#get-developer-token).  
+5. Open the App.config file and replace its contents with the following code block. Edit the *BingAdsEnvironment* to move from sandbox to production. You must edit the *ClientId* with the *Application Id* that was provisioned when you [registered your application](authentication-oauth.md#registerapplication). If you are targeting the production environment, then you'll also need to edit the example with your [developer token](get-started.md#get-developer-token). 
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>

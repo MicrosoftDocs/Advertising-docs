@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a bid.
+description: The highest price that you want to pay each time someone clicks your ad.
 ---
 # Bid Data Object - Campaign Management
-Defines a bid.
+The highest price that you want to pay each time someone clicks your ad.
 
 ## Syntax
 ```xml

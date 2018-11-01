@@ -12,9 +12,6 @@ Language options in Bing Ads give you control over your advertising campaign and
 ## <a name="adlanguage"></a>Ad Language
 Your ad language setting determines the language you will use when you write your ads and should be the language of your customers. The campaign level languages setting applies to all ad groups in the campaign; However, if languages are set at both the ad group and campaign level, the ad group-level language will override the campaign-level language. The ad group level language setting applies to all ads in an ad group. 
 
-> [!NOTE]
-> Not everyone has the Campaign languages feature yet. If you don't, don't worry. It's coming soon.
-
 Your ad language in combination with your [location targeting](show-ads-target-audience.md) determines who will see your ads. When determining if your ads are eligible to be shown to a particular search user, Bing Ads first determines if your ad language allows for your ad to be shown in a particular country or region then considers the location criteria (and other criteria) settings you have configured. If the target criteria is met and the ad language is available in the country/region, the ad is eligible to display. To learn more, see the Bing Ads help article [How does ad language and location targeting affect who can see my ads?](https://help.bingads.microsoft.com/#apex/3/en/51100/0)
 
 The following are the possible languages that you may use to write your ads and keywords.
@@ -54,31 +51,30 @@ The following country codes are supported per customer language e.g. [resellers]
 
 		
 ## <a name="countdownlanguage"></a>Countdown Language
-Countdown customizers let you easily add a countdown (by day, hour, and then minute) to an event in your [Expanded Text Ad](expanded-text-ads.md). The following language codes are supported for [countdown functions](expanded-text-ads.md#countdown).
+Countdown customizers let you easily add a countdown (by day, hour, and then minute) to an event in your [Expanded Text Ad](expanded-text-ads.md) and [Responsive Search Ad](responsive-search-ads.md). The following language codes are supported for [countdown customizers](countdown-customizers.md).
 
-|Language Code|Language|Countdown Length|
-|------------|------------|------------------|
-|DA|Danish|8|
-|NL|Dutch|8|
-|en-AU|English|8|
-|en-GB|English|8|
-|en-US|English|8|
-|FI|Finnish|9|
-|FR|French|9|
-|DE|German|10|
-|IT|Italian|7|
-|NO|Norwegian|7|
-|pt-BR|Portuguese|8|
-|pt-PT|Portuguese|8|
-|ES|Spanish|8|
-|ES-419|Spanish|8|
-|SV|Swedish|8|
-|zh-HK|TraditionalChinese|7|
-|zh-TW|TraditionalChinese|7|
-
+|Language Code|Language|
+|------------|------------|
+|DA|Danish|
+|NL|Dutch|
+|en-AU|English|
+|en-GB|English|
+|en-US|English|
+|FI|Finnish|
+|FR|French|
+|DE|German|
+|IT|Italian|
+|NO|Norwegian|
+|pt-BR|Portuguese|
+|pt-PT|Portuguese|
+|ES|Spanish|
+|ES-41Spanish|
+|SV|Swedish|
+|zh-HK|TraditionalChinese|
+|zh-TW|TraditionalChinese|
 
 ## <a name="structuredsnippetheaders"></a>Structured Snippet Headers
-Structured Snippet headers must be specified in the same language that you intend it to be shown. For example, if you want header *Amenities* in English you must specify the header as *Amenities*.  If you want header *Ausstattung* in German you must specify the header as *Ausstattung* (*Amenities* in German). The following headers are supported per language.
+Structured Snippet headers must be specified in the same language that you intend it to be shown. For example, if you want header *Amenities* in English you must specify the header as *Amenities*. If you want header *Ausstattung* in German you must specify the header as *Ausstattung* (*Amenities* in German). The following headers are supported per language.
 
 ```csv
 Language,Amenities,Brands,Courses,Degree programs,Destinations,Featured hotels,Goods,Insurance coverage,Items,Models,Neighborhoods,Services,Service catalog,Shows,Styles,Types

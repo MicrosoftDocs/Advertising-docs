@@ -161,6 +161,8 @@
       href: ./app-install-ads.md
     - name: Audience Ads
       href: ./audience-ads.md
+    - name: Countdown Customizers
+      href: ./countdown-customizers.md
     - name: Dynamic Search Ads
       href: ./dynamic-search-ads.md
     - name: Editorial Review and Appeals
@@ -169,6 +171,8 @@
       href: ./expanded-text-ads.md
     - name: Product Ads
       href: ./product-ads.md
+    - name: Responsive Search Ads
+      href: ./responsive-search-ads.md
   - name: Reports
     href: ./reports.md
     items:
@@ -810,6 +814,12 @@
         - name: Responsive Ad Label
           href: ../bulk-service/responsive-ad-label.md
           displayName: BulkResponsiveAdLabel
+        - name: Responsive Search Ad
+          href: ../bulk-service/responsive-search-ad.md
+          displayName: BulkResponsiveSearchAd
+        - name: Responsive Search Ad Label
+          href: ../bulk-service/responsive-search-ad-label.md
+          displayName: BulkResponsiveSearchAdLabel
         - name: Review Ad Extension
           href: ../bulk-service/review-ad-extension.md
           displayName: BulkReviewAdExtension
@@ -1038,6 +1048,8 @@
           href: ../campaign-management-service/accountmigrationstatusesinfo.md
         - name: AccountProperty
           href: ../campaign-management-service/accountproperty.md
+        - name: ActionAdExtension
+          href: ../campaign-management-service/actionadextension.md
         - name: Ad
           href: ../campaign-management-service/ad.md
         - name: AdApiError
@@ -1084,6 +1096,10 @@
           href: ../campaign-management-service/applicationfault.md
         - name: AppUrl
           href: ../campaign-management-service/appurl.md
+        - name: Asset
+          href: ../campaign-management-service/asset.md
+        - name: AssetLink
+          href: ../campaign-management-service/assetlink.md
         - name: Audience
           href: ../campaign-management-service/audience.md
         - name: AudienceCriterion
@@ -1266,6 +1282,8 @@
           href: ../campaign-management-service/remarketingrule.md
         - name: ResponsiveAd
           href: ../campaign-management-service/responsivead.md
+        - name: ResponsiveSearchAd
+          href: ../campaign-management-service/responsivesearchad.md
         - name: ReviewAdExtension
           href: ../campaign-management-service/reviewadextension.md
         - name: RuleItem
@@ -1302,6 +1320,8 @@
           href: ../campaign-management-service/targetsettingdetail.md
         - name: TextAd
           href: ../campaign-management-service/textad.md
+        - name: TextAsset
+          href: ../campaign-management-service/textasset.md
         - name: UetTag
           href: ../campaign-management-service/uettag.md
         - name: UrlGoal
@@ -1317,6 +1337,8 @@
         items: 
         - name: AccountPropertyName
           href: ../campaign-management-service/accountpropertyname.md
+        - name: ActionAdExtensionActionType
+          href: ../campaign-management-service/actionadextensionactiontype.md
         - name: AdAdditionalField
           href: ../campaign-management-service/adadditionalfield.md
         - name: AdEditorialStatus
@@ -1363,6 +1385,8 @@
           href: ../campaign-management-service/businessgeocodestatus.md
         - name: CallToAction
           href: ../campaign-management-service/calltoaction.md
+        - name: CampaignAdditionalField
+          href: ../campaign-management-service/campaignadditionalfield.md
         - name: CampaignCriterionStatus
           href: ../campaign-management-service/campaigncriterionstatus.md
         - name: CampaignCriterionType
@@ -1393,6 +1417,10 @@
           href: ../campaign-management-service/entityscope.md
         - name: EntityType
           href: ../campaign-management-service/entitytype.md
+        - name: ExperimentStatus
+          href: ../campaign-management-service/experimentstatus.md
+        - name: ExperimentType
+          href: ../campaign-management-service/experimenttype.md
         - name: ExpressionOperator
           href: ../campaign-management-service/expressionoperator.md
         - name: GenderType

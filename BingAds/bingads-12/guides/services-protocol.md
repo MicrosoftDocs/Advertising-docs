@@ -29,7 +29,7 @@ Partial update is supported for most, but not all campaign management data objec
 Partial update is not supported for ad extensions. Any optional elements which are not sent with the update request will in effect be deleted from the respective ad extension.
 
 ### Customer Management Partial Update
-The customer management service performs a full update of entities, so in addition to the documented required properties you must provide values for all optional properties that you do not want to be nil or empty.  
+The customer management service performs a full update of entities, so in addition to the documented required properties you must provide values for all optional properties that you do not want to be nil or empty. 
 
 > [!NOTE]
 > One exception to this rule is the *ForwardCompatibilityMap* element of any object. For example if you do not provide the *ForwardCompatibilityMap* element of the [AdvertiserAccount](../customer-management-service/advertiseraccount.md), the service will not update or nullify any properties that would otherwise have been represented by key and value pairs.
@@ -42,11 +42,11 @@ For example, many of the campaign management calls require an account identifier
 ## <a name="manage-overhead"></a>Manage the Overhead Associated with Making Web Service Calls
 The following are the overhead costs, in processing time, that are associated with each web service call.
 
-- Establishing an HTTPS connection to the web service.  
-- Authenticating the user name and password.  
-- Validating the developer token.  
+- Establishing an HTTPS connection to the web service. 
+- Authenticating the user name and password. 
+- Validating the developer token. 
 
-These costs occur whether you process a single item or a set of items. To minimize overhead, in general, you should try to process as many items in one call as possible. For example, instead of calling [UpdateCampaigns](../campaign-management-service/updatecampaigns.md) for each campaign that you want to update, call it only once for multiple campaigns that you want to update. To manage large scale data you should use the [Bulk service](../bulk-service/bulk-service-reference.md). The Bulk service allows you to download data as a TSV or CSV file, modify it as needed, and then upload your changes. For more information about using the Bulk service, see [Bulk Download and Upload](bulk-download-upload.md).
+These costs occur whether you process a single item or a set of items. To minimize overhead, in general, you should try to process as many items in one call as possible. For example, instead of calling [UpdateCampaigns](../campaign-management-service/updatecampaigns.md) for each campaign that you want to update, call it only once for multiple campaigns that you want to update. To manage large scale data, especially if you need to add or update ads and keywords across multiple ad groups or campaigns in an account, you should use the [Bulk service](../bulk-service/bulk-service-reference.md). The Bulk service allows you to download data as a TSV or CSV file, modify it as needed, and then upload your changes. For more information about using the Bulk service, see [Bulk Download and Upload](bulk-download-upload.md).
 
 Because of the costs associated with establishing a connection to a web service, you should maintain the connection for as long as it is needed. For example, if you need to request multiple reports, use the same reporting service client object for all reporting service operation calls. Explicitly close the connection when you no longer need the service.
 

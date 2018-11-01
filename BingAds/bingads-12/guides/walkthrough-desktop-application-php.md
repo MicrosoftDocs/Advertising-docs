@@ -18,8 +18,8 @@ You must first [register an application](authentication-oauth.md#registerapplica
 
 ## <a name="code"></a>Code Walkthrough
 
-1.  Navigate to your local project directory e.g. *c:\dev\BingAdsPHP* and [install](get-started-php.md#installation) the Bing Ads PHP SDK e.g., type `composer require microsoft/bingads`. You should now see the vendor directory which contains both the SDK source and samples. 
-2.  Copy the *V12* directory (with included samples) to your local project directory e.g. copy from *c:\dev\BingAdsPHP\vendor\microsoft\bingads\samples* to *c:\dev\BingAdsPHP*.
+1. Navigate to your local project directory e.g. *c:\dev\BingAdsPHP* and [install](get-started-php.md#installation) the Bing Ads PHP SDK e.g., type `composer require microsoft/bingads`. You should now see the vendor directory which contains both the SDK source and samples. 
+2. Copy the *V12* directory (with included samples) to your local project directory e.g. copy from *c:\dev\BingAdsPHP\vendor\microsoft\bingads\samples* to *c:\dev\BingAdsPHP*.
 
     ![Sample PHP Project Directory](media/sample-php-project-directory.png "Sample PHP Project Directory")  
     

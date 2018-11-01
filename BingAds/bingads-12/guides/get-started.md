@@ -151,7 +151,7 @@ Each SOAP request must include the following SOAP headers, which contain the use
 > Do not mistake the account number for the account identifier. The account number is the system generated account number that is used to identify the account in the Bing Ads web application. The account number has the form xxxxxxxx, where xxxxxxxx is a series of any eight alphanumeric characters. The API service requests only use the account identifier, and never use the account number.
 
 > [!NOTE]
-> With the exception of the Customer Billing and Customer Management services, the CustomerAccountId and CustomerId are required for most service operations. As a best practice you should always specify them in the request.  
+> With the exception of the Customer Billing and Customer Management services, the CustomerAccountId and CustomerId are required for most service operations. As a best practice you should always specify them in the request. 
 
 ## <a name="need-help"></a>Need Help?
 For troubleshooting tips, see [Handling Service Errors and Exceptions](handle-service-errors-exceptions.md).

@@ -11,16 +11,7 @@ dev_langs:
 # Negative Keyword List Record - Bulk
 Defines a negative keyword list that can be downloaded and uploaded in a bulk file.
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Negative Keyword List* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
-
-- [Client Id](#clientid)
-- [Id](#id)
-- [Modified Time](#modifiedtime)
-- [Name](#name)
-- [Status](#status)
-
-You can download all fields of the *Negative Keyword List* record by including the [DownloadEntity](downloadentity.md) value of *NegativeKeywordLists* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all *Negative Keyword List* records in the account by including the [DownloadEntity](downloadentity.md) value of *NegativeKeywordLists* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new negative keyword list. 
 
@@ -30,8 +21,7 @@ Format Version,,,,,,,,,,6
 Negative Keyword List,Active,-19,,,,ClientIdGoesHere,,,,My Negative Keyword List
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkNegativeKeywordList* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
-
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkNegativeKeywordList* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -70,22 +60,29 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
+For a *Negative Keyword List* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
-### <a name="clientid"></a>Client Id
+- [Client Id](#clientid)
+- [Id](#id)
+- [Modified Time](#modifiedtime)
+- [Name](#name)
+- [Status](#status)
+
+## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
 **Update:** Optional    
 **Delete:** Read-only  
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The system generated identifier of the negative keyword list.
 
 **Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the negative keyword list can then be referenced in the *Id* field of dependent record types such as [Campaign Negative Keyword List Association](campaign-negative-keyword-list-association.md). This is recommended if you are adding new negative keyword list and associating it with campaigns in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
 
 > [!NOTE]
@@ -95,7 +92,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="name"></a>Name
+## <a name="name"></a>Name
 The name of the negative keyword list.
 
 The maximum length of the name is 255.
@@ -104,7 +101,7 @@ The maximum length of the name is 255.
 **Update:** Required    
 **Delete:** Read-only  
 
-### <a name="status"></a>Status
+## <a name="status"></a>Status
 The status of the negative keyword list.
 
 Possible values are *Active* or *Deleted*. 

@@ -16,6 +16,7 @@ Do not try to instantiate an *Ad*. You can create one or more following objects 
 - [TextAd](textad.md)
 - [ProductAd](productad.md) 
 - [ResponsiveAd](responsivead.md) 
+- [ResponsiveSearchAd](responsivesearchad.md) 
 
 ## Syntax
 ```xml
@@ -51,13 +52,13 @@ Do not try to instantiate an *Ad*. You can create one or more following objects 
 |<a name="id"></a>Id|The unique Bing Ads identifier for the ad.|**long**|
 |<a name="status"></a>Status|The status of the ad.<br/><br/>You can set the ad status to Active or Paused.|[AdStatus](adstatus.md)|
 |<a name="trackingurltemplate"></a>TrackingUrlTemplate|The tracking template to use as a default for all landing page URLs.<br/><br/>Tracking template is only supported for [AppInstallAd](appinstallad.md), [DynamicSearchAd](dynamicsearchad.md), [ExpandedTextAd](expandedtextad.md), and [TextAd](textad.md) objects. It is not supported for the [ProductAd](productad.md) object.|**string**|
-|<a name="type"></a>Type|The type of the ad. For more information about ad types, see the [Remarks](#remarks).|[AdType](adtype.md)|
+|<a name="type"></a>Type|The type of the ad.<br/><br/>For more information about ad types, see the [Remarks](#remarks).|[AdType](adtype.md)|
 |<a name="urlcustomparameters"></a>UrlCustomParameters|Your custom collection of key and value parameters for URL tracking.<br/><br/>Custom parameters are only supported for [AppInstallAd](appinstallad.md), [DynamicSearchAd](dynamicsearchad.md), [ExpandedTextAd](expandedtextad.md), and [TextAd](textad.md) objects. They are not supported for the [ProductAd](productad.md) object.|[CustomParameters](customparameters.md)|
 
 ## <a name="remarks"></a>Remarks
-For Java and the .NET languages, do not set the *Type* element because the value is determined by whether you instantiate an expanded text ad or another type of ad.
+For Java and the .NET languages, do not set the *Type* element because the value is determined by whether you instantiate an expanded text ad or another ad type.
 
-If you generate the SOAP manually, use the *type* attribute of the *Ad* node as shown in the following example, to specify whether the ad is an expanded text ad or another type of ad.
+If you generate the SOAP manually, use the *type* attribute of the `<Ad>` node (as shown in the following example) to specify the type of ad.
 
 ```xml
 <Ads xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
@@ -72,9 +73,11 @@ If you generate the SOAP manually, use the *type* attribute of the *Ad* node as 
     </FinalUrls>
     <Path1>seattle</Path1>
     <Path2>shoe sale</Path2>
-    <Text>Find New Customers & Increase Sales! Start Advertising on Contoso Today.</Text>
+    <Text>Find New Customers & Increase Sales!</Text>
+    <TextPart2>Start Advertising on Contoso Today.</TextPart2>
     <TitlePart1>Contoso</TitlePart1>
     <TitlePart2>Fast & Easy Setup</TitlePart2>
+    <TitlePart3>Top Rated</TitlePart3>
   </Ad>
 </Ads>
 ```

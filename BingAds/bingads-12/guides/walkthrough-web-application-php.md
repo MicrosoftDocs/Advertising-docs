@@ -13,7 +13,7 @@ This example web application demonstrates OAuth authentication in production. Th
 
 ## <a name="webapp"></a>Web Application Authentication Example Walk-Through
 
-1.  Create a new file named *Index.php*, and add the code as shown in the following example.
+1. Create a new file named *Index.php*, and add the code as shown in the following example.
 
     ```php
     <?php
@@ -46,7 +46,7 @@ This example web application demonstrates OAuth authentication in production. Th
     <input type="button" onClick="return window.location='<?php echo WebAuthHelper::RedirectUri;?>';" value="OK" />
     ```
 
-2.  Create a new file named *OAuth2Callback.php*, and add the code as shown in the following example.  
+2. Create a new file named *OAuth2Callback.php*, and add the code as shown in the following example. 
 
     ```php
     <?php
@@ -125,7 +125,7 @@ This example web application demonstrates OAuth authentication in production. Th
     
     ?>
     ```
-3.  Create a new file named *CallBingAdsServices.php*, and add the code as shown in the following example.
+3. Create a new file named *CallBingAdsServices.php*, and add the code as shown in the following example.
 
     ```php
     <?php
@@ -174,7 +174,7 @@ This example web application demonstrates OAuth authentication in production. Th
     ?>
     ```
 
-4.  Create a new file named *WebAuthHelper.php*, and add the code as shown in the following example. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). 
+4. Create a new file named *WebAuthHelper.php*, and add the code as shown in the following example. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). 
 
     ```php
     <?php

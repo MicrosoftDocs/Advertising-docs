@@ -16,21 +16,9 @@ In the bulk schema each of the negative sites associated with an ad group are re
 > [!NOTE]
 > The *Ad Group Negative Site* can be added and deleted, but cannot be updated.
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Ad Group Negative Site* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+You can download all *Ad Group Negative Site* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupNegativeSites* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
-- [Ad Group](#adgroup)
-- [Campaign](#campaign)
-- [Client Id](#clientid)
-- [Id](#id)
-- [Modified Time](#modifiedtime)
-- [Parent Id](#parentid)
-- [Status](#status)
-- [Website](#website)
-
-You can download all fields of the *Ad Group Negative Site* record by including the [DownloadEntity](downloadentity.md) value of *AdGroupNegativeSites* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
-
-The following Bulk CSV example would add a new ad group negative site given a valid ad group ID (*Parent Id*). 
+The following Bulk CSV example would add a new ad group negative site if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Website,Client Id,Modified Time,Name
@@ -38,8 +26,7 @@ Format Version,,,,,,,,,6
 Ad Group Negative Site,Active,,-1111,,,contoso.com,ClientIdGoesHere,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupNegativeSite* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
-
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupNegativeSite* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -104,7 +91,18 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-### <a name="adgroup"></a>Ad Group
+For an *Ad Group Negative Site* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+
+- [Ad Group](#adgroup)
+- [Campaign](#campaign)
+- [Client Id](#clientid)
+- [Id](#id)
+- [Modified Time](#modifiedtime)
+- [Parent Id](#parentid)
+- [Status](#status)
+- [Website](#website)
+
+## <a name="adgroup"></a>Ad Group
 The name of the ad group that contains the negative site.
 
 **Add:** Read-only and Required  
@@ -112,30 +110,30 @@ The name of the ad group that contains the negative site.
 **Delete:** Read-only and Required  
 
 > [!NOTE]
-> For add and delete, you must specify either the *Parent Id* or *Ad Group* field.
+> For add and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
 
-### <a name="campaign"></a>Campaign
+## <a name="campaign"></a>Campaign
 The name of the campaign that contains the ad group and negative site.
 
 **Add:** Read-only  
 **Update:** Not applicable. A negative site can be added and deleted, but cannot be updated.  
 **Delete:** Read-only  
 
-### <a name="clientid"></a>Client Id
+## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
 **Update:** Not applicable. A negative site can be added and deleted, but cannot be updated.    
 **Delete:** Read-only  
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The system generated identifier of the negative site.
 
 **Add:** Read-only  
 **Update:** Not applicable. A negative site can be added and deleted, but cannot be updated.  
 **Delete:** Read-only and Required  
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
 
 > [!NOTE]
@@ -145,7 +143,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Update:** Not applicable. A negative site can be added and deleted, but cannot be updated.  
 **Delete:** Read-only  
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The system generated identifier of the ad group that contains the negative site.
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
@@ -155,9 +153,9 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only  
 
 > [!NOTE]
-> For add and delete, you must specify either the *Parent Id* or *Ad Group* field.
+> For add and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
 
-### <a name="status"></a>Status
+## <a name="status"></a>Status
 Represents the association status between the ad group and the negative site.
 
 If the negative site is associated with the ad group, this  field's value is *Active*.
@@ -166,9 +164,9 @@ Possible values are *Active* or *Deleted*.
 
 **Add:** Optional. The default value is *Active*.  
 **Update:** Not applicable. A negative site can be added and deleted, but cannot be updated.    
-**Delete:** Required. The Status must be set to *Deleted*. To delete a specific negative site, you must upload the *Status*, *Parent Id*, and *Website*. To delete all negative sites for the ad group, you only need to upload the *Status* and *Parent Id* in a single record. Then optionally you can add new negative site records to replace the deleted set.    
+**Delete:** Required. The Status must be set to *Deleted*. To delete a specific negative site, you must upload the [Status](#status), [Parent Id](#parentid), and [Website](#website). To delete all negative sites for the ad group, you only need to upload the [Status](#status) and [Parent Id](#parentid) in a single record. Then optionally you can add new negative site records to replace the deleted set.    
 
-### <a name="website"></a>Website
+## <a name="website"></a>Website
 
 
 **Add:** Required  

@@ -24,6 +24,7 @@ Defines the possible ad extension types.
         <xs:enumeration value="SitelinkAdExtension" />
         <xs:enumeration value="StructuredSnippetAdExtension" />
         <xs:enumeration value="PriceAdExtension" />
+        <xs:enumeration value="ActionAdExtension" />
       </xs:restriction>
     </xs:simpleType>
   </xs:list>
@@ -34,6 +35,7 @@ Defines the possible ad extension types.
 
 |Value|Description|
 |-----------|---------------|
+|<a name="actionadextension"></a>ActionAdExtension|Reserved.|
 |<a name="appadextension"></a>AppAdExtension|An ad extension that contains a link to install an application from a supported app store. For more information, see [AppAdExtension](appadextension.md).|
 |<a name="calladextension"></a>CallAdExtension|An ad extension that contains a phone number and whether it's the only clickable item in an ad. For more information, see [CallAdExtension](calladextension.md).|
 |<a name="calloutadextension"></a>CalloutAdExtension|An ad extension that contains additional text in the ad that can describe more about your business, products, or services. For more information, see [CalloutAdExtension](calloutadextension.md).|

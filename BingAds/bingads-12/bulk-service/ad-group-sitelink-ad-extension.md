@@ -10,26 +10,10 @@ dev_langs:
 ---
 # Ad Group Sitelink Ad Extension Record - Bulk
 Defines an association record between an [Ad Group](ad-group.md) and a [Sitelink Ad Extension](sitelink-ad-extension.md) that can be uploaded and downloaded in a bulk file. To upload or download the ad group or sitelink ad extension, use the [Ad Group](ad-group.md) or [Sitelink Ad Extension](sitelink-ad-extension.md) record. 
-	
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Ad Group Sitelink Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
-- [Ad Group](#adgroup)
-- [Campaign](#campaign)
-- [Client Id](#clientid)
-- [Editorial Location](#editoriallocation)
-- [Editorial Reason Code](#editorialreasoncode)
-- [Editorial Status](#editorialstatus)
-- [Editorial Term](#editorialterm)
-- [Id](#id)
-- [Modified Time](#modifiedtime)
-- [Parent Id](#parentid)
-- [Publisher Countries](#publishercountries)
-- [Status](#status)
+You can download all *Ad Group Sitelink Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupSitelinkAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
-You can download all fields of the *Ad Group Sitelink Ad Extension* record by including the [DownloadEntity](downloadentity.md) value of *AdGroupSitelinkAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
-
-The following Bulk CSV example would associate a sitelink ad extension to an ad group if the valid *Id* and *Parent Id* are provided. 
+The following Bulk CSV example would associate a sitelink ad extension to an ad group if valid [Id](#id) and [Parent Id](#parentid) values are provided. 
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Name
@@ -37,7 +21,7 @@ Format Version,,,,,,,,6
 Ad Group Sitelink Ad Extension,Active,-11,-1111,,,ClientIdGoesHere,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupSitelinkAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupSitelinkAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -75,43 +59,58 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-### <a name="adgroup"></a>Ad Group
+For an *Ad Group Sitelink Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+
+- [Ad Group](#adgroup)
+- [Campaign](#campaign)
+- [Client Id](#clientid)
+- [Editorial Location](#editoriallocation)
+- [Editorial Reason Code](#editorialreasoncode)
+- [Editorial Status](#editorialstatus)
+- [Editorial Term](#editorialterm)
+- [Id](#id)
+- [Modified Time](#modifiedtime)
+- [Parent Id](#parentid)
+- [Publisher Countries](#publishercountries)
+- [Status](#status)
+
+## <a name="adgroup"></a>Ad Group
 The name of the ad group where this ad extension is associated or removed.  
 
 **Add:** Read-only and Required  
 **Delete:** Read-only and Required  
 
 > [!NOTE]
-> For add and delete, you must specify either the *Parent Id* or both of the *Ad Group* and *Campaign* fields. 
+> For add and delete, you must specify either the [Parent Id](#parentid) or both of the [Ad Group](#adgroup) and [Campaign](#campaign) fields. 
 
-### <a name="campaign"></a>Campaign
+## <a name="campaign"></a>Campaign
 The name of the campaign that contains the ad group where this ad extension is associated or removed.
 
 **Add:** Read-only  
 **Delete:** Read-only  
 
 > [!NOTE]
-> For add and delete, you must specify either the *Parent Id* or both of the *Ad Group* and *Campaign* fields. 
+> For add and delete, you must specify either the [Parent Id](#parentid) or both of the [Ad Group](#adgroup) and [Campaign](#campaign) fields. 
 
-### <a name="clientid"></a>Client Id
+## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
 **Delete:** Read-only  
 
-### <a name="editoriallocation"></a>Editorial Location
+## <a name="editoriallocation"></a>Editorial Location
 The component or property of the ad extension that failed editorial review. 
 
 **Add:** Read-only  
 **Delete:** Read-only  
 
-### <a name="editorialreasoncode"></a>Editorial Reason Code
+## <a name="editorialreasoncode"></a>Editorial Reason Code
 A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Reason Codes](../guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Delete:** Read-only  
 
-### <a name="editorialstatus"></a>Editorial Status
+## <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
 Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
@@ -119,7 +118,7 @@ Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*
 **Add:** Read-only  
 **Delete:** Read-only  
 
-### <a name="editorialterm"></a>Editorial Term
+## <a name="editorialterm"></a>Editorial Term
 The term that failed editorial review.
 
 This field will not be set if a combination of terms caused the failure or if the failure was based on a policy violation.
@@ -127,7 +126,7 @@ This field will not be set if a combination of terms caused the failure or if th
 **Add:** Read-only  
 **Delete:** Read-only  
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The identifier of the ad extension that is associated or removed from the ad group.
 
 This bulk field maps to the *Id* field of the [Sitelink Ad Extension](sitelink-ad-extension.md) record. 
@@ -135,7 +134,7 @@ This bulk field maps to the *Id* field of the [Sitelink Ad Extension](sitelink-a
 **Add:** Read-only and Required. You must either specify an existing ad extension identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Sitelink Ad Extension](sitelink-ad-extension.md) record. This is recommended if you are adding new ad extensions and associations in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
 
 > [!NOTE]
@@ -144,7 +143,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Add:** Read-only  
 **Delete:** Read-only  
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The identifier of the ad group where this ad extension is associated or removed.
 	
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record. 
@@ -153,9 +152,9 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only and Required  
 
 > [!NOTE]
-> For add and delete, you must specify either the *Parent Id* or both of the *Ad Group* and *Campaign* fields. 
+> For add and delete, you must specify either the [Parent Id](#parentid) or both of the [Ad Group](#adgroup) and [Campaign](#campaign) fields. 
 
-### <a name="publishercountries"></a>Publisher Countries
+## <a name="publishercountries"></a>Publisher Countries
 The list of publisher countries whose editorial guidelines do not allow the specified [term](#editorialterm).
 
 In a bulk file, the list of publisher countries are delimited with a semicolon (;).
@@ -163,7 +162,7 @@ In a bulk file, the list of publisher countries are delimited with a semicolon (
 **Add:** Read-only  
 **Delete:** Read-only  
 
-### <a name="status"></a>Status
+## <a name="status"></a>Status
 Represents the association status between the ad group and the ad extension. 
 
 Possible values are *Active* and *Deleted*. If the ad extension is associated with the ad group, this field's value is *Active*.

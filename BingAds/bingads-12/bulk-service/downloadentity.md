@@ -652,6 +652,48 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
+    <xs:enumeration value="ActionAdExtensions">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">92</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignActionAdExtensions">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">93</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="AdGroupActionAdExtensions">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">94</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="AccountActionAdExtensions">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">95</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="ResponsiveSearchAds">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">96</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="ResponsiveSearchAdLabels">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">97</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -660,7 +702,8 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 
 |Value|Description|
 |-----------|---------------|
-|<a name="accountactionlinkadextensions"></a>AccountActionLinkAdExtensions|Reserved for future use.|
+|<a name="accountactionadextensions"></a>AccountActionAdExtensions|Reserved for future use.|
+|<a name="accountactionlinkadextensions"></a>AccountActionLinkAdExtensions|This deprecated value is reserved for internal use and will be removed from a future version of the Bing Ads API.|
 |<a name="accountappadextensions"></a>AccountAppAdExtensions|Include [Account App Ad Extension](account-app-ad-extension.md) records in the download that each represent the association relationship between an account and an app ad extension. For [App Ad Extension](app-ad-extension.md) records, you should include the AppAdExtensions value in the download request.|
 |<a name="accountcalloutadextensions"></a>AccountCalloutAdExtensions|Include [Account Callout Ad Extension](account-callout-ad-extension.md) records in the download that represents the association relationship between an account and a callout ad extension. For [Callout Ad Extension](callout-ad-extension.md) records, you should include the CalloutAdExtensions value in the download request.|
 |<a name="accountimageadextensions"></a>AccountImageAdExtensions|Include [Account Image Ad Extension](account-image-ad-extension.md) records in the download that represents the association relationship between an account and an image ad extension. For [Image Ad Extension](image-ad-extension.md) records, you should include the ImageAdExtensions value in the download request.|
@@ -669,8 +712,10 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="accountreviewadextensions"></a>AccountReviewAdExtensions|Include [Account Review Ad Extension](account-review-ad-extension.md) records in the download that each represent the association relationship between an account and a review ad extension. For [Review Ad Extension](review-ad-extension.md) records, you should include the ReviewAdExtensions value in the download request.|
 |<a name="accountsitelinkadextensions"></a>AccountSitelinkAdExtensions|Include [Account Sitelink Ad Extension](account-sitelink-ad-extension.md) records in the download that represents the association relationship between an account and a sitelink ad extension. For [Sitelink Ad Extension](sitelink-ad-extension.md) records, you should include the SitelinkAdExtensions value in the download request.|
 |<a name="accountstructuredsnippetadextensions"></a>AccountStructuredSnippetAdExtensions|Include [Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md) records in the download that represents the association relationship between an account and a structured snippet ad extension. For [Structured Snippet Ad Extension](structured-snippet-ad-extension.md) records, you should include the StructuredSnippetAdExtensions value in the download request.|
-|<a name="actionlinkadextensions"></a>ActionLinkAdExtensions|Reserved for future use.|
-|<a name="adgroupactionlinkadextensions"></a>AdGroupActionLinkAdExtensions|Reserved for future use.|
+|<a name="actionadextensions"></a>ActionAdExtensions|Reserved for future use.|
+|<a name="actionlinkadextensions"></a>ActionLinkAdExtensions|This deprecated value is reserved for internal use and will be removed from a future version of the Bing Ads API.|
+|<a name="adgroupactionadextensions"></a>AdGroupActionAdExtensions|Reserved for future use.|
+|<a name="adgroupactionlinkadextensions"></a>AdGroupActionLinkAdExtensions|This deprecated value is reserved for internal use and will be removed from a future version of the Bing Ads API.|
 |<a name="adgroupappadextensions"></a>AdGroupAppAdExtensions|Include [Ad Group App Ad Extension](ad-group-app-ad-extension.md) records in the download that each represent the association relationship between an ad group and an app ad extension. For [App Ad Extension](app-ad-extension.md) records, you should include the AppAdExtensions value in the download request.|
 |<a name="adgroupaudienceassociations"></a>AdGroupAudienceAssociations|Include [Ad Group Custom Audience Association](ad-group-custom-audience-association.md), [Ad Group In Market Audience Association](ad-group-in-market-audience-association.md), [Ad Group Product Audience Association](ad-group-product-audience-association.md), and [Ad Group Remarketing List Association](ad-group-remarketing-list-association.md) records in the download data.<br/><br/>To get audience associations by type instead of requesting all types of audience associations, you can include one or more of the AdGroupCustomAudienceAssociations, AdGroupInMarketAudienceAssociations, AdGroupProductAudienceAssociations, and AdGroupRemarketingListAssociations values in the download request.|
 |<a name="adgroupcalloutadextensions"></a>AdGroupCalloutAdExtensions|Include [Ad Group Callout Ad Extension](ad-group-callout-ad-extension.md) records in the download that each represent the association relationship between an ad group and a callout ad extension. For [Callout Ad Extension](callout-ad-extension.md) records, you should include the CalloutAdExtensions value in the download request.|
@@ -698,7 +743,7 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="adgroupsitelinkadextensions"></a>AdGroupSitelinkAdExtensions|Include [Ad Group Sitelink Ad Extension](ad-group-sitelink-ad-extension.md) records in the download that each represent the association relationship between an ad group and a sitelink ad extension. For [Sitelink Ad Extension](sitelink-ad-extension.md) records, you should include the SitelinkAdExtensions value in the download request.|
 |<a name="adgroupstructuredsnippetadextensions"></a>AdGroupStructuredSnippetAdExtensions|Include [Ad Group Structured Snippet Ad Extension](ad-group-structured-snippet-ad-extension.md) records in the download that each represent the association relationship between an ad group and a structured snippet ad extension. For [Structured Snippet Ad Extension](structured-snippet-ad-extension.md) records, you should include the StructuredSnippetAdExtensions value in the download request.|
 |<a name="adgrouptargetcriterions"></a>AdGroupTargetCriterions|Include [Ad Group Age Criterion](ad-group-age-criterion.md), [Ad Group Company Name Criterion](ad-group-company-name-criterion.md), [Ad Group DayTime Criterion](ad-group-daytime-criterion.md), [Ad Group DeviceOS Criterion](ad-group-deviceos-criterion.md), [Ad Group Gender Criterion](ad-group-gender-criterion.md), [Ad Group Industry Criterion](ad-group-industry-criterion.md), [Ad Group Job Function Criterion](ad-group-job-function-criterion.md), [Ad Group Location Criterion](ad-group-location-criterion.md), [Ad Group Location Intent Criterion](ad-group-location-intent-criterion.md), [Ad Group Negative Age Criterion](ad-group-negative-age-criterion.md), [Ad Group Negative Company Name Criterion](ad-group-negative-company-name-criterion.md), [Ad Group Negative Gender Criterion](ad-group-negative-gender-criterion.md), [Ad Group Negative Industry Criterion](ad-group-negative-industry-criterion.md), [Ad Group Negative Job Function Criterion](ad-group-negative-job-function-criterion.md), [Ad Group Negative Location Criterion](ad-group-negative-location-criterion.md), and [Ad Group Radius Criterion](ad-group-radius-criterion.md) records in the download data.|
-|<a name="ads"></a>Ads|Include [App Install Ad](app-install-ad.md), [Dynamic Search Ad](dynamic-search-ad.md), [Expanded Text Ad](expanded-text-ad.md), [Product Ad](product-ad.md), [Responsive Ad](responsive-ad.md), and [Text Ad](text-ad.md) records in the download data.<br/><br/>To get ads by type instead of requesting all types of ads, you can include one or more of the AppInstallAds, DynamicSearchAds, ExpandedTextAds, ProductAds, ResponsiveAds, and TextAds values in the download request.|
+|<a name="ads"></a>Ads|Include [App Install Ad](app-install-ad.md), [Dynamic Search Ad](dynamic-search-ad.md), [Expanded Text Ad](expanded-text-ad.md), [Product Ad](product-ad.md), [Responsive Ad](responsive-ad.md), [Responsive Search Ad](responsive-search-ad.md), and [Text Ad](text-ad.md) records in the download data.<br/><br/>To get ads by type instead of requesting all types of ads, you can include one or more of the AppInstallAds, DynamicSearchAds, ExpandedTextAds, ProductAds, ResponsiveAds, and TextAds values in the download request.|
 |<a name="appadextensions"></a>AppAdExtensions|Include [App Ad Extension](app-ad-extension.md) records in the download data.<br/><br/>To get all app ad extensions from your account's extension library, use the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) operation. To get only the app ad extensions that are associated with entities within the specified campaigns, use the [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operation.|
 |<a name="appinstalladlabels"></a>AppInstallAdLabels|Include [App Install Ad Label](app-install-ad-label.md) records in the download that each represent a label applied to an app install ad. For [Label](label.md) records, you should include the Labels value in the download request.|
 |<a name="appinstallads"></a>AppInstallAds|Include [App Install Ad](app-install-ad.md) records in the download data.<br/><br/>To get all types of ads instead of requesting ads by type, you can include the Ads value in the download request.|
@@ -706,7 +751,8 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="budgets"></a>Budgets|Include [Budget](budget.md) records in the download data.|
 |<a name="calladextensions"></a>CallAdExtensions|Include [Call Ad Extension](call-ad-extension.md) records in the download data.<br/><br/>To get all call ad extensions from your account's extension library, use the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) operation. To get only the call ad extensions that are associated with entities within the specified campaigns, use the [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operation.|
 |<a name="calloutadextensions"></a>CalloutAdExtensions|Include [Callout Ad Extension](callout-ad-extension.md) records in the download data.<br/><br/>To get all callout ad extensions from your account's extension library, use the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) operation. To get only the callout ad extensions that are associated with entities within the specified campaigns, use the [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operation.|
-|<a name="campaignactionlinkadextensions"></a>CampaignActionLinkAdExtensions|Reserved for future use.|
+|<a name="campaignactionadextensions"></a>CampaignActionAdExtensions|Reserved for future use.|
+|<a name="campaignactionlinkadextensions"></a>CampaignActionLinkAdExtensions|This deprecated value is reserved for internal use and will be removed from a future version of the Bing Ads API.|
 |<a name="campaignappadextensions"></a>CampaignAppAdExtensions|Include [Campaign App Ad Extension](campaign-app-ad-extension.md) records in the download that each represent the association relationship between a campaign and an app ad extension. For [App Ad Extension](app-ad-extension.md) records, you should include the AppAdExtensions value in the download request.|
 |<a name="campaigncalladextensions"></a>CampaignCallAdExtensions|Include [Campaign Call Ad Extension](campaign-call-ad-extension.md) records in the download that represents the association relationship between a campaign and a call ad extension. For [Call Ad Extension](call-ad-extension.md) records, you should include the CallAdExtensions value in the download request.|
 |<a name="campaigncalloutadextensions"></a>CampaignCalloutAdExtensions|Include [Campaign Callout Ad Extension](campaign-callout-ad-extension.md) records in the download that represents the association relationship between a campaign and a callout ad extension. For [Callout Ad Extension](callout-ad-extension.md) records, you should include the CalloutAdExtensions value in the download request.|
@@ -729,7 +775,7 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="dynamicsearchads"></a>DynamicSearchAds|Include [Dynamic Search Ad](dynamic-search-ad.md) records in the download data.<br/><br/>To get all types of ads instead of requesting ads by type, you can include the Ads value in the download request.|
 |<a name="expandedtextadlabels"></a>ExpandedTextAdLabels|Include [Expanded Text Ad Label](expanded-text-ad-label.md) records in the download that each represent a label applied to an expanded text ad. For [Label](label.md) records, you should include the Labels value in the download request.|
 |<a name="expandedtextads"></a>ExpandedTextAds|Include [Expanded Text Ad](expanded-text-ad.md) records in the download data.<br/><br/>To get all types of ads instead of requesting ads by type, you can include the Ads value in the download request.|
-|<a name="experiments"></a>Experiments|Reserved.|
+|<a name="experiments"></a>Experiments|Reserved for future use.|
 |<a name="imageadextensions"></a>ImageAdExtensions|Include [Image Ad Extension](image-ad-extension.md) records in the download data.<br/><br/>To get all image ad extensions from your account's extension library, use the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) operation. To get only the image ad extensions that are associated with entities within the specified campaigns, use the [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operation.|
 |<a name="inmarketaudiences"></a>InMarketAudiences|Include [In Market Audience](in-market-audience.md) records in the download data.<br/><br/>The [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operations return the same set of in-market audiences for the current authenticated user. All in-market audiences that have Scope set to Customer are included. The in-market audiences that have Scope set to Account are also included if the user has access to view or manage those accounts. In other words, if an in-market audience is in account scope for an account that the user cannot access, then it is excluded from the download results.|
 |<a name="keywordlabels"></a>KeywordLabels|Include [Keyword Label](keyword-label.md) records in the download that each represent a label applied to a keyword. For [Label](label.md) records, you should include the Labels value in the download request.|
@@ -744,6 +790,8 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="remarketinglists"></a>RemarketingLists|Include [Remarketing List](remarketing-list.md) records in the download data.<br/><br/>The [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operations return the same set of remarketing lists for the current authenticated user. All remarketing lists that have Scope set to Customer are included. The remarketing lists that have Scope set to Account are also included if the user has access to view or manage those accounts. In other words, if a remarketing list is in account scope for an account that the user cannot access, then it is excluded from the download results.|
 |<a name="responsiveadlabels"></a>ResponsiveAdLabels|Include [Responsive Ad Label](responsive-ad-label.md) records in the download that each represent a label applied to a responsive ad. For [Label](label.md) records, you should include the Labels value in the download request.|
 |<a name="responsiveads"></a>ResponsiveAds|Include [Responsive Ad](responsive-ad.md) records in the download data.<br/><br/>To get all types of ads instead of requesting ads by type, you can include the Ads value in the download request.|
+|<a name="responsivesearchadlabels"></a>ResponsiveSearchAdLabels|Include [Responsive Search Ad Label](responsive-search-ad-label.md) records in the download that each represent a label applied to a responsive search ad. For [Label](label.md) records, you should include the Labels value in the download request.|
+|<a name="responsivesearchads"></a>ResponsiveSearchAds|Include [Responsive Search Ad](responsive-search-ad.md) records in the download data.<br/><br/>To get all types of ads instead of requesting ads by type, you can include the Ads value in the download request.|
 |<a name="reviewadextensions"></a>ReviewAdExtensions|Include [Review Ad Extension](review-ad-extension.md) records in the download data.<br/><br/>To get all review ad extensions from your account's extension library, use the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) operation. To get only the review ad extensions that are associated with entities within the specified campaigns, use the [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operation.|
 |<a name="sharednegativekeywords"></a>SharedNegativeKeywords|Include [Shared Negative Keyword](shared-negative-keyword.md) records in the download data. Shared negative keywords belong to a negative keyword list. For [Negative Keyword List](negative-keyword-list.md) records, you should include the NegativeKeywordLists value in the download request.|
 |<a name="similarremarketinglists"></a>SimilarRemarketingLists|Include [Similar Remarketing List](similar-remarketing-list.md) records in the download data.<br/><br/>The [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) and [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) operations return the same set of similar remarketing lists for the current authenticated user. All similar remarketing lists that have Scope set to Customer are included. The similar remarketing lists that have Scope set to Account are also included if the user has access to view or manage those accounts. In other words, if a similar remarketing list is in account scope for an account that the user cannot access, then it is excluded from the download results.|

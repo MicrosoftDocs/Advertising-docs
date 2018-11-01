@@ -21,16 +21,6 @@ After the [OfflineConversionGoal](../campaign-management-service/offlineconversi
 > [!NOTE]
 > Although you can upload offline conversions in sandbox for functional testing, the offline conversion data will not be attributed in sandbox performance reporting data.
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Offline Conversion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
-
-- [Client Id](#clientid)
-- [Conversion Currency Code](#conversioncurrencycode)
-- [Conversion Name](#conversionname)
-- [Conversion Time](#conversiontime)
-- [Conversion Value](#conversionvalue)
-- [Microsoft Click Id](#microsoftclickid)
-
 The following Bulk CSV example would add a new offline conversion. 
 
 ```csv
@@ -39,8 +29,7 @@ Format Version,,,,,6,,,,,
 Offline Conversion,,,,ClientIdGoesHere,,USD,My Goal Name,7/27/2017 6:50:54 PM,10,f894f652ea334e739002f7167ab8f8e3
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload the *BulkOfflineConversion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
-
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload the *BulkOfflineConversion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -82,26 +71,35 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-### <a name="clientid"></a>Client Id
+For an *Offline Conversion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+
+- [Client Id](#clientid)
+- [Conversion Currency Code](#conversioncurrencycode)
+- [Conversion Name](#conversionname)
+- [Conversion Time](#conversiontime)
+- [Conversion Value](#conversionvalue)
+- [Microsoft Click Id](#microsoftclickid)
+
+## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
 
-### <a name="conversioncurrencycode"></a>Conversion Currency Code
+## <a name="conversioncurrencycode"></a>Conversion Currency Code
 The currency code for the offline conversion.
 
 For more information, see [Currencies](../guides/currencies.md).
 
 **Add:** Optional. If you do not specify an offline conversion currency code, then the *CurrencyCode* element of the goal's [ConversionGoalRevenue](../campaign-management-service/conversiongoalrevenue.md) is used.  
 
-### <a name="conversionname"></a>Conversion Name
+## <a name="conversionname"></a>Conversion Name
 The conversion goal name.
 
 This name must match an existing conversion goal name, otherwise the offline conversion goal data will not be applied.
 
 **Add:** Required  
 
-### <a name="conversiontime"></a>Conversion Time
+## <a name="conversiontime"></a>Conversion Time
 The date and time when the offline conversion occurred. 
 
 The date and time must be within the last 90 days, otherwise the operation will fail when you attempt to send Bing Ads the offline conversion data.
@@ -122,12 +120,12 @@ The offline conversion data with MicrosoftClickId=*1* will not be uploaded since
 
 **Add:** Required   
 
-### <a name="conversionvalue"></a>Conversion Value
+## <a name="conversionvalue"></a>Conversion Value
 The offline conversion value.
 
 **Add:** Optional. If you do not specify an offline conversion value, then the *Value* element of the goal's [ConversionGoalRevenue](../campaign-management-service/conversiongoalrevenue.md) is used.  
 
-### <a name="microsoftclickid"></a>Microsoft Click Id
+## <a name="microsoftclickid"></a>Microsoft Click Id
 The MSCLKID for the offline conversion.
 
 To ensure that auto-tagging is enabled for Microsoft click ID tracking, use the *MSCLKID Auto Tagging Enabled* field of the [Account](account.md) record. 

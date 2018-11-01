@@ -17,11 +17,11 @@ Microsoft Audience Ads is a native advertising solution optimized for search adv
 > This feature is currently available in the United States, Canada, the United Kingdom, and Australia. If you advertise in the United States, Canada, the United Kingdom, or Australia and want to opt in to audience ads, [contact support](http://go.microsoft.com/fwlink?LinkId=398371). 
 
 > [!TIP]
-> You can prepare for the Microsoft Audience Network pilot now by:
-> - Add images via Image Extensions. By adding high-quality images, you can gain access to more volume outside of the SERP, and more high-quality clicks and conversions in brand-safe placements. All the while, you get to manage Microsoft Audience Ads in the familiar, easy-to-use Bing Ads platform.  
-> - Optimize Microsoft Audience Ads. You can optimize Microsoft Audience Ads by extending search campaigns and ad groups with audience ads bid adjustments.  
-> - Refine your audience targeting strategy on search. Get up and running with Remarketing, In-Market Audiences (in pilot) and Custom Audiences (in pilot). That way an audience targeting strategy will be ready to go with separate audience campaigns if you choose to run them later.  
-> - Implement and update your UET tag. Ensure you're ready to use the Product Audiences targeting dimension with new parameters – available as part of the audience campaigns pilot.  
+> You can prepare for the Microsoft Audience Network now by:
+> - Add images via Image Extensions. By adding high-quality images, you can gain access to more volume outside of the SERP, and more high-quality clicks and conversions in brand-safe placements. All the while, you get to manage Microsoft Audience Ads in the familiar, easy-to-use Bing Ads platform. 
+> - Optimize Microsoft Audience Ads. You can optimize Microsoft Audience Ads by extending search campaigns and ad groups with audience ads bid adjustments. 
+> - Refine your audience targeting strategy on search. Get up and running with Remarketing, In-Market Audiences (in pilot) and Custom Audiences (in pilot). That way an audience targeting strategy will be ready to go with separate audience campaigns if you choose to run them later. 
+> - Implement and update your UET tag. Ensure you're ready to use the Product Audiences targeting dimension with new parameters – available as part of the audience campaigns pilot. 
 
 Intent data from search can be used outside of search to create a powerful match between the user's intent and your offering.
 - User intent targeting e.g., Remarketing in paid search, In-market​ audiences​, Custom audiences, and Product audiences (Coming soon with [Audience campaigns](#audience-campaigns)).
@@ -31,19 +31,19 @@ Intent data from search can be used outside of search to create a powerful match
 Our advertising offers, including audience marketing solutions, are anchored in the consumer audience understanding provided by the Microsoft Graph. The Microsoft Graph data sets include search and web activity, LinkedIn profile data, demographic and customer data. 
 
 There are two great ways to run Microsoft Audience Ads:
-1.	For convenience, you can extend existing Search campaigns with image ad extensions and audience ads bid adjustments. 
-2.  With Audience campaigns you will have control to separate your budgets, ads, and bids from Search campaigns.
+1. For convenience, you can extend existing Search campaigns with image ad extensions and audience ads bid adjustments. 
+2. With Audience campaigns you will have control to separate your budgets, ads, and bids from Search campaigns.
 
 ![Bing Ads Buying Platform](media/bing-ads-buying-platform.png "Bing Ads Buying Platform")  
 
 The Microsoft Audience Network supports three ad formats: image-based ads, text ads and feed-based ads. For convenience, you can extend existing [Search campaigns](#search-campaigns) with image ad extensions and audience ads bid adjustments. With [Audience campaigns](#audience-campaigns) you will have control to separate your budgets, ads, and bids from search campaigns.
 - Bing search ads in the Bing Network: For example, create a [Search campaign](#search-campaigns), expanded text ads and image ad extensions. 
-- Bing search ads in the Microsoft Audience Network: For example, create a [Search campaign](#search-campaigns), expanded text ads and image ad extensions. In addition, set the audience ads bid adjustment to indicate whether you prefer audience ads for the campaign or ad group.  
+- Bing search ads in the Microsoft Audience Network: For example, create a [Search campaign](#search-campaigns), expanded text ads and image ad extensions. In addition, set the audience ads bid adjustment to indicate whether you prefer audience ads for the campaign or ad group. 
 - Microsoft Audience Ads (image-based) in the Microsoft Audience Network: For example, create an [Audience campaign](#audience-campaigns) and responsive ads. Note that Microsoft Audience Ads refers to the ad placement, while "responsive ad" refers to the data type that is used via the Bing Ads API for specific scenarios. 
-- Microsoft Audience Ads (feed-based) in the Microsoft Audience Network: For example, create an [Audience campaign](#audience-campaigns) with the Bing Shopping setting.  
+- Microsoft Audience Ads (feed-based) in the Microsoft Audience Network: For example, create an [Audience campaign](#audience-campaigns) with the Bing Shopping setting. 
 
 ## <a name="audience-campaigns"></a>Audience Campaigns
-For image-based or feed-based ads in the Microsoft Audience Network, you'll need to be enabled for Audience campaigns. With Audience campaigns you will have control to separate your budgets, ads, and bids from search campaigns.  
+For image-based or feed-based ads in the Microsoft Audience Network, you'll need to be enabled for Audience campaigns. With Audience campaigns you will have control to separate your budgets, ads, and bids from search campaigns. 
 
 ### <a name="responsive-audience-ads"></a>Responsive Audience Ads
 For image-based Audience Ads in the Microsoft Audience Network you'll create an Audience campaign with responsive ads. Note that Microsoft Audience Ads refers to the ad placement, while "responsive ad" refers to the data type that is used via the Bing Ads API for specific scenarios.

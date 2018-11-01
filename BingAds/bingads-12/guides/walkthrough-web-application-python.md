@@ -9,7 +9,7 @@ dev_langs:
   - python
 ---
 # Walkthrough: Bing Ads Web Application in Python
-This tutorial explores how to get started running a Bing Ads web application using the [Bing Ads Python SDK](client-libraries.md), the [Visual Studio Code](https://code.visualstudio.com/) IDE, and the [Django](https://www.djangoproject.com/) web framework.  
+This tutorial explores how to get started running a Bing Ads web application using the [Bing Ads Python SDK](client-libraries.md), the [Visual Studio Code](https://code.visualstudio.com/) IDE, and the [Django](https://www.djangoproject.com/) web framework. 
 
 This tutorial does not explore various details about Django itself, such as working with data models and creating an administrative interface. For guidance on those aspects, refer to the [Django documentation](https://docs.djangoproject.com/en/2.1/intro/tutorial01/). For more details about how to work with Django in the VS Code terminal, editor, and debugger see [Use Django in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-django). This tutorial borrows heavily from the setup instructions in [Use Django in Visual Studio Code](https://code.visualstudio.com/docs/python/tutorial-django). 
 

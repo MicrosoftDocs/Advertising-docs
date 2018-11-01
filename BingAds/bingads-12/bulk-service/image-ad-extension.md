@@ -13,29 +13,7 @@ Defines an image ad extension that can be downloaded and uploaded in a bulk file
 
 You can associate an image ad extension with the account or with campaigns and ad groups in the account. For each account, only 1,000 campaigns and 1,000 ad groups can be associated with image ad extensions. Each entity (account, campaign, or ad group) can be associated with up to 6 image ad extensions. Use the [Account Image Ad Extension](account-image-ad-extension.md), [Ad Group Image Ad Extension](ad-group-image-ad-extension.md), and [Campaign Image Ad Extension](campaign-image-ad-extension.md) records to manage image ad extension associations.
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Image Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
-
-- [Ad Schedule](#adschedule)
-- [Alternative Text](#alternativetext)
-- [Client Id](#clientid)
-- [Destination Url](#destinationurl)
-- [Editorial Location](#editoriallocation)
-- [Editorial Reason Code](#editorialreasoncode)
-- [Editorial Status](#editorialstatus)
-- [Editorial Term](#editorialterm)
-- [End Date](#enddate)
-- [Id](#id)
-- [Media Ids](#mediaids)
-- [Modified Time](#modifiedtime)
-- [Parent Id](#parentid)
-- [Publisher Countries](#publishercountries)
-- [Start Date](#startdate)
-- [Status](#status)
-- [Use Searcher Time Zone](#usesearchertimezone)
-- [Version](#version)
-
-You can download all fields of the *Image Ad Extension* record by including the [DownloadEntity](downloadentity.md) value of *ImageAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all *Image Ad Extension* records in the account by including the [DownloadEntity](downloadentity.md) value of *ImageAdExtensions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Image Ad Extension to the account's shared library. 
 
@@ -45,8 +23,7 @@ Format Version,,,,,,,,,,,6,,,,
 Image Ad Extension,Active,-14,0,,,ClientIdGoesHere,,,,,,,FALSE,ImageAdExtension Alternative Text,ImageMediaIdHere
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkImageAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
-
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkImageAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -90,10 +67,31 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-### <a name="adschedule"></a>Ad Schedule
+For an *Image Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+
+- [Ad Schedule](#adschedule)
+- [Alternative Text](#alternativetext)
+- [Client Id](#clientid)
+- [Destination Url](#destinationurl)
+- [Editorial Location](#editoriallocation)
+- [Editorial Reason Code](#editorialreasoncode)
+- [Editorial Status](#editorialstatus)
+- [Editorial Term](#editorialterm)
+- [End Date](#enddate)
+- [Id](#id)
+- [Media Ids](#mediaids)
+- [Modified Time](#modifiedtime)
+- [Parent Id](#parentid)
+- [Publisher Countries](#publishercountries)
+- [Start Date](#startdate)
+- [Status](#status)
+- [Use Searcher Time Zone](#usesearchertimezone)
+- [Version](#version)
+
+## <a name="adschedule"></a>Ad Schedule
 This field is not supported for image ad extensions. Scheduling is supported for other ad extension types.
 
-### <a name="alternativetext"></a>Alternative Text
+## <a name="alternativetext"></a>Alternative Text
 Alternative description of the image media for usability. If the image could not be displayed, the alternative text is used instead.
 
 The maximum length for this element is 35 characters.
@@ -102,14 +100,14 @@ The maximum length for this element is 35 characters.
 **Update:** Required    
 **Delete:** Read-only  
 
-### <a name="clientid"></a>Client Id
+## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
 **Update:** Optional    
 **Delete:** Read-only  
 
-### <a name="destinationurl"></a>Destination URL
+## <a name="destinationurl"></a>Destination URL
 The URL of the webpage to take the user to when they click the image.
 
 The URL can contain dynamic text strings such as {keyword}. For more information, see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
@@ -123,21 +121,21 @@ The URL can contain a maximum of 1,024 characters. If the URL does not specify a
 **Update:** Required    
 **Delete:** Read-only  
 
-### <a name="editoriallocation"></a>Editorial Location
+## <a name="editoriallocation"></a>Editorial Location
 The component or property of the ad extension that failed editorial review. 
 
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="editorialreasoncode"></a>Editorial Reason Code
+## <a name="editorialreasoncode"></a>Editorial Reason Code
 A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Reason Codes](../guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="editorialstatus"></a>Editorial Status
+## <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
 Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
@@ -146,7 +144,7 @@ Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="editorialterm"></a>Editorial Term
+## <a name="editorialterm"></a>Editorial Term
 The term that failed editorial review.
 
 This field will not be set if a combination of terms caused the failure or if the failure was based on a policy violation.
@@ -155,17 +153,17 @@ This field will not be set if a combination of terms caused the failure or if th
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="enddate"></a>End Date
+## <a name="enddate"></a>End Date
 This field is not supported for image ad extensions. Scheduling is supported for other ad extension types.
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The system generated identifier of the ad extension.
 
 **Add:** Optional. You must either leave this field empty, or specify a negative identifier. A negative identifier set for the ad extension can then be referenced in the *Id* field of dependent record types such as [Ad Group Image Ad Extension](ad-group-image-ad-extension.md) and [Campaign Image Ad Extension](campaign-image-ad-extension.md). This is recommended if you are adding new ad extensions and new dependent records in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
-### <a name="mediaids"></a>Media Ids
+## <a name="mediaids"></a>Media Ids
 The identifiers of the images to include in the ad. You may not specify media identifiers for more than one image of the same aspect ratio. In other words each of  the referenced images must have different aspect ratios.
 
 You can specify up to four (4) image media  identifiers. While the minimum required is one image media ID, in order to qualify for all ad placements you must provide four image media identifiers, where each ID corresponds to an [Image](../campaign-management-service/image.md) of one of the four supported [Media](../campaign-management-service/media.md) types (aspect ratios). The supported aspect ratios are 16:9, 1.5:1, 4:3, and 1.2:1. For more information see the [Image](../campaign-management-service/image.md) data object reference documentation.
@@ -178,7 +176,7 @@ In a bulk file, the list of media identifiers are delimited with a semicolon (;)
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
 
 > [!NOTE]
@@ -188,7 +186,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The system generated identifier of the account that contains the ad extension.
 
 This bulk field maps to the *Id* field of the [Account](account.md) record.
@@ -197,7 +195,7 @@ This bulk field maps to the *Id* field of the [Account](account.md) record.
 **Update:** Read-only  
 **Delete:** Read-only  
   
-### <a name="publishercountries"></a>Publisher Countries
+## <a name="publishercountries"></a>Publisher Countries
 The list of publisher countries whose editorial guidelines do not allow the specified [term](#editorialterm).
 
 In a bulk file, the list of publisher countries are delimited with a semicolon (;).
@@ -206,10 +204,10 @@ In a bulk file, the list of publisher countries are delimited with a semicolon (
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="startdate"></a>Start Date
+## <a name="startdate"></a>Start Date
 This field is not supported for image ad extensions. Scheduling is supported for other ad extension types.
 
-### <a name="status"></a>Status
+## <a name="status"></a>Status
 The status of the ad extension.
 
 Possible values are *Active* or *Deleted*. 
@@ -218,7 +216,7 @@ Possible values are *Active* or *Deleted*.
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Required. The Status must be set to *Deleted*.
 
-### <a name="usesearchertimezone"></a>Use Searcher Time Zone
+## <a name="usesearchertimezone"></a>Use Searcher Time Zone
 Determines whether to use the account time zone or the time zone of the search user where the ads could be delivered.
 
 Set this property to *TRUE* if you want the ad extensions to be shown in the search user's time zone, and otherwise set it to *FALSE*.
@@ -227,7 +225,7 @@ Set this property to *TRUE* if you want the ad extensions to be shown in the sea
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
 **Delete:** Read-only  
 
-### <a name="version"></a>Version
+## <a name="version"></a>Version
 The number of times the contents of the ad extension has been updated. The version is set to 1 when you add the extension and is incremented each time it’s revised.
 
 **Add:** Read-only  

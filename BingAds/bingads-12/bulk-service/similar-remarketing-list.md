@@ -19,21 +19,7 @@ Defines an audience that is similar to one of your remarketing lists.
 > [!NOTE]
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Similar Remarketing List* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
-
-- [Audience](#audience)
-- [Audience Network Size](#audiencenetworksize)
-- [Audience Search Size](#audiencesearchsize)
-- [Id](#id)
-- [Modified Time](#modifiedtime)
-- [Parent Id](#parentid)
-- [Scope](#scope)
-- [Source Id](#sourceid)
-- [Status](#status)
-- [Supported Campaign Types](#supportedcampaigntypes)
-
-You can download all fields of the *Similar Remarketing List* record by including the [DownloadEntity](downloadentity.md) value of *SimilarRemarketingLists* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all *Similar Remarketing List* records in the account by including the [DownloadEntity](downloadentity.md) value of *SimilarRemarketingLists* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following is a Bulk CSV example download for similar remarketing list. 
 
@@ -43,8 +29,7 @@ Format Version,,,,,,6,,,,
 Similar Remarketing List,Active,IdHere,ParentIdHere,ClientIdGoesHere,,,Account,Similar Remarketing List,Search;DynamicSearchAds;Shopping;Audience,SourceRemarketingListIdHere
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to download the *BulkSimilarRemarketingList* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
-
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to download the *BulkSimilarRemarketingList* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 // Map properties in the Bulk file to the BulkSimilarRemarketingList
@@ -77,7 +62,20 @@ var bulkSimilarRemarketingList = new BulkSimilarRemarketingList
 };
 ```
 
-### <a name="audience"></a>Audience
+For a *Similar Remarketing List* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+
+- [Audience](#audience)
+- [Audience Network Size](#audiencenetworksize)
+- [Audience Search Size](#audiencesearchsize)
+- [Id](#id)
+- [Modified Time](#modifiedtime)
+- [Parent Id](#parentid)
+- [Scope](#scope)
+- [Source Id](#sourceid)
+- [Status](#status)
+- [Supported Campaign Types](#supportedcampaigntypes)
+
+## <a name="audience"></a>Audience
 The name of the similar remarketing list is set by Bing Ads. The name can contain a maximum of 128 characters.
 
 The name can contain a maximum of 128 characters
@@ -86,7 +84,7 @@ The name can contain a maximum of 128 characters
 **Update:** Not supported    
 **Delete:** Not supported  
 
-### <a name="audiencenetworksize"></a>Audience Network Size
+## <a name="audiencenetworksize"></a>Audience Network Size
 The total number of people who are active members of this audience in the Audience network. This gives you an idea of how many Audience network users you can target.
 
 The audience needs to have at least 300 people before Bing Ads will use it for optimizations.
@@ -97,7 +95,7 @@ The audience network size of a similar audience can differ from the audience net
 **Update:** Not supported    
 **Delete:** Not supported  
 
-### <a name="audiencesearchsize"></a>Audience Search Size
+## <a name="audiencesearchsize"></a>Audience Search Size
 The total number of people who are active members of this audience in the Search network. This gives you an idea of how many search users you can target.
 
 The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
@@ -112,14 +110,14 @@ This property will be nil or empty if the UET tag associated with the [source](#
 **Update:** Not supported    
 **Delete:** Not supported  
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The Bing Ads identifier of the similar audience.
 
 **Add:** Not supported  
 **Update:** Not supported    
 **Delete:** Not supported  
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
 
 > [!NOTE]
@@ -129,7 +127,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Update:** Not supported    
 **Delete:** Not supported  
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The Bing Ads identifier of the account or customer. 
 
 If the [Scope](#scope) is set to *Account*, this is the account ID, and otherwise it is the customer ID.
@@ -138,7 +136,7 @@ If the [Scope](#scope) is set to *Account*, this is the account ID, and otherwis
 **Update:** Not supported    
 **Delete:** Not supported  
 
-### <a name="scope"></a>Scope
+## <a name="scope"></a>Scope
 Scope defines what accounts can use this audience.
 
 The scope of a similar audience is automatically set to the scope of the [source](#sourceid) remarketing list.
@@ -149,14 +147,14 @@ If scope is set to *Account*, the audience can only be associated with ad groups
 **Update:** Not supported    
 **Delete:** Not supported  
 
-### <a name="sourceid"></a>Source Id
+## <a name="sourceid"></a>Source Id
 The Bing Ads identifier of the remarketing list that Bing Ads used to generate this similar remarketing list.
 
 **Add:** Not supported  
 **Update:** Not supported    
 **Delete:** Not supported  
 
-### <a name="status"></a>Status
+## <a name="status"></a>Status
 The similar remarketing list status.
 
 Possible values are *Active* or *Deleted*. 
@@ -165,7 +163,7 @@ Possible values are *Active* or *Deleted*.
 **Update:** Not supported    
 **Delete:** Not supported  
 
-### <a name="supportedcampaigntypes"></a>Supported Campaign Types
+## <a name="supportedcampaigntypes"></a>Supported Campaign Types
 The semicolon delimited list of campaign types that support this similar remarketing list.
 
 Supported values are Audience, DynamicSearchAds, Search, and Shopping. New campaign types might be added in the future, so you should not take any dependency on a fixed set of values.
