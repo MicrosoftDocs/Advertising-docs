@@ -64,7 +64,7 @@ See below for Bing Ads service updates during this calendar month.
 The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v11.12.6), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v11.12.6), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.11.12.6), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v11.12.6) SDK version 11.12.6. 
 
 ### <a name="customeridcustomername-september2018"></a>Customer Id and Name Report Columns
-The *CustomerId* and *CustomerName* columns are added to the following reports.  
+The *CustomerId* and *CustomerName* columns are added to the following reports. 
 - [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md) 
 - [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md) 
 - [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md) 
@@ -97,7 +97,7 @@ Data in this download column represent the type of negative keyword conflict enc
 Support for ad click parallel tracking is enabled for pilot customers. 
 
 > [!IMPORTANT]
-> Starting in Q4 calendar year 2018 parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and all other customers are opted out.  
+> Starting in Q4 calendar year 2018 parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and all other customers are opted out. 
 
 Parallel tracking lets you send users directly to your final URL while click measurement runs in the background.
 
@@ -109,7 +109,7 @@ You can manage parallel tracking via the [GetAccountProperties](../campaign-mana
 
 ### <a name="sdk-august2018"></a>Bing Ads Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated.
-- Updated service proxies to support customer address, campaign level profile criteria, similar audiences for remarketing lists, and new change history report columns.  
+- Updated service proxies to support customer address, campaign level profile criteria, similar audiences for remarketing lists, and new change history report columns. 
 
 ### <a name="customeraddress-august2018"></a>Customer Address
 The [CustomerAddress](../customer-management-service/customer.md#customeraddress) element is added back to the [Customer](../customer-management-service/customer.md) object. This element had been removed during the transition from Bing Ads API Version 11 to Version 12. Although you must set the account [BusinessAddress](../customer-management-service/advertiseraccount.md#businessaddress), the customer address is optional if your application has a dependency on it. Bing Ads does not use the customer address, and instead uses the account business address. 
@@ -125,7 +125,7 @@ Professional profile targeting via LinkedIn is coming soon to Dynamic Search Ads
 
 The Campaign Management service is updated to support the new campaign level profile criterion types i.e., the [CompanyName](../campaign-management-service/campaigncriteriontype.md#companyname), [Industry](../campaign-management-service/campaigncriteriontype.md#industry), and [JobFunction](../campaign-management-service/campaigncriteriontype.md#jobfunction) values are added to the [CampaignCriterionType](../campaign-management-service/campaigncriteriontype.md) value set. Use the existing [BiddableCampaignCriterion](../campaign-management-service/biddablecampaigncriterion.md) object with the corresponding operations e.g., [AddCampaignCriterions](../campaign-management-service/addcampaigncriterions.md) to manage campaign level criterions. The Campaign Management service already includes definitions for ad group level profile criterion types via the [AdGroupCriterionType](../campaign-management-service/adgroupcriteriontype.md) value set. Use the existing [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) object with the corresponding operations e.g., [AddAdGroupCriterions](../campaign-management-service/addadgroupcriterions.md) to manage ad group level criterions. 
 
-The Bulk service is updated to support the new profile criterion types i.e., upload and download the [Campaign Company Name Criterion](../bulk-service/campaign-company-name-criterion.md), [Campaign Industry Criterion](../bulk-service/campaign-industry-criterion.md), and [Campaign Job Function Criterion](../bulk-service/campaign-job-function-criterion.md) records in a Bulk file. Use the existing [CampaignTargetCriterions](../bulk-service/downloadentity.md#campaigntargetcriterions) value flag for Bulk download. The Bulk service already includes definitions for ad group level profile criterion types via the [Ad Group Company Name Criterion](../bulk-service/ad-group-company-name-criterion.md), [Ad Group Industry Criterion](../bulk-service/ad-group-industry-criterion.md), and [Ad Group Job Function Criterion](../bulk-service/ad-group-job-function-criterion.md) records in a Bulk file. Use the existing [AdGroupTargetCriterions](../bulk-service/downloadentity.md#adgrouptargetcriterions) value flag for Bulk download.  
+The Bulk service is updated to support the new profile criterion types i.e., upload and download the [Campaign Company Name Criterion](../bulk-service/campaign-company-name-criterion.md), [Campaign Industry Criterion](../bulk-service/campaign-industry-criterion.md), and [Campaign Job Function Criterion](../bulk-service/campaign-job-function-criterion.md) records in a Bulk file. Use the existing [CampaignTargetCriterions](../bulk-service/downloadentity.md#campaigntargetcriterions) value flag for Bulk download. The Bulk service already includes definitions for ad group level profile criterion types via the [Ad Group Company Name Criterion](../bulk-service/ad-group-company-name-criterion.md), [Ad Group Industry Criterion](../bulk-service/ad-group-industry-criterion.md), and [Ad Group Job Function Criterion](../bulk-service/ad-group-job-function-criterion.md) records in a Bulk file. Use the existing [AdGroupTargetCriterions](../bulk-service/downloadentity.md#adgrouptargetcriterions) value flag for Bulk download. 
 
 ### <a name="similaraudiences-august2018"></a>Similar Audiences for Remarketing Lists
 Similar audiences for remarketing lists is coming soon. Bing Ads will automatically generate similar audiences for remarketing lists for pilot participants. You cannot create or edit the similar audiences for remarketing lists. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with an ad group, then you cannot delete the source remarketing list.

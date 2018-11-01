@@ -4,15 +4,16 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved for future use.
+description: Defines the editorial review status values of a linked asset.
 ---
 # AssetLinkEditorialStatus Value Set - Campaign Management
-Reserved for future use.
+Defines the editorial review status values of a linked asset.
 
 ## Syntax
 ```xml
 <xs:simpleType name="AssetLinkEditorialStatus" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:restriction base="xs:string">
+    <xs:enumeration value="Unknown" />
     <xs:enumeration value="Active" />
     <xs:enumeration value="Disapproved" />
     <xs:enumeration value="Inactive" />
@@ -25,12 +26,15 @@ Reserved for future use.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="active"></a>Active|Reserved.|
-|<a name="activelimited"></a>ActiveLimited|Reserved.|
-|<a name="disapproved"></a>Disapproved|Reserved.|
-|<a name="inactive"></a>Inactive|Reserved.|
+|<a name="active"></a>Active|The asset passed editorial review.|
+|<a name="activelimited"></a>ActiveLimited|The asset passed editorial review in one or more markets, and one or more elements of the asset is undergoing editorial review in another market. For example the asset passed editorial review for Canada and is still pending review in the United States.|
+|<a name="disapproved"></a>Disapproved|The asset failed editorial review.|
+|<a name="inactive"></a>Inactive|One or more elements of the asset is undergoing editorial review.|
+|<a name="unknown"></a>Unknown|Reserved for future use.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
+## Used By
+[AssetLink](assetlink.md)  

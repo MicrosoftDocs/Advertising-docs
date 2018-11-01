@@ -19,7 +19,7 @@ If you are not finding the information you need to solve your problem in the dev
 ### Q. How can I find out about changes?
 The [Release Notes](release-notes.md) and [Migration Guide](migration-guide.md) are great resources to start with. 
 
-You can sign up for the monthly newsletter via the [News](https://developers.bingads.microsoft.com/News) tab of the Developer Portal, and that's also where the latest [blog](https://blogs.msdn.microsoft.com/bing_ads_api/) announcements are aggregated.  
+You can sign up for the monthly newsletter via the [News](https://developers.bingads.microsoft.com/News) tab of the Developer Portal, and that's also where the latest [blog](https://blogs.msdn.microsoft.com/bing_ads_api/) announcements are aggregated. 
 
 ## Get Started
 
@@ -27,7 +27,7 @@ You can sign up for the monthly newsletter via the [News](https://developers.bin
 To [get started](get-started.md), you need to sign up for a [Bing Ads](https://secure.bingads.microsoft.com) account, and then get your developer token at via the [Account](https://developers.bingads.microsoft.com/Account) tab of the Developer Portal. 
 
 ### Q. Which programming languages and SDKs are supported?
-You can develop Bing Ads applications with any programming language that supports web services. The [Bing Ads Software Development Kits (SDK)](client-libraries.md) enhance the experience of developing Bing Ads applications with .NET, Java, PHP, and Python languages.  Each SDK includes a proxy to all Bing Ads API web services and abstracts low level details of authentication with OAuth. You can use the high level BulkServiceManager and ReportingServiceManager interfaces to abstract and execute operations in the low level Bulk and Reporting services. 
+You can develop Bing Ads applications with any programming language that supports web services. The [Bing Ads Software Development Kits (SDK)](client-libraries.md) enhance the experience of developing Bing Ads applications with .NET, Java, PHP, and Python languages. Each SDK includes a proxy to all Bing Ads API web services and abstracts low level details of authentication with OAuth. You can use the high level BulkServiceManager and ReportingServiceManager interfaces to abstract and execute operations in the low level Bulk and Reporting services. 
 
 We have heard requests for additional SDKs e.g. Perl and Ruby, although there is no plan to add support in the near term.
 

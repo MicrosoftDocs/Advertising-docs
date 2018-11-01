@@ -16,22 +16,9 @@ In the bulk schema each of the negative keywords associated with an ad group are
 > [!NOTE]
 > The *Ad Group Negative Keyword* can be added and deleted, but cannot be updated.
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Ad Group Negative Keyword* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+You can download all *Ad Group Negative Keyword* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupNegativeKeywords* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
-- [Ad Group](#adgroup)
-- [Campaign](#campaign)
-- [Client Id](#clientid)
-- [Id](#id)
-- [Keyword](#keyword)
-- [Match Type](#matchtype)
-- [Modified Time](#modifiedtime)
-- [Parent Id](#parentid)
-- [Status](#status)
-
-You can download all fields of the *Ad Group Negative Keyword* record by including the [DownloadEntity](downloadentity.md) value of *AdGroupNegativeKeywords* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
-
-The following Bulk CSV example would add a new ad group negative keyword given a valid ad group ID (*Parent Id*). 
+The following Bulk CSV example would add a new ad group negative keyword if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Keyword,Match Type,Name
@@ -39,7 +26,7 @@ Format Version,,,,,,,,,,6
 Ad Group Negative Keyword,Active,,-1111,,,ClientIdGoesHere,,shoes,Exact,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupNegativeKeyword* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupNegativeKeyword* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -87,7 +74,19 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-### <a name="adgroup"></a>Ad Group
+For an *Ad Group Negative Keyword* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+
+- [Ad Group](#adgroup)
+- [Campaign](#campaign)
+- [Client Id](#clientid)
+- [Id](#id)
+- [Keyword](#keyword)
+- [Match Type](#matchtype)
+- [Modified Time](#modifiedtime)
+- [Parent Id](#parentid)
+- [Status](#status)
+
+## <a name="adgroup"></a>Ad Group
 The name of the ad group that contains the negative keyword.
 
 **Add:** Read-only and Required  
@@ -95,30 +94,30 @@ The name of the ad group that contains the negative keyword.
 **Delete:** Read-only and Required  
 
 > [!NOTE]
-> For add and delete, you must specify either the *Parent Id* or *Ad Group* field.
+> For add and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
 
-### <a name="campaign"></a>Campaign
+## <a name="campaign"></a>Campaign
 The name of the campaign that contains the ad group and negative keyword.
 
 **Add:** Read-only  
 **Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.  
 **Delete:** Read-only  
 
-### <a name="clientid"></a>Client Id
+## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
 **Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.    
 **Delete:** Read-only  
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The system generated identifier of the negative keyword.
 
 **Add:** Read-only  
 **Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.  
 **Delete:** Read-only and Required  
 
-### <a name="keyword"></a>Keyword
+## <a name="keyword"></a>Keyword
 The negative keyword text. 
 
 The text can contain a maximum of 100 characters.
@@ -127,7 +126,7 @@ The text can contain a maximum of 100 characters.
 **Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.    
 **Delete:** Read-only
 
-### <a name="matchtype"></a>Match Type
+## <a name="matchtype"></a>Match Type
 The type of match to compare the negative keyword and the user's search term.
 
 The supported match type values for a negative keyword are *Phrase* and *Exact*.
@@ -136,7 +135,7 @@ The supported match type values for a negative keyword are *Phrase* and *Exact*.
 **Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.    
 **Delete:** Read-only
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
 
 > [!NOTE]
@@ -146,7 +145,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.  
 **Delete:** Read-only  
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The system generated identifier of the ad group that contains the negative keyword.
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
@@ -156,9 +155,9 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only  
 
 > [!NOTE]
-> For add and delete, you must specify either the *Parent Id* or *Ad Group* field.
+> For add and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
 
-### <a name="status"></a>Status
+## <a name="status"></a>Status
 Represents the association status between the ad group and the negative keyword.
 
 If the negative keyword is associated with the ad group, this  field's value is *Active*.
@@ -167,5 +166,5 @@ Possible values are *Active* or *Deleted*.
 
 **Add:** Optional. The default value is *Active*.  
 **Update:** Not applicable. A negative keyword can be added and deleted, but cannot be updated.    
-**Delete:** Required. The Status must be set to *Deleted*. To delete a specific negative keyword, you must upload the *Status*, *Id*, and *Parent Id*. To delete all negative keywords for the ad group, you only need to upload the *Status* and *Parent Id* in a single record. Then optionally you can add new negative keyword records to replace the deleted set.
+**Delete:** Required. The Status must be set to *Deleted*. To delete a specific negative keyword, you must upload the [Status](#status), [Id](#id), and [Parent Id](#parentid). To delete all negative keywords for the ad group, you only need to upload the [Status](#status) and [Parent Id](#parentid) in a single record. Then optionally you can add new negative keyword records to replace the deleted set.
 

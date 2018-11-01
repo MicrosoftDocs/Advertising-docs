@@ -102,18 +102,18 @@ The Bing Ads .NET SDK exceptions abstract some of the service level exceptions. 
 Exception  |Namespaces  |Description  
 ---------|---------|---------   
 CouldNotDownloadResultFileException     |Microsoft.BingAds         |This exception is thrown by the internal SDK HttpService after a failed attempt to download a bulk or reporting result file. 
-CouldNotUploadFileException     |Microsoft.BingAds        |This exception is thrown by the internal SDK HttpService after a failed attempt to upload a bulk file.     
+CouldNotUploadFileException     |Microsoft.BingAds        |This exception is thrown by the internal SDK HttpService after a failed attempt to upload a bulk file. 
 OAuthTokenRequestException     |Microsoft.BingAds         |This exception is thrown if an error was returned from the Microsft Account authorization server. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example you might have specified an invalid client ID. 
 BulkOperationCouldNotBeCompletedException     |Microsoft.BingAds.V12.Bulk        |This exception is thrown if an attempt was made to poll for a completed bulk results file and the bulk service returns a failed status. 
 BulkOperationInProgressException     |Microsoft.BingAds.V12.Bulk        |This exception is thrown if an attempt was made to download a bulk results file that is not yet available.
-CouldNotGetBulkOperationStatusException     |Microsoft.BingAds.V12.Bulk         |This exception is thrown if the BulkServiceManager failed to get the upload or download operation status after multiple retries.   
-CouldNotSubmitBulkDownloadException     |Microsoft.BingAds.V12.Bulk         |This exception is thrown by the BulkServiceManager when the DownloadCampaignsByAccountIds service operation that it called does not return a valid response.   
-CouldNotSubmitBulkUploadException     |Microsoft.BingAds.V12.Bulk         |This exception is thrown by the BulkServiceManager when the GetBulkUploadUrl service operation that it called does not return a valid response.   
+CouldNotGetBulkOperationStatusException     |Microsoft.BingAds.V12.Bulk         |This exception is thrown if the BulkServiceManager failed to get the upload or download operation status after multiple retries. 
+CouldNotSubmitBulkDownloadException     |Microsoft.BingAds.V12.Bulk         |This exception is thrown by the BulkServiceManager when the DownloadCampaignsByAccountIds service operation that it called does not return a valid response. 
+CouldNotSubmitBulkUploadException     |Microsoft.BingAds.V12.Bulk         |This exception is thrown by the BulkServiceManager when the GetBulkUploadUrl service operation that it called does not return a valid response. 
 EntityReadException     |Microsoft.BingAds.V12.Bulk        |This exception is thrown when attempting to read entities from a bulk file using BulkFileReader. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example the bulk file that you are attempting to read from might have an invalid value in one of the fields.
 EntityWriteException     |Microsoft.BingAds.V12.Bulk        |This exception is thrown when attempting to write entities to a bulk file using BulkFileWriter. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example you might have specified an invalid value for one of the upload entities. 
-CouldNotGetReportingDownloadStatusException     |Microsoft.BingAds.V12.Reporting         |This exception is thrown if the ReportingServiceManager failed to get the download operation status after multiple retries.         
+CouldNotGetReportingDownloadStatusException     |Microsoft.BingAds.V12.Reporting         |This exception is thrown if the ReportingServiceManager failed to get the download operation status after multiple retries. 
 CouldNotSubmitReportingDownloadException     |Microsoft.BingAds.V12.Reporting         |This exception is thrown by the ReportingServiceManager when the SubmitGenerateReport service operation that it called does not return a valid response. 
-ReportingOperationCouldNotBeCompletedException     |Microsoft.BingAds.V12.Reporting         |This exception is thrown if an attempt was made to poll for a completed reporting results file and the reporting service returns a failed status.   
+ReportingOperationCouldNotBeCompletedException     |Microsoft.BingAds.V12.Reporting         |This exception is thrown if an attempt was made to poll for a completed reporting results file and the reporting service returns a failed status. 
 ReportingOperationInProgressException     |Microsoft.BingAds.V12.Reporting         |This exception is thrown if an attempt was made to download a reporting results file that is not yet available. 
 
 ### <a name="net-troubleshooting"></a>.NET SDK Troubleshooting
@@ -137,19 +137,19 @@ The Bing Ads Java SDK exceptions abstract some of the service level exceptions. 
 Exception  |Namespaces  |Description  
 ---------|---------|---------   
 CouldNotDownloadResultFileException     |com.microsoft.bingads         |This exception is thrown by the internal SDK HttpService after a failed attempt to download a bulk or reporting result file. 
-CouldNotUploadFileException     |com.microsoft.bingads        |This exception is thrown by the internal SDK HttpService after a failed attempt to upload a bulk file.     
+CouldNotUploadFileException     |com.microsoft.bingads        |This exception is thrown by the internal SDK HttpService after a failed attempt to upload a bulk file. 
 OAuthTokenRequestException     |com.microsoft.bingads         |This exception is thrown if an error was returned from the Microsft Account authorization server. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example you might have specified an invalid client ID. 
 BulkDownloadCouldNotBeCompletedException     |com.microsoft.bingads.V12.bulk        |This exception is thrown if an attempt was made to poll for a completed bulk download results file and the bulk service returns a failed status.
 BulkOperationInProgressException     |com.microsoft.bingads.V12.bulk        |This exception is thrown if an attempt was made to download a bulk results file that is not yet available.
 BulkUploadCouldNotBeCompletedException     |com.microsoft.bingads.V12.bulk        |This exception is thrown if an attempt was made to poll for a completed bulk upload results file and the bulk service returns a failed status. 
-CouldNotGetBulkOperationStatusException     |com.microsoft.bingads.V12.bulk         |This exception is thrown if the BulkServiceManager failed to get the upload or download operation status after multiple retries.   
-CouldNotSubmitBulkDownloadException     |com.microsoft.bingads.V12.bulk         |This exception is thrown by the BulkServiceManager when the DownloadCampaignsByAccountIds service operation that it called does not return a valid response.   
-CouldNotSubmitBulkUploadException     |com.microsoft.bingads.V12.bulk         |This exception is thrown by the BulkServiceManager when the GetBulkUploadUrl service operation that it called does not return a valid response.   
+CouldNotGetBulkOperationStatusException     |com.microsoft.bingads.V12.bulk         |This exception is thrown if the BulkServiceManager failed to get the upload or download operation status after multiple retries. 
+CouldNotSubmitBulkDownloadException     |com.microsoft.bingads.V12.bulk         |This exception is thrown by the BulkServiceManager when the DownloadCampaignsByAccountIds service operation that it called does not return a valid response. 
+CouldNotSubmitBulkUploadException     |com.microsoft.bingads.V12.bulk         |This exception is thrown by the BulkServiceManager when the GetBulkUploadUrl service operation that it called does not return a valid response. 
 EntityReadException     |com.microsoft.bingads.V12.bulk        |This exception is thrown when attempting to read entities from a bulk file using BulkFileReader. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example the bulk file that you are attempting to read from might have an invalid value in one of the fields.
 EntityWriteException     |com.microsoft.bingads.V12.bulk        |This exception is thrown when attempting to write entities to a bulk file using BulkFileWriter. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example you might have specified an invalid value for one of the upload entities. 
-CouldNotGetReportingDownloadStatusException     |com.microsoft.bingads.V12.reporting         |This exception is thrown if the ReportingServiceManager failed to get the download operation status after multiple retries.         
+CouldNotGetReportingDownloadStatusException     |com.microsoft.bingads.V12.reporting         |This exception is thrown if the ReportingServiceManager failed to get the download operation status after multiple retries. 
 CouldNotSubmitReportingDownloadException     |com.microsoft.bingads.V12.reporting         |This exception is thrown by the ReportingServiceManager when the SubmitGenerateReport service operation that it called does not return a valid response. 
-ReportingOperationCouldNotBeCompletedException     |com.microsoft.bingads.V12.reporting         |This exception is thrown if an attempt was made to poll for a completed reporting results file and the reporting service returns a failed status.   
+ReportingOperationCouldNotBeCompletedException     |com.microsoft.bingads.V12.reporting         |This exception is thrown if an attempt was made to poll for a completed reporting results file and the reporting service returns a failed status. 
 ReportingOperationInProgressException     |com.microsoft.bingads.V12.reporting         |This exception is thrown if an attempt was made to download a reporting results file that is not yet available. 
 
 ### <a name="java-troubleshooting"></a>Java SDK Troubleshooting
@@ -164,15 +164,15 @@ System.setProperty("com.sun.xml.ws.transport.http.client.HttpTransportPipe.dump"
 #### <a name="java-troubleshooting-fiddler"></a>Fiddler Options
 You can follow these steps to capture the SOAP envelopes from a Java application using a third-party tool such as [Fiddler](http://fiddler2.com/get-fiddler). 
 
-1.  After installing Fiddler, export the Fiddler certificate from the root certificate store. Click **Tools** &gt; **Fiddler Options**. Select the **HTTPS** tab, and click the **Decrypt HTTPS traffic** check box. Click **OK**, and then follow the prompts to export the Fiddler certificate.
+1. After installing Fiddler, export the Fiddler certificate from the root certificate store. Click **Tools** &gt; **Fiddler Options**. Select the **HTTPS** tab, and click the **Decrypt HTTPS traffic** check box. Click **OK**, and then follow the prompts to export the Fiddler certificate.
 
-2.  Use the following command to import the certificate into the cacert store used by Java, for example execute from PowerShell as Administrator.
+2. Use the following command to import the certificate into the cacert store used by Java, for example execute from PowerShell as Administrator.
 
     ```powershell
     c:\Program Files\Java\jre6\bin>keytool -importcert -v -alias "Fiddler cert" -trustcacerts -keystore "C:\Program Files\Java\jdk1.8.0_20\jre\lib\security\cacerts" -storepass changeit -file <DesktopPathGoesHere>\FiddlerRoot.cer
     ```
 
-3.  Add the following lines to your Java application.
+3. Add the following lines to your Java application.
 
     ```java
     System.setProperty("https.proxyHost", "127.0.0.1");
@@ -180,35 +180,20 @@ You can follow these steps to capture the SOAP envelopes from a Java application
     ```
     
 #### <a name="java-troubleshooting-spring-cxf"></a>Spring Framework and Apache CXF Options
-You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/overview.html) and [Apache CXF](http://cxf.apache.org/docs/index.html) to capture the SOAP envelopes, for example if you are running a Maven application in Eclipse.
+You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/spring-framework-reference/html/overview.html) and [Apache CXF](http://cxf.apache.org/docs/index.html) to capture the SOAP envelopes, for example if you are running a Maven application.
 
-1.  Set up the development environment as described in [Get Started Using Java with Bing Ads Services](get-started-java.md). 
+1. Set up the development environment as described in [Get Started Using Java with Bing Ads Services](get-started-java.md). 
    
-2.  Edit pom.xml to include the *org.springframework* dependency. The following is a complete pom.xml example.
+2. Edit pom.xml to include the *org.springframework* dependency. 
     ```xml
-    <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-      <modelVersion>4.0.0</modelVersion>
-      <groupId>com.microsoft.bingads.examples</groupId>
-      <artifactId>BingAdsDesktopApp</artifactId>
-      <version>0.0.1-SNAPSHOT</version>
-      <dependencies>
-        <dependency>
-          <groupId>com.microsoft.bingads</groupId>
-          <artifactId>microsoft.bingads</artifactId>
-          <version>11.12.1</version>
-        </dependency>
-        <dependency>
-          <groupId>org.springframework</groupId>
-          <artifactId>spring-context</artifactId>
-          <version>4.2.6.RELEASE</version>
-        </dependency>
-      </dependencies>
-    </project>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>4.2.6.RELEASE</version>
+    </dependency>
     ```
-    > [!NOTE]
-    > Version 11.12.1 of the Bing Ads Java SDK is included as an example. For details about the latest SDK dependency version, please see the [Bing Ads Java SDK GitHub README.md](https://github.com/BingAds/BingAds-Java-SDK).
    
-2.  Add cxf.xml to your project, and add the following xml.
+2. Add cxf.xml to your project, and add the following xml.
     ```xml
     <beans xmlns="http://www.springframework.org/schema/beans"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -224,7 +209,7 @@ You can use the [Spring Framework](https://docs.spring.io/spring/docs/current/sp
     </beans>
     ```
     
-3.  Add the following lines to your Java application.
+3. Add the following lines to your Java application.
 
     ```java
     System.setProperty("https.proxyHost", "127.0.0.1");
@@ -240,7 +225,7 @@ For troubleshooting PHP applications, see [PHP SDK Troubleshooting](#php-trouble
 Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](http://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
 
 #### <a name="php-troubleshooting-print"></a>Print SOAP
-In PHP you can use the following methods to print the SOAP envelopes. Each of the PHP code examples include these statements to print the errors to the console.   
+In PHP you can use the following methods to print the SOAP envelopes. Each of the PHP code examples include these statements to print the errors to the console. 
 
 ```php
 print $proxy->GetService()->__getLastRequest()."\n";
@@ -267,11 +252,11 @@ BulkDownloadException     |BingAds.V12.Bulk         |This exception is thrown if
 BulkUploadException     |BingAds.V12.Bulk         |This exception is thrown if timeout occurs while attempting to download a bulk upload results file.
 EntityReadException     |BingAds.V12.Bulk         |This exception is thrown when attempting to read entities from a bulk file using BulkFileReader. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example the bulk file that you are attempting to read from might have an invalid value in one of the fields.
 EntityWriteException     |BingAds.V12.Bulk         |This exception is thrown when attempting to write entities to a bulk file using BulkFileWriter. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example you might have specified an invalid value for one of the upload entities.
-FileDownloadException     |BingAds         |This exception is thrown if timeout occurs while attempting to download a bulk upload results file.  
-FileUploadException     |BingAds         |This exception is thrown if timeout occurs while attempting to upload a bulk file.      
+FileDownloadException     |BingAds         |This exception is thrown if timeout occurs while attempting to download a bulk upload results file. 
+FileUploadException     |BingAds         |This exception is thrown if timeout occurs while attempting to upload a bulk file. 
 OAuthTokenRequestException     |BingAds         |This exception is thrown if an error was returned from the Microsft Account authorization server. To resolve this exception you can first check the stack trace to see the error details, in case there is some action you can take to resolve the issue. For example you might have specified an invalid client ID. 
-ReportingException     |BingAds.V12.Reporting         |This exception is thrown if an attempt was made to poll for a completed reporting results file and the reporting service returns a failed status.  
-ReportingDownloadException     |BingAds.V12.Reporting         |This exception is thrown if timeout occurs while attempting to download a reporting results file.  
+ReportingException     |BingAds.V12.Reporting         |This exception is thrown if an attempt was made to poll for a completed reporting results file and the reporting service returns a failed status. 
+ReportingDownloadException     |BingAds.V12.Reporting         |This exception is thrown if timeout occurs while attempting to download a reporting results file. 
 SdkException      |BingAds         |The base exception class for the Bing Ads Python SDK. This exception is never raised.
 TimeoutException      |BingAds         |This exception is thrown if timeout occurs.
      

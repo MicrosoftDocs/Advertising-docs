@@ -18,22 +18,9 @@ Each gender criterion defines a gender for the accompanying criterion bid adjust
 > [!TIP]
 > For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Ad Group Gender Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+You can download all *Ad Group Gender Criterion* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupTargetCriterions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
-- [Ad Group](#adgroup)
-- [Bid Adjustment](#bidadjustment)
-- [Campaign](#campaign)
-- [Client Id](#clientid)
-- [Id](#id)
-- [Modified Time](#modifiedtime)
-- [Parent Id](#parentid)
-- [Status](#status)
-- [Target](#target)
-
-You can download all fields of the *Ad Group Gender Criterion* record by including the [DownloadEntity](downloadentity.md) value of *AdGroupTargetCriterions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
-
-The following Bulk CSV example would add a new ad group gender criterion if a valid ad group identifier (*Parent Id*) is provided. 
+The following Bulk CSV example would add a new ad group gender criterion if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Target,Bid Adjustment,Name,OS Names,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
@@ -41,7 +28,7 @@ Format Version,,,,,,,,,,,6,,,,,,,,,
 Ad Group Gender Criterion,Active,,-1111,,,,ClientIdGoesHere,,Female,20,,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupGenderCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupGenderCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -100,14 +87,26 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-### <a name="adgroup"></a>Ad Group
+For an *Ad Group Gender Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+
+- [Ad Group](#adgroup)
+- [Bid Adjustment](#bidadjustment)
+- [Campaign](#campaign)
+- [Client Id](#clientid)
+- [Id](#id)
+- [Modified Time](#modifiedtime)
+- [Parent Id](#parentid)
+- [Status](#status)
+- [Target](#target)
+
+## <a name="adgroup"></a>Ad Group
 The name of the ad group where this criterion is applied or removed.  
 
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="bidadjustment"></a>Bid Adjustment
+## <a name="bidadjustment"></a>Bid Adjustment
 The percentage amount that you want to adjust the bid for the corresponding *Target*. 
 
 Supported values are negative ninety (-90) through positive nine hundred (900). 
@@ -116,21 +115,21 @@ Supported values are negative ninety (-90) through positive nine hundred (900).
 **Update:** Required  
 **Delete:** Read-only  
 
-### <a name="campaign"></a>Campaign
+## <a name="campaign"></a>Campaign
 The name of the campaign that contains the ad group where this criterion is applied or removed.
 
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="clientid"></a>Client Id
+## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
 **Update:** Optional    
 **Delete:** Optional  
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The Bing Ads unique identifier of the criterion.
 
 > [!NOTE] 
@@ -140,7 +139,7 @@ The Bing Ads unique identifier of the criterion.
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
 
 > [!NOTE]
@@ -150,7 +149,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The identifier of the ad group where this criterion is applied or removed.
 	
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record. 
@@ -159,14 +158,14 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
-### <a name="status"></a>Status
+## <a name="status"></a>Status
 Represents the association status between the ad group and the criterion. If the criterion is applied to the ad group, this field's value is *Active*. To delete the criterion, set the status to *Deleted*.
 
 **Add:** Read-only. The status will always be set to *Active* when you add criterions. If you upload another value e.g., *Foo* the result file will contain the same value although the criterion is active.  
 **Update:** Optional  
-**Delete:** Required. The Status must be set to *Deleted*. To delete a specific gender criterion bid, you must upload the *Status*, *Id*, and *Parent Id*.
+**Delete:** Required. The Status must be set to *Deleted*. To delete a specific gender criterion bid, you must upload the [Status](#status), [Id](#id), and [Parent Id](#parentid).
 
-### <a name="target"></a>Target
+## <a name="target"></a>Target
 The gender that you want to target with the corresponding *Bid Adjustment*. 
 
 Supported values are *Female* and *Male*. With Audience campaigns you can also target *Unknown* i.e., people whose gender is not known.

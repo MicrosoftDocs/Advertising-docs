@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Download and upload high volume campaign settings asynchronously in the background.
 ---
 # Bulk Download and Upload
-With the [bulk service](../bulk-service/bulk-service-reference.md) you can download and upload campaign settings asynchronously in the background. The Bulk service is recommended, especially if you need to add or update ads and keywords across multiple ad groups or campaigns in an account. For some entities you may also download bid suggestions and performance data. Each record can be uploaded successfully whether or not other records in the same file contain errors. For information about the schema used for the download and upload file, including details about which entities, bid estimates, and performance data are available, see [Bulk File Schema](../bulk-service/bulk-file-schema.md).
+With the [bulk service](../bulk-service/bulk-service-reference.md) you can download and upload campaign settings asynchronously in the background. The Bulk service is recommended for managing large scale data, especially if you need to add or update ads and keywords across multiple ad groups or campaigns in an account. For some entities you may also download bid suggestions and quality score data. Each record can be uploaded successfully whether or not other records in the same file contain errors. For information about the schema used for the download and upload file, including details about which entities, bid suggestions, and quality score data are available, see [Bulk File Schema](../bulk-service/bulk-file-schema.md).
 
 > [!IMPORTANT]
 > New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file.
@@ -23,10 +23,7 @@ You may request all of the campaign's data or only the data that has changed sin
 > [!IMPORTANT]
 > You must use the same user credentials for the download request operation (either [DownloadCampaignsByAccountIds](../bulk-service/downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](../bulk-service/downloadcampaignsbycampaignids.md)) and the [GetBulkDownloadStatus](../bulk-service/getbulkdownloadstatus.md) polling operation.
    
-1. Set the *DataScope* element of the request and specify whether to include performance data in addition to entity data. For a list of possible values, see the [DataScope](../bulk-service/datascope.md) value set.
-
-   > [!NOTE]
-   > If you are requesting performance data, then you must also set the start and end date within the *PerformanceStatsDateRange* element of the request.
+1. Set the *DataScope* element of the request and specify whether to include bid suggestions or quality score data in addition to entity data. For a list of possible values, see the [DataScope](../bulk-service/datascope.md) value set.
 
 2. Set the *DownloadFileType* element of the request to select either **Csv** or **Tsv** for the format of the download file.
 
@@ -133,9 +130,9 @@ Please adhere to the best practices to ensure fair usage for yourself and all Bi
 
 - Limit concurrent uploads to 5 or 6 per customer to upload files in parallel. Wait on each thread until the previous file was processed, and then you can reuse the thread to upload another file. For example, one thread can upload a file and after the upload status is either *Completed*, *CompletedWithErrors*, or *Failed* that thread can upload another file. 
 
-- Upload only the entities and fields that you are adding or updating. If supplied, read-only fields such as performance data will be ignored. 
+- Upload only the entities and fields that you are adding or updating. If supplied, read-only fields such as bid suggestions and quality score data will be ignored. 
 
-- Upload one entity type e.g. Keyword per file. You can upload more than one entity per file; however this is a recommended best practice to maximize performance. 
+- Upload one entity type per file to maximize performance. There are some exceptions e.g., when creating new campaigns, ads, and keywords it can be more efficient to upload them together with [reference keys](../bulk-service/bulk-file-schema.md#referencekeys). As another example, if you are only updating 10 campaigns, 500 ads, and 800 keywords, then you can include them in one upload rather than splitting uploads per type. 
 
 - Consider whether you need to request errors and results (*ResponseMode = ErrorsAndResults*) in the upload results file, or whether errors only (*ResponseMode = ErrorsOnly*) will suffice. Consider whether or not you should synchronize the results with your local data. For example if you are updating entities you might only need to know whether any errors occurred, and in that case you can specify *ResponseMode = ErrorsOnly* in the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md) request. If you are adding new entities then you can specify *ResponseMode = ErrorsAndResults* in the [GetBulkUploadUrl](../bulk-service/getbulkuploadurl.md) request to receive the resulting entity identifiers.
 

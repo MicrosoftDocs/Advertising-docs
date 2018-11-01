@@ -18,12 +18,17 @@ Before your ads can run, you need to set your campaign's budget. You'll also nee
 ## <a name="budgettypes"></a>Budget Types
 Your budget tells Bing Ads how much you want to spend on your campaign. You can set a daily budget for each campaign and when you reach your budget, Bing Ads will stop displaying your ads until the next day or month. Keep your advertising costs under control by keeping track of your budget. 
 
+> [!WARNING]
+> Your budget is a target; your actual spend might be higher or lower. Variations are caused by a number of factors, such as different traffic volumes in different days of the week, or automatic detection and refunding of fraud clicks that can give money back to a campaign within a few hours of the click. Bing Ads anticipates and automatically compensates for the fluctuations, and usually keeps overspend to less than 100% above your daily limit.
+> 
+> Also note that Bing Ads does not require your campaign budget to be higher than the ad group and keyword bids. In other words ad group and keyword bids are validated independently of the campaign budget. 
+
 With shared budgets you can set a single daily budget that can be used by any campaign within the same account. This enables you to efficiently distribute a single daily budget across all campaigns or across a defined group of campaigns within your Bing Ads account. 
 
 > [!IMPORTANT]
-> You might need to code for shared budgets in the Bing Ads platform, even if you do not plan to use shared budgets. For more details and to determine whether the campaign uses a shared budget, check the value of the *BudgetId* element ([Campaign](../campaign-management-service/campaign.md) object) or *Budget Id* field (Bulk ([Campaign](../bulk-service/campaign.md) object) record).
+> You might need to code for shared budgets in the Bing Ads platform, even if you do not use shared budgets. To determine whether the campaign uses a shared budget, check the value of the [BudgetId](../campaign-management-service/campaign.md#budgetid) element (via Campaign Management service) or [Budget Id](../bulk-service/campaign.md#budgetid) field (via Bulk service).
 
-The Bing Ads API supports the *DailyBudgetAccelerated* and *DailyBudgetStandard* values as defined in the [BudgetLimitType](../campaign-management-service/budgetlimittype.md) value set.
+The Bing Ads API supports the *DailyBudgetAccelerated*  and *DailyBudgetStandard* values as defined in the [BudgetLimitType](../campaign-management-service/budgetlimittype.md) value set.
 
 ### <a name="dailyaccelerated"></a>DailyBudgetAccelerated
 Show your ads for every relevant search, spending at an accelerated rate until you run out of budget for the day. When the daily budget limit is reached, your ads will stop displaying until the next calendar day.
@@ -60,13 +65,13 @@ The following bid strategy types are available per campaign type. For more infor
 
 |Bid Strategy Type|Campaign Types|
 |-------------------------|--------------------------|
-|[EnhancedCpc](#enhancedcpc)|DynamicSearchAds<br/>Search<br/>Shopping|
+|[EnhancedCpc](#enhancedcpc)|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
 |[ManualCpc](#manualcpc)|DynamicSearchAds<br/>Search<br/>Shopping|
 |[MaxClicks](#maxclicks)|DynamicSearchAds<br/>Search|
 |[MaxConversions](#maxconversions)|Search|
 |[TargetCpa](#targetcpa)|Search|
 
-The [ManualCpc](#manualcpc) bid strategy is every campaign's default bid strategy via Bing Ads API unless you chose a different strategy when creating your campaign. When using the Bing Ads web application, [EnhancedCpc](#enhancedcpc) is the default bid strategy.
+Until January 28th, 2019 the [ManualCpc](#manualcpc) bid strategy is every campaign's default bid strategy via Bing Ads API unless you chose a different strategy when creating your campaign. From January 29th, 2019 onwards the [EnhancedCpc](#enhancedcpc) bid strategy will be used by default. When using the Bing Ads web application, [EnhancedCpc](#enhancedcpc) is the default bid strategy.
 
 > [!IMPORTANT] 
 > If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
@@ -75,9 +80,7 @@ The [ManualCpc](#manualcpc) bid strategy is every campaign's default bid strateg
 > - You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Bing Ads about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
 > - Whether you chose the *DailyBudgetAccelerated* or *DailyBudgetStandard* budget type, Bing Ads will use the *DailyBudgetStandard* budget type. 
 > 
-> Also note that you must have conversion tracking (a UET tag and a conversion goal) set up for the *EnhancedCpc*, *MaxConversions*, and *TargetCpa* bid strategy types to work. See [Universal Event Tracking](universal-event-tracking.md) for more information.
-> 
-> To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must have at least 15 conversions in the last 30 days. If you try to add or update a campaign to use one of these strategy types, the requested operation will fail if there is not enough conversion history. If an active campaign uses one of these bid strategy types, and then ceases to meet the minimum conversion history requirement at any time, Bing Ads will stop auto bidding but will continue to use the *DailyBudgetStandard* budget type. For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
+> Also note that you must have conversion tracking (via [Universal Event Tracking](universal-event-tracking.md) tag and a conversion goal) set up for the *MaxConversions* and *TargetCpa* bid strategy types to work. To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must have at least 15 conversions in the last 30 days. If you try to add or update a campaign to use one of these strategy types, the requested operation will fail if there is not enough conversion history. If an active campaign uses one of these bid strategy types, and then ceases to meet the minimum conversion history requirement at any time, Bing Ads will stop auto bidding but will continue to use the *DailyBudgetStandard* budget type. For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
 
 > [!TIP] 
 > You can set your campaign's bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group's or keyword's bid strategy to *ManualCpc*.
@@ -155,21 +158,21 @@ Because the search engine can vary its algorithms to expand queries to find broa
 
 To reduce the chance of irrelevant ads being served to users and the quality score of those ads being affected due to low CTR, you can add any irrelevant queries to your list of negative keywords. To determine the irrelevant queries, see the [Report Types](report-types.md).
 
-You can also use the broad match modifier to require that specific terms in your keyword be present in the search term. To implement the broad match modifier, include a plus sign (+) in front of every term in the keyword that must be present in the search term. For example, if you bid on ?Hawaii hotels?, your ad could be served for the search queries, ?Hawaii beach hotels? and ?Hawaii rentals.? However, if you changed the keyword to ?+Hawaii +hotel?, the keyword would match only ?Hawaii beach hotels.?
+You can also use the broad match modifier to require that specific terms in your keyword be present in the search term. To implement the broad match modifier, include a plus sign (+) in front of every term in the keyword that must be present in the search term. For example, if you bid on "Hawaii hotels", your ad could be served for the search queries, "Hawaii beach hotels" and "Hawaii rentals." However, if you changed the keyword to "+Hawaii +hotel", the keyword would match only "Hawaii beach hotels."
 
 If you include the broad match modifier on a keyword that specifies a phrase or exact match-type bid, the plus sign will be treated as part of the keyword and not as a modifier.
 
 ### <a name="deliveredmatchtypes"></a>Bid and Delivered Match Types
 You should set the ad group *Search Bid* that will be used as the default bid for *Exact*, *Phrase*, and *Broad* match types. You can then override the default by setting individual keyword level match types. Generally, the more precise you require the match to be, the higher conversion rates tend to be while impressions tend to decrease. Finding the right balance between conversions and impressions can help maximize the return on investment (ROI) of your campaign. If you're not sure which match type to use, we suggest starting with broad match. You can then use keyword performance reports over time to see which keywords lead to ad clicks and optimize your keyword list.
-- If a majority of the keywords in the report are not related to your ad, you might want to use one of the more precise match types.  
-- For keywords that you want to continue leading to clicks, add them to your keyword list with a more specific match type such as Phrase or Exact.  
-- For keywords that you don't want leading to clicks, add them to your keyword list as negative keywords. For more information, see [Negative Keywords](negative-keywords.md).  
+- If a majority of the keywords in the report are not related to your ad, you might want to use one of the more precise match types. 
+- For keywords that you want to continue leading to clicks, add them to your keyword list with a more specific match type such as Phrase or Exact. 
+- For keywords that you don't want leading to clicks, add them to your keyword list as negative keywords. For more information, see [Negative Keywords](negative-keywords.md). 
 
 Exact match is the most restrictive and broad match is the least restrictive match type. If the keyword matches by using the more restrictive match type, it will also match using the less restrictive match types. If the exact match comparison succeeds, the exact-match bid value is used if it exists; otherwise, it gets the bid value from the first less-restrictive match type that has a bid value (set at the keyword or ad group level).
 
 If there is not an exact match, the phrase-match type comparison is used. If there is a match, the phrase-match bid value is used if it exists; otherwise, the broad-match bid value is used (set at the keyword broad match bid or ad group level search bid). If there is not a phrase match, the broad-match type comparison is used. If there is a match, the broad-match bid value is used (set at the keyword broad match bid or ad group level search bid).
 
-The following table shows example keyword bid values for each match type, as well as the bid value that would be used based on the delivered match type if the keyword participated in the auction. The delivered match type (exact, phrase, or broad) identifies the comparison used to match the keyword to the user's query. For example, if the keyword is ?red shoes? and the user's query is ?pretty red shoes,? the delivered match type would be phrase. The delivered match type may differ from the match type you bid, for example if you bid on a broad match and the search term was an exact match.
+The following table shows example keyword bid values for each match type, as well as the bid value that would be used based on the delivered match type if the keyword participated in the auction. The delivered match type (exact, phrase, or broad) identifies the comparison used to match the keyword to the user's query. For example, if the keyword is "red shoes" and the user's query is "pretty red shoes," the delivered match type would be phrase. The delivered match type may differ from the match type you bid, for example if you bid on a broad match and the search term was an exact match.
 
 |Exact Match Bid Value|Phrase Match Bid Value|Broad Match Bid Value|Delivered Match Type|Bid Value Used|
 |-------------------------|--------------------------|-------------------------|------------------------|------------------|
@@ -194,9 +197,9 @@ For example, let's say you add *bike-repair* as one of your keywords, and then a
 For a detailed list of normalized characters, see the Bing Ads help topic [About duplicate keywords](http://help.bingads.microsoft.com/#apex/3/en/normalization).
 
 Please also note the following validation rules.
-- Normalization is not case sensitive; *bike repair* and *Bike Repair* are treated as the same phrase. You'll see that if you enter a keyword with a capital letter, the capital letter is simply changed to lower-case.  
-- Normalization does not treat singular and plural forms of words as duplicates. For example, *bike* and *bikes* would be separate keywords. If you want to use both the plural and singular form of a keyword, bid on each separately. Similarly, normalization does not impact spaces within or between words, or apostrophes that are a part of a name. For example, *bikerepair* is not a duplicate of *bike repair*.  
-- As you create your keywords, also be aware of the rules they must follow. Here's some more information: [Bing Ads policies](http://help.bingads.microsoft.com/#apex/3/en/52023/1).  
+- Normalization is not case sensitive; *bike repair* and *Bike Repair* are treated as the same phrase. You'll see that if you enter a keyword with a capital letter, the capital letter is simply changed to lower-case. 
+- Normalization does not treat singular and plural forms of words as duplicates. For example, *bike* and *bikes* would be separate keywords. If you want to use both the plural and singular form of a keyword, bid on each separately. Similarly, normalization does not impact spaces within or between words, or apostrophes that are a part of a name. For example, *bikerepair* is not a duplicate of *bike repair*. 
+- As you create your keywords, also be aware of the rules they must follow. Here's some more information: [Bing Ads policies](http://help.bingads.microsoft.com/#apex/3/en/52023/1). 
 
 ## See Also
 [Bing Ads Web Service Addresses](web-service-addresses.md)

@@ -23,8 +23,8 @@ Defines a paging object that you can use to request objects in batches.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="index"></a>Index|The zero-based results page index. For example to request the first page of results, set this value to 0 (zero).|**int**|
-|<a name="size"></a>Size|The page size and the number of results to return in the specified page. The maximum size is 1,000.|**int**|
+|<a name="index"></a>Index|The zero-based results page index.<br/><br/>For example to request the first page of results, set this value to 0 (zero).|**int**|
+|<a name="size"></a>Size|The page size and the number of results to return in the specified page.<br/><br/>The maximum size is 1,000. If you do not set this element the default size is 0 (zero).|**int**|
 
 ## Requirements
 Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  

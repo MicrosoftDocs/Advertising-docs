@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Install the Bing Ads Java SDK and discover code examples.
 ---
 # Get Started Using Java with Bing Ads Services
-To get started developing Bing Ads applications with Java, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-java.md) or [Desktop](walkthrough-desktop-application-java.md) application. The examples have been developed with the Bing Ads Java [SDK](client-libraries.md) and run with the Eclipse Java EE IDE for Web Developers, Luna Service Release 1 (4.4.1). For Eclipse downloads, see [http://www.eclipse.org/downloads/](http://www.eclipse.org/downloads/). Your custom configuration may vary.
+To get started developing Bing Ads applications with Java, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-java.md) or [Desktop](walkthrough-desktop-application-java.md) application. 
 
 You will need user credentials with access to Bing Ads either in [production](https://secure.bingads.microsoft.com/) or [sandbox](https://secure.sandbox.bingads.microsoft.com/Auth?EnvContext=Sandbox). For the production environment you will need a [production developer token](get-started.md#get-developer-token). All sandbox clients can use the universal sandbox developer token i.e., **BBD37VB98**. For more information, please see [Get Started With the Bing Ads API](get-started.md) and [Sandbox](sandbox.md).
 
@@ -25,13 +25,13 @@ When you create a Maven project and include the *microsoft.bingads* Maven artifa
     <dependency>
       <groupId>com.microsoft.bingads</groupId>
       <artifactId>microsoft.bingads</artifactId>
-      <version>11.12.6</version>
+      <version>11.12.7</version>
     </dependency>
   </dependencies>
 </project>
 ```
 > [!NOTE]
-> Version 11.12.6 is included as an example. For details about the latest SDK dependency version, please see the [Bing Ads Java SDK GitHub README.md](https://github.com/BingAds/BingAds-Java-SDK).
+> Version 11.12.7 is included as an example. For details about the latest SDK dependency version, please see the [Bing Ads Java SDK GitHub README.md](https://github.com/BingAds/BingAds-Java-SDK).
 
 ## <a name="walkthrough"></a>Walkthroughs
 Once you have the Bing Ads Java [SDK](client-libraries.md) installed, you can either browse the [Bing Ads Code Examples](code-examples.md), download the examples from [GitHub](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples), or follow one of the application walkthroughs for a [Web](walkthrough-web-application-java.md) or [Desktop](walkthrough-desktop-application-java.md) application.

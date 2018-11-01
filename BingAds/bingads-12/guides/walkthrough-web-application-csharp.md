@@ -17,9 +17,9 @@ The example web application sends authentication requests to the Microsoft accou
 ## <a name="code"></a>Code Walkthrough
 1. Open the [Visual Studio Community 2017](https://www.visualstudio.com/vs/community/) development environment. If you've installed Visual Studio already, add the **ASP.NET and web development** and **Azure development** workloads in Visual Studio by clicking **Tools** > **Get Tools and Features**.
 
-2.  Create a new project by selecting **File > New > Project**. In the **New Project** window choose **.NET Framework 4.7.1** in the drop down, and then select **Visual C# > Web > ASP.NET Web Application (.NET Framework)**. Name the project *BingAdsWebApp* and click **OK**.
+2. Create a new project by selecting **File > New > Project**. In the **New Project** window choose **.NET Framework 4.7.1** in the drop down, and then select **Visual C# > Web > ASP.NET Web Application (.NET Framework)**. Name the project *BingAdsWebApp* and click **OK**.
 
-3.  You can deploy any type of ASP.NET web app to Azure. For this quickstart, select the **MVC** template, make sure authentication is set to **No Authentication**, and click **OK**. 
+3. You can deploy any type of ASP.NET web app to Azure. For this quickstart, select the **MVC** template, make sure authentication is set to **No Authentication**, and click **OK**. 
 
 4. Install the SDK through NuGet for the BingAdsWebApp. For more information about dependencies, see [Installing the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type these commands to install the packages one at a time: `Install-Package Microsoft.BingAds.SDK`, `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`. 
 
@@ -135,7 +135,7 @@ The example web application sends authentication requests to the Microsoft accou
     <p><b style="color: red">@ViewBag.Errors</b></p>
     ```
 
-8. Within the **Controllers** folder of the BingAdsWebApp project, open the HomeController.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above.  
+8. Within the **Controllers** folder of the BingAdsWebApp project, open the HomeController.cs file and replace its contents with the following code block. This defines the service calls that will determine which results are displayed in the view that was defined above. 
 
     ```csharp
     using System;

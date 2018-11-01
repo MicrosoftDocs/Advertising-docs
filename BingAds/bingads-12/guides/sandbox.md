@@ -15,9 +15,6 @@ Bing Ads provides an API sandbox environment where you can test your application
 ## <a name="access"></a>Get Sandbox Access
 The sandbox and production environments use separate credentials. Although in production you need to get your own developer token, all Bing Ads customers can use the following universal developer token in sandbox: **BBD37VB98**
 
-> [!IMPORTANT]
-> The UserName and Password header elements are deprecated in favor of the AuthenticationToken header i.e., [Authentication with OAuth](authentication-oauth.md). As of August 1st, 2018, all Bing Ads API Version 11 service calls with managed UserName and Password credentials will return an error. Bing Ads API Version 12 already does not accept the managed user credentials. In a future version of the API, the UserName and Password header elements will be removed from the service definitions.
-
 To authenticate with a Microsoft Account in sandbox you will follow the same work flow as described in [Authentication with OAuth](authentication-oauth.md) for production; however, you will use different endpoints.
 
 For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](authentication-oauth.md), substitute them with the sandbox endpoints. 
@@ -87,7 +84,7 @@ Sandbox should not be used in the same capacity as production.
 - Make sure that when you deploy your application to the production environment, you use the production WSDLs and your production credentials. 
 - Sandbox contains the current production release, and will be updated with feature previews with or without prior notification. 
 - Capacity of the sandbox is less than that of production, and you should not use it to perform stress or capacity testing. 
-- Please do not use more than one thread.   
+- Please do not use more than one thread.  
 
 ## <a name="adinsight"></a>Ad Insight Service
 Opportunities are updated daily in sandbox for existing campaigns, ad groups, and keywords to test the end to end coding workflow. You may get test opportunities for up to 1,000 keywords across all accounts per Bing Ads customer. You should not use the test data to infer or expect similar performance for your campaigns, ad groups, or keywords in production.

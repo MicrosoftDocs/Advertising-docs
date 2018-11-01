@@ -9,12 +9,12 @@ description: Discover bid and budget opportunities.
 # Budget and Bid Opportunities
 The [Ad Insight](../ad-insight-service/ad-insight-service-reference.md) service is a keyword research service that you can use to research keyword, bid, and budget opportunities:
 
-- Get past keyword performance.  
-- Get the estimated minimum keyword bid that may result in ads appearing in the specified search results position.  
-- Get the estimated position where ads may appear given the specified bid.  
-- Get suggested relevant keywords from the content of a web page or from other keywords.  
-- Get the locations and demographics (age and gender) of the users who have searched for specified keywords.  
-- Discover opportunities for improving the performance of your advertising campaigns. The results are similar to using the opportunities tab of the Bing Ads web application.  
+- Get past keyword performance. 
+- Get the estimated minimum keyword bid that may result in ads appearing in the specified search results position. 
+- Get the estimated position where ads may appear given the specified bid. 
+- Get suggested relevant keywords from the content of a web page or from other keywords. 
+- Get the locations and demographics (age and gender) of the users who have searched for specified keywords. 
+- Discover opportunities for improving the performance of your advertising campaigns. The results are similar to using the opportunities tab of the Bing Ads web application. 
 
 You can get most of this information broken out by device type.
 

@@ -20,6 +20,7 @@ Defines the type of ad.
     <xs:enumeration value="ExpandedText" />
     <xs:enumeration value="DynamicSearch" />
     <xs:enumeration value="ResponsiveAd" />
+    <xs:enumeration value="ResponsiveSearch" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -34,6 +35,7 @@ Defines the type of ad.
 |<a name="image"></a>Image|Reserved for future use.|
 |<a name="product"></a>Product|Refers to a [ProductAd](productad.md).|
 |<a name="responsivead"></a>ResponsiveAd|Refers to a [ResponsiveAd](responsivead.md).|
+|<a name="responsivesearch"></a>ResponsiveSearch|Refers to a [ResponsiveSearchAd](responsivesearchad.md).|
 |<a name="text"></a>Text|Refers to a [TextAd](textad.md).|
 
 ## Requirements

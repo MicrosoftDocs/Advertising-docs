@@ -9,10 +9,13 @@ description: A responsive ad format for Audience ads in the Microsoft Audience N
 # ResponsiveAd Data Object - Campaign Management
 A responsive ad format for Audience ads in the Microsoft Audience Network.
 
-Responsive ads automatically adjust to accommodate the sizes and shapes of audience ad formats.
+Responsive ads automatically adjust to accommodate the sizes and shapes of audience ad formats. These ads work best with informative text rather than calls to action.
 
 > [!NOTE]
 > Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
+
+> [!NOTE]
+> Duplicate responsive ads are allowed in the same ad group. 
 
 ## Syntax
 ```xml

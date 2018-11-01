@@ -11,18 +11,9 @@ dev_langs:
 # Product Ad Label Record - Bulk
 Defines an association record between a [Product Ad](product-ad.md) and a [Label](label.md) that can be uploaded and downloaded in a bulk file. To upload or download the product ad or label, use the [Product Ad](product-ad.md) or [Label](label.md) record.
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Product Ad Label* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+You can download all *Product Ad Label* records in the account by including the [DownloadEntity](downloadentity.md) value of *ProductAdLabels* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
-- [Client Id](#clientid)
-- [Id](#id)
-- [Modified Time](#modifiedtime)
-- [Parent Id](#parentid)
-- [Status](#status)
-
-You can download all fields of the *Product Ad Label* record by including the [DownloadEntity](downloadentity.md) value of *ProductAdLabels* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
-
-The following Bulk CSV example would apply a label to a product ad if the valid *Id* and *Parent Id* are provided. 
+The following Bulk CSV example would apply a label to a product ad if valid [Id](#id) and [Parent Id](#parentid) values are provided. 
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Name,Description,Label,Color
@@ -30,8 +21,7 @@ Format Version,,,,,,,,6,,,
 Product Ad Label,,-22,-11112,,,ClientIdGoesHere,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkProductAdLabel* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
-
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkProductAdLabel* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -70,13 +60,21 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-### <a name="clientid"></a>Client Id
+For a *Product Ad Label* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+
+- [Client Id](#clientid)
+- [Id](#id)
+- [Modified Time](#modifiedtime)
+- [Parent Id](#parentid)
+- [Status](#status)
+
+## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
 **Delete:** Read-only  
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The identifier of the label that is applied or removed from the product ad.
 
 This bulk field maps to the *Id* field of the [Label](label.md) record. 
@@ -84,7 +82,7 @@ This bulk field maps to the *Id* field of the [Label](label.md) record.
 **Add:** Read-only and Required. You must either specify an existing label identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Label](label.md) record. This is recommended if you are applying new labels to product ads in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
 
 > [!NOTE]
@@ -93,7 +91,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Add:** Read-only  
 **Delete:** Read-only  
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The identifier of the product ad where this label is applied or removed.
 	
 This bulk field maps to the *Id* field of the [Product Ad](product-ad.md) record. 
@@ -101,7 +99,7 @@ This bulk field maps to the *Id* field of the [Product Ad](product-ad.md) record
 **Add:** Read-only and Required. You must either specify an existing product ad identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Product Ad](product-ad.md) record. This is recommended if you are applying labels to a new product ad in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Delete:** Read-only and Required  
 
-### <a name="status"></a>Status
+## <a name="status"></a>Status
 Represents the applied status between the product ad and the label. 
 
 Possible values are *Active* and *Deleted*. If the label is applied to the product ad, this field's value is *Active*.
