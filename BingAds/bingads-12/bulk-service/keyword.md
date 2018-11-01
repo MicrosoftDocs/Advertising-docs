@@ -11,39 +11,9 @@ dev_langs:
 # Keyword Record - Bulk
 Defines a keyword that can be downloaded and uploaded in a bulk file.
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Keyword* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+You can download all *Keyword* records in the account by including the [DownloadEntity](downloadentity.md) value of *Keywords* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. To include the [Keyword Relevance](#keywordrelevance), [Landing Page Relevance](#landingpagerelevance), [Landing Page User Experience](#landingpageuserexperience), and [Quality Score](#qualityscore) fields within the downloaded *Campaign* records, you must also include the [QualityScoreData](datascope.md#qualityscoredata) scope. If you also include the [BidSuggestionsData](datascope.md#bidsuggestionsdata) scope, the Bulk file can also contain separate [Keyword Best Position Bid](keyword-best-position-bid.md), [Keyword Main Line Bid](keyword-main-line-bid.md), and [Keyword First Page Bid](keyword-first-page-bid.md) records corresponding to each downloaded keyword. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
-- [Ad Group](#adgroup)
-- [Bid](#bid)
-- [Bid Strategy Type](#bidstrategytype)
-- [Campaign](#campaign)
-- [Client Id](#clientid)
-- [Custom Parameter](#customparameter)
-- [Destination Url](#destinationurl)
-- [Editorial Appeal Status](#editorialappealstatus)
-- [Editorial Location](#editoriallocation)
-- [Editorial Reason Code](#editorialreasoncode)
-- [Editorial Status](#editorialstatus)
-- [Editorial Term](#editorialterm)
-- [Final Url](#finalurl)
-- [Id](#id)
-- [Inherited Bid Strategy Type](#inheritedbidstrategytype)
-- [Keyword](#keyword)
-- [Match Type](#matchtype)
-- [Mobile Final Url](#mobilefinalurl)
-- [Modified Time](#modifiedtime)
-- [Param1](#param1)
-- [Param2](#param2)
-- [Param3](#param3)
-- [Parent Id](#parentid)
-- [Publisher Countries](#publishercountries)
-- [Status](#status)
-- [Tracking Template](#trackingtemplate)
-
-You can download all fields of the *Keyword* record by including the [DownloadEntity](downloadentity.md) value of *Keywords* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
-
-The following Bulk CSV example would add a new keyword given a valid ad group ID (*Parent Id*). 
+The following Bulk CSV example would add a new keyword if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Keyword,Match Type,Bid,Param1,Param2,Param3,Name,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Bid Strategy Type
@@ -51,8 +21,7 @@ Format Version,,,,,,,,,,,,,,6,,,,,
 Keyword,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,red shoes,Broad,0.5,,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,ManualCpc
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkKeyword* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
-
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkKeyword* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -140,7 +109,40 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-### <a name="adgroup"></a>Ad Group
+For a *Keyword* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+
+- [Ad Group](#adgroup)
+- [Bid](#bid)
+- [Bid Strategy Type](#bidstrategytype)
+- [Campaign](#campaign)
+- [Client Id](#clientid)
+- [Custom Parameter](#customparameter)
+- [Destination Url](#destinationurl)
+- [Editorial Appeal Status](#editorialappealstatus)
+- [Editorial Location](#editoriallocation)
+- [Editorial Reason Code](#editorialreasoncode)
+- [Editorial Status](#editorialstatus)
+- [Editorial Term](#editorialterm)
+- [Final Url](#finalurl)
+- [Id](#id)
+- [Inherited Bid Strategy Type](#inheritedbidstrategytype)
+- [Keyword](#keyword)
+- [Keyword Relevance](#keywordrelevance)
+- [Landing Page Relevance](#landingpagerelevance)
+- [Landing Page User Experience](#landingpageuserexperience)
+- [Match Type](#matchtype)
+- [Mobile Final Url](#mobilefinalurl)
+- [Modified Time](#modifiedtime)
+- [Param1](#param1)
+- [Param2](#param2)
+- [Param3](#param3)
+- [Parent Id](#parentid)
+- [Publisher Countries](#publishercountries)
+- [Quality Score](#qualityscore)
+- [Status](#status)
+- [Tracking Template](#trackingtemplate)
+
+## <a name="adgroup"></a>Ad Group
 The name of the ad group that contains the keyword.
 
 **Add:** Read-only and Required  
@@ -148,16 +150,18 @@ The name of the ad group that contains the keyword.
 **Delete:** Read-only and Required  
 
 > [!NOTE]
-> For add, update, and delete, you must specify either the *Parent Id* or *Ad Group* field.
+> For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
 
-### <a name="bid"></a>Bid
-The bid to use when the user’s search term and the keyword match.
+## <a name="bid"></a>Bid
+The highest price that you want to pay each time someone clicks your ad.
+
+In addition to setting a default bid, you can set custom bids for each keyword. If you set a custom bid for a particular keyword, this bid amount will override the default bid you initially set when you created your ad group. We recommend custom bidding for advanced advertisers who want more control of their pay-per-click rates.
 
 **Add:** Optional. If you do not specify a keyword level bid, the [Ad Group](ad-group.md) bid for the corresponding search or content match type will be used. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.  
 **Delete:** Read-only  
 
-### <a name="bidstrategytype"></a>Bid Strategy Type
+## <a name="bidstrategytype"></a>Bid Strategy Type
 The bid strategy type for how you want to manage your bids. For keywords you can use either of the *InheritFromParent* or *ManualCpc* bid strategy types. If you do not set this field, then *InheritFromParent* is used by default.
 
 > [!IMPORTANT] 
@@ -181,21 +185,21 @@ The bid strategy type for how you want to manage your bids. For keywords you can
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
-### <a name="campaign"></a>Campaign
+## <a name="campaign"></a>Campaign
 The name of the campaign that contains the keyword.
 
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="clientid"></a>Client Id
+## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
 **Update:** Optional    
 **Delete:** Read-only  
 
-### <a name="customparameter"></a>Custom Parameter
+## <a name="customparameter"></a>Custom Parameter
 Your custom collection of key and value parameters for URL tracking.
 
 In a bulk file, the list of custom parameters are formatted as follows.
@@ -215,7 +219,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
 **Delete:** Read-only  
 
-### <a name="destinationurl"></a>Destination Url
+## <a name="destinationurl"></a>Destination Url
 The URL of the webpage to take the user to when they click the ad. The keyword’s destination URL is used if specified; otherwise, the ad’s destination URL is used.
 
 > [!IMPORTANT]
@@ -225,7 +229,7 @@ The URL of the webpage to take the user to when they click the ad. The keyword�
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.     
 **Delete:** Read-only  
 
-### <a name="editorialappealstatus"></a>Editorial Appeal Status
+## <a name="editorialappealstatus"></a>Editorial Appeal Status
 Determines whether you can appeal the issues found by the editorial review.
 
 Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](../campaign-management-service/appealstatus.md).
@@ -234,21 +238,21 @@ Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For 
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="editoriallocation"></a>Editorial Location
+## <a name="editoriallocation"></a>Editorial Location
 The component or property of the keyword that failed editorial review. 
 
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="editorialreasoncode"></a>Editorial Reason Code
+## <a name="editorialreasoncode"></a>Editorial Reason Code
 A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Reason Codes](../guides/editorial-failure-reason-codes.md). 
 
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="editorialstatus"></a>Editorial Status
+## <a name="editorialstatus"></a>Editorial Status
 The editorial status of the keyword.
 
 Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [KeywordEditorialStatus Value Set](../campaign-management-service/keywordeditorialstatus.md).
@@ -257,7 +261,7 @@ Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="editorialterm"></a>Editorial Term
+## <a name="editorialterm"></a>Editorial Term
 The term that failed editorial review.
 
 This field will not be set if a combination of terms caused the failure or if the failure was based on a policy violation.
@@ -266,14 +270,12 @@ This field will not be set if a combination of terms caused the failure or if th
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="finalurl"></a>Final Url
+## <a name="finalurl"></a>Final Url
 The landing page URL. The keyword’s final URL is used if specified; otherwise, the ad’s final URL is used.
 
 The following validation rules apply to Final URLs and Final Mobile URLs.
 
-- The length of the URL is limited to 2,048 characters.
-
-    **Note:** The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
+- The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 
 - You may specify up to 10 items for both Final URLs and Final Mobile URLs; however, only the first item in each list is used for delivery. The service allows up to 10 for potential forward compatibility.
 
@@ -291,21 +293,21 @@ Also note that  if the *Tracking Template* or *Custom Parameter* fields are set,
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
 **Delete:** Read-only  
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The system generated identifier of the keyword.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
-### <a name="inheritedbidstrategytype"></a>Inherited Bid Strategy Type
+## <a name="inheritedbidstrategytype"></a>Inherited Bid Strategy Type
 The bid strategy type that is inherited from the parent campaign or ad group if the keyword's *Bid Strategy Type* is set to *InheritFromParent*. This value is equal to the parent campaign or ad group's *Bid Strategy Type* field. Possible values are *EnhancedCpc*, *ManualCpc*, *MaxClicks*, *MaxConversions*, and *TargetCpa*.
 
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="keyword"></a>Keyword
+## <a name="keyword"></a>Keyword
 The keyword text.
 
 The text can contain a maximum of 100 characters.
@@ -318,7 +320,55 @@ If the *Match Type* is Broad, your application should handle broad match modifie
 **Update:** Read-only    
 **Delete:** Read-only
 
-### <a name="matchtype"></a>Match Type
+## <a name="keywordrelevance"></a>Keyword Relevance
+A numeric score that indicates how likely your ads will be clicked and how well your keyword competes against other keywords targeting the same traffic. This score predicts whether your keyword is likely to lead to a click on your ads, taking into account how well your keyword has performed in the past relative to your ad's position.
+
+> [!NOTE]
+> Keyword Relevance is equivalent to the **Expected Click-Through Rate** label used in the Bing Ads web application.
+
+A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.
+
+If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.
+
+Data for this column is typically updated 14-18 hours after the UTC day ends.
+
+**Add:** Read-only    
+**Update:** Read-only  
+**Delete:** Read-only  
+
+## <a name="landingpagerelevance"></a>Landing Page Relevance
+A numeric score that indicates how relevant your ad and landing page are to the customer's search query or other input.
+
+> [!NOTE]
+> Landing Page Relevance is equivalent to the **Ad Relevance** label used in the Bing Ads web application.
+
+A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.
+
+If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.
+
+Data for this column is typically updated 14-18 hours after the UTC day ends.
+
+**Add:** Read-only    
+**Update:** Read-only  
+**Delete:** Read-only  
+
+## <a name="landingpageuserexperience"></a>Landing Page User Experience
+A numeric score that indicates whether your landing page is likely to provide a good experience to customers who click your ad and land on your website.
+
+> [!NOTE]
+> Landing Page User Experience is equivalent to the **Landing Page Experience** label used in the Bing Ads web application.
+
+A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.
+
+If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.
+
+Data for this column is typically updated 14-18 hours after the UTC day ends.
+
+**Add:** Read-only    
+**Update:** Read-only  
+**Delete:** Read-only  
+
+## <a name="matchtype"></a>Match Type
 The type of match to compare the keyword and the user's search term.
 
 The supported match type values for a keyword are *Broad*, *Exact* and *Phrase*.
@@ -327,14 +377,12 @@ The supported match type values for a keyword are *Broad*, *Exact* and *Phrase*.
 **Update:** Read-only    
 **Delete:** Read-only  
 
-### <a name="mobilefinalurl"></a>Mobile Final Url
+## <a name="mobilefinalurl"></a>Mobile Final Url
 The mobile landing page URL. The keyword’s final mobile URL is used if specified; otherwise, the ad’s final mobile URL is used.
 
 The following validation rules apply to Final URLs and Final Mobile URLs.
 
-- The length of the URL is limited to 2,048 characters.
-
-    **Note:** The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
+- The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 
 - You may specify up to 10 items for both Final URLs and Final Mobile URLs; however, only the first item in each list is used for delivery. The service allows up to 10 for potential forward compatibility.
 
@@ -352,7 +400,7 @@ Also note that if the TrackingUrlTemplate or UrlCustomParameters element are set
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
 **Delete:** Read-only  
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
 
 > [!NOTE]
@@ -362,7 +410,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="param1"></a>Param1
+## <a name="param1"></a>Param1
 The string to use as the substitution value in an ad if the ad’s title, text, display URL, or destination URL contains the {Param1} dynamic substitution string.
 
 > [!NOTE]
@@ -378,7 +426,7 @@ Also note that if the ad group only has one ad, and if that ad uses {Param1} but
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
 **Delete:** Read-only  
 
-### <a name="param2"></a>Param2
+## <a name="param2"></a>Param2
 The string to use as the substitution value in an ad if the title, text, display URL, or destination URL contains the {Param2} dynamic substitution string.
 
 Typically, you use the {Param2} substitution string in the title or text (ad copy description) elements of an ad.
@@ -393,7 +441,7 @@ Also note that if the ad group only has one ad, and if that ad uses {Param2} but
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
 **Delete:** Read-only  
 
-### <a name="param3"></a>Param3
+## <a name="param3"></a>Param3
 The string to use as the substitution value in an ad if the title, text, display URL, or destination URL contains the {Param3} dynamic substitution string.
 
 Typically, you use the {Param3} substitution string in the title or text (ad copy description) elements of an ad.
@@ -408,7 +456,7 @@ Also note that if the ad group only has one ad, and if that ad uses {Param3} but
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
 **Delete:** Read-only  
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The system generated identifier of the ad group that contains the keyword.
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
@@ -418,9 +466,9 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only  
 
 > [!NOTE]
-> For add, update, and delete, you must specify either the *Parent Id* or *Ad Group* field.
+> For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
 
-### <a name="publishercountries"></a>Publisher Countries
+## <a name="publishercountries"></a>Publisher Countries
 The list of publisher countries whose editorial guidelines do not allow the specified [term](#editorialterm).
 
 In a bulk file, the list of publisher countries are delimited with a semicolon (;).
@@ -429,7 +477,20 @@ In a bulk file, the list of publisher countries are delimited with a semicolon (
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="status"></a>Status
+## <a name="qualityscore"></a>Quality Score
+The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Bing Ads using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.
+
+Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for syndicated networks do not affect quality score. The value in the report will be "0" (zero) if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.
+
+If you run the report multiple times in a day, the quality score values could change from report to report based on when you run the report relative to when the scores are calculated.
+
+If you specify a time period that spans multiple days, the quality score is the current and most recently calculated score and will be reported as the same for each day in the time period. Use the historic quality score to find out how quality score may have changed over time. Historical quality score is a daily snapshot of the rolling quality score. For more information on historic quality score, see the *HistoricalQualityScore* column in [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).
+
+**Add:** Read-only    
+**Update:** Read-only  
+**Delete:** Read-only  
+
+## <a name="status"></a>Status
 The status of the keyword.
 
 Possible values are *Active*, *Paused*, *Inactive*, or *Deleted*. 
@@ -438,7 +499,7 @@ Possible values are *Active*, *Paused*, *Inactive*, or *Deleted*.
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Required. The Status must be set to *Deleted*.
 
-### <a name="trackingtemplate"></a>Tracking Template
+## <a name="trackingtemplate"></a>Tracking Template
 The tracking template to use as a default for the URL specified with FinalUrls.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)
@@ -454,16 +515,3 @@ The following validation rules apply to tracking templates. For more details abo
 **Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
 **Delete:** Read-only  
-
-## <a name="bidsuggestionsdata"></a>Bid Suggestions Data Fields in the Bulk File
-If the requested download [DataScope Value Set](datascope.md) includes *BidSuggestionsData*, the download file can also contain the [Keyword Best Position Bid](keyword-best-position-bid.md), [Keyword Main Line Bid](keyword-main-line-bid.md), and [Keyword First Page Bid](keyword-first-page-bid.md) records corresponding to each downloaded keyword. 
-
-## <a name="qualityscore"></a>Quality Score Fields in the Bulk File
-If the [DataScope Value Set](datascope.md) element of the download request includes *QualityScore*, the download file will also include the following fields in this record.
-
-|Column Header|Description|
-|-----------------|---------------|
-|*Quality Score*|The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Bing Ads using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.<br/><br/>Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for syndicated networks do not affect quality score. The value in the report will be "0" (zero) if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.<br/><br/>If you run the report multiple times in a day, the quality score values could change from report to report based on when you run the report relative to when the scores are calculated.<br/><br/>If you specify a time period that spans multiple days, the quality score is the current and most recently calculated score and will be reported as the same for each day in the time period. Use the historic quality score to find out how quality score may have changed over time. Historical quality score is a daily snapshot of the rolling quality score. For more information on historic quality score, see the *HistoricalQualityScore* column in [Report Attributes and Performance Statistics](../guides/report-attributes-performance-statistics.md).|
-|*Keyword Relevance*|A numeric score that indicates how likely your ads will be clicked and how well your keyword competes against other keywords targeting the same traffic. This score predicts whether your keyword is likely to lead to a click on your ads, taking into account how well your keyword has performed in the past relative to your ad's position.<br/><br/>*Keyword Relevance* is equivalent to the **Expected Click-Through Rate** label used in the Bing Ads web application.<br/><br/>A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.<br/><br/>If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.<br/><br/>Data for this column is typically updated 14-18 hours after the UTC day ends.|
-|*Landing Page Relevance*|A numeric score that indicates how relevant your ad and landing page are to the customer's search query or other input.<br/><br/>*Landing Page Relevance* is equivalent to the **Ad Relevance** label used in the Bing Ads web application.<br/><br/>A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.<br/><br/>If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.<br/><br/>Data for this column is typically updated 14-18 hours after the UTC day ends.|
-|*Landing Page User Experience*|A numeric score that indicates whether your landing page is likely to provide a good experience to customers who click your ad and land on your website.<br/><br/>*Landing Page User Experience* is equivalent to the **Landing Page Experience** label used in the Bing Ads web application.<br/><br/>A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average.<br/><br/>If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score.<br/><br/>Data for this column is typically updated 14-18 hours after the UTC day ends.|

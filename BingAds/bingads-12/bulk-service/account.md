@@ -12,7 +12,8 @@ Defines an account that can be uploaded and downloaded in a bulk file.
 > [!NOTE]
 > Only super admin and standard users can update an account.
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
+The *Account* record is included in the Bulk download file automatically everytime you call the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. 
+
 For an *Account* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Id](#id)
@@ -21,9 +22,7 @@ For an *Account* record, the following attribute fields are available in the [Bu
 - [Sync Time](#synctime)
 - [Tracking Template](#trackingtemplate)
 
-The *Account* record is included in the Bulk download file automatically everytime you call the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. 
-
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The system generated identifier of the account.
 
 > [!IMPORTANT]
@@ -33,7 +32,7 @@ The system generated identifier of the account.
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="msclkidautotaggingenabled"></a>MSCLKID Auto Tagging Enabled
+## <a name="msclkidautotaggingenabled"></a>MSCLKID Auto Tagging Enabled
 Determines whether auto-tagging of the MSCLKID query string parameter is enabled. The MSCLKID is a 32-character GUID that is unique for each ad click.
 
 You might want to enable auto-tagging of MSCLKID for tracking leads via offline conversion goals. If auto-tagging of MSCLKID is enabled, the MSCLKID is automatically appended to the landing page URL when a customer clicks on your ad. For example, *www.contoso.com/?msclkid={msclkid}*. The click ID is unique for each ad click and multiple clicks on the same ad from the same user will result in multiple click IDs.
@@ -47,7 +46,7 @@ If the value is *True*, then the MSCLKID auto tagging feature is enabled. Otherw
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The system generated identifier of the customer that contains the account.
 
 **Add:** Read-only  
@@ -55,7 +54,7 @@ The system generated identifier of the customer that contains the account.
 **Delete:** Read-only  
  
 
-### <a name="synctime"></a>Sync Time
+## <a name="synctime"></a>Sync Time
 Where the Account row intersects with the Sync Time column, the field value is represented as **MM/DD/YYYY HH:MM**, or month, day, year, hour, and minute relative to the UTC time zone. Save this value and use it with the bulk service to only get the changes between the current and the next download.
 
 **Add:** Read-only  
@@ -63,7 +62,7 @@ Where the Account row intersects with the Sync Time column, the field value is r
 **Delete:** Read-only  
 
 
-### <a name="trackingtemplate"></a>Tracking Template
+## <a name="trackingtemplate"></a>Tracking Template
 The tracking template to use as a default for all URLs in your account.
 
 The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)

@@ -11,13 +11,13 @@ The following figure shows the high level Bing Ads entity object model from the 
 
 ![Entity Hierarchy](media/entity-hierarchy.png "Entity Hierarchy")  
 
-A subset of entities with property limits (subject to change) are listed below. For a comprehensive list of entities and limits please see the [Bing Ads API reference](reference.md) documentation. For limits on request objects per service operation, see the [Ad Insight](../ad-insight-service/ad-insight-service-operations.md), [Bulk](../bulk-service/bulk-service-operations.md), [Campaign Management](../campaign-management-service/campaign-management-service-operations.md), [Customer Billing](../customer-billing-service/customer-billing-service-operations.md), [Customer Management](../customer-management-service/customer-management-service-operations.md), and [Reporting](../reporting-service/reporting-service-operations.md) reference documentation.  
+A subset of entities with property limits (subject to change) are listed below. For a comprehensive list of entities and limits please see the [Bing Ads API reference](reference.md) documentation. For limits on request objects per service operation, see the [Ad Insight](../ad-insight-service/ad-insight-service-operations.md), [Bulk](../bulk-service/bulk-service-operations.md), [Campaign Management](../campaign-management-service/campaign-management-service-operations.md), [Customer Billing](../customer-billing-service/customer-billing-service-operations.md), [Customer Management](../customer-management-service/customer-management-service-operations.md), and [Reporting](../reporting-service/reporting-service-operations.md) reference documentation. 
 
 > [!NOTE]
 > The following are the standard limits. Please contact your account team if you have questions on limits that apply to your accounts.
 
 ## <a name="account"></a>Accounts
-Organizes campaigns and identifies the payment instrument used to settle the account.  Three accounts are allowed per credit card.
+Organizes campaigns and identifies the payment instrument used to settle the account. Three accounts are allowed per credit card.
 
 The following table defines limits for [AdvertiserAccount](../customer-management-service/advertiseraccount.md) properties.
 
@@ -28,7 +28,7 @@ The following table defines limits for [AdvertiserAccount](../customer-managemen
 ## <a name="adextensions"></a>Ad Extensions
 Ad extensions let you decorate expanded text ads with additional information that helps customers find relevant information about your products and services. Ad extensions are stored in a shared library at the account level. After adding the extension to your shared library, you must also explicitly associate it with the account or one or more campaigns or ad groups within the account for the extension to become eligible for delivery. For more information, see [Ad Extensions](ad-extensions.md).
 
-An account can contain up to 200,000 sitelink ad extensions. Outside of that limit, each account can contain up to 150,000 ad extensions of all other types combined.  
+An account can contain up to 200,000 sitelink ad extensions. Outside of that limit, each account can contain up to 150,000 ad extensions of all other types combined. 
 
 The entity (account, campaign, or ad group) to ad extension association limit varies by ad extension type. 
 
@@ -39,7 +39,7 @@ The entity (account, campaign, or ad group) to ad extension association limit va
 > 
 > You must associate between 2 and 20 callout ad extensions per entity. If you associate one or fewer callout extensions with your account, campaign, or ad group, then no callout text will serve with your ad. An ad may include between 2 to 4 callouts per impression.
 > 
-> For each account, only 1,000 campaigns and 1,000 ad groups can be associated with image ad extensions.  
+> For each account, only 1,000 campaigns and 1,000 ad groups can be associated with image ad extensions. 
 
 |Ad Extension Type|Association Limit Per Entity|
 |------------|---------|
@@ -160,7 +160,7 @@ The following table defines limits for ad group properties.
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
 ## <a name="ads"></a>Ads
-Each ad group can contain between one and 100 ads combined, whether the type of ad is app install, dynamic search, expanded text, product, or responsive ad. 
+Each ad group can contain between one and 100 ads combined, whether the type of ad is [app install](#appinstallad), [dynamic search](#dynamicsearchad), [expanded text](#expandedtextad), [product](#productad), or [responsive (audience network)](#responsivead) ads. Up to 3 of those 100 ads can be [responsive search ads](#responsivesearchad). 
 
 Each account can have up to 4 million ads.
 
@@ -214,7 +214,7 @@ The following table defines limits for expanded text ad properties.
 |Final Url|The string can contain a maximum of 2,048 characters.|
 |Path 1|The maximum input length is 50 characters including dynamic text strings, and of those 50 no more than 15 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution.|
 |Path 2|The maximum input length is 50 characters including dynamic text strings, and of those 50 no more than 15 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution.|
-|Text|The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 80 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 40 final characters are allowed after substitution.<br/><br/>**Note:** For customers in [pilot 510](../customer-management-service/getcustomerpilotfeatures.md#featurepilotflags), the maximum length is increased from 80 to 90, or from 40 to 45 for double-width characters.|
+|Text|The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 90 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 45 final characters are allowed after substitution.|
 |Text Part 2|The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 90 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 45 final characters are allowed after substitution.|
 |Title Part 1|The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 30 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 15 final characters are allowed after substitution.|
 |Title Part 2|The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 30 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 15 final characters are allowed after substitution.|
@@ -245,6 +245,29 @@ The following table defines limits for responsive ad properties.
 |Headline|The string can contain a maximum of 25 characters.|
 |LongHeadline|The string can contain a maximum of 90 characters.|
 |Text|The string can contain a maximum of 90 characters.|
+
+### <a name="responsivesearchad"></a>Responsive Search Ads
+A responsive ad format for Audience ads in the Microsoft Audience Network. Responsive ads automatically adjust to accommodate the sizes and shapes of native ad formats.
+
+You can manage responsive search ads using the Bulk service or Campaign Management service ([ResponsiveSearchAd](../campaign-management-service/responsivesearchad.md)).
+
+The following table defines limits for responsive search ad properties.
+
+> [!NOTE]
+> The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis. 
+
+|Property|Limit|
+|------------|---------|
+|Descriptions|You must set between 2-4 descriptions. The maximum input length of each description is 1,000 characters including dynamic text strings, and of those 1,000 no more than 90 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 45 final characters are allowed after substitution.|
+|Domain|The domain portion of the URL in combination with the path 1 and path 2 strings cannot exceed 67 characters.|
+|Final Url|The string can contain a maximum of 2,048 characters.|
+|Headlines|You must set between 3-15 headlines. The maximum input length of each headline is 1,000 characters including dynamic text strings, and of those 1,000 no more than 30 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 15 final characters are allowed after substitution.|
+|Path 1|The maximum input length is 50 characters including dynamic text strings, and of those 50 no more than 15 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution.|
+|Path 2|The maximum input length is 50 characters including dynamic text strings, and of those 50 no more than 15 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution.|
+|Tracking Url Template|The string can contain a maximum of 2,048 characters.|
+
+## <a name="assets"></a>Assets
+Each account can have up to 1 million assets e.g., up to 1 million text assets that can be used for headlines and descriptions of a [responsive search ad](#responsivesearchad).
 
 ## <a name="audiences"></a>Audiences
 The following table defines limits for audience properties.

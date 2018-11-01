@@ -8,7 +8,7 @@ description: Get details about migrating to Bing Ads API version 12.
 ---
 # Migrate to Version 12
 > [!IMPORTANT]
-> With the availability of Bing Ads API version 12, version 11 is deprecated and will sunset by October 31, 2018. 
+> Bing Ads API version 11 sunset date was October 31, 2018. 
 
 The sections below describe changes from version 11 to version 12 of the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md), [Bulk](../bulk-service/bulk-service-reference.md), [Campaign Management](../campaign-management-service/campaign-management-service-reference.md), [Customer Billing](../customer-billing-service/customer-billing-service-reference.md), [Customer Management](../customer-management-service/customer-management-service-reference.md), and [Reporting](../reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services. 
 
@@ -49,7 +49,7 @@ The production endpoint is [https://adinsight.api.bingads.microsoft.com/Api/Adve
 The sandbox endpoint is [https://adinsight.api.sandbox.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc](https://adinsight.api.sandbox.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc).
 
 #### <a name="adinsight-locationids"></a>Location Identifiers for Keyword Estimates
-The list of *PublisherCountries* is replaced with a list of *LocationIds* for both the [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) and [GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md) operations. This change enables you to get more accurate estimates by refining the requested locations e.g., city or metro area.  
+The list of *PublisherCountries* is replaced with a list of *LocationIds* for both the [GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md) and [GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md) operations. This change enables you to get more accurate estimates by refining the requested locations e.g., city or metro area. 
 
 #### <a name="adinsight-keywordidea"></a>Keyword Idea Attributes
 In version 12 all attributes within the [KeywordIdea](../ad-insight-service/keywordidea.md) are nillable i.e., AdImpressionShare, Competition, Relevance, Source, and SuggestedBid. If you do not request them, the [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md) operation will return nil properties in the returned [KeywordIdea](../ad-insight-service/keywordidea.md). In addition the Competition [KeywordIdeaAttribute](../ad-insight-service/keywordideaattribute.md) is no longer required when calling [GetKeywordIdeas](../ad-insight-service/getkeywordideas.md). 
@@ -127,7 +127,7 @@ In version 11 to set the "target and bid" option you would have set the *Remarke
 In version 11 to set the "bid only" option you would have set the *Remarketing Targeting Setting* field to *BidOnly*. To set the "bid only" option in version 12, exclude the *Audience* value from the new [Target Setting](../bulk-service/ad-group.md#targetsetting) field. To update from "target and bid" to "bid only" you'll need to explicitly remove the "target and bid" option e.g., set the [Target Setting](../bulk-service/ad-group.md#targetsetting) field to "delete_value". For more details please see [Target Setting](../bulk-service/ad-group.md#targetsetting). 
 
 #### <a name="bulk-expandedtextaddomain"></a>Expanded Text Ad Domain
-The *Display Url* field of an [Expanded Text Ad](../bulk-service/expanded-text-ad.md) record is renamed as *Domain*.  
+The *Display Url* field of an [Expanded Text Ad](../bulk-service/expanded-text-ad.md) record is renamed as *Domain*. 
 
 #### <a name="bulk-sunset-content"></a>Content Ad Distribution
 The Content ad distribution is no longer supported in Bing Ads, and the *Content Bid*, *Content Network*, and *Search Network* fields of an [Ad Group](../bulk-service/ad-group.md) are removed from version 12. The ad distribution is effectively determined by the campaign type e.g., Search or Audience campaigns. The *Search Bid* field of an [Ad Group](../bulk-service/ad-group.md) is renamed *Cpc Bid*.
@@ -151,10 +151,13 @@ In version 12 the AudienceNetworkInMarketAudiences and AudienceNetworkAudiences 
 > In both version 11 and 12 the *Supported Campaign Types* column is available with each [Custom Audience](../bulk-service/custom-audience.md), [In Market Audience](../bulk-service/in-market-audience.md), and [Remarketing List](../bulk-service/remarketing-list.md) record. You should first verify that the audience is supported for your campaign type before using it. 
 
 #### <a name="bulk-errorcode-inmarketaudiencecouldnotbedeleted"></a>Error Code for InMarketAudienceCouldNotBeDeleted
-In-market audiences cannot be deleted in both version 11 and version 12. Custom audiences can be deleted in both version 11 and 12. The error code CustomAudienceAndInMarketAudienceCouldNotBeDeleted (4860) that is still returned in version 11 is replaced by error code InMarketAudienceCouldNotBeDeleted (4864) in version 12.
+In-market audiences cannot be deleted in both version 11 and version 12. Custom audiences can be deleted in both version 11 and 12. The error code CustomAudienceAndInMarketAudienceCouldNotBeDeleted (4860) that was returned in version 11 is replaced by error code InMarketAudienceCouldNotBeDeleted (4864) in version 12.
 
 #### <a name="bulk-audienceadsbidadjustment"></a>Audience Ads Bid Adjustment
 Instead of setting the [Ad Format Preference](../bulk-service/expanded-text-ad.md#adformatpreference) of an expanded text ad to *Native*, you must set it to *Audience Ad*.
+
+#### <a name="bulk-associationentitynames"></a>Campaign and Ad Group Names for Audience and Ad Extension Associations
+The *Campaign* and *Ad Group* names are no longer included when you download audience and ad extension association records. 
 
 ## <a name="campaign"></a>Campaign Management
 
@@ -203,10 +206,10 @@ The *RemarketingTargetingSetting* element of an [AdGroup](../campaign-management
 To determine whether the audience association is bid only or target and bid, use the [TargetSetting](../campaign-management-service/targetsetting.md) object via the *Settings* element of an [AdGroup](../campaign-management-service/adgroup.md). The setting is applicable for all audiences associated with the ad group, including but not limited to remarketing lists. 
 
 #### <a name="campaign-accountmigrationstatusinfo"></a>Account Migration Status Info
-The *MigrationStatusInfo* (singular) element of an [AccountMigrationStatusesInfo](../campaign-management-service/accountmigrationstatusesinfo.md) object is renamed as *MigrationStatusInfos* (plural). This will resolve ambiguity between the returned name and data type.  
+The *MigrationStatusInfo* (singular) element of an [AccountMigrationStatusesInfo](../campaign-management-service/accountmigrationstatusesinfo.md) object is renamed as *MigrationStatusInfos* (plural). This will resolve ambiguity between the returned name and data type. 
 
 #### <a name="campaign-expandedtextaddomain"></a>Expanded Text Ad Domain
-The *DisplayUrl* element of an [ExpandedTextAd](../campaign-management-service/expandedtextad.md) object is renamed as *Domain*.  
+The *DisplayUrl* element of an [ExpandedTextAd](../campaign-management-service/expandedtextad.md) object is renamed as *Domain*. 
 
 #### <a name="campaign-mediatype"></a>Media Type
 The name, values, and business rules of the *MediaType* and *Type* elements of a [Media](../campaign-management-service/media.md) object are swapped. In version 11 the derived media type of an [Image](../campaign-management-service/image.md) was returned in the *MediaType* element e.g., *Image*, and the aspect ratio was returned in the *Type* element e.g., *Image15x10*. In version 12 the derived media type of an [Image](../campaign-management-service/image.md) is returned in the *Type* element e.g., *Image*, and the aspect ratio is returned in the *MediaType* element e.g., *Image15x10*. Long term this should reduce friction for clients who depend on the derived type in the *Type* element.
@@ -278,7 +281,7 @@ The namespace is `https://bingads.microsoft.com/Billing/v12`.
 The production endpoint is [https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc](https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc).
 
 #### <a name="billing-billingdocumentinfo"></a>GetBillingDocuments by BillingDocumentInfo
-In version 12 a structured list of [BillingDocumentInfo](../customer-billing-service/billingdocumentinfo.md) replaces the *DocumentIds* element in the [GetBillingDocuments](../customer-billing-service/getbillingdocuments.md) request. Now you can first call [GetBillingDocumentsInfo](../customer-billing-service/getbillingdocumentsinfo.md) and pass the results (up to 25 items) in the [GetBillingDocuments](../customer-billing-service/getbillingdocuments.md) request.  
+In version 12 a structured list of [BillingDocumentInfo](../customer-billing-service/billingdocumentinfo.md) replaces the *DocumentIds* element in the [GetBillingDocuments](../customer-billing-service/getbillingdocuments.md) request. Now you can first call [GetBillingDocumentsInfo](../customer-billing-service/getbillingdocumentsinfo.md) and pass the results (up to 25 items) in the [GetBillingDocuments](../customer-billing-service/getbillingdocuments.md) request. 
 
 The *CustomerId* element is added to the [BillingDocumentInfo](../customer-billing-service/billingdocumentinfo.md) object. When you call the [GetBillingDocuments](../customer-billing-service/getbillingdocuments.md) operation, both the *CustomerId* and *DocumentId* are required. 
 
@@ -288,7 +291,7 @@ The Pending and PendingSystemReview values are removed from the [InsertionOrderS
 ### <a name="billing-newfeatures"></a>New Features
 
 #### <a name="billing-insertionorderpendingchanges"></a>Insertion Order Pending Changes
-In version 12 you can update you can update the comment, end date, name, notification threshold, purchase order, spend cap amount, and start date of insertion orders. Previously in version 11 you could only update the status of an [InsertionOrder](../customer-billing-service/insertionorder.md) to approve or decline an insertion order that was not yet approved and active.  
+In version 12 you can update you can update the comment, end date, name, notification threshold, purchase order, spend cap amount, and start date of insertion orders. Previously in version 11 you could only update the status of an [InsertionOrder](../customer-billing-service/insertionorder.md) to approve or decline an insertion order that was not yet approved and active. 
 
 Before the insertion order becomes approved i.e., if the [InsertionOrder](../customer-billing-service/insertionorder.md) status is set to PendingUserReview, you can make updates via the [InsertionOrder](../customer-billing-service/insertionorder.md) object. Once the [InsertionOrder](../customer-billing-service/insertionorder.md) status is Active, Exhausted, Expired, or NotStarted, then you can either make new changes or approve or decline the current pending changes via the [InsertionOrderPendingChanges](../customer-billing-service/insertionorderpendingchanges.md) object. You can discover pending changes via [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md), and then call [UpdateInsertionOrder](../customer-billing-service/updateinsertionorder.md) to change the status or update the insertion order settings. If the [InsertionOrder](../customer-billing-service/insertionorder.md) status is Canceled or Declined then you cannot update the insertion order. 
 
@@ -402,7 +405,7 @@ Version 11|Version 12
 2|Replace
 
 #### <a name="customer-advertiseraccount"></a>Tracking Url Template
-The *TrackingUrlTemplate* key and value pair is removed from the *ForwardCompatibilityMap* element of the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object. Instead you can set the [AccountProperty](../campaign-management-service/accountproperty.md) name for *TrackingUrlTemplate* via the Campaign Management service, or set the *Tracking Template* field of the [Account](../bulk-service/account.md) record via the Bulk service.  
+The *TrackingUrlTemplate* key and value pair is removed from the *ForwardCompatibilityMap* element of the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object. Instead you can set the [AccountProperty](../campaign-management-service/accountproperty.md) name for *TrackingUrlTemplate* via the Campaign Management service, or set the *Tracking Template* field of the [Account](../bulk-service/account.md) record via the Bulk service. 
 
 #### <a name="customer-currencycode"></a>ISO Currency Codes
 The *CurrencyType* value set is renamed as [CurrencyCode](../customer-management-service/currencycode.md). The values are updated with ISO codes e.g., *USD* replaces *USDollar*. The new value set is used with the [AdvertiserAccount](../customer-management-service/advertiseraccount.md) object. 

@@ -10,11 +10,11 @@ description: Authenticate for Bing Ads services with a Microsoft Account.
 Bing Ads implements the implicit and authorization grant flows of the [OAuth 2.0](http://tools.ietf.org/html/rfc6749) protocol to enable authentication of Microsoft Accounts that are linked to Bing Ads accounts. You should authenticate for Bing Ads production services with a Microsoft Account, instead of providing the Bing Ads username and password set. To authenticate with a Microsoft Account in sandbox, please see [Get Sandbox Access](sandbox.md#access).
 
 > [!IMPORTANT]
-> The UserName and Password header elements are deprecated in favor of the AuthenticationToken header i.e., [Authentication with OAuth](authentication-oauth.md). As of August 1st, 2018, all Bing Ads API Version 11 service calls with managed UserName and Password credentials will return an error. Bing Ads API Version 12 already does not accept the managed user credentials. In a future version of the API, the UserName and Password header elements will be removed from the service definitions.
+> The AuthenticationToken and DeveloperToken header elements are always required. This guide discusses how to get an OAuth access token that you can use as the AuthenticationToken header. For information on how to get a DeveloperToken, see [Get Started With the Bing Ads API](get-started.md).
 > 
-> The *DeveloperToken* header element is always required. For information on how to get a *DeveloperToken*, see [Get Started With the Bing Ads API](get-started.md).
+> The UserName and Password header elements are no longer supported, and will be removed in a future version of the API. 
 
-A [Microsoft Account](https://account.microsoft.com/account) is an email address and password alias that an advertiser and other users may use to manage multiple services, including Bing Ads. Advertisers may associate a Microsoft Account with a Bing Ads account by [signing up](https://bingads.microsoft.com) or being invited to [manage](customer-accounts.md#managingusers) an existing Bing Ads account. Advertisers must use their Microsoft Account to grant your application access to manage their Bing Ads accounts. When the user successfully provides consent, your application is able to obtain an access token that it can then use to authenticate on behalf of the user.
+A [Microsoft Account](https://account.microsoft.com/account) is an email address and password alias that can be used to manage multiple services, including Bing Ads. Advertisers can associate a Microsoft Account with a Bing Ads account by [signing up](https://bingads.microsoft.com) or being invited to [manage](customer-accounts.md#managingusers) an existing Bing Ads account. Advertisers must use their Microsoft Account to grant your application access to manage their Bing Ads accounts. When the user successfully provides consent, your application is able to obtain an access token that it can then use to authenticate on behalf of the user.
 
 > [!TIP]
 > To take advantage of advanced security, users should turn on [two-step verification](https://support.microsoft.com/en-us/help/12408/microsoft-account-about-two-step-verification) within their Microsoft account [Security settings](https://account.live.com/proofs/Manage). Opting in for two-step verification ensures the user is prompted for a security code when they sign in on a device not previously designated as trusted by the user. The Microsoft Account authentication service provisions and verifies the security code after your application connects to the authorization endpoint, and before user consent is requested for your application to manage their Bing Ads accounts.
@@ -41,7 +41,7 @@ Before you can manage authentication for users of your Bing Ads application, you
 1. Go to [https://apps.dev.microsoft.com/](https://apps.dev.microsoft.com/) (or [apps.dev.microsoft-int.com/#/appList](https://apps.dev.microsoft-int.com/#/appList) for apps that target the [sandbox](sandbox.md) environment), and login with your Microsoft Account credentials when prompted.
 
    > [!NOTE]
-   > You may use any of your Microsoft accounts to manage authentication for your application. Using a Microsoft Account which is linked to your Bing Ads user credentials is optional for managing your application.
+   > You can use any of your Microsoft accounts to manage authentication for your application. Using a Microsoft Account which is linked to your Bing Ads user credentials is optional for managing your application.
 
 2. Within **My applications**, click **Add an app**.
 
@@ -66,7 +66,7 @@ Before you can manage authentication for users of your Bing Ads application, you
 6. Save your changes and take note of your *Application Id*. You will use it as the CLIENT_ID in the OAuth grant flow. Also take note of your *Password* and redirect URI if you registered a web application. The passsword will be used as the CLIENT_SECRET in the OAuth grant flow.
 
 ## <a name="managingoauthtokens"></a>Managing OAuth Tokens
-Once you have registered your application you can manage the access token for a Microsoft Account user already linked or registered with Bing Ads. For one time or short term access to manage a user's accounts, see [Implicit Grant Flow](#implicit). The access token is short lived and will expire in minutes or hours as determined by the authentication service. Additionally, the Microsoft Account user may change their password or remove permissions for your application to authenticate on their behalf. For repeat or long term access to manage a user's accounts, see [Authorization Code Grant Flow](#authorizationcode).
+Once you have registered your application you can manage the access token for a Microsoft Account user already linked or registered with Bing Ads. For one time or short term access to manage a user's accounts, see [Implicit Grant Flow](#implicit). The access token is short lived and will expire in minutes or hours as determined by the authentication service. Additionally, the Microsoft Account user can change their password or remove permissions for your application to authenticate on their behalf. For repeat or long term access to manage a user's accounts, see [Authorization Code Grant Flow](#authorizationcode).
 
 > [!IMPORTANT]
 > For apps that target the [sandbox](sandbox.md) environment, use *login.live-int.com* instead of *login.live.com*.
@@ -171,7 +171,7 @@ For repeat or long term authentication, you should follow the authorization code
    {"error":"invalid_request","error_description":"Public clients can't send a client secret."} Likewise for Web apps please note that refresh tokens can be invalidated at any moment.
    ```
 
-    You will encounter the same error if you try to request new access and refresh tokens using a refresh token that was provisioned without a client secret.  
+    You will encounter the same error if you try to request new access and refresh tokens using a refresh token that was provisioned without a client secret. 
 
 ## <a name="userlogout"></a>Sign the user out
 To sign a user out, perform the following steps:
@@ -204,8 +204,8 @@ Parameter  |Description
 *redirect_uri*     |Equivalent to the *redirect_uri* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.6). The authorization service calls back to your application with the redirection URI, which includes an authorization code if the user authorized your application to manage their Bing Ads accounts.
 *response_type*     |The type of data to be returned in the response from the authorization server. Valid values are "code" or "token".
 *scope*     |Equivalent to the *scope* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.4). To get access tokens for Bing Ads authentication the scope must always be set to *bingads.manage*. 
-*state*     |Equivalent to the *state* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.5). This value is passed through, and you should receive the same value unchanged in the *state* response parameter. It is recommended that you limit this string to 100 characters. The working limit is currently higher, although it is subject to change.  
-*display*     |The display type to be used for the authorization page. Valid values are "popup", "touch", "page", or "none".      
+*state*     |Equivalent to the *state* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.5). This value is passed through, and you should receive the same value unchanged in the *state* response parameter. It is recommended that you limit this string to 100 characters. The working limit is currently higher, although it is subject to change. 
+*display*     |The display type to be used for the authorization page. Valid values are "popup", "touch", "page", or "none".     
 
 ### <a name="oauthresponseparameters"></a>OAuth Response Authorization Parameters
 The following table lists the response parameters that are available when calling the Microsoft account authorization service. 
@@ -218,8 +218,8 @@ Parameter  |Description
 *error*     |Error code identifying the error that occurred.
 *error_description*     |A description of the error.
 *expires_in*     |Equivalent to the *expires_in* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.14).
-*id_token*     |An unsigned JSON Web Token (JWT). The app can base64Url decode the segments of this token to request information about the user who signed in. The app can cache the values and display them, but it should not rely on them for any authorization or security boundaries.   
-*refresh_token*     |Equivalent to the *refresh_token* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.17).  
+*id_token*     |An unsigned JSON Web Token (JWT). The app can base64Url decode the segments of this token to request information about the user who signed in. The app can cache the values and display them, but it should not rely on them for any authorization or security boundaries.  
+*refresh_token*     |Equivalent to the *refresh_token* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.17). 
 *scope*     |Equivalent to the *scope* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.4).
 *state*     |Equivalent to the *state* parameter that is described in the [OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#appendix-A.5). When you request an authorization code this value is passed through from the *state* request parameter, and you should receive the same value unchanged in the response.
 *token_type*     |The type of data to be returned in the response from the authorization server. 

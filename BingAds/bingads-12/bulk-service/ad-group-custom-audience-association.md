@@ -14,23 +14,9 @@ Defines an Ad Group Custom Audience Association that can be uploaded and downloa
 > [!NOTE]
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For an *Ad Group Custom Audience Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+You can download all *Ad Group Custom Audience Association* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupCustomAudienceAssociations* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
-- [Ad Group](#adgroup)
-- [Audience](#audience)
-- [Audience Id](#audienceid)
-- [Bid Adjustment](#bidadjustment)
-- [Campaign](#campaign)
-- [Client Id](#clientid)
-- [Id](#id)
-- [Modified Time](#modifiedtime)
-- [Parent Id](#parentid)
-- [Status](#status)
-
-You can download all fields of the *Ad Group Custom Audience Association* record by including the [DownloadEntity](downloadentity.md) value of *AdGroupCustomAudienceAssociations* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
-
-The following Bulk CSV example would add a new Ad Group Custom Audience Association given a valid ad group ID (*Parent Id*). 
+The following Bulk CSV example would add a new Ad Group Custom Audience Association if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience,Remarketing Targeting Setting
@@ -38,7 +24,7 @@ Format Version,,,,,,,,,6,,,
 Ad Group Custom Audience Association,Paused,,-1111,,,ClientIdGoesHere,,10,,CustomAudienceIdHere,My Custom Audience,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkAdGroupCustomAudienceAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupCustomAudienceAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -93,7 +79,20 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-### <a name="adgroup"></a>Ad Group
+For an *Ad Group Custom Audience Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+
+- [Ad Group](#adgroup)
+- [Audience](#audience)
+- [Audience Id](#audienceid)
+- [Bid Adjustment](#bidadjustment)
+- [Campaign](#campaign)
+- [Client Id](#clientid)
+- [Id](#id)
+- [Modified Time](#modifiedtime)
+- [Parent Id](#parentid)
+- [Status](#status)
+
+## <a name="adgroup"></a>Ad Group
 The name of the ad group that is associated with the custom audience.
 
 **Add:** Read-only and Required  
@@ -101,10 +100,10 @@ The name of the ad group that is associated with the custom audience.
 **Delete:** Read-only and Required  
 
 > [!NOTE]
-> For add, update, and delete, you must specify either the *Parent Id* or *Ad Group* field.
+> For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
 
 
-### <a name="audience"></a>Audience
+## <a name="audience"></a>Audience
 The name of the custom audience.
 
 This bulk field maps to the *Audience* field of the [Custom Audience](custom-audience.md) record.
@@ -113,7 +112,7 @@ This bulk field maps to the *Audience* field of the [Custom Audience](custom-aud
 **Update:** Read-only    
 **Delete:** Read-only  
 
-### <a name="audienceid"></a>Audience Id
+## <a name="audienceid"></a>Audience Id
 The Bing Ads identifier of the custom audience associated with the ad group.
 
 This bulk field maps to the *Id* field of the [Custom Audience](custom-audience.md) record.
@@ -122,7 +121,7 @@ This bulk field maps to the *Id* field of the [Custom Audience](custom-audience.
 **Update:** Read-only    
 **Delete:** Read-only  
 
-### <a name="bidadjustment"></a>Bid Adjustment
+## <a name="bidadjustment"></a>Bid Adjustment
 The percentage you want to increase/decrease the bid amount for the custom audience.
 
 Supported values are negative ninety (-90.00) through positive nine hundred (900.00).
@@ -134,28 +133,28 @@ Supported values are negative ninety (-90.00) through positive nine hundred (900
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
-### <a name="campaign"></a>Campaign
+## <a name="campaign"></a>Campaign
 The name of the campaign that contains the ad group.
 
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="clientid"></a>Client Id
+## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
 **Update:** Optional    
 **Delete:** Read-only  
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The system generated identifier for the association between an ad group and custom audience.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
 
 > [!NOTE]
@@ -165,7 +164,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The system generated identifier of the ad group that is associated to the custom audience.
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
@@ -175,9 +174,9 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 **Delete:** Read-only  
 
 > [!NOTE]
-> For add, update, and delete, you must specify either the *Parent Id* or *Ad Group* field.
+> For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
 
-### <a name="status"></a>Status
+## <a name="status"></a>Status
 The association status. 
 
 Possible values are *Active*, *Paused*, or *Deleted*. 

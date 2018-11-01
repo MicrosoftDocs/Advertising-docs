@@ -12896,3 +12896,676 @@ CampaignServiceAdGroupLanguageCannotBeRemovedUntilCampaignLanguagesAreProcessed
 
 **Description**
 The ad group language cannot be removed until campaign language updates have been processed. Please try again in 12 hours.
+
+***
+## 6000
+***
+
+**Numeric Code**
+6101
+
+**Symbolic Error Code**
+ExperimentsListIsNullOrEmpty
+
+**Description**
+The experiment list cannot be null or empty.
+
+***
+
+**Numeric Code**
+6102
+
+**Symbolic Error Code**
+ExperimentIsNull
+
+**Description**
+The Experiment cannot be null.
+
+***
+
+**Numeric Code**
+6103
+
+**Symbolic Error Code**
+ExperimentsEntityLimitExceeded
+
+**Description**
+The number of experiments in the request exceeds the limit.
+
+***
+
+**Numeric Code**
+6104
+
+**Symbolic Error Code**
+ExperimentNameIsSameAsBaseCampaignName
+
+**Description**
+Experiment name cannot be the same as Base Campaign Name.
+
+***
+
+**Numeric Code**
+6105
+
+**Symbolic Error Code**
+ExperimentStartDateGreaterThanEndDate
+
+**Description**
+The experiment start date must be earlier than the end date.
+
+***
+
+**Numeric Code**
+6106
+
+**Symbolic Error Code**
+ExperimentStartDateLessThanToday
+
+**Description**
+The experiment start date must be in the future.
+
+***
+
+**Numeric Code**
+6107
+
+**Symbolic Error Code**
+ExperimentEndDateLessThanToday
+
+**Description**
+The experiment end date must be in the future.
+
+***
+
+**Numeric Code**
+6108
+
+**Symbolic Error Code**
+ExperimentTrafficSplitPercentInvalid
+
+**Description**
+The experiment traffic split percent is invalid.
+
+***
+
+**Numeric Code**
+6109
+
+**Symbolic Error Code**
+ExperimentNameIsEmpty
+
+**Description**
+The experiment name cannot be empty.
+
+***
+
+**Numeric Code**
+6110
+
+**Symbolic Error Code**
+ExperimentIdInvalid
+
+**Description**
+The experiment ID is invalid.
+
+***
+
+**Numeric Code**
+6111
+
+**Symbolic Error Code**
+DuplicateExperimentIds
+
+**Description**
+Duplicate experiment IDs are not allowed.
+
+***
+
+**Numeric Code**
+6112
+
+**Symbolic Error Code**
+ExperimentIdListNullOrEmpty
+
+**Description**
+The experiment IDs list cannot be null or empty.
+
+***
+
+**Numeric Code**
+6113
+
+**Symbolic Error Code**
+ExperimentTimeperiodOverlapping
+
+**Description**
+Multiple experiments for the same base campaign cannot have overlapping time interval.
+
+***
+
+**Numeric Code**
+6114
+
+**Symbolic Error Code**
+ExperimentBaseCampaignIdIsLocked
+
+**Description**
+The creation of an experiment for this base campaign is already in progress. Please wait and try again in a few minutes.
+
+***
+
+**Numeric Code**
+6115
+
+**Symbolic Error Code**
+ExperimentCampaignIdInvalid
+
+**Description**
+The experiment Campaign ID invalid.
+
+***
+
+**Numeric Code**
+6116
+
+**Symbolic Error Code**
+ExperimentsEntityLimitPerCampaignExceeded
+
+**Description**
+The maximum number of experiments for this campaign has already been reached.
+
+***
+
+**Numeric Code**
+6117
+
+**Symbolic Error Code**
+ExperimentPilotNotEnabledForCustomer
+
+**Description**
+The customer is not in pilot for the experiments feature.
+
+***
+
+**Numeric Code**
+6118
+
+**Symbolic Error Code**
+ExperimentStatusInvalid
+
+**Description**
+The experiment status is invalid.
+
+***
+
+**Numeric Code**
+6119
+
+**Symbolic Error Code**
+ExperimentBaseCampaignIsExperimentCampaign
+
+**Description**
+The base campaign cannot be an experimental campaign.
+
+***
+
+**Numeric Code**
+6120
+
+**Symbolic Error Code**
+ExperimentStartDateCannotBeChanged
+
+**Description**
+The experiment has already started and the start date cannot be changed.
+
+***
+
+**Numeric Code**
+6121
+
+**Symbolic Error Code**
+ExperimentEndDateCannotBeChanged
+
+**Description**
+The experiment has already started and the end date cannot be changed.
+
+***
+
+**Numeric Code**
+6122
+
+**Symbolic Error Code**
+ExperimentStartDateInvalid
+
+**Description**
+The experiment start date is invalid.
+
+***
+
+**Numeric Code**
+6123
+
+**Symbolic Error Code**
+ExperimentBaseCampaignIdInvalid
+
+**Description**
+The experiment base campaign ID is invalid.
+
+***
+
+**Numeric Code**
+6124
+
+**Symbolic Error Code**
+CampaignOrExperimentWithNameAlreadyExists
+
+**Description**
+The experiment name cannot be the same as an existing experiment or campaign name.
+
+***
+
+**Numeric Code**
+6125
+
+**Symbolic Error Code**
+BaseCampaignTypeInvalid
+
+**Description**
+Experiments are not supported for the requested base campaign type.
+
+***
+
+**Numeric Code**
+6126
+
+**Symbolic Error Code**
+BaseCampaignBudgetTypeInvalid
+
+**Description**
+The experiment base campaign budget type is invalid.
+
+***
+
+**Numeric Code**
+6127
+
+**Symbolic Error Code**
+ExperimentNameTooLong
+
+**Description**
+The experiment name is too long.
+
+***
+
+**Numeric Code**
+6128
+
+**Symbolic Error Code**
+ExperimentNameHasInvalidCharacters
+
+**Description**
+The experiment name is invalid
+
+***
+
+**Numeric Code**
+6129
+
+**Symbolic Error Code**
+ExperimentCampaignInvalid
+
+**Description**
+The experiment campaign is invalid.
+
+***
+
+**Numeric Code**
+6130
+
+**Symbolic Error Code**
+ExperimentBaseCampaignIdCannotBeChanged
+
+**Description**
+The experiment base campaign ID cannot be changed.
+
+***
+
+**Numeric Code**
+6131
+
+**Symbolic Error Code**
+ExperimentTrafficSplitPercentCannotBeChanged
+
+**Description**
+The experiment has already started and the traffic split percent cannot be changed.
+
+***
+
+**Numeric Code**
+6132
+
+**Symbolic Error Code**
+EndedExperimentCannotBeChanged
+
+**Description**
+The experiment has already ended and cannot be changed.
+
+***
+
+**Numeric Code**
+6133
+
+**Symbolic Error Code**
+ExperimentCampaignCannotBeUpdated
+
+**Description**
+The experiment base campaign ID is invalid.
+
+***
+
+**Numeric Code**
+6134
+
+**Symbolic Error Code**
+ExperimentBaseCampaignCannotBeChangedToSharedBudget
+
+**Description**
+A shared budget is not allowed for an experiment's base campaign.
+
+***
+
+**Numeric Code**
+6135
+
+**Symbolic Error Code**
+ExperimentBatchLimitExceeded
+
+**Description**
+The maximum number of experiments per request is exceeded.
+
+***
+
+**Numeric Code**
+6136
+
+**Symbolic Error Code**
+ExperimentTypeInvalid
+
+**Description**
+The Experiment type is Invalid.
+
+***
+
+**Numeric Code**
+6200
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdHeadlinesNullOrEmpty
+
+**Description**
+The headlines cannot be null or empty.
+
+***
+
+**Numeric Code**
+6201
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdDescriptionsNullOrEmpty
+
+**Description**
+The descriptions cannot be null or empty.
+
+***
+
+**Numeric Code**
+6202
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdDuplicateHeadlines
+
+**Description**
+Duplicate headlines are not allowed.
+
+***
+
+**Numeric Code**
+6203
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdDuplicateDescriptions
+
+**Description**
+Duplicate descriptions are not allowed.
+
+***
+
+**Numeric Code**
+6204
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdHeadlinesPinnedFieldMismatch
+
+**Description**
+Incorrect pinned field for headline.
+
+***
+
+**Numeric Code**
+6205
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdDescriptionsPinnedFieldMismatch
+
+**Description**
+Incorrect pinned field for description.
+
+***
+
+**Numeric Code**
+6206
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdInvalidHeadline
+
+**Description**
+Headline is not valid.
+
+***
+
+**Numeric Code**
+6207
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdInvalidDescription
+
+**Description**
+Description is not valid.
+
+***
+
+**Numeric Code**
+6208
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdHeadlineTooLong
+
+**Description**
+Headline is too long.
+
+***
+
+**Numeric Code**
+6209
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdDescriptionTooLong
+
+**Description**
+Description is too long.
+
+***
+
+**Numeric Code**
+6210
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdHeadlinesMaxCountExceeded
+
+**Description**
+The number of headlines is more than maximum allowed.
+
+***
+
+**Numeric Code**
+6211
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdDescriptionsMaxCountExceeded
+
+**Description**
+The number of descriptions is more than maximum allowed.
+
+***
+
+**Numeric Code**
+6212
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdHeadlinesLessThanMinRequired
+
+**Description**
+The number of headlines is less than minimum allowed.
+
+***
+
+**Numeric Code**
+6213
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdDescriptionsLessThanMinRequired
+
+**Description**
+The number of descriptions is less than minimum allowed.
+
+***
+
+**Numeric Code**
+6214
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdPinnedFieldInvalid
+
+**Description**
+The pinned field of asset link is invalid.
+
+***
+
+**Numeric Code**
+6215
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdAssetTypeInvalidForField
+
+**Description**
+The provided asset type is not valid for this field.
+
+***
+
+**Numeric Code**
+6216
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdDefaultTextRequiredForKeyword
+
+**Description**
+When using the {Keyword} dynamic text parameter, default text is required. For example {Keyword:default}.
+
+***
+
+**Numeric Code**
+6217
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdPath1TooLong
+
+**Description**
+Path 1 is over the character limit.
+
+***
+
+**Numeric Code**
+6218
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdPath2TooLong
+
+**Description**
+Path 2 is over the character limit.
+
+***
+
+**Numeric Code**
+6219
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdPath1Invalid
+
+**Description**
+Path 1 is not valid.
+
+***
+
+**Numeric Code**
+6220
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdPath2Invalid
+
+**Description**
+Path 2 is not valid.
+
+***
+
+**Numeric Code**
+6221
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdPath2SetWithoutPath1
+
+**Description**
+Path2 is set without path1.
+
+***
+
+**Numeric Code**
+6222
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdFinalUrlDomainTooLong
+
+**Description**
+Final Url domain is too long to be used as Ad Display URL.
+
+***
+
+**Numeric Code**
+6223
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdDisplayUrlDomainTooLong
+
+**Description**
+Display Url domain is too long.
+
+***
+
+**Numeric Code**
+6224
+
+**Symbolic Error Code**
+CampaignServiceResponsiveSearchAdDisplayUrlDomainInvalid
+
+**Description**
+Display Url domain is Invalid.

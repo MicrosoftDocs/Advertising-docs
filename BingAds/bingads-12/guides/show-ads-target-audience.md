@@ -10,30 +10,30 @@ description: Get your ads in front of the right people.
 Getting your ad in front of the right people; that's what targeting is all about. With targeting, Bing Ads can help you focus a campaign or ad group on potential customers who meet specific criteria, so you can increase the chance that they see your ads. You may target your ads to display to users of a certain age group, display at a certain day and time of the week, or display to users in a particular geographical location.
 
 > [!NOTE] 
-> Bing Ads supports other criterion types e.g. product partition and webpage. This guide covers criterions that you can use to target your ads by age, day and time, device, gender, location, and profile. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*.  
+> Bing Ads supports other criterion types e.g. product partition and webpage. This guide covers criterions that you can use to target your ads by age, day and time, device, gender, location, and profile. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*. 
 
 Here are a few tips to keep in mind before you begin:
-*  When you first create a campaign or ad group using the Bing Ads API, it will not have any criterions. Effectively the brand new campaign and ad group target all ages, days, hours, devices, genders, and locations. You should specify your minimum target criterions at the campaign level and then use ad group level criterions to narrow or refine your targeting requirements. As a best practice you should consider at minimum adding a campaign location criterion corresponding to the customer market country. Its worth noting that when creating campaigns via the Bing Ads web application, the recommended [default criterions](#defaultcriterions) are added. 
-*  If you specify the same [criterion types](#criteriontypes) at the ad group and campaign level, the ad group-level criterions will override the campaign-level criterions. For example, if the campaign location criterion is *US* and the ad group location criterion is *California*, the ads will display only to users in California. Or, if the campaign criterions are *Monday* and *Wednesday* and the ad group criterions are *Tuesday* and *Thursday*, the ads will display only on Tuesdays and Thursdays.
-*  When a criterion type is not specified at the ad group level, that type is effectively inherited from the campaign if it exists in the campaign. For example, you can specify location criterions at the campaign level and day and time criterions at the ad group level. If the location criterion is set to U.S. and the day and time criterion is set to Monday from 11am - 3pm, then the ads will display to users in the U.S. on Mondays from 11am - 3pm. 
-*  You must consider the location, negative location, and radius criterions as a set of *geo criterions*. If the ad group has any geo criterions, then none of the campaign's geo criterions are inherited. If the ad group doesn't have any geo criterions, then all of the campaign's geo criterions are inherited. The geo criterions can be inherited from the campaign even if the ad group has a location intent criterion. If the ad group's geo criterions are used, then the ad group's location intent criterion is used; if the campaign's geo criterions are inherited, then the campaign's location intent criterion is used and the ad group's location intent criterion is ignored. You cannot delete a campaign or ad group's location intent criterion, although it has no purpose without location or radius criterions. 
-*  By default without any criterions you are effectively targeting *PeopleInOrSearchingForOrViewingPages*. When you create the campaign or ad group's first criterion, a location intent criterion set to *PeopleInOrSearchingForOrViewingPages* with a criterion identifier will be added automatically for the corresponding campaign or ad group. The default location intent criterion will be added whenever the first criterion was successfully added, whether or not you tried to explicitly set a location intent criterion in the same operation.
-*  Partial update is supported, so you can update each criterion individually. For example if you only want to update the bid adjustment for 1 location, only send that location criterion. There is no need to send all locations. 
-*  Partial success is supported, such that if you add or update multiple criterions each can fail or succeed independently. 
-*  If you delete the campaign or ad group, all of the criterions for the same campaign or ad group are also deleted. 
-*  If you upload multiple records with the same criterion identifier, then the first record will succeed and the subsequent duplicates will fail. 
-*  Individual criterions are validated first, and then system limits are enforced if the number of valid criterions would exceed the allowed limit of criterions per campaign or ad group. Partial success of criterions is allowed up to the system limit.
+- When you first create a campaign or ad group using the Bing Ads API, it will not have any criterions. Effectively the brand new campaign and ad group target all ages, days, hours, devices, genders, and locations. You should specify your minimum target criterions at the campaign level and then use ad group level criterions to narrow or refine your targeting requirements. As a best practice you should consider at minimum adding a campaign location criterion corresponding to the customer market country. Its worth noting that when creating campaigns via the Bing Ads web application, the recommended [default criterions](#defaultcriterions) are added. 
+- If you specify the same [criterion types](#criteriontypes) at the ad group and campaign level, the ad group-level criterions will override the campaign-level criterions. For example, if the campaign location criterion is *US* and the ad group location criterion is *California*, the ads will display only to users in California. Or, if the campaign criterions are *Monday* and *Wednesday* and the ad group criterions are *Tuesday* and *Thursday*, the ads will display only on Tuesdays and Thursdays.
+- When a criterion type is not specified at the ad group level, that type is effectively inherited from the campaign if it exists in the campaign. For example, you can specify location criterions at the campaign level and day and time criterions at the ad group level. If the location criterion is set to U.S. and the day and time criterion is set to Monday from 11am - 3pm, then the ads will display to users in the U.S. on Mondays from 11am - 3pm. 
+- You must consider the location, negative location, and radius criterions as a set of *geo criterions*. If the ad group has any geo criterions, then none of the campaign's geo criterions are inherited. If the ad group doesn't have any geo criterions, then all of the campaign's geo criterions are inherited. The geo criterions can be inherited from the campaign even if the ad group has a location intent criterion. If the ad group's geo criterions are used, then the ad group's location intent criterion is used; if the campaign's geo criterions are inherited, then the campaign's location intent criterion is used and the ad group's location intent criterion is ignored. You cannot delete a campaign or ad group's location intent criterion, although it has no purpose without location or radius criterions. 
+- By default without any criterions you are effectively targeting *PeopleInOrSearchingForOrViewingPages*. When you create the campaign or ad group's first criterion, a location intent criterion set to *PeopleInOrSearchingForOrViewingPages* with a criterion identifier will be added automatically for the corresponding campaign or ad group. The default location intent criterion will be added whenever the first criterion was successfully added, whether or not you tried to explicitly set a location intent criterion in the same operation.
+- Partial update is supported, so you can update each criterion individually. For example if you only want to update the bid adjustment for 1 location, only send that location criterion. There is no need to send all locations. 
+- Partial success is supported, such that if you add or update multiple criterions each can fail or succeed independently. 
+- If you delete the campaign or ad group, all of the criterions for the same campaign or ad group are also deleted. 
+- If you upload multiple records with the same criterion identifier, then the first record will succeed and the subsequent duplicates will fail. 
+- Individual criterions are validated first, and then system limits are enforced if the number of valid criterions would exceed the allowed limit of criterions per campaign or ad group. Partial success of criterions is allowed up to the system limit.
 
 ## <a name="criteriontypes"></a>Target Criterion Types
 The following criterion types are supported for targeting.
-* [Age Criterion](#agecriterion)
-* [DayTime Criterion](#daytimecriterion)
-* [DeviceOS Criterion](#deviceoscriterion)
-* [Gender Criterion](#gendercriterion)
-* [Location Criterion](#locationcriterion)
-* [Location Intent Criterion](#locationintentcriterion)
-* [Profile Criterion](#profilecriterion)
-* [Radius Criterion](#radiuscriterion)
+- [Age Criterion](#agecriterion)
+- [DayTime Criterion](#daytimecriterion)
+- [DeviceOS Criterion](#deviceoscriterion)
+- [Gender Criterion](#gendercriterion)
+- [Location Criterion](#locationcriterion)
+- [Location Intent Criterion](#locationintentcriterion)
+- [Profile Criterion](#profilecriterion)
+- [Radius Criterion](#radiuscriterion)
 
 You can apply the criteria at the ad group or campaign level. 
 
@@ -75,8 +75,8 @@ The maximum number of gender criterions that you can specify per campaign or ad 
 
 ### <a name="locationcriterion"></a>Location Criterion
 With location criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about:
-*  All available countries/regions
-*  Selected cities, zip codes, metro areas (Nielsen DMA® in the United States), states/provinces, and countries/regions
+- All available countries/regions
+- Selected cities, zip codes, metro areas (Nielsen DMA® in the United States), states/provinces, and countries/regions
 
 Each location criterion defines a location code for the accompanying criterion bid adjustment. 
 
@@ -131,7 +131,7 @@ The base bid is adjusted by multipliers of the bid adjustment percentage values 
 `1.00` (base bid default) `* 1.20` (day bid adjustment) `* 1.30` (location bid adjustment)`= 1.56` (56 percent adjustment)
 
 > [!NOTE]
-> After calculation, bid adjustments are rounded to two decimals of precision. For example, 1.1749 is rounded to 1.17 (17%), or 1.175 is rounded to 1.18 (18%).  
+> After calculation, bid adjustments are rounded to two decimals of precision. For example, 1.1749 is rounded to 1.17 (17%), or 1.175 is rounded to 1.18 (18%). 
 > 
 > Multiple bid adjustments across location criterions are not combined. If you specify geographically-related combinations of country/region, state/province, metropolitan area, or city criterions, the bid adjustment of the most refined criterion would apply.
 > 
@@ -164,7 +164,7 @@ Campaign Location Intent Criterion,Active,CampaignIdHere,CampaignIdHere,,Campaig
 > The above examples assume that you did not change any other defaults such as demographic or device settings. 
 
 ## <a name="usingcriterions"></a>Using Target Criterions
-Bing Ads supports other criterion types e.g. product partition and webpage. This guide covers criterions that you can use to target your ads by age, day and time, device, gender, location, and profile. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*.  
+Bing Ads supports other criterion types e.g. product partition and webpage. This guide covers criterions that you can use to target your ads by age, day and time, device, gender, location, and profile. Where necessary to distinguish from other criterion types the documentation may refer to these entities as *target criterions*. 
 
 ### <a name="synccriterions"></a>Sync Criterions
 Sync the new criterions with campaigns and ad groups. For example you can use the Bulk service to download all criterions in the account and discover the mapping between criterions and campaigns and ad groups. Let's download the target criterions using Bing Ads API version 12, Bulk file format 6.0, and we can see that each criterion has its own identifier e.g. 101, 102, 103, and so on. 
@@ -211,9 +211,9 @@ Ad Group DeviceOS Criterion,Deleted,205,AdGroupIdHere,,,,,Tablets,,0,,,,,,,,,,
 ```
 
 As observed in the example upload results file below:
-*  We successfully targeted Canada (LocationId = 32) by adding a new campaign location criterion.
-*  Location intent criterions can never be deleted. The attempt to delete the location intent criterion from the campaign failed but did not cause other criterion updates to fail.
-*  Without the assigned identifier for an existing age criterion, the upload attempt failed with code 1043 i.e. CampaignServiceEntityAlreadyExists. If the *EighteenToTwentyFour* age criterion had not existed already or if we had specified an age range that is not yet set for the campaign, then the upload would have succeeded and created a new criterion with unique identifier. 
+- We successfully targeted Canada (LocationId = 32) by adding a new campaign location criterion.
+- Location intent criterions can never be deleted. The attempt to delete the location intent criterion from the campaign failed but did not cause other criterion updates to fail.
+- Without the assigned identifier for an existing age criterion, the upload attempt failed with code 1043 i.e. CampaignServiceEntityAlreadyExists. If the *EighteenToTwentyFour* age criterion had not existed already or if we had specified an age range that is not yet set for the campaign, then the upload would have succeeded and created a new criterion with unique identifier. 
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Client Id,Modified Time,Target,Physical Intent,Bid Adjustment,Radius Target Id,Name,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude,Error,Error Number

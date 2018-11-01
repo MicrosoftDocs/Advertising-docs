@@ -119,7 +119,7 @@ public async Task RunAsync(AuthorizationData authorizationData)
 
     var reportingDownloadOperation = await ReportingService.SubmitDownloadAsync(reportRequest);
 
-    // You may optionally cancel the TrackAsync operation after a specified time interval.  
+    // You may optionally cancel the TrackAsync operation after a specified time interval. 
     var tokenSource = new CancellationTokenSource();
     tokenSource.CancelAfter(3600000);
 

@@ -10,7 +10,7 @@ description: Setup Dynamic Search ads with the Bing Ads API.
 Dynamic search ads provide a streamlined, low-touch way to make sure customers searching on the Bing Network find your products or services.
 
 > [!NOTE]
-> This feature is currently available in the United States and the United Kingdom.  
+> This feature is currently available in the United States and the United Kingdom. 
 
 Dynamic search ads automatically target relevant search queries based on the content of your website, and are dynamically created to respond to these search queries. Using them will:
 
@@ -32,7 +32,7 @@ The following Bulk records are available for managing dynamic search ads campaig
 * [Campaign Negative Dynamic Search Ad Target](../bulk-service/campaign-negative-dynamic-search-ad-target.md)
 * [Dynamic Search Ad](../bulk-service/dynamic-search-ad.md)
  
-To get started with dynamic search ads, first you'll need to define a [Campaign](../bulk-service/campaign.md) record with the *Campaign Type* field set to *DynamicSearchAds*. When you create the campaign, you'll also need to specify the *Domain Language* and *Website* fields.  
+To get started with dynamic search ads, first you'll need to define a [Campaign](../bulk-service/campaign.md) record with the *Campaign Type* field set to *DynamicSearchAds*. When you create the campaign, you'll also need to specify the *Domain Language* and *Website* fields. 
 
 Next, define an [Ad Group](../bulk-service/ad-group.md) within the dynamic search ads campaign. You can add one or more [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md) records for the parent ad group that helps determine whether or not to serve dynamic search ads. 
 

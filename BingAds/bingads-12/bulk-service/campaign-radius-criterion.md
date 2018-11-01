@@ -23,25 +23,9 @@ The maximum number of radius criterions that you can specify per campaign or ad 
 > [!TIP]
 > For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Campaign Radius Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+You can download all *Campaign Radius Criterion* records in the account by including the [DownloadEntity](downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
-- [Bid Adjustment](#bidadjustment)
-- [Campaign](#campaign)
-- [Client Id](#clientid)
-- [Id](#id)
-- [Latitude](#latitude)
-- [Longitude](#longitude)
-- [Modified Time](#modifiedtime)
-- [Name](#name)
-- [Parent Id](#parentid)
-- [Radius](#radius)
-- [Status](#status)
-- [Unit](#unit)
-
-You can download all fields of the *Campaign Radius Criterion* record by including the [DownloadEntity](downloadentity.md) value of *CampaignTargetCriterions* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
-
-The following Bulk CSV example would add a new campaign radius criterion if a valid campaign identifier (*Parent Id*) is provided. 
+The following Bulk CSV example would add a new campaign radius criterion if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Client Id,Modified Time,Target,Bid Adjustment,Name,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
@@ -49,7 +33,7 @@ Format Version,,,,,,,,,,6,,,,,,,,
 Campaign Radius Criterion,Active,,-111,,,ClientIdGoesHere,,RadiusName,20,,10,Kilometers,,,,,10.5,40.5
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkCampaignRadiusCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCampaignRadiusCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -117,7 +101,22 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-### <a name="bidadjustment"></a>Bid Adjustment
+For a *Campaign Radius Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+
+- [Bid Adjustment](#bidadjustment)
+- [Campaign](#campaign)
+- [Client Id](#clientid)
+- [Id](#id)
+- [Latitude](#latitude)
+- [Longitude](#longitude)
+- [Modified Time](#modifiedtime)
+- [Name](#name)
+- [Parent Id](#parentid)
+- [Radius](#radius)
+- [Status](#status)
+- [Unit](#unit)
+
+## <a name="bidadjustment"></a>Bid Adjustment
 The percentage amount that you want to adjust the bid for the corresponding radius criterion. 
 
 Supported values are negative ninety (-90) through positive nine hundred (900). 
@@ -126,28 +125,28 @@ Supported values are negative ninety (-90) through positive nine hundred (900).
 **Update:** Required  
 **Delete:** Read-only  
 
-### <a name="campaign"></a>Campaign
+## <a name="campaign"></a>Campaign
 The name of the campaign where this criterion is applied or removed.  
 
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="clientid"></a>Client Id
+## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
 **Update:** Optional    
 **Delete:** Optional  
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The Bing Ads unique identifier of the criterion.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
-### <a name="latitude"></a>Latitude
+## <a name="latitude"></a>Latitude
 The latitude, in degrees, of the location criterion.
 
 The latitude must be greater than or equal to -85.0 and less than or equal to +85.0.
@@ -158,7 +157,7 @@ You specify the latitude and longitude as decimal values. For example, the latit
 **Update:** Required  
 **Delete:** Read-only  
 
-### <a name="longitude"></a>Longitude
+## <a name="longitude"></a>Longitude
 The longitude, in degrees, of the location criterion.
 
 The longitude must be greater than or equal to -180.0 and less than or equal to +180.0.
@@ -169,7 +168,7 @@ You specify the latitude and longitude as decimal values. For example, the latit
 **Update:** Required  
 **Delete:** Read-only  
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
 
 > [!NOTE]
@@ -179,7 +178,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="name"></a>Name
+## <a name="name"></a>Name
 The name of the geographical location being targeted. 
 
 The name can contain a maximum of 50 characters.
@@ -188,7 +187,7 @@ The name can contain a maximum of 50 characters.
 **Update:** Read-only  
 **Delete:** Read-only 
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The identifier of the campaign where this criterion is applied or removed.
 	
 This bulk field maps to the *Id* field of the [Campaign](campaign.md) record. 
@@ -197,7 +196,7 @@ This bulk field maps to the *Id* field of the [Campaign](campaign.md) record.
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
-### <a name="radius"></a>Radius
+## <a name="radius"></a>Radius
 The radius that specifies the area surrounding the geographical location to target.
 
 If the *Radius Unit* field is set to *Miles*, then positive integer values from 1 to 500 are accepted.
@@ -211,14 +210,14 @@ If the *Radius Unit* field is set to *Kilometers*, then positive integer values 
 **Update:** Required  
 **Delete:** Read-only  
 
-### <a name="status"></a>Status
+## <a name="status"></a>Status
 Represents the association status between the campaign and the criterion. If the criterion is applied to the campaign, this field's value is *Active*. To delete the criterion, set the status to *Deleted*.
 
 **Add:** Read-only. The status will always be set to *Active* when you add criterions. If you upload another value e.g., *Foo* the result file will contain the same value although the criterion is active.  
 **Update:** Optional  
-**Delete:** Required. The Status must be set to *Deleted*. To delete a specific location criterion bid, you must upload the *Status*, *Id*, and *Parent Id*.  
+**Delete:** Required. The Status must be set to *Deleted*. To delete a specific location criterion bid, you must upload the [Status](#status), [Id](#id), and [Parent Id](#parentid).  
 
-### <a name="unit"></a>Unit
+## <a name="unit"></a>Unit
 The unit of measurement for the specified radius.
 
 Supported values are *Miles* (default) and *Kilometers*.

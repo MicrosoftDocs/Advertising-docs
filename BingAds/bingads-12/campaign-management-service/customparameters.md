@@ -29,6 +29,7 @@ Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.micros
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
+[ActionAdExtension](actionadextension.md)  
 [Ad](ad.md)  
 [AdGroup](adgroup.md)  
 [AppAdExtension](appadextension.md)  

@@ -12,6 +12,7 @@ The Campaign Management service defines the following value sets.
 |Value Set|Description|
 |---|---|
 |[AccountPropertyName](accountpropertyname.md)|Defines the name of account level properties.|
+|[ActionAdExtensionActionType](actionadextensionactiontype.md)|Reserved for future use.|
 |[AdAdditionalField](adadditionalfield.md)|Defines a list of optional [Ad](ad.md) properties that you can request when calling [GetAdsByAdGroupId](getadsbyadgroupid.md), [GetAdsByEditorialStatus](getadsbyeditorialstatus.md), and [GetAdsByIds](getadsbyids.md).|
 |[AdEditorialStatus](adeditorialstatus.md)|Defines the editorial review status values of an ad.|
 |[AdExtensionEditorialStatus](adextensioneditorialstatus.md)|Defines the editorial review status values of an ad extension.|
@@ -27,7 +28,7 @@ The Campaign Management service defines the following value sets.
 |[AdType](adtype.md)|Defines the type of ad.|
 |[AgeRange](agerange.md)|Defines the possible age range values that you can use to target ads to People.|
 |[AppealStatus](appealstatus.md)|Defines the values that you use to determine whether an editorial rejection is appealable.|
-|[AssetLinkEditorialStatus](assetlinkeditorialstatus.md)|Reserved for future use.|
+|[AssetLinkEditorialStatus](assetlinkeditorialstatus.md)|Defines the editorial review status values of a linked asset.|
 |[AssociationType](associationtype.md)|Defines the entity types that can be associated with an ad extension.|
 |[AudienceType](audiencetype.md)|Defines the possible audience types.|
 |[BidOption](bidoption.md)|Determines whether or not to amplify your partner's bid.|
@@ -35,6 +36,7 @@ The Campaign Management service defines the following value sets.
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible budget types that you can specify for a campaign.|
 |[BusinessGeoCodeStatus](businessgeocodestatus.md)|Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.|
 |[CallToAction](calltoaction.md)|Defines the possible values for a brief, punchy reason for customers to click your ad right now.|
+|[CampaignAdditionalField](campaignadditionalfield.md)|Reserved for future use.|
 |[CampaignCriterionStatus](campaigncriterionstatus.md)|Defines the possible campaign criterion status values.|
 |[CampaignCriterionType](campaigncriteriontype.md)|Defines the possible types of campaign criterions.|
 |[CampaignStatus](campaignstatus.md)|Defines the possible status values of a campaign.|
@@ -50,6 +52,8 @@ The Campaign Management service defines the following value sets.
 |[DynamicSearchAdsSource](dynamicsearchadssource.md)|Defines the possible targeting source values for dynamic search ads campaigns.|
 |[EntityScope](entityscope.md)|Defines values that you can use to determine whether the remarketing list can only be associated with ad groups within one specified account, or can be associated with any ad groups across all of the customer's accounts.|
 |[EntityType](entitytype.md)|Defines the possible types of entities.|
+|[ExperimentStatus](experimentstatus.md)|Reserved for future use.|
+|[ExperimentType](experimenttype.md)|Reserved for future use.|
 |[ExpressionOperator](expressionoperator.md)|Defines the operators that can be applied to expressions within a conversion goal.|
 |[GenderType](gendertype.md)|Defines the genders that are available for gender criterion.|
 |[IntentOption](intentoption.md)|Defines the possible intent options for location criterion, for example to target people in, searching for, or viewing pages about your targeted location.|

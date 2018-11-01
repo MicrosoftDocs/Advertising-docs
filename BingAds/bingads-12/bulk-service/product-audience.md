@@ -23,25 +23,7 @@ Using Product Audiences, you can remarket to customers based on the specific pro
   window.uetq.push({'prodid': 'PRODUCT_ID', 'pagetype': 'PAGE_TYPE'});
   ```
 
-## <a name="entitydata"></a>Attribute Fields in the Bulk File
-For a *Product Audience* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
-
-- [Audience](#audience)
-- [Audience Network Size](#audiencenetworksize)
-- [Audience Search Size](#audiencesearchsize)
-- [Client Id](#clientid)
-- [Description](#description)
-- [Id](#id)
-- [Membership Duration](#membershipduration)
-- [Modified Time](#modifiedtime)
-- [Parent Id](#parentid)
-- [Product Audience Type](#productaudiencetype)
-- [Scope](#scope)
-- [Status](#status)
-- [Supported Campaign Types](#supportedcampaigntypes)
-- [UET Tag Id](#uettagid)
-
-You can download all fields of the *Product Audience* record by including the [DownloadEntity](downloadentity.md) value of *ProductAudiences* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [DataScope](datascope.md) value of *EntityData*. For more information, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
+You can download all *Product Audience* records in the account by including the [DownloadEntity](downloadentity.md) value of *ProductAudiences* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new product audience. 
 
@@ -51,8 +33,7 @@ Format Version,,,,,,6,,,,,,,
 Product Audience,Active,-10,ParentIdHere,ClientIdGoesHere,,,New product audience,30,Account,TagIdHere,My Product Audience,GeneralVisitors,Search;DynamicSearchAds;Shopping;Audience
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the *BulkServiceManager* to upload and download the *BulkProductAudience* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
-
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkProductAudience* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -109,7 +90,24 @@ var entityUploadParameters = new EntityUploadParameters
 var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
-### <a name="audience"></a>Audience
+For a *Product Audience* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
+
+- [Audience](#audience)
+- [Audience Network Size](#audiencenetworksize)
+- [Audience Search Size](#audiencesearchsize)
+- [Client Id](#clientid)
+- [Description](#description)
+- [Id](#id)
+- [Membership Duration](#membershipduration)
+- [Modified Time](#modifiedtime)
+- [Parent Id](#parentid)
+- [Product Audience Type](#productaudiencetype)
+- [Scope](#scope)
+- [Status](#status)
+- [Supported Campaign Types](#supportedcampaigntypes)
+- [UET Tag Id](#uettagid)
+
+## <a name="audience"></a>Audience
 The name of the product audience.
 
 The name can contain a maximum of 128 characters
@@ -118,7 +116,7 @@ The name can contain a maximum of 128 characters
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
-### <a name="audiencenetworksize"></a>Audience Network Size
+## <a name="audiencenetworksize"></a>Audience Network Size
 The total number of people who are active members of this audience in the Audience network. This gives you an idea of how many Audience network users you can target.
 
 The audience needs to have at least 300 people before Bing Ads will use it for optimizations.
@@ -127,7 +125,7 @@ The audience needs to have at least 300 people before Bing Ads will use it for o
 **Update:** Read-only    
 **Delete:** Read-only  
 
-### <a name="audiencesearchsize"></a>Audience Search Size
+## <a name="audiencesearchsize"></a>Audience Search Size
 The total number of people who are active members of this audience in the Search network. This gives you an idea of how many search users you can target.
 
 The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.
@@ -140,14 +138,14 @@ This property will be empty if the UET tag associated with the product audience 
 **Update:** Read-only    
 **Delete:** Read-only  
 
-### <a name="clientid"></a>Client Id
+## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
 **Add:** Optional  
 **Update:** Optional    
 **Delete:** Read-only  
 
-### <a name="description"></a>Description
+## <a name="description"></a>Description
 The description of the product audience. Use a description to help you remember what audience you are targeting with this product audience.
 
 The description can contain a maximum of 1,024 characters.
@@ -156,14 +154,14 @@ The description can contain a maximum of 1,024 characters.
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
-### <a name="id"></a>Id
+## <a name="id"></a>Id
 The system generated identifier of the product audience.
 
 **Add:** Read-only  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
-### <a name="membershipduration"></a>Membership Duration
+## <a name="membershipduration"></a>Membership Duration
 When you create a product audience, you can specify how far back in time Bing Ads should look for actions that match your product audience definition in order to add people to your list.
 
 The mimimum duration is 1 day and the maximum duration allowed is 180 days.
@@ -172,7 +170,7 @@ The mimimum duration is 1 day and the maximum duration allowed is 180 days.
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
-### <a name="modifiedtime"></a>Modified Time
+## <a name="modifiedtime"></a>Modified Time
 The date and time that the entity was last updated. The value is in Coordinated Universal Time (UTC).
 
 > [!NOTE]
@@ -182,14 +180,14 @@ The date and time that the entity was last updated. The value is in Coordinated 
 **Update:** Read-only  
 **Delete:** Read-only  
 
-### <a name="parentid"></a>Parent Id
+## <a name="parentid"></a>Parent Id
 The system generated identifier of the account or customer. If the [Scope](#scope) is set to *Account*, this is the account ID, and otherwise it is the customer ID.
 
 **Add:** Optional  
 **Update:** Read-only. You cannot change the parent ID.  
 **Delete:** Read-only  
 
-### <a name="productaudiencetype"></a>Product Audience Type
+## <a name="productaudiencetype"></a>Product Audience Type
 Determines who to add to your product audience.
 
 The possible values are GeneralVisitors, ProductSearchers, ProductViewers, ShoppingCartAbandoners, and PastBuyers.
@@ -198,14 +196,14 @@ The possible values are GeneralVisitors, ProductSearchers, ProductViewers, Shopp
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.   
 **Delete:** Read-only  
 
-### <a name="scope"></a>Scope
-Scope defines what accounts can use this product audience. If scope is set to *Account*, the product audience can only be associated with ad groups within one specified account (*Parent Id*). If scope is set to *Customer*, the product audience can be associated with any ad groups across all of the customer's accounts.
+## <a name="scope"></a>Scope
+Scope defines what accounts can use this product audience. If scope is set to *Account*, the product audience can only be associated with ad groups within one specified account ([Parent Id](#parentid)). If scope is set to *Customer*, the product audience can be associated with any ad groups across all of the customer's accounts.
 
 **Add:** Required  
 **Update:** Read-only. You cannot change the scope.    
 **Delete:** Read-only  
 
-### <a name="status"></a>Status
+## <a name="status"></a>Status
 The product audience status.
 
 Possible values are *Active* or *Deleted*. 
@@ -214,7 +212,7 @@ Possible values are *Active* or *Deleted*.
 **Update:** Read-only    
 **Delete:** Required. The Status must be set to *Deleted*.
 
-### <a name="supportedcampaigntypes"></a>Supported Campaign Types
+## <a name="supportedcampaigntypes"></a>Supported Campaign Types
 The semicolon delimited list of campaign types that support this product audience.
 
 Supported values are Audience, DynamicSearchAds, Search, and Shopping. New campaign types might be added in the future, so you should not take any dependency on a fixed set of values.
@@ -223,7 +221,7 @@ Supported values are Audience, DynamicSearchAds, Search, and Shopping. New campa
 **Update:** Read-only    
 **Delete:** Read-only
 
-### <a name="uettagid"></a>UET Tag Id
+## <a name="uettagid"></a>UET Tag Id
 The Bing Ads identifier of the Universal Event Tracking (UET) tag that is used with the product audience.
 
 > [!IMPORTANT]

@@ -29,7 +29,7 @@ The SDK uses the production environment by default. With the .NET and Java SDKs 
 environment=Sandbox
 ```
 
-You can also set the API environment parameter of individual [Bulk Service Manager](sdk-bulk-service-manager.md), [Service Client](#serviceclient), and [Reporting Service Manager](sdk-reporting-service-manager.md) instances. Setting the *apiEnvironment* overrides the global setting only for the specified service client instance or instances. Unless otherwise intended, you should be careful not to inadvertently configure a mixed set of environments.    
+You can also set the API environment parameter of individual [Bulk Service Manager](sdk-bulk-service-manager.md), [Service Client](#serviceclient), and [Reporting Service Manager](sdk-reporting-service-manager.md) instances. Setting the *apiEnvironment* overrides the global setting only for the specified service client instance or instances. Unless otherwise intended, you should be careful not to inadvertently configure a mixed set of environments. 
 
 > [!NOTE]
 > The *BulkServiceManager* and *ReportingServiceManager* are available with the .NET, Java, and Python SDKs.
@@ -90,7 +90,7 @@ Bing Ads SDKs support the standard OAuth 2.0 flow as defined in detail in the [T
 
 For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. The steps below follow the authorization code grant flow. For more information both about authorization code and implicit grant flows, see the [Authentication with OAuth](authentication-oauth.md) guide.
 
-1.  Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace client ID (registered application ID), client secret (registered password), and redirection URI with the values configured in [Registering Your Application](authentication-oauth.md#registerapplication).
+1. Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace client ID (registered application ID), client secret (registered password), and redirection URI with the values configured in [Registering Your Application](authentication-oauth.md#registerapplication).
 
     ```csharp
     var oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(ClientId, ClientSecret, new Uri(RedirectionUri), ApiEnvironment);
@@ -138,7 +138,7 @@ For repeat or long term authentication, you should follow the authorization code
     oauth_web_auth_code_grant.state="ClientStateGoesHere"
     ```
 
-2.  Request user consent by connecting to the Microsoft Account authorization endpoint through a web browser control. Call the *GetAuthorizationEndpoint* method of the *OAuthWebAuthCodeGrant* instance that you created in the earlier step.
+2. Request user consent by connecting to the Microsoft Account authorization endpoint through a web browser control. Call the *GetAuthorizationEndpoint* method of the *OAuthWebAuthCodeGrant* instance that you created in the earlier step.
 
     ```csharp
     return Redirect(oAuthWebAuthCodeGrant.GetAuthorizationEndpoint().ToString());
@@ -161,7 +161,7 @@ For repeat or long term authentication, you should follow the authorization code
     
     If the user denied your application permissions to manage their Bing Ads accounts, the callback URI includes an error and error description field as follows: *REDIRECTURI?error=access_denied&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
 
-3.  Use the authorization code to request the access token and refresh token. Pass the full callback URI when using the *OAuthWebAuthCodeGrant* instance to request the access token and refresh token.
+3. Use the authorization code to request the access token and refresh token. Pass the full callback URI when using the *OAuthWebAuthCodeGrant* instance to request the access token and refresh token.
 
     ```csharp
     if (Request["code"] != null)
@@ -196,7 +196,7 @@ For repeat or long term authentication, you should follow the authorization code
     > [!NOTE]
     > The *BulkServiceManager* and *ReportingServiceManager* are available with the .NET, Java, and Python SDKs.
 
-4.  When calling Bing Ads services with [Service Client](#serviceclient), [Bulk Service Manager](sdk-bulk-service-manager.md), or [Reporting Service Manager](sdk-reporting-service-manager.md), it is important to save the most recent refresh token whenever new OAuth tokens are received.  
+4. When calling Bing Ads services with [Service Client](#serviceclient), [Bulk Service Manager](sdk-bulk-service-manager.md), or [Reporting Service Manager](sdk-reporting-service-manager.md), it is important to save the most recent refresh token whenever new OAuth tokens are received. 
 
     ```csharp
     // If you already have a refresh token, use it to request new access and refresh tokens.
