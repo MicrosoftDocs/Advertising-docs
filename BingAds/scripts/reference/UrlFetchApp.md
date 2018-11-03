@@ -52,7 +52,7 @@ url|string|The URL of the web resource to get. Supports HTTP and HTTPS requests.
 [HTTPResponse](HTTPResponse.md)|Contains the methods for getting the response's payload and status code.
 
 
-## <a name="fetch-string-url-urlfetchparams-params-"></a>fetch(string url, UrlFethParams params)
+## <a name="fetch-string-url-urlfetchparams-params-"></a>fetch(string url, UrlFetchParams params)
 Lets you manage a web resource.
 
 Use this method to get, post, put, patch or delete a web resource. This method waits until the request completes.
