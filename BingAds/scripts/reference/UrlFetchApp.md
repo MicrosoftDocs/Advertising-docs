@@ -27,30 +27,6 @@ function main() {
 }
 ```
 
-```javascript
-    // Sends a GET request to a resource that requires an OAuth access token
-    // and returns a JSON object in the response.
-    var token = "<the oauth token goes here>";
-    var response = UrlFetchApp.fetch('https://contoso.com', { headers: { Authorization: `Bearer ${token}` } });    
-    var jsonObject = JSON.parse(response.getContentText());    
-```
-
-```javascript
-    // Sends a POST request with a JSON payload.
-    var jsonObject = {
-        'id' : '123abc',
-        'name' : 'leg',
-        'color' : 'red'
-    };
-    var formData = {
-        'method' : 'post',
-        'contentType' : 'application/json',
-        'payload' : JSON.stringify(jsonObject)
-    } 
-    var response = UrlFetchApp.fetch('https://contoso.com', formData);    
-    var jsonObject = JSON.parse(response.getContentText());    
-```
-
 
 ## Methods
 
