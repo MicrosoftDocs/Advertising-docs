@@ -116,7 +116,7 @@ function main() {
 
 Option 2 uses Microsoft Graph to get a OneDrive download link. With this option you need an OAuth access token to access the spreadsheet. Getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. You can either write a simple app or use a web browser.
 
-If you want to write a simple console app that you can reuse to get a refresh token, see the Code Grant Flow process outlined in [Authentication with OAuth](/bingads/guides/authentication-oauth). For an example of a simple console app that you use to get OAuth tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md). Note that for the step that gets the grant code, set the &scope query parameter to 'file.read offline_access'.
+If you want to write a simple console app that you can reuse to get a refresh token, see the Code Grant Flow process outlined in [Authentication with OAuth](/bingads/guides/authentication-oauth). For an example of a simple console app that you use to get OAuth tokens, see [OAuth C# Example](../../hotel-service/code-example-oauth.md). Note that for the step that gets the grant code, set the &scope query parameter to 'file.read offline_access'.
 
 Use your simple app to get the refresh token for a user that has permissions to access your spreadsheet. You will run your app once just to get the refresh token. After getting the refresh token, you'll use the refresh token in your script to get the access token. The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run your app again to get consent and a new refresh token.
 
