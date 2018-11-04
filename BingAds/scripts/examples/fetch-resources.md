@@ -37,9 +37,9 @@ For the stock quote request above, use `getContentText` to get the JSON response
 
 ### Handling HTTP errors
 
-If the request fails (for example, with 400 Bad request), the service stops processing your script and writes an error message to the log. The message includes the request's HTTP status code but not the error message in the body of the response. If you need to get the response body, call the `fetch(url, params)` version instead and set the muteHttpExceptions parameter to **true**.
+If the request fails (for example, with 400 Bad request), the service stops processing your script and writes an error message to the log. The message includes the request's HTTP status code but not the error message that might be in the body of the response. 
 
-Setting muteHttpExceptions to **true** always returns control to your script. Your script should then call the `getResponseCode()` method to determine the success or failure of the request and act accordingly.
+If you need to get the response body, call the `fetch(url, params)` method instead and set the muteHttpExceptions parameter to **true**. Setting muteHttpExceptions to **true** always returns control to your script. You'll then need to call the `getResponseCode()` method to determine the success or failure of the request and act accordingly.
 
 ```javascript
     var response = UrlFetchApp.fetch('https://contoso.com', { muteHttpExceptions: true });    
@@ -58,7 +58,7 @@ Setting muteHttpExceptions to **true** always returns control to your script. Yo
 
 If you need to add, update, or delete a web resource, use the [fetch(url, params)](../reference/UrlFetchApp.md#fetch-string-url-urlfetchparams-params-) method. This method lets you specify the HTTP verb to use, the Content-Type header, any other headers your request needs, and the request's payload. For details about these parameters, see the [UrlFetchParams](../reference/UrlFetchParams.md) object.
 
-The following example sends a GET request to get a resource that requires an OAuth access token. Because GET is the fetch method's default HTTP verb, the only parameter you need to specify is the `headers` parameter.
+The following example gets a resource that requires an OAuth access token. Because GET is the fetch method's default HTTP verb, the only parameter you need to specify is the `headers` parameter.
 
 
 ```javascript
@@ -67,7 +67,7 @@ The following example sends a GET request to get a resource that requires an OAu
     var jsonObject = JSON.parse(response.getContentText());    
 ```
 
-This example sends a POST request with a JSON payload. Because the payload is a JSON object, the `contentType` parameter is set to *application/json*.
+This example sends a POST request with a JSON payload. Because the payload is a JSON object, the example sets the `contentType` parameter to *application/json*.
 
 ```javascript
     var myData = {
@@ -97,12 +97,12 @@ Option 1 uses a link to download the spreadsheet from your OneDrive Live account
 To get the link:
 
 - Select the spreadsheet in OneDrive
-- Click Embed (used if you want to embed the spreadsheet in a webpage)
+- Click Embed
 - Copy the snippet to an editor (e.g., Notepad)
 - In the URL, change /embed to /download
 - Copy and use the URL in your script's `fetch` method.
 
-After getting the URL, call the `fetch(url)` method to get the spreadsheet. You can then parse the spreadsheet.
+After getting the URL, call the `fetch(url)` method to download the spreadsheet. You can then parse the spreadsheet.
 
 ```javascript
 function main() {
@@ -124,26 +124,28 @@ Use your simple app to get the refresh token for a user that has permissions to 
 
 If writing a simple app isn't an option but you know how to use [Fiddler](https://www.telerik.com/download/fiddler) or a comparable tool, follow these steps to get a refresh token.
 
-1. Follow the steps in [Authentication with OAuth](/bingads/guides/authentication-oauth) to register a native app with offline access and get a client ID.  
+1. Follow the steps in [Authentication with OAuth](/bingads/guides/authentication-oauth) to register a native app with offline access and to get a client ID.  
   
-2. Enter the following URL in a web browser. Replace {clientid} with the client ID you received when you registered your app. The browser opens an MSA window where you enter your user name and password. Then, it asks for consent for your app to access your resources, click Yes.  
+2. Enter the following URL in a web browser. Replace {clientid} with the client ID you received when you registered your app. The browser opens an MSA window and asks for your user name and password. It then asks for consent to access your OneDrive resources, click Yes.  
   
    ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={clientid}&scope=files.read offline_access&response_type=code&redirect_uri=https://login.live.com/oauth20_desktop.srf```  
 
-3. Capture the code that the response returns in the address bar (see &code={the grant code you copy}) to use in the next step.  
+3. Capture the code that the response returns in the address bar (see &code={copy this code}) to use in the next step.  
 
 4. Open Fiddler or a comparable tool and execute the following HTTP POST request. Replace {clientid} with the client ID you received when you registered your app. Replace {grantcode} with the code you captured in the previous step.  
-
-   ```POST https://login.microsoftonline.com/common/oauth2/v2.0/token
-  Content-Type: application/x-www-form-urlencoded
-  
-  client_id={clientid}&redirect_uri=https://login.live.com/oauth20_desktop.srf&code={grantcode}&grant_type=authorization_code```  
+   
+   ```
+   POST https://login.microsoftonline.com/common/oauth2/v2.0/token
+   Content-Type: application/x-www-form-urlencoded  
+   
+   client_id={clientid}&redirect_uri=https://login.live.com/oauth20_desktop.srf&code={grantcode}&grant_type=authorization_code
+   ```  
 
 5. Inspect the response and copy the refresh token to use in the script.
    
 #### Basic calling sequence using the refresh token to get an access token
 
-After getting the refresh token, the following steps show the basic calling sequence for getting the access token that you set the Authorization header to. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your OneDrive data. Typically, you read it from secured storage when your script runs.  
+After getting the refresh token, the following steps show the basic calling sequence for getting the access token that you set the Authorization header to. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your OneDrive data.   
   
 - Send an HTTP POST request to `https://login.microsoftonline.com/common/oauth2/v2.0/token`  
   
@@ -158,11 +160,10 @@ After getting the refresh token, the following steps show the basic calling sequ
   
 - Set the Authorization header to the access token  
    
-- Store the new refresh token in secured storage for the next time you run your script. 
 
-#### Example that download a spreadsheet
+#### Example that downloads a spreadsheet
 
-The following shows an example that uses the refresh token to get an access token and calls Microsoft Graph to get a download URL that you use to download the spreadsheet. Replace {yourclientid} with your simple app's client ID, and replace {yourrefreshtoken} with your refresh token.
+The following example shows how to 1) use the refresh token to get an access token, and 2) call Microsoft Graph to get a download URL that you use to download the spreadsheet. Replace {yourclientid} with your simple app's client ID, and replace {yourrefreshtoken} with your refresh token.
 
 ```javascript
 function main() {
