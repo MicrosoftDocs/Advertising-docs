@@ -124,13 +124,13 @@ Use your simple app to get the refresh token for a user that has permissions to 
 
 If writing a simple app isn't an option but you know how to use [Fiddler](https://www.telerik.com/download/fiddler) or a comparable tool, follow these steps to get a refresh token.
 
-1. Follow the steps in [Authentication with OAuth](/bingads/guides/authentication-oauth) to register a native app with offline access and to get a client ID.  
+1. Follow the steps in [Authentication with OAuth](/bingads/guides/authentication-oauth) to register a native app (see **Add Platform**). Capture your application ID (client ID). Under **Microsoft Graph delegated permissions**, click **Add** and select Files.Read and offline_access.  
   
 2. Enter the following URL in a web browser. Replace {clientid} with the client ID you received when you registered your app. The browser opens an MSA window and asks for your user name and password. It then asks for consent to access your OneDrive resources, click Yes.  
   
    ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={clientid}&scope=files.read offline_access&response_type=code&redirect_uri=https://login.live.com/oauth20_desktop.srf```  
 
-3. Capture the code that the response returns in the address bar (see &code={copy this code}) to use in the next step.  
+3. Capture the code that the response returns in the address bar (see ?code={copy this code}) to use in the next step.  
 
 4. Open Fiddler or a comparable tool and execute the following HTTP POST request. Replace {clientid} with the client ID you received when you registered your app. Replace {grantcode} with the code you captured in the previous step.  
    
