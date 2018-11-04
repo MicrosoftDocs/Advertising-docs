@@ -72,3 +72,4 @@ params|[UrlFetchParams](UrlFetchParams.md)|The request's parameters such as its 
 ## See also
 
 - [UrlFetch limits](../concepts/urlfetch-limits.md)
+- [Examples fetching web resources](../examples/fetch-resources.md)

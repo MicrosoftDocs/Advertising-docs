@@ -141,29 +141,13 @@ If writing a simple app isn't an option but you know how to use [Fiddler](https:
    client_id={clientid}&redirect_uri=https://login.live.com/oauth20_desktop.srf&code={grantcode}&grant_type=authorization_code
    ```  
 
-5. Inspect the response and copy the refresh token to use in the script.
+5. Inspect the response and copy the refresh token to use in the script. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your OneDrive data.
    
-#### Basic calling sequence using the refresh token to get an access token
 
-After getting the refresh token, the following steps show the basic calling sequence for getting the access token that you set the Authorization header to. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your OneDrive data.   
-  
-- Send an HTTP POST request to `https://login.microsoftonline.com/common/oauth2/v2.0/token`  
-  
-  - The following shows the body of the POST (the parameters are separated for readability):  
-
-    client_id=\<yourclientid>  
-    &grant_type=refresh_token  
-    &redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf  
-    &refresh_token=\<yourrefreshtoken>` 
-
-- Get the access token and refresh token from the response  
-  
-- Set the Authorization header to the access token  
-   
 
 #### Example that downloads a spreadsheet
 
-The following example shows how to 1) use the refresh token to get an access token, and 2) call Microsoft Graph to get a download URL that you use to download the spreadsheet. Replace {yourclientid} with your simple app's client ID, and replace {yourrefreshtoken} with your refresh token.
+After getting the refresh token, the following example shows how to 1) use the refresh token to get an access token, and 2) call Microsoft Graph to get a download URL that you use to download the spreadsheet. Replace {yourclientid} with your simple app's client ID, and replace {yourrefreshtoken} with your refresh token.
 
 ```javascript
 function main() {
