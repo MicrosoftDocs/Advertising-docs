@@ -86,23 +86,23 @@ This example sends a POST request with a JSON payload. Because the payload is a 
     var jsonObject = JSON.parse(response.getContentText());    
 ```
 
-## Using UrlFetchApp to get a spreadsheet from OneDrive.
+## Using UrlFetchApp to get a data file or CSV file from OneDrive.
 
-There are a couple of options for using [UrlFetchApp](../reference/UrlFetchApp.md) to get a spreadsheet from OneDrive.
+There are a couple of options for using [UrlFetchApp](../reference/UrlFetchApp.md) to get a data from OneDrive.
 
 ### Option 1 uses a OneDrive download link
 
-Option 1 uses a link to download the spreadsheet from your OneDrive Live account (i.e., https://onedrive.live.com). This option is easier but it's undocumented, so this functionality is subject to change without notice.
+Option 1 uses a link to download the data file from your OneDrive Live account (i.e., https://onedrive.live.com). This option is easier but it's undocumented, so this functionality is subject to change without notice.
 
 To get the link:
 
-- Select the spreadsheet in OneDrive
+- Select the data file in OneDrive
 - Click Embed
 - Copy the snippet to an editor (e.g., Notepad)
 - In the URL, change /embed to /download
 - Copy and use the URL in your script's `fetch` method.
 
-After getting the URL, call the `fetch(url)` method to download the spreadsheet. You can then parse the spreadsheet.
+After getting the URL, call the `fetch(url)` method to download the data file. You can then parse the file.
 
 ```javascript
 function main() {
@@ -114,11 +114,11 @@ function main() {
 
 ### Option 2 uses Microsoft Graph to get a OneDrive download link
 
-Option 2 uses Microsoft Graph to get a OneDrive download link. With this option you need an OAuth access token to access the spreadsheet. Getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. You can either write a simple app or use a web browser.
+Option 2 uses Microsoft Graph to get a OneDrive download link. With this option you need an OAuth access token to access the data file. Getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. You can either write a simple app or use a web browser.
 
 If you want to write a simple console app that you can reuse to get a refresh token, see the Code Grant Flow process outlined in [Authentication with OAuth](/bingads/guides/authentication-oauth). For an example of a simple console app that gets OAuth tokens, see [OAuth C# Example](../../hotel-service/code-example-oauth.md). Note that for the step that gets the grant code, set the &scope query parameter to 'file.read offline_access'.
 
-Use your simple app to get the refresh token for a user that has permissions to access your spreadsheet. You will run your simple app just once to get the refresh token. After getting the refresh token, you'll use the refresh token in your script to get the access token. The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run your app again to get consent and a new refresh token.
+Use your simple app to get the refresh token for a user that has permissions to access your data file. You will run your simple app just once to get the refresh token. After getting the refresh token, you'll use the refresh token in your script to get the access token. The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run your app again to get consent and a new refresh token.
 
 #### If writing a simple app isn't an option
 
@@ -145,9 +145,9 @@ If writing a simple app isn't an option but you know how to use [Fiddler](https:
    
 
 
-#### Example that downloads a spreadsheet
+#### Example that downloads a CSV file
 
-After getting the refresh token, the following example shows how to 1) use the refresh token to get an access token, and 2) call Microsoft Graph to get a download URL that you use to download the spreadsheet. Replace {yourclientid} with your simple app's client ID, and replace {yourrefreshtoken} with your refresh token.
+After getting the refresh token, the following example shows how to 1) use the refresh token to get an access token, and 2) call Microsoft Graph to get a download URL that you use to download the CSV file. Replace {yourclientid} with your simple app's client ID, and replace {yourrefreshtoken} with your refresh token.
 
 ```javascript
 function main() {
@@ -166,17 +166,17 @@ function main() {
     Logger.log("access token: \n\n" + tokens['access_token']);
     Logger.log("\n\nrefresh token: \n\n" + tokens['refresh_token']);
 
-    // Get the spreadsheet from OneDrive passing the access token in the Authorization header. 
+    // Get the CSV file from OneDrive passing the access token in the Authorization header. 
     // Replace the path and file name (/me/drive/root/children/bids.csv) with your path and file name.
 
     response = UrlFetchApp.fetch('https://graph.microsoft.com/v1.0/me/drive/root/children/bids.csv', { headers: { Authorization: `Bearer ${tokens['access_token']}` } });    
  
-    // Get the download URL from the response that you use to download the spreadsheet.
+    // Get the download URL from the response that you use to download the file.
 
     var downloadUrl = JSON.parse(response.getContentText())['@microsoft.graph.downloadUrl'];    
  
-    // Download the spreadsheet and parse the sheet. The parseCSV method is a placeholder for 
-    // whichever method you provide to parse the sheet's data.
+    // Download the file and parse the data. The parseCSV method is a placeholder for 
+    // whichever method you provide to parse the file.
 
     response = UrlFetchApp.fetch(downloadUrl);
     var file = response.getContentText();
@@ -188,4 +188,4 @@ function main() {
 
 ### Parse the spreadsheet
 
-There's no built-in spreadsheet parsing tool, so you'll need to write your own or find one online. For example, a quick search online found [this](https://stackoverflow.com/a/14991797) one on Stack Overflow. If you find one online make sure it has no use restrictions. 
+There's no built-in CSV parsing tool, so you'll need to write your own or find one online. For example, a quick search online found [this](https://stackoverflow.com/a/14991797) one on Stack Overflow. If you find one online make sure it has no use restrictions. 
