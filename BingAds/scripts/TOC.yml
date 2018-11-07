@@ -61,6 +61,8 @@
       href: examples/campaigns.md 
     - name: Keywords
       href: examples/keywords.md 
+    - name: Using UrlFetchApp 
+      href: examples/fetch-resources.md 
 - name: Script reference
   href: reference-overview.md 
   items:    
