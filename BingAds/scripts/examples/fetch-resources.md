@@ -88,72 +88,86 @@ This example sends a POST request with a JSON payload. Because the payload is a 
 
 ## Using UrlFetchApp to get a data file or CSV file from OneDrive.
 
-There are a couple of options for using [UrlFetchApp](../reference/UrlFetchApp.md) to get a data from OneDrive.
+To get a file from OneDrive (https://onedrive.live.com), use Microsoft Graph. Accessing a OneDrive file requires an OAuth access token. And getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. Here are a couple of options for getting consent and the refresh token you use in your script to get an access token.
 
-### Option 1 uses a OneDrive download link
+### Option 1 is to write a simple app
 
-Option 1 uses a link to download the data file from your OneDrive Live account (i.e., https://onedrive.live.com). This option is easier but it's undocumented, so this functionality is subject to change without notice.
-
-To get the link:
-
-- Select the data file in OneDrive
-- Click Embed
-- Copy the snippet to an editor (e.g., Notepad)
-- In the URL, change /embed to /download
-- Copy and use the URL in your script's `fetch` method.
-
-After getting the URL, call the `fetch(url)` method to download the data file. You can then parse the file.
-
-```javascript
-function main() {
-    var response = UrlFetchApp.fetch("https://onedrive.live.com/download?cid=659E...&resid=659E...&authkey=AC5z...");
- 
-    var sheet = response.getContentText();
-}
-```
-
-### Option 2 uses Microsoft Graph to get a OneDrive download link
-
-Option 2 uses Microsoft Graph to get a OneDrive download link. With this option you need an OAuth access token to access the data file. Getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. You can either write a simple app or use a web browser.
-
-If you want to write a simple console app that you can reuse to get a refresh token, see the Code Grant Flow process outlined in [Authentication with OAuth](/bingads/guides/authentication-oauth). For an example of a simple console app that gets OAuth tokens, see [OAuth C# Example](../../hotel-service/code-example-oauth.md). Note that for the step that gets the grant code, set the &scope query parameter to 'file.read offline_access'.
-
-Use your simple app to get the refresh token for a user that has permissions to access your data file. You will run your simple app just once to get the refresh token. After getting the refresh token, you'll use the refresh token in your script to get the access token. The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run your app again to get consent and a new refresh token.
-
-#### If writing a simple app isn't an option
-
-If writing a simple app isn't an option but you know how to use [Fiddler](https://www.telerik.com/download/fiddler) or a comparable tool, follow these steps to get a refresh token.
+If you like writing code or already have OAuth code that you can repurpose, then all you need to do is register your app.
 
 1. Go to [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and click **Add an app**.  
-   
-   1. Enter an app like Bing Ads Scripts app.  (Don't check Guided setup.)
-   2. Click **Create** and note your application ID (client ID).  
-   3. Click **Add Platform** and then **Native Application**.
-   4. Under **Microsoft Graph delegated permissions**, click **Add** and select Files.Read and offline_access.  
-   5. Click **Save**.  
-   
-2. Enter the following URL in a web browser. Replace {clientid} with the application ID you received when you registered your app. The browser opens an MSA window and asks for your user name and password. It then asks for consent to access your OneDrive resources, click Yes.  
-  
-   ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={clientid}&scope=files.read offline_access&response_type=code&redirect_uri=https://login.live.com/oauth20_desktop.srf```  
+2. Enter an app name like Bing Ads Scripts Get Tokens. (Don't check Guided setup.)
+3. Click **Create** and note your application ID (client ID).  
+4. Click **Add Platform** and then **Native Application**.
+5. Under **Microsoft Graph delegated permissions**, click **Add** and select Files.Read and offline_access.  
+6. Click **Save**.  
 
-3. Capture the code that the response returns in the address bar (see ?code={copy this code}) to use in the next step.  
+https://docs.microsoft.com/en-us/bingads/guides/authentication-oauth?view=bingads-12#authorizationcode
+If you need to need to write code from scratch, see the Code Grant Flow process outlined in [Authentication with OAuth](/bingads/guides/authentication-oauth#authorizationcode). Note that for the step that gets the grant code, set the &scope query parameter to 'file.read offline_access'. For an example of a simple console app that gets OAuth tokens, see [OAuth C# Example](../../hotel-service/code-example-oauth.md). 
 
-4. Open Fiddler or a comparable tool and execute the following HTTP POST request. Replace {clientid} with the client ID you received when you registered your app. Replace {grantcode} with the code you captured in the previous step.  
-   
-   ```
-   POST https://login.microsoftonline.com/common/oauth2/v2.0/token
-   Content-Type: application/x-www-form-urlencoded  
-   
-   client_id={clientid}&redirect_uri=https://login.live.com/oauth20_desktop.srf&code={grantcode}&grant_type=authorization_code
-   ```  
+After creating your app, you'll run it just once to get the refresh token. Copy and paste the refresh token in your script to get the access token. The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run your app again to get consent and a new refresh token.
 
-5. Inspect the response and copy the refresh token to use in the script. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your OneDrive data.
-   
+### Option 2 is to run the following PowerShell script
+
+If writing a simple app isn't an option, here's a PowerShell script you can run.
+
+```powershell
+$clientId = "your applicatioin ID goes here"
+ 
+$url = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=files.read offline_access&response_type=code&redirect_uri=https://login.live.com/oauth20_desktop.srf"
+ 
+start $url
+ 
+$code = Read-Host "Please enter the code"
+ 
+$response = Invoke-WebRequest https://login.microsoftonline.com/common/oauth2/v2.0/token -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientid&redirect_uri=https://login.live.com/oauth20_desktop.srf&code=$code&grant_type=authorization_code"
+ 
+Write-Output "Refresh token: " ($response.Content | ConvertFrom-Json).refresh_token 
+```
+
+Before you can run the PowerShell script, you need to follow these steps to get a client ID.
+
+1. Go to [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and click **Add an app**.  
+2. Enter an app name like Bing Ads Scripts Get Tokens. (Don't check Guided setup.)
+3. Click **Create** and note your application ID (client ID).  
+4. Click **Add Platform** and then **Native Application**.
+5. Under **Microsoft Graph delegated permissions**, click **Add** and select Files.Read and offline_access.  
+6. Click **Save**.  
+
+Open Notepad or your favorite editor and copy the PowerShell script to editor. Set `$clientID` to the application ID you received when you registered your app.
+
+```powershell
+$clientId = "abc123-4d9e-44f1-837d-a7244af50027"
+```
+
+Save the file and name it GetTokens.ps1 (you can name it anything you want but the extension must be .ps1).
+
+Open a PowerShell window. To open a window, press the Start Menu button, enter powershell in the text box, and select Windows PowerShell. Navigate to the folder where you saved the GetTokens.ps1 PowerShell script. Next, enter .\GetTokens.ps1 to run the script.
+
+```cmd
+PS C:\Users\jason> cd C:\Scripts\
+PS C:\Scripts> .\GetTokens.ps1
+```
+
+If you get an execution policy error, you'll need to change your execution policy. For execution policy options, see [About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170). To change the execution policy for a session, open a PowerShell window with the following Windows Run command (Windows+r): 
+
+```
+powershell.exe -ExecutionPolicy Bypass
+```
+
+When the PowerShell script successfully runs, it will start a browser session where you enter your Microsoft account (MSA) credetials that has access to your OneDrive files. After consenting, the browser's address bar will contain the grant code (see ?code={copy this code}).
+
+```
+https://login.live.com/oauth20_desktop.srf?code=M7ab570e5-a1c0-32e5-a946-e4490c822954&lc=1033
+```
+
+Copy the code (M7ab570e5-a1c0-32e5-a946-e4490c822954) and enter it in the PowerShell window at the prompt. The PowerShell script then returns a refresh token. Use the refresh token in your script to get the access token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your OneDrive data.
+
+The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the PowerShell script again to get consent and a new refresh token.
 
 
-#### Example that downloads a CSV file
+### Example that downloads a CSV file
 
-After getting the refresh token, the following example shows how to 1) use the refresh token to get an access token, and 2) call Microsoft Graph to get a download URL that you use to download the CSV file. Replace {yourclientid} with your simple app's client ID, and replace {yourrefreshtoken} with your refresh token.
+After getting the refresh token, the following example shows how to 1) use the refresh token to get an access token, and 2) call Microsoft Graph to get a download URL that you use to download the CSV file. Replace {yourclientid} with your registered app's client ID, and replace {yourrefreshtoken} with your refresh token.
 
 ```javascript
 function main() {
