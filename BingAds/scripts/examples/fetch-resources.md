@@ -120,23 +120,22 @@ $clientId = "abc123-4d9e-44f1-837d-a7244af50027"
 
 Save the file and name it GetTokens.ps1 (you can name it anything you want but the extension must be .ps1).
 
-Open a PowerShell window. To open a PowerShell window on Microsoft Windows, enter the following Windows Run command (\<Windows button>+r): 
+Now open a console window. To open a console window on Microsoft Windows, enter the following Windows Run command (\<Windows button>+r): 
 
 ```
-powershell.exe
+cmd.exe
 ```
 
-Navigate to the folder where you saved GetTokens.ps1. Next, enter .\GetTokens.ps1 to run the script.
-
-```cmd
-PS C:\Users\jason> cd C:\Scripts\
-PS C:\Scripts> .\GetTokens.ps1
-```
-
-If you get an execution policy error, you'll need to change your execution policy. For execution policy options, see [About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170). To change the execution policy for a session, use the following Windows Run command (\<Windows button>+r) to open the PowerShell window. 
+At the command prompt, navigate to the folder where you saved GetTokens.ps1. Then, enter the following command.
 
 ```
-powershell.exe -ExecutionPolicy Bypass
+powershell.exe -File .\GetTokens.ps1
+```
+
+If you get an execution policy error, you'll need to change your execution policy. For execution policy options, see <a href="https:/go.microsoft.com/fwlink/?LinkID=135170" data-raw-source="[About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170)">About Execution Policies</a>. To change the execution policy for a session, run the following Windows Run command (\<Windows button>+r): 
+
+```
+powershell.exe -ExecutionPolicy Bypass -File .\GetTokens.ps1
 ```
 
 When the PowerShell script successfully runs, it starts a browser session where you enter your Microsoft account (MSA) credentials (the credentials must have access to your OneDrive files). After consenting, the browser's address bar contains the grant code (see ?code={copy this code}).
@@ -145,21 +144,24 @@ When the PowerShell script successfully runs, it starts a browser session where 
 https://login.live.com/oauth20_desktop.srf?code=M7ab570e5-a1c0-32e5-a946-e4490c822954&lc=1033
 ```
 
-Copy the grant code (M7ab570e5-a1c0-32e5-a946-e4490c822954) and enter it in the PowerShell window at the prompt. The PowerShell script then returns a refresh token. Use the refresh token in your script to get the access token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your OneDrive data.
+Copy the grant code (M7ab570e5-a1c0-32e5-a946-e4490c822954) and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. Use the refresh token in your script to get the access token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your OneDrive data.
 
 The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the PowerShell script again to get consent and a new refresh token.
 
 
 ### Example that downloads a CSV file
 
-After getting the refresh token, the following example shows how to 1) use the refresh token to get an access token, and 2) call Microsoft Graph to get a download URL that you use to download the CSV file. Replace {yourclientid} with your registered app's client ID, and replace {yourrefreshtoken} with your refresh token.
+After getting the refresh token, the following example shows how to 1) use the refresh token to get an access token, and 2) call Microsoft Graph to get a download URL that you use to download the CSV file. Replace {yourclientid} with your registered app's application ID, and replace {yourrefreshtoken} with your refresh token.
 
 ```javascript
 function main() {
+    var clientId = "{yourclientid}";
+    var refreshToken = "{yourrefreshtoken}";
+
     var options = {
         'method' : 'post',
         'contentType' : 'application/x-www-form-urlencoded',
-        'payload' : 'client_id={yourclientid}&redirect_uri=https://login.live.com/oauth20_desktop.srf&refresh_token={yourrefreshtoken}&grant_type=refresh_token'
+        'payload' : `client_id=${clientId}&redirect_uri=https://login.live.com/oauth20_desktop.srf&refresh_token=${refreshToken}&grant_type=refresh_token`
     };
     
     // Use the refresh token to get the access token.
@@ -167,9 +169,6 @@ function main() {
     var response = UrlFetchApp.fetch('https://login.microsoftonline.com/common/oauth2/v2.0/token', options);
  
     var tokens = JSON.parse(response.getContentText());
-
-    Logger.log("access token: \n\n" + tokens['access_token']);
-    Logger.log("\n\nrefresh token: \n\n" + tokens['refresh_token']);
 
     // Get the contents of the CSV file from OneDrive passing the access token in the Authorization header. 
     // Replace the path and file name (/me/drive/root/children/bids.csv) with your path and file name.
