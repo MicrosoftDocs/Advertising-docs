@@ -88,7 +88,7 @@ This example sends a POST request with a JSON payload. Because the payload is a 
 
 ## Using UrlFetchApp to get a data file or CSV file from OneDrive.
 
-To get a file from OneDrive (https://onedrive.live.com), use Microsoft Graph. Accessing a OneDrive file requires an OAuth access token. And getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. Here are a couple of options for getting consent and the refresh token you use in your script to get an access token.
+To get a file from OneDrive (https://onedrive.live.com), use Microsoft Graph. Accessing a OneDrive file requires an OAuth access token. And getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. Here are a couple of options for getting consent and the refresh token you use in your script.
 
 ### Option 1 is to write a simple app
 
@@ -101,10 +101,11 @@ If you like writing code or already have OAuth code that you can repurpose, then
 5. Under **Microsoft Graph delegated permissions**, click **Add** and select Files.Read and offline_access.  
 6. Click **Save**.  
 
-https://docs.microsoft.com/en-us/bingads/guides/authentication-oauth?view=bingads-12#authorizationcode
-If you need to need to write code from scratch, see the Code Grant Flow process outlined in [Authentication with OAuth](/bingads/guides/authentication-oauth#authorizationcode). Note that for the step that gets the grant code, set the &scope query parameter to 'file.read offline_access'. For an example of a simple console app that gets OAuth tokens, see [OAuth C# Example](../../hotel-service/code-example-oauth.md). 
 
-After creating your app, you'll run it just once to get the refresh token. Copy and paste the refresh token in your script to get the access token. The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run your app again to get consent and a new refresh token.
+If you want to write code from scratch, see the Code Grant Flow process outlined in [Authentication with OAuth](/bingads/guides/authentication-oauth#authorizationcode). Note that for the step that gets the grant code, set the &scope query parameter to 'file.read offline_access'. For an example of a simple console app that gets OAuth tokens, see [OAuth C# Example](../../hotel-service/code-example-oauth.md). 
+
+After creating your app, you'll run it once to get the refresh token. Copy and paste the refresh token into your script to get the access token. The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run your app again.
+
 
 ### Option 2 is to run the following PowerShell script
 
@@ -133,7 +134,7 @@ Before you can run the PowerShell script, you need to follow these steps to get 
 5. Under **Microsoft Graph delegated permissions**, click **Add** and select Files.Read and offline_access.  
 6. Click **Save**.  
 
-Open Notepad or your favorite editor and copy the PowerShell script to editor. Set `$clientID` to the application ID you received when you registered your app.
+Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientID` to the application ID you received when you registered your app.
 
 ```powershell
 $clientId = "abc123-4d9e-44f1-837d-a7244af50027"
@@ -141,7 +142,7 @@ $clientId = "abc123-4d9e-44f1-837d-a7244af50027"
 
 Save the file and name it GetTokens.ps1 (you can name it anything you want but the extension must be .ps1).
 
-Open a PowerShell window. To open a window, press the Start Menu button, enter powershell in the text box, and select Windows PowerShell. Navigate to the folder where you saved the GetTokens.ps1 PowerShell script. Next, enter .\GetTokens.ps1 to run the script.
+Open a PowerShell window. To open a window, press the Start Menu button, enter powershell in the text box, and select Windows PowerShell. Navigate to the folder where you saved GetTokens.ps1. Next, enter .\GetTokens.ps1 to run the script.
 
 ```cmd
 PS C:\Users\jason> cd C:\Scripts\
@@ -154,13 +155,13 @@ If you get an execution policy error, you'll need to change your execution polic
 powershell.exe -ExecutionPolicy Bypass
 ```
 
-When the PowerShell script successfully runs, it will start a browser session where you enter your Microsoft account (MSA) credetials that has access to your OneDrive files. After consenting, the browser's address bar will contain the grant code (see ?code={copy this code}).
+When the PowerShell script successfully runs, it starts a browser session where you enter your Microsoft account (MSA) credetials (the credentials must have access to your OneDrive files). After consenting, the browser's address bar contains the grant code (see ?code={copy this code}).
 
 ```
 https://login.live.com/oauth20_desktop.srf?code=M7ab570e5-a1c0-32e5-a946-e4490c822954&lc=1033
 ```
 
-Copy the code (M7ab570e5-a1c0-32e5-a946-e4490c822954) and enter it in the PowerShell window at the prompt. The PowerShell script then returns a refresh token. Use the refresh token in your script to get the access token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your OneDrive data.
+Copy the grant code (M7ab570e5-a1c0-32e5-a946-e4490c822954) and enter it in the PowerShell window at the prompt. The PowerShell script then returns a refresh token. Use the refresh token in your script to get the access token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your OneDrive data.
 
 The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the PowerShell script again to get consent and a new refresh token.
 
