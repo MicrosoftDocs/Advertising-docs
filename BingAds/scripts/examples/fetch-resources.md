@@ -120,14 +120,20 @@ $clientId = "abc123-4d9e-44f1-837d-a7244af50027"
 
 Save the file and name it GetTokens.ps1 (you can name it anything you want but the extension must be .ps1).
 
-Open a PowerShell window. To open a window, press the Start Menu button, enter powershell in the text box, and select Windows PowerShell. Navigate to the folder where you saved GetTokens.ps1. Next, enter .\GetTokens.ps1 to run the script.
+Open a PowerShell window. To open a PowerShell window on Microsoft Windows, enter the following Windows Run command (\<Windows button>+r): 
+
+```
+powershell.exe
+```
+
+Navigate to the folder where you saved GetTokens.ps1. Next, enter .\GetTokens.ps1 to run the script.
 
 ```cmd
 PS C:\Users\jason> cd C:\Scripts\
 PS C:\Scripts> .\GetTokens.ps1
 ```
 
-If you get an execution policy error, you'll need to change your execution policy. For execution policy options, see [About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170). To change the execution policy for a session, enter the following Windows Run command (\<Windows button>+r): 
+If you get an execution policy error, you'll need to change your execution policy. For execution policy options, see [About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170). To change the execution policy for a session, use the following Windows Run command (\<Windows button>+r) to open the PowerShell window. 
 
 ```
 powershell.exe -ExecutionPolicy Bypass
@@ -165,19 +171,14 @@ function main() {
     Logger.log("access token: \n\n" + tokens['access_token']);
     Logger.log("\n\nrefresh token: \n\n" + tokens['refresh_token']);
 
-    // Get the CSV file from OneDrive passing the access token in the Authorization header. 
+    // Get the contents of the CSV file from OneDrive passing the access token in the Authorization header. 
     // Replace the path and file name (/me/drive/root/children/bids.csv) with your path and file name.
 
-    response = UrlFetchApp.fetch('https://graph.microsoft.com/v1.0/me/drive/root/children/bids.csv', { headers: { Authorization: `Bearer ${tokens['access_token']}` } });    
+    response = UrlFetchApp.fetch('https://graph.microsoft.com/v1.0/me/drive/root/children/bids.csv/content', { headers: { Authorization: `Bearer ${tokens['access_token']}` } });    
  
-    // Get the download URL from the response that you use to download the file.
-
-    var downloadUrl = JSON.parse(response.getContentText())['@microsoft.graph.downloadUrl'];    
- 
-    // Download the file and parse the data. The parseCSV method is a placeholder for 
+    // Read and parse the contents of the file. The parseCSV method is a placeholder for 
     // whichever method you provide to parse the file.
 
-    response = UrlFetchApp.fetch(downloadUrl);
     var file = response.getContentText();
     var data = parseCSV(file);
 }
