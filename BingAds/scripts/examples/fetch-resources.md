@@ -131,10 +131,10 @@ PS C:\Scripts> .\GetTokens.ps1
 >
 > On windows, you can use the following shortcut to open a PowerShell window and run the script.
 >
-> 1. Open the Run window (<Windows button>+r)
+> 1. Open the Run window (\<Windows button>+r)
 > 2. Enter powershell.exe -File .\GetTokens.ps1
 
-If you get an execution policy error, you'll need to change your execution policy. For execution policy options, see [About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170). To change the execution policy for a session and run the script, enter the following Windows Run command (<Windows button>+r): 
+If you get an execution policy error, you'll need to change your execution policy. For execution policy options, see [About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170). To change the execution policy for a session and run the script, enter the following Windows Run command (\<Windows button>+r): 
 
 ```
 powershell.exe -ExecutionPolicy Bypass -File .\GetTokens.ps1
