@@ -94,7 +94,7 @@ To get a file from OneDrive (https://onedrive.live.com), use Microsoft Graph. Ac
 ```powershell
 $clientId = "your application ID goes here"
  
-start "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=files.read offline_access&response_type=code&redirect_uri=https://login.live.com/oauth20_desktop.srf"
+Start-Process "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=files.read offline_access&response_type=code&redirect_uri=https://login.live.com/oauth20_desktop.srf"
  
 $code = Read-Host "Please enter the code"
  
@@ -127,10 +127,17 @@ PS C:\Users\jason> cd C:\Scripts\
 PS C:\Scripts> .\GetTokens.ps1
 ```
 
-If you get an execution policy error, you'll need to change your execution policy. For execution policy options, see [About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170). To change the execution policy for a session, open a PowerShell window with the following Windows Run command (Windows+r): 
+> [!NOTE]
+>
+> On windows, you can use the following shortcut to open a PowerShell window and run the script.
+>
+> 1. Open the Run window (<Windows button>+r)
+> 2. Enter powershell.exe -File .\GetTokens.ps1
+
+If you get an execution policy error, you'll need to change your execution policy. For execution policy options, see [About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170). To change the execution policy for a session and run the script, enter the following Windows Run command (<Windows button>+r): 
 
 ```
-powershell.exe -ExecutionPolicy Bypass
+powershell.exe -ExecutionPolicy Bypass -File .\GetTokens.ps1
 ```
 
 When the PowerShell script successfully runs, it starts a browser session where you enter your Microsoft account (MSA) credentials (the credentials must have access to your OneDrive files). After consenting, the browser's address bar contains the grant code (see ?code={copy this code}).
