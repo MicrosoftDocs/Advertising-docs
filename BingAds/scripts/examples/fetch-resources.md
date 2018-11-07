@@ -124,9 +124,15 @@ Use your simple app to get the refresh token for a user that has permissions to 
 
 If writing a simple app isn't an option but you know how to use [Fiddler](https://www.telerik.com/download/fiddler) or a comparable tool, follow these steps to get a refresh token.
 
-1. Follow the steps in [Authentication with OAuth](/bingads/guides/authentication-oauth) to register a native app (see **Add Platform**). Capture your application ID (client ID). Under **Microsoft Graph delegated permissions**, click **Add** and select Files.Read and offline_access.  
-  
-2. Enter the following URL in a web browser. Replace {clientid} with the client ID you received when you registered your app. The browser opens an MSA window and asks for your user name and password. It then asks for consent to access your OneDrive resources, click Yes.  
+1. Go to [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and click **Add an app**.  
+   
+   1. Enter an app like Bing Ads Scripts app.  (Don't check Guided setup.)
+   2. Click **Create** and note your application ID (client ID).  
+   3. Click **Add Platform** and then **Native Application**.
+   4. Under **Microsoft Graph delegated permissions**, click **Add** and select Files.Read and offline_access.  
+   5. Click **Save**.  
+   
+2. Enter the following URL in a web browser. Replace {clientid} with the application ID you received when you registered your app. The browser opens an MSA window and asks for your user name and password. It then asks for consent to access your OneDrive resources, click Yes.  
   
    ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id={clientid}&scope=files.read offline_access&response_type=code&redirect_uri=https://login.live.com/oauth20_desktop.srf```  
 
