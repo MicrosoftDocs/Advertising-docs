@@ -95,7 +95,7 @@ To get a file from OneDrive (https://onedrive.live.com), use Microsoft Graph. Ac
 If you like writing code or already have OAuth code that you can repurpose, then all you need to do is register your app.
 
 1. Go to [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and click **Add an app**.  
-2. Enter an app name like Bing Ads Scripts Get Tokens. (Don't check Guided setup.)
+2. Enter an app name like Bing Ads Scripts. (Don't check Guided setup.)
 3. Click **Create** and note your application ID (client ID).  
 4. Click **Add Platform** and then **Native Application**.
 5. Under **Microsoft Graph delegated permissions**, click **Add** and select Files.Read and offline_access.  
@@ -112,11 +112,9 @@ After creating your app, you'll run it once to get the refresh token. Copy and p
 If writing a simple app isn't an option, here's a PowerShell script you can run.
 
 ```powershell
-$clientId = "your applicatioin ID goes here"
+$clientId = "your application ID goes here"
  
-$url = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=files.read offline_access&response_type=code&redirect_uri=https://login.live.com/oauth20_desktop.srf"
- 
-start $url
+start "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=files.read offline_access&response_type=code&redirect_uri=https://login.live.com/oauth20_desktop.srf"
  
 $code = Read-Host "Please enter the code"
  
@@ -128,7 +126,7 @@ Write-Output "Refresh token: " ($response.Content | ConvertFrom-Json).refresh_to
 Before you can run the PowerShell script, you need to follow these steps to get a client ID.
 
 1. Go to [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and click **Add an app**.  
-2. Enter an app name like Bing Ads Scripts Get Tokens. (Don't check Guided setup.)
+2. Enter an app name like Bing Ads Scripts. (Don't check Guided setup.)
 3. Click **Create** and note your application ID (client ID).  
 4. Click **Add Platform** and then **Native Application**.
 5. Under **Microsoft Graph delegated permissions**, click **Add** and select Files.Read and offline_access.  
@@ -155,7 +153,7 @@ If you get an execution policy error, you'll need to change your execution polic
 powershell.exe -ExecutionPolicy Bypass
 ```
 
-When the PowerShell script successfully runs, it starts a browser session where you enter your Microsoft account (MSA) credetials (the credentials must have access to your OneDrive files). After consenting, the browser's address bar contains the grant code (see ?code={copy this code}).
+When the PowerShell script successfully runs, it starts a browser session where you enter your Microsoft account (MSA) credentials (the credentials must have access to your OneDrive files). After consenting, the browser's address bar contains the grant code (see ?code={copy this code}).
 
 ```
 https://login.live.com/oauth20_desktop.srf?code=M7ab570e5-a1c0-32e5-a946-e4490c822954&lc=1033
