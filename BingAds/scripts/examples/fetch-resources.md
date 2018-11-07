@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # Fetching resources from the web
 
-If you need to manage resources on the web, use the the following methods of [UrlFetchApp](../reference/UrlFetchApp.md).
+If you need to manage resources on the web, use the following methods of [UrlFetchApp](../reference/UrlFetchApp.md).
 
 - [fetch(url)](../reference/UrlFetchApp.md#fetch-string-url-)
 - [fetch(url, params)](../reference/UrlFetchApp.md#fetch-string-url-urlfetchparams-params-)
@@ -26,7 +26,7 @@ Use `fetch(url)` if you just need to get a web resource.
 
 The `fetch(url)` method returns an [HTTResponse](../reference/HTTPResponse.md) object, which has the methods for reading the response. Use the `getContentText` method for reading a text response and `getContent` for reading a binary response.
 
-For the stock quote request above, use `getContentText` to get the JSON response. To acces the individual fields in the JSON response, use the `JSON.parse()` method to parse the response.
+For the stock quote request above, use `getContentText` to get the JSON response. To access the individual fields in the JSON response, use the `JSON.parse()` method to parse the response.
 
 ```javascript
     var stock = JSON.parse(response.getContentText());
@@ -88,28 +88,8 @@ This example sends a POST request with a JSON payload. Because the payload is a 
 
 ## Using UrlFetchApp to get a data file or CSV file from OneDrive.
 
-To get a file from OneDrive (https://onedrive.live.com), use Microsoft Graph. Accessing a OneDrive file requires an OAuth access token. And getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. Here are a couple of options for getting consent and the refresh token you use in your script.
+To get a file from OneDrive (https://onedrive.live.com), use Microsoft Graph. Accessing a OneDrive file requires an OAuth access token. And getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. If you don't already have another way to get a refresh token, here's a PowerShell script you can run to get consent and the refresh token.
 
-### Option 1 is to write a simple app
-
-If you like writing code or already have OAuth code that you can repurpose, then all you need to do is register your app.
-
-1. Go to [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and click **Add an app**.  
-2. Enter an app name like Bing Ads Scripts. (Don't check Guided setup.)
-3. Click **Create** and note your application ID (client ID).  
-4. Click **Add Platform** and then **Native Application**.
-5. Under **Microsoft Graph delegated permissions**, click **Add** and select Files.Read and offline_access.  
-6. Click **Save**.  
-
-
-If you want to write code from scratch, see the Code Grant Flow process outlined in [Authentication with OAuth](/bingads/guides/authentication-oauth#authorizationcode). Note that for the step that gets the grant code, set the &scope query parameter to 'file.read offline_access'. For an example of a simple console app that gets OAuth tokens, see [OAuth C# Example](../../hotel-service/code-example-oauth.md). 
-
-After creating your app, you'll run it once to get the refresh token. Copy and paste the refresh token into your script to get the access token. The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run your app again.
-
-
-### Option 2 is to run the following PowerShell script
-
-If writing a simple app isn't an option, here's a PowerShell script you can run.
 
 ```powershell
 $clientId = "your application ID goes here"
@@ -205,6 +185,6 @@ function main() {
 
 
 
-### Parse the spreadsheet
+### Parse the CSV file
 
 There's no built-in CSV parsing tool, so you'll need to write your own or find one online. For example, a quick search online found [this](https://stackoverflow.com/a/14991797) one on Stack Overflow. If you find one online make sure it has no use restrictions. 
