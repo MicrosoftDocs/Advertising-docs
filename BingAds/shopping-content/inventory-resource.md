@@ -40,7 +40,6 @@ The endpoints may include the following query parameters.
 
 |Parameter|Description|
 |---------|-----------|
-|<a name="bmccatalogid"/>bmc-catalog-id|Optional. Use to specify the catalog to update.<br/><br/>Use this parameter if your store contains multiple catalogs. If you don't specify this parameter, the updates occur in the store's default catalog. 
 |<a name="dryrun"/>dry-run|Optional. Use when debugging your application to test calls. Calls that include this parameter won't affect production data. If an error occurs, the response contains any errors that the call normally generates except secondary error messages such as data quality, editorial issues, and database-related validations. For more information about testing your application, see [Sandbox](../shopping-content/test-code-sandbox.md). 
 
 ## <a name="headers"/> Headers
@@ -78,7 +77,7 @@ Defines the list of products to update in a batch.
 
 |Name|Value|Type
 |----|-----|----
-|entries|An array of products to update in a batch.<br/><br/>The maximum number of products that you can specify is 12,000. However, the maximum request size is 4 MB, so the actual number of products depends on the number of product attributes that you include and whether you compress the data. For example, if you compress the data you may be able to specify 12,000 items, but if you don't, you may be able to specify only 2,000 items.|[Entry](#entry)[]
+|entries|A list of products to update in a batch. The maximum number of products that you can specify is 400.|[Entry](#entry)[]
 
 ### <a name="batchentryerror"/>BatchEntryError
 
@@ -133,7 +132,7 @@ Defines an entry in a batch request.
 |batchId|A user-defined ID that uniquely identifies this entry in the batch request. For example, if the batch contains 10 entries, you can assign them IDs 1 through 10.|Unsigned Integer
 |errors|An error object that contains a list of validation errors that occurred. The response includes this field only when an error occurs.|[BatchEntryError](#batchentryerror)
 |inventory|The updated price and availability.|[Product](#product)
-|merchantId|The Merchant Center store ID.|Unsigned Long
+|merchantId|The Merchant Center store ID. Because the URL include the store ID, Bing ignores this field.|Unsigned Long
 |productId|The fully qualified product ID (for example, Online:en:US:Sku123) of the product to update. Do not include multiple entries with the same product ID.|String
 |storeCode|The code that identifies the store to update. Set to online to update price and availability of products in the online store.|String
 
