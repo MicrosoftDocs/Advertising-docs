@@ -10,7 +10,7 @@ ms.author: "scottwhi"
 ---
 
 > [!NOTE]
-> The Inventory API is available to close pilot participants only. The API and documentation are subject to change.
+> The Inventory API is available to closed pilot participants only. The API and documentation are subject to change.
 
 
 # Inventory resource
@@ -29,10 +29,10 @@ You may use the above Base URI or the Tenant URL shown under **Store settings** 
 
 To create the endpoints used to update your product offerings, append the appropriate template to the base URI.
 
-|Template|HTTP Verb|Description|Resource
-|--------|---------|-----------|--------
-|`{bmcMerchantId}/inventory/batch`|POST|Use to perform multiple product pricing updates in a single request.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.|Request: [Batch](#batch)<br>Response: [Batch](#batch) 
-|`{bmcMerchantId}/inventory/{storeCode}/products/{productUniqueId}`|POST|Use to update pricing and availability of a single product.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.<br/><br/>Set `{storeCode}` to online.<br/><br/>Set `{productUniqueId}` to the fully qualified product [ID](#productid) (for example, Online:en:US:Sku123).|Request: [Product](#product)<br>Response: [Product](#product)
+|Template|HTTP Verb|Description
+|--------|---------|-----------
+|{bmcMerchantId}/inventory/batch|POST|Use to perform multiple product pricing updates in a single request.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.<br/><br/>Request object: [Batch](#batch)<br>Response object: [Batch](#batch) 
+|{bmcMerchantId}/inventory/{storeCode}/products/{productUniqueId}|POST|Use to update pricing and availability of a single product.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.<br/><br/>Set `{storeCode}` to online.<br/><br/>Set `{productUniqueId}` to the fully qualified product [ID](#productid) (for example, Online:en:US:Sku123).<br/><br/>Request object: [Product](#product)<br>Response object: [Product](#product)
 
 ## <a name="queryparameters"/> Query parameters
 
@@ -40,7 +40,7 @@ The endpoints may include the following query parameters.
 
 |Parameter|Description|
 |---------|-----------|
-|<a name="bmccatalogid"/>bmc-catalog-id|Optional. Use to specify the catalog to update.<br/><br/>Use this parameter if your store contains multiple catalogs. If you do not specify this parameter, the products are updated in the store's default catalog. 
+|<a name="bmccatalogid"/>bmc-catalog-id|Optional. Use to specify the catalog to update.<br/><br/>Use this parameter if your store contains multiple catalogs. If you don't specify this parameter, the updates occur in the store's default catalog. 
 |<a name="dryrun"/>dry-run|Optional. Use when debugging your application to test calls. Calls that include this parameter won't affect production data. If an error occurs, the response contains any errors that the call normally generates except secondary error messages such as data quality, editorial issues, and database-related validations. For more information about testing your application, see [Sandbox](../shopping-content/test-code-sandbox.md). 
 
 ## <a name="headers"/> Headers
@@ -50,7 +50,7 @@ The following are the request and response headers.
 |Header|Description|
 |---------|---------------|
 |<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth access token. For information about getting an access token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).
-|Content-Type|Request and response header.<br/><br/>The type of content in the body of the request or response. Set to `application/json`.
+|Content-Type|Request and response header.<br/><br/>The type of content in the body of the request or response. Set to *application/json*.
 |<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any account that you manage on behalf of the customer specified in the `CustomerId` header. It doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
 |<a name="customerid"/> CustomerId|Request header.<br/><br/>The customer ID of the customer whose store you manage. Specify this header only if you manage the store on behalf of the customer. If you set this header, you must also set the `CustomerAccountId`  header.  
 |<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer token. Each request must include this header. For information about getting a token, see [Do you have your Bing Ads credentials and developer token?](../shopping-content/get-started.md#credentials)
@@ -143,10 +143,10 @@ Defines a product.
 
 |Property|Description|Type|Required
 |----|-----|----|-
-|<a name="availability" />availability|The product's availability. TPossible values:<br/><br/><ul><li>in stock</li><li>out of stock</li><li>preorder</li></ul>|String|Yes
-|kind|The object's type. Set to `content#inventory`.|String|No
-|<a name="price" />price|The product's new price. Specify the price in the currency of the target country. For information about whether to include tax in the price, see [Bing Merchant Center catalog tax policy](http://help.bingads.microsoft.com/#apex/3/en/56731/1).<br/><br/>The price must match the price shown on the product's webpage, and must be in the range 0.01 (1 cent) through 10000000.00 (10 million). However, if the following conditions are met, you may set the price to 0.0 (zero).<br/><br/><ol><li>The [googleProductCategory](#productcategory) field is set to one of the following categories:<ul><li>Electronics > Communications > Telephony > Mobile Phones</li><li>Electronics > Computers > Tablet Computers</li></ul><li>The [title](#title) field contains one of the following keywords:<ul><li>contract</li><li>installment</li><li>lease</li><li>payment</li></ul>The above keywords are shown in English; however, the title and keyword must be in the language of the specified market.<br/><br/>Typically, the title will contain phrasing such as "... with installment plan" or "... with contract only". The *contract* keyword may be used in all markets; however, *installment*, *payment*, and *lease* may be used only in the US market.</li></ol>|[ProductPrice](#productprice)|Yes
-|<a name="saleprice" />salePrice|The product's sale price. The sale price must be in the range 0.01 (1 cent) through 10000000.00 (10 million).<br/><br/>For sale items, set both the sale price and sale effective date (see `salePriceEffectiveDate`). If you set the sale price but not the sale price effective date, the sale price will continue to be used until the product expires or you set an effective date.<br/><br/>If the following conditions are met, you may set the sale price to 0.0 (zero).<ol><li>The [googleProductCategory](#productcategory) field is set to one of the following categories:<ul><li>Electronics > Communications > Telephony > Mobile Phones</li><li>Electronics > Computers > Tablet Computers</li></ul></li><li>The [title](#title) field contains one of the following keywords:<ul><li>contract</li><li>installment</li><li>lease</li><li>payment</li></ul>The above keywords are shown in English; however, the title and keyword must be in the language of the specified market.<br/><br/>Typically, the title will contain phrasing such as "... with installment plan" or "... with contract only". The *contract* keyword may be used in all markets; however, *installment*, *payment*, and *lease* may be used only in the US market.</li></ol>|[ProductPrice](#productprice)<br/><br/>If not specified, the current sale's price is removed.|No
+|<a name="availability" />availability|The product's availability. Possible values:<ul><li>in stock</li><li>out of stock</li><li>preorder</li></ul>|String|Yes
+|kind|The object's type. Set to *content#inventory*.|String|No
+|<a name="price" />price|The product's new price. Specify the price in the currency of the target country. For information about whether to include tax in the price, see [Bing Merchant Center catalog tax policy](http://help.bingads.microsoft.com/#apex/3/en/56731/1).<br/><br/>The price must match the price shown on the product's webpage, and must be in the range 0.01 (1 cent) through 10000000.00 (10 million). However, if the following conditions are met, you may set the price to 0.0 (zero).<ol><li>The product's `googleProductCategory` field is set to one of the following categories:<ul><li>Electronics > Communications > Telephony > Mobile Phones</li><li>Electronics > Computers > Tablet Computers</li></ul><li>The product's `title` field contains one of the following keywords:<ul><li>contract</li><li>installment</li><li>lease</li><li>payment</li></ul>The above keywords are shown in English; however, the title and keyword must be in the language of the specified market.<br/><br/>Typically, the title will contain phrasing such as "... with installment plan" or "... with contract only". The *contract* keyword may be used in all markets; however, *installment*, *payment*, and *lease* may be used only in the US market.</li></ol>|[ProductPrice](#productprice)|Yes
+|<a name="saleprice" />salePrice|The product's sale price. For sale items, set both the sale price and sale effective date (see `salePriceEffectiveDate`). If you set the sale price but not the sale price effective date, the sale price will continue to be used until the product expires or you set an effective date.<br/><br/>The sale price must be in the range 0.01 (1 cent) through 10000000.00 (10 million). However, if the following conditions are met, you may set the sale price to 0.0 (zero).<ol><li>The [googleProductCategory](#productcategory) field is set to one of the following categories:<ul><li>Electronics > Communications > Telephony > Mobile Phones</li><li>Electronics > Computers > Tablet Computers</li></ul></li><li>The [title](#title) field contains one of the following keywords:<ul><li>contract</li><li>installment</li><li>lease</li><li>payment</li></ul>The above keywords are shown in English; however, the title and keyword must be in the language of the specified market.<br/><br/>Typically, the title will contain phrasing such as "... with installment plan" or "... with contract only". The *contract* keyword may be used in all markets; however, *installment*, *payment*, and *lease* may be used only in the US market.</li></ol>If not specified, the current sale's price is removed.|[ProductPrice](#productprice)|No
 |<a name="salepricedate" />salePriceEffectiveDate|The sale's UTC start and end date. Specify a date only if you set `salePrice`.<br/><br/>Specify the begin and end dates in [ISO 8601](http://www.iso.org/iso/iso8601) format. For example, 2016-04-05T08:00-08:00/2016-04-10T19:30-08:00 (use a slash ('/') to separate the start and end dates). For more information, see `salePrice`.<br/><br/>If not specified, the current sale's date is removed.|String|No
 
 	
@@ -156,7 +156,7 @@ Defines a product's price or sale price.
 
 |Name|Value|Type
 |----|-----|----
-|currency|The currency that the price is stated in. Possible values:<br/><br/><ul><li>AUD (Australian dollar)</li><li>CAD (Canadian dollar)</li><li>EUR (Euro)</li><li>GBP (Great Britain pound)</li><li>INR (Indian rupee)</li><li>USD (United States dollar)</li></ul>|String
+|currency|The currency that the price is stated in. Possible values:<ul><li>AUD (Australian dollar)</li><li>CAD (Canadian dollar)</li><li>EUR (Euro)</li><li>GBP (Great Britain pound)</li><li>INR (Indian rupee)</li><li>USD (United States dollar)</li></ul>|String
 |value|The product's price.|Double
 
 
