@@ -11,6 +11,10 @@ ms.author: "scottwhi"
 This topic describes recent changes made to Version 9.1 of the Content API.
 
 
+## November 9 2018
+
+Added the [Inventory](inventory-resource.md) resource that you use to update a product's price and availability. The resource is available to close pilot participants only.
+
 ## August 1 2018
 
 This release includes the following changes:
@@ -35,7 +39,7 @@ This release includes the following changes:
   
   If the manufacturer assigns values for these fields, you must specify them in your offer. If you do not, BMC will accept the offer for now but will return a warning message in the response (see [warnings](~/shopping-content/products-resource.md#warnings)). You should update your code at your earliest convenience to begin providing this information.  
   
-- If you do not specify the `brand`, `gtin`, or `mpn` fields, you must set the [identifierExists](~/shopping-content/products-resource.md#identifierexists) field to **false**. It's default is **true**.  
+- If you do not specify the `brand`, `gtin`, or `mpn` fields, you must set the [identifierExists](~/shopping-content/products-resource.md#identifierexists) field to **false**. Its default is **true**.  
   
 - Added the `warnings` field to the [BatchItemError](~/shopping-content/products-resource.md#batchitemerror) object.
 
@@ -65,7 +69,7 @@ For information about the changes to the Content API  services included in this 
 ### <a name="catalogsmanagement"></a>Catalogs Management Resource
 This release introduces the `catalogs` resource.
 
-For an overview and reference information about the `catalogs` resource see the topic [Catalogs Management Resource](../shopping-content/catalogs-resource.md). Code examples will be available in a forthcoming release.
+For an overview and reference information about the `catalogs` resource, see the topic [Catalogs Management Resource](../shopping-content/catalogs-resource.md). Code examples will be available in a forthcoming release.
 
 ## <a name="october2015"></a>October 2015
 For information about the changes to the Content API  services included in this release, see the following sections.
@@ -77,9 +81,9 @@ For information about the changes to the Content API  services included in this 
 ### <a name="staturesource-october2015"></a>Status Resource
 This release introduces the `status` resource.
 
-For an overview and reference information about the `status` resource see the topic [Catalog Status Resource](../shopping-content/status-resource.md).
+For an overview and reference information about the `status` resource, see the topic [Catalog Status Resource](../shopping-content/status-resource.md).
 
-For an example of using the `status` resource in code see the topic [Catalog Status Resource Code Examples](../shopping-content/code-examples.md#catalog).
+For an example of using the `status` resource in code, see the topic [Catalog Status Resource Code Examples](../shopping-content/code-examples.md#catalog).
 
 ### <a name="docreorg-october2015"></a>Documentation Reorganization
 The Content API was previously documented as "Version 1" and "Version 2". To make the Bing Ads API documentation consistent, the version number used in documentation has been changed to use the version in the URI.

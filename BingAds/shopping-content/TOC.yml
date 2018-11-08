@@ -40,13 +40,15 @@
   - name: Error Response Example
     href: ../shopping-content/error-response-example.md
 - name: API Reference
-  href: ../shopping-content/reference.md
+  href: reference.md
   displayName: rest
   items:
-  - name: Catalogs Resource
-    href: ../shopping-content/catalogs-resource.md
-  - name: Products Resource
-    href: ../shopping-content/products-resource.md
-  - name: Status Resource
-    href: ../shopping-content/status-resource.md
+  - name: Catalogs resource
+    href: catalogs-resource.md
+  - name: Products resource
+    href: products-resource.md
+  - name: Inventory resource
+    href: inventory-resource.md
+  - name: Status resource
+    href: status-resource.md
 
