@@ -15,7 +15,7 @@ ms.author: "scottwhi"
 
 # Manage product pricing and availability
 
-If all you need to do is update the pricing and availability of a product in your Bing Merchant Center (BMC) store, you should use the [Inventory](inventory-resource.md) resource instead of the [Product](product-resource.md) resource. With the Product resource, you must provide the full details of the product but the Inventory resource lets you just specify price and availability.
+If all you need to do is update the pricing and availability of a product in your Bing Merchant Center (BMC) store, you should use the [Inventory](inventory-resource.md) resource instead of the [Product](products-resource.md) resource. With the Product resource, you must provide the full details of the product but the Inventory resource lets you just specify price and availability.
 
 ## Updating a single product
 
