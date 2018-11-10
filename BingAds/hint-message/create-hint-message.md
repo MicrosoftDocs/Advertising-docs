@@ -68,7 +68,7 @@ When you get the Query message, your response should contain a [Transaction](../
   </Result>
 ```
 
-If the above hint specfied two properties, the transaction message would contain two \<Result\> elements (one for each property).
+If the above hint specified two properties, the transaction message would contain two \<Result\> elements (one for each property).
 
 <a name="checkindateranges" />
 
