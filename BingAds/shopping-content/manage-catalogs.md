@@ -105,3 +105,5 @@ The body of the request is a [Catalog](../shopping-content/catalogs-resource.md#
 
 Send an HTTP PUT request to the resulting URL. If the catalog is updated, the response contains the updated [Catalog](../shopping-content/catalogs-resource.md#catalog) object. 
 
+You may not update the default catalog. If you try to update the default catalog, the request fails.
+

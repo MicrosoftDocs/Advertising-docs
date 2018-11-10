@@ -11,7 +11,9 @@ ms.author: "scottwhi"
 dev_langs: 
   - csharp
 ---
+
 # Authenticating Microsoft Account Credentials Code Example
+
 If your Bing Ads users use a Microsoft account, you will use OAuth to authenticate them. For information about using OAuth, see [Authentication with OAuth](/bingads/guides/authentication-oauth). If you're currently using the [Bing Ads SDK](/bingads/guides/client-libraries) for .NET to authenticate the user's Microsoft account credentials, you may continue to do so. 
 
 The following examples show how to get an OAuth token that you use to set the AuthenticationToken header to. The example is broken out into two part: the first example shows a simple client that calls the [second example](#secondexample) which implements the code grant flow process. 
@@ -31,7 +33,7 @@ namespace Content
 {
     class Program
     {
-        // The client ID that you were given when you
+        // The application ID that you were given when you
         // registered your application. This is for a 
         // desktop app so there's not client secret.
 
@@ -54,7 +56,7 @@ namespace Content
                 // TODO: Add logic to get the logged on user's refresh token 
                 // from secured storage. 
                 
-                _tokens = GetOauthTokens(_storedRefreshToken);
+                _tokens = GetOauthTokens(_storedRefreshToken, _clientId);
 
 
                 Console.WriteLine("access token:" + _tokens.AccessToken.Substring(0, 15) + "...");
@@ -71,9 +73,9 @@ namespace Content
         // Gets the OAuth tokens. If the refresh token doesn't exist, get 
         // the user's consent and a new access and refresh token.
 
-        private static CodeGrantOauth GetOauthTokens(string refreshToken)
+        private static CodeGrantOauth GetOauthTokens(string refreshToken, string clientId)
         {
-            CodeGrantOauth auth = new CodeGrantOauth(_clientId); 
+            CodeGrantOauth auth = new CodeGrantOauth(clientId); 
 
             if (string.IsNullOrEmpty(refreshToken))
             {
@@ -88,15 +90,22 @@ namespace Content
 
                 if (!string.IsNullOrEmpty(auth.Error))
                 {
-                    auth = GetOauthTokens(null);
+                    auth = GetOauthTokens(null, clientId);
                 }
             }
 
             // TODO: Store the new refresh token in secured storage
             // for the logged on user.
 
-            _storedRefreshToken = auth.RefreshToken;
-            _tokenExpiration = DateTime.Now.AddSeconds(auth.Expiration);
+            if (!string.IsNullOrEmpty(auth.Error))
+            {
+                throw new Exception(auth.Error);
+            }
+            else
+            {
+                _storedRefreshToken = auth.RefreshToken;
+                _tokenExpiration = DateTime.Now.AddSeconds(auth.Expiration);
+            }
 
             return auth;
         }

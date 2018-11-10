@@ -25,11 +25,11 @@ To create the endpoints that you use to manage your catalogs, append the appropr
 
 |Template|HTTP Verb|Description|Resource
 |--------|---------|-----------|--------
-|`{bmcMerchantId}/catalogs`|POST|Use to add a catalog to the store. To add a catalog, its name must be unique. You may add a maximum of 100 catalogs to a store.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.|Request: [Catalog](#catalog)<br>Response: [Catalog](#catalog) 
-|`{bmcMerchantId}/catalogs`|PUT|Use to update a catalog in the store. You may update only the `name` and `isPublishingEnabled` fields, and you must specify both.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.|Request: [Catalog](#catalog)<br>Response: [Catalog](#catalog) 
-|`{bmcMerchantId}/catalogs/{catalogId}`|DELETE|Use to delete a catalog from the store.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.<br/><br/>Set `{catalogId}` to the catalog's ID.|Request: N/A<br>Response: N/A
-|`{bmcMerchantId}/catalogs/{catalogId}`|GET|Use to get a catalog from the store.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.<br/><br/>Set `{catalogId}` to the catalog's ID.|Request: N/A<br>Response: [Catalog](#catalog) 
-|`{bmcMerchantId}/catalogs`|GET|Use to get a list of catalogs from the store.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.|Request: N/A<br>Response: [Catalogs](#catalogs)
+|{bmcMerchantId}/catalogs|POST|Use to add a catalog to the store. To add a catalog, its name must be unique. You may add a maximum of 100 catalogs to a store.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.|Request: [Catalog](#catalog)<br>Response: [Catalog](#catalog) 
+|{bmcMerchantId}/catalogs/{catalogId}|PUT|Use to update a catalog in the store. You cannot update the default catalog. The only fields you may update are the `name` and `isPublishingEnabled` fields, and you must specify both.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.|Request: [Catalog](#catalog)<br>Response: [Catalog](#catalog) 
+|{bmcMerchantId}/catalogs/{catalogId}|DELETE|Use to delete a catalog from the store.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.<br/><br/>Set `{catalogId}` to the catalog's ID.|Request: N/A<br>Response: N/A
+|{bmcMerchantId}/catalogs/{catalogId}|GET|Use to get a catalog from the store.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.<br/><br/>Set `{catalogId}` to the catalog's ID.|Request: N/A<br>Response: [Catalog](#catalog) 
+|{bmcMerchantId}/catalogs|GET|Use to get a list of catalogs from the store.<br/><br/>Set `{bmcMerchantId}` to the BMC store ID.|Request: N/A<br>Response: [Catalogs](#catalogs)
 
 
 ## <a name="queryparameters"/> Query parameters

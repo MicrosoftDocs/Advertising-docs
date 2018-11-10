@@ -13,7 +13,7 @@ This topic describes recent changes made to Version 9.1 of the Content API.
 
 ## November 9 2018
 
-Added the [Inventory](inventory-resource.md) resource that you use to update a product's price and availability. The resource is available to closed pilot participants only.
+Added the [Inventory](inventory-resource.md) resource that you use to update a product's price and availability. The resource is available to closed pilot participants only. [Read more](manage-product-pricing.md).
 
 ## August 1 2018
 

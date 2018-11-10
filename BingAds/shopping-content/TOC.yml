@@ -1,44 +1,50 @@
 - name: Overview
-  href: ../shopping-content/index.md
-- name: Release Notes
-  href: ../shopping-content/release-notes.md
-- name: Get Started
-  href: ../shopping-content/get-started.md
-- name: Testing your Code in Sandbox
-  href: ../shopping-content/test-code-sandbox.md
-- name: API Best Practices
-  href: ../shopping-content/api-best-practices.md
-- name: Can I Use the API and FTP?
-  href: ../shopping-content/can-use-api-ftp.md
-- name: Managing your Products
-  href: ../shopping-content/manage-products.md
-- name: How Do I Get the Status of Product Offers?
-  href: ../shopping-content/how-get-status-product-offers.md
-- name: Managing your Catalogs
-  href: ../shopping-content/manage-catalogs.md
+  href: index.md
+- name: Release notes
+  href: release-notes.md
+- name: Get started
+  href: get-started.md
+- name: Testing your code in sandbox
+  href: test-code-sandbox.md
+- name: API best practices
+  href: api-best-practices.md
+- name: Can I use the API and FTP?
+  href: can-use-api-ftp.md
+- name: Managing your products
+  href: manage-products.md
+- name: Updating product pricing and availability
+  href: manage-products.md
+- name: How do I get the status of product offers?
+  href: how-get-status-product-offers.md
+- name: Managing your catalogs
+  href: manage-catalogs.md
 - name: Code Examples
-  href: ../shopping-content/code-examples.md
+  href: code-examples.md
   displayName: .net c# csharp java
   items:
-  - name: Authenticating Microsoft Account Credentials
-    href: ../shopping-content/code-example-authentication-oauth.md
-  - name: Creating a Batch Request
-    href: ../shopping-content/code-example-create-batch-request.md
-  - name: Managing Products
-    href: ../shopping-content/code-example-manage-products.md
-  - name: Managing Catalogs
-    href: ../shopping-content/code-example-manage-catalogs.md
-  - name: Downloading a Catalog Status Report
-    href: ../shopping-content/code-example-download-catalog-status-report.md
-- name: JSON and XML Examples
-  href: ../shopping-content/json-xml-examples.md
+  - name: Authenticating Microsoft Account credentials
+    href: code-example-authentication-oauth.md
+  - name: Creating a batch request
+    href: code-example-create-batch-request.md
+  - name: Managing products
+    href: code-example-manage-products.md
+  - name: Single product price update
+    href: code-example-single-product-update.md
+  - name: Multi-product price update
+    href: code-example-batch-product-update.md
+  - name: Managing catalogs
+    href: code-example-manage-catalogs.md
+  - name: Downloading a catalog status report
+    href: code-example-download-catalog-status-report.md
+- name: JSON and XML examples
+  href: json-xml-examples.md
   items:
-  - name: Example JSON Product Offer
-    href: ../shopping-content/example-json-product-offer.md
-  - name: Example XML Product Offer
-    href: ../shopping-content/example-xml-product-offer.md
-  - name: Error Response Example
-    href: ../shopping-content/error-response-example.md
+  - name: Example JSON product offer
+    href: example-json-product-offer.md
+  - name: Example XML product offer
+    href: example-xml-product-offer.md
+  - name: Error response example
+    href: error-response-example.md
 - name: API Reference
   href: reference.md
   displayName: rest
