@@ -13,22 +13,22 @@ ms.author: "scottwhi"
 > The Inventory API is available to closed pilot participants only. The API and documentation are subject to change.
 
 
-# Manage product pricing and availability
+# Updating product pricing and availability
 
-If all you need to do is update the pricing and availability of a product in your Bing Merchant Center (BMC) store, you should use the [Inventory](inventory-resource.md) resource instead of the [Product](products-resource.md) resource. With the Product resource, you must provide the full details of the product but the Inventory resource lets you just specify price and availability.
+If all you need to do is update the pricing and availability of a product in your Bing Merchant Center (BMC) store, you should use the [Inventory](inventory-resource.md) resource instead of the [Product](products-resource.md) resource. With the Product resource, you must provide the full details of the product but the Inventory resource lets you specify just price and availability.
 
 ## Updating a single product
 
 To update a single product, use the `/bmc/{bmcMerchantId}/inventory/{storeCode}/products/{productUniqueId}` template in an HTTP POST request. Set {bmcMerchantId} to your store ID, {storeCode} to *online*, and {productUniqueId} to the product's fully qualified ID.
 
-The request's body is a [Product](inventory-resource.md#product) object that includes only the following fields:
+The request's body is a [Product](inventory-resource.md#product) object that includes the following fields only:
 
 - price
 - availability
 - salePrice
 - salePriceEffectiveDate
 
-The `price` and `availability` fields are required; the call fails if you don't specify both fields. The `salePrice` and `salePriceEffectiveDate` are optional. If you don't specify them, the product's current sale price and effective date values are removed.
+The `price` and `availability` fields are required; the call fails if you don't specify both fields. The `salePrice` and `salePriceEffectiveDate` are optional. If you don't specify them, the product's current sale price and effective date values are removed from the offer.
 
 The following shows an example POST request.
 
@@ -49,7 +49,7 @@ Content-Length: 73
 }
 ```
 
-If the request succeeds, it returns status code 200 and the URI of the updated product. 
+If the request succeeds, it returns status code 200 and the URI of the updated product in the Location header. 
 
 ```
 HTTP/1.1 200 OK
@@ -64,7 +64,7 @@ Content-Length: 46
 }
 ```
 
-And if the response fails, the request returns status code 400 and the body contains an [error response](inventory-resource.md#errorresponse) object that identifies the issue.
+And if the response fails, the request returns status code 400; the body contains an [error response](inventory-resource.md#errorresponse) object that identifies the issue.
 
 ```
 HTTP/1.1 400 Bad Request
@@ -103,7 +103,7 @@ The request's body is a [Batch](inventory-resource.md#batch) object that may con
 - salePrice
 - salePriceEffectiveDate
 
-The `price` and `availability` fields are required; the call fails if you don't specify both fields. The `salePrice` and `salePriceEffectiveDate` are optional. If you don't specify them, the product's current sale price and effective date values are removed.
+The `price` and `availability` fields are required; the call fails if you don't specify both fields. The `salePrice` and `salePriceEffectiveDate` are optional. If you don't specify them, the product's current sale price and effective date values are removed from the offer.
 
 The following shows an example POST request.
 

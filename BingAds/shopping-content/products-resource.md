@@ -104,7 +104,7 @@ Defines errors that occurred for an item during batch processing.
 |Name|Value|Type|XML element name
 |----|-----|----|--------
 |errors|A list of errors that occurred while processing the item.|[Error](#error)[]|\<errors\> 
-|code|The HTTP status code or the error.|String
+|code|The HTTP status code of the error.|String
 |message|A message associated with the error.|String
  
 
