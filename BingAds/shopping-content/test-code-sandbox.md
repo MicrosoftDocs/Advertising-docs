@@ -11,7 +11,7 @@ ms.author: "scottwhi"
 # Testing your Code in Sandbox
 Bing Ads does not provide a sandbox for the Content API where you can test your application before you deploy it to the production environment. 
 
-However, you can use the following options to test your application in production without affecting live data. These options apply only to the [Products](../shopping-content/products-resource.md) resource and not to the [Catalogs](../shopping-content/catalogs-resource.md) resource.
+However, you can use the following options to test your application in production without affecting live data. These options apply only to the [Product](products-resource.md) and [Inventory](inventory-resource.md) resources and not to the [Catalog](../shopping-content/catalogs-resource.md) resource.
 
 ### Using dry-run query parameter
 
@@ -39,3 +39,6 @@ As with using the `dry-run` query parameter, secondary error messages such as da
 
 > [!CAUTION]
 > Products are unique within a store, not a catalog. If you have a product with the same [id](../shopping-content/products-resource.md#productid) in more than one catalog, then any changes that you make to the product in the disabled catalog will also occur in the enabled catalogs. This means that even with publishing disabled in one catalog, another catalog may serve ads for that product. 
+
+> [!NOTE]
+> You may not update a store's default catalog. If you try to update the default catalog, the request fails.
