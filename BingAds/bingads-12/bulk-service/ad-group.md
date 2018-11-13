@@ -18,7 +18,7 @@ The following Bulk CSV example would add a new ad group if the correct campaign 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Network Distribution,Ad Rotation,Cpc Bid,Language,Bid Adjustment,Name,Tracking Template,Custom Parameter,Bid Strategy Type,Target Setting
 Format Version,,,,,,,,,,,,,,,6,,,,
-Ad Group,Active,,-111,ParentCampaignNameGoesHere,Women's Red Shoe Sale,ClientIdGoesHere,,11/5/2017,12/31/2018,OwnedAndOperatedAndSyndicatedSearch,RotateAdsEvenly,0.1,English,10,,http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl},{_promoCode}=PROMO1; {_season}=summer,ManualCpc,Audience
+Ad Group,Active,,-111,ParentCampaignNameGoesHere,Women's Red Shoe Sale,ClientIdGoesHere,,11/12/2018,12/31/2019,OwnedAndOperatedAndSyndicatedSearch,RotateAdsEvenly,0.1,English,10,,http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl},{_promoCode}=PROMO1; {_season}=summer,ManualCpc,Audience
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroup* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -304,7 +304,7 @@ If you do not specify an end date, the ads will not expire. The end date can be 
 The end date is inclusive. For example, if you set *End Date* to 12/31/2020, the ads in the ad group will expire at 11:59 PM on 12/31/2020. The time is based on the time zone that you specify at the campaign level.
 
 **Add:** Optional. To set no end date when adding an ad group, do not set this field.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete the existing end date setting, and effectively set no end date when updating an ad group, set this field to a date equal to or later than January 2, 2050. When you retrieve the ad group next time, this field will be empty i.e. it will not be set to January 2, 2050.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete the current end date and effectively set no end date, set this field to the "delete_value" string. When you retrieve the ad group next time, this field will not be set.    
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -382,7 +382,7 @@ For ad groups in Dynamic Search Ads campaigns, only *English* is supported.
 For ad groups in Audience campaigns, ad group level language is not supported, and you must set the [Language](campaign.md#language) field of the ad group's [Campaign](#campaign.md) to *All*.
 
 **Add:** Optional if the campaign has one or more languages set, and otherwise the language is required for most campaign types. You are not allowed to set this element for ad groups in Audience campaigns.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove the language and defer to the campaign level languages, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.   
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove the language and defer to the campaign level languages, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. The ad group language cannot be removed until campaign language updates have been processed, which could take up to 12 hours after the campaign languages have been set for the first time. The 12 hour wait time is expected to be removed during Q1 calendar year 2019, and you will then be able to remove ad groups immediately.   
 **Delete:** Read-only  
 
 ## <a name="maximumbid"></a>Maximum Bid
@@ -456,6 +456,26 @@ If you specify a time period that spans multiple days, the quality score is the 
 **Update:** Read-only  
 **Delete:** Read-only  
 
+## <a name="startdate"></a>Start Date
+The date that the ads in the ad group can begin serving; otherwise, the service can begin serving the ads in the ad group the day that the ad group becomes active.
+
+The start date cannot be updated after the ad group is submitted.
+
+The start date is inclusive. For example, if you set *Start Date* to 11/5/2017, the ads in the ad group will start at 12:00 AM on 11/5/2017. The time is based on the time zone that you specify at the campaign level.
+
+**Add:** Optional. If you do not set the start date, then it will default to today's date and the service can begin serving the ads in the ad group as soon as the ad group status is active.  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Delete:** Read-only  
+
+## <a name="status"></a>Status
+The status of the ad group.
+
+Possible values are *Active*, *Deleted*, *Expired*, and *Paused*. The *Expired* status is read-only.
+
+**Add:** Optional. The default value is *Paused*.  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Delete:** Required. The Status must be set to Deleted.
+
 ## <a name="targetsetting"></a>Target Setting
 The target settings that are applicable for criterion types e.g., audiences that are associated with this ad group. 
 
@@ -484,26 +504,6 @@ An entity such as a remarketing list can be associated with multiple ad groups, 
 **Add:** Optional. If the criterion type group name is excluded from this field, then the default setting is effectively "bid only".  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all criterion type group names, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of criterion type group names, specify the criterion type group names that you want to keep and omit any that you do not want to keep. The new set of criterion type group names will replace any previous criterion groups that were set for the ad group.    
 **Delete:** Read-only  
-
-## <a name="startdate"></a>Start Date
-The date that the ads in the ad group can begin serving; otherwise, the service can begin serving the ads in the ad group the day that the ad group becomes active.
-
-The start date cannot be updated after the ad group is submitted.
-
-The start date is inclusive. For example, if you set *Start Date* to 11/5/2017, the ads in the ad group will start at 12:00 AM on 11/5/2017. The time is based on the time zone that you specify at the campaign level.
-
-**Add:** Optional. If you do not set the start date, then it will default to today's date and the service can begin serving the ads in the ad group as soon as the ad group status is active.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
-**Delete:** Read-only  
-
-## <a name="status"></a>Status
-The status of the ad group.
-
-Possible values are *Active*, *Deleted*, *Expired*, and *Paused*. The *Expired* status is read-only.
-
-**Add:** Optional. The default value is *Paused*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
-**Delete:** Required. The Status must be set to Deleted.
 
 ## <a name="trackingtemplate"></a>Tracking Template
 The tracking template to use as a default for all URLs in your ad group.

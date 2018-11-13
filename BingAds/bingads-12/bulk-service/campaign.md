@@ -157,6 +157,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Client Id](#clientid)|All|
 |[Country Code](#countrycode)|Shopping|
 |[Domain Language](#domainlanguage)|DynamicSearchAds|
+|[Experiment Id](#experimentid)|Search|
 |[Id](#id)|All|
 |[Keyword Relevance](#keywordrelevance)|All|
 |[Landing Page Relevance](#landingpagerelevance)|All|
@@ -245,7 +246,7 @@ For campaigns you can use any of the following bid strategy types.
 > [!TIP] 
 > You can set your campaign's bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
 
-**Add:** Optional. Until January 28th, 2019 if you do not set this field, then *ManualCpc* is used by default. From January 29th, 2019 onwards if you do not set this field, then *EnhancedCpc* will be used by default.
+**Add:** Optional. Until January 28th, 2019 if you do not set this field, then *ManualCpc* is used by default. From January 28th, 2019 onwards if you do not set this field, then *EnhancedCpc* will be used by default.
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.  If you update the bid strategy type, then any existing values in the *Bid Strategy MaxCpc* and *Bid Strategy TargetCpa* fields will be deleted.       
 **Delete:** Read-only  
 
@@ -374,6 +375,17 @@ Currently the only supported language code is *EN*.
 
 **Add:** Required if the *Campaign Type* field is set to *DynamicSearchAds*. You cannot include this column for other campaign types.  
 **Update:** Read-only. You cannot update the language.      
+**Delete:** Read-only  
+
+## <a name="experimentid"></a>Experiment Id
+The system generated identifier of the [Experiment](experiment.md).
+
+This field is only set for experiment campaigns i.e., campaigns that have been created for A/B testing based on another Search campaign. Base campaigns will not contain an experiment ID. Likewise, after an experiment has been [Graduated](experiment.md#status) to an independent campaign, this field will be empty, even though the campaign was previously an experiment campaign. 
+
+With experiment campaigns you cannot update the [Budget](campaign.md#budget), [Budget Type](campaign.md#budgettype), or [Time Zone](campaign.md#timezone). The budget and time zone of an experiment campaign are always inherited from the base campaign settings. If you want to change an experiment's budget, you will need to change the base campaign's budget. The change in value will then be split based on your experiment [TrafficSplitPercent](#trafficsplitpercent) setting.
+
+**Add:** Read-only  
+**Update:** Read-only  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id

@@ -297,7 +297,9 @@ The `id` attribute is a unique Bing Ads identifier for the asset in a Bing Ads a
 The same asset can be used by multiple ads. For example if "Seamless Integration" is a text asset, it will have the same asset identifier across all ads in the same Bing Ads account. After you upload a text asset the result file will include the asset identifier e.g., `""id:""123`, whether the asset is new or already existed in the account's asset library. 
 
 ### <a name="description-pinnedfield"></a>pinnedField
-To pin an asset to a specific description position, set the `pinnedField` attribute to either "Description1", "Description2", or "Description3". Unless you have a specific requirement for a text asset, don't pin it and let Bing AI optimize the text placement. 
+To pin an asset to a specific description position, set the `pinnedField` attribute to either "Description1" or "Description2". Unless you have a specific requirement for a text asset, don't pin it and let Bing AI optimize the text placement. 
+
+At least one eligible text asset must be available for each description position, so you cannot pin all of the assets to the same position. For example you can have 3 text assets pinned to *Description1*, so long as you have at least one text asset in the responsive search ad's [Description](#description) list that is either not pinned, or pinned to *Description2*.
 
 When you download an asset that is not pinned, the `pinnedField` attribute is not returned.
 
@@ -459,6 +461,8 @@ The same asset can be used by multiple ads. For example if "Seamless Integration
 ### <a name="headline-pinnedfield"></a>pinnedField
 To pin an asset to a specific headline position, set the `pinnedField` string value to either "Headline1", "Headline2", or "Headline3". Unless you have a specific requirement for a text asset, don't pin it and let Bing AI optimize the text placement. 
 
+At least one eligible text asset must be available for each headline position, so you cannot pin all of the assets to the same position. For example you can have 3 text assets pinned to *Headline1* and 3 text assets pinned to *Headline2*, so long as you have at least one text asset in the responsive search ad's [Headline](#headline) list that is either not pinned, or pinned to *Headline3*.
+
 When you download an asset that is not pinned, the `pinnedField` attribute is not returned.
 
 ### <a name="headline-text"></a>text
@@ -535,7 +539,7 @@ The path can contain a countdown function. Regardless of the total length of all
 
 The path can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
 
-The maximum input length is 50 characters including dynamic text strings, and of those 50 no more than 15 final characters are allowed after substitution. The ad will fail to display if the length exceeds 15 characters after dynamic text substitution occurs. 
+The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 15 final characters are allowed after substitution. The ad will fail to display if the length exceeds 15 characters after dynamic text substitution occurs. 
 
 For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution. The ad will fail to display if the length exceeds 7 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 
@@ -556,7 +560,7 @@ The path can contain a countdown function. Regardless of the total length of all
 	
 The path can contain dynamic parameters such as {MatchType}. For a list of supported parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2).
 
-The maximum input length is 50 characters including dynamic text strings, and of those 50 no more than 15 final characters are allowed after substitution. The ad will fail to display if the length exceeds 15 characters after dynamic text substitution occurs. 
+The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 15 final characters are allowed after substitution. The ad will fail to display if the length exceeds 15 characters after dynamic text substitution occurs. 
 
 For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution. The ad will fail to display if the length exceeds 7 characters after dynamic text substitution occurs. The double-width characters are determined by the characters you use instead of the character set of the campaign or ad group language settings. Double-width characters include Korean, Japanese and Chinese languages characters as well as Emojis.
 

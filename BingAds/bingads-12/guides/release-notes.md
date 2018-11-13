@@ -12,7 +12,40 @@ For information about the changes to the Bing Ads Version 12 services for each m
 ## <a name="october2018"></a>October 2018
 See below for Bing Ads service updates during this calendar month. 
  
-- [Bing Ads Software Development Kit (SDK) Updates](#sdk-october)  
+- [Bing Ads Software Development Kit (SDK) Updates](#sdk-november2018)  
+- [New Report Columns](#reportcolumns-november2018)  
+
+### <a name="sdk-november2018"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.1), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.1), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.1), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.1) SDK version 12.0.1. 
+
+### <a name="reportcolumns-november2018"></a>New Report Columns
+The *AbsoluteTopImpressionSharePercent* and *ClickSharePercent* columns are added to the following reports. 
+- [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md) 
+- [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md) 
+- [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md) 
+- [ProductDimensionPerformanceReportColumn](../reporting-service/productdimensionperformancereportcolumn.md) 
+- [ProductPartitionPerformanceReportColumn](../reporting-service/productpartitionperformancereportcolumn.md) 
+
+The *AssistedClicks* and *AssistedImpressions* columns are added to the following reports. 
+- [ProductDimensionPerformanceReportColumn](../reporting-service/productdimensionperformancereportcolumn.md) 
+- [ProductPartitionPerformanceReportColumn](../reporting-service/productpartitionperformancereportcolumn.md) 
+- [ProductPartitionUnitPerformanceReportColumn](../reporting-service/productpartitionunitperformancereportcolumn.md) 
+- [ProductSearchQueryPerformanceReportColumn](../reporting-service/productsearchqueryperformancereportcolumn.md) 
+
+The *AdDescription2* column is added to the following reports. 
+- [AdDynamicTextPerformanceReportColumn](../reporting-service/addynamictextperformancereportcolumn.md) 
+- [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md) 
+
+The *TitlePart3* column is added to the following reports. 
+- [AdDynamicTextPerformanceReportColumn](../reporting-service/addynamictextperformancereportcolumn.md) 
+- [AdExtensionByAdReportColumn](../reporting-service/adextensionbyadreportcolumn.md) 
+- [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md) 
+
+
+## <a name="october2018"></a>October 2018
+See below for Bing Ads service updates during this calendar month. 
+ 
+- [Bing Ads Software Development Kit (SDK) Updates](#sdk-october2018)  
 - [Longer Expanded Text Ads](#expandedtextads-october2018)  
 - [Paging for Media Meta Data](#mediametadatapaging-october2018)  
 - [Dynamic Search Ads Source and Custom Label](#dsasource-october2018)  
@@ -22,9 +55,9 @@ See below for Bing Ads service updates during this calendar month.
 The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v11.12.7), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v11.12.7), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.11.12.7), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v11.12.7) SDK version 11.12.7. 
 
 ### <a name="expandedtextads-october2018"></a>Longer Expanded Text Ads
-For customers in pilot 510, the maximum length of the Expanded Text Ad Text field is increased from 80 to 90, or from 40 to 45 for double-width characters. 
+The maximum length of the Expanded Text Ad Text field is increased from 80 to 90, or from 40 to 45 for double-width characters. 
 
-Customers in pilot 511 can use the new TextPart2 and TitlePart3 fields. 
+The TextPart2 and TitlePart3 fields are added to expanded text ads. 
 
 For more details see [Expanded Text Ad](../bulk-service/expanded-text-ad.md) (Bulk service) and [ExpandedTextAd](../campaign-management-service/expandedtextad.md) (Campaign Management service).
 

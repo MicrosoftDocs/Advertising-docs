@@ -29,6 +29,16 @@
             "source_path": "BingAds/guides/intent-ads.md",
             "redirect_url": "audience-ads",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/campaign-management-service/experimentstatus.md",
+            "redirect_url": "experiment",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/campaign-management-service/experimenttype.md",
+            "redirect_url": "experiment",
+            "redirect_document_id": false
         }
     ]
 }

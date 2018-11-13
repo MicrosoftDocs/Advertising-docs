@@ -212,8 +212,8 @@ The following table defines limits for expanded text ad properties.
 |------------|---------|
 |Domain|The domain portion of the URL in combination with the path 1 and path 2 strings cannot exceed 67 characters.|
 |Final Url|The string can contain a maximum of 2,048 characters.|
-|Path 1|The maximum input length is 50 characters including dynamic text strings, and of those 50 no more than 15 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution.|
-|Path 2|The maximum input length is 50 characters including dynamic text strings, and of those 50 no more than 15 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution.|
+|Path 1|The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 15 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution.|
+|Path 2|The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 15 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution.|
 |Text|The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 90 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 45 final characters are allowed after substitution.|
 |Text Part 2|The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 90 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 45 final characters are allowed after substitution.|
 |Title Part 1|The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 30 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 15 final characters are allowed after substitution.|
@@ -262,8 +262,8 @@ The following table defines limits for responsive search ad properties.
 |Domain|The domain portion of the URL in combination with the path 1 and path 2 strings cannot exceed 67 characters.|
 |Final Url|The string can contain a maximum of 2,048 characters.|
 |Headlines|You must set between 3-15 headlines. The maximum input length of each headline is 1,000 characters including dynamic text strings, and of those 1,000 no more than 30 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 500 characters including dynamic text strings, and of those 500 no more than 15 final characters are allowed after substitution.|
-|Path 1|The maximum input length is 50 characters including dynamic text strings, and of those 50 no more than 15 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution.|
-|Path 2|The maximum input length is 50 characters including dynamic text strings, and of those 50 no more than 15 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution.|
+|Path 1|The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 15 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution.|
+|Path 2|The maximum input length is 1,000 characters including dynamic text strings, and of those 1,000 no more than 15 final characters are allowed after substitution. For languages with double-width characters e.g. Traditional Chinese the maximum input length is 25 characters including dynamic text strings, and of those 25 no more than 7 final characters are allowed after substitution.|
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
 ## <a name="assets"></a>Assets
@@ -325,6 +325,19 @@ Each ad group can contain 20,000 dynamic search ad targets.
 Each account can contain 5,000,000 dynamic search ad targets.
 
 For more information, see the Bing Ads Help article [Target searches automatically with dynamic search ads](https://help.bingads.microsoft.com/#apex/3/en/56794/0).
+
+## <a name="experiment"></a>Experiments
+An experiment is where you split a Search campaign’s budget and traffic, and then run an A/B test during a limited date range.
+
+The number of experiments that you can have is only limited by the number of campaigns in your account i.e., you can create up to 10 experiments per base campaign.
+
+You can manage experiments using the Bulk service ([Experiment Record](../bulk-service/experiment.md)) or Campaign Management service ([Experiment](../campaign-management-service/experiment.md)).
+
+The following table defines limits for experiment properties.
+
+|Property|Limit|
+|------------|---------|
+|Name|The string can contain a maximum of 128 characters.|
 
 ## <a name="images"></a>Images
 Defines an image that can be uploaded to your account's image library. Each account can have up to 5,000 images.

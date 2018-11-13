@@ -81,6 +81,7 @@ The Campaign Management service defines the following data objects.
 |[EntityNegativeKeyword](entitynegativekeyword.md)|Defines an object that contains a set of negative keywords that are only associated with the corresponding entity such as a campaign or ad group.|
 |[EventGoal](eventgoal.md)|Defines a custom event conversion goal.|
 |[ExpandedTextAd](expandedtextad.md)|Defines an expanded text ad.|
+|[Experiment](experiment.md)|Defines an experiment where you split a campaign’s budget and traffic, and then run an A/B test during a limited date range.|
 |[FixedBid](fixedbid.md)|Defines the fixed bid to use in the auction.|
 |[GenderCriterion](gendercriterion.md)|Defines a criterion that can be used to show ads to users of a specific gender.|
 |[GeoPoint](geopoint.md)|Defines an object that contains the longitude and latitude coordinates of a geographical location.|

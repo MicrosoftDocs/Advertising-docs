@@ -758,6 +758,9 @@
         - name: Expanded Text Ad Label
           href: ../bulk-service/expanded-text-ad-label.md
           displayName: BulkExpandedTextAdLabel
+        - name: Experiment
+          href: ../bulk-service/experiment.md
+          displayName: BulkExperiment
         - name: Format Version
           href: ../bulk-service/format-version.md
         - name: Image Ad Extension
@@ -865,6 +868,8 @@
           href: ../campaign-management-service/addcampaigns.md
         - name: AddConversionGoals
           href: ../campaign-management-service/addconversiongoals.md
+        - name: AddExperiments
+          href: ../campaign-management-service/addexperiments.md
         - name: AddKeywords
           href: ../campaign-management-service/addkeywords.md
         - name: AddLabels
@@ -903,6 +908,8 @@
           href: ../campaign-management-service/deletecampaigncriterions.md
         - name: DeleteCampaigns
           href: ../campaign-management-service/deletecampaigns.md
+        - name: DeleteExperiments
+          href: ../campaign-management-service/deleteexperiments.md
         - name: DeleteKeywords
           href: ../campaign-management-service/deletekeywords.md
         - name: DeleteLabelAssociations
@@ -965,6 +972,8 @@
           href: ../campaign-management-service/getconversiongoalsbytagids.md
         - name: GetEditorialReasonsByIds
           href: ../campaign-management-service/geteditorialreasonsbyids.md
+        - name: GetExperimentsByIds
+          href: ../campaign-management-service/getexperimentsbyids.md
         - name: GetGeoLocationsFileUrl
           href: ../campaign-management-service/getgeolocationsfileurl.md
         - name: GetKeywordsByAdGroupId
@@ -1033,6 +1042,8 @@
           href: ../campaign-management-service/updatecampaigns.md
         - name: UpdateConversionGoals
           href: ../campaign-management-service/updateconversiongoals.md
+        - name: UpdateExperiments
+          href: ../campaign-management-service/updateexperiments.md
         - name: UpdateKeywords
           href: ../campaign-management-service/updatekeywords.md
         - name: UpdateLabels
@@ -1184,6 +1195,8 @@
           href: ../campaign-management-service/eventgoal.md
         - name: ExpandedTextAd
           href: ../campaign-management-service/expandedtextad.md
+        - name: Experiment
+          href: ../campaign-management-service/experiment.md
         - name: FixedBid
           href: ../campaign-management-service/fixedbid.md
         - name: GenderCriterion
@@ -1417,10 +1430,6 @@
           href: ../campaign-management-service/entityscope.md
         - name: EntityType
           href: ../campaign-management-service/entitytype.md
-        - name: ExperimentStatus
-          href: ../campaign-management-service/experimentstatus.md
-        - name: ExperimentType
-          href: ../campaign-management-service/experimenttype.md
         - name: ExpressionOperator
           href: ../campaign-management-service/expressionoperator.md
         - name: GenderType

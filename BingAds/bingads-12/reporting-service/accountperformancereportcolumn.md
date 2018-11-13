@@ -70,6 +70,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="ExactMatchImpressionSharePercent" />
     <xs:enumeration value="CustomerId" />
     <xs:enumeration value="CustomerName" />
+    <xs:enumeration value="ClickSharePercent" />
+    <xs:enumeration value="AbsoluteTopImpressionSharePercent" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -78,6 +80,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 
 |Value|Description|
 |-----------|---------------|
+|<a name="absolutetopimpressionsharepercent"></a>AbsoluteTopImpressionSharePercent|The number of times your ad is shown in the top position as a percentage of the total available impressions in the market you were targeting.<br/><br/>Reports on impression highlight information about how many impressions you're missing in the top slot and why. You can use this data to inform you about making changes to get more impressions, increase the likelihood of more clicks on those ads, and as a result, increase the likelihood of more sales.|
 |<a name="accountid"></a>AccountId|The Bing Ads assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
@@ -90,6 +93,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="bidmatchtype"></a>BidMatchType|The keyword bid match type. This can be different from the *DeliveredMatchType* column, for example if you bid on a broad match and the search term was an exact match. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md). The possible values are *Broad*, *Exact*, *Phrase*, and *Unknown*.|
 |<a name="clickcalls"></a>ClickCalls|The number of phone calls initiated by clicks.<br/><br/>This report column is deprecated and will be removed in a future version of the API.|
 |<a name="clicks"></a>Clicks|Clicks are what you pay for. Clicks typically include a customer clicking an ad on a search results page or on a website on the search network. Clicks can also come from other sources (for example, spiders, robots, and test servers). For more information, see [Bing Ads click measurement: description of methodology](https://advertise.bingads.microsoft.com/resources/policies/bing-ads-click-measurement-description-of-methodology).|
+|<a name="clicksharepercent"></a>ClickSharePercent|The percentage of clicks that went to your ads. It is the share of the prospective customer's mindshare and buying intent you captured. You can use this performance metric to see where your growth opportunites are.<br/><br/>For example, your click share percent is 30% if 10 ads were clicked, and three of the 10 ads were yours.|
 |<a name="conversionrate"></a>ConversionRate|The conversion rate as a percentage. The number of conversions, divided by the total number of clicks. For example, if the ads in your campaign got 300 clicks and four conversions, the conversion rate is 1.33 (%). The formula for calculating the conversion rate is *(Conversions / Clicks) x 100*.|
 |<a name="conversions"></a>Conversions|The number of conversions. A conversion is the completion of an action by a customer after viewing your ad. The action could be purchasing your product, registering for your webinar, joining an organization, or whatever you consider your goal and best measure of the ad's success.|
 |<a name="costperassist"></a>CostPerAssist|The cost per assist. The formula for calculating the cost per assist is *(Spend / Assists)*.|
