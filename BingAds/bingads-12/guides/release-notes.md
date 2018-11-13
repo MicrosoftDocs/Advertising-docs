@@ -14,6 +14,7 @@ See below for Bing Ads service updates during this calendar month.
  
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-november2018)  
 - [New Report Columns](#reportcolumns-november2018)  
+- [Experiment Campaigns](#experiments-november2018)  
 
 ### <a name="sdk-november2018"></a>Bing Ads Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.1), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.1), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.1), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.1) SDK version 12.0.1. 
@@ -40,6 +41,30 @@ The *TitlePart3* column is added to the following reports.
 - [AdDynamicTextPerformanceReportColumn](../reporting-service/addynamictextperformancereportcolumn.md) 
 - [AdExtensionByAdReportColumn](../reporting-service/adextensionbyadreportcolumn.md) 
 - [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md) 
+
+### <a name="experiments-november2018"></a>Experiment Campaigns
+Service definitions for experiment campaigns are available in preview for pilot participants.
+
+An experiment is where you split a Search campaign’s budget and traffic, and then run an A/B test during a limited date range.
+
+> [!NOTE]
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.  
+
+How would using a different bid strategy, or a different kind of targeting, affect your ad campaign's performance? Would it be better, worse, or basically the same? Now you can run an A/B test to find out!
+
+With Bing Ads experiments, you create a duplicate of a search campaign that receives a split of your base campaign's budget and ad traffic. You can create up to 10 nonconcurrent experiments per base campaign. Then, you can:
+- Try out changes in the experiment campaign.
+- See how the experiment campaign performs compared to the base campaign.
+- If you like the experiment's results, apply the changes to the base campaign or create a whole new campaign.
+
+> [!IMPORTANT]
+> Even if you do not use experiments, please take note of the experiment campaign business rules if your application is used by clients who do run experiments. 
+> - The budget, budget type, and time zone of an experiment campaign cannot be updated. The budget and time zone of an experiment campaign are always inherited from the base campaign settings.  
+> - If you want to change an experiment's budget, you will need to change the base campaign's budget. The change in value will then be split based on your experiment traffic split percent setting. 
+> - An experiment campaign will have one new property that non-experiment campaigns do not have i.e., the experiment ID. You can determine whether the campaign is an independent or experiment campaign by checking the new [Experiment Id](../bulk-service/campaign.md#experimentid) field (Bulk service) or [ExperimentId](../campaign-management-service/campaign.md#experimentid) element (Campaign Management service). If the experiment ID is null or empty, then it is not an experiment campaign. If you use the Campaign Management service, the [ExperimentId](../campaign-management-service/campaign.md#experimentid) is not returned by default, so you'll need to explicitly set *ReturnAdditionalFields* via the [GetCampaignsByAccountId](../campaign-management-service/getcampaignsbyaccountid.md) and [GetCampaignsByIds](../campaign-management-service/getcampaignsbyids.md). 
+> - Experiments are only available for Search campaigns. If the campaign uses a shared budget, then you cannot use it as the base campaign for an experiment.
+
+You can manage experiment settings using the Bulk service ([Experiment Record](../bulk-service/experiment.md)) or Campaign Management service ([Experiment](../campaign-management-service/experiment.md)). You can manage regular (independent) campaigns and experiment campaigns using the Bulk service ([Campaign Record](../bulk-service/campaign.md)) or Campaign Management service ([Campaign](../campaign-management-service/campaign.md)). 
 
 
 ## <a name="october2018"></a>October 2018
