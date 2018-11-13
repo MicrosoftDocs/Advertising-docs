@@ -23,7 +23,7 @@ You may use the above Base URI or the Tenant URL shown under **Store settings** 
 
 ## <a name="templates"/>Templates
 
-To create the endpoints that used to manage your product offerings, append the appropriate template to the base URI.
+To create the endpoints used to manage your product offerings, append the appropriate template to the base URI.
 
 |Template|HTTP Verb|Description|Resource
 |--------|---------|-----------|--------
@@ -47,22 +47,18 @@ The endpoints may include the following query parameters.
 
 ## <a name="headers"/> Headers
 
-> [!IMPORTANT]
-> The Bing Ads APIs, including Content API, will stop supporting managed user credentials (username and password) beginning August 1, 2018. At your earliest convenience, please migrate your account to use Microsoft accounts. For information, see [We're changing the way you sign in](https://help.bingads.microsoft.com/#apex/3/en/ext50875/-1/en-us). You will also need to change your code to use OAuth for authentication. For details about using OAuth, see [Authentication with OAuth](https://docs.microsoft.com/en-us/bingads/guides/authentication-oauth?view=bingads-12).
-
-
 The following are the request and response headers.
  
 |Header|Description|
 |---------|---------------|
-|<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth authentication token. For information about getting a token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).
+|<a name="authtoken"/>AuthenticationToken|Request header.<br/><br/>Set this header to an OAuth access token. For information about getting an access token, see [Authenticating your credentials](../shopping-content/get-started.md#authentication).
 |Content-Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request.
 |Content-Type|Request and response header.<br/><br/>The type of content in the body of the request or response. For POSTs, if you use JSON, set this header to `application/json`. Otherwise, if you use XML, set this header to `application/xml`.
-|<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any of the accounts that you manage on behalf of the customer specified in the `CustomerId` header. It doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
+|<a name="customeraccountid"/> CustomerAccountId|Request header.<br/><br/>The account ID of any account that you manage on behalf of the customer specified in the `CustomerId` header. It doesn't matter which account you specify. Specify this header only if you manage an account on behalf of the customer.
 |<a name="customerid"/> CustomerId|Request header.<br/><br/>The customer ID of the customer whose store you manage. Specify this header only if you manage the store on behalf of the customer. If you set this header, you must also set the `CustomerAccountId`  header.  
-|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer access token. Each request must include this header. For information about getting a token, see [Do you have your Bing Ads credentials and developer token?](../shopping-content/get-started.md#credentials)
+|<a name="devtoken"/> DeveloperToken|Request header.<br/><br/>The client application's developer token. Each request must include this header. For information about getting a token, see [Do you have your Bing Ads credentials and developer token?](../shopping-content/get-started.md#credentials)
 |Location|Response header.<br/><br/>A URL that identifies the store that the product was inserted into. This header is included in the response of an Insert request. 
-|WebRequestActivityId|Response header.<br/><br/>The ID of the log entry that contains the details of the request. You should always capture this ID if an error occurs. If you are not able to determine and resolve the issue, include this ID along with the other information that you provide the Support team.
+|WebRequestActivityId|Response header.<br/><br/>The ID of the log entry that contains details of the request. You should always capture this ID if an error occurs. If you are not able to determine and resolve the issue, include this ID along with the other information that you provide the Support team.
 
 
 ## <a name="objects"/> Request and response objects
@@ -108,7 +104,7 @@ Defines errors that occurred for an item during batch processing.
 |Name|Value|Type|XML element name
 |----|-----|----|--------
 |errors|A list of errors that occurred while processing the item.|[Error](#error)[]|\<errors\> 
-|code|The HTTP status code or the error.|String
+|code|The HTTP status code of the error.|String
 |message|A message associated with the error.|String
  
 

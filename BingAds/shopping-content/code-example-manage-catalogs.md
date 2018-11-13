@@ -14,8 +14,9 @@ dev_langs:
   - python
   - php
 ---
+
 # Managing Catalogs Code Example
-This example shows how to get, add, update, and delete catalogs in the specified store.  
+This desktop console example shows how to get, add, update, and delete catalogs in the specified store.  
 
 For information about the catalog-related classes used by this example, see [Catalogs](../shopping-content/catalogs-resource.md#catalogs) and [Catalog](../shopping-content/catalogs-resource.md#catalog). For information about working with catalogs, see [Managing your Catalogs](../shopping-content/manage-catalogs.md).
 
@@ -34,11 +35,10 @@ namespace Catalogs
 {
     class Program
     {
-        // The client ID and secret that you were given when you
+        // The application ID that you were given when you
         // registered your application.
 
-        private static string clientId = "<CLIENTIDGOESHERE>";
-        private static string clientSecret = "<CLIENTSECRETGOESHERE>";
+        private static string clientId = "<APPLICATIONIDGOESHERE>";
         private static string storedRefreshToken = "<REFRESHTOKENGOESHERE>";
         private static CodeGrantOauth tokens = null;
         private static DateTime tokenExpiration;
