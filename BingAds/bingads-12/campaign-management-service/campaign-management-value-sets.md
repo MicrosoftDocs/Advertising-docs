@@ -36,7 +36,7 @@ The Campaign Management service defines the following value sets.
 |[BudgetLimitType](budgetlimittype.md)|Defines the possible budget types that you can specify for a campaign.|
 |[BusinessGeoCodeStatus](businessgeocodestatus.md)|Defines the possible status values that indicate the progress of determining the latitude and longitude values of a business.|
 |[CallToAction](calltoaction.md)|Defines the possible values for a brief, punchy reason for customers to click your ad right now.|
-|[CampaignAdditionalField](campaignadditionalfield.md)|Reserved for future use.|
+|[CampaignAdditionalField](campaignadditionalfield.md)|Defines a list of optional [Campaign](campaign.md) properties that you can request when calling [GetCampaignsByAccountId](getcampaignsbyaccountid.md) and [GetCampaignsByIds](getcampaignsbyids.md).|
 |[CampaignCriterionStatus](campaigncriterionstatus.md)|Defines the possible campaign criterion status values.|
 |[CampaignCriterionType](campaigncriteriontype.md)|Defines the possible types of campaign criterions.|
 |[CampaignStatus](campaignstatus.md)|Defines the possible status values of a campaign.|
@@ -52,8 +52,6 @@ The Campaign Management service defines the following value sets.
 |[DynamicSearchAdsSource](dynamicsearchadssource.md)|Defines the possible targeting source values for dynamic search ads campaigns.|
 |[EntityScope](entityscope.md)|Defines values that you can use to determine whether the remarketing list can only be associated with ad groups within one specified account, or can be associated with any ad groups across all of the customer's accounts.|
 |[EntityType](entitytype.md)|Defines the possible types of entities.|
-|[ExperimentStatus](experimentstatus.md)|Reserved for future use.|
-|[ExperimentType](experimenttype.md)|Reserved for future use.|
 |[ExpressionOperator](expressionoperator.md)|Defines the operators that can be applied to expressions within a conversion goal.|
 |[GenderType](gendertype.md)|Defines the genders that are available for gender criterion.|
 |[IntentOption](intentoption.md)|Defines the possible intent options for location criterion, for example to target people in, searching for, or viewing pages about your targeted location.|

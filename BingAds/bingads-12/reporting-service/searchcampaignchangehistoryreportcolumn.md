@@ -46,10 +46,10 @@ For a list of columns that you must include, please see the [Required Columns](#
 |<a name="accountid"></a>AccountId|The Bing Ads assigned identifier of an account.|
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
-|<a name="addescription"></a>AdDescription|The text attribute of an ad. This column will be empty if [ItemChanged](#itemchanged) is not Ad.|
+|<a name="addescription"></a>AdDescription|The first ad description that appears below the path in your ad. This column will be empty if [ItemChanged](#itemchanged) is not Ad.|
 |<a name="adgroupid"></a>AdGroupId|The Bing Ads assigned identifier of an ad group. This column will be empty if [ItemChanged](#itemchanged) is not Ad , Ad group, or Keyword.|
 |<a name="adgroupname"></a>AdGroupName|The ad group name. This column will be empty if [ItemChanged](#itemchanged) is not Ad , Ad group, or Keyword.|
-|<a name="adtitle"></a>AdTitle|The ad title.|
+|<a name="adtitle"></a>AdTitle|The ad title parts.This column will be empty if [ItemChanged](#itemchanged) is not Ad.|
 |<a name="attributechanged"></a>AttributeChanged|Identifies the attribute or property of the entity from the [ItemChanged](#itemchanged) column that changed. For a list of elements whose change history is reported, see the Attribute Changed column within [Remarks](searchcampaignchangehistoryreportcolumn.md#remarks). This column is empty if a campaign, ad group, or ad entity was added or deleted.|
 |<a name="campaignid"></a>CampaignId|The Bing Ads assigned identifier of a campaign.|
 |<a name="campaignname"></a>CampaignName|The campaign name.|

@@ -90,8 +90,8 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="accountname"></a>AccountName|The account name.|
 |<a name="accountnumber"></a>AccountNumber|The Bing Ads assigned number of an account.|
 |<a name="accountstatus"></a>AccountStatus|The account status.|
-|<a name="addescription"></a>AdDescription|The text attribute of an ad.|
-|<a name="addescription2"></a>AdDescription2|Reserved.|
+|<a name="addescription"></a>AdDescription|The first ad description that appears below the path in your ad.|
+|<a name="addescription2"></a>AdDescription2|The second ad description that appears below the path in your ad. Ad description 2 might not appear in your ad.|
 |<a name="addistribution"></a>AdDistribution|The network where you want your ads to show.|
 |<a name="adgroupid"></a>AdGroupId|The Bing Ads assigned identifier of an ad group.|
 |<a name="adgroupname"></a>AdGroupName|The ad group name.|
@@ -142,7 +142,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
 |<a name="titlepart1"></a>TitlePart1|The title part 1 attribute of an ad.|
 |<a name="titlepart2"></a>TitlePart2|The title part 2 attribute of an ad.|
-|<a name="titlepart3"></a>TitlePart3|Reserved.|
+|<a name="titlepart3"></a>TitlePart3|The title part 2 attribute of an ad.|
 |<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
 |<a name="trackingtemplate"></a>TrackingTemplate|The current tracking template of the ad, keyword, or criterion.|
 

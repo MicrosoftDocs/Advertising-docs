@@ -7,14 +7,14 @@ ms.author: "eur"
 description: Setup Audience ads with the Bing Ads API.
 ---
 # Audience Ads
-Microsoft Audience Ads appear on the [Microsoft Audience Network](http://www.microsoftaudiencenetwork.com/). These ad placements are cross-device and include premium sites like MSN, Microsoft Outlook, Microsoft Edge, and other partners (with more to come). Clicks on these ads will take users to the landing page you specified when you created your ads.
+Microsoft Audience Ads appear on the [Microsoft Audience Network](https://www.microsoftaudiencenetwork.com/). These ad placements are cross-device and include premium sites like MSN, Microsoft Outlook, Microsoft Edge, and other partners (with more to come). Clicks on these ads will take users to the landing page you specified when you created your ads.
 
 Microsoft Audience Ads is a native advertising solution optimized for search advertisers. This feature enables advertisers to get additional high-quality traffic from non-search placements. Microsoft Audience Ads experiences, such as ads placed within articles, are engaging for users, integrate naturally into page content, and deliver visually rich ads for advertisers. Microsoft Audience Ads campaigns are easy to set up, maintain, and optimize because they are fully integrated with existing Bing Ads workflows.
 
 ![Audience Ads](media/audience-ads.png "Audience Ads")  
 
 > [!NOTE]
-> This feature is currently available in the United States, Canada, the United Kingdom, and Australia. If you advertise in the United States, Canada, the United Kingdom, or Australia and want to opt in to audience ads, [contact support](http://go.microsoft.com/fwlink?LinkId=398371). 
+> This feature is currently available in the United States, Canada, the United Kingdom, and Australia. If you advertise in the United States, Canada, the United Kingdom, or Australia and want to opt in to audience ads, [contact support](https://go.microsoft.com/fwlink?LinkId=398371). 
 
 > [!TIP]
 > You can prepare for the Microsoft Audience Network now by:
@@ -98,7 +98,7 @@ Multiple product conditions can be specified for each Audience campaign. Each co
 For convenience, Audience ads are also available as an extension of search network via image ad extensions, and are targeted to user intent based on various combinations of search history, page content, and past user behavior. Audience ads on the search network are created automatically by Bing Ads leveraging all of your Bing Ads creative elements including ad title, text, URL, and ad extensions including image extensions. The ads created using the search creative assets are then displayed to the user in native placements depending upon the surface area e.g. if a user is reading an email in Outlook then the placement will be native to the inbox environment versus if the user is clicking through a slideshow on MSN, then the ad will match the slideshow look and feel. This kind of native placement enhances user experience and delivers better engagement with the campaign. 
 
 > [!NOTE]
-> Images play a key role in getting people's attention and driving clicks. You can define the imagery to use in your ads by associating Image Extensions to your campaign or ad group. If you don't have Image Extensions, our system may automatically use Image Annotations to increase the number of placements for your Microsoft Audience Ad. Image Annotations are licensed stock images that are editorially reviewed for quality and relevance and then matched with appropriate ads (to opt out of Image Annotations, [contact support](http://go.microsoft.com/fwlink?LinkId=398371)).
+> Images play a key role in getting people's attention and driving clicks. You can define the imagery to use in your ads by associating Image Extensions to your campaign or ad group. If you don't have Image Extensions, our system may automatically use Image Annotations to increase the number of placements for your Microsoft Audience Ad. Image Annotations are licensed stock images that are editorially reviewed for quality and relevance and then matched with appropriate ads (to opt out of Image Annotations, [contact support](https://go.microsoft.com/fwlink?LinkId=398371)).
 
 You can set a bid adjustment for each campaign and ad group. The bid adjustment is the percent amount by which to adjust your bid for audience ads above or below the base ad group or keyword bid. Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent audience ads from showing for the campaign or ad group. If you do not set a bid adjustment for your ad groups they will inherit from the campaign bid adjustment setting by default.
 
