@@ -34,7 +34,7 @@ Accessing your Bing Ads data with Bing Ads Scripts is easy. Just follow these in
         while (iterator.hasNext()) {
             var keyword = iterator.next();
             Logger.log(`${keyword.getText()}: 
-                ${keyword.getStats.getImpressions()} impressions`);  //gets the number of impressions
+                ${keyword.getStats().getImpressions()} impressions`);  //gets the number of impressions
         }
     }
     ```
