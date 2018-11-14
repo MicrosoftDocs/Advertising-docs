@@ -9,7 +9,7 @@ description: Get information about the changes to the Bing Ads services for each
 # Bing Ads API Release Notes
 For information about the changes to the Bing Ads Version 12 services for each month, see the following sections. 
 
-## <a name="october2018"></a>October 2018
+## <a name="november2018"></a>November 2018
 See below for Bing Ads service updates during this calendar month. 
  
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-november2018)  
