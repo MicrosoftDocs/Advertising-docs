@@ -20,7 +20,7 @@ The Campaign Management service defines the following service operations.
 |[AddCampaignCriterions](addcampaigncriterions.md)|Adds one or more campaign criterions that help determine whether ads in each campaign get served.|100 *CampaignCriterions*|
 |[AddCampaigns](addcampaigns.md)|Adds one or more campaigns to the specified account.|1 *AccountId*<br/><br/>100 *Campaigns*|
 |[AddConversionGoals](addconversiongoals.md)|Adds new conversion goals to the account's shared conversion goal library.|100 *ConversionGoals*|
-|[AddExperiments](addexperiments.md)|Adds experiments and creates experiment campaigns based on existing campaigns in an account.|1,000 *Experiments*|
+|[AddExperiments](addexperiments.md)|Adds experiments and creates experiment campaigns based on existing campaigns in an account.|100 *Experiments*|
 |[AddKeywords](addkeywords.md)|Adds one or more keywords to an ad group.|1 *AdGroupId*<br/><br/>1,000 *Keywords*|
 |[AddLabels](addlabels.md)|Adds one or more labels to an account.|100 *Labels*|
 |[AddListItemsToSharedList](addlistitemstosharedlist.md)|Adds negative keywords to the shared negative keyword list.|1 *SharedList*<br/><br/>5,000 *ListItems*|
@@ -40,7 +40,7 @@ The Campaign Management service defines the following service operations.
 |[DeleteBudgets](deletebudgets.md)|Deletes budgets from the account's shared budget library.|100 *BudgetIds*|
 |[DeleteCampaignCriterions](deletecampaigncriterions.md)|Deletes one or more campaign criterions.|100 *CampaignCriterionIds*|
 |[DeleteCampaigns](deletecampaigns.md)|Deletes one or more campaigns in a specified account.|1 *AccountId*<br/><br/>100 *CampaignIds*|
-|[DeleteExperiments](deleteexperiments.md)|Deletes one or more experiments.|1,000 *ExperimentIds*|
+|[DeleteExperiments](deleteexperiments.md)|Deletes one or more experiments.|100 *ExperimentIds*|
 |[DeleteKeywords](deletekeywords.md)|Deletes one or more keywords in a specified ad group.|1 *AdGroupId*<br/><br/>1,000 *KeywordIds*|
 |[DeleteLabelAssociations](deletelabelassociations.md)|Deletes label associations.|100 *LabelAssociations*|
 |[DeleteLabels](deletelabels.md)|Deletes one or more labels from the account.|100 *LabelIds*|
@@ -107,7 +107,7 @@ The Campaign Management service defines the following service operations.
 |[UpdateCampaignCriterions](updatecampaigncriterions.md)|Updates one or more campaign criterions.|100 *CampaignCriterions*|
 |[UpdateCampaigns](updatecampaigns.md)|Updates specified campaigns in a specified account.|1 *AccountId*<br/><br/>100 *Campaigns*|
 |[UpdateConversionGoals](updateconversiongoals.md)|Updates conversion goals within the account's shared conversion goal library.|100 *ConversionGoals*|
-|[UpdateExperiments](updateexperiments.md)|Updates the specified experiments.|1,000 *Experiments*|
+|[UpdateExperiments](updateexperiments.md)|Updates the specified experiments.|100 *Experiments*|
 |[UpdateKeywords](updatekeywords.md)|Updates the keywords within a specified ad group.|1 *AdGroupId*<br/><br/>1,000 *Keywords*|
 |[UpdateLabels](updatelabels.md)|Updates the labels within the account.|100 *Labels*|
 |[UpdateSharedEntities](updatesharedentities.md)|Updates negative keyword lists within the account's library.|20 *SharedEntities*|

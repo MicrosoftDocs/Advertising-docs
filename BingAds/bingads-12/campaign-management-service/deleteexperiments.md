@@ -32,7 +32,7 @@ The *DeleteExperimentsRequest* object defines the [body](#request-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="experimentids"></a>ExperimentIds|A maximum of 1,000 experiment identifiers to delete.|**long** array|
+|<a name="experimentids"></a>ExperimentIds|A maximum of 100 experiment identifiers to delete.|**long** array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
