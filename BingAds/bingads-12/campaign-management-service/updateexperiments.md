@@ -30,7 +30,7 @@ The *UpdateExperimentsRequest* object defines the [body](#request-body) and [hea
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="experiments"></a>Experiments|An array of [Experiment](experiment.md) objects to update within the account.<br/><br/>You can update a maximum of 1,000 experiments in a single call.<br/><br/>The account is determined by the required *CustomerAccountId* header element.|[Experiment](experiment.md) array|
+|<a name="experiments"></a>Experiments|An array of [Experiment](experiment.md) objects to update within the account.<br/><br/>You can update a maximum of 100 experiments in a single call.<br/><br/>The account is determined by the required *CustomerAccountId* header element.|[Experiment](experiment.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
