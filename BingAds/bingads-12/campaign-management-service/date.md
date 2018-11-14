@@ -34,4 +34,5 @@ Namespace: https\://bingads.microsoft.com/CampaignManagement/v12
 
 ## Used By
 [AdGroup](adgroup.md)  
+[Experiment](experiment.md)  
 [Schedule](schedule.md)  

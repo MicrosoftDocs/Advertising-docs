@@ -7,10 +7,7 @@ ms.author: eur
 description: Defines a list of optional Ad properties that you can request when calling GetAdsByAdGroupId, GetAdsByEditorialStatus, and GetAdsByIds.
 ---
 # AdAdditionalField Value Set - Campaign Management
-Defines a list of optional [Ad](ad.md) properties that you can request when calling [GetAdsByAdGroupId](getadsbyadgroupid.md), [GetAdsByEditorialStatus](getadsbyeditorialstatus.md), and [GetAdsByIds](getadsbyids.md). This set of flags enables you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding propertys will be included in the [Ad](ad.md) object by default.
-
-> [!NOTE]
-> This value set is reserved for future use.
+Defines a list of optional [Ad](ad.md) properties that you can request when calling [GetAdsByAdGroupId](getadsbyadgroupid.md), [GetAdsByEditorialStatus](getadsbyeditorialstatus.md), and [GetAdsByIds](getadsbyids.md). The additional field values enable you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding propertys will be included in the [Ad](ad.md) object by default.
 
 ## Syntax
 ```xml
@@ -30,8 +27,8 @@ Defines a list of optional [Ad](ad.md) properties that you can request when call
 
 |Value|Description|
 |-----------|---------------|
-|<a name="textpart2"></a>TextPart2|Request that the *TextPart2* element be included within each returned [ExpandedTextAd](expandedtextad.md) object.|
-|<a name="titlepart3"></a>TitlePart3|Request that the *TitlePart3* element be included within each returned [ExpandedTextAd](expandedtextad.md) object.|
+|<a name="textpart2"></a>TextPart2|Request that the [TextPart2](expandedtextad.md#textpart2) element be included within each returned [ExpandedTextAd](expandedtextad.md) object.|
+|<a name="titlepart3"></a>TitlePart3|Request that the [TitlePart3](expandedtextad.md#titlepart3) element be included within each returned [ExpandedTextAd](expandedtextad.md) object.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

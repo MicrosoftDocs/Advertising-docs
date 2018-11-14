@@ -157,6 +157,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Client Id](#clientid)|All|
 |[Country Code](#countrycode)|Shopping|
 |[Domain Language](#domainlanguage)|DynamicSearchAds|
+|[Experiment Id](#experimentid)|Search|
 |[Id](#id)|All|
 |[Keyword Relevance](#keywordrelevance)|All|
 |[Landing Page Relevance](#landingpagerelevance)|All|
@@ -245,7 +246,7 @@ For campaigns you can use any of the following bid strategy types.
 > [!TIP] 
 > You can set your campaign's bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
 
-**Add:** Optional. Until January 28th, 2019 if you do not set this field, then *ManualCpc* is used by default. From January 29th, 2019 onwards if you do not set this field, then *EnhancedCpc* will be used by default.
+**Add:** Optional. Until January 28th, 2019 if you do not set this field, then *ManualCpc* is used by default. From January 28th, 2019 onwards if you do not set this field, then *EnhancedCpc* will be used by default.
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.  If you update the bid strategy type, then any existing values in the *Bid Strategy MaxCpc* and *Bid Strategy TargetCpa* fields will be deleted.       
 **Delete:** Read-only  
 
@@ -343,7 +344,7 @@ For example, the following country code values are supported.
 
 To get the current list of supported country codes use the [GetBSCCountries](../campaign-management-service/getbsccountries.md) operation via the Campaign Management service.
 
-**Add:** Required if the *Campaign Type* field is set to *Shopping*. You cannot include this column for other campaign types.  
+**Add:** Required if the [Campaign Type](#campaigntype) field is set to *Shopping*. You cannot include this column for other campaign types.  
 **Update:** Read-only    
 **Delete:** Read-only  
 
@@ -372,8 +373,19 @@ The language of the website pages that you want to target for dynamic search ads
 
 Currently the only supported language code is *EN*.
 
-**Add:** Required if the *Campaign Type* field is set to *DynamicSearchAds*. You cannot include this column for other campaign types.  
+**Add:** Required if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types.  
 **Update:** Read-only. You cannot update the language.      
+**Delete:** Read-only  
+
+## <a name="experimentid"></a>Experiment Id
+The system generated identifier of the [Experiment](experiment.md).
+
+This field is only set for experiment campaigns i.e., campaigns that have been created for A/B testing based on another Search campaign. Base campaigns will not contain an experiment ID. Likewise, after an experiment has been [Graduated](experiment.md#status) to an independent campaign, this field will be empty, even though the campaign was previously an experiment campaign. 
+
+With experiment campaigns you cannot update the [Budget](campaign.md#budget), [Budget Type](campaign.md#budgettype), or [Time Zone](campaign.md#timezone). The budget and time zone of an experiment campaign are always inherited from the base campaign settings. If you want to change an experiment's budget, you will need to change the base campaign's budget. The change in value will then be split based on your experiment [TrafficSplitPercent](#trafficsplitpercent) setting.
+
+**Add:** Read-only  
+**Update:** Read-only  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -488,7 +500,7 @@ If two shopping campaigns use the product catalog feed from same Bing Merchant C
 > [!NOTE]
 > If you create a Bing Shopping campaign in the Bing Ads web application, the default priority selected is "Low" which is the equivalent of '0'.
 
-**Add:** Required if the *Campaign Type* field is set to *Shopping*. You cannot include this column for other campaign types.  
+**Add:** Required if the [Campaign Type](#campaigntype) field is set to *Shopping*. You cannot include this column for other campaign types.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.  
 **Delete:** Read-only  
 
@@ -516,8 +528,8 @@ Possible values are in the table below.
 |All|Use URLs from both Bing's index of my website and my page feed. Pages from both sources will be used but URLs within the feed file will be given priority.|
 |SystemIndex|Use Bing's index of my website. This is the default behavior of dynamic search ad campaigns on Bing.|
 
-**Add:** Optional if the *Campaign Type* field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. By default only Bing's index is used i.e., an empty value is effectively the same as specifying *SystemIndex*. 
-**Update:** Optional if the *Campaign Type* field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. If no value is specified on update, this Bing Ads setting is not changed.      
+**Add:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. By default only Bing's index is used i.e., an empty value is effectively the same as specifying *SystemIndex*. 
+**Update:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. If no value is specified on update, this Bing Ads setting is not changed.      
 **Delete:** Read-only  
 
 ## <a name="status"></a>Status
@@ -545,7 +557,7 @@ Once you choose a store for a campaign, you can't change it. If at some point yo
 
 To get your store identifiers, call the [GetBMCStoresByCustomerId](../campaign-management-service/getbmcstoresbycustomerid.md) operation.
 
-**Add:** Required if the *Campaign Type* field is set to *Shopping*. You cannot include this column for other campaign types.  
+**Add:** Required if the [Campaign Type](#campaigntype) field is set to *Shopping*. You cannot include this column for other campaign types.  
 **Update:** Read-only  
 **Delete:** Read-only  
 
@@ -556,7 +568,7 @@ This field is only applicable for campaigns of type *Shopping*, and will be empt
 
 We are introducing Cooperative campaigns during calendar year 2018 as a sub type of Bing Shopping campaigns. More details about Cooperative campaigns are coming soon, and whether or not you plan to adopt Cooperative campaigns, you might need to make code changes if your application supports any Bing Shopping campaigns.
 
-When you download campaigns and the *Campaign Type* field is set to *Shopping*, please check the *SubType* of each campaign. If the *SubType* is not set then it is a standard Bing Shopping campaign. If the value is set to *ShoppingCoOperative*, the campaign is a Cooperative campaign with different requirements.  
+When you download campaigns and if the [Campaign Type](#campaigntype) field is set to *Shopping*, please also check the *Sub Type* of each campaign. If the *Sub Type* is not set then it is a standard Bing Shopping campaign. If the value is set to *ShoppingCoOperative*, the campaign is a Cooperative campaign with different requirements.  
 
 **Add:** Optional and not applicable for most campaign types. For Cooperative campaigns you must set the sub type to *ShoppingCoOperative*.  
 **Update:** Read-only  
@@ -595,6 +607,6 @@ The domain name of the website that you want to target for dynamic search ads.
 
 The length of the string is limited to 2,048 characters. If the domain name includes *www* it will be trimmed and not used.
 
-**Add:** Required if the *Campaign Type* field is set to *DynamicSearchAds*. You cannot include this column for other campaign types.  
+**Add:** Required if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types.  
 **Update:** Read-only. You cannot update the domain name.      
 **Delete:** Read-only  

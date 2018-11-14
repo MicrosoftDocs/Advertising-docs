@@ -474,6 +474,347 @@ A date or date/time is not in the range of dates that the service supports, or t
 ***
 
 **Numeric Code**
+600
+
+**Symbolic Error Code**
+KeywordCollectionNullorEmpty
+
+**Description**
+The keywords collection is null or empty.
+
+***
+
+**Numeric Code**
+601
+
+**Symbolic Error Code**
+KeywordCollectionExceededLimit
+
+**Description**
+The keywords collection count exceeds limit.
+
+***
+
+**Numeric Code**
+602
+
+**Symbolic Error Code**
+BidAmountsLessThanFloorPrice
+
+**Description**
+The bid amount is less than floor price.
+
+***
+
+**Numeric Code**
+603
+
+**Symbolic Error Code**
+KeywordInvalid
+
+**Description**
+The Keyword text is invalid.
+
+***
+
+**Numeric Code**
+604
+
+**Symbolic Error Code**
+CampaignIdInvalid
+
+**Description**
+The CampaignId is invalid.
+
+***
+
+**Numeric Code**
+605
+
+**Symbolic Error Code**
+AdGroupIdInvalid
+
+**Description**
+The AdgrupID is invalid.
+
+***
+
+**Numeric Code**
+606
+
+**Symbolic Error Code**
+InvalidParameters
+
+**Description**
+The paramters are invalid.
+
+***
+
+**Numeric Code**
+607
+
+**Symbolic Error Code**
+InvalidOpportunityType
+
+**Description**
+The opportunity type is invalid.
+
+***
+
+**Numeric Code**
+608
+
+**Symbolic Error Code**
+InvalidUrl
+
+**Description**
+The url is invalid.
+
+***
+
+**Numeric Code**
+609
+
+**Symbolic Error Code**
+ValueLessThanMinLimit
+
+**Description**
+The value is less than min limit.
+
+***
+
+**Numeric Code**
+610
+
+**Symbolic Error Code**
+ValueGreaterThanMaxLimit
+
+**Description**
+The value is greater than max limit.
+
+***
+
+**Numeric Code**
+611
+
+**Symbolic Error Code**
+LanguageAndCountryNotSupported
+
+**Description**
+The language and country are not supported.
+
+***
+
+**Numeric Code**
+612
+
+**Symbolic Error Code**
+KspStartDateNull
+
+**Description**
+The start date is null.
+
+***
+
+**Numeric Code**
+613
+
+**Symbolic Error Code**
+StartDateBiggerThanCurrentDate
+
+**Description**
+The start date is later than current date.
+
+***
+
+**Numeric Code**
+614
+
+**Symbolic Error Code**
+KspEndDateNull
+
+**Description**
+The end date is null.
+
+***
+
+**Numeric Code**
+615
+
+**Symbolic Error Code**
+KspStartDateBiggerThanEndDate
+
+**Description**
+The start date is later than end date.
+
+***
+
+**Numeric Code**
+616
+
+**Symbolic Error Code**
+KeywordsNotPassed
+
+**Description**
+The keywords are not passed.
+
+***
+
+**Numeric Code**
+617
+
+**Symbolic Error Code**
+PublisherCountriesCollectionSizeExceedsLimit
+
+**Description**
+The publisher countries size exceeds limit.
+
+***
+
+**Numeric Code**
+618
+
+**Symbolic Error Code**
+InvalidPublisherCountryForLanguage
+
+**Description**
+The publisher country is invalid for this language.
+
+***
+
+**Numeric Code**
+619
+
+**Symbolic Error Code**
+UnsupportedMatchType
+
+**Description**
+The matchtype is not supported.
+
+***
+
+**Numeric Code**
+620
+
+**Symbolic Error Code**
+InvalidMaxSuggestionsPerKeyword
+
+**Description**
+The max suggestions per keywords is invalid.
+
+***
+
+**Numeric Code**
+621
+
+**Symbolic Error Code**
+MaxSuggestionsPerKeywordExceededLimit
+
+**Description**
+The max suggestions perf keyword exceeded limit.
+
+***
+
+**Numeric Code**
+622
+
+**Symbolic Error Code**
+InvalidLocationId
+
+**Description**
+The location id is invalid.
+
+***
+
+**Numeric Code**
+623
+
+**Symbolic Error Code**
+KeywordTooLong
+
+**Description**
+The keyword is too long.
+
+***
+
+**Numeric Code**
+624
+
+**Symbolic Error Code**
+KeywordIsBlank
+
+**Description**
+The keyword is blank.
+
+***
+
+**Numeric Code**
+625
+
+**Symbolic Error Code**
+InvalidMaxKeywordsOutput
+
+**Description**
+The max keywords output is invalid.
+
+***
+
+**Numeric Code**
+626
+
+**Symbolic Error Code**
+MaxKeywordsOutputExceededLimit
+
+**Description**
+The max keywords output exceeded limit.
+
+***
+
+**Numeric Code**
+627
+
+**Symbolic Error Code**
+InvalidMinConfidenceScore
+
+**Description**
+The min confidence score is invalid.
+
+***
+
+**Numeric Code**
+628
+
+**Symbolic Error Code**
+UrlNotPassed
+
+**Description**
+The url is not passed.
+
+***
+
+**Numeric Code**
+629
+
+**Symbolic Error Code**
+UrlTooLong
+
+**Description**
+The url is too long.
+
+***
+
+**Numeric Code**
+630
+
+**Symbolic Error Code**
+ParentCountryNotSupported
+
+**Description**
+The parent country is not supported.
+
+***
+
+**Numeric Code**
 631
 
 **Symbolic Error Code**
@@ -481,6 +822,259 @@ InvalidMaxLocations
 
 **Description**
 The maximum number of locations has been exceeded.
+
+***
+
+**Numeric Code**
+632
+
+**Symbolic Error Code**
+MatchTypeInvalid
+
+**Description**
+The matchtype is invalid.
+
+***
+
+**Numeric Code**
+633
+
+**Symbolic Error Code**
+InvalidBidAmount
+
+**Description**
+The bid amount is invalid.
+
+***
+
+**Numeric Code**
+634
+
+**Symbolic Error Code**
+PositionNumberIsRequired
+
+**Description**
+The postistion number is not provided.
+
+***
+
+**Numeric Code**
+635
+
+**Symbolic Error Code**
+CurrencyNotSupported
+
+**Description**
+The currentcy is not supported.
+
+***
+
+**Numeric Code**
+636
+
+**Symbolic Error Code**
+MatchTypesNotPassed
+
+**Description**
+The matchtypes are not passed.
+
+***
+
+**Numeric Code**
+637
+
+**Symbolic Error Code**
+InvalidBidLevel
+
+**Description**
+The bid level is invalid.
+
+***
+
+**Numeric Code**
+638
+
+**Symbolic Error Code**
+RobotsNotAllowed
+
+**Description**
+This url is not allowed by robots.
+
+***
+
+**Numeric Code**
+639
+
+**Symbolic Error Code**
+EndDateBiggerThanCurrentDate
+
+**Description**
+The end date is later than current date.
+
+***
+
+**Numeric Code**
+640
+
+**Symbolic Error Code**
+InvalidDevice
+
+**Description**
+The device is not supported.
+
+***
+
+**Numeric Code**
+641
+
+**Symbolic Error Code**
+InvalidTimePeriodRollup
+
+**Description**
+The TimePeriodRollup is invalid.
+
+***
+
+**Numeric Code**
+642
+
+**Symbolic Error Code**
+AdGroupBidLandscapeInputExceeded
+
+**Description**
+The length of AdGroupBidLandscapeInput array is exceeded.
+
+***
+
+**Numeric Code**
+643
+
+**Symbolic Error Code**
+KeywordIdsExceeded
+
+**Description**
+The length of KeywordIds array is exceeded.
+
+***
+
+**Numeric Code**
+644
+
+**Symbolic Error Code**
+KeywordsExceeded
+
+**Description**
+The length of Keywords array is exceeded.
+
+***
+
+**Numeric Code**
+645
+
+**Symbolic Error Code**
+CurrencyInvalid
+
+**Description**
+The Currency element is invalid.
+
+***
+
+**Numeric Code**
+646
+
+**Symbolic Error Code**
+MaxBidInvalid
+
+**Description**
+The MaxBid element is invalid.
+
+***
+
+**Numeric Code**
+647
+
+**Symbolic Error Code**
+MaxCategoriesInvalid
+
+**Description**
+The MaxCategories element is invalid.
+
+***
+
+**Numeric Code**
+648
+
+**Symbolic Error Code**
+ParentCountryInvalid
+
+**Description**
+The ParentCountry element is invalid.
+
+***
+
+**Numeric Code**
+650
+
+**Symbolic Error Code**
+LocationIdsCollectionSizeExceedsLimit
+
+**Description**
+The locationIds size exceeds limit.
+
+***
+
+**Numeric Code**
+651
+
+**Symbolic Error Code**
+EntityIdsExceeded
+
+**Description**
+The length of EntityIds array is exceeded.
+
+***
+
+**Numeric Code**
+652
+
+**Symbolic Error Code**
+UnsupportedEntityType
+
+**Description**
+The EntityType is not supported.
+
+***
+
+**Numeric Code**
+653
+
+**Symbolic Error Code**
+AuctionSegmentsExceeded
+
+**Description**
+The count of AuctionSegmentSearchParameter is exceeded.
+
+***
+
+**Numeric Code**
+654
+
+**Symbolic Error Code**
+UnsupportedAuctionSegment
+
+**Description**
+The AuctionSegment is not supported.
+
+***
+
+**Numeric Code**
+700
+
+**Symbolic Error Code**
+RequiredElementMissing
+
+**Description**
+One or more required elements are missing.
 
 ***
 
@@ -689,7 +1283,7 @@ The search volume is invalid.
 InvalidSuggestedBid
 
 **Description**
-The suggested bid is invalid
+The suggested bid is invalid.
 
 ***
 
@@ -734,6 +1328,17 @@ DateRangeSearchParameterEndDatePrecedesStartDate
 
 **Description**
 The date range search parameter end date must be later than the start date.
+
+***
+
+**Numeric Code**
+823
+
+**Symbolic Error Code**
+KeywordIdeaAttributeMissing
+
+**Description**
+One or more required keyword idea attributes is missing.
 
 ***
 ## 1000
@@ -6057,10 +6662,10 @@ The customer is not a member of the bulk download pilot program.
 3501
 
 **Symbolic Error Code**
-CampaignServiceBulkUploadFeatureNotEnabledForCustomer
+EntityLevelBidInvalid
 
 **Description**
-The customer is not a member of the bulk upload program.
+The EntityLevelBid element is invalid.
 
 ***
 
