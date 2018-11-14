@@ -601,7 +601,7 @@ The value is greater than max limit.
 LanguageAndCountryNotSupported
 
 **Description**
-The language and country are not supported.
+The language and country/region are not supported.
 
 ***
 
@@ -678,7 +678,7 @@ The publisher countries size exceeds limit.
 InvalidPublisherCountryForLanguage
 
 **Description**
-The publisher country is invalid for this language.
+The publisher country/region is invalid for this language.
 
 ***
 
@@ -810,7 +810,7 @@ The url is too long.
 ParentCountryNotSupported
 
 **Description**
-The parent country is not supported.
+The parent country/region is not supported.
 
 ***
 
@@ -2069,7 +2069,7 @@ The business address of this account is not valid.
 Not applicable.
 
 **Description**
-The business address country and currency of an account must match.
+The business address country/region and currency of an account must match.
 
 ***
 
@@ -2102,7 +2102,7 @@ The payment option should be set for this account.
 Not applicable.
 
 **Description**
-TaxInformation is not applicable to the businessaddress. Check rules for each country.
+The tax information is not applicable for the business address. Check rules for each country/region.
 
 ***
 
@@ -2113,7 +2113,7 @@ TaxInformation is not applicable to the businessaddress. Check rules for each co
 Not applicable.
 
 **Description**
-TaxInformation has invalid or duplicate keys for the Account Business Address.
+The tax information has invalid or duplicate keys for the Account Business Address.
 
 ***
 
@@ -2216,7 +2216,7 @@ The priority of the shopping campaign is invalid.
 CampaignServiceShoppingCampaignSalesCountryCodeInvalid
 
 **Description**
-The sales country code of the shopping campaign is invalid.
+The sales country/region code of the shopping campaign is invalid.
 
 ***
 
@@ -2249,7 +2249,7 @@ The campaign type field of a campaign cannot be updated.
 CampaignServiceSalesCountryCodeImmutable
 
 **Description**
-The sales country code of a shopping campaign cannot be updated.
+The sales country/region code of a shopping campaign cannot be updated.
 
 ***
 
@@ -3866,7 +3866,7 @@ The metro area target is a duplicate.
 CampaignServiceDuplicateCountryLocationTarget
 
 **Description**
-The country target is a duplicate.
+The country/region target is a duplicate.
 
 ***
 
@@ -6586,7 +6586,7 @@ The language provided is invalid.
 CampaignServiceInvalidPublisherCountryForLanguage
 
 **Description**
-The publisher country provided is invalid.
+The publisher country/region provided is invalid.
 
 ***
 
@@ -6608,7 +6608,7 @@ The location level provided is invalid.
 CampaignServiceInvalidParentCountry
 
 **Description**
-The parent country provided is invalid.
+The parent country/region provided is invalid.
 
 ***
 
@@ -7173,7 +7173,7 @@ The postal code contains content that is not valid.
 CampaignServiceAdExtensionCountryCodeNullOrEmpty
 
 **Description**
-The country code cannot be null or empty.
+The country/region code cannot be null or empty.
 
 ***
 
@@ -7184,7 +7184,7 @@ The country code cannot be null or empty.
 CampaignServiceAdExtensionCountryCodeWrongLength
 
 **Description**
-The country code must contain 2 characters.
+The country/region code must contain 2 characters.
 
 ***
 
@@ -7195,9 +7195,9 @@ The country code must contain 2 characters.
 CampaignServiceAdExtensionCountryCodeInvalid
 
 **Description**
-The country code is not valid.
+The country/region code is not valid.
 
-The country code must be one of the supported publisher countries.
+The country/region code must be one of the supported publisher countries.
 
 ***
 
@@ -7560,7 +7560,7 @@ The customer is not a member of the Call Tracking pilot program.
 CampaignServiceCallAdExtensionCallTrackingNotSupportedForCountry
 
 **Description**
-Call tracking is not supported for selected country.
+Call tracking is not supported for selected country/region.
 
 ***
 
