@@ -24,7 +24,7 @@ Defines a key and value custom parameter for URL tracking. Used for campaign, ad
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="key"></a>Key|The name of the custom parameter that you want to track.<br/><br/>The maximum length of this string is 16, in UTF-8 bytes. With the Campaign Management service you may not specify special characters such as braces and underscore: \"\{\", \"\_\", and \"\}\".  With the Bulk service the surrounding braces and underscore are required. The maximum length of 16 UTF-8 bytes does not include the optional braces and underscore: \"\{\", \"\_\", and \"\}\".<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
-|<a name="value"></a>Value|The value to track using your custom parameter.<br/><br/>The maximum length of this string is 200, in UTF-8 bytes.<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
+|<a name="value"></a>Value|The value to track using your custom parameter.<br/><br/>The maximum length of this string is 200, in UTF-8 bytes. You can set the value to an empty string ("") but it cannot be null or empty.<br/><br/>**Add:** Required<br/>**Update:** Required|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

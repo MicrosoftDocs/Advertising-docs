@@ -78,6 +78,9 @@ With location criterions, you can choose to show ads to potential customers in, 
 - All available countries/regions
 - Selected cities, zip codes, metro areas (Nielsen DMA® in the United States), states/provinces, and countries/regions
 
+> [!NOTE]
+> For a list of geographical location codes, see [Geographical Location Codes](geographical-location-codes.md). 
+
 Each location criterion defines a location code for the accompanying criterion bid adjustment. 
 
 Although location criterions are most often used to designate the specific locations where you want to show your ads, Bing Ads also lets you specify locations you want to exclude from seeing your ads. Excluded locations are also known as negative location criterions.
