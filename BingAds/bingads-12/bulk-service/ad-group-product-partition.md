@@ -161,11 +161,11 @@ In a bulk file, the list of custom parameters are formatted as follows.
 
 - Format each custom parameter pair as Key=Value, for example {_promoCode}=PROMO1.
 
-- You may include up to 3 custom parameter key and value pairs. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
+- Bing Ads will accept the first 3 custom parameter key and value pairs that you include. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
 
 - A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
 
-- The Key cannot exceed 16 UTF-8 bytes, and the Value cannot exceed 200 UTF-8 bytes. The maximum size of the Key does not include the braces and underscore i.e., '{', '_', and '}'. 
+- The Key cannot exceed 16 UTF-8 bytes, and the Value cannot exceed 200 UTF-8 bytes. The Key is required and the Value is optional. The maximum size of the Key does not include the braces and underscore i.e., '{', '_', and '}'. 
 
     > [!NOTE] 
     > With the Bulk service the Key must be formatted with surrounding braces and a leading underscore, for example if the Key is promoCode, it must be formatted as {_promoCode}. With the Campaign Management service you cannot specify the surrounding braces and underscore.

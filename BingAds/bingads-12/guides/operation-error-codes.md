@@ -8849,7 +8849,7 @@ The product partition is missing a product condition that specifies the remainin
 4129
 
 **Symbolic Error Code**
-CampaignServiceDuplicatePructConditions
+CampaignServiceDuplicateProductConditions
 
 **Description**
 Children of a product partition node cannot contain duplicate product conditions.
