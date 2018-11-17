@@ -253,8 +253,8 @@ Gets accounts with the specified IDs.
 
 ```javascript
 AccountsApp.accounts()
-    .withIds([11111, 22222, 33333])
-    .withIds([33333, 44444, 55555])
+    .withIds(['11111', '22222', '33333'])
+    .withIds(['33333', '44444', '55555']);
     .get();
 ```
 
