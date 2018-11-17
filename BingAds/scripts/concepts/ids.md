@@ -13,7 +13,7 @@ ms.topic: "article"
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 
-Most entities in Bing Ads expose a `getId()` method that returns the entity's identifier. The identifier is a string (not an integer) that uniquely identifies the entity.
+IDs in Bing Ads Scripts are strings not integers. For example, when calling a selector's `withIds()` method, you pass an array of string IDs, not an array of integer IDs. Or, if you call an entity's `getId()` method, it returns the ID as a string, not an integer.
 
 ## Next steps
 

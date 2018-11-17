@@ -166,8 +166,8 @@ Gets shared budgets with the specified IDs.
 
 ```javascript
 var selector = BingAdsApp.budgets()
-    .withIds([11111, 22222, 33333])
-    .withIds([33333, 44444, 55555]);
+    .withIds(['11111', '22222', '33333'])
+    .withIds(['33333', '44444', '55555']);
 ```
 
 ### Arguments

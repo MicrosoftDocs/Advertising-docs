@@ -164,8 +164,8 @@ Gets campaigns with the specified IDs.
 
 ```javascript
 BingAdsApp.campaigns()
-    .withIds([11111, 22222, 33333])
-    .withIds([33333, 44444, 55555])
+    .withIds(['11111', '22222', '33333'])
+    .withIds(['33333', '44444', '55555']);
 ```
 
 ### Arguments

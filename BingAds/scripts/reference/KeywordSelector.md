@@ -162,8 +162,8 @@ Gets keywords with the specified IDs.
 
 ```javascript
 BingAdsApp.keywords()
-    .withIds([11111, 22222, 33333])
-    .withIds([33333, 44444, 55555])
+    .withIds(['11111', '22222', '33333'])
+    .withIds(['33333', '44444', '55555']);
 ```
 
 ### Arguments
