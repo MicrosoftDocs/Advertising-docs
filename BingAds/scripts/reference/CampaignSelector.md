@@ -143,7 +143,7 @@ Name|string|The campaign's name.<br /><br />`withCondition("Name CONTAINS_IGNORE
 Budget|double|The campaign's budget.<br /><br />`withCondition("Budget > 500.0")`
 Type|enumeration|The campaign's type. Possible case-sensitive values are: <ul><li>SEARCH_AND_CONTENT</li><li>SHOPPING</li><li>DYNAMIC_SEARCH_ADS</li></ul>`withCondition("Type = 'SEARCH_AND_CONTENT'")`
 BudgetType|enumeration|The campaign's budget type. Possible case-sensitive values are: <ul><li>STANDARD</li><li>ACCELERATED</li></ul>`withCondition("BudgetType = 'STANDARD'")`
-DeliveryStatus|enumeration|The campaign's delivery status. Possible case-sensitive values are: <ul><li>ELIGIBLE</li><li>LIMITED_BY_BUDGET</li><li>HOLD</li><li>CAMPAIGN_OUT_OF_BUDGET</li><li>CAMPAIGN_SUSPENDED</li><li>CAMPAIGN_PAUSED</li></ul>`withCondition("DeliveryStatus NOT IN ['LIMITED_BY_BUDGET', 'HOLD', 'CAMPAIGN_OUT_OF_BUDGET']")`
+DeliveryStatus|enumeration|The campaign's delivery status. Possible case-sensitive values are: <ul><li>ELIGIBLE</li><li>LIMITED_BY_BUDGET</li><li>HOLD</li><li>CAMPAIGN_OUT_OF_BUDGET</li><li>CAMPAIGN_SUSPENDED</li><li>CAMPAIGN_PAUSED</li></ul>`withCondition("DeliveryStatus NOT_IN ['LIMITED_BY_BUDGET', 'HOLD', 'CAMPAIGN_OUT_OF_BUDGET']")`
 
 
 
