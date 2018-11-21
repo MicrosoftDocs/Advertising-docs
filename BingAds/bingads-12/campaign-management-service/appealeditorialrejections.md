@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Appeals the editorial rejections of one or more ads or keywords that failed editorial review.
+description: Appeals ads or keywords that failed editorial review.
 dev_langs: 
   - csharp
   - java
@@ -12,10 +12,10 @@ dev_langs:
   - python
 ---
 # AppealEditorialRejections Service Operation - Campaign Management
-Appeals the editorial rejections of one or more ads or keywords that failed editorial review.
+Appeals ads or keywords that failed editorial review.
 
 > [!NOTE]
-> Editorial rejection reasons and appeals are not yet supported for responsive search ads. Support will be added in a future release e.g., Q1 calendar year 2019. 
+> Editorial failure reasons and appeals are not yet supported for responsive search ads. Support will be added in a future release e.g., Q1 calendar year 2019. 
 
 ## <a name="request"></a>Request Elements
 The *AppealEditorialRejectionsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

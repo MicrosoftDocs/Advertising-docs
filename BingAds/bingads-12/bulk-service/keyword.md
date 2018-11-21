@@ -232,7 +232,13 @@ The URL of the webpage to take the user to when they click the ad. The keywordâ€
 ## <a name="editorialappealstatus"></a>Editorial Appeal Status
 Determines whether you can appeal the issues found by the editorial review.
 
-Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](../campaign-management-service/appealstatus.md).
+Possible values are described in the table below.
+
+|Value|Description|
+|-----------|---------------|
+|<a name="editorialappealstatusappealable"></a>Appealable|The editorial issue is appealable.|
+|<a name="editorialappealstatusappealpending"></a>AppealPending|The editorial issue is appealable and an appeal has been submitted.|
+|<a name="editorialappealstatusnotappealable"></a>NotAppealable|The editorial issue is not appealable.|
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -255,7 +261,14 @@ A code that identifies the reason for the failure. For a list of possible reason
 ## <a name="editorialstatus"></a>Editorial Status
 The editorial status of the keyword.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [KeywordEditorialStatus Value Set](../campaign-management-service/keywordeditorialstatus.md).
+Possible values are described in the table below.
+
+|Value|Description|
+|-----------|---------------|
+|<a name="editorialstatusactive"></a>Active|The keyword passed editorial review.|
+|<a name="editorialstatusactivelimited"></a>ActiveLimited|The keyword passed editorial review in one or more markets, and one or more elements of the keyword is undergoing editorial review in another market. For example the keyword passed editorial review for Canada and is still pending review in the United States.|
+|<a name="editorialstatusdisapproved"></a>Disapproved|The keyword failed editorial review.|
+|<a name="editorialstatusinactive"></a>Inactive|One or more elements of the keyword is undergoing editorial review.|
 
 **Add:** Read-only  
 **Update:** Read-only  

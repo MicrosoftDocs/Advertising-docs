@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the values that you use to determine whether an editorial rejection is appealable.
+description: Defines the values that you use to determine whether an editorial issue is appealable.
 ---
 # AppealStatus Value Set - Campaign Management
-Defines the values that you use to determine whether an editorial rejection is appealable.
+Defines the values that you use to determine whether an editorial issue is appealable.
 
 ## Syntax
 ```xml
@@ -42,9 +42,9 @@ Defines the values that you use to determine whether an editorial rejection is a
 
 |Value|Description|
 |-----------|---------------|
-|<a name="appealable"></a>Appealable|The editorial rejection is appealable.|
-|<a name="appealpending"></a>AppealPending|The editorial rejection is appealable and an appeal has been submitted.|
-|<a name="notappealable"></a>NotAppealable|The editorial rejection is not appealable.|
+|<a name="appealable"></a>Appealable|The editorial issue is appealable.|
+|<a name="appealpending"></a>AppealPending|The editorial issue is appealable and an appeal has been submitted.|
+|<a name="notappealable"></a>NotAppealable|The editorial issue is not appealable.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

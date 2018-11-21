@@ -9,7 +9,7 @@ description: Defines an ad group level product partition with one condition that
 # ProductPartition Data Object - Campaign Management
 Defines an ad group level product partition with one condition that helps determine whether a product from the Bing Merchant Center store gets served as a product ad.
 
-The *ProductPartition* criterion can be included within [BiddableAdGroupCriterion](biddableadgroupcriterion.md) and [NegativeAdGroupCriterion](negativeadgroupcriterion.md). Also note that campaign level [ProductScope](productscope.md) can be added to [BiddableCampaignCriterion](biddablecampaigncriterion.md). Duplicate or conflicting product conditions attempted within an ad group's product partition group will be rejected by the [ApplyProductPartitionActions](applyproductpartitionactions.md) operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level [ProductScope](productscope.md).
+The *ProductPartition* criterion can be included within [BiddableAdGroupCriterion](biddableadgroupcriterion.md) and [NegativeAdGroupCriterion](negativeadgroupcriterion.md). Also note that campaign level [ProductScope](productscope.md) can be added to [BiddableCampaignCriterion](biddablecampaigncriterion.md). Duplicate or conflicting product conditions attempted within an ad group's product partition group will fail via the [ApplyProductPartitionActions](applyproductpartitionactions.md) operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level [ProductScope](productscope.md).
 
 > [!TIP]
 > For an implementation overview, see the [Bing Shopping Campaigns](../guides/product-ads.md) technical guide.

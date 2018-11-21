@@ -114,10 +114,10 @@ The file size limit for upload in production is 100MB or 2.5 million rows. For s
 ## <a name="campaign"></a>Campaign Management Service
 
 ### <a name="editorialsupport"></a>Editorial Support
-Sandbox supports limited editorial reviews and appeals. Sandbox does not support testing of editorial rejections reason operations, for example [GetEditorialReasonsByIds](../campaign-management-service/geteditorialreasonsbyids.md).
+Sandbox supports limited editorial reviews and appeals. You cannot get the reasons for editorial issues in sandbox as you could in production, for example via the [GetEditorialReasonsByIds](../campaign-management-service/geteditorialreasonsbyids.md) service operation.
 
 #### Magic Terms
-If you know of editorial terms that will fail editorial review, you can use them. Otherwise, to test your application's editorial logic, use the following format to construct a *magic* term that determines, by country, whether editorial will approve or reject the ad or keyword, or put it in a pending state. These magic terms are supported in sandbox only.
+If you know of editorial terms that will fail editorial review, you can use them. Otherwise, to test your application's editorial logic, use the following format to construct a *magic* term that determines by country whether or not the ad or keyword will pass editorial review. These magic terms are supported in sandbox only.
 
 {*MatchType*}{*Language*}{*FlagArea*}{m}{*StatusPerCountry*}{m1}
 
