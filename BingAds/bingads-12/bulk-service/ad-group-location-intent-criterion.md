@@ -153,8 +153,7 @@ Represents the association status between the ad group and the criterion. If the
 
 **Add:** Read-only. The status will always be set to *Active* when you add criterions. If you upload another value e.g., *Foo* the result file will contain the same value although the criterion is active.  
 **Update:** Optional  
-**Delete:** Required. The Status must be set to *Deleted*. To delete a specific location intent criterion, you must upload the [Status](#status) and [Parent Id](#parentid). 
-
+**Delete:** Required. The Status must be set to *Deleted*. To delete a specific location intent criterion, you must upload the [Status](#status) and [Parent Id](#parentid).  
 
 ## <a name="target"></a>Target
 Determines whether a person must be physically located in the targeted location in order for the ad to display.
@@ -165,6 +164,6 @@ The following values are supported. The default value is *PeopleInOrSearchingFor
   - Use *PeopleIn* if you want to show ads to people in your targeted location.  
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field, then it must be set to a valid value i.e., *PeopleInOrSearchingForOrViewingPages*, *PeopleSearchingForOrViewingPages*, or *PeopleIn*.  
 **Delete:** Read-only  
  

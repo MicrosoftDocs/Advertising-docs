@@ -197,7 +197,7 @@ The default value is *All*.
 In the bulk download and upload results file, this field will never be empty. If you did not specify a device preference, the default value of *All* will be returned.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *All*.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *All*.    
 **Delete:** Read-only  
 
 ## <a name="editorialappealstatus"></a>Editorial Appeal Status
@@ -248,7 +248,6 @@ The following validation rules apply to *Final Url* for app install ads.
 
 *  The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 *  You may specify only one Url in this field.
-*  Each URL is delimited by a semicolon and space ("; ").
 *  Usage of '{' and '}' is only allowed to delineate tags, for example "{lpurl}".
 *  Each URL must be a well-formed URL starting with either http:// or https://.
 
@@ -312,7 +311,7 @@ The maximum input length of the copy is 71 characters. Note that for ad groups t
 
 The ad copy cannot contain the newline (\n) character.
 
-**Add:** Optional  
+**Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
@@ -343,5 +342,5 @@ The following validation rules apply to tracking templates. For more details abo
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  

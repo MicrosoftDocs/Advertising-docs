@@ -187,7 +187,7 @@ Supported values are negative one hundred (-100) through positive nine hundred (
 Set this field to zero (0) if you do not want any bid adjustment for audience ads.
 
 **Add:** Optional. If you do not set this field the system default bid adjustment will be used. The system default bid adjustment is currently zero (0), and is subject to change.   
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value* the system default bid adjustment will be used. The *delete_value* keyword removes the previous setting. The system default bid adjustment is currently zero (0), and is subject to change. If you do not specify any value this field will be ignored.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value* then effectively the system default bid adjustment will be used. The system default bid adjustment is currently zero (0), and is subject to change.     
 **Delete:** Read-only  
 
 ## <a name="bidstrategymaxcpc"></a>Bid Strategy MaxCpc
@@ -228,11 +228,11 @@ The bid strategy type for how you want to manage your bids. For details about su
 A bid strategy type set at the [Ad Group](ad-group.md) or [Keyword](keyword.md) level will take precedence over the campaign level bid strategy type. 
 
 For campaigns you can use any of the following bid strategy types. 
-*  *EnhancedCpc* - Use the enhanced CPC bid strategy type to set your ad group and keyword bids, and Bing Ads will automatically adjust your bids in real time so that you bid up to 30% higher on users that are more likely to convert and up to 100% less on users less likely to convert. Bing Ads will still respect your campaign budget limit.  
-*  *ManualCpc* - This is the default bid strategy type for your campaigns. Use the manual CPC bid strategy type if you will set your [Ad Group](ad-group.md) or [Keyword](keyword.md) bids, and Bing Ads will use these bids every time.  
-*  *MaxClicks* - Defines an automated bidding strategy to maximize clicks given your maximum allowed budget.  
-*  *MaxConversions* - Defines an automated bidding strategy to maximize conversions given your maximum allowed budget.    
-*  *TargetCpa* - Defines an automated bidding strategy to maximize conversions at the target cost per acquisition (CPA). If you use this strategy type then you must also include the *Bid Strategy TargetCpa* field.    
+* EnhancedCpc - Use the enhanced CPC bid strategy type to set your ad group and keyword bids, and Bing Ads will automatically adjust your bids in real time so that you bid up to 30% higher on users that are more likely to convert and up to 100% less on users less likely to convert. Bing Ads will still respect your campaign budget limit.  
+* ManualCpc - This is the default bid strategy type for your campaigns. Use the manual CPC bid strategy type if you will set your [Ad Group](ad-group.md) or [Keyword](keyword.md) bids, and Bing Ads will use these bids every time.  
+* MaxClicks - Defines an automated bidding strategy to maximize clicks given your maximum allowed budget.  
+* MaxConversions - Defines an automated bidding strategy to maximize conversions given your maximum allowed budget.    
+* TargetCpa - Defines an automated bidding strategy to maximize conversions at the target cost per acquisition (CPA). If you use this strategy type then you must also include the [Bid Strategy TargetCpa](#bidstrategytargetcpa) field.    
 
 > [!IMPORTANT] 
 > If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
@@ -247,7 +247,7 @@ For campaigns you can use any of the following bid strategy types.
 > You can set your campaign's bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
 
 **Add:** Optional. Until January 28th, 2019 if you do not set this field, then *ManualCpc* is used by default. From January 28th, 2019 onwards if you do not set this field, then *EnhancedCpc* will be used by default.
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.  If you update the bid strategy type, then any existing values in the *Bid Strategy MaxCpc* and *Bid Strategy TargetCpa* fields will be deleted.       
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.  If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc) and [Bid Strategy TargetCpa](#bidstrategytargetcpa) fields will be deleted.       
 **Delete:** Read-only  
 
 ## <a name="budget"></a>Budget
@@ -271,10 +271,10 @@ Business rules differ between shared and unshared budgets, and described in the 
 ## <a name="budgetid"></a>Budget Id
 The system generated identifier of the [Budget](budget.md) that this campaign shares with other campaigns in the account.
 
-If the field is empty, then the campaign is not using a shared budget. If the field is not empty and the value is greater than zero, then the campaign is using a shared budget. If the campaign is using a shared budget, and you prefer that it use its own budget amount, set this element to '0' (zero) and set the *Budget* field to a valid budget amount.
+If the field is empty, then the campaign is not using a shared budget. If the field is not empty and the value is greater than zero, then the campaign is using a shared budget. If the campaign is using a shared budget, and you prefer that it use its own budget amount, set this element to '0' (zero) and set the [Budget](#budget) field to a valid budget amount.
 
 > [!NOTE]
-> This value corresponds to the *Id* column of the [Budget](budget.md) record.
+> This value corresponds to the *Id* field of the [Budget](budget.md) record.
 	
 **Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -283,7 +283,7 @@ If the field is empty, then the campaign is not using a shared budget. If the fi
 ## <a name="budgetname"></a>Budget Name
 The name of the shared budget.
 
-This value corresponds to the *Budget Name* column of the [Budget](budget.md) record. You can only set this value using the [Budget](budget.md) record.
+This value corresponds to the *Budget Name* field of the [Budget](budget.md) record. You can only set this value using the [Budget](budget.md) record.
 
 **Add:** Read-only  
 **Update:** Read-only    
@@ -312,7 +312,7 @@ The name of the campaign.
 **Delete:** Read-only and Required  
 
 > [!NOTE]
-> For update and delete, you must specify either the *Id* or *Campaign* field.
+> For update and delete, you must specify either the [Id](#id) or [Campaign](#campaign) field.
 
 ## <a name="campaigntype"></a>Campaign Type
 The type of the campaign.
@@ -336,11 +336,11 @@ The country code for the Bing Merchant Center store.
 The Bing Merchant Center store catalog will be filtered to only include products for the specified country. 
 
 For example, the following country code values are supported.
-* *AU* - Australia
-* *GB* - United Kingdom
-* *DE* - Germany
-* *FR* - France
-* *US* - United States
+* AU - Australia
+* GB - United Kingdom
+* DE - Germany
+* FR - France
+* US - United States
 
 To get the current list of supported country codes use the [GetBSCCountries](../campaign-management-service/getbsccountries.md) operation via the Campaign Management service.
 
@@ -396,7 +396,7 @@ The system generated identifier of the campaign.
 **Delete:** Read-only and Required  
 
 > [!NOTE]
-> For update and delete, you must specify either the *Id* or *Campaign* field.
+> For update and delete, you must specify either the [Id](#id) or [Campaign](#campaign) field.
 
 ## <a name="keywordrelevance"></a>Keyword Relevance
 A numeric score that indicates how likely your ads will be clicked and how well your keyword competes against other keywords targeting the same traffic. This score predicts whether your keyword is likely to lead to a click on your ads, taking into account how well your keyword has performed in the past relative to your ad's position.
@@ -452,9 +452,11 @@ Your ad language setting determines the language you will use when you write you
 > [!IMPORTANT]
 > If languages are set at both the ad group and campaign level, the ad group level language will override the campaign level language. 
 
-For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). Each language in the bulk field is delimited by a semicolon and space ("; "), for example *English; French; German*. You can specify multiple languages individually in the list, or only include one string in this field set to *All* if you want to target all languages.
+The supported language strings for Search and Shopping campaigns are: All, Danish, Dutch, English, Finnish, French, German, Italian, Norwegian, Portuguese, Spanish, Swedish, and TraditionalChinese. Each language in this bulk field is delimited by a semicolon and space ("; "), for example *English; French; German*. You can specify multiple languages individually in the list, or only include one language string in this field set to "All" if you want to target all languages.
 
-For Audience campaigns you must include all languages i.e., set this field to *All*. 
+For Audience campaigns you must include all languages i.e., set this field to All.
+
+For Dynamic Search Ads campaigns, only English is supported.
 
 **Add:** Required for Audience campaigns, and otherwise this field is optional. If there is no campaign language set, then the language of each ad group within the campaign will be required.   
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. Once campaign languages are set, you cannot delete all of them. The list of languages that you specify during update replaces the previous settings i.e. does not append to the existing set of languages.  
@@ -599,7 +601,7 @@ The following validation rules apply to tracking templates. For more details abo
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="website"></a>Website

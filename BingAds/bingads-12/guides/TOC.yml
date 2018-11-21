@@ -500,6 +500,9 @@
         - name: Account
           href: ../bulk-service/account.md
           displayName: BulkAccount
+        - name: Account Action Ad Extension
+          href: ../bulk-service/account-action-ad-extension.md
+          displayName: BulkAccountActionAdExtension
         - name: Account App Ad Extension
           href: ../bulk-service/account-app-ad-extension.md
           displayName: BulkAccountAppAdExtension
@@ -524,9 +527,15 @@
         - name: Account Structured Snippet Ad Extension
           href: ../bulk-service/account-structured-snippet-ad-extension.md
           displayName: BulkAccountStructuredSnippetAdExtension
+        - name: Action Ad Extension
+          href: ../bulk-service/action-ad-extension.md
+          displayName: BulkActionAdExtension
         - name: Ad Group
           href: ../bulk-service/ad-group.md
           displayName: BulkAdGroup
+        - name: Ad Group Action Ad Extension
+          href: ../bulk-service/ad-group-action-ad-extension.md
+          displayName: BulkAdGroupActionAdExtension
         - name: Ad Group Age Criterion
           href: ../bulk-service/ad-group-age-criterion.md
           displayName: BulkAdGroupAgeCriterion
@@ -665,6 +674,9 @@
         - name: Campaign
           href: ../bulk-service/campaign.md
           displayName: BulkCampaign
+        - name: Campaign Action Ad Extension
+          href: ../bulk-service/campaign-action-ad-extension.md
+          displayName: BulkCampaignActionAdExtension
         - name: Campaign Age Criterion
           href: ../bulk-service/campaign-age-criterion.md
           displayName: BulkCampaignAgeCriterion

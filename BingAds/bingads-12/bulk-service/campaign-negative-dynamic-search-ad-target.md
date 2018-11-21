@@ -202,7 +202,7 @@ The criterion name that you can use to identify the criteria, for example you ca
 The criterion name length must be between 1 to 2048, inclusive.
 
 **Add:** Optional. If you do not specify any name, by default the name will be set to a concatenated list of conditions. Each condition will be delimited by the *and* keyword. For example if the conditions are a) *Url contains flower* , b) *Url contains book* , and c) *PageContent contains seattle*, then the default criterion name will be *Url contains flower and Url contains book and PageContent contains seattle*. If all condition and value fields are empty, then you are effectively targeting all webpages and the name will be set to *All Webpages*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you specify the *delete_value* keyword, then the criterion name will be updated to the default value i.e. either *All Webpages* or a concatenated list of criterions.  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you specify the *delete_value* keyword, then effectively the criterion name will be updated to the default value i.e. either *All Webpages* or a concatenated list of criterions.  
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id

@@ -450,8 +450,6 @@ AutoTargetStatus|DynamicAdTargetStatus
 AvgCPP|AverageCpp
 BenchmarkCTR|BenchmarkCtr
 Bid strategy type|BidStrategyType
-BusinessCatId|BusinessCategoryId
-BusinessCatName|BusinessCategoryName
 CallDuration|Duration
 CallEndTime|EndTime
 CallStartTime|StartTime
@@ -547,6 +545,9 @@ HistoricLandingPageExperience|HistoricalLandingPageExperience
 
 In addition, the 2054 error code is renamed from InvalidGrainForHistoricQualityScoreColumns to InvalidGrainForHistoricalQualityScoreColumns.
 
+#### <a name="reporting-internalcolumns"></a>Internal Columns
+The *BusinessCategoryId*, *BusinessCategoryName*, *BusinessListingId*, and *BusinessListingName* values are removed from the [AdPerformanceReportColumn ](../reporting-service/adperformancereportcolumn.md), [AdGroupPerformanceReportColumn ](../reporting-service/adgroupperformancereportcolumn.md), and [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) value sets. These columns were previously only available for internal use. 
+
 ### <a name="reporting-newfeatures"></a>New Features
 
 #### <a name="reporting-reporttimezone"></a>Report Time Zone
@@ -554,4 +555,3 @@ Bing Ads API version 12 now lets you choose a [ReportTimeZone](../reporting-serv
 
 #### <a name="reporting-reporttimeperiod"></a>More Flexible Report Time Periods
 Bing Ads API version 12 now lets you choose *LastFourteenDays* and *LastThirtyDays* from the [ReportTimePeriod](../reporting-service/reporttimeperiod.md) value set when you submit a report request. 
-

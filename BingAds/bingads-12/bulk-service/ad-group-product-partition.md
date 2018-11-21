@@ -136,7 +136,7 @@ The name of the ad group that contains the product partition.
 ## <a name="bid"></a>Bid
 The amount to bid in the auction.
 
-**Add:** Required if *Is Excluded* is *FALSE* and the *Sub Type* is *Unit*, and otherwise the bid is not allowed.  
+**Add:** Required if [Is Excluded](#isexcluded) is *FALSE* and the [Sub Type](#subtype) is *Unit*, and otherwise the bid is not allowed.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
@@ -187,7 +187,7 @@ The URL can contain a maximum of 1,024 characters. If the URL does not specify a
 > This destination URL is used if specified; otherwise, the destination URL is determined by the corresponding value of the 'Link' that you specified for the product offer in your Bing Merchant Center catalog.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove the destination URL, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.   
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id

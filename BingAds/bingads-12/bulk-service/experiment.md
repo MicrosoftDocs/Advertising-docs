@@ -50,7 +50,7 @@ After the experiment campaign is created you can update all of its settings exce
 You can let the experiment run through the [End Date](#enddate), pause it temporarily, or end the experiment early. To pause an experiment, you must pause the base campaign. Pausing the base campaign also pauses the experiment campaign and the experiment itself. To end the experiment early, set the experiment [Status](#status) to *Ended*. The experiment campaign will be paused when you end the experiment. Once an experiment is ended, it cannot be restarted. You could later promote, graduate, or delete an ended experiment. 
 
 You have several options to use what you learned from the experiment. 
-- You can have your base campaign adopt all of the the settings of the experiment campaign i.e., set the [Status](#status) to *Promoted*. The experiment campaign settings and entities will be copied back to the base campaign, and the experiment campaign will be paused. The base campaign will once again have 100% of its original budget and traffic. The original system identifiers will be retained as much as possible. There could be some exceptions, for example if you deleted ad groups from the base campaign after the experiment campaign was created. Any changes to the base campaign settings during the experiment e.g., new ad groups will effectively be deleted. 
+- You can have your base campaign adopt all of the settings of the experiment campaign i.e., set the [Status](#status) to *Promoted*. The experiment campaign settings and entities will be copied back to the base campaign, and the experiment campaign will be paused. The base campaign will once again have 100% of its original budget and traffic. The original system identifiers will be retained as much as possible. There could be some exceptions, for example if you deleted ad groups from the base campaign after the experiment campaign was created. Any changes to the base campaign settings during the experiment e.g., new ad groups will effectively be deleted. 
 - You can graduate your experiment as an independent campaign with its own budget and ad traffic i.e., set the [Status](#status) to *Graduated*. The base campaign will once again have 100% of its original budget and traffic, and the graduated campaign (previously an experiment campaign) will start with the same budget as the base campaign. 
 - Instead of using all of the experiment campaign settings, you might want to merge a subset of the experiment campaign settings to your base campaign. 
 
@@ -66,7 +66,7 @@ Format Version,,,,,,,,6,,,
 Experiment,Active,-20,,ClientIdGoesHere,11/12/2018,12/31/2019,My Campaign - Experiment,50,-111,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkExperiment* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkExperiment* class (coming soon), instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -166,7 +166,7 @@ If you do not specify an end date, the ads will not expire. Once the end date ha
 The end date is inclusive. For example, if you set the end date to 12/31/2020, the experiment will end at 11:59 PM on 12/31/2020. The time is relative to the [base campaign](#basecampaignid) time zone.
 
 **Add:**  Optional. If you leave this element nil or empty the experiment will not expire until you take further action e.g., set the experiment [status](#status) to *Ended*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete the current end date and effectively set no end date, set this field to the "delete_value" string. When you retrieve the experiment next time, this field will not be set.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete the current end date and effectively set no end date, set this field to the *delete_value* string. When you retrieve the experiment next time, this field will not be set.    
 **Delete:** Read-only  
 
 ## <a name="experimentcampaignid"></a>Experiment Campaign Id
@@ -211,12 +211,12 @@ The name must be unique (case-insensitive) among all campaigns and experiments w
 ## <a name="startdate"></a>Start Date
 The date that the experiment campaign can begin serving ads.
 
-The start date cannot be updated after the experiment has begun i.e., once the start date has arrived.
+
 
 The start date is inclusive. For example, if you set start date to 5/5/2020, the experiment will start at 12:00 AM on 5/5/2020. The time is relative to the [base campaign](#basecampaignid) time zone.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The start date cannot be updated after the experiment has begun i.e., once the start date has arrived.  
 **Delete:** Read-only  
 
 ## <a name="status"></a>Status
@@ -234,7 +234,7 @@ Possible status values are described in the table below.
 |Graduated|Your experiment has been graduated as an independent campaign with its own budget and ad traffic. The base campaign once again has 100% of its original budget and traffic, and the graduated campaign (previously an experiment campaign) has started with the same budget as the base campaign.|
 |Graduating|The experiment campaign is being graduated as an independent campaign with its own budget and ad traffic. Upon successful completion, the status will automatically be set to Graduated. If the graduation failed, then nothing changed and the state will return to Active. (The service does not return the internal "GraduateFailed" status.) You can try again by setting the status to Graduated, and if graduation of the experiment still does not succeed please contact support for assistance.|
 |Paused|The base campaign and experiment campaign are temporarily paused and not eligible to serve ads. The experiment [Start Date](#startdate) has arrived and the [End Date](#enddate) has not yet passed.<br/><br/>Please note that when the base campaign is paused, the experiment campaign and the experiment itself are also paused. Likewise when the base campaign is unpaused, the experiment campaign and the experiment itself are unpaused. When an experiment is unpaused it will move to either an Active or Scheduled state.|
-|Promoted|Your base campaign adopted all of the the settings of the experiment campaign. The experiment campaign settings and entities have been copied back to the base campaign, and the experiment campaign is paused. The base campaign once again has 100% of its original budget and traffic. The original system identifiers should be retained as much as possible. There could be some exceptions, for example if you deleted ad groups from the base campaign after the experiment campaign was created. Any changes to the base campaign settings during the experiment e.g., new ad groups have effectively been deleted.|
+|Promoted|Your base campaign adopted all of the settings of the experiment campaign. The experiment campaign settings and entities have been copied back to the base campaign, and the experiment campaign is paused. The base campaign once again has 100% of its original budget and traffic. The original system identifiers should be retained as much as possible. There could be some exceptions, for example if you deleted ad groups from the base campaign after the experiment campaign was created. Any changes to the base campaign settings during the experiment e.g., new ad groups have effectively been deleted.|
 |PromoteFailed|The experiment campaign settings could not be applied to the base campaign. You can try again by setting the status to Promoted, and if the PromoteFailed status persists please contact support for assistance.|
 |Promoting|The experiment campaign settings are being applied to the base campaign. Upon successful completion, the status will automatically be set to Promoted, and otherwise the status will be set to PromoteFailed. If promotion fails the experiment status can only be set to Deleted. Before you delete the experiment and experiment campaign, consider whether you want to copy any settings from the experiment campaign to the base campaign yourself e.g., via the Bing Ads web application or API.|
 |Scheduled|The experiment campaign has been created, and the experiment is scheduled to begin serving ads once the [Start Date](#startdate) arrives.|
