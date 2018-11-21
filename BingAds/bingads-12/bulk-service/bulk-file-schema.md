@@ -41,6 +41,7 @@ Records available for upload and download using [Format Version](#formatversions
 Record Type  |Supported Campaign Types  
 ---------|---------
 [Account](account.md)|All         
+[Account Action Ad Extension](account-action-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account App Ad Extension](account-app-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Callout Ad Extension](account-callout-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Image Ad Extension](account-image-ad-extension.md)|DynamicSearchAds<br/>Search         
@@ -48,8 +49,10 @@ Record Type  |Supported Campaign Types
 [Account Price Ad Extension](account-price-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Sitelink Ad Extension](account-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Account Structured Snippet Ad Extension](account-structured-snippet-ad-extension.md)|DynamicSearchAds<br/>Search         
+[Action Ad Extension](action-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group](ad-group.md)|All         
 [Ad Group Age Criterion](ad-group-age-criterion.md)|All         
+[Ad Group Action Ad Extension](ad-group-action-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group App Ad Extension](ad-group-app-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group Callout Ad Extension](ad-group-callout-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Ad Group Company Name Criterion](ad-group-company-name-criterion.md)|All  
@@ -96,6 +99,7 @@ Record Type  |Supported Campaign Types
 [Callout Ad Extension](callout-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign](campaign.md)|All         
 [Campaign Age Criterion](campaign-age-criterion.md)|All         
+[Campaign Action Ad Extension](campaign-action-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign App Ad Extension](campaign-app-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Call Ad Extension](campaign-call-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Callout Ad Extension](campaign-callout-ad-extension.md)|DynamicSearchAds<br/>Search      

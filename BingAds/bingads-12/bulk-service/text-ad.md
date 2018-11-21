@@ -12,7 +12,7 @@ dev_langs:
 Defines a text ad that can be downloaded and uploaded in a bulk file.
 
 > [!IMPORTANT]
-> Standard Text Ads have been deprecated in favor of Expanded Text Ads (EXTAs). Support for adding and updating standard text ads (STAs) ended on July 31, 2017. Now, advertisers can get and delete, but can no longer add new STAs or update existing standard text ads with Destination URLs. One exception to the rule, is that you can still update the STA status e.g. from *Active* to *Paused*. Otherwise attempts to add or update STAs will result in the *CampaignServiceAdTypeInvalid* error. 
+> Standard Text Ads have been deprecated in favor of Expanded Text Ads (EXTAs). Support for adding and updating standard text ads (STAs) ended on July 31, 2017. Now, advertisers can get and delete, but can no longer add new STAs or update existing standard text ads. One exception to the rule, is that you can still update the STA status e.g. from *Active* to *Paused*. Otherwise attempts to add or update STAs will result in the *CampaignServiceAdTypeInvalid* error. 
 > 
 > It is important to note that all your existing STAs will continue to serve alongside EXTAs for the foreseeable future. While there is no date on when STAs will stop serving, you can expect an update to all of our customers well in advance once we make the decision to sunset serving STAs.
 
@@ -140,31 +140,31 @@ The *Ad Format Preference* field is used to indicate whether or not you prefer t
 
 Possible values are *Audience Ad* and *All*. If set to *All*, the ad will be eligible for both search and audience ad formats. If set to *Audience Ad*, the ad will only be eligible for the audience ad format.
 
-**Add:** Optional. If you do not set this field when creating a text ad, by default the ad format preference will be set to *All*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value* when updating a text ad, the ad format preference will be set to the default value i.e. *All*.    
+**Add:** Not supported  
+**Update:** Not supported    
 **Delete:** Read-only  
 
 ## <a name="adgroup"></a>Ad Group
 The name of the ad group that contains the ad.
 
-**Add:** Read-only and Required  
+**Add:** Not supported  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
 > [!NOTE]
-> For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
+> For update and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
 
 ## <a name="campaign"></a>Campaign
 The name of the campaign that contains the ad group and ad.
 
-**Add:** Read-only  
+**Add:** Not supported  
 **Update:** Read-only  
 **Delete:** Read-only  
 
 ## <a name="clientid"></a>Client Id
 Used to associate records in the bulk upload file with records in the results file. The value of this field is not used or stored by the server; it is simply copied from the uploaded record to the corresponding result record. It may be any valid string to up 100 in length.
 
-**Add:** Optional  
+**Add:** Not supported  
 **Update:** Optional    
 **Delete:** Read-only  
 
@@ -184,8 +184,8 @@ In a bulk file, the list of custom parameters are formatted as follows.
     > [!NOTE] 
     > With the Bulk service the Key must be formatted with surrounding braces and a leading underscore, for example if the Key is promoCode, it must be formatted as {_promoCode}. With the Campaign Management service you cannot specify the surrounding braces and underscore.
 
-**Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
+**Add:** Not supported  
+**Update:** Not supported    
 **Delete:** Read-only  
 
 ## <a name="devicepreference"></a>Device Preference
@@ -200,8 +200,8 @@ In the bulk download and upload results file, this field will never be empty. If
 > [!IMPORTANT]
 > You must define at least one text ad per ad group that is not mobile preferred, otherwise the ad copy of all text ads will be eligible for all devices.
 
-**Add:** Optional. If you do not set this field when creating a text ad, by default the device preference will be set to *All*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *All*.    
+**Add:** Not supported  
+**Update:** Not supported    
 **Delete:** Read-only  
 
 ## <a name="displayurl"></a>Display Url
@@ -211,8 +211,8 @@ The subdirectory of the display URL can contain dynamic text strings such as {ke
 
 The maximum input length of the URL is 200 characters, and can contain dynamic text strings. However, the ad will fail to display if the URL exceeds 35 characters after dynamic text substitution occurs.
 
-**Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
+**Add:** Not supported  
+**Update:** Not supported     
 **Delete:** Read-only  
 
 ## <a name="editorialappealstatus"></a>Editorial Appeal Status
@@ -220,21 +220,21 @@ Determines whether you can appeal the issues found by the editorial review.
 
 Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](../campaign-management-service/appealstatus.md).
 
-**Add:** Read-only  
+**Add:** Not supported  
 **Update:** Read-only  
 **Delete:** Read-only  
 
 ## <a name="editoriallocation"></a>Editorial Location
 The component or property of the ad that failed editorial review. 
 
-**Add:** Read-only  
+**Add:** Not supported  
 **Update:** Read-only  
 **Delete:** Read-only  
 
 ## <a name="editorialreasoncode"></a>Editorial Reason Code
 A code that identifies the reason for the failure. For a list of possible reason codes, see [Editorial Reason Codes](../guides/editorial-failure-reason-codes.md). 
 
-**Add:** Read-only  
+**Add:** Not supported  
 **Update:** Read-only  
 **Delete:** Read-only  
 
@@ -243,7 +243,7 @@ The editorial status of the ad.
 
 Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdEditorialStatus Value Set](../campaign-management-service/adeditorialstatus.md).
 
-**Add:** Read-only  
+**Add:** Not supported  
 **Update:** Read-only  
 **Delete:** Read-only  
 
@@ -252,7 +252,7 @@ The term that failed editorial review.
 
 This field will not be set if a combination of terms caused the failure or if the failure was based on a policy violation.
 
-**Add:** Read-only  
+**Add:** Not supported  
 **Update:** Read-only  
 **Delete:** Read-only  
 
@@ -278,14 +278,14 @@ Also note that  if the *Tracking Template* or *Custom Parameter* fields are set,
 > [!NOTE]
 > This URL is used only if the keyword does not specify a final URL.
 
-**Add:** Optional  
-**Update:** Optional    
+**Add:** Not supported  
+**Update:** Not supported    
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
 The system generated identifier of the ad.
 
-**Add:** Read-only  
+**Add:** Not supported  
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
@@ -309,8 +309,8 @@ The following validation rules apply to Final URLs and Final Mobile URLs.
 > [!NOTE]
 > This URL is used only if the keyword does not specify a *Mobile Final Url*.
 
-**Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Add:** Not supported  
+**Update:** Not supported    
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -319,7 +319,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 > [!NOTE]
 > The date and time value reflects the date and time at the server, not the client. For information about the format of the date and time, see the dateTime entry in [Primitive XML Data Types](https://go.microsoft.com/fwlink/?linkid=859198).
 
-**Add:** Read-only  
+**Add:** Not supported  
 **Update:** Read-only  
 **Delete:** Read-only  
 
@@ -328,19 +328,19 @@ The system generated identifier of the ad group that contains the ad.
 
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 
-**Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](ad-group.md) record. This is recommended if you are adding new ads to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Not supported  
 **Update:** Read-only  
 **Delete:** Read-only  
 
 > [!NOTE]
-> For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
+> For update and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
 
 ## <a name="publishercountries"></a>Publisher Countries
 The list of publisher countries whose editorial guidelines do not allow the specified [term](#editorialterm).
 
 In a bulk file, the list of publisher countries are delimited with a semicolon (;).
 
-**Add:** Read-only  
+**Add:** Not supported  
 **Update:** Read-only  
 **Delete:** Read-only  
 
@@ -349,7 +349,7 @@ The status of the ad.
 
 Possible values are *Active*, *Paused*, or *Deleted*. 
 
-**Add:** Optional. The default value is *Active*.  
+**Add:** Not supported  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Required. The Status must be set to *Deleted*.
 
@@ -362,8 +362,8 @@ The maximum input length of the copy is 300 characters, and can contain dynamic 
 
 The text cannot contain the newline (\n) character.
 
-**Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Add:** Not supported  
+**Update:** Not supported    
 **Delete:** Read-only  
 
 ## <a name="title"></a>Title
@@ -377,8 +377,8 @@ The maximum input length of the title is 80 characters, and can contain dynamic 
 
 The title cannot contain the newline (\n) character.
 
-**Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Add:** Not supported  
+**Update:** Not supported    
 **Delete:** Read-only  
 
 ## <a name="trackingtemplate"></a>Tracking Template
@@ -394,6 +394,6 @@ The following validation rules apply to tracking templates. For more details abo
 
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
-**Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Add:** Not supported  
+**Update:** Not supported    
 **Delete:** Read-only  

@@ -108,7 +108,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
 |<a name="titlepart1"></a>TitlePart1|The title part 1 attribute of an ad.|
 |<a name="titlepart2"></a>TitlePart2|The title part 2 attribute of an ad.|
-|<a name="titlepart3"></a>TitlePart3|Reserved.|
+|<a name="titlepart3"></a>TitlePart3|The title part 3 attribute of an ad.|
 |<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
 |<a name="totalclicks"></a>TotalClicks|The number of billable and non-billable times that the ad extension was clicked.|
 

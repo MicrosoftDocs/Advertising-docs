@@ -155,10 +155,10 @@ The name of the ad group that contains the keyword.
 ## <a name="bid"></a>Bid
 The highest price that you want to pay each time someone clicks your ad.
 
-In addition to setting a default bid, you can set custom bids for each keyword. If you set a custom bid for a particular keyword, this bid amount will override the default bid you initially set when you created your ad group. We recommend custom bidding for advanced advertisers who want more control of their pay-per-click rates.
+In addition to setting a default ad group level bid, you can set custom bids for each keyword. If you set a custom bid for a particular keyword, this bid amount will override the default bid set for your ad group. We recommend custom bidding for advanced advertisers who want more control of their pay-per-click rates.
 
 **Add:** Optional. If you do not specify a keyword level bid, the [Ad Group](ad-group.md) bid for the corresponding search or content match type will be used. For more information, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.   
 **Delete:** Read-only  
 
 ## <a name="bidstrategytype"></a>Bid Strategy Type
@@ -223,10 +223,10 @@ In a bulk file, the list of custom parameters are formatted as follows.
 The URL of the webpage to take the user to when they click the ad. The keyword’s destination URL is used if specified; otherwise, the ad’s destination URL is used.
 
 > [!IMPORTANT]
-> If you are currently using Destination URLs, you must eventually replace them with Final URLs. For more information, see [URL Tracking with Upgraded URLs](../guides/url-tracking-upgraded-urls.md).
+> Starting November 2018 the keyword destination URL cannot be added or updated. You can use [Final Url](#finalurl) instead, otherwise Bing Ads will use the ad's Final URL. For more details see [Migrating your keyword destination URLs to final URLs](https://advertise.bingads.microsoft.com/en-us/blog/post/august-2018/migrating-your-keyword-destination-urls-to-final-urls).
 
-**Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.     
+**Add:** Not allowed  
+**Update:** Not allowed     
 **Delete:** Read-only  
 
 ## <a name="editorialappealstatus"></a>Editorial Appeal Status
@@ -290,7 +290,7 @@ The following validation rules apply to Final URLs and Final Mobile URLs.
 Also note that  if the *Tracking Template* or *Custom Parameter* fields are set, then the *Final Url* field is required.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -397,7 +397,7 @@ The following validation rules apply to Final URLs and Final Mobile URLs.
 Also note that if the TrackingUrlTemplate or UrlCustomParameters element are set, then at least one final URL is required.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -423,7 +423,7 @@ When implementing dynamic text in your ad copy you should provide a default stri
 Also note that if the ad group only has one ad, and if that ad uses {Param1} but does not provide a default string e.g. {Param1:default}, then you must supply a valid Param1 value for that substitution. Otherwise this keyword cannot be added or updated.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="param2"></a>Param2
@@ -438,7 +438,7 @@ When implementing dynamic text in your ad copy you should provide a default stri
 Also note that if the ad group only has one ad, and if that ad uses {Param2} but does not provide a default string e.g. {Param2:default}, then you must supply a valid *Param2* value for that substitution. Otherwise this keyword cannot be added or updated. 
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="param3"></a>Param3
@@ -453,7 +453,7 @@ When implementing dynamic text in your ad copy you should provide a default stri
 Also note that if the ad group only has one ad, and if that ad uses {Param3} but does not provide a default string e.g. {Param3:default}, then you must supply a valid *Param3* value for that substitution. Otherwise this keyword cannot be added or updated. 
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
@@ -513,5 +513,5 @@ The following validation rules apply to tracking templates. For more details abo
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete or remove an existing value, set this field to *delete_value*. The *delete_value* keyword removes the previous setting.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  

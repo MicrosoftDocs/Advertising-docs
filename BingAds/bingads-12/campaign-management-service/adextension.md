@@ -10,6 +10,7 @@ description: Defines the base object of an ad extension.
 Defines the base object of an ad extension.
 
 Do not try to instantiate an *AdExtension*. You can create one or more following objects that derive from it.
+- [ActionAdExtension](actionadextension.md)
 - [AppAdExtension](appadextension.md)
 - [CallAdExtension](calladextension.md)
 - [CalloutAdExtension](calloutadextension.md)

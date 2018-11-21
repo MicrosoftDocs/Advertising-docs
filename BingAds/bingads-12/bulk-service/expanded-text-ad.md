@@ -149,7 +149,7 @@ The *Ad Format Preference* field is used to indicate whether or not you prefer t
 Possible values are *Audience Ad* and *All*. If set to *All*, the ad will be eligible for both search and audience ad formats. If set to *Audience Ad*, the ad will only be eligible for the audience ad format.
 
 **Add:** Optional. If you do not set this field when creating an expanded text ad, by default the ad format preference will be set to *All*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value*, the ad format preference will be set to the default value i.e. *All*.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value*, the ad format preference will effectively be set to the default value i.e. *All*.    
 **Delete:** Read-only  
 
 ## <a name="adgroup"></a>Ad Group

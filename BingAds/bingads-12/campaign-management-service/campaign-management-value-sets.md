@@ -12,7 +12,7 @@ The Campaign Management service defines the following value sets.
 |Value Set|Description|
 |---|---|
 |[AccountPropertyName](accountpropertyname.md)|Defines the name of account level properties.|
-|[ActionAdExtensionActionType](actionadextensionactiontype.md)|Reserved for future use.|
+|[ActionAdExtensionActionType](actionadextensionactiontype.md)|Defines the possible options for action text that can be displayed in an action ad extension.|
 |[AdAdditionalField](adadditionalfield.md)|Defines a list of optional [Ad](ad.md) properties that you can request when calling [GetAdsByAdGroupId](getadsbyadgroupid.md), [GetAdsByEditorialStatus](getadsbyeditorialstatus.md), and [GetAdsByIds](getadsbyids.md).|
 |[AdEditorialStatus](adeditorialstatus.md)|Defines the editorial review status values of an ad.|
 |[AdExtensionEditorialStatus](adextensioneditorialstatus.md)|Defines the editorial review status values of an ad extension.|

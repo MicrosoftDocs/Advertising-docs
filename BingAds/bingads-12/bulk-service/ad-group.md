@@ -208,8 +208,8 @@ For example, let's say your partner bids $5 USD on a keyword. If your bid boost 
 > [!NOTE]
 > This setting is only applicable for ad groups in Bing Shopping campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
 
-**Add:** Required if the bid option is set to BidBoost, and otherwise you may not set this field.  
-**Update:** Optional if the bid option is set to BidBoost, and otherwise you may not set this field.       
+**Add:** Required if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.  
+**Update:** Optional if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.       
 **Delete:** Read-only  
 
 ## <a name="bidoption"></a>Bid Option
@@ -267,8 +267,6 @@ Used to associate records in the bulk upload file with records in the results fi
 The default bid to use when the user’s query and the ad group’s keywords match by using either a broad, exact, or phrase match comparison.
 
 The minimum and maximum bid range depends on the account's currency. For more information, see [Currencies](../guides/currencies.md).
-
-You can set a search bid if the *Search Network* ad distribution channel is set to *On*.
 
 Specifying a broad, exact, or phrase match bid at the keyword level overrides the ad group’s search bid value for the corresponding match type.
 
@@ -375,11 +373,11 @@ Your ad language setting determines the language you will use when you write you
 > [!IMPORTANT]
 > If languages are set at both the ad group and campaign level, the ad group level language will override the campaign level language. 
 
-For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage).
+The supported language strings for Search and Shopping campaigns are: Danish, Dutch, English, Finnish, French, German, Italian, Norwegian, Portuguese, Spanish, Swedish, and TraditionalChinese.
 
-For ad groups in Dynamic Search Ads campaigns, only *English* is supported.
+For ad groups in Dynamic Search Ads campaigns, only English is supported.
 
-For ad groups in Audience campaigns, ad group level language is not supported, and you must set the [Language](campaign.md#language) field of the ad group's [Campaign](#campaign.md) to *All*.
+For ad groups in Audience campaigns, ad group level language is not supported, and you must set the [Language](campaign.md#language) field of the ad group's [Campaign](#campaign.md) to "All".
 
 **Add:** Optional if the campaign has one or more languages set, and otherwise the language is required for most campaign types. You are not allowed to set this element for ad groups in Audience campaigns.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove the language and defer to the campaign level languages, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. The ad group language cannot be removed until campaign language updates have been processed, which could take up to 12 hours after the campaign languages have been set for the first time. The 12 hour wait time is expected to be removed during Q1 calendar year 2019, and you will then be able to remove ad groups immediately.   
@@ -391,8 +389,8 @@ The flat amount of your cooperative bid.
 > [!NOTE]
 > This setting is only applicable for ad groups in Bing Shopping campaigns that are setup for Cooperative bidding. Not everyone is enabled for Cooperative bidding yet. If you don't, don't worry. It's coming soon.
 
-**Add:** Required if the bid option is set to BidBoost, and otherwise you may not set this field.  
-**Update:** Optional if the bid option is set to BidBoost, and otherwise you may not set this field.       
+**Add:** Required if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.  
+**Update:** Optional if the [Bid Option](#bidoption) is set to BidBoost, and otherwise you may not set this field.       
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -459,12 +457,10 @@ If you specify a time period that spans multiple days, the quality score is the 
 ## <a name="startdate"></a>Start Date
 The date that the ads in the ad group can begin serving; otherwise, the service can begin serving the ads in the ad group the day that the ad group becomes active.
 
-The start date cannot be updated after the ad group is submitted.
-
-The start date is inclusive. For example, if you set *Start Date* to 11/5/2017, the ads in the ad group will start at 12:00 AM on 11/5/2017. The time is based on the time zone that you specify at the campaign level.
+The start date is inclusive. For example, if you set *Start Date* to 5/5/2019, the ads in the ad group will start at 12:00 AM on 5/5/2019. The time is based on the time zone that you specify at the campaign level.
 
 **Add:** Optional. If you do not set the start date, then it will default to today's date and the service can begin serving the ads in the ad group as soon as the ad group status is active.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The start date cannot be updated after the ad group is submitted i.e., once the start date has arrived.  
 **Delete:** Read-only  
 
 ## <a name="status"></a>Status

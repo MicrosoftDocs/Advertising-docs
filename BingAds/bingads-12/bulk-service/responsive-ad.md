@@ -170,7 +170,7 @@ A brief, punchy reason for customers to click your ad right now.
 The possible values are AddToCart, ApplyNow, BookNow, BookTravel, Buy, BuyNow, ContactUs, Download, GetQuote, Install, LearnMore, NoButton, OpenLink, OrderNow, RegisterNow, SeeMore, ShopNow, SignUp, Subscribe, and VisitSite.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.     
 **Delete:** Read-only 
 
 ## <a name="campaign"></a>Campaign
@@ -255,10 +255,7 @@ The domain portion of the URL in combination with the path 1 and path 2 strings 
 
 The following validation rules apply to Final URLs and Final Mobile URLs.
 
-- The length of the URL is limited to 2,048 characters.
-
-    > [!NOTE]
-    > The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
+- The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 
 - You may specify up to 10 items for both Final URLs and Final Mobile URLs; however, only the first item in each list is used for delivery. The service allows up to 10 for potential forward compatibility.
 
@@ -275,8 +272,8 @@ Also note that  if the *Tracking Template* or *Custom Parameter* fields are set,
 > [!NOTE]
 > This URL is used only if the keyword does not specify a final URL.
 
-**Add:** Optional  
-**Update:** Optional    
+**Add:** Required  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
 **Delete:** Read-only  
 
 ## <a name="headline"></a>Headline
@@ -339,10 +336,7 @@ The mobile landing page URL.
 
 The following validation rules apply to Final URLs and Final Mobile URLs.
 
-- The length of the URL is limited to 2,048 characters.
-
-    > [!NOTE]
-    > The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
+- The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
 
 - You may specify up to 10 items for both Final URLs and Final Mobile URLs; however, only the first item in each list is used for delivery. The service allows up to 10 for potential forward compatibility.
 
@@ -358,7 +352,7 @@ The following validation rules apply to Final URLs and Final Mobile URLs.
 > This URL is used only if the keyword does not specify a *Mobile Final Url*.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -439,7 +433,7 @@ The length of the string is limited to 90 characters.
 The text cannot contain the newline (\n) character.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="trackingtemplate"></a>Tracking Template
@@ -456,5 +450,5 @@ The following validation rules apply to tracking templates. For more details abo
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  

@@ -87,47 +87,24 @@ Sandbox should not be used in the same capacity as production.
 - Please do not use more than one thread.  
 
 ## <a name="adinsight"></a>Ad Insight Service
-Opportunities are updated daily in sandbox for existing campaigns, ad groups, and keywords to test the end to end coding workflow. You may get test opportunities for up to 1,000 keywords across all accounts per Bing Ads customer. You should not use the test data to infer or expect similar performance for your campaigns, ad groups, or keywords in production.
+Sandbox supports a limited set of keywords for testing Ad Insight service operations. You should not use the test data to infer or expect similar estimates for your keywords in production. Some of the limitations are described in the following table. 
 
-> [!NOTE]
-> Sandbox opportunity data is refreshed and updated each weekend, and is available by Monday.
-
-### <a name="supportedkeywords"></a>Supported Keywords
-Sandbox supports a limited set of keywords for testing Ad Insight service operations. You should not use the test data to infer or expect similar estimates for your keywords in production. You may use the following set of keywords to test your application.
-
-|Supported Keywords for Ad Insight Sandbox|
-|---------------------------------------------|
-|air|
-|auto|
-|best deals|
-|booking|
-|car information|
-|care|
-|deal of the day|
-|discounts|
-|entertainment|
-|finances|
-|games|
-|hotel reviews|
-|insurance comparison|
-|sport|
-|the hotel|
-
-### <a name="ad-insight-serviceops"></a>Service Operations
-Ad Insight service operations differ from production, and limitations are described in the following table.
+> [!TIP]
+> Use the Ad Insight service in production instead of sandbox. Sandbox only offers a subset of production service operations, and the insight data lags behind production. Sandbox opportunity data is refreshed and updated each weekend, and is available by Monday. The keyword idea data in sandbox may lag behind production by several months. If an operation fails due to an invalid date range, try submitting the request again with an earlier date range.
 
 |Service Operation|Sandbox Limitations|
 |---------------------|-----------------------|
 |[GetBidLandscapeByKeywordIds](../ad-insight-service/getbidlandscapebykeywordids.md)|Not supported. You can call the operation with existing keyword identifiers, but no data is returned.|
-|[GetEstimatedBidByKeywordIds](../ad-insight-service/getestimatedbidbykeywordids.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).|
-|[GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).|
-|[GetEstimatedPositionByKeywordIds](../ad-insight-service/getestimatedpositionbykeywordids.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br/><br/>To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
-|[GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br/><br/>To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
-|[GetHistoricalKeywordPerformance](../ad-insight-service/gethistoricalkeywordperformance.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br/><br/>The *MatchType* and *AdPosition* elements must be set to *Aggregate*.<br/><br/>The *Devices* element must be set to *Computers* or left nil.|
-|[GetHistoricalSearchCount](../ad-insight-service/gethistoricalsearchcount.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br/><br/>The *EndMonthAndYear* element must be set to the previous month. For example if today's date is October 10, 2017, the end month should be October 2017.<br/><br/>The *Devices* element must be set to *Computers* or left nil.|
+|[GetEstimatedBidByKeywordIds](../ad-insight-service/getestimatedbidbykeywordids.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.|
+|[GetEstimatedBidByKeywords](../ad-insight-service/getestimatedbidbykeywords.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.|
+|[GetEstimatedPositionByKeywordIds](../ad-insight-service/getestimatedpositionbykeywordids.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.<br/><br/>To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
+|[GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.<br/><br/>To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
+|[GetHistoricalKeywordPerformance](../ad-insight-service/gethistoricalkeywordperformance.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.<br/><br/>The *MatchType* and *AdPosition* elements must be set to *Aggregate*.<br/><br/>The *Devices* element must be set to *Computers* or left nil.|
+|[GetHistoricalSearchCount](../ad-insight-service/gethistoricalsearchcount.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.<br/><br/>The *EndMonthAndYear* element must be set to the previous month. For example if today's date is October 10, 2017, the end month should be October 2017.<br/><br/>The *Devices* element must be set to *Computers* or left nil.|
 |[GetKeywordCategories](../ad-insight-service/getkeywordcategories.md)|There should be no difference in sandbox versus production.|
-|[GetKeywordDemographics](../ad-insight-service/getkeyworddemographics.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br/><br/>The *Devices* element must be set to *Computers* or left nil.|
-|[GetKeywordLocations](../ad-insight-service/getkeywordlocations.md)|A limited set of keywords are supported. For more information, see [Supported Keywords](#supportedkeywords).<br/><br/>The *Devices* element must be set to *Computers* or left nil.|
+|[GetKeywordDemographics](../ad-insight-service/getkeyworddemographics.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.<br/><br/>The *Devices* element must be set to *Computers* or left nil.|
+|[GetKeywordIdeas](../ad-insight-service/getkeywordideas.md)|Sandbox test data is refreshed every 3 months, so you will need to set an earlier dater range.|
+|[GetKeywordLocations](../ad-insight-service/getkeywordlocations.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.<br/><br/>The *Devices* element must be set to *Computers* or left nil.|
 |[SuggestKeywordsForUrl](../ad-insight-service/suggestkeywordsforurl.md)|There should be no difference in sandbox versus production.|
 |[SuggestKeywordsFromExistingKeywords](../ad-insight-service/suggestkeywordsfromexistingkeywords.md)|If the SuggestionType is set to 1, there should be no difference in behavior compared to production.<br/><br/>For suggestion type values 2, 3, and 4, the results are limited to the set of keywords provided in sandbox. For more information, see [Supported Keywords](#supportedkeywords).|
 
