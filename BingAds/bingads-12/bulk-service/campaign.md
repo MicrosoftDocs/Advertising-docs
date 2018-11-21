@@ -452,7 +452,7 @@ Your ad language setting determines the language you will use when you write you
 > [!IMPORTANT]
 > If languages are set at both the ad group and campaign level, the ad group level language will override the campaign level language. 
 
-For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). Each language in the bulk field is delimited by a semicolon and space ("; "), for example *English; French; German*. You can specify multiple languages individually in the list, or only include one string in this field set to *All* if you want to target all languages.
+For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). Each language in the bulk field is delimited by a semicolon (";"), for example *English;French;German*. You can specify multiple languages individually in the list, or only include one string in this field set to *All* if you want to target all languages.
 
 For Audience campaigns you must include all languages i.e., set this field to *All*. 
 
