@@ -20,7 +20,7 @@ The following Bulk CSV example would add a new Review Ad Extension to the accoun
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Text,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Is Exact,Source,Url
 Format Version,,,,,,,,,,,,6,,,,,
-Review Ad Extension,Active,-16,0,,,ClientIdGoesHere,,,12/31/2018,Review Text,,,(Monday[09:00-21:00]),FALSE,TRUE,Review Source Name,http://review.contoso.com
+Review Ad Extension,Active,-16,0,,,ClientIdGoesHere,,,12/31/2019,Review Text,,,(Monday[09:00-21:00]),FALSE,TRUE,Review Source Name,http://review.contoso.com
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkReviewAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -178,7 +178,7 @@ This field will not be set if a combination of terms caused the failure or if th
 ## <a name="enddate"></a>End Date
 The ad extension scheduled end date string formatted as *MM/DD/YYYY*.
 
-The end date is inclusive. For example, if you set this field to 3/10/2017, the ad extensions will stop being shown at 11:59 PM on 3/10/2017.
+The end date is inclusive. For example, if you set this field to 12/31/2019, the ad extensions will stop being shown at 11:59 PM on 12/31/2019.
 
 **Add:** Optional. If you do not specify an end date, the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the end date and the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.    
@@ -238,7 +238,7 @@ The combined length of the *Source* and *Text* strings must not exceed 67 charac
 ## <a name="startdate"></a>Start Date
 The ad extension scheduled start date string formatted as *MM/DD/YYYY*.
 
-The start date is inclusive. For example, if you set *StartDate* to 3/5/2017, the ad extensions will start being shown at 12:00 AM on 3/5/2017.
+The start date is inclusive. For example, if you set *StartDate* to 5/5/2019, the ad extensions will start being shown at 12:00 AM on 5/5/2019.
 
 **Add:** Optional. If you do not specify a start date, the ad extensions are immediately eligible to be scheduled during the day and time ranges.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the start date and the ad extensions are immediately eligible to be scheduled during the day and time ranges.    

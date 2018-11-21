@@ -151,7 +151,7 @@ The description of the product audience. Use a description to help you remember 
 The description can contain a maximum of 1,024 characters.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id

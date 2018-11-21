@@ -20,7 +20,7 @@ The following Bulk CSV example would add a new app ad extension to the account's
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Text,Destination Url,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,App Platform,App Id
 Format Version,,,,,,,,,,,,,6,,,,
-App Ad Extension,Active,-11,0,,,ClientIdGoesHere,,,12/31/2018,Contoso,DestinationUrlGoesHere,,,(Monday[09:00-21:00]),FALSE,Windows,AppStoreIdGoesHere
+App Ad Extension,Active,-11,0,,,ClientIdGoesHere,,,12/31/2019,Contoso,DestinationUrlGoesHere,,,(Monday[09:00-21:00]),FALSE,Windows,AppStoreIdGoesHere
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAppAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -182,7 +182,7 @@ The default value is *All*.
 In the bulk download and upload results file, this field will never be empty. If you did not specify a device preference, the default value of *All* will be returned.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *All*.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *All*.    
 **Delete:** Read-only  
 
 ## <a name="editoriallocation"></a>Editorial Location
@@ -220,7 +220,7 @@ This field will not be set if a combination of terms caused the failure or if th
 ## <a name="enddate"></a>End Date
 The ad extension scheduled end date string formatted as *MM/DD/YYYY*.
 
-The end date is inclusive. For example, if you set this field to 3/10/2017, the ad extensions will stop being shown at 11:59 PM on 3/10/2017.
+The end date is inclusive. For example, if you set this field to 12/31/2019, the ad extensions will stop being shown at 11:59 PM on 12/31/2019.
 
 **Add:** Optional. If you do not specify an end date, the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the end date and the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.    
@@ -264,7 +264,7 @@ In a bulk file, the list of publisher countries are delimited with a semicolon (
 ## <a name="startdate"></a>Start Date
 The ad extension scheduled start date string formatted as *MM/DD/YYYY*.
 
-The start date is inclusive. For example, if you set *StartDate* to 3/5/2017, the ad extensions will start being shown at 12:00 AM on 3/5/2017.
+The start date is inclusive. For example, if you set *StartDate* to 5/5/2019, the ad extensions will start being shown at 12:00 AM on 5/5/2019.
 
 **Add:** Optional. If you do not specify a start date, the ad extensions are immediately eligible to be scheduled during the day and time ranges.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the start date and the ad extensions are immediately eligible to be scheduled during the day and time ranges.    
@@ -284,7 +284,7 @@ The text displayed in the app ad extension.
 
 The text can contain a maximum of 35 characters.
 
-**Add:** Optional  
+**Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
 **Delete:** Read-only  
 
@@ -294,7 +294,7 @@ Determines whether to use the account time zone or the time zone of the search u
 Set this property to *TRUE* if you want the ad extensions to be shown in the search user's time zone, and otherwise set it to *FALSE*.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set and the account time zone will be used.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
 **Delete:** Read-only  
 
 ## <a name="version"></a>Version

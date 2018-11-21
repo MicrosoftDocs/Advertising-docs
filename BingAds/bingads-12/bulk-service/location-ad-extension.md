@@ -20,7 +20,7 @@ The following Bulk CSV example would add a new Location Ad Extension to the acco
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Business Name,Phone Number,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Address Line 1,Address Line 2,Postal Code,City,State Or Province Code,Province Name,Latitude,Longitude,Country Code
 Format Version,,,,,,,,,,,,,6,,,,,,,,,,,
-Location Ad Extension,Active,-15,0,,,ClientIdGoesHere,,,12/31/2018,Contoso Shoes,206-555-0100,,,(Monday[09:00-21:00]),FALSE,1234 Washington Place,Suite 1210,98608,Woodinville,,WA,0,0,US
+Location Ad Extension,Active,-15,0,,,ClientIdGoesHere,,,12/31/2019,Contoso Shoes,206-555-0100,,,(Monday[09:00-21:00]),FALSE,1234 Washington Place,Suite 1210,98608,Woodinville,,WA,0,0,US
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkLocationAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -181,7 +181,7 @@ The second line of the address.
 The second line can contain a maximum of 80 characters.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is deleted.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.   
 **Delete:** Read-only  
 
 ## <a name="businessname"></a>Business Name
@@ -254,7 +254,7 @@ This field will not be set if a combination of terms caused the failure or if th
 ## <a name="enddate"></a>End Date
 The ad extension scheduled end date string formatted as *MM/DD/YYYY*.
 
-The end date is inclusive. For example, if you set this field to 3/10/2017, the ad extensions will stop being shown at 11:59 PM on 3/10/2017.
+The end date is inclusive. For example, if you set this field to 12/31/2019, the ad extensions will stop being shown at 11:59 PM on 12/31/2019.
 
 **Add:** Optional. If you do not specify an end date, the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the end date and the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.    
@@ -277,11 +277,14 @@ The system generated identifier of the ad extension.
 **Delete:** Read-only and Required  
 
 ## <a name="latitude"></a>Latitude
-The latitude specified in micro degrees. The latitude must be greater than or equal to -85000000 and less than or equal to +85000000.
+The latitude specified in degrees. The latitude must be greater than or equal to -85 and less than or equal to +85.
 
-The latitude and longitude coordinates are used to mark the business’ location on Bing Maps when the user clicks the address on the ad. If the specified coordinates are not within the range of valid values, the service determines the coordinates based on the address.
+> [!NOTE]
+> The Campaign Management service uses micro degrees i.e., from -85000000 to 85000000. When you use the BulkLocationAdExtension via the SDKs you should use micro degrees, because the BulkLocationAdExtension implementation converts from micro degrees and writes the value as degrees in the Bulk file. 
 
-If you specify the known coordinates, the service does not confirm whether the specified coordinates match the specified business address. If you do not provide the coordinates, the Bulk service uses the businesses’ address to determine the coordinates.
+The latitude and longitude coordinates are used to mark the business' location on Bing Maps when the user clicks the address on the ad. If the specified coordinates are not within the range of valid values, the service determines the coordinates based on the address.
+
+If you specify the known coordinates, the service does not confirm whether the specified coordinates match the specified business address. If you do not provide the coordinates, the Bulk service uses the businesses' address to determine the coordinates.
 
 > [!NOTE]
 > When adding more than 10 location ad extensions, the service resolves coordinates offline, and otherwise resolves coordinates up front during execution of the service operation. The location will not be used in an ad until the coordinates are determined, which can take from seconds to minutes depending on the number of location ad extensions being added and the current demand.
@@ -291,11 +294,14 @@ If you specify the known coordinates, the service does not confirm whether the s
 **Delete:** Read-only  
 
 ## <a name="longitude"></a>Longitude
-The longitude specified in micro degrees. The longitude must be greater than or equal to -180000000 and less than or equal to +180000000.
+The longitude specified in degrees. The longitude must be greater than or equal to -180 and less than or equal to +180.
 
-The latitude and longitude coordinates are used to mark the business’ location on Bing Maps when the user clicks the address on the ad. If the specified coordinates are not within the range of valid values, the service determines the coordinates based on the address.
+> [!NOTE]
+> The Campaign Management service uses micro degrees i.e., from -180000000 to 180000000. When you use the BulkLocationAdExtension via the SDKs you should use micro degrees, because the BulkLocationAdExtension implementation converts from micro degrees and writes the value as degrees in the Bulk file. 
 
-If you specify the known coordinates, the service does not confirm whether the specified coordinates match the specified business address. If you do not provide the coordinates, the Bulk service uses the businesses’ address to determine the coordinates.
+The latitude and longitude coordinates are used to mark the business' location on Bing Maps when the user clicks the address on the ad. If the specified coordinates are not within the range of valid values, the service determines the coordinates based on the address.
+
+If you specify the known coordinates, the service does not confirm whether the specified coordinates match the specified business address. If you do not provide the coordinates, the Bulk service uses the businesses' address to determine the coordinates.
 
 > [!NOTE]
 > When adding more than 10 location ad extensions, the service resolves coordinates offline, and otherwise resolves coordinates up front during execution of the service operation. The location will not be used in an ad until the coordinates are determined, which can take from seconds to minutes depending on the number of location ad extensions being added and the current demand.
@@ -324,14 +330,14 @@ This bulk field maps to the *Id* field of the [Account](account.md) record.
 **Delete:** Read-only  
   
 ## <a name="phonenumber"></a>Phone Number
-The business’ clickable phone number to include in the ad. 
+The business' clickable phone number to include in the ad. 
 
 The phone number can contain a maximum of 35 characters and must be valid for the specified country.
 
 If the campaign also includes a call extension, the phone number in the call extension will override the location ad extension's phone number.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="postalcode"></a>Postal Code
@@ -340,7 +346,7 @@ The postal or zip code.
 The postal code can contain a maximum of 80 characters.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is deleted.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="provincename"></a>Province Name
@@ -348,10 +354,10 @@ The name of the state or province where the street address is located, for examp
 
 The name can contain a maximum of 50 characters.
 
-You must specify either *Province Name* or *State or Province Code*.
+You must specify either [Province Name](#provincename) or [State Or Province Code](#stateorprovincecode).
 
 > [!NOTE]
-> The *State or Province Code* and *Province Name* are not required if the *Country Code* field is set to either FR, IE, or SG.
+> The [State Or Province Code](#stateorprovincecode) and [Province Name](#provincename) are not required if the [Country Code](#countrycode) field is set to either FR, IE, or SG.
 
 **Add:** Required  
 **Update:** Required   
@@ -369,7 +375,7 @@ In a bulk file, the list of publisher countries are delimited with a semicolon (
 ## <a name="startdate"></a>Start Date
 The ad extension scheduled start date string formatted as *MM/DD/YYYY*.
 
-The start date is inclusive. For example, if you set *StartDate* to 3/5/2017, the ad extensions will start being shown at 12:00 AM on 3/5/2017.
+The start date is inclusive. For example, if you set *StartDate* to 5/5/2019, the ad extensions will start being shown at 12:00 AM on 5/5/2019.
 
 **Add:** Optional. If you do not specify a start date, the ad extensions are immediately eligible to be scheduled during the day and time ranges.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the start date and the ad extensions are immediately eligible to be scheduled during the day and time ranges.    
@@ -380,10 +386,10 @@ A code that identifies the state or province where the street address is located
 
 The code can contain a maximum of 50 characters.
 
-You must specify either *Province Name* or *State or Province Code*.
+You must specify either [Province Name](#provincename) or [State Or Province Code](#stateorprovincecode).
 
 > [!NOTE]
-> The *State or Province Code* and *Province Name* are not required if the *Country Code* field is set to either FR, IE, or SG.
+> The [State Or Province Code](#stateorprovincecode) and [Province Name](#provincename) are not required if the [Country Code](#countrycode) field is set to either FR, IE, or SG.
 
 **Add:** Required  
 **Update:** Required   
@@ -404,7 +410,7 @@ Determines whether to use the account time zone or the time zone of the search u
 Set this property to *TRUE* if you want the ad extensions to be shown in the search user's time zone, and otherwise set it to *FALSE*.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set and the account time zone will be used.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
 **Delete:** Read-only  
 
 ## <a name="version"></a>Version

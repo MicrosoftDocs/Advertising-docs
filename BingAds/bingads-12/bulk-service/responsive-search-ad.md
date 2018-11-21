@@ -38,7 +38,7 @@ Format Version,,,,,,,,,6,,,,,,,,,,,
 Responsive Search Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,False,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,"[{""text"":""Find New Customers & Increase Sales!"",""pinnedField"":""Description1""},{""text"":""Start Advertising on Contoso Today.""}]",seattle,shoe sale,,"[{""text"":""Contoso"",""pinnedField"":""Headline1""},{""text"":""Quick & Easy Setup""},{""text"":""Seamless Integration""}]"
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkResponsiveSearchAd* class (coming soon), instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkResponsiveSearchAd* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -195,7 +195,7 @@ The *Ad Format Preference* field is used to indicate whether or not you prefer t
 Possible values are *Audience Ad* and *All*. If set to *All*, the ad will be eligible for both search and audience ad formats. If set to *Audience Ad*, the ad will only be eligible for the audience ad format.
 
 **Add:** Optional. If you do not set this field when creating a responsive search ad, by default the ad format preference will be set to *All*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value* when updating a responsive search ad, the ad format preference will be set to the default value i.e. *All*.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value*, the ad format preference will effectively be set to the default value i.e. *All*.    
 **Delete:** Read-only  
 
 ## <a name="adgroup"></a>Ad Group
@@ -324,7 +324,7 @@ Reserved for limited pilot usage e.g. pharmaceutical customers.
 The domain portion of the URL in combination with the path 1 and path 2 strings cannot exceed 67 characters.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.     
 **Delete:** Read-only 
 
 ## <a name="editorialappealstatus"></a>Editorial Appeal Status
@@ -507,7 +507,7 @@ The following validation rules apply to Final URLs and Final Mobile URLs.
 > This URL is used only if the keyword does not specify a *Mobile Final Url*.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -548,7 +548,7 @@ The path cannot contain the forward slash (/) or newline (\n) characters.
 If the path includes a space, it will be replaced with an underscore (_) when the ad is shown.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="path2"></a>Path 2
@@ -569,7 +569,7 @@ The path cannot contain the forward slash (/) or newline (\n) characters.
 If the path includes a space, it will be replaced with an underscore (_) when the ad is shown.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="publishercountries"></a>Publisher Countries
@@ -604,5 +604,5 @@ The following validation rules apply to tracking templates. For more details abo
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  

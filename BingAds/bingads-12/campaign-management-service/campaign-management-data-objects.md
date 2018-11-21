@@ -13,7 +13,7 @@ The Campaign Management service defines the following data objects.
 |---|---|
 |[AccountMigrationStatusesInfo](accountmigrationstatusesinfo.md)|Defines an object that contains migration status for an account.|
 |[AccountProperty](accountproperty.md)|Maps an account level property name to a string value.|
-|[ActionAdExtension](actionadextension.md)|Reserved for future use.|
+|[ActionAdExtension](actionadextension.md)|Defines an action ad extension that can be included in an ad.|
 |[Ad](ad.md)|Defines the base object of an ad.|
 |[AdApiError](adapierror.md)|Defines an error object that contains the details that explain why the service operation failed.|
 |[AdApiFaultDetail](adapifaultdetail.md)|Defines a fault object that operations return when generic errors occur, such as an authentication error.|
