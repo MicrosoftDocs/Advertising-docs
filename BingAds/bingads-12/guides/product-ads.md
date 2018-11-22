@@ -78,7 +78,7 @@ To create a Bing Shopping campaign, follow these steps.
 
 3. Upload an [Ad Group](../bulk-service/ad-group.md) and set its *Parent Id* field to the *Id* of the campaign added above.
 
-4. Upload one or more [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md) records which represent product partition nodes in a tree structure that will be used to further refine the product catalog offers. Duplicate or conflicting product conditions attempted within an ad group's product partition group will be rejected by the upload operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level [Campaign Product Scope](../bulk-service/campaign-product-scope.md). For example given one ad group and one campaign, the [Campaign Product Scope](../bulk-service/campaign-product-scope.md) and [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md) may each have *Product Condition 1* set to CategoryL1 and *Product Value 1* set to Animals &amp; Pet Supplies, and the service will not throw any error or warning for a duplicate condition.
+4. Upload one or more [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md) records which represent product partition nodes in a tree structure that will be used to further refine the product catalog offers. Duplicate or conflicting product conditions attempted within an ad group's product partition group will fail during the upload operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level [Campaign Product Scope](../bulk-service/campaign-product-scope.md). For example given one ad group and one campaign, the [Campaign Product Scope](../bulk-service/campaign-product-scope.md) and [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md) may each have *Product Condition 1* set to CategoryL1 and *Product Value 1* set to Animals &amp; Pet Supplies, and the service will not throw any error or warning for a duplicate condition.
 
     > [!NOTE]
     > There is a 1 to 1 relationship between ad groups and product groups. In other words, each ad group has one product group and vice versa. In the Bing Ads web application, for each ad group you would add one product group with multiple levels of division or multiple partitions. This is the equivalent of adding ad group level product partitions using the Bing Ads API. 
@@ -99,7 +99,7 @@ To create a Bing Shopping campaign, follow these steps.
 
     - To update the *Product Condition 1*, *Product Value 1* or *Is Excluded* field, you must delete the existing product partition tree node and upload a new product partition tree node which will get a new identifier.
 
-    - If any action fails, all remaining actions that might have otherwise succeeded will be rejected.
+    - If any action fails, all remaining actions that might have otherwise succeeded will also fail.
 
     - All product partition node addition and deletion actions must result in a complete tree structure.
 
@@ -147,7 +147,7 @@ To create a Bing Shopping campaign with the Campaign Management API, follow thes
 
 3. Create an [AdGroup](../campaign-management-service/adgroup.md) and add it to the campaign by calling [AddAdGroups](../campaign-management-service/addadgroups.md).
 
-4. Create a list of [AdGroupCriterionAction](../campaign-management-service/adgroupcriterion.md) objects in a tree structure that will be used to further refine the product catalog offers. Apply the list of actions by calling [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md). Duplicate or conflicting product conditions attempted within an ad group's product partition group will be rejected by the [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md) operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level [ProductScope](../campaign-management-service/productscope.md).
+4. Create a list of [AdGroupCriterionAction](../campaign-management-service/adgroupcriterion.md) objects in a tree structure that will be used to further refine the product catalog offers. Apply the list of actions by calling [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md). Duplicate or conflicting product conditions attempted within an ad group's product partition group will fail via the [ApplyProductPartitionActions](../campaign-management-service/applyproductpartitionactions.md) operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level [ProductScope](../campaign-management-service/productscope.md).
 
     > [!NOTE]
     > To retrieve product partitions after they have been applied, call [GetAdGroupCriterionsByIds](../campaign-management-service/getadgroupcriterionsbyids.md) and set the *AdGroupCriterionIds* element to *null* to get all product partitions for the ad group. The product partition with *ParentCriterionId* set to *null* is the root node.
@@ -164,7 +164,7 @@ To create a Bing Shopping campaign with the Campaign Management API, follow thes
     
     - To update the *Condition* or *Attribute* properties, you must delete the existing product partition tree node and add a new product partition tree node which will get a new identifier. Likewise to update from a [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md) to a [NegativeAdGroupCriterion](../campaign-management-service/negativeadgroupcriterion.md) or vice versa, you must delete the existing product partition tree node and add a new product partition tree node which will get a new identifier. 
 
-    - If any action fails, all remaining actions that might have otherwise succeeded will be rejected.
+    - If any action fails, all remaining actions that might have otherwise succeeded will also fail.
 
     - All actions in one call must result in a complete tree structure. If you need to apply more than 5,000 actions per ad group, you must make multiple calls. Get the parent ad group criterion identifiers from the first call, and then add more children as needed in subsequent calls.
 

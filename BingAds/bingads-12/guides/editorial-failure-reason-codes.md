@@ -112,7 +112,7 @@ The following are the possible reason codes for an ad or keyword that failed edi
 |130|Policy Violation: Keywords, ads, and landing pages must not contain language that is denigrating, obscene, illegal, or violent.|
 |131|Policy Violation: Advertising that contains adult content is restricted to advertisers who are participating in the Adult Marketplace Program.|
 |132|Policy Violation: Keywords, ads, and landing pages must not contain content that is denigrating, obscene, illegal, or violent, and must adhere to the adult policy. Adult-enabled advertisers are restricted to terms on the approved Adult Keyword List.|
-|133|Keyword, ad or landing page does not comply with one or more guidelines related to the adult policy.|
+|133|Keyword, ad, or landing page does not comply with one or more guidelines related to the adult policy.|
 |134|Policy Violation: Advertising of adult dating is restricted to advertisers who are participating in the Adult Marketplace Program.|
 |135|Policy Violation: Advertising that contains adult entertainers is restricted to advertisers who are participating in the Adult Marketplace Program.|
 |136|Policy Violation: Advertising for sites that sell adult products or sex toys is restricted to advertisers who are participating in the Adult Marketplace Program.|
@@ -173,12 +173,12 @@ The following are the possible reason codes for an ad or keyword that failed edi
 |197|Our Editorial Team is reviewing this content. The process might take up to two days.|
 |236|Our Editorial Team is reviewing this content. The process might take up to two days.|
 |237|Policy Violation: Bing Ads does not allow the use of dynamic insertion into ad copy within the Adult Marketplace Program.|
-|238|Keyword, ad or landing page does not comply with one or more guidelines related to the adult policy.|
-|239|Keyword, ad or landing page does not comply with one or more guidelines related to the adult policy.|
-|242|Keyword, ad or landing page does not comply with one or more guidelines related to the adult policy.|
-|243|Keyword, ad or landing page does not comply with one or more guidelines related to the adult policy.|
-|248|Creative management workflow rejection.|
-|255|Internal rejection.|
+|238|Keyword, ad, or landing page does not comply with one or more guidelines related to the adult policy.|
+|239|Keyword, ad, or landing page does not comply with one or more guidelines related to the adult policy.|
+|242|Keyword, ad, or landing page does not comply with one or more guidelines related to the adult policy.|
+|243|Keyword, ad, or landing page does not comply with one or more guidelines related to the adult policy.|
+|248|Creative management workflow failure.|
+|255|Internal failure.|
 |256|Policy Violation: Advertising for sites that provide sex chat or adult cams is restricted to advertisers who are participating in the Adult Marketplace Program.|
 |257|Policy Violation: Online sale of R18 adult DVDs is not allowed.|
 |258|Policy Violation: Advertising or websites relating to escorts, strippers, or other adult services is not allowed. Adult-enabled advertisers are restricted to terms on the approved Adult Keyword List.|

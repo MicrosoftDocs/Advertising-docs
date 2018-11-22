@@ -247,7 +247,7 @@ For campaigns you can use any of the following bid strategy types.
 > You can set your campaign's bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
 
 **Add:** Optional. Until January 28th, 2019 if you do not set this field, then *ManualCpc* is used by default. From January 28th, 2019 onwards if you do not set this field, then *EnhancedCpc* will be used by default.
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.  If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc) and [Bid Strategy TargetCpa](#bidstrategytargetcpa) fields will be deleted.       
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc) and [Bid Strategy TargetCpa](#bidstrategytargetcpa) fields will be deleted.       
 **Delete:** Read-only  
 
 ## <a name="budget"></a>Budget
@@ -271,7 +271,7 @@ Business rules differ between shared and unshared budgets, and described in the 
 ## <a name="budgetid"></a>Budget Id
 The system generated identifier of the [Budget](budget.md) that this campaign shares with other campaigns in the account.
 
-If the field is empty, then the campaign is not using a shared budget. If the field is not empty and the value is greater than zero, then the campaign is using a shared budget. If the campaign is using a shared budget, and you prefer that it use its own budget amount, set this element to '0' (zero) and set the [Budget](#budget) field to a valid budget amount.
+If the field is empty, then the campaign is not using a shared budget. If the field is not empty and the value is greater than zero, then the campaign is using a shared budget. If the campaign is using a shared budget, and you prefer that it use its own budget amount, set this field to '0' (zero) and set the [Budget](#budget) field to a valid budget amount.
 
 > [!NOTE]
 > This value corresponds to the *Id* field of the [Budget](budget.md) record.
@@ -374,7 +374,7 @@ The language of the website pages that you want to target for dynamic search ads
 Currently the only supported language code is *EN*.
 
 **Add:** Required if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types.  
-**Update:** Read-only. You cannot update the language.      
+**Update:** Read-only. You cannot update the domain language.      
 **Delete:** Read-only  
 
 ## <a name="experimentid"></a>Experiment Id
@@ -452,9 +452,9 @@ Your ad language setting determines the language you will use when you write you
 > [!IMPORTANT]
 > If languages are set at both the ad group and campaign level, the ad group level language will override the campaign level language. 
 
-The supported language strings for Search and Shopping campaigns are: All, Danish, Dutch, English, Finnish, French, German, Italian, Norwegian, Portuguese, Spanish, Swedish, and TraditionalChinese. Each language in this bulk field is delimited by a semicolon and space ("; "), for example *English; French; German*. You can specify multiple languages individually in the list, or only include one language string in this field set to "All" if you want to target all languages.
+The supported language strings for Search and Shopping campaigns are: All, Danish, Dutch, English, Finnish, French, German, Italian, Norwegian, Portuguese, Spanish, Swedish, and TraditionalChinese. Each language in this bulk field is delimited by a semicolon (";"), for example *English;French;German*. You can specify multiple languages individually in the list, or only include one language string in this field set to "All" if you want to target all languages.
 
-For Audience campaigns you must include all languages i.e., set this field to All.
+For Audience campaigns you must include all languages i.e., set this field to "All".
 
 For Dynamic Search Ads campaigns, only English is supported.
 
@@ -583,7 +583,7 @@ The time zone is used for reporting and applying the start and end date of an ad
 
 For possible values, see [Time Zones](../guides/time-zones.md).
 
-**Add:** Required.   
+**Add:** Required   
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. You may not update the time zone if the campaign contains or has ever contained ad groups in the *Active* or *Paused* state.    
 **Delete:** Read-only  
 

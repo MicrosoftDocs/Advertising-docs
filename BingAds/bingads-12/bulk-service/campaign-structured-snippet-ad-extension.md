@@ -103,7 +103,14 @@ A code that identifies the reason for the failure. For a list of possible reason
 ## <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
+Possible values are described in the table below.
+
+|Value|Description|
+|-----------|---------------|
+|<a name="editorialstatusactive"></a>Active|The ad extension passed editorial review.|
+|<a name="editorialstatusactivelimited"></a>ActiveLimited|The ad extension passed editorial review in one or more markets, and one or more elements of the ad extension is undergoing editorial review in another market. For example the ad extension passed editorial review for Canada and is still pending review in the United States.|
+|<a name="editorialstatusdisapproved"></a>Disapproved|The ad extension failed editorial review.|
+|<a name="editorialstatusinactive"></a>Inactive|One or more elements of the ad extension is undergoing editorial review.|
 
 **Add:** Read-only  
 **Delete:** Read-only  

@@ -218,7 +218,13 @@ The maximum input length of the URL is 200 characters, and can contain dynamic t
 ## <a name="editorialappealstatus"></a>Editorial Appeal Status
 Determines whether you can appeal the issues found by the editorial review.
 
-Possible values include *Appealable*, *AppealPending*, and *NotAppealable*. For more details, see [AppealStatus Value Set](../campaign-management-service/appealstatus.md).
+Possible values are described in the table below.
+
+|Value|Description|
+|-----------|---------------|
+|<a name="editorialappealstatusappealable"></a>Appealable|The editorial issue is appealable.|
+|<a name="editorialappealstatusappealpending"></a>AppealPending|The editorial issue is appealable and an appeal has been submitted.|
+|<a name="editorialappealstatusnotappealable"></a>NotAppealable|The editorial issue is not appealable.|
 
 **Add:** Not supported  
 **Update:** Read-only  
@@ -241,7 +247,14 @@ A code that identifies the reason for the failure. For a list of possible reason
 ## <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdEditorialStatus Value Set](../campaign-management-service/adeditorialstatus.md).
+Possible values are described in the table below.
+
+|Value|Description|
+|-----------|---------------|
+|<a name="editorialstatusactive"></a>Active|The ad passed editorial review.|
+|<a name="editorialstatusactivelimited"></a>ActiveLimited|The ad passed editorial review in one or more markets, and one or more elements of the ad is undergoing editorial review in another market. For example the ad passed editorial review for Canada and is still pending review in the United States.|
+|<a name="editorialstatusdisapproved"></a>Disapproved|The ad failed editorial review.|
+|<a name="editorialstatusinactive"></a>Inactive|One or more elements of the ad is undergoing editorial review.|
 
 **Add:** Not supported  
 **Update:** Read-only  

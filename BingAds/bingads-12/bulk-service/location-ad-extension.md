@@ -236,7 +236,14 @@ A code that identifies the reason for the failure. For a list of possible reason
 ## <a name="editorialstatus"></a>Editorial Status
 The editorial status of the ad extension.
 
-Possible values include *Active*, *ActiveLimited*, *Disapproved*, and *Inactive*. For more details, see [AdExtensionEditorialStatus Value Set](../campaign-management-service/adextensioneditorialstatus.md).
+Possible values are described in the table below.
+
+|Value|Description|
+|-----------|---------------|
+|<a name="editorialstatusactive"></a>Active|The ad extension passed editorial review.|
+|<a name="editorialstatusactivelimited"></a>ActiveLimited|The ad extension passed editorial review in one or more markets, and one or more elements of the ad extension is undergoing editorial review in another market. For example the ad extension passed editorial review for Canada and is still pending review in the United States.|
+|<a name="editorialstatusdisapproved"></a>Disapproved|The ad extension failed editorial review.|
+|<a name="editorialstatusinactive"></a>Inactive|One or more elements of the ad extension is undergoing editorial review.|
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -261,9 +268,18 @@ The end date is inclusive. For example, if you set this field to 12/31/2019, the
 **Delete:** Read-only  
 
 ## <a name="geocodestatus"></a>Geo Code Status
-A status value that indicates whether the business’ latitude and longitude coordinates have been determined.
+A status value that indicates whether the business' latitude and longitude coordinates have been determined.
 
-If you provide the coordinates, the status will be set to *Complete*; otherwise, the status will indicate the progress of determining the coordinates of the specified business’ address. For more details on possible values, see [BusinessGeoCodeStatus Value Set](../campaign-management-service/businessgeocodestatus.md).
+If you provide the coordinates, the status will be set to *Complete*; otherwise, the status will indicate the progress of determining the coordinates of the specified business' address. 
+
+Possible values are described in the table below.
+
+|Value|Description|
+|-----------|---------------|
+|<a name="geocodestatuscomplete"></a>Complete|Successfully determined the latitude and longitude of the business.|
+|<a name="geocodestatusfailed"></a>Failed|Unable to determine the latitude and longitude of the business.|
+|<a name="geocodestatusinvalid"></a>Invalid|Unable to determine the latitude and longitude of the business, possibly because the address did not resolve.|
+|<a name="geocodestatuspending"></a>Pending|In the process of determining the latitude and longitude of the business.|
 
 **Add:** Read-only  
 **Update:** Read-only    
