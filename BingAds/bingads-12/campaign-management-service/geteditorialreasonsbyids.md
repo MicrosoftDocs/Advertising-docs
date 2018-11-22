@@ -4,7 +4,7 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Gets the reasons why the specified entities failed editorial review and whether the rejection is appealable.
+description: Gets the reasons why the specified entities failed editorial review and whether the issue is appealable.
 dev_langs: 
   - csharp
   - java
@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # GetEditorialReasonsByIds Service Operation - Campaign Management
-Gets the reasons why the specified entities failed editorial review and whether the rejection is appealable.
+Gets the reasons why the specified entities failed editorial review and whether the issue is appealable.
 
 > [!NOTE]
 > Editorial rejection reasons and appeals are not yet supported for responsive search ads. Support will be added in a future release e.g., Q1 calendar year 2019. 

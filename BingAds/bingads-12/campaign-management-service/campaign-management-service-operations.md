@@ -28,7 +28,7 @@ The Campaign Management service defines the following service operations.
 |[AddNegativeKeywordsToEntities](addnegativekeywordstoentities.md)|Adds negative keywords to the specified campaign or ad group.|1 *EntityNegativeKeywords*<br/><br/>Each *EntityNegativeKeyword* element can contain up to 20,000 negative keywords.|
 |[AddSharedEntity](addsharedentity.md)|Adds a negative keyword list to the account's library.|1 *SharedEntity*<br/><br/>5,000 *ListItems*|
 |[AddUetTags](adduettags.md)|Adds new Universal Event Tracking (UET) tags that you can add to your website to allow Bing Ads to collect actions people take on your website.|100 *UetTags*|
-|[AppealEditorialRejections](appealeditorialrejections.md)|Appeals the editorial rejections of one or more ads or keywords that failed editorial review.|1,000 *EntityIdToParentIdAssociations*|
+|[AppealEditorialRejections](appealeditorialrejections.md)|Appeals ads or keywords that failed editorial review.|1,000 *EntityIdToParentIdAssociations*|
 |[ApplyOfflineConversions](applyofflineconversions.md)|Applies offline conversions for the account with Microsoft Click Id among other offline conversion data.|1,000 *OfflineConversions*|
 |[ApplyProductPartitionActions](applyproductpartitionactions.md)|Applies an add, update, or delete action to each of the specified [BiddableAdGroupCriterion](biddableadgroupcriterion.md) or [NegativeAdGroupCriterion](negativeadgroupcriterion.md), which each contain a [ProductPartition](productpartition.md).|5,000 *CriterionActions*|
 |[DeleteAdExtensions](deleteadextensions.md)|Deletes one or more ad extensions from the account's ad extension library.|1 *AccountId*<br/><br/>100 *AdExtensionIds*|
@@ -54,7 +54,7 @@ The Campaign Management service defines the following service operations.
 |[GetAdExtensionIdsByAccountId](getadextensionidsbyaccountid.md)|Gets the ad extensions from the account's ad extension library.|1 *AccountId*|
 |[GetAdExtensionsAssociations](getadextensionsassociations.md)|Gets the respective ad extension associations by the specified campaign and ad group identifiers.|1 *AccountId*<br/><br/>100 *EntityIds*|
 |[GetAdExtensionsByIds](getadextensionsbyids.md)|Gets the specified ad extensions from the account's ad extension library.|1 *AccountId*<br/><br/>100 *AdExtensionIds*|
-|[GetAdExtensionsEditorialReasons](getadextensionseditorialreasons.md)|Gets editorial rejection reasons for the respective ad extension and entity associations.|1 *AccountId*<br/><br/>100 *AdExtensionIdToEntityIdAssociations*|
+|[GetAdExtensionsEditorialReasons](getadextensionseditorialreasons.md)|Gets reasons for ad extension editorial issues.|1 *AccountId*<br/><br/>100 *AdExtensionIdToEntityIdAssociations*|
 |[GetAdGroupCriterionsByIds](getadgroupcriterionsbyids.md)|Gets ad group criterions by identifiers and types.|1 *AccountId*<br/><br/>1,000 *AdGroupCriterionIds*|
 |[GetAdGroupsByCampaignId](getadgroupsbycampaignid.md)|Gets the ad groups within the specified campaign.|1 *CampaignId*|
 |[GetAdGroupsByIds](getadgroupsbyids.md)|Gets the specified ad groups within the specified campaign.|1,000 *AdGroupIds*<br/><br/>1 *CampaignId*|
@@ -71,7 +71,7 @@ The Campaign Management service defines the following service operations.
 |[GetCampaignsByIds](getcampaignsbyids.md)|Gets the specified campaigns within an account.|1 *AccountId*<br/><br/>100 *CampaignIds*|
 |[GetConversionGoalsByIds](getconversiongoalsbyids.md)|Gets the specified conversion goals.|100 *ConversionGoalIds*|
 |[GetConversionGoalsByTagIds](getconversiongoalsbytagids.md)|Gets the conversion goals that use the specified UET tags.|100 *TagIds*|
-|[GetEditorialReasonsByIds](geteditorialreasonsbyids.md)|Gets the reasons why the specified entities failed editorial review and whether the rejection is appealable.|1 *AccountId*<br/><br/>1,000 *EntityIdToParentIdAssociations*|
+|[GetEditorialReasonsByIds](geteditorialreasonsbyids.md)|Gets the reasons why the specified entities failed editorial review and whether the issue is appealable.|1 *AccountId*<br/><br/>1,000 *EntityIdToParentIdAssociations*|
 |[GetExperimentsByIds](getexperimentsbyids.md)|Gets experiments by experiment identifiers.|1,000 *ExperimentIds*|
 |[GetGeoLocationsFileUrl](getgeolocationsfileurl.md)|Gets a temporary URL that you can use to download a file that contains identifiers for the geographical locations that you can target or exclude.|Not applicable.|
 |[GetKeywordsByAdGroupId](getkeywordsbyadgroupid.md)|Gets the keywords within an ad group.|1 *AdGroupId*|

@@ -34,7 +34,7 @@ Defines the ad status values that you can use to filter the report data. These v
 |<a name="deleted"></a>Deleted|The report will contain ads that have been deleted.|
 |<a name="paused"></a>Paused|The report will contain ads that are paused.|
 |<a name="pending"></a>Pending|The report will contain ads that are pending editorial review.|
-|<a name="rejected"></a>Rejected|The report will contain ads that have been rejected by editorial review.|
+|<a name="rejected"></a>Rejected|The report will contain ads that have failed editorial review.|
 
 ## Requirements
 Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  
