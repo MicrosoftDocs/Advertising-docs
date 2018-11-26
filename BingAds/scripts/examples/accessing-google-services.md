@@ -13,7 +13,7 @@ ms.topic: "article"
 
 The [example script](#example-script] in this topic shows you how to:
 
-- Use [UrlFetchApp](..\reference\UrlFetchApp.md) to read a file from Google Drive, which contains a single bid multiplier value
+- Use [UrlFetchApp](../reference/UrlFetchApp.md) to read a file from Google Drive, which contains a single bid multiplier value
 - Read a spreadsheet containing keyword IDs, use the IDs to get the keywords, and multiply the keywords' bids by the bid multiplier
 - Write the new and old bid values back to the spreadsheet.
 
