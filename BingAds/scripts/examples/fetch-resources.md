@@ -189,8 +189,11 @@ function main() {
 }
 ```
 
-
-
 ### Parse the CSV file
 
 There's no built-in CSV parsing tool, so you'll need to write your own or find one online. For example, a quick search online found [this](https://stackoverflow.com/a/14991797) one on Stack Overflow. If you find one online make sure it has no use restrictions. 
+
+
+## Accessing Google services
+
+For information about using [UrlFetchApp](../reference/UrlFetchApp.md) to access Google services, see [Accessing Google services](accessing-google-services.md)
