@@ -51,48 +51,48 @@ Before you can run the script, you need to get credentials for accessing your Go
 13. Copy your client ID and client secret to use in steps 14 and 15.
 14. Create a PowerShell script to get user consent and a refresh token.  
    
-   Getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. This PowerShell provides an option for getting consent and a refresh token.  
+    Getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. This PowerShell provides an option for getting consent and a refresh token.  
    
-   Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` and `$clientSecret` to the client ID and secret you received when you registered your app (see step 12).  
+    Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` and `$clientSecret` to the client ID and secret you received when you registered your app (see step 12).  
    
-   ```powershell
-   $clientId = "your-client-id"
-   $clientSecret = "your-client-secret"
+    ```powershell
+    $clientId = "your-client-id"
+    $clientSecret = "your-client-secret"
 
-   $scopes = "https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/gmail.send"
+    $scopes = "https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/gmail.send"
     
-   Start-Process "https://accounts.google.com/o/oauth2/v2/auth?client_id=$clientId&scope=$([string]::Join("%20", $scopes))&access_type=offline&response_type=code&redirect_uri=urn:ietf:wg:oauth:2.0:oob"    
+    Start-Process "https://accounts.google.com/o/oauth2/v2/auth?client_id=$clientId&scope=$([string]::Join("%20", $scopes))&access_type=offline&response_type=code&redirect_uri=urn:ietf:wg:oauth:2.0:oob"    
    
-   $code = Read-Host "Please enter the code"
+    $code = Read-Host "Please enter the code"
      
-   $response = Invoke-WebRequest https://www.googleapis.com/oauth2/v4/token -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientid&client_secret=$clientSecret&redirect_uri=urn:ietf:wg:oauth:2.0:oob&code=$code&grant_type=authorization_code"
+    $response = Invoke-WebRequest https://www.googleapis.com/oauth2/v4/token -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientid&client_secret=$clientSecret&redirect_uri=urn:ietf:wg:oauth:2.0:oob&code=$code&grant_type=authorization_code"
     
-   Write-Output "Refresh token: " ($response.Content | ConvertFrom-Json).refresh_token 
-   ```  
+    Write-Output "Refresh token: " ($response.Content | ConvertFrom-Json).refresh_token 
+    ```  
    
-   Save the file and name it GetTokens.ps1 (you can name it anything you want but the extension must be .ps1).  
+    Save the file and name it GetTokens.ps1 (you can name it anything you want but the extension must be .ps1).  
    
-   Now open a console window. To open a console window on Microsoft Windows, enter the following Windows Run command (\<Windows button>+r):  
+    Now open a console window. To open a console window on Microsoft Windows, enter the following Windows Run command (\<Windows button>+r):  
    
-   ```
-   cmd.exe
-   ```  
+    ```
+    cmd.exe
+    ```  
    
-   At the command prompt, navigate to the folder where you saved GetTokens.ps1 and enter the following command:  
+    At the command prompt, navigate to the folder where you saved GetTokens.ps1 and enter the following command:  
    
-   ```
-   powershell.exe -File .\GetTokens.ps1
-   ```  
+    ```
+    powershell.exe -File .\GetTokens.ps1
+    ```  
    
-   When the PowerShell script successfully runs, it starts a browser session where you enter your Google credentials. After consenting, the browser's address bar contains the grant code (see ?code={copy this code}).  
+    When the PowerShell script successfully runs, it starts a browser session where you enter your Google credentials. After consenting, the browser's address bar contains the grant code (see ?code={copy this code}).  
    
-   ```
-   https://login.live.com/oauth20_desktop.srf?code=M7ab570e5-a1c0-32e5-a946-e4490c822954&lc=1033
-   ```  
+    ```
+    https://login.live.com/oauth20_desktop.srf?code=M7ab570e5-a1c0-32e5-a946-e4490c822954&lc=1033
+    ```  
    
-   Copy the grant code (M7ab570e5-a1c0-32e5-a946-e4490c822954) and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. In the [example script](#example-script), set `refreshToken` to the refresh token that the PowerShell script returned. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources.  
+    Copy the grant code (M7ab570e5-a1c0-32e5-a946-e4490c822954) and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. In the [example script](#example-script), set `refreshToken` to the refresh token that the PowerShell script returned. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources.  
    
-   The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the PowerShell script again to get consent and a new refresh token.  
+    The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the PowerShell script again to get consent and a new refresh token.  
   
 15. In the [example script](#example-script), set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received in steps 12 and 14.
 
