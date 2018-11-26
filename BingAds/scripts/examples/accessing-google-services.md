@@ -11,7 +11,7 @@ ms.topic: "article"
 
 # Using UrlFetchApp to access Google services
 
-The [example script](#example-script] in this topic shows you how to:
+The [example script](#Example-script] in this topic shows you how to:
 
 - Use [UrlFetchApp](../reference/UrlFetchApp.md) to read a file from Google Drive, which contains a single bid multiplier value
 - Read a spreadsheet containing keyword IDs, use the IDs to get the keywords, and multiply the keywords' bids by the bid multiplier
