@@ -14,6 +14,20 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## November 27, 2018
+
+The following is a documentation only change.
+
+- Added the [Accessing Google services](examples/accessing-google-services.md) topic. This topic shows how to use [UrlFetchApp](reference/UrlFetchApp.md) to call Google services.
+
+
+## November 7, 2018
+
+The following is a documentation only change.
+
+- Changed the preview note to indicate that Scripts is now in open beta and available to all Bing Ads users.
+
+
 ## October 4, 2018
 
 This is the Beta release of Scripts. For information about participating in the program, please contact your account manager. The Scripts classes and documentation are subject to change.
@@ -33,7 +47,7 @@ Add the following topics:
 - [Best practices](concepts/best-practices.md)
 
 
-## Octoboer 2, 2018
+## October 2, 2018
 
 Added the following objects and methods to support multi-accounts.
 
@@ -45,7 +59,7 @@ Added the following objects and methods to support multi-accounts.
   
 - Added the [BingAdsAccountIterator](reference/BingAdsAccountIterator.md) object. Use it to iterate through the list of managed accounts that you selected.
   
-- Added the [BingAdsAccountSelector](reference/BingAdsAccountSelector.md) object. Use it to select the the list of managed accounts that you want to get.
+- Added the [BingAdsAccountSelector](reference/BingAdsAccountSelector.md) object. Use it to select the list of managed accounts that you want to get.
   
 - Added the [BingAdsAccountStats](reference/BingAdsAccountStats.md) object. Use it to access the managed account's performance data.  
   
