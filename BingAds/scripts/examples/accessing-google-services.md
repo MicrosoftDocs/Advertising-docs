@@ -1,6 +1,6 @@
 ---
-title: "Using UrlFetchApp to access Google services"
-description: "How to use UrlFetchApp to access Google services."
+title: "Accessing Google services"
+description: "Shows how to access Google services."
 author: "swhite-msft"
 manager: ehansen
 
@@ -9,7 +9,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# Using UrlFetchApp to access Google services
+# Accessing Google services
 
 The [example script](#example-script) in this topic shows you how to use [UrlFetchApp](../reference/UrlFetchApp.md) to:
 
@@ -39,8 +39,8 @@ Before you can run the script, you need to get credentials for accessing your Go
 
 1. Go to Google developer console API [dashboard](https://console.developers.google.com/apis/dashboard)
 2. Click **Create a project** to create a new project or select an existing project
-  a. Enter a name for your project in **Project Name**. For example, Bing Ads Scripts.
-  b. Click **Create**
+  1. If creating a new project, enter a name for your project in **Project Name**. For example, Bing Ads Scripts.
+  2. Click **Create**
 3. On **Dashboard**, click **ENABLE APIS AND SERVICES**
 4. In the search box, enter *sheets* and click **Google Sheets API**. Then, click **ENABLE**
 5. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Google Drive API
@@ -205,7 +205,7 @@ var GoogleApis;
   }
   GoogleApis.createGmailService = createGmailService;
  
-  //Creation logic based on https://developers.google.com/discovery/v1/using#usage-simple
+  // Creation logic based on https://developers.google.com/discovery/v1/using#usage-simple
   function createService(url, credentials) {
     var content = UrlFetchApp.fetch(url).getContentText();
     var discovery = JSON.parse(content);
