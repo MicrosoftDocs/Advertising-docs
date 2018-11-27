@@ -38,9 +38,9 @@ Before you can run the script, you need to get credentials for accessing your Go
 ## Option 2 - Using a refresh token to get an access token
 
 1. Go to Google developer console API [dashboard](https://console.developers.google.com/apis/dashboard)
-2. Click **Create a project** to create a new project or select an existing project
-  1. If creating a new project, enter a name for your project in **Project Name**. For example, Bing Ads Scripts.
-  2. Click **Create**
+2. Click **Create a project** to create a new project or select an existing project  
+   1. If creating a new project, enter a name for your project in **Project Name**. For example, Bing Ads Scripts.
+   2. Click **Create**
 3. On **Dashboard**, click **ENABLE APIS AND SERVICES**
 4. In the search box, enter *sheets* and click **Google Sheets API**. Then, click **ENABLE**
 5. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Google Drive API
