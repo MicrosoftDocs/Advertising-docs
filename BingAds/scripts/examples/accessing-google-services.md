@@ -15,12 +15,13 @@ The [example script](#example-script) in this topic shows you how to use [UrlFet
 
 - Read a file from Google Drive, which contains a single bid multiplier value;
 - Read a spreadsheet containing keyword IDs, use the IDs to get the keywords, and multiply the keywords' bids by the bid multiplier;
-- Write the new and old bid values back to the spreadsheet.
+- Write the new and old bid values back to the spreadsheet;
+- Sends an email notification that the bids were updated.
 
 Before you can run the script, you need to get credentials for accessing your Google resources. There are a couple of options for getting the credentials:
 
 - Option 1 &mdash; Easy to follow and takes less time but you need to repeat it every hour when the access token expires.
-- Option 2 &mdash; A little more complicated but doesn't need to be repeated every hour when the access token expires.
+- Option 2 &mdash; A little more complicated but you don't need repeat it every hour when the access token expires.
 
 ## Option 1 - Getting an access token from Google OAuth playground
 
@@ -37,18 +38,20 @@ Before you can run the script, you need to get credentials for accessing your Go
 ## Option 2 - Using a refresh token to get an access token
 
 1. Go to Google developer console API [dashboard](https://console.developers.google.com/apis/dashboard)
-2. Click **Select a project** and create a new project (for example, Bing Ads Scripts) or choose an existing project
-3. On the project dashboard page, click **ENABLE APIS AND SERVICES**
-4. Search for *Sheets* and click **Google Sheets API → Enable**
-5. Repeat steps 3 and 4 for Google Drive API
-6. Repeat steps 3 and 4 for Gmail API
-7. On the project dashboard page, click **Credentials → OAuth** consent screen
-8. Enter an Application name (for example, Bing Ads Scripts)
-9. Click **Add scope**, select *../auth/drive* and *../auth/gmail.send* and click **ADD**
+2. Click **Create a project** to create a new project or select an existing project
+  a. Enter a name for your project in **Project Name**. For example, Bing Ads Scripts.
+  b. Click **Create**
+3. On **Dashboard**, click **ENABLE APIS AND SERVICES**
+4. In the search box, enter *sheets* and click **Google Sheets API**. Then, click **ENABLE**
+5. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Google Drive API
+6. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Gmail API
+7. On **Dashboard**, click **Credentials** in the left navigation pane and then click the **OAuth consent screen** tab
+8. Enter the name of your application in the **Application name** field (for example, Bing Ads Scripts)
+9. Click **Add scope**, select *../auth/drive* and *../auth/gmail.send*, and then click **ADD**
 10. Click **Save**
-11. On the Credentials page, click **Create credentials → Oauth Client ID**
-12. Choose **Other** application type, enter a name (for example, Bing Ads Scripts Client), and click **Create**
-13. Copy your client ID and client secret to use in steps 14 and 15.
+11. On the **Credentials** page, click **Create credentials** and then select **Oauth client ID**
+12. Select **Other** application type, enter a name (for example, Bing Ads Scripts Client), and click **Create**
+13. Copy your client ID and client secret to use in steps 14 and 15 and then click **OK**
 14. Create a PowerShell script to get user consent and a refresh token.  
    
   Getting an access token requires user consent unless you have a refresh token. But because Scripts doesn't support UI components, you'll need to get consent another way. This PowerShell provides an option for getting consent and a refresh token.  
@@ -84,15 +87,9 @@ Before you can run the script, you need to get credentials for accessing your Go
   powershell.exe -File .\GetTokens.ps1
   ```  
    
-  When the PowerShell script successfully runs, it starts a browser session where you enter your Google credentials. After consenting, the browser's address bar contains the grant code (see ?code={copy this code}).  
-   
-  ```
-  https://login.live.com/oauth20_desktop.srf?code=M7ab570e5-a1c0-32e5-a946-e4490c822954&lc=1033
-  ```  
-   
-  Copy the grant code (M7ab570e5-a1c0-32e5-a946-e4490c822954) and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. In the [example script](#example-script), set `refreshToken` to the refresh token that the PowerShell script returned. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources.  
-   
-  The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the PowerShell script again to get consent and a new refresh token.  
+  When the PowerShell script successfully runs, it starts a browser session where you enter your Google credentials. After consenting, the webpage contains the grant code (see Please copy this code...).  
+     
+  Copy the grant code and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. In the [example script](#example-script), set `refreshToken` to the refresh token that the PowerShell script returned. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources.  
   
 15. In the [example script](#example-script), set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received in steps 12 and 14.
 
@@ -284,9 +281,14 @@ var GoogleApis;
     if (credentials.accessToken) {
       return credentials.accessToken;
     }
-    var tokenResponse = UrlFetchApp.fetch('https://www.googleapis.com/oauth2/v4/token', { method: 'post', contentType: 'application/x-www-form-urlencoded', payload: { client_id: credentials.clientId, client_secret: credentials.clientSecret, refresh_token: credentials.refreshToken, grant_type: 'refresh_token' } });
-    var accessToken = JSON.parse(tokenResponse.getContentText())['access_token'];
-    return accessToken;
+    var tokenResponse = UrlFetchApp.fetch('https://www.googleapis.com/oauth2/v4/token', { method: 'post', contentType: 'application/x-www-form-urlencoded', muteHttpExceptions: true, payload: { client_id: credentials.clientId, client_secret: credentials.clientSecret, refresh_token: credentials.refreshToken, grant_type: 'refresh_token' } });    
+    var responseCode = tokenResponse.getResponseCode(); 
+    var responseText = tokenResponse.getContentText(); 
+    if (responseCode >= 200 && responseCode <= 299) {
+      var accessToken = JSON.parse(responseText)['access_token'];
+      return accessToken;
+    }    
+    throw responseText;  
   }
 })(GoogleApis || (GoogleApis = {}));
  
