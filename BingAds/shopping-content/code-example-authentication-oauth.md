@@ -278,7 +278,7 @@ namespace Content.OAuth
 
         private void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
         {
-            Dictionary\<string, string> parameters = null;
+            Dictionary<string, string> parameters = null;
 
             if (!string.IsNullOrEmpty(e.Url.Query))
             {
@@ -310,9 +310,9 @@ namespace Content.OAuth
 
         // Parses the query string.
 
-        private Dictionary\<string, string> ParseFragment(string queryString, char[] delimeters)
+        private Dictionary<string, string> ParseFragment(string queryString, char[] delimeters)
         {
-            var parameters = new Dictionary\<string, string>();
+            var parameters = new Dictionary<string, string>();
 
             string[] pairs = queryString.Split(delimeters, StringSplitOptions.RemoveEmptyEntries);
 

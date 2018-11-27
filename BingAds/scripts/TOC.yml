@@ -63,6 +63,8 @@
       href: examples/keywords.md 
     - name: Using UrlFetchApp 
       href: examples/fetch-resources.md 
+    - name: Accessing Google services 
+      href: examples/accessing-google-services.md 
 - name: Script reference
   href: reference-overview.md 
   items:    
