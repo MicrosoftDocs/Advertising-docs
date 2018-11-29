@@ -17,6 +17,9 @@ Gets a list of the accounts and customers that match the specified filter criter
 ## <a name="request"></a>Request Elements
 The *FindAccountsOrCustomersInfoRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
+> [!NOTE]
+> Unless otherwise noted below, all request elements are required.
+
 ### <a name="request-body"></a>Request Body Elements
 
 |Element|Description|Data Type|

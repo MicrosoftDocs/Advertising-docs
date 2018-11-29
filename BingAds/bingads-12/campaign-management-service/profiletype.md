@@ -9,9 +9,6 @@ description: Defines the possible types of profile criterions.
 # ProfileType Value Set - Campaign Management
 Defines the possible types of profile criterions.
 
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
-
 ## Syntax
 ```xml
 <xs:simpleType name="ProfileType" xmlns:xs="http://www.w3.org/2001/XMLSchema">

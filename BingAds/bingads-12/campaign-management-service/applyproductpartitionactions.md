@@ -17,6 +17,9 @@ Applies an add, update, or delete action to each of the specified [BiddableAdGro
 ## <a name="request"></a>Request Elements
 The *ApplyProductPartitionActionsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
+> [!NOTE]
+> Unless otherwise noted below, all request elements are required.
+
 ### <a name="request-body"></a>Request Body Elements
 
 |Element|Description|Data Type|

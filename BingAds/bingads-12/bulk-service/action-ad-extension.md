@@ -158,7 +158,7 @@ The displayed action text will vary depending on the [Language](#language) that 
 
 The possible values for this field include: ActNow, ApplyNow, BetNow, BidNow, BookACar, BookHotel, BookNow, Browse, BuyNow, ChatNow, Compare, ContactUs, Coupon, Donate, Download, EmailNow, EnrollNow, Explore, FileNow, FindJob, FreePlay, FreeQuote, FreeTrial, GetDeals, GetOffer, GetQuote, JoinNow, LearnMore, ListenNow, LogIn, Message, NewCars, OrderNow, PlayGame, PlayNow, PostJob, Register, RentACar, RentNow, Reserve, Sale, SaveNow, Schedule, SeeMenu, SeeMore, SeeOffer, SellNow, ShopNow, Showtimes, SignIn, SignUp, StartFree, StartNow, Subscribe, TestDrive, TryNow, UsedCars, ViewCars, ViewNow, ViewPlans, VisitSite, VoteNow, Watch, WatchMore, WatchNow.
 
-Bing Ads does not support all action types for all languages. For details see [Action Text for Action Ad Extensions](../guides/ad-languages.md#actionadextension-actiontext).
+Bing Ads does not support all action types for all languages. If you attempt to use an unsupported action type and language combination, an error will be returned. For details see [Action Text for Action Ad Extensions](../guides/ad-languages.md#actionadextension-actiontext).
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -292,7 +292,7 @@ The extension will always be served in this language, regardless of the campaign
 
 The supported language strings are: Danish, Dutch, English, Finnish, French, German, Italian, Norwegian, Portuguese, Spanish, Swedish, and TraditionalChinese. 
 
-Bing Ads does not support all action types for all languages. For details see [Action Text for Action Ad Extensions](../guides/ad-languages.md#actionadextension-actiontext).
+Bing Ads does not support all action types for all languages. If you attempt to use an unsupported action type and language combination, an error will be returned. For details see [Action Text for Action Ad Extensions](../guides/ad-languages.md#actionadextension-actiontext).
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. 
