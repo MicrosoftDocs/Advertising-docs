@@ -4,12 +4,12 @@ ms.service: bing-ads-bulk-service
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Defines an experiment where you split a campaign’s budget and traffic, and then run an A/B test during a limited date range. 
+description: Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range. 
 dev_langs:
   - csharp
 ---
 # Experiment Record - Bulk
-Defines an experiment where you split a campaign’s budget and traffic, and then run an A/B test during a limited date range. 
+Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range. 
 
 > [!WARNING]
 > This preview documentation is subject to change.

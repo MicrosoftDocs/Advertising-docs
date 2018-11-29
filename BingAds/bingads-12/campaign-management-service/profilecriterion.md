@@ -11,9 +11,6 @@ Defines a criterion that can be used to show ads to users in a specific company,
 
 The *ProfileCriterion* criterion can be included within an [AdGroupCriterion](adgroupcriterion.md) object in calls to [AddAdGroupCriterions](addadgroupcriterions.md), [DeleteAdGroupCriterions](deleteadgroupcriterions.md), [GetAdGroupCriterionsByIds](getadgroupcriterionsbyids.md), and [UpdateAdGroupCriterions](updateadgroupcriterions.md).
 
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
-
 ## Syntax
 ```xml
 <xs:complexType name="ProfileCriterion" xmlns:xs="http://www.w3.org/2001/XMLSchema">

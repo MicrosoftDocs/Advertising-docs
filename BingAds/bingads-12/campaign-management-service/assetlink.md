@@ -40,4 +40,5 @@ Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.micros
 Namespace: https\://bingads.microsoft.com/CampaignManagement/v12  
 
 ## Used By
+[ResponsiveAd](responsivead.md)  
 [ResponsiveSearchAd](responsivesearchad.md)  

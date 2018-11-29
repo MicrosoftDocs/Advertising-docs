@@ -83,7 +83,7 @@ Record Type  |Supported Campaign Types
 [Ad Group Negative Similar Remarketing List Association](ad-group-negative-similar-remarketing-list-association.md)|All         
 [Ad Group Negative Site](ad-group-negative-site.md)|All         
 [Ad Group Price Ad Extension](ad-group-price-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Ad Group Product Audience Association](ad-group-product-audience-association.md)|Audience         
+[Ad Group Product Audience Association](ad-group-product-audience-association.md)|Audience<br/>Search         
 [Ad Group Product Partition](ad-group-product-partition.md)|Shopping         
 [Ad Group Radius Criterion](ad-group-radius-criterion.md)|All         
 [Ad Group Remarketing List Association](ad-group-remarketing-list-association.md)|All         
@@ -145,7 +145,7 @@ Record Type  |Supported Campaign Types
 [Price Ad Extension](price-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Product Ad](product-ad.md)|Shopping         
 [Product Ad Label](product-ad-label.md)|Shopping         
-[Product Audience](product-audience.md)|Audience       
+[Product Audience](product-audience.md)|Audience<br/>Search       
 [Remarketing List](remarketing-list.md)|All         
 [Responsive Ad](responsive-ad.md)|Audience         
 [Responsive Ad Label](responsive-ad-label.md)|Audience        

@@ -17,6 +17,9 @@ Gets the list of supported sales country codes for Bing Shopping campaigns.
 ## <a name="request"></a>Request Elements
 The *GetBSCCountriesRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
+> [!NOTE]
+> Unless otherwise noted below, all request elements are required.
+
 ### <a name="request-body"></a>Request Body Elements
 There are not any elements in the operation's request body.
 

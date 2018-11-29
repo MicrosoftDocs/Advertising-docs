@@ -9,9 +9,6 @@ description: Defines the possible types of product audiences.
 # ProductAudienceType Value Set - Campaign Management
 Defines the possible types of product audiences.
 
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
-
 ## Syntax
 ```xml
 <xs:simpleType name="ProductAudienceType" xmlns:xs="http://www.w3.org/2001/XMLSchema">

@@ -13,15 +13,15 @@ Defines a product audience that can be downloaded and uploaded in a bulk file.
 
 Using Product Audiences, you can remarket to customers based on the specific products they viewed or added to their cart. Feed-based ads promote those same products to customers (known as dynamic remarketing).
 
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
-
 > [!IMPORTANT]
-> Be sure to edit the script corresponding to the [UET Tag Id](#uettagid) on your website to include the `prodid` and `pagetype` parameters.
-  ```javascript
-  window.uetq = window.uetq || [];
-  window.uetq.push({'prodid': 'PRODUCT_ID', 'pagetype': 'PAGE_TYPE'});
-  ```
+> Be sure to edit the script corresponding to the [UET Tag Id](#uettagid) on your website to include the `ecomm_prodid` and `ecomm_pagetype` parameters.
+> The ecomm_prodid parameter is the product ID of the product on the page. It is unique for each item and must match either the id or item_group_id attribute in your product feed. Numeric and alphanumeric (including hyphens) characters only, with a maximum of 50 characters. 
+> The ecomm_pagetype parameter identifies the type of page the user has visited. Valid options: home, searchresults, category, product, cart, purchase, other.
+
+```javascript
+window.uetq = window.uetq || [];
+window.uetq.push('event', 'REPLACE_WITH_EVENT_ACTION', {'ecomm_prodid': 'REPLACE_WITH_PRODUCT_ID', 'ecomm_pagetype': 'REPLACE_WITH_PAGE_TYPE'});
+```
 
 You can download all *Product Audience* records in the account by including the [DownloadEntity](downloadentity.md) value of *ProductAudiences* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
