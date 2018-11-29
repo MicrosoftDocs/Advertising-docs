@@ -11,9 +11,6 @@ dev_langs:
 # Ad Group Negative Product Audience Association Record - Bulk
 Defines an Ad Group Negative Product Audience Association that can be uploaded and downloaded in a bulk file. 
 
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
-
 You can download all *Ad Group Negative Product Audience Association* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupNegativeProductAudienceAssociations* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Ad Group Negative Product Audience Association if a valid [Parent Id](#parentid) value is provided. 

@@ -20,17 +20,7 @@ Search advertising businesses typically align with one or more of the following 
 |Reseller|A reseller builds a Bing Ads application to manage the campaigns of their advertising clients, and is billed directly by Microsoft for valid live clicks. The advertiser does not sign up for Bing Ads credentials, and may pay a fee to the reseller. For relevant best practices, see [Management Model for Resellers](management-model-resellers.md).|
 
 ## <a name="accountpermissions"></a>Account Permissions and the Developer Token
-The *DeveloperToken* header element must be specified to access Bing Ads services. Obtaining a developer token for API access does not grant permissions to any Bing Ads accounts. A developer token enables programmatic access to the accounts permitted for a user. Each provisioned user is assigned a role, for example Super Admin, and granted permissions to one or more accounts. The same accounts available in the Bing Ads web application are available to the corresponding user programmatically through the API.
-
-There are two types of Bing Ads developer tokens. 
-
-- Single-user developer token can be used to authenticate solely with one designated user. For example if you are a direct advertiser with one log in email address, then you will only need a single-user token.  
-
-- Universal developer token (previously known as a multi-user token) can be used to authenticate with any valid user credentials. For example if you are developing an application that will be used by multiple Bing Ads users, then you will likely want to request a universal token instead of getting a single-user token for each user.
-
-Regardless of the developer token type, API access is only enabled for the accounts available to each respective user based on their managed access rights. In other words the developer token does not change read or write access to accounts that the user can manage. The same accounts available in the Bing Ads web application are available to the corresponding user programmatically through the API. 
-
-You can request the token type when requesting API access, or upgrade at a later date through the [Bing Ads Developer Portal](https://developers.bingads.microsoft.com/Account). For information on requesting a developer token, see [Get Started With the Bing Ads API](get-started.md).
+The *DeveloperToken* header element must be specified to access Bing Ads services. Obtaining a developer token for API access does not grant additional permissions to any Bing Ads accounts. A developer token enables programmatic access to the accounts permitted for a user. Each Bing Ads user is assigned a role e.g., Super Admin or Advertiser Campaign Manager for every customer they can access. The same accounts available in the Bing Ads web application are available to the user programmatically through the API.  For information, see [Get a Developer Token](get-started.md#get-developer-token).
 
 ## <a name="managingcustomers"></a>Managing Customers
 Your application must support one or more customers. 

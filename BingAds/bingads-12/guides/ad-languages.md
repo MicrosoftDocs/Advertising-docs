@@ -93,9 +93,9 @@ Swedish,Bekvämligheter,Varumärken,Kurser,Utbildningar,Resmål,Hotellval,Varor,
 ```
 
 ## <a name="actionadextension-actiontext"></a>Action Text for Action Ad Extensions
-The action text displayed for action ad extensions will depend on the language that you set when creating or updating the action ad extension. For example, if you want action text displayed as *Act Now* in English you must specify the action text as *ActNow* and set the language to *English*. If you want action text displayed as *Jetzt handeln* in German you must likewise set the action text to *ActNow*, but set the language to *German*. 
+The action text displayed for action ad extensions will depend on the language that you set when creating or updating the action ad extension. For example, if you want action text displayed as *Act Now* in English you must specify the action type as *ActNow* and set the language to *English*. If you want action text displayed as *Jetzt handeln* in German you must likewise set the action type to *ActNow*, but set the language to *German*. 
 
-Bing Ads does not support all action types for all languages. This table lists the rare exceptions i.e. where the translated text exceeds 16 characters.
+Bing Ads does not support all action types for all languages. If you attempt to use an unsupported action type and language combination, an error will be returned. This table lists the rare exceptions i.e. where the translated text exceeds 16 characters.
 
 |Language|Action Types Not Supported| 
 |-----|-----|

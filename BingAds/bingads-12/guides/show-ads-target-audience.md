@@ -106,18 +106,22 @@ The maximum number of location intent criterions that you can specify per campai
 For more information and examples, please see [How can I get my ads in front of my customers?](https://help.bingads.microsoft.com/#apex/3/en/51029/0).
 
 ### <a name="profilecriterion"></a>Profile Criterion
-You can target customers by company, industry, or job function profiles so that your ads are displayed more frequently to people who will be interested in them. 
+You can target customers by company, industry, or job function profiles so that your ads are displayed more frequently to people who will be interested in them. Each profile criterion defines a company, industry, or job function for the accompanying criterion bid adjustment. 
 
-Each profile criterion defines a company, industry, or job function for the accompanying criterion bid adjustment. 
+> [!NOTE]
+> The maximum number of company name profile criterions that you can set per ad group is 1,000.
 
 You can also specify profiles of people according to LinkedIn that you want to exclude from seeing your ads. Excluded profiles are also known as negative profile criterions. Each negative profile criterion defines the company, industry, or job function of people who you do not want to see your ads. 
 
+|Criterion Association|Supported Campaign Types|
+|----------|---------------|
+|Campaign Biddable Criterion|DynamicSearchAds<br/>Search<br/>Shopping|
+|Campaign Negative Criterion|DynamicSearchAds<br/>Search<br/>Shopping|
+|Ad Group Biddable Criterion|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
+|Ad Group Negative Criterion|Audience|
+
 > [!NOTE]
-> Profile criteria are only available for pilot participants. 
-> 
-> Campaign profile criteria are only available for pilot participants running Dynamic Search Ads, Search, or Shopping campaigns.
-> 
-> Ad group negative profile criteria are only available for pilot participants running Audience campaigns.
+> For a list of company name, industry, and job function identifiers, see [Profile Data Files](profile-data-files.md). 
 
 ### <a name="radiuscriterion"></a>Radius Criterion
 With radius criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about a specified radius around a zip code, coordinates, landmark, or area.
