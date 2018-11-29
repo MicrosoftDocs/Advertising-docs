@@ -108,9 +108,6 @@ For more information and examples, please see [How can I get my ads in front of 
 ### <a name="profilecriterion"></a>Profile Criterion
 You can target customers by company, industry, or job function profiles so that your ads are displayed more frequently to people who will be interested in them. Each profile criterion defines a company, industry, or job function for the accompanying criterion bid adjustment. 
 
-> [!NOTE]
-> The maximum number of company name profile criterions that you can set per ad group is 1,000.
-
 You can also specify profiles of people according to LinkedIn that you want to exclude from seeing your ads. Excluded profiles are also known as negative profile criterions. Each negative profile criterion defines the company, industry, or job function of people who you do not want to see your ads. 
 
 |Criterion Association|Supported Campaign Types|
@@ -119,6 +116,8 @@ You can also specify profiles of people according to LinkedIn that you want to e
 |Campaign Negative Criterion|DynamicSearchAds<br/>Search<br/>Shopping|
 |Ad Group Biddable Criterion|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
 |Ad Group Negative Criterion|Audience|
+
+The maximum number of company name profile criterions that you can set per ad group is 1,000.
 
 > [!NOTE]
 > For a list of company name, industry, and job function identifiers, see [Profile Data Files](profile-data-files.md). 
