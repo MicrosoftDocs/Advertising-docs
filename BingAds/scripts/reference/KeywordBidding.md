@@ -39,13 +39,13 @@ double|The keyword's CPC bid. If the keyword doesn't specify a bid, this field c
 ## <a name="setcpc-double-cpc-"></a>setCpc(double cpc)
 Sets the keyword's maximum CPC bid. 
 
-Specifies the bid amount to use when the keyword matches the user's search term. Applies only if the ad group's bidding strategy is set to MANUAL_CPC.
+Specifies the bid amount to use when the keyword matches the user's search term. The bid is set only if the ad group's bidding strategy is set to MANUAL_CPC. Setting enhanced CPC bids in Scripts is not supported.
 
 To use the bid amount specified at the ad group level, call the `clearCpc()` method.
 
 For more information about bid amounts, see [Bid](/bingads/campaign-management-service/keyword#bid) and [BiddingScheme](/bingads/campaign-management-service/keyword#biddingscheme). 
 
-If you specify a property value that's not valid, the call silently fails. To confirm whether the property was actually updated, get the object again and test whether the property's value equals the new value. For information, see [Handling errors and warnings](../concepts/errors-and-warnings.md).
+If you specify a property value that's not valid, the call silently fails. To confirm whether the property was updated, get the object again and test whether the property's value equals the new value. For information, see [Handling errors and warnings](../concepts/errors-and-warnings.md).
 
 ### Arguments
 |Name|Type|Description|
