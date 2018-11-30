@@ -31,7 +31,7 @@ double|The ad group's maximum CPC bid amount.
 ## <a name="setcpc-double-cpc-"></a>setCpc(double cpc)
 Sets the ad group's CPC bid amount. 
 
-Specifies the bid amount to use when the keyword matches the user's search term and the ad group's bid strategy is MANUAL_CPC.  Setting enhanced CPC bids in Scripts is not supported. Bing uses this bid if a lower-level entity such as keyword does not override it.
+Specifies the bid amount to use when the keyword matches the user's search term. Bing uses this bid if a CPC bid is not specified at the keyword level.
 
 If the bid value is not valid, the call silently fails. To confirm whether the bid was updated, get the object again and test whether the property's value equals the new value. For information, see [Handling errors and warnings](../concepts/errors-and-warnings.md).
 
