@@ -25,5 +25,3 @@ ENHANCED_CPC|EnhancedCpc
 
 For information about these bid strategies, see [Bid Strategy Types](/bingads/guides/budget-bid-strategies#bidstrategytypes).
 
-> [!NOTE]
-> Scripts supports setting bid amounts for MANUAL_CPC bid strategies only.
