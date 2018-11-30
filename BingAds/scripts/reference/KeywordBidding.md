@@ -39,9 +39,9 @@ double|The keyword's CPC bid. If the keyword doesn't specify a bid, this field c
 ## <a name="setcpc-double-cpc-"></a>setCpc(double cpc)
 Sets the keyword's maximum CPC bid. 
 
-Specifies the bid amount to use when the keyword matches the user's search term. The bid is set only if the ad group's bidding strategy is set to MANUAL_CPC. Setting enhanced CPC bids in Scripts is not supported.
+Specifies the bid amount to use when the keyword matches the user's search term. 
 
-To use the bid amount specified at the ad group level, call the `clearCpc()` method.
+To use the bid amount specified at the ad group level, remove the keyword's CPC bid by calling the `clearCpc()` method.
 
 For more information about bid amounts, see [Bid](/bingads/campaign-management-service/keyword#bid) and [BiddingScheme](/bingads/campaign-management-service/keyword#biddingscheme). 
 
