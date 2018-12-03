@@ -18,6 +18,7 @@ Defines the criteria to use to filter the DSA search query performance report da
     <xs:element minOccurs="0" name="AdStatus" nillable="true" type="tns:AdStatusReportFilter" />
     <xs:element minOccurs="0" name="CampaignStatus" nillable="true" type="tns:CampaignStatusReportFilter" />
     <xs:element minOccurs="0" name="ExcludeZeroClicks" type="xs:boolean" />
+    <xs:element minOccurs="0" name="FeedUrl" nillable="true" type="xs:boolean" />
     <xs:element minOccurs="0" name="LanguageCode" nillable="true" type="q33:ArrayOfstring" xmlns:q33="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="SearchQueries" nillable="true" type="q34:ArrayOfstring" xmlns:q34="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   </xs:sequence>
@@ -33,6 +34,7 @@ Defines the criteria to use to filter the DSA search query performance report da
 |<a name="adstatus"></a>AdStatus|The report will include data for ads that have the specified status value. You can specify one or more status values.|[AdStatusReportFilter](adstatusreportfilter.md)|
 |<a name="campaignstatus"></a>CampaignStatus|The report will include data for campaigns that have the specified status value. You can specify one or more status values.|[CampaignStatusReportFilter](campaignstatusreportfilter.md)|
 |<a name="excludezeroclicks"></a>ExcludeZeroClicks|If the value of this element is set to *true*, search terms that had one or more ad impressions but resulted in zero clicks in the specified time duration will be excluded from the report.<br/><br/>The default value is *false*, in which case the report will include zero click search term data.<br/><br/>Regardless of the value of this filter, search terms with zero clicks in the last 30 days will always be excluded.|**boolean**|
+|<a name="feedurl"></a>FeedUrl|The feed URL will appear either as "True" or "False". If it's "True", the final URL came from a page feed associated to the campaign. If it's "False", the final URL did not come from a page feed.|**boolean**|
 |<a name="languagecode"></a>LanguageCode|The report will include data for only websites that used the specified languages. For a list of possible values, see [Ad Languages](../guides/ad-languages.md).|**string** array|
 |<a name="searchqueries"></a>SearchQueries|The report will include data for only the specified search query strings.<br/><br/>The list can contain a maximum of 30 strings, and each string can contain a maximum of 256 characters.|**string** array|
 

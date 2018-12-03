@@ -190,7 +190,7 @@ If set to *RotateAdsEvenly*, Bing Ads will rotate between your ads on an equal b
 The percent amount by which to adjust your bid for audience ads above or below the base ad group or keyword bid.
 
 > [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon.
+> This property is available in Search campaigns if the customer is enabled for the Microsoft Audience Network.
 
 Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent audience ads from showing for this ad group.
 

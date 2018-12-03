@@ -4,10 +4,12 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the campaign level settings for feed-based audience or shopping campaigns.
+description: Defines the campaign level settings to leverage your Bing Merchant Center store.
 ---
 # ShoppingSetting Data Object - Campaign Management
-Defines the campaign level settings for feed-based audience or shopping campaigns.
+Defines the campaign level settings to leverage your Bing Merchant Center store.
+
+You can include a shopping setting with both Shopping campaigns and feed-based Audience campaigns i.e., those campaigns that leverage a Bing Merchant Center [store ID](#storeid). 
 
 Supported shopping settings vary by campaign type.
 - Audience campaigns only support the StoreId element. 

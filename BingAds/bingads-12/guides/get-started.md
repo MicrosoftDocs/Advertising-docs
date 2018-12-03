@@ -15,9 +15,9 @@ dev_langs:
 Any Bing Ads user with a developer token can begin using the Bing Ads API. For advertisers placing a large number of ads or developers building advertising tools, the Bing Ads API provides a programmatic interface to Bing Ads. You can write your Bing Ads application in any language that supports web services. To get started with a specific SDK, see Get Started in [C#](get-started-csharp.md) | [Java](get-started-java.md) | [PHP](get-started-php.md) | [Python](get-started-python.md). 
 
 ## <a name="quick-start"></a>Quick Start
-If you just want to see something working right away, follow these steps. You can follow the links inline for details and customization options. 
+If you just want to get something working right away, follow these steps to get your Bing Ads user information. You can follow the links for details and customization options. 
 
-1. Sign up for [Bing Ads](https://secure.bingads.microsoft.com/), and using the same credentials get a [developer token](#get-developer-token). 
+1. Sign up for [Bing Ads](https://secure.bingads.microsoft.com/) and use the same credentials get a [developer token](#get-developer-token). 
 
 1. Register a native app via the [Application Registration Portal](https://apps.dev.microsoft.com/#/appList). For details see [Registering Your Application](authentication-oauth.md#registerapplication). 
 
@@ -182,6 +182,9 @@ authorization_data = AuthorizationData(
 ## <a name="get-ids"></a> Get Your Account and Customer Ids
 To get a user's customer ID and account ID, you can sign in to the Bing Ads web application and click on the **Campaigns** tab. The URL will contain a *cid* key/value pair in the query string that identifies your customer ID, and an *aid* key/value pair that identifies your account ID. For example, *https://ui.bingads.microsoft.com/campaign/Campaigns.m?cid=FindCustomerIdHere&aid=FindAccountIdHere#/customer/FindCustomerIdHere/account/FindAccountIdHere/campaign*.
 
+> [!TIP]
+> Do not mistake the account number for the account identifier. The account number is the system generated account number that is used to identify the account in the Bing Ads web application. The account number has the form xxxxxxxx, where xxxxxxxx is a series of any eight alphanumeric characters. The API service requests only use the account identifier, and never use the account number.
+
 With the Customer Management API you can get the customer and account identifiers for each authenticated user. 
 
 Call [GetUser](../customer-management-service/getuser.md) with your Bing Ads credentials and DeveloperToken. Within the Body set the UserId nil. The response will include a [User](../customer-management-service/user.md) object that contains the UserId.
@@ -239,21 +242,18 @@ Bing Ads services use Simple Object Access Protocol (SOAP) to exchange the reque
 
 Each SOAP request must include the following SOAP headers, which contain the user's credentials.
 
+> [!NOTE]
+> The CustomerAccountId and CustomerId elements are not applicable for the Customer Billing and Customer Management services. 
+
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |ApplicationToken|This header element is not used and should be ignored.|**string**|
 |AuthenticationToken|The OAuth access token that represents a Microsoft Account user who has permissions to Bing Ads accounts. For more information, see [Authentication with OAuth](authentication-oauth.md).|**string**|
-|CustomerAccountId|The identifier of the account that owns the entities in the request. This header element must have the same value as the AccountId body element when both are required.|**string**|
-|CustomerId|The identifier of the customer that contains and owns the account. If you manage an account of another customer, you should use that customer ID instead of your own customer ID.|**string**|
+|CustomerAccountId|The identifier of the account that owns the entities in the request. This header element must have the same value as the AccountId body element when both are required. This element is required for most service operations, and as a best practice you should always set it.|**string**|
+|CustomerId|The identifier of the customer that contains and owns the account. If you manage an account of another customer, you should use that customer ID instead of your own customer ID. This element is required for most service operations, and as a best practice you should always set it.|**string**|
 |DeveloperToken|The developer token used to access the Bing Ads API.|**string**|
 |Password|This element is reserved for internal use and will be removed from a future version of the API. You must use the AuthenticationToken element to set user credentials. |**string**|
 |UserName|This element is reserved for internal use and will be removed from a future version of the API. You must use the AuthenticationToken element to set user credentials.|**string**|
-
-> [!TIP]
-> Do not mistake the account number for the account identifier. The account number is the system generated account number that is used to identify the account in the Bing Ads web application. The account number has the form xxxxxxxx, where xxxxxxxx is a series of any eight alphanumeric characters. The API service requests only use the account identifier, and never use the account number.
-
-> [!NOTE]
-> With the exception of the Customer Billing and Customer Management services, the CustomerAccountId and CustomerId are required for most service operations. As a best practice you should always specify them in the request. 
 
 ## <a name="need-help"></a>Need Help?
 For troubleshooting tips, see [Handling Service Errors and Exceptions](handle-service-errors-exceptions.md).

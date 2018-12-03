@@ -9,10 +9,9 @@ description: Defines the base object of an asset with a unique Bing Ads identifi
 # Asset Data Object - Campaign Management
 Defines the base object of an asset with a unique Bing Ads identifier that can be reused across multiple ads.
 
-Do not try to instantiate an *Asset*. You can create a [TextAsset](textasset.md) that derives from it.
-
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon. 
+Do not try to instantiate an *Asset*. You can create one or more following objects that derive from it.
+- [ImageAsset](imageasset.md)
+- [TextAsset](textasset.md)
 
 ## Syntax
 ```xml

@@ -16,9 +16,6 @@ Gets a temporary URL that you can use to download a file that contains identifie
 
 For details about the file contents, see [Geographical Location Codes](../guides/geographical-location-codes.md).
 
-> [!NOTE]
-> You must specify the account identifier in the *CustomerAccountId* header element.
-
 ## <a name="request"></a>Request Elements
 The *GetGeoLocationsFileUrlRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
@@ -29,8 +26,8 @@ The *GetGeoLocationsFileUrlRequest* object defines the [body](#request-body) and
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="languagelocale"></a>LanguageLocale|The language and locale of the geographical location display names. The supported language locale values are *zh-Hant* (Traditional Chinese), *en* (English), *fr* (French), *de* (German), *it* (Italian), *pt-BR* (Brazilian Portuguese), and *es* (Spanish).<br/><br/>This request element is required.|**string**|
-|<a name="version"></a>Version|The version of the location file that you want to download.<br/><br/>Currently the only supported version is 2.0. <br/><br/>This request element is required.|**string**|
+|<a name="languagelocale"></a>LanguageLocale|The language and locale of the geographical location display names. The supported language locale values are *zh-Hant* (Traditional Chinese), *en* (English), *fr* (French), *de* (German), *it* (Italian), *pt-BR* (Brazilian Portuguese), and *es* (Spanish).|**string**|
+|<a name="version"></a>Version|The version of the location file that you want to download.<br/><br/>Currently the only supported version is 2.0. |**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

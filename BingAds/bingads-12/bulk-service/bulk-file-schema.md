@@ -23,14 +23,16 @@ For more information about using the Bulk service to manage your campaigns, see 
 You can choose to download either a tab or comma delimited set of records (rows) and fields (columns). The first column header is named *Type*.  The rest of the column names map to properties within or associated with the corresponding record type.
 
 > [!IMPORTANT]
-> New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file. Similarly during upload you may submit the fields in any order. The upload record order is important when creating new entities, as described below within [Type Hierarchy](#typehierarchy).
+> New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file. Likewise, unless otherwise noted in the reference documentation you should not depend on a fixed set of values returned in each field. 
+> 
+> Similarly during upload you may submit the fields in any order. The upload record order is important when creating new entities, as described below within [Type Hierarchy](#typehierarchy). 
 
 ## <a name="formatversions"></a>Format Versions
 The bulk format version is separate from the Bing Ads API version.  Format version enables a flexible upgrade path to adopt the latest supported features without breaking your application. As a best practice you should always upgrade to the latest format version. Currently Bing Ads API Version 12 only supports format version 6.0.
 
 To specify the file format version using bulk download, set *FormatVersion* to 6.0 in either the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) request.
 
-To specify the version using bulk upload, set the *Name* field of the [Format Version](format-version.md) record to 6.0.
+To specify the version using bulk upload, set the [Name](format-version.md#name) field of the [Format Version](format-version.md) record to 6.0.
 
 ## <a name="recordtypes"></a>Record Types
 Records available for upload and download using [Format Version](#formatversions) 6.0 are detailed in the table below. 
@@ -78,12 +80,12 @@ Record Type  |Supported Campaign Types
 [Ad Group Negative Job Function Criterion](ad-group-negative-job-function-criterion.md)|Audience  
 [Ad Group Negative Keyword](ad-group-negative-keyword.md)|All         
 [Ad Group Negative Location Criterion](ad-group-negative-location-criterion.md)|All         
-[Ad Group Negative Product Audience Association](ad-group-negative-product-audience-association.md)|Audience         
+[Ad Group Negative Product Audience Association](ad-group-negative-product-audience-association.md)|All         
 [Ad Group Negative Remarketing List Association](ad-group-negative-remarketing-list-association.md)|All         
 [Ad Group Negative Similar Remarketing List Association](ad-group-negative-similar-remarketing-list-association.md)|All         
 [Ad Group Negative Site](ad-group-negative-site.md)|All         
 [Ad Group Price Ad Extension](ad-group-price-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Ad Group Product Audience Association](ad-group-product-audience-association.md)|Audience<br/>Search         
+[Ad Group Product Audience Association](ad-group-product-audience-association.md)|All         
 [Ad Group Product Partition](ad-group-product-partition.md)|Shopping         
 [Ad Group Radius Criterion](ad-group-radius-criterion.md)|All         
 [Ad Group Remarketing List Association](ad-group-remarketing-list-association.md)|All         
@@ -119,7 +121,7 @@ Record Type  |Supported Campaign Types
 [Campaign Negative Location Criterion](campaign-negative-location-criterion.md)|All         
 [Campaign Negative Site](campaign-negative-site.md)|All         
 [Campaign Price Ad Extension](campaign-price-ad-extension.md)|DynamicSearchAds<br/>Search         
-[Campaign Product Scope](campaign-product-scope.md)|Shopping         
+[Campaign Product Scope](campaign-product-scope.md)|Audience<br/>Shopping         
 [Campaign Radius Criterion](campaign-radius-criterion.md)|All         
 [Campaign Review Ad Extension](campaign-review-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md)|DynamicSearchAds<br/>Search         
@@ -145,7 +147,7 @@ Record Type  |Supported Campaign Types
 [Price Ad Extension](price-ad-extension.md)|DynamicSearchAds<br/>Search         
 [Product Ad](product-ad.md)|Shopping         
 [Product Ad Label](product-ad-label.md)|Shopping         
-[Product Audience](product-audience.md)|Audience<br/>Search       
+[Product Audience](product-audience.md)|All       
 [Remarketing List](remarketing-list.md)|All         
 [Responsive Ad](responsive-ad.md)|Audience         
 [Responsive Ad Label](responsive-ad-label.md)|Audience        

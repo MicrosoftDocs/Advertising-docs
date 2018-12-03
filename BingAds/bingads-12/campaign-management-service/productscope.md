@@ -9,10 +9,9 @@ description: Defines a campaign level product scope with list of conditions that
 # ProductScope Data Object - Campaign Management
 Defines a campaign level product scope with list of conditions that help determine whether a product from the Bing Merchant Center store gets served as a product ad.
 
-The *ProductScope* criterion can only be included within [BiddableCampaignCriterion](biddablecampaigncriterion.md). Also note that ad group level [ProductPartition](productpartition.md) can be added to [BiddableAdGroupCriterion](biddableadgroupcriterion.md) and [NegativeAdGroupCriterion](negativeadgroupcriterion.md). Duplicate or conflicting product conditions attempted within an ad group's [ProductPartition](productpartition.md) group will fail via the [ApplyProductPartitionActions](applyproductpartitionactions.md) operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level product scope.
+You can use campaign product scopes with both Shopping campaigns and feed-based Audience campaigns i.e., those campaigns that leverage a Bing Merchant Center [store ID](shoppingsetting.md#storeid). The product scope allows you to choose which items from your catalog to include in the campaign e.g., filter by  brand or condition. 
 
-> [!TIP]
-> For an implementation overview, see the [Bing Shopping Campaigns](../guides/product-ads.md) technical guide.
+The *ProductScope* criterion can only be included within [BiddableCampaignCriterion](biddablecampaigncriterion.md). Also note that ad group level [ProductPartition](productpartition.md) can be added to [BiddableAdGroupCriterion](biddableadgroupcriterion.md) and [NegativeAdGroupCriterion](negativeadgroupcriterion.md). Duplicate or conflicting product conditions attempted within an ad group's [ProductPartition](productpartition.md) group will fail via the [ApplyProductPartitionActions](applyproductpartitionactions.md) operation; however, the operation will not validate whether duplicate or conflicting conditions already exist within the campaign level product scope.
 
 ## Syntax
 ```xml
@@ -31,7 +30,7 @@ The *ProductScope* criterion can only be included within [BiddableCampaignCriter
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="conditions"></a>Conditions|A list of up to 7 product conditions that helps determine whether a product from the Bing Merchant Center store gets served as an ad.<br/><br/>Conditions may be returned by Bing Ads services in a different order from the order that you submitted.<br/><br/>**Add:** Required<br/>**Update:** Required|[ProductCondition](productcondition.md) array|
+|<a name="conditions"></a>Conditions|A list of up to product conditions that helps determine whether a product from the Bing Merchant Center store gets served as an ad.<br/><br/>The available *Attribute* and *Operand* values vary depending on the campaign type. For supported attribute and operand values, see [ProductCondition Remarks](productcondition.md#remarks).<br/><br/>Conditions may be returned by Bing Ads services in a different order from the order that you submitted.<br/><br/>**Add:** Required<br/>**Update:** Required|[ProductCondition](productcondition.md) array|
 
 The [ProductScope](productscope.md) object has [Inherited Elements](#inheritedelements).
 

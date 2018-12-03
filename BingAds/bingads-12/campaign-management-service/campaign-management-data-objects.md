@@ -142,7 +142,7 @@ The Campaign Management service defines the following data objects.
 |[SharedEntityAssociation](sharedentityassociation.md)|Defines an object that contains association information for a campaign and shared entity such as a negative keyword list.|
 |[SharedList](sharedlist.md)|Defines the base class of a shared list.|
 |[SharedListItem](sharedlistitem.md)|Defines the base class of a shared list item.|
-|[ShoppingSetting](shoppingsetting.md)|Defines the campaign level settings for feed-based audience or shopping campaigns.|
+|[ShoppingSetting](shoppingsetting.md)|Defines the campaign level settings to leverage your Bing Merchant Center store.|
 |[SimilarRemarketingList](similarremarketinglist.md)|Defines an audience that is similar to one of your remarketing lists.|
 |[SitelinkAdExtension](sitelinkadextension.md)|Defines an object with one sitelink per ad extension.|
 |[StringRuleItem](stringruleitem.md)|Defines a rule expression that depends on the string values of the Url or Referrer Url.|
