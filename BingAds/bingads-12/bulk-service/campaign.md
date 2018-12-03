@@ -180,7 +180,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 The percent amount by which to adjust your bid for audience ads above or below the base ad group or keyword bid.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+> This property is available in Search campaigns if the customer is enabled for the Microsoft Audience Network.
 
 Supported values are negative one hundred (-100) through positive nine hundred (900). Setting the bid adjustment to -100 percent will prevent audience ads from showing for this campaign.
 

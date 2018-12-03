@@ -9,9 +9,6 @@ description: Defines the criteria to use to filter the professional demographics
 # ProfessionalDemographicsAudienceReportFilter Data Object - Reporting
 Defines the criteria to use to filter the professional demographics audience report for Audience campaigns.
 
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
-
 ## Syntax
 ```xml
 <xs:complexType name="ProfessionalDemographicsAudienceReportFilter" xmlns:xs="http://www.w3.org/2001/XMLSchema">

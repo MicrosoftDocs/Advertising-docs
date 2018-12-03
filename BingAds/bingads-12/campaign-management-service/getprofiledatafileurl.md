@@ -16,12 +16,6 @@ Gets a temporary URL that you can use to download company name, industry, or job
 
 For details about the file contents, see [Profile Data Files](../guides/profile-data-files.md).
 
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
-
-> [!NOTE]
-> You must specify the account identifier in the *CustomerAccountId* header element.
-
 ## <a name="request"></a>Request Elements
 The *GetProfileDataFileUrlRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 
@@ -32,8 +26,8 @@ The *GetProfileDataFileUrlRequest* object defines the [body](#request-body) and 
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="languagelocale"></a>LanguageLocale|The language and locale of the profile display names.<br/><br/>The supported language locale values are *zh-Hant* (Traditional Chinese), *en* (English), *fr* (French), *de* (German), *it* (Italian), *pt-BR* (Brazilian Portuguese), and *es* (Spanish). Please note if LinkedIn does not provide the localized profile name, then it will default to the universal name (usually defined in English).<br/><br/>This request element is required.|**string**|
-|<a name="profiletype"></a>ProfileType|Determines whether you want company name, industry, or job function profile data.<br/><br/>This request element is required.|[ProfileType](profiletype.md)|
+|<a name="languagelocale"></a>LanguageLocale|The language and locale of the profile display names.<br/><br/>The supported language locale values are *zh-Hant* (Traditional Chinese), *en* (English), *fr* (French), *de* (German), *it* (Italian), *pt-BR* (Brazilian Portuguese), and *es* (Spanish). Please note if LinkedIn does not provide the localized profile name, then it will default to the universal name (usually defined in English).|**string**|
+|<a name="profiletype"></a>ProfileType|Determines whether you want company name, industry, or job function profile data.|[ProfileType](profiletype.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

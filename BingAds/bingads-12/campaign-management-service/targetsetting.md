@@ -9,9 +9,6 @@ description: The target settings that determines whether the Age, Audience, Comp
 # TargetSetting Data Object - Campaign Management
 The target settings that determines whether the Age, Audience, CompanyName, Gender, Industry, and JobFunction criterion type groups use the "target and bid" option or the "bid only" target option.
 
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
-
 ## Syntax
 ```xml
 <xs:complexType name="TargetSetting" xmlns:xs="http://www.w3.org/2001/XMLSchema">
