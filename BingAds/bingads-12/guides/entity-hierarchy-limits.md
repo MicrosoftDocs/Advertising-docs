@@ -424,7 +424,7 @@ You can set criteria to show your ads based on age, day and time, device, gender
 The maximum number of age criterions that you can set per campaign or ad group is five, i.e. one for each of the supported age ranges *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*.
 
 ### <a name="companynamecriterions"></a>Company Name Criterions
-The maximum number of company name criterions that you can set per ad group is 1,000.
+The maximum number of company name profile criterions that you can apply to each campaign or ad group is 1,000.
 
 ### <a name="daytimecriterions"></a>Day and Time Criterions
 The maximum number of day and time criterions that you can set per campaign or ad group is 49. You may not set any overlapping day and time ranges, for example Monday from 3:00AM to 5:00AM and Monday 4:00AM to 6:00AM are not allowed for the same campaign or ad group. Also for a given campaign or ad group, the maximum number of day and time criterions per day that you can set is seven. For example you can set up to 7 day and time criterions where the *Day* is set to Monday. 

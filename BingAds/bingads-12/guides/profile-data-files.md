@@ -7,10 +7,12 @@ ms.author: "eur"
 description: Find out about audience profile data supported with the Bing Ads API.
 ---
 # Profile Data Files
-Profile data can be used to show ads to people in a specific company name, industry, or job function (according to LinkedIn). You can call the [GetProfileDataFileUrl](../campaign-management-service/getprofiledatafileurl.md) operation to get a temporary file URL that can be used to download the latest profile data. 
+Profile data can be used to show ads to people in a specific company name, industry, or job function (according to LinkedIn). You can call the [GetProfileDataFileUrl](../campaign-management-service/getprofiledatafileurl.md) operation to get a temporary file URL that can be used to download the latest profile data. You can also get the profile data from the [Bing Ads Developer Portal](https://developers.azure.bingads.microsoft.com/Account). You must be signed in to the developer portal with a Microsoft account user who has Bing Ads credentials.
 
 > [!NOTE]
 > As a best practice you should download the file instead of opening it directly through an application such as Microsoft Excel. If you view the profile data in a text editor, be sure to use UTF-8 encoding instead of ANSI, otherwise some characters will not be displayed accurately.
+
+For code examples that demonstrate how to download the profile data, see [Profile Data Code Example](code-example-profile-data.md).
 
 ## <a name="profiletypes"></a>Profile Types
 The company name, industry, and job function profile data are available in three seperate files i.e., companies.csv, industries.csv, and jobfunctions.csv.

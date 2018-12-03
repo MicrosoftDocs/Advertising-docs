@@ -24,10 +24,10 @@ The *GetAdsByIdsRequest* object defines the [body](#request-body) and [header](#
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that contains the ads to get.<br/><br/>This request element is required.|**long**|
-|<a name="adids"></a>AdIds|A maximum of 20 identifiers of the requested ads.<br/><br/>If the ad identifiers do not match the requested ad types, then the operation will return a batch error for each requested ad.<br/><br/>This request element is required.|**long** array|
-|<a name="adtypes"></a>AdTypes|One or more types of ads to return.<br/><br/>This request element is required.|[AdType](adtype.md) array|
-|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [Ad](ad.md) object. The additional field values enable you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.|[AdAdditionalField](adadditionalfield.md)|
+|<a name="adgroupid"></a>AdGroupId|The identifier of the ad group that contains the ads to get.|**long**|
+|<a name="adids"></a>AdIds|A maximum of 20 identifiers of the requested ads.<br/><br/>If the ad identifiers do not match the requested ad types, then the operation will return a batch error for each requested ad.|**long** array|
+|<a name="adtypes"></a>AdTypes|One or more types of ads to return.|[AdType](adtype.md) array|
+|<a name="returnadditionalfields"></a>ReturnAdditionalFields|The list of additional properties that you want included within each returned [Ad](ad.md) object. The additional field values enable you to get the latest features using the current version of Bing Ads Campaign Management API, and in the next version the corresponding elements will be included by default.<br/><br/>This request element is optional.|[AdAdditionalField](adadditionalfield.md)|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

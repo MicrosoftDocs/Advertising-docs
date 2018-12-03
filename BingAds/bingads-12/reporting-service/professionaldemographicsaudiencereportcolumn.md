@@ -9,9 +9,6 @@ description: Defines the attributes and performance statistics columns that you 
 # ProfessionalDemographicsAudienceReportColumn Value Set - Reporting
 Defines the attributes and performance statistics columns that you can include in the [ProfessionalDemographicsAudienceReportRequest](professionaldemographicsaudiencereportrequest.md).
 
-> [!NOTE]
-> Not everyone is enabled for Audience campaigns in the Microsoft Audience Network yet. If you don't, don't worry. It's coming soon. 
-
 The attribute columns that you include in a report can affect how the statistics are aggregated. In other words the number of rows increase by a factor of the unique attributes. For more information, see [Columns that Group the Data](../guides/reports.md#columnsdata).
 
 For a list of columns that you must include, please see the [Required Columns](#requiredcolumns) section below.

@@ -14,9 +14,6 @@ dev_langs:
 # GetMediaAssociations Service Operation - Campaign Management
 Gets the media associations of the specified entity type from an account's media library.
 
-> [!NOTE]
-> You must specify the account identifier in the *CustomerAccountId* header element.
-
 ## <a name="request"></a>Request Elements
 The *GetMediaAssociationsRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 
 

@@ -11,6 +11,8 @@ dev_langs:
 # Campaign Product Scope Record - Bulk
 Defines a campaign's set of product conditions that can be uploaded and downloaded in a bulk file.
 
+You can use campaign product scopes with both Shopping campaigns and feed-based Audience campaigns i.e., those campaigns that leverage a Bing Merchant Center [store ID](campaign.md#storeid). The product scope allows you to choose which items from your catalog to include in the campaign e.g., filter by  brand or condition. 
+
 You can download all *Campaign Product Scope* records in the account by including the [DownloadEntity](downloadentity.md) value of *CampaignProductScopes* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new campaign product scope if a valid [Parent Id](#parentid) value is provided. 
@@ -153,7 +155,21 @@ This bulk field maps to the *Id* field of the [Campaign](campaign.md) record.
 > For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Campaign](#campaign) field.
 
 ## <a name="productcondition1"></a>Product Condition 1
-The condition’s operand. The operands implicitly include the equal operator. For example, you can read *Brand* as *Brand=*.
+The condition's operand. The operands implicitly include the equal operator. For example, you can read *Brand* as *Brand=*.
+
+Use each product condition as the operand for the corresponding product value.
+
+|Product Condition (Operand)|Product Value (Attribute)|
+|----------------|-------------------------|
+|[Product Condition 1](#productcondition1)|[Product Value 1](#productvalue1)|
+|[Product Condition 2](#productcondition2)|[Product Value 2](#productvalue2)|
+|[Product Condition 3](#productcondition3)|[Product Value 3](#productvalue3)|
+|[Product Condition 4](#productcondition4)|[Product Value 4](#productvalue4)|
+|[Product Condition 5](#productcondition5)|[Product Value 5](#productvalue5)|
+|[Product Condition 6](#productcondition6)|[Product Value 6](#productvalue6)|
+|[Product Condition 7](#productcondition7)|[Product Value 7](#productvalue7)|
+
+Each condition is met if the product's attribute value equals the operand's attribute value. For example, if the operand is set to Brand and the attribute is set to Contoso, the condition is met if the value of the product catalog's Brand attribute is equal to Contoso. 
 
 > [!NOTE]
 > For add and update, at least one product condition and value pair are required, and the index number has no relevance. For example you can specify valid values for *Product Condition 2* and *Product Value 2* and leave the remaining condition and value fields empty.
@@ -161,6 +177,35 @@ The condition’s operand. The operands implicitly include the equal operator. F
 **Add:** Optional  
 **Update:** Read-only. You cannot update the condition or value fields. To update the conditions you must delete the product scope and add a new one.    
 **Delete:** Read-only  
+
+For supported Product Condition (operand) and Product Value (attribute) per campaign type, see the tables below.
+
+### <a name="productconditions-audience"></a>Product Conditions for Feed-Based Audience Campaigns
+Multiple product conditions can be specified for each feed-based Audience campaign. Each condition is met if the product's attribute value equals the operand's attribute value. For example, if the operand is set to Brand and the attribute is set to Contoso, the condition is met if the value of the product catalog's Brand attribute is equal to Contoso.
+
+|Product Condition (Operand)|Product Value (Attribute) Description|Business Rules|
+|----------------|-------------------------|----------------------|
+|Brand|The product's manufacturer, brand, or publisher.<br/><br/>A maximum of 1,000 characters.|The *Brand* operand may only be specified once per campaign product scope filter.|
+|Condition|The condition of the product.<br/><br/>If operand is set to Condition, the supported attribute values that you can specify are *New*, *Used*, and *Refurbished*.|The *Condition* operand may only be specified once per campaign product scope filter.|
+|ProductType1-5<br/><br/>Five product type operand values are available i.e. ProductType1, ProductType2, ProductType3, ProductType4, and ProductType5.|A product type or category defined by the merchant.<br/><br/>ProductType1 is the highest level product type, and ProductType5 is the lowest level or most granular product type.<br/><br/>A maximum of 100 characters.|Each of the product type operands may be used once per campaign product scope filter.<br/><br/>If you set the operand to a product type from 1 through 5, they must be specified in ascending order. For example, the operand can be set to "ProductType2" with attribute "Pet Supplies", if a higher level product partition has operand "ProductType1" with attribute "Animals & Pet Supplies".|
+|CustomLabel0-4<br/><br/>Five custom label operand values are available i.e. CustomLabel0, CustomLabel1, CustomLabel2, CustomLabel3, and CustomLabel4.|A custom label defined by the merchant.<br/><br/>Custom labels e.g. CustomLabel0 and CustomLabel4 are not validated based on any hierarchy.<br/><br/>A maximum of 100 characters.|Each of the *CustomLabel* operands may be used once per campaign product scope filter.|
+
+### <a name="productconditions-shopping"></a>Product Conditions for Shopping Campaigns
+Multiple product conditions can be specified for each Bing Shopping campaign and ad group. Each condition is met if the product's attribute value equals the operand's attribute value. For example, if operand is set to Brand and attribute is set to Contoso, the condition is met if the value of the product catalog's Brand attribute is equal to Contoso.
+
+In Shopping campaigns the product conditions can be set at campaign and ad group level. The following table describes Product Condition (operand) and Product Value (attribute) business rules for [Campaign Product Scope](campaign-product-scope.md) and [Ad Group Product Partition](ad-group-product-partition.md) records.
+
+|Product Condition (Operand)|Product Value (Attribute) Description|Campaign Product Scope Rules|Ad Group Product Partition Rules|
+|----------------|-------------------------|----------------------|--------------------------|
+|All|Must be null.|Not applicable.|For an ad group's product partitions, the root node must have operand set to "All" and attribute set to null or empty.|
+|Brand|The product's manufacturer, brand, or publisher.<br/><br/>A maximum of 1,000 characters.|The *Brand* operand may only be specified once per campaign product scope filter.|The *Brand* operand may be used in multiple branches, but may only be specified once per branch.|
+|CategoryL1-5<br/><br/>Five category operand values are available i.e. CategoryL1, CategoryL2, CategoryL3, CategoryL4, and CategoryL5.|A product category defined by the Bing Merchant Center store. Please see [Bing Category Taxonomy](http://go.microsoft.com/fwlink?LinkId=507666) for valid category values and taxonomy.<br/><br/>CategoryL0 is the highest level category, and CategoryL4 is the lowest level or most granular category.<br/><br/>A maximum of 100 characters.|Each of the *CategoryL* operands may be used once per campaign product scope filter.<br/><br/>If you specify a product condition with operand set to a product category from 1 through 5,<br/>they must be specified in ascending order. For example, you can set the operand to "CategoryL2" with attribute "Pet Supplies", if a preceding product condition has the operand "CategoryL1" with attribute "Animals & Pet Supplies".|Each of the *CategoryL* operands may be used in multiple branches, but may only be specified once per branch. For example one branch may contain *CategoryL1* and *CategoryL2*, but may not contain another node with the CategoryL2 operand.<br/><br/>If you set the operand to a product category from 1 through 5, they must be specified in ascending order. For example, the operand can be set to "CategoryL2" with attribute "Pet Supplies", if a higher level product partition has operand "CategoryL1" with attribute "Animals & Pet Supplies".<br/><br/>The prior level product category operand doesn't need to be specified in the immediate parent partition. For example a CategoryL2 condition could be specified for a product partition if the parent of its parent specified a CategoryL1 condition.|
+|Condition|The condition of the product.<br/><br/>If operand is set to Condition, the supported attribute values that you can specify are *New*, *Used*, and *Refurbished*.|The *Condition* operand may only be specified once per campaign product scope filter.|The *Condition* operand may be used in multiple branches, but may only be specified once per branch.|
+|CustomLabel0-4<br/><br/>Five custom label operand values are available i.e. CustomLabel0, CustomLabel1, CustomLabel2, CustomLabel3, and CustomLabel4.|A custom label defined by the merchant.<br/><br/>Custom labels e.g. CustomLabel0 and CustomLabel4 are not validated based on any hierarchy.<br/><br/>A maximum of 100 characters.<br/><br/>This operand is not applicable with [Cooperative bidding](../guides/product-ads.md#setup-cooperative).|Each of the *CustomLabel* operands may be used once per campaign product scope filter.|Each of the *CustomLabel* operands may be used in multiple branches, but may only be specified once per branch. For example one branch may contain *CustomLabel0* and *CustomLabel1*, but may not contain another node with the *CustomLabel1* operand.|
+|GTIN|The Global Trade Item Number defined by the merchant.<br/><br/>The GTIN field has a limit of 50 characters, with each GTIN value having up to 14 digits.<br/><br/>This operand is only applicable with [Cooperative bidding](../guides/product-ads.md#setup-cooperative).|The *GTIN* operand may only be specified once per campaign product scope filter.|The *GTIN* operand may be used in multiple branches, but may only be specified once per branch.|
+|Id|The product identifier defined by the merchant.<br/><br/>A maximum of 1,000 characters.|The *Id* operand may only be specified once per campaign product scope filter.|The *Id* operand may be used in multiple branches, but may only be specified once per branch.|
+|MPN|The Global Trade Item Number defined by the merchant.<br/><br/>A maximum of 70 characters.<br/><br/>This operand is only applicable with [Cooperative bidding](../guides/product-ads.md#setup-cooperative).|The *MPN* operand may only be specified once per campaign product scope filter.|The *MPN* operand may be used in multiple branches, but may only be specified once per branch.|
+|ProductType1-5<br/><br/>Five product type operand values are available i.e. ProductType1, ProductType2, ProductType3, ProductType4, and ProductType5.|A product type or category defined by the merchant.<br/><br/>ProductType1 is the highest level product type, and ProductType5 is the lowest level or most granular product type.<br/><br/>A maximum of 100 characters.<br/><br/>This operand is not applicable with [Cooperative bidding](../guides/product-ads.md#setup-cooperative).|Each of the product type operands may be used once per campaign product scope filter.<br/><br/>If you specify a product condition with operand set to a product type from 1 through 5,<br/>they must be specified in ascending order. For example, you can set the operand to "ProductType2" with attribute "Pet Supplies", if a preceding product condition has the operand "ProductType1" with attribute "Animals & Pet Supplies".|Each of the *ProductType* operands may be used in multiple branches, but may only be specified once per branch. For example one branch may contain *ProductType1* and *ProductType2*, but may not contain another node with the *ProductType2* operand.<br/><br/>If you set the operand to a product type from 1 through 5, they must be specified in ascending order. For example, the operand can be set to "ProductType2" with attribute "Pet Supplies", if a higher level product partition has operand "ProductType1" with attribute "Animals & Pet Supplies".<br/><br/>The prior level product type operand doesn't need to be specified in the immediate parent partition. For example a ProductType2 condition could be specified for a product partition if the parent of its parent specified a ProductType1 condition.|
 
 ## <a name="productcondition2"></a>Product Condition 2
 Supports the same values and rules as [Product Condition 1](#productcondition1).
@@ -181,14 +226,12 @@ Supports the same values and rules as [Product Condition 1](#productcondition1).
 Supports the same values and rules as [Product Condition 1](#productcondition1).
 
 ## <a name="productvalue1"></a>Product Value 1
-The condition’s attribute value.
+The condition's attribute value. An attribute's value must exactly match the value specified in the customer's Bing Merchant Center catalog file.
 
-An attribute’s value must exactly match the value specified in the customer’s Bing Merchant Center catalog file.
-
-For available condition and values in Bing Shopping campaigns, see [Product Conditions for Bing Shopping Campaigns](../guides/product-ads.md#productconditions). For supported attribute and operand values in Audience campaigns, see [Product Conditions for Audience Campaigns](../guides/audience-ads.md#productconditions).
+For business rules see [Product Condition 1](#productcondition1).
 
 **Add:** Required  
-**Update:** Read-only. You cannot update the condition or value fields. To update the conditions you must delete the product scope and add a new one.    
+**Update:** Read-only. You cannot update the condition or value fields. To update the conditions you must delete the campaign product scope and add a new one.    
 **Delete:** Read-only  
 
 ## <a name="productvalue2"></a>Product Value 2
