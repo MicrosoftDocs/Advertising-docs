@@ -89,13 +89,13 @@ For more information about iterators, see [What are iterators?](../concepts/iter
 
 ### How do I get performance data for an entity?
 
-Most entities let you request performance data, if available. But first you need to tell Bing the date range for the performance data when you specify the selector. To specify a date range, use a predefined literal, such as YESTERDAY or LAST_MONTH, or use a start and end date. For more information, see [withDateRange(string dateRange)](../reference/AdGroupSelector.md#fordaterange-string-daterange-) and [forDateRange(Object dateFrom, Object dateTo)](../reference/AdGroupSelector.md#fordaterange-object-datefrom-object-dateto-).
+Most entities let you request performance data, if available. But first you need to tell Bing the date range for the performance data when you specify the selector. To specify a date range, use a predefined literal, such as YESTERDAY or LAST_MONTH, or use a start and end date. For more information, see [forDateRange(string dateRange)](../reference/AdGroupSelector.md#fordaterange-string-daterange-) and [forDateRange(Object dateFrom, Object dateTo)](../reference/AdGroupSelector.md#fordaterange-object-datefrom-object-dateto-).
 
 ```javascript
     var campaignName = 'My Campaign';
     var adGroupName = 'My AdGroup';
     var iterator = BingAdsApp.adGroups()
-        .withDateRange('LAST_30_DAYS')
+        .forDateRange('LAST_30_DAYS')
         .withCondition(`CampaignName = '${campaignName}'`)
         .withCondition(`Name = '${adGroupName}'`)
         .get();
@@ -117,7 +117,7 @@ You also need to specify a date range if you specify a performance data column i
     var endDate = {year: 2018, month: 6, day: 13};
 
     var iterator = BingAdsApp.adGroups()
-        .withDateRange(startDate, endDate)
+        .forDateRange(startDate, endDate)
         .withCondition("Ctr > 0.22")
         .get();
 ```
@@ -127,7 +127,7 @@ You also need to specify a date range if you specify a performance data column i
 
 To add an entity, you use a builder object. To get a builder object, call the **new*** method on the parent object that you're adding children to. For example, to add ad groups to a campaign, call the campaign's `newAdGroupBuilder()` method.
 
-The builder object contains methods for setting all the object's properties that you're allowed to specify. It also includes a `build()` method that you use to create the entity. The following shows how to build an ad group.
+The builder object contains methods for setting all the object's properties that you're allowed to specify. It also includes a `build()` method that you use to create the entity. The following shows how to build an ad group. (For information about how to get a campaign object, see [Get a campaign by name](../examples/campaigns.md#get-a-campaign-by-name).)
 
 ```javascript
         var adGroupName = "My ad group";
