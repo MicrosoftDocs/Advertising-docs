@@ -127,7 +127,7 @@ You also need to specify a date range if you specify a performance data column i
 
 To add an entity, you use a builder object. To get a builder object, call the **new*** method on the parent object that you're adding children to. For example, to add ad groups to a campaign, call the campaign's `newAdGroupBuilder()` method.
 
-The builder object contains methods for setting all the object's properties that you're allowed to specify. It also includes a `build()` method that you use to create the entity. The following shows how to build an ad group. (For information about how to get a campaign object, see [Get a campaign by name](../examples/campaigns.md#Get-a-campaign-by-name).)
+The builder object contains methods for setting all the object's properties that you're allowed to specify. It also includes a `build()` method that you use to create the entity. The following shows how to build an ad group. (For information about how to get a campaign object, see [Get a campaign by name](../examples/campaigns.md#get-a-campaign-by-name).)
 
 ```javascript
         var adGroupName = "My ad group";
