@@ -16,9 +16,9 @@ You can download all *Ad Group Negative Product Audience Association* records in
 The following Bulk CSV example would add a new Ad Group Negative Product Audience Association if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience,Remarketing Targeting Setting
-Format Version,,,,,,,,,6,,,
-Ad Group Negative Product Audience Association,Paused,,-1111,,,ClientIdGoesHere,,,,ProductAudienceIdHere,My Product Audience,
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
+Format Version,,,,,,,,,6,,
+Ad Group Negative Product Audience Association,Paused,,-1111,,,ClientIdGoesHere,,,,ProductAudienceIdHere,My Product Audience
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupNegativeProductAudienceAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 

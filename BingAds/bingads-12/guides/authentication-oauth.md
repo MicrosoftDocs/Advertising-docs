@@ -23,14 +23,14 @@ At a high level you should complete the following steps to authenticate a Micros
 
 1. [Register](#registerapplication) your application.
 
-2. Request user consent for your application to manage their Bing Ads accounts, by initiating either the [Implicit Grant Flow](#implicit) or [Authorization Code Grant Flow](#authorizationcode).
+2. Request user consent for your application to manage their Bing Ads accounts, by initiating either the [Authorization Code Grant Flow](#authorizationcode) or [Implicit Grant Flow](#implicit). 
 
    > [!IMPORTANT]
    > You must provide consent at least once through the web application consent flow. For repeat or long term authentication, you should follow the [authorization code grant flow](#authorizationcode) for obtaining an access token and refresh token. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. You should expect to request user consent again for example, if the Microsoft Account owner went through account recovery, changed their password, or otherwise removed permissions for your application to authenticate on their behalf. 
    > 
    > Users can revoke your application's access to their accounts at [https://account.live.com/consent/Manage](https://account.live.com/consent/Manage).
 
-3. Complete either the [Implicit Grant Flow](#implicit) or [Authorization Code Grant Flow](#authorizationcode) to obtain an access token that can be used to authenticate with Bing Ads services.
+3. Complete either the [Authorization Code Grant Flow](#authorizationcode) or [Implicit Grant Flow](#implicit) to obtain an access token that can be used to authenticate with Bing Ads services.
 
 4. For each API call to Bing Ads, use the returned access token as the *AuthenticationToken* element within the Bing Ads service [Service Request Header](get-started.md#where-to-use). For more information, see [Managing OAuth Tokens](#managingoauthtokens).
 
@@ -72,34 +72,9 @@ Once you have registered your application you can manage the access token for a 
 > For apps that target the [sandbox](sandbox.md) environment, use *login.live-int.com* instead of *login.live.com*.
 
 > [!TIP]
+> To get access and refresh tokens for your Bing Ads user and make your first service call using the Bing Ads API, see the [Quick Start](get-started.md#quick-start) sample.
+> 
 > For details about how to get access and refresh tokens using the Bing Ads SDKs, see [Authentication With the SDKs](sdk-authentication.md#oauth).
-
-### <a name="implicit"></a>Implicit Grant Flow
-For one time or short term authentication, you should follow the implicit grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Implicit Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#section-4.2).
-
-> [!IMPORTANT]
-> For web applications, do not use implicit grant flow and instead use a client secret with the [Authorization Code Grant Flow](#authorizationcode).
-
-1. Request user consent through a web browser control. Connect to the authorization endpoint, by using a URL in the following format. Replace CLIENT_ID with the value configured in [Registering Your Application](#registerapplication).
-
-   ```http
-   https://login.live.com/oauth20_authorize.srf?client_id=CLIENT_ID&scope=bingads.manage&response_type=token&redirect_uri=https://login.live.com/oauth20_desktop.srf&state=ClientStateGoesHere
-   ```
-   > [!NOTE]
-   > The scope parameter should be set to *bingads.manage* and the response type set to *token*.
-   > 
-   > For a native application, use *https://login.live.com/oauth20_desktop.srf* as the redirect URI.
-   >
-   > It is recommended that you specify a non guessable *state* request parameter to help prevent cross site request forgery (CSRF). Be sure to verify that the authorization server returns the same value before proceeding to use any values from the response. 
-
-2. The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their Bing Ads accounts.
-
-3. The authorization service calls back to your application with the redirection URI, which includes an access token if the user authorized your application to manage their Bing Ads accounts. For example the callback URI includes an access token as follows if the user granted permissions for your application to manage their Bing Ads accounts: *https://login.live.com/oauth20_desktop.srf'vv=1550&lc=1033#access_token=ACCESS_TOKEN&state=ClientStateGoesHere*.
-
-   > [!NOTE]
-   > If the user denied your application permissions to manage their Bing Ads accounts, the callback URI includes an error and error description field as follows: *https://login.live.com/oauth20_desktop.srf'vv=1550&lc=1033#error=ERROR&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
-
-4. Use the returned access token as the *AuthenticationToken* element within Bing Ads service [Service Request Header](get-started.md#where-to-use).
 
 ### <a name="authorizationcode"></a>Authorization Code Grant Flow
 For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Authorization Code Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#section-4.1).
@@ -173,6 +148,34 @@ For repeat or long term authentication, you should follow the authorization code
 
     You will encounter the same error if you try to request new access and refresh tokens using a refresh token that was provisioned without a client secret. 
 
+
+### <a name="implicit"></a>Implicit Grant Flow
+For one time or short term authentication, you should follow the implicit grant flow for obtaining an access token. This is a standard OAuth 2.0 flow and is defined in detail in the [Implicit Grant section of the OAuth 2.0 spec](http://tools.ietf.org/html/rfc6749#section-4.2).
+
+> [!IMPORTANT]
+> For web applications, do not use implicit grant flow and instead use a client secret with the [Authorization Code Grant Flow](#authorizationcode).
+
+1. Request user consent through a web browser control. Connect to the authorization endpoint, by using a URL in the following format. Replace CLIENT_ID with the value configured in [Registering Your Application](#registerapplication).
+
+   ```http
+   https://login.live.com/oauth20_authorize.srf?client_id=CLIENT_ID&scope=bingads.manage&response_type=token&redirect_uri=https://login.live.com/oauth20_desktop.srf&state=ClientStateGoesHere
+   ```
+   > [!NOTE]
+   > The scope parameter should be set to *bingads.manage* and the response type set to *token*.
+   > 
+   > For a native application, use *https://login.live.com/oauth20_desktop.srf* as the redirect URI.
+   >
+   > It is recommended that you specify a non guessable *state* request parameter to help prevent cross site request forgery (CSRF). Be sure to verify that the authorization server returns the same value before proceeding to use any values from the response. 
+
+2. The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their Bing Ads accounts.
+
+3. The authorization service calls back to your application with the redirection URI, which includes an access token if the user authorized your application to manage their Bing Ads accounts. For example the callback URI includes an access token as follows if the user granted permissions for your application to manage their Bing Ads accounts: *https://login.live.com/oauth20_desktop.srf'vv=1550&lc=1033#access_token=ACCESS_TOKEN&state=ClientStateGoesHere*.
+
+   > [!NOTE]
+   > If the user denied your application permissions to manage their Bing Ads accounts, the callback URI includes an error and error description field as follows: *https://login.live.com/oauth20_desktop.srf'vv=1550&lc=1033#error=ERROR&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
+
+4. Use the returned access token as the *AuthenticationToken* element within Bing Ads service [Service Request Header](get-started.md#where-to-use).
+
 ## <a name="userlogout"></a>Sign the user out
 To sign a user out, perform the following steps:
 1. Delete any cached access_token or refresh_token values you've previously received from the OAuth flow.
@@ -187,7 +190,7 @@ To sign a user out, perform the following steps:
  
 
 ## <a name="oauthparameters"></a>OAuth Authorization Parameters
-The following sections list the request and response parameters that are available when calling the Microsoft account authorization service as described in the [Implicit Grant Flow](#implicit) and [Authorization Code Grant Flow](#authorizationcode) walkthroughs above.
+The following sections list the request and response parameters that are available when calling the Microsoft account authorization service as described in the [Authorization Code Grant Flow](#authorizationcode) and [Implicit Grant Flow](#implicit) walkthroughs above.
 
 > [!NOTE]
 > The Bing Ads SDKs do not directly expose the *authentication_token*, *display*, *error*, *error_description*, *grant_type*, *locale*, *response_type*, or *scope*, parameters. The Bing Ads SDKs do expose the *client_id*, *client_secret*, *redirect_uri*, and *state*  parameters. 
