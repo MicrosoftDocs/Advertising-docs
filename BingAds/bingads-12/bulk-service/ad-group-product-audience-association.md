@@ -16,9 +16,9 @@ You can download all *Ad Group Product Audience Association* records in the acco
 The following Bulk CSV example would add a new ad group product audience association if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience,Remarketing Targeting Setting
-Format Version,,,,,,,,,6,,,
-Ad Group Product Audience Association,Paused,,-1111,,,ClientIdGoesHere,,10,,ProductAudienceIdHere,My Product Audience,
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
+Format Version,,,,,,,,,6,,
+Ad Group Product Audience Association,Paused,,-1111,,,ClientIdGoesHere,,10,,ProductAudienceIdHere,My Product Audience
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupProductAudienceAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
