@@ -19,9 +19,9 @@ You can download all *Ad Group Negative Similar Remarketing List Association* re
 The following Bulk CSV example would add a new Ad Group Negative Similar Remarketing List Association if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience,Remarketing Targeting Setting
-Format Version,,,,,,,,,6,,,
-Ad Group Negative Similar Remarketing List Association,Paused,,-1111,,,ClientIdGoesHere,,,,RemarketingListIdHere,My Remarketing List,
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
+Format Version,,,,,,,,,6,,
+Ad Group Negative Similar Remarketing List Association,Paused,,-1111,,,ClientIdGoesHere,,,,RemarketingListIdHere,My Remarketing List
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupNegativeSimilarRemarketingListAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
