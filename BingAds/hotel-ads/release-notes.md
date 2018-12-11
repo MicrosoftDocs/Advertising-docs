@@ -15,7 +15,14 @@ For information about changes that were included with each release, see the foll
 
 ## October 28, 2018
 
-- Added the following dimension columns that you must not specify if your report request includes share of voice (SOV) columns. See [Share of voice](../hotel-service/reporting.md#sov).
+- Updated the [hotel feed schema](../hotel-feed/reference.md) to include the following [\<listing>](../hotel-feed/reference.md#listingtype) elements:  
+  - \<category>
+  - \<content>
+  
+
+## October 28, 2018
+
+- Added the following [dimension columns](../hotel-service/reporting.md#dimensioncolumns) to reporting. You must not specify these dimensions if your report request includes share of voice (SOV) columns. See [Share of voice](../hotel-service/reporting.md#sov).
   - AdvancedBookingWindow
   - DateType 
   - SiteType

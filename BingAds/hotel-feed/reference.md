@@ -62,8 +62,10 @@ Defines a hotel.
 |latitude|Required.<br /> Data type is decimal.<br /><br />The latitude of the hotel's geographical coordinates.<br /><br />Notes:<ul><li>The latitude and longitude are required only if you don't specify `phone`. It's preferred that you specify both the phone and geographical coordinates.</li><li>The latitude must be in the range -90.0 through 90.0.</li><li>Use [Location API](https://msdn.microsoft.com/library/ff701715.aspx) or another GeoCoding tool to generate the coordinates.</li></ul>|None
 |longitude|Required.<br /> Data type is decimal.<br /><br />The longitude of the hotel's geographical coordinates.<br /><br />Notes:<ul><li>The latitude and longitude are required only if you don't specify `phone`. It's preferred that you specify both the phone and geographical coordinates.</li><li>The longitude must be in the range -180.0 through 180.0.</li><li>Use [Location API](https://msdn.microsoft.com/library/ff701715.aspx) or another GeoCoding tool to generate the coordinates.</li></ul>|None
 |<a name="phone" />phone|Required.<br />Data type is string.<br /><br />A list of telephone numbers that customers use to contact the hotel.<br /><br />Attributes:<ul><li>type&mdash;Required. The type of telephone number specified. The following are the possible values.<br /><ul><li>main&mdash;Required. The hotel's main voice telephone number.</li><li>tollfree&mdash;Optional. The hotel's toll-free voice telephone number.</li><li>fax&mdash;Optional. The hotel's fax telephone number.</li><li>tdd&mdash;Optional. The hotel's telecommunications device for the deaf telephone number.</li><li>mobile&mdash;Optional. The hotel's mobile telephone number.</li></ul></ul>Notes:<ul><li>A phone number is required only if you don't specify `latitude` and `longitude`. It's preferred that you specify both the phone and geographical coordinates.</li><li>Provide unique telephone numbers for the listing.</li><li>Use dashes, spaces, or parentheses in the phone number to make it easier to read. For example, use “610-222-3333” or “(610) 222-3333” rather than “6102223333”.</li><li>Specify only one telephone number in each `phone` element. Do not specify multiple numbers, such as 650-123-2222/33.</li><li>The telephone number may contain an extension of up to 7 digits. Precede extensions with one of the following abbreviations: "ext", "extn", and "x". For example, "408-555-1111x12345" or "408-555-1111 x12345".</li><li>The telephone number may not include alphabetical characters.</li><li>Each listing should specify one of each type of phone number: "main", "mobile", "tollfree", "fax", or "tdd", if applicable.</li><li>If the telephone number includes the country code, precede it with a "+". For example, “+65 6722-2323” for a number in Singapore where the country code is 65, or “+001 (408) 555-1111” for a number in the United States where the country code is 001.</li></ul>|None
+|category|Optional.<br />Data type is string.<br /><br/>A user-defined category for the hotel. For example, extended stay, economy, or motel.|None
+|content|Optional.<br />Data type is [Content Type](#contenttype).<br /><br/>Provides additional information about the hotel such as a description, reviews, and amenities.|[Content Type](#contenttype)
 
- 
+
 <a name="componenttype" /> 
 
 ## Component Type
@@ -73,4 +75,72 @@ Defines a component of a street address.
 |Element|Description|Children
 |-|-|-
 |component|Optional.<br />Data type is string.<br /><br />Specify a `component` element for each component of the address. <br /><br />Attributes:<ul><li>name&mdash;Required. The name of the address component. The following are the possible values.<br /><ul><li>addr1&mdash;Required. The hotel's street address.</li><li>addr2&mdash;Optional. Second street address line.</li><li>addr3&mdash;Optional. Third street address line. </li><li>city&mdash;Required. The name of the city where the hotel is located.</li><li>province&mdash;Required. The name of the state, region, or province where the hotel is located.</li><li>postal_code&mdash;Required. The address' postal code.</li></ul></li></ul> |None
+
+
+<a name="contenttype" /> 
+
+## Content Type
+
+Defines additional information about the hotel.
+
+|Element|Description|Children
+|-|-|-
+|text|Optional.<br />Data type is [Description type](#descriptiontype).<br /><br />A description of the hotel. <br /><br />Attributes:<ul><li>type&mdash;Required. Set to *description*.</li></ul>|[Description type](#descriptiontype)
+|review|Optional.<br />Data type is [Review type](#reviewtype).<br /><br />A review of the hotel. You may specify one or more \<review> elements.<br /><br />Attributes:<ul><li>type&mdash;Required. Set to either of the following types:<ul><li>editorial&mdash;The review is written by a blogger or other professional authority.</li><li>user&mdash;The review is written by a user.</li></ul></li></ul>|[Review type](#reviewtype)
+|attributes|Optional.<br />Data type is [Attribute type](#attributetype).<br /><br />The list of hotel amenities. Specify an \<attr> child element for each amenity you want to include.|[Attribute type](#attributetype)
+|image|Optional.<br />Data type is [Image type](#imagetype).<br /><br />An image of the hotel. You may specify one or more \<image> elements.<br /><br />Attributes:<ul><li>type&mdash;Required. Set to either of the following types:<ul><li>ad&mdash;The image is an ad.</li><li>menu&mdash;The image is of a menu.</li><li>photo&mdash;The image is of the hotel.</li></ul><li>url&mdash;The URL to the image.</li><li>width&mdash;The image's width, in pixels.</li><li>height&mdash;The image's height, in pixels.</li></ul>|[Image type](#imagetype)
+
+
+<a name="descriptiontype" /> 
+
+## Description Type
+
+Defines description of the hotel.
+
+|Element|Description|Children
+|-|-|-
+|link|Optional.<br />Data type is string.<br /><br />A URL to an online description of the hotel.|None
+|title|Optional.<br />Data type is string.<br /><br />A title to use for the description.|None
+|body|Required.<br />Data type is string.<br /><br />A description of the hotel.|None
+
+
+<a name="imagetype" /> 
+
+## Image Type
+
+Defines an image of the hotel.
+
+|Element|Description|Children
+|-|-|-
+|date|Required.<br /><br />The date the image was taken.<br /><br />Attributes:<ul><li>month&mdash;Required. The month the image was taken. Valid values are 1 (January) through 12 (December)</li><li>day&mdash;Required. The day of the month the image was taken.</li><li>year&mdash;Required. The four-digit year the image was taken.</li></ul>|None
+|link|Optional.<br />Data type is string.<br /><br />A URL to the hotel's webpage that contains the image.|None
+|title|Optional.<br />Data type is string.<br /><br />A title to use for the image.|None
+|author|Optional.<br />Data type is string.<br /><br />The name of the person that took the image.|None
+
+
+<a name="reviewtype" /> 
+
+## Review Type
+
+Defines a hotel review.
+
+|Element|Description|Children
+|-|-|-
+|author|Optional.<br />Data type is string.<br /><br />The name of the person who wrote the review.|None
+|body|Optional.<br />Data type is string.<br /><br />The review's text. The text should not include HTML but if you do, it must be escaped.|None
+|date|Optional.<br /><br />The date the review was written. Specify the date only if the review's type is *user*.<br /><br />Attributes:<ul><li>month&mdash;Required. The month the review was written. Valid values are 1 (January) through 12 (December)</li><li>day&mdash;Required. The day of the month the review was written.</li><li>year&mdash;Required. The four-digit year the review was written.</li></ul>|None
+|link|Optional.<br />Data type is string.<br /><br />A URL to the review.|None
+|rating|Optional.<br />Data type is string.<br /><br />The rating that the reviewer gave the hotel. The rating is a string decimal in the range 0.0 through 10.0.|None
+|title|Optional.<br />Data type is string.<br /><br />The review's title. Specify the title only if the review's type is *editorial*.|None
+
+
+<a name="attributetype" /> 
+
+## Attribute Type
+
+Defines a hotel amenity.
+
+|Element|Description|Children
+|-|-|-
+|attr|Optional.<br />Data type is string.<br /><br />A hotel amenity.<br /><br />Attributes:<ul><li>name&mdash;Required. Set to one of the following values:<ul><li>air_conditioned&mdash;All guest rooms have air conditioning. Possible values: Yes or No.</li><li>all_inclusive_available&mdash;The room rate includes food and drinks. Possible values: Yes or No.</li><li>child_friendly&mdash;The hotel includes special features for families traveling with kids such as reduced room rates, play area, or kid's club. Possible values: Yes or No.</li><li>has_affiliated_golf_course&mdash;The hotel has a golf course onsite or nearby for guests to enjoy. Possible values: Yes or No.</li><li>has_airport_shuttle&mdash;The hotel offers an airport shuttle for free or a fee. Possible values: Yes or No.</li><li>has_bar_or_lounge&mdash;The hotel has a bar or lounge that serves alcoholic beverages. Possible values: Yes or No.</li><li>has_beach_access&mdash;The hotel has beach access without having to cross a road. Possible values: Yes or No.</li><li>has_business_center&mdash;The hotel includes a business center where guests can use a computer and printer for free or a fee. Possible values: Yes or No.</li><li>has_fitness_center&mdash;The hotel has an onsite fitness center. Possible values: Yes or No.</li><li>has_free_breakfast&mdash;The hotel provides a free breakfast to all guest each day. Possible values: Yes or No.</li><li>has_hot_tub&mdash;The hotel has a hot tub onsite or some or all guest rooms include a whirlpool or jacuzzi tub. Possible values: Yes or No.</li><li>has_laundry_service&mdash;The hotel offers laundry service where the hotel launders the guests clothes. An onsite, self-serve, coin-operated facility doesn't count. Possible values: Yes or No.</li><li>has_restaurant&mdash;The hotel has a restaurant for guests onsite. Possible values: Yes or No.</li><li>has_room_service&mdash;The hotel offers room service where food is prepared onsite and delivered to the guest's room. Possible values: Yes or No.</li><li>has_spa&mdash;The hotel has an onsite spa that provides services such as a massage, facial, or sauna. Possible values: Yes or No.</li><li>kitchen_availability&mdash;Indicates whether guest rooms include kitchens with a refrigerator and stove. Possible values: Available in all rooms, Available in some rooms, or Not available.</li><li>parking_type&mdash;Indicates whether parking is available and whether it's free. Possible values: No payment required or Paid not available.</li><li>pets_allowed&mdash;The hotel allows guests to bring pets. Possible values: Yes or No.</li><li>smoke_free_property&mdash;The hotel forbids smoking. Possible values: Yes or No.</li><li>swimming_pool_type&mdash;Indicates whether the hotel has a swimming pool. Possible values: Indoors, Outdoors, Indoors and outdoors, or Not available.</li><li>wheelchair_accessible&mdash;Indicates whether the hotel is wheelchair accessible. Possible values: Yes or No.</li><li>wifi_type&mdash;Indicates whether the hotel offers WiFi service. Possible values: No payment required, Paid, or Not available.</li></ul>|None
 
