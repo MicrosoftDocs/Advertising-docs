@@ -19,8 +19,8 @@ The following Bulk CSV example would add one campaign of each type i.e. Search, 
 Type,Status,Id,Parent Id,Campaign,Website,Client Id,Modified Time,Time Zone,Budget Id,Budget Name,Budget,Budget Type,Bid Adjustment,Name,Country Code,Store Id,Campaign Type,Priority,Tracking Template,Custom Parameter,Bid Strategy Type,Domain Language,Source
 Format Version,,,,,,,,,,,,,,6,,,,,,,,,
 Campaign,Active,-111,0,Search 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,Search,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,,
-Campaign,Active,-111,0,Shopping 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,US,StoreIdHere,Shopping,0,,{_promoCode}=PROMO1; {_season}=summer,,,
-Campaign,Active,-111,0,DynamicSearchAds 2/6/2017 4:11:11 PM,contoso.com,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,DynamicSearchAds,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,EN,SystemIndex
+Campaign,Active,-111,0,Shopping 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,US,StoreIdHere,Shopping,0,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,,
+Campaign,Active,-111,0,DynamicSearchAds 2/6/2017 4:11:11 PM,contoso.com,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,DynamicSearchAds,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,English,SystemIndex
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCampaign* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -122,7 +122,7 @@ for(int i = 0; i < 3; i++)
         // 'Website' column header in the Bulk file
         DomainName = "contoso.com",
         // 'Domain Language' column header in the Bulk file
-        Language = "EN",
+        Language = "English",
         // 'Source' column header in the Bulk file
         Source = "SystemIndex"
     }
@@ -246,7 +246,7 @@ For campaigns you can use any of the following bid strategy types.
 > [!TIP] 
 > You can set your campaign's bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
 
-**Add:** Optional. Until January 28th, 2019 if you do not set this field, then *ManualCpc* is used by default. From January 28th, 2019 onwards if you do not set this field, then *EnhancedCpc* will be used by default.
+**Add:** Optional. The default for Audience and Shopping campaigns is Manual CPC. Until January 28th, 2019 if you do not set this field for Search and DynamicSearchAds campaigns, then Manual CPC is used by default. From January 28th, 2019 onwards if you do not set this field, then Enhanced CPC will be used by default for Search and DynamicSearchAds campaigns.
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc) and [Bid Strategy TargetCpa](#bidstrategytargetcpa) fields will be deleted.       
 **Delete:** Read-only  
 
@@ -319,7 +319,7 @@ The type of the campaign.
 
 The campaign type determines whether the campaign is a Bing Shopping campaign, Dynamic Search Ads campaign, or Search campaign. Possible values include *Audience*, *DynamicSearchAds*, *Shopping*, and *Search*.
 
-**Add:** Required for Audience campaigns, and otherwise this field is optional. If not specified, then default value of *Search* is used and you cannot set Audience, Dynamic Search Ads, or Shopping campaign settings. If the campaign type is *Shopping* then you must also include the *Country Code*, *Priority*, and *Store Id* fields. If the campaign type is *DynamicSearchAds* then you must also include the *Domain Language* and *Website* fields.  
+**Add:** Required for Audience campaigns, and otherwise this field is optional. If not specified, then default value of *Search* is used and you cannot set Audience, Dynamic Search Ads, or Shopping campaign settings. If the campaign type is *Shopping* then you must also include the [Country Code](#countrycode), [Priority](#priority), and [Store Id](#storeid) fields. If the campaign type is *DynamicSearchAds* then you must also include the [Domain Language](#domainlanguage) and [Website](#website) fields.  
 **Update:** Read-only  
 **Delete:** Read-only  
 
@@ -371,7 +371,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 ## <a name="domainlanguage"></a>Domain Language
 The language of the website pages that you want to target for dynamic search ads.
 
-Currently the only supported language code is *EN*.
+The supported languages are English, French, and German.
 
 **Add:** Required if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types.  
 **Update:** Read-only. You cannot update the domain language.      

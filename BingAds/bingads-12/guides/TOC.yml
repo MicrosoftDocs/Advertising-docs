@@ -1221,6 +1221,8 @@
           href: ../campaign-management-service/image.md
         - name: ImageAdExtension
           href: ../campaign-management-service/imageadextension.md
+        - name: ImageAsset
+          href: ../campaign-management-service/imageasset.md
         - name: ImageMediaRepresentation
           href: ../campaign-management-service/imagemediarepresentation.md
         - name: InheritFromParentBiddingScheme
