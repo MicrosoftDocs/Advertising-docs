@@ -26,7 +26,7 @@ The following Bulk CSV example would add a new responsive ad if a valid [Parent 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Sync Time,Client Id,Modified Time,Tracking Template,Custom Parameter,Final Url,Mobile Final Url,Text,Business Name,Device Preference,Ad Format Preference,Name,Call To Action,Headline,Long Headline,Landscape Image Media Id,Square Image Media Id,Landscape Logo Media Id,Square Logo Media Id
 Format Version,,,,,,,,,,,,,,,,,6,,,,,,,
-Responsive Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,,{_promoCode}=PROMO1; {_season}=summer,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,Contoso,,,,,Short Headline Here,Long Headline Here,LandscapeImageMediaIdGoesHere,SquareImageMediaIdGoesHere,Landscape LogoMediaIdGoesHere,SquareLogoMediaIdGoesHere
+Responsive Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,,{_promoCode}=PROMO1; {_season}=summer,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,Contoso,,,,,Short Headline Here,Long Headline Here,LandscapeImageMediaIdGoesHere,SquareImageMediaIdGoesHere,,
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkResponsiveAd* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -69,7 +69,7 @@ var bulkResponsiveAd = new BulkResponsiveAd
         // 'Landscape Image Media Id' column header in the Bulk file
         LandscapeImageMediaId = 0, // Replace '0' with your media ID
         // 'Landscape Logo Media Id' column header in the Bulk file
-        LandscapeLogoMediaId = 0, // Replace '0' with your media ID
+        LandscapeLogoMediaId = null, 
         // 'Long Headline' column header in the Bulk file
         LongHeadline = "Long Headline Here",
         // 'Status' column header in the Bulk file
@@ -77,7 +77,7 @@ var bulkResponsiveAd = new BulkResponsiveAd
         // 'Square Image Media Id' column header in the Bulk file
         SquareImageMediaId = 0, // Replace '0' with your media ID
         // 'Square Logo Media Id' column header in the Bulk file
-        SquareLogoMediaId = 0, // Replace '0' with your media ID
+        SquareLogoMediaId = null, 
         // 'Text' column header in the Bulk file
         Text = "Find New Customers & Increase Sales! Start Advertising on Contoso Today.",
         // 'Tracking Template' column header in the Bulk file
@@ -321,13 +321,7 @@ Media for responsive ads are provisioned via the [Image](../campaign-management-
 **Delete:** Read-only 
 
 ## <a name="landscapelogomediaid"></a>Landscape Logo Media Id
-This is the identifier of the media corresponding to one of two possible aspect ratios for logos that could appear in your audience ads.
-
-Because audience ads are responsive, we require multiple logos so they can flexibly display across a variety of publishers and placements.
-
-Wide or landscape logos have an aspect ratio of 1.91:1. 
-
-Media for responsive ads are provisioned via the [Image](../campaign-management-service/image.md) object using the Campaign Management service. When you call the [AddMedia](../campaign-management-service/addmedia.md) operation, make sure that your media adheres to the supported dimensions and aspect ratio. For more information see [Image Data Object Remarks](../campaign-management-service/image.md#remarks).
+This field is reserved for future use.
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
@@ -422,13 +416,7 @@ Media for responsive ads are provisioned via the [Image](../campaign-management-
 **Delete:** Read-only 
 
 ## <a name="squarelogomediaid"></a>Square Logo Media Id
-This is one of two possible aspect ratios for logos that could appear in your audience ads.
-
-Because audience ads are responsive, we require multiple logos so they can flexibly display across a variety of publishers and placements.
-
-Square logos have an aspect ratio of 1:1. 
-
-Media for responsive ads are provisioned via the [Image](../campaign-management-service/image.md) object using the Campaign Management service. When you call the [AddMedia](../campaign-management-service/addmedia.md) operation, make sure that your media adheres to the supported dimensions and aspect ratio. For more information see [Image Data Object Remarks](../campaign-management-service/image.md#remarks).
+This field is reserved for future use.
 
 **Add:** Required  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     

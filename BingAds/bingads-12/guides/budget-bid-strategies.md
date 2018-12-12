@@ -65,13 +65,13 @@ The following bid strategy types are available per campaign type. For more infor
 
 |Bid Strategy Type|Campaign Types|
 |-------------------------|--------------------------|
-|[EnhancedCpc](#enhancedcpc)|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
+|[EnhancedCpc](#enhancedcpc)|DynamicSearchAds<br/>Search<br/>Shopping|
 |[ManualCpc](#manualcpc)|DynamicSearchAds<br/>Search<br/>Shopping|
 |[MaxClicks](#maxclicks)|DynamicSearchAds<br/>Search|
 |[MaxConversions](#maxconversions)|Search|
 |[TargetCpa](#targetcpa)|Search|
 
-Until January 28th, 2019 the [ManualCpc](#manualcpc) bid strategy is every campaign's default bid strategy via Bing Ads API unless you chose a different strategy when creating your campaign. From January 29th, 2019 onwards the [EnhancedCpc](#enhancedcpc) bid strategy will be used by default. When using the Bing Ads web application, [EnhancedCpc](#enhancedcpc) is the default bid strategy.
+When you use the Bing Ads API, tThe default for Audience and Shopping campaigns is [ManualCpc](#manualcpc). Until January 28th, 2019 if you do not set this field for Search and DynamicSearchAds campaigns, then [ManualCpc](#manualcpc) is used by default. From January 28th, 2019 onwards if you do not set this field, then [EnhancedCpc](#enhancedcpc) will be used by default for Search and DynamicSearchAds campaigns.
 
 > [!IMPORTANT] 
 > If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
@@ -95,7 +95,7 @@ Differing from the *MaxClicks*, *MaxConversions*, and *TargetCpa* bid strategies
 > [!NOTE]
 > The *EnhancedCpc* bid strategy is available only for Dynamic Search Ads, Search, and Shopping campaigns.
 > 
-> The *EnhancedCpc* bid strategy is available to all advertisers worldwide. Note that we will only "enhance" your bids when your ads serve in the following countries/regions: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States. When your ads serve outside of these countries/regions, your manual bids are unaffected.
+> The *EnhancedCpc* bid strategy is available to all advertisers worldwide for Dynamic Search Ads and Search campaigns. Note that we will only "enhance" your bids when your ads serve in the following countries/regions: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States. When your ads serve outside of these countries/regions, your manual bids are unaffected.
 > 
 > For Bing Shopping Campaigns, Enhanced CPC is available only to advertisers in France, Germany, United Kingdom, and United States.
 
