@@ -81,14 +81,14 @@ Defines a component of a street address.
 
 ## Content Type
 
-Defines additional information about the hotel.
+Defines additional information about the hotel. (These elements may appear in any order.)
 
 |Element|Description|Children
 |-|-|-
 |text|Optional.<br />Data type is [Description type](#descriptiontype).<br /><br />A description of the hotel. <br /><br />Attributes:<ul><li>type&mdash;Required. Set to *description*.</li></ul>|[Description type](#descriptiontype)
 |review|Optional.<br />Data type is [Review type](#reviewtype).<br /><br />A hotel review. You may specify one or more \<review> elements.<br /><br />Attributes:<ul><li>type&mdash;Required. Set to either of the following types:<ul><li>editorial&mdash;The review is written by a blogger or other professional authority.</li><li>user&mdash;The review is written by a user.</li></ul></li></ul>|[Review type](#reviewtype)
 |attributes|Optional.<br />Data type is [Attribute type](#attributetype).<br /><br />The list of hotel amenities. Specify an \<attr> child element for each amenity you want to include.|[Attribute type](#attributetype)
-|image|Optional.<br />Data type is [Image type](#imagetype).<br /><br />An image of the hotel. You may specify one or more \<image> elements.<br /><br />Attributes:<ul><li>type&mdash;Required. Set to either of the following types:<ul><li>ad&mdash;The image is an ad.</li><li>menu&mdash;The image shows the menu for the hotel's restaurant.</li><li>photo&mdash;The image is of the hotel.</li></ul><li>url&mdash;The URL to the image.</li><li>width&mdash;The image's width, in pixels.</li><li>height&mdash;The image's height, in pixels.</li></ul>|[Image type](#imagetype)
+|image|Optional.<br />Data type is [Image type](#imagetype).<br /><br />An image of the hotel. You may specify one or more \<image> elements.<br /><br />Attributes:<ul><li>type&mdash;Required. Set to either of the following types:<ul><li>ad&mdash;The image is an ad.</li><li>menu&mdash;The image shows the menu for the hotel's restaurant.</li><li>photo&mdash;The image is of the hotel.</li></ul><li>url&mdash;Required. The URL to the image.</li><li>width&mdash;Optional. The image's width, in pixels.</li><li>height&mdash;Optional. The image's height, in pixels.</li></ul>|[Image type](#imagetype)
 |neighborhoods|Optional.<br />Data type is [Neighborhood type](#neighborhoodtype).<br /><br />A list of neighborhoods where the hotel is located.|[Neighborhood type](#neighborhoodtype)
 |brand|Optional.<br />Data type is string.<br /><br />The hotel chain's brand.|None
 
