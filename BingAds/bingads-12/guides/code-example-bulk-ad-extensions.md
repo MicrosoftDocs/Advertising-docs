@@ -13,8 +13,7 @@ dev_langs:
 # Bulk Ad Extensions Code Example
 This example shows how to add, get, and delete extensions for an account's ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial reviews.
 
-> [!NOTE]
-> Supporting files for [C#](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples), [Java](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples/BingAdsDesktopApp), and [Python](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples/BingAdsPythonConsoleExamples) examples are available at GitHub. You can clone the repository or repurpose snippets as needed.
+[!INCLUDE[request-header](./includes/bulk-code-tips.md)]
 
 [!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/BulkAdExtensions.cs)]
 

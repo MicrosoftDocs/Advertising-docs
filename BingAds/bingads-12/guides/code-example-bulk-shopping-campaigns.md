@@ -13,8 +13,7 @@ dev_langs:
 # Bulk Shopping Campaigns Code Example
 This example demonstrates how to apply product conditions for Bing Shopping Campaigns using the Bulk service.
 
-> [!NOTE]
-> Supporting files for [C#](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples), [Java](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples/BingAdsDesktopApp), and [Python](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples/BingAdsPythonConsoleExamples) examples are available at GitHub. You can clone the repository or repurpose snippets as needed.
+[!INCLUDE[request-header](./includes/bulk-code-tips.md)]
 
 [!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/BulkShoppingCampaigns.cs)]
 

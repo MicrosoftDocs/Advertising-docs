@@ -9,12 +9,7 @@ description: Discover code examples in C#, Java, PHP, and Python.
 # Bing Ads Code Examples
 Get started developing Bing Ads applications in any programming language which supports web services. Samples are provided in the docs listed below. 
 
-> [!TIP]
-> To get access and refresh tokens for your Bing Ads user and make your first service call using the Bing Ads API, see the [Quick Start](get-started.md#quick-start) sample.
-> 
-> Begin with the Get Started guide and walkthroughs for your preferred language e.g., [C#](get-started-csharp.md), [Java](get-started-java.md), [Php](get-started-php.md), and [Python](get-started-python.md). 
->
-> Supporting files for [C#](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples), [Java](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples/BingAdsDesktopApp), [Php](https://github.com/BingAds/BingAds-PHP-SDK/tree/master/samples), and [Python](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples/BingAdsPythonConsoleExamples) examples are available at GitHub. You can clone each repository or repurpose snippets as needed.
+[!INCLUDE[request-header](./includes/code-tips.md)]
 
 |Title|Description|Available Languages|
 |-----|-----|-----|
