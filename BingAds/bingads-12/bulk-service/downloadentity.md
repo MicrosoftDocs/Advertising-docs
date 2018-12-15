@@ -694,6 +694,90 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
         </xs:appinfo>
       </xs:annotation>
     </xs:enumeration>
+    <xs:enumeration value="CampaignAudienceAssociations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">98</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignNegativeAudienceAssociations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">99</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignCustomAudienceAssociations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">100</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignNegativeCustomAudienceAssociations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">101</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignInMarketAudienceAssociations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">102</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignNegativeInMarketAudienceAssociations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">103</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignProductAudienceAssociations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">104</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignNegativeProductAudienceAssociations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">105</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignRemarketingListAssociations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">106</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignNegativeRemarketingListAssociations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">107</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignSimilarRemarketingListAssociations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">108</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
+    <xs:enumeration value="CampaignNegativeSimilarRemarketingListAssociations">
+      <xs:annotation>
+        <xs:appinfo>
+          <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">109</EnumerationValue>
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:enumeration>
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -754,19 +838,31 @@ For more information, see [Bulk File Schema](bulk-file-schema.md).
 |<a name="campaignactionadextensions"></a>CampaignActionAdExtensions|Include [Campaign Action Ad Extension](campaign-action-ad-extension.md) records in the download that represents the association relationship between a campaign and an action ad extension. For [Action Ad Extension](action-ad-extension.md) records, you should include the ActionAdExtensions value in the download request.|
 |<a name="campaignactionlinkadextensions"></a>CampaignActionLinkAdExtensions|This deprecated value is reserved for internal use and will be removed from a future version of the Bing Ads API.|
 |<a name="campaignappadextensions"></a>CampaignAppAdExtensions|Include [Campaign App Ad Extension](campaign-app-ad-extension.md) records in the download that each represent the association relationship between a campaign and an app ad extension. For [App Ad Extension](app-ad-extension.md) records, you should include the AppAdExtensions value in the download request.|
+|<a name="campaignaudienceassociations"></a>CampaignAudienceAssociations|Reserved.|
 |<a name="campaigncalladextensions"></a>CampaignCallAdExtensions|Include [Campaign Call Ad Extension](campaign-call-ad-extension.md) records in the download that represents the association relationship between a campaign and a call ad extension. For [Call Ad Extension](call-ad-extension.md) records, you should include the CallAdExtensions value in the download request.|
 |<a name="campaigncalloutadextensions"></a>CampaignCalloutAdExtensions|Include [Campaign Callout Ad Extension](campaign-callout-ad-extension.md) records in the download that represents the association relationship between a campaign and a callout ad extension. For [Callout Ad Extension](callout-ad-extension.md) records, you should include the CalloutAdExtensions value in the download request.|
+|<a name="campaigncustomaudienceassociations"></a>CampaignCustomAudienceAssociations|Reserved.|
 |<a name="campaignimageadextensions"></a>CampaignImageAdExtensions|Include [Campaign Image Ad Extension](campaign-image-ad-extension.md) records in the download that represents the association relationship between a campaign and an image ad extension. For [Image Ad Extension](image-ad-extension.md) records, you should include the ImageAdExtensions value in the download request.|
+|<a name="campaigninmarketaudienceassociations"></a>CampaignInMarketAudienceAssociations|Reserved.|
 |<a name="campaignlabels"></a>CampaignLabels|Include [Campaign Label](campaign-label.md) records in the download that each represent a label applied to a campaign. For [Label](label.md) records, you should include the Labels value in the download request.|
 |<a name="campaignlocationadextensions"></a>CampaignLocationAdExtensions|Include [Campaign Location Ad Extension](campaign-location-ad-extension.md) records in the download that represents the association relationship between a campaign and a location ad extension. For [Location Ad Extension](location-ad-extension.md) records, you should include the LocationAdExtensions value in the download request.|
+|<a name="campaignnegativeaudienceassociations"></a>CampaignNegativeAudienceAssociations|Reserved.|
+|<a name="campaignnegativecustomaudienceassociations"></a>CampaignNegativeCustomAudienceAssociations|Reserved.|
 |<a name="campaignnegativedynamicsearchadtargets"></a>CampaignNegativeDynamicSearchAdTargets|Include [Campaign Negative Dynamic Search Ad Target](campaign-negative-dynamic-search-ad-target.md) records in the download data.|
+|<a name="campaignnegativeinmarketaudienceassociations"></a>CampaignNegativeInMarketAudienceAssociations|Reserved.|
 |<a name="campaignnegativekeywordlistassociations"></a>CampaignNegativeKeywordListAssociations|Include [Campaign Negative Keyword List Association](campaign-negative-keyword-list-association.md) records in the download that represents the association relationship between a campaign and a negative keyword list. For [Negative Keyword List](negative-keyword-list.md) records, you should include the NegativeKeywordLists value in the download request.|
 |<a name="campaignnegativekeywords"></a>CampaignNegativeKeywords|Include [Campaign Negative Keyword](campaign-negative-keyword.md) records in the download data.|
+|<a name="campaignnegativeproductaudienceassociations"></a>CampaignNegativeProductAudienceAssociations|Reserved.|
+|<a name="campaignnegativeremarketinglistassociations"></a>CampaignNegativeRemarketingListAssociations|Reserved.|
+|<a name="campaignnegativesimilarremarketinglistassociations"></a>CampaignNegativeSimilarRemarketingListAssociations|Reserved.|
 |<a name="campaignnegativesites"></a>CampaignNegativeSites|Include [Campaign Negative Site](campaign-negative-site.md) records in the download data.|
 |<a name="campaignpriceadextensions"></a>CampaignPriceAdExtensions|Include [Campaign Price Ad Extension](campaign-price-ad-extension.md) records in the download that represents the association relationship between a campaign and a price ad extension. For [Price Ad Extension](price-ad-extension.md) records, you should include the PriceAdExtensions value in the download request.|
+|<a name="campaignproductaudienceassociations"></a>CampaignProductAudienceAssociations|Reserved.|
 |<a name="campaignproductscopes"></a>CampaignProductScopes|Include [Campaign Product Scope](campaign-product-scope.md) records in the download data.|
+|<a name="campaignremarketinglistassociations"></a>CampaignRemarketingListAssociations|Reserved.|
 |<a name="campaignreviewadextensions"></a>CampaignReviewAdExtensions|Include [Campaign Review Ad Extension](campaign-review-ad-extension.md) records in the download that each represent the association relationship between a campaign and a review ad extension. For [Review Ad Extension](review-ad-extension.md) records, you should include the ReviewAdExtensions value in the download request.|
 |<a name="campaigns"></a>Campaigns|Include [Campaign](campaign.md) records in the download data.<br/><br/>New campaign types can be added anytime, so please be sure to leverage the [Campaign Type](campaign.md#campaigntype) and [Sub Type](#subtype) fields to filter as needed.|
+|<a name="campaignsimilarremarketinglistassociations"></a>CampaignSimilarRemarketingListAssociations|Reserved.|
 |<a name="campaignsitelinkadextensions"></a>CampaignSitelinkAdExtensions|Include [Campaign Sitelink Ad Extension](campaign-sitelink-ad-extension.md) records in the download that represents the association relationship between a campaign and a sitelink ad extension. For [Sitelink Ad Extension](sitelink-ad-extension.md) records, you should include the SitelinkAdExtensions value in the download request.|
 |<a name="campaignstructuredsnippetadextensions"></a>CampaignStructuredSnippetAdExtensions|Include [Campaign Structured Snippet Ad Extension](campaign-structured-snippet-ad-extension.md) records in the download that represents the association relationship between a campaign and a structured snippet ad extension. For [Structured Snippet Ad Extension](structured-snippet-ad-extension.md) records, you should include the StructuredSnippetAdExtensions value in the download request.|
 |<a name="campaigntargetcriterions"></a>CampaignTargetCriterions|Include [Campaign Age Criterion](campaign-age-criterion.md), [Campaign Company Name Criterion](campaign-company-name-criterion.md), [Campaign DayTime Criterion](campaign-daytime-criterion.md), [Campaign DeviceOS Criterion](campaign-deviceos-criterion.md), [Campaign Gender Criterion](campaign-gender-criterion.md), [Campaign Industry Criterion](campaign-industry-criterion.md), [Campaign Job Function Criterion](campaign-job-function-criterion.md), [Campaign Location Criterion](campaign-location-criterion.md), [Campaign Location Intent Criterion](campaign-location-intent-criterion.md), [Campaign Negative Location Criterion](campaign-negative-location-criterion.md), and [Campaign Radius Criterion](campaign-radius-criterion.md) records in the download data.|

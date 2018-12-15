@@ -180,7 +180,7 @@ Possible values are *OptimizeForClicks* and *RotateAdsEvenly*.
 
 If set to *OptimizeForClicks*, Bing Ads prioritizes the ad from the ad group that appears to have the best chance of performing well, based on auction characteristics or factors, such as keyword, search term, device or location. Better-performing ads will show more frequently, and others will be served less often, if at all.
 
-If set to *RotateAdsEvenly*, Bing Ads provides more balance in rotation between your ads. That is, the ads in a particular ad group have a similar chance of being displayed in response to a searcher's query. Ads are prioritized lower if they have lower ad relevance, and therefore might display less often, or not at all.
+If set to *RotateAdsEvenly*, Bing Ads provides more balance in rotation between your ads. That is, the ads in a particular ad group have a similar chance of being displayed in response to a searcher's query. Ads are prioritized lower if they have lower ad quality, and therefore might display less often, or not at all.
 
 > [!WARNING]
 > The *RotateAdsEvenly* setting can allow lower-performing ads to display as often as better-performing ads. This might impact ad group performance.
