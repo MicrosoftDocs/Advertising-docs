@@ -28,7 +28,7 @@ The *GetKeywordIdeasRequest* object defines the [body](#request-body) and [heade
 |-----------|---------------|-------------|
 |<a name="expandideas"></a>ExpandIdeas|Determines whether you want new keyword ideas, or if you only want keyword attributes for the set of keywords that you specified in the *SearchParameters* list. If you set this element false, the [QuerySearchParameter](querysearchparameter.md) object must be included in the *SearchParameters* list. |**boolean**|
 |<a name="ideaattributes"></a>IdeaAttributes|The keyword idea attributes that you want included in the response e.g., *Keyword*, *Competition*, *MonthlySearchCounts*, and *SuggestedBid*.<br/><br/>The *Competition* attribute is required.<br/><br/>The *Keyword* attribute will always be returned for each returned [KeywordIdea](keywordidea.md) whether or not you include the *Keyword* value in the requested list of idea attributes.|[KeywordIdeaAttribute](keywordideaattribute.md) array|
-|<a name="searchparameters"></a>SearchParameters|The search parameters define your criteria and filters for the requested keyword ideas.<br/><br/>Do not try to instantiate a [SearchParameter](searchparameter.md). You can include one or more the following objects that derive from it: [CategorySearchParameter](categorysearchparameter.md), [CompetitionSearchParameter](competitionsearchparameter.md), [DateRangeSearchParameter](daterangesearchparameter.md), [DeviceSearchParameter](devicesearchparameter.md), [ExcludeAccountKeywordsSearchParameter](excludeaccountkeywordssearchparameter.md), [IdeaTextSearchParameter](ideatextsearchparameter.md), [ImpressionShareSearchParameter](impressionsharesearchparameter.md), [LanguageSearchParameter](languagesearchparameter.md), [LocationSearchParameter](locationsearchparameter.md), [NetworkSearchParameter](networksearchparameter.md), [QuerySearchParameter](querysearchparameter.md), [SearchVolumeSearchParameter](searchvolumesearchparameter.md), [SuggestedBidSearchParameter](suggestedbidsearchparameter.md) and [UrlSearchParameter](urlsearchparameter.md).<br/><br/>You cannot include duplicates of any search parameter type.<br/><br/>The list must include all of these search parameters: [LanguageSearchParameter](languagesearchparameter.md), [LocationSearchParameter](locationsearchparameter.md), and [NetworkSearchParameter](networksearchparameter.md).<br/><br/>The list must include one or more of these search parameters: [CategorySearchParameter](categorysearchparameter.md), [QuerySearchParameter](querysearchparameter.md), or [UrlSearchParameter](urlsearchparameter.md). If the *ExpandIdeas* element is false, then the [QuerySearchParameter](querysearchparameter.md) is required whether or not you included additional search parameters.<br/><br/>It can take up to 72 hours for the previous calendar month's data to be available. For example, if you request keyword ideas on August 1st, 2nd or 3rd, and July's data is not ready, the response will be based on June's data. If you do not include the [DateRangeSearchParameter](daterangesearchparameter.md) in the [GetKeywordIdeas](getkeywordideas.md) request, then you will not be able to confirm whether the first list item is data for the previous month, or the month prior. If the date range is specified and the most recent month's data is not yet available, then [GetKeywordIdeas](getkeywordideas.md) will return an error.|[SearchParameter](searchparameter.md) array|
+|<a name="searchparameters"></a>SearchParameters|The search parameters define your criteria and filters for the requested keyword ideas.<br/><br/>Do not try to instantiate a [SearchParameter](searchparameter.md). You can include one or more the following objects that derive from it: [CategorySearchParameter](categorysearchparameter.md), [CompetitionSearchParameter](competitionsearchparameter.md), [DateRangeSearchParameter](daterangesearchparameter.md), [DeviceSearchParameter](devicesearchparameter.md), [ExcludeAccountKeywordsSearchParameter](excludeaccountkeywordssearchparameter.md), [IdeaTextSearchParameter](ideatextsearchparameter.md), [ImpressionShareSearchParameter](impressionsharesearchparameter.md), [LanguageSearchParameter](languagesearchparameter.md), [LocationSearchParameter](locationsearchparameter.md), [NetworkSearchParameter](networksearchparameter.md), [QuerySearchParameter](querysearchparameter.md), [SearchVolumeSearchParameter](searchvolumesearchparameter.md), [SuggestedBidSearchParameter](suggestedbidsearchparameter.md) and [UrlSearchParameter](urlsearchparameter.md). Other objects that derive from [SearchParameter](searchparameter.md) are not valid for this operation.<br/><br/>You cannot include duplicates of any search parameter type.<br/><br/>The list must include all of these search parameters: [LanguageSearchParameter](languagesearchparameter.md), [LocationSearchParameter](locationsearchparameter.md), and [NetworkSearchParameter](networksearchparameter.md).<br/><br/>The list must include one or more of these search parameters: [CategorySearchParameter](categorysearchparameter.md), [QuerySearchParameter](querysearchparameter.md), or [UrlSearchParameter](urlsearchparameter.md). If the *ExpandIdeas* element is false, then the [QuerySearchParameter](querysearchparameter.md) is required whether or not you included additional search parameters.<br/><br/>It can take up to 72 hours for the previous calendar month's data to be available. For example, if you request keyword ideas on August 1st, 2nd or 3rd, and July's data is not ready, the response will be based on June's data. If you do not include the [DateRangeSearchParameter](daterangesearchparameter.md) in the [GetKeywordIdeas](getkeywordideas.md) request, then you will not be able to confirm whether the first list item is data for the previous month, or the month prior. If the date range is specified and the most recent month's data is not yet available, then [GetKeywordIdeas](getkeywordideas.md) will return an error.|[SearchParameter](searchparameter.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
@@ -63,80 +63,78 @@ This template was generated by a tool to show the [order](../guides/services-pro
       <IdeaAttributes i:nil="false">
         <KeywordIdeaAttribute>ValueHere</KeywordIdeaAttribute>
       </IdeaAttributes>
-      <SearchParameters xmlns:e99="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.SearchParameters" i:nil="false">
-        <e99:SearchParameter i:type="-- derived type specified here with the appropriate prefix --">
+      <SearchParameters xmlns:e333="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.SearchParameters" i:nil="false">
+        <e333:SearchParameter i:type="-- derived type specified here with the appropriate prefix --">
           <!--This field is applicable if the derived type attribute is set to QuerySearchParameter-->
-          <e99:Queries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+          <e333:Queries i:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:string>ValueHere</a1:string>
-          </e99:Queries>
+          </e333:Queries>
           <!--This field is applicable if the derived type attribute is set to UrlSearchParameter-->
-          <e99:Url i:nil="false">ValueHere</e99:Url>
+          <e333:Url i:nil="false">ValueHere</e333:Url>
           <!--This field is applicable if the derived type attribute is set to CategorySearchParameter-->
-          <e99:CategoryId>ValueHere</e99:CategoryId>
+          <e333:CategoryId>ValueHere</e333:CategoryId>
           <!--These fields are applicable if the derived type attribute is set to SearchVolumeSearchParameter-->
-          <e99:Maximum i:nil="false">ValueHere</e99:Maximum>
-          <e99:Minimum i:nil="false">ValueHere</e99:Minimum>
+          <e333:Maximum i:nil="false">ValueHere</e333:Maximum>
+          <e333:Minimum i:nil="false">ValueHere</e333:Minimum>
           <!--These fields are applicable if the derived type attribute is set to SuggestedBidSearchParameter-->
-          <e99:Maximum i:nil="false">ValueHere</e99:Maximum>
-          <e99:Minimum i:nil="false">ValueHere</e99:Minimum>
+          <e333:Maximum i:nil="false">ValueHere</e333:Maximum>
+          <e333:Minimum i:nil="false">ValueHere</e333:Minimum>
           <!--These fields are applicable if the derived type attribute is set to IdeaTextSearchParameter-->
-          <e99:Excluded xmlns:e100="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" i:nil="false">
-            <e100:Keyword>
-              <e100:Id i:nil="false">ValueHere</e100:Id>
-              <e100:MatchType>ValueHere</e100:MatchType>
-              <e100:Text i:nil="false">ValueHere</e100:Text>
-            </e100:Keyword>
-          </e99:Excluded>
-          <e99:Included xmlns:e101="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" i:nil="false">
-            <e101:Keyword>
-              <e101:Id i:nil="false">ValueHere</e101:Id>
-              <e101:MatchType>ValueHere</e101:MatchType>
-              <e101:Text i:nil="false">ValueHere</e101:Text>
-            </e101:Keyword>
-          </e99:Included>
+          <e333:Excluded xmlns:e334="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" i:nil="false">
+            <e334:Keyword>
+              <e334:Id i:nil="false">ValueHere</e334:Id>
+              <e334:MatchType>ValueHere</e334:MatchType>
+              <e334:Text i:nil="false">ValueHere</e334:Text>
+            </e334:Keyword>
+          </e333:Excluded>
+          <e333:Included xmlns:e335="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Common" i:nil="false">
+            <e335:Keyword>
+              <e335:Id i:nil="false">ValueHere</e335:Id>
+              <e335:MatchType>ValueHere</e335:MatchType>
+              <e335:Text i:nil="false">ValueHere</e335:Text>
+            </e335:Keyword>
+          </e333:Included>
           <!--This field is applicable if the derived type attribute is set to ExcludeAccountKeywordsSearchParameter-->
-          <e99:ExcludeAccountKeywords>ValueHere</e99:ExcludeAccountKeywords>
+          <e333:ExcludeAccountKeywords>ValueHere</e333:ExcludeAccountKeywords>
           <!--These fields are applicable if the derived type attribute is set to ImpressionShareSearchParameter-->
-          <e99:Maximum i:nil="false">ValueHere</e99:Maximum>
-          <e99:Minimum i:nil="false">ValueHere</e99:Minimum>
+          <e333:Maximum i:nil="false">ValueHere</e333:Maximum>
+          <e333:Minimum i:nil="false">ValueHere</e333:Minimum>
           <!--This field is applicable if the derived type attribute is set to LocationSearchParameter-->
-          <e99:Locations xmlns:e102="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
-            <e102:LocationCriterion>
-              <e102:LocationId>ValueHere</e102:LocationId>
-            </e102:LocationCriterion>
-          </e99:Locations>
+          <e333:Locations xmlns:e336="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
+            <e336:LocationCriterion>
+              <e336:LocationId>ValueHere</e336:LocationId>
+            </e336:LocationCriterion>
+          </e333:Locations>
           <!--This field is applicable if the derived type attribute is set to NetworkSearchParameter-->
-          <e99:Network xmlns:e103="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
-            <e103:Network>ValueHere</e103:Network>
-          </e99:Network>
+          <e333:Network xmlns:e337="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
+            <e337:Network>ValueHere</e337:Network>
+          </e333:Network>
           <!--This field is applicable if the derived type attribute is set to DeviceSearchParameter-->
-          <e99:Device xmlns:e104="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
-            <e104:DeviceName i:nil="false">ValueHere</e104:DeviceName>
-          </e99:Device>
+          <e333:Device xmlns:e338="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
+            <e338:DeviceName i:nil="false">ValueHere</e338:DeviceName>
+          </e333:Device>
           <!--This field is applicable if the derived type attribute is set to LanguageSearchParameter-->
-          <e99:Languages xmlns:e105="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
-            <e105:LanguageCriterion>
-              <e105:Language i:nil="false">ValueHere</e105:Language>
-            </e105:LanguageCriterion>
-          </e99:Languages>
+          <e333:Languages xmlns:e339="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity.Criterions" i:nil="false">
+            <e339:LanguageCriterion>
+              <e339:Language i:nil="false">ValueHere</e339:Language>
+            </e339:LanguageCriterion>
+          </e333:Languages>
           <!--This field is applicable if the derived type attribute is set to CompetitionSearchParameter-->
-          <e99:CompetitionLevels i:nil="false">
+          <e333:CompetitionLevels i:nil="false">
             <CompetitionLevel>ValueHere</CompetitionLevel>
-          </e99:CompetitionLevels>
+          </e333:CompetitionLevels>
           <!--These fields are applicable if the derived type attribute is set to DateRangeSearchParameter-->
-          <e99:EndDate xmlns:e106="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
-            <e106:Day>ValueHere</e106:Day>
-            <e106:Month>ValueHere</e106:Month>
-            <e106:Year>ValueHere</e106:Year>
-          </e99:EndDate>
-          <e99:StartDate xmlns:e107="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
-            <e107:Day>ValueHere</e107:Day>
-            <e107:Month>ValueHere</e107:Month>
-            <e107:Year>ValueHere</e107:Year>
-          </e99:StartDate>
-          <!--This field is applicable if the derived type attribute is set to AuctionSegmentSearchParameter-->
-          <e99:Segment>ValueHere</e99:Segment>
-        </e99:SearchParameter>
+          <e333:EndDate xmlns:e340="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
+            <e340:Day>ValueHere</e340:Day>
+            <e340:Month>ValueHere</e340:Month>
+            <e340:Year>ValueHere</e340:Year>
+          </e333:EndDate>
+          <e333:StartDate xmlns:e341="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" i:nil="false">
+            <e341:Day>ValueHere</e341:Day>
+            <e341:Month>ValueHere</e341:Month>
+            <e341:Year>ValueHere</e341:Year>
+          </e333:StartDate>
+        </e333:SearchParameter>
       </SearchParameters>
     </GetKeywordIdeasRequest>
   </s:Body>
@@ -153,20 +151,20 @@ This template was generated by a tool to show the order of the [body](#response-
   </s:Header>
   <s:Body>
     <GetKeywordIdeasResponse xmlns="Microsoft.Advertiser.AdInsight.Api.Service.V12">
-      <KeywordIdeas xmlns:e108="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
-        <e108:KeywordIdea>
-          <e108:AdGroupId d4p1:nil="false">ValueHere</e108:AdGroupId>
-          <e108:AdGroupName d4p1:nil="false">ValueHere</e108:AdGroupName>
-          <e108:AdImpressionShare d4p1:nil="false">ValueHere</e108:AdImpressionShare>
-          <e108:Competition d4p1:nil="false">ValueHere</e108:Competition>
-          <e108:Keyword d4p1:nil="false">ValueHere</e108:Keyword>
-          <e108:MonthlySearchCounts d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <KeywordIdeas xmlns:e342="http://schemas.datacontract.org/2004/07/Microsoft.BingAds.Advertiser.AdInsight.Api.DataContract.V12.Entity" d4p1:nil="false" xmlns:d4p1="http://www.w3.org/2001/XMLSchema-instance">
+        <e342:KeywordIdea>
+          <e342:AdGroupId d4p1:nil="false">ValueHere</e342:AdGroupId>
+          <e342:AdGroupName d4p1:nil="false">ValueHere</e342:AdGroupName>
+          <e342:AdImpressionShare d4p1:nil="false">ValueHere</e342:AdImpressionShare>
+          <e342:Competition d4p1:nil="false">ValueHere</e342:Competition>
+          <e342:Keyword d4p1:nil="false">ValueHere</e342:Keyword>
+          <e342:MonthlySearchCounts d4p1:nil="false" xmlns:a1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
             <a1:long>ValueHere</a1:long>
-          </e108:MonthlySearchCounts>
-          <e108:Relevance d4p1:nil="false">ValueHere</e108:Relevance>
-          <e108:Source d4p1:nil="false">ValueHere</e108:Source>
-          <e108:SuggestedBid d4p1:nil="false">ValueHere</e108:SuggestedBid>
-        </e108:KeywordIdea>
+          </e342:MonthlySearchCounts>
+          <e342:Relevance d4p1:nil="false">ValueHere</e342:Relevance>
+          <e342:Source d4p1:nil="false">ValueHere</e342:Source>
+          <e342:SuggestedBid d4p1:nil="false">ValueHere</e342:SuggestedBid>
+        </e342:KeywordIdea>
       </KeywordIdeas>
     </GetKeywordIdeasResponse>
   </s:Body>

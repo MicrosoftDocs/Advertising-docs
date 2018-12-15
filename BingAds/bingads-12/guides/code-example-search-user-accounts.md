@@ -14,8 +14,7 @@ dev_langs:
 # Search User Accounts Code Example
 This example demonstrates how to search for accounts that can be managed by the current authenticated user.
 
-> [!NOTE]
-> Supporting files for [C#](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples), [Java](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples/BingAdsDesktopApp), [Php](https://github.com/BingAds/BingAds-PHP-SDK/tree/master/samples), and [Python](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples/BingAdsPythonConsoleExamples) examples are available at GitHub. You can clone the repository or repurpose snippets as needed.
+[!INCLUDE[request-header](./includes/code-tips.md)]
 
 [!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/SearchUserAccounts.cs)]
 

@@ -12,10 +12,9 @@ dev_langs:
   - python
 ---
 # Target Criterions Code Example
-This example demonstrates how to use target criterions with the Campaign Management API.
+This example demonstrates how to use target criterions with the Campaign Management API. For more details see the [Show Ads to Your Target Audience](show-ads-target-audience.md) technical guide. 
 
-> [!NOTE]
-> Supporting files for [C#](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples), [Java](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples/BingAdsDesktopApp), [Php](https://github.com/BingAds/BingAds-PHP-SDK/tree/master/samples), and [Python](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples/BingAdsPythonConsoleExamples) examples are available at GitHub. You can clone the repository or repurpose snippets as needed.
+[!INCLUDE[request-header](./includes/code-tips.md)]
 
 [!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/TargetCriterions.cs)]
 
@@ -27,3 +26,4 @@ This example demonstrates how to use target criterions with the Campaign Managem
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  
+
