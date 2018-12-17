@@ -101,4 +101,3 @@ Your service should follow these basic steps to get the access token that you se
 - When the expiration timer expires, repeat the process
 
 You should only get a new access token just before the current token expires. Do not get a new access token for each call.
-
