@@ -62,7 +62,7 @@ The following is the list of columns that you may include in the feed. The feed 
 >  
 > Although you may specify either geographical coordinates or a telephone number, you should specify both to ensure a better chance of matching properties in Bing Maps.
 >
-> To include a description, images, and reviews for a listing, use an XML feed file. See [Create an XML Hotel Feed file](create-hot-feed.md).
+> To include a description, images, and reviews for a listing, use an XML feed file. See [Create an XML Hotel Feed file](create-hotel-feed.md).
 
 The following shows an example header in CSV format. Separate all columns with a comma. Include only columns that contain values for at least one hotel.
 
