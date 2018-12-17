@@ -102,7 +102,7 @@ For more information about specifying telephone numbers, see the [phone](../hote
 
 ## Specifying optional hotel listing fields
 
-The following example shows the optional elements that you may include in the listing.
+The following example shows the optional elements that you may include in the listing. Although optional, you should include as much information as possible to support current and future usage scenarios.
 
 ```xml
   <listing>
@@ -110,10 +110,10 @@ The following example shows the optional elements that you may include in the li
     <category>Extended Stay</category>
     <content>
       <text type="description">
-        <body>This element contains a description of the hotel.</body>
+        <body>This element contains the hotel's description.</body>
       </text>
       <review type="user">
-        <body>This element contains the review or a snippet of the review.</body>
+        <body>This element contains a review of the hotel.</body>
         <date month="2" day="24" year="2018" />
         <link>https://contoso.com/reviews/hotels?id=sd87s90</link>
         <rating>8.5</rating>
@@ -127,7 +127,7 @@ The following example shows the optional elements that you may include in the li
       <image type="photo" url="https://contoso.com/photos?id=345k43llj" width=800 height=600>
         <date month="3" day="3" year="2018" />
         <link>https://contoso.com/...</link>
-        <title>Pool with poolside bar</title>
+        <title>Hotel entrance</title>
       </image>
       <neighborhoods>
         <neighborhood>Sodo District</neighborhood>
@@ -137,21 +137,21 @@ The following example shows the optional elements that you may include in the li
   </listing>
 ```
 
-The `category` element contains a user-defined category string. 
+The `category` element contains a user-defined category string. For example, extended stay, economy, or motel.
 
-The `text` element contains a description of the hotel. The `body` element contains the actual description, which can be the full description or a snippet. If it contains a snippet, you should include the `link` and `title` elements to provide a link to the full description online.
+The `text` element contains a description of the hotel. You must specify the `body` element, which contains the actual description. Depending on the description's length, it may be truncated when displayed. If you include the `link` and `title` elements, the link URL points to the description online.
 
-The `review` element contains either a user review or an editorial review. An editorial review is a professional review done by a reviewing authority such as a travel blogger. You may include any number of reviews. Each review may include the full review or a snippet of it. If you include only a snippet, you should include a `link` to the full review.
+The `review` element contains either a user review or an editorial review. An editorial review is a professional review done by a reviewing authority such as a travel blogger. You may include any number of reviews but depending on the number of reviews sent, they may not all be shown. You must specify the `body` element, which contains the review. Depending on the review's length, it may be truncated when displayed. If you include the `link` element, it points to the full list of reviews online.
 
 The `attributes` element contains a list of amenities the hotel provides such as air conditioning, a swimming pool, and free breakfast. For a list of possible amenities, see [Attribute](reference.md#attributetype). If you don't specify an amenity, it's assumed that the hotel doesn't provide it. 
 
-The `image` element contains an image of the hotel. You may include any number of images. The recommended aspect ration is 4:3 and the minimum size is 720 pixels. Images must be original photographs and may not be screenshots. Note that the `link` URL must be accessible by the AdIdxBot crawler. If your site includes the robots.txt file, it must include either:
+The `image` element contains an image of the hotel. You may include any number of images but depending on the number of images sent, they may not all be shown. The recommended aspect ration is 4:3 and the minimum width is 720 pixels. Images must be original photographs and may not be screenshots. Note that the `link` URL must be accessible by the AdIdxBot crawler. If your site includes the robots.txt file, it must include either:
 - User-Agent: AdIdxBot
 - Allow: /
 
 The `neighborhood` element identifies the neighborhood where the hotel is located. You can specify multiple neighborhoods if the hotel is centrally located among several neighborhoods.
 
-The `brand` element identifies the hotel's brand. For example, Contoso Suites by Contoso, where Contoso is the brand.
+The `brand` element identifies the hotel's brand. For example, Fabrikam Residences by Contoso, where Contoso is the brand.
 
 
 ## What happens if the hotel's content changes?

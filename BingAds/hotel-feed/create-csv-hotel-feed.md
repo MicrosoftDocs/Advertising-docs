@@ -53,11 +53,16 @@ The following is the list of columns that you may include in the feed. The feed 
 |latitude|The latitude of the hotel's geographical coordinates.<br /><br />Notes:<ul><li>The latitude and longitude are required only if you don't specify `phone`. It's preferred that you specify both the phone and geographical coordinates.</li><li>The latitude must be in the range -90.0 through 90.0.</li><li>Use [Location API](https://msdn.microsoft.com/library/ff701715.aspx) or another GeoCoding tool to generate the coordinates from a street address.</li></ul>|Decimal|No
 |longitude|The longitude of the hotel's geographical coordinates.<br /><br />Notes:<ul><li>The latitude and longitude are required only if you don't specify `phone`. It's preferred that you specify both the phone and geographical coordinates.</li><li>The longitude must be in the range -180.0 through 180.0.</li><li>Use [Location API](https://msdn.microsoft.com/library/ff701715.aspx) or another GeoCoding tool to generate the coordinates from a street address.</li></ul>|Decimal|No
 |phone|The main voice telephone number that customers use to contact the hotel. The number should be the front desk's phone number and not a central reservations phone number.<br /><br />Notes:<ul><li>Use dashes, spaces, or parentheses in the phone number to make it easier to read. For example, use “610-222-3333” or “(610) 222-3333” rather than “6102223333”.</li><li>Specify only one telephone number; do not specify multiple numbers, such as 650-123-2222/33.</li><li>The telephone number may contain an extension of up to 7 digits. Precede extensions with one of the following abbreviations: "ext", "extn", and "x". For example, "408-555-1111x12345" or "408-555-1111 x12345".</li><li>The telephone number may not include alphabetical characters.</li><li>If the telephone number includes the country code, precede it with a "+". For example, “+65 6722-2323” for a number in Singapore where the country code is 65, or “+001 (408) 555-1111” for a number in the United States where the country code is 001.</li></ul>|String|Yes
+|category|A user-defined category that identifies the type of hotel. For example, extended stay, economy, or motel.|String|No
+|hotel_brand|The hotel chain's brand. For example, Fabrikam Residences by Contoso, where Contoso is the brand.|String|No
+|star_rating|The hotel's star rating. Possible values are 1 through 5.|String|No
 
 > [!NOTE]
 > The `address` column and the `addr`, `addr2`, `addr3`, `city`, `province`, and `postal_code` columns are mutually exclusive. Specify either the `address` column or the address component columns. Specifying the address component columns is preferred.
 >  
 > Although you may specify either geographical coordinates or a telephone number, you should specify both to ensure a better chance of matching properties in Bing Maps.
+>
+> To include a description, images, and reviews for a listing, use an XML feed file. See [Create an XML Hotel Feed file](create-hot-feed.md).
 
 The following shows an example header in CSV format. Separate all columns with a comma. Include only columns that contain values for at least one hotel.
 
