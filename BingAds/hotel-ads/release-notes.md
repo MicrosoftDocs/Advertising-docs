@@ -13,7 +13,7 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
-## October 28, 2018
+## December 17, 2018
 
 - Updated the [hotel feed schema](../hotel-feed/reference.md) to include the following [\<listing>](../hotel-feed/reference.md#listingtype) elements:  
   - \<category>

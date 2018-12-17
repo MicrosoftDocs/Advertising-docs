@@ -145,7 +145,9 @@ The `review` element contains either a user review or an editorial review. An ed
 
 The `attributes` element contains a list of amenities the hotel provides such as air conditioning, a swimming pool, and free breakfast. For a list of possible amenities, see [Attribute](reference.md#attributetype). If you don't specify an amenity, it's assumed that the hotel doesn't provide it. 
 
-The `image` element contains images of the hotel. You may include any number of images. The recommended aspect ration is 4:3 and the minimum size is 720 pixels. Images must be original photographs and may not be screenshots. Note that the `link` URL must be accessible by the AdIdxBot crawler.
+The `image` element contains an image of the hotel. You may include any number of images. The recommended aspect ration is 4:3 and the minimum size is 720 pixels. Images must be original photographs and may not be screenshots. Note that the `link` URL must be accessible by the AdIdxBot crawler. If your site includes the robots.txt file, it must include either:
+- User-Agent: AdIdxBot
+- Allow: /
 
 The `neighborhood` element identifies the neighborhood where the hotel is located. You can specify multiple neighborhoods if the hotel is centrally located among several neighborhoods.
 

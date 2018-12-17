@@ -1,0 +1,104 @@
+---
+title: "Get Started using the Hotel API from a service"
+description: Provides details about getting credentials from a service.
+ms.service: "hotel-ads-hotel-service"
+ms.topic: "article"
+author: "swhite-msft"
+manager: ehansen
+ms.author: "scottwhi"
+---
+
+# Using the Hotel API from a service
+
+Calling the Hotel API requires an access token but getting an access token requires user consent unless you have a refresh token. To get a refresh token, you can [write a simple consol app](../hotel-service/code-example-oauth.md) or you can use this PowerShell script.
+
+```powershell
+$clientId = "your application ID goes here"
+ 
+Start-Process "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=bingads.manage offline_access&response_type=code&redirect_uri=https://login.live.com/oauth20_desktop.srf"
+ 
+$code = Read-Host "Please enter the code"
+ 
+$response = Invoke-WebRequest https://login.microsoftonline.com/common/oauth2/v2.0/token -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientid&redirect_uri=https://login.live.com/oauth20_desktop.srf&code=$code&grant_type=authorization_code"
+ 
+Write-Output "Refresh token: " ($response.Content | ConvertFrom-Json).refresh_token 
+```
+
+Before you can run the PowerShell script, you need to follow these steps to get a client ID.
+
+1. Go to [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and click **Add an app**.  
+2. Enter an app name like Bing Ads Hotels. (Don't check Guided setup.)
+3. Click **Create** and note your application ID (client ID).  
+4. Click **Add Platform** and then **Native Application**.
+5. Click **Save**.  
+
+Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientID` to the application ID you received when you registered your app.
+
+```powershell
+$clientId = "abc123-4d9e-44f1-837d-a7244af50027"
+```
+
+Save the file and name it GetTokens.ps1 (you can name it anything you want but the extension must be .ps1).
+
+Now open a console window. To open a console window on Microsoft Windows, enter the following Windows Run command (\<Windows button>+r): 
+
+```
+cmd.exe
+```
+
+At the command prompt, navigate to the folder where you saved GetTokens.ps1. Then, enter the following command.
+
+```
+powershell.exe -File .\GetTokens.ps1
+```
+
+<!--
+can't get either link to work; both get mangled.
+[About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170)
+<a href="https:/go.microsoft.com/fwlink/?LinkID=135170" data-raw-source="[About Execution Policies](https:/go.microsoft.com/fwlink/?LinkID=135170)">About Execution Policies</a>
+-->
+
+If you get an execution policy error, you'll need to change your execution policy. For execution policy options, see [About Execution Policies](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-5.1). To change the execution policy for a session, enter the following command: 
+
+```
+powershell.exe -ExecutionPolicy Bypass -File .\GetTokens.ps1
+```
+
+When the PowerShell script successfully runs, it starts a browser session where you enter your Microsoft account (MSA) credentials (the credentials must have access to your OneDrive files). After consenting, the browser's address bar contains the grant code (see ?code={copy this code}).
+
+```
+https://login.live.com/oauth20_desktop.srf?code=M7ab570e5-a1c0-32e5-a946-e4490c822954&lc=1033
+```
+
+Copy the grant code (M7ab570e5-a1c0-32e5-a946-e4490c822954) and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. Use the refresh token in your script to get the access token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your hotel data.
+
+The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the PowerShell script again to get consent and a new refresh token.
+
+
+## Now that you have a refresh token
+
+Before using the refresh token, you need to register your service to get a client ID. 
+
+1. Go to [https://apps.dev.microsoft.com](https://apps.dev.microsoft.com) and click **Add an app**.  
+2. Enter an app name for your service. (Don't check Guided setup.)
+3. Click **Create** and note your service's application ID (client ID).  
+4. Click **Add Platform** and then **Native Application**.
+5. Click **Save**.  
+
+Your service should follow these basic steps to get the access token that you set the Authorization header to.
+
+- Get the refresh token from secured storage
+- Send an HTTP POST request to `https://login.live.com/oauth20_token.srf`  
+  - The following shows the body of the POST (the parameters are separated for readability):  
+     client_id=\<yourclientid>  
+&grant_type=refresh_token  
+&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf  
+&refresh_token=\<yourrefreshtoken>` 
+- Get the access token, refresh token, and access token expiration from the response
+- Set a timer that expires just before the access token expires
+- Set the Authorization header to the access token
+- Store the new refresh token in secured storage
+- When the expiration timer expires, repeat the process
+
+You should only get a new access token just before the current token expires. Do not get a new access token for each call.
+

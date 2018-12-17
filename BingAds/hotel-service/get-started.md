@@ -34,28 +34,7 @@ You *can* use the [Bing Ads SDK](/bingads/guides/client-libraries) for .NET, Jav
 If you choose not to use the Bing Ads SDK to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md) for an example OAuth implementation.
 
 > [!NOTE]
-> If you use the API from a service, you must write a simple app to get the refresh token for a user that has permissions to access the hotel data. You will call the app you write once just to get the refresh token. After getting the refresh token, store it in secure storage that's accessible by your service. 
->
-> Follow the steps outlined in [Authentication with OAuth](/bingads/guides/authentication-oauth) for getting the client ID for your app and for implementing the code grant flow. For an example of a simple console app that you use to get the tokens, see [OAuth C# Example](../hotel-service/code-example-oauth.md).
->
-> After getting the initial refresh token, the following shows the basic calling sequence that you'll make to get the access token that you set the Authorization header to.
->
-> - Get the refresh token from secured storage
-> - Send an HTTP POST request to `https://login.live.com/oauth20_token.srf`  
->   - The following shows the body of the POST (the parameters are separated for readability):  
->     client_id=\<yourclientid>  
-&grant_type=refresh_token  
-&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf  
-&refresh_token=\<yourrefreshtoken>` 
-> - Get the access token, refresh token, and access token expiration from the response
-> - Set a timer that expires just before the access token expires
-> - Set the Authorization header to the access token
-> - Store the new refresh token in secured storage
-> - When the expiration timer expires, repeat the process
->
-> You should only get a new access token just before the current token expires. Do not get a new access token for each call.
->
-> If you receive an invalid_grant error, your refresh token is no longer valid. You will need to run your app again to provide consent and get a new refresh token.
+> If you use the API from a service, see [Using the Hotel API from a service](get-started-service.md). 
 
 ### Authenticating your credentials in sandbox
 
