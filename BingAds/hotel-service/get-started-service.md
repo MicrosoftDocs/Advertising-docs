@@ -64,13 +64,13 @@ If you get an execution policy error, you'll need to change your execution polic
 powershell.exe -ExecutionPolicy Bypass -File .\GetTokens.ps1
 ```
 
-When the PowerShell script successfully runs, it starts a browser session where you enter your Microsoft account (MSA) credentials (the credentials must have access to your OneDrive files). After consenting, the browser's address bar contains the grant code (see ?code={copy this code}).
+When the PowerShell script successfully runs, it starts a browser session where you enter your Microsoft account (MSA) credentials (the credentials you specify must have access to your hotel data). After consenting, the browser's address bar contains the grant code (see ?code={copy this code}).
 
 ```
 https://login.live.com/oauth20_desktop.srf?code=M7ab570e5-a1c0-32e5-a946-e4490c822954&lc=1033
 ```
 
-Copy the grant code (M7ab570e5-a1c0-32e5-a946-e4490c822954) and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. Use the refresh token in your script to get the access token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your hotel data.
+Copy the grant code (M7ab570e5-a1c0-32e5-a946-e4490c822954) and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. Use the refresh token in your service to get the access token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your hotel data.
 
 The refresh token is long lived but it can become invalid. If you receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the PowerShell script again to get consent and a new refresh token.
 
@@ -94,7 +94,7 @@ Your service should follow these basic steps to get the access token that you se
 &grant_type=refresh_token  
 &redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf  
 &refresh_token=\<yourrefreshtoken>` 
-- Get the access token, refresh token, and access token expiration from the response
+- Get the access token, refresh token, and expiration from the response
 - Set a timer that expires just before the access token expires
 - Set the Authorization header to the access token
 - Store the new refresh token in secured storage
