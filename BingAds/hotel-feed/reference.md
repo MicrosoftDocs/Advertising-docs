@@ -18,7 +18,7 @@ If you create hotel ads in Bing, you must use a hotel feed to provide Bing infor
 For information about creating a hotel feed, see [Creating a Hotel Feed](../hotel-feed/create-hotel-feed.md).
 
 > [!NOTE]
-> The elements must be specified in the order defined by the [Hotel XSD](https://bhacstatic.blob.core.windows.net/schemas/hotel.xsd) (and as listed in this topic).
+> The elements must be specified in the order defined by the [Hotel XSD](https://bhacstatic.blob.core.windows.net/schemas/hotelV2.xsd) (and as listed in this topic).
 
 ----
 
