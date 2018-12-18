@@ -21,7 +21,7 @@ The [example script](#example-script) in this topic shows you how to use [UrlFet
 Before you can run the script, you need to get credentials for accessing your Google resources. There are a couple of options for getting the credentials:
 
 - Option 1 &mdash; Easy to follow and takes less time but you need to repeat it every hour when the access token expires.
-- Option 2 &mdash; A little more complicated but you don't need repeat it every hour when the access token expires.
+- Option 2 &mdash; A little more complicated but you don't need to repeat it every hour when the access token expires.
 
 ## Option 1 - Getting an access token from Google OAuth playground
 
