@@ -15,9 +15,9 @@ ms.author: "scottwhi"
 >
 > The Hotel feed and documentation are subject to change. 
 
-To provide Bing your hotel listings, create an XML document that contains a listing of each hotel you want to advertise. A listing describes the hotel's name, address, telephone number, and geographical coordinates.
+To provide Bing your hotel listings, create an XML document that contains a listing of each hotel you want to advertise. A listing describes the hotel's name, address, telephone number, geographical coordinates, amenities, and more.
 
-The document must use UTF-8 encoding and must conform to the [Hotel XSD](https://bhacstatic.blob.core.windows.net/schemas/hotel.xsd). 
+The document must use UTF-8 encoding and must conform to the [Hotel XSD](https://bhacstatic.blob.core.windows.net/schemas/hotelV2.xsd). 
 
 For information about creating a feed file using CSV or TSV file format, see [Creating a CSV Hotel Feed file](create-csv-hotel-feed.md).
 
@@ -25,7 +25,7 @@ For information about creating a feed file using CSV or TSV file format, see [Cr
 > Bing does not support all XSD elements. Bing ignores any element or attribute in the document that it does not support. The [Hotel Feed Reference](../hotel-feed/reference.md) includes only those elements and attributes that Bing supports. 
 
 > [!NOTE]
-> The document must specify the elements in the order defined in the Hotel XSD (or as shown in the reference).
+> The document must specify the elements in the order defined in the Hotel XSD (and as shown in the reference).
 
 
 
@@ -33,7 +33,7 @@ For information about creating a feed file using CSV or TSV file format, see [Cr
 
 Because Bing attempts to match properties in your hotel feed to businesses in Bing Maps, it is important that the data you provide about the hotel is accurate and complete.
 
-If your hotel has missing or incorrect information, Bing may not be able to match it. If Bing cannot match the hotel, Bing will not advertise it. After your TAM imports your hotel feed file, they'll send you a report that indicates which hotels Bing matched or didn't match. If Bing didn't match the hotel, the report includes the message, *Unable to match this hotel to a property in Bing*. For help improving your match rate, work with your TAM.
+If a hotel has missing or incorrect information, Bing may not be able to match it. If Bing cannot match the hotel, Bing will not advertise it. After your TAM imports your hotel feed file, they'll send you a report that indicates which hotels Bing matched or didn't match. If Bing didn't match the hotel, the report includes the message, *Unable to match this hotel to a property in Bing*. For help improving your match rate, work with your TAM.
 
 
 ## The top-level element in your feed
@@ -61,9 +61,9 @@ The [listing](../hotel-feed/reference.md#listingstype) element contains informat
 
 ## Defining a hotel listing
 
-The `listing` element defines a hotel. You must specify a `listing` element for each hotel that you advertise. The listing must specify all elements. The exception is that you may specify either the geographical coordinates or a telephone number. Although you may specify either the coordinates or telephone number, you should specify both to ensure a better chance of matching properties in Bing Maps.
+The `listing` element defines a hotel. You must specify a `listing` element for each hotel that you advertise. The following example shows the minimum elements that you must specify for a listing. The exception is that you may specify either the geographical coordinates or a telephone number. Although you may specify either the coordinates or telephone number, you should specify both to ensure a better chance of matching properties in Bing Maps.
 
-```
+```xml
   <listing>
     <id>abc123</id>
     <name>Great Ambers Getaway</name>
@@ -90,7 +90,7 @@ The `latitude` and `longitude` element specify the hotel's geographical coordina
 
 The listing must specify at least the hotel's main telephone number. The main number should be the front desk's phone number and not a central reservations phone number. The more contact phone numbers that you provide the better. The following example shows the other phone options.
 
-```
+```xml
     <phone type="main">123-456-7890</phone>
     <phone type="tollfree">800-456-7890</phone>
     <phone type="fax">123-456-7890</phone>
@@ -100,9 +100,61 @@ The listing must specify at least the hotel's main telephone number. The main nu
 
 For more information about specifying telephone numbers, see the [phone](../hotel-feed/reference.md#phone) element.
 
+## Specifying optional hotel listing fields
+
+The following example shows the optional elements that you may include in the listing. Although optional, you should include as much information as possible to support current and future usage scenarios.
+
+```xml
+  <listing>
+    . . .
+    <category>Extended Stay</category>
+    <content>
+      <text type="description">
+        <body>This element contains the hotel's description.</body>
+      </text>
+      <review type="user">
+        <body>This element contains a review of the hotel.</body>
+        <date month="2" day="24" year="2018" />
+        <link>https://contoso.com/reviews/hotels?id=sd87s90</link>
+        <rating>8.5</rating>
+      </review>
+      <attributes>
+        <website>https://contoso.com</website>
+        <attr name="air_conditioned">Yes</attr>
+        <attr name="has_airport_shuttle">Yes</attr>
+        <attr name="parking_type">No payment required</attr>
+      </attributes>
+      <image type="photo" url="https://contoso.com/photos?id=345k43llj" width=800 height=600>
+        <date month="3" day="3" year="2018" />
+        <link>https://contoso.com/...</link>
+        <title>Hotel entrance</title>
+      </image>
+      <neighborhoods>
+        <neighborhood>Sodo District</neighborhood>
+      </neighborhoods>
+      <brand>Contoso</brand>
+    </content>
+  </listing>
+```
+
+The `category` element contains a user-defined category string. For example, extended stay, economy, or motel.
+
+The `text` element contains a description of the hotel. You must specify the `body` element, which contains the actual description. Depending on the description's length, it may be truncated when displayed. If you include the `link` and `title` elements, the link URL points to the description online.
+
+The `review` element contains either a user review or an editorial review. An editorial review is a professional review done by a reviewing authority such as a travel blogger. You may include any number of reviews but depending on the number of reviews sent, they may not all be shown. You must specify the `body` element, which contains the review. Depending on the review's length, it may be truncated when displayed. If you include the `link` element, it points to the full list of reviews online.
+
+The `attributes` element contains a list of amenities the hotel provides such as air conditioning, a swimming pool, and free breakfast. For a list of possible amenities, see [Attribute](reference.md#attributetype). If you don't specify an amenity, it's assumed that the hotel doesn't provide it. 
+
+The `image` element contains an image of the hotel. You may include any number of images but depending on the number of images sent, they may not all be shown. The recommended aspect ration is 4:3 and the minimum width is 720 pixels. Images must be original photographs and may not be screenshots. Note that the `link` URL must be accessible by the AdIdxBot crawler. If your site includes the robots.txt file, it must include either:
+- User-Agent: AdIdxBot
+- Allow: /
+
+The `neighborhood` element identifies the neighborhood where the hotel is located. You can specify multiple neighborhoods if the hotel is centrally located among several neighborhoods.
+
+The `brand` element identifies the hotel's brand. For example, Fabrikam Residences by Contoso, where Contoso is the brand.
+
 
 ## What happens if the hotel's content changes?
-
 
 If you change any of the hotel’s property values between feed runs (for example, its name, address, phone, etc.), Bing Ads may treat it as a new hotel property and create a new listing for it. If Bing creates a new listing, prior performance history for the old hotel remains available for up to 36 months. Note that the old hotel's bids and multipliers will not transfer to the new hotel entity. 
 
