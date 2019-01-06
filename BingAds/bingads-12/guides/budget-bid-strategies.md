@@ -41,7 +41,7 @@ Show your ads evenly every day throughout the month so you don't run out of budg
 This is a great option if you have a limited budget and want your ads to show evenly throughout the day. This way, your ads won't show all at once in the morning, using up your limited budget early in the day. You will also be able to monitor your budget on a daily basis, making adjustments as necessary, to maximize your budget.
 
 ### <a name="budget_rules"></a>Budget Rules
-Before you can submit your ad campaign, you need to set a campaign budget amount and select a budget type. Don't worry, you can change your budget amount and budget types at any time. Changes to your budget generally take effect within an hour or so. For a high level introduction to campaign budgets, see [What are my budget options?](http://help.bingads.microsoft.com/#apex/3/en/51006/1) 
+Before you can submit your ad campaign, you need to set a campaign budget amount and select a budget type. Don't worry, you can change your budget amount and budget types at any time. Changes to your budget generally take effect within an hour or so. For a high level introduction to campaign budgets, see [What are my budget options?](https://help.bingads.microsoft.com/#apex/3/en/51006/1) 
 
 If you create a campaign and specify a daily budget, the service calculates the monthly budget limit by multiplying the daily budget by the number of days in the month. The service calculates the new monthly budget at midnight (in the campaign's time zone) on the first day of each month. If the daily budget amount or calculated monthly budget amount is depleted, the campaign is paused automatically. The calculated monthly budget must be within the allowed range for the currency. For more information about minimum and maximum budgets allowed, see [Currencies](currencies.md).
 
@@ -66,12 +66,12 @@ The following bid strategy types are available per campaign type. For more infor
 |Bid Strategy Type|Campaign Types|
 |-------------------------|--------------------------|
 |[EnhancedCpc](#enhancedcpc)|DynamicSearchAds<br/>Search<br/>Shopping|
-|[ManualCpc](#manualcpc)|DynamicSearchAds<br/>Search<br/>Shopping|
+|[ManualCpc](#manualcpc)|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
 |[MaxClicks](#maxclicks)|DynamicSearchAds<br/>Search|
 |[MaxConversions](#maxconversions)|Search|
 |[TargetCpa](#targetcpa)|Search|
 
-When you use the Bing Ads API, tThe default for Audience and Shopping campaigns is [ManualCpc](#manualcpc). Until January 28th, 2019 if you do not set this field for Search and DynamicSearchAds campaigns, then [ManualCpc](#manualcpc) is used by default. From January 28th, 2019 onwards if you do not set this field, then [EnhancedCpc](#enhancedcpc) will be used by default for Search and DynamicSearchAds campaigns.
+When you use the Bing Ads API, the default for Audience and Shopping campaigns is [ManualCpc](#manualcpc). Until January 28th, 2019 if you do not set this field for Search and DynamicSearchAds campaigns, then [ManualCpc](#manualcpc) is used by default. From January 28th, 2019 onwards if you do not set this field, then [EnhancedCpc](#enhancedcpc) will be used by default for Search and DynamicSearchAds campaigns.
 
 > [!IMPORTANT] 
 > If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
@@ -194,12 +194,12 @@ A keyword is considered a duplicate if it is the same as another keyword, but it
 
 For example, let's say you add *bike-repair* as one of your keywords, and then also add *bike repair*. Your second entry (bike repair) would be marked as a duplicate. When someone searches for *bike-repair*, Bing Ads automatically removes the hyphen and displays ads for the search query bike repair, including yours, regardless of which variation you used (*bike repair* or *bike-repair*).
 
-For a detailed list of normalized characters, see the Bing Ads help topic [About duplicate keywords](http://help.bingads.microsoft.com/#apex/3/en/normalization).
+For a detailed list of normalized characters, see the Bing Ads help topic [About duplicate keywords](https://help.bingads.microsoft.com/#apex/3/en/normalization).
 
 Please also note the following validation rules.
 - Normalization is not case sensitive; *bike repair* and *Bike Repair* are treated as the same phrase. You'll see that if you enter a keyword with a capital letter, the capital letter is simply changed to lower-case. 
 - Normalization does not treat singular and plural forms of words as duplicates. For example, *bike* and *bikes* would be separate keywords. If you want to use both the plural and singular form of a keyword, bid on each separately. Similarly, normalization does not impact spaces within or between words, or apostrophes that are a part of a name. For example, *bikerepair* is not a duplicate of *bike repair*. 
-- As you create your keywords, also be aware of the rules they must follow. Here's some more information: [Bing Ads policies](http://help.bingads.microsoft.com/#apex/3/en/52023/1). 
+- As you create your keywords, also be aware of the rules they must follow. Here's some more information: [Bing Ads policies](https://help.bingads.microsoft.com/#apex/3/en/52023/1). 
 
 ## See Also
 [Bing Ads Web Service Addresses](web-service-addresses.md)

@@ -9,7 +9,7 @@ description: Defines possible values for an account level setting that determine
 # AutoTagType Value Set - Customer Management
 Defines possible values for an account level setting that determines whether to append or replace the supported UTM tracking codes.
 
-Bing Ads can automatically add UTM tags to your destination URL so you can use your website analytics tool, for example Google Analytics, to track how people got to your website. Auto-tags are applied for example to expanded text ads, keywords, Bing Shopping Campaigns, and Sitelink Extensions. For details about auto-tagging, please see the Bing Ads help article [How do I add UTM tags to my landing page URL?](http://help.bingads.microsoft.com/#apex/3/en/56762/-1).
+Bing Ads can automatically add UTM tags to your destination URL so you can use your website analytics tool, for example Google Analytics, to track how people got to your website. Auto-tags are applied for example to expanded text ads, keywords, Bing Shopping Campaigns, and Sitelink Extensions. For details about auto-tagging, please see the Bing Ads help article [How do I add UTM tags to my landing page URL?](https://help.bingads.microsoft.com/#apex/3/en/56762/-1).
 
 ## Syntax
 ```xml

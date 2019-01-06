@@ -4,10 +4,13 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Reserved.
+description: Applies crop settings to stored image media for a specific aspect ratio.
 ---
 # ImageAsset Data Object - Campaign Management
-Reserved.
+Applies crop settings to stored image media for a specific aspect ratio. 
+
+> [!NOTE]
+> Not everyone has this feature yet. If you don't, don't worry. It's coming soon. 
 
 ## Syntax
 ```xml
@@ -30,11 +33,11 @@ Reserved.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="cropheight"></a>CropHeight|Reserved.|**int**|
-|<a name="cropwidth"></a>CropWidth|Reserved.|**int**|
-|<a name="cropx"></a>CropX|Reserved.|**int**|
-|<a name="cropy"></a>CropY|Reserved.|**int**|
-|<a name="subtype"></a>SubType|Reserved.|**string**|
+|<a name="cropheight"></a>CropHeight|The number of pixels to use from the image asset source, starting from the CropY position and moving upwards.|**int**|
+|<a name="cropwidth"></a>CropWidth|The number of pixels to use from the image asset source, starting from the CropX position and moving to the right.|**int**|
+|<a name="cropx"></a>CropX|Starting from the lower left corner of image asset source, this is the number of pixels to skip to the right on the x-axis before applying the CropWidth.|**int**|
+|<a name="cropy"></a>CropY|Starting from the lower left corner of image asset source, this is the number of pixels to skip upwards on the y-axis before applying the CropHeight.|**int**|
+|<a name="subtype"></a>SubType|Represents the aspect ratio for this image asset.<br/><br/>The aspect ratio for the sub type must match the effective image asset dimensions. If [CropHeight](#cropheight) and [CropWidth](#cropwidth) are not used then the aspect ratio for the sub type must match the aspect ratio of the stored image media. If [CropHeight](#cropheight) and [CropWidth](#cropwidth) are used then the true aspect ratio of the media that is stored in the account level media library can differ, so long as [CropHeight](#cropheight) and [CropWidth](#cropwidth) result in the correct aspect ratio. In either case the true aspect ratio of the media that is stored in the account level media library will remain unchanged.<br/><br/>The possible sub type values include LandscapeImageMedia, SquareImageMedia, ImageMedia169X100, ImageMedia93X100, ImageMedia15X10, ImageMedia155X100, and ImageMedia133X100. For more details see [ResponsiveAd Remarks](responsivead.md#remarks)<br/><br/>New sub types might be added in the future, so you should not take any dependency on a fixed set of values.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
 
 The [ImageAsset](imageasset.md) object has [Inherited Elements](#inheritedelements).
 
@@ -45,9 +48,9 @@ The [ImageAsset](imageasset.md) object derives from the [Asset](asset.md) object
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="id"></a>Id|Reserved.|**long**|
-|<a name="name"></a>Name|Reserved.|**string**|
-|<a name="type"></a>Type|Reserved.|**string**|
+|<a name="id"></a>Id|The unique Bing Ads identifier for the asset in a Bing Ads account.<br/><br/>The same image asset identifier can be used multiple times in the same ad for different aspect ratios, and can also be used by multiple ads in the same Bing Ads account. The identifier of image asset with [SubType](#subtype) set to LandscapeImageMedia is used for all auto-generated image asset sub types within the same ad. Whether or not you let Bing Ads automatically generate the cropped images, the [Id](imageasset.md#id) does not need to be unique among the image assets linked to the same ad.<br/><br/>You can create media for responsive ads via the [AddMedia](addmedia.md) service operation. Then you can use the returned media identifier as the image asset ID. The aspect ratio of the image that you added must be supported for the image asset [SubType](#subtype).<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**long**|
+|<a name="name"></a>Name|Reserved for future use.|**string**|
+|<a name="type"></a>Type|The type of the asset. This value is *ImageAsset* when you retrieve an image asset. For more information about asset types, see the [Asset Data Object Remarks](asset.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|**string**|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

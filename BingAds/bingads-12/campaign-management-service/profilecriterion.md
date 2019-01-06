@@ -9,7 +9,7 @@ description: Defines a criterion that can be used to show ads to users in a spec
 # ProfileCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to users in a specific company, industry, or job function.
 
-The *ProfileCriterion* criterion can be included within an [AdGroupCriterion](adgroupcriterion.md) object in calls to [AddAdGroupCriterions](addadgroupcriterions.md), [DeleteAdGroupCriterions](deleteadgroupcriterions.md), [GetAdGroupCriterionsByIds](getadgroupcriterionsbyids.md), and [UpdateAdGroupCriterions](updateadgroupcriterions.md).
+The *ProfileCriterion* criterion can be included within [AdGroupCriterion](adgroupcriterion.md), [NegativeAdGroupCriterion](negativeadgroupcriterion.md), and [CampaignCriterion](campaigncriterion.md) objects. Bing Ads applies a union of both campaign and ad group level profile criterions. However, if you apply a criterion with the same profile ID e.g., target or exclude the same company name at both the campaign and ad group level, then the ad group level criterion will override the campaign level criterion. 
 
 ## Syntax
 ```xml

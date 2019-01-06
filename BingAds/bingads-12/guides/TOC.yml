@@ -590,15 +590,15 @@
         - name: Ad Group Negative Company Name Criterion
           href: ../bulk-service/ad-group-negative-company-name-criterion.md
           displayName: BulkAdGroupNegativeCompanyNameCriterion
-        - name: Ad Group Negative Gender Criterion
-          href: ../bulk-service/ad-group-negative-gender-criterion.md
-          displayName: BulkAdGroupNegativeGenderCriterion
         - name: Ad Group Negative Custom Audience Association
           href: ../bulk-service/ad-group-negative-custom-audience-association.md
           displayName: BulkAdGroupNegativeCustomAudienceAssociation
         - name: Ad Group Negative Dynamic Search Ad Target
           href: ../bulk-service/ad-group-negative-dynamic-search-ad-target.md
           displayName: BulkAdGroupNegativeDynamicSearchAdTarget
+        - name: Ad Group Negative Gender Criterion
+          href: ../bulk-service/ad-group-negative-gender-criterion.md
+          displayName: BulkAdGroupNegativeGenderCriterion
         - name: Ad Group Negative Industry Criterion
           href: ../bulk-service/ad-group-negative-industry-criterion.md
           displayName: BulkAdGroupNegativeIndustryCriterion
@@ -692,6 +692,9 @@
         - name: Campaign Company Name Criterion
           href: ../bulk-service/campaign-company-name-criterion.md
           displayName: BulkCampaignCompanyNameCriterion
+        - name: Campaign Custom Audience Association
+          href: ../bulk-service/campaign-custom-audience-association.md
+          displayName: BulkCampaignCustomAudienceAssociation
         - name: Campaign DayTime Criterion
           href: ../bulk-service/campaign-daytime-criterion.md
           displayName: BulkCampaignDayTimeCriterion
@@ -707,6 +710,9 @@
         - name: Campaign Industry Criterion
           href: ../bulk-service/campaign-industry-criterion.md
           displayName: BulkCampaignIndustryCriterion
+        - name: Campaign In Market Audience Association
+          href: ../bulk-service/campaign-in-market-audience-association.md
+          displayName: BulkCampaignInMarketAudienceAssociation
         - name: Campaign Job Function Criterion
           href: ../bulk-service/campaign-job-function-criterion.md
           displayName: BulkCampaignJobFunctionCriterion
@@ -722,9 +728,15 @@
         - name: Campaign Location Intent Criterion
           href: ../bulk-service/campaign-location-intent-criterion.md
           displayName: BulkCampaignLocationIntentCriterion
+        - name: Campaign Negative Custom Audience Association
+          href: ../bulk-service/campaign-negative-custom-audience-association.md
+          displayName: BulkCampaignNegativeCustomAudienceAssociation
         - name: Campaign Negative Dynamic Search Ad Target
           href: ../bulk-service/campaign-negative-dynamic-search-ad-target.md
           displayName: BulkCampaignNegativeDynamicSearchAdTarget
+        - name: Campaign Negative In Market Audience Association
+          href: ../bulk-service/campaign-negative-in-market-audience-association.md
+          displayName: BulkCampaignNegativeInMarketAudienceAssociation
         - name: Campaign Negative Keyword
           href: ../bulk-service/campaign-negative-keyword.md
           displayName: BulkCampaignNegativeKeyword
@@ -734,21 +746,39 @@
         - name: Campaign Negative Location Criterion
           href: ../bulk-service/campaign-negative-location-criterion.md
           displayName: BulkCampaignNegativeLocationCriterion
+        - name: Campaign Negative Product Audience Association
+          href: ../bulk-service/campaign-negative-product-audience-association.md
+          displayName: BulkCampaignNegativeProductAudienceAssociation
+        - name: Campaign Negative Remarketing List Association
+          href: ../bulk-service/campaign-negative-remarketing-list-association.md
+          displayName: BulkCampaignNegativeRemarketingListAssociation
+        - name: Campaign Negative Similar Remarketing List Association
+          href: ../bulk-service/campaign-negative-similar-remarketing-list-association.md
+          displayName: BulkCampaignNegativeSimilarRemarketingListAssociation
         - name: Campaign Negative Site
           href: ../bulk-service/campaign-negative-site.md
           displayName: BulkCampaignNegativeSite
         - name: Campaign Price Ad Extension
           href: ../bulk-service/campaign-price-ad-extension.md
           displayName: BulkCampaignPriceAdExtension
+        - name: Campaign Product Audience Association
+          href: ../bulk-service/campaign-product-audience-association.md
+          displayName: BulkCampaignProductAudienceAssociation
         - name: Campaign Product Scope
           href: ../bulk-service/campaign-product-scope.md
           displayName: BulkCampaignProductScope
         - name: Campaign Radius Criterion
           href: ../bulk-service/campaign-radius-criterion.md
           displayName: BulkCampaignRadiusCriterion
+        - name: Campaign Remarketing List Association
+          href: ../bulk-service/campaign-remarketing-list-association.md
+          displayName: BulkCampaignRemarketingListAssociation
         - name: Campaign Review Ad Extension
           href: ../bulk-service/campaign-review-ad-extension.md
           displayName: BulkCampaignReviewAdExtension
+        - name: Campaign Similar Remarketing List Association
+          href: ../bulk-service/campaign-similar-remarketing-list-association.md
+          displayName: BulkCampaignSimilarRemarketingListAssociation
         - name: Campaign Sitelink Ad Extension
           href: ../bulk-service/campaign-sitelink-ad-extension.md
           displayName: BulkCampaignSitelinkAdExtension

@@ -14,7 +14,7 @@ Using Product Audiences, you can remarket to customers based on the specific pro
 Product audiences work best with both Shopping campaigns and feed-based Audience campaigns i.e., those campaigns that leverage a Bing Merchant Center [store ID](shoppingsetting.md#storeid). 
 
 > [!IMPORTANT]
-> Be sure to edit the script corresponding to the [UET Tag Id](#uettagid) on your website to include the `ecomm_prodid` and `ecomm_pagetype` parameters.
+> Be sure to edit the script corresponding to the [UET Tag Id](#tagid) on your website to include the `ecomm_prodid` and `ecomm_pagetype` parameters.
 > The ecomm_prodid parameter is the product ID of the product on the page. It is unique for each item and must match either the id or item_group_id attribute in your product feed. Numeric and alphanumeric (including hyphens) characters only, with a maximum of 50 characters. 
 > The ecomm_pagetype parameter identifies the type of page the user has visited. Valid options: home, searchresults, category, product, cart, purchase, other.
 

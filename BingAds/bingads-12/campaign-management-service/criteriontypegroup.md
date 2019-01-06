@@ -9,7 +9,7 @@ description: The type used to group criterions.
 # CriterionTypeGroup Value Set - Campaign Management
 The type used to group criterions.
 
-You can use one of the criterion type group values in each [TargetSettingDetail](targetsettingdetail.md) object to determine whether to use the "target and bid" option or the "bid only" target option for that group. For supported criterion type groups per campaign type, see [TargetSettingDetail Remarks](targetsettingdetail.md#remarks).
+You can use one of the criterion type group values in each [TargetSettingDetail](targetsettingdetail.md) object to determine whether to use the "target and bid" option or the "bid only" target option for that campaign or ad group. For supported criterion type groups per campaign type, see [TargetSettingDetail Remarks](targetsettingdetail.md#remarks).
 
 ## Syntax
 ```xml

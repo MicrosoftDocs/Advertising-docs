@@ -13,6 +13,8 @@ Defines an Ad Group Negative Age Criterion that can be uploaded and downloaded i
 
 You can exclude customers by age so that your ads are displayed more frequently to people who will be interested in them. 
 
+If ad group level age criterions are specified, the campaign level age criterions are ignored for that ad group. In other words the ad group age criterions override the campaign age criterions, and are not applied as a union. 
+
 > [!TIP]
 > For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
 

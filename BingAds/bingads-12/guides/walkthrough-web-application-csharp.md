@@ -28,95 +28,95 @@ The example web application sends authentication requests to the Microsoft accou
   > [!NOTE]
   > If you intend to deploy on localhost prior to going live, then be sure to also register the the local SSL URL and port e.g., https://localhost:44383/. In that case you must also set **SSL Enabled** to *True* in the BingAdsWebApp project properties window, and then you can copy the localhost port from the same properties window.
 
-    ```xml
+  ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <!--
-      For more information on how to configure your ASP.NET application, please visit
-      https://go.microsoft.com/fwlink/?LinkId=301880
-      -->
+        For more information on how to configure your ASP.NET application, please visit
+        https://go.microsoft.com/fwlink/?LinkId=301880
+        -->
     <configuration>
-      <configSections>
+        <configSections>
         <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <section name="BingAdsWebApp.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+            <section name="BingAdsWebApp.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
         </sectionGroup>
-      </configSections>
-      <appSettings>
+        </configSections>
+        <appSettings>
         <!-- To use the production environment, set this value to "Production". -->
         <add key="BingAdsEnvironment" value="Sandbox"/>
         <add key="webpages:Version" value="3.0.0.0" />
         <add key="webpages:Enabled" value="false" />
         <add key="ClientValidationEnabled" value="true" />
         <add key="UnobtrusiveJavaScriptEnabled" value="true" />
-      </appSettings>
-      <system.web>
+        </appSettings>
+        <system.web>
         <compilation debug="true" targetFramework="4.7.1" />
         <httpRuntime targetFramework="4.7.1" />
         <httpModules>
-          <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" />
+            <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" />
         </httpModules>
-      </system.web>
-      <runtime>
+        </system.web>
+        <runtime>
         <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-          <dependentAssembly>
+            <dependentAssembly>
             <assemblyIdentity name="Newtonsoft.Json" culture="neutral" publicKeyToken="30ad4fe6b2a6aeed" />
             <bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" />
-          </dependentAssembly>
-          <dependentAssembly>
+            </dependentAssembly>
+            <dependentAssembly>
             <assemblyIdentity name="System.Web.Optimization" publicKeyToken="31bf3856ad364e35" />
             <bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="1.1.0.0" />
-          </dependentAssembly>
-          <dependentAssembly>
+            </dependentAssembly>
+            <dependentAssembly>
             <assemblyIdentity name="WebGrease" publicKeyToken="31bf3856ad364e35" />
             <bindingRedirect oldVersion="0.0.0.0-1.5.2.14234" newVersion="1.5.2.14234" />
-          </dependentAssembly>
-          <dependentAssembly>
+            </dependentAssembly>
+            <dependentAssembly>
             <assemblyIdentity name="System.Web.Helpers" publicKeyToken="31bf3856ad364e35" />
             <bindingRedirect oldVersion="1.0.0.0-3.0.0.0" newVersion="3.0.0.0" />
-          </dependentAssembly>
-          <dependentAssembly>
+            </dependentAssembly>
+            <dependentAssembly>
             <assemblyIdentity name="System.Web.WebPages" publicKeyToken="31bf3856ad364e35" />
             <bindingRedirect oldVersion="1.0.0.0-3.0.0.0" newVersion="3.0.0.0" />
-          </dependentAssembly>
-          <dependentAssembly>
+            </dependentAssembly>
+            <dependentAssembly>
             <assemblyIdentity name="System.Web.Mvc" publicKeyToken="31bf3856ad364e35" />
             <bindingRedirect oldVersion="1.0.0.0-5.2.3.0" newVersion="5.2.3.0" />
-          </dependentAssembly>
+            </dependentAssembly>
         </assemblyBinding>
-      </runtime>
-      <system.webServer>
+        </runtime>
+        <system.webServer>
         <validation validateIntegratedModeConfiguration="false" />
         <modules>
-          <remove name="ApplicationInsightsWebTracking" />
-          <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" preCondition="managedHandler" />
+            <remove name="ApplicationInsightsWebTracking" />
+            <add name="ApplicationInsightsWebTracking" type="Microsoft.ApplicationInsights.Web.ApplicationInsightsHttpModule, Microsoft.AI.Web" preCondition="managedHandler" />
         </modules>
-      </system.webServer>
-      <system.codedom>
+        </system.webServer>
+        <system.codedom>
         <compilers>
-          <compiler language="c#;cs;csharp" extension=".cs" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:default /nowarn:1659;1699;1701" />
-          <compiler language="vb;vbs;visualbasic;vbscript" extension=".vb" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:default /nowarn:41008 /define:_MYTYPE=\&quot;Web\&quot; /optionInfer+" />
+            <compiler language="c#;cs;csharp" extension=".cs" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.CSharpCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:default /nowarn:1659;1699;1701" />
+            <compiler language="vb;vbs;visualbasic;vbscript" extension=".vb" type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.VBCodeProvider, Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" warningLevel="4" compilerOptions="/langversion:default /nowarn:41008 /define:_MYTYPE=\&quot;Web\&quot; /optionInfer+" />
         </compilers>
-      </system.codedom>
-      <applicationSettings>
+        </system.codedom>
+        <applicationSettings>
         <BingAdsWebApp.Properties.Settings>
-          <setting name="RefreshToken" serializeAs="String">
+            <setting name="RefreshToken" serializeAs="String">
             <value />
-          </setting>
-          <setting name="ClientId" serializeAs="String">
+            </setting>
+            <setting name="ClientId" serializeAs="String">
             <value>ClientIdGoesHere</value>
-          </setting>
-          <setting name="ClientSecret" serializeAs="String">
+            </setting>
+            <setting name="ClientSecret" serializeAs="String">
             <value>ClientSecretGoesHere</value>
-          </setting>
-          <setting name="RedirectionUri" serializeAs="String">
+            </setting>
+            <setting name="RedirectionUri" serializeAs="String">
             <value>RedirectionUriGoesHere</value>
-          </setting>
-          <setting name="DeveloperToken" serializeAs="String">
+            </setting>
+            <setting name="DeveloperToken" serializeAs="String">
             <value>DeveloperTokenGoesHere</value>
-          </setting>
+            </setting>
         </BingAdsWebApp.Properties.Settings>
-      </applicationSettings>
+        </applicationSettings>
     </configuration>
-    ```
+  ```
 
 6. Create a settings file. In project view for the BingAdsWebApp right click **Properties** and click **Open**. Click on **Settings**, and then click the text *The project does not contain a default settings file. Click here to create one*. New values from Web.config will be automatically added. 
 

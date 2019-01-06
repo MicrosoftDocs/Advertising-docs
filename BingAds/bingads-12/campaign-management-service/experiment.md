@@ -9,9 +9,6 @@ description: Defines an experiment where you split a campaign's budget and traff
 # Experiment Data Object - Campaign Management
 Defines an experiment where you split a campaign's budget and traffic, and then run an A/B test during a limited date range. 
 
-> [!WARNING]
-> This preview documentation is subject to change.
-
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.  
 

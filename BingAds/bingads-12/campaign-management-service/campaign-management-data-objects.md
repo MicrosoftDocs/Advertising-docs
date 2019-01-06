@@ -88,7 +88,7 @@ The Campaign Management service defines the following data objects.
 |[IdCollection](idcollection.md)|Defines an object that contains a list of entity identifiers.|
 |[Image](image.md)|Defines an image object that can be added to an account's media library.|
 |[ImageAdExtension](imageadextension.md)|Defines an ad extension that specifies an image with alternative text to include in an expanded text ad.|
-|[ImageAsset](imageasset.md)|Reserved.|
+|[ImageAsset](imageasset.md)|Applies crop settings to stored image media for a specific aspect ratio.|
 |[ImageMediaRepresentation](imagemediarepresentation.md)|Defines an image media representation with height and width.|
 |[InheritFromParentBiddingScheme](inheritfromparentbiddingscheme.md)|Defines an object that represents the inherit from parent bid strategy type.|
 |[InMarketAudience](inmarketaudience.md)|Defines an in-market audience.|

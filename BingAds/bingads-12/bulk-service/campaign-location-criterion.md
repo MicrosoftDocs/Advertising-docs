@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 # Campaign Location Criterion Record - Bulk
-Defines a campaign location criterion that can be uploaded and downloaded in a bulk file.
+Defines a campaign location criterion that can be used to show ads to users in a specific location.
 
 With location criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about:
 *  All available countries/regions
@@ -21,6 +21,10 @@ The maximum number of combined location and negative location criterions that yo
 
 > [!NOTE]
 > You can only have one [Campaign Location Intent Criterion](campaign-location-intent-criterion.md) record per campaign to determine the location intent option that applies for all of the campaign's [Campaign Location Criterion](campaign-location-criterion.md) and [Campaign Radius Criterion](campaign-radius-criterion.md) records. When you create the campaign's first criterion, a [Campaign Location Intent Criterion](campaign-location-intent-criterion.md) record will also be added automatically with the default *Target* set to *PeopleInOrSearchingForOrViewingPages*. You can add or update a campaign's [Campaign Location Intent Criterion](campaign-location-intent-criterion.md), whether or not the campaign has any other criterions. You cannot delete a campaign's [Campaign Location Intent Criterion](campaign-location-intent-criterion.md), although it has no purpose without location or radius criterions. 
+
+If ad group level location criterions are specified (positive or negative), the campaign level location criterions are ignored for that ad group. In other words the ad group location criterions override the campaign location criterions, and are not applied as a union.  
+
+Also note that you must consider the location, negative location, and radius criterions as a set of *geo criterions*. If the ad group has any geo criterions, then none of the campaign's geo criterions are inherited. If the ad group doesn't have any geo criterions, then all of the campaign's geo criterions are inherited. The geo criterions can be inherited from the campaign even if the ad group has a location intent criterion. If the ad group's geo criterions are used, then the ad group's location intent criterion is used; if the campaign's geo criterions are inherited, then the campaign's location intent criterion is used and the ad group's location intent criterion is ignored. You cannot delete a campaign or ad group's location intent criterion, although it has no purpose without location or radius criterions. 
 
 > [!TIP]
 > For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).

@@ -5479,7 +5479,7 @@ The QualityScore, KeywordRelevance, LandingPageRelevance and LandingPageUserExpe
 InvalidGrainForImpressionShareColumns
 
 **Description**
-The ImpressionSharePercent, ImpressionLostToBudgetPercent, ImpressionLostToRankPercent, ImpressionLostToRelevancePercent, ImpressionLostToOthersPercent, ImpressionLostToBidPercent, ImpressionLostToLandingPageRelevancePercent and ImpressionLostToKeywordRelevancePercent columns are not available for the specified ReportAggregation.
+The impression share columns are not available for the specified report aggregation. 
 
 ***
 

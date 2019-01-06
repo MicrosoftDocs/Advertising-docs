@@ -9,13 +9,15 @@ dev_langs:
   - csharp
 ---
 # Ad Group DeviceOS Criterion Record - Bulk
-Defines an ad group device OS criterion that can be uploaded and downloaded in a bulk file.
+Defines an ad group device criterion that can be uploaded and downloaded in a bulk file.
 
 When you target by device, you choose to show ads to potential customers when they're using desktops and tablets or smartphones. 
 
 Each device criterion defines a device name for the accompanying criterion bid adjustment. 
 
 The maximum number of device criterions that you can specify per campaign or ad group is three. You must either have three separate criterions for *Computers*, *Smartphones*, and *Tablets*, otherwise no device criterions can exist for the campaign or ad group.
+
+If ad group level device criterions are specified, the campaign level device criterions are ignored for that ad group. In other words the ad group device criterions override the campaign device criterions, and are not applied as a union.   
 
 > [!TIP]
 > For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
