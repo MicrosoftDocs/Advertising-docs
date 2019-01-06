@@ -17,9 +17,9 @@ By separating the tracking template details from the final URLs you can take adv
 - Doing so helps Bing Ads understand what information is URL versus tracking template information, and reduces crawling on your website. 
 
 For an overview of Final URLs and tracking templates, see the following Bing Ads help articles.
-- [How do I create an account tracking template?](http://help.bingads.microsoft.com/#apex/3/en/56772/-1)  
-- [Can I use custom parameters?](http://help.bingads.microsoft.com/#apex/3/en/56774/-1)  
-- [What are Upgraded URLs and how do I upgrade?](http://help.bingads.microsoft.com/#apex/3/en/56751/-1)  
+- [How do I create an account tracking template?](https://help.bingads.microsoft.com/#apex/3/en/56772/-1)  
+- [Can I use custom parameters?](https://help.bingads.microsoft.com/#apex/3/en/56774/-1)  
+- [What are Upgraded URLs and how do I upgrade?](https://help.bingads.microsoft.com/#apex/3/en/56751/-1)  
 
 You can manage Final URLs, Custom Parameters, and Tracking Templates with either the [Bulk Service](../bulk-service/bulk-service-reference.md) or [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md). You should use the [Bulk Service](../bulk-service/bulk-service-reference.md) service if you need to upload or download a high volume of entity settings. For example you can update all keyword bids for your entire account in a single upload. In comparison, with the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md) service you can only update 1,000 keywords per call and those keywords must be in the same ad group. For more details about Final URLs and tracking templates using the Bing Ads API, see the sections below.
 - [Tracking Templates](#trackingtemplatevalidation)  

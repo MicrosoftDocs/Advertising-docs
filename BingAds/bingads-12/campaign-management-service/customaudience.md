@@ -10,7 +10,7 @@ description: Defines a custom audience.
 Defines a custom audience. 
 
 > [!NOTE]
-> Only update of the [Name](#name) and [Description](#description) are supported. You can delete but cannot add a custom audience using the Bing Ads API. Having said that, you can add and delete ad group custom audience associations and exclusions.
+> Only update of the [Name](#name) and [Description](#description) are supported. You can delete but cannot add a custom audience using the Bing Ads API. Having said that, you can add and delete custom audience associations and exclusions.
 
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.

@@ -11,6 +11,8 @@ dev_langs:
 # Ad Group Negative Product Audience Association Record - Bulk
 Defines an Ad Group Negative Product Audience Association that can be uploaded and downloaded in a bulk file. 
 
+Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Bing Ads applies a union of both campaign and ad group level exclusions.
+
 You can download all *Ad Group Negative Product Audience Association* records in the account by including the [DownloadEntity](downloadentity.md) value of *AdGroupNegativeProductAudienceAssociations* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
 The following Bulk CSV example would add a new Ad Group Negative Product Audience Association if a valid [Parent Id](#parentid) value is provided. 
@@ -98,7 +100,7 @@ The name of the product audience.
 
 This bulk field maps to the *Audience* field of the [Product Audience](product-audience.md) record.
 
-**Add:** Read-only and Required for some use cases. You must either specify the *Audience* or *Audience Id* field. If you are adding new Ad Group Negative Product Audience Associations with new product audiences in the same Bulk file, and if you do not set the *Audience Id* field, then this *Audience* field must be set as a logical key to the same value as the *Audience* field of the [Product Audience](product-audience.md) record. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required for some use cases. You must either specify the [Audience](#audience) or [Audience Id](#audienceid) field. If you are adding new Ad Group Negative Product Audience Associations with new product audiences in the same Bulk file, and if you do not set the [Audience Id](#audienceid) field, then this [Audience](#audience) field must be set as a logical key to the same value as the *Audience* field of the [Product Audience](product-audience.md) record. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only    
 **Delete:** Read-only  
 
@@ -107,7 +109,7 @@ The Bing Ads identifier of the product audience associated with the ad group.
 
 This bulk field maps to the *Id* field of the [Product Audience](product-audience.md) record.
 
-**Add:** Read-only and Required for some use cases. You must either specify the *Audience* or *Audience Id* field. If you set the *Audience Id* field, you must either specify an existing product audience identifier or specify a negative identifier that is equal to the *Id* field of the parent [Product Audience](product-audience.md) record. If the *Audience Id* field is not set, then you must set the *Audience* field as a logical key to the same value as the *Audience* field of the [Product Audience](product-audience.md) record. Any of these options are recommended if you are adding new Ad Group Negative Product Audience Associations with new product audiences in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
+**Add:** Read-only and Required for some use cases. You must either specify the [Audience](#audience) or [Audience Id](#audienceid) field. If you set the [Audience Id](#audienceid) field, you must either specify an existing product audience identifier or specify a negative identifier that is equal to the *Id* field of the parent [Product Audience](product-audience.md) record. If the [Audience Id](#audienceid) field is not set, then you must set the [Audience](#audience) field as a logical key to the same value as the *Audience* field of the [Product Audience](product-audience.md) record. Any of these options are recommended if you are adding new Ad Group Negative Product Audience Associations with new product audiences in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only    
 **Delete:** Read-only  
 

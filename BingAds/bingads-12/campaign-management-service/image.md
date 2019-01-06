@@ -56,26 +56,26 @@ The following restrictions apply to [Media](media.md) types (aspect ratios) that
 
 |MediaType|Aspect Ratio|Minimum Dimension|Maximum Dimension|
 |--------|----------------|---------------------|---------------------|
-|*Image16x9*|16:9|640 width x 360 height, in pixels|1778 width x 1000 height, in pixels|
-|*Image15x10*|1.5:1|300 width x 200 height, in pixels|1500 width x 1000 height, in pixels|
-|*Image4x3*|4:3|100 width x 75 height, in pixels|1333 width x 1000 height, in pixels|
-|*Image12x10*|1.2:1|300 width x 250 height, in pixels|1200 width x 1000 height, in pixels|
+|Image16x9|16:9|640 width x 360 height, in pixels|1778 width x 1000 height, in pixels|
+|Image15x10|1.5:1|300 width x 200 height, in pixels|1500 width x 1000 height, in pixels|
+|Image4x3|4:3|100 width x 75 height, in pixels|1333 width x 1000 height, in pixels|
+|Image12x10|1.2:1|300 width x 250 height, in pixels|1200 width x 1000 height, in pixels|
 
 > [!NOTE]
 > The maximum file size is 5 MB, but the recommended maximum file size is 1MB.
 
 ### <a name="responsivead"></a>Responsive Ad Image Media
-The following restrictions apply to [Media](media.md) types (aspect ratios) that will be used with a [ResponsiveAd](responsivead.md).
+The following restrictions apply to [Media](media.md) types (aspect ratios) that will be used with a [ResponsiveAd](responsivead.md). Although you can only add media with a few aspect ratios, you can use [ImageAsset](imageasset.md) crop settings to determine the effective aspect ratio in the context of each responsive ad. The aspect ratio of the stored image would be unchanged in the account level media library. For more information, see [ResponsiveAd Remarks](responsivead.md#remarks). 
 
-|Responsive Ad Property|Media Type|Dimensions in pixels|
+|Media Type|Dimensions in pixels|
 |--------|--------|--------|--------|
-|[LandscapeImageMediaId](responsivead.md#landscapeimagemediaid)|*Image191x100*|**Minimum:** 600 width x 314 height<br/>**Maximum:** Aspect radio 1.91:1 up to the maximum file size of 1MB.<br/>**Recommended:** 1200 width x 628 height|
-|[LandscapeLogoMediaId](responsivead.md#landscapelogomediaid)|*Image4x1*|**Minimum:** 512 width x 128 height<br/>**Maximum:** Aspect radio 4:1 up to the maximum file size of 1MB.<br/>**Recommended:** 1200 width x 300 height|
-|[SquareImageMediaId](responsivead.md#squareimagemediaid)|*Image1x1*|**Minimum:** 300 width x 300 height<br/>**Maximum:** Aspect radio 1:1 up to the maximum file size of 1MB.<br/>**Recommended:** 1200 width x 1200 height|
-|[SquareLogoMediaId](responsivead.md#squarelogomediaid)|*Image1x1*|**Minimum:** 128 width x 128 height<br/>**Maximum:** Aspect radio 1:1 up to the maximum file size of 1MB.<br/>**Recommended:** 1200 width x 1200 height|
+|Image191x100|**Minimum:** 600 width x 314 height<br/>**Maximum:** Aspect radio 1.91:1 up to the maximum file size of 5MB.<br/>**Recommended:** 1200 width x 628 height|
+|Image4x1|**Minimum:** 512 width x 128 height<br/>**Maximum:** Aspect radio 4:1 up to the maximum file size of 5MB.<br/>**Recommended:** 1200 width x 300 height|
+|Image1x1|**Minimum:** 300 width x 300 height<br/>**Maximum:** Aspect radio 1:1 up to the maximum file size of 5MB.<br/>**Recommended:** 1200 width x 1200 height|
+|Image1x1|**Minimum:** 128 width x 128 height<br/>**Maximum:** Aspect radio 1:1 up to the maximum file size of 5MB.<br/>**Recommended:** 1200 width x 1200 height|
 
 > [!NOTE]
-> The maximum file size is 5 MB. The maximum width and height in pixels are 2592 and 2048 independently, and you must still maintain one of the supported aspect ratios. For example if the image for your [LandscapeImageMediaId](#landscapeimagemediaid) is 2592 in width, then the height must be 1357.
+> The maximum file size is 5 MB. The maximum width and height in pixels are 2592 and 2048 independently, and you must still maintain one of the supported aspect ratios. For example if the image asset with sub type LandscapeImageMedia is 2592 in width, then the height must be 1357. 
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

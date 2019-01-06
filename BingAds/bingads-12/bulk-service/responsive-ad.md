@@ -169,8 +169,8 @@ A brief, punchy reason for customers to click your ad right now.
 
 The possible values are AddToCart, ApplyNow, BookNow, BookTravel, Buy, BuyNow, ContactUs, Download, GetQuote, Install, LearnMore, NoButton, OpenLink, OrderNow, RegisterNow, SeeMore, ShopNow, SignUp, Subscribe, and VisitSite.
 
-**Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.     
+**Add:** Read-only. This element is reserved for future use.  
+**Update:** Read-only. This element is reserved for future use.     
 **Delete:** Read-only 
 
 ## <a name="campaign"></a>Campaign
@@ -307,23 +307,143 @@ The system generated identifier of the ad.
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
+
+## <a name="images"></a>Images
+Because audience ads are responsive, you can create multiple image assets with different sizes and aspect ratios so they can flexibly display across a variety of publishers and placements.
+
+You are only required to provide a landscape image asset i.e., this field must contain one image asset with [subType](#images-subtype) set to LandscapeImageMedia. The recommended dimensions for the LandscapeImageMedia are 1200 width x 628 height. Optionally you can include additional asset links, i.e., one image asset for each supported sub type. For any image asset sub types that you do not explicitly set, Bing Ads will automatically create image asset links by cropping the LandscapeImageMedia. 
+
+> [!NOTE]
+> If this field is set (not empty), then [Landscape Image Media Id](#landscapeimagemediaid) and [Square Image Media Id](#squareimagemediaid) are both ignored. 
+
+The image assets are represented in the bulk file as a JSON string. Seven images are included in the example JSON below, and only the LandscapeImageMedia `subType` is not cropped. The `id` is a property of the asset, whereas the `cropHeight`, `cropWidth`, `cropX`, `cropY`, and `subType` are properties of the asset link i.e., the relationship between the asset and the ad. For more details see [cropHeight](#images-cropheight), [cropWidth](#images-cropwidth), [cropX](#images-cropX), [cropY](#images-cropY), [id](#images-id), and [subType](#images-subtype) below.
+
+
+```json
+[{
+	"id": 1234567890000,
+	"subType": "LandscapeImageMedia"
+},
+{
+	"id": 1234567890000,
+	"subType": "SquareImageMedia",
+	"cropX": 286,
+	"cropY": 0,
+	"cropWidth": 628,
+	"cropHeight": 628
+},
+{
+	"id": 1234567890000,
+	"subType": "ImageMedia169X100",
+	"cropX": 70,
+	"cropY": 0,
+	"cropWidth": 1061,
+	"cropHeight": 628
+},
+{
+	"id": 1234567890000,
+	"subType": "ImageMedia93X100",
+	"cropX": 308,
+	"cropY": 0,
+	"cropWidth": 584,
+	"cropHeight": 628
+},
+{
+	"id": 1234567890000,
+	"subType": "ImageMedia15X10",
+	"cropX": 129,
+	"cropY": 0,
+	"cropWidth": 942,
+	"cropHeight": 628
+},
+{
+	"id": 1234567890000,
+	"subType": "ImageMedia155X100",
+	"cropX": 114,
+	"cropY": 0,
+	"cropWidth": 973,
+	"cropHeight": 628
+},
+{
+	"id": 1234567890000,
+	"subType": "ImageMedia133X100",
+	"cropX": 183,
+	"cropY": 0,
+	"cropWidth": 835,
+	"cropHeight": 628
+}]
+```
+
+> [!NOTE]
+> In the comma separated bulk file you'll need to surround the list of asset links, each attribute key, and each attribute string value with an extra set of double quotes e.g., the above JSON string would be written as *"[{""id"":7284264538233,""subType"":""LandscapeImageMedia""},{""id"":7284264538233,""subType"":""SquareImageMedia"",""cropX"":286,""cropY"":0,""cropWidth"":628,""cropHeight"":628},{""id"":7284264538233,""subType"":""ImageMedia169X100"",""cropX"":70,""cropY"":0,""cropWidth"":1061,""cropHeight"":628},{""id"":7284264538233,""subType"":""ImageMedia93X100"",""cropX"":308,""cropY"":0,""cropWidth"":584,""cropHeight"":628},{""id"":7284264538233,""subType"":""ImageMedia15X10"",""cropX"":129,""cropY"":0,""cropWidth"":942,""cropHeight"":628},{""id"":7284264538233,""subType"":""ImageMedia155X100"",""cropX"":114,""cropY"":0,""cropWidth"":973,""cropHeight"":628},{""id"":7284264538233,""subType"":""ImageMedia133X100"",""cropX"":183,""cropY"":0,""cropWidth"":835,""cropHeight"":628}]"*.  
+
+Given the upload response JSON example above, please take note of the following:
+- The same image asset identifier (e.g., 1234567890000) is used for all auto-generated image asset sub types. Whether or not you let Bing Ads automatically generate the cropped images, the [Id](#images-id) does not need to be unique among the image assets linked to the same ad. 
+- Because the ad in this example was created without crop settings for the LandscapeImageMedia image asset sub type, all image assets are cropped except for the original landscape image. 
+- Whether or not the landscape image has its own crop settings, Bing Ads uses the true height of the landscape image for all of the default crop settings. In this example the crop height for all system generated image assets is 628, and we can infer that the landscape image (LandscapeImageMedia sub type) with 1.91:1 aspect ratio has width and height of 1200x628. Even if the landscape image asset link had been created with crop settings e.g., 703x368, the crop settings of the auto-generated image assets are based on the full dimensions of the landscape image (again that would be 1200x628 in this example). 
+- Although in Bing Ads API version 12 you could use the [Landscape Image Media Id](#landscapeimagemediaid) and [Square Image Media Id](#squareimagemediaid), these fields are deprecated and will be removed in a future version. You have more flexibility and control of cropped images via the [Images](#images) field. 
+
+### <a name="images-cropheight"></a>cropHeight
+The number of pixels to use from the image asset source, starting from the cropY position and moving upwards.
+
+### <a name="images-cropwidth"></a>cropWidth
+The number of pixels to use from the image asset source, starting from the cropX position and moving to the right.
+
+### <a name="images-cropx"></a>cropX
+Starting from the lower left corner of image asset source, this is the number of pixels to skip to the right on the x-axis before applying the cropWidth.
+
+### <a name="images-cropy"></a>cropY
+Starting from the lower left corner of image asset source, this is the number of pixels to skip upwards on the y-axis before applying the cropHeight.
+
+### <a name="images-id"></a>id
+The `id` attribute is a unique Bing Ads identifier for the asset in a Bing Ads account. 
+
+The same image asset identifier can be used multiple times in the same ad for different aspect ratios, and can also be used by multiple ads in the same Bing Ads account. The identifier of image asset with [SubType](#subtype) set to LandscapeImageMedia is used for all auto-generated image asset sub types within the same ad. Whether or not you let Bing Ads automatically generate the cropped images, the [Id](#images-id) does not need to be unique among the image assets linked to the same ad.
+
+You can create media for responsive ads via the [AddMedia](../campaign-management-service/addmedia.md) service operation. Then you can use the returned media identifier as the image asset ID. The aspect ratio of the image that you added must be supported for the image asset [subType](#subtype).
+
+### <a name="images-subtype"></a>subType
+The `subType` attribute represents the aspect ratio for this image asset.
+
+The aspect ratio for the sub type must match the effective image asset dimensions. If [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth) are not used then the aspect ratio for the sub type must match the aspect ratio of the stored image media. If [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth) are used then the true aspect ratio of the media that is stored in the account level media library can differ, so long as [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth) result in the correct aspect ratio. In either case the true aspect ratio of the media that is stored in the account level media library will remain unchanged.
+
+The possible sub type values include LandscapeImageMedia, SquareImageMedia, ImageMedia169X100, ImageMedia93X100, ImageMedia15X10, ImageMedia155X100, and ImageMedia133X100. New sub types might be added in the future, so you should not take any dependency on a fixed set of values.
+
+|Sub Type|Minimum dimensions in pixels|
+|--------|--------|--------|
+|LandscapeImageMedia|703 width x 368 height<br/>Aspect radio 1.91:1|
+|SquareImageMedia|300 width x 300 height<br/>Aspect radio 1:1|
+|ImageMedia169X100|622 width x 368 height<br/>Aspect radio 1.69:1|
+|ImageMedia93X100|311 width x 333 height<br/>Aspect radio 0.93:1|
+|ImageMedia15X10|300 width x 200 height<br/>Aspect radio 1.5:1|
+|ImageMedia155X100|300 width x 194 height<br/>Aspect radio 1.55:1|
+|ImageMedia133X100|100 width x 75 height<br/>Aspect radio 1.33:1|
+
+> [!NOTE]
+> Media for responsive ads are provisioned via the [Image](../campaign-management-service/image.md) object using the [AddMedia](../campaign-management-service/addmedia.md) operation. You can use the GIF, JPEG, or PNG MIME types. Images with animation are not supported. Although you can only add media with a few aspect ratios via the [AddMedia](../campaign-management-service/addmedia.md) operation, you can use crop settings i.e., [cropHeight](#images-cropheight), [cropWidth](#images-cropwidth), [cropX](#images-cropX), and [cropY](#images-cropY) to determine the effective aspect ratio. The aspect ratio of the stored image would be unchanged in the account level media library.
+> 
+> The maximum file size is 5 MB. The maximum width and height in pixels are 2592 and 2048 independently, and you must still maintain one of the supported aspect ratios. For example if the image asset with sub type LandscapeImageMedia is 2592 in width, then the height must be 1357.
+
+**Add:** Required if [Landscape Image Media Id](#landscapeimagemediaid) is empty. Only the [id](#images-id) and [subType](#images-subtype) are required for each asset link. 
+**Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any images that were previously linked to this ad will be replaced. If you set this field, only the [id](#images-id) and [subType](#images-subtype) are required for each asset link.   
+**Delete:** Read-only  
+
 ## <a name="landscapeimagemediaid"></a>Landscape Image Media Id
-This is the identifier of the media corresponding to one of two possible aspect ratios for images that could appear in your audience ads.
+The identifier of the image asset used for landscape images with 1.91:1 aspect ratio that could appear in your audience ads.
 
-Because audience ads are responsive, we require multiple images so they can flexibly display across a variety of publishers and placements.
+The aspect ratio of the stored image media can vary, so long as the image asset crop settings result in the supported aspect ratio for this field. To confirm the effective aspect ratio with crop settings, use the [Images](#images) field.
 
-Wide or landscape images have an aspect ratio of 1.91:1. 
+> [!NOTE]
+> Although in Bing Ads API version 12 you can use the [Landscape Image Media Id](#landscapeimagemediaid) and [SquareImageMediaId](#squareimagemediaid), these fields are deprecated and will be removed in a future version. You have more flexibility and control of cropped images via the [Images](#images) field.
 
-Media for responsive ads are provisioned via the [Image](../campaign-management-service/image.md) object using the Campaign Management service. When you call the [AddMedia](../campaign-management-service/addmedia.md) operation, make sure that your media adheres to the supported dimensions and aspect ratio. For more information see [Image Data Object Remarks](../campaign-management-service/image.md#remarks).
-
-**Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
+**Add:** Required if [Images](#images) is not set. If [Images](#images) is set, this field is ignored. 
+**Update:** Optional. If [Images](#images) is set, this field is ignored. If no value is specified on update, this Bing Ads setting is not changed.     
 **Delete:** Read-only 
 
 ## <a name="landscapelogomediaid"></a>Landscape Logo Media Id
-This field is reserved for future use.
+This field is reserved for internal use, and will be removed from a future version of the Bing Ads API.
 
-**Add:** Required  
+**Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
 **Delete:** Read-only 
 
@@ -403,22 +523,21 @@ Possible values are *Active*, *Paused*, or *Deleted*.
 **Delete:** Required. The Status must be set to *Deleted*.
 
 ## <a name="squareimagemediaid"></a>Square Image Media Id
-This is one of two possible aspect ratios for images that could appear in your audience ads.
+The identifier of the image asset used for square images with 1:1 aspect ratio that could appear in your audience ads.
 
-Because audience ads are responsive, we require multiple images so they can flexibly display across a variety of publishers and placements.
+The aspect ratio of the stored image media can vary, so long as the image asset crop settings result in the supported aspect ratio for this field. To confirm the effective aspect ratio with crop settings, use the [Images](#images) field.
 
-Square images have an aspect ratio of 1:1. 
+> [!NOTE]
+> Although in Bing Ads API version 12 you can use the [Landscape Image Media Id](#landscapeimagemediaid) and [SquareImageMediaId](#squareimagemediaid), these fields are deprecated and will be removed in a future version. You have more flexibility and control of cropped images via the [Images](#images) field.
 
-Media for responsive ads are provisioned via the [Image](../campaign-management-service/image.md) object using the Campaign Management service. When you call the [AddMedia](../campaign-management-service/addmedia.md) operation, make sure that your media adheres to the supported dimensions and aspect ratio. For more information see [Image Data Object Remarks](../campaign-management-service/image.md#remarks).
-
-**Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
+**Add:** Optional. If [Images](#images) is set, this field is ignored and Bing Ads will automatically create a new square image asset by cropping the LandscapeImageMedia image asset. If [Images](#images) is not set, and if you do not set this field, Bing Ads will automatically create a new square image asset by cropping the [Landscape Image Media Id](#landscapeimagemediaid).  
+**Update:** Optional. If [Images](#images) is set, this field is ignored and Bing Ads will automatically create a new square image asset by cropping the LandscapeImageMedia image asset. If [Images](#images) is not set, and if you do not set this field, Bing Ads will automatically create a new square image asset by cropping the [Landscape Image Media Id](#landscapeimagemediaid). If no value is specified on update, this Bing Ads setting is not changed.     
 **Delete:** Read-only 
 
 ## <a name="squarelogomediaid"></a>Square Logo Media Id
-This field is reserved for future use.
+This field is reserved for internal use, and will be removed from a future version of the Bing Ads API.
 
-**Add:** Required  
+**Add:** Optional  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
 **Delete:** Read-only 
 

@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Setup Audience ads with the Bing Ads API.
 ---
 # Audience Ads
-Microsoft Audience Ads appear on the [Microsoft Audience Network](https://www.microsoftaudiencenetwork.com/). These ad placements are cross-device and include premium sites like MSN, Microsoft Outlook, Microsoft Edge, and other partners (with more to come). Clicks on these ads will take users to the landing page you specified when you created your ads.
+Microsoft Audience Ads appear on the [Microsoft Audience Network](https://advertise.bingads.microsoft.com/en-us/solutions/microsoft-audience-network). These ad placements are cross-device and include premium sites like MSN, Microsoft Outlook, Microsoft Edge, and other partners (with more to come). Clicks on these ads will take users to the landing page you specified when you created your ads.
 
 Microsoft Audience Ads is a native advertising solution optimized for search advertisers. This feature enables advertisers to get additional high-quality traffic from non-search placements. Microsoft Audience Ads experiences, such as ads placed within articles, are engaging for users, integrate naturally into page content, and deliver visually rich ads for advertisers. Microsoft Audience Ads campaigns are easy to set up, maintain, and optimize because they are fully integrated with existing Bing Ads workflows.
 
@@ -108,7 +108,7 @@ These are the Bing Ads entities with properties for managing Audience ads that c
 For example you can follow these steps to set up an image ad extension for audience ads.
 
 > [!NOTE]
-> You can use the [Bulk Service](../bulk-service/bulk-service-reference.md) for most steps, but you will still need to use the [Campaign Management Service](#campaignservice) to add media to your account's media library.
+> You can use the [Bulk Service](../bulk-service/bulk-service-reference.md) for most steps, but you will still need to use the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md) to add media to your account's media library.
 
 1. Add one to six [Image](../campaign-management-service/image.md) items to your account's media library with the [AddMedia](../campaign-management-service/addmedia.md) operation. 
    - The images must be one of the supported [Media](../campaign-management-service/media.md) types (aspect ratios) for an [Image Ad Extension](../bulk-service/image-ad-extension.md).
