@@ -172,6 +172,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Status](#status)|All|
 |[Store Id](#storeid)|Audience<br>Shopping|
 |[Sub Type](#subtype)|Shopping|
+|[Target Setting](#targetsetting)|All|
 |[Time Zone](#timezone)|All|
 |[Tracking Template](#trackingtemplate)|All|
 |[Website](#website)|DynamicSearchAds|
@@ -223,11 +224,9 @@ For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategie
 **Delete:** Read-only  
 
 ## <a name="bidstrategytype"></a>Bid Strategy Type
-The bid strategy type for how you want to manage your bids. For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
+The bid strategy type for how you want to manage your bids. A bid strategy type set at the [Ad Group](ad-group.md) or [Keyword](keyword.md) level will take precedence over the campaign level bid strategy type. 
 
-A bid strategy type set at the [Ad Group](ad-group.md) or [Keyword](keyword.md) level will take precedence over the campaign level bid strategy type. 
-
-For campaigns you can use any of the following bid strategy types. 
+For details about supported bid strategies per campaign type, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md). 
 * EnhancedCpc - Use the enhanced CPC bid strategy type to set your ad group and keyword bids, and Bing Ads will automatically adjust your bids in real time so that you bid up to 30% higher on users that are more likely to convert and up to 100% less on users less likely to convert. Bing Ads will still respect your campaign budget limit.  
 * ManualCpc - This is the default bid strategy type for your campaigns. Use the manual CPC bid strategy type if you will set your [Ad Group](ad-group.md) or [Keyword](keyword.md) bids, and Bing Ads will use these bids every time.  
 * MaxClicks - Defines an automated bidding strategy to maximize clicks given your maximum allowed budget.  
@@ -246,7 +245,7 @@ For campaigns you can use any of the following bid strategy types.
 > [!TIP] 
 > You can set your campaign's bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
 
-**Add:** Optional. The default for Audience and Shopping campaigns is Manual CPC. Until January 28th, 2019 if you do not set this field for Search and DynamicSearchAds campaigns, then Manual CPC is used by default. From January 28th, 2019 onwards if you do not set this field, then Enhanced CPC will be used by default for Search and DynamicSearchAds campaigns.
+**Add:** Optional. The only supported value for Audience campaigns is ManualCpc, and if you set any other value it will be ignored. The default value for Shopping campaigns is ManualCpc. Until January 28th, 2019 if you do not set this field for Search and DynamicSearchAds campaigns, then ManualCpc is used by default. From January 28th, 2019 onwards if you do not set this field, then EnhancedCpc will be used by default for Search and DynamicSearchAds campaigns.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc) and [Bid Strategy TargetCpa](#bidstrategytargetcpa) fields will be deleted.       
 **Delete:** Read-only  
 
@@ -382,7 +381,7 @@ The system generated identifier of the [Experiment](experiment.md).
 
 This field is only set for experiment campaigns i.e., campaigns that have been created for A/B testing based on another Search campaign. Base campaigns will not contain an experiment ID. Likewise, after an experiment has been [Graduated](experiment.md#status) to an independent campaign, this field will be empty, even though the campaign was previously an experiment campaign. 
 
-With experiment campaigns you cannot update the [Budget](campaign.md#budget), [Budget Type](campaign.md#budgettype), or [Time Zone](campaign.md#timezone). The budget and time zone of an experiment campaign are always inherited from the base campaign settings. If you want to change an experiment's budget, you will need to change the base campaign's budget. The change in value will then be split based on your experiment [TrafficSplitPercent](#trafficsplitpercent) setting.
+With experiment campaigns you cannot update the [Budget](#budget), [Budget Type](#budgettype), or [Time Zone](#timezone). The budget and time zone of an experiment campaign are always inherited from the base campaign settings. If you want to change an experiment's budget, you will need to change the base campaign's budget. The change in value will then be split based on your experiment [TrafficSplitPercent](experiment.md#trafficsplitpercent) setting.
 
 **Add:** Read-only  
 **Update:** Read-only  
@@ -530,7 +529,7 @@ Possible values are in the table below.
 |All|Use URLs from both Bing's index of my website and my page feed. Pages from both sources will be used but URLs within the feed file will be given priority.|
 |SystemIndex|Use Bing's index of my website. This is the default behavior of dynamic search ad campaigns on Bing.|
 
-**Add:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. By default only Bing's index is used i.e., an empty value is effectively the same as specifying *SystemIndex*. 
+**Add:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. By default only Bing's index is used i.e., an empty value is effectively the same as specifying *SystemIndex*.  
 **Update:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. If no value is specified on update, this Bing Ads setting is not changed.      
 **Delete:** Read-only  
 
@@ -546,7 +545,7 @@ Possible values for download and upload are Active, Paused, and Deleted. In addi
 |BudgetPaused|The campaign is paused, which indicates that the campaign's ads will not serve. The service sets this status when the budget is depleted. The service will set the status back to Active when the budget is restored.|
 |Deleted|The campaign is deleted. This status is for internal use only. Because all Get operations do not return deleted objects, you will not see an object with this status.|
 |Paused|The campaign is paused, which indicates that the campaign's ads will not serve.|
-|Suspended|Your campaign has been suspended because of suspicious activity, and no ads are eligible for delivery.<br/>Please contact [Bing Ads Support](http://go.microsoft.com/fwlink/?LinkId=269631).|
+|Suspended|Your campaign has been suspended because of suspicious activity, and no ads are eligible for delivery.<br/>Please contact [Bing Ads Support](https://go.microsoft.com/fwlink/?LinkId=269631).|
 
 **Add:** Optional. The default value is Active.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
@@ -574,6 +573,33 @@ When you download campaigns and if the [Campaign Type](#campaigntype) field is s
 
 **Add:** Optional and not applicable for most campaign types. For Cooperative campaigns you must set the sub type to *ShoppingCoOperative*.  
 **Update:** Read-only  
+**Delete:** Read-only  
+
+## <a name="targetsetting"></a>Target Setting
+The target settings that are applicable for criterion types e.g., audiences that are associated with this campaign. 
+
+> [!NOTE]
+> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+
+Include the criterion type group name in this field if you want the "target and bid" option. In this case we will only deliver ads to people who meet at least one of your criteria, while letting you make bid adjustments for specific criteria. 
+
+Exclude the criterion type group name from this field if you want the "bid only" option. In this case we will deliver ads to everyone who meets your other targeting criteria, while letting you make bid adjustments for specific criteria.
+
+Each criterion type group name is delimited in the Bulk file by a semicolon (";"). When you download the Bulk file, only the types that are setup to use the "target and bid" option will be included in this field.
+
+The only criterion type value currently supported for the campaign level target setting is "Audience". The "target and bid" option for the Audience criterion type is supported with all campaign types. New values may be supported in the future so you should not depend on a fixed set of values. Having said that, any possible values for this field should also be defined in the [CriterionTypeGroup](../campaign-management-service/criteriontypegroup.md) value set of the Campaign Management API. 
+
+> [!NOTE]
+> Do not confuse the Audience campaign type with the Audience criterion type group name. 
+
+|Criterion Type Group|Supported Campaigns|Description|
+|-----------------|---------------|---------------|
+|Audience|All|Include the Audience criterion type group name in this field if you want to show ads only to people included in the audience, with the option to change the bid amount. Ads in this campaign will only show to people included in the audience.<br/><br/>Exclude the Audience criterion type group name from this field if you want to show ads to people searching for your ad, with the option to change the bid amount for people included in the audience. Ads in this campaign can show to everyone but the bid adjustment will apply to people included in the audience.|
+
+An entity such as a remarketing list can be associated with multiple campaigns, and each campaign's target settings (e.g., the Audience criterion group name for remarketing lists) are applied independently for delivery. For example the same remarketing list can be associated with Campaign A and Campaign B. The Target Setting field for each campaign are set independently, and therefore the same remarketing list might be associated via the "target and bid" option for Campaign A while associated via the "bid only" option for Campaign B. 
+
+**Add:** Optional. If the criterion type group name is excluded from this field, then the default setting is effectively "bid only".  
+**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all criterion type group names, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of criterion type group names, specify the criterion type group names that you want to keep and omit any that you do not want to keep. The new set of criterion type group names will replace any previous criterion groups that were set for the campaign.    
 **Delete:** Read-only  
 
 ## <a name="timezone"></a>Time Zone

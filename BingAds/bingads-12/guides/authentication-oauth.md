@@ -169,10 +169,10 @@ For one time or short term authentication, you should follow the implicit grant 
 
 2. The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application to manage their Bing Ads accounts.
 
-3. The authorization service calls back to your application with the redirection URI, which includes an access token if the user authorized your application to manage their Bing Ads accounts. For example the callback URI includes an access token as follows if the user granted permissions for your application to manage their Bing Ads accounts: *https://login.live.com/oauth20_desktop.srf'vv=1550&lc=1033#access_token=ACCESS_TOKEN&state=ClientStateGoesHere*.
+3. The authorization service calls back to your application with the redirection URI, which includes an access token if the user authorized your application to manage their Bing Ads accounts. For example the callback URI includes an access token as follows if the user granted permissions for your application to manage their Bing Ads accounts: `https://login.live.com/oauth20_desktop.srf'vv=1550&lc=1033#access_token=ACCESS_TOKEN&state=ClientStateGoesHere`.
 
    > [!NOTE]
-   > If the user denied your application permissions to manage their Bing Ads accounts, the callback URI includes an error and error description field as follows: *https://login.live.com/oauth20_desktop.srf'vv=1550&lc=1033#error=ERROR&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere*.
+   > If the user denied your application permissions to manage their Bing Ads accounts, the callback URI includes an error and error description field as follows: `https://login.live.com/oauth20_desktop.srf'vv=1550&lc=1033#error=ERROR&error_description=ERROR_DESCRIPTION&state=ClientStateGoesHere`.
 
 4. Use the returned access token as the *AuthenticationToken* element within Bing Ads service [Service Request Header](get-started.md#where-to-use).
 

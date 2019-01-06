@@ -155,7 +155,6 @@ For an *Ad Group* record, the following attribute fields are available in the [B
 - [Parent Id](#parentid)
 - [Privacy Status](#privacystatus)
 - [Quality Score](#qualityscore)
-- [Search Network](#searchnetwork)
 - [Start Date](#startdate)
 - [Status](#status)
 - [Target Setting](#targetsetting)
@@ -380,7 +379,7 @@ The supported language strings for Search and Shopping campaigns are: Danish, Du
 
 For ad groups in Dynamic Search Ads campaigns, only English is supported.
 
-For ad groups in Audience campaigns, ad group level language is not supported, and you must set the [Language](campaign.md#language) field of the ad group's [Campaign](#campaign.md) to "All".
+For ad groups in Audience campaigns, ad group level language is not supported, and you must set the [Language](campaign.md#language) field of the ad group's campaign to "All".
 
 **Add:** Optional if the campaign has one or more languages set, and otherwise the language is required for most campaign types. You are not allowed to set this element for ad groups in Audience campaigns.  
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove the language and defer to the campaign level languages, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. The ad group language cannot be removed until campaign language updates have been processed, which could take up to 12 hours after the campaign languages have been set for the first time. The 12 hour wait time is expected to be removed during Q1 calendar year 2019, and you will then be able to remove ad groups immediately.   
@@ -409,7 +408,7 @@ The date and time that the entity was last updated. The value is in Coordinated 
 ## <a name="networkdistribution"></a>Network Distribution
 The search networks where you want your ads to display.
 
-Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly*, and *SyndicatedSearchOnly*. The default is *OwnedAndOperatedAndSyndicatedSearch*. For more information about networks and ad distribution, see the [About Ad Distribution](http://help.bingads.microsoft.com/#apex/3/en/50871/0) help article.
+Possible values are *OwnedAndOperatedAndSyndicatedSearch*, *OwnedAndOperatedOnly*, and *SyndicatedSearchOnly*. The default is *OwnedAndOperatedAndSyndicatedSearch*. For more information about networks and ad distribution, see the [About Ad Distribution](https://help.bingads.microsoft.com/#apex/3/en/50871/0) help article.
 
 For ad groups in Audience campaigns, ad group level network is not supported and this field will be empty. The ad groups are in the Microsoft Audience Network.
 
@@ -484,7 +483,7 @@ Exclude the criterion type group name from this field if you want the "bid only"
 
 Each criterion type group name is delimited in the Bulk file by a semicolon (";"), for example *Age;Audience;CompanyName;Gender;Industry;JobFunction*. When you download the Bulk file, only the types that are setup to use the "target and bid" option will be included in this field.
 
-If the [Campaign Type](campaign.md#campaigntype) is set to Audience, the supported values for this field are Age, Audience, CompanyName, Gender, Industry, and JobFunction. Otherwise the only value currently supported for other campaign types e.g., Search is Audience. New values may be supported in the future so you should not depend on a fixed set of values. Having said that, any possible values for this field should also be defined in the [CriterionTypeGroup](../campaign-management-service/criteriontypegroup.md) value set of the Campaign Management API. 
+If the [Campaign Type](campaign.md#campaigntype) is set to Audience, the supported values for this field are Age, Audience, CompanyName, Gender, Industry, and JobFunction. Otherwise the only value currently supported for other campaign types e.g., Search campaigns is "Audience". In other words, the "target and bid" option for the Audience criterion type is supported with all campaign types, whereas the "target and bid" option for Age, CompanyName, Gender, Industry, and JobFunction criterion groups is only supported with the Audience campaign type. New values may be supported in the future so you should not depend on a fixed set of values. Having said that, any possible values for this field should also be defined in the [CriterionTypeGroup](../campaign-management-service/criteriontypegroup.md) value set of the Campaign Management API. 
 
 > [!NOTE]
 > Do not confuse the Audience campaign type with the Audience criterion type group name. 

@@ -15,6 +15,8 @@ You can target customers by gender so that your ads are displayed more frequentl
 
 Each gender criterion defines a gender for the accompanying criterion bid adjustment. 
 
+If ad group level gender criterions are specified, the campaign level gender criterions are ignored for that ad group. In other words the ad group gender criterions override the campaign gender criterions, and are not applied as a union.
+
 > [!TIP]
 > For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
 

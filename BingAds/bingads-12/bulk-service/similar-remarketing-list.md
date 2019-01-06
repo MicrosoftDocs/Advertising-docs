@@ -12,9 +12,7 @@ dev_langs:
 Defines an audience that is similar to one of your remarketing lists.
 
 > [!NOTE]
-> Bulk upload is not supported. You cannot add, update, or delete a similar remarketing list using the Bing Ads API. Having said that, you can add and delete ad group similar remarketing list associations and exclusions via [Ad Group Similar Remarketing List Association](ad-group-similar-remarketing-list-association.md) and [Ad Group Negative Similar Remarketing List Association](ad-group-negative-similar-remarketing-list-association.md).
-> 
-> Bing Ads will automatically generate similar audiences for remarketing lists for pilot participants. You cannot create or edit the similar audience for a remarketing list. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with an ad group, then you cannot delete the source remarketing list. 
+> Bulk upload is not supported. Bing Ads will automatically generate similar audiences for remarketing lists if you are a pilot participant. You cannot create or edit the similar audience for a remarketing list. Having said that, you can add and delete similar remarketing list associations and exclusions. If you delete the source remarketing list, then the similar audience will also be deleted. If a similar audience is associated with a campaign or ad group, then you cannot delete the source remarketing list.
 
 > [!NOTE]
 > Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.

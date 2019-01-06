@@ -17,6 +17,8 @@ Each age criterion defines an age range for the accompanying criterion bid adjus
 
 The maximum number of age criterions that you can specify per campaign or ad group is five, i.e. one for each of the supported age ranges *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFourtyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*.
 
+If ad group level age criterions are specified, the campaign level age criterions are ignored for that ad group. In other words the ad group age criterions override the campaign age criterions, and are not applied as a union. 
+
 > [!TIP]
 > For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
 

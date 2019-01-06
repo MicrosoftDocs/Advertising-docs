@@ -20,6 +20,10 @@ The maximum number of radius criterions that you can specify per campaign or ad 
 > [!NOTE]
 > You can only have one [Ad Group Location Intent Criterion](ad-group-location-intent-criterion.md) record per ad group to determine the location intent option that applies for all of the ad group's [Ad Group Location Criterion](ad-group-location-criterion.md) and [Ad Group Radius Criterion](ad-group-radius-criterion.md) records. When you create the ad group's first criterion, an [Ad Group Location Intent Criterion](ad-group-location-intent-criterion.md) record will also be added automatically with the default *Target* set to *PeopleInOrSearchingForOrViewingPages*. You can add or update an ad group's [Ad Group Location Intent Criterion](ad-group-location-intent-criterion.md), whether or not the ad group has any other criterions. You cannot delete an ad group's [Ad Group Location Intent Criterion](ad-group-location-intent-criterion.md), although it has no purpose without location or radius criterions. 
 
+If ad group level radius criterions are specified, the campaign level radius criterions are ignored for that ad group. In other words the ad group radius criterions override the campaign radius criterions, and are not applied as a union.
+
+Also note that you must consider the location, negative location, and radius criterions as a set of *geo criterions*. If the ad group has any geo criterions, then none of the campaign's geo criterions are inherited. If the ad group doesn't have any geo criterions, then all of the campaign's geo criterions are inherited. The geo criterions can be inherited from the campaign even if the ad group has a location intent criterion. If the ad group's geo criterions are used, then the ad group's location intent criterion is used; if the campaign's geo criterions are inherited, then the campaign's location intent criterion is used and the ad group's location intent criterion is ignored. You cannot delete a campaign or ad group's location intent criterion, although it has no purpose without location or radius criterions. 
+
 > [!TIP]
 > For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
 
@@ -162,7 +166,7 @@ The latitude, in degrees, of the radius criterion.
 
 The latitude must be greater than or equal to -85.0 and less than or equal to +85.0.
 
-You specify the latitude and longitude as decimal values. For example, the latitude and longitude of One Redmond Way, Redmond, WA is 47.755367 and -122.091827, respectively. To get these values, you can enter the address of a geographical location into [Bing Maps](http://www.bing.com/maps/) and the coordinates will be displayed below the address.
+You specify the latitude and longitude as decimal values. For example, the latitude and longitude of One Redmond Way, Redmond, WA is 47.755367 and -122.091827, respectively. To get these values, you can enter the address of a geographical location into [Bing Maps](https://www.bing.com/maps/) and the coordinates will be displayed below the address.
 
 **Add:** Required  
 **Update:** Required  
@@ -173,7 +177,7 @@ The longitude, in degrees, of the radius criterion.
 
 The longitude must be greater than or equal to -180.0 and less than or equal to +180.0.
 
-You specify the latitude and longitude as decimal values. For example, the latitude and longitude of One Redmond Way, Redmond, WA is 47.755367 and -122.091827, respectively. To get these values, you can enter the address of a geographical location into [Bing Maps](http://www.bing.com/maps/) and the coordinates will be displayed below the address.
+You specify the latitude and longitude as decimal values. For example, the latitude and longitude of One Redmond Way, Redmond, WA is 47.755367 and -122.091827, respectively. To get these values, you can enter the address of a geographical location into [Bing Maps](https://www.bing.com/maps/) and the coordinates will be displayed below the address.
 
 **Add:** Required  
 **Update:** Required  

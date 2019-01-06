@@ -13,6 +13,8 @@ Defines an campaign industry criterion that can be uploaded and downloaded in a 
 
 You can target people in a specific industry according to LinkedIn by setting the [Profile Id](#profileid). 
 
+Bing Ads applies a union of both campaign and ad group level profile criterions. However, if you apply a criterion with the same profile ID e.g., target or exclude the same company name at both the campaign and ad group level, then the ad group level criterion will override the campaign level criterion. 
+
 > [!TIP]
 > For an overview of how to use target criterions, see [Show Ads to Your Target Audience](../guides/show-ads-target-audience.md).
 

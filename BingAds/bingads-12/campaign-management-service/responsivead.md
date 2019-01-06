@@ -50,14 +50,14 @@ Responsive ads automatically adjust to accommodate the sizes and shapes of audie
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="businessname"></a>BusinessName|The name of the business.<br/><br/>Depending on your audience ad's placement, your business's name may appear in your ad.<br/><br/>The length of the string is limited to 25 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
-|<a name="calltoaction"></a>CallToAction|A brief, punchy reason for customers to click your ad right now.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|[CallToAction](calltoaction.md)|
+|<a name="calltoaction"></a>CallToAction|A brief, punchy reason for customers to click your ad right now.<br/><br/>**Add:** Read-only. This element is reserved for future use.<br/>**Update:** Read-only. This element is reserved for future use.|[CallToAction](calltoaction.md)|
 |<a name="headline"></a>Headline|This is one of two possible headlines that could appear in your audience ads.<br/><br/>Because audience ads are responsive, we require multiple headlines so they can flexibly serve across a variety of publishers and placements.<br/><br/>The length of the string is limited to 25 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
-|<a name="images"></a>Images|Reserved.|[AssetLink](assetlink.md) array|
-|<a name="landscapeimagemediaid"></a>LandscapeImageMediaId|This is the identifier of the media corresponding to one of two possible aspect ratios for images that could appear in your audience ads.<br/><br/>Because audience ads are responsive, we require multiple images so they can flexibly display across a variety of publishers and placements.<br/><br/>Wide or landscape images have an aspect ratio of 1.91:1.<br/><br/>Media for responsive ads are provisioned via the [Image](image.md) object using the Campaign Management service. When you call the [AddMedia](addmedia.md) operation, make sure that your media adheres to the supported dimensions and aspect ratio. For more information see [Image Data Object Remarks](image.md#remarks).<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**long**|
-|<a name="landscapelogomediaid"></a>LandscapeLogoMediaId|This element is reserved for future use.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**long**|
+|<a name="images"></a>Images|Because audience ads are responsive, you can create multiple image assets with different sizes and aspect ratios so they can flexibly display across a variety of publishers and placements.<br/><br/>Include one or more [AssetLink](assetlink.md) objects that each contain an [ImageAsset](imageasset.md) with [SubType](imageasset.md#subtype) and crop settings that match the desired aspect ratio. If this element is set (not null), then [LandscapeImageMediaId](#landscapeimagemediaid) and [SquareImageMediaId](#squareimagemediaid) are both ignored. For more information see the [remarks](#remarks) below.<br/><br/>**Add:** Required if [LandscapeImageMediaId](#landscapeimagemediaid) is not set.<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|[AssetLink](assetlink.md) array|
+|<a name="landscapeimagemediaid"></a>LandscapeImageMediaId|The identifier of the image asset used for landscape images with 1.91:1 aspect ratio that could appear in your audience ads.<br/><br/>The aspect ratio of the stored image media can vary, so long as the image asset crop settings result in the supported aspect ratio for this element. To confirm the effective aspect ratio with crop settings, use the [Images](#images) element.<br/><br/>Although in Bing Ads API version 12 you can use the [LandscapeImageMediaId](#landscapeimagemediaid) and [SquareImageMediaId](#squareimagemediaid), these elements are deprecated and will be removed in a future version. You have more flexibility and control of cropped images via the [Images](#images) element.<br/><br/>**Add:** Required if [Images](#images) is not set. If [Images](#images) is set, this element is ignored.<br/>**Update:** Optional. If [Images](#images) is set, this element is ignored. If no value is specified on update, this Bing Ads setting is not changed.|**long**|
+|<a name="landscapelogomediaid"></a>LandscapeLogoMediaId|This element is reserved for internal use, and will be removed from a future version of the Bing Ads API.|**long**|
 |<a name="longheadline"></a>LongHeadline|This is one of two possible headlines that could appear in your audience ads.<br/><br/>Because audience ads are responsive, we require multiple headlines so they can flexibly serve across a variety of publishers and placements.<br/><br/>The length of the string is limited to 90 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
-|<a name="squareimagemediaid"></a>SquareImageMediaId|This is one of two possible aspect ratios for images that could appear in your audience ads.<br/><br/>Because audience ads are responsive, we require multiple images so they can flexibly display across a variety of publishers and placements.<br/><br/>Square images have an aspect ratio of 1:1.<br/><br/>Media for responsive ads are provisioned via the [Image](image.md) object using the Campaign Management service. When you call the [AddMedia](addmedia.md) operation, make sure that your media adheres to the supported dimensions and aspect ratio. For more information see [Image Data Object Remarks](image.md#remarks).<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**long**|
-|<a name="squarelogomediaid"></a>SquareLogoMediaId|This element is reserved for future use.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**long**|
+|<a name="squareimagemediaid"></a>SquareImageMediaId|The identifier of the image asset used for square images with 1:1 aspect ratio that could appear in your audience ads.<br/><br/>The aspect ratio of the stored image media can vary, so long as the image asset crop settings result in the supported aspect ratio for this element. To confirm the effective aspect ratio with crop settings, use the [Images](#images) element. If [Images](#images) is set (not null), then [LandscapeImageMediaId](#landscapeimagemediaid) and [SquareImageMediaId](#squareimagemediaid) are both ignored.<br/><br/>Although in Bing Ads API version 12 you can use the [LandscapeImageMediaId](#landscapeimagemediaid) and [SquareImageMediaId](#squareimagemediaid), these elements are deprecated and will be removed in a future version. You have more flexibility and control of cropped images via the [Images](#images) element.<br/><br/>**Add:** Optional. If [Images](#images) is set, this element is ignored. If you do not choose a square image asset for the ad, Bing Ads will automatically create a new square image asset by cropping the [LandscapeImageMediaId](#landscapeimagemediaid). For more information see the [remarks](#remarks) below.<br/>**Update:** Optional. If [Images](#images) is set, this element is ignored and Bing Ads will automatically create a new square image asset by cropping the LandscapeImageMedia image asset. If [Images](#images) is not set, and if you do not set this element, Bing Ads will automatically create a new square image asset by cropping the [LandscapeImageMediaId](#landscapeimagemediaid). If no value is specified on update, this Bing Ads setting is not changed.|**long**|
+|<a name="squarelogomediaid"></a>SquareLogoMediaId|This element is reserved for internal use, and will be removed from a future version of the Bing Ads API.|**long**|
 |<a name="text"></a>Text|Depending on your audience ad's placement, this text will appear below or adjacent to your ad's long or short headline.<br/><br/>You have more character space to work with in the ad text than in the headline. So once the imagery and headline have a potential customer's attention, the ad text needs to convince them to click it. What sets your product or service apart?<br/><br/>The text must contain at least one word.<br/><br/>The length of the string is limited to 90 characters.<br/><br/>The text cannot contain the newline (\n) character.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
 
 The [ResponsiveAd](responsivead.md) object has [Inherited Elements](#inheritedelements).
@@ -81,6 +81,181 @@ The [ResponsiveAd](responsivead.md) object derives from the [Ad](ad.md) object, 
 |<a name="trackingurltemplate"></a>TrackingUrlTemplate|The tracking template to use as a default for all landing page URLs.<br/><br/>The following validation rules apply to tracking templates. For more details about supported templates and parameters, see the Bing Ads help article [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2)<br/>- Tracking templates defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](../guides/entity-hierarchy-limits.md).<br/>- The length of the tracking template is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.<br/>- The tracking template must be a well-formed URL beginning with one of the following: *http://*, *https://*, *{lpurl}*, or *{unescapedlpurl}*.<br/>- Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}* and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.<br/><br/>**Add:** Optional<br/>**Update:** Optional|**string**|
 |<a name="type"></a>Type|The type of the ad. This value is *ResponsiveAd* when you retrieve a responsive ad. For more information about ad types, see the [Ad Data Object Remarks](ad.md#remarks).<br/><br/>**Add:** Read-only<br/>**Update:** Read-only|[AdType](adtype.md)|
 |<a name="urlcustomparameters"></a>UrlCustomParameters|Your custom collection of key and value parameters for URL tracking.<br/><br/>Bing Ads will accept the first 3 [CustomParameter](customparameter.md) objects that you include within the [CustomParameters](customparameters.md) object. Each [CustomParameter](customparameter.md) includes [Key](customparameter.md#key) and [Value](customparameter.md#value) elements.<br/><br/>On update, set the *UrlCustomParameters* element to null or empty to retain any existing custom parameters. To remove all custom parameters, set the *Parameters* element of the [CustomParameters](customparameters.md) object to null or empty. To remove a subset of custom parameters, specify the custom parameters that you want to keep in the *Parameters* element of the [CustomParameters](customparameters.md) object.<br/><br/>**Add:** Optional<br/>**Update:** Optional|[CustomParameters](customparameters.md)|
+
+
+## <a name="remarks"></a>Remarks
+Because audience ads are responsive, you can create multiple image assets with different sizes and aspect ratios so they can flexibly display across a variety of publishers and placements. In the [Images](#images) element include one or more [AssetLink](assetlink.md) objects that each contain an [ImageAsset](imageasset.md) with [SubType](imageasset.md#subtype) set to one of the string values in the table below.
+
+|Sub Type|Minimum dimensions in pixels|
+|--------|--------|--------|
+|LandscapeImageMedia|703 width x 368 height<br/>Aspect radio 1.91:1|
+|SquareImageMedia|300 width x 300 height<br/>Aspect radio 1:1|
+|ImageMedia169X100|622 width x 368 height<br/>Aspect radio 1.69:1|
+|ImageMedia93X100|311 width x 333 height<br/>Aspect radio 0.93:1|
+|ImageMedia15X10|300 width x 200 height<br/>Aspect radio 1.5:1|
+|ImageMedia155X100|300 width x 194 height<br/>Aspect radio 1.55:1|
+|ImageMedia133X100|100 width x 75 height<br/>Aspect radio 1.33:1|
+
+> [!NOTE]
+> Media for responsive ads are provisioned via the [Image](image.md) object using the [AddMedia](addmedia.md) operation. You can use the GIF, JPEG, or PNG MIME types. Images with animation are not supported. Although you can only add media with a few aspect ratios via the [AddMedia](addmedia.md) operation, you can use [ImageAsset](imageasset.md) crop settings to determine the effective aspect ratio in the context of each responsive ad [AssetLink](assetlink.md). The aspect ratio of the stored image would be unchanged in the account level media library.
+> 
+> The maximum file size is 5 MB. The maximum width and height in pixels are 2592 and 2048 independently, and you must still maintain one of the supported aspect ratios. For example if the image asset with sub type LandscapeImageMedia is 2592 in width, then the height must be 1357.
+
+You are only required to provide a landscape image asset. In the [Images](#images) element include an [AssetLink](assetlink.md) that contains one [ImageAsset](imageasset.md) with [SubType](imageasset.md#subtype) set to LandscapeImageMedia. The recommended dimensions for the LandscapeImageMedia are 1200 width x 628 height. Optionally you can include additional asset links, i.e., one image asset for each supported sub type. For any image asset sub types that you do not explicitly set, Bing Ads will automatically create image asset links by cropping the LandscapeImageMedia. 
+
+Given the [GetAdsByAdGroupId](getadsbyadgroupid.md) response example below, please take note of the following:
+- The same image asset identifier (e.g., 1234567890000) is used for all auto-generated image asset sub types. Whether or not you let Bing Ads automatically generate the cropped images, the [Id](imageasset.md#id) does not need to be unique among the image assets linked to the same ad. 
+- Because the ad in this example was created without crop settings for the LandscapeImageMedia image asset sub type, all image assets are cropped except for the original landscape image. 
+- Whether or not the landscape image has its own crop settings, Bing Ads uses the true height of the landscape image for all of the default crop settings. In this example the crop height for all system generated image assets is 628, and we can infer that the landscape image (LandscapeImageMedia sub type) with 1.91:1 aspect ratio has width and height of 1200x628. Even if the landscape image asset link had been created with crop settings e.g., 703x368, the crop settings of the auto-generated image assets are based on the full dimensions of the landscape image (again that would be 1200x628 in this example). 
+- Although in Bing Ads API version 12 you could use the [LandscapeImageMediaId](#landscapeimagemediaid) and [SquareImageMediaId](#squareimagemediaid), these elements are deprecated and will be removed in a future version. You have more flexibility and control of cropped images via the [Images](#images) element. 
+
+```xml
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+	<s:Header>
+		<h:TrackingId xmlns:h="https://bingads.microsoft.com/CampaignManagement/v12">3acf4989-d6a3-405f-9fd1-a2e8dd1b09f8</h:TrackingId>
+	</s:Header>
+	<s:Body>
+		<GetAdsByAdGroupIdResponse xmlns="https://bingads.microsoft.com/CampaignManagement/v12">
+			<Ads xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+				<Ad i:type="ResponsiveAd">
+					<AdFormatPreference i:nil="true"/>
+					<DevicePreference>0</DevicePreference>
+					<EditorialStatus>Inactive</EditorialStatus>
+					<FinalAppUrls i:nil="true"/>
+					<FinalMobileUrls xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>http://mobile.contoso.com/womenshoesale</a:string>
+					</FinalMobileUrls>
+					<FinalUrls xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+						<a:string>http://www.contoso.com/womenshoesale</a:string>
+					</FinalUrls>
+					<ForwardCompatibilityMap xmlns:a="http://schemas.datacontract.org/2004/07/System.Collections.Generic"/>
+					<Id>9876543210000</Id>
+					<Status>Active</Status>
+					<TrackingUrlTemplate i:nil="true"/>
+					<Type>ResponsiveAd</Type>
+					<UrlCustomParameters i:nil="true"/>
+					<BusinessName>Contoso</BusinessName>
+					<CallToAction>AddToCart</CallToAction>
+					<Headline>Fast &amp; Easy Setup</Headline>
+					<Images>
+						<AssetLink>
+							<Asset i:type="ImageAsset">
+								<Id>1234567890000</Id>
+								<Name i:nil="true"/>
+								<Type>ImageAsset</Type>
+								<CropHeight i:nil="true"/>
+								<CropWidth i:nil="true"/>
+								<CropX i:nil="true"/>
+								<CropY i:nil="true"/>
+								<SubType>LandscapeImageMedia</SubType>
+							</Asset>
+							<AssetPerformanceLabel i:nil="true"/>
+							<EditorialStatus i:nil="true"/>
+							<PinnedField i:nil="true"/>
+						</AssetLink>
+						<AssetLink>
+							<Asset i:type="ImageAsset">
+								<Id>1234567890000</Id>
+								<Name i:nil="true"/>
+								<Type>ImageAsset</Type>
+								<CropHeight>628</CropHeight>
+								<CropWidth>628</CropWidth>
+								<CropX>286</CropX>
+								<CropY>0</CropY>
+								<SubType>SquareImageMedia</SubType>
+							</Asset>
+							<AssetPerformanceLabel i:nil="true"/>
+							<EditorialStatus i:nil="true"/>
+							<PinnedField i:nil="true"/>
+						</AssetLink>
+						<AssetLink>
+							<Asset i:type="ImageAsset">
+								<Id>1234567890000</Id>
+								<Name i:nil="true"/>
+								<Type>ImageAsset</Type>
+								<CropHeight>628</CropHeight>
+								<CropWidth>1061</CropWidth>
+								<CropX>70</CropX>
+								<CropY>0</CropY>
+								<SubType>ImageMedia169X100</SubType>
+							</Asset>
+							<AssetPerformanceLabel i:nil="true"/>
+							<EditorialStatus i:nil="true"/>
+							<PinnedField i:nil="true"/>
+						</AssetLink>
+						<AssetLink>
+							<Asset i:type="ImageAsset">
+								<Id>1234567890000</Id>
+								<Name i:nil="true"/>
+								<Type>ImageAsset</Type>
+								<CropHeight>628</CropHeight>
+								<CropWidth>584</CropWidth>
+								<CropX>308</CropX>
+								<CropY>0</CropY>
+								<SubType>ImageMedia93X100</SubType>
+							</Asset>
+							<AssetPerformanceLabel i:nil="true"/>
+							<EditorialStatus i:nil="true"/>
+							<PinnedField i:nil="true"/>
+						</AssetLink>
+						<AssetLink>
+							<Asset i:type="ImageAsset">
+								<Id>1234567890000</Id>
+								<Name i:nil="true"/>
+								<Type>ImageAsset</Type>
+								<CropHeight>628</CropHeight>
+								<CropWidth>942</CropWidth>
+								<CropX>129</CropX>
+								<CropY>0</CropY>
+								<SubType>ImageMedia15X10</SubType>
+							</Asset>
+							<AssetPerformanceLabel i:nil="true"/>
+							<EditorialStatus i:nil="true"/>
+							<PinnedField i:nil="true"/>
+						</AssetLink>
+						<AssetLink>
+							<Asset i:type="ImageAsset">
+								<Id>1234567890000</Id>
+								<Name i:nil="true"/>
+								<Type>ImageAsset</Type>
+								<CropHeight>628</CropHeight>
+								<CropWidth>973</CropWidth>
+								<CropX>114</CropX>
+								<CropY>0</CropY>
+								<SubType>ImageMedia155X100</SubType>
+							</Asset>
+							<AssetPerformanceLabel i:nil="true"/>
+							<EditorialStatus i:nil="true"/>
+							<PinnedField i:nil="true"/>
+						</AssetLink>
+						<AssetLink>
+							<Asset i:type="ImageAsset">
+								<Id>1234567890000</Id>
+								<Name i:nil="true"/>
+								<Type>ImageAsset</Type>
+								<CropHeight>628</CropHeight>
+								<CropWidth>835</CropWidth>
+								<CropX>183</CropX>
+								<CropY>0</CropY>
+								<SubType>ImageMedia133X100</SubType>
+							</Asset>
+							<AssetPerformanceLabel i:nil="true"/>
+							<EditorialStatus i:nil="true"/>
+							<PinnedField i:nil="true"/>
+						</AssetLink>
+					</Images>
+					<LandscapeImageMediaId>1234567890000</LandscapeImageMediaId>
+					<LandscapeLogoMediaId i:nil="true"/>
+					<LongHeadline>Find New Customers &amp; Increase Sales!</LongHeadline>
+					<SquareImageMediaId>1234567890000</SquareImageMediaId>
+					<SquareLogoMediaId i:nil="true"/>
+					<Text>Find New Customers &amp; Increase Sales! Start Advertising on Contoso Today.</Text>
+				</Ad>
+			</Ads>
+		</GetAdsByAdGroupIdResponse>
+	</s:Body>
+</s:Envelope>
+```
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

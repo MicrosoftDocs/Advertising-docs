@@ -70,7 +70,7 @@ Available fault and data objects vary per service. This table describes the faul
 |Reporting|All reporting operations may throw *AdApiFaultDetail* and *ApiFaultDetail*.|
 
 > [!NOTE]
-> All fault objects are derived from the *ApplicationFault* object. The *ApplicationFault* object defines the *TrackingId* element, which uniquely identifies the log entry that contains the details of the API call. If you need to [contact support](http://go.microsoft.com/fwlink/?LinkId=517018), please provide the tracking ID with the date and time when you called the service operation. 
+> All fault objects are derived from the *ApplicationFault* object. The *ApplicationFault* object defines the *TrackingId* element, which uniquely identifies the log entry that contains the details of the API call. If you need to [contact support](https://go.microsoft.com/fwlink/?LinkId=517018), please provide the tracking ID with the date and time when you called the service operation. 
 
 ## <a name="partial-success"></a>Partial Success
 Partial success means that when adding, updating, or deleting entities in batches of one or more, the operation may succeed for some and fail for part of the batch. 
@@ -117,7 +117,7 @@ ReportingOperationCouldNotBeCompletedException     |Microsoft.BingAds.V12.Report
 ReportingOperationInProgressException     |Microsoft.BingAds.V12.Reporting         |This exception is thrown if an attempt was made to download a reporting results file that is not yet available. 
 
 ### <a name="net-troubleshooting"></a>.NET SDK Troubleshooting
-Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](http://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
+Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
 
 #### <a name="net-troubleshooting-fiddler"></a>Fiddler Options
 You can follow these steps to capture the SOAP envelopes from a .NET application using a third-party tool such as [Fiddler](http://fiddler2.com/get-fiddler). 
@@ -153,7 +153,7 @@ ReportingOperationCouldNotBeCompletedException     |com.microsoft.bingads.V12.re
 ReportingOperationInProgressException     |com.microsoft.bingads.V12.reporting         |This exception is thrown if an attempt was made to download a reporting results file that is not yet available. 
 
 ### <a name="java-troubleshooting"></a>Java SDK Troubleshooting
-Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](http://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
+Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
 
 #### <a name="java-troubleshooting-httptransportpipe"></a>HttpTransportPipe
 To output the HTTP trace you can set the HttpTransportPipe *dump* property to "true" (string) as follows:
@@ -222,7 +222,7 @@ If you use the Bing Ads PHP [SDK](client-libraries.md), your application should 
 For troubleshooting PHP applications, see [PHP SDK Troubleshooting](#php-troubleshooting).
 
 ### <a name="php-troubleshooting"></a>PHP SDK Troubleshooting
-Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](http://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
+Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
 
 #### <a name="php-troubleshooting-print"></a>Print SOAP
 In PHP you can use the following methods to print the SOAP envelopes. Each of the PHP code examples include these statements to print the errors to the console. 
@@ -261,7 +261,7 @@ SdkException      |BingAds         |The base exception class for the Bing Ads Py
 TimeoutException      |BingAds         |This exception is thrown if timeout occurs.
      
 ### <a name="python-troubleshooting"></a>Python SDK Troubleshooting
-Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](http://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
+Unless there is a [known service issue](https://developers.bingads.microsoft.com/Support), typically when a call fails it is because the SOAP elements are invalid, out of order, or you specified the wrong credentials. To verify both cases, you should capture the request SOAP envelope. You can [contact support](https://go.microsoft.com/fwlink/?LinkId=517018) or compare your capture to the corresponding SOAP example documented for each service operation. 
 
 #### <a name="python-troubleshooting-logging"></a>Logging
 If you are using the Bing Ads Python SDK you can include logging to output traffic, for example the SOAP request and response. Each of the Python code examples include these statements to print the output all SOAP traffic to the console. Be sure to uncomment them if you want to view the traffic.

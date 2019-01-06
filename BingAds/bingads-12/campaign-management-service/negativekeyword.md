@@ -16,7 +16,7 @@ Negative keywords can also be added and deleted from a shared negative keyword l
 > [!NOTE]
 > The same negative keyword and match type can be added to all campaigns, ad groups, and negative keyword lists if you choose. Each instance must be added and associated individually and would be assigned a unique negative keyword identifier.
 
-For more information about managing negative keywords and negative keyword lists, please see the technical guide about [Negative Keywords](http://go.microsoft.com/fwlink/?LinkID=691225).
+For more information about managing negative keywords and negative keyword lists, please see the technical guide about [Negative Keywords](https://go.microsoft.com/fwlink/?LinkID=691225).
 
 ## Syntax
 ```xml

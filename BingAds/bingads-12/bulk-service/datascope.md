@@ -29,10 +29,10 @@ Defines the scope or types of data to download.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="bidsuggestionsdata"></a>BidSuggestionsData|Download the bid suggestions records.|
-|<a name="entitydata"></a>EntityData|Download the entity attributes records.|
+|<a name="bidsuggestionsdata"></a>BidSuggestionsData|Download the keyword bid suggestion records.|
+|<a name="entitydata"></a>EntityData|Download entity records e.g., campaigns and ad groups.|
 |<a name="entityperformancedata"></a>EntityPerformanceData|This value is not supported in Bing Ads API Version 12, and will be removed in a future version. If you want data aggregated by day, week, or month, you can use the Bing Ads Reporting API. For more details see [Reports](../guides/reports.md).|
-|<a name="qualityscoredata"></a>QualityScoreData|Download the quality score fields for the corresponding entity records.|
+|<a name="qualityscoredata"></a>QualityScoreData|Download the quality score fields i.e., Quality Score, Keyword Relevance, Landing Page Relevance, and Landing Page User Experience in the [Ad Group](#ad-group.md), [Campaign](#campaign.md), and [Keyword](#keyword.md) records.|
 
 ## Requirements
 Service: [BulkService.svc v12](https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/BulkService.svc)  

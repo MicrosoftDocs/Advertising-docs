@@ -249,7 +249,7 @@ Unless you pin one of the descriptions to a specific position, Bing will optimiz
 
 From a data model perspective the descriptions are stored as text assets. The same asset can be used by multiple ads. For example if "Seamless Integration" is a text asset, it will have the same asset identifier across all ads in the same Bing Ads account. 
 
-You must set between 2-4 descriptions. Each description is represented in the bulk file as a JSON string. Two descriptions are included in the example JSON below, and the first is pinned to a specific position. The `id` and `text` are properties of the asset, whereas the `editorialStatus` and `pinnedField` are properties of the asset link i.e., the relationship between the asset and the ad. For more details see [editorialStatus](#description-editorialstatus), [id](#description-id), [pinnedField](#description-pinnedfield), and [text](#description-text) below.
+You must set between 2-4 descriptions. The descriptions are represented in the bulk file as a JSON string. Two descriptions are included in the example JSON below, and the first is pinned to a specific position. The `id` and `text` are properties of the asset, whereas the `editorialStatus` and `pinnedField` are properties of the asset link i.e., the relationship between the asset and the ad. For more details see [editorialStatus](#description-editorialstatus), [id](#description-id), [pinnedField](#description-pinnedfield), and [text](#description-text) below.
 
 ```json
 [{
@@ -262,7 +262,7 @@ You must set between 2-4 descriptions. Each description is represented in the bu
 ```
 
 > [!NOTE]
-> In the comma separated bulk file you'll need to surround the list of asset links and each attribute with an extra set of double quotes e.g., the above JSON string would be written as *"[{""text"":""Find New Customers & Increase Sales!"",""pinnedField"":""Description1""},{""text"":""Start Advertising on Contoso Today.""}]"*. 
+> In the comma separated bulk file you'll need to surround the list of asset links, each attribute key, and each attribute string value with an extra set of double quotes e.g., the above JSON string would be written as *"[{""text"":""Find New Customers & Increase Sales!"",""pinnedField"":""Description1""},{""text"":""Start Advertising on Contoso Today.""}]"*. 
 
 Here's an example Bulk download where you'll also get read-only attributes e.g., `id` and `editorialStatus`: 
 
@@ -304,7 +304,7 @@ At least one eligible text asset must be available for each description position
 When you download an asset that is not pinned, the `pinnedField` attribute is not returned.
 
 ### <a name="description-text"></a>text
-Each description's `text` attribute must contain at least one word. For efficient use of resources we recommend that you use dynamic text strings such as {keyword} instead of creating new ad copy for each keyword. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](http://help.bingads.microsoft.com/#apex/3/en/50811/1).
+Each description's `text` attribute must contain at least one word. For efficient use of resources we recommend that you use dynamic text strings such as {keyword} instead of creating new ad copy for each keyword. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](https://help.bingads.microsoft.com/#apex/3/en/50811/1).
 
 The `text` attribute can contain a countdown function. Regardless of the total length of all unsubstituted countdown parameters, the final displayed countdown will always use 8 characters out of the total characters available. For more details see [Countdown Customizers](../guides/countdown-customizers.md).
 
@@ -416,7 +416,7 @@ Unless you pin one of the headlines to a specific position, Bing will optimize t
 
 From a data model perspective the headlines are stored as text assets. The same asset can be used by multiple ads. For example if "Seamless Integration" is a text asset, it will have the same asset identifier across all ads in the same Bing Ads account. 
 
-You must set between 3-15 headlines. Each headline is represented in the bulk file as a JSON string. Three headlines are included in the example JSON below, and only the first headline is pinned to specific position. The `id` and `text` are properties of the asset, whereas the `editorialStatus` and `pinnedField` are properties of the asset link i.e., the relationship between the asset and the ad. For more details see [editorialStatus](#headline-editorialstatus), [id](#headline-id), [pinnedField](#headline-pinnedfield), and [text](#headline-text) below.
+You must set between 3-15 headlines. The headlines are represented in the bulk file as a JSON string. Three headlines are included in the example JSON below, and only the first headline is pinned to specific position. The `id` and `text` are properties of the asset, whereas the `editorialStatus` and `pinnedField` are properties of the asset link i.e., the relationship between the asset and the ad. For more details see [editorialStatus](#headline-editorialstatus), [id](#headline-id), [pinnedField](#headline-pinnedfield), and [text](#headline-text) below.
 
 ```json
 [{
@@ -432,7 +432,7 @@ You must set between 3-15 headlines. Each headline is represented in the bulk fi
 ```
 
 > [!NOTE]
-> In the comma separated bulk file you'll need to surround the list of asset links and each attribute with an extra set of double quotes e.g., the above JSON string would be written as *"[{""text"":""Contoso"",""pinnedField"":""Headline1""},{""text"":""Quick & Easy Setup""},{""text"":""Seamless Integration""}]"*.
+> In the comma separated bulk file you'll need to surround the list of asset links, each attribute key, and each attribute string value with an extra set of double quotes e.g., the above JSON string would be written as *"[{""text"":""Contoso"",""pinnedField"":""Headline1""},{""text"":""Quick & Easy Setup""},{""text"":""Seamless Integration""}]"*.
 
 Here's an example Bulk download where you'll also get read-only attributes e.g., `id` and `editorialStatus`: 
 
@@ -479,7 +479,7 @@ At least one eligible text asset must be available for each headline position, s
 When you download an asset that is not pinned, the `pinnedField` attribute is not returned.
 
 ### <a name="headline-text"></a>text
-Each headline's `text` attribute must contain at least one word. For efficient use of resources we recommend that you use dynamic text strings such as {keyword} instead of creating new ad copy for each keyword. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](http://help.bingads.microsoft.com/#apex/3/en/50811/1).
+Each headline's `text` attribute must contain at least one word. For efficient use of resources we recommend that you use dynamic text strings such as {keyword} instead of creating new ad copy for each keyword. For more information, see the Bing Ads help article [Automatically customize your ads with dynamic text parameters](https://help.bingads.microsoft.com/#apex/3/en/50811/1).
 
 The `text` attribute can contain a countdown function. Regardless of the total length of all unsubstituted countdown parameters, the final displayed countdown will always use 8 characters out of the total characters available. For more details see [Countdown Customizers](../guides/countdown-customizers.md).
 

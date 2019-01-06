@@ -12,7 +12,7 @@ dev_langs:
 Defines an in-market audience that can be downloaded in a bulk file. 
 
 > [!NOTE]
-> Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API. Having said that, you can add and delete ad group in-market audience associations and exclusions via [Ad Group In Market Audience Association](ad-group-in-market-audience-association.md) and [Ad Group Negative In Market Audience Association](ad-group-negative-in-market-audience-association.md).
+> Bulk upload is not supported. You cannot add, update, or delete an in-market audience using the Bing Ads API. Having said that, you can add and delete in-market audience associations and exclusions.
 
 > [!NOTE]
 > This feature is available only in the United States.
