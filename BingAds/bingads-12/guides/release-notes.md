@@ -9,6 +9,14 @@ description: Get information about the changes to the Bing Ads services for each
 # Bing Ads API Release Notes
 For information about the changes to the Bing Ads Version 12 services for each month, see the following sections. 
 
+## <a name="january2019"></a>January 2019
+See below for Bing Ads service updates during this calendar month. 
+ 
+- [Bing Ads Software Development Kit (SDK) Updates](#sdk-january2019)  
+
+### <a name="sdk-january2019"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.3), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.3), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.3), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.3) SDK version 12.0.3. 
+
 ## <a name="december2018"></a>December 2018
 See below for Bing Ads service updates during this calendar month. 
  
