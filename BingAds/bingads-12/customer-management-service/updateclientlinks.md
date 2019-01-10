@@ -20,11 +20,10 @@ If your user is within a client customer that has one or more accounts managed o
 
 The role of the user calling this operation must be Super Admin. For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).
 
-There is no set limit to the amount of client accounts that can be linked to an agency.
-
+There is no set limit to the amount of client accounts that can be linked to an agency.  
 
 > [!NOTE]
->This feature is not supported in sandbox.
+> This feature is not supported in sandbox.
 
 ## <a name="request"></a>Request Elements
 The *UpdateClientLinksRequest* object defines the [body](#request-body) and [header](#request-header) elements of the service operation request. The elements must be in the same order as shown in the [Request SOAP](#request-soap). 

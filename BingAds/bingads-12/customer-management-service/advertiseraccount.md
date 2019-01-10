@@ -80,7 +80,7 @@ The following is the list of keys that are available for the *TaxInformation* el
 
 |TaxInformation Key|Description|Countries|
 |---------|---------|---------|
-|CCM|The municipal registration number, or Cadastro de contribuinte mobiliario (CCM), of the legal entity.<br/><br/>**Add:** Required for business accounts if the [BusinessAddress](#businessaddress) is within Sao Paulo, Brazil (effective 31 January 2019). The CCM is not applicable for businesses in other locations.<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|Brazil|
+|CCM|The municipal registration number, or Cadastro de contribuinte mobiliário (CCM), of the legal entity.<br/><br/>**Add:** Required for business accounts if the [BusinessAddress](#businessaddress) is within the city of Sao Paulo, Brazil (effective 31 January 2019). The CCM is not applicable for businesses in other locations.<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|Brazil|
 |GSTINNumber|This ID starts with two numbers representing the state code in which the business is registered followed by a maximum of 13 numbers and letters.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|India|
 |NZGSTNumber|This is an 8 or 9 Digit long tax ID. Without the NZGSTNumber taxes might apply based on your business location.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|New Zealand|
 |PanNumber|The PAN number.<br/><br/>**Add:** Required<br/>**Update:** Read-only|India|
