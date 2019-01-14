@@ -76,7 +76,7 @@ Defines an advertiser account.
 
 ## <a name="remarks"></a>Remarks
 ### <a name="taxinformation"></a>AdvertiserAccount TaxInformation
-The following is the list of keys that are available for the *TaxInformation* element of an *AdvertiserAccount*.  
+The following is the list of keys that are available for the [TaxInformation](#taxinformation) element of an *AdvertiserAccount*.  
 
 |TaxInformation Key|Description|Countries|
 |---------|---------|---------|
@@ -84,7 +84,7 @@ The following is the list of keys that are available for the *TaxInformation* el
 |GSTINNumber|This ID starts with two numbers representing the state code in which the business is registered followed by a maximum of 13 numbers and letters.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|India|
 |NZGSTNumber|This is an 8 or 9 Digit long tax ID. Without the NZGSTNumber taxes might apply based on your business location.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|New Zealand|
 |PanNumber|The PAN number.<br/><br/>**Add:** Required<br/>**Update:** Read-only|India|
-|TaxId|The account's tax identifier. The tax identifier must be valid in the country that you specified in the [BusinessAddress](#businessaddress) element. Without a tax identifier, taxes might apply based on your business location.<br/><br/>**Add:** Required<br/>**Update:** Read-only|Brazil, Australia, Taiwan|
+|TaxId|The account's tax identifier. The tax identifier must be valid in the country that you specified in the [BusinessAddress](#businessaddress) element. Without a tax identifier, taxes might apply based on your business location.<br/><br/>**Add:** Required<br/>**Update:** Read-only|Brazil, Australia|
 |TaxType|You can indicate the type of tax. Possible values are Business and Personal.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|All|
 |VATNumber|The account's Value Added Tax (VAT) registration number (also known as VAT identifier). This number starts with 2 letters that are specific to each country/region, followed by a maximum of 12 numbers or letters. The VAT number must be valid in the country that you specified in the [BusinessAddress](#businessaddress) element. Without a VAT registration number or exemption certificate, taxes might apply based on your business location.<br/><br/>**Add:** Optional<br/>**Update:** Read-only|Austria, Belgium, Bulgaria, Cyprus, Czech Republic, Germany, Denmark, Estonia, Greece, Spain, Finland, France, United Kingdom, Croatia, Hungary, Ireland, Italy, Lithuania, Luxembourg, Latvia, Malta, The Netherlands, Poland, Portugal, Romania, Sweden, Slovenia, Slovakia|
 
