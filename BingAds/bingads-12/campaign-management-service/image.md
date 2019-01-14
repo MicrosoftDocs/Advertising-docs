@@ -75,7 +75,7 @@ The following restrictions apply to [Media](media.md) types (aspect ratios) that
 |Image1x1|**Minimum:** 128 width x 128 height<br/>**Maximum:** Aspect radio 1:1 up to the maximum file size of 5MB.<br/>**Recommended:** 1200 width x 1200 height|
 
 > [!NOTE]
-> The maximum file size is 5 MB. The maximum width and height in pixels are 2592 and 2048 independently, and you must still maintain one of the supported aspect ratios. For example if the image asset with sub type LandscapeImageMedia is 2592 in width, then the height must be 1357. 
+> The maximum file size is 5 MB. The maximum width and height in pixels are 2592 and 2048 independently, and you must still maintain one of the supported aspect ratios. For example if the image asset with sub type LandscapeImageMedia is 2592 in width, then the height must be 1357.
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

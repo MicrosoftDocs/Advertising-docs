@@ -48,7 +48,7 @@ The *DownloadCampaignsByAccountIdsResponse* object defines the [body](#response-
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="downloadrequestid"></a>DownloadRequestId|The identifier of the download request. You use the identifier to call the [GetBulkDownloadStatus](getbulkdownloadstatus.md) operation to check the status of the download. The identifier is valid for a maximum of two days. If you have not successfully downloaded the file within this period, it is removed from the download site and you will need to get a new download request identifier.<br/><br/>The string has a length up to 40 and can contain any character.|**string**|
+|<a name="downloadrequestid"></a>DownloadRequestId|The identifier of the download request.<br/><br/>You use the identifier to call the [GetBulkDownloadStatus](getbulkdownloadstatus.md) operation to check the status of the download.<br/><br/>The identifier is valid for a maximum of two days. If you have not successfully downloaded the file within this period, it is removed from the download site and you will need to get a new download request identifier.<br/><br/>The string has a length up to 40 and can contain any character.|**string**|
 
 ### <a name="response-header"></a>Response Header Elements
 [!INCLUDE[response-header](./includes/response-header.md)]

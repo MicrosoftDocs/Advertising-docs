@@ -24,7 +24,7 @@ The *GetBulkUploadStatusRequest* object defines the [body](#request-body) and [h
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="requestid"></a>RequestId|The identifier of the upload request.|**string**|
+|<a name="requestid"></a>RequestId|The identifier of the upload request.<br/><br/>The identifier is valid for up to 15 minutes. If you have not successfully uploaded the file within this period, you will need to get a new request identifier and upload URL.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
