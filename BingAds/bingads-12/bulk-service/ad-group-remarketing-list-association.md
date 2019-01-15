@@ -63,7 +63,7 @@ var bulkAdGroupRemarketingListAssociation = new BulkAdGroupRemarketingListAssoci
     // 'Client Id' column header in the Bulk file
     ClientId = "ClientIdGoesHere",
     // 'Audience' column header in the Bulk file
-    RemarketingListName = null,
+    AudienceName = null,
 };
 
 uploadEntities.Add(bulkAdGroupRemarketingListAssociation);

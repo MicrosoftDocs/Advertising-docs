@@ -59,7 +59,7 @@ var bulkAdGroupNegativeCustomAudienceAssociation = new BulkAdGroupNegativeCustom
     // 'Client Id' column header in the Bulk file
     ClientId = "ClientIdGoesHere",
     // 'Audience' column header in the Bulk file
-    CustomAudienceName = null,
+    AudienceName = null,
 };
 
 uploadEntities.Add(bulkAdGroupNegativeCustomAudienceAssociation);

@@ -14,9 +14,6 @@ dev_langs:
 # GetExperimentsByIds Service Operation - Campaign Management
 Gets experiments by experiment identifiers.
 
-> [!WARNING]
-> This preview documentation is subject to change.
-
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.  
 

@@ -26,7 +26,7 @@ Format Version,,,,,,,,,6,,
 Campaign Negative Similar Remarketing List Association,Paused,,-1111,,,ClientIdGoesHere,,,,SimilarRemarketingListIdHere,My Similar Remarketing List
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCampaignNegativeSimilarRemarketingListAssociation* class (coming soon), instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCampaignNegativeSimilarRemarketingListAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -59,7 +59,7 @@ var bulkCampaignNegativeSimilarRemarketingListAssociation = new BulkCampaignNega
     // 'Client Id' column header in the Bulk file
     ClientId = "ClientIdGoesHere",
     // 'Audience' column header in the Bulk file
-    SimilarRemarketingListName = null,
+    AudienceName = null,
 };
 
 uploadEntities.Add(bulkCampaignNegativeSimilarRemarketingListAssociation);

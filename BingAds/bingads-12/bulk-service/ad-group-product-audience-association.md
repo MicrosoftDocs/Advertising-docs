@@ -60,7 +60,7 @@ var bulkAdGroupProductAudienceAssociation = new BulkAdGroupProductAudienceAssoci
     // 'Client Id' column header in the Bulk file
     ClientId = "ClientIdGoesHere",
     // 'Audience' column header in the Bulk file
-    ProductAudienceName = null,
+    AudienceName = null,
 };
 
 uploadEntities.Add(bulkAdGroupProductAudienceAssociation);
