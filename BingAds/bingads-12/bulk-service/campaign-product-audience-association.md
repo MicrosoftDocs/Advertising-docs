@@ -26,7 +26,7 @@ Format Version,,,,,,,,,6,,
 Campaign Product Audience Association,Paused,,-1111,,,ClientIdGoesHere,,10,,ProductAudienceIdHere,My Product Audience
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCampaignProductAudienceAssociation* class (coming soon), instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCampaignProductAudienceAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -61,7 +61,7 @@ var bulkCampaignProductAudienceAssociation = new BulkCampaignProductAudienceAsso
     // 'Client Id' column header in the Bulk file
     ClientId = "ClientIdGoesHere",
     // 'Audience' column header in the Bulk file
-    ProductAudienceName = null,
+    AudienceName = null,
 };
 
 uploadEntities.Add(bulkCampaignProductAudienceAssociation);

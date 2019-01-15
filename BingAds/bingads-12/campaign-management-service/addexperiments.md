@@ -14,9 +14,6 @@ dev_langs:
 # AddExperiments Service Operation - Campaign Management
 Adds experiments and creates experiment campaigns based on existing campaigns in an account.
 
-> [!WARNING]
-> This preview documentation is subject to change.
-
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.  
 
