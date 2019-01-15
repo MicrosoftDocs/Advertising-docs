@@ -63,7 +63,7 @@ var bulkAdGroupSimilarRemarketingListAssociation = new BulkAdGroupSimilarRemarke
     // 'Client Id' column header in the Bulk file
     ClientId = "ClientIdGoesHere",
     // 'Audience' column header in the Bulk file
-    SimilarRemarketingListName = null,
+    AudienceName = null,
 };
 
 uploadEntities.Add(bulkAdGroupSimilarRemarketingListAssociation);

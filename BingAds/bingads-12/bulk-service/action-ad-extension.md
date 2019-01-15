@@ -11,9 +11,6 @@ dev_langs:
 # Action Ad Extension Record - Bulk
 Defines an action ad extension that can be downloaded and uploaded in a bulk file.
 
-> [!WARNING]
-> This preview documentation is subject to change.
-
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.  
 
@@ -24,9 +21,9 @@ You can download all *Action Ad Extension* records in the account by including t
 The following Bulk CSV example would add a new Action Ad Extension to the account's shared library. 
 
 ```csv
-Type,Status,Id,Parent Id,ClientId,Language,Start Date,End Date,Name,Ad Schedule,Use Searcher Time Zone,Action Type,Final Url,Mobile Final Url,Tracking Template,Custom Parameter
-Format Version,,,,,,,,6,,,,,,,
-Action Ad Extension,Active,-10,7671275,ClientIdGoesHere,English,,12/31/2019,(Monday[09:00-21:00]);(Tuesday[09:00-21:00]);(Wednesday[09:00-21:00]);(Thursday[09:00-21:00]);(Friday[09:00-21:00]),false,ActNow,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer
+Type,Status,Id,Parent Id,ClientId,Language,Start Date,End Date,Name,Ad Schedule,Use Searcher Time Zone,Action Type,Action Text,Final Url,Mobile Final Url,Tracking Template,Custom Parameter
+Format Version,,,,,,,,6,,,,,,,,
+Action Ad Extension,Active,-10,7671275,ClientIdGoesHere,English,,12/31/2019,(Monday[09:00-21:00]);(Tuesday[09:00-21:00]);(Wednesday[09:00-21:00]);(Thursday[09:00-21:00]);(Friday[09:00-21:00]),false,ActNow,,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkActionAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -128,6 +125,7 @@ var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadPa
 
 For a *Action Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
+- [Action Text](#actiontext)
 - [Action Type](#actiontype)
 - [Ad Schedule](#adschedule)
 - [Client Id](#clientid)
@@ -151,10 +149,17 @@ For a *Action Ad Extension* record, the following attribute fields are available
 - [Version](#version)
 
 
-## <a name="actiontype"></a>Action Type
-The text you choose here is what is displayed on your call-to-action button.
+## <a name="actiontext"></a>Action Text
+This localized text is displayed on your call-to-action button.
 
-The displayed action text will vary depending on the [Language](#language) that you set.
+The displayed action text will vary depending on the [Action Type](#actiontype) and [Language](#language) that you set. For example if the [Action Type](#actiontype) is "ActNow" and the [Language](#language) is "English", the displayed action text is "Act Now". For details on localized action text per language see [Action Text for Action Ad Extensions](../guides/ad-languages.md#actionadextension-actiontext).
+
+**Add:** Read-only  
+**Update:** Read-only    
+**Delete:** Read-only  
+
+## <a name="actiontype"></a>Action Type
+The action type that you choose here, as well as the [Language](#language) that you set, determines the [Action Text](#actiontext) that is displayed on your call-to-action button.
 
 The possible values for this field include: ActNow, ApplyNow, BetNow, BidNow, BookACar, BookHotel, BookNow, Browse, BuyNow, ChatNow, Compare, ContactUs, Coupon, Donate, Download, EmailNow, EnrollNow, Explore, FileNow, FindJob, FreePlay, FreeQuote, FreeTrial, GetDeals, GetOffer, GetQuote, JoinNow, LearnMore, ListenNow, LogIn, Message, NewCars, OrderNow, PlayGame, PlayNow, PostJob, Register, RentACar, RentNow, Reserve, Sale, SaveNow, Schedule, SeeMenu, SeeMore, SeeOffer, SellNow, ShopNow, Showtimes, SignIn, SignUp, StartFree, StartNow, Subscribe, TestDrive, TryNow, UsedCars, ViewCars, ViewNow, ViewPlans, VisitSite, VoteNow, Watch, WatchMore, WatchNow.
 
