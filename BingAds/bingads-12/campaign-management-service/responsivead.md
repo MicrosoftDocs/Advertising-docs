@@ -94,6 +94,8 @@ Because audience ads are responsive, you can create multiple image assets with d
 |ImageMedia15X10|300 width x 200 height<br/>Aspect radio 1.5:1|
 |ImageMedia155X100|300 width x 194 height<br/>Aspect radio 1.55:1|
 |ImageMedia133X100|100 width x 75 height<br/>Aspect radio 1.33:1|
+|ImageMedia178X100|624 width x 350 height<br/>Aspect radio 1.78:1|
+|ImageMedia172X100|300 width x 174 height<br/>Aspect radio 1.72:1|
 
 > [!NOTE]
 > Media for responsive ads are provisioned via the [Image](image.md) object using the [AddMedia](addmedia.md) operation. You can use the GIF, JPEG, or PNG MIME types. Images with animation are not supported. Although you can only add media with a few aspect ratios via the [AddMedia](addmedia.md) operation, you can use [ImageAsset](imageasset.md) crop settings to determine the effective aspect ratio in the context of each responsive ad [AssetLink](assetlink.md). The aspect ratio of the stored image would be unchanged in the account level media library.
@@ -237,6 +239,36 @@ Given the [GetAdsByAdGroupId](getadsbyadgroupid.md) response example below, plea
 								<CropX>183</CropX>
 								<CropY>0</CropY>
 								<SubType>ImageMedia133X100</SubType>
+							</Asset>
+							<AssetPerformanceLabel i:nil="true"/>
+							<EditorialStatus i:nil="true"/>
+							<PinnedField i:nil="true"/>
+						</AssetLink>
+						<AssetLink>
+							<Asset i:type="ImageAsset">
+								<Id>1234567890000</Id>
+								<Name i:nil="true"/>
+								<Type>ImageAsset</Type>
+								<CropHeight>628</CropHeight>
+								<CropWidth>1118</CropWidth>
+								<CropX>41</CropX>
+								<CropY>0</CropY>
+								<SubType>ImageMedia178X100</SubType>
+							</Asset>
+							<AssetPerformanceLabel i:nil="true"/>
+							<EditorialStatus i:nil="true"/>
+							<PinnedField i:nil="true"/>
+						</AssetLink>
+						<AssetLink>
+							<Asset i:type="ImageAsset">
+								<Id>1234567890000</Id>
+								<Name i:nil="true"/>
+								<Type>ImageAsset</Type>
+								<CropHeight>628</CropHeight>
+								<CropWidth>1080</CropWidth>
+								<CropX>60</CropX>
+								<CropY>0</CropY>
+								<SubType>ImageMedia172X100</SubType>
 							</Asset>
 							<AssetPerformanceLabel i:nil="true"/>
 							<EditorialStatus i:nil="true"/>

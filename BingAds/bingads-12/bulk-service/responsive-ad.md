@@ -24,9 +24,9 @@ You can download all *Responsive Ad* records in the account by including the [Do
 The following Bulk CSV example would add a new responsive ad if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Sync Time,Client Id,Modified Time,Tracking Template,Custom Parameter,Final Url,Mobile Final Url,Text,Business Name,Device Preference,Ad Format Preference,Name,Call To Action,Headline,Long Headline,Landscape Image Media Id,Square Image Media Id,Landscape Logo Media Id,Square Logo Media Id
-Format Version,,,,,,,,,,,,,,,,,6,,,,,,,
-Responsive Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,,{_promoCode}=PROMO1; {_season}=summer,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,Contoso,,,,,Short Headline Here,Long Headline Here,LandscapeImageMediaIdGoesHere,SquareImageMediaIdGoesHere,,
+Type,Status,Id,Parent Id,Campaign,Ad Group,Sync Time,Client Id,Modified Time,Tracking Template,Custom Parameter,Final Url,Mobile Final Url,Text,Business Name,Device Preference,Ad Format Preference,Name,Call To Action,Headline,Long Headline,Images
+Format Version,,,,,,,,,,,,,,,,,6,,,,
+Responsive Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,,{_promoCode}=PROMO1; {_season}=summer,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,Contoso,,,,,Short Headline Here,Long Headline Here,"[{""id"":1234567890000,""subType"":""LandscapeImageMedia""}]"
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkResponsiveAd* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -66,8 +66,25 @@ var bulkResponsiveAd = new BulkResponsiveAd
         Headline = "Short Headline Here",
         // 'Id' column header in the Bulk file
         Id = null,
+        // 'Images' column header in the Bulk file
+        Images = new[]
+        {
+            // Each AssetLink is represented as a JSON list item in the Bulk file.
+            new AssetLink
+            {
+                Asset = new ImageAsset
+                {
+                    CropHeight = null,
+                    CropWidth = null,
+                    CropX = null,
+                    CropY = null,
+                    Id = landscapeImageMediaId,
+                    SubType = "LandscapeImageMedia"
+                },
+            },
+        },
         // 'Landscape Image Media Id' column header in the Bulk file
-        LandscapeImageMediaId = 0, // Replace '0' with your media ID
+        LandscapeImageMediaId = null, 
         // 'Landscape Logo Media Id' column header in the Bulk file
         LandscapeLogoMediaId = null, 
         // 'Long Headline' column header in the Bulk file
@@ -75,7 +92,7 @@ var bulkResponsiveAd = new BulkResponsiveAd
         // 'Status' column header in the Bulk file
         Status = AdStatus.Active,
         // 'Square Image Media Id' column header in the Bulk file
-        SquareImageMediaId = 0, // Replace '0' with your media ID
+        SquareImageMediaId = null, 
         // 'Square Logo Media Id' column header in the Bulk file
         SquareLogoMediaId = null, 
         // 'Text' column header in the Bulk file
@@ -130,6 +147,7 @@ For a *Responsive Ad* record, the following attribute fields are available in th
 - [Final Url](#finalurl)
 - [Headline](#headline)
 - [Id](#id)
+- [Images](#images)
 - [Landscape Image Media Id](#landscapeimagemediaid)
 - [Landscape Logo Media Id](#landscapelogomediaid)
 - [Long Headline](#longheadline)
@@ -307,7 +325,6 @@ The system generated identifier of the ad.
 **Update:** Read-only and Required  
 **Delete:** Read-only and Required  
 
-
 ## <a name="images"></a>Images
 Because audience ads are responsive, you can create multiple image assets with different sizes and aspect ratios so they can flexibly display across a variety of publishers and placements.
 
@@ -371,11 +388,27 @@ The image assets are represented in the bulk file as a JSON string. Seven images
 	"cropY": 0,
 	"cropWidth": 835,
 	"cropHeight": 628
+},
+{
+	"id": 1234567890000,
+	"subType": "ImageMedia178X100",
+	"cropX": 41,
+	"cropY": 0,
+	"cropWidth": 1118,
+	"cropHeight": 628
+},
+{
+	"id": 1234567890000,
+	"subType": "ImageMedia172X100",
+	"cropX": 60,
+	"cropY": 0,
+	"cropWidth": 1080,
+	"cropHeight": 628
 }]
 ```
 
 > [!NOTE]
-> In the comma separated bulk file you'll need to surround the list of asset links, each attribute key, and each attribute string value with an extra set of double quotes e.g., the above JSON string would be written as *"[{""id"":7284264538233,""subType"":""LandscapeImageMedia""},{""id"":7284264538233,""subType"":""SquareImageMedia"",""cropX"":286,""cropY"":0,""cropWidth"":628,""cropHeight"":628},{""id"":7284264538233,""subType"":""ImageMedia169X100"",""cropX"":70,""cropY"":0,""cropWidth"":1061,""cropHeight"":628},{""id"":7284264538233,""subType"":""ImageMedia93X100"",""cropX"":308,""cropY"":0,""cropWidth"":584,""cropHeight"":628},{""id"":7284264538233,""subType"":""ImageMedia15X10"",""cropX"":129,""cropY"":0,""cropWidth"":942,""cropHeight"":628},{""id"":7284264538233,""subType"":""ImageMedia155X100"",""cropX"":114,""cropY"":0,""cropWidth"":973,""cropHeight"":628},{""id"":7284264538233,""subType"":""ImageMedia133X100"",""cropX"":183,""cropY"":0,""cropWidth"":835,""cropHeight"":628}]"*.  
+> In the comma separated bulk file you'll need to surround the list of asset links, each attribute key, and each attribute string value with an extra set of double quotes e.g., the above JSON string would be written as *"[{""id"":1234567890000,""subType"":""LandscapeImageMedia""},{""id"":1234567890000,""subType"":""SquareImageMedia"",""cropX"":286,""cropY"":0,""cropWidth"":628,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia169X100"",""cropX"":70,""cropY"":0,""cropWidth"":1061,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia93X100"",""cropX"":308,""cropY"":0,""cropWidth"":584,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia15X10"",""cropX"":129,""cropY"":0,""cropWidth"":942,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia155X100"",""cropX"":114,""cropY"":0,""cropWidth"":973,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia133X100"",""cropX"":183,""cropY"":0,""cropWidth"":835,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia178X100"",""cropX"":41,""cropY"":0,""cropWidth"":1118,""cropHeight"":628},{""id"":1234567890000,""subType"":""ImageMedia172X100"",""cropX"":60,""cropY"":0,""cropWidth"":1080,""cropHeight"":628}]"*.  
 
 Given the upload response JSON example above, please take note of the following:
 - The same image asset identifier (e.g., 1234567890000) is used for all auto-generated image asset sub types. Whether or not you let Bing Ads automatically generate the cropped images, the [Id](#images-id) does not need to be unique among the image assets linked to the same ad. 
@@ -407,7 +440,7 @@ The `subType` attribute represents the aspect ratio for this image asset.
 
 The aspect ratio for the sub type must match the effective image asset dimensions. If [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth) are not used then the aspect ratio for the sub type must match the aspect ratio of the stored image media. If [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth) are used then the true aspect ratio of the media that is stored in the account level media library can differ, so long as [cropHeight](#images-cropheight) and [cropWidth](#images-cropwidth) result in the correct aspect ratio. In either case the true aspect ratio of the media that is stored in the account level media library will remain unchanged.
 
-The possible sub type values include LandscapeImageMedia, SquareImageMedia, ImageMedia169X100, ImageMedia93X100, ImageMedia15X10, ImageMedia155X100, and ImageMedia133X100. New sub types might be added in the future, so you should not take any dependency on a fixed set of values.
+The possible sub type values include LandscapeImageMedia, SquareImageMedia, ImageMedia169X100, ImageMedia93X100, ImageMedia15X10, ImageMedia155X100, ImageMedia133X100, ImageMedia178X100, and ImageMedia172X100. New sub types might be added in the future, so you should not take any dependency on a fixed set of values.
 
 |Sub Type|Minimum dimensions in pixels|
 |--------|--------|--------|
@@ -418,6 +451,8 @@ The possible sub type values include LandscapeImageMedia, SquareImageMedia, Imag
 |ImageMedia15X10|300 width x 200 height<br/>Aspect radio 1.5:1|
 |ImageMedia155X100|300 width x 194 height<br/>Aspect radio 1.55:1|
 |ImageMedia133X100|100 width x 75 height<br/>Aspect radio 1.33:1|
+|ImageMedia178X100|624 width x 350 height<br/>Aspect radio 1.78:1|
+|ImageMedia172X100|300 width x 174 height<br/>Aspect radio 1.72:1|
 
 > [!NOTE]
 > Media for responsive ads are provisioned via the [Image](../campaign-management-service/image.md) object using the [AddMedia](../campaign-management-service/addmedia.md) operation. You can use the GIF, JPEG, or PNG MIME types. Images with animation are not supported. Although you can only add media with a few aspect ratios via the [AddMedia](../campaign-management-service/addmedia.md) operation, you can use crop settings i.e., [cropHeight](#images-cropheight), [cropWidth](#images-cropwidth), [cropX](#images-cropX), and [cropY](#images-cropY) to determine the effective aspect ratio. The aspect ratio of the stored image would be unchanged in the account level media library.
