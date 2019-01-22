@@ -1,10 +1,10 @@
 ---
 title: "AdGroup object"
 description: "Contains the methods used to manage the ad group."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---

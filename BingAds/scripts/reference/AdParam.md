@@ -1,10 +1,10 @@
 ---
 title: "AdParam object"
 description: "Contains the methods used to manage the substitution parameter."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---

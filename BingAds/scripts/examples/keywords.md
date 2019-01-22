@@ -1,10 +1,10 @@
 ---
 title: "Keyword script examples"
 description: "Shows examples that perform various actions against keywords."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---

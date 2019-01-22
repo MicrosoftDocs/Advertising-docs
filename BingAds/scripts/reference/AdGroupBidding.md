@@ -1,10 +1,10 @@
 ---
 title: "AdGroupBidding object"
 description: "Contains the methods for specifying the ad group's bid values."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
