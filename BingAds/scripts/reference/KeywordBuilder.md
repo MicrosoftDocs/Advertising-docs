@@ -1,10 +1,10 @@
 ---
 title: "KeywordBuilder object"
 description: "Contains the methods for defining a keyword."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---

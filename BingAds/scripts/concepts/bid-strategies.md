@@ -1,10 +1,10 @@
 ---
 title: "Bing Ads Scripts Bid Strategies"
 description: "Describes how Bing Ads Scripts maps bid strategy types to Bing Ads API bid strategy names."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---

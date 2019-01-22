@@ -1,10 +1,10 @@
 ---
 title: "NegativeKeywordListIterator object"
 description: "Contains the methods for iterating through a list of negative keyword lists."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---

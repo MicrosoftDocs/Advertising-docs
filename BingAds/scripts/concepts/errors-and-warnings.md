@@ -1,10 +1,10 @@
 ---
 title: "Bing Ads Scripts Errors and Warnings"
 description: "Describes how errors and warnings are handled in Bing Ads Scripts."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
