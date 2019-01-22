@@ -1,10 +1,10 @@
 ---
 title: "Bing Ads Scripts Changes and Text Logs"
 description: "Describes how logging works in Bing Ads Scripts."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---

@@ -1,10 +1,10 @@
 ---
 title: "AdGroupUrls object"
 description: "Contains the methods for managing the ad group's URLs."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---

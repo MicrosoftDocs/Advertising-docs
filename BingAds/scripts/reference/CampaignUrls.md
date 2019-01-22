@@ -1,10 +1,10 @@
 ---
 title: "CampaignUrls object"
 description: "Contains the methods for managing the campaign's URLs."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---

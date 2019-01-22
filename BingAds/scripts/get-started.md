@@ -1,10 +1,10 @@
 ---
 title: "Bing Ads Scripts Quickstart"
 description: "Shows you how to get started quickly using Bing Ads Scripts."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---

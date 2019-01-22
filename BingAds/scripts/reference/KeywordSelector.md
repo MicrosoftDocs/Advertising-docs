@@ -1,10 +1,10 @@
 ---
 title: "KeywordSelector object"
 description: "Contains the methods for filtering the list of keywords to return."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---

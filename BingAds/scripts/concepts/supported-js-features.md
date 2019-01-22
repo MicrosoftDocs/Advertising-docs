@@ -1,10 +1,10 @@
 ---
 title: "Supported JavaScript features"
 description: "Identifies the JavaScript specification that Bing Ads Scripts supports."
-author: "brapel"
+author: "swhite-msft"
 manager: ehansen
 
-ms.author: "v-brapel"
+ms.author: "scottwhi"
 ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
