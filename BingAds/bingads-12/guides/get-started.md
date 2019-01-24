@@ -15,7 +15,7 @@ dev_langs:
 Any Bing Ads user with a developer token can begin using the Bing Ads API. For advertisers placing a large number of ads or developers building advertising tools, the Bing Ads API provides a programmatic interface to Bing Ads. You can write your Bing Ads application in any language that supports web services. To get started with a specific SDK, see Get Started in [C#](get-started-csharp.md) | [Java](get-started-java.md) | [PHP](get-started-php.md) | [Python](get-started-python.md). 
 
 ## <a name="quick-start"></a>Quick Start
-If you just want to get something working right away, follow these steps to get your Bing Ads user information. You can follow the links for details and customization options. 
+If you just want to get something working right away, follow these steps to get your Bing Ads user information in the production environment. You can follow the links for more details and customization options. 
 
 1. Sign up for [Bing Ads](https://secure.bingads.microsoft.com/) and use the same credentials get a [developer token](#get-developer-token). 
 
