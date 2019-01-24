@@ -2639,6 +2639,17 @@ The language is not provided.
 ***
 
 **Numeric Code**
+1263
+
+**Symbolic Error Code**
+CampaignServiceCannotSetStartOrEndDateForAdRotation
+
+**Description**
+Cannot set the Start or End Date of Ad Rotation feature for the ad group.
+
+***
+
+**Numeric Code**
 1268
 
 **Symbolic Error Code**
@@ -14174,3 +14185,47 @@ CampaignServiceResponsiveSearchAdDisplayUrlDomainInvalid
 
 **Description**
 Display Url domain is Invalid.
+
+***
+
+**Numeric Code**
+6225
+
+**Symbolic Error Code**
+CampaignServiceAdCustomizerNotSupportedForAdType
+
+**Description**
+Ad customizer is not supported for this ad type.
+
+***
+
+**Numeric Code**
+6226
+
+**Symbolic Error Code**
+CampaignServiceMaxActiveResponsiveSearchAdsPerAdGroupLimitReached
+
+**Description**
+The number of active Responsive Search Ads per ad group would be exceeded.
+
+***
+
+**Numeric Code**
+6300
+
+**Symbolic Error Code**
+CampaignServiceFeedItemScheduleInvalidStartTime
+
+**Description**
+Start date cannot be earlier than today.
+
+***
+
+**Numeric Code**
+6301
+
+**Symbolic Error Code**
+CampaignServiceFeedItemScheduleInvalidEndTime
+
+**Description**
+The End time cannot be earlier than today.
