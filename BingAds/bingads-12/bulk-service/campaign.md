@@ -13,14 +13,12 @@ Defines a campaign that can be uploaded and downloaded in a bulk file.
 
 You can download all *Campaign* records in the account by including the [DownloadEntity](downloadentity.md) value of *Campaigns* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. To include the [Keyword Relevance](#keywordrelevance), [Landing Page Relevance](#landingpagerelevance), [Landing Page User Experience](#landingpageuserexperience), and [Quality Score](#qualityscore) fields within the downloaded *Campaign* records, you must also include the [QualityScoreData](datascope.md#qualityscoredata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
-The following Bulk CSV example would add one campaign of each type i.e. Search, Shopping, and Dynamic Search Ads campaign. 
+The following Bulk CSV example would add one Search campaign. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Website,Client Id,Modified Time,Time Zone,Budget Id,Budget Name,Budget,Budget Type,Bid Adjustment,Name,Country Code,Store Id,Campaign Type,Priority,Tracking Template,Custom Parameter,Bid Strategy Type,Domain Language,Source
-Format Version,,,,,,,,,,,,,,6,,,,,,,,,
-Campaign,Active,-111,0,Search 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,Search,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,,
-Campaign,Active,-111,0,Shopping 2/6/2017 4:11:11 PM,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,US,StoreIdHere,Shopping,0,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,,
-Campaign,Active,-111,0,DynamicSearchAds 2/6/2017 4:11:11 PM,contoso.com,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,DynamicSearchAds,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,English,SystemIndex
+Type,Status,Id,Parent Id,Campaign,Website,Client Id,Modified Time,Time Zone,Budget Id,Budget Name,Budget,Budget Type,Bid Adjustment,Name,Country Code,Store Id,Campaign Type,Language,Target Setting,Priority,Tracking Template,Custom Parameter,Bid Strategy Type,Domain Language,Source
+Format Version,,,,,,,,,,,,,,6,,,,,,,,,,,
+Campaign,Active,-111,0,Women's Shoes,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,Search,All,Audience,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,,
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCampaign* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -28,105 +26,82 @@ If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Ja
 ```csharp
 var uploadEntities = new List<BulkEntity>();
 
-for(int i = 0; i < 3; i++)
+// Map properties in the Bulk file to the BulkCampaign
+var bulkCampaign = new BulkCampaign
 {
-    // Map properties in the Bulk file to the BulkCampaign
-    var bulkCampaign = new BulkCampaign
-    {
-        // 'Parent Id' column header in the Bulk file
-        AccountId = 0,
-        // 'Client Id' column header in the Bulk file
-        ClientId = "ClientIdGoesHere",
-        // 'Modified Time' column header in the Bulk file is read-only
-        // LastModifiedTime cannot be set in the Bulk entity
+    // 'Parent Id' column header in the Bulk file
+    AccountId = 0,
+    // 'Client Id' column header in the Bulk file
+    ClientId = "ClientIdGoesHere",
 
-        // Map properties in the Bulk file to the 
-        // Campaign object of the Campaign Management service.
-        Campaign = new Campaign
+    // Map properties in the Bulk file to the 
+    // Campaign object of the Campaign Management service.
+    Campaign = new Campaign
+    {
+        // 'Bid Strategy Type' column header in the Bulk file
+        BiddingScheme = new EnhancedCpcBiddingScheme { },
+        // 'Budget Id' column header in the Bulk file
+        BudgetId = null,
+        // 'Budget Type' column header in the Bulk file
+        BudgetType = BudgetLimitType.DailyBudgetStandard,
+        // 'Campaign Type' column header in the Bulk file
+        CampaignType = CampaignType.Search,
+        // 'Budget' column header in the Bulk file
+        DailyBudget = 50,
+        // 'Experiment Id' column header in the Bulk file
+        ExperimentId = null,
+        // 'Id' column header in the Bulk file
+        Id = campaignIdKey,
+        // 'Language' column header in the Bulk file
+        Languages = new string[] { "All" },
+        // 'Campaign' column header in the Bulk file
+        Name = "Women's Shoes",
+        // 'Bid Adjustment' column header in the Bulk file
+        AudienceAdsBidAdjustment = 10,
+        Settings = new Setting[] 
         {
-            // 'Bid Strategy Type' column header in the Bulk file
-            BiddingScheme = new EnhancedCpcBiddingScheme { },
-            // 'Budget Id' column header in the Bulk file
-            BudgetId = null,
-            // 'Budget Type' column header in the Bulk file
-            BudgetType = BudgetLimitType.DailyBudgetStandard,
-            // 'Campaign Type' column header in the Bulk file
-            CampaignType = null,
-            // 'Budget' column header in the Bulk file
-            DailyBudget = 50,
-            // 'Description' column header in the Bulk file
-            Description = "Red shoes line.",
-            // 'Id' column header in the Bulk file
-            Id = campaignIdKey,
-            // 'Language' column header in the Bulk file
-            Languages = null,
-            // 'Campaign' column header in the Bulk file
-            Name = "Women's Shoes " + DateTime.UtcNow,
-            // 'Bid Adjustment' column header in the Bulk file
-            AudienceAdsBidAdjustment = 10,
-            // 'Settings are not applicable for the Search campaign type
-            Settings = null,
-            // 'Status' column header in the Bulk file
-            Status = CampaignStatus.Active,
-            // 'Sub Type' column header in the Bulk file
-            SubType = null,
-            // 'Time Zone' column header in the Bulk file
-            TimeZone = "PacificTimeUSCanadaTijuana",
-            // 'Tracking Template' column header in the Bulk file
-            TrackingUrlTemplate = null,
-            // 'Custom Parameter' column header in the Bulk file
-            UrlCustomParameters = new CustomParameters
+            // 'Target Setting' column header in the Bulk file
+            new TargetSetting
             {
-                // Each custom parameter is delimited by a semicolon (;) in the Bulk file
-                Parameters = new[] {
-                    new CustomParameter(){
-                        Key = "promoCode",
-                        Value = "PROMO1"
-                    },
-                    new CustomParameter(){
-                        Key = "season",
-                        Value = "summer"
-                    },
+                // Each target setting detail is delimited by a semicolon (;) in the Bulk file
+                Details = new TargetSettingDetail[]
+                {
+                    new TargetSettingDetail
+                    {
+                        CriterionTypeGroup = CriterionTypeGroup.Audience,
+                        TargetAndBid = false
+                    }
                 }
+            }
+        },
+        // 'Status' column header in the Bulk file
+        Status = CampaignStatus.Active,
+        // 'Sub Type' column header in the Bulk file
+        SubType = null,
+        // 'Time Zone' column header in the Bulk file
+        TimeZone = "PacificTimeUSCanadaTijuana",
+        // 'Tracking Template' column header in the Bulk file
+        TrackingUrlTemplate = null,
+        // 'Custom Parameter' column header in the Bulk file
+        UrlCustomParameters = new CustomParameters
+        {
+            // Each custom parameter is delimited by a semicolon (;) in the Bulk file
+            Parameters = new[] 
+            {
+                new CustomParameter(){
+                    Key = "promoCode",
+                    Value = "PROMO1"
+                },
+                new CustomParameter(){
+                    Key = "season",
+                    Value = "summer"
+                },
             },
         },
-    };
-
-    uploadEntities.Add(bulkCampaign);
-}
-
-// Set properties specific to the Search campaign type
-((BulkCampaign)uploadEntities[0]).Campaign.Name = "Search " + DateTime.UtcNow;
-((BulkCampaign)uploadEntities[0]).Campaign.CampaignType = CampaignType.Search;
-
-// Set properties specific to the Shopping campaign type
-((BulkCampaign)uploadEntities[1]).Campaign.Name = "Shopping " + DateTime.UtcNow;
-// 'Bid Strategy Type' column header in the Bulk file
-((BulkCampaign)uploadEntities[1]).Campaign.CampaignType = CampaignType.Shopping;
-((BulkCampaign)uploadEntities[1]).Campaign.Settings = new[] {
-    new ShoppingSetting {
-        // 'Priority' column header in the Bulk file
-        Priority = 0,
-        // 'Country Code' column header in the Bulk file
-        SalesCountryCode = "US",
-        // 'Store Id' column header in the Bulk file
-        StoreId = StoreIdHere
-    }
+    },
 };
-            
-// Set properties specific to the DynamicSearchAds campaign type
-((BulkCampaign)uploadEntities[2]).Campaign.Name = "DynamicSearchAds " + DateTime.UtcNow;
-((BulkCampaign)uploadEntities[2]).Campaign.CampaignType = CampaignType.DynamicSearchAds;
-((BulkCampaign)uploadEntities[2]).Campaign.Settings = new[] {
-    new DynamicSearchAdsSetting {
-        // 'Website' column header in the Bulk file
-        DomainName = "contoso.com",
-        // 'Domain Language' column header in the Bulk file
-        Language = "English",
-        // 'Source' column header in the Bulk file
-        Source = "SystemIndex"
-    }
-};
+
+uploadEntities.Add(bulkCampaign);
 
 var entityUploadParameters = new EntityUploadParameters
 {

@@ -65,11 +65,11 @@ The following restrictions apply to [Media](media.md) types (aspect ratios) that
 > The maximum file size is 5 MB, but the recommended maximum file size is 1MB.
 
 ### <a name="responsivead"></a>Responsive Ad Image Media
-The following restrictions apply to [Media](media.md) types (aspect ratios) that will be used with a [ResponsiveAd](responsivead.md). Although you can only add media with a few aspect ratios, you can use [ImageAsset](imageasset.md) crop settings to determine the effective aspect ratio in the context of each responsive ad. The aspect ratio of the stored image would be unchanged in the account level media library. For more information, see [ResponsiveAd Remarks](responsivead.md#remarks). 
+The following restrictions apply to [Media](media.md) types (aspect ratios) that will be used with a [ResponsiveAd](responsivead.md). Although you can only add media with the below aspect ratios to your account level media library, you can use [ImageAsset](imageasset.md) crop settings to determine the effective aspect ratio in the context of each responsive ad. The aspect ratio of the stored image would be unchanged in the account level media library. For more information, see [ResponsiveAd Remarks](responsivead.md#remarks). 
 
 |Media Type|Dimensions in pixels|
 |--------|--------|--------|--------|
-|Image191x100|**Minimum:** 600 width x 314 height<br/>**Maximum:** Aspect radio 1.91:1 up to the maximum file size of 5MB.<br/>**Recommended:** 1200 width x 628 height|
+|Image191x100|**Minimum:** 703 width x 368 height<br/>**Maximum:** Aspect radio 1.91:1 up to the maximum file size of 5MB.<br/>**Recommended:** 1200 width x 628 height|
 |Image4x1|**Minimum:** 512 width x 128 height<br/>**Maximum:** Aspect radio 4:1 up to the maximum file size of 5MB.<br/>**Recommended:** 1200 width x 300 height|
 |Image1x1|**Minimum:** 300 width x 300 height<br/>**Maximum:** Aspect radio 1:1 up to the maximum file size of 5MB.<br/>**Recommended:** 1200 width x 1200 height|
 |Image1x1|**Minimum:** 128 width x 128 height<br/>**Maximum:** Aspect radio 1:1 up to the maximum file size of 5MB.<br/>**Recommended:** 1200 width x 1200 height|
