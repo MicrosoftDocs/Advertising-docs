@@ -124,9 +124,6 @@ The supported criteria varies by campaign type.
 
 The maximum number of company name profile criterions that you can apply to each campaign or ad group is 1,000.
 
-> [!NOTE]
-> For a list of company name, industry, and job function identifiers, see [Profile Data Files](profile-data-files.md). 
-
 ### <a name="radiuscriterion"></a>Radius Criterion
 With radius criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about a specified radius around a zip code, coordinates, landmark, or area.
 
