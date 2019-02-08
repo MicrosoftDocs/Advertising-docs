@@ -29,7 +29,7 @@ The Customer Management service defines the following service operations.
 |[SearchClientLinks](searchclientlinks.md)|This feature is not supported in sandbox.Searches for the client links for the customer of the current authenticated user, filtered by the search criteria.|1 *Predicates*|
 |[SearchCustomers](searchcustomers.md)|Searches for customers that match a specified criteria.|10 *Predicates*|
 |[SearchUserInvitations](searchuserinvitations.md)|Searches for user invitations that match a specified criteria.|1 *Predicates*|
-|[SendUserInvitation](senduserinvitation.md)|Sends an invitation for  a Microsoft account user to manage one or more Bing Ads customer accounts.|1 *UserInvitation*|
+|[SendUserInvitation](senduserinvitation.md)|Sends an email invitation for someone to manage your Bing Ads accounts.|1 *UserInvitation*|
 |[SignupCustomer](signupcustomer.md)|Creates a new customer and account that rolls up to your reseller payment method.|1 *Customer*<br/><br/>1 *Account*|
 |[UpdateAccount](updateaccount.md)|Updates the details of the specified account.|1 *Account*|
 |[UpdateClientLinks](updateclientlinks.md)|Updates the status of the specified client links.|10 *ClientLink*|

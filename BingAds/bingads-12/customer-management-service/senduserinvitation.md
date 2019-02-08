@@ -4,7 +4,7 @@ ms.service: bing-ads-customer-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Sends an invitation for  a Microsoft account user to manage one or more Bing Ads customer accounts.
+description: Sends an email invitation for someone to manage your Bing Ads accounts.
 dev_langs: 
   - csharp
   - java
@@ -12,13 +12,13 @@ dev_langs:
   - python
 ---
 # SendUserInvitation Service Operation - Customer Management
-Sends an invitation for  a Microsoft account user to manage one or more Bing Ads customer accounts. When the invitation is accepted, the user's Microsoft account is linked to the specified Bing Ads customer accounts.  
+Sends an email invitation for someone to manage your Bing Ads accounts. The recipient can accept the invitation and sign up with credentials that differ from the invitation email address.  
 
 It is possible to have multiple pending invitations sent to the same email address, which have not yet expired. It is also possible for those invitations to have specified different user roles, for example if you sent an invitation with an incorrect user role and then sent a second invitation with the correct user role. The recipient can accept any of the invitations. The Bing Ads API does not support any operations to delete pending user invitations. After you invite a user, the only way to cancel the invitation is through the Bing Ads web application. You can find both pending and accepted invitations in the Users section of Accounts & Billing.
 
-Since a recipient can accept the invitation and sign into Bing Ads with a Microsoft account different than the invitation email address, you cannot determine with certainty the mapping from [UserInvitation](userinvitation.md) to accepted [User](user.md). You can search by the invitation ID (returned by *SendUserInvitations*), only to the extent of finding out whether or not the invitation has been accepted or has expired. The [SearchUserInvitations](searchuserinvitations.md) operation returns all pending invitations, whether or not they have expired. Accepted invitations are not included in the [SearchUserInvitations](searchuserinvitations.md) response.  
+Since a recipient can accept the invitation and sign up with credentials that differ from the invitation email address, you cannot determine with certainty the mapping from a [UserInvitation](userinvitation.md) to a [User](user.md) object. You can search by the invitation ID (returned by *SendUserInvitations*), only to the extent of finding out whether or not the invitation has been accepted or has expired. The [SearchUserInvitations](searchuserinvitations.md) operation returns all pending invitations, whether or not they have expired. Accepted invitations are not included in the [SearchUserInvitations](searchuserinvitations.md) response.  
 
-After the invitation has been accepted, you can call [GetUsersInfo](getusersinfo.md) and [GetUser](getuser.md) to access the Bing Ads user details. Once again though, since a recipient can accept the invitation and sign into Bing Ads with a Microsoft account different than the invitation email address, you cannot determine with certainty the mapping from [UserInvitation](userinvitation.md) to accepted [User](user.md). With the user ID returned by [GetUsersInfo](getusersinfo.md) or [GetUser](getuser.md), you can call [DeleteUser](deleteuser.md) to remove the user.
+After the invitation has been accepted, you can call [GetUsersInfo](getusersinfo.md) and [GetUser](getuser.md) to access the Bing Ads user details. Once again though, since a recipient can accept the invitation and sign up with credentials that differ from the invitation email address, you cannot determine with certainty the mapping from a [UserInvitation](userinvitation.md) to a [User](user.md) or [UserInfo](userinfo.md) object. With the user ID returned by [GetUsersInfo](getusersinfo.md) or [GetUser](getuser.md), you can call [DeleteUser](deleteuser.md) to remove the user.
 
 > [!IMPORTANT]
 > With Bing Ads multi-user credentials you can accept an invitation to manage a separate customer with your existing Bing Ads credentials. By adding multi-user access to your existing user name, you effectively extend your reach by being able to access other people's accounts. The nice part: You don't need to remember another set of user names and passwords, and you don't need to log in and out of Bing Ads to view different accounts owned by other people. If you accept the invitation with existing Bing Ads credentials, you will have multi-user credentials. It is also possible to contact support directly and have multiple user names consolidated to a single user name i.e., one login will have multi-user permissions. For more details, see [Multi-User Credentials](../guides/customer-accounts.md#multi-user). 

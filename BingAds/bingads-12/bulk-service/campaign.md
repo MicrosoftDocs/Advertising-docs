@@ -220,7 +220,7 @@ For details about supported bid strategies per campaign type, see [Budget and Bi
 > [!TIP] 
 > You can set your campaign's bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group's or keyword's bid strategy to *ManualCpc*. 
 
-**Add:** Optional. The only supported value for Audience campaigns is ManualCpc, and if you set any other value it will be ignored. The default value for Shopping campaigns is ManualCpc. Until January 28th, 2019 if you do not set this field for Search and DynamicSearchAds campaigns, then ManualCpc is used by default. From January 28th, 2019 onwards if you do not set this field, then EnhancedCpc will be used by default for Search and DynamicSearchAds campaigns.  
+**Add:** Optional. The default value for Search and DynamicSearchAds campaigns is EnhancedCpc. The default value for Shopping campaigns is ManualCpc. The only supported value for Audience campaigns is ManualCpc.    
 **Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc) and [Bid Strategy TargetCpa](#bidstrategytargetcpa) fields will be deleted.       
 **Delete:** Read-only  
 
@@ -234,13 +234,9 @@ The campaign's budget amount.
 
 In the context of shared budgets, the budget amount is a read-only property that is always returned regardless of whether or not the campaign uses a shared budget. When a campaign is associated to a shared budget the amount returned is that of the shared budget. To determine whether the campaign uses a shared budget, check the value of the [Budget Id](#budgetid) field.
 
-Business rules differ between shared and unshared budgets, and described in the table below.
-
-|Action|Shared Budget|Unshared Budget|
-|-----|-----|-----|
-|**Add:**|Read-only|Required. You must set the daily budget amount if the [Budget Id](#budgetid) is not set.  
-|**Update:**|Not allowed. If you try to update the budget amount of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code.|Optional. If no value is specified on update, this Bing Ads setting is not changed.    
-**Delete:**|Read-only|Read-only|
+**Add:** Required if the [Budget Id](#budgetid) is not set. Read-only if the campaign uses a shared budget.
+**Update:** Optional if the [BudgetId](#budgetid) is not set. If no value is specified on update, this Bing Ads setting is not changed. Not allowed if the campaign uses a shared budget. If you try to update the budget amount of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code. 
+**Delete:** Read-only   
 
 ## <a name="budgetid"></a>Budget Id
 The system generated identifier of the [Budget](budget.md) that this campaign shares with other campaigns in the account.
@@ -266,17 +262,11 @@ This value corresponds to the *Budget Name* field of the [Budget](budget.md) rec
 ## <a name="budgettype"></a>Budget Type
 The budget type determines how the budget is spent. The possible values are *DailyBudgetAccelerated* and *DailyBudgetStandard*.
 
-In the context of shared budgets, the budget type is a read-only property that is always returned regardless of whether or not the campaign uses a shared budget. To determine whether the campaign uses a shared budget, check the value of the *Budget Id* field. 
+In the context of shared budgets, the budget type is a read-only property that is always returned regardless of whether or not the campaign uses a shared budget. To determine whether the campaign uses a shared budget, check the value of the [Budget Id](#budgetid) field. 
 
-*Shared budget:*  
-**Add:** Read-only  
-**Update:** Not allowed. If you try to update the budget type of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code.    
-**Delete:** Read-only  
-
-*Unshared budget:*  
-**Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
-**Delete:** Read-only  
+**Add:** Required if the [Budget Id](#budgetid) is not set. Read-only if the campaign uses a shared budget.
+**Update:** Optional if the [BudgetId](#budgetid) is not set. If no value is specified on update, this Bing Ads setting is not changed. Not allowed if the campaign uses a shared budget. If you try to update the budget type of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code. 
+**Delete:** Read-only   
 
 ## <a name="campaign"></a>Campaign
 The name of the campaign.
