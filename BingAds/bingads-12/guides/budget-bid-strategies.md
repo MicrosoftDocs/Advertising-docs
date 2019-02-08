@@ -71,7 +71,7 @@ The following bid strategy types are available per campaign type. For more infor
 |[MaxConversions](#maxconversions)|Search|
 |[TargetCpa](#targetcpa)|Search|
 
-When you use the Bing Ads API, the default for Audience and Shopping campaigns is [ManualCpc](#manualcpc). Until January 28th, 2019 if you do not set this field for Search and DynamicSearchAds campaigns, then [ManualCpc](#manualcpc) is used by default. From January 28th, 2019 onwards if you do not set this field, then [EnhancedCpc](#enhancedcpc) will be used by default for Search and DynamicSearchAds campaigns.
+When you use the Bing Ads API, the default value for Search and DynamicSearchAds campaigns is [EnhancedCpc](#enhancedcpc). The default value for Shopping campaigns is [ManualCpc](#manualcpc). The only supported value for Audience campaigns is [ManualCpc](#manualcpc).
 
 > [!IMPORTANT] 
 > If the campaign bid strategy type is set to *MaxClicks*, *MaxConversions*, or *TargetCpa*, the behavior of existing features will change unless you set an individual ad group's or keyword's bid strategy to *ManualCpc*. 

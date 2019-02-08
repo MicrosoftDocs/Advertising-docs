@@ -82,8 +82,6 @@
     href: ./code-example-negative-keywords.md
   - name: Offline Conversions
     href: ./code-example-offline-conversions.md
-  - name: Profile Data
-    href: ./code-example-profile-data.md
   - name: Remarketing Lists
     href: ./code-example-remarketing-lists.md
   - name: Report Requests
@@ -197,8 +195,6 @@
     href: ./geographical-location-codes.md
   - name: Operation Error Codes
     href: ./operation-error-codes.md
-  - name: Profile Data Files
-    href: ./profile-data-files.md
   - name: Time Zones
     href: ./time-zones.md
   - name: Version 12 Services

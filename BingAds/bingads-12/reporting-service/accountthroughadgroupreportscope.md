@@ -26,9 +26,9 @@ The report scope includes a union of the included [AccountIds](#accountids), [Ad
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accountids"></a>AccountIds|An array of account identifiers that identifies the account data to include in the report.<br/><br/>You can include a maximum of 1,000 account identifiers.|**long** array|
-|<a name="adgroups"></a>AdGroups|An array of *AdGroupReportScope* objects that identifies the ad group data to include in the report.<br/><br/>You can include a maximum of 300 ad groups.|[AdGroupReportScope](adgroupreportscope.md) array|
-|<a name="campaigns"></a>Campaigns|An array of *CampaignReportScope* objects that identifies the campaign data to include in the report.<br/><br/>You can include a maximum of 300 campaigns.|[CampaignReportScope](campaignreportscope.md) array|
+|<a name="accountids"></a>AccountIds|A list of up to 1,000 account identifiers to include in the report.|**long** array|
+|<a name="adgroups"></a>AdGroups|A list of up to 300 ad groups to include in the report.|[AdGroupReportScope](adgroupreportscope.md) array|
+|<a name="campaigns"></a>Campaigns|A list of up to 300 campaigns to include in the report.|[CampaignReportScope](campaignreportscope.md) array|
 
 ## Requirements
 Service: [ReportingService.svc v12](https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc)  

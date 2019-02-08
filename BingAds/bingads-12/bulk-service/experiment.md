@@ -25,7 +25,7 @@ With Bing Ads experiments, you create a duplicate of a search campaign that rece
 > Experiments are only available for Search campaigns. If the campaign uses a shared budget, then you cannot use it as the base campaign for an experiment. 
 
 When you create an experiment in your account, a new experiment and a new campaign are both created. Here are some of the notable details:  
-- An *Experiment* entity is created with the [Base Campaign Id](#basecampaignid), [End Date](#enddate), [Name](#name), [Start Date](#startdate), and [Traffic Split Percent](#trafficsplitpercent) that you specified. The experiment [Status](#status) will be set automatically by Bing Ads to *Creating*, and the next time you download the experiment its status will be either *Active*, *Creating*, *CreationFailed*, or *Scheduled*.
+- An *Experiment* entity is created with the [Base Campaign Id](#basecampaignid), [End Date](#enddate), [Name](#name), [Start Date](#startdate), and [Traffic Split Percent](#trafficsplitpercent) that you specified. The experiment [Status](#status) will be set automatically by Bing Ads to *Creating*, and the next time you download the experiment its status will be either *Active*, *Creating*, *CreationFailed*, *Paused*, or *Scheduled*.
 
 - An experiment [Campaign](campaign.md) is created as a copy of the [base campaign](#basecampaignid). All base campaign settings, including ad groups, ads, ad extension associations, and target settings are copied to the new experiment campaign. You can get this new campaign's system identifier via the [Experiment Campaign Id](#experimentcampaignid) field of the *Experiment* record e.g., in the bulk upload result file. The [name](campaign.md#campaign) of the [experiment campaign](#experimentcampaignid) that is created from the [base campaign](#basecampaignid) will match the experiment [Name](#name), and vice versa. If the experiment name is updated, the experiment campaign's name will automatically be updated to match, and vice versa.
 
@@ -208,7 +208,7 @@ The name must be unique (case-insensitive) among all campaigns and experiments w
 ## <a name="startdate"></a>Start Date
 The date that the experiment campaign can begin serving ads.
 
-
+The start date cannot be updated after the experiment has begun i.e., once the start date has arrived.
 
 The start date is inclusive. For example, if you set start date to 5/5/2020, the experiment will start at 12:00 AM on 5/5/2020. The time is relative to the [base campaign](#basecampaignid) time zone.
 
@@ -236,8 +236,8 @@ Possible status values are described in the table below.
 |Promoting|The experiment campaign settings are being applied to the base campaign. Upon successful completion, the status will automatically be set to Promoted, and otherwise the status will be set to PromoteFailed. If promotion fails the experiment status can only be set to Deleted. Before you delete the experiment and experiment campaign, consider whether you want to copy any settings from the experiment campaign to the base campaign yourself e.g., via the Bing Ads web application or API.|
 |Scheduled|The experiment campaign has been created, and the experiment is scheduled to begin serving ads once the [Start Date](#startdate) arrives.|
 
-**Add:** Required. You must set the status to *Active*; however, the status will be set automatically by Bing Ads to *Creating*, and the next time you retrieve the experiment its status will be either *Active*, *Creating*, *CreationFailed*, or *Scheduled*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Add:** Required. You must set the status to *Active*; however, the status will be set automatically by Bing Ads to *Creating*, and the next time you retrieve the experiment its status will be either *Active*, *Creating*, *CreationFailed*, *Paused*, or *Scheduled*.  
+**Update:** Read-only    
 **Delete:** Required. The Status must be set to *Deleted*.
 
 ## <a name="trafficsplitpercent"></a>Traffic Split Percent

@@ -169,16 +169,12 @@ This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 ## <a name="profile"></a>Profile
 The display name of the audience profile in English. 
 
-To download profile display names in other languages you can call the [GetProfileDataFileUrl](../campaign-management-service/getprofiledatafileurl.md) operation via the Campaign Management API.
-
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
 
 ## <a name="profileid"></a>Profile Id
 The identifier of the audience profile that you want to target with the corresponding *Bid Adjustment*. 
-
-To download profile identifiers call the [GetProfileDataFileUrl](../campaign-management-service/getprofiledatafileurl.md) operation via the Campaign Management API.
 
 **Add:** Required  
 **Update:** Required  
