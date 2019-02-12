@@ -30,16 +30,23 @@ Example usage:
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[getClickConversionRate](#getclickconversionrate)|double|Gets the conversion rate for clicks.
+[getClickConversionRate](#getclickconversionrate)|double|(Use the getConverionRate() method instead.)
 [getClicks](#getclicks)|long|Gets the number of clicks.
-[getConvertedClicks](#getconvertedclicks)|long|Gets the number of clicks that converted.
+[getConversionRate](#getconversionrate)|double|Gets the conversion rate for clicks.
+[getConversions](#getconversions)|long|Gets the number of clicks that were converted.
+[getConvertedClicks](#getconvertedclicks)|long|(Use the getConverionRate() method instead.)
 [getCost](#getcost)|double|Gets the cost (spend) in the account's currency.
 [getCtr](#getctr)|double|Gets the click through rate.
 [getImpressions](#getimpressions)|long|Gets the number of impressions.
+[getReturnOnAdSpend](#getreturnonadspend)|long|Gets the return on ad spend.
+[getRevenue](#getrevenue)|long|Gets the advertiser-reported revenue.
 
 
 ## <a name="getclickconversionrate"></a>getClickConversionRate
 Gets the conversion rate for clicks.
+
+> [!NOTE]
+> Because this method may be deprecated in a future release, use the [getConversionRate](#getconversionrate) method instead.
 
 ### Returns
 |Type|Description|
@@ -56,8 +63,29 @@ Gets the number of clicks.
 long|The number of clicks.
 
 
+## <a name="getconversionrate"></a>getConversionRate
+Gets the conversion rate for clicks.
+
+### Returns
+|Type|Description|
+|-|-
+double|The conversion rate for clicks, in the range 0..1.
+
+
+## <a name="getconversions"></a>getConversions
+Gets the number of clicks that were converted.
+
+### Returns
+|Type|Description|
+|-|-
+long|The number of clicks that were converted.
+
+
 ## <a name="getconvertedclicks"></a>getConvertedClicks
 Gets the number of clicks that converted.
+
+> [!NOTE]
+> Because this method may be deprecated in a future release, use the [getConversions](#getconversions) method instead.
 
 ### Returns
 |Type|Description|
@@ -90,6 +118,24 @@ Gets the number of impressions.
 |Type|Description|
 |-|-
 long|The number of impressions.
+
+
+## <a name="getreturnonadspend"></a>getReturnOnAdSpend
+Gets the return on ad spend.
+
+### Returns
+|Type|Description|
+|-|-
+double|The return on ad spend, which is calculated as (revenue / spend) * 100.
+
+
+## <a name="getrevenue"></a>getRevenue
+Gets the advertiser-reported revenue.
+
+### Returns
+|Type|Description|
+|-|-
+double|The revenue reported by the advertiser.
 
 
 ## See also
