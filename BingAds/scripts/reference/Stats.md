@@ -40,6 +40,9 @@ Example usage:
 [getCost](#getcost)|double|Gets the cost (spend) in the account's currency.
 [getCtr](#getctr)|double|Gets the click through rate.
 [getImpressions](#getimpressions)|long|Gets the number of impressions.
+[getReturnOnAdSpend](#getreturnonadspend)|long|Gets the return on ad spend.
+[getRevenue](#getrevenue)|long|Gets the advertiser-reported revenue.
+
 
 
 ## <a name="getaveragecpc"></a>getAverageCpc
@@ -146,3 +149,20 @@ Gets the number of impressions.
 |-|-
 long|The number of impressions.
 
+
+## <a name="getreturnonadspend"></a>getReturnOnAdSpend
+Gets the return on ad spend.
+
+### Returns
+|Type|Description|
+|-|-
+double|The return on ad spend, which is calculated as (revenue / spend) * 100.
+
+
+## <a name="getrevenue"></a>getRevenue
+Gets the advertiser-reported revenue.
+
+### Returns
+|Type|Description|
+|-|-
+double|The revenue reported by the advertiser.

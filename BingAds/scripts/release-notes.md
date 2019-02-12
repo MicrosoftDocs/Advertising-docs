@@ -30,6 +30,8 @@ Added the following methods to the [Stats](reference/Stats.md) object.
 
 - [getConversionRate](reference/Stats.md#getconversionrate)
 - [getConversions](reference/Stats.md#getconversions)
+- [getReturnOnAdSpend](reference/Stats.md#getreturnonadspend)
+- [getRevenue](reference/Stats.md#getrevenue)
 
 > [!NOTE]
 > If you use the **getClickConversionRate**() and **getConvertedClicks**() methods, you should update your scripts to use the **getConversionRate**() and **getConversions**() methods instead. 
