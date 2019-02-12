@@ -14,6 +14,27 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## February 11, 2019
+
+Added the following methods to the [BingAdsAccountStats](reference/BingAdsAccountStats.md) object.
+
+- [getConversionRate](reference/BingAdsAccountStats.md#getconversionrate)
+- [getConversions](reference/BingAdsAccountStats.md#getconversions)
+- [getReturnOnAdSpend](reference/BingAdsAccountStats.md#getreturnonadspend)
+- [getRevenue](reference/BingAdsAccountStats.md#getrevenue)
+
+> [!NOTE]
+> If you use the **getClickConversionRate**() and **getConvertedClicks**() methods, you should update your scripts to use the **getConversionRate**() and **getConversions**() methods instead. 
+
+Added the following methods to the [Stats](reference/Stats.md) object.
+
+- [getConversionRate](reference/Stats.md#getconversionrate)
+- [getConversions](reference/Stats.md#getconversions)
+
+> [!NOTE]
+> If you use the **getClickConversionRate**() and **getConvertedClicks**() methods, you should update your scripts to use the **getConversionRate**() and **getConversions**() methods instead. 
+
+
 ## November 27, 2018
 
 The following is a documentation only change.
