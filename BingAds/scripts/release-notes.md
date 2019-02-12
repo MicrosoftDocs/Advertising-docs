@@ -24,7 +24,7 @@ Added the following methods to the [BingAdsAccountStats](reference/BingAdsAccoun
 - [getRevenue](reference/BingAdsAccountStats.md#getrevenue)
 
 > [!NOTE]
-> If you use the getClickConversionRate() and getConvertedClicks() methods, you should update your scripts to use the getConversionRate() and getConversions() methods instead. 
+> If you use the **getClickConversionRate**() and **getConvertedClicks**() methods, you should update your scripts to use the **getConversionRate**() and **getConversions**() methods instead. 
 
 Added the following methods to the [Stats](reference/Stats.md) object.
 
@@ -32,7 +32,7 @@ Added the following methods to the [Stats](reference/Stats.md) object.
 - [getConversions](reference/Stats.md#getconversions)
 
 > [!NOTE]
-> If you use the getClickConversionRate() and getConvertedClicks() methods, you should update your scripts to use the getConversionRate() and getConversions() methods instead. 
+> If you use the **getClickConversionRate**() and **getConvertedClicks**() methods, you should update your scripts to use the **getConversionRate**() and **getConversions**() methods instead. 
 
 
 ## November 27, 2018

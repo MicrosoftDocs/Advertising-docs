@@ -30,11 +30,11 @@ Example usage:
 ## Methods
 |Method Name|Return Type|Description|
 |-|-|-
-[getClickConversionRate](#getclickconversionrate)|double|(Use the getConverionRate() method instead.)
+[getClickConversionRate](#getclickconversionrate)|double|(Use the **getConverionRate**() method instead.)
 [getClicks](#getclicks)|long|Gets the number of clicks.
 [getConversionRate](#getconversionrate)|double|Gets the conversion rate for clicks.
 [getConversions](#getconversions)|long|Gets the number of clicks that were converted.
-[getConvertedClicks](#getconvertedclicks)|long|(Use the getConverionRate() method instead.)
+[getConvertedClicks](#getconvertedclicks)|long|(Use the **getConverions**() method instead.)
 [getCost](#getcost)|double|Gets the cost (spend) in the account's currency.
 [getCtr](#getctr)|double|Gets the click through rate.
 [getImpressions](#getimpressions)|long|Gets the number of impressions.
