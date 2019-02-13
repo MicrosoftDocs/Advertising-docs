@@ -40,6 +40,10 @@ while (iterator.hasNext()) {
 The following is the list of iterators.
 
 - [AdGroupIterator](../reference/AdGroupIterator.md)
+- [AdIterator](../reference/AdIterator.md)
+- [AdParamIterator](../reference/AdParamIterator.md)
+- [BingAdsAccountIterator](../reference/BingAdsAccountIterator.md)
+- [BudgetIterator](../reference/BudgetIterator.md)
 - [CampaignIterator](../reference/CampaignIterator.md)
 - [KeywordIterator](../reference/KeywordIterator.md)
 - [NegativeKeywordListIterator](../reference/NegativeKeywordListIterator.md)

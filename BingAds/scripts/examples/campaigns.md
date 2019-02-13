@@ -50,7 +50,7 @@ function main() {
         .withCondition(`Name = '${campaignName}'`)
         .get();
 
-    if (iterator.hasNext()) {
+    while (iterator.hasNext()) {
         var campaign = iterator.next();
         Logger.log(`Campaign name: ${campaign.getName()}`);
     }
@@ -70,7 +70,7 @@ function main() {
         .withIds([campaignId])
         .get();
 
-    if (iterator.hasNext()) {
+    while (iterator.hasNext()) {
         var campaign = iterator.next();
         Logger.log(`Campaign name: ${campaign.getName()}`);
     }
@@ -97,10 +97,10 @@ function main() {
         .get();
 
     // If the campaign is found, log some metrics.
-    if (iterator.hasNext()) {
+    while (iterator.hasNext()) {
         var campaign = iterator.next();
         var metrics = campaign.getStats(); // Gets the performance metrics.
-        Logger.log(`${campaign.getName()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getClickConversionRate()})`);
+        Logger.log(`${campaign.getName()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getConversionRate()})`);
     }
 }
 ```
@@ -119,7 +119,7 @@ function main() {
         .get();
 
     // If the campaign is found, pause it.
-    if (iterator.hasNext()) {
+    while (iterator.hasNext()) {
         var campaign = iterator.next();
         campaign.pause();
         Logger.log(`Paused campaign: ${campaign.getName()}`);

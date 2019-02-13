@@ -24,7 +24,7 @@ Example usage:
     while (iterator.hasNext()) {
         var campaign = iterator.next();
         var metrics = campaign.getStats();
-        Logger.log(`${campaign.getName()} | clicks: ${metrics.getClick()} | conversion rate: ${metrics.getClickConversionRate()}`);
+        Logger.log(`${campaign.getName()} | clicks: ${metrics.getClicks()} | conversion rate: ${metrics.getConversionRate()}`);
     }
 ```
 

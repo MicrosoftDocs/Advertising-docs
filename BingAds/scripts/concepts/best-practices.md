@@ -208,7 +208,7 @@ Avoid loops with get requests that get a single entity. For example, let's say y
 **Right way**
 
 ```javascript
-    var report = BingAdsApp.report('<report query goes here');
+    var report = BingAdsApp.report('<report query goes here>');
 
     var rows = report.rows();
     var idLists = []; // an array where each element contains an array of IDs.
@@ -244,7 +244,7 @@ Avoid loops with get requests that get a single entity. For example, let's say y
 **Wrong way**
 
 ```javascript
-    var report = BingAdsApp.report('<report query goes here');
+    var report = BingAdsApp.report('<report query goes here>');
 
     var rows = report.rows();
 
@@ -263,7 +263,7 @@ Avoid loops with get requests that get a single entity. For example, let's say y
 
 ### Include the forDateRange method only if you plan to call the entity's getStats method
 
-Calling a selector's `forDateRange` method causes the selector to get the entity's performance data. Because getting an entity's performance data is more expensive, only call the selector's `forDateRange` method if you plan to call the entity's `getStats` method and use the data.
+Calling a selector's `forDateRange` method causes the selector to get the entity's performance data. Getting an entity's performance data is expensive, so only get it if you plan to call the entity's `getStats` method and use the data.
 
 
 ### Don't change an entity's property that's used as a condition in the selector
