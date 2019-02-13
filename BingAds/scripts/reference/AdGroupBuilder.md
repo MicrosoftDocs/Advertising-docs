@@ -20,11 +20,11 @@ Example usage:
         .withIds(['CAMPAIGN ID GOES HERE'])
         .get();
 
-    if (iterator.hasNext()) {
+    while (iterator.hasNext()) {
         var campaign = iterator.next();
 
         // Get the campaign's ad group builder and add an ad group.
-        var operation = campaign.newAdGroupBuilder();
+        var operation = campaign.newAdGroupBuilder()
             .withName("AD GROUP NAME GOES HERE")
             .withStatus("ENABLED")
             .build();

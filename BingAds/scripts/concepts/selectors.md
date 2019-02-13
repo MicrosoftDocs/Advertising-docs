@@ -60,7 +60,7 @@ var campaigns = BingAdsApp.campaigns()
     .withCondition("ClickConversionRate > 0.5")
     .withCondition("Cost > 4.0")
     .forDateRange("LAST_WEEK")
-    .withLimit(10);
+    .withLimit(10)
     .get();
 ```
 
@@ -68,6 +68,10 @@ var campaigns = BingAdsApp.campaigns()
 The following is the list of selectors.
 
 - [AdGroupSelector](../reference/AdGroupSelector.md)
+- [AdParamSelector](../reference/AdParamSelector.md)
+- [AdSelector](../reference/AdSelector.md)
+- [BingAdsAccountSelector](../reference/BingAdsAccountSelector.md)
+- [BudgetSelector](../reference/BudgetSelector.md)
 - [CampaignSelector](../reference/CampaignSelector.md)
 - [KeywordSelector](../reference/KeywordSelector.md)
 - [NegativeKeywordListSelector](../reference/NegativeKeywordListSelector.md)

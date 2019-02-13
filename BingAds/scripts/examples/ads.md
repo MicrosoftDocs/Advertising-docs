@@ -175,7 +175,7 @@ function main() {
         .withIds(["CAMPAIGN ID GOES HERE"])
         .get();
 
-    if (campaigns.hasNext()) {
+    while (campaigns.hasNext()) {
         var campaign = campaigns.next();
 
         var ads = campaign.ads()
