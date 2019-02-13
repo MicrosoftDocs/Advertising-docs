@@ -111,7 +111,7 @@ function main() {
         .withIds([sharedBudgetId])
         .get();
 
-    if (budgets.hasNext()) {
+    while (budgets.hasNext()) {
         var budget = budgets.next();
         Logger.log(`${budget.getName()} (${budget.getAmount()}) shared by campaigns:\n\n`);
 
@@ -145,10 +145,10 @@ function main() {
         .get();
     
     // If the budget is found, log some metrics.
-    if (budgets.hasNext()) {
+    while (budgets.hasNext()) {
         var budget = budgets.next();
         var metrics = budget.getStats(); // Gets the performance metrics.
-        Logger.log(`${budget.getName()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getClickConversionRate()})`);
+        Logger.log(`${budget.getName()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getConversionRate()})`);
     }
 }
 ```

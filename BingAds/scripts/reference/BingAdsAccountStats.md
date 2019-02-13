@@ -17,12 +17,13 @@ Contains the methods for accessing an account's performance data.
 Example usage:
 ```javascript
     var account = AccountsApp.accounts()
-        .get()
         .forDateRange("LAST_WEEK")
+        .get()
         .next();
+
     var stats = account.getStats();
-    var conversionRate = stats.getClickConversionRate();
-    var convertedClicks = stats.getConvertedClicks();
+    var conversionRate = stats.getConversionRate();
+    var convertedClicks = stats.getConversions();
     // etc.
 ```
 

@@ -123,7 +123,7 @@ function main() {
         .withCondition(`CampaignName = '${campaignName}'`)
         .get();
 
-    if (iterator.hasNext()) {
+    while (iterator.hasNext()) {
         var keyword = iterator.next();
         keyword.pause();
         Logger.log(`Paused keyword: ${keyword.getText()}`);
@@ -186,7 +186,7 @@ function main() {
     if (iterator.hasNext()) {
         var keyword = iterator.next();
         var metrics = keyword.getStats(); // Gets the performance metrics.
-        Logger.log(`${keyword.getText()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getClickConversionRate()})`);
+        Logger.log(`${keyword.getText()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getConversionRate()})`);
     }
 }
 ```

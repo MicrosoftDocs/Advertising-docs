@@ -216,7 +216,7 @@ function main() {
     if (iterator.hasNext()) {
         var adGroup = iterator.next();
         var metrics = adGroup.getStats(); // Gets the performance metrics.
-        Logger.log(`${adGroup.getName()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getClickConversionRate()})`);
+        Logger.log(`${adGroup.getName()}: Avg. CPC (${metrics.getAverageCpc()}) | Conversion rate (${metrics.getConversionRate()})`);
     }
 }
 ```
