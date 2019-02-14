@@ -1,6 +1,6 @@
 ---
 title: "How Do I Get the Status of Product Offers?"
-description: "Learn how to get the status of proudct offers with the Content API."
+description: "Learn how to get the status of product offers with the Content API."
 author: "swhite-msft"
 manager: "ehansen"
 
