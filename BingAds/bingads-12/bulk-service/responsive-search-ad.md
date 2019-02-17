@@ -21,9 +21,6 @@ Responsive search ads allow you to set between 3-15 unique ad headlines (a.k.a. 
 
 The responsive ads shown to users appear identical to expanded text ads i.e., up to 3 headlines (title parts via expanded text ads) and 2 descriptions (text parts via expanded text ads). Two headlines and one description will always be shown in the ad. However, depending on the screen size, your ad may show without the third headline or second description.
 
-> [!WARNING]
-> As of November 1st, 2018 responsive search ads can be managed via the Bing Ads API. The Bing Ads web application enables a limited set of operations e.g., view, pause, and unpause responsive search ads. Feature parity between the web application and API will be rolled out from Q4 calendar year 2018 through Q1 calendar year 2019.  
-
 When you create responsive search ads the [Description](#description) and [Headline](#headline) lists are stored as text assets that can be shared by any responsive search ad within the account. For example if "Seamless Integration" is a text asset, you will observe that it has the same asset identifier across all ads that link to "Seamless Integration" in the same Bing Ads account. After you upload a text asset the result file will include the asset identifier e.g., `""id:""123`, whether the asset is new or already existed in the account's asset library. 
 
 Currently Bing Ads does not support deletion of account assets. Even after you delete all ads that use (are linked to) "Seamless Integration", the text asset will remain in your account with a unique system identifier. The next time you use the text asset e.g., "Seamless Integration" in an ad, it will retain the original Bing Ads system identifier.  

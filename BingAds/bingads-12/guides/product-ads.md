@@ -53,9 +53,6 @@ These are the Bing Shopping entities that can be accessed using the [Bulk Servic
 - [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md)
 - [Product Ad](../bulk-service/product-ad.md)
 
-> [!TIP]
-> For code examples that show how to apply product conditions for Bing Shopping campaigns using the Bulk service, see [Bulk Shopping Campaigns Example](code-example-bulk-shopping-campaigns.md).
-
 To create a Bing Shopping campaign, follow these steps.
 
 1. Create one or more Bing Shopping campaigns.
@@ -127,7 +124,7 @@ After you complete these steps, the delivery engine can begin serving product ad
 To create a Bing Shopping campaign with the Campaign Management API, follow these steps.
 
 > [!TIP]
-> For code examples that show how to apply product conditions for Bing Shopping campaigns using the Campaign Management service, see [Shopping Campaigns Example](code-example-shopping-campaigns.md).
+> For code examples that show how to apply product conditions for Bing Shopping campaigns using the Campaign Management service, see [Product Ads Code Example](code-example-product-ads.md).
 
 1. Create one or more Bing Shopping campaigns.
 

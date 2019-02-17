@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # Ad Extensions Code Example
-This example shows how to add, get, and delete extensions for an account's ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial reviews.
+This example demonstrates how to add, get, and delete extensions for an account's ad extension library, set, get, and delete the extension associations with a campaign, and determine why an extension failed editorial reviews.
 
 [!INCLUDE[request-header](./includes/code-tips.md)]
 
@@ -22,7 +22,7 @@ This example shows how to add, get, and delete extensions for an account's ad ex
 
 [!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/AdExtensions.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v12/ad_extensions.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/ad_extensions.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  

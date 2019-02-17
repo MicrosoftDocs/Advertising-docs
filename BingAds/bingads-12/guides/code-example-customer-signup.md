@@ -22,7 +22,7 @@ This example demonstrates how a reseller can call SignupCustomer to create a new
 
 [!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/CustomerSignup.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v12/customer_signup.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/customer_signup.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  

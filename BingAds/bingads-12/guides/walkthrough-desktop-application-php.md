@@ -9,12 +9,7 @@ dev_langs:
   - php
 ---
 # Walkthrough: Bing Ads Desktop Application in PHP
-This guide describes how you can download samples from the [GitHub source](https://github.com/BingAds/BingAds-PHP-SDK), edit with your credentials, and run in a local console. 
-
-> [!IMPORTANT] 
-> Be sure to test in sandbox before running samples in production. Also note that some samples might require additional information e.g. within *ManageClient.php* you'll need to supply a valid $ClientAccountId.
-
-You must first [register an application](authentication-oauth.md#registerapplication) and take note of the Application Id that will be used as the *ClientId* in the walkthrough below. If you are targeting the production environment, then you'll also need your production [developer token](get-started.md#get-developer-token).
+This guide describes how you can download PHP samples for Bing Ads API from the [GitHub source](https://github.com/BingAds/BingAds-PHP-SDK), edit with your credentials, and run in a local console. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the Application Id that will be used as the *ClientId* in the walkthrough below. If you are targeting the production environment, then you'll also need your production [developer token](get-started.md#get-developer-token).
 
 ## <a name="code"></a>Code Walkthrough
 
@@ -30,7 +25,7 @@ You must first [register an application](authentication-oauth.md#registerapplica
 7. The refresh token will be written to *refresh.txt*. Subsequent calls to the *Authenticate* helper function will attempt to read the refresh token from the same location. You can change the location by editing the *OAuthRefreshTokenPath* setting within *AuthHelper.php*.
 
    > [!IMPORTANT] 
-   > This quick start example is not recommended in production. You should only store a Bing Ads user's refresh token in a secure location.
+   > This quick start example is not recommended as-is in production. You should only store the refresh token in a secure location.
 
 ## See Also
 [Bing Ads Code Examples](code-examples.md)  

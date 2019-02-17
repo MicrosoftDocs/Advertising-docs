@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 # Walkthrough: Bing Ads Desktop Application in C# #
-The example desktop application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the Application Id that will be used as the *ClientId* in the walkthrough below. If you are targeting the production environment, then you'll also need your production [developer token](get-started.md#get-developer-token). You can create the example project step by step as described below, or download examples within a Visual Studio solution [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples).
+This example C# console application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID). You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples). 
 
 ## <a name="code"></a>Code Walkthrough
 
@@ -19,7 +19,7 @@ The example desktop application sends authentication requests to the Microsoft a
 
 3. In the **New Project** window choose **.NET Framework 4.7.1** in the drop down, and then click on the **Console App (.NET Framework)** template. Name the project *BingAdsConsoleApp* and click **OK**.
 
-4. Install the SDK through NuGet for the BingAdsConsoleApp. For more information about dependencies, see [Installing the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type these commands to install the packages one at a time: `Install-Package Microsoft.BingAds.SDK`, `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`. 
+4. Install the SDK through NuGet for the BingAdsConsoleApp. For more information about dependencies, see [Install the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type these commands to install the packages one at a time: `Install-Package Microsoft.BingAds.SDK`, `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`. 
 
 5. Open the App.config file and replace its contents with the following code block. Edit the *BingAdsEnvironment* to move from sandbox to production. You must edit the *ClientId* with the *Application Id* that was provisioned when you [registered your application](authentication-oauth.md#registerapplication). If you are targeting the production environment, then you'll also need to edit the example with your [developer token](get-started.md#get-developer-token). 
 
@@ -195,7 +195,8 @@ The example desktop application sends authentication requests to the Microsoft a
                     ApiEnvironment.Sandbox : ApiEnvironment.Production;
                 var oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(
                     Settings.Default["ClientId"].ToString(),
-                    apiEnvironment);
+                    apiEnvironment
+                );
     
                 // It is recommended that you specify a non guessable 'state' request parameter to help prevent
                 // cross site request forgery (CSRF). 
@@ -211,13 +212,12 @@ The example desktop application sends authentication requests to the Microsoft a
                 else
                 {
                     // You must request user consent at least once through a web browser control. 
-                    // Call the GetAuthorizationEndpoint method of the OAuthDesktopMobileAuthCodeGrant instance that you created above.
                     Console.WriteLine(string.Format(
-                        "The Bing Ads user must provide consent for your application to access their Bing Ads accounts.\n" +
-                        "Open a new web browser and navigate to {0}.\n\n" +
-                        "After the user has granted consent in the web browser for the application to access " +
-                        "their Bing Ads accounts, please enter the response URI that includes " +
-                        "the authorization 'code' parameter: \n", oAuthDesktopMobileAuthCodeGrant.GetAuthorizationEndpoint()));
+                        "Open a new web browser and navigate to {0}\n\n" +
+                        "Grant consent in the web browser for the application to access " +
+                        "your advertising accounts, and then enter the response URI that includes " +
+                        "the authorization 'code' parameter: \n", oAuthDesktopMobileAuthCodeGrant.GetAuthorizationEndpoint())
+                    );
     
                     // Request access and refresh tokens using the URI that you provided manually during program execution.
                     var responseUri = new Uri(Console.ReadLine());
@@ -234,7 +234,7 @@ The example desktop application sends authentication requests to the Microsoft a
                 // When calling Bing Ads services with ServiceClient<TService>, BulkServiceManager, or ReportingServiceManager, 
                 // each instance will refresh your access token automatically if they detect the AuthenticationTokenExpired (109) error code. 
                 oAuthDesktopMobileAuthCodeGrant.NewOAuthTokensReceived +=
-                        (sender, tokens) => SaveRefreshToken(tokens.NewRefreshToken);
+                    (sender, tokens) => SaveRefreshToken(tokens.NewRefreshToken);
     
                 return oAuthDesktopMobileAuthCodeGrant;
             }
@@ -253,8 +253,7 @@ The example desktop application sends authentication requests to the Microsoft a
             }
     
             /// <summary>
-            /// This method is not recommended in production. 
-            /// You should store the refresh token securely.
+            /// You should modify the example, and store the refresh token securely.
             /// </summary>
             /// <param name="newRefreshtoken">The refresh token to save.</param>
             private static void SaveRefreshToken(string newRefreshtoken)
@@ -441,13 +440,19 @@ To use sandbox, set the *BingAdsEnvironment* key to Sandbox within the *&lt;appS
 You can also set the environment for each ServiceClient individually as follows.
 
 ```csharp
-_customerManagementService = new ServiceClient<ICustomerManagementService>(_authorizationData, ApiEnvironment.Sandbox);
+_customerManagementService = new ServiceClient<ICustomerManagementService>(
+    _authorizationData, 
+    ApiEnvironment.Sandbox
+);
 ```
 
 Whether you set the ServiceClient environment globally or individually, separately you'll also need to set the OAuth environment to sandbox.
 
 ```csharp
-var oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(ClientId, ApiEnvironment.Sandbox);
+var oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(
+    ClientId, 
+    ApiEnvironment.Sandbox
+);
 ```
 
 ## See Also

@@ -1,10 +1,10 @@
 ---
-title: "Manage Client Code Example"
+title: "Client Links Code Example"
 ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Manage clients as an agency in C#, Java, PHP, or Python.
+description: Manage client links as an agency in C#, Java, PHP, or Python.
 dev_langs:
   - csharp
   - java
@@ -16,13 +16,13 @@ This example demonstrates how to use agency credentials to invite a client, and 
 
 [!INCLUDE[request-header](./includes/code-tips.md)]
 
-[!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/ManageClient.cs)]
+[!code-csharp[Main](../../../BingAds-dotNet-SDK/examples/BingAdsExamples/BingAdsExamplesLibrary/v12/ClientLinks.cs)]
 
-[!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v12/ManageClient.java)]
+[!code-java[Main](../../../BingAds-Java-SDK/examples/BingAdsDesktopApp/src/main/java/com/microsoft/bingads/examples/v12/ClientLinks.java)]
 
-[!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/ManageClient.php)]
+[!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/ClientLinks.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v12/manage_client.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/client_links.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  
