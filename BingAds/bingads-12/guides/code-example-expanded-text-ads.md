@@ -11,7 +11,7 @@ dev_langs:
   - php
   - python
 ---
-# Keywords and Ads Code Example
+# Expanded Text Ads Code Example
 This example demonstrates how to setup Expanded Text Ads for a search advertising campaign.
 
 [!INCLUDE[request-header](./includes/code-tips.md)]

@@ -11,7 +11,7 @@ dev_langs:
   - php
   - python
 ---
-# Shopping Campaigns Code Example
+# Product Ads Code Example
 This example demonstrates how to apply product conditions for Product Ads in Bing Shopping Campaigns.
 
 [!INCLUDE[request-header](./includes/code-tips.md)]
