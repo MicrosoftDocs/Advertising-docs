@@ -132,8 +132,6 @@ The following Bulk records are available for managing ad extensions and ad exten
 - [Ad Group Structured Snippet Ad Extension](../bulk-service/ad-group-structured-snippet-ad-extension.md)
 - [Campaign Structured Snippet Ad Extension](../bulk-service/campaign-structured-snippet-ad-extension.md)
 
-For code examples that show how to set up ad extensions using the Bulk service, see [Bulk Ad Extensions Code Example](code-example-bulk-ad-extensions.md).
-
 ## <a name="campaignservice"></a>Managing Ad Extensions with the Campaign Management Service
 You can use the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md) to create, get, update, and delete both ad extensions and ad extension associations. 
 

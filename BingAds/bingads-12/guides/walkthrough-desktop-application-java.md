@@ -9,7 +9,7 @@ dev_langs:
   - java
 ---
 # Walkthrough: Bing Ads Desktop Application in Java
-The example desktop application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the Application Id that will be used as the *ClientId* in the walkthrough below. If you are targeting the production environment, then you'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below, or start with the [provided examples](code-examples.md).
+This example Java console application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID). You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples). 
 
 ## <a name="code"></a>Code Walkthrough
 
@@ -36,7 +36,7 @@ The example desktop application sends authentication requests to the Microsoft a
         <dependency>
           <groupId>com.microsoft.bingads</groupId>
           <artifactId>microsoft.bingads</artifactId>
-          <version>12.0.1</version>
+          <version>12.0.3</version>
         </dependency>
       </dependencies>
     </project>
@@ -136,9 +136,10 @@ The example desktop application sends authentication requests to the Microsoft a
                                 authorizationData.setAuthentication(oAuthDesktopMobileAuthCodeGrant);
 
                                 CustomerService = new ServiceClient<ICustomerManagementService>(
-                                        authorizationData, 
-                                        ApiEnvironment.SANDBOX,
-                                        ICustomerManagementService.class);
+                                    authorizationData, 
+                                    ApiEnvironment.SANDBOX,
+                                    ICustomerManagementService.class
+                                );
 
                                 User user = getUser(null);
 
@@ -158,7 +159,9 @@ The example desktop application sends authentication requests to the Microsoft a
                             for (AdApiError error : ex.getFaultInfo().getErrors().getAdApiErrors())
                             {
                 	            System.out.printf("AdApiError\n");
-                	            System.out.printf("Code: %d\nError Code: %s\nMessage: %s\n\n", error.getCode(), error.getErrorCode(), error.getMessage());
+                	            System.out.printf("Code: %d\nError Code: %s\nMessage: %s\n\n",
+                                    error.getCode(), error.getErrorCode(), error.getMessage()
+                                );
                             }
 
                         // Customer Management service operations can throw ApiFault.
@@ -193,17 +196,16 @@ The example desktop application sends authentication requests to the Microsoft a
                 }
             });
 
-            // Request user consent by connecting to the Microsoft Account authorization endpoint through a web browser. 
+            // Request user consent by connecting to the authorization endpoint through a web browser. 
 
             URL authorizationEndpoint = oAuthDesktopMobileAuthCodeGrant.getAuthorizationEndpoint();
 
             webView.getEngine().load(authorizationEndpoint.toString());
 
-            // The user will be prompted through the Microsoft Account authorization web browser control to grant permissions for your application
-            // to manage their Bing Ads accounts. The authorization service calls back to your application with the redirection URI, which 
+            // The user will be prompted to grant permissions for your application to manage their Bing Ads accounts. 
+            // The authorization service calls back to your application with the redirection URI, which 
             // includes an authorization code if the user authorized your application to manage their Bing Ads accounts. 
-            // For example the callback URI includes an access token as follows if the user granted permissions for your application to manage 
-            // their Bing Ads accounts: https://login.live.com/oauth20_desktop.srf?code=Access-Code-Provided-Here&lc=1033. 
+            // For example: https://login.live.com/oauth20_desktop.srf?code=Authorization-Code-Returned-Here&lc=1033. 
 
             Scene scene = new Scene(webView, 800, 600);
 
@@ -281,13 +283,17 @@ You can also set the environment for each ServiceClient individually as follows.
 CustomerService = new ServiceClient<ICustomerManagementService>(
     authorizationData,
     ApiEnvironment.SANDBOX,
-    ICustomerManagementService.class);
+    ICustomerManagementService.class
+);
 ```
 
 Whether you set the ServiceClient environment globally or individually, separately you'll also need to set the OAuth environment to sandbox.
 
 ```java
-final OAuthDesktopMobileAuthCodeGrant oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(ClientId, ApiEnvironment.SANDBOX);
+final OAuthDesktopMobileAuthCodeGrant oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(
+    ClientId, 
+    ApiEnvironment.SANDBOX
+);
 ```
 
 ## See Also

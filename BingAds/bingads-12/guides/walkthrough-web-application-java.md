@@ -9,7 +9,7 @@ dev_langs:
   - java
 ---
 # Walkthrough: Bing Ads Web Application in Java
-The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below, or start with the [provided examples](code-examples.md).
+This example Java web application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples). 
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
@@ -57,7 +57,7 @@ The example web application sends authentication requests to the Microsoft accou
         <dependency>
           <groupId>com.microsoft.bingads</groupId>
           <artifactId>microsoft.bingads</artifactId>
-          <version>12.0.1</version>
+          <version>12.0.3</version>
         </dependency>
       </dependencies>
       <build>
@@ -142,7 +142,8 @@ The example web application sends authentication requests to the Microsoft accou
           	OAuthWebAuthCodeGrant oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(
     			ClientId, 
     			ClientSecret, 
-    			new URL(RedirectUri));
+    			new URL(RedirectUri)
+            );
 
           	oAuthWebAuthCodeGrant.setNewTokensListener(new NewOAuthTokensReceivedListener() {
                 @Override
@@ -195,7 +196,9 @@ The example web application sends authentication requests to the Microsoft accou
             for (AdApiError error : ex.getFaultInfo().getErrors().getAdApiErrors())
             {
                 System.out.printf("AdApiError\n");
-                System.out.printf("Code: %d\nError Code: %s\nMessage: %s\n\n", error.getCode(), error.getErrorCode(), error.getMessage());
+                System.out.printf("Code: %d\nError Code: %s\nMessage: %s\n\n", 
+                    error.getCode(), error.getErrorCode(), error.getMessage()
+                );
             }
 
         // Customer Management service operations can throw ApiFault.
@@ -205,7 +208,9 @@ The example web application sends authentication requests to the Microsoft accou
             for (OperationError error : ex.getFaultInfo().getOperationErrors().getOperationErrors())
             {
                 System.out.printf("OperationError\n");
-                System.out.printf("Code: %d\nMessage: %s\n\n", error.getCode(), error.getMessage());
+                System.out.printf("Code: %d\nMessage: %s\n\n", 
+                    error.getCode(), error.getMessage()
+                );
             }
         } catch (Exception ex) {
             // Ignore fault exceptions that we already caught.
@@ -257,17 +262,19 @@ You can also set the environment for each ServiceClient individually as follows.
 CustomerService = new ServiceClient<ICustomerManagementService>(
     authorizationData,
     ApiEnvironment.SANDBOX,
-    ICustomerManagementService.class);
+    ICustomerManagementService.class
+);
 ```
 
 Whether you set the ServiceClient environment globally or individually, separately you'll also need to set the OAuth environment to sandbox.
 
 ```java
 OAuthWebAuthCodeGrant oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(
-        ClientId, 
-        ClientSecret, 
-        new URL(RedirectUri),
-        ApiEnvironment.SANDBOX);
+    ClientId, 
+    ClientSecret, 
+    new URL(RedirectUri),
+    ApiEnvironment.SANDBOX
+);
 ```
 
 ## <a name="deploy"></a>Deploying a Web Application
@@ -277,7 +284,7 @@ If you are using Microsoft Azure to deploy your web application, the following a
 
 - An Azure subscription, which can be acquired from [http://azure.microsoft.com/pricing/purchase-options/](http://azure.microsoft.com/pricing/purchase-options/).
 
-- Optionally you can install the Azure Toolkit for Eclipse (by Microsoft Open Technologies) and deploy your web application using Azure cloud services. For more information, see [Installing the Azure Toolkit for Eclipse (by Microsoft Open Technologies)](https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse-installation).
+- Optionally you can install the Azure Toolkit for Eclipse (by Microsoft Open Technologies) and deploy your web application using Azure cloud services. For more information, see [Installing the Azure Toolkit for Eclipse](https://docs.microsoft.com/en-us/azure/azure-toolkit-for-eclipse-installation).
 
 ## See Also
 [Sandbox](sandbox.md)  

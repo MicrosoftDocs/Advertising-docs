@@ -12,12 +12,6 @@ Responsive search ads in the Search network allow you to set between 3-15 unique
 > [!NOTE]
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon. 
 
-> [!WARNING]
-> As of November 1st, 2018 responsive search ads can be managed via the Bing Ads API. The Bing Ads web application enables a limited set of operations e.g., view, pause, and unpause responsive search ads. Feature parity between the web application and API will be rolled out from Q4 calendar year 2018 through Q1 calendar year 2019. 
-
-> [!NOTE]
-> Editorial reasons and appeals are not yet supported for responsive search ads. Support will be added in a future release e.g., Q1 calendar year 2019. 
-
 The responsive ads shown to users appear identical to expanded text ads i.e., up to 3 headlines (title parts via expanded text ads) and 2 descriptions (text parts via expanded text ads). Two headlines and one description will always be shown in the ad. However, depending on the screen size, your ad may show without the third headline or second description.
 
 ## <a name="bulk"></a>Bulk API for Responsive Search Ads

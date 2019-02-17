@@ -98,7 +98,7 @@ Differing from the *MaxClicks*, *MaxConversions*, and *TargetCpa* bid strategies
 > For Bing Shopping Campaigns, Enhanced CPC is available only to advertisers in France, Germany, United Kingdom, and United States.
 
 ### <a name="manualcpc"></a>ManualCpc
-With the *ManualCpc* (manual cost per click) bid strategy, you set your ad group and keyword bids, and Bing Ads uses these bids every time. This is every campaign's default bid strategy via Bing Ads API unless you chose a different strategy when creating your campaign. 
+With the *ManualCpc* (manual cost per click) bid strategy, you set your ad group and keyword bids, and Bing Ads uses these bids every time.  
 
 ### <a name="maxclicks"></a>MaxClicks
 With the *MaxClicks* bid strategy, you don't need to set ad group or keyword bids. Bing Ads automatically sets your bids in real time to get as many clicks as possible within your budget.
