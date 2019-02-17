@@ -22,7 +22,7 @@ This example demonstrates how to manage UET tags and conversion goals.
 
 [!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/ConversionGoals.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v12/conversion_goals.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/conversion_goals.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  

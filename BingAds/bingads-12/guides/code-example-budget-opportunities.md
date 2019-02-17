@@ -22,7 +22,7 @@ This example demonstrates how to get the budget opportunities for each campaign 
 
 [!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/BudgetOpportunities.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v12/budget_opportunities.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/budget_opportunities.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  

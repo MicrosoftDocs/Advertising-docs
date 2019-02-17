@@ -47,7 +47,52 @@
         },
         {
             "source_path": "BingAds/guides/code-example-profile-data.md",
-            "redirect_url": "show-ads-target-audience",
+            "redirect_url": "code-example-profile-criteria",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/guides/code-example-audience-campaigns.md",
+            "redirect_url": "code-example-responsive-ads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/guides/code-example-bulk-ad-extensions.md",
+            "redirect_url": "code-example-bulk-requests",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/guides/code-example-bulk-keywords-ads.md",
+            "redirect_url": "code-example-bulk-requests",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/guides/code-example-bulk-shopping-campaigns.md",
+            "redirect_url": "code-example-bulk-requests",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/guides/code-example-dynamic-search-campaigns.md",
+            "redirect_url": "code-example-dynamic-search-ads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/guides/code-example-keywords-ads.md",
+            "redirect_url": "code-example-expanded-text-ads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/guides/code-example-manage-client.md",
+            "redirect_url": "code-example-client-links",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/guides/code-example-shopping-campaigns.md",
+            "redirect_url": "code-example-product-ads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/guides/code-example-target-criterions.md",
+            "redirect_url": "code-example-target-criteria",
             "redirect_document_id": false
         }
     ]

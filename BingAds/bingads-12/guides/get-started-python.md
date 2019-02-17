@@ -9,16 +9,16 @@ dev_langs:
   - python
 ---
 # Get Started Using Python with Bing Ads Services
-To get started developing Bing Ads applications with Python, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-python.md) or [Desktop](walkthrough-desktop-application-python.md) application. The examples have been developed with the Bing Ads Python [SDK](client-libraries.md) and run with [Python Tools for Visual Studio (PTVS)](http://pytools.codeplex.com/) on [Visual Studio Community](https://www.visualstudio.com/vs/community/). Your custom configuration may vary.
+To get started developing Bing Ads applications with Python, you can start with the [provided examples](code-examples.md) or follow one of the application walkthroughs for a [Web](walkthrough-web-application-python.md) or [Desktop](walkthrough-desktop-application-python.md) application. 
 
 You will need user credentials with access to Bing Ads either in [production](https://secure.bingads.microsoft.com/) or [sandbox](https://secure.sandbox.bingads.microsoft.com/Auth?EnvContext=Sandbox). For the production environment you will need a [production developer token](get-started.md#get-developer-token). All sandbox clients can use the universal sandbox developer token i.e., **BBD37VB98**. For more information, please see [Get Started With the Bing Ads API](get-started.md) and [Sandbox](sandbox.md).
 
-To authenticate with a [Microsoft Account](https://account.microsoft.com/account) (email address user name) in production, you must also must [register](authentication-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Authentication With the SDKs](sdk-authentication.md#oauth).
+To authenticate via OAuth in production, you must also must [register](authentication-oauth.md#registerapplication) an application and get the corresponding client identifier. You also need to take note of the client secret and redirect URI if you are developing a web application. For authentication details, see [Authentication With the SDKs](sdk-authentication.md#oauth).
 
 ## <a name="dependencies"></a> Dependencies
 The Bing Ads Python SDK uses the [suds-jurko-0.6](https://bitbucket.org/jurko/suds) library as a proxy for all of Bing Ads web services. For more information about using Suds with Bing Ads, see [Using Suds](#suds).
 
-The Bing Ads Python [SDK](client-libraries.md) supports Python 2.6, 2.7, and 3.3 or higher. You should install and run one of the supported versions.
+The Bing Ads Python [SDK](client-libraries.md) supports Python 2.6, 2.7, and 3.3 or higher. You should install and run one of the supported versions. 
 
 ## <a name="installation"></a>Install the SDK
 To install the Bing Ads Python [SDK](client-libraries.md) for the first time, run the following either from your IDE or command line prompt.
@@ -88,8 +88,10 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
     ads = campaign_service.factory.create('ArrayOfAd')
     expanded_text_ad=campaign_service.factory.create('ExpandedTextAd')
     expanded_text_ad.TitlePart1='Contoso'
-    expanded_text_ad.TitlePart2='Fast & Easy Setup'
-    expanded_text_ad.Text='Huge Savings on red shoes.'
+    expanded_text_ad.TitlePart2='Quick & Easy Setup'
+    expanded_text_ad.TitlePart3='Seemless Integration'
+    expanded_text_ad.Text='Find New Customers & Increase Sales!'
+    expanded_text_ad.TextPart2='Start Advertising on Contoso Today.'
     expanded_text_ad.Path1='seattle'
     expanded_text_ad.Path2='shoe sale'
     expanded_text_ad.Type='ExpandedText'
@@ -127,7 +129,7 @@ Please keep in mind the following rules, suggestions, and tips related to Suds i
 
 - Any non-primitive elements must be specified for the Suds client e.g. *EditorialStatus* of type [AdEditorialStatus](../campaign-management-service/adeditorialstatus.md), even though the Bing Ads services do not require such elements.
 
-- Bing Ads Campaign Management service operations require that if you specify a non-primitives, it must be one of the values defined by the service i.e. it cannot be a nil element. Since Suds requires non-primitives and Bing Ads won't accept nil elements in place of an enum value, you must either set the non-primitives or they must be set to None. Also note that if the element is ready only you must set it to *None*. For example set *expanded_text_ad.EditorialStatus=None*. 
+- Bing Ads Campaign Management service operations require that if you specify a non-primitives, it must be one of the values defined by the service i.e. it cannot be a nil element. Since Suds requires non-primitives and Bing Ads won't accept nil elements in place of an enum value, you must either set the non-primitives or they must be set to None. Also note that if the element is ready only you must set it to *None*. For example set `expanded_text_ad.EditorialStatus=None`. 
 
 To call the corresponding methods of a Bing Ads service, you can use an instance of the *ServiceClient* class and pass the Suds factory object. For more information, see [Authentication With the SDKs](sdk-authentication.md#oauth).
 

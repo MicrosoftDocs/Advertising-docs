@@ -22,7 +22,7 @@ This example demonstrates how to add media for responsive ads and image ad exten
 
 [!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/ImageMedia.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v12/image_media.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/image_media.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  

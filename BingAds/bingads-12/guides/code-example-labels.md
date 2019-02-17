@@ -12,7 +12,7 @@ dev_langs:
   - python
 ---
 # Labels Code Example
-This example demonstrates how to add labels and associate them with campaigns, ad groups, keywords, and ads.
+This example demonstrates how to add labels and associate them with campaigns and ad groups.
 
 [!INCLUDE[request-header](./includes/code-tips.md)]
 
@@ -22,7 +22,7 @@ This example demonstrates how to add labels and associate them with campaigns, a
 
 [!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/Labels.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v12/labels.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/labels.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  

@@ -22,7 +22,7 @@ This example demonstrates how to get keyword ideas and traffic estimates for sea
 
 [!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/KeywordPlanner.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v12/keyword_planner.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/keyword_planner.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  

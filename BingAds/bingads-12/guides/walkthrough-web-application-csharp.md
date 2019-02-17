@@ -9,7 +9,7 @@ dev_langs:
   - csharp
 ---
 # Walkthrough: Bing Ads Web Application in C# #
-The example web application sends authentication requests to the Microsoft account and Bing Ads services for the user credentials that you provide, and then adds a campaign using the Bulk service. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. You'll also need your production [developer token](get-started.md#get-developer-token). 
+This example C# web application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples). 
 
 > [!TIP]
 > This example references steps from [Create an ASP.NET Framework web app in Azure](https://docs.microsoft.com/en-us/azure/app-service/app-service-web-get-started-dotnet-framework). For more details about deploying web apps to Azure, you can refer to the Azure documentation. 
@@ -21,7 +21,7 @@ The example web application sends authentication requests to the Microsoft accou
 
 3. You can deploy any type of ASP.NET web app to Azure. For this quickstart, select the **MVC** template, make sure authentication is set to **No Authentication**, and click **OK**. 
 
-4. Install the SDK through NuGet for the BingAdsWebApp. For more information about dependencies, see [Installing the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type these commands to install the packages one at a time: `Install-Package Microsoft.BingAds.SDK`, `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`. 
+4. Install the SDK through NuGet for the BingAdsWebApp. For more information about dependencies, see [Install the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type these commands to install the packages one at a time: `Install-Package Microsoft.BingAds.SDK`, `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`. 
 
 5. Open the Web.config file and replace its contents with the following code block. Edit the *BingAdsEnvironment* to move from sandbox to production and set the production [developer token](get-started.md#get-developer-token) as needed. You must edit the *ClientId*, *ClientSecret*, and *RedirectionUri* with the corresponding *Application Id*, *Application Secret*, and *Redirect URL* values that were provisioned when you [registered your application](authentication-oauth.md#registerapplication). 
   

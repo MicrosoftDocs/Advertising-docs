@@ -22,7 +22,7 @@ This example demonstrates how to send Bing Ads your offline conversions using th
 
 [!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/OfflineConversions.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/BingAdsPythonConsoleExamples/BingAdsPythonConsoleExamples/v12/offline_conversions.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/offline_conversions.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  

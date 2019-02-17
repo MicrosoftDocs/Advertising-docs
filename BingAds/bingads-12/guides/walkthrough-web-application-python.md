@@ -526,6 +526,7 @@ To create a Django app, then, it's necessary to first create the Django project 
         customer_id=None, 
         developer_token=None, 
         authentication=None)
+    
     customer_service=None
     
     def home(request):
