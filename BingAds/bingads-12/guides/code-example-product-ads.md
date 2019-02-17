@@ -22,7 +22,7 @@ This example demonstrates how to apply product conditions for Product Ads in Bin
 
 [!code-php[Main](../../../BingAds-PHP-SDK/samples/V12/ProductAds.php)]
 
-[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/product-ads.py)]
+[!code-python[Main](../../../BingAds-Python-SDK/examples/v12/product_ads.py)]
 
 ## See Also
 [Get Started with the Bing Ads API](get-started.md)  

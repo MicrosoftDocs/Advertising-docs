@@ -55,7 +55,7 @@ If the unlink process fails, possibly due to a billing transition error, the cli
 
 ![Unlink from Client](media/client-unlink-status-flow.png "Unlink from Client")
 
-For code examples that show how to add and update a client link invitation, see [Manage Client Code Example](code-example-manage-client.md).
+For code examples that show how to add and update a client link invitation, see [Client Links Code Example](code-example-client-links.md).
 
 ## See Also
 [Customer Accounts](customer-accounts.md)  
