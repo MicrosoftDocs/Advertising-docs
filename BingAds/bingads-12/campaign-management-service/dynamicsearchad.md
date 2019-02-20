@@ -10,7 +10,7 @@ description: Defines a dynamic search ad.
 Defines a dynamic search ad. With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target. The combination of the Path1, Path2, and Text elements make the dynamic search ad unique.
 
 > [!NOTE]
-> This feature is currently available in the United States and the United Kingdom.  
+> This feature is currently available in Canada, France, Germany, the United Kingdom, and the United States.  
 
 To get started with dynamic search ads, first you'll need to [add](addcampaigns.md) a new [Campaign](campaign.md) with its type set to *DynamicSearchAds*. When you create the campaign, you'll need to include a [DynamicSearchAdsSetting](dynamicsearchadssetting.md) that specifies the target website domain and language.
 
