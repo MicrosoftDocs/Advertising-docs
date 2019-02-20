@@ -41,7 +41,7 @@ Before you can manage authentication for users of your Bing Ads application, you
 1. Go to [https://apps.dev.microsoft.com/](https://apps.dev.microsoft.com/) (or [apps.dev.microsoft-int.com/#/appList](https://apps.dev.microsoft-int.com/#/appList) for apps that target the [sandbox](sandbox.md) environment), and login with your Microsoft Account credentials when prompted. 
 
    > [!WARNING]
-   > You might be prompted to try the new registration experience in the Azure Portal. You can try the Azure portal for new or recent production apps. Eventually older application IDs with the hexadecimal format e.g., A1B2C3 will not be supported. You'll need an application ID with the longer GUID format e.g., abc123-def456-ghi789-jkl123. If you don't see an existing app in the Azure Portal, that's an indication that you should replace it with a new app. We'll have more details about app upgrades later. 
+   > You might be prompted to try the new registration experience in the Azure Portal. You can try the Azure portal for new or recent production apps. Eventually older application IDs with the hexadecimal format e.g., 0000000012345A67 will not be supported. You'll need an application ID with the longer GUID format e.g., ab01c23d-4e56-7f8g-90hi-1j23klmno45p. If you don't see an existing app in the Azure Portal, that's an indication that you should replace it with a new app. We'll have more details about app upgrades later. 
    > 
    > App registration via the Azure Portal is not supported for Bing Ads sandbox users.  
 
