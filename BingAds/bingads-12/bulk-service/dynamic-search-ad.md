@@ -14,7 +14,7 @@ Defines a dynamic search ad that can be downloaded and uploaded in a bulk file.
 With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target.
 
 > [!NOTE]
-> This feature is currently available in the United States and the United Kingdom.  
+> This feature is currently available in Canada, France, Germany, the United Kingdom, and the United States.   
 
 You can download all *Dynamic Search Ad* records in the account by including the [DownloadEntity](downloadentity.md) value of *DynamicSearchAds* in the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. Additionally the download request must include the [EntityData](datascope.md#entitydata) scope. For more details about the Bulk service including best practices, see [Bulk Download and Upload](../guides/bulk-download-upload.md).
 
