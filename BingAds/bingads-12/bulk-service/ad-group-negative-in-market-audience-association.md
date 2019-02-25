@@ -20,11 +20,11 @@ The following Bulk CSV example would add a new Ad Group Negative In Market Audie
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
-Format Version,,,,,,,,,6,,
+Format Version,,,,,,,,,6.0,,
 Ad Group Negative In Market Audience Association,Paused,,-1111,,,ClientIdGoesHere,,,,InMarketAudienceIdHere,My In Market Audience
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupNegativeInMarketAudienceAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupNegativeInMarketAudienceAssociation* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -70,7 +70,7 @@ var entityUploadParameters = new EntityUploadParameters
     OverwriteResultFile = true,
 };
 
-var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
 For an *Ad Group Negative In Market Audience Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
@@ -93,8 +93,7 @@ The name of the ad group that is associated with the in-market audience.
 **Delete:** Read-only and Required  
 
 > [!NOTE]
-> For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
-
+> For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.  
 
 ## <a name="audience"></a>Audience
 The name of the in-market audience.

@@ -16,7 +16,7 @@ For the *Format Version* record, the following attribute fields are available in
 - [Name](#name)
 
 ## <a name="name"></a>Name
-This string represents the format version used for bulk download and upload. The format version differs from the Bing Ads API version. Currently for version 12 of the Bing Ads Bulk API, the only supported format version  is *6.0*. For more information, see [Format Versions](bulk-file-schema.md#formatversions).
+This string represents the format version used for bulk download and upload. The format version differs from the Bing Ads API version. Currently the only supported format version is 6.0. For more information, see [Format Versions](bulk-file-schema.md#formatversions).
 
 **Add:** Read-only  
 **Update:** Read-only  

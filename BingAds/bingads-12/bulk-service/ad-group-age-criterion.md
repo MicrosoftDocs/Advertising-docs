@@ -28,11 +28,11 @@ The following Bulk CSV example would add a new ad group age criterion if a valid
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Target,Bid Adjustment,Name,OS Names,Radius,Unit,From Hour,From Minute,To Hour,To Minute,Latitude,Longitude
-Format Version,,,,,,,,,,,6,,,,,,,,,
+Format Version,,,,,,,,,,,6.0,,,,,,,,,
 Ad Group Age Criterion,Active,,-1111,,,,ClientIdGoesHere,,EighteenToTwentyFour,20,,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupAgeCriterion* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupAgeCriterion* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -88,7 +88,7 @@ var entityUploadParameters = new EntityUploadParameters
     OverwriteResultFile = true,
 };
 
-var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
 For an *Ad Group Age Criterion* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 

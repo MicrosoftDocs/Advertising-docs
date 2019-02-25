@@ -19,11 +19,11 @@ The following Bulk CSV example would add a new product ad if a valid [Parent Id]
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Display Url,Destination Url,Promotion,Device Preference,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Title Part 1,Title Part 2,Path 1,Path 2
-Format Version,,,,,,,,,,,,,,6,,,,,,,,,,
-Product Ad,Active,,-1112,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,,,,,Find New Customers & Increase Sales!,,,,,,,,,,,,,
+Format Version,,,,,,,,,,,,,,6.0,,,,,,,,,,
+Product Ad,Active,,-1112,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,,,,Find New Customers & Increase Sales!,,,,,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkProductAd* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkProductAd* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -34,7 +34,7 @@ var bulkProductAd = new BulkProductAd
     // 'Parent Id' column header in the Bulk file
     AdGroupId = adGroupIdKey,
     // 'Ad Group' column header in the Bulk file
-    AdGroupName = "AdGroupNameHere",
+    AdGroupName = "AdGroupNameGoesHere",
     // 'Campaign' column header in the Bulk file
     CampaignName = "ParentCampaignNameGoesHere",
     // 'Client Id' column header in the Bulk file
@@ -64,7 +64,7 @@ var entityUploadParameters = new EntityUploadParameters
     OverwriteResultFile = true,
 };
 
-var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
 For a *Product Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 

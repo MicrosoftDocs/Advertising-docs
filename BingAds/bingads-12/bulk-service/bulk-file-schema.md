@@ -20,7 +20,7 @@ For more information about using the Bulk service to manage your campaigns, see 
 - [Errors](#errors)
 
 ## <a name="fileschema"></a>File Schema
-You can choose to download either a tab or comma delimited set of records (rows) and fields (columns). The first column header is named *Type*.  The rest of the column names map to properties within or associated with the corresponding record type.
+You can choose to download either a tab or comma delimited set of records (rows) and fields (columns). The first column header is named *Type*. The rest of the column names map to properties within or associated with the corresponding record type.
 
 > [!IMPORTANT]
 > New record types (rows) and fields (columns) may be added anytime, and you should not depend on record or field order in the bulk download or bulk upload results file. Likewise, unless otherwise noted in the reference documentation you should not depend on a fixed set of values returned in each field. 
@@ -28,7 +28,7 @@ You can choose to download either a tab or comma delimited set of records (rows)
 > Similarly during upload you may submit the fields in any order. The upload record order is important when creating new entities, as described below within [Type Hierarchy](#typehierarchy). 
 
 ## <a name="formatversions"></a>Format Versions
-The bulk format version is separate from the Bing Ads API version.  Format version enables a flexible upgrade path to adopt the latest supported features without breaking your application. As a best practice you should always upgrade to the latest format version. Currently Bing Ads API Version 12 only supports format version 6.0.
+The bulk format version is separate from the Bing Ads API version. Format version enables a flexible upgrade path to adopt the latest supported features without breaking your application. As a best practice you should always upgrade to the latest format version. Currently the only supported format version is 6.0.  
 
 To specify the file format version using bulk download, set *FormatVersion* to 6.0 in either the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) request.
 
@@ -189,16 +189,7 @@ The download file will always include a record for the [Format Version](format-v
 
 - When updating the campaign or ad group name, it is optional to specify the new name for the child records if the correct *Parent Id* is provided.
 
-- Use the reserved *delete_value* string to delete or empty the existing value of an optional field. If you use *delete_value* in required fields, please note the following.
-
-- If you use the reserved *delete_value* string in place of a required string value, *delete_value* will be ignored and the results file will show *delete_value* in that field. For example if you set the *Budget* field of the [Campaign](campaign.md) record to *delete_value*, then the *Budget* field would be set to *delete_value* in the results file. In this example the campaign's budget would not be updated.
-
-- If you use the reserved *delete_value* string in place of a required value set, the results file will return the default value. For example if you set the *Network Distribution* field of the [Ad Group](ad-group.md) record to *delete_value*, then the *Network Distribution* field would be set to *OwnedAndOperatedAndSyndicatedSearch* in the results file.  In this example the ad group's network distribution would be set to *OwnedAndOperatedAndSyndicatedSearch*.
-
 - If you are replacing one set of records with another set then you must specify the deleted records prior to the new set. For example to replace all existing [Campaign Negative Keyword](campaign-negative-keyword.md) for a given campaign, first include a [Campaign Negative Keyword](campaign-negative-keyword.md) with *Status* set to Deleted and *Parent Id* set to the campaign ID. If you do not specify any *Id* i.e., do not attempt to delete a specific camapaign negative keyword, this will effectively delete all [Campaign Negative Keyword](campaign-negative-keyword.md) for that campaign. Below the "delete all" record, you can include one or more new [Campaign Negative Keyword](campaign-negative-keyword.md) records with all of the required properties for the upload add operation. 
-
-  > [!NOTE]
-  > Target criterion records do not support "delete all" for bulk upload; however, you might observe a null *Id* field because Bing Ads API version 10 supported "delete all" for targets.
 
 - If you are replacing an existing record with a new record that has the same unique properties, then you must specify the deleted record prior to the new record. For example to replace an existing [Ad Group Dynamic Search Ad Target](ad-group-dynamic-search-ad-target.md) for a given ad group, first include an [Ad Group Dynamic Search Ad Target](ad-group-dynamic-search-ad-target.md) with *Status* set to Deleted, *Id* set to the existing dynamic ad target (webpage criterion) ID, and *Parent Id* set to the ad group ID. Below the deleted record, you can include a new [Ad Group Dynamic Search Ad Target](ad-group-dynamic-search-ad-target.md) record (presumably with new webpage conditions). 
 
@@ -208,6 +199,15 @@ The download file will always include a record for the [Format Version](format-v
 - When deleting a record the *Id* field is required. A reference to the parent entity, whether the value is a Bing Ads assigned system identifier or a [Reference Keys](#referencekeys) for the parent record, is also required. For example when deleting an ad group, either the *Parent Id* field of the  [Ad Group](ad-group.md) record should match the *Id* field in the [Campaign](campaign.md) record or the *Campaign* field of the  [Ad Group](ad-group.md) record should match the *Campaign* field in the [Campaign](campaign.md) record. If both are provided then the *Parent Id* field of the  [Ad Group](ad-group.md) record ([Reference Keys](#referencekeys)) is ignored.
 
 - With a few exceptions the result file will only include the columns that you uploaded. For example if you upload a new [Ad Group Negative Keyword](ad-group-negative-keyword.md) without the *Id* column header, then the result file will not include the assigned identifier for the new negative keyword. The bulk file should contain the *Id* column; however, you should leave the *Id* empty for each new [Ad Group Negative Keyword](ad-group-negative-keyword.md). The exceptions to this rule are campaigns, ad groups, ads, and keywords in which case the result file will contain all columns regardless of the uploaded columns.  
+
+## <a name="update-delete-value"></a>Update with delete_value
+To remove an existing setting, you should not write an empty string ("") to the Bulk file because such strings are ignored by the Bulk service. Use the reserved "delete_value" string to delete or reset the value of an optional field. 
+- If you use the reserved "delete_value" string in an optional field, the previous setting will be deleted. For example if you set the [Custom Parameter](ad-group.md#customparameter) field of the [Ad Group](ad-group.md) record to "delete_value", all previous custom parameters will be deleted from the ad group. Likewise if you set the [Tracking Template](ad-group.md#trackingtemplate) field of the [Ad Group](ad-group.md) record to "delete_value", the previous tracking template will be deleted from the ad group. 
+- The Bing Ads SDKs for .NET, Java, and Python automatically write "delete_value" where applicable. For more details see [Bulk Service Manager - Update with delete_value](../guides/sdk-bulk-service-manager.md#update-delete-value). 
+
+If you use "delete_value" in required fields, please note the following.  
+- If you use the reserved "delete_value" string in place of a required primitive value, it will be ignored. Although the field was not updated, the "delete_value" string will be passed through via the upload results file. For example if you set the [Ad Group](ad-group.md#adgroup) field (ad group name) of the [Ad Group](ad-group.md) record to "delete_value", the ad group's name would not be updated.  
+- If you use the reserved "delete_value" string in place of a required value set, the field will be updated to the default value, and the results file will reflect that change. For example if you set the [Network Distribution](ad-group.md#networkdistribution) field of the [Ad Group](ad-group.md) record to "delete_value", then the ad group's network distribution would be set to *OwnedAndOperatedAndSyndicatedSearch* and the upload results file would reflect the same.  
 
 ## <a name="referencekeys"></a>Reference Keys
 When referring to a preceding record in the bulk file that does not yet have an assigned Bing Ads identifier, you may use either a logical reference key or negative reference key depending on the record type.

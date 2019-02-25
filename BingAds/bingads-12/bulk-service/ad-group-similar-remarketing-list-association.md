@@ -22,11 +22,11 @@ The following Bulk CSV example would add a new ad group similar remarketing list
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
-Format Version,,,,,,,,,6,,
+Format Version,,,,,,,,,6.0,,
 Ad Group Similar Remarketing List Association,Paused,,-1111,,,ClientIdGoesHere,,10,,SimilarRemarketingListIdHere,My Similar Remarketing List
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupSimilarRemarketingListAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupSimilarRemarketingListAssociation* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -77,7 +77,7 @@ var entityUploadParameters = new EntityUploadParameters
     OverwriteResultFile = true,
 };
 
-var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
 For an *Ad Group Similar Remarketing List Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 

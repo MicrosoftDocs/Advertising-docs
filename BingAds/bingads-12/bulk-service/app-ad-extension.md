@@ -19,11 +19,11 @@ The following Bulk CSV example would add a new app ad extension to the account's
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Text,Destination Url,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,App Platform,App Id
-Format Version,,,,,,,,,,,,,6,,,,
+Format Version,,,,,,,,,,,,,6.0,,,,
 App Ad Extension,Active,-11,0,,,ClientIdGoesHere,,,12/31/2019,Contoso,DestinationUrlGoesHere,,,(Monday[09:00-21:00]),FALSE,Windows,AppStoreIdGoesHere
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAppAdExtension* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAppAdExtension* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -95,7 +95,7 @@ var entityUploadParameters = new EntityUploadParameters
     OverwriteResultFile = true,
 };
 
-var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
 For an *App Ad Extension* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
