@@ -22,11 +22,11 @@ The following Bulk CSV example would add a new dynamic search ad if a valid [Par
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Display Url,Destination Url,Promotion,Device Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Title Part 1,Title Part 2,Path 1,Path 2
-Format Version,,,,,,,,,,,,,,6,,,,,,,,,,
-Dynamic Search Ad,Active,,-1113,ParentCampaignNameGoesHere,AdGroupNameHere,ClientIdGoesHere,,,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,,,,,,,,,,,{_promoCode}=PROMO1; {_season}=summer,,,seattle,shoe sale
+Format Version,,,,,,,,,,,,,,6.0,,,,,,,,,,
+Dynamic Search Ad,Active,,-1113,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,,,,,,,,,,,{_promoCode}=PROMO1; {_season}=summer,,,seattle,shoe sale
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkDynamicSearchAd* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkDynamicSearchAd* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -37,7 +37,7 @@ var bulkDynamicSearchAd = new BulkDynamicSearchAd
     // 'Parent Id' column header in the Bulk file
     AdGroupId = adGroupIdKey,
     // 'Ad Group' column header in the Bulk file
-    AdGroupName = "AdGroupNameHere",
+    AdGroupName = "AdGroupNameGoesHere",
     // 'Campaign' column header in the Bulk file
     CampaignName = "ParentCampaignNameGoesHere",
     // 'Client Id' column header in the Bulk file
@@ -88,7 +88,7 @@ var entityUploadParameters = new EntityUploadParameters
     OverwriteResultFile = true,
 };
 
-var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
 For a *Dynamic Search Ad* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). The combination of the Path 1, Path 2, and Text fields make the dynamic search ad unique.
@@ -143,7 +143,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 
 - Format each custom parameter pair as Key=Value, for example {_promoCode}=PROMO1.
 
-- Bing Ads will accept the first 3 custom parameter key and value pairs that you include. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
+- Bing Ads will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 565), Bing Ads will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit will be increased from 3 to 8 for all customers. Each key and value pair are delimited by a semicolon and space ("; "), for example {_promoCode}=PROMO1; {_season}=summer.
 
 - A Key cannot contain a semicolon. If a Value contains a semicolon it must be escaped as '\;'. Additionally if the Value contains a backslash it must also be escaped as '\\'.
 

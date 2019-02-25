@@ -23,11 +23,11 @@ The following is a Bulk CSV example download for similar remarketing list.
 
 ```csv
 Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Scope,Audience,Supported Campaign Types,Source Id
-Format Version,,,,,,6,,,,
+Format Version,,,,,,6.0,,,,
 Similar Remarketing List,Active,IdHere,ParentIdHere,ClientIdGoesHere,,,Account,Similar Remarketing List,Search;DynamicSearchAds;Shopping;Audience,SourceRemarketingListIdHere
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to download the *BulkSimilarRemarketingList* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to download the *BulkSimilarRemarketingList* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 // Map properties in the Bulk file to the BulkSimilarRemarketingList

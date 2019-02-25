@@ -35,10 +35,10 @@ Parallel tracking reduces the time it takes for your landing page to load, incre
 
 You need to have {lpurl] or one of its variants in your URL's tracking template for parallel tracking to work. For more information see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2-500).
 
-If the [Name](#name) element is set to *AdClickParallelTracking*, then the [Value](#value) can be set to either *true* or *false*. If the value is *true*, then parallel tracking is enabled.
+If the [Name](#name) element is set to *AdClickParallelTracking*, then the returned [Value](#value) can be either *true* or *false*. If the value is *true*, then parallel tracking is enabled. 
 
 > [!IMPORTANT]
-> Starting in Q4 calendar year 2018 parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and all other customers are opted out.  
+> Parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and currently all other customers are opted out. During pilot you can enable and disable the feature i.e., set the property to *true* or *false*. By the end of calendar year 2019 all customers will be enabled for parallel tracking, and the value can only be set to *true*. 
 
 #### <a name="msclkidautotaggingenabled"></a>MSCLKIDAutoTaggingEnabled
 Determines whether auto-tagging of the MSCLKID query string parameter is enabled. The MSCLKID is a 32-character GUID that is unique for each ad click.

@@ -24,9 +24,9 @@ Defines the genders that are available for gender criterion.
 
 |Value|Description|
 |-----------|---------------|
-|<a name="female"></a>Female|The gender is female.|
-|<a name="male"></a>Male|The gender is male.|
-|<a name="unknown"></a>Unknown|The gender is not known.<br/><br/>This option is only available for ad groups in Audience campaigns.|
+|<a name="female"></a>Female|The gender is identified as female.|
+|<a name="male"></a>Male|The gender is identified as male.|
+|<a name="unknown"></a>Unknown|The gender is not known.<br/><br/>The unknown option is only available for ad groups in Audience campaigns.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

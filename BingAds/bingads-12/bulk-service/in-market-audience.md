@@ -26,11 +26,11 @@ The following is a Bulk CSV example download for in-market audience.
 
 ```csv
 Type,Status,Id,Parent Id,Client Id,Modified Time,Name,Description,Membership Duration,Scope,Audience,Supported Campaign Types
-Format Version,,,,,,6,,,,,
+Format Version,,,,,,6.0,,,,,
 In Market Audience,Active,IdHere,ParentIdHere,ClientIdGoesHere,,,In Market Audience Description,30,Account,In Market Audience,Search;DynamicSearchAds;Shopping;Audience
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to download the *BulkInMarketAudience* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to download the *BulkInMarketAudience* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 // Map properties in the Bulk file to the BulkInMarketAudience

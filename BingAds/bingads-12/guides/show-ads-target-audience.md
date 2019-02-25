@@ -48,7 +48,15 @@ Each age criterion defines an age range for the accompanying criterion bid adjus
 
 With campaigns for [Audience Ads](audience-ads.md) you can specify age groups that you want to exclude from seeing your ads. Excluded ages are also known as negative age criterions. Each negative age criterion defines an age group you do not want to see your ads. 
 
-The maximum number of age criterions that you can specify per campaign or ad group is five, i.e. one for each of the supported age ranges *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*.
+The supported criteria varies by campaign type. 
+
+|Criterion Association|Supported Campaign Types|
+|----------|---------------|
+|Campaign Age Criterion|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
+|Ad Group Age Criterion|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
+|Ad Group Negative Age Criterion|Audience|
+
+In DynamicSearchAds, Search, and Shopping campaigns, the maximum number of age criterions that you can specify per campaign or ad group is five, i.e. one each for *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*. In Audience campaigns, the maximum number of age criterions that you can specify per campaign or ad group is six, i.e. one each for *EighteenToTwentyFour*, *TwentyFiveToThirtyFour*, *ThirtyFiveToFortyNine*, *FiftyToSixtyFour*, and *SixtyFiveAndAbove*, and *Unknown*. 
 
 ### <a name="daytimecriterion"></a>DayTime Criterion
 As your campaign progresses, you may find that your click-through rate and conversion rate are highest during certain times, for example, weeknights. This might be a perfect opportunity to use bid adjustments to improve your chances of displaying your ad Monday through Friday from 6:00 P.M. to 11:00 P.M.. When targeting by time, you are targeting the searcher's local time zone. For example, if you increase your bid by 10% for 6:00 P.M. to 11:00 P.M., that bid adjustment will be effective from 6:00 P.M. to 11:00 P.M. Eastern Time for searchers in New York, then be effective 6:00 P.M. to 11:00 P.M. Pacific Time for searchers in Seattle. Now you are showing your ads when your potential customers are online!
@@ -71,7 +79,15 @@ Each gender criterion defines a gender for the accompanying criterion bid adjust
 
 With campaigns for [Audience Ads](audience-ads.md) you can specify a gender that you want to exclude from seeing your ads. Excluded genders are also known as negative gender criterions. Each negative gender criterion defines a gender you do not want to see your ads. 
 
-The maximum number of gender criterions that you can specify per campaign or ad group is two i.e. one for *Male* and one for *Female*.
+The supported criteria varies by campaign type. 
+
+|Criterion Association|Supported Campaign Types|
+|----------|---------------|
+|Campaign Gender Criterion|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
+|Ad Group Gender Criterion|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
+|Ad Group Negative Gender Criterion|Audience|
+
+In DynamicSearchAds, Search, and Shopping campaigns, the maximum number of gender criterions that you can specify per campaign or ad group is two i.e. one each for *Male* and *Female*. In Audience campaigns, the maximum number of gender criterions that you can specify per campaign or ad group is three i.e. one each for *Male*, *Female*, and *Unknown*. 
 
 ### <a name="locationcriterion"></a>Location Criterion
 With location criterions, you can choose to show ads to potential customers in, searching for, or viewing pages about:

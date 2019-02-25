@@ -168,18 +168,14 @@ The [ConflictType](../reporting-service/negativekeywordconflictreportcolumn.md#c
 Data in this download column represent the type of negative keyword conflict encountered. Some advertisers intentionally create negative keyword conflicts to block a portion of match type traffic. For example, if your phrase match keywords are "stereo plug," you might also choose "stereo plug" as an exact match negative keyword text to match only with this phrase. In this scenario, customers that are searching for specific items like "3.5mm stereo plug" or "gold stereo plug" would see ads for the "stereo plug" phrase match keyword, but customers searching for "stereo plug" wouldn’t see ads for the exact match keyword. If you are an advertiser who intentionally blocks a portion of match type traffic, you can use this column to filter out intentional negative keyword conflicts. If you're not, you should investigate and fix both types of conflicts.
 
 ### <a name="adclickparalleltracking-august2018"></a>Ad Click Parallel Tracking
-Support for ad click parallel tracking is enabled for pilot customers. 
+Support for ad click parallel tracking is enabled for pilot customers. Parallel tracking lets you send users directly to your final URL while click measurement runs in the background. Parallel tracking reduces the time it takes for your landing page to load, increasing customer satisfaction with your ad and website (making conversions more likely!).
 
 > [!IMPORTANT]
-> Starting in Q4 calendar year 2018 parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and all other customers are opted out. 
-
-Parallel tracking lets you send users directly to your final URL while click measurement runs in the background.
-
-Parallel tracking reduces the time it takes for your landing page to load, increasing customer satisfaction with your ad and website (making conversions more likely!).
+> Parallel tracking is only available for pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 474), and currently all other customers are opted out. During pilot you can enable and disable the feature i.e., set the property to *true* or *false*. By the end of calendar year 2019 all customers will be enabled for parallel tracking, and the value can only be set to *true*. 
 
 You need to have {lpurl] or one of its variants in your URL's tracking template for parallel tracking to work. For more information see [What tracking or URL parameters can I use?](https://help.bingads.microsoft.com/#apex/3/en/56799/2-500).
 
-You can manage parallel tracking via the [GetAccountProperties](../campaign-management-service/getaccountproperties.md) and [SetAccountProperties](../campaign-management-service/setaccountproperties.md) service operations. If the account property [Name](../campaign-management-service/accountproperty.md#name) element is set to [AdClickParallelTracking](../campaign-management-service/accountproperty.md#adclickparalleltracking), then the [Value](../campaign-management-service/accountproperty.md#value) can be set to either *true* or *false*. If the value is *true*, then parallel tracking is enabled.
+You can manage parallel tracking via the [GetAccountProperties](../campaign-management-service/getaccountproperties.md) and [SetAccountProperties](../campaign-management-service/setaccountproperties.md) service operations. If the account property [Name](../campaign-management-service/accountproperty.md#name) element is set to [AdClickParallelTracking](../campaign-management-service/accountproperty.md#adclickparalleltracking), then the returned [Value](../campaign-management-service/accountproperty.md#value) can be either *true* or *false*. If the value is *true*, then parallel tracking is enabled.
 
 ### <a name="sdk-august2018"></a>Bing Ads Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated.

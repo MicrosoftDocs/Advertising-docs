@@ -169,7 +169,7 @@ You can follow these steps to capture the SOAP envelopes from a Java application
 2. Use the following command to import the certificate into the cacert store used by Java, for example execute from PowerShell as Administrator.
 
     ```powershell
-    c:\Program Files\Java\jre6\bin>keytool -importcert -v -alias "Fiddler cert" -trustcacerts -keystore "C:\Program Files\Java\jdk1.8.0_20\jre\lib\security\cacerts" -storepass changeit -file <DesktopPathGoesHere>\FiddlerRoot.cer
+    PS C:\Program Files\Java\jre1.8.0_201\bin> .\keytool.exe -importcert -v -alias "Fiddler cert" -trustcacerts -keystore "C:\Program Files\Java\jre1.8.0_201\lib\security\cacerts" -storepass changeit -file <PathToFiddlerRootGoesHere>\FiddlerRoot.cer
     ```
 
 3. Add the following lines to your Java application.
