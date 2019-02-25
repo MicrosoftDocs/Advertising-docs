@@ -14,6 +14,16 @@ Defines an account that can be uploaded and downloaded in a bulk file.
 
 The *Account* record is included in the Bulk download file automatically everytime you call the [DownloadCampaignsByAccountIds](downloadcampaignsbyaccountids.md) or [DownloadCampaignsByCampaignIds](downloadcampaignsbycampaignids.md) service request. 
 
+The following is a Bulk CSV example download for account. 
+
+```csv
+Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Website,Sync Time,Client Id,Modified Time,MSCLKID Auto Tagging Enabled,Name
+Format Version,,,,,,,,,,,true,6.0
+Account,,111,222,,,,,02/12/2019 15:32:34,,,true,
+```
+
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to download the *BulkAccount* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+
 For an *Account* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
 
 - [Id](#id)
@@ -52,7 +62,6 @@ The system generated identifier of the customer that contains the account.
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
- 
 
 ## <a name="synctime"></a>Sync Time
 Where the Account row intersects with the Sync Time column, the field value is represented as **MM/DD/YYYY HH:MM**, or month, day, year, hour, and minute relative to the UTC time zone. Save this value and use it with the bulk service to only get the changes between the current and the next download.
@@ -60,7 +69,6 @@ Where the Account row intersects with the Sync Time column, the field value is r
 **Add:** Read-only  
 **Update:** Read-only  
 **Delete:** Read-only  
-
 
 ## <a name="trackingtemplate"></a>Tracking Template
 The tracking template to use as a default for all URLs in your account.

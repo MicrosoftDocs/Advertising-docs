@@ -9,7 +9,7 @@ description: URL tracking allows you to find out how people got to your website 
 # URL Tracking with Upgraded URLs
 URL tracking allows you to find out how people got to your website by adding tracking parameters in Bing Ads and then using a third-party tracking tool or service to analyze the data. When an ad is served, the tracking parameters are dynamically appended to your landing page URL. This landing page URL is recorded on your web server and then a third-party tracking tool, like Adobe or Google Analytics, can interpret the data.
 
-If you have set up [tracking in Bing Ads](https://help.bingads.microsoft.com/#apex/3/en/56798/2) by adding URL parameters to your destination URLs, you will be interested in Upgraded URLs. Upgraded URLs separate the landing page URL from the tracking or URL parameters so if you want to edit your URL parameters, your ad doesn't have to go through another editorial review. It also allows you to define a separate mobile landing page URL if you have a website that is optimized for smaller devices.
+If you have set up [URL tracking in Bing Ads](https://help.bingads.microsoft.com/#apex/3/en/56798/2) by adding URL parameters to your destination URLs, you will be interested in Upgraded URLs. Upgraded URLs separate the landing page URL from the tracking or URL parameters so if you want to edit your URL parameters, your ad doesn't have to go through another editorial review. It also allows you to define a separate mobile landing page URL if you have a website that is optimized for smaller devices.
 
 By separating the tracking template details from the final URLs you can take advantage of the following benefits:
 - You can define tracking templates for one or more account, campaign, ad group, keyword, ad, or Sitelink Extension. If you use a common tracking template for all ads in your campaign for example, you can update it once at the campaign level instead of making changes to all of your ads. Tracking templates and custom parameters defined for lower level entities e.g. keyword override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](entity-hierarchy-limits.md). 
@@ -25,9 +25,6 @@ You can manage Final URLs, Custom Parameters, and Tracking Templates with either
 - [Tracking Templates](#trackingtemplatevalidation)  
 - [Final URLs](#finalurlvalidation)  
 - [Custom Parameters](#customparametersvalidation)  
-- [URL Tracking with the Bulk Service](#bulkservice)  
-- [URL Tracking with the Campaign Management Service](#campaignservice)  
-- [URL Tracking with the Reporting Service](#reportingservice)  
 
 ## <a name="trackingtemplatevalidation"></a>Tracking Templates
 Tracking templates can be used in tandem with final URLs to assemble the landing page URL where a user is directed after the ad is clicked. Here is an example:
@@ -79,38 +76,7 @@ Custom parameters are helpful with sharing dynamic information across multiple U
 
 The following validation rules apply to custom parameters.
 -  Custom parameters defined for lower level entities e.g. keyword override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](entity-hierarchy-limits.md). 
--  You may include up to 3 custom parameters per entity.
-
-## <a name="bulkservice"></a>URL Tracking with the Bulk Service
-The [Bulk Service](../bulk-service/bulk-service-reference.md) create, update, and delete operations can be completed using Bulk upload. You can use Bulk download to read back your data. For more information see [Bulk File Schema](../bulk-service/bulk-file-schema.md) and [Bulk Download and Upload](bulk-download-upload.md).
-
-These are the Bing Ads entities with properties for managing URLs that can be accessed using the [Bulk Service](../bulk-service/bulk-service-reference.md).
-
-- [Campaign](../bulk-service/campaign.md)
-- [Ad Group](../bulk-service/ad-group.md)
-- [Ad Group Dynamic Search Ad Target](../bulk-service/ad-group-dynamic-search-ad-target.md) 
-- [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md) 
-- [App Install Ad](../bulk-service/app-install-ad.md)
-- [Expanded Text Ad](../bulk-service/expanded-text-ad.md)
-- [Text Ad](../bulk-service/text-ad.md)
-- [Keyword](../bulk-service/keyword.md)
-- [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md)
-
-## <a name="campaignservice"></a>URL Tracking with the Campaign Management Service
-These are the Bing Ads entities with properties for managing URLs that can be accessed using the [Campaign Management Service](../campaign-management-service/campaign-management-service-reference.md). You can create, read, update, and delete these entities.
-- [AdGroup](../campaign-management-service/adgroup.md)  
-- [AppInstallAd](../campaign-management-service/appinstallad.md)  
-- [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md)  
-- [DynamicSearchAd](../campaign-management-service/dynamicsearchad.md)  
-- [ExpandedTextAd](../campaign-management-service/expandedtextad.md)  
-- [Keyword](../campaign-management-service/keyword.md)  
-- [SitelinkAdExtension](../campaign-management-service/sitelinkadextension.md)  
-- [TextAd](../campaign-management-service/textad.md)  
-
-## <a name="reportingservice"></a>URL Tracking with the Reporting Service
-The following reports can be submitted and downloaded with the [Reporting Service](../reporting-service/reporting-service-reference.md) to get performance data for Final URLs and Tracking Templates. 
-
-The *TrackingTemplate* and *CustomParameters* columns for upgraded URLs are available in several reports for example, the [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md).
+-  Bing Ads will accept the first 3 custom parameter key and value pairs that you include, and any additional custom parameters will be ignored. For customers in the Custom Parameters Limit Increase Phase 1 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 532) for campaigns, ad groups, and keywords, Bing Ads will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. For customers in the Custom Parameters Limit Increase Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 565) for ads, ad extensions, and ad group criterions, Bing Ads will accept the first 8 custom parameter key and value pairs that you include, and if you include more than 8 custom parameters an error will be returned. During calendar year 2019 the limit will be increased from 3 to 8 for all applicable entities and all customers.
 
 ## See Also
 [Bing Ads Web Service Addresses](web-service-addresses.md)

@@ -19,11 +19,11 @@ The following Bulk CSV example would add a new campaign product scope if a valid
 
 ```csv
 Type,Status,Id,Parent Id,Sub Type,Campaign,Ad Group,Client Id,Modified Time,Bid,Name,Product Condition 1,Product Value 1,Product Condition 2,Product Value 2,Product Condition 3,Product Value 3,Product Condition 4,Product Value 4,Product Condition 5,Product Value 5,Product Condition 6,Product Value 6,Product Condition 7,Product Value 7,Is Excluded,Parent Criterion Id,Tracking Template,Custom Parameter
-Format Version,,,,,,,,,,6,,,,,,,,,,,,,,,,,,
+Format Version,,,,,,,,,,6.0,,,,,,,,,,,,,,,,,,
 Campaign Product Scope,Active,,-113,,,,ClientIdGoesHere,,,,Condition,New,CustomLabel0,MerchantDefinedCustomLabel,,,,,,,,,,,,,,
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCampaignProductScope* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCampaignProductScope* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 ```csharp
 var uploadEntities = new List<BulkEntity>();
@@ -82,7 +82,7 @@ var entityUploadParameters = new EntityUploadParameters
     OverwriteResultFile = true,
 };
 
-var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
 For a *Campaign Product Scope* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 

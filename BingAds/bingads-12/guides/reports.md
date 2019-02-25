@@ -25,10 +25,10 @@ You can request Csv, Tsv, or Xml report data. By default if you do not choose an
 
 ```csv
 "Report Name: My Keyword Performance Report"
-"Report Time: 7/7/2018"
+"Report Time: 2/7/2019"
 "Time Zone: (GMT-08:00) Pacific Time (US & Canada); Tijuana"
-"Last Completed Available Day: 7/8/2018 10:15:00 PM (GMT)"
-"Last Completed Available Hour: 7/8/2018 10:15:00 PM (GMT)"
+"Last Completed Available Day: 2/8/2019 10:15:00 PM (GMT)"
+"Last Completed Available Hour: 2/8/2019 10:15:00 PM (GMT)"
 "Report Aggregation: Summary"
 "Report Filter: "
 "Potential Incomplete Data: true"
@@ -41,7 +41,7 @@ You can request Csv, Tsv, or Xml report data. By default if you do not choose an
 "YourAccountId","YourCampaignId","shoe sale","345","Computer","80"
 "YourAccountId","YourCampaignId","shoe sale","345","Smartphone","5"
 
-"@2018 Microsoft Corporation. All rights reserved. "
+"@2019 Microsoft Corporation. All rights reserved. "
 ```
 
 The following report header metadata is included by default. If you don't want the header metadata set [ExcludeReportHeader](../reporting-service/reportrequest.md#excludereportheader) to *true*.
@@ -49,7 +49,7 @@ The following report header metadata is included by default. If you don't want t
 |Header Metadata|Description|
 |-----|-----|
 |Report Name|The [ReportName](../reporting-service/reportrequest.md#reportname) that you chose when the report was submitted.|
-|Report Time|The report time that you chose when the report was submitted. If multiple days were requested, the start and end date will be separated by a comma e.g., "Report Time: 7/1/2018, 7/7/2018".|
+|Report Time|The report time that you chose when the report was submitted. If multiple days were requested, the start and end date will be separated by a comma e.g., "Report Time: 2/1/2019, 2/7/2019".|
 |Time Zone|Indicates which time zone was used to determine the end of the last day of the requested report time. For information about how the time zone affects report availability, see [Time Zones in Reporting](#reptimezones) below.|
 |Last Completed Available Day|The most recent date and time when Bing Ads finished processing data for this report type. The time is always reported relative to UTC, so please ignore the *(GMT)* suffix that is written in the report.|
 |Last Completed Available Hour|The most recent date and time when Bing Ads finished processing data for this report type. The time is always reported relative to UTC, so please ignore the *(GMT)* suffix that is written in the report.|
@@ -60,17 +60,17 @@ The following report header metadata is included by default. If you don't want t
 
 The report column names e.g., *"AccountId","CampaignId","Keyword","KeywordId","DeviceType","Clicks"* are included by default. If you don't want the report columns set [ExcludeColumnHeaders](../reporting-service/reportrequest.md#excludecolumnheaders) to *true*. 
 
-The report footer metadata e.g., *@2018 Microsoft Corporation. All rights reserved.* is included by default. If you don't want the footer metadata set [ExcludeReportFooter](../reporting-service/reportrequest.md#excludereportfooter) to *true*.
+The report footer metadata e.g., *@2019 Microsoft Corporation. All rights reserved.* is included by default. If you don't want the footer metadata set [ExcludeReportFooter](../reporting-service/reportrequest.md#excludereportfooter) to *true*.
 
 ## <a name="columnsdata"></a>Columns that Group the Data
 The attribute columns that you include in a report affects the values within the statistics columns as well as the number or rows. For example, if you request a summary report that includes only *AccountId*, *CampaignId*, *Keyword*, *KeywordId*, and *Clicks*, the clicks column will contain the number of clicks for the keyword regardless of other attributes such as device, match type, and network. 
 
 ```csv
 "Report Name: My Keyword Performance Report"
-"Report Time: 7/7/2018"
+"Report Time: 2/7/2019"
 "Time Zone: (GMT-08:00) Pacific Time (US & Canada); Tijuana"
-"Last Completed Available Day: 7/8/2018 2:55:00 PM (GMT)"
-"Last Completed Available Hour: 7/8/2018 2:55:00 PM (GMT)"
+"Last Completed Available Day: 2/8/2019 2:55:00 PM (GMT)"
+"Last Completed Available Hour: 2/8/2019 2:55:00 PM (GMT)"
 "Report Aggregation: Summary"
 "Report Filter: "
 "Potential Incomplete Data: true"
@@ -81,17 +81,17 @@ The attribute columns that you include in a report affects the values within the
 "YourAccountId","YourCampaignId","shoes delivered","234","1"
 "YourAccountId","YourCampaignId","shoe sale","345","98"
 
-"@2018 Microsoft Corporation. All rights reserved. "
+"@2019 Microsoft Corporation. All rights reserved. "
 ```
 
 If you then include the *DeviceType* column, the report will contain a row for each unique combination of keyword and device type values, and the value in the clicks column for each row is broken down accordingly. 
 
 ```csv
 "Report Name: My Keyword Performance Report"
-"Report Time: 7/7/2018"
+"Report Time: 2/7/2019"
 "Time Zone: (GMT-08:00) Pacific Time (US & Canada); Tijuana"
-"Last Completed Available Day: 7/8/2018 2:55:00 PM (GMT)"
-"Last Completed Available Hour: 7/8/2018 2:55:00 PM (GMT)"
+"Last Completed Available Day: 2/8/2019 2:55:00 PM (GMT)"
+"Last Completed Available Hour: 2/8/2019 2:55:00 PM (GMT)"
 "Report Aggregation: Summary"
 "Report Filter: "
 "Potential Incomplete Data: true"
@@ -106,7 +106,7 @@ If you then include the *DeviceType* column, the report will contain a row for e
 "YourAccountId","YourCampaignId","shoe sale","345","Smartphone","5"
 "YourAccountId","YourCampaignId","shoe sale","345","Tablet","13"
 
-"@2018 Microsoft Corporation. All rights reserved. "
+"@2019 Microsoft Corporation. All rights reserved. "
 ```
 
 For more information about each type of available columns, see [Report Attributes and Performance Statistics](report-attributes-performance-statistics.md).

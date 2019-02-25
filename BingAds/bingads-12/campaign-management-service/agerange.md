@@ -4,10 +4,10 @@ ms.service: bing-ads-campaign-management-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the possible age range values that you can use to target ads to People.
+description: Defines the possible age range values that you can use to target ads to people.
 ---
 # AgeRange Value Set - Campaign Management
-Defines the possible age range values that you can use to target ads to People.
+Defines the possible age range values that you can use to target ads to people.
 
 ## Syntax
 ```xml
@@ -32,7 +32,7 @@ Defines the possible age range values that you can use to target ads to People.
 |<a name="sixtyfiveandabove"></a>SixtyFiveAndAbove|People 65 years of age and older.|
 |<a name="thirtyfivetofourtynine"></a>ThirtyFiveToFourtyNine|People from the ages of 35 through 49 years.|
 |<a name="twentyfivetothirtyfour"></a>TwentyFiveToThirtyFour|People from the ages of 25 through 34 years.|
-|<a name="unknown"></a>Unknown|People with unknown ages.<br/><br/>This option is only available for ad groups in Audience campaigns.|
+|<a name="unknown"></a>Unknown|People with unknown ages.<br/><br/>The unknown option is only available for ad groups in Audience campaigns.|
 
 ## Requirements
 Service: [CampaignManagementService.svc v12](https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc)  

@@ -43,6 +43,7 @@ The entity (account, campaign, or ad group) to ad extension association limit va
 
 |Ad Extension Type|Association Limit Per Entity|
 |------------|---------|
+|[Action Ad Extension](#actionadextension)|20|
 |[App Ad Extension](#appadextension)|Up to the total number of app ad extensions in your account|
 |[Call Ad Extension](#calladextension)|1|
 |[Callout Ad Extension](#calloutadextension)|20|
@@ -52,6 +53,17 @@ The entity (account, campaign, or ad group) to ad extension association limit va
 |[Review Ad Extension](#reviewadextension)|20|
 |[Sitelink Ad Extension](#sitelinkadextension)|20|
 |[Structured Snippet Ad Extension](#structuredsnippetadextension)|20|
+
+### <a name="actionadextension"></a>Action Ad Extensions
+You can manage action ad extensions using the Bulk service ([Action Ad Extension Record](../bulk-service/action-ad-extension.md)) or Campaign Management service ([ActionAdExtension](../campaign-management-service/actionadextension.md)).
+
+The following table defines limits for action ad extension properties.
+
+|Property|Limit|
+|------------|---------|
+|Final Url|The string can contain a maximum of 2,048 characters.|
+|Final Mobile Url|The string can contain a maximum of 2,048 characters.|
+|Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
 ### <a name="appadextension"></a>App Ad Extensions
 You can manage app ad extensions using the Bulk service ([App Ad Extension Record](../bulk-service/app-ad-extension.md)) or Campaign Management service ([AppAdExtension](../campaign-management-service/appadextension.md)).
@@ -160,7 +172,7 @@ The following table defines limits for ad group properties.
 |Tracking Url Template|The string can contain a maximum of 2,048 characters.|
 
 ## <a name="ads"></a>Ads
-Each ad group can contain between one and 100 ads combined, whether the type of ad is [app install](#appinstallad), [dynamic search](#dynamicsearchad), [expanded text](#expandedtextad), [product](#productad), or [responsive (audience network)](#responsivead) ads. Up to 3 of those 100 ads can be active [responsive search ads](#responsivesearchad). 
+Each ad group can contain between one and 100 ads combined for both active and paused ads of all types i.e., [app install](#appinstallad), [dynamic search](#dynamicsearchad), [expanded text](#expandedtextad), [product](#productad), [responsive (audience network)](#responsivead), and [responsive search](#responsivesearchad) ads. Up to 3 of those 100 ads can be active [responsive search](#responsivesearchad) ads. 
 
 Each account can have up to 4 million ads.
 
@@ -170,6 +182,8 @@ Each customer can have up to 20 million ads.
 Create an app install ad if your intention is to drive app downloads, and not necessarily to direct leads to a web site. If you want to direct leads to a web site in addition to driving app downloads, then you should create an expanded text ad with app ad extensions.
 
 > [!NOTE]
+> App Install Ads are available in the United States, Australia, Canada, Germany, France, India, United Kingdom, and on iOS and Android only. For Android apps, Bing Ads only supports apps available in the United States Google Play store.
+> 
 > Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
 
 You can manage dynamic search ads using the Bulk service ([App Install Ad Record](../bulk-service/app-install-ad.md)) or Campaign Management service ([AppInstallAd](../campaign-management-service/appinstallad.md)). The combination of the App Platform, App Store Id, Text, and Title elements make the app install ad unique.
@@ -185,7 +199,7 @@ The following table defines limits for app install ad properties.
 With a dynamic search ads campaign, the ad title and display URL are generated automatically based on the website domain and language that you want to target.
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.
+> This feature is currently available in Canada, France, Germany, the United Kingdom, and the United States.
 
 You can manage dynamic search ads using the Bulk service ([Dynamic Search Ad Record](../bulk-service/dynamic-search-ad.md)) or Campaign Management service ([DynamicSearchAd](../campaign-management-service/dynamicsearchad.md)). The combination of the Path 1, Path 2, and Text elements make the dynamic search ad unique.
 

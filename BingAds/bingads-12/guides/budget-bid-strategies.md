@@ -78,7 +78,6 @@ When you use the Bing Ads API, the default value for Search and DynamicSearchAds
 > - You can continue to set the ad group and keyword bids; however they will not be used by Bing Ads.
 > - Bing Ads will periodically change your stored ad group or keyword bid settings. You can continue to set new bids, however Bing Ads may change them at any time using this bid strategy type.
 > - You can continue to set bid adjustments e.g. for age, gender, or location; however, the multiplier will inform rather than directly modify or override the automated bid. For auto bidding the multiplier is used as a weighted percentage to inform Bing Ads about how much you value the criterion relative to other criteria. For example, a -50% bid multiplier for a mobile device criterion with the Max Conversions bid strategy to indicate that you value conversions from mobile traffic half as much as other device types. The same bid multiplier with the Max Clicks bid strategy would indicate that you value clicks on mobile half as much as other device types. The valid range of values that you can use to inform auto bidding is -100.00 through 30.00.
-> - Whether you chose the *DailyBudgetAccelerated* or *DailyBudgetStandard* budget type, Bing Ads will use the *DailyBudgetStandard* budget type. 
 > 
 > Also note that you must have conversion tracking (via [Universal Event Tracking](universal-event-tracking.md) tag and a conversion goal) set up for the *MaxConversions* and *TargetCpa* bid strategy types to work. To set the *MaxConversions* or *TargetCpa* bid strategy types, the campaign must have at least 15 conversions in the last 30 days. If you try to add or update a campaign to use one of these strategy types, the requested operation will fail if there is not enough conversion history. If an active campaign uses one of these bid strategy types, and then ceases to meet the minimum conversion history requirement at any time, Bing Ads will stop auto bidding but will continue to use the *DailyBudgetStandard* budget type. For a new campaign we recommend that you start with *EnhancedCpc* and then when the campaign has enough conversion history, you can update it to use either the *MaxConversions* or *TargetCpa* bid strategy.
 
@@ -91,11 +90,9 @@ With the *EnhancedCpc* (enhanced cost per click) bid strategy, you set your ad g
 Differing from the *MaxClicks*, *MaxConversions*, and *TargetCpa* bid strategies, with the *EnhancedCpc* bid strategy, Bing Ads will not actually change your stored ad group or keyword bid settings. You can continue to set new bids, and we will use the new values as a starting point next opportunity.
 
 > [!NOTE]
-> The *EnhancedCpc* bid strategy is available only for Dynamic Search Ads, Search, and Shopping campaigns.
-> 
 > The *EnhancedCpc* bid strategy is available to all advertisers worldwide for Dynamic Search Ads and Search campaigns. Note that we will only "enhance" your bids when your ads serve in the following countries/regions: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States. When your ads serve outside of these countries/regions, your manual bids are unaffected.
 > 
-> For Bing Shopping Campaigns, Enhanced CPC is available only to advertisers in France, Germany, United Kingdom, and United States.
+> For Shopping campaigns, Enhanced CPC is available only to advertisers in France, Germany, United Kingdom, and United States.
 
 ### <a name="manualcpc"></a>ManualCpc
 With the *ManualCpc* (manual cost per click) bid strategy, you set your ad group and keyword bids, and Bing Ads uses these bids every time.  
@@ -105,11 +102,6 @@ With the *MaxClicks* bid strategy, you don't need to set ad group or keyword bid
 
 Bing Ads will always respect your overall budget limit, but if you want greater control over your bids while using Maximize Clicks, you can also set a maximum CPC (cost per click). This is an optional limit you can set to make sure that Bing Ads never pays more than a certain amount for each individual click.
 
-> [!NOTE]
-> The *MaxClicks* bid strategy is available only for Dynamic Search Ads and Search campaigns.
-> 
-> The *MaxClicks* bid strategy is available only to advertisers from the following countries: Australia, Canada, France, Germany, India, Italy, Netherlands, Spain, Sweden, Switzerland, United Kingdom, and United States, and works best for campaigns that do not target outside those countries/regions.
-
 ### <a name="maxconversions"></a>MaxConversions
 With the *MaxConversions* bid strategy, you don't need to set ad group or keyword bids. Bing Ads automatically sets your bids in real time to get as many conversions as possible within your budget.
 
@@ -118,9 +110,7 @@ Bing Ads will always respect your overall budget limit, but if you want greater 
 You need to have conversion tracking (a UET tag and a conversion goal) set up and have had at least 15 conversions in the last 30 days in order to use the Maximize Conversions bid strategy. If your campaign falls below 15 conversions over any 30-day period, Maximize Conversions will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
 > [!NOTE]
-> The *MaxConversions* bid strategy is available only for Search campaigns.
-> 
-> The *MaxConversions* bid strategy is available only to advertisers targeting the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
+> The *MaxConversions* bid strategy is available only for Search campaigns to advertisers targeting the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 
 ### <a name="targetcpa"></a>TargetCpa
 With the *TargetCpa* (cost per acquisition) bid strategy, you don't need to set ad group or keyword bids. You set your budget and your target 30-day average CPA, and Bing Ads automatically sets your bids in real time to get you to this average. Some conversions may cost more than your target and some may cost less, but Bing Ads will try to make sure your average cost per conversion is in line with your target.
@@ -130,9 +120,7 @@ Bing Ads will always respect your overall budget limit, but if you want greater 
 You need to have conversion tracking (a UET tag and a conversion goal) set up and have had at least 15 conversions in the last 30 days in order to use the Target CPA bid strategy. If your campaign falls below 15 conversions over any 30-day period, Target CPA will stop optimizing your bids. If this happens with regularity, we recommend switching to a different bid strategy.
 
 > [!NOTE]
-> The *TargetCpa* bid strategy is available only for search ad campaigns.
-> 
-> The *TargetCpa* bid strategy is available only to advertisers targeting the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
+> The *TargetCpa* bid strategy is available only for Search campaigns to advertisers targeting the following countries: Australia, Canada, France, Germany, United Kingdom, and United States.
 
 ## <a name="keywordmatchtypes"></a>Keyword Match Types
 Match type bids help Bing Ads determine how closely you want a search term or other input to match your keyword. The keyword that you bid on is compared to the user's search term in the order of *Exact*, *Phrase*, and then *Broad*.

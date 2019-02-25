@@ -22,11 +22,11 @@ The following Bulk CSV example would add a new Ad Group Custom Audience Associat
 
 ```csv
 Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Bid Adjustment,Name,Audience Id,Audience
-Format Version,,,,,,,,,6,,
+Format Version,,,,,,,,,6.0,,
 Ad Group Custom Audience Association,Paused,,-1111,,,ClientIdGoesHere,,10,,CustomAudienceIdHere,My Custom Audience
 ```
 
-If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupCustomAudienceAssociation* class, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
+If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAdGroupCustomAudienceAssociation* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
 
 
 ```csharp
@@ -78,7 +78,7 @@ var entityUploadParameters = new EntityUploadParameters
     OverwriteResultFile = true,
 };
 
-var uploadResultEntities = (await BulkService.UploadEntitiesAsync(entityUploadParameters)).ToList();
+var uploadResultEntities = (await BulkServiceManager.UploadEntitiesAsync(entityUploadParameters)).ToList();
 ```
 
 For an *Ad Group Custom Audience Association* record, the following attribute fields are available in the [Bulk File Schema](bulk-file-schema.md). 
@@ -172,8 +172,8 @@ The system generated identifier of the ad group that is associated to the custom
 This bulk field maps to the *Id* field of the [Ad Group](ad-group.md) record.
 
 **Add:** Read-only and Required. You must either specify an existing ad group identifier, or specify a negative identifier that is equal to the *Id* field of the parent [Ad Group](ad-group.md) record. This is recommended if you are associating custom audiences to a new ad group in the same Bulk file. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
-**Update:** Read-only  
-**Delete:** Read-only  
+**Update:** Read-only and Required  
+**Delete:** Read-only and Required  
 
 > [!NOTE]
 > For add, update, and delete, you must specify either the [Parent Id](#parentid) or [Ad Group](#adgroup) field.
