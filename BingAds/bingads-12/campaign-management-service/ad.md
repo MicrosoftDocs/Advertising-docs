@@ -27,6 +27,13 @@ Do not try to instantiate an *Ad*. You can create one or more following objects 
     <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="tns:AdEditorialStatus" />
     <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="tns:ArrayOfAppUrl" />
     <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q1:ArrayOfstring" xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="FinalUrlSuffix" nillable="true" type="xs:string">
+      <xs:annotation>
+        <xs:appinfo>
+          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:element>
     <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q2:ArrayOfstring" xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q3:ArrayOfKeyValuePairOfstringstring" xmlns:q3="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
@@ -48,6 +55,7 @@ Do not try to instantiate an *Ad*. You can create one or more following objects 
 |<a name="finalappurls"></a>FinalAppUrls|Reserved for future use.|[AppUrl](appurl.md) array|
 |<a name="finalmobileurls"></a>FinalMobileUrls|The mobile landing page URL. <br/><br/>This element is only supported for [ExpandedTextAd](expandedtextad.md), [ResponsiveAd](responsivead.md), [ResponsiveSearchAd](responsivesearchad.md), and [TextAd](textad.md) objects. It is not supported with the [AppInstallAd](appinstallad.md), [DynamicSearchAd](dynamicsearchad.md), and [ProductAd](productad.md) objects.|**string** array|
 |<a name="finalurls"></a>FinalUrls|The last or final URL where a user is ultimately taken, whether or not the click to final URL path included any redirects.<br/><br/>This element is only supported for [AppInstallAd](appinstallad.md), [ExpandedTextAd](expandedtextad.md), [ResponsiveAd](responsivead.md), [ResponsiveSearchAd](responsivesearchad.md), and [TextAd](textad.md) objects. It is not supported with the [DynamicSearchAd](dynamicsearchad.md) and [ProductAd](productad.md) objects.|**string** array|
+|<a name="finalurlsuffix"></a>FinalUrlSuffix|The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page.<br/><br/>This feature is only available for customers in the Final URL Suffix Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). If you are not in the pilot this property will be ignored and no error will be returned. During calendar year 2019 this feature will be enabled for all customers.|**string**|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br/><br/>Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The unique Bing Ads identifier for the ad.|**long**|
 |<a name="status"></a>Status|The status of the ad.<br/><br/>You can set the ad status to Active or Paused.|[AdStatus](adstatus.md)|

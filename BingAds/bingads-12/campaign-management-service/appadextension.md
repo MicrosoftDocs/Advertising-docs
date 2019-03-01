@@ -23,6 +23,13 @@ You can associate an app ad extension with the account or with campaigns and ad 
         <xs:element minOccurs="0" name="DisplayText" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="FinalAppUrls" nillable="true" type="tns:ArrayOfAppUrl" />
         <xs:element minOccurs="0" name="FinalMobileUrls" nillable="true" type="q41:ArrayOfstring" xmlns:q41="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+        <xs:element minOccurs="0" name="FinalUrlSuffix" nillable="true" type="xs:string">
+          <xs:annotation>
+            <xs:appinfo>
+              <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+            </xs:appinfo>
+          </xs:annotation>
+        </xs:element>
         <xs:element minOccurs="0" name="FinalUrls" nillable="true" type="q42:ArrayOfstring" xmlns:q42="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
         <xs:element minOccurs="0" name="TrackingUrlTemplate" nillable="true" type="xs:string" />
         <xs:element minOccurs="0" name="UrlCustomParameters" nillable="true" type="tns:CustomParameters" />
@@ -43,6 +50,7 @@ You can associate an app ad extension with the account or with campaigns and ad 
 |<a name="finalappurls"></a>FinalAppUrls|Reserved for future use.|[AppUrl](appurl.md) array|
 |<a name="finalmobileurls"></a>FinalMobileUrls|Reserved for future use.|**string** array|
 |<a name="finalurls"></a>FinalUrls|Reserved for future use.|**string** array|
+|<a name="finalurlsuffix"></a>FinalUrlSuffix|Reserved for future use.|**string**|
 |<a name="trackingurltemplate"></a>TrackingUrlTemplate|Reserved for future use.|**string**|
 |<a name="urlcustomparameters"></a>UrlCustomParameters|Reserved for future use.|[CustomParameters](customparameters.md)|
 
