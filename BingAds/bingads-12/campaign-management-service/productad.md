@@ -43,6 +43,7 @@ The [ProductAd](productad.md) object derives from the [Ad](ad.md) object, and in
 |<a name="finalappurls"></a>FinalAppUrls|Not supported for product ads.|[AppUrl](appurl.md) array|
 |<a name="finalmobileurls"></a>FinalMobileUrls|Not supported for product ads.|**string** array|
 |<a name="finalurls"></a>FinalUrls|Not supported for product ads.|**string** array|
+|<a name="finalurlsuffix"></a>FinalUrlSuffix|Reserved.|**string**|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br/><br/>There are currently not any ForwardCompatibilityMap key and value pairs that are applicable for product ads.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The unique Bing Ads identifier for the ad.<br/><br/>**Add:** Read-only<br/>**Update:** Required and Read-only|**long**|
 |<a name="status"></a>Status|The status of the ad.<br/><br/>You can set the ad status to Active or Paused.<br/><br/>**Add:** Optional<br/>**Update:** Optional|[AdStatus](adstatus.md)|

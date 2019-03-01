@@ -19,7 +19,7 @@ If you are not finding the information you need to solve your problem in the dev
 ### Q. How can I find out about changes?
 The [Release Notes](release-notes.md) and [Migration Guide](migration-guide.md) are great resources to start with. 
 
-You can sign up for the monthly newsletter via the [News](https://developers.bingads.microsoft.com/News) tab of the Developer Portal, and that's also where the latest [blog](https://blogs.msdn.microsoft.com/bing_ads_api/) announcements are aggregated. 
+You can sign up for the monthly newsletter via the [News](https://developers.bingads.microsoft.com/News) tab of the Developer Portal, and that's also where the latest [blog](https://go.microsoft.com/fwlink/?linkid=2026358) announcements are aggregated. 
 
 ## Get Started
 
@@ -35,7 +35,7 @@ We have heard requests for additional SDKs e.g. Perl and Ruby, although there is
 In addition to the [Code Examples](code-examples.md) and services [Reference](reference.md) sections, you'll find code snippets in many of the technical guides e.g., the [Get Started](get-started.md) guide. You can use the language selector at the top or right of those pages to view examples in CSharp, Java, Php, or Python. When you choose a language, the setting is retained as you navigate other pages. The language selector will only include languages that have samples for that specific page, and will default to C# if the language you had previously set is not available for the page that you navigated to. 
 
 ### Q. Which API version should I use?
-You should always use the latest version as soon as we announce support via the [blog](https://blogs.msdn.microsoft.com/bing_ads_api/) or [release notes](release-notes.md). 
+You should always use the latest version as soon as we announce support via the [blog](https://go.microsoft.com/fwlink/?linkid=2026358) or [release notes](release-notes.md). 
 
 ### Q. How can I view documentation and code examples for different versions of the API?
 To navigate between versions, use the version selector near the table of contents at the top and left side of the page. 

@@ -26,8 +26,8 @@ The *GetAccountMigrationStatusesRequest* object defines the [body](#request-body
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accountids"></a>AccountIds|The identifiers of each account to request migration status.<br/><br/>**Required**: Yes|**long** array|
-|<a name="migrationtype"></a>MigrationType|Filters the returned migration status by migration type.<br/><br/>Currently there are no applicable migrations in progress and this element is reserved for future use.<br/><br/>**Required**: Yes|**string**|
+|<a name="accountids"></a>AccountIds|The identifiers of each account to request migration status.|**long** array|
+|<a name="migrationtype"></a>MigrationType|Filters the returned migration status by migration type.<br/><br/>Currently there are no applicable migrations in progress and this element is reserved for future use.|**string**|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]

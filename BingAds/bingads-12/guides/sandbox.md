@@ -10,10 +10,14 @@ description: Bing Ads provides an API sandbox environment where you can test you
 Bing Ads provides an API sandbox environment where you can test your application before deploying it to the production environment. Ads that you create in sandbox are not served. Supported services in sandbox vary from production. To get the web service addresses for supported services, see [Bing Ads Web Service Addresses](web-service-addresses.md).
 
 > [!NOTE]
-> Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. Notifications are posted in the [Bing Ads Developer Blog](https://blogs.msdn.microsoft.com/bing_ads_api/).
+> Sandbox may be down for maintenance, with or without prior notification. Efforts will be made to notify users before sandbox downtime. 
 
 ## <a name="access"></a>Get Sandbox Access
-The sandbox and production environments use separate credentials. Although in production you need to get your own developer token, all Bing Ads customers can use the following universal developer token in sandbox: **BBD37VB98**
+The sandbox and production environments use separate credentials. Although in production you need to get your own developer token, all Bing Ads customers can use the following universal developer token in sandbox. 
+
+```string
+BBD37VB98
+```
 
 To authenticate with a Microsoft Account in sandbox you will follow the same work flow as described in [Authentication with OAuth](authentication-oauth.md) for production; however, you will use different endpoints.
 

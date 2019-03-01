@@ -24,7 +24,7 @@ The *SetAccountPropertiesRequest* object defines the [body](#request-body) and [
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="accountproperties"></a>AccountProperties|The list of account properties that you want to set.<br/><br/>For example you can enable Microsoft Click Id auto-tagging for tracking offline conversions.<br/><br/>Partial success is not supported i.e., if any account property cannot be set, then none of the account properties will be set.<br/><br/>**Required**: Yes|[AccountProperty](accountproperty.md) array|
+|<a name="accountproperties"></a>AccountProperties|The list of account properties that you want to set.<br/><br/>For example, you can enable Microsoft Click Id auto-tagging for tracking offline conversions.<br/><br/>Partial success is not supported i.e., if any account property cannot be set, then none of the account properties will be set.|[AccountProperty](accountproperty.md) array|
 
 ### <a name="request-header"></a>Request Header Elements
 [!INCLUDE[request-header](./includes/request-header.md)]
