@@ -26,7 +26,7 @@ The Customer Management service defines the following service operations.
 |[GetUser](getuser.md)|Gets the details of a user.|1 *UserId*|
 |[GetUsersInfo](getusersinfo.md)|Gets a list of objects that contains user identification information, for example the user name and identifier of the user.|1 *CustomerId*|
 |[SearchAccounts](searchaccounts.md)|Searches for accounts that match a specified criteria.|1 *Predicates*|
-|[SearchClientLinks](searchclientlinks.md)|This feature is not supported in sandbox.Searches for the client links for the customer of the current authenticated user, filtered by the search criteria.|1 *Predicates*|
+|[SearchClientLinks](searchclientlinks.md)|Searches for the client links for the customer of the current authenticated user, filtered by the search criteria.|1 *Predicates*|
 |[SearchCustomers](searchcustomers.md)|Searches for customers that match a specified criteria.|10 *Predicates*|
 |[SearchUserInvitations](searchuserinvitations.md)|Searches for user invitations that match a specified criteria.|1 *Predicates*|
 |[SendUserInvitation](senduserinvitation.md)|Sends an email invitation for someone to manage your Bing Ads accounts.|1 *UserInvitation*|

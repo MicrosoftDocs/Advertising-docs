@@ -1398,12 +1398,18 @@
           href: ../campaign-management-service/adadditionalfield.md
         - name: AdEditorialStatus
           href: ../campaign-management-service/adeditorialstatus.md
+        - name: AdExtensionAdditionalField
+          href: ../campaign-management-service/adextensionadditionalfield.md
         - name: AdExtensionEditorialStatus
           href: ../campaign-management-service/adextensioneditorialstatus.md
         - name: AdExtensionStatus
           href: ../campaign-management-service/adextensionstatus.md
         - name: AdExtensionsTypeFilter
           href: ../campaign-management-service/adextensionstypefilter.md
+        - name: AdGroupAdditionalField
+          href: ../campaign-management-service/adgroupadditionalfield.md
+        - name: AdGroupCriterionAdditionalField
+          href: ../campaign-management-service/adgroupcriterionadditionalfield.md
         - name: AdGroupCriterionEditorialStatus
           href: ../campaign-management-service/adgroupcriterioneditorialstatus.md
         - name: AdGroupCriterionStatus
@@ -1480,6 +1486,8 @@
           href: ../campaign-management-service/intentoption.md
         - name: ItemAction
           href: ../campaign-management-service/itemaction.md
+        - name: KeywordAdditionalField
+          href: ../campaign-management-service/keywordadditionalfield.md
         - name: KeywordEditorialStatus
           href: ../campaign-management-service/keywordeditorialstatus.md
         - name: KeywordStatus

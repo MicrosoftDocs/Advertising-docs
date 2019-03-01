@@ -215,7 +215,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
 The URL of the webpage to take the user to when they click the ad. The keyword's destination URL is used if specified; otherwise, the ad's destination URL is used.
 
 > [!IMPORTANT]
-> Starting November 2018 the keyword destination URL cannot be added or updated. You can use [Final Url](#finalurl) instead, otherwise Bing Ads will use the ad's Final URL. For more details see [Migrating your keyword destination URLs to final URLs](https://advertise.bingads.microsoft.com/en-us/blog/post/august-2018/migrating-your-keyword-destination-urls-to-final-urls).
+> As of November 2018 the keyword destination URL cannot be added or updated. You can use [Final Url](#finalurl) instead, otherwise Bing Ads will use the ad's Final URL. For more details see [Migrating your keyword destination URLs to final URLs](https://advertise.bingads.microsoft.com/en-us/blog/post/august-2018/migrating-your-keyword-destination-urls-to-final-urls).
 
 **Add:** Not allowed  
 **Update:** Not allowed     
