@@ -13,8 +13,8 @@ ms.author: "scottwhi"
 For information about changes that were included with each release, see the following sections.
 
 
-## December 17, 2018
-- Removed the share of voice (SOV) warning about including the following dimension columns if your request also includes SOV columns. Previously, if you included the dimension columns, the report's data would include duplicate SOV data &mdash; this is no longer an issue.  
+## March 8, 2019
+- Removed the share of voice (SOV) warning about including the following dimension columns if your request also includes SOV columns. Previously, if you included the dimension columns, the report's data would include duplicate SOV data. This is no longer an issue and you may include these column with SOV columns.  
   - AdvancedBookingWindow
   - CheckinDay
   - DateType
