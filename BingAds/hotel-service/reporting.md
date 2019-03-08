@@ -298,26 +298,6 @@ The following are the SOV columns:
 - MissedImpressionsOther
 - MissedImpressionsSpendingCapReached
 
-
-> [!IMPORTANT]
-> Do not include the following dimension columns if your request includes SOV columns. 
-> - AdvancedBookingWindow
-> - CheckinDay 
-> - DateType 
-> - LengthOfStay  
-> - SiteType
-> - SlotType  
-> - Usercountry  
->  
-> If you specify any of these dimension column, the request succeeds but the report's data includes duplicate SOV data. For example, in the following report, the 50% impression share is the overall share for the hotel, not for each slot type.  
->
-> |Date|Hotel ID|Clicks|Impr.|Slot type|Eligible impr.|Impr. share  
-> |-|-|-|-|-|-|-  
-> |5/22/2018|1|10|20|A|100|50  
-> |5/22/2018|1|9|10|A|100|50  
-> |5/22/2018|1|5|10|M|100|50  
-
-
 > [!NOTE]
 > SOV data is available beginning May 1, 2018. If you specify a reporting period that includes dates prior to May 1, 2018, the SOV fields will contain a zero (0) value for dates prior to 1 May.
 

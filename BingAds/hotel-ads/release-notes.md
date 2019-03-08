@@ -14,6 +14,17 @@ For information about changes that were included with each release, see the foll
 
 
 ## December 17, 2018
+- Removed the share of voice (SOV) warning about including the following dimension columns if your request also includes SOV columns. Previously, if you included the dimension columns, the report's data would include duplicate SOV data &mdash; this is no longer an issue.  
+  - AdvancedBookingWindow
+  - CheckinDay
+  - DateType
+  - LengthOfStay
+  - SiteType
+  - SlotType
+  - UserCountry 
+
+
+## December 17, 2018
 
 - Updated the [hotel feed schema](../hotel-feed/reference.md) to include the following [\<listing>](../hotel-feed/reference.md#listingtype) elements:  
   - \<category>
