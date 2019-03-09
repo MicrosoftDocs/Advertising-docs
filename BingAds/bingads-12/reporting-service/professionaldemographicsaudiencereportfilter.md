@@ -4,10 +4,10 @@ ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines the criteria to use to filter the professional demographics audience report for Audience campaigns.
+description: Defines the criteria to use to filter the professional demographics audience report.
 ---
 # ProfessionalDemographicsAudienceReportFilter Data Object - Reporting
-Defines the criteria to use to filter the professional demographics audience report for Audience campaigns.
+Defines the criteria to use to filter the professional demographics audience report.
 
 ## Syntax
 ```xml

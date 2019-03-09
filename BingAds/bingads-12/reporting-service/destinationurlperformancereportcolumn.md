@@ -64,6 +64,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
     <xs:enumeration value="AdStatus" />
     <xs:enumeration value="CustomerId" />
     <xs:enumeration value="CustomerName" />
+    <xs:enumeration value="FinalUrlSuffix" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -106,6 +107,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="finalappurl"></a>FinalAppUrl|Reserved for future use.|
 |<a name="finalmobileurl"></a>FinalMobileUrl|The Final Mobile URL of the ad, keyword, or criterion.<br/><br/>Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
 |<a name="finalurl"></a>FinalUrl|The Final URL of the ad, keyword, or criterion.<br/><br/>Only the first URL in the list is reported. If the URL contains dynamic text substitution parameters (for example, {param1}), the report will contain the URL before substitution.|
+|<a name="finalurlsuffix"></a>FinalUrlSuffix|The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL.|
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
 |<a name="network"></a>Network|The current network setting of an ad group. The possible values include AOL search, Bing and Yahoo! search, Content, and Syndicated search partners.|

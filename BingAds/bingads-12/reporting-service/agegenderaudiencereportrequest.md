@@ -4,12 +4,12 @@ ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines an age and gender audience report request for Audience campaigns.
+description: Defines an age and gender audience report request.
 ---
 # AgeGenderAudienceReportRequest Data Object - Reporting
-Defines an age and gender audience report request for Audience campaigns. Use this report to discover how your campaigns and ad groups are resonating with different age groups and genders.
+Defines an age and gender audience report request. Use this report to discover how your campaigns and ad groups are resonating with different age groups and genders.
 
-You can request the impressions, clicks, spend, and average cost-per-click for each ad group, organized by gender and age group. Please note that this report only reflects your Audience Campaign data.
+You can request the impressions, clicks, spend, and average cost-per-click for each ad group, organized by gender and age group. 
 
 To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
