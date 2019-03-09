@@ -32,7 +32,7 @@ The Reporting service defines the following data objects.
 |[AdPerformanceReportFilter](adperformancereportfilter.md)|Defines the criteria to use to filter the ad performance report request data.|
 |[AdPerformanceReportRequest](adperformancereportrequest.md)|Defines an ad performance report request.|
 |[AgeGenderAudienceReportFilter](agegenderaudiencereportfilter.md)|Defines the criteria to use to filter the age and gender audience report data.|
-|[AgeGenderAudienceReportRequest](agegenderaudiencereportrequest.md)|Defines an age and gender audience report request for Audience campaigns.|
+|[AgeGenderAudienceReportRequest](agegenderaudiencereportrequest.md)|Defines an age and gender audience report request.|
 |[AgeGenderDemographicReportFilter](agegenderdemographicreportfilter.md)|Defines the criteria to use to filter the age and gender demographic report data.|
 |[AgeGenderDemographicReportRequest](agegenderdemographicreportrequest.md)|Defines an age and gender demographic report request.|
 |[ApiFaultDetail](apifaultdetail.md)|Defines a fault object that operations return when web service-specific errors occur, such as when the request message contains incomplete or invalid data.|
@@ -77,8 +77,8 @@ The Reporting service defines the following data objects.
 |[ProductPartitionUnitPerformanceReportRequest](productpartitionunitperformancereportrequest.md)|Defines a product partition unit performance report request that aggregates the performance data by product partition unit for a specified time period.|
 |[ProductSearchQueryPerformanceReportFilter](productsearchqueryperformancereportfilter.md)|Defines the criteria to use to filter the Bing Shopping product search query performance report data.|
 |[ProductSearchQueryPerformanceReportRequest](productsearchqueryperformancereportrequest.md)|Defines a Bing Shopping campaign product search query performance report request.|
-|[ProfessionalDemographicsAudienceReportFilter](professionaldemographicsaudiencereportfilter.md)|Defines the criteria to use to filter the professional demographics audience report for Audience campaigns.|
-|[ProfessionalDemographicsAudienceReportRequest](professionaldemographicsaudiencereportrequest.md)|Defines a professional demographics audience report request for Audience campaigns.|
+|[ProfessionalDemographicsAudienceReportFilter](professionaldemographicsaudiencereportfilter.md)|Defines the criteria to use to filter the professional demographics audience report.|
+|[ProfessionalDemographicsAudienceReportRequest](professionaldemographicsaudiencereportrequest.md)|Defines a professional demographics audience report request.|
 |[PublisherUsagePerformanceReportFilter](publisherusageperformancereportfilter.md)|Defines the criteria to use to filter the publisher usage performance report data.|
 |[PublisherUsagePerformanceReportRequest](publisherusageperformancereportrequest.md)|Defines a publisher usage performance report request.|
 |[ReportRequest](reportrequest.md)|Defines the base object for all report requests.|
