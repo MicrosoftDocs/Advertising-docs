@@ -45,7 +45,7 @@ Example usage:
 Executes the function for each account that the selector returns. After the function is executed for all selected accounts, Bing calls the optional callback function.
 
 > [!NOTE]
-> To use this method, the selector must return no more than 50 accounts. If the selector returns more than 50 accounts, Bing does not execute the function for any of the accounts. To limit the number of accounts the selector returns, consider using the `withLimit` method.
+> The script may execute a maximum of 50 accounts in parallel each time the script runs. You may call this method once or multiple times but the total number of accounts all calls process must not exceed 50. If a call exceeds the 50 account maximum for the script, none of the accounts in the call are executed. To limit the number of accounts the selector returns, consider using the `withLimit` or `withIds` method.  
 
 The *functionName* function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. If your function returns a value, you must specify a callback function to capture the return values. The following shows the callback function's signature. The returned values are passed as an array of [ExecutionResult](./ExecutionResult.md) objects.
 
@@ -81,7 +81,7 @@ void|Returns nothing.
 Executes the function for each account that the selector returns. After the function executes for all selected accounts, Bing calls the optional callback function.
 
 > [!NOTE]
-> To use this method, the selector must return no more than 50 accounts. If the selector returns more than 50 accounts, Bing does not execute the function for any of the accounts. To limit the number of accounts the selector returns, consider using the `withLimit` method.
+> The script may execute a maximum of 50 accounts in parallel each time the script runs. You may call this method once or multiple times but the total number of accounts all calls process must not exceed 50. If a call exceeds the 50 account maximum for the script, none of the accounts in the call are executed. To limit the number of accounts the selector returns, consider using the `withLimit` or `withIds` method.  
 
 The *functionName* function may return a value as a string. To return a complex object, use the JSON.stringify method to convert the object to a string. You can then use the JSON.parse method to convert the string back into an object. If your function returns a value, you must specify a callback function to capture the return values. The following shows the callback function's signature. The returned values are passed as an array of [ExecutionResult](./ExecutionResult.md) objects.
 

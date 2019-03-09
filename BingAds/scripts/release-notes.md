@@ -14,6 +14,13 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## March 9, 2019
+
+The following is a documentation only change.
+
+- Added the [Find disapproved ads](examples/execute-in-parallel.md) example script. To find out what this script and the other example scripts do, see [Accessing Google services](examples/accessing-google-services.md).
+
+
 ## February 11, 2019
 
 Added the following methods to the [BingAdsAccountStats](reference/BingAdsAccountStats.md) object.

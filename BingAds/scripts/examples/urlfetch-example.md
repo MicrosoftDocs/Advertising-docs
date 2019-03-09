@@ -34,7 +34,7 @@ function main() {
   // To get a fileId or spreadsheetId, please see
   // https://developers.google.com/sheets/api/guides/concepts#spreadsheet_id.
  
-  // The file must contain a single bid multipler value (for example,1.1),
+  // The file must contain a single bid multiplier value (for example,1.1),
   // which is used to update keyword bids.
   const fileId = 'your-file-id';
  

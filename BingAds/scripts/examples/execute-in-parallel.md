@@ -11,17 +11,22 @@ ms.topic: "article"
 
 # Using executeInParallel to discover disapproved ads
 
-This example script shows how to use the [BingAdsAccountSelector](../reference/BingAdsAccountSelector.md) object's **executeInParallel** method to discover disapproved ads for one or more accounts.
+This example script shows how to use the [BingAdsAccountSelector](../reference/BingAdsAccountSelector.md) object's **executeInParallel** method to discover disapproved ads for one or more accounts. 
 
-- Read a file from Google Drive, which contains a single bid multiplier value;
-- Read a spreadsheet containing keyword IDs, use the IDs to get the keywords, and multiply the keywords' bids by the bid multiplier;
-- Write the new and old bid values back to the spreadsheet;
-- Sends an email notification that the bids were updated.
+The following is the high-level flow of the script. The script is meant to be scheduled instead of run manually. For more details, read the inline comments.
+
+- Reads a file from Google Drive, which contains a list of objects. Each object contains an account ID and a time stamp of when the account was last checked for disapproved ads. The first time the script runs, the file shouldn't exist, so it can build the complete list of accounts that you have access to at the time. Note that the script won't pick up any new accounts that you add after the first time the script runs. If you add accounts, you should delete the file, so it generates a new list of accounts.
+- Sorts the account list so the accounts that haven't been checked or are the oldest show up first.
+- Gets up to the first 50 account IDs from the list and calls the selector's executeInParallel function. Scripts runs the findDisapprovedAds function for each account in parallel.
+- Scripts then executes the reportResults function after all the findDisapprovedAds function calls complete. The reportResults function opens a spreadsheet if it exists; otherwise, it creates a new spreadsheet. The script uses Google Sheets to create a sheet for each account if it doesn't already exist. The sheet includes a row for each disapproved ad in the account (each row includes the ad's details), if any.
+- Then, the reportResults function uses Google Mail to send an email notification to the specified recipients. The email indicates if an account contains disapproved ads and if it does, provides a link to the sheet where they can see the details.
+- Finally, it updates the lastChecked field for each account and saves the file. The next time the script runs, it sorts the list of accounts by the lastChecked time stamp. This means that all accounts that haven't been processed or are the oldest will be first in the list.
 
 Before using this example, see [Getting an access token](getting-access-token.md) for options on getting an access token to use in this example.
 
 ```javascript
-// Update the list of email addresses where you want notifications sent to.
+// Update the list with email addresses of the recipients that
+// you want notifications sent to.
 const NOTIFY = ['someone@example.com'];
 
 // If you chose option 1 in Getting an access token, set accessToken to 
@@ -58,6 +63,11 @@ function main() {
     // has access to. For each account, create an object that contains
     // the id field and lastChecked field. Then add it to accountsList.
 
+    // Note that if the file exists, accountsList will not include any 
+    // new accounts that were added since the script last ran. To ensure
+    // that the list contains all accounts, consider deleting the file
+    // periodically or after you add an account.
+
     if (accountsList.length === 0) {
         const accounts = AccountsApp.accounts().get();
  
@@ -71,29 +81,38 @@ function main() {
         }
     }
  
-    // Sort the list by lastChecked. This ensures all newly added accounts 
-    // (i.e., lastChecked: '') in accountsList are first.
+    // Sort the list by lastChecked. This ensures that unprocessed accounts 
+    // (i.e., lastChecked: '') in accountsList are first in the list. If all 
+    // accounts have been processed, the accounts with the oldest lastChecked 
+    // time stamp are first.
 
     accountsList.sort((a, b) => a.lastChecked.localeCompare(b.lastChecked));
  
-    // Save the list of JSON objects back to the file.
+    // Save the list of JSON objects back to the file. The file is opened
+    // again in reportResults() to update the lastChecked field with
+    // the time stamp of when the account was processed.
 
     saveObject(accountsList, ACCOUNTS_FILE_NAME);
  
     // Get a maximum of the first 50 accounts (ACCOUNT_BATCH_SIZE) from accountsList.
+    // Each time the script runs, it grabs the next 50 accounts until eventually
+    // The script processes all accounts.
 
     const toCheck = accountsList.slice(0, ACCOUNT_BATCH_SIZE).map(x => x.id);
  
     Logger.log('Checking the following accounts: ' + JSON.stringify(toCheck));
  
     // Use the executeInParallel method to execute the findDisapprovedAds function
-    // for all 50 accounts.
+    // for all 50 accounts in parallel. When findDisapprovedAds finishes with all
+    // 50 accounts, Scripts calls the reportResults function. 
 
     AccountsApp.accounts().withIds(toCheck).executeInParallel('findDisapprovedAds', 'reportResults');
 }
 
-// The executeInParallel call in main() tells Scripts to execute this function
-// for each account the selector returns.
+// The script executes this function in parallel for each account that the 
+// BingAdsAccountSelector returns (see the executeInParallel call in main()).
+// Each account in the selector becomes the current account for each instance
+// of findDisapprovedAds().
  
 function findDisapprovedAds() {
     const currentAccountInfo = `${BingAdsApp.currentAccount().getName()} ${BingAdsApp.currentAccount().getAccountId()} (${BingAdsApp.currentAccount().getAccountNumber()})`;
@@ -109,6 +128,7 @@ function findDisapprovedAds() {
         .get();    
  
     // Contains a list of ad fields.
+
     const columns = [
         { name: 'Campaign', func: ad => ad.getCampaign().getName() },
         { name: 'Campaign Id', func: ad => ad.getCampaign().getId() },
@@ -130,16 +150,18 @@ function findDisapprovedAds() {
     const results = [];
  
     // For each disapproved ad, create a result object, which is
-    // a dictionary with the above column names.
+    // a dictionary with the above column names as keys.
 
     while (ads.hasNext()) {
         const ad = ads.next();
  
-        // Creates the result object and executes the function in columns 
+        // Creates the result object and executes the function in 'columns' 
         // to get the field's value.
 
         const adResult = columns.reduce((temp, column) => { temp[column.name] = column.func(ad); return temp }, {});
  
+        // Adds the field (key/value) to the dictionary.
+
         results.push(adResult);
     }
  
@@ -148,8 +170,11 @@ function findDisapprovedAds() {
     const currentAccount = BingAdsApp.currentAccount();
  
     // Create an object that identifies the account and its
-    // list of disapproved ads. Convert it to a string that's 
-    // past to the reportResults function.
+    // list of disapproved ads, if any. Convert it to a string that's 
+    // past to the reportResults function when all instances of
+    // this function finish.
+    // Note that you could refactor the script to return only accounts
+    // that have disapproved ads.
  
     return JSON.stringify({
         customerId: currentAccount.getCustomerId(),        
@@ -162,17 +187,19 @@ function findDisapprovedAds() {
 }
 
 // Scripts calls this function for each account when the findDisapprovedAds
-// finishes processing the account.
+// finishes processing all accounts.
 
 // This function creates a spreadsheet that contains a sheet for each
-// account with disapproved ads. It then sends email notification about
-// the disapproved ads to the list of recipients in NOTIFY.
+// account. It then sends an email notification to the list of 
+// recipients in 'NOTIFY'.
   
 function reportResults(results) {
     Logger.log('Reporting results');    
  
     const sheetResults = [];
  
+    // Create a sheet object for each account in the list of results.
+
     for (const result of results) {
         if (!result.getReturnValue()) {
             Logger.log(`Got an error in result: ${result.getError()}`);
@@ -187,15 +214,19 @@ function reportResults(results) {
         sheetResults.push({ accountResult: accountResult, sheetName: sheetName });
     }
  
-    // The .replace function removes the u2003 character that toLocaleString adds
-    // to the date string.
+    // Gets a time stamp. The .replace function removes the u2003 character that 
+    // toLocaleString() adds to the date string.
 
     const dateTimeStr = new Date().toLocaleString(DATETIME_CULTURE, { timeZone: DATETIME_TIMEZONE }).replace(/\u200e/g, '');
  
+    // Create the spreadsheet file.
+
     const spreadsheetName = `${SPREADSHEET_PREFIX} ${dateTimeStr}`;
  
     const spreadsheetId = createFileIfNotExists(spreadsheetName, true);
  
+    // Adds a sheet for each account to the spreadsheet.
+
     const createSheetsResponse = createSheets(spreadsheetId, sheetResults.map(x => x.sheetName));
  
     // Get the original accounts list, so the script can
@@ -206,13 +237,17 @@ function reportResults(results) {
     const accountsById = accountsList.reduce((map, acc) => (map[acc.id] = acc, map), {});
  
     const sheetsByName = createSheetsResponse.updatedSpreadsheet.sheets.reduce((map, sheet) => (map[sheet.properties.title] = sheet, map), {});
+
+    // Gets a link to the file to include in the email notification.
  
     const fileUrl = shareFileWithLink(spreadsheetId);
  
     const spreadsheetRows = [];
  
     const summaryEmailData = [];
- 
+
+    // Add rows for each disapproved ads to each sheet.
+
     for (const sheetResult of sheetResults) {        
         const accountResult = sheetResult.accountResult;
  
@@ -251,8 +286,8 @@ function reportResults(results) {
     saveObject(accountsList, ACCOUNTS_FILE_NAME);
 }
  
-// Send an email to recipients with a list of the accounts that
-// have disapproved ads. The recipient can click the embedded 
+// Send an email to recipients with a list of the accounts any
+// disapproved ads. The recipient can click the embedded 
 // link to access the spreadsheet that contains details about
 // the ads that were disapproved.
 
@@ -304,6 +339,8 @@ ${messageHtml}`;
         gmailApi.users.messages.send({ userId: 'me' }, { raw: Base64.encode(email) });
     }
 }
+
+// Calls to get Google services.
  
 const getSheetsApi = (() => {
     let sheetsApi;
@@ -319,6 +356,8 @@ const getGmailApi = (() => {
     let gmailApi;
     return () => gmailApi || (gmailApi = GoogleApis.createGmailService(credentials));
 })();
+
+// Creates each sheet in the spreadsheet.
  
 function createSheets(spreadsheetId, sheetNames) {
     const requests = sheetNames.map(x => ({ addSheet: { properties: { title: x } } }));
@@ -330,6 +369,8 @@ function createSheets(spreadsheetId, sheetNames) {
  
     return response;
 }
+
+// Writes the disapproved ads to each sheet.
  
 function writeRowsToSpreadsheet(spreadsheetRows, spreadsheetId) {
     const requests = spreadsheetRows.map(sheetRows => ({ 
@@ -416,6 +457,9 @@ function loadObject(fileName) {
         return null;
     }
 }
+
+// Common Google library code that all Scripts that access Google
+// services will include.
  
 var GoogleApis;
 (function (GoogleApis) {
