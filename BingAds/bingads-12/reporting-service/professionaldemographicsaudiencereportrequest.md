@@ -4,12 +4,12 @@ ms.service: bing-ads-reporting-service
 ms.topic: article
 author: eric-urban
 ms.author: eur
-description: Defines a professional demographics audience report request for Audience campaigns.
+description: Defines a professional demographics audience report request.
 ---
 # ProfessionalDemographicsAudienceReportRequest Data Object - Reporting
-Defines a professional demographics audience report request for Audience campaigns. Use this report to discover how your campaigns and ad groups are resonating with different companies, industries, and job functions.
+Defines a professional demographics audience report request. Use this report to discover how your campaigns and ad groups are resonating with different companies, industries, and job functions.
 
-You can request the impressions, clicks, spend, and average cost-per-click for each ad group, organized by company, industry, and job function. Please note that this report only reflects your Audience Campaign data.
+You can request the impressions, clicks, spend, and average cost-per-click for each ad group, organized by company, industry, and job function. 
 
 To request a report of this type, pass this object to the [SubmitGenerateReport](submitgeneratereport.md) operation.
 
