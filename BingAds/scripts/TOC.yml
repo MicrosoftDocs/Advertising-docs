@@ -64,7 +64,14 @@
     - name: Using UrlFetchApp 
       href: examples/fetch-resources.md 
     - name: Accessing Google services 
-      href: examples/accessing-google-services.md 
+      href: examples/accessing-google-services.md
+      items: 
+        - name: Getting Google access token 
+          href: examples/getting-access-token.md 
+        - name: Updating keyword bids 
+          href: examples/urlfetch-example.md 
+        - name: Finding disapproved ads 
+          href: examples/execute-in-parallel.md 
 - name: Script reference
   href: reference-overview.md 
   items:    
