@@ -9,7 +9,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# Getting an access token for accessing Google services
+# Getting an access token used to accessing Google services
 
 Before you can run scripts that access your Google resources, you need to get credentials. There are a couple of options for getting the credentials:
 

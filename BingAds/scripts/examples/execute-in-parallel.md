@@ -13,14 +13,14 @@ ms.topic: "article"
 
 This example script shows how to use the [BingAdsAccountSelector](../reference/BingAdsAccountSelector.md) object's **executeInParallel** method to discover disapproved ads for one or more accounts. 
 
-The following is the high-level flow of the script. The script is meant to be scheduled instead of run manually. For more details, read the inline comments.
+The following is the high-level flow of the script. For more details, read the inline comments.
 
-- Reads a file from Google Drive, which contains a list of objects. Each object contains an account ID and a time stamp of when the account was last checked for disapproved ads. The first time the script runs, the file shouldn't exist, so it can build the complete list of accounts that you have access to at the time. Note that the script won't pick up any new accounts that you add after the first time the script runs. If you add accounts, you should delete the file, so it generates a new list of accounts.
+- Reads a file from Google Drive. The file contains a list of objects. Each object contains an account ID and a time stamp of when the account was last checked for disapproved ads. The first time the script runs the file shouldn't exist. If the file doesn't exist, the script builds the complete list of accounts that you have access to. Note that the script won't pick up any new accounts that you add after the file is built. If you add accounts, you should delete the file, so it generates a new list of accounts.
 - Sorts the account list so the accounts that haven't been checked or are the oldest show up first.
-- Gets up to the first 50 account IDs from the list and calls the selector's executeInParallel function. Scripts runs the findDisapprovedAds function for each account in parallel.
-- Scripts then executes the reportResults function after all the findDisapprovedAds function calls complete. The reportResults function opens a spreadsheet if it exists; otherwise, it creates a new spreadsheet. The script uses Google Sheets to create a sheet for each account if it doesn't already exist. The sheet includes a row for each disapproved ad in the account (each row includes the ad's details), if any.
-- Then, the reportResults function uses Google Mail to send an email notification to the specified recipients. The email indicates if an account contains disapproved ads and if it does, provides a link to the sheet where they can see the details.
-- Finally, it updates the lastChecked field for each account and saves the file. The next time the script runs, it sorts the list of accounts by the lastChecked time stamp. This means that all accounts that haven't been processed or are the oldest will be first in the list.
+- Gets up to the first 50 account IDs from the list and calls the selector's executeInParallel function. The executeInParallel function executes in parallel the findDisapprovedAds function for each account. This function returns an object that contains the account's information and the list of disapproved ads, if any.
+- Executes the reportResults function after all the findDisapprovedAds function calls complete. This function creates a spreadsheet and uses Google Sheets to create a sheet for each account. If the account contains disapproved ads, it writes the ads to the sheet.
+- Uses Google Mail to send an email notification to the specified recipients. The email indicates if an account contains disapproved ads and provides a link to the sheet where they can see the details.
+- Updates the lastChecked field for each account and saves the file. The next time the script runs, it sorts the list of accounts by the lastChecked time stamp. This means that all accounts that haven't been processed or are the oldest will be first in the list. This script will need to run one or more times depending on the number of accounts you have.
 
 Before using this example, see [Getting an access token](getting-access-token.md) for options on getting an access token to use in this example.
 
@@ -31,7 +31,7 @@ const NOTIFY = ['someone@example.com'];
 
 // If you chose option 1 in Getting an access token, set accessToken to 
 // the token you received from Google OAuth playground. Otherwise, if you
-// chose option 2, set the other three fields.
+// chose option 2, set clientId, clientSecret, and refreshToken.
 const credentials = {
     accessToken: '',
     clientId: '',
@@ -54,8 +54,8 @@ function main() {
 
     createFileIfNotExists(ACCOUNTS_FILE_NAME, false);
  
-    // Load the list of objects from the JSON file or set the list to 
-    // empty if the file is empty.
+    // Load the list of objects from the JSON file or if the file is empty,
+    // set the list to empty.
 
     const accountsList = loadObject(ACCOUNTS_FILE_NAME) || [];
  
@@ -63,7 +63,7 @@ function main() {
     // has access to. For each account, create an object that contains
     // the id field and lastChecked field. Then add it to accountsList.
 
-    // Note that if the file exists, accountsList will not include any 
+    // Note that if the file exists, accountsList will not include  
     // new accounts that were added since the script last ran. To ensure
     // that the list contains all accounts, consider deleting the file
     // periodically or after you add an account.
@@ -96,7 +96,7 @@ function main() {
  
     // Get a maximum of the first 50 accounts (ACCOUNT_BATCH_SIZE) from accountsList.
     // Each time the script runs, it grabs the next 50 accounts until eventually
-    // The script processes all accounts.
+    // The script processes all the accounts.
 
     const toCheck = accountsList.slice(0, ACCOUNT_BATCH_SIZE).map(x => x.id);
  
@@ -246,7 +246,7 @@ function reportResults(results) {
  
     const summaryEmailData = [];
 
-    // Add rows for each disapproved ads to each sheet.
+    // Builds the sheet information. 
 
     for (const sheetResult of sheetResults) {        
         const accountResult = sheetResult.accountResult;
@@ -286,10 +286,10 @@ function reportResults(results) {
     saveObject(accountsList, ACCOUNTS_FILE_NAME);
 }
  
-// Send an email to recipients with a list of the accounts any
+// Send an email to recipients with a list of the accounts and any
 // disapproved ads. The recipient can click the embedded 
 // link to access the spreadsheet that contains details about
-// the ads that were disapproved.
+// the disapproved ads.
 
 function sendSummaryEmail(summaryEmailData) {
     const subject = `${SCRIPT_NAME} Summary Results`;
