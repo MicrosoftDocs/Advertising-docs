@@ -22,7 +22,7 @@ The following is the high-level flow of the script. For more details, read the i
 - Uses Google Mail to send an email notification to the specified recipients. The email indicates if an account contains disapproved ads and provides a link to the sheet where they can see the details.
 - Updates the lastChecked field for each account and saves the file. The next time the script runs, it sorts the list of accounts by the lastChecked time stamp. This means that all accounts that haven't been processed or are the oldest will be first in the list. This script will need to run one or more times depending on the number of accounts you have.
 
-Before using this example, see [Getting an access token](accessing-goole-services.md#getting-an-access-token-used-to-accessing-google-services) for options on getting an access token to use in this example.
+Before using this example, see [Getting an access token](accessing-goole-services.md#access-token) for options on getting an access token to use in this example.
 
 ```javascript
 // Update the list with email addresses of the recipients that
