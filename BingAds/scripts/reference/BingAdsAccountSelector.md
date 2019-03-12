@@ -65,6 +65,8 @@ function myCallback(results) {
 
 Because this method does not return a [BingAdsAccountSelector](./BingAdsAccountSelector.md) object, make sure this method is the last selector method in the call chain.
 
+For an example, see [Using executeInParallel to discover disapproved ads](execute-in-parallel.md).
+
 ### Arguments
 |Name|Type|Description|
 |-|-|-
@@ -106,6 +108,8 @@ function myFunction(string optionalInput)
 ```
 
 Because this method does not return a [BingAdsAccountSelector](./BingAdsAccountSelector.md) object, make sure this method is the last selector method in the call chain.
+
+For an example, see [Using executeInParallel to discover disapproved ads](execute-in-parallel.md).
 
 ### Arguments
 |Name|Type|Description|

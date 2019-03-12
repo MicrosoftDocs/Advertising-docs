@@ -190,3 +190,7 @@ function main() {
     }
 }
 ```
+
+## Update a keyword's bid value.
+
+For an example that shows how to update a keyword's bid value, see [Updating the bid value for a list of keywords](urlfetch-example.md).

@@ -1,6 +1,6 @@
 ---
-title: "Using UrlFetchApp to access Goggle services"
-description: "Shows how to use UrlFetchApp to access Google services."
+title: "Updating a keyword's bid value"
+description: "Shows how to update the bid value for a list of keywords."
 author: "swhite-msft"
 manager: ehansen
 
@@ -9,9 +9,9 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# Using UrlFetchApp to access Google services
+# Updating the bid value for a list of keywords
 
-This example script shows you how to use [UrlFetchApp](../reference/UrlFetchApp.md) to:
+This example script shows you how to:
 
 - Read a file from Google Drive, which contains a single bid multiplier value;
 - Read a spreadsheet containing keyword IDs, use the IDs to get the keywords, and multiply the keywords' bids by the bid multiplier;
