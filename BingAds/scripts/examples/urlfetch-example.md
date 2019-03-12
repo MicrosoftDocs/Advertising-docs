@@ -18,7 +18,7 @@ This example script shows you how to:
 - Write the new and old bid values back to the spreadsheet;
 - Sends an email notification that the bids were updated.
 
-Before using this example, see [Getting an access token](getting-access-token.md) for options on getting an access token to use in this example.
+Before using this example, see [Getting an access token](accessing-goole-services.md#getting-an-access-token-used-to-accessing-google-services) for options on getting an access token to use in this example.
 
 ```javascript
 function main() {
