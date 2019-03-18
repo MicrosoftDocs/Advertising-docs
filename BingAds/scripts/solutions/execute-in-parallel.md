@@ -1,5 +1,5 @@
 ---
-title: "Using executeInParallel to discover disapproved ads"
+title: "Discovering disapproved ads"
 description: "Shows how to use the BingAdsAccountSelector object's executeInParallel method to discover disapproved ads for one or more accounts."
 author: "swhite-msft"
 manager: ehansen
@@ -9,15 +9,13 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# Using executeInParallel to discover disapproved ads
+# Discovering disapproved ads
 
-This example script shows how to use the [BingAdsAccountSelector](../reference/BingAdsAccountSelector.md) object's **executeInParallel** method to discover disapproved ads for one or more accounts. 
-
-The following is the high-level flow of the script. For more details, read the inline comments.
+This solution shows how to discover disapproved ads for one or more accounts. The following is the high-level flow of the script. For more details, read the inline comments.
 
 - Reads a file from Google Drive. The file contains a list of objects. Each object contains an account ID and a time stamp of when the account was last checked for disapproved ads. The first time the script runs the file shouldn't exist. If the file doesn't exist, the script builds the complete list of accounts that you have access to. Note that the script won't pick up any new accounts that you add after the file is built. If you add accounts, you should delete the file, so it generates a new list of accounts.
 - Sorts the account list so the accounts that haven't been checked or are the oldest show up first.
-- Gets up to the first 50 account IDs from the list and calls the selector's executeInParallel function. The executeInParallel function executes in parallel the findDisapprovedAds function for each account. This function returns an object that contains the account's information and the list of disapproved ads, if any.
+- Gets up to the first 50 account IDs from the list and calls the selector's [executeInParallel](../reference/BingAdsAccountSelector.md) method. The method executes in parallel the findDisapprovedAds function for each account. This function returns an object that contains the account's information and the list of disapproved ads, if any.
 - Executes the reportResults function after all the findDisapprovedAds function calls complete. This function creates a spreadsheet and uses Google Sheets to create a sheet for each account. If the account contains disapproved ads, it writes the ads to the sheet.
 - Uses Google Mail to send an email notification to the specified recipients. The email indicates if an account contains disapproved ads and provides a link to the sheet where they can see the details.
 - Updates the lastChecked field for each account and saves the file. The next time the script runs, it sorts the list of accounts by the lastChecked time stamp. This means that all accounts that haven't been processed or are the oldest will be first in the list. This script will need to run one or more times depending on the number of accounts you have.

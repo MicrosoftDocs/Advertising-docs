@@ -11,14 +11,14 @@ ms.topic: "article"
 
 # Updating the bid value for a list of keywords
 
-This example script shows you how to:
+This solution shows you how to:
 
 - Read a file from Google Drive, which contains a single bid multiplier value;
 - Read a spreadsheet containing keyword IDs, use the IDs to get the keywords, and multiply the keywords' bids by the bid multiplier;
 - Write the new and old bid values back to the spreadsheet;
 - Sends an email notification that the bids were updated.
 
-Before using this example, see [Getting an access token](accessing-google-services.md#access-token) for options on getting an access token to use in this example.
+Before using this solution, see [Getting an access token](accessing-google-services.md#access-token) for options on getting an access token to use in this solution.
 
 ```javascript
 function main() {

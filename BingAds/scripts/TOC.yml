@@ -69,6 +69,15 @@
       href: examples/execute-in-parallel.md 
     - name: Accessing Google services 
       href: examples/accessing-google-services.md
+- name: Solutions
+  href: solutions/index.md 
+  items:
+    - name: Accessing Google services 
+      href: solutions/accessing-google-services.md
+    - name: Updating keyword bids 
+      href: solutions/urlfetch-example.md 
+    - name: Finding disapproved ads 
+      href: solutions/execute-in-parallel.md 
 - name: Script reference
   href: reference-overview.md 
   items:    

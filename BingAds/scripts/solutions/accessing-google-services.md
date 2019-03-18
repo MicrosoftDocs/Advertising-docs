@@ -1,6 +1,6 @@
 ---
 title: "Accessing Google services"
-description: "Shows how to access Google services."
+description: "Shows options for getting an access token to use with Google services."
 author: "swhite-msft"
 manager: ehansen
 
@@ -11,17 +11,7 @@ ms.topic: "article"
 
 # Accessing Google services
 
-The following script examples show how to access access Google services, such as Google Drive, Sheets, and Mail.
-
-|Example|Description
-|-|-
-|[Increase keyword bids](urlfetch-example.md)|Reads a bid multiplier value from a Google drive file, opens a Google spreadsheet to get a list of keywords to update, updates the bids, and sends an email notification that the keywords were updated.
-|[Find disapproved ads](execute-in-parallel.md)|Reads a list of accounts from a Google drive file, uses the [executeInParallel](../reference/BingAdsAccountSelector.md) method to check the accounts for disapproved ads, creates a Google spreadsheet and adds a sheet for each account, writes the list of disapproved ads to the sheet, and sends an email notification to a list of recipients with links to the sheets.
-
-
-## <a name="access-token"></a>Getting an access token used to access Google services
-
-Before you can run scripts that access your Google resources, you need to get credentials. There are a couple of options for getting the credentials:
+If your script uses Google services, such as Google Drive, Sheets, and Mail, you need to get credentials. There are a couple of options for getting the credentials:
 
 - Option 1 &mdash; Easy to follow and takes less time but you need to repeat it every hour when the access token expires.
 - Option 2 &mdash; A little more complicated but you don't need to repeat it every hour when the access token expires.
@@ -33,7 +23,7 @@ Before you can run scripts that access your Google resources, you need to get cr
 3. Click **Authorize APIs** 
 4. After the APIs are authorized, click **Exchange authorization code for tokens**
 5. Copy the access_token's value from the response
-6. In the [example scripts](accessing-google-services.md), set the credentials object's `accessToken` field to the access token copied in step 5.
+6. In the [example solutions](index.md) that access Google services, set the credentials object's `accessToken` field to the access token copied in step 5.
 
 > [!NOTE]
 > Because the access token expires in 1 hour, you'll need to repeat these steps every hour.
@@ -94,5 +84,5 @@ Before you can run scripts that access your Google resources, you need to get cr
      
   Copy the grant code and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. In the [example script](#example-script), set `refreshToken` to the refresh token that the PowerShell script returned. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources.  
   
-15. In the [example scripts](accessing-google-services.md), set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received in steps 13 and 14.
+15. In the [example solutions](index.md) that access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received in steps 13 and 14.
 
