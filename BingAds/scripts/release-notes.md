@@ -18,7 +18,7 @@ For information about changes that were included with each release, see the foll
 
 The following is a documentation only change.
 
-- Added the [Find disapproved ads](examples/execute-in-parallel.md) example script. To find out what this script and the other example scripts do, see [Accessing Google services](examples/accessing-google-services.md).
+- Added the [Find disapproved ads](solutions/execute-in-parallel.md) example solution. 
 
 
 ## February 11, 2019
@@ -48,7 +48,7 @@ Added the following methods to the [Stats](reference/Stats.md) object.
 
 The following is a documentation only change.
 
-- Added the [Accessing Google services](examples/accessing-google-services.md) topic. This topic shows how to use [UrlFetchApp](reference/UrlFetchApp.md) to call Google services.
+- Added the [Updating the bid value for a list of keywords](solutions/urlfetch-example.md) topic. This topic shows how to use [UrlFetchApp](reference/UrlFetchApp.md) to call Google services.
 
 
 ## November 7, 2018
