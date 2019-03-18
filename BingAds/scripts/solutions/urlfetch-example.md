@@ -18,7 +18,7 @@ This solution shows you how to:
 - Write the new and old bid values back to the spreadsheet;
 - Sends an email notification that the bids were updated.
 
-Before using this solution, see [Getting an access token](accessing-google-services.md#access-token) for options on getting an access token to use in this solution.
+Before using this solution, see [Getting an access token](accessing-google-services.md) for options on getting an access token to use in this solution.
 
 ```javascript
 function main() {

@@ -63,12 +63,6 @@
       href: examples/keywords.md 
     - name: Using UrlFetchApp 
       href: examples/fetch-resources.md 
-    - name: Updating keyword bids 
-      href: examples/urlfetch-example.md 
-    - name: Finding disapproved ads 
-      href: examples/execute-in-parallel.md 
-    - name: Accessing Google services 
-      href: examples/accessing-google-services.md
 - name: Solutions
   href: solutions/index.md 
   items:
