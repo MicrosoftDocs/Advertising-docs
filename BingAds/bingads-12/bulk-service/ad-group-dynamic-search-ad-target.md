@@ -32,7 +32,7 @@ var bulkAdGroupDynamicSearchAdTarget = new BulkAdGroupDynamicSearchAdTarget
 {
     // Map properties in the Bulk file to the 
     // BiddableAdGroupCriterion object of the Campaign Management service.
-    AdGroupCriterion = new BiddableAdGroupCriterion
+    BiddableAdGroupCriterion = new BiddableAdGroupCriterion
     {
         // 'Parent Id' column header in the Bulk file
         AdGroupId = adGroupIdKey,
@@ -155,7 +155,7 @@ The name of the ad group that contains the dynamic ad target (webpage criterion)
 The amount to bid in the auction.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="campaign"></a>Campaign
@@ -189,7 +189,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
     > With the Bulk service the Key must be formatted with surrounding braces and a leading underscore, for example if the Key is promoCode, it must be formatted as {_promoCode}. With the Campaign Management service you cannot specify the surrounding braces and underscore.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
 **Delete:** Read-only  
 
 ## <a name="dynamicadtargetcondition1"></a>Dynamic Ad Target Condition 1
@@ -269,7 +269,7 @@ The criterion name that you can use to identify the criteria, for example you ca
 The criterion name length must be between 1 to 2048, inclusive.
 
 **Add:** Optional. If you do not specify any name, by default the name will be set to a concatenated list of conditions. Each condition will be delimited by the *and* keyword. For example if the conditions are a) *Url contains flower* , b) *Url contains book* , and c) *PageContent contains seattle*, then the default criterion name will be *Url contains flower and Url contains book and PageContent contains seattle*. If all condition and value fields are empty, then you are effectively targeting all webpages and the name will be set to *All Webpages*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you specify the *delete_value* keyword, then the criterion name will be updated to the default value i.e. either *All Webpages* or a concatenated list of criterions.  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you specify the *delete_value* keyword, then the criterion name will be updated to the default value i.e. either *All Webpages* or a concatenated list of criterions.  
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
@@ -290,7 +290,7 @@ The status of the dynamic ad target (webpage criterion).
 Possible values are *Active*, *Paused*, or *Deleted*. 
 
 **Add:** Optional. The default value is *Active*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Required. The Status must be set to *Deleted*.
 
 ## <a name="trackingtemplate"></a>Tracking Template
@@ -307,5 +307,5 @@ The following validation rules apply to tracking templates. For more details abo
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  

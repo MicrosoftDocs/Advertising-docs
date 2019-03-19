@@ -166,7 +166,7 @@ The name of the ad group.
 The name must be unique among all active ad groups within the campaign. The name can contain a maximum of 256 characters.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="adrotation"></a>Ad Rotation
@@ -184,7 +184,7 @@ If set to *RotateAdsEvenly*, Bing Ads provides more balance in rotation between 
 - The *RotateAdsEvenly* setting will be ignored if you use an automated bid strategy i.e., *MaxClicks*, *MaxConversions*, or *TargetCpa*, as these bid strategies prioritize better-performing ads.
 
 **Add:** Optional. The default value is *OptimizeForClicks*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="bidadjustment"></a>Bid Adjustment
@@ -198,7 +198,7 @@ Supported values are negative one hundred (-100) through positive nine hundred (
 Set this field to zero (0) if you do not want any bid adjustment for audience ads. If this field is empty you will inherit the *Bid Adjustment* setting of the ad group's [Campaign](campaign.md).
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If the ad group already has an audience ads bid adjustment, and you want to remove it to effectively inherit the *Bid Adjustment* setting of the ad group's [Campaign](campaign.md), set this field to *delete_value*. The *delete_value* keyword removes the previous setting.   
+**Update:** Optional. If no value is set for the update, this setting is not changed. If the ad group already has an audience ads bid adjustment, and you want to remove it to effectively inherit the *Bid Adjustment* setting of the ad group's [Campaign](campaign.md), set this field to *delete_value*. The *delete_value* keyword removes the previous setting.   
 **Delete:** Read-only  
 
 ## <a name="bidboostvalue"></a>Bid Boost Value
@@ -242,7 +242,7 @@ The bid strategy type for how you want to manage your bids. For ad groups you ca
 > For campaigns of type *Shopping* the product partitions inherit the ad group [Bid Strategy Type](#bidstrategytype).
 
 **Add:** Optional. If you do not set this field, then *InheritFromParent* is used by default.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="campaign"></a>Campaign
@@ -270,7 +270,7 @@ The minimum and maximum bid range depends on the account's currency. For more in
 Specifying a broad, exact, or phrase match bid at the keyword level overrides the ad group’s search bid value for the corresponding match type.
 
 **Add:** Optional. If you do not set a bid, it will be set to the minimum depending on your account's currency.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="customparameter"></a>Custom Parameter
@@ -290,7 +290,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
     > With the Bulk service the Key must be formatted with surrounding braces and a leading underscore, for example if the Key is promoCode, it must be formatted as {_promoCode}. With the Campaign Management service you cannot specify the surrounding braces and underscore.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
 **Delete:** Read-only  
 
 ## <a name="enddate"></a>End Date
@@ -301,7 +301,7 @@ If you do not specify an end date, the ads will not expire. The end date can be 
 The end date is inclusive. For example, if you set *End Date* to 12/31/2020, the ads in the ad group will expire at 11:59 PM on 12/31/2020. The time is based on the time zone that you specify at the campaign level.
 
 **Add:** Optional. To set no end date when adding an ad group, do not set this field.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete the current end date and effectively set no end date, set this field to the "delete_value" string. When you retrieve the ad group next time, this field will not be set.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. To delete the current end date and effectively set no end date, set this field to the "delete_value" string. When you retrieve the ad group next time, this field will not be set.    
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -379,7 +379,7 @@ For ad groups in Dynamic Search Ads campaigns, only English is supported.
 For ad groups in Audience campaigns, ad group level language is not supported, and you must set the [Language](campaign.md#language) field of the ad group's campaign to "All".
 
 **Add:** Optional if the campaign has one or more languages set, and otherwise the language is required for most campaign types. You are not allowed to set this element for ad groups in Audience campaigns.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove the language and defer to the campaign level languages, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. The ad group language cannot be removed until campaign language updates have been processed, which could take up to 12 hours after the campaign languages have been set for the first time. The 12 hour wait time is expected to be removed during Q1 calendar year 2019, and you will then be able to remove ad groups immediately.   
+**Update:** Optional. If no value is set for the update, this setting is not changed. To remove the language and defer to the campaign level languages, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. The ad group language cannot be removed until campaign language updates have been processed, which could take up to 12 hours after the campaign languages have been set for the first time. The 12 hour wait time is expected to be removed during Q1 calendar year 2019, and you will then be able to remove ad groups immediately.   
 **Delete:** Read-only  
 
 ## <a name="maximumbid"></a>Maximum Bid
@@ -412,7 +412,7 @@ For ad groups in Audience campaigns, ad group level network is not supported and
 If you select one of the syndicated search options, you can call the [SetNegativeSitesToAdGroups](../campaign-management-service/setnegativesitestoadgroups.md) or [SetNegativeSitesToCampaigns](../campaign-management-service/setnegativesitestocampaigns.md) operation to prevent the ads from displaying on specific syndicated search websites.
 
 **Add:** Optional. The default is *OwnedAndOperatedAndSyndicatedSearch*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="parentid"></a>Parent Id
@@ -443,7 +443,7 @@ Indicates whether or not your ad group target criteria are too narrow for ad gro
 ## <a name="qualityscore"></a>Quality Score
 The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Bing Ads using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.
 
-Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for syndicated networks do not affect quality score. The value in the report will be "0" (zero) if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.
+Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for syndicated networks do not affect quality score. The value in the file will be "" (empty string) if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.
 
 If you run the report multiple times in a day, the quality score values could change from report to report based on when you run the report relative to when the scores are calculated.
 
@@ -459,7 +459,7 @@ The date that the ads in the ad group can begin serving; otherwise, the service 
 The start date is inclusive. For example, if you set *Start Date* to 5/5/2019, the ads in the ad group will start at 12:00 AM on 5/5/2019. The time is based on the time zone that you specify at the campaign level.
 
 **Add:** Optional. If you do not set the start date, then it will default to today's date and the service can begin serving the ads in the ad group as soon as the ad group status is active.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The start date cannot be updated after the ad group is submitted i.e., once the start date has arrived.  
+**Update:** Optional. If no value is set for the update, this setting is not changed. The start date cannot be updated after the ad group is submitted i.e., once the start date has arrived.  
 **Delete:** Read-only  
 
 ## <a name="status"></a>Status
@@ -468,7 +468,7 @@ The status of the ad group.
 Possible values are *Active*, *Deleted*, *Expired*, and *Paused*. The *Expired* status is read-only.
 
 **Add:** Optional. The default value is *Paused*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Required. The Status must be set to Deleted.
 
 ## <a name="targetsetting"></a>Target Setting
@@ -497,7 +497,7 @@ If the [Campaign Type](campaign.md#campaigntype) is set to Audience, the support
 An entity such as a remarketing list can be associated with multiple ad groups, and each ad group's target settings (e.g., the Audience criterion group name for remarketing lists) are applied independently for delivery. For example the same remarketing list can be associated with Ad Group A and Ad Group B. The Target Setting field for each ad group are set independently, and therefore the same remarketing list might be associated via the "target and bid" option for Ad Group A while associated via the "bid only" option for Ad Group B. 
 
 **Add:** Optional. If the criterion type group name is excluded from this field, then the default setting is effectively "bid only".  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all criterion type group names, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of criterion type group names, specify the criterion type group names that you want to keep and omit any that you do not want to keep. The new set of criterion type group names will replace any previous criterion groups that were set for the ad group.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. To remove all criterion type group names, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of criterion type group names, specify the criterion type group names that you want to keep and omit any that you do not want to keep. The new set of criterion type group names will replace any previous criterion groups that were set for the ad group.    
 **Delete:** Read-only  
 
 ## <a name="trackingtemplate"></a>Tracking Template
@@ -514,5 +514,5 @@ The following validation rules apply to tracking templates. For more details abo
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. 
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. 
 **Delete:** Read-only  

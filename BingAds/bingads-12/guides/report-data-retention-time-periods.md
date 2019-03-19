@@ -25,13 +25,6 @@ If the data aggregation is not available for a given report, it will be noted as
 |[Ad Extension By Keyword Report](../reporting-service/adextensionbykeywordreportrequest.md)|Ad Extension by Keyword|6|36|36|36|36|36|
 |[Call Detail Report](../reporting-service/calldetailreportrequest.md)|Call Forwarding Detail|6|6|6|6|6|6|
 
-## <a name="audiencenetwork"></a>Audience Network
-
-|API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
-|-------------------|----------------------------------------|----------|---------|----------|-----------|----------|-----------|
-|[Age Gender Audience Report](../reporting-service/agegenderaudiencereportrequest.md)|Age and gender|6|36|36|36|36|36|
-|[Professional Demographics Audience Report](../reporting-service/professionaldemographicsaudiencereportrequest.md)|Professional demographics|6|36|36|36|36|36|
-
 ## <a name="budget"></a>Billing and Budget
 
 |API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
@@ -90,6 +83,8 @@ If the data aggregation is not available for a given report, it will be noted as
 
 |API Report Name|Bing Ads Web Application Report Name|Hourly|Daily|Weekly|Monthly|Yearly|Summary|
 |-------------------|----------------------------------------|----------|---------|----------|-----------|----------|-----------|
+|[Age Gender Audience Report](../reporting-service/agegenderaudiencereportrequest.md)|Age and gender|6|36|36|36|36|36|
 |[Age Gender Demographic Report](../reporting-service/agegenderdemographicreportrequest.md)|Age and Gender|6|36|36|36|36|36|
 |[Geographic Performance Report](../reporting-service/geographicperformancereportrequest.md)|Geographic|14 **days**|36|36|36|36|36|
+|[Professional Demographics Audience Report](../reporting-service/professionaldemographicsaudiencereportrequest.md)|Professional demographics|6|36|36|36|36|36|
 |[User Location Report](../reporting-service/userlocationperformancereportrequest.md)|User Location|14 **days**|36|36|36|36|36|

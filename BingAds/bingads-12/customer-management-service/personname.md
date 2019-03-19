@@ -24,9 +24,9 @@ Defines the name of a user.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
-|<a name="firstname"></a>FirstName|The first name of the user. The first name is limited to 100 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
-|<a name="lastname"></a>LastName|The last name of the user. The last name is limited to 100 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
-|<a name="middleinitial"></a>MiddleInitial|The middle initial of the user. The middle initial is limited to one character.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.|**string**|
+|<a name="firstname"></a>FirstName|The first name of the user. The first name is limited to 100 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
+|<a name="lastname"></a>LastName|The last name of the user. The last name is limited to 100 characters.<br/><br/>**Add:** Required<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
+|<a name="middleinitial"></a>MiddleInitial|The middle initial of the user. The middle initial is limited to one character.<br/><br/>**Add:** Optional<br/>**Update:** Optional. If no value is set for the update, this setting is not changed.|**string**|
 
 ## Requirements
 Service: [CustomerManagementService.svc v12](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc)  

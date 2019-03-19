@@ -140,7 +140,7 @@ To create a Django app, then, it's necessary to first create the Django project 
 1. Within `app/settings.py` add the following code and set your own *CLIENT_ID*, *CLIENT_SECRET*, *DEVELOPER_TOKEN*, and *ENVIRONMENT* values. If you are using the sandbox environment no changes are required for *DEVELOPER_TOKEN* and *ENVIRONMENT*.
     ```python
     """
-    Bing Ads settings
+    Bing Ads API settings
     Edit with your credentials.
     """
     

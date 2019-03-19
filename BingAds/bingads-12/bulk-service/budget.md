@@ -85,7 +85,7 @@ For an *Budget* record, the following attribute fields are available in the [Bul
 The amount to spend daily across all campaigns that share the budget.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="budgetname"></a>Budget Name
@@ -94,7 +94,7 @@ The name of the budget. The name must be unique among all budgets within the acc
 The service performs a case-insensitive comparison when it compares the name to existing budget names.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="budgettype"></a>Budget Type
@@ -103,7 +103,7 @@ The budget type determines the pace at which the budget is spent throughout the 
 You can set a shared budget to either *DailyBudgetAccelerated* or *DailyBudgetStandard*. The *MonthlyBudgetSpendUntilDepleted* value is not supported for shared budgets.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="clientid"></a>Client Id
@@ -145,7 +145,7 @@ The status of the budget.
 Possible values are *Active* or *Deleted*. 
 
 **Add:** Optional. The default value is *Active*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Required. The Status must be set to *Deleted*.
 
 

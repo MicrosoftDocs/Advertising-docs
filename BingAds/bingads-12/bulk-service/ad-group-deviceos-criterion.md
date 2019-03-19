@@ -55,7 +55,7 @@ var bulkAdGroupDeviceCriterions = new [] {
         // Map properties in the Bulk file to the 
         // BiddableAdGroupCriterion object of the Campaign Management service.
 
-        AdGroupCriterion = new BiddableAdGroupCriterion
+        BiddableAdGroupCriterion = new BiddableAdGroupCriterion
         {
             // 'Parent Id' column header in the Bulk file
             AdGroupId = adGroupIdKey,
@@ -82,7 +82,7 @@ var bulkAdGroupDeviceCriterions = new [] {
     new BulkAdGroupDeviceCriterion
     {
         ClientId = "ClientIdGoesHere",
-        AdGroupCriterion = new BiddableAdGroupCriterion
+        BiddableAdGroupCriterion = new BiddableAdGroupCriterion
         {
             AdGroupId = adGroupIdKey,
             Criterion = new DeviceCriterion
@@ -98,7 +98,7 @@ var bulkAdGroupDeviceCriterions = new [] {
     new BulkAdGroupDeviceCriterion
     {
         ClientId = "ClientIdGoesHere",
-        AdGroupCriterion = new BiddableAdGroupCriterion
+        BiddableAdGroupCriterion = new BiddableAdGroupCriterion
         {
             AdGroupId = adGroupIdKey,
             Criterion = new DeviceCriterion

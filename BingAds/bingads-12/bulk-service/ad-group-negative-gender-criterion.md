@@ -48,7 +48,7 @@ var BulkAdGroupNegativeGenderCriterion = new BulkAdGroupNegativeGenderCriterion
     // Map properties in the Bulk file to the 
     // NegativeAdGroupCriterion object of the Campaign Management service.
 
-    AdGroupCriterion = new NegativeAdGroupCriterion
+    NegativeAdGroupCriterion = new NegativeAdGroupCriterion
     {
         // 'Parent Id' column header in the Bulk file
         AdGroupId = adGroupIdKey,

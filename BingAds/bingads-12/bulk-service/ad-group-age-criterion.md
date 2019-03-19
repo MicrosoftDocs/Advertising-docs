@@ -52,7 +52,7 @@ var bulkAdGroupAgeCriterion = new BulkAdGroupAgeCriterion
     // Map properties in the Bulk file to the 
     // BiddableAdGroupCriterion object of the Campaign Management service.
 
-    AdGroupCriterion = new BiddableAdGroupCriterion
+    BiddableAdGroupCriterion = new BiddableAdGroupCriterion
     {
         // 'Parent Id' column header in the Bulk file
         AdGroupId = adGroupIdKey,

@@ -163,7 +163,7 @@ Supported values are negative one hundred (-100) through positive nine hundred (
 Set this field to zero (0) if you do not want any bid adjustment for audience ads.
 
 **Add:** Optional. If you do not set this field the system default bid adjustment will be used. The system default bid adjustment is currently zero (0), and is subject to change.   
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value* then effectively the system default bid adjustment will be used. The system default bid adjustment is currently zero (0), and is subject to change.     
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value* then effectively the system default bid adjustment will be used. The system default bid adjustment is currently zero (0), and is subject to change.     
 **Delete:** Read-only  
 
 ## <a name="bidstrategymaxcpc"></a>Bid Strategy MaxCpc
@@ -181,7 +181,7 @@ This field is only used if the [Bid Strategy Type](#bidstrategytype) field is se
 For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.     
 **Delete:** Read-only  
 
 ## <a name="bidstrategytargetcpa"></a>Bid Strategy TargetCpa
@@ -195,7 +195,7 @@ This field is only used if the [Bid Strategy Type](#bidstrategytype) field is se
 For more details, see [Budget and Bid Strategies](../guides/budget-bid-strategies.md).
 
 **Add:** Required if the [Bid Strategy Type](#bidstrategytype) field is set to *TargetCpa*, and otherwise this field is ignored.   
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="bidstrategytype"></a>Bid Strategy Type
@@ -220,7 +220,7 @@ For details about supported bid strategies per campaign type, see [Budget and Bi
 > You can set your campaign's bid strategy to *EnhancedCpc*, *MaxClicks*, *MaxConversions*, or *TargetCpa* and then, at any time, set an individual ad group's or keyword's bid strategy to *ManualCpc*.
 
 **Add:** Optional. The default value for Search and DynamicSearchAds campaigns is EnhancedCpc. The default value for Shopping campaigns is ManualCpc. The only supported value for Audience campaigns is ManualCpc.    
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc) and [Bid Strategy TargetCpa](#bidstrategytargetcpa) fields will be deleted.       
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you update the bid strategy type, then any existing values in the [Bid Strategy MaxCpc](#bidstrategymaxcpc) and [Bid Strategy TargetCpa](#bidstrategytargetcpa) fields will be deleted.       
 **Delete:** Read-only  
 
 ## <a name="budget"></a>Budget
@@ -234,7 +234,7 @@ The campaign's budget amount.
 In the context of shared budgets, the budget amount is a read-only property that is always returned regardless of whether or not the campaign uses a shared budget. When a campaign is associated to a shared budget the amount returned is that of the shared budget. To determine whether the campaign uses a shared budget, check the value of the [Budget Id](#budgetid) field.
 
 **Add:** Required if the [Budget Id](#budgetid) is not set. Read-only if the campaign uses a shared budget.
-**Update:** Optional if the [BudgetId](#budgetid) is not set. If no value is specified on update, this Bing Ads setting is not changed. Not allowed if the campaign uses a shared budget. If you try to update the budget amount of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code. 
+**Update:** Optional if the [BudgetId](#budgetid) is not set. If no value is set for the update, this setting is not changed. Not allowed if the campaign uses a shared budget. If you try to update the budget amount of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code. 
 **Delete:** Read-only   
 
 ## <a name="budgetid"></a>Budget Id
@@ -246,7 +246,7 @@ If the field is empty, then the campaign is not using a shared budget. If the fi
 > This value corresponds to the *Id* field of the [Budget](budget.md) record.
 	
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="budgetname"></a>Budget Name
@@ -264,7 +264,7 @@ The budget type determines how the budget is spent. The possible values are *Dai
 In the context of shared budgets, the budget type is a read-only property that is always returned regardless of whether or not the campaign uses a shared budget. To determine whether the campaign uses a shared budget, check the value of the [Budget Id](#budgetid) field. 
 
 **Add:** Required if the [Budget Id](#budgetid) is not set. Read-only if the campaign uses a shared budget.
-**Update:** Optional if the [BudgetId](#budgetid) is not set. If no value is specified on update, this Bing Ads setting is not changed. Not allowed if the campaign uses a shared budget. If you try to update the budget type of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code. 
+**Update:** Optional if the [BudgetId](#budgetid) is not set. If no value is set for the update, this setting is not changed. Not allowed if the campaign uses a shared budget. If you try to update the budget type of a campaign that has a shared budget, the service will return the *CampaignServiceCannotUpdateSharedBudget* error code. 
 **Delete:** Read-only   
 
 ## <a name="campaign"></a>Campaign
@@ -328,7 +328,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
     > With the Bulk service the Key must be formatted with surrounding braces and a leading underscore, for example if the Key is promoCode, it must be formatted as {_promoCode}. With the Campaign Management service you cannot specify the surrounding braces and underscore.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
 **Delete:** Read-only  
 
 ## <a name="domainlanguage"></a>Domain Language
@@ -422,7 +422,7 @@ For Audience campaigns you must include all languages i.e., set this field to "A
 For Dynamic Search Ads campaigns, only English is supported.
 
 **Add:** Required for Audience campaigns, and otherwise this field is optional. If there is no campaign language set, then the language of each ad group within the campaign will be required.   
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. Once campaign languages are set, you cannot delete all of them. The list of languages that you specify during update replaces the previous settings i.e. does not append to the existing set of languages.  
+**Update:** Optional. If no value is set for the update, this setting is not changed. Once campaign languages are set, you cannot delete all of them. The list of languages that you specify during update replaces the previous settings i.e. does not append to the existing set of languages.  
 **Delete:** Read-only  
 
 ## <a name="localinventoryadsenabled"></a>LocalInventoryAdsEnabled
@@ -433,7 +433,7 @@ Not everyone has this feature yet. If you don’t, don’t worry. It’s coming 
 Set this property to *TRUE* if you want to enable local inventory ads, and otherwise set it to *FALSE*.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set and local inventory ads will not be enabled.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -466,13 +466,13 @@ If two shopping campaigns use the product catalog feed from same Bing Merchant C
 > If you create a Bing Shopping campaign in the Bing Ads web application, the default priority selected is "Low" which is the equivalent of '0'.
 
 **Add:** Required if the [Campaign Type](#campaigntype) field is set to *Shopping*. You cannot include this column for other campaign types.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.  
+**Update:** Optional. If no value is set for the update, this setting is not changed.  
 **Delete:** Read-only  
 
 ## <a name="qualityscore"></a>Quality Score
 The numeric score shows you how competitive your ads are in the marketplace by measuring how relevant your keywords and landing pages are to customers' search terms. The quality score is calculated by Bing Ads using the *Keyword Relevance*, *Landing Page Relevance*, and *Landing Page User Experience* sub scores. If available, the quality score can range from a low of 1 to a high of 10.
 
-Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for syndicated networks do not affect quality score. The value in the report will be "0" (zero) if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.
+Quality score is based on the last rolling 30 days for the owned and operated search traffic. A quality score can be assigned without any impressions, in the case where a keyword bid did not win any auctions. Traffic for syndicated networks do not affect quality score. The value in the file will be "" (empty string) if the score was not computed. This can occur if there have been no impressions for the keyword for 30 days or more.<br/><br/>Quality score is typically updated 14-18 hours after the UTC day ends. Keywords in all time zones will be assigned a quality score for the corresponding UTC day.
 
 If you run the report multiple times in a day, the quality score values could change from report to report based on when you run the report relative to when the scores are calculated.
 
@@ -494,7 +494,7 @@ Possible values are in the table below.
 |SystemIndex|Use Bing's index of my website. This is the default behavior of dynamic search ad campaigns on Bing.|
 
 **Add:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. By default only Bing's index is used i.e., an empty value is effectively the same as specifying *SystemIndex*.  
-**Update:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. If no value is specified on update, this Bing Ads setting is not changed.      
+**Update:** Optional if the [Campaign Type](#campaigntype) field is set to *DynamicSearchAds*. You cannot include this column for other campaign types. If no value is set for the update, this setting is not changed.      
 **Delete:** Read-only  
 
 ## <a name="status"></a>Status
@@ -512,7 +512,7 @@ Possible values for download and upload are Active, Paused, and Deleted. In addi
 |Suspended|Your campaign has been suspended because of suspicious activity, and no ads are eligible for delivery.<br/>Please contact [Bing Ads Support](https://go.microsoft.com/fwlink/?LinkId=269631).|
 
 **Add:** Optional. The default value is Active.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Required. The Status must be set to Deleted.
 
 ## <a name="storeid"></a>Store Id
@@ -563,7 +563,7 @@ The only criterion type value currently supported for the campaign level target 
 An entity such as a remarketing list can be associated with multiple campaigns, and each campaign's target settings (e.g., the Audience criterion group name for remarketing lists) are applied independently for delivery. For example the same remarketing list can be associated with Campaign A and Campaign B. The Target Setting field for each campaign are set independently, and therefore the same remarketing list might be associated via the "target and bid" option for Campaign A while associated via the "bid only" option for Campaign B. 
 
 **Add:** Optional. If the criterion type group name is excluded from this field, then the default setting is effectively "bid only".  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all criterion type group names, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of criterion type group names, specify the criterion type group names that you want to keep and omit any that you do not want to keep. The new set of criterion type group names will replace any previous criterion groups that were set for the campaign.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. To remove all criterion type group names, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of criterion type group names, specify the criterion type group names that you want to keep and omit any that you do not want to keep. The new set of criterion type group names will replace any previous criterion groups that were set for the campaign.    
 **Delete:** Read-only  
 
 ## <a name="timezone"></a>Time Zone
@@ -574,7 +574,7 @@ The time zone is used for reporting and applying the start and end date of an ad
 For possible values, see [Time Zones](../guides/time-zones.md).
 
 **Add:** Required   
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. You may not update the time zone if the campaign contains or has ever contained ad groups in the *Active* or *Paused* state.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. You may not update the time zone if the campaign contains or has ever contained ad groups in the *Active* or *Paused* state.    
 **Delete:** Read-only  
 
 ## <a name="trackingtemplate"></a>Tracking Template
@@ -591,7 +591,7 @@ The following validation rules apply to tracking templates. For more details abo
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="website"></a>Website
