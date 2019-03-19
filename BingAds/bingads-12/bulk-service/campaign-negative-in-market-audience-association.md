@@ -12,7 +12,7 @@ dev_langs:
 Defines a Campaign Negative In Market Audience Association that can be uploaded and downloaded in a bulk file. 
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+> Not everyone has the campaign level audience targets feature yet. If you don't, don't worry. It's coming soon.
 
 Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Bing Ads applies a union of both campaign and ad group level exclusions.
 
@@ -92,6 +92,8 @@ For an *Campaign Negative In Market Audience Association* record, the following 
 The name of the in-market audience.
 
 This bulk field maps to the *Audience* field of the [In Market Audience](in-market-audience.md) record.
+
+Bulk API download returns all in-market audience associations, whether the in-market audience is active or deleted. If the association is for a deleted in-market audience, then this field will be set to the same value as the [Audience Id](#audienceid) field. 
 
 **Add:** Read-only and Required for some use cases. You must either specify the [Audience](#audience) or [Audience Id](#audienceid) field. If you are adding new Campaign Negative In Market Audience Associations with new in-market audiences in the same Bulk file, and if you do not set the [Audience Id](#audienceid) field, then this [Audience](#audience) field must be set as a logical key to the same value as the *Audience* field of the [In Market Audience](in-market-audience.md) record. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only    

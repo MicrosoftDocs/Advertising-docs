@@ -21,13 +21,6 @@ Ad extension reports give you a closer look at how each ad extension is performi
 |[AdExtensionDetailReportRequest](../reporting-service/adextensiondetailreportrequest.md)|Use this report to discover the effectiveness of individual ad extension items, for example each link of a sitelink extension.<br/><br/>You can request impressions, clicks, spend, and average cost per click of individual extension items. Once downloaded, this data can be sorted by the individual ad extension display name, ad extension ID, and ad extension type.|
 |[CallDetailReportRequest](../reporting-service/calldetailreportrequest.md)|Use this report to discover which accounts, campaigns, or ad groups are driving the most completed phone calls.<br/><br/>You can request duration and phone spend for each forwarded call that originated from a call ad extension.|
 
-## <a name="audiencenetwork"></a>Audience Network
-
-|Report|Description|
-|----------|---------------|
-|[AgeGenderAudienceReportRequest](../reporting-service/agegenderaudiencereportrequest.md)|To discover how your campaigns and ad groups are resonating with different age groups and genders.<br/><br/>You can request impressions, clicks, spend, and average cost-per-click for each ad group, organized by gender and age group. Please note that this report only reflects your Audience Campaign data.|
-|[ProfessionalDemographicsAudienceReportRequest](../reporting-service/professionaldemographicsaudiencereportrequest.md)|Use this report to discover how your campaigns and ad groups are resonating with different companies, industries, and job functions.<br/><br/>You can request impressions, clicks, spend, and average cost-per-click for each ad group, organized by company, industry, and job function. Please note that this report only reflects your Audience Campaign data.|
-
 ## <a name="budget"></a>Billing and Budget
 
 |Report|Description|
@@ -86,9 +79,11 @@ You can use the targeting reports to determine whether your ads are reaching the
 
 |Report|Description|
 |----------|---------------|
+|[AgeGenderAudienceReportRequest](../reporting-service/agegenderaudiencereportrequest.md)|To discover how your campaigns and ad groups are resonating with different age groups and genders.<br/><br/>You can request impressions, clicks, spend, and average cost-per-click for each ad group, organized by gender and age group.|
 |[AgeGenderDemographicReportRequest](../reporting-service/agegenderdemographicreportrequest.md)|Use this report to discover how your campaigns and ad groups are resonating with audiences of diverse age and gender.<br/><br/>You can request impression rate (%) and click-through-rate (%) for each campaign or ad group, organized by gender and age group.|
 |[GeographicPerformanceReportRequest](../reporting-service/geographicperformancereportrequest.md)|Use this report to see which locations your traffic is coming from. You can then validate whether your location targeting strategy is successful, and identify opportunities to improve. The report also identifies either the physical location of the search user or the geographical location interest based on the user's search query.<br/><br/>You can request impressions, clicks, spend, and average cost per click for each ad group, organized by city, country, metro area (Nielsen DMA® in the United States), radius, state, and account.|
 |[NegativeKeywordConflictReportRequest](../reporting-service/negativekeywordconflictreportrequest.md)|Use this report to discover which keywords and negative keywords are in conflict, and whether the conflict is at the campaign or ad group level. Use this list to figure out which negative keywords to delete.<br/><br/>You can request negative keywords that conflict with some of your keywords, and block your ad from showing.|
+|[ProfessionalDemographicsAudienceReportRequest](../reporting-service/professionaldemographicsaudiencereportrequest.md)|Use this report to discover how your campaigns and ad groups are resonating with different companies, industries, and job functions.<br/><br/>You can request impressions, clicks, spend, and average cost-per-click for each ad group, organized by company, industry, and job function.|
 |[UserLocationPerformanceReportColumn](../reporting-service/userlocationperformancereportcolumn.md)|Use this report to see which locations your traffic is coming from. You can then validate whether your location targeting strategy is successful, and identify opportunities to improve. The report also identifies the physical location of the user and the intended geographical location of the user's search query, for example a user in Seattle searching for services in Portland.<br/><br/>You can request impressions, clicks, spend, and average cost per click for each ad group, organized by city, country, metro area (Nielsen DMA® in the United States), radius, state, and account.|
 
 

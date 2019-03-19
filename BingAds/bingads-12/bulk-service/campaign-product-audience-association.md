@@ -12,7 +12,7 @@ dev_langs:
 Defines a Campaign Product Audience Association that can be uploaded and downloaded in a bulk file. 
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+> Not everyone has the campaign level audience targets feature yet. If you don't, don't worry. It's coming soon.
 
 Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Bing Ads applies a union of both campaign and ad group level exclusions.
 
@@ -118,7 +118,7 @@ Supported values are negative ninety (-90.00) through positive nine hundred (900
 > If not specified, the default bid adjustment value is *0*. The default value is subject to change.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="campaign"></a>Campaign

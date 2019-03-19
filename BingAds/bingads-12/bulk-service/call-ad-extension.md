@@ -136,7 +136,7 @@ The possible values of *StartMinute* and *EndMinute* range from 00 to 60.
 The following example demonstrates day and time ranges during weekdays from 9:00AM through 9:00PM: *(Monday[09:00-21:00]);(Tuesday[09:00-21:00]);(Wednesday[09:00-21:00]);(Thursday[09:00-21:00]);(Friday[09:00-21:00])*
 
 **Add:** Optional. If you do not set this field, then ad extensions will be eligible for scheduling anytime during the calendar start and end dates.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The individual day and time ranges cannot be updated. You can effectively update the day and time ranges by sending a new set that should replace the prior set. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing all existing day and time ranges.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. The individual day and time ranges cannot be updated. You can effectively update the day and time ranges by sending a new set that should replace the prior set. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing all existing day and time ranges.    
 **Delete:** Read-only  
 
 ## <a name="callonly"></a>Call Only
@@ -145,7 +145,7 @@ The option to show both your phone number and website, or just your phone number
 Set this property to *TRUE* if you want the ad extension to only show the phone number without a link to your website, and otherwise if you want the ad extension include a link to your website in addition to the phone number set it to *FALSE*.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set and the ad extension will include a link to your website in addition to the phone number.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="calltrackingenabled"></a>Call Tracking Enabled
@@ -157,7 +157,7 @@ Set this property to *TRUE* to enable call tracking, and otherwise set it to *FA
 > Call tracking is only supported in the United States and United Kingdom.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="clientid"></a>Client Id
@@ -173,7 +173,7 @@ The country code where the phone number is registered.
 The country code must contain a 2 character country code. The supported country code values include AR, AT, AU, BR, CA, CH, CL, CO, DE, DK, ES, FI, FR, GB, HK, ID, IE, IN, IT, MX, MY, NL, NZ, NO, PE, PH, SE, SG, TH, TW, US, VE, and VN.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="editoriallocation"></a>Editorial Location
@@ -221,7 +221,7 @@ The ad extension scheduled end date string formatted as *MM/DD/YYYY*.
 The end date is inclusive. For example, if you set this field to 12/31/2019, the ad extensions will stop being shown at 11:59 PM on 12/31/2019.
 
 **Add:** Optional. If you do not specify an end date, the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the end date and the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the end date and the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.    
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -260,7 +260,7 @@ If the campaign includes call and location ad extensions, this phone number will
 The phone number may be reformatted. For example, if you set phone number to 4255551212, it would be reformatted to (425) 555-1212.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="publishercountries"></a>Publisher Countries
@@ -278,7 +278,7 @@ The ad extension scheduled start date string formatted as *MM/DD/YYYY*.
 The start date is inclusive. For example, if you set *StartDate* to 5/5/2019, the ad extensions will start being shown at 12:00 AM on 5/5/2019.
 
 **Add:** Optional. If you do not specify a start date, the ad extensions are immediately eligible to be scheduled during the day and time ranges.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the start date and the ad extensions are immediately eligible to be scheduled during the day and time ranges.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. The start date can be shortened or extended, as long as the end date is either null or occurs after the new start date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the start date and the ad extensions are immediately eligible to be scheduled during the day and time ranges.    
 **Delete:** Read-only  
 
 ## <a name="status"></a>Status
@@ -287,7 +287,7 @@ The status of the ad extension.
 Possible values are *Active* or *Deleted*. 
 
 **Add:** Optional. The default value is *Active*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Required. The Status must be set to *Deleted*.
 
 ## <a name="tollfree"></a>Toll Free
@@ -299,7 +299,7 @@ Set this property to *TRUE* if a Bing Ads forwarding phone number should be crea
 > Beginning the week of August 14th, 2017 you can no longer create a new toll-free Bing Ads forwarding phone number. If you set this value *True* then the operation will succeed; however, a toll-free number will not be created and when you retrieve the call ad extension this property will be set to *False*. If a toll-free forwarding number was provisioned prior to the week of August 14th, 2017 then this property will be *True* if the number is still active when you retrieve the call ad extension.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="usesearchertimezone"></a>Use Searcher Time Zone
@@ -308,7 +308,7 @@ Determines whether to use the account time zone or the time zone of the search u
 Set this property to *TRUE* if you want the ad extensions to be shown in the search user's time zone, and otherwise set it to *FALSE*.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set and the account time zone will be used.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
 **Delete:** Read-only  
 
 ## <a name="version"></a>Version

@@ -115,7 +115,7 @@ The name of the product audience.
 The name can contain a maximum of 128 characters
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="audiencenetworksize"></a>Audience Network Size
@@ -153,7 +153,7 @@ The description of the product audience. Use a description to help you remember 
 The description can contain a maximum of 1,024 characters.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -169,7 +169,7 @@ When you create a product audience, you can specify how far back in time Bing Ad
 The mimimum duration is 1 day and the maximum duration allowed is 180 days.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -195,7 +195,7 @@ Determines who to add to your product audience.
 The possible values are GeneralVisitors, ProductSearchers, ProductViewers, ShoppingCartAbandoners, and PastBuyers.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.   
+**Update:** Optional. If no value is set for the update, this setting is not changed.   
 **Delete:** Read-only  
 
 ## <a name="scope"></a>Scope
@@ -234,7 +234,7 @@ The Bing Ads identifier of the Universal Event Tracking (UET) tag that is used w
   ```
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 	

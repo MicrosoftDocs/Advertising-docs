@@ -4,13 +4,43 @@ ms.service: "bing-ads"
 ms.topic: "article"
 author: "eric-urban"
 ms.author: "eur"
-description: Get information about the changes to the Bing Ads services for each month.
+description: Get information about changes to Bing Ads API Version 12 by month. 
 ---
 # Bing Ads API Release Notes
-For information about the changes to the Bing Ads Version 12 services for each month, see the following sections. 
+See below for information about changes to Bing Ads API Version 12 by month. 
+
+## <a name="march2019"></a>March 2019
+See below for Bing Ads API updates during this calendar month. 
+
+- [Final Url Suffix](#finalurlsuffix-march2019)  
+- [New Report Columns](#reportcolumns-march2019)  
+
+### <a name="campaign-finalurlsuffix-march2019"></a>Final Url Suffix
+The *FinalUrlSuffix* element is added for future use in the following Campaign Management API objects. 
+- [AccountProperty](../campaign-management-service/accountproperty.md#finalurlsuffix)  
+- [ActionAdExtension](../campaign-management-service/actionadextension.md#finalurlsuffix)  
+- [Ad](../campaign-management-service/ad.md#finalurlsuffix)  
+- [AdGroup](../campaign-management-service/adgroup.md#finalurlsuffix)  
+- [AppAdExtension](../campaign-management-service/appadextension.md#finalurlsuffix)  
+- [BiddableAdGroupCriterion](../campaign-management-service/biddableadgroupcriterion.md#finalurlsuffix)  
+- [Campaign](../campaign-management-service/campaign.md#finalurlsuffix)  
+- [ImageAdExtension](../campaign-management-service/imageadextension.md#finalurlsuffix)  
+- [Keyword](../campaign-management-service/keyword.md#finalurlsuffix)  
+- [PriceAdExtension](../campaign-management-service/priceadextension.md#finalurlsuffix)  
+- [SitelinkAdExtension](../campaign-management-service/sitelinkadextension.md#finalurlsuffix)  
+
+The final URL suffix will include tracking parameters that will be appended to the end of your landing page URL.
+
+Final URL suffix is currently only available at the account, campaign, ad group, and keyword level for Phase 1 pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 533). Final URL suffix will be available in other entities for Phase 2 pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). Later this year Final URL suffix will be available in all of the above entities for all customers. 
+
+### <a name="reportcolumns-march2019"></a>New Report Columns
+The *CampaignType* column is added to the following reports. 
+- [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md) 
+- [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md) 
+- [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md) 
 
 ## <a name="january2019"></a>January 2019
-See below for Bing Ads service updates during this calendar month. 
+See below for Bing Ads API updates during this calendar month. 
  
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-january2019)  
 
@@ -18,7 +48,7 @@ See below for Bing Ads service updates during this calendar month.
 The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.3), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.3), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.3), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.3) SDK version 12.0.3. 
 
 ## <a name="december2018"></a>December 2018
-See below for Bing Ads service updates during this calendar month. 
+See below for Bing Ads API updates during this calendar month. 
  
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-december2018)  
 
@@ -26,7 +56,7 @@ See below for Bing Ads service updates during this calendar month.
 The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.2), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.2), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.2), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.2) SDK version 12.0.2. 
 
 ## <a name="november2018"></a>November 2018
-See below for Bing Ads service updates during this calendar month. 
+See below for Bing Ads API updates during this calendar month. 
  
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-november2018)  
 - [New Report Columns](#reportcolumns-november2018)  
@@ -84,7 +114,7 @@ You can manage experiment settings using the Bulk service ([Experiment Record](.
 
 
 ## <a name="october2018"></a>October 2018
-See below for Bing Ads service updates during this calendar month. 
+See below for Bing Ads API updates during this calendar month. 
  
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-october2018)  
 - [Longer Expanded Text Ads](#expandedtextads-october2018)  
@@ -129,7 +159,7 @@ The *ResponsiveAd* value is added to the [AdTypeReportFilter](../reporting-servi
 - [SearchQueryPerformanceReportFilter](../reporting-service/searchqueryperformancereportfilter.md)  
 
 ## <a name="september2018"></a>September 2018
-See below for Bing Ads service updates during this calendar month. 
+See below for Bing Ads API updates during this calendar month. 
  
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-september2018)   
 - [Customer Id and Customer Name Report Columns](#customeridcustomername-september2018)  
@@ -151,7 +181,7 @@ The *CustomerId* and *CustomerName* columns are added to the following reports.
 The *CustomerId* and *CustomerName* columns had already been available via the [ProductMatchCountReportColumn](../reporting-service/productmatchcountreportcolumn.md) prior this this month's release. 
 
 ## <a name="august2018"></a>August 2018
-See below for Bing Ads service updates during this calendar month. 
+See below for Bing Ads API updates during this calendar month. 
  
 - [Conflict Type for the Negative Keyword Conflict Report](#negativekeywordconflicttype-august2018)  
 - [Ad Click Parallel Tracking](#adclickparalleltracking-august2018)   
@@ -206,7 +236,7 @@ The Campaign Management service is updated to support similar audiences for rema
 > Bulk service support for similar audiences for remarketing lists is coming soon. 
 
 ## <a name="july2018"></a>July 2018
-See below for Bing Ads service updates during this calendar month. 
+See below for Bing Ads API updates during this calendar month. 
 
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-july2018)   
 
@@ -216,7 +246,7 @@ The Bing Ads .NET, Java, Php, and Python SDKs are updated.
 - Updated the Customer Management proxies to support [LinkedAccountIds](#linkedaccountids-june2018) for agencies. For agency users the customer role can contain a list of linked accounts that the user can access as an agency on behalf of another customer.
 
 ## <a name="june2018"></a>June 2018
-See below for Bing Ads service updates during this calendar month. 
+See below for Bing Ads API updates during this calendar month. 
 
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-june2018)   
 - [Linked Account Ids per Customer Role](#linkedaccountids-june2018)
@@ -231,7 +261,7 @@ The [LinkedAccountIds](../customer-management-service/customerrole.md#linkedacco
 > The [CustomerRole](../customer-management-service/customerrole.md) objects that represent the user's permissions for agency-linked accounts will not be returned by default when you call the [GetUser](../customer-management-service/getuser.md) service operation. In other words by default the [GetUser](../customer-management-service/getuser.md) operation will only return *CustomerRole* objects for customers that the user can directly access without agency linking. To retrieve [CustomerRole](../customer-management-service/customerrole.md) objects that represent the user's permissions for agency-linked accounts you must set the optional [IncludeLinkedAccountIds](../customer-management-service/getuser.md#includelinkedaccountids) element to *True* when calling the [GetUser](../customer-management-service/getuser.md) operation.
 
 ## <a name="may2018"></a>May 2018
-See below for Bing Ads service updates during this calendar month. 
+See below for Bing Ads API updates during this calendar month. 
 
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-may2018)   
 - [Microsoft Audience Network Preview](#audiencenetwork-may2018)  
@@ -245,7 +275,7 @@ The Bing Ads .NET, Java, and Python SDKs are updated with retries for the 117 th
 Support is added for the Microsoft Audience Network in preview. For details see [Audience Ads](audience-ads.md). For differences between version 11 and 12, see [Migrate to Version 12](migration-guide.md). 
 
 ## <a name="april2018"></a>April 2018
-See below for Bing Ads service updates during this calendar month. 
+See below for Bing Ads API updates during this calendar month. 
 
 - [Version 12 General Availability](#v12-april2018)  
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-april2018)   
@@ -269,7 +299,7 @@ The file_type parameter now defaults to 'Csv' as an *str* datatype instead of th
 The [ProductMatchCountReportRequest](../reporting-service/productmatchcountreportrequest.md) is added for Bing Shopping campaigns. You can include details in the report such as impressions, clicks, and spend that you can use to see if you are covering and bidding across your Bing shopping campaigns inventory. Note that this only provides the matched data for your current Product Group level, and you cannot obtain historical views.
 
 ## <a name="march2018"></a>March 2018
-See below for Bing Ads service updates during this calendar month. 
+See below for Bing Ads API updates during this calendar month. 
 
 - [Version 12 Sandbox Beta](#v12-march2018)  
 

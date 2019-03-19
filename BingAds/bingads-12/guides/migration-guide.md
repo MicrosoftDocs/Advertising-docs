@@ -534,7 +534,7 @@ The Content ad distribution is no longer supported in Bing Ads, and the *Content
 The Native value is renamed Audience in the [AdDistributionReportFilter](../reporting-service/addistributionreportfilter.md) value set. 
 
 #### <a name="reporting-historical-columns"></a>Historical Columns
-The [AdGroupPerformanceReportColumn ](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn ](../reporting-service/campaignperformancereportcolumn.md), and [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) values are renamed from Historic to Historical.
+The [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), and [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) values are renamed from Historic to Historical.
 
 Version 11|Version 12  
 ---------|---------
@@ -546,7 +546,7 @@ HistoricLandingPageExperience|HistoricalLandingPageExperience
 In addition, the 2054 error code is renamed from InvalidGrainForHistoricQualityScoreColumns to InvalidGrainForHistoricalQualityScoreColumns.
 
 #### <a name="reporting-internalcolumns"></a>Internal Columns
-The *BusinessCategoryId*, *BusinessCategoryName*, *BusinessListingId*, and *BusinessListingName* values are removed from the [AdPerformanceReportColumn ](../reporting-service/adperformancereportcolumn.md), [AdGroupPerformanceReportColumn ](../reporting-service/adgroupperformancereportcolumn.md), and [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) value sets. These columns were previously only available for internal use. 
+The *BusinessCategoryId*, *BusinessCategoryName*, *BusinessListingId*, and *BusinessListingName* values are removed from the [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md), [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), and [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md) value sets. These columns were previously only available for internal use. 
 
 ### <a name="reporting-newfeatures"></a>New Features
 

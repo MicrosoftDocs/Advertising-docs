@@ -100,6 +100,8 @@ The name of the in-market audience.
 
 This bulk field maps to the *Audience* field of the [In Market Audience](in-market-audience.md) record.
 
+Bulk API download returns all in-market audience associations, whether the in-market audience is active or deleted. If the association is for a deleted in-market audience, then this field will be set to the same value as the [Audience Id](#audienceid) field. 
+
 **Add:** Read-only and Required for some use cases. You must either specify the [Audience](#audience) or [Audience Id](#audienceid) field. If you are adding new Ad Group Negative In Market Audience Associations with new in-market audiences in the same Bulk file, and if you do not set the [Audience Id](#audienceid) field, then this [Audience](#audience) field must be set as a logical key to the same value as the *Audience* field of the [In Market Audience](in-market-audience.md) record. For more information, see [Bulk File Schema Reference Keys](../bulk-service/bulk-file-schema.md#referencekeys).  
 **Update:** Read-only    
 **Delete:** Read-only  

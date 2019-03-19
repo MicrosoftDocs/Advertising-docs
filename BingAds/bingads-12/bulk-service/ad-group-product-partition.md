@@ -35,7 +35,7 @@ var bulkAdGroupProductPartition = new BulkAdGroupProductPartition
     // NegativeAdGroupCriterion object of the Campaign Management service.
     // Use the BiddableAdGroupCriterion to set the 'Is Excluded' field in the Bulk file to True,
     // and otherwise use the NegativeAdGroupCriterion to set the 'Is Excluded' field to False.
-    AdGroupCriterion = new BiddableAdGroupCriterion
+    BiddableAdGroupCriterion = new BiddableAdGroupCriterion
     {
         // 'Parent Id' column header in the Bulk file
         AdGroupId = adGroupIdKey,
@@ -137,7 +137,7 @@ The name of the ad group that contains the product partition.
 The amount to bid in the auction.
 
 **Add:** Required if [Is Excluded](#isexcluded) is *FALSE* and the [Sub Type](#subtype) is *Unit*, and otherwise the bid is not allowed.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="campaign"></a>Campaign
@@ -171,7 +171,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
     > With the Bulk service the Key must be formatted with surrounding braces and a leading underscore, for example if the Key is promoCode, it must be formatted as {_promoCode}. With the Campaign Management service you cannot specify the surrounding braces and underscore.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
 **Delete:** Read-only  
 
 ## <a name="destinationurl"></a>Destination Url
@@ -187,7 +187,7 @@ The URL can contain a maximum of 1,024 characters. If the URL does not specify a
 > This destination URL is used if specified; otherwise, the destination URL is determined by the corresponding value of the 'Link' that you specified for the product offer in your Bing Merchant Center catalog.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.   
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.   
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -304,5 +304,5 @@ The following validation rules apply to tracking templates. For more details abo
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
