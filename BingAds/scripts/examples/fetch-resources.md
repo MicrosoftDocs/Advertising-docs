@@ -196,4 +196,4 @@ There's no built-in CSV parsing tool, so you'll need to write your own or find o
 
 ## Accessing Google services
 
-For information about using [UrlFetchApp](../reference/UrlFetchApp.md) to access Google services, see [Updating keyword bid](../solutions/urlfetch-example.md).
+For information about using [UrlFetchApp](../reference/UrlFetchApp.md) to access Google services, see [Calling Google services](../examples/urlfetch-example.md).

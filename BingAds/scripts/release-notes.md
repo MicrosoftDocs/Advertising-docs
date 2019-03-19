@@ -48,7 +48,7 @@ Added the following methods to the [Stats](reference/Stats.md) object.
 
 The following is a documentation only change.
 
-- Added the [Updating the bid value for a list of keywords](solutions/urlfetch-example.md) topic. This topic shows how to use [UrlFetchApp](reference/UrlFetchApp.md) to call Google services.
+- Added the [Calling Google services](examples/urlfetch-example.md) topic. This topic shows how to use [UrlFetchApp](reference/UrlFetchApp.md) to call Google services.
 
 
 ## November 7, 2018
