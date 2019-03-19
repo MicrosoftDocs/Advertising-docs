@@ -64,9 +64,9 @@
     - name: Using UrlFetchApp 
       href: examples/fetch-resources.md 
     - name: Getting a Google access token 
-      href: solutions/accessing-google-services.md
+      href: examples/accessing-google-services.md
     - name: Calling Google services 
-      href: solutions/urlfetch-example.md 
+      href: examples/urlfetch-example.md 
 - name: Solutions
   href: solutions/index.md 
   items:
