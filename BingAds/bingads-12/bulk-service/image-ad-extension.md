@@ -180,7 +180,7 @@ You can get the identifier of each [Image](../campaign-management-service/image.
 In a bulk file, the list of media identifiers are delimited with a semicolon (;).
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -220,7 +220,7 @@ The status of the ad extension.
 Possible values are *Active* or *Deleted*. 
 
 **Add:** Optional. The default value is *Active*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Required. The Status must be set to *Deleted*.
 
 ## <a name="usesearchertimezone"></a>Use Searcher Time Zone
@@ -229,7 +229,7 @@ Determines whether to use the account time zone or the time zone of the search u
 Set this property to *TRUE* if you want the ad extensions to be shown in the search user's time zone, and otherwise set it to *FALSE*.
 
 **Add:** Optional. If you do not specify this field or leave it empty, the default value of *FALSE* will be set and the account time zone will be used.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed. If you set this field to *delete_value*, then you are effectively resetting to the default value of *FALSE*.   
 **Delete:** Read-only  
 
 ## <a name="version"></a>Version

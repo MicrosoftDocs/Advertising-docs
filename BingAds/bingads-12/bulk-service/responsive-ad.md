@@ -179,7 +179,7 @@ Depending on your audience ad's placement, your business's name may appear in yo
 The length of the string is limited to 25 characters.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
+**Update:** Optional. If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only 
 
 ## <a name="calltoaction"></a>Call To Action
@@ -187,8 +187,8 @@ A brief, punchy reason for customers to click your ad right now.
 
 The possible values are AddToCart, ApplyNow, BookNow, BookTravel, Buy, BuyNow, ContactUs, Download, GetQuote, Install, LearnMore, NoButton, OpenLink, OrderNow, RegisterNow, SeeMore, ShopNow, SignUp, Subscribe, and VisitSite.
 
-**Add:** Read-only. This element is reserved for future use.  
-**Update:** Read-only. This element is reserved for future use.     
+**Add:** Read-only  
+**Update:** Read-only     
 **Delete:** Read-only 
 
 ## <a name="campaign"></a>Campaign
@@ -222,7 +222,7 @@ In a bulk file, the list of custom parameters are formatted as follows.
     > With the Bulk service the Key must be formatted with surrounding braces and a leading underscore, for example if the Key is promoCode, it must be formatted as {_promoCode}. With the Campaign Management service you cannot specify the surrounding braces and underscore.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. To remove all custom parameters, set this field to *delete_value*. The *delete_value* keyword removes the previous setting. To remove a subset of custom parameters, specify the custom parameters that you want to keep and omit any that you do not want to keep. The new set of custom parameters will replace any previous custom parameter set.    
 **Delete:** Read-only  
 
 ## <a name="editorialappealstatus"></a>Editorial Appeal Status
@@ -304,7 +304,7 @@ Also note that  if the *Tracking Template* or *Custom Parameter* fields are set,
 > This URL is used only if the keyword does not specify a final URL.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
+**Update:** Optional. If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only  
 
 ## <a name="headline"></a>Headline
@@ -315,7 +315,7 @@ Because audience ads are responsive, we require multiple headlines so they can f
 The length of the string is limited to 25 characters.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
+**Update:** Optional. If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only 
 
 ## <a name="id"></a>Id
@@ -459,7 +459,7 @@ The possible sub type values include LandscapeImageMedia, SquareImageMedia, Imag
 > 
 > The maximum file size is 5 MB. The maximum width and height in pixels are 2592 and 2048 independently, and you must still maintain one of the supported aspect ratios. For example if the image asset with sub type LandscapeImageMedia is 2592 in width, then the height must be 1357.
 
-**Add:** Required if [Landscape Image Media Id](#landscapeimagemediaid) is empty. Only the [id](#images-id) and [subType](#images-subtype) are required for each asset link. 
+**Add:** Required if [Landscape Image Media Id](#landscapeimagemediaid) is empty. Only the [id](#images-id) and [subType](#images-subtype) are required for each asset link.  
 **Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any images that were previously linked to this ad will be replaced. If you set this field, only the [id](#images-id) and [subType](#images-subtype) are required for each asset link.   
 **Delete:** Read-only  
 
@@ -471,15 +471,15 @@ The aspect ratio of the stored image media can vary, so long as the image asset 
 > [!NOTE]
 > Although in Bing Ads API version 12 you can use the [Landscape Image Media Id](#landscapeimagemediaid) and [SquareImageMediaId](#squareimagemediaid), these fields are deprecated and will be removed in a future version. You have more flexibility and control of cropped images via the [Images](#images) field.
 
-**Add:** Required if [Images](#images) is not set. If [Images](#images) is set, this field is ignored. 
-**Update:** Optional. If [Images](#images) is set, this field is ignored. If no value is specified on update, this Bing Ads setting is not changed.     
+**Add:** Required if [Images](#images) is not set. If [Images](#images) is set, this field is ignored.  
+**Update:** Optional. If [Images](#images) is set, this field is ignored. If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only 
 
 ## <a name="landscapelogomediaid"></a>Landscape Logo Media Id
 This field is reserved for internal use, and will be removed from a future version of the Bing Ads API.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
+**Update:** Optional. If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only 
 
 ## <a name="longheadline"></a>Long Headline
@@ -490,7 +490,7 @@ Because audience ads are responsive, we require multiple headlines so they can f
 The length of the string is limited to 90 characters.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
+**Update:** Optional. If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only 
 
 ## <a name="mobilefinalurl"></a>Mobile Final Url
@@ -514,7 +514,7 @@ The following validation rules apply to Final URLs and Final Mobile URLs.
 > This URL is used only if the keyword does not specify a *Mobile Final Url*.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -554,7 +554,7 @@ The status of the ad.
 Possible values are *Active*, *Paused*, or *Deleted*. 
 
 **Add:** Optional. The default value is *Active*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Required. The Status must be set to *Deleted*.
 
 ## <a name="squareimagemediaid"></a>Square Image Media Id
@@ -566,14 +566,14 @@ The aspect ratio of the stored image media can vary, so long as the image asset 
 > Although in Bing Ads API version 12 you can use the [Landscape Image Media Id](#landscapeimagemediaid) and [SquareImageMediaId](#squareimagemediaid), these fields are deprecated and will be removed in a future version. You have more flexibility and control of cropped images via the [Images](#images) field.
 
 **Add:** Optional. If [Images](#images) is set, this field is ignored and Bing Ads will automatically create a new square image asset by cropping the LandscapeImageMedia image asset. If [Images](#images) is not set, and if you do not set this field, Bing Ads will automatically create a new square image asset by cropping the [Landscape Image Media Id](#landscapeimagemediaid).  
-**Update:** Optional. If [Images](#images) is set, this field is ignored and Bing Ads will automatically create a new square image asset by cropping the LandscapeImageMedia image asset. If [Images](#images) is not set, and if you do not set this field, Bing Ads will automatically create a new square image asset by cropping the [Landscape Image Media Id](#landscapeimagemediaid). If no value is specified on update, this Bing Ads setting is not changed.     
+**Update:** Optional. If [Images](#images) is set, this field is ignored and Bing Ads will automatically create a new square image asset by cropping the LandscapeImageMedia image asset. If [Images](#images) is not set, and if you do not set this field, Bing Ads will automatically create a new square image asset by cropping the [Landscape Image Media Id](#landscapeimagemediaid). If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only 
 
 ## <a name="squarelogomediaid"></a>Square Logo Media Id
 This field is reserved for internal use, and will be removed from a future version of the Bing Ads API.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.     
+**Update:** Optional. If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only 
 
 ## <a name="text"></a>Text
@@ -588,7 +588,7 @@ The length of the string is limited to 90 characters.
 The text cannot contain the newline (\n) character.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  
 
 ## <a name="trackingtemplate"></a>Tracking Template
@@ -605,5 +605,5 @@ The following validation rules apply to tracking templates. For more details abo
 - Bing Ads does not validate whether custom parameters exist. If you use custom parameters in your tracking template and they do not exist, then the landing page URL will include the key and value placeholders of your custom parameters without substitution. For example, if your tracking template is *http://tracker.example.com/?season={_season}&promocode={_promocode}&u={lpurl}*, and neither *{_season}* or *{_promocode}* are defined at the campaign, ad group, criterion, keyword, or ad level, then the landing page URL will be the same.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
 **Delete:** Read-only  

@@ -153,7 +153,7 @@ Supported values range from 0 to 23.
 ## <a name="fromminute"></a>From Minute
 The starting minute to target.
 
-Supported values are *Zero*, *Fifteen*, *Thirty*, and *FortyFive*.
+Supported values are 0, 15, 30, and 45. 
 
 **Add:** Required  
 **Update:** Required  
@@ -213,7 +213,7 @@ Supported values range from 0 to 24. If the [To Hour](#tohour) is set to 24, the
 ## <a name="tominute"></a>To Minute
 The ending minute to target.
 
-Supported values are *Zero*, *Fifteen*, *Thirty*, and *FortyFive*.
+Supported values are 0, 15, 30, and 45. 
 
 **Add:** Required  
 **Update:** Required  

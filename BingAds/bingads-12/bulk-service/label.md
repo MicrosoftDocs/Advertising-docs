@@ -84,7 +84,7 @@ The hexadecimal value must have the '#' prefix. For example you can use the valu
 The color can be viewed in the Bing Ads web application. Your application can display the color or utilize the hexadecimal value to categorize a set of labels.
 
 **Add:** Optional. If you do not specify any color, the value will be assigned at random for each label.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. You can update the color code but cannot remove it.   
+**Update:** Optional. If no value is set for the update, this setting is not changed. You can update the color code but cannot remove it.   
 **Delete:** Read-only  
 
 ## <a name="clientid"></a>Client Id
@@ -100,7 +100,7 @@ The label description.
 The label description can be between 1 to 200 characters in length.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -116,7 +116,7 @@ The label name.
 The case-sensitive label name can be between 1 to 80 characters in length, and must be unique across all labels in the account.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -135,6 +135,6 @@ The status of the label.
 Possible values are *Active* or *Deleted*. 
 
 **Add:** Optional. The default value is *Active*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Required. The Status must be set to *Deleted*.
 

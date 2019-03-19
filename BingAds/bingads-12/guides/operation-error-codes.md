@@ -7,7 +7,7 @@ ms.author: "eur"
 description: Reference documentation for service operation error codes.
 ---
 # Operation Error Codes
-Bing Ads service operations may return error codes depending on the context. The list provided below includes error codes across all Bing Ads services. For information about error codes per service operation, see the reference page for each operation.
+Bing Ads service operations may return error codes depending on the context. The list provided below includes error codes across all Bing Ads services. 
 
 For more information about error handling and troubleshooting, see [Handling Service Errors and Exceptions](handle-service-errors-exceptions.md).
 

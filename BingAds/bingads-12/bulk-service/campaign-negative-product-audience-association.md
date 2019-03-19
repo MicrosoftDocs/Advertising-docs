@@ -12,7 +12,7 @@ dev_langs:
 Defines a Campaign Negative Product Audience Association that can be uploaded and downloaded in a bulk file. 
 
 > [!NOTE]
-> Not everyone has this feature yet. If you don’t, don’t worry. It’s coming soon.
+> Not everyone has the campaign level audience targets feature yet. If you don't, don't worry. It's coming soon.
 
 Audience targets cannot be set both campaign and ad group level. If you set any biddable campaign level audience criteria, then you cannot set any biddable ad group level audience criteria. Audience exclusions can be set at both campaign and ad group level. Bing Ads applies a union of both campaign and ad group level exclusions.
 

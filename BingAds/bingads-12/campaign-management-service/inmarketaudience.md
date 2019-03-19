@@ -11,6 +11,8 @@ Defines an in-market audience.
 
 > [!NOTE]
 > You cannot add, update, or delete an in-market audience using the Bing Ads API. Having said that, you can add and delete in-market audience associations and exclusions.
+> Bing Ads API will always return all currently active in-market audiences. The service does not return deleted in-market audiences, or any delta download to see what changed. 
+> You should not take any dependencies on the sandbox in-market audiences. Some in-market audiences are available in sandbox, but not in production. The in-market audience property values can also differ between sandbox and production e.g., the audience name and size. 
 
 > [!NOTE]
 > This feature is available only in the United States.
@@ -49,7 +51,7 @@ The [InMarketAudience](inmarketaudience.md) object derives from the [Audience](a
 |<a name="parentid"></a>ParentId|The Bing Ads identifier of the customer that contains the in-market audience.<br/><br/>**Add:** Not supported<br/>**Update:** Not supported|**long**|
 |<a name="scope"></a>Scope|Scope defines what accounts can use this audience.<br/><br/>For an in-market audience the only supported scope is *Customer*, and the in-market audience can be associated with any ad groups across all of the customer's accounts.<br/><br/>**Add:** Not supported<br/>**Update:** Not supported|[EntityScope](entityscope.md)|
 |<a name="searchsize"></a>SearchSize|The total number of people who are active members of this audience in the Search network. This gives you an idea of how many search users you can target.<br/><br/>The audience needs to have at least 1,000 people before Bing Ads will use it for optimizations.<br/><br/>**Add:** Not supported<br/>**Update:** Not supported|**long**|
-|<a name="supportedcampaigntypes"></a>SupportedCampaignTypes|The list of campaign types that support this audience.<br/><br/>Supported values are Audience, DynamicSearchAds, SearchAndContent, and Shopping. New campaign types might be added in the future, so you should not take any dependency on a fixed set of values.<br/><br/>**Add:** Not supported<br/>**Update:** Not supported|**string** array|
+|<a name="supportedcampaigntypes"></a>SupportedCampaignTypes|The list of campaign types that support this audience.<br/><br/>Supported values are Audience, DynamicSearchAds, Search, and Shopping. New campaign types might be added in the future, so you should not take any dependency on a fixed set of values.<br/><br/>**Add:** Not supported<br/>**Update:** Not supported|**string** array|
 |<a name="type"></a>Type|The type of the audience. This value is *InMarket* when you retrieve an in-market audience. For more information about audience types, see the [Audience Data Object Remarks](audience.md#remarks).<br/><br/>**Add:** Not supported<br/>**Update:** Not supported|[AudienceType](audiencetype.md)|
 
 ## Requirements

@@ -34,6 +34,7 @@ When you create an experiment in your account, a new experiment and a new campai
   > - Expired ad groups i.e., with an end date that has passed will not be copied from the base campaign to the experiment campaign. After the experiment is promoted and the experiment campaign settings overwrite the base campaign settings, the expired ad groups in the base campaign will be deleted. Likewise any expired ad groups in the experiment campaign will not be copied to the base campaign during promotion.
   > - Keywords with a destination URL will not be copied from the base campaign to the experiment campaign. We recommend that you upgrade to [Final Url](keyword.md#finalurl), but if you still have keywords with a destination URL they will not be used in the experiment campaign and they will remain in the base campaign (even if the experiment is later promoted). 
   > - Standard text ads (STA) will not be copied from the base campaign to the experiment campaign. We recommend that you upgrade to [Expanded Text Ads](../guides/expanded-text-ads.md), but if you still have STA they will not be used in the experiment campaign and they will remain in the base campaign (even if the experiment is later promoted).  
+  > - Audience associations for deleted in-market audiences might initially be available in your base campaigns, although they will not be copied to experiment campaigns. If you later promote the experiment campaign, your base campaign will adopt all of the settings of the experiment campaign and the audience associations for deleted in-market audiences will be deleted from your base campaign.
   > 
   > In the Bing Ads web application "Experiments" tab, you can get a detailed list of items that were not copied from the base campaign to the experiment campaign. The list is formatted as a Bulk upload result file i.e., error records for the items that were not copied to the experiment campaign. If you find an error record that you believe should have been copied to the experiment campaign please feel free to contact support with details. 
 
@@ -163,7 +164,7 @@ If you do not specify an end date, the ads will not expire. Once the end date ha
 The end date is inclusive. For example, if you set the end date to 12/31/2020, the experiment will end at 11:59 PM on 12/31/2020. The time is relative to the [base campaign](#basecampaignid) time zone.
 
 **Add:**  Optional. If you leave this element nil or empty the experiment will not expire until you take further action e.g., set the experiment [status](#status) to *Ended*.  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. To delete the current end date and effectively set no end date, set this field to the *delete_value* string. When you retrieve the experiment next time, this field will not be set.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. To delete the current end date and effectively set no end date, set this field to the *delete_value* string. When you retrieve the experiment next time, this field will not be set.    
 **Delete:** Read-only  
 
 ## <a name="experimentcampaignid"></a>Experiment Campaign Id
@@ -202,7 +203,7 @@ The [name](campaign.md#campaign) of the [experiment campaign](#experimentcampaig
 The name must be unique (case-insensitive) among all campaigns and experiments within the account. The name can contain a maximum of 128 characters. 
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="startdate"></a>Start Date
@@ -213,7 +214,7 @@ The start date cannot be updated after the experiment has begun i.e., once the s
 The start date is inclusive. For example, if you set start date to 5/5/2020, the experiment will start at 12:00 AM on 5/5/2020. The time is relative to the [base campaign](#basecampaignid) time zone.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. The start date cannot be updated after the experiment has begun i.e., once the start date has arrived.  
+**Update:** Optional. If no value is set for the update, this setting is not changed. The start date cannot be updated after the experiment has begun i.e., once the start date has arrived.  
 **Delete:** Read-only  
 
 ## <a name="status"></a>Status

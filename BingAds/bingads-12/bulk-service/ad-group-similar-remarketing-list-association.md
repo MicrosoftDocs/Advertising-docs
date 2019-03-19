@@ -134,7 +134,7 @@ Supported values are negative ninety (-90.00) through positive nine hundred (900
 > Bing Ads won't apply any bid boosts until the associated similar remarketing list has at least 1,000 users. If someone qualifies to be part of multiple similar remarketing lists AND the similar remarketing lists are associated with the same ad group with different bid adjustments, the highest bid adjustment will be applied. For more information about Remarketing in Paid Search, see [Reach your audience](https://help.bingads.microsoft.com/#apex/3/en/n5022/1).
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="campaign"></a>Campaign

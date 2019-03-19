@@ -120,7 +120,7 @@ The name of the remarketing list.
 The name can contain a maximum of 128 characters
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="audiencenetworksize"></a>Audience Network Size
@@ -158,7 +158,7 @@ The description of the remarketing list. Use a description to help you remember 
 The description can contain a maximum of 1,024 characters.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.   
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.   
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
@@ -174,7 +174,7 @@ When you create a remarketing list, you can specify how far back in time Bing Ad
 The mimimum duration is 1 day and the maximum duration allowed is 180 days.
 
 **Add:** Optional  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 ## <a name="modifiedtime"></a>Modified Time
@@ -200,7 +200,7 @@ A rule template includes conditions used to determine who to add to your remarke
 You can choose one of the four types of rules to target different audiences: *CustomEventsRule*, *PageVisitorsRule*, *PageVisitorsWhoDidNotVisitAnotherPageRule*, and *PageVisitorsWhoVisitedAnotherPageRule*. For details on the format of each rule in the bulk file, see the [CustomEvents](#CustomEvents), [PageVisitors](#PageVisitors), [PageVisitorsWhoDidNotVisitAnotherPage](#PageVisitorsWhoDidNotVisitAnotherPage), and [PageVisitorsWhoVisitedAnotherPage](#PageVisitorsWhoVisitedAnotherPage) rule template remarks sections below.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed. If you want to keep any of the previous rule items, then you must explicitly set them again during update. You can choose to change the type of rule during update.    
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you want to keep any of the previous rule items, then you must explicitly set them again during update. You can choose to change the type of rule during update.    
 **Delete:** Read-only  
 
 ## <a name="scope"></a>Scope
@@ -232,7 +232,7 @@ Supported values are Audience, DynamicSearchAds, Search, and Shopping. New campa
 The Bing Ads identifier of the Universal Event Tracking (UET) tag that is used with the remarketing list.
 
 **Add:** Required  
-**Update:** Optional. If no value is specified on update, this Bing Ads setting is not changed.    
+**Update:** Optional. If no value is set for the update, this setting is not changed.    
 **Delete:** Read-only  
 
 	
