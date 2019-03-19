@@ -160,15 +160,6 @@ The production endpoint is [https://clientcenter.api.bingads.microsoft.com/Api/C
 
 The sandbox endpoint is [https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v13/CustomerManagementService.svc](https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v13/CustomerManagementService.svc).
 
-#### <a name="customer-clientlink"></a>Client Links 
-Several changes are made to the [ClientLink](../customer-management-service/clientlink.md) object.  
-- The ClientAccountId element is renamed [ClientEntityId](../customer-management-service/cliententityid.md).  
-- The ClientAccountNumber element is renamed [ClientEntityNumber](../customer-management-service/cliententitynumber.md).  
-- The [ClientEntityName](../customer-management-service/cliententityname.md) element is added.  
-- The [ManagingCustomerName](../customer-management-service/managingcustomername.md) element is added.  
-- The [CustomerLinkPermission](../customer-management-service/customerlinkpermission.md) element is added for future use.  
-- The [IsBillToClient](../customer-management-service/isbilltoclient.md) element is nillable.  
-
 #### <a name="customer-includecustomeraddress"></a>Customer Address 
 In version 13 the CustomerAddress element will be included in all returned [Customer](../customer-management-service/customer.md) objects by default. You do not need to explicitly request this element. The *IncludeCustomerAddress* element is removed from the [GetCustomer](../customer-management-service/getcustomer.md) and [SearchCustomers](../customer-management-service/searchcustomers.md) request messages.    
 
