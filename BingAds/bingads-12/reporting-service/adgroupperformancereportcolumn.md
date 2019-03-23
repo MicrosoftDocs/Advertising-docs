@@ -143,7 +143,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="landingpageexperience"></a>LandingPageExperience|An aggregate quality assessment of all landing pages on your site. The landing page experience score measures whether your landing page is likely to provide a good experience to customers who click your ad and land on your website. A score of 3 is Above Average; a score of 2 is Average; and a score of 1 is considered Below Average. If you specify a time period that spans multiple days, the score will be the same for each day in the time period, and the value is the most recent calculated score. Data for this column is typically updated 14-18 hours after the UTC day ends.|
 |<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
 |<a name="manualcalls"></a>ManualCalls|The number of calls dialed manually from any device to the tracked phone number. This column is applicable solely for manual calls, and does not include clicks-to-call data.|
-|<a name="network"></a>Network|The current network setting of an ad group. The possible values include AOL search, Bing and Yahoo! search, Content, and Syndicated search partners.|
+|<a name="network"></a>Network|The combined search advertising marketplace made up of Bing, AOL, Yahoo, and partner sites. Use this data to make the best decision on network selection for your ad groups. The possible values include AOL search, Audience, Bing and Yahoo! search, Content, and Syndicated search partners.|
 |<a name="phonecalls"></a>PhoneCalls|The number of total calls to the tracked phone number that showed with your ad. The formula for calculating the phone calls is *ManualCalls + ClickCalls*.|
 |<a name="phoneimpressions"></a>PhoneImpressions|The number of times your tracked number was shown on all devices.|
 |<a name="ptr"></a>Ptr|The phone-through rate (Ptr). The formula for calculating the Ptr is *(PhoneCalls / PhoneImpressions) x 100*.|
@@ -155,7 +155,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
 |<a name="status"></a>Status|The current entity  status.|
 |<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
-|<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
+|<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Audience network, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
 |<a name="trackingtemplate"></a>TrackingTemplate|The current tracking template for the ad group.|
 
 ## <a name="remarks"></a>Remarks

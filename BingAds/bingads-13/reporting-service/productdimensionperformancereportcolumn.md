@@ -139,7 +139,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
 |<a name="localstorecode"></a>LocalStoreCode|An alphanumeric identifier defined by the merchant to uniquely identify each local store. |
 |<a name="merchantproductid"></a>MerchantProductId|The report will include a column that contains the unique identifier provided by a merchant for each product offer.|
-|<a name="network"></a>Network|The current network setting of an ad group. The possible values include AOL search, Bing and Yahoo! search, Content, and Syndicated search partners.|
+|<a name="network"></a>Network|The combined search advertising marketplace made up of Bing, AOL, Yahoo, and partner sites. Use this data to make the best decision on network selection for your ad groups. The possible values include AOL search, Audience, Bing and Yahoo! search, Content, and Syndicated search partners.|
 |<a name="offerlanguage"></a>OfferLanguage|The report will include a column that contains the language for the product offer. For possible values see [Ad Languages](../guides/ad-languages.md). The language display name will be provided in the report e.g. *English*.|
 |<a name="price"></a>Price|The different price for products in your catalog.|
 |<a name="productcategory1"></a>ProductCategory1|The first level value of the Product_category field in your Bing Merchant Center catalog. For more information, see  [How is the catalog feed organized?](https://help.bingads.microsoft.com/#apex/3/en/51084/1)|
@@ -160,7 +160,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="storeid"></a>StoreId|The unique identifier for the Bing Merchant Center store.|
 |<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
 |<a name="title"></a>Title|The product item name. For example the title of a book, DVD, or game.|
-|<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
+|<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Audience network, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
 |<a name="totalclicksonadelements"></a>TotalClicksOnAdElements|The number of clicks when this ad element was present in the ad copy, whether this or another ad element was clicked on.|
 
 ## <a name="remarks"></a>Remarks

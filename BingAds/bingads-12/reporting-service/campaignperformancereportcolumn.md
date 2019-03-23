@@ -158,7 +158,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="lowqualityimpressionspercent"></a>LowQualityImpressionsPercent|The low-quality impressions as a percentage. The formula for calculating the percentage is *(LowQualityImpressions / Impressions) x 100*.|
 |<a name="lowqualitysophisticatedclicks"></a>LowQualitySophisticatedClicks|Invalid clicks that use sophisticated means to appear valid. You are not billed for these clicks. For more information, see [Bing Ads click measurement: description of methodology](https://advertise.bingads.microsoft.com/resources/policies/bing-ads-click-measurement-description-of-methodology).|
 |<a name="manualcalls"></a>ManualCalls|The number of calls dialed manually from any device to the tracked phone number. This column is applicable solely for manual calls, and does not include clicks-to-call data.|
-|<a name="network"></a>Network|The current network setting of an ad group. The possible values include AOL search, Bing and Yahoo! search, Content, and Syndicated search partners.|
+|<a name="network"></a>Network|The combined search advertising marketplace made up of Bing, AOL, Yahoo, and partner sites. Use this data to make the best decision on network selection for your ad groups. The possible values include AOL search, Audience, Bing and Yahoo! search, Content, and Syndicated search partners.|
 |<a name="phonecalls"></a>PhoneCalls|The number of total calls to the tracked phone number that showed with your ad. The formula for calculating the phone calls is *ManualCalls + ClickCalls*.|
 |<a name="phoneimpressions"></a>PhoneImpressions|The number of times your tracked number was shown on all devices.|
 |<a name="ptr"></a>Ptr|The phone-through rate (Ptr). The formula for calculating the Ptr is *(PhoneCalls / PhoneImpressions) x 100*.|
@@ -169,7 +169,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="revenueperconversion"></a>RevenuePerConversion|The revenue per conversion. The formula for calculating the revenue per conversion is *(Revenue / Conversions)*.|
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
 |<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
-|<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
+|<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Audience network, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
 |<a name="trackingtemplate"></a>TrackingTemplate|The current tracking template for the campaign.|
 
 ## <a name="remarks"></a>Remarks

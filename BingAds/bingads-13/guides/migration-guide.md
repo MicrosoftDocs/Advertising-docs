@@ -160,6 +160,15 @@ The production endpoint is [https://clientcenter.api.bingads.microsoft.com/Api/C
 
 The sandbox endpoint is [https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v13/CustomerManagementService.svc](https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v13/CustomerManagementService.svc).
 
+#### <a name="customer-clientlink"></a>Client Links 
+Several changes are made to the [ClientLink](../customer-management-service/clientlink.md) object. 
+- The ClientAccountId element is renamed [ClientEntityId](../customer-management-service/clientlink.md#cliententityid). 
+- The ClientAccountNumber element is renamed [ClientEntityNumber](../customer-management-service/clientlink.md#cliententitynumber). 
+- The [ClientEntityName](../customer-management-service/clientlink.md#cliententityname) element is added. 
+- The [ManagingCustomerName](../customer-management-service/clientlink.md#managingcustomername) element is added. 
+- The [CustomerLinkPermission](../customer-management-service/clientlink.md#customerlinkpermission) element is added for future use. 
+- The [IsBillToClient](../customer-management-service/clientlink.md#isbilltoclient) element is nillable. 
+
 #### <a name="customer-includecustomeraddress"></a>Customer Address 
 In version 13 the CustomerAddress element will be included in all returned [Customer](../customer-management-service/customer.md) objects by default. You do not need to explicitly request this element. The *IncludeCustomerAddress* element is removed from the [GetCustomer](../customer-management-service/getcustomer.md) and [SearchCustomers](../customer-management-service/searchcustomers.md) request messages.    
 
@@ -229,7 +238,7 @@ Support for downloading a report with headers in French is removed. Only English
 The AgeGenderDemographicReportRequest is removed. Instead you can use the [AgeGenderAudienceReportRequest](../reporting-service/agegenderaudiencereportrequest.md). 
 
 #### <a name="reporting-score-unavailable"></a>Dash for Unavailable Quality Score
-In version 13 if the quality score was not computed the data returned will be "-" (dash) in the AdRelevance, ExpectedCtr, HistoricalAdRelevance, HistoricalExpectedCtr, HistoricalLandingPageExperience, HistoricalQualityScore, LandingPageExperience, and QualityScore columns. In version 12 the value of "0" (zero) had been returned. These columns are available in the [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md), and [ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md) value sets.
+In version 13 if the quality score was not computed the data returned will be "--" (double dash) in the AdRelevance, ExpectedCtr, HistoricalAdRelevance, HistoricalExpectedCtr, HistoricalLandingPageExperience, HistoricalQualityScore, LandingPageExperience, and QualityScore columns. In version 12 the value of "0" (zero) had been returned. These columns are available in the [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md), and [ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md) value sets.
 
 #### <a name="reporting-impressionshare"></a>Removed Some Impression Share Columns
 The ImpressionLostToAdRelevancePercent, ImpressionLostToBidPercent, ImpressionLostToExpectedCtrPercent, and ImpressionLostToRelevancePercent columns are removed from the [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md), [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), and [ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md) value sets. 

@@ -14,6 +14,7 @@ See below for Bing Ads API updates during this calendar month.
 
 - [Final Url Suffix](#finalurlsuffix-march2019)  
 - [New Report Columns](#reportcolumns-march2019)  
+- [Bing Ads Software Development Kit (SDK) Updates](#sdk-march2019)  
 
 ### <a name="campaign-finalurlsuffix-march2019"></a>Final Url Suffix
 The *FinalUrlSuffix* element is added for future use in the following Campaign Management API objects. 
@@ -38,6 +39,9 @@ The *CampaignType* column is added to the following reports.
 - [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md) 
 - [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md) 
 - [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md) 
+
+### <a name="sdk-march2019"></a>Bing Ads Software Development Kit (SDK) Updates
+The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.4), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.4), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.4), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.4) SDK version 12.0.4. 
 
 ## <a name="january2019"></a>January 2019
 See below for Bing Ads API updates during this calendar month. 

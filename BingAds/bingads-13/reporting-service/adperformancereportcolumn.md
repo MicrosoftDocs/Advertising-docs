@@ -136,7 +136,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="impressions"></a>Impressions|The number of times an ad has been displayed on search results pages. Without impressions there are no clicks or conversions.|
 |<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
 |<a name="longheadline"></a>LongHeadline|The longer of two possible responsive ad headlines for Audience campaigns.|
-|<a name="network"></a>Network|The current network setting of an ad group. The possible values include AOL search, Bing and Yahoo! search, Content, and Syndicated search partners.|
+|<a name="network"></a>Network|The combined search advertising marketplace made up of Bing, AOL, Yahoo, and partner sites. Use this data to make the best decision on network selection for your ad groups. The possible values include AOL search, Audience, Bing and Yahoo! search, Content, and Syndicated search partners.|
 |<a name="path1"></a>Path1|The path 1 attribute of an ad.|
 |<a name="path2"></a>Path2|The path 2 attribute of an ad.|
 |<a name="returnonadspend"></a>ReturnOnAdSpend|The return on ad spend (ROAS). The formula for calculating the ROAS is *(Revenue / Spend)*.|
@@ -148,7 +148,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="titlepart1"></a>TitlePart1|The title part 1 attribute of an ad.|
 |<a name="titlepart2"></a>TitlePart2|The title part 2 attribute of an ad.|
 |<a name="titlepart3"></a>TitlePart3|The title part 3 attribute of an ad.|
-|<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
+|<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Audience network, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
 |<a name="trackingtemplate"></a>TrackingTemplate|The current tracking template of the ad, keyword, or criterion.|
 
 ## <a name="remarks"></a>Remarks

@@ -107,7 +107,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="language"></a>Language|The language of the country the ad is served in.<br/><br/>For possible values, see the Language column of [Ad Languages](../guides/ad-languages.md#adlanguage). The language display name will be provided in the report e.g. *English*.|
 |<a name="locationid"></a>LocationId|The Bing Ads identifier of the location where the user was physically located when they clicked the ad. For geographical location identifiers, see [Geographical Location Codes](../guides/geographical-location-codes.md).|
 |<a name="metroarea"></a>MetroArea|The metro area (Nielsen DMA® in the United States) where the user was physically located when they clicked the ad.|
-|<a name="network"></a>Network|The current network setting of an ad group. The possible values include AOL search, Bing and Yahoo! search, Content, and Syndicated search partners.|
+|<a name="network"></a>Network|The combined search advertising marketplace made up of Bing, AOL, Yahoo, and partner sites. Use this data to make the best decision on network selection for your ad groups. The possible values include AOL search, Audience, Bing and Yahoo! search, Content, and Syndicated search partners.|
 |<a name="postalcode"></a>PostalCode|The postal code where the user was physically located when they clicked the ad.|
 |<a name="proximitytargetlocation"></a>ProximityTargetLocation|The radius target bid name. The name of the geographic radius where the user was physically located when they clicked the ad. The *Radius* attribute column contains the distance of the radius.|
 |<a name="queryintentcity"></a>QueryIntentCity|The name of a city if the user's geographical intent can be determined. The city is set if the user's intent is a city, and not necessarily if they are physically located in the city.|
@@ -125,7 +125,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="spend"></a>Spend|The cost per click (CPC) summed for each click.|
 |<a name="state"></a>State|The state where the user was physically located when they clicked the ad.<br/><br/>The location where the user was in physically when they clicked the ad.|
 |<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
-|<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
+|<a name="topvsother"></a>TopVsOther|The report will include a column that indicates whether the ad impression appeared in a top position or elsewhere. The possible values include AOL search - Top, AOL search - Other, Audience network, Bing and Yahoo! search - Top, Bing and Yahoo! search - Other, Syndicated search partners - Top, Syndicated search partners - Other, Content network, and Unknown.|
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns
