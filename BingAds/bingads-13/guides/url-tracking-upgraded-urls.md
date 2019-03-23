@@ -49,26 +49,36 @@ For an account, campaign, or ad group level tracking template, please note the f
 We recommend adding a default tracking template at the account level so that all the campaigns, ad groups, ads, and Sitelink Extensions use the same URL format. If you add more tracking templates at the campaign, ad group, ad or Sitelink Extension level, they will override the account level settings. You can set the account level tracking template using the [SetAccountProperties](../campaign-management-service/setaccountproperties.md) operation via the Campaign Management service, or set the *Tracking Template* field of the [Account](../bulk-service/account.md) record via the Bulk service.
 
 ## <a name="finalurlvalidation"></a>Final URLs
-The following validation rules apply to Final URLs and Final Mobile URLs.
+The following validation rules apply to Final URLs and Final Mobile URLs.  
 
-- The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.
-
-- You may specify up to 10 items for both *FinalUrls* and *FinalMobileUrls*; however, only the first item in each list is used for delivery. The service allows up to 10 for potential forward compatibility.
-
-- Usage of '{' and '}' is only allowed to delineate tags, for example "{lpurl}".
-
-- Final URLs must each be a well-formed URL starting with either http:// or https://.
-
-- If you specify *FinalMobileUrls*, you must also specify *FinalUrls*.
-
-- You may not specify *FinalMobileUrls* if the device preference is set to mobile.
+- The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol string does count towards the 2,048 character limit.  
+- You may specify up to 10 items for both *FinalUrls* and *FinalMobileUrls*; however, only the first item in each list is used for delivery. The service allows up to 10 for potential forward compatibility.  
+- Usage of '{' and '}' is only allowed to delineate tags, for example "{lpurl}".  
+- Final URLs must each be a well-formed URL starting with either http:// or https://.  
+- If you specify *FinalMobileUrls*, you must also specify *FinalUrls*.  
+- You may not specify *FinalMobileUrls* if the device preference is set to mobile.  
 
 Also note the following validation rules for ad and site link final URLs.
 
-- You may not specify final mobile URLs if the device preference is set to mobile.
+- You may not specify final mobile URLs if the device preference is set to mobile.  
+- If the ad or site link's tracking template or custom parameters are specified, then at least one final URL is required.  
 
-- If the ad or site link's tracking template or custom parameters are specified, then at least one final URL is required.
+## <a name="finalurlsuffixvalidation"></a>Final URL Suffix
+The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page.
 
+> [!NOTE]
+> Final URL suffix is currently only available at the account, campaign, ad group, and keyword level for Phase 1 pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 533). Final URL suffix will be available in other entities for Phase 2 pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). Later this year Final URL suffix will be available in all of the above entities for all customers. 
+
+Final URL suffixes defined for lower level entities e.g. ads override those set for higher level entities e.g. campaign. For more information, see [Entity Hierarchy and Limits](entity-hierarchy-limits.md). 
+
+Final URL suffix can contain one of the following:
+- Static URL parameters  
+- URL parameters that specify Bing Ads URL parameters as values  
+- URL parameters supported for [Final URL, tracking template, or custom parameter](https://help.bingads.microsoft.com/#apex/3/en/56799/0)  
+
+Final URL suffix cannot start with the following characters: ?, &, or #. However you should use "&" to append multiple parameter key and value pairs. For example: *src=bing&kwd={keyword}*
+
+Final URL Suffix cannot contain the following URL parameters: {ignore}, {lpurl}, or {escapedlpurl}, or other variations of final URL placeholders ([Tracking templates only](https://help.bingads.microsoft.com/#apex/3/en/56799/0) section).
 
 ## <a name="customparametersvalidation"></a>Custom Parameters
 URL parameters are used to track information about the source of an ad click. By adding these parameters to your ads and campaigns, you can learn if people who clicked on your ads came from mobile devices, where they were located when they clicked your ads, and much more. For example if you use the {AdId} tag in your URL, then when the user clicks your ad the unique system identifier for that ad will be included in the URL where the user lands. For a list of supported parameters, see the *Available parameters* sections within the Bing Ads help article [How do I create an account tracking template?](https://help.bingads.microsoft.com/#apex/3/en/56772/-1).

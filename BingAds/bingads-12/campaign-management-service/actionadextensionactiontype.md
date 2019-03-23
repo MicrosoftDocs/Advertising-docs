@@ -81,6 +81,10 @@ The displayed action text will vary depending on the [Language](actionadextensio
     <xs:enumeration value="Watch" />
     <xs:enumeration value="WatchMore" />
     <xs:enumeration value="WatchNow" />
+    <xs:enumeration value="Directions" />
+    <xs:enumeration value="FindStore" />
+    <xs:enumeration value="SwitchNow" />
+    <xs:enumeration value="VisitStore" />
   </xs:restriction>
 </xs:simpleType>
 ```
@@ -102,6 +106,7 @@ The displayed action text will vary depending on the [Language](actionadextensio
 |<a name="compare"></a>Compare|Use the translated version of *Compare* in the action ad extension.|
 |<a name="contactus"></a>ContactUs|Use the translated version of *ContactUs* in the action ad extension.|
 |<a name="coupon"></a>Coupon|Use the translated version of *Coupon* in the action ad extension.|
+|<a name="directions"></a>Directions|Use the translated version of *Directions* in the action ad extension.|
 |<a name="donate"></a>Donate|Use the translated version of *Donate* in the action ad extension.|
 |<a name="download"></a>Download|Use the translated version of *Download* in the action ad extension.|
 |<a name="emailnow"></a>EmailNow|Use the translated version of *EmailNow* in the action ad extension.|
@@ -109,6 +114,7 @@ The displayed action text will vary depending on the [Language](actionadextensio
 |<a name="explore"></a>Explore|Use the translated version of *Explore* in the action ad extension.|
 |<a name="filenow"></a>FileNow|Use the translated version of *FileNow* in the action ad extension.|
 |<a name="findjob"></a>FindJob|Use the translated version of *FindJob* in the action ad extension.|
+|<a name="findstore"></a>FindStore|Use the translated version of *FindStore* in the action ad extension.|
 |<a name="freeplay"></a>FreePlay|Use the translated version of *FreePlay* in the action ad extension.|
 |<a name="freequote"></a>FreeQuote|Use the translated version of *FreeQuote* in the action ad extension.|
 |<a name="freetrial"></a>FreeTrial|Use the translated version of *FreeTrial* in the action ad extension.|
@@ -143,6 +149,7 @@ The displayed action text will vary depending on the [Language](actionadextensio
 |<a name="startfree"></a>StartFree|Use the translated version of *StartFree* in the action ad extension.|
 |<a name="startnow"></a>StartNow|Use the translated version of *StartNow* in the action ad extension.|
 |<a name="subscribe"></a>Subscribe|Use the translated version of *Subscribe* in the action ad extension.|
+|<a name="switchnow"></a>SwitchNow|Use the translated version of *SwitchNow* in the action ad extension.|
 |<a name="testdrive"></a>TestDrive|Use the translated version of *TestDrive* in the action ad extension.|
 |<a name="trynow"></a>TryNow|Use the translated version of *TryNow* in the action ad extension.|
 |<a name="unknown"></a>Unknown|Reserved for future use.|
@@ -151,6 +158,7 @@ The displayed action text will vary depending on the [Language](actionadextensio
 |<a name="viewnow"></a>ViewNow|Use the translated version of *ViewNow* in the action ad extension.|
 |<a name="viewplans"></a>ViewPlans|Use the translated version of *ViewPlans* in the action ad extension.|
 |<a name="visitsite"></a>VisitSite|Use the translated version of *VisitSite* in the action ad extension.|
+|<a name="visitstore"></a>VisitStore|Use the translated version of *VisitStore* in the action ad extension.|
 |<a name="votenow"></a>VoteNow|Use the translated version of *VoteNow* in the action ad extension.|
 |<a name="watch"></a>Watch|Use the translated version of *Watch* in the action ad extension.|
 |<a name="watchmore"></a>WatchMore|Use the translated version of *WatchMore* in the action ad extension.|

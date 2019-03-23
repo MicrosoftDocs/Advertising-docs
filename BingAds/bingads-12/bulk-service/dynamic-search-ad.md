@@ -288,7 +288,7 @@ The ad copy.
 
 The text must contain at least one word.
 
-The maximum input length of the copy is 80 characters. Note that for ad groups that use Traditional Chinese the maximum input length of the copy is 40 characters. Although dynamic text substitution is supported for other ad types like expanded text ads, it is not supported for dynamic search ads.
+The maximum input length of the copy is 90 characters. Note that for ad groups that use Traditional Chinese the maximum input length of the copy is 45 characters. Although dynamic text substitution is supported for other ad types like expanded text ads, it is not supported for dynamic search ads.
 
 The text cannot contain the newline (\n) character.
 
