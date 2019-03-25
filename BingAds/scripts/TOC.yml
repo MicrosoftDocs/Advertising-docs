@@ -63,7 +63,7 @@
       href: examples/keywords.md 
     - name: Using UrlFetchApp 
       href: examples/fetch-resources.md 
-    - name: Getting a Google access token 
+    - name: Authenticating with Google services 
       href: examples/accessing-google-services.md
     - name: Calling Google services 
       href: examples/urlfetch-example.md 
