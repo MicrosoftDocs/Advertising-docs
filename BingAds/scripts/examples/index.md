@@ -1,6 +1,6 @@
 ---
-title: "Ad group script examples"
-description: "Shows examples that perform various actions against ad groups."
+title: "Script examples"
+description: "Shows examples that perform various actions against different resources."
 author: "swhite-msft"
 manager: ehansen
 
@@ -22,3 +22,5 @@ See the following topics for examples that demonstrate how to use the core featu
 - [Campaigns](./campaigns.md)
 - [Keywords](./keywords.md)
 - [Fetching web resources](./fetch-resources.md)
+
+For more complete solutions, see [Solutions](../solutions/index.md).

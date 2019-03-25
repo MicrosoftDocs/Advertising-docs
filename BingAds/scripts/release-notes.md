@@ -14,6 +14,13 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
+## March 25, 2019
+
+The following is a documentation only change.
+
+- Added the [Find disapproved ads](solutions/execute-in-parallel.md) solution. 
+
+
 ## February 11, 2019
 
 Added the following methods to the [BingAdsAccountStats](reference/BingAdsAccountStats.md) object.
@@ -41,7 +48,7 @@ Added the following methods to the [Stats](reference/Stats.md) object.
 
 The following is a documentation only change.
 
-- Added the [Accessing Google services](examples/accessing-google-services.md) topic. This topic shows how to use [UrlFetchApp](reference/UrlFetchApp.md) to call Google services.
+- Added the [Calling Google services](examples/urlfetch-example.md) topic. This topic shows how to use [UrlFetchApp](reference/UrlFetchApp.md) to call Google services.
 
 
 ## November 7, 2018
