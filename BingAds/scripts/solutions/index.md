@@ -1,6 +1,6 @@
 ---
 title: "Script solutions"
-description: "Shows more complete examples that perform specific tasks."
+description: "Shows complete solutions that perform specific tasks."
 author: "swhite-msft"
 manager: ehansen
 
@@ -9,7 +9,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# Example solutions
+# Solutions
 
 [!INCLUDE[preview-note](../includes/preview-note.md)]
 

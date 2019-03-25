@@ -14,11 +14,11 @@ ms.topic: "article"
 For information about changes that were included with each release, see the following sections.
 
 
-## March 9, 2019
+## March 25, 2019
 
 The following is a documentation only change.
 
-- Added the [Find disapproved ads](solutions/execute-in-parallel.md) example solution. 
+- Added the [Find disapproved ads](solutions/execute-in-parallel.md) solution. 
 
 
 ## February 11, 2019

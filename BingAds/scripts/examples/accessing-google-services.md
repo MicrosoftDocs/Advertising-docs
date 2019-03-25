@@ -1,5 +1,5 @@
 ---
-title: "Accessing Google services"
+title: "Authenticating with Google services"
 description: "Shows options for getting an access token to use with Google services."
 author: "swhite-msft"
 manager: ehansen
@@ -9,7 +9,7 @@ ms.service: "bingads-scripts"
 ms.topic: "article"
 ---
 
-# Accessing Google services
+# Authenticating with Google services
 
 If your script uses Google services, such as Google Drive, Sheets, and Mail, you need to get credentials. There are a couple of options for getting the credentials:
 
@@ -82,7 +82,7 @@ If your script uses Google services, such as Google Drive, Sheets, and Mail, you
    
   When the PowerShell script successfully runs, it starts a browser session where you enter your Google credentials. After consenting, the webpage contains the grant code (see Please copy this code...).  
      
-  Copy the grant code and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. In the [example script](#example-script), set `refreshToken` to the refresh token that the PowerShell script returned. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources.  
+  Copy the grant code and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. Copy the refresh token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources. 
   
-15. In solutions such as [Discovering disapproved ads](../solutions/execute-in-parallel.md) that access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received in steps 13 and 14.
+15. In solutions such as [Discovering disapproved ads](../solutions/execute-in-parallel.md) that access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received in steps 13 and 14. 
 
