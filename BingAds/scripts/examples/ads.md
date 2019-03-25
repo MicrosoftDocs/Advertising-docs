@@ -247,3 +247,7 @@ function main() {
     }
 }
 ```
+
+## Get disapproved ads
+
+For an example that gets disapproved ads, see [Discovering disapproved ads](../solutions/execute-in-parallel.md).
