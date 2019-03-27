@@ -94,6 +94,21 @@
             "source_path": "BingAds/guides/code-example-target-criterions.md",
             "redirect_url": "code-example-target-criteria",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/scripts/solutions/execute-in-parallel.md",
+            "redirect_url": "get-disapproved-ads",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/scripts/examples/urlfetch-example.md",
+            "redirect_url": "calling-google-services",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "BingAds/scripts/examples/accessing-google-services.md",
+            "redirect_url": "authenticating-with-google-services",
+            "redirect_document_id": false
         }
     ]
 }

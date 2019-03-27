@@ -20,7 +20,7 @@ This solution shows how to discover disapproved ads for one or more accounts. Th
 - Uses Google Mail to send an email notification to the specified recipients. The email indicates if an account contains disapproved ads and provides a link to the sheet where they can see the details.
 - Updates the lastChecked field for each account and saves the file. The next time the script runs, it sorts the list of accounts by the lastChecked time stamp. This means that all accounts that haven't been processed or are the oldest will be first in the list. This script will need to run one or more times depending on the number of accounts you have.
 
-Before using this example, see [Authenticating with Google services](../examples/accessing-google-services.md) for options on getting an access token to use in this solution.
+Before using this example, see [Authenticating with Google services](../examples/authenticating-with-google-services.md) for options on getting an access token to use in this solution.
 
 ```javascript
 // Update the list with email addresses of the recipients that
