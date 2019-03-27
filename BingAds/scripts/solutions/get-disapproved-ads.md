@@ -330,8 +330,8 @@ function sendSummaryEmail(summaryEmailData) {
         const email =
 `To: ${NOTIFY[i]}
 Subject: ${subject}
-Content-Type: text/html; charset="utf-8",
- 
+Content-Type: text/html; charset="utf-8"
+
 ${messageHtml}`;
  
         gmailApi.users.messages.send({ userId: 'me' }, { raw: Base64.encode(email) });

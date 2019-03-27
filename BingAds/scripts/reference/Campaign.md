@@ -29,7 +29,7 @@ Contains the methods used to manage a [campaign](/bingads/guides/entity-hierarch
 [isEnabled](#isenabled)|boolean|Gets a Boolean value that indicates whether this campaign is enabled.
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this campaign is paused.
 [isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this campaign is removed (deleted).
-[keywords](#keywrods)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of keywords in this campaign.
+[keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of keywords in this campaign.
 [newAdGroupBuilder](#newadgroupbuilder)|[AdGroupBuilder](./AdGroupBuilder.md)|Gets a builder used to add an ad group to this campaign.
 [pause](#pause)|void|Pauses this campaign.
 [remove](#remove)|void|Removes this campaign.

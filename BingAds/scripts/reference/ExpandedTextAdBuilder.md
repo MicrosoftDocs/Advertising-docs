@@ -87,7 +87,7 @@ description|string|The ad's copy text. For information about copy limits and inc
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with the description applied.
 
 
-## <a name="withdescription-string-finalurl-"></a>withFinalUrl(string finalUrl)
+## <a name="withfinalurl-string-finalurl-"></a>withFinalUrl(string finalUrl)
 Sets the ad's landing page URL. 
 
 ### Arguments
@@ -101,7 +101,7 @@ finalUrl|string|The ad's landing page URL. For information about URL limits, see
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with the final URL applied.
 
 
-## <a name="withheadlinepart1-string-headlinepart1--"></a>withHeadlinePart1(string headlinePart1)
+## <a name="withheadlinepart1-string-headlinepart1-"></a>withHeadlinePart1(string headlinePart1)
 Sets the first part of the ad's title.
 
 ### Arguments
@@ -115,7 +115,7 @@ headlinePart1|string|The first part of the ad's title. When Bing generates the a
 [ExpandedTextAdBuilder](./ExpandedTextAdBuilder.md)|Ad builder with part 1 of the ad's title applied.
 
 
-## <a name="withheadlinepart2-string-headlinepart2--"></a>withHeadlinePart2(string headlinePart2)
+## <a name="withheadlinepart2-string-headlinepart2-"></a>withHeadlinePart2(string headlinePart2)
 Sets the second part of the ad's title.
 
 ### Arguments
