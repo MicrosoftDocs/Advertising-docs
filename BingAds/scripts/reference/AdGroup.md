@@ -29,7 +29,7 @@ Contains the methods used to manage an [ad group](/bingads/guides/entity-hierarc
 [isEnabled](#isenabled)|Boolean|Gets a Boolean value that indicates whether this ad group is enabled.
 [isPaused](#ispaused)|Boolean|Gets a Boolean value that indicates whether this ad group is paused.
 [isRemoved](#isremoved)|Boolean|Gets a Boolean value that indicates whether this ad group is removed.
-[keywords](#keywrods)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of keywords in this ad group.
+[keywords](#keywords)|[KeywordSelector](./KeywordSelector.md)|Gets a [selector](../concepts/selectors.md) used to filter the list of keywords in this ad group.
 [newAd](#newad)|[AdBuilderSpace](./AdBuilderSpace.md)|Gets an object that contains methods for getting ad builders.
 [newKeywordBuilder](#newkeywordbuilder)|[KeywordBuilder](./KeywordBuilder.md)|Gets a builder used to add a keyword to this ad group.
 [pause](#pause)|void|Pauses this ad group.

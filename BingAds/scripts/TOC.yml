@@ -64,14 +64,14 @@
     - name: Using UrlFetchApp 
       href: examples/fetch-resources.md 
     - name: Authenticating with Google services 
-      href: examples/accessing-google-services.md
+      href: examples/authenticating-with-google-services.md
     - name: Calling Google services 
-      href: examples/urlfetch-example.md 
+      href: examples/calling-google-services.md 
 - name: Solutions
   href: solutions/index.md 
   items:
     - name: Finding disapproved ads 
-      href: solutions/execute-in-parallel.md 
+      href: solutions/get-disapproved-ads.md 
 - name: Script reference
   href: reference-overview.md 
   items:    

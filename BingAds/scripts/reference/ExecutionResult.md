@@ -60,7 +60,7 @@ Gets the return value that the executeInParallel function returned. For details,
 String|The return value that the executeInParallel function returned. Returns null if the function did not return a value.
 
 
-## <a name="getStatus"></a>getStatus
+## <a name="getstatus"></a>getStatus
 Gets the status that indicates whether the function succeeded.
 
 ### Returns

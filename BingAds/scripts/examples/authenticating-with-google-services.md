@@ -23,7 +23,7 @@ If your script uses Google services, such as Google Drive, Sheets, and Mail, you
 3. Click **Authorize APIs** 
 4. After the APIs are authorized, click **Exchange authorization code for tokens**
 5. Copy the access_token's value from the response
-6. In solutions such as [Discovering disapproved ads](../solutions/execute-in-parallel.md) that access Google services, set the credentials object's `accessToken` field to the access token copied in step 5.
+6. In solutions such as [Discovering disapproved ads](../solutions/get-disapproved-ads.md) that access Google services, set the credentials object's `accessToken` field to the access token copied in step 5.
 
 > [!NOTE]
 > Because the access token expires in 1 hour, you'll need to repeat these steps every hour.
@@ -84,5 +84,5 @@ If your script uses Google services, such as Google Drive, Sheets, and Mail, you
      
   Copy the grant code and enter it in the console window at the prompt. The PowerShell script then returns a refresh token. Copy the refresh token. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources. 
   
-15. In solutions such as [Discovering disapproved ads](../solutions/execute-in-parallel.md) that access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received in steps 13 and 14. 
+15. In solutions such as [Discovering disapproved ads](../solutions/get-disapproved-ads.md) that access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received in steps 13 and 14. 
 
