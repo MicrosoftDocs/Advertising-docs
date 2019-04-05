@@ -11,12 +11,13 @@ ms.topic: "article"
 
 # Authenticating with Google services
 
-If your script uses Google services, such as Google Drive, Sheets, and Mail, you need to get credentials. There are a couple of options for getting the credentials:
+If your script uses Google services, such as Google Drive, Sheets, and Mail, you need to get credentials. There are a few of options for getting the credentials:
 
-- Option 1 &mdash; Easy to follow and takes less time but you need to repeat it every hour when the access token expires.
-- Option 2 &mdash; A little more complicated but you don't need to repeat it every hour when the access token expires.
+- [Option 1](#option1) &mdash; Easy to follow and takes less time but you need to repeat it every hour when the access token expires.
+- [Option 2](#option2) &mdash; A little more complicated but you only need to repeat it if the refresh token becomes invalid.
+- [Option 3](#option3) &mdash; Also a little more complicated (uses the provided PowerShell script) but you only need to repeat it if the refresh token becomes invalid.
 
-### Option 1 - Getting an access token from Google OAuth playground
+## <a name="option1"></a>Option 1 - Getting an access token from Google OAuth playground
 
 1. Go to [Google OAuth playground](https://developers.google.com/oauthplayground)
 2. In **Input your own scopes**, paste https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/gmail.send
@@ -28,7 +29,39 @@ If your script uses Google services, such as Google Drive, Sheets, and Mail, you
 > [!NOTE]
 > Because the access token expires in 1 hour, you'll need to repeat these steps every hour.
 
-### Option 2 - Using a refresh token to get an access token
+
+## <a name="option2"></a>Option 2 - Getting a refresh token from Google OAuth playground that you use to get an access token
+
+
+1. Go to Google developer console API [dashboard](https://console.developers.google.com/apis/dashboard)
+2. Click **Create a project** to create a new project or select an existing project  
+   1. If creating a new project, enter the name of your project in **Project Name**. For example, Bing Ads Scripts.
+   2. Click **Create**
+3. On **Dashboard**, click **ENABLE APIS AND SERVICES**
+4. In the search box, enter *sheets* and click **Google Sheets API**. Then, click **ENABLE**
+5. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Google Drive API
+6. Go back to the dashboard (click **APIs & Services**) and repeat steps 3 and 4 for Gmail API
+7. On **Dashboard**, click **Credentials** in the left navigation pane and then click the **OAuth consent screen** tab
+8. Enter the name of your application in the **Application name** field (for example, Bing Ads Scripts)
+9. Click **Add scope**, select *../auth/drive* and *../auth/gmail.send*, and then click **ADD**
+10. Click **Save**
+11. On the **Credentials** page, click **Create credentials** and then select **Oauth client ID**
+12. Select **Other** application type, enter a name (for example, Bing Ads Scripts Client), and click **Create**
+13. Copy your client ID and client secret to use in steps 17, 18, and 23 and then click **OK**
+14. Go to [Google OAuth playground](https://developers.google.com/oauthplayground)
+15. Click the OAuth 2.0 Configuration icon (looks like a gear in upper right corner)
+16. Check the **Use your own OAuth credentials** box
+17. Paste your client ID into **OAuth Client ID**
+18. Paste your client secret into **OAuth Client secret**
+19. In **Input your own scopes**, paste https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/gmail.send
+20. Click **Authorize APIs** and follow the prompts to provide consent 
+21. After the APIs are authorized, click **Exchange authorization code for tokens**
+22. Copy the token from **Refresh token**  
+23. In solutions such as [Discovering disapproved ads](../solutions/get-disapproved-ads.md) that access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received in steps 13 and 22. 
+
+
+
+## <a name="option3"></a>Option 3 - Using a PowerShell script to get a refresh token that you use to get an access token
 
 1. Go to Google developer console API [dashboard](https://console.developers.google.com/apis/dashboard)
 2. Click **Create a project** to create a new project or select an existing project  
