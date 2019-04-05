@@ -56,7 +56,7 @@ If your script uses Google services, such as Google Drive, Sheets, and Mail, you
 19. In **Input your own scopes**, paste https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/gmail.send
 20. Click **Authorize APIs** and follow the prompts to provide consent 
 21. After the APIs are authorized, click **Exchange authorization code for tokens**
-22. Copy the token from **Refresh token**  
+22. Copy the token from **Refresh token** to use in step 23 
 23. In solutions such as [Discovering disapproved ads](../solutions/get-disapproved-ads.md) that access Google services, set the credentials object's `clientId`, `clientSecret`, and `refreshToken` fields to the values you received in steps 13 and 22. 
 
 
