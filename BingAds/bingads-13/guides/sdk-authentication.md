@@ -94,9 +94,9 @@ reporting_service_manager = ReportingServiceManager(
 ## <a name="oauth"></a>Using OAuth
 Bing Ads SDKs support the standard OAuth 2.0 flow as defined in detail in the [The OAuth 2.0 Authorization Framework](http://tools.ietf.org/html/rfc6749).The OAuth classes in the SDK abstract the low level user authorization details such as formatting the authorization and redirect URIs, setting the request headers, and parsing the redirect traffic and response stream. To use OAuth with the Bing Ads .NET SDK, the *Authentication* property of your [AuthorizationData](#authorization-data) object must be set to an Authentication-derived class such as *OAuthWebAuthCodeGrant*, *OAuthDesktopMobileAuthCodeGrant* or *OAuthDesktopMobileImplicitGrant*. 
 
-For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. The steps below follow the authorization code grant flow. For more information both about authorization code and implicit grant flows, see the [Authentication with OAuth](authentication-oauth.md) guide.
+For repeat or long term authentication, you should follow the authorization code grant flow for obtaining an access token. The steps below follow the authorization code grant flow. For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).   
 
-1. Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace client ID (registered application ID), client secret (registered password), and redirection URI with the values configured in [Registering Your Application](authentication-oauth.md#registerapplication).
+1. Create an instance of *OAuthWebAuthCodeGrant*, that will be used to manage Microsoft Account user authorization. Replace client ID (registered application ID), client secret (registered password), and redirection URI with the values configured when you registered your application.  
 
     ```csharp
     var oAuthWebAuthCodeGrant = new OAuthWebAuthCodeGrant(ClientId, ClientSecret, new Uri(RedirectionUri), ApiEnvironment);

@@ -19,9 +19,9 @@ You can download all *Campaign* records in the account by including the [Downloa
 The following Bulk CSV example would add one Search campaign. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Website,Client Id,Modified Time,Time Zone,Budget Id,Budget Name,Budget,Budget Type,Bid Adjustment,Name,Country Code,Store Id,Campaign Type,Language,Target Setting,Priority,Tracking Template,Custom Parameter,Bid Strategy Type,Domain Language,Source
-Format Version,,,,,,,,,,,,,,6.0,,,,,,,,,,,
-Campaign,Active,-111,0,Women's Shoes,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,Search,All,Audience,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,,
+Type,Status,Id,Parent Id,Campaign,Website,Client Id,Modified Time,Time Zone,Budget Id,Budget Name,Budget,Budget Type,Bid Adjustment,Name,Country Code,Store Id,Campaign Type,Language,Target Setting,Priority,Tracking Template,Final Url Suffix,Custom Parameter,Bid Strategy Type,Domain Language,Source
+Format Version,,,,,,,,,,,,,,6.0,,,,,,,,,,,,
+Campaign,Active,-111,0,Women's Shoes,,ClientIdGoesHere,,PacificTimeUSCanadaTijuana,,,50,DailyBudgetStandard,10,,,,Search,All,Audience,,,,{_promoCode}=PROMO1; {_season}=summer,EnhancedCpc,,
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkCampaign* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -136,6 +136,7 @@ For a *Campaign* record, the following attribute fields are available in the [Bu
 |[Country Code](#countrycode)|Shopping|
 |[Domain Language](#domainlanguage)|DynamicSearchAds|
 |[Experiment Id](#experimentid)|Search|
+|[Final Url Suffix](#finalurlsuffix)|All|
 |[Id](#id)|All|
 |[Keyword Relevance](#keywordrelevance)|All|
 |[Landing Page Relevance](#landingpagerelevance)|All|
@@ -352,6 +353,16 @@ With experiment campaigns you cannot update the [Budget](#budget), [Budget Type]
 
 **Add:** Read-only  
 **Update:** Read-only  
+**Delete:** Read-only  
+
+## <a name="finalurlsuffix"></a>Final Url Suffix
+The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
+
+> [!NOTE]
+> This feature is only available for customers in the Final URL Suffix Phase 1 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 533). If you are not in the pilot and attempt to set this property an error will be returned. During calendar year 2019 this feature will be enabled for all customers.
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id

@@ -142,6 +142,50 @@ The user credentials would have authenticated with versions prior to Bing Ads AP
 ***
 
 **Numeric Code**
+122
+
+**Symbolic Error Code**
+PersonalIdentityNotAvailable
+
+**Description**
+You must use a work account to sign in to Bing Ads.
+
+***
+
+**Numeric Code**
+123
+
+**Symbolic Error Code**
+WorkIdentityNotAvailable
+
+**Description**
+You must use a personal Microsoft account to sign in to Bing Ads.
+
+***
+
+**Numeric Code**
+124
+
+**Symbolic Error Code**
+PersonalIdentityMigratedToWork
+
+**Description**
+You can no longer use this personal Microsoft account to access Bing Ads. Please sign in using your work account instead.
+
+***
+
+**Numeric Code**
+125
+
+**Symbolic Error Code**
+PersonalIdentityNotAllowedByCustomer
+
+**Description**
+Your organization requires you to use your work email address to access Bing Ads. Please sign in using your work account instead.
+
+***
+
+**Numeric Code**
 200
 
 **Symbolic Error Code**

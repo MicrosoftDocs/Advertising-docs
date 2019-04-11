@@ -9,9 +9,6 @@ description: Defines an action ad extension with a call-to-action button.
 # ActionAdExtension Data Object - Campaign Management
 Defines an action ad extension with a call-to-action button.
 
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.  
-
 ## Syntax
 ```xml
 <xs:complexType name="ActionAdExtension" xmlns:xs="http://www.w3.org/2001/XMLSchema">

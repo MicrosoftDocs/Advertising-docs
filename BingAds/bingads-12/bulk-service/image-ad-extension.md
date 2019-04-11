@@ -18,9 +18,9 @@ You can download all *Image Ad Extension* records in the account by including th
 The following Bulk CSV example would add a new Image Ad Extension to the account's shared library. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Alternative Text,Media Ids
-Format Version,,,,,,,,,,,6.0,,,,
-Image Ad Extension,Active,-14,0,,,ClientIdGoesHere,,,,,,,FALSE,ImageAdExtension Alternative Text,ImageMediaIdHere
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Alternative Text,Media Ids,Final Url Suffix
+Format Version,,,,,,,,,,,6.0,,,,,
+Image Ad Extension,Active,-14,0,,,ClientIdGoesHere,,,,,,,FALSE,ImageAdExtension Alternative Text,ImageMediaIdHere,
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkImageAdExtension* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -78,6 +78,7 @@ For an *Image Ad Extension* record, the following attribute fields are available
 - [Editorial Status](#editorialstatus)
 - [Editorial Term](#editorialterm)
 - [End Date](#enddate)
+- [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
 - [Media Ids](#mediaids)
 - [Modified Time](#modifiedtime)
@@ -162,6 +163,16 @@ This field will not be set if a combination of terms caused the failure or if th
 
 ## <a name="enddate"></a>End Date
 This field is not supported for image ad extensions. Scheduling is supported for other ad extension types.
+
+## <a name="finalurlsuffix"></a>Final Url Suffix
+The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
+
+> [!NOTE]
+> This feature is only available for customers in the Final URL Suffix Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). If you are not in the pilot this property will be ignored and no error will be returned. During calendar year 2019 this feature will be enabled for all customers.  
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
+**Delete:** Read-only  
 
 ## <a name="id"></a>Id
 The system generated identifier of the ad extension.

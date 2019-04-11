@@ -71,7 +71,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="industryname"></a>IndustryName|The name of the industry (according to LinkedIn) of the person who viewed the ad.|
 |<a name="jobfunctionname"></a>JobFunctionName|The name of the job function (according to LinkedIn) of the person who viewed the ad.|
 |<a name="language"></a>Language|This is the language of the country the ad is served in.|
-|<a name="revenue"></a>Revenue|A value that you can collect using universal event tracking. Based on conversions, revenue can be a constant value per conversion or a variable amount, such as a sales total.<br/>You can track how much money you make for each conversion.<br/>You will need to use universal event tracking for the revenue column to show data.|
+|<a name="revenue"></a>Revenue|The revenue optionally reported by the advertiser as a result of conversions.<br/><br/>Available for accounts that are setup to use analytics with Bing Ads Universal Event Tracking. For more information, see the [Track sales and other conversions](https://go.microsoft.com/fwlink/?LinkID=624771) help topic.|
 |<a name="spend"></a>Spend|The sum of your cost-per-click (CPC) charges for your ads and keywords.<br/>Spend helps you keep track of your budget.|
 |<a name="timeperiod"></a>TimePeriod|The time period of each report row. You may not include this column if the *Aggregation* element of the request object is set to Summary. If you include the *TimePeriod* column, the column label in the downloaded report depends on the aggregation level that you specify in the report request. For more information, see [Time Period Column](../guides/reports.md#timeperiod).|
 

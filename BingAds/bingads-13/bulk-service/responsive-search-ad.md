@@ -33,9 +33,9 @@ You can download all *Responsive Search Ad* records in the account by including 
 The following Bulk CSV example would add a new responsive search ad if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Description,Path 1,Path 2,Domain,Headline
-Format Version,,,,,,,,,6.0,,,,,,,,,,,
-Responsive Search Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,False,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,"[{""text"":""Find New Customers & Increase Sales!"",""pinnedField"":""Description1""},{""text"":""Start Advertising on Contoso Today.""}]",seattle,shoe sale,,"[{""text"":""Contoso"",""pinnedField"":""Headline1""},{""text"":""Quick & Easy Setup""},{""text"":""Seamless Integration""}]"
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Final Url Suffix,Custom Parameter,Description,Path 1,Path 2,Domain,Headline
+Format Version,,,,,,,,,6.0,,,,,,,,,,,,
+Responsive Search Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,False,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,,{_promoCode}=PROMO1; {_season}=summer,"[{""text"":""Find New Customers & Increase Sales!"",""pinnedField"":""Description1""},{""text"":""Start Advertising on Contoso Today.""}]",seattle,shoe sale,,"[{""text"":""Contoso"",""pinnedField"":""Headline1""},{""text"":""Quick & Easy Setup""},{""text"":""Seamless Integration""}]"
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkResponsiveSearchAd* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -176,6 +176,7 @@ For a *Responsive Search Ad* record, the following attribute fields are availabl
 - [Editorial Term](#editorialterm)
 - [Final Url](#finalurl)
 - [Headline](#headline)
+- [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
 - [Mobile Final Url](#mobilefinalurl)
 - [Modified Time](#modifiedtime)
@@ -491,6 +492,15 @@ The `text` attribute cannot contain the newline (\n) character.
 **Update:** Optional. To retain all of the existing asset links, set or leave this field empty. If you set this field, any descriptions that were previously linked to this ad will be replaced. If you specify this field, a list of 2-4 headlines is required. Only the [pinnedField](#headline-pinnedfield) and [text](#headline-text) are honored. Even if the asset already exists in your account, the [id](#headline-id) and [editorialStatus](#headline-editorialstatus) will be ignored if you include them.   
 **Delete:** Read-only  
 
+## <a name="finalurlsuffix"></a>Final Url Suffix
+The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
+
+> [!NOTE]
+> This feature is only available for customers in the Final URL Suffix Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). If you are not in the pilot this property will be ignored and no error will be returned. During calendar year 2019 this feature will be enabled for all customers.  
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
+**Delete:** Read-only  
 
 ## <a name="id"></a>Id
 The system generated identifier of the ad.

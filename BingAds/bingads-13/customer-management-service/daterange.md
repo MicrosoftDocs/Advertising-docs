@@ -27,7 +27,7 @@ Defines a date range object.
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="maxdate"></a>MaxDate|The maximum date.<br/><br/>The date format should be specified as *"yyyyMMdd"*. For example December 31, 2050 should be specified as *"20501231"*.|**string**|
-|<a name="mindate"></a>MinDate|The minimum date.<br/><br/>The date format should be specified as *"yyyyMMdd"*. For example April 3, 2017 should be specified as *"20170403"*.|**string**|
+|<a name="mindate"></a>MinDate|The minimum date.<br/><br/>The date format should be specified as *"yyyyMMdd"*. For example April 3, 2019 should be specified as *"20190403"*.|**string**|
 
 ## Requirements
 Service: [CustomerManagementService.svc v13](https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v13/CustomerManagementService.svc)  

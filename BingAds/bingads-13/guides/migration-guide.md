@@ -13,7 +13,7 @@ description: Get details about migrating to Bing Ads API version 13.
 > [!IMPORTANT]
 > With the availability of Bing Ads API version 13, version 12 is deprecated and will sunset by October 31, 2019. 
 
-The sections below describe changes from version 12 to version 13 of the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md), [Bulk](../bulk-service/bulk-service-reference.md), [Campaign Management](../campaign-management-service/campaign-management-service-reference.md), [Customer Billing](../customer-billing-service/customer-billing-service-reference.md), [Customer Management](../customer-management-service/customer-management-service-reference.md), and [Reporting](../reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services. 
+The sections below describe changes from version 12 to version 13 of the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md), [Bulk](../bulk-service/bulk-service-reference.md), [Campaign Management](../campaign-management-service/campaign-management-service-reference.md), [Customer Billing](../customer-billing-service/customer-billing-service-reference.md), [Customer Management](../customer-management-service/customer-management-service-reference.md), and [Reporting](../reporting-service/reporting-service-reference.md) services.  
 
 ## <a name="adinsight"></a>Ad Insight
 
@@ -142,7 +142,7 @@ Several properties are added to the [InsertionOrder](../customer-billing-service
 - The [AccountNumber](../customer-billing-service/insertionorder.md#accountnumber) is added for convenience. 
 - The Queued status value is added to the [InsertionOrderStatus](../customer-billing-service/insertionorderstatus.md) value set. This value is reserved for future use. 
 
-The *BalanceAmount* element is removed i.e., replaced by the The [BudgetRemaining](../customer-billing-service/insertionorder.md#budgetremaining) element. 
+The *BalanceAmount* element is removed and replaced by the The [BudgetRemaining](../customer-billing-service/insertionorder.md#budgetremaining) element. 
 
 #### <a name="billing-getinsertionordersbyaccount"></a>GetInsertionOrdersByAccount is Removed
 The GetInsertionOrdersByAccount operation is removed. You can use [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) in version 13. 
@@ -231,17 +231,39 @@ The [LanguageReportFilter](../reporting-service/languagereportfilter.md) value s
 - [ShareOfVoiceReportFilter](../reporting-service/shareofvoicereportfilter.md)
 - [UserLocationPerformanceReportFilter](../reporting-service/userlocationperformancereportfilter.md)
 
+#### <a name="reporting-goalsandfunnelsreportcolumn"></a>All Conversions and Revenue for Goals Report
+The Conversions and Revenue columns in the [GoalsAndFunnelsReportColumn](../reporting-service/goalsandfunnelsreportcolumn.md) are renamed [AllConversions](../reporting-service/goalsandfunnelsreportcolumn.md#allconversions) and [AllRevenue](../reporting-service/goalsandfunnelsreportcolumn.md#allrevenue) respectively. The meaning of the data has not changed from version 12 to 13.  
+
 #### <a name="reporting-reportlanguage"></a>French Report Headers
 Support for downloading a report with headers in French is removed. Only English headers are supported in version 13. The *Language* element is removed from the [ReportRequest](../reporting-service/reportrequest.md) object, and the *ReportLanguage* value set is removed. 
 
 #### <a name="reporting-agegenderdemographicreport"></a>Removed AgeGenderDemographicReportRequest
 The AgeGenderDemographicReportRequest is removed. Instead you can use the [AgeGenderAudienceReportRequest](../reporting-service/agegenderaudiencereportrequest.md). 
 
+#### <a name="reporting-campaigntype"></a>Search Campaign Type
+For Search campaigns, the data returned within the *CampaignType* column is "Search". In version 12 the value returned was "Search & content". The *CampaignType* column is available via the [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md#campaigntype), [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md#campaigntype), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md#campaigntype), and [SearchQueryPerformanceReportColumn](../reporting-service/searchqueryperformancereportcolumn.md#campaigntype) value sets.
+
+#### <a name="reporting-productgroup"></a>Product Group Data Format
+The format of the data returned in the *ProductGroup* column is updated. 
+
+|Version|Description|Example|
+|-----|-----|-----|
+|12|Uses "\\" (backward slash) to delimit levels.<br/><br/>The attribute values are not surrounded by "" (double quotes).<br/><br/>The category level is appended to the attribute values if applicable e.g., "(1st Level)", "(2nd Level)", etcetera.|* \ Category=Animals & Pet Supplies(1st Level) \ Category=Pet Supplies(2nd Level) \ Category=Bird Supplies(3rd Level)|
+|13|Uses "/" (forward slash) to delimit levels.<br/><br/>The attribute values are surrounded by "" (double quotes).<br/><br/>Does not indicate the category level e.g., "(1st Level)" is removed.|* / Category="Animals & Pet Supplies" / Category="Pet Supplies" / Category="Bird Supplies"|
+
+This change applies to *ProductGroup* column via the following values sets.
+- [ProductMatchCountReportColumn](../reporting-service/productmatchcountreportcolumn.md#productgroup)
+- [ProductPartitionPerformanceReportColumn](../reporting-service/productpartitionperformancereportcolumn.md#productgroup)
+- [ProductPartitionUnitPerformanceReportColumn](../reporting-service/productpartitionunitperformancereportcolumn.md#productgroup)
+- [ProductSearchQueryPerformanceReportColumn](../reporting-service/productsearchqueryperformancereportcolumn.md#productgroup)
+
 #### <a name="reporting-score-unavailable"></a>Dash for Unavailable Quality Score
 In version 13 if the quality score was not computed the data returned will be "--" (double dash) in the AdRelevance, ExpectedCtr, HistoricalAdRelevance, HistoricalExpectedCtr, HistoricalLandingPageExperience, HistoricalQualityScore, LandingPageExperience, and QualityScore columns. In version 12 the value of "0" (zero) had been returned. These columns are available in the [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md), and [ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md) value sets.
 
-#### <a name="reporting-impressionshare"></a>Removed Some Impression Share Columns
-The ImpressionLostToAdRelevancePercent, ImpressionLostToBidPercent, ImpressionLostToExpectedCtrPercent, and ImpressionLostToRelevancePercent columns are removed from the [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md), [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), and [ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md) value sets. 
+#### <a name="reporting-impressionshare"></a>Replaced Some Impression Share Columns
+The ImpressionLostToAdRelevancePercent, ImpressionLostToBidPercent, ImpressionLostToExpectedCtrPercent, ImpressionLostToRelevancePercent, and ImpressionLostToRankPercent columns are removed from the [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md), [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), and [ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md) value sets. 
+
+In version 13 the data that had been split between those version 12 columns is aggregated and available via the ImpressionLostToRankAggPercent column. 
 
 #### <a name="reporting-averagecpp-clickcalls"></a>Removed AverageCpp, ClickCalls, and ManualCalls Columns
 The AverageCpp, ClickCalls, and ManualCalls columns are removed from the [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md), [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md) and [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md) value sets. 

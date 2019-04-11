@@ -12,16 +12,20 @@ dev_langs:
 > The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Walkthrough: Bing Ads Desktop Application in Python
-This example Python console application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID). You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples).
+This example Python console application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. 
+
+You must first register an application and take note of the client ID (registered application ID). For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
+
+You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-Python-SDK/tree/master/examples).
 
 > [!NOTE]
 > The code examples are not yet updated for Bing Ads API Version 13. Support for Bing Ads API Version 13 is coming soon in SDK version 12.13.1.  
 
 ## <a name="code"></a>Code Walkthrough
 
-1. Sign up for [Bing Ads](https://secure.bingads.microsoft.com/) and use the same credentials get a [developer token](#get-developer-token). The developer token will be inserted as the *DEVELOPER_TOKEN* in the code example below.
+1. Sign up for [Bing Ads](https://secure.bingads.microsoft.com/) and use the same credentials get a [developer token](get-started.md#get-developer-token). The developer token will be inserted as the *DEVELOPER_TOKEN* in the code example below.
 
-1. Register a native app via the [Application Registration Portal](https://apps.dev.microsoft.com/#/appList). For details see [Registering Your Application](authentication-oauth.md#registerapplication). Be sure to take note of the Application Id that will be used as the *CLIENT_ID* in the code example below.
+1. Register a native app via the [Application Registration Portal](https://apps.dev.microsoft.com/#/appList). Be sure to take note of the Application Id that will be used as the *CLIENT_ID* in the code example below.
 
 1. You will need to install either Python 2.7 or 3.4 in your development environment.
 

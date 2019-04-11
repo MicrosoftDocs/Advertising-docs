@@ -24,9 +24,9 @@ You can download all *Price Ad Extension* records in the account by including th
 The following Bulk CSV example would add a new Price Ad Extension to the account's shared library. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Tracking Template,Custom Parameter,Price Extension Type,Currency Code 1,Currency Code 2,Currency Code 3,Currency Code 4,Currency Code 5,Currency Code 6,Currency Code 7,Currency Code 8,Price Description 1,Price Description 2,Price Description 3,Price Description 4,Price Description 5,Price Description 6,Price Description 7,Price Description 8,Header 1,Header 2,Header 3,Header 4,Header 5,Header 6,Header 7,Header 8,Final Mobile Url 1,Final Mobile Url 2,Final Mobile Url 3,Final Mobile Url 4,Final Mobile Url 5,Final Mobile Url 6,Final Mobile Url 7,Final Mobile Url 8,Final Url 1,Final Url 2,Final Url 3,Final Url 4,Final Url 5,Final Url 6,Final Url 7,Final Url 8,Price 1,Price 2,Price 3,Price 4,Price 5,Price 6,Price 7,Price 8,Price Qualifier 1,Price Qualifier 2,Price Qualifier 3,Price Qualifier 4,Price Qualifier 5,Price Qualifier 6,Price Qualifier 7,Price Qualifier 8,Price Unit 1,Price Unit 2,Price Unit 3,Price Unit 4,Price Unit 5,Price Unit 6,Price Unit 7,Price Unit 8
-Format Version,,,,,,,,,,,6.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Price Ad Extension,,-24,,,,ClientIdGoesHere,,,,,,(Monday[09:00-21:00]),FALSE,,{_promoCode}=PROMO1; {_season}=summer,Events,USD,USD,USD,,,,,,Come to the event,Come to the next event,Come to the final event,,,,,,New Event,Next Event,Final Event,,,,,,,,,,,,,,https://contoso.com,https://contoso.com,https://contoso.com,,,,,,9.99,9.99,9.99,,,,,,From,From,From,,,,,,PerDay,PerDay,PerDay,,,,,
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,Tracking Template,Final Url Suffix,Custom Parameter,Price Extension Type,Currency Code 1,Currency Code 2,Currency Code 3,Currency Code 4,Currency Code 5,Currency Code 6,Currency Code 7,Currency Code 8,Price Description 1,Price Description 2,Price Description 3,Price Description 4,Price Description 5,Price Description 6,Price Description 7,Price Description 8,Header 1,Header 2,Header 3,Header 4,Header 5,Header 6,Header 7,Header 8,Final Mobile Url 1,Final Mobile Url 2,Final Mobile Url 3,Final Mobile Url 4,Final Mobile Url 5,Final Mobile Url 6,Final Mobile Url 7,Final Mobile Url 8,Final Url 1,Final Url 2,Final Url 3,Final Url 4,Final Url 5,Final Url 6,Final Url 7,Final Url 8,Price 1,Price 2,Price 3,Price 4,Price 5,Price 6,Price 7,Price 8,Price Qualifier 1,Price Qualifier 2,Price Qualifier 3,Price Qualifier 4,Price Qualifier 5,Price Qualifier 6,Price Qualifier 7,Price Qualifier 8,Price Unit 1,Price Unit 2,Price Unit 3,Price Unit 4,Price Unit 5,Price Unit 6,Price Unit 7,Price Unit 8
+Format Version,,,,,,,,,,,6.0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Price Ad Extension,,-24,,,,ClientIdGoesHere,,,,,,(Monday[09:00-21:00]),FALSE,,,{_promoCode}=PROMO1; {_season}=summer,Events,USD,USD,USD,,,,,,Come to the event,Come to the next event,Come to the final event,,,,,,New Event,Next Event,Final Event,,,,,,,,,,,,,,https://contoso.com,https://contoso.com,https://contoso.com,,,,,,9.99,9.99,9.99,,,,,,From,From,From,,,,,,PerDay,PerDay,PerDay,,,,,
 
 ```
 
@@ -215,6 +215,7 @@ For a *Price Ad Extension* record, the following attribute fields are available 
 - [Final Mobile Url (1-8)](#finalmobileurl)
 - [Final Url (1-8)](#finalurl)
 - [Header (1-8)](#header)
+- [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
 - [Language](#language)
 - [Modified Time](#modifiedtime)
@@ -391,6 +392,16 @@ You must have between 3 and 8 price table items per price ad extension. The orde
 
 **Add:** Required  
 **Update:** Optional. If no value is set for the update, this setting is not changed.    
+**Delete:** Read-only  
+
+## <a name="finalurlsuffix"></a>Final Url Suffix
+The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
+
+> [!NOTE]
+> This feature is only available for customers in the Final URL Suffix Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). If you are not in the pilot this property will be ignored and no error will be returned. During calendar year 2019 this feature will be enabled for all customers.  
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id

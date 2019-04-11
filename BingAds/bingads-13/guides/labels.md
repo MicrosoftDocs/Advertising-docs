@@ -13,7 +13,7 @@ description: Labels let you organize campaigns, ad groups, ads, and keywords int
 Labels let you organize campaigns, ad groups, ads, and keywords into groups based on whatever is important to you. You can then filter and run reports on your labels to get the data that is most meaningful to you.
 
 With labels, you could:
-* Run a report to compare "Holiday 2016" and "Holiday 2017" performance, across campaigns, ad groups, ads, and keywords.
+* Run a report to compare "Holiday 2018" and "Holiday 2019" performance, across campaigns, ad groups, ads, and keywords.
 * Run a report to compare ads and keywords that include brand names against ads and keywords that use generic terms.
 * Quickly filter and view performance for keywords labeled "Suggested by Bing Ads."
 * Create an automated rule to change bids on keywords labeled "CPA bidding."

@@ -10,9 +10,24 @@ description: Defines a criterion that can be used to show ads to users in a spec
 > The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
 
 # ProfileCriterion Data Object - Campaign Management
-Defines a criterion that can be used to show ads to users in a specific company, industry, or job function.
+Defines a criterion that can be used to show ads to users in a specific company, industry, or job function. 
 
-The *ProfileCriterion* criterion can be included within [AdGroupCriterion](adgroupcriterion.md), [NegativeAdGroupCriterion](negativeadgroupcriterion.md), and [CampaignCriterion](campaigncriterion.md) objects. Bing Ads applies a union of both campaign and ad group level profile criterions. However, if you apply a criterion with the same profile ID e.g., target or exclude the same company name at both the campaign and ad group level, then the ad group level criterion will override the campaign level criterion. 
+You can target customers by company, industry, or job function profiles (according to LinkedIn), so that your ads are displayed more frequently to people who will be interested in them. Each profile criterion defines a company, industry, or job function for the accompanying criterion bid adjustment. 
+- Company, such as Microsoft, Alibaba.com, or KLM Royal Dutch Air Lines.
+- Industry, such as finance, broadcast media, or law enforcement.
+- Job function, such as sales, accounting, or purchasing.
+
+The maximum number of company name profile criterions that you can apply to each campaign or ad group is 1,000. 
+
+You can also exclude people from seeing your ads based on LinkedIn profiles. Excluded profiles are also known as negative profile criteria. Each negative profile criterion defines the company, industry, or job function of people who you do not want to see your ads. 
+
+The supported criteria varies by campaign type. Bing Ads applies a union of both campaign and ad group level profile criterions. However, if you apply a criterion with the same profile ID e.g., target or exclude the same company name at both the campaign and ad group level, then the ad group level criterion will override the campaign level criterion. 
+
+|Criterion Association|Supported Campaign Types|
+|----------|---------------|
+|[BiddableCampaignCriterion](biddablecampaigncriterion.md)|DynamicSearchAds<br/>Search<br/>Shopping|
+|[BiddableAdGroupCriterion](biddableadgroupcriterion.md)|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
+|[NegativeAdGroupCriterion](negativeadgroupcriterion.md)|Audience|
 
 ## Syntax
 ```xml

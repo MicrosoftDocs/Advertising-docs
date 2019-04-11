@@ -114,6 +114,13 @@
   - name: Authentication with OAuth
     href: ./authentication-oauth.md
     displayName: access refresh token scope
+    items:
+    - name: Live Connect
+      href: ./authentication-oauth-live-connect.md
+      displayName: access refresh token scope
+    - name: Microsoft identity platform for developers
+      href: ./authentication-oauth-identity-platform.md
+      displayName: access refresh token scope
   - name: Services Protocol
     href: ./services-protocol.md
     displayName: wsdl
@@ -1189,6 +1196,12 @@
           href: ../campaign-management-service/criterionbid.md
         - name: CustomAudience
           href: ../campaign-management-service/customaudience.md
+        - name: CustomerAccountShare
+          href: ../campaign-management-service/customeraccountshare.md
+        - name: CustomerAccountShareAssociation
+          href: ../campaign-management-service/customeraccountshareassociation.md
+        - name: CustomerShare
+          href: ../campaign-management-service/customershare.md
         - name: CustomEventsRule
           href: ../campaign-management-service/customeventsrule.md
         - name: CustomParameter

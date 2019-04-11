@@ -9,7 +9,11 @@ dev_langs:
   - php
 ---
 # Walkthrough: Bing Ads Desktop Application in PHP
-This guide describes how you can download PHP samples for Bing Ads API from the [GitHub source](https://github.com/BingAds/BingAds-PHP-SDK), edit with your credentials, and run in a local console. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the Application Id that will be used as the *ClientId* in the walkthrough below. If you are targeting the production environment, then you'll also need your production [developer token](get-started.md#get-developer-token).
+This guide describes how you can download PHP samples for Bing Ads API from the [GitHub source](https://github.com/BingAds/BingAds-PHP-SDK), edit with your credentials, and run in a local console. 
+
+You must first register an application and take note of the client ID (registered application ID). For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
+
+If you are targeting the production environment, then you'll also need your production [developer token](get-started.md#get-developer-token).
 
 ## <a name="code"></a>Code Walkthrough
 
@@ -18,7 +22,7 @@ This guide describes how you can download PHP samples for Bing Ads API from the 
 
     ![Sample PHP Project Directory](media/sample-php-project-directory.png "Sample PHP Project Directory")  
     
-3. Within *c:\dev\BingAdsPHP\V12\AuthHelper.php*, edit the *ClientId* with the Application Id that was provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the *DeveloperToken* value with your production [developer token](get-started.md#get-developer-token) or *BBD37VB98* if you are using sandbox. 
+3. Within *c:\dev\BingAdsPHP\V12\AuthHelper.php*, edit the *ClientId* with the Application Id that was provisioned when you registered your application. You'll also need to edit the *DeveloperToken* value with your production [developer token](get-started.md#get-developer-token) or *BBD37VB98* if you are using sandbox. 
 4. At the console command prompt run the sample e.g. type `php .\V12\SearchUserAccounts.php`.
 5. You should be prompted to copy and paste the authorization URL into a web browser. The one time user consent is required, and thereafter you will be able to use the refresh token to request new access and refresh tokens.
 6. After authorizing your application to manage your Bing Ads accounts, copy the resulting URL (with *code* parameter) and paste it into the console window. Then press the *Enter* (return) key to continue execution.
