@@ -51,8 +51,8 @@ For the [SearchClientLinks](searchclientlinks.md) service operation, the followi
 
 |Field|Operator|Description|
 |---------|------------|---------------|
-|ClientAccountId|Equals<br/><br/>In|Use this field to search the ClientAccountId element of the [ClientLink](clientlink.md).|
-|ManagingCustomerId|Equals|Use this field to search the ManagingCustomerId element of the [ClientLink](clientlink.md).|
+|ClientAccountId|Equals<br/><br/>In|Search for [ClientLink](clientlink.md) objects by the client account identifier.|
+|ManagingCustomerId|Equals|Search for [ClientLink](clientlink.md) objects by the managing customer identifier.|
 
 ### <a name="searchcustomers"></a>SearchCustomers Predicates
 For the [SearchCustomers](searchcustomers.md) service operation, the following are supported Field element and Operator elements of a Predicate object.

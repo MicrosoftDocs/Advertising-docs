@@ -16,7 +16,31 @@ See below for Bing Ads API updates during this calendar month.
 - [New Report Columns](#reportcolumns-march2019)  
 - [Bing Ads Software Development Kit (SDK) Updates](#sdk-march2019)  
 
-### <a name="campaign-finalurlsuffix-march2019"></a>Final Url Suffix
+
+### <a name="finalurlsuffix-march2019"></a>Final Url Suffix
+The final URL suffix will include tracking parameters that will be appended to the end of your landing page URL.
+
+Final URL suffix is currently only available at the account, campaign, ad group, and keyword level for Phase 1 pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 533). Final URL suffix will be available in other entities for Phase 2 pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). Later this year Final URL suffix will be available in all of the above entities for all customers. 
+
+#### <a name="bulk-finalurlsuffix-march2019"></a>Final Url Suffix for Bulk API
+The *Final Url Suffix* field is added for future use in the following Bulk records. 
+- [Account](../bulk-service/account.md#finalurlsuffix)  
+- [Action Ad Extension](../bulk-service/action-ad-extension.md#finalurlsuffix)  
+- [Ad Group](../bulk-service/ad-group.md#finalurlsuffix)  
+- [Ad Group Product Partition](../bulk-service/ad-group-product-partition.md#finalurlsuffix)  
+- [App Ad Extension](../bulk-service/app-ad-extension.md#finalurlsuffix)  
+- [App Install Ad](../bulk-service/app-install-ad.md#finalurlsuffix)  
+- [Campaign](../bulk-service/campaign.md#finalurlsuffix)  
+- [Dynamic Search Ad](../bulk-service/dynamic-search-ad.md#finalurlsuffix)  
+- [Expanded Text Ad](../bulk-service/expanded-text-ad.md#finalurlsuffix)  
+- [Image Ad Extension](../bulk-service/image-ad-extension.md#finalurlsuffix)  
+- [Keyword](../bulk-service/keyword.md#finalurlsuffix)  
+- [Price Ad Extension](../bulk-service/price-ad-extension.md#finalurlsuffix)  
+- [Responsive Ad](../bulk-service/responsive-ad.md#finalurlsuffix)  
+- [Responsive Search Ad](../bulk-service/responsive-search-ad.md#finalurlsuffix)  
+- [Sitelink Ad Extension](../bulk-service/sitelink-ad-extension.md#finalurlsuffix)  
+
+#### <a name="campaign-finalurlsuffix-march2019"></a>Final Url Suffix for Campaign Management API
 The *FinalUrlSuffix* element is added for future use in the following Campaign Management API objects. 
 - [AccountProperty](../campaign-management-service/accountproperty.md#finalurlsuffix)  
 - [ActionAdExtension](../campaign-management-service/actionadextension.md#finalurlsuffix)  
@@ -29,10 +53,6 @@ The *FinalUrlSuffix* element is added for future use in the following Campaign M
 - [Keyword](../campaign-management-service/keyword.md#finalurlsuffix)  
 - [PriceAdExtension](../campaign-management-service/priceadextension.md#finalurlsuffix)  
 - [SitelinkAdExtension](../campaign-management-service/sitelinkadextension.md#finalurlsuffix)  
-
-The final URL suffix will include tracking parameters that will be appended to the end of your landing page URL.
-
-Final URL suffix is currently only available at the account, campaign, ad group, and keyword level for Phase 1 pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 533). Final URL suffix will be available in other entities for Phase 2 pilot customers ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). Later this year Final URL suffix will be available in all of the above entities for all customers. 
 
 ### <a name="reportcolumns-march2019"></a>New Report Columns
 The *CampaignType* column is added to the following reports. 
@@ -50,6 +70,9 @@ See below for Bing Ads API updates during this calendar month.
 
 ### <a name="sdk-january2019"></a>Bing Ads Software Development Kit (SDK) Updates
 The Bing Ads .NET, Java, Php, and Python SDKs are updated. For details please see release notes for Bing Ads [.NET](https://github.com/BingAds/BingAds-dotNet-SDK/releases/tag/v12.0.3), [Java](https://github.com/BingAds/BingAds-Java-SDK/releases/tag/v12.0.3), [Php](https://github.com/BingAds/BingAds-PHP-SDK/releases/tag/v0.12.0.3), and [Python](https://github.com/BingAds/BingAds-Python-SDK/releases/tag/v12.0.3) SDK version 12.0.3. 
+
+### <a name="biddingscheme-january2019"></a>Default Bid Strategy 
+From January 28th, 2019 onward if you do not set BiddingScheme, then EnhancedCpc will be used by default for Search and Dynamic Search Ads campaigns. Prior to January 28th, 2019 if you did not set BiddingScheme for Search and Dynamic Search Ads campaigns, then ManualCpc was used by default. 
 
 ## <a name="december2018"></a>December 2018
 See below for Bing Ads API updates during this calendar month. 

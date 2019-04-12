@@ -14,7 +14,7 @@ Defines a page visitors remarketing rule.
 
 Remarketing rules are conditions used to determine who to add to your remarketing list. For the *PageVisitors* rule, you must include one or more rule item groups. With each rule item group, the rule item conditions for the same page are joined using the logical *AND* operator. Then, each result from the list of rule item groups are joined using the logical *OR* operator. In other words the user will be added to your remarketing list if all of the specified rule item conditions within any one of the rule item groups are met.
 
-For a detailed example, see the [Remarks](#Remarks) section below.
+For a detailed example, see the [Remarks](#remarks) section below.
 
 ## Syntax
 ```xml

@@ -21,13 +21,8 @@ If a user has access to multiple customers, then multiple [CustomerRole](custome
     <xs:element minOccurs="0" name="RoleId" type="xs:int" />
     <xs:element minOccurs="0" name="CustomerId" type="xs:long" />
     <xs:element minOccurs="0" name="AccountIds" nillable="true" type="q5:ArrayOflong" xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-    <xs:element minOccurs="0" name="LinkedAccountIds" nillable="true" type="q6:ArrayOflong" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
-      <xs:annotation>
-        <xs:appinfo>
-          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:element>
+    <xs:element minOccurs="0" name="LinkedAccountIds" nillable="true" type="q6:ArrayOflong" xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    <xs:element minOccurs="0" name="CustomerLinkPermission" nillable="true" type="xs:string" />
   </xs:sequence>
 </xs:complexType>
 ```
@@ -38,6 +33,7 @@ If a user has access to multiple customers, then multiple [CustomerRole](custome
 |-----------|---------------|-------------|
 |<a name="accountids"></a>AccountIds|The list of accounts that the user can access in the customer.<br/><br/>If this element is nil, the user has access to all of the accounts (current and future) in the customer.|**long** array|
 |<a name="customerid"></a>CustomerId|The identifier of the [Customer](customer.md) that the user can access.|**long**|
+|<a name="customerlinkpermission"></a>CustomerLinkPermission|Reserved for future use.|**string**|
 |<a name="linkedaccountids"></a>LinkedAccountIds|The list of linked accounts that the user can access as an agency on behalf of another customer.|**long** array|
 |<a name="roleid"></a>RoleId|The role that the user has for each customer or list of accounts.<br/><br/>Possible values include the following:<br/>16 - The user has the **Advertiser Campaign Manager** role.<br/>33 - The user has the **Aggregator** role.<br/>41 - The user has the **Super Admin** role.<br/>100 - The user has the **ClientViewer** role.<br/>203 - The user has the **Standard** role.<br/><br/>For more information, see [User Roles and Available Service Operations](../guides/customer-accounts.md#userroles).|**int**|
 

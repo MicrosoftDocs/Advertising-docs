@@ -16,7 +16,7 @@ The technical guides below describe core advertising scenarios using Bing Ads se
 
 |Topic|Description|
 |---------|---------------|
-|[Authentication with OAuth](authentication-oauth.md)|Manage Bing Ads accounts linked to a Microsoft Account using OAuth access tokens.|
+|[Authentication with OAuth](authentication-oauth.md)|Authenticate Bing Ads users via OAuth access tokens.|
 |[Bing Ads Services Protocol](services-protocol.md)|Review requirements and best practices for using Bing Ads services efficiently.|
 |[Handling Service Errors and Exceptions](handle-service-errors-exceptions.md)|Review suggestions for error handling and troubleshooting your application.|
 |[Customer Accounts](customer-accounts.md)|Review advertising business models, and manage your customer accounts and users.|

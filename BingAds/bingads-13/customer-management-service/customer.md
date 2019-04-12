@@ -29,13 +29,7 @@ Defines a customer object that contains one or more Bing Ads accounts.
     <xs:element minOccurs="0" name="CustomerLifeCycleStatus" nillable="true" type="tns:CustomerLifeCycleStatus" />
     <xs:element minOccurs="0" name="TimeStamp" nillable="true" type="xs:base64Binary" />
     <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
-    <xs:element minOccurs="0" name="CustomerAddress" nillable="true" type="tns:Address">
-      <xs:annotation>
-        <xs:appinfo>
-          <DefaultValue EmitDefaultValue="false" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
-        </xs:appinfo>
-      </xs:annotation>
-    </xs:element>
+    <xs:element minOccurs="0" name="CustomerAddress" nillable="true" type="tns:Address" />
   </xs:sequence>
 </xs:complexType>
 ```

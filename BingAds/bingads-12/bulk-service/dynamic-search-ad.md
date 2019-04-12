@@ -21,9 +21,9 @@ You can download all *Dynamic Search Ad* records in the account by including the
 The following Bulk CSV example would add a new dynamic search ad if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Display Url,Destination Url,Promotion,Device Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Title Part 1,Title Part 2,Path 1,Path 2
-Format Version,,,,,,,,,,,,,,6.0,,,,,,,,,,
-Dynamic Search Ad,Active,,-1113,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,,,,,,,,,,,{_promoCode}=PROMO1; {_season}=summer,,,seattle,shoe sale
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Display Url,Destination Url,Promotion,Device Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Final Url Suffix,Custom Parameter,Title Part 1,Title Part 2,Path 1,Path 2
+Format Version,,,,,,,,,,,,,,6.0,,,,,,,,,,,
+Dynamic Search Ad,Active,,-1113,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,,,,,,,,,,,,{_promoCode}=PROMO1; {_season}=summer,,,seattle,shoe sale
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkDynamicSearchAd* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -102,6 +102,7 @@ For a *Dynamic Search Ad* record, the following attribute fields are available i
 - [Editorial Reason Code](#editorialreasoncode)
 - [Editorial Status](#editorialstatus)
 - [Editorial Term](#editorialterm)
+- [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
 - [Modified Time](#modifiedtime)
 - [Parent Id](#parentid)
@@ -208,6 +209,16 @@ This field will not be set if a combination of terms caused the failure or if th
 
 **Add:** Read-only  
 **Update:** Read-only  
+**Delete:** Read-only  
+
+## <a name="finalurlsuffix"></a>Final Url Suffix
+The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
+
+> [!NOTE]
+> This feature is only available for customers in the Final URL Suffix Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). If you are not in the pilot this property will be ignored and no error will be returned. During calendar year 2019 this feature will be enabled for all customers.  
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id

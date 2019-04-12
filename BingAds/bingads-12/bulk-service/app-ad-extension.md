@@ -18,9 +18,9 @@ You can download all *App Ad Extension* records in the account by including the 
 The following Bulk CSV example would add a new app ad extension to the account's shared library. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Text,Destination Url,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,App Platform,App Id
-Format Version,,,,,,,,,,,,,6.0,,,,
-App Ad Extension,Active,-11,0,,,ClientIdGoesHere,,,12/31/2019,Contoso,DestinationUrlGoesHere,,,(Monday[09:00-21:00]),FALSE,Windows,AppStoreIdGoesHere
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Start Date,End Date,Text,Destination Url,Device Preference,Name,Ad Schedule,Use Searcher Time Zone,App Platform,App Id,Final Url Suffix
+Format Version,,,,,,,,,,,,,6.0,,,,,
+App Ad Extension,Active,-11,0,,,ClientIdGoesHere,,,12/31/2019,Contoso,DestinationUrlGoesHere,,,(Monday[09:00-21:00]),FALSE,Windows,AppStoreIdGoesHere,
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkAppAdExtension* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -111,6 +111,7 @@ For an *App Ad Extension* record, the following attribute fields are available i
 - [Editorial Status](#editorialstatus)
 - [Editorial Term](#editorialterm)
 - [End Date](#enddate)
+- [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
 - [Modified Time](#modifiedtime)
 - [Parent Id](#parentid)
@@ -231,6 +232,16 @@ The end date is inclusive. For example, if you set this field to 12/31/2019, the
 
 **Add:** Optional. If you do not specify an end date, the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.  
 **Update:** Optional. If no value is set for the update, this setting is not changed. The end date can be shortened or extended, as long as the start date is either null or occurs before the new end date. If you do not set this field, then the existing settings will be retained. If you set this field to *delete_value*, then you are effectively removing the end date and the ad extensions will continue to be delivered unless you pause the associated campaigns, ad groups, or ads.    
+**Delete:** Read-only  
+
+## <a name="finalurlsuffix"></a>Final Url Suffix
+The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
+
+> [!NOTE]
+> This feature is only available for customers in the Final URL Suffix Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). If you are not in the pilot this property will be ignored and no error will be returned. During calendar year 2019 this feature will be enabled for all customers.  
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id
