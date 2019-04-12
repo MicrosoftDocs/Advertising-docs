@@ -21,9 +21,9 @@ You can download all *Expanded Text Ad* records in the account by including the 
 The following Bulk CSV example would add a new expanded text ad if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Text Part 2,Display Url,Destination Url,Promotion,Device Preference,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Title Part 1,Title Part 2,Title Part 3,Path 1,Path 2
-Format Version,,,,,,,,,,,,,,,6.0,,,,,,,,,,,
-Expanded Text Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,Find New Customers & Increase Sales!,Start Advertising on Contoso Today.,,,,,False,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,Contoso,Quick & Easy Setup,Seemless Integration,seattle,shoe sale
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Title,Text,Text Part 2,Display Url,Destination Url,Promotion,Device Preference,Ad Format Preference,Name,App Platform,App Id,Final Url,Mobile Final Url,Tracking Template,Final Url Suffix,Custom Parameter,Title Part 1,Title Part 2,Title Part 3,Path 1,Path 2
+Format Version,,,,,,,,,,,,,,,6.0,,,,,,,,,,,,
+Expanded Text Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,Find New Customers & Increase Sales!,Start Advertising on Contoso Today.,,,,,False,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,,{_promoCode}=PROMO1; {_season}=summer,Contoso,Quick & Easy Setup,Seemless Integration,seattle,shoe sale
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkExpandedTextAd* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -125,6 +125,7 @@ For an *Expanded Text Ad* record, the following attribute fields are available i
 - [Editorial Status](#editorialstatus)
 - [Editorial Term](#editorialterm)
 - [Final Url](#finalurl)
+- [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
 - [Mobile Final Url](#mobilefinalurl)
 - [Modified Time](#modifiedtime)
@@ -287,6 +288,16 @@ Also note that  if the *Tracking Template* or *Custom Parameter* fields are set,
 
 **Add:** Required  
 **Update:** Optional    
+**Delete:** Read-only  
+
+## <a name="finalurlsuffix"></a>Final Url Suffix
+The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
+
+> [!NOTE]
+> This feature is only available for customers in the Final URL Suffix Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). If you are not in the pilot this property will be ignored and no error will be returned. During calendar year 2019 this feature will be enabled for all customers.  
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id

@@ -27,7 +27,7 @@ You will need the [Django web framework](https://www.djangoproject.com/) install
 
 You will need at least one user with Bing Ads credentials and a [developer token](get-started.md#get-developer-token). 
 
-You will need to [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID) and client secret (registered password). You'll need to register a web app (not native) for this example. You will be asked to register one or more redirect URLs, and for this tutorial you should register *http://localhost/callback*. You should instead use *https* when deployed to a production server. 
+You will need to register an application and take note of the client ID (registered application ID) and client secret (registered password). You'll need to register a web app (not native) for this example. You will be asked to register one or more redirect URLs, and for this tutorial you should register *http://localhost/callback*. You should instead use *https* when deployed to a production server. For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
 
 This tutorial was developed on Windows. Although Windows is not required to run the sample, some of the steps below will vary if you use another operating system e.g., Linux or MacOS. 
 

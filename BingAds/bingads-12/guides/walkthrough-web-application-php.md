@@ -9,7 +9,11 @@ dev_langs:
   - php
 ---
 # Walkthrough: Bing Ads Web Application in PHP
-This example PHP web application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples). 
+This example PHP web application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. 
+
+You must first register an application and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
+
+You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples). 
 
 ## <a name="webapp"></a>Web Application Authentication Example Walk-Through
 
@@ -217,7 +221,7 @@ This example PHP web application prompts for user consent via the credentials th
     ?>
     ```
 
-4. Create a new file named *WebAuthHelper.php*, and add the code as shown in the following example. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). 
+4. Create a new file named *WebAuthHelper.php*, and add the code as shown in the following example. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you registered your application. You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). 
 
     ```php
     <?php

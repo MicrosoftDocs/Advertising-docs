@@ -56,7 +56,7 @@ To see how far back hourly, daily, weekly, monthly, yearly and summary aggregate
 |<a name="matchedproductsatcampaign"></a>MatchedProductsAtCampaign|The number of products per campaign that matched your product group targets.|
 |<a name="matchedproductsatproductgroup"></a>MatchedProductsAtProductGroup|The number of products per product group that matched your product group targets.|
 |<a name="partitiontype"></a>PartitionType|The product partition type.|
-|<a name="productgroup"></a>ProductGroup|The forward slash ('/') delimited list of product conditions, reported as Operand = Attribute. For example "Product Type = Home / Product Type = Electronics / Product Type = DVD Player". Also note that in a report the single asterisk (*) refers to a product group that matches everything else besides the other filters for the product group.|
+|<a name="productgroup"></a>ProductGroup|The forward slash ("/") delimited list of product conditions, reported as Operand = Attribute. The attribute values are not surrounded by "" (double quotes). The category level is appended to the attribute values if applicable e.g., "(1st Level)", "(2nd Level)", etcetera. Here is an example: * \ Category=Animals & Pet Supplies(1st Level) \ Category=Pet Supplies(2nd Level) \ Category=Bird Supplies(3rd Level). The "*" (single asterisk) refers to a product group that matches everything else besides the other filters for the product group.|
 
 ## <a name="remarks"></a>Remarks
 ### <a name="requiredcolumns"></a>Required Columns

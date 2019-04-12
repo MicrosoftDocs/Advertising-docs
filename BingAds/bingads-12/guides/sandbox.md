@@ -19,16 +19,19 @@ The sandbox and production environments use separate credentials. Although in pr
 BBD37VB98
 ```
 
-To authenticate with a Microsoft Account in sandbox you will follow the same work flow as described in [Authentication with OAuth](authentication-oauth.md) for production; however, you will use different endpoints.
+To authenticate with a Microsoft Account in sandbox you will follow the same work flow as described in [Live Connect](authentication-oauth-live-connect.md) for production; however, you will use different endpoints.
 
-For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Authentication with OAuth](authentication-oauth.md), substitute them with the sandbox endpoints. 
+For the sandbox environment, the following are the endpoints you must use to get Microsoft accounts and your application's client ID. Wherever you see endpoints mentioned in [Live Connect](authentication-oauth-live-connect.md), substitute them with the sandbox endpoints. 
+
+> [!NOTE]
+> For Bing Ads API sandbox the [Live Connect](authentication-oauth-live-connect.md) endpoint is the only OAuth option. For production authentication the [Live Connect](authentication-oauth-live-connect.md) endpoint is no longer the recommended approach, so you should use the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md). For details see [Upgrade to the Microsoft identity platform endpoint FAQ](authentication-oauth.md#upgrade-identity-platform-faq).  
 
 |Description|Production|Sandbox|
 |---|---|---|
 |Domain for email used when getting a Microsoft account|Any email address|outlook-int.com|
 |Endpoint to change the Microsoft account password|[account.live.com/password/change](https://account.live.com/password/change)|[account.live-int.com/password/change](https://account.live-int.com/password/change)|
 |Endpoint for getting a client ID|[apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList)|[apps.dev.microsoft-int.com/#/appList](https://apps.dev.microsoft-int.com/#/appList)|
-|Endpoint for OAuth requests via [Authentication with OAuth](authentication-oauth.md)|login.live.com|login.live-int.com|
+|Endpoint for OAuth requests via [Live Connect](authentication-oauth-live-connect.md)|login.live.com|login.live-int.com|
 
 Also as mentioned above, supported services in sandbox vary from production. To get the web service addresses for sandbox, see [Bing Ads Web Service Addresses](web-service-addresses.md).
 
@@ -104,7 +107,7 @@ Sandbox supports a limited set of keywords for testing Ad Insight service operat
 |[GetEstimatedPositionByKeywordIds](../ad-insight-service/getestimatedpositionbykeywordids.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.<br/><br/>To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
 |[GetEstimatedPositionByKeywords](../ad-insight-service/getestimatedpositionbykeywords.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.<br/><br/>To increase chance of getting an estimate, the *MaxBid* element should be more than or equal to 5 US Dollar, or the equivalent in other currencies.|
 |[GetHistoricalKeywordPerformance](../ad-insight-service/gethistoricalkeywordperformance.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.<br/><br/>The *MatchType* and *AdPosition* elements must be set to *Aggregate*.<br/><br/>The *Devices* element must be set to *Computers* or left nil.|
-|[GetHistoricalSearchCount](../ad-insight-service/gethistoricalsearchcount.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.<br/><br/>The *EndMonthAndYear* element must be set to the previous month. For example if today's date is October 10, 2017, the end month should be October 2017.<br/><br/>The *Devices* element must be set to *Computers* or left nil.|
+|[GetHistoricalSearchCount](../ad-insight-service/gethistoricalsearchcount.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.<br/><br/>The *EndMonthAndYear* element must be set to the previous month. For example if today's date is April 1, 2019, the end month should be March 2019.<br/><br/>The *Devices* element must be set to *Computers* or left nil.|
 |[GetKeywordCategories](../ad-insight-service/getkeywordcategories.md)|There should be no difference in sandbox versus production.|
 |[GetKeywordDemographics](../ad-insight-service/getkeyworddemographics.md)|A limited set of keywords are supported: air, auto, best deals, booking, car information, care, deal of the day, discounts, entertainment, finances, games, hotel reviews, insurance comparison, sport, the hotel.<br/><br/>The *Devices* element must be set to *Computers* or left nil.|
 |[GetKeywordIdeas](../ad-insight-service/getkeywordideas.md)|Sandbox test data is refreshed every 3 months, so you will need to set an earlier dater range.|

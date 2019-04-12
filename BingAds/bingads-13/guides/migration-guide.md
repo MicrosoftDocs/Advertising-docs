@@ -13,9 +13,18 @@ description: Get details about migrating to Bing Ads API version 13.
 > [!IMPORTANT]
 > With the availability of Bing Ads API version 13, version 12 is deprecated and will sunset by October 31, 2019. 
 
-The sections below describe changes from version 12 to version 13 of the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md), [Bulk](../bulk-service/bulk-service-reference.md), [Campaign Management](../campaign-management-service/campaign-management-service-reference.md), [Customer Billing](../customer-billing-service/customer-billing-service-reference.md), [Customer Management](../customer-management-service/customer-management-service-reference.md), and [Reporting](../reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services. 
+The sections below describe Bing Ads API changes from version 12 to version 13.  
+
+## <a name="authentication"></a>Authentication for All Services
+The [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) for developers is now available. The Microsoft identity platform endpoint allows both work or school accounts from Azure AD and personal Microsoft accounts (MSA), such as hotmail.com, outlook.com, and msn.com. The [Live Connect](authentication-oauth-live-connect.md) endpoint only allows authentication with personal accounts. 
+
+Although migrating from the [Live Connect](authentication-oauth-live-connect.md) endpoint to the [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) is independent of migration from version 12 to 13, we understand that many developers would like to upgrade during the same sprint.  
+
+> [!WARNING]
+> The Microsoft identity platform endpoint implementation for Bing Ads users is still in beta. If you get stuck on any of the steps below, please reach out via the [developer forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=BingAds) or contact [support](https://advertise.bingads.microsoft.com/en-us/bing-ads-support) for help. In the meantime you can use the [Live Connect](authentication-oauth-live-connect.md) endpoint. Long term though, the Live Connect implementation is not the recommended approach. 
 
 ## <a name="adinsight"></a>Ad Insight
+For comprehensive version 13 service reference documentation see [Ad Insight](../ad-insight-service/ad-insight-service-reference.md).  
 
 ### <a name="adinsight-breakingchanges"></a>Breaking Changes
 
@@ -40,6 +49,7 @@ Clients who encode the SOAP envelope e.g. PHP clients who encode a `SoapVar` for
 Bing Ads Python SDK clients will need to update several namespace prefixes for the [SUDS](get-started-python.md#suds) client factory objects e.g., if you used *ns4:DateRangeSearchParameter* in Bing Ads API Version 12 you'll use *DateRangeSearchParameter* (without the 'ns4' prefix) in version 13. See [Using SUDS](get-started-python.md#suds) for details about how to determine the namespace prefix.
 
 ## <a name="bulk"></a>Bulk
+For comprehensive version 13 service reference documentation see [Bulk](../bulk-service/bulk-service-reference.md).  
 
 ### <a name="bulk-breakingchanges"></a>Breaking Changes
 
@@ -59,6 +69,7 @@ The Landscape Image Media Id, Landscape Logo Media Id, Square Image Media Id, an
 Bulk download of performance data was previously sunset in version 12. Now in version 13 the EntityPerformanceData value of the [DataScope](../bulk-service/datascope.md) value set is removed from the service contract. Also the *Date* and *PerformanceStatsDateRange* objects and *ReportTimePeriod* value set are removed If you want data aggregated by day, week, or month, you can use the Bing Ads Reporting API. For more details see [Reports](reports.md).
 
 ## <a name="campaign"></a>Campaign Management
+For comprehensive version 13 service reference documentation see [Campaign Management](../campaign-management-service/campaign-management-service-reference.md).  
 
 ### <a name="campaign-breakingchanges"></a>Breaking Changes
 
@@ -123,6 +134,7 @@ The CustomerShare element is added to the [Audience](../campaign-management-serv
 The ExcludeFromBidding element is added to the [ConversionGoal](../campaign-management-service/conversiongoal.md) object. This element is reserved for future use. 
 
 ## <a name="billing"></a>Customer Billing
+For comprehensive version 13 service reference documentation see [Customer Billing](../customer-billing-service/customer-billing-service-reference.md).  
 
 ### <a name="billing-breakingchanges"></a>Breaking Changes
 
@@ -142,12 +154,13 @@ Several properties are added to the [InsertionOrder](../customer-billing-service
 - The [AccountNumber](../customer-billing-service/insertionorder.md#accountnumber) is added for convenience. 
 - The Queued status value is added to the [InsertionOrderStatus](../customer-billing-service/insertionorderstatus.md) value set. This value is reserved for future use. 
 
-The *BalanceAmount* element is removed i.e., replaced by the The [BudgetRemaining](../customer-billing-service/insertionorder.md#budgetremaining) element. 
+The *BalanceAmount* element is removed and replaced by the The [BudgetRemaining](../customer-billing-service/insertionorder.md#budgetremaining) element. 
 
 #### <a name="billing-getinsertionordersbyaccount"></a>GetInsertionOrdersByAccount is Removed
 The GetInsertionOrdersByAccount operation is removed. You can use [SearchInsertionOrders](../customer-billing-service/searchinsertionorders.md) in version 13. 
 
 ## <a name="customer"></a>Customer Management
+For comprehensive version 13 service reference documentation see [Customer Management](../customer-management-service/customer-management-service-reference.md).  
 
 ### <a name="customer-breakingchanges"></a>Breaking Changes
 
@@ -192,6 +205,7 @@ For business accounts within the city of Sao Paulo, Brazil there is no change to
 The CustomerLinkPermission element is added to the [CustomerRole](../customer-management-service/customerrole.md) object. This element is reserved for future use. 
 
 ## <a name="reporting"></a>Reporting
+For comprehensive version 13 service reference documentation see [Reporting](../reporting-service/reporting-service-reference.md).  
 
 ### <a name="reporting-breakingchanges"></a>Breaking Changes
 
@@ -231,17 +245,39 @@ The [LanguageReportFilter](../reporting-service/languagereportfilter.md) value s
 - [ShareOfVoiceReportFilter](../reporting-service/shareofvoicereportfilter.md)
 - [UserLocationPerformanceReportFilter](../reporting-service/userlocationperformancereportfilter.md)
 
+#### <a name="reporting-goalsandfunnelsreportcolumn"></a>All Conversions and Revenue for Goals Report
+The Conversions and Revenue columns in the [GoalsAndFunnelsReportColumn](../reporting-service/goalsandfunnelsreportcolumn.md) are renamed [AllConversions](../reporting-service/goalsandfunnelsreportcolumn.md#allconversions) and [AllRevenue](../reporting-service/goalsandfunnelsreportcolumn.md#allrevenue) respectively. The meaning of the data has not changed from version 12 to 13.  
+
 #### <a name="reporting-reportlanguage"></a>French Report Headers
 Support for downloading a report with headers in French is removed. Only English headers are supported in version 13. The *Language* element is removed from the [ReportRequest](../reporting-service/reportrequest.md) object, and the *ReportLanguage* value set is removed. 
 
 #### <a name="reporting-agegenderdemographicreport"></a>Removed AgeGenderDemographicReportRequest
 The AgeGenderDemographicReportRequest is removed. Instead you can use the [AgeGenderAudienceReportRequest](../reporting-service/agegenderaudiencereportrequest.md). 
 
+#### <a name="reporting-campaigntype"></a>Search Campaign Type
+For Search campaigns, the data returned within the *CampaignType* column is "Search". In version 12 the value returned was "Search & content". The *CampaignType* column is available via the [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md#campaigntype), [AdPerformanceReportColumn](../reporting-service/adperformancereportcolumn.md#campaigntype), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md#campaigntype), and [SearchQueryPerformanceReportColumn](../reporting-service/searchqueryperformancereportcolumn.md#campaigntype) value sets.
+
+#### <a name="reporting-productgroup"></a>Product Group Data Format
+The format of the data returned in the *ProductGroup* column is updated. 
+
+|Version|Description|Example|
+|-----|-----|-----|
+|12|Uses "\\" (backward slash) to delimit levels.<br/><br/>The attribute values are not surrounded by "" (double quotes).<br/><br/>The category level is appended to the attribute values if applicable e.g., "(1st Level)", "(2nd Level)", etcetera.|* \ Category=Animals & Pet Supplies(1st Level) \ Category=Pet Supplies(2nd Level) \ Category=Bird Supplies(3rd Level)|
+|13|Uses "/" (forward slash) to delimit levels.<br/><br/>The attribute values are surrounded by "" (double quotes).<br/><br/>Does not indicate the category level e.g., "(1st Level)" is removed.|* / Category="Animals & Pet Supplies" / Category="Pet Supplies" / Category="Bird Supplies"|
+
+This change applies to *ProductGroup* column via the following values sets.
+- [ProductMatchCountReportColumn](../reporting-service/productmatchcountreportcolumn.md#productgroup)
+- [ProductPartitionPerformanceReportColumn](../reporting-service/productpartitionperformancereportcolumn.md#productgroup)
+- [ProductPartitionUnitPerformanceReportColumn](../reporting-service/productpartitionunitperformancereportcolumn.md#productgroup)
+- [ProductSearchQueryPerformanceReportColumn](../reporting-service/productsearchqueryperformancereportcolumn.md#productgroup)
+
 #### <a name="reporting-score-unavailable"></a>Dash for Unavailable Quality Score
 In version 13 if the quality score was not computed the data returned will be "--" (double dash) in the AdRelevance, ExpectedCtr, HistoricalAdRelevance, HistoricalExpectedCtr, HistoricalLandingPageExperience, HistoricalQualityScore, LandingPageExperience, and QualityScore columns. In version 12 the value of "0" (zero) had been returned. These columns are available in the [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), [KeywordPerformanceReportColumn](../reporting-service/keywordperformancereportcolumn.md), and [ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md) value sets.
 
-#### <a name="reporting-impressionshare"></a>Removed Some Impression Share Columns
-The ImpressionLostToAdRelevancePercent, ImpressionLostToBidPercent, ImpressionLostToExpectedCtrPercent, and ImpressionLostToRelevancePercent columns are removed from the [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md), [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), and [ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md) value sets. 
+#### <a name="reporting-impressionshare"></a>Replaced Some Impression Share Columns
+The ImpressionLostToAdRelevancePercent, ImpressionLostToBidPercent, ImpressionLostToExpectedCtrPercent, ImpressionLostToRelevancePercent, and ImpressionLostToRankPercent columns are removed from the [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md), [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md), [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md), and [ShareOfVoiceReportColumn](../reporting-service/shareofvoicereportcolumn.md) value sets. 
+
+In version 13 the data that had been split between those version 12 columns is aggregated and available via the ImpressionLostToRankAggPercent column. 
 
 #### <a name="reporting-averagecpp-clickcalls"></a>Removed AverageCpp, ClickCalls, and ManualCalls Columns
 The AverageCpp, ClickCalls, and ManualCalls columns are removed from the [AccountPerformanceReportColumn](../reporting-service/accountperformancereportcolumn.md), [AdGroupPerformanceReportColumn](../reporting-service/adgroupperformancereportcolumn.md) and [CampaignPerformanceReportColumn](../reporting-service/campaignperformancereportcolumn.md) value sets. 

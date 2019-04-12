@@ -12,7 +12,11 @@ dev_langs:
 > The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Walkthrough: Bing Ads Desktop Application in C# #
-This example C# console application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID). You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples). 
+This example C# console application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. 
+
+You must first register an application and take note of the client ID (registered application ID). For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
+
+You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples). 
 
 > [!NOTE]
 > The code examples are not yet updated for Bing Ads API Version 13. Support for Bing Ads API Version 13 is coming soon in SDK version 12.13.1.  
@@ -27,7 +31,7 @@ This example C# console application prompts for user consent via the credentials
 
 4. Install the SDK through NuGet for the BingAdsConsoleApp. For more information about dependencies, see [Install the SDK](get-started-csharp.md#installation). Click on **Tools** -&gt; **NuGet Package Manager** -&gt; **Package Manager Console**. At the prompt, type these commands to install the packages one at a time: `Install-Package Microsoft.BingAds.SDK`, `Install-Package System.ServiceModel.Primitives -Version 4.4.1`, `Install-Package System.ServiceModel.Http -Version 4.4.1`, and `Install-Package System.Configuration.ConfigurationManager -Version 4.4.1`. 
 
-5. Open the App.config file and replace its contents with the following code block. Edit the *BingAdsEnvironment* to move from sandbox to production. You must edit the *ClientId* with the *Application Id* that was provisioned when you [registered your application](authentication-oauth.md#registerapplication). If you are targeting the production environment, then you'll also need to edit the example with your [developer token](get-started.md#get-developer-token). 
+5. Open the App.config file and replace its contents with the following code block. Edit the *BingAdsEnvironment* to move from sandbox to production. You must edit the *ClientId* with the *Application Id* that was provisioned when you registered your application. If you are targeting the production environment, then you'll also need to edit the example with your [developer token](get-started.md#get-developer-token). 
 
     ```xml
     <?xml version="1.0" encoding="utf-8" ?>

@@ -17,5 +17,5 @@ See below for Bing Ads API updates during this calendar month.
 
 - [Version 13 Preview](#v13-march2019)  
 
-### <a name="v13-april2019"></a>Version 13 General Availability
+### <a name="v13-march2019"></a>Version 13 Preview
 Bing Ads API version 13 is available for preview. For more details about migrating from version 12, see [Migrate to Version 13](migration-guide.md). 

@@ -29,7 +29,7 @@ The following Bulk CSV example would add a new offline conversion.
 ```csv
 Type,Status,Id,Parent Id,Client Id,Name,Conversion Currency Code,Conversion Name,Conversion Time,Conversion Value,Microsoft Click Id
 Format Version,,,,,6.0,,,,,
-Offline Conversion,,,,ClientIdGoesHere,,USD,My Goal Name,7/27/2017 6:50:54 PM,10,f894f652ea334e739002f7167ab8f8e3
+Offline Conversion,,,,ClientIdGoesHere,,USD,My Goal Name,4/1/2019 6:50:54 PM,10,f894f652ea334e739002f7167ab8f8e3
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload the *BulkOfflineConversion* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -115,9 +115,9 @@ To be counted by Bing Ads as an offline conversion after successful upload, the 
 -  The date and time must be within the conversion window. The *ConversionWindowInMinutes* property of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) determines the maximum length of time in minutes after a click that conversions will be tracked.
 
 For example if three clicks were recorded on April 30th, if the *ConversionWindowInMinutes* of the [OfflineConversionGoal](../campaign-management-service/offlineconversiongoal.md) is equal to 30 days (43200 minutes), and if you send Bing Ads the following offline conversions on July 31st, then Bing Ads will only count the one with MicrosoftClickId=*2* as an offline conversion.
--  MicrosoftClickId=*1*; ConversionTime=*2017-04-30T17:02:35.6853793Z*  
--  MicrosoftClickId=*2*; ConversionTime=*2017-05-15T17:02:35.6853793Z*  
--  MicrosoftClickId=*3*; ConversionTime=*2017-06-15T17:02:35.6853793Z*
+-  MicrosoftClickId=*1*; ConversionTime=*2019-04-30T17:02:35.6853793Z*  
+-  MicrosoftClickId=*2*; ConversionTime=*2019-05-15T17:02:35.6853793Z*  
+-  MicrosoftClickId=*3*; ConversionTime=*2019-06-15T17:02:35.6853793Z*
 
 The offline conversion data with MicrosoftClickId=*1* will not be uploaded since the conversion date and time is more than 90 days ago, and the offline conversion data with MicrosoftClickId=*3* will not be counted because it does not fall within the conversion window (April 30 through May 29).
 
