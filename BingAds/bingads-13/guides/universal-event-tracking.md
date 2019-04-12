@@ -17,7 +17,7 @@ UET is a powerful Bing Ads tool. You just need to create one single UET tag and 
 There are a few steps to get this set up. You will need to:
 * Create a [UET tag](#uet) once in Bing Ads
 * Add the UET tag tracking code to every page of your website
-* Depending on what you want to do, either set up [conversion tracking](#conversiongoals) or leverage [audiences](#audience) e.g., [remarketing in paid search](#remarketing).
+* Depending on what you want to do, either set up [conversion tracking](#conversiongoals) or leverage [audiences](#audience) e.g., [remarketing in paid search](#remarketinglist).
 
 For details please see these API overview sections below:
 - [Universal Event Tracking APIs](#uet)
@@ -36,7 +36,7 @@ Before you can track conversions or target audiences using a remarketing list, y
 
 After you retrieve the tracking script from the [AddUetTags](../campaign-management-service/adduettags.md) or [GetUetTagsByIds](../campaign-management-service/getuettagsbyids.md) operation, the next step is to add the UET tag tracking code to your website. We recommend that you, or your website administrator, add it to your entire website in either the head or body sections. If your website has a master page, then that is the best place to add it because you add it once and it is included on all pages. For more information, see [How do I add the UET tag to my website?](https://help.bingads.microsoft.com/#apex/3/en/56688/2-500) 
 
-Depending on what you want to do, either set up [conversion tracking](#conversiongoals) or [remarketing in paid search](#remarketing).
+Depending on what you want to do, either set up [conversion tracking](#conversiongoals) or [audiences](#audience).
 
 ## <a name="conversiongoals"></a>Conversion Goal APIs
 

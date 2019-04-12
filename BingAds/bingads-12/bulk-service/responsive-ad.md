@@ -24,9 +24,9 @@ You can download all *Responsive Ad* records in the account by including the [Do
 The following Bulk CSV example would add a new responsive ad if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Sync Time,Client Id,Modified Time,Tracking Template,Custom Parameter,Final Url,Mobile Final Url,Text,Business Name,Device Preference,Ad Format Preference,Name,Call To Action,Headline,Long Headline,Images
-Format Version,,,,,,,,,,,,,,,,,6.0,,,,
-Responsive Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,{_promoCode}=PROMO1; {_season}=summer,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,Contoso,,,,,Short Headline Here,Long Headline Here,"[{""id"":1234567890000,""subType"":""LandscapeImageMedia""}]"
+Type,Status,Id,Parent Id,Campaign,Ad Group,Sync Time,Client Id,Modified Time,Tracking Template,Final Url Suffix,Custom Parameter,Final Url,Mobile Final Url,Text,Business Name,Device Preference,Ad Format Preference,Name,Call To Action,Headline,Long Headline,Images
+Format Version,,,,,,,,,,,,,,,,,,6.0,,,,
+Responsive Ad,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,,,{_promoCode}=PROMO1; {_season}=summer,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,Find New Customers & Increase Sales! Start Advertising on Contoso Today.,Contoso,,,,,Short Headline Here,Long Headline Here,"[{""id"":1234567890000,""subType"":""LandscapeImageMedia""}]"
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkResponsiveAd* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -146,6 +146,7 @@ For a *Responsive Ad* record, the following attribute fields are available in th
 - [Editorial Term](#editorialterm)
 - [Final Url](#finalurl)
 - [Headline](#headline)
+- [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
 - [Images](#images)
 - [Landscape Image Media Id](#landscapeimagemediaid)
@@ -318,6 +319,16 @@ The length of the string is limited to 25 characters.
 **Update:** Optional. If no value is set for the update, this setting is not changed.     
 **Delete:** Read-only 
 
+## <a name="finalurlsuffix"></a>Final Url Suffix
+The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
+
+> [!NOTE]
+> This feature is only available for customers in the Final URL Suffix Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). If you are not in the pilot this property will be ignored and no error will be returned. During calendar year 2019 this feature will be enabled for all customers.  
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
+**Delete:** Read-only  
+
 ## <a name="id"></a>Id
 The system generated identifier of the ad.
 
@@ -333,7 +344,7 @@ You are only required to provide a landscape image asset i.e., this field must c
 > [!NOTE]
 > If this field is set (not empty), then [Landscape Image Media Id](#landscapeimagemediaid) and [Square Image Media Id](#squareimagemediaid) are both ignored. 
 
-The image assets are represented in the bulk file as a JSON string. Seven images are included in the example JSON below, and only the LandscapeImageMedia `subType` is not cropped. The `id` is a property of the asset, whereas the `cropHeight`, `cropWidth`, `cropX`, `cropY`, and `subType` are properties of the asset link i.e., the relationship between the asset and the ad. For more details see [cropHeight](#images-cropheight), [cropWidth](#images-cropwidth), [cropX](#images-cropX), [cropY](#images-cropY), [id](#images-id), and [subType](#images-subtype) below.
+The image assets are represented in the bulk file as a JSON string. Seven images are included in the example JSON below, and only the LandscapeImageMedia `subType` is not cropped. The `id` is a property of the asset, whereas the `cropHeight`, `cropWidth`, `cropX`, `cropY`, and `subType` are properties of the asset link i.e., the relationship between the asset and the ad. For more details see [cropHeight](#images-cropheight), [cropWidth](#images-cropwidth), [cropX](#images-cropx), [cropY](#images-cropy), [id](#images-id), and [subType](#images-subtype) below.
 
 
 ```json
@@ -431,9 +442,9 @@ Starting from the lower left corner of image asset source, this is the number of
 ### <a name="images-id"></a>id
 The `id` attribute is a unique Bing Ads identifier for the asset in a Bing Ads account. 
 
-The same image asset identifier can be used multiple times in the same ad for different aspect ratios, and can also be used by multiple ads in the same Bing Ads account. The identifier of image asset with [SubType](#subtype) set to LandscapeImageMedia is used for all auto-generated image asset sub types within the same ad. Whether or not you let Bing Ads automatically generate the cropped images, the [Id](#images-id) does not need to be unique among the image assets linked to the same ad.
+The same image asset identifier can be used multiple times in the same ad for different aspect ratios, and can also be used by multiple ads in the same Bing Ads account. The identifier of image asset with [SubType](#images-subtype) set to LandscapeImageMedia is used for all auto-generated image asset sub types within the same ad. Whether or not you let Bing Ads automatically generate the cropped images, the [Id](#images-id) does not need to be unique among the image assets linked to the same ad.
 
-You can create media for responsive ads via the [AddMedia](../campaign-management-service/addmedia.md) service operation. Then you can use the returned media identifier as the image asset ID. The aspect ratio of the image that you added must be supported for the image asset [subType](#subtype).
+You can create media for responsive ads via the [AddMedia](../campaign-management-service/addmedia.md) service operation. Then you can use the returned media identifier as the image asset ID. The aspect ratio of the image that you added must be supported for the image asset [subType](#images-subtype).
 
 ### <a name="images-subtype"></a>subType
 The `subType` attribute represents the aspect ratio for this image asset.
@@ -455,7 +466,7 @@ The possible sub type values include LandscapeImageMedia, SquareImageMedia, Imag
 |ImageMedia172X100|300 width x 174 height<br/>Aspect radio 1.72:1|
 
 > [!NOTE]
-> Media for responsive ads are provisioned via the [Image](../campaign-management-service/image.md) object using the [AddMedia](../campaign-management-service/addmedia.md) operation. You can use the GIF, JPEG, or PNG MIME types. Images with animation are not supported. Although you can only add media with a few aspect ratios via the [AddMedia](../campaign-management-service/addmedia.md) operation, you can use crop settings i.e., [cropHeight](#images-cropheight), [cropWidth](#images-cropwidth), [cropX](#images-cropX), and [cropY](#images-cropY) to determine the effective aspect ratio. The aspect ratio of the stored image would be unchanged in the account level media library.
+> Media for responsive ads are provisioned via the [Image](../campaign-management-service/image.md) object using the [AddMedia](../campaign-management-service/addmedia.md) operation. You can use the GIF, JPEG, or PNG MIME types. Images with animation are not supported. Although you can only add media with a few aspect ratios via the [AddMedia](../campaign-management-service/addmedia.md) operation, you can use crop settings i.e., [cropHeight](#images-cropheight), [cropWidth](#images-cropwidth), [cropX](#images-cropx), and [cropY](#images-cropy) to determine the effective aspect ratio. The aspect ratio of the stored image would be unchanged in the account level media library.
 > 
 > The maximum file size is 5 MB. The maximum width and height in pixels are 2592 and 2048 independently, and you must still maintain one of the supported aspect ratios. For example if the image asset with sub type LandscapeImageMedia is 2592 in width, then the height must be 1357.
 

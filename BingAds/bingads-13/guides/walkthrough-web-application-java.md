@@ -12,7 +12,11 @@ dev_langs:
 > The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Walkthrough: Bing Ads Web Application in Java
-This example Java web application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples). 
+This example Java web application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. 
+
+You must first register an application and take note of the client ID (registered application ID), client secret (registered password), and redirection URI. For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
+
+You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-dotNet-SDK/tree/master/examples/BingAdsExamples). 
 
 > [!NOTE]
 > This example demonstrates OAuth authentication in production. For information on configuring sandbox, please see [Configuring Sandbox](#sandbox) below.
@@ -74,7 +78,7 @@ This example Java web application prompts for user consent via the credentials t
 
 10. In **Project Explorer**, right-click the Web Content folder of your BingAdsWebApp project and select **New** -&gt; **JSP File**. Name the file *index.jsp* and then click **Finish**.
 
-11. Open the Index.jsp file and replace its contents with the following code block. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you [registered your application](authentication-oauth.md#registerapplication). You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). If you are using sandbox, you need to follow the steps below in [Configuring Sandbox](#sandbox).
+11. Open the Index.jsp file and replace its contents with the following code block. You must edit the sample below with the ClientId, ClientSecret, and RedirectionUri that were provisioned when you registered your application. You'll also need to edit the example with your production [developer token](get-started.md#get-developer-token). If you are using sandbox, you need to follow the steps below in [Configuring Sandbox](#sandbox).
 
     ```java
     <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>

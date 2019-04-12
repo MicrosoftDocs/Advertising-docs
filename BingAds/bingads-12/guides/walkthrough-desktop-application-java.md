@@ -9,7 +9,11 @@ dev_langs:
   - java
 ---
 # Walkthrough: Bing Ads Desktop Application in Java
-This example Java console application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. You must first [register an application](authentication-oauth.md#registerapplication) and take note of the client ID (registered application ID). You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples). 
+This example Java console application prompts for user consent via the credentials that you provide, and then gets the accounts that the authenticated user can access. 
+
+You must first register an application and take note of the client ID (registered application ID). For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md).  
+
+You'll also need your production [developer token](get-started.md#get-developer-token). You can create the example step by step as described below or download more examples from [GitHub](https://github.com/BingAds/BingAds-Java-SDK/tree/master/examples). 
 
 ## <a name="code"></a>Code Walkthrough
 
@@ -44,7 +48,7 @@ This example Java console application prompts for user consent via the credentia
 
 6. In **Project Explorer**, right-click the BingAdsDesktopApp project (or the name of your project if you chose a different artifact identifier in the previous step) and select **New** -&gt; **Class**. Choose a package name, for example *com.microsoft.bingads.examples*. Name the class *OAuthDesktopApplication* and then click **Finish**.
 
-7. Open the OAuthDesktopApplication.java file and replace its contents with the following code block. You must edit the *ClientId* below with the Application Id that was provisioned when you [registered your application](authentication-oauth.md#registerapplication). If you are targeting the production environment, then you'll also need to edit the example with your production [developer token](get-started.md#get-developer-token).
+7. Open the OAuthDesktopApplication.java file and replace its contents with the following code block. You must edit the *ClientId* below with the Application Id that was provisioned when you registered your application. If you are targeting the production environment, then you'll also need to edit the example with your production [developer token](get-started.md#get-developer-token).
 
     > [!NOTE]
     > If you observe any errors related to *javafx* import statements, try removing the *JRE System Library* and adding it back again. In **Project Explorer**, right-click the BingAdsDesktopApp and select **Build Path** -&gt; **Configure Build Path**. In the **Libraries** tab, select JRE System Library and click **Remove**. Remain in the **Libraries** tab and click **Add Library**, select JRE System Library, click **Next**, and then click **Finish**.
@@ -75,6 +79,7 @@ This example Java console application prompts for user consent via the credentia
 
         private static java.lang.String DeveloperToken = "BBD37VB98"; // Universal token for sandbox
         private static java.lang.String ClientId = "ClientIdGoesHere";
+        private static ApiEnvironment API_ENVIRONMENT = ApiEnvironment.SANDBOX;
 
         @Override
         public void start(Stage primaryStage) {
@@ -82,7 +87,9 @@ This example Java console application prompts for user consent via the credentia
         	// Create an instance of OAuthDesktopMobileAuthCodeGrant that will be used to manage Microsoft Account user authorization. 
         	// Replace ClientId with the value configured when you registered your application. 
 
-            final OAuthDesktopMobileAuthCodeGrant oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(ClientId);
+            final OAuthDesktopMobileAuthCodeGrant oAuthDesktopMobileAuthCodeGrant = new OAuthDesktopMobileAuthCodeGrant(
+                ClientId, 
+                API_ENVIRONMENT);
 
             oAuthDesktopMobileAuthCodeGrant.setNewTokensListener(new NewOAuthTokensReceivedListener() {
                 @Override
@@ -137,7 +144,7 @@ This example Java console application prompts for user consent via the credentia
 
                                 CustomerService = new ServiceClient<ICustomerManagementService>(
                                     authorizationData, 
-                                    ApiEnvironment.SANDBOX,
+                                    API_ENVIRONMENT,
                                     ICustomerManagementService.class
                                 );
 
@@ -244,14 +251,14 @@ This example Java console application prompts for user consent via the credentia
             searchAccountsRequest.setPredicates(predicates);
             searchAccountsRequest.setPageInfo(paging);
 
-            return CustomerService.getService().searchAccounts(searchAccountsRequest).getAdvertiserAccounts();
+            return CustomerService.getService().searchAccounts(searchAccountsRequest).getAccounts();
         }
 
         // Outputs the account and parent customer identifiers for the specified accounts.
 
         static void printAccounts(ArrayOfAdvertiserAccount accounts) throws RemoteException, Exception
         {
-            for (Account account : accounts.getAdvertiserAccounts())
+            for (AdvertiserAccount account : accounts.getAdvertiserAccounts())
             {
             	System.out.printf("AccountId: %d\n", account.getId());
             	System.out.printf("CustomerId: %d\n\n", account.getParentCustomerId());

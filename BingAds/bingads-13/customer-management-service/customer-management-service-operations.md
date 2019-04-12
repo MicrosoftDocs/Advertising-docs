@@ -26,6 +26,7 @@ The Customer Management service defines the following service operations.
 |[GetCustomer](getcustomer.md)|Gets the details of a customer.|1 *CustomerId*|
 |[GetCustomerPilotFeatures](getcustomerpilotfeatures.md)|Gets a list of the pilot programs in which the specified customer participates.|1 *CustomerId*|
 |[GetCustomersInfo](getcustomersinfo.md)|Gets a list of objects that contain customer identification information, for example the name and identifier of the customer.|Not applicable.|
+|[GetLinkedAccountsAndCustomersInfo](getlinkedaccountsandcustomersinfo.md)|Reserved for future use.|1 *CustomerId*|
 |[GetUser](getuser.md)|Gets the details of a user.|1 *UserId*|
 |[GetUsersInfo](getusersinfo.md)|Gets a list of objects that contains user identification information, for example the user name and identifier of the user.|1 *CustomerId*|
 |[SearchAccounts](searchaccounts.md)|Searches for accounts that match a specified criteria.|1 *Predicates*|

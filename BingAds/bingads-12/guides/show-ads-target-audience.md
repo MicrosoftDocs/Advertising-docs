@@ -122,7 +122,7 @@ The maximum number of location intent criterions that you can specify per campai
 For more information and examples, please see [How can I get my ads in front of my customers?](https://help.bingads.microsoft.com/#apex/3/en/51029/0).
 
 ### <a name="profilecriterion"></a>Profile Criterion
-You can target customers by company, industry, or job function profiles so that your ads are displayed more frequently to people who will be interested in them. Each profile criterion defines a company, industry, or job function for the accompanying criterion bid adjustment. 
+You can target customers by company, industry, or job function profiles (according to LinkedIn), so that your ads are displayed more frequently to people who will be interested in them. Each profile criterion defines a company, industry, or job function for the accompanying criterion bid adjustment. 
 - Company, such as Microsoft, Alibaba.com, or KLM Royal Dutch Air Lines.
 - Industry, such as finance, broadcast media, or law enforcement.
 - Job function, such as sales, accounting, or purchasing.
@@ -134,7 +134,6 @@ The supported criteria varies by campaign type.
 |Criterion Association|Supported Campaign Types|
 |----------|---------------|
 |Campaign Biddable Criterion|DynamicSearchAds<br/>Search<br/>Shopping|
-|Campaign Negative Criterion|DynamicSearchAds<br/>Search<br/>Shopping|
 |Ad Group Biddable Criterion|Audience<br/>DynamicSearchAds<br/>Search<br/>Shopping|
 |Ad Group Negative Criterion|Audience|
 

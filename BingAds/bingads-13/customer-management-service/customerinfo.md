@@ -36,3 +36,4 @@ Namespace: https\://bingads.microsoft.com/Customer/v13/Entities
 ## Used By
 [AdvertiserAccount](advertiseraccount.md)  
 [GetCustomersInfo](getcustomersinfo.md)  
+[GetLinkedAccountsAndCustomersInfo](getlinkedaccountsandcustomersinfo.md)  

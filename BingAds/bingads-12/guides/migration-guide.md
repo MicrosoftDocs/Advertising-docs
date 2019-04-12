@@ -8,9 +8,9 @@ description: Get details about migrating to Bing Ads API version 12.
 ---
 # Migrate to Version 12
 > [!IMPORTANT]
-> Bing Ads API version 11 sunset date was October 31, 2018. 
+> Bing Ads API version 11 sunset date was October 31, 2018. Bing Ads API version 12 will sunset October 31, 2019. To view version 13 migration content, use the version selector near the table of contents at the top and left side of the page.
 
-The sections below describe changes from version 11 to version 12 of the [Ad Insight](../ad-insight-service/ad-insight-service-reference.md), [Bulk](../bulk-service/bulk-service-reference.md), [Campaign Management](../campaign-management-service/campaign-management-service-reference.md), [Customer Billing](../customer-billing-service/customer-billing-service-reference.md), [Customer Management](../customer-management-service/customer-management-service-reference.md), and [Reporting](../reporting-service/reporting-service-reference.md) services. Some [authentication](#authentication) updates are required for all services. 
+The sections below describe Bing Ads API changes from version 11 to version 12. 
 
 ## <a name="authentication"></a>Authentication for All Services
 
@@ -35,6 +35,7 @@ The merged credentials that could authenticate via Bing Ads API Version 11 will 
 > To confirm availability, if the credentials no longer work via the Bing Ads web application (due to being merged for multi-user credentials via another email address), then the merged Microsoft account could still authenticate via Bing Ads API Version 11 but cannot authenticate via Bing Ads API Version 12.
 
 ## <a name="adinsight"></a>Ad Insight
+For comprehensive version 12 service reference documentation see [Ad Insight](../ad-insight-service/ad-insight-service-reference.md).  
 
 ### <a name="adinsight-breakingchanges"></a>Breaking Changes
 
@@ -84,6 +85,7 @@ In the [AdPosition](../ad-insight-service/adposition.md) and [TargetAdPosition](
 The Content ad distribution is no longer supported in Bing Ads, and the *Content* value is removed from the [MatchType](../ad-insight-service/matchtype.md) value set. 
 
 ## <a name="bulk"></a>Bulk
+For comprehensive version 12 service reference documentation see [Bulk](../bulk-service/bulk-service-reference.md).  
 
 ### <a name="bulk-breakingchanges"></a>Breaking Changes
 
@@ -160,6 +162,7 @@ Instead of setting the [Ad Format Preference](../bulk-service/expanded-text-ad.m
 The *Campaign* and *Ad Group* names are no longer included when you download audience and ad extension association records. 
 
 ## <a name="campaign"></a>Campaign Management
+For comprehensive version 12 service reference documentation see [Campaign Management](../campaign-management-service/campaign-management-service-reference.md).  
 
 ### <a name="campaign-breakingchanges"></a>Breaking Changes
 
@@ -270,6 +273,7 @@ The *InheritedBidStrategyTypes* element is added to the response message of the 
 Each string in the list is returned in the same order and corresponds to the keywords in the request message. The value of each string represents the type of bidding scheme (a.k.a. bid strategy type) that is inherited from the parent campaign or ad group. This element is not returned by default. You must set *ReturnInheritedBidStrategyTypes* true in the request.
 
 ## <a name="billing"></a>Customer Billing
+For comprehensive version 12 service reference documentation see [Customer Billing](../customer-billing-service/customer-billing-service-reference.md).  
 
 ### <a name="billing-breakingchanges"></a>Breaking Changes
 
@@ -298,6 +302,7 @@ Before the insertion order becomes approved i.e., if the [InsertionOrder](../cus
 In version 11 you could find out if pending changes were available via the ChangePendingReview element of an insertion order. The [PendingChanges](../customer-billing-service/insertionorder.md#pendingchanges) element replaces it. Also note that the *InsertionOrderId* was renamed as [Id](../customer-billing-service/insertionorder.md#id) for consistency with other objects.
 
 ## <a name="customer"></a>Customer Management
+For comprehensive version 12 service reference documentation see [Customer Management](../customer-management-service/customer-management-service-reference.md).  
 
 ### <a name="customer-breakingchanges"></a>Breaking Changes
 
@@ -424,6 +429,7 @@ The following [Predicate](../customer-management-service/predicate.md#searchcust
 -  UserName Contains (UserName Equals is still available in version 12)
 
 ## <a name="reporting"></a>Reporting
+For comprehensive version 12 service reference documentation see [Reporting](../reporting-service/reporting-service-reference.md).  
 
 ### <a name="reporting-breakingchanges"></a>Breaking Changes
 

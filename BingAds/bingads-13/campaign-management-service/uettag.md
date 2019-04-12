@@ -23,6 +23,7 @@ You can use one UET tag with all of your conversion goals and remarketing lists.
 ```xml
 <xs:complexType name="UetTag" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
+    <xs:element minOccurs="0" name="CustomerShare" nillable="true" type="tns:CustomerShare" />
     <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
     <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
@@ -37,6 +38,7 @@ You can use one UET tag with all of your conversion goals and remarketing lists.
 
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
+|<a name="customershare"></a>CustomerShare|Reserved for future use.|[CustomerShare](customershare.md)|
 |<a name="description"></a>Description|Text to help you identify the UET tag. We recommend that you set this to the related website page name or URL.<br/><br/>**Add:** Optional<br/>**Update:** Optional|**string**|
 |<a name="id"></a>Id|The unique Bing Ads identifier of the UET tag.<br/><br/>**Add:** Read-only<br/>**Update:** Required and Read-only|**long**|
 |<a name="name"></a>Name|The UET tag name.<br/><br/>The maximum length of the name is 100, and the name must be unique among all UET tags belonging to the same customer.<br/><br/>**Add:** Required<br/>**Update:** Optional|**string**|

@@ -12,7 +12,7 @@ description: Defines a criterion that can be used to show ads to users during a 
 # DayTimeCriterion Data Object - Campaign Management
 Defines a criterion that can be used to show ads to users during a specific day and time range.
 
-The *DayTimeCriterion* criterion can be included within [AdGroupCriterion](adgroupcriterion.md) and [CampaignCriterion](campaigncriterion.md) objects. If ad group level day and time criterions are specified, the campaign level day and time criterions are ignored for that ad group. In other words the ad group day and time criterions override the campaign day and time criterions, and are not applied as a union.   
+The *DayTimeCriterion* criterion can be included within [BiddableAdGroupCriterion](biddableadgroupcriterion.md) and[BiddableCampaignCriterion](biddablecampaigncriterion.md) objects. If ad group level day and time criterions are specified, the campaign level day and time criterions are ignored for that ad group. In other words the ad group day and time criterions override the campaign day and time criterions, and are not applied as a union.   
 
 ## Syntax
 ```xml

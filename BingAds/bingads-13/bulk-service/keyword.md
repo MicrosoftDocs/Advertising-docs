@@ -19,9 +19,9 @@ You can download all *Keyword* records in the account by including the [Download
 The following Bulk CSV example would add a new keyword if a valid [Parent Id](#parentid) value is provided. 
 
 ```csv
-Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Keyword,Match Type,Bid,Param1,Param2,Param3,Name,Final Url,Mobile Final Url,Tracking Template,Custom Parameter,Bid Strategy Type
-Format Version,,,,,,,,,,,,,,6.0,,,,,
-Keyword,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,red shoes,Broad,0.5,,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer,ManualCpc
+Type,Status,Id,Parent Id,Campaign,Ad Group,Client Id,Modified Time,Keyword,Match Type,Bid,Param1,Param2,Param3,Name,Final Url,Mobile Final Url,Tracking Template,Final Url Suffix,Custom Parameter,Bid Strategy Type
+Format Version,,,,,,,,,,,,,,6.0,,,,,,
+Keyword,Active,,-1111,ParentCampaignNameGoesHere,AdGroupNameGoesHere,ClientIdGoesHere,,red shoes,Broad,0.5,,,,,http://www.contoso.com/womenshoesale,http://mobile.contoso.com/womenshoesale,,,{_promoCode}=PROMO1; {_season}=summer,ManualCpc
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkKeyword* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -127,6 +127,7 @@ For a *Keyword* record, the following attribute fields are available in the [Bul
 - [Editorial Status](#editorialstatus)
 - [Editorial Term](#editorialterm)
 - [Final Url](#finalurl)
+- [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
 - [Inherited Bid Strategy Type](#inheritedbidstrategytype)
 - [Keyword](#keyword)
@@ -299,6 +300,16 @@ Also note that  if the *Tracking Template* or *Custom Parameter* fields are set,
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Delete:** Read-only  
+
+## <a name="finalurlsuffix"></a>Final Url Suffix
+The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
+
+> [!NOTE]
+> This feature is only available for customers in the Final URL Suffix Phase 1 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 533). If you are not in the pilot and attempt to set this property an error will be returned. During calendar year 2019 this feature will be enabled for all customers.
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id

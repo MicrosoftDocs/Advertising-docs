@@ -64,6 +64,9 @@ The Campaign Management service defines the following data objects.
 |[Criterion](criterion.md)|Defines the base object of a criterion.|
 |[CriterionBid](criterionbid.md)|Defines a base class for criterion bids.|
 |[CustomAudience](customaudience.md)|Defines a custom audience.|
+|[CustomerAccountShare](customeraccountshare.md)|Reserved for future use.|
+|[CustomerAccountShareAssociation](customeraccountshareassociation.md)|Reserved for future use.|
+|[CustomerShare](customershare.md)|Reserved for future use.|
 |[CustomEventsRule](customeventsrule.md)|Defines a custom events remarketing rule.|
 |[CustomParameter](customparameter.md)|Defines a key and value custom parameter for URL tracking.|
 |[CustomParameters](customparameters.md)|Defines a collection of key and value custom parameters for URL tracking.|

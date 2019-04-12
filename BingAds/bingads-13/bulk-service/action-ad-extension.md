@@ -12,10 +12,7 @@ dev_langs:
 > The Bing Ads API Version 13 preview documentation is subject to change. To view version 12 content, use the version selector near the table of contents at the top and left side of the page.
 
 # Action Ad Extension Record - Bulk
-Defines an action ad extension that can be downloaded and uploaded in a bulk file.
-
-> [!NOTE]
-> Not everyone has this feature yet. If you don't, don't worry. It's coming soon.  
+Defines an action ad extension that can be downloaded and uploaded in a bulk file. 
 
 You can associate an action ad extension with the account or with campaigns and ad groups in the account. Each entity (account, campaign, or ad group) can be associated with up to 20 action ad extensions. Use the [Account Action Ad Extension](account-action-ad-extension.md), [Ad Group Action Ad Extension](ad-group-action-ad-extension.md), and [Campaign Action Ad Extension](campaign-action-ad-extension.md) records to manage action ad extension associations.
 
@@ -24,9 +21,9 @@ You can download all *Action Ad Extension* records in the account by including t
 The following Bulk CSV example would add a new Action Ad Extension to the account's shared library. 
 
 ```csv
-Type,Status,Id,Parent Id,ClientId,Language,Start Date,End Date,Name,Ad Schedule,Use Searcher Time Zone,Action Type,Action Text,Final Url,Mobile Final Url,Tracking Template,Custom Parameter
-Format Version,,,,,,,,6.0,,,,,,,,
-Action Ad Extension,Active,-10,7671275,ClientIdGoesHere,English,,12/31/2019,(Monday[09:00-21:00]);(Tuesday[09:00-21:00]);(Wednesday[09:00-21:00]);(Thursday[09:00-21:00]);(Friday[09:00-21:00]),false,ActNow,,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,,{_promoCode}=PROMO1; {_season}=summer
+Type,Status,Id,Parent Id,ClientId,Language,Start Date,End Date,Name,Ad Schedule,Use Searcher Time Zone,Action Type,Action Text,Final Url,Mobile Final Url,Tracking Template,Final Url Suffix,Custom Parameter
+Format Version,,,,,,,,6.0,,,,,,,,,
+Action Ad Extension,Active,-10,7671275,ClientIdGoesHere,English,,12/31/2019,(Monday[09:00-21:00]);(Tuesday[09:00-21:00]);(Wednesday[09:00-21:00]);(Thursday[09:00-21:00]);(Friday[09:00-21:00]),false,ActNow,,https://www.contoso.com/womenshoesale,https://mobile.contoso.com/womenshoesale,,,{_promoCode}=PROMO1; {_season}=summer
 ```
 
 If you are using the [Bing Ads SDKs](../guides/client-libraries.md) for .NET, Java, or Python, you can save time using the [BulkServiceManager](../guides/sdk-bulk-service-manager.md) to upload and download the *BulkActionAdExtension* object, instead of calling the service operations directly and writing custom code to parse each field in the bulk file. 
@@ -139,6 +136,7 @@ For a *Action Ad Extension* record, the following attribute fields are available
 - [Editorial Term](#editorialterm)
 - [End Date](#enddate)
 - [Final Url](#finalurl)
+- [Final Url Suffix](#finalurlsuffix)
 - [Id](#id)
 - [Language](#language)
 - [Mobile Final Url](#mobilefinalurl)
@@ -284,6 +282,16 @@ The length of the URL is limited to 2,048 characters. The HTTP or HTTPS protocol
 
 **Add:** Optional  
 **Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.    
+**Delete:** Read-only  
+
+## <a name="finalurlsuffix"></a>Final Url Suffix
+The final URL suffix can include tracking parameters that will be appended to the end of your landing page URL. We recommend placing tracking parameters that your landing page requires in a final URL suffix so that your customers are always sent to your landing page. For more details and validation rules see [Final URL Suffix](../guides/url-tracking-upgraded-urls.md#finalurlsuffixvalidation) in the technical guides. 
+
+> [!NOTE]
+> This feature is only available for customers in the Final URL Suffix Phase 2 pilot ([GetCustomerPilotFeatures](../customer-management-service/getcustomerpilotfeatures.md) returns 566). If you are not in the pilot this property will be ignored and no error will be returned. During calendar year 2019 this feature will be enabled for all customers.  
+
+**Add:** Optional  
+**Update:** Optional. If no value is set for the update, this setting is not changed. If you set this field to the *delete_value* string, the prior setting is removed.  
 **Delete:** Read-only  
 
 ## <a name="id"></a>Id

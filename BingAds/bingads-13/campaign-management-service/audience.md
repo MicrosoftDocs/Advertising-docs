@@ -27,6 +27,7 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
 <xs:complexType name="Audience" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:sequence>
     <xs:element minOccurs="0" name="AudienceNetworkSize" nillable="true" type="xs:long" />
+    <xs:element minOccurs="0" name="CustomerShare" nillable="true" type="tns:CustomerShare" />
     <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
     <xs:element minOccurs="0" name="ForwardCompatibilityMap" nillable="true" type="q85:ArrayOfKeyValuePairOfstringstring" xmlns:q85="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     <xs:element minOccurs="0" name="Id" nillable="true" type="xs:long" />
@@ -46,6 +47,7 @@ Do not try to instantiate an *Audience*. You can create one or more following ob
 |Element|Description|Data Type|
 |-----------|---------------|-------------|
 |<a name="audiencenetworksize"></a>AudienceNetworkSize|The total number of people who are active members of this audience in the Audience network. This gives you an idea of how many Audience network users you can target.<br/><br/>The audience needs to have at least 300 people before Bing Ads will use it for optimizations.|**long**|
+|<a name="customershare"></a>CustomerShare|Reserved for future use.|[CustomerShare](customershare.md)|
 |<a name="description"></a>Description|The description of the audience. Use a description to help you remember what audience you are targeting.<br/><br/>The description can contain a maximum of 1,024 characters.|**string**|
 |<a name="forwardcompatibilitymap"></a>ForwardCompatibilityMap|The list of key and value strings for forward compatibility to avoid otherwise breaking changes when new elements are added in the current API version.<br/><br/>Forward compatibility changes will be noted here in future releases. There are currently no forward compatibility changes for this object.|[KeyValuePairOfstringstring](keyvaluepairofstringstring.md) array|
 |<a name="id"></a>Id|The Bing Ads identifier of the audience.|**long**|

@@ -15,58 +15,61 @@ dev_langs:
 Any Bing Ads user with a developer token can begin using the Bing Ads API. For advertisers placing a large number of ads or developers building advertising tools, the Bing Ads API provides a programmatic interface to Bing Ads. You can write your Bing Ads application in any language that supports web services. To get started with a specific SDK, see Get Started in [C#](get-started-csharp.md) | [Java](get-started-java.md) | [PHP](get-started-php.md) | [Python](get-started-python.md). 
 
 ## <a name="quick-start"></a>Quick Start
-If you just want to get something working right away, follow these steps to get your Bing Ads user information in the production environment. You can follow the links for more details and customization options. 
+If you just want to get something working right away, follow these steps to get your Bing Ads user information. You can follow the links below for more details and customization options. For more details about registering an application and the authorization code grant flow, see [Authentication with OAuth](authentication-oauth.md). 
 
-1. Sign up for [Bing Ads](https://secure.bingads.microsoft.com/) and use the same credentials get a [developer token](#get-developer-token). 
+### <a name="quick-start-production"></a>Production Quick Start
+To authenticate in the production environment, you can follow either the [Live Connect](authentication-oauth-live-connect.md) or [Microsoft identity platform endpoint](authentication-oauth-identity-platform.md) guides. We'll use the Microsoft identity platform endpoint since the Live Connnect endpoint is no longer the recommended approach for Bing Ads users.  
 
-1. Register a native app via the [Application Registration Portal](https://apps.dev.microsoft.com/#/appList). For details see [Registering Your Application](authentication-oauth.md#registerapplication). 
+1. Sign up for a [Bing Ads](https://secure.bingads.microsoft.com/) production account and with the same credentials get a [developer token](#get-developer-token). 
 
-1. Each Bing Ads user must grant consent for your application to access their accounts. In this quick start, effectively you will need to grant your own application permission to access your own Bing Ads account via the following `Get-Tokens.ps1` PowerShell script. Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` to the Application Id of your registered app. 
-   
+1. Register a native app in the [Azure portal - App registrations](https://go.microsoft.com/fwlink/?linkid=2083908) page. You can login using either a personal Microsoft Account or a Work or School Account. For details see [Register Your Application](authentication-oauth-identity-platform.md#registerapplication).  
+
+1. Each Bing Ads user must grant consent for your application to access their accounts. In this quick start, effectively you will need to grant your own application permission to access your own Bing Ads account via the following `Get-Tokens-Production.ps1` PowerShell script. Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` to the Application Id of your registered app. 
+
     ```powershell
     $clientId = "YourApplicationIdGoesHere"
 
-    Start-Process "https://login.live.com/oauth20_authorize.srf?client_id=$clientId&scope=bingads.manage&response_type=code&redirect_uri=https://login.live.com/oauth20_desktop.srf"
-    
+    Start-Process "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=$clientId&scope=openid%20profile%20https://ads.microsoft.com/ads.manage%20offline_access&response_type=code&redirect_uri=https://login.microsoftonline.com/common/oauth2/nativeclient&state=ClientStateGoesHere&prompt=consent"
+
     $code = Read-Host "Grant consent in the browser, and then enter the code here (see ?code=UseThisCode&...)"
-      
-    $response = Invoke-WebRequest https://login.live.com/oauth20_token.srf -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientId&scope=bingads.manage&code=$code&grant_type=authorization_code&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf"
-    
+
+    $response = Invoke-WebRequest https://login.microsoftonline.com/common/oauth2/v2.0/token -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientId&scope=https://ads.microsoft.com/ads.manage%20offline_access&code=$code&grant_type=authorization_code&redirect_uri=https%3A%2F%2Flogin.microsoftonline.com%2Fcommon%2Foauth2%2Fnativeclient"
+
     $oauthTokens = ($response.Content | ConvertFrom-Json)  
     Write-Output "Access token: " $oauthTokens.access_token  
     Write-Output "Access token expires in: " $oauthTokens.expires_in  
     Write-Output "Refresh token: " $oauthTokens.refresh_token 
-    
+
     # The access token will expire e.g., after one hour. 
     # Use the refresh token to get a new access token. 
-    
-    $response = Invoke-WebRequest https://login.live.com/oauth20_token.srf -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientId&scope=bingads.manage&code=$code&grant_type=refresh_token&redirect_uri=https%3A%2F%2Flogin.live.com%2Foauth20_desktop.srf&refresh_token=$($oauthTokens.refresh_token)"
-    
+
+    $response = Invoke-WebRequest https://login.microsoftonline.com/common/oauth2/v2.0/token -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientId&scope=https://ads.microsoft.com/ads.manage%20offline_access&code=$code&grant_type=refresh_token&refresh_token=$($oauthTokens.refresh_token)"
+
     $oauthTokens = ($response.Content | ConvertFrom-Json)  
     Write-Output "Access token: " $oauthTokens.access_token  
     Write-Output "Access token expires in: " $oauthTokens.expires_in  
     Write-Output "Refresh token: " $oauthTokens.refresh_token 
-    ```  
+    ```
 
-    Save the file and name it `Get-Tokens.ps1` (you can name it anything you want but the extension must be .ps1).
+    Save the file and name it `Get-Tokens-Production.ps1` (you can name it anything you want but the extension must be .ps1).
 
-    To programatically manage a Bing Ads account, you must provide consent at least once through the web application consent flow. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. For more details see [authorization code grant flow](authentication-oauth.md#authorizationcode).
+    To programatically manage a Bing Ads account, you must provide consent at least once through the web application consent flow. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. 
    
-1. Now to run `Get-Tokens.ps1` open a console window. At the command prompt, navigate to the folder where you saved `Get-Tokens.ps1` and enter the following command:  
+1. Now to run `Get-Tokens-Production.ps1` open a console window. At the command prompt, navigate to the folder where you saved `Get-Tokens-Production.ps1` and enter the following command:  
   
     ```console
-    powershell.exe -File .\Get-Tokens.ps1
+    powershell.exe -File .\Get-Tokens-Production.ps1
     ```  
       
     When the PowerShell script successfully runs, it starts a browser session where you enter your Bing Ads credentials. After consenting, the browser's address bar contains the grant code (see ?code=UseThisCode&...).  
       
     ```https
-    https://login.live.com/oauth20_desktop.srf?code=M7ab570e5-a1c0-32e5-a946-e490c82954&lc=1033
+    https://login.microsoftonline.com/common/oauth2/nativeclient?code=M7ab570e5-a1c0-32e5-a946-e490c82954
     ```  
       
-    Copy the grant code (your own code, not M7ab570e5-a1c0-32e5-a946-e490c82954) and enter it in the console window at the prompt. The PowerShell script then returns the access and refresh tokens. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources. The refresh token is long lived but it can become invalid. If you ever receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the `Get-Tokens.ps1` PowerShell script again to get consent and a new refresh token.  
+    Copy the grant code (your own code, not M7ab570e5-a1c0-32e5-a946-e490c82954) and enter it in the console window at the prompt. The PowerShell script then returns the access and refresh tokens. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources. The refresh token is long lived but it can become invalid. If you ever receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the `Get-Tokens-Production.ps1` PowerShell script again to get consent and a new refresh token.  
   
-1. Create a new file and paste into it the following script. Set the `accessToken` to the value you received from `Get-Tokens.ps1` and set `$developerToken` to the developer token you received from Step 1 above. 
+1. Create a new file and paste into it the following script. Set the `accessToken` to the value you received from `Get-Tokens-Production.ps1` and set `$developerToken` to the developer token you received from Step 1 above. 
    
     ```powershell
     $accessToken = "AccessTokenGoesHere";
@@ -102,10 +105,98 @@ If you just want to get something working right away, follow these steps to get 
       
     When the PowerShell script successfully runs it should print out the details of your Bing Ads user, including customer roles. For details see [GetUser](../customer-management-service/getuser.md). 
 
+### <a name="quick-start-sandbox"></a>Sandbox Quick Start
+To authenticate in the sandbox environment only the [Live Connect](authentication-oauth-live-connect.md) endpoint (with '-int' suffix) is supported.  
+
+1. Sign up for a [Bing Ads](https://sandbox.bingads.microsoft.com/) sandbox account. The Microsoft account (MSA) email address must be outlook**-int**.com (for example, someone@outlook-int.com). For more details see [Sandbox](sandbox.md#initial-sign-up).  
+
+1. Register a native app via the [Application Registration Portal](https://apps.dev.microsoft-int.com/#/appList).  
+
+1. Each Bing Ads user must grant consent for your application to access their accounts. In this quick start, effectively you will need to grant your own application permission to access your own Bing Ads account via the following `Get-Tokens-Sandbox.ps1` PowerShell script. Open Notepad or your favorite editor and copy the PowerShell script to the editor. Set `$clientId` to the Application Id of your registered app. 
+   
+    ```powershell
+    $clientId = "YourApplicationIdGoesHere"
+
+    Start-Process "https://login.live-int.com/oauth20_authorize.srf?client_id=$clientId&scope=bingads.manage&response_type=code&redirect_uri=https://login.live-int.com/oauth20_desktop.srf"
+    
+    $code = Read-Host "Grant consent in the browser, and then enter the code here (see ?code=UseThisCode&...)"
+      
+    $response = Invoke-WebRequest https://login.live-int.com/oauth20_token.srf -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientId&scope=bingads.manage&code=$code&grant_type=authorization_code&redirect_uri=https%3A%2F%2Flogin.live-int.com%2Foauth20_desktop.srf"
+    
+    $oauthTokens = ($response.Content | ConvertFrom-Json)  
+    Write-Output "Access token: " $oauthTokens.access_token  
+    Write-Output "Access token expires in: " $oauthTokens.expires_in  
+    Write-Output "Refresh token: " $oauthTokens.refresh_token 
+    
+    # The access token will expire e.g., after one hour. 
+    # Use the refresh token to get a new access token. 
+    
+    $response = Invoke-WebRequest https://login.live-int.com/oauth20_token.srf -ContentType application/x-www-form-urlencoded -Method POST -Body "client_id=$clientId&scope=bingads.manage&code=$code&grant_type=refresh_token&refresh_token=$($oauthTokens.refresh_token)"
+    
+    $oauthTokens = ($response.Content | ConvertFrom-Json)  
+    Write-Output "Access token: " $oauthTokens.access_token  
+    Write-Output "Access token expires in: " $oauthTokens.expires_in  
+    Write-Output "Refresh token: " $oauthTokens.refresh_token 
+    ```  
+
+    Save the file and name it `Get-Tokens-Sandbox.ps1` (you can name it anything you want but the extension must be .ps1).
+
+    To programatically manage a Bing Ads account, you must provide consent at least once through the web application consent flow. Thereafter you can use the latest refresh token to request new access and refresh tokens without any further user interaction. 
+   
+1. Now to run `Get-Tokens-Sandbox.ps1` open a console window. At the command prompt, navigate to the folder where you saved `Get-Tokens-Sandbox.ps1` and enter the following command:  
+  
+    ```console
+    powershell.exe -File .\Get-Tokens-Sandbox.ps1
+    ```  
+      
+    When the PowerShell script successfully runs, it starts a browser session where you enter your Bing Ads credentials. After consenting, the browser's address bar contains the grant code (see ?code=UseThisCode&...).  
+      
+    ```https
+    https://login.live-int.com/oauth20_desktop.srf?code=M7ab570e5-a1c0-32e5-a946-e490c82954&lc=1033
+    ```  
+      
+    Copy the grant code (your own code, not M7ab570e5-a1c0-32e5-a946-e490c82954) and enter it in the console window at the prompt. The PowerShell script then returns the access and refresh tokens. You should treat the refresh token like you would a password; if someone gets hold of it, they have access to your resources. The refresh token is long lived but it can become invalid. If you ever receive an invalid_grant error, your refresh token is no longer valid and you'll need to run the `Get-Tokens-Sandbox.ps1` PowerShell script again to get consent and a new refresh token.  
+  
+1. Create a new file and paste into it the following script. Set the `accessToken` to the value you received from `Get-Tokens-Sandbox.ps1`. 
+   
+    ```powershell
+    $accessToken = "AccessTokenGoesHere";
+    $developerToken = "BBD37VB98";
+    
+    [xml]$getUserRequest = 
+    '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v12="https://bingads.microsoft.com/Customer/v12">
+    <soapenv:Header>
+       <v12:DeveloperToken>{0}</v12:DeveloperToken>
+       <v12:AuthenticationToken>{1}</v12:AuthenticationToken>
+    </soapenv:Header>
+    <soapenv:Body>
+       <v12:GetUserRequest>
+          <v12:UserId xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+       </v12:GetUserRequest>
+    </soapenv:Body>
+    </soapenv:Envelope>' -f $developerToken, $accessToken
+    
+    $headers = @{"SOAPAction" = "GetUser"}
+    
+    $uri = "https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc"
+    $response = Invoke-WebRequest $uri -Method post -ContentType 'text/xml' -Body $getUserRequest -Headers $headers
+    Write-Output $response.Content
+    ```  
+
+    Save the file and name it `Get-User.ps1` (you can name it anything you want but the extension must be .ps1).
+
+1. Now to run `Get-User.ps1` open a console window. At the command prompt, navigate to the folder where you saved `Get-User.ps1` and enter the following command:  
+  
+    ```console
+    powershell.exe -File .\Get-User.ps1
+    ```  
+      
+    When the PowerShell script successfully runs it should print out the details of your Bing Ads user, including customer roles. For details see [GetUser](../customer-management-service/getuser.md). 
+
 What's next? First, congratulations on making your first call to Bing Ads API! Here are a few concepts and ideas to explore further:
 - The [GetUser](../customer-management-service/getuser.md) operation above returned the Bing Ads user ID and a list of user roles per customer ID. With the user ID, you can now call [SearchAccounts](../customer-management-service/searchaccounts.md) to get a list accounts the user can access i.e., via the UserId predicate. 
 - If you use .NET, Java, PHP, or Python, you'll want to try the Bing Ads [SDKs](client-libraries.md). Some of the low level authorization details are abstracted, for example the [request header](#request-headers) elements are automatically set. For more details, see [Authentication With the SDKs](sdk-authentication.md). 
-- You can register an application with any Microsoft account; you don't need to use a Bing Ads user for the application registration. 
+- You can register an application with any Microsoft account or Azure AD credentials; you don't need to use a Bing Ads user for the application registration. 
 - If your application will be used by multiple Bing Ads users, be sure to request a [universal developer token](#get-developer-token). 
 - The Application Id (a.k.a. client_id) identifies your application for each Bing Ads user who grants consent; The Developer Token identifies your application for Bing Ads services. You could use multiple application IDs with the same developer token, or vice versa depending on your business requirements. 
 
